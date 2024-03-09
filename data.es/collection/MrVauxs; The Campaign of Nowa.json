@@ -73,17 +73,17 @@
 			"name": "Downtime Activity: Crafting",
 			"source": "CONowa",
 			"entries": [
-				"Si tienes acceso a un plano o tienes una habilidad de herramienta relevante, puedes crear un objeto durante el tiempo de inactividad.",
+				"If you have access to a blueprint or have a relevant tool proficiency, you may craft an item during downtime.",
 				{
 					"name": "Resources",
 					"entries": [
-						"El proceso de elaboración de un objeto puede variar de un objeto a otro, lo que viene determinado por la rareza del objeto y la destreza del artesano con las herramientas para elaborarlo.",
-						"En la elaboración, el resultado de un día de trabajo se determina de la siguiente manera:",
+						"The process of crafting an item can vary from item to item, which is determined by the rarity of the item and the crafters proficiency with the tools to craft it.",
+						"When crafting, the outcome of a days worth of work is determined as follows:",
 						{
 							"type": "abilityGeneric",
 							"text": "{@dice d8} + relevant tool or skill proficiency bonus + progress - difficulty"
 						},
-						"A continuación se enumeran los resultados de los rollos específicos.",
+						"The outcomes on specific rolls are listed below.",
 						{
 							"type": "table",
 							"caption": "Crafting Outcomes",
@@ -102,19 +102,19 @@
 								],
 								[
 									"8-10",
-									"+1 Progreso"
+									"+1 Progress"
 								],
 								[
 									"11-13",
-									"+2 Progreso"
+									"+2 Progress"
 								],
 								[
 									"14+",
-									"El artículo está hecho a mano"
+									"The Item is Crafted"
 								]
 							]
 						},
-						"Al terminar, pagas el coste del objeto en recursos u oro (normalmente la mitad del precio original)."
+						"On completion, you pay the cost of the item in either resources or gold (usually half the original price)."
 					],
 					"type": "entries"
 				},
@@ -122,7 +122,7 @@
 					"type": "entries",
 					"name": "Difficulty",
 					"entries": [
-						"A continuación se muestra una tabla en la que se especifica la dificultad para elaborar un objeto en función de su rareza.",
+						"Below is a table specifying the difficulty to craft an item based on rarity.",
 						{
 							"type": "table",
 							"caption": "Item Difficulty and Progress Capstones",
@@ -136,7 +136,7 @@
 							],
 							"rows": [
 								[
-									"Común",
+									"Common",
 									"2"
 								],
 								[
@@ -148,11 +148,11 @@
 									"6"
 								],
 								[
-									"Muy raro",
+									"Very Rare",
 									"7"
 								],
 								[
-									"Legendario",
+									"Legendary",
 									"8"
 								]
 							]
@@ -162,7 +162,7 @@
 				{
 					"name": "Complications",
 					"entries": [
-						"Las complicaciones suelen surgir cuando se obtiene el efecto de Status Quo en el chequeo de artesanía. Tira en la siguiente tabla para ver qué efectos se producen.",
+						"Complications usually arise when you gain the Status Quo effect on the crafting check. Roll on the table below to see what effects happen.",
 						{
 							"type": "table",
 							"caption": "Crafting Complications",
@@ -177,19 +177,19 @@
 							"rows": [
 								[
 									"1",
-									"Debes empezar de nuevo, lo que te hace perder toda la corriente {@i progress}."
+									"You must start over, causing you to lose all current {@i progress}."
 								],
 								[
 									"2-3",
-									"Debes pagar la mitad del coste de la elaboración del objeto en oro o recursos ese día, al haber fallado o querer rehacer una parte determinada."
+									"You must pay half the cost of crafting the item in gold or resources that day, having failed or wanting to redo a certain part."
 								],
 								[
 									"4-6",
-									"Debes pagar la cuarta parte del coste de elaboración del objeto en oro o recursos ese día, probando varias formas de elaborar el objeto."
+									"You must pay quarter of the cost of crafting the item in gold or resources that day, trying various ways to craft the item."
 								],
 								[
 									"7-10",
-									"No pasa nada."
+									"Nothing happens."
 								]
 							]
 						}
@@ -224,17 +224,17 @@
 				}
 			],
 			"entries": [
-				"Al sintonizar más con tu herencia infernal, evolucionas hacia una forma capaz de hacer grandes cosas. Con ello, obtienes los beneficios que se enumeran a continuación:",
+				"Attuning more into your infernal heritage, you evolve into a form capable of doing great things. With that, you gain the benefits as listed below:",
 				{
 					"type": "list",
 					"items": [
-						"Elija uno de los siguientes:",
+						"Choose one of the following:",
 						{
 							"type": "list",
 							"items": [
-								"Tu cuerpo desarrolla nuevas herramientas a tu disposición, similares a las del demonio con el que estás emparentado. Obtienes una nueva arma natural, que inflige {@damage 1d6} + tu modificador de Fuerza daño cortante, perforante o contundente, según corresponda al apéndice(s) creado(s) o mejorado(s) por esta hazaña. En caso de obtener nuevos miembros, puedes hacerlos aparecer y desaparecer como acción adicional.",
-								"Tu conexión con las profundidades del infierno se hace más fuerte. Escoge un hechizo de 2º nivel de la lista de hechizos de Brujo. Puedes lanzar este hechizo una vez por descanso largo.",
-								"Puedes manifestar tu rabia como un rayo de oscuridad de azufre. Cuando realizas la acción {@action Attack}, puedes sustituir uno de tus ataques por disparar un rayo de azufre por la boca. El rayo es una línea de 5 pies de ancho y 30 pies que daña a cualquier persona y cosa en su camino. Cada criatura en el área debe hacer una tirada de salvación de Destreza contra una DC igual a 8 + tu modificador de Constitución + tu bono de competencia. Una criatura recibe {@dice 2d6} de daño radiante si falla la tirada de salvación, o la mitad si tiene éxito."
+								"Your body grows new tools at your disposal, similar to the fiend you are related to. You gain a new natural weapon, which deals {@damage 1d6} + your Strength modifier slashing, piercing or bludgeoning damage, as appropriate for the appendage(s) created or upgraded by this feat. In case of gaining new limbs, you can make them appear and dissapear as a bonus action.",
+								"Your connection to the depths of hell grows stronger. Pick a 2nd-level spell from the Warlock spell list. You can cast this spell once per long rest.",
+								"You can manifest your rage as a beam of brimstone darkness. When you take the {@action Attack} action, you can replace one of your attacks with shooting a beam of brimstone out of your mouth. The laser is a 5 feet wide, 30-foot line that damages anyone and anything in its path. Each creature in the area must make a Dexterity saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus. A creature takes {@dice 2d6} radiant damage on a failed save, or half that on a success."
 							]
 						}
 					]
@@ -259,11 +259,11 @@
 				}
 			],
 			"entries": [
-				"Tu herencia infernal tiene alas, y ahora, ya sea de repente, a través de la experimentación arcana, o bebiendo sangre diabólica, tú también las tienes.",
+				"Your infernal heritage owns wings, and now whether suddenly, through arcane experimentation, or drinking fiendish blood, you have them too.",
 				{
 					"type": "list",
 					"items": [
-						"Te salen alas de murciélago de la espalda, que te dan una velocidad de vuelo de 30 pies. Puedes hacerlas aparecer y desaparecer como acción adicional."
+						"You grow bat wings from your back, those giving you a flight speed of 30 feet. You can make them appear and dissapear as a bonus action."
 					]
 				}
 			]
@@ -322,8 +322,8 @@
 			"subclassSource": "CONowa",
 			"level": 1,
 			"entries": [
-				"Las deidades que pueden influir en el flujo del tiempo son escasas en los Reinos Olvidados, ya que el \"tiempo\" es una gran constante universal que los mortales sólo pueden empezar a comprender. Los clérigos que rinden culto a una deidad de este tipo pueden, aunque sólo sea por un breve instante, canalizar sus poderes divinos para detener a sus enemigos en éxtasis y conceder a sus aliados una asombrosa presteza.",
-				"En cada nivel de clérigo indicado, añade los hechizos de la lista a tus hechizos preparados. No cuentan para tu límite.",
+				"Deities that can influence the flow of time are few and far between in the Forgotten Realms, as 'time' is a great, universal constant that mortals can only begin to grasp. Clerics that worship a such a deity can, if only for a brief instant, channel their divine powers to stop their enemies in stasis and grant their allies an amazing alacrity.",
+				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
 				{
 					"type": "table",
 					"caption": "Time Domain Spells",
@@ -377,7 +377,7 @@
 			"subclassSource": "CONowa",
 			"level": 1,
 			"entries": [
-				"A 1er nivel, ganas competencia con armas marciales."
+				"At 1st level, you gain proficiency with martial weapons."
 			]
 		},
 		{
@@ -389,7 +389,7 @@
 			"subclassSource": "CONowa",
 			"level": 1,
 			"entries": [
-				"A partir del 1er nivel, tu oración te permite vislumbrar el futuro, permitiéndote prever ciertos acontecimientos. No puedes ser sorprendido mientras estés consciente, y añades tu modificador de Sabiduría a tus tiradas de iniciativa."
+				"From 1st level, your prayer gives you a glimpse of the future, allowing you to forsee certain events. You cannot be surprised as long as you are conscious, and you add your Wisdom modifier to your initiative rolls."
 			]
 		},
 		{
@@ -401,8 +401,8 @@
 			"subclassSource": "CONowa",
 			"level": 2,
 			"entries": [
-				"A partir del 2º nivel, puedes utilizar tu Canal de Divinidad para retrasar las acciones de otros.",
-				"Como reacción a una criatura que realiza una acción o una acción de bonificación a menos de 15 pies de ti, puedes hacer que esa acción ocurra al final de tu siguiente turno o hasta que termine tu concentración (como si estuvieras concentrado en un hechizo)."
+				"Starting at 2nd level, you can use your Channel Divinity to delay the actions of others.",
+				"As a reaction to a creature taking an action or bonus action within 15 feet of you, you can cause that action to happen at the end of your next turn or until your concentration ends (as if you were concentrating on a spell)."
 			]
 		},
 		{
@@ -414,7 +414,7 @@
 			"subclassSource": "CONowa",
 			"level": 6,
 			"entries": [
-				"A partir del 6º nivel, puedes gastar un uso de tu Canal de Divinidad para recuperar una parte de tu poder. Como acción adicional, tocas tu símbolo sagrado, pronuncias una oración y recuperas una ranura de conjuro que hayas gastado en este turno. La ranura de conjuro recuperada no puede ser superior a una ranura de conjuro de 5º nivel."
+				"Starting at 6th level, you can expend a use of your Channel Divinity to bring back a part of your power. As a bonus action, you touch your holy symbol, utter a prayer, and regain a spell slot you expended on this turn. The spell slot regained cannot be higher than a 5th-level spell slot."
 			]
 		},
 		{
@@ -426,7 +426,7 @@
 			"subclassSource": "CONowa",
 			"level": 8,
 			"entries": [
-				"A 8º nivel, obtienes la habilidad de infundir tus golpes de arma con energía divina. Una vez en cada uno de tus turnos, cuando golpees a una criatura con un ataque de arma, puedes hacer que el ataque inflija un {@dice 1d8} de daño radiante adicional al objetivo. Cuando alcanzas el 14º nivel, el daño extra aumenta a {@dice 2d8}."
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -438,14 +438,14 @@
 			"subclassSource": "CONowa",
 			"level": 17,
 			"entries": [
-				"En el nivel 17, tienes el poder de convertirte en una constante en el tiempo. Como acción, puedes provocar un bucle en el tiempo que rebobine constantemente el metabolismo y el envejecimiento de tu cuerpo.",
-				"La finalización del efecto puede hacerse con una acción, sin embargo, el flujo del tiempo se corrige inmediatamente, y cualquier tiempo que haya pasado durante el rebobinado te golpea de inmediato. Mientras el efecto está activo, obtienes los siguientes beneficios:",
+				"At 17th level, you are gifted with the power to become a constant in time. As an action, you can cause a loop in time that constantly rewinds your body's metabolism and aging.",
+				"Ending the effect can be done with an action, however, the flow of time corrects itself immediately, and any time that passed during the rewind hits you at once. While the effect is active, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"No necesita comer, beber o respirar.",
-						"No necesitas dormir.",
-						"No se envejece, ni se puede envejecer por arte de magia."
+						"You do not need to eat, drink or breathe.",
+						"You don't need to sleep.",
+						"You do not age, and can't be aged magically."
 					]
 				}
 			]
@@ -459,7 +459,7 @@
 			"subclassSource": "CONowa",
 			"level": 17,
 			"entries": [
-				"Además, a nivel 17, puedes lanzar el hechizo {@spell Foresight} una vez por descanso largo."
+				"Also at 17th level, you can cast the {@spell Foresight} spell once per long rest."
 			]
 		}
 	],
@@ -498,76 +498,76 @@
 					"name": "Age",
 					"type": "entries",
 					"entries": [
-						"Los enanos maduran al mismo ritmo que los humanos, pero se consideran jóvenes hasta que alcanzan los 50 años. De media, viven unos 350 años."
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
 					]
 				},
 				{
 					"name": "Alignment",
 					"type": "entries",
 					"entries": [
-						"La mayoría de los enanos son legales y creen firmemente en los beneficios de una sociedad bien ordenada. También tienden al bien, con un fuerte sentido del juego limpio y la creencia de que todo el mundo merece participar en los beneficios de un orden justo."
+						"Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size",
 					"entries": [
-						"Los enanos miden entre 1,2 y 1,5 metros y pesan una media de 150 libras. Su tamaño es Medio."
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
 					]
 				},
 				{
 					"name": "Traveler's Step",
 					"entries": [
-						"Tu velocidad básica al caminar es de 35 pies, sin embargo, si llevas una armadura pesada, tu velocidad se reducirá a 25 pies."
+						"Your base walking speed is 35 ft., however wearing heavy armor will reduce your speed to 25 ft."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Darkvision",
 					"entries": [
-						"Acostumbrado a la vida bajo tierra, tienes una visión superior en condiciones de oscuridad y penumbra. Puedes ver con luz tenue en un radio de 60 pies como si fuera luz brillante, y en la oscuridad como si fuera luz tenue. No puedes discernir el color en la oscuridad, sólo tonos de gris."
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Dwarven Resilience",
 					"entries": [
-						"Tienes ventaja en las tiradas de salvación contra el veneno y tienes resistencia al daño por veneno."
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Dwarven Combat Training",
 					"entries": [
-						"Tienes habilidad con el {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb} y {@item warhammer|phb}."
+						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Trade Proficiency",
 					"entries": [
-						"Ganas competencia con las herramientas de artesano que elijas: {@item Cartographer's Tools|phb}, vehículos terrestres o {@item Painter's Supplies|phb}."
+						"You gain proficiency with the artisan's tools of your choice: {@item Cartographer's Tools|phb}, Land Vehicles, or {@item Painter's Supplies|phb}."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Expert Cunning (The Art of Bullshittery)",
 					"entries": [
-						"Ganas competencia en {@skill Persuasion}, {@skill Performance}, o {@skill Deception}"
+						"You gain proficiency in {@skill Persuasion}, {@skill Performance}, or {@skill Deception}"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Puedes hablar, leer y escribir en común y enano. El enano está lleno de consonantes duras y sonidos guturales, y esas características se extienden a cualquier otro idioma que hable un enano."
+						"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Well Travelled",
 					"entries": [
-						"Obtienes una competencia lingüística adicional de tu elección."
+						"You gain an additional language proficiency of your choice."
 					],
 					"type": "entries"
 				}
@@ -592,21 +592,21 @@
 										"type": "entries",
 										"name": "A Society of Backpackers",
 										"entries": [
-											"Viajeros, mercaderes y narradores, son muchas las profesiones que un enano puede adquirir cuando abandona el subsuelo y elige vivir la vida por encima de todo. Los enanos de los caminos han abandonado las técnicas de herrería y cantería de sus hermanos subterráneos, pero lo compensan con habilidades que ayudan a sus nuevos oficios."
+											"Travelers, merchants, and storytellers there are many professions a dwarf may pick up when they leave the underground and choose to live life above it all. Road dwarves have abandoned the smithing and stonecutting techniques of their subterran bretheren but make up for it in skills that help their new trades."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Above Ground Dwarven Culture",
 										"entries": [
-											"La cultura enana está casi siempre ligada a la herencia, a la casa que controla qué rama de la sociedad enana. Vivir en las montañas y bajo la tierra es casi una segunda naturaleza para los enanos, así que ¿dónde encajan los enanos de la carretera en esto? Los enanos de la carretera son los juerguistas, los pícaros, la gente que quiere ver más del mundo y alejarse de los ideales estancados de la tradición. Los enanos del camino se lanzan literalmente a la carretera, encontrando su camino como viajeros. Muchos aprovechan la oportunidad para convertirse en mercaderes en busca de fortuna, otros inician compañías de caravanas y otros más se convierten en aventureros errantes."
+											"Dwarven Culture is almost always tied to heritage, whose house is in control of what branch of dwarven society. Living in mountains and beneath the earth is almost second nature to dwarves, so where do road dwarves fit into this? Road dwarves are the revels, the rogues, people who wanted to see more of the world and move away from the deadlocked ideals of tradition. Road dwarves literally take to the road, finding their way along the path as travelers. Many take the chance to become merchants seeking fortune, others begin caravan companies, and even more become wanderlust adventurers."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Oh To Be a Road Dwarf",
 										"entries": [
-											"Si ves a un enano sin armadura en la superficie, lo más probable es que te encuentres con un enano de la carretera, ya que hace tiempo que abandonaron la herrería como profesión (aunque algunos pueden optar por volver a aprenderla) y prefieren sobre todo ropa y armas más ligeras para adaptarse a su estilo de vida vagabundo. El tiempo que han pasado viajando les ha hecho pisar mucho menos los talones y, por lo tanto, los enanos caminantes, ya sea en carro, a caballo o a pie, parecen moverse con mucha más rapidez y frecuencia que el enano medio. Al estar más abiertos a lo nuevo, no es raro ver a un bardo enano de la carretera contando sus aventuras en una taberna o a un maestro de la puntería con su fiel ballesta pesada."
+											"Spotting a dwarf without armor above ground means you have most likely run into a road dwarf, they have long since abandoned smithing as a profession (though some may choose to relearn) and mostly prefer lighter clothing and weaponry to accomodate their vagabond lifestyles. Their time travelling have put a much lighter step in their heels and thus road dwarves whether on cart, mount, or foot seem to move about much more quickly and frequently than the average dwarf. Being more open to new things means it's not uncommon to spot a road dwarf bard recounting their adventures in a tavern or a master marksman and their trusty heavy crossbow."
 										]
 									}
 								]
@@ -619,65 +619,65 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Reinos ricos en antigua grandeza, salones tallados en las raíces de las montañas, el eco de picos y martillos en minas profundas y fraguas ardientes, un compromiso con el clan y la tradición, y un odio ardiente hacia los goblins y los orcos: estos hilos comunes unen a todos los enanos.",
+									"Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs-these common threads unite all dwarves.",
 									{
 										"type": "entries",
 										"name": "Short and Stout",
 										"entries": [
-											"Audaces y resistentes, los enanos son conocidos como hábiles guerreros, mineros y trabajadores de la piedra y el metal. Aunque miden menos de 1,5 metros, los enanos son tan anchos y compactos que pueden llegar a pesar tanto como un humano de casi 60 centímetros. Además, su valor y resistencia son fácilmente igualables a los de mayor tamaño.",
-											"La piel de los enanos oscila entre el marrón intenso y un tono más pálido teñido de rojo, pero los tonos más comunes son el marrón claro o el bronceado intenso, como ciertos tonos de la tierra.",
-											"Su pelo, que llevan largo pero con estilos sencillos, suele ser negro, gris o castaño, aunque los enanos más pálidos suelen ser pelirrojos. Los enanos varones valoran mucho su barba y se la acicalan cuidadosamente."
+											"Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.",
+											"Dwarven skin ranges from deep brown to a paler hue tinged with red, but the most common shades are light brown or deep tan, like certain tones of earth.",
+											"Their hair, worn long but in simple styles, is usually black, gray, or brown, though paler dwarves often have red hair. Male dwarves value their beards highly and groom them carefully."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Long Memory, Long Grudges",
 										"entries": [
-											"Los enanos pueden llegar a vivir más de 400 años, por lo que los enanos más viejos que viven suelen recordar un mundo muy diferente. Por ejemplo, algunos de los enanos más ancianos que viven en la Ciudadela Felbarr (en el mundo de los Reinos Olvidados) pueden recordar el día, hace más de tres siglos, en que los orcos conquistaron la fortaleza y los llevaron a un exilio que duró más de 250 años. Esta longevidad les otorga una perspectiva del mundo de la que carecen las razas menos longevas, como los humanos y los halflings.",
-											"Los enanos son sólidos y resistentes como las montañas que aman, soportando el paso de los siglos con una resistencia estoica y pocos cambios. Respetan las tradiciones de sus clanes, remontándose a la fundación de sus fortalezas más antiguas en la juventud del mundo, y no abandonan esas tradiciones a la ligera. Parte de esas tradiciones es la devoción a los dioses de los enanos, que defienden los ideales enanos del trabajo laborioso, la habilidad en la batalla y la devoción a la forja.",
-											"Los enanos individuales son decididos y leales, fieles a su palabra y decisivos en la acción, a veces hasta el punto de la terquedad. Muchos enanos tienen un fuerte sentido de la justicia, y tardan en olvidar los agravios que han sufrido. Un mal hecho a un enano es un mal hecho a todo el clan del enano, así que lo que empieza como la caza de venganza de un enano puede convertirse en una auténtica disputa de clanes."
+											"Dwarves can live to be more than 400 years old, so the oldest living dwarves often remember a very different world. For example, some of the oldest dwarves living in Citadel Felbarr (in the world of the Forgotten Realms) can recall the day, more than three centuries ago, when orcs conquered the fortress and drove them into an exile that lasted over 250 years. This longevity grants them a perspective on the world that shorter-lived races such as humans and halflings lack.",
+											"Dwarves are solid and enduring like the mountains they love, weathering the passage of centuries with stoic endurance and little change. They respect the traditions of their clans, tracing their ancestry back to the founding of their most ancient strongholds in the youth of the world, and don't abandon those traditions lightly. Part of those traditions is devotion to the gods of the dwarves, who uphold the dwarven ideals of industrious labor, skill in battle, and devotion to the forge.",
+											"Individual dwarves are determined and loyal, true to their word and decisive in action, sometimes to the point of stubbornness. Many dwarves have a strong sense of justice, and they are slow to forget wrongs they have suffered. A wrong done to one dwarf is a wrong done to the dwarf's entire clan, so what begins as one dwarf's hunt for vengeance can become a full-blown clan feud."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Clans and Kingdoms",
 										"entries": [
-											"Los reinos enanos se extienden en las profundidades de las montañas, donde los enanos extraen gemas y metales preciosos y forjan objetos maravillosos. Aman la belleza y el arte de los metales preciosos y la joyería fina, y en algunos enanos este amor se convierte en avaricia. Cualquier riqueza que no puedan encontrar en sus montañas, la obtienen a través del comercio. No les gustan los barcos, por lo que los humanos y halflings emprendedores suelen encargarse del comercio de productos enanos a lo largo de las rutas marítimas. Los miembros de confianza de otras razas son bienvenidos en los asentamientos enanos, aunque algunas zonas están prohibidas incluso para ellos.",
-											"La unidad principal de la sociedad enana es el clan, y los enanos valoran mucho la posición social. Incluso los enanos que viven lejos de sus propios reinos aprecian sus identidades y afiliaciones de clan, reconocen a los enanos emparentados e invocan los nombres de sus antepasados en juramentos y maldiciones. Quedarse sin clan es el peor destino que puede sufrir un enano.",
-											"Los enanos de otras tierras suelen ser artesanos, especialmente armeros, armadores y joyeros. Algunos se convierten en mercenarios o guardaespaldas, muy solicitados por su valor y lealtad."
+											"Dwarven kingdoms stretch deep beneath the mountains where the dwarves mine gems and precious metals and forge items of wonder. They love the beauty and artistry of precious metals and fine jewelry, and in some dwarves this love festers into avarice. Whatever wealth they can't find in their mountains, they gain through trade. They dislike boats, so enterprising humans and halflings frequently handle trade in dwarven goods along water routes. Trustworthy members of other races are welcome in dwarf settlements, though some areas are off limits even to them.",
+											"The chief unit of dwarven society is the clan, and dwarves highly value social standing. Even dwarves who live far from their own kingdoms cherish their clan identities and affiliations, recognize related dwarves, and invoke their ancestors' names in oaths and curses. To be clanless is the worst fate that can befall a dwarf.",
+											"Dwarves in other lands are typically artisans, especially weaponsmiths, armorers, and jewelers. Some become mercenaries or bodyguards, highly sought after for their courage and loyalty."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Gods, Gold, and Clan",
 										"entries": [
-											"Los enanos que se lanzan a la vida aventurera pueden estar motivados por el deseo de conseguir tesoros, ya sea por su propio bien, por un propósito específico o incluso por un deseo altruista de ayudar a los demás. Otros enanos se ven impulsados por el mandato o la inspiración de una deidad, una llamada directa o simplemente el deseo de dar gloria a uno de los dioses enanos. El clan y la ascendencia también son motivadores importantes. Un enano puede buscar restaurar el honor perdido de un clan, vengar un antiguo agravio sufrido por el clan o ganarse un nuevo lugar dentro del clan tras haber sido exiliado. O un enano puede buscar el hacha que empuñaba un poderoso antepasado, perdida en el campo de batalla hace siglos."
+											"Dwarves who take up the adventuring life might be motivated by a desire for treasure-for its own sake, for a specific purpose, or even out of an altruistic desire to help others. Other dwarves are driven by the command or inspiration of a deity, a direct calling or simply a desire to bring glory to one of the dwarf gods. Clan and ancestry are also important motivators. A dwarf might seek to restore a clan's lost honor, avenge an ancient wrong the clan suffered, or earn a new place within the clan after having been exiled. Or a dwarf might search for the axe wielded by a mighty ancestor, lost on the field of battle centuries ago."
 										]
 									},
 									{
 										"type": "inset",
 										"name": "Slow to Trust",
 										"entries": [
-											"Los enanos se llevan pasablemente bien con la mayoría de las demás razas. \"La diferencia entre un conocido y un amigo es de unos cien años\", es un dicho enano que puede ser una hipérbole, pero que ciertamente señala lo difícil que puede ser para un miembro de una raza efímera como la humana ganarse la confianza de un enano.",
+											"Dwarves get along passably well with most other races. \"The difference between an acquaintance and a friend is about a hundred years,\" is a dwarf saying that might be hyperbole, but certainly points to how difficult it can be for a member of a short-lived race like humans to earn a dwarf's trust.",
 											{
 												"type": "entries",
 												"name": "Elves",
 												"entries": [
-													"\"No es prudente depender de los elfos. No se sabe lo que hará un elfo a continuación; cuando el martillo se encuentra con la cabeza del orco, son tan propensos a empezar a cantar como a sacar una espada. Son volubles y frívolos. Sin embargo, hay que decir dos cosas a su favor: No tienen muchos herreros, pero los que tienen hacen un trabajo muy fino. Y cuando los orcos o los goblins bajan de las montañas, es bueno tener un elfo a tu espalda. No tan bueno como un enano, tal vez, pero sin duda odian a los orcos tanto como nosotros\"."
+													"\"It's not wise to depend on the elves. No telling what an elf will do next; when the hammer meets the orc's head, they're as apt to start singing as to pull out a sword. They're flighty and frivolous. Two things to be said for them, though: They don't have many smiths, but the ones they have do very fine work. And when orcs or goblins come streaming down out of the mountains, an elf's good to have at your back. Not as good as a dwarf, maybe, but no doubt they hate the orcs as much as we do.\""
 												]
 											},
 											{
 												"type": "entries",
 												"name": "Halflings",
 												"entries": [
-													"\"Claro, son gente agradable. Pero muéstrame un héroe halfling. Un imperio, un ejército triunfante. Incluso un tesoro para los siglos hecho por manos halfling. Nada. ¿Cómo puedes tomarlos en serio?\""
+													"\"Sure, they're pleasant folk. But show me a halfling hero. An empire, a triumphant army. Even a treasure for the ages made by halfling hands. Nothing. How can you take them seriously?\""
 												]
 											},
 											{
 												"type": "entries",
 												"name": "Humans",
 												"entries": [
-													"\"Te tomas el tiempo de conocer a un humano, y para entonces el humano está en su lecho de muerte. Si tienes suerte, tiene un pariente -una hija o una nieta, tal vez- que tiene manos y corazón tan buenos como los suyos. Es entonces cuando puedes hacer un amigo humano. Y verlos ir!. Si ponen su corazón en algo, lo conseguirán, ya sea el tesoro de un dragón o el trono de un imperio. Hay que admirar ese tipo de dedicación, aunque los meta en problemas la mayoría de las veces\"."
+													"\"You take the time to get to know a human, and by then the human's on her deathbed. If you're lucky, she's got kin-a daughter or granddaughter, maybe-who's got hands and heart as good as hers. That's when you can make a human friend. And watch them go!. They set their hearts on something, they'll get it whether it's a dragon's hoard or an empire's throne. You have to admire that kind of dedication, even if it gets them in trouble more often than not.\""
 												]
 											}
 										]
@@ -686,8 +686,8 @@
 										"type": "entries",
 										"name": "Dwarf Names",
 										"entries": [
-											"El nombre de un enano lo otorga un anciano del clan, según la tradición. Todos los nombres propios de los enanos han sido utilizados y reutilizados a lo largo de las generaciones. El nombre de un enano pertenece al clan, no al individuo.",
-											"El enano que haga un mal uso de un nombre de clan o lo avergüence será despojado del mismo y se le prohibirá por ley utilizar cualquier nombre enano en su lugar.",
+											"A dwarf's name is granted by a clan elder, in accordance with tradition. Every proper dwarven name has been used and reused down through the generations. A dwarf's name belongs to the clan, not to the individual.",
+											"A dwarf who misuses or brings shame to a clan name is stripped of the name and forbidden by law to use any dwarven name in its place.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
@@ -700,7 +700,7 @@
 													{
 														"type": "item",
 														"name": "Female Names:",
-														"entry": "Ámbar, Artin, Audhild, Bardryn, Dagnal, Diesa, Eldeth, Falkrunn, Finellen, Gunnloda, Gurdis, Helja, Hlin, Kathra, Kristryd, Ilde, Liftrasa, Mardred, Riswynn, Sannl, Torbera, Torgga, Vistra"
+														"entry": "Amber, Artin, Audhild, Bardryn, Dagnal, Diesa, Eldeth, Falkrunn, Finellen, Gunnloda, Gurdis, Helja, Hlin, Kathra, Kristryd, Ilde, Liftrasa, Mardred, Riswynn, Sannl, Torbera, Torgga, Vistra"
 													},
 													{
 														"type": "item",
@@ -715,7 +715,7 @@
 										"type": "inset",
 										"name": "Duergar",
 										"entries": [
-											"En las ciudades de las profundidades de la Infraoscuridad viven los duergar, o enanos grises. Estos viciosos y sigilosos traficantes de esclavos asaltan el mundo de la superficie en busca de cautivos, y luego venden sus presas a las otras razas de la Infraoscuridad. Tienen habilidades mágicas innatas para hacerse invisibles y crecer temporalmente hasta alcanzar un tamaño gigantesco."
+											"In cities deep in the Underdark live the duergar, or gray dwarves. These vicious, stealthy slave traders raid the surface world for captives, then sell their prey to the other races of the Underdark. They have innate magical abilities to become invisible and to temporarily grow to giant size."
 										]
 									}
 								]
@@ -785,13 +785,13 @@
 				]
 			},
 			"entries": [
-				"Invocas y abrazas las fosas del infierno para que te concedan una fuerza de otro mundo, adoptando los rasgos de un ser infernal más cercano a tu linaje. Obtienes los siguientes beneficios hasta que el hechizo termine:",
+				"You call upon and embrace the pits of hell to grant you otherworldly strength, taking on the features of a hellish being closest to your bloodline. You gain the following benefits until the spell ends:",
 				{
 					"type": "list",
 					"items": [
-						"Eres resistente al fuego, así como al daño perforante, cortante o contundente que elijas.",
-						"Tienes vista de diablo, capaz de ver a través de la oscuridad común y mágica hasta un alcance de 60 pies.",
-						"Eres inmune al daño por veneno y a la condición {@condition poisoned}."
+						"You are resistant to fire, as well as your choice of either piercing, slashing, or bludgeoning damage.",
+						"You have devil's sight, able to see through both common and magical darkness to a range of 60 feet.",
+						"You are immune to poison damage and the {@condition poisoned} condition."
 					]
 				}
 			],
@@ -842,15 +842,15 @@
 				}
 			],
 			"entries": [
-				"Te infundes temporalmente la capacidad de liberar rayos de energía azul crepitante. Como acción, puedes lanzar esta energía hacia una criatura que esté a tu alcance, formando un arco de rayos sostenido entre tú y el objetivo. Haz un ataque de hechizo a distancia contra esa criatura. Si aciertas, el objetivo recibe {@damage 1d12} de daño por rayo y queda unido a ti. Sólo puedes unirte a un objetivo a la vez. Si te vinculas a un nuevo objetivo, el primero termina.",
-				"Puedes usar tu acción de bonificación para infligir {@damage 1d12} de daño de rayo al objetivo vinculado automáticamente siempre que tengas una mano libre o estés sosteniendo un foco de conjuro, y el objetivo vinculado esté dentro del alcance y no tenga cobertura total de ti.",
-				"El vínculo termina si usas tu acción de bonificación para hacer cualquier otra cosa."
+				"You temporaliy infuse yourself with the ability to release beams of crackling, blue energy. As an action, you can lance this energy out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes {@damage 1d12} lightning damage, and is bonded with you. You can be bonded to only one target at a time. If you bond yourself to a new target, the first one ends.",
+				"You can use your bonus action to deal {@damage 1d12} lightning damage to the bonded target automatically as long as you have a free hand or are holding a spellcasting focus, and the bonded target is within range and it doesn't have total cover from you.",
+				"The bond ends if you use your bonus action to do anything else."
 			],
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este hechizo utilizando una ranura de hechizo de 3er nivel o superior, el daño inicial aumenta un {@scaledamage 1d12|2-9|1d12} por cada nivel de ranura superior al 2º."
+						"When you cast this spell using a spell slot of 3rd level or higher, the initial damage increases by {@scaledamage 1d12|2-9|1d12} for each slot level above 2nd."
 					],
 					"type": "entries"
 				}
@@ -897,8 +897,8 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Estas gafas con montura de cuero llevan lentes de cristal púrpura. Mientras las llevas puestas, puedes ver magia a partir del hechizo {@spell detect magic|phb} y tienes ventaja en los chequeos de Inteligencia realizados para revelar información sobre una criatura u objeto que puedas ver.",
-				"Además, puedes lanzar el hechizo {@spell identify} utilizando los googles. Una vez que lo hagas, no podrás volver a hacerlo hasta el siguiente amanecer."
+				"These leather-framed goggles feature purple crystal lenses. While wearing the goggles, you can see magic as of the {@spell detect magic|phb} spell and have advantage on Intelligence checks made to reveal information about a creature or object you can see.",
+				"In addition, you can cast the {@spell identify} spell using the googles. Once you do so, you can't do so again until the next dawn."
 			],
 			"attachedSpells": [
 				"identify",
@@ -918,19 +918,19 @@
 			"dmgType": "B",
 			"bonusWeapon": "+1",
 			"entries": [
-				"Esta maza está hecha puramente de un extraño material cristalino, mostrando todos los signos de un comportamiento inusual cuando se deja sola.",
+				"This mace is made purely of some strange crystalline material, showing all signs of unusual behavior when left alone.",
 				{
 					"type": "entries",
 					"name": "Special Properties",
 					"entries": [
-						"Esta maza mágica muestra todo tipo de comportamientos inusuales, y puede funcionar esporádicamente o con efectos secundarios imprevisibles, según determine el DM.",
-						"El artículo también muestra un comportamiento inusual pasivo, como:",
+						"This mace of magic exhibits all kinds of unusual behavior, and might function sporadically or with unpredictable side effects, as determined by the DM.",
+						"The item also exhibits some passive unusual behavior, such as:",
 						{
 							"type": "list",
 							"items": [
-								"Al soltarla, la maza flota en lugar de caer al suelo.",
-								"El objeto arroja luz a partir de su magia almacenada, creando una luz brillante en un radio de 15 pies y una luz tenue en 15 pies adicionales.",
-								"La maza interactúa fuertemente con los campos antimágicos, disipándolos de forma explosiva cuando se toca."
+								"When dropped, the mace floats instead of falling to the ground.",
+								"The item sheds light out of it's stored magic, creating bright light in a 15-foot radius and dim light for an additional 15 feet.",
+								"The mace strongly interacts with anti-magic fields, dispelling them in an explosive fashion when touched."
 							]
 						}
 					]
@@ -939,13 +939,13 @@
 					"type": "entries",
 					"name": "Dormant",
 					"entries": [
-						"El Cristal Moldeado otorga los siguientes beneficios en su estado inactivo:",
+						"The Shaped Glass grants the following benefits in its dormant state:",
 						{
 							"type": "list",
 							"items": [
-								"Obtienes un bono de +1 a las tiradas de ataque y daño realizadas con esta arma mágica.",
-								"Puedes hacer que la maza te abrume con su tejido en tu turno, ganando una acción adicional. Tira un {@dice d4}. Con un resultado de 1 a 3, comienzas tu siguiente turno {@condition stunned}. Esta propiedad no puede volver a utilizarse hasta el amanecer.",
-								"Una vez por turno, cuando aciertes un ataque con la maza, puedes hacer que inflija el doble de daño. Después de infligir daño a la criatura, recibes el doble de daño hasta el inicio de tu siguiente turno."
+								"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+								"You can cause the mace to overwhelm you with it's weave on your turn, gaining an additional action. Roll a {@dice d4}. On a result of 1 to 3, you start your next turn {@condition stunned}. This property can't be used again until dawn.",
+								"Once per turn, when you hit an attack with the mace, you can make it deal double damage. After dealing damage to the creature, you take double damage until the start of your next turn."
 							]
 						}
 					]
@@ -954,14 +954,14 @@
 					"type": "entries",
 					"name": "Awakened",
 					"entries": [
-						"Al despertar el Vaso de la Forma, otorga los siguientes beneficios:",
+						"As the Shaped Glass awakens, it grants the following benefits:",
 						{
 							"type": "list",
 							"items": [
-								"Obtienes un bono de +2 a las tiradas de ataque y daño realizadas con esta arma mágica.",
-								"Al tirar el {@dice d4} después de obtener una acción adicional de este objeto, sólo te conviertes en {@condition stunned} con una tirada de 1 a 2.",
-								"Durante un descanso corto o largo, puedes reformar el Cristal Moldeado como parte de otra arma que inflija daño punzante o cortante. Después de esto, el arma se convierte en mágica y adquiere las propiedades del Cristal Moldeado, convirtiéndose en uno con el objeto.",
-								"Además, al intentar perder la sintonía con el Cristal con Forma, el usuario debe hacer una salvación de Carisma DC 20 para eliminar con éxito el objeto de su conciencia. En caso de fallar la salvación, el usuario queda noqueado {@condition unconscious}."
+								"You gain +2 bonus to attack and damage rolls made with this magic weapon.",
+								"When rolling the {@dice d4} after gaining an additional action from this item, you only become {@condition stunned} on a roll of 1 to 2.",
+								"During a short or long rest, you can reform Shaped Glass as a part of another weapon that deals piercing or slashing damage. After this, the weapon becomes magical and gains the properties of Shaped Glass, becoming one with the item.",
+								"Also, when trying to lose attunement to Shaped Glass, the user must make a DC 20 Charisma save to successfully remove the item from their consciousness. On a failed save, they are knocked {@condition unconscious}."
 							]
 						}
 					]
@@ -970,13 +970,13 @@
 					"type": "entries",
 					"name": "Exalted",
 					"entries": [
-						"El Cristal Moldeado está en su punto álgido, volviéndose fiel a su naturaleza y otorgándole los siguientes beneficios en su estado exaltado:",
+						"Shaped Glass is at its peak, becoming true with its nature and granting you the following benefits in its exalted state:",
 						{
 							"type": "list",
 							"items": [
-								"Obtienes un bono de +3 a las tiradas de ataque y daño realizadas con esta arma mágica.",
-								"Al tirar el {@dice d4} después de obtener una acción adicional de este objeto, sólo te conviertes en {@condition stunned} con una tirada de 1.",
-								"Ahora estás en sintonía permanente con el Fragmento de Cristal, sólo para ser separado de él por intervención divina."
+								"You gain +3 bonus to attack and damage rolls made with this magic weapon.",
+								"When rolling the {@dice d4} after gaining an additional action from this item, you only become {@condition stunned} on a roll of 1.",
+								"You are now pernamently attuned to the Glass Shard, only to be separated from it through divine intervention."
 							]
 						}
 					]
@@ -984,12 +984,12 @@
 			],
 			"fluff": {
 				"entries": [
-					"Maridajes -",
-					"Cristal desestructurado, desde el corazón de la [Luna]. Cantado, en volutas etéreas, a lo largo de 3 ciclos. Pausa.",
-					"Doblamos el tiempo en su material - dos veces. Nuestro tiempo y el suyo. Un costo que él estaba dispuesto a pagar. Doblado y moldeado, con los designios de un dios.",
-					"La empuña, en una de sus muchas grandes manos. El tiempo que inyectamos se despliega en su mano. Las salidas se aceleran: los músculos se comprimen el doble. El doble de intenciones. El doble de complejidades ordenadas, plegadas sobre sí mismas. Los bucles se repiten en pares en [...]. Funciones dependientes del tiempo. Pausa.",
-					"Hace añicos una construcción en mil pedazos.",
-					"Pero el tiempo es justo. Las microtelas comienzan a desenrollarse en pares. Los músculos comienzan a romperse, el doble de rápido.  El costo del tiempo doblado. Pero tiene mucho tiempo."
+					"Pairings -",
+					"Unstructured glass, from the heart of the [Moon]. Sung out, in ethereal wisps, over the course of 3 cycles. Pause.",
+					"We fold time into its material - twice. Our time and his. A cost he was willing us to pay. Folded and shaped, with a god's designs.",
+					"He wields it, in one of many great hands. The time we injected is unfolded in his grasp. Outputs quicken - muscles compress twice. Twice as many intentions. Twice the ordered complexities, folded upon themselves. Loops loop back onto [?] in pairs. Time dependent functions. Pause.",
+					"He sunders a construct into a thousand pieces.",
+					"But time is fair. Microtears begin to uncoil in pairs. Muscles begin to snap, twice as fast.  The cost of folded time. But he has plenty of time."
 				]
 			}
 		}
