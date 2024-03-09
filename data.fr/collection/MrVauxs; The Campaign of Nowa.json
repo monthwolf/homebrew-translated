@@ -73,17 +73,17 @@
 			"name": "Downtime Activity: Crafting",
 			"source": "CONowa",
 			"entries": [
-				"Si vous avez accès à un plan ou si vous avez la compétence d'un outil pertinent, vous pouvez fabriquer un objet pendant les temps d'arrêt.",
+				"If you have access to a blueprint or have a relevant tool proficiency, you may craft an item during downtime.",
 				{
 					"name": "Resources",
 					"entries": [
-						"Le processus de fabrication d'un objet peut varier d'un objet à l'autre, ce qui est déterminé par la rareté de l'objet et la maîtrise des outils par l'artisan.",
-						"Lors de l'artisanat, le résultat d'une journée de travail est déterminé comme suit :",
+						"The process of crafting an item can vary from item to item, which is determined by the rarity of the item and the crafters proficiency with the tools to craft it.",
+						"When crafting, the outcome of a days worth of work is determined as follows:",
 						{
 							"type": "abilityGeneric",
 							"text": "{@dice d8} + relevant tool or skill proficiency bonus + progress - difficulty"
 						},
-						"Les résultats concernant des rouleaux spécifiques sont énumérés ci-dessous.",
+						"The outcomes on specific rolls are listed below.",
 						{
 							"type": "table",
 							"caption": "Crafting Outcomes",
@@ -98,23 +98,23 @@
 							"rows": [
 								[
 									"0-7",
-									"Statu quo"
+									"Status Quo"
 								],
 								[
 									"8-10",
-									"+1 Progrès"
+									"+1 Progress"
 								],
 								[
 									"11-13",
-									"+2 Progrès"
+									"+2 Progress"
 								],
 								[
 									"14+",
-									"L'objet est fabriqué"
+									"The Item is Crafted"
 								]
 							]
 						},
-						"À l'issue du processus, vous payez le coût de l'objet en ressources ou en or (généralement la moitié du prix initial)."
+						"On completion, you pay the cost of the item in either resources or gold (usually half the original price)."
 					],
 					"type": "entries"
 				},
@@ -122,7 +122,7 @@
 					"type": "entries",
 					"name": "Difficulty",
 					"entries": [
-						"Vous trouverez ci-dessous un tableau précisant la difficulté de fabriquer un objet en fonction de sa rareté.",
+						"Below is a table specifying the difficulty to craft an item based on rarity.",
 						{
 							"type": "table",
 							"caption": "Item Difficulty and Progress Capstones",
@@ -148,11 +148,11 @@
 									"6"
 								],
 								[
-									"Très rare",
+									"Very Rare",
 									"7"
 								],
 								[
-									"Légendaire",
+									"Legendary",
 									"8"
 								]
 							]
@@ -162,7 +162,7 @@
 				{
 					"name": "Complications",
 					"entries": [
-						"Les complications surviennent généralement lorsque vous obtenez l'effet de statu quo sur le test d'artisanat. Lancez un dé sur la table ci-dessous pour voir quels effets se produisent.",
+						"Complications usually arise when you gain the Status Quo effect on the crafting check. Roll on the table below to see what effects happen.",
 						{
 							"type": "table",
 							"caption": "Crafting Complications",
@@ -177,19 +177,19 @@
 							"rows": [
 								[
 									"1",
-									"Vous devez recommencer, ce qui vous fait perdre tout le courant {@i progress}."
+									"You must start over, causing you to lose all current {@i progress}."
 								],
 								[
 									"2-3",
-									"Vous devez payer la moitié du coût de fabrication de l'objet en or ou en ressources ce jour-là, ayant échoué ou voulant refaire une certaine partie."
+									"You must pay half the cost of crafting the item in gold or resources that day, having failed or wanting to redo a certain part."
 								],
 								[
 									"4-6",
-									"Vous devez payer un quart du coût de fabrication de l'objet en or ou en ressources ce jour-là, en essayant différentes manières de fabriquer l'objet."
+									"You must pay quarter of the cost of crafting the item in gold or resources that day, trying various ways to craft the item."
 								],
 								[
 									"7-10",
-									"Rien ne se passe."
+									"Nothing happens."
 								]
 							]
 						}
@@ -224,17 +224,17 @@
 				}
 			],
 			"entries": [
-				"En vous accordant davantage à votre héritage infernal, vous évoluez vers une forme capable d'accomplir de grandes choses. Avec cela, vous gagnez les avantages énumérés ci-dessous :",
+				"Attuning more into your infernal heritage, you evolve into a form capable of doing great things. With that, you gain the benefits as listed below:",
 				{
 					"type": "list",
 					"items": [
-						"Choisissez l'une des options suivantes :",
+						"Choose one of the following:",
 						{
 							"type": "list",
 							"items": [
-								"Votre corps développe de nouveaux outils à votre disposition, semblables à ceux du démon auquel vous êtes apparenté. Vous gagnez une nouvelle arme naturelle, qui inflige {@damage 1d6} + votre modificateur de Force des dégâts d'entaille, de perforation ou de matraquage, selon ce qui est approprié pour le ou les appendices créés ou améliorés par cet exploit. En cas de gain de nouveaux membres, vous pouvez les faire apparaître et disparaître en tant qu'action bonus.",
-								"Votre lien avec les profondeurs de l'enfer se renforce. Choisissez un sort de 2e niveau dans la liste des sorts de sorcier. Vous pouvez lancer ce sort une fois par repos long.",
-								"Vous pouvez manifester votre rage sous la forme d'un faisceau de ténèbres de soufre. Lorsque vous effectuez l'action {@action Attack}, vous pouvez remplacer une de vos attaques par le tir d'un rayon de soufre hors de votre bouche. Le laser est une ligne de 5 pieds de large et de 30 pieds qui endommage toute personne et toute chose sur son passage. Chaque créature dans la zone doit effectuer un jet de sauvegarde de Dextérité contre un DC égal à 8 + votre modificateur de Constitution + votre bonus de compétence. Une créature subit {@dice 2d6} de dégâts radiants en cas d'échec, ou la moitié en cas de réussite."
+								"Your body grows new tools at your disposal, similar to the fiend you are related to. You gain a new natural weapon, which deals {@damage 1d6} + your Strength modifier slashing, piercing or bludgeoning damage, as appropriate for the appendage(s) created or upgraded by this feat. In case of gaining new limbs, you can make them appear and dissapear as a bonus action.",
+								"Your connection to the depths of hell grows stronger. Pick a 2nd-level spell from the Warlock spell list. You can cast this spell once per long rest.",
+								"You can manifest your rage as a beam of brimstone darkness. When you take the {@action Attack} action, you can replace one of your attacks with shooting a beam of brimstone out of your mouth. The laser is a 5 feet wide, 30-foot line that damages anyone and anything in its path. Each creature in the area must make a Dexterity saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus. A creature takes {@dice 2d6} radiant damage on a failed save, or half that on a success."
 							]
 						}
 					]
@@ -259,11 +259,11 @@
 				}
 			],
 			"entries": [
-				"Votre héritage infernal possède des ailes, et maintenant, que ce soit soudainement, par le biais d'une expérimentation arcanique, ou en buvant du sang diabolique, vous en avez aussi.",
+				"Your infernal heritage owns wings, and now whether suddenly, through arcane experimentation, or drinking fiendish blood, you have them too.",
 				{
 					"type": "list",
 					"items": [
-						"Des ailes de chauve-souris poussent dans votre dos, ce qui vous donne une vitesse de vol de 30 pieds. Vous pouvez les faire apparaître et disparaître comme une action bonus."
+						"You grow bat wings from your back, those giving you a flight speed of 30 feet. You can make them appear and dissapear as a bonus action."
 					]
 				}
 			]
@@ -322,8 +322,8 @@
 			"subclassSource": "CONowa",
 			"level": 1,
 			"entries": [
-				"Les divinités capables d'influencer le cours du temps sont rares dans les Royaumes oubliés, car le temps est une grande constante universelle que les mortels ne peuvent que commencer à appréhender. Les clercs qui vénèrent une telle divinité peuvent, ne serait-ce que pour un bref instant, canaliser leurs pouvoirs divins pour arrêter leurs ennemis en stase et accorder à leurs alliés une étonnante alacrité.",
-				"À chaque niveau de clerc indiqué, ajoutez les sorts listés à vos sorts préparés. Ils ne sont pas pris en compte dans votre limite.",
+				"Deities that can influence the flow of time are few and far between in the Forgotten Realms, as 'time' is a great, universal constant that mortals can only begin to grasp. Clerics that worship a such a deity can, if only for a brief instant, channel their divine powers to stop their enemies in stasis and grant their allies an amazing alacrity.",
+				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
 				{
 					"type": "table",
 					"caption": "Time Domain Spells",
@@ -377,7 +377,7 @@
 			"subclassSource": "CONowa",
 			"level": 1,
 			"entries": [
-				"Au 1er niveau, vous gagnez la maîtrise des armes martiales."
+				"At 1st level, you gain proficiency with martial weapons."
 			]
 		},
 		{
@@ -389,7 +389,7 @@
 			"subclassSource": "CONowa",
 			"level": 1,
 			"entries": [
-				"À partir du 1er niveau, votre prière vous donne un aperçu de l'avenir, vous permettant de prévoir certains événements. Vous ne pouvez pas être surpris tant que vous êtes conscient, et vous ajoutez votre modificateur de Sagesse à vos jets d'initiative."
+				"From 1st level, your prayer gives you a glimpse of the future, allowing you to forsee certain events. You cannot be surprised as long as you are conscious, and you add your Wisdom modifier to your initiative rolls."
 			]
 		},
 		{
@@ -401,8 +401,8 @@
 			"subclassSource": "CONowa",
 			"level": 2,
 			"entries": [
-				"A partir du 2ème niveau, vous pouvez utiliser votre canal de divinité pour retarder les actions des autres.",
-				"En réaction à une créature effectuant une action ou une action bonus à moins de 15 pieds de vous, vous pouvez faire en sorte que cette action se produise à la fin de votre prochain tour ou jusqu'à la fin de votre concentration (comme si vous vous concentriez sur un sort)."
+				"Starting at 2nd level, you can use your Channel Divinity to delay the actions of others.",
+				"As a reaction to a creature taking an action or bonus action within 15 feet of you, you can cause that action to happen at the end of your next turn or until your concentration ends (as if you were concentrating on a spell)."
 			]
 		},
 		{
@@ -414,7 +414,7 @@
 			"subclassSource": "CONowa",
 			"level": 6,
 			"entries": [
-				"À partir du 6e niveau, vous pouvez dépenser une utilisation de votre canal de divinité pour ramener une partie de votre pouvoir. Comme action bonus, vous touchez votre symbole sacré, prononcez une prière et regagnez un emplacement de sort que vous avez dépensé à ce tour. L'emplacement de sort récupéré ne peut pas être supérieur à un emplacement de sort de 5e niveau."
+				"Starting at 6th level, you can expend a use of your Channel Divinity to bring back a part of your power. As a bonus action, you touch your holy symbol, utter a prayer, and regain a spell slot you expended on this turn. The spell slot regained cannot be higher than a 5th-level spell slot."
 			]
 		},
 		{
@@ -426,7 +426,7 @@
 			"subclassSource": "CONowa",
 			"level": 8,
 			"entries": [
-				"Au 8e niveau, vous gagnez la capacité d'infuser vos coups d'arme avec de l'énergie divine. Une fois à chacun de vos tours, lorsque vous touchez une créature avec une attaque d'arme, vous pouvez faire en sorte que cette attaque inflige à la cible un supplément de {@dice 1d8} de dégâts radiants. Lorsque vous atteignez le 14e niveau, les dégâts supplémentaires passent à {@dice 2d8}."
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -438,14 +438,14 @@
 			"subclassSource": "CONowa",
 			"level": 17,
 			"entries": [
-				"Au 17ème niveau, vous êtes doué du pouvoir de devenir une constante dans le temps. En tant qu'action, vous pouvez provoquer une boucle dans le temps qui rembobine constamment le métabolisme et le vieillissement de votre corps.",
-				"La fin de l'effet peut se faire par une action, cependant, le flux du temps se corrige immédiatement, et tout le temps qui s'est écoulé pendant le rembobinage vous frappe immédiatement. Pendant que l'effet est actif, vous bénéficiez des avantages suivants :",
+				"At 17th level, you are gifted with the power to become a constant in time. As an action, you can cause a loop in time that constantly rewinds your body's metabolism and aging.",
+				"Ending the effect can be done with an action, however, the flow of time corrects itself immediately, and any time that passed during the rewind hits you at once. While the effect is active, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Vous n'avez pas besoin de manger, de boire ou de respirer.",
-						"Tu n'as pas besoin de dormir.",
-						"Vous ne vieillissez pas, et vous ne pouvez pas vieillir par magie."
+						"You do not need to eat, drink or breathe.",
+						"You don't need to sleep.",
+						"You do not age, and can't be aged magically."
 					]
 				}
 			]
@@ -459,7 +459,7 @@
 			"subclassSource": "CONowa",
 			"level": 17,
 			"entries": [
-				"De plus, au 17e niveau, vous pouvez lancer le sort {@spell Foresight} une fois par repos long."
+				"Also at 17th level, you can cast the {@spell Foresight} spell once per long rest."
 			]
 		}
 	],
@@ -498,76 +498,76 @@
 					"name": "Age",
 					"type": "entries",
 					"entries": [
-						"Les nains mûrissent au même rythme que les humains, mais ils sont considérés comme jeunes jusqu'à ce qu'ils atteignent l'âge de 50 ans. En moyenne, ils vivent environ 350 ans."
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
 					]
 				},
 				{
 					"name": "Alignment",
 					"type": "entries",
 					"entries": [
-						"La plupart des nains sont des gens de loi, qui croient fermement aux avantages d'une société bien ordonnée. Ils tendent également vers le bien, avec un sens aigu du fair-play et la conviction que chacun mérite de partager les bénéfices d'un ordre juste."
+						"Most dwarves are lawful, believing firmly in the benefits of a well-ordered society. They tend toward good as well, with a strong sense of fair play and a belief that everyone deserves to share in the benefits of a just order."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Size",
 					"entries": [
-						"Les nains mesurent entre 1,5 et 2 mètres et pèsent en moyenne 150 livres. Votre taille est moyenne."
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
 					]
 				},
 				{
 					"name": "Traveler's Step",
 					"entries": [
-						"Votre vitesse de marche de base est de 35 pieds, mais le port d'une armure lourde réduit votre vitesse à 25 pieds."
+						"Your base walking speed is 35 ft., however wearing heavy armor will reduce your speed to 25 ft."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Darkvision",
 					"entries": [
-						"Habitué à la vie sous terre, vous avez une vision supérieure dans l'obscurité et la pénombre. Vous pouvez voir dans une faible lumière à moins de 60 pieds de vous comme si c'était une lumière vive, et dans l'obscurité comme si c'était une faible lumière. Vous ne pouvez pas discerner les couleurs dans l'obscurité, seulement les nuances de gris."
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Dwarven Resilience",
 					"entries": [
-						"Vous avez un avantage sur les jets de sauvegarde contre le poison, et vous avez une résistance contre les dégâts du poison."
+						"You have advantage on saving throws against poison, and you have resistance against poison damage."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Dwarven Combat Training",
 					"entries": [
-						"Vous maîtrisez les {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb} et {@item warhammer|phb}."
+						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Trade Proficiency",
 					"entries": [
-						"Vous gagnez la compétence avec les outils d'artisan de votre choix : {@item Cartographer's Tools|phb}, Véhicules terrestres, ou {@item Painter's Supplies|phb}."
+						"You gain proficiency with the artisan's tools of your choice: {@item Cartographer's Tools|phb}, Land Vehicles, or {@item Painter's Supplies|phb}."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Expert Cunning (The Art of Bullshittery)",
 					"entries": [
-						"Vous gagnez la compétence en {@skill Persuasion}, {@skill Performance}, ou {@skill Deception}"
+						"You gain proficiency in {@skill Persuasion}, {@skill Performance}, or {@skill Deception}"
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Languages",
 					"entries": [
-						"Vous pouvez parler, lire et écrire le commun et le nain. Le nain est plein de consonnes dures et de sons gutturaux, et ces caractéristiques se retrouvent dans toutes les autres langues qu'un nain peut parler."
+						"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Well Travelled",
 					"entries": [
-						"Vous gagnez une compétence linguistique supplémentaire de votre choix."
+						"You gain an additional language proficiency of your choice."
 					],
 					"type": "entries"
 				}
@@ -592,21 +592,21 @@
 										"type": "entries",
 										"name": "A Society of Backpackers",
 										"entries": [
-											"Voyageurs, marchands et conteurs, il existe de nombreuses professions qu'un nain peut choisir lorsqu'il quitte le monde souterrain et choisit de vivre la vie au-dessus de tout. Les nains des routes ont abandonné les techniques de forge et de taille de pierre de leurs frères souterrains, mais ils compensent par des compétences qui les aident dans leurs nouveaux métiers."
+											"Travelers, merchants, and storytellers there are many professions a dwarf may pick up when they leave the underground and choose to live life above it all. Road dwarves have abandoned the smithing and stonecutting techniques of their subterran bretheren but make up for it in skills that help their new trades."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Above Ground Dwarven Culture",
 										"entries": [
-											"La culture naine est presque toujours liée à l'héritage, à la maison qui contrôle telle ou telle branche de la société naine. Vivre dans les montagnes et sous la terre est presque une seconde nature pour les nains, alors quelle est la place des nains des routes dans tout cela ? Les nains des routes sont les fêtards, les voyous, les gens qui veulent voir plus du monde et s'éloigner des idéaux bloqués de la tradition. Les nains de route prennent littéralement la route, se frayant un chemin en tant que voyageurs. Beaucoup saisissent l'occasion de devenir des marchands en quête de fortune, d'autres fondent des compagnies de caravanes, et d'autres encore deviennent des aventuriers en mal d'aventures."
+											"Dwarven Culture is almost always tied to heritage, whose house is in control of what branch of dwarven society. Living in mountains and beneath the earth is almost second nature to dwarves, so where do road dwarves fit into this? Road dwarves are the revels, the rogues, people who wanted to see more of the world and move away from the deadlocked ideals of tradition. Road dwarves literally take to the road, finding their way along the path as travelers. Many take the chance to become merchants seeking fortune, others begin caravan companies, and even more become wanderlust adventurers."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Oh To Be a Road Dwarf",
 										"entries": [
-											"Si vous apercevez un nain sans armure au-dessus du sol, cela signifie que vous êtes très probablement tombé sur un nain des routes. Ils ont depuis longtemps abandonné la forge comme profession (bien que certains choisissent de la réapprendre) et préfèrent des vêtements et des armes plus légers pour s'adapter à leur style de vie vagabond. Le temps qu'ils ont passé à voyager a allégé leur démarche et les nains de la route, qu'ils soient en charrette, à cheval ou à pied, semblent se déplacer beaucoup plus rapidement et fréquemment que le nain moyen. Comme ils sont plus ouverts à la nouveauté, il n'est pas rare d'apercevoir un barde nain des routes racontant ses aventures dans une taverne ou un maître tireur d'élite avec sa fidèle arbalète lourde."
+											"Spotting a dwarf without armor above ground means you have most likely run into a road dwarf, they have long since abandoned smithing as a profession (though some may choose to relearn) and mostly prefer lighter clothing and weaponry to accomodate their vagabond lifestyles. Their time travelling have put a much lighter step in their heels and thus road dwarves whether on cart, mount, or foot seem to move about much more quickly and frequently than the average dwarf. Being more open to new things means it's not uncommon to spot a road dwarf bard recounting their adventures in a tavern or a master marksman and their trusty heavy crossbow."
 										]
 									}
 								]
@@ -619,65 +619,65 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Des royaumes riches en grandeur ancienne, des salles taillées dans les racines des montagnes, l'écho des pioches et des marteaux dans les mines profondes et les forges flamboyantes, un engagement envers le clan et la tradition, et une haine ardente des gobelins et des orcs - ces points communs unissent tous les nains.",
+									"Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs-these common threads unite all dwarves.",
 									{
 										"type": "entries",
 										"name": "Short and Stout",
 										"entries": [
-											"Audacieux et robustes, les nains sont connus pour être d'habiles guerriers, mineurs et travailleurs de la pierre et du métal. Bien qu'ils mesurent moins d'un mètre cinquante, les nains sont si larges et compacts qu'ils peuvent peser autant qu'un humain de près de deux pieds de plus. Leur courage et leur endurance n'ont rien à envier à ceux des plus grands.",
-											"La peau des nains va du brun profond à une teinte plus pâle teintée de rouge, mais les nuances les plus courantes sont le brun clair ou le bronzage profond, comme certains tons de la terre.",
-											"Leurs cheveux, portés longs mais dans des styles simples, sont généralement noirs, gris ou bruns, bien que les nains plus pâles aient souvent des cheveux roux. Les hommes nains accordent une grande importance à leur barbe et la soignent soigneusement."
+											"Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.",
+											"Dwarven skin ranges from deep brown to a paler hue tinged with red, but the most common shades are light brown or deep tan, like certain tones of earth.",
+											"Their hair, worn long but in simple styles, is usually black, gray, or brown, though paler dwarves often have red hair. Male dwarves value their beards highly and groom them carefully."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Long Memory, Long Grudges",
 										"entries": [
-											"Les nains peuvent vivre jusqu'à plus de 400 ans. Les nains les plus âgés se souviennent donc souvent d'un monde très différent. Par exemple, certains des nains les plus âgés vivant dans la Citadelle Felbarr (dans le monde des Royaumes oubliés) peuvent se souvenir du jour, il y a plus de trois siècles, où les orcs ont conquis la forteresse et les ont poussés à un exil qui a duré plus de 250 ans. Cette longévité leur confère un point de vue sur le monde qui fait défaut aux races à vie plus courte comme les humains et les halflings.",
-											"Les nains sont solides et endurants comme les montagnes qu'ils aiment, traversant les siècles avec une endurance stoïque et peu de changement. Ils respectent les traditions de leurs clans, remontant leurs ancêtres jusqu'à la fondation de leurs plus anciennes forteresses dans la jeunesse du monde, et n'abandonnent pas ces traditions à la légère. Une partie de ces traditions est la dévotion aux dieux des nains, qui soutiennent les idéaux nains de travail laborieux, d'habileté au combat et de dévotion à la forge.",
-											"Les nains sont déterminés et loyaux, fidèles à leur parole et décisifs dans l'action, parfois jusqu'à l'entêtement. De nombreux nains ont un sens aigu de la justice, et ils sont lents à oublier les torts qu'ils ont subis. Un tort fait à un nain est un tort fait à l'ensemble de son clan, si bien que ce qui commence comme la chasse à la vengeance d'un nain peut devenir une véritable querelle de clan."
+											"Dwarves can live to be more than 400 years old, so the oldest living dwarves often remember a very different world. For example, some of the oldest dwarves living in Citadel Felbarr (in the world of the Forgotten Realms) can recall the day, more than three centuries ago, when orcs conquered the fortress and drove them into an exile that lasted over 250 years. This longevity grants them a perspective on the world that shorter-lived races such as humans and halflings lack.",
+											"Dwarves are solid and enduring like the mountains they love, weathering the passage of centuries with stoic endurance and little change. They respect the traditions of their clans, tracing their ancestry back to the founding of their most ancient strongholds in the youth of the world, and don't abandon those traditions lightly. Part of those traditions is devotion to the gods of the dwarves, who uphold the dwarven ideals of industrious labor, skill in battle, and devotion to the forge.",
+											"Individual dwarves are determined and loyal, true to their word and decisive in action, sometimes to the point of stubbornness. Many dwarves have a strong sense of justice, and they are slow to forget wrongs they have suffered. A wrong done to one dwarf is a wrong done to the dwarf's entire clan, so what begins as one dwarf's hunt for vengeance can become a full-blown clan feud."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Clans and Kingdoms",
 										"entries": [
-											"Les royaumes nains s'étendent profondément sous les montagnes où les nains extraient des pierres précieuses et des métaux précieux et forgent des objets merveilleux. Ils aiment la beauté et l'art des métaux précieux et des bijoux fins, et chez certains nains, cet amour se transforme en avarice. Les richesses qu'ils ne trouvent pas dans leurs montagnes, ils les gagnent par le commerce. Ils n'aiment pas les bateaux, c'est pourquoi des humains et des halflings entreprenants s'occupent fréquemment du commerce des marchandises naines le long des routes maritimes. Les membres dignes de confiance des autres races sont les bienvenus dans les colonies naines, bien que certaines zones leur soient interdites.",
-											"L'unité principale de la société naine est le clan, et les nains accordent une grande importance au statut social. Même les nains qui vivent loin de leurs propres royaumes chérissent l'identité et l'affiliation de leur clan, reconnaissent les nains apparentés et invoquent les noms de leurs ancêtres dans leurs serments et leurs malédictions. Être sans clan est le pire sort qui puisse arriver à un nain.",
-											"Dans les autres pays, les nains sont généralement des artisans, en particulier des armuriers et des bijoutiers. Certains deviennent mercenaires ou gardes du corps, très recherchés pour leur courage et leur loyauté."
+											"Dwarven kingdoms stretch deep beneath the mountains where the dwarves mine gems and precious metals and forge items of wonder. They love the beauty and artistry of precious metals and fine jewelry, and in some dwarves this love festers into avarice. Whatever wealth they can't find in their mountains, they gain through trade. They dislike boats, so enterprising humans and halflings frequently handle trade in dwarven goods along water routes. Trustworthy members of other races are welcome in dwarf settlements, though some areas are off limits even to them.",
+											"The chief unit of dwarven society is the clan, and dwarves highly value social standing. Even dwarves who live far from their own kingdoms cherish their clan identities and affiliations, recognize related dwarves, and invoke their ancestors' names in oaths and curses. To be clanless is the worst fate that can befall a dwarf.",
+											"Dwarves in other lands are typically artisans, especially weaponsmiths, armorers, and jewelers. Some become mercenaries or bodyguards, highly sought after for their courage and loyalty."
 										]
 									},
 									{
 										"type": "entries",
 										"name": "Gods, Gold, and Clan",
 										"entries": [
-											"Les nains qui se lancent dans l'aventure peuvent être motivés par le désir de trouver des trésors - pour leur propre bien, dans un but précis, ou même par un désir altruiste d'aider les autres. D'autres nains sont poussés par le commandement ou l'inspiration d'une divinité, un appel direct ou simplement le désir d'apporter la gloire à l'un des dieux nains. Le clan et l'ascendance sont également des motivations importantes. Un nain peut chercher à restaurer l'honneur perdu d'un clan, à venger un tort ancien subi par le clan, ou à gagner une nouvelle place au sein du clan après avoir été exilé. Un nain peut aussi rechercher la hache brandie par un ancêtre puissant, perdue sur le champ de bataille il y a des siècles."
+											"Dwarves who take up the adventuring life might be motivated by a desire for treasure-for its own sake, for a specific purpose, or even out of an altruistic desire to help others. Other dwarves are driven by the command or inspiration of a deity, a direct calling or simply a desire to bring glory to one of the dwarf gods. Clan and ancestry are also important motivators. A dwarf might seek to restore a clan's lost honor, avenge an ancient wrong the clan suffered, or earn a new place within the clan after having been exiled. Or a dwarf might search for the axe wielded by a mighty ancestor, lost on the field of battle centuries ago."
 										]
 									},
 									{
 										"type": "inset",
 										"name": "Slow to Trust",
 										"entries": [
-											"Les nains s'entendent assez bien avec la plupart des autres races. \"La différence entre une connaissance et un ami est d'environ cent ans\", dit un nain, ce qui peut être une hyperbole, mais qui montre bien à quel point il peut être difficile pour un membre d'une race éphémère comme les humains de gagner la confiance d'un nain.",
+											"Dwarves get along passably well with most other races. \"The difference between an acquaintance and a friend is about a hundred years,\" is a dwarf saying that might be hyperbole, but certainly points to how difficult it can be for a member of a short-lived race like humans to earn a dwarf's trust.",
 											{
 												"type": "entries",
 												"name": "Elves",
 												"entries": [
-													"\"Il n'est pas sage de dépendre des elfes. On ne sait pas ce qu'un elfe va faire ensuite ; quand le marteau rencontre la tête de l'orc, ils sont aussi aptes à se mettre à chanter qu'à sortir une épée. Ils sont volages et frivoles. Deux choses à dire pour eux, cependant : Ils n'ont pas beaucoup de forgerons, mais ceux qu'ils ont font du très bon travail. Et quand les orcs ou les gobelins déboulent des montagnes, il est bon d'avoir un elfe dans son dos. Pas aussi bien qu'un nain, peut-être, mais nul doute qu'ils détestent les orcs autant que nous.\""
+													"\"It's not wise to depend on the elves. No telling what an elf will do next; when the hammer meets the orc's head, they're as apt to start singing as to pull out a sword. They're flighty and frivolous. Two things to be said for them, though: They don't have many smiths, but the ones they have do very fine work. And when orcs or goblins come streaming down out of the mountains, an elf's good to have at your back. Not as good as a dwarf, maybe, but no doubt they hate the orcs as much as we do.\""
 												]
 											},
 											{
 												"type": "entries",
 												"name": "Halflings",
 												"entries": [
-													"\"Bien sûr, ce sont des gens agréables. Mais montrez-moi un héros halfling. Un empire, une armée triomphante. Même un trésor pour l'éternité fait par des mains de halfling. Rien. Comment peux-tu les prendre au sérieux ?\""
+													"\"Sure, they're pleasant folk. But show me a halfling hero. An empire, a triumphant army. Even a treasure for the ages made by halfling hands. Nothing. How can you take them seriously?\""
 												]
 											},
 											{
 												"type": "entries",
 												"name": "Humans",
 												"entries": [
-													"\"Vous prenez le temps d'apprendre à connaître un humain, et à ce moment-là, l'humain est sur son lit de mort. Si vous avez de la chance, elle a un parent - une fille ou une petite-fille, peut-être - qui a des mains et un cœur aussi bons que les siens. C'est là que vous pouvez vous faire un ami humain. Et regardez-les aller . Ils ont jeté leur dévolu sur quelque chose, ils l'obtiendront, que ce soit le trésor d'un dragon ou le trône d'un empire. On ne peut qu'admirer ce genre de dévouement, même si cela leur attire des ennuis le plus souvent.\""
+													"\"You take the time to get to know a human, and by then the human's on her deathbed. If you're lucky, she's got kin-a daughter or granddaughter, maybe-who's got hands and heart as good as hers. That's when you can make a human friend. And watch them go!. They set their hearts on something, they'll get it whether it's a dragon's hoard or an empire's throne. You have to admire that kind of dedication, even if it gets them in trouble more often than not.\""
 												]
 											}
 										]
@@ -686,8 +686,8 @@
 										"type": "entries",
 										"name": "Dwarf Names",
 										"entries": [
-											"Le nom d'un nain est accordé par un ancien du clan, conformément à la tradition. Chaque nom nain correct a été utilisé et réutilisé au fil des générations. Le nom d'un nain appartient au clan, pas à l'individu.",
-											"Un nain qui fait un usage abusif ou honteux du nom d'un clan est déchu de ce nom et il lui est interdit par la loi d'utiliser un nom nain à sa place.",
+											"A dwarf's name is granted by a clan elder, in accordance with tradition. Every proper dwarven name has been used and reused down through the generations. A dwarf's name belongs to the clan, not to the individual.",
+											"A dwarf who misuses or brings shame to a clan name is stripped of the name and forbidden by law to use any dwarven name in its place.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
@@ -695,17 +695,17 @@
 													{
 														"type": "item",
 														"name": "Male Names:",
-														"entry": "Adrik, Alberich, Baern, Barendd, Brottor, Bruenor, Dain, Darrak, Delg, Eberk, Einkil, Fargrim, Flint, Gardain, Harbek, Kildrak, Morgran, Orsik, Oskar, Rangrim, Rurik, Taklinn, Thoradin, Thorin, Tordek, Traubon, Travok, Ulfgar, Veit, Vondal."
+														"entry": "Adrik, Alberich, Baern, Barendd, Brottor, Bruenor, Dain, Darrak, Delg, Eberk, Einkil, Fargrim, Flint, Gardain, Harbek, Kildrak, Morgran, Orsik, Oskar, Rangrim, Rurik, Taklinn, Thoradin, Thorin, Tordek, Traubon, Travok, Ulfgar, Veit, Vondal"
 													},
 													{
 														"type": "item",
 														"name": "Female Names:",
-														"entry": "Amber, Artin, Audhild, Bardryn, Dagnal, Diesa, Eldeth, Falkrunn, Finellen, Gunnloda, Gurdis, Helja, Hlin, Kathra, Kristryd, Ilde, Liftrasa, Mardred, Riswynn, Sannl, Torbera, Torgga, Vistra."
+														"entry": "Amber, Artin, Audhild, Bardryn, Dagnal, Diesa, Eldeth, Falkrunn, Finellen, Gunnloda, Gurdis, Helja, Hlin, Kathra, Kristryd, Ilde, Liftrasa, Mardred, Riswynn, Sannl, Torbera, Torgga, Vistra"
 													},
 													{
 														"type": "item",
 														"name": "Clan Names",
-														"entry": "Balderk, Battlehammer, Brawnanvil, Dankil, Fireforge, Frostbeard, Gorunn, Holderhek, Ironfist, Loderr, Lutgehr, Rumnaheim, Strakeln, Torunn, Ungart."
+														"entry": "Balderk, Battlehammer, Brawnanvil, Dankil, Fireforge, Frostbeard, Gorunn, Holderhek, Ironfist, Loderr, Lutgehr, Rumnaheim, Strakeln, Torunn, Ungart"
 													}
 												]
 											}
@@ -715,7 +715,7 @@
 										"type": "inset",
 										"name": "Duergar",
 										"entries": [
-											"Dans les villes des profondeurs de l'Underdark vivent les duergar, ou nains gris. Ces esclavagistes vicieux et furtifs font des raids sur le monde de la surface pour trouver des captifs, puis vendent leurs proies aux autres races de l'Underdark. Ils possèdent des capacités magiques innées leur permettant de devenir invisibles et d'atteindre temporairement une taille géante."
+											"In cities deep in the Underdark live the duergar, or gray dwarves. These vicious, stealthy slave traders raid the surface world for captives, then sell their prey to the other races of the Underdark. They have innate magical abilities to become invisible and to temporarily grow to giant size."
 										]
 									}
 								]
@@ -785,13 +785,13 @@
 				]
 			},
 			"entries": [
-				"Vous invoquez et embrassez les fosses de l'enfer pour vous accorder une force d'un autre monde, en prenant les caractéristiques d'un être infernal le plus proche de votre lignée. Vous bénéficiez des avantages suivants jusqu'à la fin du sort :",
+				"You call upon and embrace the pits of hell to grant you otherworldly strength, taking on the features of a hellish being closest to your bloodline. You gain the following benefits until the spell ends:",
 				{
 					"type": "list",
 					"items": [
-						"Vous êtes résistant au feu, ainsi qu'aux dégâts perçants, tranchants ou contondants de votre choix.",
-						"Vous avez la vue du diable, capable de voir à travers l'obscurité commune et magique à une distance de 60 pieds.",
-						"Vous êtes immunisé contre les dégâts du poison et la condition {@condition poisoned}."
+						"You are resistant to fire, as well as your choice of either piercing, slashing, or bludgeoning damage.",
+						"You have devil's sight, able to see through both common and magical darkness to a range of 60 feet.",
+						"You are immune to poison damage and the {@condition poisoned} condition."
 					]
 				}
 			],
@@ -842,15 +842,15 @@
 				}
 			],
 			"entries": [
-				"Vous vous infusez temporairement la capacité de libérer des faisceaux d'énergie bleue crépitante. En tant qu'action, vous pouvez lancer cette énergie vers une créature à portée, formant un arc de foudre soutenu entre vous et la cible. Effectuez une attaque de sort à distance contre cette créature. En cas de succès, la cible subit {@damage 1d12} de dégâts de foudre et est liée à vous. Vous ne pouvez vous lier qu'à une seule cible à la fois. Si vous vous liez à une nouvelle cible, le premier lien prend fin.",
-				"Vous pouvez utiliser votre action bonus pour infliger automatiquement {@damage 1d12} de dégâts de foudre à la cible liée, tant que vous avez une main libre ou que vous tenez un focus de lanceur de sorts, que la cible liée est à portée et qu'elle n'est pas totalement couverte par vous.",
-				"Le lien prend fin si vous utilisez votre action bonus pour faire autre chose."
+				"You temporaliy infuse yourself with the ability to release beams of crackling, blue energy. As an action, you can lance this energy out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes {@damage 1d12} lightning damage, and is bonded with you. You can be bonded to only one target at a time. If you bond yourself to a new target, the first one ends.",
+				"You can use your bonus action to deal {@damage 1d12} lightning damage to the bonded target automatically as long as you have a free hand or are holding a spellcasting focus, and the bonded target is within range and it doesn't have total cover from you.",
+				"The bond ends if you use your bonus action to do anything else."
 			],
 			"entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"Lorsque vous lancez ce sort en utilisant un emplacement de sort de 3e niveau ou plus, les dégâts initiaux augmentent de {@scaledamage 1d12|2-9|1d12} pour chaque niveau d'emplacement supérieur au 2e."
+						"When you cast this spell using a spell slot of 3rd level or higher, the initial damage increases by {@scaledamage 1d12|2-9|1d12} for each slot level above 2nd."
 					],
 					"type": "entries"
 				}
@@ -897,8 +897,8 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Ces lunettes à monture en cuir sont dotées de lentilles en cristal violet. Lorsque vous portez les lunettes, vous pouvez voir la magie comme le sort {@spell detect magic|phb} et vous avez l'avantage sur les tests d'Intelligence effectués pour révéler des informations sur une créature ou un objet que vous pouvez voir.",
-				"De plus, vous pouvez lancer le sort {@spell identify} en utilisant les lunettes. Une fois que vous l'avez fait, vous ne pouvez plus le faire avant l'aube suivante."
+				"These leather-framed goggles feature purple crystal lenses. While wearing the goggles, you can see magic as of the {@spell detect magic|phb} spell and have advantage on Intelligence checks made to reveal information about a creature or object you can see.",
+				"In addition, you can cast the {@spell identify} spell using the googles. Once you do so, you can't do so again until the next dawn."
 			],
 			"attachedSpells": [
 				"identify",
@@ -918,19 +918,19 @@
 			"dmgType": "B",
 			"bonusWeapon": "+1",
 			"entries": [
-				"Cette masse est faite uniquement d'un étrange matériau cristallin, qui montre tous les signes d'un comportement inhabituel lorsqu'il est laissé seul.",
+				"This mace is made purely of some strange crystalline material, showing all signs of unusual behavior when left alone.",
 				{
 					"type": "entries",
 					"name": "Special Properties",
 					"entries": [
-						"Cette masse magique présente toutes sortes de comportements inhabituels, et peut fonctionner de manière sporadique ou avec des effets secondaires imprévisibles, comme le détermine le MJ.",
-						"L'article présente également un comportement inhabituel passif, tel que :",
+						"This mace of magic exhibits all kinds of unusual behavior, and might function sporadically or with unpredictable side effects, as determined by the DM.",
+						"The item also exhibits some passive unusual behavior, such as:",
 						{
 							"type": "list",
 							"items": [
-								"Lorsqu'on la lâche, la masse flotte au lieu de tomber sur le sol.",
-								"L'objet diffuse de la lumière à partir de sa magie stockée, créant une lumière vive dans un rayon de 15 pieds et une lumière faible dans un rayon supplémentaire de 15 pieds.",
-								"La masse interagit fortement avec les champs anti-magiques, les dissipant de manière explosive lorsqu'elle est touchée."
+								"When dropped, the mace floats instead of falling to the ground.",
+								"The item sheds light out of it's stored magic, creating bright light in a 15-foot radius and dim light for an additional 15 feet.",
+								"The mace strongly interacts with anti-magic fields, dispelling them in an explosive fashion when touched."
 							]
 						}
 					]
@@ -939,13 +939,13 @@
 					"type": "entries",
 					"name": "Dormant",
 					"entries": [
-						"Le Verre façonné accorde les avantages suivants dans son état dormant :",
+						"The Shaped Glass grants the following benefits in its dormant state:",
 						{
 							"type": "list",
 							"items": [
-								"Vous gagnez un bonus de +1 aux jets d'attaque et de dégâts effectués avec cette arme magique.",
-								"Vous pouvez faire en sorte que la masse vous submerge avec sa trame à votre tour, en gagnant une action supplémentaire. Lancez un {@dice d4}. Sur un résultat de 1 à 3, vous commencez votre prochain tour {@condition stunned}. Cette propriété ne peut pas être réutilisée avant l'aube.",
-								"Une fois par tour, lorsque vous réussissez une attaque avec la masse, vous pouvez lui faire infliger des dégâts doubles. Après avoir infligé des dégâts à la créature, vous subissez des dégâts doubles jusqu'au début de votre prochain tour."
+								"You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+								"You can cause the mace to overwhelm you with it's weave on your turn, gaining an additional action. Roll a {@dice d4}. On a result of 1 to 3, you start your next turn {@condition stunned}. This property can't be used again until dawn.",
+								"Once per turn, when you hit an attack with the mace, you can make it deal double damage. After dealing damage to the creature, you take double damage until the start of your next turn."
 							]
 						}
 					]
@@ -954,14 +954,14 @@
 					"type": "entries",
 					"name": "Awakened",
 					"entries": [
-						"Lorsque le Verre façonné se réveille, il accorde les avantages suivants :",
+						"As the Shaped Glass awakens, it grants the following benefits:",
 						{
 							"type": "list",
 							"items": [
-								"Vous gagnez un bonus de +2 aux jets d'attaque et de dégâts effectués avec cette arme magique.",
-								"Lorsque vous lancez le {@dice d4} après avoir obtenu une action supplémentaire grâce à cet objet, vous ne devenez {@condition stunned} que sur un jet de 1 à 2.",
-								"Pendant un repos court ou long, vous pouvez reformer Verre façonné en tant que partie d'une autre arme qui inflige des dégâts perforants ou tranchants. Après cela, l'arme devient magique et acquiert les propriétés du Verre façonné, ne faisant plus qu'un avec l'objet.",
-								"De plus, lorsqu'il tente de perdre l'accord avec Verre façonné, l'utilisateur doit effectuer un jet de sauvegarde de Charisme DC 20 pour réussir à retirer l'objet de sa conscience. En cas d'échec, il est assommé {@condition unconscious}."
+								"You gain +2 bonus to attack and damage rolls made with this magic weapon.",
+								"When rolling the {@dice d4} after gaining an additional action from this item, you only become {@condition stunned} on a roll of 1 to 2.",
+								"During a short or long rest, you can reform Shaped Glass as a part of another weapon that deals piercing or slashing damage. After this, the weapon becomes magical and gains the properties of Shaped Glass, becoming one with the item.",
+								"Also, when trying to lose attunement to Shaped Glass, the user must make a DC 20 Charisma save to successfully remove the item from their consciousness. On a failed save, they are knocked {@condition unconscious}."
 							]
 						}
 					]
@@ -970,13 +970,13 @@
 					"type": "entries",
 					"name": "Exalted",
 					"entries": [
-						"Le verre façonné est à son apogée, devenant fidèle à sa nature et vous accordant les avantages suivants dans son état exalté :",
+						"Shaped Glass is at its peak, becoming true with its nature and granting you the following benefits in its exalted state:",
 						{
 							"type": "list",
 							"items": [
-								"Vous gagnez un bonus de +3 aux jets d'attaque et de dégâts effectués avec cette arme magique.",
-								"Lorsque vous lancez le {@dice d4} après avoir obtenu une action supplémentaire grâce à cet objet, vous ne devenez {@condition stunned} que sur un résultat de 1.",
-								"Vous êtes maintenant pernament en accord avec l'Eclat de Verre, pour en être séparé par une intervention divine."
+								"You gain +3 bonus to attack and damage rolls made with this magic weapon.",
+								"When rolling the {@dice d4} after gaining an additional action from this item, you only become {@condition stunned} on a roll of 1.",
+								"You are now pernamently attuned to the Glass Shard, only to be separated from it through divine intervention."
 							]
 						}
 					]
@@ -984,12 +984,12 @@
 			],
 			"fluff": {
 				"entries": [
-					"Appariements -",
-					"Du verre non structuré, provenant du cœur de la [Lune]. Chanté, en volutes éthérées, au cours de 3 cycles. Pause.",
-					"Nous plions le temps dans sa matière - deux fois. Notre temps et le sien. Un coût qu'il était prêt à nous faire payer. Plié et façonné, avec les desseins d'un dieu.",
-					"Il la manie, dans une de ses nombreuses grandes mains. Le temps que nous avons injecté est déplié dans sa main. Les sorties s'accélèrent - les muscles se compriment deux fois. Deux fois plus d'intentions. Deux fois plus de complexités ordonnées, repliées sur elles-mêmes. Les boucles se referment sur [ ?] par paires. Fonctions dépendantes du temps. Pause.",
-					"Il découpe une construction en mille morceaux.",
-					"Mais le temps est juste. Les microténaires commencent à se dérouler par paires. Les muscles commencent à claquer, deux fois plus vite.  Le coût du temps plié. Mais il a beaucoup de temps."
+					"Pairings -",
+					"Unstructured glass, from the heart of the [Moon]. Sung out, in ethereal wisps, over the course of 3 cycles. Pause.",
+					"We fold time into its material - twice. Our time and his. A cost he was willing us to pay. Folded and shaped, with a god's designs.",
+					"He wields it, in one of many great hands. The time we injected is unfolded in his grasp. Outputs quicken - muscles compress twice. Twice as many intentions. Twice the ordered complexities, folded upon themselves. Loops loop back onto [?] in pairs. Time dependent functions. Pause.",
+					"He sunders a construct into a thousand pieces.",
+					"But time is fair. Microtears begin to uncoil in pairs. Muscles begin to snap, twice as fast.  The cost of folded time. But he has plenty of time."
 				]
 			}
 		}
