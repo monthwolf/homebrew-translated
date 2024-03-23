@@ -69,7 +69,7 @@ jobs:
       continue-on-error: true
       run: |
            cd $GITHUB_WORKSPACE
-           mkdir data.${{ matrix.language }} || true
+           mkdir data.${{ matrix.language }} 
            ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --$TRANS_TYPE $SOURCE_FILES
            rm -Rf data.${{ matrix.language }} # Delete so we remove duplicates and regenerate in the next step
            ./translation/translate.py --language ${{ matrix.language }} --translate $SOURCE_FILES
