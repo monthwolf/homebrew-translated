@@ -2,6 +2,7 @@ name: translate
 
 env:
   TRANS_TYPE: 'deepl'
+  SOURCE_FILES: 'data/[a-z]*/*.json'
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   APIKEY: ${{ secrets.APIKEY }}
   BASEURL: 'https://api.openai.com/v1'
