@@ -1,18 +1,31 @@
 name: translate
 
 env:
-  SOURCE_FILES: 'data/[a-z]*/*.json'
+  TRANS_TYPE: 'deepl'
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  APIKEY: ${{ secrets.APIKEY }}
+  BASEURL: 'https://api.openai.com/v1'
+  MODEL: 'gpt-3.5-turbo-0125'
 
 on:
   workflow_dispatch:
     inputs:
-      source:
-        description: 'Source files'
-        required: True
-        default: ${SOURCE_FILES}
-  schedule:
-    - cron: "10 3 * * *"
+      apikey:
+        description: 'gpt apikey'
+        required: False
+        default: ${APIKEY}
+      baseurl:
+        description: 'gpt baseurl'
+        required: False
+        default: ${BASEURL}
+      model:
+          description: 'gpt model'
+          required: False
+          default: ${MODEL}
+      method:
+          description: 'Translation method(deepl or gpt)'
+          required: True
+          default: ${TRANS_TYPE}
 
 jobs:
   merge-upstream:
@@ -51,13 +64,13 @@ jobs:
     - name: Set up dependencies
       run: |
            sudo apt-get install -y firefox
-           pip3 install selenium webdriver_manager
+           pip3 install selenium webdriver_manager openai
     - name: Generate translations
       continue-on-error: true
       run: |
            cd $GITHUB_WORKSPACE
            mkdir data.${{ matrix.language }} || true
-           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --deepl $SOURCE_FILES
+           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --gpt $SOURCE_FILES
            rm -Rf data.${{ matrix.language }} # Delete so we remove duplicates and regenerate in the next step
            ./translation/translate.py --language ${{ matrix.language }} --translate $SOURCE_FILES
            (cd data && npm install)
