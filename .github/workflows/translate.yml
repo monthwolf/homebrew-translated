@@ -71,7 +71,7 @@ jobs:
       run: |
            cd $GITHUB_WORKSPACE
            mkdir data.${{ matrix.language }} 
-           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --$TRANS_TYPE $SOURCE_FILES
+           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --${{ inputs.method }} $SOURCE_FILES
            rm -Rf data.${{ matrix.language }} # Delete so we remove duplicates and regenerate in the next step
            ./translation/translate.py --language ${{ matrix.language }} --translate $SOURCE_FILES
            (cd data && npm install)
@@ -80,6 +80,9 @@ jobs:
            [ -d _node ] || ln -s ../data/_node
            [ -f package.json ] || ln -s ../data/package.json
            npm run build
+      env:
+          BASEURL: ${{ inputs.baseurl}}
+          MODEL: ${{ inputs.model }}
     - name: Save results
       continue-on-error: true
       run: |
