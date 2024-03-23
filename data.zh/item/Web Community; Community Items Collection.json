@@ -1,0 +1,2780 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMItems",
+				"abbreviation": "COMItems",
+				"full": "Community Items",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "1.3.1",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"currencyConversions": {
+			"goblincurrency": [
+				{
+					"coin": "ap",
+					"mult": 1
+				},
+				{
+					"coin": "bp",
+					"mult": 0.5,
+					"isFallback": true
+				}
+			]
+		},
+		"dateAdded": 1537874753,
+		"dateLastModified": 1703373316,
+		"_dateLastModifiedHash": "b710a7eb4e"
+	},
+	"itemProperty": [
+		{
+			"abbreviation": "Spiked",
+			"source": "COMItems",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Spiked",
+					"entries": [
+						"当被带有尖刺属性的武器击中时，目标获得（%0%）的伤害。"
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Spider Staff",
+			"baseItem": "staff|PHB",
+			"type": "GV",
+			"weaponCategory": "martial",
+			"weight": 6,
+			"dmg1": "1d6",
+			"dmg2": "1d6 poison damage",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"value": 100000,
+			"staff": true,
+			"recharge": "dusk",
+			"charges": 10,
+			"source": "COMItems",
+			"entries": [
+				"这根黑色的金刚杖的顶部形状像一只蜘蛛。该法杖重达6磅。你必须与法杖相适应，才能获得它的好处并施展它的法术。",
+				"该法杖可以作为四分法杖挥舞。当用来进行武器攻击时，它在击中时造成{@dice 1d6}额外的毒药伤害。",
+				"法杖有10个电荷，用来为其中的法术提供能量。当法杖在手时，你可以用你的行动从法杖中施放以下一个法术，如果该法术在你的等级的法术列表中。{@spell spider climb}(1次充电)或{@spell web}(2次充电，法术保全DC15)。不需要任何组件。",
+				"每天黄昏时，法杖会重新获得{@dice 1d6 + 4}已消耗的电荷。如果你消耗了法杖的最后一次充能，掷出{@dice d20}。1的话，法杖就会碎裂成灰尘并被摧毁。"
+			],
+			"attachedSpells": [
+				"spider climb",
+				"web"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/jrmsk3k.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			},
+			"rechargeAmount": "{@dice 1d6 + 4}"
+		},
+		{
+			"name": "Staff of Defense",
+			"baseItem": "staff|PHB",
+			"type": "GV",
+			"weaponCategory": "martial",
+			"weight": 3,
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"value": 100000,
+			"staff": true,
+			"recharge": "dawn",
+			"charges": 10,
+			"source": "COMItems",
+			"entries": [
+				"这根细长的空心杖是由玻璃制成的，但却像橡木一样坚固。它有3磅重。你必须与法杖相适应才能获得它的好处并施展它的法术。",
+				"拿着法杖时，你的护甲等级有+1的加成。",
+				"法杖有10个电荷，用来为其中的法术提供能量。当法杖在手时，你可以用你的行动从法杖中施放以下一个法术，如果该法术在你的等级的法术列表中。{@spell mage armor}（1次充电）或{@spell shield}（2次充电）。不需要任何组件。",
+				"每天黎明时分，法杖会重新获得{@dice 1d6 + 4}已消耗的能量。如果你消耗了法杖的最后一次充能，掷出{@dice d20}。如果是1，法杖就会碎裂并被摧毁。"
+			],
+			"bonusAc": "+1",
+			"attachedSpells": [
+				"mage armor",
+				"shield"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/G0w2N7F.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			},
+			"rechargeAmount": "{@dice 1d6 + 4}"
+		},
+		{
+			"name": "Wand of Magic Missiles",
+			"baseItem": "wand|PHB",
+			"type": "WD",
+			"weaponCategory": "martial",
+			"weight": 3,
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"value": 100000,
+			"recharge": "dawn",
+			"charges": 7,
+			"source": "COMItems",
+			"entries": [
+				"这根魔杖有7个电荷。当魔杖在手时，你可以用你的行动从魔杖中发射{@spell magic missile}的咒语，不需要任何组件，并消耗魔杖的1到3个电量。每消耗1个电荷，法术的等级就增加1。",
+				"魔杖每天在黎明时分会恢复{@dice 1d6 + 1}已消耗的电量。如果你消耗了魔杖的最后一次充电，请掷出{@dice d20}。1的话，魔杖就会碎成灰烬并被摧毁。"
+			],
+			"attachedSpells": [
+				"magic missile"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BO612vr.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			},
+			"rechargeAmount": "{@dice 1d6 + 1}"
+		},
+		{
+			"name": "Spell Scroll",
+			"baseItem": "scroll|PHB",
+			"weaponCategory": "varies",
+			"weight": 0.1,
+			"stealth": false,
+			"rarity": "varies",
+			"wondrous": false,
+			"value": 100000,
+			"source": "COMItems",
+			"entries": [
+				"咒语卷轴上有一个单一的咒语，以神秘的密码写成。如果该咒语在你的等级的咒语列表中，你可以使用一个动作来阅读该卷轴并施放其咒语，而不需要提供任何咒语的组成部分。否则，该卷轴是无法理解的。",
+				"如果该咒语在你的等级的咒语列表中，但其等级高于你通常可以施放的等级，你必须使用你的施法能力进行能力检查以确定你是否成功施放。测验值等于10+该法术的等级。如果检定失败，该咒语将从卷轴上消失，没有其他效果。",
+				"一旦施法，卷轴上的文字就会褪色，而卷轴本身也会碎裂成灰。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/DEWU6Me.png"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"name": "Ring of Protection",
+			"baseItem": "ring|PHB",
+			"type": "R",
+			"weaponCategory": "varies",
+			"weight": 0.1,
+			"stealth": false,
+			"rarity": "rare",
+			"wondrous": false,
+			"reqAttune": true,
+			"value": 100000,
+			"source": "COMItems",
+			"entries": [
+				"当你戴着这枚戒指并与之相适应时，你的护甲等级和救赎动作都有+1的加成。"
+			],
+			"bonusAc": "+1",
+			"bonusSavingThrow": "+1",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/29d5Z4Z.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"name": "Boots of Striding and Springing",
+			"weaponCategory": "varies",
+			"weight": 0.1,
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"reqAttune": true,
+			"value": 100000,
+			"source": "COMItems",
+			"entries": [
+				"当你穿上这双靴子时，你的速度会变成30英尺，除非你的步行速度更高，如果你有负重或穿着重甲，你的速度不会降低。此外，每当你跳跃时，你可以跳出正常距离的三倍。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/QT2Ubk1.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"name": "Gauntlets of Ogre Power",
+			"weaponCategory": "varies",
+			"weight": 0.1,
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"reqAttune": true,
+			"value": 100000,
+			"source": "COMItems",
+			"entries": [
+				"当你穿上这双战甲时，你的力量会变成19。如果你的力量已经是19或更高，那么这副铠甲对你没有影响。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AgSIiu9.jpg"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"name": "Amulet of Proof Against Detection and Location",
+			"weaponCategory": "varies",
+			"weight": 0.1,
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"reqAttune": true,
+			"value": 100000,
+			"source": "COMItems",
+			"entries": [
+				"佩戴这个护身符时，你会被隐藏在占卜魔法之外。你不能被这种魔法锁定，也不能通过魔法探查传感器感知到。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/SkN50to.png"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"name": "Spell Scroll of Protection from Energy",
+			"baseItem": "scroll|PHB",
+			"weaponCategory": "varies",
+			"weight": 0.1,
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"reqAttune": false,
+			"value": 100000,
+			"source": "COMItems",
+			"entries": [
+				"含有该法术的法术卷轴（%0%）。",
+				"咒语卷轴上有一个单一的咒语，以神秘的密码写成。如果该咒语在你的等级的咒语列表中，你可以阅读该卷轴并施放其咒语，而无需提供任何物质成分。否则，该卷轴是无法理解的。通过阅读卷轴来施法需要该法术的正常施法时间。一旦施法，卷轴上的文字就会褪色，并且碎裂成灰。如果施法过程被打断，卷轴也不会丢失。",
+				"如果该咒语在你的等级的咒语列表中，但其等级高于你通常可以施放的等级，你必须使用你的施法能力进行能力检查以确定你是否成功施放。测验值等于10+该法术的等级。如果检定失败，该咒语将从卷轴上消失，没有其他效果。",
+				"魔法卷轴上的巫师咒语可以被复制，就像魔法书中的咒语可以被复制一样。当咒语卷轴上的咒语被复制时，复制者必须成功进行智力（阿卡纳）检查，检查的难度等于10+咒语的等级。如果检定成功，该咒语就被成功复制了。无论检查是成功还是失败，法术卷轴都会被销毁。"
+			],
+			"attachedSpells": [
+				"Protection from Energy"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/DEWU6Me.png"
+						}
+					}
+				],
+				"entries": [
+					""
+				]
+			}
+		},
+		{
+			"name": "Brazier of Blizzards",
+			"weaponCategory": "varies",
+			"weight": 0.5,
+			"stealth": false,
+			"rarity": "legendary",
+			"wondrous": true,
+			"reqAttune": "by a spellcaster",
+			"value": 5500000,
+			"source": "COMItems",
+			"entries": [
+				"这个火炉由冰川雕刻而成，经过几年的时间，用一条古老的白龙的血液处理，为它注入了巨大的魔力。",
+				"这个火炉有15个电荷，每天在黎明时分恢复（%0%）已消耗的电荷。",
+				"如果你耗尽了最后一个电荷，就掷一个（%0%）。如果是1，火炉就会融化并被摧毁。",
+				"作为一个额外的动作，你可以点燃这个火炉，使一股无害的蓝色火焰喷射到你上方的天空。一旦以这种方式点燃，你可以用你的法术救赎DC，用它来施放下列法术：{@spell  cone of cold}(5次)、{@spell freezing sphere}(6次)、{@spell gust of wind}(2次)、{@spell ice storm}(4次)、{@spell sleet storm}(3次)、或{@spell storm of vengeance}(12次)。",
+				"此外，在被点燃时，你可以在10分钟内消耗10个电荷来施放控制天气。当以这种方式施放时，降水条件总是变为暴风雪，温度条件总是变为北极寒风，无论起始条件如何。炉子的重量为5磅。"
+			],
+			"attachedSpells": [
+				"cone of cold",
+				"freezing sphere",
+				"gust of wind",
+				"ice storm",
+				"sleet storm",
+				"storm of vengeance"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NcFx3E3.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Ice Items|https://www.gmbinder.com/share/-M8lbrdvBMk5PLQMWPuv}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Frozen Fistwraps",
+			"weaponCategory": "varies",
+			"weight": 0.5,
+			"stealth": false,
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": false,
+			"value": 2500000,
+			"source": "COMItems",
+			"entries": [
+				"由冰霜巨人的胡须织成的布制成，这些手包散发出冰川的能量。",
+				"当你戴着这些神奇的手包时，用非武装攻击命中时，目标会受到额外的1d6冷伤害。此外，这些包裹在5英尺范围内发出亮光，在另外5英尺范围内发出暗光。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NcFx3E3.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Ice Items|https://www.gmbinder.com/share/-M8lbrdvBMk5PLQMWPuv}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Glacial Plate",
+			"baseItem": "Plate Armor|PHB",
+			"type": "HA",
+			"weight": 0.1,
+			"ac": 1,
+			"strength": "15",
+			"stealth": false,
+			"rarity": "very rare",
+			"wondrous": false,
+			"reqAttune": true,
+			"value": 4000000,
+			"charges": 2,
+			"recharge": "dawn",
+			"source": "COMItems",
+			"entries": [
+				"这块板甲似乎是由移动的冰川制成的，持续地移动和变化，就像里面的冰融物在移动一样，但它的触感却如同钢铁。",
+				"穿着这件盔甲时，你获得一个+1的交流奖励。",
+				"此外，这套盔甲有两个罪名。",
+				"作为一个动作，你可以消耗一个电荷来施放（%0%）。当你这样做时，你必须选择寒冰护盾的效果。",
+				"所有收费在黎明时分重置。"
+			],
+			"attachedSpells": [
+				"fire shield"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/i3l9qUE.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Ice Items|https://www.gmbinder.com/share/-M8lbrdvBMk5PLQMWPuv}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Pelt of Winter's Heart",
+			"weight": 0.5,
+			"strength": "15",
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"reqAttune": "requires attunement by a druid",
+			"value": 70000,
+			"source": "COMItems",
+			"entries": [
+				"这种毛皮像斗篷一样披在肩上，类似于冬狼的毛皮，尽管它没有头也没有爪。",
+				"在调和的同时，你适应了寒冷的气候，没有受到暴露在这种气候中的负面影响。",
+				"此外，当你使用你的野性形状特征来承担一个野兽的形状时，你可以选择给它白色的毛发。",
+				"这样做可以赋予野兽形状以下好处。",
+				"雪地伪装。野兽在雪地上藏身的灵巧（隐身）检查中具有优势。",
+				"温暖的皮毛。野兽对寒冷伤害有抵抗力。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/v60N65q.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Ice Items|https://www.gmbinder.com/share/-M8lbrdvBMk5PLQMWPuv}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Amulet of the Werewolf",
+			"wondrous": true,
+			"tier": "minor",
+			"rarity": "rare",
+			"weight": 0.1,
+			"value": 270000,
+			"source": "COMItems",
+			"entries": [
+				"这种护身符有两个品种，银色和象牙色。",
+				{
+					"items": [
+						{
+							"name": "Silver Amulet",
+							"entries": [
+								"如果你是狼人，无论是被感染还是天生就是狼人，你在佩戴这个护身符时都无法改变你的形状。如果你不是狼人，这对你没有影响，即使你是不同类型的变身者或者能够通过其他方式变身。"
+							],
+							"type": "item"
+						},
+						{
+							"name": "Ivory Amulet",
+							"entries": [
+								"在佩戴这个护身符时，你会被感染上狼人症，并在下一个满月和之后的每个满月变成狼人（或更罕见的不同类型的狼兽）。象牙护身符是被诅咒的。你不能把它摘下来，也不能在佩戴这个护身符时治愈你的狼人症或以其他方式抑制你的狼人症。"
+							],
+							"type": "item"
+						}
+					],
+					"type": "list",
+					"style": "list-hang-notitle"
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/tNpXnfL.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							""
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Black powder bomb",
+			"type": "GV",
+			"weight": 2,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"reqAttune": false,
+			"value": 10000,
+			"source": "COMItems",
+			"entries": [
+				"一团爆炸的火药包成一个球，引线伸出来。",
+				"作为一个动作，你可以将炸弹扔向你20英尺范围内你能看到的一个点。",
+				"所有在该点5英尺范围内没有穿戴或携带的生物和非魔法物品必须做一个DC13的灵巧救赎，失败时受到{@dice 2d6}重击伤害，成功时受到一半的重击。",
+				"没有被佩戴或携带的非魔法物品对损害有脆弱性。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/wMXbHjS.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link More Throwables|https://www.reddit.com/r/UnearthedArcana/comments/cz6208/more_throwables_four_new_throwable_items_akin_to/}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Flash powder bomb",
+			"type": "GV",
+			"weight": 2,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"reqAttune": false,
+			"value": 20000,
+			"source": "COMItems",
+			"entries": [
+				"一团明亮的爆炸粉末被包裹成球状，引线伸出来。",
+				"作为一个动作，你可以将炸弹扔向你20英尺范围内你能看到的一个点。",
+				"所有的生物和在该点5英尺范围内的生物必须做一个DC 15的宪法拯救动作。",
+				"拯救失败时，生物会被弄瞎，直到你下一回合结束。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/htYai38.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link More Throwables|https://www.reddit.com/r/UnearthedArcana/comments/cz6208/more_throwables_four_new_throwable_items_akin_to/}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Lightning in a bottle (flask)",
+			"type": "GV",
+			"weight": 1,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"reqAttune": false,
+			"value": 30000,
+			"source": "COMItems",
+			"entries": [
+				"一个烧瓶，里面有一个小闪电的拉链。",
+				"作为一个动作，你可以将这个酒瓶扔到20英尺远的地方，在撞击时将其摔碎。",
+				"对一个生物或物体进行远程攻击，将瓶中的闪电视为一种简易的武器。",
+				"一旦命中，目标会受到0%的雷电伤害，如果他们是对雷电伤害不免疫的生物，他们必须做出DC15宪法规定的救赎动作。",
+				"在拯救失败的情况下，该生物会被击晕，直到你下一回合开始。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Ic0Zn58.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link More Throwables|https://www.reddit.com/r/UnearthedArcana/comments/cz6208/more_throwables_four_new_throwable_items_akin_to/}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Liquid smoke (vial)",
+			"type": "GV",
+			"weight": 1,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"reqAttune": false,
+			"value": 5000,
+			"source": "COMItems",
+			"entries": [
+				"一个装满液体的小瓶，暴露在空气中时会蒸发成浓烟。",
+				"作为一个动作，你可以将炸弹扔向你20英尺范围内你能看到的一个点。",
+				"以该点为中心，出现一个半径为10英尺的厚厚的烟球。",
+				"球体在角落里扩散，其区域被严重遮挡。",
+				"它持续一分钟或直到中等或更高速度的风（至少每小时10英里）将其吹散。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sHrjK7V.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link More Throwables|https://www.reddit.com/r/UnearthedArcana/comments/cz6208/more_throwables_four_new_throwable_items_akin_to/}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "The Queen's feather",
+			"type": "M",
+			"weight": 1,
+			"baseItem": "dagger|PHB",
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmg2": "1d6",
+			"dmgType": "P",
+			"stealth": false,
+			"rarity": "rare",
+			"wondrous": false,
+			"reqAttune": true,
+			"value": 170000,
+			"charges": 3,
+			"recharge": "midnight",
+			"bonusWeapon": "+1",
+			"source": "COMItems",
+			"entries": [
+				"这把匕首是由乌鸦女王的羽毛锻造而成，并被影子城的力量所扭曲，是潜伏在黑暗中的人的一把重要的刀。",
+				"你在使用该魔法武器进行攻击和伤害的时候有一个+1的奖励。",
+				"此武器含有3个电荷，在午夜时分恢复{@dice 1d4-1}。",
+				"当你扔出匕首时，你可以消耗一个电荷将它传送到0作为一个额外的动作，并再次将它拥有。",
+				"此外，只要你在昏暗的光线或黑暗中，你就能在每次击中时造成额外的（%0%）坏死伤害。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/15Riu84.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link The Queen's feather|https://www.reddit.com/r/UnearthedArcana/comments/futtx9/goldilust_the_queens_feather_weapon_dagger_rare/}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Lolth's Decree",
+			"type": "M",
+			"weight": 3,
+			"baseItem": "whip|PHB",
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"R"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"stealth": false,
+			"rarity": "uncommon",
+			"wondrous": false,
+			"reqAttune": false,
+			"value": 170000,
+			"source": "COMItems",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Venomous sting",
+					"entries": [
+						"每回合一次，当你用你的武器击中一个生物时，他们必须在DC13的体质测试中成功，否则就会受到{@condition poisoned}条件的影响，直到他们下一回合结束。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Mistress's command",
+					"entries": [
+						"作为一个行动，你可以对10英尺范围内的生物施展（%0%）的法术，DC13智慧救赎，如果他们成功，他们在接下来的24小时内对这个效果免疫。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"command"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/iwsP4nB.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "quote",
+						"entries": [
+							"这些鞭子是用黑暗中的怪兽皮制作的，然后掺入了乌鸦的魔法，它们被用来奴役俘虏，确保他们永远不会违背自己的意愿。",
+							"饰有蜘蛛眼，深深地凝视着他们的受害者。",
+							"这种武器使生物充满了恐怖和绝望。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Lolth's Decree|https://www.reddit.com/r/mattcolville/comments/gel0tt/goldilust_lolths_decree_weapon_whip_uncommon_art/}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Glyph of the Deep",
+			"source": "COMItems",
+			"baseItem": "glyph of warding|PHB",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": false,
+			"value": 10000,
+			"wondrous": true,
+			"entries": [
+				"任何呼吸空气的生物如果接近这个石刻的20英尺范围内，必须做一个DC15的宪法救赎动作，以避免其肺部瞬间被排空空气。受影响的生物立即开始窒息。在第一轮中，该生物直接失去呼吸，只能存活相当于其宪法修改器的回合数（最少1轮），在该时间结束时，它的命中率下降到0，并且正在死亡。任何使溺水的角色恢复到正命中率的效果都会唤醒该生物并使其开始呼吸。否则，只有通过DC10智慧（医学）检查才能填充生物的肺部，并将其从窒息性死亡中拯救出来。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ImaebgM.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "quote",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Glyph of Enfeeblement",
+			"source": "COMItems",
+			"baseItem": "glyph of warding|PHB",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": false,
+			"value": 10000,
+			"wondrous": true,
+			"entries": [
+				"在这个石刻20英尺范围内的所有非畸形人都会被削弱和衰弱，并且在使用力量的武器攻击中只造成一半的伤害。这个石刻的效果在生物离开效果区后持续1分钟。如果成功地进行DC13智慧救赎，就可以完全否定这个效果。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/0gc7pIx.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "quote",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Glyph of Twisted Reality",
+			"source": "COMItems",
+			"baseItem": "glyph of warding|PHB",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": false,
+			"value": 10000,
+			"wondrous": true,
+			"entries": [
+				"蠕动的、乌黑的触手在石刻周围的地面和墙壁上布满了20英尺的方形。这些触手将该区域的地面变成困难的地形。当一个生物在一个回合中第一次进入受影响的区域或在那里开始它的回合时，该生物必须在DC14的灵巧反射中成功，否则会受到3d6的重击伤害并被触手束缚。在该区域开始其回合并已被触手束缚的生物会受到3d6重击伤害。被触手束缚的生物可以用它的行动来进行力量或灵巧检查（由它选择），检查标准为DC14。如果成功，它就能解脱。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WbdsjAg.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "quote",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Glyph of Torment",
+			"source": "COMItems",
+			"baseItem": "glyph of warding|PHB",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": false,
+			"value": 10000,
+			"wondrous": true,
+			"entries": [
+				"在这个石刻30英尺范围内的所有非异化者都会变得紧张，并且不确定自己的能力。这些生物在救赎时有劣势。这个效果不能用蓄力来抵制。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gF8met3.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "quote",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Glyph of Madness",
+			"source": "COMItems",
+			"baseItem": "glyph of warding|PHB",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": false,
+			"value": 10000,
+			"wondrous": true,
+			"entries": [
+				"在这个石刻30英尺范围内的所有生物都能听到他们脑海中疯狂的声音，范围内的所有非畸形人必须在DC14智慧救赎中成功，否则就会在持续时间内被魅惑。当一个生物以这种方式被魅惑时，它的眼睛里会发出疯狂的光芒。被魅惑的生物必须在其每个回合移动前使用其行动，对除自己以外的生物进行近战攻击。如果你没有选择任何生物或没有任何生物在它的范围内，目标可以在它的回合中正常行动。受影响的生物可以在它的每个回合结束时重新进行智慧救赎。如果成功，它就能摆脱石刻的影响，直到它再次进入效果区。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/tCkYUaZ.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "quote",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Glyph of the Deep Curse",
+			"source": "COMItems",
+			"baseItem": "glyph of warding|PHB",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": false,
+			"value": 10000,
+			"wondrous": true,
+			"entries": [
+				"在这个石刻的30英尺范围内，任何非畸形人都必须在DC14体质测试中成功，否则就会生病。该疾病在一分钟内没有任何影响，并且可以被任何治疗疾病的魔法所消除。1分钟后，患病的生物的皮肤变得灰暗、粘稠，并开始出现皮肤病变。除非在地下，否则该生物无法恢复命中率，而且该疾病只能由治疗术或另一个6级或以上的疾病治疗法术来消除。当该生物在户外时，每10分钟会受到6（1d12）酸的伤害。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IVFjpPV.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "quote",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"来自DarkSunCreatureCatalog"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Solais",
+			"source": "COMItems",
+			"type": "M",
+			"rarity": "artifact",
+			"reqAttune": true,
+			"value": 4000000,
+			"weight": 6,
+			"baseItem": "greatsword|phb",
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d10",
+			"bonusWeapon": "+3",
+			"dmgType": "F",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Magic Weapon",
+					"entries": [
+						"Solais是一种魔法武器，对使用它进行的攻击和伤害卷给予+3的奖励。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Random Properties",
+					"entries": [
+						"Solais具有以下随机属性。",
+						{
+							"type": "list",
+							"items": [
+								"1个未成年受益财产",
+								"1个主要的有益财产",
+								"1个小的有害的财产"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Archfey-Slayer",
+					"entries": [
+						"这把剑对费伊人造成额外的（%0%）武力伤害。如果目标在受到这种伤害后还有50点或更少的命中率，它必须在DC17宪法救赎中成功，否则就会被杀死。被剑杀死的费伊人不能通过任何东西复活，除非是神的干预或愿望法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Steel Wind Strike",
+					"entries": [
+						"如果你拿着这把剑，你可以用你的行动从它身上施放钢风打击法术。当你进行法术的攻击时，用索莱的近战武器攻击。在下一个黎明之前，你不能再次使用这个属性。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blessing of the Earthmother",
+					"entries": [
+						"如果你与剑相合，并被地母接受为剑的持有者，你将获得以下好处。",
+						{
+							"type": "list",
+							"items": [
+								"你不能被迷惑。",
+								"你在智力（调查）检查中具有优势，可以确定幻觉的性质。",
+								"你可以站在任何液体表面上，并在上面移动，就像在固体地面上一样。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Planar Disruption",
+					"entries": [
+						"你可以用一个动作来用剑砍断一个平面门户，比如说由大门法术创造的门户，或者一个超维空间，比如说在一个可移动的洞中。使用你的法术能力（如果有的话）进行DC15的能力检查。检查成功后，传送门将被关闭（%0%）天。一旦索莱关闭了一个传送门，在下一个黎明之前，它不能再这样做。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cleanse Water",
+					"entries": [
+						"你可以用一个动作将剑的剑身浸入水中。你最多可以把50加仑的水变成干净的水。此外，在接下来的一小时内喝下至少半加仑洁净水的生物会受益于较小的恢复法术，其最大命中率也会增加2d10，并获得相同数量的命中率。这些好处持续24小时。直到下一个黎明，你才可以再次使用这个属性。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/I2DWc7D.png"
+						}
+					}
+				],
+				"entries": [
+					"缥缈岛及其人民的故事是美丽而血腥的，与主要居民的命运纠缠在一起，即Waelen人和fey folks。虽然现在这两者紧密相连，但并不总是如此。在过去的年代里，残酷的费伊人从费伊世界出现，奴役了大部分瓦伊伦人，为了他们病态的快乐和娱乐而玩弄他们。",
+					"走投无路的瓦伦人乞求女神的帮助，她的回答是一把强大的刀，由一只女性的手从月井Fharraige Fail的水中拿出来。这把刀是大杀器索拉斯，即使是现在，女神的银色手印仍然可以在刀柄上看到。带着这把神器，一个被选中的Waelen人，一个名叫Nuadha的战士，冒险进入了Feywild，打败了负责奴役他的人民的大帝。",
+					"努阿达胜利归来，召集了各岛，并很快被加冕为第一任鹿角王。几个世纪后的今天，索莱斯曾多次丢失和被盗，但总能找回来，因为它的人民愿意为它移山填海。它仍然从大王传到大王，象征着合法的统治者和女神的选择。",
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"这个项目是\"{@link BoBH - Waelen - Celtic inspired npcs|https://www.reddit.com/r/UnearthedArcana/comments/8ezo08/bobh_waelen_celtic_inspired_npcs/} \"的一部分。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Oathblades",
+			"source": "COMItems",
+			"type": "M",
+			"rarity": "varies",
+			"reqAttune": true,
+			"value": 100000,
+			"weight": 6,
+			"baseItem": "Silver Sword|MTF",
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d10",
+			"bonusWeapon": "+3",
+			"dmgType": "F",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Calhain (rare)",
+					"entries": [
+						"当你用这把武器将一个敌对的生物降低到0命中率时，用这把武器进行的下一次攻击会造成与被杀生物的命中率相等的武器类型的额外伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dyrn (rare)",
+					"entries": [
+						"当你用这把武器把一个敌对的生物减少到0命中率时，你会变成隐形人，直到你下一个回合开始。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eala (rare)",
+					"entries": [
+						"当你与这把武器相适应并持有这把剑时，每当你采取闪避动作时，你就会获得+2的攻击力奖励。如果你在闪避时被近战武器攻击击中，你可以使用你的反应来花费一个命中率来减少伤害。掷骰子，加上你的灵巧修饰，然后用与总数相等的数字减少伤害（最小为1）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fragarach (rare)",
+					"entries": [
+						"当用此武器在水下攻击时，你在攻击卷上没有劣势。此外，在适应它的时候，你可以在水下呼吸。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Moralt (rare)",
+					"entries": [
+						"当你用此武器击中一个幻化的生物时，该生物会受到该武器类型的额外2D6伤害。同时，每次生物受到额外伤害时，召唤它的生物也会受到相同数量的伤害。在此武器中，\"召唤生物 \"指的是任何被召唤法术（如召唤元素法术）或每日使用功能（如鸦人的召唤恶魔）召唤的生物。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Muhrdem (very rare)",
+					"entries": [
+						"该武器在掷出19或20时可获得关键命中，当你用该武器击中一个生物时，该目标在你下一回合开始前无法恢复命中。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/uJwTvPY.png"
+						}
+					}
+				],
+				"entries": [
+					"誓言之剑是过去时代出现的神秘银剑，漂浮在月井水面之上，是女神在需要时的礼物。",
+					"每把誓约之刃都是独一无二的，一旦被赠予，就能打败一个特定的敌人。誓言之刃是一种银色的魔法武器。",
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"这个项目是\"{@link BoBH - Waelen - Celtic inspired npcs|https://www.reddit.com/r/UnearthedArcana/comments/8ezo08/bobh_waelen_celtic_inspired_npcs/} \"的一部分。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Potion of Dreamsight",
+			"source": "COMItems",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"value": 10000,
+			"weight": 0.5,
+			"type": "P",
+			"entries": [
+				"由德鲁伊或利特希亚用月井的圣水和罂粟花的眼泪配制而成，这种酒一般用来接受异象任务。",
+				"众所周知，它还具有强烈的致幻作用。在你喝下这种药水后的1小时内，你可以看到不可见的生物和物体，就像它们是可见的一样，而且你可以看到虚空界。",
+				"当效果结束时，你必须在DC14智慧救赎中成功，否则就会获得一种随机的长期（%0%）的形式（在《地下城管理员指南》第260页的长期疯狂表上滚动）。",
+				"在此影响下，你有25%的机会从法术公社中获益（%0%）。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sfMGYgG.png"
+						}
+					}
+				],
+				"entries": [
+					"由德鲁伊或利特希亚用月井的圣水和罂粟花的眼泪配制而成，这种酒一般用来接受异象任务。",
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"这个项目是\"{@link BoBH - Waelen - Celtic inspired npcs|https://www.reddit.com/r/UnearthedArcana/comments/8ezo08/bobh_waelen_celtic_inspired_npcs/} \"的一部分。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloodreaver",
+			"source": "COMItems",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"value": 1250000,
+			"weight": 6,
+			"baseItem": "greatsword|phb",
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d6",
+			"bonusWeapon": "+6",
+			"dmgType": "N",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "The Dead King's Blade",
+					"entries": [
+						"坟墓骑士的灵魂栖息在他的+1大剑上，一旦他的身体被摧毁，\"鲜血之剑 \"就会出现。它对物品进行诅咒，但赋予持剑者更强的战斗能力。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bloodreaver",
+					"entries": [
+						"你在使用此武器时有+2的攻击和伤害卷奖励。每当你用此武器的攻击将一个生物的生命值降低到0时，你必须立即用此武器对你近战范围内的目标进行另一次攻击。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cursed",
+					"entries": [
+						"一旦适应了这把武器，你就不能再挥舞另一把。你拒绝让其他人持有它，如果它被夺走，你将不惜一切代价收回它。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/bXlvy3S.png"
+						}
+					}
+				],
+				"entries": [
+					"{@link Tomb of the Grave Knight|https://www.reddit.com/r/DnDHomebrew/comments/jghgfi/free_mini_adventure_tomb_of_the_grave_knight/}"
+				]
+			}
+		},
+		{
+			"name": "Spear of Sunshine",
+			"weight": 2,
+			"tier": "major",
+			"source": "COMItems",
+			"type": "M",
+			"rarity": "very rare",
+			"value": 2000000,
+			"reqAttune": "by a paladin, cleric",
+			"weaponCategory": "simple",
+			"property": [
+				"V",
+				"T"
+			],
+			"baseItem": "spear|phb",
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"entries": [
+				"你在使用此魔法武器的攻击和伤害卷中获得+2的奖励。当你用它击中一个生物时，该目标会受到额外的5（（%0%））辐射伤害。",
+				"长矛有4次充电。如果你用这个武器进行了一次远程攻击，你可以消耗一个电荷将自己传送到武器落地的地方，作为一个额外动作。长矛每天在黎明时分会重新获得{@dice 1d4}已消耗的电量。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/9UVP5bU.png"
+						}
+					}
+				],
+				"entries": [
+					"{@link I turned my player's PCs into NPCs after my campaign ended! [Part - I]|https://www.reddit.com/r/DnDHomebrew/comments/eyp0zi/i_turned_my_players_pcs_into_npcs_after_my/?utm_source=share&utm_medium=ios_app&utm_name=iossmf}"
+				]
+			}
+		},
+		{
+			"name": "Cloak of the Void",
+			"source": "COMItems",
+			"wondrous": true,
+			"tier": "major",
+			"rarity": "very rare",
+			"value": 2000000,
+			"reqAttune": true,
+			"weight": 0.5,
+			"entries": [
+				"通常情况下，它以闪亮的紫色织物的长而丰富的斗篷出现。",
+				{
+					"type": "list",
+					"items": [
+						"当一个远程武器攻击击中你并且你穿着斗篷时，你可以用你的反应来做一个DC16的灵巧救赎动作。如果成功，斗篷就会变成一片遥远的夜空，在远程攻击中使用的弹药就会无害地进入空旷的星空。",
+						"斗篷也可以单独作为一个标准动作被激活。当它被激活时，穿戴者可以将一个小于斗篷面积的物品放入虚空中。在这个斗篷中储存和取回物品的功能与 \"储物袋 \"相同，没有储存空间的限制。",
+						"进入虚空的活物会在一分钟内窒息。",
+						"冲进被激活的斗篷的生物要做一个DC 15的灵巧反射，以避免进入虚空。",
+						"当斗篷的能力总共激活了2分钟，它就会停止运作，直到穿戴者完成长时间的休息。任何存放在虚空中超过10小时的物品都会永远丢失。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/gGdrLx8.png"
+						}
+					}
+				],
+				"entries": [
+					"{@link Cloak of the Void, a homebrew magic item.|https://www.reddit.com/r/DnD/comments/4kaodl/cloak_of_the_void_a_homebrew_magic_item/}"
+				]
+			}
+		},
+		{
+			"name": "Day and Night",
+			"source": "COMItems",
+			"baseItem": "shortsword|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 2,
+			"value": 1000000,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"bonusWeapon": "+2",
+			"entries": [
+				"你在攻击和伤害卷上获得+2的奖励。",
+				"这些剑只有在成对使用时才具有魔法属性。",
+				{
+					"type": "entries",
+					"name": "Day",
+					"entries": [
+						"这把剑的攻击方式是辐射式的伤害。持有此剑时，你可以在每天24小时内施放一次{@spell Greater Invisibility|phb}的法术作为你的行动。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Night",
+					"entries": [
+						"只要你带着这把魔剑，你就有黑暗视野。你可以在每天24小时内施放一次{@spell Pass Without Trace|phb}的法术作为你的行动。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/FoRuIuO.png"
+						}
+					}
+				],
+				"entries": [
+					"{@link Day and Night|https://www.facebook.com/pg/LucienAnemosArt/photos/?tab=album&album_id=3292292214212836&ref=page_internal}",
+					{
+						"name": "quote",
+						"entries": [
+							"不用担心，钱花得很好，他已经完成了，如果我不能用 \"日 \"得到他，我就用 \"夜 \"得到他......",
+							"你是指在白天还是在晚上，不是吗？",
+							"... no."
+						],
+						"type": "entries"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hidden Blade",
+			"source": "COMItems",
+			"baseItem": "dagger|PHB",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 10000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"entries": [
+				"这是为刺客执行他们的排他行动而制造的精良武器，这把武器被绑在人的手臂上，使它在众目睽睽之下隐藏起来。这使得武器使用者在任何保持其隐蔽性的测试中都有优势。如果你在武器被隐藏时用它进行攻击，你在攻击卷上有优势。一旦武器被暴露，并且敌人意识到了它，试图隐藏武器就变得很困难。如果你在武器被暴露后试图隐藏它，DC将被提高（或降低）。它需要一个动作来装备或移除。在工匠的帮助下，你可以做的事情包括为武器添加改进和修饰。然而，有些附件需要特定的熟练度才能添加到武器上，而且有些附件会妨碍其他附件的使用，从而无法将所有的附件添加到一把刀上。",
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+				]
+			}
+		},
+		{
+			"name": "Hidden Blade (Arm Guard)",
+			"source": "COMItems",
+			"baseItem": "Hidden Blade|COMItems",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 15000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"ac": 1,
+			"entries": [
+				"隐秘之刃将有一个护臂连接到手臂的上半部分，允许角色使用护臂更容易阻挡和偏移攻击。它给你的角色护甲+1 AC，在武器上放置一个坚固但仍然很轻的护甲。由于它套在手臂上，它与手臂底部的刀刃装置没有任何互动，需要一个额外的动作来与隐藏的刀刃一起捐献/关闭。然而，在附加护臂后，武器会受到（%0%）规则的约束。为你的武器附加这个升级需要花费100金币。",
+				"护臂能力+1 AC (受{@variantrule Partial Armor|COMVariantRule}规则限制), 移除Don/Doff所需的修理工工具。",
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+				]
+			}
+		},
+		{
+			"name": "Hidden Blade (Hidden Gun)",
+			"source": "COMItems",
+			"baseItem": "Hidden Blade|COMItems",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 25000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"LD",
+				"T"
+			],
+			"range": "30/90",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"ammoType": "blowgun needle|phb",
+			"entries": [
+				"隐蔽之刃上会有一把枪，允许角色使用普通的范围攻击来射击目标，穿刺伤害为1d8，范围为（30/90），它是一种单发武器，需要一个动作来使用普通的弹药重新装弹，你可以将你对手枪的熟练度加成用于你的攻击卷。请记住，用这种武器射击会暴露你，如果你躲在它发射时发出的类似爆炸的巨大声音中。由于该装置的尺寸，这使得其他附件如钩子刀、枢轴刀和幻影刀不能被附加。如果隐蔽刀有毒刃附件，可以用毒镖代替标准弹药，允许在一定范围内施放毒药，并在发射时保持隐身状态，代价是你不滚动伤害，如果你用毒镖从隐身状态攻击，目标在毒药的保存投掷上有劣势，如果适用。这需要对手枪的熟练程度，并且需要花费250金币来给你的武器加上这个升级。",
+				"隐藏的枪支属性。1d8穿刺，范围（30/90），装载，[*特殊：无声毒镖（需要毒刃）]。",
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+				]
+			}
+		},
+		{
+			"name": "Hidden Blade (Hook Blade)",
+			"source": "COMItems",
+			"baseItem": "Hidden Blade|COMItems",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 20000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"entries": [
+				"隐蔽刀刃上会有一个钩子，允许使用者更容易地攀爬几乎没有立足点的垂直墙壁，有效地使你的攀爬速度与你的移动速度相等，并在攀爬困难地形时拥有优势。然而，由于钩子的性质，它妨碍了幻影之刃、毒药之刃、隐藏之枪和支点之刀等附件的使用，所以有了钩子之刃就不能再安装这些升级装置。花费100金币为你的武器加上这个升级。",
+				"钩刀能力。攀爬速度=移动速度，攀爬困难地形时的优势。",
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+				]
+			}
+		},
+		{
+			"name": "Hidden Blade (Pivot Knife)",
+			"source": "COMItems",
+			"baseItem": "Hidden Blade|COMItems",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 20000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"entries": [
+				"隐蔽之刃的机械装置被更大程度地修改，并在刃端增加了一个转轴，允许使用者像普通匕首一样握住刀身。如果你有双持武器和/或双持武器战斗功能，该武器可以像正常一样获得这些功能的好处。由于延伸所需的机制，几乎没有空间来连接钩子刀、隐藏枪、毒药刀和幻影刀。花费100金币为你的武器附加这种升级。",
+				"枢轴刀的能力。允许使用双武器战斗和/或双持武器的奖励。",
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+				]
+			}
+		},
+		{
+			"name": "Hidden Blade (Phantom Blade)",
+			"source": "COMItems",
+			"baseItem": "Hidden Blade|COMItems",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 25000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"LD",
+				"T"
+			],
+			"range": "30/120",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"entries": [
+				"幻影之刃会有一个小型的十字弓附加在上面，允许角色射出普通范围的攻击，穿刺伤害为1d6，射程为（30/120），它是一个单发武器，需要一个动作来使用普通弹药重新装弹，你可以将你对手弩的熟练度加成用于你的攻击卷，用这个武器射击不会暴露你，如果你是隐藏的。因为它是隐藏枪的无声和隐身版本，如果附加了幻影之刃，就不能添加像枢轴刀、钩子刀和所述隐藏枪这样的附件。如果毒刃被附加在这把武器上，它允许使用者在毒刃中给枪栓涂上毒药。这需要熟练掌握手弩（武术武器熟练度也算在内），并且需要花费250金币来给武器附加这个升级。",
+				"幻影之刃的属性。1d6穿刺，范围（30/120），加载 [*特殊。毒尖弹（需要毒刃附件）。",
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"ammoType": "crossbow bolt|phb",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+				]
+			}
+		},
+		{
+			"name": "Hidden Blade (Poison Blade)",
+			"source": "COMItems",
+			"baseItem": "Hidden Blade|COMItems",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"value": 15000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"S",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"entries": [
+				"隐秘之刃将有一个小的针状刀片连接在主刀旁边。不需要对主刀进行滚动伤害，而是直接用针刺入目标并使其受到影响，就可以直接施放任何类型的毒药。如果目标被击中时隐藏了藏刀，那么目标在毒药的保命招数上就有劣势（如果适用）。然而，在毒药被使用后，必须将新的剂量装入装置。它的小尺寸和在隐藏刀片旁边的位置允许它与幻影刀或隐藏枪连接，但如果刀片有钩子刀或枢轴刀的升级，它就不能被连接。作为一个特殊的奖励，如果这个附件与幻影之刃或隐藏之枪同时出现在隐藏之刃上，它允许使用这些武器的备用弹药。这需要熟练掌握毒师套装，并花费150金币为你的武器加上这个升级。",
+				"毒刃的能力。以伤害的方式施放毒药，装填，隐藏时对蓄力攻击不利，启用隐藏枪和幻影刀的特殊属性。",
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+				]
+			}
+		},
+		{
+			"name": "Blacksteel longsword",
+			"source": "COMItems",
+			"baseItem": "longsword|phb",
+			"page": 0,
+			"type": "M",
+			"rarity": "legendary",
+			"weight": 3,
+			"value": 4000000,
+			"reqAttune": true,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "3d10",
+			"dmgType": "S",
+			"dmg2": "2d8",
+			"curse": false,
+			"bonusWeapon": "+3",
+			"entries": [
+				"武术武器（长剑+3），传说中的近战武器（需要调教），3磅，3d10砍伤+2d8腐烂",
+				{
+					"type": "list",
+					"items": [
+						"你在使用该魔法武器进行的攻击和伤害卷中获得+3的奖励。",
+						"这把被施了魔法的长剑的剑身变得黑暗、无声、不反光。",
+						"它在打击生物或物体时不会发出任何声音，即使它击中了盾牌或类似的东西。",
+						"血液也附着在武器上，不会喷走或滴落在武器上。",
+						"这把剑对定位物品和其他类似的占卜魔法等法术是不可见的。",
+						"这把剑可以用一个额外的动作召唤到被调和的生物的手中。",
+						"每当刀锋对有血的生物造成伤害时，它就会将所造成的坏死伤害的一半储存在刀锋中，作为充能，最多可充能50次。",
+						"佩戴者可以使用一个动作来治疗相同数量的费用。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/W5H1T7F.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Blacksteel longsword +3",
+						"entries": [
+							"{@link The Real Devil Strahd|https://www.dmsguild.com/product/226077/The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil}",
+							"武术武器（长剑+3），传说中的近战武器（需要调教），3磅，3d10砍伤+2d8腐烂",
+							{
+								"type": "list",
+								"items": [
+									"你在使用该魔法武器进行的攻击和伤害卷中获得+3的奖励。",
+									"这把被施了魔法的长剑的剑身变得黑暗、无声、不反光。",
+									"它在打击生物或物体时不会发出任何声音，即使它击中了盾牌或类似的东西。",
+									"血液也附着在武器上，不会喷走或滴落在武器上。",
+									"这把剑对定位物品和其他类似的占卜魔法等法术是不可见的。",
+									"这把剑可以用一个额外的动作召唤到被调和的生物的手中。",
+									"每当刀锋对有血的生物造成伤害时，它就会将所造成的坏死伤害的一半储存在刀锋中，作为充能，最多可充能50次。",
+									"佩戴者可以使用一个动作来治疗相同数量的费用。"
+								]
+							}
+						]
+					},
+					{
+						"type": "quote",
+						"entries": [
+							""
+						]
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Mistfactor Press, Libedrator Earl, George Komis on The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil book|https://www.dmsguild.com/product/226077/The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Strahd's animated armor",
+			"baseItem": "Plate Armor|PHB",
+			"type": "HA",
+			"weight": 65,
+			"ac": 2,
+			"strength": "15",
+			"stealth": false,
+			"rarity": "legendary",
+			"wondrous": false,
+			"reqAttune": true,
+			"value": 4000000,
+			"source": "COMItems",
+			"entries": [
+				"这套盔甲被注入了斯特拉赫特在皇室婚礼上背叛时的恶毒和仇恨，赋予它生命。这套盔甲给穿上它的生物带来以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"条件免疫。穿着这件盔甲的生物对失明、被迷惑、失聪、受惊、瘫痪和石化的状况免疫。",
+						"召唤盔甲：作为一个奖励动作，与此盔甲相适应的生物可以穿上它，有效地取代它所穿的盔甲和/或衣服。该生物可使用另一个奖励动作将盔甲活化，让它与自己并肩作战。斯特拉特的灵动盔甲的统计资料可在CoS第227页找到。当盔甲被激活时，与该盔甲相适应的生物不会获得任何好处。",
+						"传说中的行动。震撼弹。佩戴者获得了每回合一次施放震撼弹的能力，作为一个传奇动作。",
+						"{@spell Shocking bolt (Strahd's New spells)|COMSpells|Shocking bolt}: 范围内的法术攻击。命中率+4（如果目标穿着金属制成的盔甲，在攻击卷轴上有优势），范围60英尺，一个目标。命中：10(3d6)雷电伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/wEZiggo.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Strahd's animated armor",
+						"entries": [
+							"{@link The Real Devil Strahd|https://www.dmsguild.com/product/226077/The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil}",
+							"这套盔甲被注入了斯特拉赫特在皇室婚礼上背叛时的恶毒和仇恨，赋予它生命。这套盔甲给穿上它的生物带来以下好处。",
+							{
+								"type": "list",
+								"items": [
+									"条件免疫。穿着这件盔甲的生物对失明、被迷惑、失聪、受惊、瘫痪和石化的状况免疫。",
+									"召唤盔甲：作为一个奖励动作，与此盔甲相适应的生物可以穿上它，有效地取代它所穿的盔甲和/或衣服。该生物可使用另一个奖励动作将盔甲活化，让它与自己并肩作战。斯特拉特的灵动盔甲的统计资料可在CoS第227页找到。当盔甲被激活时，与该盔甲相适应的生物不会获得任何好处。",
+									"传说中的行动。震撼弹。佩戴者获得了每回合一次施放震撼弹的能力，作为一个传奇动作。",
+									"震惊的闪电。范围内的法术攻击。命中率+4（如果目标穿着金属制成的盔甲，则在攻击卷上有优势），范围60英尺，一个目标。命中：10(3d6)雷电伤害。"
+								]
+							}
+						]
+					},
+					{
+						"type": "quote",
+						"entries": [
+							""
+						]
+					},
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Mistfactor Press, Libedrator Earl, George Komis on The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil book|https://www.dmsguild.com/product/226077/The-Real-Devil-Strahd--A-CR27-Version-of-the-Devil}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Ritual terpanation dagger",
+			"source": "COMItems",
+			"type": "M",
+			"weight": 1,
+			"baseItem": "dagger|PHB",
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmg2": "1d6",
+			"dmgType": "P",
+			"stealth": false,
+			"rarity": "legendary",
+			"wondrous": true,
+			"reqAttune": "by an evil aligned cleric",
+			"value": 340000,
+			"bonusWeapon": "+1",
+			"charges": 1,
+			"recharge": "restLong",
+			"entries": [
+				"祭祀用匕首是菲奥娜-瓦赫特女士拥有的独特物品。这是一个从祖母到孙女世代相传的传家宝，传说它曾经属于博雅人洛芬娜-瓦赫特，是她的父亲送给她的礼物。匕首的刀刃是由密铁和银的合金制成的，刀柄上有一颗血红色的红宝石。它的魔法属性是在斯特拉赫特-冯-扎罗维奇成为吸血鬼的那个被诅咒的夜晚赋予它的。这么多受害者的血溅到它身上，使它具有了迷雾和吸血鬼的神奇能力。",
+				"当与此武器相适应时，你在使用它的攻击和伤害卷上有+1的奖励。这把刀的功能和匕首一样，但它失去了投掷的属性，而是造成{@dice 3d6}的坏死伤害，这种伤害不能被治愈，如果目标在这种效果下达到0HP，它将立即死亡。",
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"你可以在每个长时间的休息中施展{@spell Enervation|XGE}法术(Pg.155 XGTE)一次。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"enervation"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/mltZqNp.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Ritual terpanation dagger|https://www.dmsguild.com/product/304482/Wachter-Cult-and-Leo-Dilisnya-Curse-of-Strahd-Expansion}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Mask of solemn savior",
+			"source": "COMItems",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"tier": "minor",
+			"weight": 1,
+			"charges": 1,
+			"recharge": "restShort",
+			"entries": [
+				"这个白色和蓝色的面具是珍妮-格林泰斯在海斯克尔要求找到一种方法来保护他像母亲一样爱的人时创造的。珍妮高兴地用这个面具换取了海斯克尔10年的寿命。",
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"面具中含有5个无法补充的{@spell Healing word|phb}咒语，每短时休息一次，可以消除30英尺内无意识的生物的负重投掷。面具不能稳定生物。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"healing word"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/J3GamGz.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Mask of solemn savior|https://www.dmsguild.com/product/304482/Wachter-Cult-and-Leo-Dilisnya-Curse-of-Strahd-Expansion}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Dark wand",
+			"source": "COMItems",
+			"baseItem": "wand|PHB",
+			"type": "WD",
+			"weaponCategory": "martial",
+			"weight": 3,
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"stealth": false,
+			"rarity": "common",
+			"wondrous": true,
+			"value": 200000,
+			"charges": 2,
+			"recharge": "restLong",
+			"entries": [
+				"一根由黑色魔法木制成的魔杖，是为那些不能挥舞魔法但又急需魔法的人而制作的，或者说是为那些希望增强其邪教成员力量的人而制作的。这根魔法棒被制作成包含2个充电的{@spell Dark Missile|COMSpells}咒语，在长时间的休息和一个随机的咒语后充电。掷一次{@dice 1d6}，从下面的列表中确定它包含哪种咒语。",
+				"1. {@spell Eldritch Blast}",
+				"2. {@spell Fire Bolt}",
+				"3. {@spell Gust|xge}",
+				"4. {@spell Ray of frost}",
+				"5. {@spell Sacred flame}",
+				"6. {@spell Toll the dead|xge}"
+			],
+			"attachedSpells": [
+				"dark missile",
+				"magic missile",
+				"eldritch blast",
+				"fire bolt",
+				"gust",
+				"ray of frost",
+				"sacred flame",
+				"toll the dead"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Sd3dQly.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Dark wand|https://www.dmsguild.com/product/304482/Wachter-Cult-and-Leo-Dilisnya-Curse-of-Strahd-Expansion}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Jar of spiders",
+			"source": "COMItems",
+			"rarity": "common",
+			"reqAttune": false,
+			"wondrous": true,
+			"entries": [
+				"这个陶瓷罐子里装满了蜘蛛，这些蜘蛛被神奇地置于睡眠状态。当罐子关闭时，蜘蛛会喷发出来，并攻击最近的生物。你可以扔出一个蜘蛛罐子，并将其视为范围内的触击攻击，范围增量为10英尺。直接命中会造成{@dice 1d4}点重击伤害，并在罐子碎裂的地方出现一群昆虫（蜘蛛）。虫群滚动主动权并攻击最近的生物。在每一个虫群结束时，有50%({@dice 1d2})的机会让虫群散去。"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/KI3VQFG.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Jar of spiders|https://www.dmsguild.com/product/304482/Wachter-Cult-and-Leo-Dilisnya-Curse-of-Strahd-Expansion}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Bones of Lord Leo Dilisnya",
+			"source": "COMItems",
+			"rarity": "legendary",
+			"reqAttune": false,
+			"wondrous": true,
+			"entries": [
+				"当斯特拉赫特打败利奥后，他把利奥困在棺材里，让他挨饿作为惩罚。他将箱子的保护权委托给了洛芬娜-瓦赫特，经过漫长的岁月，箱子终于被菲奥娜-瓦赫特继承了下来。这个铁箱子里有一具完整的烧焦的骨架和一把弯曲的旧匕首。",
+				"成功通过DC12调查检查，可以发现头骨上有吸血鬼的獠牙，因此，这具骷髅一定属于一个吸血鬼。一个角色如果把骷髅头组装起来，并故意把自己的血滴在骷髅头的牙齿上一分钟，就能为这个饥饿的吸血鬼提供足够的活力，使他从沉睡中苏醒。每过一小时，利奥就会再生1点命中率。在20点命中率时，他的大部分肉体将被再生，使他有能力独立站立和狩猎，这时他将追杀菲奥娜的儿子们。",
+				"利奥知道使他复活的生物的位置，并将其视为盟友，只要该生物不挑衅他或以任何方式对利奥采取行动。如果Leo注意到他的Ba'al Verzi匕首被别人占有，他首先会要求把它拿回来，如果持有者拒绝，那么Leo就会转为敌对并进行攻击。",
+				{
+					"type": "entries",
+					"name": "New Ally against Strahd:",
+					"entries": [
+						"如果你想让Leo Dilisnya成为对抗Strahd的选定盟友，你可以加入这个读法。当玩家要求阅读Tarokka时，请将抽到的牌的文字改为以下内容。",
+						"\"寻找那个富有的红色女人。她是魔鬼的忠实资产，她把你的盟友锁起来，一个古老敌人的骨头在等着你。唤醒他和猎物，他不会把你当做敌人\"",
+						"这张牌指的是Leo Dilisnya爵士。他已经死了很久，他的遗骨安放在瓦赫特家的一个上锁的箱子里，它可以在N4op找到。主卧室。"
+					]
+				}
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/u780wR3.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Bones of Lord Leo Dilisnya|https://www.dmsguild.com/product/304482/Wachter-Cult-and-Leo-Dilisnya-Curse-of-Strahd-Expansion}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Old Ba'al Verzi Dagger",
+			"source": "COMItems",
+			"type": "M",
+			"weight": 1,
+			"baseItem": "dagger|PHB",
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmg2": "1d6",
+			"dmgType": "P",
+			"stealth": false,
+			"rarity": "very rare",
+			"wondrous": true,
+			"reqAttune": true,
+			"value": 300000,
+			"bonusWeapon": "+1",
+			"charges": 1,
+			"recharge": "dawn",
+			"curse": true,
+			"entries": [
+				"这把匕首是Ba'al Verzi刺客的标志性武器。Strahd von Zarovich用这样一把匕首杀死了他的兄弟Sergei von Zarovich，这把匕首是他从一个针对他的刺客的尸体上取下来的。据传，每个Ba'al Verzi的新成员都会用他们第一个受害者的皮肤制作刀鞘。Ba'al Verzi只在暗杀中使用这些类型的匕首。这把似乎因为缺乏维护而失去了一些特性，不过......",
+				"你在使用该魔法武器的攻击和伤害卷中获得+1的加成，你的攻击在19-20的卷中被认为是关键一击。",
+				{
+					"type": "entries",
+					"name": "Red Poison",
+					"entries": [
+						"你可以使用一个动作来使厚重的红色毒药覆盖在刀刃上。毒药会持续1分钟或直到使用此武器的攻击击中一个生物。该生物必须在DC18宪法救赎中成功，否则会受到{@dice 2d12}的毒药伤害并中毒1分钟。匕首不能再以这种方式使用，直到下一个黎明。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"这把武器被Ba'al Verzi的嗜血性所诅咒，成为它的附庸后，诅咒也延伸到你身上。在用移除诅咒咒语或类似的魔法解除诅咒之前，你不愿意放弃这把武器，而且你在使用这把武器之外的其他武器进行攻击时有劣势。此外，除了人形皮肤制成的刀鞘外，这把武器不能安全或牢固地存放在任何东西里。试图这样做可能会导致匕首丢失或伤害携带它的生物，因为武器会无害地穿过它的容器。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"enervation"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/KNQLjxu.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Old Ba'al Verzi Dagger|https://www.dmsguild.com/product/304482/Wachter-Cult-and-Leo-Dilisnya-Curse-of-Strahd-Expansion}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Spiritburner",
+			"source": "COMItems",
+			"baseItem": "longsword|phb",
+			"type": "M",
+			"rarity": "very rare",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"tier": "major",
+			"reqAttune": true,
+			"value": 300000,
+			"bonusWeapon": "+3",
+			"entries": [
+				"你可以使用一个额外的动作来说出这把魔剑的命令词，使火焰从剑身喷发出来。这些火焰在半径40英尺的范围内发出亮光，在另外40英尺的范围内发出暗光。当剑被烧毁时，它对任何被击中的目标造成额外的（%0%）火焰伤害。火焰持续到你使用额外行动再次说出命令语，或直到你丢弃或将剑入鞘。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/27eUWwg.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Spiritburner|https://www.dmsguild.com/product/354377/Darklords--Domains-Diamabel-of-Pharazia}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Staff of the Black Claw",
+			"source": "COMItems",
+			"baseItem": "staff|PHB",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true,
+			"value": 100000,
+			"entries": [
+				"这根深绿色和靛蓝色的法杖顶部有一个用玛瑙雕刻的小乌鸦爪子。拿着这根法杖时，你的法术攻击卷获得+1的奖励。每当你的法术攻击获得关键打击时，目标会受到额外的（%0%）坏死伤害。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ay2keFh.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Staff of the Black Claw|https://www.dmsguild.com/product/352714/Darklords--Domains-The-Lady-of-Ravens}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Cloak of Charisma",
+			"source": "COMItems",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"value": 100000,
+			"entries": [
+				"这件轻巧而时尚的黑色斗篷有一个高度装饰性的银边。穿着这件斗篷时，你的魅力值会有效地提高2点。此外，如果你施展朋友或魅惑者，目标必须对你的法术救赎DC进行智慧救赎成功，才能知道自己受到了法术的影响。"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/n36BzEH.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Cloak of Charisma|https://www.dmsguild.com/product/352714/Darklords--Domains-The-Lady-of-Ravens}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Blood Bow of Kavan",
+			"source": "COMItems",
+			"page": 0,
+			"type": "R",
+			"tier": "major",
+			"rarity": "uncommon",
+			"entries": [
+				"卡万是一个无情的酋长，他的部落在{@creature Strahd von Zarovich|CoS}到来之前的几个世纪就生活在巴里诺克山脉。虽然他还活着，但卡万有一些与吸血鬼相同的特征：他白天睡觉，晚上狩猎，他喝猎物的血，而且他住在地下。",
+				"在战斗中，他挥舞着一把沾满鲜血的长矛。他是第一支血矛，然而，由于一个将矛转化为射程武器的仪式，它变成了一把长弓。长弓是一种从被杀者身上吸走生命的武器，能够射出吸血的箭矢。",
+				"这张魔法长弓有3次充电。当你用这把魔法长弓的远程攻击击中目标并将其降低到0点命中率时，这把弓会重新获得一次充电。在长时间的休息中，它也能补充所有的电量。",
+				"与此弓相适应的生物可以在攻击中使用它的一个装填物，使箭头充满坏死的能量，将其变成一个耗血的箭头。如果攻击命中，目标生物会受到额外的（%0%）坏死伤害。",
+				"如果与此弓相配的生物在它的电荷量为0时用它进行远程攻击，它不能选择不进行非致命攻击，因为此弓太渴求了，不可能把自己憋死。",
+				"任何生物都可以挥舞这把弓，但只有人物（%0%）和与之相适应的人在使用这把魔法武器进行攻击和伤害卷时获得+2的奖励。"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Zordnael for 'Curse Of Strahd'|https://github.com/Zordnael/Zordnael-Homebrew}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/SoqQZPl.png"
+						}
+					}
+				]
+			},
+			"hasFluffImages": true,
+			"bonusWeapon": "+2",
+			"charges": 3,
+			"recharge": "dusk",
+			"reqAttune": "by the chosen by Kazan",
+			"weight": 2,
+			"weaponCategory": "Martial",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"range": "150/600",
+			"property": [
+				"H",
+				"2H",
+				"A"
+			]
+		},
+		{
+			"name": "Instrument of the Bards, Glamorous Violin",
+			"source": "COMItems",
+			"page": 0,
+			"type": "INS",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": "by a bard",
+			"wondrous": true,
+			"weight": 2,
+			"entries": [
+				"吟游诗人的乐器是一个精致的例子，在各方面都优于普通乐器。试图弹奏该乐器而不与之相适应的生物必须在DC15智慧救赎中成功，否则会受到{@dice 2d4}精神伤害。",
+				"你可以用一个动作来演奏乐器，并施展它的一个法术。一旦乐器被用来施法，它就不能再被用来施法，直到下一个黎明。咒语使用你的施法能力和咒语保全DC。",
+				"你可以在施法的同时弹奏乐器，使其任何目标在救赎失败时受到{@condition charmed}的影响，从而在救赎时施加不利条件。这个效果只适用于有身体或物质成分的法术。",
+				"吟游诗人的所有乐器都可以用来施展以下法术：（%0%）、（%1%）、（%2%）和（%3%）。",
+				"此外，迷人的小提琴可以用来施放（%0%）、（%1%）和（%2%）。"
+			],
+			"attachedSpells": [
+				"crown of madness",
+				"distort value",
+				"enlarge/reduce",
+				"fly",
+				"invisibility",
+				"levitate"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"艺术和物品由{@link Zordnael for 'Curse Of Strahd'|https://github.com/Zordnael/Zordnael-Homebrew}设计。如果你在其他地方转贴，请注明出处。"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1aDYsH4.png"
+						}
+					}
+				]
+			},
+			"hasFluffImages": true
+		},
+		{
+			"name": "Nemesis",
+			"source": "COMItems",
+			"baseItem": "glaive|phb",
+			"page": 0,
+			"type": "M",
+			"rarity": "unknown",
+			"weight": 6,
+			"value": 50000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"reqAttune": "by a creature of non-good alignment",
+			"entries": [
+				"这把制作精美的玛瑙武器里有一个被其黑暗力量束缚的智能和不断渴望的实体。",
+				"它具有以下附加属性。",
+				{
+					"name": "sentient",
+					"type": "entries",
+					"entries": [
+						"该武器是一个有生命的混乱实体，智力为16，智慧为12，力量为12，灵活性为18，体质为12，魅力为18。它有听觉和黑暗视觉，最大范围为60英尺。它的听觉和黑暗视觉的范围是60英尺。这把武器能理解深渊和普通的东西，并能与使用它的人进行心灵感应。当你与它调和时，该武器也能理解你所知道的所有语言。"
+					]
+				},
+				{
+					"name": "Bound to the mortal plane",
+					"type": "entries",
+					"entries": [
+						"该武器不能被带出它所在的凡人世界；它必须在任何时候都实际存在。这意味着它不能被召唤，或被传送，或在没有携带者的情况下以任何方式被调用，它可以被偷走和/或以传统的方法与携带者分离，它不能被放置在魔法物品中，如收纳袋，但它可以被放置在一个经典的箱子中。"
+					]
+				},
+				{
+					"name": "devouring the weak",
+					"type": "entries",
+					"entries": [
+						"在战斗中每杀死一个生物，武器就会增加一个槽位，在外面或战斗中每杀死一天，武器就会掉一个槽位，（这意味着即使杀死小动物也有可能避免损失一个槽位）。",
+						"它还会对当前可用的槽位数量产生以下影响。",
+						{
+							"type": "list",
+							"items": [
+								"在1-2个槽之间，武器就有问题了，失去了{@i Sentient}的能力，表现为正常{@item glaive|PHB}。",
+								"在3-4个槽之间，它处于正常状态。",
+								"在5-6个槽之间，武器被认为是神奇的。",
+								"在7-8个槽之间，该武器被认为是有魔力的，并在打击和伤害的卷轴上增加+1。",
+								"在9-10个槽之间，武器被认为是神奇的，增加+1的卷轴命中和伤害，有一个{@damage 1d6}坏死伤害的奖励攻击。"
+							]
+						}
+					]
+				},
+				{
+					"name": "dark aura",
+					"type": "entries",
+					"entries": [
+						"当你挥舞着拔出的武器时，你会散发出一种朦胧的光环，使你在魅力（恐吓）测试中获得优势。"
+					]
+				},
+				{
+					"name": "Personality",
+					"type": "entries",
+					"entries": [
+						"对大多数人来说，有可能与之互动的人格的武器是冷酷和疏离的，带有悲伤的语气。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5ZEbugX.jpg"
+						}
+					}
+				]
+			},
+			"hasFluffImages": true
+		},
+		{
+			"name": "Nemesis (ITA)",
+			"source": "COMItems",
+			"baseItem": "glaive|phb",
+			"page": 0,
+			"type": "M",
+			"rarity": "unknown",
+			"weight": 6,
+			"value": 50000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"reqAttune": "by a creature of non-good alignment",
+			"entries": [
+				"这把制作精美的玛瑙武器里有一个被其黑暗力量束缚的智能和不断渴望的实体。",
+				"它具有以下附加属性",
+				{
+					"name": "Senziente",
+					"type": "entries",
+					"entries": [
+						"该武器是一个有生命的混乱实体，智力为16，智慧为12，力量为12，灵巧为18，体质为12，魅力为18，它有听觉和黑暗视觉，半径为60英尺。它有听觉和黑暗视觉，半径为60英尺。这把武器能理解深渊和普通的东西，并能与持有它的人进行心灵感应。当你与它调和时，武器也能理解你知道的所有语言。"
+					]
+				},
+				{
+					"name": "Legata al piano mortale",
+					"type": "entries",
+					"entries": [
+						"该武器不能被带出它所在的凡间，它必须在任何时候都实际存在。这意味着在没有携带者的情况下，它不能被召唤，或被传送，或以任何方式被调用，它可以被偷走和/或以传统的方法与携带者分离，它不能被放置在魔法物品中，如一个密封袋，但它可以被放置在一个经典的箱子中。"
+					]
+				},
+				{
+					"name": "Divorare i deboli",
+					"type": "entries",
+					"entries": [
+						"在战斗中每杀死一个生物，武器就会被充入一个插槽，武器在外面或在战斗中每一天不杀死任何东西，就会掉一个插槽，（这意味着你可以通过杀死甚至小动物来避免损失一个插槽）。",
+						"它对当前可用的槽位数量也有以下影响。",
+						{
+							"type": "list",
+							"items": [
+								"在1-2个槽之间，武器就有问题了，失去了它的能力（%0%），表现得像普通武器（%1%）。",
+								"在3-4个插槽中，它处于正常状态。",
+								"在5-6个槽之间，武器被认为是神奇的。",
+								"在7-8个槽之间，该武器被认为是有魔力的，并在命中和伤害的卷轴上增加+1。",
+								"在9-10个槽之间，该武器被认为是有魔力的，命中率和伤害增加+1，有{@damage 1d6}坏死性伤害的额外攻击。"
+							]
+						}
+					]
+				},
+				{
+					"name": "Aura oscura",
+					"type": "entries",
+					"entries": [
+						"在挥舞未出鞘的武器时，会有一个阴影的光环散发出来，在魅力（威吓）测试中获得优势。"
+					]
+				},
+				{
+					"name": "Personalità",
+					"type": "entries",
+					"entries": [
+						"对一个可以与大多数人互动的人格的武器，表现为冷漠和疏离的悲伤语气。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/5ZEbugX.jpg"
+						}
+					}
+				]
+			},
+			"hasFluffImages": true
+		}
+	],
+	"itemGroup": [
+		{
+			"name": "Hidden Blade Variant",
+			"source": "COMItems",
+			"page": 0,
+			"tier": "minor",
+			"rarity": "varies",
+			"type": "M",
+			"weight": 1,
+			"value": 10000,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"items": [
+				"Hidden Blade (Arm Guard)|COMItems",
+				"Hidden Blade (Hidden Gun)|COMItems",
+				"Hidden Blade (Pivot Knife)|COMItems",
+				"Hidden Blade (Phantom Blade)|COMItems",
+				"Hidden Blade (Poison Blade)|COMItems"
+			],
+			"entries": [
+				"这是为刺客执行他们的排他行动而制造的精良武器，这把武器被绑在人的手臂上，使它在众目睽睽之下隐藏起来。这使得武器使用者在任何保持其隐蔽性的测试中都有优势。如果你在武器被隐藏时用它进行攻击，你在攻击卷上有优势。一旦武器被暴露，并且敌人意识到了它，试图隐藏武器就变得很困难。如果你在武器被暴露后试图隐藏它，DC将被提高（或降低）。它需要一个动作来装备或移除。在工匠的帮助下，你可以做的事情包括为武器添加改进和修饰。然而，有些附件需要特定的熟练度才能添加到武器上，而且有些附件会妨碍其他附件的使用，因此无法在一把刀上添加所有的附件。可以添加到藏刀上的附件如下。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Arm Guard",
+							"entries": [
+								"隐秘之刃将有一个护臂连接到手臂的上半部分，允许角色使用护臂更容易阻挡和偏移攻击。它给你的角色护甲+1 AC，在武器上放置一个坚固但仍然很轻的护甲。由于它套在手臂上，它与手臂底部的刀刃装置没有任何互动，需要一个额外的动作来与隐藏的刀刃一起捐献/关闭。然而，在附加护臂后，武器会受到（%0%）规则的约束。为你的武器附加这个升级需要花费100金币。",
+								"{@b Arm Guard Abilitie:} +1 AC (受{@variantrule Partial Armor|COMVariantRule}规则限制), 移除唐/脱的修补工具需求。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hidden Gun",
+							"entries": [
+								"隐蔽之刃上会有一把枪，允许角色使用普通的范围攻击来射击目标，穿刺伤害为1d8，范围为（30/90），它是一种单发武器，需要一个动作来使用普通的弹药重新装弹，你可以将你对手枪的熟练度加成用于你的攻击卷。请记住，用这种武器射击会暴露你，如果你躲在它发射时发出的类似爆炸的巨大声音中。由于该装置的尺寸，这使得其他附件如钩子刀、枢轴刀和幻影刀不能被附加。如果隐蔽刀有毒刃附件，可以用毒镖代替标准弹药，允许在一定范围内施放毒药，并在发射时保持隐身状态，代价是你不滚动伤害，如果你用毒镖从隐身状态攻击，目标在毒药的保存投掷上有劣势，如果适用。这需要对手枪的熟练程度，并且需要花费250金币来给你的武器加上这个升级。",
+								"{@b Hidden Gun Stats:} 1d8刺穿, 范围(30/90), 加载, [*特殊: 沉默的毒镖(需要毒刃)] 。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hook Blade",
+							"entries": [
+								"隐蔽刀刃上会有一个钩子，允许使用者更容易地攀爬几乎没有立足点的垂直墙壁，有效地使你的攀爬速度与你的移动速度相等，并在攀爬困难地形时拥有优势。然而，由于钩子的性质，它妨碍了幻影之刃、毒药之刃、隐藏之枪和支点之刀等附件的使用，所以有了钩子之刃就不能再安装这些升级装置。花费100金币为你的武器加上这个升级。",
+								"{@b Hook Blade Abilities:} 攀爬速度=移动速度，攀爬困难地形时的优势。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Pivot Knife",
+							"entries": [
+								"隐蔽之刃的机械装置被更大程度地修改，并在刃端增加了一个转轴，允许使用者像普通匕首一样握住刀身。如果你有双持武器和/或双持武器战斗功能，该武器可以像正常一样获得这些功能的好处。由于延伸所需的机制，几乎没有空间来连接钩子刀、隐藏枪、毒药刀和幻影刀。花费100金币为你的武器附加这种升级。",
+								"{@b Pivot Knife Abilities:} 允许使用双武器战斗和/或双持武器的奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Phantom Blade",
+							"entries": [
+								"幻影之刃会有一个小型的十字弓附加在上面，允许角色射出普通范围的攻击，穿刺伤害为1d6，射程为（30/120），它是一个单发武器，需要一个动作来使用普通弹药重新装弹，你可以将你对手弩的熟练度加成用于你的攻击卷，用这个武器射击不会暴露你，如果你是隐藏的。因为它是隐藏枪的无声和隐身版本，如果附加了幻影之刃，就不能添加像枢轴刀、钩子刀和所述隐藏枪这样的附件。如果毒刃被附加在这把武器上，它允许使用者在毒刃中给枪栓涂上毒药。这需要熟练掌握手弩（武术武器熟练度也算在内），并且需要花费250金币来给武器附加这个升级。",
+								"{@b Phantom Blade Stats:} 1d6 刺穿, 范围 (30/120), 加载 [*特殊: 毒弹(需要毒刃附件)"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Poison Blade",
+							"entries": [
+								"隐秘之刃将有一个小的针状刀片连接在主刀旁边。不需要对主刀进行滚动伤害，而是直接用针刺入目标并使其受到影响，就可以直接施放任何类型的毒药。如果目标被击中时隐藏了藏刀，那么目标在毒药的保命招数上就有劣势（如果适用）。然而，在毒药被使用后，必须将新的剂量装入装置。它的小尺寸和在隐藏刀片旁边的位置允许它与幻影刀或隐藏枪连接，但如果刀片有钩子刀或枢轴刀的升级，它就不能被连接。作为一个特殊的奖励，如果这个附件与幻影之刃或隐藏之枪同时出现在隐藏之刃上，它允许使用这些武器的备用弹药。这需要熟练掌握毒师套装，并花费150金币为你的武器加上这个升级。",
+								"{@b Poison Blade Abilities:}施放毒药作为伤害，加载，在隐藏时的蓄力攻击中处于劣势，启用隐藏枪和幻影刀的特殊属性。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hidden Property",
+					"entries": [
+						"具有隐藏属性的武器被设计成可以被持有者轻易地隐藏起来。如果你熟练掌握了隐藏武器，你在检查灵巧性（灵巧的手）隐藏武器时也会获得优势。"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PzUFrw5.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Credits",
+						"entries": [
+							"艺术和物品由{@link Hidden Blade|https://www.dandwiki.com/wiki/Hidden_Blade_(5e_Equipment)}设计。如果你在其他地方转贴，请注明出处。"
+						],
+						"type": "entries"
+					}
+				]
+			}
+		}
+	]
+}

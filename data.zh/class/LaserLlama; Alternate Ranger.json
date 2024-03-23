@@ -1,0 +1,5579 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLAR",
+				"abbreviation": "LLAR",
+				"full": "Alternate Ranger",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"ProfForp#0242",
+					"Ignimortis#8570"
+				],
+				"color": "2BAE2A",
+				"version": "3.8.1",
+				"url": "https://www.gmbinder.com/share/-M7iu19Af89SH2G_5RGa",
+				"targetSchema": "1.1.0"
+			},
+			{
+				"json": "LLAR:E",
+				"abbreviation": "LLAR:E",
+				"full": "Alternate Ranger Expanded",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"ProfForp#0242",
+					"Ignimortis#8570"
+				],
+				"color": "2BAE2A",
+				"version": "3.8.1",
+				"url": "https://www.gmbinder.com/share/-MW4c30CbGMWLRNgJxgb",
+				"targetSchema": "1.1.0"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"PHB",
+				"XGE",
+				"TCE"
+			]
+		},
+		"optionalFeatureTypes": {
+			"FS:AR": "Fighting Style; Alternate Ranger",
+			"LL:SK": "Survivalist Knacks"
+		},
+		"dateAdded": 1671459763,
+		"dateLastModified": 1704137469,
+		"_dateLastModifiedHash": "d65271df19"
+	},
+	"class": [
+		{
+			"name": "Alternate Ranger",
+			"source": "LLAR",
+			"fluff": [
+				{
+					"name": "Alternate Ranger",
+					"type": "section",
+					"source": "LLAR",
+					"entries": [
+						"当这个白发苍苍的男人穿过森林的灌木丛时，他褪色的绿色斗篷使他几乎看不见。他在夜里跟踪的那个特别大的巨魔终于停下来休息了。当这个巨大的畜生躺下睡觉时，一个无声的绿色身影从树上冒了出来，扼杀了这个可怕的怪物的生命。",
+						"当巨大的蓝龙降临小镇时，一个半精灵的小个子男人从一阵闪电的路径中滚了出来。脖子上的小汗毛还在因为残余的电流而竖起来，这个有经验的猎人敲了一支箭，让它飞向那只可怕的野兽的方向。当那只咬人的飞镖射中目标时，天蓝色的龙发出一声可怕的吼叫，并坠落到地面上，在那里它躺在一个破碎的一堆。",
+						"当这只巨大的猫头鹰熊慢慢地走向她称之为家的小村庄时，一个小半身人女孩向她在灌木丛中的同伴吹起了口哨。在她的示意下，一只巨大的猎犬从藏身处跃出，挑衅地站在猫头鹰熊的面前，它的毛发似乎比其他东西更多。猫头鹰熊被她的伙伴分散了注意力，完全没有想到会被这个矮小的游侠抓住。一旦他们的敌人失去了知觉，半身人和她的狗就把这只伟大的猫头鹰熊释放到数英里之外，让它在那里生活，而不会威胁到他们保护的城镇。",
+						"The three adventurers described above are considered Rangers, wild warriors and defenders of the natural world."
+					]
+				},
+				{
+					"name": "Defenders of Balance",
+					"type": "section",
+					"source": "LLAR",
+					"entries": [
+						"游骑兵在两个世界之间度过他们的生活。一方面，他们作为文明的守护者，保护那些居住在社会边缘的人。另一方面，护林员是生存专家，对自然界的动植物有很深的了解。护林员保护社会和荒野之间的平衡。当野生动物离开它们的自然栖息地时，护林员会在它们伤害无辜的农民和旅行者之前追踪它们。当人们侵占荒野时，护林员将对不尊重自然平衡的工业和扩张进行反击。",
+						"游骑兵将他们的生命献给了守护文明和荒野交汇的地方，从未完全加入他们用生命捍卫的两个世界中。"
+					]
+				},
+				{
+					"name": "Prepared for Anything",
+					"type": "section",
+					"source": "LLAR",
+					"entries": [
+						"准备面对任何挑战，护林员的核心是生存主义者。荒野是一个严酷的地方，那些不能适应周围环境的人将会死去。在野外，游侠们学会了如何适应。凭借他们对自然界的了解，他们与原始魔法的联系，以及他们的导师传授的技能，只要有足够的时间准备，很少有游侠不能克服的挑战。",
+						"Each ranger has their own philosophy on how they fit into the interconnected web that is the natural world. Some view themselves as apex predators, using their martial skill and ruthless hunting abilities to keep the wild in line. Others see themselves as humble servants of nature that serve the wild."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creating Your Ranger",
+					"source": "LLAR",
+					"entries": [
+						"考虑一下你的游侠训练的性质。你是和导师一起训练，一起在荒野中游荡，学习所有你能学到的东西？还是你自己建立了与自然世界的原始联系？是什么在激励着你的游侠？你对某种类型的怪物有仇吗？你是一个在寂静的森林中，而在城市街道或沉睡的城镇中感到更舒适的野生战士吗？",
+						"无论他们的出身如何，几乎所有的游侠都会选择冒险的生活，将他们对野外的知识传授给下一代。通常，在他们的晚年，这些野生战士会收一个学徒，传授他们所知道的一切，以便在未来的岁月里确保荒野的安全。",
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"You can make a ranger quickly by using these suggestions. First, make Dexterity your highest ability score, followed by your Wisdom. Second, choose the {@background outlander} background."
+							]
+						}
+					]
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item chain shirt|phb} and a {@item shield|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand}",
+					"(a) a {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"chain shirt|phb",
+							"shield|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "shortsword|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"longbow|phb",
+							"arrows (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13,
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|phb|shields}"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"athletics",
+									"history",
+									"insight",
+									"investigation",
+									"medicine",
+									"nature",
+									"perception",
+									"stealth",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Survivalist Knacks",
+					"featureType": [
+						"LL:SK"
+					],
+					"progression": [
+						2,
+						2,
+						3,
+						3,
+						3,
+						4,
+						4,
+						4,
+						5,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						8,
+						8,
+						9,
+						9,
+						10
+					]
+				}
+			],
+			"classFeatures": [
+				"Survivalist Knacks|Alternate Ranger|LLAR|1",
+				"Wilderness Expertise|Alternate Ranger|LLAR|1",
+				"Fighting Style|Alternate Ranger|LLAR|2",
+				"Favored Foe|Alternate Ranger|LLAR|2",
+				"Spellcasting|Alternate Ranger|LLAR|2",
+				{
+					"classFeature": "Ranger Archetype|Alternate Ranger|LLAR|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Ranger|LLAR|4",
+				"Extra Attack|Alternate Ranger|LLAR|5",
+				"Favored Foe Improvement|Alternate Ranger|LLAR|6",
+				{
+					"classFeature": "Ranger Archetype Feature|Alternate Ranger|LLAR|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Ranger|LLAR|8",
+				"Wilderness Expertise|Alternate Ranger|LLAR|9",
+				"Favored Foe Improvement|Alternate Ranger|LLAR|10",
+				"Adaptable|Alternate Ranger|LLAR|11",
+				{
+					"classFeature": "Ranger Archetype Feature|Alternate Ranger|LLAR|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Ranger|LLAR|12",
+				"Favored Foe Improvement|Alternate Ranger|LLAR|14",
+				{
+					"classFeature": "Ranger Archetype Feature|Alternate Ranger|LLAR|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Ranger|LLAR|16",
+				"Favored Foe Improvement|Alternate Ranger|LLAR|17",
+				"Feral Senses|Alternate Ranger|LLAR|18",
+				"Ability Score Improvement|Alternate Ranger|LLAR|19",
+				"Foe Slayer|Alternate Ranger|LLAR|20"
+			],
+			"subclassTitle": "Ranger Archetype",
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Favored Foe",
+						"{@filter 1st|spells|level=1|class=Ranger (LLAR)}",
+						"{@filter 2nd|spells|level=2|class=Ranger (LLAR)}",
+						"{@filter 3rd|spells|level=3|class=Ranger (LLAR)}",
+						"{@filter 4th|spells|level=4|class=Ranger (LLAR)}",
+						"{@filter 5th|spells|level=5|class=Ranger (LLAR)}",
+						"{@filter Knacks Known|optionalfeatures|feature type=LL:SK}"
+					],
+					"rows": [
+						[
+							"-",
+							"-",
+							"-",
+							"-",
+							"-",
+							"-",
+							"2"
+						],
+						[
+							"d4",
+							"2",
+							"-",
+							"-",
+							"-",
+							"-",
+							"2"
+						],
+						[
+							"d4",
+							"3",
+							"-",
+							"-",
+							"-",
+							"-",
+							"3"
+						],
+						[
+							"d4",
+							"3",
+							"-",
+							"-",
+							"-",
+							"-",
+							"3"
+						],
+						[
+							"d4",
+							"4",
+							"2",
+							"-",
+							"-",
+							"-",
+							"3"
+						],
+						[
+							"d6",
+							"4",
+							"2",
+							"-",
+							"-",
+							"-",
+							"4"
+						],
+						[
+							"d6",
+							"4",
+							"3",
+							"-",
+							"-",
+							"-",
+							"4"
+						],
+						[
+							"d6",
+							"4",
+							"3",
+							"-",
+							"-",
+							"-",
+							"4"
+						],
+						[
+							"d6",
+							"4",
+							"3",
+							"2",
+							"-",
+							"-",
+							"5"
+						],
+						[
+							"d8",
+							"4",
+							"3",
+							"2",
+							"-",
+							"-",
+							"5"
+						],
+						[
+							"d8",
+							"4",
+							"3",
+							"3",
+							"-",
+							"-",
+							"5"
+						],
+						[
+							"d8",
+							"4",
+							"3",
+							"3",
+							"-",
+							"-",
+							"6"
+						],
+						[
+							"d8",
+							"4",
+							"3",
+							"3",
+							"1",
+							"-",
+							"6"
+						],
+						[
+							"d10",
+							"4",
+							"3",
+							"3",
+							"1",
+							"-",
+							"7"
+						],
+						[
+							"d10",
+							"4",
+							"3",
+							"3",
+							"2",
+							"-",
+							"7"
+						],
+						[
+							"d10",
+							"4",
+							"3",
+							"3",
+							"2",
+							"-",
+							"8"
+						],
+						[
+							"d10",
+							"4",
+							"3",
+							"3",
+							"3",
+							"1",
+							"8"
+						],
+						[
+							"d12",
+							"4",
+							"3",
+							"3",
+							"3",
+							"1",
+							"9"
+						],
+						[
+							"d12",
+							"4",
+							"3",
+							"3",
+							"3",
+							"2",
+							"9"
+						],
+						[
+							"d12",
+							"4",
+							"3",
+							"3",
+							"3",
+							"2",
+							"10"
+						]
+					]
+				}
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
+			"classSpells": [
+				"absorb elements|xge",
+				"alarm",
+				"animal friendship",
+				"beast bond|xge",
+				"cure wounds",
+				"detect magic",
+				"detect poison and disease",
+				"ensnaring strike",
+				"entangle",
+				"expeditious retreat",
+				"fog cloud",
+				"goodberry",
+				"hail of thorns",
+				"jump",
+				"longstrider",
+				"purify food and drink",
+				"searing smite",
+				"snare|xge",
+				"speak with animals",
+				"zephyr strike|xge",
+				"aid",
+				"animal messenger",
+				"barkskin",
+				"beast sense",
+				"continual flame",
+				"cordon of arrows",
+				"darkvision",
+				"enhance ability",
+				"find traps",
+				"gust of wind",
+				"healing spirit|xge",
+				"lesser restoration",
+				"locate animals or plants",
+				"locate object",
+				"magic weapon",
+				"pass without trace",
+				"protection from poison",
+				"silence",
+				"spike growth",
+				"summon beast|tce",
+				"blinding smite",
+				"conjure animals",
+				"conjure barrage",
+				"daylight",
+				"dispel magic",
+				"elemental weapon",
+				"flame arrows|xge",
+				"leomund's tiny hut",
+				"lightning arrow",
+				"meld into stone",
+				"nondetection",
+				"plant growth",
+				"revivify",
+				"speak with plants",
+				"summon fey|tce",
+				"water breathing",
+				"water walk",
+				"wind wall",
+				"conjure woodland beings",
+				"death ward",
+				"divination",
+				"dominate beast",
+				"freedom of movement",
+				"grasping vine",
+				"guardian of nature|xge",
+				"locate creature",
+				"staggering smite",
+				"stoneskin",
+				"summon elemental|tce",
+				"awaken",
+				"commune with nature",
+				"conjure volley",
+				"contagion",
+				"greater restoration",
+				"steel wind strike|xge",
+				"swift quiver",
+				"tree stride",
+				"wrath of nature|xge"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Survivalist Knacks",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/trades/construction-carpentry-hammer-gray.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 1,
+			"entries": [
+				"在野外，你收集了一些原始的知识，以加强你的探索、狩猎和追踪技能，被称为（%0%）。在1级的时候，你可以从本等级描述末尾的列表中学习两个你选择的Knacks。",
+				"当你获得游侠等级时，你会学习额外的技能，如游侠表中的技能栏所示。",
+				"每当你在这个等级中获得一个等级，你可以从你所知道的诀窍中选择一个，并用你所选择的另一个符合先决条件的诀窍来代替它。"
+			]
+		},
+		{
+			"name": "Wilderness Expertise",
+			"source": "LLAR",
+			"foundryImg": "icons/environment/wilderness/tree-ash.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 1,
+			"entries": [
+				"你在野外的技能是无可匹敌的。在1级时，从游侠类技能列表中选择一个你获得的技能熟练度。在你进行任何使用该技能的能力检查时，你的熟练度加成会翻倍。你还可以学习说、读、写一种你选择的额外语言。大多数游侠会学习他们所猎杀的敌人所讲的语言。",
+				"At 9th level, you select another Ranger class skill you are proficient in to gain the benefits of this feature, and you learn to speak, read, and write another language of your choice."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 2,
+			"entries": [
+				"你的战斗技巧超过了大多数战士。在2级的时候，你获得了一种从以下列表中选择的战斗风格。你不能多次学习一种格斗术，即使有其他功能允许你学习另一种格斗术。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Archery|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defensive Fighting|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Druidic Warrior|LLAR:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dual Wielding|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Featherweight Fighting|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Marine Fighting|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Melee Marksman|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mountaineer|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mounted Warrior|LLAR:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protection|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Strongbow|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thrown Weapon Fighting|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Versatile Fighting|LLAR"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Unarmed Fighting|LLAR:E"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Favored Foe",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-bars-yellow.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 2,
+			"entries": [
+				"You hunt as the creatures of the wild. Beginning at 2nd level, you can use a bonus action to mark a creature you can see as your Favored Foe, granting you the benefits below for 1 hour, until the creature is slain, or you mark another creature:",
+				{
+					"type": "list",
+					"items": [
+						"Each time you hit the creature with a weapon attack you deal bonus damage equal to your Favored Foe die. This die begins as d4 and changes as you gain Ranger levels, as shown in the Favored Foe column of the Ranger table.",
+						"You have advantage on Wisdom (Perception) and Wisdom (Survival) checks you make to locate or track the creature."
+					]
+				},
+				"You can mark a creature this way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses of this feature remaining, you can expend a spell slot of 1st-level or higher to use this feature one additional time.",
+				"At certain Ranger levels, the duration of your Favored Foe mark increases: at 6th level (8 hours), 10th level (24 hours), 14th level (1 week), and finally at 17th level (indefinite)."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 2,
+			"entries": [
+				"Also at 2nd level, you learn to draw upon the primal magic of the natural world to enhance your survival and combat skills.",
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"上面的游侠表显示了你有多少个法术槽来施展法术。要施放一个一级或更高的（%0%），你必须消耗一个该级别或更高的法术槽。当你完成长时间的休息时，你会重新获得所有消耗的法术槽。",
+						"At the end of each long rest, you prepare a list of spells that are available for you to cast. Choose a number of spells equal to your Wisdom modifier + half Ranger level, rounded down. The spells must all be from the Ranger spell list at the end of this class, and be of a level for which you have spell slots.",
+						"For example, as a 5th level ranger with 14 Wisdom, you can prepare any four spells of 1st or 2nd-level and cast each spell any number of times by using a 1st or 2nd-level slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for Ranger spells as you draw magic from your connection to nature. You use your Wisdom when a Ranger spell refers to your spellcasting ability, and you use your Wisdom modifier whenever you set the saving throw DC or make a spell attack roll for one of your Ranger spells.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用德鲁伊的焦点作为游侠法术的施法焦点。请参阅《玩家手册》中的例子。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"你对自然界的了解使你能够引出其固有的魔法。如果一个游侠法术有仪式标签，并且你已经准备好了该法术，那么你可以将该法术作为一个仪式来施放。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ranger Archetype",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you choose an Archetype from the list below that best represents the training and skills of your Ranger: Beast Master, Hunter, Spellbreaker, or Shadowbane.",
+				"你选择的游侠原型在3级时授予你特性，在你达到7级、11级和15级时再次授予你特性。",
+				"Additionally, each Ranger Archetype has a list of Archetype Spells that you always have prepared once you reach the Ranger levels noted in your Archetype's description. Your Archetype Spells count as Ranger spells for you, but they do not count against your total number of spells that you can prepare each day."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或将两项能力得分提高1分。与平常一样，你不能用这个功能将你的一项能力得分提高到20分以上。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Favored Foe Improvement",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-bars-yellow.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 6,
+			"entries": [
+				"在第6级时，你的 \"喜爱的敌人 \"标记可以持续8小时。"
+			]
+		},
+		{
+			"name": "Ranger Archetype Feature",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 7,
+			"entries": [
+				"在第7级时，你获得了游侠原型赋予你的一项功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或将两项能力得分提高1分。与平常一样，你不能用这个功能将你的一项能力得分提高到20分以上。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Wilderness Expertise",
+			"source": "LLAR",
+			"foundryImg": "icons/environment/wilderness/tree-ash.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 9,
+			"entries": [
+				"At 9th level, you select another ranger class skill you are proficient in to gain the benefits of this feature, and you learn to speak, read, and write another language of your choice."
+			]
+		},
+		{
+			"name": "Favored Foe Improvement",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-bars-yellow.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 10,
+			"entries": [
+				"At 10th level, your Favored Foe mark can last up to 24 hours."
+			]
+		},
+		{
+			"name": "Ranger Archetype Feature",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得了游侠原型赋予你的一项功能。"
+			]
+		},
+		{
+			"name": "Adaptable",
+			"source": "LLAR",
+			"foundryImg": "icons/environment/settlement/well.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 11,
+			"entries": [
+				"Your time in the wilderness has taught you that anything that doesn't change dies. Starting at 11th level, when you finish a long rest, you can replace one {@filter Knack|optionalfeatures|feature type=LL:SK} you know with another Knack of your choice, so long as you meet its prerequisites."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或将两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Favored Foe Improvement",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-bars-yellow.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 14,
+			"entries": [
+				"At 14th level, your Favored Foe mark can last up to 1 week."
+			]
+		},
+		{
+			"name": "Ranger Archetype Feature",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一个由你的游侠原型授予的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或将两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Favored Foe Improvement",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-bars-yellow.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 17,
+			"entries": [
+				"At 17th level, your Favored Foe mark can last indefinitely."
+			]
+		},
+		{
+			"name": "Feral Senses",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/mammals/humanoid-fox-cat-archer.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 18,
+			"entries": [
+				"You hunt as an apex predator, never losing track of your prey. Starting at 18th level, you cannot have disadvantage on any attack roll you make that targets a creature within 30 feet of you or a creature that is marked as your Favored Foe."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或将两项能力得分提高1分。与平常一样，你不能用这个功能将你的一项能力得分提高到20分以上。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "LLAR",
+			"foundryImg": "icons/weapons/bows/shortbow-recurve-yellow-blue.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"level": 20,
+			"entries": [
+				"You are a Ranger of mythic skill, rivaling the great huntsmen of legend. At 20th level, when you hit your Favored Foe with a weapon attack, you can immediately end the mark and cause that attack to deal maximum damage instead of rolling.",
+				"If the damage from this attack reduces the target to 50 hit points or fewer, it is instantly reduced to 0 hit points.",
+				"Once you use this feature you must finish a short or long rest before you can use it again."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Beast Master",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Beast Master",
+			"subclassFeatures": [
+				"Beast Master|Alternate Ranger|LLAR|Beast Master|LLAR|3",
+				"Exceptional Training|Alternate Ranger|LLAR|Beast Master|LLAR|7",
+				"Bestial Fury|Alternate Ranger|LLAR|Beast Master|LLAR|11",
+				"Primal Bond|Alternate Ranger|LLAR|Beast Master|LLAR|15"
+			],
+			"subclassSpells": [
+				"beast bond|xge",
+				"speak with animals",
+				"beast sense",
+				"warding bond",
+				"haste",
+				"protection from energy",
+				"death ward",
+				"freedom of movement",
+				"awaken",
+				"commune with nature"
+			]
+		},
+		{
+			"name": "Hunter",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Hunter",
+			"subclassFeatures": [
+				"Hunter|Alternate Ranger|LLAR|Hunter|LLAR|3",
+				"Defensive Tactics|Alternate Ranger|LLAR|Hunter|LLAR|7",
+				"Flexible Hunter|Alternate Ranger|LLAR|Hunter|LLAR|11",
+				"Multiattack|Alternate Ranger|LLAR|Hunter|LLAR|11",
+				"Superior Defense|Alternate Ranger|LLAR|Hunter|LLAR|15"
+			],
+			"subclassSpells": [
+				"expeditious retreat",
+				"snare|xge",
+				"cordon of arrows",
+				"pass without trace",
+				"conjure barrage",
+				"nondetection",
+				"freedom of movement",
+				"locate creature",
+				"conjure volley",
+				"swift quiver"
+			]
+		},
+		{
+			"name": "Spellbreaker",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Spellbreaker",
+			"subclassFeatures": [
+				"Spellbreaker|Alternate Ranger|LLAR|Spellbreaker|LLAR|3",
+				"Arcane Defense|Alternate Ranger|LLAR|Spellbreaker|LLAR|7",
+				"Mage Breaker|Alternate Ranger|LLAR|Spellbreaker|LLAR|11",
+				"Mantle of the Master|Alternate Ranger|LLAR|Spellbreaker|LLAR|15"
+			],
+			"subclassSpells": [
+				"absorb elements|xge",
+				"detect magic",
+				"blindness/deafness",
+				"silence",
+				"counterspell",
+				"dispel magic",
+				"arcane eye",
+				"otiluke's resilient sphere",
+				"dispel evil and good",
+				"wall of force"
+			]
+		},
+		{
+			"name": "Shadowbane",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Shadowbane",
+			"subclassFeatures": [
+				"Shadowbane|Alternate Ranger|LLAR|Shadowbane|LLAR|3",
+				"Iron Focus|Alternate Ranger|LLAR|Shadowbane|LLAR|7",
+				"Bane of Darkness|Alternate Ranger|LLAR|Shadowbane|LLAR|11",
+				"Ruthless Counter|Alternate Ranger|LLAR|Shadowbane|LLAR|15"
+			],
+			"subclassSpells": [
+				"compelled duel",
+				"protection from evil and good",
+				"see invisibility",
+				"zone of truth",
+				"magic circle",
+				"protection from energy",
+				"banishment",
+				"mordenkainen's faithful hound",
+				"dispel evil and good",
+				"hold monster"
+			]
+		},
+		{
+			"name": "Gloom Stalker",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Gloom Stalker",
+			"subclassFeatures": [
+				"Gloom Stalker|Alternate Ranger|LLAR|Gloom Stalker|LLAR|3",
+				"Iron Mind|Alternate Ranger|LLAR|Gloom Stalker|LLAR|7",
+				"Stalker's Flurry|Alternate Ranger|LLAR|Gloom Stalker|LLAR|11",
+				"Shadowy Dodge|Alternate Ranger|LLAR|Gloom Stalker|LLAR|15"
+			],
+			"subclassSpells": [
+				"cause fear|xge",
+				"disguise self",
+				"darkness",
+				"rope trick",
+				"fear",
+				"nondetection",
+				"greater invisibility",
+				"phantasmal killer",
+				"mislead",
+				"seeming"
+			]
+		},
+		{
+			"name": "Horizon Walker",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Horizon Walker",
+			"subclassFeatures": [
+				"Horizon Walker|Alternate Ranger|LLAR|Horizon Walker|LLAR|3",
+				"Ethereal Step|Alternate Ranger|LLAR|Horizon Walker|LLAR|7",
+				"Distant Strike|Alternate Ranger|LLAR|Horizon Walker|LLAR|11",
+				"Spectral Defense|Alternate Ranger|LLAR|Horizon Walker|LLAR|15"
+			],
+			"subclassSpells": [
+				"alarm",
+				"protection from evil and good",
+				"misty step",
+				"rope trick",
+				"haste",
+				"magic circle",
+				"banishment",
+				"dimension door",
+				"banishing smite",
+				"teleportation circle"
+			]
+		},
+		{
+			"name": "Fey Wanderer",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Fey Wanderer",
+			"subclassFeatures": [
+				"Fey Wanderer|Alternate Ranger|LLAR|Fey Wanderer|LLAR|3",
+				"Beguiling Twist|Alternate Ranger|LLAR|Fey Wanderer|LLAR|7",
+				"Fey Reinforcements|Alternate Ranger|LLAR|Fey Wanderer|LLAR|11",
+				"Misty Wanderer|Alternate Ranger|LLAR|Fey Wanderer|LLAR|15"
+			],
+			"subclassSpells": [
+				"cause fear|xge",
+				"charm person",
+				"enthrall",
+				"misty step",
+				"dispel magic",
+				"fear",
+				"charm monster|xge",
+				"dimension door",
+				"geas",
+				"mislead"
+			]
+		},
+		{
+			"name": "Swarmkeeper",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Swarmkeeper",
+			"subclassFeatures": [
+				"Swarmkeeper|Alternate Ranger|LLAR|Swarmkeeper|LLAR|3",
+				"Writhing Tide|Alternate Ranger|LLAR|Swarmkeeper|LLAR|7",
+				"Mighty Swarm|Alternate Ranger|LLAR|Swarmkeeper|LLAR|11",
+				"Swarming Dispersal|Alternate Ranger|LLAR|Swarmkeeper|LLAR|15"
+			],
+			"subclassSpells": [
+				"mage hand",
+				"entangle",
+				"faerie fire",
+				"spider climb",
+				"web",
+				"fly",
+				"gaseous form",
+				"arcane eye",
+				"giant insect",
+				"bigby's hand",
+				"insect plague"
+			]
+		},
+		{
+			"name": "Drakewarden",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Drakewarden",
+			"subclassFeatures": [
+				"Drakewarden|Alternate Ranger|LLAR|Drakewarden|LLAR|3",
+				"Bond of Fang and Scale|Alternate Ranger|LLAR|Drakewarden|LLAR|7",
+				"Drake's Breath|Alternate Ranger|LLAR|Drakewarden|LLAR|11",
+				"Perfected Bond|Alternate Ranger|LLAR|Drakewarden|LLAR|15"
+			],
+			"subclassSpells": [
+				"thaumaturgy",
+				"absorb elements|xge",
+				"command",
+				"dragon's breath|xge",
+				"warding bond",
+				"elemental weapon",
+				"fear",
+				"dominate beast",
+				"elemental bane|xge",
+				"awaken",
+				"dominate person"
+			]
+		},
+		{
+			"name": "Bounty Hunter",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Bounty Hunter",
+			"subclassFeatures": [
+				"Bounty Hunter|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|3",
+				"Cunning Technique|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|7",
+				"Improved Exploits (d6)|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|7",
+				"Unwavering|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|11",
+				"Improved Exploits (d8)|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|15",
+				"Most Dangerous Game|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|15"
+			]
+		},
+		{
+			"name": "Buccaneer",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Buccaneer",
+			"subclassFeatures": [
+				"Buccaneer|Alternate Ranger|LLAR|Buccaneer|LLAR:E|3",
+				"Deep Sea Diver|Alternate Ranger|LLAR|Buccaneer|LLAR:E|7",
+				"Wrath of the Waves|Alternate Ranger|LLAR|Buccaneer|LLAR:E|11",
+				"Watery Resilience|Alternate Ranger|LLAR|Buccaneer|LLAR:E|15"
+			],
+			"subclassSpells": [
+				"compelled duel",
+				"fog cloud",
+				"gust of wind",
+				"locate object",
+				"call lightning|xge",
+				"water breathing",
+				"control water",
+				"watery sphere|xge",
+				"control winds|xge",
+				"maelstrom|xge"
+			]
+		},
+		{
+			"name": "Druidic Guardian",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Druidic Guardian",
+			"subclassFeatures": [
+				"Druidic Guardian|Alternate Ranger|LLAR|Druidic Guardian|LLAR:E|3",
+				"Wild Bound|Alternate Ranger|LLAR|Druidic Guardian|LLAR:E|7",
+				"Empowered Shapes|Alternate Ranger|LLAR|Druidic Guardian|LLAR:E|11",
+				"Thousand Forms|Alternate Ranger|LLAR|Druidic Guardian|LLAR:E|15"
+			],
+			"subclassSpells": [
+				"ensnaring strike",
+				"entangle",
+				"alter self",
+				"spike growth",
+				"erupting earth",
+				"plant growth",
+				"grasping vine",
+				"guardian of nature|xge",
+				"tree stride",
+				"wrath of nature|xge"
+			]
+		},
+		{
+			"name": "Dunestrider",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Dunestrider",
+			"subclassFeatures": [
+				"Dunestrider|Alternate Ranger|LLAR|Dunestrider|LLAR:E|3",
+				"Rugged Resilience|Alternate Ranger|LLAR|Dunestrider|LLAR:E|7",
+				"Illusory Strikes|Alternate Ranger|LLAR|Dunestrider|LLAR:E|11",
+				"Illusory Transposition|Alternate Ranger|LLAR|Dunestrider|LLAR:E|15"
+			],
+			"subclassSpells": [
+				"absorb elements|xge",
+				"silent image",
+				"invisibility",
+				"mirror image",
+				"wall of sand|xge",
+				"major image",
+				"greater invisibility",
+				"hallucinatory terrain",
+				"commune with nature",
+				"mislead"
+			]
+		},
+		{
+			"name": "Grim Warden",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Grim Warden",
+			"subclassFeatures": [
+				"Grim Warden|Alternate Ranger|LLAR|Grim Warden|LLAR:E|3",
+				"Dark Augmentation|Alternate Ranger|LLAR|Grim Warden|LLAR:E|7",
+				"Greater Crimson Brand|Alternate Ranger|LLAR|Grim Warden|LLAR:E|11",
+				"Sanguine Mastery|Alternate Ranger|LLAR|Grim Warden|LLAR:E|15"
+			],
+			"subclassSpells": [
+				"bane",
+				"hex",
+				"hold person",
+				"shadow blade|xge",
+				"bestow curse",
+				"vampiric touch",
+				"blight",
+				"shadow of moil|xge",
+				"enervation|xge",
+				"hold monster"
+			]
+		},
+		{
+			"name": "Nomad",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Nomad",
+			"subclassFeatures": [
+				"Nomad|Alternate Ranger|LLAR|Nomad|LLAR:E|3",
+				"Nomadic Step|Alternate Ranger|LLAR|Nomad|LLAR:E|7",
+				"Strange Movement|Alternate Ranger|LLAR|Nomad|LLAR:E|11",
+				"Mystical Burst|Alternate Ranger|LLAR|Nomad|LLAR:E|15"
+			],
+			"subclassSpells": [
+				"comprehend languages",
+				"disguise self",
+				"detect thoughts",
+				"misty step",
+				"clairvoyance",
+				"tongues",
+				"dimension door",
+				"divination",
+				"commune",
+				"seeming"
+			]
+		},
+		{
+			"name": "Stargazer",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Stargazer",
+			"subclassFeatures": [
+				"Stargazer|Alternate Ranger|LLAR|Stargazer|LLAR:E|3",
+				"Threads of Fate|Alternate Ranger|LLAR|Stargazer|LLAR:E|7",
+				"Starlight Strikes|Alternate Ranger|LLAR|Stargazer|LLAR:E|11",
+				"Resplendent Soul|Alternate Ranger|LLAR|Stargazer|LLAR:E|15"
+			],
+			"subclassSpells": [
+				"vicious mockery",
+				"inflict wounds",
+				"gust|xge",
+				"zephyr strike|xge",
+				"guidance",
+				"bless",
+				"minor illusion",
+				"longstrider",
+				"shillelagh",
+				"compelled duel",
+				"resistance",
+				"shield",
+				"primal savagery|xge",
+				"guiding bolt",
+				"mind spike|xge",
+				"moonbeam",
+				"beacon of hope",
+				"clairvoyance",
+				"divination",
+				"guardian of faith",
+				"dawn|xge",
+				"wall of light|xge"
+			]
+		},
+		{
+			"name": "Wrangler",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"shortName": "Wrangler",
+			"subclassFeatures": [
+				"Wrangler|Alternate Ranger|LLAR|Wrangler|LLAR:E|3",
+				"Bring to Heel|Alternate Ranger|LLAR|Wrangler|LLAR:E|7",
+				"Master Tamer|Alternate Ranger|LLAR|Wrangler|LLAR:E|11",
+				"Wrangler of Legends|Alternate Ranger|LLAR|Wrangler|LLAR:E|15"
+			],
+			"subclassSpells": [
+				"charm person",
+				"command",
+				"calm emotions",
+				"summon beast|tce",
+				"conjure animals",
+				"slow",
+				"charm monster|xge",
+				"dominate beast",
+				"awaken",
+				"hold monster"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Beast Master",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Some Rangers that develop intense bonds with nature have been known to attract the attention of guardian spirits known as Primal Beasts. Primal Beasts fight side by side with their partners, changing their shape to face the challenge at hand.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Beast Master Spells|Alternate Ranger|LLAR|Beast Master|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primal Companion|Alternate Ranger|LLAR|Beast Master|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Beast Master Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Beast Master feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Beast Master Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell beast bond|xge}, {@spell speak with animals}"
+						],
+						[
+							"5th",
+							"{@spell beast sense}, {@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell death ward}, {@spell freedom of movement}"
+						],
+						[
+							"17th",
+							"{@spell awaken}, {@spell commune with nature}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Companion",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Beast Master feature}",
+				"You have formed a bond with a Primal Beast. You choose the form it takes, selecting one of the stat blocks at the end of this class: {@creature Beast of the Cave|LLAR}, {@creature Beast of the Land|LLAR}, {@creature Beast of the Sea|LLAR}, or {@creature Beast of the Sky|LLAR}. These stat blocks use your proficiency bonus (PB) in several places.",
+				"The Primal Beast is friendly to you and your allies and obeys your commands. In combat, it acts on your turn. It can move and use its reaction on its own, but it can only take the Dodge action unless you use a bonus action to order it to take an action from its stat block, or another combat action. If you are incapacitated, your Primal Beast can act on its own.",
+				"If your Primal Beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st-level or higher to return it to life with its maximum hit points.",
+				"During a long rest, you can spend 1 hour performing a ritual that causes your Primal Beast to take on a new form, choosing a new stat block and appearance for it."
+			]
+		},
+		{
+			"name": "Exceptional Training",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/mammals/humanoid-wolf-dog-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Beast Master feature}",
+				"As a reaction, you and your Primal Beast can grant the other advantage on any saving throw they are forced to make, so long as you can see and are within 30 feet of each other.",
+				"Also, your Beast's attacks count as magical for the sake of overcoming resistance and immunity to non-magical attacks."
+			]
+		},
+		{
+			"name": "Bestial Fury",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/mammals/wolf-shadow-black.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Beast Master feature}",
+				"When you command your Beast to take the Attack action, it can make two natural weapon attacks as part of that action."
+			]
+		},
+		{
+			"name": "Primal Bond",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Beast Master feature}",
+				"The bond with your Primal Beast has reached its apex. When you cast a Ranger spell that targets yourself, your Beast also gains the benefits as long as it is within 30 feet of you."
+			]
+		},
+		{
+			"name": "Hunter",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Rangers are as varied as the lands that they hail from. Some use their knowledge of the wilderness to become guides and naturalists. Others use their skills to become trackers or traders. Some wander the countryside, while others stand as guardians of sacred forests. While they fulfill various roles, deep down inside every Ranger beats the heart of a Hunter.",
+				"成群结队的半兽人、卑鄙的巨魔、伟大而可怕的龙，或伟大的野兽，对真正的猎人来说都不重要。他们总能找到办法来战胜他们的猎物。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter Spells|Alternate Ranger|LLAR|Hunter|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Prey|Alternate Ranger|LLAR|Hunter|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Hunter Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Hunter feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Hunter Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell expeditious retreat}, {@spell snare|xge}"
+						],
+						[
+							"5th",
+							"{@spell cordon of arrows}, {@spell pass without trace}"
+						],
+						[
+							"9th",
+							"{@spell conjure barrage}, {@spell nondetection}"
+						],
+						[
+							"13th",
+							"{@spell freedom of movement}, {@spell locate creature}"
+						],
+						[
+							"17th",
+							"{@spell conjure volley}, {@spell swift quiver}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Hunter's Prey",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/magic/acid/dissolve-bone-skull.webp",
+			"subclassShortName": "Hunter",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Hunter feature}",
+				"You are ruthless in pursuing your chosen prey. You gain the features below, but once you use one of these features you cannot use another until the beginning of your next turn:",
+				{
+					"type": "entries",
+					"name": "Cripple",
+					"entries": [
+						"When you hit a Favored Foe with a weapon attack, you can force it to make a Dexterity saving throw against your Spell Save DC. On a failed save, its speed is reduced to 0 until the beginning of your next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flurry",
+					"entries": [
+						"When you hit your Favored Foe with a weapon attack, you can make an additional weapon attack with the same weapon against another creature within 5 feet of your Favored Foe and within the weapon's range."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Focus",
+					"entries": [
+						"When you hit your Favored Foe with a weapon attack and it has fewer then its maximum hit points, you can double your Favored Foe damage bonus against it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Defensive Tactics",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/equipment/shield/oval-wooden-clover-green-gold.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Hunter feature}",
+				"You have trained to defend yourself against your prey. You gain one of the features below of your choice:",
+				{
+					"type": "entries",
+					"name": "Counter",
+					"entries": [
+						"When a creature that is at least one size larger than you hits or misses you with an attack, you can use a reaction to make one weapon attack against it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Iron Will",
+					"entries": [
+						"When you are forced to make a saving throw to resist being {@condition charmed}, {@condition frightened}, and {@condition stunned}, you gain a bonus to your roll equal to one roll of your Favored Foe die."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nimble",
+					"entries": [
+						"Opportunity attacks against you are made at disadvantage, and if your Favored Foe makes an opportunity attack against you it misses unless they roll a critical hit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Flexible Hunter",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/equipment/neck/choker-simple-teeth.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Hunter feature}",
+				"At the end of a long rest you can do one of the following:",
+				{
+					"type": "list",
+					"items": [
+						"Replace your Fighting Style with another Fighting Style, choosing from those available to the Ranger class.",
+						"Replace your Defensive Tactics feature with another feature of your choice from Defensive Tactics."
+					]
+				}
+			]
+		},
+		{
+			"name": "Multiattack",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/death/skull-trio-badge-purple.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Hunter feature}",
+				"你已经掌握了专门的技术来挫败你的敌人。在11级时，你获得以下特征之一。",
+				{
+					"type": "entries",
+					"name": "Volley",
+					"entries": [
+						"As an action, you can make a ranged attack against your Favored Foe and any number of creatures within 10 feet of it, so long as the targets are also within the range of your weapon. You must roll a separate attack roll for each target, and you must have ammunition for each individual attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Whirlwind Attack",
+					"entries": [
+						"As an action, you make a melee attack against your Favored Foe and any number of other creatures within range. Make a separate attack roll for each target."
+					]
+				}
+			]
+		},
+		{
+			"name": "Superior Defense",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/equipment/shield/kite-wooden-oak-glow.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Hunter feature}",
+				"你已经掌握了从野性和凶恶的猎物手中保护自己的能力。在15级时，你获得以下特征之一。",
+				{
+					"type": "entries",
+					"name": "Evasion",
+					"entries": [
+						"When your Favored Foe subjects you to an effect that allows you to make a Dexterity saving throw to take half damage, such as you instead take no damage if you succeed on a saving throw, and only half damage if you fail."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When your Favored Foe hits you with an attack, you can use a reaction to halve the damage you take."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellbreaker",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Spellbreaker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Spellbreakers are a small but dedicated fraternity of Rangers that specialize in hunting mages who use their arcane power for evil. While most pursue the life of a Spellbreaker for noble reasons, there are some who seek to destroy anyone with the potential to use magic. Most Spellbreakers work in secrecy, only striking when success is a certainty. When one wrong move could end in disintegration, there is no room for error.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellbreaker Spells|Alternate Ranger|LLAR|Spellbreaker|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellsight|Alternate Ranger|LLAR|Spellbreaker|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Reflect Spell|Alternate Ranger|LLAR|Spellbreaker|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Spellbreaker Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Spellbreaker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Spellbreaker feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Spellbreaker Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell absorb elements|xge}, {@spell detect magic}"
+						],
+						[
+							"5th",
+							"{@spell blindness/deafness}, {@spell silence}"
+						],
+						[
+							"9th",
+							"{@spell counterspell}, {@spell dispel magic}"
+						],
+						[
+							"13th",
+							"{@spell arcane eye}, {@spell otiluke's resilient sphere}"
+						],
+						[
+							"17th",
+							"{@spell dispel evil and good}, {@spell wall of force}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellsight",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+			"subclassShortName": "Spellbreaker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Spellbreaker feature}",
+				"You have learned to detect the innate arcane potential of others. When you mark a creature as your Favored Foe you instantly learn its spellcasting ability (if it has one) and the level of the highest spell that it has the ability to cast.",
+				"If the creature is hidden from divination magic, such as a nondetection spell, it appears as if it cannot cast spells."
+			]
+		},
+		{
+			"name": "Reflect Spell",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Spellbreaker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Spellbreaker feature}",
+				"You can cast {@spell absorb elements|xge} at 1st-level, without expending a spell slot a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of this feature when you finish a long rest.",
+				"After you cast absorb elements, if your next melee weapon attack is against the creature whose spell you absorbed, you treat the absorb elements damage as its maximum amount."
+			]
+		},
+		{
+			"name": "Arcane Defense",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/defensive/shield-barrier-blue.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Spellbreaker",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Spellbreaker feature}",
+				"Whenever you are forced to make a saving throw to resist a spell or another magical effect, you gain a bonus to your roll equal to your Wisdom modifier (minimum of +1)."
+			]
+		},
+		{
+			"name": "Mage Breaker",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Spellbreaker",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Spellbreaker feature}",
+				"You are a hunter of mages. When you mark a spellcaster as your Favored Foe, you gain the following additional benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your weapon attacks against it deal force damage.",
+						"When you damage it, it has disadvantage on any saving throw it makes to maintain concentration on any spells.",
+						"When you hit it with a weapon attack, you can expend a spell slot to deal additional force damage equal to one roll of your Favored Foe bonus per level of the slot you expend."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mantle of the Master",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Spellbreaker",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Spellbreaker feature}",
+				"Your training as a Spellbreaker has reached its apex. You are resistant to all damage from spells and other magical effects."
+			]
+		},
+		{
+			"name": "Shadowbane",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Shadowbane",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Every culture tells stories of evil spirits and monsters that live just beyond the walls of civilization. Thanks to the quiet vigilance of dedicated Rangers, these terrible monsters remain nothing more than a story. These guardian Rangers take up the mantle of Shadowbane, vowing to protect the innocent from the things of the night. They seek out vampires, evil fey, spirits, werewolves, and other vile creatures and destroy them without hesitation.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shadowbane Spells|Alternate Ranger|LLAR|Shadowbane|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Slayer's Insight|Alternate Ranger|LLAR|Shadowbane|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Shadowbane Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Shadowbane",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Shadowbane feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Shadowbane Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell compelled duel}, {@spell protection from evil and good}"
+						],
+						[
+							"5th",
+							"{@spell see invisibility}, {@spell zone of truth}"
+						],
+						[
+							"9th",
+							"{@spell magic circle}, {@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell mordenkainen's faithful hound}"
+						],
+						[
+							"17th",
+							"{@spell dispel evil and good}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Slayer's Insight",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/perception/eye-tendrils-web-purple.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Shadowbane",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Shadowbane feature}",
+				"You have a keen eye for the weak points of foes. When you roll initiative, so long as you are not surprised, you can use your reaction to mark one creature that you can see as your Favored Foe.",
+				"Moreover, when you mark a creature as your Favored Foe you immediately learn if it has any damage immunities resistances, or vulnerabilities and what they are. If it is hidden from divination magic, such as by a nondetection spell you sense that the creature has no immunities, resistances, or vulnerabilities."
+			]
+		},
+		{
+			"name": "Iron Focus",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/commodities/metal/fragments-steel-barbed.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Shadowbane",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Shadowbane feature}",
+				"When your Favored Foe forces you to make a saving throw, you gain a bonus to your roll equal to your Favored Foe die."
+			]
+		},
+		{
+			"name": "Bane of Darkness",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/ranged/arrow-flying-ornate-gold.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Shadowbane",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Shadowbane feature}",
+				"Your hatred for evil empowers your weapons. Once per turn when you hit a creature with a weapon attack, you can deal additional radiant damage equal to your Favored Foe die."
+			]
+		},
+		{
+			"name": "Ruthless Counter",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/control/debuff-energy-snare-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Shadowbane",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Shadowbane feature}",
+				"If your Favored Foe forces you to make a saving throw, casts a spell, or attempts to teleport, you can use your reaction to make a single weapon attack against it using a weapon you are holding. On hit, you automatically succeed on the saving throw, or its spell or teleport automatically fails."
+			]
+		},
+		{
+			"name": "Gloom Stalker",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Gloom Stalkers are at home in the darkest places: deep under the earth, in gloomy alleyways, in primeval forests, and wherever else the light dims. Most folk enter such places with trepidation, but a Gloom Stalker ventures boldly into the darkness, seeking to ambush threats before they can reach the broader world. Such rangers are often found in the Underdark, but they will go any place where evil lurks in the shadows. The full subclass is found in Xanathar's Guide to Everything.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gloom Stalker Spells|Alternate Ranger|LLAR|Gloom Stalker|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dread Ambusher|Alternate Ranger|LLAR|Gloom Stalker|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Umbral Sight|Alternate Ranger|LLAR|Gloom Stalker|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Gloom Stalker Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Gloom Stalker Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell cause fear|xge}, {@spell disguise self}"
+						],
+						[
+							"5th",
+							"{@spell darkness}, {@spell rope trick}"
+						],
+						[
+							"9th",
+							"{@spell fear}, {@spell nondetection}"
+						],
+						[
+							"13th",
+							"{@spell greater invisibility}, {@spell phantasmal killer}"
+						],
+						[
+							"17th",
+							"{@spell mislead}, {@spell seeming}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dread Ambusher",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/unholy/projectile-spear-glow-pink.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"During the first turn you take in combat, your walking speed increases by 10 feet, which lasts until the end of that turn.",
+				"If you take the Attack action on that turn, you can make an additional weapon attack as part of that action. If it hits, the target takes bonus damage equal to one roll of your Favored Foe die. In addition, when you roll initiative and aren't surprised, you roll your Favored Foe die and add it to your initiative rolls."
+			]
+		},
+		{
+			"name": "Umbral Sight",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/perception/eye-winged-pink.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you gain darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet.",
+				"You are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
+			]
+		},
+		{
+			"name": "Iron Mind",
+			"source": "LLAR",
+			"foundryImg": "icons/equipment/head/helm-barbute-brass-steel.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"By 7th level, you have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice)."
+			]
+		},
+		{
+			"name": "Stalker's Flurry",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/ranged/daggers-thrown-salvo-green.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you learn to attack with such unexpected speed that you can turn a miss into another strike. Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of the same action."
+			]
+		},
+		{
+			"name": "Shadowy Dodge",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/unholy/projectile-fireball-agile-purple.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, you can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn't have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll."
+			]
+		},
+		{
+			"name": "Horizon Walker",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Defend your home from extraplanar incursions and threats! The full subclass is found in Xanathar's Guide to Everything.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Horizon Walker Spells|Alternate Ranger|LLAR|Horizon Walker|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Detect Portal|Alternate Ranger|LLAR|Horizon Walker|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Planar Warrior|Alternate Ranger|LLAR|Horizon Walker|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Horizon Walker Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Horizon Walker Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell alarm}, {@spell protection from evil and good}"
+						],
+						[
+							"5th",
+							"{@spell misty step}, {@spell rope trick}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell magic circle}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell banishing smite}, {@spell teleportation circle}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Detect Portal",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/environment/wilderness/portal.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you can detect the distance and direction of any planar portals within a number of miles equal to your level.",
+				"Once you successfully use this feature to locate a planar portal, you must finish a short or long rest before you can use it again. When you have no uses remaining, you can expend a spell slot of 1st-level or higher to use this feature again."
+			]
+		},
+		{
+			"name": "Planar Warrior",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/control/energy-stream-link-spiral-orange.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a bonus action, choose a creature you can see within 30 feet. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes additional force damage equal to two rolls of your Favored Foe die."
+			]
+		},
+		{
+			"name": "Ethereal Step",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/control/debuff-chains-ropes-purple.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, you learn to step through the Ethereal Plane. As a bonus action, you can cast the {@spell etherealness} spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.",
+				"Once you use this feature, you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Distant Strike",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/movement/portal-vortex-orange.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you gain the ability to pass between the planes in the blink of an eye. When you take the Attack action, you can teleport up to 10 feet before each attack to an unoccupied space you can see.",
+				"If you attack at least two different creatures with the action, you can make one additional attack with it against a third creature."
+			]
+		},
+		{
+			"name": "Spectral Defense",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack, you can use your reaction to give yourself resistance to all of that attack's damage on this turn."
+			]
+		},
+		{
+			"name": "Fey Wanderer",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Draw on the power of the Feywild to pursue and beguile foes! The full subclass is found in Tasha's Cauldron of Everything.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Strikes|Alternate Ranger|LLAR|Fey Wanderer|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fey Wanderer Spells|Alternate Ranger|LLAR|Fey Wanderer|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Otherworldly Glamour|Alternate Ranger|LLAR|Fey Wanderer|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Fey Wanderer Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Fey Wanderer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell cause fear|xge}, {@spell charm person}"
+						],
+						[
+							"5th",
+							"{@spell enthrall}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell dispel magic}, {@spell fear}"
+						],
+						[
+							"13th",
+							"{@spell charm monster|xge}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell geas}, {@spell mislead}"
+						]
+					]
+				},
+				"你还拥有一个来自精灵盟友或精灵力量之地的超自然祝福。从 \"仙界礼物 \"表中选择你的祝福，或随机确定它。",
+				{
+					"type": "table",
+					"caption": "Feywild Gifts",
+					"colLabels": [
+						"{@dice d6}",
+						"Gift"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"虚幻的蝴蝶在你身边飞来飞去，而你却要进行短期或长期的休息。"
+						],
+						[
+							"2",
+							"每当黎明时分，新鲜的季节性花朵就会从你的头发上萌发出来。"
+						],
+						[
+							"3",
+							"你隐约闻到肉桂、薰衣草、肉豆蔻或另一种令人舒适的草药或香料。"
+						],
+						[
+							"4",
+							"你的影子在没有人直视的情况下跳舞。"
+						],
+						[
+							"5",
+							"犄角或鹿角从你的头上长出。"
+						],
+						[
+							"6",
+							"你的皮肤和头发在每个黎明都会改变颜色，以配合季节的变化。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dreadful Strikes",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/magical/humanoid-silhouette-dashing-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Once per turn when you hit a creature with a weapon attack, you can deal additional psychic damage to the target equal to one roll of your Favored Foe die.",
+				"Moreover, when you mark a creature as your Favored Foe, you can choose for the bonus damage to by psychic damage."
+			]
+		},
+		{
+			"name": "Otherworldly Glamour",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/nature/elemental-plant-humanoid.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).",
+				"In addition, you gain proficiency in one of the following skills of your choice: Deception, Performance, or Persuasion."
+			]
+		},
+		{
+			"name": "Beguiling Twist",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"The magic of the Feywild guards your mind. You have advantage on saving throws against being charmed or frightened.",
+				"In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw against being charmed or frightened, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. If the save fails, the target is charmed or frightened by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save."
+			]
+		},
+		{
+			"name": "Fey Reinforcements",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"The royal courts of the Feywild have blessed you with the assistance of fey beings: you know {@spell summon fey}. It doesn't count against the number of ranger spells you know, and you can cast it without a material component. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
+				"Whenever you start casting the spell, you can modify it so that it doesn't require concentration. If you do so, the spell's duration becomes 1 minute for that casting."
+			]
+		},
+		{
+			"name": "Misty Wanderer",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/environment/wilderness/portal.webp",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell misty step} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"In addition, whenever you cast misty step, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
+			]
+		},
+		{
+			"name": "Swarmkeeper",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"感受到与周围环境的深刻联系，一些游侠通过他们与世界的神奇联系，与一群自然之灵结合。蜂群在战斗中成为一种强大的力量，同时也是游侠的好伙伴。有些蜂群守护者是被遗弃者或隐士，他们只与自己和随行的蜂群待在一起，而不去处理其他人的不愉快。其他的蜂群守护者则喜欢建立充满活力的社区，为所有他们认为是其蜂群一部分的人的共同利益而工作。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gathered Swarm|Alternate Ranger|LLAR|Swarmkeeper|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swarmkeeper Spells|Alternate Ranger|LLAR|Swarmkeeper|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Swarmkeeper Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Swarmkeeper feature}",
+				"如果你还不知道，你可以学习（%0%）的咒语。当你施展它时，手会变成你蜂拥而至的自然精灵的形状。",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Swarmkeeper Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell entangle}, {@spell faerie fire}"
+						],
+						[
+							"5th",
+							"{@spell spider climb}, {@spell web}"
+						],
+						[
+							"9th",
+							"{@spell fly}, {@spell gaseous form}"
+						],
+						[
+							"13th",
+							"{@spell arcane eye}, {@spell giant insect}"
+						],
+						[
+							"17th",
+							"{@spell bigby's hand}, {@spell insect plague}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Gathered Swarm",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/birds/corvid-call-sound-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Once per turn, after you hit a creature with a weapon attack, your swarm can assist you in one of the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"It takes piercing damage equal to your Favored Foe die.",
+						"It must succeed on a Strength saving throw against your Spell Save DC or be moved up to 15 feet horizontally.",
+						"You move 5 feet horizontally in a direction of your choice."
+					]
+				}
+			]
+		},
+		{
+			"name": "Writhing Tide",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/abilities/wing-batlike-white-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 10 feet and can hover. This effect lasts for 1 minute or until you are incapacitated.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Mighty Swarm",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/creatures/birds/corvid-flying-wings-purple.webp",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Your Gathered Swarm grows mightier in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"If a creature fails its saving throw against being moved by your Gathered Swarm, you can also knock it prone.",
+						"When you are moved by your Gathered Swarm, you gain the benefits of half cover until the start of your next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Swarming Dispersal",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/birds/birds-flock-fly-yellow.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Drakewarden",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Your connection to the natural world takes the form of a draconic spirit, which can manifest in physical form as a drake. As your powers grow, your drake grows as well, blossoming from a small four-legged companion to a majestic winged creature large and strong enough for you to ride. Along the way, you gain an increasing share of the awe-inspiring power of dragons.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drake Companion|Alternate Ranger|LLAR|Drakewarden|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drakewarden Spells|Alternate Ranger|LLAR|Drakewarden|LLAR|3"
+				}
+			]
+		},
+		{
+			"name": "Drakewarden Spells",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Drakewarden feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Drakewarden Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell absorb elements|xge}, {@spell command}"
+						],
+						[
+							"5th",
+							"{@spell dragon's breath|xge}, {@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell elemental weapon}, {@spell fear}"
+						],
+						[
+							"13th",
+							"{@spell dominate beast}, {@spell elemental bane|xge}"
+						],
+						[
+							"17th",
+							"{@spell awaken}, {@spell dominate person}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Drake Companion",
+			"source": "LLAR",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/reptiles/serpent-horned-green.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.",
+				"The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying Drake Companion stat block, which uses your proficiency bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
+				"In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the drake can take any action of its choice, not just Dodge.",
+				"The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.",
+				"Once you summon the drake, you can't do so again until you finish a long rest, unless you expend a spell slot of 1st level or higher to summon it."
+			]
+		},
+		{
+			"name": "Bond of Fang and Scale",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/commodities/metal/chain-steel.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Drakewarden feature}",
+				"The bond you share with your drake intensifies, protecting you and stoking the drake's fury. When you summon your drake, it grows wings on its back and gains a flying speed equal to its walking speed.",
+				"In addition, while your drake is summoned, you and the drake gain the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Drake Mount",
+							"entries": [
+								"The drake grows to Medium size. Reflecting your special bond, you can use the drake as a mount if your size is Medium or smaller. While you are riding your drake, it can't use the flying speed of this feature."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Magic Fang",
+							"entries": [
+								"The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for the drake's Draconic Essence."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Resistance",
+							"entries": [
+								"You gain resistance to the damage type chosen for the drake's Draconic Essence."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Drake's Breath",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/abilities/dragon-ice-breath-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Drakewarden feature}",
+				"As an action, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage (your choice doesn't have to match your drake's Draconic Essence). Each creature in the cone must make a Dexterity saving throw against your spell save DC, taking {@damage 8d6} damage on a failed save, or half as much damage on a successful one.",
+				"This damage increases to {@dice 10d6} when you reach 15th level in this class.",
+				"Once you use this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use it again."
+			]
+		},
+		{
+			"name": "Perfected Bond",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/commodities/metal/mail-chain-steel.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Drakewarden feature}",
+				"Your bond to your drake reaches the pinnacle of its power. While your drake is summoned, you and the drake gain the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Empowered Bite",
+							"entries": [
+								"The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for its Draconic Essence (for a total of {@damage 2d6} extra damage)."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Large Drake",
+							"entries": [
+								"The drake grows to Large size. When you ride your drake, it is no longer prohibited from using the flying speed of Bond of Fang and Scale."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Reflexive Resistance",
+							"entries": [
+								"When either you or the drake takes damage while you're within 30 feet of each other, you can use your reaction to give yourself or the drake resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bounty Hunter",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"赏金猎人保护人类免受其害。他们接受过在城市和城镇中狩猎的训练，可以在任何城镇的黑暗小巷和地下追踪他们的猎物。接受过使用各种武术技巧的训练，这些游骑兵可以自信地对抗和制服任何危险的人形生物。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ear to the Ground|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Martial Exploits|Alternate Ranger|LLAR|Bounty Hunter|LLAR:E|3"
+				}
+			]
+		},
+		{
+			"name": "Ear to the Ground",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/commodities/biological/ear-grey-brown.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Bounty Hunter feature}",
+				"从第三级开始，一旦你在一个定居点、城市或城镇中度过了一个漫长的休息时间，你在收集联系人或派系的信息以及在该定居点的地下世界中进行的任何能力检查中都有优势。",
+				"You have also learned the language of the criminal world. You can identify, read, and communicate in Thieves' Cant."
+			]
+		},
+		{
+			"name": "Martial Exploits",
+			"source": "LLAR:E",
+			"foundryImg": "icons/skills/melee/weapons-crossed-daggers-orange.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Bounty Hunter feature}",
+				"你已经研究了各种武术技巧，以更好地对付人形敌人。在3级时，你获得以下特征。",
+				{
+					"type": "table",
+					"caption": "Bounty Hunter Exploits",
+					"colLabels": [
+						"Ranger Level",
+						"Exploits Known",
+						"Exploit Die",
+						"Exploit Dice",
+						"High Degree"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"3rd",
+							"2",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"4th",
+							"2",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"5th",
+							"3",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"6th",
+							"3",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"7th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"8th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"9th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"10th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"11th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"12th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"13th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"141th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"15th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"16th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"17th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"18th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"19th",
+							"7",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"20th",
+							"7",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exploits",
+					"entries": [
+						"You learn two {@filter Exploits|optionalfeatures|feature type=ll:1de;ll:me=u~u~sand} of your choice from those available to the Alternate Fighter. You can only use one Exploit per ability check, attack, or saving throw. When you gain a ranger level, you can replace one of your Exploits with another of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exploit Dice",
+					"entries": [
+						"The Bounty Hunter Exploits table shows how many Exploit Dice you have to use Exploits. To use an Exploit, you expend an Exploit Die, and you regain all your expended Exploit Dice when you finish a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High Degree",
+					"entries": [
+						"Your Ranger level limits the technicality of the Exploits you are able to perform. This limit is reflected in the High Degree column of the Bounty Hunter Exploits table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"If an Exploit requires a creature to make a saving throw, the saving throw DC is calculated as follows:",
+						{
+							"type": "abilityDc",
+							"name": "Exploit",
+							"attributes": [
+								"str",
+								"dex"
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Multiclassing and Exploits",
+					"entries": [
+						"Your martial skill depends partly on your combined levels in classes that learn Exploits, and partly on your individual levels in each class. If your group uses the optional rule for multiclassing and you learn Exploits from more than one class, you use the following rules: https://www.gmbinder.com/share/-NGUL51kfZCPlESxL1wq"
+					]
+				}
+			]
+		},
+		{
+			"name": "Cunning Technique",
+			"source": "LLAR:E",
+			"foundryImg": "icons/skills/melee/sword-twirl-orange.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Bounty Hunter feature}",
+				"Your martial skills are especially potent when used against your chosen foe. Once per turn, when you force your Favored Foe to make a saving throw to resist the effects of an Exploit, you can force it to make its saving throw with disadvantage."
+			]
+		},
+		{
+			"name": "Improved Exploits (d6)",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Bounty Hunter feature}",
+				"Your skills improve. Upon reaching 7th level, you gain one additional Exploit Die, and your Exploit Dice become {@dice d6}s. You can also learn {@filter 2nd degree Exploits|optionalfeatures|feature type=ll:2de;ll:me=u~u~sand}."
+			]
+		},
+		{
+			"name": "Unwavering",
+			"source": "LLAR:E",
+			"foundryImg": "icons/creatures/claws/claw-talons-yellow-red.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Bounty Hunter feature}",
+				"你是一个使敌人丧失能力的大师。从11级开始，当你喜欢的敌人用近身攻击打不中你时，你可以强迫它做一个灵巧的蓄力动作作为反应。如果拯救失败，它就会倒下（%0%），如果你有一只自由的手，你可以选择自动抓取该生物。"
+			]
+		},
+		{
+			"name": "Improved Exploits (d8)",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Bounty Hunter feature}",
+				"At 15th level, your skills increase further. You gain another Exploit Die (for a total of four), and your Exploit Dice become {@dice d8}s. You can also learn {@filter 3rd degree Exploits|optionalfeatures|feature type=ll:3de;ll:me=u~u~sand}."
+			]
+		},
+		{
+			"name": "Most Dangerous Game",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/environment/people/commoner.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Bounty Hunter feature}",
+				"你的超自然的直觉使你能够预测你的敌人的攻击。从15级开始，任何时候你从你所偏爱的敌人那里受到的伤害，都会减少相当于你的智慧修饰值的数量（最少1点命中率）。"
+			]
+		},
+		{
+			"name": "Buccaneer",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Buccaneer",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Buccaneer feature}",
+				"Combining their survival skills, an affinity for nature magic, and passion for the high seas, Buccaneers are Rangers who feel more at home on the water than on solid ground. Serving as sailors, pirates, marines, or privateers, they are often one of the most valuable crew members on board their vessels. How did you come to sail the seas? Were you pressed into the service of a pirate captain, or have you sworn to kill a certain sea monster?",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Buccaneer Spells|Alternate Ranger|LLAR|Buccaneer|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mariner's Eye|Alternate Ranger|LLAR|Buccaneer|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sea Legs|Alternate Ranger|LLAR|Buccaneer|LLAR:E|3"
+				}
+			]
+		},
+		{
+			"name": "Buccaneer Spells",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Buccaneer",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Buccaneer feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Buccaneer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell compelled duel}, {@spell fog cloud}"
+						],
+						[
+							"5th",
+							"{@spell gust of wind}, {@spell locate object}"
+						],
+						[
+							"9th",
+							"{@spell call lightning|xge}, {@spell water breathing}"
+						],
+						[
+							"13th",
+							"{@spell control water}, {@spell watery sphere|xge}"
+						],
+						[
+							"17th",
+							"{@spell control winds|xge}, {@spell maelstrom|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mariner's Eye",
+			"source": "LLAR:E",
+			"foundryImg": "icons/tools/navigation/spyglass-telescope-brass.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Buccaneer",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Buccaneer feature}",
+				"Your sight has become especially keen. Whenever you make a Wisdom ({@skill Perception}) check that relies on your sense of sight, you can treat a roll of 7 or lower on the d20 as an 8.",
+				"Also, when you make a weapon attack against a Favored Foe that is swimming, you have advantage on your attack roll."
+			]
+		},
+		{
+			"name": "Sea Legs",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/sundries/flags/banner-flag-pirate-blue.webp",
+			"subclassShortName": "Buccaneer",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Buccaneer feature}",
+				"The time you have spent at sea has granted you abilities that land-locked Rangers lack. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain the Mariner Fighting Style. If you already know this Fighting Style you learn another Fighting Style of your choice from those available to the Ranger class.",
+						"You can hold your breath underwater for a number of minutes equal to 10 + your Constitution modifier.",
+						"You have advantage on saving throws to resist being knocked {@condition prone} or moved against your will."
+					]
+				}
+			]
+		},
+		{
+			"name": "Deep Sea Diver",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/tools/nautical/diving-helmet.webp",
+			"subclassShortName": "Buccaneer",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Buccaneer feature}",
+				"You have to spend significant time underwater. You can cast {@spell water breathing}, targeting only yourself, without expending a spell slot. Once you cast water breathing in this way you must finish a long rest before you can do so again.",
+				"Moreover, whenever you cast water breathing, the targets of the spell gain the following additional benefits:",
+				{
+					"type": "list",
+					"items": [
+						"They gain resistance to cold damage.",
+						"They gain a swimming speed equal to their walking speed. If the target already has a swimming speed, it can take the Dash action as a bonus action while it is swimming.",
+						"They gain darkvision out to a 60-foot radius. If the target already has darkvision, its radius increases by 30 feet."
+					]
+				}
+			]
+		},
+		{
+			"name": "Wrath of the Waves",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/water/wave-water-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Buccaneer",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Buccaneer feature}",
+				"You carry the magic of the high seas whether you are on sea or land. Once per turn when you hit a creature with a weapon attack, you can imbue your strike with watery magic. When you do, the creature takes additional cold damage equal to one roll of your Favored Foe die, and it must succeed on a Strength saving throw against your Spell Save DC or be knocked back from you 10 feet in a straight line.",
+				"Any creature that is at least one size larger than you has advantage on its Strength saving throw."
+			]
+		},
+		{
+			"name": "Watery Resilience",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/water/elemental-water.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Buccaneer",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Buccaneer feature}",
+				"When you are hit by an attack, you can use your reaction to temporarily take on a liquid watery form, gaining resistance to all damage from the triggering attack. As part of the same reaction, you can immediately move up to your full movement speed without provoking opportunity attacks.",
+				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest. If you have no uses remaining, you can expend a spell slot of 1st-level or higher to use this reaction on additional time."
+			]
+		},
+		{
+			"name": "Druidic Guardian",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Druidic Guardian",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Druidic Guardian feature}",
+				"While most Rangers stand with one foot in the wild and one in the civilized world, some side firmly with the natural world. When cities and settlements encroach on ancient groves and wild forests, the Rangers known as Druidic Guardians stand as defenders of the wild. Drawing upon primeval magic, these warriors use the power of nature to defend their homes.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Druidic Guardian Spells|Alternate Ranger|LLAR|Druidic Guardian|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Limited Wild Shape|Alternate Ranger|LLAR|Druidic Guardian|LLAR:E|3"
+				}
+			]
+		},
+		{
+			"name": "Druidic Guardian Spells",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Druidic Guardian",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Druidic Guardian feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Druidic Guardian Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell ensnaring strike}, {@spell entangle}"
+						],
+						[
+							"5th",
+							"{@spell alter self}, {@spell spike growth}"
+						],
+						[
+							"9th",
+							"{@spell erupting earth}, {@spell plant growth}"
+						],
+						[
+							"13th",
+							"{@spell grasping vine}, {@spell guardian of nature|xge}"
+						],
+						[
+							"17th",
+							"{@spell tree stride}, {@spell wrath of nature|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Limited Wild Shape",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/mammals/deer-antlers-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Druidic Guardian",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Druidic Guardian feature}",
+				"You can draw on primal nature magic to take the shape of beasts, much like a {@class Druid} does. You gain the ability to Wild Shape. As a bonus action on your turn, you can assume the form of any beast that you have physically touched.",
+				"Your Ranger level determines the maximum CR of beasts that you can transform into, as shown in the table below. You must follow all the other rules for Wild Shape as detailed in the Wild Shape feature description for the Druid class.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Ranger Level",
+						"Max CR",
+						"Limitations",
+						"Example"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-7",
+						"col-5"
+					],
+					"rows": [
+						[
+							"3rd",
+							"0",
+							"No Flying or Swimming Speed",
+							"Deer"
+						],
+						[
+							"7th",
+							"1/4",
+							"No Flying Speed",
+							"Octopus"
+						],
+						[
+							"11th",
+							"1/2",
+							"\u2014",
+							"Hawk"
+						],
+						[
+							"15th",
+							"1",
+							"\u2014",
+							"Giant Eagle"
+						]
+					]
+				},
+				"You can stay in Wild Shape for up to one hour, at which point you revert to your normal form. You can revert to your normal form earlier if you use a bonus action to do so, or if you fall unconscious, you drop to 0 hit points, or you die.",
+				"Once you use your Wild Shape you must complete a short or long rest before you can use it again, unless you expend a spell slot of 1st-level or higher to use Wild Shape again."
+			]
+		},
+		{
+			"name": "Wild Bound",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/nature/leaf-juggle-humanoid-green.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Druidic Guardian",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Druidic Guardian feature}",
+				"The Druidic magic you wield has permeated body and spirit. You learn Druidic, the secret language of the Druids. You can speak the language and use it to leave hidden messages. While speaking Druidic, you gain the benefits of {@spell speak with animals}.",
+				"Also, your attacks in your Wild Shape beast forms count as magical for overcoming any resistances or immunities to non-magical attacks and damage."
+			]
+		},
+		{
+			"name": "Empowered Shapes",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/nature/leaf-hand-green.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Druidic Guardian",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Druidic Guardian feature}",
+				"You have learned to empower your Wild Shape with the Druidic magic you wield. When you use Wild Shape, you can expend a spell slot of 1st-level or higher to transform into a beast with a CR equal to or lower than the level of the spell slot you expended to transform.",
+				"Once you use this feature you must finish a short or long rest before you can use it to empower your Wild Shape again."
+			]
+		},
+		{
+			"name": "Thousand Forms",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/mammals/elk-moose-marked-green.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Druidic Guardian",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Druidic Guardian feature}",
+				"You are so in tune with your abilities that you can change your form in subtle ways at will. You can cast {@spell alter self} at will, targeting only yourself, without expending a spell slot."
+			]
+		},
+		{
+			"name": "Dunestrider",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Dunestrider",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Dunestrider feature}",
+				"While all Rangers have the skills necessary to live out in the wilderness, those known as Dunestriders are the true masters of survival. These rugged wanderers have adapted to live in the harshest lands imaginable; arid deserts, frozen tundra, great alpine heights, and magical wastelands. These survivalists combine a talent for illusion magic and protective gear to survive in all but the most extreme hostile conditions.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dunestrider Spells|Alternate Ranger|LLAR|Dunestrider|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wilderness Adept|Alternate Ranger|LLAR|Dunestrider|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wasteland Weaver|Alternate Ranger|LLAR|Dunestrider|LLAR:E|3"
+				}
+			]
+		},
+		{
+			"name": "Dunestrider Spells",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Dunestrider",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Dunestrider feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Dunestrider Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell absorb elements|xge}, {@spell silent image}"
+						],
+						[
+							"5th",
+							"{@spell invisibility}, {@spell mirror image}"
+						],
+						[
+							"9th",
+							"{@spell wall of sand|xge}, {@spell major image}"
+						],
+						[
+							"13th",
+							"{@spell greater invisibility}, {@spell hallucinatory terrain}"
+						],
+						[
+							"17th",
+							"{@spell commune with nature}, {@spell mislead}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Wilderness Adept",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/environment/wilderness/camp-improvised.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Dunestrider",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Dunestrider feature}",
+				"You are able to survive the most inhospitable environments. You learn one of the following Knacks of your choice: {@optfeature Alpine Adept|LLAR}, {@optfeature Arctic Adept|LLAR:E}, {@optfeature Desert Adept|LLAR:E}, or {@optfeature Jungle Adept|LLAR:E}. You learn another Knack from this list at 7th, 11th, and 15th levels.",
+				"The Knacks you learn through this feature do not count against your total number of Knacks Known. Also, when you gain a Ranger level, you can only replace a Knack you learned through this feature with another Knack from the list above."
+			]
+		},
+		{
+			"name": "Wasteland Weaver",
+			"source": "LLAR:E",
+			"foundryImg": "icons/skills/trades/textiles-stitching-leather-brown.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Dunestrider",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Dunestrider feature}",
+				"You have mastered an ancient pattern of weaving and enhancing clothing, that when worn, enables a near-supernatural level of survivability. You gain proficiency with {@item weaver's tools|phb}, and you can add double your proficiency bonus to any check you make that uses your weaver's tools.",
+				"At the end of each long rest, you can use weaver's tools to enhance one set of clothing or cloak. While a creature wears this enhanced garment it gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"It gains a bonus to Dexterity ({@skill Stealth}) checks to hide in wasteland and wilderness equal to your Favored Foe die.",
+						"It requires one-quarter as much water in order to survive.",
+						"It has advantage on saving throws to resist the effects of harsh environments and subsequent exhaustion levels."
+					]
+				},
+				"During each long rest, you must spend time maintaining any garments you have enhanced or they lose any beneficial properties. You can maintain a total number of enhanced garments equal to your Wisdom modifier (minimum of 1).",
+				{
+					"type": "inset",
+					"name": "Elemental Wastelands",
+					"entries": [
+						"While most Dunestriders hail from the deserts of the material plane, it is not unheard of for them to come from the chaotic inner planes. Some high-level Dunestriders call the harsh elemental planes of air, earth, fire, and water home."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rugged Resilience",
+			"source": "LLAR:E",
+			"foundryImg": "icons/magic/nature/stealth-hide-eyes-green.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Dunestrider",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Dunestrider feature}",
+				"You imbue the mystical weave of your enhanced garments with illusion magic. A creature wearing one of your enhanced garments can use a bonus action to cast {@spell invisibility} on itself.",
+				"It can do so three times, but when the last use is expended, the garment loses any beneficial properties. Your enhanced garments regain all uses of this feature when you spend time during a long rest maintaining your enhanced garments."
+			]
+		},
+		{
+			"name": "Illusory Strikes",
+			"source": "LLAR:E",
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Dunestrider",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Dunestrider feature}",
+				"You can use potent illusion magic to enhance your combat abilities. When you take the Attack action on your turn, you can use a bonus action to create an Illusory Duplicate of yourself in an unoccupied space you can see within 30 feet.",
+				"Your Illusory Duplicate instantly makes one weapon attack with an illusory version of your weapon against a target of your choice within its range. On hit, it deals force damage in place of your weapon's normal damage and disappears."
+			]
+		},
+		{
+			"name": "Illusory Transposition",
+			"source": "LLAR:E",
+			"foundryImg": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Dunestrider",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Dunestrider feature}",
+				"Your skill with illusions has greatly increased. You can use a bonus action to create your Illusory Duplicate even when you do not take the Attack action. Your Illusory Duplicate must still make a weapon attack when it appears.",
+				"Immediately after your Illusory Duplicate makes an attack, you can teleport, instantly switching places with your Illusory Duplicate, without provoking opportunity attacks."
+			]
+		},
+		{
+			"name": "Grim Warden",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Grim Warden",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Grim Warden feature}",
+				"有时需要一个怪物来摧毁一个怪物。接受 \"狰狞守护者 \"衣钵的游骑兵要经历一种黑暗的炼金术仪式，称为 \"守护者之礼\"，以增强他们的身体能力。他们牺牲了任何正常生活的机会，将自己的血液与怪物的血液混合在一起，以获得黑暗的、非自然的力量来摧毁他们的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grim Warden Spells|Alternate Ranger|LLAR|Grim Warden|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Warden's Rite|Alternate Ranger|LLAR|Grim Warden|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Crimson Brand|Alternate Ranger|LLAR|Grim Warden|LLAR:E|3"
+				}
+			]
+		},
+		{
+			"name": "Grim Warden Spells",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Grim Warden",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Grim Warden feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Grim Warden Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell bane}, {@spell hex}"
+						],
+						[
+							"5th",
+							"{@spell hold person}, {@spell shadow blade|xge}"
+						],
+						[
+							"9th",
+							"{@spell bestow curse}, {@spell vampiric touch}"
+						],
+						[
+							"13th",
+							"{@spell blight}, {@spell shadow of moil|xge}"
+						],
+						[
+							"17th",
+							"{@spell enervation|xge}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Warden's Rite",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/consumables/potions/bottle-corked-red.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Grim Warden",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Grim Warden feature}",
+				"在3级时，你接受了典狱长的仪式，这是一个炼金术仪式，使你的血液充满了邪恶的魔法。你获得对（%0%）和（%1%）技能的熟练度。",
+				"In addition, whenever you make an Intelligence ({@skill Religion}) check related to fiends, undead creatures, or necromancy magic you gain a bonus to your roll equal to one roll of your Favored Foe die."
+			]
+		},
+		{
+			"name": "Crimson Brand",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/magic/death/skull-weapon-staff-glow-pink.webp",
+			"subclassShortName": "Grim Warden",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Grim Warden feature}",
+				"The sinister magic within your blood allows you to enhance your strikes with your own life force. When you hit a Favored Foe with a weapon attack, you can expend a Hit Die to cause all the damage of your attack to become necrotic, and to deal bonus necrotic damage equal to a roll of your Hit Die.",
+				"Any necrotic damage dealt by this feature ignores resistance to necrotic damage, and can treat immunity to necrotic damage as resistance.",
+				"Lastly, when you use Crimson Brand against a fiend or undead creature, you can maximize the necrotic damage roll of your Hit Die in place of rolling."
+			]
+		},
+		{
+			"name": "Dark Augmentation",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/tools/laboratory/mortar-liquid-pink.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Grim Warden",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Grim Warden feature}",
+				"Sinister magic enhances your physical capability. Whenever you make a Strength, Dexterity, or Constitution ability check, you gain a bonus to your roll equal to one roll of your Favored Foe die.",
+				"此外，你的移动速度增加5英尺。"
+			]
+		},
+		{
+			"name": "Greater Crimson Brand",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/weapons/daggers/dagger-glowing-white.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Grim Warden",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Grim Warden feature}",
+				"Once per turn, when you hit a creature with a melee weapon attack, you can deal an additional {@dice 1d10} necrotic damage to it."
+			]
+		},
+		{
+			"name": "Sanguine Mastery",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+			"subclassShortName": "Grim Warden",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Grim Warden feature}",
+				"The magic of your Warden's Rite manifests its full potential. You have advantage on saving throws to resist the {@condition frightened} condition, and you are always under the effects of {@spell protection from good and evil} while you are conscious."
+			]
+		},
+		{
+			"name": "Nomad",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Nomad",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Nomad feature}",
+				"Whether by birth, happenstance, or a ritual, the mind of every Nomad has been connected to the mystical web of knowledge known as the Noosphere. This psionic link allows Nomads to access knowledge from far-off places and distant lives. These strange wanderers spend their lives collecting hidden lore to add to this web of information that connects every Nomad.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nomad Spells|Alternate Ranger|LLAR|Nomad|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expunging Strikes|Alternate Ranger|LLAR|Nomad|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mystic Knowledge|Alternate Ranger|LLAR|Nomad|LLAR:E|3"
+				},
+				{
+					"type": "inset",
+					"name": "Optional Rule: Psionic Spellcasting",
+					"entries": [
+						"For mechanics to match the fantasy of a Ranger who wields the psionic power of the Noosphere, consider replacing all Wisdom-based Ranger class and Nomad Archetype features with Intelligence."
+					]
+				}
+			]
+		},
+		{
+			"name": "Nomad Spells",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Nomad",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Nomad feature}",
+				"You always have the spells from the table listed below prepared once you reach certain Ranger levels. See the Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Nomad Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell comprehend languages}, {@spell disguise self}"
+						],
+						[
+							"5th",
+							"{@spell detect thoughts}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell clairvoyance}, {@spell tongues}"
+						],
+						[
+							"13th",
+							"{@spell dimension door}, {@spell divination}"
+						],
+						[
+							"17th",
+							"{@spell commune}, {@spell seeming}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Expunging Strikes",
+			"source": "LLAR:E",
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-watch.webp",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Nomad",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Nomad feature}",
+				"You can imbue your strikes with psionic energy to disrupt your foe's memory. Once per turn when you hit a Favored Foe with a weapon attack, you can force it to make an Intelligence saving throw against your Spell Save DC. On a failed save, all damage dealt by your attack becomes psychic damage, and the creature cannot see, hear, smell, or sense you in any way until the start of your next turn."
+			]
+		},
+		{
+			"name": "Mystic Knowledge",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/magical/humanoid-silhouette-aliens-green.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Nomad",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Nomad feature}",
+				"You can use your connection to the Noosphere to draw knowledge from Nomads past and present. When you finish a long rest, you gain proficiency in one skill or tool, or learn to speak, read, and write one language of your choice. You retain that proficiency or language until you finish a long rest.",
+				"When you reach 11th level, you gain two proficiencies or languages from this feature at the end of a long rest."
+			]
+		},
+		{
+			"name": "Nomadic Step",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/environment/wilderness/terrain-river-road-gray.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Nomad",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Nomad feature}",
+				"You can merge your consciousness with the Noosphere to avoid harm. As a reaction when you are hit by an attack, you can disappear into the Noosphere, causing the attack to miss. You then instantly reappear in an unoccupied space that you occupied at some point since the start of your previous turn.",
+				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest. When you have no uses remaining, you can expend a spell slot of 1st-level or higher to use this reaction one additional time."
+			]
+		},
+		{
+			"name": "Strange Movement",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Nomad",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Nomad feature}",
+				"As an action, you can expend your remaining movement to instead teleport a number of feet equal to your remaining movement, appearing in an unoccupied space you can see."
+			]
+		},
+		{
+			"name": "Mystical Burst",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/lightning/orb-ball-purple.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Nomad",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Nomad feature}",
+				"When you travel through the Noosphere you can assault your foes with the residual psionic power. When you teleport with a Nomad Spell or Nomad feature, you can force creatures of your choice within 10 feet of the point you appear to make an Intelligence saving throw against your Spell Save DC. They take psychic damage equal to one roll of your Favored Foe die on a failed save, and half as much on a successful one."
+			]
+		},
+		{
+			"name": "Stargazer",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Stargazer",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"Mortals have always looked to the stars to tell stories of the past, omens for the present, and some believe that by observing motions of the heavenly bodies one can even predict the fates of others. Stargazers spend their lives studying stars and constellations, and learn to draw on their radiant power to vanquish their foes.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Celestial Guidance|Alternate Ranger|LLAR|Stargazer|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Stargazer Spells|Alternate Ranger|LLAR|Stargazer|LLAR:E|3"
+				}
+			]
+		},
+		{
+			"name": "Celestial Guidance",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/skills/trades/academics-astronomy-navigation-blue.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Stargazer",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Stargazer feature}",
+				"The great constellations of the night sky guide your life. You gain proficiency with {@item navigator's tools|phb}, and you cannot become lost, even by magical means, so long as you can see the stars or the night sky.",
+				"Also, each time you finish a long rest, you can attune yourself to one of the Constellations from the table below. While attuned, you have both the cantrip and 1st-level spell that correspond to that Constellation prepared. Both become Ranger spells for you, but they don't count against the total number of Ranger spells that you can prepare each day.",
+				"You can cast your Constellation spell at 1st-level without expending a spell slot or material components a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.",
+				{
+					"type": "table",
+					"caption": "Constellation Spells",
+					"colLabels": [
+						"Constellation",
+						"Cantrip",
+						"1st-level Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5 text-center",
+						"col-5 text-center"
+					],
+					"rows": [
+						[
+							"加法器",
+							"{@spell vicious mockery}",
+							"{@spell inflict wounds}"
+						],
+						[
+							"Eagle",
+							"{@spell gust|xge}",
+							"{@spell zephyr strike|xge}"
+						],
+						[
+							"大象",
+							"{@spell guidance}",
+							"{@spell bless}"
+						],
+						[
+							"Hare",
+							"{@spell minor illusion}",
+							"{@spell longstrider}"
+						],
+						[
+							"Stag",
+							"{@spell shillelagh}",
+							"{@spell compelled duel}"
+						],
+						[
+							"Turtle",
+							"{@spell resistance}",
+							"{@spell shield}"
+						],
+						[
+							"Wolf",
+							"{@spell primal savagery|xge}",
+							"{@spell guiding bolt}"
+						]
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Many Worlds, Many Constellations",
+					"entries": [
+						"The Constellations included in this Archetype are generic animals that can be applied to any setting. However, when playing a Stargazer, players should consider Constellations unique to their world."
+					]
+				}
+			]
+		},
+		{
+			"name": "Stargazer Spells",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Stargazer",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Stargazer feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Stargazer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"星座法术"
+						],
+						[
+							"5th",
+							"{@spell mind spike|xge}, {@spell moonbeam}"
+						],
+						[
+							"9th",
+							"{@spell beacon of hope}, {@spell clairvoyance}"
+						],
+						[
+							"13th",
+							"{@spell divination}, {@spell guardian of faith}"
+						],
+						[
+							"17th",
+							"{@spell dawn|xge}, {@spell wall of light|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Threads of Fate",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/sundries/gaming/playing-cards-grey.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Stargazer",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Stargazer feature}",
+				"You can use the insights you gain from the stars to twist the threads of fate. As a reaction when you, or another creature you can see within 30 feet, makes an ability check or saving throw, you can add your Wisdom modifier (minimum of +1) to the result of the roll. You can use this reaction after the roll, but before you know if the roll succeeds or fails.",
+				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Starlight Strikes",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/magic/light/projectiles-star-purple.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Stargazer",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Stargazer feature}",
+				"As a bonus action on your turn, you can enter a trance that allows the celestial bodies of the night to guide your attacks. This trance lasts for 1 minute, or until you are incapacitated. When you roll a 9 or lower on the d20 for an attack roll while you are in this trance, you can treat the roll as a 10. You can do so no more than once per turn.",
+				"Once you use this ability you must finish a long rest before you can use it again. When you have no uses remaining, you can expend a spell slot of 3rd-level or higher to use it again."
+			]
+		},
+		{
+			"name": "Resplendent Soul",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"foundryImg": "icons/magic/light/explosion-star-glow-silhouette.webp",
+			"subclassShortName": "Stargazer",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15-level Stargazer feature}",
+				"Your very being is suffused with starlight. When a creature you can see within 30 feet hits you with an attack, you can use your reaction to release a targeted flash of light, forcing the attacker to make a Constitution saving throw against your Spell Save DC. On a failed save, the target takes {@dice 3d10} radiant damage and is {@condition blinded} until the start of its next turn. On a successful save, the target takes half damage and is not blinded.",
+				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest. When you have no uses remaining, you can expend a spell slot of 1st-level or higher to use this reaction one additional time."
+			]
+		},
+		{
+			"name": "Wrangler",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Wrangler feature}",
+				"While most Rangers have some skill with animals, those who pursue the life of a Wrangler are true masters at taming wild beasts. Drawing upon their intimate understanding of animal behavior, they tame and control all sorts of fantastical beasts. Rugged and wild, Wranglers are always on the hunt for ever more strange and exotic creatures to tame and befriend.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wrangler Spells|Alternate Ranger|LLAR|Wrangler|LLAR:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Monster Tamer|Alternate Ranger|LLAR|Wrangler|LLAR:E|3"
+				}
+			]
+		},
+		{
+			"name": "Wrangler Spells",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"classSource": "LLAR",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Wrangler feature}",
+				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
+				{
+					"type": "table",
+					"caption": "Wrangler Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 teWranglert-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}, {@spell command}"
+						],
+						[
+							"5th",
+							"{@spell calm emotions}, {@spell summon beast|tce}"
+						],
+						[
+							"9th",
+							"{@spell conjure animals}, {@spell slow}"
+						],
+						[
+							"13th",
+							"{@spell charm monster|xge}, {@spell dominate beast}"
+						],
+						[
+							"17th",
+							"{@spell awaken}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Monster Tamer",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/commodities/tech/bearing-steel-green.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "LLAR:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Wrangler feature}",
+				"Your intimate understanding of animal behaviors and habits grants you certain benefits. You gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"你对野兽和怪兽的武器攻击，如果在d20上掷出19或20，就能获得关键打击。",
+						"你在力量({@skill Athletics})检查中具有优势，可以抓取、攀爬或摔打野兽和怪兽。",
+						"Any {@filter enchantment spell you have prepared that targets a humanoid|spells|class=ranger (llar)|subclass=Alternate Ranger: wrangler (llar:e)|school=e|affects creature types=humanoid} can also target beasts and monstrosities."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bring to Heel",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/sundries/misc/pet-collar-spiked-brown.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "LLAR:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Wrangler feature}",
+				"You can bend creatures of the wild to your will. When a beast or monstrosity that is charmed by you makes a saving throw to end the charmed condition, you can use your reaction to force it to make that saving throw with disadvantage.",
+				"你也可以指挥你所驯服的怪兽。任何被你魅惑的野兽或怪兽在你的回合中都会在你的魅惑持续期间采取行动，如果你在30英尺内，并且该生物能听到你，你可以用你的行动命令它采取其状态块中的一个行动。"
+			]
+		},
+		{
+			"name": "Master Tamer",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "LLAR:E",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Wrangler feature}",
+				"Your abilities are nearly supernatural Your Wrangler features now affect celestials, dragons, fey, fiends, giants, and plants with an Intelligence score less than or equal to your level.",
+				"另外，你可以命令任何被你魅惑的野兽或怪兽从它的状态块中采取一个行动作为奖励行动。"
+			]
+		},
+		{
+			"name": "Wrangler of Legends",
+			"source": "LLAR:E",
+			"className": "Alternate Ranger",
+			"foundryImg": "icons/sundries/misc/pet-collar-spiked-yellow.webp",
+			"classSource": "LLAR",
+			"subclassShortName": "Wrangler",
+			"subclassSource": "LLAR:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Wrangler feature}",
+				"Once you charm a creature, there is little it can do to escape. Any enchantment spells you cast on beasts and monstrosities last until your concentration is broken.",
+				"Also, short and long rests do not break your concentration on enchantment spells you cast on beasts or monstrosities."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Archery",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"你在使用远程武器的攻击卷上获得+2的奖励。"
+			]
+		},
+		{
+			"name": "Defensive Fighting",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当你穿戴盔甲或挥舞盾牌时，你的盔甲等级获得+1的加成。"
+			]
+		},
+		{
+			"name": "Druidic Warrior",
+			"source": "LLAR:E",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"You learn two cantrips of your choice from the {@filter Druid spell list|spells|class=Druid} spell list. They count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip of your choice from the Druid spell list."
+			]
+		},
+		{
+			"name": "Dual Wielding",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当你在双武器战斗中采取攻击行动时，你可以用你的非手武器进行一次额外的攻击，作为你行动的一部分，而不是你的额外行动，在这次攻击的伤害上加上你的能力修改器。"
+			]
+		},
+		{
+			"name": "Dueling",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当你单手挥舞近战武器而没有其他武器时，你使用它的伤害卷获得+2的奖励。"
+			]
+		},
+		{
+			"name": "Featherweight Fighting",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当你只挥舞轻武器时，你的速度会增加10英尺，并且你获得一个+1的伤害卷奖励，只要你不穿中、重甲，或使用盾牌。"
+			]
+		},
+		{
+			"name": "Marine Fighting",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当你没有穿戴中型或重型盔甲，或使用盾牌时，你的游泳速度等于你的移动速度，并获得你的护甲等级+1的奖励。"
+			]
+		},
+		{
+			"name": "Melee Marksman",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当你以5英尺内的生物为目标进行远程攻击时，你在攻击卷上没有劣势。",
+				"如果你对5英尺范围内的生物进行远程攻击，你可以用你的远程武器攻击该生物，作为一个额外的动作，击中后造成{@dice 1d4}破坏性伤害。"
+			]
+		},
+		{
+			"name": "Mountaineer",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"When you are not wearing medium or heavy armor or using a shield, you have a climbing speed equal to your walking speed, and you gain a +1 bonus to your Armor Class."
+			]
+		},
+		{
+			"name": "Mounted Warrior",
+			"source": "LLAR:E",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"While you are riding a controlled mount, both you and your mount gain a +1 bonus to your Armor Class, and you can use a bonus action on your turn to command your mount to take one action from its stat block."
+			]
+		},
+		{
+			"name": "Protection",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当你能看到的生物攻击你5英尺内的目标时，你可以在他们的攻击卷上施加劣势作为反应。你必须挥舞着近战武器或盾牌。"
+			]
+		},
+		{
+			"name": "Strongbow",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"在使用长弓和短弓时，你可以使用你的力量值来代替灵巧值，用于你的攻击和伤害卷。"
+			]
+		},
+		{
+			"name": "Thrown Weapon Fighting",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon. Moreover, whenever you hit with a ranged weapon attack using a thrown weapon, you gain a +2 bonus to the damage roll of that attack."
+			]
+		},
+		{
+			"name": "Versatile Fighting",
+			"source": "LLAR",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"当用两只手挥舞多功能武器时，你的伤害卷获得+2的奖励。当用一只手挥舞多功能武器，而另一只手没有任何东西时，你的攻击卷和装甲等级都获得+1的奖励。",
+				"只要你有一只自由的手，你也可以把推搡或徒手攻击作为一个额外的行动。"
+			]
+		},
+		{
+			"name": "Unarmed Fighting",
+			"source": "LLAR:E",
+			"featureType": [
+				"FS:AR"
+			],
+			"entries": [
+				"Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you have two free hands when you make the attack roll, the d6 becomes a d8.",
+				"At the beginning of each of your turns, you can deal 1d4 bludgeoning damage to one creature you are grappling."
+			]
+		},
+		{
+			"name": "Alpine Adept",
+			"source": "LLAR",
+			"foundryImg": "icons/environment/wilderness/cave-entrance-mountain.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You are amazingly surefooted. You gain a 30-foot climbing speed, and you can use your reaction to reduce any falling damage you take by an amount equal to your Ranger level. If you already have a climbing speed it increases by 10 feet."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Aquatic Adept",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/fish/fish-shark-swimming.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You can swim through the water like a native creature of the sea. You gain a 30-foot swimming speed, and while you are underwater, you can hold your breath for up to 1 hour. If you already have a swimming speed it increases by 10 feet."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Explorer I",
+			"source": "LLAR",
+			"foundryImg": "icons/environment/wilderness/tree-spruce.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"Whenever you make a Wisdom ({@skill Survival}) check to navigate in the wild, forage for food and water, or to avoid becoming lost, you can treat a roll of 7 or lower on the d20 as an 8."
+			]
+		},
+		{
+			"name": "Explorer II",
+			"source": "LLAR",
+			"foundryImg": "icons/environment/wilderness/tree-spruce.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"At the end of a long rest, you can attune to your surrounding environment. Examples include, but are not limited to: arctic, coastal, desert, forest, grassland, mountain, or swamp. While in your attuned environment you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"你在与本地植物、动物或生态系统有关的智力和智慧检查中具有优势。",
+						"觅食或打猎时，你会发现两倍的食物。",
+						"除非你是（%0%），否则你不可能感到惊讶。",
+						"你在你的主动权卷上获得与你的智慧修饰值相等的奖励（最小为1）。"
+					]
+				}
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Explorer I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Herbalist I",
+			"source": "LLAR",
+			"foundryImg": "icons/consumables/plants/cilantro-parsley-herb-leaf-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你对植物和它们的治疗特性有很深的了解。你在识别植物药性的智力（（%0%））检查和稳定生物的智慧（（%1%））检查中具有优势。"
+			]
+		},
+		{
+			"name": "Herbalist II",
+			"source": "LLAR",
+			"foundryImg": "icons/consumables/potions/bottle-round-corked-red.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你已经学会使用天然植物和草药来制作治疗药水。你获得对（%0%）的熟练度。",
+				"在长时间的休息结束后，你可以用草药包制作一个（%0%）。它的效力可保持数天，相当于你的熟练度加成，之后它就会变质。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Herbalist I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Herbalist III",
+			"source": "LLAR",
+			"foundryImg": "icons/consumables/fruit/berry-coral-pink-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"当你进行短暂的休息时，你和任何与你一起休息的友好生物，只要他们至少消耗一个命中率来恢复命中率，就会恢复额外的（%0%）命中率。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Herbalist II"
+					]
+				}
+			]
+		},
+		{
+			"name": "Natural Regeneration",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/nature/plant-sproud-hands-dirt-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"在短暂的休息中，你可以恢复相当于你的智慧修正值的综合水平的法术槽。一旦你这样做了，你必须完成一次长时间的休息才能再次使用这个功能。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Slayer I",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-scope-sniper-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"When you hit a creature with a weapon attack you can mark it as your Favored Foe as part of the same attack, and apply your Favored Foe damage bonus to the damage roll.",
+				"Moreover, whenever you make a Wisdom ({@skill Perception}) or a Wisdom ({@skill Survival}) check to locate or track your Favored Foe, you can treat a roll of 7 or lower on the d20 as an 8."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Slayer II",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-scope-sniper-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"Your tracking abilities have become supernaturally accurate. You always know the exact direction and distance of your Favored Foe while you are on the same plane of existence."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Slayer I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Slayer III",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/targeting/crosshair-scope-sniper-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"Once per turn, when you hit your Favored Foe with a weapon attack, you can force it to make a Constitution saving throw against your Spell Save DC. On a failed save, it is {@condition blinded}, {@condition deafened}, {@condition frightened}, {@condition poisoned}, or {@condition restrained} (your choice) until the beginning of your next turn."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Slayer II"
+					]
+				}
+			]
+		},
+		{
+			"name": "Stalker I",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/abilities/paw-print-pair-purple.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You are a master at covering your tracks. While moving at a normal pace, you and any creatures of your choice who travel with you (maximum 10), produce no tracks nor scent, and cannot be tracked by mundane means unless you wish to be."
+			]
+		},
+		{
+			"name": "Stalker II",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/nature/stealth-hide-eyes-pink.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你已经学会了在不被发现的情况下猎取你的猎物。你可以在你的回合中采取{@action Hide}的行动作为奖励行动。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Stalker I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Stalker III",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/abilities/paw-print-pair-purple.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你不能被追踪，即使是用魔法。你总是在{@spell nondetection}咒语的作用下，除非你愿意，否则你不能被占卜魔法或魔法手段追踪。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Stalker II"
+					]
+				}
+			]
+		},
+		{
+			"name": "Stalker IV",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/nature/stealth-hide-eyes-pink.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你可以用防护罩使自己短暂地从视线中消失。当你采取{@action Hide}的行动时，你和你所穿戴或携带的东西都会变成{@condition invisible}，直到你下一个回合开始。如果你攻击或施法，这将提前结束。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Stalker III"
+					]
+				}
+			]
+		},
+		{
+			"name": "Strider I",
+			"source": "LLAR",
+			"foundryImg": "icons/equipment/feet/boots-leather-simple-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You ignore the effects of difficult terrain imposed by natural environments, such as undergrowth, snow, or marshlands. Also, you and creatures of your choice who travel with you (maximum 10) don't have travel slowed by difficult terrain."
+			]
+		},
+		{
+			"name": "Strider II",
+			"source": "LLAR",
+			"foundryImg": "icons/skills/movement/feet-winged-boots-brown.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"一旦进入你的视线，你就会无情地追求你的采石场。你可以在你的回合中采取{@action Dash}的行动作为奖励行动。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Strider I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Strider III",
+			"source": "LLAR",
+			"foundryImg": "icons/equipment/feet/boots-leather-simple-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You can surmount almost any obstacle that would block your path. Your base walking speed increases by 10 feet, and you ignore the effects of difficult terrain imposed by spells, magical phenomena, and any other magical effect."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Strider II"
+					]
+				}
+			]
+		},
+		{
+			"name": "Strider IV",
+			"source": "LLAR",
+			"foundryImg": "icons/equipment/feet/boots-leather-simple-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你在这个世界上移动，甚至不受最强大的魔法和束缚的阻碍。在有意识的情况下，你总是受到（%0%）法术的影响。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Strider III"
+					]
+				}
+			]
+		},
+		{
+			"name": "Survivor I",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/life/heart-cross-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"Your time in the wilds has hardened your body. As a bonus action on your turn, you can grant yourself temporary hit points equal to your Constitution modifier (minimum of 1)."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Survivor II",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/life/heart-cross-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你的身体可以迅速从伤害中恢复。当你消耗一个命中率来恢复命中率时，你会恢复与你的智慧修正值相等的额外命中率（最小为1个命中率）。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Survivor I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Survivor III",
+			"source": "LLAR",
+			"foundryImg": "icons/magic/life/heart-cross-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"即使面对死亡，你也坚持不懈。当你进行死亡救赎时，你可以将你的智慧修正值加到卷轴上（最小值为+1）。如果你掷出的结果是20或更高，你就把它当作你在D20上掷出的20。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Survivor II"
+					]
+				}
+			]
+		},
+		{
+			"name": "Trapper",
+			"source": "LLAR",
+			"foundryImg": "icons/environment/traps/trap-jaw-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"As an action, you can set a hidden trap made out of natural materials in an adjacent 5-foot space. The first creature to move into the area must succeed on a Dexterity saving throw against your Spell Save DC or become restrained.",
+				"A creature repeats its saving throw at the start of each turn, ending the effect on a success. A creature can detect a trap by succeeding on an Intelligence (Investigation) check against your Spell Save DC. You can have a number of active traps equal to your Wisdom modifier (minimum of 1 trap)."
+			]
+		},
+		{
+			"name": "Wild Insights I",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/abilities/paw-glowing-yellow.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You have a way with wild animals. You can communicate simple ideas to beasts using sounds and gestures. Also, whenever you make a Wisdom ({@skill Animal Handling}) check that targets an animal or beast that is friendly toward you, you can treat a roll of 7 or lower on the d20 at 8."
+			]
+		},
+		{
+			"name": "Wild Insights II",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/abilities/paw-glowing-yellow.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You have bound yourself with a minor nature spirit. You learn the {@spell find familiar} spell. It counts as a Ranger spell for you, you always have it prepared, but it doesn't count against the total number of spells you prepare each day. When you cast this spell your summoned familiar is always a fey creature."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Wild Insights I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Wild Insights III",
+			"source": "LLAR",
+			"foundryImg": "icons/creatures/abilities/paw-glowing-yellow.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你的自然精神的力量会增长。当你施展{@spell find familiar}时，它可以采取{@filter any beast of CR 1/2 or lower|bestiary|Challenge Rating=[&0;&1/2]|type=beast}的形式。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Wild Insights II"
+					]
+				}
+			]
+		},
+		{
+			"name": "Arctic Adept",
+			"source": "LLAR:E",
+			"foundryImg": "icons/magic/water/water-iceberg-bubbles.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You have adapted to the frozen tundra. You gain resistance to cold damage. Also, you and creatures of your choice who travel with you (maximum 10), have advantage on saving throws to resist the negative effects of arctic environments."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Desert Adept",
+			"source": "LLAR:E",
+			"foundryImg": "icons/environment/wilderness/cave-entrance-rocky.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You have adapted to scorching deserts. You gain resistance to fire damage. Also, you and creatures of your choice who travel with you (maximum 10), have advantage on saving throws to resist the negative effects of desert environments."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Fell Handed I",
+			"source": "LLAR:E",
+			"foundryImg": "icons/weapons/maces/mace-round-spiked-grey.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"当你用武器攻击一个生物取得关键一击时，你在下一回合结束前对该生物进行的下一次攻击中具有优势。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Fell Handed II",
+			"source": "LLAR:E",
+			"foundryImg": "icons/weapons/maces/mace-round-spiked-grey.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"当你对一个生物取得关键打击时，你对该生物的攻击卷轴的关键打击范围会扩大1。",
+				"For example, if you score a critical hit against a creature for the first time, you then score a critical hit on a roll of 19 or 20 when you make an attack roll against the creature."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Fell Handed I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Jungle Adept",
+			"source": "LLAR:E",
+			"foundryImg": "icons/magic/nature/trap-spikes-thorns-green.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You have adapted to the jungles. You gain resistance to poison damage. Also, you and creatures of your choice who travel with you (maximum 10) have advantage on saving throws to resist negative effects of jungle environments."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Ranger Knight I",
+			"source": "LLAR:E",
+			"foundryImg": "icons/equipment/chest/breastplate-collared-steel.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"虽然你花时间在野外，但你仍然有一些军事训练。你获得了对重型盔甲的熟练程度。"
+			]
+		},
+		{
+			"name": "Ranger Knight II",
+			"source": "LLAR:E",
+			"foundryImg": "icons/equipment/chest/breastplate-collared-steel.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"Though you are a warrior of the wild you understand chivalry and politics. Whenever you make an Intelligence ({@skill History}) or Charisma ({@skill Persuasion}) check you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1)."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Rider I",
+			"source": "LLAR:E",
+			"foundryImg": "icons/environment/creatures/horse-tan.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"Whenever you make a Wisdom (Animal Handling) check to control, train, or tame a mount, you can treat a roll of 7 or lower on a d20 as an 8. Also, dismounting from a trained mount only costs you 5 feet of movement."
+			]
+		},
+		{
+			"name": "Rider II",
+			"source": "LLAR:E",
+			"foundryImg": "icons/environment/creatures/horse-tan.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You have trained to fight from your mount. You gain the Mounted Warrior Fighting Style. If you already know this Fighting Style you learn another Ranger Fighting Style of your choice.",
+				"Also, you can ride mounts that are your size or larger."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Rider I"
+					]
+				}
+			]
+		},
+		{
+			"name": "Rider III",
+			"source": "LLAR:E",
+			"foundryImg": "icons/environment/creatures/horse-tan.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You are a master of mounted combat. When you are riding mount and it is hit by an attack, you can use a reaction to become the target of that attack instead.",
+				"Also, if your mount makes a saving throw while you ride it, you can use your reaction to grant it advantage on its roll."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Rider II"
+					]
+				}
+			]
+		},
+		{
+			"name": "Underground Adept",
+			"source": "LLAR:E",
+			"foundryImg": "icons/environment/wilderness/cave-entrance-dwarven-hill.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You are especially skilled at navigating the winding tunnels under the earth. You gain darkvision out to a range of 60 feet. If you already have darkvision its range increases by 60 feet.",
+				"Also, you can close your eyes and gain tremmorsense in a 60-foot radius. Within that radius, you can sense anything touching the ground. This special sense lasts for 1 minute, or until you open your eyes. Once you use this action you must finish a short or long rest before you can use it again."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Woodsman I",
+			"source": "LLAR:E",
+			"foundryImg": "icons/skills/trades/woodcutting-logging-axe-stump.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你对森林、树木和各种木材都很熟悉。你获得了对{@item woodcarver's tools|phb}的熟练度，并且你在任何智力({@skill Nature})检查中都有优势，可以识别、回忆信息，并用木材建造东西。",
+				"Also, if you hit a tree, raw timber, or a wooden structure with a melee weapon attack, it is an automatic critical hit."
+			]
+		},
+		{
+			"name": "Woodsman II",
+			"source": "LLAR:E",
+			"foundryImg": "icons/skills/trades/woodcutting-logging-axe-stump.webp",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"你可以识别木制物品和生物的优势和弱点。你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你获得对（%0%）的熟练度。你用木头建造的任何东西都有两倍的打击点数。",
+						"在每次长休结束时，如果你有木材可用，你可以制作总数等于你熟练度加成的（%0%）、（%1%）、（%2%）和（%3%）。",
+						"When you hit a plant or a wooden construct with a {@item battleaxe|phb} or {@item greataxe|phb}, you score a critical hit on a roll of 19 or 20."
+					]
+				}
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Alternate Ranger",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Woodsman I"
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Beast of the Cave",
+			"source": "LLAR",
+			"summonedByClass": "Alternate Ranger|LLAR",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "13 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your ranger level (the beast has a number of hit dice [d8s] equal to your ranger level)"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 10
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 13,
+			"int": 8,
+			"wis": 14,
+			"cha": 11,
+			"senses": [
+				"darkvision 120 ft.",
+				"tremorsense 30 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Primal Bond",
+					"entries": [
+						"你可以把你的PB加到野兽所做的任何能力检查或救赎动作上。"
+					]
+				},
+				{
+					"name": "Tremorsense",
+					"entries": [
+						"Your Beast knows the location of anything in contact with the ground within 30 feet."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack}击中，到达5英尺，一个目标。{@h}{@damage 1d6 + 2 + PB}穿刺或切割伤害（你选择）。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Beast of the Land",
+			"source": "LLAR",
+			"summonedByClass": "Alternate Ranger|LLAR",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "13 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your ranger level (the beast has a number of hit dice [d8s] equal to your ranger level)"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 15,
+			"int": 8,
+			"wis": 14,
+			"cha": 11,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the beast moves at least 20 feet toward a target and then hits it with a maul attack on the same turn, the target takes extra slashing damage equal to your Favored Foe die. If the target is a Large or smaller creature, it must succeed on a Strength saving throw against your spell save DC or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Primal Bond",
+					"entries": [
+						"你可以把你的PB加到野兽所做的任何能力检查或救赎动作上。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack}击中，到达5英尺，一个目标。{@h}{@damage 1d8 + 2 + PB}穿刺或切割伤害（你选择）。"
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"attachedItems": [
+				"maul|phb"
+			],
+			"miscTags": [
+				"MLW"
+			]
+		},
+		{
+			"name": "Beast of the Sea",
+			"source": "LLAR",
+			"summonedByClass": "Alternate Ranger|LLAR",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "13 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your ranger level (the beast has a number of hit dice [d8s] equal to your ranger level)"
+			},
+			"speed": {
+				"walk": 10,
+				"swim": 60
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 15,
+			"int": 8,
+			"wis": 14,
+			"cha": 11,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"这只野兽可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"name": "Binding Strike",
+					"entries": [
+						"当野兽用它的假肢击中大型或小型生物时，它可以选择抓取目标（逃脱DC等于你的法术保存DC）。在这个抓捕结束之前，野兽不能对另一个目标使用它的假肢攻击。"
+					]
+				},
+				{
+					"name": "Primal Bond",
+					"entries": [
+						"你可以把你的PB加到野兽所做的任何能力检查或救赎动作上。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack}击中，到达5英尺，一个目标。{@h}{@damage 1d6 + 2 + PB}刺穿或击打伤害（你选择）。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			]
+		},
+		{
+			"name": "Beast of the Sky",
+			"source": "LLAR",
+			"summonedByClass": "Alternate Ranger|LLAR",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "13 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "4 + five times your ranger level (the beast has a number of hit dice [d6s] equal to your ranger level)"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 13,
+			"int": 8,
+			"wis": 14,
+			"cha": 11,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"当野兽飞出敌人的范围时，不会引起机会攻击。"
+					]
+				},
+				{
+					"name": "Primal Bond",
+					"entries": [
+						"你可以把你的PB加到野兽所做的任何能力检查或救赎动作上。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shred",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack}击中，到达5英尺，一个目标。{@h}{@damage 1d4 + 3 + PB}穿刺或切割伤害（你选择）。"
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby"
+			]
+		}
+	]
+}

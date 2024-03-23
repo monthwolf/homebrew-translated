@@ -1,0 +1,147 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FFExplosionSchool",
+				"abbreviation": "FFEXPLOSION",
+				"full": "School of Explosion Magic",
+				"authors": [
+					"Foxfire94"
+				],
+				"version": "1.0",
+				"url": "https://www.dmsguild.com/product/316860/School-of-Explosion-Magic-a-Wizard-subclass-for-DD-5e",
+				"targetSchema": "1.0.0",
+				"color": "c44347"
+			}
+		],
+		"dateAdded": 1591087486,
+		"dateLastModified": 1706587640,
+		"_dateLastModifiedHash": "4090b4e1be"
+	},
+	"subclass": [
+		{
+			"name": "School of Explosion Magic",
+			"subclassFeatures": [
+				"School of Explosion Magic|Wizard||Explosion|FFExplosionSchool|2",
+				"Fiery Explosion|Wizard||Explosion|FFExplosionSchool|6",
+				"Intense Explosion|Wizard||Explosion|FFExplosionSchool|10",
+				"Shockwave Explosion|Wizard||Explosion|FFExplosionSchool|14"
+			],
+			"source": "FFExplosionSchool",
+			"shortName": "Explosion",
+			"className": "Wizard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "School of Explosion Magic",
+			"source": "FFExplosionSchool",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Explosion",
+			"subclassSource": "FFExplosionSchool",
+			"level": 2,
+			"entries": [
+				"一个极其集中的魔法学校，专门从事一种非常具体的能力：创造出无与伦比的破坏力的爆炸。",
+				"虽然对某些人来说，这可能显得古怪、不切实际或不方便；但爆炸魔法师是致命的对手，能够在非常壮观的一击中结束一场战斗。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Explosion|Wizard||Explosion|FFExplosionSchool|2"
+				}
+			]
+		},
+		{
+			"name": "Explosion",
+			"entries": [
+				"从2级开始，你学会施放爆炸魔法学派的命名：（%0%）。作为你回合的行动，你可以选择一个1级或以上的法术槽，并开始施放（%1%）的咒语。",
+				"Until {@i explosion} is cast your speed is reduced to 5ft and you are unable to take any actions (other than the incantation), bonus actions or reactions until the start of your next turn. The incantation requires concentration, as if concentrating on a spell. If you lose concentration on the incantation any spell slots you have used are expended.",
+				"在你的下一个回合开始时，你可以选择通过消耗另一个一级或更高级别的法术槽来继续施展这个咒语，或者施展（%0%）。",
+				"当你释放{@i explosion}时，在500英尺内选择一个你能看到的点。受(1%)影响的区域是一个半径为15英尺的球体，乘以咒语中使用的咒语槽总数。在此范围内的每个生物必须对你的法术救赎DC进行宪法救赎成功。如果救赎失败，该生物将受到相当于每个咒语槽等级的爆炸骰子的伤害，如果救赎成功，将受到一半的伤害。",
+				"例如，如果在5级时，你在咒语中使用一个3级的法术槽和另一个3级的法术槽，你会造成6d8的重击伤害，半径为30英尺。",
+				"所有由{@i explosion}造成的伤害都算作魔法伤害，以克服对非魔法攻击和伤害的抵抗和免疫。对于反魔法场等法术和效果来说，(1%)被视为魔法效果，但对于反咒语等法术和效果来说，不被视为法术。",
+				"在成功施法后（%0%），你在咒语中使用的第一个咒语槽之外的每一个咒语槽都会受到1级的疲惫。一旦你完成了短期或长期的休息，你从这个特征中获得的任何等级的疲惫都会被移除。",
+				"一旦你使用了这个功能，你必须完成一个短期或长期的休息，才能再次使用它。",
+				{
+					"type": "table",
+					"caption": "Explosion Dice",
+					"colLabels": [
+						"Wizard Level",
+						"Damage Die"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"2nd",
+							"d8"
+						],
+						[
+							"10th",
+							"d10"
+						],
+						[
+							"18th",
+							"d12"
+						]
+					]
+				}
+			],
+			"source": "FFExplosionSchool",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Explosion",
+			"subclassSource": "FFExplosionSchool",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Fiery Explosion",
+			"source": "FFExplosionSchool",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Explosion",
+			"subclassSource": "FFExplosionSchool",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时（%0%）造成相当于每个法术槽等级的额外爆炸骰子数量的火焰伤害，或在成功救赎时造成一半的伤害。",
+				"此外，{@i explosion}的效果会损害该地区的物体，并点燃没有被佩戴或携带的易燃物。"
+			]
+		},
+		{
+			"name": "Intense Explosion",
+			"source": "FFExplosionSchool",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Explosion",
+			"subclassSource": "FFExplosionSchool",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，当施放{@i explosion}时，所造成的伤害类型从打击性伤害变为力量伤害。这并不影响你的 \"火爆 \"特性的伤害。"
+			]
+		},
+		{
+			"name": "Shockwave Explosion",
+			"source": "FFExplosionSchool",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Explosion",
+			"subclassSource": "FFExplosionSchool",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，当施放{@i explosion}时，在{@i explosion}半径边缘10英尺范围内的生物必须成功地进行灵巧救赎，否则会受到相当于{@i explosion}的力量伤害的一半的打击伤害。灵巧救赎成功的生物不会受到伤害。",
+				"如果{@i explosion}是用四级以上的法术槽施放，范围会增加到{@i explosion}的边缘的20英尺，如果是用七级以上的法术槽施放，则是{@i explosion}的边缘的30英尺。"
+			]
+		}
+	]
+}

@@ -1,0 +1,3241 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Hunter",
+				"abbreviation": "Hunter",
+				"full": "Hunter",
+				"authors": [
+					"/u/aeyana"
+				],
+				"version": "1.2.6",
+				"url": "https://www.gmbinder.com/share/-LW8NwDOWv6U_41xQnsb",
+				"targetSchema": "1.2.6"
+			}
+		],
+		"dateAdded": 1565857116,
+		"dateLastModified": 1668700856,
+		"_dateLastModifiedHash": "6d04d4501a"
+	},
+	"class": [
+		{
+			"name": "Hunter",
+			"source": "Hunter",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
+			"classTableGroups": [
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Hunter}",
+						"{@filter 2nd|spells|level=2|class=Hunter}",
+						"{@filter 3rd|spells|level=3|class=Hunter}",
+						"{@filter 4th|spells|level=4|class=Hunter}",
+						"{@filter 5th|spells|level=5|class=Hunter}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"insight",
+								"investigation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@filter martial melee weapons|items|source=phb|category=basic|type=martial weapon;melee weapon=&} or (b) a {@filter martial melee weapon|items|source=phb|category=basic|type=martial weapon;melee weapon=&} and a {@item shield|phb}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@filter simple or martial ranged weapon|items|source=phb|category=basic|type=ranged weapon} and 20  {@filter pieces of ammunition|items|source=phb|category=basic|type=ammunition}"
+				],
+				"goldAlternative": "{@dice 4d4×10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartialMelee",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartialMelee"
+							},
+							"shield|phb"
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": []
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|phb|shields}"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"athletics",
+									"insight",
+									"investigation",
+									"nature",
+									"perception",
+									"stealth",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"classFeatures": [
+				"Natural Explorer|Hunter|Hunter|1",
+				"Swift Response|Hunter|Hunter|1",
+				"Fighting Style|Hunter|Hunter|2",
+				"Hunter's Mark|Hunter|Hunter|2",
+				"Spellcasting|Hunter|Hunter|2",
+				{
+					"classFeature": "Hunter's Prey|Hunter|Hunter|3",
+					"gainSubclassFeature": true
+				},
+				"Hunter's Technique (1/rest)|Hunter|Hunter|3",
+				"Ability Score Improvement|Hunter|Hunter|4",
+				"Extra Attack|Hunter|Hunter|5",
+				"Hunter's Guard|Hunter|Hunter|6",
+				{
+					"classFeature": "Hunter's Prey feature|Hunter|Hunter|7",
+					"gainSubclassFeature": true
+				},
+				"Hunter's Technique (2/rest)|Hunter|Hunter|7",
+				"Ability Score Improvement|Hunter|Hunter|8",
+				"Quick Reflexes|Hunter|Hunter|10",
+				{
+					"classFeature": "Hunter's Prey feature|Hunter|Hunter|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Hunter|Hunter|12",
+				"Counterattack|Hunter|Hunter|14",
+				{
+					"classFeature": "Hunter's Prey feature|Hunter|Hunter|15",
+					"gainSubclassFeature": true
+				},
+				"Hunter's Technique (3/rest)|Hunter|Hunter|15",
+				"Ability Score Improvement|Hunter|Hunter|16",
+				"Feral Senses|Hunter|Hunter|18",
+				"Ability Score Improvement|Hunter|Hunter|19",
+				"Foe Slayer|Hunter|Hunter|20"
+			],
+			"subclassTitle": "Hunter's Prey",
+			"classSpells": [
+				"absorb elements|xge",
+				"Alarm",
+				"Animal Friendship",
+				"beast bond|xge",
+				"Cure Wounds",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Ensnaring Strike",
+				"Entangle",
+				"Find Familiar",
+				"Fog Cloud",
+				"Goodberry",
+				"Hail of Thorns",
+				"Jump",
+				"Longstrider",
+				"Purify Food and Water",
+				"snare|xge",
+				"Speak with Animals",
+				"zephyr strike|xge",
+				"Animal Messenger",
+				"Barkskin",
+				"Beast Sense",
+				"Cordon of Arrows",
+				"Darkvision",
+				"earthbind|xge",
+				"find greater familiar|hunter",
+				"healing spirit|xge",
+				"howling wind|hunter",
+				"Lesser Restoration",
+				"Locate Animals or Plants",
+				"Locate Object",
+				"mark of the leech|hunter",
+				"mark of the prey|hunter",
+				"mark of the storm|hunter",
+				"mark of the wild|hunter",
+				"Melf's Acid Arrow",
+				"Moonbeam",
+				"Pass without Trace",
+				"Protection from Poison",
+				"skywrite|xge",
+				"Silence",
+				"Spider Climb",
+				"Spike Growth",
+				"Conjure Animals",
+				"Conjure Barrage",
+				"Daylight",
+				"Elemental Weapon",
+				"Feign Death",
+				"flame arrows|xge",
+				"junglerazer|hunter",
+				"Lightning Arrow",
+				"Nondetection",
+				"Plant Growth",
+				"Protection from Energy",
+				"Speak with Plants",
+				"Water Breathing",
+				"Water Walk",
+				"Wind Wall",
+				"Charm Monster",
+				"Conjure Woodland Beings",
+				"Dominate Beast",
+				"Freedom of Movement",
+				"Giant Insect",
+				"Grasping Vine",
+				"guardian of nature|xge",
+				"Locate Creature",
+				"Stoneskin",
+				"Awaken",
+				"Commune with Nature",
+				"Conjure Volley",
+				"Hold Monster",
+				"steel wind strike|xge",
+				"Steel Wind StrikeXGE",
+				"Swift Quiver",
+				"Tree Stride",
+				"wrath of nature|xge"
+			],
+			"fluff": [
+				{
+					"entries": [
+						"一个看起来粗野的人类独自穿过树影，猎杀一群地精，他知道这些地精正计划突袭附近的农场。他双手紧握短剑，变成一股钢铁旋风，砍倒一个又一个敌人。",
+						"在从冰冷的空气中翻滚开来后，一个精灵找到了她的脚，拉开她的弓，向白龙放了一箭。甩开从龙身上散发出来的恐惧浪潮，就像龙的呼吸一样寒冷，她发出一支又一支的箭，将龙厚厚的鳞片撕碎。",
+						"一个半精灵向后一跃，险些躲过一个高大的石巨人的重击，因为它的棍子在地上留下了一个大坑。他迈着灵巧的步伐，飞快地爬上泰坦巨人的手臂，拔出长剑，冲向巨人的喉咙。",
+						"走过一个畏缩的卫兵，一个侏儒大胆地穿过喧闹的后巷。在他身后，有半打被殴打的人，那些敢于站在他和他的猎物之间的匪徒。",
+						"远离城市和城镇的喧嚣，越过为最遥远的农场提供庇护的篱笆，避开野外的恐怖，在无轨森林的密集树木中，穿过宽阔而空旷的平原，猎人保持着他们的警惕。",
+						{
+							"type": "entries",
+							"name": "Deadly Predators",
+							"entries": [
+								"猎人是荒野的勇士，他们专门负责抓捕威胁文明边缘的怪物--人形突袭者、横冲直撞的怪兽、可怕的巨人、幽灵和魔鬼，以及致命的龙。每个猎人的技术都是为了有效地打击他们所猎杀的猎物，采用各种战术来破坏和摧毁他们的猎物。通常情况下，猎人对其猎物的研究会导致采用他们所猎取的猎物的战术。",
+								"他们对猎物和他们所居住的野生土地的经验使猎人能够利用自然的力量来施展法术，就像德鲁伊那样。他们的法术和他们的战斗能力一样，强调速度、隐身和狩猎。猎人的天赋和能力是灵活的，能够根据他们和猎物之间可能存在的任何情况进行调整。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Independent Adventurers",
+							"entries": [
+								"虽然猎人可能以向导或追踪者为生，但猎人的真正使命在于在野外猎取猎物。许多猎人几乎是独立的，因为他们知道，当龙或妖精群来袭时，猎人可能是第一道，也可能是最后一道防线。",
+								"这种强烈的独立性使猎人很适合冒险，因为他们已经习惯了远离干爽的床和热水澡的舒适生活。面对那些在城市长大的冒险家，他们对野外的艰难困苦喋喋不休，猎人的反应是混合着欢笑、沮丧和同情的。但他们很快就知道，其他冒险者如果能在与文明的敌人的斗争中承担自己的重量，就值得任何额外的负担。娇生惯养的城市人可能不知道如何养活自己或在野外寻找淡水，但他们在其他方面弥补了这一点。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Hunter",
+							"entries": [
+								"当你创建你的猎人角色时，考虑赋予你特殊能力的训练的性质。你是否和一个导师一起训练，一起在荒野中游荡，直到你掌握了猎人的方法？你是否离开了你的学徒生涯，或者你的导师被杀了--也许是被那种成为你喜欢的猎物的怪物所杀？或者你是作为与德鲁伊教派相关的猎人队伍中的一员学会了你的技能，在神秘的道路以及荒野的传说中接受了训练。你可能是自学成才，一个隐居者，通过在严酷的荒野中生存的需要，学会了战斗技巧、追踪，甚至是与自然的神奇联系。",
+								"你对某种猎物的特别仇恨的来源是什么？是怪物杀死了你所爱的人或摧毁了你的家乡？还是你看到这些怪物造成的破坏太多，而承诺要控制它们的掠夺行为？你的冒险生涯是你保护边疆的工作的延续，还是一个重大的改变？是什么让你加入了一个冒险者的队伍？你是觉得向新盟友传授野外生活的方法很有挑战性，还是欢迎他们提供的无声的孤独的缓解？",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照这些建议，你可以迅速成为一名猎人。首先，将力量或灵巧作为你的最高能力得分，这取决于你是想专注于近战武器还是射箭（或精巧的武器）。如果你打算采用赏金猎人的猎物，就把力量作为你的最高能力得分。你的次高分应该是智慧或体质，这取决于你是想专注于远程战斗还是近战战斗。第二，选择外乡人背景。"
+									]
+								}
+							]
+						}
+					],
+					"source": "Hunter",
+					"page": 1,
+					"name": "Hunter",
+					"type": "section"
+				}
+			],
+			"page": 1
+		}
+	],
+	"spell": [
+		{
+			"name": "Find Greater Familiar",
+			"source": "Hunter",
+			"page": 16,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "50 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier",
+					"cost": 5000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你获得一个熟悉的人的服务，一个具有你选择的动物形态的精灵，一个挑战等级为1/2或更低的野兽。出现在范围内一个无人的空间里，这个熟悉的人具有所选形态的统计数据，尽管它是一个天人、精灵或恶魔（你选择）而不是野兽。",
+				"你的熟人独立于你行动，但它总是听从你的命令。在战斗中，它滚动自己的主动权并在自己的回合中行动。你的熟人可以使用你的法术攻击修改器来代替它自己的修改器进行武器攻击，而且它的自然武器在克服对非魔法攻击和伤害的抵抗和免疫时也算作魔法。当它用武器攻击击中一个生物时，就法术和效果而言，它被认为是你自己的一次武器攻击，例如猎人的标记。",
+				"当熟悉的人下降到0命中率时，它就会消失，不留下任何物理形态。在你再次施展这个法术后，它会重新出现。",
+				"当你的熟人在你100英尺范围内时，你可以与它进行心灵感应。此外，作为一个动作，你可以通过你熟悉的人的眼睛看东西，听到它听到的东西，直到你下一个回合开始，获得熟悉的人所拥有的任何特殊感官的好处。在这段时间内，你对自己的感官是失聪和失明的。",
+				"作为一项行动，你可以暂时解除你的熟悉物。它将消失在一个袖珍空间，在那里等待你的召唤。或者，你也可以永远解雇它。当它被暂时遣散时，作为一个行动，你可以使它重新出现在你周围30英尺内任何无人的空间。",
+				"你不能同时拥有一个以上的熟悉者。如果你在已经有一个熟悉的人时施展这个咒语（或{@spell find familiar}咒语），你会使它采用一个新的形态。选择该咒语所允许的形式之一。你的熟人会转化为所选择的生物。",
+				"最后，当你施展一个范围为触摸的法术时，你的熟悉人可以传递法术，就像它施展了法术一样。你的熟人必须在你的100英尺范围内，而且它必须在你施法时使用它的反应来传递咒语。如果该咒语需要一个攻击卷，你就用你的攻击修正值来做这个卷。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用某些更高级别的法术槽施放此法术时，你可以选择的野兽的挑战等级会增加：使用第三级法术槽的挑战等级为1或更低，使用第四级法术槽的挑战等级为2或更低，使用第五级或更高级法术槽的挑战等级为3或更低。"
+					]
+				}
+			],
+			"miscTags": [
+				"PRM",
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			}
+		},
+		{
+			"name": "Howling Wind",
+			"source": "Hunter",
+			"page": 17,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你召唤一个风之元素，它具有{@creature wolf}的形态，并出现在你能看到的范围内的空地上。该元素使用{@creature wolf}的统计数据，除了它是一个元素而不是一个野兽，对打击、穿刺和切割伤害有抵抗力，有60英尺的飞行速度，并且它的移动不会引起机会攻击。此外，在该元素10英尺范围内的生物是（%2%）。",
+				"元素对你和你的同伴是友好的，并根据你的主动性行事。当你施法时，你可以命令元素体以它的速度移动并进行攻击，使用你的法术攻击修饰和法术救赎DC，而不是它自己的攻击奖励和救赎DC。在咒语结束之前，你可以使用一个额外的行动来再次命令元素体。如果你没有向它发出任何命令，元素体就会采取躲避行动。",
+				"当一个被召唤的生物下降到0命中率时或当咒语结束时，它就会消失。",
+				"DM拥有该生物的统计数据。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或更高等级的插槽施展此法术时，你每超过二级的插槽等级就会召唤出另一个元素。每一个额外的元素都会出现在你能看到的范围内的空地上，并且你可以指挥所有由这个法术变出的元素，作为同一个额外行动的一部分。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Junglerazer",
+			"source": "Hunter",
+			"page": 17,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of ash from a burnt plant"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你发出一阵枯萎的魔法，在你选择的方向上形成一条长100英尺、宽10英尺的线。这条线上的每只野兽、妖怪或植物都必须做一个 \"宪法救赎\"。拯救失败时，生物会受到0%的坏死伤害，拯救成功时，会受到一半的伤害。",
+				"该法术会摧毁该地区的非魔法植物和植被，清除由它们造成的任何此类困难地形，并将它们化为灰烬。该区域内由{@spell entangle}或{@spell plant growth}法术创造的植物也会被摧毁。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，每超过三级的法术槽等级，伤害增加（%0%），线的长度增加20英尺。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mark of the Leech",
+			"source": "Hunter",
+			"page": 17,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a leech"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你在范围内选择一个你能看到的生物，用消耗能量标记它。直到咒语结束，每次目标重新获得命中率时，它都会受到相当于其重新获得的一半命中率的坏死伤害，而你会获得相当于所受坏死伤害的临时命中率，并意识到其位置。",
+				"如果目标在此法术结束前下降到0点，你可以在你随后的一个回合使用一个额外行动，在法术范围内标记一个你能看到的新生物。"
+			],
+			"miscTags": [
+				"HL",
+				"SGT",
+				"THP",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mark of the Prey",
+			"source": "Hunter",
+			"page": 17,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a drop of rabbit's blood"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你在范围内选择一个你能看到的生物，并将其标记为野生野兽的猎物。直到咒语结束，每只在目标120英尺范围内开始回合的野兽都会意识到它的位置，并对目标产生敌意，将其视为要猎杀的猎物。",
+				"如果目标在此法术结束前下降到0点，你可以在你随后的一个回合使用一个额外行动，在法术范围内标记一个你能看到的新生物。"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mark of the Storm",
+			"source": "Hunter",
+			"page": 17,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a piece of iron"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你在范围内选择一个你能看到的生物，并将其标记为风暴之怒的避雷针。直到咒语结束，黑暗的风暴云会形成一个圆柱体的形状，这个圆柱体高10英尺，半径30英尺，以目标上方至少300英尺的地方为中心。当你施展该法术时，以及在法术结束前的每一个小时，目标必须成功地进行一次灵巧救赎，如果救赎失败，将受到{@damage 1d12}的雷电伤害，如果成功，将受到一半的伤害。在咒语结束之前，如果你能看到目标，你可以在你的回合中使用一个额外的动作，以这种方式再次召唤雷电。",
+				"如果目标进入室内或有上方的遮挡物，雷电将转而攻击目标正上方的结构。",
+				"如果目标在此法术结束前下降到0点，你可以在你随后的一个回合使用一个额外行动，在法术范围内标记一个你能看到的新生物。"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mark of the Wild",
+			"source": "Hunter",
+			"page": 18,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a grape"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你在范围内选择一个你能看到的生物，用青翠的能量标记它。直到咒语结束，目标附近的任何肥沃土壤都会长出藤蔓和植物，成为它的困难地形。这些植物在目标移开后会退回到地面。此外，如果目标在同一空间的肥沃土壤中呆了至少1分钟，它就会因为长出藤蔓而变得（%0%）。被藤蔓缠住的生物（%1%）可以用它的行动对你的法术救赎DC进行力量检查。如果成功，它就能解脱。藤蔓也可以被攻击和摧毁（AC 10；HP 5；易受火灾伤害；对重击、中毒和精神伤害免疫）。",
+				"如果目标在此法术结束前下降到0点，你可以在你随后的一个回合使用一个额外行动，在法术范围内标记一个你能看到的新生物。"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Survey Terrain",
+			"source": "Hunter",
+			"page": 18,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a crystal"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"你在你选择的范围内创建一个地形的精神图像。这个法术的区域由最多三个10英尺的立方体组成，你可以按照自己的意愿排列。每个立方体必须有至少一个面与另一个立方体的面相邻。你会意识到任何生物、带有魔法的物体，以及该区域内的布局和任何机械的复杂性。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施展此法术时，你在2级以上的每一个法术槽等级都能创造一个额外的10英尺立方体。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Natural Explorer",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 1,
+			"entries": [
+				"从1级开始，你在野外的经验赋予你以下特征。",
+				{
+					"type": "list",
+					"items": [
+						"当你完成长时间的休息时，你可以在你周围的地形上觅食，制作一个治疗药膏。制作一个药膏需要花1小时来收集和混合成分。作为一个动作，你可以将药膏涂抹在你5英尺范围内的一个生物身上。该生物可以立即花费一个生命值来治疗自己。该生物掷骰子，加上它的宪法修改器和你的猎人等级，然后恢复与总数相等的命中率（最低为1）。药膏在24小时后失去效力。",
+						"其他生物在追踪你的群体时受到的检查是不利的。",
+						"当你进行长时间休息时，你可以花1小时来准备一个营地。每一个在你的营地中休息的生物在完成长期休息时都会重新获得一个额外的命中率。以这种方式获得的命中率不能超过一个生物的最大命中率数量。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Swift Response",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 1,
+			"entries": [
+				"一级时，你学会了在受到攻击时以迅速果断的行动作出反应。这使你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你可以把你的熟练度加到主动权卷上。",
+						"在你战斗中的第一个回合，你对尚未行动的生物所做的第一个攻击卷有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 2,
+			"entries": [
+				"2级时，你采用一种特殊的战斗方式作为你的专长。从以下选项中选择一个。你不能多次选择一种格斗风格的选项，即使你后来可以再次选择。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Archery",
+							"entries": [
+								"你在使用远程武器进行攻击时获得+2的奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Defense",
+							"entries": [
+								"当你穿着盔甲时，你会获得一个+1的交流奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dueling",
+							"entries": [
+								"当你单手挥舞近战武器而没有其他武器时，你使用该武器的伤害卷获得+2奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Thrown-Weapon Fighting",
+							"entries": [
+								"你可以拔出具有投掷属性的武器，作为你用该武器进行攻击的一部分。",
+								"此外，当你使用投掷武器进行远程攻击时，你会获得一个+1的伤害卷奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Two-Weapon Fighting",
+							"entries": [
+								"当你进行双武器战斗时，你可以在第二次攻击的伤害上加上你的能力修改值。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Unarmed Fighting",
+							"entries": [
+								"你的徒手攻击可以造成相当于{@damage 1d6}+你力量修正值的打击伤害。如果你用两只手攻击，{@damage d6}变成{@damage d8}。",
+								"当你成功抓取一个生物时，你可以对它造成{@damage 1d4}的重击伤害。在抓捕结束之前，每当你用近战攻击击中该生物时，你也可以对它造成这个伤害。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hunter's Mark",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 2,
+			"entries": [
+				"在2级时，你学会阅读你的猎物，使你能够更深入、更真实地打击。作为你回合中的额外行动，你可以选择一个你能看到的90英尺范围内的生物，并将其标记为你的猎物。你可以保持这个标记的时间与你的猎人等级相等。每当你用武器攻击击中被标记的目标时，你会对其造成额外的（%0%）武器类型的伤害，并且在你为寻找它而进行的任何智慧（感知）或智慧（生存）检查中，你有优势。",
+				"如果你跌倒（%0%），对另一个生物使用它，或作为额外行动解除它，这个效果就会结束。",
+				"你可以使用这个功能的次数与你的智慧修饰值相等（最少一次）。当你完成短时或长时的休息时，你会重新获得所有已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 2,
+			"entries": [
+				"当你达到2级时，你已经学会了使用自然界的魔法精华来施法，就像德鲁伊那样。关于施法的一般规则，请参见{@book chapter 10|PHB|10}，关于{@filter hunter spell list|spells|class=hunter}，请参见本文件末尾的表格。",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"猎人表显示了你有多少个法术槽来施放你的（%0%）一级及以上的法术。要施展其中一个法术，你必须消耗一个该法术等级或更高的法术槽。当你完成一个长时间的休息时，你会重新获得所有消耗的法术槽。",
+						"例如，如果你知道一级法术（%0%），并且有一个一级和一个二级法术槽可用，你可以使用任何一个槽来施放（%1%）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"猎人表显示了你有多少个法术槽来施展你的法术。要施放一个1级或以上的猎人法术，你必须消耗一个该法术级别或以上的法术槽。当你完成长期休息时，你会重新获得所有消耗的法术槽。",
+						"你准备好可供你施展的猎人法术清单，从猎人法术清单中选择。当你这样做时，选择的猎人法术数量等于你的智慧修正值+你的猎人等级的一半，向下取整（最少一个法术）。这些法术的等级必须是你有法术槽的。",
+						"例如，如果你是一个五级的猎人，你有四个一级和两个二级的法术槽。在智慧值为14的情况下，你准备的法术清单可以包括四个一级或二级的法术，可以有任何组合。如果你准备了1级法术 \"治愈伤口\"，你可以用1级或2级法术槽来施放它。施放该法术并不会从你的预备法术列表中移除。",
+						"当你完成长时间的休息时，你可以改变你准备的法术列表。准备一个新的猎人法术清单需要花时间进行研究和准备：每一个法术等级的清单上的法术至少需要1分钟。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智慧是你的法术能力，用于你的猎人法术。每当法术提到你的法术能力时，你就会使用你的智慧。此外，在设定你所施展的猎人法术的蓄力DC时，以及在使用猎人法术进行攻击时，你都会使用你的智慧修改器。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"如果一个猎人的咒语有仪式标签，并且你已经准备好了该咒语，那么你可以将该咒语作为一个仪式来施放。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Hunter's Prey",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"在3级时，你从可用的原型列表中选择一种猎物作为你的狩猎重点。你的选择在3级时授予你特性，在7级、11级和15级时再次授予你特性。",
+				{
+					"type": "entries",
+					"name": "Prey Spells",
+					"entries": [
+						"每个猎物都有一个相关的法术列表。你在猎物描述中指定的等级获得这些法术的使用权。一旦你获得一个猎物法术的使用权，你就会一直准备好它。猎物法术不计入你每天可以准备的法术数量。",
+						"如果你获得的猎物法术没有出现在猎人法术列表中，那么这个法术对你来说仍然是一个猎人法术。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Hunter's Technique (1/rest)",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"你选择的猎物允许你执行某些动作。你的猎物提供的每个猎人技术选项都解释了如何使用它。",
+				"当你使用你的猎人技术时，你选择使用哪个选项。然后你必须完成一个短暂或长时间的休息，才能再次使用你的猎人技术。",
+				"你的一些猎人技术效果需要你的目标做出一个蓄力动作来抵抗技术的效果。蓄力动作的计算方法如下。",
+				{
+					"type": "abilityDc",
+					"name": "Technique",
+					"attributes": [
+						"str",
+						"dex"
+					]
+				},
+				"从7级开始，你可以在两次休息之间使用你的猎人技术，而从15级开始，你可以在两次休息之间使用它三次。当你完成短期或长期休息时，你会重新获得你所消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Hunter's Guard",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 6,
+			"entries": [
+				"在6级时，你阅读猎物动作的能力使你能更好地保护你和你的盟友。作为反应，当你的猎人标记的目标用攻击击中你或你周围5英尺内的生物时，你可以在攻击卷上施加一个{@dice 1d6}的惩罚，有可能导致它失手。",
+				"此外，每当你的猎人标记的目标迫使你做一个蓄力动作时，以及每当你做一个能力检查以逃脱该目标的抓捕时，你可以使用你的反应来增加你的卷轴（%0%）。"
+			]
+		},
+		{
+			"name": "Hunter's Prey feature",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得一个由你的猎人猎物赋予你的特性。"
+			]
+		},
+		{
+			"name": "Hunter's Technique (2/rest)",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 7,
+			"entries": [
+				"从第七级开始，你可以在两次休息之间使用你的猎人技术。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Quick Reflexes",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 10,
+			"entries": [
+				"从10级开始，你的快速思维和敏捷性使你能够快速移动和行动。你可以在战斗中的每个回合采取一个额外的行动。这个行动只能用于采取（%0%）、（%1%）或（%2%）的行动。此外，当你掷出主动权并且没有受到惊吓时，你可以使用你的反应来采取（%3%）行动，以你的速度移动，或进行一次武器攻击。"
+			]
+		},
+		{
+			"name": "Hunter's Prey feature",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得一个由你的猎人猎物赋予你的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Counterattack",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 14,
+			"entries": [
+				"在14级时，你学会了在防御时进行反击。如果你的猎人标记的目标由于你的猎人守卫而错过了一次攻击，你可以对该生物进行一次武器攻击作为同一反应的一部分。"
+			]
+		},
+		{
+			"name": "Hunter's Prey feature",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 15,
+			"entries": [
+				"15级时，你获得一个由你的猎人猎物赋予你的特性。"
+			]
+		},
+		{
+			"name": "Hunter's Technique (3/rest)",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 15,
+			"entries": [
+				"从15级开始，你可以在两次休息之间使用你的猎人技术。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Feral Senses",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 18,
+			"entries": [
+				"在18级时，你获得了超自然的感觉，可以帮助你对抗你看不到的生物。只要你不是同时处于（%0%）和（%1%）的状态，你就能看到你周围30英尺内（%2%）的生物和物体，就像它们是可见的一样。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"level": 20,
+			"entries": [
+				"20级时，你的攻击具有超自然的准确性。你在对你的猎人印记的目标进行的攻击卷轴上获得{@dice 1d6}的奖励。",
+				"此外，每回合一次，当你对你的猎人标记的目标进行攻击时，你可以选择掷出（%0%）。在6分的情况下，如果攻击击中生物，则为关键一击。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Ranger",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"游骑兵主要与野兽和植物打交道，他们是驾驭险恶地形的专家，可以不着痕迹地移动。他们培养了对动植物的依赖性，充当自然的守护者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Ranger|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Fleet Footed|Hunter|Hunter|Ranger|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Flurry|Hunter|Hunter|Ranger|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Breath of the Wild|Hunter|Hunter|Ranger|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Ranger Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell longstrider}, {@spell speak with animals}"
+						],
+						[
+							"5th",
+							"{@spell animal messenger}, {@spell pass without trace}"
+						],
+						[
+							"9th",
+							"{@spell conjure animals}, {@spell speak with plants}"
+						],
+						[
+							"13th",
+							"{@spell guardian of nature|XGE}, {@spell grasping vine}"
+						],
+						[
+							"17th",
+							"{@spell commune with nature}, {@spell tree stride}"
+						]
+					]
+				},
+				{
+					"name": "Variant: Alternative Spells",
+					"type": "inset",
+					"entries": [
+						"对于没有获得《Xanathar万物指南》的玩家，可以替换游侠法术中的以下法术。",
+						"第13次 - {@spell guardian of nature|XGE}与{@spell polymorph}"
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Fleet Footed",
+			"entries": [
+				"当你在你的回合中移动时，你可以消耗你的猎人技术的一次使用，使你的行走速度增加20英尺，直到你的回合结束。此外，在你的回合结束前，对你进行的机会攻击都处于不利地位。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Flurry",
+			"entries": [
+				"当你的武器攻击失误时，你可以消耗你的猎人技术的一次使用，对同一目标进行两次额外的武器攻击，作为同一行动的一部分。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Breath of the Wild",
+			"entries": [
+				"在3级时，你对野性的了解使你能够与你周围的野兽建立强大的联系。",
+				"你有一种与生俱来的能力，可以与野兽交流，它们会把你当成同类。通过声音和手势，你可以把简单的想法作为一种行动传达给野兽，并能读懂它的基本情绪和意图。你可以了解它的情绪状态，它是否受到任何一种魔法的影响，它的短期需求（比如食物或安全），以及你可以采取的行动（如果有的话）来说服它不要攻击。",
+				"你不能对在过去10分钟内被你攻击过的生物使用这个能力。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Land's Stride",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级开始，在非魔法的困难地形上移动时，你不需要花费额外的移动力。你也可以通过非魔法植物而不被它们拖累，如果它们有刺，刺或类似的危险，也不会受到它们的伤害。",
+				"此外，你对那些用魔法创造或操纵来阻碍移动的植物，例如那些由（%0%）法术创造的植物，在拯救动作上有优势。"
+			]
+		},
+		{
+			"name": "Expert Skirmisher",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你在战斗中很难被锁定。当有敌意的生物在你周围5英尺范围内移动时，你可以作为一种反应，移动到你速度的一半。这种移动不会激起机会攻击。"
+			]
+		},
+		{
+			"name": "One With the Wild",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Ranger",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级的时候，你与野性的联系使你可以变成野性生物的形状。作为一个动作，你可以转化为挑战等级为3或更低的野兽或植物。",
+				"你可以在这种形态下停留1小时。然后你将恢复到你的正常形态。你可以通过在你的回合中使用一个额外的动作提前恢复到你的正常形态。如果你倒下（%0%），生命值降至0，或死亡，你会自动恢复。",
+				"在你变身的时候，以下规则适用。",
+				{
+					"type": "list",
+					"items": [
+						"你的游戏数据会被所选择的生物的数据所取代，尽管你保留了你的走位和智力、智慧和魅力的分数。你拥有你的新形态的命中率，当你恢复到你的正常形态时，你的命中率会恢复到变身前的水平。如果你因为命中率下降到0而恢复，任何多余的伤害都会延续到你的正常形态。只要多余的伤害没有使你的正常形态降低到0命中率，你就不会被击倒（%0%）。",
+						"你说话或采取任何需要手的行动的能力仅限于你的新形态的能力，而且你不能施展法术。你保留了你的阶级、种族或其他来源的任何特征的好处，如果新形态的身体有能力这样做，你可以使用它们。然而，你不能使用你的任何特殊感官，比如暗视，除非你的新形态也有这种感官。",
+						"你的装备与新形态融为一体。你不能激活、挥舞或以其他方式从其任何装备中获益。"
+					]
+				},
+				"一旦你使用这个功能，你必须完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Bounty Hunter",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"赏金猎人擅长与人形生物作战，他们开发了专门用于制服人形敌人的技术。这些技术涵盖了致命的范围，使猎人能够抓住他们的猎物，无论是死是活。凶恶和可怕的外观，很少有人敢阻挡他们的道路。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Bounty Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Disarm|Hunter|Hunter|Bounty Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Pin Down|Hunter|Hunter|Bounty Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Investigative|Hunter|Hunter|Bounty Hunter|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Bounty Hunter Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell command}, {@spell sleep}"
+						],
+						[
+							"5th",
+							"{@spell detect thoughts}, {@spell hold person}"
+						],
+						[
+							"9th",
+							"{@spell hypnotic pattern}, {@spell slow}"
+						],
+						[
+							"13th",
+							"{@spell compulsion}, {@spell confusion}"
+						],
+						[
+							"17th",
+							"{@spell dominate person}, {@spell scrying}"
+						]
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Disarm",
+			"entries": [
+				"当你用武器攻击击中一个生物时，或者当一个生物用近战武器攻击没有击中你时，你可以消耗你的猎人技术的一次使用来试图解除目标的武装，迫使它放下你选择的一件它所持有的物品。目标必须在力量救赎中成功，否则就会丢掉你选择的物品，而物品会落在它的脚下。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Pin Down",
+			"entries": [
+				"当你攻击一个在你5英尺范围内的比你大不超过一个体型的生物时，你可以消耗你的猎人技术的一次使用，迫使该生物做一个力量救赎动作。如果拯救失败，它将被击倒（%0%）和（%1%）。你必须有一只自由的手才能使用这个猎人技巧。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Investigative",
+			"entries": [
+				"当你在3级时选择这种猎物时，你会发展出一些技巧来获得关于你的猎物的信息。如果你花了至少十分钟来审问、质询或与一个人交谈，那么在对这个人进行与特定生物信息有关的检查时，你的熟练度加成会翻倍。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Multiattack Defense",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级开始，当一个生物用攻击击中你时，你会获得一个+4的攻击力加成，以对抗该生物在剩下的回合中进行的所有后续攻击。"
+			]
+		},
+		{
+			"name": "Menacing Warrior",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级的时候，你已经学会了恐吓那些挡在你面前的人。当你获得关键一击或将一个生物减少到0命中率时，你可以使用你的额外行动来迫使你所选择的30英尺范围内的一个生物对你的猎人法术救赎DC做出智慧救赎动作。如果救赎失败，一个生物会在1分钟内变成你的（%0%）。一个生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束这个效果。"
+			]
+		},
+		{
+			"name": "Misdirection",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Bounty Hunter",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你学会了通过将敌人引入歧途来逃避追击。当你隐藏起来的时候，你可以用你的行动在你周围30英尺内你能看到的空间里挑起一场骚动。每个试图找到你的生物必须对你的猎人法术救赎DC进行智慧（感知）检查。如果一个生物能看到这个空间并且知道它是无人居住的，那么这个检定就自动成功了。如果检查失败，生物会认为你藏在那个地方。此外，如果你在隐藏状态下进行攻击，在下一回合结束前，你对检查失败的生物的下一次命中是一个关键命中。"
+			]
+		},
+		{
+			"name": "Dragon Slayer",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"寻找龙确实是疯狂的行为。然而，无论如何，寻找龙的猎人要学习专门磨练的技术，以刺穿它们的盔甲鳞片并夹住它们的翅膀。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Dragon Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Clip Wings|Hunter|Hunter|Dragon Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Sunder Scales|Hunter|Hunter|Dragon Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dragon Anatomist|Hunter|Hunter|Dragon Slayer|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Dragon Slayer Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell absorb elements|XGE}, {@spell heroism}"
+						],
+						[
+							"5th",
+							"{@spell dragon's breath|XGE}, {@spell earthbind|XGE}"
+						],
+						[
+							"9th",
+							"{@spell fly}, {@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell charm monster|XGE}, {@spell elemental bane|XGE}"
+						],
+						[
+							"17th",
+							"{@spell control winds|XGE}, {@spell hold monster}"
+						]
+					]
+				},
+				{
+					"name": "Variant: Alternative Spells",
+					"type": "inset",
+					"entries": [
+						"对于没有获得《Xanathar's Guide to Everything》的玩家，可以用屠龙法术中的以下法术来代替。",
+						{
+							"type": "list",
+							"items": [
+								"第三次 - {@spell absorb elements|XGE}与{@spell chromatic orb}。",
+								"第五次 - {@spell dragon's breath|XGE} 和 {@spell earthbind|XGE} 与 {@spell misty step} 和 {@spell web}",
+								"第13次 - {@spell charm monster|XGE}和{@spell elemental bane|XGE}与{@spell confusion}和{@spell dimension door}",
+								"第17届 - {@spell control winds|XGE}与{@spell conjure volley}"
+							]
+						}
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Clip Wings",
+			"entries": [
+				"当你用武器攻击击中一个正在飞行并且有翅膀的生物时，你可以消耗你的猎人技术的一次使用，试图把它从天上打下来。该生物必须在力量救赎中获得成功，否则就会坠落，如果它落地，就会降落（%0%）。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Sunder Scales",
+			"entries": [
+				"当你用武器攻击击中一个生物时，如果该生物有天然盔甲或由板甲或鳞片组成的盔甲，你可以消耗你的猎人技术的一次使用权，使该生物的AC值减少（%0%）。一个生物的攻击力不能被降低到低于10+其灵巧修饰值。生物的天然护甲会在1d6天内痊愈。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Dragon Anatomist",
+			"entries": [
+				"当你在3级时选择这个猎物时，你对与从龙身上提取资源或材料有关的检查的熟练度加成加倍。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Evasion",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你可以灵活地躲避某些区域效应，例如{@creature adult red dragon|MM|red dragon's}火热的呼吸或{@spell ice storm}法术。当你受到一个允许你做一个灵巧救赎来承受一半伤害的效果时，如果你救赎成功，你就不会受到伤害，如果你失败，就只会受到一半伤害。"
+			]
+		},
+		{
+			"name": "Elemental Resistance",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你可以为你可能面临的元素危险做好准备。当你完成短时或长时休息时，从酸、冷、火、闪电或毒中选择一种伤害类型。你会获得对该伤害类型的抵抗力，直到你用这个特性选择一个不同的类型。"
+			]
+		},
+		{
+			"name": "Frightening Presence",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Dragon Slayer",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级的时候，你会发展出与龙一样的可怕的气场。作为一个行动，你可以强迫你所选择的30英尺范围内的每一个生物对你的猎人法术救赎DC进行智慧拯救。如果救赎失败，一个生物会在1分钟内变成你的（%0%）。受到惊吓的生物可以在它的每个回合结束时重复这个蓄力动作，如果成功则结束对它的影响。如果一个生物的救赎成功或效果结束，该生物在接下来的24小时内对该特性免疫。",
+				"一旦你使用这个功能，你必须完成一个短期或长期的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Colossus Slayer",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"俗话说 \"越大越难倒\"，巨人和其他大型猎物的猎人每天都在遵循这句话。这些猎人利用他们的快速思维和更快的反应能力来打倒巨大的敌人，他们的技术是为了打倒最大的猎物。这些猎人利用打了就跑的战术、攻城武器和路障来消耗他们的猎物。如果情况需要，这些猎人中最强大的人可以自己变成高大的巨人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Colossus Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Bring Down|Hunter|Hunter|Colossus Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Persistence|Hunter|Hunter|Colossus Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Climber|Hunter|Hunter|Colossus Slayer|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Colossus Slayer Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell entangle}, {@spell grease}"
+						],
+						[
+							"5th",
+							"{@spell enlarge/reduce}, {@spell ray of enfeeblement}"
+						],
+						[
+							"9th",
+							"{@spell plant growth}, {@spell sleet storm}"
+						],
+						[
+							"13th",
+							"{@spell Evard's black tentacles}, {@spell polymorph}"
+						],
+						[
+							"17th",
+							"{@spell Bigby's hand}, {@spell hold monster}"
+						]
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Bring Down",
+			"entries": [
+				"当你用武器攻击击中一个生物时，你可以消耗你的猎人技术的一次使用，试图将目标击倒。它必须在灵巧救赎中成功，否则将被击倒（%0%），并在落地时受到重击伤害。中等或较小的生物受到1%的伤害，大型生物受到2%的伤害，巨型生物受到3%的伤害，巨型生物受到4%的伤害。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Persistence",
+			"entries": [
+				"当30英尺范围内的生物对你的一个猎人法术的蓄力成功时，你可以消耗你的猎人技术的一次使用，迫使它重新进行蓄力。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Climber",
+			"entries": [
+				"当你在3级选择这个猎物时，你会获得与你的步行速度相等的攀爬速度，并且在攀爬时保持你的抓地力的任何能力检查或蓄力投掷上具有优势。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Uncanny Dodge",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，当一个你能看到的攻击者用攻击击中你时，你可以用你的反应将攻击对你的伤害减半。"
+			]
+		},
+		{
+			"name": "Coordinated Strike",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你学会与你的盟友协调你对猎物的攻击。当你使用你的猎人标记时，你可以选择你周围60英尺内的一个友好生物。该生物的武器攻击也会对被标记的目标造成该武器类型的额外（%0%）伤害。",
+				"如果你跌倒（%0%），对另一个生物使用你的猎人印记，或作为额外行动解除它，这个效果就会结束。"
+			]
+		},
+		{
+			"name": "Become Immense",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Colossus Slayer",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你获得了增强自己体型的能力，以便面对大型敌人。当你对自己施展{@spell enlarge/reduce}来增加你的体型时，你可以在法术持续时间内将你的体型增加两类--例如从中型到巨型，而不仅仅是一类。这种增长使你的尺寸在所有维度上都增加了四倍，使你的重量增加了64倍。如果没有足够的空间让你的体型翻两番，你会在现有的空间内达到最大的体型。你获得了放大选项的所有效果，而且你的武器也会增长到与你的新尺寸相匹配。当这些武器被放大时，你用它们的攻击会造成{@damage 2d8}的额外伤害（而不是法术的1D4额外伤害），而且你用这些武器的范围也会增加一倍。",
+				"一旦你使用这个功能，你必须完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Mage Hunter",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"受过奥术训练的法师猎手是专门制服施法者的猎手。从手腕的微妙滑动，到风中的低语咒语，这些猎手都精通魔法的迹象，他们本身就是魔法的实践者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Mage Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Copy Cast|Hunter|Hunter|Mage Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Enchant Weapon|Hunter|Hunter|Mage Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcanist Training|Hunter|Hunter|Mage Hunter|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Mage Hunter Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell detect magic}, {@spell shield}"
+						],
+						[
+							"5th",
+							"{@spell magic weapon}, {@spell silence}"
+						],
+						[
+							"9th",
+							"{@spell counterspell}, {@spell dispel magic}"
+						],
+						[
+							"13th",
+							"{@spell hallucinatory terrain}, {@spell locate creature}"
+						],
+						[
+							"17th",
+							"{@spell circle of power}, {@spell synaptic static|XGE}"
+						]
+					]
+				},
+				{
+					"name": "Variant: Alternative Spells",
+					"type": "inset",
+					"entries": [
+						"对于没有获得《Xanathar万物指南》的玩家来说，可以用法师猎人法术中的以下法术来代替。",
+						"第17届 - {@spell synaptic static|XGE}与{@spell dream}"
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Copy Cast",
+			"entries": [
+				"作为反应，当你看到一个生物在你60英尺范围内施展咒语或法术时，你可以消耗你的猎人技术的一次使用，用你的法术能力进行能力检查，以尝试复制该咒语或法术。DC等于10+法术的等级（DC为10的咒语）。如果成功，你就会知道这个咒语或法术，并且可以像猎人的法术一样施放它，持续1分钟。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Enchant Weapon",
+			"entries": [
+				"作为一个额外的动作，你可以消耗你的猎人技术的一次使用，使你持有的一件武器充满了奥术能量。在1分钟内，你在用该武器进行的伤害卷中加入你的智慧修正值（最低奖励为+1）。如果该武器还没有魔力，它将在持续时间内变得有魔力。",
+				"你可以在你的回合中结束这个效果，作为任何其他行动的一部分。如果你不再持有或携带此武器，或者你跌倒（%0%），此效果就会结束。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Arcanist Training",
+			"entries": [
+				"当你在3级选择这个猎物时，你会获得对阿卡纳技能的熟练度，并从巫师的法术列表中学习一个你选择的咒语。智慧是你对咒语的施法能力。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Iron Mind",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"到了第七级，你已经磨练出了抵抗猎物改变心智的能力。你获得了对智慧救赎的熟练程度。如果你已经有了这种能力，你将获得智力或魅力投掷的能力（你选择）。"
+			]
+		},
+		{
+			"name": "Mage's Bane",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你磨练自己的技能，以快速分析并关闭施法者。当你看到你的猎人标记的目标在施法时，你可以用你的反应对目标进行一次武器攻击。一旦命中，该生物必须对你的法术救赎DC进行智慧救赎成功，否则其法术就会失败并被浪费。"
+			]
+		},
+		{
+			"name": "Battle Magic",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你已经掌握了将法术和武器的使用编织成一个和谐的行为的艺术。当你用行动施展猎人法术时，你可以将一次武器攻击作为奖励行动。"
+			]
+		},
+		{
+			"name": "Demon Slayer",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"这些猎人专门面对最邪恶的生物，他们与亡灵、恶魔和其他夜行生物战斗。这些猎人擅长伤害、追踪和粉碎他们的猎物，他们面对死亡无所畏惧。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Demon Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Fortify|Hunter|Hunter|Demon Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Vicious Wound|Hunter|Hunter|Demon Slayer|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Locate Origin|Hunter|Hunter|Demon Slayer|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Demon Slayer Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell divine favor}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell gentle repose}, {@spell Nystul's magic aura}"
+						],
+						[
+							"9th",
+							"{@spell remove curse}, {@spell speak with dead}"
+						],
+						[
+							"13th",
+							"{@spell aura of life}, {@spell death ward}"
+						],
+						[
+							"17th",
+							"{@spell dawn|XGE}, {@spell hallow}"
+						]
+					]
+				},
+				{
+					"name": "Variant: Alternative Spells",
+					"type": "inset",
+					"entries": [
+						"对于没有获得《Xanathar's Guide to Everything》的玩家来说，可以用屠魔者法术中的以下法术来代替。",
+						"第17届 - {@spell dawn|XGE}与{@spell geas}"
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Fortify",
+			"entries": [
+				"作为一个奖励动作，你可以消耗你的猎人技术的一个使用权来加强你的复原力。选择一个能力值。在1分钟内，你在使用该能力分值进行救赎时具有优势。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Vicious Wound",
+			"entries": [
+				"当你用武器攻击击中一个生物时，你可以消耗你的猎人技术来造成一个溃烂的伤口，防止目标在1分钟内恢复命中率。任何生物都可以通过智慧（医学）检定成功后对你的技术救治DC采取行动来止住伤口。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Locate Origin",
+			"entries": [
+				"当你在3级选择这种猎物时，你获得了追踪被杀猎物来源的能力。当你的猎人印记的目标被降低到0命中率时，你可以选择将你的猎人印记转移到该生物的来源地。",
+				"如果该生物是被创造或召唤到这个位面的，那么创造者或召唤者就会成为你的猎人标记的目标。如果该生物是通过传送门或传送魔法进入这个位面的，那么他们第一次进入这个位面的位置就会成为你的猎人标记的目标。如果该生物是这个位面的原生生物，并且不是由魔法创造的，那么该生物的巢穴、巢穴或居住地就会成为你的猎人标记的目标。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Unshakable",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第七级时，你与黑暗的交易使你的精神不可动摇。你不能被魅惑、惊吓或被附身。"
+			]
+		},
+		{
+			"name": "Undercut Resistances",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"11级时，你学会了如何使你的武器攻击削弱生物的抵抗力。当你用武器攻击击中一个生物时，它将失去任何抵抗力，直到你的下一回合结束。"
+			]
+		},
+		{
+			"name": "Regeneration",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Demon Slayer",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你与邪恶者的交往给你自己带来了超自然的治疗效果。在你每个回合开始时，如果你没有站在阳光下，你会获得相当于1d6加你的智慧修正值的临时打击点数。"
+			]
+		},
+		{
+			"name": "Horde Breaker",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"专注于与大量敌人作战的猎人，部落破坏者喜欢敏捷而不是原始的力量，为了生存，他们迅速驱散一个又一个敌人。他们采用的战术能够有效地扰乱并一次性消灭大量的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Horde Breaker|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Nimble Evasion|Hunter|Hunter|Horde Breaker|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Shift Focus|Hunter|Hunter|Horde Breaker|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Follow Footprints|Hunter|Hunter|Horde Breaker|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Horde Breaker Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell burning hands}, {@spell thunderwave}"
+						],
+						[
+							"5th",
+							"{@spell mirror image}, {@spell shatter}"
+						],
+						[
+							"9th",
+							"{@spell conjure barrage}, {@spell enemies abound|XGE}"
+						],
+						[
+							"13th",
+							"{@spell confusion}, {@spell wall of fire}"
+						],
+						[
+							"17th",
+							"{@spell antilife shell}, {@spell cloudkill}"
+						]
+					]
+				},
+				{
+					"name": "Variant: Alternative Spells",
+					"type": "inset",
+					"entries": [
+						"对于没有获得《Xanathar's Guide to Everything》的玩家来说，可以用屠魔者法术中的以下法术来代替。",
+						"第9次 - {@spell enemies abound|XGE}与{@spell slow}"
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Nimble Evasion",
+			"entries": [
+				"作为被攻击的目标或被迫进行灵巧救赎的反应，你可以消耗你的猎人技术的一次使用来进行躲避动作。此外，如果你受到的效果允许你在下一回合开始前做一个灵巧的蓄力投掷，只受到一半的伤害，那么如果你的蓄力投掷成功，你就不会受到伤害，如果失败，则只受到一半的伤害。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Shift Focus",
+			"entries": [
+				"当你将你的猎人标记的目标降低到0HP时，你可以消耗你的猎人技术的一次使用，将标记转移到你90英尺范围内你能看到的另一个生物身上。这样做并不消耗你的猎人印记的使用次数。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Follow Footprints",
+			"entries": [
+				"当你在3级选择这个猎物时，每当你进行任何智慧（感知）或智慧（生存）检定来追踪或寻找4个或更多的生物群时，如果适用于检定，你的熟练度加成会加倍。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Escape the Horde",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你学会了当你操纵自己离开战场时躲避打击。对你的机会性攻击是以劣势进行的。"
+			]
+		},
+		{
+			"name": "Multiattack",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你学会了快速而有力地打击迎面而来的囤积物。你获得以下两个特征。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Volley",
+							"entries": [
+								"你可以用你的行动对你的武器范围内你能看到的10英尺范围内的任何数量的生物进行一次远程攻击。你必须为每个目标准备弹药，就像平时一样，而且你为每个目标进行单独的攻击卷。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Whirlwind Attack",
+							"entries": [
+								"你可以用你的行动对你周围5英尺内的任何数量的生物进行近战攻击，对每个目标进行单独的攻击卷。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Horde Tactics",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Horde Breaker",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，你学会与你的盟友一起压制攻击，以压倒你的敌人。如果你的盟友中至少有一人在生物的5英尺范围内，而盟友不在该生物的5英尺范围内，你对该生物的攻击卷有优势（%0%）。此外，当你在5英尺范围内用攻击击中一个生物时，它在对你以外的目标进行的所有攻击卷中都处于劣势，直到你下一回合结束。"
+			]
+		},
+		{
+			"name": "Blood Hunter",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"血液带有许多诅咒，如果不加控制，就会在这片土地上肆意蔓延。猎血者的职责是在这片土地上搜寻感染的迹象并将其消灭，不惜一切代价。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Blood Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Crimson Rite|Hunter|Hunter|Blood Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Infusion|Hunter|Hunter|Blood Hunter|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bloodhound|Hunter|Hunter|Blood Hunter|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Blood Hunter Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell bane}, {@spell inflict wounds}"
+						],
+						[
+							"5th",
+							"{@spell blindness/deafness}, {@spell crown of madness}"
+						],
+						[
+							"9th",
+							"{@spell bestow curse}, {@spell vampiric touch}"
+						],
+						[
+							"13th",
+							"{@spell aura of purity}, {@spell blight}"
+						],
+						[
+							"17th",
+							"{@spell contagion}, {@spell dream}"
+						]
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Crimson Rite",
+			"entries": [
+				"作为一个额外的动作，你可以消耗你的猎人技术的一个使用权来赋予你的武器以血液。你会受到{@damage 1d6}坏死性的伤害，无视抵抗和免疫，并在1分钟内将你的武器和弹药装入血鞘。你的武器和弹药会变成银色，当你击中的生物少于其最大命中率的一半时，它会受到额外的（%1%）坏死伤害。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Infusion",
+			"entries": [
+				"作为一个额外的行动，你可以消耗你的猎人技术的一次使用来重新为你的身体补充血液。你恢复的命中率等于（%0%）+你的猎人等级。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Bloodhound",
+			"entries": [
+				"当你在3级选择这种猎物时，你学会了通过他们血液的气味来追踪你的猎物。每当你做任何智力（调查）或智慧（生存）检查来追踪或寻找一个你有血样的生物时，如果你的熟练度加成适用于检查，你的熟练度加成就会加倍。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Profaned Blood",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"7级时，你对流经你的血液的掌握使你对疾病和毒药免疫。"
+			]
+		},
+		{
+			"name": "Spilled Blood",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你可以将你伤口的血液导入你的深红色仪式。当一个生物对你造成关键打击时，或者当你对一个生物造成关键打击时，你可以用你的反应来激活你的猎人技术。你可以使用你的反应来激活你的猎人技术：深红仪式，而不需要受到坏死的伤害或消耗你的猎人技术的使用权。"
+			]
+		},
+		{
+			"name": "Blood Curse",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Blood Hunter",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你学会模仿你想要消除的血腥诅咒的效果，赋予你超自然的坚韧。作为一个额外的行动，你可以利用诅咒的力量并获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你对非银色的非魔法武器造成的击打、刺穿和砍伤有抵抗力。",
+						"在你5英尺范围内，被近身攻击击中的生物会受到{@damage 1d6}坏死的伤害。",
+						"当你用武器攻击击中一个生物时，如果你在上一回合结束后受到任何伤害，你会重新获得与你的体质修正值相等的命中率（至少1个命中率）。"
+					]
+				},
+				"这个诅咒持续1分钟。如果你被击倒（%0%），它会提前结束。你也可以在你的回合中作为一个额外的动作结束这个诅咒。",
+				"一旦你使用这个功能，你必须完成一个短期或长期的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Plane Keeper",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"位面守护者保护世界免受来自其他位面的威胁，或试图用其他世界的魔法蹂躏凡人的境界。他们寻找平面传送门并对其进行监视，根据需要前往内层世界和外层世界追击敌人。这些猎人也是多元宇宙中任何力量的朋友--尤其是仁慈的龙、费伊和元素--它们致力于保护生命和各星球的秩序。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Plane Keeper|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Ethereal Step|Hunter|Hunter|Plane Keeper|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Force Chains|Hunter|Hunter|Plane Keeper|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Planar Warrior|Hunter|Hunter|Plane Keeper|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Plane Keeper Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}, {@spell sanctuary}"
+						],
+						[
+							"5th",
+							"{@spell misty step}, {@spell rope trick}"
+						],
+						[
+							"9th",
+							"{@spell blink}, {@spell haste}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell contact other plane}, {@spell dispel evil and good}"
+						]
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Ethereal Step",
+			"entries": [
+				"你可以在你的回合中使用你的猎人技术作为奖励动作，为自己注入星空能量，变得空灵。直到你的回合结束，你可以在其他生物和物体中移动，就像它们是困难的地形一样。如果你在一个物体或生物内结束你的回合，你会被弹出到最近的无人空间，并受到5点力量伤害。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Force Chains",
+			"entries": [
+				"当你用武器攻击击中一个生物时，你可以消耗你的猎人技术的一次使用，试图用平面能量束缚它。目标必须在力量救赎中获得成功，否则将在1分钟内受到（%0%）的伤害。如果目标是一个不属于你所在平面的生物，它将受到相当于你的猎人等级的额外力量伤害，并且在它被{@condition grappled}的时候被{@condition restrained}。受此能力影响的生物（%3%）可以使用一个动作对你的技巧救赎DC进行力量检查，成功后结束效果。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Planar Warrior",
+			"entries": [
+				"在3级的时候，你可以花1小时的时间与你持有的武器进行魔法结合，赋予它一个口袋平面，你可以从那里召唤它。当与武器结合时，你可以在你的回合中作为额外行动召唤它，在空间中打开一个通往武器口袋平面的裂缝。",
+				"你最多可以拥有两把绑定的武器，但每次只能用你的额外行动召唤一把。如果你试图与第三把武器结合，你必须与另外两把武器中的一把解除结合。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Spectral Defense",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"到了第七级，你在平面间移动的能力使你可以滑过平面边界，以减少战斗中对你造成的伤害。当你受到伤害时，你可以使用你的反应来使自己抵抗所有的伤害，直到该回合结束。"
+			]
+		},
+		{
+			"name": "Stutter Strike",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得了一眨眼就能在各个星球之间通行的能力。当你使用攻击动作时，你可以在每次攻击之前或之后传送到一个你能看到的无人空间，最多可以传送10英尺。如果你用这个动作攻击至少两个不同的生物，你可以用它对第三个生物进行一次额外的攻击。"
+			]
+		},
+		{
+			"name": "Astral Rift",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Plane Keeper",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你的星外经验赋予你在世界间的裂缝中行走的能力。当你在星界时，你可以使用你正常的移动速度。此外，你可以作为一个行动创造一个通往星界的裂缝，填充以你为起点的100英尺立方体。在1分钟内，该区域会被星界的精华所充满。除了你之外，区域内的每个生物都不能使用其正常的移动速度，而是有一个移动速度（以英尺为单位），等于3×其智力得分。",
+				"当一个生物在该区域内开始它的回合或在它的回合中第一次进入该区域时，你可以强迫它对你的猎人法术救赎DC做出智力救赎。拯救失败时，目标会受到{@damage 2d10}的精神伤害。如果它的救赎失败了5次或更多，它就会被（%1%），直到其回合结束。",
+				"一旦你创造了一个裂缝，你就不能再这样做，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Night Stalker",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"entries": [
+				"夜行者在最黑暗的地方安家：在地表下的深处，在阴暗的小巷，在原始森林，以及其他光线暗淡的地方。大多数人进入这些地方时都是战战兢兢的，但夜行者却大胆地进入黑暗，寻求伏击深层的威胁，如黄鼠狼、哥布林、哥布林和illithids。这样的猎人经常出现在暗黑世界，但他们会去任何有怪物潜伏在阴影中的地方。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Prey Spells|Hunter|Hunter|Night Stalker|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Deceive Senses|Hunter|Hunter|Night Stalker|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Technique: Dread Ambush|Hunter|Hunter|Night Stalker|Hunter|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Umbral Senses|Hunter|Hunter|Night Stalker|Hunter|3"
+				}
+			]
+		},
+		{
+			"name": "Prey Spells",
+			"entries": [
+				"你在所列的猎人等级中获得猎物法术。",
+				{
+					"type": "table",
+					"caption": "Night Hunter Spells",
+					"colLabels": [
+						"Hunter Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell alarm}, {@spell detect poison and disease}"
+						],
+						[
+							"5th",
+							"{@spell darkvision}, {@spell invisibility}"
+						],
+						[
+							"9th",
+							"{@spell clairvoyance}, {@spell nondetection}"
+						],
+						[
+							"13th",
+							"{@spell greater invisibility}, {@spell locate creature}"
+						],
+						[
+							"17th",
+							"{@spell mislead}, {@spell passwall}"
+						]
+					]
+				}
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Deceive Senses",
+			"entries": [
+				"作为一个行动，你可以消耗你的猎人技术的一个使用权来欺骗一个生物的感官。选择一个在你周围30英尺内的生物。目标必须在智慧救赎中成功，否则在1分钟内无法用视觉、嗅觉、听觉、盲目性或震颤感感知到你。它可以在每个回合结束时重复这个蓄力动作，如果成功则结束该效果。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Technique: Dread Ambush",
+			"entries": [
+				"当你掷出主动权并且没有受到惊吓时，或者作为你回合中的额外行动，你可以消耗你的猎人技术的一个使用权，使你自己披上乌黑的魔法，持续1分钟。在你施展法术、强迫生物进行蓄力或进行武器攻击之前，你的速度会增加（%0%），你的速度会增加10英尺。",
+				"如果该效果因对生物进行武器攻击而结束，攻击会造成相当于你的猎人等级的额外精神伤害。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Umbral Senses",
+			"entries": [
+				"在3级时，你在昏暗环境中的经验使你即使在光线不足的情况下也能发现事物。昏暗的光线不会对依赖视觉的检查造成不利影响。",
+				"此外，无法看到一个生物并不会使你对它的攻击卷轴处于劣势，只要该生物没有被你隐藏。"
+			],
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Cloak of Darkness",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你可以放空你的思想来隐藏你的存在。在昏暗的光线或黑暗中，你对任何能感知你的情绪或阅读你的思想的效果都是免疫的，并且对精神伤害有抵抗力。",
+				"此外，当你在黑暗中时，你对任何依赖暗视的生物来说，在黑暗中看到你是（%0%）。"
+			]
+		},
+		{
+			"name": "Symphony of the Night",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你可以对你周围的影子唱歌，扭曲它们来包围你。作为你回合的额外行动，你可以在你周围30英尺的范围内散发出一个黑暗的光环，直到你下一个回合开始。光环内的任何亮光都会变成暗光，而任何暗光都会变成黑暗。",
+				"此外，每当你用武器攻击击中处于昏暗光线或黑暗中的生物时，该生物会受到额外的（%0%）精神伤害。"
+			]
+		},
+		{
+			"name": "Shadow Clone",
+			"source": "Hunter",
+			"page": 1,
+			"className": "Hunter",
+			"classSource": "Hunter",
+			"subclassShortName": "Night Stalker",
+			"subclassSource": "Hunter",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，你已经学会了欺骗猎物的方法，同时打击他们的身体和心灵。当你站在昏暗的光线或黑暗中时，作为一个动作，你可以创造一个朦胧的自己的复制品，它出现在你的空间中，并持续到你作为一个额外的动作将其解散或再次使用此功能。如果复制品暴露在强光下，如果它受到火灾或辐射伤害，或者被任何驱散魔法的效果所针对，它就会立即被摧毁。",
+				"复制品的外观、重量、大小和气味都与你相同，并能像你一样发出声音。它没有思想，具有真实视力的生物可以感知到它是一个朦胧的物体，对复制品的攻击免疫。复制品对所有的伤害和效果都是免疫的，但对被击中的反应是真实的。它可以占据其他生物的空间。在你的回合中，你可以在精神上命令复制品向任何方向移动最多30英尺（不需要行动），到你能看到的空间。",
+				"当复制品在你的空间内时，没有真实视力或看不到复制品的生物在对你进行攻击时有劣势。当你在你的回合中采取攻击行动时，你可以像在复制品的空间中一样进行攻击，但你必须使用自己的感官。如果你这样做，攻击会造成精神伤害，而不是正常类型。",
+				"如果一个在复制品30英尺范围内的生物使用它的行动来检查它，该生物可以对你的法术救赎DC进行智力（调查）检查。如果成功，该生物可以将该复制品视为一团朦胧的黑暗，不受该复制品的攻击影响，并且在接下来的24小时内对所有由你创造的复制品进行智力（调查）检查时具有优势。",
+				"一旦你使用这个功能，你必须完成一个短期或长期的休息才能再次使用。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Ranger",
+			"subclassFeatures": [
+				"Ranger|Hunter|Hunter|Ranger|Hunter|3",
+				"Land's Stride|Hunter|Hunter|Ranger|Hunter|7",
+				"Expert Skirmisher|Hunter|Hunter|Ranger|Hunter|11",
+				"One With the Wild|Hunter|Hunter|Ranger|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Ranger",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Bounty Hunter",
+			"subclassFeatures": [
+				"Bounty Hunter|Hunter|Hunter|Bounty Hunter|Hunter|3",
+				"Multiattack Defense|Hunter|Hunter|Bounty Hunter|Hunter|7",
+				"Menacing Warrior|Hunter|Hunter|Bounty Hunter|Hunter|11",
+				"Misdirection|Hunter|Hunter|Bounty Hunter|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Bounty Hunter",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Dragon Slayer",
+			"subclassFeatures": [
+				"Dragon Slayer|Hunter|Hunter|Dragon Slayer|Hunter|3",
+				"Evasion|Hunter|Hunter|Dragon Slayer|Hunter|7",
+				"Elemental Resistance|Hunter|Hunter|Dragon Slayer|Hunter|11",
+				"Frightening Presence|Hunter|Hunter|Dragon Slayer|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Dragon Slayer",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Colossus Slayer",
+			"subclassFeatures": [
+				"Colossus Slayer|Hunter|Hunter|Colossus Slayer|Hunter|3",
+				"Uncanny Dodge|Hunter|Hunter|Colossus Slayer|Hunter|7",
+				"Coordinated Strike|Hunter|Hunter|Colossus Slayer|Hunter|11",
+				"Become Immense|Hunter|Hunter|Colossus Slayer|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Colossus Slayer",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Mage Hunter",
+			"subclassFeatures": [
+				"Mage Hunter|Hunter|Hunter|Mage Hunter|Hunter|3",
+				"Iron Mind|Hunter|Hunter|Mage Hunter|Hunter|7",
+				"Mage's Bane|Hunter|Hunter|Mage Hunter|Hunter|11",
+				"Battle Magic|Hunter|Hunter|Mage Hunter|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Mage Hunter",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Demon Slayer",
+			"subclassFeatures": [
+				"Demon Slayer|Hunter|Hunter|Demon Slayer|Hunter|3",
+				"Unshakable|Hunter|Hunter|Demon Slayer|Hunter|7",
+				"Undercut Resistances|Hunter|Hunter|Demon Slayer|Hunter|11",
+				"Regeneration|Hunter|Hunter|Demon Slayer|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Demon Slayer",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Horde Breaker",
+			"subclassFeatures": [
+				"Horde Breaker|Hunter|Hunter|Horde Breaker|Hunter|3",
+				"Escape the Horde|Hunter|Hunter|Horde Breaker|Hunter|7",
+				"Multiattack|Hunter|Hunter|Horde Breaker|Hunter|11",
+				"Horde Tactics|Hunter|Hunter|Horde Breaker|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Horde Breaker",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Blood Hunter",
+			"subclassFeatures": [
+				"Blood Hunter|Hunter|Hunter|Blood Hunter|Hunter|3",
+				"Profaned Blood|Hunter|Hunter|Blood Hunter|Hunter|7",
+				"Spilled Blood|Hunter|Hunter|Blood Hunter|Hunter|11",
+				"Blood Curse|Hunter|Hunter|Blood Hunter|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Blood Hunter",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Plane Keeper",
+			"subclassFeatures": [
+				"Plane Keeper|Hunter|Hunter|Plane Keeper|Hunter|3",
+				"Spectral Defense|Hunter|Hunter|Plane Keeper|Hunter|7",
+				"Stutter Strike|Hunter|Hunter|Plane Keeper|Hunter|11",
+				"Astral Rift|Hunter|Hunter|Plane Keeper|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Plane Keeper",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		},
+		{
+			"name": "Night Stalker",
+			"subclassFeatures": [
+				"Night Stalker|Hunter|Hunter|Night Stalker|Hunter|3",
+				"Cloak of Darkness|Hunter|Hunter|Night Stalker|Hunter|7",
+				"Symphony of the Night|Hunter|Hunter|Night Stalker|Hunter|11",
+				"Shadow Clone|Hunter|Hunter|Night Stalker|Hunter|15"
+			],
+			"source": "Hunter",
+			"shortName": "Night Stalker",
+			"className": "Hunter",
+			"classSource": "Hunter"
+		}
+	]
+}

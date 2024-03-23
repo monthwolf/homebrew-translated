@@ -1,0 +1,1496 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SoI",
+				"abbreviation": "SoI",
+				"full": "Sacrifice of Innocence",
+				"authors": [
+					"TragicMissile"
+				],
+				"convertedBy": [
+					"jimmypringles"
+				],
+				"version": "1.0.0",
+				"url": "http://averagedog.com/publish/Sacrifice%20of%20Innocence.pdf",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1619398800,
+		"dateLastModified": 1705266948,
+		"_dateLastModifiedHash": "0b39de2bc9"
+	},
+	"adventure": [
+		{
+			"name": "Sacrifice of Innocence",
+			"id": "SacrificeOfInnocence",
+			"source": "SoI",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/Sacrifice%20of%20Innocence.png"
+			},
+			"contents": [
+				{
+					"name": "Cover"
+				},
+				{
+					"name": "Introduction"
+				},
+				{
+					"name": "Overview"
+				},
+				{
+					"name": "Adventure Hook"
+				},
+				{
+					"name": "The Hamlet of Evermist"
+				},
+				{
+					"name": "Goblin Tracks"
+				},
+				{
+					"name": "The Crypt"
+				},
+				{
+					"name": "Return to Evermist"
+				},
+				{
+					"name": "Appendix A: Monsters & Magic Items"
+				},
+				{
+					"name": "Appendix B: Backstory"
+				},
+				{
+					"name": "Appendix C: Credits"
+				}
+			],
+			"level": {
+				"start": 1,
+				"end": 2
+			},
+			"published": "2018-03-03",
+			"storyline": "Starter Set"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "SacrificeOfInnocence",
+			"source": "SoI",
+			"data": [
+				{
+					"type": "section",
+					"name": "Cover",
+					"id": "Cover",
+					"entries": [
+						"潘德维尔失落的矿井》的前奏",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-01-cover.png"
+							},
+							"title": ""
+						},
+						"一个最多四个一级角色的冒险"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Introduction",
+					"id": "Introduction",
+					"entries": [
+						"受Matt Colville的{@i Running the Game}系列视频的启发，这个迷你冒险旨在帮助一小群新玩家提高他们的角色等级，这样他们就不会在{@i Lost Mine of Phandelver}的开始阶段被屠杀。在尝试{@i Goblin Arrows}之前，他们应该获得足够的经验来晋升到第二级。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Overview",
+					"id": "Overview",
+					"entries": [
+						"在永夜城以南20英里处，高路上的一个小村庄正遭受着地精的袭击。在最近的一次袭击中，一个铁匠的女儿被绑架了。",
+						"袭击者把孩子带到了东边15英里处的一个古老的墓穴里，就在永冬森林的边缘。目前她还活着，没有受到伤害，被锁在一个小铁笼子里。一个地精巫师正准备把她献给一个仪式，以清除墓穴中的亡灵。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Adventure Hook",
+					"id": "Adventure Hook",
+					"entries": [
+						{
+							"entries": [
+								"从{@i Lost Mine of Phandelver}的{@i Meet Me in Phandalin}钩子的修改版开始了这次冒险。"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"在永夜城，一个名叫冈德伦-洛克斯的矮人要求你把一马车的补给品带到城东南数日路程的范达林的粗犷定居点。冈德伦显然很兴奋，而且对他此行的原因有点保密，只说他和他的兄弟们发现了 \"大东西\"，而且他将支付你每人15个金币，以护送他的物资安全到达范达林的贸易站--巴特恩的物资。然后他骑着马在你前面出发了，还有一个叫西尔达-霍尔温特的战士护送，声称他需要提前到达 \"处理事务\"。",
+								"你在高路上行驶，就在永夜城南边的一天，这时你注意到拉着一车物资的两头牛中的一头已经一瘸一拐了。",
+								"现在是（%0%）（下午），前面有一个小村庄。"
+							]
+						},
+						{
+							"entries": [
+								"这头牛的蹄子上有血迹，是由于鞋子松动造成的。牛蹄可以由党来医治，但很明显，鞋子需要由铁匠来更换。"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-02-bloodyHoof.png"
+							},
+							"title": ""
+						},
+						{
+							"entries": [
+								"当一行人到达小村庄时，阅读以下内容。"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"在你的右边，一个圆柱形的石头瞭望塔在12英尺高的木栅栏后面隐约可见。在左边，飘渺的灰色烟雾从一家客栈的烟火中升起。再往后是一个杂货店和一个铁匠铺。一条坑坑洼洼的小路通向一个远离公路的大粮仓。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "The Hamlet of Evermist",
+					"id": "The Hamlet of Evermist",
+					"entries": [
+						"Evermist是一个粮食仓库，也是公路旅行者的休息站。来自东部农田的农作物在这里被加工，然后运送到永夜城。这个村庄位于道路的东侧，由一个（%0%）、一个（%1%）、一个（%2%）和一个（%3%）组成。在道路的西侧，有一个围栏围绕着一块古老的石头（%4%），小村庄依靠它来保护自己。所有居民都是人类。",
+						{
+							"type": "entries",
+							"name": "Dewdrop Inn",
+							"id": "Dewdrop Inn",
+							"entries": [
+								"客栈被烧成灰烬，还在冒烟，完全失去了意义。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Evermist Sundry",
+							"id": "Evermist Sundry",
+							"entries": [
+								"综合商店正在等待补给。对于冒险装备表上的任何特定物品，滚动1d4来确定是否有货。掷出1表示该物品没有库存。",
+								"柜台后面的商人Theos Wittram是一个身材修长、头发灰白、留着羊角胡子的老人。他可以向当事人提供以下信息。",
+								{
+									"type": "list",
+									"items": [
+										"自新月以来，Evermist在黑暗中受到了三次攻击。前两次攻击都被瞭望塔的驻军击退了。",
+										"最近的一次袭击就发生在这一天的（%0%）（黎明前），导致客栈被洗劫一空，铁匠的女儿被带走。一名驻军士兵在战斗中被杀。",
+										"在抢救了他们所能得到的东西之后，旅店老板和他的家人在这个{@i elsun}(深夜)出发前往永冬。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Noble Forge",
+							"id": "Noble Forge",
+							"entries": [
+								"铁匠铺比一般的大，包括一个马厩。后面还有生活区。",
+								"铁匠费拉斯-史崔克是个肌肉发达的男人，大约40岁，留着满脸的黑胡子。他将提供5个铜币给牛重新装上蹄子，但除此之外，很少说话。如果有人提到他的女儿，他就会开始流泪。",
+								"在聚会离开铁匠铺之前，请阅读以下文字。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"一个年轻女人冲进来，冲向铁匠。",
+										"她显然心烦意乱，开始用沙哑的声音恳求他，向你的方向打手势。铁匠摇摇头，吼道：\"我们没有半点财富，她肯定是被绑架了！\" 沮丧的妇女转向你，双手合十，恳求道：\"请找到我们的小女儿！\""
+									]
+								},
+								"在为自己的大胆行为道歉，然后介绍自己是费鲁斯的妻子后，玛格特会脱口而出。",
+								{
+									"type": "list",
+									"items": [
+										"他们的女儿在12个小时前被妖精带走了；她今年7岁，名字叫雷米。",
+										"瞭望台驻军的指挥官对妖精进行了悬赏。"
+									]
+								},
+								"玛格特将尽一切努力说服党派找到并带回雷米，不管是死是活。",
+								"如果队伍接受了这个任务，费拉斯会提出照顾这些牛，把它们和马车放在他的马厩里，直到队伍返回。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Watchtower",
+							"id": "Watchtower",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-03-killAllGobbos.png"
+									},
+									"title": ""
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"在主联盟的命令下，有六名{@creature Guard|MM|guards}(一名最近被杀)和{@creature Thorne the Scout|SoI|Thorne}，一名{@b scout}的驻军驻扎在此。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"这座古老的石制瞭望塔建在高地上，有六层楼高，可以俯瞰整个乡村。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"木制栅栏的正门敞开着。",
+										"两名守卫在放哨：一名在沿围墙内部的平台上巡逻，另一名从塔顶上扫描地平线。当他们接近大门时，会有人向他们打招呼。如果他们说了自己的事情，并且看起来不具威胁性，他们将被邀请进入。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"除了塔楼之外，该围墙还包括一个兵营、一个马厩和一个装有五匹马和一头骡子的围场。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"在院子的中央，三名警卫正在冷静地建造一个看起来像葬礼的火堆。一些鸡在附近徘徊。",
+										"队伍可以在院子里自由活动，但不允许进入兵营或塔楼。",
+										"索恩和守卫们都不知道这座塔的历史。勘察该塔并成功通过DC14智力（历史）检查的人物可以发现以下情况。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Elven Portal Tower",
+									"entries": [
+										"几千年前，伊勒法恩的精灵们建造了这样的塔楼，在艾林塔尔达（现在的沃特迪普）和伊鲁斯克（现在的卢斯坎）之间以固定的间隔矗立。塔内的传送门使精灵军队能够沿着北边的剑海岸快速部署。",
+										"虽然是为了抵御时间的摧残而建造的，但大多数的塔楼都被战争或背叛所摧毁。这座塔看起来战痕累累，但保存完好。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"虽然塔内仍有几个拱门（在第三层），但没有活跃的门户。",
+										"一名守卫会走到塔底的门前，提醒索恩，他正在里面起草给主盟的报告。索恩很疲惫，但很和蔼，他将来到外面，询问他能为党做些什么。如果被问及赏金，他会说地精的耳朵每只可以得到5银币。如果被问及突袭或火葬场的情况，他将分享以下内容。"
+									]
+								},
+								{
+									"type": "list",
+									"items": [
+										"在得知绑架事件后，他和他的手下追赶突袭者，并在东边五英里的一个池塘附近追上了他们。他们遭到了十几个地精的伏击，领头的是一个骑着虫子的霍布林。他们成功地杀死了沃格和三个地精，但在战斗中损失了一个自己的人。他们在黎明前脱离并回到了埃弗米斯特。",
+										"铁匠的女儿很受驻军的喜爱。追捕她是违反了他们维持哨所的长期命令。",
+										"他怀疑客栈被放火烧掉是为了转移注意力。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"在塔楼二楼索恩的住处有一个上锁的保险箱。箱子上标有红底金冠的图案，里面有400块银币。",
+										"如果队伍表示他们打算寻找雷米，索恩会建议他们轻装上阵，留下不需要的东西。虽然他不可能让他的卫兵再次从埃弗米斯特出发，但如果有角色提出要求并成功通过DC10魅力（说服力）检查，索恩本人将为队伍追踪这些妖精。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Thorne",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-04-thorne.png"
+											},
+											"title": ""
+										},
+										{
+											"type": "entries",
+											"entries": [
+												"驻军指挥官想铲除地精突袭者，并将该党视为实现这一目的的手段。",
+												"如果他不公开加入他们，他将秘密地跟随队伍并监视他们的进展。当他加入他们对墓穴外的地精的攻击时，角色们会意识到他的存在。",
+												"这个NPC可以帮助保持故事的正常进行，并保护玩家不受 \"全员死亡\"（TPK）的影响。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Granary",
+							"id": "Granary",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"这座没有窗户的大建筑从外面锁着，没有人住。里面的地板是用石头做的，用来晾晒脱粒的谷物。亚麻、燕麦、黑麦、玉米、大麦和小麦的麻袋靠着内墙堆放。干草阁里存放着成捆的干草。一个小的记录办公室里堆满了文书工作和分类账。",
+										"任何窥探或闯入这座建筑的人都会引起瞭望塔驻军的负面关注。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Goblin Tracks",
+					"id": "Goblin Tracks",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/haRYizt.jpg"
+							},
+							"title": ""
+						},
+						"如果索恩同意加入聚会，他将从塔楼上取回他的弓和箭筒，并从围场上选择一匹马。",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/JyPx48f.jpg"
+							}
+						},
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"夕阳提醒人们，时间正在消逝。寒冷的北风预示着秋天的结束和冬天的到来。月亮，几乎是满的，在黑暗中向东边招手。"
+							]
+						},
+						"从埃弗米斯特出来的路很明显，在月光下很容易找到。当队伍接近永夜森林时，农田逐渐让位于草地。",
+						"如果不把马车留在后面，它将限制旅行的速度，并否定任何隐身的尝试。",
+						{
+							"type": "entries",
+							"name": "Pond",
+							"id": "Pond",
+							"entries": [
+								"在埃弗米斯特正东5英里处，两个地精和一个虫子的尸体躺在一个池塘边。他们已经被斩首，头颅也不知所踪。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Skyglow",
+							"id": "Skyglow",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"脚印从池塘继续向东北方向延伸。在夜间行进时，他们会注意到北面低云下有微弱的光亮。成功通过DC7智慧（生存）检查，就会发现他们正绕过舵手之家南部。以下是常识。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Helm's Hold",
+									"entries": [
+										"这座坚固的修道院是法术瘟疫难民的避难所。目前处于戒严状态，只有白天有公务的访客（携带适当的文件或贿赂）才被允许进入；所有其他人都会被带到治安官那里或被拒绝。大门从黄昏到黎明都被封锁。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Stream",
+							"id": "Stream",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"在距离埃弗米斯特13英里处，小路消失了。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你来到一条宽阔的浅水河。妖精的足迹进入水中，但没有在另一边重新出现。过了小河，在东边你看到了一片黑暗森林的边缘。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"在不搜索上游的情况下继续追踪突袭者需要成功进行DC18智慧（生存）检查。",
+										"任何在上游（东南方向）搜索的角色都会自动重新发现突袭者在水中留下的足迹。任何在下游（西北方向）搜索的角色都应该掷出DC 5智慧（生存）检查，以辨认出这条河流是流向永冬的。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Forest",
+							"id": "Forest",
+							"entries": [
+								"逆流而上，足迹进入永夜森林，并持续一英里到达墓穴。如果角色们悄悄地旅行，并成功地进行灵巧（隐身）检查，对抗DC9的被动智慧（感知）得分，放哨的地精就不会注意到队伍，如果受到攻击也会感到惊讶。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "The Crypt",
+					"id": "The Crypt",
+					"entries": [
+						"Cragmaw地精最近发现了这个地下建筑群，并将其作为一个前沿作战基地。",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-07-cryptIsoMap.png"
+							},
+							"title": ""
+						},
+						{
+							"type": "entries",
+							"name": "1. Entrance",
+							"id": "1. Entrance",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"两个{@b goblin}哨兵坐在通向山坡的花岗岩拱门外。其中一个正在从一对头骨上刮肉。这些头骨是地精的，有锋利的牙齿。",
+										{
+											"type": "table",
+											"colLabels": [
+												"1d4",
+												"Goblin Patrol"
+											],
+											"colStyles": [
+												"text-align-center",
+												"text-align-left"
+											],
+											"rows": [
+												[
+													"1",
+													"1小时内返回"
+												],
+												[
+													"2",
+													"2小时内返回"
+												],
+												[
+													"3",
+													"3小时内返回"
+												],
+												[
+													"4",
+													"换班"
+												]
+											]
+										},
+										"在换班期间，又有两个{@creature Goblin|MM|goblins}从巡逻中回来，并进入墓室唤醒替代的哨兵。当替代者出现时，原来的哨兵就轮到他们巡逻了。",
+										"在一轮战斗之后（如果是惊奇的话，则是两轮），任何在外面战斗的地精都会试图撤退到地窖里，提醒并与祭祀室里的地精联合起来。",
+										"搜查被击败的地精（或检查这对头骨）并在DC 15智力（历史）检查中成功的人物可以认出这个部落。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Cragmaw Tribe",
+									"entries": [
+										"Cragmaw是一个在永夜森林和特里波尔小道上活动的妖精、虫人和霍布格林的部落。他们把牙齿磨得锋利，并保存着在战斗中牺牲的部落成员的头骨。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"索恩将帮助击败哨兵，但拒绝陪同队伍进入墓室，他坚持必须有人留在外面看守入口。然而，如果有必要，他将在稍后进入（凭直觉），以帮助党派避免TPK的发生。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "2. Offering Room",
+							"id": "2. Offering Room",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"三个（%0%）玩刀子游戏，而第四个在休息。休息的小妖精在池塘边受伤，只有2点生命值。",
+										"如果警觉到队伍的存在，地精会躲起来，集中攻击第一个踏入房间的角色。",
+										"房间里只有一个装着即将熄灭的火苗的火炉在勉强照明。石墙上刻着复杂的浮雕壁画，描绘了精灵和兽人的激烈战斗。对面墙上的一个拱门通向黑暗。空气中弥漫着烟雾和妖精的污秽，还有一丝丝香火的味道。",
+										"一个关于石壁画的角色，在DC20智力（历史）检查中获得成功，可以回忆起这个传说。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Elves of Iliyanbruen",
+									"entries": [
+										"这些壁画描绘了177 DR年断手部落被伊里安布伦的精灵们打败的情景。",
+										"伊利安布伦涵盖了永夜森林的大部分地区，由那些无视伊利法恩最后一个冕下的命令，从法鲁恩撤退到永夜的精灵组成。该次区域因在-111和-12 DR期间击退了从世界之脊南下的大量兽人群而闻名。伊利安布鲁恩在这里描述的战斗后崩溃了，因为它已经耗尽了自己保护北方的力量。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "3. Pressure Plate Trap",
+							"id": "3. Pressure Plate Trap",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-08-crank.png"
+									},
+									"title": ""
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"在楼梯顶端的人物会注意到左边墙上有一个齿轮状的洞。天花板上有三条长长的缝隙被烟雾遮住了，需要通过DC15智慧（感知）检查才能成功发现。走廊里没有灯光。在没有光源的情况下，只有拥有夜视能力的人物才能看到刻在楼梯底部的石板上的纹章。成功通过DC15智力（调查）检查后，可以确定这块旗杆石是一个压力板触发器。",
+										"当50磅或更多的重量被放在石板上时，会听到一声响亮的咔嚓声，然后三把镰刀从天花板的缝隙中掉下来。刀片会无害地越过触发压板的东西，并对靠近楼梯顶部的任何人造成2d4的砍伤，如果他们没有通过DC20的灵巧（杂技）检查。",
+										"在一次完整的挥舞之后，镰刀重新落下，并在顶部台阶上方以雷鸣般的铿锵声锁定，形成一个只有小型或微小生物才能挤过的屏障。",
+										"在拐角处的墙壁上还有一个齿轮状的洞。这个洞里有一个可移动的曲柄。转动这两个洞里的曲柄，就会逐渐将镰刀向天花板缩回，并重置陷阱。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "4. Hall of the Oathkeeper",
+							"id": "4. Hall of the Oathkeeper",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"通往这个房间的厚重的铁带橡木门是关闭的，但没有上锁。角色们如果避免触发压板陷阱，就会通过它听到诵经声。否则将是一片寂静，两个{@b goblins}和一个{@b hobgoblin}从另一边看着这扇门，等着看谁进来。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"一对火把照亮了地板中央的一个临时祭坛。两侧的半透明玉柱在左右两边的墙壁上投下舞动的绿色阴影。在房间的对面，一个身穿板甲的精灵的大型雕像正对着门。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"高高的天花板消失在刺鼻香氛的朦胧云雾中。",
+										"如果人物花了30个小时以上的时间到达这个房间（自绑架以来的42个小时）。",
+										"那么雷米就躺在祭坛上死了。否则，一个金色的圣杯、刀和香炉被小心翼翼地排列在祭坛之上，而雷米则蜷缩在雕像右侧的一个小铁笼子里。",
+										"雕像的底座上刻着一种任何精通精灵语的人物都能读懂的文字：（%0%）。",
+										"房间里的每个人都知道这个秘密的门。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Lhupo",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												"这个地精巫师相信，在即将到来的月食期间向马格卢比耶特神献祭，可以驱散使古墓中的亡灵复活的神秘魔法。",
+												"{@creature Lhupo the Goblin|SoI|Lhupo}有12点命中率，挥舞着一根{@item Wand of Eldritch Blast|SoI}。他将像个疯子一样战斗，在房间里疯狂地跳跃，同时用魔杖轰击。"
+											]
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-09-lhupo.png"
+											},
+											"title": ""
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-10-compass.png"
+									},
+									"title": ""
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-10-cryptMap.png"
+									},
+									"title": ""
+								},
+								{
+									"type": "entries",
+									"name": "Moop",
+									"entries": [
+										"这个地精圣徒没有武器。当战斗开始时，莫普会抓起祭坛上的圣杯、小刀和香炉，并试图逃离房间，逃回克拉格马乌城堡。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Surgok",
+									"entries": [
+										"妖精刚刚清理完一个虫子的头骨，心情很不好。死去的虫子是他的坐骑和朋友。",
+										"{@creature Surgok the Hobgoblin|SoI|Surgok} 聪明地战斗。这包括首先攻击弱小的对手，利用掩护，如果没有更好的目标，则遣散垂死的敌人。如果萨满被杀，战斗进展不顺利，他将考虑这些选择。",
+										{
+											"type": "list",
+											"items": [
+												"从秘密的门中退去。",
+												"试图从南门逃跑。",
+												"脱离后跪在地上，献出他的剑以示投降。(如果他们接受，他不会背叛党，但如果他的投降被拒绝，他将战斗到死。）"
+											]
+										},
+										"秘密的门从南面推开，按在墙上。如果没有被堵住，它会自己慢慢重新关闭。门的北侧有一个金属拉环。要注意到北面墙壁上的杂物已经被清除，需要成功进行DC12智慧（感知）检查。",
+										"搜索该区域的人物只要成功地进行DC 8智力（调查）检查，就能找到这扇秘门。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@item Wand of Eldritch Blast|SoI}",
+												"金色的仪式用具--一个圣杯、一把刀和一个香炉--分别价值150金币、60金币和120金币。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "5. Tomb",
+							"id": "5. Tomb",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-10-tombSkeleton.png"
+									},
+									"title": ""
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"一条短的走廊通向一个漆黑的房间，里面有七具石棺。远处的石棺比其他的石棺更加华丽，两边是两个箱子。箱子没有上锁，里面只有沙子。",
+										"如果当事人打开一个石棺，请阅读以下内容。"
+									]
+								},
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"石棺内有一具身穿精灵盔甲的骷髅。",
+										"你注意到其他棺材的盖子开始移动时，有磨石的声音！你被惊扰的骷髅通过空洞的眼眶盯着你，一只骨质的拳头里有一把长剑。被你打扰的骷髅通过空洞的眼窝盯着你，它从石棺里爬出来，一只瘦骨嶙峋的拳头上握着一把长剑。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"如果一方有半兽人，来自华丽棺材的骷髅所挥舞的（%0%）会发出柔和的赭色光芒。",
+										"不允许这七只{@creature Tomb Skeleton|SoI|skeletons}同时攻击聚会，这一点非常重要。使用下面的表格，允许党派攻击从棺材中出现的骷髅，同时限制出现的骷髅攻击党派。"
+									]
+								},
+								{
+									"type": "table",
+									"colLabels": [
+										"Round",
+										"Emerging",
+										"In the Fight"
+									],
+									"colStyles": [
+										"text-align-center",
+										"text-align-center",
+										"text-align-center"
+									],
+									"rows": [
+										[
+											"1",
+											"1个骨架",
+											"0个骨架"
+										],
+										[
+											"2",
+											"2个骷髅头",
+											"1个骨架"
+										],
+										[
+											"3",
+											"4个骨架",
+											"3个骷髅头"
+										],
+										[
+											"4",
+											"0个骨架",
+											"7个骷髅头"
+										]
+									],
+									"caption": "Skeletons"
+								},
+								{
+									"type": "entries",
+									"name": "Treasure",
+									"entries": [
+										{
+											"type": "list",
+											"items": [
+												"{@item Horde Sword|SoI}"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Return to Evermist",
+					"id": "Return to Evermist",
+					"entries": [
+						"当一行人走出墓室时，索恩会等着护送他们和雷米（或她的尸体）回到埃弗米斯特。",
+						{
+							"type": "entries",
+							"name": "Blood Moon Eclipse",
+							"id": "Blood Moon Eclipse",
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-11-bloodMoonEclipse.png"
+									},
+									"title": ""
+								},
+								{
+									"type": "entries",
+									"name": "",
+									"page": 0,
+									"entries": [
+										"根据前往地窖和入侵地窖的时间长短，角色们可能会目睹塞鲁恩的全食，它发生在太阳第二次落下后的午夜之前。在事件发生前后的几个小时内，月亮会变成红色。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "On the High Road again",
+							"id": "On the High Road again",
+							"entries": [
+								"当人物完成了在Evermist的任务并准备继续前往Phandalin时，允许他们在向南旅行时提升人物的等级。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Experience",
+							"id": "Experience",
+							"entries": [
+								"如果雷米活着回到父母身边，将900XP平分给各角色，如果死了，300XP。",
+								"每打败一个哥布林和骷髅，就在人物之间平分50XP，哥布林为100XP。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Goblin Arrows",
+							"id": "Goblin Arrows",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"在离开埃弗米斯特后的第二天，你向东转入特里波尔小道。你在路上没有遇到任何麻烦，但你现在进入的领土可能很危险。众所周知，土匪和亡命之徒一直潜伏在这条小道上。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										"继续进行{@i Lost Mine of Phandelver}冒险的第6页的{@i Goblin Ambush}。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/aSlNSvt.png"
+									},
+									"title": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix A: Monsters & Magic Items",
+					"id": "Appendix A: Monsters & Magic Items",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"{@creature Goblin|MM}",
+								"{@creature Surgok the Hobgoblin|SoI}",
+								"{@creature Lhupo the Goblin|SoI}",
+								"{@creature Tomb Skeleton|SoI}",
+								"{@creature Thorne the Scout|SoI}",
+								"{@creature Guard|MM|Watchtower Guard}",
+								"{@item Horde Sword|SoI}",
+								"{@item Wand of Eldritch Blast|SoI}"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-12-hordeSword.png"
+							},
+							"title": ""
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix B: Backstory",
+					"id": "Appendix B: Backstory",
+					"entries": [
+						"这一部分包含了一些额外的细节，这些细节并不是运行冒险所必需的，但可以帮助为世界注入活力，增强真实性。",
+						{
+							"type": "entries",
+							"name": "Forgotten Realms",
+							"id": "Forgotten Realms",
+							"entries": [
+								"{@i Sacrifice of Innocence}坚持既定的{@i Forgotten Realms}传说，这是{@i Lost Mine of Phandelver}的设定。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dale Reckoning",
+							"id": "Dale Reckoning",
+							"entries": [
+								"这一年是1481 DR。这是从启动集的一个角色的背景故事中得出的，其中提到霍特诺火山在30年前消灭了科林山。火山是在公元1451年爆发的。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gundren Rockseeker",
+							"id": "Gundren Rockseeker",
+							"entries": [
+								"本模块后面有一张旅行地图，供矮人在冒险开始前交给党员。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "High Road",
+							"id": "High Road",
+							"entries": [
+								"白天交通繁忙，到了晚上则逐渐减少，因为大多数旅行者都在受保护的城镇的旅馆里停留。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Innkeeper and his family",
+							"id": "Innkeeper and his family",
+							"entries": [
+								"在永无止境（Neverwinter）和永无止境（Evermist）之间，人们可能已经注意到一个满身煤灰的家庭在一辆重载的骡车旁向北行走。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Theos Wittram",
+							"id": "Theos Wittram",
+							"entries": [
+								"在客栈被烧毁之前，店主在客栈有一个固定的房间。他现在打算睡在自己的店里，吃自己的口粮，直到客栈重建。他故意推迟补给，以减少地精突袭的损失。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Margot Stryker",
+							"id": "Margot Stryker",
+							"entries": [
+								"铁匠的妻子有法术能力，每天可以给金属物品注入一次野生魔法，效果可疑。",
+								{
+									"type": "table",
+									"colLabels": [
+										"2d20",
+										"Effect on Metal Object"
+									],
+									"colStyles": [
+										"text-align-center",
+										"text-align-left"
+									],
+									"rows": [
+										[
+											"2",
+											"爆炸"
+										],
+										[
+											"3-8",
+											"消失（随机传送）。"
+										],
+										[
+											"9-14",
+											"脆性（容易碎裂）"
+										],
+										[
+											"15-27",
+											"无影响"
+										],
+										[
+											"28-33",
+											"魔力+0"
+										],
+										[
+											"34-39",
+											"神奇的+1（发蓝光：烛光）。"
+										],
+										[
+											"40",
+											"魔法+2（发蓝光：手电筒）。"
+										]
+									]
+								},
+								"玛格特从未遇到过物体爆炸的情况，也不知道这种情况会发生。如果它发生了，她和20英尺范围内的每个人都会受到2D6的穿刺伤害，除非他们成功地做了一个灵巧的救赎动作（DC15）来获得一半伤害。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Ferrus Stryker",
+							"id": "Ferrus Stryker",
+							"entries": [
+								"铁匠在矮人中长大，在压力下往往会像矮人一样说话。",
+								"如果雷米能活着回来，他就会认为自己对党有恩，并永远免费为他们提供铁匠服务。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Remi Stryker",
+							"id": "Remi Stryker",
+							"entries": [
+								"孩子已经脱水，在返回埃弗米斯特的路上会紧紧地抱住索恩。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Thorne",
+							"id": "Thorne",
+							"entries": [
+								"主盟发给他400银币的小强箱，用来支付地精的赏金。",
+								"如果他们同意留下冈德伦的物资作为抵押，索恩可以允许他们借马来完成任务。马车和牛将被固定在栅栏内。",
+								"万一人物行为不端，被塔楼的驻军逮捕，索恩会兴高采烈地在警卫的护卫下把他们赶到地窖，强迫他们作为义务兵完成任务。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Farmlands",
+							"id": "Farmlands",
+							"entries": [
+								"典型的农舍是一个带有壁炉的单间小屋。大多数农户的主要住所都在永夜城或赫尔姆港，在那里他们的财产会受到保护，不会被强盗抢走。因为众所周知，平房里没有任何有价值的东西，它们在种植和收获季节提供了相当安全的睡眠和饮食场所。只有最贫穷的农家才常年住在山寨里。",
+								"收获季节即将结束；大多数小屋都没有人居住。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Meadowlands",
+							"id": "Meadowlands",
+							"entries": [
+								"在农田和森林之间是连绵起伏的高草丘陵，是许多小动物和鹿的家园。溪流和水洞很常见。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Cragmaw Goblins",
+							"id": "Cragmaw Goblins",
+							"entries": [
+								"地窖里的地精知道克拉玛依城堡的位置，但不知道克拉玛依藏身处，也不知道特里波尔小道上的伏击。",
+								"他们没有必要携带硬币，因为他们很少有机会花钱。有价值的物品会被带到克拉格马乌城堡，以讨好格罗尔国王。",
+								"如果祭祀室里的妖精们没有被惊动，角色们可能会听到妖精的押韵声，其中还夹杂着刀子的快速撞击声。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"＊哦 我的手指都有了 ＊刀子劈来劈去 ＊如果我错过了中间的空隙 ＊我的手指就会脱落 ＊如果我打中了我的手指 ＊血很快就会流出来 ＊但同样我玩这个游戏 因为这就是游戏的意义 ＊哦。劈劈啪啪 劈劈啪啪 我在加快速度 ＊如果我撞到手指 ＊我的手就会开始流血＊"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Crypt",
+							"id": "The Crypt 2",
+							"entries": [
+								"法术瘟疫的能量破坏了古老的守护咒语，这些咒语保护并掩盖了这个墓穴数个世纪。残余的魔力沉淀在墓穴中，使阿兰-诺德莱勋爵和与他同葬的六位副官的骸骨变得生动。",
+								"这个墓室是由哈鲁伊斯-诺夫勋爵委托建造的，以纪念阿兰勋爵坚守保护法鲁恩的誓言并拒绝撤退到埃弗梅特。阿兰领主和他的副官们在巨大的困难中反复战斗，最终在一场扭转战局的关键战役中牺牲了自己的生命（在祭祀室中有所描述）。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Lhupo",
+							"id": "Lhupo",
+							"entries": [
+								"巫师知道坟墓里有亡灵，但不知道是哪一种。在将雷米献给马格鲁比耶特后，他计划将她的血收集到金杯中，然后倒在石棺上，完成他的仪式。",
+								"Lhupo是一个 \"booyahg鞭子\"（控制着1d3个其他的妖精，这些妖精奴颜婢膝地服从他的命令）和一个 \"booyahg挥舞者\"（发现了一个魔法物品并学会了如何使用它）。他相信马格卢比耶特通过预兆与他交流。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Moop",
+							"id": "Moop",
+							"entries": [
+								"如果圣徒设法带着祭祀工具逃走，他就会把它们送回克拉格玛城堡。如果党派阻止了这一情况的发生，那么圣杯、小刀和香炉就会从地精祠堂中消失。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Surgok",
+							"id": "Surgok",
+							"entries": [
+								"格罗尔国王命令妖精护送Lhupo和Moop到地窖，并在仪式结束后，回到克拉格马夫城堡。",
+								"苏戈克是驻扎在霍布林兵营的四个霍布林之一。",
+								"如果他向党组织投降，苏尔戈克将期望被赎回他的人民，或以自由为交换条件。如果允许他有机会逃跑，他就会抓住机会。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tomb Chests",
+							"id": "Tomb Chests",
+							"entries": [
+								"这些箱子履行了哈鲁伊斯大人在阿兰大人确认效忠伊利安布伦时所作的象征性承诺。它们包含了来自埃弗米特岛东岸和西岸的沙滩沙。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix C: Credits",
+					"id": "Appendix C: Credits",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"",
+								"",
+								"",
+								"",
+								""
+							],
+							"colStyles": [
+								"text-align-right",
+								"text-align-center",
+								"text-align-center",
+								"text-align-center",
+								"text-align-left"
+							],
+							"rows": [
+								[
+									"Scott Tolksdorf",
+									"自酿啤酒厂"
+								],
+								[
+									"马特-科尔维尔",
+									"运行游戏"
+								],
+								[
+									"海岸魔法师",
+									"5e入门套装"
+								],
+								[
+									"埃里克-贝莱尔",
+									"艺术作品"
+								],
+								[
+									"Svetlana Sewell",
+									"艺术作品"
+								],
+								[
+									"凯尔-卡普斯",
+									"等高线地图"
+								],
+								[
+									"尤里-切梅佐夫",
+									"艺术作品"
+								],
+								[
+									"Svetlin Velinov",
+									"艺术作品"
+								],
+								[
+									"锈迹斑斑的笼子",
+									"小刀游戏之歌"
+								]
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-14-ferrusStryker.png"
+							},
+							"title": ""
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-14-rune.png"
+							},
+							"title": ""
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/MEzEvya.jpg"
+							},
+							"title": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Horde Sword",
+			"source": "SoI",
+			"baseItem": "longsword|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8+2",
+			"dmgType": "S",
+			"dmg2": "1d10+2",
+			"entries": [
+				"你对兽人、半兽人和兽人的攻击和伤害卷获得+2的奖励。",
+				"当附近有兽人生物时，这把刀会发出赭色的光芒，当洒下兽人的血时，会发出耀眼的光芒。"
+			]
+		},
+		{
+			"name": "Wand of Eldritch Blast",
+			"source": "SoI",
+			"type": "WD",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"reqAttune": true,
+			"weight": 1,
+			"recharge": "special",
+			"charges": 13,
+			"entries": [
+				"这根魔杖有13个电荷。拿着它的时候，你可以用一个动作消耗一个电荷来施放（%0%）的咒语。使用你的魅力修改器和熟练度加成对目标进行一次远程攻击。一旦命中，目标会受到{@dice 1d10}武力伤害。",
+				"当魔杖与施法者相配时，可以产生不止一个光束：5级时有两个光束，11级时有三个光束，17级时有四个光束。你可以将光束指向同一目标或不同目标。为每个光束做一个单独的攻击卷。每一个额外的光束会消耗一个额外的电荷。",
+				"魔杖每天在日落时分重新获得{@damage 2d6+1}已消耗的电荷。如果你消耗了魔杖的最后一次充电，请掷出{@dice 1d20}。1的话，魔杖就会碎裂成灰尘并被摧毁。"
+			],
+			"attachedSpells": [
+				"Eldritch Blast"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Surgok the Hobgoblin",
+			"source": "SoI",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8+2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Goblin",
+				"Worg"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"每回合一次，妖精可以对它用武器攻击击中的生物造成额外的7（（%0%））伤害，如果该生物在妖精的盟友的5英尺范围内，而该盟友不是（%1%）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h} 5 ({@damage 1d8+1})砍击伤害，如果双手使用，则为6 ({@damage 1d10+1})砍击伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 3}击中，范围150/600英尺，一个目标。{@h} 5 ({@damage 1d8+1})穿刺伤害。"
+					]
+				}
+			],
+			"tokenUrl": "https://5etools-mirror-1.github.io/img/MM/Hobgoblin.png",
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "Lhupo the Goblin",
+			"source": "SoI",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 12,
+				"formula": "2d6+5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"可以在他的每个回合中采取{@action Disengage}或{@action Hide}的行动作为额外行动。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Wand of Eldritch Blast",
+					"entries": [
+						"{@atk rw} {@hit 1}击中，范围120英尺，一个目标。{@h} 5 ({@damage 1d10})武力伤害。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-token-lhupo.png",
+			"miscTags": [
+				"RW"
+			]
+		},
+		{
+			"name": "Tomb Skeleton",
+			"source": "SoI",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead"
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8+4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"understands Elvish, but can't speak"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个目标。{@h} 4 ({@damage 1d8})砍击伤害，如果双手使用，则是5 ({@damage 1d10})砍击伤害。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SoI/SoI-token-tombSkeleton.png",
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "Thorne the Scout",
+			"source": "SoI",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8+3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 12,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5",
+				"nature": "+4"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"在依靠听觉或嗅觉的智慧（感知）检查方面具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"可进行两次近战攻击或两次远程攻击"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h} 5 ({@damage 1d6+2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围150/600英尺，一个目标。{@h} 6 ({@damage 1d8+2})穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			]
+		}
+	]
+}

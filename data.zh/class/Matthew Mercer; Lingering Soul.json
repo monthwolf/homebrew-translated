@@ -1,0 +1,788 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Lingering Soul",
+				"abbreviation": "CR:LS",
+				"full": "Lingering Soul",
+				"authors": [
+					"Matthew Mercer"
+				],
+				"convertedBy": [
+					"544220340675412000"
+				],
+				"version": "1.1",
+				"url": "https://www.dmsguild.com/product/226513",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 1668987711,
+		"_dateLastModifiedHash": "de32523173"
+	},
+	"class": [
+		{
+			"name": "Lingering Soul",
+			"source": "Lingering Soul",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"con"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"none"
+				],
+				"tools": [
+					"none"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"history",
+								"investigation",
+								"insight",
+								"intimidation",
+								"perception",
+								"religion",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@filter simple weapons|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item dungeoneer's pack|phb} (b) an {@item explorer's pack|phb}",
+					"a trinket"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": []
+					}
+				]
+			},
+			"fluff": [
+				{
+					"source": "Lingering Soul",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "The Lingering Soul",
+							"entries": []
+						},
+						{
+							"type": "entries",
+							"name": "An Optional Class or Death Alternative for 5th Edition Dungeons & Dragons.",
+							"entries": [
+								"死亡率。所有呼吸的人都害怕死亡的冰冷控制，即承诺的结束。这是驱动许多历史的原始恐惧，而来世安息的承诺给任何寺庙的影响带来了重量。",
+								"不幸的是，你的来世并不那么安宁。你被砍死了，任其自生自灭，而你的灵魂现在还在，当你充满恐惧、愤怒和疑问时，无法继续活下去。捆绑在任何能将你固定在活人世界的符号上，你感觉到对答案的渴望与你对复仇的需求相抗衡，因为你学会了控制这个虚无缥缈的存在，被推到了你身上。",
+								"在仍然活着的盟友的帮助下，你继续追求你的目标，使用你的幽灵天赋来吓唬、操纵和控制那些会阻碍你的人。从一个身体跳到另一个身体，从你的敌人手中夺取控制权，当你把他们送到比你更糟糕的命运时，你继续为另一个生命的机会而战......或者拥抱你的鬼魂天赋，做活着的凡人不能做的事，永远与不死的诅咒所包含的寒冷和饥饿的冲动斗争。",
+								"{@i This is a complicated class the DM can offer as a choice upon character creation, or offered by the DM when a player character death is surrounded by enough violence or mystery to cause the soul to cling to the mortal world. It can allow the continued play of a beloved character when resurrection is unavailable, or as a reward for a party seeking to restore the narrative lost when a central figure has fallen. Players should not be able to select to become a Lingering Soul upon death; it should be offered with good reason, and it should be an option granted sparingly.}"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Lingering Soul.",
+							"entries": [
+								"当你踏入游魂的世界时，要注意导致你死亡的情况。对于相关的地方或人，恐惧或愤怒可能永远根植于你内心。复仇心驱使着那些在他人手中遭遇不公正结局的灵魂，你的意志可能会推动你为不正当的死亡报仇。其他人可能会在他们达到目标时留下来保护他们的朋友，让你来引导他们沿着你所追求的希望前进。是什么理想让你的灵魂留在活人的世界里？",
+								"这可能是一个具有挑战性的等级，无论是对玩家还是对地下城主来说。作为一个灵魂游荡者，玩家可以获得一些非常有用的实用功能、生存技巧，以及处理大多数战斗遭遇的独特方式。它还可以让堕落的角色在目前无法使用魔法恢复的情况下继续游戏。然而，如果不小心，这些能力中有许多会导致危险的情况。他们还遭受着较低的命中率，普遍缺乏护甲，以及迫在眉睫的永久死亡的威胁。",
+								"值得注意的是，游魂无法进行多类。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"遵循这些建议，你可以迅速做出一个缠绵的灵魂。首先，如果你打算发展成一个鬼魂，让力量或灵巧成为你的最高能力得分。或者，如果你想成为一个巫师，你可以把灵巧或智力作为你的最高能力得分，如果成为一个精神守护者是你的风格，就选择智慧或魅力。接下来，投资于更高的体质，因为治疗和生存可能被证明是有风险的。然后，选择与你死前生活相称的背景。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Taking over a Dead Character",
+							"entries": [
+								"如果一个死去的玩家角色以游魂的身份回归，他们会失去之前所有的等级和能力，而以游魂的等级数量回归，等于比他们之前的角色等级少一个。他们保留了生前知道的任何语言，以及种族利益和能力，但失去了所有之前的技能熟练度、蓄力熟练度、特技，以及通过等级获得的能力得分提升。"
+							]
+						}
+					],
+					"type": "entries"
+				}
+			],
+			"classFeatures": [
+				"Spirit Binding|Lingering Soul|Lingering Soul|1",
+				{
+					"classFeature": "Phantom Calling|Lingering Soul|Lingering Soul|1",
+					"gainSubclassFeature": true
+				},
+				"Ghostly Form|Lingering Soul|Lingering Soul|1",
+				"Possession|Lingering Soul|Lingering Soul|2",
+				"Consume Enchantment|Lingering Soul|Lingering Soul|3",
+				"Ability Score Improvement|Lingering Soul|Lingering Soul|4",
+				"Pervade the Fallen|Lingering Soul|Lingering Soul|5",
+				"Unseen Passenger|Lingering Soul|Lingering Soul|5",
+				{
+					"classFeature": "Phantom Calling Feature|Lingering Soul|Lingering Soul|6",
+					"gainSubclassFeature": true
+				},
+				"Obfuscate|Lingering Soul|Lingering Soul|7",
+				"Ability Score Improvement|Lingering Soul|Lingering Soul|8",
+				"Xenoglossia|Lingering Soul|Lingering Soul|9",
+				"Supernatural Body|Lingering Soul|Lingering Soul|10",
+				{
+					"classFeature": "Phantom Calling Feature|Lingering Soul|Lingering Soul|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Lingering Soul|Lingering Soul|12",
+				"Piercing Chill|Lingering Soul|Lingering Soul|13",
+				"Ghastly Visage|Lingering Soul|Lingering Soul|14",
+				{
+					"classFeature": "Phantom Calling Feature|Lingering Soul|Lingering Soul|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Lingering Soul|Lingering Soul|16",
+				"Eternal Spirit|Lingering Soul|Lingering Soul|17",
+				"Possession Mastery|Lingering Soul|Lingering Soul|18",
+				"Ability Score Improvement|Lingering Soul|Lingering Soul|19",
+				"Ravage Soul|Lingering Soul|Lingering Soul|20"
+			],
+			"subclassTitle": "Phantom Callings"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spirit Binding",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 1,
+			"entries": [
+				"从1级开始，你必须选择一个你所选择的物体或生物（可以是传家宝、武器或盟友）来无限期地绑定。你必须始终保持在你的绑定目标的150英尺范围内，如果该物体或生物离开你的150英尺半径，你就会被拖着走。你总是能意识到你绑定的物体或生物与你的关系。",
+				"如果物体被毁，或生物被杀，你会立即下降到0点生命值。如果你在没有精神结合的情况下恢复意识，你必须立即在150英尺范围内选择一个新的物体或生物与之结合。如果没有任何东西可供结合，你就会瘫痪，直到150英尺内有物体或生物可供你结合。"
+			]
+		},
+		{
+			"name": "Phantom Calling",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 1,
+			"entries": [
+				"从1级开始，你选择一种幻影召唤来确定你的精神旅程的路径。你可以选择Poltergeist, Wraith, 或者Spirit Guardian，所有这些都在等级描述的末尾有详细说明。你选择的召唤在1级时赋予你特性，在6级、11级和15级时再次赋予你特性。",
+				"你选择的幻影呼唤将定义你的一个能力分数，作为现在定义你在死亡后的特征，称为你的方面。这个能力分数的修正值也作为你在灵魂萦绕特征方面的方面修正值。",
+				"你的某些 \"灵魂萦绕 \"功能需要你进行一次Aspect攻击，或者你的目标需要进行一次蓄力来抵抗功能的效果。修饰符和蓄力符的计算方式如下。",
+				{
+					"type": "abilityDc",
+					"name": "Lingering Soul save DC",
+					"attributes": [
+						"int"
+					]
+				},
+				{
+					"type": "abilityAttackMod",
+					"name": "Aspect Attack modifier",
+					"attributes": [
+						"int"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ghostly Form",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 1,
+			"entries": [
+				"在第一级时，你的肉体不再存在，你新的、幽灵般的形态存在于境界之间的空间。你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你的生物类型是亡灵，你在所有法术、能力和效果方面都被视为亡灵。",
+						"你在5英尺范围内发出相当于暗光的冷光。",
+						"你不能实际携带任何物体或穿戴设备。你也不再需要吃喝，也不能获得任何需要摄入的物体或物质的好处。",
+						"当你没有附身在一个生物身上时，你对来自非魔法武器的击打、穿刺和切割伤害有抵抗力。",
+						"你对毒药伤害和中毒状况免疫。",
+						"你对俯卧、被抓、被束缚和被石化的情况免疫。",
+						"你可以在其他生物和物体中移动，就像它们是困难的地形一样。如果你在一个物体内结束你的回合，你会受到1d10力的伤害。",
+						"你以每回合60英尺的速度坠落，并且不会受到坠落伤害。",
+						"你仍然按惯例进行短期或长期休息，以使用命中率和恢复能力的使用，但不需要睡眠。",
+						"如果你的生命值下降到0，你就会开始消退。你被认为是无意识的，可以像正常人一样进行死亡拯救。如果你三次死亡自救失败，你的灵魂就会枯萎在乙醚中。你的灵魂被扔进了阴间的地窖，除了使用许愿咒语外，无法恢复或复活。",
+						"如果你通过法术或复活效果复活，你会立即失去所有的 \"游魂 \"等级，并以之前活着的自己的身份回归生活。你会在你原来的等级中获得与死亡时相同的等级，另外在作为灵魂游戏时，每获得一级的游魂就会增加一个角色等级。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Possession",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 2,
+			"entries": [
+				"从2级开始，你发现有能力进入其他生物的身体并影响它们的行动。作为一个额外的动作，你可以尝试在你5英尺范围内占有一个生物。该生物必须在 \"魅力救赎 \"中成功，否则将被附身。",
+				"当附身于一个生物时，你的身体与宿主占据相同的空间，并且不可见。你不能成为任何攻击或法术的目标或受其影响，但你受到的伤害等于被附身时对宿主造成的任何伤害的一半。如果宿主移动，你也跟着移动。你只能体验到宿主所看到和听到的东西，并能与他们进行心灵感应。你只能在占有宿主时使用指定用途的功能。",
+				"被附身的生物在它的回合中行动如常。然而，你可以用你的行动迫使被附身的生物对范围内你所选择的目标进行一次即时的武器攻击，在造成的伤害上加上你的Aspect修改器。你可以用你的行动迫使被附身的生物向你选择的方向冲去，或者采取躲避行动。",
+				"这个附身一直持续到宿主的生命值降到0，你的生命值降到0，或者你被驱散邪恶和善的咒语或转化为亡灵的能力等效果所逼出。然后你会重新出现在该生物5英尺内的一个无人空间。你可以选择在你的回合开始时免费结束你的附身。宿主生物在附身术成功后或附身结束后的24小时内对你的附身有免疫力（除非该生物希望如此）。"
+			]
+		},
+		{
+			"name": "Consume Enchantment",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 3,
+			"entries": [
+				"在3级的时候，你已经学会了如何从强大的物品中吸收强大的奥术魔法。你可以花一个小时来吸收一件魔法物品的神秘属性。当一小时的仪式完成后，该魔法（以及任何附庸）会无限期地与你的鬼魂形态结合，使该物品失去活力。你最多有五个魔法可以通过这种方式与你结合，其中三个是需要调和的魔法（这个过程使它与你调和）。要消耗超过五个的新魔法，你必须永久地抛弃你所拥有的现有魔法。",
+				"你所消耗的武器魔法可以应用于你进行的任何物理或武器攻击。如果你附身在一个宿主身上，你可以将你消耗的一个武器魔法应用于你强迫他们用非魔法武器进行的任何攻击。",
+				"有些物品和人工制品不能以这种方式消耗（DM的判断）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和通常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Pervade the Fallen",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 5,
+			"entries": [
+				"从5级开始，你的附身能力已经足够熟练，可以利用被杀生物的躯壳作为容器。你的附身能力现在可以针对你周围5英尺范围内的生物尸体，并且该尸体会自动使他们的拯救动作失败。这种占有在1分钟后结束。宿主的尸体被认为有1个命中点，并开始俯卧。你可以使用你的移动能力以你的速度移动宿主的尸体。如果宿主的尸体被降低到0点，或者附身结束，它就会被摧毁，不能再被附身。"
+			]
+		},
+		{
+			"name": "Unseen Passenger",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 5,
+			"entries": [
+				"从5级开始，你变得更善于控制和操纵你的宿主的身体。如果一个生物不知道你的存在，你可以尝试在他们不知道的情况下占有他们，用目标的智慧（感知）检查来争夺灵巧（隐形）检查。每当你强迫宿主做任何事情时，他们都可以对你的 \"灵魂萦绕 \"进行智慧（洞察力）检查。一旦成功，他们就会意识到你对他们的占有。"
+			]
+		},
+		{
+			"name": "Phantom Calling Feature",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的幻影召唤所赋予的特性。"
+			]
+		},
+		{
+			"name": "Obfuscate",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 7,
+			"entries": [
+				"7级时，从7级开始，你可以暂时变成无体，以避免受到针对你的攻击。当一个你能看到的攻击者用攻击击中你时，你可以用你的反应将攻击对你的伤害减半。",
+				"当你将从攻击中获得被附身生物所受伤害的一半时，你可以使用你的反应将其减少到所受伤害的四分之一。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Xenoglossia",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 9,
+			"entries": [
+				"当你达到9级时，从9级开始，你可以在附身于一个宿主时使用一个动作来操纵他们的语言，强迫他们说或喊出一个二十五个字以内的短句。任何以这种方式发起的魅力能力检查都会使用你的魅力值和技能来代替宿主的魅力值。",
+				"如果宿主开始施放一个使用言语成分的咒语，你可以使用你的反应来试图迫使他们摸索咒语。宿主必须对你的 \"灵魂萦绕 \"DC做一个宪法救赎。一旦失败，咒语就会失效，咒语槽被消耗掉，并且附身立即结束。"
+			]
+		},
+		{
+			"name": "Supernatural Body",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 10,
+			"entries": [
+				"达到10级后，你进一步扩大了你的鬼魂之躯的能力。你获得了以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你获得的飞行速度与你的速度相等。",
+						"你可以对自己施展隐身术，不需要物质成分，每天两次。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Phantom Calling Feature",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得一个由你的幻影召唤赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Piercing Chill",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 13,
+			"entries": [
+				"在13级的时候，你已经学会了扩大你的鬼魂之寒，以暂时冻结你的主人的生命体。当被附身的宿主进行攻击时，你可以使用你的反应来使触发的攻击处于劣势。"
+			]
+		},
+		{
+			"name": "Ghastly Visage",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 14,
+			"entries": [
+				"从14级开始，你可以将自己的外表扭曲成一个可怕的不死之眼。作为一个行动，在你30英尺范围内选择任意数量的生物。如果他们能看到你，他们必须在智慧救赎中成功，否则就会被你吓到，直到你下一回合结束。在随后的回合中，你可以用你的行动来延长这个效果对受惊吓的生物的持续时间，直到你下一回合结束。如果一个生物在你的视线范围外结束其回合，这个效果就会结束。",
+				"如果一个生物救赎成功，你在24小时内不能再对该生物使用此功能。",
+				"你必须完成短暂或长时间的休息，才能再次使用这一功能。"
+			]
+		},
+		{
+			"name": "Phantom Calling Feature",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 15,
+			"entries": [
+				"15级时，你获得一个由你的幻影召唤赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Eternal Spirit",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 17,
+			"entries": [
+				"在达到17级时，你的精神体已经进化到被拴在这个平面上，永远不会被不被允许的武器真正摧毁。你不再被束缚在某个物体或生物上，就像你的精神束缚功能一样，可以随心所欲地游荡。",
+				"每当你因第三次死亡救赎失败而被毁灭时，你就会消失24小时，在虚无界上沉睡。然后你会回到你坠落的地方，就像你完成了一次长期休息一样。",
+				"你的所有攻击卷轴、蓄力攻击和能力检查都会受到-4的惩罚。每当你完成一个后续的长期休息，这个惩罚就会减少1，直到它消失。如果你回来的时候，你的灵魂被击倒的地方正处于巫术的效果之下，你的灵魂就会被打散，并永远消失在虚空界。"
+			]
+		},
+		{
+			"name": "Possession Mastery",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 18,
+			"entries": [
+				"在18级时，你获得了完全控制一个宿主的能力。在占有一个活体宿主时，你可以使用你的行动来完全精确地控制目标。直到你的下一回合结束，该生物只采取你所选择的行动，并且不做任何你不允许它做的事情。在这段时间内，你也可以使该生物使用一个反应，但这需要你也使用你自己的反应。",
+				"在你以这种方式控制它的回合中，每当宿主受到伤害时，它就会对你的附身进行一次新的魅力储蓄。如果蓄力成功，附身结束。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Ravage Soul",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"level": 20,
+			"entries": [
+				"当你达到20级时，你可以尝试将宿主的精神从它的身体中剥离出来。当占有一个既不是不死之身也不是构造物的宿主时，你可以用你的行动来结束占有，并强迫该生物做一个宪法规定的拯救动作。失败时受到12d10的坏死伤害，成功时受到一半的伤害。如果该生物被这个伤害带到50点以下，它就会死亡。",
+				"一旦你使用这个功能，你必须完成一个短期或长期的休息才能再次使用。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Calling of the Poltergeist",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Poltergeist",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"entries": [
+				"当一个人的灵魂在来世逗留足够长的时间来抵御诱惑时，他们就开始走一条转变之路。他们生前的选择，以及在目前这种未死状态下的选择，给他们的精神灌输了不同程度的积极和消极的能量，慢慢地将灵魂锻造成一个饥饿的幽灵，寻求享用活人的生命力，一个调皮的反映自然界的诡计，可以按照自己的意愿弯曲，或者是一个神圣的保护精神，使用他们空灵的天赋来帮助他们仍然活着的盟友。",
+				"那些希望仍然对物质世界施加自己意志的灵魂，仅凭他们的愤怒就能改变钢铁和肉体，就开始走上了 \"地狱使者 \"的道路。放弃微妙，转而驾驭肆无忌惮的情绪漩涡，驱魔人表现出提升、推动和操纵他们周围实质领域的能力。危险的武器和无助的攻击者被无情地抛向空中的咔哒声，标志着这些凶猛的阴魂的愤怒。",
+				"在成为驱魔人后，选择你的力量、灵巧或智力作为你的方面。你的属性修正值等于所选择的能力得分。你获得了对力量救赎的熟练度。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Implements of Anger|Lingering Soul|Lingering Soul|Poltergeist|Lingering Soul|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Haunt|Lingering Soul|Lingering Soul|Poltergeist|Lingering Soul|1"
+				}
+			]
+		},
+		{
+			"name": "Implements of Anger",
+			"entries": [
+				"当你在1级选择成为鬼魂时，你会获得对你选择的3种近战武器的熟练度。",
+				"你可以在6级、11级和15级选择另外两件近战武器来获得熟练度。"
+			],
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Poltergeist",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Haunt",
+			"entries": [
+				"从1级开始，你能够专注于小型物体，并使用你的幻影力量以惊人的速度移动它们。你学会了法师之手的咒语。",
+				"作为一个动作，你可以选择一个重量不超过10磅的物体，在你30英尺范围内。你将它神秘地抛向任何方向30英尺。如果你选择让该物体击中一个生物，则对该生物进行一次范围性的异能攻击。一旦命中，目标将受到1d4+你的Aspect修改器的重击伤害，并且该物体将掉落到地上。如果该物体是你所精通的武器，则使用该武器的伤害骰子和类型。任何你精通的、与之相适应的魔法武器都可以使用此功能。",
+				"如果目标物体目前是由其他生物持有，他们必须做一个力量救赎动作。如果救赎失败，该生物就会丢掉你选择的物体，你可以用这个特性将其移动15英尺。",
+				"在达到6级时，你可以在采取萦绕行动时瞄准并移动两个物体而不是一个。或者，你可以快速连续移动一个物体两次，允许用一个武器或物体进行两次攻击。"
+			],
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Poltergeist",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Spectral Warrior",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Poltergeist",
+			"subclassSource": "Lingering Soul",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你达到6级时，你可以将附近的装备围绕在你的幽灵之躯周围。作为一个额外的动作，选择30英尺内任何一件目前没有被生物穿戴的可穿戴装备。这些装备会被吸引到空气中，并在你周围聚集，赋予你穿戴这些装备所带来的任何护甲等级奖励、好处和坏处。你不需要精通任何盔甲就能以这种方式穿戴它，而且你忽略了重盔甲的力量要求。你所适应的任何魔法装备都可以用这个功能来使用。你仍然受到装备插槽的限制（一个头盔，一套靴子，等等）。",
+				"这个装备会一直装配在你周围，直到你选择丢弃它，你试图附身于一个生物，你穿过一个坚固的生物或物体，或者直到你进行短期或长期休息。掉落的装备会立即留在你空间的地面上。"
+			]
+		},
+		{
+			"name": "Phantasmic Force",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Poltergeist",
+			"subclassSource": "Lingering Soul",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"达到11级后，你可以发挥你的鬼魂意志，从远处操纵生物。作为一个动作，你可以选择一个在你30英尺范围内的大型或小型生物。目标必须做一个力量救赎动作，否则会被抛向30英尺的任何方向，包括向上。如果目标接触到坚硬的表面、生物或重物，目标每移动10英尺会受到1d8的重击伤害并被击倒。",
+				"如果目标生物被投掷到范围内的第二个生物，第二个生物必须做一个灵巧的蓄力动作。第二个生物每移动10英尺也会受到1d8的重击伤害，并且在救赎失败的情况下被击倒在地，或者在救赎成功的情况下受到一半的伤害并且不会被击倒在地。",
+				"你可以使用这个功能的次数与你的Aspect修改器相等（最少一次）。当你完成短时或长时休息时，你会重新获得任何已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Torrents of Rage",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Poltergeist",
+			"subclassSource": "Lingering Soul",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"一旦你达到15级，你已经学会了释放你的幽灵之怒。作为一个动作，你开始召唤周围的碎片以难以置信的速度螺旋式地绕着你转。每当敌方生物在一个回合中第一次进入你的30英尺范围内，或在你的30英尺范围内开始其回合，它就会立即受到1d6的砍击伤害，1d6的穿刺伤害，和1d6的重击伤害。这个特性最多持续1分钟。",
+				"一旦你使用这个功能，你必须完成一个长时间的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Calling of the Wraith",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Wraith",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"entries": [
+				"对任何灵魂来说，巫师都是一条危险的道路，很少有人能选择他们的生活是否与可疑的奥术追求或亡灵腐败纠缠在一起。那些走上巫师之路的人拥抱着对温暖的渴望和对他们曾经拥有的生活的饥渴。他们的能量变得黑暗，被阴影和恶意所笼罩......但意志仍然存在，而且有关于那些迷失的灵魂的故事，他们可以掌握这种渴望并将他们的仇恨集中在那些应得的人身上。",
+				"在成为巫师后，选择你的灵巧、智力或魅力成为你的特质。你的特质修正值等于你所选择的能力值。你获得了对智力救赎的熟练程度。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Scything Claw|Lingering Soul|Lingering Soul|Wraith|Lingering Soul|1"
+				}
+			]
+		},
+		{
+			"name": "Scything Claw",
+			"entries": [
+				"在1级时遵循这个召唤，你获得了用可怕的爪子撕裂生物的能力，窃取它们的一些精华。作为一个动作，你可以对你周围5英尺内的生物进行一次近战的Aspect攻击。一旦命中，目标就会受到相当于1d8+你的Aspect修饰的坏死伤害。如果目标不是亡灵或构筑物，你将恢复相当于所受伤害一半的命中率。",
+				"你的镰刀之爪的伤害在6级时增加到2d8，11级时增加到3d8，15级时增加到4d8。"
+			],
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Wraith",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Shadow of the Grave",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Wraith",
+			"subclassSource": "Lingering Soul",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你的幽灵之躯变得更加适应寒冷、黑暗的亡灵世界。你的幽灵之躯不再向外发出5英尺范围内的寒冷、昏暗的光。你获得了60英尺范围内的黑暗视觉，以及对寒冷和坏死伤害的抵抗力，但是在阳光直射下，你的攻击卷轴和智慧（感知）检查也有劣势。",
+				"在拥有主人的同时，你可以选择赋予他们这一功能的好处，但在这样做的同时也赋予了在阳光直射下的惩罚。"
+			]
+		},
+		{
+			"name": "Aura of Midnight",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Wraith",
+			"subclassSource": "Lingering Soul",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你的存在会吞噬附近的光线，遮蔽你的形体，同时吸纳黑暗下的生命。你的冰冷存在会熄灭你周围30英尺内的任何自然明火。在昏暗的光线或黑暗中，你可以采取隐藏行动作为一个额外行动。每当昏暗的光线或黑暗中的生物在你30英尺范围内死亡，你就会获得相当于1d8+你的广度修饰的临时命中率。这个光环在拥有宿主时仍然存在。",
+				"15级时，获得的临时命中率增加到2d8+你的Aspect修改器。"
+			]
+		},
+		{
+			"name": "Create Specter",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Wraith",
+			"subclassSource": "Lingering Soul",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在达到15级时，你已经学会了如何将不死的诅咒传播给你死去的敌人。作为一个行动，你可以在10英尺范围内瞄准一具死亡时间不超过1分钟的人形尸体，并且是暴力死亡。目标的灵魂会在尸体的空间或最近的无人空间中以幽灵的形式复活。幽灵在你的控制之下，允许你在有意识的情况下向该生物发出命令（不需要行动），它将尽力服从。你可以指定一个简单而笼统的行动路线，比如 \"攻击那个生物\"、\"跑到那边去 \"或 \"取那个物体\"。如果该生物完成了命令，并且它没有收到你的进一步指示，它就会尽其所能地防御和保护自己和你。你在同一时间内控制的幽灵数量不能超过你的Aspect修改器。"
+			]
+		},
+		{
+			"name": "Calling of the Spirit Guardian",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Spirit",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"entries": [
+				"有些留在凡间的灵魂寻求一个更大的目的。无论他们是为了履行某些神圣的职责，还是希望以黑暗守护者的名义引诱和腐蚀他人的灵魂，正是这些邀请神灵指导他们的命运的灵魂开始类似于他们崇拜的天人或扭曲的魔鬼。依靠物理容器来引导他们的愤怒，这些守护者利用他们的天赋来保护、伤害或影响他们遇到的所有人。",
+				"在成为灵魂守护者后，选择你的智慧或魅力成为你的特质。你的特质修正值等于你所选择的能力值。你将获得熟练掌握 \"魅力 \"救赎的能力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Invoke Smite|Lingering Soul|Lingering Soul|Spirit|Lingering Soul|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sympathetic Mending|Lingering Soul|Lingering Soul|Spirit|Lingering Soul|1"
+				}
+			]
+		},
+		{
+			"name": "Invoke Smite",
+			"entries": [
+				"当你在第一级选择这个召唤时，你可以向附近的生物的武器灌输力量，以神圣的火焰进行攻击。作为一个行动，以你周围30英尺内的武器或物体为目标。直到你的下一个回合结束，下一次该武器或物体击中生物时，会造成额外的1d8辐射伤害（如果你是善良或中立），或1d8坏死伤害（如果你是邪恶）。你可以在拥有一个宿主的时候使用这个特性。",
+				"这种伤害在6级时增加1d8，在11级和15级时再次增加。"
+			],
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Spirit",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Sympathetic Mending",
+			"entries": [
+				"从1级开始，你发现如何通过神圣的精神能量恢复生命力。作为一个行动，你可以在30英尺范围内瞄准一个生物，恢复相当于1d8+你的Aspect修改器的打击点数。你可以在拥有一个宿主的情况下使用这个特性，如果你的宿主不是你的目标，你的宿主也会恢复相当于你的Aspect修改器的点数。",
+				"你可以使用这个功能两次。达到6级时，治疗量增加1d8，你可以使用此功能3次。在11级时，治疗量增加1d8，你可以使用此功能四次。当你达到15级时，治疗量增加1d8，你可以使用此功能5次。",
+				"在长时间的休息后，你会重新获得该功能的所有使用权。"
+			],
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Spirit",
+			"subclassSource": "Lingering Soul",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Divine Barrier",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Spirit",
+			"subclassSource": "Lingering Soul",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级的时候，你学会了用你的鬼魂之躯来保护你的主人，创造一个临时的盾牌。当你附身在一个宿主身上时，如果一个你能看到的攻击者用攻击击中你的宿主，你可以用你的反应来给你的宿主在对抗触发的攻击时提供相当于你的 \"广度 \"修改器的攻击力或蓄力奖励。一旦攻击被解决，附身立即结束，你不能使用你的附身功能，直到你的下一回合结束。"
+			]
+		},
+		{
+			"name": "Consecrated Emanation",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Spirit",
+			"subclassSource": "Lingering Soul",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在达到11级时，你可以散发出一种光环，惩罚那些你认为不值得的人。你可以使用一个动作，在你周围发出一个光环，最远距离为15英尺，最长时间为1分钟。然后你指定你能看到的任何数量的生物不受它的影响。受影响的生物在该区域的速度减半，当该生物在一个回合中第一次进入该区域或在那里开始其回合时，它必须做一个智慧救赎动作。拯救失败时，该生物会受到3d6辐射伤害（如果你是善良或中立），或3d6坏死伤害（如果你是邪恶）。拯救成功时，该生物会受到一半的伤害。你可以在拥有宿主的情况下使用这个特性。",
+				"一旦你使用这个功能，你必须完成一个短期或长期的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Savior Spirit",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Spirit",
+			"subclassSource": "Lingering Soul",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"当你达到15级时，你会放射出保护性的能量来抵御死亡的阴影。所有在你30英尺范围内的友好生物，在死亡救赎卷中的18到20分中获得1点生命值。这个光环在拥有宿主时仍然存在。"
+			]
+		},
+		{
+			"name": "Guardian transformation",
+			"source": "Lingering Soul",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul",
+			"subclassShortName": "Spirit",
+			"subclassSource": "Lingering Soul",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你可以使用你的行动来暂时将你的鬼魂属性灌输给你的主人。在10分钟内，你的主人会获得以下特性。",
+				{
+					"type": "list",
+					"items": [
+						"他们对来自非魔法武器的击打、刺穿和砍击伤害具有抗性。",
+						"他们对毒物伤害和中毒状况免疫。",
+						"他们对俯卧、被抓、被限制和被石化的情况免疫。",
+						"他们可以在其他生物和物体中移动，就像它们是困难的地形一样。如果他们在一个物体内结束他们的回合，你们都会受到1d10力的伤害。",
+						"他们的飞行速度与他们的速度相等。"
+					]
+				},
+				"如果附身结束，持续时间就会提前结束。一旦你使用这个功能，你必须完成一个长时间的休息才能再次使用它。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Calling of the Poltergeist",
+			"subclassFeatures": [
+				"Calling of the Poltergeist|Lingering Soul|Lingering Soul|Poltergeist|Lingering Soul|1",
+				"Spectral Warrior|Lingering Soul|Lingering Soul|Poltergeist|Lingering Soul|6",
+				"Phantasmic Force|Lingering Soul|Lingering Soul|Poltergeist|Lingering Soul|11",
+				"Torrents of Rage|Lingering Soul|Lingering Soul|Poltergeist|Lingering Soul|15"
+			],
+			"source": "Lingering Soul",
+			"shortName": "Poltergeist",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul"
+		},
+		{
+			"name": "Calling of the Wraith",
+			"subclassFeatures": [
+				"Calling of the Wraith|Lingering Soul|Lingering Soul|Wraith|Lingering Soul|1",
+				"Shadow of the Grave|Lingering Soul|Lingering Soul|Wraith|Lingering Soul|6",
+				"Aura of Midnight|Lingering Soul|Lingering Soul|Wraith|Lingering Soul|11",
+				"Create Specter|Lingering Soul|Lingering Soul|Wraith|Lingering Soul|15"
+			],
+			"source": "Lingering Soul",
+			"shortName": "Wraith",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul"
+		},
+		{
+			"name": "Calling of the Spirit Guardian",
+			"subclassFeatures": [
+				"Calling of the Spirit Guardian|Lingering Soul|Lingering Soul|Spirit|Lingering Soul|1",
+				"Divine Barrier|Lingering Soul|Lingering Soul|Spirit|Lingering Soul|6",
+				"Consecrated Emanation|Lingering Soul|Lingering Soul|Spirit|Lingering Soul|11",
+				"Savior Spirit|Lingering Soul|Lingering Soul|Spirit|Lingering Soul|15",
+				"Guardian transformation|Lingering Soul|Lingering Soul|Spirit|Lingering Soul|15"
+			],
+			"source": "Lingering Soul",
+			"shortName": "Spirit",
+			"className": "Lingering Soul",
+			"classSource": "Lingering Soul"
+		}
+	]
+}

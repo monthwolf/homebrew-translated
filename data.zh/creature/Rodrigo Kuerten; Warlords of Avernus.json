@@ -1,0 +1,1858 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WarlordsofAvernus",
+				"abbreviation": "WoA",
+				"full": "Warlords of Avernus",
+				"url": "https://www.dmsguild.com/product/297172/Warlords-of-Avernus",
+				"authors": [
+					"Rodrigo Kuerten"
+				],
+				"convertedBy": [
+					"Nerd02"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1645518745,
+		"dateLastModified": 1707671387,
+		"_dateLastModifiedHash": "5bd1e59030"
+	},
+	"monster": [
+		{
+			"name": "Algoran, Flesh Hunter",
+			"isNamedCreature": true,
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tulgar"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 161,
+				"formula": "19d8 + 76"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 16,
+			"con": 19,
+			"int": 15,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+8",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+8",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"Primordial"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Incomparable Hunter",
+					"entries": [
+						"当阿尔戈兰用近战攻击击中一个敌人时，他在剩下的回合中不会激起该敌人的机会攻击。"
+					]
+				},
+				{
+					"name": "Tough Skin",
+					"entries": [
+						"当阿尔戈兰没有穿戴盔甲和挥舞盾牌时，它的攻击力包括其体质修正值。"
+					]
+				},
+				{
+					"name": "Primal Mind",
+					"entries": [
+						"阿尔戈兰在对{@condition charmed}或{@condition frightened}的救赎中具有优势。"
+					]
+				},
+				{
+					"name": "Flesh Hunter's Rage",
+					"entries": [
+						"作为一个奖励动作，阿尔戈兰可以在其回合开始时进入愤怒状态。愤怒持续1分钟或直到阿尔戈兰的状态为（%0%）。愤怒时，阿尔戈兰获得以下好处。",
+						"阿尔戈兰在力量检查和力量投掷方面具有优势。",
+						"当阿尔戈兰进行近战武器攻击时，他在伤害卷上获得+4的奖励。",
+						"阿尔戈兰对击伤、刺伤和砍伤有抵抗力。"
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"在其回合开始时，阿尔戈兰可以在该回合内的所有近战武器攻击卷上获得优势，但对他的攻击卷有优势，直到其下一回合开始。"
+					]
+				},
+				{
+					"name": "Rotting Strike",
+					"entries": [
+						"每回合一次，如果阿尔戈兰以攻击卷的优势进行武器攻击并命中，会造成额外的10({@damage 3d6})坏死伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"阿尔戈兰进行三次近战攻击或两次远程攻击。"
+					]
+				},
+				{
+					"name": "+1 Handaxe",
+					"entries": [
+						"{@atk mw,rw} {@hit 10}命中，距离5英尺或范围60英尺，一个目标。{@h}9 ({@damage 1d6 + 6})砍击伤害，或在狂暴时造成13 ({@damage 1d6 + 10})砍击伤害。"
+					]
+				},
+				{
+					"name": "Lightwood Pike",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达10英尺，一个目标。{@h}10 ({@damage 1d10 + 5})砍击伤害，或在狂暴时造成14 ({@dice 1d10}+9)砍击伤害。"
+					]
+				},
+				{
+					"name": "Whirlwind Strike {@recharge 5}",
+					"entries": [
+						"阿尔戈兰对其范围内任何数量的生物进行近战攻击，对每个目标进行单独的攻击卷。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Unbroken Spirit",
+					"entries": [
+						"当阿尔戈兰的智力、智慧或魅力救赎成功时，他和他选择的10英尺范围内的一个盟友生物获得10个临时命中点。"
+					]
+				}
+			],
+			"traitTags": [
+				"Reckless"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"P"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"+1 handaxe|dmg"
+			]
+		},
+		{
+			"name": "Tulgar Savage",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tulgar"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 17,
+			"int": 10,
+			"wis": 11,
+			"cha": 9,
+			"save": {
+				"str": "+6",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+1"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"languages": [
+				"Common",
+				"Infernal",
+				"Primordial"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Primal Mind",
+					"entries": [
+						"野蛮人在对被{@condition charmed}或{@condition frightened}的救赎上有优势。"
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"在它的回合开始时，野蛮人可以在该回合内的所有近战武器攻击卷上获得优势，但对它的攻击卷有优势，直到下一回合开始。"
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"图尔加野蛮人带着一把原始的大斧头。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"野蛮人用它的大斧头进行了两次攻击。"
+					]
+				},
+				{
+					"name": "Primal Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}10 ({@damage 1d12 + 4})砍击伤害。"
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"{@atk mw,rw} {@hit 6}命中，距离5英尺或范围20/60英尺，一个目标。{@h}7 ({@damage 1d6 + 4})砍击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Reckless"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"P"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"handaxe|phb"
+			]
+		},
+		{
+			"name": "Tulgar Shaman",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tulgar"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 77,
+				"formula": "14d8 + 14"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 13,
+			"int": 12,
+			"wis": 17,
+			"cha": 15,
+			"save": {
+				"con": "+4",
+				"wis": "+6"
+			},
+			"skill": {
+				"insight": "+6",
+				"nature": "+4",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"Primordial"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"萨满是一个8级的施法者。它的法术能力是智慧（法术救赎（%0%），用法术攻击命中率（%1%））。萨满拥有以下德鲁伊法术的准备。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell magic stone|XGE}",
+								"{@spell primal savagery|XGE} (see \"Actions\" below)",
+								"{@spell produce flame}",
+								"{@spell shillelagh}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell cure wounds} (see \"Actions\" below)",
+								"{@spell entangle}",
+								"{@spell earth tremor|XGE}",
+								"{@spell goodberry}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell gust of wind}",
+								"{@spell spike growth}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell call lightning}",
+								"{@spell remove curse}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell blight} (see \"Actions\" below)",
+								"{@spell giant insect}"
+							]
+						}
+					},
+					"ability": "wis",
+					"will": [
+						{
+							"entry": "{@spell Primal Savagery|XGE}",
+							"hidden": true
+						}
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Primal Mind",
+					"entries": [
+						"野蛮人在对被{@condition charmed}或{@condition frightened}的救赎上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw}{@hit 4}命中({@hit 6}用shillelagh命中)，范围5英尺，一个目标。{@h}4 ({@damage 1d6 + 1})重击伤害，如果用双手挥舞，则造成5 ({@damage 1d8 + 1})重击伤害，或者用shillelagh造成7 ({@damage 1d8 + 3})重击伤害。"
+					]
+				},
+				{
+					"name": "Primal Savagery (Cantrip)",
+					"entries": [
+						"{@atk ms} {@hit 6}击中，到达5英尺，一个目标。{@h}11 ({@damage 2d10})酸性伤害。"
+					]
+				},
+				{
+					"name": "Cure Wounds (1st-Level Spell; Requires a Spell Slot)",
+					"entries": [
+						"萨满触碰它所选择的生物，它就会恢复7({@dice 1d8 + 3})点命中。如果萨满使用二级或以上的法术槽施展此法术，每超过一级的法术槽等级，治疗效果就会增加（%1%）。这个法术对不死生物或构造物没有效果。"
+					]
+				},
+				{
+					"name": "Blight (5th-Level Spell; Requires a Spell Slot)",
+					"entries": [
+						"萨满选择了一个在他30英尺范围内可以看到的生物。目标必须在一个{@dc 14}宪法救赎中成功，在救赎失败时受到36({@damage 8d8})的坏死伤害，或在成功时受到一半的伤害。",
+						"这个法术对不死生物或构造物没有影响。",
+						"如果萨满的目标是植物生物或魔法植物，它就会以劣势进行救赎，并且该法术会对它造成最大伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"P"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"N"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflictSpell": [
+				"prone",
+				"restrained"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"F",
+				"L",
+				"N",
+				"P"
+			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Kraul Warrior",
+			"source": "WarlordsofAvernus",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kraul"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"fly": 40
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 13,
+			"int": 10,
+			"wis": 11,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Kraul",
+				"understands Common but can't speak it"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Hive Mind",
+					"entries": [
+						"在与至少一个其他克劳尔的30英尺范围内，该克劳尔对{@condition charmed}和{@condition frightened}的条件免疫。"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"如果克劳尔的盟友中至少有一个人在生物的5英尺范围内，而盟友不在，那么克劳尔在对生物的攻击卷中具有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"克劳尔可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4}击中，范围5英尺或20/60英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害，如果用双手进行近身攻击，则为6 ({@damage 1d8 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"name": "Kraul Warrior",
+				"source": "GGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"克劳尔社会被组织成定义明确的角色和种姓。绝大多数的克劳尔人占据着不同层次的兵种，从指挥官和精锐部队到最低级的步兵。"
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Kraul",
+										"entries": [
+											"克劳尔是戈尔加里虫群中的一个新兴势力团体，长期以来，他们满足于在地下城市的边缘徘徊，但现在越来越多地在地下的戈尔加里市政厅发出他们嗡嗡的声音。这些有六条腿的昆虫，头脑坚硬，思想单纯，对隐喻和细微差别没有什么把握。"
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/GGR/Kraul Warrior.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/GGR/Kraul Warrior.png",
+			"traitTags": [
+				"Pack Tactics",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"spear|phb"
+			]
+		},
+		{
+			"name": "Kolasiah, Infernal Medusa",
+			"isNamedCreature": true,
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 187,
+				"formula": "22d10 + 66"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 17,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+8",
+				"int": "+10",
+				"cha": "+8"
+			},
+			"skill": {
+				"deception": "+8",
+				"insight": "+7",
+				"perception": "+7",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"fire"
+			],
+			"languages": [
+				"common",
+				"elvish",
+				"infernal",
+				"kraul"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Innate spellcasting",
+					"headerEntries": [
+						"科拉西亚与生俱来的法术能力是智力（法术救赎（%0%），用法术攻击命中率（%1%））。她可以天生施展以下法术，不需要任何物质成分。"
+					],
+					"will": [
+						"{@spell expeditious retreat}",
+						"{@spell fire bolt} (see \"Actions\" below)",
+						"{@spell fog cloud}",
+						"{@spell misty step}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell erupting earth|XGE}",
+							"{@spell hellish rebuke} (at 5th level; see \"Reactions\" below)",
+							{
+								"entry": "{@spell Scorching Ray}",
+								"hidden": true
+							}
+						],
+						"1e": [
+							"{@spell bones of the earth|XGE}",
+							"{@spell Melf's minute meteors|XGE}",
+							"{@spell wall of stone}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Heated Body",
+					"entries": [
+						"在她5英尺范围内，接触到Kolasiah或用近战攻击击中她的信条会受到10（（%0%））的火焰伤害。"
+					]
+				},
+				{
+					"name": "Hellish Claws",
+					"entries": [
+						"科拉西亚的武器攻击具有魔力，击中后会造成额外的18({@damage 4d8})火焰伤害（包含在攻击中）。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Kolasiah在面对法术和其他魔法效果时，在蓄力攻击上有优势。"
+					]
+				},
+				{
+					"name": "Statues of Molten Rock",
+					"entries": [
+						"Kolasiah的{@condition petrified}生物在{@condition petrified}时免疫火系伤害。每当科拉西亚（%2%）的生物被其他生物触碰时，被触碰的生物会受到7（{@damage 2d6}）的火焰伤害。"
+					]
+				},
+				{
+					"name": "Surprise Attack",
+					"entries": [
+						"在第一轮战斗中，科拉西亚对任何被惊动的生物的攻击卷轴有优势，并且每次用攻击击中这样的生物时，会造成额外的10({@damage 3d6})火灾伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"科拉西亚进行两次爪子攻击。她也可以使用Petryifing凝视，或者在进行这些攻击之后。"
+					]
+				},
+				{
+					"name": "Fiery Claw",
+					"entries": [
+						"近战武器攻击。命中率{@hit 10}，范围5英尺，一个目标。命中13({@damage 2d8 + 4})的斩击伤害加上18({@damage 4d8})的火焰伤害。Kolasiah可以抓取目标，而不是造成伤害（逃脱{@dc 17}）。"
+					]
+				},
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"美杜莎将她的目光投向她周围60英尺内的一个她能看到并且能看到她眼睛的生物。目标必须做一个{@dc 18}体质测试。如果蓄力失败5次或更多，该生物就会立即被（%1%）。否则，拯救失败的生物会开始变成石头，并被（%2%）。3%）的生物必须在下一回合结束时重复蓄力，如果失败则变成（%4%），如果成功则结束效果。石化会持续到该生物被更大的恢复咒语或类似的魔法解救。"
+					]
+				},
+				{
+					"name": "Fire Bolt (Cantrip)",
+					"entries": [
+						"{@atk rs} {@hit 10}击中，范围120英尺，一个目标。{@h}22 ({@damage 4d10})火灾伤害。"
+					]
+				},
+				{
+					"name": "Scorching Ray (2nd-Level Spell; 3/Day)",
+					"entries": [
+						"{@atk rs}{@hit 10}击中，范围120英尺，三道射线；每道射线一个目标。{@h}7 ({@damage 2d6})每条射线的火力伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Hellish Rebuke (5th-Level Spell; 3/Day)",
+					"entries": [
+						"当Kolasiah被她能看到的60英尺范围内的生物伤害时，她可以强迫该生物做一个{@dc 18}灵巧的救赎动作。拯救失败时，该生物会受到33（（%1%））的火焰伤害，拯救成功时则会受到一半的伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Suniel, Dark Elf Assassin",
+			"shortName": "Suniel",
+			"source": "WarlordsofAvernus",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"dex": "+6",
+				"int": "+4"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"deception": "+3",
+				"perception": "+3",
+				"stealth": "+9"
+			},
+			"passive": 13,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Kraul",
+				"Thieve's Cant"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"苏尼尔与生俱来的法术能力是魅力（法术保存（%0%））。他可以天生施展以下法术，不需要任何物质成分。"
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell faerie fire}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"在它的第一个回合中，苏尼尔在对任何还没有进入回合的生物进行攻击时具有优势。刺客对被惊动的生物的任何一击都是关键一击。"
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"如果苏尼尔受到的效果允许它做一个灵巧的蓄力动作，只受到一半的伤害，如果蓄力动作成功，刺客就不会受到伤害，如果失败，就只受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当苏尼尔用武器攻击击中目标并在攻击卷上有优势时，或当目标在苏尼尔的盟友5英尺范围内不是{@condition incapacitated}且刺客在攻击卷上没有劣势时，会造成额外的14（{@damage 4d6}）伤害。"
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"苏尼尔在救人时有优势，而且魔法不能使他睡觉。"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"在阳光下时，苏尼尔在攻击卷上有劣势，在依赖视觉的智慧（（%0%））检查上也是如此。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"苏尼尔进行了两次短剑攻击。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})的穿刺伤害，目标必须做一个{@dc 15}宪法救赎，救赎失败时受到24 ({@damage 7d6})的毒药伤害，救赎成功时受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6}击中，范围80/320英尺，一个目标。{@h}7 ({@damage 1d8 + 3})穿刺伤害，目标必须做一个{@dc 15}宪法救赎，救赎失败会受到24({@damage 7d6})的毒药伤害，救赎成功会受到一半的伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"刺客接受过使用毒药的训练，他们是无情的杀手，为贵族、行会会长、君主和其他任何能负担得起他们的人工作。"
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Assassin.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+			},
+			"traitTags": [
+				"Fey Ancestry",
+				"Sneak Attack",
+				"Sunlight Sensitivity"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"light crossbow|phb",
+				"shortsword|phb"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Carol D'Vown",
+			"isNamedCreature": true,
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "14d8 + 42"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"con": "+6",
+				"int": "+8"
+			},
+			"skill": {
+				"arcana": "+8",
+				"investigation": "+8",
+				"medicine": "+5",
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"卡罗尔是一个10级的施法者。她的法术能力是智力（法术救赎（%0%），用法术攻击命中率（%1%））。卡罗尔准备了以下工匠法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt} (see \"Actions\" below)",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell catapult|XGE}",
+								"{@spell detect magic}",
+								"{@spell healing word}",
+								"{@spell identify}",
+								"{@spell longstrider}",
+								"{@spell ray of sickness}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell flaming sphere}",
+								"{@spell heat metal}",
+								"{@spell invisibility}",
+								"{@spell lesser restoration}",
+								"{@spell Melf's acid arrow}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell gaseous form}",
+								"{@spell haste}",
+								"{@spell mass healing word}"
+							]
+						}
+					},
+					"ability": "int",
+					"will": [
+						{
+							"entry": "{@spell Fire Bolt}",
+							"hidden": true
+						}
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Master of War Machines",
+					"entries": [
+						"卡罗尔在修复任何地狱战争机器的能力检查中具有优势。"
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"卡罗尔戴着一副{@item goggles of night}，有一个{@item bag of holding}。她与{@item mask of ventilation|warlordsofavernus}相契合，并拥有一把带有{@optfeature repeating shot|TCE}工匠灌注的手弩。"
+					]
+				},
+				{
+					"name": "Alchemical Savant",
+					"entries": [
+						"当卡萝尔施展恢复命中率或造成酸、火或坏死伤害的法术时，她在该法术的一个卷轴上获得+5的奖励。该卷必须恢复命中率或为伤害卷。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"卡罗尔使用酸性熔化炸弹或冥河毒气，如果有的话。然后她用她的连发手弩进行一次攻击。"
+					]
+				},
+				{
+					"name": "Fire Bolt (Cantrip)",
+					"entries": [
+						"{@atk rs} +8 to hit, range 120 ft., one target. {@h}16 ({@damage 2d10 + 5}) fire damage."
+					]
+				},
+				{
+					"name": "Acid-Melting Bomb (3/Day)",
+					"entries": [
+						"卡罗尔向她能看到的25英尺范围内的一个点扔了一个装满酸的烧瓶。瓶子在撞击时爆裂。5英尺范围内的每个生物都必须成功地进行一次{@dc 16}灵巧救赎，救赎失败会受到21({@damage 6d6})酸的伤害，救赎成功会受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Styx Gas Poison (3/Day)",
+					"entries": [
+						"卡罗尔向她能看到的25英尺内的一个点扔出一个充满气体的烧瓶。烧瓶在撞击时爆裂，留下一团静态的毒气云。当一个生物在一个回合中第一次进入云的区域或在那里开始它的回合时，该生物会被一个{@spell feeblemind}的法术所攻击（保存{@dc 16}）。云层持续1分钟，或者直到有强风将其吹散。",
+						"如果一个生物在救赎中失败，并且连续30天受到毒药的影响，那么这个效果就会变成永久性的（没有救赎），并且这个生物会失去所有的记忆，变成一个几乎没有记忆的躯壳。在这一点上，除了愿望咒语或神的干预外，没有任何东西可以解除这个效果。"
+					]
+				},
+				{
+					"name": "Repeating Hand Crossbow",
+					"entries": [
+						"{@atk rw} +6 to hit, range 30/120 ft., one target. Hit 6 ({@damage 1d6 + 3}) piercing damage. The crossbow produces its own ammunition automatically, creating one piece of magic ammunition when Carol makes a ranged attack with it. This is a magic weapon attack."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Flash of Genius (5/Day)",
+					"entries": [
+						"当卡罗尔或她能看到的30英尺范围内的其他生物进行能力检查或蓄力投掷时，她可以将她的智力修饰值作为奖励加入到卷轴中。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"P"
+			],
+			"spellcastingTags": [
+				"CA"
+			],
+			"miscTags": [
+				"AOE",
+				"RNG"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"poisoned"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"F",
+				"I",
+				"L"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Carol D'Vown's Helmed Horror",
+			"shortName": "Helmed Horror",
+			"source": "WarlordsofAvernus",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"immune": [
+				"force",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"understands Abyssal",
+				"Common and Infernal but can't speak"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"戴头盔的恐怖份子在对抗法术和其他魔法效果时有优势。"
+					]
+				},
+				{
+					"name": "Spell Immunity",
+					"entries": [
+						"头盔恐怖对以下法术免疫：（%0%）、（%1%）和（%2%）。"
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"恐怖头盔挥舞着（%0%），对用它进行的攻击和伤害卷给予+1的奖励（包括在其攻击中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"戴头盔的恐怖人物会进行两次长剑攻击。"
+					]
+				},
+				{
+					"name": "Metalbreaker",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d8 + 5})砍击伤害，如果双手使用，则为10 ({@damage 1d10 + 5})砍击伤害。如果它击中了金属制成的物体，则自动成为关键一击。"
+					]
+				}
+			],
+			"fluff": {
+				"name": "Helmed Horror",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"这种构造物拥有智慧、推理和调整战术的能力，以及对其制造者坚定不移的奉献精神，甚至在制造者死后也能坚持下去。恐怖头盔类似于一套生动的空板甲，它的服务没有野心和情感。",
+									{
+										"name": "Magical Purpose",
+										"type": "entries",
+										"entries": [
+											"虽然创造一个有盔甲的恐怖需要更多的魔法资源，但有盔甲的恐怖在执行其指定的任务时需要更少的指导和维护。盔甲恐怖完全忠诚地遵守它的命令，并且足够聪明，能够理解命令的意图和它的确切措辞之间的区别。与许多构造物不同，它寻求履行前者，而不是一味地遵循后者。"
+										]
+									},
+									{
+										"name": "Tactical Cunning",
+										"type": "entries",
+										"entries": [
+											"带头盔的恐怖兽以熟练的战士的狡猾进行战斗，当它首先攻击较弱的角色和施法者时，就会飞到空中。然而，头盔恐怖者缺乏改变环境、加固环境或采取其他积极措施来改善其防御状况的洞察力。"
+										]
+									},
+									{
+										"name": "Constructed Nature",
+										"type": "entries",
+										"entries": [
+											"一个有头盔的恐怖人物不需要空气、食物、饮料或睡眠。"
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Helmed Horror.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Helmed Horror.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/helmed-horror.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance",
+				"Spell Immunity"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Lilxori",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item chain mail|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "14d8 + 42"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 16,
+			"int": 14,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"str": "+7",
+				"con": "+6",
+				"int": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"deception": "+6",
+				"intimidation": "+6",
+				"perception": "+4",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Abyssal,Common",
+				"Infernal"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Lilxori的法术能力是魅力（法术保存（%0%））。她可以天生施展以下法术，不需要任何物质成分。"
+					],
+					"will": [
+						"{@spell control flames|XGE}",
+						"{@spell hellish rebuke} (at 2nd level; see \"Reactions\" below)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell alter self}",
+							"{@spell command}",
+							"{@spell detect magic}",
+							"{@spell heroism}",
+							"{@spell spiritual weapon}"
+						],
+						"1e": [
+							"{@spell crusader's mantle}",
+							"{@spell plane shift} (self only)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fiendish Blessing",
+					"entries": [
+						"Lilxori的AC包括其魅力奖励。"
+					]
+				},
+				{
+					"name": "Ferocious Surge (Recharges after a short or long rest)",
+					"entries": [
+						"当Lilxori打出的攻击不是关键一击时，她可以将这一击变成关键一击。"
+					]
+				},
+				{
+					"name": "Fury of the Nine",
+					"entries": [
+						"作为一个额外的行动，Lilxori选择另一个在120英尺内能看到或听到她的生物。该生物在接下来的一分钟内或在Lilxori再次使用这个能力之前，在所有的攻击卷和蓄力投掷上获得优势。"
+					]
+				},
+				{
+					"name": "Infernal Tactics",
+					"entries": [
+						"在滚动主动权后，Lilxori可以立即选择自己和最多三个她能看到的盟友，如果她不在的话（%0%）。Lilxori可以将所选生物的主动权结果在他们之间交换。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lilxori进行两次近战攻击或使用她的火雷两次。"
+					]
+				},
+				{
+					"name": "Hellfire Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，距离5英尺，一个目标。{@h} 8 ({@damage 1d8 + 4})重击伤害，如果双手使用则为9 ({@damage 1d10 + 4})重击伤害，外加3 ({@damage 1d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d4 + 4})穿刺伤害，目标必须做一个{@dc 14}宪法救赎，救赎失败时受到{@damage 6d6}毒药伤害，成功时受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Fire Ray",
+					"entries": [
+						"{@atk rw} {@hit 7}击中，范围120英尺，一个目标。{@h}({@damage 3d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Zariel's Command (Recharges 4-6)",
+					"entries": [
+						"在Lilxori周围120英尺范围内，最多三个能听到她的盟友魔鬼可以用他们的反应来各自进行一次武器攻击。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Hellish Rebuke",
+					"entries": [
+						"当Lilxori被她能看到的60英尺内的生物伤害时，她可以强迫该生物做一个{@dc 14}灵巧的救赎动作。救赎失败时，该生物会受到16（（%1%））的火焰伤害，救赎成功时则会受到一半的伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"MLW"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"O",
+				"P",
+				"R",
+				"S"
+			],
+			"attachedItems": [
+				"hellfire warhammer|bgdia"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Infernal Homunculus",
+			"shortName": "homunculus",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d4 + 8"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 4,
+			"dex": 15,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 8,
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Abyssal",
+				"Common and Infernal but can't speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Infernal Sight",
+					"entries": [
+						"神奇的黑暗并不妨碍同体人的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"如果同体人受到的效果允许它做一个灵巧的蓄力动作来承受一半的伤害，如果蓄力动作成功，同体人就不会受到伤害，如果失败，就只会受到一半的伤害。如果它是{@condition incapacitated}，它就不能使用这个特性。"
+					]
+				},
+				{
+					"name": "Telepathic Bond",
+					"entries": [
+						"虽然同体人与卡罗尔-达沃恩处于同一存在平面，但它可以用魔法将它所感知到的东西传达给它的主人，而且两者可以进行心灵感应交流。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}1次穿刺伤害，并且目标必须在DC12宪法救赎中成功，否则会被毒害1分钟。如果蓄力失败5次或更多，目标会被毒害5({@dice 1d10})分钟，并在以这种方式中毒时失去意识。"
+					]
+				},
+				{
+					"name": "Force Strike",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围30英尺，一个目标。{@h}4 ({@damage 1d4 + 2})武力伤害。"
+					]
+				}
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"unconscious"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Lightwood Pike",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"baseItem": "pike|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 18,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"entries": [
+				"这种神奇的木制梭子鱼是用一种轻质但耐用的木材制作的。它缺乏双手的特性。"
+			]
+		},
+		{
+			"name": "Primal Greataxe",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"baseItem": "greataxe|PHB",
+			"type": "M",
+			"rarity": "common",
+			"reqAttune": true,
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"bonusSavingThrow": "+1",
+			"entries": [
+				"这把大斧被赋予了大地元素的原始精神的力量，增强了持斧者的耐力。",
+				"当你与它调和时，你会获得宪法规定的拯救动作的+1奖励。"
+			]
+		},
+		{
+			"name": "Mask of Ventilation",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"当你戴上这个面具时，你对有害的气体，例如由{@spell cloudkill}法术、{@spell stinking cloud}法术、吸入的毒药和气态呼吸武器所产生的有害气体，在救赎中具有优势。"
+			]
+		},
+		{
+			"name": "Metalbreaker",
+			"source": "WarlordsofAvernus",
+			"page": 0,
+			"baseItem": "longsword|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"你用这个魔法武器进行的攻击和伤害卷轴都有+1的加成。如果它击中了金属制成的物体，则自动成为关键一击，并且它可以对该物体造成打击或砍击伤害（由你选择）。此外，来自非魔法来源的伤害也不能伤害该武器。"
+			]
+		}
+	]
+}

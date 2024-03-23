@@ -1,0 +1,152 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DragonMagazine",
+				"abbreviation": "Mag",
+				"full": "Dragon Magazine",
+				"url": "https://dnd.dragonmag.com/",
+				"version": "",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"convertedBy": [
+					"Giddy"
+				]
+			}
+		],
+		"dateAdded": 1626428071,
+		"dateLastModified": 1690651615,
+		"_dateLastModifiedHash": "fb3c50e99c"
+	},
+	"monster": [
+		{
+			"name": "Spider Shark",
+			"source": "DragonMagazine",
+			"page": 32,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 162,
+				"formula": "13d12 + 78"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 16,
+			"int": 4,
+			"wis": 14,
+			"cha": 8,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"蛛鲨可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"当接触到一张网时，蜘蛛鲨知道与同一张网接触的任何其他生物的确切位置。"
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"蛛鲨无视由网状物造成的移动限制。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"蛛鲨可以进行钩爪攻击、钻齿攻击和带刺的网攻击。"
+					]
+				},
+				{
+					"name": "Burrowing Tooth",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，达到10英尺，一个生物。{@h}16 ({@dice 3d8 + 3})的伤害，并且目标必须做一个{@dc 18}宪法救赎动作，否则在每回合开始的时候会受到额外的4 ({@dice 1d8})的伤害。目标可以在其每个回合结束时重复蓄力，如果成功则结束对自己的影响。"
+					]
+				},
+				{
+					"name": "Hooked Claw",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，范围10英尺，一个生物。{@h}12 ({@dice 2d8 + 3})的伤害，目标必须做一个{@dc 18}的力量反射，或者被{@condition grappled}拉向蜘蛛鲨。当目标处于{@condition grappled}时，对其攻击有优势。"
+					]
+				},
+				{
+					"name": "Barbed Web Attack",
+					"entries": [
+						"{@atk rw} {@hit 7}击中，范围90/90英尺，一个生物。{@h}18 ({@dice 3d10 + 2})的伤害，并且目标被重新训练。作为一个动作，{@condition restrained}生物可以做一个{@dc 18}力量检查，成功时从网状物中破坏。如果网状物被摧毁，则效果结束。网状物有15点攻击力；25点命中率；易受火灾伤害；对重击、毒药和精神伤害免疫。"
+					]
+				},
+				{
+					"name": "Web Net {@recharge 5}",
+					"entries": [
+						"蛛鲨向90英尺范围内的30英尺半径区域发射网。该区域内的每个生物都必须成功地进行一次{@dc 16}灵巧的救赎。如果救赎失败，该生物会受到18({@dice 3d10 + 2})的伤害，并被网住{@condition restrained}。作为一个动作，这个{@condition restrained}的生物可以做一个{@dc 18}的力量检查，如果成功的话，就可以从网状物中破坏。如果网状物被摧毁，则效果结束。网状物有15点攻击力，25点命中率，易受火灾伤害，对重击、毒药和精神伤害免疫。"
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonMagazine/token/Spider Shark.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonMagazine/SpiderSharkArt.webp"
+						}
+					}
+				]
+			},
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			]
+		}
+	]
+}

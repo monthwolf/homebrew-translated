@@ -1,0 +1,1966 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Cook",
+				"abbreviation": "Cook",
+				"full": "The Cook Class",
+				"authors": [
+					"Sam Grierson"
+				],
+				"convertedBy": [
+					"ForeverAlwaysGM (Billiam94)"
+				],
+				"version": "2019-07-19",
+				"url": "https://www.dmsguild.com/product/232212/The-Cook-Class",
+				"color": "870101"
+			}
+		],
+		"optionalFeatureTypes": {
+			"MOR": "Morsel"
+		},
+		"dateAdded": 1648926104,
+		"dateLastModified": 1673562612,
+		"_dateLastModifiedHash": "9b70a5c967"
+	},
+	"class": [
+		{
+			"name": "Cook",
+			"source": "Cook",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple",
+					"{@item hand crossbow|PHB|hand crossbows}",
+					"{@item longsword|PHB|longswords}",
+					"{@item rapier|PHB|rapiers}",
+					"{@item shortsword|PHB|shortswords}"
+				],
+				"tools": [
+					"{@item cook's utensils|PHB}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"arcana",
+								"athletics",
+								"medicine",
+								"nature",
+								"performance",
+								"persuasion",
+								"sleight of hand",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) a {@item longsword|PHB} or (b) a {@item hand crossbow|PHB} and {@item crossbow bolts (20)|PHB|20 bolts}",
+					"(a) {@item leather armor|PHB} or (b) {@item scale mail|PHB}",
+					"(a) two {@item dagger|PHB|daggers} or (b) two {@item light hammer|PHB|light hammers}",
+					"(a) an {@item explorer's pack|PHB} or (b) a {@item scholar's pack|PHB}",
+					"{@item cook's utensils|PHB|Cook's Utenstils} and a  {@classFeature Cook's Bag|Cook|Cook|1}"
+				],
+				"additionalFromBackground": true,
+				"goldAlternative": "4d4 x 10",
+				"defaultData": [
+					{
+						"a": [
+							"longsword|PHB"
+						],
+						"b": [
+							"hand crossbow|PHB",
+							"crossbow bolts (20)|PHB"
+						]
+					},
+					{
+						"a": [
+							"leather armor|PHB"
+						],
+						"b": [
+							"scale mail|PHB"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "dagger|PHB",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"item": "light hammer|PHB",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|PHB"
+						],
+						"b": [
+							"scholar's pack|PHB"
+						]
+					},
+					{
+						"a": [
+							"cook's utensils|PHB"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"con": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium"
+					],
+					"weapons": [
+						"simple"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"arcana",
+									"athletics",
+									"medicine",
+									"nature",
+									"performance",
+									"persuasion",
+									"sleight of hand",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"{@item cook's utensils|PHB}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Morsels"
+					],
+					"rows": [
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							15
+						],
+						[
+							15
+						],
+						[
+							15
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Cook's Bag|Cook|Cook|1",
+				"Morsels|Cook|Cook|1",
+				"Smelling Salts|Cook|Cook|1",
+				"Expertise|Cook|Cook|2",
+				{
+					"classFeature": "Cook Archetype|Cook|Cook|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Cook|Cook|4",
+				"Rotund Reflection|Cook|Cook|5",
+				{
+					"classFeature": "Cook Archetype Feature|Cook|Cook|6",
+					"gainSubclassFeature": true
+				},
+				"Order Up|Cook|Cook|7",
+				"Smelling Salts Improved|Cook|Cook|7",
+				"Ability Score Improvement|Cook|Cook|8",
+				"Expertise|Cook|Cook|9",
+				"Iron Stomach|Cook|Cook|9",
+				{
+					"classFeature": "Cook Archetype Feature|Cook|Cook|10",
+					"gainSubclassFeature": true
+				},
+				"Order Up Improved|Cook|Cook|11",
+				"Ability Score Improvement|Cook|Cook|12",
+				"Smelling Salts Improved|Cook|Cook|13",
+				{
+					"classFeature": "Cook Archetype Feature|Cook|Cook|14",
+					"gainSubclassFeature": true
+				},
+				"Soul of Food|Cook|Cook|15",
+				"Ability Score Improvement|Cook|Cook|16",
+				"Fulfilling Meal|Cook|Cook|17",
+				"Smelling Salts Improved|Cook|Cook|17",
+				{
+					"classFeature": "Cook Archetype Feature|Cook|Cook|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Cook|Cook|19",
+				"Leftovers|Cook|Cook|20"
+			],
+			"subclassTitle": "Cook Archetypes",
+			"fluff": [
+				{
+					"name": "Cook",
+					"source": "Cook",
+					"type": "section",
+					"entries": [
+						"一个半兽人向他的矮人朋友扔出了一条完美的鸡腿，直接落在她的嘴里。当一群地精冲向矮人时，她开始啃食，她的手臂膨胀起来，她用盾牌一扫，就扫掉了三个冲锋的地精。半兽人在围裙上擦了擦油腻的手，笑了笑。",
+						"一个半身人在一英里的空地上盯着一条龙。当龙深深地吸气时，她掏出一个烤辣椒，大口大口地吃起来。她开始大汗淋漓。龙喷出了火，半身人直接冲了上去。",
+						"一个人把沸腾的锅里的东西混在一起，看着周围所有的朋友，疲惫不堪，但他会保证这种情况不会持续太长时间。",
+						"厨师是每支英雄队伍中被遗忘的看守者，因为屠龙的野蛮人总是会死于饥饿。通过美味的食物，厨师可以加强他们的盟友，削弱他们的敌人，对任何战斗都有不可思议的控制。",
+						{
+							"type": "entries",
+							"name": "Food as Craft",
+							"entries": [
+								"任何人都可以把肉扔到火上，但只有厨师才能让肉唱歌。就像艺术家可以看一个孩子画他们的房子一样，厨师也会看典型的厨房。他们可能会笑，也可能会笑，甚至对所呈现的天真无邪嗤之以鼻，但他们都认识到这是简单、基本的。对厨师来说，饭菜不仅仅是配料的集合。",
+								"每种生物都充斥着将多元宇宙联系在一起的同样的神奇能量。厨师们有意或无意地学会了通过食物挖掘生物的魔力，这是他们生命力的来源，厨师们用他们的手艺来塑造它。",
+								"他们的才能使厨师高于普通人，这就是你能找到他们的地方。有些人与与巨人搏斗过的冒险家一起旅行，给那些冒险家以成功的力量。有些人把自己的身体看作是试验品，制定饮食计划来改善自己的身体，使之超过其物种的正常极限。有些人甚至找到了利用感官的方法，创造出不是为了改善而是为了阻碍、削弱、破坏的食物。厨师们了解一个身体是多么精细的调整，特别是一旦你进入它，他们知道如何制造或破坏它。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Life of Servitude",
+							"entries": [
+								"厨师们一直在寻找，寻找完美的味道，最好的饮食，最优质的原料。温顺的厨师会在富有的庄园或狡猾的酒馆中找到工作，但有野心的厨师知道，他们的搜索不可能在一个闷热的厨房中结束，因为它要满足大人物和平民的平淡口味。",
+								"大胆的冒险家带着大胆的舌头而来，他们是厨师的旅程结束的唯一希望。真正的厨师只为那些被证明值得他们准备食物的人提供服务。冒险家们从生活中汲取精华，而厨师们则把这些精华扔进他们的锅里。厨师会让这些冒险者活着，吃饱，直到他们的个人任务完成。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Cook",
+							"entries": [
+								"当你创造你的厨师时，请记住你的角色是如何进入美食艺术领域的。他们是受雇于人，在厨房里学得太快，形成了贪得无厌的自负？他们是由家庭成员或亲密的朋友教的，因此对他们的手艺有一种感性的态度？他们是否出于需要而被推入烹饪，在恶劣的条件下独自生活，试图从贫瘠的环境中挤出活力？",
+								"厨师可能会在家庭厨房或小旅馆里开始他们的烹饪学习，但他们很快就会意识到，要想进步就意味着要从这些死胡同里走出去。大多数厨师会找到与冒险家一起工作的机会，这些人是厨师可以信赖的安全和反馈的盟友。每个伟大的厨师都需要几个批评者。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"你可以通过以下建议快速制作一个厨师。首先，让宪法成为你最高的能力得分，其次是灵巧。第二，选择（%0%）的背景。第三，选择{@optfeature Hardened Bread|Cook}、{@optfeature Invigorating Juices|Cook}和{@optfeature Packed Protein|Cook}的小菜。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Cook's Bag",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 1,
+			"entries": [
+				"在第一层，你可以制作一个厨师袋，这个袋子不仅可以神奇地保存你的美食（如下所述），还可以保存制作这些美食所需的材料。",
+				"你必须每30天至少补充一次这些材料。当你这样做的时候，你可以从市场上购买价值10gp的食物，或者你可以花8小时从你周围的环境中搜刮食物。",
+				"如果你丢失了这个包，你可以通过消耗价值100gp的皮革、宝石和其他原材料来创造一个新的包。这样做需要8小时的工作。"
+			]
+		},
+		{
+			"name": "Morsels",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 1,
+			"entries": [
+				"多年的烹饪经验告诉你，每顿饭都有一口完美的食物，在这一口中，所有的成分都混合在一起，成为真正特别的东西。你已经学会了如何给这块小点心灌输神奇的效果，这取决于这块小点心的成分。摄入你的食物的生物会被赋予这些效果。",
+				"从本专题末尾的列表中选择三种你喜欢的小食。这些是你可以准备的食物。一个生物在同一时间只能受到一种食物的影响。如果一个生物受到一种食物的影响，而他们摄入了另一种食物，原来的效果就会结束。",
+				"随着你等级的提高，你将学会如何准备更多种类的点心，详情见烹饪表。每当你获得一个等级，你就可以用一种不同的食物取代你所知道的一种食物。",
+				"你可以在每个短时或长时的休息时间内烹饪与你的体质修正值相等的小菜。你可以多次烹饪同一类型的小食。所有的小菜都储存在你的（%0%）里，如果取出来超过6秒，或在你下次烹饪小菜时过期。",
+				"你可以用你的行动来给一个生物喂食食物。当你这样做时，你将手伸进你的（%0%），掏出一个小菜，并将它喂给一个你能触摸到的有意识的生物。它们会立即摄取它。你必须有一只自由的手来喂食食物。",
+				"{@bold Saving Throws.}你的一些点心需要你的目标做一个蓄力动作来抵御效果。蓄力动作的计算方法如下。",
+				{
+					"type": "abilityDc",
+					"name": "Morsel",
+					"attributes": [
+						"con"
+					]
+				},
+				"没有嘴或类似口器的生物仍然可以受到你的食物的影响。仅仅接触到你的食物就会产生削弱的效果。如果一个生物不能摄取你的食物，它在任何针对食物效果的蓄力投掷中都有优势。",
+				"{@bold 1st Level Morsels:} {@optfeature Almond Milk|Cook}, {@optfeature Carrot Casserole|Cook}, {@optfeature Cow Innards|Cook}, {@optfeature Flavored Ice|Cook}, {@optfeature Hardened Bread|Cook}, {@optfeature Herbal Grey Tea|Cook}, {@optfeature Invigorating Juices|Cook}, {@optfeature Packed Protein|Cook}, {@optfeature Smoky Chops|Cook}, {@optfeature Spicy Pepper|Cook}, {@optfeature Sugar Crystals|Cook}",
+				"{@bold 7th Level Morsels:} {@optfeature Braised Rabbit|Cook}, {@optfeature Buttered Trout|Cook}, {@optfeature Roast Pheasant|Cook}, {@optfeature Spider Eggs|Cook}, {@optfeature Thickening Gruel|Cook}",
+				"{@bold 11th Level Morsels:} {@optfeature Chamomile Tea|Cook}, {@optfeature Shreevy Leaves|Cook}, {@optfeature Spectral Sprouts|Cook}, {@optfeature Startouched Seeds|Cook}, {@optfeature Sweet and Sour Beets|Cook}",
+				"{@bold 15th Level Morsels:} {@optfeature Boiled Dragon's Tail|Cook}, {@optfeature Hydra Tongue|Cook}, {@optfeature Elemental Pie|Cook}",
+				"{@bold Sous Chef Morsels:} {@optfeature Frosted Grapes|Cook}, {@optfeature Strong Ale|Cook}, {@optfeature Honeyed Fish|Cook}, {@optfeature Pine Nut Mash|Cook}",
+				"{@bold Mess Sergeant Morsels:} {@optfeature Stinking Sprouts|Cook}, {@optfeature Bloating Beans|Cook}, {@optfeature Jittering Coffee|Cook}, {@optfeature Fatty Oats|Cook}",
+				"{@bold Hash Slinger Morsels:} {@optfeature Greasy Slosh|Cook}, {@optfeature Fire Salts|Cook}, {@optfeature Garlic Tuna|Cook}, {@optfeature Rancid Onion|Cook}",
+				"{@bold Brewmeister Morsels:} {@optfeature Underdark Draught|Cook}, {@optfeature Vodka Slushie|Cook}, {@optfeature Hellfire Whiskey|Cook}, {@optfeature Angel's Kiss|Cook}"
+			]
+		},
+		{
+			"name": "Smelling Salts",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 1,
+			"entries": [
+				"一级时，你发现了一种混合香料，可以在鼻子上产生如此强烈的内脏攻击，从而使生物从昏迷中清醒过来。你可以使用一个额外的动作来选择一个你可以接触的生物。你在该生物的鼻子下挥动香料，它可以立即对它当前的一个条件重复一次蓄力，成功后结束该条件。该条件可以是（%0%）或（%1%）条件。"
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 2,
+			"entries": [
+				"在2级时，选择你的两个技能专长，或者选择你的一个技能专长和你的熟练度（%0%）。在你进行的任何能力检查中，你的熟练度加成会翻倍，并使用所选择的任何一种熟练度。"
+			]
+		},
+		{
+			"name": "Cook Archetype",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以选择一个你在行使你的烹饪能力时模仿的原型。主厨、食堂服务员、酒窖服务员、酿酒师、或怪物粉碎者。你的原型选择在3级时授予你特性，然后在6级、10级、14级和18级时再次授予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Rotund Reflection",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 5,
+			"entries": [
+				"5级时，你获得了击退攻击你的敌人的能力。你的肚子是最重要的，你把你的肚子调得很硬，有点像胶质。当你周围5英尺内的大型或小型生物用近身攻击击中你时，你可以用你的反应来使该生物对你的Morsel救赎DC做出灵巧的救赎。如果救赎失败，他们的速度会变成0，直到回合结束，并且他们会被推到离你10英尺远的地方或者被击倒（%0%）（你选择）。"
+			]
+		},
+		{
+			"name": "Cook Archetype Feature",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 6,
+			"entries": [
+				"6级时，你从你的（%0%）中获得一个额外的特征。"
+			]
+		},
+		{
+			"name": "Order Up",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 7,
+			"entries": [
+				"从第七级开始，当你在长时间休息时制作点心时，你可以制作与你的体质能力修饰值相等的额外点心，这些点心都不能有先决条件。"
+			]
+		},
+		{
+			"name": "Smelling Salts Improved",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 7,
+			"entries": [
+				"在第七级时，为你的（%0%）特征所选择的条件可以是（%1%）条件。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 9,
+			"entries": [
+				"在第9级时，你可以再选择两个你的熟练度（在技能方面或与（%0%）），以获得你（%1%）特征的好处。"
+			]
+		},
+		{
+			"name": "Iron Stomach",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 9,
+			"entries": [
+				"在第9级时，一生都在吃任何和所有种类的食物，这使你的胃为任何事情做好准备。你对任何摄入的毒药和{@condition poisoned}情况都有免疫力。"
+			]
+		},
+		{
+			"name": "Cook Archetype Feature",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 10,
+			"entries": [
+				"10级时，你从你的（%0%）获得一个额外的特征。"
+			]
+		},
+		{
+			"name": "Order Up Improved",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 11,
+			"entries": [
+				"在11级时，你可以在短时休息和长时休息中从你的（%0%）功能中制作额外的小食。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一个能力得分提高2分，或者将你选择的两个能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Smelling Salts Improved",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 13,
+			"entries": [
+				"在13级时，为你的（%0%）特征选择的条件可以是（%1%）条件。"
+			]
+		},
+		{
+			"name": "Cook Archetype Feature",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 14,
+			"entries": [
+				"14级时，你从你的（%0%）中获得一个额外的特性。"
+			]
+		},
+		{
+			"name": "Soul of Food",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 15,
+			"entries": [
+				"在15级时，你已经将你身体的生命力与世界的滋养能量相调和。你可以用这个特性施展（%0%）一次，当你完成长时间的休息后，就会重新获得施展的能力。当你这样做时，你会创造出价值100金币的食物，这些食物并不平淡，而是美味可口，令人愉悦。",
+				"此外，如果你做的是点心，而你没有剩余的材料，你就会变出必要的材料作为做点心的一部分。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一个能力得分提高2分，或者将你选择的两个能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Fulfilling Meal",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 17,
+			"entries": [
+				"在17级时，每当你给一个与你共享过长时间休息的生物（包括你自己）喂食一个小点心时，你可以将小点心的效果持续时间加倍。"
+			]
+		},
+		{
+			"name": "Smelling Salts Improved",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 17,
+			"entries": [
+				"在17级时，你的{@classFeature Smelling Salts|Cook|Cook|1}特征所选择的生物在重复救赎上有优势。"
+			]
+		},
+		{
+			"name": "Cook Archetype Feature",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 18,
+			"entries": [
+				"18级时，你从你的（%0%）中获得一个额外的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Leftovers",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"level": 20,
+			"entries": [
+				"在20级时，当你掷出主动权并没有剩下任何食物时，你会在你的（%0%）体内变出一个你知道如何准备的食物。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Sous Chef",
+			"source": "Cook",
+			"shortName": "Sous",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassFeatures": [
+				"We Deliver|Cook|Cook|Sous|Cook|3",
+				"Secret Sauce|Cook|Cook|Sous|Cook|6",
+				"Aromatic Scent|Cook|Cook|Sous|Cook|10",
+				"Magnificent Meal|Cook|Cook|Sous|Cook|14",
+				"Legendary Morsel|Cook|Cook|Sous|Cook|18"
+			]
+		},
+		{
+			"name": "Mess Sergeant",
+			"source": "Cook",
+			"shortName": "Mess",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassFeatures": [
+				"Never Satisfied|Cook|Cook|Mess|Cook|3",
+				"Raucous Belch|Cook|Cook|Mess|Cook|6",
+				"Sturdy Stomach|Cook|Cook|Mess|Cook|10",
+				"Strict Diet|Cook|Cook|Mess|Cook|14",
+				"Legendary Morsel|Cook|Cook|Mess|Cook|18"
+			]
+		},
+		{
+			"name": "Hash Slinger",
+			"source": "Cook",
+			"shortName": "Hash",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassFeatures": [
+				"Bonus Proficiencies|Cook|Cook|Hash|Cook|3",
+				"We Deliver Death|Cook|Cook|Hash|Cook|3",
+				"Extra Attack|Cook|Cook|Hash|Cook|6",
+				"Horrific Stench|Cook|Cook|Hash|Cook|10",
+				"Noxious Strike|Cook|Cook|Hash|Cook|14",
+				"Legendary Morsel|Cook|Cook|Hash|Cook|18"
+			]
+		},
+		{
+			"name": "Brewmeister",
+			"source": "Cook",
+			"shortName": "Brew",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassFeatures": [
+				"Spiked Morsels|Cook|Cook|Brew|Cook|3",
+				"Drunken Stumble|Cook|Cook|Brew|Cook|6",
+				"Boozy Yield|Cook|Cook|Brew|Cook|10",
+				"Angry Drunk|Cook|Cook|Brew|Cook|14",
+				"Legendary Morsel|Cook|Cook|Brew|Cook|18"
+			]
+		},
+		{
+			"name": "Monster Masher",
+			"source": "Cook",
+			"shortName": "Monster",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassFeatures": [
+				"Vital Harvest|Cook|Cook|Monster|Cook|3",
+				"Autonomous Bag|Cook|Cook|Monster|Cook|6",
+				"Combat Bag|Cook|Cook|Monster|Cook|10",
+				"Vital Observance|Cook|Cook|Monster|Cook|14",
+				"Legendary Morsel|Cook|Cook|Monster|Cook|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "We Deliver",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Sous",
+			"subclassSource": "Cook",
+			"level": 3,
+			"entries": [
+				"三级时，你成为英雄的看护者，随时准备帮助你的盟友，即使是在远距离。当你给愿意的生物喂食食物时，你喂食的生物可以离你最多30英尺，只要你能看到他们，而且他们的嘴没有被完全的遮挡物挡住。你直接将食物扔进他们的嘴里，他们会立即摄取它。",
+				"此外，当你把食物喂给一个你可以触摸到的愿意的生物时（除你自己外），你可以作为一个额外的行动。"
+			]
+		},
+		{
+			"name": "Secret Sauce",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Sous",
+			"subclassSource": "Cook",
+			"level": 6,
+			"entries": [
+				"在第6级时，你可以创造一种标志性的酱汁，将其涂抹在你所有有益的小菜上。每当你把食物喂给一个友好的生物时，它就会恢复与你的体质修正值相等的命中率。"
+			]
+		},
+		{
+			"name": "Aromatic Scent",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Sous",
+			"subclassSource": "Cook",
+			"level": 10,
+			"entries": [
+				"到了第十级，连续食用美食的过程中，你的身体已经注入了无数令人振奋的气味，激起了你的同伴们的行动。作为一个动作，你可以在一个强大的波浪中驱逐这些气味。所有你能看到的30英尺范围内的友好生物（包括你自己）都会恢复与你的厨艺水平相当的命中率，并且他们可以立即使用他们的反应来进行一次武器攻击或施放一个他们知道的需要攻击卷或蓄力的咒语（他们选择）。",
+				"一旦你使用这个功能，你必须完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Magnificent Meal",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Sous",
+			"subclassSource": "Cook",
+			"level": 14,
+			"entries": [
+				"从14级开始，你可以准备一场魔法盛宴，强化身体和意志。你获得了施展（%0%）法术的能力。当你这样做时，你会用价值至少500金币的精美食物代替法术的物质成分，法术会消耗这些食物。",
+				"一旦你以这种方式施放（%0%），你就不能再这样做，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Legendary Morsel",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Sous",
+			"subclassSource": "Cook",
+			"level": 18,
+			"entries": [
+				"18级时，你获得了在长时间休息时制作以下小食的能力。当你这样做时，你只能做一个。它在你下一次长休时才会失效，而且不计入你可以准备的小食总数。",
+				"{@bold Monkey's Brains.} 世界上最有能力的人猿的成熟的大脑。在10分钟内，如果目标人物的救赎失败，他们可以选择成功。如果他们选择这样做，这道菜的效果就会结束。"
+			]
+		},
+		{
+			"name": "Never Satisfied",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Mess",
+			"subclassSource": "Cook",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得了快速进食的能力。在你的回合中，你可以作为一个额外的动作给自己喂食一个小东西。",
+				"此外，你的健康食欲会增强你的健康。你的最大命中率立即增加3，并且每当你在这个等级中获得一个等级时就会增加1。"
+			]
+		},
+		{
+			"name": "Raucous Belch",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Mess",
+			"subclassSource": "Cook",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得了用一个响亮而有气味的打嗝来嘲弄你的敌人的能力。作为一项行动，你可以让从你开始的10英尺范围内的每个敌对生物对你的 \"口水 \"进行智慧救赎。如果救赎失败，目标在对除你之外的所有生物进行攻击时将处于劣势，直到你下一回合开始。",
+				"你可以使用这个功能的次数等于你的体质修正值（最少一次）。当你完成一个长时间的休息时，你会重新获得所有已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Sturdy Stomach",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Mess",
+			"subclassSource": "Cook",
+			"level": 10,
+			"entries": [
+				"在10级的时候，你可以同时受到两个小食的影响。",
+				"如果你正处于两份食物的影响之下，并摄入了第三份食物，你就会失去原来的一种影响（你选择）。"
+			]
+		},
+		{
+			"name": "Strict Diet",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Mess",
+			"subclassSource": "Cook",
+			"level": 14,
+			"entries": [
+				"在第14级时，你的饮食可以优化你的身体，使其超过正常极限。选择力量，灵巧，或体质。所选能力的分数增加2，该能力分数的上限变为22。"
+			]
+		},
+		{
+			"name": "Legendary Morsel",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Mess",
+			"subclassSource": "Cook",
+			"level": 18,
+			"entries": [
+				"18级时，你获得了在长时间休息时制作以下小食的能力。当你这样做时，你只能做一个。它在你下一次长休时才会失效，而且不计入你可以准备的小食总数。",
+				"{@bold Crytalline Heart.} 冰糖巨人的心脏。在10分钟内，如果目标的力量、灵巧或体质能力检查或蓄力的总分低于他们被检查的能力得分，他们可以用该得分来代替总分。"
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Hash",
+			"subclassSource": "Cook",
+			"level": 3,
+			"weaponProficiencies": [
+				{
+					"martial": true
+				}
+			],
+			"entries": [
+				"当你在3级成为Hash Slinger时，你获得对武术武器的熟练度。"
+			]
+		},
+		{
+			"name": "We Deliver Death",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Hash",
+			"subclassSource": "Cook",
+			"level": 3,
+			"entries": [
+				"同样在第三级，你获得了在范围内喂食敌人的能力。当你给敌方生物喂食时，你所喂食的生物可以离你30英尺远，只要你能看到他们，而且他们的嘴或类似的孔口没有被完全的遮挡。你把食物直接扔进它们的嘴里或类似的孔中，它们会立即摄取它。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Hash",
+			"subclassSource": "Cook",
+			"level": 6,
+			"entries": [
+				"从6级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Horrific Stench",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Hash",
+			"subclassSource": "Cook",
+			"level": 10,
+			"entries": [
+				"在10级的时候，你基于食物的实验在你的身体里编织了一种令人作呕和心烦意乱的气味，当你处于危险中的时候就会释放出来。每当你身边10英尺内的敌对生物进行能力检查或蓄力投掷时，他们会从他们的卷轴中减去（%0%）。"
+			]
+		},
+		{
+			"name": "Noxious Strike",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Hash",
+			"subclassSource": "Cook",
+			"level": 14,
+			"entries": [
+				"在14级时，当一个生物对你的食物的一个效果进行挽救性投掷时，你可以在投掷时施加不利条件。一旦你使用了这一特性，你必须完成一个短暂或长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Legendary Morsel",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Hash",
+			"subclassSource": "Cook",
+			"level": 18,
+			"entries": [
+				"18级时，你获得了在长时间休息时制作以下小食的能力。当你这样做时，你只能做一个。它在你下一次长休时才会失效，而且不计入你可以准备的小食总数。",
+				"{@bold Bubbly pill.} 这个注入二氧化碳的小点心在目标的胃里溶解，在他们的身体里形成压力。目标必须做一个 \"宪法救赎\"。如果救赎失败，他们会受到{@condition poisoned}的伤害，并且他们的速度会减半，直到你下一个回合结束。无论救赎成功与否，如果目标在1小时内被杀死，它就会爆炸。所有在目标10英尺范围内的生物必须做一个灵巧的救赎动作。如果救赎失败，如果目标是中型或更小的，他们会受到{@damage 10d6}力量伤害，大于中型的每个体型类别会受到{@damage 5d6}额外的力量伤害，如果救赎成功，会受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Spiked Morsels",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Brew",
+			"subclassSource": "Cook",
+			"level": 3,
+			"toolProficiencies": [
+				{
+					"brewer's supplies": true
+				}
+			],
+			"entries": [
+				"三级时，你成为酒精专家，知道它的好处和坏处，并知道如何将它融入你准备的任何食物中。",
+				"如果你还没有熟练掌握，你将获得（%0%）的熟练度。",
+				"此外，当你准备一个点心时，你可以选择将它加料，让你的点心互相影响。如果一个生物受到了加料食物的影响，而他们摄入了另一个加料食物，那么原来的效果不会结束，并且该生物会在1分钟内醉倒。醉酒的生物对{@condition charmed}和{@condition frightened}的情况是免疫的。",
+				"当一个生物的醉酒状态结束时，它将失去所有从点心获得的效果，并且该生物在下一回合结束前不能移动或采取行动，因为它变得宿醉。",
+				"一旦一个生物喝醉了，它就不能再这样做，直到它完成了一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Drunken Stumble",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Brew",
+			"subclassSource": "Cook",
+			"level": 6,
+			"entries": [
+				"从6级开始，你开始操纵你的酒类添加物，为醉酒的生物提供额外的好处。",
+				"被你灌醉的生物会增加10英尺的速度，其他生物在对他们进行机会攻击时有劣势。"
+			]
+		},
+		{
+			"name": "Boozy Yield",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Brew",
+			"subclassSource": "Cook",
+			"level": 10,
+			"entries": [
+				"在10级的时候，你的酒可以放松肌肉，软化某些攻击的打击。",
+				"你所麻醉的生物获得对来自非魔法武器攻击的击打、穿刺和切割伤害的抵抗。"
+			]
+		},
+		{
+			"name": "Angry Drunk",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Brew",
+			"subclassSource": "Cook",
+			"level": 14,
+			"entries": [
+				"在14级时，你制作的酒可以创造出狂热的嗡嗡声。",
+				"每回合一次，当被你灌醉的生物用攻击击中一个生物时，他们可以在伤害卷上加上你的体质修正值。"
+			]
+		},
+		{
+			"name": "Legendary Morsel",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Brew",
+			"subclassSource": "Cook",
+			"level": 18,
+			"entries": [
+				"18级时，你获得了在长时间休息时制作以下小食的能力。当你这样做时，你只能做一个。它在你下一次长休时才会失效，而且不计入你可以准备的小食总数。",
+				"{@bold Master Brew.} 一种坚硬的精制酒。摄取后，目标会立即变成醉酒，持续10分钟。当这种醉酒状态结束时，目标不会变成宿醉状态。"
+			]
+		},
+		{
+			"name": "Vital Harvest",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Monster",
+			"subclassSource": "Cook",
+			"level": 3,
+			"entries": [
+				"在3级时，你学会了在最近被杀的生物身上留下一种力量。在他们最后的时刻，死亡的威胁会给生物带来完整的、最大的生命。在这种状态下被杀死的生物的生命精华会持续存在，但必须被收割和保存起来才能被利用。",
+				"如果你或你的盟友杀死了一个挑战等级为1或更高的敌对生物，并且该生物的身体没有被摧毁，如果它是你知道如何烹饪的类型（如下所述），你可以从身体上收获肉来做一顿特殊的饭。收获这种肉需要1小时，在杀死生物后的24小时内，你可以在生命精华消退前收获这种肉。",
+				"你把这种肉放在你的{@classFeature Cook's Bag|Cook|Cook|1}里，直到你准备好准备它。你每次只能在你的{@classFeature Cook's Bag|Cook|Cook|1}中拥有一种这种肉。作为短期或长期休息的一部分，你可以用这种肉准备特殊的食物。相当于5+你的体质修正因子的生物数量可以作为同一短时或长时休息的一部分来享用这道菜。这些生物获得的好处取决于肉所来自的生物类型。这种好处在短休或长休结束后的24小时内，或直到你的下一次长休，以先到者为准。",
+				"{@bold Beast.}你的当前和最大命中率增加10。",
+				"{@bold Monstrosity.} 你在力量、灵巧和体质方面对魔法有优势。",
+				"{@bold Ooze.}你获得10英尺范围内的盲目性。",
+				"{@bold Plant.} 当你站在阳光直射下时，你在力量和体质检查上有优势，而且每当你会恢复命中率时，将任何掷出的骰子视为掷出其最大值。",
+				"{@bold Aberration.} 你获得60英尺范围内的黑暗视觉和60英尺范围内的心灵感应。",
+				"{@bold Dragon.} 你获得60英尺的飞行速度。如果你在空中结束你的回合，并且没有任何东西让你保持在高空，你会坠落。",
+				"{@bold Fiend.} You have advantage on all Charisma and Intelligence checks and saving throws.",
+				"{@bold Giant.}你获得{@spell Enlarge|PHB}法术的好处。"
+			]
+		},
+		{
+			"name": "Autonomous Bag",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Monster",
+			"subclassSource": "Cook",
+			"level": 6,
+			"entries": [
+				"在6级时，你可以修改你的（%0%），使用最近取来的一块肉的活力，把它煮成一块小菜。",
+				"当你用近战武器对一个非人形、天人、亡灵、构筑物或精灵的敌对生物造成砍击或穿刺伤害时，你可以切下一大块肉，作为同一攻击的一部分放入你的（%0%）。这块肉会立即被你的（%1%）准备成鲜切肉（如下所述）。你的包里一次不能有多于一个这种类型的小食。",
+				"你的{@classFeature Cook's Bag|Cook|Cook|1}可以调味和烹调以下的食物，次数等于你的体质修正值（最少一次）。当你完成一个长时间的休息时，你会恢复已消耗的使用次数。",
+				"{@bold Fresh Cut.}一块罕见的肉片，可以治疗盟友并伤害敌人。当被友善的生物摄取时，目标会恢复{@dice 2d6}的生命值。当被敌方生物摄取时，目标必须做出宪法规定的救赎动作。如果拯救失败，他们会受到{@damage 2d6}酸的伤害，如果成功，则受到一半的伤害。",
+				"当你在这个等级中达到一定的等级时，小菜一碟的治疗和伤害增加1d6。7级（{@dice 3d6}），9级（{@dice 4d6}），13级（{@dice 5d6}），17级（{@dice 6d6}），20级（{@dice 7d6}）。"
+			]
+		},
+		{
+			"name": "Combat Bag",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Monster",
+			"subclassSource": "Cook",
+			"level": 10,
+			"entries": [
+				"在10级时，你将你的（%0%）改装成一种武器，将你的小点心作为弹丸吐出。它算作是一种简单的、神奇的远程武器，只有你才精通。它能造成（1%）重击伤害，并具有弹药（范围30/120）属性。",
+				"你能用于这种武器的唯一弹药是你的点心。在你进行攻击卷之前，你可以选择每次攻击使用哪种食物作为弹药。当你用这把武器击中一个生物时，你可以让目标立即摄取用作弹药的小菜。"
+			]
+		},
+		{
+			"name": "Vital Observance",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Monster",
+			"subclassSource": "Cook",
+			"level": 14,
+			"entries": [
+				"在14级时，你对生物的生命本质的研究使你能看到它的起伏，使你对你密切观察的生物有深入的了解。",
+				"如果你观察一个生物1分钟，你可以了解它是否有任何弱点、免疫力或抵抗力以及它们是什么。你只需要在这一分钟的时间里能够看到这个生物就可以获得这个知识。在这一分钟内你不能观察一个以上的生物。",
+				"你可以使用这个功能获得知识，次数等于你的宪法修改器（最少一次）。当你完成一个长时间的休息时，你会重新获得所有已消耗的使用。"
+			]
+		},
+		{
+			"name": "Legendary Morsel",
+			"source": "Cook",
+			"className": "Cook",
+			"classSource": "Cook",
+			"subclassShortName": "Monster",
+			"subclassSource": "Cook",
+			"level": 18,
+			"entries": [
+				"18级时，你获得了在长时间休息时制作以下小食的能力。当你这样做时，你只能做一个。它在你下一次长休时才会失效，而且不计入你可以准备的小食总数。",
+				"{@bold Vital Meat.} 咬一口你的一个收获。在准备时，从你的重要收获特征中选择一个好处。当这口食物被摄入时，目标会在1分钟内获得所选择的好处。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Almond Milk",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"温热的杏仁奶中撒上肉豆蔻。摄入后，它能使身体为睡眠做好准备。目标必须做一个 \"宪法救赎\"。如果拯救失败，他们将在1分钟内倒下（%0%），并在10分钟内保持（%1%）。如果他们受到任何伤害，或者如果一个生物花了一个动作来摇晃或拍打他们，他们会提前醒来。",
+				"不需要睡眠的生物不受这道菜的影响。"
+			]
+		},
+		{
+			"name": "Carrot Casserole",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"胡萝卜与十几种草药和香料一起烹调。摄入后可改善视力。目标获得黑暗视觉，范围为60英尺，持续8小时。如果目标已经有黑暗视觉，则其范围增加60英尺。"
+			]
+		},
+		{
+			"name": "Cow Innards",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种令人喜爱的食物，闻起来很糟糕。当被摄入时，它会给身体带来令人厌恶的气息。目标必须做一个体质测试。如果失败，目标在所有的魅力检查中处于劣势，并且生物在10分钟内不能被目标吸引（%0%）。如果有任何生物在摄取该食物时在目标身边（%1%），那么对于任何能闻到目标的生物来说，该效果会在持续时间内暂停。"
+			]
+		},
+		{
+			"name": "Flavored Ice",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"像冰一样冷的奶油。摄入后，会产生脑部冻结。目标必须做一个智力储蓄动作。拯救失败时，它将受到{@damage 1d6}的寒冷伤害，并在专注力检查中处于劣势，直到你下一回合开始。拯救成功时，该生物会受到一半的伤害，并且不会有劣势。",
+				"当你达到该类的某些等级时，小菜的伤害增加1d6。4级（{@damage 2d6}），7级（{@damage 3d6}），9级（{@damage 4d6}），13级（{@damage 5d6}），17级（{@damage 6d6}），和20级（{@damage 7d6}）。"
+			]
+		},
+		{
+			"name": "Hardened Bread",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"面包烤得比石头还硬。当被摄入时，它会碎成大块并堵塞喉咙。目标必须做一个力量救赎的动作。拯救失败时，它将受到{@damage 1d6}重击伤害，并且在攻击卷轴上处于劣势，直到你下一个回合开始。拯救成功时，该生物会受到一半的伤害，并且不会有劣势。",
+				"当你达到该类的某些等级时，小菜的伤害增加1d6。4级（{@damage 2d6}），7级（{@damage 3d6}），9级（{@damage 4d6}），13级（{@damage 5d6}），17级（{@damage 6d6}），和20级（{@damage 7d6}）。"
+			]
+		},
+		{
+			"name": "Herbal Grey Tea",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一杯热气腾腾的茶。摄入后，它能使人头脑清醒，并使身体平静。目标在1小时内对所有的体质测试、智力测试和智慧测试都会增加{@dice 1d4}。"
+			]
+		},
+		{
+			"name": "Invigorating Juices",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种美味的水果，充满了良好的汁液。摄取后，这些汁液能增强身体的体质。目标在1分钟内获得{@dice 1d8}的临时攻击点。",
+				"当你达到本类的某些等级时，从这个小食中获得的临时命中率增加1d8。4级（（%0%）），7级（（%1%）），9级（（%2%）），13级（（%3%）），17级（（%4%））和20级（（%5%））。"
+			]
+		},
+		{
+			"name": "Packed Protein",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一个炸鸡腿。摄入后，它能以更高的速度喂养肌肉。在1分钟内，目标在他们使用力量进行的所有伤害卷和能力检查中增加（%0%）。",
+				"当你在这个等级中达到一定的级别时，这个小菜的骰子就会增加。10级（（%0%）），15级（（%1%）），20级（（%2%））。"
+			]
+		},
+		{
+			"name": "Smoky Chops",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一口烟熏火燎的猪肉。摄入后，它与胃液发生反应，产生一种火热的感觉，使身体变暖并表现出发烧。目标获得对寒冷伤害的抵抗力和对（%0%）状况的免疫力，持续10分钟。"
+			]
+		},
+		{
+			"name": "Spicy Pepper",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种辛辣的烤胡椒。摄入后，会引起强烈的出汗，使身体变油。目标获得对火灾伤害的抵抗力和对（%0%）状况的免疫力，持续10分钟。"
+			]
+		},
+		{
+			"name": "Sugar Crystals",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一串结晶的糖类。摄入后，会使细胞过度充电。目标的速度增加5英尺，持续10分钟。",
+				"当你在这个等级中达到一定级别时，这个奖励会增加。5级（10英尺），10级（15英尺），15级（20英尺），20级（25英尺）。"
+			]
+		},
+		{
+			"name": "Braised Rabbit",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"用酒和草药烹制的兔肉。摄入后，它能给身体灌输一种灵动的灵性。目标获得（%0%）的法术效果，持续1小时。"
+			]
+		},
+		{
+			"name": "Buttered Trout",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"涂有黄油的鳟鱼。摄入后，它能抓住肺部，重新制作身体的呼吸装置。目标获得{@spell Water Breathing|PHB}的法术效果，持续1小时。在持续时间内，目标还获得与他们的移动速度相等的游泳速度。"
+			]
+		},
+		{
+			"name": "Roast Pheasant",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"烤野鸡翅。摄入后，它在体内产生一种轻盈感。在10分钟内，当目标坠落时，他们的下降速度会减慢到每回合5英尺到60英尺之间（他们自己选择）。他们可以在每个回合开始时再次选择他们的下降速度。如果他们在点心的效果结束前落地，他们不会受到坠落伤害。"
+			]
+		},
+		{
+			"name": "Spider Eggs",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"盐腌制的蜘蛛卵。摄取后可提高身体的抓地力。目标获得（%0%）的法术效果，持续1小时。"
+			]
+		},
+		{
+			"name": "Thickening Gruel",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种坚韧的粥。摄入后会使皮肤变厚。目标获得（%0%）的法术效果，持续10分钟。"
+			]
+		},
+		{
+			"name": "Chamomile Tea",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"用洋甘菊叶浸泡的茶。摄入后，该茶能放松肌肉，削弱物理攻击。在1分钟内，每当目标进行武器攻击时，他们必须从该攻击的伤害卷中减去（%0%）。"
+			]
+		},
+		{
+			"name": "Shreevy Leaves",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"Shreeve灌木的叶子，经烘烤后可释放出镇定的化学物质。摄入后，目标必须做一个智慧救赎动作。如果拯救失败，该生物会在1分钟内对所有其他生物漠不关心。如果目标以任何方式受到伤害，这种冷漠会提前结束。一个不能被（%0%）的生物对这个效果免疫。"
+			]
+		},
+		{
+			"name": "Spectral Sprouts",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"生长在鬼门关的豆芽。摄入后，目标获得{@spell See Invisibility|PHB}法术的好处，持续1分钟。目标也可以在持续时间内使用一个动作进入或离开虚空界。"
+			]
+		},
+		{
+			"name": "Startouched Seeds",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"在星光下烘烤的葵花籽。当摄取时，目标会滚动（%0%）。该生物可以恢复已消耗的法术槽，这些法术槽的综合等级等于或小于滚动的数字。如果恢复的法术槽在下一分钟内没有使用，就会丢失。"
+			]
+		},
+		{
+			"name": "Sweet and Sour Beets",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"糖渍甜菜浸在酸味奶油中。摄入后，它能软化皮肤，削弱身体对物理攻击的抵抗力。在1分钟内，对每回合击中目标的第一次武器攻击增加{@damage 1d6}的额外伤害。"
+			]
+		},
+		{
+			"name": "Boiled Dragon's Tail",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一块坚硬的尾巴，被煮至柔软和白色。摄取后，目标身体上会长出鳞片，并长出一条由火制成的尾巴。在1分钟内，目标获得一个+1的交流奖励，并且他们可以使用一个动作来做以下事情之一。",
+				"{@bold Frightful Presence.} 目标吼叫。在目标30英尺范围内的每一个目标生物都必须成功进行智慧救赎，否则就会在1分钟内成为目标的{@condition Frightened}。蓄力的DC等于你的Morsel蓄力DC。一个生物可以在它的每个回合结束时重复它的蓄力动作，如果成功，则结束对它的影响。如果一个生物的救赎成功，该生物在接下来的一分钟内对目标的惊恐存在免疫。",
+				"{@bold Tail Swipe.} 近战武器攻击。命中率+8，范围10英尺，一个目标。命中：{@damage 4d8}火焰伤害。"
+			]
+		},
+		{
+			"name": "Hydra Tongue",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"来自九头蛇的一个嘴巴的舌头，用强烈的芳香剂熬制。当被摄取时，目标会长出第二个头，持续1分钟。这个头颅会给他们带来以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"他们在回合开始时获得{@dice 1d10}的临时打击点数。",
+						"任何在过去24小时内被截肢的肢体都会在其每个回合开始时再生。",
+						"他们获得一个额外的反应，只能用于机会攻击。",
+						"他们获得一个额外的行动，只能用于采取脱离、帮助或搜索行动。"
+					]
+				},
+				"在持续时间结束时，头部脱落并蒸发，没有留下任何痕迹。"
+			]
+		},
+		{
+			"name": "Elemental Pie",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种带有果味馅料的糕点，与原始元素盐搅在一起。摄入后，元素的力量会在目标的身体里显现出来。在1分钟内，目标获得对酸、火、毒、闪电和雷电伤害的抵抗。他们也会在持续时间内获得与他们的步行速度相等的飞行和游泳速度。"
+			]
+		},
+		{
+			"name": "Frosted Grapes",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Sous Chef",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"沾有白糖的葡萄。摄入后，它以增强的速度为神经提供能量。在1分钟内，目标对他们使用灵巧进行的所有伤害卷和能力检查增加（%0%）。",
+				"当你在这个等级中达到一定的级别时，这个小菜的骰子就会增加。10级（（%0%）），15级（（%1%）），20级（（%2%））。"
+			]
+		},
+		{
+			"name": "Strong Ale",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Sous Chef",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"强烈发酵的酒精。摄入后，它能使身体的肌肉松弛。目标在1分钟内获得对来自武器攻击的非魔法打击、穿刺和切割伤害的抵抗。"
+			]
+		},
+		{
+			"name": "Honeyed Fish",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Sous Chef",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种甜美而多汁的鱼。摄取后，它能增强心灵的力量。目标在1分钟内对所有智力、智慧和魅力检查具有优势。"
+			]
+		},
+		{
+			"name": "Pine Nut Mash",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Sous Chef",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"烤过的松子被砸成大块的奶油。摄入后，会给目标带来甜美、芬芳的气息。在目标10英尺范围内的所有友好生物（包括目标），在1分钟内都能享受拯救的优势。"
+			]
+		},
+		{
+			"name": "Stinking Sprouts",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mess Sergeant",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"裹着火腿的绿豆芽。摄入后，它们会产生持续的、破坏性的胀气。目标获得对{@condition charmed}和{@condition frightened}条件的免疫力，持续1分钟。"
+			]
+		},
+		{
+			"name": "Bloating Beans",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mess Sergeant",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"丰盛而又膨胀的食物。当被一个中等或较小的生物摄取时，目标会成长为一个更笨重、更具威胁性的形态。目标的体型增加一倍，重量增加8倍，持续1分钟。这种增长使其体型增加了一个类别。在持续时间内，目标还能在力量检查和力量投掷中获得优势。"
+			]
+		},
+		{
+			"name": "Jittering Coffee",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mess Sergeant",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"咖啡中含有不正常的高量咖啡因。摄入后，它能给神经增压，不断通过心脏发送电流。在1分钟内，如果目标因受到伤害而下降到0点命中率，目标反而会下降到1点命中率，这道菜的效果就会结束。"
+			]
+		},
+		{
+			"name": "Fatty Oats",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mess Sergeant",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"充满健康脂肪的复杂谷物。摄入后，它能建立起皮肤的坚硬度，以防止伤害。目标对所有伤害有抵抗力，直到你的下一回合结束。"
+			]
+		},
+		{
+			"name": "Greasy Slosh",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Hash Slinger",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种浓稠、沉重和酸性的粥。摄入后，它迫使身体使用大量的能量来处理。目标必须做出宪法规定的救赎动作。拯救失败时，它将受到{@damage 1d6}的酸性伤害，并被视为{@condition restrained}，持续1分钟。在它的每个回合结束时，目标可以再做一次宪法救赎。如果成功，该效果在目标身上结束。拯救成功时，目标受到一半的伤害，并且不被视为{@condition restrained}。",
+				"当你达到该类的某些等级时，小菜的伤害增加1d6。4级（{@damage 2d6}），7级（{@damage 3d6}），9级（{@damage 4d6}），13级（{@damage 5d6}），17级（{@damage 6d6}），和20级（{@damage 7d6}）。"
+			]
+		},
+		{
+			"name": "Fire Salts",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Hash Slinger",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种稀有的可燃香料。摄入后，它与目标生物的呼吸和唾液混合，产生火热的排放。所有在目标15英尺范围内的生物（包括目标）必须做一个灵巧的蓄力动作。拯救失败时，他们会受到{@damage 4d6}的火焰伤害，拯救成功时则会受到一半的伤害。",
+				"当你在这个等级中达到一定的等级时，小菜一碟的伤害增加1d6。9级（（%0%）），13级（（%1%）），17级（（%2%）），20级（（%3%））。"
+			]
+		},
+		{
+			"name": "Garlic Tuna",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Hash Slinger",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"溃烂的金枪鱼在过度成熟的大蒜中烘烤。当被摄入时，它会使目标从每个毛孔中渗出腐烂。目标必须做一个 \"宪法救赎\"。如果救赎失败，在目标10英尺范围内的所有敌对生物（包括目标）在救赎中处于劣势，持续1分钟。"
+			]
+		},
+		{
+			"name": "Rancid Onion",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Hash Slinger",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一种处于高温分解中的蔬菜。当被摄取时，目标会将蔬菜的过熟汁液喷洒在自己周围。所有在目标30英尺范围内的敌对生物（包括目标）都必须做一个 \"宪法救赎\"。拯救失败时，它们会被{@condition paralyzed}，直到你的下一个回合开始，{@condition blinded}，持续1分钟。在它的每个回合结束时，目标可以再做一次体质救赎。如果成功，他们就不再是（%2%）。"
+			]
+		},
+		{
+			"name": "Underdark Draught",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brewmeister",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一杯漆黑的麦芽酒，泛着阴影的泡沫。摄入后，目标立即吐出神奇的黑暗，填满以目标为中心的10英尺半径的球体。拥有黑暗视觉的生物无法看穿这片黑暗，非魔法光线也无法照亮它。",
+				"黑暗会持续1分钟。所有对目标友好的生物（包括目标）都能看穿这种神奇的黑暗。"
+			]
+		},
+		{
+			"name": "Vodka Slushie",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brewmeister",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"一个白色的冰冻伏特加漩涡，弥漫着一股酒香。摄入后，目标立即吐出雪，覆盖周围的地面。以目标为中心的15英尺范围内的地面会被雪覆盖。",
+				"对于所有敌视目标的生物来说，雪被认为是困难的地形。当雪被吐出时，该区域内所有对目标有敌意的生物必须做一个力量救赎动作。如果拯救失败，生物会被推出雪的区域，远离目标。雪会持续1分钟，或者直到被高温融化。"
+			]
+		},
+		{
+			"name": "Hellfire Whiskey",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brewmeister",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"灰色的酒，表面有病态的黄色火焰抚摸。摄入后，目标的眼睛和身体会被黄绿色的火焰包裹，持续1分钟。火焰在半径10英尺的范围内发出昏暗的光，伸出手来消耗目标的敌人的生命。当对目标有敌意的大型或小型生物在一个回合中第一次进入昏暗之光，或在那里开始它的回合时，它们必须做一个宪法救赎。如果救赎失败，它们会遭受一级的疲惫。"
+			]
+		},
+		{
+			"name": "Angel's Kiss",
+			"featureType": [
+				"MOR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Cook",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Brewmeister",
+							"visible": true
+						}
+					}
+				}
+			],
+			"source": "Cook",
+			"entries": [
+				"白酒，冒着神圣能量的气泡。摄入后，目标在30英尺范围内发出亮光，并在另外30英尺范围内发出暗光，持续1分钟。当对目标有敌意的生物在亮光中开始他们的回合时，他们必须做一个宪法救赎动作。如果救赎失败，他们会受到（%0%）的影响，直到他们下一个回合开始。具有暗视能力的生物在进行这一救赎时处于劣势。"
+			]
+		}
+	]
+}

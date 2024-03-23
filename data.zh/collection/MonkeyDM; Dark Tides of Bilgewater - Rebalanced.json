@@ -1,0 +1,2272 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LoRDToBR",
+				"abbreviation": "DToB:R",
+				"full": "Legends of Runeterra: Dark Tides of Bilgewater - Rebalanced",
+				"authors": [
+					"DnD Beyond",
+					"MonkeyDM"
+				],
+				"convertedBy": [
+					"TheGiddyLimit",
+					"Bowsori"
+				],
+				"color": "64878a",
+				"version": "1.0.0",
+				"url": "https://www.monkeydm.com/",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"FU:Min": "Firearm Upgrade; Minor",
+			"FU:Maj": "Firearm Upgrade; Major"
+		},
+		"dateAdded": 1624479646,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "1f275a6b16"
+	},
+	"item": [
+		{
+			"name": "Adaptive Helm",
+			"source": "LoRDToBR",
+			"page": 0,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"这个金属头盔上镶嵌着水晶，当受到元素能量的影响时，水晶会改变颜色。在佩戴此头盔时，如果你是攻击的目标，会造成酸、冷、火、闪电或雷电伤害，你可以使用反应来适应该伤害类型。在适应期间，你对该伤害类型有抵抗力。十分钟后头盔会恢复到正常状态。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Adaptive Helm",
+					"source": "LoRDToBR"
+				}
+			}
+		},
+		{
+			"name": "Banshee's Veil",
+			"source": "LoRDToBR",
+			"page": 0,
+			"rarity": "uncommon",
+			"reqAttune": "by a spellcaster",
+			"wondrous": true,
+			"entries": [
+				"这个护身符的形状像一把剑，护手上镶嵌着一颗小红宝石。每天一次，当你是一个法术的目标时，你可以使用反应来施放（%0%）（使用你的法术能力）。以这种方式施放{@spell counterspell}并不消耗一个法术槽。"
+			],
+			"attachedSpells": [
+				"counterspell"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Banshee's Veil",
+					"source": "LoRDToBR"
+				}
+			},
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			]
+		},
+		{
+			"name": "Bilgewater Cutlass",
+			"source": "LoRDToBR",
+			"page": 0,
+			"srd": true,
+			"baseItem": "scimitar|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 3,
+			"value": 2500,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"entries": [
+				"这些弯曲的刀片在空中挥舞时发出金色的光芒。",
+				"你在使用该魔法武器进行攻击和伤害的时候有一个+1的加成。在成功命中弯刀后，目标的速度会降低10英尺，直到你下一个回合开始。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Bilgewater Cutlass",
+					"source": "LoRDToBR"
+				}
+			}
+		},
+		{
+			"name": "Blade of Ledros",
+			"source": "LoRDToBR",
+			"page": 0,
+			"srd": true,
+			"baseItem": "longsword|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"weight": 3,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"这把刀的锯齿状碎片被病态的绿色能量结合在一起。你在使用这把魔法武器的攻击和伤害卷中获得+1的奖励。",
+				"当你用此武器击中一个人形物体时，该人形物体会受到额外的（%0%）砍击伤害。",
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"这把武器是被诅咒的，而成为它的附庸会使诅咒延伸到你身上。在用移除诅咒或类似的魔法解除诅咒之前，你不愿意与这把武器分离，一直保持它在你手边。此外，你在使用这把武器以外的其他武器进行攻击时有劣势。",
+						"当你与剑合拍时，每天午夜一次，除非你是不死之身，否则你必须在DC17宪法救赎中成功。如果救赎失败，你的最大命中率会降低10。以这种方式失去的命中率只能通过愿望法术来恢复。如果你的最大命中率以这种方式降低到0，你就会死亡并立即上升为（%0%）。"
+					]
+				}
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Blade of Ledros",
+					"source": "LoRDToBR"
+				}
+			}
+		},
+		{
+			"name": "Boots of Swiftness",
+			"source": "LoRDToBR",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"这些时尚的靴子上装饰着白色的小翅膀。当你穿上这双靴子时，你的基本行走速度增加10英尺。此外，你的行动不受困难地形的影响，法术和其他魔法效果既不能降低你的速度，也不能导致你（%0%）。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Boots of Swiftness",
+					"source": "LoRDToBR"
+				}
+			}
+		},
+		{
+			"name": "Dead Man's Plate",
+			"source": "LoRDToBR",
+			"page": 0,
+			"srd": true,
+			"baseItem": "plate armor|PHB",
+			"type": "HA",
+			"rarity": "rare",
+			"weight": 65,
+			"value": 150000,
+			"ac": 18,
+			"strength": "15",
+			"stealth": true,
+			"entries": [
+				"这个锯齿状的盔甲是由废弃的钩子和倒钩组成的。穿着这件盔甲时，如果你在你的回合中采取{@action Attack}的行动，你可以使用一个额外的行动来尝试推搡你周围5英尺内的一个生物（见《D&D基本规则》第9章的 \"推搡生物\"）。被推的生物会受到{@damage 1d8}的穿刺伤害，此外还可能被撞倒{@condition prone}或被推。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Dead Man's Plate",
+					"source": "LoRDToBR"
+				}
+			}
+		},
+		{
+			"name": "Powder Keg",
+			"source": "LoRDToBR",
+			"page": 0,
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"这些小木桶里装满了极易挥发的火药，然后用魔法密封，方便运输。点燃火桶需要一个动作和一个点燃的火把、火柴或类似的魔法效果。一旦着火，火药桶会在它被点燃的那一轮结束时爆炸，对周围10英尺内的生物和物体造成{@damage 1d10}的火灾伤害。成功的DC12灵巧救赎会使伤害减半。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Powder Keg",
+					"source": "LoRDToBR"
+				}
+			}
+		}
+	],
+	"itemFluff": [
+		{
+			"name": "Adaptive Helm",
+			"source": "LoRDToBR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Adaptive Helm.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Banshee's Veil",
+			"source": "LoRDToBR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Banshee's Veil.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Bilgewater Cutlass",
+			"source": "LoRDToBR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Bilgewater Cutlass.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Blade of Ledros",
+			"source": "LoRDToBR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Blade of Ledros.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Boots of Swiftness",
+			"source": "LoRDToBR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Boots of Swiftness.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Dead Man's Plate",
+			"source": "LoRDToBR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Dead Man's Plate.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Powder Keg",
+			"source": "LoRDToBR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Powder Keg.jpg"
+					}
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Abyssal Eye",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d10 + 15"
+			},
+			"speed": {
+				"walk": 5,
+				"swim": 50
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 16,
+			"int": 5,
+			"wis": 14,
+			"cha": 3,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 14,
+			"languages": [
+				"understands Deep Speech but can't speak"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Vigilant",
+					"entries": [
+						"深渊之眼不能惊讶。"
+					]
+				},
+				{
+					"name": "Water Breathing",
+					"entries": [
+						"深渊之眼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d6 + 6})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Evil Eye",
+					"entries": [
+						"深渊之眼用它的眼睛创造一个恐惧的光环。在30英尺范围内的每个生物都必须在一个{@dc 13}的智慧救赎中成功，否则就会被{@condition frightened}，持续1分钟。目标可以在其每个回合结束时重复蓄力，如果成功则结束对自己的影响。"
+					]
+				},
+				{
+					"name": "Go Fish",
+					"entries": [
+						"深渊之眼使用一个动作从水中跃起，落在30英尺外的另一个水点上，这个路径必须遵循一条直线。在这个跳跃过程中，它可以对其路径上的一个目标进行咬合攻击。如果攻击成功，目标会被（%0%）（逃脱（%1%））并被深渊之眼带到它的着陆点。在这个抓捕结束之前，目标是（%2%），深渊之眼不能对另一个目标使用它的咬击。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS",
+				"DS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"restrained"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Abyssal Eye",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Barkbeast",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"fire",
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"如果树皮兽的盟友中至少有一人在生物的5英尺范围内，而盟友不在该生物的5英尺范围内，则树皮兽在对该生物的攻击卷中具有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Soul Feast",
+					"entries": [
+						"当树皮兽将敌人的命中率降至0时，树皮兽会获得5个临时命中率。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk ms} {@hit 4}击中，到达5英尺，一个生物。{@h}7 ({@damage 2d6})坏死性的伤害。目标必须在{@dc 10}宪法救赎中成功，否则它的最大命中率会减少，减少的数量等于所受的伤害。这种减少持续到该生物完成一个长时间的休息。如果这个效果将其最大命中率降低到0，则目标会死亡。"
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"N"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Barkbeast",
+					"source": "LoRDToBR"
+				}
+			},
+			"miscTags": [
+				"HPR"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Commander Ledros",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|PHB}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 73,
+				"formula": "7d8 + 42"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 15,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"dex": "+3",
+				"wis": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"莱德罗斯可以在其他生物和物体中移动，就像它们是困难的地形一样。如果他在一个物体内结束他的回合，他会受到5({@damage 1d10})力的伤害。"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"在阳光下时，Ledros在攻击卷轴以及依靠视觉的智慧（感知）检查中都处于劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sword of Ledros",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d8 + 4})的砍击伤害，如果目标是人形生物，则加上10 ({@damage 3d6})的砍击伤害。"
+					]
+				},
+				{
+					"name": "Harrowing Mist {@recharge}",
+					"entries": [
+						"莱德罗斯释放出一股阴暗的雾气，以他自己为中心凝聚成一个15英尺半径的圆圈。半径内的每个生物都必须成功地进行一次{@dc 14}体质测试，失败时受到22({@damage 4d10})坏死伤害，成功时受到一半的伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Commander Ledros",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Dragon Shark",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "11d12 + 55"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 60
+			},
+			"str": 23,
+			"dex": 11,
+			"con": 21,
+			"int": 1,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Water Breathing",
+					"entries": [
+						"龙鲨只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，达到5英尺，一个目标。{@h}22 ({@damage 3d10 + 6})的穿刺伤害，目标必须成功地进行{@dc 15}力量救赎，或者被扔到龙鲨选择的方向20英尺。"
+					]
+				},
+				{
+					"name": "Fin Rays",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达10英尺，一个目标。{@h}22 ({@damage 3d10 + 6})穿刺伤害。目标必须做一个{@dc 15}体质判定，如果判定失败会受到24({@damage 6d6})的毒药伤害，如果判定成功会受到一半的伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Dragon Shark",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			]
+		},
+		{
+			"name": "Gangplank",
+			"isNamedCreature": true,
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 190,
+				"formula": "20d8 + 100"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 16,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+9"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+8",
+				"perception": "+5",
+				"sleight of hand": "+6"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"当Gangplank的拯救动作失败时，他可以选择重新掷骰子。他必须使用新的卷轴。"
+					]
+				},
+				{
+					"name": "Remove Scurvy",
+					"entries": [
+						"只要他有至少1点生命值，Gangplank在回合开始时就会恢复10点生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gangplank会进行两次火焰刀攻击。其中一次攻击可以用步枪攻击代替。"
+					]
+				},
+				{
+					"name": "Flame Blade",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个生物。{@h}6 ({@damage 1d8 + 5})砍击伤害，加上7 ({@damage 2d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Rifle",
+					"entries": [
+						"{@atk rw} {@hit 6}击中，范围60/150英尺，一个目标。{@h}8 ({@damage 1d12 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Parrrley",
+					"entries": [
+						"Gangplank用他的步枪进行了一次攻击。"
+					]
+				},
+				{
+					"name": "Dead Man's Plate (Costs 2 Actions)",
+					"entries": [
+						"Gangplank试图推搡一个在他5英尺范围内的生物（见《D&D基本规则》第9章的 \"推搡生物\"）。被推的生物会受到4({@damage 1d8})的穿刺伤害，此外还可能被撞倒{@condition prone}或被推。"
+					]
+				},
+				{
+					"name": "Cannon Barrage (Costs 3 Actions)",
+					"entries": [
+						"Gangplank射出一颗魔法子弹，爆炸成一场炮弹雨。Gangplank选择他周围60英尺内的一个点，以该点为中心的20英尺半径范围内的每个生物都必须做一个{@dc 17}灵巧的蓄力动作。拯救失败时，目标会受到11({@damage 2d10})的重击伤害并被击倒{@condition prone}。拯救成功时，目标受到一半的伤害，并且不被击倒（%3%）。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"F",
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gangplank",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Ironback",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 12,
+			"skill": {
+				"athletics": "+4",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Aquan",
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"铁背人可以呼吸空气和水。"
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"铁背对物体和结构造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d6 + 2})重击伤害。"
+					]
+				},
+				{
+					"name": "Harpoon",
+					"entries": [
+						"{@atk mw,rw}{@hit 4}击中，到达5英尺或范围20/60英尺，一个目标。{@h}11 ({@damage 2d6 + 4})穿刺伤害。如果目标是大型或小型生物，它必须在与铁背的力量较量中成功，否则会被拉向铁背20英尺。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Iron Plating",
+					"entries": [
+						"铁背人在面对一次会击中它的近战攻击时，会在其攻击力上增加2。要做到这一点，铁背人必须能够看到攻击者。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Ironback",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true
+		},
+		{
+			"name": "Miss Fortune",
+			"isNamedCreature": true,
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 123,
+				"formula": "19d8 + 38"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 14,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"int": "+8"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"deception": "+8",
+				"perception": "+7",
+				"sleight of hand": "+9"
+			},
+			"passive": 17,
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"如果Fortune小姐受到的效果允许她做一个灵巧的蓄力动作来承受一半的伤害，如果蓄力动作成功，Fortune小姐将不会受到任何伤害，如果失败，则只有一半伤害。如果她是{@condition incapacitated}，她就不能使用这个特性。"
+					]
+				},
+				{
+					"name": "Fortune's Favor (1/Day)",
+					"entries": [
+						"如果 \"财富小姐 \"的拯救动作失败，她可以选择成功。"
+					]
+				},
+				{
+					"name": "Gunslinger",
+					"entries": [
+						"在敌对生物的5英尺范围内或在远距离攻击时，不会对财富小姐用手枪进行的远程攻击卷轴造成不利影响。此外，在使用手枪进行远程攻击时，财富小姐无视半掩体和四分之三掩体。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"财富小姐进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d8 + 5})穿刺伤害"
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} {@hit 9}击中，范围30/90英尺，一个目标。{@h}10 ({@damage 1d10 + 5})穿刺伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Strut",
+					"entries": [
+						"财富小姐以她的速度移动，不会引起机会攻击。"
+					]
+				},
+				{
+					"name": "Bullet Time (Costs 2 Actions)",
+					"entries": [
+						"财富小姐用她的手枪进行了两次攻击。",
+						"让它下雨（花费3次行动）。财富小姐发射了一连串的子弹。15英尺范围内的每个生物必须做一个{@dc 17}灵巧的蓄力动作，蓄力失败会受到16({@damage 3d10})的穿刺伤害，蓄力成功则受到一半的伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW",
+				"MLW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Miss Fortune",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"pistol|dmg",
+				"rapier|phb"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Pool Shark",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"NX",
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 11,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"sleight of hand": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"any two languages (usually Common and one other)"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Gambler's Luck",
+					"entries": [
+						"当池鲨在攻击卷、能力检查或蓄力投掷中掷出1时，重掷骰子并使用新的骰子（即使该骰子也是1）。"
+					]
+				},
+				{
+					"name": "Sharking (2/Day)",
+					"entries": [
+						"池鲨可以在它的回合中使用一个额外的动作，以它30英尺内的一个生物为目标。如果目标能听到池鲨的声音，那么目标必须成功地完成一个{@dc 12} \"魅力 \"救赎，否则在能力检查、攻击卷和救赎方面处于劣势，直到池鲨的下一个回合开始。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"台球鲨鱼会进行两次球杆攻击。其中一次攻击可以用简易的武器代替。"
+					]
+				},
+				{
+					"name": "Cue Stick",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}6 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Improvised Weapon",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围20/60英尺，一个目标。{@h}5 ({@damage 1d6 + 2})重击伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Pool Shark",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Powder Monkey",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d6 + 5"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Common and Ignan",
+				"but can't speak"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Animalistic Elemental",
+					"entries": [
+						"与动物对话，找到动物或植物的咒语，把粉猴当作野兽。"
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"当粉猴受到一个允许它进行灵巧救赎的效果，只受到一半的伤害时，如果救赎成功，它就不会受到伤害，如果失败，则只受到一半的伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，达到5英尺，一个生物。{@h}3 ({@damage 1d4 + 1})砍击伤害加上2 ({@damage 1d4})火力伤害。"
+					]
+				},
+				{
+					"name": "Explosive Excretion",
+					"entries": [
+						"火药猴变出火药，并将其抛向60英尺外的一个点。在该点5英尺范围内的每个生物必须做一个{@dc 12}灵巧的蓄力动作，如果蓄力失败会受到{@damage 3d6}重击伤害，如果蓄力成功会受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Flash Powder {@recharge 4}",
+					"entries": [
+						"随着一道明亮的闪光，火药猴与它所穿戴或携带的任何装备一起神奇地传送到它能看到的一个无人的空间。在传送之前或之后，火药猴可以用重装属性给它能接触到的一件武器重装。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"IG"
+			],
+			"damageTags": [
+				"S",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Powder Monkey",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Wharf Rat",
+			"source": "LoRDToBR",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 11,
+				"formula": "3d6 + 1"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 12,
+			"int": 2,
+			"wis": 10,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"码头鼠在依靠嗅觉的智慧（感知）检查方面具有优势。"
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"码头鼠对任何没有全部命中率的生物在近战攻击卷轴上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Wharf Rat",
+					"source": "LoRDToBR"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Abyssal Eye",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"深渊之眼是一种畸形的鱼状畸形物，有锋利的牙齿，头骨上有一只紫色的单眼。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Abyssal Eye.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Barkbeast",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"树皮兽是由石化的树皮和坏死的雾气形成的不死仆从，它是由哈洛因催生出来的，用来吞噬生者的灵魂。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Barkbeast.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Commander Ledros",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"当黑雾的卷轴从暗影岛延伸到{@i Phantom's Ire}时，它带来了亡灵指挥官莱德罗斯。这个被诅咒的幽灵被束缚着，为暗影岛夺取了打捞码头，并与暗影岛的其他亡灵军团一起，旨在蹂躏整个比尔吉沃特。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Commander Ledros.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Dragon Shark",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"龙鲨是水生龙的表亲，它是一种巨大的生物，带有有毒的鳍状射线，在比尔吉沃特的海岸徘徊。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Gangplank",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"冈普兰克是一位指挥有方、身经百战的海盗船长。冈普兰克是比尔吉沃特的前任里弗尔国王，在经历了一次刺杀未遂后，他试图夺回自己的头衔。冈普兰克以可怕的力量和钢铁般的意志主宰着比尔吉沃特，这两种品质在他重建支持以再次统治这座城市时对他非常有利。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Gangplank.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Ironback",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"铁背人是一种坦克，像乌龟一样的人形生物，将他们令人印象深刻的破坏能力卖给出价最高的人。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Miss Fortune",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Sarah Fortune是一个有魅力的、持枪的赏金猎人。通过耐心和计划，她已经成为比尔吉沃特最有影响力的冠军，统治着这个城市。莎拉用她的智慧、魅力和无与伦比的目标，在这个混乱的城市建立了一种秩序，并打算保持这种秩序。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Miss Fortune.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Pool Shark",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"作为比尔吉沃特酒馆和赌场的常见特征，台球鲨鱼对技巧性游戏很感兴趣。他们并不惧怕老式的斗殴；对他们来说，战斗是最有技巧的游戏。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Pool Shark.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Powder Monkey",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"财富小姐的这些元素爪牙让她的敌人日子不好过，四处投掷炸药，造成混乱。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Powder Monkey.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Wharf Rat",
+			"source": "LoRDToBR",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"恶毒的怪物盯上了比尔吉沃特，码头老鼠结合了老鼠和鲨鱼最致命的特质，成为一个可怕的猎手。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Wharf Rat.jpg"
+					}
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Path of the Depths",
+			"shortName": "Depths",
+			"source": "LoRDToBR",
+			"subclassFeatures": [
+				"Path of the Depths|Barbarian||Depths|LoRDToBR|3",
+				"Dredge Line|Barbarian||Depths|LoRDToBR|3",
+				"Ghostwater Dive|Barbarian||Depths|LoRDToBR|6",
+				"Manifestations of the Deep|Barbarian||Depths|LoRDToBR|10",
+				"Depth Charge|Barbarian||Depths|LoRDToBR|14"
+			],
+			"className": "Barbarian",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Renegade",
+			"shortName": "Renegade",
+			"source": "LoRDToBR",
+			"subclassFeatures": [
+				"Renegade|Fighter||Renegade|LoRDToBR|3",
+				"Cunning Shot|Fighter||Renegade|LoRDToBR|7",
+				"Grin and Bear It|Fighter||Renegade|LoRDToBR|10",
+				"Right Gun for the Job|Fighter||Renegade|LoRDToBR|15",
+				"Light 'Em Up|Fighter||Renegade|LoRDToBR|18"
+			],
+			"className": "Fighter",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Wild Card",
+			"shortName": "Wild Card",
+			"source": "LoRDToBR",
+			"subclassFeatures": [
+				"Wild Card|Rogue||Wild Card|LoRDToBR|3",
+				"Shifting the Odds|Rogue||Wild Card|LoRDToBR|9",
+				"Twist of Fate|Rogue||Wild Card|LoRDToBR|13",
+				"Joker Wild|Rogue||Wild Card|LoRDToBR|17"
+			],
+			"className": "Rogue",
+			"classSource": "PHB"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Blade and Black Powder",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "Pistoleer表格",
+						"entrySummary": "Pistoleer Form"
+					}
+				}
+			],
+			"entries": [
+				"你创造了一把与你的枪械相匹配的刀，这把刀具有短剑的特性，使你在近战和远程战斗中都是致命的对手。在敌对生物的5英尺范围内，不会对你的远程攻击卷轴造成不利影响。此外，当你使用你的枪手形态进行射击时，你可以使用你的额外行动来用这把刀攻击近战范围内的生物。你也可以用这把刀进行正常攻击。"
+			]
+		},
+		{
+			"name": "Caliber Net",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Min"
+			],
+			"entries": [
+				"通过重新利用一些残余的Hextech零件，你为你的枪配备了一个奥术网，用来困住对手。作为一个行动，在你的枪械范围内选择一个生物。该生物必须在力量救赎上获得成功，否则会被（%0%）。在它的每个回合结束时，目标可以重复这个蓄力动作，如果成功则结束该效果。一旦你使用这个功能两次，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Collateral Damage",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "狙击手形式",
+						"entrySummary": "Sniper Form"
+					}
+				}
+			],
+			"entries": [
+				"你改变你的弹药，使其具有爆炸能力。每回合一次，当你用你的枪械成功击中一个目标时，在目标5英尺范围内的所有生物必须成功地进行灵巧救赎，否则会受到{@dice 3d6}穿刺伤害。当你达到这个等级的11级时，这个伤害会增加到{@dice 5d6}。"
+			]
+		},
+		{
+			"name": "Crosshairs",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Fighter"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你为你的枪械装备了一个瞄准装置。如果你本回合没有移动，你可以作为一个额外动作瞄准你的瞄准器，将你的速度降低到0，并在你使用枪手形态特征进行的下一次攻击中给予你优势，直到你回合结束。"
+			]
+		},
+		{
+			"name": "Double-Barrel",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "狙击手形式",
+						"entrySummary": "Sniper Form"
+					},
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Fighter"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你在你的枪械上增加了第二个枪管。当你使用枪手形态射击时，你可以使用你的奖励动作再次射击。你在这第二次攻击卷中处于劣势。"
+			]
+		},
+		{
+			"name": "Smoke Screen",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Min"
+			],
+			"entries": [
+				"作为一个动作，你改变你的枪的发射装置，释放一阵灰烬和烟雾。这团烟形成一个10英尺的立方体，以你在枪械范围内选择的一个点为中心，在角落里扩散，这个立方体所覆盖的区域被认为是严重遮蔽的。这种烟雾持续10分钟，并且不能被驱散。一旦你使用这个功能，你就不能再使用它，直到你完成一个短或长的休息。"
+			]
+		},
+		{
+			"name": "Barrage",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"作为一个动作，你可以发射一连串的子弹。在以你为中心的15英尺范围内的每个生物都必须做一个灵巧的蓄力动作，失败时受到相当于{@dice 3d10}+你灵巧修饰的穿刺伤害，成功时受到一半的伤害。一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Double Up",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"当你用枪械的远程武器攻击成功击中一个生物时，你可以立即使子弹击中原目标15英尺内的另一个生物。第二个目标受到的穿刺伤害等于你的灵巧修饰值的两倍（最少两个）。你可以用这种方式改变子弹的方向，次数等于你的智力修饰，并且在短暂或长时间休息后恢复所有消耗的使用。"
+			]
+		},
+		{
+			"name": "Lightning Round",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"你在你的枪械上装备了一块不稳定的偷来的Hextech，使你可以在你的回合中释放出一道刺眼的电光作为行动。闪电从你身上射出，形成一条宽1英尺、长30英尺的直线。这条线上的每个生物都必须做一个灵巧的蓄力动作，如果失败会受到{@dice 4d8}的闪电伤害，如果成功会受到一半的伤害。一旦你使用这个特性，你就不能再使用它，直到你完成一个短期或长期的休息。这种伤害在11级时增加到{@dice 7d8}。"
+			]
+		},
+		{
+			"name": "Trial by Fire",
+			"source": "LoRDToBR",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"作为一个额外的动作，你可以用炽热的力量为你的武器充电。直到你下一回合开始，每当你成功攻击时，你会造成相当于你战士等级一半的额外火焰伤害，四舍五入。你可以用这种方式为你的武器充电，次数等于你的智力修饰值（最少一次），并在短期或长期休息后恢复所有使用。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Depths",
+			"source": "LoRDToBR",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"entries": [
+				"遭遇深海的恐怖，可以打破意志薄弱者的心智，但有些人将他们的创伤锻造成在海浪之上从未见过的武器。走在这条路上的野蛮人已经从这样的遭遇中幸存下来，并从这一经历中获得了非凡的能力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gift of the Drowned Ones|Barbarian||Depths|LoRDToBR|3"
+				}
+			]
+		},
+		{
+			"name": "Gift of the Drowned Ones",
+			"entries": [
+				"在3级时，当你采用这条道路时，你获得与你的步行速度相等的游泳速度，获得水下呼吸的能力和对寒冷伤害的抵抗。"
+			],
+			"source": "LoRDToBR",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Dredge Line",
+			"source": "LoRDToBR",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从你3级选择这条道路开始，当你进入愤怒状态时，你会显现出一个额外的附属物。这个武器可以表现为海怪的触手、巨大的锚、超自然的下颚，或者其他基于你历史的东西。",
+				"作为一个额外的动作，你可以使用这个附属物来攻击你所选择的15英尺内的一个生物。目标必须成功地进行力量救赎（DC等于8+你的熟练度加成+你的力量修饰），或者被拉到10英尺外的一条直线上朝你走来。"
+			]
+		},
+		{
+			"name": "Ghostwater Dive",
+			"source": "LoRDToBR",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToBR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你可以冲入水中，然后作为一个动作出现在其他地方。你和你所穿戴或携带的任何装备一起神奇地传送到一个你能看到的无人的空间，最远可达30英尺。在传送之前或之后，你可以进行一次攻击，作为你行动的一部分。以这种方式移动不会激起机会攻击。你可以使用这个能力的次数等同于你的体质修改器，直到你进行短期或长期休息。"
+			]
+		},
+		{
+			"name": "Manifestations of the Deep",
+			"source": "LoRDToBR",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToBR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级的时候，你可以表现出额外的深层适应性。你可以从以下适应性中选择一种，在长时间的休息中，你可以用这个列表中的一个新选项来替换你选择的适应性。",
+				{
+					"type": "entries",
+					"name": "Eyes of the Deep",
+					"entries": [
+						"你获得使用回声定位的能力。当你这样做时，你会施放（%0%）的法术，而不使用法术槽或材料成分。在你以这种方式施展法术后，你不能再使用这个功能，直到你完成一个短期或长期休息。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arms of the Deep",
+					"entries": [
+						"在愤怒的时候，你现在会显现出两个神奇的附属物，它们可以是触手、锚、动画索具或你选择的另一个抓取的手臂。当你使用你的疏浚线能力时，你可以同时以两个不同的生物为目标，它们会被抓紧，直到你下一回合开始时救赎失败。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Heart of the Deep",
+					"entries": [
+						"现在在你的回合中，你可以使用一个额外的动作来获得相当于{@dice 1d12}+你的野蛮人等级的临时打击点数。一旦你使用这个特性，你必须完成一个短暂或长时间的休息才能再次使用它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Soul of the Deep",
+					"entries": [
+						"你现在对所有会导致你（%0%）或（%1%）的效果免疫。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armor of the Deep",
+					"entries": [
+						"你的皮肤会变硬，使你的装甲等级提高1。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Depth Charge",
+			"source": "LoRDToBR",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToBR",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，当你使用鬼水潜行能力时，你可以选择以潮汐力量的波浪出现。当你出现时，所有在你周围10英尺内的生物都必须做一个力量救赎。拯救失败时，生物会受到{@dice 3d6}力量伤害并被击倒在地。拯救成功时，生物会受到一半的伤害，并且不会被击倒（%1%）。"
+			]
+		},
+		{
+			"name": "Renegade",
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"entries": [
+				"定义叛逆者的不是他们所挥舞的武器，也不是他们的战斗方式那么简单。一个叛逆者，首先是一个具有狡猾魅力和豪迈的战士。叛逆者拥有粗鲁的狂妄，他们建造自己的定制枪械，以完美地适应他们自己比生命更重要的个性。特别是资金充裕的叛徒甚至可能拥有个性化的Hextech武器，但这样的人在比尔吉沃特的恶棍中很少见。",
+				"不要误以为他们的吹嘘是空穴来风--低估了叛徒华丽的枪法的人往往会死于非命。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Scoundrel's Wit|Fighter||Renegade|LoRDToBR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gunfighter Form|Fighter||Renegade|LoRDToBR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Weapon of Choice|Fighter||Renegade|LoRDToBR|3"
+				}
+			]
+		},
+		{
+			"name": "Scoundrel's Wit",
+			"entries": [
+				"从3级开始，你的胆量只与你的智慧相匹配，因此，每当你进行魅力检查时，你都会获得相当于你智力修饰值的检查奖励（最低为+1）。",
+				"此外，你还能获得以下技能之一的熟练度。{@skill Deception}, {@skill Persuasion}, 或 {@skill Sleight of Hand}。"
+			],
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Gunfighter Form",
+			"entries": [
+				"此外，当你在3级选择这个原型时，你开始建造一个适合你独特的叛逆者风格的定制枪械。这个过程从选择你的武器所基于的形式开始。每种形态都会赋予你一种新的能力，并解锁某些升级，你可以在更高的级别上为你的武器添加升级。从以下选项中选择一个。",
+				{
+					"type": "entries",
+					"name": "Pistoleer",
+					"entries": [
+						"喜欢速度和风格而不是原始的力量，一个采用Pistoleer形态的叛逆者会挥舞一把小型燧发枪。在你的行动中，你可以瞄准30英尺范围内的一个生物并开枪。对目标进行一次远程攻击。你精通该攻击，一旦命中，该攻击造成的穿刺伤害等于（%0%）+你的灵巧修饰值。当你达到该子类的更高等级时，你在一次行动中可以射击的次数会增加：5级时为两枪，11级时为三枪，20级时为四枪。射击的目标可以是同一个生物或不同的生物。每次射击都要进行单独的攻击卷。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sniper",
+					"entries": [
+						"采用狙击手形态的叛徒拥有一把大型的双手枪械，可以在一次射击中造成巨大的伤害。在你的回合中，你可以瞄准120英尺范围内的一个生物并开枪。对目标进行一次远程攻击。你精通该攻击，一旦命中，该攻击会造成相当于{@dice 2d6}+你的灵巧修正值的穿刺伤害。当你达到更高的等级时，你在使用这种形式的时候会造成额外的伤害，在5级时造成相当于{@dice 4d6}+你的灵巧修饰的伤害，在11级时造成{@dice 7d6}，在20级时造成{@dice 10d6}。"
+					]
+				}
+			],
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Weapon of Choice",
+			"entries": [
+				"通过打捞偷来的奥术技术碎片和纯粹的Rekish聪明才智的结合，你可以用各种升级来定制你的枪械。当你在3级选择这个原型时，从本子类末尾的{@filter Firearm Upgrades|optionalfeatures|Feature Type=FU:Min;FU:Maj}列表中挑选一个小升级和一个大升级。如果某项升级有先决条件，你必须满足该先决条件才能从该升级中获益。",
+				"你在5级和15级获得一个额外的小升级，在10级获得一个额外的大升级。当你在这个等级中获得一个级别时，你可以将升级换成同等级的升级。",
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"其中一些升级需要你的目标做一个蓄力动作来抵御效果。蓄力动作的计算方式如下。",
+						{
+							"type": "abilityDc",
+							"name": "Firearm Upgrade",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			],
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Cunning Shot",
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你学会利用敌人的弱点，即使他们看起来没有弱点。你的枪械所造成的伤害，包括通过枪械升级所造成的伤害，在抵抗力和免疫力方面被视为魔法，并且忽略抵抗力。"
+			]
+		},
+		{
+			"name": "Grin and Bear It",
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你可以在激烈的战斗中振作起来，即使受了重伤也是如此。当你使用你的 \"第二风 \"功能时，你的交流能力获得相当于你的智力修饰的奖励，你的移动速度增加20英尺，并且你不会触发机会攻击，直到你下一个回合开始。"
+			]
+		},
+		{
+			"name": "Right Gun for the Job",
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，你的枪械技能可以适应任何情况。当你完成长时间的休息时，你可以用一个不同的枪械升级来代替你的任何一个枪械升级，尽管你在同一时间不能装备超过两个主要的升级。你仍然必须满足某项升级的先决条件，才能从中受益。",
+				"此外你对枪械的处理也让普通人感到不安，你获得了对（%0%）的熟练度。如果你已经精通，你可以在使用{@skill Intimidation}进行任何能力检查时，改用双倍的熟练度奖励。"
+			]
+		},
+		{
+			"name": "Light 'Em Up",
+			"source": "LoRDToBR",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToBR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你学会了将你枪械中黑火药的挥发性力量转化为单一的震荡性爆炸。作为一个额外的动作，你可以投掷或放下一个小型炸药。如果投掷，炸药的范围是30英尺，并在撞击时立即引爆；如果放下，炸药可以在60英尺外远程引爆，这是另一个奖励动作。",
+				"当被引爆时，每个在爆炸物15英尺范围内的生物都必须做一个灵巧的蓄力动作，失败时受到{@dice 12d6}力量伤害，成功时受到一半的伤害。这个蓄力动作的DC等于你的火器升级DC。",
+				"一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Wild Card",
+			"source": "LoRDToBR",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"entries": [
+				"有些流氓喜欢磨练他们的技能和精确性，其他人则喜欢完善银色的舌头，但你......嗯，你总是喜欢把事情交给机会。",
+				"狂牌类的流氓在游戏桌上的高额赌注和随机的刺激中茁壮成长。这些狡猾的赌徒拥有狡猾的作弊手段和不小的运气，他们按自己的规则生存和死亡，从不热衷于简单地接受命运给他们的手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tricks Up the Sleeve|Rogue||Wild Card|LoRDToBR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Card's Gambit|Rogue||Wild Card|LoRDToBR|3"
+				}
+			]
+		},
+		{
+			"name": "Tricks Up the Sleeve",
+			"entries": [
+				"你对游戏的嗜好使你有能力巧妙地操纵财富对你有利。当你在3级选择这个原型时，你学会了（%0%）的咒语。从9级开始，它对你的范围是30英尺，你可以把它作为一个奖励动作来施放。"
+			],
+			"source": "LoRDToBR",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Wild Card's Gambit",
+			"entries": [
+				"同样在3级时，你获得对以下游戏套装之一的熟练度：（%0%）、（%1%）或（%2%）。",
+				"你所选择的博弈套路授予你一个野牌的赌法，详见下文。如果你精通多种类型的游戏组合，你必须在获得此功能时选择使用哪种赌法。每当你在这个等级中获得一个等级时，你可以改变你选择的赌博方式。",
+				{
+					"type": "entries",
+					"name": "Loaded Dice",
+					"entries": [
+						"你获得一个d6的池子，等于你为你的偷袭伤害滚动的d6数量。(你的池子在3级时以{@dice 2d6}开始，在5级时增加到{@dice 3d6}，以此类推。)",
+						"当一个生物以你为攻击目标时，你可以用你的反应从骰子池中花费一个骰子，并从攻击中减去掷出的数字。你可以选择在生物进行掷骰子之后，但在DM决定攻击卷是否命中之前使用此功能。从9级开始，你可以一次从骰子池中花费最多两个骰子，从17级开始你可以一次花费最多三个骰子。当你完成一次长时间的休息时，你会从你的装填骰子池中重新获得所有消耗的骰子。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragonchess",
+					"entries": [
+						"你对棋盘的精通使你成为战场上熟练的战术家。作为你回合中的额外行动，你可以执行以下的国际象棋动作之一。你可以以这种方式使用奖励动作，次数与你的魅力修正值相等（最少一次），并在长时间休息后恢复所有使用。",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Dragon.",
+									"entry": "选择一个你能看到的在你30英尺范围内的生物。在你下一回合开始前，该生物第一次成功地进行攻击卷，就会造成与你本级别的等级相等的额外伤害。"
+								},
+								{
+									"type": "item",
+									"name": "Griffon.",
+									"entry": "你的冲刺动作是一个额外的动作，而且你的移动不会引起机会攻击。这些好处持续到你下一回合开始。"
+								},
+								{
+									"type": "item",
+									"name": "Sylph.",
+									"entry": "你和你周围30英尺范围内与你的魅力修饰值相等的友好生物在灵巧救赎上有优势，直到你下一回合开始。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Playing Cards",
+					"entries": [
+						"你已经形成了一种基于蛇岛的卡曼术的战斗风格。你拥有自己的魔法卡牌，并能通过手腕的轻弹使其边缘变得锋利。如果你本回合还没有使用偷袭，你可以用你的行动拿一张这些卡片，用它攻击30英尺内的生物。卡片被认为是你精通的远程武器，并且为了克服伤害抵抗和免疫的目的，攻击算作是一个魔法。一旦命中，就会造成相当于{@dice 1d4}+你的灵巧修正值的斩击伤害。当你掷出伤害值时，请看d4上掷出的数字。攻击会根据掷出的数字获得一个随机效果，详见下面的野卡套装表。",
+						"你可以以这种方式使用卡片进行攻击，次数与你的魅力修饰值相等（最少一次），并在长时间休息后恢复所有使用。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wild Card Suit Table",
+					"colLabels": [
+						"Damage die (d4)",
+						"Suit"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@b {@i Blade.}}滚动你的偷袭伤害，并将其加入你的剃刀卡的伤害。在其下一回合开始时，目标受到的额外伤害等于所滚动的偷袭伤害的一半。"
+						],
+						[
+							"2",
+							"{@b {@i Shackle.}}滚动你的偷袭伤害并将其加入你的剃刀卡的伤害。直到你下一回合开始，目标的速度减半。当它的速度以这种方式降低时，它在其回合中不能进行多于一次的攻击。"
+						],
+						[
+							"3",
+							"{@b {@i Heart.}}滚动你的偷袭伤害，并将其加入你的剃刀卡的伤害。你也会立即恢复与所受伤害的一半相等的命中率。重新获得的任何多余的命中率都成为临时命中率。"
+						],
+						[
+							"4",
+							"{@b {@i Wild Ace.}}这张牌会根据庄家的意愿变换花色。选择 \"刀\"、\"枷 \"或 \"心\"。然后这张牌立即获得该花色的相应效果。"
+						]
+					]
+				}
+			],
+			"source": "LoRDToBR",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToBR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Shifting the Odds",
+			"source": "LoRDToBR",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToBR",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"从第9级开始，你敏锐地意识到如何在你领先时退出，当机会开始对你不利时，你会在瞬间消失。作为一个额外的动作，你可以以一种戏剧性的姿态消失。在你10英尺范围内的每个生物都必须做一个灵巧的蓄力动作（DC8+你的熟练度加成+你的魅力修饰），蓄力失败会受到（%0%）武力伤害，蓄力成功则受到一半的伤害。",
+				"然后你会把自己传送到一个你能看到的、离你原来位置120英尺以内的无人空间。一旦你使用了这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Twist of Fate",
+			"source": "LoRDToBR",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToBR",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级时，你对游戏桌的掌握磨练了你在战斗中的速度和狡猾。在滚动主动权之后，但在战斗的第一个回合之前，你可以选择与你能看到的一个生物交换主动权的位置。如果该生物是你的盟友之一，该盟友必须同意与你交换主动权。"
+			]
+		},
+		{
+			"name": "Joker Wild",
+			"source": "LoRDToBR",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToBR",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，你对机会的掌握甚至包括了你自己的形态，使你能够存在于潜在的现实世界之间。作为你回合中的额外行动，你可以变成无体的形态，在此期间你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你为你的野牌的Gambit功能重新获得消耗的力量。",
+						{
+							"type": "list",
+							"items": [
+								"{@b {@i Cards}.} 你会重新获得该功能的所有已用次数。",
+								"{@b {@i Dragonchess}.} 你会重新获得该功能的所有已用次数。",
+								"{@b {@i Dice}.} 你重新获得所有已用的骰子。"
+							]
+						},
+						"你的移动速度增加一倍。",
+						"你获得对所有伤害的抵抗力，并对{@condition grappled}、{@condition paralyzed}、{@condition stunned}和{@condition restrained}的状况免疫。",
+						"你可以在物体和生物中移动，就像它们是困难地形一样。如果你在一个生物体内结束你的回合，该生物会受到{@dice 1d10}力的伤害，并且该生物会被分流到他们原来位置5英尺内的一个随机的无人的邻近空间。"
+					]
+				},
+				"这种无体状态会持续一分钟，或者直到你被{@condition incapacitated}或摔倒{@condition unconscious}。一旦你使用这个功能，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		}
+	]
+}

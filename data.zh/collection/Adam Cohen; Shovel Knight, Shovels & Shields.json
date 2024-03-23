@@ -1,0 +1,3377 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ShovelsAndShields",
+				"abbreviation": "Sh&Sh",
+				"full": "Shovel Knight: Shovels and Shields",
+				"authors": [
+					"Adam Cohen"
+				],
+				"convertedBy": [
+					"Bowsori#7981"
+				],
+				"version": "1.1",
+				"url": "https://yachtclubgames.com/wp-content/uploads/boardGameCameos/Shovels_And_Shields_V1.1.pdf",
+				"targetSchema": "1.1.0",
+				"color": "17e8ff"
+			}
+		],
+		"optionalFeatureTypes": {
+			"BEN": "Knight: Benefactor",
+			"REL": "Knight: Relic"
+		},
+		"dateAdded": 1613582781,
+		"dateLastModified": 1692309855,
+		"_dateLastModifiedHash": "67a9e2f63e"
+	},
+	"class": [
+		{
+			"name": "Knight",
+			"source": "ShovelsAndShields",
+			"classFeatures": [
+				{
+					"classFeature": "Code of Honor|Knight|ShovelsAndShields|1|ShovelsAndShields",
+					"gainSubclassFeature": true
+				},
+				"Benefactor|Knight|ShovelsAndShields|1|ShovelsAndShields",
+				"Ichor Bottle|Knight|ShovelsAndShields|2|ShovelsAndShields",
+				"Relic Keeper|Knight|ShovelsAndShields|2|ShovelsAndShields",
+				"Items of Ichor|Knight|ShovelsAndShields|2|ShovelsAndShields",
+				{
+					"classFeature": "Knight's Code Feature|Knight|ShovelsAndShields|3|ShovelsAndShields",
+					"gainSubclassFeature": true
+				},
+				"Hopeful Soul|Knight|ShovelsAndShields|5|ShovelsAndShields",
+				{
+					"classFeature": "Knight's Code Feature|Knight|ShovelsAndShields|6|ShovelsAndShields",
+					"gainSubclassFeature": true
+				},
+				"Campfire Craftsman|Knight|ShovelsAndShields|7|ShovelsAndShields",
+				"Unwavering Spirit|Knight|ShovelsAndShields|9|ShovelsAndShields",
+				{
+					"classFeature": "Knight's Code Feature|Knight|ShovelsAndShields|11|ShovelsAndShields",
+					"gainSubclassFeature": true
+				},
+				"Treasure Tracker|Knight|ShovelsAndShields|14|ShovelsAndShields",
+				{
+					"classFeature": "Knight's Code Feature|Knight|ShovelsAndShields|15|ShovelsAndShields",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "Knight's Code Feature|Knight|ShovelsAndShields|17|ShovelsAndShields",
+					"gainSubclassFeature": true
+				},
+				"Legend of the Realm|Knight|ShovelsAndShields|20|ShovelsAndShields",
+				"Ability Score Improvement|Knight|ShovelsAndShields|4|ShovelsAndShields",
+				"Ability Score Improvement|Knight|ShovelsAndShields|8|ShovelsAndShields",
+				"Ability Score Improvement|Knight|ShovelsAndShields|12|ShovelsAndShields",
+				"Ability Score Improvement|Knight|ShovelsAndShields|19|ShovelsAndShields"
+			],
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Ichor"
+					],
+					"rows": [
+						[
+							"-"
+						],
+						[
+							"2"
+						],
+						[
+							"2"
+						],
+						[
+							"4"
+						],
+						[
+							"4"
+						],
+						[
+							"6"
+						],
+						[
+							"6"
+						],
+						[
+							"8"
+						],
+						[
+							"8"
+						],
+						[
+							"10"
+						],
+						[
+							"10"
+						],
+						[
+							"12"
+						],
+						[
+							"12"
+						],
+						[
+							"14"
+						],
+						[
+							"14"
+						],
+						[
+							"16"
+						],
+						[
+							"16"
+						],
+						[
+							"18"
+						],
+						[
+							"18"
+						],
+						[
+							"20"
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"Relics"
+					],
+					"rows": [
+						[
+							"-"
+						],
+						[
+							"1"
+						],
+						[
+							"2"
+						],
+						[
+							"2"
+						],
+						[
+							"3"
+						],
+						[
+							"3"
+						],
+						[
+							"4"
+						],
+						[
+							"4"
+						],
+						[
+							"5"
+						],
+						[
+							"5"
+						],
+						[
+							"6"
+						],
+						[
+							"6"
+						],
+						[
+							"7"
+						],
+						[
+							"7"
+						],
+						[
+							"8"
+						],
+						[
+							"8"
+						],
+						[
+							"9"
+						],
+						[
+							"9"
+						],
+						[
+							"10"
+						],
+						[
+							"10"
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"{@item shield|phb|shields}",
+					"light",
+					"medium"
+				],
+				"tools": [
+					"{@item Smith's tools|phb}",
+					"{@item Joustus Set|ShovelsAndShields}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"investigation",
+								"nature",
+								"survival"
+							],
+							"count": 1
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}, (b) one {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} or (c) one {@item buckler|ShovelsAndShields}",
+					"(a) {@item Leather Armor|phb} or (b) {@item Chain Mail|phb}",
+					"A {@item dungeoneer's pack|phb}"
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"{@item shield|phb|shields}",
+						"light",
+						"medium"
+					],
+					"tools": [
+						"{@item Smith's tools|phb}",
+						"{@item Joustus Set|ShovelsAndShields}"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"athletics",
+									"acrobatics",
+									"investigation",
+									"nature",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
+			"fluff": [
+				{
+					"name": "The Knight",
+					"source": "ShovelsAndShields",
+					"type": "section",
+					"entries": [
+						"长久以来，人们一直在讲述勇敢的骑士在地球上游荡，寻找财富和荣耀的故事。无论他们是挥舞着奥术物品的军火库，还是挥舞着一把不大的铲子，这些勇敢的战士都挥舞着传奇的武器和遗物，对抗敌人、亡灵和龙。从盾牌守护者到奇怪的铲子冠军，这些骑士希望为自己扬名立万。",
+						{
+							"type": "entries",
+							"name": "Adventurers At Heart",
+							"entries": [
+								"在新时代的黎明，当荒野还未被驯服时，这片土地就被骑士们所游荡。时至今日，他们经常在荒野或地牢深处被发现，寻找他们的下一次大冒险，很少为自己的安全担心。充满怪物和被遗忘已久的寺庙的森林不过是他们掠夺的另一个地点，并为他们日益增长的传奇增添色彩。",
+								"骑士是一个冒险家的品种，他们对事业的坚定忠诚是无与伦比的。类似于圣骑士对传播神灵的善意的奉献，骑士是为冒险和荣耀而生。这些地牢探险者经常被发现身边带着各种小工具，他们在追求无止境的发现时不会休息。尽管他们的外表，他们很少穿真正沉重的盔甲，因为他们知道平衡运动和坚固性是很重要的。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Becoming a Knight",
+							"entries": [
+								"这个等级的骑士不是简单地由皇室任命，而是由更高的目标驱动。他们的力量和事迹在城镇之间得到认可，在头衔上比在名字上更容易被人提起。他们充满希望的精神使他们在激烈的战斗中冲刺，无论是为了保护盟友，还是为了迎接敌人。虽然有些人是为口舌之争而生，但骑士往往在灵活的肉搏战中大放异彩，而很少精通奥术。有了Ichor的神圣魔法，一些人被赋予了唤醒他们手中的神器或扩展他们自身能力的力量。",
+								"当决定扮演一个骑士时，想想你的骑士寻求什么样的传奇。他们是否在为一个处于危险中的王国寻找圣物？也许从邪恶的魔法中拯救他们的爱人？或者，他们是否希望获得一批类似的强大的冒险家，并建立自己的骑士团？为骑士建立一个目的是很重要的，因为它可以成为角色主题的核心。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Glory and Purpose Everlasting",
+							"entries": [
+								"骑士通常充满信念，但在所有其他特征上都有所不同。许多人有强烈的荣誉感和正义感；另一些人则行为不端，贪婪，或有问题。骑士是一种不适合心灵脆弱者的召唤，那些拒绝召唤的人遭遇了巨大的悲剧，或者在事情变得暗淡时放弃了它。尽管骑士的魔法起源并不神圣，但他们可能是弱者的希望之光。对迷失的人来说是目标的象征。也是那些需要铲子的人的一把铲子。我不是一个会评判的人。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Knight",
+							"entries": [
+								"在设计一个骑士时，尝试采取一个对象、概念或主题，并将其与 \"骑士 \"一词联系起来。例如，一个曾经为强大的伯爵服务，现在被诅咒在阴影中潜行，直到他们安息的那一天的亡灵角色可能被称为无尽的骑士。他们的头衔是由国王授予的吗？也许他们仅仅被称为皇家骑士？也许是哥布林骑士？在这片土地上漫游，寻找那最肮脏的生物，给这片土地上的善良人们带来负担。花骑士可能因为胸甲上随时都挂着一朵蒲公英而闻名。最后，如果他们完成了他们的任务，他们会回到他们曾经熟悉的世界，还是在更广阔的世界中寻找新的冒险？"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"你可以通过以下建议迅速建立一个骑士。首先，把你的最高能力得分放在灵巧上，因为大多数骑士很快就知道，一个重装骑士只有在他们的速度快时才是安全的。你的下一个最高能力应该是智慧，以便赋予遗物和次级能力。然后，选择 \"铲运法\"。最后，选择退休的冒险家背景。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Code of Honor",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 1,
+			"entries": [
+				"每个骑士都知道他们会做什么和不会做什么，以及他们对谁的忠诚是坚定不移的。他们研究古老的传统和技术，以提高自己，并为地下城探险做准备。",
+				"选择一个代码是一个有意义的选择。尽管每一种骑士都能获得许多遗迹，但有些代码可以获得奇怪而强大的遗迹，从而增强他们的实力。"
+			]
+		},
+		{
+			"name": "Benefactor",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 1,
+			"entries": [
+				"虽然每个骑士都有自己的能力，但知道有人支持你总是好的。就像古代的骑士属于为他们提供工具的古代教团一样，你的恩人是你的冒险的赞助人，并定期为你提供赋予你和你的武器的遗物。考虑一下是谁或什么在为你提供稀有的宝物。他们每个人都提供一个奖励技能、工具或语言熟练度。你可以在{@filter Optional Features|optionalfeatures|feature type=BEN}页面上找到它们的清单。"
+			]
+		},
+		{
+			"name": "Ichor Bottle",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 2,
+			"entries": [
+				"2级时，骑士被授予古代宝物魔法的秘密。他们会得到一个含有2个Ichor点的Ichor瓶，其数量会随着骑士表中列出的数量增加。当你花费一个Ichor点时，在你完成一个短期或长期的休息之前，它是不可用的。你必须用至少一个小时的休息时间来补充你的Ichor瓶，以便重新获得Ichor点。",
+				"你的一些能力会要求你的目标做一个自救动作来抵制效果。蓄力投掷DC的计算方式如下。",
+				{
+					"type": "abilityDc",
+					"name": "Ichor",
+					"attributes": [
+						"wis"
+					]
+				}
+			]
+		},
+		{
+			"name": "Relic Keeper",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 2,
+			"entries": [
+				"遗物是被一种称为 \"Ichor \"的液体赋予力量的古代宝物，这种液体流经持有者的身体。从2级开始，你可以获得商店老板、赞助人或被称为恩人的强大存在的青睐。虽然你的恩人可以有很大的不同，以适应你的骑士的故事，但我们已经收集了一些，以方便你。",
+				"当你获得等级时，你可以从这位恩人那里借到与骑士表的遗迹栏相等的遗物。在达到后续等级或完成长期休息后，你可以将你的任何或所有遗物换成新的，条件是你有足够的点数来计算你拥有的所有遗物。你可以在{@filter Optional Features|optionalfeatures|feature type=REL}页面上找到它们的清单。",
+				"你每回合只能使用一个遗物，但可以同时获得多个遗物的好处，除非另有说明。"
+			]
+		},
+		{
+			"name": "Items of Ichor",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 2,
+			"entries": [
+				"与典型的魔法物品不同，Relics是古老的设备，必须由Ichor驱动，没有Ichor瓶的人不能使用。如果你失去了你的Ichor瓶，你必须花24小时制作一个新的。找到一个合适的铁匠或炼金术士可以减少所需时间。",
+				"遗物可以由Ichor提供能量，而你的奉献武器也是如此。你的一些武器可能也需要伊霍尔来发挥它们在战斗中的全部潜力。"
+			]
+		},
+		{
+			"name": "Hopeful Soul",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 5,
+			"entries": [
+				"在第5级时，当面临困难时，你可以将你的灵魂钢化以保持战斗力。在你的回合中，你可以使用你的奖励行动来恢复相当于{@dice 1d8}+你的骑士等级的生命值。",
+				"一旦你使用这个功能，你必须在完成短时或长时休息后才能再次使用。"
+			]
+		},
+		{
+			"name": "Campfire Craftsman",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 7,
+			"entries": [
+				"在第七级时，在短暂休息时，你可以尝试创造一个舒适的营火。一旦成功，你和你的盟友将获得相当于{@dice 1d6}+你的遗迹分数的额外伤害值。在长时间休息时尝试这个方法，可以获得相当于1d4+你的遗迹得分的临时命中率。"
+			]
+		},
+		{
+			"name": "Unwavering Spirit",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 9,
+			"entries": [
+				"达到9级后，丰富的经验增强了你对抗黑暗生物的决心。你对{@condition Frightened}的状况免疫，无论其来源如何"
+			]
+		},
+		{
+			"name": "Treasure Tracker",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 14,
+			"entries": [
+				"当你达到14级时，你的恩人会授予你一个遗物来奖励你的持续努力，即宝物观察之环。这枚闪闪发光的戒指在寻找隐藏的宝藏的检查中具有优势，而在模仿者试图隐藏在众目睽睽之下时会产生劣势。",
+				"另外，你每天可以施放一次（%0%）的法术，而不需要消耗一个法术槽。"
+			]
+		},
+		{
+			"name": "Legend of the Realm",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 20,
+			"entries": [
+				"在达到20级时，你所获得的经验可与任何冒险家相媲美。你的基本移动速度增加一倍。你的灵巧得分增加4分，该得分的最大值现在是24分。"
+			]
+		},
+		{
+			"name": "Knight's Code Feature",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得一个由你的骑士法则授予的功能。"
+			]
+		},
+		{
+			"name": "Knight's Code Feature",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的骑士法则授予的功能。"
+			]
+		},
+		{
+			"name": "Knight's Code Feature",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得一个由你的骑士法则赋予的功能。"
+			]
+		},
+		{
+			"name": "Knight's Code Feature",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一个由你的骑士法则赋予的功能。"
+			]
+		},
+		{
+			"name": "Knight's Code Feature",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 17,
+			"entries": [
+				"在17级时，你获得一个由你的骑士法则赋予的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Code of Shovelry",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"entries": [
+				"长期以来，你已经放弃了传统的武器装备，而去追求铲子工作的优雅艺术。当一些人在用剑砍杀怪物中找到乐趣时，你却致力于充分利用一种提升文明基础的工具。铲子。虽然你可以在你的许多遗物的帮助下适应各种情况，但当其他一切都失败时，你的铲子才是你真正可以依赖的东西。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shovelier|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|1"
+				}
+			]
+		},
+		{
+			"name": "Shovelier",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"entries": [
+				"When you choose this Code at 1st Level, you are proficient with {@item Shovel Blade|ShovelsAndShields}s. If you spend 8 hours with {@item smith's tools|phb}, you can reshape any longsword into a Shovel Blade. With magical longswords taking twice as long or more. The Shovel Blade has the stats of a {@item longsword|phb}, as well as the Finesse property.",
+				"You also gain the {@optfeature Fishfellow's Scale|ShovelsAndShields} for free when you choose this Code. It does not count towards your relic total."
+			]
+		},
+		{
+			"name": "Uprooting Strike",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"作为第三级的额外行动，你可以花费1个Ichor来尝试将你的铲子埋在5英尺内的一个敌人的下面并将其翻转。你的目标要进行相当于你的 \"爱神 \"救赎DC的力量投掷。如果失败，他们会在你的回合的持续时间内被击倒（%0%）。如果成功，你在本回合的下一次攻击中对目标有劣势。"
+			]
+		},
+		{
+			"name": "Shovel Drop",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你可以用你的行动来尝试用铲子落下。当你用你的铲子落到10英尺内的生物身上时，对其进行双手攻击。如果成功，则按正常方法计算伤害。你可以对同一目标或10英尺内的相邻目标进行另一次攻击，最多三次。一旦击中，你会造成{@dice 1d8}+Dex的穿刺伤害。你可以选择执行最多2次额外的铲子弹跳。在每一次连续的弹跳中，你都会造成低一个等级的伤害（{@dice 1d6}, {@dice 1d4}），不含Dex修改器。如果你失手，你可以花费1个Ichor来提高你的感觉并避免坠落（%3%），因为你落在目标的5英尺内，并失去你的下一个奖励动作。当通过铲子坠落旅行时，你会忽略困难的地形。当你自愿结束这个能力时，在目标的10英尺范围内选择一个空间着陆。",
+				"从第8级开始，你可以掉落的次数增加1次，并且伤害模子从（%0%）开始，而不是（%1%）。"
+			]
+		},
+		{
+			"name": "Shovel Warrior",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你的铲刀在攻击卷上获得+2的奖励。这个奖励在12级时增加到+4。"
+			]
+		},
+		{
+			"name": "Returned In Spades",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，当你被远程武器攻击击中时，你可以使用你的反应来阻挡导弹。当你这样做时，你从攻击中受到的伤害会减少{@dice 1d8}+你的灵巧修正值+你的骑士等级。",
+				"如果你将伤害降低到0，并且它足够小，可以用一只手拿着，你可以用你的铲刃击打它来反射导弹。然后，你可以花费1个Ichor点，用你刚刚反射的武器或弹药进行一次远程攻击，作为同一反应的一部分。你以熟练度进行这次攻击，而不考虑你的武器熟练度，导弹的效果为（%0%）+Dex，普通范围为20英尺，远距离为60英尺。"
+			]
+		},
+		{
+			"name": "Dungeon Destroyer",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Upon reaching 15th level, your devotion to shovelry grows. You gain a +1 bonus to attack and damage rolls while using your shovel, and each of your shovel drops deal an additional {@dice d6} force damage. In addition, you can use your {@item Shovel Blade|ShovelsAndShields} to burrow through natural rock at half your land speed."
+			]
+		},
+		{
+			"name": "Earth Shattering Strike",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Shovelry",
+			"subclassSource": "ShovelsAndShields",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你每天可以对大地做一次向下的推力。作为一个动作，在15英尺范围内选择一个地点跃起。以你选择的每个点为中心的15英尺半径的球体中的每个生物都必须做一个灵巧的蓄力动作。球体在转角处扩散。拯救失败时，生物会受到{@dice 10d10}力的伤害，拯救成功时则受到一半的伤害。在失败的情况下，生物也会被击倒（%1%）。地面会变成困难的地形，或者因为这次攻击而被摧毁。"
+			]
+		},
+		{
+			"name": "Code of Aegis",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"他们说，最好的进攻是良好的防御，对于《宙斯盾法典》的追随者来说，这一点再正确不过了。作为一个冒险家，你的经验是围绕着盾牌展开的。",
+				{
+					"type": "table",
+					"caption": "Shield Bash",
+					"colLabels": [
+						"Level",
+						"Damage"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-center"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@dice 1d4}"
+						],
+						[
+							"6th",
+							"{@dice 1d6}"
+						],
+						[
+							"15th",
+							"{@dice 1d8}"
+						],
+						[
+							"17th",
+							"{@dice 1d10}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shield Expertise|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|1|ShovelsAndShields"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shield Striker|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|1|ShovelsAndShields"
+				}
+			]
+		},
+		{
+			"name": "Aegis Marksman",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从第三级开始，当挥舞盾牌时，你可以选择将它扔出去。在30英尺内用你的盾牌进行一次远程攻击。成功命中后，造成{@dice 1d6}重击伤害。在其飞行期间，你会失去盾牌所赋予的任何AC奖励。在你的回合结束时，你的盾牌会回到你的手中。"
+			]
+		},
+		{
+			"name": "Rising Star",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"三级时，你已经有信心将你的盾牌作为盟友的临时平台。作为一个额外的动作，你可以将你的盾牌放在你的头顶上，让盟友踩在上面。盟友可以用他们的部分行动来到达你的盾牌，把你的空间算作困难地形。",
+				"使用你的盾牌作为平台的盟友会获得额外的（%0%）攻击加成，并且在他们再次接触地面之前，在他们的攻击中增加一半你的Dex修改器（向下取整）的伤害加成。",
+				"当你保持这个姿势时，你的盾牌会失去一半的交流得分（向下取整）。从下一回合开始，你可以作为一个自由动作再次降低你的盾牌。"
+			]
+		},
+		{
+			"name": "Answer The Call",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你学会了没有盟友应该独自战斗。当花费你的行动力去接触一个友好的生物时，你这样做不会引起机会攻击。"
+			]
+		},
+		{
+			"name": "Courageous Spirit",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的勇敢鼓舞了你周围的人。半径10英尺内的盟友在对造成{@condition Frightened}状况的法术或能力的检查中获得优势。"
+			]
+		},
+		{
+			"name": "Indirect Route",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th Level you have gained a powerful mastery of your shield's flight. You can now throw your shield towards a point of your choosing within 30 feet and hold it there until the beginning of your next turn (no concentration needed). Allies may use this shield as a platform to incur the benefits recieved by {@subclassFeature Rising Star|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|3}. You lose the AC bonus granted by the shield during its flight."
+			]
+		},
+		{
+			"name": "The Defender",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级时，你正面面对敌人，并使最接近你的人免受伤害。挥舞盾牌时，你和你选择的盟友周围10英尺范围内的敌人在每回合的一次攻击中产生劣势。"
+			]
+		},
+		{
+			"name": "Shield Savant",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th Level, you've grown powerfully proficient with your shield, granting you double proficiency bonus on attacks or saves that involve your shield. You also ignore AC penalties incurred from {@subclassFeature Rising Star|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|3} and {@subclassFeature Aegis Marksman|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|3}."
+			]
+		},
+		{
+			"name": "Shield Expertise",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你精通挥舞两个扣子或盾牌，具有双手的属性。当你的主手拿着盾牌/扣具时，你获得以下好处。",
+				"- 你的盾牌被认为是你熟练掌握的一种精巧的武器。",
+				"- 你可以掷出一个{@dice 1d4}来代替徒手攻击的正常伤害。这个模子随着你获得骑士等级而改变，如盾牌撞击表所示。"
+			]
+		},
+		{
+			"name": "Shield Striker",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Aegis",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"当用你的盾牌对对手进行攻击时，你可以花费1个Ichor来让他们进行一个灵巧的救赎。如果失败，从以下选项中选择。",
+				"- 目标被击退10英尺。",
+				"- 目标被打到他们原来位置的左边或右边5英尺。"
+			]
+		},
+		{
+			"name": "Code of Torment",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"一个被奇怪地施了魔法的骑士，被注入了Ichor。不是真的活着，也不是真的死了。介于两者之间的东西。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grave Weapon|Knight|ShovelsAndShields|Torment|ShovelsAndShields|1|ShovelsAndShields"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ichor Empowered|Knight|ShovelsAndShields|Torment|ShovelsAndShields|1|ShovelsAndShields"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poisoned Mind|Knight|ShovelsAndShields|Torment|ShovelsAndShields|1|ShovelsAndShields"
+				}
+			]
+		},
+		{
+			"name": "Dash Slash",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在第三级时，作为你的行动，在15英尺范围内选择一个目标生物，以你为中心画一条线，延伸到目标的5英尺以外。你飞过并穿过它们到达那个位置，在你的旅行中对目标进行一次近战攻击。",
+				"你可以消耗你一半的行动力来调整你的着陆，额外的5英尺。这个能力不能用于制造或挑起机会攻击。你可以在空降或坠落时使用这个能力。"
+			]
+		},
+		{
+			"name": "Undying Soul",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"三级时，你的魔法对你灵魂的控制力增强。在死亡时，你不会直接死亡，而是丢掉你的饰品。如果一个同盟的生物捡到了这个饰品并在24小时内完成了长时间的休息，你就会复活。如果你的饰品被毁，你就会被永久地毁灭。愿意的生物可以戴上这个饰品并听到你的声音。",
+				"如果你失去了这个饰品，在72小时内你将开始腐烂并被永久摧毁。"
+			]
+		},
+		{
+			"name": "Upheaving Swing",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你对一个敌对的生物采取攻击行动时，你可以花费1个ichor来使目标生物对你的Ichor Save DC做一个强度救赎。如果失败，你会受到以下惩罚。",
+				"- 目标生物被发射到5英尺高的空中，直到他们的回合开始，期间他们会像正常人一样用脚着陆。",
+				"- 在空中时，对它们的攻击是以优势进行的，成功后会使生物坠落（%0%）。",
+				"You may spend an additional 1 Ichor to perform an extra attack using {@subclassFeature Dash Slash|Knight|ShovelsAndShields|Torment|ShovelsAndShields|3}."
+			]
+		},
+		{
+			"name": "Expert Movement",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得了比正常情况下更快的攀爬能力；攀爬不再花费你额外的移动力。",
+				"此外，你现在对坠落的伤害有抵抗力。"
+			]
+		},
+		{
+			"name": "Between Planes",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你已经逐渐适应了你的新存在。长时间休息后，从以下列表中选择一种伤害类型，你在8小时内对它有抵抗力。火、闪电、酸、冷。"
+			]
+		},
+		{
+			"name": "The Reaper",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级时，你可以在你的回合中花费你的动作将你的镰刀扔向120英尺和视线范围内你选择的方向。作为这个动作的一部分，你可以选择传送到你的镰刀上并进行一次近战攻击。如果你失去了你的镰刀，你可以使用一个额外的动作将它送回你的手中，只要它和你在同一个存在平面上。"
+			]
+		},
+		{
+			"name": "Grave Weapon",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"Starting when you choose this Code at 1st Level, you forge a {@item scythe|ShovelsAndShields} that empowers your enchanted abilities. You are proficient with scythes. The scythe has the stats of a regular scythe, as well as the Finesse property. By spending 8 hours you can recraft a new scythe."
+			]
+		},
+		{
+			"name": "Ichor Empowered",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你可以花费一定数量的Ichor来为你的攻击卷添加奖励，或者为你的伤害卷添加与所花费的Ichor数量相等的{@dice d6}砍伤。这必须在你做出攻击卷之前声明。"
+			]
+		},
+		{
+			"name": "Poisoned Mind",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Torment",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你的身体已经屈服于你的代码的腐败和腐烂。有了这个，你获得了对所有来源的毒物伤害的抵抗。然而，为了从药水中疗伤或安全地食用食物或饮料，你必须花一分钟时间来腐蚀它们。恢复性法术（如（%0%））仍然对你有治疗效果。"
+			]
+		},
+		{
+			"name": "Code of The Adventurer",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在危险面前，你的英雄主义是无与伦比的。凭借磨练出来的技能，你能够发挥出你的武器的最佳性能，在你最需要的时候，有一个小的武库来保持你的选择。作为一名骑士，你的纽带是你的事业，你会为实现你的目标而不遗余力。",
+				"你在1、6和15级获得一个额外的遗物，在17级获得2个额外的遗物",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Weapon Devotion|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|1|ShovelsAndShields"
+				}
+			]
+		},
+		{
+			"name": "Speed Runner",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在寻找最佳路线方面，你比其他人更胜一筹。在第3级时，你的基本移动距离增加了10英尺。",
+				"另外，在跳跃时，你可以使用你的灵巧修正值而不是力量修正值。"
+			]
+		},
+		{
+			"name": "Honing Your Craft",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"三级时，你在你所依赖的武器中找到了安慰。你的献身武器根据其选择的类型获得以下属性。",
+				"- 远程武器：你在使用该武器进行攻击时获得+1的奖励。",
+				"- 近战武器：你在使用该武器时获得攻击和伤害卷的+1奖励。",
+				"你也可以为你的 \"奉献武器 \"选择下列附加属性之一。",
+				{
+					"type": "table",
+					"caption": "Bonus Properties",
+					"colLabels": [
+						"Type",
+						"Upgrades"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-2-12 text-left"
+					],
+					"rows": [
+						[
+							"近战",
+							"全能({@dice 1d10}),轻型,伸手,投掷(范围20/60)"
+						],
+						[
+							"遥控的",
+							"光线,去除装弹属性,伤害增加({@dice 1d8}),去除弹药属性,范围增加(+10英尺)"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Treasure Hunter",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th Level you've begun to collect rare Relics that have never been seen before. You gain one of the following Relics from the Relic List for free: {@optfeature The Eye of True Sight|ShovelsAndShields}, {@optfeature The Grapple Anchor|ShovelsAndShields}, {@optfeature The Bomb Bag|ShovelsAndShields}.",
+				"或者，你可以获得你的奉献武器的第二个副本。"
+			]
+		},
+		{
+			"name": "Crafty Combatant",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在达到6级时，当你使用你的行动来使用一个遗物时，你可以使用第二个遗物，只要它使用一个额外的行动。"
+			]
+		},
+		{
+			"name": "Multiattack",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，从以下特征中选择一个。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Rapid Fire.",
+							"entry": "你可以使用你的行动并花费1个Ichor对你武器范围内你能看到的10英尺范围内与你的智慧修饰值相等的生物进行一次远程攻击。你必须为每个目标准备弹药，就像平时一样，而且你要为每个目标做单独的攻击卷。"
+						},
+						{
+							"type": "item",
+							"name": "Spinning Strike.",
+							"entry": ". 你可以使用你的行动并花费2个Ichor对你周围5英尺内的任何数量的生物进行近战攻击，对每个目标进行单独的攻击卷。一旦命中，目标将受到额外的（%0%）力量伤害，因为你的攻击得到了Ichor的神话力量的支持。"
+						},
+						{
+							"type": "item",
+							"name": "Vigorous Stance.",
+							"entry": "你可以花费一个Ichor并使用你对来袭攻击的反应，在该回合的剩余时间内使你的AC值+3。在再次使用这个能力之前，你必须完成一个短暂的休息。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ichor Invigorated",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级时，你知道如何用伊霍尔给你的武器过度充电。作为一个额外动作，你可以花费3个Ichor。在你10分钟内的下一次攻击中，在你的攻击卷上增加+5，并额外增加{@dice 3d6}武力伤害。"
+			]
+		},
+		{
+			"name": "Weapons Master",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th Level you gain another Relic from the {@subclassFeature Treasure Hunter|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|6} list and may add an additional property to your Weapon of Devotion."
+			]
+		},
+		{
+			"name": "Weapon Devotion",
+			"source": "ShovelsAndShields",
+			"className": "Knight",
+			"classSource": "ShovelsAndShields",
+			"subclassShortName": "Adventurer",
+			"subclassSource": "ShovelsAndShields",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"你已经研究了一种古老的艺术，致力于你的代码的武器。决定这个武器是什么。你现在已经精通它了。",
+				"从以下列表中选择它造成的伤害类型。砍伤、刺伤、击伤。",
+				"武器的属性是由以下之一决定的。",
+				{
+					"type": "table",
+					"caption": "Devotion Weapon Table",
+					"colLabels": [
+						"Weapon",
+						"Damage",
+						"Weight",
+						"Properties"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-6 text-left"
+					],
+					"rows": [
+						[
+							"近战",
+							"{@dice 1d8}",
+							"4lb",
+							"精细化"
+						],
+						[
+							"遥控的",
+							"{@dice 1d6}",
+							"10lb",
+							"弹药（射程30/100），装载"
+						]
+					]
+				}
+			]
+		}
+	],
+	"background": [
+		{
+			"name": "Order of No Quarter",
+			"source": "ShovelsAndShields",
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"athletics": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"thieves' tools": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"thieves' tools|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 3500,
+							"displayName": "a stolen pouch containing 35gp"
+						},
+						{
+							"special": "a wanted poster with your name on it"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Intimidation}, {@skill Athletics}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@item thieves' tools|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "{@item thieves' tools|phb}，一个装有35gp的偷来的腰包和一张写有你名字的通缉海报"
+						}
+					]
+				},
+				"无敌骑士团是一个由女魔头为其邪恶目的而创建的反派骑士团体。除了他们各自的战斗技能外，每个骑士在骑士团中都有一个特定的角色，以及他们个人雇佣的忠诚奴仆。你曾一度发现自己跻身于他们的行列，也许你仍然与他们结盟。",
+				"问问自己是什么让你加入骑士团？其他成员是谁？你们是否有一个真正的共同目标，或者是一个方便的联盟？",
+				{
+					"name": "Feature: Notorious Villain",
+					"type": "entries",
+					"entries": [
+						"在每一个城镇，你都能找到庇护所，让普通人感到恐惧，希望能避免你的愤怒。如果你的目标一致，你也可以在人渣和恶棍中找到喘息的机会。你的存在也可能会引起那些想为自己扬名立万的英雄的愤怒。"
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Retired Adventurer",
+			"source": "ShovelsAndShields",
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"history": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"fishing tools": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"fishing tackle|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000,
+							"displayName": "a small lockbox containing 10gp"
+						},
+						{
+							"special": "a keepsake of a loved one"
+						},
+						{
+							"item": "Rations (1 day)|phb",
+							"quantity": 3
+						},
+						"traveler's clothes|phb"
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Insight}, {@skill History}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@item fishing tools|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "(0％），一套旅行者的衣服，一个（1％），一个装有10gp的小锁箱，一个爱人的纪念品，以及3天的口粮。"
+						}
+					]
+				},
+				"在你的全盛时期，你是一个伟大的冒险家。在多年不活动之后，冒险的召唤使你再次举起武器，希望能将世界恢复到它应有的位置。",
+				{
+					"name": "Feature: Dreams Of Morrow",
+					"type": "entries",
+					"entries": [
+						"你经常梦到自己的目标，并可能对未来有预感。当你睡觉时，你的梦会很多。这些梦将使你充满面对新一天所需的力量。即使在光秃秃的土地上，你也能找到安慰，只要篝火的温暖能带给你慰藉。"
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Disgraced Traitor",
+			"source": "ShovelsAndShields",
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"persuasion": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"disguise kit|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 2500,
+							"displayName": "a belt containing 25gp"
+						},
+						{
+							"special": "a painful memento that reminds you of your past"
+						},
+						{
+							"item": "Rations (1 day)|phb",
+							"quantity": 5
+						},
+						"commoner's clothes|phb"
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Deception}, {@skill Persuasion}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@item disguise kit|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "一套{@item commoner's clothes|phb}，一个{@item disguise kit|phb}，一个{@item bedroll|phb}，一个装有25gp的腰带，一个能让你想起过去的痛苦纪念品，以及5天的口粮。"
+						}
+					]
+				},
+				"有些人宁愿他们的过去被遗忘。无论是为了发工资而出卖自己的村子，还是背弃家庭，甚至是把某人丢给一定的厄运，遗憾的阴影都笼罩在你的头上。你经常发现自己在看纪念品，希望你能消除你在这个世界上的所有错误。",
+				"问问自己，你做了什么罪孽深重的事？你如何寻求消除它？当你这样做时，你是否会把目光投向一些新的目标？",
+				{
+					"name": "Feature: Nightmares of Yesteryear",
+					"type": "entries",
+					"entries": [
+						"你有关于你过去失败的梦。当你长时间休息时，你的梦会纠缠于那些失去的东西。虽然它们可能提供对未来的预感，但它们会阻止你在沉睡中真正找到慰藉。"
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "The Enchantress",
+			"isNamedCreature": true,
+			"source": "ShovelsAndShields",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 180,
+				"formula": "19d10 + 76"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 25,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 18,
+			"int": 17,
+			"wis": 12,
+			"cha": 14,
+			"senses": [
+				"darkvision 120ft"
+			],
+			"passive": 16,
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"frightened",
+				"charmed",
+				"prone"
+			],
+			"languages": [
+				"all"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"女魔法师是一个8级的施法者。她的法术能力是智力（法术保存（%0%），用法术攻击命中率+7）。女魔法师准备了以下巫师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell shield}",
+								"{@spell Tasha's hideous laughter}",
+								"{@spell thunderwave}"
+							],
+							"slots": 3
+						},
+						"2": {
+							"spells": [
+								"{@spell gust of wind}",
+								"{@spell scorching ray}",
+								"{@spell shatter}"
+							],
+							"slots": 2
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell wall of fire}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Unearthly Power",
+					"entries": [
+						"女巫对试图反击她的法术的行为施加了不利的影响。"
+					]
+				},
+				{
+					"name": "Magically Proficient",
+					"entries": [
+						"女魔法师对法术和其他魔法效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Futile Effort",
+					"entries": [
+						"作为反应，女巫可以尝试反射一个针对她的法术或远程攻击。她会掷出一个相反的法术攻击。如果她击败了最初的法术攻击卷，她会反射它，对施法者造成5{@damage 1d8 + 1}的坏死伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiaction",
+					"entries": [
+						"女魔法师每回合可进行两次行动。"
+					]
+				},
+				{
+					"name": "Dance of Flame",
+					"entries": [
+						"女巫向敌人扔下一个由6个火球组成的小型武器库。在她选择的地点5英尺范围内的生物必须做一个{@dc 16}灵巧的投掷动作，否则会受到9({@damage 3d6})的火伤害。如果成功，目标将受到一半的伤害。火球击中的地面会被10英尺高的火焰吞噬，持续1分钟，如果通过的话会造成4({@damage 2d4})的火焰伤害。"
+					]
+				},
+				{
+					"name": "DiveBomb {@recharge 4}",
+					"entries": [
+						"女魔法师飞上天空，在选择一个方向前飞上10英尺。在这个方向上的所有生物，从她开始，延伸出60英尺长，必须在一个{@dc 16}灵巧救赎中成功，以避免受到14({@damage 3d8 + 2})的火焰伤害和被击倒{@condition prone}。成功后，生物会受到一半的伤害，四舍五入，并被推后5英尺。然后女巫回到她原来的位置，并落在地上。"
+					]
+				},
+				{
+					"name": "Flight Fatigue",
+					"entries": [
+						"如果女巫在空中，请掷出（%0%）。如果10分或更低，她就会降回地面，因为她对击败英雄的关注分散了她的飞行能力。在她的下一个回合开始时，她会返回到她的悬停状态。"
+					]
+				},
+				{
+					"name": "Inner Darkness {@recharge}",
+					"entries": [
+						"女魔法师选择一个目标，试图腐蚀他们的意志。他们必须做一个{@dc 14}的智慧救赎，否则下一回合就会变成黑暗的飞行面。他们长出了纯魔法的黑暗翅膀，移动速度变为30英尺。在他们的回合中，他们必须用他们的武器攻击最近的盟友，造成额外的（%1%）坏死伤害。在他们的回合结束时，他们可以重复蓄力来结束内在黑暗的效果。"
+					]
+				},
+				{
+					"name": "One Final Dance",
+					"entries": [
+						"当女巫的生命值下降到25点或更少时，她会试图释放命运的残余。如果她在完成这一行动后结束她的回合，命运的残余就会出现。"
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The Enchantress can take 1 legendary action using the Magical Might option below. It can take only one legendary action at a time and only at the end of another creature's turn. The Enchantress regains spent legendary actions at the start of its turn."
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Magical Might",
+					"entries": [
+						"女巫使用一个随机的2级或以下的咒语或法术。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"F",
+				"N"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"N",
+				"T"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Mona",
+			"source": "ShovelsAndShields",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 56,
+				"formula": "10d8 + 9"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 18,
+			"int": 15,
+			"wis": 19,
+			"cha": 7,
+			"passive": 10,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"莫娜每回合进行一次攻击，有{@dice 1d6}(6)的机会进行第二次攻击。"
+					]
+				},
+				{
+					"name": "Poison Party",
+					"entries": [
+						"命中率{@atk mw}{@hit 4}，范围(15英尺)，连续命中多个，命中10({@damage 2d6 + 2})毒伤害。"
+					]
+				},
+				{
+					"name": "Explotion",
+					"entries": [
+						"区域效应：半径5英尺，{@dc 15}灵巧救赎，承受5({@damage 1d6 + 2})酸性伤害的一半。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Plague Knight",
+			"isNamedCreature": true,
+			"source": "ShovelsAndShields",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d6 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 6,
+			"con": 19,
+			"int": 8,
+			"wis": 20,
+			"cha": 4,
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Mona Reliance",
+					"entries": [
+						"当莫娜下降到0命中率时，如果瘟疫骑士在他的回合中未能通过WIS15的拯救，他可以尝试逃跑。"
+					]
+				},
+				{
+					"name": "Bomb Burst",
+					"entries": [
+						"作为反应，每回合可以通过引爆炸弹避免一次攻击。5英尺范围内的生物可以通过灵巧的投掷来避免{@dc 15}的毒药伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"瘟疫骑士每回合进行一次攻击，也是帕尔马党。"
+					]
+				},
+				{
+					"name": "Staff of Striking",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，达到5英尺，一个目标。命中率5({@dice 1d6 + 2})"
+					]
+				},
+				{
+					"name": "That Strange Hissing Sound",
+					"entries": [
+						"瘟疫骑士在战场上隐藏了一个炸弹。通过感知检查（%0%）来注意它。在他的下一个回合开始时，它就会爆炸。",
+						"5英尺范围内的生物做一个Dex Saving Throw {@dc 12}，以避免7({@damage 2d6 + 1})的切割伤害。"
+					]
+				},
+				{
+					"name": "Palchemy Party",
+					"entries": [
+						"瘟疫骑士消失后会在视线范围内出现{@dice 1d4}与瘟疫骑士一模一样的克隆体。崇拜者只有3点命中率，使用打击之杖进行攻击。",
+						"神奇的视力或通过{@dc 15}洞察力检查，可以发现真正的瘟疫骑士。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "The Remnant of Fate",
+			"isNamedCreature": true,
+			"source": "ShovelsAndShields",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 132,
+				"formula": "14d10 + 55"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 60
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 16,
+			"int": 18,
+			"wis": 12,
+			"cha": 14,
+			"senses": [
+				"dark-vision 120ft"
+			],
+			"passive": 16,
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"languages": [
+				"Common",
+				"telepathy"
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"命运的遗迹是一个10级的施法者。它的法术能力是智力（法术救赎（%0%），用法术攻击+9命中）。命运的遗迹准备了以下巫师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell shield}",
+								"{@spell Tasha's hideous laughter}",
+								"{@spell thunderwave}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell gust of wind}",
+								"{@spell scorching ray}",
+								"{@spell shatter}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell Evard's black tentacles}",
+								"{@spell wall of fire}"
+							],
+							"slots": 0
+						},
+						"5": {
+							"spells": [
+								"{@spell conjure elemental}",
+								"{@spell dominate person}"
+							],
+							"slots": 0
+						},
+						"6": {
+							"spells": [
+								"{@spell circle of death}"
+							],
+							"slots": 0
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"如果 \"命运的遗迹 \"的拯救动作失败，它可以选择成功。"
+					]
+				},
+				{
+					"name": "Unearthly Power",
+					"entries": [
+						"命运的遗迹对试图反击她的法术的行为施加不利的影响。"
+					]
+				},
+				{
+					"name": "Blinding Power",
+					"entries": [
+						"每一个在命运遗迹10英尺范围内的生物必须在一个{@dc 16}的智慧救赎上成功，否则会被{@condition frightened}，直到该生物的下一个回合结束。"
+					]
+				},
+				{
+					"name": "Magically Proficient",
+					"entries": [
+						"命运的残余者对法术和其他魔法效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Glass Jar",
+					"entries": [
+						"命运的遗迹对直接作用于她头部的穿刺、砍击或重击伤害很弱，每次击中它都会受到额外的伤害。当被直接攻击时，它的反作用力为18。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"在它的回合中，命运的遗迹会做以下两件事：施放一个法术，召唤奥术之力球，或使用一个咒语。"
+					]
+				},
+				{
+					"name": "Orbs of Arcane Power",
+					"entries": [
+						"命运的遗迹在其位置的15英尺范围内召唤3个（（%0%））漂浮的、充满活力的粉红色奥术力量的球体。生物可以将球体作为攻击或能力的目标。每个球体每回合有一次行动，可以向一个敌对的生物移动25英尺，或者在5英尺范围内攻击，造成6({@damage 1d6 + 3})的力量伤害，并有+5的机会击中。球体的有效抵抗力为10，健康状况为10，并在达到0攻击点时消失。"
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"残余的人施展了一个咒语。"
+					]
+				},
+				{
+					"name": "Abandon Hope",
+					"entries": [
+						"命运的余波释放出一股负能量。在60英尺范围内的生物，包括在障碍物后面和拐角处的生物，在残影者的下一个回合开始之前，不能恢复命中率。"
+					]
+				},
+				{
+					"name": "Volley of Arcane Might",
+					"entries": [
+						"命运的遗迹释放出一波6个({@dice 1d6 + 3})小尺寸的粉红色奥术力量的浮动球，飞向地面上的随机位置。这些球体有1%的命中率，到达目标后会消散。它们会造成3({@damage 1d4 + 1})的坏死伤害，它们击中的地方附近的地面被认为是困难地形，对经过的目标造成1的坏死伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"L",
+				"N",
+				"T"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Scythe",
+			"source": "ShovelsAndShields",
+			"type": "M",
+			"rarity": "none",
+			"weight": 4,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d4",
+			"dmgType": "S",
+			"entries": []
+		},
+		{
+			"name": "Shovel Blade",
+			"source": "ShovelsAndShields",
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 150,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"entries": []
+		},
+		{
+			"name": "Buckler",
+			"source": "ShovelsAndShields",
+			"type": "S",
+			"rarity": "none",
+			"weight": 1,
+			"value": 300,
+			"ac": 1,
+			"entries": []
+		},
+		{
+			"name": "Shields of Aegon",
+			"source": "ShovelsAndShields",
+			"type": "S",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"weight": 3,
+			"ac": 5,
+			"entries": [
+				"这对传奇性的双手盾牌曾经被一个致力于防御的英雄所挥舞。较大的盾牌套在你的主手上，较小的扣环套在你的副手上。当他们一起挥舞时，他们会给你的AC带来+3的奖励，而不是大多数扣环提供的+1奖励。"
+			]
+		},
+		{
+			"name": "Scythe of Spectres",
+			"source": "ShovelsAndShields",
+			"type": "M",
+			"rarity": "legendary",
+			"weight": 4,
+			"weaponCategory": "simple",
+			"reqAttune": true,
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "N",
+			"entries": [
+				"这把双手的深红镰刀充满了怒火。它在成功击中后会造成{@dice 1d10}亡灵(砍伤)伤害。当一个生物被这把镰刀杀死时，持刀者会获得{@dice 1d4+2}的临时攻击点。"
+			]
+		},
+		{
+			"name": "Shovel of The Blue Bouncer",
+			"source": "ShovelsAndShields",
+			"type": "M",
+			"rarity": "legendary",
+			"weight": 2,
+			"weaponCategory": "simple",
+			"reqAttune": true,
+			"property": [
+				"F",
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"entries": [
+				"A relic of the {@subclassFeature Code of Shovelry|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|1}, said to have been mundane when wielded by a knight most noble and just in ages long past. That hero's spirit has empowered this now ancient weapon. While wielding it, your {@subclassFeature Shovel Drop|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|3}s deal an additional {@dice 1d6} force damage and your movement speed cannot drop below 35 feet. You are also able to hold your breath indefinitely when submerged in water but it is entirely unclear how this is (if at all) related."
+			]
+		},
+		{
+			"name": "Claws of Scorched Earth",
+			"source": "ShovelsAndShields",
+			"type": "M",
+			"rarity": "legendary",
+			"weight": 1,
+			"weaponCategory": "simple",
+			"property": [
+				"2H"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"entries": [
+				"这些燃烧着泥土的爪子似乎散发着来自大地深处的能量。你的徒手攻击现在会造成{@dice 1d8}的砍击伤害和{@dice 1d8}的火焰伤害。当用这些爪子的手套挖掘时，你可以以你的基本移动速度在土和天然石中移动。这些爪子被视为一种双手武器。"
+			]
+		},
+		{
+			"name": "Polar Plow",
+			"source": "ShovelsAndShields",
+			"type": "M",
+			"rarity": "legendary",
+			"weight": 4,
+			"weaponCategory": "simple",
+			"reqAttune": true,
+			"property": [
+				"2H",
+				"H",
+				"F"
+			],
+			"dmg1": "1d10",
+			"dmgType": "B",
+			"entries": [
+				"This 2-handed shovel blade is Heavy and cannot be used for {@subclassFeature Shovel Drop|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|3}s. It deals {@dice 1d10} bludgeoning damage as well as {@dice 1d4} cold damage on a successful hit. As an action you may scoop and swing your Plow as an action to cast {@spell Snilloc's Snowball Swarm|xge} three times per day. While wielding this shovel blade your AC increases by 1 as it is large enough to cover your head."
+			]
+		},
+		{
+			"name": "The Shove-All Blade",
+			"source": "ShovelsAndShields",
+			"type": "M",
+			"rarity": "legendary",
+			"weight": 2,
+			"weaponCategory": "simple",
+			"reqAttune": true,
+			"property": [
+				"V",
+				"F"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"entries": [
+				"A shovel blade with a magical barrier infused in its springy hilt. You may spend your action to force any enemies within 10 feet to make a Strength Saving Throw against your Ichor Save DC or be pushed back 10 feet. {@subclassFeature Shovel Drop|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|3}s made with this incredible spade are done so with an additional {@dice 1d4} force damage."
+			]
+		},
+		{
+			"name": "Potion Satchel Of the Alchemist",
+			"source": "ShovelsAndShields",
+			"wondrous": true,
+			"rarity": "very rare",
+			"entries": [
+				"这个破旧的皮革书包里有各种各样的药水。不幸的是，这些药水中的一种被操纵着，如果有讨厌的冒险者偷看它，就会爆炸。每次你翻看这个包时，在下面的表格上掷出{@dice 1d10}，根据你的结果随机抽取2个({@dice 1d4})药水。当抽到一个结果时，它的结果会被替换成陷阱！的结果，直到你完成你的下一次长时间休息，因为袋子似乎会重新填满它的容量。熟练掌握{@item Thieves' Tools|phb}或在{@dc 15}{@skill Sleight of Hands}熟练度检查中成功，可获得一次重做。",
+				{
+					"type": "table",
+					"caption": "Potion Satchel",
+					"colLabels": [
+						"{@dice d10}",
+						"Potion"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"陷阱! 袋子爆炸并对持有者造成{@dice 1d8}的火焰伤害。这个物品会因此而被摧毁。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"{@item Potion of Greater Healing|dmg}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"{@item Potion of Fire Breath|dmg}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"{@item Potion of Growth|dmg}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"5英尺范围内的可投掷的（30/65）生物必须成功进行一次（%0%）体质保全投掷，否则在接下来的10分钟内会被（%1%）。他们可以在他们的回合结束时重新尝试蓄力投掷，使用（%2%）。受影响的生物在每个回合开始时受到2（%3%）的毒药伤害。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"{@item Potion of Resistance|dmg}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 7
+								}
+							},
+							"{@item Potion of Water Breathing|dmg}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 8
+								}
+							},
+							"在5英尺范围内的可投掷的（30/65）生物必须在一个（%0%）灵巧自救投掷中成功，否则会受到5（{@dice 2d6+1}）的闪电伤害并被击晕，直到下一回合结束。如果成功，生物会受到一半的伤害。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 9
+								}
+							},
+							"{@item Potion of Heroism|dmg}"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 10
+								}
+							},
+							"{@item Potion of Hill Giant Strength|dmg}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Joustus Set",
+			"source": "ShovelsAndShields",
+			"type": "GS",
+			"rarity": "none",
+			"entries": [
+				"这是一个由流浪的冒险家制作的老游戏，以收集卡片为主，可能被用来打发时间或解决一起旅行的团体之间的分歧。该游戏包括将卡片放下来，尽可能多地收集棋盘上的宝石。现在仍然有可能找到这种游戏的卡片，但它已经绝版几十年了。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "The Bard",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"BEN"
+			],
+			"page": 0,
+			"entries": [
+				"这个游荡的吟游诗人在你的旅行中发现了他们的同伴，并愿意在你追求荣耀的过程中帮助你。虽然他们没有能力去进行奇妙的冒险，但他们认为在自己追求写传奇战士的十四行诗的过程中，向你提供文物是有好处的。",
+				"奇怪的是，你总是发现他们戴着骑士的头盔，但还没有发现原因。吟游诗人是一个善意的存在，并倾向于向善的人倾斜。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Bonus Proficiency:",
+							"entry": " 选择一个：（%0%），（%1%），一个（%2%）的选择。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mom",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"BEN"
+			],
+			"page": 0,
+			"entries": [
+				"有些冒险家从不离家太远。也许你的恩人是你家里的一个前冒险家，或者是另一个亲戚。经历过风雨，知道你的家人会一直支持你，这是件好事。考虑到你们的关系，妈妈会一直看到你最好的一面，即使你的取向是邪恶的。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Bonus Proficiency:",
+							"entry": "选择一个：{@skill Persuasion}，{@skill Medicine}，{@skill Insight}，或一个{@item Artisan's Tools|phb}你选择的熟练程度。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Troupple King",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"BEN"
+			],
+			"page": 0,
+			"entries": [
+				"特鲁普尔人的领袖，自认为是人中之神（和鱼）。那些寻求他指导的人可能会找到他。他似乎不受结盟的约束。",
+				"据说他的口水是所有Ichor的来源。但这不可能是真的，对吗？",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Bonus Proficiency:",
+							"entry": "选择一个: {@skill Acrobatics}, {@skill Athletics}, 语言(Aquan)。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "The Enchantress",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"BEN"
+			],
+			"page": 0,
+			"entries": [
+				"这个神秘的女巫挥舞着强大而邪恶的魔法，使她能够控制一个小型的追随者军团。也许你引起了她的注意，因此随着你实力的增强，她会授予你遗物。无论她对你有什么计划都不清楚。你只能确定，有一天，她的善意会结束。作为一个强大而邪恶的女巫，她倾向于支持那些邪恶的结盟。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Bonus Proficiency:",
+							"entry": " 选择一个：（%0%），（%1%），一个（%2%）的选择。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Chester",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"BEN"
+			],
+			"page": 0,
+			"entries": [
+				"这个店主似乎对文物很感兴趣，经常试图找到它们进行转售。值得庆幸的是，他对你很有好感，并向你提供了他的收藏品，以帮助宣传他的商品并帮助你的冒险。切斯特似乎更喜欢那些属于合法的人，不会对他的善意施加影响。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Bonus Proficiency:",
+							"entry": "选择一个：{@skill Acrobatics}，{@skill Survival}，{@item Thieves' Tools|phb}，或{@item Jeweler's Tools|phb}。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Alchemy Coin",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你可以使用你的行动，用它进行一次熟练的远程攻击。击中它并造成{@dice 1d6}重击伤害。硬币会飞回你身边。你可以花费Ichor将它打回给你的敌人。炼金币的连续伤害会造成低一个等级的伤害（{@dice 1d4}, {@dice 1d2}, {@dice 1d1}）。而且你不能将你的灵巧奖励加到这些滚动的伤害中。"
+			]
+		},
+		{
+			"name": "Alchemists Armored Arms of Arming",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这些铠甲是炼金术士的产物，为你的攻击涂上一种奇怪的毒素。你的献身武器在成功击中后会造成额外的{@dice 1d4}酸液伤害。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Bomb Burst Bottle",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这瓶圆鼓鼓的蓝色酒液可以让你承受4次武力伤害，以换取一次灵巧救赎的优势。你必须在掷骰子之前选择使用这个瓶子。你每天可以使用这个能力两次。"
+			]
+		},
+		{
+			"name": "Booming Bracers",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这些喧闹的戴手套的手镯将在你的敌人身上发出响亮的痛苦波动 你的献身武器在成功击中后会造成额外的（%0%）雷霆伤害。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Boots of Spring Loading",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"When using the {@subclassFeature Shovel Drop|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|3} ability, your range increases from 10 feet to 15 feet."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"feature": [
+						"Code of Shovelry"
+					]
+				}
+			]
+		},
+		{
+			"name": "Chronos Coin",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"作为一个额外的行动，你可以花费7个Ichor来进行本回合的第二回合。这个效果不能叠加。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14
+					}
+				}
+			]
+		},
+		{
+			"name": "Cloak Of Shadows",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"这件斗篷被赋予了黑暗的力量。选择一个影子在视线范围内的敌人，距离不超过40英尺。你可以瞬移到他们的影子上。你不能传送到困难的地形上，也不能从困难的地形上传送，而且敌人必须投下一个影子。你会直接出现在他们的影子之上。如果是在他们身后，掷一个{@skill stealth}检查，看你是否获得隐身。如果敌人看到了它，这种隐身的奖励在第一次战斗后不能被赋予。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					},
+					"feature": [
+						"Code of Torment"
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"stealth": true
+				}
+			]
+		},
+		{
+			"name": "Cloak Of Slashing",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"5个遗迹点",
+				"When using {@subclassFeature Upheaving Swing|Knight|ShovelsAndShields|Torment|ShovelsAndShields|6}, following up with a {@subclassFeature Dash Slash|Knight|ShovelsAndShields|Torment|ShovelsAndShields|3} no longer costs Ichor."
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Code of Torment"
+					]
+				}
+			]
+		},
+		{
+			"name": "The Dread Talon",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"3个遗迹点",
+				"消耗你本回合的动作和行动，因为你把所有的能量都集中在一次不可思议的攻击上。花费3个Ichor并等待一回合，用Talon进行一次攻击卷轴（包括熟练度和你的力量或灵巧修饰），击中后造成{@dice 6d10}武力伤害。在充能时间内被攻击击中会造成劣势，而受到额外的伤害会取消攻击。你可以花费2个额外的Ichor来避免受到伤害的惩罚。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 8
+					}
+				}
+			]
+		},
+		{
+			"name": "Dust Knuckles",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"你可以花费2个伊霍尔点数对10英尺内的目标进行攻击。目标必须对你的 \"爱神之力\"（Ichor DC）进行力量投掷，否则在他们对你进行的下一次攻击中会处于劣势。"
+			]
+		},
+		{
+			"name": "Electrified Ringlets",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这套古老的手套环仍然闪烁着风暴的力量。你的献身武器在成功击中后会造成额外的{@dice 1d4}雷电伤害。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Farsight of the Submariner",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"在佩戴这些眼镜时，你的眼睛会投射出光线，帮助你在昏暗的光线或黑暗的区域中行动。你获得60英尺以外的黑暗视野，或者将你当前的黑暗视野能力增加60英尺。"
+			]
+		},
+		{
+			"name": "Fishfellow's Scale",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你获得了说话和理解语言（Aquan）的能力。此外，你在水下可以憋气两倍，并且在游泳时可以达到你的全部移动速度，因为你在水中感到奇怪的舒适。"
+			]
+		},
+		{
+			"name": "Flaming Fists Of The Furnace",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这些绝缘手套被发现漂浮在岩浆坑中，很可能是某个勇敢的冒险者为了耍小聪明而留下的。你的献身武器在成功击中后会造成额外的{@dice 1d4}火力伤害。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Flare Wand",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"一根被古代工匠施以火焰之力的魔杖。花费1个Ichor来对一个目标进行远程攻击。一旦命中，目标将受到{@dice 1d8}火焰伤害+你的智慧修正值。你在10分钟内对该目标的下一次攻击是以优势进行的。"
+			]
+		},
+		{
+			"name": "Fishing Rod",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"在拥有这个遗物的时候，你精通（%0%）。作为反应，当15英尺范围内的盟友被近身攻击击中时，你可以花费1个Ichor并给予他们躲避动作的好处，在攻击卷上施加不利条件。你可以再花一次Ichor将范围扩大到25英尺。你每回合只能使用这个能力一次。"
+			]
+		},
+		{
+			"name": "Glass Orb of Checking's Point",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你获得了一个注入了Ichor的图腾，可以获得一个额外的Ichor，可以超过你的最大值。通过在休息时花费1个Ichor，你可以粉碎这个神秘的球体，并获得额外的（%0%）命中率或（%1%）临时命中率。该球体会在你的下一次短时或长时休息中复原。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					}
+				}
+			]
+		},
+		{
+			"name": "Guardian's Locket",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"作为一个行动，你可以使用这个吊坠来稳定5英尺内的一个盟友。你也可以花费最多3个Ichor来治疗目标（%0%），每花费一个Ichor。在再次使用这个能力之前，你必须进行长时间的休息。"
+			]
+		},
+		{
+			"name": "Healing Hammer",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"谁说医药不能用暴力传递？你获得一把轻质锤子，并在战斗中熟练使用它。你可以花费1个Ichor来对一个目标进行攻击。你用这把锤子击中的生物会恢复相当于{@dice 1d10}+你的智慧修正值的命中率，同时受到{@dice 1d4}+你的Dex修正值的一半（四舍五入）的打击伤害。",
+				"关键命中适用于成功后的两次掷骰子。你必须完成短暂的休息才能再次使用这个功能。欢呼吧!"
+			]
+		},
+		{
+			"name": "Hilt Of The Ethereal Blade",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"当进行优势攻击或隐藏攻击时，你可以花费1个Ichor在你的卷轴上增加一个额外的（%0%）砍击伤害。在第15级时，这将变为{@dice 2d6}割裂伤害。"
+			]
+		},
+		{
+			"name": "Palchemy Jar",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"作为一个移动动作，你可以使用炼金术罐并潜入其中，试图逃离你当前的位置。选择视线范围内的一个盟友和一个敌人。在下面的表格中滚动。",
+				{
+					"type": "table",
+					"caption": "Palchemy Jar Table",
+					"colLabels": [
+						"{@dice d6}",
+						"Result"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"反转"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 2,
+									"max": 5
+								}
+							},
+							"Ally"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"敌人"
+						]
+					]
+				},
+				"根据你的卷轴，你会传送到所选择的目标。如果你掷出了逆转，就在桌上再掷一次，直到你得到不同的结果。该目标现在必须在智慧救赎中成功，或者被传送到离你5英尺以内的安全地带。这个能力在你完成短期或长期休息之前不能再次使用。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Percy's Tome of Admiration",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"你在每个长时间休息时获得一次使用（%0%）的法术。"
+			]
+		},
+		{
+			"name": "Phase Locket",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你可以使用你的反应来减少一个来袭攻击的伤害（%0%）。这个能力在你完成长时间休息之前不能再次使用。"
+			]
+		},
+		{
+			"name": "Polar Pincers",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这些冰冷而尖锐的手套让你的攻击充满了冰霜，永远被北风所感染。你的献身武器在击中时能造成额外的{@dice 1d4}寒冷伤害。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Reaper's Mask",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"3个遗迹点",
+				"允许你在每个长时间休息时施放一次（%0%）的法术。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					}
+				}
+			]
+		},
+		{
+			"name": "Ring of the Shield Striker",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"当投掷你的盾牌时，你可以花费1个Ichor来让你的对手做一个灵巧的拯救投掷。如果失败，你的盾牌会从附近的表面弹起，并从后面击中目标，将他们打到离你10英尺的地方。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					},
+					"feature": [
+						"Code of Aegis"
+					]
+				}
+			]
+		},
+		{
+			"name": "Rail Mail",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"作为一个额外的动作，你可以骑上你的镰刀。选择一个方向行进。在这个方向移动时，你的移动速度增加10英尺，而且你每回合必须自愿向这个方向移动10英尺或更多。你只能在你选择的方向上移动。在你的回合中，你也可以。",
+				{
+					"type": "list",
+					"items": [
+						"成功通过{@dc 15}的杂技检查，可以下马。",
+						"对范围内的对手进行一次攻击。成功命中后，你会下马并造成额外的{@dice d6}砍击伤害。"
+					]
+				},
+				"在你旅行期间，地形不被认为是困难的。碰撞障碍物或敌人会提前结束你的移动，你会被击倒在地。在15级时，奖励的伤害模子增加到（%0%）。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3
+					},
+					"feature": [
+						"Code of Torment"
+					]
+				}
+			]
+		},
+		{
+			"name": "Royal Degree",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"在拥有这个遗物时，你获得了对（%0%）检查的熟练度。这个学位似乎是由皇家魔法学院授予的，这完全是虚构的。"
+			],
+			"skillProficiencies": [
+				{
+					"persuasion": true
+				}
+			]
+		},
+		{
+			"name": "Runic Spade Holster",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"{@subclassFeature Returned in Spades|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|11} may also deflect damage from magical ranged attacks that target you."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Code of Shovelry"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sceptre of The Deceptre",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"在拥有这个遗物的时候，你会获得对{@skill deception}检查的熟练度。这根曾经的黄金权杖被一个假装成国王的人使用。据说，尽管他曾短暂地统治过一个王国，但很快就被推翻了。"
+			],
+			"skillProficiencies": [
+				{
+					"deception": true
+				}
+			]
+		},
+		{
+			"name": "Scythe Master's Gloves",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"为专业的镰刀工作而制作的手套，你现在在骑着镰刀的时候可以完全控制，并且可以提前停止镰刀而不需要蓄力。作为你运动的一部分，你可以花费1个Ichor来进行跳跃式旋转攻击。这个旋转攻击技巧对你旋转攻击落地的5英尺范围内的敌人造成{@dice 1d10}+你的灵巧修饰。完成这个动作后，你会自动下马。"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Rail Mail Relic"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sentry's Skull",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"花费3个Ichor点数，随心所欲地召唤一个骷髅为你攻击。它持续4小时。你可以在每个长时间的休息中施放这个能力两次。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			]
+		},
+		{
+			"name": "Shield Strap of the Marksman",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"Your {@subclassFeature Aegis Marksman|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|3} ability hits one additional target."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					},
+					"feature": [
+						"Code of Aegis"
+					]
+				}
+			]
+		},
+		{
+			"name": "Stoic Boots of the Shield Sentinel",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你的基本移动速度下降了10英尺。当持有盾牌或斗篷时，这双靴子使你的攻击力增加3。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					},
+					"feature": [
+						"Code of Aegis"
+					]
+				}
+			]
+		},
+		{
+			"name": "Shovelier's Weighted Pommel",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"You can more accurately aim your {@subclassFeature Shovel Drop|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|3}s. You may include your Dex Modifier when rolling for damage on all Shovel Drop attacks."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					},
+					"feature": [
+						"Code of Shovelry"
+					]
+				}
+			]
+		},
+		{
+			"name": "The Necromancer's Shackles",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"4个遗迹点",
+				"一对漆黑的镣铐。佩戴时没有任何重量，除了佩戴者之外，其他人都不会听到。当你对一个敌人进行致命一击时，你可以召唤一个盟友的骷髅。骷髅会持续24小时或直到它的生命值降至0。你可以花费1个Ichor来加倍这个时间限制，使其持续48小时。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Code of Torment"
+					]
+				}
+			]
+		},
+		{
+			"name": "The Bomb Bag",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"一小袋炸弹，每天早上都会神秘地重新装满。作为一个攻击动作，你可以投掷一把炸弹。以120英尺范围内的一个点为中心的20英尺范围内的每个生物必须做一个灵巧的蓄力动作。蓄力失败时，生物会受到{@dice 6d6}的火焰伤害，蓄力成功时则会受到一半的伤害。你每天可以使用这个袋子的次数与你的智慧修饰值相等（最少一次）。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					},
+					"feature": [
+						"Code of Adventure"
+					]
+				}
+			]
+		},
+		{
+			"name": "The Eye of True Sight",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你获得对依赖视觉的智慧测验的熟练度（（%0%））。你也能看穿魔法黑暗，如同白昼一般。作为一个额外的行动，你也可以揭示一个目标的命中率或一个弱点。你每天可以使用与你的智慧修正值相等的额外行动能力的次数（最少一次）。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					},
+					"feature": [
+						"Code of Adventure"
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			]
+		},
+		{
+			"name": "The Grapple Anchor",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"一件金属铠甲，其末端有一个突出的锚。作为一个动作，你可以瞄准20英尺内的一个对手，并试图抓住他们。如果成功，你可以把目标引向你，或者让他们留在原地，在灵巧的投掷中处于不利地位。目标可以用自己的行动来试图挣脱抓捕的束缚。你每天可以使用 \"抓取锚 \"的次数等同于你的智慧修正值（最少一次）。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					},
+					"feature": [
+						"Code of Adventure"
+					]
+				}
+			]
+		},
+		{
+			"name": "The Pen of Sword's Might",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"你用这支被施了魔法的羽毛笔学习战斗性笔法的技巧。每天一次，你可以用它作为投掷武器。用它进行一次远程攻击，增加熟练度。一旦命中，造成{@dice 1d8}+Dex的穿刺伤害，并在他们的下一次攻击卷中施加不利因素。"
+			]
+		},
+		{
+			"name": "The Sword of Pen's Might",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"你学会了用剑书写的艺术。在携带此遗物时，你获得对涉及书写的魅力({@skill Persuasion})检查的熟练度。"
+			],
+			"skillProficiencies": [
+				{
+					"persuasion": true
+				}
+			]
+		},
+		{
+			"name": "The Terrible Rake of Torment",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这个看似平凡的耙子被施加了一个黑暗的魔力。花一分钟或花2个Ichor和一个额外行动，你可以把耙子放在35英尺内的区域。它立即从视线中消失。任何生物（包括你）必须通过{@dc 18}{@skill Perception}的检查才能发现耙子。中等或较小的生物经过耙子的位置时，必须成功进行{@dc 12}灵巧救赎，否则将失去他们的行动能力，并受到4({@dice 1d4+2})的重击伤害，因为他们被耙子击中面部。你在每个短暂的休息时间只能使用一次。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12
+					}
+				}
+			]
+		},
+		{
+			"name": "Throwing Anchor",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你可以花费2个伊科尔点数来做以下事情。作为反应，当你用武器攻击击中一个生物时，一个小的链状锚会出现在撞击点上，目标必须对你的Ichor Save DC进行力量救赎成功，否则会被神奇的链子限制住，直到下一回合结束。大型或更大的生物在这个蓄力动作上有优势。如果目标救赎成功，锁链就会碎裂。",
+				"被锁链束缚的生物或能接触到该生物的生物可以用它的行动来对你的Ichor救赎DC进行力量检查。如果成功，目标将被释放。这个能力在任何时候都只能影响一个生物。"
+			]
+		},
+		{
+			"name": "Trenchstone",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"你可以花10分钟时间并花费3个Ichor点数来磨砺你的奉献武器，并给它注入古代Ichor。为了抵抗力和免疫力的目的，你的武器现在被认为是有魔力的。这个魔法在24小时后结束。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7
+					}
+				}
+			]
+		},
+		{
+			"name": "Troupple Chalice",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"这个杯子曾经属于波涛之下的一个国王。它有淡淡的苹果味。这个遗物可以让使用者每天获得一次{@spell Create or Destroy Water}的法术能量。"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Code of Shovelry"
+					]
+				}
+			]
+		},
+		{
+			"name": "Usurper's Crown",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"这顶坏的王冠让你可以制定法令，让整个土地上的人臣服! 当你说话时，任何语言都能听懂，但不一定能理解所有其他语言。"
+			]
+		},
+		{
+			"name": "War Horn",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"你可以花费2个Ichor点来使用这个装置作为一个动作。在你面前15英尺范围内的每个生物都必须做一个 \"宪法救赎\"。拯救失败时，生物会受到（%0%）雷霆伤害。拯救成功时，该生物会受到一半的伤害。花费一个额外的Ichor点可以增加额外的伤害（%1%）。"
+			]
+		},
+		{
+			"name": "Wrist Gauntlet of Far Throwing",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"2个文物点",
+				"这个机械装置被古代投掷盾牌的人用来增加他们的有效范围。当投掷盾牌时，你的范围会增加40英尺。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11
+					},
+					"feature": [
+						"Code of Aegis"
+					]
+				}
+			]
+		},
+		{
+			"name": "Wristbands of Digging",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"当你试图在任何方向挖掘泥土时，你可以将你的熟练度加到技能检查上。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15
+					}
+				}
+			]
+		},
+		{
+			"name": "Tome of Tedium",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"你获得了对这本充满了会让人昏昏欲睡的历史事实的古书的熟练度（%0%）。"
+			],
+			"skillProficiencies": [
+				{
+					"history": true
+				}
+			]
+		},
+		{
+			"name": "Quickbag of Questionable Convenience",
+			"source": "ShovelsAndShields",
+			"featureType": [
+				"REL"
+			],
+			"page": 0,
+			"entries": [
+				"1个遗迹点",
+				"你可以花费1个ichor和10个金币来制造一个2磅以下的普通非魔法物品。你不能使用这个能力来制造消耗品或有生命的人。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4
+					}
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Code of Shovelry",
+			"source": "ShovelsAndShields",
+			"shortName": "Shovelry",
+			"subclassFeatures": [
+				"Code of Shovelry|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|1|ShovelsAndShields",
+				"Uprooting Strike|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|3|ShovelsAndShields",
+				"Shovel Drop|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|3|ShovelsAndShields",
+				"Shovel Warrior|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|6|ShovelsAndShields",
+				"Returned in Spades|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|11|ShovelsAndShields",
+				"Dungeon Destroyer|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|15|ShovelsAndShields",
+				"Earth Shattering Strike|Knight|ShovelsAndShields|Shovelry|ShovelsAndShields|17|ShovelsAndShields"
+			],
+			"className": "Knight",
+			"classSource": "ShovelsAndShields"
+		},
+		{
+			"name": "Code of Aegis",
+			"source": "ShovelsAndShields",
+			"shortName": "Aegis",
+			"subclassFeatures": [
+				"Code of Aegis|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|1|ShovelsAndShields",
+				"Aegis Marksman|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|3|ShovelsAndShields",
+				"Rising Star|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|3|ShovelsAndShields",
+				"Answer The Call|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|6|ShovelsAndShields",
+				"Courageous Spirit|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|11|ShovelsAndShields",
+				"Indirect Route|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|11|ShovelsAndShields",
+				"The Defender|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|15|ShovelsAndShields",
+				"Shield Savant|Knight|ShovelsAndShields|Aegis|ShovelsAndShields|17|ShovelsAndShields"
+			],
+			"className": "Knight",
+			"classSource": "ShovelsAndShields"
+		},
+		{
+			"name": "Code of Torment",
+			"source": "ShovelsAndShields",
+			"shortName": "Torment",
+			"subclassFeatures": [
+				"Code of Torment|Knight|ShovelsAndShields|Torment|ShovelsAndShields|1|ShovelsAndShields",
+				"Dash Slash|Knight|ShovelsAndShields|Torment|ShovelsAndShields|3|ShovelsAndShields",
+				"Undying Soul|Knight|ShovelsAndShields|Torment|ShovelsAndShields|3|ShovelsAndShields",
+				"Upheaving Swing|Knight|ShovelsAndShields|Torment|ShovelsAndShields|6|ShovelsAndShields",
+				"Expert Movement|Knight|ShovelsAndShields|Torment|ShovelsAndShields|11|ShovelsAndShields",
+				"Between Planes|Knight|ShovelsAndShields|Torment|ShovelsAndShields|15|ShovelsAndShields",
+				"The Reaper|Knight|ShovelsAndShields|Torment|ShovelsAndShields|17|ShovelsAndShields"
+			],
+			"className": "Knight",
+			"classSource": "ShovelsAndShields"
+		},
+		{
+			"name": "Code of The Adventurer",
+			"source": "ShovelsAndShields",
+			"shortName": "Adventurer",
+			"subclassFeatures": [
+				"Code of The Adventurer|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|1|ShovelsAndShields",
+				"Speed Runner|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|3|ShovelsAndShields",
+				"Honing Your Craft|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|3|ShovelsAndShields",
+				"Treasure Hunter|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|6|ShovelsAndShields",
+				"Crafty Combatant|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|6|ShovelsAndShields",
+				"Multiattack|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|11|ShovelsAndShields",
+				"Ichor Invigorated|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|15|ShovelsAndShields",
+				"Weapons Master|Knight|ShovelsAndShields|Adventurer|ShovelsAndShields|17|ShovelsAndShields"
+			],
+			"className": "Knight",
+			"classSource": "ShovelsAndShields"
+		}
+	]
+}

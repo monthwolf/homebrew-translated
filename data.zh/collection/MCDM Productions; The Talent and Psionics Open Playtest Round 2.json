@@ -1,0 +1,5596 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TalentPsionicsOpenPlaytestRound2",
+				"abbreviation": "TalPsiβ",
+				"full": "The Talent and Psionics Open Playtest Round 2",
+				"authors": [
+					"MCDM Productions"
+				],
+				"color": "923ead",
+				"url": "https://mcdm.gg/TalentOpenBeta",
+				"version": "2"
+			}
+		],
+		"spellSchools": {
+			"chronopathy": {
+				"full": "Chronopathy",
+				"short": "Chrono.",
+				"color": "5675b8"
+			},
+			"metamorphosis": {
+				"full": "Metamorphosis",
+				"short": "MMorf.",
+				"color": "85ed5c"
+			},
+			"pyrokinesis": {
+				"full": "Pyrokinesis",
+				"short": "Pyro.",
+				"color": "f23900"
+			},
+			"resopathy": {
+				"full": "Resopathy",
+				"short": "Reso.",
+				"color": "fad000"
+			},
+			"telekinesis": {
+				"full": "Telekinesis",
+				"short": "Telek.",
+				"color": "b087ff"
+			},
+			"telepathy": {
+				"full": "Telepathy",
+				"short": "Telep.",
+				"color": "87ccc4"
+			}
+		},
+		"dateAdded": 1654091013,
+		"dateLastModified": 1693671517,
+		"_dateLastModifiedHash": "4a85bee4da"
+	},
+	"spell": [
+		{
+			"name": "Adapt",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 45,
+			"level": 2,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"选择范围内你能看到的最多四个自愿的生物。在持续时间内，目标可以在没有任何食物或水的情况下生存，并且不能从非超自然的环境或天气影响中获得（%0%）的等级。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对范围内的一个额外生物。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Again",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 46,
+			"level": 2,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you or a creature within 30 feet of you makes an attack roll and misses"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你让时间瞬间倒流，让进行触发攻击的生物再有机会。该生物可以重新进行攻击，并且必须使用新的结果。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ally of Time",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 77,
+			"level": 6,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在持续时间内改变范围内40英尺立方体的时间。当一个生物在立方体内开始他们的回合时，你可以选择以下效果之一。",
+				{
+					"type": "entries",
+					"name": "Accelerate",
+					"entries": [
+						"直到目标的下一回合开始，他们的速度加倍，他们获得+2 AC的加成，并且他们在灵巧的救赎动作上有优势。目标在本回合获得一个额外的行动，该行动只能用于采取（%0%）（仅一种武器攻击）、施法（仅咒语）、（%1%）、脱离、（%2%）、展现力量（仅一阶力量）或（%3%）行动。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Deccelerate",
+					"entries": [
+						"目标必须做一个智慧救赎动作。如果救赎失败，他们的速度会减半，他们的AC会受到-2的惩罚，他们在灵巧的救赎中处于劣势，并且在下一回合开始前不能使用反应。在这个回合中，该生物只能采取一个行动或一个额外行动，但不能同时采取这两个行动，而且无论该生物的能力或魔法物品如何，他们都不能进行一次以上的近战或远程攻击。"
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity",
+				"wisdom"
+			],
+			"miscTags": [
+				"ADV",
+				"MAC",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Amplify",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 57,
+			"level": 3,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将幻象力导入你能看到的范围内的生物的持武器的四肢。在力量持续期间，当目标用武器攻击击中一个生物时，该攻击会造成额外的{@damage 2d8}精神伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将其顺序增加1或更多。每增加1，额外的伤害就会增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Apparition",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 40,
+			"level": 1,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你创造一个声音或图像，只有你和范围内的一个生物能感知。如果你创造一个声音，它的音量可以从耳语到尖叫不等。它可以是你的声音、别人的声音、生物的吼叫、乐器或你选择的任何其他声音。如果你创造了一个图像，它必须适合在一个5英尺的立方体内，而且不能移动。该影像不能产生任何影响视觉以外的感官的效果。如果生物接触到它，该影像就会消失。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aura Projection",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 65,
+			"level": 4,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在自己周围显现出一个幻觉情绪的光环，使你在持续时间内影响附近的生物。当你表现出这种力量时，以及在持续时间内你的回合开始时，你可以在你的回合开始时选择30英尺范围内的一个生物，并选择以下效果之一。",
+				{
+					"type": "entries",
+					"name": "Inspired",
+					"entries": [
+						"在你下一个回合开始前，目标在攻击卷和蓄力投掷方面具有优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sorrow",
+					"entries": [
+						"目标必须在智慧救赎中成功，或者在他们的回合中使用他们的行动，除了哭泣什么都不做。不能成为{@condition charmed}的生物会自动对该效果的蓄力动作成功。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Terror",
+					"entries": [
+						"目标必须在智慧救赎中成功，否则在你的下一回合开始前都会被你的（%0%）。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。",
+						"当此能力处于活动状态时，你可以选择在你的回合开始时针对你30英尺内的一个额外的生物，每增加1，你必须为所有目标选择相同的效果。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Awe",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 46,
+			"level": 2,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"瞄准范围内你能看到的一个生物。你将幻象能量投射到该生物身上，并在持续时间内在他们的脑海中呈现出以下一种面貌。",
+				{
+					"type": "entries",
+					"name": "Inspiring",
+					"entries": [
+						"目标看到你最英勇的形态。在他们每个回合开始时，目标会在持续时间内获得与你的显化能力修饰值相等的临时打击点数。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Terrifying",
+					"entries": [
+						"目标看到你的噩梦般的形态。目标必须在智慧救赎中成功，否则在持续时间内成为你的（%0%）。目标可以在他们每个回合结束时重复蓄力，如果成功则结束对自己的影响。构造物或亡灵对这个效果免疫。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物。当你针对它们时，这些生物必须在30英尺范围内，而且所有目标都会出现相同的面容。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT",
+				"THP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Beam Gaze",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 57,
+			"level": 3,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你从你的眼睛向你能看到的范围内的生物发射一束令人作呕的力量。目标必须在宪法救赎中成功，否则会受到{@damage 3d10}力的伤害，并在持续时间内受到你选择的一个附加效果。",
+				{
+					"type": "list",
+					"items": [
+						"目标是（%0%）。",
+						"目标的速度减半，并且不能做出反应。",
+						"{@action Attack}对目标的滚动是有优势的。"
+					]
+				},
+				"受此力量影响的生物可以在他们的回合结束时重复蓄力，在成功时结束对自己的额外影响。如果一个生物对这种力量的初次蓄力成功，他们只受到一半的伤害，并且不受其他影响。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Believe",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 46,
+			"level": 2,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"瞄准一个你能看到的范围内的生物。目标必须在智慧救赎中成功，否则就会获得一个新的信仰，直到他们下一个回合结束。这个新的信念决定了该生物在其回合中的行为。从以下选项中选择目标获得的信仰。",
+				{
+					"type": "entries",
+					"name": "Chasm",
+					"entries": [
+						"目标相信在他们脚下打开了一条巨大的鸿沟，跌落（%0%），并且不能自愿站起来。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Disaster",
+					"entries": [
+						"目标相信世界正在毁灭，并采取{@action Dash}的行动，向GM决定的随机方向逃离。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enemies",
+					"entries": [
+						"目标认为他们的盟友是他们的敌人。目标向他们最近的盟友移动，对他们进行近战攻击。如果目标无法接触到盟友，他们在自己的回合中什么都不做。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Friends",
+					"entries": [
+						"目标相信所有生物都是他们的朋友。他们在自己的回合中不采取任何行动。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对范围内的一个额外生物，所有目标都会经历同样的信仰。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bolster Ego",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 47,
+			"level": 2,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you or a creature within 30 feet of you makes a saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你用幻术加强了进行救赎的生物的身体和思想，使他们在救赎中获得优势。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物，当你针对它们时，这些生物必须在30英尺之内。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bones of Glass",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 71,
+			"level": 5,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图用灵力削弱范围内你能看到的一个生物。目标必须做一个 \"宪法救赎\"。拯救失败时，目标在持续时间内容易受到重击、力量、穿刺和切割的伤害。拯救成功时，目标会受到百分之0%的精神伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化这个力量时，你可以将它的次序增加1，以目标范围内的另一个生物为对象。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Brain Overload",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 77,
+			"level": 6,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在你能看到的范围内的生物的脑海中引起一股突然的能量涌动。目标必须进行宪法救赎，如果救赎失败，将受到{@damage 14d10}的精神伤害，如果救赎成功，将受到一半的伤害。如果这种伤害使有头的目标降低到0命中率，他们的头就会爆炸，如果目标没有头就无法生存，他们就会死亡。"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Broadcast",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 71,
+			"level": 5,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向你选择的范围内的每一个能理解某种语言的生物广播一条1分钟的心灵感应信息。该信息可以包括你亲自见证的事件的图像。收到信息的生物会听到你的话，并在他们的脑海中看到这些图像，尽管他们仍然保持自己的感官。",
+				"你可以根据生物种类（例如，信息可以只发送给人形生物，或排除地精接收信息）或特定结盟的生物（例如，信息可以只发送给善良结盟的生物，或排除合法结盟的生物接收信息）来进一步细化接收者的参数。",
+				"你的信息不能被发送到另一个存在平面上的生物。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种能力时，你可以把它的顺序增加1，把范围增加到5英里。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Capture Energy",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 58,
+			"level": 3,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you take acid, cold, fire, force, lightning, or thunder damage"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你以心灵感应的方式捕捉到一些原本属于你的有害能量。你只承受一半的伤害，并且你可以通过进行范围内的力量攻击将捕获的能量投向范围内的生物或物体。如果攻击命中，这个目标会受到原始触发伤害的一半。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Caress of Fire",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 41,
+			"level": 1,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你触碰范围内的一个生物，他们会被幻象之火包裹，对你和目标无害。每当目标5英尺内的另一个生物触碰或用近战攻击击中他们，该生物就会受到{@damage 1d4}的火焰伤害。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Chariot of Thought",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 72,
+			"level": 5,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在持续时间内，一个由半透明的幻象力构成的半径为10英尺的圆盘在你脚下涌现。圆盘保持在你脚下的中心位置，当它存在时，你的飞行速度为60英尺。",
+				"当你表现出这一力量时，你所选择的每个接触圆盘的生物和物体都可以在平台移动时被带上。圆盘会无害地穿过其他生物和物体。圆盘最多可以容纳九个中等大小的生物。",
+				"当力量结束时，你和圆盘上的任何生物或物体都会坠落，如果它还在高空的话，除非他们能阻止坠落。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1，使圆盘的半径增加5英尺。",
+						"你也可以增加1的顺序，或者增加15英尺的飞行速度。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Choke",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 47,
+			"level": 2,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图用心灵感应压制一个敌人。你选择范围内的一个大型或小型生物必须做一个灵巧的蓄力动作。成功时，目标会受到{@damage 1d6}力量伤害。如果失败，目标将在持续时间内受到（%1%）的伤害。这样的生物{@condition restrained}在他们每个回合开始时都会受到{@damage 1d6}的力量伤害，并且可以在每个回合结束时重复蓄力，如果成功则结束自己的状态。如果目标永远在力量的范围之外，或者他们完全被你覆盖，则力量结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。",
+						"你也可以将其顺序增加2，以巨大的生物为目标。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Clarity",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 58,
+			"level": 3,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你接触一个生物，帮助他们进入一段强烈的精神集中期。在持续时间内，目标在能力检查和攻击卷上有优势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Concussive Slam",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 41,
+			"level": 1,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你对范围内你能看到的生物降下一股{@condition invisible}的力量。目标必须做一个力量救赎的动作。如果拯救失败，目标会受到{@damage 1d4}力量伤害并被击倒{@condition prone}。",
+				"当你达到5级({@dice 2d4})、11级({@dice 3d4})和17级({@dice 4d4})时，该能力的伤害增加{@dice 1d4}。"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"invisible",
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Concussive Wave",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 77,
+			"level": 6,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你释放出一股上升的心灵感应力量的冲击波。你选择的范围内的每个生物必须在力量救赎上成功，否则会被抛到90英尺高，离你30英尺远，然后落到地上，每落10英尺受到{@damage 1d6}重击伤害，并落地{@condition prone}。"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Crucible",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 78,
+			"level": 6,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的意念点燃一个50英尺见方的区域，该区域以范围内你能看到的地面上的一个点为中心，高10英尺，起火了。在你每个回合开始时的持续时间内，你可以使火势从该区域向四周5英尺处蔓延，除了不易燃的液体外，蔓延到任何表面（不需要行动）。在火中开始他们的回合的生物必须做一个灵巧的蓄力动作，如果蓄力失败会受到{@damage 7d10}火的伤害，如果蓄力成功会受到一半的伤害。火焰会破坏区域内的物体，并点燃没有被佩戴或携带的易燃物。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cure Ailment",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 58,
+			"level": 3,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你接触一个生物，可以结束影响他们的一种疾病或一种状况。该状况可以是（%0%）、（%1%）、（%2%）、（%3%）或（%4%）。"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"poisoned"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dagger of the Mind",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 58,
+			"level": 3,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你用你的意念进行攻击，对范围内你能看到的生物进行精神伤害。目标必须做一个智力救赎动作。如果救赎失败，目标将受到",
+				"{@damage 4d10}精神伤害，并且只能在下一回合采取{@action Dash}、脱离或{@action Dodge}行动。拯救成功后，目标只受到一半的伤害，并可以正常进行他们的回合。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Detonate",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 72,
+			"level": 5,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图将一个不断增长的爆炸性灵媒潜能的火花注入你能看到的范围内的一个生物。目标必须做一个 \"宪法救赎\"。如果救赎失败，目标将在持续时间内受到火花的熏陶。拯救成功时，你可以选择对目标造成%0%的火焰伤害。",
+				"作为一个动作，你可以在目标体内引爆火花。目标受到{@damage 8d10}的火焰伤害，并且在目标20英尺范围内的每个生物必须做一个灵巧的蓄力动作，如果蓄力失败则受到{@damage 8d10}的火焰伤害，如果蓄力成功则受到一半的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这个力量时，你可以将其顺序增加1，使引爆火花的伤害增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution",
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Distant Voice",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 59,
+			"level": 3,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "unlimited"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你向一个你熟悉的生物发送一条二十五个字以内的短信息。",
+				"该生物在他们的脑海中听到了信息，如果他们认识你，就会认出你是发信人，并能立即以类似的方式回答。这种能力使智力分数至少为1的生物能够理解你信息的含义。",
+				"你可以跨越任何距离，甚至向其他存在的星球发送信息。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将其顺序增加1或更多。每增加1，你就可以在你的信息中再增加25个字。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Elsewhere",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 59,
+			"level": 3,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你的目标是范围内你能看到的三个生物。每个人都必须做一个智力救赎动作。如果救赎失败，目标会被传送到一个你能看到的无人空间，最多30英尺，而且他们的速度会降到0，直到你下一回合开始。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以将其顺序增加1或更多。每增加1，你可以针对一个额外的生物。"
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Embrace the Deep",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 59,
+			"level": 3,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你用灵力塑造最多五个你能看到的范围内的自愿生物的肉体和器官。在接下来的24小时内，这些生物不需要呼吸，并获得你所选择的以下适应性之一，这些适应性必须应用于所有的目标。",
+				{
+					"type": "list",
+					"items": [
+						"鳍和脚蹼。目标长出鳍和脚蹼，赋予他们相当于步行速度的游泳速度。",
+						"硬化的头部。目标的头部（如果他们没有头部，则是他们身体的一部分）会变硬变尖，这使他们获得相当于他们行走速度的钻地速度。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以将其顺序增加1或更多。每增加1，你可以针对一个额外的生物。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Extinguish",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 60,
+			"level": 3,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择范围内的一个生物、物体或灵媒效应。任何对目标的命令为3或更低的力量都会结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以增加它的阶数1来结束四阶或更低的力量的效果，增加2来结束五阶或更低的力量的效果，或者增加3来结束任何力量的效果。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fire Form",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 65,
+			"level": 4,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你将自己包裹在幻象火焰中，并在持续时间内获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你获得60英尺的飞行速度。",
+						"你对寒冷和火焰伤害免疫。",
+						"每当你周围5英尺内的生物触碰你或用近战攻击击中你时，该生物会受到{@damage 1d6}的火焰伤害。",
+						"你的力量和武器攻击造成额外的{@damage 1d6}火焰伤害。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1，使持续时间增加到1小时。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Flame's Master",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 41,
+			"level": 1,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你发出一阵幻象能量，影响范围内每一个中等或更小的用火的光源。这些光源包括营火、蜡烛、壁炉、灯笼、油灯、火炬等等，但不包括超自然的光源，例如受光之咒语或太阳刀影响的物体。当你表现出这种力量时，你可以点燃所有受这种力量影响的来源，或者将它们扼杀。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Flay",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 48,
+			"level": 2,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你从你的眼睛里射出一个15英尺的纯幻术能量的锥形。该区域内的每个生物都必须进行智力救赎，如果救赎失败，将受到{@damage 2d6}精神伤害，如果救赎成功，将受到一半的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。",
+						"你也可以将命令增加1或更多，以增加力量的作用范围。当你这样做时，每增加1，你的圆锥体的大小就增加15英尺。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fluid Motion",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 48,
+			"level": 2,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你给自己的身体注入一阵幻觉能量，在持续时间内给自己带来以下好处之一。",
+				{
+					"type": "list",
+					"items": [
+						"你可以采取{@action Dash}的行动作为奖励行动。",
+						"你的跳跃距离是三倍。",
+						"你在力量{@skill Athletics}和灵巧{@skill Acrobatics}的检查中具有优势，以逃脱抓捕，并在对被{@condition grappled}或{@condition restrained}的拯救动作中具有优势。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV",
+				"UBA"
+			]
+		},
+		{
+			"name": "Fold Space",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 78,
+			"level": 6,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你弯曲空间，创造出一条通往你所选择的目的地的单向路径，该路径持续到你下一回合结束。通道的开口是一个直径10英尺的圆圈，出现在范围内一个无人的空间。任何通过该开口的生物都会被传送到目的地。",
+				"你选择的目的地必须是你所知道的，尽管你不一定要去过它，它可以是在任何存在的平面。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Force Orbs",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 73,
+			"level": 5,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"你创造三个直径为1英尺的能量漩涡球，在持续时间内围绕你。",
+				"每个球体都能为你的AC增加累积的+1奖励。",
+				"当这个能力处于激活状态时，作为一个额外的动作，你可以进行一次范围性的力量攻击，向60英尺内的生物或物体投掷一个球体。球体在命中时造成{@damage 4d10}武力伤害。球体在被用来进行攻击后会消失。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将其顺序增加1，以创造四个球体。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"MAC",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Forget",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 60,
+			"level": 3,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你可以进入范围内的生物的头脑，使他们忘记关键的知识。",
+				"目标必须在智慧救赎中成功，否则在持续时间内遭受你选择的以下效果。",
+				{
+					"type": "entries",
+					"name": "Psionics",
+					"entries": [
+						"目标不能表现出阶数为4或更低的力量。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"目标不能施放3级或以上的法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Weapons",
+					"entries": [
+						"目标失去他们所拥有的任何武器熟练度。",
+						"受此力量影响的生物可以在他们每个回合结束时重复投掷救生圈，如果成功则结束对自己的影响。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。",
+						"当你这样做时，你可以针对范围内的一个额外生物，每增加1个。",
+						"你必须为所有目标选择相同的效果。"
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fortify",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 49,
+			"level": 2,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you or a creature you can see within 30 feet takes acid, cold, fire, lightning, or thunder damage"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你创造一个{@condition invisible}的保护屏障，为你或你选择的范围内的生物阻挡一些传入的能量。目标对触发的伤害类型有抵抗力，直到你下一回合结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以把它的顺序增加1，当你这样做时，力量的持续时间增加到1分钟。",
+						"你也可以把顺序增加2，把目标获得的伤害抵抗变成伤害免疫。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fracture",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 73,
+			"level": 5,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你从范围内的一个点创造出一阵幻觉力量。以该点为中心的20英尺半径范围内的每个生物都必须做一个智力储蓄动作。拯救失败时，生物会受到{@damage 6d8}精神伤害，并被扰乱1分钟。在被扰乱时，生物的移动速度减半，他们在能力检查、攻击卷和蓄力投掷方面处于劣势，对被扰乱生物的攻击卷有优势。被扰乱的生物可以在他们每个回合结束时重复这个蓄力动作，如果成功，则结束对自己的影响。对付这种力量的初始蓄力投掷成功的生物只受到一半的伤害，并且不会被扰乱。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这个力量时，你可以将它的顺序增加1，使伤害增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fulcrum",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 66,
+			"level": 4,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"当你表现出这一能力时，并且在持续时间内的每一回合作为你的行动，你可以对一个你能看到的范围内的巨大或较小的生物或物体施加你的意志，造成以下相应的效果。你可以一轮又一轮地影响同一个目标，或者在任何时候选择一个新的目标。如果你换了目标，之前的目标就不再受该力量的影响。",
+				{
+					"type": "entries",
+					"name": "Creature",
+					"entries": [
+						"目标必须做一个力量救赎动作。如果失败，你会将该生物向任何方向移动30英尺，包括向上移动，但不能超过这个力量的范围。直到你的下一个回合结束，该生物在你的心灵感应中处于{@condition restrained}。向上举起的生物会悬浮在半空中。",
+						"在随后的几轮中，你可以用你的行动来试图维持你对该生物的心灵感应控制。如果你这样做了，他们必须重复蓄力动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Object",
+					"entries": [
+						"如果该物体没有被穿戴或携带，你会自动将其向任何方向移动30英尺，但不能超出该力量的范围。",
+						"如果该物体是由生物佩戴或携带的，该生物必须做一个力量救赎。如果失败，你会将该物体从该生物身上拉开，并且可以将其向任何方向移动30英尺，但不能超出本能力的范围。",
+						"作为用此力量移动物体的一部分，你可以用它对物体路径上的一个生物进行一次范围性力量攻击。如果攻击命中，目标会受到巨大物体的{@damage 5d10}重击伤害，大型物体的{@damage 4d10}重击伤害，以及中型或小型物体的{@damage 3d10}重击伤害。",
+						"你可以用你的心灵感应握力对物体进行精细的控制，例如操纵一个简单的工具，打开一扇门或一个容器，从一个开放的容器中存放或取回一个物品，或从一个小瓶中倒出内容物。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物或物体。",
+						"你也可以增加1个或更多的顺序，以增加这个力量的范围，每增加1个就增加60英尺。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Glimpse",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 42,
+			"level": 1,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"挑选范围内除你之外的一个愿意的生物。你会瞥见他们的未来，并提供一个警告的字眼。在你的下一回合结束前，对目标的下一次攻击卷轴有劣势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Gravitational Collapse",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 67,
+			"level": 4,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你对范围内你能看到的生物施加一种粉碎性的力量。目标必须做一个灵巧的蓄力动作，如果蓄力失败，将受到{@damage 10d6}力量伤害并在持续时间内跌倒{@condition prone}，如果蓄力成功，将受到一半的伤害并不会跌倒{@condition prone}。被这个力量击倒的生物可以用一个动作对你的力量救赎DC进行强度（（%4%））检查，成功后可以站起来。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Guise",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 61,
+			"level": 3,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你在自己的外表上投射出一种幻象，将你的外表变成你所见过的任何与你体型相当的生物的外表，不过你的统计数据都不会改变。当你表现出这种能力时，你也可以改变你所穿戴或持有的任何装备的外观。",
+				"这种能力所带来的变化经不起物理检查。例如，如果你用这种能力变成一只藏獒，任何直接从藏獒形象上经过的物体都会在它似乎在半空中时撞到你，任何抚摸藏獒的人都会感觉到你的身体。",
+				"为了辨别你是伪装的，一个生物可以使用一个行动来检查你的外表，并且必须对你的力量救赎DC进行智力（（%0%））检查以获得成功。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多，将自己伪装成比你大或小一个体型的生物，每增加1个体型，你和你所穿戴的一切都会改变大小，但在你的幻象外表下，你的身体形态保持不变。",
+						"任何被你掉落的物品都会马上恢复到正常大小。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grow",
+					"entries": [
+						"你每变大一个尺寸类别，你的尺寸就会在所有尺寸上增加一倍，其重量也会乘以8。如果没有足够的空间让你适当地成长，你就会在现有的空间里达到最大可能的尺寸。你在力量检查和力量投掷方面有优势。任何与你一起成长的武器都会对其成长的每一尺寸类别造成{@damage 1d4}的额外伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shrink",
+					"entries": [
+						"你每变小一个体型类别，你的体型就会在所有尺寸上减半，你的体重就会被除以8。任何与你一起缩小的武器，每缩小一个尺寸类别，伤害就会减少（%0%）（最少1个伤害）。"
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Harlequin",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 67,
+			"level": 4,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你用灵力控制范围内你能看到的一个人形生物的思想。目标必须在智慧救赎中成功，否则在持续时间内被你控制。只要你和目标人物在同一个平面上，你就会和他们有心灵感应的联系。你可以用这种心灵感应的联系向目标发出命令（不需要行动），他们会尽力服从。如果目标完成了一个命令，并且没有收到你的进一步指示，他们就会尽其所能地防御和保护自己。",
+				"你可以使用一个行动来完全精确地控制一个（%0%）的目标。直到你的下一回合结束，该目标只采取你所选择的行动，而不做其他事情。在这段时间内，你也可以使目标使用反应，但这需要你也使用你的反应。",
+				"每次目标受到伤害时，他们都要做一个新的智慧救赎动作。如果蓄力成功，{@condition charmed}的状态就会结束。",
+				"如果目标对这一力量的初始救赎成功，你可以选择对其造成",
+				"对他们造成{@damage 3d10}的精神伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以对人形生物以外的生物增加2个顺序。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Heat Shell",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 73,
+			"level": 5,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一个闪闪发光的热球从你身上延伸出10英尺的范围，并随你移动，以你为中心。屏障持续的时间。",
+				"当你显现这个力量时，你所选择的60英尺范围内的每个生物和物体都不会受到这个力量的伤害。每当另一个生物在一个回合中第一次接触到屏障或在球体中开始他们的回合时，他们会受到{@damage 4d8}火力伤害。",
+				"该屏障阻止受影响的生物通过或到达。受影响的生物可以通过屏障施放法术或用远程或近程武器进行攻击。屏障会点燃它所接触到的没有被穿戴或携带的易燃物。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这个力量时，你可以将它的顺序增加1，使伤害增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Heat Transfer",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 78,
+			"level": 6,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图从你能看到的范围内的非结构体或亡灵的生物身上榨取生命之热，并将这种生命力给予另一个生物。在他们每个回合开始时，目标必须做一个宪法救赎动作，救赎失败会受到{@damage 4d10}的寒冷伤害，救赎成功则受到一半的伤害。每当目标从这个力量中受到寒冷伤害时，你可以选择另一个你能看到的范围内的非构筑物或亡灵的生物。该生物恢复的命中率等于目标受到的寒冷伤害的一半。"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hidden",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 49,
+			"level": 2,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在范围内的一个生物中发出一个幻象能量的涟漪。直到你的下一个回合结束，只要目标和他们所穿戴或携带的东西在他们身上，就会被（%0%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"如果一次攻击击中或未击中你，如果你将其顺序增加1，你可以将此力量作为反应，以自己为目标。",
+						"当你显现这个力量时，你可以把它的顺序增加2，当你这样做时，它的持续时间增加到1分钟。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Icon of Fear",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 62,
+			"level": 3,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"挑选一个你能看到的范围内的生物。在目标30英尺范围内，你选择的每个生物都会把他们看成是他们害怕的东西，并且必须在智慧救赎中成功，否则在持续时间内会被目标的{@condition frightened}。这样的生物（%1%）可以在他们每个回合结束时重复蓄力，成功后结束对自己的条件。"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ignite",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 49,
+			"level": 2,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在你看到的范围内的生物身上发生一场小火。目标必须做一个灵巧的蓄力动作，否则就会受到{@damage 2d6}的火焰伤害，并在持续时间内着火。当着火时，生物在其回合结束时受到{@damage 1d6}的火焰伤害。着火的生物可以使用一个动作来重复蓄力，如果成功的话，就可以将火扑灭。在拯救失败的情况下，目标只受到一半的伤害，并且不会着火。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，初始伤害就增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Illuminator",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 42,
+			"level": 1,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一个聚焦的30英尺锥体亮光从你的额头照射出来。该光有尖锐的边缘，不发出暗淡的光。光线的颜色可以随你喜欢。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Imbue Flame",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 62,
+			"level": 3,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你接触一个自愿的生物，并给他们注入一个火热的幻觉力量的火花。在持续时间内，该生物的武器攻击会造成额外的（%0%）火焰伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以将其顺序增加1或更多，以针对一个额外的生物，每增加1。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Incinerate",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 42,
+			"level": 1,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你使一道充满5英尺立方体的火焰柱从你能看到的范围内的地面上迸发出来，并燃烧到你下一回合结束。当你施展力量时，任何在火焰柱空间内的生物都必须在灵巧救赎中成功，否则会受到{@damage 1d6}的火焰伤害。当生物在一个回合中第一次进入柱子的空间或结束他们的回合时，也必须做这个蓄力动作。该柱子会点燃其区域内未被穿戴或携带的易燃物品。",
+				"当你达到5级({@dice 2d6})、11级({@dice 3d6})和17级({@dice 4d6})时，该能力的伤害增加{@dice 1d6}。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Influence",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 42,
+			"level": 1,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你可以用优势做一个魅力检查来影响范围内的一个生物。如果你检查失败，该生物会意识到你试图用幻术来影响他们的情绪，并对你产生敌意。一个对暴力的生物（%0%）可能会攻击你。另一个生物可能会以其他方式寻求报复（由GM决定），这取决于你与他们互动的性质。"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"abilityCheck": [
+				"charisma"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Intuition",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 50,
+			"level": 2,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的目标是范围内最多三个自愿的生物，并赋予他们预知的洞察力，以帮助他们保持安全。在持续时间内，每次目标受到伤害时，伤害会减少{@dice 1d4}(最低0)。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物，当你针对它们时，这些生物必须在30英尺之内。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Invisible Force",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 43,
+			"level": 1,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你表现出这种力量时，从以下选项中选择一个。",
+				{
+					"type": "entries",
+					"name": "Manipulate Object",
+					"entries": [
+						"你在范围内操纵一个有可动部件的物体。例如，你可以打开或关闭一扇门，拉动一个杠杆，在大键琴上演奏几个音符。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Move Object",
+					"entries": [
+						"你可以在30英尺范围内移动一个重量不超过5磅的物体。如果该物体离你超过30英尺，你就会失去对它的灵力控制。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Object Attack",
+					"entries": [
+						"挑选一个重量不超过5磅的物体和一个你能看到的范围内的生物。你向该生物投掷该物体，意图造成伤害。对该生物进行一次远程力量攻击。一旦命中，目标受到{@damage 1d8}重击伤害。当你达到5级({@dice 2d8})、11级({@dice 3d8})和17级({@dice 4d8})时，该攻击的伤害增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Iron",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 62,
+			"level": 3,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的皮肤会变成一种坚硬的黑暗金属，在持续时间内你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你获得15个临时命中点。如果在力量结束时还有任何这些点数，它们就会消失。",
+						"你的AC值增加2。",
+						"你可以采取{@action Attack}行动，用你的四肢进行最多两次强力攻击。这是一次强力攻击，击中后会造成{@damage 1d10}+你的表现能力修改器的破坏性伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"THP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Jaunt",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 50,
+			"level": 2,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你弯曲环境的空间只是一个例子，这允许你或范围内一个愿意的生物传送到一个你能看到的30英尺内无人的空间。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以把它的顺序增加1。当你这样做时，这个力量的显现时间变成1个额外的行动。",
+						"你也可以将此能力的阶数增加1或更多，使你的传送距离增加15英尺，每增加1。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Kindling",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 50,
+			"level": 2,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你用灵力削弱范围内一个中等或较小的生物或你选择的物体的形态，使它们更容易受到火的影响。如果目标是一个生物，他们必须做一个宪法规定的投掷。物体则自动失败。",
+				"在拯救失败的情况下，目标会在持续时间内受到相应的影响。",
+				{
+					"type": "list",
+					"items": [
+						"如果目标对火灾伤害免疫，他们就会对火灾伤害产生抵抗。",
+						"如果目标对火灾伤害有抵抗力，他们就会失去这个伤害抵抗力。",
+						"如果目标对火灾伤害没有免疫力或抵抗力，他们就容易受到火灾伤害。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物，当你针对它们时，这些生物必须在30英尺之内。",
+						"你也可以将此力量的目标大型生物或物体的顺序增加1或更多，或将目标巨大的生物或物体增加2。"
+					]
+				}
+			],
+			"damageResist": [
+				"fire"
+			],
+			"damageImmune": [
+				"fire"
+			],
+			"damageVulnerable": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Kinetic Crush",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 51,
+			"level": 2,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你用心灵感应抓住范围内你能看到的一个生物。目标必须做一个力量救赎的动作。如果救赎失败，目标会受到{@damage 2d8}力量伤害，他们的速度变为0，直到你下一个回合开始。拯救成功时，目标只受到一半的伤害，他们的速度也不会降低。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。",
+						"如果目标对这个力量的救赎失败，你也可以将这个力量的命令增加1或更多，以移动目标。你在你选择的方向上移动该生物10英尺，包括向上，每增加1。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Make Friends",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 51,
+			"level": 2,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你试图对范围内你能看到的一个人形物体施展幻术。目标必须做一个智慧救赎动作，如果你或你的同伴正在与之战斗，那么你会有优势。如果他们失败了，他们就会被你迷惑（%0%），直到力量结束，或者直到你或你的同伴对目标做出有害的事情。{@condition charmed}的生物视你为友好的熟人，但这并不意味着该生物会听从你的要求。当力量结束时，该生物知道它是被你（%2%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。",
+						"当你这样做时，你可以针对一个额外的生物，每增加1个，当你针对他们时，这些生物必须在彼此的30英尺之内。",
+						"你也可以增加1个顺序，以便对目标保持你的魅力的秘密。",
+						"当你这样做的时候，被这个力量影响的目标（%0%）不知道他们被你影响了（%1%）。",
+						"你也可以将顺序增加2，以人形生物以外的生物为目标，使用此力量。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mass Choke",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 79,
+			"level": 6,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图用心灵感应的方式锁定你的敌人。你选择的范围内的每个生物都必须在灵巧的投掷中成功，否则在持续时间内会变得（%0%）。在他们每个回合开始时，一个{@condition restrained}的生物会受到{@damage 5d8}的力量伤害。一个{@condition restrained}的生物可以用一个动作对你的力量({@skill Athletics})或灵巧({@skill Acrobatics})进行检查，以对抗你的力量救赎。",
+				"DC，在成功时结束对自己的条件。"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Melt",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 68,
+			"level": 4,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择一个人造的、非超自然的小型或微型金属物体，例如金属武器或金属盔甲，并且你能在范围内看到。你会使该物体发出红热的光芒。如果该物品没有被其他生物携带或穿戴，它就会融化成无用的渣滓。",
+				"如果该物品被其他生物携带或佩戴，该生物必须做一个灵巧的救赎动作。如果救赎失败，该生物会受到{@damage 5d10}的火焰伤害，并且该物体会融化成无用的渣滓。拯救成功时，该生物会受到一半的伤害，并且物体不会融化。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1，每增加1就增加（%0%）的伤害。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Memory Gap",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 68,
+			"level": 4,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你试图抹去另一个生物的记忆。一个你能看到的生物必须做一个智慧储蓄动作。如果你正在与该生物战斗，他们在救赎动作上有优势。",
+				"在保存失败的情况下，你可以消除目标在过去24小时内经历的事件的记忆，该事件持续时间不超过10分钟。你可以永久地消除对该事件的所有记忆。目标无法回忆起那段时间内发生在他们身上的事情，但他们不会因为记忆中的漏洞而感到困扰。",
+				"任何能感觉到幻术的生物，比如受到第六感力量影响的生物，都能看出目标的记忆被修改过。体现在目标身上的治愈疾病的力量可以恢复该生物的记忆。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种能力时，你可以把它的顺序增加1，如果你这样做，你可以植入一个假的记忆来代替你所删除的记忆。",
+						"你也可以增加1个或更多的顺序，每增加1个就增加10分钟你所清除的记忆的时间。",
+						"你也可以把顺序增加1，以消除目标对7天前发生的事件的记忆，或者增加2，以消除30天前的事件的记忆。"
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mindscape",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 52,
+			"level": 2,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你试图让一个你能看到的范围内的生物把环境看成其他东西。目标必须做一个智慧救赎动作。如果救赎失败，目标会在下一回合采取{@action Dash}的行动，向心景方向表上的一个随机方向移动。",
+				"目标不会避开危险，但会在接触到障碍物后试图绕过、越过或从其下方移动。拯救成功时，目标会受到{@damage 1d6}的精神伤害。",
+				{
+					"type": "table",
+					"caption": "Mindscape Directions",
+					"colLabels": [
+						"d8",
+						"Direction"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"北方"
+						],
+						[
+							"2",
+							"东北地区"
+						],
+						[
+							"3",
+							"East"
+						],
+						[
+							"4",
+							"东南部"
+						],
+						[
+							"5",
+							"南方"
+						],
+						[
+							"6",
+							"西南地区"
+						],
+						[
+							"7",
+							"West"
+						],
+						[
+							"8",
+							"西北地区"
+						]
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物。当你针对它们时，这些生物必须在30英尺之内。为每个失败的生物随机掷出一个方向。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mindwipe",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 79,
+			"level": 6,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图抹去范围内你能看到的一个生物的思想。目标必须做一个智慧救赎动作。拯救失败时，目标的熟练度奖励为+0（减少他们在能力检查、攻击卷、用熟练度做的自救动作中获得的奖励），并且目标在持续时间内不能施展法术、显化力量、理解语言或以任何可理解的方式交流。拯救成功后，目标会受到0%的精神伤害。"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Minor Acceleration",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 43,
+			"level": 1,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你接触一个生物，他们的速度会增加10英尺，直到你下一个回合结束。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Momentary Lapse of Reason",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 69,
+			"level": 4,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"挑选一个你能看到的范围内的生物或物体。在目标30英尺范围内，你选择的每个生物都将目标视为它们非常渴望的东西，并且必须做一个智慧救赎动作。蓄力失败时，生物会放下它们手中的东西，并使用它们的反应（如果有的话），以最直接的路线向目标移动。如果该生物进入目标的5英尺范围内，他们就会停止移动并跌倒（%0%）。不能成为{@condition charmed}的生物会自动成功地对这个力量进行救赎。"
+			],
+			"conditionInflict": [
+				"charmed",
+				"prone"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Overheat",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 62,
+			"level": 3,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你试图提高范围内你能看到的一个生物的内部温度。该生物必须做一个宪法救赎的动作。如果失败，目标会增加一个等级（%0%）。如果成功，他们会受到1%的火焰伤害。对火灾伤害有抵抗力或免疫力的生物，对这个效果的蓄力动作会自动成功。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。",
+						"当你这样做时，你可以针对范围内的一个额外生物，每增加1个。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Paragon",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 79,
+			"level": 6,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"你接触一个生物，在持续时间内，他们的每一个能力得分都是20，除非目标的得分已经更高。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Penetrating Sight",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 53,
+			"level": 2,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"在持续时间内，你可以看到固体物质并穿过它。这种视野的半径为30英尺。",
+				"对目标来说，该半径内的固体物体看起来是透明的，不妨碍光线穿过它们。视觉可以穿透1英尺的石头，1英寸的普通金属，或3英尺的木材或泥土。更厚的物质会阻挡视野，就像薄薄的铅板一样。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这种力量时，你可以将它的顺序增加1或更多。每增加1，你的视野半径就会增加30英尺。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Precognition",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 53,
+			"level": 2,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你接触一个愿意的生物，并赋予他们有限的危险预知能力。在8小时内，目标可以在他们的主动性卷轴上增加{@dice 1d6}，并且不能被惊讶。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以将其顺序增加1或更多。每增加1，你可以针对一个额外的生物。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psionic Bolt",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 43,
+			"level": 1,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你从额头向一个生物或物体发射一道紫色的精神力量光束。对目标进行一次范围性的力量攻击。一旦命中，目标会受到{@damage 1d6}的力量伤害，如果目标是大型或小型的，他们会被推离你5英尺远。当你达到5级（{@dice 2d6}）、11级（{@dice 3d6}）和17级（{@dice 4d6}）时，该攻击的伤害增加{@dice 1d6}。"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"FMV",
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psionic Resilience",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 69,
+			"level": 4,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你接触一个自愿的生物，使他们在持续时间内对你选择的一种状况产生免疫力。如果目标在你表现出这一力量时患有所选择的病症，该病症将在持续时间内被抑制。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以将其顺序增加1或更多。每增加1，你可以针对一个额外的生物。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psionic Shift",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 44,
+			"level": 1,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择一个你以外的生物，在你能看到的范围内，不是（%0%）或（%1%）的生物。目标必须成功地做一个力量救赎动作，或者被移动5英尺到你选择的方向。目标可以选择不做这个蓄力动作。"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psychic Projection",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 74,
+			"level": 5,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你瞬间将你的意识投射到一个与你存在于同一平面的特定地点。你选择的目的地必须是你至少有一个详细描述的地方。",
+				"你留下的物质身体是{@condition unconscious}，处于悬浮状态；它不需要食物或空气，也不会衰老。你的投射意识类似于你的凡人形态，并复制你的游戏统计数据，你不能在物理上影响你周围的世界，不能与物体或持有者互动，不能施放法术，也不能显现力量，而且这种形态对所有的伤害都免疫，除了力量和精神的伤害。此外，这个形态的飞行速度等于你的步行速度，并且可以在其他生物和物体中移动，就像它们是困难的地形一样，但是如果你在一个物体中结束你的回合，你会受到（%1%）力的伤害。你的意识是一个独立于你身体的化身。任何适用于意识的伤害或其他效果对你的肉体没有影响，当你回到肉体时，它们也不会继续存在。",
+				"当这种力量结束时，你的意识会回到你的身体。如果你的身体在这种力量结束时被摧毁，你就会死亡。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"你可以在6级时表现出这种力量，让它影响你和你周围10英尺内最多8个自愿的生物。你的意识都会前往同一个目的地。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psychic Stab",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 44,
+			"level": 1,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你能看到的范围内的一个生物必须做一个智力储蓄动作。拯救失败时，目标会受到{@damage 1d10}的精神伤害。",
+				"当你达到5级（{@dice 2d10}）、11级（{@dice 3d10}）和17级（{@dice 4d10}）时，该攻击的伤害增加{@dice 1d10}。"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Pulse",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 63,
+			"level": 3,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"力量的波浪从你身上发出，阻碍附近敌人的行动。当你表现出这种力量时，你可以指定你能看到的任何数量的生物不受其影响。",
+				"生物将你周围15英尺内的区域视为困难地形。当一个生物在你15英尺范围内结束其回合时，你可以尝试绊倒该生物（不需要行动）。目标必须在力量救赎中成功，否则就会跌倒（%0%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的阶数增加1或更多，使你周围的影响半径增加5英尺，每增加1。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ravages of Time",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 63,
+			"level": 3,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你试图使范围内你能看到的一个生物的身体迅速老化。目标必须做一个 \"宪法救赎\"。拯救失败时，目标会受到{@damage 5d8}坏死的伤害，并衰老{@dice 1d10}年。拯救成功时，目标会受到一半的伤害并且不会衰老。",
+				"被这种力量弄老的目标在完成长时间的休息后会恢复到他们的正常年龄。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1，每增加1就增加（%0%）的伤害。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Read Object",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 53,
+			"level": 2,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你触摸一个物体并获得以下信息。",
+				{
+					"type": "list",
+					"items": [
+						"你会在脑海中浮现出最后一个持有该物品的生物的形象。",
+						"你了解到过去8小时内在该物体的20英尺范围内发生的任何事件。你从该物体的角度看到和听到这些事件。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这个力量时，你可以将它的阶数提高1。当你这样做时，这个力量的持续时间增加到24小时，并且你可以在物体上放置一个{@condition invisible}的灵能传感器。在持续时间内，你可以使用一个动作来了解该物体相对于你的位置（它的距离和方向），并从该物体的视角来观察它的周围，就像你在那里一样。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Read Thoughts",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 54,
+			"level": 2,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在范围内选择一个你能看见的生物。如果你选择的生物智力为3或更低，或不说任何语言，该生物不受影响。",
+				"在持续时间内，你会了解到该生物的表面想法--他们在那一刻最想做的是什么。在阅读目标的思想时，你在影响目标的智慧（（%0%））和魅力（（%1%）、（%2%）和（%3%））检查中具有优势。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1。当你这样做时，你可以在力量激活时使用一个额外的行动来深入挖掘目标的思想。",
+						"当你深入探查时，目标必须做一个智力储蓄动作。如果成功，力量就会结束。如果失败，你就能洞察目标的推理（如果有的话），他们的情绪状态，以及在他们心中占据重要地位的东西（比如他们担心的、爱的或恨的东西）。目标不知道你已经进入了他们的思想。"
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"ADV",
+				"SGT",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Reflection",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 79,
+			"level": 6,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你创造一个挑战等级或等级为10或更低的生物的副本，而你可以在范围内看到该生物。该复制品出现在你所选择的、你能在范围内看到的一个未被占据的空间内，并且在你进行回合后立即以与你相同的主动权计数行动。",
+				"这个副本的统计数据与原始生物相同，只是它们拥有该生物装备的非超自然副本，并且没有巢穴、传奇或恶棍行动。",
+				"该副本能够理解并忠于你，当他们的命中率降至0时就会消失。"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rejuvenate",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 80,
+			"level": 6,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你接触一个生物并通过他们的身体推动时间，使他们的身体恢复到早期状态。目标获得以下其中一项好处。",
+				{
+					"type": "entries",
+					"name": "Closed Wounds",
+					"entries": [
+						"目标重新获得50点生命值。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fresh Start",
+					"entries": [
+						"影响目标端的任何条件。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Regain Power",
+					"entries": [
+						"滚动（%0%）。目标重新获得一个已消耗的法术槽，其等级等于结果或更低（由目标选择）。"
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Reminisce",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 69,
+			"level": 4,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"选择一个你能看到的范围内的生物。目标必须做一个智慧救赎动作，如果你或你的同伴正在与他们战斗，那么做这个动作是有利的。一个不能被{@condition charmed}的生物会自动成功地对这个力量进行蓄力投掷。",
+				"在拯救失败的情况下，目标相信有一个朋友或爱人接近他们，并希望能进行愉快的交谈。目标会停止他们正在做的事情，并在持续时间内与想象中的熟人进行交谈。如果目标受到伤害或者其他生物使用行动指出目标没有和真实的人对话，他们可以重复蓄力，成功后结束对自己的影响。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，持续时间就会增加1小时。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Repel",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 54,
+			"level": 2,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择一个你能在范围内看到的中型或小型生物或物体。当你以一个物体为目标时，它的重量必须在300磅以下，而且不能被其他生物携带或穿戴，你可以在任何方向移动它30英尺，包括向上。当你的目标是一个生物时，他们必须做一个力量救赎的动作。如果救赎失败，你可以在任何方向上移动它们30英尺，包括向上。救赎成功时，你可以在任何方向上移动目标5英尺。目标可以选择不做蓄力动作。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物或物体。"
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Restore the Past",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 64,
+			"level": 3,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你触摸一块被破坏的大型或较小的非超自然物体，并用你的意念重塑它。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加2，如果你这样做，你可以重塑胡格物。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Restructure",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 74,
+			"level": 5,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你触摸一个大的或更小的非超自然物体，用灵力振动它，改变它的材料（例如从金属到石头或从木材到玻璃）。你不能改变物体的状态，它必须保持气体、液体或固体，你也不能使物体变得更有价值（例如，如果你把银质雕像变成金质雕像，金子的质量很差，雕像的价值保持不变）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的阶数增加1，以改变一个巨大物体的材料。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Reveal the Path",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 75,
+			"level": 5,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"描述或说出一个你熟悉的生物，在过去24小时内，当你展现这个能力时，它曾在你所在的同一存在平面的1000英尺内经过。你知道在过去24小时内，这个生物在你展现这个能力的存在平面上所经过的每一个位置。你知道这些地点的方向和距离，但不知道如何进入它们。",
+				"这个能力可以定位你所知道的特定生物，只要你曾在30英尺内近距离见过这种生物至少一次，或者见过这种生物的详细图像，例如专业的肖像画。如果你描述或命名的生物处于不同的形态，例如处于多态法术的影响下，这个能力就不能定位该生物。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化这个力量时，你可以将它的顺序增加1，以了解该生物在过去7天内显化这个力量的存在平面上的每个位置。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rewrite",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 44,
+			"level": 1,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你弯曲现实的一小部分，将范围内没有被其他生物携带或佩戴的微小非超自然物体变成另一个你选择的相同或较小价值的微小非超自然物体，持续时间。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Scorch",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 55,
+			"level": 2,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"形成一条长30英尺、宽5英尺的火线，从你身上向你选择的方向喷射出去。线上的每个生物都必须做一个灵巧的蓄力动作。蓄力失败时，生物会受到{@damage 2d6}的火焰伤害，蓄力成功时，会受到一半的伤害。",
+				"大火点燃了该地区没有穿戴或携带的易燃物品。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。",
+						"你也可以将命令增加1或更多，以增加力量的作用范围。当你这样做时，每增加1，你就会增加30英尺的长度。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Shadow Form",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 70,
+			"level": 4,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你将你的身体和你穿戴的任何装备转化为无定形的影子，并在持续时间内获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你获得60英尺的飞行速度。",
+						"你能抵抗来自非超自然攻击的重击、穿刺和砍击伤害。",
+						"你在灵巧（（%0%））检查上有优势，可以尝试在没有遮挡的情况下隐藏。",
+						"你可以在一个窄至1英寸宽的空间内移动而不受挤压。"
+					]
+				},
+				"当你处于这种形态时，你不能拿起物体或挥动你的装备。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1，使持续时间增加到1小时。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Shared Thoughts",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 44,
+			"level": 1,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你选择范围内的一个生物，向他们发送一个心灵感应的信息，最多二十五个字或一个视觉图像（可以包括不超过二十五个字）。目标可以向你发送一个最多二十五个字的信息。",
+				"如果你熟悉目标并知道它在障碍物之外，这种能力允许你的心灵感应通过固体物体，但1英尺的石头、1英寸的普通金属、薄薄的铅板或3英尺的木头会阻挡这种能力。力量不必遵循直线，可以在拐角处或开口处自由穿行。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sharpened Senses",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 45,
+			"level": 1,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你可以用智慧({@skill Perception})检查来探测环境中隐藏的生物、门、物体和陷阱，并具有优势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sixth Sense",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 55,
+			"level": 2,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你触摸一个愿意的生物，并在持续时间内给予他们以下一种感官。",
+				{
+					"type": "list",
+					"items": [
+						"目标在60英尺范围内获得{@sense darkvision}。",
+						"目标在10英尺范围内获得{@sense tremorsense|MM}。",
+						"目标可以感觉到他们周围30英尺内有幻术的存在。如果目标以这种方式感应到幻术，他们可以使用一个动作，看到目标周围30英尺内任何带有幻术力量的可见生物或物体的微弱光环。这种感应可以穿透大多数障碍物，但它会被1英尺的石头、1英寸的普通金属、薄薄的铅板或3英尺的木头或泥土所阻挡。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以将它的次序增加1或更多。每增加1，你可以针对一个额外的生物，每个目标必须获得相同的感应。",
+						"你也可以增加1个或更多的顺序来增加一个感应的范围。每增加1，感应的范围就增加10英尺。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Smoke Screen",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 64,
+			"level": 3,
+			"school": "pyrokinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你以你选择的范围内的一个点为中心，创造一个半径为20英尺的刺鼻、不透明的烟雾球。烟雾会在角落里扩散。它持续的时间或直到强风吹散了烟雾，结束了力量。其区域被严重遮蔽。",
+				"当一个生物在一个回合中第一次进入该力量的区域或在那里开始它的回合时，该生物必须做一个宪法救赎动作。如果救赎失败，该生物将受到{@damage 3d6}的火力伤害，如果救赎成功，将受到一半的伤害。即使生物屏住呼吸或不需要呼吸，也会受到影响。",
+				"作为一个额外动作，你可以在每个回合开始时将烟雾向你选择的方向移动10英尺。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			},
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Souls Intertwined",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 80,
+			"level": 6,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图交换范围内你能看到的两个生物的思想。每个生物都必须做一个 \"魅力拯救\"。如果两个生物都失败了，他们的思想就会在整个过程中被交换。",
+				"当他们的思想被交换时，每个生物都会使用对方的智力、智慧和魅力分数，这可能会影响到其他的统计数据，比如生物的法术救赎分数。如果只有一个生物的救赎失败，这个生物就会受到（%0%）的精神伤害。",
+				"如果一个拥有交换心智的生物死亡，而他们的对应物仍然活着，临死的生物可以在他们的灵魂离开身体时做出选择。",
+				{
+					"type": "list",
+					"items": [
+						"灵魂可以转移到来世，将对应的生物的思想永久地封存在剩余的活体中。只有愿望咒语或类似的魔法才能让被永久封印在另一个人身体里的生物回到他们原来的形态。",
+						"灵魂可以试图强行回到他们原来的身体里。两个生物都必须做一个对抗性的魅力检查。如果成功，灵魂就会夺回他们原来的身体，并迫使对应生物的灵魂进入来世。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stasis Field",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 70,
+			"level": 4,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"你将时间停止在一个半透明的、20英尺的立方体中，从你开始，持续时间为20英尺。",
+				"当立方体出现时，在立方体中没有被生物佩戴或携带的物体不能被移动、损坏或摧毁。",
+				"当方块出现时，你和方块中的任何生物都可以在其中自由移动，并通过方块施放法术和显化力量。所有其他生物、法术、力量和超自然效果都被禁止通过这个领域。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的阶数增加1或更多，使立方体的大小在各面增加10英尺，每增加1。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Steel",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 81,
+			"level": 6,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的皮肤会变成一种坚硬的、有光泽的金属，在这段时间内你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你能抵抗击打、刺穿和砍伤的伤害。",
+						"任何针对你的关键打击都会变成普通打击。",
+						"你可以采取{@action Attack}行动，用你的四肢进行三次攻击。每一次都是强力攻击，击中后造成{@damage 2d10}+你的表现能力修改器的破坏性伤害。",
+						"在你的回合开始时，如果你至少还有1点生命值，你就会恢复10点生命值。"
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sympathy",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 56,
+			"level": 2,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response to being damaged by a creature within 60 feet that you can see"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向伤害你的生物伸出幻象之手，分享你的痛苦。该生物必须做一个智慧救赎动作。拯救失败时，它将受到{@damage 1d12}的精神伤害，拯救成功则受到一半的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Target of Hate",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 75,
+			"level": 5,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"挑选范围内的一个生物。在目标30英尺范围内，你选择的每个生物都将他们视为他们所鄙视的东西，并且必须做一个智慧救赎动作。如果救赎失败，生物会使用他们的反应，如果可以的话，通过最直接的路线向目标移动他们的速度。如果该生物接近到足以对目标进行近身攻击，他们就会停止移动并对目标进行近身攻击。不能被{@condition charmed}的生物会自动成功地对这个力量进行蓄力。"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Telekinetic Burst",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 64,
+			"level": 3,
+			"school": "telekinesis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你从你能看到的范围内的一个点释放出精神力量的爆炸。以该点为中心的20英尺半径范围内的每个生物都必须做一个灵巧的蓄力动作。目标受到{@damage 5d6}的力量伤害，并且在救赎失败时被推离该点10英尺远，或者在救赎成功时受到一半的伤害而不被推开。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你表现出这种力量时，你可以将它的顺序增加1或更多。每增加1，伤害就增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "The Real",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 76,
+			"level": 5,
+			"school": "metamorphosis",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"这种力量使你所接触到的自愿的生物有能力看到事物的真实面貌。在持续时间内，该生物拥有（%0%），注意到由魔法或幻术隐藏的秘密之门，并能看到虚空界，所有的范围都在120英尺以外。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化这个力量时，你可以将它的次序增加1，以便针对另外一个生物。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Time Thief",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 45,
+			"level": 1,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你从幻觉上吸收范围内一个生物的生命力，使他们比正常人衰老得更快。该生物必须在宪法规定的投掷中成功，否则会受到{@damage 1d4}坏死的伤害，并且你会获得与所受伤害相等的临时命中率。当你达到5级（2%）、11级（3%）和17级（4%）时，该能力的伤害增加（1%）。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"THP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Veritas",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 56,
+			"level": 2,
+			"school": "telepathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"你的目标是范围内你能看到的最多三个生物。目标必须做一个 \"魅力拯救\"。在拯救失败的情况下，你知道该生物在持续时间内说、写或以其他方式传达谎言。你知道每个生物的自救动作是成功还是失败。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显现这个力量时，你可以将它的顺序增加1或更多。每增加1，你可以针对一个额外的生物，当你针对它们时，这些生物必须在60英尺以内。"
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Weight",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 56,
+			"level": 2,
+			"school": "resopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在范围内选择一个生物并改变其体重。目标必须在宪法规定的投掷中获得成功，否则将受到你选择的以下效果之一。",
+				{
+					"type": "entries",
+					"name": "Gravitas",
+					"entries": [
+						"目标的速度会降低20英尺。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Levitas",
+					"entries": [
+						"在他们每个回合开始时，目标会垂直上升5英尺。当效果结束时，目标会掉到地上。一个生物可以选择对这个效果的拯救失败。具有飞行速度的生物对该效果的救赎自动成功，除非他们选择失败。",
+						"该效果会持续一段时间。目标可以在他们每个回合结束时重复蓄力，如果成功则结束对自己的影响。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化此力量时，你可以将其顺序增加1或更多。每增加1，你可以针对一个额外的生物，你必须为所有目标选择相同的效果。",
+						"你可以将命令增加1或更多。当你这样做时，Gravitas的速度降低或Levitas的垂直上升率每增加1就会增加5英尺。"
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		},
+		{
+			"name": "Witness Demise",
+			"source": "TalentPsionicsOpenPlaytestRound2",
+			"page": 76,
+			"level": 5,
+			"school": "chronopathy",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你向范围内你能看到的最多三个生物的头脑中投射一个精神影像。",
+				"从以下选项中选择一个，这将影响所有目标。",
+				{
+					"type": "entries",
+					"name": "Future Demise",
+					"entries": [
+						"你向每个目标展示他们将经历的可能的死亡，那是在遥远的未来，和平的或英雄的。在持续时间内，每个目标都不能被{@condition frightened}，并在所有救赎动作中取得优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Imminent Demise",
+					"entries": [
+						"你向每个目标展示一个他们即将经历的可能的死亡，而且是暴力或可怕的死亡。每个目标必须做一个智慧救赎，如果救赎失败，将受到{@damage 8d8}的精神伤害并在持续时间内变成你的{@condition frightened}，如果救赎成功，将受到一半的伤害而不会变成{@condition frightened}。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Increased Order",
+					"entries": [
+						"当你显化这个力量时，你可以将它的次序增加1，以便针对另外一个生物。",
+						"你也可以将命令增加1，使 \"濒死 \"选项的精神伤害增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "The Talent",
+						"source": "TalentPsionicsOpenPlaytestRound2"
+					}
+				]
+			}
+		}
+	]
+}

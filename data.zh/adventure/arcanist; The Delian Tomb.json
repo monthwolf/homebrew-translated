@@ -1,0 +1,519 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheDelianTomb",
+				"abbreviation": "tDT",
+				"full": "The Delian Tomb",
+				"authors": [
+					"Anonymous",
+					"Matt Colville"
+				],
+				"convertedBy": [
+					"arcanist"
+				],
+				"version": "1.0.0",
+				"color": "a34d4d",
+				"url": "https://www.gmbinder.com/share/-L_0WX-KKXsZA22VHr5j",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1618799433,
+		"dateLastModified": 1690651615,
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"_dateLastModifiedHash": "26385af578"
+	},
+	"item": [
+		{
+			"name": "Goblin Slayer Longsword",
+			"source": "TheDelianTomb",
+			"page": 7,
+			"baseItem": "longsword|phb",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"entries": [
+				"这是德利安教团创始人德利厄斯大人的武器。他的武器受到正义之火的祝福，燃烧马格鲁比耶特的孩子的肉体，使其对哥布林诺人造成额外的1d6伤害。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Goblin Shaman",
+			"source": "TheDelianTomb",
+			"page": 6,
+			"wis": 12,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"哥布林是一个1级的施法者。它的法术能力是智慧（法术救赎（%0%），用法术攻击击中（%1%））。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell healing word}",
+								"{@spell shield of faith}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"_copy": {
+				"name": "Goblin",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "Goblin",
+							"with": "Goblin Shaman",
+							"flags": "i"
+						}
+					]
+				}
+			},
+			"damageTagsSpell": [
+				"R"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		}
+	],
+	"adventure": [
+		{
+			"name": "The Delian Tomb",
+			"id": "TheDelianTomb",
+			"source": "TheDelianTomb",
+			"group": "homebrew",
+			"contents": [
+				{
+					"name": "Overview"
+				},
+				{
+					"name": "Part 1: You Start in a Tavern"
+				},
+				{
+					"name": "Part 2: Goblin Tracks"
+				},
+				{
+					"name": "Part 3: Out of the Woods"
+				},
+				{
+					"name": "Part 4: The Delian Tomb"
+				},
+				{
+					"name": "Monster Stat Blocks"
+				},
+				{
+					"name": "Magic Items & Other Treasures"
+				}
+			],
+			"level": {
+				"start": 1,
+				"end": 1
+			},
+			"published": "2016-02-21",
+			"storyline": "The Delian Tomb"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "TheDelianTomb",
+			"source": "TheDelianTomb",
+			"data": [
+				{
+					"type": "section",
+					"name": "Overview",
+					"id": "Overview",
+					"entries": [
+						"{@note This adventure was inspired by {@link Matthew Colville's first Running the Game video|https://www.youtube.com/watch?v=zTD2RZz6mlo}. 建议在继续使用这个冒险之前先看一下。｝",
+						"这次冒险开始于王国后方的一个小村庄，这是一个安静的地方......大部分时间都是如此。最近，该地区涌入了大量的地精，一些肮脏的生物甚至开始袭击维拉内村郊区的农场。玩家角色都是来自附近村庄的朋友，他们来到贝德加尔，寻找冒险。没过多久，他们就发现自己被卷入了哥布林的生意中，劝说铁匠的女儿进入一个早已被遗忘的坟墓深处。这是他们证明自己的机会，也是拯救需要帮助的人的机会，如果他们能在德利安墓的危险中生存下来的话"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Part 1: You Start in a Tavern",
+					"id": "Part 1: You Start in a Tavern",
+					"entries": [
+						{
+							"entries": [
+								"当玩家角色到达Villane时，村民们认出他们是冒险家--捕鼠者--那种为了一点钱几乎什么都可以打的人。这正是Villane需要的那种人。在这一点上，所有的玩家都有他们的角色表，你们准备开始游戏。大声朗读接下来的部分。"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"黄昏降临，几个旅行者来到绿龙客栈寻求食物、温暖和休息的地方。少数村民在这里吃喝，谈论他们的一天。在维拉内的小村庄里，一天和另一天是差不多的。但是，看着你，有些东西告诉这些村民，今天会有不同的事情发生。"
+							]
+						},
+						{
+							"entries": [
+								"现在是一个很好的时机，你可以要求玩家们描述他们的角色。这对每个人都有好处，可以让他们了解自己是谁，他们的队伍是由谁组成的，这将帮助你们更加沉浸在故事中。",
+								"一旦每个人都分享了他们的玩家角色，你就可以通过介绍第一个非玩家角色（%0%）来重新开始工作。"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"我可以给你提供什么吃的吗？喝的吗？你从哪里来？ 你要去哪里？这些天来经过Villane的捕鼠者不多。"
+							]
+						},
+						{
+							"entries": [
+								"这是你帮助玩家沉浸在这个世界中的机会，请自由地用个性来美化马特！花点时间描述他的长相，他的动作，他接近时在做什么。花点时间描述他的长相，他的动作，他走近时正在做什么。当Matt去修理NPC订购的东西，并且角色们有机会认识彼此和NPC的时候，有些事情必须要发生......"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"一个大个子男人，穿着黑色皮围裙，外面套着亚麻衬衫和羊毛裤，突然冲进门来。他身上有硫磺的味道，拿着一把沉重的锤子。",
+								"\"他们抓住了贝丝\"，他说，\"他们抓住了我的女孩！\""
+							]
+						},
+						{
+							"entries": [
+								"哥布林绑架了铁匠的女儿! 没错，第二个关键NPC，（%0%）。村民们都认识拉尔斯，他很受人爱戴，但他们都没有能力面对猎杀妖精的挑战。拉斯会像其他人一样迅速认出一队捕鼠者，他会毫不犹豫地接近冒险者，请求他们的帮助。如果你的玩家没有积极性，仅仅是出于正义感和责任感，你可以让拉斯指出，根据公爵的命令，他们对妖精的耳朵有长期的赏金。现在是提醒你的好时机，作为一个地下城主，你最好的招数之一就是简单地问玩家：\"你是做什么的？\"--这是一个使用这招的好机会。一旦拉尔斯说服了冒险家们的帮助，你就可以继续进行第二部分。"
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Part 2: Goblin Tracks",
+					"id": "Part 2: Goblin Tracks",
+					"entries": [
+						{
+							"name": "The Smithy",
+							"entries": [
+								"拉尔斯不知道地精把他的女儿带到哪里去了，但他相信一个有能力的冒险家可以在他家周围的区域找到足迹。虽然拉尔斯可以向玩家提供这些信息，如果他们似乎觉得被困住了，但你应该给他们机会，让他们提议自己去搜索犯罪现场。你可以简单地叙述一下从绿龙旅馆到拉斯铁匠铺的旅程，描述一下这条土路和点缀在路上的树木。",
+								"一旦你到达铁匠铺，使用你的经典DM动作，问玩家，\"你是做什么的？\"。你甚至可以让拉尔斯点点他们，问：\"你看到任何足迹了吗？\"。这是你的第一个机会，让寻找足迹的玩家进行能力检查。足迹很多，而且很容易发现，一个成功通过DC10智慧（{@skill Survival}）检查的角色会认识到至少有两个地精拖着东西往北走，进入森林。\"野猪林\"，拉尔斯指出。"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "inset",
+							"name": "Ability Checks",
+							"entries": [
+								"当你要求玩家进行能力检查时，他们会掷出{@dice d20}并加上相关的能力修饰符。在上面的例子中，一个寻找足迹的角色会掷出一个智慧（（%1%））检定，其难度等级由你选择。如果总数等于或超过DC，能力检查就成功了--生物克服了手头的挑战。否则，就是失败，这意味着该角色或怪物在实现目标方面没有进展，或者在取得进展的同时遇到了由DM决定的挫折。记住这些常见的DC，作为经验法则，你可以为你的挑战选择任何数字。",
+								{
+									"type": "table",
+									"caption": "Random Encounters in the Boar Wood",
+									"colLabels": [
+										"Difficulty",
+										"DC"
+									],
+									"colStyles": [
+										"text-left",
+										"text-center"
+									],
+									"rows": [
+										[
+											"Easy",
+											"10"
+										],
+										[
+											"中等水平",
+											"15"
+										],
+										[
+											"Hard",
+											"20"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Random Encounters",
+							"entries": [
+								"龙与地下城的世界充满了怪兽和恶棍!",
+								"每当冒险者从文明的合法土地上出发时，他们就有可能被意图不轨的特工陷害。当玩家在文明地区之外停下来休息的时候，你可以使用随机遭遇表来让他们保持警惕。如果玩家觉得他们可以在任何时候停下来休息，或者法术槽不足，他们就会这样做。这种行为会使一切陷入停顿，而作为DM，你的主要工作之一就是让游戏继续进行下去"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Boar Wood",
+							"id": "The Boar Wood",
+							"entries": [
+								"野猪林是一大片森林，顾名思义，主要是野猪居住的地方。当地人经常在这里打猎，而且这里没有妖精。如果妖精走这条路，他们一定在野猪林之外的某个地方有藏身之处。",
+								"到森林另一边的旅程要比他们一天所能完成的要长一些，冒险者们需要过夜。这是一个提醒玩家荒野是个危险的地方的好机会，你的目标是让玩家在森林中间放哨，并感到警惕，想知道是否有东西会在半夜袭击他们",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你深入野猪林，追踪地精在夜里长期留下的足迹。黑暗已经让你无法再在森林中航行，所以你找到了一个小空地，并扎下了营。"
+									]
+								},
+								"请玩家决定谁先看，并请该玩家掷出（%0%）。",
+								{
+									"type": "table",
+									"caption": "Random Encounters in the Boar Wood",
+									"colLabels": [
+										"d12",
+										"Encounter"
+									],
+									"colStyles": [
+										"text-left",
+										"text-center"
+									],
+									"rows": [
+										[
+											"1-10",
+											"-"
+										],
+										[
+											"11",
+											"-"
+										],
+										[
+											"12",
+											"一只野猪来调查（非战斗）。"
+										]
+									]
+								},
+								"虽然你可以选择向玩家投掷一些有敌意的东西，但这里的目标是让他们尽快到达坟墓，但掷骰子很有趣，它告诉玩家有事情（%0%）发生。所以，除了好奇的野猪可能会过来嗅一嗅营地周围的气味外，这个晚上就这样平淡地过去了。",
+								"一旦出了森林，经过一两个小时的旅行，冒险家们会在远处看到他们的目的地。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"当你突破树线时，你短暂地发现了一个在你前面的山顶上移动的小形体。"
+									]
+								},
+								"当玩家从野猪林走出来时，他们发现了一支地精巡逻队的动向。现在是时候再次询问他们了，{@i \"What do you do?\".}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Part 3: Out of the Woods",
+					"id": "Part 3: Out of the Woods",
+					"entries": [
+						"冒险家们在森林中追踪妖精，发现了他们的藏身之处。这个藏身处似乎是一个古老的遗迹，一个最近被妖精侵占的古老建筑。",
+						{
+							"type": "entries",
+							"name": "Goblin Patrol",
+							"id": "Goblin Patrol",
+							"entries": [
+								"就在野猪林的范围之外，一片空地在低矮无垠的山丘前延伸开来。在远处，坟墓的石块在稀疏的树木和起伏的山丘之间勉强可见。任何决定在接近前监视山顶的玩家都会发现{@creature goblin|mm|two goblins}在这个地区巡逻。",
+								"这是一个检查玩家角色在接近时是否偷偷摸摸的好时机。你可以自由地问你的玩家一个引导性的问题，比如 \"你是想避免被看到吗？\"，他们几乎总是会说 \"是的！\"。通过这种方式提醒玩家要谨慎，将有助于加强游戏世界的真实性。",
+								"如果有冒险者被发现，地精会准备好他们的弓箭，当战斗开始时不会感到惊讶。第一轮过后，每当一个地精转身时，检查他们是否受到了伤害。如果他们受到了伤害，或者他们的伙伴被杀死了，那么这个地精就会撤退以警告坟墓里的兄弟们。在地精死掉之前，或者在里面，它们将用它们的行动来撤退，并向冒险者射箭。如果地精巡逻队存活了足够长的时间，你可能会让他向守卫坟墓入口的地精们喊出警告。如果发生这种情况，玩家角色就会在范围内看到守卫离开他们的岗位退到坟墓里。守卫们已经去提醒其他的人，危险正在向他们走来。",
+								{
+									"type": "inset",
+									"name": "Determining Surprise",
+									"entries": [
+										"在你开始一场战斗遭遇战之前，你必须先确定谁，如果有人，是（%0%）。如果有人试图偷偷摸摸，在遭遇战之前，让他们掷一个灵巧（（%1%））。被动感知（10 + 智慧修饰）设定的DC来检查对方每个生物的能力。一个主动寻找另一个生物的生物将对另一个生物的灵巧（（%2%））卷进行智慧（（%3%））检查。如果双方都不试图隐身，他们会同时注意到对方。一个被惊动的生物在他们的第一个回合不能采取行动或移动。直到他们的第一个回合结束后，他们才可以做出反应。关于战斗的来龙去脉的完整细节，请参考{@5etools Chapter 9 of the Player's Handbook|book.html#phb,9}!"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Part 4: The Delian Tomb",
+					"id": "Part 4: The Delian Tomb",
+					"entries": [
+						{
+							"entries": [
+								"很久以前，当凯利安帝国统治的时候，一位名叫德利厄斯的骑士建立了德利安骑士团，他们一起把自己的生命献给了对抗马格鲁比耶特的斗争。这里是他们的安息之所，早已被人遗忘。今天，侵扰坟墓的妖精们正准备用人类的祭品来亵渎这个地方。他们打算以{@deity Maglubiyet|nonhuman|phb}的名义来祭祀这座坟墓。"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "entries",
+							"name": "1. Entrance",
+							"id": "1. Entrance",
+							"entries": [
+								"{@creature goblin|mm|Two goblins}在墓穴的石门前站岗。(当然，除非他们得到了巡逻队的警告！）。当玩家角色接近守卫时，最好再问一次他们是否试图偷偷摸摸。如果他们是，请他们对地精守卫的被动感知能力进行{@skill Stealth}检查。玩家角色也可以简单地利用废墟的几何形状来偷袭不知情的守卫，当他们发起战斗时，很容易获得一个突袭回合。在地精的第一轮战斗中，他们都会试图退到里面去。冒险家们的出现告诉他们，巡逻队已经被杀死了，他们不会站在那里等待同样的命运！这时，冒险家们就会开始行动。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "2. Offering Room",
+							"id": "2. Offering Room",
+							"entries": [
+								"在冒险家们打发了哥布林守卫之后，他们下到了坟墓本身。记住要用你认为合理的感官来描述这个坟墓。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"当你沿着台阶往下走，进入墓穴时，非常黑暗，发霉的空气在台阶上冷却。你可以听到微弱的、有节奏的交谈声从结构的中心回荡上来。"
+									]
+								},
+								"妖精们已经开始了他们的仪式，远处的唠叨声是妖精萨满的吟唱。在楼梯的底部，昏暗的灯光照亮了一个大房间，里面堆满了发霉的床单和地精！在这个房间里，有很多人在睡觉。这个房间里的（%0%）的数量应该等于（%1%）。此外，如果玩家成功地溜过了地精巡逻队而没有惊动他们，他们也将在第一轮战斗后加入战斗。如果玩家成功地对付了巡逻队的{@i and}卫兵，而没有让他们退到坟墓里去警告其他人--玩家就有机会让这些地精措手不及。另一方面，如果双方都意识到了对方的存在，那么就要准备让玩家尝试一些突破性的思维。他们可能不想冒险进入妖精的巢穴，而是想把它们冲出来。做好一切准备。让玩家们进行试验。事实上，鼓励他们这样做。",
+								"一旦解决了哥布林，花点时间描述一下这个房间。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"这个房间中央的火炉温柔地照亮了墙壁。在一侧，一个详细的雕刻描绘了一连串的骑士在抵抗怪物的洪流，甚至可能是妖精！在另一侧，则是一个详细的雕刻。",
+										"在另一面墙上，有一个铭文，上面写着： \"我发誓与所有形式的混乱作斗争，维护秩序，以我的承诺为荣\""
+									]
+								},
+								"下一个房间在一条曲折的走廊后面，在火炉的光亮之外渐渐进入黑暗。走廊的一半，就在转弯处，有一个{@area pressure plate trap|3. Pressure Plate Trap|x}。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "3. Pressure Plate Trap",
+							"id": "3. Pressure Plate Trap",
+							"entries": [
+								"通过DC12智慧（（%0%））检查成功的角色会注意到这个陷阱，火炉的微弱光线只是勉强照到地板上的凸起部分。如果一个角色使用{@item thieves' tools|phb}的DC10灵巧检查成功，他们就可以在不触发陷阱的情况下解除它。这也可以用任何带刃的武器来尝试，但检定是在劣势下进行的。此外，如果有任何{@table Creature Size; Size Categories|phb|Small sized}玩家角色（半身人、地精），他们不会触发陷阱。任何其他生物踩到压板都会触发陷阱，导致一把镰刀从天花板上扫下来。触发陷阱的角色必须在DC15的灵巧救赎中成功，否则会受到3%的伤害。一旦陷阱被禁用或被触发，它就会被耗尽，不会再被触发。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "4. Hall of the Oathkeeper",
+							"id": "4. Hall of the Oathkeeper",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"主导者是一个巨大的骑士石像，在台子上高高举起，站在高处，两脚之间的剑尖向下。"
+									]
+								},
+								"浓厚的雾气从房间中央的临时祭坛上飘起，那里有一个装饰着珠宝和战争颜料的小妖精，他们在来回摇晃时有节奏地吟唱。在妖精身后，一个年轻女孩从雕像脚边的小笼子里悄悄地呜咽着，头埋在她的手里。曾经是德利安教团代表德利安勋爵祭祀的圣室已经被地精们亵渎了。",
+								"Along with the {@creature goblin shaman|TheDelianTomb}, the {@creature bugbear} leader of this band of miscreants resides here. This is the first time the players have encountered a clever enemy, the bugbear is not driven by fear like his goblin toadies. It will fight tactically, it might even have a potion of healing!",
+								"一旦怪物被杀死，并且{@b Bess}被从笼子里扶出来，玩家很可能希望搜索这个房间。临时祭坛上布满了木炭、软木、硫磺和其他法术材料的碎片。在这些装饰品中，有两个（%1%）。在关押{@b Bess}的笼子附近，有一个大的毯子窝，是虫人睡觉的地方。窝里有几十块金币和宝石，价值{@dice 2d20 + 10||Value}gp。",
+								"德利乌斯的雕像底部有一个铭文，上面写着：\"德利乌斯。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"如果你要保留这个，你必须先把它交给我。"
+									]
+								},
+								"如果任何一个角色说：\"我给我的话\"--或者任何与此有关的精神--通往坟墓的秘门就会打开！\"。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "5. Tomb of the Delian Order",
+							"id": "5. Tomb of the Delian Order",
+							"entries": [
+								"德利安骑士团的真正安息之地，隐藏在守誓人大厅的后面。里面有六具石棺，上面刻着他们所关押的骑士们的模样。还有一个更大、更精心雕刻的石棺在中心，上面刻着德莱厄斯大人的形状。每个石棺的脚下都刻有其居住者的名字。德利乌斯的石棺上有一本日记，大部分已经腐烂，躺在石棺上。它是用（%0%）写的，可以读到的内容解释了德利安教团的起源和他们的目的。坟墓里还散落着一些{@item Potion of Healing|dmg|potions of healing}，是很久以前作为祭品留给教会的。",
+								"如果任何角色试图打开石棺，他们将扰乱德利安教团的精神。正义者（%0%）会从石棺中出来，渴望将亵渎者赶出他们的墓穴。一个例外是，如果试图打开石棺的人物是一位宣誓过德利安誓言的圣骑士，因为他们是德利安教团的成员。这些宝物是他们的神圣权利!",
+								"每个石棺都有{@item chain mail|phb}，以及一个{@item longsword|phb}，和一个{@item shield|phb}印有德利安骑士团徽章的图案。德利乌斯的石棺里有{@item chain mail|phb}，以及带有德利安徽章的{@item shield|phb}，还有{@item Goblin Slayer Longsword|TheDelianTomb}。哥布林杀手长剑的属性与标准长剑相同，但它对哥布林类（哥布林、霍布林和虫人！）有额外的1d6伤害。",
+								{
+									"type": "inset",
+									"name": "Master of the Dungeon",
+									"entries": [
+										"记住，你的玩家正在探索的世界最终是由你精心打造的。如果你觉得事情进展得太容易，或者太困难，你可以增加或删除敌人，或者调整他们以更好地适应你所追求的基调和节奏。也许队伍很幸运，或者很聪明，他们在进入最后一个房间时有足够的健康和法术槽，你可以在守誓人大厅里多扔一个地精走狗！也许他们已经度过了一段艰难的时期，但他们还是有机会的。也许他们经历了一段艰难的时期，你完全可以建议他们在他们已经清理过的某个房间里短暂休息一下。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Monster Stat Blocks",
+					"id": "Monster Stat Blocks",
+					"entries": [
+						"这里列出了冒险中出现的怪物。",
+						{
+							"type": "list",
+							"items": [
+								"{@creature Bugbear}"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"虫熊是残忍而不羁的人形生物，他们以欺负弱者为生，不喜欢被人管束。尽管他们的身材令人生畏，但虫人的行动却出奇的隐蔽，而且喜欢设伏。"
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"{@creature Goblin}"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"哥布林是黑心的，以压倒性的数量聚集在一起，并渴望权力，他们滥用权力。"
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"{@creature Goblin Shaman|TheDelianTomb}"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"妖精巫师和他们的兄弟们差不多，不过他们有施法的诀窍，他们用这种方法来使他们的小伙伴们感到恐惧，以此来获得地位。"
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"{@creature Skeleton}"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"被黑暗魔法激活的骨骼组合，骷髅听从创造它们的人的召唤，或在充满死亡魔法的地方主动崛起。"
+							]
+						},
+						"",
+						{
+							"type": "inset",
+							"name": "Darkvision",
+							"entries": [
+								"D&D世界中的许多生物，特别是那些居住在地下的生物，都有暗视能力。在指定的范围内，拥有暗视能力的生物可以在黑暗中看清东西，就像黑暗中的光线一样，因此就该生物而言，黑暗区域只是被轻微遮蔽。然而，该生物在黑暗中不能辨别颜色，只能辨别灰色的深浅。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Magic Items & Other Treasures",
+					"id": "Magic Items & Other Treasures",
+					"entries": [
+						"冒险中出现的物品在此列出。",
+						{
+							"type": "list",
+							"columns": 2,
+							"items": [
+								"{@item Longsword|phb}",
+								"{@item Chain Mail|phb}",
+								"{@item Shield|phb}",
+								"{@item Potion of Healing|dmg}",
+								"{@item Goblin Slayer Longsword|TheDelianTomb}"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

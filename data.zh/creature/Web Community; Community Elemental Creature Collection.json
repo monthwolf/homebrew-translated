@@ -1,0 +1,174 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMElemental",
+				"abbreviation": "COMElemental",
+				"full": "Community Elemental Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.12.18",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1608323876,
+		"dateLastModified": 1690651615,
+		"_dateLastModifiedHash": "b730daaea4"
+	},
+	"monster": [
+		{
+			"name": "Light Elemental",
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"source": "COMElemental",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 54",
+				"average": 153
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 16,
+			"int": 6,
+			"wis": 17,
+			"cha": 7,
+			"passive": 13,
+			"cr": "7",
+			"tokenUrl": "https://i.imgur.com/gKIiSrO.png",
+			"fluff": {
+				"entries": [
+					"{@link Light Elemental|https://www.pinterest.it/pin/AfzNZMh81uJdJlrZ_N5exlQHj8MLR6H3qFdKvrnAUiOW34jdaYlNG4M/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IhFVq5h.png"
+						}
+					}
+				]
+			},
+			"shortName": "Light Elemental",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"Ignan"
+			],
+			"languageTags": [
+				"CE",
+				"IG"
+			],
+			"immune": [
+				"poison",
+				"radiant"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"vulnerable": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Light Form",
+					"entries": [
+						"元素可以在一个狭窄到1英寸宽的空间内移动而不被挤压，只要空间两边的区域不是黑暗或昏暗的。如果元素对其不友好的生物在5英尺内接触到元素或用近战攻击击中它，该生物会受到5（（%0%））的辐射伤害。此外，元素可以进入一个敌对生物的空间并停在那里。当它第一次进入一个生物的空间时，该生物会受到5({@damage 1d10})的辐射伤害，并且必须成功地进行{@dc 15}脱力蓄力，否则会被光所笼罩，如同受到法术{@spell Faerie Fire}的影响，持续1分钟。如果攻击者能看到被元素笼罩在光中的生物，任何攻击卷都有优势，而且该生物不能从被{@condition invisible}中受益。"
+					]
+				},
+				{
+					"name": "Illumination",
+					"entries": [
+						"元素在半径30英尺的范围内发出神奇的亮光，并在另外30英尺的范围内发出非魔法的亮光。"
+					]
+				},
+				{
+					"name": "Aura Of Luck (3/day)",
+					"entries": [
+						"如果在元素的30英尺范围内，元素对其友好的生物的蓄力或攻击卷失败，该生物可以重新进行 \"蓄力或攻击卷\"。"
+					]
+				}
+			],
+			"damageTags": [
+				"R"
+			],
+			"traitTags": [
+				"Illumination"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"元素会进行两次触摸攻击。"
+					]
+				},
+				{
+					"name": "Touch",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d6 + 2}) 辐射伤害。"
+					]
+				},
+				{
+					"name": "Radiant Burst",
+					"entries": [
+						"元素发出神奇的、闪亮的能量。每个在10英尺范围内的生物必须做一个{@dc 15}灵巧的蓄力动作，在蓄力失败时受到14({@damage 4d6})辐射伤害结束{@condition blinded}，或者在蓄力成功时受到一半的伤害且没有{@condition blinded}。该{@condition blinded}生物在其图姆结束时进行救赎，3次成功时不再有{@condition blinded}。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"isNpc": false,
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	]
+}

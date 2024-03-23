@@ -1,0 +1,970 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Call-to-Arms-The-Warlord",
+				"abbreviation": "CtA",
+				"full": "Call to Arms: The Warlord",
+				"authors": [
+					"Robert J. Schwalb"
+				],
+				"convertedBy": [
+					"L0neGamer",
+					"Modnar"
+				],
+				"version": "1.0",
+				"url": "https://www.drivethrurpg.com/product/264030/Call-to-Arms-The-Warlord",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1548505822,
+		"dateLastModified": 1548505822,
+		"_dateLastModifiedHash": "a99c25e32b"
+	},
+	"class": [
+		{
+			"name": "Warlord",
+			"source": "Call-to-Arms-The-Warlord",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"medicine",
+								"perception",
+								"persuasion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item chain mail|phb} or (b) {@item leather armor|phb|leather}, {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) two {@item spear|phb|spears}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"chain mail|phb"
+						],
+						"b": [
+							"leather armor|phb",
+							"longbow|phb",
+							"arrows (20)|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"item": "spear|phb",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"fluff": [
+				{
+					"entries": [
+						"凶残的地精从四面八方涌来，威胁着侧翼，身穿凹陷和划痕的盔甲、身经百战的军阀提高嗓门喊出命令，集结她的盟友。尽管他们脸上血迹斑斑，身上箭矢横飞，但军阀的同伴们还是团结起来，恢复了他们的勇气，向残酷的攻击发起反击。曾经看似必败的局面变成了逆境中的胜利。",
+						"在另一场战斗中，一个身穿皮甲的精灵在森林中飞奔，带领他的同伴们来到可恨的巨魔驻扎的地方。他们从灌木丛中走出来，出其不意地攻击敌人，用箭矢、螺栓、石头和长矛猛烈攻击他们。在导弹袭击之后，巨魔们恢复过来，却发现袭击者已经消失在树林里了。被激怒的巨魔凶猛地冲锋，直接冲进了聪明的精灵指挥官准备好的伏击圈。",
+						"站在石棺上，一个身穿闪亮盔甲的矮人握着他的斧头，一边对着天花板摇晃，一边念叨着兽人对他的人民犯下的错误。每一次惨痛的失败和每一个错误的叙述，他都会点燃聚集在他面前的矮人军队心中的愤怒之火。矮人说得越多，火焰就烧得越旺，赶走了恐惧和怀疑的寒意，以至于当他说完时，聚集在一起的战士们发出了强大的战斗呼声，发出了他们准备战斗的声音。",
+						"所有的军阀，这些人物只是代表了这些战斗领袖可能采取的不同形式中的几个。军阀可能是有魅力的农民英雄，他们团结人民推翻暴君；也可能是经验丰富的战场指挥官，他们在指挥盟友作战时带着自己的经验；还可能是著名的战士，激励人心的人物等等。军阀们了解各个层面的战斗，从小单位的战术到战场的宏伟规模。他们本身就是有能力的战士，拥有敏锐的头脑和强烈的个性，这有助于他们带领他们的同伴成功战胜敌人。",
+						{
+							"type": "entries",
+							"name": "Able Commanders",
+							"entries": [
+								"很少有人愿意寻求战争，但军阀们非常了解其不幸的必要性。当外交手段失败，生命悬于一线时，战争可能是纠正错误、保护无辜者、恢复疯狂世界秩序的唯一途径。军阀们对战争的理解是其他人所不具备的。他们看到了攻击和反击的模式，了解优势定位的好处，并学习经过战斗考验的技术，以保持他们的敌人的脚跟。虽然军阀们可能会对生命的损失感到遗憾，但他们把每一场战斗都看作是他们必须赢得的比赛，利用他们所掌握的每一个技巧来获得优势。",
+								"军阀在战斗中负责任。他们帮助他们的盟友，把他们引向最有利的地方，有时敦促他们攻击脆弱的地方，或把他们引向可以获得战术优势的位置。虽然军阀们使用的方法不同，但他们的存在总是有助于在他们身边作战的每个人。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Trained Warriors",
+							"entries": [
+								"作为战斗中的合格领导者，军阀们至少要对如何在战场上表现自己有一些基本了解。所有军阀都要学习如何使用各种武器作战，穿上最重的盔甲，用盾牌抵挡敌人的攻击。然而，许多军阀放弃了较重的装备，以便他们能够保持轻盈的脚步，迅速地移动到他们的同伴最需要的地方。军阀们并不专攻某些武器，而是青睐于多功能性，这样他们就能以任何需要的方式进行战斗，从而赢得胜利。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Warlord",
+							"entries": [
+								"当你创建一个军阀时，你应该在设计选择中考虑你的角色的背景。首先，也许是最重要的，是要决定发生了什么事使你走向军阀的道路。你可能只是一个普通的战士，但一些品质或能力使你与其他人不同。你是一个战术天才，拥有在任何比赛中都能提前几步看到的头脑？或者你是一个天生的领导者，能够通过你的言语和行动激励他人？",
+								"除了确定你发展的动力之外，还值得考虑你是如何学会你的领导能力的。这种才能可能来自于你的天赋，通过试验和错误，你完善了它们，直到你成为今天的领导者。然后，你可能在一所伟大的战争学院学习，在那里，饱经战火的老兵指导你研究历史上最伟大的战役，以教你战术、战略和后勤。",
+								"随着你的训练，你的武器和盔甲必须从某个地方来。你的装备是由一个著名的祖先继承的吗？也许你的装备是在完成训练后获得的，是你的一个教官的礼物。你的武器和盔甲可能是制服的一部分，或者你可能是用你在旧战场上找到的碎片拼凑起来的。无论你决定如何，你的训练、你的武器和你的盔甲帮助你成为你生来就应该成为的战场领袖。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"如果你需要快速组建一个军阀，请遵循这些建议。魅力应该是你的最高分，其次是力量或灵巧。如果你想专注于近战武器，那么力量是你的第二高分；如果你想用技巧或远程武器作战，那么灵巧是你的第二高分。体质应该是你的第三高分，以提高你的耐久力。对于你的背景，选择士兵。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Military Stratagems",
+							"entries": [
+								"无数次冲突的鲜血染红了历史的篇章。从摆脱暴政枷锁的叛乱到敌军的入侵，从世界最早的时候起，战争就塑造了历史的进程。尽管这些战斗是悲惨的，但人们可以从胜利者和失败者采用的策略中学到很多东西，并且从这些教训中出现了整个思想流派，指导指挥官掌握更精细的战争艺术。军阀们致力于这些方法中的一种，并在与敌人作战的过程中采用他们的技术。",
+								{
+									"type": "entries",
+									"name": "Stratagem of the Daring Gambler",
+									"entries": [
+										"每场冲突都有其风险、危险和意外结果。大胆赌徒的学生接受战斗中的不确定性，大胆地、有时不顾一切地冒险，希望能获得胜利。他们偏爱大胆的战术，将自己和盟友置于危险的境地，只为通过纯粹的运气取得胜利。采用这种策略的军阀往往是大胆的，大胆的，充满信心的。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Stratagem of the Golden General",
+									"entries": [
+										"金将之术擅长于领导、演讲和指挥。采用这种策略的军阀以身作则。他们的成就激励其他人也这样做，超越他们的正常限制，实现普通士兵无法实现的目标。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Stratagem of the Hordemaster",
+									"entries": [
+										"速度和机动性是学习 \"霸王计 \"的军阀的特点。这些小规模的军阀喜欢打了就跑的战术，他们一直在移动，以保持领先他们的敌人一步。这样的机动性使他们和他们的同伴能够向他们的敌人发射箭矢和炮弹，同时挫败任何试图缩小他们之间差距的企图。通过压制他们的对手并始终保持距离，他们可以拿下最危险的敌人。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Stratagem of the Resourceful Leader",
+									"entries": [
+										"很少有战斗计划能在与敌人的第一次交锋中完整地存活下来。机会、环境和其他变数甚至可以扰乱最一边倒的冲突，将本应轻松的战斗变成致命的战斗。足智多谋的领导者策略的学生了解与不可预测的敌人作战的严酷现实，在他们的袖子里保留了一些技巧来应对可能出现的任何复杂情况。狡猾和适应性强，这些军阀总能在最棘手的情况下找到出路。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Stratagem of the Shrewd Commander",
+									"entries": [
+										"掌握 \"精明指挥官策略 \"的军阀在战场上表现出卓越的专注力和对细节的关注。当他们观察战斗的展开时，他们评估敌人的弱点，并通过命令来利用它们。精明的指挥官会发现敌人防御中的漏洞和战术中的缺陷，利用这些知识带领他们的盟友取得胜利。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Stratagem of the Supreme Tactician",
+									"entries": [
+										"他们对战斗的起伏、敌人使用的战术以及军阀掌握的资源的密切了解，使他们能够对几乎任何情况作出反应和调整。"
+									]
+								}
+							]
+						}
+					],
+					"name": "Warlord",
+					"source": "Call-to-Arms-The-Warlord",
+					"type": "section"
+				}
+			],
+			"classFeatures": [
+				"Battlefield Commands|Warlord|Call-to-Arms-The-Warlord|1",
+				"Commanding Presence|Warlord|Call-to-Arms-The-Warlord|1",
+				"Inspiring Speech|Warlord|Call-to-Arms-The-Warlord|2",
+				{
+					"classFeature": "Military Stratagem Feature|Warlord|Call-to-Arms-The-Warlord|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warlord|Call-to-Arms-The-Warlord|4",
+				"Extra Attack|Warlord|Call-to-Arms-The-Warlord|5",
+				"Battlefield Commands (d6)|Warlord|Call-to-Arms-The-Warlord|5",
+				"Battle Leader|Warlord|Call-to-Arms-The-Warlord|6",
+				"Call to Arms|Warlord|Call-to-Arms-The-Warlord|7",
+				{
+					"classFeature": "Military Stratagem Feature|Warlord|Call-to-Arms-The-Warlord|8",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warlord|Call-to-Arms-The-Warlord|9",
+				"Battlefield Commands (d8)|Warlord|Call-to-Arms-The-Warlord|10",
+				"Rouse the Troops|Warlord|Call-to-Arms-The-Warlord|11",
+				"Extra Attack|Warlord|Call-to-Arms-The-Warlord|12",
+				{
+					"classFeature": "Military Stratagem Feature|Warlord|Call-to-Arms-The-Warlord|12",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warlord|Call-to-Arms-The-Warlord|13",
+				"Battlefield Commands (d10)|Warlord|Call-to-Arms-The-Warlord|14",
+				"Advantageous Action|Warlord|Call-to-Arms-The-Warlord|15",
+				{
+					"classFeature": "Military Stratagem Feature|Warlord|Call-to-Arms-The-Warlord|16",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warlord|Call-to-Arms-The-Warlord|17",
+				"Battlefield Commands (d6)|Warlord|Call-to-Arms-The-Warlord|18",
+				{
+					"classFeature": "Militar Stratagem Feature|Warlord|Call-to-Arms-The-Warlord|19",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warlord|Call-to-Arms-The-Warlord|20",
+				"Legendary Commander|Warlord|Call-to-Arms-The-Warlord|21"
+			],
+			"subclassTitle": "Military Stratagems"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Battlefield Commands",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 1,
+			"entries": [
+				"你可以迅速勘察战场，并制定一个行动计划来击败你的敌人。你可以采取一个额外的行动，向你周围30英尺内能听到你的友好生物发出战场指令。你可以发出与你的魅力修正值相等的命令（最少一次）。这些命令可以保持10分钟或直到耗尽。一旦你发出这些命令，你就不能再这样做了，直到你完成一个短期或长期休息。",
+				"每一个命令的发出都会给予生物一个奖励模子，是一个D4。当生物要进行攻击卷、能力检查或蓄力投掷时，生物可以通过掷骰子并将掷出的数字加入总数来消耗该骰子。生物可以等到它掷出d20后再决定使用战斗指令模子，但必须在GM揭示掷出的模子是成功还是失败之前决定。一旦耗尽，奖励模子就会丢失。",
+				"当你在这个等级中达到一定的级别时，奖励模子会发生变化。在5级的时候，这个模子变成了d6，9级的时候变成了d8，13级的时候变成了d10，17级的时候变成了d12。"
+			]
+		},
+		{
+			"name": "Commanding Presence",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 1,
+			"entries": [
+				"你的盟友可以听从你的命令进行攻击。当你要在自己的回合中进行攻击时，你可以放弃进行攻击，让你身边10英尺内的友好生物代替你进行攻击。如果目标能听到你，它可以采取反应来进行一次武器攻击。",
+				"你的存在范围在10级时增加到30英尺，在20级时再次增加到60英尺。"
+			]
+		},
+		{
+			"name": "Inspiring Speech",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 2,
+			"entries": [
+				"从2级开始，你可以在短暂的休息中发表一段激动人心的演讲来鼓励你的盟友。你和任何能听到你的速度的友好生物都会获得临时的打击点数。每个生物获得的临时命中率等于该生物的命中率卷。"
+			]
+		},
+		{
+			"name": "Military Stratagem Feature",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"在3级时，你会设计一个你所选择的军事策略，例如大胆赌徒的策略。你的选择在3级时赋予你特性，并在7级、11级、15级和18级时再次赋予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，以及在8级、12级、16级和19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。当你达到11级时，攻击次数增加到三次。"
+			]
+		},
+		{
+			"name": "Battlefield Commands (d6)",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 5,
+			"entries": [
+				"当你在这个等级中达到一定的级别时，奖励模子会发生变化。在5级的时候，这个模子变成了d6，9级的时候变成了d8，13级的时候变成了d10，17级的时候变成了d12。"
+			]
+		},
+		{
+			"name": "Battle Leader",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 6,
+			"entries": [
+				"从第6级开始，在你的指挥类特征范围内的盟友会用他们的武器攻击造成额外伤害。额外伤害的数量等于你的魅力修改器。"
+			]
+		},
+		{
+			"name": "Call to Arms",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 7,
+			"entries": [
+				"从第6级开始，当你掷出主动权时，你和每个在你的指挥功能范围内的对你友好的生物各自掷出一个奖励模子，并将掷出的数字加入他们的主动权检验。奖励模子的大小与你的战场指挥功能所获得的奖励模子相同。"
+			]
+		},
+		{
+			"name": "Military Stratagem Feature",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 8,
+			"entries": [
+				"在7级时，你从可用的列表中选择一个原型，你努力在你的战斗风格和技巧中模仿它。你选择的原型在3级时赋予你特性，在10级、15级和18级时再次赋予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 9,
+			"entries": [
+				"当你达到8级，并在12级、16级和19级时再次提高，你可以将你选择的一个能力得分提高2分，或者将你选择的两个能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Battlefield Commands (d8)",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 10,
+			"entries": [
+				"当你在这个等级中达到一定的级别时，奖励模子会发生变化。在9级时，该模子变成了d8，13级时变成了d10，17级时变成了d12。"
+			]
+		},
+		{
+			"name": "Rouse the Troops",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 11,
+			"entries": [
+				"在10级时，你可以花1分钟时间说出鼓励和支持的话，帮助你的同伴摆脱疲劳和伤害。每个能听到你说话的友好生物可以花费任意数量的命中率来恢复命中率，而不需要完成短暂或长时间的休息。此外，每个以这种方式花费至少一个命中率的生物，如果它有任何级别的疲惫，都可以消除一个级别的疲惫。一旦一个生物因为你使用这个等级特征而消除了一个等级的疲惫，这个生物必须完成一个长时间的休息才能再次这样做。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"从11级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Military Stratagem Feature",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"在11级的时候，你从可用的列表中选择一个原型，你努力在你的战斗风格和技巧中加以模仿。你所选择的原型在3级时授予你特性，在15级和18级时再次授予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 13,
+			"entries": [
+				"当你达到12级时，以及在16级和19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Battlefield Commands (d10)",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 14,
+			"entries": [
+				"当你在这个等级中达到一定的级别时，奖励模子会发生变化。该模子在13级时变成d10，在17级时变成d12。"
+			]
+		},
+		{
+			"name": "Advantageous Action",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 15,
+			"entries": [
+				"从14级开始，你的战斗经验让你更容易帮助你的同伴。你可以将 \"帮助 \"动作作为一个额外动作。此外，当你采取帮助行动时，目标可以从你选择的以下任何一个效果中获益。",
+				{
+					"type": "list",
+					"items": [
+						"你对30英尺内能听到你的一个生物结束惊吓状态。",
+						"你给予你周围5英尺范围内的一个生物相当于你的魅力修正值的临时打击点数。",
+						"你触摸一个生命体，该生命体的命中率为0。该生物重新获得1点生命值。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Military Stratagem Feature",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 16,
+			"entries": [
+				"15级时，你从现有的列表中选择一个原型，在你的战斗风格和技巧中努力模仿。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 17,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Battlefield Commands (d6)",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 18,
+			"entries": [
+				"当你在这个等级中达到一定的级别时，奖励模子会发生变化。在17级时，该模子变成了D12。"
+			]
+		},
+		{
+			"name": "Militar Stratagem Feature",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 19,
+			"entries": [
+				"在18级时，你从现有的列表中选择一个原型，在你的战斗风格和技巧中努力模仿。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 20,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Legendary Commander",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"level": 21,
+			"entries": [
+				"在20级时，在你的指挥能力范围内的友好生物会在他们的救赎动作中加入你的魅力修饰（最低+1）。此外，每当一个生物会从你的战场指挥类特征中掷出一个额外的骰子时，该生物可以掷出一个额外的骰子并使用其中一个结果。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Daring Assault",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Gambler",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"从3级开始，当你选择这个策略时，当你有意识时，在你的指挥范围内的任何盟友在进行攻击时，可以选择以5的惩罚来进行攻击。如果攻击命中，该攻击会造成额外的2D6伤害。15级时，额外的伤害量增加到4d6。"
+			]
+		},
+		{
+			"name": "Desperate Avoidance",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Gambler",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 8,
+			"entries": [
+				"从第7级开始，当你要做救赎动作时，你可以选择以优势做救赎动作，但是你以劣势做所有的攻击卷，直到你的下一个回合结束。一旦你使用了这个特性，你必须等到你完成短时休息或长时休息后才能再次使用它。"
+			]
+		},
+		{
+			"name": "Hold the Line",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Gambler",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"在11级时，当你有意识时，任何在你的 \"指挥 \"功能范围内的盟友，如果要做拯救动作，可以选择以劣势做拯救动作。如果蓄力成功会使盟友受到一半的伤害，那么在蓄力成功的情况下，盟友不会受到任何伤害。"
+			]
+		},
+		{
+			"name": "Risky Gambit",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Gambler",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 16,
+			"entries": [
+				"从15级开始，你可以采取一个额外的行动，在你的 \"指挥 \"范围内选择一个生物。该目标会立即引起一个能接触到它的生物的机会攻击。如果该生物进行了攻击，那么在你下一个回合开始之前，该生物在对它进行的所有攻击卷中都会获得优势。"
+			]
+		},
+		{
+			"name": "Lay the Trap",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Gambler",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 19,
+			"entries": [
+				"18级时，在你有意识的情况下，每当一个生物对你进行攻击卷而未命中时，你和你选择的一个生物在下一回合结束前以优势对触发的生物进行下一次攻击卷。"
+			]
+		},
+		{
+			"name": "Inspiring Strike",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Golden General",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"从3级开始，当你选择这个策略时，每当你用武器攻击击中一个生物时，目标会在你下一个回合开始前对下一个生物的攻击给予优势。"
+			]
+		},
+		{
+			"name": "Inspiring Presence",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Golden General",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 8,
+			"entries": [
+				"在第7级时，你获得劝说技能的熟练度。如果你已经熟练掌握了这个技能，那么每当你做一个使用劝说的能力检查时，你的熟练度加成会翻倍。"
+			]
+		},
+		{
+			"name": "Glorious Sacrifice",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Golden General",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"从11级开始，当你和至少一个在你指挥范围内的其他友好生物要做拯救动作时，你可以选择以劣势做拯救动作，并给予你指挥范围内任何你选择的生物在同一拯救动作上的优势。"
+			]
+		},
+		{
+			"name": "Portentous Escape",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Golden General",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 16,
+			"entries": [
+				"在15级时，每当你的蓄力动作成功时，你可以在60英尺内选择一个友好的生物。如果目标能看到和听到你，目标会获得相当于5+你的魅力修改器的临时打击点数。"
+			]
+		},
+		{
+			"name": "Rally the Troops",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Golden General",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 19,
+			"entries": [
+				"在18级时，你可以采取一个行动来集结你的同伴。选择一个从你的战场命令功能中分配了一个奖励模子的生物。重新获得的命中率等于你的战场命令功能所赋予的奖励模子的两倍加上你的魅力修正值（最小为1）。"
+			]
+		},
+		{
+			"name": "Make Haste",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Hordemaster",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"从3级开始，当你选择这个策略时，每当一个友好的生物在你的指挥范围内开始其回合时，该生物的速度会增加5英尺，直到其回合结束。"
+			]
+		},
+		{
+			"name": "Skirmisher",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Hordemaster",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"同样在第三级，当你穿着轻甲或无甲并且没有挥舞盾牌时，你的速度会增加10英尺。此外，当你的行动会引起一次机会攻击时，你会在针对你的攻击卷上施加劣势。15级时，你的速度增加为20英尺。"
+			]
+		},
+		{
+			"name": "Nimble Troops",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Hordemaster",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 8,
+			"entries": [
+				"在第7级时，在你的指挥能力范围内的生物会在他们的力量（运动）检查中加入你的魅力修正值。"
+			]
+		},
+		{
+			"name": "Hit-and-Run",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Hordemaster",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"在11级时，每当一个生物掷出你的战场指令功能分配给它的奖励模子时，该生物的速度会增加10英尺，直到其回合结束。"
+			]
+		},
+		{
+			"name": "Seize Advantage",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Hordemaster",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 16,
+			"entries": [
+				"从15级开始，每当一个生物对你或在你的指挥功能范围内对你友好的生物进行机会攻击失败时，在你下一回合结束前，攻击的生物对它的下一次攻击卷轴给予优势。"
+			]
+		},
+		{
+			"name": "Unbound Horde",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Hordemaster",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 19,
+			"entries": [
+				"在18级时，敌对的生物对在你的 \"指挥者 \"特征范围内的对你友好的生物进行机会攻击时，他们的攻击卷轴是不利的。此外，如果你在你的回合中移动，在你的移动开始时，每个在你的指挥能力范围内的生物可以使用一个反应来移动最多10英尺，只要该生物的速度至少是10英尺。"
+			]
+		},
+		{
+			"name": "Find a Way",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Leader",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"从3级开始，当你选择这个策略时，你可以帮助盟友在他们失败时取得成功。当一个拥有至少一个由你的战场指令功能赋予的奖励模子的生物，在你60英尺范围内的攻击卷轴上会失误时，你可以使用反应来消耗奖励模子，将失误变成命中，并且攻击造成正常伤害的一半。转移资源 从3级开始，你可以在你的回合中采取一个额外的行动，将分配给一个生物的一个或多个奖励骰子转移到你选择的另一个在你的 \"指挥 \"类特征范围内的生物。奖励骰子的接收者必须能够听到你的声音。"
+			]
+		},
+		{
+			"name": "Trick Up Your Sleeve",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Leader",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 8,
+			"entries": [
+				"在第七级时，当你进行攻击卷、能力检查或蓄力投掷时，你可以将你的熟练度加成加入卷中，即使你已经将你的熟练度加成加入卷中。一旦你使用这个功能，你必须完成一个短暂的休息或长时间的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Close Call",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Leader",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"从11级开始，当你的能力检查或自救动作失败时，你可以掷一个D6，并将掷出的数字加到你的能力检查或自救动作的总数上。一旦你使用了 \"千钧一发\"，你必须等待至少1分钟才能再次使用它。"
+			]
+		},
+		{
+			"name": "Timely Warning",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Leader",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 16,
+			"entries": [
+				"在15级时，每当一个生物在对处于你的指挥功能范围内的对你友好的生物进行攻击时，如果该生物拥有你的战场指挥功能的奖励模子，该生物可以消耗该模子，滚动它，并从攻击卷的总数中减去所滚动的数字。如果减去的数字会使命中变成不中，那么该生物就会重新获得奖励模子。"
+			]
+		},
+		{
+			"name": "Hidden Resources",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Leader",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 19,
+			"entries": [
+				"在18级时，你可以采取一个额外的行动，让一个生物重新获得一个种族或类别特征的使用权，而这个特征通常会通过完成一个短暂的休息来重新获得。你可以使用这个特征的次数等于你的魅力修改器，当你完成一个长时间的休息时，你会恢复任何消耗的使用。"
+			]
+		},
+		{
+			"name": "The Weakest Link",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Commander",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"从3级开始，当你选择这个策略时，每当你攻击一个生物并击中它，你可以选择标记目标。该目标在你下一回合开始前一直保持标记。所有能听到你的声音的对你友好的生物都会对目标进行攻击卷，其奖励等于你的魅力修改器的一半（最小为1）。"
+			]
+		},
+		{
+			"name": "Attention to Detail",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Commander",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 8,
+			"entries": [
+				"7级时，当你进行能力检查时，你可以以优势进行检查。你可以使用这个功能三次，当你完成一次休息时，你会重新获得已消耗的使用权。"
+			]
+		},
+		{
+			"name": "Commander's Cunning",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Commander",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"从11级开始，当一个生物攻击一个你已经从你的战场上分配了一个奖励模子的生物时"
+			]
+		},
+		{
+			"name": "Exploit the Advantage",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Commander",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 16,
+			"entries": [
+				"15级时，每当一个对你友好的生物攻击你标记的目标时，该生物的攻击会造成额外的1d6伤害。"
+			]
+		},
+		{
+			"name": "No Room for Failure",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Commander",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 19,
+			"entries": [
+				"18级时，在你有意识的情况下，当在你的指挥范围内的盟友会下降到0或更少的命中率，并且该生物至少有一个来自你的战场命令功能的奖励模子，该生物可以花费模子并滚动它来恢复命中率。重新获得的命中率等于你的战场命令功能所赋予的奖励模子的两倍，再加上你的魅力修改器（最小为1）。"
+			]
+		},
+		{
+			"name": "Tactical Edge",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Tactician",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 3,
+			"entries": [
+				"从第三级开始，当你选择这个策略时，每当你掷出主动权时，你会获得一个战术模子，是一个D4。当你拥有这个骰子时，在你周围60英尺范围内的任何能听到你说话的友好生物在进行攻击时都可以将战术骰子作为一个额外的骰子。一旦掷出，战术模子就会丢失，直到你在下一回合开始时重新获得它。当战斗结束时，战术模子也会消失。如果你开始你的回合，没有人掷出战术模子，你可以用这个模子换取下一个更大尺寸的模子，例如d4变成d6，d6变成d8，以此类推，最大为d12。"
+			]
+		},
+		{
+			"name": "Student of History",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Tactician",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 8,
+			"entries": [
+				"7级时，你获得历史技能的熟练度。从11级开始，每当一个生物掷出一个由你的战场指令特征所赋予的奖励模子时，该生物也会获得该模子上所掷数字的一半作为AC的奖励。每当你进行智力（历史）检查时，你的熟练度加成会增加一倍。"
+			]
+		},
+		{
+			"name": "Indomitable Offense",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Tactician",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 12,
+			"entries": [
+				"从11级开始，每当一个生物掷出你赋予它的领导力骰子时，该生物也会获得该骰子上所掷数字的一半作为AC的奖励。这个奖励一直保持到你下一个回合的开始。"
+			]
+		},
+		{
+			"name": "Superior Tactics",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Tactician",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 16,
+			"entries": [
+				"在15级时，每当你获得一个战术骰子时，你就会获得一个额外的战术骰子，最多为两个骰子。第二个战术骰子可以像第一个一样使用，并且战术骰子的大小会按照战术边缘类特征下描述的方式增加。"
+			]
+		},
+		{
+			"name": "Master Tactician",
+			"source": "Call-to-Arms-The-Warlord",
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord",
+			"subclassShortName": "Tactician",
+			"subclassSource": "Call-to-Arms-The-Warlord",
+			"level": 19,
+			"entries": [
+				"在18级时，每当一个生物在你的战场命令功能所赋予的奖励模子上掷出1或2时，该生物可以重新掷出模子，直到它掷出3或更高。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Stratagem of the Daring Gambler",
+			"source": "Call-to-Arms-The-Warlord",
+			"shortName": "Gambler",
+			"subclassFeatures": [
+				"Daring Assault|Warlord|Call-to-Arms-The-Warlord|Gambler|Call-to-Arms-The-Warlord|3",
+				"Desperate Avoidance|Warlord|Call-to-Arms-The-Warlord|Gambler|Call-to-Arms-The-Warlord|8",
+				"Hold the Line|Warlord|Call-to-Arms-The-Warlord|Gambler|Call-to-Arms-The-Warlord|12",
+				"Risky Gambit|Warlord|Call-to-Arms-The-Warlord|Gambler|Call-to-Arms-The-Warlord|16",
+				"Lay the Trap|Warlord|Call-to-Arms-The-Warlord|Gambler|Call-to-Arms-The-Warlord|19"
+			],
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord"
+		},
+		{
+			"name": "Stratagem of the Golden General",
+			"source": "Call-to-Arms-The-Warlord",
+			"shortName": "Golden General",
+			"subclassFeatures": [
+				"Inspiring Strike|Warlord|Call-to-Arms-The-Warlord|Golden General|Call-to-Arms-The-Warlord|3",
+				"Inspiring Presence|Warlord|Call-to-Arms-The-Warlord|Golden General|Call-to-Arms-The-Warlord|8",
+				"Glorious Sacrifice|Warlord|Call-to-Arms-The-Warlord|Golden General|Call-to-Arms-The-Warlord|12",
+				"Portentous Escape|Warlord|Call-to-Arms-The-Warlord|Golden General|Call-to-Arms-The-Warlord|16",
+				"Rally the Troops|Warlord|Call-to-Arms-The-Warlord|Golden General|Call-to-Arms-The-Warlord|19"
+			],
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord"
+		},
+		{
+			"name": "Stratagem of the Hordemaster",
+			"source": "Call-to-Arms-The-Warlord",
+			"shortName": "Hordemaster",
+			"subclassFeatures": [
+				"Make Haste|Warlord|Call-to-Arms-The-Warlord|Hordemaster|Call-to-Arms-The-Warlord|3",
+				"Skirmisher|Warlord|Call-to-Arms-The-Warlord|Hordemaster|Call-to-Arms-The-Warlord|3",
+				"Nimble Troops|Warlord|Call-to-Arms-The-Warlord|Hordemaster|Call-to-Arms-The-Warlord|8",
+				"Hit-and-Run|Warlord|Call-to-Arms-The-Warlord|Hordemaster|Call-to-Arms-The-Warlord|12",
+				"Seize Advantage|Warlord|Call-to-Arms-The-Warlord|Hordemaster|Call-to-Arms-The-Warlord|16",
+				"Unbound Horde|Warlord|Call-to-Arms-The-Warlord|Hordemaster|Call-to-Arms-The-Warlord|19"
+			],
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord"
+		},
+		{
+			"name": "Stratagem of the Resourceful Leader",
+			"source": "Call-to-Arms-The-Warlord",
+			"shortName": "Leader",
+			"subclassFeatures": [
+				"Find a Way|Warlord|Call-to-Arms-The-Warlord|Leader|Call-to-Arms-The-Warlord|3",
+				"Trick Up Your Sleeve|Warlord|Call-to-Arms-The-Warlord|Leader|Call-to-Arms-The-Warlord|8",
+				"Close Call|Warlord|Call-to-Arms-The-Warlord|Leader|Call-to-Arms-The-Warlord|12",
+				"Timely Warning|Warlord|Call-to-Arms-The-Warlord|Leader|Call-to-Arms-The-Warlord|16",
+				"Hidden Resources|Warlord|Call-to-Arms-The-Warlord|Leader|Call-to-Arms-The-Warlord|19"
+			],
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord"
+		},
+		{
+			"name": "Stratagem of the Shrewd Commander",
+			"source": "Call-to-Arms-The-Warlord",
+			"shortName": "Commander",
+			"subclassFeatures": [
+				"The Weakest Link|Warlord|Call-to-Arms-The-Warlord|Commander|Call-to-Arms-The-Warlord|3",
+				"Attention to Detail|Warlord|Call-to-Arms-The-Warlord|Commander|Call-to-Arms-The-Warlord|8",
+				"Commander's Cunning|Warlord|Call-to-Arms-The-Warlord|Commander|Call-to-Arms-The-Warlord|12",
+				"Exploit the Advantage|Warlord|Call-to-Arms-The-Warlord|Commander|Call-to-Arms-The-Warlord|16",
+				"No Room for Failure|Warlord|Call-to-Arms-The-Warlord|Commander|Call-to-Arms-The-Warlord|19"
+			],
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord"
+		},
+		{
+			"name": "Stratagem of the Supreme Tactician",
+			"source": "Call-to-Arms-The-Warlord",
+			"shortName": "Tactician",
+			"subclassFeatures": [
+				"Tactical Edge|Warlord|Call-to-Arms-The-Warlord|Tactician|Call-to-Arms-The-Warlord|3",
+				"Student of History|Warlord|Call-to-Arms-The-Warlord|Tactician|Call-to-Arms-The-Warlord|8",
+				"Indomitable Offense|Warlord|Call-to-Arms-The-Warlord|Tactician|Call-to-Arms-The-Warlord|12",
+				"Superior Tactics|Warlord|Call-to-Arms-The-Warlord|Tactician|Call-to-Arms-The-Warlord|16",
+				"Master Tactician|Warlord|Call-to-Arms-The-Warlord|Tactician|Call-to-Arms-The-Warlord|19"
+			],
+			"className": "Warlord",
+			"classSource": "Call-to-Arms-The-Warlord"
+		}
+	]
+}

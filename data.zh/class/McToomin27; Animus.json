@@ -1,0 +1,4866 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "McToomin27:Animus",
+				"full": "Animus",
+				"abbreviation": "Anim",
+				"authors": [
+					"/u/McToomin27"
+				],
+				"convertedBy": [
+					"Ikaguia"
+				],
+				"url": "https://www.reddit.com/r/UnearthedArcana/comments/fv4sq8/the_animus_20_the_intelligencebased_shapeshifting/",
+				"version": "2020.04.04"
+			}
+		],
+		"optionalFeatureTypes": {
+			"Anim:BE": "Bestial edge"
+		},
+		"dateAdded": 1560913325,
+		"dateLastModified": 1690651615,
+		"_dateLastModifiedHash": "ac31bca80a"
+	},
+	"class": [
+		{
+			"name": "Animus",
+			"source": "McToomin27:Animus",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"tools": [
+					"None"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"history",
+								"investigation",
+								"nature",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item quarterstaff|phb} or (b) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
+					"(a) a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} or (b) two {@item dagger|phb}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item schoolar's pack|phb}",
+					"(a) {@item Leather armor|phb}, and {@item book|phb|a field journal}."
+				],
+				"goldAlternative": "{@dice 4d4×10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"quarterstaff|phb"
+						],
+						"b": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						],
+						"b": [
+							{
+								"item": "dagger|phb",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"schoolar's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"leather armor|phb",
+							"book|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {}
+			},
+			"fluff": [
+				{
+					"source": "McToomin27:Animus",
+					"page": 1,
+					"entries": [
+						"一只不起眼的老鼠在城堡的走廊上溜达。它似乎有一个明确的目的地：城堡里的禁地图书馆。当它溜达过去时，守卫们对它毫不在意。它从图书馆的门缝里挤了进去。灯光熄灭了；图书馆里空无一人。老鼠开始成长，它的特征发生了变化。很快，它变成了一个好奇的半身人的形状。半身人微笑着，环视着他们的宝藏。半身人选择了一本关于灭绝生物的书，并开始阅读......",
+						"一个年长的精灵坐在一根木头上，对周围的猿猴家族的嬉戏不以为然。小精灵俏皮地笑着，体验着以前从未被记录过的行为和互动。他们为这些猿猴画了草图，记下了他们的个性，他们的好恶。突然，一只最大的猿猴决定它不喜欢精灵的存在。他冲了过来，挺起胸膛表示恐吓。精灵从未失去过他们的笑容，他们集中了一会儿注意力，并将他们的形态转变为一个小的、没有威胁的猿猴儿童。银背人满意地走开了......",
+						"一群暴徒正在恐吓一个村庄。村子里没有人站出来对付这些恶棍。也就是说，直到一个年轻的半兽人站了出来。半兽人告诉他们离开这个村子，永远不要回来。暴徒们彼此对视，然后开始大笑。在他们的狂欢中，他们没有注意到半兽人的皮肤已经开始变成了鳞片。锋利的牙齿从他们的牙床里冒出来；他们的头和下巴开始生长。不出片刻，一个已经灭绝的兽王就站在了这些闯入者面前。他们短暂地犹豫了一下，然后尖叫着从这个幽灵身边跑开，再也没有回来......",
+						"阿尼姆斯是一个完全致力于改变形状的魔法实践的人。有许多法术和能力可以改变一个人的形态，但阿尼姆斯将这些能力进一步提升，使他们能够接触到其他魔法从业者所不知道的秘密。阿尼姆斯研究生物就像巫师研究魔法一样，致力于完善其艺术。",
+						{
+							"type": "entries",
+							"name": "Biological Imperative",
+							"entries": [
+								"animus是研究生命和进化的人，记录自然和研究其变化。对大多数阿尼姆人来说，如果一个人研究一个生物的形态、习惯和生物冲动，那么他就可以挖掘出成为那个生物所需的变形魔法。阿尼姆人首先是一个科学家，一个自然界的学生和动物及各种生物的研究者。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Call of the Wild",
+							"entries": [
+								"研究自然和动物的冲动迫使animi在某些时候离开尘封的卷轴和被遗忘的前人的书籍，并增加世界的知识。animi寻求发现关于生命的事情，这是以前不知道的，利用他们的力量来研究生物，足以在他们中间行走，不被注意。虽然阿尼姆不断地增加他们的笔记和研究，但他们主要是努力发现新的发现，或推翻被认为是事实的东西。"
+							]
+						}
+					],
+					"name": "Animus",
+					"type": "section"
+				},
+				{
+					"source": "McToomin27:Animus",
+					"page": 2,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Creating an Animus",
+							"entries": [
+								"当你制作你的阿尼姆斯角色时，考虑一下你打算进行的科学。你是否在一个大师级的阿尼姆斯手下学习，希望建立在他们的研究基础上？你是否来自一个小社区，只是通过自己的实验发现了变形的魔力？你是否通过与某些生物特别密切的联系发现它的力量，意外地发现了这种能力？",
+								"还要考虑你计划进行的研究的类型。你是否对昆虫和虫子感兴趣，那些别人会觉得可恶的生物？你会研究植物，还是渗出物？或者你会研究那些有人认为是最强大的生物--龙？",
+								{
+									"name": "Quick Build",
+									"type": "entries",
+									"entries": [
+										"你可以按照以下建议快速地制造一个 \"万物之灵\"。首先，让智力成为你最高的能力分数，其次是体质。第二，选择（%0%）的背景。第三，为你的领域日志选择以下形式。(1%）、（2%）、（3%）、（4%）、（5%）和（6%）。"
+									]
+								}
+							]
+						}
+					],
+					"type": "section"
+				}
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Ki Points",
+						"Max CR",
+						"Edges Known"
+					],
+					"rows": [
+						[
+							1,
+							"1/4",
+							0
+						],
+						[
+							2,
+							"1/2",
+							2
+						],
+						[
+							3,
+							1,
+							2
+						],
+						[
+							4,
+							1,
+							2
+						],
+						[
+							5,
+							2,
+							3
+						],
+						[
+							6,
+							2,
+							3
+						],
+						[
+							7,
+							3,
+							4
+						],
+						[
+							8,
+							3,
+							4
+						],
+						[
+							9,
+							4,
+							5
+						],
+						[
+							10,
+							4,
+							5
+						],
+						[
+							11,
+							5,
+							5
+						],
+						[
+							12,
+							5,
+							6
+						],
+						[
+							13,
+							6,
+							6
+						],
+						[
+							14,
+							6,
+							6
+						],
+						[
+							15,
+							7,
+							7
+						],
+						[
+							16,
+							7,
+							7
+						],
+						[
+							17,
+							8,
+							7
+						],
+						[
+							18,
+							8,
+							8
+						],
+						[
+							19,
+							9,
+							8
+						],
+						[
+							20,
+							10,
+							8
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Ki|Animus|McToomin27:Animus|1",
+				"Savage Attack|Animus|McToomin27:Animus|1",
+				"Bestial Edges|Animus|McToomin27:Animus|2",
+				{
+					"classFeature": "Research Focus|Animus|McToomin27:Animus|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Animus|McToomin27:Animus|4",
+				"Benign Form|Animus|McToomin27:Animus|5",
+				"Savage Attack (CR 1)|Animus|McToomin27:Animus|5",
+				"Primal Strikes|Animus|McToomin27:Animus|6",
+				{
+					"classFeature": "Research Focus Feature|Animus|McToomin27:Animus|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Animus|McToomin27:Animus|8",
+				"Wild Speech|Animus|McToomin27:Animus|9",
+				{
+					"classFeature": "Research Focus Feature|Animus|McToomin27:Animus|10",
+					"gainSubclassFeature": true
+				},
+				"Savage Attack (CR 2)|Animus|McToomin27:Animus|11",
+				"Ability Score Improvement|Animus|McToomin27:Animus|12",
+				"Ten Thousand Faces|Animus|McToomin27:Animus|13",
+				{
+					"classFeature": "Research Focus Feature|Animus|McToomin27:Animus|14",
+					"gainSubclassFeature": true
+				},
+				"Benign Form Improvement|Animus|McToomin27:Animus|15",
+				"Ability Score Improvement|Animus|McToomin27:Animus|16",
+				"Savage Attack (CR 3)|Animus|McToomin27:Animus|17",
+				"Quick Study|Animus|McToomin27:Animus|18",
+				"Ability Score Improvement|Animus|McToomin27:Animus|19",
+				"Signature Form|Animus|McToomin27:Animus|20"
+			],
+			"subclassTitle": "Research Focus"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Armordillo",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"当你没有穿戴盔甲时，你的交流能力等于10+你的智力修正值。"
+			]
+		},
+		{
+			"name": "Beast of Burden",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"在确定你的运载能力和你能推动、拖动或举起的重量时，你算大一码。"
+			]
+		},
+		{
+			"name": "Bestial Power",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"从以下技能中选择一项。{@skill Athletics}, {@skill Acrobatics}, {@skill Intimidation}, {@skill Perception}, 或 {@skill Stealth}。你获得所选技能的熟练度。",
+				"你可以多次选择这个边缘。每次这样做，你必须选择一个不同的技能。"
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"acrobatics": true,
+					"intimidation": true,
+					"perception": true,
+					"stealth": true
+				}
+			]
+		},
+		{
+			"name": "Darkvision",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"你可以在你周围60英尺内的昏暗光线下看东西，就像亮光一样，在黑暗中看东西，就像暗光一样。你在黑暗中不能辨别颜色，只能辨别灰色的深浅。",
+				"如果你已经有暗视能力，其范围增加60英尺。"
+			]
+		},
+		{
+			"name": "Keen Senses",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"你在依靠听觉或嗅觉的智慧（（%0%））检查中具有优势。"
+			]
+		},
+		{
+			"name": "Hold Breath",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"你可以屏住呼吸1小时。"
+			]
+		},
+		{
+			"name": "Lightning Bug",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"你可以用一个动作开始或停止在30英尺范围内发出亮光，并在另外30英尺范围内发出暗光。"
+			]
+		},
+		{
+			"name": "Mimicry",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"entries": [
+				"你可以模仿你听到的声音，包括声音。听到你发出的声音的生物，只要通过智慧（（%0%））检查，再加上你的魅力（（%1%））检查，就能知道它们是模仿的。"
+			]
+		},
+		{
+			"name": "Cowering Prey",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"在你被攻击击中并受到伤害后，你可以使用你的反应来移动到你速度的一半。这种移动不会激起机会攻击。"
+			]
+		},
+		{
+			"name": "Dark Camouflage",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在昏暗的光线或黑暗中时，你可以使用一个额外的动作来进行（%0%）的行动。"
+			]
+		},
+		{
+			"name": "Frog Legs",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的跳远最高可达20英尺，跳高最高可达10英尺，无论是否有跑步起跑。"
+			]
+		},
+		{
+			"name": "Horns of the Ram",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用你的行动到（%0%）时，你可以使用一个额外的行动来进行一次近战武器攻击或对一个生物进行（%1%）的攻击。"
+			]
+		},
+		{
+			"name": "Tiger Pounce",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"如果你向一个生物移动至少20英尺，然后在同一回合用近战攻击击中它，目标会从攻击中受到额外的（%0%）伤害。如果目标是一个生物，它必须成功地进行力量救赎，否则会被击倒（%1%）。"
+			]
+		},
+		{
+			"name": "Waterborne",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以同时呼吸空气和水。你获得了25英尺的游泳速度和25英尺的步行速度，如果你的步行速度还没有快的话。如果你已经有了游泳的速度，速度会增加25英尺。"
+			]
+		},
+		{
+			"name": "Ape's Strength",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你在对（%0%）或（%1%）其他生物的能力检查中具有优势。"
+			]
+		},
+		{
+			"name": "Constrictor",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你成功地{@action grapple}一个生物，目标会被{@condition restrained}，直到抓捕结束。你不能以这种方式同时束缚一个以上的目标。"
+			]
+		},
+		{
+			"name": "Elephant Stance",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的能力检定或蓄力投掷失败，从而导致你被击倒（%0%）或从你的空间移动时，你可以使用你的反应来重新进行检定或蓄力投掷。你必须保留第二次掷骰。"
+			]
+		},
+		{
+			"name": "Frog Slime",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你在抵抗变成{@condition grappled}或{@condition restrained}的能力检查和蓄力投掷方面具有优势。"
+			]
+		},
+		{
+			"name": "Chameleon",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你在躲藏的检查上有优势，可以进行{@skill Stealth}的检查。如果你在1分钟内保持不动，你就会变成（%1%），直到你使用一个动作或移动。"
+			]
+		},
+		{
+			"name": "Echolocation",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以使用一个奖励动作来集中你的感官。直到你下一个回合开始时，你有（%0%）到60英尺的范围。如果你是（%1%），你不能使用这个优势。"
+			]
+		},
+		{
+			"name": "Kestrel Switftness",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你的速度增加10英尺。这适用于所有形式的运动。"
+			]
+		},
+		{
+			"name": "Defensive Curl",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当一个你能看到的攻击者用攻击击中你时，你可以用你的反应将攻击对你的伤害减半。"
+			]
+		},
+		{
+			"name": "Earthborne",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你获得（%0%）到30英尺的范围，以及30英尺的钻探速度。你可以钻过非魔法的、未加工的土和石头。在这样做的时候，你不会干扰你所移动的材料。如果你已经有了钻探的速度，那么速度会增加30英尺。"
+			]
+		},
+		{
+			"name": "Wings of the Falcon",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你获得60英尺的飞行速度。",
+				"如果你已经有了飞行速度，速度会增加30英尺。"
+			]
+		},
+		{
+			"name": "Wolf Pack",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"如果你的盟友中至少有一人在该生物的5英尺范围内，而盟友不在该生物的5英尺范围内，你在对该生物的攻击卷中具有优势（%0%）。"
+			]
+		},
+		{
+			"name": "Blood Frenzy",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对任何没有全部命中率的生物的攻击卷有优势。"
+			]
+		},
+		{
+			"name": "Crag Hide",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对任何只针对你的法术（不是一个区域）的救赎有优势。"
+			]
+		},
+		{
+			"name": "Fear Aura",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						}
+					}
+				}
+			],
+			"entries": [
+				"任何对你有敌意的目标，如果在你30英尺范围内开始它的回合，必须做一个智慧救赎动作，除非你是（%0%）。如果救赎失败，该目标会受到（%1%）的影响，直到其下一回合开始。如果目标的蓄力动作成功，目标在接下来的24小时内对你的恐惧光环免疫。"
+			]
+		},
+		{
+			"name": "Thorned Hide",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Botany",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在你每个回合开始时，你对任何你是{@condition grappled|grappling}的生物或任何你是{@condition grappled|grappling}的生物造成{@damage 1d4}穿刺伤害。"
+			]
+		},
+		{
+			"name": "Nature's Bounty",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Botany",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell entangle}或{@spell goodberry}的法术，当你完成短时或长时的休息时，就会恢复施展的能力。你可以在你的植物形态下施展这个法术。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"rest": {
+								"1e": [
+									"entangle",
+									"goodberry"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Pollen Cloud",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Botany",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你每次受到伤害都会释放一团花粉。在你5英尺范围内的每个其他目标必须在宪法规定的投掷中成功，否则会被（%0%），直到其下一回合结束。如果目标的蓄力动作成功，该目标在接下来的24小时内对你的花粉云免疫。"
+			]
+		},
+		{
+			"name": "Photosynthesis",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Botany",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你在明亮的光线下和服用根部时，你会从任何治疗中恢复可能的最大命中率。"
+			]
+		},
+		{
+			"name": "Poison Spores",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Botany",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你受到你周围5英尺内的生物的伤害时，你会向伤害你的生物释放一团孢子。目标必须在宪法规定的投掷中获得成功，否则会受到（%0%）的影响，直到其下一回合结束。"
+			]
+		},
+		{
+			"name": "Timeless Body",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Botany",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每过10年，你的身体只衰老1年，你不可能神奇地变老。"
+			]
+		},
+		{
+			"name": "Limited Telepathy",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Dracology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用魔法与你周围120英尺内的任何能理解语言的生物进行简单的思想、情感和图像的心灵感应。"
+			]
+		},
+		{
+			"name": "Rampage",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Dracology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在你的回合中用近战攻击将目标降低到0点，你可以采取一个额外的行动，移动到你速度的一半并进行近战武器攻击。"
+			]
+		},
+		{
+			"name": "Brave",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Dracology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你在对人的救赎上有优势（%0%）。"
+			]
+		},
+		{
+			"name": "Treasure Sense",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Dracology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以通过气味准确定位你周围60英尺内的贵重金属和宝石，如硬币和宝石。"
+			]
+		},
+		{
+			"name": "Damage Immunity",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Dracology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对你为你的Draconic Hallmark选择的伤害类型有免疫力。"
+			]
+		},
+		{
+			"name": "Avoidance",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Dracology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"如果你受到的效果允许你做一个蓄力动作来承受一半的伤害，那么如果你蓄力动作成功，你就不会受到伤害，如果你失败，就只会受到一半伤害。"
+			]
+		},
+		{
+			"name": "Telepathic Bond",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Ecology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你与你熟悉的人之间的心灵感应范围增加到1英里。"
+			]
+		},
+		{
+			"name": "Mounted Combat",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Ecology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"除非你和你的坐骑都是{@condition incapacitated}，否则你不能被从坐骑上打下来。"
+			]
+		},
+		{
+			"name": "Battle Formation",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Ecology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在你熟悉的人的5英尺范围内时，你的灵巧拯救动作有优势。"
+			]
+		},
+		{
+			"name": "Far Shape",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Ecology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"只要你熟悉的人在你心灵感应的范围内，你就可以用气力点来改变他的形态。"
+			]
+		},
+		{
+			"name": "Steadfast",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Ecology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你能看到30英尺内的盟友生物时，你不能（%0%）。"
+			]
+		},
+		{
+			"name": "Morph Dancing",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Ecology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当你的熟人在你身边30英尺范围内被变形时，你可以使用你的反应并消耗额外的奇异点将你的熟人变形为一个新的形态。你熟悉的人所受到的任何多余的伤害都会带到它的新形态中。"
+			]
+		},
+		{
+			"name": "Web Walker",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Entomology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你接触到一张网时，你知道任何其他接触到同一网的生物的确切位置。你无视由网状物造成的移动限制。"
+			]
+		},
+		{
+			"name": "Poison Sense",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Entomology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以通过味觉、触觉或嗅觉来检测一种物质是否有毒。"
+			]
+		},
+		{
+			"name": "Spider Silk",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Entomology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗2个基点作为行动来施展{@spell web}的法术。你可以在变形的时候施展这个法术。"
+			]
+		},
+		{
+			"name": "Spider Climb",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Entomology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+			]
+		},
+		{
+			"name": "Bombardier",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Entomology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个动作喷出一个30英尺的酸液锥。该区域内的每个生物都必须做一个灵巧的蓄力动作，如果成功，将受到一半的伤害。这种喷射的伤害等于{@dice 1d6}+{@dice d6}等于你的灵力等级除以4（向下取整）的数量。"
+			]
+		},
+		{
+			"name": "Shimmering",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Entomology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗4个基点作为行动来施展{@spell confusion}的法术。你可以在变形的时候施展这个法术。"
+			]
+		},
+		{
+			"name": "Heart Sight",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Faeology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个动作来触摸一个生物，这个生物必须做一个魅力救赎。如果救赎失败，你会知道该生物当前的情绪状态。如果目标的救赎成功，它将在接下来的24小时内对你的 \"心视 \"免疫。"
+			]
+		},
+		{
+			"name": "Fae Charm",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Faeology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以用一个动作来瞄准一个你能看到的30英尺内的人形或野兽。如果目标能看到你，它必须在智慧救赎中成功，否则就会被魔化（%0%）。该生物将你视为一个值得信赖的朋友，并予以关注和保护。虽然目标不在你的控制之下，但它以最有利的方式接受你的请求或行动。每次你或你的盟友对目标做了任何有害的事情，它都可以重复蓄力，如果成功则结束对自己的影响。否则，该效果将持续1小时，或直到你死亡，与目标处于不同的存在平面，或你以额外行动结束该效果。如果目标的救赎成功，它在接下来的24小时内对你的异种符咒免疫。",
+				"一旦你使用这个优势，你就不能再使用它，直到你完成长时间的休息。"
+			]
+		},
+		{
+			"name": "Fae Step",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Faeology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗2个基点作为奖励动作来施展{@spell misty step}的法术。你可以在变形的时候施展这个法术。"
+			]
+		},
+		{
+			"name": "Sensing Bond",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Faeology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以使用一个行动来针对你周围30英尺范围内的一个自愿的生物。当你们在同一平面上时，你可以与你的结合伙伴进行心灵感应。",
+				"此外，你的伙伴可以使用一个动作，通过你的眼睛看，听到你所听到的，直到他们下一个回合开始。在这段时间里，你的伙伴在自己的感官方面是（%0%）和（%1%）。",
+				"在你使用行动选择新的伙伴之前，或者在任何一方选择结束结合之前，你们一直保持结合（不需要行动）。"
+			]
+		},
+		{
+			"name": "Ethereal Sight",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Faeology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在物质界时，你可以看到30英尺的虚空界，反之亦然。",
+				"此外，在你的30英尺范围内，神奇的（%0%）未能从你的视线中隐藏任何东西。"
+			]
+		},
+		{
+			"name": "Border Crossing",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Faeology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以花1小时的时间进行深度冥想，不采取任何行动，也不消耗任何运动。在这段时间结束时，你可以在不消耗气力点的情况下施展（%0%）的法术，目标是你自己和你周围10英尺内最多8个愿意的生物。当你以这种方式施法时，你不能将不愿意的生物放逐到另一个平面。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"plane shift"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Labyrinthine Recall",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Monstrology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以完美地回忆起你在过去30天内走过的任何路径。"
+			]
+		},
+		{
+			"name": "Tendril",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Monstrology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你一次最多可以拥有四根卷须，它们从你身上生长出来，可以用来进行攻击。当你采取{@action Attack}行动时，你可以用卷须攻击来代替你的任何攻击。卷须攻击是一种近战武器攻击，攻击范围为10英尺，一击造成{@damage 1d6}重击伤害。你可以使用你的智力来进行攻击和伤害卷。"
+			]
+		},
+		{
+			"name": "Foul Stench",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Monstrology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"任何在你5英尺范围内开始其回合的生物必须做一个宪法规定的投掷动作，否则会被（%0%），直到其下一回合开始。如果目标的蓄力动作成功，该目标在接下来的24小时内对你的恶臭免疫。"
+			]
+		},
+		{
+			"name": "Immutable Form",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Monstrology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以选择对任何会改变你形态的法术或效果免疫。"
+			]
+		},
+		{
+			"name": "Detect Sentience",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Monstrology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以感应到60英尺范围内智力值在3分以上的任何目标的存在和位置，无论是否有障碍物，除非目标受到（%0%）法术的保护。"
+			]
+		},
+		{
+			"name": "Two Heads",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Monstrology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你会长出第二个头。你在智慧({@skill Perception})检查和对被{@condition blinded}、{@condition charmed}、{@condition deafened}、{@condition frightened}、{@condition stunned}和被击倒{@condition unconscious}的自救动作上具有优势。"
+			]
+		},
+		{
+			"name": "Magnetic Sense",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oceanography",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你总是知道哪条路是北边，除非通过神奇的手段，否则你在前往一个你曾经去过的地方时不会迷路。"
+			]
+		},
+		{
+			"name": "Electric Shock",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oceanography",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你能看到的生物用近身攻击击中你时，你可以用你的反应器给攻击者一个电击，它受到的雷电伤害量等于你的智力修正值。"
+			]
+		},
+		{
+			"name": "Jet Propulsion",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oceanography",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你长出了小的虹吸管，使你能够快速移动。你可以采取{@action Dash}的行动作为奖励行动。"
+			]
+		},
+		{
+			"name": "Invisible in Water",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oceanography",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你是{@condition invisible}，而完全浸泡在水中。"
+			]
+		},
+		{
+			"name": "Regenerate",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oceanography",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"如果你失去了一个身体部位，如果你在整个持续时间内至少有1个命中率，那么缺失的部分会在{@dice 1d6 + 1}天后重新生长并恢复到完全功能。"
+			]
+		},
+		{
+			"name": "Nondetection",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oceanography",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你不能被任何占卜魔法锁定或探测到，也不能通过神奇的探查传感器感知到。"
+			]
+		},
+		{
+			"name": "Ooze Friendship",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oozology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"敖兹人视你和你的盟友为友好和无威胁的存在。除非他们被特别命令或强迫进行攻击，或者你或你的同伴在过去24小时内做了任何对渗水体有害的事情，否则渗水体不会把你视为敌对。"
+			]
+		},
+		{
+			"name": "Acidic Touch",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oozology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以选择让你的近战武器攻击造成酸性伤害，而不是正常伤害。"
+			]
+		},
+		{
+			"name": "Transparent",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oozology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"即使你在众目睽睽之下，如果你既没有移动也没有攻击，也需要成功的智慧（（%0%））检查（DC等于你的形态保存DC）来发现你。"
+			]
+		},
+		{
+			"name": "Adhesive",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oozology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以选择粘附在任何接触你的东西上。被你粘住的巨大或更小的目标也会被你粘住（%0%）（逃脱DC等于你的奇异救赎DC）。"
+			]
+		},
+		{
+			"name": "Inscrutable",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oozology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对任何能感知你的情绪或读懂你的想法的效果，以及任何你拒绝的占卜咒语，都是免疫的。为确定你的意图或诚意而进行的智慧（（%0%））检查具有劣势。"
+			]
+		},
+		{
+			"name": "Corrode Metal",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Oozology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"任何由金属制成的非魔法武器击中你都会被腐蚀。在造成伤害后，该武器的伤害卷会受到一个永久的、累积的-1惩罚。如果它的惩罚下降到-5，武器就会被摧毁。由金属制成的非魔法弹药如果击中你，在造成伤害后会被摧毁。",
+				"此外，你可以在一回合内吃透2英寸厚的非魔法金属。"
+			]
+		},
+		{
+			"name": "Elemental Movement",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Primordiology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以在非魔法的困难地形中移动，而不需要消耗额外的移动。"
+			]
+		},
+		{
+			"name": "Power of the Elements",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Primordiology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你获得这种兽性的优势时，可以选择以下一种法术：{@spell fire bolt}、{@spell hydro blast|McToomin27:Animus}、{@spell skyward fling|McToomin27:Animus}或{@spell stoneguard|McToomin27:Animus}。你可以施展你选择的法术，即使在变形的时候。",
+				"你可以多次选择这个边缘。每次这样做，你必须选择一个不同的法术。"
+			]
+		},
+		{
+			"name": "Elemental Aura",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Primordiology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在你每个回合开始时，你周围5英尺内的每个生物都会受到（%0%）酸、冷、火、闪电或雷的伤害（你选择）。"
+			]
+		},
+		{
+			"name": "Water Walk",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Primordiology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以在液体表面上站立和移动，就像它们是固体地面一样。"
+			]
+		},
+		{
+			"name": "Elemental Absorption",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Primordiology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你受到酸、冷、火、闪电或雷电的伤害时，你可以选择不受伤害，而是恢复与你的灵力等级相等的命中率。一旦你使用了这个优势，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Death Burst",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Primordiology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你的命中率降至0时，你会释放一股强大的元素能量。在你周围15英尺内的其他目标必须做一个灵巧的蓄力动作，否则在蓄力动作失败的情况下，会受到相当于{@damage 1d6}+等于你的万物之灵等级的D6数量除以3的伤害（向下取整），或者在蓄力动作成功的情况下受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Prehensile Tail",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Zoology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你长出了一条可以被精细操纵的尾巴。在你的回合中，你可以用你的尾巴与一个额外的物体或环境特征免费互动。你可以用你的尾巴来操纵一个物体，打开一扇未上锁的门或容器，从一个打开的容器中存放或取回一个物品，从一个小瓶中倒出内容物，或其他类似的动作。你的尾巴不能攻击，不能使用盾牌或武器，不能激活魔法物品，也不能携带超过5磅的物品。"
+			]
+		},
+		{
+			"name": "Reckless",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Zoology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"在你的回合开始时，你可以在该回合内所做的所有近战武器攻击卷上获得优势，但对你的攻击卷有优势，直到你下一回合开始。"
+			]
+		},
+		{
+			"name": "Relentless",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Zoology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在任何形式下被降低到0命中率时，你可以选择被降低到1命中率来代替。一旦你使用了这个优势，你必须完成一个短暂或长时间的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Slippery Escape",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Zoology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你移出敌人的范围时，你不会引起机会攻击。"
+			]
+		},
+		{
+			"name": "Iron Stomach",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Zoology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对疾病和毒药有免疫力。"
+			]
+		},
+		{
+			"name": "Assassinate",
+			"source": "McToomin27:Animus",
+			"featureType": [
+				"Anim:BE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Animus",
+							"source": "McToomin27:Animus"
+						},
+						"subclass": {
+							"name": "Zoology",
+							"source": "McToomin27:Animus",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对任何还没有进入战斗的生物在攻击卷轴上有优势。此外，你对这种生物的任何打击都是关键打击。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Oozeling",
+			"source": "McToomin27:Animus",
+			"page": 16,
+			"size": [
+				"T"
+			],
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "1d4 + 1",
+				"average": 3
+			},
+			"speed": {
+				"walk": 15,
+				"climb": 15
+			},
+			"str": 12,
+			"dex": 6,
+			"con": 12,
+			"int": 6,
+			"wis": 6,
+			"cha": 4,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 8,
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"prone"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"奥兹林可以在1英寸宽的狭窄空间内移动而不受挤压。"
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"奥兹林可以爬上困难的表面，包括倒挂在天花板上，而不需要进行能力检查。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}3 ({@damage 1d4 + 1})重击伤害加上3 ({@damage 1d6})酸伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B",
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Lesser Kraken",
+			"shortName": "Kraken",
+			"source": "McToomin27:Animus",
+			"page": 15,
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					],
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "14d12 + 70",
+				"average": 161
+			},
+			"speed": {
+				"walk": 15,
+				"swim": 60
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 20,
+			"int": 18,
+			"wis": 14,
+			"cha": 16,
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"lightning",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"frightened",
+				"paralyzed"
+			],
+			"languages": [
+				"Understands Abyssal",
+				"Celestial",
+				"Infernal",
+				"Primordial but can't speak"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"海怪可以呼吸空气和水。"
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"海怪对物体和结构造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"海怪会进行三次触手攻击，每次都可以用一次 \"甩 \"来代替。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达5英尺，一个目标。{@h}15 ({@damage 2d8 + 6})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达20英尺，一个目标。{@h}16 ({@damage 3d6 + 6})重击伤害，目标为{@condition grappled}(逃生{@dc 16})。直到抓捕结束，目标为{@condition restrained}。海怪有八个触手，每个触手可以抓住一个目标。"
+					]
+				},
+				{
+					"name": "Fling",
+					"entries": [
+						"克拉肯持有的一个中型或小型物体或生物（%0%）被抛向一个随机的方向，最多30英尺，并被击倒（%1%）。如果被抛出的目标撞击到坚固的表面，目标每被抛出10英尺就会受到3（（%2%））的重击伤害。如果目标被抛向另一个生物，该生物必须成功进行{@dc 16}灵巧救赎，否则会受到同样的伤害并被击倒{@condition prone}。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"CS",
+				"I",
+				"P"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	],
+	"background": [
+		{
+			"name": "Veterinarian",
+			"source": "McToomin27:Animus",
+			"skillProficiencies": [
+				{
+					"medicine": true,
+					"nature": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Medicine}, {@skill Nature}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "草药学套件"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "您选择的一个"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "一把小刀，一个{@item healer's kit|PHB}，一个{@item herbalism kit|PHB}，一套重手套，一件保护衣服的罩衫，以及一个装有15gp的小包。"
+						}
+					]
+				},
+				{
+					"name": "Focus of Practice",
+					"type": "entries",
+					"entries": [
+						"大多数兽医倾向于满足特定类型生物的需求。你可以和你的GM一起确定你工作的生物类型，或者你可以从下面的表格中选择或滚动来确定你角色的实践重点。",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Focus of Practice"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"水生的"
+								],
+								[
+									"2",
+									"同伴"
+								],
+								[
+									"3",
+									"马类"
+								],
+								[
+									"4",
+									"异国野兽"
+								],
+								[
+									"5",
+									"畜牧业"
+								],
+								[
+									"6",
+									"非兽类"
+								],
+								[
+									"7",
+									"小型野兽"
+								],
+								[
+									"8",
+									"野生动物"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Feature: House Call",
+					"type": "entries",
+					"entries": [
+						"任何知道你的行业，并且有心爱的宠物或动物伙伴经历过任何形式的疾病的人都会欢迎你到他们家里去。你通常可以在这样的人那里找到一个藏身、休息或放松的地方，他们会保护你不受法律或其他正在寻找你的人的影响，尽管他们不会为你冒生命危险。"
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Suggested Characteristics",
+					"type": "entries",
+					"entries": [
+						"兽医的生活是艰难的工作，当心爱的宠物或需要的工作动物被拯救时，有胜利和幸福的时刻，而当它们的生物不能被治愈时，也有损失的时刻。兽医必须在黑暗的时候磨练自己，并始终期待着光明。",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"我不能让自己去伤害另一个生物，除非是必要的。"
+								],
+								[
+									"2",
+									"当我看到一个处于困境的生物时，我会自动跃跃欲试。"
+								],
+								[
+									"3",
+									"我不断地对我所看到的奇怪事物进行记录。"
+								],
+								[
+									"4",
+									"我经常洗手以保持清洁。"
+								],
+								[
+									"5",
+									"我喜欢大声叙述我正在做的事情。"
+								],
+								[
+									"6",
+									"我总是忍不住去诊断我所看到的常见疾病。"
+								],
+								[
+									"7",
+									"我喜欢讲述那些我通过拯救生物的生命而感到自己是英雄的故事。"
+								],
+								[
+									"8",
+									"在压力下，我很平静，很冷静。"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"{@b Oath.} 我发过誓，要给所有生物尽可能长和健康的生命。(合法的)"
+								],
+								[
+									"2",
+									"{@b Healer.} 没有生物应该遭受我可以预防的疾病。(好)"
+								],
+								[
+									"3",
+									"{@b Knowledge.}我们总是可以从别人那里学到东西，我们应该把我们知道的东西教给别人。(中立)"
+								],
+								[
+									"4",
+									"{@b Greed.}我医治心爱的同伴，所以人们愿意为我的服务支付任何费用。(邪恶)"
+								],
+								[
+									"5",
+									"{@b Turmoil.}我尽我所能，但生死大权并不在我手中。(混沌)"
+								],
+								[
+									"6",
+									"{@b Medic.} 任何生物都不应该生活在可以预防的痛苦中。(任何)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"我心爱的宠物被一种我现在知道如何预防的疾病所杀害；我必须让其他人不再像我一样遭受痛苦。"
+								],
+								[
+									"2",
+									"我家乡的生物遭受了瘟疫的侵袭，我必须找到解药。"
+								],
+								[
+									"3",
+									"我正在收集尽可能多的知识，以便我能够教育其他人。"
+								],
+								[
+									"4",
+									"我必须躲避一个强大的统治者的愤怒，他把一个动物伙伴的死亡归咎于我。"
+								],
+								[
+									"5",
+									"我已经有一段时间没有回家了，总是发现自己被召唤到新的地方寻求援助。"
+								],
+								[
+									"6",
+									"我把自己的服务宣传为动物治疗师，但实际上我为地下犯罪分子工作，为他们治疗难以解释的伤害。"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"我允许一个生物因与它的主人有私人恩怨而死亡。"
+								],
+								[
+									"2",
+									"我是无意中落入这个行业的，其实我并不喜欢动物。"
+								],
+								[
+									"3",
+									"我愿意让一个生物受苦，如果我可以从它身上学到一些东西。"
+								],
+								[
+									"4",
+									"看到血让我感到晕眩。"
+								],
+								[
+									"5",
+									"我被每一个我无法拯救的生物的记忆所困扰。"
+								],
+								[
+									"6",
+									"我倾向于催促我的工作，如果我更细致，就不会犯错。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"toolProficiencies": [
+				{
+					"herbalism kit": true
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Magic Ink (1-ounce bottle)",
+			"value": 50,
+			"rarity": "none",
+			"type": "G",
+			"source": "McToomin27:Animus",
+			"page": 3,
+			"entries": [
+				"当你用这种墨水完成一幅画，并在DC13{@skill Arcana}的检查中成功，你可以选择让这幅画活过来。该图画将做出你决定的动作和行动。如果画的是一个生物，你可以选择让这个生物做出对它来说很自然的动作。这幅画不能离开它的页面，也不会对任何外部影响做出反应。",
+				"你可以用工具的熟练程度（如{@item calligrapher's supplies|phb}或{@item painter's supplies|phb}）来代替{@skill Arcana}的检查要求，使绘图变得生动。"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Ki",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 1,
+			"entries": [
+				"你对所有生物的生命力--基--的专注研究使你能够利用这种神秘的能量将你的形状改变成那些凶猛的野兽。",
+				{
+					"type": "entries",
+					"name": "Ki Points",
+					"entries": [
+						"你对 \"气 \"的使用由 \"气点 \"来表示。你的灵力等级决定了你拥有的点数，如灵力表的 \"气点数 \"一栏中所示。",
+						"你可以消耗这些气力点来将你的身体转化为你所研究的野兽的身体（见下文的变形）。当你消耗了一个气力点，它就不能再使用了，直到你完成一个短期或长期的休息，在休息结束时，你会把所有消耗的气力重新回到自己体内。你必须花至少30分钟的休息时间来冥想以恢复你的气力点。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Field Journal",
+					"entries": [
+						"一级时，你有一本野外日志，其中包含了你所选择的六只挑战等级为（%0%）或更低的野兽的信息。你的日志是你拥有的生物的资料库（%1%）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing Forms",
+					"entries": [
+						"你准备好可供你变形的野兽名单。为此，从你的野外日志中选择一些你已经发现的野兽，其数量等于你的智力修正值+你的灵性等级（至少一种生物）。这些野兽的挑战等级必须不高于你可以变形的生物的最大CR，如Animus表的最大CR栏所示。",
+						"你也会受到动物变形表上的限制。例如，在1级时，你可以变形为任何挑战等级为1/4或更低的、没有飞行或游泳速度的野兽。",
+						{
+							"type": "table",
+							"caption": "Animal Morphs",
+							"colLabels": [
+								"Level",
+								"Limitations",
+								"Example"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-5",
+								"col-3"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@filter No flying or swimming speed|bestiary|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+									"{@creature Wolf}"
+								],
+								[
+									"4th",
+									"{@filter No flying speed|bestiary|type=beast|speed type=!fly|miscellaneous=!swarm}",
+									"{@creature Giant Octopus}"
+								],
+								[
+									"8th",
+									"{@filter -|bestiary|type=beast|miscellaneous=!swarm}",
+									"{@creature Giant Eagle}"
+								]
+							]
+						},
+						"你可以在完成长时间的休息后改变你准备的形态列表。准备一个新的形态列表需要花时间研究你的日记：对于你列表上的每个生物，每个挑战等级至少需要1分钟（每个生物至少需要1分钟）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Morphing",
+					"entries": [
+						"你可以使用一个额外的动作来消耗与准备好的野兽的挑战等级相等的基点（至少1个基点），以承担该生物的形状。你可以在一个野兽的形状中停留数小时，等于你的灵力等级的一半，四舍五入（至少一小时）。然后你会恢复到你的正常形态，除非你消耗额外的奇异点。你可以通过在你的回合中使用一个额外的动作提前恢复到你的正常形态。如果你倒下（%0%），生命值下降到0，或者死亡，你会自动恢复。",
+						"当你变形为一个生物时，以下规则适用。",
+						{
+							"type": "list",
+							"items": [
+								"你的游戏数据被野兽的数据所取代，但你保留了你的排列组合、个性、命中率和命中率，以及智力、智慧和魅力的分数。你也保留了你所有的技能和蓄力的熟练度，同时也获得了野兽的熟练度。如果野兽与你有相同的熟练度，并且它的属性块中的奖励比你的高，则使用野兽的奖励而不是你的。",
+								"当你变身为挑战等级1/8或更高的生物时，你会获得相当于该野兽挑战等级5倍（至少5倍）+你智力修正值的临时打击点数。",
+								"你不能施展法术，你采取任何需要手的行动的能力都被限制在你的野兽形态的能力范围内。如果你在变形时已经在集中注意力，则变形不会破坏你的注意力。",
+								"你保留了你的阶级、种族或其他来源的任何特征的好处，如果新的形态在身体上有能力这样做，你就可以使用它们。然而，你不能使用你的任何特殊感官，比如暗视，除非你的新形态也有这种感官。",
+								"你可以选择你的装备是在你的空间里掉到地上，还是与你的新形态融合，或者被它穿在身上。穿着的装备功能如常，但GM会根据生物的形状和大小来决定新形态穿戴一件装备是否实用。你的装备不会为了配合新形态而改变大小或形状，任何新形态不能穿戴的装备必须要么掉到地上，要么与它合并。与形态融合的装备在你离开形态之前没有任何效果。",
+								"如果该兽有任何巢穴或传奇行动，你就不能使用它们。你不会获得任何语言或装备。",
+								"在你的野性形状转化期间，你可以继续用你的正常声音大声说话。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ki Ability",
+					"entries": [
+						"智力是你的气质特征的能力。你的气的力量是由你对赋予所有生物生命的神秘力量的研究决定的。当你变身为一个生物时，你在为该生物的任何特征或行动设定蓄力DC时使用你的智力修改器。此外，当你作为一个野兽进行攻击时，你会使用你的智力修改器。",
+						"此外，你作为Animus学习的任何法术都被认为是你的ki特征，所以只要法术提到你的法术能力，你就会使用你的ki能力。",
+						{
+							"type": "abilityDc",
+							"name": "Ki",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Ki",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Learning Beasts of Higher CR",
+					"entries": [
+						"每当你获得一个Animus等级时，你可以在你的野外日志中增加两个你选择的野兽作为（%0%）。这些生物中的每一个都必须具有你可以变形的挑战等级，如Animus表的Max CR一栏中所示。在你的冒险中，你可能会发现更多的生物，你可以添加到你的野外日志中（见{@b Your Field Journal}侧栏）。"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Your Field Journal",
+					"entries": [
+						"随着你等级的提高，你研究并加入你的野外日志的生物反映了你自己进行的研究，以及你对生命能量的智力突破。你可以花时间研究野外的生物，将其添加到你的日志中，也可以复制别人写的和画的你从未见过的野兽的描述。",
+						"有两种类型的记录可以进入你的野外日志。{@i sketches}和{@i discoveries}。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"name": "Sketches",
+									"type": "entries",
+									"entries": [
+										"这些是当你看到一个生物时，你可以记下的快速图片和笔记。你可以为任何生物画素描，而不仅仅是那些你可以变形的生物。要为一个生物画草图，你必须在过去24小时内看到它是活的还是死的，但没有腐烂（取决于你的GM的判断），至少1分钟。对一个生物进行素描需要1小时，可以在短期或长期休息时进行。",
+										"仅仅拥有一个生物的草图还不足以让你变身为它。草图是用来记住你遇到的生物，但你还没有准备好变形为它。"
+									]
+								},
+								{
+									"name": "Discoveries",
+									"type": "entries",
+									"entries": [
+										"当你准备尝试变形为一种生物时，你必须花时间在你的日记中用特殊的（%0%）画出它的形状。只有在该生物是你目前可以野性变形的情况下，你才可以尝试将你的草图变成一个发现。",
+										"这个过程需要2个小时，生物的每一个挑战等级需要花费50戈比（至少需要2个小时和50戈比）。这笔费用代表羊皮纸和足够的魔法墨水，以使生物的形象栩栩如生。一旦你花费了这些时间和金钱，你就可以准备好生物的形态进行变形了。",
+										"一旦一个生物被记录为你日记中的发现，它的形象就会在书页上移动，模仿该生物在生活中的正常行为。",
+										"你也可以使用其他生物创造的草图或发现（例如可能在另一个探险家的野外日志中发现的草图或旧书中的草图）来将生物转录到你的日志中，只要该生物有足够的描述和草图（取决于你的GM的判断）。"
+									]
+								},
+								{
+									"name": "Replacing the Journal",
+									"type": "entries",
+									"entries": [
+										"你可以使用上述过程将发现的生物的形态从你自己的日记中复制到另一本书中。你仍然必须花时间和金钱将该生物的形态转录到新书中，以确保该生物的微小细节得到保留。",
+										"如果你丢失了你的野外日志，你可以用同样的程序将你目前准备的生物转录到一个新的日志中。填写你的野外日志的剩余部分需要你像平常一样研究新的生物。"
+									]
+								},
+								{
+									"name": "The Journal's Appearance",
+									"type": "entries",
+									"entries": [
+										"你的野外日志是一个独特的图画、笔记和动态图像的汇编。它可能是你在一个被遗忘的图书馆里发现并补充的一本装订精美的生物书，或者甚至只是一张松散的羊皮纸的集合，勉强用磨损的捆绑带固定在一起。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Multiclassing: Ki",
+					"entries": [
+						"如果你已经有了Ki功能，并在一个同样授予该功能的阶级中获得了一个等级，你会将你从两个阶级中获得的所有Ki点数加到同一个池中。这些气力点不被单独追踪，因此你可以将任何气力点用于你从任何一个等级获得的气力特征。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Savage Attack",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 1,
+			"entries": [
+				"一级时，你有能力模仿野兽的攻击，即使你没有蜕变成那种生物。你的身体会瞬间转变以进行这种攻击，比如长出大爪子、长獠牙，甚至是角或尾巴等新的身体部位。当你完成长时间的休息并准备好变形的形态时，你可以从你准备好的形态中选择一次近战攻击。",
+				"当你采取{@action Attack}行动时，你可以用野蛮人的攻击来代替你的任何攻击。你进行这种攻击时，就像你变成了你选择的生物。你可以在变身为另一种生物的时候进行野蛮攻击。",
+				"你可以选择野蛮人攻击的生物的最大挑战等级在你达到5级时增加到CR 1，在你达到11级时增加到CR 2，在你达到17级时增加到CR 3。"
+			]
+		},
+		{
+			"name": "Bestial Edges",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 2,
+			"entries": [
+				"在你对生命的研究中，你已经发现了在任何时候都能引导动物的能力。",
+				"2级时，你获得两个你选择的兽性边缘。可用的选项列表可以在{@filter Optional Features|optionalfeatures|source=null|feature type=Anim:BE}页面找到。如果一个边缘需要目标进行蓄力，蓄力DC等于你的奇数蓄力DC。",
+				"当你获得特定的灵力等级时，你会获得你所选择的额外边缘，如灵力表中已知的边缘一栏所示。此外，当你在这个等级中获得一个级别时，你可以选择一个你所知道的边缘，并用另一个你在该等级中可以学习的边缘来代替它。"
+			]
+		},
+		{
+			"name": "Research Focus",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"在3级时，你开始将你的研究重点放在特定类型的生物上。从可用的焦点列表中选择。你的选择在3级时赋予你特性，在7级、10级和14级时再次赋予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 4,
+			"entries": [
+				"当你达到4级、8级、10级、12级、16级和19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Benign Form",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 5,
+			"entries": [
+				"从5级开始，你获得了轻松变形为小型和不显眼的生物的能力。你可以花10分钟时间进行冥想，不采取任何行动，也不消耗任何运动。在这段时间结束时，你会变身为你所选择的一个挑战等级为0的生物，而这个生物是你所准备的。这个能力的作用与变形相同，只是你不需要消耗任何气力点。",
+				"15级时，任何你指定的、在你冥想时保持在你10英尺范围内的自愿的人形生物也会被变形为你选择的生物。以这种方式变形的生物可以自己选择它的装备会发生什么，而且它可以选择结束对自己的影响作为一个额外的行动。"
+			]
+		},
+		{
+			"name": "Savage Attack (CR 1)",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 5,
+			"entries": [
+				"当你达到5级时，你可以选择野蛮人攻击的生物的最大挑战等级增加到CR 1。"
+			]
+		},
+		{
+			"name": "Primal Strikes",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 6,
+			"entries": [
+				"从6级开始，你在变形时的武器攻击以及你的野蛮人攻击都算作魔法攻击，以克服对非魔法攻击和伤害的抵抗和免疫。"
+			]
+		},
+		{
+			"name": "Research Focus Feature",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 7,
+			"entries": [
+				"在第7层，你从你的研究重点中获得一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Wild Speech",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 9,
+			"entries": [
+				"从9级开始，你可以用一个动作来施展（%0%）的法术，而不需要消耗气力点。当你以这种方式施法时，你只获得理解并与你目前准备好的变形的生物进行口头交流的能力。"
+			]
+		},
+		{
+			"name": "Research Focus Feature",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 10,
+			"entries": [
+				"在10级时，你从你的研究重点中获得一个特性。"
+			]
+		},
+		{
+			"name": "Savage Attack (CR 2)",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 11,
+			"entries": [
+				"当你达到11级时，你可以选择野蛮攻击的生物的最大挑战等级增加到CR 2。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ten Thousand Faces",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 13,
+			"entries": [
+				"从13级开始，你可以将特定的人形生物添加到你的日记中，就像你添加其他生物一样。当你准备并变形为这些生物之一时，你会变成该生物的物理复制品。"
+			]
+		},
+		{
+			"name": "Research Focus Feature",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 14,
+			"entries": [
+				"在14级时，你从你的研究重点中获得一个特性。"
+			]
+		},
+		{
+			"name": "Benign Form Improvement",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 15,
+			"entries": [
+				"15级时，任何你指定的、在你冥想时保持在你10英尺范围内的自愿的人形生物也会被变形为你选择的生物。以这种方式变形的生物可以自己选择它的装备会发生什么，而且它可以选择结束对自己的影响作为一个额外的行动。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Savage Attack (CR 3)",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 17,
+			"entries": [
+				"当你达到17级时，你可以选择野蛮人攻击的生物的最大挑战等级增加到CR 3。"
+			]
+		},
+		{
+			"name": "Quick Study",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 18,
+			"entries": [
+				"从18级开始，你可以用1分钟的时间来研究你的野外日志，以改变你目前准备好的任何或所有生物的变形。一旦你使用这个功能，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Signature Form",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"level": 20,
+			"entries": [
+				"当你达到20级时，你获得了对两种形态的掌握，并且可以不费吹灰之力就能变形为它们。选择两种你发现的挑战等级为4级或更低的生物作为你的招牌形态。你总是准备好这些形态，而且它们不计入你所准备的形态数量。你可以在不消耗基点的情况下，分别幻化成这些生物一次。当你以这种方式变身为一种特征形态时，你不能再这样做，直到你完成一个短期或长期休息。",
+				"通过花8个小时的学习，你可以把你选择的一个或两个签名形式换成不同的形式。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Botany",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Botany",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"植物学家不仅研究那些生长在世界表面的活体植物，而且还研究那些具有活动形态的植物。那些能够独立思考和行动的植物。植物学家有时觉得在叶子、树木和树叶中比在人中更自在。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Phytological Expertise|Animus|McToomin27:Animus|Botany|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Plant Morph|Animus|McToomin27:Animus|Botany|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Phytological Expertise",
+			"entries": [
+				"从3级开始，当你选择这个研究重点时，你获得了与植物生物的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在检查中加入你的熟练度加成。如果你精通，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你还可以准备和野化成植物生物，就像它们是野兽一样。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Botany",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Plant Morph",
+			"entries": [
+				"同样在3级时，当你狂野塑形为一只野兽时，你可以选择成为该野兽形状的植物生物。",
+				"在你的植物形态中，以下规则适用。",
+				{
+					"type": "list",
+					"items": [
+						"你的类型被改变为植物。",
+						"每回合一次，当你周围5英尺内的生物用近战攻击击中你时，攻击者会受到{@damage 1d4}穿刺伤害。",
+						"当你保持不动，你与普通植物没有区别。"
+					]
+				}
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Botany",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Take Root",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Botany",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，每当你变形为植物时，你可以使用一个动作将根系植入地面或将自己连根拔起。在扎根时，你会获得以下属性。",
+				{
+					"type": "list",
+					"items": [
+						"你的运动量减少到0，你对{@condition prone}的状况免疫，并且你在力量检查和力量救赎上有优势。",
+						"你可以用你的行动对你周围15英尺内的生物进行（%0%）或（%1%）的攻击。在你的每个回合中，你可以用这种方式将你的一个目标（2%）移动到你15英尺内的任何地方（不需要行动）。",
+						"你可以花1分钟时间从地上拉出养分，不采取任何行动。在这段时间结束时，你可以消耗命中率来恢复命中率，就像你完成了一次短暂的休息。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Soft Thistles",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Botany",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以花10分钟用植物编织一张舒适的床，以确保一个中型或小型生物的安宁休息。在接下来的24小时内，在这样的床上完成短期或长期休息的生物会从任何影响它的（%0%）、（%1%）、疾病或（%2%）中恢复过来，如果该生物消耗命中率来恢复命中率，它会额外恢复（%3%）命中率。"
+			]
+		},
+		{
+			"name": "Living with the Land",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Botany",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以施展{@spell plant growth}、{@spell speak with plants}和{@spell transport via plants}法术的任何组合，次数等于1+你的智力修正值（至少一个法术），而不需要消耗奇异点，并且在你完成长时间休息时恢复所有消耗的使用。你可以在你的植物形态下施展这些法术。"
+			]
+		},
+		{
+			"name": "Dracology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Dracology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"龙是现存的一些最可怕和最神奇的生物。它们不可思议的力量激发了一些最危险的研究，以努力了解这些强大的怪物。众所周知，龙比大多数动画研究对象更聪明，因此，龙学家必须学会与这些生物建立关系，即使在研究它们的时候。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Expertise|Animus|McToomin27:Animus|Dracology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Hallmarks|Animus|McToomin27:Animus|Dracology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Draconic Expertise",
+			"entries": [
+				"从3级开始，当你选择这个研究重点时，你会获得一种与龙的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在检查中加入你的熟练度加成。如果你精通的话，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你可以准备并变形为（%0%），就像他们是野兽一样。然而，作为高度神奇的生物，你需要更多的能量来变身为它们。你必须消耗一个额外的基点来变形为挑战等级（%1%）的龙，而消耗两个额外的基点来变形为CR（%2%）的龙。在你达到动物形态表的相应等级之前，你所采取的龙族形态没有飞行或游泳速度。",
+				"当你使用一个特质或采取一个每天只能使用有限次数的行动时（例如{@creature adult black dragon}的传奇抵抗特质），你每天只能使用该特质中所列的次数，即使你多次变形为该生物或你变形为具有相同特质的不同生物。",
+				"最后，你能说、能读、能写（%0%）。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Dracology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Draconic Hallmarks",
+			"entries": [
+				"同样在3级的时候，你开始具有龙的一些特征。你可以选择以下一种伤害类型：酸、冷、火、闪电或雷霆。你会获得对该类型伤害的抗性。当你完成短期或长期休息时，你可以改变伤害的类型。",
+				"此外，你可以施展（%0%）的法术，而不需要消耗气力点，也不需要提供物质成分。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Dracology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Legendary Reptile",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Dracology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你可以在战斗中的每个回合采取一个额外的行动。这个行动只能用于采取（%0%）或（%1%）的行动。"
+			]
+		},
+		{
+			"name": "Magical Sight",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Dracology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你有（%0%）到15英尺的范围。"
+			]
+		},
+		{
+			"name": "Awe-inspiring",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Dracology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以使用一个动作来变形为一条龙，其最大挑战等级等于你的灵力等级，持续10分钟。当你这样做时，你必须消耗与龙的挑战等级相等的基点。一旦你使用这个能力，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Ecology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Ecology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"动物学家通常把研究重点放在某些类型的生物上，学习它们如何在远离文明的野外生活。生态学家更进一步，在社会的边缘找到自己，长期远离其他民族，研究生物与环境之间的相互作用。这些生态学家研究野生生物和它们的环境之间的独特互动，这些互动很少，甚至从来没有被其他人看到。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hardy Explorer|Animus|McToomin27:Animus|Ecology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pet Partner|Animus|McToomin27:Animus|Ecology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Hardy Explorer",
+			"entries": [
+				"生活在社会的边缘，使你的身体比大多数人更耐用。在3级时，当你选择这个研究重点时，你对宪法规定的救赎有优势（%0%）。",
+				"此外，你还能获得对中型盔甲、盾牌和武术武器的熟练掌握。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Ecology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Pet Partner",
+			"entries": [
+				"同样在3级时，你可以施展（%0%）的法术，但只能作为一种仪式。当你施展这个法术时，你的熟悉者是一只野兽，而不是天人、精灵或魔物，除了法术的正常选择外，你可以从你准备的挑战等级为1/8或更低的形式中选择它的形式。你的熟人可以采取（1%）行动，但不能采取多重攻击行动。",
+				"此外，你可以接触你的熟人并使用一个额外的动作来消耗奇异点，将你的熟人的身体而不是你自己的身体变形为你所准备的野兽。变形对你的熟悉者的作用与对你的作用相同，只是你的熟悉者不是获得临时的命中率，而是承担野兽的命中率和命中值。当它恢复到它的正常形态时，它会回到它变身前的命中率。然而，如果它是由于命中率下降到0而恢复的，任何多余的伤害都会延续到它的正常形态。",
+				"当你在6级时获得原始打击的特性，该特性适用于你的熟人在变形时的攻击。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Ecology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Team Attack",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Ecology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，如果你采取{@action Attack}行动或多重攻击行动，并且你的熟人能看到你，你的熟人可以使用它的反应来进行近战攻击。"
+			]
+		},
+		{
+			"name": "Companion Growth",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Ecology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你的熟人获得两个你有资格采取的兽性边缘。当你在这个等级中获得一个等级时，你可以选择你熟悉的人的一个边缘，并用你在该等级中可以学习的另一个边缘代替它。"
+			]
+		},
+		{
+			"name": "Coordinated Save",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Ecology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，每当你的熟人在你的30英尺范围内进行救赎时，它就会获得相当于你智力修饰的救赎奖励（最低奖励为+1）。你必须有意识才能给予这个奖励。"
+			]
+		},
+		{
+			"name": "Entomology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Entomology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"昆虫学家是一种研究虫子和昆虫的动物。虽然其他人可能觉得这些生物令人毛骨悚然或很奇怪，但昆虫学家知道它们是和其他动物一样的动物，值得学习和研究。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vermin Expertise|Animus|McToomin27:Animus|Entomology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Skittering|Animus|McToomin27:Animus|Entomology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Vermin Expertise",
+			"entries": [
+				"从3级开始，当你选择这个研究重点时，你获得了对虫子、蛛形纲动物和昆虫类生物的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在检查中加入你的熟练度加成。如果你精通，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你可以变形为{@creature swarm of insects}，这种形态总是为你准备的，而且不计入你准备的形态数量。当你有任何因变形而剩余的临时命中率时，你的虫群形态会造成正常的伤害，如果你没有任何这些临时命中率剩余，则会降低伤害。",
+				{
+					"type": "inset",
+					"name": "Variant Insect Swarms",
+					"entries": [
+						"不同种类的昆虫可以聚集成群。你可以为你的虫群形态选择下面的任何一个选项，只要你没有被阻止这样做（例如，你必须达到8级才能变形为（%0%））。",
+						{
+							"type": "list",
+							"items": [
+								"{@creature Swarm of Beetles}",
+								"{@creature Swarm of Centipedes}",
+								"{@creature Swarm of Spiders}",
+								"{@creature Swarm of Wasps}"
+							]
+						}
+					]
+				}
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Entomology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Skittering",
+			"entries": [
+				"同样在第三级，你获得了在任何其他生物的空间中移动的能力，无论其大小。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Entomology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Swarm Form",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Entomology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级开始，你可以变形为比你的普通昆虫群形态更高的挑战等级的昆虫群，为更高的形态消耗基点，如常。",
+				"一个被授权的蜂群对其状态块有以下变化。",
+				{
+					"type": "table",
+					"caption": "Insect Swarm",
+					"colLabels": [
+						"CR",
+						"Size",
+						"AC",
+						"Speeds",
+						"Bonus to Hit†",
+						"Number of Bite Attacks‡"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							1,
+							"中型",
+							13,
+							"+5 ft.",
+							"+3",
+							1
+						],
+						[
+							2,
+							"中型",
+							13,
+							"+5 ft.",
+							"+3",
+							1
+						],
+						[
+							3,
+							"中型",
+							13,
+							"+5 ft.",
+							"+3",
+							1
+						],
+						[
+							4,
+							"大型",
+							14,
+							"+10 ft.",
+							"+4",
+							2
+						],
+						[
+							5,
+							"大型",
+							14,
+							"+10 ft.",
+							"+4",
+							2
+						],
+						[
+							6,
+							"大型",
+							14,
+							"+10 ft.",
+							"+4",
+							2
+						],
+						[
+							7,
+							"Huge",
+							15,
+							"+15 ft.",
+							"+5",
+							3
+						],
+						[
+							8,
+							"Huge",
+							15,
+							"+15 ft.",
+							"+5",
+							3
+						],
+						[
+							9,
+							"巨大的",
+							16,
+							"+20 ft.",
+							"+6",
+							4
+						]
+					],
+					"footnotes": [
+						"† This replaces the bonus to hit for the swarm's bite attack.",
+						"‡ Your additional bite attacks can be made against the same or different targets in the swarm's space."
+					]
+				}
+			]
+		},
+		{
+			"name": "Coccoon",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Entomology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以花10分钟编织一个茧，完全覆盖你的身体。当你在茧中时，你会被限制住，并且不知道你周围的情况，除非有生物采取行动引起你的注意或者你受到任何伤害。你可以用一半的动作从你的茧里出来。",
+				"在你的茧中，你只需4小时就能完成一次长时间的休息，而且你能恢复所有消耗的命中率。",
+				"如果你的命中率为0但很稳定，你会开始在你的身体上缓慢地散发丝绸，在10分钟内形成一个茧。在这个茧里呆上4个小时，你就能获得长时间休息的好处。"
+			]
+		},
+		{
+			"name": "Hive-Mind",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Entomology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以使用一个动作并消耗一次 \"野性形状\"，在你周围10英尺的范围内召唤一团嗡嗡作响的愤怒昆虫，持续1分钟。在昆虫离开之前，该区域为困难地形，当生物进入该区域或在该区域内移动时，每移动5英尺会受到{@damage 1d4}穿刺伤害。",
+				"如果你在这段时间处于虫群形态，你的虫群形态也会获得这些属性。"
+			]
+		},
+		{
+			"name": "Faeology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Faeology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"当大多数阿尼玛人研究他们所看到和理解的世界时，专注于未知领域的阿尼玛人寻求学习许多人认为是不可理解的东西：魔法。专注于这种类型研究的阿尼姆人学会利用他们的智力来理解魔法的本质，以及如何复制和理解它。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Expertise|Animus|McToomin27:Animus|Faeology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Call of the Wild|Animus|McToomin27:Animus|Faeology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Arcane Expertise",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Faeology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，当你选择这个研究重点时，你获得了对费伊生物的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在检查中加入你的熟练度奖励。如果你精通，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你可以变形为（%0%），这种形式总是为你准备的，而且不计入你所准备的形式数量。"
+			]
+		},
+		{
+			"name": "Call of the Wild",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Faeology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在3级时，你获得了施放法术的能力。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"你从{@filter druid spell list|spells|class=druid}中学习两个你选择的咒语。你在10级时可以额外学习一个你选择的德鲁伊咒语。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"你也学会了如何施展法术。每当你完成一次长时间的休息并准备变形的形态时，你可以选择准备比你最大数量的形态少的形态。对于你留下的每一个空位，你可以用德鲁伊法术列表中的一个法术来代替它。你所选择的任何法术的等级必须不高于你能施放的最大法术等级，如异种人法术表的最大法术等级一栏中所示。",
+						"为了施展你准备的法术，你必须消耗与法术等级相等的气力点。你的法术是 \"气 \"的能力，所以每当法术提到你的施法能力时，你就会使用 \"气 \"的能力。从第七级开始，你可以通过消耗额外的气力点来提高一个法术的等级。你每消耗一个额外的气力点，法术的等级就会增加1，最多到你的最大法术等级。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"如果一个法术有仪式标签，并且你已经准备好了该法术，你就可以将该法术作为一个仪式来施放。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Faeologist Spellcasting",
+					"colLabels": [
+						"Animus Level",
+						"Cantrips Known",
+						"Max Spell Level"
+					],
+					"colStyles": [
+						"col-4 text-center",
+						"col-4 text-center",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"3rd",
+							2,
+							"1st"
+						],
+						[
+							"4th",
+							2,
+							"1st"
+						],
+						[
+							"5th",
+							2,
+							"1st"
+						],
+						[
+							"6th",
+							2,
+							"1st"
+						],
+						[
+							"7th",
+							2,
+							"2nd"
+						],
+						[
+							"8th",
+							2,
+							"2nd"
+						],
+						[
+							"9th",
+							3,
+							"2nd"
+						],
+						[
+							"10th",
+							3,
+							"2nd"
+						],
+						[
+							"11th",
+							3,
+							"2nd"
+						],
+						[
+							"12th",
+							3,
+							"3rd"
+						],
+						[
+							"13th",
+							3,
+							"3rd"
+						],
+						[
+							"14th",
+							3,
+							"3rd"
+						],
+						[
+							"15th",
+							3,
+							"3rd"
+						],
+						[
+							"16th",
+							3,
+							"3rd"
+						],
+						[
+							"17th",
+							3,
+							"3rd"
+						],
+						[
+							"18th",
+							3,
+							"3rd"
+						],
+						[
+							"19th",
+							3,
+							"4th"
+						],
+						[
+							"20th",
+							3,
+							"4th"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mystic Bond",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Faeology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，每当你完成一次长时间的休息并准备好形态和法术时，你可以额外准备两个法术。这些法术不计入你所准备的形态数量。"
+			]
+		},
+		{
+			"name": "Seasonal Boon",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Faeology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以用一个行动来选择一个季节，使一个浆果在你周围15英尺内你选择的无人空间里发芽。作为行动吃了这种浆果的生物会获得所列的好处，这取决于你选择的浆果的季节。",
+				{
+					"type": "entries",
+					"name": "Spring",
+					"entries": [
+						"吃了这种浆果的生物在接下来的一小时内可以采取{@action Dash}的行动作为额外行动一次。这个动作不会激起机会攻击。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Summer",
+					"entries": [
+						"吃了这种浆果的生物可以在接下来的一小时内对一次成功的近战攻击增加{@damage 1d10}火力伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Autumn",
+					"entries": [
+						"吃了这种浆果的生物可以选择在接下来的一小时内做出的一次救赎动作中获得优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Winter",
+					"entries": [
+						"吃了这种浆果的生物可以在接下来的一小时内，在一次成功的近战攻击中，将目标的速度降低到0，持续1回合。"
+					]
+				},
+				"你可以使两个浆果发芽，每当你完成短时或长时的休息，就可以恢复任何已消耗的使用。"
+			]
+		},
+		{
+			"name": "Fae Resilience",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Faeology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，异种魔法的力量通过你越来越强。你在对自己的救赎上有优势，而且魔法不能使你陷入{@condition sleep|unconscious}。",
+				"此外，你不再需要睡觉。你仍然必须安静地打坐至少4个小时，以获得长时间休息的好处。"
+			]
+		},
+		{
+			"name": "Monstrology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Monstrology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"以怪兽为研究重点的阿尼玛人在他们的研究中超越了自然界，研究那些被归类为非自然恐怖的生物。虽然追求这种研究的阿尼姆可能会被视为最古怪的人，但他们的研究在调查那些许多人会说是应该被摧毁的魔法事故的生物方面是非常宝贵的。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Monster Expertise|Animus|McToomin27:Animus|Monstrology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sudden Mutation|Animus|McToomin27:Animus|Monstrology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Monster Expertise",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Monstrology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，当你选择这个研究重点时，你获得了对怪兽的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在检查中加入你的熟练度奖励。如果你精通，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你可以准备并变形为一些怪兽，就像它们是野兽一样（见Animus怪兽列表）。然而，作为高度神奇的生物，你需要更多的能量来变身为它们。你必须消耗一个额外的基点来变形为挑战等级为4或更低的怪兽，而消耗两个额外的基点来变形为CR5或更高的怪兽。在你达到动物形态表的相应等级之前，你所采取的怪兽形态没有飞行或游泳的速度。",
+				"当你使用一个特质或采取一个每天只能使用有限次数的行动时（例如{@creature darkmantle}的黑暗光环特质），你只能使用该特质中列出的次数，即使你多次变形为该生物或你变形为具有相同特质的不同生物。",
+				{
+					"type": "table",
+					"caption": "Animus Monstrosity List",
+					"colLabels": [
+						"Challenge Rating",
+						"Creatures"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1/2",
+							"{@creature Darkmantle}, {@creature Rust monster}, {@creature Worg}"
+						],
+						[
+							"1",
+							"{@creature Hyppogriff}"
+						],
+						[
+							"2",
+							"{@creature Ankheg}, {@creature Ettercap}, {@creature Grick}, {@creature Griffon}, {@creature Mimic}"
+						],
+						[
+							"3",
+							"{@creature Manticore}, {@creature Owlbear}, {@creature Phase spider}, {@creature Winter wolf}"
+						],
+						[
+							"5",
+							"{@creature Bullete}, {@creature Ropper}"
+						],
+						[
+							"6",
+							"{@creature Chimera}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Sudden Mutation",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Monstrology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在第三级，每当你完成一次长时休息，你可以选择你的一个兽性边缘，并用另一个边缘代替它。"
+			]
+		},
+		{
+			"name": "Changing Bodies",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Monstrology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你获得了与其他生物分享你的一些兽性优势的能力。你可以花10分钟时间集中注意力，不采取任何行动，也不消耗任何运动。在这段时间结束时，你可以在你和你的兽性之刃之一的10英尺范围内选择两个愿意的生物。这些生物会获得该兽性边缘的好处，直到你完成下一次长时休息。一旦你以这种方式分享了一个兽性边缘，你就不能再这样做了，直到你完成一次长休。"
+			]
+		},
+		{
+			"name": "Shifting Form",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Monstrology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以在行动中消耗2个基点来施展（%0%）的法术。你可以在变形的时候施展这个法术。"
+			]
+		},
+		{
+			"name": "Balefull Morph",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Monstrology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以尝试将一个生物的思想困在一个新的身体里。作为一个行动，你可以接触一个生物，并消耗4点气力对该生物施放（%0%）的咒语。目标只能被转化为你准备好的变形的野兽。"
+			]
+		},
+		{
+			"name": "Oceanography",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oceanography",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"海洋学家在世界最荒凉的地方--海洋深处进行研究。海洋生物包括许多不同的动物，而海洋学家们为了研究这些生物，要到一些最难到达的地方去。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Aquatic Expertise|Animus|McToomin27:Animus|Oceanography|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sea Legs|Animus|McToomin27:Animus|Oceanography|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Aquatic Expertise",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oceanography",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，当你选择这个研究重点时，你会获得一种对具有天生游泳速度的生物的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在检查中加入你的熟练度加成。如果你精通的话，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你可以忽略动物形态表的游泳速度限制。",
+				"最后，你获得对（%0%）和车辆（水）的熟练度。"
+			]
+		},
+		{
+			"name": "Sea Legs",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oceanography",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在3级时，你获得了{@optfeature Darkvision|McToomin27:Animus}和{@optfeature Waterborne|McToomin27:Animus}的兽性边缘（无视先决条件），这不计入你的正常兽性边缘数量。当你在这个等级中获得一个等级时，你不能取代这些边缘中的任何一个。"
+			]
+		},
+		{
+			"name": "Aqueous Adaptations",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oceanography",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你的身体进一步改变，使你能够访问海洋的最深处。你对在深水中的压力造成的伤害免疫。",
+				"此外，你有（%0%）到5英尺的范围。在水下时，这个（%1%）的范围增加到30英尺。",
+				"最后，你可以消耗1个基点作为行动来施展（%0%）的法术。你可以在变形的时候施展这个法术。"
+			]
+		},
+		{
+			"name": "Call of the Sea",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oceanography",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以施展（%0%）和（%1%）的法术，但只能作为仪式。"
+			]
+		},
+		{
+			"name": "Sea Monster",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oceanography",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以消耗10点气力，变成一个（%0%）或一个（%1%），持续10分钟。一旦你使用这个功能，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Oozology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oozology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"一些研究人员试图了解最奇怪的生命形式：渗水物。在万物有灵论者中存在着严重的争论，他们认为，从传统意义上讲，渗出物是否真正具有生命力，或者说，它们只是一种神奇的有生命力的粘液，为了一个神秘的目的而工作。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Slime Expertise|Animus|McToomin27:Animus|Oozology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ooze Morph|Animus|McToomin27:Animus|Oozology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Slime Expertise",
+			"entries": [
+				"从3级开始，当你选择这个焦点时，你获得了与ozes的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在该检查中加入你的熟练度加成。如果你精通，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你还可以准备和野性塑造成渗出物，就像它们是野兽一样。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oozology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Ooze Morph",
+			"entries": [
+				"同样在3级时，当你狂野变形为一只野兽时，你可以选择变成该野兽形状的渗水体。当你处于敖兹形态时，以下规则适用。",
+				{
+					"type": "list",
+					"items": [
+						"该生物的类型被改变为渗水。",
+						"你可以在一个窄至1英寸宽的空间内移动而不受挤压。",
+						"你对酸液伤害免疫，并对{@condition grappled}的条件有免疫力。"
+					]
+				}
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oozology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Duplicate",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oozology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，在战斗中从你身上掉下来的渗水碎片会获得自己的生命。当你被变形为渗水体并受到伤害时，你可以用你的反应从自己身上分裂出一个（%0%）。",
+				"一头乌贼在你的倡议下轮到自己，并服从你的命令。你可以指示一个ozeling在你的60英尺范围内移动（不需要你的行动），并且你可以使用一个额外的行动来指示一个ozeling采取{@action Attack}、{@action Dash}、{@action Disengage}、{@action Dodge}或{@action Help}的行动。如果你不给它一个命令，那么ozeling就什么也不做。如果一个卵球离你超过60英尺，它将试图通过任何必要的方式返回该区域。如果你把它当作一个行动，它的命中率下降到0，或者当你的野性形状结束时，一个ozeling会消失。"
+			]
+		},
+		{
+			"name": "Beware the Blob",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oozology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，每当你被改造成渗水体，你就会获得以下属性。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Engulf",
+							"entries": [
+								"作为一个动作，你可以移动5英尺到一个与你体型相同或更小的生物的空间。每当你进入一个生物的空间时，该生物必须做一个灵巧的蓄力动作。",
+								"在救赎成功时，该生物可以选择被推到你的后方5英尺或一侧。选择不被推的生物将承受拯救失败的后果。在救赎失败的情况下，你会进入该生物的空间，该生物会受到10（（%0%））的酸液伤害并被（%1%）。这个{@i engulfed}生物不能呼吸，是{@condition restrained}，并在你每个回合开始时受到21({@dice 6d6})酸液伤害。当你移动时，这个{@i engulfed}的生物会和你一起移动。",
+								"一个{@i engulfed}的生物可以通过一个行动来尝试逃跑，做一个力量检查（DC等于你的形态救赎DC）。一旦成功，该生物就会逃跑，并进入一个它所选择的、距离你5英尺以内的空间。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Ooze Cube",
+							"entries": [
+								"你身边的生物（%0%）可以被看到，但有完全的掩护。一个在你5英尺范围内的生物可以采取行动将一个生物或物体从你身上拉出来。这样做需要成功的力量检查（DC等于你的形态救赎DC），并且尝试的生物会受到10（（%1%））酸的伤害。你可以在你体内同时容纳一个与你体型相同的生物或四个比你小的生物。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Slime Horde",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Oozology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以用你的奖励动作向你控制的最多三个（%0%）的人发布命令。"
+			]
+		},
+		{
+			"name": "Primordiology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Primordiology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"一些阿訇试图了解在所有其他生物之前就存在的生物：元素。对于元素是否真的应该被纳入其他生物的分类中，人们有争议，因为它们的形式往往是陌生的，不同于任何其他存在的生物。然而，研究这些生物的阿尼玛人看到他们的原始形式是如何产生土地、海洋和天空的，并寻求模仿他们的力量。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Expertise|Animus|McToomin27:Animus|Primordiology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Form|Animus|McToomin27:Animus|Primordiology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Elemental Expertise",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Primordiology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，当你选择这个研究重点时，你获得了与元素的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在检查中加入你的熟练度加成。如果你精通的话，你对任何此类能力检查的熟练度加分都会翻倍。",
+				"此外，你可以准备并变形为（%0%），就像他们是野兽一样。然而，作为高魔力的生物，你需要更多的能量来变形为它们。你必须消耗一个额外的基点来变形为挑战等级为4或更低的元素，而消耗两个额外的基点来变形为CR5或更高的元素。在你达到动物形态表的相应等级之前，你所采取的元素形态没有飞行或游泳速度。"
+			]
+		},
+		{
+			"name": "Elemental Form",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Primordiology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"同样在3级时，当你变形为一个野兽时，你可以选择成为一个空气、地球、火或水元素（你选择），并成为该野兽的形状。当你处于元素形态时，以下规则适用。",
+				{
+					"type": "list",
+					"items": [
+						"你的类型被改变为元素。",
+						"你对{@condition prone}条件免疫。",
+						"你可以在一个窄至1英寸宽的空间内移动而不受挤压。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Protection",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Primordiology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，每当你变成一个元素，你就会获得一个由你的元素类型决定的额外能力。",
+				{
+					"type": "entries",
+					"name": "Air",
+					"entries": [
+						"当你受到你能看到的生物的远程武器攻击时，你可以用你的反应在攻击卷上施加不利条件。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Earth",
+					"entries": [
+						"你对物体和结构造成双倍伤害，当你站在土或石头上时，你的行走速度增加10英尺。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire",
+					"entries": [
+						"每回合一次，当你周围5英尺内的生物用近身攻击击中你时，攻击者会受到{@damage 1d4}的火焰伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Water",
+					"entries": [
+						"你可以用你的行动对你周围15英尺内的生物进行（%0%）或（%1%）的攻击。在你的每个回合中，你可以用这种方式将你的一个目标（2%）移动到你15英尺内的任何地方（不需要行动）。"
+					]
+				},
+				"如果你蜕变成一个元素，但它没有明确的类型（比如（%0%）），你会获得上述最适合你形态的能力（由你的GM决定）。"
+			]
+		},
+		{
+			"name": "Grove of the Ancients",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Primordiology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以施展（%0%）法术，但只能作为一种仪式。当你这样做时，你可以选择空气、土、火或水版本的任何法术效果。"
+			]
+		},
+		{
+			"name": "Primordial Ally",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Primordiology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，当你变形为一个元素时，你可以召唤梅菲特来帮助你。如果你的形态是挑战等级4或更低，你就召唤一个梅菲特，如果你的形态是CR5或更高，你就召唤两个梅菲特。你根据你的元素类型来选择出现的梅菲特。",
+				{
+					"type": "entries",
+					"name": "Air",
+					"entries": [
+						"{@creature Dust Mephit|MM|Dust}或{@creature Ice Mephit|MM|ice}mephits。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Earth",
+					"entries": [
+						"{@creature Dust Mephit|MM|Dust}或{@creature Magma Mephit|MM|magma}mephits。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire",
+					"entries": [
+						"{@creature Magma Mephit|MM|Magma}或{@creature Steam Mephit|MM|steam}mephits。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Water",
+					"entries": [
+						"{@creature Ice Mephit|MM|Ice}或{@creature Steam Mephit|MM|steam}mephits。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Zoology",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Zoology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"entries": [
+				"当其他动物学家研究幻想的和罕见的生物时，动物学家知道野兽的价值和它们许多不可思议的形式。动物学家开始了解大大小小的动物，甚至那些已经灭绝的生物。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Phytological Expertise|Animus|McToomin27:Animus|Zoology|McToomin27:Animus|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Animal Assistant|Animus|McToomin27:Animus|Zoology|McToomin27:Animus|3"
+				}
+			]
+		},
+		{
+			"name": "Phytological Expertise",
+			"entries": [
+				"从3级开始，当你选择这个焦点时，你获得了与ozes的亲和力。每当你进行与这些生物有关的智力能力检查时，如果你还不精通，你就在该检查中加入你的熟练度加成。如果你精通，你对任何此类能力检查的熟练度加分都会翻倍。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Zoology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Animal Assistant",
+			"entries": [
+				"同样在3级时，你可以施展（%0%）的法术，但只能作为一种仪式（智力是你对这个法术的施法能力）。你的熟悉者可以变成你所准备的任何生物的形态，而这些生物的CR为1或更低。与普通的熟悉者不同，你的熟悉者可以在其回合中进行攻击。"
+			],
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Zoology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Natural Talent",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Zoology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你获得两个额外的兽性边缘，由你选择。"
+			]
+		},
+		{
+			"name": "Blessings of the Wild",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Zoology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你的动物适应性开始生根。你只需要像你这样体型的生物所需要的正常数量的一半的食物和水。",
+				"此外，你在任何体质检查或蓄力投掷中都有优势，可以在恶劣的自然环境中生存或移动，如极寒、极热、大风、强降水、高海拔，以及其他类似的环境。"
+			]
+		},
+		{
+			"name": "King of Beasts",
+			"source": "McToomin27:Animus",
+			"className": "Animus",
+			"classSource": "McToomin27:Animus",
+			"subclassShortName": "Zoology",
+			"subclassSource": "McToomin27:Animus",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，当你使用 \"野性之形 \"时，你可以选择超过你可以变形的生物的最大CR，以达到你释放愤怒的目的。当你这样做时，你的最大CR被认为等同于你对该变形体的灵性等级。一旦你使用这个能力，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Botany",
+			"shortName": "Botany",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Botany|Animus|McToomin27:Animus|Botany|McToomin27:Animus|3",
+				"Take Root|Animus|McToomin27:Animus|Botany|McToomin27:Animus|7",
+				"Soft Thistles|Animus|McToomin27:Animus|Botany|McToomin27:Animus|10",
+				"Living with the Land|Animus|McToomin27:Animus|Botany|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Dracology",
+			"shortName": "Dracology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Dracology|Animus|McToomin27:Animus|Dracology|McToomin27:Animus|3",
+				"Legendary Reptile|Animus|McToomin27:Animus|Dracology|McToomin27:Animus|7",
+				"Magical Sight|Animus|McToomin27:Animus|Dracology|McToomin27:Animus|10",
+				"Awe-inspiring|Animus|McToomin27:Animus|Dracology|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Ecology",
+			"shortName": "Ecology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Ecology|Animus|McToomin27:Animus|Ecology|McToomin27:Animus|3",
+				"Team Attack|Animus|McToomin27:Animus|Ecology|McToomin27:Animus|7",
+				"Companion Growth|Animus|McToomin27:Animus|Ecology|McToomin27:Animus|10",
+				"Coordinated Save|Animus|McToomin27:Animus|Ecology|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Entomology",
+			"shortName": "Entomology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Entomology|Animus|McToomin27:Animus|Entomology|McToomin27:Animus|3",
+				"Swarm Form|Animus|McToomin27:Animus|Entomology|McToomin27:Animus|7",
+				"Coccoon|Animus|McToomin27:Animus|Entomology|McToomin27:Animus|10",
+				"Hive-Mind|Animus|McToomin27:Animus|Entomology|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Faeology",
+			"shortName": "Faeology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Faeology|Animus|McToomin27:Animus|Faeology|McToomin27:Animus|3",
+				"Mystic Bond|Animus|McToomin27:Animus|Faeology|McToomin27:Animus|7",
+				"Seasonal Boon|Animus|McToomin27:Animus|Faeology|McToomin27:Animus|10",
+				"Fae Resilience|Animus|McToomin27:Animus|Faeology|McToomin27:Animus|14"
+			],
+			"spellcastingAbility": "int",
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Faeology",
+							"source": "McToomin27:Animus"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Druid}",
+						"Max Spell Level"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							"1st"
+						],
+						[
+							2,
+							"1st"
+						],
+						[
+							2,
+							"1st"
+						],
+						[
+							2,
+							"1st"
+						],
+						[
+							2,
+							"2nd"
+						],
+						[
+							2,
+							"2nd"
+						],
+						[
+							2,
+							"2nd"
+						],
+						[
+							3,
+							"2nd"
+						],
+						[
+							3,
+							"2nd"
+						],
+						[
+							3,
+							"2nd"
+						],
+						[
+							3,
+							"3rd"
+						],
+						[
+							3,
+							"3rd"
+						],
+						[
+							3,
+							"3rd"
+						],
+						[
+							3,
+							"3rd"
+						],
+						[
+							3,
+							"3rd"
+						],
+						[
+							3,
+							"3rd"
+						],
+						[
+							3,
+							"4th"
+						],
+						[
+							3,
+							"4th"
+						]
+					]
+				}
+			],
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Monstrology",
+			"shortName": "Monstrology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Monstrology|Animus|McToomin27:Animus|Monstrology|McToomin27:Animus|3",
+				"Changing Bodies|Animus|McToomin27:Animus|Monstrology|McToomin27:Animus|7",
+				"Shifting Form|Animus|McToomin27:Animus|Monstrology|McToomin27:Animus|10",
+				"Balefull Morph|Animus|McToomin27:Animus|Monstrology|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Oceanography",
+			"shortName": "Oceanography",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Oceanography|Animus|McToomin27:Animus|Oceanography|McToomin27:Animus|3",
+				"Aqueous Adaptations|Animus|McToomin27:Animus|Oceanography|McToomin27:Animus|7",
+				"Call of the Sea|Animus|McToomin27:Animus|Oceanography|McToomin27:Animus|10",
+				"Sea Monster|Animus|McToomin27:Animus|Oceanography|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Oozology",
+			"shortName": "Oozology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Oozology|Animus|McToomin27:Animus|Oozology|McToomin27:Animus|3",
+				"Duplicate|Animus|McToomin27:Animus|Oozology|McToomin27:Animus|7",
+				"Beware the Blob|Animus|McToomin27:Animus|Oozology|McToomin27:Animus|10",
+				"Slime Horde|Animus|McToomin27:Animus|Oozology|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Primordiology",
+			"shortName": "Primordiology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Primordiology|Animus|McToomin27:Animus|Primordiology|McToomin27:Animus|3",
+				"Primal Protection|Animus|McToomin27:Animus|Primordiology|McToomin27:Animus|7",
+				"Grove of the Ancients|Animus|McToomin27:Animus|Primordiology|McToomin27:Animus|10",
+				"Primordial Ally|Animus|McToomin27:Animus|Primordiology|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		},
+		{
+			"name": "Zoology",
+			"shortName": "Zoology",
+			"source": "McToomin27:Animus",
+			"subclassFeatures": [
+				"Zoology|Animus|McToomin27:Animus|Zoology|McToomin27:Animus|3",
+				"Natural Talent|Animus|McToomin27:Animus|Zoology|McToomin27:Animus|7",
+				"Blessings of the Wild|Animus|McToomin27:Animus|Zoology|McToomin27:Animus|10",
+				"King of Beasts|Animus|McToomin27:Animus|Zoology|McToomin27:Animus|14"
+			],
+			"className": "Animus",
+			"classSource": "McToomin27:Animus"
+		}
+	]
+}

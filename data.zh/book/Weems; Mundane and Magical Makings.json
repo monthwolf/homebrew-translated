@@ -1,0 +1,422 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "QuestionableArcana",
+				"abbreviation": "QAMMM",
+				"full": "Mundane and Magical Makings: An Alternative Crafting System for 5th Edition",
+				"authors": [
+					"Weems"
+				],
+				"convertedBy": [
+					"Zuishin"
+				],
+				"version": "1.0",
+				"url": "https://growupandgame.com/dungeons-and-dragons/questionable-arcana/dnd-5e-alternative-crafting-system-item-crafting-rules/",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1594892486,
+		"dateLastModified": 1666128523,
+		"_dateLastModifiedHash": "1be8f5ec27"
+	},
+	"book": [
+		{
+			"name": "Mundane and Magical Makings",
+			"id": "QAMMM",
+			"source": "QuestionableArcana",
+			"published": "2017-05-30",
+			"group": "homebrew",
+			"contents": [
+				{
+					"name": "Questionable Arcana Crafting System",
+					"headers": [
+						"Now, Now, Let's Keep Things Positive",
+						"One Last Thing",
+						"System Overview"
+					]
+				},
+				{
+					"name": "Crafting Requirements",
+					"headers": [
+						"Requirement 1: The Lead Artisan",
+						"Requirement 2: Crafting Materials",
+						"Requirement 3: Means of Production",
+						"Requirement 4: Instructions",
+						"Requirement 5: Labor"
+					]
+				},
+				{
+					"name": "Conclusion"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "QAMMM",
+			"source": "QuestionableArcana",
+			"data": [
+				{
+					"type": "section",
+					"name": "Questionable Arcana Crafting System",
+					"entries": [
+						"{@b IMPORTANT NOTICE:}尽管这个制作系统利用了许多在{@link 5e SRD and OGL|https://dnd.wizards.com/articles/features/systems-reference-document-srd}下发布的现有机制，但最终产品完全是自制的。这个系统的更多细节仍在修订中，这些变化将慢慢引入本文件中。然而，这个系统作为一个整体是完全可行的，可以在任何活动中使用。此外，所讨论的规则和概念旨在与(2%)中的扩展工匠工具规则协同工作。如果没有别的原因，我希望这份文件和它的兄弟姐妹们可以作为你决定使用的任何工艺系统的指导和灵感来源。",
+						"在第五版中，有很多事情是玩家和管理人不同意的。自然1和20在能力检查中是否重要？ 我们是否应该在我们的活动中使用关键打击表？是否需要从游戏中移出 \"魔爆术\"？",
+						"事实上，我们在很多事情上都有分歧，我们能在四小时的会议中完成一场战斗似乎是个奇迹。不过，有一件事我认为几乎所有参加第五版D&D活动的人都会同意：海岸奇才提供的基本制作规则需要一些帮助。",
+						{
+							"type": "section",
+							"name": "Now, Now, Let's Keep Things Positive",
+							"entries": [
+								"我建立这个系统的原因是为了给现有的规则增加一些结构和深度。我希望有一个一致的、灵活的系统，但仍然忠实于第五版的主题--保持简单。",
+								"当你继续阅读时，你可能会注意到我的系统与标准手工制作系统有一些相似之处。尽管现有的系统有缺点，但我还是尽力利用了那些确实有效的部分。最终的结果是，玩家可以更快地创造物品，涉及更多的掷骰子，让玩家获得工具的熟练度，并允许他们随着时间的推移提高这些熟练度。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "One Last Thing",
+							"entries": [
+								"在我们深入了解这些细节之前，我认为有必要解释一下这个手工制作系统不是什么。",
+								"本系统将不以包含制作材料和基于物品类型的法术效果的表格矩阵为特征。本系统将尽可能地利用RAW物品和机械原理。其目的是在现有规则的基础上进行改进，而不增加过多的簿记。",
+								"说完这些，让我们来分析一下。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "System Overview",
+							"entries": [
+								"在一个基本水平上，使用我们的系统制作任何物品都有5个要求。",
+								{
+									"type": "list",
+									"style": "list-decimal",
+									"items": [
+										"{@b A Lead Artisan -}一个精通制作物品所需的制作工具并达到制作物品的最低等级要求的工匠。本节与原规则有一些小的差别。",
+										"{@b Crafting Materials -} 说明书中要求的材料，无论是世俗的还是其他的。世俗物品应该花费物品市场价值的大约50%，而魔法物品应该花费100%。这一部分基本上与原来的规则相同，但我对工匠在魔法物品的制作过程中花钱的地方做了一些澄清。",
+										"{@b Means of Production -}有些制作过程只需要制作工具，但其他的可能需要特殊的设备，如锻造机。神奇的物品也可能需要特殊条件才能制作。本节与原规则相似，但我为围绕制作地点的机制增加了一些结构。",
+										"{@b Instructions -} 记忆中的说明或详细说明材料和过程的书面蓝图/食谱。这一部分几乎与原始规则相同。",
+										"{@b Labor -}一旦前面四个条件都得到满足，就可以开始制作。工匠们以8小时为单位工作，贡献以GP计算的进度。本节在原规则的基础上做了大量修改。"
+									]
+								},
+								"现在，更详细地介绍每项要求。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Crafting Requirements",
+					"entries": [
+						{
+							"type": "section",
+							"name": "Requirement 1: The Lead Artisan",
+							"entries": [
+								"制作一个物品需要一个熟练掌握与该物品相关的制作工具的工匠。该工匠还需要满足制作物品的最低等级要求。这个人作为项目的首席工匠，为项目的建造做出贡献，并使学徒工匠也能做出贡献。只要你有一个首席工匠，那些不精通所需工具或没有达到最低玩家等级的成员仍然能够为制作过程作出贡献。",
+								"制作世俗物品（《玩家手册》第5章中的物品）的唯一要求是工具熟练度。世俗物品没有等级限制。",
+								"另一方面，魔法物品需要首席工匠根据所制造物品的稀有程度来满足等级要求。在《地下城主指南》第129页有一个详细的表格，但为了你的方便，我把它放在这里。",
+								{
+									"type": "table",
+									"caption": "Magic Item Crafting",
+									"colLabels": [
+										"Item Rarity",
+										"Minimum Player Level"
+									],
+									"colStyles": [
+										"col-4",
+										"col-4"
+									],
+									"rows": [
+										[
+											"普通",
+											"3rd"
+										],
+										[
+											"不常见",
+											"3rd"
+										],
+										[
+											"Rare",
+											"6th"
+										],
+										[
+											"非常罕见",
+											"11th"
+										],
+										[
+											"传说中的",
+											"17th"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Requirement 2: Crafting Materials",
+							"entries": [
+								"对于平凡的物品，制作材料可以在任何可以购买冒险装备的地方获得。材料的标准价格是最终物品价值的50%。通过与当地行会和供应商进行交易，可以获得材料成本的折扣。这些折扣的评估由管理员决定。",
+								"魔法效果是通过使用宝石给物品注入魔法精华来增加的。所需的宝石和注入的方法由制作配方决定。灌注过程中需要的法术也由制作说明决定，所有这些最终都由DM设计。",
+								"除了宝石之外，可能还需要其他特殊材料。例如：金刚胸甲可能需要玩家获得一定数量的金刚砂。获得上述物品的总体成本和/或难度也由DM决定。",
+								"除了宝石之外，任何需要的材料都必须以全额成本制作。一个魔法物品的最终综合成本由DM设定，但应从物品的稀有性中得出。",
+								"物品稀有度表可以在《地下城主指南》第129页找到，但我也把它放在这里。",
+								{
+									"type": "table",
+									"caption": "Magic Item Creation Cost",
+									"colLabels": [
+										"Item Rarity",
+										"Minimum Creation Cost"
+									],
+									"colStyles": [
+										"col-4",
+										"col-4"
+									],
+									"rows": [
+										[
+											"普通",
+											"100 GP"
+										],
+										[
+											"不常见",
+											"500 GP"
+										],
+										[
+											"Rare",
+											"5,000 GP"
+										],
+										[
+											"非常罕见",
+											"50,000 GP"
+										],
+										[
+											"传说中的",
+											"500,000 GP"
+										]
+									]
+								},
+								"成本结构的详细例子可在要求4：说明中找到。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Requirement 3: Means of Production",
+							"entries": [
+								"在基本层面上，任何工艺流程的生产手段都是工艺工具（有或没有熟练度）和一个工艺地点。大多数工艺项目都不需要地点，但所有的工艺项目都可以从工艺地点的使用中受益。手工制作地点给予标准的奖励，详见下表，但根据DM的决定，玩家可以找到、建造或利用能够给予更大奖励的低级/高级手工制作地点。",
+								{
+									"type": "table",
+									"caption": "Production Reference for Tools",
+									"colLabels": [
+										"Artisan's Tools",
+										"Crafting Requirements",
+										"Ideal Crafting Location",
+										"Ideal Location Bonus"
+									],
+									"colStyles": [
+										"col-4",
+										"col-4",
+										"col-4",
+										"col-4"
+									],
+									"rows": [
+										[
+											"{@item Alchemist's Supplies|phb}",
+											"进入火场",
+											"Lab",
+											"+10 GP"
+										],
+										[
+											"{@item Brewer's Supplies|phb}",
+											"进入啤酒厂",
+											"酿酒厂",
+											"+10 GP"
+										],
+										[
+											"{@item Calligrapher's Supplies|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Carpenter's Tools|phb}",
+											"进入车间",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Cartographer's Tools|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Cobbler's Tools|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Cook's Utensils|phb}",
+											"进入火场",
+											"厨房",
+											"+10 GP"
+										],
+										[
+											"{@item Glassblower's Tools|phb}",
+											"进入火场",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Jeweler's Tools|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Leatherworker's Tools|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Mason's Tools|phb}",
+											"进入车间",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Painter's Supplies|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Poisoner's Kit|phb}",
+											"none",
+											"Lab",
+											"+10 GP"
+										],
+										[
+											"{@item Potter's Tools|phb}",
+											"进入火场",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Smith's Tools|phb}",
+											"进入锻造厂",
+											"锻造",
+											"+10 GP"
+										],
+										[
+											"{@item Tinker's Tools|phb}",
+											"进入车间",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Weaver's Tools|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										],
+										[
+											"{@item Woodcarver's Tools|phb}",
+											"none",
+											"工作室",
+											"+10 GP"
+										]
+									]
+								},
+								"为物品注入魔法属性的过程需要与魔法织体的连接。所有的施法者在默认情况下都能与魔力网连接，因此可以协助对物品进行灌注。根据DM的决定，非施法者如野蛮人最终可以学会给魔法物品注入魔法，但这通常是通过广泛的训练，或通过特殊情况如神的干预来获得。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Requirement 4: Instructions",
+							"entries": [
+								"对于平凡的物品，只要有一个精通建造该物品所需工具的首席工匠，就可以满足指示要求。",
+								"对于魔法物品，其说明通常以书面配方的形式出现。配方可以作为任务奖励发放，或者在探索过程中发现。对该物品有了解的NPC也可以充当首席工匠，使你能够制作该物品。",
+								{
+									"type": "inset",
+									"name": "Example: Crafting a Doss Lute",
+									"entries": [
+										"{@b Recipe:} 多斯-卢特",
+										"{@b Item Rarity:} 不常见",
+										"{@b Total Material Cost:} 1035 GP",
+										"{@b Mundane Item to be Crafted:} Lute",
+										"{@b Gemstones/Special Materials Required:} 3倍珊瑚，7倍珍珠",
+										"{@b Spells Required:} {@spell Fly}, {@spell Invisibility}, {@spell Levitate}, {@spell Protection from Evil and Good}, {@spell Animal Friendship}, {@spell Protection from Energy}, {@spell Protection from Poison}",
+										"{@b Crafting Instructions:} 魔法使用者必须为每颗珍珠注入配方所要求的7个法术。然后将珍珠放在琵琶的7个小节的下面。然后，3颗珊瑚必须被注入魔法力量（不需要特定的咒语）。然后将珊瑚镶嵌在密室的底座上。"
+									]
+								},
+								"这个例子仅用于演示；最终由管理员来决定如何满足这一要求。同样的物品在不同的活动中可能有完全不同的制作要求。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Requirement 5: Labor",
+							"entries": [
+								"一个制作过程持续8小时。在8小时结束时，正在制作的物品的GP进度由每个工匠的个人制作进度加上地点奖励来推进。",
+								"世俗物品的基本制作费是5GP。魔法物品的基本制作率是25GP。",
+								"精通所使用的工具的工匠在制作过程结束时掷出熟练度骰子，并将结果乘以5来决定增加多少额外的GP进度。所用的熟练度骰子表可以在《地下城主指南》的第263页和这里找到。",
+								{
+									"type": "table",
+									"caption": "Proficiency Dice Table",
+									"colLabels": [
+										"Character Levels",
+										"Proficiency Die"
+									],
+									"colStyles": [
+										"col-4",
+										"col-4"
+									],
+									"rows": [
+										[
+											"1st-4th",
+											"1d4"
+										],
+										[
+											"5th-8th",
+											"1d6"
+										],
+										[
+											"9th-12th",
+											"1d8"
+										],
+										[
+											"13th-16th",
+											"1d10"
+										],
+										[
+											"17th-20th",
+											"1d12"
+										]
+									]
+								},
+								"在制作魔法物品时，参与灌输过程的魔法使用者不需要对工匠的工具有熟练度。然而，如果他们精通这些工具，他们可以在8小时的课程结束时将他们的熟练度卷乘以5加入到灌输过程中。",
+								"参与手工制作过程的学徒如果不精通所需的工具，最终可以获得熟练度。一旦学徒使用一套工匠工具做出了价值500GP的工艺贡献，他们就会获得这些工具的熟练度。学徒只有在协助制作普通物品时才能获得熟练度的提升。在创造艺术品时获得的工艺进展也被计算在内，但是在艺术品创造过程中使用了一套不同的工艺规则。灌输魔法物品所提供的贡献不计入获得工具熟练度的初始过程。",
+								"随着时间的推移，随着工匠磨练他们的技能，他们最终可以成为他们的工艺专家。一旦工匠使用一套工具取得了价值15,000GP的进展，他们就取得了这些工具的专长。专业技能允许工匠在使用上述工具时掷出一个额外的熟练度模具。所有使用工匠精通的工具的工艺进展，包括创造艺术品和注入魔法物品，都将计入15,000GP的总数。",
+								{
+									"type": "insetReadaloud",
+									"name": "Crafting Formula Example: 4 Players Crafting Plate Mail",
+									"entries": [
+										"如果四个工匠正在建造一个板式邮件，有一个专家工匠（PC 4级），一个精通工匠（PC 3级），两个学徒（PC 3级）；每天的GP进度公式如下。",
+										"[5 + 2d4 * 5](专家工匠) + [5+1d4 * 5](精通工匠) + 5(学徒工匠) + 5(学徒工匠) + 10(位置奖励) = 20 + 3d4 * 5(37.5平均) + 10 = ~67.5 GP/天"
+									]
+								},
+								"最后，目前对一个项目中能有多少工匠做出贡献没有明确的限制。由管理员决定一个项目的工匠数量是否合理。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Conclusion",
+					"entries": [
+						"我相信上述系统很好地丰富了RAW制作系统的内容。簿记和表格参考被保持在最低限度，而且它足够简单，任何管理员都可以拿起它并立即应用于他们的活动。",
+						"当我在自己的活动中看到这个系统的实践时，我将对规则进行小幅更新。然而，上述规则中使用的概念应该基本保持不变，我鼓励管理员调整该系统以适应他们的需要。"
+					]
+				}
+			]
+		}
+	]
+}
