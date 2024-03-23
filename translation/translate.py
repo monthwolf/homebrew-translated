@@ -7,8 +7,10 @@ import time
 from signal import signal, SIGINT
 import argparse
 import traceback
-
+from openai import OpenAI
 from selenium import webdriver
+from dotenv import load_dotenv
+from selenium.webdriver.common.keys import Keys
 
 #from selenium.webdriver.chrome.service import Service
 #from webdriver_manager.chrome import ChromeDriverManager
@@ -22,6 +24,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 
 supported_languages = {
 	'es': 'es-ES',
@@ -35,13 +38,17 @@ supported_languages = {
 	'nl': 'nl-NL',
 }
 
+if os.path.exists('.env'):
+    load_dotenv()
+apiKey=os.environ.get('APIKEY')
+baseUrl=os.environ.get('BASEURL')
 todoCharCounter = 0
 maxRuntime = 0
 startTime = time.time()
 
 
 class Translator:
-	def __init__(self, language: str, cacheFile: str, useDeepl: bool, glossary_file: str, recheckWords: list):
+	def __init__(self, language: str, cacheFile: str, useDeepl: bool, glossary_file: str, recheckWords: list, useAI: bool):
 		self._language = language
 
 		#self._tag_regex = '{(?!(@i )|(@italic )|(@b )|(@bold )|(@u )|(@underline )|(@s )|(@strike )|(@color )|(@note )|(@footnote )).*?}'
@@ -54,7 +61,7 @@ class Translator:
 		if os.path.exists(cacheFile):
 			with(open(cacheFile)) as f:
 				self._cacheData = json.load(f)
-
+		self._useAI = useAI
 		self._useDeepl = useDeepl
 		self._glossary = {}
 		self._deeplGlossary = []
@@ -62,8 +69,9 @@ class Translator:
 
 		self.charCount = 0
 		self.cachedCharCount = 0
+		self._Model=os.environ.get('MODEL')
 		self._webdriver = None
-
+		self._gptClient = None
 		if os.path.exists(glossary_file):
 			with open(glossary_file) as f:
 				self._glossary = json.load(f)
@@ -117,26 +125,34 @@ class Translator:
 			firefox_options.set_preference('network.proxy.type', 1)
 			firefox_options.set_preference('network.proxy.socks', proxy_host)
 			firefox_options.set_preference('network.proxy.socks_port', proxy_port)
-		self._webdriver = webdriver.Firefox(options=firefox_options, service=Service(GeckoDriverManager().install()))
+		#self._webdriver = webdriver.Firefox(options=firefox_options, service=Service(GeckoDriverManager().install()))
+		self._webdriver = webdriver.Firefox(options=firefox_options)
 		self._webdriver.set_window_size(1920, 1080)
 
 		self._webdriver.get("https://www.deepl.com/en/translator")
 
+		try:
+			WebDriverWait(self._webdriver, 5).until(EC.presence_of_element_located((By.XPATH, '//button[@data-testid="cookie-banner-strict-accept-selected"]'))).click()
+		except:
+			print("no cookie banner")
 		# Select from / to languages
-		WebDriverWait(self._webdriver, 5).until(EC.presence_of_element_located((By.XPATH, '//button[@dl-test="translator-source-lang-btn"]'))).click()
+		WebDriverWait(self._webdriver, 5).until(EC.presence_of_element_located((By.XPATH, '//button[@data-testid="translator-source-lang-btn"]'))).click()
 		# div[@dl-test=translator-source-lang-list]
-		WebDriverWait(self._webdriver, 1).until(EC.presence_of_element_located((By.XPATH, '//button[@dl-test="translator-lang-option-en"]'))).click()
+		WebDriverWait(self._webdriver, 2).until(EC.presence_of_element_located((By.XPATH, '//button[@data-testid="translator-lang-option-en"]'))).click()
 
-		WebDriverWait(self._webdriver, 1).until(EC.presence_of_element_located((By.XPATH, '//button[@dl-test="translator-target-lang-btn"]'))).click()
+		WebDriverWait(self._webdriver, 2).until(EC.presence_of_element_located((By.XPATH, '//button[@data-testid="translator-target-lang-btn"]'))).click()
 		# div[@dl-test=translator-target-lang-list]
-		WebDriverWait(self._webdriver, 1).until(EC.presence_of_element_located((By.XPATH, f"//button[@dl-test=\"translator-lang-option-{self._language}\"]"))).click()
+		WebDriverWait(self._webdriver, 2).until(EC.presence_of_element_located((By.XPATH, f"//button[@data-testid=\"translator-lang-option-{self._language}\"]"))).click()
 
-		self._inputField = self._webdriver.find_element(By.XPATH, '//textarea[@dl-test="translator-source-input"]')
-		self._outputField = self._webdriver.find_element(By.XPATH, '//*[@id="target-dummydiv"]')
+		#self._inputField = self._webdriver.find_element(By.XPATH, '//d-textarea[@dl-test="translator-source-input"]')
+		self._inputField = self._webdriver.find_element(By.XPATH, '//d-textarea[@data-testid="translator-source-input"]')
+		self._outputField = self._webdriver.find_element(By.XPATH, '//d-textarea[@data-testid="translator-target-input"]')
 
 		# Init glossary
 		self._deeplGlossary = []
 
+	def initAI(self):
+		self._gptClient = OpenAI(api_key=apiKey, base_url=baseUrl)
 	def _setupGlossary(self, text: str):
 		contains = {
 			word: translation
@@ -160,13 +176,13 @@ class Translator:
 		for word, translation in contains.items():
 			print(f"adding {word}:{translation} to glossary")
 			try:
-				self._webdriver.find_element(By.XPATH, '//input[@dl-test="glossary-newentry-source-input"]').send_keys(word)
-				self._webdriver.find_element(By.XPATH, '//input[@dl-test="glossary-newentry-target-input"]').send_keys(translation)
-				self._webdriver.find_element(By.XPATH, '//button[@dl-test="glossary-newentry-accept-button"]').click()
+				self._webdriver.find_element(By.XPATH, '//input[@data-testid="glossary-newentry-source-input"]').send_keys(word)
+				self._webdriver.find_element(By.XPATH, '//input[@data-testid="glossary-newentry-target-input"]').send_keys(translation)
+				self._webdriver.find_element(By.XPATH, '//button[@data-testid="glossary-newentry-accept-button"]').click()
 			except:
-				self._webdriver.find_element(By.XPATH, '//input[@aria-label="Source glossary entry"]').send_keys(word)
-				self._webdriver.find_element(By.XPATH, '//input[@aria-label="Target glossary entry"]').send_keys(translation)
-				self._webdriver.find_element(By.XPATH, '//button[@aria-label="Save entry"]').click()
+				self._webdriver.find_element(By.XPATH, '//input[@data-testid="glossary-newentry-source-input"]').send_keys(word)
+				self._webdriver.find_element(By.XPATH, '//input[@data-testid="glossary-newentry-target-input"]').send_keys(translation)
+				self._webdriver.find_element(By.XPATH, '//button[@data-testid="glossary-newentry-accept-button"]').click()
 			time.sleep(0.5)
 			self._deeplGlossary.append(word)
 
@@ -229,51 +245,105 @@ class Translator:
 			raise Exception('maximum runtime exceeded - aborting')
 
 		self.charCount += len(text)
-		if not self._useDeepl:
+		if not (self._useDeepl or self._useAI):
 			return text
+		elif self._useAI:
+			self.initAI() #todo
+			translate_text, links = self.links2tags(text)
+			translated_text = ""
+			res = self._gptClient.chat.completions.create(
+				model=self._Model, 
+				stream=True,
+				messages=[
+					{
+					"role": "system",
+					"content": '''translate English to Simplified Chinese.
+- in line with local language habits,and text like (%num%) should be still output as (%num%) in tranlation.
+- translation comply with dnd running group rules and proper nouns should keep the English in `()` after the translation.
+					'''
+					},
+					{
+					"role": "user",
+					"content":translate_text,
+					}
+				],
+				temperature=0.25,
+				top_p=0.67,
+				max_tokens=3000
+				)  
+			for chunk in res:
+				delta=chunk.choices[0].delta
+				cont=delta.content
+				if(cont!=None):
+					translated_text += cont
+				else:
+					print("\n")
+					break
+			translated_text = re.sub(r"（(%\d+%)）", r"(\1)", translated_text)
+			translated_text = self.tags2links(translated_text, links)
+			print("原文："+text)
+			print("gpt翻译："+translated_text)
+			time.sleep(0.5)
+			self.cacheSet(text, translated_text)
+			print()
+			return translated_text
 		elif self._webdriver is None:
 			self.initWebdriver()
 
 
 		# Replace links with specific markers we can put in place after translating later
-		translate_text, links = self.links2tags(text)
+			translate_text, links = self.links2tags(text)
 
-		self._setupGlossary(translate_text)
+			self._setupGlossary(translate_text)
 
-		self._inputField.click()
-		self._inputField.clear()
-		time.sleep(0.5)
-		self._inputField.send_keys(translate_text)
+			self._inputField.click()
+			#self._inputField.clear()
+			actions = ActionChains(self._webdriver)
+			actions.send_keys(5000 * Keys.BACKSPACE)
+			actions.perform()
+			time.sleep(0.5)
+			#self._inputField.send_keys(translate_text)
+			actions.send_keys(translate_text)
+			actions.perform()
 
-		translator_working = WebDriverWait(self._webdriver, 1).until(EC.presence_of_element_located((By.XPATH, '//main[@id="dl_translator"]')))
+			translator_working = WebDriverWait(self._webdriver, 1).until(EC.presence_of_element_located((By.XPATH, '//main')))
 
-		maxwait = 50 # 10s
-		translated_text = ""
-		while 'lmt--active_translation_request' in translator_working.get_attribute("class"):
-			time.sleep(0.2)
+			maxwait = 50 # 10s
+			translated_text = ""
+			while 'lmt--active_translation_request' in translator_working.get_attribute("class"):
+				time.sleep(0.2)
 
-			maxwait -= 1
-			if maxwait <= 0:
+				maxwait -= 1
+				if maxwait <= 0:
 				#self._webdriver.save_screenshot("screenshot_timeout.png")
+					translated_text = self._outputField.get_attribute("textContent").rstrip()
+					raise Exception(f"Timed out. Translation probably incomplete ({len(translated_text) / len(translate_text)}) '{translate_text}' '{translated_text}'")
+			time.sleep(0.5)
+			translated_text = self._outputField.get_attribute("textContent").rstrip()
+			print('1:'+translated_text)
+			while True:
+				temp=translated_text
+				time.sleep(0.8)
 				translated_text = self._outputField.get_attribute("textContent").rstrip()
-				raise Exception(f"Timed out. Translation probably incomplete ({len(translated_text) / len(translate_text)}) '{translate_text}' '{translated_text}'")
+				print('2:'+translated_text)
 
-		time.sleep(0.5)
-		translated_text = self._outputField.get_attribute("textContent").rstrip()
+				if temp==translated_text and translated_text!='' and '[...]' not in translated_text:
+					translated_text = re.sub(r"（(%\d+%)）", r"(\1)", translated_text)
+					break
 
 		# Replace back any placeholders for links
-		translated_text = self.tags2links(translated_text, links)
+			translated_text = self.tags2links(translated_text, links)
 
 		# Click the input to make sure the translation is really complete and we were not blocked
 		# This will raise an exception otherwise
-		self._inputField.click()
+			self._inputField.click()
 
-		print(text)
-		print(translated_text)
-		self.cacheSet(text, translated_text)
-		print()
+			print("原文："+text)
+			print("deepl翻译："+translated_text)
+			self.cacheSet(text, translated_text)
+			print()
 
-		return translated_text
+			return translated_text
 
 
 def translate_data(translator: Translator, data):
@@ -290,7 +360,7 @@ def translate_data(translator: Translator, data):
 				for section, items in v.items():
 					for idx, item in enumerate(items):
 						data[k][section][idx] = translator.translate(item)
-			elif k in ['entries', 'items', 'rows', 'headerEntries', 'reasons', 'other', 'lifeTrinket'] and type(v) is list:
+			elif k in ['entries', 'items', 'rows', 'headerEntries', 'reasons', 'other', 'lifeTrinket','lairActions','regionalEffects'] and type(v) is list:
 
 				# Do not translate for simple item lists withou type: list (to avoid translating item names)
 				if k == "items" and ("type" not in data or data['type'] != 'list'):
@@ -309,7 +379,7 @@ def translate_data(translator: Translator, data):
 			else:
 				translate_data(translator, v)
 
-def translate_file(language: str, fileName: str, writeJSON: bool, useDeepl: bool, recheckWords: list):
+def translate_file(language: str, fileName: str, writeJSON: bool, useDeepl: bool, recheckWords: list,useAI: bool):
 	cache_file = fileName.replace("data/", f"translation/cache/{language}/")
 	os.makedirs(os.path.dirname(cache_file), exist_ok=True)
 
@@ -320,7 +390,7 @@ def translate_file(language: str, fileName: str, writeJSON: bool, useDeepl: bool
 	os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
 	data = {}
-	with Translator(language, cache_file, useDeepl, glossary_file, recheckWords) as translator:
+	with Translator(language, cache_file, useDeepl, glossary_file, recheckWords, useAI) as translator:
 		print(f"Translating\t{file}")
 		try:
 			with open(fileName) as f:
@@ -346,6 +416,7 @@ if __name__ == "__main__":
 	parser.add_argument('--language', type=str, required=True)
 	parser.add_argument('--translate', type=bool, default=False, action=argparse.BooleanOptionalAction)
 	parser.add_argument('--deepl', type=bool, default=False, action=argparse.BooleanOptionalAction)
+	parser.add_argument('--gpt', type=bool, default=False, action=argparse.BooleanOptionalAction)
 	parser.add_argument('--maxrun', type=int, default=False)
 	parser.add_argument('--recheck-words', type=str, default=[], nargs='*')
 	parser.add_argument('files', type=str, nargs='*')
@@ -359,6 +430,6 @@ if __name__ == "__main__":
 		if file.startswith("data/generated"):
 			continue
 
-		translate_file(args.language.lower(), file, args.translate, args.deepl, args.recheck_words)
+		translate_file(args.language.lower(), file, args.translate, args.deepl, args.recheck_words, args.gpt)
 
 	print(f"Total todo: {todoCharCounter}")
