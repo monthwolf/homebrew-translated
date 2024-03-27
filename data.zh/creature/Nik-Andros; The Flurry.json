@@ -83,8 +83,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"The Flurry, as it is referred to in the common tongue, is a large terrifying swarm of tentacles and ferocity found primarily in dense forests and jungles of the Known World. Flurry can lie dormant for months waiting for prey to walk near their hide. While motionless the Flurry is indistinguishable from the surrounding vines or roots of its environment using a limited chameleon like ability to change their color to blend in. The Flurry can also burrow into the ground and wait for unsuspecting prey to walk over their trap. Once the Flurry detects movement it bursts from its hide with lightening like quickness, ambushing its prey with a nightmarish whirlwind of multiple tentacle attacks.",
-					"These tentacles wrap around the target before the target even has a chance to react, causing panic and confusion. As targets try to flee, the Flurry hones in on their vibrations and takes chase. Once a target is grappled the Flurry begins draining its life force or slamming any creature trying to resist into unconsciousness. Targets can attempt to hide from the Flurry by remaining motionless (effectively making it \"Blinded\") but the tentacles will continue whipping around at everything within 10 feet as it tries to locate the intruder."
+					"在通用语中被称为\"风暴\"，是一种庞大可怕的触手和凶猛的群体，主要出现在已知世界茂密的森林和丛林中。风暴可以在几个月内静卧不动，等待猎物靠近它们的藏身之处。在静止时，风暴与周围的藤蔓或根系没有区别，利用有限的变色龙般能力改变颜色以融入环境。风暴还可以钻入地下，等待毫无防备的猎物走入陷阱。一旦风暴察觉到运动，它会以闪电般的速度从藏身之处窜出，用多条触手发动噩梦般的旋风攻击伏击猎物。",
+					"这些触手在目标还没有机会反应之前就缠绕住了它，引起恐慌和混乱。当目标试图逃跑时，狂乱者会锁定它们的振动并追击。一旦目标被抓住，狂乱者就开始吸取它的生命力或者猛烈地摔打任何试图抵抗的生物使其失去知觉。目标可以尝试通过保持静止来躲避狂乱者（有效地使其\"失明\"），但是这些触手会继续在周围10英尺范围内甩动，试图找到入侵者。"
 				],
 				"images": [
 					{
@@ -100,19 +100,19 @@
 				{
 					"name": "Ambush",
 					"entries": [
-						"While the Flurry remains motionless, it is indistinguishable from a tangle of roots or vines. Until it moves the Flurry has a +10 to stealth. The Flurry has advantage on any creatures that have not yet acted."
+						"当(`Flurry`)保持静止时，它与一堆根或藤蔓难以区分。在(`Flurry`)移动之前，它的潜行加值+10。(`Flurry`)对尚未行动的任何生物具有优势。"
 					]
 				},
 				{
 					"name": "Tentacle Swarm",
 					"entries": [
-						"The Flurry can use its entire turn to make a tentacle attack against any number of creatures within 10 feet of it with a separate attack roll for each target. In addition the Flurry gets a tentacle attack as an attack of opportunity on any creature attempting to withdraw from melee."
+						"风暴之怒可以利用整个回合对距离其10英尺以内的任意数量生物进行触手攻击，每个目标都需要进行单独的攻击检定。此外，当任何生物试图从近战中撤退时，风暴之怒可以作为一次机会攻击进行触手攻击。"
 					]
 				},
 				{
 					"name": "Life Drain",
 					"entries": [
-						"The Flurry regains Hit Points equal to the amount of Necrotic damage sustained by a {@condition grappled} creature."
+						"风暴突袭者回复等同于受到的{@condition grappled}生物所承受的死灵伤害数量的生命值。"
 					]
 				}
 			],
@@ -123,31 +123,31 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Flurry makes three attacks (if it has not used its turn to Tentacle Swarm."
+						"狂风斩发动三次攻击（如果它没有使用行动进行触手风暴攻击）。"
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+						"{@atk mw} {@hit 7}攻击，射程5英尺，目标一个。{@h}13 ({@damage 2d8 + 4})穿刺伤害。"
 					]
 				},
 				{
 					"name": "Tentacle",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. If the target is medium or smaller in size, it is {@condition grappled} (escape {@dc 15}), {@condition restrained}, and takes 6 ({@damage 1d10}) necrotic damage until the grapple ends."
+						"{@atk mw} 使用 {@hit 7} 进行攻击，射程10英尺，目标为一个。造成 {@h}8 ({@damage 1d8 + 4}) 钝击伤害。如果目标是中等大小或更小，则被 {@condition grappled} (逃脱 {@dc 15})，被 {@condition restrained}，并在缠绕结束前每轮受到6 ({@damage 1d10}) 死灵伤害。"
 					]
 				},
 				{
 					"name": "Tentacle Slam",
 					"entries": [
-						"The Flurry slams creatures {@condition grappled} by it into each other or a solid surface. Each creature must succeed on a dc 14 constitution saving throw or take 11 ({@damage 2d6 + 4}) bludgeoning damage and be {@condition stunned} until the end of the Flurry's next turn. On a successful save, the target takes half the bludgeoning damage and isn't {@condition stunned}."
+						"风暴突击将生物{@condition grappled}猛烈地撞向彼此或坚实表面。每个生物必须通过一次 DC 14 的体质豁免才能免受 11 ({@damage 2d6 + 4}) 钝击伤害，并在接下来的风暴突击回合结束前被{@condition stunned}。豁免成功的目标将只受到一半的钝击伤害，并且不会被{@condition stunned}。"
 					]
 				},
 				{
 					"name": "Throw",
 					"entries": [
-						"The Flurry throws a creature it currently has {@condition restrained} up to 15 ft in any direction. Target takes 7 ({@damage 1d6 + 4}) bludgeoning damage and must make a dc 13 dexterity saving throw or be knocked {@condition prone}."
+						"风暴使一个生物{@condition restrained}向任意方向抛出，最多15英尺。目标受到7点（{@damage 1d6 + 4}）钝击伤害，并必须进行一次13点的敏捷豁免检定，否则会被击倒{@condition prone}。"
 					]
 				}
 			],
