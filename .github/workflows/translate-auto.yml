@@ -2,7 +2,6 @@ name: translate-auto
 
 env:
   TRANS_TYPE: 'gpt'
-  SOURCE_FILES: 'data/[a-z]*/*.json'
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   APIKEY: ${{ secrets.APIKEY }}
   BASEURL: 'https://sapi.onechat.fun/v1'
@@ -36,6 +35,7 @@ jobs:
       max-parallel: 9
       matrix:
         language: [ 'zh']
+        files: ['data/[a-z]*/*.json','data2/[a-z]*/*.json']
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -55,9 +55,9 @@ jobs:
       run: |
            cd $GITHUB_WORKSPACE
            mkdir data.${{ matrix.language }}  || true
-           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --$TRANS_TYPE $SOURCE_FILES
+           ./translation/translate.py --language ${{ matrix.language }} --maxrun 18000 --translate --$TRANS_TYPE ${{ matrix.files }}
            rm -Rf data.${{ matrix.language }} # Delete so we remove duplicates and regenerate in the next step
-           ./translation/translate.py --language ${{ matrix.language }} --translate $SOURCE_FILES
+           ./translation/translate.py --language ${{ matrix.language }} --translate ${{ matrix.files }}
            (cd data && npm install)
            cd data.${{ matrix.language }}
            mkdir _generated || true
