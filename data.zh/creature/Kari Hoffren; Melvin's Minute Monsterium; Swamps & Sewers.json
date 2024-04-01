@@ -1,0 +1,3419 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MMM:SS",
+				"abbreviation": "MMM:SS",
+				"full": "Melvin's Minute Monsterium: Swamps & Sewers",
+				"url": "https://drive.google.com/file/d/1XCcWFmS5NsfVp-J9S8hsNAd1b1KqdeNZ/view",
+				"authors": [
+					"Kari Hoffren"
+				],
+				"convertedBy": [
+					"Bowsori"
+				],
+				"color": "6aa300",
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1614094197,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "e491c7dd42"
+	},
+	"monster": [
+		{
+			"name": "Bane Bogy",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|PHB|leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 14,
+				"formula": "4d6"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 5,
+			"dex": 17,
+			"con": 11,
+			"int": 15,
+			"wis": 14,
+			"cha": 12,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+7"
+			},
+			"passive": 14,
+			"languages": [
+				"Sylvan"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"bogy的先天法术能力是智力（法术保存（%0%），用法术攻击命中率（%1%））。它可以先天性地施展以下法术，不需要任何物质成分。"
+					],
+					"will": [
+						"{@spell druidcraft}",
+						"{@spell faerie fire}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell heat metal}",
+							"{@spell invisibility}"
+						],
+						"1e": [
+							"{@spell dominate beast}",
+							"{@spell plant growth}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"bogy在对抗法术和其他魔法效果时有优势。"
+					]
+				},
+				{
+					"name": "Bogy Circle",
+					"entries": [
+						"一组正好7个贝恩博格形成一个圆圈，可以施展某些法术或将普通浆果变成污秽浆果。"
+					]
+				},
+				{
+					"name": "Circle Spellcasting (Circle Only)",
+					"entries": [
+						"当圈子里的七个成员都在彼此的30英尺范围内时，他们可以作为一个团体每天施放一次下列法术：{@spell bestow curse}, {@spell locate object}, {@spell polymorph}, {@spell remove curse}, {@spell stone shape}。",
+						"野猪人使用他们的先天法术特质来施展这些法术，但有以下修改：施展法术需要材料成分，而且野猪人不能使用法术焦点来替代它们。这些法术的施法时间为10分钟，法术的持续时间改为24小时，除非是瞬发。在施法时，博格斯人不能进行其他动作。"
+					]
+				},
+				{
+					"name": "Foulberries (Circle Only)",
+					"entries": [
+						"一个圆圈可以举行仪式来创造富勒姆果，它类似于富勒姆果，但有不同的效果。如果一个人形生物吃了一颗枸杞，它必须在一个{@dc 12}的智慧救赎中成功，否则就会被一种贪得无厌的饥饿感所吞噬，从而吃下更多。如果有的话，它必须用它的行动来吃枸杞。如果没有的话，它将用它的行动来吃附近的任何东西，甚至是土。在它的每个回合开始时，它可以重复蓄力，如果成功，则结束对自己的影响。薯条也可以用来从人形新生儿中创造出乌伯德。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw}{@hit 5}命中，距离5英尺或范围20/60英尺，一个目标。{@h}5 ({@damage 1d4 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围30/120英尺，一个目标。{@h}5 ({@damage 1d4 + 3})重击伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Bane bogies是生活在人类居住区附近沼泽地的精灵。他们与家园周围的大人们不断进行低强度的战争，原因只有他们的费伊人的头脑能够完全理解。他们骚扰村庄和其他定居点，最终计划是迫使他们离开或完全摧毁他们的家园。他们类似于精灵或小精灵，但有一双翅膀，看起来像乌鸦和飞蛾混合的翅膀。他们也比他们的表兄弟大得多。",
+					"{@bold Foul Rituals.} Bane bogies可以施展强大的法术，当他们一圈人聚集在一个有力量的地方。其中最著名的是创造乌特伯德的仪式，一种由新生婴儿形成的病态和恐怖的野兽。他们还可以施展其他法术，但只有在正好有七个贝恩博格施法的时候。",
+					"{@bold Thieves and Tormentors.} Bane bogies的名字来自于他们对自己家附近村庄的持续骚扰。它们偷东西、砸东西，如果有机会甚至会杀死牲畜。正因为如此，附近的村民经常派遣突击队去摧毁bane bogies的巢穴，这些巢穴通常位于老树上。这样的袭击往往以失败告终，因为bogies对沼泽地的了解比他们的手背还要深，他们经常在自己的家园周围制造陷阱，以抵御任何试图攻击他们的人。此外，只要它们受到威胁，就一定会使用它们最大的武器：（1%）（见本手册）。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/C46BCLj.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"sling|phb"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Bezzan Worker",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"bezzan"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d6"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 40
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 11,
+			"int": 12,
+			"wis": 14,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Bezzan",
+				"Common"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Protective Droning",
+					"entries": [
+						"Bezzan会发出一种使人难以集中注意力的沉闷的声音。每一个不是贝赞的生物，在3个或更多贝赞的5英尺范围内，在攻击卷轴上有一个劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}3 ({@damage 1d4 + 1})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 3}击中，范围20/60英尺，一个目标。{@h}3 ({@damage 1d4 + 1})穿刺伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Bezzans是人形黄蜂，起源于温暖的南部湿地，但已向北蔓延，特别是进入大城市的下水道。Bezzans在树上和下水道的天花板上建造大型的、蔓延的巢穴。它们捕食小型猎物并觅食植物，用于建造它们的巢穴。",
+					"{@bold Nest Builders and Weapon Crafters.} Bezzans使用他们的唾液与植物物质的消化和反刍的果肉相结合，创造他们的巢穴。这种材料一旦干燥，就具有极强的弹性，可以制成轻质的盔甲，甚至武器。虽然这种材料可以被削尖，但当他们能够用金属武器换取自己的创作时，贝赞人更喜欢金属武器。虽然有些人类嘲笑贝赞人制作的坚固且通常相当丑陋的装备，但许多人确实发现这些装备的重量很轻，非常有用。住在下水道的贝赞人经常被发现与住在上面的人交易。由于其他人通常并不热衷于购买他们的手工艺品，贝赞人经常会出售他们不需要但知道人类愿意支付的觅食物品。",
+					"{@bold Hierarchical Society of Females.} 蜂巢在结构和社会结构上与黄蜂的巢相似。有一个或多个蜂王，它们生产生活在巢中的所有蜂类。其他蜂类要么是雄性无人机，为蜂王组成后宫，要么是不孕不育的雌性工人。工人们在其生命的不同阶段有不同的职责。它们开始时是作为幼虫的看护者，之后它们从事巢穴的建造和维护、设备的制作、食物的觅食、狩猎，最后是战士的职责。在每个阶段，贝赞都会变得更大更强壮，其盔甲也会变得更厚。",
+					"{@bold Bezzan Worker.} 巢中大多数成员是工人。他们不具备战斗能力，但当巢穴受到威胁时，他们会这样做。工人通常是其他人类会遇到的。他们成群结队地觅食，有时愿意与外来者进行交易。在战斗情况下，工人通常支持战士，并试图作为一个团体一起战斗，用他们的翅膀创造出低沉的，让对手困惑的声音。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LCPVYew.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"attachedItems": [
+				"dart|phb"
+			]
+		},
+		{
+			"name": "Bezzan Warrior",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"bezzan"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d6 + 3"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 40
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Bezzan",
+				"Common"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Protective Droning",
+					"entries": [
+						"Bezzan会发出一种使人难以集中注意力的沉闷的声音。每一个不是贝赞的生物，在3个或更多贝赞的5英尺范围内，在攻击卷轴上有一个劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害，目标必须成功进行{@dc 11}宪法救赎，否则会被{@condition poisoned}直到下一回合结束。"
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw}{@hit 4}击中，到达5英尺或范围30/120英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Bezzans是人形黄蜂，起源于温暖的南部湿地，但已向北蔓延，特别是进入大城市的下水道。Bezzans在树上和下水道的天花板上建造大型的、蔓延的巢穴。它们捕食小型猎物并觅食植物，用于建造它们的巢穴。",
+					"{@bold Nest Builders and Weapon Crafters.} Bezzans使用他们的唾液与植物物质的消化和反刍的果肉相结合，创造他们的巢穴。这种材料一旦干燥，就具有极强的弹性，可以制成轻质的盔甲，甚至武器。虽然这种材料可以被削尖，但当他们能够用金属武器换取自己的创作时，贝赞人更喜欢金属武器。虽然有些人类嘲笑贝赞人制作的坚固且通常相当丑陋的装备，但许多人确实发现这些装备的重量很轻，非常有用。住在下水道的贝赞人经常被发现与住在上面的人交易。由于其他人通常并不热衷于购买他们的手工艺品，贝赞人经常会出售他们不需要但知道人类愿意支付的觅食物品。",
+					"{@bold Hierarchical Society of Females.} 蜂巢在结构和社会结构上与黄蜂的巢相似。有一个或多个蜂王，它们生产生活在巢中的所有蜂类。其他蜂类要么是雄性无人机，为蜂王组成后宫，要么是不孕不育的雌性工人。工人们在其生命的不同阶段有不同的职责。它们开始时是作为幼虫的看护者，之后它们从事巢穴的建造和维护、设备的制作、食物的觅食、狩猎，最后是战士的职责。在每个阶段，贝赞都会变得更大更强壮，其盔甲也会变得更厚。",
+					"{@bold Bezzan Warrior.} 最年长、最大和最强壮的蜂群是战士。他们组成部队，在巢穴周围巡逻，并经常与觅食的工人一起去打猎。如果蜂群和入侵者之间没有预先存在的关系，或者如果陌生人没有蜂群的陪伴，战士们往往一见到就会产生敌意。他们通常对谈判不感兴趣，喜欢把这个问题留给工人。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LCPVYew.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"attachedItems": [
+				"javelin|phb"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Bezzan Wasp Herder",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"bezzan"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d6"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 40
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 10,
+			"int": 14,
+			"wis": 15,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Bezzan",
+				"Common"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Bezzan是一个1级施法者。它的法术能力是智慧（法术保存（%0%））。Bezzan有以下德鲁伊法术的准备。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"slots": 2,
+							"spells": [
+								"{@spell detect poison and disease}",
+								"{@spell faerie fire}",
+								"{@spell speak with animals}"
+							]
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Protective Droning",
+					"entries": [
+						"Bezzan会发出一种使人难以集中注意力的沉闷的声音。每一个不是贝赞的生物，在3个或更多贝赞的5英尺范围内，在攻击卷轴上有一个劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围20/60英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Release Wasps (1 /Day)",
+					"entries": [
+						"Bezzan从它携带的巢穴中释放黄蜂到它周围5英尺内的空间。一群拥有11点命中率的昆虫（黄蜂）出现，并进行主动攻击。它对贝赞人是友好的，当释放它的贝赞人死亡时，它就会散去。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Bezzans是人形黄蜂，起源于温暖的南部湿地，但已向北蔓延，特别是进入大城市的下水道。Bezzans在树上和下水道的天花板上建造大型的、蔓延的巢穴。它们捕食小型猎物并觅食植物，用于建造它们的巢穴。",
+					"{@bold Nest Builders and Weapon Crafters.} Bezzans使用他们的唾液与植物物质的消化和反刍的果肉相结合，创造他们的巢穴。这种材料一旦干燥，就具有极强的弹性，可以制成轻质的盔甲，甚至武器。虽然这种材料可以被削尖，但当他们能够用金属武器换取自己的创作时，贝赞人更喜欢金属武器。虽然有些人类嘲笑贝赞人制作的坚固且通常相当丑陋的装备，但许多人确实发现这些装备的重量很轻，非常有用。住在下水道的贝赞人经常被发现与住在上面的人交易。由于其他人通常并不热衷于购买他们的手工艺品，贝赞人经常会出售他们不需要但知道人类愿意支付的觅食物品。",
+					"{@bold Hierarchical Society of Females.} 蜂巢在结构和社会结构上与黄蜂的巢相似。有一个或多个蜂王，它们生产生活在巢中的所有蜂类。其他蜂类要么是雄性无人机，为蜂王组成后宫，要么是不孕不育的雌性工人。工人们在其生命的不同阶段有不同的职责。它们开始时是作为幼虫的看护者，之后它们从事巢穴的建造和维护、设备的制作、食物的觅食、狩猎，最后是战士的职责。在每个阶段，贝赞都会变得更大更强壮，其盔甲也会变得更厚。",
+					"{@bold Bezzan Wasp Herder.} 有些bezzan喜欢走自己的路。他们偏离了bezzan的正常工作周期，在bezzan领域的郊区建造一个小巢。他们开始研究周围的自然环境，特别是关注他们的小型昆虫表亲。这些bezzan被称为黄蜂牧民。他们住在巢穴的外围，为巢穴提供宝贵的半宗教服务，这就是为什么他们被其他人所容忍。胡蜂牧民认为他们的小亲戚比胡蜂本身更符合自然规律，所以他们向他们寻求指导。他们用这些昆虫进行占卜，研究它们的飞行模式和行为。随着时间的推移，他们开始学习如何引导它们，并最终能够使用它们的声音和其他信号控制它们。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LCPVYew.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"damageTagsSpell": [
+				"I"
+			],
+			"attachedItems": [
+				"dart|phb"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Bogmangler",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 37,
+				"formula": "5d8 + 15"
+			},
+			"speed": {
+				"walk": {
+					"number": 20,
+					"condition": "(swim)"
+				}
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 16,
+			"int": 13,
+			"wis": 11,
+			"cha": 5,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"在第一轮战斗中，沼泽人在对它所惊动的任何生物进行攻击时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"妖怪用它的藤蔓鞭子进行两次攻击。"
+					]
+				},
+				{
+					"name": "Vine Whip",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达15英尺，一个目标。{@h}7 ({@damage 2d4 + 2})重击伤害。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d6 + 2})穿刺伤害加上4 ({@damage 1d8})中毒伤害。目标必须成功地做一个{@dc 13}体质测试，否则将在1分钟内被{@condition poisoned}。该生物可以在其每个回合结束时重复蓄力，如果成功则结束对自己的影响。"
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"如果bogmangler在水下，它就会使用藤蔓网络来推动自己，扑向它的敌人。它在一条直线上最多跳30英尺，并对触手可及的目标进行撕咬攻击。"
+					]
+				},
+				{
+					"name": "Entangling Plants {@recharge 5}",
+					"entries": [
+						"抓取的根和藤蔓在以沼泽人为中心的30英尺半径范围内发芽，1分钟后枯萎。在持续时间内，该区域对沼泽人和植物生物以外的生物来说是困难地形。此外，当植物出现时，在该区域内的每一个沼泽人选择的生物必须在一个{@dc 12}力量救赎上取得成功，否则会变成{@condition restrained}。一个生物可以用它的行动来做一个DC12力量检查，如果成功的话，就可以释放自己或另一个被缠住的生物。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"有时，隐藏在沼泽或靠近魔法场所的沼泽中的半腐烂的尸体可以转化为bogmangler。这些贪婪的亡灵类似于与沼泽地的根和植物融合的食尸鬼。藤蔓像肌肉一样缠绕着他们的骨架，他们的牙齿是厚厚的刺，不可能分辨出沼泽人的终点和周围植物的起点。它们可以控制周围的藤蔓和根系，甚至用它们来捕捉试图逃离它的猎物。沼泽人将沼泽作为自己的狩猎场，并将更多的受害者拉入沼泽深处，而这些受害者又可能慢慢转化为更多的沼泽人。",
+					"{@bold Endless hunger.}和许多不死生物一样，沼泽人对凡人的肉体有着永不满足的饥饿感。然而，吃东西并没有什么用，因为没有胃来容纳它饥肠辘辘的肉。沼泽人被困在一个永恒的进食和饥饿的循环中，只有当怪物最终被杀死时才会结束。",
+					"{@bold Patient hunters.} 沼泽人是伏击猎手：如果可能的话，他们更喜欢单独抓捕猎物，但如果猎物的饥饿感足够强烈，他们也会对几个生物进行攻击。它们很少与其他亡灵一起工作，但在一个特别丰富的狩猎点上有几个沼泽猎手也不是没有发生过。猎杀受害者时，沼泽人通常呆在水下，并利用从其身体上长出的藤蔓来感知潜在受害者的存在。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/6V2YvRH.png",
+			"traitTags": [
+				"Ambusher"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			]
+		},
+		{
+			"name": "Dire Pangolin",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 76,
+				"formula": "8d12 + 24"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 16,
+			"int": 7,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"穿山甲会进行三次攻击：一次是用舌头舔，两次是用爪子抓。"
+					]
+				},
+				{
+					"name": "Tongue Lash",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达20英尺，一个目标。{@h}7 ({@damage 1d8 + 3})重击伤害。如果目标是大型或小型，穿山甲会将目标拉近20英尺。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d10 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Noxious Cloud (1/Day)",
+					"entries": [
+						"穿山甲发出一个半径20英尺的黄色恶心气体球体，以自己为中心。云雾在角落里扩散，并在空气中徘徊1分钟。中等强度的风（至少每小时10英里）在4个回合后驱散该云。强风（至少每小时20英里）在1轮后将其驱散。",
+						"每个在其回合开始时完全在云层内的生物必须对毒药做一个{@dc 13}的宪法救赎。如果救赎失败，该生物在该回合的行动中会出现反胃和呕吐。不需要呼吸的生物或对毒药免疫的生物会自动成功地进行这个蓄力。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"只有蚂蚁才害怕普通的穿山甲，但任何比食人魔小的生物至少应该警惕在沼泽地里捕食的饥饿的可怕的穿山甲。与它们不那么危险的表亲相比，这些生物是巨大的，它们通常被简单地称为食人魔。",
+					"{@bold Ambush Predators.}可怕的穿山甲移动缓慢，但如果有需要，它们有办法让猎物靠近自己。它们用泥土、树叶和其他伪装物挖掘和覆盖自己，并等待猎物足够接近。一旦发生这种情况，穿山甲就会用它的粘性舌头把受害者拉近，用它的爪子把毫无戒心的猎物撕成碎片。",
+					"{@bold Masters of Self-Defense.} 地狱穿山甲的鳞片极难穿透，尤其是用砍击武器。它还可以用它的化学腺体来释放有毒的、恶臭的化学物质来对付威胁它的人。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LT9F3Zk.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Golden Hart",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d10 + 18"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 14,
+			"int": 20,
+			"wis": 18,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"understands Celestial",
+				"Elvish",
+				"and Sylvan but can't speak"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"哈特的先天法术能力是智力（法术保存（%0%））。哈特可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell fog cloud}",
+						"{@spell pass without trace}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell entangle}",
+							"{@spell greater restoration}",
+							"{@spell mass cure wounds}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"哈特对法术和其他魔法效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"如果哈特向一个目标直线移动至少20英尺，然后在同一回合用冲撞攻击击中它，目标会受到额外的7（{@damage 2d6}）重击伤害。如果目标是一个生物，它必须在一个{@dc 13}力量救赎中成功，否则会被击倒{@condition prone}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})重击伤害加上9 ({@damage 2d8})辐射伤害。"
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个{@condition prone}生物。{@h}19 ({@damage 3d10 + 3})重击伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"哈特用银色的雾气围绕着自己，并对一次会击中它的攻击增加{@dice 1d6}的攻击力。在攻击命中或未命中后，哈特会传送到它能看到的一个无人的空间，最多可以传送40英尺。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"金鹞子是一种难以捉摸、极其聪明的神话生物，它们致力于维持它们称之为家园的沼泽和湿地中的平衡。它们类似于鹿，但有四个角和两条尾巴。除此之外，金鹞子的外表相当不显眼，至少在与大多数天人相比时是如此。",
+					"{@bold Hearts of Gold.}有些民间故事说它们的皮是金色的，但事实并非如此。这些野兽的名字是一个错误的说法：金鹿是以它们的心脏命名的，它是由纯金制成的。很少有猎人拥有杀死金毛犼的技能，希望杀死金毛犼的猎人更是少之又少。杀死金丝楠木被认为是坏运气，任何通过出售心脏获得的财富据说都会受到诅咒。一些强大的魔法咒语需要心脏作为法术的组成部分。",
+					"{@bold Guides and Arbiters.} 金色的哈特以极大的兴趣观察他们的栖息地，注意任何可疑的活动和进入沼泽地的生物的不良意图。危险的怪物是沼泽的自然组成部分，金毛鼠会像保护沼泽中的其他生物一样保护它们，但那些试图腐蚀或以其他方式伤害沼泽本身的生物，会发现金毛鼠正在收集所有能得到的帮助来摧毁它们或把它们扔出去。如果冒险者在沼泽地里寻找一些哈特希望从沼泽地里移走的生物，他们会发现哈特在公开或暗中观察并协助他们的努力。",
+					"{@bold Beasts in the Mist.}那些想猎杀这些宏伟的野兽的人将会发现他们的工作很困难：金鹞子可以操纵它们周围的雾气来躲避那些想伤害它的人。许多猎人在沼泽地打猎时都会给金甲虫留下祭品，以此来请求允许他们在那里打猎。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/nBWhYBr.png",
+			"traitTags": [
+				"Charge",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CE",
+				"CS",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
+			]
+		},
+		{
+			"name": "Gorgemaw",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d6 + 6"
+			},
+			"speed": {
+				"walk": 35,
+				"burrow": 25,
+				"swim": 35
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 14,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 7,
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw}{@hit 3}击中，达到5英尺，{@h}6({@damage 2d4 + 1})穿刺伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"戈尔默斯是生活在沼泽地的相对无害的怪物。它们类似于吃腐肉和其他小动物的大而肥的鼻涕虫。它们行动迅速，贪婪地吃东西，通过偷袭猎物进行捕猎。当食物匮乏时，它们可能会攻击比它们大的生物，但通常它们会躲在阴影里，等待更大的生物走开。但偶尔，由于未知的原因，戈尔默斯开始以可怕的方式行事。",
+					"{@bold Endless Hunger.} 不时有一只高尔基玛开始比平时更饥渴地进食。它开始不断进食，吞噬一切可以捕获的东西，并开始成长。几天之内它就比马还大，两星期之内就有大象那么大，甚至在那之后还在继续生长。在这一点上，沼泽将完全没有其他动物生命。能够逃脱的生物都已经这样做了，而戈尔格玛就会移动到沼泽之外--通常是进入人形定居点。",
+					"{@bold Massive Threat.} 一个巨大的高尔基摩人可以吃掉整个村庄。它吃牲畜，吃村民，吃一切它能消化的东西。它继续吃，直到找到一个适合它的位置，结束它的横冲直撞，然后它就消失了，通常是在河边的山洞里，并开始产卵。它一次性产下数千个卵，然后死亡。新生的戈壁鱼吃了它们的母亲，离开巢穴，在周围的乡村里繁衍生息。",
+					"{@bold Cyclical Menaces.} 学者们不确定为什么会出现这些可怕的暴行。一些人认为，这些周期是基于食物的供应，另一些人认为是其他因素触发了这一过程，但没有人知道。听说附近有高脚虾生长的英雄们最好快点行动，因为虽然高脚虾的威胁会自己消失，但它留下的破坏力将是可怕的。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kzt5tgC.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Big Gorgemaw",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d8 + 12"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 16,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 7,
+			"cr": "1",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，{@h}9 ({@damage 2d6 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"戈尔默斯是生活在沼泽地的相对无害的怪物。它们类似于吃腐肉和其他小动物的大而肥的鼻涕虫。它们行动迅速，贪婪地吃东西，通过偷袭猎物进行捕猎。当食物匮乏时，它们可能会攻击比它们大的生物，但通常它们会躲在阴影里，等待更大的生物走开。但偶尔，由于未知的原因，戈尔默斯开始以可怕的方式行事。",
+					"{@bold Endless Hunger.} 不时有一只高尔基玛开始比平时更饥渴地进食。它开始不断进食，吞噬一切可以捕获的东西，并开始成长。几天之内它就比马还大，两星期之内就有大象那么大，甚至在那之后还在继续生长。在这一点上，沼泽将完全没有其他动物生命。能够逃脱的生物都已经这样做了，而戈尔格玛就会移动到沼泽之外--通常是进入人形定居点。",
+					"{@bold Massive Threat.} 一个巨大的高尔基摩人可以吃掉整个村庄。它吃牲畜，吃村民，吃一切它能消化的东西。它继续吃，直到找到一个适合它的位置，结束它的横冲直撞，然后它就消失了，通常是在河边的山洞里，并开始产卵。它一次性产下数千个卵，然后死亡。新生的戈壁鱼吃了它们的母亲，离开巢穴，在周围的乡村里繁衍生息。",
+					"{@bold Cyclical Menaces.} 学者们不确定为什么会出现这些可怕的暴行。一些人认为，这些周期是基于食物的供应，另一些人认为是其他因素触发了这一过程，但没有人知道。听说附近有高脚虾生长的英雄们最好快点行动，因为虽然高脚虾的威胁会自己消失，但它留下的破坏力将是可怕的。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kzt5tgC.png",
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Large Gorgemaw",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 47,
+				"formula": "5d10 + 20"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 18,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 7,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw}{@hit 5}击中，到达5英尺，{@h}12({@damage 2d8 + 3})穿刺伤害，目标是{@condition grappled}(逃跑{@dc 13})。"
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"高脚杯对正在抓取的中型或小型目标进行一次咬合攻击。如果攻击命中，目标会被吞噬，并且抓捕结束。被吞噬的目标是{@condition blinded}和{@condition restrained}，它对高脚杯外的攻击和其他效果有完全的掩护，并且在高脚杯的每个回合开始时受到10({@damage 3d6})酸液伤害。妖怪每次只能吞下一个目标。",
+						"如果高格玛死了，被吞的生物不再被它{@condition restrained}，可以用5英尺的移动距离逃离尸体，退出{@condition prone}。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"戈尔默斯是生活在沼泽地的相对无害的怪物。它们类似于吃腐肉和其他小动物的大而肥的鼻涕虫。它们行动迅速，贪婪地吃东西，通过偷袭猎物进行捕猎。当食物匮乏时，它们可能会攻击比它们大的生物，但通常它们会躲在阴影里，等待更大的生物走开。但偶尔，由于未知的原因，戈尔默斯开始以可怕的方式行事。",
+					"{@bold Endless Hunger.} 不时有一只高尔基玛开始比平时更饥渴地进食。它开始不断进食，吞噬一切可以捕获的东西，并开始成长。几天之内它就比马还大，两星期之内就有大象那么大，甚至在那之后还在继续生长。在这一点上，沼泽将完全没有其他动物生命。能够逃脱的生物都已经这样做了，而戈尔格玛就会移动到沼泽之外--通常是进入人形定居点。",
+					"{@bold Massive Threat.} 一个巨大的高尔基摩人可以吃掉整个村庄。它吃牲畜，吃村民，吃一切它能消化的东西。它继续吃，直到找到一个适合它的位置，结束它的横冲直撞，然后它就消失了，通常是在河边的山洞里，并开始产卵。它一次性产下数千个卵，然后死亡。新生的戈壁鱼吃了它们的母亲，离开巢穴，在周围的乡村里繁衍生息。",
+					"{@bold Cyclical Menaces.} 学者们不确定为什么会出现这些可怕的暴行。一些人认为，这些周期是基于食物的供应，另一些人认为是其他因素触发了这一过程，但没有人知道。听说附近有高脚虾生长的英雄们最好快点行动，因为虽然高脚虾的威胁会自己消失，但它留下的破坏力将是可怕的。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kzt5tgC.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Huge Gorgemaw",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 69,
+				"formula": "6d12 + 30"
+			},
+			"speed": {
+				"walk": 25,
+				"burrow": 20,
+				"swim": 25
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 20,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 7,
+			"resist": [
+				"piercing"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"高格玛会进行两次咬合攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw}{@hit 6}击中，到达5英尺，{@h}15({@dice 2d10}+4)穿刺伤害，目标{@condition grappled}(逃脱{@dc 14})。"
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"高脚杯对它正在抓捕的大型或小型目标进行一次撕咬攻击。如果攻击命中，目标会被吞噬，并且抓捕结束。被吞噬的目标是{@condition blinded}和{@condition restrained}，它对戈尔莫夫以外的攻击和其他效果有完全的掩护，并且在戈尔莫夫的每个回合开始时受到10({@damage 3d6})酸液伤害。",
+						"如果高脚杯在一个回合内受到23次或更多的伤害，高脚杯必须在该回合结束时成功地进行一次{@dc 15}宪法救赎，或者反刍所有被吞的生物，这些生物会在高脚杯5英尺内的空间里掉落{@condition prone}。如果高脚虾死亡，被吞食的生物不再被它影响（%2%），可以用10英尺的移动距离逃离尸体，离开（%3%）。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"戈尔默斯是生活在沼泽地的相对无害的怪物。它们类似于吃腐肉和其他小动物的大而肥的鼻涕虫。它们行动迅速，贪婪地吃东西，通过偷袭猎物进行捕猎。当食物匮乏时，它们可能会攻击比它们大的生物，但通常它们会躲在阴影里，等待更大的生物走开。但偶尔，由于未知的原因，戈尔默斯开始以可怕的方式行事。",
+					"{@bold Endless Hunger.} 不时有一只高尔基玛开始比平时更饥渴地进食。它开始不断进食，吞噬一切可以捕获的东西，并开始成长。几天之内它就比马还大，两星期之内就有大象那么大，甚至在那之后还在继续生长。在这一点上，沼泽将完全没有其他动物生命。能够逃脱的生物都已经这样做了，而戈尔格玛就会移动到沼泽之外--通常是进入人形定居点。",
+					"{@bold Massive Threat.} 一个巨大的高尔基摩人可以吃掉整个村庄。它吃牲畜，吃村民，吃一切它能消化的东西。它继续吃，直到找到一个适合它的位置，结束它的横冲直撞，然后它就消失了，通常是在河边的山洞里，并开始产卵。它一次性产下数千个卵，然后死亡。新生的戈壁鱼吃了它们的母亲，离开巢穴，在周围的乡村里繁衍生息。",
+					"{@bold Cyclical Menaces.} 学者们不确定为什么会出现这些可怕的暴行。一些人认为，这些周期是基于食物的供应，另一些人认为是其他因素触发了这一过程，但没有人知道。听说附近有高脚虾生长的英雄们最好快点行动，因为虽然高脚虾的威胁会自己消失，但它留下的破坏力将是可怕的。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kzt5tgC.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Gargantuan Gorgemaw",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"G"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 115,
+				"formula": "7d20 + 42"
+			},
+			"speed": {
+				"walk": 20,
+				"burrow": 15,
+				"swim": 20
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 22,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 7,
+			"resist": [
+				"piercing"
+			],
+			"cr": "6",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"戈尔马乌会进行两次咬合攻击。它可以用吞食来代替其中一次攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw}{@hit 7}击中，到达5英尺，{@h}17({@dice 2d12}+4)穿刺伤害，目标{@condition grappled}(逃脱{@dc 15})。"
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"高脚杯对正在抓取的巨大或更小的目标进行一次撕咬攻击。如果攻击命中，目标会被吞噬，并且抓捕结束。被吞噬的目标是{@condition blinded}和{@condition restrained}，它对高脚杯外的攻击和其他效果有完全的掩护，并且在高脚杯的每个回合开始时受到10({@damage 3d6})酸液伤害。",
+						"如果高脚杯在一个回合内受到38次或更多的伤害，高脚杯必须在该回合结束时做一个{@dc 16}宪法救赎的动作，否则会反刍所有被吞的生物，这些生物会在高脚杯5英尺内的空间里掉落{@condition prone}。如果高脚虾死了，被吞食的生物不再被它影响（%2%），可以用15英尺的移动距离逃离尸体，离开（%3%）。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"戈尔默斯是生活在沼泽地的相对无害的怪物。它们类似于吃腐肉和其他小动物的大而肥的鼻涕虫。它们行动迅速，贪婪地吃东西，通过偷袭猎物进行捕猎。当食物匮乏时，它们可能会攻击比它们大的生物，但通常它们会躲在阴影里，等待更大的生物走开。但偶尔，由于未知的原因，戈尔默斯开始以可怕的方式行事。",
+					"{@bold Endless Hunger.} 不时有一只高尔基玛开始比平时更饥渴地进食。它开始不断进食，吞噬一切可以捕获的东西，并开始成长。几天之内它就比马还大，两星期之内就有大象那么大，甚至在那之后还在继续生长。在这一点上，沼泽将完全没有其他动物生命。能够逃脱的生物都已经这样做了，而戈尔格玛就会移动到沼泽之外--通常是进入人形定居点。",
+					"{@bold Massive Threat.} 一个巨大的高尔基摩人可以吃掉整个村庄。它吃牲畜，吃村民，吃一切它能消化的东西。它继续吃，直到找到一个适合它的位置，结束它的横冲直撞，然后它就消失了，通常是在河边的山洞里，并开始产卵。它一次性产下数千个卵，然后死亡。新生的戈壁鱼吃了它们的母亲，离开巢穴，在周围的乡村里繁衍生息。",
+					"{@bold Cyclical Menaces.} 学者们不确定为什么会出现这些可怕的暴行。一些人认为，这些周期是基于食物的供应，另一些人认为是其他因素触发了这一过程，但没有人知道。听说附近有高脚虾生长的英雄们最好快点行动，因为虽然高脚虾的威胁会自己消失，但它留下的破坏力将是可怕的。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/kzt5tgC.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Hodgepoker",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d6 + 2"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 12,
+			"int": 11,
+			"wis": 9,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Sure-Footed",
+					"entries": [
+						"扑克牌手在面对会击倒它的效果时，在力量和灵巧的拯救动作上有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Rolling Tumble",
+					"entries": [
+						"对扑克牌的机会性攻击具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}3 ({@damage 1d4 + 1})重击伤害。"
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 3}击中，范围20/60英尺，一个目标。{@h}3 ({@damage 1d4 + 1})穿刺伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"妖精有许多不同的形状和大小，其中最不寻常的是霍奇帕克人。这些矮小的生物走起路来驼背很深，这使它们看起来就像它们的身高一样宽。它们有大头，大嘴，头部覆盖着坚硬的甲壳，甲壳上不对称地长出角状物。",
+					"{@bold Swamp Dwellers and Raiders.}Hodgepokers不会建造、制作或生长。他们偷东西。Hodgepokers找到另一种生物的巢穴，杀死它或迫使它离开，并从那里向巢穴周围的人形定居点进行突袭。他们更喜欢生活在湿地中，因为湿地为他们提供了掩护，帮助他们躲避不断突袭所带来的不可避免的报复。",
+					"{@bold Shrewd and Resourceful.}霍奇帕克人并不十分聪明，但他们有一个诀窍，那就是为他们找到的物品找到有用和聪明的用途，并利用他们周围的环境对他们有利。他们知道如何制造分心和埋伏，并喜欢在自己选择的地点以压倒性的数量进行攻击。他们不喜欢制定计划，而是喜欢随着形势的发展制定策略。",
+					"{@bold Anarchistic and Chaotic.}Hodgepokers本质上是混乱的。除了偷窃之外，Hodgepokers还高兴地破坏和损害财产。他们焚烧庄稼，砸碎窗户，破坏任何他们认为没有用的东西。他们也不关心群体中的等级制度或结构。hodgepoker群体中的领导者是临时的突击队老大，而且往往突击队甚至没有人领导：一个群体偷它发现的东西，破坏它喜欢的东西，当情况对他们来说太危险时就会离开。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/mngXtNc.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"club|phb",
+				"dart|phb"
+			]
+		},
+		{
+			"name": "Hodgepoker Crackerjack",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|PHB|hide}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d6 + 4"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 14,
+			"int": 13,
+			"wis": 9,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Sure-Footed",
+					"entries": [
+						"扑克牌手在面对会击倒它的效果时，在力量和灵巧的拯救动作上有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Rolling Tumble",
+					"entries": [
+						"对扑克牌的机会性攻击具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d8 + 1})重击伤害。"
+					]
+				},
+				{
+					"name": "Hurl Mollusk (1/Day)",
+					"entries": [
+						"{@atk rw} {@hit 3}击中，范围20/60英尺，一个目标。{@h}4 ({@damage 1d6 + 1})重击伤害。被抛出的骷髅软体动物（见下文）试图用它的触手抓取目标。如果不成功，它就会出现在目标5英尺内一个无人的空间。它对目标有敌意。"
+					]
+				},
+				{
+					"name": "Toss Mud",
+					"entries": [
+						"{@atk rw}{@hit 3}击中，范围20/60英尺，一个目标。{@h}目标是{@condition blinded}。目标可以使用其行动来移除泥浆并结束效果。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"妖精有许多不同的形状和大小，其中最不寻常的是霍奇帕克人。这些矮小的生物走起路来驼背很深，这使它们看起来就像它们的身高一样宽。它们有大头，大嘴，头部覆盖着坚硬的甲壳，甲壳上不对称地长出角状物。",
+					"{@bold Swamp Dwellers and Raiders.}Hodgepokers不会建造、制作或生长。他们偷东西。Hodgepokers找到另一种生物的巢穴，杀死它或迫使它离开，并从那里向巢穴周围的人形定居点进行突袭。他们更喜欢生活在湿地中，因为湿地为他们提供了掩护，帮助他们躲避不断突袭所带来的不可避免的报复。",
+					"{@bold Shrewd and Resourceful.}霍奇帕克人并不十分聪明，但他们有一个诀窍，那就是为他们找到的物品找到有用和聪明的用途，并利用他们周围的环境对他们有利。他们知道如何制造分心和埋伏，并喜欢在自己选择的地点以压倒性的数量进行攻击。他们不喜欢制定计划，而是喜欢随着形势的发展制定策略。",
+					"{@bold Anarchistic and Chaotic.}Hodgepokers本质上是混乱的。除了偷窃之外，Hodgepokers还高兴地破坏和损害财产。他们焚烧庄稼，砸碎窗户，破坏任何他们认为没有用的东西。他们也不关心群体中的等级制度或结构。hodgepoker群体中的领导者是临时的突击队老大，而且往往突击队甚至没有人领导：一个群体偷它发现的东西，破坏它喜欢的东西，当情况对他们来说太危险时就会离开。",
+					"{@bold Crackerjacker.}特别狡猾的霍奇帕奇人被称为裂缝者。尽管霍奇帕奇团体在本质上是无政府主义的，但裂缝者往往最终在突袭中发号施令，因为他们是最机智和聪明的。一个突击队可以有几个疯子，最后可能会把突击队员分成几个小队，每个小队都跟着一个疯子的聪明主意。劫匪们最喜欢使用的伎俩之一是使用（1%）（见本手册）作为简易的投射物。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/mngXtNc.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"attachedItems": [
+				"flail|phb"
+			]
+		},
+		{
+			"name": "Maladrix",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 35,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 15,
+			"cha": 12,
+			"save": {
+				"wis": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"intimidation": "+7",
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"vulnerable": [
+				"thunder"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks damage immunties necrotic, poison",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Aura of Silence",
+					"entries": [
+						"如果恶灵不在阳光下，在恶灵的15英尺范围内没有声音可以通过或产生。任何完全在半径内的生物或物体都对雷霆伤害免疫，而生物在完全在半径内时是（%0%）。在那里施放包含语言成分的法术是不可能的。"
+					]
+				},
+				{
+					"name": "Soul Harvest",
+					"entries": [
+						"死于恶灵攻击的生物无法用7级或更低的法术复活，除非恶灵已死，且其心脏被摧毁。"
+					]
+				},
+				{
+					"name": "Spiderclimb",
+					"entries": [
+						"恶灵可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"在阳光下时，恶灵在攻击卷轴上有劣势，在依靠视觉的智慧（感知）检查上也是如此。"
+					]
+				},
+				{
+					"name": "Whispers of Madness",
+					"entries": [
+						"任何在玛拉迪克斯5英尺范围内开始它的回合的生物必须做一个{@dc 15}智慧救赎的动作。如果失败，该生物在下一回合开始前不能做出反应，并掷出{@dice d10}来决定它在回合中做什么。",
+						"在1到3的情况下，该生物会感到可怕的焦虑，并且是（%0%）直到其回合结束。",
+						"在4到6的情况下，该生物屈服于昏迷状态，并在其回合结束前处于（%0%）的状态。",
+						"在7到8的情况下，该生物被恐惧所淹没；它不能采取任何行动或额外行动，并使用它所有的移动来远离恶灵。",
+						"在9到10分的情况下，该生物感到无法控制的愤怒，并对其范围内的一个随机盟友进行近身攻击，如果它不能进行这样的攻击，则对自己进行近身攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶灵用它的爪子进行三次攻击。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Necrotic Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d6 + 2})穿刺伤害加上13 ({@damage 2d12})坏死伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Claw Slash",
+					"entries": [
+						"马拉德里克斯进行了一次爪击。"
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"恶灵会进行智慧（感知）检查。"
+					]
+				},
+				{
+					"name": "Jump",
+					"entries": [
+						"恶灵跳到它的速度上，跳到一个无人的空间，而不会引起机会攻击。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"没有人知道恶灵是如何诞生的。有人说，一个罪恶的城市会在城市的隐蔽角落里孕育一个。还有人猜测，它是一个侵占了污秽和骨头的集合体的精神，以找到一个可以居住的形式。然而，如果不加以控制，它是一种祸害，会以许多可怕的方式折磨一个城市。",
+					"{@bold Revolting and Ghastly.} Maladrixes的上半身是巨兽，下半身是昆虫状的六条腿。他们的骨头以令人厌恶的方式从肉体中挤出，他们的气味是死肉和下水道垃圾的结合。",
+					"{@bold Horrors in the Sewers.} Maladrixes通常在大城市的下水道中被发现，但有时在沼泽或地下洞穴中也能找到它们。大多数人喜欢靠近他们的猎物，这就是为什么他们喜欢城市而不是野外--即使城市对他们来说是更危险的狩猎场。",
+					"{@bold Telepathic Mind Breakers.} Maladrixes有心灵感应，但他们不说任何语言。相反，他们通过图像和情绪进行交流。他们在附近投射出一种心灵感应的光环，不连贯的低语，扭曲了受害者的思想，制造出清醒的噩梦，使他们彼此对立。他们在夜间捕猎，以可怕和虐待狂的方式杀死他们的猎物，然后享用他们的灵魂，并将尸体丢在外面散播恐惧。",
+					"{@bold Harvesters of Souls.} 当恶灵杀死一个生物时，它会吞噬受害者的灵魂。以这种方式失去灵魂的生物是不可能复活的，尽管灵魂在恶灵的心脏中保持了几天的完整，心脏是怪物胸部的一个钙化的、类似骨质的结构。打破心脏可以释放所有尚未被吞噬的灵魂。",
+					"{@bold Dreadful Silencers.} Maladrixes在移动时似乎不会发出任何声音，但实际情况却更令人不安。Maladrixes使它们周围的所有声音失聪，使它们无法被声音发现。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/3uQfuUU.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Mire Ooze",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				7
+			],
+			"hp": {
+				"average": 76,
+				"formula": "8d12 + 24"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 5,
+			"con": 16,
+			"int": 1,
+			"wis": 8,
+			"cha": 1,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 9,
+			"immune": [
+				"acid",
+				"cold",
+				"lightning",
+				"slashing"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"prone"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"渗出物可以在1英寸宽的狭窄空间中移动而不被挤压。"
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"当渗出物保持不动，处于水面时，它与它所漂浮的水面是无法区分的。"
+					]
+				},
+				{
+					"name": "Floater",
+					"entries": [
+						"渗出物可以在水面上移动，就像固体地面一样。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Drown",
+					"entries": [
+						"如果渗出物在水面上，它就会试图把比它小的目标拉到自己的下面，进入水中。",
+						"{@atk mw} {@hit 5}击中，到达10英尺，一个目标。{@h}目标被拉入敖包的空间。目标受到10({@damage 3d6})酸液伤害。目标不能呼吸，被{@condition restrained}，并在渗水体的每个回合开始时受到10({@damage 3d6})酸液伤害。当渗水体移动时，目标也随之移动。",
+						"受此能力影响的目标可以尝试逃跑，方法是采取一个行动，做一个{@dc 13}力量检查。如果成功，目标就会逃脱，并进入一个它所选择的、离渗出物5英尺以内的空间。"
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达10英尺，一个目标。{@h}10 ({@damage 2d6 + 3})重击伤害加上10 ({@damage 3d6})酸液伤害。"
+					]
+				},
+				{
+					"name": "Splash",
+					"entries": [
+						"如果泥浆在水面上，它会突然扭曲它的形状，形成一个波浪。淤泥周围5英尺范围内的每个生物都必须成功地进行一次{@dc 13}力量救赎，否则会被击倒{@condition prone}。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Split",
+					"entries": [
+						"当一个中型或大型的渗水体受到闪电或砍击伤害时，如果它有至少10点的命中率，它就会分裂成两个新的渗水体。每个新的渗水体的命中率等于原渗水体的一半，向下取整。新乌兹比原乌兹小一号。如果一个生物在渗水体分裂时受到溺水的影响，该生物可以使用其反应来试图逃跑。如果分裂的渗出物导致其大小与被淹没的生物相同或更小，那么淹没的效果就会结束。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"沼泽和泥沼中发现的小而深的池子的表面漂浮着，沼泽渗出物是罕见的渗出物之一，它喜欢外面而不是洞穴和地牢中潮湿的内部。沼泽选择一个与自己大小接近的池子，将自己薄薄地铺在水面上。它们和漂浮在上面的池子一样黑，并通过等待一些生物离它太近来狩猎。",
+					"{@bold Manipulators of Water.}虽然泥沼的智慧并不比下一个泥沼高，但它已经适应了周围的环境。它毫不费力地漂浮在水面上，并能利用水来淹没它的受害者。有时，泥沼会猛烈地扭曲它们的形态，在它们周围制造波浪，使它们毫无戒心的猎物俯首称臣，更容易受到它冰冷的酸性拥抱。",
+					"{@bold Ooze Nature.} 渗水剂不需要睡眠。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/EpIeCg1.png",
+			"traitTags": [
+				"Amorphous",
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"attachedItems": [
+				"drown|pota"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Molder Spawn",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 9,
+			"con": 10,
+			"int": 5,
+			"wis": 6,
+			"cha": 3,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Fungal Communication",
+					"entries": [
+						"霉菌卵可以通过分泌气味与周围60英尺内的霉菌进行无声交流。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}3 ({@damage 1d4 + 1})砍击伤害加上3 ({@damage 1d6})毒药伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"霉菌是一群居住在沼泽地的生物，当某种类型的真菌找到合适的宿主生长时就会形成。误入沼泽并迷路的生物，疲惫不堪或生病的生物，是霉菌群落占据他们的最常见受害者。一旦感染，可能很容易治愈，但如果不加以治疗，其结果可能是比死亡更糟糕的命运--为真菌服务的无期徒刑。",
+					"{@bold Spreading Blight.}如果有足够的合适的宿主，霉菌可以迅速蔓延并完全占领一个沼泽。随着时间的推移，它们会慢慢分解并吃掉它们的宿主，所以霉菌的爆发会在一段时间后平静下来。战争结束后，霉菌会成为沼泽地附近名副其实的瘟疫，这是一种常见的情况。值得庆幸的是--或者说不幸的是，这取决于你的观点--霉菌只能感染人形生物。远离霉菌感染的沼泽地将最终迫使疫情消亡。",
+					"{@bold Swamp Dwellers.} 霉菌需要大量的阴凉和水分来生存，所以它们很少从它们侵占的沼泽地中游走。",
+					"{@bold Molder Spawn.} 最简单的塑化剂形式是塑化剂卵。它们通常是小型或中型人形生物，被转化为类似人形真菌的东西。转化过程在一定程度上消耗了宿主，导致生物的缩小版。尽管它们体型庞大，但这些生物具有攻击性，会对任何对手进行无情的攻击。",
+					"{@bold Drones and Protectors.}有些人推测，塑化剂可能保留了它们的宿主的一些智力，当有足够的宿主在附近时，可以形成一种蜂巢思想。在这种情况下，人们认为塑化剂产卵开始执行更复杂的任务，并成为由几个塑化剂宿主共同工作的更广泛的塑化剂殖民地的无人机。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ozsIHPb.png",
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Molder Bloom",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d8 + 12"
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 6,
+			"cha": 3,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Fungal Communication",
+					"entries": [
+						"霉菌花可以通过分泌气味与周围60英尺内的霉菌进行无声交流。"
+					]
+				},
+				{
+					"name": "Noxious Spores",
+					"entries": [
+						"在它5英尺范围内，触及熔炉之花或用近身攻击击中它的生物会受到3（（%0%））的中毒伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pummel",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}8 ({@damage 2d6 + 1})重击伤害加上3 ({@damage 1d6})毒伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"霉菌是一群居住在沼泽地的生物，当某种类型的真菌找到合适的宿主生长时就会形成。误入沼泽并迷路的生物，疲惫不堪或生病的生物，是霉菌群落占据他们的最常见受害者。一旦感染，可能很容易治愈，但如果不加以治疗，其结果可能是比死亡更糟糕的命运--为真菌服务的无期徒刑。",
+					"{@bold Spreading Blight.}如果有足够的合适的宿主，霉菌可以迅速蔓延并完全占领一个沼泽。随着时间的推移，它们会慢慢分解并吃掉它们的宿主，所以霉菌的爆发会在一段时间后平静下来。战争结束后，霉菌会成为沼泽地附近名副其实的瘟疫，这是一种常见的情况。值得庆幸的是--或者说不幸的是，这取决于你的观点--霉菌只能感染人形生物。远离霉菌感染的沼泽地将最终迫使疫情消亡。",
+					"{@bold Swamp Dwellers.} 霉菌需要大量的阴凉和水分来生存，所以它们很少从它们侵占的沼泽地中游走。",
+					"{@bold Molder Bloom.} 如果一个宿主足够大，可以滋养一个大型的、特别有侵略性的萎缩者孢子群，其结果被称为萎缩者花。这些生物很容易与单纯的焊工卵区分开来：它们的颜色更丰富，体积更大，尽管仍然比它们的原始宿主小得多。",
+					"{@bold Poisonous Spores.} 霉菌花被孢子囊覆盖，很容易爆裂，传播窒息性的有毒孢子，甚至可能将霉菌群传播到太弱的宿主身上，无法抵抗它们的感染。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/rJnK87d.png",
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Molder Titan",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d10 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 5,
+			"cha": 3,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 7,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Fungal Communication",
+					"entries": [
+						"熔炼者泰坦可以通过分泌气味与周围60英尺内的熔炼者进行无声交流。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"熔炼者泰坦进行两次爪子攻击。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})砍击伤害加上3 ({@damage 1d6})毒药伤害。"
+					]
+				},
+				{
+					"name": "Entangling Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d10 + 2})穿刺伤害加上3 ({@damage 1d6})中毒伤害。如果目标是大型或较小的生物，它必须成功地进行一个{@dc 12}力量救赎，或者被{@condition grappled}(逃脱{@dc 12})。",
+						"在抓捕结束之前，熔炉泰坦只能咬住（%0%）的生物，并且在攻击卷上有优势。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"霉菌是一群居住在沼泽地的生物，当某种类型的真菌找到合适的宿主生长时就会形成。误入沼泽并迷路的生物，疲惫不堪或生病的生物，是霉菌群落占据他们的最常见受害者。一旦感染，可能很容易治愈，但如果不加以治疗，其结果可能是比死亡更糟糕的命运--为真菌服务的无期徒刑。",
+					"{@bold Spreading Blight.}如果有足够的合适的宿主，霉菌可以迅速蔓延并完全占领一个沼泽。随着时间的推移，它们会慢慢分解并吃掉它们的宿主，所以霉菌的爆发会在一段时间后平静下来。战争结束后，霉菌会成为沼泽地附近名副其实的瘟疫，这是一种常见的情况。值得庆幸的是--或者说不幸的是，这取决于你的观点--霉菌只能感染人形生物。远离霉菌感染的沼泽地将最终迫使疫情消亡。",
+					"{@bold Swamp Dwellers.} 霉菌需要大量的阴凉和水分来生存，所以它们很少从它们侵占的沼泽地中游走。",
+					"{@bold Molder Titan.} 沼泽是许多巨魔的家园，而这些巨魔有时又会成为塑化剂的宿主。在这种情况下，巨魔的奇怪变异特性会创造出一种被称为熔炼者泰坦的怪异生物。",
+					"{@bold Hulking Mass.} 熔炼者泰坦与其他熔炼者的不同之处在于它的尺寸：巨魔组织的再生特性为熔炼者群体提供了看似无尽的养料，这反过来又创造了一个越来越大的怪物。随着时间的推移，这些再生特性会随着肉体的腐烂而减弱，而熔炼者群体开始消耗更多可用的东西。值得庆幸的是，这导致了熔炼者泰坦成为短命的可憎之物。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/QP8376T.png",
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Oozehound",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d10 + 16"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 5,
+			"wis": 14,
+			"cha": 1,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Smelly",
+					"entries": [
+						"任何在依靠嗅觉的智慧（感知）检查中具有优势的生物都会自动知道120英尺范围内的一条渗水犬的位置。"
+					]
+				},
+				{
+					"name": "Sticky",
+					"entries": [
+						"渗水犬可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"渗水犬进行四次触手拍打攻击。"
+					]
+				},
+				{
+					"name": "Tentacle Slap",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达10英尺，一个目标。{@h}5 ({@damage 1d6 + 2})重击伤害，目标必须成功进行{@dc 12}宪法救赎。拯救失败后，该生物不能使用反应，其速度减半，直到其下一回合结束。",
+						"如果目标已经受到这个能力的影响，并且再次被击中，它将重复蓄力，并且在失败时被（%0%），直到下一回合结束。如果成功，原来的效果将持续到目标的下一回合结束。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}11 ({@damage 2d8 + 2})穿刺伤害加上11 ({@damage 2d10})毒药伤害。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"渗水猎犬既不是猎犬也不是渗水物，但与两者都有相似之处，至少在外表上。渗水犬是一种由肮脏的巫术创造出来的真正可怕的生物。在看到它之前就能闻到它的气味：它身上覆盖的粘液的强烈气味类似于臭鸡蛋的臭味。它们生活在潮湿、隐蔽的地方，如沼泽、湖边的洞穴，甚至下水道。",
+					"{@bold Solitary Hunters.} 渗水猎犬将一个足够大的区域作为自己的领地，并激烈地保卫它，防止所有可能的入侵者，包括其他渗水猎犬。它可以容忍比它小得多的生物，只要它们保持距离并且看起来对它不构成威胁。",
+					"{@bold Covered in Slime.} 渗水犬身上有一种粘稠的液体，它不断地分泌。这使它能够爬上表面并困住它的对手。它的背上长出了许多触角，所有的触角都被这种粘稠的、有气味的物质所覆盖。任何被拍打到的人都会立刻被这种恶心的粘液所覆盖，并且会发现行动困难。",
+					"{@bold Unlikely Guard Dogs.}尽管它相当具有攻击性，但一些小型的人形生物，如哥布林，已经学会了如何利用渗水犬作为守卫，为它们提供食物并保持恭敬的距离。吃饱了的食人魔犬很乐意呆在原地，所以它可以被用来守卫下水道中的一个战略位置。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/DidvmVZ.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Shadestalker",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d10 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 20,
+			"con": 12,
+			"int": 14,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft. (penetrates magical darkness)"
+			],
+			"passive": 15,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				{
+					"resist": [
+						"slashing"
+					],
+					"note": "while in dim light or darkness",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Shadow Stride",
+					"entries": [
+						"当阴阳师处于昏暗的光线或黑暗中时，它可以使用一个额外的行动来传送到它能看到的同样处于昏暗光线或黑暗中的无人空间，最多可以传送60英尺。"
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"当处于阳光所产生的强光下时，阴阳师在攻击卷、能力检查和蓄力方面都处于劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"阴阳师进行三次刺杀攻击。"
+					]
+				},
+				{
+					"name": "Impale",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达10英尺，一个目标。{@h}7 ({@damage 1d10 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Obscure {@recharge 5}",
+					"entries": [
+						"一个半径为15英尺的魔法黑暗从阴影跟踪者那里延伸出来，并在角落里扩散。",
+						"黑暗不会随着影子跟踪者移动，但只要影子跟踪者保持注意力，就会持续下去，最长可达1分钟（就像集中精力于一个法术）。黑暗视觉无法穿透这片黑暗，也没有自然光可以照亮它。如果任何黑暗与二级或更低等级的法术所创造的光亮区域重叠，创造光亮的法术会被驱散。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"穿过沼泽地的旅行者会受到许多不同生物的威胁，但很少有像阴影行者那样可怕的。这些生物原产于影子元素界，但当机会出现时，或被施法者或其他强大的生命召唤时，它们经常溜进凡人界。他们很少在直接的光线下被看到，大多数人在被他们刺伤之前，只看到他们的绿色眼睛在黑暗中闪烁。",
+					"{@bold Masterful Lurkers.} 阴阳师很像植物，但近距离观察就会发现它是另一种东西。虽然它的身体看起来像根系的集合，但它被皮肤而不是树皮所覆盖。皮肤光滑，具有变色龙般的表面，可以改变其颜色，并以一种似乎在没有纹理的地方创造纹理的方式操纵光线。只有在直射的光线下，才会发现阴阳人实际上是白色珍珠的颜色。猎杀猎物时，它们通常呆在原地或从一个影子移到另一个影子，只要是最适合的情况。",
+					"{@bold Servants and Sentinels.}阴影跟踪者经常为更强大的生命服务，例如女巫或邪恶的施法者，甚至是黑龙。他们通常在主人的巢穴周围充当守卫，并杀死所有在巢穴附近徘徊的人。它们是冷酷无情的生物，喜欢看到生命从受害者的眼中消失，因为它们长矛般的肢体会刺伤他们。有时，他们的主人命令他们为他们进行侦察和监视，这是阴阳人擅长的事情，但并不喜欢。在这样的任务中，它的嗜血本性可能会占上风，它可能会违背命令攻击它的目标。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Pg8auLN.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Skull Mollusk",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d6"
+			},
+			"speed": {
+				"walk": 10,
+				"climb": 10
+			},
+			"str": 7,
+			"dex": 10,
+			"con": 10,
+			"int": 6,
+			"wis": 9,
+			"cha": 6,
+			"passive": 9,
+			"cr": "0",
+			"action": [
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 0}击中，到达5英尺，一个目标。{@h}1次暴击伤害，目标为{@condition grappled}（逃跑{@dc 8}）。在抓捕结束前，软体动物可以啃咬目标，并且在攻击卷轴上有优势，这样做。"
+					]
+				},
+				{
+					"name": "Gnaw",
+					"entries": [
+						"{@atk mw}{@hit 0}击中，到达5英尺，一个被软体动物{@condition grappled}的目标。{@h}2 ({@damage 1d4})穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Drop Attack",
+					"entries": [
+						"当软体动物掉落到一个生物身上或以其他方式影响到一个生物时，它可以用触手对其进行有利的攻击。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"颅骨软体动物是章鱼的陆栖表亲。它们的名字来自于它们把头骨或类似的圆形物体作为保护壳藏起来的习惯。它们带着壳到处跑，爬到树上，等待伏击它们的猎物。头骨软体动物是食肉动物，但有一个特殊的进食习惯：它们喜欢用触角抓取较大的生物并啃咬它们，取出小口的肉来吃。当没有这样的猎物时，它们就捡拾并食用腐肉。它们的触角覆盖着小而弯曲的倒钩，这使它们更容易附着在任何种类的生物上。",
+					"{@bold Pets of Hodgepokers.}等生物（见本手册前面的内容）喜欢捕捉头骨软体动物，以用于他们的诡计。携带这些生物很容易，因为软体动物通常藏在头骨里，放在黑暗的地方，比如袋子里，就会失去活性。霍奇博克人有时会将这些生物扔向毫无戒心的敌人，目的是减缓他们的速度或分散他们的注意力。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/dOPOD3Q.png",
+			"actionTags": [
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Svampyr",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "montrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d10 + 30"
+			},
+			"speed": {
+				"walk": 5,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 17,
+			"int": 5,
+			"wis": 8,
+			"cha": 3,
+			"senses": [
+				"blindsight 20 ft. (blind beyond this radius)",
+				"tremorsense 60 ft."
+			],
+			"passive": 9,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"斯瓦普尔人可以呼吸空气和水。"
+					]
+				},
+				{
+					"name": "Water Dependency",
+					"entries": [
+						"吸血鬼每隔1分钟不接触水就会受到6({@damage 1d12})的酸性伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Grapple",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d10 + 3})穿刺伤害。如果目标是中型或小型生物，则是{@condition grappled}(逃跑{@dc 13})。",
+						"在吸血鬼的每个回合开始时，目标会因为失血而失去6({@dice 1d6 + 3})点生命值，而吸血鬼会重新获得与所受伤害相等的生命值。如果吸血魔采取 \"击打 \"行动，则抓捕结束。"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})重击伤害。"
+					]
+				},
+				{
+					"name": "Flail About",
+					"entries": [
+						"如果吸血僵尸至少部分浸泡在水中，它就会剧烈地摆动身体，使水四处飞溅。在它周围10英尺内的每个生物都必须在宪法规定的投掷中成功，否则就会被{@dc 13}，直到吸血僵尸的下一个回合结束。此外，吸血魔对它周围5英尺内的每个生物进行猛烈攻击。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"这个名字是由现已被遗忘的邪恶巫师命名的，他需要哨兵来守卫他隐藏的实验室，并有一个聪明的想法，即创造巨大的、贪婪的水蛭来完成这项工作，斯万皮尔是游过湿地的最丑陋和最危险的东西之一。",
+					"{@bold Bloodsucking Grapplers.} 一只吸血鬼潜伏在沼泽的浅水区，四处寻找猎物。一旦发现猎物，它就会等待并试图找到一个攻击的时机。一旦找到机会，它就试图抓住目标，用它的下巴将其包住。藏在它嘴里的许多锋利的刀片穿透了受害者的皮肤，沼泽地开始从受害者身上吸血。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/aKrh9iC.png",
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Utburd",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 76,
+				"formula": "9d10 + 27"
+			},
+			"speed": {
+				"walk": 25,
+				"burrow": 20
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"passive": 10,
+			"languages": [
+				"understands Sylvan but can't speak"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}12 ({@damage 2d8 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Horrifying Wail {@recharge 5}",
+					"entries": [
+						"狼牙棒发出令人不安的哀号。在乌伯德60英尺范围内的每一个乌伯德选择的生物，如果能听到它的声音，必须在一个{@dc 10}智慧救赎中成功，否则就会被{@condition frightened}，直到乌伯德的下一个回合结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Furious Retribution",
+					"entries": [
+						"当乌伯德15英尺范围内的生物杀死了一个巴恩博格，乌伯德可以向该生物移动10英尺，如果它能够的话，可以对该生物进行一次爪击攻击。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Utburd的意思是 \"被带到外面\"，这是一个古老的短语，指的是出生后被遗弃的孩子。通常情况下，新生儿会被藏在沼泽地里，让bane bogies找到，但有时bane bogies甚至会从附近的村庄偷走新生儿。沼泽人喂养婴儿，直到它开始转变和成长，形成一个巨大的怪物，把沼泽人视为自己的家人，并猛烈地保护他们。utburds的头部有一些类似于人形的特征，但它们的身体却不是：它们有粗壮、短小的身体，类似于巨大的鼹鼠，还有锋利的爪子，它们用来残害敌人和挖掘。",
+					"{@bold Horrifying Howlers.}乌特伯德发出的声音几乎与新生儿发出的声音相同，这足以让任何试图猎杀或与它们战斗的人感到不寒而栗。他们阴森的嚎叫声很响亮，周围几英里都能听到，所以任何有胆量的人都可以利用这些声音来找到巴恩-博吉部落的位置。",
+					"{@bold Servants of Bane Bogies.}乌特伯德人服务于{@creature bane bogy|MMM:SS|bane bogies}（见本手册前文）并保护他们。它们在bogies的家园树附近挖一个洞穴作为自己的巢穴，并攻击任何试图接近部落的人。有时，如果乌特伯德长得足够大，贝恩博格斯就可以用它来攻击一个村庄，摧毁这个村庄和里面的所有人。然而，这种情况很少发生，因为大多数乌特伯德还没有大到可以用这种方式来使用。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/QaA2Ora.png",
+			"languageTags": [
+				"CS",
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Young Maladrix",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "9d8 + 18",
+				"average": 58
+			},
+			"speed": {
+				"walk": 35,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 15,
+			"cha": 12,
+			"save": {
+				"wis": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"intimidation": "+7",
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"vulnerable": [
+				"thunder"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks damage immunties necrotic, poison",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Aura of Silence",
+					"entries": [
+						"如果恶灵不在阳光下，在恶灵的15英尺范围内没有声音可以通过或产生。任何完全在半径内的生物或物体都对雷霆伤害免疫，而生物在完全在半径内时是（%0%）。在那里施放包含语言成分的法术是不可能的。"
+					]
+				},
+				{
+					"name": "Soul Harvest",
+					"entries": [
+						"死于恶灵攻击的生物无法用7级或更低的法术复活，除非恶灵已死，且其心脏被摧毁。"
+					]
+				},
+				{
+					"name": "Spiderclimb",
+					"entries": [
+						"恶灵可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"在阳光下时，恶灵在攻击卷轴上有劣势，在依靠视觉的智慧（感知）检查上也是如此。"
+					]
+				},
+				{
+					"name": "Whispers of Madness",
+					"entries": [
+						"任何在玛拉迪克斯5英尺范围内开始它的回合的生物必须做一个{@dc 15}智慧救赎的动作。如果失败，该生物在下一回合开始前不能做出反应，并掷出{@dice d10}来决定它在回合中做什么。",
+						"在1到3的情况下，该生物会感到可怕的焦虑，并且是（%0%）直到其回合结束。",
+						"在4到6的情况下，该生物屈服于昏迷状态，并在其回合结束前处于（%0%）的状态。",
+						"在7到8的情况下，该生物被恐惧所淹没；它不能采取任何行动或额外行动，并使用它所有的移动来远离恶灵。",
+						"在9到10分的情况下，该生物感到无法控制的愤怒，并对其范围内的一个随机盟友进行近身攻击，如果它不能进行这样的攻击，则对自己进行近身攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶灵用它的爪子进行三次攻击。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Necrotic Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d6 + 2})穿刺伤害加上13 ({@damage 2d12})坏死伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Psychic Screams",
+					"entries": [
+						"当恶灵受到伤害时，它可以用精神上的尖叫声轰击攻击的生物。该生物必须做一个{@dc 15}智慧救赎动作。如果失败，它就会变成（%1%）并且无法停止尖叫。在它尖叫的时候，它不能施放任何带有语言成分的法术。该效果会持续到该生物的下一回合结束。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"没有人知道恶灵是如何诞生的。有人说，一个罪恶的城市会在城市的隐蔽角落里孕育一个。还有人猜测，它是一个侵占了污秽和骨头的集合体的精神，以找到一个可以居住的形式。然而，如果不加以控制，它是一种祸害，会以许多可怕的方式折磨一个城市。",
+					"{@bold Revolting and Ghastly.} Maladrixes的上半身是巨兽，下半身是昆虫状的六条腿。他们的骨头以令人厌恶的方式从肉体中挤出，他们的气味是死肉和下水道垃圾的结合。",
+					"{@bold Horrors in the Sewers.} Maladrixes通常在大城市的下水道中被发现，但有时在沼泽或地下洞穴中也能找到它们。大多数人喜欢靠近他们的猎物，这就是为什么他们喜欢城市而不是野外--即使城市对他们来说是更危险的狩猎场。",
+					"{@bold Telepathic Mind Breakers.} Maladrixes有心灵感应，但他们不说任何语言。相反，他们通过图像和情绪进行交流。他们在附近投射出一种心灵感应的光环，不连贯的低语，扭曲了受害者的思想，制造出清醒的噩梦，使他们彼此对立。他们在夜间捕猎，以可怕和虐待狂的方式杀死他们的猎物，然后享用他们的灵魂，并将尸体丢在外面散播恐惧。",
+					"{@bold Harvesters of Souls.} 当恶灵杀死一个生物时，它会吞噬受害者的灵魂。以这种方式失去灵魂的生物是不可能复活的，尽管灵魂在恶灵的心脏中保持了几天的完整，心脏是怪物胸部的一个钙化的、类似骨质的结构。打破心脏可以释放所有尚未被吞噬的灵魂。",
+					"{@bold Dreadful Silencers.} Maladrixes在移动时似乎不会发出任何声音，但实际情况却更令人不安。Maladrixes使它们周围的所有声音失聪，使它们无法被声音发现。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/3uQfuUU.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Elder Maladrix",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 35,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 15,
+			"cha": 12,
+			"save": {
+				"wis": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"intimidation": "+7",
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"vulnerable": [
+				"thunder"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks damage immunties necrotic, poison",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Aura of Silence",
+					"entries": [
+						"如果恶灵不在阳光下，在恶灵的15英尺范围内没有声音可以通过或产生。任何完全在半径内的生物或物体都对雷霆伤害免疫，而生物在完全在半径内时是（%0%）。在那里施放包含语言成分的法术是不可能的。"
+					]
+				},
+				{
+					"name": "Soul Harvest",
+					"entries": [
+						"死于恶灵攻击的生物无法用7级或更低的法术复活，除非恶灵已死，且其心脏被摧毁。"
+					]
+				},
+				{
+					"name": "Spiderclimb",
+					"entries": [
+						"恶灵可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"在阳光下时，恶灵在攻击卷轴上有劣势，在依靠视觉的智慧（感知）检查上也是如此。"
+					]
+				},
+				{
+					"name": "Whispers of Madness",
+					"entries": [
+						"任何在玛拉迪克斯5英尺范围内开始它的回合的生物必须做一个{@dc 15}智慧救赎的动作。如果失败，该生物在下一回合开始前不能做出反应，并掷出{@dice d10}来决定它在回合中做什么。",
+						"在1到3的情况下，该生物会感到可怕的焦虑，并且是（%0%）直到其回合结束。",
+						"在4到6的情况下，该生物屈服于昏迷状态，并在其回合结束前处于（%0%）的状态。",
+						"在7到8的情况下，该生物被恐惧所淹没；它不能采取任何行动或额外行动，并使用它所有的移动来远离恶灵。",
+						"在9到10分的情况下，该生物感到无法控制的愤怒，并对其范围内的一个随机盟友进行近身攻击，如果它不能进行这样的攻击，则对自己进行近身攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶灵用它的爪子进行三次攻击。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Necrotic Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d6 + 2})穿刺伤害加上13 ({@damage 2d12})坏死伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Claw Slash",
+					"entries": [
+						"马拉德里克斯进行了一次爪击。"
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"恶灵会进行智慧（感知）检查。"
+					]
+				},
+				{
+					"name": "Jump",
+					"entries": [
+						"恶灵跳到它的速度上，跳到一个无人的空间，而不会引起机会攻击。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Elder Maladrix",
+				"source": "MMM:SS"
+			},
+			"fluff": {
+				"entries": [
+					"没有人知道恶灵是如何诞生的。有人说，一个罪恶的城市会在城市的隐蔽角落里孕育一个。还有人猜测，它是一个侵占了污秽和骨头的集合体的精神，以找到一个可以居住的形式。然而，如果不加以控制，它是一种祸害，会以许多可怕的方式折磨一个城市。",
+					"{@bold Revolting and Ghastly.} Maladrixes的上半身是巨兽，下半身是昆虫状的六条腿。他们的骨头以令人厌恶的方式从肉体中挤出，他们的气味是死肉和下水道垃圾的结合。",
+					"{@bold Horrors in the Sewers.} Maladrixes通常在大城市的下水道中被发现，但有时在沼泽或地下洞穴中也能找到它们。大多数人喜欢靠近他们的猎物，这就是为什么他们喜欢城市而不是野外--即使城市对他们来说是更危险的狩猎场。",
+					"{@bold Telepathic Mind Breakers.} Maladrixes有心灵感应，但他们不说任何语言。相反，他们通过图像和情绪进行交流。他们在附近投射出一种心灵感应的光环，不连贯的低语，扭曲了受害者的思想，制造出清醒的噩梦，使他们彼此对立。他们在夜间捕猎，以可怕和虐待狂的方式杀死他们的猎物，然后享用他们的灵魂，并将尸体丢在外面散播恐惧。",
+					"{@bold Harvesters of Souls.} 当恶灵杀死一个生物时，它会吞噬受害者的灵魂。以这种方式失去灵魂的生物是不可能复活的，尽管灵魂在恶灵的心脏中保持了几天的完整，心脏是怪物胸部的一个钙化的、类似骨质的结构。打破心脏可以释放所有尚未被吞噬的灵魂。",
+					"{@bold Dreadful Silencers.} Maladrixes在移动时似乎不会发出任何声音，但实际情况却更令人不安。Maladrixes使它们周围的所有声音失聪，使它们无法被声音发现。"
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/3uQfuUU.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Swarm of Leeches",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 10,
+			"int": 1,
+			"wis": 7,
+			"cha": 1,
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 8,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"虫群可以占据另一个生物的空间，反之亦然，而且虫群可以通过任何足够大的开口，让一只小昆虫移动。虫群不能恢复命中率或获得临时命中率。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw}{@hit 3}击中，达到0英尺，蜂群空间中的一个目标。{@h}10 ({@damage 4d4})穿刺伤害，如果蜂群的命中率为一半或更少，则为5 ({@damage 2d4})穿刺伤害；并且蜂群会附着在目标身上。当附着时，目标移动时蜂群也会移动。蜂群可以通过花费5英尺的移动来脱离。"
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/4r0SxLT.png",
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Naiad",
+			"source": "MMM:SS",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 11,
+			"int": 14,
+			"wis": 15,
+			"cha": 18,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"奈德的先天法术能力是魅力（法术保存（%0%））。奈德人可以天生施展以下法术，不需要任何材料成分。"
+					],
+					"will": [
+						"{@spell druidcraft}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell faerie fire}",
+							"{@spell goodberry}"
+						],
+						"1e": [
+							"{@spell blur}",
+							"{@spell fog cloud}",
+							"{@spell shillelagh}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Naiad在面对法术和其他魔法效果时，在蓄力攻击上有优势。"
+					]
+				},
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"Naiad可以与野兽和植物交流，就像他们有共同的语言一样。"
+					]
+				},
+				{
+					"name": "Hazy Disappearance",
+					"entries": [
+						"只要Naiad在水下，它就能随意施展隐形术，不需要任何物质成分。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw}{@hit 2}命中({@hit 6}用短剑命中)，范围5英尺，一个目标。{@h}2 ({@damage 1d4})重击伤害，或8 ({@dice 1d8}+4)重击伤害(用棍子)。"
+					]
+				},
+				{
+					"name": "Fey Charm",
+					"entries": [
+						"Naiad的目标是在她30英尺范围内她能看到的一个人形或兽形。如果目标能看到奈亚德，它必须在一个{@dc 14}智慧救赎中成功，否则会被魔法{@condition charmed}。该（%2%）生物将奈德视为值得信赖的朋友，并予以关注和保护。虽然目标不在奈德的控制之下，但它以最有利的方式接受奈德的要求或行动。",
+						"每次naiad或者它的盟友对目标做了什么有害的事情，它都可以重复这个蓄力动作，如果成功则结束对自己的影响。否则，该效果将持续24小时，或直到naiad死亡，与目标处于不同的存在平面，或作为额外动作结束该效果。如果目标的蓄力动作成功，那么在接下来的24小时内，目标将免疫于奈德的魔咒。",
+						"奈德人每次可以拥有不超过一个人形生物和最多三个野兽（%0%）。"
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/ktnp8fM.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"attachedItems": [
+				"club|phb"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Mire Random Encounters (Level 1-4)",
+			"source": "MMM:SS",
+			"colLabels": [
+				"{@dice d100}",
+				"Encounter"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10 text-left"
+			],
+			"rows": [
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 1,
+							"max": 15,
+							"pad": true
+						}
+					},
+					"{@dice 1d4} {@creature swarm of insects}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 16,
+							"max": 20,
+							"pad": true
+						}
+					},
+					"{@dice 1d8}  {@creature giant rat}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 21,
+							"max": 24,
+							"pad": true
+						}
+					},
+					"{@dice 1d8} {@creature commoner}收集泥炭或浆果"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 25,
+							"max": 28,
+							"pad": true
+						}
+					},
+					"{@dice 2d10} {@creature vulture}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 28,
+							"max": 30,
+							"pad": true
+						}
+					},
+					"{@dice 2d6+3} {@creature tribal warrior}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 31,
+							"max": 40,
+							"pad": true
+						}
+					},
+					"{@dice 1d6}  {@creature swarm of ravens}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 41,
+							"max": 44,
+							"pad": true
+						}
+					},
+					"{@dice 2d4} {@creature poisonous snake}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 45,
+							"max": 46,
+							"pad": true
+						}
+					},
+					"{@dice 1d12} {@creature zombie}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 47,
+							"max": 48,
+							"pad": true
+						}
+					},
+					"1 {@creature black bear} + 1 {@creature thug}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 49,
+							"max": 55,
+							"pad": true
+						}
+					},
+					"A{@creature bandit captain}，被绑在一个正在慢慢填满的水池里。"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 56,
+							"max": 58,
+							"pad": true
+						}
+					},
+					"{@dice 1d8+1} {@creature hodgepoker|MMM:SS}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 59,
+							"max": 64,
+							"pad": true
+						}
+					},
+					"一个沼泽体（见书），在夜间作为一个{@creature specter}在这些地方出没。"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 65,
+							"max": 70,
+							"pad": true
+						}
+					},
+					"{@dice 1d6} {@creature gorgemaw|MMM:SS}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 71,
+							"max": 75,
+							"pad": true
+						}
+					},
+					"{@dice 1d4} {@creature scout} + {@dice 1d4} {@creature mastiff}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 76,
+							"max": 79,
+							"pad": true
+						}
+					},
+					"1 {@creature bogmangler|MMM:SS}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 80,
+							"max": 85,
+							"pad": true
+						}
+					},
+					"{@dice 1d4} {@creature harpy}坐在一棵矮树上，等待时机将一个角色打入池塘中"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 86,
+							"max": 89,
+							"pad": true
+						}
+					},
+					"一个收集药材的老妪"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 90,
+							"max": 91,
+							"pad": true
+						}
+					},
+					"一个{@creature green hag}冒充老巫婆收集药材的人"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 92,
+							"max": 95,
+							"pad": true
+						}
+					},
+					"{@dice 2d8} {@creature zombie} + 1 {@creature ogre zombie}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"min": 96,
+							"max": 99,
+							"pad": true
+						}
+					},
+					"1 {@creature mire ooze|MMM:SS}"
+				],
+				[
+					{
+						"type": "cell",
+						"roll": {
+							"exact": 100,
+							"pad": true
+						}
+					},
+					"1 {@creature hydra}从泥潭下冲出"
+				]
+			]
+		}
+	]
+}

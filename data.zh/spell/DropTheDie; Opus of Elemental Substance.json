@@ -1,0 +1,4111 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "OpusofElementalSubstance",
+				"abbreviation": "OES1",
+				"full": "Opus of Elemental Substance",
+				"version": "",
+				"url": "https://www.dmsguild.com/product/256849/Opus-of-Elemental-Substance--60-Elemental-Spells",
+				"authors": [
+					"Drop the Die"
+				],
+				"convertedBy": [
+					"Jace Bobius"
+				]
+			}
+		],
+		"dateAdded": 1588459550,
+		"dateLastModified": 1693671517,
+		"_dateLastModifiedHash": "cd5e3e4562"
+	},
+	"spell": [
+		{
+			"name": "Acrid Zephyr",
+			"source": "OpusofElementalSubstance",
+			"page": 6,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A vial of stomach acid"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在范围内向你能看到的目标喷出一股腐蚀性气体。目标必须在宪法规定的投掷中成功，否则会受到{@damage 2d4}的酸性伤害。如果该生物在救赎失败的同一空间内结束下一回合，它将受到相当于你的法术能力修饰值的额外酸液伤害。",
+				"当你达到5级（{@dice 3d4}）、11级（{@dice 4d4}）和17级（{@dice 5d4}）时，这个法术的主要伤害增加{@dice 1d4}。"
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aftershock",
+			"source": "OpusofElementalSubstance",
+			"page": 6,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 80
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一个剧烈的震荡从你身上沿着地面轰出80英尺。每个在咒语范围内接触地面的生物都必须做一个力量储蓄动作。拯救失败时，目标会受到{@damage 11d10}重击伤害并被击倒{@condition prone}。拯救成功时，目标会受到一半的伤害，并且不被击倒（%2%）。",
+				"该区域内的地下生物或（%0%）的生物在劣势下进行拯救。地面上的结构和物体会被此法术破坏。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级以上的法术槽施放此法术时，每超过7级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT",
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Armor of Stone",
+			"source": "OpusofElementalSubstance",
+			"page": 6,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an emerald worth 50 gp",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在持续时间内，锯齿状的奥术力量板块围绕着你。你在持续时间内获得60点临时命中率。当这些临时命中率存在时，你对打击、穿刺和砍击伤害有抵抗力，你的速度降低了10英尺。",
+				"当最后一个临时命中点被消耗时，10英尺范围内的每个生物必须在灵巧救赎中成功，否则会受到{@damage 3d10}重击伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施展此法术时，每超过5级的法术槽等级，临时命中率增加10。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT",
+				"THP"
+			],
+			"areaTags": [
+				"MT",
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Arc Veil",
+			"source": "OpusofElementalSubstance",
+			"page": 6,
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an tourmaline worth 100 gp",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"直到咒语结束，闪电沿着你的皮肤和装备噼啪作响，你会获得以下好处。",
+				"每当你受到雷电伤害时，你不会受到任何伤害，反而会重新获得相当于所受雷电伤害一半的命中率。",
+				"在你10英尺范围内移动的生物或结束他们的回合时受到{@damage 1d8}的闪电伤害。",
+				"你可以使用一个动作来传送到15英尺内无人的空间。当你出现时，5英尺范围内的任何生物必须在灵巧救赎中成功，否则会受到{@damage 4d8}雷电伤害。"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"HL",
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Backdraft",
+			"source": "OpusofElementalSubstance",
+			"page": 6,
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "chalk laced with ruby dust worth 100gp, which the spell consumes",
+					"consume": true,
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"在门、窗或其他入口处贴上原始火的符文。当入口被打开时，火从入口处喷出，吞噬15英尺范围内的一切。陷入火焰中的生物必须做一个灵巧的蓄力动作，如果蓄力失败，会受到{@damage 5d12}的火焰伤害，如果蓄力成功，会受到一半的伤害。火焰会绕过角落，穿过小到一英寸的空间。",
+				"爆炸范围内无人看管的物体也会被此法术损坏。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blackwind's Sonorous Singularity",
+			"source": "OpusofElementalSubstance",
+			"page": 7,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 70
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"说出一个力量的单词，会在范围内的一个无人空间形成一个直径5英尺的球体。奇点周围20英尺半径的球体被收缩的爆炸力波所冲击，吸引生物和物体向奇点移动。该区域是困难地形。",
+				"当一个生物在一个回合中第一次进入受影响的区域或在那里开始它的回合时，该生物必须成功地进行力量救赎，否则就会受到{@damage 3d6}重击伤害，并被拉向咒语中心的奇异体10英尺。当在效果区时，生物在依靠听觉的远程武器攻击卷和智慧（感知）检查中处于不利地位。",
+				"在你每个回合开始时，该法术的范围会向各个方向扩大5英尺，最大半径为70英尺。",
+				"如果一个生物被拉到与中心的奇点相同的空间，那么咒语会提前结束。当咒语结束时，会发生雷鸣般的爆炸，在1英里以外的地方都能听到。每个被卷入效果区的生物都必须做一个宪法规定的救赎动作。拯救失败时，生物会从爆炸中受到{@dice 20d6 + 30}点雷霆伤害，并永久地被{@condition deafened}。拯救成功时，它将受到一半的伤害，并且不会受到（%2%）。与奇点相邻的生物在引爆前会受到与球体半径相等的额外雷霆伤害。"
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"thunder"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrow": [
+				"strength",
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blossoms of Cathrys",
+			"source": "OpusofElementalSubstance",
+			"page": 7,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fly preserved in asp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"从塔尔塔罗斯的深红丛林中召唤一个60英尺的立方体，上面有厚厚的彩色树叶。这个区域为里面和后面的生物提供四分之三的掩护，是困难的地形。",
+				"此外，当一个生物在它的回合中第一次进入该区域或在树叶中开始它的回合时，它必须做一个灵巧的蓄力动作，如果蓄力失败会受到{@damage 8d6}酸的伤害，如果蓄力成功会受到一半的伤害，因为植物会开始消化它们。",
+				"区域内由石头或金属创造的物体在你的回合开始时受到伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，面积增加5英尺，并且每超过6级的法术槽等级，伤害增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"C",
+				"Q"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Burial",
+			"source": "OpusofElementalSubstance",
+			"page": 7,
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an opal worth 50 gp, which the spell consumes",
+					"consume": true,
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你通过你接触的生物引导元素力量。进行一次近战法术攻击。一旦命中，目标会受到{@damage 8d10}的重击伤害。此外，站在泥土上的生物（如粘土、泥浆、石头或沙子）必须在灵巧反射中成功，否则会被拉入地下。巨大的或更大的生物会自动成功地进行救赎以避免被埋葬。",
+				"以这种方式开始其回合的被埋生物不能呼吸。当被埋葬时，该生物是（%0%）、（%1%）和（%2%）。作为一个行动，该生物可以尝试用力量（运动）检定对抗你的法术救赎DC来发掘自己。如果成功，他们会在他们最后占据的空间里出现，{@condition prone}。"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened",
+				"restrained"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Caustic Shroud",
+			"source": "OpusofElementalSubstance",
+			"page": 7,
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "the preserved acid gland of a mimic wrapped in woven spider silk, worth at least 1,000 gold pieces",
+					"cost": 100000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一片灼热的酸液包裹着范围内的生物或物体。目标必须在宪法规定的救赎中成功，如果救赎失败，将受到{@damage 10d8}酸的伤害，如果救赎成功，将受到一半的伤害。",
+				"当受此法术影响时，目标在其每个回合开始时少受一个价值不菲的酸液伤害（（%0%），（%1%），等等）。目标或邻近的生物可以用它的行动对你的法术救赎DC做一个灵巧检查。如果成功，目标会逃离覆盖在它身上的粘稠的酸液，咒语结束。"
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"abilityCheck": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Charged Shock",
+			"source": "OpusofElementalSubstance",
+			"page": 8,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a copper nail, a piece of quartz, and a bit of silver wire"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 5,
+						"upTo": true
+					},
+					"concentration": true
+				},
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"将强大的电能导入你紧握的拳头。作为一个动作，你可以释放咒语，咒语会跳到范围内你选择的一个生物身上。目标必须做一个灵巧的蓄力动作，如果蓄力失败，会受到（%0%）的雷电伤害，如果蓄力成功，则受到一半的伤害。",
+				"或者，你可以在你随后的回合中使用一个额外的行动来为该咒语充能。每一次用于为法术充电的额外行动都会使其伤害增加（%0%）（最大为（%1%））。",
+				"如果你对该咒语失去注意力，或在持续时间结束前未能施放，它就会在你手中放电，就像针对你施放一样。你对该法术的伤害有抵抗力。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级或9级的法术槽施放此法术时，你可以在释放之前保持充能的法术10分钟。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Charge Metal",
+			"source": "OpusofElementalSubstance",
+			"page": 8,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a metal ball bearing"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"通过一句话，你向范围内你能看到的金属物体注入电流，例如金属武器或一套重型或中型金属铠甲。 当你施法时，与该物体有物理接触的生物会受到{@damage 1d6}雷电伤害。目标在其回合开始时再次受到该伤害。",
+				"如果一个生物拿着或穿着该物品并受到该法术的伤害，该生物必须在宪法救赎中获得成功，或者如果可以的话放弃该物品。如果它没有丢掉该物品，那么在你下一回合开始之前，它在灵巧救赎上有劣势。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cloak of Embers",
+			"source": "OpusofElementalSubstance",
+			"page": 8,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a piece of charcoal"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"一个报复性的堡垒以燃烧的灰烬之纱的形式在你周围层层叠叠。在持续时间内，当一个生物用近战攻击击中你时，攻击的伤害会减少{@dice 1d6}。攻击者会受到相同数量的火焰伤害。在3次近战攻击被减轻后，该咒语结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或4级的法术槽施放此法术时，此法术在结束前最多可以减轻5次攻击。当你使用五级以上的法术槽时，减免和伤害也会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Combust",
+			"source": "OpusofElementalSubstance",
+			"page": 8,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a waxed cotton glove"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"对着范围内的目标打响你的手指，用突然爆发的火焰轰击他们。目标必须在灵巧救赎中成功，否则会受到{@damage 5d10}的火焰伤害。",
+				"拯救成功后，此法术会在生物的空间内产生一个小型的魔法火焰，并持续1分钟。在其回合中第一次进入火焰的生物或在那里结束其回合的生物会受到{@damage 2d6}的火焰伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，每超过三级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Corroding Crown",
+			"source": "OpusofElementalSubstance",
+			"page": 9,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "emerald-laced paste worth 10gp, which the spell consumes",
+					"consume": true,
+					"cost": 1000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				},
+				{
+					"type": "special"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"当你施展这个法术时，在你选择的坚固表面（如地板、天花板或桌子）上出现一个10英尺的闪亮的绿色圆环；只有你能看到绿色圆环。",
+				"当你以外的生物进入这个圆圈时，它就会爆发出一股腐蚀性淤泥的喷泉。该生物必须在一个灵巧的救赎中成功。拯救失败时，目标会受到{@damage 5d4}酸的伤害，并继续被粘稠的液体灼伤。在1分钟内，在他们每个回合结束时，他们会受到额外的{@damage 3d4}酸性伤害。",
+				"受影响的生物或能接触到它的生物可以作为一个行动，试图通过与你的法术防御DC相对应的灵巧检查来刮掉淤泥，成功后结束效果。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级以上的法术槽施放此法术时，每超过3级的法术槽等级，初始伤害增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"abilityCheck": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Corrosive Integument",
+			"source": "OpusofElementalSubstance",
+			"page": 9,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature or object grapples or restrains you"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a pickled flatworm in a galvanized vial"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在你的身体和装备上涌现出一个薄薄的保护屏障，渗出一种刺鼻的液体，烧毁除你之外的任何东西。",
+				"在持续时间内，任何用近战攻击抓取、接触或击中你的生物或物体，在其回合结束时都会受到{@damage 2d4}酸液伤害。当生物受到此法术的伤害时，你会获得相当于所受伤害一半的临时打击点数。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"miscTags": [
+				"SCL",
+				"THP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Crashing Call",
+			"source": "OpusofElementalSubstance",
+			"page": 9,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a brass tube"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"范围内的生物会被你放大的声音所轰击。目标必须进行宪法规定的救赎，如果救赎失败，将受到{@damage 1d6}的雷霆伤害，如果救赎成功，将受到一半的伤害。",
+				"此外，被此法术攻击的生物在保持对法术的注意力时，在宪法规定的投掷中处于劣势，直到你下一个回合开始。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级的法术槽施放此法术时，伤害增加（%0%）。4级时，范围增加到60英尺。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cremation",
+			"source": "OpusofElementalSubstance",
+			"page": 9,
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"伴随着一句话的力量，你能看到的范围内的目标会被无法熄灭的黑色火焰猛烈焚烧。生物必须做一个 \"宪法救赎\"。如果救赎失败，目标会受到{@damage 15d6 + 80}的火焰伤害。此外，一个没有传奇行动、巨大或更小的生物，其一个肢体会变成灰烬。",
+				"拯救成功后，目标会受到一半的伤害，但不会失去肢体。被此法术降低到0命中率的生物会在附近的表面变成一个黑色的影子，连同其拥有的所有非魔法物品。",
+				"或者，你可以针对范围内的一个物体。对火灾伤害不免疫的大型或小型非魔法物体会被高温摧毁，变成灰烬、蒸汽或熔渣。一个巨大的或巨型的物体有一个20英尺的立方体被此法术摧毁。",
+				"这个法术所针对的魔法物品不会被它摧毁，而是会发出白热的光芒，持续24小时。任何与该魔法物体开始接触的生物都会受到{@damage 15d6}的火焰伤害。",
+				"如果一个生物在这种状态下持有或佩戴该物品，该生物必须在宪法规定的投掷中获得成功，或者如果可以的话放弃该物品。如果它保持与该物品的接触，它在攻击卷和能力检查中处于劣势，直到它丢掉该物品。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"PRM",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Crystal Spire",
+			"source": "OpusofElementalSubstance",
+			"page": 10,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a carved crystal needle worth at least 250 gp",
+					"cost": 25000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一个半径为10英尺，高20英尺的水晶从范围内的地面冒出来。水晶有150点命中率，护甲等级为18，并对火、冷和雷电伤害免疫。",
+				"作为你每个回合的额外行动，你可以使一根针状的水晶树枝向尖塔30英尺内的一个生物飞去。进行一次范围性的法术攻击。一旦命中，目标会受到{@damage 10d10}的穿刺伤害。",
+				"被尖塔杀死的生物会被吸干，给予尖塔20个临时命中率。除非从刺穿它的树枝上移开，否则该生物的尸体在24小时后会被水晶包裹起来。",
+				"如果你在整个持续时间内专注于该咒语，该尖塔就会变成永久性的，但不活动。如果对一个已经存在的尖塔再次施法，尖塔的大小会增加一倍，获得150个临时命中率，并按法术正常运作。",
+				"如果尖塔被摧毁，咒语就会结束，并且在1000年内不能在前一个尖塔的800英尺范围内再长出一个水晶尖塔。"
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"PRM",
+				"SMN",
+				"THP",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Curtain of the Scorched Queen",
+			"source": "OpusofElementalSubstance",
+			"page": 10,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "50gp worth of ruby dust, which the spell consumes",
+					"consume": true,
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"一片巨大的火焰从你身边直线延伸至150英尺。火墙有5英尺厚，80英尺高。火焰是不透明的，持续时间很长。",
+				"当墙出现时，在其范围内的每个生物必须做一个灵巧的蓄力动作，如果蓄力失败，会受到{@damage 12d6}的火焰伤害，如果蓄力成功，则受到一半的伤害。",
+				"靠近墙壁10英尺内的生物或在那里结束他们的回合，会受到{@damage 6d6}的火力伤害。如果一个生物试图穿过墙壁，也会受到同样的伤害。",
+				"火焰的幕布是半固体的。试图穿过这面墙的生物必须对你的法术救赎DC进行力量检验，否则会被拒绝。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"areaTags": [
+				"L",
+				"W"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Deep Freeze",
+			"source": "OpusofElementalSubstance",
+			"page": 10,
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a flask of cold water, a pinch of salt, and a tuft of yeti fur)"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你试图为范围内的生物或水体注入冰元素。",
+				"你可以将多达10,000加仑的液体，如淡水或盐水，完全冻结成固体。液体会一直被冻成固体，直到咒语结束，之后会正常解冻。热的液体如沸腾的油、熔化的金属或熔岩会被这个法术变成固体，并且触感冰凉。",
+				"如果一个由肉体、石头或金属等物质构成的生物被此法术锁定，它必须做一个宪法救赎动作。如果救赎失败，目标的速度会降低到0。如果救赎成功，该生物将不受该法术的影响。",
+				"被此法术降低速度的生物必须在它的每个回合结束时再做一次宪法规定的投掷。如果该生物对该法术的任何蓄力都成功，则该法术结束。每次它的额外蓄力失败，它就会受到一个等级的（%0%）的影响。因该效果而死亡的生物会被冻成固体。"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Drumfire Echo",
+			"source": "OpusofElementalSubstance",
+			"page": 10,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在持续时间内，在一个30英尺的立方体中召唤出一连串的雷鸣般的撞击声。进入该区域或在那里开始他们的回合的生物必须做一个宪法储蓄动作，否则会受到{@damage 8d6}的雷霆伤害。当在该区域时，生物在注意力检查方面处于劣势，并且是{@condition deafened}。",
+				"如果该地区被沉默法术所覆盖，则该法术提前结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用六级以上的法术槽施展此法术时，法术槽等级每超过五级，效果范围就会增加5英尺。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Enkindling Spirit",
+			"source": "OpusofElementalSubstance",
+			"page": 11,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你召唤一个被火烧死的人形生物的复仇之魂。灵魂出现在你能看到的范围内的空间，并持续一段时间。灵魂被鬼魂般的火焰包裹着。",
+				"当你施展该法术时，你可以对灵体5英尺内的生物进行近战法术攻击。一旦命中，目标会受到{@damage 4d6 + 10}的火焰伤害。",
+				"作为你回合中的额外行动，你可以命令精灵移动30英尺，并对它周围5英尺内的生物重复攻击。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SGT",
+				"SMN",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Erode",
+			"source": "OpusofElementalSubstance",
+			"page": 10,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "ground lemon peel in sour milk"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在你能看到的范围内的生物中存在的天然酸会放大，从内部吞噬它们。目标必须进行宪法规定的救赎，如果救赎失败，将受到{@damage 10d8}酸的伤害，如果救赎成功，将受到一半的伤害。",
+				"如果你没有在任何一个伤害模子上掷出1，那么在下一回合结束时，救赎失败的目标会受到额外的（%0%）点酸液伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或以上的法术槽施放此法术时，每超过5级的法术槽等级，伤害（初始和后续）都会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fissure",
+			"source": "OpusofElementalSubstance",
+			"page": 11,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一个60英尺长、5英尺宽、5英尺深的裂缝出现在范围内的表面。该区域内的生物必须做一个灵巧的蓄力动作。拯救失败时，生物会受到{@damage 5d10}的重击伤害并在裂缝底部跌落{@condition prone}。拯救成功时，该生物会受到一半的伤害，并被推到裂缝边缘的一个空地上。",
+				"这个法术对石头或土制成的物体和结构造成双倍伤害。此外，该区域的地面会变成困难的地形，直到被清理掉。该区域每5英尺见方的部分需要至少1分钟才能用手清理。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或以上的法术槽施展此法术时，每超过4级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Freezing Armament",
+			"source": "OpusofElementalSubstance",
+			"page": 11,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"将武器缠绕在一个毁灭性的极地光环中，使目标失去活力。下一次使用该武器或弹药进行攻击时，该攻击的目标必须做出宪法规定的救赎动作。如果救赎失败，他们会受到{@damage 1d8}的寒冷伤害，他们的速度降低到0，直到他们下一个回合结束，并且咒语结束。拯救成功时，该生物的速度减半，直到下一回合结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fulminate",
+			"source": "OpusofElementalSubstance",
+			"page": 11,
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 110
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"通过一个手势和一句话，你可以用闪电的弧线笼罩范围内的一个生物。目标必须做一个灵巧的蓄力动作，如果蓄力失败，会受到{@damage 12d8}的闪电伤害，如果蓄力成功，会受到一半的伤害。如果救赎失败，目标也会在持续时间内被噼里啪啦的闪电所笼罩。穿着中型或重型盔甲的生物，或主要由金属组成的生物，对该法术的救赎有劣势。",
+				"闪电沿着目标的表面闪烁，并在10英尺的范围内发出昏暗的光。在它的每个回合结束时，目标重复蓄力，如果蓄力失败，将受到{@damage 6d8}雷电伤害。拯救成功时，法术结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用9级的法术槽施放此法术时，伤害增加（%0%），持续时间变为10分钟。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Glacial Deadfall",
+			"source": "OpusofElementalSubstance",
+			"page": 12,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a flask of seawater"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在范围内的表面上形成一片连续的20英尺长、5英尺宽的冰川冰片。冰块在持续时间内或在咒语结束前会附着在表面上。",
+				"冰川的冰几乎和石头一样坚固，可以用来弥补10英尺宽的缝隙。这些冰被认为是困难的地形。",
+				"当咒语结束时，冰块会爆裂开来。每一个在冰层5英尺范围内的生物必须成功地进行灵巧救赎，如果救赎失败，会受到{@damage 3d6}重击伤害和{@damage 3d6}寒冷伤害，如果成功，会受到一半的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，每超过三级的法术槽等级，冰的长度或宽度就会增加10英尺。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Glaciate",
+			"source": "OpusofElementalSubstance",
+			"page": 12,
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a snowflake preserved in crystal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一股液态冰从你伸出的手中涌出，喷向范围内你能看到的目标。目标可以是生物或非冰制成的物体。",
+				"被此法术攻击的生物必须做一个灵巧的蓄力动作。拯救失败时，目标会受到{@damage 10d8 + 60}的寒冷伤害，并受到{@condition exhaustion}的一级伤害。如果这个伤害使目标的命中率降至0，它就会被冻成坚冰。",
+				"如果该咒语被用来针对一个边长小于60英尺的物体，该物体会变成坚冰。如果物体比它大，这个法术会把它的60英尺的立方体变成冰。每块10英尺的冰都有12点攻击力和30点命中率，以及对火灾伤害的脆弱性。魔法物品不受此法术的影响。任何在以这种方式变成冰的物体10英尺范围内结束其回合的生物都会受到{@damage 3d8}的寒冷伤害。",
+				"另外，这个咒语也可以用来闪电般地冻结大片的静止或缓慢流动的水。最常见的用途是冻结长达10英里、深1英尺的冰桥，以穿越湖泊或慢河。这个法术也可以将100英尺长的水立方冻结成坚冰。当水被这个法术冻结时，淹没在水中的生物会受到100点寒冷伤害，并且在他们解冻或挣脱之前会受到（%0%）的伤害。"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Grip of Winter",
+			"source": "OpusofElementalSubstance",
+			"page": 12,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"通过你伸出的手引导极寒之气。进行一次近战法术攻击。一旦命中，目标会受到{@damage 3d12}的寒冷伤害，他们的速度会减半，持续1分钟。",
+				"受此法术影响的生物在其回合结束时进行一次宪法救赎。拯救成功后，该效果对它来说就结束了。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Heighten Flames",
+			"source": "OpusofElementalSubstance",
+			"page": 12,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a ruby worth 50 gp",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"加强范围内30英尺的非魔法火焰方块。该区域内的火焰以下列方式增强。",
+				"火焰散发出明亮的光线和昏暗的光线，另外20英尺。",
+				"中等的火焰，如壁炉或营火的火焰，高度加倍。在你的回合开始时，只要新的地点有木材或其他燃料，火势就会向外蔓延5英尺。",
+				"火焰变得更热。当一个生物会被非魔法火焰伤害时，他们会对每个伤害模子采取可能的最高数字。例如，一个生物不是受到{@dice 2d6}点伤害，而是受到12点伤害。",
+				"在效果范围内，对火系伤害有抗性的生物会失去抗性。对火灾伤害免疫的生物仍然不受影响。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Icicle Tempest",
+			"source": "OpusofElementalSubstance",
+			"page": 13,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你从冰之元素界带来一场动荡的风暴，在半径60英尺、高300英尺的圆柱体范围内。",
+				"在风暴中开始的生物必须做一个灵巧的蓄力动作，否则会受到{@damage 3d6}的穿刺伤害和{@damage 3d6}的寒冷伤害，因为一英尺长的冰柱会坠落到他们身上。",
+				"在咒语范围内结束其回合的生物必须进行宪法救赎，如果救赎失败，将受到20点寒冷伤害，如果救赎成功，将受到一半的伤害。",
+				"一轮之后，风暴区域内的地面会变成困难地形。"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Icy Glaze",
+			"source": "OpusofElementalSubstance",
+			"page": 13,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"冰雾在范围内的5英尺立方体中涌现，用冰冻的浆液覆盖该区域内的一切。施法时，该区域内的生物必须在宪法规定的投掷中取得成功，否则将受到{@damage 1d6}的寒冷伤害，并使其速度减半，直到下一回合结束。",
+				"当你达到5级（10英尺立方体）、11级（15英尺立方体）和17级（20英尺立方体）时，这个法术的区域增加5英尺。"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Inferno",
+			"source": "OpusofElementalSubstance",
+			"page": 13,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "ruby dust worth 100gp suspended in oil",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一股灼热的火焰吞噬了从你开始的20英尺范围内的一切。区域内的生物必须做一个灵巧的蓄力动作，蓄力失败会受到{@damage 12d6}的火焰伤害，蓄力成功则受到一半的伤害。",
+				"这个法术引起的火焰会在持续时间内保持。作为后续回合的行动，你可以使该区域再次喷发。该区域内的生物必须对该法术的伤害做一个灵巧判断，就像你再次施展该法术一样。",
+				"如果你用你的行动去做其他事情，或者从你最初施法的空间移动，那么咒语就会结束。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Jolt",
+			"source": "OpusofElementalSubstance",
+			"page": 13,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你从你伸出的手向范围内的一个生物释放一道闪电弧。进行一次范围性的法术攻击。一旦命中，目标受到{@damage 1d8}的闪电伤害。然后，闪电弧向目标5英尺内你选择的另一个生物，对该生物造成相当于你的法术能力修饰的闪电伤害。",
+				"当你达到5级（{@dice 2d8}）、11级（{@dice 3d8}）和17级（{@dice 4d8}）时，该法术的伤害增加{@dice 1d8}。"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lightning's Demesne",
+			"source": "OpusofElementalSubstance",
+			"page": 14,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "splinters of sapphire worth 100gp, which the spell consumes",
+					"consume": true,
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"在范围内60英尺的立方体中召唤出原始的雷电精华。穿着金属盔甲或由金属组成的生物，如铁甲巨人，在他们的回合中第一次进入该区域或开始他们的回合时，必须成功地进行灵巧的救赎，如果救赎失败，将受到{@damage 3d8}的闪电伤害，如果救赎成功，将受到一半的伤害。",
+				"在此法术作用范围内飞行的生物，每飞行5英尺就会受到{@damage 2d8}的闪电伤害，被空气中脉动的蛛网状电流灼伤。",
+				"在雷电之乡范围内，被3级或更低级的雷电法术伤害的生物，对该法术的伤害具有脆弱性。"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Living Boulder",
+			"source": "OpusofElementalSubstance",
+			"page": 14,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a leather pouch filled with stones and clay"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一个直径5英尺的岩石和粘土球体出现在范围内一个无人的空间，持续时间。",
+				"作为一个额外动作，你可以将球体移动到30英尺。如果你将球体撞向一个生物，该生物必须做一个灵巧的蓄力动作，否则会受到{@damage 2d10}重击伤害，并且球体本回合停止移动。",
+				"当你移动石球时，你可以引导它越过5英尺高的障碍，并跳过10英尺宽的坑。石球可以消除它所经过的任何空间中由土、石头或树叶造成的困难地形。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"UBA"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Melting Kiss",
+			"source": "OpusofElementalSubstance",
+			"page": 14,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a vulture's stomach lined with emerald dust worth 50gp",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"用你紧闭的嘴唇，在一个生物或物体上留下一个腐蚀性的标记。进行一次近战法术攻击。一旦命中，目标在其每个回合开始时受到{@damage 1d4}的酸液伤害，持续时间。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高等级的法术槽施放此法术时，你可以保持你对该法术的注意力长达10分钟。当你使用9级的法术槽时，你可以保持对该法术的注意力长达1小时。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mordant Expanse",
+			"source": "OpusofElementalSubstance",
+			"page": 14,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a glob of black pudding ooze"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一个半径为30英尺的球形气泡充满了酸性气体，从你选择的范围内的一个点喷出。物体可以不受阻碍地进入和离开气泡。充满烟雾的球体内的生物会被轻度遮蔽。当它出现时，球体中的每个生物或在那里结束它的回合时，都必须成功地进行体质救赎，否则会受到{@damage 3d4}酸的伤害。",
+				"在咒语结束之前，你可以在每个回合使用一个额外行动，使球体内部吐出一股灼热的酸液。对气泡内的生物进行一次范围性的法术攻击。一旦命中，目标会受到{@damage 8d4}的酸液伤害。",
+				"球体内的生物在基于视觉的智慧（感知）检查中处于劣势，并且只能闻到硫磺。"
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Quagmire",
+			"source": "OpusofElementalSubstance",
+			"page": 14,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"你将5英尺范围内无人的泥土、石头、沙子或泥浆变成一个柔软的沼泽，使其在脚底下移动。进入该区域的生物必须成功地进行力量救赎，否则他们的速度就会降低到0，直到他们下一个回合开始。生物可以用一个行动来进行智慧（感知）检查，与你的法术救赎DC相比较，以辨别哪些空间是泥潭。",
+				"当你达到5级（2）、11级（3）和17级（4）时，你一次可以拥有的主动效果数量增加1。"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"Q"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Raucous Blast",
+			"source": "OpusofElementalSubstance",
+			"page": 15,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一阵集中的雷声形成一条长30英尺、宽10英尺的线，从你那里向你选择的方向爆发。这条线上的每个生物都必须做一个宪法规定的救赎动作。如果救赎失败，该生物会受到{@damage 5d6}的雷霆伤害，并且在你下一回合开始前会被{@condition deafened}。拯救成功时，他们会受到一半的伤害，并且不会有（%2%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Roaring Aegis",
+			"source": "OpusofElementalSubstance",
+			"page": 15,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a metal triangle"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一道颤抖的空气屏障在这段时间内围绕着你，使你的形体对那些看你的人来说不自然地颤抖。",
+				"每当你受到重击、穿刺或砍击伤害时，屏障会吸收一半的伤害。当屏障持续存在时，你会被（%0%）。",
+				"吸收30点伤害后，法术结束，你周围5英尺内的每一个生物都必须进行宪法救赎，否则会受到20点雷霆伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施展此法术时，法术槽等级每超过4级，法术所能吸收的总伤害就会增加8。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Searing Palm",
+			"source": "OpusofElementalSubstance",
+			"page": 15,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"通过你张开的手引导极热。进行一次近战法术攻击。一旦命中，目标将受到{@damage 1d12}的火焰伤害。如果目标是由木头、粘土、石头或易燃材料制成的生物或物体，该法术会在材料上留下一个黑色的手印。",
+				"当你达到5级（{@dice 2d12}）、11级（{@dice 3d12}）和17级（{@dice 4d12}）时，该法术的伤害增加{@dice 1d12}。"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Snows of Porphatys",
+			"source": "OpusofElementalSubstance",
+			"page": 15,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "sight"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在你选择的范围内的表面上，一个半径为150英尺，高为500英尺的黑色降雪圆柱体突然出现。降雪持续的时间。",
+				"当圆柱体出现时，其范围内的每个生物都必须做一个宪法救赎动作。如果救赎失败，生物会受到{@damage 2d8}酸伤害和{@damage 2d8}冷伤害，如果救赎成功，则会受到一半的伤害。当生物在一个回合中第一次进入法术区域或结束其回合时，也必须做这个蓄力动作。",
+				"陷入黑色暴风雪中的飞行生物必须成功地进行力量投掷，否则就会被驱赶到30英尺外的地面。巨大或较小的生物完全处于影响范围内，其速度减半。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用9级的法术槽施展此法术时，你可以保持你对法术的注意力长达10分钟。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold"
+			],
+			"savingThrow": [
+				"strength",
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stone Flinders",
+			"source": "OpusofElementalSubstance",
+			"page": 15,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 50
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a fist-sized stone"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你手中的石头碎裂，向范围内你能看到的生物喷射石块碎片。进行一次范围性的法术攻击。一旦命中，目标受到{@damage 3d10}的穿刺伤害。如果目标在你下一回合开始前移动，该生物会受到额外的{@damage 1d10}穿刺伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stone Shackles of the Merciless King",
+			"source": "OpusofElementalSubstance",
+			"page": 16,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an emerald worth 500gp and a band of iron, which the spell consumes",
+					"consume": true,
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"在范围内的生物的腿上出现沉重的石枷锁。没有腿或肉体的生物不受此法术的影响。",
+				"当镣铐出现时，生物的速度会降低到5英尺，并且不能冲刺。如果该生物进行了传送，镣铐也会随之传送。镣铐有200点命中率，对非魔法伤害免疫，不能被4级以上的法术影响或探测到，对所有其他法术和魔法效果的蓄力攻击有优势。",
+				"每当镣铐受到伤害、被法术瞄准或被篡改时，被镣铐铐住的生物会受到{@damage 15d10}的穿刺伤害，因为针状的石刺会钻进他们的腿里。每当镣铐对受阻的生物造成伤害时，就会听到冷酷的、高贵的笑声。",
+				"试图切开自己的腿来释放自己的生物会发现缺失的肢体无法被任何东西恢复，除非是许愿法术。"
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"miscTags": [
+				"ADV",
+				"HL",
+				"PRM"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Storm of Biting Dust",
+			"source": "OpusofElementalSubstance",
+			"page": 16,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a pouch of sand",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在范围内形成一个半径为30英尺的尘埃漩涡球。球体在转角处扩散，其区域被轻度遮蔽。它持续的时间或直到中等或更高速度的风（至少每小时10英里）将其驱散。在云层内开始他们的回合的生物必须在宪法规定的投掷中成功，否则会受到{@damage 1d6}的打击性伤害，并被{@condition blinded}直到他们的回合结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，每超过三级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Storm Plummet",
+			"source": "OpusofElementalSubstance",
+			"page": 16,
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "sight"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of blue dragon's blood"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一道薄薄的能量闪光从你举起的手上划向天空。几分钟后，一个巨大的闪电球在你能看到的地方坠落到地上。在球体落下的20英尺半径、1000英尺高的圆柱体内的每个生物都必须做一个宪法救赎。球体在转角处扩散，并穿过小至一英寸的空间。",
+				"闪电在每个被卷入此法术区域的生物之间形成弧线。拯救失败时，该区域内的每个生物都会受到{@damage 8d8}的闪电伤害（最多为{@dice 48d8}）。拯救成功时，生物会受到一半的伤害。",
+				"穿着金属盔甲或主要由金属组成的生物在拯救动作上有劣势。"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Storm Surge",
+			"source": "OpusofElementalSubstance",
+			"page": 16,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"从你的手中，一波噼里啪啦的能量席卷而来，电击路径上的一切。在20英尺范围内的每个生物都必须做一个灵巧的蓄力动作。蓄力失败时，生物会受到{@damage 3d8}的雷电伤害，蓄力成功则受到一半的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Summits of Colothys",
+			"source": "OpusofElementalSubstance",
+			"page": 17,
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "the bone of a corpse struck by lightning"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在范围内创造一个由臭氧气味的黑色峭壁组成的圆形墙。这个圆圈的半径为60英尺，高20英尺，厚10英尺。这个圆圈只出现在坚固的表面上，并且持续时间很长。",
+				"这堵墙阻挡了视线，需要成功的攀爬检查，并与你的法术救赎DC相对应才能穿越。",
+				"当石环出现时，在其范围内除你之外的每个生物都必须做一个灵巧的蓄力动作，因为雷电会从黑石上劈下来。拯救失败时，生物会受到{@damage 7d8}的雷电伤害，拯救成功时则受到一半的伤害。",
+				"作为后续回合的行动，当你在圈内时，你可以用你的行动使一道闪电击中圈内的一个生物。目标必须做一个灵巧的蓄力动作，如果蓄力失败会受到{@damage 7d8}的闪电伤害，如果蓄力成功则受到一半的伤害。",
+				"站在石环上的生物会自动失败，以避免此法术造成的伤害。"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"R",
+				"W"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thunder Cannon",
+			"source": "OpusofElementalSubstance",
+			"page": 17,
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 45
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a brass horn"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"从你身上发出可听到1英里以外的震荡爆炸声。在75英尺范围内的每个生物都必须做一个 \"宪法救赎\"。拯救失败时，生物会受到{@damage 10d6}雷霆伤害，并被推到法术效果的边缘。拯救成功时，目标会受到一半的伤害，并且不会被推倒。没有被携带或穿戴的物体也会被直接推离你到这个法术效果的末端。 如果有一个障碍物，例如墙壁，在目标到达法术区域的边缘之前将其拦住，他们就会撞向障碍物，在撞到表面之前每被甩出5英尺就会受到{@damage 1d6}的伤害。"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thundercrash",
+			"source": "OpusofElementalSubstance",
+			"page": 17,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"从一句话中，一个雷鸣般的能量波从你身上爆发出来，向四面八方扩散20英尺。被卷入爆炸中的生物必须在力量救赎中获得成功，否则会受到{@damage 7d6}的雷霆伤害，并被炸得往后退10英尺。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，每超过三级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Thunder Palm",
+			"source": "OpusofElementalSubstance",
+			"page": 17,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你用手拍打敌人时，会有震荡性的爆炸声响起。进行一次近身接触攻击。一旦命中，目标受到{@damage 1d8}雷霆伤害。一个中型或小型生物也会被推到离你5英尺远的地方。",
+				"当你达到5级（{@dice 2d8}）、11级（{@dice 3d8}）和17级（{@dice 4d8}）时，该法术的伤害增加{@dice 1d8}。"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"FMV",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tumultuous Sector",
+			"source": "OpusofElementalSubstance",
+			"page": 17,
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "an opal worth at least 50 gp which the spell consumes",
+					"consume": true,
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"增强范围内40英尺立方体内的音量。在持续时间内，在该区域内产生的任何噪音都会被放大几个量级。小声说话听起来像大喊大叫；剑打在盾牌上听起来像打雷。",
+				"在该区域移动的生物，即使是以半速移动，也会发出足够的噪音，在30英尺以外的地方被听到。在这个区域进行的隐身检查会受到-10的惩罚。",
+				"每次有生物使用行动攻击、施法或与木头、石头或金属制成的物体互动时，该区域的所有生物都会受到{@damage 1d6}雷霆伤害。此外，在该区域内施放的雷霆法术会造成额外的（%1%）雷霆伤害。"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Undulating Limbs",
+			"source": "OpusofElementalSubstance",
+			"page": 18,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"四条20英尺长的黑色酸性渗出物的无张力触手从你的身体中弹出，直到咒语结束。你可以使用一个额外的动作，用触手攻击你周围20英尺内的一个生物或物体。当你这样做时，进行一次近战法术攻击。一旦命中，目标会受到{@damage 8d4}的酸液伤害。",
+				"无论你是否击中，触手都会在一片酸液中爆炸。目标和它周围10英尺内的每一个生物都必须成功地进行灵巧救赎，如果救赎失败，将受到{@damage 4d4}酸液伤害，如果救赎成功，将受到一半的伤害。如果你耗尽了最后一个触手，咒语会提前结束。你每剩下一个触手，你的攀爬和游泳速度就增加5英尺。"
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Voltaic Spear",
+			"source": "OpusofElementalSubstance",
+			"page": 18,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 70
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"从你的手掌中射出闪电到范围内的目标。进行一次范围性的法术攻击。一旦命中，目标将受到{@damage 6d8}的闪电伤害。",
+				"此外，在目标10英尺范围内的最多三个生物必须做一个灵巧的救赎，如果救赎失败会受到{@damage 2d8}雷电伤害，如果救赎成功会受到一半的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级以上的法术槽施放此法术时，每超过3级的法术槽等级，初始伤害增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Watchful Arctic Geysers",
+			"source": "OpusofElementalSubstance",
+			"page": 18,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a source of water or pile of snow and a white spinel gemstone worth 10gp, which the spell consumes",
+					"consume": true,
+					"cost": 1000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"你为3个边长不超过5英尺的水源注入奥术魔法。直到咒语结束，每当除你之外的生物进入其中一个被施法的水源的20英尺范围内，就会有一股极地泥浆喷出，袭击他们。该生物必须在灵巧的救赎中成功，否则会受到{@damage 3d6}的寒冷伤害，并在1分钟内速度减半。水源随后被耗尽。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施展此法术时，每超过四级的法术槽等级，可影响的来源数量就增加一个。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Whisper Blast",
+			"source": "OpusofElementalSubstance",
+			"page": 18,
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature comes within 5 feet of you"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a gold bell"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"小声说话变成雷鸣般的轰鸣声，向接近你的生物猛烈撞击。该生物必须成功地进行力量救赎，否则会受到{@damage 13d6}的雷霆伤害并被推后10英尺。",
+				"一个能听到的生物如果被这个咒语所针对，就会在1分钟内受到（%0%）的影响。他们可以在每个回合结束时做一个宪法救赎动作，以结束{@condition deafened}的状态。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，每超过6级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"FMV",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Whiteout",
+			"source": "OpusofElementalSubstance",
+			"page": 18,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the fingernail of a corpse that was frozen to death"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一阵刺骨的雪和冰冷的雨从你选择的范围内的一个点扩散到半径为50英尺的球体中。寒流持续的时间。",
+				"生物在智慧（感知）检查中处于劣势，无法通过这个魔法暴风雪看到或听到。在该区域的非魔法火焰会被熄灭。",
+				"每当一个生物在球体中开始它的回合时，它必须做一个宪法救赎动作。在失败的情况下，该生物会受到{@damage 8d8}的寒冷伤害。拯救成功时，他们会受到一半的寒冷伤害。在法术半径内死亡的生物会被冻成固体。"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wildfire",
+			"source": "OpusofElementalSubstance",
+			"page": 19,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 80
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a pinch of sawdust"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"幽灵般的血红色火焰充斥着地面上一个40英尺的方块，你可以在范围内看到。在该区域开始他们的回合的生物必须做一个灵巧的蓄力动作，如果蓄力失败会受到{@damage 3d8}的火焰伤害，如果蓄力成功会受到一半的伤害。",
+				"区域内的人造物体和生物会被这个法术损坏，但天然植物群则不会受到伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施放此法术时，每超过4级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"Q"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Zerd's Bonk of Bitter Cold",
+			"source": "OpusofElementalSubstance",
+			"page": 19,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a clay top with snowflake designs"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"随着一句话的力量和一个微妙的回旋，寒冷的狂风和锋利的冰片在你周围旋转，产生毁灭性的效果。在你15英尺范围内的每个生物都必须做一个灵巧的蓄力动作，如果蓄力失败，会受到{@damage 3d8}的寒冷伤害和{@damage 3d8}的切割伤害，如果蓄力成功，会受到一半的伤害。冰云会在角落里扩散。没有佩戴或携带的物品也会被法术损坏。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用六级以上的法术槽施放此法术时，每超过五级的法术槽等级，伤害会增加{@dice 2d8}寒冷或{@dice 2d8}猛击，由你选择。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"slashing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}

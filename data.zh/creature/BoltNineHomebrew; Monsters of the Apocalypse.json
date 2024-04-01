@@ -1,0 +1,2672 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "BoltNineHomebrewMonstersOfTheApocalypse",
+				"abbreviation": "BoltNineHomebrewMonstersOfTheApocalypse",
+				"full": "Monsters of the Apocalypse",
+				"authors": [
+					"BoltNineHomebrew - AshenBolt (https://www.reddit.com/r/UnearthedArcana/comments/3yckze/boltnine_homebrew_is_shutting_down_heres_a_mirror/ )"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.12.19",
+				"url": "https://drive.google.com/drive/folders/0B2UyuHLUuCjxeWRULTRHSk9jZEE",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1608367627,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "0b00ea2c1e"
+	},
+	"monster": [
+		{
+			"name": "Behemot, Terror of the Hearth",
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d20 + 400",
+				"average": 820
+			},
+			"speed": {
+				"walk": 90
+			},
+			"str": 30,
+			"dex": 20,
+			"con": 30,
+			"int": 14,
+			"wis": 20,
+			"cha": 14,
+			"passive": 15,
+			"cr": "30",
+			"tokenUrl": "https://i.imgur.com/lJUwVcD.png",
+			"fluff": {
+				"entries": [
+					"伟大的野兽",
+					"世界末日带来了地球、海洋和天空的恐怖。这些巨大的野兽每走一步，扇动翅膀，甩动尾巴，都会带来毁灭。它们的吼叫声将天堂撕成碎片。这些野兽是启示录的最后一步，生来就是为了毁灭世界。",
+					"贝希摩斯，地球的恐怖",
+					"贝希摩斯据说生活在森林深处，被埋在收集的土地和植物的岁月之下。故事讲述了他在沉睡千年后醒来，当世界上的人们带来了对自然的破坏。谣言说，他是如此之大，以至于他的角是由世界上最大的树木制成的，他的嘴比任何洞穴都要大，都要黑，他的每一个脚步都会使他脚下的土地断裂。他以山为食，喝熔岩来满足他的渴求，但一旦他醒来，没有什么能满足他巨大的需求，他要吃掉所有经过他的路的东西。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/d1eLYgq.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"shortName": "Behemot, Terror of the Hearth",
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 100 ft."
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"save": {
+				"str": "+19",
+				"con": "+19",
+				"wis": "+14"
+			},
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/day)",
+					"entries": [
+						"如果贝希摩斯的拯救动作失败，它可以选择成功。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"巨兽在面对法术和其他魔法效果时，在蓄力攻击方面具有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"贝希摩斯的武器攻击是有魔法的。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"巨兽可以进行六次攻击：一次是咬人，四次是踩人，一次是尾巴攻击。它可以用它的燕子来代替它的咬合。"
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 19}击中，到达15英尺，一个目标。{@h}36 ({@damage 4d12 + 10})重击伤害。如果目标是一个生物，它必须成功地进行{@dc 20}力量救赎，否则会跌倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 19}击中，到达10英尺，一个目标。{@h}36 ({@damage 4d12 + 10})穿刺伤害。如果目标是生物，则是{@condition grappled}(逃生{@dc 20})。直到这次抓捕结束，目标是{@condition restrained}，巨兽不能咬到其他目标。"
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"巨兽对它正在抓捕的巨大或更小的生物进行一次撕咬攻击。如果攻击命中，目标会受到咬伤的伤害，目标会被吞噬，并且抓捕结束。当被吞噬时，目标是{@condition blinded}和{@condition restrained}，它对Behemoth以外的攻击和其他效果有完全的掩护，并且在Behemoth的每个回合开始时受到56({@damage 16d6})的火焰伤害。",
+						"如果贝希摩斯在一个回合内受到来自它体内生物的60次伤害或更多，贝希摩斯必须在该回合结束时成功地进行一次{@dc 30}宪法救赎，或者反刍所有被吞食的生物，这些生物会在贝希摩斯10英尺内的空间里掉落{@condition prone}。如果贝希摩斯死亡，被吞食的生物不再被它影响（%2%），并且可以通过使用30英尺的移动来逃离尸体，退出（%3%）。"
+					]
+				},
+				{
+					"name": "Tremor (1/day)",
+					"entries": [
+						"巨兽重击地面，使其周围的土地崩裂。这就像法术 \"地震 \"的作用一样，其蓄力DC为27。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained",
+				"grappled",
+				"blinded"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"地球之恐怖巨兽可以执行3个传奇动作，可从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。地球之恐怖巨兽在其回合开始时恢复已用传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Stomp",
+					"entries": [
+						"巨兽做了一次踩踏攻击。"
+					]
+				},
+				{
+					"name": "Earth Growth (Costs 2 Actions)",
+					"entries": [
+						"贝希摩斯召唤大地的力量来帮助它。触手状的藤蔓从它脚下的地面喷涌而出，试图缠住它的敌人。在30英尺范围内的任何生物必须成功地进行一个{@dc 20}灵巧的投掷，否则会被{@condition restrained}。一个{@condition restrained}的生物可以用它的行动来尝试一个{@dc 20}的力量蓄力，以逃脱藤蔓的缠绕。一旦一个生物成功地用蓄力投掷来逃脱藤蔓，它就会在一小时内免疫于大地生长的影响。"
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"underdark"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Leviathan, Maw of the Seas",
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d20 + 320",
+				"average": 740
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 90
+			},
+			"str": 20,
+			"dex": 27,
+			"con": 26,
+			"int": 26,
+			"wis": 20,
+			"cha": 14,
+			"passive": 24,
+			"cr": "30",
+			"shortName": "Leviathan, Maw of the Seas",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+17",
+				"con": "+17",
+				"wis": "+14"
+			},
+			"skill": {
+				"perception": "+14"
+			},
+			"immune": [
+				"cold"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"fluff": {
+				"entries": [
+					"伟大的野兽",
+					"世界末日带来了地球、海洋和天空的恐怖。这些巨大的野兽每走一步，扇动翅膀，甩动尾巴，都会带来毁灭。它们的吼叫声将天堂撕成碎片。这些野兽是启示录的最后一步，生来就是为了毁灭世界。",
+					"利维坦, 海洋之口",
+					"遇难的水手们散布谣言，说他们漂浮在浮木之间时，一条巨大的蛇形鱼在他们面前从海中升起。据说 \"利维坦 \"有300多英里长，它的经过会产生足以吞噬城市的潮汐浪潮。它的速度是如此之快，以至于当它向你移动时，你就像被一颗飞来的彗星击中一样，而当它咆哮时，它将面前的大海分开。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/mTFnURZ.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"underwater"
+			],
+			"tokenUrl": "https://i.imgur.com/xaLIB1i.png",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/day)",
+					"entries": [
+						"如果 \"利维坦 \"拯救失败，它可以选择成功。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"利维坦在面对法术和其他魔法效果的时候有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"利维坦的武器攻击是神奇的。"
+					]
+				},
+				{
+					"name": "Echolocation",
+					"entries": [
+						"只要利维坦在水下，它就能识别和定位一英里内的任何物体。此外，昏暗的光线和黑暗不会对智慧（感知）检查造成不利影响。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"利维坦可以制造一个撞击波，然后进行四次攻击：一次是咬人，两次是触手，一次是尾巴攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14}击中，到达10英尺，一个目标。{@h}31 ({@damage 4d12 + 5})穿刺伤害。如果目标是生物，则是{@condition grappled}（逃跑{@dc 20}）。直到这个抓捕结束，目标是{@condition restrained}，利维坦不能咬到其他目标。"
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"{@atk mw} {@hit 14}击中，到达20英尺，一个目标。{@h}18 ({@damage 2d12 + 5})重击伤害。如果目标是一个生物，它必须在一个{@dc 20}的力量反射中成功，或者被推到10英尺。"
+					]
+				},
+				{
+					"name": "Crashing Wave",
+					"entries": [
+						"利维坦用它的鳍来创造一个激流。所有在15英尺范围内的生物必须在一个{@dc 20}灵巧的投掷中成功，否则会受到{@damage 4d12}的重击伤害并被推到10英尺。如果蓄力成功，目标将受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 14}击中，到达15英尺，一个目标。{@h}18 ({@damage 2d12 + 5})重击伤害。如果目标是生物，则是{@condition grappled}(逃生{@dc 20})。直到这个抓捕结束，目标是{@condition restrained}。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"stunned"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"海洋之巨兽，海之巨口可以执行3个传奇动作，可从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。海洋之巨兽，海之巨口在其回合开始时恢复已用传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"利维坦用它的尾巴做了一次攻击。"
+					]
+				},
+				{
+					"name": "Shockwave (Costs 2 Actions)",
+					"entries": [
+						"利维坦在水下发出一声尖叫，在水中发出一道冲击波，击中任何人。任何在利维坦30英尺范围内的生物都必须成功地进行一次{@dc 20}体质测试，否则会被{@condition stunned}，直到下一回合。"
+					]
+				}
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Zyz, Scourge of the Skies",
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d20 + 280",
+				"average": 700
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 22,
+			"dex": 30,
+			"con": 24,
+			"int": 16,
+			"wis": 20,
+			"cha": 26,
+			"passive": 15,
+			"cr": "30",
+			"fluff": {
+				"entries": [
+					"伟大的野兽",
+					"世界末日带来了地球、海洋和天空的恐怖。这些巨大的野兽每走一步，扇动翅膀，甩动尾巴，都会带来毁灭。它们的吼叫声将天堂撕成碎片。这些野兽是启示录的最后一步，生来就是为了毁灭世界。",
+					"Zyz，天空的祸害",
+					"Zyz有时被称为鸟之主，据说它从云中降落。谣言说它的翅膀很大，可以遮住太阳，它的每一次扇动都会留下飓风和暴风雨的痕迹。有人说，它最喜欢的食物是长老龙，当它们从破碎的大地和海洋中逃出来时，它就从天空中猎取它们。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/OeJuAZF.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"hill",
+				"mountain"
+			],
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/L6apz7g.png",
+			"shortName": "Zyz, Scourge of the Skies",
+			"save": {
+				"dex": "+19",
+				"con": "+18",
+				"wis": "+14"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/day)",
+					"entries": [
+						"如果Zyz的拯救动作失败，它可以选择成功。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Zyz在面对法术和其他魔法效果时，在蓄力攻击上有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Zyz的武器攻击是有魔力的。"
+					]
+				},
+				{
+					"name": "Eagle Eye",
+					"entries": [
+						"Zyz可以毫无困难地看到1英里以外的地方，甚至能够分辨出细微的细节，就像在看100英尺以外的东西一样。此外，昏暗的光线不会对其智慧（感知）检查造成不利影响。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Zyz可以进行一次暴风攻击，然后进行五次攻击：一次用喙，两次用翅膀，两次用爪子。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 19}击中，到达10英尺，一个目标。{@h}36 ({@damage 4d12 + 10})砍击伤害。如果目标是生物，则是{@condition grappled}(逃生{@dc 20})。直到这个抓捕结束，目标是{@condition restrained}，Zyz不能抓捕其他目标。"
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 19}击中，到达10英尺，一个目标。{@h}36 ({@damage 4d12 + 10})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Wing",
+					"entries": [
+						"{@atk mw} {@hit 19}击中，到达20英尺，一个目标。{@h}19 ({@damage 2d12 + 6})重击伤害。"
+					]
+				},
+				{
+					"name": "Torrential Winds",
+					"entries": [
+						"Zyz剧烈地拍打，产生强烈的风，缓冲敌人。在Zyz目标方向50英尺范围内的任何生物必须做一个{@dc 20}力量救赎动作。拯救失败时，该生物会受到{@damage 2d12}重击伤害并倒下{@condition prone}。拯救成功时，该生物将受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Sonic Shout (1/day)",
+					"entries": [
+						"Zyz发出可怕的、高音调的尖叫声，撕开了天际。100英尺内的建筑物会受到{@damage 10d12}的雷霆伤害。任何在齐兹100英尺范围内的生物必须成功地进行灵巧救赎，否则会受到{@damage 10d12}的雷霆伤害并坠落{@condition prone}。拯救成功后，该生物将受到该量的一半。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained",
+				"grappled",
+				"prone"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"天空之威胁 (zyz) 可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。天空之威胁 (zyz) 在自己的回合开始时恢复已使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Wing",
+					"entries": [
+						"Zyz用它的翅膀做了一次攻击。"
+					]
+				},
+				{
+					"name": "Typhoon (Costs 2 Actions)",
+					"entries": [
+						"齐兹召唤出一场巨大的雷暴，用闪电攻击他的敌人。60英尺范围内的一个生物必须在灵巧救赎中成功，否则会受到(1%)的闪电伤害。如果救赎失败，则会受到一半的伤害。"
+					]
+				}
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Glory",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d10 + 120",
+				"average": 285
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "15",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"征服",
+					"四个人中的第一个。征服将自己伪装成一个举止得体、口若悬河的旅行贵族，获得了所有与他交谈的人的钦佩和崇拜。他头脑灵活，渴望权力，喜欢走进伟大的国王和皇帝的城堡，说服他们把王位让给他。很少有人能拒绝他的要求，一旦他把王冠戴在头上，他的王国里的所有人都会被他的魔法征服，违背自己的意愿执行他的每一句话。",
+					"征服携带着银色的长弓，腰间挂着装满孔雀羽毛箭的箭筒。他骑着雄伟的白马 \"荣耀\"，当他的手下有整支军队时，他是一支不可忽视的力量。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WAsRcq3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/vp4LN4t.png",
+			"isNpc": false,
+			"shortName": "Glory",
+			"languages": [
+				"Infernal"
+			],
+			"languageTags": [
+				"I"
+			],
+			"save": {
+				"str": "+9",
+				"dex": "+8",
+				"con": "+9"
+			},
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"radiant",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"荣耀在面对法术和其他魔法效果时，在蓄力攻击上有优势。"
+					]
+				},
+				{
+					"name": "Infernal Hooves",
+					"entries": [
+						"荣耀的所有攻击都是魔法。荣耀的任何攻击都会造成额外的（%0%）辐射伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"荣耀可以用它的蹄子进行两次攻击。"
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}26 ({@damage 4d10 + 4})重击伤害，外加18 ({@damage 4d8})辐射伤害。"
+					]
+				},
+				{
+					"name": "Stampeding Charge",
+					"entries": [
+						"如果格洛瑞向一个目标移动至少15英尺，然后在同一回合用蹄子打它，目标会受到额外的26({@damage 4d10 + 4})重击伤害加上18({@damage 4d8})辐射伤害。如果目标是一个生物，它必须成功地进行一个{@dc 17}力量救赎，否则会被击倒{@condition prone}。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Horseman Conquest (no mount)",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 168",
+				"average": 357
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 18,
+			"int": 18,
+			"wis": 18,
+			"cha": 22,
+			"passive": 14,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"征服",
+					"四个人中的第一个。征服将自己伪装成一个举止得体、口若悬河的旅行贵族，获得了所有与他交谈的人的钦佩和崇拜。他头脑灵活，渴望权力，喜欢走进伟大的国王和皇帝的城堡，说服他们把王位让给他。很少有人能拒绝他的要求，一旦他把王冠戴在头上，他的王国里的所有人都会被他的魔法征服，违背自己的意愿执行他的每一句话。",
+					"征服携带着银色的长弓，腰间挂着装满孔雀羽毛箭的箭筒。他骑着雄伟的白马 \"荣耀\"，当他的手下有整支军队时，他是一支不可忽视的力量。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pLfTiqG.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/UUDfsYX.png",
+			"shortName": "Horseman Conquest (no mount)",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"dex": "+11",
+				"con": "+10",
+				"cha": "+12"
+			},
+			"skill": {
+				"deception": "+12",
+				"persuasion": "+12"
+			},
+			"immune": [
+				"radiant"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "Devil's Tongue",
+					"entries": [
+						"征服在所有的魅力（欺骗）和魅力（说服）检查中具有优势。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"征服者在面对法术和其他魔法效果时，在救赎上有优势。"
+					]
+				},
+				{
+					"name": "Overlord",
+					"entries": [
+						"对于每一个在征服30英尺范围内的盟友，他的所有伤害卷都会获得+1的奖励，最大的奖励是+10。这包括他的马 \"荣耀\"。炎魔之弓。征服的武器攻击是神奇的。当征服用任何武器攻击时，该武器会造成额外的（%0%）辐射伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"征服进行了两次长弓攻击。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 14}击中，范围120/600英尺，一个目标。{@h}19 ({@damage 4d6 + 5})穿刺伤害，加上27 ({@damage 6d8})辐射伤害。此外，目标必须成功完成一个{@dc 20}的智慧救赎，否则会被{@condition charmed}，直到下一回合。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"reaction": [
+				{
+					"name": "Subjugation",
+					"entries": [
+						"当征服是一个近战攻击的目标时，他可以强迫攻击者做一个{@dc 20}的智慧拯救动作。如果拯救失败，攻击会自动失败，攻击者必须结束他们的回合。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"征服者(`Conquest`)可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。征服者(`Conquest`)在自己的回合开始时会恢复已使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Longbow",
+					"entries": [
+						"征服用他的长弓做了一次攻击。"
+					]
+				},
+				{
+					"name": "Quick Retreat",
+					"entries": [
+						"荣耀可以移动到它的移动速度。"
+					]
+				},
+				{
+					"name": "Trample Underfoot (Costs 2 Actions)",
+					"entries": [
+						"征服者举起他的手，要求世界向他跪下。30英尺范围内的所有敌人必须在智慧救赎中成功，否则就会被摔倒（1%）。"
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Horseman Conquest",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 168",
+				"average": 357
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 18,
+			"int": 18,
+			"wis": 18,
+			"cha": 22,
+			"passive": 14,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"征服",
+					"四个人中的第一个。征服将自己伪装成一个举止得体、口若悬河的旅行贵族，获得了所有与他交谈的人的钦佩和崇拜。他头脑灵活，渴望权力，喜欢走进伟大的国王和皇帝的城堡，说服他们把王位让给他。很少有人能拒绝他的要求，一旦他把王冠戴在头上，他的王国里的所有人都会被他的魔法征服，违背自己的意愿执行他的每一句话。",
+					"征服携带着银色的长弓，腰间挂着装满孔雀羽毛箭的箭筒。他骑着雄伟的白马 \"荣耀\"，当他的手下有整支军队时，他是一支不可忽视的力量。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/xYU0rXD.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/fNLciVN.png",
+			"shortName": "Horseman Conquest",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"dex": "+11",
+				"con": "+10",
+				"cha": "+12"
+			},
+			"skill": {
+				"deception": "+12",
+				"persuasion": "+12"
+			},
+			"immune": [
+				"radiant"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "Devil's Tongue",
+					"entries": [
+						"征服在所有的魅力（欺骗）和魅力（说服）检查中具有优势。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"征服者在面对法术和其他魔法效果时，在救赎上有优势。"
+					]
+				},
+				{
+					"name": "Overlord",
+					"entries": [
+						"对于每一个在征服30英尺范围内的盟友，他的所有伤害卷都会获得+1的奖励，最大的奖励是+10。这包括他的马 \"荣耀\"。炎魔之弓。征服的武器攻击是神奇的。当征服用任何武器攻击时，该武器会造成额外的（%0%）辐射伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"征服进行了两次长弓攻击。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 14}击中，范围120/600英尺，一个目标。{@h}19 ({@damage 4d6 + 5})穿刺伤害，加上27 ({@damage 6d8})辐射伤害。此外，目标必须成功完成一个{@dc 20}的智慧救赎，否则会被{@condition charmed}，直到下一回合。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"reaction": [
+				{
+					"name": "Subjugation",
+					"entries": [
+						"当征服是一个近战攻击的目标时，他可以强迫攻击者做一个{@dc 20}的智慧拯救动作。如果拯救失败，攻击会自动失败，攻击者必须结束他们的回合。"
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"征服者(`Conquest`)可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。征服者(`Conquest`)在自己的回合开始时会恢复已使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Longbow",
+					"entries": [
+						"征服用他的长弓做了一次攻击。"
+					]
+				},
+				{
+					"name": "Quick Retreat",
+					"entries": [
+						"荣耀可以移动到它的移动速度。"
+					]
+				},
+				{
+					"name": "Trample Underfoot (Costs 2 Actions)",
+					"entries": [
+						"征服者举起他的手，要求世界向他跪下。30英尺范围内的所有敌人必须在智慧救赎中成功，否则就会被摔倒（1%）。"
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Fear",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d10 + 120",
+				"average": 285
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "15",
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/qzarL7J.png",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"饥荒",
+					"饥荒穿着最深沉的黑色衣服，经常伪装成药师，试图为那些以贪食为主要罪恶的人伸张正义。他所到之处，都会杀死庄稼，腐烂牲畜，并将群众送入荒野。",
+					"他带着一个可以作为魔法焦点的天平，骑着夜黑马 \"恐惧\"，从活人身上吸取能量和希望，使自己变得更加强大。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/D4TxRWT.png"
+						}
+					}
+				]
+			},
+			"shortName": "Fear",
+			"languages": [
+				"Infernal"
+			],
+			"languageTags": [
+				"I"
+			],
+			"save": {
+				"str": "+9",
+				"dex": "+8",
+				"con": "+9"
+			},
+			"resist": [
+				"bludgeoning",
+				"necrotic",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恐惧在对法术和其他魔法效果的救赎中具有优势。"
+					]
+				},
+				{
+					"name": "Infernal Hooves",
+					"entries": [
+						"恐惧的所有攻击都是神奇的。恐惧的任何攻击都会造成额外的（%0%）坏死伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恐惧可以用它的蹄子进行两次攻击。"
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}26 ({@damage 4d10 + 4})重击伤害，外加18 ({@damage 4d8})坏死伤害。"
+					]
+				},
+				{
+					"name": "Noxious Breath",
+					"entries": [
+						"恐惧会在20英尺的范围内呼出一种恶臭的气体。该区域内的每个生物都必须做一个{@dc 15}体质测试。拯救失败时，它将受到36{@damage 8d8}的毒气伤害，并且在该生物的回合开始前不能做出反应。拯救成功时，它将受到一半的伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Horseman Famine (no mount)",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 126",
+				"average": 315
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 18,
+			"wis": 24,
+			"cha": 16,
+			"passive": 17,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"饥荒",
+					"饥荒穿着最深沉的黑色衣服，经常伪装成药师，试图为那些以贪食为主要罪恶的人伸张正义。他所到之处，都会杀死庄稼，腐烂牲畜，并将群众送入荒野。",
+					"他带着一个可以作为魔法焦点的天平，骑着夜黑马 \"恐惧\"，从活人身上吸取能量和希望，使自己变得更加强大。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ftCGMKG.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"shortName": "Horseman Famine (no mount)",
+			"tokenUrl": "https://i.imgur.com/btoODp3.png",
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"con": "+9",
+				"int": "+13",
+				"wis": "+13"
+			},
+			"skill": {
+				"arcana": "+10",
+				"nature": "+10"
+			},
+			"immune": [
+				"necrotic"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"饥荒在对法术和其他魔法效果的救赎上有优势。"
+					]
+				},
+				{
+					"name": "Infernal Scale",
+					"entries": [
+						"饥荒的所有攻击都具有魔力。当饥荒造成伤害时，他会造成额外的（%0%）坏死伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"饥荒是一个16级的施法者。它的法术能力是智慧（法术救赎（%0%），使用法术攻击命中率+13）。饥荒有以下巫师法术准备。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell mage hand}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell false life}",
+								"{@spell fog cloud}",
+								"{@spell ray of sickness}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell Melf's acid arrow}",
+								"{@spell ray of enfeeblement}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell bestow curse}",
+								"{@spell fireball}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell greater invisibility}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell dominate person}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell flesh to stone}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell teleport}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell feeblemind}",
+								"{@spell incendiary cloud}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"饥荒会进行两次规模攻击，或进行一次规模攻击并施放一个咒语。"
+					]
+				},
+				{
+					"name": "Scale",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}10 ({@damage 2d6 + 3})重击伤害，加上27 ({@damage 6d8})坏死伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"饥荒可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。饥荒在自己的回合开始时恢复已用传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"饥荒施展了一个咒语。"
+					]
+				},
+				{
+					"name": "Starvation (Costs 2 Actions)",
+					"entries": [
+						"饥荒会耗尽一个生物的营养。30英尺范围内的一个生物必须在宪法规定的投掷中获得成功，否则它在攻击卷、能力检查和投掷中都会处于劣势。一个生物可以用它的行动来吃东西来结束这个不利条件。"
+					]
+				}
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"N",
+				"O",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Horseman Famine",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 126",
+				"average": 315
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 18,
+			"wis": 24,
+			"cha": 16,
+			"passive": 17,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"饥荒",
+					"饥荒穿着最深沉的黑色衣服，经常伪装成药师，试图为那些以贪食为主要罪恶的人伸张正义。他所到之处，都会杀死庄稼，腐烂牲畜，并将群众送入荒野。",
+					"他带着一个可以作为魔法焦点的天平，骑着夜黑马 \"恐惧\"，从活人身上吸取能量和希望，使自己变得更加强大。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/yhFGZ8m.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"shortName": "Horseman Famine",
+			"tokenUrl": "https://i.imgur.com/ocf2TXY.png",
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"con": "+9",
+				"int": "+13",
+				"wis": "+13"
+			},
+			"skill": {
+				"arcana": "+10",
+				"nature": "+10"
+			},
+			"immune": [
+				"necrotic"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"饥荒在对法术和其他魔法效果的救赎上有优势。"
+					]
+				},
+				{
+					"name": "Infernal Scale",
+					"entries": [
+						"饥荒的所有攻击都具有魔力。当饥荒造成伤害时，他会造成额外的（%0%）坏死伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"饥荒是一个16级的施法者。它的法术能力是智慧（法术救赎（%0%），使用法术攻击命中率+13）。饥荒有以下巫师法术准备。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell mage hand}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell false life}",
+								"{@spell fog cloud}",
+								"{@spell ray of sickness}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell Melf's acid arrow}",
+								"{@spell ray of enfeeblement}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell bestow curse}",
+								"{@spell fireball}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell greater invisibility}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell dominate person}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell flesh to stone}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell teleport}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell feeblemind}",
+								"{@spell incendiary cloud}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"饥荒会进行两次规模攻击，或进行一次规模攻击并施放一个咒语。"
+					]
+				},
+				{
+					"name": "Scale",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}10 ({@damage 2d6 + 3})重击伤害，加上27 ({@damage 6d8})坏死伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"饥荒可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。饥荒在自己的回合开始时恢复已用传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"饥荒施展了一个咒语。"
+					]
+				},
+				{
+					"name": "Starvation (Costs 2 Actions)",
+					"entries": [
+						"饥荒会耗尽一个生物的营养。30英尺范围内的一个生物必须在宪法规定的投掷中获得成功，否则它在攻击卷、能力检查和投掷中都会处于劣势。一个生物可以用它的行动来吃东西来结束这个不利条件。"
+					]
+				}
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"N",
+				"O",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Ruin",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d10 + 120",
+				"average": 285
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "15",
+			"shortName": "Ruin",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"War",
+					"战争不断地寻找混乱和破坏，将自己伪装成一个痛苦的老兵。战争在小村庄或大王国中寻找动乱，为不满的农奴或不快乐的贵族们提供火种，驱使他们实施暴力行为，并迅速升级为全面的战斗，有时是覆盖世界的战争。每射出一箭，每挥动一剑，他就会变得越来越强大，从世界的混乱中汲取营养。",
+					"战争挥舞着一把巨大的大剑，似乎总是闪着血光。他骑着他的火焰红马 \"毁灭\"，在身体上是四位骑士中最强壮的，能够在战斗中击败几乎所有战士。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1EBYmC8.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/u8YMwbC.png",
+			"isNpc": false,
+			"languages": [
+				"Infernal"
+			],
+			"languageTags": [
+				"I"
+			],
+			"save": {
+				"str": "+9",
+				"dex": "+8",
+				"con": "+9"
+			},
+			"resist": [
+				"bludgeoning",
+				"force",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"毁灭者在面对法术和其他魔法效果时，在救赎上有优势。"
+					]
+				},
+				{
+					"name": "Infernal Hooves",
+					"entries": [
+						"毁灭者的所有攻击都是魔法。毁灭的任何攻击都会造成额外的（%0%）武力伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"毁灭者可以用它的蹄子进行两次攻击。"
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}26 ({@damage 4d10 + 4})重击伤害，外加18 ({@damage 4d8})武力伤害。"
+					]
+				},
+				{
+					"name": "Fire Breath",
+					"entries": [
+						"毁灭者在20英尺的范围内喷出致命的火焰。该区域内的每个生物必须做一个{@dc 15}灵巧的救赎动作。如果救赎失败，它将受到45（%1%）的火焰伤害。拯救成功时，它将受到一半的伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Horseman War (no mount)",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 210",
+				"average": 399
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 20,
+			"int": 16,
+			"wis": 16,
+			"cha": 18,
+			"passive": 13,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"War",
+					"战争不断地寻找混乱和破坏，将自己伪装成一个痛苦的老兵。战争在小村庄或大王国中寻找动乱，为不满的农奴或不快乐的贵族们提供火种，驱使他们实施暴力行为，并迅速升级为全面的战斗，有时是覆盖世界的战争。每射出一箭，每挥动一剑，他就会变得越来越强大，从世界的混乱中汲取营养。",
+					"战争挥舞着一把巨大的大剑，似乎总是闪着血光。他骑着他的火焰红马 \"毁灭\"，在身体上是四位骑士中最强壮的，能够在战斗中击败几乎所有战士。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sXtVA2G.png"
+						}
+					}
+				]
+			},
+			"shortName": "Horseman War (no mount)",
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/FNy9eqT.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"str": "+12",
+				"con": "+11",
+				"cha": "+10"
+			},
+			"skill": {
+				"athletics": "+12",
+				"history": "+9"
+			},
+			"immune": [
+				"force"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"战争时对法术和其他效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Infernal Blade",
+					"entries": [
+						"战争的武器攻击是神奇的。当战争用任何武器击中时，该武器会造成额外的（%0%）武力伤害。"
+					]
+				},
+				{
+					"name": "Master Of Chaos",
+					"entries": [
+						"战争以混乱和冲突为生，反过来又以混乱和冲突为生，使他周围的人都变得暴躁，不愿意妥协。所有在战争60英尺范围内进行的魅力（劝说）卷都是以劣势进行的。此外，当战争的总命中率降低到他总命中率的60%（240命中率或以下）时，他每回合可以额外进行一次大剑或大矛攻击，作为他行动的一部分。当他的总命中率降低到总命中率的30%（120命中率或更低）时，他可以每回合再进行一次额外的大剑或大矛攻击，作为他行动的一部分。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"战争可进行三次大剑或大矛攻击。"
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 12}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d6 + 6})砍击伤害，加上27 ({@damage 6d8})力量伤害。"
+					]
+				},
+				{
+					"name": "Greatspear",
+					"entries": [
+						"随着一声低沉的呐喊，战争凭空召唤出一支巨大的长矛，在远处攻击对手。120英尺内的一个目标必须做一个{@dc 18}灵巧的蓄力动作。如果失败，目标将受到9({@damage 2d8})的穿刺伤害和27({@damage 6d8})的力量伤害。成功的话，目标会受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Call To Arms",
+					"entries": [
+						"所有在战争30英尺范围内的敌对生物都必须在一个{@dc 18}的智慧救赎动作上成功，否则就得花下一个动作对它进行近身攻击。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"这位战士可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。这位战士在自己的回合开始时会恢复已经使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Greatsword",
+					"entries": [
+						"战争用他的大剑做了一次攻击。"
+					]
+				},
+				{
+					"name": "Greatspear",
+					"entries": [
+						"战争用他的大枪进行了一次攻击。"
+					]
+				},
+				{
+					"name": "Tide Of Chaos (Costs 2 Actions)",
+					"entries": [
+						"战争利用他对混乱的力量，使盟友之间相互对抗。30英尺范围内的一个目标必须做一个{@dc 18}的智慧救赎动作。如果救赎失败，目标会在1分钟内受到{@condition charmed}的伤害，或直到其命中率降至0。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Horseman War",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 210",
+				"average": 399
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 20,
+			"int": 16,
+			"wis": 16,
+			"cha": 18,
+			"passive": 13,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"War",
+					"战争不断地寻找混乱和破坏，将自己伪装成一个痛苦的老兵。战争在小村庄或大王国中寻找动乱，为不满的农奴或不快乐的贵族们提供火种，驱使他们实施暴力行为，并迅速升级为全面的战斗，有时是覆盖世界的战争。每射出一箭，每挥动一剑，他就会变得越来越强大，从世界的混乱中汲取营养。",
+					"战争挥舞着一把巨大的大剑，似乎总是闪着血光。他骑着他的火焰红马 \"毁灭\"，在身体上是四位骑士中最强壮的，能够在战斗中击败几乎所有战士。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/3T4cE3i.png"
+						}
+					}
+				]
+			},
+			"shortName": "Horseman War",
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/ZPsd8c9.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"str": "+12",
+				"con": "+11",
+				"cha": "+10"
+			},
+			"skill": {
+				"athletics": "+12",
+				"history": "+9"
+			},
+			"immune": [
+				"force"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"战争时对法术和其他效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Infernal Blade",
+					"entries": [
+						"战争的武器攻击是神奇的。当战争用任何武器击中时，该武器会造成额外的（%0%）武力伤害。"
+					]
+				},
+				{
+					"name": "Master Of Chaos",
+					"entries": [
+						"战争以混乱和冲突为生，反过来又以混乱和冲突为生，使他周围的人都变得暴躁，不愿意妥协。所有在战争60英尺范围内进行的魅力（劝说）卷都是以劣势进行的。此外，当战争的总命中率降低到他总命中率的60%（240命中率或以下）时，他每回合可以额外进行一次大剑或大矛攻击，作为他行动的一部分。当他的总命中率降低到总命中率的30%（120命中率或更低）时，他可以每回合再进行一次额外的大剑或大矛攻击，作为他行动的一部分。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"战争可进行三次大剑或大矛攻击。"
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 12}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d6 + 6})砍击伤害，加上27 ({@damage 6d8})力量伤害。"
+					]
+				},
+				{
+					"name": "Greatspear",
+					"entries": [
+						"随着一声低沉的呐喊，战争凭空召唤出一支巨大的长矛，在远处攻击对手。120英尺内的一个目标必须做一个{@dc 18}灵巧的蓄力动作。如果失败，目标将受到9({@damage 2d8})的穿刺伤害和27({@damage 6d8})的力量伤害。成功的话，目标会受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Call To Arms",
+					"entries": [
+						"所有在战争30英尺范围内的敌对生物都必须在一个{@dc 18}的智慧救赎动作上成功，否则就得花下一个动作对它进行近身攻击。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"这位战士可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。这位战士在自己的回合开始时会恢复已经使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Greatsword",
+					"entries": [
+						"战争用他的大剑做了一次攻击。"
+					]
+				},
+				{
+					"name": "Greatspear",
+					"entries": [
+						"战争用他的大枪进行了一次攻击。"
+					]
+				},
+				{
+					"name": "Tide Of Chaos (Costs 2 Actions)",
+					"entries": [
+						"战争利用他对混乱的力量，使盟友之间相互对抗。30英尺范围内的一个目标必须做一个{@dc 18}的智慧救赎动作。如果救赎失败，目标会在1分钟内受到{@condition charmed}的伤害，或直到其命中率降至0。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Despair",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d10 + 120",
+				"average": 285
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 12,
+			"cha": 10,
+			"passive": 11,
+			"cr": "15",
+			"isNpc": false,
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"死亡",
+					"最后一个，也是四个骑士中最危险的一个。死神以一个老妇人的身份周游世界，寻找年老和垂死的人，让他们得到最后的安息。每当死神经过一个城镇，致命疾病的数量就会增加，夺取生命的事故也会增加，无论她走到哪里，都有一种隐约的绝望感跟随她。虽然她并不寻求增加自己的力量，但只要在她面前，即使是最伟大的人也会被耗尽他的力量和意志来继续下去。",
+					"死亡总是挥舞着她那把经典的镰刀，骑着她那匹苍白的马--绝望。她是四个骑士中的最后一个，因为她给那些受制于其他三个骑士的生命带来最后一击。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ReRi8bN.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/KIVYEcs.png",
+			"shortName": "Despair",
+			"languages": [
+				"Infernal"
+			],
+			"languageTags": [
+				"I"
+			],
+			"save": {
+				"str": "+9",
+				"dex": "+8",
+				"con": "+9"
+			},
+			"resist": [
+				"bludgeoning",
+				"necrotic",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"绝望者在面对法术和其他魔法效果时，在救赎上有优势。"
+					]
+				},
+				{
+					"name": "Deathly Aura",
+					"entries": [
+						"任何在绝望之城5英尺范围内的生物必须做一个{@dc 15}的智慧救赎，否则会被{@condition frightened}，持续1分钟。如果一个生物成功地进行了救赎，他们就会对这个特性产生免疫。"
+					]
+				},
+				{
+					"name": "Infernal Hooves",
+					"entries": [
+						"绝望的所有攻击都是神奇的。绝望的任何攻击都会造成额外的（%0%）坏死伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"绝望可以用它的蹄子进行两次攻击。"
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}26 ({@damage 4d10 + 4})重击伤害，外加18 ({@damage 4d8})坏死伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Horseman Death (no mount)",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 168",
+				"average": 357
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 18,
+			"wis": 22,
+			"cha": 16,
+			"passive": 16,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"死亡",
+					"最后一个，也是四个骑士中最危险的一个。死神以一个老妇人的身份周游世界，寻找年老和垂死的人，让他们得到最后的安息。每当死神经过一个城镇，致命疾病的数量就会增加，夺取生命的事故也会增加，无论她走到哪里，都有一种隐约的绝望感跟随她。虽然她并不寻求增加自己的力量，但只要在她面前，即使是最伟大的人也会被耗尽他的力量和意志来继续下去。",
+					"死亡总是挥舞着她那把经典的镰刀，骑着她那匹苍白的马--绝望。她是四个骑士中的最后一个，因为她给那些受制于其他三个骑士的生命带来最后一击。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/7BvnBdl.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"shortName": "Horseman Death (no mount)",
+			"tokenUrl": "https://i.imgur.com/ndmW0GU.png",
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+9",
+				"con": "+11",
+				"wis": "+12"
+			},
+			"skill": {
+				"insight": "+12"
+			},
+			"immune": [
+				"necrotic"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "Last Breath",
+					"entries": [
+						"与死神相邻的敌人在所有蓄力动作上都处于劣势。此外，每当一个生物在死亡的60英尺范围内死亡，她就会获得30点健康，并对所有的伤害有抵抗力，直到她下一个回合。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"死神对法术和其他魔法效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Infernal Scythe",
+					"entries": [
+						"死神的所有攻击都具有魔力，并造成额外的（%0%）坏死伤害。这包括在她用镰刀造成的伤害中。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"死神进行了三次镰刀攻击。"
+					]
+				},
+				{
+					"name": "Scythe",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d8 + 4})砍击伤害，外加27 ({@damage 6d8})坏死伤害。"
+					]
+				},
+				{
+					"name": "Marked For Death (1/day)",
+					"entries": [
+						"死神用手指着一个生物，夺走它的生命。如果该生物有100点或更少的命中率，它必须成功地进行智慧拯救，否则就会死亡。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"死神可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。死神在自己的回合开始时恢复已使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Scythe",
+					"entries": [
+						"死神用她的镰刀进行了一次攻击。"
+					]
+				},
+				{
+					"name": "Life Rend (Costs 2 Actions)",
+					"entries": [
+						"死神将生命从生物的肺部呼出，使其处于最后的生命线上。在死亡之神5英尺范围内的生物必须成功地进行一次{@dc 20}宪法救赎，否则会受到36({@damage 8d8})坏死伤害。死神会重新获得相当于所受伤害一半的命中率。"
+					]
+				},
+				{
+					"name": "Return To Life (Costs 3 Actions)",
+					"entries": [
+						"在死亡之神5英尺范围内的一个死亡生物恢复了生命，拥有20点命中率。任何作用于该生物的魔法效果现在都消失了。"
+					]
+				}
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Horseman Death",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BoltNineHomebrewMonstersOfTheApocalypse",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d8 + 168",
+				"average": 357
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 18,
+			"wis": 22,
+			"cha": 16,
+			"passive": 16,
+			"cr": "20",
+			"fluff": {
+				"entries": [
+					"四骑士",
+					"在许多宗教和信仰中，都有关于末世的故事，当世界走到一个致命的、毁灭性的尽头。其中许多故事谴责这些世界末日灾难的罪魁祸首是世界上的人们，他们的贪婪和仇恨导致他们互相毁灭，以及他们周围世界的其他部分。然而，这些破坏的属性引起了高于和超越自身的邪恶。当世界处于崩溃的边缘，人类、精灵和矮人互相残杀时，天启四骑士从他们在九层地狱的沉睡中站起来，在整个土地上肆意破坏。",
+					"死亡",
+					"最后一个，也是四个骑士中最危险的一个。死神以一个老妇人的身份周游世界，寻找年老和垂死的人，让他们得到最后的安息。每当死神经过一个城镇，致命疾病的数量就会增加，夺取生命的事故也会增加，无论她走到哪里，都有一种隐约的绝望感跟随她。虽然她并不寻求增加自己的力量，但只要在她面前，即使是最伟大的人也会被耗尽他的力量和意志来继续下去。",
+					"死亡总是挥舞着她那把经典的镰刀，骑着她那匹苍白的马--绝望。她是四个骑士中的最后一个，因为她给那些受制于其他三个骑士的生命带来最后一击。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/qrFUEES.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"shortName": "Horseman Death",
+			"tokenUrl": "https://i.imgur.com/GjDocd3.png",
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"dex": "+9",
+				"con": "+11",
+				"wis": "+12"
+			},
+			"skill": {
+				"insight": "+12"
+			},
+			"immune": [
+				"necrotic"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "Last Breath",
+					"entries": [
+						"与死神相邻的敌人在所有蓄力动作上都处于劣势。此外，每当一个生物在死亡的60英尺范围内死亡，她就会获得30点健康，并对所有的伤害有抵抗力，直到她下一个回合。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"死神对法术和其他魔法效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Infernal Scythe",
+					"entries": [
+						"死神的所有攻击都具有魔力，并造成额外的（%0%）坏死伤害。这包括在她用镰刀造成的伤害中。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"死神进行了三次镰刀攻击。"
+					]
+				},
+				{
+					"name": "Scythe",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d8 + 4})砍击伤害，外加27 ({@damage 6d8})坏死伤害。"
+					]
+				},
+				{
+					"name": "Marked For Death (1/day)",
+					"entries": [
+						"死神用手指着一个生物，夺走它的生命。如果该生物有100点或更少的命中率，它必须成功地进行智慧拯救，否则就会死亡。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"死神可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作，并且只能在另一个生物的回合结束时使用。死神在自己的回合开始时恢复已使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Scythe",
+					"entries": [
+						"死神用她的镰刀进行了一次攻击。"
+					]
+				},
+				{
+					"name": "Life Rend (Costs 2 Actions)",
+					"entries": [
+						"死神将生命从生物的肺部呼出，使其处于最后的生命线上。在死亡之神5英尺范围内的生物必须成功地进行一次{@dc 20}宪法救赎，否则会受到36({@damage 8d8})坏死伤害。死神会重新获得相当于所受伤害一半的命中率。"
+					]
+				},
+				{
+					"name": "Return To Life (Costs 3 Actions)",
+					"entries": [
+						"在死亡之神5英尺范围内的一个死亡生物恢复了生命，拥有20点命中率。任何作用于该生物的魔法效果现在都消失了。"
+					]
+				}
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		}
+	]
+}

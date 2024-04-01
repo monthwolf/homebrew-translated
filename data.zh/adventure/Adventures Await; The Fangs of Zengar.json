@@ -1,0 +1,582 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TFoZ",
+				"abbreviation": "TFoZ",
+				"full": "The Fangs of Zengar",
+				"version": "1.1",
+				"url": "https://www.patreon.com/posts/43310626",
+				"authors": [
+					"Benjamin Palmer"
+				],
+				"convertedBy": [
+					"Jenny"
+				]
+			}
+		],
+		"dateAdded": 1615141398,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "daf3049fbc"
+	},
+	"monster": [
+		{
+			"name": "Low Priestess",
+			"source": "TFoZ",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 16",
+				"average": 88
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 13,
+			"int": 14,
+			"wis": 16,
+			"cha": 13,
+			"save": {
+				"wis": "+5",
+				"cha": "+3"
+			},
+			"skill": {
+				"deception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"低级女祭司的先天法术能力是魅力（法术保全DC13）。她可以天生施展以下法术，不需要任何物质成分。"
+					],
+					"will": [
+						"{@spell animal friendship} (snakes only)"
+					],
+					"daily": {
+						"3": [
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"低级女祭司是一个4级的施法者。她的施法能力是 \"智慧\"（施法者救赎DC13，使用法术攻击时+5命中）。低等女祭司准备了以下的牧师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell command}",
+								"{@spell inflict wounds}",
+								"{@spell shield of faith}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell hold person}",
+								"{@spell spiritual weapon}"
+							]
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Death Fangs (2/Day)",
+					"entries": [
+						"低等女祭司在其回合内第一次用近战攻击命中时，可以造成额外的16({@damage 3d10})坏死伤害。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"低级女祭司对法术和其他魔法效果的救赎有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"低级女祭司进行两次近战攻击。"
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h} 10 ({@damage 2d6 + 3})重击伤害，目标为{@condition grappled}(逃脱DC 13)。直到这个抓捕结束，目标是{@condition restrained}，低级女祭司不能束缚另一个目标。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h} 5 ({@damage 1d4 + 3})穿刺伤害加上7 ({@damage 2d6})中毒伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Aspect of Zengar",
+			"source": "TFoZ",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 20",
+				"average": 150
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"wis": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal"
+			],
+			"cr": "6",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Zengar方面进行了一次收缩攻击和一次咬人攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@i Attack Style:} {@hit 6}击中，到达10英尺，一个目标。{@h} 16 ({@damage 3d8 + 4})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@i Attack Style:} {@hit 6}击中，到达5英尺，一个目标。{@h} 14 ({@damage 2d10 + 4})重击伤害，目标被{@condition grappled} (逃脱DC 16)。直到此抓捕结束，该生物为{@condition restrained}，蛇不能束缚其他目标。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RCH"
+			]
+		},
+		{
+			"name": "Temple Guard",
+			"source": "TFoZ",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 17,
+			"int": 9,
+			"wis": 11,
+			"cha": 9,
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Advantageous Saving Throws",
+					"entries": [
+						"圣殿卫士在对魔法的救赎上有优势。"
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"在它的回合开始时，狂暴者可以在该回合内的所有近战武器攻击卷上获得优势，但对它的攻击卷有优势，直到下一回合开始。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d12 + 3})砍击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Reckless"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"greataxe|phb"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Dagger of Snake Charming",
+			"source": "TFoZ",
+			"rarity": "unknown (magic)",
+			"entries": [
+				"这把匕首允许持剑者随心所欲地施放（%0%），但只对蛇。"
+			]
+		},
+		{
+			"name": "Fanged Helm of Zengar",
+			"source": "TFoZ",
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": true,
+			"entries": [
+				"此头盔对毒药伤害和{@condition poisoned}状况具有免疫力。它还赋予佩戴者一个咬人的攻击，其攻击范围为5英尺。你的熟练度奖励适用于攻击卷。一旦命中，目标会受到相当于{@dice 2d4}+你力量修饰的穿刺伤害，并且必须在DC14宪法救赎中成功，否则会受到{@damage 2d4}毒药伤害。此外，蛇对戴头盔的人很友好，除非他们受到攻击。"
+			]
+		}
+	],
+	"adventure": [
+		{
+			"name": "The Fangs of Zengar",
+			"id": "TFoZ",
+			"source": "TFoZ",
+			"group": "homebrew",
+			"contents": [
+				{
+					"name": "The Fangs of Zengar"
+				},
+				{
+					"name": "Background"
+				},
+				{
+					"name": "Adventure Hooks"
+				},
+				{
+					"name": "The Jungle Has Eyes"
+				},
+				{
+					"name": "The Temple of Fangs",
+					"headers": [
+						"Temple Exterior",
+						"1. The High Altar",
+						"2. Hall of Supplication",
+						"3. Altar of the Believer",
+						"4. Altar of the Lowly",
+						"5. The Chambers of the Low Priestess",
+						"6. Chamber of the Loyal",
+						"7. Hall of the Great Snake"
+					]
+				},
+				{
+					"name": "Aftermath"
+				}
+			],
+			"level": {
+				"start": 5,
+				"end": 5
+			},
+			"published": "2020-10-30",
+			"storyline": "Adventures Await"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "TFoZ",
+			"source": "TFoZ",
+			"data": [
+				{
+					"type": "section",
+					"name": "The Fangs of Zengar",
+					"entries": [
+						"曾格的獠牙》是为4个角色准备的，他们的平均党员等级（APL）为5。完成这次冒险的角色应该获得足够的经验，以达到6级的三分之一。角色们在丛林深处寻找一个充满怪兽的古庙。这个活动发生在亚丁，尽管它可以设置在你自己的世界。任何一方的组成都应该能够通过聪明的游戏完成这个冒险。",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://github.com/TheGiddyLimit/homebrew/blob/master/_img/JennysHomebrewStuff/AdventureAwaits/The%20Fangs%20of%20Zengar/The%20Temple%20of%20Fangs.webp?raw=true"
+							}
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Background",
+					"entries": [
+						"许多年前，獠牙帝国统治着亚丁南部的丛林。他们的帝国建立在对黑暗之神的祭祀和恶毒的战争哲学之上。在这些黑暗之神中，獠牙之神曾格（Zengar）得到了最忠实的崇拜者。他们被称为 \"低等人\"，在被遗忘的地方建造寺庙，深埋于地下，以接近他们的神灵，而神灵则居住在最黑暗的地方。",
+						"随着时间的推移，内讧和政变从内部摧毁了这个帝国。它在某种程度上仍然存在，但只是以前的一个影子。丛林已经收回了许多以前的城市和寺庙。然而，有一座这样的神庙却从未被遗弃。里面的低等人一直守卫着这个神圣的地方，等待着曾格崛起吞噬不值得的人的那一天。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Adventure Hooks",
+					"entries": [
+						"{@i {@b Finders Keepers.}}人物在一个强盗的身上发现了这张地图。他们渴望在新的土地上进行冒险，于是开始寻找地图上标记的地点。",
+						"{@i {@b For History and Knowledge.}}本市一所大学的教授向人物提供了这张地图。他对他们可能找到的任何遗迹都感兴趣。",
+						"{@i {@b Money Well Spent.}}他们从一个在酒馆里遇到的老酒鬼那里买了这张地图。他有很多疯狂的故事，其中大部分可能都不是真的，但这个故事似乎很有道理。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "The Jungle Has Eyes",
+					"entries": [
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"在过去的两个星期里，你在茂密的树叶中开路，在一个似乎永无止境的丛林中越走越深。当你在仪式中遇到部落战士时，你知道这不会有好结果。你试图在灌木丛中甩掉他们，但他们显然熟悉地形。突然间，你们发现自己在一片空地上，被包围了。像牛一样被驱赶着。"
+							]
+						},
+						"{@i {@b Encounter: Jungle Warriors.}}两个{@creature berserker||berserkers}和六个{@creature tribal warrior||tribal warriors}追着队伍到了一片空地。队伍两边各有三名战士和一名狂暴战士。战士们每人有两根长矛（一根用来投掷，一根用来战斗）。狂暴者拿着大斧头冲进去，不顾一切地攻击，而部落的战士则投掷长矛，然后在他们后面冲进去。当最后一个狂暴者和战士倒下时，它用深渊语喊道：\"哦，伟大的蛇，请吞下我的灵魂，以便我可以再次为你服务！\"。随着敌人的死亡，队伍有机会休息，并再次确定他们的方向。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "The Temple of Fangs",
+					"entries": [
+						"寺庙中的许多大厅都被淹没了。地图上的水砖有5英尺深，在其中移动也算作困难地形。当进行近战武器攻击时，没有游泳速度的生物（无论是天生的还是魔法赋予的）在攻击卷中处于劣势，除非武器是匕首、标枪、短剑、长矛或三叉戟。完全浸泡在水中的生物和物体对火焰伤害有抵抗力。",
+						{
+							"type": "entries",
+							"name": "Temple Exterior",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"按照地图，你能够找到上面的主要地标，并重新回到小路上。其余的旅程并不顺利，你缓慢而稳定地在灌木丛中前进。突然，当你穿过一片被葡萄覆盖的小树丛时，你发现自己正盯着一个嵌在悬崖峭壁上的石蛇头。水从它的口中倾泻而下，狭窄的壁架从两侧通向它。在它的底部，一个大水池在阳光下闪闪发光。"
+									]
+								},
+								"{@i {@b Encounter: Temple Denizens.}}一行人已经到达了曾格尔神庙。目前，这里有两个{@creature giant constrictor snake||giant constrictor snakes}。一只蜷缩在石蛇头的眼窝里，另一只躲在水底。它们不会攻击，直到队伍进入水中或试图爬上壁架。壁架本身有10英尺高，需要通过DC14力量（竞技）检查才能攀爬。水池有五英尺深，对任何没有游泳速度的生物来说都是困难的地形。队伍可以通过智慧（感知）检定发现其中一条蛇，而蛇的灵巧（隐身）检定则与之相反。由于这两条蛇都选择了藏身的地方，所以在这个回合中获得了优势。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "1. The High Altar",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"进入蛇头后，你就可以向前走，进入一个30英尺×30英尺的密室。靠着远处的墙壁是一个大石坛。人类的头骨坐在上面。在房间的中央是一个大铁栅栏。在它上面，躺着一具骷髅的尸体。右边是一扇厚重的大木门。"
+									]
+								},
+								"{@spell Continual flame}法术照亮了这个房间里的壁灯。地板上的门没有上锁，但需要通过DC20的力量检查才能抬开。下面有一条管道，通向卑贱者的祭坛。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "2. Hall of Supplication",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"这条50英尺长的走廊有5英尺宽。在前方20英尺处，你可以看到大厅两侧似乎有一些凹槽。在远端，一个巨大的蛇头从墙上伸出来。在它的下面，你看到一个小木箱。地板上有一幅马赛克，描绘着蛇在向前滑行。"
+									]
+								},
+								"{@i {@b Trap: Poison Gas.}}走廊被困住了。如果有人试图走下走廊，蛇头就会喷出毒液，涂抹50英尺内的每个人。他们必须做一个DC16的灵巧救赎，如果失败则受到{@damage 2d10}的毒药伤害，如果成功则受到一半的伤害。如果有人沿着走廊往前爬，陷阱就不会被触发。最后的箱子里有250块金币。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "3. Altar of the Believer",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"这个狭窄的房间有一个倾斜的地板，通向一个大石坛。上面放着一个小木箱。里面的人影在黑暗中晃动。"
+									]
+								},
+								"这些数字是三个（%0%）。他们使用{@creature berserker||berserkers}的状态块，除了他们的类型是怪兽，而且他们对魔法的救赎有优势。门一打开，他们就会攻击。箱子里有一个{@item +1 dagger|DMG|+1} {@item dagger of snake charming|TFoZ}。它允许施法者随心所欲地施放（%4%），但只对蛇施放。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "4. Altar of the Lowly",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你发现自己在一个30英尺×40英尺的房间里。房间中央有四座雕像，靠远处的墙上有一个祭坛。在上面，你看到一个小木箱。在东边你看到一个金属栅栏。5英尺深的水流经房间的中心，大型厚重的木门封闭了南北两个入口。"
+									]
+								},
+								"这些雕像是（%0%）（%1%）。他们使用{@creature berserker||berserkers}的状态块，除了他们的类型是畸形，而且他们对魔法的拯救有优势。如果任何非信徒打扰了祭坛上的箱子，他们就会重生并攻击。箱子里有通往低级女祭司的房间的钥匙。",
+								"栅栏需要通过DC20的力量测试才能打开。它通向一个连接到大祭坛的管道。南面的门是锁着的。可以通过DC24的灵巧检查来打开它。它的钥匙在低等女祭司的房间里。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "5. The Chambers of the Low Priestess",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"当你打开这个巨大密室的门时，你的目光立即被靠在远处墙上的巨蛇雕像所吸引。在你们之间，有一条5英尺深的水渠，扩展到覆盖整个远处的墙壁。"
+									]
+								},
+								"这座雕像是一个（%0%）（%1%）。躲在它上面的是一条（%2%）。当人物进入房间时，蛇就会出现动画，他们都会攻击。雕像后面藏着一个小木箱，里面有通往忠诚之室的钥匙。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "6. Chamber of the Loyal",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"这个正方形的房间是30'x30'，以墙上突出的四个大蛇头雕像为主。"
+									]
+								},
+								"如果人物进入房间时没有用深渊语向曾格祈祷，门就会砰然关闭并上锁。然后水开始从雕像的口中涌出。十个回合之后，房间将被完全淹没。可以用DC18的灵巧（灵巧的手）检定来撬门，或者用DC18的智力（调查）检定来找到解除陷阱的装置。解除陷阱或解锁门会使水排到正常水平，门也会解锁。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "7. Hall of the Great Snake",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你进入了一个比你迄今为止在寺庙中看到的任何东西都长的密室。这里的水渠有20英尺宽。它的两边是10英尺的石板路。往下看，你可以通过石板上的巨大孔洞看到这个密室下面的一个房间。在远处，可以看到一扇大型华丽的木门。"
+									]
+								},
+								"一个（%0%）潜伏在这个房间的下面。一旦人物接近房间中央的洞口，它就会攻击。洞口本身又向下延伸了25英尺，进入一个和这个洞口同样大小的大房间。房间最里面的门没有上锁，但需要综合力量达到30才能打开。在里面，一条巨蛇的骨架盘踞在一个木箱周围。箱子里是{@item fanged helm of zengar|TFoZ}。",
+								"{@b Fanged Helm of Zengar} {@i Wonderous Item, Rare (requires attunement)} 这个头盔对毒药伤害和{@condition poisoned}状况有豁免权。它还赋予佩戴者一个咬合攻击，攻击范围为5英尺。你的熟练度奖励适用于攻击卷。一旦命中，目标会受到相当于{@dice 2d4}+你力量修饰的穿刺伤害，并且必须在DC14宪法救赎中成功，否则会受到{@damage 2d4}毒药伤害。此外，蛇对戴头盔的人很友好，除非他们受到攻击。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Aftermath",
+					"entries": [
+						"宝藏到手后，这个地下城的主要吸引点就完成了。人物需要七天时间才能到达最近的非敌对村庄。从那里，他们可以自由地继续他们的冒险。如果他们没有杀死所有的神庙守护者，也许将来会有一个人找他们报仇？"
+					]
+				}
+			]
+		}
+	]
+}

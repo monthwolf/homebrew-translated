@@ -1,0 +1,1656 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Wyldefarne",
+				"abbreviation": "Wyl",
+				"full": "Wyldefarne",
+				"url": "https://homebrewery.naturalcrit.com/share/Jf2NRNpk_qaE?fbclid=IwAR2qGKr-7JDeVydeAIUAewd9AI2rZU0G7mmimeXVh-9g4mQgtQN_3NBxmSE",
+				"authors": [
+					"HapHazred"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"version": "2022-01-02T16:49:53.155Z",
+				"dateReleased": "2020-10-13",
+				"color": "f1ecd8"
+			}
+		],
+		"status": "ready",
+		"dateAdded": 1641154357,
+		"dateLastModified": 1709503923,
+		"_dateLastModifiedHash": "65f8c51795"
+	},
+	"spell": [
+		{
+			"name": "Elderwood's Practical Levitation",
+			"source": "Wyldefarne",
+			"page": 1,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a feather and a piece of clear glass worth 1 cp",
+					"cost": 1
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在法术持续时间内，你可以选择一个愿意的生物，使其获得20尺的飞行速度（悬浮）。法术结束时，如果目标仍在空中，它将坠落，除非它能够阻止下落。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的位级施放这个法术时，你可以为每个高于2级的位级额外选择一个目标生物。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Elderwood's adventures",
+						"entries": [
+							"{@i Justin Avarisyus Elderwood} 在年轻时充满冒险精神，在各种地牢、洞穴和废墟中发现了对额外机动性的需求。他偏爱实用而简单的法术。实用悬浮术是他对现有法术进行修改后觉得更适合自己作为探险者需求的结果。",
+							"在以后的生活中，他发现自己更倾向于爆炸性的艺术。 施放{@spell levitate}，你可以一次到达地牢中的高台；在整座山上施放{@homebrew Ultimate Detonation}，你将在接下来的几个月里从头发中拔出奥术遗物。"
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Magical Studies of Wyldefarne",
+						"entries": [
+							"在威尔德法恩（Wyldefarne）的土地上居住着许多强大的法师。虽然许多是自由职业者，漫游在寻找力量和名望的土地上，但其中最强大的经常会联合起来，以更好地互相监视。Aegetor（艾盖托尔）和Moantur（莫安图尔）这两个相互对立的学派就是其中的例子。",
+							"莫安图尔（Moantur）传统由{@i Archmage Zordian}领导，他对北方更强大的对手感到愤恨。相反，在埃盖托尔（Aegetor），在强大的{@i Tower of Stars}学习的大法师们没有一个单一的领袖，而是由议会运作。目前埃盖托尔的议会分裂，因为他们最强大的成员{@i Justin Avarisyus Elderwood}和{@i Zerdax}已经离开这座城市，让不堪重负的{@i Shia}来维持法师们之间的秩序。"
+						]
+					}
+				]
+			},
+			"foundryImg": "icons/magic/air/air-smoke-casting.webp"
+		},
+		{
+			"name": "Iridescent Eye of Insight",
+			"source": "Wyldefarne",
+			"page": 1,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "before making an {@skill Insight} check"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在施法者的额头前方，有一个{@condition invisible}幽灵眼悬浮着，魔法地增加了施法者阅读肢体语言、面部线索以及其他线索以判断一个人意图的能力。在进行{@skill Insight}检定之前，施法者可以使用自己的反应施放这个法术。",
+				"施法者获得+10的奖励加值到检定中。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"name": "The Lady in the Tower",
+						"entries": [
+							"{@i Shia El'Drey d'Tan} 是泽尔达克的得意门生，居住在埃盖托尔。她应当时埃盖托尔的间谍大师之邀，开发了具有洞察力的虹彩之眼，作为一种秘密协助审讯的手段，尽管当时的间谍大师无法施展这个咒语，因此其使用受到限制。尽管如此，希亚将这个咒语教给自己的学生，作为信任的象征，相信他们会在她面前负责任地使用这项技能。",
+							"到目前为止，她还没有感到失望。"
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Magical Studies of Wyldefarne",
+						"entries": [
+							"在威尔德法恩（Wyldefarne）的土地上居住着许多强大的法师。虽然许多是自由职业者，漫游在寻找力量和名望的土地上，但其中最强大的经常会联合起来，以更好地互相监视。Aegetor（艾盖托尔）和Moantur（莫安图尔）这两个相互对立的学派就是其中的例子。",
+							"莫安图尔（Moantur）传统由{@i Archmage Zordian}领导，他对北方更强大的对手感到愤恨。相反，在埃盖托尔（Aegetor），在强大的{@i Tower of Stars}学习的大法师们没有一个单一的领袖，而是由议会运作。目前埃盖托尔的议会分裂，因为他们最强大的成员{@i Justin Avarisyus Elderwood}和{@i Zerdax}已经离开这座城市，让不堪重负的{@i Shia}来维持法师们之间的秩序。"
+						]
+					}
+				]
+			},
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp"
+		},
+		{
+			"name": "Zerdax's Simple Sequencer",
+			"source": "Wyldefarne",
+			"page": 1,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a sheet of paper and gold dust worth 25gp",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"施法者召唤一个小物体，不超过微小大小，在施法者周围盘旋。这个物体可以在施法者的回合用一个奖励动作制造{@condition invisible}，否则它有10点生命值和10点护甲等级。这个物体在施法者附近漂浮，始终占据与其相同的空间。如果施法者被传送，物体也会随之传送。如果物体被摧毁，法术就会结束。",
+				"施法者可以在施放时，在物品中\"储存\"一个已知的施法时间为1个行动并且最高为3级的法术。将法术储存到物品中需要消耗相同等级的法术位。",
+				"作为一个奖励动作，施法者可以让物体施放存储的法术。",
+				"该物体与施法者共享法术豁免 DC 和施法修正值。一旦存储的法术被施放或法术结束，该物体就会消失，存储的法术也会丢失。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，存储在物品中的法术的最大等级将每超过3级增加1级，直到8级。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"OBJ",
+				"SMN",
+				"UBA"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Zerdax",
+						"entries": [
+							"{@i Zerdax's} 的雄心驱使他设计了多种工具，让他能够在一生中克服那些粗心的对手，而这些对手实在太多了。就是凭借他的简易顺序器，他在二十多岁时被录取为{@i Vanator Academy}的讲师；并不是因为这个工具对社区有价值，而是因为他将其用作魔法决斗的一部分，借此将前任职位占有者焚化，从而解放了他的办公室。"
+						]
+					},
+					{
+						"type": "inset",
+						"name": "The Magical Studies of Wyldefarne",
+						"entries": [
+							"在威尔德法恩（Wyldefarne）的土地上居住着许多强大的法师。虽然许多是自由职业者，漫游在寻找力量和名望的土地上，但其中最强大的经常会联合起来，以更好地互相监视。Aegetor（艾盖托尔）和Moantur（莫安图尔）这两个相互对立的学派就是其中的例子。",
+							"莫安图尔（Moantur）传统由{@i Archmage Zordian}领导，他对北方更强大的对手感到愤恨。相反，在埃盖托尔（Aegetor），在强大的{@i Tower of Stars}学习的大法师们没有一个单一的领袖，而是由议会运作。目前埃盖托尔的议会分裂，因为他们最强大的成员{@i Justin Avarisyus Elderwood}和{@i Zerdax}已经离开这座城市，让不堪重负的{@i Shia}来维持法师们之间的秩序。"
+						]
+					}
+				]
+			},
+			"foundryImg": "icons/magic/symbols/runes-star-pentagon-orange.webp"
+		}
+	],
+	"item": [
+		{
+			"name": "Accordion of Appetites",
+			"source": "Wyldefarne",
+			"page": 3,
+			"type": "INS",
+			"rarity": "uncommon",
+			"reqAttune": "by a creature with proficiency with pianos or other keyed instruments",
+			"weight": 1,
+			"recharge": "restLong",
+			"rechargeAmount": 3,
+			"charges": "3",
+			"entries": [
+				"这个手风琴是由各种动物皮革制成，并镶有青铜。这个手工制作精湛的手风琴上展示着奶酪、糕点和香肠的图案。演奏时，它散发出淡淡的番茄和牛至的香味。",
+				{
+					"type": "entries",
+					"name": "Stored Spells",
+					"entries": [
+						"食欲手风琴允许你施放{@spell Purify Food and Drink}三次，并在长休后恢复所有已用次数。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mouthwatering Performance",
+					"entries": [
+						"当你使用这个乐器表演至少一分钟时，那些听众如果没有在进食，会发现自己稍微感到饥饿。如果他们正在进食，那么在表演期间，他们的餐点会变得更甜、更新鲜或更美味。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"purify food and drink"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"我仍然记得(%num%)(%num%)的完美混合。音乐也还可以。"
+						],
+						"by": "Viz"
+					}
+				]
+			}
+		},
+		{
+			"name": "Animated Instrument",
+			"source": "Wyldefarne",
+			"page": 5,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": "by a character with proficiency in an instrument",
+			"weight": 2,
+			"entries": [
+				"这件乐器乍一看似乎是一个{@item lute|PHB}、一把吉他、一个{@item horn|PHB}、一个{@item drum|PHB}套装，或者比小动物还小的其他乐器。然而，当你与这件乐器产生共鸣后，它会长出一双腿，当你说出在共鸣时选择的命令词时，它会跟随你奔跑。",
+				"这个动态乐器有以下属性块：",
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "Wyldefarne",
+					"name": "Animated Instrument",
+					"page": 5,
+					"collapsed": true,
+					"style": "inset"
+				},
+				"当乐器动画被降至0点生命值时，直到用户完成一次长休并使用价值50gp的适当材料修复乐器动画后，才能重新激活。",
+				"动画乐器与你的主动性相同，并在你之后进行它的回合。它会尽力遵循你给予的指令。在战斗中，在它的回合里，它只会采取{@action dodge}行动，除非它的使用者采取一个额外行动来命令动画乐器执行不同的行动，它将在自己的回合内执行。",
+				"这个动画乐器没有手臂，但在没有被操作时可以神奇地自己演奏。你可以拿起它，像正常乐器一样演奏。"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"如果你不够出名，就不要组乐队。(Perfect if you aren't popular enough to start a band.)"
+						],
+						"by": "Viz"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bad Screamer",
+			"source": "Wyldefarne",
+			"page": 6,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"weight": 0.5,
+			"entries": [
+				"这根魔杖看起来是一根普通的{@item screamer|Wyldefarne}。当你与它产生共鸣后，除非使用法术{@spell Remove Curse}，否则你无法与坏话者分离。当持有这根魔杖时，坏话者会让你在说服和欺骗能力检定中处于劣势，因为它会让你的言辞带有粗鲁、不敏感或煽动性的词语和说法。坏话者赋予你一项能力，通过向魔杖尖端唱歌，产生一种能够极大恐吓他人的魔法光环。当握持时，作为一个动作，你可以迫使你看得见且能听见你的生物，在其下一个攻击骰或技能检定中减去{@dice d10}。"
+			]
+		},
+		{
+			"name": "Ballistic Bass",
+			"source": "Wyldefarne",
+			"page": 3,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": "by a character with proficiency in {@item lute|PHB|lutes} or other stringed instruments",
+			"weight": 2,
+			"recharge": "restLong",
+			"entries": [
+				"这款低音提琴已经通过一根深色皮革肩带调整为便携式。整个乐器由金属制成，并装饰有骷髅图案。金属在某些地方重叠，暗示着乐器内部有更复杂的机制。从头部顶部伸出一个小喷嘴，而在底部的身体上有一个较大的空腔。",
+				{
+					"type": "entries",
+					"name": "Destructive Salvo",
+					"entries": [
+						"作为一个动作，使用者可以从乐器的头部发射一系列魔法抛射物。对你能看到的目标进行一个60英尺内的法术攻击。命中后，目标会受到{@damage 2d6}的力量伤害。在暴击时，Ballistic Bass会反弹，使用者必须进行一次力量豁免检定，豁免 DC 14，否则会受到{@damage 2d6}的力量伤害并被击倒{@condition prone}。若成功，伤害减半且使用者不会被击倒{@condition prone}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rockin' Rocket",
+					"entries": [
+						"作为一个奖励动作，使用者可以从弹道巴斯的底部发射一枚致命的魔法火箭。导弹会朝着你所选择的目标射击，目标必须在你能看到的120英尺内，然后在撞击时爆炸。目标必须进行一次{@dc 14}敏捷豁免，否则会受到{@damage 6d6}火焰伤害并被击倒{@condition prone}。在成功豁免时，伤害减半且目标不会被击倒{@condition prone}。这枚火箭在你完成一次长休之前无法再次发射。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Cello of Moving",
+			"source": "Wyldefarne",
+			"page": 3,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": "by a character with proficiency in the {@item viol|PHB} or other bowed instrument",
+			"weight": 2,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"移动之大提琴是一个庞大而笨重的乐器，但当拿起来时却感觉异常轻盈，仿佛只有它实际尺寸的一半。它是用一种未知来源的木材制成，雕刻并用银加固。蓝色的宝石点缀在乐器的头部。",
+				"当你与之磁共振时，移动大提琴(Cello of Moving) 赋予你在不消耗法术槽的情况下随意施放{@spell Mage Hand}法术的能力。此外，当你与之磁共振时，携带这把乐器不再消耗额外的移动。当你将其作为吟游诗人法术的施法焦点时，你的法术命中加值和法术豁免 DC 均增加 +1。",
+				{
+					"type": "entries",
+					"name": "Burst of Movement",
+					"entries": [
+						"当用作(bard)吟游诗人法术的施法焦点时，施法者的移动速度增加等于法术等级乘以5。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Walking Cello",
+					"entries": [
+						"当乐器作为表演的一部分演奏至少一分钟时，那些听众会感到不安，并感到略微被迫以某种方式移动，无论是跳舞、踱步、拍打，甚至在（DM）的决定下离开去散步。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Packaged Performance",
+					"entries": [
+						"在一分钟的时间里，你可以使用移动大提琴(Cello of Moving)将尺寸不超过5英尺乘以5英尺的物品消失到口袋维度中。使用者可以通过演奏这个乐器来将这些物品作为一个动作重新显现。这个口袋维度一次只能存储一组物品；如果在口袋维度中已经有一组物品的情况下使用移动大提琴来存储第二组物品，那么口袋维度中之前的内容会被排出。活生物不能被存储在移动大提琴的口袋维度中。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"mage hand"
+			]
+		},
+		{
+			"name": "Conductor's Wand",
+			"source": "Wyldefarne",
+			"page": 6,
+			"type": "INS",
+			"typeAlt": "WD",
+			"rarity": "very rare",
+			"reqAttune": " by a bard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				}
+			],
+			"sentient": true,
+			"weight": 0.5,
+			"recharge": "restLong",
+			"entries": [
+				"与大多数魔杖不同，它们仅通过奥术工匠调和的材料来引导魔法，据信指挥者魔杖通过某种有限的意识形式实现了这一点。此外，随着佩戴者的成长，魔杖也会增长。这些魔杖是用靠近德鲁伊树林或与精灵界相连的永久传送门和魔法阵的树木制成的。如果你的回合没有移动，作为一个额外动作或作为使用你的{@classFeature Bardic Inspiration|Bard|PHB|1}特性的一部分，你可以激活这根魔杖，进行令人眼花缭乱的表演，以对距离30英尺内的一个生物进行一个咒语攻击（使用你的咒术能力）。如果你施放过一级或更高级别的咒语，你就不能执行此操作，以这种方式使用物品会将你的移动减少到0英尺，直到下一个回合开始。命中时，魔杖造成雷霆伤害，伤害值为{@damage 1d6} + 你的咒术修正。此外，一旦你用这个咒语攻击命中一个生物，你可以使用你的反应来使用以下技巧之一：",
+				{
+					"type": "entries",
+					"name": "Cue The Music",
+					"entries": [
+						"当你用魔杖施放法术攻击命中一只生物时，选择一个在30英尺内能看到或听到你的友方生物。该生物可以立即使用其反应进行一次武器攻击，为攻击的伤害骰增加额外的{@damage 1d6}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ravvivando",
+					"entries": [
+						"当你用魔杖施放的法术攻击命中一只生物时，选择一个在30英尺内能看到或听到你的友好生物，并增强他们的决心。当你这样做时，那个生物获得临时生命值，数值等同于{@dice 1d6} + 你的魅力调整值。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curtain Call",
+					"entries": [
+						"当你用魔杖施放的法术攻击命中一只生物时，你可以将你的一个同伴移动到一个更有利的位置。你在攻击的伤害骰上额外增加{@dice 1d6}，并选择一个在30英尺内能看到或听到你的友好生物。那个生物可以使用其反应移动最多半个速度，而不会招致攻击目标的{@action opportunity attack|PHB|opportunity attacks}。"
+					]
+				},
+				"持有魔杖的使用者能够使用这些技能的次数等于他们的熟练加值，并在完成一次长休后恢复所有已用次数。"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"我个人从来不需要魔杖来让人为我做事。"
+						],
+						"by": "Viz"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dyvarran Dreadnought",
+			"source": "Wyldefarne",
+			"page": 4,
+			"type": "INS",
+			"rarity": "very rare",
+			"reqAttune": "by a character with proficiency in the {@item lute|PHB} or other stringed instrument",
+			"weight": 2,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"bonusAc": "+1",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"在凤凰时代黎明时，埃雷达斯升天后，怀尔德法恩的迪瓦尔人，蒂亚塞尔·纽维拉·德瓦斯特，在心理治疗师的建议下，采用了各种非暴力的发泄方式，她对此和她生活中的每一个方面一样充满了原始的单一目标性。其中一种创造性发泄方式是音乐，随着时间的推移，她对演奏一把手工制作的恐怖战舰吉他（木工是另一种创造性发泄方式）产生了浓厚兴趣，并在新瓦洛拉期间经常练习。她成为了一名熟练的演奏者，但由于大多数黑骑士已经四散在各地，她组建音乐团体的尝试以失败告终。当作为诗人法术的施法焦点时，你获得+2的奖励用于法术攻击检定和法术豁免 DC。",
+				"这件乐器本身看起来很简单，除了在乐器底部的标志'TND'。最初并没有打算让它变成魔法的，然而戴瓦尔(Dyvarre)的自然魔法让吉他充满了一些她的邪术力量。",
+				{
+					"type": "entries",
+					"name": "Custom Crafted",
+					"entries": [
+						"这把吉他是由提亚塞尔·纽维拉·德瓦斯特(Tiacele Niuvelar Devaste)手工制作的，非常适合她的身材。如果你是一名精灵女性，你在任何表演技能检定中获得+1的奖励。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Destiny Dreadnought",
+					"entries": [
+						"当你在与命运巨舰（Destiny Dreadnought）玩耍至少一分钟后，投掷一个{@dice d20}并记录所投掷的数字。作为一次反应，你可以用这个数字替换你或你能看到的生物进行的任何攻击投掷、豁免投掷或技能检定。你必须在投掷之前选择这样做，并且每回合只能以这种方式替换一次投掷。在完成一次长休息之前，你不能再次使用这个能力。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cosmic Carapace",
+					"entries": [
+						"Dyvarran Dreadnought（迪瓦兰战舰）被赋予了一些其创造者的超自然韧性。当挂在你的背上或携带时，你的护甲等级增加1。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Electric Eye",
+			"source": "Wyldefarne",
+			"page": 4,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": "by a character with proficiency with {@item lute|PHB|lutes} or other stringed instrument",
+			"weight": 2,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"这把乐器{@item lute|PHB}在演奏时会发出电流的声音。它颜色深沉，用明亮的银色琴弦编织，装饰着闪电图案。演奏时，这把乐器赋予使用者远距离视野的能力。当作为吟游诗人法术的施法焦点时，你的法术攻击投掷获得+1的加值，并且法术豁免 DC 也会增加1。",
+				{
+					"type": "entries",
+					"name": "Stored Spells",
+					"entries": [
+						"电眼让你每天可以施放法术{@spell scrying}三次。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Minds Eye",
+					"entries": [
+						"当电眼(Electric Eye)被用作吟游诗人法术的施法焦点时，你可以让你能看到的120英尺内的生物进行一次感知豁免，豁免 DC 为其法术豁免 DC。如果未能通过，他们将受到{@spell Detect Thoughts}法术的影响，就好像他们未能通过该法术的豁免检定一样。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Vision",
+					"entries": [
+						"电眼在你与之相连时增强你的视力。你的视野范围增加了{@sense darkvision}，最多可达60英尺。如果你已经有{@sense darkvision}，则再额外延伸60英尺。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"scrying",
+				"detect thoughts"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"梅菲斯托菲勒斯(Mephistopheles) 牧师是我最喜欢的老派巴哈里安(Baharian) 乐队。"
+						],
+						"by": "Viz"
+					}
+				]
+			},
+			"foundryEffects": [
+				{
+					"name": "Enhanced Vision",
+					"changes": [
+						{
+							"key": "data.attributes.senses.darkvision",
+							"mode": "UPGRADE",
+							"value": "60"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Emerald Menace",
+			"source": "Wyldefarne",
+			"page": 1,
+			"type": "INS",
+			"rarity": "legendary",
+			"reqAttune": "by a character with proficiency with {@item lute|PHB|lutes} or other stringed instrument",
+			"curse": true,
+			"weight": 2,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"rechargeAmount": 0,
+			"charges": "3",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"翡翠威胁是一把由卢西姆州的贵族在神秘情况下委托制作的豪华吉他。据说这把吉他是一件被诅咒的乐器，自巴哈里安革命以来一直在各个收藏品之间流传，偶尔会出现在各种演出中，通常在被交易或被盗之前。它的名字与麻烦和反抗联系在一起，那些弹奏它的人发现它能让他们获得令人难以置信的，虽然是短暂的，声望。",
+				"这把吉他是充满活力的绿色，有着一根又长又细的颈部。吉他的头部形状像一只绿色龙头，金色的尖刺点缀在琴身底部。这是一件非常精致的乐器，经常需要定期重新调音，它的琴弦触摸起来像触摸漂白剂或其他化学品一样灼热，但不会造成伤害。",
+				{
+					"type": "entries",
+					"name": "Frantic Performance",
+					"entries": [
+						"作为一个奖励动作，在持有翡翠威胁时，你可以将翡翠威胁内的充能增加1。翡翠威胁最多可以容纳3个充能。自上次添加充能后一分钟后，翡翠威胁将失去所有存储的充能。",
+						"获得1个充能后，翡翠威胁(`Emerald Menace`)使你的施法调整值和法术豁免 DC 增加 +2，同时对所有豁免值减少 -1。",
+						"在获得2个充能后，翡翠威胁会在使用者周围的空气中产生一种令人震撼的电光；每当使用者被武器或法术攻击击中时，投掷一个{@dice d20}；在5或更低时，攻击则会失误。此外，使用者的速度减半。你的法术施法修正和法术豁免 DC 的加值增加到 +3。",
+						"在获得3个充能后，表演以一场震撼的独奏结束；使用者选择他们在60英尺内能看到的生物数量，最多为他们的熟练加值。这些生物必须通过一次对抗使用者法术豁免 DC 的体质豁免检定，否则将受到等同于使用者角色等级的雷属性伤害，成功豁免则只受一半伤害。使用者还必须承受等同于他们等级一半的雷属性伤害。然后充能数量重置为0，翡翠威胁(`Emerald Menace`)在重新调音吉他的行动花费之前不能再添加充能，因为其中的魔法已经使吉他的琴弦走调。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Chord of Confusion",
+					"entries": [
+						"当你将翡翠威胁作为吟游诗人法术的施法焦点时，你能看到并能听到的30英尺内的单个生物必须对你的法术豁免 DC 进行一次感知豁免投掷。如果未通过，掷出一个{@dice d6}；在掷出1或2时，目标为{@condition Stunned}；在掷出3或4时，他们是{@condition Frightened}的使用者；在掷出5或6时，他们是{@condition Blinded}。此效果持续到使用者的下一个回合开始。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Riff of Rebellion",
+					"entries": [
+						"当使用超过一分钟时，用户可以在倾听者中灌输一种不安的感觉。这可能以多种方式表现出来，从增加攻击迹象，对等级制度的不满，或者倾向于混乱阵营，由DM自行决定。倾听者可以通过成功进行一次 {@dc 18} 魅力豁免才能抵抗这些影响。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"好的，下一个我应该得到版税。她相当不稳定，但没有什么能像(流氓)一样激起人群的热情。"
+						],
+						"by": "Viz"
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/Wyl/Emerald-Menace.png"
+						},
+						"title": "The Emerald Menace",
+						"credit": "HapHazred",
+						"width": 3234,
+						"height": 3164
+					}
+				]
+			}
+		},
+		{
+			"name": "Floating Keyboard",
+			"source": "Wyldefarne",
+			"page": 2,
+			"type": "INS",
+			"rarity": "uncommon",
+			"reqAttune": "by a character with proficiency in keyed instruments",
+			"weight": 4,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": "3",
+			"entries": [
+				"这款轻巧的键盘是由木头制成的，并装饰有云朵的雕刻。当你调谐这个乐器时，你可以选择一个特定的口令，一旦说出这个口令，键盘就会悬浮在地面上，并保持在你可以演奏的距离内。这个乐器会跟随你，通过最短的路径来保持距离，如果遇到障碍就会停止移动。如果角色移动超过30英尺，这个效果会停止，此时键盘会逐渐降落到地面上，并保持静止，直到你再次说出口令。",
+				{
+					"type": "entries",
+					"name": "Stored Spells",
+					"entries": [
+						"浮动键盘允许你每天施放法术{@spell Levitate}三次。存储的法术在完成一次长休后恢复。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"levitate"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"在我对钢琴感兴趣的时候尝试过这个方法；当你可以随身携带乐器时，确实会有所不同。{@spell levitate}法术的确令人遗憾。"
+						],
+						"by": "Viz"
+					}
+				]
+			}
+		},
+		{
+			"name": "Instrument of Transformation",
+			"source": "Wyldefarne",
+			"page": 3,
+			"type": "INS",
+			"rarity": "uncommon",
+			"reqAttune": "by a character with proficiency in at least one musical instrument",
+			"weight": 10,
+			"recharge": "restShort",
+			"entries": [
+				"这个奇怪的装置由一团令人困惑的黄铜、木头和电线构成，当你在调谐这个装置时确定了一个特定的口令，它就会变成你选择的乐器。这个变形乐器还可以调整大小和重量以适应你，也可以变成定制乐器以适应特定角色。这些乐器在任何方向上都不能超过6英尺，并且重量始终为10磅。",
+				{
+					"type": "entries",
+					"name": "Adaptive Allegretto",
+					"entries": [
+						"变革之器允许你在一分钟的演奏中施放{@spell Alter Self}这个咒语，而不消耗法术位。以这种方式施放咒语时，不需要{@status concentration}。这个效果只能使用一次，并可以在短休息结束时再次使用。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"alter self"
+			]
+		},
+		{
+			"name": "Laser Musicmaker",
+			"source": "Wyldefarne",
+			"page": 5,
+			"type": "INS",
+			"rarity": "uncommon",
+			"reqAttune": "by a character with proficiency in pianos or keyed instruments",
+			"weight": 4,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"激光音乐制造者是一个光滑的金属装置，侧面有三十个按键，长度在一英尺到两英尺之间。按下按键时，设备会以从红色到紫色的各种颜色发光，并发出一种奇怪的合成声音，与任何其他乐器都不同。当用作诗人法术的施法焦点时，你获得+1的法术命中加值和法术豁免 DC 的加值。",
+				{
+					"type": "entries",
+					"name": "Synthetic Effects",
+					"entries": [
+						"激光音乐制作者让你每天最多可以施放法术{@spell Faerie Fire}两次。你也可以随意施放零级法术{@spell Thaumaturgy}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Laser Master",
+					"entries": [
+						"当使用激光音乐制造者时，你可以从乐器发射一道激光，直线延伸至300英尺，持续时间长达一分钟。这道激光可以是任何颜色。激光会被不透明物体阻挡。你可以同时发射最多六道这样的激光。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"Faerie Fire",
+				"Thaumaturgy"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"这个疯狂的装置就像是那些奇怪的研究所式的魔像，充满了嘟嘟声和嗡嗡声。它可不是最低调的工具，是吧？"
+						],
+						"by": "Viz"
+					}
+				]
+			}
+		},
+		{
+			"name": "Maracas of Mayhem",
+			"source": "Wyldefarne",
+			"page": 4,
+			"type": "INS",
+			"typeAlt": "M",
+			"rarity": "very rare",
+			"reqAttune": "by a character with proficiency with a percussive instrument",
+			"weight": 1,
+			"weightNote": "(both)",
+			"weaponCategory": "simple",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"bonusWeapon": "+2",
+			"recharge": "restLong",
+			"entries": [
+				"混乱之玛拉卡斯(Maracas of Mayhem)是一对小巧但沉重的木制沙锤，涂有明亮的彩虹色彩，似乎每次看都会变化，没有两个人能够达成一致，认为这些图像代表什么。拿着它们的人会感到手部轻微刺痛，只有在摇动时才会消失。",
+				"混乱之舞(马拉卡斯)只能成对使用，每只手持一只。这样握着时，它们可以用作{@item +2 club|DMG|+2 clubs}。当分开使用时，它们不会发出任何声音。",
+				{
+					"type": "entries",
+					"name": "Rhythm of Recklessness",
+					"entries": [
+						"当双手各持一只沙锤时，你可以选择在你的回合中采取{@action Attack}动作时进行四次攻击。如果你选择这样做，直到下一个回合开始，对你的攻击具有优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shake and Break",
+					"entries": [
+						"你每天可以施放{@spell Otto's Irresistible Dance|PHB|Irresistible Dance}一次，而不消耗法术位。你在完成一次长休后，所有已消耗的使用次数会恢复。这个法术的豁免 DC 为15。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shakamaraka",
+					"entries": [
+						"你可以每天三次施放{@spell Confusion}这个法术，而不消耗法术位。你在进行一次长休后，所有已用次数都会恢复。这个法术的豁免 DC 为15。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"Otto's Irresistible Dance",
+				"confusion"
+			]
+		},
+		{
+			"name": "Panpipes of Defence",
+			"source": "Wyldefarne",
+			"page": 2,
+			"type": "INS",
+			"typeAlt": "S",
+			"rarity": "legendary",
+			"reqAttune": "by a character with proficiency in {@item flute|PHB|flutes} or other wind instrument and is proficient with {@item shield|PHB|shields}",
+			"weight": 5,
+			"recharge": "restLong",
+			"rechargeAmount": 3,
+			"charges": "3",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"这套排箫足够大，可以通过乐器内部的重皮带来携带。这个巨大而笨重的乐器由精金和精钢加固，远非常见的典型木制乐器。它既可以作为标准的排箫奏乐，也可以用作盾牌。这是由莫安图尔贵族委托制作的，但在火元素位面的海关被扣押后被盗。目前它的位置是未知的。",
+				{
+					"type": "entries",
+					"name": "Spellbreaker",
+					"entries": [
+						"防御之笛旨在抵御魔法和常规武器。当使用者能看见的生物施放一个以你为目标的法术时，当你装备了防御之笛时，你可以使用你的反应来投掷一个{@dice d20}。在投掷11或更高时，法术被抵消且无效。这对于没有直接以你为目标的范围法术无效。你可以每次长休最多使用这个能力三次。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Swordbreaker",
+					"entries": [
+						"你可以在每次长休之后三次施放法术{@spell Shield}，而不消耗法术位。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shielding Solo",
+					"entries": [
+						"当防御(Defence)排箫(Panpipes)被用作吟游诗人法术的施法焦点时，你会获得{@dice 2d6}持续到你的下一个回合开始的临时生命值。如果这些临时生命值在那之前降至0，你可以作为一次反应，让一个60英尺内可见的生物进行一次针对你法术豁免 DC 的体质豁免检定。在失败时，目标会受到{@damage 2d6}力量伤害，并被击退15英尺并变为{@condition prone}。在成功豁免时，伤害减半，目标不受其他影响。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"shield"
+			]
+		},
+		{
+			"name": "Puppeteer's Harmonium",
+			"source": "Wyldefarne",
+			"page": 7,
+			"type": "INS",
+			"rarity": "very rare",
+			"reqAttune": "by a bard or wizard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				},
+				{
+					"class": "wizard"
+				}
+			],
+			"wondrous": true,
+			"curse": true,
+			"weight": 45,
+			"recharge": "dawn",
+			"rechargeAmount": "1d4 + 1",
+			"charges": 5,
+			"focus": [
+				"bard",
+				"wizard"
+			],
+			"entries": [
+				"这台巨大的乌木风琴镶有古老腐蚀的黄铜装饰。大键被染成黑色，小键则是象牙制成。当风箱打开时，可以听到持续的低沉或哀怨声。没有人能确定这件乐器到底有多老，任何试图打扮它的尝试都会在第二天被魔法撤销。当与这件乐器共鸣时，你可以将其用作施法焦点。此外，你获得+2的施法命中加值。",
+				{
+					"type": "entries",
+					"name": "Cumbersome",
+					"entries": [
+						"手风琴是一种笨重的乐器，难以存放和使用。作为一个动作，你可以设置或收起这个乐器。当演奏这个乐器时，你的移动速度减少到0尺。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unnerving Drone",
+					"entries": [
+						"一旦乐器被设置好，一个不祥的低沉声音自然地开始播放，可以听到最多60英尺。你可以指定任意数量的你能看到的生物不受其影响。当一个受影响的生物在回合内首次进入该区域或者在那里开始它的回合时，它必须根据你的法术豁免 DC 进行一次感知豁免检定，否则将被 {@condition frightened}。受影响的生物可以在回合结束时重复进行豁免检定。如果对其的影响结束，那个生物对该低沉声音的效果免疫，持续24小时。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Puppeteering Notes",
+					"entries": [
+						"这个乐器有5个充能，并在第二天黎明时恢复{@dice 1d4 + 1}的充能。一旦这个乐器被设置好，作为一个动作，你可以消耗充能来使用以下效果：1个充能。你可以施放法术{@spell Cause Fear}，而不消耗法术位。2个充能。你可以施放法术{@spell Animate Dead}或{@spell Summon Undead}，而不消耗法术位。4个充能。你可以施放舞蹈死灵(Danse Macabre)法术，而不消耗法术位。5个充能。所演奏的音符控制住60英尺内的一个目标。目标必须根据使用者的法术豁免 DC 进行一次感知豁免投掷。如果生物是不死生物，它们在豁免投掷时有劣势。未通过豁免投掷的生物被{@condition paralyzed}，并且它们的手臂升起形成一个T形。作为一个奖励动作，你可以命令生物使用他们的回合执行以下动作之一：{@action attack}、{@action dash}、{@action grapple}、{@action help} 或 {@action use an object}。目标可以在他们的回合结束时重复进行豁免投掷。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"这件器物受到了诅咒。与它相调会让你受到诅咒，直到你被施加了一个{@spell Remove Curse}法术或类似魔法。如果总共消耗了3个或更多的充能，持有者必须进行一次{@dc 15}体质豁免才能。未通过豁免检定的话，持有者将获得一点{@condition exhaustion}，这个效果直到持有者的诅咒被解除。对于每一点{@condition exhaustion}，持有者都会慢慢变成一个木偶版的自己。将一个生物恢复到原始形态可以通过{@spell Greater Restoration}或{@spell Wish}法术来完成。"
+					]
+				},
+				"这个法器的所有特性和法术的施法能力取决于你选择的智力、感知或魅力。"
+			],
+			"attachedSpells": [
+				"cause fear",
+				"animate dead",
+				"summon undead"
+			]
+		},
+		{
+			"name": "Saxophone of Sending",
+			"source": "Wyldefarne",
+			"page": 1,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": "by a character with {@item horn|PHB} proficiency or similar instrument",
+			"weight": 2,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"recharge": "restLong",
+			"rechargeAmount": 3,
+			"charges": "3",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"这支天蓝色的萨克斯管在喇叭口周围刻有字母，拼写出{@spell sending}法术的口头组件。演奏时，这些字母会发出蓝光。当作为吟游诗人法术的施法焦点时，你获得+1的法术命中加值和法术豁免 DC 加值。",
+				"当与这个乐器共鸣时，你可以每天施放{@spell Sending}法术3次。你在完成一次长休后，恢复所有已用次数。",
+				{
+					"type": "entries",
+					"name": "Launching Note",
+					"entries": [
+						"作为一个动作，你可以使用发送萨克斯管(Saxophone of Sending)来迫使一个在30英尺内的生物进行一次力量豁免，豁免 DC 为你的法术豁免 DC。如果未通过豁免，他们将被向任意方向推出30英尺。如果他们撞到了坚固的物体，他们会停止移动。你每次长休可以使用这个能力一次。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"sending"
+			]
+		},
+		{
+			"name": "Screamer",
+			"source": "Wyldefarne",
+			"page": 6,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 0.5,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"这根魔杖赋予你一项能力，当你对着魔杖尖唱歌时，可以产生一种魔法力量的光环，能够激励或威慑他人。持有魔杖时，作为一个动作，你可以赋予一个在30英尺内能听到你声音的生物，在他们的下一个回合结束前，可以选择在一次攻击检定、能力检定或豁免检定中增加{@dice d4}。或者，你也可以强迫该生物在下一次攻击检定或能力检定中减少{@dice d4}。当用作施法焦点时，你的法术攻击检定和法术豁免 DC 值获得+1加值。"
+			]
+		},
+		{
+			"name": "Shamisen of Remembrance",
+			"source": "Wyldefarne",
+			"page": 2,
+			"type": "INS",
+			"rarity": "legendary",
+			"reqAttune": "by a character with proficiency with {@item lute|PHB|lutes} or other stringed instrument",
+			"weight": 2,
+			"ability": {
+				"wis": 18
+			},
+			"bonusSpellAttack": "+3",
+			"bonusSpellSaveDc": "+3",
+			"recharge": "restLong",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"这把三味线是一把精心制作的、风化的三味线，镶有青铜，由深色的樱桃木制成。它上面有几处划痕和凹痕，是数十年使用留下的痕迹，一把磨损的撥片被贴在一侧。它上面没有任何标记，但演奏时有独特的轻柔音调。当作为吟游诗人法术的施法焦点时，你获得+3的法术命中加值和法术豁免 DC。",
+				{
+					"type": "entries",
+					"name": "Stored Spells",
+					"entries": [
+						"记忆三味线（Shamisen of Remembrance）允许你每天施放 {@spell Modify Memory} 一次，以及每天三次 {@spell Crown of Madness}，而不消耗法术位。这些法术的豁免 DC 为17。所有次数在完成一次长休后恢复。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mental Fortitude",
+					"entries": [
+						"当你与《记忆三味琴》(Shamisen of Remembrance) 灵感相通时，你在感知豁免检定上获得优势。你也对{@spell modify memory}法术的影响免疫，以及任何其他可能改变你记忆的效果。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Increased Wisdom",
+					"entries": [
+						"当你与(Shamisen of Remembrance)相调谐时，你的感知分数会增加到18，除非它已经更高。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Emotional Performance",
+					"entries": [
+						"当用于表演一首歌超过一分钟时，你可以将一种模糊、不清晰的记忆灌输到那些听演出的人的脑海中。这可能是对所爱之人的模糊记忆，一种怀旧感，或是对童年时代一个早已被遗忘的地方的记忆。这些记忆可能对每个听众都有些许不同。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"modify memory",
+				"crown of madness"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"真的记不得这个法术是干什么的了。"
+						],
+						"by": "Viz"
+					}
+				]
+			}
+		},
+		{
+			"name": "Skull Grululu",
+			"source": "Wyldefarne",
+			"page": 7,
+			"type": "INS",
+			"typeAlt": "M",
+			"rarity": "very rare",
+			"reqAttune": "by a character with proficiency in {@item drum|PHB|drums} or other percussive instrument",
+			"weight": 4,
+			"weaponCategory": "martial",
+			"property": [
+				"2H"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"bonusWeapon": "+2",
+			"entries": [
+				"典型的{@item grululu|BloodInTheCompany}是一种原产于赫尔维蒂荒地的乐器，这是一个严酷而致命的荒原，即使是无辜的乐器也经常兼职成为致命武器。一个典型的例子就是可怕的骷髅古鲁鲁鲁，一个传说中的巨大魔法{@item Grululu|BloodInTheCompany}。",
+				"骷髅鼓鲁鲁鲁是一种大型乐器，当敲击硬表面（包括头部）时会发出愉悦的敲击声；与其同类的许多鲁鲁鲁不同，它在一些地方用铁和青铜修补，无数敌人的鲜血使乐器看起来暗淡。这个乐器可以像{@item +2 greatclub|DMG}一样挥舞。",
+				{
+					"type": "entries",
+					"name": "Echoing End",
+					"entries": [
+						"当你用骷髅古鲁鲁(Skull Grululu)在近战中击中敌人时，你可以在下一个回合使用一个动作，对受伤的敌人造成等于{@damage 2d6}的雷属性伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pounding Performance",
+					"entries": [
+						"当你造成暴击时，除了你自己以外，30英尺内的每个生物必须承受{@damage 1d6}点心灵伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "The Rainstaff",
+			"source": "Wyldefarne",
+			"page": 5,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": "by a character with proficiency in an instrument",
+			"weight": 2,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"recharge": "restLong",
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"雨杖是一根长约5英尺，宽两英寸的长杖。其表面雕刻着云、雨和水的图像和图案。当颠倒时，杖内的小珠发出模仿雨声的愉悦声音。当恢复到原始方向时，这种声音会重复。当用作吟游诗人法术的施法焦点时，你的法术攻击投掷获得+1的奖励，并且你的法术豁免 DC 也增加1。",
+				{
+					"type": "entries",
+					"name": "Call Lightning",
+					"entries": [
+						"雨杖允许使用者每次长休时施放法术{@spell Call Lightning}一次，而无需消耗法术位。该法术的豁免 DC 为 13。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Summon Rains",
+					"entries": [
+						"作为一个动作，你可以使用雨杖(Rainstaff)召唤一个小云朵，悬浮在你选择的地点上方，距离你60英尺内，持续一分钟。这朵云会不断滴下细雨。在一分钟内，这朵云释放的水足以填满一个水桶。"
+					]
+				}
+			],
+			"attachedSpells": [
+				"call lightning"
+			]
+		},
+		{
+			"name": "Whistle of Silence",
+			"source": "Wyldefarne",
+			"page": 4,
+			"type": "INS",
+			"rarity": "common",
+			"reqAttune": "by a creature with proficiency in {@item flute|PHB|flutes} or other wind instruments",
+			"weight": 0.5,
+			"entries": [
+				"当这个小骨哨被吹奏时，它不发出任何声音，就好像根本没有乐器在被演奏一样。这是由一名盗贼设计并施加魔法的，因为他厌倦了他们的吟游诗人因需要演奏音乐来施放法术而暴露位置。"
+			]
+		}
+	],
+	"itemGroup": [
+		{
+			"name": "Instrument of Playing",
+			"source": "Wyldefarne",
+			"page": 7,
+			"type": "INS",
+			"rarity": "varies",
+			"reqAttune": "by a bard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				}
+			],
+			"focus": [
+				"Bard"
+			],
+			"entries": [
+				"演奏之器是一件被施加魔法的乐器，可以是一个{@item lute|PHB}，一个{@item drum|PHB}，一个{@item flute|PHB}，或者任何小到可以携带的乐器。当握住这个乐器时，你的法术攻击投掷获得加值，并且你的吟游诗人法术的豁免 DC 也会增加。这个加值为{@item +1 Instrument of Playing|Wyldefarne}时为1，{@item +2 Instrument of Playing|Wyldefarne}时为2，{@item +3 Instrument of Playing|Wyldefarne}时为3。这个加值也会应用在持有演奏之器时进行的任何{@skill performance}检定上。演奏之器的稀有度为普通的{@item +1 Instrument of Playing|Wyldefarne}时为罕见，{@item +2 Instrument of Playing|Wyldefarne}时为稀有，{@item +3 Instrument of Playing|Wyldefarne}时为非常稀有。"
+			],
+			"items": [
+				"+1 Instrument of Playing|Wyldefarne",
+				"+2 Instrument of Playing|Wyldefarne",
+				"+3 Instrument of Playing|Wyldefarne"
+			]
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "+1 Instrument of Playing",
+			"requires": [
+				{
+					"type": "INS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "+1 ",
+				"nameSuffix": " of Playing",
+				"source": "Wyldefarne",
+				"page": 7,
+				"type": "INS",
+				"rarity": "uncommon",
+				"reqAttune": "by a bard",
+				"reqAttuneTags": [
+					{
+						"class": "bard"
+					}
+				],
+				"bonusSpellAttack": "+1",
+				"bonusSpellSaveDc": "+1",
+				"entries": [
+					"演奏之器是一件被施加魔法的乐器，可以是一个{@item lute|PHB}，一个{@item drum|PHB}，一个{@item flute|PHB}，或者是任何小到可以携带的乐器。当持有这个乐器时，你的法术攻击投掷获得+1的加值，同时你吟游诗人法术的豁免 DC 也会增加+1。这个加值也会应用在持有演奏之器时进行的任何{@skill performance}检定中。"
+				]
+			}
+		},
+		{
+			"name": "+2 Instrument of Playing",
+			"requires": [
+				{
+					"type": "INS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "+2 ",
+				"nameSuffix": " of Playing",
+				"source": "Wyldefarne",
+				"page": 7,
+				"type": "INS",
+				"rarity": "uncommon",
+				"reqAttune": "by a bard",
+				"reqAttuneTags": [
+					{
+						"class": "bard"
+					}
+				],
+				"bonusSpellAttack": "+2",
+				"bonusSpellSaveDc": "+2",
+				"entries": [
+					"演奏之器是一件被施加魔法的乐器，可以是一个{@item lute|PHB}，一个{@item drum|PHB}，一个{@item flute|PHB}，或者是任何小号或更小的乐器。当你持有这个乐器时，你在施法攻击检定和吟游诗人法术的豁免 DC 上获得 +2 的加值。这个加值也会应用在持有演奏之器时进行的任何{@skill performance}检定上。"
+				]
+			}
+		},
+		{
+			"name": "+3 Instrument of Playing",
+			"requires": [
+				{
+					"type": "INS"
+				}
+			],
+			"inherits": {
+				"namePrefix": "+3 ",
+				"nameSuffix": " of Playing",
+				"source": "Wyldefarne",
+				"page": 7,
+				"type": "INS",
+				"rarity": "uncommon",
+				"reqAttune": "by a bard",
+				"reqAttuneTags": [
+					{
+						"class": "bard"
+					}
+				],
+				"bonusSpellAttack": "+3",
+				"bonusSpellSaveDc": "+3",
+				"entries": [
+					"演奏之器是一件被施加魔法的乐器，可以是一个{@item lute|PHB}，一个{@item drum|PHB}，一个{@item flute|PHB}，或者任何小到可以携带的乐器。持有这个乐器时，你的法术攻击投掷获得+3的加值，并且对你的吟游诗人法术的豁免 DC 也获得+3的加值。这个加值也会应用在持有演奏之器时进行的任何{@skill performance}检定上。"
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Animated Instrument",
+			"source": "Wyldefarne",
+			"page": 5,
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 2,
+			"dex": 9,
+			"con": 11,
+			"int": 6,
+			"wis": 9,
+			"cha": 17,
+			"senses": [
+				"blindsight 30 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"name": "Animated",
+					"entries": [
+						"当动画乐器的生命值降至0点时，它将停止动画并恢复到非动画状态。",
+						"主持人可能会裁定特定物体的猛击攻击造成割伤或刺穿伤害，这取决于它的形态。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6}攻击，达到5英尺，一个目标。命中后造成5点({@damage 1d8 + 2})钝击伤害。"
+					]
+				},
+				{
+					"name": "Sonic Boom",
+					"entries": [
+						"{@atk rw} 使用 {@hit 6} 进行攻击，射程30英尺，目标为一名敌人。命中后造成5点({@damage 1d6 + 2}) 雷属性伤害。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/Wyl/Animated Instrument.webp"
+			},
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		}
+	],
+	"object": [
+		{
+			"name": "Bass Cannon",
+			"source": "Wyldefarne",
+			"page": 6,
+			"size": [
+				"L"
+			],
+			"objectType": "SW",
+			"ac": 15,
+			"hp": {
+				"special": "75"
+			},
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"{@note 200lb, Legendary, requires attunement by a character proficient in an instrument}",
+				"巴斯加农炮是一个重达200磅的大而沉重的箱子。一端有一个振动着强大魔法频率的圆盘，当正确使用时，会发出毁灭性的爆炸，曾经蒸发过整个观众席。",
+				"在发射之前，必须先装填并瞄准。装填低音炮需要一个动作，瞄准需要一个动作，发射需要一个动作。低音炮每回合只能发射一次。",
+				"巨鱼炮（Bass Cannon）配备了轮子，使其可以移动。当推动或拉动巨鱼炮时，它可以移动的距离最多为推动者或拉动者的力量分数。如果有多个角色一起移动巨鱼炮，则他们的力量分数相加，但最多不超过30英尺。",
+				"如果低音炮(Bass Cannon)的生命值降至0，它将无法操作，直到被修复。修复它需要花费一个小时来修复损坏。修复所需的材料价值为100gp，如钢铁、铜、硬木或类似高质量的建筑材料。"
+			],
+			"actionEntries": [
+				{
+					"type": "entries",
+					"name": "Fire the Bass Cannon",
+					"page": 6,
+					"entries": [
+						"当触发时，低音炮将在200英尺长的10英尺宽线上发射。任何被冲击波困住的生物必须成功进行一次{@dc 18}宪法豁免检定，否则将受到{@damage 20d6}雷霆伤害并在一分钟内成为{@condition deafened}。在成功豁免时，伤害减半，且没有其他效果。"
+					]
+				}
+			]
+		}
+	],
+	"book": [
+		{
+			"name": "Viz's Venue of Musical Magics",
+			"id": "VVoMM",
+			"source": "Wyldefarne",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/Wyl/VVoMMCover.webp"
+			},
+			"published": "2023-07-15",
+			"author": "HapHazred",
+			"contents": [
+				{
+					"name": "Viz's Venue of Musical Magics"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "VVoMM",
+			"source": "Wyldefarne",
+			"data": [
+				{
+					"type": "section",
+					"name": "Viz's Venue of Musical Magics",
+					"page": 1,
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"是时候让巫师们停止独占所有好东西了。这些年来，我积累了一些物品，虽然有些看起来并不起眼，但重要的不是外表，而是效果。随便拿吧。"
+							],
+							"by": "Viz"
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Saxophone of Sending",
+							"page": 1,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 1,
+							"entries": [
+								"好的，下一个我应该得到版税。她相当不稳定，但没有什么能像(流氓)一样激起人群的热情。"
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Emerald Menace",
+							"page": 1,
+							"collapsed": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/Wyl/Emerald-Menace.png"
+							},
+							"title": "The Emerald Menace",
+							"credit": "HapHazred",
+							"width": 3234,
+							"height": 3164
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Floating Keyboard",
+							"page": 2,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 2,
+							"entries": [
+								"在我对钢琴感兴趣的时候尝试过这个方法；当你可以随身携带乐器时，确实会有所不同。{@spell levitate}法术的确令人遗憾。"
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Panpipes of Defence",
+							"page": 2,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 2,
+							"entries": [
+								"真的记不得这个法术是干什么的了。"
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Shamisen of Remembrance",
+							"page": 2,
+							"collapsed": true
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/Wyl/Viz-Illustr.png"
+							},
+							"title": "Viscera 'Viz' Runs in Water, age 44",
+							"credit": "HapHazred",
+							"width": 877,
+							"height": 847
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Accordion of Appetites",
+							"page": 3,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 3,
+							"entries": [
+								"我仍然记得(%num%)(%num%)的完美混合。音乐也还可以。"
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Ballistic Bass",
+							"page": 3,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Cello of Moving",
+							"page": 3,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Instrument of Transformation",
+							"page": 3,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Dyvarran Dreadnought",
+							"page": 4,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Maracas of Mayhem",
+							"page": 4,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Electric Eye",
+							"page": 4,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 4,
+							"entries": [
+								"梅菲斯托菲勒斯(Mephistopheles) 牧师是我最喜欢的老派巴哈里安(Baharian) 乐队。"
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Whistle of Silence",
+							"page": 4,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Animated Instrument",
+							"page": 5,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 5,
+							"entries": [
+								"如果你不够出名，就不要组乐队。(Perfect if you aren't popular enough to start a band.)"
+							]
+						},
+						{
+							"type": "inset",
+							"page": 5,
+							"entries": [
+								"这个疯狂的装置就像是那些奇怪的研究所式的魔像，充满了嘟嘟声和嗡嗡声。它可不是最低调的工具，是吧？"
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Laser Musicmaker",
+							"page": 5,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "The Rainstaff",
+							"page": 5,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Screamer",
+							"page": 6,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "object",
+							"source": "Wyldefarne",
+							"name": "Bass Cannon",
+							"page": 6,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Conductor's Wand",
+							"page": 6,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 6,
+							"entries": [
+								"我个人从来不需要魔杖来让人为我做事。"
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Bad Screamer",
+							"page": 6,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Skull Grululu",
+							"page": 7,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Instrument of Playing",
+							"page": 7,
+							"collapsed": true
+						},
+						{
+							"type": "statblock",
+							"tag": "item",
+							"source": "Wyldefarne",
+							"name": "Puppeteer's Harmonium",
+							"page": 7,
+							"collapsed": true
+						},
+						{
+							"type": "inset",
+							"page": 7,
+							"name": "About the Author",
+							"entries": [
+								"Viscera 'Viz' Runs in Water是一位来自巴哈里亚丛林的音乐家。她的唱片包括为乐队{@b Kitty Pop}(节奏吉他)、{@b Zero Heroes}(主音吉他)和{@b Chaotic Naughty}(主音吉他，沙锤)提供的作品。歌曲包括{@b Jaguar Queen}、{@b Wrecksist}和{@b Ballad of the Mayday Wizard}。这些乐器的注释是在Vardenshire和Horn the Scalebard的帮助下编写的({@b Trial Party Z})。"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

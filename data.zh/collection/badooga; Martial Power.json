@@ -1,0 +1,3675 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "martialpower",
+				"abbreviation": "MP",
+				"full": "Martial Power",
+				"authors": [
+					"badooga"
+				],
+				"convertedBy": [
+					"GoR",
+					"badooga"
+				],
+				"version": "1.1",
+				"color": "ae899f",
+				"url": "https://www.gmbinder.com/share/-MZ_0WjutwgfWbfONq9m",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1643931149,
+		"dateLastModified": 1705266948,
+		"optionalFeatureTypes": {
+			"MP": "Martial Practice"
+		},
+		"_dateLastModifiedHash": "bd67ec268a"
+	},
+	"action": [
+		{
+			"name": "Analyze",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"当你在你的回合中采取{@action Attack}行动时，你可以用试图分析你30英尺内你能看到的一个敌对生物来代替一次攻击。使用适合你所分析的生物的技能进行检查（见《塔莎的万物熔炉》第148页的怪物研究表以获得灵感）。该检查可以与该生物的魅力（欺骗）检查相抗衡，或者它的DC为10+该生物的等级或挑战等级，以较高者为准。",
+				"成功后，你将从以下列表中学习两个选项（或同一选项两次），或一些与此相关的信息，由DM选择（并以角色试图研究的内容为指导）。",
+				{
+					"type": "list",
+					"items": [
+						"该生物的一个伤害抵抗力、免疫力或脆弱性。",
+						"该生物的一个条件免疫。",
+						"该生物的一个基本能力或特征，如呼吸武器、魔法抵抗或群体战术。",
+						"该生物的最高或最低能力得分。"
+					]
+				},
+				"在决定你得到多少信息时，DM可以考虑检查的成功或失败程度。例如，如果检查只失败了1或2次，你可能会学到较少的信息；如果检查成功了5次或更多，或者你在D20上掷了20分，你可能会学到更多的信息。"
+			]
+		},
+		{
+			"name": "Bolster",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"作为一个行动，你可以把你能看到的30英尺内的盟友作为目标。如果目标能看到或听到你，它就会获得相当于你的等级+你的魅力修正值（最小值为0）的临时打击点数。这些临时命中率会在你下一回合开始时消失。"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"name": "Charge",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"每个生物现在都可以使用{@feat Charger}特技中提出的机制进行冲锋攻击。换句话说，现在每个生物都有冲锋的特技。",
+				"根据DM的决定，5级以下的角色可以被限制服用此特技。"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			]
+		},
+		{
+			"name": "Defend",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"作为一个行动，你专注于提高你的一个防御能力，以保护自己不受伤害或摆脱影响。",
+				"在你下一回合开始之前，或者在你变成{@condition incapacitated}之前，你在使用你所选择的一种能力（除了灵巧，这已经被{@action Dodge}的行动所涵盖）的所有拯救动作上有优势。"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"name": "Demoralize",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"当你在你的回合中采取{@action Attack}行动时，你可以取代一次攻击，试图使你周围30英尺内的一个能看到和听到你的人形生物失去士气。用目标的智慧（洞察力）检定进行魅力（恐吓）检定，并与之竞争。",
+				"如果目标在对被惊吓的救赎上有优势，则在这个检查上有优势；同样，如果目标对被惊吓免疫，则对这个效果免疫。",
+				"如果你检查成功，目标在所有针对你的攻击卷中都处于劣势，直到你下一回合结束。"
+			]
+		},
+		{
+			"name": "Outmaneuver",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"作为一个行动或额外行动，你可以尝试在你10英尺范围内超越一个你能看到的生物。做一个智力或魅力检查（你选择），由目标的智力或智慧检查（目标选择）来争夺。",
+				"如果你的检查成功，该生物在回合的剩余时间里不能做出针对你的反应。"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			]
+		},
+		{
+			"name": "Tackle",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"如果你在尝试{@action grapple}一个生物之前，在一条直线上移动至少10英尺，你也可以尝试对付它。掷骰子抓取目标，如常。如果成功，你和目标也会倒下（%1%）。失败时，只有你倒下。"
+			]
+		},
+		{
+			"name": "Throw",
+			"source": "martialpower",
+			"page": 2,
+			"entries": [
+				"使用{@action Attack}动作，你可以尝试投掷你拥有的一个生物{@condition grappled}。如果你能用攻击动作进行多次攻击，这个投掷就能代替其中一次。",
+				"你做一个力量（运动）检查，由目标的力量（（%0%））或灵巧（（%1%））检查来争夺（目标选择使用的能力）。如果你比该生物大，你在这个检定上有优势，如果你比该生物小，则有劣势。此外，如果目标是{@condition incapacitated}，你的检查会自动成功。",
+				"如果你成功了，你可以使用被抓捕的生物进行一次即兴攻击。如果你进行近战攻击，你可以选择不结束抓捕，如果你的检查成功了5或更多。如果你进行远程攻击，其范围是5英尺，再加上等于5×你力量修正值的英尺数（最小总长为5英尺）；这样做会导致目标倒下（%0%），但也会结束抓捕。",
+				"一旦命中，该生物和目标都会受到一定量的重击伤害，这取决于被投掷生物的大小：{@damage 1d6}（微小）、{@damage 2d6}（小型或中型）、{@damage 3d6}（大型）、{@damage 4d6}（巨大）或{@damage 6d6}（巨大），加上你的力量修改器。"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Fighting Styles",
+			"source": "martialpower",
+			"ruleType": "VO",
+			"entries": [
+				"下面的两个条目加强了对战斗风格的使用。",
+				{
+					"name": "Fighting Style Options",
+					"type": "entries",
+					"entries": [
+						"当你选择一种战斗风格时，以下风格会被添加到你的选项列表中。",
+						{
+							"type": "list",
+							"items": [
+								"{@optfeature Defend the Line|martialpower}",
+								"{@optfeature Earthsense|martialpower}",
+								"{@optfeature Hammer Hands|martialpower}",
+								"{@optfeature Undaunted Stride|martialpower}",
+								"{@optfeature Vaulting Expert|martialpower}"
+							]
+						}
+					]
+				},
+				{
+					"name": "Martial Stances",
+					"type": "entries",
+					"entries": [
+						"有了这个变体，你的战斗风格就会不断地变得灵活。每当你要学习一种格斗风格时，你可以从同一列表中选择两种风格作为武术招式来学习。",
+						"当你掷出主动权时，作为你在战斗中的一个额外行动，你可以选择进入一个你所知道的姿态，并获得其好处。在战斗结束前或再次使用该奖励动作前，你都会保持该姿态。你一次只能从一个姿态中获益，除非有其他特征。",
+						"如果一种风格允许你学习一种动作、法术或其他一些选项，当你把它作为一种姿态来学习时，你就会选择这种选项，而不能通过简单地切换姿态来把它换成另一种选项。同样地，如果一种战斗风格只在短时或长时休息时充能，或以其他方式有一些资源附加在它身上，那么切换到该姿态时不会充能。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Cleaving Through Creatures",
+			"source": "martialpower",
+			"page": 3,
+			"ruleType": "V",
+			"entries": [
+				"使用{@variantrule Cleaving Through Creatures}的可选规则（DMG 272）不再要求任何涉及的生物不受伤害。你也可以将这一规则扩展到适用于远程武器攻击，即刺穿或弹开多个生物，而这些生物彼此之间都在5英尺之内，并且在原始攻击的范围之内。",
+				"对于近战攻击，你也可以允许攻击劈开那些不一定在原始攻击范围内的生物。例如，也许原始攻击会使目标的尸体向后飞去，在这个过程中击中并伤害更多的生物。在裁决时要酌情考虑，并考虑要求攻击者在没有意义的情况下消耗他们的移动。"
+			]
+		},
+		{
+			"name": "Flanking Revised",
+			"source": "martialpower",
+			"page": 3,
+			"ruleType": "V",
+			"entries": [
+				"当一个生物和它的至少一个盟友与他们可以看到的敌人相邻，并且在敌人空间的两侧或角落，他们就是在侧翼攻击该敌人。当一个生物被{@condition incapacitated}、{@condition prone}、{@condition restrained}或侧翼所包围时，它就无法进行侧翼攻击。一个大型或更大的生物，只要它的空间中至少有一格或六格符合侧翼的条件，就属于侧翼。",
+				"侧面的生物对另一生物的攻击卷轴获得+2的加成，除非他们自己被侧面攻击。",
+				"根据DM的决定，那些不因其类型而被多个对手不利的生物（比如奥兹）对被包抄免疫。"
+			]
+		},
+		{
+			"name": "Grappling and Shoving",
+			"source": "martialpower",
+			"page": 3,
+			"ruleType": "V",
+			"entries": [
+				"本节提供了与擒拿和推搡有关的战斗的新选项。它们可以作为一组或单独添加到你的游戏中。",
+				{
+					"type": "entries",
+					"name": "Combat Tussle",
+					"page": 3,
+					"entries": [
+						"你可以用抓取或推搡目标的尝试来取代你所做的任何武器攻击，而不是用{@action Attack}动作来做。这也可以延伸到其他涉及类似机制的行动选项，如（%%）和（%%）（见行动选项部分）。",
+						"作为一个额外的选择，DM可能希望在进行机会攻击时禁止抓取或推搡替代。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Forceful Push",
+					"page": 3,
+					"entries": [
+						"当你试图推搡一个生物并以5分或更高的分数击败他们的竞争性检查时，你可以选择将其推到10英尺以外，而不是5英尺。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Interpose",
+					"page": 3,
+					"entries": [
+						"当一个你没有抓捕的生物对你进行攻击时，你可以用你的反应来试图在你和攻击之间插入一个你正在抓捕的生物。",
+						"如果该生物不愿意，你就进行一次力量（竞技）检查，由目标的力量（竞技）或灵巧（杂技）检查来争夺（目标选择要使用的能力）。除非你有两只空闲的手，否则你会有一个-2的惩罚。此外，如果你比敌方生物大，你在这个检定上有优势，如果你比敌方生物小，则有劣势。",
+						"如果你成功了，被抓的生物会成为攻击的目标，而不是你。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"page": 3,
+					"entries": [
+						"当你获得强大的建筑特质或类似的特征时，你可以抓取或推搡的生物的最大尺寸类别也增加了一个。作为一个额外的选择，DM可以对抓取或推搡比你大两个尺寸的生物的检查施加不利条件。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rattle",
+					"page": 3,
+					"entries": [
+						"当你身边的生物（%0%）试图施法时，你可以用你的反应来试图强行打断施法。目标必须做一个宪法救赎动作，DC为10+你的力量修饰。蓄力失败时，目标的法术会失败，法术槽（如果有的话）会被浪费，蓄力成功时，目标的法术会正常工作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shove Aside",
+					"page": 3,
+					"entries": [
+						"当你成功地推开一个生物时，你可以将它移动到5英尺以内的任何空间，而不是直接离开你。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Yank",
+					"page": 3,
+					"entries": [
+						"当你身边的生物（%0%）试图对你以外的生物进行武器攻击时，你可以用你的反应把他们拉开，使他们更难击中，在攻击卷上施加不利条件。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Two-Weapon Fighting",
+			"source": "martialpower",
+			"page": 3,
+			"ruleType": "V",
+			"entries": [
+				"以下变体可以用来使双武器战斗与其他武器选择相比更加可行，它们可以作为一组或单独添加到你的游戏中。",
+				"此外，如果你想给双持武器者提供额外的机会来投资他们的战斗风格，可以考虑在你的游戏中加入本文件后面的（%0%）特技。",
+				{
+					"type": "entries",
+					"name": "Additional Attacks",
+					"page": 3,
+					"entries": [
+						"每当你从额外攻击功能中获得一次额外攻击时，每当你进行双武器战斗时，你可以用你的第二把武器进行的攻击次数增加一次。",
+						"这个好处可以在{@feat Dual Wielder}特技后面设置门槛，由DM决定。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Better Accuracy",
+					"page": 3,
+					"entries": [
+						"如果你有双武器格斗的战斗风格，你在进行双武器格斗时也会获得攻击卷的+1奖励。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Dice",
+					"page": 3,
+					"entries": [
+						"当你进行双武器战斗时，你可以用{@dice d8}代替每个武器的正常伤害模子。",
+						"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Follow-Up Attacks",
+					"page": 4,
+					"entries": [
+						"如果你有额外攻击的功能，并参与双武器战斗，当你采取{@action Attack}的行动，用其中一个武器攻击失败时，你可以用另一个武器对同一目标进行额外攻击（不需要行动）。",
+						"你每回合只能使用这个能力一次；如果你在更高等级时从额外攻击功能获得更多的攻击，每当你达到这些等级时，每回合的使用次数会增加一次。",
+						"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "No Bonus Action",
+					"page": 4,
+					"entries": [
+						"当你进行双武器战斗时，用你的第二把武器进行额外攻击不需要额外行动。像往常一样，它只能在你的每个回合中做一次。",
+						"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Opportunity Attacks",
+					"page": 4,
+					"entries": [
+						"当你在进行双武器战斗时，用其中一件武器进行机会攻击，你可以用另一件武器进行另一次机会攻击，作为同一反应的一部分，但你不会像通常那样将你的能力修改器加入第二次攻击的伤害中。",
+						"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Weapon Effects",
+			"source": "martialpower",
+			"page": 4,
+			"ruleType": "V",
+			"entries": [
+				"以下可选规则可用于增加武斗的深度，其灵感来自于{@link The Warrior's Codex Reforged|https://www.gmbinder.com/share/-LTuQ9tRb_ZGFIfKLno4}中的武器属性。它们可以作为一组或单独添加到你的游戏中。",
+				{
+					"type": "entries",
+					"name": "Called Shots",
+					"page": 4,
+					"entries": [
+						"当你用你精通的武器进行攻击时，你可以放弃在攻击卷中加入你的熟练度奖励。如果攻击命中，你会在伤害卷中加入熟练度加成。你必须在做攻击卷之前决定这样做。这个能力可以和{@feat Great Weapon Master}和{@feat Sharpshooter}功法一起使用。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cavalry Charge",
+					"page": 4,
+					"entries": [
+						"如果你在骑马时向目标直线移动至少30英尺后，用造成穿刺伤害的近战武器伤害一个生物，你会造成额外的（%0%）伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Finisher",
+					"page": 4,
+					"entries": [
+						"当你用双手挥舞的近战武器伤害一个{@condition prone}生物时，你会造成额外{@damage d6}的伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Prone Fighting",
+					"page": 4,
+					"entries": [
+						"当你在{@condition prone}的情况下用轻武器进行武器攻击时，你不会因为俯卧而受到不利影响。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sundering",
+					"page": 4,
+					"entries": [
+						"许多重击性武器会粉碎、击碎或穿透盔甲。每回合一次，当你用具有重击属性的近战武器攻击物体或穿着金属盔甲的目标，并造成重击伤害时，你可以在攻击卷上获得+2的奖励。",
+						"你也可以在对付有厚壳的生物、金属皮和其他生物时获得这个奖励，这由你的管理员决定。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Accessing Maneuvers; General Features",
+			"source": "martialpower",
+			"page": 9,
+			"ruleType": "V",
+			"entries": [
+				"本节介绍了多个武术班可以同时访问的三个功能。",
+				"{@b Combat Superiority}是一个万能的功能，如果你觉得他们需要更多有趣的东西来做他们的攻击，你可以把它添加到任何和所有的武术类。",
+				"{@b Spellsword Maneuvers}是工匠、圣骑士、游侠和你游戏中任何其他半数施法者的特性，允许他们消耗法术槽，将其转换为优势骰子。",
+				"{@b Martial Techniques}是半身法师的一个不同的特征，它完全取代了法术攻击。这允许角色构建，如非魔法游侠或圣骑士，只专注于他们的武术能力。",
+				{
+					"type": "entries",
+					"name": "Combat Superiority",
+					"page": 9,
+					"entries": [
+						"{@note 3rd-level and higher martial optional feature}",
+						"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+						{
+							"type": "entries",
+							"name": "Maneuvers",
+							"entries": [
+								"你会两种演习，这些演习从战士的战斗大师原型可用的演习列表中选择。你在5级、9级、13级和17级时可以额外学习一种你选择的演习。每当你学习一个新的动作时，你也可以用一个不同的动作取代你所知道的一个动作。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Superiority Dice",
+							"entries": [
+								"你获得两个优势骰子，它们是{@dice d6}的。当你使用时，一个优势骰子会被消耗掉。当你完成短期或长期休息时，你会重新获得所有已消耗的优势骰子。你在5级、11级和17级时获得另一个优越性骰子。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Saving Throws",
+							"entries": [
+								"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Martial Techniques",
+					"page": 9,
+					"entries": [
+						"{@note 2nd-level half-caster optional feature (alternative to Spellcasting)}",
+						"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+						{
+							"type": "entries",
+							"name": "Maneuvers",
+							"page": 9,
+							"entries": [
+								"你学习四个自选动作，这些动作从战士的战斗大师原型可用的动作列表中选择。许多演习以某种方式加强攻击。你每次攻击只能使用一个演习。你在5级、9级、13级和17级时可以额外学习一个你选择的演习。每当你学习一个新的动作时，你也可以用一个不同的动作取代你所知道的一个动作。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Superiority Dice",
+							"page": 9,
+							"entries": [
+								"你有四个优势骰子，它们是{@dice d8}的。当你使用一个优势骰子时，它就会被消耗掉。当你完成短时或长时的休息时，你会重新获得你所有消耗的优势骰子。",
+								"你在9级时获得另一个优势模子，17级时再获得一个。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Saving Throws",
+							"page": 9,
+							"entries": [
+								"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellsword Maneuvers",
+					"page": 9,
+					"entries": [
+						"{@note 3rd-level and higher half-caster optional feature}",
+						"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+						{
+							"type": "entries",
+							"name": "Maneuvers",
+							"entries": [
+								"你会两种演习，这些演习从战士的战斗大师原型可用的演习列表中选择。你在5级、9级、13级和17级时可以额外学习一种你选择的演习。每当你学习一个新的动作时，你也可以用一个不同的动作取代你所知道的一个动作。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Superiority Dice",
+							"entries": [
+								"在你的回合中，你可以消耗一个法术槽（不需要行动）来获得一个或多个优势骰子，它们是（%0%）的。你的法术槽每级获得一个骰子，最多获得五个骰子。任何未消耗的骰子都会在你完成长时间休息后消失。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Saving Throws",
+							"entries": [
+								"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Accessing Maneuvers; Class-Specific Features",
+			"source": "martialpower",
+			"page": 9,
+			"ruleType": "V",
+			"entries": [
+				"本节介绍了每个等级所特有的获得演习的方法。每种方法与其他方法相比都有多种不同之处，但它们都是为各自的等级量身定做的。它们中的大多数是由阶级资源提供燃料的，因此只增加了多功能性，而不一定是原始力量。",
+				"{@classFeature Battle Ferocity|Barbarian||3|martialpower}是一个野蛮人的特征，让你选择从鲁莽的攻击中获得一个或多个优势骰子，而不是优势。",
+				"{@classFeature Combat Expertise|Fighter||3|martialpower}是一个战士特征，它赋予战士一个按比例计算的优势骰子池，这对那些认为基础等级缺乏足够的特征来适当发光的人来说可能会有吸引力。",
+				"{@classFeature Ki Maneuvers|Monk||3|martialpower}是一个僧侣的特征，它让你花费Ki点来促进你的机动性。",
+				"{@classFeature Roguish Exploits|Rogue||3|martialpower}是一个无赖的功能，让你牺牲偷袭的骰子来助长你的机动性。"
+			]
+		},
+		{
+			"name": "Maneuver Variants; Action Options",
+			"source": "martialpower",
+			"page": 11,
+			"ruleType": "V",
+			"entries": [
+				"一种方法是将演习转化为任何人都可以采取的较弱的行动选项，而不是制作一堆授予演习权限的功能。这里有几个例子。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Goading Attack",
+							"entries": [
+								"当你用近战武器攻击击中一个生物并在攻击卷上占优势时，你可以在下一个回合结束前，在目标对你以外的生物进行的下一次攻击卷上施加劣势。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Lunging Attack",
+							"entries": [
+								"当你做一个没有劣势的近战武器攻击卷时，你可以将你的攻击范围增加5英尺。当你这样做时，你在攻击卷上会受到不利影响。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Menacing Attack",
+							"entries": [
+								"见本文件前面的{@action Demoralize|martialpower}行动选项。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rally",
+							"entries": [
+								"见本文件前面的{@action Bolster|martialpower}行动选项。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Riposte",
+							"entries": [
+								"当一个生物在攻击卷上处于劣势的情况下用近战武器攻击错过你时，你可以用你的反应对该生物进行一次近战武器攻击。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maneuver Variants",
+			"source": "martialpower",
+			"page": 11,
+			"ruleType": "V",
+			"entries": [
+				"特别是在使用赋予许多不同等级的操纵权的可选功能时，你可能必须做一些调整，以使事情顺利进行。本节提供了此类调整的建议，可以为所有角色或以每个等级为基础进行调整。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Alternative Recharge",
+							"entries": [
+								"DM可以从以下优势骰子的充电选项中选择一个，而不是在短时或长时休息时充电，这些选项按照从最不强大到最强大的顺序列出。",
+								{
+									"type": "list",
+									"items": [
+										"每当你掷出主动权时，你都会重新获得所有消耗的骰子。",
+										"你重新获得所有已消耗的骰子作为一个行动。",
+										"在你每个回合开始时，你会重新获得一个已消耗的骰子。",
+										"你在每个回合开始时都会重新获得所有消耗的骰子。"
+									]
+								},
+								"请注意，这个选项更倾向于本节前面详述的一般战斗力优势功能。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "No Goading Attack",
+							"entries": [
+								"{@optfeature Goading Attack}与骑兵的三阶特性非常相似。虽然这两者确实可以相互协同，但在使用这个变体时，你可能希望去掉诱导攻击，这样骑兵的主要战斗能力就不会只提供给所有人。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Relentless",
+							"entries": [
+								"从18级开始，当你掷出主动权并且没有剩余的优越性骰子时，你会重新获得1个优越性骰子。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Removed Damage",
+							"entries": [
+								"除了{@optfeature Commander's Strike}的演习外，演习不再为单次攻击的伤害增加一个优势模子。这个选项主要是针对战士类的，在减少多类滥用战斗专长的同时，也不增加该类每回合的伤害输出。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maneuver Variants; Prepared Maneuvers",
+			"source": "martialpower",
+			"page": 11,
+			"ruleType": "V",
+			"entries": [
+				"你不需要知道一个固定的演习清单，而是准备好每当你完成长时间休息时可以使用的演习清单，从（%0%）中选择。当你这样做时，你选择的演习数量等于你在没有这个变体的情况下通常会学习的数量。"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Charger",
+			"source": "martialpower",
+			"page": 4,
+			"entries": [
+				"当你使用你的行动来（%0%），你可以使用一个额外的行动来进行一次近战武器攻击或对一个生物进行（%1%）。",
+				"如果你在采取这个奖励行动之前立即在一条直线上移动至少10英尺，你要么在攻击的伤害卷上获得+5的奖励（如果你选择了近战攻击并命中），要么将目标推到离你最多10英尺的地方（如果你选择推搡并且成功）。",
+				"{@homebrew You also gain the benefits of this feat if your mount satisfies its conditions (i.e. it takes the Dash action, and then it possibly moves up to 10 feet in a straight line).}"
+			]
+		},
+		{
+			"name": "Dungeon Delver",
+			"source": "martialpower",
+			"page": 4,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"对许多地牢中的隐藏陷阱和秘密门保持警惕，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你在智慧({@skill Perception})和智力({@skill Investigation})的检查中具有优势，可以发现秘密门的存在。",
+						"你在为避免或抵制陷阱而进行的拯救动作中具有优势。",
+						"你对陷阱造成的伤害有抵抗力。",
+						"快速旅行不会对你的被动智慧（（%0%））得分造成正常的-5惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Grappler",
+			"source": "martialpower",
+			"page": 4,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你已经发展出必要的技能，可以在近身擒拿中保持自己的优势。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你在对你抓捕的生物进行攻击的时候有优势。",
+						"你可以使用{@homebrew one of your attacks from the {@action Attack}行动|你的行动}来尝试把一个生物{@condition grappled}钉在你身边。要这样做，请再做一次抓取检查。如果你成功，{@homebrew the creature is {@condition restrained}你的速度变为0|你和该生物都是{@condition restrained}}，直到抓取结束。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Great Weapon Master",
+			"source": "martialpower",
+			"page": 4,
+			"entries": [
+				"你已经学会了将武器的重量用于你的优势，让它的动力增强你的攻击。挥舞重武器时，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"当你用武器攻击失误而在攻击卷上没有劣势时，你可以利用你的反应对同一目标重复攻击，利用你之前挥舞的势头。",
+						"当你使用该武器进行机会攻击时，目标必须成功地进行力量救赎（DC8+你的熟练度加成+你的力量修饰），否则将被击倒（%0%）。如果目标比你大一圈以上，则蓄力自动成功。",
+						"在你的回合中，当你用武器打出关键一击或用一击将一个生物降低到0点，你可以用该武器进行一次近战攻击作为奖励动作。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Polearm Master",
+			"source": "martialpower",
+			"page": 4,
+			"entries": [
+				"你可以用伸手不见五指的武器来压制你的敌人。你在挥舞杆状武器时获得以下好处，杆状武器是指（%0%）、（%1%）、（%2%）、（%3%）、（%4%）或其他DM认为合适的杆状武器。",
+				{
+					"type": "list",
+					"items": [
+						"你使用杆状武器的距离增加5英尺。",
+						"你可以将生物推到你的杆状武器所能触及的范围内，而不是你身体所能触及的范围。",
+						"当其他生物进入你的杆状武器的范围时，会引起你的一次机会攻击。机会攻击必须使用杆状武器进行。",
+						"当你使用{@action Ready}动作用杆状武器进行攻击时，攻击卷具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Martial Adept",
+			"source": "martialpower",
+			"page": 4,
+			"entries": [
+				"你的武术训练使你能够进行特殊的战斗演习。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你从战士类的{@class fighter|phb|Battle Master|Battle Master|phb|2-0}原型中选择两个{@filter maneuvers|optionalfeatures|feature type=MV:B}进行学习。如果你使用的动作需要你的目标做一个蓄力动作来抵抗该动作的效果，蓄力动作的DC等于8+你的熟练度加成+你的力量或灵巧修饰（你选择）。",
+						"你获得{@homebrew two|one}优越性骰子，这是一个{@dice d6}（这个骰子会加到你从其他来源获得的任何优越性骰子上）。这个骰子被用来助长你的机动性。当你使用一个优势骰子时，它会被消耗掉。当你完成一个短期或长期的休息时，你会重新获得你所消耗的优势骰子。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Savage Attacker",
+			"source": "martialpower",
+			"page": 4,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你擅长尽可能迅速地将死亡带给你的敌人。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"当你为近战武器攻击掷出伤害时，你可以重新掷出武器的伤害骰子，并使用其中一个总数。",
+						"当你用近战武器攻击失误时，你可以用你的反应来重掷攻击卷，并接受第二个结果。一旦你使用这个能力，你就不能再这样做，直到你完成一个短期或长期休息。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sentinel",
+			"source": "martialpower",
+			"page": 5,
+			"entries": [
+				"你擅长在战斗中保护你的盟友，将火力引向自己。你获得以下好处",
+				{
+					"type": "list",
+					"items": [
+						"作为一个额外动作，你可以进入一个保护姿态，直到你下一个回合开始。在持续时间内，你可以强迫任何以你范围内的盟友为目标的攻击改为以你为目标，即使你通常在其范围或范围之外。",
+						"在你的近战范围内的盟友，在避免或逃避被{@condition grappled}或{@action shove|phb}的检查和救治上有优势。",
+						"你对被{@condition charmed}或{@condition frightened}的救赎有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sharpshooter",
+			"source": "martialpower",
+			"page": 5,
+			"entries": [
+				"你已经掌握了远程武器，可以进行别人认为不可能的射击。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"在任何具有优势的远程攻击卷中，你无视半数和四分之三的掩护。",
+						"你在对被抓捕的生物的远程攻击卷轴上有优势。如果一个生物在他们的回合中不愿意移动，你也会获得这个优势，直到他们再次移动。",
+						"每当你在远程武器攻击卷中处于劣势时，你可以重新掷出一个骰子一次。",
+						"在你的回合中，当你用远程武器打出关键一击，或用远程武器将一个生物的命中率降至0时，你可以将一次远程武器攻击作为奖励动作。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Shield Master",
+			"source": "martialpower",
+			"page": 5,
+			"entries": [
+				"你使用盾牌不仅仅是为了保护，也是为了进攻。当你挥舞{@item shield|phb}时，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"作为你回合中的额外行动，你可以尝试用你的盾牌推开5英尺内的生物。",
+						"如果你不是（%0%），你可以在你的灵巧救赎中加入你的盾牌的AC奖励。",
+						"如果你受到的效果允许你做一个灵巧的蓄力动作来承受一半的伤害，你可以用你的反应在你和效果来源之间布置你的盾牌。如果你救赎成功，你就不会受到任何伤害，如果你失败，就只会受到一半的伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Weapon Master",
+			"source": "martialpower",
+			"page": 5,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"choose": {
+						"fromFilter": "type=martial weapon;mundane weapon|miscellaneous=mundane",
+						"count": 4
+					}
+				}
+			],
+			"entries": [
+				"你已经广泛地练习了各种武器，获得了以下（%0%）。",
+				{
+					"type": "list",
+					"items": [
+						"选择四种简单的或武术的武器。如果你还没有，你将获得对这些武器的熟练度，（%0%）。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Bulwark",
+			"source": "martialpower",
+			"page": 5,
+			"entries": [
+				"你的盾牌的防御性用途也可以扩展到你的盟友。当你挥舞着{@item shield|phb}时，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"在你5英尺范围内的每个盟友，如果没有这个特技，在你没有（%0%）或（%1%）时，会获得一半的掩护。",
+						"当一个生物进入你5英尺范围内的区域，或者当他们攻击你的盟友而没有挥舞盾牌时处于该区域，你可以使用你的反应用你的盾牌推开他们。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Light Armor Master",
+			"source": "martialpower",
+			"page": 5,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"armor": "light"
+						}
+					]
+				}
+			],
+			"entries": [
+				"你已经练习了穿着轻质盔甲移动，以获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"当你没有穿戴中型或重型盔甲时，你的速度增加5英尺。",
+						"在你的每个回合中，你可以选择在你移动的5英尺范围内，不挑起机会攻击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Opportunist",
+			"source": "martialpower",
+			"page": 5,
+			"entries": [
+				"你已经掌握了在任何敌人的防守中利用每一个落点的技术，获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"生物会激起你的机会攻击，即使它们在离开你的范围之前采取了（%0%）的行动。",
+						"当生物对你以外的目标进行攻击时（且该目标没有此特技），以及当它们从被（%0%）站起来时，也会引发你的机会攻击。",
+						"当你用机会攻击击中一个生物时，你也可以在不引起机会攻击的情况下自己移动到5英尺。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Pugilist",
+			"source": "martialpower",
+			"page": 5,
+			"entries": [
+				"你成为徒手格斗大师，赋予你以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你在使用徒手攻击时获得+1的伤害卷奖励。",
+						"每当你用徒手攻击做出的近战攻击卷轴有优势并击中时，如果两个{@dice d20}卷轴中较低的一个也会击中目标，你可以自动{@action grapple}或{@action shove}目标（你选择）。",
+						"当你用你的徒手打击进行机会攻击时，你在攻击卷上有优势。",
+						"你的徒手打击在攻击卷上没有劣势，同时（%0%）。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Two-Weapon Expert",
+			"source": "martialpower",
+			"page": 5,
+			"entries": [
+				"你获得了可以在使用两种武器战斗时使用的新技巧，在进行双武器战斗时赋予你以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你为避免被解除武器而进行的检查和救治具有优势。",
+						"如果你在你的回合中没有采取{@action Attack}、{@action Cast a Spell}或{@action Ready}的行动，你可以使用你的额外行动来用其中一种武器进行攻击。",
+						"作为你回合中攻击行动的一部分，你也可以用你的武器在死亡旋风中扫来扫去，对你范围内任何数量的生物和物体造成伤害。每个目标受到的伤害等于武器的能力修正值，而伤害类型则从你的武器可以造成的伤害中选择。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Unarmored Defense",
+			"source": "martialpower",
+			"page": 5,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你已经学会在不使用盔甲的情况下保护自己，给予你以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"当你没有穿戴盔甲，也没有挥舞盾牌时，你的攻击力等于11+本特技所增加的能力的修正值。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Unarmored Master",
+			"source": "martialpower",
+			"page": 6,
+			"prerequisite": [
+				{
+					"other": "Unarmored Defense {@feat Unarmored Defense|martialpower|feat} or feature"
+				}
+			],
+			"entries": [
+				"盔甲的作用只是让你退缩。当你受益于你的无甲防御时，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你的步行速度增加10英尺，并获得与你的步行速度相等的攀爬速度和游泳速度。",
+						"当你的灵巧救赎失败时，你可以用你的反应来重新进行救赎，并接受第二个结果。",
+						"你在避免或逃避被攻击的检查中具有优势（%0%）。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Unstoppable",
+			"source": "martialpower",
+			"page": 6,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你可以轻松地推着人走，但移动你需要付出巨大的努力。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"当你赢得一场对（%0%）生物的能力竞赛或避免被生物推挤时，你可以选择将该生物推离你最多5英尺（不需要反应）。",
+						"当你受到一个会使你移动、击倒（%0%）或两者兼而有之的效果时，你可以使用你的反应，既不被移动也不被击倒。"
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Beast Tamer",
+			"source": "martialpower",
+			"page": 6,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i Your hands and voice soothe a beast so that it will treat you as a friend.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@skill Animal Handling}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"5分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"1个命中模子"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"不尽相同"
+							]
+						}
+					]
+				},
+				"你可以驯服你周围10英尺内的一只非敌对的野兽。如果该野兽是有敌意的，DM可以让你通过对他们选择的DC进行成功的能力检查来驯服它。当被驯服时，该野兽在相当于你的角色等级的时间内被你控制（%0%）。如果你或你的同伴伤害了这只野兽，则条件结束。",
+				"当野兽被魅惑的时候，野兽是你和你的同伴们自愿的坐骑。此外，通过声音和手势，你和野兽可以互相交流简单的想法，如情绪、简单的请求和附近危险的警告。"
+			]
+		},
+		{
+			"name": "Decipher Script",
+			"source": "martialpower",
+			"page": 7,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i You might not know the language, but with some time and effort, you can decipher the meaning of any writing.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@skill History} or {@skill Investigation}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"10分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"1个命中模子"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"瞬时"
+							]
+						}
+					]
+				},
+				"你学习任何书面文本的意义，即使你不精通其语言。你必须全程检查这些文字，之后你就能理解文字中的任何要点。你还可以进行智力检查，如果你的结果是25或更高，你就可以像精通该语言一样阅读该文本。每次使用这种武术练习可以让你检查大约一页的文字或同等数量的文本。"
+			]
+		},
+		{
+			"name": "Fake Death",
+			"source": "martialpower",
+			"page": 7,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i You slow your breathing and heartbeat so you appear to be dead.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@skill Athletics} or {@skill Deception}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"10分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"1个命中模子"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"24小时"
+							]
+						}
+					]
+				},
+				"你进入一种深沉的恍惚状态，使你的心跳和呼吸变慢，几乎无法察觉。在这种状态下，你看起来是无意识的或死亡的，但你能意识到你周围的环境。你可以作为一个额外的动作提前从恍惚中醒来。进行体质检查或魅力检查；其他生物会认为你已经死亡，除非他们成功进行智慧（（%0%））或智慧（（%1%））检查，检查的DC等于你的卷轴。"
+			]
+		},
+		{
+			"name": "Quick Aid",
+			"source": "martialpower",
+			"page": 7,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i With a few words and a couple of shiny coins, you can acquire help almost anywhere at any time.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@skill Intimidation}, {@skill Performance} or {@skill Persuasion}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"1分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"10戈比+1命中率"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"10分钟"
+							]
+						}
+					]
+				},
+				"当你在一个有对你没有敌意的生物的聚居地时，你可以在这段时间内获得一些生物的帮助。援助你的生物的数量与你的角色等级相等。这些生物可以为你执行平凡的任务，但它们不会为你战斗，不会跟随你进入明显的危险区域（如地牢），如果它们受到危害或虐待，会提前离开你。",
+				"当你使用这种做法时，请做一个魅力检查。如果得到15分或更高的分数，持续时间会增加到1小时。"
+			]
+		},
+		{
+			"name": "Speech Without Words",
+			"source": "martialpower",
+			"page": 7,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i No language barrier can keep you from communicating.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@skill Insight} or {@skill Persuasion}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"5分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"None"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"10分钟"
+							]
+						}
+					]
+				},
+				"通过哑剧，你可以与你能看到的非敌对的生物交流，即使它不说你的语言。你可以交流简单的想法和概念，例如弄清楚一个怪物去了哪里，某人可能在哪里找到淡水，是否有一个安全的地方可以扎营，等等。",
+				"传达复杂的想法可能需要一个或多个能力检查，由DM决定。"
+			]
+		},
+		{
+			"name": "Temporary Fix",
+			"source": "martialpower",
+			"page": 7,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i  A few tools and a bit of time are all you need to make a device work again.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@item Tinker's Tools|PHB}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"10分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"1个命中模子"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"24小时"
+							]
+						}
+					]
+				},
+				"你修复一个能在10英尺立方体内的普通物体。该物体在练习的持续时间内可以正常使用。在这段时间之后，该物品会恢复到之前的状态。"
+			]
+		},
+		{
+			"name": "Uncanny Strength",
+			"source": "martialpower",
+			"page": 7,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i You can dig deep within yourself to find the strength you need.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@skill Athletics}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"5分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"1个命中模子"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"10分钟"
+							]
+						}
+					]
+				},
+				"你调用隐藏的储备来获得力量的提升。在持续时间内，当确定你的承载能力和你可以推、拖、举的重量时，你的体型会大一号，并且你在所有力量检查中获得+5的奖励。"
+			]
+		},
+		{
+			"name": "Warded Campsite",
+			"source": "martialpower",
+			"page": 7,
+			"featureType": [
+				"MP"
+			],
+			"entries": [
+				"{@i You arrange tripwires, traps, and other devices so that you and your allies will know when an intruder approaches your campsite.}",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Key Proficiency:",
+							"entries": [
+								"{@item Thieves' Tools|PHB}"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Activation Time:",
+							"entries": [
+								"30分钟"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Component Cost:",
+							"entries": [
+								"None"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Duration:",
+							"entries": [
+								"8小时"
+							]
+						}
+					]
+				},
+				"你守护一个边长不超过50英尺的区域。每当有生物进入该区域，你和你在该区域内的盟友就会被唤醒，并且不能被惊动。你可以指定任何特定的生物，在不惊醒沉睡中的盟友的情况下，能够自由地在被守护的区域内移动。"
+			]
+		},
+		{
+			"name": "Break Free",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你在{@condition grappled}或{@condition restrained}的情况下开始你的回合时，你可以消耗一个优势模子并使用一个额外的行动来立即尝试挣脱引起这些情况的每个效果。掷出优势模子，并将掷出的数字加到每个效果的检查或蓄力上。"
+			]
+		},
+		{
+			"name": "Crippling Attack",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你用武器攻击击中一个生物时，你可以消耗一个优势模子来暂时废掉目标。你将优势模子加到攻击的伤害卷上，直到你的下一回合结束，目标不能做出反应，其速度减半。"
+			]
+		},
+		{
+			"name": "Defensive Roll",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你做一个灵巧的救赎动作时，你可以使用你的反应并消耗一个优势模子来把它加到救赎中。你可以在做出救赎之前或之后使用这个动作，但是在掷骰子的任何后果生效之前。在效果发生后，你可以作为同一反应的一部分移动到你速度的一半。"
+			]
+		},
+		{
+			"name": "Fast Footwork",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"{@note Replaces {@optfeature Evasive Footwork}}",
+				"当你移动时，你可以消耗一个优势模子，滚动模子并将所滚动的数字加入你的AC，直到你下一回合开始或你变得无法移动为止。"
+			]
+		},
+		{
+			"name": "Glancing Blow",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你的武器攻击没有击中目标，但又不是关键性失误时，你可以消耗一个优势模子来对目标进行闪击。目标受到的伤害等于你在优势模子上掷出的数字，而伤害类型则从你的武器可以造成的伤害中选择。"
+			]
+		},
+		{
+			"name": "Great Fortitude",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你对疾病、{@condition exhaustion}、毒药、或被{@condition paralyzed}或{@condition stunned}进行救赎时，你可以消耗一个优势模子，将其加入到卷轴中。你可以在做救赎之前或之后使用这个动作，但要在掷骰子的任何后果生效之前。"
+			]
+		},
+		{
+			"name": "Great Leap",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你进行跳高或跳远时，你可以消耗一个优势模子，滚动模子并将所滚动的数字加上你的熟练度加分来计算你覆盖的距离。这个额外的距离不需要花费你的动作，也不会引起机会攻击。"
+			]
+		},
+		{
+			"name": "Iron Will",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你对被{@condition charmed}或{@condition frightened}，或对受到精神伤害进行救赎时，你可以消耗一个优势模子，将其加入到卷轴中。你可以在做救赎之前或之后使用这个动作，但要在掷骰子的任何后果生效之前。"
+			]
+		},
+		{
+			"name": "Knock Away",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你试图{@action shove}一个生物时，你可以消耗一个优势模子，并把它加到你的力量({@skill Athletics})检定中。然后你可以尝试在原目标的5英尺内推另一个生物，作为同一动作的一部分。如果你的原始检定击败了该生物的竞争检定，你也会成功推倒第二个生物。"
+			]
+		},
+		{
+			"name": "Monster Expert",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你进行能力检定以获得你能看到的一个或多个敌对生物的信息时，你可以消耗一个优势模子，并将优势模子加入能力检定。"
+			]
+		},
+		{
+			"name": "Spring Attack",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你在你的回合中采取{@action Disengage}或{@action Dodge}的行动时，你可以使用你的额外行动来消耗一个优势模子并进行一次武器攻击。如果你命中了，将优势模子加入到攻击的伤害卷中。"
+			]
+		},
+		{
+			"name": "Survivalist",
+			"source": "martialpower",
+			"page": 8,
+			"featureType": [
+				"MV:B"
+			],
+			"entries": [
+				"当你进行智力（{@skill Nature}）、智慧（{@skill Animal Handling}）或智慧（{@skill Survival}）检查时，你可以消耗一个优势模子，并将优势模子加入能力检查。"
+			]
+		},
+		{
+			"name": "Defend the Line",
+			"source": "martialpower",
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"你对那些敢于攻击你的同伴的敌人进行报复。",
+				"当你周围5英尺内的生物对你的盟友进行攻击时，如果该盟友没有使用这种风格，你可以用你的反应对攻击的生物进行一次近战武器攻击。"
+			]
+		},
+		{
+			"name": "Earthsense",
+			"source": "martialpower",
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"你甚至能感觉到最微弱的震颤，让你看到别人看不到的东西。",
+				"你获得了10英尺范围内的震感，可以用来探测并确定任何来自与你接触的地面或物质的振动源。震感不能用于探测飞行或无实体的生物。"
+			]
+		},
+		{
+			"name": "Hammer Hands",
+			"source": "martialpower",
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"你把你的体重投入到每一次攻击中，用如此大的力量打击，把你的敌人赶到你面前。",
+				"每回合一次，当你用近战武器攻击击中一个生物时，你可以将其移动到一个无人的空间，只要目标不比你大一码。"
+			]
+		},
+		{
+			"name": "Undaunted Stride",
+			"source": "martialpower",
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"你优雅地越过和越过阻碍你的敌人的障碍物。",
+				"你获得与你的步行速度相等的攀爬和游泳速度。"
+			]
+		},
+		{
+			"name": "Vaulting Expert",
+			"source": "martialpower",
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"你摆出一个平衡的姿势，准备随时利用你的武器攻击力飞跃而去。",
+				"你的跳跃距离加倍，每回合一次，当你用近战武器攻击击中一个生物时，你可以移动到你周围5英尺内无人的空间，而不需要消耗移动力或引起机会攻击。"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Battle Ferocity",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 10,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level barbarian optional feature (adds to {@classFeature Reckless Attack|Barbarian|PHB|2})}",
+				"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+				{
+					"type": "entries",
+					"name": "Maneuvers",
+					"entries": [
+						"你会两种演习，这些演习从战士的战斗大师原型可用的演习列表中选择。你在6级、10级和14级时可以额外学习一种你选择的演习。每次你学习一个新的动作时，你也可以用一个不同的动作代替你所知道的一个动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superiority Dice",
+					"entries": [
+						"与其说你有一个优势骰子池，不如说你的机动性是由纯粹的愤怒和鲁莽的放弃所推动的。当你在战斗中使用你的鲁莽攻击特性时，你可以放弃在攻击卷上获得优势，而是获得一个优势骰子，一个（%0%），你可以在下一回合开始前随时使用。这个模子在9级时变成（%1%），在15级时变成（%2%）。从5级开始，你从这个特性中获得两个骰子，而不是一个。然后你在11级时获得三个骰子，在17级时获得四个骰子。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量修改器。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Combat Expertise",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 10,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level fighter optional feature}",
+				"你靠的是一种特殊的骰子--优势骰子--来推动的机动性。",
+				{
+					"type": "entries",
+					"name": "Maneuvers",
+					"entries": [
+						"你从战斗大师原型可用的动作中选择三个动作进行学习。许多演习以某种方式加强攻击。你每次攻击只能使用一个演习。",
+						"你在第7、10、15和18级时可以额外学习一种你选择的演习。每次你学习一个新动作时，你也可以用一个不同的动作代替你所知道的一个动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superiority Dice",
+					"entries": [
+						"你有两个优势骰子，它们是{@dice d6}的。当你使用一个优势骰子时，它就会被消耗掉。当你完成短期或长期的休息时，你会重新获得你所有消耗的优势骰子。你在7级时获得另一个优越性骰子，在15级时再次获得。此外，你的优势骰子在10级时变成{@dice d8}，在18级时变成{@dice d10}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Archetype Maneuvers (Optional)",
+					"entries": [
+						"当你在3级选择你的武术原型时，你会根据你选择的原型学习一个额外的演习，如下表所示。对于自制的原型，DM可以选择一个最适合该原型的可能演习列表。",
+						{
+							"type": "table",
+							"caption": "Archetype Maneuvers",
+							"colLabels": [
+								"Archetype",
+								"Maneuver Learned"
+							],
+							"colStyles": [
+								"col-2 text-left",
+								"col-10 text-left"
+							],
+							"rows": [
+								[
+									"弧形射手",
+									"{@optfeature Evasive Footwork}, {@optfeature Precision Attack}, or {@optfeature Pushing Attack}"
+								],
+								[
+									"Banneret",
+									"{@optfeature Commander's Strike}, {@optfeature Maneuvering Attack}, or {@optfeature Rally}"
+								],
+								[
+									"骑士",
+									"{@optfeature Lunging Attack}, {@optfeature Maneuvering Attack}, or {@optfeature Parry}"
+								],
+								[
+									"冠军",
+									"您选择的任何动作"
+								],
+								[
+									"回声骑士",
+									"{@optfeature Evasive Footwork}, {@optfeature Feinting Attack}, or {@optfeature Lunging Attack}"
+								],
+								[
+									"恶魔骑士",
+									"{@optfeature Distracting Strike}, {@optfeature Menacing Attack}, or {@optfeature Pushing Attack}"
+								],
+								[
+									"Psi骑士",
+									"{@optfeature Distracting Strike}, {@optfeature Lunging Attack}, or {@optfeature Pushing Attack}"
+								],
+								[
+									"符文骑士",
+									"{@optfeature Menacing Attack}, {@optfeature Pushing Attack}, or {@optfeature Trip Attack}"
+								],
+								[
+									"武士",
+									"{@optfeature Evasive Footwork}, {@optfeature Feinting Attack}, or {@optfeature Riposte}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ki Maneuvers",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 10,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level monk optional feature}",
+				"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+				{
+					"type": "entries",
+					"name": "Maneuvers",
+					"entries": [
+						"你从战斗大师原型可用的动作中选择两个动作进行学习。许多演习会以某种方式加强攻击。你每次攻击只能使用一个演习。",
+						"你在6级、11级和17级时可以额外学习一种你选择的演习。每次你学习一个新动作时，你也可以用一个不同的动作代替你所知道的一个动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superiority Dice",
+					"entries": [
+						"你可以通过花费1个基点来使用一个演习，而不是拥有一个优势骰子池。如果该演习让你掷出一个优势骰子，你就掷出一个武术骰子。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"如果你使用的演习需要你的目标做一个蓄力动作来抵抗演习的效果，蓄力动作的DC等于你的奇数蓄力DC。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Roguish Exploits",
+			"source": "martialpower",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 11,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level and higher rogue optional feature}",
+				"你要学习由特殊骰子推动的机动性，这些骰子被称为优势骰子。",
+				{
+					"type": "entries",
+					"name": "Maneuvers",
+					"entries": [
+						"你从战斗大师原型可用的动作中选择两个动作进行学习。许多演习以某种方式加强攻击。你每次攻击只能使用一个演习。",
+						"你在6级、9级、13级和17级时可以额外学习一种你选择的演习。每次你学习一个新动作时，你也可以用一个不同的动作代替你所知道的一个动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superiority Dice",
+					"entries": [
+						"你不是有一个优势骰子池，而是从你的偷袭功能所使用的伤害骰子中抽取。在你的回合中，如果你还没有使用你的偷袭功能，你可以选择从你的偷袭骰子池中减去（%0%），只要它至少还有2D6个骰子，这将持续到你下一个回合开始。然后你会获得一个单一的优势骰子，即{@dice d6}，在它在你的回合开始时消失之前，你可以消耗它来使用一个机动动作。",
+						"作为一个额外的选择，DM可以授予你一个单一的优势模子，一个（%0%），它是用来在战斗或正常回合顺序之外的演习中使用的。在你完成短期或长期的休息后，你会重新获得这个模子。你在7级时获得另一个优势模子，在15级时再获得一个。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Savage Leaps",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 12,
+			"level": 1,
+			"entries": [
+				"{@note 1st-level barbarian optional feature (adds to {@classFeature Rage|Barbarian||1})}",
+				"在你愤怒的时候，你的跳跃距离会增加三倍。"
+			]
+		},
+		{
+			"name": "Primal Conditioning",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 12,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level barbarian optional feature (adds to {@classFeature Rage|Barbarian||1})}",
+				"在你愤怒的时候，你在所有的智慧检查中都有优势。"
+			]
+		},
+		{
+			"name": "Primal Expert",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 12,
+			"level": 9,
+			"entries": [
+				"{@note 9th-level and higher barbarian optional feature}",
+				"你与自然的联系增强了你进行某些活动的能力。你可以从以下的好处中选择一个，然后在13级和17级再选择一个。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "Druidic Rituals|Barbarian||9|martialpower"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "Primal Wrath|Barbarian||9|martialpower"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "Skill Training|Barbarian||9|martialpower"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Druidic Rituals",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 12,
+			"level": 9,
+			"entries": [
+				"从以下列表中选择两个法术。{@spell animal messenger}, {@spell detect magic}, {@spell locate animals or plants}, 或 {@spell speak with animals}。你可以将所选的法术作为仪式来施放。智慧是你对它们的施法能力。"
+			]
+		},
+		{
+			"name": "Primal Wrath",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 12,
+			"level": 9,
+			"entries": [
+				"你的运载能力（包括最大负荷和最大升力）是双倍的，而且在你狂暴时又是双倍。此外，你的攻击对物体和结构造成双倍伤害。"
+			]
+		},
+		{
+			"name": "Skill Training",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 12,
+			"level": 9,
+			"entries": [
+				"选择一个技能。如果你还没有选择的技能，你将获得该技能的熟练度，并且你可以在使用该技能进行能力检查时增加双倍的熟练度。",
+				"此外，你还能获得对你所选择的一种工具的熟练程度。"
+			]
+		},
+		{
+			"name": "Battle Fervor",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 2,
+			"entries": [
+				"{@note 2nd-level fighter optional feature (alternative to {@classFeature Action Surge|Fighter||2})}",
+				"在战斗中，你在每个回合获得一个额外的行动。该行动只能用于采取{@action Attack}（仅一个{@action grapple}或{@action shove}）、{@action Disengage}、{@action Help}、{@action Search}或{@action Use an Object}行动。如果你使用《地下城管理指南》中介绍的行动选项，你也可以使用这个功能来进行（%7%）、（%8%）、（%9%）或（%10%）的行动。",
+				"你可以使用这个额外动作的次数与你的熟练度加成相等。当你完成短时或长时休息时，你会恢复所有已消耗的使用。",
+				"从17级开始，当你掷出主动权时，你可以立即移动到你的速度，并采取本特征前面列出的行动之一。"
+			]
+		},
+		{
+			"name": "Show of Skill",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 5,
+			"entries": [
+				"{@note 5th-level fighter optional feature}",
+				"你将你的武术天赋与驾驭世界所需的柔和技能相融合。如果你在使用{@skill Acrobatics}、{@skill Athletics}、{@skill Intimidation}或{@skill Performance}技能进行检查时持有武器，你将获得相当于你熟练度奖励一半的奖励。你用你的武器来协助你的检查，例如用杖跳杆，用剑来帮助你的平衡，或者用你的血腥的甩棍来威胁敌人。"
+			]
+		},
+		{
+			"name": "Additional Fighting Styles",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 6,
+			"entries": [
+				"{@note 6th-level and higher fighter optional feature (replaces extra Ability Score Improvements)}",
+				"你的战斗风格拓宽了。在6级和14级时，你可以从你在1级时获得的（%0%）特性中选择一个额外的选项。"
+			]
+		},
+		{
+			"name": "Legendary Resistance",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 9,
+			"entries": [
+				"{@note 9th-level and higher fighter optional feature (replaces {@classFeature Indomitable|Fighter||9})}",
+				"如果你的救赎失败，你可以选择成功（不需要反应）。如果你在死亡救赎中使用此功能，它将被视为在（%0%）上滚动15。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个长时间的休息。你可以在13级开始的长时间休息之间使用这个功能两次，在17级开始的长时间休息之间使用三次。"
+			]
+		},
+		{
+			"name": "Mundane Expert",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 9,
+			"entries": [
+				"{@note 9th-level and higher fighter optional feature}",
+				"你作为战士的经历提高了你对某些世俗活动的熟练程度。从以下好处中选择一个，然后在13和17级时再选择一个。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "Endless Stamina|Fighter||9|martialpower"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "Remarkable Athlete|Fighter||9|martialpower"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "Skill Training|Fighter||9|martialpower"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Endless Stamina",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 9,
+			"entries": [
+				"你的步行速度增加5，并获得与你的步行速度相等的攀爬速度和游泳速度",
+				"此外，你对疲惫的拯救有优势，而且每当你完成一个短暂的休息，你的疲惫程度（如果有的话）会减少1。"
+			]
+		},
+		{
+			"name": "Remarkable Athlete",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 9,
+			"entries": [
+				"你可以将你的熟练度加成的一半（四舍五入）加到你做的任何没有使用熟练度加成的力量、灵巧或体质检查中。",
+				"此外，当你进行跑步跳远时，你能覆盖的距离会增加等于你的力量修正值的英尺数。"
+			]
+		},
+		{
+			"name": "Skill Training",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 9,
+			"entries": [
+				"选择一个技能。如果你还没有选择的技能，你将获得该技能的熟练度，并且你可以在使用该技能进行能力检查时增加双倍的熟练度。",
+				"选择一个技能。如果你还没有选择的技能，你将获得该技能的熟练度，并且你可以在使用该技能进行能力检查时增加双倍的熟练度。"
+			]
+		},
+		{
+			"name": "Resolving Vigor",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 13,
+			"level": 9,
+			"entries": [
+				"{@note 9th-level and higher fighter optional feature (alternative to {@classFeature Indomitable|Fighter||9}，加到{@classFeature Second Wind|Fighter||1})}",
+				"你的 \"第二风 \"功能会随着你在这个等级中的等级提高而增加力量。",
+				"从9级开始，当你使用你的第二风时，你的（%0%）等级，如果有的话，会减少1。 任何影响你的毒药也会立即结束。",
+				"从13级开始，即使你是（%0%），你也可以使用你的第二风。当你这样做时，造成该状况的效果立即在你身上结束，但你只恢复一半的命中率",
+				"从17级开始，你可以在两次休息之间使用你的第二风。"
+			]
+		},
+		{
+			"name": "Armored Warrior",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 1,
+			"entries": [
+				"{@note 1st-level monk optional feature (alternative to {{@classFeature Unarmored Defense|Monk||1})}}",
+				"你获得对轻甲、中甲和盾牌的熟练度。穿着这样的盔甲或挥舞盾牌并不影响（%0%）或其他通常需要你不穿盔甲的僧侣特征。"
+			]
+		},
+		{
+			"name": "Battle Hardened",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 1,
+			"entries": [
+				"{@note 1st-level monk optional feature}",
+				"你的命中率是{@dice d10}s，而不是d8s。你在第1级的命中率是10+你的体质修正值，在更高的级别，你的命中率是1d10（或6）+你的体质修正值，在第1级之后的每一个僧侣级别。"
+			]
+		},
+		{
+			"name": "Rapid Strikes",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 1,
+			"entries": [
+				"{@note 1st-level and higher monk optional feature (replaces {@classFeature Flurry of Blows|Monk||2}和{@classFeature Martial Arts|Monk||1}的第三个好处。",
+				"你的僧侣武器和徒手打击在双武器战斗中被视为轻型武器。此外，当你参与双武器战斗并以徒手攻击作为第二击时，你可以在伤害卷上加上你的能力修改值。",
+				"在2级时，你不再获得 \"连击 \"功能，而是获得以下详细能力",
+				{
+					"type": "refClassFeature",
+					"classFeature": "Centered Flurry|Monk||2|martialpower"
+				},
+				"如果你的桌子使用一个变体来移除双武器战斗的额外行动要求（正如本文前面所详述的那样），那么使用这个能力要花费它自己的额外行动。"
+			]
+		},
+		{
+			"name": "Centered Flurry",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 2,
+			"entries": [
+				"在使用武术特征进行额外的徒手攻击后，你可以花费1个气点，使用相同的奖励动作进行第二次徒手攻击。你每回合只能使用此功能一次"
+			]
+		},
+		{
+			"name": "Strength of Body",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 1,
+			"entries": [
+				"{@note 1st-level monk optional feature}",
+				"任何要求你在掷骰子时使用或加上你的灵巧修饰的僧侣特征，现在可以使用你的力量修饰来代替。"
+			]
+		},
+		{
+			"name": "Weapons Expert",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 1,
+			"entries": [
+				"{@note 1st level monk optional feature (enhances {@classFeature Martial Arts|Monk||1})}",
+				"你获得对所有武术武器的熟练度。所有的武器，包括临时制作的武器，对你来说都算作僧侣武器。",
+				"作为一个额外的变体，你可以限制武术的第一个好处，使其不适用于具有重型或特殊属性的武器，但在其他方面仍算作僧侣武器。"
+			]
+		},
+		{
+			"name": "Enlightened Knowledge",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 2,
+			"entries": [
+				"{@note 2nd-level monk optional feature}",
+				"你可以将你的熟练度加成的一半，向下取整，加到你做的任何没有使用你的熟练度加成的智力或智慧检查。"
+			]
+		},
+		{
+			"name": "Careful Stride",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 14,
+			"level": 2,
+			"entries": [
+				"{@note 2nd-level monk optional feature (replaces {@classFeature Step of the Wind|Monk||2})}",
+				"你可以在你的回合中采取{@action Disengage}或{@action Dash}的行动作为奖励行动，你的跳跃距离在该回合中加倍。"
+			]
+		},
+		{
+			"name": "Grasp the Wind",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level monk optional feature}",
+				"当你被一个生物强行移动5英尺或更远时，你可以使用你的反应来移动到相同距离内你选择的一个无人的空间。这种移动不会引起机会攻击。如果你的速度为0，你就不能使用这个特性。"
+			]
+		},
+		{
+			"name": "Stance of Power",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 4,
+			"entries": [
+				"{@note 4th-level monk optional feature}",
+				"作为一个额外的动作，你可以花费2个奇异点来支撑自己对抗来袭的攻击。你获得相当于你僧侣等级的一半加上你的力量或智慧修饰（你选择）的临时命中率，持续1分钟。"
+			]
+		},
+		{
+			"name": "Mind over Body",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 2,
+			"entries": [
+				"{@note 2nd-level monk optional feature}",
+				"在进行力量检查或蓄力攻击时，你可以用你的智慧修正值代替你的力量修正值。"
+			]
+		},
+		{
+			"name": "Deflect Blows",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level monk optional feature (alternative to {@classFeature Deflect Missiles|Monk||3})}",
+				"当你被近战武器攻击击中时，你可以使用你的反应来招架对手。当你这样做时，你从攻击中受到的伤害会减少{@dice 1d10}+你的力量或灵巧修改器+你的一半僧侣等级。如果你将伤害降低到0，并且目标是大型或小型的，你可以花费1个奇数来强迫目标做一个力量救赎动作。如果救赎失败，你可以将目标推到离你10英尺远的直线上，或者将其击倒（1%）。从11级开始，你可以对巨大或更小的生物使用这个能力，而中等和更小的生物在救赎上有劣势。"
+			]
+		},
+		{
+			"name": "Deflect Magic",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level monk optional feature (alternative to {@classFeature Deflect Missiles|Monk||3})}",
+				"当你被远程法术攻击或只针对你的远程法术击中时，你可以使用你的反应来偏转或接住投射物或光束。当你这样做时，你从法术中受到的伤害会减少（%0%）+你的智慧修改器+你的僧侣等级。",
+				"如果你把伤害降低到0，如果你至少有一只手是空闲的，你就可以抓住这个咒语。如果你以这种方式接住了一个咒语，你可以花费1个基点用你刚刚接住的魔法进行一次范围性的法术攻击（范围60英尺），作为同一反应的一部分。无论你的法术能力如何，你都能熟练地进行这一攻击，并且在攻击卷中使用你的智慧修正值。攻击的伤害等于你的武术模子+你的智慧修正值，其伤害类型与原始法术的伤害相同。"
+			]
+		},
+		{
+			"name": "Ki-Inhibiting Strikes",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 5,
+			"entries": [
+				"{@note 5th-level monk optional feature (replaces {@classFeature Stunning Strike|Monk||5})}",
+				"你可以以各种方式干扰对手体内的气的流动。当你用近战武器攻击击中一个生物时，你可以花费1点气力来使用以下能力之一。",
+				{
+					"type": "refClassFeature",
+					"classFeature": "Dazing Strike|Monk||5|martialpower"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "Isolating Strike|Monk||5|martialpower"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "Restraining Strike|Monk||5|martialpower"
+				}
+			]
+		},
+		{
+			"name": "Dazing Strike",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 5,
+			"entries": [
+				"你让目标的思想超载，扰乱其行动能力。目标必须在宪法或智慧救赎上成功（由你选择），否则就会发呆，直到你下一回合结束。",
+				"在发呆时，生物不能做出反应，在它的回合中，它可以使用一个行动或一个额外的行动，不能同时使用；此外，不管它的能力或魔法物品如何，生物在它的回合中不能进行多于一次的近战或远程攻击，也不能专注于法术或其他需要的效果。如果一个生物同时免疫于（%0%），那么它就免疫于发呆。"
+			]
+		},
+		{
+			"name": "Isolating Strike",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 5,
+			"entries": [
+				"你使目标的感官过载，阻止他们正常运作。目标必须在宪法或智慧救赎上成功（由你选择），否则会变得（%0%）和（%1%），直到你下一回合结束。"
+			]
+		},
+		{
+			"name": "Restraining Strike",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 5,
+			"entries": [
+				"你使目标的关节和肌肉超负荷，使其无法移动。目标必须在灵巧或体质救赎上成功（由你选择），否则会被（%0%），直到你下一个回合结束。"
+			]
+		},
+		{
+			"name": "Unfaltering Soul",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 7,
+			"entries": [
+				"{@note 7th-level monk optional feature (alternative to {@classFeature Stillness of Mind|Monk||7})}",
+				"如果你在你的回合开始时是{@condition incapacitated}，并且至少有1个命中率，你可以使用这个功能立即结束造成你自己的那个状况的效果（不需要反应）。一旦你这样做了，再次使用此功能需要花费2个基点，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Wind Walker",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 15,
+			"level": 9,
+			"entries": [
+				"{@note 9th-level monk optional feature (enhances {@classFeature Step of the Wind|Monk||2})}",
+				"当你使用 \"风之步 \"时，你可以放弃你最多一半的移动量来代替你放弃的距离飞行。如果你在空中结束飞行并且没有其他东西支撑你，你就会坠落。"
+			]
+		},
+		{
+			"name": "Effortless Deflection",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 11,
+			"entries": [
+				"{@note 11th-level monk optional feature (enhances {@classFeature Deflect Missiles|Monk||3})}",
+				"使用偏转导弹不再需要你的反应。"
+			]
+		},
+		{
+			"name": "Diamond Body",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 13,
+			"entries": [
+				"{@note 13th-level monk optional feature (enhances {@classFeature Patient Defense|Monk||2})}",
+				"当你使用 \"病人防御 \"时，你也会获得对你选择的一种伤害类型的抗性，直到你下一回合开始。"
+			]
+		},
+		{
+			"name": "Extra Attack (2)",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 11,
+			"entries": [
+				"{@note 11th-level monk optional feature (enhances {@classFeature Extra Attack|Monk||5})}",
+				"每当你在你的回合中采取{@action Attack}行动时，你可以攻击三次。"
+			]
+		},
+		{
+			"name": "Spider Technique",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 15,
+			"entries": [
+				"{@note 15th-level monk optional feature (adds to {@classFeature Unarmored Movement|Monk||2})}",
+				"你获得了沿着天花板倒立移动的能力，同时在你的转弯处腾出双手，而在移动过程中不会摔倒。"
+			]
+		},
+		{
+			"name": "Ki Magic",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 18,
+			"entries": [
+				"{@note 18th-level monk optional feature (alternative to {@classFeature Empty Body|Monk||18})}",
+				"你对气的掌握赋予你有限的法术能力。你有5个特殊的法术点，可以为这种法术的施展提供动力，当你完成一个长时间的休息时，你会恢复所有消耗的法术点。任何使用这种能力施展的法术都是在其最低等级下施展的，使用你的 \"气 \"救赎DC作为其法术救赎DC，并且不需要任何物质成分。",
+				"有了这个功能，你可以施放{@spell dispel magic}（花费2分）、{@spell feign death}（1分）、{@spell freedom of movement}（2分）、{@spell gentle repose}（1分）、{@spell lesser restoration}（2分）、{@spell protection from poison}（1分）或{@spell see invisibility}（1分）。"
+			]
+		},
+		{
+			"name": "Perfect Soul",
+			"source": "martialpower",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 20,
+			"entries": [
+				"{@note 20th-level monk optional feature (replaces {@classFeature Perfect Self|Monk||20})}",
+				"你已经成为纪律和专注的活典范。你的灵巧和智慧的分数增加了4，你的这些分数的最大值现在是24。"
+			]
+		},
+		{
+			"name": "Hunter's Quarry",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 1,
+			"entries": [
+				"{@note 1st-level ranger optional feature (replaces {@classFeature Favored Enemy|Ranger||1}和{@spell hunter's mark}的法术，与{@classFeature Foe Slayer|Ranger||20}一起工作)}。",
+				"当你用攻击卷击中一个生物时，你可以召唤你与自然的神秘纽带，将目标标记为你所喜爱的敌人，持续1分钟（不需要集中注意力）。如果目标在此效果结束前下降到0点，你可以在接下来的回合中用攻击卷击中他们后，在剩余的持续时间内标记一个新的生物。",
+				"在你的每个回合中，你第一次击中受宠的敌人并对其造成伤害，包括你标记它时，你可以使该伤害增加（%0%）。",
+				"你可以使用这个功能的次数与你的熟练度加成相等，当你完成一个长时间的休息时，你会恢复所有消耗的使用。",
+				"这个功能的额外伤害在你达到这个等级的某些级别时增加：在6级时增加到（%0%），在14级时增加到（%1%）。"
+			]
+		},
+		{
+			"name": "Poultices",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 3,
+			"entries": [
+				"{@note 3rd-level and higher ranger optional feature (alternative to {@classFeature Primeval Awareness|Ranger||3}}",
+				"你可以制作特殊的草药膏药，其治疗能力可与某些药水相媲美。你可以花1小时收集草药，并使用经过处理的绷带制作草药膏药，其数量相当于你的智慧修正值（最少1）。你可以在同一时间携带与你的智慧修正值相同数量的膏药（最少1）。除了你之外，任何人都不能使用你所创造的药膏。24小时后，任何你没有使用过的药膏都会失去药效。",
+				"如果你花了1分钟给一个受伤的人形生物贴上你的膏药，从而消耗了它的使用时间，那么这个生物每有两个游侠等级就会恢复（%0%）的命中率（四舍五入）。",
+				"在使用这一功能时，请考虑同时使用下面详述的可选功能。"
+			]
+		},
+		{
+			"name": "Natural Antivenom",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 9,
+			"entries": [
+				"{@note 9th-level ranger optional feature}",
+				"你对毒药的救赎有优势，对毒药伤害有抵抗力。此外，你可以用你的一个膏药来治疗你所使用的生物的一个（%0%）效果，除了恢复命中率之外。"
+			]
+		},
+		{
+			"name": "Remarkable Athlete",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 16,
+			"level": 10,
+			"entries": [
+				"{@note 10th-level ranger optional feature (alternative to {@classFeature Deft Explorer Improvement|Ranger||10|TCE|Tireless})}",
+				"你可以将你的熟练度加成的一半（四舍五入）加到你所做的任何没有使用你的熟练度加成的力量、灵巧或宪法检查中。此外，当你进行跑步跳远时，你能覆盖的距离会增加相当于你的力量修正值的英尺数。"
+			]
+		},
+		{
+			"name": "Wilderness Survivor",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 17,
+			"level": 13,
+			"entries": [
+				"{@note 13th-level ranger optional feature}",
+				"你可以使用你的一种膏药，使你所应用的生物的（%0%）等级降低1，此外还有其他效果。此外，每当你完成一次短暂的休息，你的疲惫等级（如果有的话）会降低1。"
+			]
+		},
+		{
+			"name": "Natural Predator",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 17,
+			"level": 8,
+			"entries": [
+				"{@note 8th-level ranger optional feature (alternative to {@classFeature Land's Stride|Ranger||8})}",
+				"你的野外生存技能使你能在对手面前占得先机。你在主动性卷轴上有优势，在追踪生物的检查上也有优势，或者在旅行中防止迷路。此外，当你掷出主动权而不是（%0%）时，你可以在不引起机会攻击的情况下移动到自己速度的一半。"
+			]
+		},
+		{
+			"name": "Ultimate Slayer",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 17,
+			"level": 20,
+			"entries": [
+				"{@note 20th-level ranger optional feature (replaces {@classFeature Foe Slayer|Ranger||20})}",
+				"你成为一个无与伦比的猎杀敌人的猎人。在你的每个回合中，你都可以在你的攻击卷或伤害卷中加入你的智慧修正值。你可以选择在卷轴之前或之后使用这个功能，但在卷轴的任何效果被应用之前。"
+			]
+		},
+		{
+			"name": "Blunt Force",
+			"source": "martialpower",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 17,
+			"level": 1,
+			"entries": [
+				"{@note 1st-level rogue optional feature (adds to {@class Sneak Attack|Rogue||1})}",
+				"你的偷袭可以用在你单手挥舞的任何简单近战武器的攻击上。"
+			]
+		},
+		{
+			"name": "Canny Quickstep",
+			"source": "martialpower",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 17,
+			"level": 5,
+			"entries": [
+				"{@note 5th-level rogue optional feature (alternative to {{@classFeature Uncanny Dodge|Rogue||5}})}",
+				"在一次攻击击中或未击中你之后，你可以使用你的反应来移动到你速度的一半，而不会引起机会攻击。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "martialpower",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 17,
+			"level": 5,
+			"entries": [
+				"{@note 5th-level rogue optional feature}",
+				"每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Mental Gymnastics",
+			"source": "martialpower",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 17,
+			"level": 15,
+			"entries": [
+				"{@note 15th-level rogue optional feature (enhances {@classFeature Slippery Mind|Rogue||15})}",
+				"如果你在获得 \"狡猾的头脑 \"特征时已经精通 \"智慧救赎\"，你会获得 \"魅力救赎 \"的熟练度。",
+				"此外，你对被{@condition charmed}免疫，除非你允许，否则你的思想不能被魔法或其他手段所读取。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Sustained by Rage",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 13,
+			"subclassShortName": "Berserker",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@note 3rd-level Berserker optional feature (enhances {@subclassFeature Frenzy|Barbarian||Berserker||3})}",
+				"在你愤怒的时候，你不会受到{@condition exhaustion}的任何不良影响。当你的愤怒结束时，这些影响会恢复。"
+			]
+		},
+		{
+			"name": "Unbridled Rage",
+			"source": "martialpower",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 13,
+			"subclassShortName": "Berserker",
+			"subclassSource": "PHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@note 6th-level Berserker optional feature (enhances {@subclassFeature Mindless Rage|Barbarian||Berserker||6})}",
+				"愤怒时你不能是（%0%）、（%1%）或（%2%）。即使你被麻痹、石化或眩晕，你也可以进入狂暴状态，而且在狂暴的持续时间内，来自任何这些条件的影响都会被暂停（不需要行动）。"
+			]
+		},
+		{
+			"name": "Brutish Durability",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 14,
+			"subclassShortName": "Champion",
+			"subclassSource": "PHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@note 7th-level Champion optional feature (replaces {@subclassFeature Remarkable Athlete|Fighter||Champion||7})}",
+				"你的坚韧使你能够抵挡住那些会摧毁他人的攻击。每当你做一个救命的动作时，掷出{@dice 1d4}，然后把这个骰子加到你的救命动作总数上。如果将此奖励应用于死亡救赎，会使救赎总数增加到20或更高，你就会获得在{@dice d20}上掷出20的好处。"
+			]
+		},
+		{
+			"name": "Spellweaver",
+			"source": "martialpower",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"page": 14,
+			"subclassShortName": "Eldritch Knight",
+			"subclassSource": "PHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@note 7th-level Eldritch Knight optional feature (replaces {@subclassFeature War Magic|Fighter||Eldritch Knight||7})}",
+				"在你的每个回合中，当你采取{@action Attack}行动时，你可以施放一个巫师咒语来代替你的一次攻击。"
+			]
+		},
+		{
+			"name": "Combat Training",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 17,
+			"subclassShortName": "Beast master",
+			"subclassSource": "PHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@note 7th-level Beast Master optional feature (replaces {@subclassFeature Exceptional Training|Ranger||Beast Master||7})}",
+				"在你的每个回合中，当你的野兽伙伴没有攻击时，你可以命令它在它的回合中采取（%0%）、（%1%）、（%2%）、（%3%）或（%4%）的行动（不需要行动）。",
+				"此外，为了克服对非魔法攻击和伤害的抵抗力和免疫力，野兽的攻击现在被算作魔法。"
+			]
+		},
+		{
+			"name": "Beastly Coordination",
+			"source": "martialpower",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"page": 17,
+			"subclassShortName": "Beast master",
+			"subclassSource": "PHB",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@note 15th-level Beast Master optional feature (alternative to {@subclassFeature Share Spells|Ranger||Beast Master||15})}",
+				"当你能看到的攻击者用攻击击中你的野兽伙伴时，你可以喊出一个警告。如果你的野兽伙伴能听到你的声音，它可以用它的反应将攻击对它的伤害减半。"
+			]
+		},
+		{
+			"name": "First Strike",
+			"source": "martialpower",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 17,
+			"subclassShortName": "Assassin",
+			"subclassSource": "PHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@note 3rd-level Assassin optional feature (enhances {@subclassFeature Assassinate|Rogue||Assassin||3})}",
+				"如果你在战斗的第一个回合用武器攻击击中了一个生物，你可以选择将这一击作为关键一击。一旦你这样做了，你就不能再这样做了，直到你完成一个长时间的休息。"
+			]
+		}
+	],
+	"book": [
+		{
+			"name": "Martial Power",
+			"id": "martialpower",
+			"source": "martialpower",
+			"published": "2021-07-07",
+			"group": "homebrew",
+			"author": "badooga",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MartialPower/Cover-MartialPower.webp"
+			},
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"Using This Document",
+						"Other Homebrew",
+						"Credits"
+					]
+				},
+				{
+					"name": "General Options",
+					"headers": [
+						"Expanded Rules",
+						{
+							"header": "Action Options",
+							"depth": 1
+						},
+						{
+							"header": "Cleaving Through Creatures",
+							"depth": 1
+						},
+						{
+							"header": "Fighting Styles",
+							"depth": 1
+						},
+						{
+							"header": "Flanking Revised",
+							"depth": 1
+						},
+						{
+							"header": "Grappling and Shoving",
+							"depth": 1
+						},
+						{
+							"header": "Two-Weapon Fighting",
+							"depth": 1
+						},
+						{
+							"header": "Weapon Effects",
+							"depth": 1
+						},
+						"Feats",
+						{
+							"header": "Feat Changes",
+							"depth": 1
+						},
+						{
+							"header": "New Feats",
+							"depth": 1
+						},
+						"Martial Practices",
+						{
+							"header": "Acquiring a Practice",
+							"depth": 1
+						},
+						{
+							"header": "Reading a Practice",
+							"depth": 1
+						},
+						{
+							"header": "Sample Practices",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Maneuvers Expanded",
+					"headers": [
+						"New Maneuvers",
+						"Accessing Maneuvers",
+						{
+							"header": "General Features",
+							"depth": 1
+						},
+						{
+							"header": "Class-Specific Features",
+							"depth": 1
+						},
+						"Other Variants",
+						{
+							"header": "Action Options",
+							"depth": 1
+						},
+						{
+							"header": "Maneuver Variants",
+							"depth": 1
+						},
+						{
+							"header": "Prepared Maneuvers",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Optional Class Features",
+					"headers": [
+						"Barbarian",
+						"Fighter",
+						"Monk",
+						"Ranger",
+						"Rogue"
+					]
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "martialpower",
+			"source": "martialpower",
+			"data": [
+				{
+					"type": "section",
+					"name": "Introduction",
+					"page": 1,
+					"entries": [
+						"盔甲和盾牌，刀剑和弓箭，隐蔽和狡猾，战术和指挥，所有这些都是战士的工具。一个战士可能会偏爱这些资产中的某些，而不是其他，这取决于训练和倾向性。所有传奇战士的武功都发展到如此程度，他们的能力与魔法能力相当。这样的战士总是在寻找一种优势或一种技术，以体现他们的战斗方式。",
+						"这就是你将在本文件中找到的内容。",
+						"这是一本关于强大的行为和狡猾的技巧的手册。在它的页面中，有赋予武者角色的新特性，以及填补你作为野蛮人、战士、僧侣、流氓或其他武者角色的新选项。非武术类的成员可能会在这些页面中找到合适的特技，但其他的都是为武术角色准备的。它旨在扩大你在游戏中的武术视野。",
+						{
+							"type": "entries",
+							"name": "Using This Document",
+							"page": 1,
+							"entries": [
+								"本文档是D&D第四版中武术力量系列的精神继承者，为武术角色提供了新的和改进的选项。本文件不包含任何类别或子类别，而是介绍了新的特技、演习、可选的类别特征和变体规则，以加强已有的武术角色构建。",
+								"除非另有说明，本文件中的每个选项都是独立的。你可以从新的动作中进行挑选，从选择的特技中获得灵感，或者允许一两个新的动作选项，所有这些都不必担心与文件中其他部分的兼容性或互动性问题。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Other Homebrew",
+							"page": 1,
+							"entries": [
+								"你应该看看我在{@link GM Binder|https://www.gmbinder.com/profile/badooga}或{@link Google Drive|https://drive.google.com/drive/u/2/folders/1jr6F4BLbOAfKQ_EtUQyZ6aa_3jijp3gn}上的其他自制作品。特别是，看看下面的自制酒。",
+								{
+									"type": "list",
+									"items": [
+										"我的{@link Warlord|https://www.gmbinder.com/share/-M6rRBBBIFlQQuYSdWgM}是对深受喜爱的第四版同名类别的一种尝试。你选择的原型允许你挥舞你的智力、智慧或魅力，以各种不同的方式支持你的盟友。",
+										"我的{@link Feats for Skills|https://www.gmbinder.com/share/-MCD_mtKgoornNoGEQzN}和{@link Feats for Tools|https://www.gmbinder.com/share/-MAcPWstQ1_hNxmnlFdR}是世俗的选择，在战斗中和战斗外都能给武将们带来额外的技巧。两者的灵感都来自于一套从未正式出版的{@i Unearthed Arcana}版本，并将其作为一个模型。",
+										"由FungalBrews制作的{@link Warrior's Codex|https://www.gmbinder.com/share/-LTuQ9tRb_ZGFIfKLno4}是一个大型补充，包含了对武器和盔甲系统的全面改变，大量新的子类，坐骑、毒药和其他供陆军使用的世俗装备的规则，以及更多。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Credits",
+							"page": 1,
+							"entries": [
+								"与本文件相关的每件艺术品都取自官方的D&D第四版书籍，在Wizards of the Coast的粉丝内容政策下被允许。",
+								"此外，所有的功劳要归功于{@link Duncehack|https://homebrewery.naturalcrit.com/share/rkBDWWtc6N}的创造者，因为他创造或启发了本文中的许多选项。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "General Options",
+					"page": 2,
+					"entries": [
+						"本章包括一些额外的选项，以完善你的武将角色。",
+						{
+							"type": "section",
+							"name": "Expanded Rules",
+							"page": 2,
+							"entries": [
+								"下面的变体、可选和扩展规则可以用来增强武术角色的战斗力。",
+								{
+									"type": "entries",
+									"name": "Action Options",
+									"page": 2,
+									"entries": [
+										"本节提供了新的战斗行动选项。它们可以作为一组或单独添加到你的游戏中。",
+										{
+											"type": "list",
+											"columns": 2,
+											"items": [
+												"{@action Analyze|martialpower}",
+												"{@action Bolster|martialpower}",
+												"{@action Charge|martialpower}",
+												"{@action Defend|martialpower}",
+												"{@action Demoralize|martialpower}",
+												"{@action Outmaneuver|martialpower}",
+												"{@action Tackle|martialpower}",
+												"{@action Throw|martialpower}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Cleaving Through Creatures",
+									"page": 3,
+									"entries": [
+										"使用{@variantrule Cleaving Through Creatures}的可选规则（DMG 272）不再要求任何涉及的生物不受伤害。你也可以将这一规则扩展到适用于远程武器攻击，即刺穿或弹开多个生物，而这些生物彼此之间都在5英尺之内，并且在原始攻击的范围之内。",
+										"对于近战攻击，你也可以允许攻击劈开那些不一定在原始攻击范围内的生物。例如，也许原始攻击会使目标的尸体向后飞去，在这个过程中击中并伤害更多的生物。在裁决时要酌情考虑，并考虑要求攻击者在没有意义的情况下消耗他们的移动。"
+									]
+								},
+								{
+									"name": "Fighting Styles",
+									"source": "martialpower",
+									"type": "entries",
+									"entries": [
+										"下面的两个条目加强了对战斗风格的使用。",
+										{
+											"name": "Fighting Style Options",
+											"type": "entries",
+											"entries": [
+												"当你选择一种战斗风格时，以下风格会被添加到你的选项列表中。",
+												{
+													"type": "list",
+													"items": [
+														"{@optfeature Defend the Line|martialpower}",
+														"{@optfeature Earthsense|martialpower}",
+														"{@optfeature Hammer Hands|martialpower}",
+														"{@optfeature Undaunted Stride|martialpower}",
+														"{@optfeature Vaulting Expert|martialpower}"
+													]
+												}
+											]
+										},
+										{
+											"name": "Martial Stances",
+											"type": "entries",
+											"entries": [
+												"有了这个变体，你的战斗风格就会不断地变得灵活。每当你要学习一种格斗风格时，你可以从同一列表中选择两种风格作为武术招式来学习。",
+												"当你掷出主动权时，作为你在战斗中的一个额外行动，你可以选择进入一个你所知道的姿态，并获得其好处。在战斗结束前或再次使用该奖励动作前，你都会保持该姿态。你一次只能从一个姿态中获益，除非有其他特征。",
+												"如果一种风格允许你学习一种动作、法术或其他一些选项，当你把它作为一种姿态来学习时，你就会选择这种选项，而不能通过简单地切换姿态来把它换成另一种选项。同样地，如果一种战斗风格只在短时或长时休息时充能，或以其他方式有一些资源附加在它身上，那么切换到该姿态时不会充能。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Flanking Revised",
+									"page": 3,
+									"entries": [
+										"当一个生物和它的至少一个盟友与他们可以看到的敌人相邻，并且在敌人空间的两侧或角落，他们就是在侧翼攻击该敌人。当一个生物被{@condition incapacitated}、{@condition prone}、{@condition restrained}或侧翼所包围时，它就无法进行侧翼攻击。一个大型或更大的生物，只要它的空间中至少有一格或六格符合侧翼的条件，就属于侧翼。",
+										"侧面的生物对另一生物的攻击卷轴获得+2的加成，除非他们自己被侧面攻击。",
+										"根据DM的决定，那些不因其类型而被多个对手不利的生物（比如奥兹）对被包抄免疫。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Grappling and Shoving",
+									"page": 3,
+									"entries": [
+										"本节提供了与擒拿和推搡有关的战斗的新选项。它们可以作为一组或单独添加到你的游戏中。",
+										{
+											"type": "entries",
+											"name": "Combat Tussle",
+											"page": 3,
+											"entries": [
+												"你可以用抓取或推搡目标的尝试来取代你所做的任何武器攻击，而不是用{@action Attack}动作来做。这也可以延伸到其他涉及类似机制的行动选项，如（%%）和（%%）（见行动选项部分）。",
+												"作为一个额外的选择，DM可能希望在进行机会攻击时禁止抓取或推搡替代。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Forceful Push",
+											"page": 3,
+											"entries": [
+												"当你试图推搡一个生物并以5分或更高的分数击败他们的竞争性检查时，你可以选择将其推到10英尺以外，而不是5英尺。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Interpose",
+											"page": 3,
+											"entries": [
+												"当一个你没有抓捕的生物对你进行攻击时，你可以用你的反应来试图在你和攻击之间插入一个你正在抓捕的生物。",
+												"如果该生物不愿意，你就进行一次力量（竞技）检查，由目标的力量（竞技）或灵巧（杂技）检查来争夺（目标选择要使用的能力）。除非你有两只空闲的手，否则你会有一个-2的惩罚。此外，如果你比敌方生物大，你在这个检定上有优势，如果你比敌方生物小，则有劣势。",
+												"如果你成功了，被抓的生物会成为攻击的目标，而不是你。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Powerful Build",
+											"page": 3,
+											"entries": [
+												"当你获得强大的建筑特质或类似的特征时，你可以抓取或推搡的生物的最大尺寸类别也增加了一个。作为一个额外的选择，DM可以对抓取或推搡比你大两个尺寸的生物的检查施加不利条件。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Rattle",
+											"page": 3,
+											"entries": [
+												"当你身边的生物（%0%）试图施法时，你可以用你的反应来试图强行打断施法。目标必须做一个宪法救赎动作，DC为10+你的力量修饰。蓄力失败时，目标的法术会失败，法术槽（如果有的话）会被浪费，蓄力成功时，目标的法术会正常工作。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Shove Aside",
+											"page": 3,
+											"entries": [
+												"当你成功地推开一个生物时，你可以将它移动到5英尺以内的任何空间，而不是直接离开你。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Yank",
+											"page": 3,
+											"entries": [
+												"当你身边的生物（%0%）试图对你以外的生物进行武器攻击时，你可以用你的反应把他们拉开，使他们更难击中，在攻击卷上施加不利条件。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Two-Weapon Fighting",
+									"page": 3,
+									"entries": [
+										"以下变体可以用来使双武器战斗与其他武器选择相比更加可行，它们可以作为一组或单独添加到你的游戏中。",
+										"此外，如果你想给双持武器者提供额外的机会来投资他们的战斗风格，可以考虑在你的游戏中加入本文件后面的（%0%）特技。",
+										{
+											"type": "entries",
+											"name": "Additional Attacks",
+											"page": 3,
+											"entries": [
+												"每当你从额外攻击功能中获得一次额外攻击时，每当你进行双武器战斗时，你可以用你的第二把武器进行的攻击次数增加一次。",
+												"这个好处可以在{@feat Dual Wielder}特技后面设置门槛，由DM决定。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Better Accuracy",
+											"page": 3,
+											"entries": [
+												"如果你有双武器格斗的战斗风格，你在进行双武器格斗时也会获得攻击卷的+1奖励。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Damage Dice",
+											"page": 3,
+											"entries": [
+												"当你进行双武器战斗时，你可以用{@dice d8}代替每个武器的正常伤害模子。",
+												"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Follow-Up Attacks",
+											"page": 4,
+											"entries": [
+												"如果你有额外攻击的功能，并参与双武器战斗，当你采取{@action Attack}的行动，用其中一个武器攻击失败时，你可以用另一个武器对同一目标进行额外攻击（不需要行动）。",
+												"你每回合只能使用这个能力一次；如果你在更高等级时从额外攻击功能获得更多的攻击，每当你达到这些等级时，每回合的使用次数会增加一次。",
+												"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "No Bonus Action",
+											"page": 4,
+											"entries": [
+												"当你进行双武器战斗时，用你的第二把武器进行额外攻击不需要额外行动。像往常一样，它只能在你的每个回合中做一次。",
+												"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Opportunity Attacks",
+											"page": 4,
+											"entries": [
+												"当你在进行双武器战斗时，用其中一件武器进行机会攻击，你可以用另一件武器进行另一次机会攻击，作为同一反应的一部分，但你不会像通常那样将你的能力修改器加入第二次攻击的伤害中。",
+												"这个好处可以在{@feat Dual Wielder}特技或双兵器格斗的格斗方式后面设置障碍，由DM决定。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Weapon Effects",
+									"page": 4,
+									"entries": [
+										"以下可选规则可用于增加武斗的深度，其灵感来自于{@link The Warrior's Codex Reforged|https://www.gmbinder.com/share/-LTuQ9tRb_ZGFIfKLno4}中的武器属性。它们可以作为一组或单独添加到你的游戏中。",
+										{
+											"type": "entries",
+											"name": "Called Shots",
+											"page": 4,
+											"entries": [
+												"当你用你精通的武器进行攻击时，你可以放弃在攻击卷中加入你的熟练度奖励。如果攻击命中，你会在伤害卷中加入熟练度加成。你必须在做攻击卷之前决定这样做。这个能力可以和{@feat Great Weapon Master}和{@feat Sharpshooter}功法一起使用。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Cavalry Charge",
+											"page": 4,
+											"entries": [
+												"如果你在骑马时向目标直线移动至少30英尺后，用造成穿刺伤害的近战武器伤害一个生物，你会造成额外的（%0%）伤害。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Finisher",
+											"page": 4,
+											"entries": [
+												"当你用双手挥舞的近战武器伤害一个{@condition prone}生物时，你会造成额外{@damage d6}的伤害。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Prone Fighting",
+											"page": 4,
+											"entries": [
+												"当你在{@condition prone}的情况下用轻武器进行武器攻击时，你不会因为俯卧而受到不利影响。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Sundering",
+											"page": 4,
+											"entries": [
+												"许多重击性武器会粉碎、击碎或穿透盔甲。每回合一次，当你用具有重击属性的近战武器攻击物体或穿着金属盔甲的目标，并造成重击伤害时，你可以在攻击卷上获得+2的奖励。",
+												"你也可以在对付有厚壳的生物、金属皮和其他生物时获得这个奖励，这由你的管理员决定。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Feats",
+							"page": 4,
+							"entries": [
+								"这里介绍新的和修订的壮举方案，供使用这些方案的团体参考。",
+								{
+									"type": "entries",
+									"name": "Feat Changes",
+									"page": 4,
+									"entries": [
+										"本节介绍对现有功法的修改。",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@feat Charger|martialpower}",
+												"{@feat Dungeon Delver|martialpower}",
+												"{@feat Grappler|martialpower}",
+												"{@feat Great Weapon Master|martialpower}",
+												"{@feat Martial Adept|martialpower}",
+												"{@feat Savage Attacker|martialpower}",
+												"{@feat Sentinel|martialpower}",
+												"{@feat Sharpshooter|martialpower}",
+												"{@feat Shield Master|martialpower}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "New Feats",
+									"page": 5,
+									"entries": [
+										"这里按字母顺序介绍新的功法。",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@feat Bulwark|martialpower}",
+												"{@feat Light Armor Master|martialpower}",
+												"{@feat Opportunist|martialpower}",
+												"{@feat Pugilist|martialpower}",
+												"{@feat Two-Weapon Expert|martialpower}",
+												"{@feat Unarmored Master|martialpower}",
+												"{@feat Unstoppable|martialpower}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Martial Practices",
+							"page": 6,
+							"entries": [
+								"除了他们闻名于世的功绩之外，武术英雄还可以通过掌握被称为武术实践的挑战性技术来突破普通凡人可能达到的境界。使用这些罕见的方法，冒险家可以驯服任何野兽，举起任何物体，甚至可以伪造死亡本身。虽然武术接近法术的可能性，但它们完全存在于武术力量的领域。",
+								"武术练习类似于仪式性的咒语。要使用一种武术，你必须学习它并执行它。组成部分的费用有时包括命中率骰子。在你完成了一个练习后，你会获得它的好处。",
+								{
+									"type": "entries",
+									"name": "Acquiring a Practice",
+									"page": 6,
+									"entries": [
+										"只有当你是野蛮人、战士、僧侣或无赖时，你才能学习武术。如果其他班级可以使用战斗风格特征，DM也可以允许他们学习（比如说，圣骑士和游侠）。",
+										"你根据你的角色等级来学习武术，或者如果你是一个多类角色，则根据你在上述每个可选类中的综合等级来学习。不过，即使你在非武术类中有一些等级，DM也可以让它简单地与你的角色等级相适应（例如，你是一个战士，但在术士中也有一个等级）。你在1级时学习一种武术，在5级、11级和17级时再学习一种。当你的等级提高时，如果DM允许，你可以用另一种练习来代替你知道的一种练习。",
+										"你也可以从一个已经掌握了武术的熟练战士那里学习武术的粗浅练习。让他们教你，可能需要你为他们完成一个任务或冒险，由DM决定。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Reading a Practice",
+									"page": 6,
+									"entries": [
+										"下面的条目对武术修炼的不同部分进行了描述。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Key Proficiency",
+													"entries": [
+														"这个条目给出了一个或多个技能或工具的熟练度；你必须至少在其中一个方面受过训练才能学习和使用这个练习。如果这个练习让你进行能力检查，你就把你对这个技能或工具的熟练程度加到总数上。",
+														"如果一个实践有一个以上的关键熟练度，你选择使用哪一个。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Activation Time",
+													"entries": [
+														"进行一项武术练习需要特定的时间来完成。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Component Cost",
+													"entries": [
+														"这个条目给出了进行修行所需的命中骰子或金币黄金（或两者）的数量。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Duration",
+													"entries": [
+														"一个武术练习的效果通常至少持续10分钟。这一条告诉你该武术的效果持续多长时间。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Effects",
+													"entries": [
+														"余下的文字详细介绍了你在不间断地完成练习后获得的好处。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Making a Practice",
+									"entries": [
+										"作为DM，你可能会发现下一节中的练习样本并不符合你的要求，或者玩家想为他们的角色定制一个。如果你想在下面做你自己的武术练习，请考虑下面的设计要点。",
+										{
+											"type": "list",
+											"items": [
+												"武术练习通常与仪式法术相当。它们可能需要更短的时间来激活，但它们可能有一个命中率成本（见下文），而且效果本身可能不如仪式法术所能做到的那么强大。",
+												"命中率骰子被用来作为一个组成部分的成本，以阻止不断地重复使用，并在战斗外的治疗和冒险日期间的一些额外效用之间创造一个选择。只有在实践中需要使用外部材料或其他资源时，黄金通常才是一种成本。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Sample Practices",
+									"page": 6,
+									"entries": [
+										"下面的武术练习是按字母顺序排列的。",
+										{
+											"type": "list",
+											"columns": 2,
+											"items": [
+												"{@optfeature Beast Tamer|martialpower}",
+												"{@optfeature Decipher Script|martialpower}",
+												"{@optfeature Fake Death|martialpower}",
+												"{@optfeature Quick Aid|martialpower}",
+												"{@optfeature Speech Without Words|martialpower}",
+												"{@optfeature Temporary Fix|martialpower}",
+												"{@optfeature Uncanny Strength|martialpower}",
+												"{@optfeature Warded Campsite|martialpower}"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Maneuvers Expanded",
+					"page": 8,
+					"entries": [
+						"本节提供了新的演习，以及角色获得这些演习的新方法。",
+						{
+							"type": "section",
+							"name": "New Maneuvers",
+							"page": 8,
+							"entries": [
+								"如果你可以使用演习，以下的演习可以加入到你可用的选项列表中。演习是由{@subclassFeature Combat Superiority|Fighter||Battle Master||3}等级特征、{@optfeature Superior Technique|TCE}战斗风格和{@feat Martial Adept|martialpower}特技等特征提供的。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@optfeature Break Free|martialpower}",
+										"{@optfeature Crippling Attack|martialpower}",
+										"{@optfeature Defensive Roll|martialpower}",
+										"{@optfeature Fast Footwork|martialpower}",
+										"{@optfeature Glancing Blow|martialpower}",
+										"{@optfeature Great Fortitude|martialpower}",
+										"{@optfeature Great Leap|martialpower}",
+										"{@optfeature Iron Will|martialpower}",
+										"{@optfeature Knock Away|martialpower}",
+										"{@optfeature Monster Expert|martialpower}",
+										"{@optfeature Spring Attack|martialpower}",
+										"{@optfeature Survivalist|martialpower}"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Accessing Maneuvers",
+							"page": 9,
+							"entries": [
+								"以下各节提供了可选的阶级特征，你可以用它们来给任何武将角色提供演习机会。这些功能都不依赖其他功能，但其中一些功能可以结合在一起，创造出适合你的桌子的新游戏体验。",
+								{
+									"type": "entries",
+									"name": "General Features",
+									"page": 0,
+									"entries": [
+										"本节介绍了多个武术班可以同时访问的三个功能。",
+										"{@b Combat Superiority}是一个万能的功能，如果你觉得他们需要更多有趣的东西来做他们的攻击，你可以把它添加到任何和所有的武术类。",
+										"{@b Spellsword Maneuvers}是工匠、圣骑士、游侠和你游戏中任何其他半数施法者的特性，允许他们消耗法术槽，将其转换为优势骰子。",
+										"{@b Martial Techniques}是半身法师的一个不同的特征，它完全取代了法术攻击。这允许角色构建，如非魔法游侠或圣骑士，只专注于他们的武术能力。",
+										{
+											"type": "entries",
+											"name": "Combat Superiority",
+											"page": 9,
+											"entries": [
+												"{@note 3rd-level and higher martial optional feature}",
+												"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+												{
+													"type": "entries",
+													"name": "Maneuvers",
+													"entries": [
+														"你会两种演习，这些演习从战士的战斗大师原型可用的演习列表中选择。你在5级、9级、13级和17级时可以额外学习一种你选择的演习。每当你学习一个新的动作时，你也可以用一个不同的动作取代你所知道的一个动作。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Superiority Dice",
+													"entries": [
+														"你获得两个优势骰子，它们是{@dice d6}的。当你使用时，一个优势骰子会被消耗掉。当你完成短期或长期休息时，你会重新获得所有已消耗的优势骰子。你在5级、11级和17级时获得另一个优越性骰子。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Saving Throws",
+													"entries": [
+														"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Martial Techniques",
+											"page": 9,
+											"entries": [
+												"{@note 2nd-level half-caster optional feature (alternative to Spellcasting)}",
+												"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+												{
+													"type": "entries",
+													"name": "Maneuvers",
+													"page": 9,
+													"entries": [
+														"你学习四个自选动作，这些动作从战士的战斗大师原型可用的动作列表中选择。许多演习以某种方式加强攻击。你每次攻击只能使用一个演习。你在5级、9级、13级和17级时可以额外学习一个你选择的演习。每当你学习一个新的动作时，你也可以用一个不同的动作取代你所知道的一个动作。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Superiority Dice",
+													"page": 9,
+													"entries": [
+														"你有四个优势骰子，它们是{@dice d8}的。当你使用一个优势骰子时，它就会被消耗掉。当你完成短时或长时的休息时，你会重新获得你所有消耗的优势骰子。",
+														"你在9级时获得另一个优势模子，17级时再获得一个。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Saving Throws",
+													"page": 9,
+													"entries": [
+														"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Spellsword Maneuvers",
+											"page": 9,
+											"entries": [
+												"{@note 3rd-level and higher half-caster optional feature}",
+												"你学习的演习是由被称为优势骰子的特殊骰子推动的。",
+												{
+													"type": "entries",
+													"name": "Maneuvers",
+													"entries": [
+														"你会两种演习，这些演习从战士的战斗大师原型可用的演习列表中选择。你在5级、9级、13级和17级时可以额外学习一种你选择的演习。每当你学习一个新的动作时，你也可以用一个不同的动作取代你所知道的一个动作。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Superiority Dice",
+													"entries": [
+														"在你的回合中，你可以消耗一个法术槽（不需要行动）来获得一个或多个优势骰子，它们是（%0%）的。你的法术槽每级获得一个骰子，最多获得五个骰子。任何未消耗的骰子都会在你完成长时间休息后消失。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Saving Throws",
+													"entries": [
+														"如果你使用的演习需要你的目标进行蓄力以抵抗演习的效果，蓄力DC等于8+你的熟练度加成+你的力量或灵巧修正值（你选择）。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Class-Specific Features",
+									"page": 9,
+									"entries": [
+										"本节介绍了每个等级所特有的获得演习的方法。每种方法与其他方法相比都有多种不同之处，但它们都是为各自的等级量身定做的。它们中的大多数是由阶级资源提供燃料的，因此只增加了多功能性，而不一定是原始力量。",
+										"{@classFeature Battle Ferocity|Barbarian||3|martialpower}是一个野蛮人的特征，让你选择从鲁莽的攻击中获得一个或多个优势骰子，而不是优势。",
+										"{@classFeature Combat Expertise|Fighter||3|martialpower}是一个战士特征，它赋予战士一个按比例计算的优势骰子池，这对那些认为基础等级缺乏足够的特征来适当发光的人来说可能会有吸引力。",
+										"{@classFeature Ki Maneuvers|Monk||3|martialpower}是一个僧侣的特征，它让你花费Ki点来促进你的机动性。",
+										"{@classFeature Roguish Exploits|Rogue||3|martialpower}是一个无赖的功能，让你牺牲偷袭的骰子来助长你的机动性。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Other Variants",
+							"page": 11,
+							"entries": [
+								"本节列出了与使用演习有关的杂项规则。",
+								{
+									"type": "entries",
+									"name": "Action Options",
+									"page": 11,
+									"entries": [
+										"一种方法是将演习转化为任何人都可以采取的较弱的行动选项，而不是制作一堆授予演习权限的功能。这里有几个例子。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Goading Attack",
+													"entries": [
+														"当你用近战武器攻击击中一个生物并在攻击卷上占优势时，你可以在下一个回合结束前，在目标对你以外的生物进行的下一次攻击卷上施加劣势。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Lunging Attack",
+													"entries": [
+														"当你做一个没有劣势的近战武器攻击卷时，你可以将你的攻击范围增加5英尺。当你这样做时，你在攻击卷上会受到不利影响。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Menacing Attack",
+													"entries": [
+														"见本文件前面的{@action Demoralize|martialpower}行动选项。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Rally",
+													"entries": [
+														"见本文件前面的{@action Bolster|martialpower}行动选项。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Riposte",
+													"entries": [
+														"当一个生物在攻击卷上处于劣势的情况下用近战武器攻击错过你时，你可以用你的反应对该生物进行一次近战武器攻击。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Maneuver Variants",
+									"page": 11,
+									"entries": [
+										"特别是在使用赋予许多不同等级的操纵权的可选功能时，你可能必须做一些调整，以使事情顺利进行。本节提供了此类调整的建议，可以为所有角色或以每个等级为基础进行调整。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Alternative Recharge",
+													"entries": [
+														"DM可以从以下优势骰子的充电选项中选择一个，而不是在短时或长时休息时充电，这些选项按照从最不强大到最强大的顺序列出。",
+														{
+															"type": "list",
+															"items": [
+																"每当你掷出主动权时，你都会重新获得所有消耗的骰子。",
+																"你重新获得所有已消耗的骰子作为一个行动。",
+																"在你每个回合开始时，你会重新获得一个已消耗的骰子。",
+																"你在每个回合开始时都会重新获得所有消耗的骰子。"
+															]
+														},
+														"请注意，这个选项更倾向于本节前面详述的一般战斗力优势功能。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "No Goading Attack",
+													"entries": [
+														"{@optfeature Goading Attack}与骑兵的三阶特性非常相似。虽然这两者确实可以相互协同，但在使用这个变体时，你可能希望去掉诱导攻击，这样骑兵的主要战斗能力就不会只提供给所有人。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Relentless",
+													"entries": [
+														"从18级开始，当你掷出主动权并且没有剩余的优越性骰子时，你会重新获得1个优越性骰子。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Removed Damage",
+													"entries": [
+														"除了{@optfeature Commander's Strike}的演习外，演习不再为单次攻击的伤害增加一个优势模子。这个选项主要是针对战士类的，在减少多类滥用战斗专长的同时，也不增加该类每回合的伤害输出。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Prepared Maneuvers",
+									"page": 11,
+									"entries": [
+										"你不需要知道一个固定的演习清单，而是准备好每当你完成长时间休息时可以使用的演习清单，从（%0%）中选择。当你这样做时，你选择的演习数量等于你在没有这个变体的情况下通常会学习的数量。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Optional Class Features",
+					"page": 12,
+					"entries": [
+						"在《玩家手册》中，当你的等级达到一定程度时，你就会获得等级特征。本节提供了你作为你的特定等级的成员可以获得的额外特征。与《玩家手册》中的特性不同，你不会自动获得这里的特性。如果你符合特征描述中提到的等级要求，你可以与你的管理员协商，决定是否获得本节中的特征。这些特征可以分开选择；你可以使用部分、全部或不使用它们。",
+						{
+							"type": "inset",
+							"name": "Reading the Subtitles",
+							"entries": [
+								"请注意，在字幕中写着 \"替换 \"或 \"增强 \"的特征是作为修复或平衡变化而存在的，而写着 \"替代 \"或 \"增加[选项]\"的特征是作为主题能力而存在的，可以用来增加角色的味道，或作为与基本特征同等的角色定制选项。一般来说，请与你的管理员讨论，看看你可以从哪些特征中选择，或者在某个特定级别上可以获得哪些特征，以适合你的角色和你所处的环境。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Barbarian",
+							"page": 12,
+							"entries": [
+								"野蛮人可以使用以下功能。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@classFeature Savage Leaps|Barbarian||1|martialpower}",
+										"{@classFeature Primal Conditioning|Barbarian||3|martialpower}",
+										"{@classFeature Primal Expert|Barbarian||9|martialpower}"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Primal Path Improvements",
+									"page": 13,
+									"entries": [
+										"以下是对该类的某些子类特征的补充或修改。",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@subclassFeature Sustained by Rage|Barbarian||Berserker||3|martialpower}",
+												"{@subclassFeature Unbridled Rage|Barbarian||Berserker||6|martialpower}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Fighter",
+							"page": 13,
+							"entries": [
+								"战斗机可以使用以下功能。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@classFeature Battle Fervor|Fighter||2|martialpower}",
+										"{@classFeature Show of Skill|Fighter||5|martialpower}",
+										"{@classFeature Additional Fighting Styles|Fighter||6|martialpower}",
+										"{@classFeature Legendary Resistance|Fighter||9|martialpower}",
+										"{@classFeature Mundane Expert|Fighter||9|martialpower}",
+										"{@classFeature Resolving Vigor|Fighter||9|martialpower}"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Martial Archetype Improvements",
+									"page": 14,
+									"entries": [
+										"以下是对该类的某些子类特征的补充或修改。",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@subclassFeature Brutish Durability|Fighter||Champion||7|martialpower}",
+												"{@subclassFeature Spellweaver|Fighter||Eldritch Knight||7|martialpower}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Monk",
+							"page": 14,
+							"entries": [
+								"以下部分列出了一系列可选择的功能，这些功能扩展了僧侣们在武功方面所处的主题空间。",
+								{
+									"type": "entries",
+									"name": "Martial Combatant",
+									"page": 14,
+									"entries": [
+										"以下部分列出了一系列可选择的功能，这些功能扩展了僧侣们在武功方面所处的主题空间。",
+										{
+											"type": "inset",
+											"name": "Asian Representation and the Martial Arts",
+											"entries": [
+												"请阅读{@link Asian Representation and the Martial Arts|https://jamesmendezhodes.com/blog/2019/10/31/asian-representation-and-the-martial-arts}。特别是它对5e中的僧侣类及其一些任意限制的讨论，激发了这里列出的可选功能的创造。"
+											]
+										},
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@classFeature Armored Warrior|Monk||1|martialpower}",
+												"{@classFeature Battle Hardened|Monk||1|martialpower}",
+												"{@classFeature Rapid Strikes|Monk||1|martialpower}",
+												"{@classFeature Strength of Body|Monk||1|martialpower}",
+												"{@classFeature Weapons Expert|Monk||1|martialpower}",
+												"{@classFeature Enlightened Knowledge|Monk||2|martialpower}",
+												"{@classFeature Extra Attack (2)|Monk||11|martialpower}",
+												"{@classFeature Spider Technique|Monk||15|martialpower}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Ki Features",
+									"page": 14,
+									"entries": [
+										"当你在2级获得Ki功能时，你也能获得以下功能，其中一些需要消耗Ki点数。",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@classFeature Careful Stride|Monk||2|martialpower}",
+												"{@classFeature Grasp the Wind|Monk||3|martialpower}",
+												"{@classFeature Stance of Power|Monk||4|martialpower}",
+												"{@classFeature Mind Over Body|Monk||2|martialpower}",
+												"{@classFeature Deflect Blows|Monk||3|martialpower}",
+												"{@classFeature Deflect Magic|Monk||3|martialpower}",
+												"{@classFeature Ki-Inhibiting Strikes|Monk||5|martialpower}",
+												"{@classFeature Unfaltering Soul|Monk||7|martialpower}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Ki Upgrades",
+									"page": 15,
+									"entries": [
+										"随着你在这个等级中的等级提高，下面的功能可以升级你现有的ki功能。",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@classFeature Wind Walker|Monk||9|martialpower}",
+												"{@classFeature Effortless Deflection|Monk||11|martialpower}",
+												"{@classFeature Diamond Body|Monk||13|martialpower}",
+												"{@classFeature Ki Magic|Monk||18|martialpower}",
+												"{@classFeature Perfect Soul|Monk||20|martialpower}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Ranger",
+							"page": 16,
+							"entries": [
+								"护林员可以使用以下功能。",
+								{
+									"type": "inset",
+									"name": "Deft Explorer",
+									"entries": [
+										"下面的特征假定使用了塔莎的万物熔炉中的（%0%）可选等级特征。"
+									]
+								},
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@classFeature Hunter's Quarry|Ranger||1|martialpower}",
+										"{@classFeature Natural Predator|Ranger||8|martialpower}",
+										"{@classFeature Ultimate Slayer|Ranger||20|martialpower}"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Poultices",
+									"page": 16,
+									"entries": [
+										"{@note If you allow the Poultices feature, consider allowing the following ones as well}",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@classFeature Poultices|Ranger||3|martialpower}",
+												"{@classFeature Natural Antivenom|Ranger||9|martialpower}",
+												"{@classFeature Remarkable Athlete|Ranger||10|martialpower}",
+												"{@classFeature Wilderness Survivor|Ranger||13|martialpower}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Ranger Archetype Improvements",
+									"page": 17,
+									"entries": [
+										"以下是对该类的某些子类特征的补充或修改。",
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@subclassFeature Combat Training|Ranger||Beast Master||7|martialpower}",
+												"{@subclassFeature Beastly Coordination|Ranger||Beast Master||15|martialpower}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Rogue",
+							"page": 17,
+							"entries": [
+								"一个流氓可以使用以下功能。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@classFeature Blunt Force|Rogue||1|martialpower}",
+										"{@classFeature Canny Quickstep|Rogue||5|martialpower}",
+										"{@classFeature Extra Attack|Rogue||5|martialpower}",
+										"{@classFeature Mental Gymnastics|Rogue||15|martialpower}"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Roguish Archetype Improvements",
+									"page": 17,
+									"entries": [
+										"以下是对该类的某些子类特征的补充或修改。",
+										{
+											"type": "list",
+											"columns": 2,
+											"items": [
+												"{@subclassFeature First Strike|Rogue||Assassin||3|martialpower}"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

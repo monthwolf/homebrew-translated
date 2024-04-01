@@ -1,0 +1,3968 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheWitchKnight",
+				"abbreviation": "TWK",
+				"full": "The Witch Knight",
+				"authors": [
+					"d'Artagnan"
+				],
+				"convertedBy": [
+					"Lxran#2292"
+				],
+				"version": "v1.1.0",
+				"color": "eb2425",
+				"url": "https://www.dmsguild.com/product/319675/The-Witch-Knight",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1623167262,
+		"dateLastModified": 1693671517,
+		"optionalFeatureTypes": {
+			"TWK:AE": "Witch Knight; Arcane Enhancement"
+		},
+		"_dateLastModifiedHash": "adf2002a79"
+	},
+	"class": [
+		{
+			"name": "Witch Knight",
+			"source": "TheWitchKnight",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"arcana",
+								"athletics",
+								"insight",
+								"investigation",
+								"perception"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}, {@item longbow|phb}, and 20 {@item arrow|phb|arrows}",
+					"(a) a {@filter two-handed martial weapon|items|type=martial weapon|property=two-handed} or (b) two {@filter one-handed martial weapon|items|type=martial weapon|property=!two-handed}",
+					"(a) a {@item light crossbow|phb} with 20 {@item crossbow bolt|phb|bolts} or (b) two {@item handaxe|phb|handaxes}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item scholar's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb",
+							"longbow|phb",
+							"arrows (20)|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"item": "handaxe|phb",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"scholar's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13,
+					"dex": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"simple",
+						"martial"
+					],
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|phb|shields}"
+					]
+				},
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Arcane Recovery",
+						"page": 3,
+						"entries": [
+							"在确定你用奥术恢复能力所能恢复的法术和法力值的总和时，你把你的巫师骑士和巫师等级加在一起。"
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Extra Attack",
+						"page": 3,
+						"entries": [
+							"如果你已经从其他等级获得了额外的攻击，那么额外攻击功能就不会给你带来额外的攻击。"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Arcane Enhancement"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							}
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"Mana Points"
+					],
+					"rows": [
+						[
+							1
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							20
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Witch Knight (TWK)}"
+					],
+					"rows": [
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Witch Knight (TWK)}",
+						"{@filter 2nd|spells|level=2|class=Witch Knight (TWK)}",
+						"{@filter 3rd|spells|level=3|class=Witch Knight (TWK)}",
+						"{@filter 4th|spells|level=4|class=Witch Knight (TWK)}",
+						"{@filter 5th|spells|level=5|class=Witch Knight (TWK)}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Arcane Enhancement|Witch Knight|TheWitchKnight|1",
+				"Spellcasting|Witch Knight|TheWitchKnight|1",
+				{
+					"classFeature": "Witch Knight Discipline|Witch Knight|TheWitchKnight|2",
+					"gainSubclassFeature": true
+				},
+				"Spell Strike|Witch Knight|TheWitchKnight|2",
+				"Arcane Enhancement|Witch Knight|TheWitchKnight|3",
+				"Arcane Recovery|Witch Knight|TheWitchKnight|3",
+				"Ability Score Improvement|Witch Knight|TheWitchKnight|4",
+				"Extra ATtack|Witch Knight|TheWitchKnight|5",
+				"Spell Strike Improvement|Witch Knight|TheWitchKnight|5",
+				{
+					"classFeature": "Discipline Feature|Witch Knight|TheWitchKnight|6",
+					"gainSubclassFeature": true
+				},
+				"Spell Combat|Witch Knight|TheWitchKnight|7",
+				"Ability Score Improvement|Witch Knight|TheWitchKnight|8",
+				"Arcane Enhancement Improvement|Witch Knight|TheWitchKnight|9",
+				{
+					"classFeature": "Discipline Feature|Witch Knight|TheWitchKnight|10",
+					"gainSubclassFeature": true
+				},
+				"Arcane Affliction|Witch Knight|TheWitchKnight|11",
+				"Empower Spellcraft|Witch Knight|TheWitchKnight|11",
+				"Ability Score Improvement|Witch Knight|TheWitchKnight|12",
+				{
+					"classFeature": "Discipline Feature|Witch Knight|TheWitchKnight|14",
+					"gainSubclassFeature": true
+				},
+				"Redirect Mana|Witch Knight|TheWitchKnight|15",
+				"Ability Score Improvement|Witch Knight|TheWitchKnight|16",
+				"Persistent Focus|Witch Knight|TheWitchKnight|18",
+				"Ability Score Improvement|Witch Knight|TheWitchKnight|19",
+				{
+					"classFeature": "Discipline Feature|Witch Knight|TheWitchKnight|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "Witch Knight Discipline",
+			"classSpells": [
+				"Blade Ward",
+				"Dancing Lights",
+				"Light",
+				"Mage Hand",
+				"Mending",
+				"Message",
+				"Minor Illusion",
+				"Prestidigitation",
+				"True Strike",
+				"Alarm",
+				"Bane",
+				"Burning Hands",
+				"Chromatic Orb",
+				"Color Spray",
+				"Compelled Duel",
+				"Comprehend Languages",
+				"Detect Magic",
+				"Expiditious Retreat",
+				"False Life",
+				"Feather Fall",
+				"Grease",
+				"Identify",
+				"Illusory Script",
+				"Jump",
+				"Longstrider",
+				"Mage Armor",
+				"Magic Missile",
+				"Ray of Sickness",
+				"Shield",
+				"Silent Image",
+				"Sleep",
+				"Tasha's Hideous Laughter",
+				"Unseen Servant",
+				"Witch Bolt",
+				"Arcane Lock",
+				"Blindness/Deafness",
+				"Blur",
+				"Cloud of Daggers",
+				"Continual Flame",
+				"Crown of Madness",
+				"Darkness",
+				"Darkvision",
+				"Detect Thoughts",
+				"Enlarge/Reduce",
+				"Find Steed",
+				"Flame Blade",
+				"Flaming Sphere",
+				"Gust of Wind",
+				"Heat Metal",
+				"Hold Person",
+				"Invisibility",
+				"Knock",
+				"Levitate",
+				"Locate Object",
+				"Magic Mouth",
+				"Magic Weapon",
+				"Malf's Acid Arrow",
+				"Mirror Image",
+				"Misty Step",
+				"Nystul's Magic Aura",
+				"Phantasmal Force",
+				"Ray of Enfeeblement",
+				"Rope Trick",
+				"Scorching Ray",
+				"See Invisibility",
+				"Shatter",
+				"Silence",
+				"Spider Climb",
+				"Suggestion",
+				"Web",
+				"Bestow Curse",
+				"Blink",
+				"Clarvoyance",
+				"Conjure Barrage",
+				"Counterspell",
+				"Dispel Magic",
+				"Elemental Weapon",
+				"Fear",
+				"Feign Death",
+				"Fireball",
+				"Fly",
+				"Gaseous Form",
+				"Glyph of Warding",
+				"Haste",
+				"Hypnotic Pattern",
+				"Leomund's Tiny Hut",
+				"Lightning Arrow",
+				"Magic Circle",
+				"Major Image",
+				"Nondetection",
+				"Protection from Energy",
+				"Remove Curse",
+				"Sending",
+				"Sleet Storm",
+				"Slow",
+				"Stinking Cloud",
+				"Tongues",
+				"Vampiric Touch",
+				"Water Breathing",
+				"Arcane Eye",
+				"Banishment",
+				"Blight",
+				"Black Tentacles",
+				"Confusion",
+				"Control Water",
+				"Death Ward",
+				"Dimension Door",
+				"Fire Shield",
+				"Freedom of Movement",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Ice Storm",
+				"Leomund's Secret Chest",
+				"Locate Creature",
+				"Mordenkainen's Private",
+				"Sanctum",
+				"Phantasmal Killer",
+				"Resilient Sphere",
+				"Animate Objects",
+				"Cone of Cold",
+				"Conjure Volley",
+				"Contagion",
+				"Destructive Wave",
+				"Flame Strike",
+				"Hold Monster",
+				"Legend Lore",
+				"Mislead",
+				"Modify Memory",
+				"Pass Wall",
+				"Telepathic Bond",
+				"Scrying",
+				"Swift Quiver",
+				"Telekinesis",
+				"Teleportation Circle",
+				"Wall of Force",
+				"control flames|xge",
+				"gust|xge",
+				"mold earth|xge",
+				"shape water|xge",
+				"absorb elements|xge",
+				"catapult|xge",
+				"chaos bolt|xge",
+				"ice knife|xge",
+				"warding wind|xge",
+				"aganazzar's scorcher|xge",
+				"dragon's breath|xge",
+				"earthbind|xge",
+				"maximilian's earthen grasp|xge",
+				"shadow blade|xge",
+				"catnap|xge",
+				"enemies abound|xge",
+				"flame arrows|xge",
+				"thunder step|xge",
+				"elemental bane|xge",
+				"find greater steed|xge",
+				"storm sphere|xge",
+				"steel wind strike|xge",
+				"enervation|xge",
+				"far step|xge",
+				"immolation|xge",
+				"skill empowerment|xge",
+				"synaptic static|xge",
+				"sickening radiance|xge",
+				"vitriolic sphere|xge",
+				"tasha's caustic brew|tce",
+				"tasha's mind whip|tce",
+				"spirit shroud|tce",
+				"summon fey|tce",
+				"summon shadowspawn|tce",
+				"summonn aberration|tce",
+				"summon elemental|tce",
+				"barbed chains|thewitchknight",
+				"bladed dash|thewitchknight",
+				"d'artagnan's erupting pillar|thewitchknight",
+				"hobble|thewitchknight",
+				"mudball|thewitchknight",
+				"pitfall|thewitchknight",
+				"telekinetic volley|thewitchknight",
+				"thrust|thewitchknight",
+				"blade storm|thewitchknight",
+				"cleave|thewitchknight",
+				"d'artagnan's impromptu propulsion|thewitchknight",
+				"d'artagnan's lightning arrow|thewitchknight",
+				"freezing ray|thewitchknight",
+				"ghoul touch|thewitchknight",
+				"lightning lash|thewitchknight",
+				"longarm|thewitchknight",
+				"magnetise|thewitchknight",
+				"shadow step|thewitchknight",
+				"sting|thewitchknight",
+				"guiding line|thewitchknight",
+				"storm surge|thewitchknight",
+				"anticoagulate|thewitchknight",
+				"filtch magic|thewitchknight",
+				"storm cage|thewitchknight"
+			],
+			"fluff": [
+				{
+					"type": "section",
+					"name": "The Witch Knight",
+					"source": "TheWitchKnight",
+					"page": 2,
+					"entries": [
+						"一个精灵给她的弓上了弦，等待着完美的攻击时机。她从她的野蛮表亲那里得到了灵感，她开始为她的箭注入元素能量。当她松开箭的那一刻，它迸发出火焰，直接飞向巨魔的眼睛。",
+						"一个龙裔被惊醒了。他的盟友，也就是目前正在放哨的地精发出了一声吆喝，宣布了一场伏击。没有多想，这个爬行动物的战士抓起他的剑和盾牌，只穿着小衣服就跑到地精面前。他很乐意接受打击以拯救一个值得信赖的盟友的生命。然而，在牛头人的斧头劈进他的皮肤之前，它就被龙裔留在他的床铺旁的辉煌的板甲所迎接。",
+						"地精放下了他的法术书，叹了口气。他的伙伴刚刚在盲目的愤怒中跑掉了。他们将不得不以后再谈这个问题。地精把法术书放在一旁的桌子上，抓起旁边破碎的剑柄就往门外跑。在他穿过门槛的那一刻，金属碎片化为实体，飞到剑柄上，一边飞一边重建这把破碎的武器。",
+						"这些战士被称为巫师骑士。他们都是剑术和法术学校的学生。通常被误认为是长老骑士，这些奥术战士将武术的精湛和魔法的强大融合在一起，别无他法。虽然不像巫师那样擅长法术，也不像战士那样擅长战争，但他们在试图将两者结合起来的过程中胜过任何一方。",
+						{
+							"type": "entries",
+							"name": "Elemental Adepts",
+							"page": 1,
+							"entries": [
+								"大多数施法者在战斗中使用咒语作为他们的面包和黄油，而女巫骑士则在他们的武器中注入元素魔法。经过训练的女巫骑士们对元素是如此的适应，以至于对他们来说就像呼吸一样自然。",
+								"巫师骑士随时准备召唤元素，但也可能无意识地释放它们，或以轻微的方式。这些元素的表现并不显著，不足以直接造成任何数量的伤害（虽然它可以伤害很多）。但可以无意识地表现出来，如被激怒时噼里啪啦的闪电，或有目的地表现出来，如冷却一杯饮料或点燃一张羊皮纸。",
+								"这些影响不会在他们的身体之外表现得很远，只能通过他们所接触的物体表现出来。但这样的怪癖确实导致他们有奇怪的声誉，因此被比喻为女巫。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Swords and Sorcery",
+							"page": 1,
+							"entries": [
+								"巫师骑士以给他们的武器注入魔法而闻名。不过，不只是简单的元素魔法，女巫骑士也以通过他们的武器传递更强大的法术而闻名。",
+								"咒语经常被它们所传导的武器所重塑，成为短程爆炸而不是能量的棱镜射线或从远处吸取生命能量。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Witch Knight",
+							"page": 2,
+							"entries": [
+								"当你创造你的女巫骑士角色时，考虑赋予你特殊能力的训练的性质。你是否首先学习了剑法，然后用魔法进一步推动自己？是反过来的吗？或者两者都是？",
+								"谁教你的？是私人教师还是临时的魔法强盗？你的魔法是从哪里来的？是背诵和练习，还是在刀刃上培养自己的天赋？",
+								"是什么让你走向世界的？你是否渴望冒险，渴望有机会将你多年的奉献付诸实践？你的训练没有完成，你的主人被带走了，他们的技能受到重视，而现在你必须在努力拯救他们的同时找出自己的出路？不管是什么原因，你现在被推到了世界上，准备展示像你这样的武术魔术师能做什么。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"page": 2,
+									"entries": [
+										"按照这些建议，你可以很快做出一个女巫骑士。首先，将力量或灵巧作为你的最高能力得分，这取决于你是想专注于近战武器还是射箭（或技巧性武器）。你最近的得分应该是智力。第二，选择士兵或圣人背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Arcane Enhancement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"你的训练赋予你一个神奇的奥术力量之井。你对这口井的使用权由法力值的数量表示。",
+				"你的巫师骑士等级决定了你的点数，如巫师骑士表的法力点数一栏所示。当你完成长时间的休息时，你会重新获得所有花费的法力值。",
+				"随着你等级的提高，你将获得额外的奥术强化。除非另有说明，你在任何时候都不能有一个以上的奥术强化物。任何不在你手中的强化物都会失去其强化效果。"
+			]
+		},
+		{
+			"name": "Arcane Enhancement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"你的训练赋予你一个神奇的奥术力量之井。你对这口井的使用权由法力值的数量表示。",
+				"你的巫师骑士等级决定了你的点数，如巫师骑士表的法力点数一栏所示。当你完成长时间的休息时，你会重新获得所有花费的法力值。",
+				"随着你等级的提高，你将获得额外的奥术强化。除非另有说明，你在任何时候都不能有一个以上的奥术强化物。任何不在你手中的强化物都会失去其强化效果。",
+				"{@homebrew Some parts of this feature was divided into other class features to stay faithful to the class table.}",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Arcane Weapon|TheWitchKnight",
+					"name": "Arcane Enhancement: Arcane Weapon"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Diminishing Armor|TheWitchKnight",
+					"name": "Arcane Enhancement: Diminishing Armor"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"作为一个奥术魔法的学生，你有一本包含法术的魔法书，这些法术显示了你真正力量的最初曙光。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"page": 3,
+					"entries": [
+						"在1级时，你会从（%0%）中选择两个咒语。在更高的等级，你会学习额外的巫师骑士咒语，如巫师骑士表的已知咒语栏所示。",
+						"当你在这个等级中获得一个等级时，你可以用巫师骑士法术列表中的另一个巫师骑士法术替换你所知道的一个巫师骑士法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellbook",
+					"page": 4,
+					"entries": [
+						"一级时，你拥有一本包含五个一级巫师骑士法术的法术书，由你选择。",
+						{
+							"type": "inset",
+							"name": "Your Spellbook",
+							"entries": [
+								"随着你等级的提高，你添加到你的法术书中的法术反映了你自己进行的奥术研究，以及你对多元宇宙的性质的智力突破。你可能会在冒险过程中发现其他法术。比如说，你可以在一个邪恶巫师的箱子里的卷轴上发现一个咒语，或者在一个古老图书馆里的尘封的小册子里发现一个咒语。",
+								{
+									"type": "entries",
+									"name": "Copying a Spell into the Book",
+									"page": 4,
+									"entries": [
+										"当你发现一个一级或以上的巫师骑士法术时，如果它的等级是你有法术槽的，并且你能抽出时间来破译和复制它，你可以将它加入你的法术书。",
+										"将一个咒语复制到你的魔法书中需要复制咒语的基本形式，然后破译写咒语的巫师或女巫骑士所使用的独特符号系统。你必须练习该咒语，直到你理解所需的声音或手势，然后用你自己的符号将其转录到你的法术书中。",
+										"对于每一级的咒语，这个过程需要2小时，花费50戈比。这笔费用代表了你在试验该咒语以掌握它时所消耗的材料成分，以及你记录它所需的精细墨水。一旦你花费了这些时间和金钱，你就可以像其他法术一样准备这个法术。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Replacing the Book",
+									"page": 4,
+									"entries": [
+										"你可以从自己的法术书中复制一个法术到另一本法术书中--例如，如果你想为你的法术书做一个备份。这就像把一个新的咒语复制到你的魔法书中一样，但是更快、更容易，因为你了解自己的记号，并且已经知道如何施法。你只需要花1个小时和10个金币来完成每一级的复制法术。",
+										"如果你丢失了你的法术书，你可以用同样的程序将你准备的法术转录到一个新的法术书中。填写你的法术书的剩余部分需要你找到新的法术才行，和平常一样。出于这个原因，许多巫师将备份的法术书放在一个安全的地方。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Book's Appearance",
+									"page": 4,
+									"entries": [
+										"你的法术书是一本独特的法术汇编，有自己的装饰和边注。它可能是一本你从主人那里收到的普通的、实用的皮革书，也可能是你在古老的图书馆里找到的装订精美的镀金小册子，甚至是你在一次意外中丢失了以前的法术书之后，搜罗到的松散的笔记。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"page": 4,
+					"entries": [
+						"巫师骑士表显示了你有多少个法术槽来施展你的一级及以上的法术。要施展其中一个法术，你必须消耗一个该法术等级或更高的法术槽。当你完成长时间的休息时，你会重新获得所有消耗的法术槽。",
+						"你准备可供你施展的巫师骑士法术清单。为此，从你的法术书中选择一定数量的巫师骑士法术，其数量等于你的智力修正值+你的巫师骑士等级的一半，向下取整（最少一个法术）。这些法术的等级必须是你有法术槽的。",
+						"例如，如果你是一个5级的巫师骑士，你有四个1-1级和两个2级的法术槽。在智力为16的情况下，你准备的法术清单可以包括5个1级或2级的法术，以任何组合，从你的法术书中选择。如果你准备了1级法术（%0%），你可以用1级或2级法术槽来施放它。施放该法术不会从你准备的法术列表中移除它。",
+						"你可以在完成长时间休息时改变你准备的法术清单。准备一份新的巫师骑士法术清单需要花时间研究你的法术书，并记住你在施法时必须做出的咒语和手势：对于你清单上的每个法术等级，至少需要1分钟。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 4,
+					"entries": [
+						"智力是你的巫师骑士法术的施法能力，因为你通过专门的学习和训练来学习你的法术。每当法术提到你的法术能力时，你就会使用你的智力。此外，在设定你所施展的巫师骑士法术的蓄力DC时，以及在使用巫师骑士法术进行攻击时，你都会使用你的智力修饰。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"page": 4,
+					"entries": [
+						"如果一个巫师骑士的咒语有仪式标签，并且你的法术书中有该咒语，你就可以作为仪式施放该咒语。你不需要准备好该咒语。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"page": 4,
+					"entries": [
+						"你可以使用一个奥术焦点作为你的巫师骑士法术的施法焦点。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Learning Spells of 1st Level and Higher",
+					"page": 4,
+					"entries": [
+						"每当你获得一个巫师骑士等级，你可以在你的法术书中加入一个你选择的巫师骑士法术。每个法术都必须是你有法术槽的等级，如巫师骑士表所示。在你的冒险中，你可能会发现其他的法术，你可以把它们加入到你的法术书中。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spell Strike",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 4,
+			"level": 2,
+			"entries": [
+				"到了2级，你已经学会了将你的武器训练与法术结合起来。当你施展一级或更高等级的法术时，如果需要使用法术攻击卷作为施法的一部分，你可以用武器攻击来代替你的法术攻击。",
+				"如果攻击成功，你的攻击会造成正常的武器伤害和法术的效果。",
+				"攻击的范围是武器的范围或咒语的范围，以较短者为准。",
+				"源自自己以外的某一点的法术不能用这个能力。",
+				"如果你施展的法术需要多次法术攻击，你只进行第一次攻击卷，其余的法术攻击会注入你的武器，直到你用武器进行那么多次攻击。如果你用一个新的法术攻击，任何未用完的法术攻击都会丢失。此外，你必须专注于该法术，直到所有的法术攻击都被耗尽。",
+				"多次法术打击的缺失不会增加维持法术的费用。",
+				"{@homebrew Some parts of this feature was divided into other class features to stay faithful to the class table.}"
+			]
+		},
+		{
+			"name": "Witch Knight Discipline",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 2,
+			"entries": [
+				"当你达到2级时，你可以选择你所擅长的一门学科。驯兽师、长生守护者、体型改变者、法术之刃和法术破坏者。每一门学科都在等级描述的末尾有详细说明。",
+				"当你在2级时选择它，并在6级、10级、14级和20级时再次选择它，你的选择会赋予你特性。"
+			]
+		},
+		{
+			"name": "Arcane Recovery",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 3,
+			"entries": [
+				"从3级开始，你已经学会了通过研究你的法术书来恢复你的部分魔法能量。每天一次，当你完成短暂的休息时，你可以选择消耗的法术槽来恢复和重获法力值。",
+				"恢复的法术槽和法力值数量的总和等于或小于你的巫师骑士等级的一半（四舍五入），你恢复的法术值数量最多为你等级的一半（四舍五入）。",
+				"例如，如果你是一个5级的巫师骑士，你最多可以恢复价值3级的法术槽。你可以恢复一个二级和一级的法术槽，三个一级的法术槽，或者一个二级的法术槽和一个法力点。"
+			]
+		},
+		{
+			"name": "Arcane Enhancement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 3,
+			"level": 3,
+			"entries": [
+				"在3级时，你获得以下奥术强化。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Arcane Trap|TheWitchKnight",
+					"name": "Arcane Enhancement: Arcane Trap"
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Spell Strike Improvement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 5,
+			"entries": [
+				"在5级时，当你用远程武器使用法术攻击时，攻击的范围是武器的范围。",
+				"同样从5级开始，如果你用近战武器使用你的法术攻击能力，并且攻击卷轴失败，你可以花费一个法力点，来维持这个法术，就像你的法术有一个以上的攻击。当你这样做时，咒语会被维持在你的武器内，直到你下一回合结束或你用它击中一个生物。"
+			]
+		},
+		{
+			"name": "Discipline Feature",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的巫师骑士修行所赋予的特性。"
+			]
+		},
+		{
+			"name": "Spell Combat",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 7,
+			"entries": [
+				"7级时，当你用行动施展1级或以上的法术时，你可以将一次武器攻击作为奖励行动。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Arcane Enhancement Improvement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 3,
+			"level": 9,
+			"entries": [
+				"9级时，你的奥术强化功能会有如下提升。",
+				{
+					"type": "entries",
+					"name": "Enhance Ally",
+					"page": 3,
+					"entries": [
+						"从9级开始，你可以用奥术强化来针对另一个生物或它的装备，否则就会针对你自己或你的装备。",
+						"这样做会增加一个法力点的费用。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Discipline Feature",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 10,
+			"entries": [
+				"在10级时，你获得一个由你的巫师骑士修行所赋予的特性。"
+			]
+		},
+		{
+			"name": "Arcane Affliction",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 11,
+			"entries": [
+				"从11级开始，当你使用奥术武器强化时，在你的每个回合中，你的武器的攻击都会根据所选择的伤害类型获得一个辅助效果。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "options",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Acid",
+									"page": 5,
+									"entries": [
+										"该生物必须做一个灵巧的救赎动作，否则它的AC值会被降低，降低的幅度是它所受的酸液伤害，直到你下一个回合开始，最低为10+它的灵巧修正值。这种减伤不能叠加。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Cold",
+									"page": 5,
+									"entries": [
+										"该生物必须做一个宪法规定的救赎动作，否则其行动将减半，直到你下一回合开始。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fire",
+									"page": 5,
+									"entries": [
+										"该生物必须做一个灵巧的拯救动作，否则就会被烧死。如果该生物在着火时开始它的回合，它将受到你的一个强化模子的火伤害。该生物可以作为一个行动再次进行救赎，如果他们跌倒在地，则获得优势。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Force",
+									"page": 5,
+									"entries": [
+										"该生物必须做一个力量救赎动作，否则会被推到离你10英尺远的地方。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Lightning",
+									"page": 5,
+									"entries": [
+										"在目标生物的10英尺范围内，你选择的生物必须做一个灵巧的拯救动作，否则也会受到你的一个强化模子的雷电伤害。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Necrotic",
+									"page": 5,
+									"entries": [
+										"该生物必须进行宪法救赎，否则其武器攻击的伤害就会被你的强化模子减少，直到你下一回合开始。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Poison",
+									"page": 5,
+									"entries": [
+										"该生物必须进行宪法救赎，否则在你的下一回合开始前会受到（%0%）的影响。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Psychic",
+									"page": 5,
+									"entries": [
+										"该生物必须进行智力救赎，或者在你下一回合开始之前，以劣势进行所有智力、智慧和魅力的救赎和专注力检查。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Radiant",
+									"page": 5,
+									"entries": [
+										"该生物必须进行宪法救赎，否则在你的下一回合开始前会受到（%0%）的影响。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Thunder",
+									"page": 5,
+									"entries": [
+										"该生物必须做一个体质救赎动作，否则会被击倒（%0%）。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Empower Spellcraft",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 11,
+			"entries": [
+				"11级时，当你为一个法术掷出伤害时，你可以花费一个法力点。当你这样做时，你可以重新掷出一定数量的伤害骰子，数量不超过你的智力修正值。你必须使用新的卷轴。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Discipline Feature",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 14,
+			"entries": [
+				"在14级时，你获得一个由你的巫师骑士修行所赋予的特性。"
+			]
+		},
+		{
+			"name": "Redirect Mana",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 15,
+			"entries": [
+				"到了15级，你已经学会了如何操纵甚至其他施法者的奥术力量。作为对某人的反应，在你60英尺范围内，施放一个造成伤害的法术，你可以试图夺取对该法术的控制。",
+				"该生物必须用它的法术能力做一个拯救动作。如果成功，你将获得对该法术的控制权，就像你施放了它一样。如果该法术造成的伤害与任何活动中的奥术强化的伤害类型相同，你可以用优势做出这个救赎。",
+				"如果该法术需要进行法术攻击，它就会像法术攻击一样灌输给你的武器。这时你可以用该法术进行攻击，作为该反应的一部分，或者将其保留到以后。",
+				"否则，你可以在咒语范围内相对于自己的任何地方改变咒语的目标。",
+				"或者，你可以尝试吸收该法术。恢复与该法术等级相等的法力值。",
+				"你可以使用这个能力的次数与你的智力修饰值相等（最少一次）。当你完成一个长时间的休息时，你会重新获得任何已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Persistent Focus",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 18,
+			"entries": [
+				"在18级时，如果你维持一个法术的注意力检查失败，你可以花费与失去的法术等级相等的法力点来维持它。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Discipline Feature",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"page": 5,
+			"level": 20,
+			"entries": [
+				"在20级时，你获得一个由你的巫师骑士修行所赋予的特性。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Beast Bonded",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Beast Bonded",
+			"page": 6,
+			"level": 2,
+			"entries": [
+				"许多施法者都会召唤被称为 \"家属 \"的生物来帮助他们完成任务。与野兽结合的巫师骑士也遵循这一理念，然而他们的任务更适合于大型野兽。幸运的是，他们有魔法在身边。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Companion|Witch Knight|TheWitchKnight|Beast Bonded|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Enhancement: Enhanced Familiar|Witch Knight|TheWitchKnight|Beast Bonded|TheWitchKnight|2|TheWitchKnight"
+				}
+			]
+		},
+		{
+			"name": "Arcane Companion",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Beast Bonded",
+			"page": 6,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"2级时，你的法术书增加了（%0%）。",
+				"当你施展这个法术时，你的熟人拥有相当于你的巫师骑士等级5倍的命中率。",
+				"此外，当你采取{@dice Attack}行动时，你可以放弃你自己的一次攻击，让你的熟人自己进行一次攻击。",
+				"最后，作为一个额外的动作，你可以让你的熟人变成一个更大的战斗形态。在这种形态下，你的熟悉者获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你熟悉的人的体型变成中等。",
+						"它的伤害模子成为你的奥术强化模子。",
+						"它使用你的法术攻击修正值而不是自己的法术攻击修正值来进行攻击卷。",
+						"它的装甲等级按你的熟练度加成增加。",
+						"它的力量得分增加10。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Enhancement: Enhanced Familiar",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Beast Bonded",
+			"page": 6,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"同样在2级时，你知道如何用更多的魔力来束缚你的熟人。",
+				"作为一个额外的行动，你可以花费一个法力点以下列方式之一增强你的熟人，持续一分钟。",
+				{
+					"type": "list",
+					"items": [
+						"你熟悉的人的攻击会造成以下类型的伤害：酸、冷、火、闪电、毒和雷。",
+						"你的熟人会对以下类型的伤害产生抵抗力：酸、冷、火、闪电、毒和雷。",
+						"你熟悉的人的速度增加一倍。",
+						"你熟悉的人的行动力按你的智力修改系数增加。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Beast Strike",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Beast Bonded",
+			"page": 6,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你施展符合法术攻击能力的法术时，你可以选择你的熟人来代替武器。",
+				"你仍然必须专注于通过你的熟人施放的具有未用攻击的法术，尽管你只需要在你的熟人受到伤害时进行专注度检查。",
+				"当你的熟人被遣散时，任何未用完的野兽攻击都会丢失。"
+			]
+		},
+		{
+			"name": "Pack Tactics",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Beast Bonded",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以使用你的额外行动来命令你的熟人进行攻击。",
+				"此外，如果你和你的熟人都在同一生物的5英尺范围内，在你的回合中，你对该生物的第一次攻击具有优势。"
+			]
+		},
+		{
+			"name": "Spell Eater",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Beast Bonded",
+			"page": 6,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你的熟人在面对法术和其他魔法效果时，在蓄力攻击方面具有优势。",
+				"此外，如果你的熟人对专门针对它的咒语或魔法能力的救赎成功，它就会获得{@optfeature Enhanced Familiar|TheWitchKnight}增强中的一个选项的好处，持续1分钟。",
+				"一旦它吃了一个法术，它就不能再这样做，直到你完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "War Beast",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Beast Bonded",
+			"page": 7,
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你可以使你的熟人在战斗中更加强大。",
+				"作为一个额外动作，你为你的熟人注入大量的魔法，而不是进入它的战斗形态，你的熟人变得更加可怕。在一分钟内，你的熟人获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你熟悉的尺寸变得很大。",
+						"它的伤害模子变成你的奥术强化模子的两个。",
+						"它变得对击打、砍击和穿刺伤害有抵抗力。",
+						"它的力量得分增加15。",
+						"它获得20个临时命中点。"
+					]
+				},
+				"该能力的其他功能与它的战斗形式相同，因此不能同时受益于这两种能力。",
+				"一旦你使用这个能力，你就不能再使用它，直到你完成一个短暂的休息。"
+			]
+		},
+		{
+			"name": "Eldritch Guardian",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 7,
+			"level": 2,
+			"entries": [
+				"虽然大多数巫师骑士专注于对他们的敌人造成尽可能多的伤害，但其他人则使用他们的魔法来保护自己和他们的盟友。",
+				"恶魔守护者为他们的盔甲注入能量，削弱来袭的攻击，并对毫无准备的人进行反击。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fighting Style|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Armor Bond|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Transmitive Defense|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|2|TheWitchKnight"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiency",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 7,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"当你在2级时采用这种修行，你获得对重甲的熟练度。"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 7,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"你采用一种特殊的战斗风格作为你的专长。从以下选项中选择一个。你不能多次选择一种格斗风格，即使你后来可以再次选择。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protection"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Armor Bond",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 7,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"在2级时，你学习一种仪式，在你和一件盔甲之间建立一种神奇的联系。你在1小时内完成这个仪式，可以在短暂的休息中完成。在整个仪式过程中，盔甲必须在你能触及的范围内，在仪式结束时，你要触摸盔甲，并建立起纽带。",
+				"一旦你将一件盔甲与自己结合，它的盔甲等级就不会再被降低，你可以将它作为你的巫师骑士法术的施法焦点。如果它在同一个存在平面上，你可以在你的回合中以额外行动召唤该盔甲，立即穿上它。"
+			]
+		},
+		{
+			"name": "Transmitive Defense",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 7,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"从第2级开始，当减弱护甲强化处于激活状态时，你可以使用你的反应将它转移到30英尺内的另一个生物身上，直到你下一个回合开始。"
+			]
+		},
+		{
+			"name": "Spell Armor",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 7,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你发现你可以给你的盔甲注入法术，产生毁灭性的效果。",
+				"当你施展需要法术攻击的法术时，你可以花费一个法力点来放弃该攻击，并将该法术注入你的盔甲。当你的盔甲里有一个法术时，你需要保持对该法术的专注。",
+				"当你身边5英尺内的生物对你进行攻击并击中时。你可以使用你的反应，向该生物释放咒语。该生物会自动承受该法术的伤害，就像它击中了一样。"
+			]
+		},
+		{
+			"name": "Arcane Enhancement: Elemental Mantle",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 7,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"同样在6级的时候，你发现你也可以给你的盔甲注入元素能量。",
+				"作为一个动作，你可以花费两点法力，从酸、冷、火、闪电、毒和雷中选择一种伤害类型。在接下来的一分钟内，每当你身边5英尺内的生物用攻击击中你时，它就会受到{@dice 1d6}点所选伤害类型的伤害。",
+				"伤害量会随着你作为巫师骑士的等级提升而增加，如巫师骑士表的奥术强化栏所示。"
+			]
+		},
+		{
+			"name": "Reactionary",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 8,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你可以在一回合内做出两次反应，而不是只做出一次反应。",
+				"你可以使用这个功能的次数与你的智力修饰值相等（最少一次）。当你完成一个长时间的休息时，你会恢复所有已消耗的使用。"
+			]
+		},
+		{
+			"name": "Transposing Guardian",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 8,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"同样在10级的时候，当一个生物对你30英尺范围内的非你自己的生物攻击成功时，如果他们愿意，你可以作为反应花费一个法力点与他们神奇地交换位置，代替他们承受打击。"
+			]
+		},
+		{
+			"name": "Spell Barrier",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 8,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你在对抗法术和其他魔法效果的所有拯救动作上都有优势。"
+			]
+		},
+		{
+			"name": "Ultimate Bulwark",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Eldritch Guardian",
+			"page": 8,
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，作为一个额外的行动，你可以用一个保护罩将自己和30英尺范围内的一些生物包裹起来，其数量不超过你的智力修正值。",
+				"在1小时内，所有对处于此效果下的生物的伤害卷都被当作是卷了1s。如果你被击倒（%0%）、死亡或你作为一个额外的行动结束它，这个效果会提前结束。",
+				"一旦你使用这个能力，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Elementalist",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 8,
+			"level": 2,
+			"entries": [
+				"巫师骑士以使用元素魔法来提高他们的战斗能力而闻名。元素师将这种做法推向了合理的终点。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Fundamentals|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Evoke Weapon|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|2|TheWitchKnight"
+				}
+			]
+		},
+		{
+			"name": "Elemental Fundamentals",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 8,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"当你在2级时遵循这个纪律，你学会了{@spell control flames|XGE}、{@spell gust|XGE}、{@spell mold earth|XGE}和{@spell shape water|XGE}的咒语，然而你会失去这个等级的所有其他咒语。",
+				"这些咒语必须适合的尺寸在6级时增加到10英尺，10级时增加到15英尺，14级时增加到20英尺。{@spell Gust|XGE}推搡生物的距离是上面列出的，轻于5磅的物体被投掷的距离是其两倍。"
+			]
+		},
+		{
+			"name": "Evoke Weapon",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 8,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"此外，在2级时，你学会将元素塑造成你所选择的武器。作为一个额外的动作，你可以用任何附近的空气、土、火或水制造一个近战武器。",
+				"武器的伤害类型对水来说变成了冷，对火来说变成了火，对空气来说变成了雷，对土来说变成了武器各自的伤害类型的魔法伤害。",
+				"武器一离开你的手就会散架，你会将它（不需要你的行动），或者你变出一个新的武器。"
+			]
+		},
+		{
+			"name": "Elemental Artillery",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 8,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"6级时，你学会了如何利用你对元素的控制来对付远处的敌人。",
+				"你获得一个范围为120英尺的攻击，使用你的智力修改器。攻击造成的伤害等于你的输液模子加上你的智力修正值，其类型取决于你的唤起武器能力所选择的元素。"
+			]
+		},
+		{
+			"name": "Expanded Elements",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 8,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"到了10级，你对元素的力量已经扩大，赋予你对更多创造的基本原理的掌握。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你的{@spell control flames|XGE}咒语现在可以操纵附近的熔融物质，类似于形状水对水的影响。",
+						"你的{@spell gust|XGE}咒语可以用来导致电火花的形成。这些火花虽然没有伤害，但仍会伤害到可燃物体。此外，你可以用你的 \"唤起武器 \"能力将这些电形成武器，用电制成的武器会造成闪电伤害，并在攻击金属制成的或穿着金属的生物时具有优势。",
+						"你的{@spell mold earth|XGE}咒语现在可以用来操纵未加工的非魔法石。",
+						"你的{@spell shape water|XGE}咒语现在可以操纵非熔融液体，如酸或牛奶。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Enhancement: Evoke Armor",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 8,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"同样在10级的时候，你获得了将元素吸引到你周围作为防御面纱的能力。",
+				"作为一个额外的行动，你可以花费2点法力来获得对寒冷、火焰、闪电或雷霆伤害的抵抗，或者在接下来的一分钟内对来自非魔法武器的打击、砍击和穿刺伤害的抵抗。"
+			]
+		},
+		{
+			"name": "Elemental Minions",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 9,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你将{@spell conjure minor elementals}的法术加入到你的法术书中，它对你来说算作一个巫师骑士法术。",
+				"此外，在17级时，你将{@spell conjure elementals}的法术加入你的法术列表，它也算作你的巫师骑士法术。"
+			]
+		},
+		{
+			"name": "Primordial Maelstrom",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Elementalist",
+			"page": 9,
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你获得变身为元素物质的狂暴万花筒的能力。当你作为额外行动激活这个能力时，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你对寒冷、火焰、闪电和雷电的伤害以及非魔法武器的击打、砍击和穿刺伤害免疫。",
+						"在你20英尺范围内开始他们的回合，或者来到你20英尺范围内的生物，会受到1d10点冷、火、闪电、雷或魔法的重击、切割或穿刺伤害。",
+						"你不需要呼吸。",
+						"你获得与你的基本移动速度相等的飞行速度。",
+						"你可以使用（%0%）、（%1%）、（%2%）和（%3%）作为奖励动作。"
+					]
+				},
+				"这种转变最多持续1分钟，如果你被打成0点或死亡，它将提前结束。一旦你使用这个能力，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Sizeshifter",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Sizeshifter",
+			"page": 9,
+			"level": 2,
+			"entries": [
+				"你知道真相，变得更有力量的最简单方法是身体变得更大。",
+				"这个学科的巫师骑士体现了这一真理，他们的身体膨胀到巨大的比例，在战斗中造成破坏。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Witch Knight|TheWitchKnight|Sizeshifter|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Enhancement: Enlarge Self|Witch Knight|TheWitchKnight|Sizeshifter|TheWitchKnight|2|TheWitchKnight"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiency",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Sizeshifter",
+			"page": 9,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"你可以说、读、写巨人。"
+			]
+		},
+		{
+			"name": "Arcane Enhancement: Enlarge Self",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Sizeshifter",
+			"page": 9,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"当你在2级时追求这个修行，你学会给自己注入魔法，增加你的体型。",
+				"你可以花费两个法力点作为奖励动作。在接下来的一分钟里，你的体型在所有维度上都会翻倍，你的体重也会乘以8。这种增长使你的体型增加一个类别。如果没有足够的空间让你的体型翻倍，你会在现有的空间里达到最大的体型，当有更多的空间时，你会继续成长。",
+				"此外，你在力量检查和力量投掷方面也有优势。你的武器也会根据你的新尺寸而增长。当你的武器变大时，它们所造成的额外伤害与你的强化模子相等。"
+			]
+		},
+		{
+			"name": "Size Thief",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Sizeshifter",
+			"page": 9,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级开始，当你使用 \"扩大自我 \"的强化时，你可以瞄准60英尺内你能看到的另一个比你大至少一个体型的生物，并试图将它的体型吸进你自己。",
+				"该生物必须做一个宪法规定的救赎动作，否则目标的尺寸在所有维度上都会减半，其重量也会减少到正常的八分之一。这种减少会使它的尺寸减少一个类别。在强化结束之前，目标在力量检查和力量救赎上也有劣势。目标的武器也会缩小以符合其新的尺寸。当这些武器被缩小时，目标用它们进行的攻击会减少{@dice 1d4}的伤害（这不能使伤害减少到1以下）。",
+				"一旦成功，强化就会失败，所花的法力值也会消失。",
+				"该生物在其轮回结束时做一个不利于宪法的救赎，以提前结束强化。"
+			]
+		},
+		{
+			"name": "Living Siege Weapon",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Sizeshifter",
+			"page": 9,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级时，在放大自我的强化作用下，你的攻击对物体和结构造成双倍伤害。",
+				"此外，在 \"扩大自我 \"的效果下，你可以向一个生物或物体投掷巨石，作为一个动作。这是一个使用你力量值的攻击，范围为30/120英尺，造成相当于你的强化模子的2+你的力量修正值的打击性伤害。"
+			]
+		},
+		{
+			"name": "Brutal Force",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Sizeshifter",
+			"page": 9,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你把你掷出的任何1的伤害视为2。"
+			]
+		},
+		{
+			"name": "Titanification",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Sizeshifter",
+			"page": 9,
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你已经掌握了操纵你的体型的逻辑结论。",
+				"作为一个额外的动作，你的体型会爆炸到巨大的比例，你会获得以下好处，持续1小时。",
+				{
+					"type": "list",
+					"items": [
+						"你的体型变成巨大的。",
+						"你的触角增加10英尺。",
+						"你的攻击会造成额外的2D10点的伤害。",
+						"你的移动速度增加一倍。",
+						"如果你的力量检查或蓄力投掷的总分小于你的力量得分，你可以用这个分数来代替总分。"
+					]
+				},
+				"如果没有足够的空间让你达到你的最大尺寸，你可以做一个力量检查来冲出容纳你的东西。如果你检查失败，这个能力就会失效，在你完成短期或长期休息之前，不能再尝试使用它。",
+				"你可以压制这个效果，并作为额外行动再次恢复它，但这样做并不能延长持续时间。一旦你使用了这个能力，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Spellblade",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 9,
+			"level": 2,
+			"entries": [
+				"当人们谈到巫师骑士时，脑海中浮现的是咒语刀。到目前为止，法术刀是最直接的学科，法术刀通过他们的武器引导他们的魔法达到致命的效果。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fighting Style|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Weapon Bond|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Switch Hitter|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|2|TheWitchKnight"
+				}
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 9,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"你采用一种特殊的战斗风格作为你的专长。从以下选项中选择一个。你不能多次选择一种格斗风格的选项，即使你后来可以再次选择。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Archery"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Dueling"
+				},
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Great Weapon Fighting"
+				}
+			]
+		},
+		{
+			"name": "Weapon Bond",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"在2级时，你学习一种仪式，在你和一件武器之间建立一种神奇的联系。你在1小时内完成这个仪式，可以在短暂的休息中完成。在整个仪式过程中，武器必须在你伸手可及的范围内，在仪式结束时，你要触摸武器并建立起联系。",
+				"一旦你将武器绑定在自己身上，除非你丧失能力，否则你无法解除该武器的武装，并且可以将其作为你的巫师骑士法术的施法焦点。如果它在同一个存在平面上，你可以在你的回合中作为额外行动召唤该武器，使其瞬间传送到你的手中。",
+				"你最多可以拥有两把绑定的武器，但每次只能用你的额外行动召唤一把。如果你试图与第三把武器结合，你必须与另外两把武器中的一把解除结合。"
+			]
+		},
+		{
+			"name": "Switch Hitter",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"在2级的时候，如果你有两把绑定的武器，并且你手里拿着其中一把绑定的武器，你可以在任何时候把它换成另一把，甚至在攻击之间，并保持在前一把上的任何增强。"
+			]
+		},
+		{
+			"name": "Mystic Weapon",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你的绑定武器在克服对非魔法攻击和伤害的抵抗力和免疫力方面算作魔法武器。"
+			]
+		},
+		{
+			"name": "Arcane Enhancement: Arcane Overflow",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"同样在6级时，你可以花费两点法力，作为奖励动作，为你的武器过度注入元素力量。",
+				"从酸、冷、火、闪电、毒和雷中选择一种伤害类型。在接下来的一分钟里，所有的武器攻击都会在你的攻击路径上散发出一股元素能量的痕迹。",
+				"你的所有近战武器攻击都会从接触点向外投射一条能量线，无论攻击是否成功。在攻击方向上你面前20英尺范围内的所有生物都必须做一个灵巧的蓄力动作，否则会受到你的奥术强化伤害。成功时承受一半的伤害。",
+				"所有的远程武器攻击都会从投射物落地的地方向自己投射一条线。在你和你的目标之间的40英尺范围内的所有生物，都必须做一个灵巧的蓄力动作，否则就会受到你的奥术强化伤害。成功后将受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Greater Arcane Weapon",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，除了原有的奥术武器选项外，你还可以选择坏死、精神和辐射伤害类型。这些选项对于奥术武器需要2点，对于奥术溢出需要3点。"
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你的武器攻击在掷出19或20的情况下可以获得关键打击。"
+			]
+		},
+		{
+			"name": "Eldritch Charge",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，当你将一个生物击倒为0命中率时，你可以使用你的额外行动，将其传送到你能看到的地方，最远可达60英尺。"
+			]
+		},
+		{
+			"name": "Arcane Maelstrom",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellblade",
+			"page": 10,
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，你已经同时掌握了剑和法术。",
+				"作为下一分钟的额外行动，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你的武器攻击在掷出18-20的情况下可以获得关键打击。",
+						"你的武器攻击会造成额外的{@dice 1d10}点任何类型的伤害，每次攻击都有选择。",
+						"你不需要专注于储存在你武器中的法术打击。",
+						"你可以用武器进行攻击，作为一个奖励动作。"
+					]
+				},
+				"一旦你使用这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Spellbreaker",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 10,
+			"level": 2,
+			"entries": [
+				"你比任何人都清楚，魔法是危险的。你每天都在使用它，对人们造成严重的伤害。",
+				"这就是为什么你开发了各种技术，试图减轻对你使用魔法的影响。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|2|TheWitchKnight"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Break Magic|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|2|TheWitchKnight"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiency",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 10,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"2级时，你获得对重甲的熟练度。"
+			]
+		},
+		{
+			"name": "Break Magic",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 10,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"2级时，你学会了如何将反魔法导入你的武器。",
+				"当你被一个会对你造成伤害的法术或魔法效果盯上时，你可以用你的反应向它挥动你的武器以破坏它。掷出你的武器的伤害模子，并将你的巫师骑士等级加入其中，并将传来的伤害减少这一数量。"
+			]
+		},
+		{
+			"name": "Dismantle Spellcraft",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，作为一项行动，你可以花费一个法力点尝试驱散120英尺内的任何魔法效果。进行智力检查，如果成功，该效果就被驱散。",
+				"如果魔法效果来自法术，则DC等于10+法术的等级。",
+				"如果魔法效果是一个物体的固有组成部分，如魔法物品，效果反而会被压制1分钟。"
+			]
+		},
+		{
+			"name": "Absorb Magic",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 11,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，当你使用你的破魔能力时，如果你将一个1级或以上的法术的传入伤害降低到0，你会恢复一个法力点。"
+			]
+		},
+		{
+			"name": "Forceful Weapon",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 11,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"同样在10级时，你将武力伤害加入到奥术武器可用的伤害类型中。"
+			]
+		},
+		{
+			"name": "Feedback",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 11,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以花费1个或更多的法力值作为对你60英尺内的生物施法的反应。",
+				"如果该咒语是2级或更低，该咒语就会失败并且没有效果，并且该生物会受到与该咒语等级相等的增强模子的力量伤害。如果该咒语是3级或更高，你必须对DC等于10+该咒语等级的智力检查。如果成功，该法术就会失败，并且没有效果，而该生物会受到与该法术等级相等的强化模子的伤害，最多是所花法力点数的两倍。",
+				"如果你花了超过一个法力点，每多花一个法力点，未经检查而失败的最高法术等级就增加2。"
+			]
+		},
+		{
+			"name": "Arcane Apostate",
+			"source": "TheWitchKnight",
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight",
+			"subclassSource": "TheWitchKnight",
+			"subclassShortName": "Spellbreaker",
+			"page": 11,
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在20级时，作为一个额外的行动，你可以散发一个魔法消耗光环。在接下来的一分钟内，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"当一个法术要求你做一个蓄力的动作，而你的总数小于你的护甲等级，你可以用你的AC来代替总数。",
+						"所有来自法术或其他魔法效果的伤害骰子都被视为掷出了1。",
+						"所有在你周围60英尺内施放的、会针对另一个生物的法术，都会转而针对你。"
+					]
+				},
+				"一旦你使用了这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Anticoagulate",
+			"source": "TheWitchKnight",
+			"page": 12,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a powerful anticoagulant worth 100 GP, which is consumed as it is applied to a blade",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你向一个你能接触到的生物出击。对目标进行一次近战法术攻击。一旦命中，该生物会受到{@dice 4d8}点毒药伤害，并在持续时间内受到{@condition poisoned}。在它的回合开始时，目标会受到额外的{@damage 2d8}坏死伤害，而{@condition poisoned}由这个法术造成。",
+				"在它的每个回合结束时，目标可以做一个宪法救赎动作。如果成功，该咒语将在目标身上结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用六级或以上的法术槽施放此法术时，攻击的伤害增加（%0%），每回合开始时受到的伤害增加（%1%），每超过四级的法术槽等级。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Arcane Barrage",
+			"source": "TheWitchKnight",
+			"page": 12,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造六个发光的魔力飞镖，飞向范围内的目标。对每个飞镖进行一次远程法术攻击。一旦命中，飞镖对目标造成{@damage 1d4 + 1}的力量伤害。这些飞镖都是同时攻击的，你可以指挥它们攻击一个或多个生物。一旦击中要害，飞镖不是造成{@damage 2d4 + 1}的伤害，而是一分为二，额外击中一次。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级以上的法术槽施放这个法术时，法术槽的等级每超过3级就会多创造两个飞镖。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Barbed Chains",
+			"source": "TheWitchKnight",
+			"page": 13,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a chain doused with fresh blood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你从另一个领域召唤出一条锁链，使其从地面迸发出来，攻击法术范围内的目标。进行近战法术攻击，如果攻击击中生物，该生物会受到{@dice 1d8}点魔法切割伤害。然后，该生物必须做一个力量救赎动作，否则在法术持续时间内会被（%1%）。该生物可以在它的每个回合进行力量（（%2%））或灵巧（（%3%））的检查以逃脱。如果一个生物从锁链旁开始转身（4%），它会受到额外的（5%）点魔法切割伤害。",
+				"作为一个额外的行动，你可以命令锁链释放一个生物，或者，如果它们没有抓捕一个生物，则攻击一个新的目标。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你用2级以上的法术槽施展这个法术，你可以在每个施法者等级中额外召唤1条链。这些额外的锁链可以针对30英尺内的另一个生物或同一目标。如果两个或更多的链子成功地击中了一个生物，那么它就会在不利的情况下进行蓄力和逃脱检查。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SMN",
+				"UBA"
+			]
+		},
+		{
+			"name": "Blade Storm",
+			"source": "TheWitchKnight",
+			"page": 13,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a melee weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造一个作为此法术组成部分的武器的幽灵副本，并向范围内的一个生物发射。进行一次范围性的法术攻击。一旦命中，目标会受到伤害，就像被所选武器击中一样。幽灵武器是有魔力的。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果该武器是非魔法武器，当你使用3级或更高等级的法术槽施放该法术时，你创造一个额外的幽灵武器，每超过2级的法术槽等级。如果该武器是魔法武器，当你使用四级或更高等级的法术槽施展该法术时，你会创造一个额外的幽灵武器，每超过两个法术槽等级"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "2nd",
+					"entries": [
+						"你可以向一个目标或几个目标发射它们。"
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Bladed Dash",
+			"source": "TheWitchKnight",
+			"page": 13,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a melee weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你施展这个法术时，你会立即在任何方向的直线上移动30英尺，以一个无人的空间为终点，瞬间在你身后留下一串多色彩的图像。",
+				"你可以在运动过程中的任何一点对你触及范围内的任何一个生物进行一次近战武器攻击。",
+				"这个动作不会引起机会攻击。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施放此法术时，你可以在1级以上的每两个法术槽等级中针对一个额外的生物。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Cleave",
+			"source": "TheWitchKnight",
+			"page": 13,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a melee weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你伸出你的武器，并开始以快速的速度旋转。进行一次近战武器攻击，如果攻击会击中5英尺内的任何生物，该生物会受到伤害，就像你对他们进行了攻击一样，对于每一个后续的生物，你的攻击卷总数减少2。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，你可以为每两个高于二级的法术槽等级做一个额外的攻击卷。"
+					]
+				}
+			]
+		},
+		{
+			"name": "d'Artagnan's Erupting Pillar",
+			"source": "TheWitchKnight",
+			"page": 13,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a stretched piece of gum"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一个表面的5英尺乘5英尺的部分从表面挤压到10英尺以外，把与表面相连的任何和所有的生物或物体都带走。",
+				"不愿意的生物可以在它移动的时候做一个灵巧的蓄力动作来移开道路。如果柱子上的生物或物体与其他物体相撞，它将受到{@dice 3d4}点打击性伤害，并且柱子会停下来。",
+				"作为一个额外的行动，你可以将柱子收回，并使它从范围内的另一点喷发出来。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，你会使每一个高于一级的法术槽等级的柱子喷发。你只能用你的奖励动作移动一根柱子。"
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "d'Artagnan's Impromptu Propulsion",
+			"source": "TheWitchKnight",
+			"page": 13,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a firecracker"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择一个生物或一个你可以触摸到的物体。目标会被送到30英尺的直线上，无论你选择什么方向。",
+				"如果目标与一个物体相撞，他们会被视为已经跌落了这个法术的剩余距离，并立即停止。",
+				"不愿意的生物可以做一个力量救赎动作来否定这个效果。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施展此法术时，目标每超过2级的法术槽等级就会多飞5英尺。"
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "d'Artagnan's Lightning Arrow",
+			"source": "TheWitchKnight",
+			"page": 14,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "pieces of wool and rubber"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一支噼里啪啦的白箭朝范围内的目标飞去，在一片闪电中爆裂。对目标进行一次远程法术攻击。命中时，目标受到{@damage 4d4}的闪电伤害，然后它向你选择的30英尺内的另一个生物攻击，该生物受到{@damage 2d4}的闪电伤害。如果没有命中，箭矢会用闪电冲击目标，造成初始伤害的一半，并且不会伤害另一个目标。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害（初始和第二目标）都会增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Filtch Magic/Plant Magic",
+			"source": "TheWitchKnight",
+			"page": 14,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"你做出扫过一个生物的本质。选择一个触手可及的生物，并选择你想用 Filtch 或种植法术效果。",
+				{
+					"type": "entries",
+					"name": "Filtch",
+					"entries": [
+						"如果该咒语是3级或更低的，它在目标身上结束，然后在你身上恢复原咒语持续时间的剩余部分。如果该咒语是4级或更高级别的，请使用你的施法能力进行能力检查。能力值等于10 + 咒语的等级。检验成功后，该法术在目标身上结束，然后在你身上恢复原法术的剩余持续时间。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Plant",
+					"entries": [
+						"目标必须做一个魅力拯救动作。如果拯救失败，你选择的一个3级或更低的单一法术会立即在你身上结束，并在目标身上恢复原法术的剩余持续时间。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施放此法术时，filtch可以自动窃取目标身上的法术效果，植物可以将法术转移到目标身上，如果该法术的等级低于你使用的法术槽的等级。"
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Freezing Ray",
+			"source": "TheWitchKnight",
+			"page": 14,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一道缥缈的蓝色射线从你手中射出，射向范围内的一个目标。进行一次法术攻击。一旦命中，目标受到{@damage 3d6}寒冷伤害并被冻结在原地。目标的速度变为0，并且在持续时间内不能从任何速度奖励中获益。",
+				"作为一个行动，该生物可以做一个力量救赎来冲出冰层，结束咒语对它们的影响。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或更高等级的法术槽施展此法术时，你在二级以上的每两个法术槽等级创造一个额外的射线。你可以向一个目标或多个目标发射它们。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			]
+		},
+		{
+			"name": "Ghoul Touch",
+			"source": "TheWitchKnight",
+			"page": 14,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "part of a ghoul, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你将之前被杀死的食尸鬼的残骸涂抹在一个触手可及的生物身上。对目标进行一次近战法术攻击。如果攻击命中，该生物在持续时间内会被（%0%）。",
+				"在它的每个回合结束时，目标可以做出宪法规定的拯救动作。如果成功，该咒语将在目标身上结束。"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Guiding Line",
+			"source": "TheWitchKnight",
+			"page": 14,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a fishing line"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你发射出一条空灵的绳索，把你和你的目标绑在一起。",
+				"对范围内的生物进行一次远程法术攻击。如果攻击命中，直到法术结束，你对该生物的所有远程攻击都有优势。",
+				"咒语提前结束，如果目标曾经超过你的40英尺，你攻击一个不同的生物，或者目标死亡。"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Hobble",
+			"source": "TheWitchKnight",
+			"page": 14,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你向范围内的生物的主要运动方式出击。对目标进行一次近战法术攻击。如果攻击命中，该生物的速度会降低一半，直到法术结束。"
+			],
+			"spellAttack": [
+				"M"
+			]
+		},
+		{
+			"name": "Lightning Lash",
+			"source": "TheWitchKnight",
+			"page": 14,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向范围内的生物投掷一条闪电线。",
+				"对目标进行一次近战攻击。如果攻击命中，该生物会受到{@dice 5d8}点的雷电伤害，并且必须做一个力量救赎动作。如果救赎失败，该生物会被拉成一条直线，直到它在你的5英尺范围内，或者它的行动因任何原因受到阻碍。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Longarm",
+			"source": "TheWitchKnight",
+			"page": 15,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a piece of taffy"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的手臂变得有弹性，可以伸展到一个极端的程度。在咒语结束之前，你的触角延伸了5英尺。"
+			]
+		},
+		{
+			"name": "Magnetise",
+			"source": "TheWitchKnight",
+			"page": 15,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lodestone"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"选择一个你能看到的范围内的人造金属物体，如金属武器或重型或中型金属盔甲套装。你使该物体被向下拉动。如果一个生物拿着或穿着该物体，并受到该物体的伤害，该生物必须成功地进行力量救赎，或者如果可以的话丢掉该物体。如果它不能放下物体，它就会被击倒（%0%），并在持续时间内被击倒（%1%）。",
+				"该生物可以在其回合开始时进行救赎，以消除（%0%）的条件。在咒语结束之前，你可以在随后的每个回合使用一个额外行动，使该物体再次被拉到地上。"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Mudball",
+			"source": "TheWitchKnight",
+			"page": 15,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤出一个土块，并将它抛向范围内的一个目标。进行一次范围性的法术攻击。一旦命中，该生物会受到{@dice 1d4}点重击伤害，其视野会被遮蔽，直到它或其他生物花费他们的行动来移除它。当他们的视力受到影响时，他们进行所有依赖视力的智慧（（%1%））检查和攻击卷都是不利的。",
+				"对成为{@condition blinded}免疫的生物或拥有{@sense blindsight}或类似能力的生物，不会获得不利条件。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施展此法术时，你所召唤的泥球数量每超过一级法术槽就增加1。",
+						"生物一次只能受到一个泥球的影响。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Pitfall",
+			"source": "TheWitchKnight",
+			"page": 15,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a trowel"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你取出四个5英尺长的土块、沙子或粘土。你可以随意安排这四个立方体，但它们必须是相邻的。",
+				"如果你把生物下面的泥土移开，它必须成功地进行灵巧的救赎，否则就会掉进去，（%0%）。",
+				"虽然清除泥土不会扰乱周围的地形，但也不能防止其自发缺席的副作用。你不能在一个不愿意的生物下面清除超过5英尺的泥土。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，每超过一级的法术槽等级，你可以再移除四个立方体。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Shadow Step",
+			"source": "TheWitchKnight",
+			"page": 15,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你绕过了阴影地带。直到你下一回合开始，所有在昏暗的光线或黑暗中进行的移动都会忽略地形上的缝隙和障碍物，并且不能被没有（%0%）或（%1%）的生物看到。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，此法术就会多持续一回合。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sting",
+			"source": "TheWitchKnight",
+			"page": 15,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A bee's thorax"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一只小小的幽灵蜜蜂从你身边飞过，飞向范围内的一个生物。进行一次范围性的法术攻击。一旦命中，该物体和它所攻击的东西都会受到{@damage 4d6}的毒药伤害，并且必须做一个宪法救赎动作。拯救失败时，它也会在持续时间内受到{@condition poisoned}的伤害。"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Storm Cage",
+			"source": "TheWitchKnight",
+			"page": 15,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"闪电弧在范围内形成一个网状屏障，围绕半径为20英尺的半球体。",
+				"当一个生物试图通过这个区域，试图进入或离开时，他们必须做一个宪法救赎的动作，否则会受到{@dice 3d8}点的雷电伤害，并被推到10英尺的相反方向，并被击倒{@condition prone}。如果成功，生物会受到一半的伤害，并且不会被移动或掉落（%2%）。穿着主要由金属制成的盔甲的生物，在进行这一救赎时处于劣势。",
+				"通过屏障的攻击是以劣势进行的。如果一个生物试图通过屏障进行近战攻击，就必须进行宪法规定的救赎，就像他们试图通过一样。使用主要由金属制成的武器进行攻击的生物，会以劣势进行这一救赎。",
+				"穿过屏障的法术和攻击会造成雷电伤害，会自动失败，并将其伤害骰子加到下一个试图穿过或攻击屏障的生物的伤害上。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施放此法术时，每超过4级的法术槽等级，伤害就会增加（%0%）。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Storm Surge",
+			"source": "TheWitchKnight",
+			"page": 16,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a section of carpet"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在持续时间内，电火花不断从你的身体发出。电能穿过你的武器，使它们造成额外的（%0%）雷电伤害。此外，每当你身边5英尺内的生物用近战攻击击中你时，闪电会沿着他们的武器移动，攻击者会受到{@damage 2d8}的闪电伤害。"
+			],
+			"damageInflict": [
+				"lightning"
+			]
+		},
+		{
+			"name": "Telekinetic Volley",
+			"source": "TheWitchKnight",
+			"page": 16,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在范围内选择一个重量为1到5磅的物体，并且没有被佩戴或携带。该物体以一条直线飞向范围内的一个生物。进行一次范围性的法术攻击。一旦命中，该物体和它所击中的物体各受到{@damage 3d8}的击打伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施展此法术时，你可以发射一个额外的物体，每超过1级的两个法术槽等级。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Thrust",
+			"source": "TheWitchKnight",
+			"page": 16,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向一个你能接触到的生物向前刺去。对目标进行一次近战法术攻击。如果攻击命中，该生物被击退10英尺。",
+				"当你使用3级以上的法术槽施法时，目标每超过2级的法术槽等级，就会被额外击退10英尺。"
+			],
+			"spellAttack": [
+				"M"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Improved Find Familiar",
+			"source": "TheWitchKnight",
+			"prerequisite": [
+				{
+					"spell": [
+						"Find Familiar"
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你施放{@spell find familiar}法术时，除了正常的选择外，你还可以选择术士与链之契约的特殊形式之一。",
+						"你熟悉的人的命中率变成（3+（%0%）的法术能力修饰值）乘以你的角色等级，除非它更高。",
+						"你熟悉的人的智力分值增加到6，除非它更高，并能说话，和阅读你知道的任何语言。"
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Enlarge Self",
+			"source": "TheWitchKnight",
+			"page": 9,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Witch Knight",
+							"source": "TheWitchKnight"
+						},
+						"subclass": {
+							"name": "Sizeshifter",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在2级时追求这个修行，你学会给自己注入魔法，增加你的体型。",
+				"你可以花费两个法力点作为奖励动作。在接下来的一分钟里，你的体型在所有维度上都会翻倍，你的体重也会乘以8。这种增长使你的体型增加一个类别。如果没有足够的空间让你的体型翻倍，你会在现有的空间里达到最大的体型，当有更多的空间时，你会继续成长。",
+				"此外，你在力量检查和力量投掷方面也有优势。你的武器也会根据你的新尺寸而增长。当你的武器变大时，它们所造成的额外伤害与你的强化模子相等。"
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		},
+		{
+			"name": "Arcane Overflow",
+			"source": "TheWitchKnight",
+			"page": 10,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Witch Knight",
+							"source": "TheWitchKnight"
+						},
+						"subclass": {
+							"name": "Spellblade",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"同样在6级时，你可以花费两点法力，作为奖励动作，为你的武器过度注入元素力量。",
+				"从酸、冷、火、闪电、毒和雷中选择一种伤害类型。在接下来的一分钟里，所有的武器攻击都会在你的攻击路径上散发出一股元素能量的痕迹。",
+				"你的所有近战武器攻击都会从接触点向外投射一条能量线，无论攻击是否成功。在攻击方向上你面前20英尺范围内的所有生物都必须做一个灵巧的蓄力动作，否则会受到你的奥术强化伤害。成功时承受一半的伤害。",
+				"所有的远程武器攻击都会从投射物落地的地方向自己投射一条线。在你和你的目标之间的40英尺范围内的所有生物，都必须做一个灵巧的蓄力动作，否则就会受到你的奥术强化伤害。成功后将受到一半的伤害。"
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		},
+		{
+			"name": "Evoke Armor",
+			"source": "TheWitchKnight",
+			"page": 8,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Witch Knight",
+							"source": "TheWitchKnight"
+						},
+						"subclass": {
+							"name": "Elementalist",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"同样在10级的时候，你获得了将元素吸引到你周围作为防御面纱的能力。",
+				"作为一个额外的行动，你可以花费2点法力来获得对寒冷、火焰、闪电或雷霆伤害的抵抗，或者在接下来的一分钟内对来自非魔法武器的打击、砍击和穿刺伤害的抵抗。"
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		},
+		{
+			"name": "Elemental Mantle",
+			"source": "TheWitchKnight",
+			"page": 7,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Witch Knight",
+							"source": "TheWitchKnight"
+						},
+						"subclass": {
+							"name": "Eldritch Guardian",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"同样在6级的时候，你发现你也可以给你的盔甲注入元素能量。",
+				"作为一个动作，你可以花费两点法力，从酸、冷、火、闪电、毒和雷中选择一种伤害类型。在接下来的一分钟内，每当你身边5英尺内的生物用攻击击中你时，它就会受到{@dice 1d6}点所选伤害类型的伤害。",
+				"伤害量会随着你作为巫师骑士的等级提升而增加，如巫师骑士表的奥术强化栏所示。"
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		},
+		{
+			"name": "Enhanced Familiar",
+			"source": "TheWitchKnight",
+			"page": 6,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Witch Knight",
+							"source": "TheWitchKnight"
+						},
+						"subclass": {
+							"name": "Beast Bonded",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"同样在2级时，你知道如何用更多的魔力来束缚你的熟人。",
+				"作为一个额外的行动，你可以花费一个法力点以下列方式之一增强你的熟人，持续一分钟。",
+				{
+					"type": "list",
+					"items": [
+						"你熟悉的人的攻击会造成以下类型的伤害：酸、冷、火、闪电、毒和雷。",
+						"你的熟人会对以下类型的伤害产生抵抗力：酸、冷、火、闪电、毒和雷。",
+						"你熟悉的人的速度增加一倍。",
+						"你熟悉的人的行动力按你的智力修改系数增加。"
+					]
+				}
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		},
+		{
+			"name": "Arcane Weapon",
+			"source": "TheWitchKnight",
+			"page": 3,
+			"entries": [
+				"1级时，你可以为你的武器注入元素力量。你可以花费一个法力点，作为奖励动作，来造成额外的伤害。",
+				"从酸、冷、火、闪电、毒和雷中选择一种伤害类型。在接下来的一分钟内，你所有的武器攻击都会造成所选伤害类型的额外（%0%）点伤害。额外的伤害量会随着你作为巫师骑士的等级提升而增加，如巫师骑士表的奥术强化一栏所示。"
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		},
+		{
+			"name": "Diminishing Armor",
+			"source": "TheWitchKnight",
+			"page": 3,
+			"entries": [
+				"另外，在1级时，你可以花费一个法力点，减少来自攻击的伤害。在接下来的一分钟内，当你受到伤害时，你可以选择将其减少（%0%）。这个减少发生在你可能拥有的任何伤害减少之后。",
+				"随着你作为女巫骑士的等级提高，减少的传入伤害量也会增加，如女巫骑士表的奥术强化栏所示。"
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		},
+		{
+			"name": "Arcane Trap",
+			"source": "TheWitchKnight",
+			"page": 3,
+			"entries": [
+				"三级时，你学会了如何将你的元素魔法灌输到你可以画在表面的符号中。",
+				"作为一个行动，你可以花费1点法力来创造一个奥术陷阱。当你创造这个陷阱时，你从你的奥术武器强化的伤害类型中选择它的伤害类型。陷阱在你放置它的表面占据了5英尺的空间。",
+				"这些符号的设计使它们很难被发现。要注意到这个陷阱，没有亲眼看到这个标志产生的生物必须对你的法术救赎DC进行感知检查，并取得成功。",
+				"当一个生物，除了你自己或你在创造符咒时指定的生物，进入它的5英尺范围内，或者你作为一个额外动作触发它，所有在陷阱10英尺范围内的生物必须做出一个由伤害类型决定的拯救动作。对于酸、火、力量、闪电和辐射，使用灵巧；对于寒冷、坏死、毒药和雷霆，使用宪法；对于精神，使用智慧。",
+				"在拯救失败的情况下，该生物会受到所选类型的伤害，其数量等于你的强化模子等于你的智力修饰值（最小为1），或者在成功的情况下受到一半的伤害。",
+				"一旦被放置，这个陷阱就会一直留在原地，直到它被触发，你使用另一个奥术强化，或者你解除它（不需要你的行动）。"
+			],
+			"featureType": [
+				"TWK:AE"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Beast Bonded",
+			"source": "TheWitchKnight",
+			"page": 6,
+			"shortName": "Beast Bonded",
+			"additionalSpells": [
+				{
+					"innate": {
+						"2": [
+							"find familiar"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Beast Bonded|Witch Knight|TheWitchKnight|Beast Bonded|TheWitchKnight|2",
+				"Beast Strike|Witch Knight|TheWitchKnight|Beast Bonded|TheWitchKnight|6",
+				"Pack Tactics|Witch Knight|TheWitchKnight|Beast Bonded|TheWitchKnight|10",
+				"Spell Eater|Witch Knight|TheWitchKnight|Beast Bonded|TheWitchKnight|14",
+				"War Beast|Witch Knight|TheWitchKnight|Beast Bonded|TheWitchKnight|20"
+			],
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight"
+		},
+		{
+			"name": "Eldritch Guardian",
+			"source": "TheWitchKnight",
+			"page": 7,
+			"shortName": "Eldritch Guardian",
+			"subclassFeatures": [
+				"Eldritch Guardian|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|2",
+				"Spell Armor|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|6",
+				"Arcane Enhancement: Elemental Mantle|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|6",
+				"Reactionary|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|10",
+				"Transposing Guardian|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|10",
+				"Spell Barrier|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|14",
+				"Ultimate Bulwark|Witch Knight|TheWitchKnight|Eldritch Guardian|TheWitchKnight|20"
+			],
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight"
+		},
+		{
+			"name": "Elementalist",
+			"source": "TheWitchKnight",
+			"page": 8,
+			"shortName": "Elementalist",
+			"additionalSpells": [
+				{
+					"innate": {
+						"2": [
+							"control flames|XGE#c",
+							"gust|xge#c",
+							"mold earth|xge#c",
+							"shape water|XGE#c"
+						],
+						"14": [
+							"conjure minor elementals"
+						],
+						"17": [
+							"conjure elemental"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Elementalist|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|2",
+				"Elemental Artillery|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|6",
+				"Expanded Elements|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|10",
+				"Arcane Enhancement: Evoke Armor|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|10",
+				"Elemental Minions|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|14",
+				"Primordial Maelstrom|Witch Knight|TheWitchKnight|Elementalist|TheWitchKnight|20"
+			],
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight"
+		},
+		{
+			"name": "Sizeshifter",
+			"source": "TheWitchKnight",
+			"page": 9,
+			"shortName": "Sizeshifter",
+			"subclassFeatures": [
+				"Sizeshifter|Witch Knight|TheWitchKnight|Sizeshifter|TheWitchKnight|2",
+				"Size Thief|Witch Knight|TheWitchKnight|Sizeshifter|TheWitchKnight|6",
+				"Living Siege Weapon|Witch Knight|TheWitchKnight|Sizeshifter|TheWitchKnight|10",
+				"Brutal Force|Witch Knight|TheWitchKnight|Sizeshifter|TheWitchKnight|14",
+				"Titanification|Witch Knight|TheWitchKnight|Sizeshifter|TheWitchKnight|20"
+			],
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight"
+		},
+		{
+			"name": "Spellblade",
+			"source": "TheWitchKnight",
+			"page": 9,
+			"shortName": "Spellblade",
+			"subclassFeatures": [
+				"Spellblade|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|2",
+				"Mystic Weapon|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|6",
+				"Arcane Enhancement: Arcane Overflow|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|6",
+				"Greater Arcane Weapon|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|10",
+				"Improved Critical|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|10",
+				"Eldritch Charge|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|14",
+				"Arcane Maelstrom|Witch Knight|TheWitchKnight|Spellblade|TheWitchKnight|20"
+			],
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight"
+		},
+		{
+			"name": "Spellbreaker",
+			"source": "TheWitchKnight",
+			"page": 9,
+			"shortName": "Spellbreaker",
+			"subclassFeatures": [
+				"Spellbreaker|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|2",
+				"Dismantle Spellcraft|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|6",
+				"Absorb Magic|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|10",
+				"Forceful Weapon|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|10",
+				"Feedback|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|14",
+				"Arcane Apostate|Witch Knight|TheWitchKnight|Spellbreaker|TheWitchKnight|20"
+			],
+			"className": "Witch Knight",
+			"classSource": "TheWitchKnight"
+		}
+	]
+}

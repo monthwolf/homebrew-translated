@@ -1,0 +1,3884 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WalrockHomebrewWitch",
+				"abbreviation": "WHW",
+				"full": "Witch",
+				"authors": [
+					"Walrock Homebrew"
+				],
+				"convertedBy": [
+					"MobiusFlip"
+				],
+				"version": "2020.10.08",
+				"url": "https://www.dmsguild.com/product/248189/WH-The-Witch-a-character-class-of-natural-arcana-and-the-old-ways-of-magic"
+			}
+		],
+		"optionalFeatureTypes": {
+			"Jinx": "Jinx"
+		},
+		"dateAdded": 1595709333,
+		"dateLastModified": 1702292498,
+		"_dateLastModifiedHash": "754d101205"
+	},
+	"class": [
+		{
+			"name": "Witch",
+			"source": "WalrockHomebrewWitch",
+			"fluff": [
+				{
+					"name": "The Witch",
+					"type": "section",
+					"entries": [
+						"一个年轻的人类松散地握着一根魔杖，满头红发，带着腼腆的笑容，面对一个愤怒的兽人战士，体型几乎是他的三倍。随着一句话和一个手势，男孩的红发突然爆发出一阵长长的、凶恶的、活生生的卷须，缠绕在兽人的腿和喉咙上，把这个震惊的战士从他的脚上拖下来，高高举起。",
+						"坐在漂浮的扫帚上，一个长着绿色眼睛的木精灵轻轻地指挥着扫帚经过王宫，在俯瞰王室的一扇打开的窗户旁闲逛。她透过窗户，看到全境的国王在他的宝座上开庭。精灵轻轻地把手伸进她的袖子里，取出一个简陋的草编娃娃，头上戴着一顶小小的金冠，还有一根闪闪发光的银针。一根针刺穿了娃娃的心脏，国王痛苦地捂着胸口翻了个身，让他的朝臣们陷入了盲目的恐慌。木精灵看着，很满意。",
+						"一个身穿灰色长袍的老年铁皮人用她信任的研钵和杵将一把草药捣成粉末，然后将它们扔进她的大锅里，大锅已经在明火上烧开了。当她这样做时，大锅散发出有毒的绿色云雾，并开始疯狂地起泡。在短短的几天内，这个女巫将开始蒸馏过程，创造一个新的长生毒药瓶，从世界上渗出生命。",
+						"巫师是最早的魔法的学习者，来自一个将奥术和自然融为一体的时代。巫师们放弃了他们的一些同龄人所研究的更深奥的魔法，他们更喜欢具有各种潜在用途的实用魔法。女巫们利用黑夜和土地中固有的力量，为死去的同伴注入生命，酿制神秘的药水和毒药，其威力足以击倒一条龙，并编织出可怕的诅咒，可能会困扰一个人的余生。",
+						{
+							"name": "Acolytes of the First Magic",
+							"entries": [
+								"当世界还很年轻，凡人种族完全受原始人、神和怪物的摆布时，黑暗中的一些生物对那些挣扎着生存的较小的生物给予了惊人的怜悯。",
+								"无论这些生命是神灵、特定的神，还是更邪恶的东西，没有两个故事是一致的，但他们达成的交易为世界带来了凡人魔法的最初迹象。巫师们认为是这些魔法给了凡人一个战斗的机会，而其他更怀疑巫术的人则说这是恶意实体对凡人事务的第一次干涉，是对神的纯粹意志的冒犯。",
+								"巫师总是有很强的个人主义色彩，在当今时代，巫师团和实践已经分裂。虽然所有的女巫都从他们长辈的著作和话语中学习，但有些女巫将古代的方法作为一种不断发展的历史和学术追求来研究，而有些女巫则在野性中实践她们的魔法，与那些在她们面前铺设自然奥术之路的古老生命充分交流。巫师是一个多样化的群体，他们很少就如何最好地使用他们的魔法达成一致，即使是在同一个巫师团中。"
+							],
+							"type": "section"
+						},
+						{
+							"name": "Devoted to the Craft",
+							"entries": [
+								"虽然不是所有的女巫都在远方游荡，但没有一个女巫的生活可以被认为是正常的。巫师作为诅咒制造者和更坏的人的名声常常伴随着他们，即使是最好的巫师也常常面临来自他们试图帮助的人的至少一丝怀疑或恐惧。",
+								"尽管如此，女巫们总是致力于学习其工艺的复杂性，尽管许多女巫确实涉足其中。巫师所学技艺的具体内容通常是该巫师所过生活的产物。一个知道如何捆绑伤口的女巫可能已经做过很多次了，而一个精通诅咒艺术的女巫可能在生活中充满了复仇和怨恨。"
+							],
+							"type": "section"
+						},
+						{
+							"name": "Creating a Witch",
+							"entries": [
+								"当你创造你的女巫角色时，强烈考虑他们的道德和个人倾向。女巫总是持有对世界的看法，并愿意据此行事，这使她们成为一种充满活力的决定性力量。这些态度如何塑造你的魔法，而你的魔法又如何反过来塑造他们？",
+								"谁是向你介绍魔法的女巫？你是在森林深处偶然发现了一个神秘的仪式，还是进入了一个著名的巫术学院？那些与你亲近的女巫持有什么样的价值观，它们是如何染指你的个性和理想的？",
+								"最后，是什么让你选择了流浪女巫的生活？你是在寻找不为人知的秘密，还是在逃避你的贱民身份，或是在寻找一个属于你的土地和地方？在任何情况下，你的动机是你自己的，而且很少有人会阻止你实现它们。",
+								{
+									"type": "inset",
+									"name": "Witchcraft and Gender",
+									"entries": [
+										"在许多世界中，巫术作为一种魔法实践，与被认定为女性的魔法使用者紧密相连。不管是什么原因，这些世界的巫师所修炼的魔法主要（或完全）是单一性别的领域。",
+										"然而，D&D中历史上出现的女巫并不默认为与某种性别一致。任何性别的成员都可以成为女巫，尽管围绕着性别和巫术的文化和社会风俗在不同的设定中可能仍有很大的差异。"
+									]
+								}
+							],
+							"type": "section"
+						}
+					],
+					"source": "WalrockHomebrewWitch",
+					"page": 4
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"{@item blowgun|phb|blowguns}",
+					"{@item dagger|phb|daggers}",
+					"{@item quarterstaff|phb|quarterstaffs}",
+					"{@item sickle|phb|sickles}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"arcana",
+								"history",
+								"insight",
+								"medicine",
+								"nature",
+								"religion",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"tools": [
+					"{@item alchemist's supplies|phb}",
+					"{@item herbalism kit|phb}",
+					"{@item poisoner's kit|phb}"
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item dagger|phb} or (b) a {@item sickle|phb}",
+					"(a) a {@item component pouch|phb}, (b) an {@item arcane focus|phb}, or (c) a {@item druidic focus|phb}",
+					"a set of {@item alchemist's supplies|phb}, an {@item herbalism kit|phb}, and a {@item poisoner's kit|phb}"
+				],
+				"goldAlternative": "{@dice 2d4 × 10|2d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"dagger|phb"
+						],
+						"b": [
+							"sickle|phb"
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						],
+						"c": [
+							"druidic focus|phb"
+						]
+					},
+					{
+						"_": [
+							"alchemist's supplies|phb",
+							"herbalism kit|phb",
+							"poisoner's kit|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"{@item blowgun|phb|blowguns}",
+						"{@item dagger|phb|daggers}",
+						"{@item quarterstaff|phb|quarterstaffs}",
+						"{@item sickle|phb|sickles}"
+					],
+					"tools": [
+						"{@item alchemist's supplies|phb}",
+						"{@item herbalism kit|phb}",
+						"{@item poisoner's kit|phb}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Jinxes Known"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Witch}",
+						"{@filter Spells Known|spells|class=Witch}"
+					],
+					"rows": [
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							4,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							11
+						],
+						[
+							5,
+							12
+						],
+						[
+							5,
+							13
+						],
+						[
+							5,
+							14
+						],
+						[
+							5,
+							15
+						],
+						[
+							5,
+							16
+						],
+						[
+							5,
+							17
+						],
+						[
+							5,
+							18
+						],
+						[
+							5,
+							19
+						],
+						[
+							5,
+							19
+						],
+						[
+							5,
+							20
+						],
+						[
+							5,
+							20
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Witch}",
+						"{@filter 2nd|spells|level=2|class=Witch}",
+						"{@filter 3rd|spells|level=3|class=Witch}",
+						"{@filter 4th|spells|level=4|class=Witch}",
+						"{@filter 5th|spells|level=5|class=Witch}",
+						"{@filter 6th|spells|level=6|class=Witch}",
+						"{@filter 7th|spells|level=7|class=Witch}",
+						"{@filter 8th|spells|level=8|class=Witch}",
+						"{@filter 9th|spells|level=9|class=Witch}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Spellcasting|Witch|WalrockHomebrewWitch|1",
+				"Occult Familiar|Witch|WalrockHomebrewWitch|1",
+				"Jinx (1/rest)|Witch|WalrockHomebrewWitch|2",
+				{
+					"classFeature": "Witch's Coven|Witch|WalrockHomebrewWitch|2",
+					"gainSubclassFeature": true
+				},
+				"Brewcraft|Witch|WalrockHomebrewWitch|3",
+				"Imbue Potion|Witch|WalrockHomebrewWitch|3",
+				"Ability Score Improvement|Witch|WalrockHomebrewWitch|4",
+				"Jinx (2/rest)|Witch|WalrockHomebrewWitch|5",
+				{
+					"classFeature": "Witch's Coven feature|Witch|WalrockHomebrewWitch|6",
+					"gainSubclassFeature": true
+				},
+				"Enchant Broom|Witch|WalrockHomebrewWitch|7",
+				"Ability Score Improvement|Witch|WalrockHomebrewWitch|8",
+				{
+					"classFeature": "Witch's Coven feature|Witch|WalrockHomebrewWitch|10",
+					"gainSubclassFeature": true
+				},
+				"Fine Fettle|Witch|WalrockHomebrewWitch|11",
+				"Ability Score Improvement|Witch|WalrockHomebrewWitch|12",
+				{
+					"classFeature": "Witch's Coven feature|Witch|WalrockHomebrewWitch|14",
+					"gainSubclassFeature": true
+				},
+				"Jinx (3/rest)|Witch|WalrockHomebrewWitch|15",
+				"Ability Score Improvement|Witch|WalrockHomebrewWitch|16",
+				"Ability Score Improvement|Witch|WalrockHomebrewWitch|19",
+				"Grand Old Wytch|Witch|WalrockHomebrewWitch|20"
+			],
+			"classSpells": [
+				"abi-dalzim's horrid wilting|xge",
+				"Acid Splash",
+				"Alarm",
+				"Alter Self",
+				"Animal Friendship",
+				"Animal Messenger",
+				"Animal Shapes",
+				"Animate Objects",
+				"Antimagic Field",
+				"Antipathy/Sympathy",
+				"Arcane Eye",
+				"Astral Projection",
+				"Augury",
+				"Awaken",
+				"awaken machine spirit|walrockhomebrewcodexoftechnomancy",
+				"Banishment",
+				"Barkskin",
+				"beast bond|xge",
+				"Beast Sense",
+				"bigby's blistering barnacles|walrockhomebrewcodexofwaves",
+				"bones of the earth|xge",
+				"catapult|xge",
+				"catnap|xge",
+				"cause fear|xge",
+				"charm monster|xge",
+				"Charm Person",
+				"Chill Touch",
+				"Circle of Death",
+				"Clairvoyance",
+				"Command",
+				"Commune with Nature",
+				"Comprehend Languages",
+				"Compulsion",
+				"Confusion",
+				"Conjure Animals",
+				"Conjure Elemental",
+				"Conjure Fey",
+				"Conjure Minor Elementals",
+				"conjure trap|walrockhomebrewcodexoftechnomancy",
+				"Conjure Woodland Beings",
+				"Contact Other Plane",
+				"control flames|xge",
+				"Control Water",
+				"Control Weather",
+				"control winds|xge",
+				"Counterspell",
+				"create bonfire|xge",
+				"Create Food and Water",
+				"create homunculus|xge",
+				"Create or Destroy Water",
+				"Create Undead",
+				"Dancing Lights",
+				"deconstruct|walrockhomebrewcodexoftechnomancy",
+				"Detect Evil and Good",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Detect Thoughts",
+				"Dispel Magic",
+				"distort value|ai",
+				"Dominate Beast",
+				"Dominate Monster",
+				"Dominate Person",
+				"dragon's breath|xge",
+				"Dream",
+				"Druidcraft",
+				"dust devil|xge",
+				"earth tremor|xge",
+				"earthbind|xge",
+				"Earthquake",
+				"enemies abound|xge",
+				"Enhance Ability",
+				"Enlarge/Reduce",
+				"Enthrall",
+				"Entangle",
+				"Erupting Earth",
+				"Etherealness",
+				"Eyebite",
+				"Fabricate",
+				"Faerie Fire",
+				"fast friends|ai",
+				"Fear",
+				"Feather Fall",
+				"Feeblemind",
+				"Feign Death",
+				"Find the Path",
+				"Finger of Death",
+				"Flesh to Stone",
+				"flowsight|walrockhomebrewcodexofwaves",
+				"Fog Cloud",
+				"Forcecage",
+				"Foresight",
+				"Freedom of Movement",
+				"Friends",
+				"frostbite|xge",
+				"galder's speedy courier|llk",
+				"Gaseous Form",
+				"Gate",
+				"Geas",
+				"Gentle Repose",
+				"Giant Insect",
+				"gift of gab|ai",
+				"Glyph of Warding",
+				"Goodberry",
+				"Grasping Vine",
+				"guardian of nature|xge",
+				"Guards and Wards",
+				"Guidance",
+				"gust|xge",
+				"Gust of Wind",
+				"Hallow",
+				"Hold Monster",
+				"Hold Person",
+				"ice knife|xge",
+				"Ice Storm",
+				"Identify",
+				"illusory dragon|xge",
+				"Illusory Script",
+				"Imprisonment",
+				"incite greed|ai",
+				"infestation|xge",
+				"investiture of flame|xge",
+				"investiture of ice|xge",
+				"investiture of stone|xge",
+				"investiture of wind|xge",
+				"Invisibility",
+				"Knock",
+				"Legend Lore",
+				"Leomund's Tiny Hut",
+				"life transference|xge",
+				"Locate Animals or Plants",
+				"Locate Creature",
+				"Locate Object",
+				"luck of the sea|walrockhomebrewcodexofwaves",
+				"maddening darkness|xge",
+				"Mage Armor",
+				"Mage Hand",
+				"Magic Circle",
+				"Magic Jar",
+				"Magic Mouth",
+				"magic stone|xge",
+				"mass polymorph|xge",
+				"Mass Suggestion",
+				"Meld into Stone",
+				"Melf's Acid Arrow",
+				"Mending",
+				"mental prison|xge",
+				"Message",
+				"Mind Blank",
+				"Minor Illusion",
+				"Mirage Arcane",
+				"Misty Step",
+				"Modify Memory",
+				"mold earth|xge",
+				"Moonbeam",
+				"mordenkainen's capable caravel|walrockhomebrewcodexofwaves",
+				"Move Earth",
+				"Nondetection",
+				"Nystul's Magic Aura",
+				"Otto's Irresistible Dance",
+				"Passwall",
+				"Phantom Steed",
+				"Planar Ally",
+				"Planar Binding",
+				"Plane Shift",
+				"Plant Growth",
+				"Poison Spray",
+				"Polymorph",
+				"Power Word Kill",
+				"power word pain|xge",
+				"Power Word Stun",
+				"Prestidigitation",
+				"primal savagery|xge",
+				"Produce Flame",
+				"Project Image",
+				"Protection from Evil and Good",
+				"Protection from Poison",
+				"psychic scream|xge",
+				"Purify Food and Drink",
+				"Ray of Enfeeblement",
+				"Ray of Frost",
+				"Ray of Sickness",
+				"Reincarnate",
+				"ripple|walrockhomebrewcodexofwaves",
+				"Scrying",
+				"See Invisibility",
+				"Sending",
+				"Sequester",
+				"Shapechange",
+				"Silence",
+				"Simulacrum",
+				"sink|walrockhomebrewcodexofwaves",
+				"skill empowerment|xge",
+				"skywrite|xge",
+				"Sleep",
+				"Sleet Storm",
+				"Slow",
+				"snare|xge",
+				"snilloc's snowball swarm|xge",
+				"soul cage|xge",
+				"Spare the Dying",
+				"Speak with Animals",
+				"Speak with Dead",
+				"Speak with Plants",
+				"Spider Climb",
+				"Spike Growth",
+				"Stinking Cloud",
+				"Stone Shape",
+				"Storm of Vengeance",
+				"Suggestion",
+				"Symbol",
+				"Telekinesis",
+				"Teleportation Circle",
+				"tiny servant|xge",
+				"Thaumaturgy",
+				"Thorn Whip",
+				"tidal wave|xge",
+				"toll the dead|xge",
+				"Tongues",
+				"Transmute Rock",
+				"Transport via Plants",
+				"Tree Stride",
+				"True Polymorph",
+				"True Seeing",
+				"Unseen Servant",
+				"urchin's spines|walrockhomebrewcodexofwaves",
+				"Vampiric Touch",
+				"Wall of Stone",
+				"Wall of Thorns",
+				"warding wind|xge",
+				"Water Breathing",
+				"Water Walk",
+				"Web",
+				"Weird",
+				"whirlwind|xge",
+				"Witch Bolt",
+				"wrath of nature|xge",
+				"Zone of Truth"
+			],
+			"subclassTitle": "Witch's Coven",
+			"cantripProgression": [
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"spellsKnownProgression": [
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				19,
+				20,
+				20
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Beguiling",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"entries": [
+				"在一条直线上将该生物拉向你15英尺。这个动作不会激起机会攻击。"
+			]
+		},
+		{
+			"name": "Crippling",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"entries": [
+				"该生物的移动速度减少20英尺。"
+			]
+		},
+		{
+			"name": "Draining",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Witch"
+						}
+					}
+				}
+			],
+			"entries": [
+				"该生物不能重新获得命中率。"
+			]
+		},
+		{
+			"name": "Dulled Reflexes",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"entries": [
+				"该生物不能进行机会攻击。"
+			]
+		},
+		{
+			"name": "Fumbling",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Witch"
+						}
+					}
+				}
+			],
+			"entries": [
+				"该生物掉落它所持有的一件物品，由你选择。该物品落在该生物的脚下。"
+			]
+		},
+		{
+			"name": "Misfortune",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"entries": [
+				"该生物的下一次攻击是以劣势进行的。"
+			]
+		},
+		{
+			"name": "Repelling",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"entries": [
+				"在一条直线上将该生物直接推离你15英尺。这个动作不会激起机会攻击。"
+			]
+		},
+		{
+			"name": "Silenced",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Witch"
+						}
+					}
+				}
+			],
+			"entries": [
+				"该生物不能说话，也不能施展法术。"
+			]
+		},
+		{
+			"name": "Supplication",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"featureType": [
+				"Jinx"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Witch"
+						}
+					}
+				}
+			],
+			"entries": [
+				"该生物必须对你的法术救赎DC做一个力量救赎。如果它失败了，它就会变成俯卧，并且可以从这个状态中恢复如常。"
+			]
+		},
+		{
+			"name": "Wytchfire",
+			"source": "WalrockHomebrewWitch",
+			"page": 9,
+			"featureType": [
+				"Jinx"
+			],
+			"entries": [
+				"该生物在10英尺范围内施放暗光。下次对该生物的攻击具有优势。"
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Revelations",
+			"source": "WalrockHomebrewWitch",
+			"page": 18,
+			"colLabels": [
+				"d10",
+				"Revelation"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					1,
+					"鼓舞人心的洞察力。被选中的生物获得一点灵感。"
+				],
+				[
+					2,
+					"偶然的。该生物在它所做的下一个蓄力动作上具有优势。"
+				],
+				[
+					3,
+					"狭路相逢。被选中的生物可以立即移动一段距离，达到其移动速度，这不会引起机会攻击。"
+				],
+				[
+					4,
+					"转折点。该生物在它进行的下一次攻击中具有优势。"
+				],
+				[
+					5,
+					"堕落。该生物在下一次做拯救动作时处于不利地位。"
+				],
+				[
+					6,
+					"缺陷。该生物在它的下一次攻击中处于劣势。"
+				],
+				[
+					7,
+					"弱点。该生物变得容易受到你所选择的一种伤害类型的伤害，直到它受到一次该类型的伤害。"
+				],
+				[
+					8,
+					"隐藏的威力。该生物的下一次攻击如果命中会造成额外的1d8伤害。"
+				],
+				[
+					9,
+					"被遗忘的古玩。该生物在其身上发现一个你选择的新的世俗物品，其价值在5GP以下。"
+				],
+				[
+					10,
+					"命运之眼。该生物会知道它周围30英尺内所有其他生物的确切位置，直到你下一个回合开始为止，包括那些看不见的或在虚无界的生物。"
+				]
+			]
+		},
+		{
+			"name": "Fortune Telling",
+			"source": "WalrockHomebrewWitch",
+			"page": 19,
+			"colLabels": [
+				"d20",
+				"Card",
+				"Effects"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-2",
+				"col-17"
+			],
+			"rows": [
+				[
+					1,
+					"创作",
+					"在将敌方生物降低到0点命中率后，抽到这张牌的生物可以用这张牌在他们身上找到一个适当的有价值的物品或宝物，价值100金币。"
+				],
+				[
+					2,
+					"野兽",
+					"这张牌可以立即使用。在接下来的24小时内，抽到这张牌的生物在所有不属于威吓的魅力检查中都处于劣势，但在所有威吓检查中具有优势。"
+				],
+				[
+					3,
+					"破碎者",
+					"这张牌可以立即使用。在接下来的24小时内，抽到这张牌的生物将失去一些有意义的东西或人。"
+				],
+				[
+					4,
+					"黑暗之主",
+					"这张牌可以立即使用。抽到这张牌的生物必须说出另一个被认为是它的敌人的生物，然后对它的敌人的动机或目标获得一个它还不知道的有价值的洞察力。如果抽到这张牌的生物不知道有这样的敌人，这张牌会让它知道一个。"
+				],
+				[
+					5,
+					"冬庄",
+					"抽到此卡的生物可以在废墟或地牢内使用此卡。在那个地方时，抽到这张牌的生物在接下来的24小时内对任何寻找物体、房间或陷阱的检查都有优势。"
+				],
+				[
+					6,
+					"幽灵",
+					"这张牌可以立即使用。在接下来的24小时内，抽到这张牌的生物将面对它所杀死的敌人的鬼魂，或是它自己的行为所带来的严重后果。"
+				],
+				[
+					7,
+					"刽子手",
+					"当抽到这张牌的生物进行的攻击命中时，该生物可以使用这张牌使该攻击成为关键命中。"
+				],
+				[
+					8,
+					"骑士",
+					"这张牌可以立即使用。在接下来的24小时内，DM可以决定让击中抽到这张牌的生物的一次攻击成为关键一击。"
+				],
+				[
+					9,
+					"无辜的",
+					"这张牌是立即使用的。在接下来的24小时内，抽到这张牌的生物所认识和关心的人将被置于严重危险之中。"
+				],
+				[
+					10,
+					"木偶人",
+					"这张牌可以立即使用。抽到这张牌的生物立刻知道有另一个生物会同情它的事业，并且会有办法以重要方式帮助它。"
+				],
+				[
+					11,
+					"雾霾",
+					"抽到这张牌的生物可以用这张牌以自己为中心施放（%0%）的法术，作为二阶法术，不需要使用行动或消耗法术槽。"
+				],
+				[
+					12,
+					"乌鸦",
+					"抽到这张牌的生物可以用这张牌在它选择的一个智力检查或救赎中获得自动成功。"
+				],
+				[
+					13,
+					"Seer",
+					"抽到这张牌的生物可以用这张牌在它选择的一个智慧检查或救赎中获得自动成功。"
+				],
+				[
+					14,
+					"诱惑者",
+					"抽到这张牌的生物可以用这张牌在它选择的一个魅力检查或救赎中获得自动成功。"
+				],
+				[
+					15,
+					"战士（剑术大师）",
+					"这张牌可以立即使用。在接下来的24小时内，抽到这张牌的生物所持有的任何武器都被视为魔法武器，其攻击和伤害卷的奖励等于该生物熟练度奖励的一半（四舍五入），只要该生物持有它。"
+				],
+				[
+					16,
+					"巫师（星空大师）",
+					"抽到这张牌的生物可以使用这张牌，而不是消耗一个法术槽来施放一个原本可以施放的法术。该生物仍然必须使用一个适当类型的行动来施放该咒语。"
+				],
+				[
+					17,
+					"流氓（钱币大师）",
+					"抽到这张牌的生物可以接触另一个生物并使用这张牌，用魔法将该生物身上最宝贵的物品运送到抽到这张牌的生物身上的某个位置。"
+				],
+				[
+					18,
+					"牧师（字形大师）",
+					"抽到这张牌的生物可以用这张牌重新获得相当于其最大命中率1/3的命中率。"
+				],
+				[
+					19,
+					"重绘 - 1",
+					"重掷整个抽签，用两张牌而不是三张。重掷任何会让你重新抽牌的结果。"
+				],
+				[
+					20,
+					"重绘+1",
+					"重掷整个抽签，用四张牌而不是三张。重掷任何会让你重新抽牌的结果。"
+				]
+			]
+		},
+		{
+			"name": "Potion Mishaps",
+			"source": "WalrockHomebrewWitch",
+			"page": 26,
+			"colLabels": [
+				"d10",
+				"Mishap"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					1,
+					"药水的烟雾使你的皮肤变成绿色。只有{@spell remove curse|phb}的法术可以结束这个效果。"
+				],
+				[
+					2,
+					"一个大的、难看的疣子长在你身体的一个突出位置。"
+				],
+				[
+					3,
+					"被破坏的药水会爆炸，使你着火，每回合造成{@dice 1d6}的火力伤害，直到你使用一个动作使自己俯卧并将其扑灭。"
+				],
+				[
+					4,
+					"药水释放出有毒的瘴气，就像你以自己为中心施展的法术（%0%）。"
+				],
+				[
+					5,
+					"滚动1d100。这是你头发脱落的百分比。"
+				],
+				[
+					6,
+					"药水在一个巨大的闪光和爆炸声中被点燃。你会失明和耳聋一分钟。"
+				],
+				[
+					7,
+					"药水产生的烟雾会使你的感官死亡。在24小时内，所有东西的气味和味道都像泥土。"
+				],
+				[
+					8,
+					"药水的烟雾蒙蔽了你的头脑，你忘记了过去一小时内发生的所有事件。"
+				],
+				[
+					9,
+					"在你周围20英尺内，所有植物都会枯萎死亡，所有食物和牛奶都会变质。"
+				],
+				[
+					10,
+					"你身上的一件随机决定的物品被传送到虚空界。"
+				]
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Animate Hair",
+			"level": 1,
+			"school": "T",
+			"source": "WalrockHomebrewWitch",
+			"page": 24,
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a silver comb"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"你的头发长到五英尺长，并开始起伏，形成四个大的、活的卷轴。在这个法术的作用下，你可以用你的头发来进行攻击或举起小物品。被你的头发举起的物品可以集体重达20磅，或最多四个5磅或更轻的物体（每个卷须一个）。你能够用你的头发来操纵这些物品，就像你的手一样，除非另有规定。",
+				"你可以用你的头发进行攻击，通过使用攻击动作进行近战法术攻击，你的头发被认为有10英尺的范围。一旦命中，你的头发会造成相当于{@damage 1d8}+你的法术能力修饰的打击性伤害。",
+				"你也可以用你的头发对其范围内的任何生物进行抓捕。用你的法术能力修饰的检查来代替抓取时要做的任何力量（运动）检查。你的头发最多可以分别抓取四个生物，因为每根卷须都算作一只张开的手。",
+				"你的头发可以像其他物品一样持有武器和盾牌，但不能用它们来进行攻击或赋予任何奖励。你的头发不会天生赋予你任何额外的攻击，但如果你有额外攻击功能（或类似功能），你可以用你的头发进行正常的各种额外攻击。",
+				"当这个咒语结束时，你的头发会恢复到以前的长度和外观，并丢掉它可能持有的任何物体或生物。"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Animate Hut",
+			"level": 6,
+			"school": "T",
+			"source": "WalrockHomebrewWitch",
+			"page": 25,
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a chicken foot, 500 gp of herbs which the spell consumes",
+					"cost": 50000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"你可以将你在施法过程中接触到的小木屋、小屋或小房子活化，使其长出2至8条腿，这些腿的外观可以是有机的，也可以是无机的。",
+				"这个灵动的小屋是一个对疾病、毒物伤害以及被惊吓、被毒害或被魅惑免疫的构造物，它有16的AC，100的命中率，50英尺的速度，26的力量，12的灵巧，18的体质，所有其他数据都是4，并且被认为是巨大的尺寸。如果这个小屋的主人不同意这个法术的发生，那么这个法术槽将被消耗掉，没有任何效果。如果这个小屋被降低到0命中率，它就会恢复到无生命的状态，但这样做可能会受到一些结构性的损害。",
+				"当你在这个小屋里时，你可以花费一个行动来使小屋向你选择的方向移动。作为这个行动的一部分，你可以使小屋采取冲刺或躲避的行动。如果你不在小屋内，但与它在同一平面上，你可以召唤它向你移动（采取冲刺行动），作为一个持续的仪式，直到小屋到达，这需要你在仪式的持续时间内停留在同一地点。",
+				"在这两种情况下，小屋是半智能的，会避开明显的陷阱和危险的地形。如果小屋找不到前进的道路（例如，如果它对道路来说太大），你会本能地知道有东西阻挡了它。小屋无法攻击，并且会在移动过程中主动避免伤害生物或破坏地形。",
+				"如果你在已经有一个有生命的小屋的情况下施展这个咒语，那么第一个小屋就会回到它的无生命状态，而新的小屋则成为你的有生命的小屋。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用9级的法术槽施展此法术时，你可以使小屋长出翅膀并飞行，赋予它100英尺的飞行速度，并带有悬停的特性，而不是正常的移动速度。",
+						{
+							"type": "inset",
+							"name": "Witch's Moving Stronghold",
+							"entries": [
+								"如果你愿意，\"有生命的小屋 \"法术可以与 \"要塞、神庙和堡垒 \"补充材料所赋予的结构一起使用，该补充材料也可以从DM公会的Walrock Homebrew获得。",
+								"如果你选择这样做，Animate Hut可以使任何有2个或更少房间点数的结构变得可移动。已建成的房间将继续保持正常功能，不过，根据结构的位置，商人使用你的贸易专用房间可能会更容易或更难。如果你的建筑最终处于对贸易有利或不利的位置，请使用 \"看不见的手在工作 \"中的边栏规则。"
+							]
+						}
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Cackle",
+			"level": 1,
+			"school": "E",
+			"source": "WalrockHomebrewWitch",
+			"page": 25,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"你会发出邪恶的笑声，让附近的人感到不安。在你的范围内的每个生物在持续时间内不能以你为目标进行机会攻击，并且必须在智慧救赎中成功，否则会受到（%0%）精神伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级以上的法术槽施放此法术时，每超过1级的法术槽等级，精神伤害增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Combine Potions",
+			"level": 5,
+			"school": "T",
+			"source": "WalrockHomebrewWitch",
+			"page": 25,
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "alchemist's supplies, two vials or bottles of potions or poison"
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你试图将你身上的两种药水或毒药组合成一个具有两种效果的单一物品。你要组合的药水或毒药可以是普通的，也可以是魔法的，或者是用允许灌输法术的类特性创造的（如女巫的Imbue Potion特性）。你不能把两个用灌输法术的功能创造的药水结合起来，也不能把以前结合的药水或毒药与任何其他物品结合起来。",
+				"施放此法术后，用你的法术能力修饰值进行两次检查，如果你精通炼金术士的用品，则加上你的熟练度奖励。这些检查的DC是25--你用来施放此法术的法术槽等级的两倍。如果成功，你就创造了组合的药水或毒药，而且新物品的两种效果都可以用一个使用物品的动作来应用。",
+				"然而，如果这个检查失败，你试图组合的物品中的一个会被摧毁，随机选择。此外，在{@table Potion Mishaps|WalrockHomebrewWitch}表上滚动一次，并承受其结果。"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Conjure Effigy",
+			"level": 3,
+			"school": "C",
+			"source": "WalrockHomebrewWitch",
+			"page": 26,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a personal item belonging to the target with sentimental value, or a piece of the target's body such as their hair or nail clippings, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"选择一个你能看到的120英尺范围内的生物，你在一只无人的手中变出一个由亚麻布、稻草和填充物组成的临时玩偶，隐约与目标相似，将施法时使用的个人物品与玩偶绑定。如果你缺乏这个法术的物质成分，而目标在你5英尺范围内，你可以从目标身上取回一个无关紧要的个人物品（比如一根头发），作为这个法术施放的一部分，你可以立即使用它作为法术的物质成分。",
+				"当你持有这个玩偶时，你对它造成的伤害会伤害到这个玩偶所类似的生物。用这个玩偶造成的伤害不能杀死一个生物，如果一个生物因为使用这个玩偶而被降低到0命中率，它就会被打晕，但会立即稳定下来。在咒语持续时间结束后，玩偶会消失，任何个人物品都会失去它们的魔法效力，不能再使用。",
+				"作为变出娃娃的行动的一部分，或者作为你持有娃娃时在以后的回合中的一个单独行动，你可以执行以下任何一项。",
+				{
+					"type": "entries",
+					"name": "Pinprick",
+					"entries": [
+						"你拔出一根短针，刺向娃娃。对玩偶所像的生物进行法术攻击卷。一旦命中，它将受到{@damage 3d8}的穿刺伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Open Flame",
+					"entries": [
+						"你将娃娃暴露在火中，烧毁它。它所模仿的生物必须做一个 \"魅力储蓄\"。如果它失败了，它将受到{@damage 5d8}的火焰伤害。如果目标救赎成功，它将受到这个量的一半。在任何一种情况下，这都会毁掉娃娃，并且咒语结束。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Throw",
+					"entries": [
+						"你向你选择的方向投掷这个玩偶，最远可达10英尺。它所模仿的生物必须做一个魅力储蓄动作。如果它失败了，它就会在你选择的方向上移动10英尺，而不是在你扔出娃娃的每5英尺处向上移动。如果该生物的救赎失败，并且在这次投掷或强制移动过程中，如果它或玩偶与任何固体物体（除地板外）相撞，该生物将受到（%0%）的重击伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Crush",
+					"entries": [
+						"你把玩偶扔到地上，然后用脚踩住它。它所类似的生物必须做一个魅力储蓄动作。如果它失败了，它就会变成俯卧，并受到{@damage 2d8}重击伤害。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，每超过三级的法术槽等级，所造成的任何伤害都会增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing",
+				"fire",
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Curse of Craving",
+			"level": 6,
+			"school": "E",
+			"source": "WalrockHomebrewWitch",
+			"page": 27,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dinnerbone picked clean of meat"
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你触碰一个人形物体，它必须做一个魅力储蓄动作。如果失败，目标会受到你选择的下列诅咒之一，可以用一个{@spell remove curse|phb}的咒语或类似的魔法抵消。",
+				{
+					"type": "entries",
+					"name": "Adoration",
+					"entries": [
+						"目标对你选择的一个生物产生深深的敬佩，这个生物必须是你见过的，并且至少懂得一种语言。你选择的生物可以是你自己。目标被认为是被该生物所迷惑。当目标需要长时间休息时，它可以重复最初的蓄力动作，如果成功则结束这个效果。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Starvation",
+					"entries": [
+						"目标有一种无止境的饥饿或干渴（你选择），无论多少食物或水都无法满足。在一天结束时（通常是在长时间的休息之后），目标会受到《玩家手册》（第185页）中所列的食物或水匮乏的影响，就像它当天没有消耗食物或水一样。这个效果只有在目标需要吃食物或喝水才能生存时才起作用。在以这种方式遭受剥夺后的每一天，目标都可以重复最初的拯救动作。如果它成功了，这个效果就结束了，尽管目标仍然遭受着食物或水匮乏的影响，直到它们被正常减轻。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Enlarge Familiar",
+			"level": 3,
+			"school": "T",
+			"source": "WalrockHomebrewWitch",
+			"page": 27,
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a magnifying glass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"这个法术只能针对你通过{@spell find familiar|phb}法术召唤出来的熟悉人。你用你的魔法大幅增加你熟悉的人的体型和力量，使他们成为更可怕的敌人。你的熟人长到中等大小，获得一个8+你的熟练度加成+你的法术能力修饰的AC，并且它的最大命中率增加了10。你熟悉的人的力量、灵巧和体质分数都增加到10（除非它们已经更大了），你可以选择其中一个分数来增加到14。",
+				"你的熟人也会获得一个攻击，这个攻击会将你的法术能力修饰和熟练度加成到它的命中卷上（代替熟人自己的统计数据），并且在命中时造成相当于（%0%）+你的法术能力修饰的穿刺、打击或砍击伤害（你选择）。你的熟人仍然不能自行攻击，你必须使用一个额外的行动来让它使用攻击行动，或者使用你自己的反应来让它进行机会攻击。",
+				"这种转变最多持续一分钟，直到你的熟人被减少到0命中率，或者直到你没有额外行动而结束它。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施展此法术时，你的熟悉者反而会成长为大号，并且每超过3级的法术槽等级，其最大命中率会额外增加5点。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"MAC",
+				"UBA"
+			]
+		},
+		{
+			"name": "Glyph of Misfortune",
+			"level": 5,
+			"school": "E",
+			"source": "WalrockHomebrewWitch",
+			"page": 27,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a drawn glyph"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"你发出一个恶毒的诅咒，耗尽一个生物的运气。选择一个你能看到的范围内的生物，它必须做一个魅力储蓄动作。如果失败，该生物将在咒语的持续时间内受到你的厄运之石的影响，或者直到该生物受到（%0%）或类似魔法的影响。",
+				"每当你的石刻下的生物进行攻击、能力检查或蓄力攻击时，你都天生知道，而且你可以在知道该生物的卷轴结果后使用你的反应来掷出1D20。如果你的结果低于该生物的卷轴，用你的骰子上的数字代替该生物的卷轴。"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Guiding Light",
+			"level": 1,
+			"school": "I",
+			"source": "WalrockHomebrewWitch",
+			"page": 28,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a silver mirror"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"你在头上创造一个发光的灯塔，用月亮的光芒来照耀。在你30英尺范围内，你指定的任何数量的生物（最少1个）可以使用一个反应来立即移动一段距离，其移动速度与你相近。这种移动不会激起机会攻击。"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Rite",
+			"level": 1,
+			"school": "A",
+			"source": "WalrockHomebrewWitch",
+			"page": 28,
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "25 gp worth of incense and herbs, which the spell consumes",
+					"cost": 2500,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"你进行一个神奇的仪式，意在表示生命中的一个变化时期。当你施展此法术时，选择以下效果之一，在施展期间，这些效果的目标必须保持在你的10英尺之内。",
+				{
+					"type": "entries",
+					"name": "Coming of Age",
+					"entries": [
+						"你接触一个愿意的年轻成人，然后他选择3种技能。在接下来的24小时内，如果目标还没有熟练掌握这3种技能，那么他们就会熟练掌握这3种技能，并且在使用所选技能的检查中具有优势。一个生物只能从中受益一次。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Funeral",
+					"entries": [
+						"你触摸一个生物的尸体。在接下来的7天内，除了{@spell wish|phb}的法术外，该生物不能以任何方式成为亡灵。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hunt",
+					"entries": [
+						"你最多接触5个人形生物，其中可以包括你自己。在接下来的24小时内，野兽在寻找受此仪式影响的生物的任何感知检查中都处于劣势，而受此仪式影响的生物在寻找野兽的任何生存能力检查中都具有优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Induction",
+					"entries": [
+						"你接触一个愿意成为你的圈子或女巫团成员的人。在接下来的24小时内，只要你的圈子或女巫团中至少有一名成员在他们的30英尺范围内，该生物在洞察力检查、智慧和智力投掷方面具有优势。一个生物只能从中受益一次。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sacrifice",
+					"entries": [
+						"你接触一个CR或等级低于你总角色等级的生物。这个生物不能是构造物或不死物，而且必须是有意识的，并在仪式的持续时间内被限制或固定住。仪式完成后，该生物死亡，而你和你指定的最多5个在仪式施放期间处于10英尺范围内的生物获得临时命中率，相当于你的法术修改器+该生物的CR或等级，持续时间长达24小时。一个生物每30天只能受益于此一次。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wedding",
+					"entries": [
+						"你接触到一些愿意结为夫妻的成年人形生物。在接下来的7天里，每当这些生物在他们的配偶中至少有一人的陪伴下进行短暂或长时间的休息时，都会获得一点灵感。一个生物在300天内不能再次获得这个好处，也不能由同一组生物第二次获得。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"miscTags": [
+				"ADV",
+				"THP"
+			]
+		},
+		{
+			"name": "Share Pain",
+			"level": 4,
+			"school": "E",
+			"source": "WalrockHomebrewWitch",
+			"page": 29,
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you or a creature you can see within 60 feet of you are hit by an attack made by a creature within range"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"m": "a thorned vine tied in a knot"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你试图将触发攻击的部分伤害转回给攻击的生物。将被攻击的生物所受到的伤害减少一半（四舍五入），并且攻击的生物必须做一个宪法救赎动作。如果它失败了，它就会受到与其攻击目标相同的伤害，最多10点的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施放此法术时，此法术所能造成的最大伤害每超过四级的法术槽等级就会增加10点命中率。"
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Watch Totem",
+			"level": 0,
+			"school": "D",
+			"source": "WalrockHomebrewWitch",
+			"page": 29,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a tiny stick, stone, or other natural object, carved with runes"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "WalrockHomebrewWitch"
+					}
+				]
+			},
+			"entries": [
+				"你将用作此法术物质成分的物体放在范围内的水平表面上。在这个法术的持续时间内，只要你和该物体在同一个平面上，你就可以在任何时候使用一个动作从该物体的位置看到东西，时间长达1分钟。你只能看到物体周围60英尺范围内的东西，在这段时间内你的正常感官被认为是失明的，而且这个咒语不允许你听到物体附近的声音。你可能拥有的基于视觉的特殊感官，例如暗视，在这个法术下可以正常运作。",
+				"这个视野在一分钟后结束，或者如果你采取行动提前结束它。在此异象结束后，当法术的持续时间到期时，如果该物体受到伤害，或者该物体受到{@spell dispel magic|phb}或类似的影响，该物体就会碎裂成灰尘，不能再被使用。",
+				"任何时候都只能有一个观察图腾处于激活状态。在由这个法术创造的物体已经存在的情况下施放这个法术，会破坏原来的物体，让新创造的物体发挥作用。"
+			],
+			"areaTags": [
+				"ST"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "WalrockHomebrewWitch",
+			"page": 6,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 1,
+			"entries": [
+				"无论你来自哪种魔法传统，你都有与生俱来的法术天赋。有些人认为这是与生俱来的，有些人则认为是实践的结果，但只有通过训练和奉献，它才会变得更加强大。关于法术的一般规则，请看{@book chapter 10|PHB|10}。这里包括{@filter witch spell list|spells|class=Witch}，在本附录的最后。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"在1级时，你会从巫师法术列表中选择三个咒语。在更高的等级，你会学习更多你选择的巫师咒语，如巫师表的已知咒语栏所示。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"巫师表显示了你有多少个法术槽来施展你的（%0%）一级及以上的法术。要施展其中一个巫师法术，你必须消耗一个该法术等级或更高的法术槽。当你完成一个长时间的休息时，你会重新获得所有消耗的法术槽。",
+						"例如，如果你知道一级法术（%0%），并且有一个一级和一个二级法术槽可用，你可以使用任何一个槽来施放（%1%）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"你会从巫师法术列表中选择三个一级法术。",
+						"除了第18和20级之外，你在每一级都会额外学习一个你选择的巫师法术。这些法术的等级必须是你有法术槽的。例如，当你在这个等级中达到3级时，你可以学习一个1级或2级的新法术。",
+						"此外，当你在这个等级中获得一个级别时，你可以从你所知道的巫师法术中选择一个，并用巫师法术列表中的另一个法术来代替它，这个法术也必须是你有法术槽的级别。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智力是你对巫师法术的施法能力，代表了巫术所需的对自然奥术的深入研究。每当法术提到你的法术能力时，你都会使用智力。此外，在设定你所施展的巫术的蓄力DC时，以及在用巫术进行攻击卷时，你都会使用你的智力修改器。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"你也有一本被称为仪式书的法术书。你的仪式书并不包含你所知道的巫师法术，这些法术反而固定在你的记忆中。相反，仪式书里有你选择的两个一级法术，这些法术有巫师法术列表中的仪式标签。在你的仪式书中的法术不计入你所知道的法术数量。除了作为仪式，你不能施放你仪式书中的巫师法术，除非你通过其他方式学会了这些法术。你也可以将你知道的任何巫师咒语作为仪式施放，如果它有仪式标签的话。",
+						{
+							"type": "entries",
+							"name": "Adding Ritual Spells",
+							"entries": [
+								"在你的冒险中，你可以将其他巫师的仪式咒语加入你的仪式书。当你发现这样的咒语时，如果该咒语的等级等于或低于你的巫师等级的一半（四舍五入），并且你能抽出时间来抄写该咒语，你就可以把它加入你的仪式书。对于每一级的咒语，抄写过程需要2个小时，并且需要花费50戈比来购买刻写所需的稀有墨水。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Replacing the Book",
+							"entries": [
+								"你可以从你的仪式书中复制一个仪式咒语到另一本书中--例如，如果你想为你的仪式书做一个备份。这就像把一个新的仪式咒语复制到你的仪式书中一样，但更快更容易，因为你了解自己的符号，并且已经知道如何施法。你只需要为复制的仪式咒语的每一级花费1小时和10戈比。",
+								"如果你丢失了你的仪式书并且没有替代物，你可以尝试复制丢失的书中的每个仪式咒语，将每个咒语依次写入新的书中。这样做的时间和货币成本与复制一本书的成本相同，但在写完一个咒语后，你必须进行智力（阿卡纳）检查，检查的DC为8+该仪式咒语等级的两倍，以确定你是否正确地记住了它。如果成功，该仪式咒语就会被加入你的书中，但如果失败，该咒语就会被错误地遗忘，必须重新找到。为了避免这种情况，大多数巫师都会在一个安全的地方额外藏一本仪式书。"
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Optional Rule: Rituals While Leveling",
+							"entries": [
+								"如果你的DM不想把法术作为潜在的战利品，他们可以考虑允许你的女巫角色在某些角色级别上把仪式法术加入你的仪式书。",
+								"如果你的DM使用这个可选规则，在巫师等级的第3、5、7、9和11级时，在你的仪式书中添加一个带有仪式标签的法术，而不是在更广阔的世界中寻找法术。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用一个奥术焦点或德鲁伊焦点作为你的巫师法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Occult Familiar",
+			"source": "WalrockHomebrewWitch",
+			"page": 7,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 1,
+			"entries": [
+				"自古以来，女巫们就与熟悉的灵魂建立了联系，这些灵魂是她们魔法力量的象征和来源。在历史上，家族成员作为女巫和不可知的实体之间的信使，教会了她们奥术的方法，但在现代，家族成员大多作为他们所选择的女巫的伴侣和陪衬。",
+				"你知道这个法术（%0%），这算作一个巫师法术，不计入你能知道的总法术。你能够在不消耗法术槽或任何材料费用的情况下施展寻找熟悉的人。你用{@spell find familiar|phb}召唤的眷属会获得一些额外的好处。",
+				{
+					"type": "list",
+					"items": [
+						"熟悉的人的魅力和智力分数变成12，除非他们已经更高。",
+						"熟悉的人可以说、读、听懂你知道的所有语言。",
+						"熟悉的人的移动不会引起机会攻击。",
+						"熟悉的人把你的巫师等级加到它的最大命中率上。",
+						"如果熟悉的人救赎成功并会受到一半的伤害，它反而不会受到伤害。"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Roleplaying a Familiar",
+					"entries": [
+						"拥有语言能力的家族成员通常具有自己的人格力量，并且像女巫一样，对他们周围发生的事情有非常强烈的意见。熟悉的人可以通过多种方式进行角色扮演，例如成为与之配对的女巫的陪衬，坚定的支持者，或者是一个好奇的捣蛋鬼，似乎总是能找到麻烦。",
+						"不管是女巫的玩家还是DM扮演一个熟悉的人，都是有意模糊的，应该与你的小组讨论，尽管玩家被期望在战斗中控制熟悉的人。作为进一步的选择，许多家族成员满足于成为被动的观察者，只有在必要时才发表意见，如果扮演一个熟悉的角色被证明对游戏的流程有太大的干扰性。",
+						"然而，如果你想进一步确定你熟悉的人的身份，你可以在这里包括的表格上为你熟悉的人的个性、理想和缺陷打滚。熟悉的人的纽带始终是：\"我必须保护我的主人，确保他们的成功。\""
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"d8",
+						"Personality Trait"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"我是一个无尽的乐观主义者，并决心在所有的事情中找到最好的东西！\"。"
+						],
+						[
+							"2",
+							"我在任何时候都彬彬有礼，文质彬彬，身份尊贵。"
+						],
+						[
+							"3",
+							"我通过无情的讽刺来表达我的爱。"
+						],
+						[
+							"4",
+							"魔法让我着迷。我的主人必须学习更多这方面的知识!"
+						],
+						[
+							"5",
+							"我非常害羞。陌生人必须首先赢得我的信任。"
+						],
+						[
+							"6",
+							"我有一个贪婪的胃口，一直在寻找新的零食。"
+						],
+						[
+							"7",
+							"我担心我的主人不够好，所以我不断催促他们走向伟大。"
+						],
+						[
+							"8",
+							"我对自己缺乏大拇指感到很沮丧，经常尝试新的技术来弥补这一点。"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"Ideal"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"知识。我们必须知道一切可以知道的事情! (中立)"
+						],
+						[
+							"2",
+							"秘密。越是隐藏的东西，其价值就越大。(中立)"
+						],
+						[
+							"3",
+							"服从。不管你喜不喜欢，我的主人制定了这里的规则。(合法的)"
+						],
+						[
+							"4",
+							"自由。我做我想做的事，以后可能会或可能不会道歉。(混沌)"
+						],
+						[
+							"5",
+							"贪婪。当我发现我想要的东西时，我必须拥有它！（混乱）。(混沌)"
+						],
+						[
+							"6",
+							"尊重。所有人都应该尊重我主人的能力，进而尊重我自己。(合法)"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"Flaw"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"我总是观察我的主人，看他们做错了什么。我以小的、微妙的方式表达我的不赞成意见。"
+						],
+						[
+							"2",
+							"我的好奇心完全失去了控制。"
+						],
+						[
+							"3",
+							"我觉得自己好像比自己大了四号，而且胆子大到不行。"
+						],
+						[
+							"4",
+							"我是一个不知悔改的懦夫。让我的主人为我而战，我不插手!"
+						],
+						[
+							"5",
+							"当我的主人睡着时，我在他们所有的口袋里囤积闪亮的东西。"
+						],
+						[
+							"6",
+							"除了我的主人，每个人对我来说都是可牺牲的，我确保他们知道。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Jinx (1/rest)",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"二级时，你可以利用扫把星的力量，它是扭曲你的法术的微妙方法，来自于自然和奥术的融合。从以下列表中选择学习两个（%0%）。在第7、13和18级时，你会额外学习一个你选择的扫把星。",
+				"在你的每个回合中，如果你能看到的120英尺范围内的生物对你的一个法术抵抗失败，或者被你的一次攻击击中，你可以使用一个额外的行动，从你知道的那些厄运中，用你选择的厄运针对一个这样的生物。如果存在多个这样的生物，仍然只针对其中一个。扫把星的效果会持续到你下一回合的开始，除非效果会提前结束。扫把星本身是有魔力的，在反魔场法术或类似效果的范围内不起作用。",
+				"在你必须完成短时或长时休息以恢复其使用之前，你可以使用这个功能一次。在第5级时，你可以在两次休息之间使用此功能。在第15级时，在两次休息之间增加到三次。",
+				"你可以学习的（%0%）如下。如果一个巫术有先决条件，你必须满足这些条件才能学习这个巫术。每当你获得一个巫师等级时，你可以用这个列表中符合先决条件的不同巫术来替换你所知道的一个巫术。"
+			]
+		},
+		{
+			"name": "Witch's Coven",
+			"source": "WalrockHomebrewWitch",
+			"page": 9,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"同样在2级的时候，你会与一个女巫集会结盟，这是一个由女巫组成的秘密团体，对外界严加保护他们的魔法秘密。",
+				"从以下选项中选择一个女巫团。暗月女巫团、满月女巫团、半月女巫团、新月女巫团、日食女巫团、阴阳月女巫团或失月女巫团。这些将在本课的选项中详述。",
+				{
+					"type": "inset",
+					"name": "Your Moons May Vary",
+					"entries": [
+						"女巫们挥舞的魔法与夜晚有着紧密的主题联系，女巫们组成的团体认同月亮的特定阶段，在它的支持下进行仪式和奉献。",
+						"然而，并非每个环境都有月亮。在没有月亮的环境中，女巫们倾向于认同星座或其他天体，通常是那些与她们的女巫会所代表的符号学相同的星座。例如，在这样的环境中，满月女巫会可以认同一个树形的星座或一个传说中的治疗者。同样，暗月女巫会可能会认同一个光线暗淡的行星，它移动迅速，在夜空中几乎不可见，它具有神话传说中的某种诡计多端的精神特征。",
+						"在一个有多个月亮的世界里，每个女巫团可以把自己献给其中一个月亮，或者献给天空中某个特定的天体排列。例如，在这样一个世界里，半月女巫会可能认为一个满月和一个新月的二元组合是神圣的。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Brewcraft",
+			"source": "WalrockHomebrewWitch",
+			"page": 9,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 3,
+			"entries": [
+				"对女巫来说，自然魔法和奥术魔法并不是独立的实体。正因为如此，女巫是释放隐藏在普通草药和植物中的奥术潜力的大师。",
+				"从3级开始，如果你制作一个药水类的魔法物品，需要的时间是正常时间的四分之一，花费的金币也是通常的一半。这些奖励也适用于任何你可以用炼金术士的用品或毒药师的装备制作的世俗物品，比如抗毒素、酸、炼金术士之火、麦酒、基本毒药，或者《地下城主指南》（第257-258页）中列出的任何毒药。",
+				"你的管理员可能会决定某些药水或毒药（例如紫色的虫子毒药）对你来说是无法制作的，除非你先找到特定的稀有材料。如果你获得了它们，就从制作成本中相应地减去这些稀有成分的价格。",
+				{
+					"type": "inset",
+					"name": "Optional Rule: Foraging for Herbs",
+					"entries": [
+						"你的管理员可以允许任何精通草药学的角色利用休息时间去寻找草药，以减少药水、毒药和其他列有酿造功能的物品的制作成本。",
+						"每当这样的角色有一周的停工时间，他们可以选择用它来收集草药。在完成这一周的工作后，进行一次智力测验，如果他们身上有草药包，就加上对草药包的熟练程度。在沼泽地或丛林中做这个检查有优势，在城市、沙漠或苔原中做检查有劣势。",
+						"然后角色会收到与他们所做的检查结果相关的物品，如草药采集表上所列。角色可以将这些草药卖给有兴趣的人，或者用它们来减少任何药水、毒药或其他炼金物品的制作成本，其价值相当于这些草药。一个角色可以使用多种草药来进一步降低他们正在制作的任何相关物品的制作成本。"
+					]
+				},
+				{
+					"caption": "Herbal Foraging",
+					"type": "table",
+					"colLabels": [
+						"Result",
+						"Item",
+						"Worth",
+						"Examples"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-4",
+						"col-2 text-center",
+						"col-3"
+					],
+					"rows": [
+						[
+							"10-14",
+							"3d4磅的普通草药",
+							"5 sp /磅。",
+							"薄荷，鼠尾草"
+						],
+						[
+							"15-24",
+							"2d4磅不常见的草药",
+							"5戈比/磅。",
+							"马尾草、紫草"
+						],
+						[
+							"25-29",
+							"1d4磅稀有草药",
+							"50 gp /磅。",
+							"恶魔之根, 琥珀之石"
+						],
+						[
+							"30+",
+							"1磅非常罕见的草药",
+							"500 gp /磅。",
+							"星刺、空织"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Imbue Potion",
+			"source": "WalrockHomebrewWitch",
+			"page": 9,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 3,
+			"entries": [
+				"当巫师们无法花费大量时间来酿制药水时，他们可以直接将自己的奥术力量注入酊剂。这样做的结果是，药水的制作更容易，成本更低，但稳定性和持久性较差。",
+				"从3级开始，当你进行短暂或长时间的休息，并且身上有一个空瓶时，你可以从以下你知道并且可以用可用的法术槽施展的法术中选择一个。",
+				{
+					"caption": "Imbue Potion",
+					"type": "table",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell animate hair|WalrockHomebrewWitch}, {@spell charm person|phb}, {@spell command|phb}, {@spell cure wounds|phb}, {@spell disguise self|phb}, {@spell detect magic|phb}, {@spell false life|phb}, {@spell feather fall|phb}, {@spell mage armor|phb}, {@spell sleep|phb}, {@spell speak with animals|phb}"
+						],
+						[
+							"2nd",
+							"{@spell alter self|phb}, {@spell barkskin|phb}, {@spell blindness/deafness|phb}, {@spell detect thoughts|phb}, {@spell dragon's breath|xge}, {@spell enhance ability|phb}, {@spell enlarge/reduce|phb}, {@spell invisibility|phb}, {@spell lesser restoration|phb}, {@spell protection from poison|phb}, {@spell see invisibility|phb}, {@spell spider climb|phb}"
+						],
+						[
+							"3rd",
+							"{@spell catnap|xge}, {@spell dispel magic|phb}, {@spell feign death|phb}, {@spell gaseous form|phb}, {@spell nondetection|phb}, {@spell protection from energy|phb}, {@spell remove curse|phb}, {@spell revivify|phb}, {@spell tongues|phb}, {@spell vampiric touch|phb}, {@spell water breathing|phb}, {@spell water walk|phb}"
+						],
+						[
+							"4th",
+							"{@spell charm monster|xge}, {@spell death ward|phb}, {@spell fire shield|phb}, {@spell freedom of movement|phb}, {@spell greater invisibility|phb}, {@spell stoneskin|phb}"
+						],
+						[
+							"5th",
+							"{@spell awaken|phb}, {@spell commune with nature|phb}, {@spell contact other plane|phb}, {@spell dominate person|phb}, {@spell greater restoration|phb}, {@spell legend lore|phb}, {@spell reincarnate|phb}, {@spell skill empowerment|xge}, {@spell tree stride|phb}"
+						],
+						[
+							"6th",
+							"{@spell curse of craving|WalrockHomebrewWitch}, {@spell find the path|phb}, {@spell investiture of flame|xge}, {@spell investiture of ice|xge}, {@spell investiture of stone|xge}, {@spell investiture of wind|xge}, {@spell true seeing|phb}"
+						]
+					]
+				},
+				"立即选择这个咒语会让你选择的任何细节，并消耗该咒语的物质成分和一个与你打算让咒语发挥作用的咒语等级相等的咒语槽。咒语的目标不是咒语所指定的任何目标，而是变成喝下药水的生物。如果一个生物必须具有某些属性才能受制于该法术（比如一个特定的生物类型），那么该药水只对具有这些属性的生物起作用。",
+				"在休息结束时，你会创造一种药水，能够传授你所选择的咒语，以及你所选择的细节。只要药水存在，你在创造药水时使用的法术槽就不会刷新。一旦药水（或它所应用的物品）被使用，被摧毁，或以其他方式不再存在，咒语槽就会像正常情况下那样刷新，但不会自动刷新。",
+				{
+					"type": "entries",
+					"name": "Using an Imbued Potion",
+					"entries": [
+						"作为一个动作，一个生物可以喝下整个药水，把它给另一个愿意的生物，或者把它应用于一个食物或饮料。该药水只对完全喝下它的生物产生效果，或者完全吃掉它所应用的食物或饮料的生物。这样的生物会立即获得你所选择的法术效果，以及你第一次创造药水时选择的具体细节。在消耗品上使用的药水可以被持有该物品的生物检测出来，只要对你的法术保全系数进行智力（Arcana）或智慧（Survival）检查成功即可。",
+						"这种药水所传授的法术在其正常的持续时间内持续，在法术本身的文字中列出。如果此功能赋予的法术需要集中注意力，喝下药水的生物必须保持对该效果的注意力，就像他们自己施法一样。如果一个药水需要喝下它的生物做一个蓄力动作，那么这个蓄力动作是针对你的法术蓄力DC而做。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Active Potions",
+					"entries": [
+						"在任何时候，你都可以拥有相当于你的巫师等级除以3的活性药水数量，向下取整。你也可以通过一个额外的行动使你的任何一个药水不再保持它们的效力，不管它们离你多远。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WalrockHomebrewWitch",
+			"page": 5,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Jinx (2/rest)",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 5,
+			"entries": [
+				"从第五级开始，你可以在两次休息之间使用你的金克斯。"
+			]
+		},
+		{
+			"name": "Witch's Coven feature",
+			"source": "WalrockHomebrewWitch",
+			"page": 9,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"entries": [
+				"在6级时，你从你的女巫集会中获得一个特性。"
+			]
+		},
+		{
+			"name": "Enchant Broom",
+			"source": "WalrockHomebrewWitch",
+			"page": 10,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 7,
+			"entries": [
+				"在第七级时，你已经学会了制作女巫扫帚的秘密仪式，这是任何真正的女巫的飞行工具。你可以进行一个小时的仪式，准备好一把扫帚（或者，在你的DM允许下，任何足够的类似扫帚的物体）成为你的巫师扫帚。",
+				"在这个仪式完成后，这把扫帚算作一个（%0%）（《地下城主指南》第156页），你选择激活它所需的命令词。这把扫帚只对你使用它的命令词做出反应，如果你还没有骑在上面，其他人试图骑它，它将拒绝移动。然而，这把扫帚仍然能够像平常一样在无人的情况下移动。",
+				"如果你在第二把扫帚上执行这个仪式，而你已经有一把受益于这个功能的女巫扫帚，那么第一把女巫扫帚就会回到它最初的世俗状态，而新的扫帚就会成为你的女巫扫帚。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WalrockHomebrewWitch",
+			"page": 5,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Witch's Coven feature",
+			"source": "WalrockHomebrewWitch",
+			"page": 9,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"entries": [
+				"在10级时，你从你的巫师集会中获得一个特性。"
+			]
+		},
+		{
+			"name": "Fine Fettle",
+			"source": "WalrockHomebrewWitch",
+			"page": 11,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 11,
+			"entries": [
+				"在11级时，你永远是健康的，对可能是他人死亡的状况有抵抗力。你对毒药伤害有抵抗力，对疾病和中毒状况有免疫力。",
+				"此外，你每增长5年，就只衰老1年，对衰老的负面影响有免疫力，而且不能不情愿地老死。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WalrockHomebrewWitch",
+			"page": 5,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Witch's Coven feature",
+			"source": "WalrockHomebrewWitch",
+			"page": 9,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"entries": [
+				"在14级时，你从你的巫师集会中获得一个特性。"
+			]
+		},
+		{
+			"name": "Jinx (3/rest)",
+			"source": "WalrockHomebrewWitch",
+			"page": 8,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 15,
+			"entries": [
+				"从15级开始，你可以在两次休息之间使用你的锦囊妙计三次。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WalrockHomebrewWitch",
+			"page": 5,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WalrockHomebrewWitch",
+			"page": 5,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Grand Old Wytch",
+			"source": "WalrockHomebrewWitch",
+			"page": 11,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"level": 20,
+			"entries": [
+				"一旦你达到20级，你就被授予Grand Olde Wytch的称号，这个称号只授予最伟大的巫术实践者。在你掷出主动权后，你可以选择在接下来的一分钟内自由使用你的金克斯功能，而不消耗它的任何用途。所有其他关于使用金克斯的限制仍然适用。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Coven of the Dark Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 11,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Dark Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"所有的女巫都与阴影和黑夜的魔法有着超自然的联系，但那些在黑暗之月女巫团下结伴而行的女巫是最熟悉这种午夜奥义的。他们被称为黑暗女巫，在新月的黑暗中发誓要散播诅咒和不和谐，扰乱社会结构，无论好坏。因此，这个巫师团的巫师在本质上是混乱的，但根据他们个人的道德观，可能是好的、中立的或邪恶的。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dark Moon Spells|Witch|WalrockHomebrewWitch|Dark Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Midnight's Own|Witch|WalrockHomebrewWitch|Dark Moon|WalrockHomebrewWitch|2"
+				}
+			]
+		},
+		{
+			"name": "Dark Moon Spells",
+			"entries": [
+				"你获得了对你的巫师团很重要的特定法术的高级指导。你可以按照与之相关的巫师等级来学习以下列表中的每个法术。这些法术对你来说算作巫师法术，不计入你能知道的全部法术。",
+				{
+					"caption": "Dark Moon Spells",
+					"type": "table",
+					"colLabels": [
+						"Witch Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell bane|phb}, {@spell Tasha's hideous laughter|phb}"
+						],
+						[
+							"3rd",
+							"{@spell blindness/deafness|phb}, {@spell darkness|phb}"
+						],
+						[
+							"5th",
+							"{@spell animate dead|phb}, {@spell bestow curse|phb}"
+						],
+						[
+							"7th",
+							"{@spell blight|phb}, {@spell Evard's black tentacles|phb}"
+						],
+						[
+							"9th",
+							"{@spell contagion|phb}, {@spell insect plague|phb}"
+						]
+					]
+				}
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 11,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Dark Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Midnight's Own",
+			"entries": [
+				"当你在2级加入这个巫师团时，你获得了30英尺以外的黑暗视觉，或者将你现有的黑暗视觉范围增加30英尺。你的黑暗视觉可以看穿魔法的黑暗。",
+				"此外，通过在你的回合中使用一个额外的行动，你可以降低以你自己或你熟悉的人为中心的10英尺范围内的光线水平，将其从亮光降至暗光，或从暗光降至黑暗。这将持续1分钟，直到你再次使用这个能力，或者直到黑暗所指向的生物移动或受到伤害。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 11,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Dark Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Minions of the Dark Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Dark Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你对黑暗能量的掌握几乎是条件反射式的，并能在一瞬间用它们来创造小兵。如果一个中型或小型的人形生物在你或你的熟人的10英尺范围内死亡，你可以使用一个反应将它的尸体瞬间变成一个（%0%）或一个（%1%）（《玩家手册》，第310-311页），最大命中率为1。",
+				"这种生物最多持续一小时或直到它被摧毁，之后它就会瓦解成灰尘。你可以使用这个能力的次数等于你的智力修饰值（最少一次），之后你需要长时间的休息来刷新它的用途。",
+				"此外，你用巫术创造的任何骷髅或僵尸（但不是这个特性），其最大命中率都增加了你巫术等级的一半。此外，你创造的任何骷髅或僵尸，无论其来源如何，都会在其攻击卷中增加一半的熟练度加成。"
+			]
+		},
+		{
+			"name": "Orb of Night",
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Dark Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以使用一个动作来召唤一个夜之球，这是一个直径5英尺的魔法黑暗球，以你60英尺范围内的一个点为中心。在黑夜之球内或与之相邻的生物开始其回合时，会受到3d10的坏死伤害，并且必须对你的法术救赎DC进行智慧救赎成功，否则会失明，直到其下一回合开始。",
+				"当球体存在时，你可以在你的每个回合使用一个额外动作，使它向你选择的方向移动最多15英尺。夜之球的伤害在14级时增加到5d10。",
+				"这个球体最多持续一分钟，或者直到你不用额外的行动就能解除它。一旦你使用这个能力，你必须完成一个短暂或长时间的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Create Scarecrow",
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Dark Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你发现了创造{@creature scarecrow|mm}仆从的可怕秘密，这些仆从是由茅草、编织品和木头组成的，每一个都包含一个人形灵魂。制造一个稻草人需要一个小时的仪式，涉及到一个在过去一小时内被杀死的类人，或者在仪式期间被禁锢的类人，在这个过程中，你用现有的材料建造稻草人的身体，并将类人的灵魂灌输给它。如果这个人形生物在这个仪式中还活着，他们会在仪式完成后死亡。",
+				"稻草人持续到它被摧毁为止，而且你在任何时候都不能有超过4个活跃的稻草人。当你有4个活跃的稻草人时，创造一个新的稻草人会导致一个随机选择的活跃的稻草人爆裂成火焰并化为灰烬。稻草人的统计数据可以在《怪物手册》的第268页找到。",
+				"稻草人没有凡人灵魂的记忆，但偶尔会保留一些怪癖和举止。如果你想为你的稻草人增加个性，你的管理员可以决定在下面的表格中滚动或选择一个选项。然而，建议你的稻草人中不超过两个人产生怪癖，以避免干扰游戏的进程。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d10",
+						"Scarecrow Quirk"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"对它认为重要的人恭敬地鞠躬。"
+						],
+						[
+							"2",
+							"盯着镜子或反射面中的自己，常常变得迷失。"
+						],
+						[
+							"3",
+							"闲置时，会做出类似于其凡人形态的缝制娃娃。"
+						],
+						[
+							"4",
+							"当它认为没有人在看时，就自己默默地跳舞。"
+						],
+						[
+							"5",
+							"试穿它发现的多余的衣服，除非被特别告知不要这样做。"
+						],
+						[
+							"6",
+							"试图秘密收集一种特定类型的物品，如叉子或铃铛。"
+						],
+						[
+							"7",
+							"倾向于一种类型的游戏组合，并会尝试加入任何它看到的该类型的游戏。"
+						],
+						[
+							"8",
+							"尽管没有实用的嘴，但有时会试图吃东西。"
+						],
+						[
+							"9",
+							"写信，甚至写书，尽管书写的内容似乎是胡言乱语。"
+						],
+						[
+							"10",
+							"收集鲜花并试图把它们送给它看到的孩子。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Coven of the Full Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Full Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"虽然黑夜可能是黑暗的，但它并非没有生命、怜悯和仁慈。满月之光是那些夜行者的灯塔，减轻他们的恐惧，在黑暗中给他们带来希望。同样，宣誓加入满月女巫团的女巫们也给他们的盟友和大自然的领域带来了希望和治愈。这个女巫团的女巫被称为白女巫，通常是中立或善良的，很少有任何理由偏向于邪恶，尽管她们可以根据自己的需要合法或混乱。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Full Moon Spells|Witch|WalrockHomebrewWitch|Full Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abundant Health|Witch|WalrockHomebrewWitch|Full Moon|WalrockHomebrewWitch|2"
+				}
+			]
+		},
+		{
+			"name": "Full Moon Spells",
+			"entries": [
+				"你获得了对你的巫师团很重要的特定法术的高级指导。你可以按照与之相关的巫师等级来学习以下列表中的每个法术。这些法术对你来说算作巫师法术，不计入你能知道的全部法术。",
+				{
+					"caption": "Full Moon Spells",
+					"type": "table",
+					"colLabels": [
+						"Witch Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell cure wounds|phb}, {@spell healing word|phb}"
+						],
+						[
+							"3rd",
+							"{@spell calm emotions|phb}, {@spell lesser restoration|phb}"
+						],
+						[
+							"5th",
+							"{@spell remove curse|phb}, {@spell revivify|phb}"
+						],
+						[
+							"7th",
+							"{@spell aura of purity|phb}, {@spell death ward|phb}"
+						],
+						[
+							"9th",
+							"{@spell dispel evil and good|phb}, {@spell greater restoration|phb}"
+						]
+					]
+				}
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Full Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Abundant Health",
+			"entries": [
+				"当你在2级加入这个巫师团时，你的治疗魔法带有丰富的自然气息。如果你使用的巫师法术或能力将目标的命中率治疗到最大，那么该法术或能力所做的任何超过这一数额的治疗都会变成目标的临时命中率，这将持续一分钟。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Full Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Familiar's Solace",
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Full Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你的熟人与你的魔法的联系可以将他们周围的人从死亡的阴影中拯救出来。在你的回合中，你可以使用一个额外的行动来稳定你所选择的任何数量的生物，这些生物的命中率为0，并且在你熟悉的人的5英尺之内。",
+				"生物第一次受到这个能力的影响时，你可以使它重新获得1点生命值。在一个生物以这种方式恢复了一个命中率后，它不能再从这个特性中恢复命中率，直到它完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Warding Moonlight",
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Full Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，当你或你的熟人身边5英尺内的生物受到伤害时，你可以使用反应来用月光编织出一个防御。在受到伤害后，该生物会获得相当于你的巫师等级+你的智力修正值的临时命中率，持续时间长达1分钟。",
+				"一旦你使用这个能力，你必须完成一个短期或长期的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Light of the Full Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Full Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以使用一个动作，在你60英尺范围内选择一个你能看到的生物，给该生物注入满月的光芒，持续一分钟。在这段时间内，该生物会在30英尺的范围内发出昏暗的光。",
+				"受此效果影响的生物不能被魅惑、惊吓、中毒或降低其最大命中率，并在持续期间对疾病免疫。此外，该生物可以在它的回合中使用一个额外动作，从月光中汲取力量，治疗自己的命中率，其数量等于你的智力修饰+你的巫师等级的一半。",
+				"一旦你使用这个能力，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Coven of the Half Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Half Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"月光以戏弄凡人的眼睛而臭名昭著，它投下奇怪的阴影，使事物看起来不是它们本身。当月亮完美地半亮半暗时，它投下的昏暗光线会掩盖所有事物的真相，同样地揭示和制造谎言和欺骗。半月女巫会的女巫们是按照她们的意愿制作月光的专家，她们利用月光来揭露和创作新的背叛行为。这些灰袍女巫（正如她们所知道的那样）倾向于中立，尽管存在许多善良和邪恶的灰袍女巫。虽然许多灰袍女巫是混乱的，但也有少数是合法的，她们利用自己的欺骗和诡计来加强社会和文明的秩序。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Half Moon Spells|Witch|WalrockHomebrewWitch|Half Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Moonlight Illusionist|Witch|WalrockHomebrewWitch|Half Moon|WalrockHomebrewWitch|2"
+				}
+			]
+		},
+		{
+			"name": "Half Moon Spells",
+			"entries": [
+				"你获得了对你的巫师团很重要的特定法术的高级指导。你可以按照与之相关的巫师等级来学习以下列表中的每个法术。这些法术对你来说算作巫师法术，不计入你能知道的全部法术。",
+				{
+					"caption": "Half Moon Spells",
+					"type": "table",
+					"colLabels": [
+						"Witch Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell disguise self|phb}, {@spell silent image|phb}"
+						],
+						[
+							"3rd",
+							"{@spell mirror image|phb}, {@spell phantasmal force|phb}"
+						],
+						[
+							"5th",
+							"{@spell hypnotic pattern|phb}, {@spell major image|phb}"
+						],
+						[
+							"7th",
+							"{@spell greater invisibility|phb}, {@spell hallucinatory terrain|phb}"
+						],
+						[
+							"9th",
+							"{@spell mislead|phb}, {@spell seeming|phb}"
+						]
+					]
+				}
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Half Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Moonlight Illusionist",
+			"entries": [
+				"当你在2级加入这个巫师团时，你在任何侦查检查中都有优势，可以辨别幻象的真实性质或生物是否处于其真实形态。如果你还不知道，你可以学习{@spell minor illusion|phb}的咒语，并且你可以用一个额外的行动或一个行动来施放它。",
+				"如果你已经掌握了这个咒语的知识，你可以从巫师法术列表中获得一个额外的咒语知识。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 14,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Half Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Disguise Familiar",
+			"source": "WalrockHomebrewWitch",
+			"page": 14,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Half Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你的熟人受到一个永久（%0%）法术的影响，该法术使用你的法术保全DC。你和你的熟人都可以通过在各自的回合中使用一个动作来解除、重新应用或调整这个幻象的外观。重新施展这个法术不需要消耗一个法术槽。",
+				"此外，这个咒语可以用来使你的熟悉人看起来是中等或更小的尺寸，并且可以使你的熟悉人看起来有一个人形的身体形状。然而，你的熟人仍然保留其正常的四肢配置，并且不能与任何需要手的物体进行物理互动。",
+				"如果这个幻象有一个人形的外表，这个幻象的行为并不完全像你熟悉的人那样。相反，它遵循你熟悉的人正在做的事情的一般概念。因此，一个半身人的幻象放在一只熟悉的猫的上面，不会像猫那样用四条腿走路，而是用两条腿走，就像一个人形生物那样正常。"
+			]
+		},
+		{
+			"name": "Hidden Spellcraft",
+			"source": "WalrockHomebrewWitch",
+			"page": 14,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Half Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，当你施放一个有效果区域且持续时间为1轮或更久的法术时，你可以选择使用幻象魔法使该法术的效果不可见。生物仍然会受到该法术的影响，和平常一样，可以看到该法术对其他生物的影响，但看不到该法术本身，使他们难以确定其位置。",
+				"如果一个生物怀疑有一个看不见的法术存在，它可以用它的行动对你的法术保存DC进行智力（调查）检查。如果成功，该生物就会察觉到咒语本身的半透明轮廓，并知道咒语的位置，就像咒语是可见的一样。",
+				"一旦你使用这个能力，你必须完成一个短期或长期的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Figments",
+			"source": "WalrockHomebrewWitch",
+			"page": 14,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Half Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你获得了制作强大的虚幻诅咒的能力。你可以接触一个生物，并使用一个动作，迫使它对你的法术保全系数做一个魅力储蓄动作。如果它失败了，它就会受到你选择的下列诅咒之一的影响。",
+				"当你第一次施加诅咒时，你决定诅咒的参数，它持续到一个{@spell remove curse|phb}的法术或类似的魔法被施加到目标身上，或者直到你进行长时间的休息。一旦一个生物对这个能力的救赎失败，你就不能再使用这个特性，直到你完成长时间的休息。",
+				"另外，当这个诅咒在你完成长时间休息后会在一个生物身上失效时，你可以选择让它持续到你下一次长时间休息（或直到它被驱散）。如果你选择延长这个诅咒，你在完成长休止期后不会重新获得这个特性的使用权。",
+				"你可以选择的诅咒有以下几种。",
+				{
+					"type": "entries",
+					"name": "False Face",
+					"entries": [
+						"目标受到幻觉的影响，使他们（以及他们的衣服、盔甲、武器和他们身上的其他物品）以你选择的方式看起来不同。他们可以看起来矮一英尺或高一英尺，明显地更重或更轻，但必须有相同的基本四肢排列。",
+						"这种幻觉足够强大，经得起物理检查，触摸起来似乎很真实，修改目标的声音和其他他们会发出的声音，甚至发出令人信服的气味。生物可以辨别出目标是在幻觉之下，但必须先用行动来检查目标，并对你的法术救赎DC进行智力（调查）检查以获得成功。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wrongsight",
+					"entries": [
+						"你改变世界的一个方面在目标面前的表现，用你希望目标看到的东西代替现实。举例来说，你可以规定所有的门对目标来说都是打开的，或者所有的人类都是兽人。你不能改变整个世界在目标眼中的样子；你不能选择让目标感知世界是由熔岩构成的，但你可以指定目标把任何一个房间的地板看成熔岩。",
+						"如果目标怀疑这个世界的某个方面和它看起来的不一样，它可以用一个行动来进行智力（调查）检查，对你的法术保全DC不利。如果成功，它就会知道目标的真实情况，尽管他们对目标的错误认知并没有改变。随着时间的推移，目标可能会开始认为某些东西是幻觉，并照此行事，但目标很可能并不总是正确的。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Coven of the Crescent Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 15,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Crescent Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"巫师的天性是实际和务实的，许多人都清楚地知道法术的局限性。新月女巫会的绿色女巫们同时接受刀剑和法术的训练，并将自己定位为巫术的保护者，无论是在内部还是外部，并且倾向于合法的性质。如果一个女巫猎人取得了太多的进展，或者一个施法者对魔法最黑暗的秘密钻研得太深，绿女巫们就会在那里，为恢复平衡而战斗。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Crescent Moon Spells|Witch|WalrockHomebrewWitch|Crescent Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Battle Witchcraft|Witch|WalrockHomebrewWitch|Crescent Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Crescent Strike|Witch|WalrockHomebrewWitch|Crescent Moon|WalrockHomebrewWitch|2"
+				}
+			]
+		},
+		{
+			"name": "Crescent Moon Spells",
+			"entries": [
+				"你获得了对你的巫师团很重要的特定法术的高级指导。你可以按照与之相关的巫师等级来学习以下列表中的每个法术。这些法术对你来说算作巫师法术，不计入你能知道的全部法术。",
+				{
+					"caption": "Crescent Moon Spells",
+					"type": "table",
+					"colLabels": [
+						"Witch Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell false life|phb}, {@spell shield|phb}"
+						],
+						[
+							"3rd",
+							"{@spell cloud of daggers|phb}, {@spell shadow blade|xge}"
+						],
+						[
+							"5th",
+							"{@spell elemental weapon|phb}, {@spell protection from energy|phb}"
+						],
+						[
+							"7th",
+							"{@spell fire shield|phb}, {@spell stoneskin|phb}"
+						],
+						[
+							"9th",
+							"{@spell destructive wave|phb}, {@spell steel wind strike|xge}"
+						]
+					]
+				}
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 15,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Crescent Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Battle Witchcraft",
+			"entries": [
+				"当你在2级时加入这个女巫团，你被训练得更擅长近战。你获得了对弯刀、短剑和长剑的熟练掌握。当你持有镰刀时，除了常规的属性外，它还具有精巧的属性，并在击中时造成1d6的砍击伤害。",
+				"此外，你将你的智力修改器作为奖励加到你的主动性和你为保持对一个咒语的注意力而进行的任何体质判断上。此外，当你没有穿戴盔甲或使用无盔甲防御类功能（或类似功能）时，在你的护甲等级上加上你智力修饰的一半（取整）。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 15,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Crescent Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Crescent Strike",
+			"entries": [
+				"同样在2级时，当你在持有武器的情况下用近身攻击击中目标时，你可以选择让你的熟人用它的反应对它周围5英尺内的生物进行一次近身武器攻击，加入你的熟练度加成和你选择的力量修饰或灵巧修饰来代替它自己的统计数据。一旦命中，该攻击会造成1d6的重击、穿刺或砍击伤害（你选择）。你熟悉的人造成的这种伤害对于克服抵抗和免疫的目的来说是神奇的。",
+				"该功能造成的伤害在6级（2d6）、10级（3d6）、14级（4d6）和18级（5d6）增加1d6。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 16,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Crescent Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WalrockHomebrewWitch",
+			"page": 16,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Crescent Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Walk the Crescent Path",
+			"source": "WalrockHomebrewWitch",
+			"page": 16,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Crescent Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你和你的熟人对战斗中的扭曲之舞非常了解。在你的回合中，紧接着作为攻击行动一部分的任何攻击之前或之后，你或你的熟人可以传送最多10英尺。"
+			]
+		},
+		{
+			"name": "Hastened Arcana",
+			"source": "WalrockHomebrewWitch",
+			"page": 16,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Crescent Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你甚至可以在攻击时引导你的魔法能力。在你使用攻击动作的回合中，你可以使用一个额外的动作来施放一个你知道的通常需要动作的巫术咒语。"
+			]
+		},
+		{
+			"name": "Coven of the Eclipse",
+			"source": "WalrockHomebrewWitch",
+			"page": 16,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Eclipse",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"所有的巫师都清楚地知道，有些魔法是他们被禁止研究的，被遗忘的秘密，如果涉足，很容易成为世界末日。虽然极其罕见，但这些红女巫属于日蚀女巫团，在月蚀的支持下，她们致力于自己的技艺。这样的女巫很容易成为痴迷于权力的邪恶歹徒，或者他们可能只是混乱的真理追求者，愿意不惜一切代价去了解他们能力的起源。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eclipse Spells|Witch|WalrockHomebrewWitch|Eclipse|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fiendish Affinity|Witch|WalrockHomebrewWitch|Eclipse|WalrockHomebrewWitch|2"
+				}
+			]
+		},
+		{
+			"name": "Eclipse Spells",
+			"entries": [
+				"你获得了对你的巫师团很重要的特定法术的高级指导。你可以按照与之相关的巫师等级来学习以下列表中的每个法术。这些法术对你来说算作巫师法术，不计入你能知道的全部法术。",
+				{
+					"caption": "Eclipse Spells",
+					"type": "table",
+					"colLabels": [
+						"Witch Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell arms of Hadar|phb}, {@spell dissonant whispers|phb}"
+						],
+						[
+							"3rd",
+							"{@spell crown of madness|phb}, {@spell flaming sphere|phb}"
+						],
+						[
+							"5th",
+							"{@spell hunger of Hadar|phb}, {@spell summon lesser demons|xge}"
+						],
+						[
+							"7th",
+							"{@spell phantasmal killer|phb}, {@spell summon greater demon|xge}"
+						],
+						[
+							"9th",
+							"{@spell immolation|xge}, {@spell infernal calling|xge}"
+						]
+					]
+				}
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 16,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Eclipse",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Fiendish Affinity",
+			"entries": [
+				"当你在2级加入这个巫师团时，你学会了地狱和深渊的语言。",
+				"此外，你的魔法背后的黑暗力量将他们自己的一个人委托给你。当你施展{@spell find familiar|phb}时，你可以选择让你的伙伴成为{@creature imp}或{@creature quasit}。如果你选择了其中一个家族成员，你不能选择让它成为恶魔以外的任何类型。",
+				"当与你的小恶魔或类人生物相邻的生物达到0命中率并死亡时，你可以使用一个反应来让你的熟人吞噬它的一部分灵魂。如果你这样做，你或你的熟悉人中的任何一个人都会获得相当于你的智力修饰+你的巫师等级的一半的临时命中率，持续时间长达1分钟。一旦你的熟人以这种方式消耗了一部分灵魂，它就不能再这样做了，直到你完成一个短期或长期休息。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 17,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Eclipse",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Sanguine Rain",
+			"source": "WalrockHomebrewWitch",
+			"page": 17,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Eclipse",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你可以使用一个动作，以你能看到的120英尺范围内的一个点为中心，在一个半径为15英尺、高度为60英尺的圆柱体中呼唤下一场血雨。在血雨中，你和你选择的任何魔物都能获得攻击优势。血雨还能为你和你选择的任何魔族提供一半的掩护，并为额外的生物提供一定数量的智力修饰（最少1个）。",
+				"一旦你使用这个能力，你必须完成一个短期或长期的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Hellish Influence",
+			"source": "WalrockHomebrewWitch",
+			"page": 17,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Eclipse",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级的时候，你可以使用一个动作来无形地召唤一个特别阴险的恶魔，这个恶魔会在你周围120英尺内你能看到的一个人形生物的头脑中扎根。这个恶魔的活动时间为24小时，在此期间，只要你们在同一个存在平面上，它就会向你汇报，使你知道目标所看到的或所做的一切。",
+				"此外，你可以使用一个动作来指示魔物影响它的人形宿主。这需要你告诉魔物一两句话的指示，让它传递给目标。魔鬼会尽力让目标听起来合理，但不能说服目标以明显的方式伤害自己。魔鬼也会试图把指令的措辞写得既符合你的要求，又能为魔鬼可能有的模糊议程服务。",
+				"目标必须对你的法术救赎DC做一个智慧救赎。如果失败，它将尽其所能地遵循恶魔的指示。如果成功，恶魔会被驱逐，目标会意识到它的存在，并且这个效果结束。对被魅惑免疫的生物会自动成功地完成这个拯救动作。",
+				"你可以用这种方式多次给目标指示，但目标在第一次之后的每次蓄力投掷中都有优势。",
+				"一旦你用行动召唤一个具有此能力的魔物，你就不能再这样做，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Hagform",
+			"source": "WalrockHomebrewWitch",
+			"page": 17,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Eclipse",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以使用一个额外的行动让你的恶魔般的力量超越你，变成一个夜行者，一个蓝皮肤、有角的恶魔生物，其中很多是这个女巫团的祖先。这种形态最多持续一分钟，直到你失去意识，或者直到你用另一个额外行动解除它。一旦你使用这个能力，你就不能再使用它，直到你完成一个长时间的休息。",
+				"在这种形态下，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你的类型是恶魔，而不是任何其他类型。",
+						"暗视距离为120英尺。",
+						"抵抗非银色的非魔法武器造成的击打、穿刺和切割伤害。",
+						"作为一个行动，你可以作为一个7级的法术随意施放（%0%），而不需要消耗一个法术槽。当以这种方式施展时，当你回到你原来的形态时，该咒语就会结束。",
+						"你的法术造成的伤害使用每个骰子上可能的最高数字，而不是滚动。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Coven of the Gibbous Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 17,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Gibbous Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"命运写在星星和血液中，对于那些仔细观察的人来说。弯月女巫会的女巫们认为自己是命运的仲裁者，解读命运并避免它或确保其完成。这些靛蓝女巫还充当精神向导，通过仪式和典礼将死者的灵魂带到他们最后的安息之地。这个巫师团的巫师通常是中立的，尊重更广泛的宇宙中的死亡和命运的力量，并知道他们的位置只是每个人的仆人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gibbous Moon Spells|Witch|WalrockHomebrewWitch|Gibbous Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Read the Entrails|Witch|WalrockHomebrewWitch|Gibbous Moon|WalrockHomebrewWitch|2"
+				}
+			]
+		},
+		{
+			"name": "Gibbous Moon Spells",
+			"entries": [
+				"你获得了对你的巫师团很重要的特定法术的高级指导。你可以按照与之相关的巫师等级来学习以下列表中的每个法术。这些法术对你来说算作巫师法术，不计入你能知道的全部法术。",
+				{
+					"caption": "Gibbous Moon Spells",
+					"type": "table",
+					"colLabels": [
+						"Witch Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell chaos bolt|xge}, {@spell guiding bolt|phb}"
+						],
+						[
+							"3rd",
+							"{@spell augury|phb}, {@spell gentle repose|phb}"
+						],
+						[
+							"5th",
+							"{@spell speak with dead|phb}, {@spell spirit guardians|phb}"
+						],
+						[
+							"7th",
+							"{@spell divination|phb}, {@spell Mordenkainen's faithful hound|phb}"
+						],
+						[
+							"9th",
+							"{@spell scrying|phb}, {@spell Rary's telepathic bond|phb}"
+						]
+					]
+				}
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 17,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Gibbous Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Read the Entrails",
+			"entries": [
+				"当你在2级加入这个巫师团时，你学会了如何读取隐藏在生物内脏中的秘密信号。当一个非亡灵、元素、渗出物或构造物的生物被降低到0点，并在你或你的熟人的10英尺范围内死亡时，你可以使用一个反应在其死亡的物质中读取命运。",
+				"如果你这样做，在{@table Revelations|WalrockHomebrewWitch}表上掷两次，从这两个结果中选择一个，然后在你30英尺范围内选择一个生物。该生物会获得你所选择的效果，该效果会持续到其规定的持续时间或你进行短暂或长时间的休息，以先到者为准。",
+				"一旦你使用这个能力，你需要短暂或长时间的休息才能再次使用它。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 18,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Gibbous Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Psychopomp",
+			"source": "WalrockHomebrewWitch",
+			"page": 18,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Gibbous Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你召唤你的熟人时，你可以让它表现为自己的一个幽灵版本。在这种形态下，你的熟悉者获得以下额外的好处。",
+				{
+					"type": "list",
+					"items": [
+						"飞行速度为30英尺，具有悬停属性（除非它有更快的飞行速度）",
+						"能够通过使用一个动作变得隐身，直到下一回合结束。",
+						"有能力穿过除铅制表面以外的固体表面。如果你的熟人在一个表面内结束它的回合，它将受到2D10力的伤害，这个伤害不能被减少或忽略，并被驱逐到最近的可用位置。",
+						"抵抗所有的伤害，除了精神上的；辐射上的；以及来自魔法或银色武器的击打、切割或穿透伤害。"
+					]
+				},
+				"此外，当你的熟人与一个生物共享一个空间时，你可以使你的熟人使用它的反应来与该生物共享你所选择的这些好处之一。该生物会得到所选择的利益，直到你下一回合开始。一旦你以这种方式分享了一个好处，你就不能再这样做了，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Fortune Telling",
+			"source": "WalrockHomebrewWitch",
+			"page": 18,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Gibbous Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级时，你知道真正的算命的秘密。作为一个10分钟的仪式，你可以变出一副塔罗卡牌，并在仪式的持续时间内为你身边5英尺内的一个愿意的生物算命。",
+				"这个生物必须与你有共同的语言，而且必须有至少1的CR或等级，才能有足够重要的命运来进行这种解读。在{@table Fortune Telling|WalrockHomebrewWitch}表上掷三次，或者，如果你有一副实体的塔罗卡牌，把高牌和剑、星、硬币、石刻的主人一起洗，然后发三张牌。",
+				"然后，该生物必须从这些牌中选择一张，并将其保留。如果这张牌没有被指定要立即使用，该生物可以在它的回合中不采取任何行动而使用这张牌。仪式完成后24小时后，卡片的魔力就会消失，所以必须在这段时间内使用。一个生物每30天不能通过这个仪式读出它的命运。",
+				"当生物在选择牌时，除了牌的名字和它的外观之外，它对它所选择的财富一无所知。任何关于牌所赋予的财富性质的暗示（由任何角色或任何玩家所为）都会使仪式无效，导致法术槽被消耗而没有结果。然而，一旦生物选择了一张牌，它就完全知道所选牌的效果。",
+				"一个生物不能两次获得相同的财富。如果你抽到的牌是该生物先前所选择的，请重新抽牌或丢弃它再抽。如果不可能抽到三张牌而不出现该生物已经选择的牌，这个仪式就不再对该生物有效。",
+				"一旦你使用了这个能力，你就不能再这样做了，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Guide of Fates",
+			"source": "WalrockHomebrewWitch",
+			"page": 20,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Gibbous Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，当你使用 \"读心术 \"功能时，你可以在 \"启示表 \"上滚动3次，仍然只能选择一个结果。你可以在两次休息之间使用你的 \"阅读内脏 \"功能。",
+				"此外，在使用你的精神力量特征时，你的熟人可以与一个生物分享该特征的两个好处，而不是一个。"
+			]
+		},
+		{
+			"name": "Coven of the Lost Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Lost Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"entries": [
+				"古老的传说和星图告诉我们，很久以前，还有一个月亮挂在夜空中。不管是由于魔法、灾难，还是其他更奇怪的原因，这个月亮已经消失了，让受其庇护的女巫们处于危险的境地。这些女巫将自己命名为 \"失落的月亮女巫团\"，她们在多元宇宙中寻找失踪天体的下落，以及其他奇怪存在方式的答案。这些身着银色衣服的星光女巫可以发现自己是任何联盟的热心成员，因为每个女巫都有可能偶然发现他们自己凄美的个人真相。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "The Lost Moon and You|Witch|WalrockHomebrewWitch|Lost Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lost Moon Spells|Witch|WalrockHomebrewWitch|Lost Moon|WalrockHomebrewWitch|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Starlight Seeker|Witch|WalrockHomebrewWitch|Lost Moon|WalrockHomebrewWitch|2"
+				}
+			]
+		},
+		{
+			"type": "inset",
+			"name": "The Lost Moon and You",
+			"entries": [
+				"在许多方面，\"失月女巫 \"被设计为一个原型，其中包含一个不断发展的故事。在月亮消失之前，这些女巫是谁？她们把自己献给的月亮发生了什么？重要的是，她们现在认为自己是谁？",
+				"加入这个女巫团的年轻女巫，是因为她们正在为自己的问题寻找答案，而失落之月女巫团的探索与她们产生了共鸣。作为失落之月的女巫，你在寻找什么真理，你希望在多元宇宙的什么地方找到它们？"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Lost Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Lost Moon Spells",
+			"entries": [
+				"你获得了对你的巫师团很重要的特定法术的高级指导。你可以按照与之相关的巫师等级来学习以下列表中的每个法术。这些法术对你来说算作巫师法术，不计入你能知道的全部法术。",
+				{
+					"caption": "Lost Moon Spells",
+					"type": "table",
+					"colLabels": [
+						"Witch Level",
+						"Spells"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell longstrider|phb}, {@spell Tenser's floating disk|phb}"
+						],
+						[
+							"3rd",
+							"{@spell rope trick|phb}, {@spell see invisibility|phb}"
+						],
+						[
+							"5th",
+							"{@spell haste|phb}, {@spell thunder step|xge}"
+						],
+						[
+							"7th",
+							"{@spell banishment|phb}, {@spell dimension door|phb}"
+						],
+						[
+							"9th",
+							"{@spell far step|xge}, {@spell teleportation circle|phb}"
+						]
+					]
+				}
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 20,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Lost Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Starlight Seeker",
+			"entries": [
+				"当你在2级加入这个巫师团时，你拥有调查技能的熟练度，并在用它进行检查时增加双倍的熟练度加成。",
+				"此外，作为一个需要10分钟的仪式，你可以选择施放（%0%）、（%1%）或（%2%），而无需消耗法术槽或材料成分。在第五级时，这个列表还包括（%3%）。"
+			],
+			"source": "WalrockHomebrewWitch",
+			"page": 21,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Lost Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Familiar Nexus",
+			"source": "WalrockHomebrewWitch",
+			"page": 21,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Lost Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你对多元宇宙的复杂性质的理解使你能更有效地利用你和你的熟人之间的独特联系。你的熟人可以被用来传递任何范围的法术，而不仅仅是那些有接触范围的法术。",
+				"此外，你总是知道你周围1英里内的任何平面传送门的距离和方向。"
+			]
+		},
+		{
+			"name": "Witchwarp",
+			"source": "WalrockHomebrewWitch",
+			"page": 21,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Lost Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"当你达到10级时，你知道如何利用你的熟人和你自己之间的联系，毫不费力地传送到对方的位置。作为一个额外的动作，你和你熟悉的人可以传送，你们每个人都会出现在对方之前的位置。",
+				"此外，你可以选择将与你或你熟悉的人相邻的一个生物也传送出去，出现在你熟悉的人或你自己5英尺内你选择的空间。在你传送了除你自己或你熟悉的人之外的另一个生物之后，你必须完成一个短暂或长时间的休息，才能再次以这种方式传送另一个生物。"
+			]
+		},
+		{
+			"name": "Lost Knowledge",
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch",
+			"subclassShortName": "Lost Moon",
+			"subclassSource": "WalrockHomebrewWitch",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你在探索中发现了很多东西，并且对魔法有了惊人的掌握。作为你回合的额外行动，你可以从任何等级的法术列表中获得一个法术知识。你必须至少有一个可用于施展该法术的法术槽，如果你施展该法术，必须消耗该法术槽。当你知道这个法术时，它对你来说算作一个巫师法术，并且不计入你能知道的法术数量。在你施放后或在你当前回合结束时，该咒语会从你的脑海中消失，那时你会失去对它的认知。",
+				"一旦你使用这个功能，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Coven of the Dark Moon",
+			"shortName": "Dark Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 11,
+			"subclassSpells": [
+				"bane",
+				"tasha's hideous laughter",
+				"blindness/deafness",
+				"darkness",
+				"animate dead",
+				"bestow curse",
+				"blight",
+				"evard's black tentacles",
+				"contagion",
+				"insect plague"
+			],
+			"subclassFeatures": [
+				"Coven of the Dark Moon|Witch|WalrockHomebrewWitch|Dark Moon|WalrockHomebrewWitch|2",
+				"Minions of the Dark Moon|Witch|WalrockHomebrewWitch|Dark Moon|WalrockHomebrewWitch|6",
+				"Orb of Night|Witch|WalrockHomebrewWitch|Dark Moon|WalrockHomebrewWitch|10",
+				"Create Scarecrow|Witch|WalrockHomebrewWitch|Dark Moon|WalrockHomebrewWitch|14"
+			],
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch"
+		},
+		{
+			"name": "Coven of the Full Moon",
+			"shortName": "Full Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 12,
+			"subclassSpells": [
+				"cure wounds",
+				"healing word",
+				"calm emotions",
+				"lesser restoration",
+				"remove curse",
+				"revivify",
+				"aura of purity",
+				"death ward",
+				"dispel evil and good",
+				"greater restoration"
+			],
+			"subclassFeatures": [
+				"Coven of the Full Moon|Witch|WalrockHomebrewWitch|Full Moon|WalrockHomebrewWitch|2",
+				"Familiar's Solace|Witch|WalrockHomebrewWitch|Full Moon|WalrockHomebrewWitch|6",
+				"Warding Moonlight|Witch|WalrockHomebrewWitch|Full Moon|WalrockHomebrewWitch|10",
+				"Light of the Full Moon|Witch|WalrockHomebrewWitch|Full Moon|WalrockHomebrewWitch|14"
+			],
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch"
+		},
+		{
+			"name": "Coven of the Half Moon",
+			"shortName": "Half Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 13,
+			"subclassSpells": [
+				"disguise self",
+				"silent image",
+				"mirror image",
+				"phantasmal force",
+				"hypnotic pattern",
+				"major image",
+				"greater invisibility",
+				"hallucinatory terrain",
+				"mislead",
+				"seeming",
+				"minor illusion"
+			],
+			"subclassFeatures": [
+				"Coven of the Half Moon|Witch|WalrockHomebrewWitch|Half Moon|WalrockHomebrewWitch|2",
+				"Disguise Familiar|Witch|WalrockHomebrewWitch|Half Moon|WalrockHomebrewWitch|6",
+				"Hidden Spellcraft|Witch|WalrockHomebrewWitch|Half Moon|WalrockHomebrewWitch|10",
+				"Figments|Witch|WalrockHomebrewWitch|Half Moon|WalrockHomebrewWitch|14"
+			],
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch"
+		},
+		{
+			"name": "Coven of the Crescent Moon",
+			"shortName": "Crescent Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 15,
+			"subclassSpells": [
+				"false life",
+				"shield",
+				"cloud of daggers",
+				"shadow blade|xge",
+				"elemental weapon",
+				"protection from energy",
+				"fire shield",
+				"stoneskin",
+				"destructive wave",
+				"steel wind strike|xge"
+			],
+			"subclassFeatures": [
+				"Coven of the Crescent Moon|Witch|WalrockHomebrewWitch|Crescent Moon|WalrockHomebrewWitch|2",
+				"Extra Attack|Witch|WalrockHomebrewWitch|Crescent Moon|WalrockHomebrewWitch|6",
+				"Walk the Crescent Path|Witch|WalrockHomebrewWitch|Crescent Moon|WalrockHomebrewWitch|10",
+				"Hastened Arcana|Witch|WalrockHomebrewWitch|Crescent Moon|WalrockHomebrewWitch|14"
+			],
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch"
+		},
+		{
+			"name": "Coven of the Eclipse",
+			"shortName": "Eclipse",
+			"source": "WalrockHomebrewWitch",
+			"page": 16,
+			"subclassSpells": [
+				"arms of hadar",
+				"dissonant whispers",
+				"crown of madness",
+				"flaming sphere",
+				"hunger of hadar",
+				"summon lesser demons|xge",
+				"phantasmal killer",
+				"summon greater demon|xge",
+				"immolation|xge",
+				"infernal calling|xge"
+			],
+			"subclassFeatures": [
+				"Coven of the Eclipse|Witch|WalrockHomebrewWitch|Eclipse|WalrockHomebrewWitch|2",
+				"Sanguine Rain|Witch|WalrockHomebrewWitch|Eclipse|WalrockHomebrewWitch|6",
+				"Hellish Influence|Witch|WalrockHomebrewWitch|Eclipse|WalrockHomebrewWitch|10",
+				"Hagform|Witch|WalrockHomebrewWitch|Eclipse|WalrockHomebrewWitch|14"
+			],
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch"
+		},
+		{
+			"name": "Coven of the Gibbous Moon",
+			"shortName": "Gibbous Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 17,
+			"subclassSpells": [
+				"chaos bolt|xge",
+				"guiding bolt",
+				"augury",
+				"gentle repose",
+				"speak with dead",
+				"spirit guardians",
+				"divination",
+				"mordenkainen's faithful hound",
+				"scrying",
+				"rary's telepathic bond"
+			],
+			"subclassFeatures": [
+				"Coven of the Gibbous Moon|Witch|WalrockHomebrewWitch|Gibbous Moon|WalrockHomebrewWitch|2",
+				"Psychopomp|Witch|WalrockHomebrewWitch|Gibbous Moon|WalrockHomebrewWitch|6",
+				"Fortune Telling|Witch|WalrockHomebrewWitch|Gibbous Moon|WalrockHomebrewWitch|10",
+				"Guide of Fates|Witch|WalrockHomebrewWitch|Gibbous Moon|WalrockHomebrewWitch|14"
+			],
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch"
+		},
+		{
+			"name": "Coven of the Lost Moon",
+			"shortName": "Lost Moon",
+			"source": "WalrockHomebrewWitch",
+			"page": 20,
+			"subclassSpells": [
+				"longstrider",
+				"tenser's floating disk",
+				"rope trick",
+				"see invisibility",
+				"haste",
+				"thunder step|xge",
+				"banishment",
+				"dimension door",
+				"far step|xge",
+				"teleportation circle"
+			],
+			"subclassFeatures": [
+				"Coven of the Lost Moon|Witch|WalrockHomebrewWitch|Lost Moon|WalrockHomebrewWitch|2",
+				"Familiar Nexus|Witch|WalrockHomebrewWitch|Lost Moon|WalrockHomebrewWitch|6",
+				"Witchwarp|Witch|WalrockHomebrewWitch|Lost Moon|WalrockHomebrewWitch|10",
+				"Lost Knowledge|Witch|WalrockHomebrewWitch|Lost Moon|WalrockHomebrewWitch|14"
+			],
+			"className": "Witch",
+			"classSource": "WalrockHomebrewWitch"
+		}
+	]
+}

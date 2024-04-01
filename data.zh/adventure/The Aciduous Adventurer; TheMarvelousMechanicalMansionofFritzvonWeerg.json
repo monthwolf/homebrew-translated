@@ -1,0 +1,2594 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TMMMoFvW",
+				"abbreviation": "TMMMoFvW",
+				"full": "The Marvelous Mechanical Mansion of Fritz von Weerg",
+				"authors": [
+					"The Aciduous Adventurer"
+				],
+				"convertedBy": [
+					"Eulum"
+				],
+				"version": "1.0",
+				"url": "https://www.dmsguild.com/product/327576/The-Marvelous-Mechanical-Mansion-of-Fritz-von-Weerg",
+				"color": "5E860E"
+			}
+		],
+		"dateAdded": 1696459650,
+		"dateLastModified": 1696459650,
+		"_dateLastModifiedHash": "5f79bebf6e"
+	},
+	"monster": [
+		{
+			"name": "Workshop Guardian",
+			"size": [
+				"H"
+			],
+			"type": "construct",
+			"source": "TMMMoFvW",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d12 + 70",
+				"average": 167
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 6,
+			"con": 18,
+			"int": 14,
+			"wis": 10,
+			"cha": 5,
+			"passive": 10,
+			"cr": "7",
+			"page": 20,
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"understands commands given in any language but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"X"
+			],
+			"vulnerable": [
+				"lightning"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Self-repairing",
+					"entries": [
+						"车间守护者在其回合开始时，如果至少有1点生命值，将恢复10点生命值。"
+					]
+				},
+				{
+					"name": "Overheat",
+					"entries": [
+						"如果守护者受到任何火焰伤害，请投掷{@dice 1d6}。在投掷结果为1或2时，它将在本回合结束前处于{@condition incapacitated}状态。"
+					]
+				},
+				{
+					"name": "Guardian Bond",
+					"entries": [
+						"任何在离守护者30英尺范围内的构造物都会被一道电弧与其连接。这些构造物的AC和豁免 throws 增加1，并对所有伤害具有抗性。此外，每当连接到守护者的另一个构造物受到伤害时，守护者也会受到同样数量的伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"守护者进行两次拳击攻击或两次震荡冲锋攻击。"
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw}进行攻击，射程5英尺，目标一个。造成{@h}11({@damage 2d6 + 4})点钝击伤害。"
+					]
+				},
+				{
+					"name": "Shock Charge",
+					"entries": [
+						"{@atk ms} 使用 {@hit 5} 进行攻击，射程5英尺，目标一个。造成 {@h}11 ({@damage 2d8 + 3}) 点伤害。如果目标穿着金属盔甲，车间守卫在进行攻击骰时获得优势。命中后，目标直到其下一个回合开始前无法进行反应。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Conductive Reasoning",
+					"entries": [
+						"当一个生物对车间守护者能看到的任何其他构造体进行攻击时，守护者可以产生一道电弧，对攻击目标造成{@damage 1d12}点闪电伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Workshop Guardian",
+				"source": "TMMMoFvW"
+			},
+			"tokenUrl": "https://i.imgur.com/ZlpVKgX.png",
+			"damageTags": [
+				"B"
+			],
+			"damageTagsLegendary": [
+				"B"
+			]
+		},
+		{
+			"name": "Fritz von Weerg",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"source": "TMMMoFvW",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d6 + 13",
+				"average": 53
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 9,
+			"dex": 17,
+			"con": 12,
+			"int": 18,
+			"wis": 12,
+			"cha": 15,
+			"passive": 14,
+			"cr": "6",
+			"page": 19,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Gnomish"
+			],
+			"languageTags": [
+				"C",
+				"G"
+			],
+			"save": {
+				"dex": "+6",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"deception": "+5",
+				"history": "+7",
+				"perception": "+4",
+				"performance": "+5",
+				"persuasion": "+5"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"immune": [
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Firearms Knowledge",
+					"entries": [
+						"弗里茨对自己发明的武器的精通使他能够无视火器的装填特性。"
+					]
+				},
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"每当弗里茨受到闪电伤害时，它不会受到伤害，而是恢复的生命值等于所受到的闪电伤害。"
+					]
+				},
+				{
+					"name": "Flawed Targeting",
+					"entries": [
+						"在弗里茨的回合开始时投掷一个{@dice d6}。如果你投掷到1，他在回合结束前进行攻击检定时都会有劣势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"isNamedCreature": true,
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"弗里茨进行两次手枪攻击或两次短枪攻击。"
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} 近战攻击，射程30/90尺，目标为一名敌人。造成{@h}8 ({@damage 1d10 + 3}) 穿刺伤害。"
+					]
+				},
+				{
+					"name": "Blunderbuss",
+					"entries": [
+						"{@atk rw} 使用{@hit 6} 进行攻击，射程20/60尺，目标为一个敌人。造成{@h}13 ({@damage 2d8 + 3}) 点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Scrap Metal Scattershot {@recharge 5}",
+					"entries": [
+						"弗里茨(Fritz)往他的火铳(blunderbuss)的枪管里塞了一些齿轮和废金属，然后朝一个20英尺锥形区域射击。该区域内的每个生物必须进行一次DC15的敏捷豁免检定，未通过检定的生物将受到17({@damage 5d6})点穿刺伤害，通过检定的生物则只受到一半伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"attachedItems": [
+				"pistol|dmg"
+			],
+			"legendaryHeader": [
+				"弗里茨可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作选项，并且只能在另一个生物的回合结束时使用。弗里茨在自己的回合开始时恢复已使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Inventor's Agility",
+					"entries": [
+						"弗里茨利用他的机械蜘蛛腿移动，移动距离为他的速度，且不会引发机会攻击。"
+					]
+				},
+				{
+					"name": "Master Tinkerer",
+					"entries": [
+						"弗里茨迅速制造并召唤一个小型{@creature Monodrone}，距离自己15英尺以内。一个新召唤的单眼球体可以使用其匕首或标枪进行一次攻击。"
+					]
+				},
+				{
+					"name": "Rapid Repair",
+					"entries": [
+						"弗里茨运用他对自己身体的精湛了解，修复了一些受损的部分，恢复了等同于{@dice 1d6}的生命值。"
+					]
+				},
+				{
+					"name": "Construct Commander (Costs 2 actions)",
+					"entries": [
+						"弗里茨可以指示他看到的两个单眼飞行器，在30英尺内攻击它们看到的距离在5英尺内的目标。"
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/NlIsAiO.png",
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Carionette",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"source": "TMMMoFvW",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d4",
+				"average": 7
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 11,
+			"int": 8,
+			"wis": 13,
+			"cha": 5,
+			"passive": 11,
+			"cr": "1",
+			"page": 20,
+			"languages": [
+				"understands Common but doesn't speak and can't read or write"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"acrobatics": "+5"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"木偶在对任何它有{@quickref Surprise|PHB|3|0|surprised}的生物进行攻击检定时具有优势。"
+					]
+				},
+				{
+					"name": "Swift Movement",
+					"entries": [
+						"木偶傀儡可以在比它大的生物的空间中移动。"
+					]
+				}
+			],
+			"traitTags": [
+				"Ambusher"
+			],
+			"action": [
+				{
+					"name": "Needle",
+					"entries": [
+						"{@atk mw} {@hit 3} 进行攻击，射程5英尺，一个目标。造成{@h}5 ({@damage 1d4 + 3}) 穿刺伤害。目标必须进行一次{@dc 13} 体质豁免，未通过则受到2 ({@damage 1d4}) 毒素伤害，通过则伤害减半。未通过豁免的生物还会在接下来的10分钟内处于{@condition poisoned} 状态。直到毒素效果结束，目标将持续{@condition paralyzed}。目标可以在自己的回合结束时重复进行豁免检定，若通过则结束毒素效果。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Clockwork Servant",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "TMMMoFvW",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 13,
+			"int": 8,
+			"wis": 12,
+			"cha": 7,
+			"passive": 15,
+			"cr": "1/8",
+			"skill": {
+				"animal handling": "+3",
+				"investigation": "+3",
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"shortName": "servant",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"该仆人对任何试图改变其形态的法术或效果免疫。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"仆人在对抗法术和其他魔法效果的豁免 throws 时具有优势。"
+					]
+				},
+				{
+					"name": "Domestic Retainer",
+					"entries": [
+						"仆人可以随意施放{@spell mending}和{@spell prestidigitation}的零级咒语，无需使用法术材料。"
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} 使用武器攻击，达到5英尺，一个目标。造成{@h}5 ({@damage 1d6 + 2}) 钝击伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"这个机械仆人提供饮料和交谈，尽管它容易出现不协调的抽搐和偶尔的笨拙、蹒跚移动。",
+					"{@b Advanced Social Skills.} 发条仆役的防御能力较弱，但他们的思维能力比其他发条自动机要强。特别昂贵的发条仆役甚至可以进行完整的对话，尽管他们的记忆齿轮必须定期更换，否则他们会产生一种接近情感和自由意志的东西。他们理解自己所在国家的基本语言、礼仪和礼节。",
+					"制造或雇佣机械刺客是一项重罪。齿轮锻造者反对制造机械刺客，不仅因为制造刺客需要腐化灵魂宝石，还因为公众可能会轻易将诚实的齿轮锻造者与外表相似的刺客混淆。拉瓦神殿和齿轮锻造者都在努力揭露和摧毁这些构造物以及制造或雇佣它们的人。"
+				]
+			},
+			"damageTags": [
+				"B"
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"name": "Workshop Guardian",
+			"mythicEncounter": [],
+			"source": "TMMMoFvW",
+			"lairActions": [
+				"• 如果守护者在这个回合移动过，它可以利用这股动力摇晃房间。房间里老化的板块开始颤抖。任何站在地面上的生物必须进行一次DC14的敏捷豁免检定，否则会倒地。",
+				"• 岩浆从熔炉中喷发，形成一个高10英尺，半径10英尺的间歇泉。间歇泉区域内的每个生物必须进行一次DC 16的敏捷豁免检定，未通过检定的生物会受到12(4d6)点火焰伤害，通过检定的生物则只受到一半伤害。",
+				"• 锻造车间的管道冒出大量蒸汽，充满了以一个点为中心的20英尺半径球体范围内的空间。蒸汽浓密地遮挡了视线。",
+				"• 守护者移开一个5英尺见方的地板板块，瞄准40英尺内可见的一只生物。它投掷这个板块，进行一次远程武器攻击，使用以下动作：",
+				"• 近战武器攻击：命中加值{@b Panel.}，攻击距离40英尺，目标为一个。命中：19({@dice 3d10 + 4})点钝击伤害。"
+			]
+		}
+	],
+	"adventure": [
+		{
+			"id": "TMMMoFvW",
+			"published": "2020-09-07",
+			"level": {
+				"custom": "6-9"
+			},
+			"name": "The Marvelous Mechanical Mansion of Fritz von Weerg",
+			"storyline": "Ravenloft",
+			"group": "homebrew",
+			"source": "TMMMoFvW",
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"The Tragedy of Fritz von Weerg",
+						{
+							"depth": 1,
+							"header": "The Magnificent Maker"
+						},
+						{
+							"depth": 1,
+							"header": "A Fool's Errand"
+						},
+						{
+							"depth": 1,
+							"header": "A Whisper in the Night"
+						},
+						{
+							"depth": 1,
+							"header": "Winter's Cold Embrace"
+						},
+						{
+							"depth": 1,
+							"header": "The Mad Inventor"
+						},
+						{
+							"depth": 1,
+							"header": "The Old von Weerg Place"
+						},
+						"Adding the Mansion to Curse of Strahd",
+						{
+							"depth": 1,
+							"header": "Plot Hooks"
+						},
+						"Adding the Mansion to Another Adventure",
+						{
+							"depth": 1,
+							"header": "Plot Hooks"
+						}
+					]
+				},
+				{
+					"name": "The Mansion",
+					"headers": [
+						{
+							"depth": 1,
+							"header": "General Traits"
+						},
+						"Exterior",
+						"Interior - First Floor",
+						{
+							"depth": 1,
+							"header": "Entrance Hall"
+						},
+						{
+							"depth": 1,
+							"header": "1A. Foyer"
+						},
+						{
+							"depth": 1,
+							"header": "1B. Crawl space"
+						},
+						{
+							"depth": 1,
+							"header": "1C. Real Entry Hall"
+						},
+						{
+							"depth": 1,
+							"header": "1D. Real Foyer"
+						},
+						{
+							"depth": 1,
+							"header": "1E. Drawing Room"
+						},
+						{
+							"depth": 1,
+							"header": "1F. Dining Room"
+						},
+						{
+							"depth": 1,
+							"header": "1G. Game Room"
+						},
+						{
+							"depth": 1,
+							"header": "1H. Kitchen"
+						},
+						{
+							"depth": 1,
+							"header": "1I. Servants' Quarters (Charging Stations)"
+						},
+						{
+							"depth": 1,
+							"header": "1J. Elevator"
+						},
+						"Interior - Second Floor",
+						{
+							"depth": 1,
+							"header": "2A. Trophy Room"
+						},
+						{
+							"depth": 1,
+							"header": "2B. Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "2C. Hallway"
+						},
+						{
+							"depth": 1,
+							"header": "2D. Study"
+						},
+						{
+							"depth": 1,
+							"header": "2E. Backup Workshop"
+						},
+						{
+							"depth": 1,
+							"header": "2F. Bathroom"
+						},
+						{
+							"depth": 1,
+							"header": "2G. Junk Room"
+						},
+						{
+							"depth": 1,
+							"header": "2H. Bedroom"
+						},
+						{
+							"depth": 1,
+							"header": "2I. Secret Workshop Entrance"
+						},
+						"Interior - Basement Floor",
+						{
+							"depth": 1,
+							"header": "3A. The Rotating Room"
+						},
+						{
+							"depth": 1,
+							"header": "3B. Secret Workshop"
+						},
+						{
+							"depth": 1,
+							"header": "3C. Fritz Von Weerg's Secret Bunker"
+						}
+					]
+				},
+				{
+					"name": "Appendix A: NPCs",
+					"ordinal": {
+						"identifier": "A",
+						"type": "appendix"
+					}
+				},
+				{
+					"name": "Appendix B: Stat Blocks",
+					"ordinal": {
+						"identifier": "B",
+						"type": "appendix"
+					}
+				},
+				{
+					"name": "Appendix C: Madam Nimira's Fortunes",
+					"ordinal": {
+						"identifier": "C",
+						"type": "appendix"
+					}
+				},
+				{
+					"name": "Appendix D - Maps and Handouts",
+					"ordinal": {
+						"identifier": "D",
+						"type": "appendix"
+					}
+				},
+				{
+					"name": "Appendix E - Blueprints & Firearm Upgrades",
+					"headers": [
+						"Blueprints and Crafting Rules",
+						"Sample schematics",
+						"Firearm Upgrades",
+						"Firearm Upgrades",
+						"Minor Firearm Upgrades",
+						"Major Firearm Upgrades"
+					]
+				},
+				{
+					"name": "Appendix F: Credits"
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "TMMMoFvW",
+			"source": "TMMMoFvW",
+			"data": [
+				{
+					"name": "Introduction",
+					"type": "section",
+					"entries": [
+						"几个世纪前，弗里茨·冯·韦尔格（Fritz von Weerg）这个名字几乎要成为家喻户晓的名字了。他令人惊叹的创造让许多粉丝相信他可以开创一个新的创意和工业时代。很少有人目睹了他的第一座（也是唯一的）机械大厦的崛起和建设，但那些见证者声称这是现代世界的下一个奇迹。",
+						"然而，就在完成后不久，弗里茨·冯·维尔格（Fritz von Weerg）神秘失踪了。庄园的大门紧闭，他再也没有出现过。没有人知道弗里茨或他那些惊人发明的下落，但他的遗产却一直存在。机械庄园至今仍屹立，虽然已被废弃多年，但关于这座房子似乎有自己的生命，以及人们对冯·维尔格名字上可怕诅咒的恐惧，这些传说保护着它不受破坏者、掠夺者和冒险家的侵害。你敢进去看看里面到底藏着什么吗？",
+						"欢迎来到大师的府邸。弗里茨·莫尔·库夫纳·奥恩贝格·布劳米勒·艾森菲尔德·冯·韦尔格四世先生向您致以最诚挚的祝福。祝您好运。",
+						{
+							"type": "section",
+							"name": "The Tragedy of Fritz von Weerg",
+							"entries": [
+								{
+									"name": "The Magnificent Maker",
+									"type": "entries",
+									"entries": [
+										"冯·维尔格曾是一个让孩子们咯咯笑的名字，也被大师工匠们所赞誉。他著名的制造商标可以在从外国农场到当地领主的家中的小玩意、玩偶和玩具士兵上找到。",
+										"在他数十年如疯狂般创作的过程中，他从未想过追求其他人认为必要的道路：结婚、组建家庭、拥有一个家。直到他遇见了公爵夫人Dorfniya Dilisnya，一位对他的作品和思想着迷的贵族女士。",
+										"她对他的才华着迷，促使她委托弗里茨为她的侄女制作一份独特的礼物。他乐意地答应了。她还要求他们共进晚餐，讨论她对礼物的想法。他再次答应了。晚餐变成了一个固定的每周活动。当他最终完成礼物时，他们分道扬镳。几个月过去了，她带着一个新的请求回来。她想知道，在花费多年时间制作小饰品后，这位疯狂的制作者是否曾想过尝试制作更大的东西。也许是一个真人大小的木偶。",
+										"斯特拉德·冯·扎罗维奇(Strahd von Zarovich)，她家族效忠的领主，据说对她的宫廷小丑\u2014\u2014一个叫皮德维克(Pidlwick)的有魅力的男人感到着迷和困惑，他的家人总是对皮德维克每次访问后不能留下感到失望。多芙妮娅(Dorfniya)希望弗里茨(Fritz)能制作一个皮德维克的钟表机械复制品，她可以把它作为礼物送给领主的宫廷。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "A Fool's Errand",
+									"entries": [
+										"这个项目肯定不是难以克服的，但让无生命的东西获得生命远远超出了一个普通玩具制造者的技能范围。但弗里茨并不是普通的玩具制造者。尽管如此，弗里茨还是同意并开始着手工作。他花了几个月的时间在这个项目上，希望为他亲爱的多夫尼亚创造出完美的礼物。",
+										"她恢复了每周访问车间。然后它们变成了每天，以皮德尔维克项目为借口离开她家族的城堡去见弗里茨。在整个过程中，这两人最终坠入爱河，尽管她家人抗议说她有责任追求并嫁给(卓德)斯特拉德·冯·扎罗维奇领主。多芬尼娅尊重了家人的愿望，但她也非常清楚巴罗维亚的新领主对她没有兴趣。",
+										"多夫尼亚(Dorfniya)下次前往巴洛维亚(Barovia)之地的日子临近，弗里茨(Fritz)心生恐惧。皮德维克二世(Pidlwick II)尚未准备好。将小丑的一系列情感和智慧灌输到一个玩具中需要超出一个修补工的知识的研究，尽管弗里茨努力了，他在解剖学和奥秘的文本中找不到解决方案。他将让多夫尼亚失望，损害她的声誉。他辜负了她。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "A Whisper in the Night",
+									"entries": [
+										"希望他能破案，弗里茨坚持要和迪利斯尼亚一起前往巴罗维亚。他在路上努力工作，随着他们接近目的地，这位发明家听到了一个遥远的声音，也许是在梦中。一个声音向他保证，他可以成功，尽管需要它的帮助。",
+										"在一个梦幻般的狂热和冷汗中，弗里茨（Fritz）在一个晚上醒来，心中涌现出一种可怕的、贪婪的创造欲望。就在那个晚上，弗里茨·冯·维格（Fritz von Weerg）毫不知情地献出了自己灵魂的一部分，为了让皮德维克二世（Pidlwick II）获得生命。",
+										"多夫尼亚(Dorfniya)对他令人难以置信的创造感到欣喜，这个机械人超出了任何可以想象的期望。那天恋人们分道扬镳。弗里茨(Fritz)并未受邀加入狄利斯尼亚家族(Dilisnyas)在乌鸦洛夫特城堡(Castle Ravenloft)的行列，但他们承诺在分开的几个月里会互相写信。不幸的是，那几个月被巴罗维亚历史上最严酷的冬季所摧残。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Winter's Cold Embrace",
+									"entries": [
+										"在他们分开将近两个月后，多夫尼娅告诉弗里茨她怀了孩子。他的孩子。在等待他的新家庭回来时，兴高采烈的弗里茨致力于建造一座与众不同的家。",
+										"一个宏伟的府邸，他们可以在那里共同建设他们的生活，并给她家的其他成员留下深刻印象。这座庄园是一个技术奇迹。这是他们无法忽视的事情。",
+										"他还着手进行另一个项目，为迪利斯尼亚家族建造机械军队。迪利斯尼亚家族是一家知名的银行家族，他们对权力的渴望对世人来说并不是秘密。弗里茨相信提升他们家族的声誉会赢得他们的尊重，并让他在多夫尼亚(`Dorfniya`)眼中配得上她的手。",
+										"他错了。",
+										"冬天过去后，弗里茨跃跃欲试地去见他心爱的人。她的来信突然中断了。他推测这可能是因为暴风雪季节的原因。他骑马飞奔到拉文洛夫特，请求与扎罗维奇领主本人会面，以便他能见到多夫尼娅和他们的孩子。",
+										"他被斯特拉德接受了，正是从主人那里，弗里茨得知了多芙妮娅·迪利斯尼娅（Dorfniya Dilisnya）的死讯。她和其他几位客人一起，死于一场可怕的热病。她的孩子，一个男孩，在冬天幸存下来，被带回了迪利斯尼娅家族。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Mad Inventor",
+									"entries": [
+										"迪利斯尼亚斯家族拒绝承认这个孩子是弗里茨的，当他请求看自己的儿子时，被拒之门外。他的实验和原型士兵被嘲笑为儿童玩具。在外界一无所有的情况下，他退回到自己的豪宅。多夫尼亚激发并挑战他创造出世界从未见过的东西。他必须再次激发起那种渴望。",
+										"在随后的几年里，弗里茨被斯特拉德·冯·扎罗维奇亲自联系。巴洛维亚领主希望更新拉文洛夫特城堡中的困境大厅。",
+										"弗里茨（Fritz）的工作得到了很好的补偿。在另一个生活中，这本应令人兴奋，但他并未从工作中找到任何满足感。悲伤吞噬了他。他将自己封闭在自己的豪宅内。他将派对玩笑和奇迹制造者变成了对于闯入者的陷阱，拒绝任何访客，并开始工作。他不想被打扰。皮德维克二世（Pidlwick II）只是个开始。他可以变得更好。多夫尼亚（Dorfniya）相信他可以变得更好。也许他可以重建她？也许他仍然可以在这里重建自己的生活。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Old von Weerg Place",
+									"entries": [
+										"弗里茨的房子至今仍然屹立不倒，但没有人靠近它。偶尔会听到刺耳的金属撞击声，如果你把耳朵贴在门或墙上的话，但任何踏入其中的人要么惊恐逃离，要么就再也没有被见过。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Adding the Mansion to Curse of Strahd",
+							"entries": [
+								"对于寻找在《(Strahd的诅咒)》中增加额外地点的地牢主，弗里茨庄园可以轻松地添加到克瑞兹克的一个隐秘角落，甚至可以作为被斯瓦利奇森林吞噬的一处偏僻地标。",
+								{
+									"type": "entries",
+									"name": "Plot Hooks",
+									"entries": [
+										"这里有几个潜在的情节钩子，可以用来向你的玩家介绍庄园 (`the mansion`)。",
+										{
+											"type": "entries",
+											"name": "Befriending Blinsky",
+											"entries": [
+												"瓦拉基亚的玩具制造商，加多夫·布林斯基（Gadof Blinsky），听说过他的偶像那个臭名昭著的工作室的传闻，但他从未离开过瓦拉基。如果有任何勇敢的冒险者找到那座豪宅，并带给他存在的证据\u2014\u2014最好是大师本人的设计图\u2014\u2014他们将永远拥有布林斯基这个盟友和朋友。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Pidlwick's Premonition",
+											"entries": [
+												"Pidlwick II并没有任何关于车间的记忆，但他可能会感受到与Fritz的某种遥远联系，并知道他还活着。如果这个情节听起来有趣，你也可以选择将Pidlwick II移到Rictavio的马车中在Arasek Stockyard中。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Artificial Ancestry",
+											"entries": [
+												"任何制造师或其他喜欢动手的角色可能是(`Fritz`)弗里茨失散多年的孩子后代。他们与家族的相似之处令人难以置信。(`Strahd`)斯特拉德或其他特别年长的NPC可能会认出他们，并询问他们是否有关系。为了展示这种联系，您可能还想改变(`Fritz`)弗里茨的外表，使其更加与角色相匹配！"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Terrifying Tales",
+											"entries": [
+												"多年来，(克瑞兹克市民)村民在庄园附近神秘失踪。大多数当地人知道要简单地忽视这一点，并向他们的孩子讲述这座废弃已久的建筑的故事，希望吓唬他们远离它。尽管这些人可能会把好奇的冒险者指向它。",
+												"如果冒险小组对英雄事迹特别感兴趣，一些当地的孩子可能在被父母反复警告不要靠近那栋建筑物后失踪了。他们去了房子附近玩耍，然后消失了。更迷信的人认为被诅咒的大宅吞噬了他们。",
+												"父母或镇上的领导都会乐意支付一些报酬来找回孩子。如果角色们决定去找他们，这些孩子，都是15岁，可能会在以下地点找到：",
+												{
+													"type": "list",
+													"items": [
+														"{@b Mathilda}躺在{@adventure Real Entry Hall (area 1c)|TMMMoFvW|1,1c. real entry hall}地板上失去意识。",
+														"{@b Alastroi}在{@adventure Real Foyer (area 1d)|TMMMoFvW|1,1d. real foyer}的沙发上睡着了。",
+														"在{@b Vasha}的一个笼子里{@adventure Secret Workshop (area 3b)|TMMMoFvW|1,3b. secret workshop}。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Adding the Mansion to Another Adventure",
+							"entries": [
+								"对于有兴趣在自制世界或其他冒险中加入科技达人工坊和一些恐怖元素的地牢主，这座豪宅可以很容易地被放置在一个小镇上，进行以下修订：",
+								{
+									"type": "list",
+									"items": [
+										"在弗里茨的历史中，任何提到斯特拉德·冯·扎罗维奇(Strahd von Zarovich)的地方，可以替换为另一位当地的领主或女士。",
+										"Pidlwick II 可以在拍卖会上购买，也可以在路边、附近的不同地牢中找到，或者在贵族法庭中为其服务。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Plot Hooks",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "The Tinkerer's Trouble",
+											"entries": [
+												"一位当地的修补匠失去了灵感。他们从小听着有关了不起的弗里茨·冯·韦尔格(Fritz von Weerg)惊人创造的故事长大，这种敬畏激发了他们的事业。有人甚至说他的小玩意儿是活的！如果他们能看到一些弗里茨的作品或一些他未完成的计划，也许就能重新点燃他们对发明的热爱。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "An Invented Invasion",
+											"entries": [
+												"一支外国军队正在向一个贵族城堡进发，而这个贵族的军队主要由武装的、未经训练的农民组成。统治者深爱着他们的人民，他们知道自己会失败，无辜者会死。离城堡大约一天路程的地方有一座古老的石头庄园，曾经属于一位才华横溢的发明家。据说这位发明家曾经在创造一支机械士兵的军队，但没有人见过最终的成果。贵族的顾问们认为这只是一个童话故事，但统治者认为这些士兵可能会扭转战局。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Descendent's Duty",
+											"entries": [
+												"弗里茨·冯·韦尔格(Fritz von Weerg)的一个遥远后裔最近来到村庄，并展示了他们旅行大篷车中的非凡科技作品。当角色们抵达小镇时，这位发明家正在进行一场融合了魔法的街头表演。多年来，他们一直在努力寻找他们祖先的机械大厦，他们相信他们终于找到了。他们希望继续弗里茨的一生工作，并愿意慷慨支付一些勇敢的战士来支持。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Missing Mischief Makers",
+											"entries": [
+												"当地居民对镇外的那座鬼屋的坚固石墙感到恐惧。这座房子已经存在了几个世纪，村民们被教导要远离它。孩子们经常互相挑战进去。昨天，三名青少年失踪了。他们的朋友告诉他们的父母，他们计划去那座老宅，尽管被告知要远离它。",
+												"父母或镇上的领导都会乐意支付一些报酬来找回孩子。如果角色们决定去找他们，这些孩子，都是15岁，可能会在以下地点找到：",
+												{
+													"type": "list",
+													"items": [
+														"{@b Mathilda}躺在{@adventure Real Entry Hall (area 1c)|TMMMoFvW|1,1c. real entry hall}地板上失去意识。",
+														"{@b Alastroi}在{@adventure Real Foyer (area 1d)|TMMMoFvW|1,1d. real foyer}的沙发上睡着了。",
+														"在{@b Vasha}的一个笼子里{@adventure Secret Workshop (area 3b)|TMMMoFvW|1,3b. secret workshop}。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "The Mansion",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "General Traits",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"所有建筑物的内墙与外墙之间隔着5英尺的石头、木材和机械部件。",
+										"除了卡里奥内特(Carionettes)、铁锈怪(Rust Monsters)和青铜侦察兵(Bronze Scouts)之外，这些构造体可以说通用语和侏儒语。如果你想增加一些挑战，它们也可以只说侏儒语。",
+										"房屋中的构造由电力和发条机械结合提供动力。这使它们对闪电伤害免疫，并赋予它们\"闪电吸收\"能力。如果对它们施放{@spell Mending}法术，它们还会恢复1点生命值。",
+										"地下室炉子散发的热量足以让整栋房子保持温暖。这座豪宅保持在华氏 74 度的舒适温度。",
+										"炉子散发的热量和蒸汽也使得爬行空间和电梯（因为它们的隔热性最差）变得更加炎热。这些空间的温度高达95华氏度，而且湿度很大。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Tick-tock Tunes",
+									"entries": [
+										"这两首来自极具才华的迈克尔·盖尔菲(Michael Gelfi)的曲目，非常适合在房间里营造完美的环境钟表声音。",
+										{
+											"type": "list",
+											"items": [
+												"{@link Clockwork Plane|https://open.spotify.com/track/7aDhkjlmv0U1NPRjjr5qzp?si=K-D30xpuTauuNyOgD1UL7w}",
+												"{@link Tinkerer's Workshop|https://open.spotify.com/track/5e16R6mkzEj2OKWynqjLQs?si=UIHNk-8lTA2MJ68jobUcpg}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Exterior",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"隐藏在一个破烂的石墙之外，被高耸的松树所笼罩，矗立着一座高耸的鹅卵石大厦，比周围小镇的矮小平房高出许多。虽然这座石结构的骨架仍然坚固，但木制支撑和支柱已经被腐朽和攀缘植物侵蚀。",
+										"这座建筑没有明显的窗户，但在土路的尽头有一扇显眼的门。"
+									]
+								},
+								"这座建筑物四周异常安静而坚固。其墙壁厚达近5英尺，由石头和木头交替堆砌而成。它们异常耐用，每个10英尺的正方形区域具有AC 19和150点生命值。",
+								"冲破外墙揭示了府邸内部的齿轮深渊，从地面下降60英尺。任何掉落其中的生物会受到{@dice 6d6}跌落所造成的钝击伤害，以及{@dice 5d6}被齿轮压碎时造成的钝击伤害。",
+								"这扇房子的门没有锁，经过几个世纪被打开和猛然关闭，现在只是勉强挂在门轴上。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Interior - First Floor",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Entrance Hall",
+									"entries": [
+										"入口大厅是一个看起来相当标准的木板走廊。当前门打开时，读到：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"你打开门，一股寒风轻声划过你的耳膜。在你面前是一条狭窄的入口大厅，向前延伸十英尺，通往一个宏伟而破旧的门厅。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1A. Foyer",
+									"entries": [
+										"前方的门厅是一个幻觉，但是一个非常令人信服的幻觉。几乎没有人能够越过这个房间。",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一个宽敞、令人毛骨悚然的、贫瘠的舞厅，里面摆满了被灰尘覆盖的布料。一个宏伟的阳台横跨整个二楼，环绕着上方的房间。在你的眼角余光中，你似乎看到其中一块布料动了。仅仅是微微地..."
+											]
+										},
+										"房间的真实墙壁完全被两台由宝石提供动力的机械装置遮挡，投射出一个永久版本的{@spell Major Image}法术。这个法术制造了一个巨大房间的幻觉，以及一个破旧豪宅的虚假内部，其大堂延伸至建筑物的远墙（近100英尺）。实际上，这只是一个相对较小的，15英尺乘20英尺的门厅。",
+										"任何踏入门厅的角色都会触发入口大厅尽头的一个压力板，释放毒气进入房间。毒气需要一个回合的时间来填满房间。房间内的任何角色必须进行一次{@b DC 16 Wisdom saving throw}检定，否则会受到{@b Fear}法术影响，并被迫逃离他们最恐惧的事物（并逃出庄园）。",
+										"任何角色如果向北走20英尺，向东或向西走15英尺，或者向上走10英尺，都会撞到房间的真实墙壁。他们能够辨别出这里有一个幻象，但只有通过一个{@b DC 18 {@skill Investigation}检定}或者摧毁幻象投影器才能看穿幻象。这些投影器由铁制成，AC为17，有8点生命值。",
+										"任何角色看穿幻觉的话，都能轻易注意到房间西南角有一个小舱口。这个舱口通往一个小隧道。",
+										{
+											"type": "inset",
+											"name": "Spooky Scary Time",
+											"entries": [
+												"为了增加恐惧咒语的效果，在你开始之前让玩家们提供一些他们角色害怕的事物的例子。",
+												"为了更好地恐吓，将受到气体影响的个体拉到一边，描述他们所看到的东西，因为每个角色都会有独特的视觉幻觉。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1B. Crawl space",
+									"entries": [
+										"当一个角色发现了舱口并打开它时，请阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"墙壁上的金属舱门发出尖叫声，回荡着数十个发条装置的滴答声交织在一起，形成了一片嘎嘎作响和齿轮转动的混乱声。前方是一条黑暗的隧道，向前延伸几英尺，然后急转向北，形成一个锐利的U形弯道。"
+											]
+										},
+										"这个通道足够大，适合小型或更小体型的生物通过。中型生物必须挤进这个爬行空间。",
+										"当角色转过拐角时，他们可以看到一个瘫倒在前方的小木偶，无力地躺在那里。这个爬行空间的中心面板被设置成如果有任何重量超过60磅的东西踩上去就会触发。进行一次{@b DC 15 Intelligence ({@skill Investigation}检定}可以发现这是一个陷阱，可以通过使用DC 16的敏捷检定和盗贼工具来解除陷阱。",
+										"如果陷阱被触发，天花板上会打开三块面板，然后有三个{@creature carionette|TMMMoFvW|carionettes}掉落进隧道中。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1C. Real Entry Hall",
+									"entries": [
+										"真实入口大厅并不像建筑物前面的那个大厅那样宏伟，但是里面装有一些真正棘手的机械设备。当角色爬出爬行空间时，请阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个平台的金属面板上散落着生锈的齿轮和弹簧，通向一扇沉重的金属门，门前有三道颤动的奥术电流。门外墙壁上伸出三个杠杆。"
+											]
+										},
+										"门因年代久远而生锈，卡在门框里，但除此之外是未锁的。推开它需要一个{@b DC 13 Strength check}。电击是虚幻的，但它们会产生一种轻微的感官效应，让它们感觉热，如果有任何生物把手放在门附近。",
+										"这三个杠杆并未连接到门上，而是用来吸引入侵者的注意。拉动第一个杠杆会释放一团烟雾，弥漫整个大厅。大厅内的任何人必须通过一次 {@b DC 15 Constitution saving throw} 检定，否则会昏迷1小时，或直到受到伤害或有人花一个动作摇醒或拍醒他们。不死生物和免疫被魅惑的生物不受这团烟雾的影响。",
+										"拉动第二个杠杆会激活幻觉电力下隐藏的二极管，释放一团电能冲击。走廊中的任何角色必须进行一次{@b DC 14 Dexterity saving throw}检定，失败则受到{@dice 3d6}点闪电伤害，成功则减半。",
+										"拉动第三个杠杆会从墙壁上部署3把机械弩，对拉动杠杆的人进行攻击。每把弩进行一次远程武器攻击（{@dice d20+6|+6}命中），造成{@dice 1d6}点穿刺伤害。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1D. Real Foyer",
+									"entries": [
+										"这个房间被设计成弗里茨的(`Fritz`)招待空间。他最初设计的别墅会有全尺寸的走廊和移动地板，但当他疯狂时，他竭尽全力使房屋的起居区不可进入。当房间的门打开时，请阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"当你走进一个闪闪发光、色彩鲜艳但有些陈旧的门厅时，那持续不断、交织在一起的机械滴答声和嗡嗡声略微变得迟钝。一个铁炉连接着一系列管道，通向天花板和地板，向空气中散发出一团蒸汽。一枚挂钟的稳定摆动为房间营造了一种柔和的氛围。",
+												"在房间中央，一组豪华但破旧的座位围绕着一块磨损的地毯。在它们的后面，有一座镶金的铁螺旋楼梯，看起来通往二楼。两扇门通往建筑的更深处：一扇在南墙上，另一扇直接在东墙的北面。"
+											]
+										},
+										"炉子产生的蒸汽是地下室锻造炉的副产品，并为房屋提供一些热量。通往二楼的管道加热地板和墙壁。",
+										"坐在沙发上会召唤哈库斯（Harkus），这位机械仆从通常会在仆役区充电。哈库斯是一个{@creature Clockwork Servant|TMMMoFvW}，但他外部装甲下的奥术符文已经磨损，他不再能使用他的法术。哈库斯的视觉传感器变得迟钝，被认为是{@condition Blinded}。他的头部嵌有一块发送石，连接着在{@adventure Bedroom (area 2h)|TMMMoFvW|1,2h. bedroom}的姐妹石。",
+										"任何角色爬上这个15英尺高的楼梯的10英尺时，会触发一个陷阱，将楼梯变成滑梯，并导致一个笼子从地板上升起。当陷阱被触发时，楼梯上的任何角色可以进行一次{@b DC 15 Dexterity saving throw}或滑下到关闭的笼子里，笼子会在任何重量超过50磅的物体压在它的底部或经过一轮后自动关闭。",
+										"牢房只能容纳两个中等大小生物。如果有第三个生物在滑梯上，他们会被门夹到。被关闭的门夹到的角色会受到{@dice 1d6}的钝击伤害。小心地爬楼梯的人可以通过成功的{@b DC 16 Intelligence ({@skill Investigation}检定发现陷阱台阶。当接近时，任何检查二楼的人都会看到一个二楼平台。这个平台是虚幻的，楼梯在天花板结束。角色可以通过成功的{@b DC 18 Intelligence ({@skill Investigation}检定看穿这个幻觉。",
+										"北墙上的一个祖父钟被设定了一系列魔法口令咒语，这些咒语是由时钟内部齿轮的位置触发的。每小时，一个2英寸高的机械人走出来站在平台上并报时。如果有人靠近时钟5英尺内，这个效果也会被触发。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1E. Drawing Room",
+									"entries": [
+										"这个房间旨在供放松和与重要客户开展商务会议之用。当派对走近房间时，请阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"两把奢华的扶手椅对着一个复杂的多层机器，连接着各种管道、管子和杆。这台机器安装在一个被灰尘覆盖的鹅卵石壁炉上方，壁炉里仍然燃烧着噼啪作响的火焰。在你的脚下，就在房间里面，是一个沉重的、生锈的捕熊陷阱，看起来已经被设置好了。"
+											]
+										},
+										"熊陷阱是弗里茨很久以前设置的一个恶作剧，用来捉弄客人。陷阱本身是真实的，但踩上去并不会有任何反应。陷阱另一侧的地板砖是一个压力板。如果熊陷阱被解除或有人踩到那块地板，天花板上的一个陷阱门就会打开，一具熊骨架掉落到地板上。",
+										"当弗里茨还活着时，他成功地驯服了这只熊奥尔索夫，将其培养成了宠物和守卫。他还是派对上的一大热门。当弗里茨离开人世时，他也失去了任何同情心，也没有必要离开地下室。奥尔索夫也离世了。",
+										"两把椅子正对着壁炉，旁边是一张小边桌，上面摆放着一些腐烂的食物和灰尘覆盖的餐具。如果角色坐在其中一把椅子上，他们会触发弗里茨的\"放松协议\"（Fritz's \"Relaxation Protocol\"）。房间角落里设置了以宝石为动力的幻象投影仪，将{@spell Major Image}法术投射到墙上，展示随机的巴洛维亚风景，并再现室外的气味和声音。",
+										"如果角色们还没有召唤哈库斯，他会在放映仪开始后不久出现，并询问他可以为主人的客人们做些什么。",
+										"如果一个角色走近南墙，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"繁复的管道、齿轮、符文和木板构成了石制壁炉上方墙壁的大部分装饰。每个多余的部件都可以追溯到壁炉中央墙壁上方的滴答作响的时钟。"
+											]
+										},
+										"壁炉由几个世纪前施加的《持续火焰》咒语保持着火焰。任何接近壁炉的角色都会注意到一个看起来沉重的铁钥匙，附有一个{@b DC 10 Intelligence ({@skill Investigation}检定。这把钥匙可以打开{@adventure Bedroom (area 2h)|TMMMoFvW|1,2h. bedroom}门上的第三把锁。",
+										"壁炉上挂着的布谷鸟钟主要是一个令人困惑的装饰品。除了计时之外，它的真正目的早已失传，即使对于弗里茨·冯·韦尔格本人也是如此。每当角色在这个房间里停留10分钟，就要投掷{@dice 1d20}。如果结果为1，钟会发出奇怪的声音，一只乌鸦模型会滑出一个小平台，钟面会发光。投掷{@table Wild Magic Surge|PHB}表格来确定钟的效果。",
+										{
+											"type": "inset",
+											"name": "A Wild Time",
+											"entries": [
+												"在你的派对到达之前，你可能想在表格上滚动几次，以确定房间里多年来累积的各种奇怪效果。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1F. Dining Room",
+									"entries": [
+										"在另一个生命中，这个餐厅本应是由构造体提供美味、充满欢笑的家庭盛宴的场所。但如今，它变成了一个破败、忧郁的地方。当一个角色进入时，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个房间里铺满了带黄铜配件的木雕餐桌，长度几乎占据了整个房间。九把被蛛网覆盖的椅子围绕着它摆放，整齐的废料和碎片被扫到椅子下面。在房间的周边悬挂着一条狭窄的轨道，从南墙的一个洞口进出。通过餐桌另一端的敞开门框，你可以看到另一个更黑暗的房间，里面摆放着另外两张桌子。"
+											]
+										},
+										"房间周围的装置是一条推车轨道，曾经运送一系列小推车，将盘子从厨房{@adventure Kitchen (area 1h)|TMMMoFvW|1,1h kitchen}带进来。这条轨道通往一个爬行空间，专门设计供微型构造体进出。",
+										"如果一个角色看着地板上的碎片，他们可以很容易地找到几个完好无损的仆人机器人（微型大小{@creature Monodrone|MM|Monodrones}）。这些仆人机器人背上装有螺旋桨，可以飞行，将食物盘从推车上送到桌子上。经过几个世纪的忽视，它们已经生锈并倒塌了。它们并不够复杂，无法自行充电或维修。",
+										"有几十盘腐烂的食物\u2014\u2014现在大部分已经变成灰尘\u2014\u2014摆满了有轨电车轨道，这些食物是由弗里茨(Fritz)忠诚的厨师埃梅里克(Emeric)反复准备的。一次故障让他不得不准备一场无休止的盛宴，即使客人们停止进食，服务人员也停止上菜后。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1G. Game Room",
+									"entries": [
+										"当弗里茨准备追求迪利斯尼亚斯(Dilisnyas)和其他贵族时，他制作了许多小玩意和机械游戏，以娱乐即使是最严肃的人群。这个房间是为了容纳巴利诺克(Balinok)山脉这一侧最先进、最独特的娱乐而建造的。",
+										"当一个角色走进房间时，请阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个大厅里两张桌子端对端地摆放着。一幅大油画挂在北墙上，两侧各有六根五英尺长的棍子靠在木架上。站在远角处的是一个有窗户的6英尺高的箱子，箱子前面有一个突出的把手。在西南角的一个关闭的门附近，空气中弥漫着腐烂霉味，偶尔会有火花从同一墙壁上的另一个门口闪现。"
+											]
+										},
+										"墙中央挂着一幅5英尺高、3英尺宽的肖像画，描绘的是模仿{@link Self Portrait in the Uniform of the Jaegers by Willem Jodocus Mattheus Engelberts|https://commons.m.wikimedia.org/wiki/File:Zelfportret_in_het_uniform_van_de_Jagers_Rijksmuseum_SK-A-4074.jpeg}的弗里茨·冯·韦尔格。",
+										"在画作后面是一个嵌入式墙壁保险柜。角色可以通过成功的{@b DC 15 Intelligence ({@skill Investigation}检定找到与机制连接的正确的台球杆并拉动它来解锁保险柜，或者通过成功的{@b DC 18 Dexterity check}使用《盗贼工具》来解锁。",
+										"保险箱里面有一个小袋子，里面装着23 gp，两颗价值30 gp的宝石，以及一把火枪。",
+										"角落里的盒子是一个名叫尼米拉(Nimira)的机械瓦斯提尼先知。窗户上覆盖着厚厚的一层灰尘和污垢。在前面拉动小把手会导致里面的灯光闪烁，一个小火花从她的铰链中冒出，她的眼睛发光，并且她会在{@adventure Appendix C|TMMMoFvW|4}的桌子上说出一个命运。",
+										"如果有人擦掉玻璃上的灰尘，想要清楚地看一看尼米拉(Nimira)的盒子里面，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一位身穿闪亮紫红色丝绸、戴着金色耳环、皱纹斑驳的假皮肤的女人的复制品，闭着眼睛，仿佛在祈祷。她的手上戴着戒指和宝石，悬在五张银黑色卡牌上方，这些卡牌呈交叉形状，背面朝上，铺在一块深黑色布料上。她身后悬挂着一条横幅，上面写着\"全知女士尼米拉 (Madam Nimira)\"。"
+											]
+										},
+										"房间中央的桌子是台球桌。桌子西侧的开关会触发其中一系列机制，释放存放的台球。台球会被放置在开关旁边的篮子状结构中。",
+										"南墙上的门通往{@adventure Kitchen (area 1h)|TMMMoFvW|1,1h. kitchen}和{@adventure Servants' Quarters (area 1i)|TMMMoFvW|1,1i. servants' quarters (charging stations)}。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"entries": [
+														"墙壁保险柜里有23 gp，2 颗宝石（每颗价值30 gp），以及一把火铳手枪。"
+													]
+												}
+											]
+										},
+										{
+											"type": "inset",
+											"name": "Barovian Billiards",
+											"entries": [
+												"如果你的玩家对聚在一起玩一局休闲的台球游戏感兴趣，你可以使用以下规则来进行一个技能挑战迷你游戏。第一个团队达到8次成功即获胜！我强烈建议给玩家提供机会提出各种能力，但以下规则可以作为基准。",
+												{
+													"type": "list",
+													"items": [
+														{
+															"type": "item",
+															"name": "Break:",
+															"entries": [
+																"游戏开始后，必须首先进行开球。投掷先攻骰来决定谁先行动。执行开球的人必须进行一次DC11的敏捷检定。如果他们的检定结果超过目标值2或更多，他们就会击入一颗自己类型的球。如果他们的检定结果超过目标值6或更多，他们就会击入两颗自己类型的球。如果他们失败，另一支队伍必须尝试进行开球。"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Taking Turns:",
+															"entries": [
+																"一旦角色尝试进行投掷并投掷效果解决后，他们的回合结束。这与典型的8球规则相反，但在巴洛维亚台球中，这可以防止高敏捷角色在其他人轮到之前获胜。"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Regular Shot:",
+															"entries": [
+																"在他们的回合中，角色必须进行一次DC11的智力检定（{@skill Sleight of Hand}）或敏捷检定（{@skill Sleight of Hand}）。如果成功，他们会击落1个属于他们的球。如果他们的检定结果超过2，他们会击落2个属于他们的球。如果他们的检定结果超过6，他们会击落3个属于他们的球。"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Failure:",
+															"entries": [
+																"如果一个角色在普通射击中掷出1，他们会击进对手类型的球，然后该角色的回合结束。"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Difficulty Scaling:",
+															"entries": [
+																"每个为你的团队打进的球都会使基础 DC 值增加 1。（例如，在第一个回合时\u2014\u2014桌子上有 14 个球\u2014\u2014DC 值为 11。如果他们打进 1 个球，在下一个回合，DC 值将变为 12）"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Trick Shot:",
+															"entries": [
+																"一个角色可以通过进行一个灵巧检定（(%0%））来进行花式射击，将射击的难度等级提高2点。成功的话，他们的对手在下一回合中处于劣势。"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Trick Shot Failure:",
+															"entries": [
+																"在技巧投篮失败时，掷1d8-x（其中x为对手剩余球数）。如果结果为1或更低，则对手的一个球被击入洞中，投篮者在下一轮中处于劣势。"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Trick Shot Loss:",
+															"entries": [
+																"如果一个角色在 trickshot 中掷出1，他们会击进黑八球并输掉比赛。"
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1H. Kitchen",
+									"entries": [
+										"如果角色们走近门，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"门框周围的墙壁扭曲并轻微弯曲，几乎被从前方门底下涌出的腐臭气味淹没。"
+											]
+										},
+										"厨房的门在门框中膨胀了，被厨师埃梅里克(Emeric)乱扔在房间里的一堆锅碗瓢盆和厨房工具挡住了。角色尝试打开它时可以通过进行一次DC 15的力量检定来强行打开门。",
+										"门打开时，阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一阵阵堆积的锅碗瓢盆砰然倒下，砸在格子状大理石地板上。门吱吱作响地打开，露出一个拥挤、生锈的厨房。一个薄锅被熔化到一个无人看管的炉子上。一个准备桌和一小组抽屉被破损得几乎成了碎片。满是霉菌和孢子的容器堆满了房间周围的架子，它们的内容物溢出来，正在腐烂着已经削弱的木梁。在一堆杂物中，有一个被暗淡的铜覆盖的类人形体。"
+											]
+										},
+										"地板上的构造物是艾梅瑞克(Emeric)，弗里茨的私人厨师，也是他在皮德维克二世(Pidlwick II)上尝试复制工作的第一个尝试。虽然靠在墙边，艾梅瑞克挡住了通往电梯的爬行空间。",
+										"他的口才很基础，因为他最初被设计成单一任务的仆人。为了履行他的职责，他在弗里茨去世后继续准备食物。没有主人来修理他，他最终被闲置，然后陷入疯狂。他那双可以变成各种厨师工具的手默认为刀，开始在厨房里砍碎仆人机器人和家具。",
+										"如果有生物靠近埃梅里克（Emeric）5英尺，他会突然醒来并发动攻击。埃梅里克是一个{@creature Nimblewright|WDH}, 他使用厨师刀代替匕首和西洋剑。",
+										"如果埃梅里克（Emeric）被移开，一个调查房间的角色可以通过进行一次{@adventure Elevator (area 1j)|TMMMoFvW|1,1j elevator}检定找到通往仆人门的入口，检定值为{@b DC 13 Intelligence ({@skill Investigation}."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1I. Servants' Quarters (Charging Stations)",
+									"entries": [
+										"在规划这座大厦时，弗里茨考虑将这个房间作为人类仆人的铺位。当他意识到一个真正的机械大厦也会配备机械仆人时，卧室似乎显得多余。弗里茨没有建造床，而是安装了六个注入了奥术电能的基座。当一个角色进入时，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"泥土和蜘蛛网玷污了一个正在坍塌的木地板。黄铜和铜管道和阀门沿着光秃秃的石墙像血管一样延伸。六个直径四英尺、高六英寸的铜制基座沿着地板排列，三个在房间的每一侧。复杂的管道系统像粗壮的树根一样蔓延在地板上，并连接到基座上。"
+											]
+										},
+										"如果Harkus没有被召唤到真实门厅或客厅，他可以在这里充能。 (Harkus)添加：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"站在最近的基座上的是一个穿着考究的人造人，他的木头头上螺栓着铜制的面部特征。"
+											]
+										},
+										"任何仔细观察基座的角色都可以轻易地看到一个雕刻在其表面的符文。角色可以通过成功的{@b DC 12 Intelligence ({@skill Arcana}检定确定这个符文是代表\"闪电\"的常见奥术符文。",
+										"任何与基座接触都会导致它对触碰它的生物或物品造成1点闪电伤害。雕纹必须在1分钟内重新充能，然后才能再次发出电击。如果Emeric被制服并放在基座上，能量的涌动将使他恢复到以前的服从自己，并将听从Harkus、Fritz或家中客人给出的任何命令。将一个构造体放在基座上1小时后，它将保持运作状态24小时。",
+										"Harkus 仍然足够关注自己的功能，他会每24小时自行返回这里一小时，以维持充电。",
+										"这些基座可以被拾起，每个重75磅。",
+										"任何走进房间的人都会注意到南墙上有一个小旋钮。进行一次{@b DC 11 Wisdom ({@skill Perception}检查也会发现一个小门的接缝。这通往一个连接到{@adventure Elevator (area 1j)|TMMMoFvW|1,1j. elevator}的爬行空间。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "1J. Elevator",
+									"entries": [
+										"如果一个角色第一次爬过任何爬行空间朝着电梯，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一个木板镶嵌的十英尺正方形房间静静地坐在那里。一个杠杆从爬行空间的墙壁上延伸出来，就在房间入口前。里面，另一个杠杆嵌入了墙壁中。两个风格化的箭头被烙印在旁边的木板上，一个指向上，另一个指向下。"
+											]
+										},
+										"如果电梯不在一楼，可以利用爬行空间里的杠杆将电梯召回到一楼。",
+										"电梯内部的墙壁是木镶板的，但铜线穿过木纹并隐藏在镶板下。由于其外露的薄墙壁，电梯比房子的其他部分要热得多。",
+										"电梯内部的主要杠杆有三个设置：",
+										{
+											"type": "list",
+											"items": [
+												"上：将电梯送到(2nd floor)",
+												"中心：将电梯送至1楼",
+												"下行：将电梯送至地下室 (Down: Brings the elevator to the basement)"
+											]
+										},
+										"如果主杠杆设置为\"Down\"，并且有生物站在电梯里，将触发{@spell Magic Mouth}咒语，并弗里茨·冯·维尔格的声音会从墙壁正上方的某个点大声宣布：",
+										"{@i \"As per usual you are looking ravishing today, sir. Per your request, might you verify your name?\"}",
+										"为了到达地下室，角色必须说出弗里茨·冯·维尔格(Fritz von Weerg)的全名：",
+										"{@b Sir Fritz Maur Kuffner Ornberg Braumüller Eichenfeld von Weerg IV}",
+										"如果一个角色试图将杠杆拉到地下室，但没有正确回答（the elevator）的名字，电梯会对里面的任何人造成{@dice 2d6}点闪电伤害。",
+										"当电梯移动时，随着连接到顶部和底部的链条沿着长时间静止的滚筒发出尖叫声，齿轮和金属摩擦的声音逐渐加剧。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Interior - Second Floor",
+							"entries": [
+								"没有哈库斯(Harkus)在楼下承诺的最低限度工作，二楼的状况要糟糕得多。木材磨损，照明设备大多损坏，房间没有灯光，也很凌乱。",
+								{
+									"type": "entries",
+									"name": "2A. Trophy Room",
+									"entries": [
+										"当电梯到达二楼时，西墙上的面板被坚固的金属挡住了。如果一个角色通过东墙的爬行空间离开，阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"陈旧的空气充斥着这个被遗忘已久的着陆点。一块褪色的腐烂地毯覆盖了大部分地板。六个玻璃展柜环绕在房间周围，模型翅膀由脱落的皮革制成，轻轻摇摆着，系在天花板上的绳子正在松解。一条走廊穿过西墙的中央，前方一扇沉重的木门被十把大小和形状各异的锁紧锁着。"
+											]
+										},
+										"压在墙上的箱子展示了弗里茨最珍贵的一些发明的非功能原型：",
+										"1. 一支短筒枪。(blunderbuss)",
+										"2. 一个计算器（类似于岩侏儒（Rock Gnome）小玩意）。",
+										"3. 一个宽肩膀、身披厚重金属板甲的人形巨兽，身高12英寸。这是Fritz设计强大机械士兵的模板。它也是地下室中工坊守卫者的缩小版本。",
+										"4. 一个高8英寸的Pidlwick II娃娃。",
+										"5. 一套小型的机械蜘蛛腿，适合于Pidlwick II玩偶。这些腿的完整版本可以在Fritz的背上找到，它们作为非魔法装备{@item Slippers of Spider Climbing}。",
+										"6. 一个玩具大小的 {@link Da Vinci tank|https://www.bbc.co.uk/staticarchive/d6b0d3de7bcff78855e788427a3a53ee4db3a60c.jpg}。弗里茨对这个概念情有独钟，但却找不到让它实现的方法。",
+										"北墙上的门被闩上了，尽管很多锁都生锈并损坏了。只有十把锁中的两把还能正常使用：一条链和一个挂锁。它们可以通过一次DC 10的力量检定轻松打开。任何试图用盗贼工具撬开挂锁的尝试都会导致锁立即裂开。",
+										"门本身是扭曲的，靠近门框处有裂缝。检查门框的角色可以通过进行一次{@b DC 13 Investigation ({@skill Intelligence}检定，确定门是被从内部压迫和敲打过的。此外，如果他们在门边倾听，可以通过进行一次成功的{@b DC 15 Wisdom ({@skill Perception}检定，听到在另一侧地板上划动的脚步声。",
+										"这条走廊通往这层剩下的房间。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2B. Storage Room",
+									"entries": [
+										"这个巨大的储藏室曾经摆满了精炼金属锭的货架。现在却成了饥饿的机械生物的家园，它们试图互相捕食。",
+										"当有人进入房间时，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"地板上散落着碎裂的木头堆，湿铁的金属气味弥漫在空气中。突然，三只膝盖高的、金属板覆盖的、像土鳖虫一样的生物朝你冲来，发出刺耳的爪子在木地板上划过的声音。"
+											]
+										},
+										"这些生物是{@creature Rust Monster|MM|Rust Monsters}。弗里茨很久以前建造它们作为清洁助手，可以处理多余的金属，但当它们发生故障并且不停地吞食他的发明时，他不得不将它们困住并锁在这个储藏室里，牺牲了大量的金属来拯救庄园的其他部分。",
+										"他们拥有与生物锈怪一样的全能力量，他们已经争斗了几个世纪，试图互相吞噬，但都无济于事。",
+										"如果它们闻到铁质金属，它们会立即发动攻击。",
+										"这个房间的货架钢支架被啃食，储物单元被减成碎片。在房间的后面，有一把扫帚靠在一堆板条箱旁。",
+										{
+											"type": "inset",
+											"name": "A Broom by Any Other Name",
+											"entries": [
+												"房间后面有一把普通的扫帚，没有被生物打扰，看起来异常干净。如果你的玩家经历过《(Curse of Strahd)》中的《(Death House)》的创伤，现在是一个很好的时机利用一些戏剧性讽刺和紧张氛围，而不必增加另一个真正的威胁。"
+											]
+										},
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"entries": [
+														"在地板上散落着一根扭曲的{@item Wand of Magic Detection}和一个{@item Wand of Pyrotechnics|XGE}。这些怪物的外壳也可以拆解和回收，用来修复庄园中的其他构造物。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2C. Hallway",
+									"entries": [
+										"当一个角色朝走廊里看时，请阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"大厅似乎贯穿整个二楼。其中一扇门微微开着，你可以看到门面上钉着一个沾满污垢的金属牌匾。在走廊的尽头，另一扇门破损烧焦躺在地板上。"
+											]
+										},
+										"走廊的地板板块被设置成陷阱，连接着一系列{@spell Magic Mouth}法术，当被触发时会发出声音：",
+										"1. 弗里茨的声音：\"(Fritz)我看到你了。现在转身，你可以安全离开。\"",
+										"以一种僵硬、机械的声音说道：\"(Master)的意愿你违抗了，你不再被允许离开。\"接着传来楼下的门砰然关闭并锁上的声音。",
+										"3. 一阵巨大的隆隆声和电梯启动的声音。",
+										"在{@adventure Bedroom (area 2h)|TMMMoFvW|1,2h. bedroom}门的正前方，有一根厚实、磨损的绳子系在一个金属环上，并穿过墙壁。任何接近门的人都可以辨别出它与另一侧的某物相连，需要进行{@b DC 11 Investigation ({@skill Intelligence}检定。",
+										"如果绳子被解除，卧室里会传来一声巨大的撞击声。这个声音是一个幻觉。解除这个绊索会在门的另一侧激活一个压力板。绳子本身是无害的，实际上并不是一个陷阱。",
+										"大厅里有一些门是开着的。其他的则没有。如果一个角色开始沿着走廊走，你可以参考这个列表来确定他们看到什么：",
+										{
+											"type": "list",
+											"items": [
+												{
+													"type": "item",
+													"name": "2d:",
+													"entries": [
+														"轻微打开 (Slightly Open)"
+													]
+												},
+												{
+													"type": "item",
+													"name": "2e:",
+													"entries": [
+														"关闭 (closed)"
+													]
+												},
+												{
+													"type": "item",
+													"name": "2f:",
+													"entries": [
+														"从房间内的爆炸中爆炸升空"
+													]
+												},
+												{
+													"type": "item",
+													"name": "2g:",
+													"entries": [
+														"锁定（DC 22锁）"
+													]
+												},
+												{
+													"type": "item",
+													"name": "2h:",
+													"entries": [
+														"关闭 (closed)"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2D. Study",
+									"entries": [
+										"门上的金属牌上写着：\"Sir von Weerg\"",
+										"如果有人打开门，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一道褪色的彩虹，带有黄铜字母的厚书脊，从门后的墙壁上的书架上流淌而下。一张桌子上堆满了拼接书籍、皱巴巴的撕破羊皮纸、各种骨头，以及摆放在动态中的没有面孔的小人偶，静静地安静着。"
+											]
+										},
+										"书架上摆满了各种科学和伪科学著作，其中许多致力于寻找替代奥术解决方案。正如弗里茨从未理解在皮德威克二世（Pidlwick II）诞生时他的灵魂的一部分被放弃了一样，他相信项目成功一定有非魔法的解决方案。",
+										"在更大、更正式的学术文本旁边，有数十本充满了草图、示意图和笔记的期刊。它们是用{@language Gnomish}书写的。",
+										"一个角色如果能够阅读{@language Gnomish}（或{@language Dwarvish}因为它们共用一种文字）并且在一次{@b DC 15 Intelligence ({@skill Investigation}检定中成功，就可以学会如何修复庄园里的任何损坏构造。",
+										"修复过程需要精通(`Tinker's Tools`)并花费1小时时间修理构造体，使其恢复正常工作状态。一旦修复完成，构造体必须通过至少1点闪电伤害来启动。",
+										"桌子上的许多便签和碎纸片就是这样，但在一堆文件中，有一个笔记本记录了{@creature Pidlwick II|CoS}的创作过程。它还包含了《库斯特拉德的诅咒》模组中NPC条目中详细描述的木偶创作历史。冯·维尔格的知识几乎可以确定他的创作是杀死前任的罪魁祸首。他还觉得这个事实有点有趣。",
+										"一本摆放在书堆上的日记本被打开，最新的条目似乎在句子中间结束。标题是：{@b \"Documenting Diabolism: Manufacturing a Machine to Safely Summon Fiends.\"}",
+										"它继续详细描述了一个类似笼子的房间，由电力驱动，通过一系列齿轮和管道维护，旨在利用传送魔法。它继续解释说，它的运作并不完全正确。虽然传送魔法似乎是可复制的，但人们无法安全地复制召唤咒语的束缚效果。该页的最后一行提到地板上的一个大烧焦痕迹作为一个例子。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2E. Backup Workshop",
+									"entries": [
+										"弗里茨的主要车间位于地下室，但这个较小的车间是备用房间，专门用于频繁的夜晚灵感突然袭来时，或者在他的书房里翻阅书籍时。",
+										"如果一个角色进入房间，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"各种工具、箱子和装满齿轮、齿轮和螺丝的桶子紧密地堆放在一个被切割、打洞和电烧伤痕迹斑斑的工作台上。在混乱中，有磨损的玩具和两只木制的人臂近在咫尺。从北墙的一个洞口伸出三根细长而锋利的附肢，其中一只无力的手臂似乎缠绕在一个桶的把手上。另一只多关节的肢体抓住了一个抽屉柜的把手。在墙壁的凹处，你可以看到两颗微弱闪烁的水晶朝着你凝视。"
+											]
+										},
+										"这个角色是贾兹卡 (Jarzinka)，弗里茨 (Fritz) 的A.I.D. (自主工业无人机)。她剩下的两条螃蟹般的腿目前与她的躯干一起存放在墙壁里。这个洞本来是一个充电站，类似仆人区的那些，让贾兹卡可以同时工作和充电。然而，她的充电站失去了电力。",
+										"如果Jarzinka遭受任何闪电伤害，她可以被临时重新激活，并且会在外部充电后保持清醒状态{@dice 3d10}分钟。如果将她放在{@adventure Servants' Quarters|TMMMoFvW|1,1i. servants' quarters (charging stations)}或者埋在{@adventure Junk Room (area 2g)|TMMMoFvW|1,2g. junk room}的充电基座上，Jarzinka可以生成完整的电荷。",
+										"如果贾兹因卡(Jarzinka)被唤醒并受到威胁，她将进入防御模式。她的统计数据为{@creature Pentadrone}。贾兹因卡还拥有以下信息，并将与非敌对方分享：",
+										{
+											"type": "list",
+											"items": [
+												"这个房间里有任何工具的位置。遵循她的指示的角色可以拼凑出1套(`Tinker's Tools`)、1套(`Carpenter's Tools`)和1套(`Woodcarver's Tools`)。",
+												"废物间中特定物品的位置。"
+											]
+										},
+										"如果一个角色成功地说服亚兹因卡（Jarzinka）相信他们是在为弗里茨（Fritz）工作，她也会分享：",
+										{
+											"type": "list",
+											"items": [
+												"研究图书馆中特定信息的位置。",
+												"如何正式称呼房主（即他的全名）？",
+												"房子里其他构造物的名称。"
+											]
+										},
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"entries": [
+														"东墙上的抽屉里塞满了其他工具和废金属，总价值30 gp。Jarzinka手臂挂在的抽屉里有通往垃圾间的钥匙。工作台上的一个玩具是一个{@item Talking Doll|XGE}。这个玩偶预先装载了一些尼米拉夫人的命运和孤独的弗里茨·冯·韦尔格在他有生之年末期的悲伤台词。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2F. Bathroom",
+									"entries": [
+										"多夫尼娅·迪利斯尼亚(Dorfniya Dilisnya)教给弗里茨(Fritz)的许多事情之一是如何欣赏生活中的细枝末节。这包括在一天疯狂创造和发明之后用奢华来宠爱自己。他像水疗中心般的浴室体现了这一点。或者说，在它鼎盛时期是这样的。当一个角色环顾四周，看到坍塌的门框时，请阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一团淡淡的蒸汽漂浮在空气中。满架闪闪发光的魔法药剂、枯萎植物的小瓶和其他药剂师的古怪物品，与通往被藻类覆盖的石盆的石阶相对。连接着链条的木柄悬挂在石头上方。"
+											]
+										},
+										"货架上的炼金混合物仍保留着一些效力，但随着时间的推移已经变得迟钝或被改变。超过一半的容器只是泡泡浴液，可以改变浴水的颜色，并且散发出浓重的香水味。",
+										{
+											"type": "inset",
+											"name": "Oldies but, well, not so Goodies",
+											"entries": [
+												"年龄对各种液体的影响已经改变了组分之间的相互作用。",
+												{
+													"type": "list",
+													"items": [
+														"{@link You can roll on this table for random effects for liquid.|http://dndspeak.com/2019/06/random-potion-generator/}",
+														"{@link You can also then roll here for adverse effects of age on the tonics.|https://hinterlandet.com/2017/12/31/unstable-potions-d20-strange-and-unexpected-effects-for-your-dd-potions/}"
+													]
+												}
+											]
+										},
+										"盆地是一个巨大的热水浴池，由一楼的熔炉加热，而这个熔炉又是由地下室的锻炉加热的。在长时间不使用的情况下，水早已蒸发殆尽。悬挂在头顶的链条曾经用来加热水，但破裂的管道导致它喷射出一股滚烫、停滞的水流。",
+										"如果一个角色拉动了链条，水会从位于东墙中心的管道中喷出，形成一个起源于管道的10英尺锥形喷射。锥形范围内的任何人必须通过一次{@b DC 12 Dexterity Saving throw}检定，否则将受到{@dice 1d4}力量伤害和{@dice 1d4}火焰伤害。这股喷射会排出管道中的最后一点水，并消散蒸汽云。这股喷射无法再次触发。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2G. Junk Room",
+									"entries": [
+										"每个人都需要一个地方来存放他们的垃圾和杂物。不愿离开他的豪宅，而且他的清洁助手们出现故障，弗里茨只能把他的失败实验和碎片扔进这个备用房间\u2014\u2014他儿子的房间。",
+										"垃圾房的门被锁上了。角色可以用{@adventure Backup Workshop (area 2e)|TMMMoFvW|1,2e. backup workshop}的钥匙解锁它，通过使用盗贼工具成功进行{@b DC 17 Dexterity check}，或者用{@b DC 18 Strength check}强行打开门闩。",
+										"门打开时，阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一堆弯曲、碎裂、扭曲、烧焦，以及各种破损的机械零件、木头、水晶和宝石碎片，以及宗教符号，随着地板发出的吱吱声轻微移动。废料和垃圾覆盖了地板的每一寸空间，甚至在门推压这团生命质量回到自己的空间时也有所阻力。"
+											]
+										},
+										"这里所说的\"活体\"并不仅仅是比喻：多年来，一些损坏的实验体已经拼凑在一起，形成了{@dice 1d4}自主的、类似蠕虫的构造体({@creature Bronze Scout|MTF|Bronze Scouts}拥有45点生命值)，它们在垃圾堆中蠕动。当它们静止不动时，完全无法与地板上的垃圾区分开来。",
+										"垃圾堆从地面上升起3英尺，让垃圾怪物可以利用它们的掘地移动速度，埋伏等待猎物。",
+										"一些隐藏的宝藏不小心掉进了弃牌堆里。在堆底附近是一个仍然正常运作的充电站，与仆人宿舍中的六个充电站完全相同。搜索这个堆的角色可以通过成功的{@b DC 16 Intelligence ({@skill Investigation}检定从下面的列表中找到一个物品。如果他们的检定结果超过3，他们还会发现{@adventure Secret Workshop Entrance|TMMMoFvW|1,2i. secret workshop entrance}的一把钥匙。在Jarzinka的指导下搜索任何有价值的东西的角色会自动成功。掷骰以确定他们能够找到什么物品。",
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"entries": [
+														"这堆里有1 {@item Clockwork Amulet|XGE}, 1 {@link Mend-A-Pillar|https://www.reddit.com/r/TheGriffonsSaddlebag/comments/frsjwp/the_griffons_saddlebag_clockwork_mendapillar/} {@dice 1d4}奥术焦点（价值20 gp），宝石碎片（价值30 gp），废金属（价值10 gp），{@dice 1d4}艺术品（价值45 gp），以及{@dice 1d4}哥特小玩意。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2H. Bedroom",
+									"entries": [
+										"家中的主卧室有些凌乱，但仍然异常豪华，与整个楼层相比，这里异常干净。当角色进入房间时，朗读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"奢华镀金的金属条交织在一起，形成一个像蜘蛛一样的吊灯，被链子吊在天花板上。在每条腿的末端，火焰之球闪烁着生命，照亮了房间，闪耀在挂在同样华丽的四柱床上的俗气织物上。在床脚下是一个沉重的带环箱子，旁边是一个摇摇欲坠的床头柜靠在墙上，倾斜着远离一个断掉的腿。"
+											]
+										},
+										"房间顶部的吊灯设置为当房门打开时自动开启，可以通过说出它的命令词来关闭：cintha，这是侏儒语中的\"点亮\"一词。",
+										"如果走廊里的绳子被切断，门的另一侧的陷阱板已经被设置好。任何踩在陷阱板上的角色必须成功进行一个{@b DC 16 Dexterity saving throw}检定，否则将掉入房屋内部嵌入的一个坚固金属箱中。坑底还有一个人形骷髅。",
+										"天花板关闭，牢房开始充满有毒气体。任何在内的生物必须进行一次{@b DC 18 Constitution saving throw}检定，否则生命值降为0。此外，牢房内的空气有限。角色可以在里面呼吸有毒空气1分钟，然后开始窒息。",
+										"弗里茨在一阵愤怒中打破了床头柜。他从未费心去修理它。上面放着一张羊皮纸，上面匆忙画着一个人类心脏的图解，周围有一系列刚性管道穿过。",
+										"一个小抽屉里散落着一些金属小玩意，还有一个与哈库斯(Harkus)头部嵌入的一个{@item Sending Stones|DMG|Sending Stones}相连。",
+										"这个箱子被一个锈迹斑斑的铁挂锁锁着。当它被打开时，一个小针从曾经装有剧毒的钥匙孔里喷射出来。现在已经无害了。箱子里包含：",
+										{
+											"type": "list",
+											"items": [
+												"21 sp",
+												"13 gp",
+												"价值15 gp 每颗的{@dice 2d4}宝石",
+												"{@item Spell Scroll (2nd Level)|DMG|Spell scroll} ({@spell Magic Mouth}, {@spell Continual Flame}, or {@spell Pyrotechnics|XGE}",
+												"弗里茨的个人日记 (查看 {@adventure Appendix D|TMMMoFvW|5})",
+												"一把沉重的铁钥匙，可以打开{@adventure Secret Workshop Entrance|TMMMoFvW|1,2i. secret workshop entrance}的第一个锁。"
+											]
+										},
+										"房间里唯一的另一扇门位于南墙。 三个钥匙孔牢牢地锁住了门。 每把钥匙可以在庄园的以下地方找到：",
+										{
+											"type": "list",
+											"items": [
+												"第一个（Fritz）床脚下的胸前休息。",
+												"第二个被埋在{@adventure Junk Room (area 2g)|TMMMoFvW|1,2g. junk room}堆里。",
+												"第三个放在壁炉台上的{@adventure Drawing Room (area 1e)|TMMMoFvW|1,1e. drawing room}。"
+											]
+										},
+										"角色也可以使用盗贼工具进行成功的{@b DC 25 Dexterity Check}来撬锁。如果检查失败，罪犯必须进行{@b DC 17 Intelligence saving throw}检定，否则会受到{@spell Phantasmal Force}法术的影响，认为有一个微小的机械生物爬在他们身上，用针刺和刺他们。在解决这个问题时进行先攻骰。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2I. Secret Workshop Entrance",
+									"entries": [
+										"弗里茨(Fritz)牢固锁好的壁橱实际上是通往他地下实验室的入口，但在冒险者抵达底层之前，还有最后一道防线。当一个角色进入壁橱时，读取：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"一个拥挤的，5英尺见方的壁橱主要被一个抛光的大理石台阶占据，上面放着一个发光的皮箱。"
+											]
+										},
+										"盒子里面是一把镶有宝石的铂金扳手。这把扳手看起来是一件被赋予（Abjuration）魔法效果的物品，效果为{@spell Detect Magic}。然而，它实际上是一个魔法制作的诱饵，将在从基座上取下后的24小时内化为灰尘。",
+										"房间里真正的秘密是虚幻的西墙。可以通过进行一次{@b DC 14 Intelligence ({@skill Investigation}检查来看穿这个假面板。与墙体进行物理互动也会揭示它是一个幻象，因为物体可以穿过它。",
+										"在虚幻墙的另一侧是一个明显的地板陷阱门，打开后是一把梯子。梯子下降5英尺到达一个滑梯的顶端，穿过房屋的钟表内部，最终将骑行者送到{@adventure Fritz Von Weerg's Secret Bunker (area 3c)|TMMMoFvW|1,3c. fritz von weerg's secret bunker}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Interior - Basement Floor",
+							"entries": [
+								"这座大厦的最底层是最安全的，也是最致命的。这三个房间都由金属支架支撑，并且坐落在巨大的旋转齿轮之间，这些齿轮使大厦保持运转。内部的最深处比上面第一层的地板低60英尺。",
+								{
+									"type": "entries",
+									"name": "3A. The Rotating Room",
+									"entries": [
+										"庄园的下层比上层更炎热。靠近锻造炉和熔炼池，缺乏真正的通风使得温度几乎难以忍受。",
+										"如果角色通过电梯抵达着陆点，阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"门打开，一股滚烫的蒸汽喷向你的脸。连接通道的金属表面开始灼伤你的皮肤。在隧道的尽头，你遇到一堵遮挡视线的烟雾墙。仪表和齿轮的嘎吱声在房间中回荡。"
+											]
+										},
+										"这个房间充满了浓密的蒸汽，使视线受到严重阻碍。它从打开的门道 {@adventure area 3b|TMMMoFvW|1,3b. secret workshop} 和东墙上的孔洞中涌入。房间是一个25英尺的立方体，房间的每面墙都由独立的5英尺正方形面板组成。任何仔细检查地板或墙壁的人都可以通过成功的检查 {@b DC 13 Intelligence ({@skill Investigation} 检查} 来识别构成表面的面板之间的小空间。如果他们成功了3次或更多次，他们还可以看到面板可以打开。",
+										"天花板上的通风口曾经从房间中抽走蒸汽，但由于现在整个房子内充满了蒸汽，它已经不堪重负，不再起作用。角色可以尝试使用{@b DC 14 Intelligence check}和Tinkers' Tools修理通风口，并清除蒸汽。如果他们已经阅读了书房里弗里茨的笔记，他们在投掷骰子时获得优势。",
+										"连接这个房间到{@adventure Secret Workshop|TMMMoFvW|1,3b. secret workshop}的隧道生锈了，坍塌到房子的深处。在5英尺的间隙的另一边是一扇封闭的厚金属门。任何角色看向这个间隙，可以看到数百个组成府邸内部的齿轮，以及下方15英尺处的石地板，都被从{@adventure Secret Workshop (area 3b)|TMMMoFvW|1,3b. secret workshop}发出的红橙色光芒昏暗地照亮。",
+										"东墙上的锯齿状洞已被锈蚀侵蚀。这面墙很脆弱，不能承受超过200磅的重量。如果它倒塌了，站在上面的人会跌落15英尺到下面的石地板上，并被房子内巨大的金属齿轮碾压，摔落时受到{@dice 1d6} 钝击伤害，被齿轮压碎时受到{@dice 5d6} 钝击伤害。",
+										"一个控制面板从西墙伸出，上面有六个手柄。握住手柄并拉动手柄会导致控制面板收回到墙内，房间开始旋转。当房间旋转时，所有打开的面板\u2014\u2014控制面板、空气通风口、电梯和通往{@adventure area 3b|TMMMoFvW|1,3b. secret workshop}的门\u2014\u2014都会关闭。",
+										"杠杆从左到右编号为1-6。请参考下表，查看每个杠杆对应房间的位置。当拉动一个杠杆时，其对应的墙壁变为房间的西墙。魔方会以尽可能少的步骤旋转到新位置。停止移动后，与控制面板、空气通风口、电梯和通往3b区域的门对齐的面板会再次打开。",
+										{
+											"type": "table",
+											"caption": "Lever Controls",
+											"page": 0,
+											"colLabels": [
+												"Lever # (from left to right)",
+												"Wall facing west"
+											],
+											"colStyles": [
+												"col-6 text-center",
+												"col-6 text-center"
+											],
+											"rows": [
+												[
+													"杠杆 1 (Lever 1)",
+													"西墙（起始位置）"
+												],
+												[
+													"杠杆 2 (Lever 2)",
+													"北墙 (North Wall)"
+												],
+												[
+													"杠杆 3 (Level 3)",
+													"楼层 (Floor)"
+												],
+												[
+													"杠杆 4 (Lever 4)",
+													"南墙 (South Wall)"
+												],
+												[
+													"5级",
+													"东墙 (East Wall)"
+												],
+												[
+													"6级",
+													"天花板"
+												]
+											]
+										},
+										"当一个角色第一次进入房间时，你可以投掷{@dice 1d6}来确定剩余连接隧道的位置，或者简单地选择一面有连接到{@adventure area 3b|TMMMoFvW|1,3b. secret workshop}的完整隧道的墙壁。可能不止一个！",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/yeFNmGw.png"
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "3B. Secret Workshop",
+									"entries": [
+										"{@creature Fritz von Weerg|TMMMoFvW}的巨大车间里堆满了建筑工具和资源。这个车间也是府邸其他部分的主要引擎和控制室。这里燃烧的熔炉不仅用于熔炼和锻造，还利用自身的能量和魔法为建筑的其他机械设备提供动力并使室内保持温暖。",
+										"当角色进入房间时，阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"蒸汽以与前一个房间相同的方式填满了这个房间。虽然不像之前那么浓密，但热度更加难耐。一团火红的光芒指引着你的目光，它的源头是一个巨大的锻造炉和熔炉。管道从各个角度穿透它的表面，像爬山虎一样攀爬墙壁。熔化的金属从它的口中流出，朝着一个充满微小、飘动身影的冷却槽倾泻，这些身影正在引导材料进入齿轮形状的模具。",
+												"站在你对面，远处笼罩在逐渐升起的云雾中的是一个庞大的轮廓，高12英尺。从它的身体传来有规律的滴答声，盖过了被坚实墙壁消音的类似声音。在它的身后是一个落地闸门和四个带栅栏的笼子。"
+											]
+										},
+										"锻造厂由弗里茨的仆人们永远维护着。它的蒸汽排放被用来为地下室和电梯的机械功能提供动力。它的热量温暖了房子的其他部分，但在这个房间里，热量几乎让人无法忍受，被认为是{@hazard Extreme Heat}。",
+										"有三个较小的发条式人偶在锻造炉旁操作。它们近乎无意识，具有{@creature Duodrone|MM|Duodrones}的统计数据。它们的任务是维护熔炉，继续回收来自Fritz失败实验的材料，并将它们转化为各种大小的齿轮、铆钉和面板。除非得到它们的监督者{@creature Workshop Guardian|TMMMoFvW}或{@creature Fritz von Weerg|TMMMoFvW|Fritz}本人的指示，否则它们不会理会角色。",
+										"一些破碎、压扁和扭曲的桶和板条箱，类似于(`Junk Room`)中的那些，静静地等待着它们被重新利用的时机。",
+										"{@creature Workshop Guardian|TMMMoFvW}（又名皮德维克三世）是弗里茨为展示在奖杯室中的发条士兵原型的最终版本。它还充当着监督操作锻造工作的发条仆人的角色。最初的迪利斯尼亚斯设计意图是作为一个中等身材的人形生物。",
+										"在他的疯狂中，弗里茨坚持认为他可以通过在现有原型的基础上进行改进来证明给迪利斯尼亚人看，他不只是一个笑话。它的形态最终变得如此难以控制，以至于无法离开车间。弗里茨意识到，考虑到它的智能水平，必须让它做些工作，并将其交给了他现有的仆人，而他则开始着手他的下一个，也是最后一个项目。",
+										{
+											"type": "inset",
+											"name": "Combat Difficulty",
+											"entries": [
+												"对于一个较低级别或规模较小的队伍，减少双重机器人(Duodrones)的数量，并移除守护者(Guardian)的巢穴动作(Lair Actions)。"
+											]
+										},
+										"在守护者之外，沿着西墙，有四个严密栅栏的牢房。这些牢房被设计为特别熟练的调查员克服弗里茨的陷阱后的拘留室。大多数幸存下来的入侵者被使晕，并被扔出去，让他们相信他们在内部的探险只是一个梦。然而，在他生命的最后阶段，弗里茨开始相信，为了正确地赋予他的构造物生命，可能需要使用灵魂，他指示他的仆人将囚犯带到这里。",
+										"三个牢房里有三个空着的牢房，但是一个人形骷髅穿着发霉的丝绸束腰衣躺在一个牢房里。这是马雷克·菲达托夫(Marek Fidatov)的遗骸，他是一位老克瑞兹克(Krezkian)家族的远房亲戚，曾成功穿过庄园里许多弯曲的走廊和陷阱，但最终被亚兹因卡(Jarzinka)打昏，然后被拖到这里等待弗里茨(Fritz)亲自出面。他们从未见过面，马雷克最终在牢房里饿死。",
+										"这扇升降栅门通常由这边的{@creature Workshop Guardian|TMMMoFvW}控制，只有通过成功的{@b DC 22 Strength check}才能将其抬起。否则，可以通过在另一侧转动机械手轮来升起或降低栅门。它的AC为20，有30点生命值。",
+										"笼子上方的墙壁实际上是由厚玻璃制成的窗户。有一个幻觉覆盖在上面，阻止了车间这一侧的任何人看穿，但可以通过进行一次{@b DC 18 Intelligence ({@skill Investigation}检定来看穿这个幻觉。幻觉下面的窗户比墙壁要脆弱得多，AC为15，有12点生命值。",
+										{
+											"type": "inset",
+											"name": "Don't disturb the boss",
+											"entries": [
+												"在这个房间里遇到危险时要保持警惕！一场意外爆炸或其他范围效果可能会击中墙壁并打碎窗户！这位房主可能不会喜欢他的工作区被侵犯。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "3C. Fritz Von Weerg's Secret Bunker",
+									"entries": [
+										"{@creature Fritz von Weerg|TMMMoFvW|Fritz}的工坊是巴洛维亚最安全的地方之一，也许仅次于鲁文洛夫特城堡。工坊是一个繁忙、杂乱无章的大厅。这里也是弗里茨·冯·维尔格的遗骸安息之地，同时也是他有灵魂的制造身体的当前安息之地。如果角色们通过门进入，阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"护城栅的层叠板片在与热胀的框架摩擦时发出火花。另一侧的房间很安静。一面鲜红色的旗帜上绣着交叉的步枪，挂在远处的墙上，旁边是一面带着咆哮狮子的紫色旗帜。火炬的稳定闪烁在大厅南部一个桶边倾泻的宝石碎片上。",
+												"在与当地语言习惯一致的情况下，文本中的 (%num%) 等内容在翻译中仍应保持为 (%num%)。\n\n斯瓦利奇森林(Svalich Wood)灰色树干制成的厚实硬木桌子呈U形沿着北墙摆放，桌面上摆满了各种小玩意、饰品和书籍。桌子下面匆忙堆放着一堆骨头。",
+												"一个男人\u2014\u2014或者类似男人的形象\u2014\u2014穿着一件黑色皮制罩衫，透过厚重护目镜盯着你。铆钉和尖锐的接头紧贴着仿皮肤，暴露出生命的幌子，但是与类似构造物的特征性咔嗒声已不再存在。"
+											]
+										},
+										"如果角色通过滑梯进入，阅读：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"时钟的快速滴答声在你耳边飞逝，光滑陡峭的隧道在房屋中蜿蜒曲折。向下转弯，斜坡通向你下方的一个洞口。你撞到了一个冰冷的大理石地板上。房间里一片寂静。炬光稳定地闪烁在你身后装满宝石碎片的桶上，而在你脚边，一座由铁、黄金和铂金条组成的沉重金字塔几乎要吞没地板。",
+												"在与当地语言习惯一致的情况下，文本中的 (%num%) 等内容在翻译中仍应保持为 (%num%)。\n\n斯瓦利奇森林(Svalich Wood)灰色树干制成的厚实硬木桌子呈U形沿着北墙摆放，桌面上摆满了各种小玩意、饰品和书籍。桌子下面匆忙堆放着一堆骨头。",
+												"一个男人\u2014\u2014或者类似男人的形象\u2014\u2014穿着一件黑色皮制罩衫，透过厚重护目镜盯着你。铆钉和尖锐的接头紧贴着仿皮肤，暴露出生命的幌子，但是与类似构造物的特征性咔嗒声已不再存在。"
+											]
+										},
+										"滑梯的出口是天花板上的一个简单的洞。滑道本身的墙壁是光滑的，没有魔法或攀登工具包的帮助是无法攀爬的。",
+										"桌子下的骷髅曾经属于弗里茨·冯·韦尔格（Fritz von Weerg）。",
+										"房间南端的桶和箱子是弗里茨留下来用于制造的最好的零件。",
+										"墙上的旗帜是家族旗帜。红色展示着冯·韦尔格家族前所未见的步枪，紫色则装饰着迪利斯尼亚家族的镀金狮子。",
+										"弗里茨成功制造了一个机械心脏，将他的凡人灵魂困在其中。与某种黑暗力量有着遥远而不知情的联系，他再次在深夜醒来，无意中制造了一个魂器。",
+										"尽管他的凡体已在几个世纪前死去，但在临近死亡时，他知道他的灵魂将被迷雾困住并迷失。弗里茨拒绝死去，并坚持要活下去，直到能与家人团聚。他成功地将自己的灵魂转移到这具机械身体中。他的意识完整，已经连续数十年努力工作。",
+										"在扮演弗里茨时要记住的一些事项包括：",
+										{
+											"type": "list",
+											"items": [
+												"成功创造出他的心脏并困住自己的灵魂后，弗里茨感到他终于复制了科学创新的顶峰：他再次赋予了无生命的生命。然而，即使经过无数个世纪的努力，他仍未能让他亲爱的多夫尼亚（Dorfniya）复活。",
+												"他已经在地下室里待了将近200年。他意识到了围绕着巴洛维亚的雾，但他并不知道它们的作用。",
+												"他对斯特拉德没有更多了解，只是在短暂的商务交往和斯特拉德告诉他多芬尼娅死亡的那一天。",
+												"他知道他为城堡建造的陷阱的位置和功能，包括：大堂（区域{@adventure K19|CoS|5,k19. grand landing}）中的移动铠甲，国王大厅（区域{@adventure K27|CoS|5,k27. king's hall}）中的机械斯特拉德，陷阱控制装置（区域{@adventure K31a & K31b|CoS|5,k31. trapworks}），书房（区域{@adventure K37|CoS|5,k37. study}）中的秘密壁炉门，衣橱（区域{@adventure K51|CoS|5,k51. closet}）中的秘密门，电梯陷阱（区域{@adventure K61|CoS|5,k61. elevator trap}），以及大理石滑道（区域{@adventure K82|CoS|5,k82. marble slide}）。",
+												"他不再需要食物、水或空气来生存，并将他的整个不朽存在都奉献给了创造，但他目前的资源非常有限，因此他只能利用他手头的资源进行循环利用。",
+												"Fritz（弗里茨）的魂器的机械本质使他能够规避需要用其他灵魂喂养它的必要，但这迅速耗尽了他的理智。几个世纪以来，他变得越来越偏执、更易怒，以及危险地充满好奇。",
+												"弗里茨的孤独和孤立与他的疯狂形成了情感上的冲突。弗里茨理智的部分愿意与冒险者交换一些奇珍异宝，这些物品可能对创造新事物或最终发现如何正确赋予生命起到帮助。然而，说服他相信有什么比他自己的临时身体更令人印象深刻，或者有人比他更聪明能理解他的工作，可能需要一些努力。"
+											]
+										},
+										{
+											"type": "inset",
+											"name": "A Man and his Puppet",
+											"entries": [
+												"如果角色们带着{@creature Pidlwick II|CoS}一起到达，弗里茨会把他的创作视为一位老朋友。他对派德威克二世的评价将在很大程度上取决于派德威克二世的判断。派德威克二世把弗里茨视为他们的父亲。如果派对已经开始与车间守护者战斗，而弗里茨到达时，当他看到访客中的第一件杰作时，他会命令守护者停下来。派德威克二世也将拒绝在任何情况下攻击弗里茨。"
+											]
+										},
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"entries": [
+														"弗里茨个人携带了一些贵重物品，包括他的火铳（价值500 gp）、他的机械腿，作为非魔法物品{@item Slippers of Spider Climbing}，以及他的机械心脏。桌子上有6件破损的珠宝（每件价值75 gp）、1d4个奥术聚焦器（每个价值10 gp），以及一对{@link Sharpshooter Spectacles|https://i.imgur.com/Cxf6UON.jpeg}。大厅南边的桶里装满了各种宝石的宝石粉（价值357 gp）、6块铂金锭（每块价值50 gp）、6块金锭（每块价值10 gp）和100块铁锭（每块价值1 gp）。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix A: NPCs",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Harkus",
+											"entries": [
+												"Harkus尽力保持房子井井有条，但没有他的魔法，他无法提供太多帮助。房间的上角很灰尘，他感到悲伤和孤独。他通常对客人很有帮助，但不会自愿泄露他主人的任何秘密。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Madam Nimira",
+											"entries": [
+												"尼米拉夫人(Madam Nimira)并不喜欢多说话。只有在拉动杠杆时才会开口。一位熟练的工匠可以利用弗里茨的笔记，让她拥有更多自主权。她仍然无法移动，但喜欢随意闲聊。她确实是一位出色的表演者。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Emeric",
+											"entries": [
+												"Emeric 是一个一心一意、专注于任务的仆人。他唯一的愿望就是准备食物。即使修复了，他的对话技巧有限，大多会听从 Harkus 的指示。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Jarzinka",
+											"entries": [
+												"Jarzinka最想的就是能提供帮助。她乐于助人，甚至对最微小的感激之情都感到欣喜。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Workshop Guardian",
+											"entries": [
+												"弗里茨在完美士兵的骨架上建造了守护者，但它并非完全没有感情。尽管它永远不会背叛弗里茨的命令，但它对自己作为庄园守护者的表现感到非常自豪。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Fritz von Weerg",
+											"entries": [
+												"弗里茨一直是个疯子，但孤立和挫折已经把他推向危险的极端。有朋友相伴的希望、新奇的想法，以及再次见到家人的可能性，会让他停下来，至少考虑不直接谋杀闯入者。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix B: Stat Blocks",
+					"entries": [
+						{
+							"type": "list",
+							"columns": 3,
+							"items": [
+								"{@creature Fritz von Weerg|TMMMoFvW}",
+								"{@creature Carionette|TMMMoFvW}",
+								"{@creature Workshop Guardian|TMMMoFvW}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix C: Madam Nimira's Fortunes",
+					"entries": [
+						{
+							"type": "table",
+							"caption": "Madam Nimira's Fortunes",
+							"colLabels": [
+								"d100",
+								"Fortune"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11 text-left"
+							],
+							"rows": [
+								[
+									"1",
+									"一个新的开始会让你踏上你的道路。"
+								],
+								[
+									"2",
+									"为了得到，必须先付出。"
+								],
+								[
+									"3",
+									"现在是尝试新事物的时候。"
+								],
+								[
+									"4",
+									"选择高路。(High Road)"
+								],
+								[
+									"5",
+									"\"欢迎\"是一个强有力的词。"
+								],
+								[
+									"6",
+									"当你的心是纯净的时候，你的头脑是清晰的。"
+								],
+								[
+									"7",
+									"有人你关心的人寻求和解。"
+								],
+								[
+									"8",
+									"熟能生巧。"
+								],
+								[
+									"9",
+									"不要只是想，行动起来！"
+								],
+								[
+									"10",
+									"一个重要人物将会给你提供支持。"
+								],
+								[
+									"11",
+									"今晚你会感到惊喜的。"
+								],
+								[
+									"12",
+									"你的思想是你最宝贵的财富。"
+								],
+								[
+									"13",
+									"现在是修补漏洞的好时机。"
+								],
+								[
+									"14",
+									"宁可问两次，也不要一次失去自己。"
+								],
+								[
+									"15",
+									"一个老朋友将会过来。"
+								],
+								[
+									"16",
+									"永远记得呼吸。(Always remember to breathe.)"
+								],
+								[
+									"17",
+									"看着地平线，让自己稳定下来。"
+								],
+								[
+									"18",
+									"毛笔胜过(%(the quill))(%(sword))。"
+								],
+								[
+									"19",
+									"停下来闻闻花香。(Stop and smell the flowers.)"
+								],
+								[
+									"20",
+									"在内心寻找你所追求的真相。"
+								],
+								[
+									"21",
+									"如果你不尝试，你就注定失败。(D&D)"
+								],
+								[
+									"22",
+									"旅程开始前不要迷失方向。"
+								],
+								[
+									"23",
+									"一只坏掉的时钟即使对两次也仍然是坏的。"
+								],
+								[
+									"24",
+									"(准备)的人会得到幸运的微笑。"
+								],
+								[
+									"25",
+									"分享你的财富，让其他人也能做到同样的事情。"
+								],
+								[
+									"26",
+									"有时候明智的选择是离开。"
+								],
+								[
+									"27",
+									"一个微笑可以改变一天的命运。"
+								],
+								[
+									"28",
+									"它并不是因为不在原来的地方就算丢失了。"
+								],
+								[
+									"29",
+									"当最需要建议时，往往最不听从。"
+								],
+								[
+									"30",
+									"好奇心能消除无聊。没有什么能消除好奇心。"
+								],
+								[
+									"31",
+									"泄露机密会导致失败。(Loose lips sink ships.)"
+								],
+								[
+									"32",
+									"你所需要的只是爱。(The Beatles)"
+								],
+								[
+									"33",
+									"今天要小心，否则你可能会上一些（Tricks）的当。"
+								],
+								[
+									"34",
+									"去休息吧; 你值得的。"
+								],
+								[
+									"35",
+									"善始者好，善终者更好。"
+								],
+								[
+									"36",
+									"一步一步走，英里数就会被覆盖。(Miles)"
+								],
+								[
+									"37",
+									"一步一步走，英里数就会被覆盖。(Miles)"
+								],
+								[
+									"38",
+									"盯着炉子看，水也不会开。(caldron)"
+								],
+								[
+									"39",
+									"深呼吸，记住你还活着。"
+								],
+								[
+									"40",
+									"你可能一开始一个都不抓到，然后突然一下子就抓到很多。"
+								],
+								[
+									"41",
+									"泡一壶茶，准备迎接来访的客人。"
+								],
+								[
+									"42",
+									"付出才能收获。"
+								],
+								[
+									"43",
+									"黄金很容易从手指间滑落。"
+								],
+								[
+									"44",
+									"全身心投入到你的工作中。"
+								],
+								[
+									"45",
+									"忽略上一个命运。(Disregard the last fortune.)"
+								],
+								[
+									"46",
+									"乐观而被证明是个傻瓜总比悲观而被证明是对的好。"
+								],
+								[
+									"47",
+									"以追求卓越的承诺生活将使你走得更远。"
+								],
+								[
+									"48",
+									"你的信仰之路上即将面临一次考验。"
+								],
+								[
+									"49",
+									"建议与一个老敌人进行调解。"
+								],
+								[
+									"50",
+									"烈士和傻瓜之间只有一线之隔。"
+								],
+								[
+									"51",
+									"你不会为国王投票。(king)"
+								],
+								[
+									"52",
+									"超越你的部分之和。"
+								],
+								[
+									"53",
+									"捷足先登。(The early bird catches the worm.)"
+								],
+								[
+									"54",
+									"一个拿着工具的傻瓜仍然是个傻瓜。"
+								],
+								[
+									"55",
+									"说话如银，沉默如金。"
+								],
+								[
+									"56",
+									"新的想法可能会带来利润。"
+								],
+								[
+									"57",
+									"一个人永远无法填补另一个人的鞋子，而是必须超越它们。"
+								],
+								[
+									"58",
+									"不要被转动的车轮压到。"
+								],
+								[
+									"59",
+									"只有当种子被种植得足够深时，它才会生长。"
+								],
+								[
+									"60",
+									"记住生日，但永远不要记年龄。"
+								],
+								[
+									"61",
+									"有些事情就是看起来的样子。"
+								],
+								[
+									"62",
+									"解放自己，摆脱束缚。"
+								],
+								[
+									"63",
+									"活在当下，就像这是你的第一天一样。"
+								],
+								[
+									"64",
+									"星星照耀着你。(The D&D running group)"
+								],
+								[
+									"65",
+									"将自己投降给一个更低的力量。"
+								],
+								[
+									"66",
+									"一个新的星星正在升起。"
+								],
+								[
+									"67",
+									"一条链的强度取决于它最薄弱的环节。"
+								],
+								[
+									"68",
+									"如果你想要做成某件事情，就把它交给一个很忙的人。(D&D)"
+								],
+								[
+									"69",
+									"你已经开始的改变已经产生了深远的影响。做好准备。"
+								],
+								[
+									"70",
+									"这需要果断决策。(decisiveness)"
+								],
+								[
+									"71",
+									"记住，无论你去哪里，你都在那里。"
+								],
+								[
+									"72",
+									"事实并非如此。"
+								],
+								[
+									"73",
+									"一个可疑的朋友可能是伪装的敌人。"
+								],
+								[
+									"74",
+									"一颗轻松的心会带你度过所有艰难时刻。"
+								],
+								[
+									"75",
+									"如果确定就是真理，我们就永远不会错。(D&D)"
+								],
+								[
+									"76",
+									"新的想法可能会带来利润。"
+								],
+								[
+									"77",
+									"选择足够重要的战斗，但也要足够小，可以取胜。"
+								],
+								[
+									"78",
+									"现在是尝试新事物的时候。"
+								],
+								[
+									"79",
+									"珍惜你的自由 - 它是宝贵的。"
+								],
+								[
+									"80",
+									"预测未来的确切方法就是创造它。(D&D)"
+								],
+								[
+									"81",
+									"实践胜于雄辩。"
+								],
+								[
+									"82",
+									"你渴望完美。(Perfection)"
+								],
+								[
+									"83",
+									"只有失去了才懂得珍惜。"
+								],
+								[
+									"84",
+									"你的才华将会得到认可并获得奖励。"
+								],
+								[
+									"85",
+									"人生而生，不是为了生存，而是为了生活。"
+								],
+								[
+									"86",
+									"自然、时间和耐心是最好的医生。"
+								],
+								[
+									"87",
+									"你将拥有长寿的生命。"
+								],
+								[
+									"88",
+									"是时候行动了。你的精神会相应提升。"
+								],
+								[
+									"89",
+									"今天是要保护自己，因为事情似乎无法改变。"
+								],
+								[
+									"90",
+									"无畏的勇气是胜利的基石。"
+								],
+								[
+									"91",
+									"当更多变得太多时，就等同于不够。"
+								],
+								[
+									"92",
+									"你是一个有才华的讲故事者。"
+								],
+								[
+									"93",
+									"你将会有一些新衣服。"
+								],
+								[
+									"94",
+									"你的心态警觉、实际和分析性。"
+								],
+								[
+									"95",
+									"柔和的声音可能非常有说服力。"
+								],
+								[
+									"96",
+									"建议就像接吻一样。它不花一分钱，却是一件愉快的事情。"
+								],
+								[
+									"97",
+									"因为你对自己要求更高，所以别人深深尊重你。"
+								],
+								[
+									"98",
+									"不要让雄心壮志掩盖你的小成功。"
+								],
+								[
+									"99",
+									"不要将鲁莽与自信混为一谈。"
+								],
+								[
+									"100",
+									"每个智者都是通过提出许多问题开始的。"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix D - Maps and Handouts",
+					"entries": [
+						"1. {@link Full Maps of the Mansion|https://imgur.com/a/ao4Qzjx}",
+						"2. {@link Fritz von Weerg's journal (Prop)|https://drive.google.com/file/d/1bauzhI4rPSquU3t2ClwVgb6M_8y_QjUe/view?usp=sharing}",
+						"3. {@link Fritz von Weerg's journal (Plain text)|https://docs.google.com/document/d/14sv2wfWDZ80f2-sMcCcK7t4vrBEUdHwKgmAloEHfexQ/edit?usp=sharing}",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/w3kDqlY.jpeg"
+							},
+							"title": "First Floor"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/3leIQVI.jpeg"
+							},
+							"title": "Second Floor"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://i.imgur.com/ta6QAHx.jpeg"
+							},
+							"title": "Basement"
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix E - Blueprints & Firearm Upgrades",
+					"entries": [
+						"如果你的队伍中有特别擅长手工艺的人，你可能希望在你的世界中作为奖励散布一些冯·维尔格大师臭名昭著的设计图。(Master von Weerg)。",
+						{
+							"type": "entries",
+							"name": "Blueprints and Crafting Rules",
+							"entries": [
+								"您可以使用以下步骤将特定物品转化为短小任务：",
+								{
+									"type": "list",
+									"items": [
+										"弗里茨·冯·维尔格(Fritz von Weerg)的所有草图文件的每一页上都有他的字母标记印章：一个风格化的\"V.W.\"",
+										"任何熟练使用工匠工具的角色都可以进行一次智力检定（{@skill Investigation}），并花费一小时的时间来解读蓝图，以估算建造项目所需的材料。 目标数字（DC）取决于物品的稀有度：不寻常（DC 15），稀有（DC 18），非常稀有（DC 19），传奇（DC 23）。",
+										"将这些魔法物品的成本分成包括木材、金属和皮革在内的组件组。",
+										"一旦角色解密了设计图，他们还必须通过使用工匠工具进行智力检定来制造物品。每次制造过程需要四个小时的时间。每次检定的难度等同于上面的列表。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Building in Barovia",
+									"entries": [
+										"巴罗维亚以资源匮乏而臭名昭著。如果你的冒险者被困在迷雾中，想要制造弗里茨的奇妙发明，他们很可能可以从瓦西亚人那里购买额外的资源。",
+										"瓦拉基（Vallaki）瓦尼斯提（Vistani）营地的领袖可能愿意与拯救阿拉贝尔（Arabelle）或取悦他们的冒险者进行交易。"
+									]
+								}
+							]
+						},
+						{
+							"name": "Sample schematics",
+							"type": "entries",
+							"entries": [
+								"这里有两个可能在弗里茨庄园或你们冒险队的其他地方找到的设备。",
+								{
+									"type": "entries",
+									"name": "Von Weerg's Whimsical Wings of Wonder",
+									"entries": [
+										"由著名发明家弗里茨·冯·韦尔格（Fritz von Weerg）设计。一旦构建完成，这些翅膀将作为非魔法 {@item Winged Boots}（或者如果你在一个低魔法世界中进行游戏，可以考虑将这些作为一个 {@item Wingwear|PotA} 套装：",
+										{
+											"type": "entries",
+											"name": "Required components",
+											"entries": [
+												{
+													"type": "list",
+													"items": [
+														"价值200gp的木材或类似材料",
+														"价值200gp的皮革或类似材料",
+														"价值100gp的黄铜用于铆钉和螺栓（Brass）"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Crafting",
+											"entries": [
+												"一旦你准备好了所需的组件，你可以花费4小时时间在这个项目上，并使用你的（Tinker's Tools）进行智力检定，以确定你在这个制作阶段的进展。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fritz's Ferocious Firearm",
+									"entries": [
+										"由著名发明家弗里茨·冯·维尔格（Fritz von Weerg）设计。这支火枪具有以下统计数据：",
+										{
+											"type": "table",
+											"colLabels": [
+												"Name",
+												"Cost",
+												"Damage",
+												"Weight",
+												"Properties"
+											],
+											"colStyles": [
+												"col-1 text-left",
+												"col-2 text-left",
+												"col-3 text-left",
+												"col-1 text-left",
+												"col-5 text-left"
+											],
+											"rows": [
+												[
+													"手枪 (Pistol)",
+													"250gp",
+													"{@dice 1d10} 穿刺",
+													"3lbs",
+													"弹药（火器），（射程30/90），装填"
+												]
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Required components",
+											"entries": [
+												{
+													"type": "list",
+													"items": [
+														"价值125gp的木材或类似材料",
+														"价值100gp的钢铁或铁（Steel or Iron）",
+														"价值25gp的黄铜用于铆钉和螺栓（Brass）"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Crafting",
+											"entries": [
+												"一旦您准备好所需的组件，您可以花费4小时工作在这个项目上，并进行一次(`Tinkerer's Tools`)检定来确定您在这个制作阶段的进展。这个过程也包括前10发子弹的制作。",
+												"一旦制作完成，您可以使用修补工具和价值3gp的金属，在每小时的制作时间内制作高达10颗子弹。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Firearm Upgrades",
+							"entries": [
+								"以下升级可从{@i Wizards of the Coast's Legends of Runeterra: Dark Tides of Bilgewater}免费获得。单支火器最多可携带两个升级。此外，先决条件决定了每个升级可应用于何种类型的火器。",
+								"小型升级需要4小时的时间完成，价值50 gp 的木材、金属或其他各种资源（由DM决定）。大型升级需要8小时的时间完成，价值100 gp 的适当资源。升级所花费的时间不必连续。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Firearm Upgrades",
+							"entries": [
+								"与许多在他们的工作室里勤奋工作的修补工不同，精通枪械的冒险家会改进他们的武器以适应危险的生活方式。以下列表提供了增强您枪械能力的各种选项。这些升级可以是您为武器添加的个人风格，也可以是您发现并调整以适应武器的技术零件。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Saving Throws",
+											"entries": [
+												"一些升级需要目标进行豁免才能抵抗效果。豁免 DC 的计算方法如下：",
+												"{@b Firearm Upgrade save DC} = 8 + 你的熟练加值 + 你的智力调整值"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Minor Firearm Upgrades",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Blade and Black Powder",
+									"entries": [
+										"{@b Prerequisite: Pistol}",
+										"你制造了一把配合你火器的匹配刀，使你在近战和远程战斗中都成为致命的对手。与敌对生物在5英尺范围内不会对你的远程攻击造成劣势。此外，当你用火器进行攻击时，你可以利用额外动作对近战范围内的生物进行打击。",
+										"进行一次近战攻击检定。攻击检定使用你的敏捷调整值，并且你对这次攻击有熟练加值。命中后，攻击造成斩击伤害，伤害值为1d6 + 你的敏捷调整值。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Caliber Net",
+									"entries": [
+										"{@b Prerequisite: Sniper or Blunderbuss}",
+										"你在枪上装备了一个用来捕捉对手的网。作为一个动作，选择枪的射程内的一个生物。该生物必须成功通过一次力量豁免才能被束缚。在每个回合结束时，目标可以重复进行这次豁免检定，成功则结束效果。一旦你使用了这个特性，你必须休息短暂或长时间才能再次使用它。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Collateral Damage",
+									"entries": [
+										"{@b Prerequisite: Sniper or Blunderbuss}",
+										"你改变了你的弹药，使其具有爆炸能力。当你用枪击中目标时，目标周围5英尺范围内的所有生物必须进行一次敏捷豁免检定，否则受到{@dice 1d6}穿刺伤害。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Scout's Bayonet",
+									"entries": [
+										"{@b Prerequisite: Sniper or Blunderbuss}",
+										"你制造了一把配合你火器的匹配刀，使你在近战和远程战斗中都成为致命的对手。这把刀具有与西洋剑相同的统计数据，并且可以作为独立的武器使用。攻击投掷使用你的敏捷调整值，并且你熟练于这种攻击。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Crosshairs",
+									"entries": [
+										"你给你的火器装备了一个瞄准机制。如果你本回合还没有移动过，你可以将瞄准镜对准目标作为一个奖励动作，将你的速度降为0，并在本回合结束前使用这个火器进行的下一次攻击获得优势。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Double-Barrel",
+									"entries": [
+										"你给你的火器添加了第二个枪管。当你使用攻击动作并用升级后的火器进行攻击时，你可以使用一个额外动作进行第二次射击。你不会给额外攻击的伤害加上你的能力修正值，除非该修正值为负数。如果火器具有装填属性，你可以同时重新装填两个枪管。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Smoke Screen",
+									"entries": [
+										"作为一个动作，你改变你枪的发射机制，释放一团灰尘和烟雾。这团云雾形成一个以你选择的点为中心、边长为10英尺的立方体，在枪的射程内扩散，能穿过角落，这个立方体覆盖的区域被视为浓雾笼罩。这团烟雾持续10分钟，或者直到强风（至少25英里每小时）将其驱散。一旦你使用了这个特性，你必须完成一次短休或长休才能再次使用它。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Major Firearm Upgrades",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Barrage",
+									"entries": [
+										"作为一个动作，你可以发射一波子弹。源自你的15英尺锥形范围内的每个生物必须进行一次敏捷豁免，失败则受到{@dice 3d10} + 你的敏捷修正值的穿刺伤害，成功则减半。一旦你使用了这个特性，你必须完成一次短休或长休才能再次使用它。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Double Up",
+									"entries": [
+										"当你用火器进行成功的远程武器攻击击中生物时，你可以立即使子弹击中原始目标周围15英尺内的另一个生物。第二个目标受到等于你的敏捷调整值的穿刺伤害（最少为1）。你可以以这种方式重新定向子弹的次数等于你的智力调整值，并在短暂休息或长休息后恢复所有已用次数。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Lightning Round",
+									"entries": [
+										"你在你的火器上装备了一个不稳定的奥术符文，允许你在你的回合中以一个动作释放一道穿透性的电击。闪电从你身上直线发射，宽1英尺，长30英尺。线上的每个生物必须进行一次敏捷豁免，失败则受到{@dice 3d8} 电击伤害，成功则减半。一旦你使用了这个特性，你必须完成一次短休或长休才能再次使用它。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Trial by Fire",
+									"entries": [
+										"作为一个奖励动作，你可以用炽热的力量充能你的武器。直到你的下一个回合开始之前，每当你进行一次成功的攻击，你造成额外的火焰伤害，数值等同于你角色等级的一半，向上取整。你可以以这种方式充能你的武器次数等同于你的智力调整值（最少一次），并在短休或长休后重新获得所有使用次数。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Appendix F: Credits",
+					"entries": [
+						"1. 感谢海岸巫师公司(Wizards of the Coast)在《斯特拉德的诅咒》中提供了出色的弗里茨·冯·维尔格(Fritz von Weerg)以及附件E中提供的火器升级。",
+						"2. 我的精彩派对，特别是托雷多罕利弗拉克斯·斯莫菲亚(Toredoro Haliflax Smaulphea)，这个角色启发了研讨会，也是我扮演弗里茨·冯·维尔格(Fritz von Weerg)的灵感来源。这位玩家还是第16页上插图的插画师！{@link Check it out here|https://www.artstation.com/rydernr}。",
+						"3. 感谢{@link r/CurseofStrahd|https://www.reddit.com/r/CurseofStrahd/}帮助我进行游戏测试和修订这个项目。",
+						"4. 由于他们出色的地图制作资产而获得 {@link Forgotten Adventures|https://www.forgotten-adventures.net/}。",
+						"5. 感谢{@link DungeonDraft|https://dungeondraft.net/}用他们神奇的地下城建造工具帮助我打下了府邸的基础。",
+						"6. 他们以他们出色的魔法物品而闻名，包括修复柱(Mend-A-Pillar)!",
+						"7. 额外艺术制作：{@link J.M. Brunswick & Balke Co. Billiards Poster|https://i.etsystatic.com/20227672/r/il/699869/1969027751/il_570xN.1969027751_1z6t.jpg}，{@link Rust Monster|https://vignette.wikia.nocookie.net/forgottenrealms/images/f/f7/Monster_Manual_2_4e_-_Rust_Monster_-_p178_-_Jason_Engle.jpg/revision/latest?cb=20141115190731} 由Jason A. Engle在《{@link Monster Manual 2: 4th edition|https://forgottenrealms.fandom.com/wiki/Monster_Manual_2_4th_edition}》中描绘，Castlevania: Lords of Shadow Reveries {@link promotional poster|https://vignette.wikia.nocookie.net/castlevania/images/c/c6/ClockTower.jpg/revision/latest?cb=20101223053253} 和 {@link Dwarven colossus concept art by Corey Loving|https://imgur.com/r/elderscrollsonline/OZ0QF}。",
+						"8. 他们的纸张质地{@link InkGangBoss|https://gumroad.com/inkgangboss}和字体设计工作室{@link Photgraph Signature|https://www.dafont.com/typeline-studio.d7285?text=Hello%2C+I+am+Fritz+von+Weerg}，这两者都被用来制作Frit'z杂志。",
+						"最后，但绝对不是最不重要的，感谢{@link Homebrewery|https://homebrewery.naturalcrit.com/}提供的出色格式化帮助，以及感谢u/flammableconcrete提供的{@link their beautiful page stains|https://homebrewery.naturalcrit.com/}。"
+					]
+				}
+			]
+		}
+	]
+}

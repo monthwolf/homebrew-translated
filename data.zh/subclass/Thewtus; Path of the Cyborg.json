@@ -1,0 +1,270 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CyborgBarbarian",
+				"abbreviation": "CybHB",
+				"full": "Path of the Cyborg Barbarian",
+				"authors": [
+					"Thewtus"
+				],
+				"convertedBy": [
+					"Thewtus"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1680304574,
+		"dateLastModified": 1680304574,
+		"_dateLastModifiedHash": "62313af3ce"
+	},
+	"subclass": [
+		{
+			"name": "Path of the Cyborg",
+			"source": "CyborgBarbarian",
+			"shortName": "Cyborg",
+			"className": "Barbarian",
+			"spellcastingAbility": "int",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Path of the Cyborg|Barbarian||Cyborg|CyborgBarbarian|3",
+				"Version 2.0|Barbarian||Cyborg|CyborgBarbarian|6",
+				"Version 3.0|Barbarian||Cyborg|CyborgBarbarian|10",
+				"Singularity|Barbarian||Cyborg|CyborgBarbarian|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Cyborg",
+			"source": "CyborgBarbarian",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Cyborg",
+			"subclassSource": "CyborgBarbarian",
+			"level": 3,
+			"entries": [
+				"有些人可能会觉得肉体的限制令人窒息，并希望通过用金属来调和他们的身体，使自己不再仅仅是一个凡人，而变得更强大。这些人走的是（Cyborg之路）的道路，放弃他们原本的四肢，选择冷铁和钢铁的力量。",
+				"野蛮人可以通过多种方式增强自己，可以通过（可能是）经验丰富的医生/技术人员，通过魔法手段，或者自己动手来实现。赛博格无法隐藏他们的身体改造，可能会自然而然地让他人感到害怕。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Overdrive|Barbarian||Cyborg|CyborgBarbarian|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cybernetic Enhancements|Barbarian||Cyborg|CyborgBarbarian|3"
+				}
+			]
+		},
+		{
+			"name": "Overdrive",
+			"source": "CyborgBarbarian",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Cyborg",
+			"subclassSource": "CyborgBarbarian",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，你放弃了愤怒的能力，以过载你的技术增强装置来获得力量。你获得了超载能力 - 它的功能类似于愤怒，但有以下不同：",
+				{
+					"type": "list",
+					"items": [
+						"愤怒次数被超载充能取代，每个回合在超载状态下会在你的回合开始时消耗一个充能。进入超载状态需要消耗一个充能。",
+						"冲锋次数 = 愤怒次数 + 智力调整值（如果为正）。（%num%）",
+						"如果你没有进行攻击或受到伤害，你的愤怒状态将不会结束，然而如果对你使用了像{@spell dispel magic}这样的法术，或者使用了 E.M.P/技术禁用攻击，愤怒状态将会结束。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Cybernetic Enhancements",
+			"source": "CyborgBarbarian",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Cyborg",
+			"subclassSource": "CyborgBarbarian",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你获得2个增强物品，稍后我会添加更多描述文本。",
+				{
+					"type": "entries",
+					"name": "Brain SSD",
+					"entries": [
+						"在智力豁免检定方面精通，或者在另一种豁免检定上，如果你已经精通。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enhanced Eyes",
+					"entries": [
+						"你获得60英尺的暗视能力；作为一个动作，你可以使用你的眼睛来看魔法（就像使用{@spell truesight}一样），红外线和热能，或者透过1英尺宽的固体物体看到X射线。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High-Pressure Grip",
+					"entries": [
+						"你在进行{@action grapple}检定时获得+2的加值奖励。",
+						"在超驾驶状态下：{@condition grappled} 生物在回合开始时受到{@dice 1d6} 点力量伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magnetic Palms",
+					"entries": [
+						"你可以将小磁性物体吸引到你的手上。(Mage Hand)",
+						"在超载时：你可以将中等大小的磁性物体吸引到你的手中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reinforced Chestplate",
+					"entries": [
+						"你的AC获得+1的加值。",
+						"在超驾状态下：优势相对于被击倒{@condition prone}或被强制移动。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Steel Arms",
+					"entries": [
+						"你的徒手攻击造成{@dice 1d6}伤害。你现在可以举起比以前多100磅的重量，并且在与举起或移动重物相关的力量检定中获得优势。",
+						"在超驾状态下：你可以使用{@action Attack}动作将一个与你同样大小或更小的敌人抛出15英尺远，造成{@dice 2d6}点力量伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Overclock",
+					"entries": [
+						"当你剩余 0 个超载充能时，你仍然可以继续超载驾驶。",
+						"在超频时：你在回合开始时受到{@dice 1d6}伤害，且无法再被治疗。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Weapon Assimilation",
+					"entries": [
+						"你用你精通的一种单手武器替换你的一根肢体。你随时可以使用这个武器，无需装备。当你使用这个武器进行攻击时，攻击命中时，攻击命中时，将{@dice 1d4}加到你的攻击骰结果上。你可以在每次升级时将这个武器与另一个武器交换。",
+						"在超载时：您可以将此武器用作奖励动作进行一次攻击{@action Attack}，前提是您尚未使用此武器进行攻击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Version 2.0",
+			"source": "CyborgBarbarian",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Cyborg",
+			"subclassSource": "CyborgBarbarian",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第(%num%)级开始，您将获得更多的机械升级。",
+				"你可以从这个列表或之前的列表中获得多达2个额外的机械增强物。",
+				{
+					"type": "entries",
+					"name": "Discharged Fingers",
+					"entries": [
+						"你获得了{@spell shocking grasp}法术，可以在过载时使用。",
+						"在超驾状态下：你获得{@spell lightning lure|tce}和{@spell thunderclap|xge}的能力，这些能力只能在超驾状态下使用。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Overdrive Battery",
+					"entries": [
+						"你获得 +3个最大超载充能，并在短休息后恢复3个充能。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Version 3.0",
+			"source": "CyborgBarbarian",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Cyborg",
+			"subclassSource": "CyborgBarbarian",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你将获得更多...极端的（Cybernetic Upgrades）。",
+				"你可以从这个列表或任何以前的列表中获得多达2个额外的（cybernetic enhancements）。（cybernetic enhancements）不变。",
+				{
+					"type": "entries",
+					"name": "Advanced Exoskeleton",
+					"entries": [
+						"你获得重型盔甲的熟练加成，在穿戴时可以受益于快速移动。你也可以将/脱下盔甲作为一个动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magnetism",
+					"entries": [
+						"【需要磁力掌】你可以利用磁力将身体的金属部分分离。你可以将身体的任何部分（比如手）移动到离身体最多10英尺的地方。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nanomachines",
+					"entries": [
+						"在你被攻击之前，你可以消耗一个超载充能，获得+5 AC对所有攻击的加值（包括触发攻击），直到你的下一个回合开始。如果你还没有开始超载，你也会立即开始超载。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Singularity",
+			"source": "CyborgBarbarian",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Cyborg",
+			"subclassSource": "CyborgBarbarian",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你将成为科技和血肉的终极结合。",
+				"你从这个列表或任何以前的列表中获得1个**机械增强**，以及从以前的列表中再获得1个额外的增强。",
+				{
+					"type": "entries",
+					"name": "Plastic Surgery",
+					"entries": [
+						"你的魅力属性得到+1加值（不能超过20），并且获得在魅力豁免检定中的熟练加值，以及以下技能中的一个熟练加值：{@skill Deception}，{@skill Intimidation}，{@skill Performance}，{@skill Persuasion}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "30k Amp Hotwire",
+					"entries": [
+						"【需要释放手指】你在3级时以消耗2点超载能量，获得{@spell lightning bolt}和{@spell thunder step|xge}法术的使用权限。",
+						"在超载状态下：你可以施放这些法术，并且可以以消耗 3 点超载能量将其升级至 4 级。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Supercomputer Brain",
+					"entries": [
+						"你的智力得到了+4加值，你的智力分数上限现在是24。(Intelligence)。"
+					]
+				}
+			]
+		}
+	]
+}

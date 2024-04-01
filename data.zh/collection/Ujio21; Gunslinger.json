@@ -1,0 +1,2334 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "u21gs",
+				"abbreviation": "U21GS",
+				"full": "Gunslinger",
+				"authors": [
+					"/u/Ujio21",
+					"/u/xQF13"
+				],
+				"version": "3.0",
+				"url": "https://drive.google.com/file/d/0B4fgrcv8-6IKaHZtbXRiOW8zQmc/view",
+				"targetSchema": "1.0.0"
+			},
+			{
+				"json": "u21gs:e",
+				"abbreviation": "U21GS:E",
+				"full": "Gunslinger Expansion",
+				"authors": [
+					"/u/lobstaris"
+				],
+				"version": "1.0",
+				"url": "https://homebrewery.naturalcrit.com/share/ryXReB-ONe",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"PE": "Personal Effects"
+		},
+		"dateAdded": 1540935816,
+		"dateLastModified": 1692309855,
+		"_dateLastModifiedHash": "ce76d19999"
+	},
+	"book": [
+		{
+			"name": "Gunslinger",
+			"id": "U21GS",
+			"source": "u21gs",
+			"group": "homebrew",
+			"published": "2016-02-04",
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"Gunslinger",
+						"Firearms"
+					]
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "U21GS",
+			"source": "u21gs",
+			"data": [
+				{
+					"type": "entries",
+					"name": "Introduction",
+					"entries": [
+						"你对DMG中的火器规则感到不满吗？你喜欢Matthew Mercer的枪手（Gunslinger），但发现自己渴望拥有更多富有风味的选项的完整职业吗？Reddit用户u/Ujio21和/u/xQF13为你准备了{@class Gunslinger|u21gs}职业和全新的火器规则，详见下文。",
+						{
+							"type": "section",
+							"name": "Gunslinger",
+							"entries": [
+								"在被地精伏击时醒来，一个人类伸手去拿她一直放在身边的手枪。她一跃而起，开始射击，在最近的妖精出手前将其轰走。",
+								"一个地精满意地叹了口气，他给自己的杰作上了最后一颗螺丝：一把巨大的步枪，几乎是他身高的两倍。他装好子弹，在附近的一棵树上进行试验。随之而来的爆炸将地精从他的脚上打了下来。他跌跌撞撞地站起来，看到那棵树因被击中而倒下，他咧嘴笑了。",
+								"枪手是枪械的大师，在战场上使用枪械达到破坏性的效果。枪手使用稳定的扳机手指和技术技巧为她的同伴提供火力掩护，并以致命的特殊射击使对手陷入瘫痪。",
+								{
+									"type": "entries",
+									"name": "Creating a Gunslinger",
+									"entries": [
+										"枪手们在文明的外围茁壮成长，在世界更自由的地区，他们既出名又臭名昭著。与你的管理员讨论一下你的枪手的适当起源。你住在城市里，你的武器在那里可能是非法的？或者，你来自边疆，在那里你的种类很普遍，而法律却不那么重要。",
+										"你是如何获得你的第一把枪的？你对发明的狂热是否导致你创造了比你知道的更强大的东西？是否有一个恶魔用这些知识来换取对你的承诺？也许你杀了一个复仇的敌人，并从他的尸体上拿走了你的枪。",
+										{
+											"type": "entries",
+											"name": "Quick Build",
+											"entries": [
+												"按照这些建议，你可以很快地做出一个枪手。首先，将你的最高能力得分放在灵巧上，然后是智力或智慧，这取决于你在3级时打算采取的路径。第二，选择外乡人背景。"
+											]
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Hey mate, where's all the data?",
+									"entries": [
+										"你可能会注意到，部分数据不在这个页面中，或者说，一些规则被分割（或复制）到网站的各个部分。下面是这个自制的所有东西的列表。",
+										{
+											"type": "list",
+											"items": [
+												"％0％），也就是你现在正在阅读的文件，分为两部分。",
+												{
+													"type": "list",
+													"items": [
+														"{@i Gunslinger}部分试图通过描述一些有味道的{@i vignettes}和提出一些重要的问题来说明什么是{@i defines}枪手，以勾勒出你的角色的故事和角色扮演。它还包含一些快速建立你的角色的建议。",
+														{
+															"type": "item",
+															"name": "",
+															"entries": [
+																"{@i Firearms}部分详细介绍了所有关于枪械的规则，这些规则适用于世界上的武器本身（及其弹药），无论是否由枪手装备。它还包含一个描述可用的基本火器的表格。",
+																"请注意，这些武器/规则是为了取代DMG中的火器的武器/规则。"
+															]
+														}
+													]
+												},
+												"{@variantrule firearms|u21gs|Firearms variant rules}，方便快速浏览本文件{@i Firearms}部分所描述的火器力学。{@table firearms|u21gs|Firearms table}也同样复制了上述章节中的枪械武器表。",
+												{
+													"type": "item",
+													"name": "",
+													"entries": [
+														"{@class gunslinger|u21gs|Gunslinger class}，详细介绍了建立枪手玩家角色的所有功能和选项，以及其所有的子类。",
+														"顺便说一下，看看{@filter optional features|optionalfeatures|Feature Type=PE}的页面，列出了所有你可以采取的第13级功能{@i Personal Effects}的选项。"
+													]
+												},
+												"{@filter firearms items list|items|source=null|type=Firearm Weapon}，列出除本文件外，由任何其他来源添加的带有 \"火器武器 \"标签的所有武器。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Firearms",
+							"entries": [
+								{
+									"type": "table",
+									"caption": "Firearms",
+									"colLabels": [
+										"Name",
+										"Cost",
+										"Damage",
+										"Weight",
+										"Properties"
+									],
+									"colStyles": [
+										"col-2",
+										"col-1",
+										"col-2",
+										"col-1",
+										"col-6"
+									],
+									"rows": [
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"{@item Derringer|u21gs}",
+												"1000 gp",
+												"1d6 piercing",
+												"2 lb.",
+												"Ammunition (range 15/60), capacity 1, light, misfire 0, reload, special"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"{@item Musket|u21gs}",
+												"250 gp",
+												"1d12 piercing",
+												"9 lb.",
+												"Ammunition (range 150/600), capacity 4, misfire 3, reload, two-handed"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"{@item Pistol|u21gs}",
+												"125 gp",
+												"1d10 piercing",
+												"4 lb.",
+												"Ammunition (range 60/240), capacity 4, misfire 3, reload"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"{@item Sawed-off Scattergun|u21gs}",
+												"500 gp",
+												"1d6 piercing",
+												"8 lb.",
+												"Ammunition (range 10/20), capacity 2, light, misfire 3, reload, scatter"
+											]
+										},
+										{
+											"type": "row",
+											"style": "row-indent-first",
+											"row": [
+												"{@item Scattergun|u21gs}",
+												"250 gp",
+												"1d8 piercing",
+												"8 lb.",
+												"Ammunition (range 15/30), capacity 2, misfire 3, reload, scatter, two-handed"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Firearm Proficiency",
+							"entries": [
+								"在这个自制规则中，火器既不是简单武器也不是军用武器，而是一种独立的类别。在大多数D&D世界中，角色不会具备这个类别的熟练度，除非是{@class Gunslinger|u21gs}职业的角色。决定角色是否具备火器熟练度取决于DM。",
+								"在停工期间，角色可以使用《玩家手册》中的{@book training rules|PHB|8|Training}来获得熟练度，前提是他们有足够的弹药来保持武器的工作，同时掌握其使用。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Firearm Properties",
+							"entries": [
+								"火器有与其用途相关的特殊属性，如火器表所示。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Ammunition",
+											"entries": [
+												"只有在你有弹药可以发射的情况下，你才能使用具有弹药属性的武器进行远程攻击。每次你用该武器进行攻击时，你会消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。给单手武器装弹需要一只自由的手。枪械的弹药在使用时被销毁。",
+												"如果你使用具有弹药属性的武器来进行近战攻击，你会将该武器视为一种简易武器。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Broken",
+											"entries": [
+												"破损的枪支在修复之前不能开火。要修复坏掉的枪械，你可以用一个行动来尝试工匠的工具能力检查，其DC等于10加上武器的基本失火分数。一旦成功，该武器就不再被认为是坏的。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Capacity",
+											"entries": [
+												"枪支的容量是指它一次可以容纳的子弹数量。当枪支的发射次数与它的容量相等时，在再次发射前必须重新装弹。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Misfire",
+											"entries": [
+												"如果你的枪械攻击的自然卷轴落在或低于你所使用的枪械的失火分数，你就会遭受失火。你的攻击没有命中，你在攻击中使用的任何弹药都被消耗掉了，你的枪也就坏了。你必须在使用枪支前修复它。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Reload",
+											"entries": [
+												"重新装填枪支会取代你用枪支进行的下一次攻击，重新装填枪支中的弹药，直到它的容量。如果你愿意，你可以用一个动作来重新装填你的枪支。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Scatter",
+											"entries": [
+												"具有此属性的火器在一个圆锥体中射出弹丸，以达到其远距离的增量。锥形范围内的所有生物必须做一个灵巧救赎（DC等于8+射手的灵巧修饰+射手的熟练修饰），如果救赎失败则受到全部伤害，如果成功则受到一半伤害。在枪械短距离范围之外的生物在这个蓄力动作上有优势。如果射手不精通枪械，所有的生物都会以优势的方式尝试蓄力投掷。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Silenced",
+											"entries": [
+												"发射时，消音武器不会比弓箭发出更多的噪音。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Ammunition and Water",
+									"entries": [
+										"如果你的弹药变湿了，有50％的机会成为空白。你可以通过掷骰子来决定湿的弹药在发射时是否为空弹。在{@chance 50|1-50}的情况下，它是空白的，不会发射。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Firearms and Water",
+									"entries": [
+										"如果你的枪支变湿了，你必须使用你的工匠工具来拆卸枪支并清洗它，然后才能再次使用。拆卸枪支不需要进行能力检查，但需要一套工匠的工具。没有魔法的帮助，你不能在水下给枪支装弹或开火，除非另有说明。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Noise",
+									"entries": [
+										"开枪时，火器会发出巨大的声音，很像两块石头高速撞击在一起。这种声音很容易被枪声周围一英里内的任何生物听到。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Special Firearms",
+							"entries": [
+								"这里描述了具有特殊规则的火器。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Derringer",
+											"entries": [
+												"德林格尔是一种小型手枪，用于近距离的突然袭击，是刺客最好的朋友。德林枪使持枪者在拔枪检查时具有优势，并且可以在5英尺范围内进行攻击而不处于劣势。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Firearms",
+			"source": "u21gs",
+			"caption": "Firearms",
+			"colLabels": [
+				"Name",
+				"Cost",
+				"Damage",
+				"Weight",
+				"Properties"
+			],
+			"colStyles": [
+				"col-2",
+				"col-1",
+				"col-2",
+				"col-1",
+				"col-6"
+			],
+			"rows": [
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"{@item Derringer|u21gs}",
+						"1000 gp",
+						"1d6 piercing",
+						"2 lb.",
+						"Ammunition (range 15/60), capacity 1, light, misfire 0, reload, special"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"{@item Musket|u21gs}",
+						"250 gp",
+						"1d12 piercing",
+						"9 lb.",
+						"Ammunition (range 150/600), capacity 4, misfire 3, reload, two-handed"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"{@item Pistol|u21gs}",
+						"125 gp",
+						"1d10 piercing",
+						"4 lb.",
+						"Ammunition (range 60/240), capacity 4, misfire 3, reload"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"{@item Sawed-off Scattergun|u21gs}",
+						"500 gp",
+						"1d6 piercing",
+						"8 lb.",
+						"Ammunition (range 10/20), capacity 2, light, misfire 3, reload, scatter"
+					]
+				},
+				{
+					"type": "row",
+					"style": "row-indent-first",
+					"row": [
+						"{@item Scattergun|u21gs}",
+						"250 gp",
+						"1d8 piercing",
+						"8 lb.",
+						"Ammunition (range 15/30), capacity 2, misfire 3, reload, scatter, two-handed"
+					]
+				}
+			],
+			"chapter": {
+				"name": "Firearms",
+				"index": 0
+			}
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Firearms",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Proficiency",
+					"entries": [
+						"在{@book this homebrew|u21gs|0}中，火器既不是简单武器也不是军用武器，而是属于自己的类别。在大多数D&D世界中，角色通常不会精通这个类别，除非是{@class Gunslinger|u21gs}职业的角色。决定角色是否精通火器取决于DM。",
+						"在停工期间，角色可以使用《玩家手册》中的{@book training rules|PHB|8|Training}来获得熟练度，前提是他们有足够的弹药来保持武器的工作，同时掌握其使用。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Properties",
+					"entries": [
+						"火器有与其用途相关的特殊属性，如火器表所示。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Ammunition",
+									"entries": [
+										"只有在你有弹药可以发射的情况下，你才能使用具有弹药属性的武器进行远程攻击。每次你用该武器进行攻击时，你会消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。给单手武器装弹需要一只自由的手。枪械的弹药在使用时被销毁。",
+										"如果你使用具有弹药属性的武器来进行近战攻击，你会将该武器视为一种简易武器。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Broken",
+									"entries": [
+										"破损的枪支在修复之前不能开火。要修复坏掉的枪械，你可以用一个行动来尝试工匠的工具能力检查，其DC等于10加上武器的基本失火分数。一旦成功，该武器就不再被认为是坏的。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Capacity",
+									"entries": [
+										"枪支的容量是指它一次可以容纳的子弹数量。当枪支的发射次数与它的容量相等时，在再次发射前必须重新装弹。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Misfire",
+									"entries": [
+										"如果你的枪械攻击的自然卷轴落在或低于你所使用的枪械的失火分数，你就会遭受失火。你的攻击没有命中，你在攻击中使用的任何弹药都被消耗掉了，你的枪也就坏了。你必须在使用枪支前修复它。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Reload",
+									"entries": [
+										"重新装填枪支会取代你用枪支进行的下一次攻击，重新装填枪支中的弹药，直到它的容量。如果你愿意，你可以用一个动作来重新装填你的枪支。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Scatter",
+									"entries": [
+										"具有此属性的火器在一个圆锥体中射出弹丸，以达到其远距离的增量。锥形范围内的所有生物必须做一个灵巧救赎（DC等于8+射手的灵巧修饰+射手的熟练修饰），如果救赎失败则受到全部伤害，如果成功则受到一半伤害。在枪械短距离范围之外的生物在这个蓄力动作上有优势。如果射手不精通枪械，所有的生物都会以优势的方式尝试蓄力投掷。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Silenced",
+									"entries": [
+										"发射时，消音武器不会比弓箭发出更多的噪音。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ammunition and Water",
+					"entries": [
+						"如果你的弹药变湿了，有50％的机会成为空白。你可以通过掷骰子来决定湿的弹药在发射时是否为空弹。在{@chance 50|1-50}的情况下，它是空白的，不会发射。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Firearms and Water",
+					"entries": [
+						"如果你的枪支变湿了，你必须使用你的工匠工具来拆卸枪支并清洗它，然后才能再次使用。拆卸枪支不需要进行能力检查，但需要一套工匠的工具。没有魔法的帮助，你不能在水下给枪支装弹或开火，除非另有说明。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Noise",
+					"entries": [
+						"开枪时，火器会发出巨大的声音，很像两块石头高速撞击在一起。这种声音很容易被枪声周围一英里内的任何生物听到。"
+					]
+				}
+			],
+			"source": "u21gs"
+		}
+	],
+	"item": [
+		{
+			"name": "Derringer",
+			"type": "R",
+			"weaponCategory": "firearm",
+			"rarity": "none",
+			"value": 100000,
+			"weight": 2,
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"L",
+				"U21MF",
+				"U21RD",
+				"S"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 1次射击",
+						"{@bold Misfire}: 0"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"德林格尔是一种小型手枪，用于近距离的突然袭击，是刺客最好的朋友。德林枪使持枪者在拔枪检查时具有优势，并且可以在5英尺范围内进行攻击而不处于劣势。"
+					]
+				}
+			],
+			"range": "15/60",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Musket",
+			"type": "R",
+			"weaponCategory": "firearm",
+			"rarity": "none",
+			"value": 25000,
+			"weight": 9,
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"U21MF",
+				"U21RD",
+				"2H"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 4枪",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "150/600",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Pistol",
+			"type": "R",
+			"weaponCategory": "firearm",
+			"rarity": "none",
+			"value": 12500,
+			"weight": 4,
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"U21MF",
+				"U21RD"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 4枪",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "60/240",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Sawed-off Scattergun",
+			"type": "R",
+			"weaponCategory": "firearm",
+			"rarity": "none",
+			"value": 50000,
+			"weight": 8,
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"L",
+				"U21MF",
+				"U21RD",
+				"U21ST"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 2枪",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "10/20",
+			"source": "u21gs",
+			"firearm": true
+		},
+		{
+			"name": "Scattergun",
+			"type": "R",
+			"weaponCategory": "firearm",
+			"rarity": "none",
+			"value": 25000,
+			"weight": 8,
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"property": [
+				"AF",
+				"U21CP",
+				"U21MF",
+				"U21RD",
+				"U21ST",
+				"2H"
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"{@bold Capacity}: 2枪",
+						"{@bold Misfire}: 3"
+					]
+				}
+			],
+			"range": "15/30",
+			"source": "u21gs",
+			"firearm": true
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "U21BR",
+			"source": "u21gs",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Broken",
+					"entries": [
+						"破损的枪支在修复之前不能开火。要修复坏掉的枪械，你可以用一个行动来尝试工匠的工具能力检查，其DC等于10加上武器的基本失火分数。一旦成功，该武器就不再被认为是坏的。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21CP",
+			"source": "u21gs",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Capacity",
+					"entries": [
+						"枪支的容量是指它一次可以容纳的子弹数量。当枪支的发射次数与它的容量相等时，在再次发射前必须重新装弹。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21MF",
+			"source": "u21gs",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Misfire",
+					"entries": [
+						"如果你的枪械攻击的自然卷轴落在或低于你所使用的枪械的失火分数，你就会遭受失火。你的攻击没有命中，你在攻击中使用的任何弹药都被消耗掉了，你的枪也就坏了。你必须在使用枪支前修复它。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21RD",
+			"source": "u21gs",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Reload",
+					"entries": [
+						"重新装填枪支会取代你用枪支进行的下一次攻击，重新装填枪支中的弹药，直到它的容量。如果你愿意，你可以用一个动作来重新装填你的枪支。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21ST",
+			"source": "u21gs",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Scatter",
+					"entries": [
+						"具有此属性的火器在一个圆锥体中射出弹丸，以达到其远距离的增量。锥形范围内的所有生物必须做一个灵巧救赎（DC等于8+射手的灵巧修饰+射手的熟练修饰），如果救赎失败则受到全部伤害，如果成功则受到一半伤害。在枪械短距离范围之外的生物在这个蓄力动作上有优势。如果射手不精通枪械，所有的生物都会以优势的方式尝试蓄力投掷。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "U21SL",
+			"source": "u21gs",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Silenced",
+					"entries": [
+						"发射时，消音武器不会比弓箭发出更多的噪音。"
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Acrobatics Harness",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Desperado"
+					]
+				}
+			],
+			"entries": [
+				"滚动、躲避和闪避的劳累会对身体造成伤害。有了这个背带，你可以表演特技来躲避伤害，而对自己的压力很小。当你穿上杂技背带时，你也可以将你的熟练度修正值加到闪避卷的伤害减少部分。"
+			],
+			"source": "u21gs",
+			"featureType": [
+				"PE"
+			]
+		},
+		{
+			"name": "The Rambolier",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Gunsmith"
+					]
+				}
+			],
+			"entries": [
+				"你从来没有离开过家，没有一个像弹药库一样大的弹药储备。这个高容量、光滑的皮革手镯可以为你携带所有的东西。在佩戴兰博里尔时，你可以在每次长时间休息时制作和储存最多两发特种弹药，这些弹药会加到你当前的最大值上。"
+			],
+			"source": "u21gs",
+			"featureType": [
+				"PE"
+			]
+		},
+		{
+			"name": "Keychain Talisman",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Marksmage"
+					]
+				}
+			],
+			"entries": [
+				"你有一个挂在枪柄上的幸运符，你可以给它注入一些你的魔法。该护身符有2次充电。如果你使用 \"魔法子弹\"，你可以把它吸收到护身符中作为1次充电。之后你可以消耗1个电荷来使用护身符中的魔力子弹。以这种方式使用 \"魔弹 \"不需要消耗砂砾或弹药，因为你已经这样做来填充护身符了。"
+			],
+			"source": "u21gs:e",
+			"featureType": [
+				"PE"
+			]
+		},
+		{
+			"name": "Camouflage Tarp",
+			"prerequisite": [
+				{
+					"feature": [
+						"Trail of the Sniper"
+					]
+				}
+			],
+			"entries": [
+				"这块油布上的污渍和破损不仅能帮助你更多地融入环境，而且还能赋予它个性。每当你在隐藏状态下被受益于锁定的火器攻击击中时，你就会保持隐藏状态。一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+			],
+			"source": "u21gs:e",
+			"featureType": [
+				"PE"
+			]
+		},
+		{
+			"name": "Comfortable Duster",
+			"entries": [
+				"这辆破旧的掸子一直是你的忠实伙伴。它到处都是洞，有的地方已经破损，而且从来都不太干净，它在很多方面都像你。当你穿着你的舒适掸子时，你永远不会在不利的情况下进行能力检查或蓄力投掷。"
+			],
+			"source": "u21gs",
+			"featureType": [
+				"PE"
+			]
+		},
+		{
+			"name": "Lucky Hat",
+			"entries": [
+				"这顶帽子从一开始就和你在一起，不管你丢了多少次，它似乎总能找到回来的路。当你戴着幸运帽被攻击时，你可以把那次攻击变成不中，即使那次攻击是关键一击。你可以在每次长时间休息之间使用这个功能一次。"
+			],
+			"source": "u21gs",
+			"featureType": [
+				"PE"
+			]
+		},
+		{
+			"name": "Quality Cigar",
+			"entries": [
+				"无论你在哪里抽，这支雪茄总能给你一个安静的时间来思考。作为一项行动，你可以抽吸你的优质雪茄，以恢复1点Grit值。你可以在每次长时间的休息之间吸食优质雪茄，最多2次。"
+			],
+			"source": "u21gs",
+			"featureType": [
+				"PE"
+			]
+		},
+		{
+			"name": "Tinker's Goggles",
+			"entries": [
+				"修补工作总是让你夜不能寐，而这副护目镜一直是修补者最好的朋友。在佩戴工匠护目镜时，你可以在黑暗中正常地看东西，包括魔法和非魔法，最远距离为120英尺，而且你对失明状况免疫。此外，你在修补破损的枪支时，在修补工具的能力检查上有优势。"
+			],
+			"source": "u21gs",
+			"featureType": [
+				"PE"
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Gunslinger",
+			"source": "u21gs",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Maximum Grit"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"firearms"
+				],
+				"tools": [
+					"tinker's tools"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"insight",
+								"investigation",
+								"history",
+								"perception",
+								"sleight of hand",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item pistol|u21gs} (b) a {@item musket|u21gs} or (c) a {@item scattergun|u21gs}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"{@item Leather armor|phb}, a set of {@item tinker's tools|phb}, and 30 pieces of ammunition"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"pistol|u21gs"
+						],
+						"b": [
+							"musket|u21gs"
+						],
+						"c": [
+							"scattergun|u21gs"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"leather armor|phb",
+							"tinker's tools|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"New to this class? Start here|Gunslinger|u21gs|1",
+				"Tinkerer|Gunslinger|u21gs|1",
+				"Natural Talent|Gunslinger|u21gs|1",
+				"Grit|Gunslinger|u21gs|2",
+				"Aimed Shot|Gunslinger|u21gs|2",
+				{
+					"classFeature": "Gunslinger's Trail|Gunslinger|u21gs|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunslinger|u21gs|4",
+				"Extra Attack|Gunslinger|u21gs|5",
+				{
+					"classFeature": "Gunslinger's Trail feature|Gunslinger|u21gs|6",
+					"gainSubclassFeature": true
+				},
+				"Trick Shot|Gunslinger|u21gs|7",
+				"Ability Score Improvement|Gunslinger|u21gs|8",
+				"Evasion|Gunslinger|u21gs|9",
+				{
+					"classFeature": "Gunslinger's Trail feature|Gunslinger|u21gs|10",
+					"gainSubclassFeature": true
+				},
+				"Violent Shot|Gunslinger|u21gs|11",
+				"Ability Score Improvement|Gunslinger|u21gs|12",
+				"Personal Effects|Gunslinger|u21gs|13",
+				{
+					"classFeature": "Gunslinger's Trail feature|Gunslinger|u21gs|14",
+					"gainSubclassFeature": true
+				},
+				"Trick Up Your Sleeve|Gunslinger|u21gs|15",
+				"Ability Score Improvement|Gunslinger|u21gs|16",
+				{
+					"classFeature": "Gunslinger's Trail feature|Gunslinger|u21gs|17",
+					"gainSubclassFeature": true
+				},
+				"'Slinger's Luck|Gunslinger|u21gs|18",
+				"Ability Score Improvement|Gunslinger|u21gs|19",
+				"True Grit|Gunslinger|u21gs|20"
+			],
+			"subclassTitle": "Gunslinger's Trail"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "New to this class? Start here",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 1,
+			"type": "inset",
+			"entries": [
+				"如果你是第一次建造枪手，不要忘记查看{@book Gunslinger book|U21GS}，以快速了解这个自制武器及其所有内容。特别重要的是新的枪械武器和规则，它们取代了DMG中的对应内容。"
+			]
+		},
+		{
+			"name": "Tinkerer",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 1,
+			"entries": [
+				"从1级开始，你可以使用工匠的工具来制作（%0%），以及这些枪械的基本弹药。这些枪械的{@variantrule firearms|u21gs|rules}详见枪手文档的{@book firearms|U21GS|0|Firearms}部分。"
+			]
+		},
+		{
+			"name": "Natural Talent",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 1,
+			"entries": [
+				"从第一级开始，选择你的一个技能熟练度。在你做的任何能力检查中，如果使用你选择的熟练度，你的熟练度加成会翻倍。",
+				"此外，你在使用枪械进行攻击卷和伤害卷时获得+1的奖励。"
+			]
+		},
+		{
+			"name": "Grit",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 2,
+			"entries": [
+				"你，就像每个枪手一样，有一些东西可以让你保持冷静和镇定，即使是在最危急的情况下。从2级开始，你获得的勇气点数等于你的熟练度奖励。你所拥有的勇气点数永远不会超过你的熟练度加成。",
+				"你可以花这些积分来助长各种等级特征。你开始知道一个这样的功能。瞄准射击。当你在这个等级中获得更多的等级时，你会学到更多的此类功能。任何消耗的Grit点数都会在短期或长期休息结束后重新填满。",
+				"此外，每当你用火器攻击掷出关键一击，或者你用火器将一个生物的命中率降至0或更低时，你都会恢复1个Grit点，最多不超过你目前的最大值。如果你用关键一击将一个生物减少到0或更少的命中率，你只能恢复1个Grit点，而不是2个。",
+				"你的一些Grit特性需要你的目标做一个自救动作来抵制该特性的效果。蓄力动作的计算方法如下。",
+				{
+					"type": "abilityDc",
+					"name": "Grit",
+					"attributes": [
+						"dex"
+					]
+				}
+			]
+		},
+		{
+			"name": "Aimed Shot",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 2,
+			"entries": [
+				"从2级开始，当用枪械进行攻击时，作为攻击动作的一部分，你可以选择消耗一定数量的Grit点，直到你当前的最大值，以获得与所消耗的Grit点数量相等的攻击卷奖励。如果这次攻击命中，你也会在其伤害卷上加上所花费的Grit点数。"
+			]
+		},
+		{
+			"name": "Gunslinger's Trail",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 3,
+			"entries": [
+				"在第三级时，你可以选择反映你个人风格和信条的路径。遵循其中的一条路线可以将一个普通的持枪冒险者与一个传奇的枪手区分开来。你的选择在3级时赋予你特性，在6级、10级、14级和17级时再次赋予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Gunslinger's Trail feature",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的枪手足迹赋予的功能。"
+			]
+		},
+		{
+			"name": "Trick Shot",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 7,
+			"entries": [
+				"从第七级开始，你可以瞄准敌人身上的特定位置，只要敌人的身体有你想要瞄准的位置。当用枪械进行攻击时，你可以花费一个Grit点来增加一个基于目标位置的额外效果。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Armshot",
+							"entries": [
+								"一旦命中，目标必须做一个宪法规定的救赎动作，或者丢掉一个你选择的单一持有物品。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Headshot",
+							"entries": [
+								"一旦命中，目标必须进行宪法救赎，否则在你下一回合开始前，你的攻击将处于劣势。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Legshot",
+							"entries": [
+								"一旦被击中，目标必须做一个宪法规定的救赎动作，否则就会倒地。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Bodyshot",
+							"entries": [
+								"一旦命中，目标必须进行宪法救赎，否则在力量和灵巧的能力检查和救赎中处于劣势，直到你下一回合开始。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wingshot",
+							"entries": [
+								"一旦命中，目标必须做出宪法规定的救赎动作，否则将跌落60英尺。体型巨大或更大的生物在对这一射击进行蓄力时自动成功。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 9,
+			"entries": [
+				"从9级开始，你可以灵活地躲避某些区域效应，例如红龙的火热气息或{@spell ice storm}法术。当你受到一个允许你做一个灵巧救赎来承受一半伤害的效果时，如果你救赎成功，你就不会受到伤害，如果你失败，就只会受到一半伤害。"
+			]
+		},
+		{
+			"name": "Gunslinger's Trail feature",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 10,
+			"entries": [
+				"在10级时，你获得一个由你的枪手足迹赋予的功能。"
+			]
+		},
+		{
+			"name": "Violent Shot",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 11,
+			"entries": [
+				"从11级开始，你已经知道如果你想赢，就不能总是玩安全游戏。作为使用火器的远程攻击行动的一部分，你可以花费一个Grit点来执行暴力射击。如果你的攻击命中了，它将被视为一个关键的命中，不会恢复Grit，并且你的武器会被击碎。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Personal Effects",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 13,
+			"entries": [
+				"从13级开始，你可以选择一个特殊物品作为你的个人物品。你选择的物品会给你一个独特的奖励。如果你的个人物品丢失或被毁，它们会在你下一次长时间休息后立即被神秘地找到。",
+				{
+					"type": "inlineBlock",
+					"entries": [
+						"可用的选项清单可以在{@filter Optional Features|optionalfeatures|Feature Type=PE}页面找到。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Gunslinger's Trail feature",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 14,
+			"entries": [
+				"在14级时，你获得一个由你的枪手足迹赋予的功能。"
+			]
+		},
+		{
+			"name": "Trick Up Your Sleeve",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 15,
+			"entries": [
+				"当你达到15级的时候，不管是在地狱还是在水深火热之中，你都不会在身上不带枪的情况下去任何地方。每当你做一个{@skill Sleight of Hand}的检查来拔出或隐藏你身上的轻武器时，你可以把一个19或更低的D20卷当作20。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Gunslinger's Trail feature",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 17,
+			"entries": [
+				"在17级时，你获得一个由你的枪手足迹赋予的功能。"
+			]
+		},
+		{
+			"name": "'Slinger's Luck",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 18,
+			"entries": [
+				"从18级开始，有人发誓你已经被幸运女神亲吻过了。在你掷骰子之前，你可以选择自动成功。一旦你使用了这个功能，你必须在再次使用它之前进行长时间的休息。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "True Grit",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"level": 20,
+			"entries": [
+				"在20级时，每当你要恢复1个Grit Point时，你会恢复2个，直到你目前的最大值。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Trail of the Desperado",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Desperado",
+			"subclassSource": "u21gs",
+			"level": 3,
+			"entries": [
+				"亡命之徒用技巧、反应和快速的扳机手指进行战斗。她的动作干脆利落，比一般人所能追踪的速度更快。走这条路的人钻研他们的动作，直到他们超过正常的凡人极限。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fast Reflexes|Gunslinger|u21gs|Desperado|u21gs|3"
+				}
+			]
+		},
+		{
+			"name": "Fast Reflexes",
+			"entries": [
+				"当你在3级时选择这个线索时，你的速度在没有盔甲或穿着轻甲时增加10英尺。",
+				"此外，你可以使用你的奖励行动来修复或重新装载你所拥有的武器。"
+			],
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Desperado",
+			"subclassSource": "u21gs",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Quick Draw",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Desperado",
+			"subclassSource": "u21gs",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"到了6级，你已经学会了密切关注你的周围环境，并紧握你的枪。你将你的熟练度加到任何主动性检查上。",
+				"此外，在你没有受到惊吓的第一轮战斗中，你可以花费一个Grit点，以你的主动性+10用单手枪械进行一次攻击。此后，主动权如常进行。"
+			]
+		},
+		{
+			"name": "Dodge Roll",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Desperado",
+			"subclassSource": "u21gs",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你已经学会了从远程攻击中翻滚着离开。每当你在地面上受到来自10英尺以外的、你能看到的伤害时，你可以用你的反应来躲避进一步的攻击，移动的距离最多为你移动速度的一半，如果你至少移动了5英尺，可以减少相当于你的灵巧修饰值的伤害量。在以这种方式移动时，敌人对你的机会攻击有劣势。"
+			]
+		},
+		{
+			"name": "Fan Fire",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Desperado",
+			"subclassSource": "u21gs",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，只要你在你的回合中采取攻击行动，你就可以攻击三次，而不是两次。"
+			]
+		},
+		{
+			"name": "Improved Quick Draw",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Desperado",
+			"subclassSource": "u21gs",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，快速拔枪不再消耗砂砾。此外，你在任何主动性检查中都有优势，而且在你有意识的情况下，你无法被惊讶。"
+			]
+		},
+		{
+			"name": "Trail of the Gunsmith",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Gunsmith",
+			"subclassSource": "u21gs",
+			"level": 3,
+			"entries": [
+				"枪械师是一个古怪的神秘工匠，不惧怕冒险或亲自修改他们的枪械。他们通过改进现有的作品和制造新枪来学习。每一个新的创造都是通往更伟大事物的垫脚石。那些追随这条道路的人用他们的智慧锻造出世界上其他地方无法比拟的武器和弹药。",
+				"一些枪械师的特征要求你的目标做一个蓄力动作来抵制该特征的效果。蓄力的DC等同于你的Grit蓄力DC。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Walking Armory|Gunslinger|u21gs|Gunsmith|u21gs|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Apprentice Guncrafting|Gunslinger|u21gs|Gunsmith|u21gs|3"
+				}
+			]
+		},
+		{
+			"name": "Walking Armory",
+			"entries": [
+				"当你在3级选择这个线索时，你会制作一个机制，使你能够轻松地储存和装备你的个人枪械。你可以在手臂所及的范围内拔出任何枪械，而无需使用你的物体互动。"
+			],
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Gunsmith",
+			"subclassSource": "u21gs",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Apprentice Guncrafting",
+			"entries": [
+				"当你在3级时选择这个线索，你可以制作新的枪械，并修改你现有的枪械。单手枪以{@item pistol|u21gs}为基础，双手枪以{@item musket|u21gs}为基础，锥子枪以{@item scattergun|u21gs}为基础。",
+				"改装枪支需要1天的持续工作，每次改装。你可以在增加一个新的改装的同时删除一个现有的改装。",
+				{
+					"type": "entries",
+					"name": "Maintenance",
+					"entries": [
+						"改装枪支需要不断地调整和维护，以保持工作状态。在长时间的休息中，你可以维护一定数量的改装枪械，其数量与你的智力修饰值相同（最少为一个）。如果在长时间休息期间没有维护改装过的枪械，用该枪械进行的任何攻击卷都是不利的。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Limited Modification",
+					"entries": [
+						"你可以对枪支进行改装，改装的次数与你的智力修饰值相同（最少一次）。此外，每项改装都属于一个类别。你只能在一个特定的枪械上从每个类别中进行一次改装。",
+						"枪械的改造在改造图中显示。在3级时，你可以获得长枪管、短枪管、元素枪管的修改。随着你等级的提高，你会获得更多的修改，详见修改表。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Modifications",
+					"colLabels": [
+						"Level",
+						"Modification",
+						"Effect",
+						"Category"
+					],
+					"colStyles": [
+						"col-1",
+						"col-2",
+						"col-6",
+						"col-3"
+					],
+					"rows": [
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"3rd",
+								"Long Barrel",
+								"The firearm can make attacks up to its long range without disadvantage.",
+								"Barrel"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"3rd",
+								"Snubnose Barrel",
+								"This weapon can only make attacks up to its short range. However, on a hit, the target is knocked back 5 feet.",
+								"Barrel"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"3rd",
+								"Elemental Barrel",
+								"Damage dealt with the firearm is considered Acid, Cold, Fire, or Lightning for the purpose of overcoming resistance and immunity. You choose the damage type when you make this modification.",
+								"Barrel"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"3rd",
+								"Rune of Hardening",
+								"The gun no longer needs to be maintained in order to function properly.",
+								"Personal Touches"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"6th",
+								"Dampening Alloy",
+								"This firearm is treated as silenced.",
+								"Alloy"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"6th",
+								"Light Alloy",
+								"The firearm becomes light. This does not affect firearms with the two-handed property.",
+								"Alloy"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"6th",
+								"Nonporous Alloy",
+								"The firearm and loaded ammunition are no longer affected by being wet or submerged. You can use the firearm to make attacks normally while submerged, up to the firearm's short range.",
+								"Alloy"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"6th",
+								"Old Faithful",
+								"The misfire rating of the gun is reduced by 2.",
+								"Personal Touches"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"10th",
+								"Auto-Loader",
+								"If you do not use the firearm to make an attack during your turn, the firearm is reloaded to full capacity without requiring an action.",
+								"Reloading Mechanism"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"10th",
+								"Vampiric Weapon",
+								"You no longer have to reload your weapon, but every attack you make with the firearm deals 1 necrotic damage to you.",
+								"Reloading Mechanism"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"10th",
+								"Mechanical Reloader",
+								"The gun automatically reloads itself when its ammunition count drops to 0. After it reloads itself in this manner, the Mechanical Reloader must be reset before it is usable again. Resetting the Mechanical Reloader requires an action. You may still manually reload the gun.",
+								"Reloading Mechanism"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"10th",
+								"Tactical Sniper Scope",
+								"As an action, you may aim down the scope and make a single attack with advantage.",
+								"Personal Touches"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"14th",
+								"Piercing Ammo",
+								"Attacks made using this firearm ignore piercing resistance for the purpose of calculating damage.",
+								"Basic Ammunition"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"14th",
+								"Ricochet Ammo",
+								"Attacks made using this firearm may ricochet. If an attack hits its intended target, you may choose a single additional target within 10 feet, and make an attack roll with disadvantage against the second target. This ricochet deals {@dice 1d6} + your Dexterity modifier piercing damage. This second attack roll won't cause your weapon to misfire.",
+								"Basic Ammunition"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"14th",
+								"Corrosive Ammo",
+								"Successful attacks made using this firearm inflict an additional {@dice 1d4} acid damage.",
+								"Basic Ammunition"
+							]
+						},
+						{
+							"type": "row",
+							"style": "row-indent-first",
+							"row": [
+								"14th",
+								"Modular Design",
+								"You may modify this firearm during a short rest.",
+								"Personal Touches"
+							]
+						}
+					]
+				}
+			],
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Gunsmith",
+			"subclassSource": "u21gs",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Journeyman Guncrafting",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Gunsmith",
+			"subclassSource": "u21gs",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你达到6级时，你修改和创造武器的技能明显增强。在任何使用工匠工具的能力检查中，你的熟练度奖励都会翻倍。此外，你还学会了如何改造你的枪支，从它们周围的世界中提取潜在的魔法。从现在开始，用你改造过的枪进行的任何攻击都会被视为具有魔力，以克服阻力和免疫力。"
+			]
+		},
+		{
+			"name": "Blast Packs",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Gunsmith",
+			"subclassSource": "u21gs",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级的时候，你对奥术技术的实验使你有了一个爆炸性的、但却很有用的发现。当一个生物在你5英尺范围内移动时，你可以用你的反应在你和该生物之间引爆一个异形炸药。该生物失去了反应能力，必须做一个灵巧的蓄力动作，否则就会被爆炸击倒，而你则乘着冲击波离开该生物15英尺。你在俯卧时不能使用这个特性。",
+				"你可以在短时或长时休息中制造一个成型的炸药。不幸的是，每个炸药中的化学物质是不稳定的，只在你下一次短暂或长时间休息开始前保留其效力。"
+			]
+		},
+		{
+			"name": "Specialty Ammo",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Gunsmith",
+			"subclassSource": "u21gs",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以用奥术水晶核心为你的枪械制作特殊弹药，发射时可以被赋予某些魔法效果。每一轮特殊弹药都必须在长时间休息时制作，并且只保留其特殊效果，直到你下一次长时间休息。你可以在长时间休息时制作并储存与你的智力修饰值相等数量的特殊弹药（最少1轮）。",
+				"在给枪支装弹时，你必须声明你要给枪支装多少特种子弹（如果有的话）。一旦一发特种弹药被装入枪中，你可以在使用该枪进行的任何攻击中消耗它。你每次攻击行动只能使用一块特种弹药。当你发射子弹时，你可以从以下列表中给它注入任何效果。",
+				{
+					"type": "entries",
+					"name": "Drill Round",
+					"entries": [
+						"该回合会被刺穿的奥术光环所覆盖。当你使用这些回合对有半数或四分之三掩护的目标进行攻击时，你的攻击就像目标没有掩护一样。此外，这轮攻击在命中时造成额外的（%0%）伤害。该伤害在第17({@dice 5d6})和第20({@dice 7d6})级时，会额外增加{@dice 2d6}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Explosive Round",
+					"entries": [
+						"这一发子弹在击中目标时引爆，在10英尺半径的范围内造成火灾伤害。在此范围内的生物必须做一个灵巧的蓄力动作，否则会受到额外的{@dice 3d8}火焰伤害，或在蓄力成功时受到一半的伤害。这种伤害在第17级（2%）和第20级（3%）时，会增加额外的（1%）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flash Round",
+					"entries": [
+						"这个回合不会造成任何伤害，但会从枪管产生一个30英尺范围内的刺眼的闪光。锥形范围内的任何生物都必须进行宪法救赎，否则就会变得（%0%），直到你下一个回合结束。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Freeze Round",
+					"entries": [
+						"当该回合击中目标时，一阵冰块从撞击点扩散开来，困住5英尺内的物体。被冰冻术击中的生物必须进行宪法救赎，否则会被冰冻，受到{@dice 3d8}额外的冰冻伤害并被限制，直到下一回合结束，如果救赎成功则伤害减半。这种伤害在17级（2%）和20级（3%）的时候会额外增加（1%）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stun Round",
+					"entries": [
+						"本回合不会造成任何伤害，但任何被击中的生物必须在宪法救赎上成功，否则会跌落（%0%）并变成（%1%），直到你下一回合结束。建筑物和不死生物对本回合的效果免疫。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Masterwork Guncrafting",
+			"source": "u21gs",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Gunsmith",
+			"subclassSource": "u21gs",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你在工作台上和战场上的长期辛勤工作得到了回报，使你对修补和枪械制作有了大师级的把握。每当你会遭遇失误，你可以选择忽略它。在再次使用这个能力之前，你必须完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Trail of the Sniper",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Sniper",
+			"subclassSource": "u21gs:e",
+			"level": 3,
+			"entries": [
+				"狙击手利用分析和观察技能从远处干掉敌人。狙击手会耐心地观察他们的目标几个小时，等到环境中所有合适的条件、定位和他们自己的反应都很理想时再行动。当他们出手时，他们会在地面上留下飞溅的痕迹，并在空中发出雷鸣般的声音，而不会被人发现。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Watcher's Eye|Gunslinger|u21gs|Sniper|u21gs:e|3"
+				}
+			]
+		},
+		{
+			"name": "Watcher's Eye",
+			"entries": [
+				"当你在3级时沿着这条线索前进，你会变得善于发现威胁，即使他们试图隐藏。你的远程武器攻击无视半掩体和四分之三掩体。",
+				"此外，你可以采取{@action Search}的行动作为奖励行动。"
+			],
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Sniper",
+			"subclassSource": "u21gs:e",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Lock On",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Sniper",
+			"subclassSource": "u21gs:e",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"6级时，你进一步磨练你的致命准确性。你可以使用行动或额外行动对你看到的生物进行智慧（（%0%））。DC等于它的灵巧得分。如果你成功了，在接下来的一分钟内，你对该目标的下一次远程武器攻击会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"一旦命中，该武器会造成基于你的枪手等级一半的额外伤害（四舍五入）。"
+					]
+				},
+				"通过采取行动来使用这个特征，攻击获得以下额外的好处。",
+				{
+					"type": "list",
+					"items": [
+						"攻击卷有优势。",
+						"如果枪支失火，你可以不予理会。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Positional Shooting",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Sniper",
+			"subclassSource": "u21gs:e",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级时，你学会了最佳和稳定的射击位置。俯卧时，你在进行灵巧（（%0%））检查时获得优势，并且你能够在进行远程武器攻击卷时不处于劣势。",
+				"此外，当你被你所知道的敌人的远程武器攻击所瞄准时，你可以使用反应来立即俯卧，对攻击施加不利条件。"
+			]
+		},
+		{
+			"name": "Terminal Shot",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Sniper",
+			"subclassSource": "u21gs:e",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你学会了如何用一枪击中多个目标。你可以在使用造成穿刺伤害的枪械进行攻击卷轴之前花费1个砂砾点。如果攻击命中，你可以在你的第一个范围增量内对目标后方直线上的每一个生物进行攻击卷。只有最初的攻击可以失误。"
+			]
+		},
+		{
+			"name": "Pink Mist",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Sniper",
+			"subclassSource": "u21gs:e",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"17级时，击中敌人的要害对你来说变得很自然。你使用火器的关键范围增加到18-20。",
+				"此外，你不再需要进行智慧({@skill Perception})检查来使用你的锁定功能。"
+			]
+		},
+		{
+			"name": "Trail of the Marksmage",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Marksmage",
+			"subclassSource": "u21gs:e",
+			"level": 3,
+			"entries": [
+				"对于那些不了解黑火药发现的人来说，火器可能显得很神秘。观察者可以看到火苗从金属管中迸发出来，误以为是某种巫师的法术。一些枪手接受了这种误解，将他们的枪法与神秘的能力结合起来。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Gunslinger|u21gs|Marksmage|u21gs:e|3"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"entries": [
+				"当你达到3级时，你获得了施放法术的能力。关于施法的一般规则见（%0%），关于（%1%）的第11章。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Cantrips",
+							"entries": [
+								"你从巫师法术列表中学习两个你选择的咒语。你在10级的时候可以学习另一个你选择的巫师咒语。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spell Slots",
+							"entries": [
+								"印记法师的施法表显示了你有多少个法术槽来施展你的一级及以上的法术。要施展其中一个法术，你必须消耗一个该法术等级或更高的法术槽。当你完成长期休息时，你会重新获得所有消耗的法术槽。",
+								"例如，如果你知道一级法术（%0%），并且有一个一级和一个二级法术槽可用，你可以使用任何一个槽来施放（%1%）。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spells Known of 1st-Level and Higher",
+							"entries": [
+								"你会三个自选的一级巫师法术，其中两个必须从巫师法术列表中的施法和转化法术中选择。",
+								"马克斯法师法术表的 \"已知法术 \"一栏显示了你何时学会更多1级或以上的巫师法术。每一个法术都必须是你所选择的变身或转化法术，并且必须是你有法术槽的等级。例如，当你达到这个等级的第7级时，你可以学习一个1级或2级的新法术。",
+								"你在8级、14级和20级学到的法术可以来自任何魔法流派。",
+								"每当你在这个等级中获得一个等级，你可以用你在巫师法术列表中选择的另一个法术替换你所知道的一个巫师法术。新的法术必须是你有法术槽的等级，而且必须是一个魔法或转化法术，除非你替换的是你在8、14或20级获得的法术。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spellcasting Ability",
+							"entries": [
+								"智力是你的巫师法术的施法能力，因为你通过专门的学习和记忆来学习你的法术。每当法术提到你的法术能力时，你就会使用你的智力。此外，在设定你所施展的巫师法术的蓄力DC时，以及在使用巫师法术进行攻击时，你都会使用你的智力修饰。",
+								{
+									"type": "abilityDc",
+									"name": "Spell",
+									"attributes": [
+										"int"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "Spell",
+									"attributes": [
+										"int"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Marksmage",
+			"subclassSource": "u21gs:e",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Flash Reload",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Marksmage",
+			"subclassSource": "u21gs:e",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你在3级的时候加入这个线索，你能够用从乙太拉来的弹药给你的枪支装弹。当你给你的枪械装弹时，你可以选择用临时弹药来装弹，这种弹药在消逝前只能使用1分钟。这种弹药会造成武力伤害，而不是枪械的常规伤害类型。你可以使用这个功能的次数与你的智力修饰值相等（最少一次）。当你完成长时间的休息后，你会重新获得任何已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Magic Bullet",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Marksmage",
+			"subclassSource": "u21gs:e",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你已经学会了超越自然法则的限制来射击你的对手。如果你的火器已经准备好发射，你可以选择在1级时花费1个砂砾点来施放（%0%），将准备好的一轮弹药作为法术成分消耗。咒语的伤害类型反而是所使用的枪械的伤害类型。这不计入你的学习法术列表，也不占用一个法术槽。"
+			]
+		},
+		{
+			"name": "Now You Don't",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Marksmage",
+			"subclassSource": "u21gs:e",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以消失以逃避伤害，并重新出现以还击。当你受到伤害时，你可以用你的反应将自己传送到一个你能看到的无人的空间，并可以在不利的情况下进行一次火器攻击。一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Scribing Grit",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Marksmage",
+			"subclassSource": "u21gs:e",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"14级时，通过你的枪，你学会了用你的精髓来标记你的敌人。当你用 \"瞄准射击\"、\"技巧射击 \"或 \"暴力射击 \"击中一个生物时，你对它的法术攻击有优势，而它对你在下一回合结束前施放的法术的下一次蓄力攻击有劣势。"
+			]
+		},
+		{
+			"name": "Spell Blasting",
+			"source": "u21gs:e",
+			"className": "Gunslinger",
+			"classSource": "u21gs",
+			"subclassShortName": "Marksmage",
+			"subclassSource": "u21gs:e",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级的时候，你能够给你的子弹注入法术。作为一个动作，你可以花费与所使用的法术等级相等的砂砾点数，将一个一级或更高等级的法术注入你所持有的一轮弹药中。你如常施法，但法术效果在弹药被用于攻击后才会发生。你只能将影响一个生物的法术或有一个区域的法术（如球体、云或圆柱体）注入其中。弹药可以保持法术效果，直到你的下一次长时间休息结束，或者在一次攻击中使用并击中为止。",
+				"如果你施展了一个影响一个生物的法术，下次被灌输的弹药用攻击击中一个生物时，攻击会像正常一样造成伤害，然后你对目标解析法术的效果。如果你灌注的法术是有区域的，那么生物不需要被击中就可以生效。相反地，你从你所针对的空间或生物中解出法术的效果。如果弹药击中了一个生物，伤害就会如常发生。一旦你解决了咒语的效果，咒语就会从弹药中消失。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Trail of the Desperado",
+			"subclassFeatures": [
+				"Trail of the Desperado|Gunslinger|u21gs|Desperado|u21gs|3",
+				"Quick Draw|Gunslinger|u21gs|Desperado|u21gs|6",
+				"Dodge Roll|Gunslinger|u21gs|Desperado|u21gs|10",
+				"Fan Fire|Gunslinger|u21gs|Desperado|u21gs|14",
+				"Improved Quick Draw|Gunslinger|u21gs|Desperado|u21gs|17"
+			],
+			"source": "u21gs",
+			"shortName": "Desperado",
+			"className": "Gunslinger",
+			"classSource": "u21gs"
+		},
+		{
+			"name": "Trail of the Gunsmith",
+			"subclassFeatures": [
+				"Trail of the Gunsmith|Gunslinger|u21gs|Gunsmith|u21gs|3",
+				"Journeyman Guncrafting|Gunslinger|u21gs|Gunsmith|u21gs|6",
+				"Blast Packs|Gunslinger|u21gs|Gunsmith|u21gs|10",
+				"Specialty Ammo|Gunslinger|u21gs|Gunsmith|u21gs|14",
+				"Masterwork Guncrafting|Gunslinger|u21gs|Gunsmith|u21gs|17"
+			],
+			"source": "u21gs",
+			"shortName": "Gunsmith",
+			"className": "Gunslinger",
+			"classSource": "u21gs"
+		},
+		{
+			"classSource": "u21gs",
+			"name": "Trail of the Sniper",
+			"subclassFeatures": [
+				"Trail of the Sniper|Gunslinger|u21gs|Sniper|u21gs:e|3",
+				"Lock On|Gunslinger|u21gs|Sniper|u21gs:e|6",
+				"Positional Shooting|Gunslinger|u21gs|Sniper|u21gs:e|10",
+				"Terminal Shot|Gunslinger|u21gs|Sniper|u21gs:e|14",
+				"Pink Mist|Gunslinger|u21gs|Sniper|u21gs:e|17"
+			],
+			"source": "u21gs:e",
+			"shortName": "Sniper",
+			"className": "Gunslinger"
+		},
+		{
+			"classSource": "u21gs",
+			"name": "Trail of the Marksmage",
+			"subclassTableGroups": [
+				{
+					"colLabels": [
+						"Cantrips Known",
+						"Spells Known"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"1st",
+						"2nd",
+						"3rd",
+						"4th"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Trail of the Marksmage|Gunslinger|u21gs|Marksmage|u21gs:e|3",
+				"Flash Reload|Gunslinger|u21gs|Marksmage|u21gs:e|3",
+				"Magic Bullet|Gunslinger|u21gs|Marksmage|u21gs:e|6",
+				"Now You Don't|Gunslinger|u21gs|Marksmage|u21gs:e|10",
+				"Scribing Grit|Gunslinger|u21gs|Marksmage|u21gs:e|14",
+				"Spell Blasting|Gunslinger|u21gs|Marksmage|u21gs:e|17"
+			],
+			"source": "u21gs:e",
+			"shortName": "Marksmage",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"className": "Gunslinger"
+		}
+	]
+}

@@ -1,0 +1,177 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KCoDR",
+				"abbreviation": "KCoDR",
+				"full": "Circle of Dreams (Revised)",
+				"authors": [
+					"Korvinagor"
+				],
+				"convertedBy": [
+					"Korvinagor"
+				],
+				"version": "1.0",
+				"url": "https://homebrewery.naturalcrit.com/share/KsO7r7HiWcDb"
+			}
+		],
+		"dateAdded": 1682424910,
+		"dateLastModified": 1682424910,
+		"_dateLastModifiedHash": "acb74fba0c"
+	},
+	"subclass": [
+		{
+			"name": "Circle of Dreams (Revised)",
+			"source": "KCoDR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"shortName": "Dreams (Revised)",
+			"subclassFeatures": [
+				"Circle of Dreams|Druid||Dreams (Revised)|KCoDR|2",
+				"Hearth of Moonlight and Shadow|Druid||Dreams (Revised)|KCoDR|6",
+				"Hidden Paths|Druid||Dreams (Revised)|KCoDR|10",
+				"Walker in Dreams|Druid||Dreams (Revised)|KCoDR|14"
+			],
+			"subclassSpells": [
+				"Prestidigitation",
+				"Gentle Repose",
+				"Suggestion",
+				"Confusion",
+				"Divination",
+				"Scrying",
+				"Teleportation Circle",
+				"Dream"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of Dreams",
+			"source": "KCoDR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (Revised)",
+			"subclassSource": "KCoDR",
+			"level": 2,
+			"entries": [
+				"梦境圈（Circle of Dreams）的德鲁伊来自与精灵界及其梦幻般领域有着紧密联系的地区。德鲁伊对自然界的守护使他们与善良的精灵自然结盟。这些德鲁伊致力于让世界充满梦幻般的奇迹。他们的魔法能治愈伤口，给沮丧的心带来快乐，他们守护的领域是闪闪发光、丰饶的地方，梦境和现实在那里交织在一起，疲惫的人可以找到休息的地方。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Dreams (Revised)|KCoDR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Balm of the Summer Court|Druid||Dreams (Revised)|KCoDR|2"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "KCoDR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (Revised)",
+			"subclassSource": "KCoDR",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of Dreams feature}",
+				"你变得能够利用精灵界一部分的魔法，使你能够使用特定的法术。你学会了{@spell prestidigitation}零级法术。",
+				"当你达到特定德鲁伊等级时，你将获得下表中的法术。它们对你来说算作德鲁伊法术，你始终准备好它们，但它们不计入你每天准备的法术总数。",
+				{
+					"type": "table",
+					"caption": "Circle of Dreams Spells",
+					"colLabels": [
+						"Druid Level",
+						"Circle Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell gentle repose}, {@spell suggestion}"
+						],
+						[
+							"5th",
+							"{@spell hypnotic pattern}, {@spell revivify}"
+						],
+						[
+							"7th",
+							"{@spell confusion}, {@spell divination}"
+						],
+						[
+							"9th",
+							"{@spell scrying}, {@spell teleportation circle}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Balm of the Summer Court",
+			"source": "KCoDR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (Revised)",
+			"subclassSource": "KCoDR",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of Dreams feature}",
+				"你被夏宫的祝福所充盈。你是一股能量之源，能够为受伤者提供休息。你拥有一池精灵能量，数量为你德鲁伊等级的{@dice d6}s。",
+				"作为一个奖励动作，你可以选择在你视线范围内的一个生物，并消耗等于你德鲁伊等级一半或更少的那些骰子数量。投掷这些骰子并将结果相加。目标回复等于总和的生命值。目标还会获得每个消耗的骰子1点临时生命值。",
+				"当你完成一次长休时，或者将一次野性变身用作一个动作时，你将恢复所有已消耗的骰子。"
+			]
+		},
+		{
+			"name": "Hearth of Moonlight and Shadow",
+			"source": "KCoDR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (Revised)",
+			"subclassSource": "KCoDR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of Dreams feature}",
+				"家可以是你所在的任何地方，让你调用(`Gloaming Court`)的阴影力量来隐藏和庇护自己。作为一个动作，你可以消耗一个野性变身使用次数，在一个半径为30英尺的范围内散发隐形的伪装魔法，持续1小时，或者直到你失去行动能力或死亡。完全掩盖会阻止这个效果。",
+				"在这个空间中，你和你的盟友在敏捷度检定中获得+5加值({@skill Stealth})，在感知检定中也获得+5加值({@skill Perception})，并且即使在明显的视线中，如果在该回合没有花费移动，你们可以尝试{@action Hide}，神奇地融入环境中。以这种方式隐藏的生物在离开该区域时会自动显露出来。在这个效果范围内，你可以选择的任何光线在范围外是不可见的。",
+				"如果在休息时使用，这个魔法会以你触摸的空间点为中心，持续整个休息时间或直到你离开该区域，而且不需要使用野性变身。"
+			]
+		},
+		{
+			"name": "Hidden Paths",
+			"source": "KCoDR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (Revised)",
+			"subclassSource": "KCoDR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of Dreams feature}",
+				"你可以使用一些精灵使用的隐藏、神奇的路径，瞬间穿越空间。作为一个奖励动作，你可以传送到你能看到的一个未被占据的空间，最远距离为60英尺。你也可以使用你的动作将自己和一个你触摸到的愿意的生物传送到你能看到的一个未被占据的空间，最远距离为30英尺。",
+				"你可以使用这个特性的次数等于你的感知调整值（最少1次），当你完成一次长休时，或者你将两次野性变身作为一个动作来使用时，你会恢复所有已用次数。"
+			]
+		},
+		{
+			"name": "Walker in Dreams",
+			"source": "KCoDR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Dreams (Revised)",
+			"subclassSource": "KCoDR",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of Dreams feature}",
+				"凡间（Feywild）的魔法自然地随着你走到哪里。每次长休时，你可以施放你的一个环（Circle）法术，而无需消耗法术槽或使用材料组件，并将其施法时间改为1个行动。",
+				"如果你以这种方式施放{@spell teleportation circle}，你可以打开一个传送门，前往你在当前存在平面上最后一次完成长休的地点，而不是打开一个通往永久{@spell teleportation circle}的传送门。",
+				"此外，你可以随意施展{@spell dream}（以你为信使），而且它总是为你准备好的。"
+			]
+		}
+	]
+}

@@ -1,0 +1,864 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "XesusHomebrew",
+				"abbreviation": "XH",
+				"full": "Xesu's Homebrew",
+				"authors": [
+					"Xesu"
+				],
+				"convertedBy": [
+					"Xesu"
+				],
+				"version": "1.1.0",
+				"url": "https://xesu.moe"
+			}
+		],
+		"dateAdded": 1598287787,
+		"dateLastModified": 1598287787,
+		"_dateLastModifiedHash": "179008a8b6"
+	},
+	"class": [
+		{
+			"name": "Samurai",
+			"source": "XesusHomebrew",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"con",
+				"wis"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"tools": [
+					"Shakuhachi, or any {@item musical instrument|PHB} of your choice"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"animal handling",
+								"history",
+								"insight",
+								"intimidation",
+								"perception",
+								"persuasion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"a {@item longsword|phb}",
+					"(a) {@item leather armor|phb} or (b) {@item chain mail|phb}, or (c) {@item traveler's clothes|phb} and any {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
+					"(a) a {@item shortsword|phb}, (b) a  {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}, (c) a {@item glaive|phb}, (d)  a {@item greatsword|phb} or (e) a  a {@item greatclub|phb}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"_": [
+							"longsword|phb"
+						]
+					},
+					{
+						"a": [
+							"leather armor|phb"
+						],
+						"b": [
+							"chain mail|phb"
+						],
+						"c": [
+							"traveler's clothes|phb",
+							{
+								"equipmentType": "instrumentMusical"
+							}
+						]
+					},
+					{
+						"a": [
+							"shortsword|phb"
+						],
+						"b": [
+							"longbow|phb",
+							"arrows (20)|phb"
+						],
+						"c": [
+							"glaive|phb"
+						],
+						"d": [
+							"greatsword|phb"
+						],
+						"e": [
+							"greatclub|phb"
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"simple",
+						"martial"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"acrobatics",
+									"athletics",
+									"animal handling",
+									"history",
+									"insight",
+									"intimidation",
+									"perception",
+									"persuasion",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
+			"classFeatures": [
+				"Martial Virtues|Samurai|XesusHomebrew|1",
+				"Weapon Master|Samurai|XesusHomebrew|1",
+				"Posture|Samurai|XesusHomebrew|2",
+				"Fighting Spirit|Samurai|XesusHomebrew|2",
+				"Parry|Samurai|XesusHomebrew|2",
+				{
+					"classFeature": "Code of Honor|Samurai|XesusHomebrew|3",
+					"gainSubclassFeature": true
+				},
+				"Mindful Sense|Samurai|XesusHomebrew|4",
+				"Ability Score Improvement|Samurai|XesusHomebrew|4",
+				"Extra Attack|Samurai|XesusHomebrew|5",
+				"Tireless Spirit|Samurai|XesusHomebrew|5",
+				{
+					"classFeature": "Code feature|Samurai|XesusHomebrew|6",
+					"gainSubclassFeature": true
+				},
+				"Living Force|Samurai|XesusHomebrew|7",
+				"Ability Score Improvement|Samurai|XesusHomebrew|8",
+				"Skilled|Samurai|XesusHomebrew|9",
+				{
+					"classFeature": "Code feature|Samurai|XesusHomebrew|10",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Samurai|XesusHomebrew|12",
+				"Overhead Strike|Samurai|XesusHomebrew|13",
+				{
+					"classFeature": "Code feature|Samurai|XesusHomebrew|14",
+					"gainSubclassFeature": true
+				},
+				"Relentless Spirit|Samurai|XesusHomebrew|15",
+				"Ability Score Improvement|Samurai|XesusHomebrew|16",
+				"Strength Before Death|Samurai|XesusHomebrew|18",
+				"Ability Score Improvement|Samurai|XesusHomebrew|19",
+				"Fullmoon Slash|Samurai|XesusHomebrew|20"
+			],
+			"subclassTitle": "Code of Honor",
+			"fluff": [
+				{
+					"name": "Samurai",
+					"type": "section",
+					"source": "XesusHomebrew",
+					"entries": [
+						"武士是一个依靠坚定的战斗精神来战胜敌人的战士。武士的决心几乎是牢不可破的，武士道路上的敌人有两个选择：要么屈服，要么战死。",
+						{
+							"type": "entries",
+							"name": "Honorable Warrior",
+							"entries": [
+								"这些战士遵循一种被称为武士道的准则，指导他们的荣誉之路；这些战士是剑术的大师，他们使用剑的优雅和无与伦比的技巧。为自己或他人使用他们的技能，这些战士会战斗到死，不会投降。有些传说说他们经过多年的研究和冥想，甚至能够控制微妙的魔法。武士道的追随者。武士在多年的训练中获得了独特的能力，它的战斗风格、行为准则和武器熟练程度是众所周知的，能够在一次拔刀中击败敌人，或迅速地持续几次攻击，并指挥其盟友取得胜利。武士不仅能用卡塔纳刀致命，还擅长使用几种武器，但倾向于终生坚持使用一种风格作为其标志。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Samurai",
+							"entries": [
+								"你的角色为什么遵循武士道准则，或者为什么不遵循？他们为什么决定去旅行？他们是为主人而战，为自己而战，还是为了保护某人？他们是逃离他们的主人，还是他们的主人被杀，现在他们寻求报复？他们的荣誉和他们的生命一样重要吗？",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照这些建议，你可以迅速成为一名武士。首先，体质应该是你最高的能力得分，其次是智慧。第二，选择士兵背景。第三，选择长弓、皮甲和探险家的背包作为你的起始装备。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Martial Virtues",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 1,
+			"entries": [
+				"当你没有穿戴任何盔甲或盾牌时，你的盔甲等级等于10+你的体质修正值+你的智慧修正值。",
+				"当使用盔甲时，你可以使用你的智慧修改器而不是你的灵巧修改器。你忽略了修改器对中型盔甲的限制。"
+			]
+		},
+		{
+			"name": "Weapon Master",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 1,
+			"entries": [
+				"从1级开始，你可以掌握Katana，使你能够最大限度地利用它的潜力。你可以在4级、8级、12级、16级和19级掌握其他武器。",
+				{
+					"type": "entries",
+					"name": "Katana",
+					"entries": [
+						"长剑对你来说算作精巧的武器。你可以在行动、额外行动或反应中拔出它或将它入鞘，而没有额外的交互代价。",
+						{
+							"type": "entries",
+							"name": "Posture Bonus",
+							"entries": [
+								"你获得1个装甲等级"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wakizashi",
+					"entries": [
+						"当你进行双武器战斗时，你可以使用短剑和长剑的组合，并在第二次攻击的伤害上加上你的能力修改值。",
+						{
+							"type": "entries",
+							"name": "Posture Bonus",
+							"entries": [
+								"你不会挑起机会攻击。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Yumi",
+					"entries": [
+						"作为一个奖励动作，如果你在同一回合内将一个生物的命中率降低到0，你可以用长弓进行一次远程武器攻击。用它进行远距离攻击不会造成劣势。",
+						{
+							"type": "entries",
+							"name": "Posture Bonus",
+							"entries": [
+								"你的攻击卷获得+2，但护甲等级为-1。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Naginata",
+					"entries": [
+						"当你挥舞着强光剑时，其他生物进入你的范围时，会挑起你的一次机会攻击。",
+						{
+							"type": "entries",
+							"name": "Posture Bonus",
+							"entries": [
+								"你在机会攻击中获得优势。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nodachi",
+					"entries": [
+						"在你用大剑进行近战攻击之前，你可以选择对攻击卷进行-5的惩罚。如果攻击命中，你会在攻击的伤害上增加+10。",
+						{
+							"type": "entries",
+							"name": "Posture Bonus",
+							"entries": [
+								"在伤害卷上加上你的智慧修正值。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tetsubou",
+					"entries": [
+						"你的大棒会造成1d12而不是1d8的伤害。每当你在使用大棒的近战攻击卷中获得优势并命中时，如果两个d20卷中较低的一个也会命中目标，你可以将目标击倒在地。用大棒抵挡会使攻击者在下一次攻击卷中处于劣势。",
+						{
+							"type": "entries",
+							"name": "Posture Bonus",
+							"entries": [
+								"你可以用大棒进行招架。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Posture",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 2,
+			"entries": [
+				"在2级时，你可以使用一个奖励动作来获得姿态。这将根据你所持的武器给你一个特定的奖励，直到你下一个回合开始。姿态奖励在武器大师功能中显示。你需要掌握一种武器，以获得其姿态奖励。"
+			]
+		},
+		{
+			"name": "Fighting Spirit",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 2,
+			"entries": [
+				"在第2级时，你会得到与你的智慧修正值相等的精神点数。花费其中的一个点可以让你执行特殊的技术。这些点数在长时间休息后可以恢复。"
+			]
+		},
+		{
+			"name": "Parry",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 2,
+			"entries": [
+				"在2级时，如果你持有或能拔出你精通的精巧武器，而另一个生物用近战攻击打你，你可以用你的反应将你的精通加成加到你的攻击力上，有可能使攻击错过你。",
+				"当你进行招架时，你可以选择花费1个精神点来进行完美招架，并将你的熟练度加成加倍以获得额外的攻击力。如果你这样做并抵挡了攻击，你在下一次近战武器攻击中获得优势，如果它是针对挑起招架的生物。"
+			]
+		},
+		{
+			"name": "Code of Honor",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以选择你的荣誉准则。你的选择在3级时赋予你特性，在6级、10级和14级时再次赋予你特性。"
+			]
+		},
+		{
+			"name": "Code feature",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 6,
+			"entries": [
+				"在6级时，你从你选择的荣誉法则中获得一个特性。"
+			]
+		},
+		{
+			"name": "Code feature",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 10,
+			"entries": [
+				"在10级时，你从你选择的荣誉守则中获得一个特征。"
+			]
+		},
+		{
+			"name": "Code feature",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 14,
+			"entries": [
+				"在14级时，你从你选择的荣誉法典中获得一个特征。"
+			]
+		},
+		{
+			"name": "Mindful Sense",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 4,
+			"entries": [
+				"在4级时，你可以花费1个精神点和一个额外的行动来获得30英尺的盲视，持续1分钟，但在持续时间内，你在这个范围外是盲的。你可以再次使用一个额外的行动来完成这个效果。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和通常一样，你不能用这个功能将能力得分提高到20分以上。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Tireless Spirit",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 5,
+			"entries": [
+				"从5级开始，如果你的命中率低于你最大命中率的50%，你会获得以下好处。",
+				{
+					"type": "entries",
+					"name": "Breath of Life",
+					"entries": [
+						"每当你将一个生物的命中率降至0或造成关键打击时，你就会重新获得1点精神力。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Breath of Nature",
+					"entries": [
+						"在11级时，你的武器攻击在掷出18-20的情况下可以获得关键打击。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rapid strike",
+					"entries": [
+						"在17级时，如果你在你的回合中采取了攻击行动，并且在对其中一个目标的攻击卷上有优势，你可以放弃该卷的优势，对该目标进行额外的武器攻击，作为同一行动的一部分。你每回合最多可以这样做一次。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Living Force",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 7,
+			"entries": [
+				"在第7级时，花费1个精神点和额外行动来给你选择的武器灌注，并获得以下效果之一，持续1分钟。",
+				{
+					"type": "entries",
+					"name": "Fire Weapon",
+					"entries": [
+						"使用一个油壶（1sp）为武器注入火焰。该武器在攻击卷上有+1的加成，并造成额外的1d4的火焰伤害。在你5英尺范围内的敌人对智慧（感知）检查有劣势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Divine Blessing",
+					"entries": [
+						"使用洒下的圣水或银粉（1gp）为武器注入神圣的祝福。你的武器会变得有魔力，在持续时间内攻击卷和伤害卷都会有+1的奖励。如果反常者、天人、元素、精灵、恶魔或亡灵被此武器击中，他们在攻击卷中处于劣势，生物不能被他们迷惑或惊吓，直到他们下一回合结束。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Vortex Strike",
+					"entries": [
+						"使用一种稀有的香（5gp）为武器注入风的漩涡。下次你在这个效果结束前用武器击中一个生物时，你的攻击会有放逐的效果。如果这次攻击将目标降低到50点或更少的命中率，你就将其驱逐。如果目标是来自于与你所在的不同的存在平面，那么目标就会消失，回到它的母平面。如果目标是你所在位面的原生生物，则该生物会消失在一个无害的半位面。在那里，目标会失去行动能力。它在那里停留1分钟，这时目标会重新出现在它离开的空间里，或者在最近的未被占用的空间里（如果该空间被占用）。如果攻击不足以驱逐目标，那么它的行为就像在{@spell Confusion|PHB}法术的作用下一样，直到它的下一个回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Skilled",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 9,
+			"entries": [
+				"9级时，从你的技能熟练度中选择三项。你可以在任何使用所选技能的能力检查中加入你的智慧修正值。",
+				"它不能与类似的功能叠加。"
+			]
+		},
+		{
+			"name": "Overhead Strike",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 13,
+			"entries": [
+				"在13级时，花费1个精神点，你的额外行动，对一个生物进行一次双手近战武器攻击。随即，你可以对同一生物进行另一次攻击，也是双手攻击，并取得优势。如果第二次攻击有优势，你可以将目标击倒在地，如果两次d20卷中较低的一次也会击中目标。"
+			]
+		},
+		{
+			"name": "Relentless Spirit",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 15,
+			"entries": [
+				"在15级时，如果你的死亡救赎或对被迷惑或惊吓的救赎失败，你可以花费1个精神点来代替成功。"
+			]
+		},
+		{
+			"name": "Strength Before Death",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 18,
+			"entries": [
+				"在18级时，如果你受到的伤害使你的命中率降至0，你可以使用你的反应和你所有剩余的精神点数来延迟昏迷，并且你可以立即进行一个额外的回合。在那个额外的回合中，当你的命中率为0时，受到的伤害会导致死亡救赎失败，而三次死亡救赎失败仍然可以杀死你。当额外回合结束时，如果你的命中率仍然为0，你就会昏迷。"
+			]
+		},
+		{
+			"name": "Fullmoon Slash",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"level": 20,
+			"entries": [
+				"在20级时，当你使用带有砍击伤害的武器以优势进行攻击卷轴时，如果是关键一击，并且两个d20卷轴中最低的一个也会击中目标，那么你对该生物的攻击伤害加倍。如果两个d20的得分都是关键一击，那么伤害是三倍，并重新获得你所有花费的精神点数。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Protection",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Yojimbo",
+			"subclassSource": "XesusHomebrew",
+			"level": 3,
+			"entries": [
+				"当你在第3级选择这个代码时，你可以花费1个精神点和你的反应，迫使在你5英尺范围内针对你以外的人的攻击改为针对你。",
+				"此外，你可以把帮助行动作为一个额外的行动。"
+			]
+		},
+		{
+			"name": "Duty",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Yojimbo",
+			"subclassSource": "XesusHomebrew",
+			"level": 6,
+			"entries": [
+				"在6级时，当你的命中率低于你最大命中率的50%，并且一个敌对的生物对你30英尺内的盟友采取攻击行动时，你会恢复1个精神点。"
+			]
+		},
+		{
+			"name": "Entrust",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Yojimbo",
+			"subclassSource": "XesusHomebrew",
+			"level": 10,
+			"entries": [
+				"在10级的时候，如果你执行了一个完美招架，你10英尺范围内的盟友在下一次攻击卷或蓄力投掷时可以获得额外的D6，直到你下一个回合结束。"
+			]
+		},
+		{
+			"name": "Zanmato",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Yojimbo",
+			"subclassSource": "XesusHomebrew",
+			"level": 14,
+			"entries": [
+				"在14级时，花费1个精神点和你的行动，选择5英尺内的一个生物。目标必须做一个灵巧的蓄力动作（DC8+你的熟练度加成+你的智慧修改器）。如果该生物的CR不高于你的智慧修饰，并且没有成功，该生物将被立即处决。如果它的生命值高于你的智慧修饰值并且失败了，那么你会造成10d8的砍伤，如果该生物成功了，则会造成一半的伤害。你不会因为用这个技能将一个生物的命中率降低到0而恢复精神点数。"
+			]
+		},
+		{
+			"name": "Vigilant",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Ronin",
+			"subclassSource": "XesusHomebrew",
+			"level": 3,
+			"entries": [
+				"当你在3级时选择这个代码，当你有意识时，你会获得一个+5的主动性奖励。如果你被惊吓，你可以放弃这个奖励而不被惊吓。",
+				"此外，其他生物不会因为被你隐藏而在针对你的攻击卷中获得优势。"
+			]
+		},
+		{
+			"name": "Ascending Carp",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Ronin",
+			"subclassSource": "XesusHomebrew",
+			"level": 6,
+			"entries": [
+				"在6级时，当你的命中率低于你最大命中率的50%时，你可以进行一次近战武器攻击，作为执行招架的反应之一。如果攻击者在10英尺之外，你可以通过向前移动5英尺来缩小差距。如果你选择用这种攻击解除武装，如果攻击者用两只手握住它的武器，攻击卷不会得到不利条件。"
+			]
+		},
+		{
+			"name": "Descending Carp",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Ronin",
+			"subclassSource": "XesusHomebrew",
+			"level": 10,
+			"entries": [
+				"在10级时，如果你执行了一个完美招架，并且你的下一次攻击卷轴击中了触发招架的生物，那么目标必须使用它的反应（如果有的话），从你身边移动15英尺并受到惊吓。"
+			]
+		},
+		{
+			"name": "Dragon Flash",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Ronin",
+			"subclassSource": "XesusHomebrew",
+			"level": 14,
+			"entries": [
+				"14级时，花费2点精神力和你的行动力，在你30英尺范围内选择最多五个你能看到的生物。用长剑对每个目标进行一次近战武器攻击。一旦命中，目标受到6d10的砍击伤害。然后你可以传送到一个你能看到的、在你击中或未击中的目标之一的5英尺内的无人空间。你不会因为用这个动作打出关键一击或将生物的命中率降低到0而获得精神点数。"
+			]
+		},
+		{
+			"name": "Supress Presence",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Dishonored",
+			"subclassSource": "XesusHomebrew",
+			"level": 3,
+			"entries": [
+				"当你在3级时选择了这个代码，你的纪律性和对细节的关注使你在隐秘的情况下表现出色。每当你进行灵巧（隐身）检查时，你都会获得相当于你的智慧修正值的检查奖励。"
+			]
+		},
+		{
+			"name": "Deathblow",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Dishonored",
+			"subclassSource": "XesusHomebrew",
+			"level": 3,
+			"entries": [
+				"同样在3级时，如果你被隐藏在15英尺范围内的生物，你可以花费1个精神点来保持隐藏，同时你向它移动，花费的移动量与平常一样。如果你这样做，你可以用精巧的武器对该生物进行一次近战攻击，造成相当于你武士等级一半的d6的额外伤害。即使在你清晰可见的情况下，你也不会被发现，直到那次攻击结束。"
+			]
+		},
+		{
+			"name": "Bloodsmoke",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Dishonored",
+			"subclassSource": "XesusHomebrew",
+			"level": 6,
+			"entries": [
+				"6级时，当你的命中率低于最大命中率的50%时，当你将一个生物的命中率降为0时，你也会将受害者喷射的血液变成烟雾，使你能够自动隐藏。烟雾云的半径为5英尺，阻挡视线。黑暗视觉无法看穿它。"
+			]
+		},
+		{
+			"name": "Flowing Water",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Dishonored",
+			"subclassSource": "XesusHomebrew",
+			"level": 10,
+			"entries": [
+				"在10级时，如果你执行了一个完美招架，在你的下一次近战武器攻击时或之后，你可以选择将自己从当前位置传送到你能看到的30英尺内的任何无人空间。你只能带着你的装备。"
+			]
+		},
+		{
+			"name": "Blink",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Dishonored",
+			"subclassSource": "XesusHomebrew",
+			"level": 14,
+			"entries": [
+				"在14级时，你可以花费1个精神点和一个额外行动，将自己从当前位置传送到你能看到的30英尺内的任何无人空间。你只能带着你的装备。如果目标区域至少有轻微的遮蔽，并且你被隐藏起来，你可以继续隐藏，并且可以对目标区域15英尺内的生物进行死亡打击。如果目标区域没有被遮蔽，你仍然可以对目标区域5英尺内的生物进行死亡打击。你不需要花费额外的精神点数来执行此功能的死亡打击。"
+			]
+		},
+		{
+			"name": "Cursed Weapon",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Fushigiri",
+			"subclassSource": "XesusHomebrew",
+			"level": 3,
+			"entries": [
+				"当你在3级选择这个代码时，你选择的一件武器会被诅咒。你无法摆脱这个武器，失去它或摧毁它。令人费解的是，它总是以这样或那样的方式回到你身边。",
+				"每次你用你的诅咒武器做伤害卷时，你会额外增加1d6的坏死伤害，但你也会收到这个伤害。",
+				"在上瘾中，你每次将一个生物的命中率降低到0时，可以恢复1点疲惫。"
+			]
+		},
+		{
+			"name": "Soul Reaping",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Fushigiri",
+			"subclassSource": "XesusHomebrew",
+			"level": 3,
+			"entries": [
+				"同样在3级时，你可以花费1个精神点，用你的诅咒武器收割活人的灵魂。在这个回合中，你用你的诅咒武器对非亡灵生物进行的所有武器攻击都会造成额外的1d10坏死伤害。在该回合结束时，你会对所造成的坏死伤害进行同样数量的治疗。"
+			]
+		},
+		{
+			"name": "Empowered Cursed Weapon",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Fushigiri",
+			"subclassSource": "XesusHomebrew",
+			"level": 6,
+			"entries": [
+				"6级时，当你的命中率低于最大命中率的50%时，你的诅咒武器会造成1d10的坏死伤害，而不会造成反冲伤害。"
+			]
+		},
+		{
+			"name": "Projected Force",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Fushigiri",
+			"subclassSource": "XesusHomebrew",
+			"level": 10,
+			"entries": [
+				"在10级时，如果你执行了一个完美的招架，并且你用你的诅咒武器的下一次攻击击中了触发招架的生物，它就会为你治疗相同数量的伤害。"
+			]
+		},
+		{
+			"name": "Corpse Posession",
+			"source": "XesusHomebrew",
+			"className": "Samurai",
+			"classSource": "XesusHomebrew",
+			"subclassShortName": "Fushigiri",
+			"subclassSource": "XesusHomebrew",
+			"level": 14,
+			"entries": [
+				"在14级时，当你用你的诅咒武器杀死一个中型或小型人形生物时，你可以花费1个精神点来给目标灌输生命的污秽模仿，将其提升为僵尸（DM有该生物的游戏统计）。",
+				"在你的每个回合中，如果你用这个法术制造的任何生物在你的60英尺范围内，你可以使用一个额外的行动在精神上指挥该生物（如果你控制多个生物，你可以同时指挥任何或所有生物，对每个生物发出同样的命令）。你决定该生物在下一回合将采取什么行动，以及它将在哪里移动，或者你可以发出一个一般性的命令，比如说守卫一个特定的房间或走廊。如果你不发出任何命令，该生物只对敌对的生物进行自我防御。一旦下达命令，该生物就会继续遵循它，直到它的任务完成。",
+				"该生物在你的控制下持续24小时，之后它不再服从你给它的任何命令。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Yojimbo",
+			"shortName": "Yojimbo",
+			"source": "XesusHomebrew",
+			"subclassFeatures": [
+				"Protection|Samurai|XesusHomebrew|Yojimbo|XesusHomebrew|3",
+				"Duty|Samurai|XesusHomebrew|Yojimbo|XesusHomebrew|6",
+				"Entrust|Samurai|XesusHomebrew|Yojimbo|XesusHomebrew|10",
+				"Zanmato|Samurai|XesusHomebrew|Yojimbo|XesusHomebrew|14"
+			],
+			"className": "Samurai",
+			"classSource": "XesusHomebrew"
+		},
+		{
+			"name": "Ronin",
+			"shortName": "Ronin",
+			"source": "XesusHomebrew",
+			"subclassFeatures": [
+				"Vigilant|Samurai|XesusHomebrew|Ronin|XesusHomebrew|3",
+				"Ascending Carp|Samurai|XesusHomebrew|Ronin|XesusHomebrew|6",
+				"Descending Carp|Samurai|XesusHomebrew|Ronin|XesusHomebrew|10",
+				"Dragon Flash|Samurai|XesusHomebrew|Ronin|XesusHomebrew|14"
+			],
+			"className": "Samurai",
+			"classSource": "XesusHomebrew"
+		},
+		{
+			"name": "Dishonored",
+			"shortName": "Dishonored",
+			"source": "XesusHomebrew",
+			"subclassFeatures": [
+				"Supress Presence|Samurai|XesusHomebrew|Dishonored|XesusHomebrew|3",
+				"Deathblow|Samurai|XesusHomebrew|Dishonored|XesusHomebrew|3",
+				"Bloodsmoke|Samurai|XesusHomebrew|Dishonored|XesusHomebrew|6",
+				"Flowing Water|Samurai|XesusHomebrew|Dishonored|XesusHomebrew|10",
+				"Blink|Samurai|XesusHomebrew|Dishonored|XesusHomebrew|14"
+			],
+			"className": "Samurai",
+			"classSource": "XesusHomebrew"
+		},
+		{
+			"name": "Fushigiri",
+			"shortName": "Fushigiri",
+			"source": "XesusHomebrew",
+			"subclassFeatures": [
+				"Cursed Weapon|Samurai|XesusHomebrew|Fushigiri|XesusHomebrew|3",
+				"Soul Reaping|Samurai|XesusHomebrew|Fushigiri|XesusHomebrew|3",
+				"Empowered Cursed Weapon|Samurai|XesusHomebrew|Fushigiri|XesusHomebrew|6",
+				"Projected Force|Samurai|XesusHomebrew|Fushigiri|XesusHomebrew|10",
+				"Corpse Posession|Samurai|XesusHomebrew|Fushigiri|XesusHomebrew|14"
+			],
+			"className": "Samurai",
+			"classSource": "XesusHomebrew"
+		}
+	]
+}

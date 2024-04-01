@@ -1,0 +1,6937 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLARo",
+				"abbreviation": "LLARo",
+				"full": "Alternate Rogue",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle#9021"
+				],
+				"version": "2.1.1",
+				"color": "eaab30",
+				"url": "https://www.gmbinder.com/share/-N8o6KduyOA2qhUGBQqA",
+				"targetSchema": "1.2"
+			},
+			{
+				"json": "LLARoE",
+				"abbreviation": "LLARoE",
+				"full": "Alternate Rogue Expanded",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle#9021"
+				],
+				"version": "2.1.1",
+				"url": "https://www.gmbinder.com/share/-NJ8-9uVQcpeQLxLx5RS",
+				"color": "eaab30",
+				"targetSchema": "1.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"LL:DE": "Devious Exploit",
+			"FS:ARo": "Fighting Style; Alternate Rogue",
+			"LL:1DE": "1st Degree Exploit",
+			"LL:2DE": "2nd Degree Exploit",
+			"LL:3DE": "3rd Degree Exploit",
+			"LL:4DE": "4th Degree Exploit",
+			"LL:5DE": "5th Degree Exploit",
+			"LL:BOOM": "Saboteur Explosives"
+		},
+		"dateAdded": 1657295680,
+		"dateLastModified": 1703955607,
+		"_dateLastModifiedHash": "50c17d1c0c"
+	},
+	"class": [
+		{
+			"name": "Alternate Rogue",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@item blowgun|phb|blowguns}",
+					"{@item hand crossbow|phb|hand crossbows}",
+					"{@item scimitar|phb|scimitars}",
+					"{@item rapier|phb|rapiers}",
+					"{@item shortsword|phb|shortswords}",
+					"{@item whip|phb|whips}"
+				],
+				"tools": [
+					"{@item thieves' tools|PHB}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"insight",
+								"intimidation",
+								"investigation",
+								"perception",
+								"performance",
+								"persuasion",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 4
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item rapier|phb}, (b) {@item scimitar|phb} or (c) a {@item shortsword|phb}",
+					"(a) a {@item shortbow|phb} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) a {@item shortsword|phb}",
+					"(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
+					"{@item Leather armor|phb}, two {@item dagger|phb|daggers}, and {@item thieves' tools|phb}"
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"rapier|phb"
+						],
+						"b": [
+							"shortsword|phb"
+						]
+					},
+					{
+						"a": [
+							"shortbow|phb",
+							"arrows (20)|phb"
+						],
+						"b": [
+							"shortsword|phb"
+						]
+					},
+					{
+						"a": [
+							"burglar's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						],
+						"c": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"Leather armor|phb",
+							{
+								"item": "dagger|phb",
+								"quantity": 2
+							},
+							"thieves' tools|phb"
+						]
+					}
+				]
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Devious Exploits",
+					"featureType": [
+						"LL:DE"
+					],
+					"progression": [
+						0,
+						2,
+						2,
+						2,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						7,
+						7,
+						8,
+						8,
+						8,
+						8
+					]
+				}
+			],
+			"multiclassing": {
+				"requirements": {
+					"dex": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"acrobatics",
+									"athletics",
+									"deception",
+									"insight",
+									"intimidation",
+									"investigation",
+									"perception",
+									"performance",
+									"persuasion",
+									"sleight of hand",
+									"stealth"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"{@item thieves' tools|PHB}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Sneak Attack",
+						"Exploits Known",
+						"Exploit Die",
+						"Exploit Dice"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							0,
+							0,
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								]
+							},
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								]
+							},
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								]
+							},
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								]
+							},
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								]
+							},
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								]
+							},
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								]
+							},
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								]
+							},
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								]
+							},
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								]
+							},
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							5
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Sneak Attack|Alternate Rogue|LLARo|1|LLARo",
+				"Expertise|Alternate Rogue|LLARo|1|LLARo",
+				"Thieves' Cant|Alternate Rogue|LLARo|1|LLARo",
+				"Cunning Action|Alternate Rogue|LLARo|2|LLARo",
+				"Devious Exploits|Alternate Rogue|LLARo|2|LLARo",
+				{
+					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|3|LLARo",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Rogue|LLARo|4|LLARo",
+				"Cunning Strike|Alternate Rogue|LLARo|5|LLARo",
+				"Uncanny Dodge|Alternate Rogue|LLARo|5|LLARo",
+				{
+					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|7|LLARo",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Rogue|LLARo|8|LLARo",
+				"Evasion|Alternate Rogue|LLARo|9|LLARo",
+				"Reliable Talent|Alternate Rogue|LLARo|10|LLARo",
+				"Ruthless|Alternate Rogue|LLARo|11|LLARo",
+				"Ability Score Improvement|Alternate Rogue|LLARo|12|LLARo",
+				{
+					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|13|LLARo",
+					"gainSubclassFeature": true
+				},
+				"Blindsense|Alternate Rogue|LLARo|14|LLARo",
+				"Slippery Mind|Alternate Rogue|LLARo|15|LLARo",
+				"Ability Score Improvement|Alternate Rogue|LLARo|16|LLARo",
+				{
+					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|17|LLARo",
+					"gainSubclassFeature": true
+				},
+				"Elusive|Alternate Rogue|LLARo|18|LLARo",
+				"Ability Score Improvement|Alternate Rogue|LLARo|19|LLARo",
+				"Stroke of Luck|Alternate Rogue|LLARo|20|LLARo"
+			],
+			"subclassTitle": "Roguish Archetype",
+			"fluff": [
+				{
+					"name": "Rogue",
+					"type": "section",
+					"entries": [
+						"一名半身人示意她的同伴等待，小心翼翼地穿过地牢大厅。她把耳朵贴在门上，然后拿出一套工具，在眨眼间就打开了锁。接着，她消失在阴影中，当她的战士朋友向前踢开门时。",
+						"一个人潜伏在小巷的阴影中，而他的同伙则在准备伏击中扮演她的角色。当他们的目标\u2014\u2014一个臭名昭著的奴隶贩子\u2014\u2014经过小巷时，同伙大喊一声，贩子前来调查，刺客的刀锋在他还来不及发出声音之前割断了他的喉咙。",
+						"壓抑住一笑，一名侏儒搖擺著手指，神奇地從警衛的腰帶上取下了鑰匙圈。一瞬間，鑰匙就在她手中，牢房的門打開了，她和她的同伴們可以自由逃脫了。",
+						"盗贼依靠技巧、隐秘和对手的弱点来在任何情况下占据上风。他们擅长找到几乎任何问题的解决方案，展示出一种资源丰富和多才多艺的能力，这是任何成功冒险队伍的基石。",
+						{
+							"type": "entries",
+							"name": "Skill and Precision",
+							"entries": [
+								"盗贼们致力于掌握各种技能的同时，也努力完善他们的战斗能力，使他们拥有广泛的专业知识，很少有其他角色可以匹敌。许多盗贼专注于潜行和欺骗，而其他一些则完善在地牢环境中有用的技能，比如攀爬、发现和解除陷阱，以及开锁。",
+								"在战斗中，盗贼更注重狡诈而非蛮力。一名盗贼宁愿进行一次精准的打击，将攻击准确地放在对方最脆弱的地方，而不是用一连串的攻击来消耗对手。盗贼几乎有一种超自然的本领来避开危险，而一些人学会了魔法技巧来补充他们的其他能力。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Shady Living",
+							"entries": [
+								"每个城镇和城市都有自己的恶棍。大多数恶棍都符合该职业的最糟糕刻板印象，以盗贼、刺客、扒手和骗子为生。通常，这些无赖会组织成盗贼行会或犯罪家族。许多恶棍独自行动，但即使他们有时也会招募学徒来帮助他们进行欺诈和抢劫。一些恶棍通过做锁匠、侦探或灭鼠工来谋生，这在一个存在着恶鼠\u2014\u2014甚至是人鼠\u2014\u2014出没的世界里是一项危险的工作。",
+								"作为冒险者，盗贼们在法律的两边都有人。有些是彻头彻尾的罪犯，决定在财宝堆中寻找财富，而另一些则选择冒险生活来逃避法律的制裁。有些人学会并完善了他们的技能，专门潜入古代遗迹和隐藏的地下室寻找财宝。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Rogue",
+							"entries": [
+								"在创建你的(*rogue*)盗贼角色时，考虑角色与法律的关系。你是否有犯罪记录\u2014过去或现在？你是在逃离法律还是在逃离愤怒的盗贼行会头目？还是你离开行会寻找更大的风险和更丰厚的回报？是贪婪驱使你冒险，还是其他欲望或理想？",
+								"是什么触发了你离开之前的生活？是一次巨大的骗局或抢劫出了差错，迫使你重新评估自己的职业？也许你很幸运，一次成功的抢劫让你得到了逃离贫困生活所需的财富。是漫游的冲动最终将你带离家园？也许你突然发现自己与家人或导师断绝联系，不得不寻找新的生活支持方式。或者你结识了一个新朋友（*adventuring party*的另一名成员），他向你展示了利用你特殊才能谋生的新可能性。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照以下建议，您可以快速创建一个游荡者。首先，敏捷应该是您最高的能力值。如果您想在调查方面表现出色，或者打算选择奥术戏法师职业分支，那么智力应该是您的次高能力值。如果您打算强调欺骗和社交互动，那么选择魅力。其次，选择{@background charlatan}背景。"
+									]
+								}
+							]
+						}
+					],
+					"page": 94,
+					"source": "LLARo"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"人们常常忘记，探险进入尘封的古墓的整个目的是为了带回那里隐藏的宝藏。战斗只是愚人之举。死人无法花光他们的财富。"
+							],
+							"by": "Barnabas Bladecutter"
+						},
+						"当蛮力无法完成任务，或者魔法不可用或不合适时，盗贼会站到前台。凭借与潜行、诡计和欺骗相关的技能，盗贼可以以其他角色难以模仿的方式解决麻烦。",
+						"一些转而从事冒险的流氓是以前的罪犯，他们决定躲避怪物比继续逃避法律更可取。另一些是职业杀手，在合同之间寻找能够利用他们天赋的有利机会。还有一些人只是热爱战胜一切阻碍的挑战所带来的刺激。",
+						"在冒险中，一个(`Rogue`)盗贼很可能会采取外表谨慎的方式\u2014\u2014很少有盗贼喜欢战斗\u2014\u2014但却对战利品有着贪婪的渴望。在盗贼的心目中，大多数时候，与生物交战并不是为了杀死它，而是为了成为其财宝的新主人。",
+						"以下部分探讨了成为一名游荡者意味着什么，您可以利用这些内容来为您的角色增添深度。",
+						{
+							"type": "entries",
+							"name": "Guilty Pleasures",
+							"entries": [
+								"大多数(%)盗贼(rogues)所做的事情都围绕着获取财宝并阻止他人做同样的事情。在实现这些目标方面几乎没有什么阻碍，除了许多(%)盗贼(rogues)被一种冲动所吸引，这种冲动会混淆他们的思维\u2014\u2014一种无法抗拒的需求，必须被满足，即使这样做是冒险的。",
+								"一个游荡者的罪恶快感可能是获得一个实物，某种体验，或者在某些时候的行为方式。一个游荡者可能无法抵挡银制战利品，即使这些战利品挂在城堡卫兵的脖子上。另一个可能无法在城市里度过一天而不偷几个钱包，只是为了保持技艺。",
+								"当机会出现时，你的盗贼角色无法抗拒的诱惑是什么？即使屈服于它可能会给你和你的同伴带来麻烦。",
+								{
+									"type": "table",
+									"caption": "Guilty Pleasures",
+									"colLabels": [
+										"{@dice d6}",
+										"Pleasure"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"大型宝石"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"一个漂亮脸庞上的微笑"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"一个新的戒指给你的手指 (Ring of Power)"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"挫败某人自尊的机会"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"最好的食物和饮料"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"添加到你的珍稀硬币收藏中 (Adding to your collection of exotic coins)"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Adversaries",
+							"entries": [
+								"自然而然，那些执行法律的人注定会遇到那些违法的人，而至少有一张通缉令上会有罕见的流氓。除此之外，流氓经常会与犯罪分子接触，无论是出于选择还是必要。其中一些人也可能成为对手，他们可能比城市警卫队的普通成员更难对付。",
+								"如果你的角色背景故事中还没有包括这样的人物，你可以与你的DM合作，想出一个对手为何出现在你生活中的原因。也许有人想利用你进行邪恶目的，而你一直受到他人的监视，现在才刚刚被你发现。这样的事件可能成为即将到来的冒险的基础。",
+								"你的游荡者角色有一个同样是罪犯的对手吗？如果有的话，这种关系是如何影响你的生活的？",
+								{
+									"type": "table",
+									"caption": "Adversaries",
+									"colLabels": [
+										"{@dice d6}",
+										"Adversary"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"曾经在你所服务的海盗船上的船长；你所谓的继续前进，船长称之为叛变。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"一个你无意中向其提供错误信息的特工大师，导致错误目标的暗杀。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"当地盗贼行会的头目，想让你加入组织或离开镇子 (Thieves' Guild)。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"一个使用非法手段获取杰作的艺术收藏家 (Art Collector)"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"一个利用你作为信使来安排非法会面的栅栏(`The Fence`)"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你曾经下注的一个非法角斗场的老板 (illegal pit fighting arena)"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Benefactor",
+							"entries": [
+								"在生活中，很少有流氓能够在不需要别人帮助之前走得很远，这意味着之后就要欠下那个恩人一笔巨大的债。",
+								"如果你的角色背景故事中还没有包括这样的人物，你可以与你的DM合作，确定为什么一个恩人出现在你的生活中。也许你曾经受益于你的恩人所做的事情，却没有意识到是谁在帮助你，而现在这个人已经为你所知。谁在过去帮助过你，无论你当时是否知道，你认为自己应该怎样回报这个人？",
+								{
+									"type": "table",
+									"caption": "Benefactors",
+									"colLabels": [
+										"{@dice d6}",
+										"Benefactor"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"一个走私者帮助你避免被抓，但在此过程中失去了一批有价值的货物。现在你欠那个人同等价值的一个 favor。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"乞丐之王多次帮助你躲避追捕者，作为未来考虑的回报。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"一位地方法官曾因你提供有关一个强大犯罪头目的信息而让你免于入狱。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你的父母用他们的积蓄帮助你摆脱了年轻时的麻烦，现在他们陷入了贫困。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"一条龙在有机会吃掉你时没有这么做，作为回报，你答应为它留出精选的财宝。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"一位德鲁伊曾经帮助过你摆脱困境；现在你看到的任何随机动物都可能是那位恩人，也许是来讨回一个回报的。（Druid）"
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 44,
+					"source": "XGE"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Arcane Trickster",
+			"shortName": "Arcane Trickster",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassSpells": [
+				"acid splash",
+				"booming blade|tce",
+				"dancing lights",
+				"fire bolt",
+				"friends",
+				"frostbite|xge",
+				"green-flame blade|tce",
+				"gust|xge",
+				"light",
+				"mage hand",
+				"magic stone|xge",
+				"message",
+				"minor illusion",
+				"poison spray",
+				"prestidigitation",
+				"ray of frost",
+				"shocking grasp",
+				"alarm",
+				"bane",
+				"catapult|xge",
+				"cause fear|xge",
+				"charm person",
+				"color spray",
+				"comprehend languages",
+				"detect magic",
+				"disguise self",
+				"dissonant whispers",
+				"faerie fire",
+				"feather fall",
+				"find familiar",
+				"fog cloud",
+				"tenser's floating disk",
+				"grease",
+				"tasha's hideous laughter",
+				"illusory script",
+				"jump",
+				"longstrider",
+				"silent image",
+				"sleep",
+				"unseen servant",
+				"arcane lock",
+				"blindness/deafness",
+				"blur",
+				"calm emotions",
+				"crown of madness",
+				"darkness",
+				"enlarge/reduce",
+				"hold person",
+				"invisibility",
+				"knock",
+				"levitate",
+				"nystul's magic aura",
+				"magic mouth",
+				"mirror image",
+				"misty step",
+				"phantasmal force",
+				"rope trick",
+				"see invisibility",
+				"shadow blade",
+				"silence",
+				"spider climb",
+				"blink",
+				"counterspell",
+				"dispel magic",
+				"enemies abound|xge",
+				"fear",
+				"hypnotic pattern",
+				"major image",
+				"nondetection",
+				"sending",
+				"tiny servant|xge",
+				"charm monster",
+				"confusion",
+				"dimension door",
+				"freedom of movement",
+				"greater invisibility",
+				"hallucinatory terrain",
+				"phantasmal killer",
+				"Tasha's Mind Whip|tce",
+				"Detect Poison and Disease",
+				"identify",
+				"snare|xge"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"mage hand#c"
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Arcane Trickster",
+							"source": "LLARo"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
+						"{@filter Spells Known|spells|subclass=Alternate Rogue: Arcane Trickster (LLARo)}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							3,
+							6
+						],
+						[
+							3,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							12
+						],
+						[
+							4,
+							12
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Arcane Trickster",
+							"source": "LLARo"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
+						"{@filter 2nd|spells|level=2|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
+						"{@filter 3rd|spells|level=3|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
+						"{@filter 4th|spells|level=4|subclass=Alternate Rogue: Arcane Trickster (LLARo)}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Arcane Trickster|Alternate Rogue|LLARo|Arcane Trickster|LLARo|3|LLARo",
+				"Trickster's Ambush|Alternate Rogue|LLARo|Arcane Trickster|LLARo|7|LLARo",
+				"Arcane Distraction|Alternate Rogue|LLARo|Arcane Trickster|LLARo|13|LLARo",
+				"Spell Thief|Alternate Rogue|LLARo|Arcane Trickster|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Assassin",
+			"shortName": "Assassin",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Assassin|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo",
+				"Deadly Blade|Alternate Rogue|LLARo|Assassin|LLARo|7|LLARo",
+				"Impostor|Alternate Rogue|LLARo|Assassin|LLARo|13|LLARo",
+				"Death Strike|Alternate Rogue|LLARo|Assassin|LLARo|17|LLARo",
+				"Master Poisoner|Alternate Rogue|LLARo|Assassin|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Inquisitive",
+			"shortName": "Inquisitive",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Inquisitive|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo",
+				"Insightful Strike|Alternate Rogue|LLARo|Inquisitive|LLARo|7|LLARo",
+				"Adept Investigator|Alternate Rogue|LLARo|Inquisitive|LLARo|13|LLARo",
+				"Unerring Sight|Alternate Rogue|LLARo|Inquisitive|LLARo|13|LLARo",
+				"Exploit Weakness|Alternate Rogue|LLARo|Inquisitive|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Scout",
+			"shortName": "Scout",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Scout|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo",
+				"Wilderness Adept|Alternate Rogue|LLARo|Scout|LLARo|7|LLARo",
+				"Ambush Master|Alternate Rogue|LLARo|Scout|LLARo|13|LLARo",
+				"Sudden Strike|Alternate Rogue|LLARo|Scout|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Swashbuckler",
+			"shortName": "Swashbuckler",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Swashbuckler|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo",
+				"Panache|Alternate Rogue|LLARo|Swashbuckler|LLARo|7|LLARo",
+				"Elegant Warrior|Alternate Rogue|LLARo|Swashbuckler|LLARo|13|LLARo",
+				"Master Duelist|Alternate Rogue|LLARo|Swashbuckler|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Mastermind",
+			"shortName": "Mastermind",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Mastermind|Alternate Rogue|LLARo|Mastermind|LLARo|3|LLARo",
+				"Manipulative Intuition|Alternate Rogue|LLARo|Mastermind|LLARo|7|LLARo",
+				"Potent Insight|Alternate Rogue|LLARo|Mastermind|LLARo|7|LLARo",
+				"Devious Tactics|Alternate Rogue|LLARo|Mastermind|LLARo|13|LLARo",
+				"Inscrutable Mind|Alternate Rogue|LLARo|Mastermind|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Phantom",
+			"shortName": "Phantom",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Phantom|Alternate Rogue|LLARo|Phantom|LLARo|3|LLARo",
+				"Soul Trinkets|Alternate Rogue|LLARo|Phantom|LLARo|7|LLARo",
+				"Ghastly Walk|Alternate Rogue|LLARo|Phantom|LLARo|13|LLARo",
+				"Death Knell|Alternate Rogue|LLARo|Phantom|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Soulknife",
+			"shortName": "Soulknife",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Soulknife|Alternate Rogue|LLARo|Soulknife|LLARo|3|LLARo",
+				"Metaphysical Shift|Alternate Rogue|LLARo|Soulknife|LLARo|7|LLARo",
+				"Soul Strike|Alternate Rogue|LLARo|Soulknife|LLARo|7|LLARo",
+				"Shimmer|Alternate Rogue|LLARo|Soulknife|LLARo|13|LLARo",
+				"Mental Scourge|Alternate Rogue|LLARo|Soulknife|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Thief",
+			"shortName": "Thief",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Thief|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo",
+				"Supreme Sneak|Alternate Rogue|LLARo|Thief|LLARo|7|LLARo",
+				"Treasure Lore|Alternate Rogue|LLARo|Thief|LLARo|7|LLARo",
+				"Use Magic Device|Alternate Rogue|LLARo|Thief|LLARo|13|LLARo",
+				"Quick Reflexes|Alternate Rogue|LLARo|Thief|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Avenger",
+			"shortName": "Avenger",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/3",
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				7,
+				7,
+				7,
+				7
+			],
+			"subclassSpells": [
+				"bane",
+				"bless",
+				"cause fear|xge",
+				"ceremony|xge",
+				"charm person",
+				"command",
+				"compelled duel",
+				"comprehend languages",
+				"divine favor",
+				"expeditious retreat",
+				"guiding bolt",
+				"heroism",
+				"inflict wounds",
+				"sanctuary",
+				"searing smite",
+				"shield of faith",
+				"thunderous smite",
+				"unseen servant",
+				"wrathful smite",
+				"aid",
+				"augury",
+				"blindness/deafness",
+				"branding smite",
+				"darkness",
+				"invisibility",
+				"locate object",
+				"mind spike|xge",
+				"misty step",
+				"shadow blade|xge",
+				"silence",
+				"suggestion",
+				"zone of truth",
+				"bestow curse",
+				"blinding smite",
+				"clairvoyance",
+				"daylight",
+				"enemies abound|xge",
+				"fear",
+				"speak with dead",
+				"spirit shroud|tce",
+				"vampiric touch",
+				"banishment",
+				"blight",
+				"death ward",
+				"divination",
+				"freedom of movement",
+				"locate creature",
+				"staggering smite"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Avenger",
+							"source": "LLARoE"
+						}
+					],
+					"colLabels": [
+						"{@filter Spells Known|spells|subclass=Alternate Rogue: Avenger (LLARoE)}",
+						"Divine Favour",
+						"Divite Limit"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1
+						],
+						[
+							2,
+							3,
+							1
+						],
+						[
+							3,
+							3,
+							1
+						],
+						[
+							3,
+							4,
+							1
+						],
+						[
+							4,
+							4,
+							2
+						],
+						[
+							4,
+							4,
+							2
+						],
+						[
+							5,
+							5,
+							2
+						],
+						[
+							5,
+							5,
+							2
+						],
+						[
+							5,
+							5,
+							2
+						],
+						[
+							5,
+							6,
+							2
+						],
+						[
+							6,
+							6,
+							3
+						],
+						[
+							6,
+							6,
+							3
+						],
+						[
+							6,
+							7,
+							3
+						],
+						[
+							6,
+							7,
+							3
+						],
+						[
+							7,
+							7,
+							3
+						],
+						[
+							7,
+							7,
+							3
+						],
+						[
+							7,
+							8,
+							4
+						],
+						[
+							7,
+							8,
+							4
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Avenger|Alternate Rogue|LLARo|Avenger|LLARoE|3|LLARoE",
+				"Avenging Strikes|Alternate Rogue|LLARo|Avenger|LLARoE|7|LLARoE",
+				"Channel Divinity: Vow of Enmity|Alternate Rogue|LLARo|Avenger|LLARoE|7|LLARoE",
+				"Divine Step|Alternate Rogue|LLARo|Avenger|LLARoE|13|LLARoE",
+				"Hand of the Gods|Alternate Rogue|LLARo|Avenger|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Bloodknife",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Bloodknife",
+			"subclassFeatures": [
+				"Bloodknife|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE",
+				"Hellish Curse|Alternate Rogue|LLARo|Bloodknife|LLARoE|7|LLARoE",
+				"Siphon Vitality|Alternate Rogue|LLARo|Bloodknife|LLARoE|7|LLARoE",
+				"Vile Curse|Alternate Rogue|LLARo|Bloodknife|LLARoE|13|LLARoE",
+				"Touch of Death|Alternate Rogue|LLARo|Bloodknife|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Daredevil",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Daredevil",
+			"subclassFeatures": [
+				"Daredevil|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE",
+				"Death from Above|Alternate Rogue|LLARo|Daredevil|LLARoE|7|LLARoE",
+				"Slow Fall|Alternate Rogue|LLARo|Daredevil|LLARoE|7|LLARoE",
+				"Defy Death|Alternate Rogue|LLARo|Daredevil|LLARoE|13|LLARoE",
+				"Masterful Aerialist|Alternate Rogue|LLARo|Daredevil|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Gambler",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Gambler",
+			"subclassFeatures": [
+				"Gambler|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE",
+				"Strange Luck|Alternate Rogue|LLARo|Gambler|LLARoE|7|LLARoE",
+				"Quickdraw|Alternate Rogue|LLARo|Gambler|LLARoE|13|LLARoE",
+				"Jackpot|Alternate Rogue|LLARo|Gambler|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Ruffian",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Ruffian",
+			"subclassFeatures": [
+				"Ruffian|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE",
+				"Intimidating Blow|Alternate Rogue|LLARo|Ruffian|LLARoE|7|LLARoE",
+				"Nerves of Steel|Alternate Rogue|LLARo|Ruffian|LLARoE|7|LLARoE",
+				"Dodge & Counter|Alternate Rogue|LLARo|Ruffian|LLARoE|13|LLARoE",
+				"Ruthless Strike|Alternate Rogue|LLARo|Ruffian|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Saboteur",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Saboteur",
+			"subclassFeatures": [
+				"Saboteur|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE",
+				"Advanced Alchemy|Alternate Rogue|LLARo|Saboteur|LLARoE|7|LLARoE",
+				"Quick Chemistry|Alternate Rogue|LLARo|Saboteur|LLARoE|7|LLARoE",
+				"Sabotage|Alternate Rogue|LLARo|Saboteur|LLARoE|13|LLARoE",
+				"Hair Trigger|Alternate Rogue|LLARo|Saboteur|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Skinchanger",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Skinchanger",
+			"subclassFeatures": [
+				"Skinchanger|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE",
+				"Instinctual Strike|Alternate Rogue|LLARo|Skinchanger|LLARoE|7|LLARoE",
+				"Bestial Physique|Alternate Rogue|LLARo|Skinchanger|LLARoE|13|LLARoE",
+				"Druidic Mastery|Alternate Rogue|LLARo|Skinchanger|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Surgeon",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Surgeon",
+			"subclassFeatures": [
+				"Surgeon|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE",
+				"Cultivated Immunity|Alternate Rogue|LLARo|Surgeon|LLARoE|7|LLARoE",
+				"Surgical Strikes|Alternate Rogue|LLARo|Surgeon|LLARoE|13|LLARoE",
+				"Expert Surgeon|Alternate Rogue|LLARo|Surgeon|LLARoE|17|LLARoE"
+			]
+		},
+		{
+			"name": "Seeker",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"shortName": "Seeker",
+			"subclassFeatures": [
+				"Seeker|Alternate Rogue|LLARo|Seeker|LLARoE|3|LLARoE",
+				"Elder Relics|Alternate Rogue|LLARo|Seeker|LLARoE|7|LLARoE",
+				"Expert Archaeologist|Alternate Rogue|LLARo|Seeker|LLARoE|7|LLARoE",
+				"Greater Lore|Alternate Rogue|LLARo|Seeker|LLARoE|13|LLARoE",
+				"Ancient Lore|Alternate Rogue|LLARo|Seeker|LLARoE|17|LLARoE"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Expertise",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"expertise": [
+				{
+					"anyProficientSkill": 2
+				},
+				{
+					"anyProficientSkill": 1,
+					"anyProficientTool": 1
+				},
+				{
+					"anyProficientTool": 2
+				}
+			],
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 1,
+			"entries": [
+				"你已经掌握了一套特定的技能和能力。在1级时，选择任意两项技能熟练加点、任意两项工具熟练加点，或者一项技能和一项工具熟练加点。如果你之前不熟练，你将获得这两项选择的技能或工具熟练加点。如果你已经熟练于这些技能或工具，你可以在使用这些技能或工具进行检定时，将你的熟练加值翻倍。",
+				"随着你在这个职业中的等级提升，你可以专精于额外的技能。在第6级、第11级、第15级和第20级时，你可以选择另一个技能或工具熟练项，获得此类益处。",
+				"如果你已经将你的熟练加值翻倍添加到一个技能或工具上，你不能再次选择它来使用这个特性。"
+			]
+		},
+		{
+			"name": "Sneak Attack",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 1,
+			"entries": [
+				"从1级开始，你学会了利用敌人的弱点。每回合一次，当你用灵巧或远程武器攻击命中生物时，你可以造成额外{@dice 1d6}的伤害，只要满足以下条件之一：",
+				{
+					"type": "list",
+					"items": [
+						"你在攻击投掷中获得优势。",
+						"当你的目标（除你以外）附近5英尺有一个敌人，并且这个敌人没有被使无力化。（other than you）"
+					]
+				},
+				"如果你在攻击检定上有劣势，即使其他条件满足，你也不会获得该特性效果。",
+				"你在这个职业中的等级提升时，你的偷袭伤害将会增加，具体增加数值请参考上方盗贼表格中的偷袭一栏。"
+			]
+		},
+		{
+			"name": "Thieves' Cant",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 1,
+			"entries": [
+				"在追求你的技能时，你学会了说、理解和留言在盗贼的秘密代码中。在1级时，你学会了(Thieves' Cant)。你可以使用这种秘密的方言、行话和代码，让你能够在正常对话中隐藏信息，只有其他盗贼才能理解。",
+				"你也可以利用你对盗贼暗语的了解来书写和理解传达简短信息的秘密符号和标记。例如，你可以使用这些符号来标记一个区域为你的盗贼行会的领地，或者标记一个客栈为盗贼的避风港或者出售非法商品的地方。",
+				"{@note Alternate Feature: Secret Ciphers}",
+				"如果你的(*rogue*)盗贼不是盗贼行会的成员，或者不与文明社会的犯罪分子有关联，可以考虑用《玩家手册》中的语言学家特性来替换(*Thieves' Cant*)盗贼暗语的能力。"
+			]
+		},
+		{
+			"name": "Cunning Action",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 2,
+			"entries": [
+				"从2级开始，你的反应能力让你比大多数人移动和适应更快。选择以下两种战斗动作之一：{@action dash}，{@action disengage}，{@action hide}，或{@action use an object}。你可以在每个回合将其中一种动作作为额外动作使用。",
+				"在这个职业达到6级时，你可以在每个回合将上述的四个动作中的任意一个作为一个额外动作使用。"
+			]
+		},
+		{
+			"name": "Devious Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 3,
+			"level": 2,
+			"entries": [
+				"在2级时，你学会利用各种技巧来增强你特定的技能，无论是在战场上还是战场之外。",
+				{
+					"type": "entries",
+					"name": "Exploit Dice",
+					"page": 3,
+					"entries": [
+						"盗贼表格显示了你用来执行任何你所掌握的技能的利用骰子数量。大多数技能需要你消耗这些骰子才能使用。你每次攻击、技能检定或豁免检定只能使用一个技能，当你完成短休或长休时，你会恢复所有的利用骰子。",
+						"你的利用骰从d4开始，随着你在这个职业中的等级提升而增加大小，如盗贼表中所示。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exploits Known",
+					"page": 3,
+					"entries": [
+						"在2级时，你可以从该职业末尾的列表中选择两个自己喜欢的Exploits。Rogue表中的Exploits Known列显示了你学习更多自选Exploits的时间。为了学习一个Exploit，你必须符合它可能有的任何先决条件。",
+						"当你获得一个盗贼等级时，你可以用你选择的另一个窍门替换你已知的一个狡诈窍门。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"page": 3,
+					"entries": [
+						"如果你的某个技能要求一只生物进行豁免检定，那么这个技能的豁免检定 DC 计算如下：",
+						{
+							"type": "abilityDc",
+							"name": "Exploit save DC",
+							"attributes": [
+								"str",
+								"dex"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Roguish Archetype",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"在3级时，你从可用职业原型列表中选择一个原型，在实施盗贼能力时模仿该原型。你的原型选择在3级时为你提供特性，然后分别在7级、13级和17级再次提供特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Uncanny Dodge",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 5,
+			"entries": [
+				"从5级开始，你精湛的反射能力让你能够躲避、减少和吸收那些会让普通战士毁灭性的打击所造成的伤害。当一个你能看到的生物用攻击命中你时，你可以使用你的反应来减半你将受到的来自该攻击的伤害。"
+			]
+		},
+		{
+			"name": "Cunning Strike",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"foundryImg": "icons/weapons/daggers/dagger-ritual-crooked-crystal.webp",
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 5,
+			"entries": [
+				"即使是最小的弱点也可以被充分利用。从5级开始，当你将你的偷袭伤害加到伤害骰时，你可以放弃部分奖励来使用你所知道的一个狡诈手段，而不用消耗一个手段骰，遵循以下规则：",
+				{
+					"type": "list",
+					"items": [
+						"必须是一种狡诈的手段，你知道可以作为武器攻击的一部分使用。",
+						"你减少你的偷袭奖励伤害，数量为 Exploit 程度的 d6 数量。",
+						"如果该利用通常会造成额外伤害，那么在这种情况下使用时不会造成任何额外伤害。"
+					]
+				},
+				"例如，如果你使用这个特性在潜行攻击中使用{@optfeature dirty hit|LLARo}，你需要减少2d6的潜行攻击额外伤害，因为肮脏打击是一个二级利用，而肮脏打击不会对目标造成额外伤害。"
+			]
+		},
+		{
+			"name": "Roguish Archetype",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 7,
+			"entries": [
+				"在第7级时，你将获得你选择的职业特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与常规规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 9,
+			"entries": [
+				"从9级开始，你的本能敏捷让你能够躲避某些范围效果，比如黑龙的酸息或{@spell lightning bolt}法术。当你受到一个效果的影响，该效果允许你进行敏捷豁免来减少伤害时，如果你成功通过豁免，你将不会受到伤害；如果你未能通过，你只会受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Reliable Talent",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 10,
+			"entries": [
+				"您的技能无可指摘。从10级开始，当您进行一个使用您熟练掌握的技能或工具的能力检定，或者一个将Exploit Die添加到结果中的检定时，您将d20上的9或更低的点数视为10。"
+			]
+		},
+		{
+			"name": "Ruthless",
+			"source": "LLARo",
+			"page": 94,
+			"foundryImg": "icons/magic/water/heart-ice-freeze.webp",
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 11,
+			"entries": [
+				"从11级开始，你可以使用狡诈打击(Cunning Strike)来额外减少相当于你正在使用的Exploit等级的数量的d6骰的潜行攻击(Sneak Attack)额外伤害，并强迫目标以劣势进行豁免检定。",
+				"例如，如果你使用狡诈打击来使用肮脏打击，你会额外减少2d6的潜行攻击奖励，以对体质豁免投掷施加劣势。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与通常规则一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Roguish Archetype",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 13,
+			"entries": [
+				"在13级时，你将获得你选择的职业特性。"
+			]
+		},
+		{
+			"name": "Blindsense",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 14,
+			"entries": [
+				"你的感官已经被磨练到超自然的水平。从14级开始，如果你能听到声音，你可以感知到距离你10英尺范围内的任何隐藏生物或隐形生物的位置。",
+				"在20级时，这个特性的半径变为30英尺。"
+			]
+		},
+		{
+			"name": "Slippery Mind",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 15,
+			"entries": [
+				"你已经获得了巨大的心灵力量，可以与外域生物相媲美。从15级开始，每当你被迫进行智力、感知或魅力豁免检定时，你的检定获得一个等同于你Exploit骰的奖励。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Roguish Archetype",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 17,
+			"entries": [
+				"在17级时，你将获得你选择的职业原型的特性。"
+			]
+		},
+		{
+			"name": "Elusive",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 18,
+			"entries": [
+				"在18级时，只要你没有失去行动能力，你的敌人几乎不可能占上风。对你进行的所有攻击投掷骰都不会获得优势。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与通常一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Stroke of Luck",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"level": 20,
+			"entries": [
+				"你拥有超自然的天赋，在最需要的时候总能找到成功。达到20级时，当你投掷一颗d20进行属性检定、攻击检定或豁免检定时，你可以将骰子的结果视为20。你可以在得知投掷结果以及成功或失败后这样做。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Assassin",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你选择了专精于死亡的阴暗艺术。作为刺客，你利用隐秘、毒药和伪装来在敌人最不备时发动攻击。选择这条道路的人会成为杀手、间谍和赏金猎人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Assassin Exploits|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Assassinate|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Infiltrator|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Assassin Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature precision strike|LLARo}, {@optfeature subtle con|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature craft minor poison|LLARo}, {@optfeature crippling strike|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature craft greater poison|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Assassinate",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"foundryImg": "icons/skills/melee/strike-dagger-poison-dripping-green.webp",
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"作为刺客，当你的敌人毫无防备时，你变得更加致命。你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你进行先攻骰时，你可以消耗一个利用骰，将其投掷，并将结果加到你的先攻骰中。",
+						"在战斗中，对于还没有行动过的生物，你在武器攻击检定中获得优势。",
+						"每当你用武器攻击一个无力或被惊讶的生物，并且攻击中包含你的潜行攻击加值时，这次攻击将自动造成暴击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Infiltrator",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/equipment/head/cap-simple-leather-brown.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你擅长融入不属于你的地方。你获得伪装工具包和下毒工具包的熟练技能。",
+				"在10分钟内，你可以使用你的伪装工具包制作一个类似于死亡或昏迷人形的伪装，只要你有它的尸体。一个可疑的生物可以进行一次智力（调查）检定，检定值需达到你的利用存档 DC 以试图识破你的伪装。",
+				"最后，只要你花至少10分钟观察，就能完美地模仿任何人形生物的语言。(humanoid)"
+			]
+		},
+		{
+			"name": "Deadly Blade",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"foundryImg": "icons/weapons/daggers/dagger-poisoned.webp",
+			"page": 11,
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"当条件合适时，你在夺取生命方面有着非凡的技巧。当你造成一次重击并在该次攻击的任何伤害骰上掷出1时，你可以重新投掷那些骰子。",
+				"此外，当你用攻击命中一名生物并添加你的偷袭伤害加值时，你可以使用你的狡诈打击特性，将伤害加值减少1d6，并迫使目标进行一次针对你的利用豁免 DC 的体质豁免。如果未通过豁免，该生物将中毒直到你的下一个回合开始。"
+			]
+		},
+		{
+			"name": "Impostor",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/commodities/treasure/figurine-idol.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你几乎拥有超自然的能力，可以模仿其他生物的身份。你学会说、读、写三种额外的语言，并且每当你进行一个魅力（欺骗）检定以保持伪装时，你的检定获得一个额外加值，其数值等同于你的利用骰（Exploit Die）的一次投掷。",
+				"此外，生物在试图识破你所做的任何伪装时，对智力（调查）检定具有劣势。"
+			]
+		},
+		{
+			"name": "Master Poisoner",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你对毒药的技能甚至超过其他游荡者。你可以使用任何一个允许你制作毒药的专长，然后将毒药涂抹在武器上，作为一个奖励动作。",
+				"你也学会了{@optfeature craft advanced poison|LLARo}，但它不计入你已知的Exploits总数。"
+			]
+		},
+		{
+			"name": "Death Strike",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/equipment/head/hood-cloth-white.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Assassin",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已经成为了瞬间致命的大师。当你使用符合偷袭条件的攻击命中时，你可以选择让这次攻击自动造成暴击。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。"
+			]
+		},
+		{
+			"name": "Thief",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经磨练了自己在偷盗艺术方面的技能。虽然并非所有的(`Thieves`)盗贼都是犯罪分子，但大多数人会成为入室盗窃者、强盗、扒手和寻宝者。你的技能集使你在敏捷和隐秘方面更为突出，同时也拥有一些有助于探索危险遗迹和使用古代文物的能力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Thief Exploits|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Quick Fingers|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nimble|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Thief Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature modify device|LLARo}, {@optfeature lightstep|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature dirty hit|LLARo}, {@optfeature survey dungeon|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature forgotten knowledge|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Quick Fingers",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你擅长偷窃口袋，尤其是当目标放松警惕时。当你将你的潜行攻击加到一次近战攻击上时，你可以减少1d6的额外伤害，尝试从目标身上偷取一个物品。进行一次敏捷（巧手）检定，与目标的感知（感知）检定对抗。若成功，你可以从目标的口袋、包、袋、腰带中取走一个你选择的物品，或者是目标身上没有拿在手里的物品。",
+				"最后，你可以在你的回合使用一个奖励动作来进行敏捷（巧手）检定或使用一套工具。"
+			]
+		},
+		{
+			"name": "Nimble",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"foundryImg": "icons/environment/settlement/city-night.webp",
+			"page": 11,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你获得一个等同于你行走速度的攀爬速度，并且在不进行能力检定的情况下，可以以你正常速度的一半攀爬困难和陡峭的表面。",
+				"在计算长跳或高跳距离时，你也可以使用你的敏捷分数，代替力量分数。"
+			]
+		},
+		{
+			"name": "Supreme Sneak",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"当你以一半的速度移动时，你在进行敏捷（潜行）检定时拥有优势，并且即使只有轻微遮蔽，你也可以尝试进行隐藏。",
+				"此外，当你用攻击命中目标并添加你的潜行攻击奖励时，你可以使用狡诈打击(`Cunning Strike`)将奖励减少1d6，然后在你的回合结束前执行躲藏(`Hide`)动作，无需消耗行动。"
+			]
+		},
+		{
+			"name": "Treasure Lore",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/commodities/treasure/mask-jeweled-gold.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你擅长发现有用的信息和失落的传说。每当你进行一次获取知识、调查内部运作或评估魔法物品、宝藏或陷阱价值的能力检定时，你的检定获得一个额外加值，数值等同于你的利用骰的一次投掷。",
+				"最后，您可以使用\"使用物品\"动作来激活一个魔法物品，或者使用一个咒语卷轴或药水。"
+			]
+		},
+		{
+			"name": "Use Magic Device",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/commodities/treasure/puzzle-cube.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你已经学会了足够的魔法知识，可以在没有针对你的情况下即兴使用物品。你可以忽略对魔法物品使用的所有职业、种族、阵营和等级要求。"
+			]
+		},
+		{
+			"name": "Quick Reflexes",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/commodities/treasure/broach-lightning-gold.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Thief",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你在搜刮口袋和宝藏的时间锻炼了你的反应能力，使其接近超自然的水平。你获得额外的一个奖励行动，可以在每个回合中使用，但只能用来执行你的狡诈行动中的一个动作。",
+				"如果你不使用这个额外的奖励动作，你将获得一个额外的反应，你可以在下一个回合开始之前使用。一个效果只能触发一次反应。"
+			]
+		},
+		{
+			"name": "Arcane Trickster",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Arcane Trickster",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在大多数盗贼仅依赖精湛技能的基础上，你选择用魔法来补充你的技能。通过使用奥术法术增强你的技能和隐秘手段，你能够实现惊人的欺诈壮举。走上奥术欺诈者之路的大多数盗贼选择成为恶作剧者、窃贼、潜入者、扒手，甚至冒险家。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Alternate Rogue|LLARo|Arcane Trickster|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mage Hand Adept|Alternate Rogue|LLARo|Arcane Trickster|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 5,
+			"subclassShortName": "Arcane Trickster",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你选择奥术诡术师（Arcane Trickster）职业分支时，你学会了如何运用微弱的奥术法术来增强你的技能和天赋。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"你学会了三个战斗法术：（mage hand）和另外两个你选择的战斗法术，从这个职业的末尾的{@filter Arcane Trickster's spell list|spells|subclass=Alternate Rogue: Arcane Trickster (LLARo)}列表中选择。当你达到10级时，你还可以从这个列表中选择另一个战斗法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"奥术欺诈者施法表格显示了你可以用来施放1级及更高级法术的法术槽数量。要施放这些法术之一，你必须消耗一个等级等于或高于该法术等级的法术槽。每次你完成一次长休时，你会恢复所有已消耗的法术槽。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"你知道三个1级奥术欺诈师法术。你的施法表中的已知法术栏显示了你何时学会更多1级或更高级别的法术，这些法术的等级必须与你拥有法术位的等级相匹配。",
+						"当你升级时，你可以用奥术欺诈者法术清单中的一个法术来替换你已知的一个法术。该法术必须是你拥有法术位的等级。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智力是你作为奥术欺诈者法术的施法能力。每当一个法术提到你的施法能力时，你就使用智力。在为一项奥术欺诈者法术设定豁免 DC 或进行法术攻击检定时，你也使用你的智力修正值。",
+						{
+							"type": "abilityDc",
+							"name": "Spell save DC",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell attack modifier",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mage Hand Adept",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/magic/unholy/strike-hand-glow-pink.webp",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Arcane Trickster",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你已经掌握了有限的奥术知识。当你施放（Mage Hand）时，它获得以下额外效果：",
+				{
+					"type": "list",
+					"items": [
+						"你可以选择让光谱法师之手变得隐形。",
+						"你可以将你的法师之手作为一个奖励动作来控制。",
+						"它可以将物品放入或从另一生物携带或佩戴的容器中取出。",
+						"您可以使用您精通的任何工具集。"
+					]
+				},
+				"如果你成功进行一次敏捷（巧手）检定，结果超过目标的感知（感知）检定，你可以在不被察觉的情况下完成以下任务之一。"
+			]
+		},
+		{
+			"name": "Trickster's Ambush",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/creatures/claws/claw-curved-poison-purple.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Arcane Trickster",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以使用诡计来增强你的法术威力。如果你在施放奥术戏法师法术时对某个生物保持隐身状态，那么该生物在进行最初豁免投掷以抵抗该法术效果时，将会受到劣势。"
+			]
+		},
+		{
+			"name": "Arcane Distraction",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"foundryImg": "icons/magic/light/hand-sparks-smoke-green.webp",
+			"page": 11,
+			"subclassShortName": "Arcane Trickster",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你利用魔法在敌人的防御中制造缺口。当你结束你的法师之手移动时，若它在离一名生物5英尺范围内，你可以让它分散那个生物的注意力，直到你用它作其他用途。当一名生物被你的法师之手分散注意力时，你对该生物进行的任何武器或法术攻击投掷都获得优势。"
+			]
+		},
+		{
+			"name": "Spell Thief",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/magic/symbols/star-rising-purple.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Arcane Trickster",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"与其自己学习魔法，你可以从他人那里窃取奥术力量。当一个生物施放一个以你为目标或包括你在其范围内的法术时，你可以使用你的反应迫使它根据你的法术豁免 DC 以其施法能力进行豁免检定。如果未通过豁免检定，你可以抵消该法术对你的影响，并造成以下效果之一：",
+				{
+					"type": "list",
+					"items": [
+						"你立即恢复了与你抵消的法术等级相等的已消耗法术位等级。",
+						"你获得了那个法术的知识，只要它是你能施展的等级。你可以使用你的法术位施展那个法术，直到你进行下次长休为止。作为下次长休的一部分，你可以永久性地用被窃取的法术替换你已知的一个法术。"
+					]
+				},
+				"使用此特性后，必须完成一次长休才能再次使用它。如果你没有剩余使用次数，你可以消耗一个3级或更高级的法术位再次使用此特性。"
+			]
+		},
+		{
+			"name": "Inquisitive",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"作为典型的探寻者，你擅长揭示秘密和解开谜团。你依赖敏锐的细节观察力，同时也依赖于精湛的能力，通过阅读其他生物的言行来判断他们真正的意图。你擅长打败隐藏在普通人群中并捕食他们的生物，你对知识的掌握和敏锐的推理能力使你能够揭露和终结隐藏的邪恶。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Inquisitive Exploits|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eye for Detail|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Predictive Fighting|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Inquisitive Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature precision strike|LLARo}, {@optfeature inquisitive eye|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature exposing strike|LLARo}, {@optfeature survey dungeon|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature survey settlement|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Eye for Detail",
+			"source": "LLARo",
+			"page": 45,
+			"foundryImg": "icons/tools/scribal/lens-blue.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的洞察力是一个经过精心磨练的工具。当你进行一次智力（洞察）或智力（感知）检定时，你可以使用你的智力代替智慧。",
+				"此外，你可以利用你的狡诈行动（Cunning Action）作为回合中的奖励动作来执行搜索（Search）动作。每当你执行搜索动作时，你获得的信息相当于你花费了10分钟进行搜索。"
+			]
+		},
+		{
+			"name": "Predictive Fighting",
+			"source": "LLARo",
+			"page": 45,
+			"foundryImg": "icons/magic/perception/hand-eye-fire-blue.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你观察一种生物的战斗风格时，可以更好地预测它的防御漏洞。作为一个奖励动作，你可以观察30英尺内的一种生物。进行一次感知（洞察）属性检定，与其魅力（欺骗）属性检定对抗。如果成功，接下来一分钟内，你攻击时不需要优势也能为武器攻击添加你的偷袭伤害。所有其他偷袭规则仍然适用。如果生物在这次豁免检定中成功或失败，它会受到额外伤害，伤害类型与你的利用骰子的四次掷骰结果相同。最后，如果这次攻击的伤害将生物降至50点生命值或更少，它会倒地并且在其下一个回合开始前被眩晕。生物可以使用传奇抗性来避免这个效果。",
+				"如果你尝试对另一个生物使用这个特性，那么这个加成会立即结束对之前的目标生物。"
+			]
+		},
+		{
+			"name": "Insightful Strike",
+			"source": "LLARo",
+			"page": 45,
+			"foundryImg": "icons/sundries/scrolls/scroll-bound-skull-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的预知能力在战斗中有所增强。当你用攻击命中一只生物并添加你的潜行攻击加值时，你可以使用你的狡诈打击特性，将加值减少2d6来了解目标之一的以下信息：它的最高属性值，它的最低属性值，护甲等级，其中一个移动速度，或者其中一个特殊感官。"
+			]
+		},
+		{
+			"name": "Adept Investigator",
+			"source": "LLARo",
+			"page": 45,
+			"foundryImg": "icons/sundries/misc/pipe-wooden-straight-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的调查过程无所不包。使用调查地牢（Survey Dungeon）只需要1分钟，使用调查定居点（Survey Settlement）则需要10分钟。每次使用这些技能时，你会额外学习与你的智力调整值相等的信息数量（最少1个）。",
+				"最终，你可以使用这些（Exploits）而不消耗（Exploit Die）的次数总数等于你的智力调整值（最少一次）。当你完成一次长休后，你会恢复所有已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Unerring Sight",
+			"source": "LLARo",
+			"page": 45,
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-teal.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你的洞察力不逊于超自然生物。你获得10英尺半径的真视，当观察该半径内的任何事物时，你在感知（洞察）和智力（调查）检定中获得优势。",
+				"你的真视半径在14级时变为20英尺，在达到20级时再次增加到30英尺。"
+			]
+		},
+		{
+			"name": "Exploit Weakness",
+			"source": "LLARo",
+			"page": 45,
+			"foundryImg": "icons/sundries/misc/pipe-elegant.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Inquisitive",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你完美地利用了你敌人最脆弱的部位。当《预测战斗》(Predictive Fighting) 对一个生物生效时，你可以使用d8代替d6来计算对该生物的偷袭伤害加值。"
+			]
+		},
+		{
+			"name": "Mastermind",
+			"source": "LLARo",
+			"page": 46,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Mastermind",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"你的重点是人和他们所拥有的影响力和秘密。许多间谍、朝臣和阴谋家都追随这种原型，过着充满阴谋的生活。对你来说，文字常常是武器，就像刀剑或毒药一样，秘密和恩惠是你最喜欢的宝藏之一。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mastermind Exploits|Alternate Rogue|LLARo|Mastermind|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Master of Machinations|Alternate Rogue|LLARo|Mastermind|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Mastermind Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Mastermind",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"您在下表中指定的盗贼等级学会特定的(Exploits)。这些不计入您已知(Exploits)的总数，并且在升级时不能更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature roguish charm|LLARo}, {@optfeature eloquent speech|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature exposing strike|LLARo}, {@optfeature soothing speech|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature recruit informant|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Master of Machinations",
+			"source": "LLARo",
+			"page": 46,
+			"foundryImg": "icons/skills/targeting/crosshair-bars-yellow.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Mastermind",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经掌握了一系列技能，以帮助你的阴谋。你学会了说、读、写另外两种语言，还获得了伪装工具和伪造工具的熟练技能。",
+				"你像别人挥舞武器一样挥舞盟友。你可以将帮助动作作为一个奖励动作使用。当你使用帮助动作来帮助盟友攻击生物时，攻击目标可以在你的30英尺范围内，而不是5英尺，只要你帮助的盟友能看到或听到你。"
+			]
+		},
+		{
+			"name": "Manipulative Intuition",
+			"source": "LLARo",
+			"page": 46,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"foundryImg": "icons/creatures/eyes/slime-stalk-green.webp",
+			"subclassShortName": "Mastermind",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你擅长读懂他人的动机。当你在战斗之外花费至少1分钟与某个生物交谈或观察时，你会了解以下事实之一：",
+				{
+					"type": "list",
+					"items": [
+						"其中一个理想，羁绊，缺点，动机或立场。",
+						"对你，或者另一个生物的真实态度，或者你观察到它与之互动相同持续时间的生物。"
+					]
+				},
+				"在对一个生物使用这个特性后，直到你完成一次长休之前，你不能再对该生物使用这个特性。拥有传奇抗性的生物对这个特性免疫。"
+			]
+		},
+		{
+			"name": "Potent Insight",
+			"source": "LLARo",
+			"page": 46,
+			"foundryImg": "icons/tools/scribal/pen-steel-grey-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Mastermind",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"当你使用帮助动作来帮助盟友攻击生物时，如果他们的攻击命中，你可以使用你的反应将你的潜行攻击奖励加到伤害骰上。然而，如果你这样做，你就不能在下一回合使用潜行攻击。"
+			]
+		},
+		{
+			"name": "Devious Tactics",
+			"source": "LLARo",
+			"page": 46,
+			"foundryImg": "icons/creatures/mammals/cat-hunched-glowing-red.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Mastermind",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你对让他人处于危险中毫不犹豫。当你能看见的生物以你为目标发动攻击时，你可以使用你的反应，强迫你周围5英尺内的一只生物进行一次对抗你的Exploit Save DC的敏捷豁免检定。如果未通过，你会与该生物交换位置，它将成为攻击的目标。生物可以自愿放弃这次豁免。"
+			]
+		},
+		{
+			"name": "Inscrutable Mind",
+			"source": "LLARo",
+			"page": 46,
+			"foundryImg": "icons/creatures/mammals/elk-moose-marked-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Mastermind",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"除非你允许，否则无法通过魔法手段读取你的思想和梦想。当一只生物试图读取你的思想时，你可以通过进行一次魅力（欺骗）检定来展示虚假的思想和动机。最后，你对被魅惑和受惊吓状态免疫。"
+			]
+		},
+		{
+			"name": "Scout",
+			"source": "LLARo",
+			"page": 47,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Scout",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"与大多数(*Rogues*) 相比，你的技能是在荒野中磨练出来的。你擅长保持隐形，在盟友前面侦察，潜行追踪猎物或追捕赏金。虽然你在荒野中最为熟练，但在城市的小巷和像大多数(*Rogues*) 一样致命的地牢中，你仍然能够自给自足。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Scout Exploits|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Skirmisher|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Survivalist|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Scout Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Scout",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature arresting strike|LLARo}, {@optfeature rustic intuition|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature craft minor poison|LLARo}, {@optfeature trick shot|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature craft greater poison|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Skirmisher",
+			"source": "LLARo",
+			"page": 47,
+			"foundryImg": "icons/creatures/mammals/rabbit-movement-glowing-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Scout",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你总是在行动中，永远不会被敌人抓住破绽。当一个生物在你的5英尺范围内结束它的回合时，你可以使用你的反应移动你移动速度的一半，而不会引发机会攻击。"
+			]
+		},
+		{
+			"name": "Survivalist",
+			"source": "LLARo",
+			"page": 47,
+			"foundryImg": "icons/commodities/wood/kindling-sticks-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Scout",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经学会在世界的荒野中生存和茁壮成长。如果你还没有，你会获得自然和生存技能的熟练加值。每当你进行一次感知（生存）或智力（自然）检定时，你可以将你的熟练加值翻倍加到你的检定结果上。"
+			]
+		},
+		{
+			"name": "Wilderness Adept",
+			"source": "LLARo",
+			"page": 47,
+			"foundryImg": "icons/environment/wilderness/island.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Scout",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的步行速度增加10英尺，同时你获得了与你步行速度相等的攀爬和游泳速度。"
+			]
+		},
+		{
+			"name": "Ambush Master",
+			"source": "LLARo",
+			"page": 47,
+			"foundryImg": "icons/skills/trades/fletching-bowyery-arrow-tan.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Scout",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你可以在先攻检定中加上你的熟练加值，当你进行先攻检定时，你可以消耗一个(Exploit Die)，将其投掷，并将结果加到你的先攻检定中。",
+				"在战斗的第一轮中，你击中的第一个生物被标记为死亡。对这个目标的攻击投掷获得优势，直到你的下一个回合开始。"
+			]
+		},
+		{
+			"name": "Sudden Strike",
+			"source": "LLARo",
+			"page": 47,
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Scout",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你以安静、致命的速度攻击。当你在你的回合使用攻击动作时，你可以额外进行一次攻击作为奖励动作。即使你已经使用了潜行攻击，你也可以将潜行攻击奖励加到这次攻击上，但是你不能在同一个目标身上多次使用潜行攻击。"
+			]
+		},
+		{
+			"name": "Swashbuckler",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Swashbuckler",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"你的训练侧重于刀剑艺术，速度、优雅和魅力并重。虽然一些战士身穿沉重的盔甲，但你的战斗方式几乎看起来像一场表演。决斗者和海盗通常属于这个原型。",
+				"一名冒险家在单挑中表现出色，可以同时使用两把武器与对手战斗，同时安全地躲避对手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swashbuckler Exploits|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fancy Footwork|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Relentless Swagger|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Swashbuckler Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Swashbuckler",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature disarm|LLARo}, {@optfeature commanding presence|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature soothing speech|LLARo}, {@optfeature glancing blow|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature recruit informant|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Fancy Footwork",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/equipment/feet/shoes-simple-leaf-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Swashbuckler",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在战场上舞动，激怒你的敌人。如果你对一名生物进行近战攻击，那么在你当前回合的剩余时间内，它无法对你发动机会攻击。"
+			]
+		},
+		{
+			"name": "Relentless Swagger",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/equipment/head/hat-belted-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Swashbuckler",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你以坚定的自信和对自己以及剑术的技能的信心进行战斗。当你进行先攻骰判并且没有被偷袭时，你可以将你的魅力调整值加到你的骰判结果上。",
+				"只要你与生物在5英尺内，你的攻击投掷不需要获得优势，就可以使用你的（Sneak Attack）潜行攻击奖励，而且你周围没有其他生物，你的攻击投掷也没有劣势。使用（Sneak Attack）潜行攻击的其他规则仍然适用。"
+			]
+		},
+		{
+			"name": "Panache",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Swashbuckler",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你学会了用机智和狡猾的话语让你的敌人失去平衡。当你用攻击命中一名生物并添加你的暗杀奖励时，你可以使用你的狡诈打击特性，减少奖励值1d6，从而产生以下效果之一，直到你的下一个回合开始：",
+				{
+					"type": "entries",
+					"name": "Charm",
+					"entries": [
+						"在30英尺范围内能看到你的一只生物必须通过你的Exploit存档DC的感受力豁免检定，否则会被你魅惑，直到你下一个回合开始。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Taunt",
+					"entries": [
+						"生物必须通过一次感知豁免检定，检定 DC 为你的 Exploit 豁免 DC，否则直到你的下一个回合开始前，它对除了你以外的目标的攻击有劣势，并且不能进行机会攻击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Elegant Warrior",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/magic/movement/chevrons-down-yellow.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Swashbuckler",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你在战场上移动时展现出无可置疑的优雅。当你在回合中采取冲刺动作时，包括将其作为你狡诈行动的一部分时，针对你的机会攻击将以劣势进行。",
+				"此外，每当你进行一次力量（体操）或敏捷（杂耍）或魅力（表演）检定时，你的检定获得一个奖励，数值等同于你的利用骰（Exploit Die）的一次投掷。"
+			]
+		},
+		{
+			"name": "Master Duelist",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/skills/melee/strike-sword-slashing-red.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Swashbuckler",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"对刀术的自信让你能够将战斗中的失败转化为成功。当你未能命中攻击骰时，你可以选择将你的魅力调整值（最少+1）加到你的攻击骰中，有可能将未命中变为命中。",
+				"你可以使用这个特性的次数等于你的魅力调整值（最少为1次），每次完成短休或长休后，你都会恢复所有已用次数。"
+			]
+		},
+		{
+			"name": "Soulknife",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Soulknife",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在从事流氓艺术的人中，拥有真正心灵潜能的人是罕见的。当接受训练来释放他们内在的心灵力量时，这些流氓可以接受训练成为灵刃武士。利用他们神奇的能力，他们可以显现出纯粹心灵力量的刀刃，进行心灵交流，并通过心灵增强来增强他们相当的技能。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psionic Awakening|Alternate Rogue|LLARo|Soulknife|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psionic Blade|Alternate Rogue|LLARo|Soulknife|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Psionic Awakening",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/commodities/biological/organ-brain-pink.webp",
+			"classSource": "LLARo",
+			"page": 5,
+			"subclassShortName": "Soulknife",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你已经解锁了你心灵的奇妙潜力，并获得了超能力。你的超能力由一定数量的灵能点池表示。你拥有的灵能点数等于1 + 你的智力修正值（最少为2），当你完成短休或长休时，你会恢复所有已用掉的灵能点。你还解锁了以下奇妙的超能力：",
+				{
+					"type": "entries",
+					"name": "Mystical Skill",
+					"entries": [
+						"当你失败一个能力检定时，你可以消耗1点灵能点将你的利用骰投掷结果加到你的检定中，可能将失败变为成功。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Telepathic Link",
+					"entries": [
+						"作为一个动作，你可以消耗1点灵能点与你能看见的数量等于你的智力修正值（最少为1）的生物建立一个持续1小时的心灵联系。这些生物不需要共享一种语言，但必须能够说一种语言以进行心灵交流。在1小时结束时，你可以花费1点灵能点将你的心灵联系持续时间延长1小时。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Psionic Blade",
+			"source": "LLARo",
+			"foundryImg": "icons/skills/melee/sword-stuck-glowing-pink.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Soulknife",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你可以在一只空手中（无需动作）显现出纯粹精神能量的灵能刀刃。你的灵能刀刃使用匕首的统计数据，但它们造成的是心灵伤害而不是穿刺伤害。你可以随意让你的灵能刀刃消失，当投掷时，它们在命中或未命中后消失。当它们造成伤害时，灵能刀刃不会留下任何痕迹。",
+				"随着你获得(盗贼)Rogue等级，你的灵能之刃的伤害骰将增加，与你的开发骰大小相匹配。"
+			]
+		},
+		{
+			"name": "Metaphysical Shift",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"foundryImg": "icons/magic/movement/trail-streak-pink.webp",
+			"page": 11,
+			"subclassShortName": "Soulknife",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以利用你的心灵神秘力量在现实中改变位置。作为你的回合的一个奖励动作，你可以消耗灵能点来传送，每消耗一个灵能点可以传送20尺到你能看到的范围内的一个空位。"
+			]
+		},
+		{
+			"name": "Soul Strike",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"foundryImg": "icons/magic/unholy/beam-ringed-impact-purple.webp",
+			"page": 11,
+			"subclassShortName": "Soulknife",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的思维指引着你的刀锋。每当你使用灵能之刃进行攻击且未命中时，你可以消耗1点灵能点数，将你的利用骰投掷结果加到你的攻击骰中。",
+				"此外，当你用（Psionic Blade）攻击命中一名生物并添加你的（Sneak Attack）奖励时，你可以使用你的（Cunning Strike）特性，将奖励减少3d6并迫使该生物进行一次智力豁免。如果未通过豁免，该生物直到其下一个回合开始前无法作出反应，并且在其下一个回合只能执行以下动作中的一个：移动至全速、使用一个动作或使用一个奖励动作。"
+			]
+		},
+		{
+			"name": "Shimmer",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-power.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Soulknife",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你可以从他人的思维中抹去你的存在。作为一个动作，你可以用精神能量笼罩自己，就像你对自己施放了隐形术一样。然而，与法术不同的是，这个特性不需要你的集中力。",
+				"一旦你使用这个特性变得隐形，直到你完成一次长休才能再次使用。当你没有使用次数时，你可以消耗1点灵能点再次使用这个特性。"
+			]
+		},
+		{
+			"name": "Mental Scourge",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"foundryImg": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Soulknife",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你可以集中你的灵能之刃的力量直接打击敌人的思维。当你使用灵魂打击迫使一只生物进行一次智力豁免投掷时，你可以额外减少你的偷袭伤害奖励3d6（总共为6d6）以进一步增强这次打击。如果未通过豁免，该生物会被眩晕，直到你的下一个回合开始。"
+			]
+		},
+		{
+			"name": "Phantom",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantom",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"你与生死边界形成了神秘的联系，成为通往来世的门户。你学会利用这特殊联系从死者那里获取知识，通过沉浸在死亡的神秘力量中，获得通常与灵魂相关的奇特能力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Phantom Exploits|Alternate Rogue|LLARo|Phantom|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge of the Grave|Alternate Rogue|LLARo|Phantom|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grave Bolt|Alternate Rogue|LLARo|Phantom|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Phantom Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Phantom",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature feint|LLARo}, {@optfeature reliable skill|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature exposing strike|LLARo}, {@optfeature grasp of night|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature forgotten knowledge|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Knowledge of the Grave",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/skills/trades/academics-study-archaeology-bones.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantom",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以从阴间获得一个你选择的技能或工具熟练项，当你完成短暂或长时间休息时，你可以用另一个你选择的项替换这个熟练项。"
+			]
+		},
+		{
+			"name": "Grave Bolt",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/magic/death/projectile-skull-fire-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantom",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你将他人的痛苦和死亡转化为邪恶魔法。当你用攻击命中一名生物并添加你的偷袭伤害加值时，你可以强迫另一名你能看见且距离目标30英尺内的生物进行一次感知豁免检定，检定 DC 为你的利用存档 DC。未通过检定的生物受到一半你偷袭伤害骰数量的伤害（向上取整），并且此伤害为死灵伤害。"
+			]
+		},
+		{
+			"name": "Soul Trinkets",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"foundryImg": "icons/magic/death/skull-pile-glowing-pink.webp",
+			"subclassShortName": "Phantom",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你获得了吸取逝者灵魂能量的能力。当一个智力值在5或更高的生物在你30英尺内死亡时，你可以使用你的反应在一只空手中捕获其能量的一部分，形成一个灵魂护符。",
+				"主持人决定了小玩意的外观，但它几乎总是反映了灵魂的真实本质和价值观。",
+				"你最多可以拥有数量等于你魅力调整值的灵魂护符（最少1个），当你已经拥有最大数量的护符时，你不能再制造新的护符。",
+				"拥有一枚灵魂护符将赋予你以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你携带着(%num%)时，在死亡豁免检定和体质豁免检定中获得优势。",
+						"当你命中一次攻击并添加你的潜行攻击加值时，你可以摧毁一个灵魂护符，使该攻击造成死灵伤害，而非其正常伤害。",
+						"当一只生物未能通过对(Grave Bolt)的豁免检定时，你可以摧毁一个灵魂护符并使该生物在你的下一个回合开始前对你感到恐惧。",
+						"作为一个动作，你可以摧毁一个灵魂护符，向其中的灵魂提一个问题，就像你施放了与死者交谈一样。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ghastly Walk",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/magic/death/undead-ghost-strike-white.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantom",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你可以暂时进入死者领域。当你使用冲刺动作时，你可以变得无实体直到当前回合结束。在无实体状态下，你可以穿过生物和物体，就像它们是艰难地形一样，并且你获得一个暂时的飞行速度，为15尺。",
+				"如果你的回合结束时，你处于一个固体物体或生物内部，你会立即被移动到最近的未被占据的空间，每移动5英尺受到1d10的力量伤害。"
+			]
+		},
+		{
+			"name": "Death Knell",
+			"source": "LLARo",
+			"page": 48,
+			"foundryImg": "icons/magic/sonic/bell-alarm-red-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantom",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已经对死亡如此熟悉，以至于可以轻松地利用它的力量。当你使用(Grave Bolt)时，你可以强迫你选择的所有生物在30英尺内进行感知豁免检定，如果未通过检定，它们会受到等同于你的(Sneak Attack)奖励的死灵伤害。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次以这种方式强化墓穴箭矢（Grave Bolt）。"
+			]
+		},
+		{
+			"name": "Bloodknife",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"地狱军团有许多士兵，但没有一个比被称为血刀的更致命。血刀是地狱军队的精英战士，他们通过地狱鲜血魔法增强自己的显著技能。通过牺牲自己的生命力，他们获得了其他凡人战士无法比拟的邪恶能力。血刀擅长在敌人中制造混乱和死亡，只有当特别强大的敌人需要应对时，地狱领主们才会派遣血刀。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bloodknife Exploits|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Forked Tongue|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dread Strike|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Bloodknife Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature commanding presence|LLARo}, {@optfeature precision strike|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature martial focus|LLARoE}, {@optfeature crippling strike|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature incite violence|LLARoE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dread Strike",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以牺牲自己的生命力，用地狱魔法增强你的攻击。当你用近战武器攻击命中一名生物时，你可以消耗自己的一个生命骰来赋予你的攻击以下效果：",
+				{
+					"type": "list",
+					"items": [
+						"你不需要在攻击投掷上获得优势来符合进行偷袭攻击(Sneak Attack)的条件。所有其他的偷袭攻击规则仍然适用。",
+						"你可以选择让攻击造成死灵伤害。",
+						"如果攻击将一个敌对目标的生命值降至0点，你将恢复你用于使用这个特性的生命骰，并获得临时生命值，数值等同于你的盗贼等级。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Forked Tongue",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/unholy/demon-fanged-horned-yellow.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你学会说、读、写深渊语或地狱语中的一种，根据你的选择，你将获得以下好处：",
+				{
+					"type": "entries",
+					"name": "Abyssal",
+					"entries": [
+						"你获得恐吓技能熟练。每当你使用深渊语进行魅力（恐吓）检定时，你将d20上的7或更低的点数视为8。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Infernal",
+					"entries": [
+						"你获得(Proficiency)熟练加值于(Proficiency)说服。当你进行一个魅力（说服）检定来说服一只生物同意进行交易、签订合同或任何形式的协议时，你可以将d20上的7或更低的点数视为8。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Siphon Vitality",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/unholy/demon-female-succubus-orange.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以从你造成的痛苦中汲取生命。当你用武器攻击对抗性生物时取得了一次暴击，或将一名对抗性生物的生命值降至0时，你可以使用你的反应来恢复一个已消耗的生命骰(%num%)。"
+			]
+		},
+		{
+			"name": "Hellish Curse",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/death/skull-cattle-totem-glow-red.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你将你的刀刃注入邪恶魔法，袭击敌人的身体和灵魂。当你用近战攻击命中一个添加了你的偷袭伤害加值的生物时，你可以使用狡诈打击，减少这个加值1d6，并迫使目标根据你的利用豁免 DC 进行魅力豁免。",
+				"在一次豁免失败后，它在接下来的一分钟内无法恢复生命值。该生物可以在每个回合结束时进行一次魅力豁免检定，若成功则结束此效应。"
+			]
+		},
+		{
+			"name": "Vile Curse",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/death/projectile-skull-fire-orange.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你可以用自己的生命力增强你的邪恶魔法。当你在进行恐怖打击攻击时，使用地狱诅咒或狡诈打击，目标会自动失败对地狱诅咒或你使用的Exploit的初始豁免投掷。"
+			]
+		},
+		{
+			"name": "Touch of Death",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/death/weapon-scythe-rune-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Bloodknife",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你掌握着堪比地狱领主最强仆从的地狱魔法。每当一名生物未能通过你的地狱诅咒特性的魅力豁免检定时，它会获得一级疲劳。"
+			]
+		},
+		{
+			"name": "Daredevil",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"冒险者是寻找危险、追求近乎死亡体验的杂耍盗贼。冒险者宁愿跃过屋顶，也不愿在街上行走，因此，他们逐渐培养出一种避免死亡的本领。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Daredevil Exploits|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nimble|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Flying Strike|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Daredevil Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature aerial maneuver|LLARo}, {@optfeature lightstep|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature dirty hit|LLARo}, {@optfeature trick shot|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature survey settlement|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Nimble",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/environment/settlement/city-night.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你获得一个等同于你步行速度的攀爬速度，而且你可以在没有进行能力检定的情况下，以你一半的速度攀爬困难和陡峭的表面。此外，当计算你的远跳或高跳的距离时，你可以使用你的敏捷分数代替力量分数。"
+			]
+		},
+		{
+			"name": "Flying Strike",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/mammals/bat-giant-tattered-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你利用你空中飞行的身体动量作为武器。如果你通过空中移动至少10英尺，并在距离一个大型或更小生物5英尺内着陆，你可以使用你的动作让目标进行一次力量豁免检定，检定 DC 为你的利用豁免 DC。如果目标失败，它会受到等于你的利用骰子两次投掷的钝击伤害，并倒地。如果成功，它会受到一半伤害并保持站立。",
+				"如果你在迫使这个生物进行豁免检定时对它进行了隐藏，或者你的目标的敌人（除了你以外）在它附近5英尺内且没有失去意识，你可以将你的（Sneak Attack）偷袭伤害加到伤害骰中。"
+			]
+		},
+		{
+			"name": "Death from Above",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以从非传统的空中位置攻击你的敌人。每当你在离地面至少10英尺的空中进行武器攻击时，你的攻击投掷获得优势。",
+				"你还可以将你的敏捷调整值加到你的飞行打击(Flying Strike)造成的伤害上。"
+			]
+		},
+		{
+			"name": "Slow Fall",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你从高处跌落的经历使你成为了一个能够在着陆时不受伤的专家。你可以随意使用空中机动，而无需消耗任何利用骰(`Exploit Die`)。",
+				"如果你成功落在柔软的东西上，比如一车满是干草的马车，你就不会受到摔落的伤害。"
+			]
+		},
+		{
+			"name": "Defy Death",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/death/hand-dirt-undead-zombie.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你多次与死亡擦肩而过的经历使你擅长逃脱死亡的魔爪。你在死亡豁免投骰中可以加上你的熟练加值。当你进行死亡豁免投骰并且掷出20以上时，效果与你掷出20相同。"
+			]
+		},
+		{
+			"name": "Masterful Aerialist",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/mammals/bat-movement-flying-blue-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Daredevil",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你在操纵身体方面无与伦比。每当你进行敏捷属性检定或敏捷豁免检定，且总结果低于你的敏捷分数时，你可以使用你的敏捷分数代替你的掷骰结果。"
+			]
+		},
+		{
+			"name": "Gambler",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Gambler",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"虽然所有(*Rogues*)都喜欢冒险行为，但(*Gambler*)(赌徒)的生活围绕着这种风险展开。他们最喜欢的是高风险的情况，可以把一切都押上去。这些(*Rogues*)经常出现在酒馆和赌场，他们禁不住要把在冒险中获得的财富赌光。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gambler Exploits|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gambler's Knack|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pick a Card|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Gambler Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Gambler",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature subtle con|LLARoE}, {@optfeature quick quip|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature soothing speech|LLARo}, {@optfeature trick shot|LLARoE}"
+						],
+						[
+							"9th",
+							"{@optfeature incite violence|LLARoE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Gambler's Knack",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/sundries/gaming/playing-cards-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Gambler",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在人生的游戏中，有时你会赢，有时你需要即兴发挥。你获得对即兴武器、扑克牌，以及另外一种游戏套装的熟练加成。当你进行需要使用这些游戏套装的能力检定时，你可以将你的熟练加值翻倍加到你的检定中。",
+				"最后，如果你至少花费1分钟观察或参与一个你不熟悉的游戏，你可以在与该游戏相关的任何能力检定中添加你的熟练加值。然而，一次只能有一个游戏或游戏套装受益于这个特性，而将其用于学习一个新游戏会导致你失去对其他游戏的这一好处。"
+			]
+		},
+		{
+			"name": "Pick a Card",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/sundries/gaming/playing-cards.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Gambler",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"对你来说，卡牌堆算作即兴武器。当你将它们用作武器时，扑克牌具有灵巧和投掷（30/60）属性，击中目标时，你的扑克牌造成的斩击伤害为{@dice 1d4} + 你的敏捷调整值。",
+				"每回合一次，当你使用一张扑克牌进行攻击时，d4骰子上掷出的数字会赋予你的攻击一个额外效果：",
+				{
+					"type": "table",
+					"colLabels": [
+						"Roll",
+						"Bonus Effect"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"1",
+							"该生物的移动速度减少了(%num%)英尺，这个数值等于你的熟练加值乘以五。"
+						],
+						[
+							"2",
+							"即使不符合普通潜行攻击的要求，你也可以对这次攻击应用你的偷袭伤害加值（Sneak Attack）。"
+						],
+						[
+							"3",
+							"你获得临时生命值，数值等同于你的Exploit骰的一次投掷。"
+						],
+						[
+							"4",
+							"你可以选择与目标交换先攻顺序，在下一轮战斗中从先攻顺序的顶端开始。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Strange Luck",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/control/buff-luck-fortune-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Gambler",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你被赋予了一种有趣但又奇怪的幸运。你的武器攻击投掷在d20上得到7或20时会造成暴击，但在d20上得到13或1时则被视为暴击失败。祝你好运！"
+			]
+		},
+		{
+			"name": "Quickdraw",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/weapons/guns/gun-pistol-flintlock-metal.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Gambler",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你总是先行动。你在先攻检定上有优势，如果在你的第一个回合进行纸牌攻击，你可以选择\"抽牌\"(Pick a Card)的效果。",
+				"你还学会了快速抽取（Quick Draw）专长，但它不计入你已知专长的总数。当你使用这个专长时，它也适用于你的投掷武器攻击。"
+			]
+		},
+		{
+			"name": "Jackpot",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/sundries/gaming/dice-pair-white-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Gambler",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你的幸运可能是别人的倒霉。当你在进行一次（d6）的偷袭伤害骰时掷出6时，你可以额外掷一个（d6），将结果加到你的伤害骰上。",
+				"此外，你的纸牌攻击造成的伤害增加至{@dice 2d4}，你可以选择使用哪个d4结果来确定攻击的《抽牌》效果。"
+			]
+		},
+		{
+			"name": "Avenger",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"大多数为神服务的冒险者都会公开地作为牧师、(Clerics)和圣骑士(Paladins)。然而，一些黑暗而无情的神灵会将神圣的力量赐予复仇者(Avengers)。这些狂热的仆人不知疲倦地努力执行他们神的意志，并采取他们认为必要的手段。他们在暗中行动，唯一的动力是信仰，他们不向任何凡人负责。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Anointed Magic|Alternate Rogue|LLARo|Avenger|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Alternate Rogue|LLARo|Avenger|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Consecrated Blade|Alternate Rogue|LLARo|Avenger|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Anointed Magic",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 5,
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"由于你对你的神热诚的奉献，你获得了将他们的神圣恩宠转化为施放神圣法术的能力：",
+				{
+					"type": "entries",
+					"name": "Divine Favor",
+					"entries": [
+						"你的神的祝福通过一池神圣恩惠来体现。下一页的受膏魔法表格显示了你可以用来施展1级及更高级复仇者法术的神圣恩惠数量。要施展一个法术，你必须消耗与该法术等级相等的神圣恩惠，并在完成短暂休息或长时休息后，你将恢复所有已消耗的神圣恩惠。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Divine Limit",
+					"entries": [
+						"你的盗贼等级限制了你一次能够施展的神圣恩惠数量。这个限制体现在《(Anointed Magic Table)神圣魔法表》的神圣限制列中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"你可以在接下来的页面上从复仇者法术列表中选择两个1级法术。《被祝圣的魔法》表格中的\"已知法术\"栏显示了你何时学会更多1级或更高级别的复仇者法术。你学会的法术必须等级不高于你潜行者等级的神圣限制。",
+						"每当你升级时，你可以选择一个你已知的复仇者法术，并用另一个不高于你神性极限的等级的复仇者法术替换它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"魅力是你的复仇者法术的施法能力，因此当一个法术提到你的施法能力时，当你设置一个法术豁免 DC 时，或者当你进行法术攻击检定时，你就使用你的魅力。",
+						{
+							"type": "abilityDc",
+							"name": "Spell save DC",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell attack modifier",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以借助你的神的神力产生奇迹般的效果。你知道两个神圣通道效果，它们都列在下面。当你使用神圣通道时，你可以选择使用哪个选项。然后你必须完成一次短暂或长时间休息，才能再次使用任何一个神圣通道选项。",
+				{
+					"type": "entries",
+					"name": "Divine Awareness",
+					"entries": [
+						"作为一个奖励动作，你可以抓住你神的圣徽并打开你的感官，感知到强大的善良和邪恶存在。在1分钟内，你可以知道60英尺范围内任何未被遮蔽的天神、恶魔或不死生物的确切位置和生物类型，这些生物不能抵御占卜魔法。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Consecrated Blade",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/weapons/swords/sword-gold-holy.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的武器被天堂祝福，可以击败敌人和亵渎者。在1小时内，可以在短暂休息或长休息期间，触摸一把你熟练使用的近战武器，并进行特殊仪式，将其奉献给你的神明和神圣目的。",
+				"这件被祝圣的武器成为你神的圣物，并可用作你(`Avenger`)复仇者法术的施法焦点。即使它没有灵巧属性，你也可以在使用它进行攻击时添加你的偷袭(`Sneak Attack`)奖励。然而，偷袭奖励的所有其他规则仍然适用。",
+				"你一次只能拥有一把（Consecrated）神圣武器。"
+			]
+		},
+		{
+			"name": "Avenging Strikes",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/weapons/swords/sword-flanged-lightning.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"作为一个奖励动作，你可以消耗1点神圣恩惠，将神圣力量注入你手持的一把神圣武器中。在接下来的一分钟内，你使用该武器进行的攻击将造成辐射伤害，而非其正常的伤害类型。",
+				"此外，你使用一把（Consecrated weapon）进行攻击时，如果在d20上掷出19-20，就会造成重击。你的（Consecrated weapon）的重击范围在特定的盗贼等级下再次增加1：在第13级（18-20）和第17级（17-20）。"
+			]
+		},
+		{
+			"name": "Channel Divinity: Vow of Enmity",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"作为一个奖励动作，你可以举起你神的圣徽，并对你能看见的距离10英尺内的一个生物宣誓仇恨。在1分钟内，或者直到那个生物被杀死，你对它的所有攻击投掷都获得优势。"
+			]
+		},
+		{
+			"name": "Divine Step",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"没有什么能阻挡你与那些你标记为神圣审判的人之间的距离。作为一个奖励动作，你可以消耗2点神圣恩惠，立即传送到你能看到的敌对生物身边5英尺内的一个空地。当你出现时，你可以用优势进行一次武器攻击。"
+			]
+		},
+		{
+			"name": "Hand of the Gods",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是你神最忠诚和信任的凡人仆人之一。如果你在没有使用你的神力通道的情况下进行先攻骰时，你会立即恢复一个已用掉的次数。",
+				"另外，每当你将一名被誓言仇恨标记的生物的生命值降至0时，你可以选择标记范围内的另一名生物，或者恢复消耗的神圣青睐，数量等同于你的魅力调整值（最少1点神圣青睐）。"
+			]
+		},
+		{
+			"name": "Ruffian",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"并非所有的(*Rogues*)都依赖狡诈和诡计来战胜敌人。(*Ruffians*)是那些更喜欢直面敌人、努力用毁灭性打击和无情的战斗技巧来击败对手的(*Rogues*)。他们经常被雇佣为盗贼行会、犯罪集团以及其他不回避暴力的组织的雇佣势力。(*Ruffians*)几乎可以在任何犯罪横行的定居点、城市或小镇中找到。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ruffian Exploits|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Enforcer|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shake Down|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Ruffian Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature streetwise|LLARoE}, {@optfeature sweeping strike|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature dirty hit|LLARo}, {@optfeature grasp of night|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature recruit informant|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Enforcer",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/weapons/clubs/club-barbed-square-black.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在战斗中使用了盗贼不常采用的蛮力。你那与众不同的战斗风格为你带来以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得对即兴武器的熟练度。",
+						"你的徒手攻击在命中时造成的破坏伤害为你的利用骰(%num%) + 你的力量修正。",
+						"你可以在使用临时武器、徒手攻击和简单近战武器时应用你的偷袭伤害加值。所有其他偷袭规则仍然适用。",
+						"你可以利用你的狡诈行动(Cunning Action)获得的奖励动作来尝试进行一次擒拿(grapple)或推挤(shove)攻击。",
+						"在轻甲和中甲中，你可以使用你的体质（Constitution）而不是敏捷（Dexterity）来计算你的护甲等级。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Shake Down",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/commodities/currency/coins-leather-pouch-stone.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的工作需要你具备的技能，你已经变得特别擅长运用这些技能。你在恐吓(Intimidation)方面获得熟练加值，每当你进行力量(Athletics)或力量(Intimidation)检定时，你可以将d20上的7或更低的点数视为8。"
+			]
+		},
+		{
+			"name": "Intimidating Blow",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/slimes/slime-face-teeth-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你残忍的战斗风格让敌人感到恐惧。当你用近战攻击命中一名生物并添加你的偷袭伤害加值时，你可以使用狡诈打击(Cunning Strike)来减少2d6的伤害加值，并迫使你攻击的目标或者在30英尺内能看见你的一名生物进行一次以你的利用存档豁免 DC 为目标的感知豁免检定。如果未通过豁免检定，目标会因为你而感到恐惧，直到你的下一个回合结束。"
+			]
+		},
+		{
+			"name": "Nerves of Steel",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/equipment/waist/belt-ring-steel.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"恐惧是一种只对懦夫和意志薄弱者有效的武器。你获得免疫受到惊恐状态的能力。",
+				"此外，对于任何对你当前处于恐惧状态的生物进行的武器攻击，你都具有优势。(frightened)。"
+			]
+		},
+		{
+			"name": "Dodge & Counter",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/commodities/bones/tooth-molar-white.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 1,
+			"entries": [
+				"你可以利用你的敌人的动量来对抗他们。当一个比你大一号或者小一号的生物用近战攻击未击中你时，你可以使用你的反应，迫使它进行一次对抗你的Exploit Save DC的敏捷豁免检定。如果未通过豁免检定，它将遭受以下效果之一：",
+				{
+					"type": "list",
+					"items": [
+						"它被击倒，并且其速度减为0，直到你下一个回合的开始。",
+						"如果你有一只空手，你可以自动进行搏斗（grapple）。",
+						"你可以对其进行一次徒手攻击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ruthless Strike",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/claws/claw-talons-glowing-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Ruffian",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"当你对那些害怕你的人使用无情意图攻击时，你可以选择将你的攻击变成自动暴击。当你对一个害怕你的生物使用近战武器攻击并加上你的偷袭伤害加值时，你可以选择让你的攻击变成自动暴击。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。"
+			]
+		},
+		{
+			"name": "Saboteur",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"一些游荡者将他们的各种技能与对炼金术的兴趣相结合，制造爆炸效果。被称为破坏者的这些奇怪炼金术士有许多专长；拆除、攻城战和娱乐。无论他们的关注点是什么，他们都喜欢暴力破坏，由于他们才能的稀有性，破坏者是宝贵的盟友或危险的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Saboteur Exploits|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Destructive Strikes|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Explosives|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Saboteur Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature alchemical adept|LLARo}, {@optfeature smoke bomb|LLARoE}"
+						],
+						[
+							"5th",
+							"{@optfeature alchemical oil|LLARo}, {@optfeature flash bomb|LLARoE}"
+						],
+						[
+							"9th",
+							"{@optfeature bewildering blow|LLARoE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Destructive Strikes",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/commodities/materials/pottery-jug.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的工作让你擅长识别结构上的薄弱点。当你用近战武器攻击或使用(`Devious Exploit`)的伤害攻击非魔法结构，或者使用你的(`Explosives`)对其造成伤害时，这将被视为自动暴击。",
+				"此外，当你攻击一个构装物时，在d20上攻击投掷得到19或20时，你的攻击会造成暴击。"
+			]
+		},
+		{
+			"name": "Explosives",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/weapons/thrown/bomb-fuse-black-pink.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你获得炼金工具的熟练技能，以及合成以下强力{@filter Explosives|optionalfeatures|feature type=LL:BOOM}的知识：",
+				{
+					"type": "entries",
+					"name": "Explosives Known",
+					"entries": [
+						"在这个职业的最后阶段，你学会制作两个{@filter Explosives|optionalfeatures|feature type=LL:BOOM}，一个{@optfeature Hand Bomb|LLARoE}，以及从破坏者炸药清单中选择的另一个炸药。为了学会一个炸药，你必须满足它可能有的任何先决条件。你可以在达到盗贼等级先决条件的同时学习一个炸药。",
+						"每当你学习一个新的阴险手段时，你可以选择学习一个新的爆炸物而不是。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Crafting Explosives",
+					"entries": [
+						"在每次长休结束时，你可以使用炼金工具来制作单个微型物品，其中包含你所知道的每种破坏者炸药的一个副本，而无需消耗一个开发骰(%num%)。你制作的任何炸药在你的下一个长休结束时失去效力，变得无法使用。",
+						"作为一个动作，你可以使用你的炼金术工具制作另一个你已知的破坏者炸药的副本，消耗其描述中列出的利用骰(%num%)。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Using Explosives",
+					"entries": [
+						"一只生物可以执行使用物品动作，将你的一个破坏者炸药投掷到它能看到的距离60英尺内的一个点上。它在撞击时爆炸，产生其描述中心点的效果。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Explosive Save DC",
+					"entries": [
+						"当一个爆炸物迫使目标进行豁免投掷时，目标需要以你的Exploit Save DC来进行投掷。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Advanced Alchemy",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/tools/laboratory/bowl-powder-purple.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"你对炼金术的知识和掌握能力增加，使你能够以以下方式改变你制造的炸药：",
+				{
+					"type": "entries",
+					"name": "Appearance",
+					"entries": [
+						"你可以改变爆炸物的外观。当它们没有点燃时，生物必须通过一个智力（调查）检定，检定值为你的利用豁免 DC，才能认出这个未点燃的爆炸物。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Color",
+					"entries": [
+						"你可以改变爆炸物本身的颜色，爆炸的颜色，以及它产生的烟雾的颜色。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Damage Type",
+					"entries": [
+						"你可以将你制造的任何爆炸物的伤害类型改为钝击、穿刺、火焰、雷霆或闪电。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Quick Chemistry",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/tools/laboratory/burner-steel-grey.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的技能使你能够迅速制造和使用你的爆炸物。你可以在你的回合使用一个奖励动作来消耗利用骰来制作你已知的破坏者炸弹。",
+				"你还学会了一个你选择的破坏者炸药。"
+			]
+		},
+		{
+			"name": "Sabotage",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/tools/hand/saw-hacksaw-brass-grey.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你擅长利用那些毫无防备的生物。任何在战斗的第一轮中被吓到或者还没有行动过的生物，在面对你投掷的(%num%)(Saboteur Explosives)时，初始豁免投掷时都会有劣势。",
+				"此外，每当你进行先攻骰时，你可以制作一个{@optfeature Hand Bomb|LLARoE}，而无需消耗一个利用骰，或者制作一个你已知的爆炸物，按照正常规则消耗利用骰。",
+				"你还学会了一个你选择的破坏者炸药。"
+			]
+		},
+		{
+			"name": "Hair Trigger",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/unholy/demon-hairy-winged-pink.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Saboteur",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已经修改了你的爆炸物，使你能够远程引爆它们。当你制作一个爆炸物时，你可以加入一个简单的奥术遥控器，从远处触发爆炸。",
+				"作为一个动作，你可以触发一个带有遥控触发器的炸药，只要你距离它在200英尺以内。",
+				"最后，你学会了一个你选择的最终破坏者爆炸物。"
+			]
+		},
+		{
+			"name": "Skinchanger",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Skinchanger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"德鲁伊圈的传统和能力是一些最严密保守的人类秘密，只有传授给德鲁伊候选人。然而，即使是最严密保守的秘密也可能被合适的窃贼窃取。变形者是通过非传统手段获得德鲁伊魔法的盗贼。",
+				"虽然大多数变皮者以通过欺诈和偷窃获得能力而臭名昭著，但有些与德鲁伊一起工作，并被选中执行特殊任务。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Skinchanger Exploits|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Druidic Secrets|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Limited Wild Shape|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Skinchanger Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Skinchanger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature aerial maneuver|LLARo}, {@optfeature cunning instinct|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature improvised skill|LLARo}, {@optfeature crippling strike|LLARoE}"
+						],
+						[
+							"9th",
+							"{@optfeature survey settlement|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Druidic Secrets",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/environment/wilderness/tree-ash.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Skinchanger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经被教授（或窃取）了德鲁伊的秘密。你学会了说、读、写德鲁伊语，这是德鲁伊的语言。你可以使用这种语言留下隐藏信息。懂得德鲁伊语的人总是能注意到这些信息，但其他人必须通过一次智力（调查）检定，检定值要达到你的专长豁免 DC 才能在没有魔法的帮助下解密。",
+				"你也可以作为一个盗贼和德鲁伊来进行魔法物品的认定和使用咒语卷轴。"
+			]
+		},
+		{
+			"name": "Limited Wild Shape",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/mammals/elk-moose-marked-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Skinchanger",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你所掌握的德鲁伊魔法使你能够窃取野兽的形态。你起初就会掌握三种不具有飞行或游泳速度、CR 1/4或更低的不同野兽形态的知识。你可以通过触摸活着的野兽来学习额外的野兽形态，但需符合下方《变皮兽形表》对你盗贼等级的限制。",
+				"在某些盗贼等级时，你可以学习更高CR的野兽形态，或者具有游泳或飞行速度的形态，如下所示的变形兽形态表格中所示。",
+				"作为一个奖励动作，你可以使用魔法将自己变形成你所熟知的一种野兽形态，遵循《玩家手册》中德鲁伊的野性变身规则。",
+				"你可以保持野兽形态长达一小时，之后会恢复成你的正常形态。你可以在更早的时候通过使用一个奖励动作来恢复成正常形态，或者当你失去意识、生命值降至0，或者死亡时也会恢复成正常形态。",
+				"一旦你使用了你的野性变身（Wild Shape）特性，你必须完成一次短休或长休才能再次使用野性变身。在变身后的一小时内，你会恢复到正常形态。如果你使用一个奖励动作、昏迷、生命值降至0，或死亡，你可以提前恢复到正常形态。",
+				"最后，当你处于野兽形态时，你可以给自然武器攻击加上你的偷袭伤害加值。然而，你的偷袭特性的所有其他规则仍然适用。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Level",
+						"Max CR",
+						"Limitations",
+						"Example"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"1/4",
+							"没有飞行或游泳速度 (D&D)",
+							"黑豹"
+						],
+						[
+							"7th",
+							"1/2",
+							"无飞行速度 (No Flying Speed)",
+							"暗礁鲨 (Reef Shark)"
+						],
+						[
+							"13th",
+							"1",
+							"-",
+							"巨鹰超市 (Giant Eagle)"
+						],
+						[
+							"17th",
+							"2",
+							"-",
+							"洞穴熊 (Cave Bear)"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Instinctual Strike",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/claws/claw-bear-paw-swipe-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Skinchanger",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"德鲁伊魔法充盈着你的野兽形态。当你处于野兽形态时，你的攻击被视为魔法攻击，可以克服对非魔法伤害的抗性和免疫。",
+				"此外，在每次短休息或长休息之间，你可以使用你的野性变身两次。"
+			]
+		},
+		{
+			"name": "Bestial Physique",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Skinchanger",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你在其他动物形态中度过的时间增强了你正常形态的能力。当你进行基于视觉、听觉或嗅觉的能力检定时，你获得一个等同于你利用骰的一次投掷的奖励加值。",
+				"此外，你的徒手攻击获得了矫捷特性，并在命中时造成等于你的Exploit Die的斩击伤害。"
+			]
+		},
+		{
+			"name": "Druidic Mastery",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/nature/leaf-juggle-humanoid-green.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Skinchanger",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已经掌握了你的原始魔法。你可以无限期地保持你的野性形态转化，当你没有剩余野性形态使用次数时，你可以消耗一个Exploit Die来额外使用一次野性形态。"
+			]
+		},
+		{
+			"name": "Surgeon",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"当冒险者被怪物伤残或士兵在战斗中受伤时，如果奢侈的魔法治疗不可行，外科医生就会挺身而出填补空缺。利用他们对解剖学和生物学的深刻理解，外科医生可以分析任何疾病，当情况紧急时，他们可以将医学知识用于对付敌人，用精准的切割使其残废。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Surgeon Exploits|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Anatomical Studies|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Surgical Skill|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Surgeon Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Surgeon",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature arresting strike|LLARo}, {@optfeature first aid|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature ringing strike|LLARoE}, {@optfeature crippling strike|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature craft greater poison|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Anatomical Studies",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/sundries/books/book-symbol-reverse-blue.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你花了多年时间研究医学科学，以提高你的外科技能。你在医学和自然方面都获得了熟练度，每当你进行一次感知（医学）检定时，你的检定获得一个奖励，奖励值等于你的智力调整值（最低为+1）。",
+				"最后，你可以利用你的狡诈行动赋予的奖励动作来使用一个(Healer's Kit)，进行一次感知（医学）检定，或者施用一瓶药剂。"
+			]
+		},
+		{
+			"name": "Surgical Skill",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/tools/hand/needle-grey.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你利用对解剖学的知识武装自己，在战斗中削弱你的敌人。对人形生物、野兽、巨人、畸变生物和不死生物的武器攻击投掷骰子（d20）时，如果得到19或20，则为暴击。",
+				"此外，您每次短休或长休都可以使用您所知道的每个外科医生(Exploit Die)一次，而无需消耗外科医生(Exploit Die)。"
+			]
+		},
+		{
+			"name": "Cultivated Immunity",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/magic/acid/dissolve-vomit-green-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"作为一名外科医生，你的免疫系统得到了改善。每当你受到酸性、坏死或毒素伤害时，你可以减少相应伤害值，减少值等于你的Exploit骰子的一次投掷结果加上你的智力调整值（最少为1）。",
+				"此外，你在豁免投掷中对抗毒素、疾病和其他毒素的效果时具有优势。"
+			]
+		},
+		{
+			"name": "Surgical Strikes",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/tools/hand/saw-surgical-steel-grey.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你已经对多元宇宙生物的解剖学有了很多了解。从13级开始，对除了构造体、软泥怪和植物之外的所有生物进行的攻击投掷骰子时，如果d20的点数是18、19或20，就会造成重击。"
+			]
+		},
+		{
+			"name": "Expert Surgeon",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/tools/hand/saw-hacksaw-brass-grey.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"每当你进行一次感知（医学）检定时，你可以选择使用你的潜行者等级代替d20骰的投掷。",
+				"此外，您获得了手术技能，可以媲美最强大的奥术和神圣魔法。作为一个动作，您可以触摸一个生物，并施加《传染》或《再生》法术的效果，使用您的智力作为施法能力。一旦您再现其中任何一个法术，您必须完成一次短休或长休才能再次这样做。"
+			]
+		},
+		{
+			"name": "Seeker",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"entries": [
+				"大多数为神服务的冒险者都会公开地作为牧师、(Clerics)和圣骑士。然而，一些黑暗而残忍的神灵会赐予(Seekers)神圣的力量。这些狂热的仆人不知疲倦地努力执行他们神的意志，并采取他们认为必要的任何手段。他们在暗中行动，只被信仰驱使，不受任何凡人的约束。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Seeker Exploits|Alternate Rogue|LLARo|Seeker|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Relic Hunter|Alternate Rogue|LLARo|Seeker|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Relic Magic|Alternate Rogue|LLARo|Seeker|LLARoE|3|LLARoE"
+				}
+			]
+		},
+		{
+			"name": "Seeker Exploits",
+			"source": "LLARoE",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在下表中标有的盗贼等级上，你会学习特定的技能（Exploits）。这些技能不计入你已知技能的总数，并且在升级时无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature modify device|LLARo}, {@optfeature scholarly recall|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature exposing strike|LLARoE}, {@optfeature survey dungen|LLARoE}"
+						],
+						[
+							"9th",
+							"{@optfeature forgotten knowledge|LLARoE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Relic Magic",
+			"source": "LLARoE",
+			"foundryImg": "icons/commodities/treasure/token-engraved-blue-glowing.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 5,
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你已经拼凑出了一组各种各样的魔法物品和小玩意，它们赋予你以下效益：",
+				{
+					"type": "entries",
+					"name": "Relics",
+					"entries": [
+						"遗物是注入了奇异而古老魔法的微小物品，它们通常与其内部的魔法起源或类型相似。你拥有的遗物数量等于1 + 你的智力调整值。当你的智力调整值增加时，你可以选择额外的遗物。这些可能是你已经拥有但尚未解锁其中奥秘的遗物。它们汇集了各种各样的魔法物品和小玩意，为你提供以下好处："
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Relic Spells",
+					"entries": [
+						"你的每个圣物都注入了一个无法更改的单一圣物咒语。圣物咒语是来自任何法术清单的0级或2级以下仪式法术。只要你携带着圣物，你就可以施放其中注入的0级法术或仪式法术版本。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"你对遗物魔法的运用能力取决于你对古老机制的理解。如果一个遗物需要施法调整值，你使用智力：",
+						{
+							"type": "abilityDc",
+							"name": "Spell save DC",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell attack modifier",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Relic Hunter",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/equipment/head/hat-belted-simple-brown.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经花费了许多个漫长的夜晚学习大多数凡人早已遗忘的文明。你学会了选择两种额外语言的口语、阅读和写作。通常，探索者选择学习古老、古代或异国语言。",
+				"你还会获得历史技能熟练加值，如果你花至少10分钟触摸和检查一个物体，你可以确定它的文明起源和大致年龄。"
+			]
+		},
+		{
+			"name": "Elder Relics",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/commodities/treasure/puzzle-box-glowing-blue.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在你奇异的旅行和冒险中，你挖掘出、讨价还价或拼凑出了包含神秘、古老甚至神圣力量的(长者遗物)。你获得了一个(长者遗物)，其中包含以下法术或能力之一：",
+				{
+					"type": "entries",
+					"name": "Channel Divinity",
+					"entries": [
+						"这位长者遗物包含了你选择的神职领域（Cleric Divine Domain）的一项通道神力（Channel Divinity）所需的仪式和祈祷。如果通道神力需要一定的神职等级或法术修正值，你将使用你的盗贼等级和遗物法术修正值。每次使用通道神力后，你必须完成一次短休或长休才能再次使用它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Relic Spells",
+					"entries": [
+						"这位长者遗物蕴含着邪恶或被遗忘的古老力量。你可以选择学习一个来自术士职业可用的奥术召唤。如果这个召唤有一个术士等级的前提条件，只要你的潜行者等级达到该前提条件的等级，你就可以学习它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Greater Ritual",
+					"entries": [
+						"这位长者遗物中包含一个你选择的来自任何职业法术列表中5级或更低级别的仪式法术。与其他遗物法术一样，只要你携带这位长者遗物，你就可以将这个法术作为仪式施放。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Optional Rule",
+					"entries": [
+						"与你的DM讨论使用可以模仿图腾、天赋或血咒效果的遗物！"
+					]
+				}
+			]
+		},
+		{
+			"name": "Expert Archaeologist",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/tools/hand/hammer-and-nail.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在致命墓穴和地牢中度过的时间赋予了你一种神秘的能力，可以避开陷阱和其他危险。你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你在不得不对任何类型的陷阱进行豁免检定时获得优势。",
+						"只要有正确的工具，你可以随意修改设备，而无需花费一个Exploit骰，(%Exploit Die%)。",
+						"你在进行调查或解除陷阱时使用盗贼工具或修补工具检定时获得优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Greater Lore",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/commodities/treasure/box-jade-tassel.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"你已经添加了许多神秘和被遗忘的秘密到你的收藏中。你可以选择获得三个额外的长者遗物。或者，你可以选择在获得长者遗物的一个或多个的位置上获得两个遗物。",
+				"当你施放一个遗物战斗法术(cantrip)时，你可以将你的智力修正值加到伤害骰结果上，只要你之前没有将你的施法修正值加到伤害骰结果上。"
+			]
+		},
+		{
+			"name": "Ancient Lore",
+			"source": "LLARoE",
+			"page": 48,
+			"foundryImg": "icons/commodities/treasure/crystal-pedastal-red-gold.webp",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Seeker",
+			"subclassSource": "LLARoE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你对古代世界的魔法了解得比少数活着的凡人更深。你在进行豁免投掷来抵抗法术效果时拥有优势。",
+				"最终，在1小时的时间内，可以在短暂休息或长休息期间，对你的一个遗物或长者遗物进行特殊仪式，将其效果更换为你选择的另一个可能的遗物或长者遗物效果。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Aerial Maneuver",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/magic/control/buff-flight-wings-runes-blue-white.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你摔倒时，你可以使用你的反应来消耗一个Exploit Die来控制你的下降。你可以减少你将受到的任何坠落伤害，数额等同于你等级的五倍，并且当你着陆时，你可以选择站在脚下。"
+			]
+		},
+		{
+			"name": "Alchemical Adept",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/consumables/potions/bottle-conical-bubbling-blue.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你进行智力（自然）检定、感知（医学）检定、炼金术工具检定，或草药工具检定时，你可以消耗一个Exploit骰，并将其加到你的检定中。你可以在投掷骰子后，但在确定是否成功或失败之前使用这个Exploit。"
+			]
+		},
+		{
+			"name": "Blinding Debris",
+			"source": "LLARo",
+			"page": 9,
+			"foundryImg": "icons/commodities/biological/eye-brown-red.webp",
+			"entries": [
+				"作为一个奖励动作，你可以消耗一个剥削骰来试图用碎片致盲一个生物。你可以看到的一个距离你10英尺的生物必须成功通过一次体质豁免才能免受伤害，否则将受到等于你的一个剥削骰的点数的穿刺伤害，并且在你下个回合开始前致盲。"
+			],
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Subtle Con",
+			"source": "LLARo",
+			"page": 9,
+			"foundryImg": "icons/sundries/gaming/dice-runed-brown.webp",
+			"entries": [
+				"当你进行敏捷度({@skill Sleight of Hand})、魅力度({@skill Deception})或者魅力度({@skill Performance})检定时，你可以消耗一个Exploit骰，并将其加到你的掷骰结果中。你可以在掷骰后但还不知道是否成功或失败时使用这个Exploit。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Commanding Presence",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/commodities/treasure/bust-carved-stone.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 11
+						},
+						{
+							"cha": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你进行魅力（说服）或魅力（恐吓）检定时，你可以消耗一个Exploit骰，将其投掷，并将结果加到你的能力检定中。你可以在投掷d20之后，但在确定是否成功之前这样做。",
+				"另外，每当你需要进行魅力（恫吓）检定时，你可以选择进行力量（恫吓）检定。"
+			]
+		},
+		{
+			"name": "Eloquent Speech",
+			"source": "LLARo",
+			"page": 11,
+			"foundryImg": "icons/sundries/documents/document-writing-pink.webp",
+			"entries": [
+				"每当你通常要进行魅力（欺骗）或魅力（劝说）检定时，你可以选择使用你的智力代替魅力进行该能力检定。",
+				"此外，每当你进行一个智力（欺骗）或智力（劝说）检定时，你可以消耗一个利用骰，投掷它，并将结果加到你的检定中。你可以在投掷d20之后，但在知道是否成功之前这样做。"
+			],
+			"featureType": [
+				"LL:DE",
+				"LL:1DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Arresting Strike",
+			"source": "LLARo",
+			"page": 9,
+			"foundryImg": "icons/skills/wounds/bone-broken-knee-beam.webp",
+			"entries": [
+				"当你用武器攻击命中目标时，你可以消耗一个Exploit骰并迫使目标进行一次敏捷豁免投掷。如果未通过豁免，目标会受到额外伤害，伤害值等同于你的一个Exploit骰的投掷结果，并且其速度将变为0，直到你下个回合开始。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			]
+		},
+		{
+			"name": "Cunning Instinct",
+			"source": "LLARo",
+			"page": 11,
+			"foundryImg": "icons/creatures/abilities/paw-print-pair-purple.webp",
+			"entries": [
+				"当你进行感知（(Perception)）或生存（(Survival)）检定时，你可以消耗一个特技骰，将其投掷，并将结果加到你的能力检定中。你可以在投掷d20之后，但在知道是否成功或失败之前这样做。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Disarm",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/melee/sword-damaged-broken-glow-red.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，你可以消耗一个利用骰（Exploit Die）来迫使目标进行一次力量豁免检定。如果未通过豁免检定，该生物会受到额外伤害，数值等同于你的一个利用骰的点数，并且目标会掉落你选择的一个物品，掉在它脚下。"
+			]
+		},
+		{
+			"name": "Feint",
+			"source": "LLARo",
+			"page": 9,
+			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+			"entries": [
+				"作为一个奖励动作，你可以消耗一个剥削骰来佯攻，迫使一个能看见你的生物在15英尺内进行一次感知豁免投掷。如果未通过豁免，你在本回合结束前对它的攻击获得优势。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			]
+		},
+		{
+			"name": "First Aid",
+			"source": "LLARo",
+			"page": 10,
+			"foundryImg": "icons/magic/life/heart-hand-gold-green-light.webp",
+			"entries": [
+				"作为一个动作，你可以触摸一个至少有1点生命值的生物，并消耗剥削骰（最多为你的熟练加值），投掷这些骰子，那个生物回复的生命值等于投掷总和加上它的体质调整值。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			]
+		},
+		{
+			"name": "Inquisitive Eye",
+			"source": "LLARo",
+			"page": 11,
+			"foundryImg": "icons/tools/scribal/magnifying-glass.webp",
+			"entries": [
+				"当你进行一个智力（调查）或感知（洞察）检定时，你可以消耗一个利用骰，将其投掷，并将结果加到你的能力检定中。你可以在投掷d20之后，但在确定是否成功或失败之前这样做。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 11
+						},
+						{
+							"wis": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Precision Strike",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/targeting/target-strike-triple-blue.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你进行武器攻击时，你可以消耗一个Exploit骰，并将其添加到攻击骰中。你可以在投掷骰子后，但在确定攻击是否命中之前使用这个Exploit。"
+			]
+		},
+		{
+			"name": "Quick Quip",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/consumables/food/cheese-wedge-swiss-yellow.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 11
+						},
+						{
+							"cha": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"在说话时，你可以消耗一个利用骰来讲一个短笑话、俏皮话或其他幽默轶事。在你周围10英尺内并且能够听懂你的生物会在这个利用之后的10秒内忘记你说的一切，只会记住你的俏皮话。",
+				"对于免疫被魅惑的生物，它们也免疫这个（Exploit）。一旦你对一个生物使用了这个（Exploit），该生物在接下来的24小时内免疫这个（Exploit）的效果。"
+			]
+		},
+		{
+			"name": "Reliable Skill",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/tools/hand/ruler-steel-grey.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"entries": [
+				"每当你使用一项你熟练掌握的技能或工具进行能力检定，且在d20上掷出7或更低的数字时，你可以消耗一个Exploit Die，将d20的掷骰结果视为8。"
+			]
+		},
+		{
+			"name": "Roguish Charm",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/commodities/currency/coin-engraved-sun-smile-copper.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"cha": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰(%num%)，迫使一个在10英尺内且能听到并理解你的生物进行一次感知豁免才智豁免，如果你或你的盟友正在与它战斗，则它获得优势。如果未通过豁免，它将被你魅惑1小时，并在此期间将你视为友好熟人。尽管如此，它不会为你冒生命危险。",
+				"如果你或你的同伴对该生物做出任何有害行为，这种效果立即结束，当效果以这种方式结束时，目标意识到它被你欺骗了。",
+				"一旦生物成功通过对这个（Exploit）的豁免检定，它将在接下来的24小时内对这个（Exploit）免疫。"
+			]
+		},
+		{
+			"name": "Rustic Intuition",
+			"source": "LLARo",
+			"page": 11,
+			"foundryImg": "icons/skills/trades/farming-planet-bulb-orange.webp",
+			"entries": [
+				"当你进行智力（自然）检定、感知（动物处理）检定或感知（医学）检定时，你可以消耗一个特技骰，将其投掷，并将结果加到你的能力检定中。你可以在投掷之后，但在得知结果之前这样做。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Scholarly Recall",
+			"source": "LLARo",
+			"page": 10,
+			"foundryImg": "icons/sundries/books/book-symbol-triangle-silver-purple.webp",
+			"entries": [
+				"每当你进行智力（奥秘）(Intelligence (Arcana))、智力（历史）(Intelligence (History))或智力（宗教）(Intelligence (Religion))检定时，你可以消耗一个Exploit骰，将其投掷，并将结果加到你的能力检定中。你可以在投掷后，但在得知结果之前这样做。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sweeping Strike",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/melee/hand-grip-staff-blue.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"entries": [
+				"当你用近战武器攻击一个生物时，你可以消耗一个利用骰（Exploit Die）来迫使它进行一次敏捷豁免投掷。如果未能通过豁免，它会倒地并受到等同于你的利用骰的重击伤害。比你大一个或更多尺寸的生物在豁免投掷时拥有优势。"
+			]
+		},
+		{
+			"name": "Alchemical Oil",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/consumables/potions/potion-flask-corked-orange.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Alchemist's Supplies proficiency"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰，并使用你的炼金术士工具来制作一瓶炼金油，该油保持有效直到你下一个长休息结束。在制作时，你可以选择酸、冰冷、火焰或闪电作为该瓶油的伤害类型。你不能在用完这瓶炼金油之前重新获得用在这瓶油上的利用骰。",
+				"一只生物可以执行使用物品动作，消耗药瓶并将其内容涂抹在其手持的一件武器上。在接下来的10分钟内，该武器以该炼金油中选择的伤害类型代替其正常伤害。",
+				"生物可以使用其动作来移除炼金油。"
+			]
+		},
+		{
+			"name": "Craft Minor Poison",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Poisoner's Kit proficiency"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰，并使用你的(`poisoner's kit`)来制作一瓶次级毒药，该毒药保持有效直到你下一个长休结束。然而，在你使用这个毒药之前，你无法恢复这个利用骰。",
+				"一只生物可以使用动作使用该小瓶，并将其涂抹在它手中的一把武器或一枚弹药上。在下次命中时，该武器将造成毒素伤害代替其正常伤害，目标必须成功通过一次体质豁免才能免疫中毒状态，否则将中毒1分钟。",
+				"中毒的生物可以在每个回合结束时重复进行这次豁免投掷，若成功则效果结束。"
+			]
+		},
+		{
+			"name": "Dirty Hit",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/wounds/injury-pain-impaled-hand-blood.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你用近战武器攻击一个生物时，你可以消耗一个利用骰来打击一个脆弱的部位。它必须通过一次体质豁免才能避免受到额外伤害，额外伤害等于你的利用骰点数，它会倒地，直到你下个回合开始前它不能作出反应。"
+			]
+		},
+		{
+			"name": "Crippling Strike",
+			"source": "LLARo",
+			"page": 11,
+			"foundryImg": "icons/skills/wounds/injury-eyes-blood-red.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你用武器攻击击中生物时，你可以消耗一个利用骰并迫使它进行一次体质豁免才能。未能通过豁免的话，它会受到额外伤害，数值等同于你的利用骰，且在你下个回合开始前，它会被{@condition blinded}，{@condition deafened}或被压制（你选择）。\n\n"
+			]
+		},
+		{
+			"name": "Exposing Strike",
+			"source": "LLARo",
+			"foundryImg": "icons/skills/melee/shield-damaged-broken-blue.webp",
+			"page": 7,
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你用武器攻击命中一只生物时，你可以消耗一个利用骰来暂时削弱它。在你的下一个回合开始之前对其进行的第一次攻击具有优势，并造成额外伤害，额外伤害等同于你的利用骰。"
+			]
+		},
+		{
+			"name": "Glancing Blow",
+			"source": "LLARo",
+			"foundryImg": "icons/skills/melee/strike-slashes-red.webp",
+			"page": 7,
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你进行近战武器攻击并未命中时，你可以消耗一个Exploit Die，立即对武器攻击另一个在你武器攻击范围内的目标。"
+			]
+		},
+		{
+			"name": "Grasp of Night",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/magic/unholy/strike-hand-glow-pink.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"wis": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"在进行攻击时，你可以消耗剥削骰（最多等同于你的熟练加值）来触碰一个生物，试图使其昏迷。每个你消耗的剥削骰，你都要投掷三个剥削骰，将你的感知调整值加到所有骰子的总和中。如果总和达到或超过生物剩余的生命值，它会立即陷入睡眠状态，并昏迷10分钟。",
+				"如果生物受到伤害，或者另一个生物在其回合内采取行动来摇醒或拍打正在睡觉的生物，那么这个生物会立即醒来。"
+			]
+		},
+		{
+			"name": "Improvised Skill",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/magic/control/buff-luck-fortune-gold.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你进行不包括你熟练加值的能力检定时，你可以消耗一个Exploit骰，并将其添加到你的投掷中。你可以在投掷后但在确定成功或失败之前使用这个Exploit。"
+			]
+		},
+		{
+			"name": "Mechanical Insight",
+			"source": "LLARo",
+			"page": 10,
+			"foundryImg": "icons/commodities/tech/cog-brass.webp",
+			"entries": [
+				"每当你使用一组(`thieves' tools`)或(`tinker's tools`)进行能力检定时，你可以消耗一个(`Exploit Die`)，将其投掷，并将结果加到你的能力检定中。你可以在投掷后，但在确定是否成功或失败之前这样做。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Modify Device",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/environment/traps/trap-jaw-green.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"proficiency with tinker's or thieves' tools"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰，并使用工匠或盗贼工具对你能触摸到的一个陷阱或锁进行调整。该陷阱或锁的难度等于你的利用豁免 DC，或者增加 5 点（你可以选择）。",
+				"要使用这个（Exploit）（（Exploit））, 陷阱或锁必须被停用或解锁，并且你必须能够进入其内部机制。你不能使用这个（Exploit）（（Exploit））来修改一个无法重置的陷阱或锁，或者一个已经被毁坏无法修复的。"
+			]
+		},
+		{
+			"name": "Lightstep",
+			"source": "LLARo",
+			"page": 10,
+			"foundryImg": "icons/creatures/mammals/humanoid-cat-skulking-teal.webp",
+			"entries": [
+				"当你进行敏捷（体操）或敏捷（潜行）检定时，你可以消耗一个Exploit Die，将其投掷，并将结果加到你的能力检定中。你可以在投掷d20之后，但在知道是否成功或失败之前这样做。"
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 11
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Soothing Speech",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰并尝试安抚任何在20英尺内既能听到又能理解你的生物，迫使它们进行一次魅力豁免投。如果豁免失败，接下来的10分钟内，这些生物会对你选择的它们目前敌对的生物变得漠不关心。",
+				"如果目标被攻击或受到法术伤害，或者目睹其任何朋友受到伤害，这种冷漠态度就会结束。效果结束时，生物会再次变得敌对。"
+			]
+		},
+		{
+			"name": "Survey Dungeon",
+			"source": "LLARo",
+			"page": 8,
+			"foundryImg": "icons/environment/wilderness/mine-exterior-entrance.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"dex": 13
+						},
+						{
+							"int": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"你可以消耗一个利用骰来花费10分钟仔细检查你目前所在的房间。在10分钟结束时，你可以获得以下三项知识中的一项：",
+				{
+					"type": "list",
+					"items": [
+						"该区域有一个陷阱。这包括任何旨在伤害入侵者的机械或自然效果。",
+						"在该区域内有一个活跃的法术，其施放等级不超过你的智力修正值。",
+						"一个秘密隔间，门，或通道。"
+					]
+				},
+				"使用这个漏洞来勘察一个房间后，你必须完成一次长休才能再次在那个地点使用它。"
+			]
+		},
+		{
+			"name": "Trick Shot",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/ranged/person-archery-bow-attack-orange.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"dex": 13
+						},
+						{
+							"int": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"作为一个奖励动作，你可以消耗一个技能骰来使用一次以敏捷和投掷武器进行的远程武器攻击。",
+				"这种远程攻击无视掩护的效果，只要它能在一表面上反弹并击中射程内的目标。如果这次攻击通常会有劣势，那么它不会有。命中时，你可以将你的Exploit Die添加到攻击的伤害骰中。"
+			]
+		},
+		{
+			"name": "Craft Greater Poison",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"feature": [
+						"Poisoner's Kit proficiency"
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"作为你回合中的一个动作，你可以消耗利用骰(%num%)（最多等同于你的熟练加值）并使用一个毒药工具包来制作一瓶强效毒药，该毒药的效力会保持到你下一个长休结束。然而，在你使用这个毒药之前，你无法重新获得用于制作它的利用骰。",
+				"一只生物可以使用动作使用该小瓶，并将其施加在它手持的一件武器或一枚弹药上。在下次命中时，该武器造成额外毒素伤害，伤害值等于你的利用骰的一个骰点，每个你花费的利用骰都会增加一次伤害。目标必须成功通过一次体质豁免才能免受以下效果影响1分钟：",
+				{
+					"type": "list",
+					"items": [
+						"在攻击检定和能力检定上有劣势。",
+						"它的速度减半，且无法进行反应。",
+						"在它的回合结束时，受到与你的利用骰(%num%)的伤害相等的毒性伤害。"
+					]
+				},
+				"中毒的生物可以在每个回合结束时重复进行这次豁免投掷，成功后效果结束。"
+			]
+		},
+		{
+			"name": "Forgotten Knowledge",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/magic/control/fear-fright-white.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"int": 15
+						},
+						{
+							"wis": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"你可以消耗一个利用骰(`Exploit Die`)，并花费10分钟专注于你所看到的一个人、你所握着的物体，或者你目前所在的位置。如果没有被打扰，你会记住关于你专注的事物的一段知识。",
+				"传说可能包括当前的故事、被遗忘的故事，甚至是从未被广泛知晓的秘密传说。你对某事物了解的信息越多，你能记住的关于它的信息就会越精确和详细。"
+			]
+		},
+		{
+			"name": "Recruit Informant",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/environment/creatures/shell-conch-blue.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"cha": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"你可以消耗一个剥削骰并花费1小时时间，在你目前占领的定居点招募一个人形线人。为了使这个剥削生效，定居点必须有一个愿意合作的人形，比如一个乞丐、罪犯、小偷、间谍或其他无赖，在定居点的规模必须足够大，由DM决定。",
+				"这位(Informant)不会在战斗中帮助你或为你冒险，但它会忠实地收集所占据的定居点中的任何信息、谣言、新闻和秘密。",
+				"在每次长休的过程中，你的通知者会找到你并向你传达这些信息。",
+				"你的线人会一直留在你的服务中，直到你解雇它或它死亡。然而，在你解雇或线人死亡之前，你不会恢复用于这个Exploit的Exploit骰(%num%)。",
+				"在一个定居点拥有多个线人会提高他们为你收集信息的准确性和保密性。"
+			]
+		},
+		{
+			"name": "Survey Settlement",
+			"source": "LLARo",
+			"page": 8,
+			"foundryImg": "icons/environment/settlement/house-farmland-small.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"dex": 15
+						},
+						{
+							"cha": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"你可以消耗一个利用骰并花费1小时收集你目前占据的定居点1平方英里范围内的信息。在这一小时结束时，你将获得关于以下三项与该地区相关的知识：",
+				{
+					"type": "list",
+					"items": [
+						"该地区是否有任何活跃的派系和派系前哨站。",
+						"著名建筑物，聚集地点，和文化遗址。",
+						"强大的（CR 1或更高）政治家或军事领导者。",
+						"当地居民的忠诚、信仰和恐惧。",
+						"秘密小巷、门、藏身之处，或者店面。"
+					]
+				},
+				"使用这个（Exploit）来勘查一个定居点后，你必须在该地点完成一次长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Agonizing Strike",
+			"source": "LLARo",
+			"page": 8,
+			"foundryImg": "icons/skills/melee/strike-dagger-blood-red.webp",
+			"featureType": [
+				"LL:4DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"ability": [
+						{
+							"dex": 17
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"当你用近战武器攻击一个生物时，你可以消耗一个剥削骰来精准打击，造成痛苦而非伤害。它必须成功进行一次体质豁免才能避免在1分钟内遭受以下效果：",
+				{
+					"type": "list",
+					"items": [
+						"它的任何速度都不能超过10英尺。",
+						"在攻击检定和能力检定上有劣势。",
+						"除了 Constitution 豁免投掷之外，它在所有豁免投掷上都有劣势。",
+						"如果它试图施放一个法术，它必须成功进行一次体质豁免检定，否则施法失败，法术被浪费。"
+					]
+				},
+				"它可以在每个回合结束时进行一次宪法豁免检定，若成功豁免则结束这种痛苦。"
+			]
+		},
+		{
+			"name": "Craft Advanced Poison",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp",
+			"featureType": [
+				"LL:4DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"Poisoner's Kit proficiency"
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"作为一个动作，你可以消耗利用骰子（最多等同于你的熟练加值）并使用一个毒药工具包来制作一瓶高级毒药，该毒药的效力会保持到你下一个长休结束。然而，在你使用这个毒药之前，你无法恢复用于制作它的利用骰子。",
+				"一只生物可以使用动作使用该小瓶，并将其施加在它握持的一件武器或一枚弹药上。在下一次命中时，它造成额外的酸性伤害，伤害值等于你的利用骰的一个骰点，每个你花费的利用骰都会增加一次。目标必须通过一次体质豁免才能成功，否则在接下来的1小时内，所有攻击检定和技能检定都会受到劣势。如果豁免失败值超过5，目标将在此期间失明。",
+				"作为一个动作，生物可以重复进行这次豁免投掷。在成功豁免后，效果结束，但在失败豁免后，它会受到额外的酸性伤害，伤害值等同于你的利用骰(%num%)的结果。"
+			]
+		},
+		{
+			"name": "Expert Determination",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/trades/smithing-anvil-silver-red.webp",
+			"featureType": [
+				"LL:4DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"作为一个动作，你可以消耗一个利用骰来集中精神，暂时提升你的某项技能。选择一个你精通的技能或工具。在接下来的一个小时内，你可以将你的利用骰加到任何使用所选技能的检定中，而不需要消耗你的利用骰之一。"
+			]
+		},
+		{
+			"name": "Fluid Movements",
+			"source": "LLARo",
+			"page": 8,
+			"foundryImg": "icons/magic/water/water-hand.webp",
+			"featureType": [
+				"LL:4DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"ability": [
+						{
+							"dex": 17
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"作为一个奖励动作，你可以消耗一个Exploit Die进入一个提升的移动状态，你必须像专注于一个法术一样专注于它。在1分钟内，或直到你失去集中力，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你的移动不受艰难地形的影响。",
+						"你可以在你的回合使用一个奖励动作来获得冲刺(Dash)和脱离(Disengage)动作的双重效益。",
+						"法术和其他魔法效果既不能减慢你的速度，也不能使你瘫痪或束缚。(D&D)。",
+						"你可以花费5英尺的移动来立即摆脱非魔法约束，比如手铐或者搏斗（grapple）。",
+						"游泳或者在水下不会对你的移动或攻击投掷造成任何惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Craft Masterwork Poison",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp",
+			"featureType": [
+				"LL:5DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Poisoner's Kit proficiency"
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per long rest.}",
+				"作为一个动作，你可以消耗利用骰子（最多等同于你的熟练加值）并使用一个毒药工具包来制作一瓶精制毒药，该毒药的效力会保持到你进行下一个长休为止。然而，在你使用这个毒药之前，你无法重新获得用于制作它的利用骰子。",
+				"一只生物可以采取使用物品动作来消耗这个小瓶，并将其涂抹在它手持的一件武器或一枚弹药上。在下一次命中时，它造成的额外死灵伤害等于你的利用骰的两次投掷结果，每次你消耗一个利用骰，并且目标必须进行一次体质豁免才能。如果失败，它在所有能力检定、攻击检定和豁免检定上都获得劣势，直到使用5级或更高级别的法术来中和毒素（例如(大复原)greater restoration）。",
+				"如果生物失败的点数达到5或更多，它将陷入无能状态，直到被治愈为止，它将无法移动或说话。"
+			]
+		},
+		{
+			"name": "Inconceivable Dodge",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/magic/control/energy-stream-link-large-orange.webp",
+			"featureType": [
+				"LL:5DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"ability": [
+						{
+							"dex": 17
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per long rest.}",
+				"当你受到伤害时，你可以使用你的反应消耗一个Exploit Die，并以超自然的敏捷和速度移动到一个距离你不超过10英尺的空地上，以某种方式避开触发的伤害效果，就好像它从未影响过你一样。"
+			]
+		},
+		{
+			"name": "Mortal Blow",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/skills/melee/strike-dagger-skull-white.webp",
+			"featureType": [
+				"LL:5DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per long rest.}",
+				"当你用近战武器攻击一个生物时，你可以消耗一个Exploit Die，以超自然的精准度打击其最脆弱的部位。它必须成功通过一次体质豁免才能免疫此次攻击的伤害。如果你在攻击投掷骰时有优势，它将以劣势进行这次体质豁免。",
+				"无论生物在这次豁免投掷中成功还是失败，它都会受到额外伤害，伤害类型与你的Exploit Die的四次掷骰结果相等。最后，如果这次攻击的伤害将生物的生命值降至50点或更少，它会倒地并且在下一个回合开始前会被眩晕。生物可以使用传奇抗性来避免这个效果。"
+			]
+		},
+		{
+			"name": "Trickster's Blessing",
+			"source": "LLARo",
+			"page": 7,
+			"foundryImg": "icons/creatures/unholy/demons-horned-glowing-pink.webp",
+			"featureType": [
+				"LL:5DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"ability": [
+						{
+							"dex": 17
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per long rest.}",
+				"当你采取躲藏动作时，你可以消耗一个利用骰来以匪夷所思和超自然的技巧隐藏起来。只要在60英尺范围内有一个可以藏身的地方，你可以立即出现在你选择的一个这样的隐藏位置内，无论对于所有法术和生物，无论它们拥有什么感官或魔法，你都会自动被视为隐藏状态。"
+			]
+		},
+		{
+			"name": "Dual Wielding",
+			"source": "LLARo",
+			"page": 6,
+			"featureType": [
+				"FS:ARo"
+			],
+			"entries": [
+				"当你在进行双武器战斗时采取攻击动作时，你可以额外进行一次单独的副手武器攻击，作为你的动作的一部分，而不是作为你的奖励动作，将你的能力修正值加到这次攻击的伤害中。"
+			]
+		},
+		{
+			"name": "Classical Swordplay",
+			"source": "LLARo",
+			"page": 6,
+			"featureType": [
+				"FS:ARo"
+			],
+			"entries": [
+				"当挥舞一把（finesse weapon）并且没有其他武器时，你的攻击投掷获得+1的奖励，你的护甲等级也获得+1的奖励，只要你没有穿戴重甲或盾牌。"
+			]
+		},
+		{
+			"name": "Featherweight Fighting",
+			"source": "LLARo",
+			"page": 6,
+			"featureType": [
+				"FS:ARo"
+			],
+			"entries": [
+				"当你只装备轻型武器，没有其他武器时，你的速度增加10英尺。同时，只要你没有穿着中重型盔甲或使用盾牌，你使用轻型武器造成的伤害骰获得+1的奖励。"
+			]
+		},
+		{
+			"name": "Thrown Weapon Fighting",
+			"source": "LLARo",
+			"page": 6,
+			"featureType": [
+				"FS:ARo"
+			],
+			"entries": [
+				"你可以使用带有投掷属性的武器进行攻击。此外，当你使用投掷武器进行远程武器攻击命中时，你获得+2的伤害加值。"
+			]
+		},
+		{
+			"name": "Lunge",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/weapons/polearms/pike-flared-brown.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"entries": [
+				"当你进行近战武器攻击时，你可以消耗一个Exploit Die来增加该攻击的射程5英尺。命中时，你可以将一个Exploit Die的点数加到该攻击的伤害骰上。"
+			]
+		},
+		{
+			"name": "Oil Bomb",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/creatures/mammals/livestock-pig-green.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Alchemist's Supplies proficiency"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰(`Exploit Die`)并使用你的炼金术工具来制作一个油弹(`Oil Bomb`)，它会保持效力直到你下一个长休结束。然而，在你使用油弹之前，你无法恢复这个利用骰。",
+				"生物可以使用一个动作来投掷这个炸弹(Oil Bomb)到它能看到的60英尺内的一个点。它在撞击时爆炸，覆盖以那个点为中心的一个10英尺的正方形区域，用炼金油变成艰难地形。在撞击区域内的任何生物，以及进入该区域的任何生物，必须成功进行一个敏捷豁免才能不倒地。",
+				"这种油在地面上保持有效时间为1分钟。"
+			]
+		},
+		{
+			"name": "Streetwise",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/creatures/unholy/demon-fire-imp.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"cha": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"如果你在一个定居点，你可以进行魅力（历史）和魅力（调查）检定，而不是普通的智力（历史）或智力（调查）检定。",
+				"此外，当你进行魅力（历史）或魅力（调查）检定时，你可以消耗一个利用骰，将其投掷，并将结果加到你的能力检定中。你可以在投掷d20之后，但在得知是否成功或失败之前这样做。"
+			]
+		},
+		{
+			"name": "Smoke Bomb",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/commodities/tech/smoke-bomb-yellow.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Alchemist's Supplies proficiency"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰并使用你的炼金术工具来制作一个烟雾弹，该烟雾弹的效力会一直持续到你进行下一个长休息结束。然而，在你使用了烟雾弹之前，你无法恢复这个利用骰。",
+				"生物可以使用一个动作使用物品动作，将这个烟雾弹投向其在60英尺内可见的点。它在撞击时爆炸，产生一个半径20英尺的烟雾球体，可以穿过拐角传播，以撞击点为中心。烟雾使区域变得浓重模糊，并持续10分钟。它可以被至少10英里每小时的中等风力吹散。"
+			]
+		},
+		{
+			"name": "Ringing Strike",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/magic/sonic/bell-alarm-red-purple.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你用近战武器攻击一个生物时，你可以消耗一个Exploit Die，并迫使它进行一次感知豁免检定。如果失败，它在接下来的一分钟内对所有能力检定、攻击骰和豁免检定的结果都减去{@dice 1d4}。",
+				"生物可以在每个回合结束时重复进行这次豁免投掷，成功豁免则效果结束。"
+			]
+		},
+		{
+			"name": "Flash Bomb",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/magic/light/explosion-star-glow-orange.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Alchemist's Supplies proficiency"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以消耗一个利用骰，并使用你的炼金术工具来制作一个闪光弹，它会保持效力直到你进行下一个长休。然而，在你使用闪光弹之前，你无法恢复这个利用骰。",
+				"一只生物可以执行使用物品动作，将这个闪光弹投向其在60英尺内可见的点。它在撞击时爆炸，任何在撞击点周围20英尺内且能看见的生物必须成功进行一次体质豁免才能免疫1分钟的致盲效果。拥有对阳光敏感特性的生物在进行初始豁免检定时具有劣势。",
+				"一个失明的生物可以在每个回合结束时重复进行这次豁免才能检定，成功后效果结束。"
+			]
+		},
+		{
+			"name": "Heroic Will",
+			"source": "LLARoE",
+			"page": 11,
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"每当你被迫进行一次智力、感知或魅力豁免检定时，你可以消耗一个（Exploit Die）并将其加到你的投掷结果上。你可以在投掷后但还不知道是否成功或失败之前使用这个（Exploit）。"
+			]
+		},
+		{
+			"name": "Martial Focus",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/environment/settlement/target-dummy.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你进行武器攻击时，你可以在攻击中消耗一个利用骰(`Exploit Die`)，以使自己在攻击检定中获得优势。你可以在投掷骰子后，但在确定攻击是否命中目标之前使用这个利用。"
+			]
+		},
+		{
+			"name": "Redirect",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/skills/movement/arrow-upward-yellow.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你能看见的生物用近战攻击未命中你时，你可以使用你的反应来消耗一个Exploit Die，并强迫它攻击你选择范围内的另一个生物，为它的攻击投掷一个Exploit Die并加到攻击骰中。"
+			]
+		},
+		{
+			"name": "Counter",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 11
+						}
+					]
+				}
+			],
+			"entries": [
+				"当你能看见的生物用近战攻击未命中你时，你可以使用你的反应来消耗一个(Exploit Die)并对攻击者进行一次单次近战武器攻击。命中时，你可以将你的(Exploit Die)的一个骰结果添加到你的伤害骰中。"
+			]
+		},
+		{
+			"name": "Bewildering Blow",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/creatures/amphibians/frog-confused-green-blue.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"str": 15
+						},
+						{
+							"dex": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"当你用近战武器攻击生物时，你可以消耗一个Exploit Die并以极大的力量打击，造成额外伤害，伤害值等于你的Exploit Die的两次掷骰结果，并迫使目标进行一次感知豁免。如果未通过豁免，目标不能进行反应，并且必须在每个回合开始时掷一次d10以确定其行为，使用下表：\n\n",
+				{
+					"type": "table",
+					"caption": "Bewildering Blow",
+					"colLabels": [
+						"{@dice 1d10}",
+						"Behavior"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"它利用全部移动力朝一个随机方向移动。要确定移动方向，掷一颗d8骰子，并为每个骰子面分配一个方向。本回合不消耗动作。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 2,
+									"max": 5
+								}
+							},
+							"本回合不移动或采取行动。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 6,
+									"max": 7
+								}
+							},
+							"它使用动作对其可触及范围内随机确定的生物进行近战攻击。如果在其可触及范围内没有生物，则该生物本回合不执行任何动作。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 8,
+									"max": 9
+								}
+							},
+							"它可以正常行动和移动。"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 10
+								}
+							},
+							"它躺在地上，本回合不再采取任何行动或移动。"
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				},
+				"这个效果持续1分钟，但生物可以在每个回合结束时进行一次感知豁免检定，如果成功豁免则立即结束这个（Exploit）的效果。"
+			]
+		},
+		{
+			"name": "Incite Violence",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"int": 15
+						},
+						{
+							"cha": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"作为一个动作，你可以消耗一个利用骰，并对一个能听懂你的生物在5英尺内低语激起暴力的话语。它必须通过一次感知豁免才能免受心灵伤害，伤害值相当于你的利用骰掷两次的结果，并立即使用其反应对你选择的范围内的生物进行一次近战攻击。如果在其攻击范围内没有其他生物，目标在你的下一个回合开始前进行的下一次攻击检定有劣势。"
+			]
+		},
+		{
+			"name": "Clandestine Source",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/environment/wilderness/mine-interior-dungeon-door.webp",
+			"featureType": [
+				"LL:4DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"ability": [
+						{
+							"int": 17
+						},
+						{
+							"cha": 17
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"当你在一个相当大的定居点时，你可以消耗一个Exploit Die，并花费1小时使用在该定居点发现的盗贼暗语，以追踪犯罪地下世界的知识渊博的人物，并向其提问。",
+				"如果DM决定在定居点内存在这样的人物，你必须独自接近他们，并必须进行一次DC 15的智力或魅力豁免检定（你选择）。在豁免失败时，你的生命值降至0，你的身体会昏迷在定居点的某个小巷或排水沟中。",
+				"成功豁免后，你有2分钟时间向这个人物提出最多五个问题。这个人物会用一个词来回答每个问题，比如\"是\"、\"不\"、\"可能\"、\"从不\"、\"无关\"或\"不清楚\"（如果他们不知道答案）。如果一个词的回答会误导你，这个人物可能会用一个短语来回答那个问题。",
+				"在一个定居点使用这个 Exploit（无论成功与否）后，你在那里再次使用它需要等待 7 天。"
+			]
+		},
+		{
+			"name": "Quick Draw",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/weapons/guns/gun-pistol-brown.webp",
+			"featureType": [
+				"LL:4DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"ability": [
+						{
+							"dex": 17
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"作为一个奖励动作，你可以消耗一个Exploit骰并进入一种高度集中的状态，你必须像集中在一个法术上一样集中精力。在1分钟内，或者直到你失去集中力，你可以使用你的奖励动作，包括用来使用这个Exploit的奖励动作，进行两次远程武器攻击，只要你有弹药。",
+				"这个Exploit的效果不会与{@spell swift quiver}的效果叠加。"
+			]
+		},
+		{
+			"name": "Contingency Plan",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/creatures/mammals/bats-movement-flying-black.webp",
+			"featureType": [
+				"LL:5DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"ability": [
+						{
+							"int": 19
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per long rest.}",
+				"在一次长休结束时，你可以消耗一个你的利用骰来设置一个未透露的应急计划。在你再次激活这个利用之前，你无法恢复这个利用骰。你一次只能有一个应急计划。",
+				"作为一个动作，你可以揭示你之前未透露的计划（在揭示时即时制定），并进行一次 DC 20 的智力检定。你可以添加一个DM认为适合的技能到你的计划中。如果成功，你的秘密计划和准备将完美地按照你描述的方式生效。",
+				"执行你的计划的成本不能超过相当于5,000 gp，效果不能超过第7级法术。",
+				"例如，你可以透露，上次在一个城镇里你秘密购买了完美的咒语卷轴，或者你支付了一个雇佣兵团或飞艇来解救你。"
+			]
+		},
+		{
+			"name": "Glittering Dust",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/magic/light/explosion-star-glow-silhouette.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@note Cost: 1 Exploit Die.}",
+				"当受到冲击时，反射性颗粒覆盖了一个20英尺的立方体区域，迫使该区域内的生物进行一次敏捷豁免检定。未能通过检定的生物会被这些颗粒覆盖，对其进行的任何攻击投掷都获得优势。",
+				"生物可以使用动作来擦掉身上的所有这些反射性颗粒，从而结束这个爆炸效果。"
+			]
+		},
+		{
+			"name": "Hand Bomb",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/weapons/thrown/bomb-fuse-black-grey.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@note Cost: 1 Exploit Die.}",
+				"在爆炸时，这个简单而有效的炸药会迫使距离内的目标进行一次敏捷豁免检定。在豁免失败时，它们会受到等同于你的（Sneak Attack）潜行攻击奖励的火焰伤害，而在豁免成功时则受到一半的火焰伤害。"
+			]
+		},
+		{
+			"name": "Seismic Charge",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/weapons/thrown/bomb-pressure-black.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@note Cost: 1 Exploit Die.}",
+				"当这颗炸弹爆炸时，会扰乱地面，迫使10英尺范围内的生物进行一次力量豁免检定。如果未通过检定，它们会受到等同于你潜行攻击加值一半的雷霆伤害，而且任何大型或更小的生物会倒地。如果通过检定，它们只受到一半伤害且不会倒地。",
+				"任何由木头、土地或石头制成的非魔法结构都会受到这个爆炸物的最大伤害。",
+				"如果爆炸区域内是松散的泥土或石头，它将变成艰难地形。生物可以在自己的回合使用一个动作来清除一个5英尺的方块这个艰难地形。"
+			]
+		},
+		{
+			"name": "Tangleroot",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/creatures/tentacles/tentacle-earth-green.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@note Cost: 1 Exploit Die.}",
+				"冲击时，合成藤蔓迸发，周围5英尺范围内的生物必须进行一次敏捷豁免检定。未通过检定的生物将被藤蔓束缚，最多持续1分钟。作为一个动作，被束缚的生物可以选择进行一次力量或敏捷检定，检定目标为你的利用豁免 DC。若成功，它们将摆脱束缚藤蔓的效果。"
+			]
+		},
+		{
+			"name": "Alchemical Webbing",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/creatures/webs/web-spider-pink.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"{@note Cost: 2 Exploit Die.}",
+				"当生效时，粘性炼金网覆盖一个20英尺的立方体，制造出难行的地形并轻度遮蔽该立方体区域。如果没有垂直表面、墙壁或天花板来支撑这些网，它会坍塌并立即溶解。",
+				"任何生物如果在蜘蛛网中开始它的回合，或者在它的回合内进入该区域，必须成功进行一次敏捷豁免检定，否则将被蜘蛛网束缚。",
+				"作为一个动作，被限制的生物可以选择进行一次力量或敏捷检定，检定目标为你的利用存档 DC。若成功，它将不再被网困住。",
+				"炼金网格持续1分钟。如果它受到任何火焰伤害，所有网格将立即溶解。"
+			]
+		},
+		{
+			"name": "Incendiary Bomb",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/magic/fire/projectile-fireball-smoke-strong-orange.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"{@note Cost: 2 Exploit Die.}",
+				"冲击时，一团火球向外扩散，半径30英尺，迫使区域内的生物进行一次敏捷豁免检定。生物在未通过豁免检定时受到等同于你的（Sneak Attack）潜行攻击奖励的火焰伤害，通过检定则受到一半伤害。",
+				"此外，该区域内的任何易燃物体都会被点燃。"
+			]
+		},
+		{
+			"name": "Noxious Gas",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/consumables/mushrooms/convex-green-brown.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"{@note Cost: 2 Exploit Die.}",
+				"在冲击时，一团腐臭的黄色气体向外扩散，形成一个半径为20英尺的球体。它会绕过角落并在1分钟内严重遮蔽区域。任何在云雾中开始回合的生物必须通过一次体质豁免才能免受咳嗽和气喘的影响。任何对毒素免疫或者不需要呼吸的生物会自动通过体质豁免。"
+			]
+		},
+		{
+			"name": "Greater Seismic Charge",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/weapons/thrown/bomb-timer.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"{@note Cost: 3 Exploit Die.}",
+				"在冲击时，一团恶臭的黄色气体向外扩散，形成一个半径为20英尺的球体。它会绕过角落并在1分钟内使区域严重阻塞。任何在云雾中开始回合的生物必须成功进行一次体质豁免才能避免在烟雾中呕吐和摇晃。对于对毒素免疫或不需要呼吸的生物，它们会自动成功进行体质豁免。当这颗炸弹爆炸时，它会扰乱大地，迫使30英尺内的生物进行一次力量豁免。如果失败，它们会受到等同于你的潜行攻击加值的雷电伤害，并且任何巨型或更小的生物会倒地。如果成功，它们会受到一半伤害且不会倒地。",
+				"任何由木头、土地或石头制成的非魔法结构都会受到这个爆炸物的最大伤害。",
+				"如果爆炸区域内是松散的泥土或石头，它将变成艰难地形。生物可以在自己的回合使用一个动作来清除一个5英尺的方块这个艰难地形。"
+			]
+		},
+		{
+			"name": "Vitriolic Charge",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/magic/acid/orb-bubble-smoke-drip.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"{@note Cost: 3 Exploit Die.}",
+				"先决条件：13级潜行者，成本：3点利用骰 在冲击时，一股酸性化学物质的波浪向外爆炸，覆盖30英尺半径范围内的任何生物，迫使它们进行一次敏捷豁免检定。如果未通过检定，它们会受到等同于你的偷袭伤害加成的酸性伤害，并在它们的下一个回合开始时受到相当于你偷袭伤害加成一半的酸性伤害。"
+			]
+		},
+		{
+			"name": "Astral Vortex",
+			"source": "LLARoE",
+			"page": 7,
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+			"featureType": [
+				"LL:BOOM"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"{@note Cost: 4 Exploit Die.}",
+				"冲击时，一个通往（Astral Plane）的裂缝会打开，5英尺内的生物必须通过一次魅力豁免检定，否则会被吸入裂缝并在那里停留1分钟。之后，通往（Astral Plane）的裂缝消失。",
+				"在每个回合结束时，任何通过裂缝被放逐到星界的生物都可以重复进行这次豁免扑，若成功则返回到原来的位置。"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Alternate Dungeon Delver",
+			"source": "LLARoE",
+			"page": 5,
+			"entries": [
+				"你在探索地牢和拆除致命陷阱方面已经达到了顶尖水平。你获得以下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以选择在感知（Perception）、调查（Investigation）或盗贼工具（thieves' tools）中获得熟练加成。此外，当你使用这些熟练进行能力检定时，如果d20的点数为7或更低，你可以将其视为8。",
+						"你在避免或抵抗陷阱的豁免投掷中拥有优势，并对陷阱造成的伤害具有抗性。",
+						"在地牢中快速移动不会对你的被动侦查和感知分数产生正常的惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Alternate Skulker",
+			"source": "LLARoE",
+			"page": 5,
+			"entries": [
+				"你擅长在阴影中潜行并保持隐蔽。你获得如下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你处于轻度遮蔽时，你可以在你的回合中将躲藏动作作为一个额外动作进行。",
+						"如果你对一个生物隐藏并且用远程攻击未命中，你不会暴露你的位置。",
+						"昏暗光线不会对依赖视觉的能力检定造成劣势。"
+					]
+				}
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Devious Training",
+			"source": "LLARoE",
+			"page": 5,
+			"entries": [
+				"你已经研究了卑鄙技巧，以执行阴险行动。你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以学习两个来自备选盗贼（Alternate Rogue）可用的1级狡诈（Devious）技能。如果一个技能需要目标进行豁免才能抵抗，豁免 DC 为 8 + 你的熟练加值 + 你的力量或敏捷调整值（你选择）。",
+						"每次你升级时，你可以用你选择的任意一个1级程度的(`Devious`)诡计(`Exploit`)来替换一个(`Exploit`)。",
+						"你获得两个d4利用骰用于你的利用。当使用时，一个利用骰会被消耗。当你完成一个短休或长休时，你会重新获得所有的利用骰。",
+						"如果你从其他来源获得了利用骰（Exploit Dice），你只会获得一个与你其他利用骰相等的利用骰。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Roguish Initiate",
+			"source": "LLARoE",
+			"page": 5,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				"你已经花费时间磨练与犯罪世界相关的才能。你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"将你的敏捷属性值增加1，最高不超过20。",
+						"你学会了说、读、写和破译盗贼暗语 (Thieves' Cant)。",
+						"选择以下行动中的一个：冲刺(Dash)、躲藏(Hide)或使用物品(Use an Object)，你可以将该行动作为一个奖励动作。"
+					]
+				},
+				"你可以多次选择这个特性。每次你这样做时，你必须从上面的列表中选择一个不同的动作，并学会说、读、写一种你选择的语言。"
+			]
+		}
+	]
+}

@@ -1,0 +1,424 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TouhouSpells3",
+				"abbreviation": "THSP3",
+				"full": "Touhou Spells 3",
+				"url": "https://www.gmbinder.com/share/-LpPkM1-DFJo6YohbmPi",
+				"authors": [
+					"nomiddlename303"
+				],
+				"convertedBy": [
+					"Lilo Marino"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1705781164,
+		"dateLastModified": 1705781164,
+		"_dateLastModifiedHash": "a2a4e0d719"
+	},
+	"spell": [
+		{
+			"name": "Giga Flare",
+			"source": "TouhouSpells3",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rod of dense metal"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 5
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你收集大量核能量，并在射程内的一个点为中心释放它，引发一个半径60尺的暴力连锁反应。这个球体是明亮的光，能够传播到角落并点燃未被穿戴或携带的易燃物品。",
+				"当球体出现时，其范围内的每个生物必须进行一次体质豁免检定。未通过豁免的生物会受到{@damage 5d8}火焰伤害，{@damage 5d8}辐射伤害，并获得一层{@condition exhaustion}。通过豁免的生物会受到一半伤害，并且不会遭受{@condition exhaustion}效果。",
+				"在你的每个回合开始时，范围内的每个生物必须进行一次体质豁免投掷。未通过豁免的生物会受到{@damage 4d8}火焰伤害，{@damage 4d8}光辉伤害，并获得一级{@condition exhaustion}。通过豁免的生物会受到一半伤害，并且不会遭受{@condition exhaustion}。此法术在随后回合造成的火焰和光辉伤害都会减少{@dice 1d8}。",
+				"当这个法术结束时，由该法术造成的任何等级的{@condition exhaustion}都会消失。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire",
+				"radiant"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"LGT",
+				"OBJ"
+			]
+		},
+		{
+			"name": "Resurrection Butterfly",
+			"source": "TouhouSpells3",
+			"level": 9,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fan"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在持续时间内，一道死亡的幽灵般、半透明的披风环绕着你，范围为60英尺。作为你回合的奖励动作，你可以引发一团由死灵能量构成的虚幻蝴蝶在这个范围内爆发。范围内的每个你选择的生物（至少一个）必须进行一次魅力豁免检定。未通过豁免检定的生物会受到{@damage 4d8}点死灵伤害，再额外受到{@damage 4d8}点死灵伤害，每次使用此奖励动作后的伤害会增加，最多可达{@damage 20d8}点伤害。通过豁免检定的生物只会受到一半的伤害。",
+				"一个生物如果未能通过豁免检定，还会受到额外效果的影响，这个效果取决于自施法以来使用此奖励动作的次数。",
+				"- 1次或更多次：在1轮内使用{@condition blinded}和{@condition deafened}。",
+				"- 2次或更多次：{@condition restrained} 持续1回合",
+				"- 3次或更多次：1轮内{@condition stunned}",
+				"- 4次或更多次：1轮内{@condition paralyzed}",
+				"- 5次或更多次：如果生物拥有50个或更少的生命值，将立即被击杀。",
+				"在该光环范围内的非魔法植物会立即死亡，同样，1级及以下的生物也会死亡。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened",
+				"restrained",
+				"stunned",
+				"paralyzed"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"UBA",
+				"AAD"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"S"
+			]
+		},
+		{
+			"name": "Sanguine Spear",
+			"source": "TouhouSpells3",
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a sacrificial dagger worth at least 100 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你打开你的手腕，将你的血液形成一支邪恶的死灵能量长矛，以惊人的速度发射出去，形成一个起点为你的5英尺宽、120英尺长的直线。你受到{@damage 4d8}点死灵伤害，这种伤害无视抗性和免疫，无法以任何方式减少。你的最大生命值也会减少同样的数值，直到你进行一次长休。",
+				"每个生物都必须进行一次敏捷豁免投骰。在豁免失败时，生物会受到等同于你所受到的死灵伤害的伤害，以及{@damage 4d8 + 40}穿刺伤害，并且会在1分钟内被{@condition poisoned}。在豁免成功时，生物只会受到一半伤害，并且不会被{@condition poisoned}。",
+				"当生物被这个法术影响时，它无法恢复生命值。一个被 {@condition poisoned} 的生物可以在每个回合结束时进行一次体质豁免，成功则结束 {@condition poisoned} 状态。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"necrotic",
+				"piercing"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Scarlet Rapture",
+			"source": "TouhouSpells3",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你分开天空，召唤神圣能量的光束来毁灭大地。施放此法术时，你必须在室外并且有一条通往天空的清晰路径。选择两个你能看到的点之间长达90英尺的一条线。在该线路30英尺范围内的每个生物必须进行一次体质豁免才能，未通过则受到{@damage 4d10} 点力量伤害和{@damage 4d10} 点辐射伤害，通过则伤害减半。未通过豁免的生物在法术持续时间内也会失去任何伤害抗性。",
+				"在法术持续期间，距离该线30英尺内的地面闪耀着神圣能量。每当一个生物在回合内首次进入该区域或者在那里开始它的回合时，它必须进行一次体质豁免检定，未通过则受到{@damage 1d10} 点力量伤害和{@damage 1d10} 点辐射伤害，通过则只受到一半伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"force",
+				"radiant"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"LGT"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Trauma Recollection",
+			"source": "TouhouSpells3",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ruby eye worth at least 300 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你伸手进入你能看到范围内的一只生物的思维，并将其最深的创伤变成现实。当你施放这个法术时，你会知道在过去30天中以目标的所有法术，并且在持续时间内，目标是你的{@condition frightened}。",
+				"作为一个动作，你可以选择以下这些咒语之一，并将其实现为现实，亲自施放。你消耗一个法术位，就像你自己施放它一样，使用你自己的法术豁免 DC 和法术命中加值。该咒语必须具有1个动作的施法时间，并以以下修改方式施放：",
+				"- 如果所施放的法术针对一个区域或多个目标，只有目标生物会受到影响。",
+				"- 如果所施放的法术持续时间不是瞬发的，它将持续这个法术的持续时间。如果需要{@status concentration}，那么它将持续到你集中精力维持这个法术，这段时间内你不能施放另一个{@status concentration}法术。",
+				"- 如果所施放的法术需要豁免才能，目标在对抗该法术的第一次豁免才能检定时，如果目标距离你 {@condition frightened}，则其具有劣势。如果法术需要攻击骰检定，且目标距离你 {@condition frightened}，则你对攻击骰检定具有优势。",
+				"每当目标生物受到一个显现法术的影响时，它可以进行一次感知豁免检定，若成功则结束该法术。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"ADV"
+			]
+		}
+	],
+	"roll20Spell": [
+		{
+			"name": "Giga Flare",
+			"source": "TouhouSpells3",
+			"data": {
+				"Save": "Constitution",
+				"Damage": "5d8",
+				"Damage Type": "Fire",
+				"Save Success": "Half as much damage and doesn't suffer exhaustion",
+				"Secondary Damage": "5d8",
+				"Secondary Damage Type": "Radiant"
+			}
+		},
+		{
+			"name": "Resurrection Butterfly",
+			"source": "TouhouSpells3",
+			"data": {
+				"Save": "Charisma",
+				"Damage": "4d8",
+				"Damage Type": "Necrotic",
+				"Save Success": "Half as much damage"
+			}
+		},
+		{
+			"name": "Sanguine Spear",
+			"source": "TouhouSpells3",
+			"data": {
+				"Save": "Dexterity",
+				"Damage": "4d8 + 40",
+				"Damage Type": "Piercing",
+				"Save Success": "Half as much damage and isn't poisoned"
+			}
+		},
+		{
+			"name": "Scarlet Rapture",
+			"source": "TouhouSpells3",
+			"data": {
+				"Save": "Constitution",
+				"Damage": "4d10",
+				"Damage Type": "Force",
+				"Save Success": "Half as much damage",
+				"Secondary Damage": "4d10",
+				"Secondary Damage Type": "Radiant"
+			}
+		},
+		{
+			"name": "Trauma Recollection",
+			"source": "TouhouSpells3",
+			"data": {
+				"Save": "Wisdom",
+				"Target": "One creature you can see within range",
+				"Save Success": "End the spell"
+			}
+		}
+	]
+}

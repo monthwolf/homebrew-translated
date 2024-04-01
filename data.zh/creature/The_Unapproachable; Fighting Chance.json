@@ -1,0 +1,3654 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FightingC",
+				"abbreviation": "FC",
+				"full": "Fighting Chance",
+				"authors": [
+					"The_Unapproachable"
+				],
+				"convertedBy": [
+					"zombiekiller 101"
+				],
+				"version": "1.2",
+				"url": "https://drive.google.com/file/d/1FDdAnp1zMsMQjC9QIhpiNekucrTLWxbd/view",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1555319662,
+		"dateLastModified": 1706998579,
+		"internalCopies": [
+			"monsterFluff"
+		],
+		"_dateLastModifiedHash": "37b3d959bd"
+	},
+	"monster": [
+		{
+			"source": "FightingC",
+			"name": "Belberith (Red Stalker)",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 216,
+				"formula": "16d12 + 112"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 20
+			},
+			"str": 23,
+			"dex": 12,
+			"con": 24,
+			"int": 11,
+			"wis": 13,
+			"cha": 13,
+			"save": {
+				"dex": "+6",
+				"con": "+12",
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+6",
+				"survival": "+6"
+			},
+			"resist": [
+				"cold",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"understands Abyssal but can't speak it",
+				"telepathy 120 ft."
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Chameleon Carapace",
+					"entries": [
+						"贝尔贝里特人在为隐藏而进行的灵巧（隐身）检查中具有优势。"
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"熊在依靠嗅觉的智慧（（%0%））和智慧（（%1%））检查中具有优势。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"巴洛尔在面对法术和其他魔法效果时，在蓄力攻击上有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"巴洛尔的武器攻击是神奇的。"
+					]
+				},
+				{
+					"name": "Piercing Claws",
+					"entries": [
+						"Belberith爪子的攻击在掷出19或20的情况下会得到一个关键的命中。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Belberith可以进行三次近战攻击，但只能使用一次它的咬伤。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11}击中，到达10英尺，一个目标。{@h}13({@damage 2d6 + 6})的砍击伤害加上16({@damage 3d10})的毒药伤害，目标必须成功进行{@dc 20}宪法救赎，否则会变成{@condition poisoned}，持续1分钟。当{@condition poisoned}时，目标会倒下{@condition prone}，并被{@condition paralyzed}。目标可以在其每个回合结束时重复蓄力，如果成功则结束对自己的影响。如果它在初始或任何后续的蓄力投掷中失败了5次或更多，目标会被降低到0点。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 11}击中，到达10英尺，一个目标。{@h}21 ({@damage 4d6 + 6})穿刺伤害。在对穿着非魔法盔甲或携带非魔法盾牌的目标造成关键打击时，belberith可以摧毁非魔法盔甲或非魔法盾牌。"
+					]
+				},
+				{
+					"name": "Web (3/Day)",
+					"entries": [
+						"{@atk rw}{@hit 11}击中，范围30/60英尺，一个巨兽或更小的生物。{@h}目标被网状物缠住{@condition restrained}。作为一个行动，{@condition restrained}目标可以做一个{@dc 16}力量检查，如果成功的话，就可以刺破网状物。网状物也可以被攻击和摧毁（AC15；HP5；易受火系伤害；对重击、毒药和精神伤害免疫），但未能摧毁它的武器会被卡住，需要进行{@dc 16}力量检查才能拉出。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Belberith的先天法术能力是魅力（法术保存（%0%））。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell plane shift} (self only)"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"CS",
+				"TP"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Abigor (Dragoon Devil)",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"damageTags": [
+				"S",
+				"I",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"paralyzed",
+				"restrained"
+			],
+			"hasFluff": true,
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Githyanki Duthka'gith",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gith"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"driftmetal plate"
+					]
+				}
+			],
+			"hp": {
+				"average": 221,
+				"formula": "26d8 + 104"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 14,
+			"wis": 14,
+			"cha": 17,
+			"save": {
+				"con": "+9",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+7"
+			},
+			"resist": [
+				"fire",
+				"psychic"
+			],
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Draconic",
+				"Gith"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"当Githyanki用其击中时，近战武器会造成其伤害的一个额外模子（包括在攻击中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"吉特汉克可以使用它的伊菲罗曼光环。然后它可以进行三次近战或远程攻击。"
+					]
+				},
+				{
+					"name": "Silver Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 13}击中，到达5英尺，一个目标。{@h}18 ({@damage 3d6 + 8})砍击伤害加上14 ({@damage 4d6})精神伤害。这是一个魔法武器攻击。在对处于星体中的目标进行关键打击时（与{@spell astral projection}法术一样），吉特汉克可以切断将目标与物质身体拴在一起的银色绳子，而不是造成伤害。"
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw}{@hit 10}命中，距离5英尺或范围30/120英尺，一个目标。{@h}8 ({@damage 1d6 + 5})穿刺伤害加上14 ({@damage 4d64})精神伤害。"
+					]
+				},
+				{
+					"name": "Aura of Ephelomon",
+					"entries": [
+						"每个在Githyanki的30英尺范围内，并且意识到它的生物都必须在一个{@dc 16}的智慧救赎中成功，否则会变成{@condition frightened}，持续1分钟。一个生物可以在它的每个回合结束时重复蓄力，如果成功则结束对它的影响。如果一个生物的救赎成功或效果结束，该生物在接下来的24小时内对吉特汉克的伊菲罗曼光环免疫。"
+					]
+				},
+				{
+					"name": "Breath of Ephelomon {@recharge 5}",
+					"entries": [
+						"Githyanki在30英尺的范围内喷火。该区域内的每个生物都必须做一个{@dc 17}灵巧的蓄力动作，蓄力失败会受到56({@damage 18d6})的火焰伤害，蓄力成功则受到一半的伤害。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"githyanki与生俱来的法术能力是智力（法术救赎（%0%），用法术攻击命中率（%1%））。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell mage hand} (the hand is invisible)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell detect thoughts}",
+							"{@spell jump}",
+							"{@spell misty step}",
+							"{@spell nondetection} (self only)",
+							"{@spell tongues}"
+						],
+						"1e": [
+							"{@spell blink}",
+							"{@spell plane shift}",
+							"{@spell telekinesis}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"githyanki在对抗一次会击中它的近战攻击时，会在其AC上增加5。要做到这一点，githyanki必须看到攻击者，并且挥舞着近战武器。"
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"DR",
+				"GTH"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Githyanki Duthka'gith",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE",
+				"MLW"
+			],
+			"damageTags": [
+				"S",
+				"Y",
+				"P",
+				"F"
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"javelin|phb"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Githyanki Flameweaver",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gith"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "13d8 + 26"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 14,
+			"int": 15,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"con": "+5",
+				"int": "+5",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+5"
+			},
+			"resist": [
+				"fire",
+				"psychic"
+			],
+			"passive": 12,
+			"languages": [
+				"Draconic",
+				"Gith"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Fire of the Mind",
+					"entries": [
+						"如果目标对吉特汉克的1级或更高级的火系法术的救赎失败，就会变成（%0%），持续1分钟。当{@condition frightened}时，目标在其每个回合开始时也会受到5({@damage 2d4})的精神伤害。在其每个回合结束时，目标必须成功地进行{@dc 15}智力救赎才能结束该效果。"
+					]
+				},
+				{
+					"name": "Sorcery Points",
+					"entries": [
+						"githyanki有8个巫术点。它可以花费1个或更多的巫术点数作为奖励动作来获得以下一个或两个好处。",
+						"谨慎施法。当Githyanki施展一个迫使其他生物做出拯救动作的法术时，它可以保护其中一些生物不受法术的完全影响。为此，它花费1个巫术点，并在这些生物中选择一定数量的生物，其数量与它的魅力修改器相同。被选中的生物会自动成功地对该法术进行救赎。",
+						"强化法术。当Githyanki为一个法术掷出伤害时，它可以花费1个巫术点来重新掷出伤害骰子的数量，最多为它的魅力修正值。它必须使用新的卷轴。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw}{@hit 5}击中，范围5英尺或20/60英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害加上5 ({@damage 2d4})火焰伤害。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"githyanki的先天法术能力是智力。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell mage hand} (the hand is invisible)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell jump}",
+							"{@spell misty step}",
+							"{@spell nondetection} (self only)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"githyanki是一个8级的施法者。它的法术能力是魅力（法术保存（%0%），用法术攻击命中率（%1%））。它有以下的巫师法术准备。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell control flames}",
+								"{@spell create bonfire}",
+								"{@spell fire bolt}",
+								"{@spell produce flame}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell absorb elements}",
+								"{@spell burning hands}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell flaming sphere}",
+								"{@spell pyrotechnics}",
+								"{@spell scorching ray}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell fireball}",
+								"{@spell haste}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell wall of fire}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"languageTags": [
+				"DR",
+				"GTH"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Githyanki Flameweaver",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW",
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"F",
+				"Y"
+			],
+			"spellcastingTags": [
+				"P",
+				"I",
+				"CS"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Githyanki Lichblade",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gith"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"driftmetal plate"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d8 + 32"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"int": "+6",
+				"wis": "+6",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+6",
+				"religion": "+6",
+				"stealth": "+6"
+			},
+			"resist": [
+				"psychic"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Gith",
+				"Infernal"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"神奇的黑暗并不妨碍Githyanki的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Disrupt Divinity",
+					"entries": [
+						"每当githyanki伤害一个正在专心施展神术的生物时，该生物在为保持注意力而进行的宪法救赎上有劣势。此外，每当githyanki施放{@spell counterspell}来打断一个神圣咒语的施放，它就会以优势滚动任何能力检查。"
+					]
+				},
+				{
+					"name": "Pact of the Lich-Queen",
+					"entries": [
+						"当Githyanki对一个生物造成精神伤害时，Githyanki会获得5个临时命中率，并且该生物在Githyanki的下一回合开始前无法恢复命中率。"
+					]
+				},
+				{
+					"name": "Psychic Sinkhole",
+					"entries": [
+						"任何进入或开始它的回合在5英尺范围内的生物都不能采取脱离行动，除非它做一个{@dc 16}的智慧救赎。此外，这个区域内的生物在死亡救赎上有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"吉特汉克用它的大剑攻击了两次。"
+					]
+				},
+				{
+					"name": "Silver Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达5英尺，一个目标。{@h}14 ({@damage 2d6 + 6})砍击伤害加上10 ({@damage 3d6})精神伤害。这是一个魔法武器攻击。在对处于星体中的目标进行关键打击时（与{@spell astral projection}法术一样），Githyanki可以切断拴住目标与物质身体的银色绳子，而不是造成伤害。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"githyanki与生俱来的法术能力是智力（法术救赎（%0%），用法术攻击命中率（%1%））。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell mage hand} (the hand is invisible)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell detect thoughts}",
+							"{@spell jump}",
+							"{@spell misty step}",
+							"{@spell nondetection} (self only)",
+							"{@spell tongues}"
+						],
+						"1e": [
+							"{@spell plane shift}",
+							"{@spell telekinesis}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"githyanki是一个9级的施法者。它的法术能力是魅力（法术救赎（%0%），用法术攻击击中（%1%））。当它完成短时或长时的休息时，它可以重新获得其消耗的法术槽。它知道以下的术士法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell booming blade}",
+								"{@spell eldritch blast}",
+								"{@spell minor illusion}"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell aid}",
+								"{@spell darkness}",
+								"{@spell contagion}",
+								"{@spell counterspell}",
+								"{@spell fly}",
+								"{@spell hex}",
+								"{@spell mirror image}",
+								"{@spell shield}",
+								"{@spell silence}",
+								"{@spell vampiric touch}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"reaction": [
+				{
+					"name": "Lightning Strike",
+					"entries": [
+						"当有敌意的生物的运动引发了一次机会性的攻击时，吉特汉克可以施展（%0%）并作为反应攻击该生物。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GTH",
+				"I"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Githyanki Lichblade",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"spellcastingTags": [
+				"P",
+				"I",
+				"CL"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O"
+			],
+			"hasFluff": true,
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Githyanki Mindraider",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gith"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "11d8 + 11"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 12,
+			"int": 13,
+			"wis": 13,
+			"cha": 10,
+			"save": {
+				"dex": "+5",
+				"int": "+4",
+				"wis": "+3"
+			},
+			"skill": {
+				"insight": "+3",
+				"intimidation": "+4",
+				"perception": "+3"
+			},
+			"resist": [
+				"psychic"
+			],
+			"passive": 13,
+			"languages": [
+				"Gith"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Mental Dominator",
+					"entries": [
+						"目标对这个Githyanki的{@spell charm person}、{@spell detect thoughts}和{@spell dominate person}的法术有不利的拯救。"
+					]
+				},
+				{
+					"name": "Unwitting Ally",
+					"entries": [
+						"当Githyanki在它所控制的目标的5英尺范围内时，它在灵巧和智慧的能力检查和蓄力方面具有优势。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当githaynki用武器攻击击中目标并在攻击卷上有优势时，或者当目标在githyanki的盟友5英尺内不是{@condition incapacitated}且githyanki在攻击卷上没有劣势时，会造成额外的14（{@dice 4d6}）伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Redirect Attack",
+					"entries": [
+						"当Githyanki可以看到的生物以它为攻击目标时，Githyanki会在它周围5英尺内选择一个被它支配的人形生物。两者互换位置，被支配的人形生物成为目标。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"githyanki的先天法术能力是智力。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell friends}",
+						"{@spell mage hand} (the hand is invisible)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell charm person}",
+							"{@spell detect thoughts}",
+							"{@spell dominate person} (as 8th-level spell)",
+							"{@spell jump}",
+							"{@spell misty step}",
+							"{@spell nondetection} (self only)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"languageTags": [
+				"GTH"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Githyanki Mindraider",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Gnoll Huntmaster",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnoll"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Gnoll"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Rampage",
+					"entries": [
+						"当地精在自己的回合内用近战攻击将一个生物的命中率降至0时，地精可以采取一个额外的行动，移动到其速度的一半，并进行一次咬人攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"地精进行两次攻击，可以用它的长矛或长弓，如果可以的话，还可以使用它的鲁莽拦截。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4}击中，范围5英尺或20/60英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害，如果用双手进行近身攻击，则为6 ({@damage 1d8 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 3}击中，范围150/600英尺，一个目标。{@h}5 ({@damage 1d8 + 1})穿刺伤害，并且目标的速度降低10英尺，直到下一回合结束。"
+					]
+				},
+				{
+					"name": "Reckless Barrage {@recharge 5}",
+					"entries": [
+						"在它周围60英尺范围内最多有三个盟友的地精，如果他们能听到地精的声音并且具有狂暴的特性，他们可以各自使用他们的反应来进行一次不利的远程攻击。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"如果地精看到一个有意识的生物受到伤害，并且有10点或更少的命中率，它可以用它的反应对该生物进行一次远程攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gnoll Huntmaster",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"RNG",
+				"MLW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"longbow|phb",
+				"spear|phb"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Gnoll Deathpledge",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnoll"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 8,
+			"wis": 11,
+			"cha": 9,
+			"save": {
+				"str": "+5",
+				"con": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Gnoll"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Rampage",
+					"entries": [
+						"一个近战武器在地精用它击中时，会额外造成一个模子的伤害（包括在它的攻击中）。"
+					]
+				},
+				{
+					"name": "Fateful Aura",
+					"entries": [
+						"任何在地精15英尺范围内的生物，在死亡拯救动作上都处于劣势。"
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"当地精在自己的回合内用近战攻击将一个生物的命中率降至0时，地精可以采取一个额外的行动，移动到其速度的一半，并进行一次咬人攻击。"
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"在它的回合开始时，地精可以在它在该回合所做的所有近战武器攻击卷上获得优势，但对它的攻击卷有优势，直到它下一回合开始。"
+					]
+				},
+				{
+					"name": "Warmonger",
+					"entries": [
+						"任何在这个地精5英尺范围内的敌对生物在对没有这个特性或类似特性的目标进行攻击时都会处于不利地位。如果敌人看不到或听不到这个地精的声音，或者不能被{@condition frightened}，就对这个效果免疫。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"地精用它的战斧进行了两次攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个生物。{@h}8 ({@damage 2d4 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 5}命中，范围5英尺，一个目标。{@h}12 ({@damage 2d8 + 3})的砍击伤害，或在用双手进行近身攻击时，造成6 ({@damage 2d10 + 3})的砍击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage",
+				"Reckless"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gnoll Deathpledge",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"battleaxe|phb"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Gnoll Goreface",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnoll"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 12,
+			"int": 6,
+			"wis": 8,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Gnoll"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"地精对任何没有全部命中率的生物的近战攻击卷有优势。"
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"当地精在自己的回合内用近战攻击将一个生物的命中率降至0时，地精可以采取一个额外的行动，移动到其速度的一半，并进行一次咬人攻击。"
+					]
+				},
+				{
+					"name": "Relentless (Recharges after a Short or Long Rest)",
+					"entries": [
+						"如果地精受到的15点或更少的伤害会使它的命中率降至0，那么它的命中率反而会降至1。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"地精进行了两次攻击：一次是用它的大斧，一次是用它的咀嚼。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}8 ({@damage 1d12 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Yeenoghu's Feast",
+					"entries": [
+						"地精以它周围5英尺内的一个智能生物的尸体为食，该生物在过去一分钟内被它杀死。地精立即为 \"无情 \"充能，获得10({@dice 3d6}的临时命中率，并在下一次近战攻击中拥有优势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gnoll Goreface",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"greataxe|phb"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Gnoll Mangeheart (Yeenoghu Shaman)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnoll"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": {
+					"number": 25,
+					"condition": " (45 ft. in hyena form)"
+				}
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 12,
+			"int": 9,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"animal handling": "+3",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Gnoll"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Rampage",
+					"entries": [
+						"当地精在自己的回合内用近战攻击将一个生物的命中率降至0时，地精可以采取一个额外的行动，移动到其速度的一半，并进行一次咬人攻击。"
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"当地精在自己的回合内用近战攻击将一个生物的命中率降至0时，地精可以采取一个额外的行动，移动到其速度的一半，并进行一次咬人攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个生物。{@h}2 ({@damage 1d4})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Quarterstaff (Gnoll Form Only).",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，范围5英尺，一个目标。{@h}3 ({@damage 1d6})重击伤害，如果用双手挥舞，则会造成4 ({@damage 1d8})重击伤害。"
+					]
+				},
+				{
+					"name": "Change Shape (Recharges after a Short or Long Rest)",
+					"entries": [
+						"地精会神奇地多态化为土狼，并在该形态下保持长达3小时。它可以作为一个额外动作恢复到它的真实形态。除了速度之外，它的统计数据在每种形态下都是一样的。它所穿戴或携带的任何装备都会被新形态所吸收。如果它死了，它就会恢复到它的真实形态。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Cursed Wound",
+					"entries": [
+						"当盟友用近战攻击击中一个生物时，地精会对该伤口进行诅咒，前提是该生物对地精来说是可见的，并且在60英尺内。目标会被诅咒，直到它的下一个回合结束。当以这种方式被诅咒时，它的速度会减半，并且在下一次攻击卷中处于不利地位。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Gnoll Form Only)",
+					"headerEntries": [
+						"侏儒是一个5级的施法者。它的法术能力是智慧（法术救赎（%0%），用法术攻击击中（%1%））。地精有以下德鲁伊法术的准备。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell infestation}",
+								"{@spell produce flame}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell beast bond}",
+								"{@spell faerie fire}",
+								"{@spell snare}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell beast sense}",
+								"{@spell pass without trace}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell conjure animals} (hyenas or giant hyenas only)"
+							]
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gnoll Mangeheart (Yeenoghu Shaman)",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"spellcastingTags": [
+				"F",
+				"CD"
+			],
+			"actionTags": [
+				"Shapechanger"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"hasFluff": true,
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Gnoll Rot-Walker",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 22,
+				"formula": "3d8 + 9"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 5,
+			"cha": 5,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 7,
+			"languages": [
+				"understands Gnoll but can't speak"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Cackle Fever Carrier",
+					"entries": [
+						"在{@dice 1d4}小时后，任何被腐尸行者伤害的生物必须成功进行{@dc 13}宪法救赎，否则就会感染疾病。患病的生物会获得一个{@condition exhaustion}的等级，在疾病被治愈之前是不能被移除的。",
+						"任何给受感染的生物带来巨大压力的事件--包括进入战斗、受到伤害、经历恐惧或做恶梦--都会迫使该生物做出一个{@dc 13}宪法救赎。如果救赎失败，该生物会受到5({@damage 1d10})的精神伤害，并在1分钟内发出{@condition incapacitated}类似鬣狗的叫声。该生物可以在它的每个回合结束时重复这个蓄力动作，如果成功，则结束咯咯叫和{@condition incapacitated}状态。",
+						"任何在被感染的生物的10英尺范围内开始行动的人形生物，必须在一个{@dc 10}宪法救赎中成功，否则也会被感染。一旦一个生物成功地完成了这一救赎，它就会在24小时内免疫于该特定患病生物的鬣狗般的叫声。",
+						"在每次长休结束时，患病的生物可以做一个{@dc 13}宪法救赎动作。如果救赎成功，这个救赎的DC和避免类似鬣狗叫声的攻击的DC就会下降（%1%）。当救赎DC下降到0时，该生物会从疾病中恢复。一个生物如果三次拯救失败，可能会获得一种随机决定的无限期疯狂，如《地下城主指南》中所述。"
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"当地精在自己的回合内用近战攻击将一个生物的命中率降至0时，地精可以采取一个额外的行动，移动到其速度的一半，并进行一次咬人攻击。"
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"如果伤害使腐尸的命中率降至0，它必须做一个宪法救赎动作，DC为5+所受伤害，除非伤害是辐射或来自关键打击。如果成功，腐尸将下降到1点生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"腐尸行走者用它的咬合力进行两次攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Sudden Rush",
+					"entries": [
+						"直到该回合结束，腐尸行者的速度增加40英尺。"
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage",
+				"Undead Fortitude"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"OTH"
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gnoll Rot-Walker",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"conditionInflict": [
+				"exhaustion",
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Gnoll Scout",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnoll"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": {
+					"number": 25,
+					"condition": " (45 ft. in hyena form)"
+				}
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 12,
+			"int": 9,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Gnoll"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Wary Hunter",
+					"entries": [
+						"地精和60英尺内最多一个盟友在智慧（感知）、灵巧（隐身）和智慧（生存）的检查上有优势，前提是他们都精通所使用的技能，并且知道对方的存在。"
+					]
+				},
+				{
+					"name": "Rampage",
+					"entries": [
+						"当地精在自己的回合内用近战攻击将一个生物的命中率降至0时，地精可以采取一个额外的行动，移动到其速度的一半，并进行一次咬人攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"地精会进行两次攻击，可以用长矛或长弓。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4}击中，范围5英尺或20/60英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害，如果用双手进行近身攻击，则为6 ({@damage 1d8 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 3}击中，范围150/600英尺，一个目标。{@h}5 ({@damage 1d8 + 1})穿刺伤害，并且目标的速度降低10英尺，直到下一回合结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Warning Yelp",
+					"entries": [
+						"当地精受到伤害（并且没有减少到0命中率）时，它的嚎叫声足以让600英尺以外的生物轻易听到。"
+					]
+				}
+			],
+			"traitTags": [
+				"Rampage"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gnoll Scout",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"RNG",
+				"MLW"
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasFluff": true,
+			"attachedItems": [
+				"longbow|phb",
+				"spear|phb"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Hellseeker",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"yugoloth"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 161,
+				"formula": "14d12 + 70"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 21,
+			"dex": 14,
+			"con": 20,
+			"int": 4,
+			"wis": 11,
+			"cha": 3,
+			"save": {
+				"dex": "+7",
+				"wis": "+5",
+				"cha": "+1"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned",
+				"exhaustion"
+			],
+			"senses": [
+				"truesight 90 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"understands Abyssal and Infernal but can't speak"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"地狱追寻者在其回合开始时恢复10点生命值。如果地狱追寻者受到辐射伤害，这个特性在地狱追寻者的回合开始时不会发挥作用。地狱追寻者只有在其回合开始时命中率为0并且没有再生时才会死亡。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"地狱猎手的武器攻击是有魔法的。"
+					]
+				},
+				{
+					"name": "Unerring Tracker",
+					"entries": [
+						"地狱追寻者由其召唤者提供一个猎物。地狱追寻者知道其猎物的方向和距离，即使它是在不同的存在平面。地狱追寻者也知道其召唤者的位置。如果被追踪的生物死亡或物体被摧毁，地狱追寻者就会知道。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"地狱猎手可进行四次劈刀爪攻击和一次眼射线或咬人攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达10英尺，一个目标。{@h}11 ({@damage 1d10 + 5})穿刺伤害。如果目标是大型或小型生物，则是{@condition grappled}(逃跑{@dc 15})。在抓捕结束之前，地狱猎手只能咬住{@condition grappled}的生物，并且在攻击卷轴上有优势，这样做。当{@condition grappled}时，该生物对地狱追寻者的眼睛射线攻击的蓄力动作有劣势。"
+					]
+				},
+				{
+					"name": "Cleaver Claw",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达10英尺，一个目标。{@h}16 ({@damage 3d6 + 5})砍击伤害。如果地狱猎手用它的两只爪子命中，它在咬合攻击上有优势。"
+					]
+				},
+				{
+					"name": "Eye Ray",
+					"entries": [
+						"地狱猎手使用它的一个魔法眼射线，选择一个它能看到的90英尺范围内的目标，除了闪电射线以外。每条眼线每四回合只能使用一次。",
+						"火爆射线。地狱猎手创造出一个火球，在它所看到的90英尺范围内的一个点爆炸。以该点为中心的5英尺半径范围内的每个生物都必须做一个{@dc 18}灵巧的蓄力动作，蓄力失败会受到42({@damage 10d6})的火焰伤害，蓄力成功则受到一半的伤害。",
+						"寒冰射线。目标生物必须在一个{@dc 18}灵巧的救赎中成功，受到42({@damage 10d6})的寒冷伤害，其速度变为0，并且在下一回合结束前不能做出反应。如果救赎成功，它只会受到一半的寒冷伤害。",
+						"闪电射线。地狱猎手发射一条长60英尺、宽5英尺的闪电线。这条线上的每个生物都必须做一个{@dc 18}灵巧的蓄力动作，蓄力失败会受到42({@damage 10d6})的闪电伤害，蓄力成功则受到一半的伤害。",
+						"石化射线。目标生物必须做一个{@dc 18}灵巧的蓄力动作。如果救赎失败，该生物开始变成石头，并且是（%1%）。它必须在下一回合结束时重复这个蓄力动作。成功时，效果结束。失败时，该生物会被（%2%），直到被（%3%）的咒语或其他魔法解救。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Weapons",
+				"Regeneration"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"CS",
+				"I"
+			],
+			"senseTags": [
+				"U"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Hellseeker",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"F",
+				"C",
+				"L"
+			],
+			"conditionInflict": [
+				"grappled",
+				"petrified",
+				"restrained"
+			],
+			"hasFluff": true,
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Oozeworm",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "ooze",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d10 + 36"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20,
+				"swim": 20,
+				"burrow": {
+					"number": 20,
+					"condition": " (burrow 20 ft. worm form)"
+				}
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 16,
+			"int": 7,
+			"wis": 6,
+			"cha": 6,
+			"skill": {
+				"perception": "+2",
+				"survival": "+2"
+			},
+			"immune": [
+				"acid",
+				"cold",
+				"lightning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"prone"
+			],
+			"senses": [
+				"blindsight 90 ft."
+			],
+			"passive": 13,
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Amorphous (Ooze Form Only)",
+					"entries": [
+						"卵虫可以在1英寸宽的狭窄空间内移动而不被挤压。"
+					]
+				},
+				{
+					"name": "Corrosive Form",
+					"entries": [
+						"在它5英尺范围内，接触到虫子或用近战攻击击中它的生物会受到4({@damage 1d8})的酸伤害。任何由金属或木头制成的非魔法武器，如果击中了虫子就会被腐蚀。在造成伤害后，该武器的伤害卷会受到一个永久的、累积的-1惩罚。如果它的惩罚下降到-5，武器就会被摧毁。由金属或木材制成的非魔法弹药，在造成伤害后会被摧毁。卵虫可以在一回合内吃掉2英寸厚的非魔法木材或金属。"
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"渗水虫可以用它的行动来多态化为蠕虫形态或回到其渗水形态。虫子的形态是一个不粘稠的，像鼻涕虫一样的虫子，有几条看起来很弱的触手，环抱着一个尖锐的像栅栏一样的喙。它的统计数据在每种形态下都是一样的，除了在蠕虫形态下它会获得一个钻洞的速度。它所穿戴或携带的任何装备都不会被转化。如果它死了，就会恢复到它的渗水形态。"
+					]
+				},
+				{
+					"name": "Spider Climb (Ooze Form Only)",
+					"entries": [
+						"卵虫可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				},
+				{
+					"name": "Psionic Saturation",
+					"entries": [
+						"在决定其先天法术、触手和心灵爆炸行动的救赎DC时，卵虫的熟练度加成会加倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Worm Form Only)",
+					"entries": [
+						"卵虫可进行四次近战攻击，但只能使用一次它的咬伤。"
+					]
+				},
+				{
+					"name": "Bite (Worm Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}13 ({@damage 3d6 + 3})穿刺伤害加上7 ({@damage 2d8})精神伤害。"
+					]
+				},
+				{
+					"name": "Pseudopod (Ooze Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})重击伤害加上18 ({@damage 4d8})酸伤害。此外，目标所穿的非魔法盔甲会被部分溶解，并对其提供的AC进行永久和累积的-1惩罚。如果该惩罚将其AC值降低到10，则盔甲会被摧毁。"
+					]
+				},
+				{
+					"name": "Tentacle (Worm Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d4 + 3})重击伤害加上18 ({@damage 4d8})精神伤害。如果目标是一个生物，它必须在一个{@dc 16}智力测验中成功，否则会{@condition incapacitated}直到下一个回合结束。"
+					]
+				},
+				{
+					"name": "Mind Blast (1/Day)",
+					"entries": [
+						"虫子在30英尺的范围内神奇地散发出精神能量。该区域内的每个生物必须在智力测验中成功，否则会受到18（1%）的精神伤害，并在1分钟内受到（2%）的影响。一个生物可以在它的每个回合结束时重复蓄力，如果成功，则结束对自己的影响。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionic)",
+					"headerEntries": [
+						"卵虫的先天法术能力是智力（法术保存（%0%））。它可以先天性地施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell detect thoughts}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Shapechanger",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Ooozes, Mutable",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"damageTags": [
+				"P",
+				"Y",
+				"B",
+				"A"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"hasFluff": true,
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Slitherslime",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "ooze",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d10 + 48"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20,
+				"swim": 30,
+				"burrow": {
+					"number": 10,
+					"condition": " (burrow 10 ft. serpent form)"
+				}
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 18,
+			"int": 6,
+			"wis": 6,
+			"cha": 7,
+			"skill": {
+				"athletics": "+8",
+				"perception": "+2",
+				"survival": "+2"
+			},
+			"immune": [
+				"acid",
+				"cold",
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"poisoned",
+				"prone"
+			],
+			"senses": [
+				"blindsight 60 ft. (darkvision 90 ft. in serpent form)"
+			],
+			"passive": 10,
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Amorphous (Ooze Form Only)",
+					"entries": [
+						"滑石可以在1英寸宽的狭窄空间内移动而不被挤压。"
+					]
+				},
+				{
+					"name": "Corrosive Form",
+					"entries": [
+						"在5英尺范围内，触碰石膏或用近战攻击击中石膏的生物会受到4（（%0%））的酸性伤害。任何由金属或木头制成的非魔法武器，如果击中了石炭灰，就会被腐蚀。在造成伤害后，该武器的伤害卷会受到一个永久的、累积的-1惩罚。如果它的惩罚下降到-5，武器就会被摧毁。由金属或木头制成的非魔法弹药，在造成伤害后会被摧毁。蛇蝎美人可以在一回合内吃掉2英寸厚的非魔法木材或金属。"
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"蛇蝎美人可以用它的行动来多态化为蛇的形态或回到它的渗水形态。蛇形的样子是一条粗壮的带鳞的蛇，有四条肌肉发达的手臂从头部附近伸出来。它的统计数据在每种形态下都是一样的，只是在蛇形状态下它会获得一个钻洞的速度和黑暗视觉。它所穿戴或携带的任何装备都不会被转化。如果它死了，就会恢复到它的渗水形态。"
+					]
+				},
+				{
+					"name": "Spider Climb (Ooze Form Only)",
+					"entries": [
+						"纤夫可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				},
+				{
+					"name": "Psionic Saturation",
+					"entries": [
+						"在确定其先天法术、触手和心灵爆炸行动的救赎DC时，Slitherslime的熟练度加成翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Serpent Form Only)",
+					"entries": [
+						"滑翔翼可进行四次近战攻击，但只能使用咬合和收缩攻击各一次。"
+					]
+				},
+				{
+					"name": "Bite (Serpent Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 8}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d6 + 3})穿刺伤害加上10 ({@damage 3d6})毒药伤害。"
+					]
+				},
+				{
+					"name": "Claw (Serpent Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 8}击中，到达5英尺，一个目标。{@h}11 ({@damage 3d4 + 4})砍击伤害。"
+					]
+				},
+				{
+					"name": "Constrict (Serpent Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 8}击中，到达10英尺，一个目标。{@h}11({@damage 2d6 + 4})重击伤害加9({@dice 2d8})，目标为{@condition grappled}(逃跑{@dc 18})。在这个抓捕结束之前，目标是{@condition restrained}，而且Slitherslime不能束缚其他目标。"
+					]
+				},
+				{
+					"name": "Pseudopod (Ooze Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 8}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d6 + 4})重击伤害加上18 ({@damage 4d8})酸伤害。此外，目标所穿的非魔法盔甲会被部分溶解，并对其提供的AC值进行永久和累积的-1惩罚。如果该惩罚将其AC值降低到10，则盔甲会被摧毁。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"纤夫的先天法术能力是智力（法术保存（%0%））。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"{@spell mage hand} (the hand is invisible)"
+					],
+					"daily": {
+						"1": [
+							"{@spell dominate beast}",
+							"{@spell dominate person}"
+						],
+						"3": [
+							"{@spell animal friendship} (snakes only)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Shapechanger",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Ooozes, Mutable",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"damageTags": [
+				"P",
+				"I",
+				"S",
+				"B",
+				"A"
+			],
+			"spellcastingTags": [
+				"P",
+				"I"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"hasFluff": true,
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Penanggalan",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"A",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d6 + 48"
+			},
+			"speed": {
+				"walk": 0,
+				"climb": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 16,
+			"int": 11,
+			"wis": 13,
+			"cha": 18,
+			"save": {
+				"dex": "+6",
+				"wis": "+4",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+10",
+				"insight": "+4",
+				"stealth": "+9"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned",
+				"prone"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Horrifying Visage",
+					"entries": [
+						"在penanggalan 60英尺范围内的每一个生物，如果能看到她，必须在{@dc 16}智慧救赎中成功，否则会被{@condition frightened}，持续1分钟。如果penanggalan在视线范围内，目标可以在每个回合结束时重复蓄力动作，如果成功的话，对自己的影响就会结束。如果目标的蓄力动作成功或效果结束，目标在接下来的24小时内对penanggalan的惊恐之眼免疫。"
+					]
+				},
+				{
+					"name": "Penanggalan Weaknesses",
+					"entries": [
+						"penanggalan与身体分离时有以下缺陷。",
+						"{@i Reattach.} 日出后，如果潘加兰不能将它的头重新连接到它的身体上，每过一小时它就会受到30个辐射伤害。",
+						"{@i Sunlight Paralysis.}如果吸血鬼在流水中结束它的回合，它将受到20个酸性伤害。",
+						"{@i Dense Vegetation.}在任何由植被造成的困难地形中移动对Penanaggalan是有害的。每行进5英尺，它就会受到5({@dice 1d10})的刺伤和砍伤。它在任何避免或逃避植被影响的蓄力或能力检查中都处于劣势。"
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"penanggalan可以用它的行动来多态化成一个渗水体或恢复到它的真实形态。它所穿戴或携带的任何装备都会被新形态所吸收。如果它死了，它就会恢复到它的真实形态。",
+						"当它处于渗水状态时，它不能说话，不能飞行，不能施展魅力，也不能攻击，并且失去了它的恐怖面孔特征。它获得了在1英寸宽的空间内移动而不被挤压的能力（无定形特性），其速度为10英尺，并获得60英尺的盲视能力。除此以外，潘安加兰的游戏数据没有变化。"
+					]
+				},
+				{
+					"name": "Walk as the Living",
+					"entries": [
+						"当penanggalan的头重新连接到它的身体上时，它就会像生前一样出现，并且它的排列方式被认为是中性的。此外，它也不受针对或探测亡灵的法术或魔法的影响。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"多重攻击。槟榔树可以进行两次近战攻击，其中一次可以是它的咬人。"
+					]
+				},
+				{
+					"name": "Withering Bite",
+					"entries": [
+						"{@atk mw}{@hit 6}击中，达到5英尺，一个愿意，{@condition incapacitated}，{@condition paralyzed}或{@condition restrained}的生物。{@h}13 ({@damage 1d6 + 3})穿刺伤害加上10 ({@damage 3d6})坏死伤害。penanggalan恢复的命中率与坏死的伤害相等。如果目标是一个生物，它必须成功地进行一次{@dc 14}宪法救赎，否则会受到血咒的影响。一个（%9%）或类似的法术会阻止这个诅咒。被诅咒的目标不能恢复命中率，每过24小时，其最大命中率减少10（（%10%））。诅咒持续到它被{@spell remove curse}的咒语或类似的魔法解除。如果诅咒将目标的最大命中率降至0，则目标死亡。如果目标是人形或巨人，并且在没有预防措施的情况下被埋葬，它将在第二天晚上作为食尸鬼在penanggalan的控制下复活。"
+					]
+				},
+				{
+					"name": "Entrails.",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达50英尺，一个目标。{@h}21({@damage 4d6 + 6})的毒药伤害，目标必须成功进行{@dc 14}宪法救赎，否则会变成{@condition poisoned}，持续1分钟。当{@condition poisoned}这样做的时候，目标是{@condition paralyzed}，并且在其每个回合开始时受到7({@damage 2d6})的毒药伤害。目标可以在每个回合结束时重复蓄力，成功后结束对自己的影响。在目标身上倒出一小瓶圣水也会结束对它的影响。"
+					]
+				},
+				{
+					"name": "Slumber Charm (Recharges after a Short or Long Rest)",
+					"entries": [
+						"penanggalan的目标是它能看到的30英尺内的一个无意识的生物。目标必须成功地进行一个{@dc 15}的智慧救赎，否则就会变成{@condition charmed}，持续10分钟。当{@condition charmed}这样做的时候，目标仍然是{@condition unconscious}，即使受到伤害。如果太阳升起或者penanggalan被摧毁，与目标处于不同的存在平面，或者采取奖励行动来结束效果，效果会提前结束。如果目标救治成功，它将对penanggalan的魅惑能力免疫，直到日出，但不会苏醒，也不会意识到魅惑的企图。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"penanggalan的先天法术能力是魅力（法术保存（%0%））。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"daily": {
+						"1": [
+							"{@spell alarm}",
+							"{@spell dissonant whispers}",
+							"{@spell mage hand} (the hand is invisible)",
+							"{@spell minor illusion}"
+						],
+						"3": [
+							"{@spell bestow curse} (5th level spell slot)",
+							"{@spell clairvoyance}",
+							"{@spell etherealness}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Crippling Blood Curse",
+					"entries": [
+						"penanggalan的枯萎之咬所产生的血腥诅咒不是减少目标的最大命中率，而是每过24小时就会造成（%0%）的水平。"
+					]
+				}
+			],
+			"traitTags": [
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Penanggalan",
+					"source": "FightingC"
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"damageTags": [
+				"P",
+				"N",
+				"I",
+				"R",
+				"A"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned",
+				"charmed",
+				"frightened"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"Y"
+			],
+			"hasFluff": true,
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Vampiric Mist",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d10 + 40"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 9,
+			"dex": 18,
+			"con": 18,
+			"int": 13,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"wis": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Blood Sense",
+					"entries": [
+						"雾气可以感知它周围60英尺内的任何生物的位置，除非该生物的类型是构造物或不死生物。"
+					]
+				},
+				{
+					"name": "Misty Form",
+					"entries": [
+						"饥渴的死神可以进入一个敌对生物的空间并停在那里。它可以通过任何不密闭的空间，并且在力量、灵巧和体质方面具有优势。"
+					]
+				},
+				{
+					"name": "Misty Stealth",
+					"entries": [
+						"当被黑暗、雾、雨、落雪或其他类似的现象所轻度遮蔽时，饥渴的死神可以尝试隐藏，并获得优势。"
+					]
+				},
+				{
+					"name": "Satiated",
+					"entries": [
+						"在一个生物对吞噬动作的蓄力失败后，渴求的死亡变得更加浓厚，直到它完成短暂的休息。在饱食的时候，它的护甲等级为16，飞行速度为20英尺，并且失去了缥缈的隐身特性。"
+					]
+				},
+				{
+					"name": "Sunlight Hypersensitivity",
+					"entries": [
+						"饥渴的死神在阳光下开始它的回合时，会受到20的辐射伤害。在阳光下时，它在能力检查中处于劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Engulf",
+					"entries": [
+						"饥渴的死神以它的速度移动，可以进入大型或小型生物的空间。如果饥渴的死神在一个有血的生物的空间内结束它的回合，该生物必须做一个{@dc 15}宪法救赎。如果该生物有一半或更少的命中率，它将以劣势进行救赎。如果救赎失败，该生物会受到18({@damage 4d6 + 4})的坏死伤害，并且{@condition poisoned}直到渴死者的下一回合结束。该生物不能呼吸，不能说话，并且是{@condition incapacitated}。拯救成功后，该生物只受到一半的伤害，并且不会（%5%）。",
+						"目标的最大命中率会减少与所受伤害相等的数量，而渴死会恢复与该数量相等的命中率。该减少持续到目标完成长时间休息。如果这个效果将其最大命中率降低到0，则目标会死亡。"
+					]
+				}
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Thirsting Death",
+					"source": "FightingC"
+				}
+			},
+			"damageTags": [
+				"N",
+				"R"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"miscTags": [
+				"HPR"
+			],
+			"hasFluff": true,
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Undying Heresy",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 77,
+				"formula": "14d8 + 14"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 1,
+			"dex": 6,
+			"con": 13,
+			"int": 15,
+			"wis": 20,
+			"cha": 14,
+			"save": {
+				"con": "+4",
+				"int": "+5",
+				"wis": "+8",
+				"cha": "+5"
+			},
+			"skill": {
+				"history": "+8",
+				"religion": "+8"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 0,
+			"languages": [
+				"understands all languages it knew in life but doesn't speak"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Beget Anticreed (1/day)",
+					"entries": [
+						"异端每存在一个世纪就会产生4个({@dice 2d4})反种。如果一个异端被摧毁了，它将在下一个日落后进行改革。"
+					]
+				},
+				{
+					"name": "Ephemeral",
+					"entries": [
+						"异端不能穿戴或携带任何东西。"
+					]
+				},
+				{
+					"name": "Passive Target",
+					"entries": [
+						"异端有效（%0%）。"
+					]
+				},
+				{
+					"name": "Limited Turn Resistance",
+					"entries": [
+						"异端对任何转化不死生物的效果都有救命的优势。如果它被成功转化，它将被摧毁。"
+					]
+				},
+				{
+					"name": "Profane Aura",
+					"entries": [
+						"可憎的思想从异端中散发出来，每存在一个世纪，就会向外扩散100英尺。光环不会被砖块、金属或水等物理物质所阻挡。当一个生物在光环内开始它的回合时，它必须做一个{@dc 16}智力储蓄动作，否则就会被压倒，持续1分钟。被压倒的生物必须用它的行动来表达异端的肮脏哲学。如果救赎失败5次或更多，目标会在虚无主义的愤怒中攻击最近的非亡灵生物。该生物可以在其每个回合开始时重复蓄力，如果成功则结束对自己的影响。如果一个生物的救赎成功或效果结束，该生物将在1小时内对光环免疫。"
+					]
+				},
+				{
+					"name": "Execrating Tempest",
+					"entries": [
+						"一场可怕的、阴沉的风暴从异端的30英尺处扩散开来，严重地遮蔽了它，并影响到除其反物种之外的所有生物。在这个区域内，速度减半，当一个生物在一个回合中第一次进入或开始它的回合时，它必须做一个{@dc 16}智力救赎。拯救失败时，该生物会受到18{@dice 4d8}的精神伤害和18{@damage 4d8}的坏死伤害。拯救成功时，该生物会受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Vile Detritus",
+					"entries": [
+						"当被摧毁时，异端会发出恐怖的尖叫，然后爆裂开来，留下其黑暗沉思的幽灵般的残余物。看到或听到这句话的生物必须在智力测验中成功，否则会被诅咒。被诅咒的生物在智力和智慧救赎以及所有能力检查中都处于劣势。诅咒一直持续到被类似的魔法消除诅咒的咒语解除为止。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Undying Atrocity",
+					"entries": [
+						"有些异端造成的伤害不仅仅是身体上的，其知识的可怕性会造成疯狂（见《地下城主指南》）。一个不死的暴行使用不死的异端状态块，并有以下变化。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"它的亵渎光环特性被疯狂光环所取代（如下所述）。",
+								"它的 \"卑鄙的碎屑 \"反应被 \"亵渎的碎屑 \"所取代（如下所述）。"
+							]
+						},
+						{
+							"name": "Aura of Madness.",
+							"type": "entries",
+							"entries": [
+								"令人不安的理论从暴行中散发出来，每存在一个世纪，就向外扩散100英尺。光环不会被任何物理物质如砖块、金属或水所阻挡。当一个生物在光环内开始它的回合时，它必须做一个{@dc 16}智力测验，否则就会被长期的疯狂所折磨，直到它在光环外完成一个短暂的休息。如果一个生物的救赎成功或效果结束，该生物将在1小时内对光环免疫。"
+							]
+						},
+						{
+							"name": "Summon Yugoloth (1/Day)",
+							"type": "entries",
+							"entries": [
+								"当被摧毁时，这个暴行会发出恐怖的尖叫，然后爆裂开来，留下其肮脏教义的幽灵般的残余物。看到或听到这种情况的生物必须在智力测验中成功，否则就会被无限期的疯狂所折磨。这种疯狂会一直持续到被类似魔法的更大的恢复咒语所解除。"
+							]
+						}
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Undying Heresy",
+					"source": "FightingC"
+				}
+			},
+			"damageTags": [
+				"N"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"hasFluff": true,
+			"savingThrowForced": [
+				"intelligence"
+			]
+		},
+		{
+			"source": "FightingC",
+			"name": "Anticreed",
+			"size": [
+				"T"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 20,
+				"formula": "8d4"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 24,
+			"con": 10,
+			"int": 10,
+			"wis": 13,
+			"cha": 12,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+9"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"understands all languages that the undying heresy knew in life but does not speak"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Bound Wanderings",
+					"entries": [
+						"反叛者无法超越异端的亵渎光环。"
+					]
+				},
+				{
+					"name": "Child of Heresy",
+					"entries": [
+						"反叛者在其行动的蓄力DC上有双倍的熟练度加成，但如果其异端被摧毁，则会被摧毁。"
+					]
+				},
+				{
+					"name": "Ephemeral",
+					"entries": [
+						"反叛者不能穿戴或携带任何东西。"
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"当Anticreed飞出敌人的范围时，它不会引发机会攻击。"
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"蚁人可以在其他生物和物体中移动，就像它们是困难的地形一样。如果它在一个物体内结束它的回合，它会受到5（（%0%））的力量伤害。"
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"反叛者对变成亡灵的效果免疫。"
+					]
+				},
+				{
+					"name": "Momentary Clarity",
+					"entries": [
+						"当一个生物摧毁反叛者时，它会在憎恶的光环上撕开一个短暂的洞，并获得对异端位置的洞察力或其知识的一个有用片段。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Disturbing Touch",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个生物。{@h}9 ({@damage 1d8 + 5})坏死性伤害和9 ({@damage 2d8})精神性伤害。"
+					]
+				},
+				{
+					"name": "Vile Curse (1/day)",
+					"entries": [
+						"{@atk ms} {@hit 9}击中，到达5英尺，一个生物。{@h}9 ({@damage 1d8 + 5})坏死伤害和9 ({@damage 2d8})精神伤害，目标必须在{@dc 13}智力救赎中成功，否则会被魔法诅咒24小时。在被诅咒期间，该生物在救赎和所有与DM选择的能力分数相关的能力检查中都处于劣势。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Raving Anticreed",
+					"entries": [
+						"不死暴徒的后代也会造成疯狂（见《地下城主指南》）。一个狂暴的反叛者使用反叛者的状态块，但有以下变化。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								"它的卑鄙诅咒行动被疯狂诅咒所取代（如下所述）。"
+							]
+						},
+						{
+							"name": "Touch of Madness (1/day)",
+							"type": "entries",
+							"entries": [
+								"{@atk ms} {@hit 9}击中，到达5英尺，一个生物。{@h}9 ({@damage 1d8 + 5})坏死伤害和9 ({@damage 2d8})精神伤害，并且目标必须在{@dc 13}智力救赎中成功，否则会被短期疯狂折磨1分钟。该生物可以在其每个回合的开始时重复该蓄力动作，如果成功则结束对其自身的影响。"
+							]
+						}
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"N",
+				"Y",
+				"O"
+			],
+			"traitTags": [
+				"Flyby",
+				"Incorporeal Movement",
+				"Turn Immunity"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			]
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Belberith (Red Stalker)",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"Belberiths也被称为红色潜行者，是巨大的、掠夺性的、蛛形结构的恶魔，甚至会猎杀自己的同类。",
+								{
+									"name": "Butcher of Butchers",
+									"type": "entries",
+									"entries": [
+										"Belberiths是残酷的、坚定不移的死亡和折磨的预兆，它们是狰狞的、畸形的蜘蛛状恶魔，有着坚硬的、壳状的外壳。它们的身体有战马那么大，长满獠牙的嘴会滴下致命的毒液，所有这些都由十几英尺高的腿来承载。"
+									]
+								},
+								{
+									"name": "Eager for Blood",
+									"type": "entries",
+									"entries": [
+										"Belberith通常会选择一个目标，并将其所有的攻击集中于此。如果belberith不堪重负，它就会在撤退时通过它的平面转移能力咬住最后一个受害者，让它的毒药来做这件事。"
+									]
+								},
+								{
+									"name": "Inscrutable Tormentors",
+									"type": "entries",
+									"entries": [
+										"Belberiths捕食恶魔，或根据某些说法惩罚恶魔。他们似乎通过未知的方式选择了一些恶魔群体，并将其彻底消灭。同样神秘的是，作为存在的最残酷和最混乱的生物之一，恶魔是如何引起他们的愤怒的。",
+										"尽管深渊中游荡着可以摧毁贝尔贝里石的生物，但从来没有任何东西可以摧毁它。贝尔贝里石已经形成了一种不可思议的神秘感：在恶魔中，摧毁一个贝尔贝里石是禁忌。"
+									]
+								},
+								{
+									"name": "Butcher of Butchers",
+									"type": "entries",
+									"entries": [
+										"法师和炼金术士们为belberith喷丝板付出了不菲的价格。他们相信，并且有一定的理由，喷丝板是强大的法术和魔法物品的有效组成部分，具有约束力。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		},
+		{
+			"name": "GithyankiAA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"name": "Ancient Alliance",
+									"type": "entries",
+									"entries": [
+										"当传说中的吉斯与提亚马特和提亚马特的红龙妃子埃菲罗蒙达成协议时，吉蒂扬基获得了埃菲罗蒙的权杖和红龙盟友。这些骄傲的龙将作为坐骑为吉蒂扬基服务，以换取吉蒂扬基在提亚马特召唤它们时的帮助。吉斯指定为她的继承人的弗拉基斯一世收到了这根神奇的权杖，从那时起，每一位吉蒂扬基女王都挥舞着这根权杖，控制着其统治下的红龙。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		},
+		{
+			"name": "Githyanki Duthka'gith",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GithyankiAA",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"自从githyanki与恶龙女王订立契约以来，在漫长的岁月里，他们对盟友的了解也在不断增加。几位吉蒂亚克女王已经试验了利用这一点获得额外权力的方法。基于这些实验和几个世纪的研究，Lich-Queen，Vlaakith the CLVII，利用权杖的力量，创造了duthka'gith，强大的githyanki战士注入了红龙的血液。他们比简单的混血儿或赫拉夫-龙更强大，他们是用九层地狱的力量制作的。这些士兵虽然数量有限，但却让弗拉基斯非常满意，现在他们作为她的私人卫队，或作为特别重要任务的突击队为她服务。"
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Githyanki Flameweaver",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GithyankiAA",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"不管是来自提亚马特的礼物，还是红龙血统的结果，吉蒂亚克的喷火者都是热能大师。他们所召唤的火焰不仅能灼烧身体，还能灼烧心灵。他们的攻击所带来的痛苦和恐惧会在火焰熄灭后持续很久。这种力量和将敌人化为灰烬的简单能力意味着火焰使者常常是傲慢的。这通常是合理的。"
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Githyanki Lichblade",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GithyankiAA",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Githyuanki的Lichblades与Lich-Queen达成了灵魂上的联系，帮助她实现成为神的目标。这种联系使Lichblades成为Githyanki最接近牧师战士的东西，提供法术并在战斗中强化他们。这也给了他们地位，让他们可以去他们喜欢的地方。他们可以加入任何集会，或陪伴任何吉特亚基人的突击队，充当利希女王的眼睛和耳朵。",
+										{
+											"name": "Iconoclast",
+											"type": "entries",
+											"entries": [
+												"然而，他们的力量并不局限于简单的法术和社会地位。灵魂冲击使他们能够满足巫妖女王对力量的饥渴。巫妖刀被包裹在一个可怕的虚空中，它吞噬着堕落者（朋友和敌人）的灵魂和破碎的神术。这就是为什么他们渴望屠杀，并会不遗余力地针对那些使用神圣魔法的人。破坏神性法术和杀死宗教信徒是他们能够为女王提供的最大牺牲。"
+											]
+										},
+										{
+											"name": "Too Close",
+											"type": "entries",
+											"entries": [
+												"他们的角色和力量使他们在亲属中受到普遍的敬畏。几乎所有人都会避免站在巫师刀旁边。所有人都知道，死在一个人身边是一种可怕的命运。灵魂会前往图纳拉斯（Tu'narath），那里有巫妖女王在等待，灵魂不能自由返回。不幸的是，对于Githyanki来说，那是一种等待他们的命运。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Githyanki Mindraider",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GithyankiAA",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"虽然不像吉蒂亚克骑士那样具有强大的战斗力，但吉蒂亚克的心灵猎手是利希女王的全能仆人。他们在学习战士的方式上投入的时间很少，而主要集中在磨练他们的幻象能力以进入敌人的思想。因此，他们既可能充当间谍和法庭操纵者，也可能领导无情的入侵行动来窃取资源。",
+										{
+											"name": "Grim Harvest",
+											"type": "entries",
+											"entries": [
+												"Mindraiders特别善于快速袭击主物质以收集奴隶。据了解，小规模的战队可以使城镇人口减少，如果有足够的时间，也可以使整个地区人口减少。然而，在开始全面突袭之前，他们会通过控制一个地方来侦察他们的目标，以检查防御和探测弱点。"
+											]
+										},
+										{
+											"name": "Odd Couple",
+											"type": "entries",
+											"entries": [
+												"当Githyanki智障者与一个被支配的人形生物配对时，他们会获得显著的优势。第二双眼睛使他们更难出其不意，而伤害无辜者的风险是对英雄的一种强有力的防御。这就是为什么每当他们进入战斗状态时，他们身边都会有一个被支配的奴隶--或者他们很快就会获得一个！这就是为什么他们会有一个被支配的奴隶。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "GnollsLotP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"name": "Leader of the Pack",
+									"type": "entries",
+									"entries": [
+										"有些人认为，地精战队的领导权是通过在祭坛上牺牲受害者而获得的。然而，屠杀的拥护者并不是通过将无助的受害者绑在祭坛上来获得地位的。有条不紊的准备和严肃的暴力会让野蛮人之主感到羞愧。适当的祭品是在残酷的、浸泡在血液中的狂欢中进行的，无知的人简单地称之为 \"地精突袭\"。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		},
+		{
+			"name": "Gnoll Huntmaster",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GnollsLotP",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"地精猎手的地位仅次于族群首领。它领导猎人和侦察兵，负责寻找族群的下一个目标。由于这是族群的基本愿望，并确保其生存，所以整个战队中最聪明和最熟练的--如果不是最强壮和最擅长武术的--地精来担任这个角色是很常见的。所有的狩猎者都能熟练地使用他们的弓箭，摘下受伤的猎物，并且很少进入近战。因此，这些狡猾的地精通常比大多数族群领主的寿命长一倍。",
+										{
+											"name": "Blame Game",
+											"type": "entries",
+											"entries": [
+												"在出发远征之前，狩猎者会向Yeenoghu的一个方阵或负责解释预兆的任何一个萨满咨询。这样一来，如果没有找到一个不设防的村庄或商队，狩猎者可以转移责任，这可能会带来死亡，并将矛头指向那些给它提供不良指导的人。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Gnoll Deathpledge",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GnollsLotP",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"那些特别渴望向耶诺古和他们的族群证明自己的地精，会发下屠杀的誓言，保证以他们的主人的名义造成一定数量的流血。每个地精的死亡誓言（有时简单地称为 \"杀手\"）都被赋予了一种不神圣的光环，其攻击会将骨头和肉体撕裂。地精是否履行誓言，决定了它的地位是上升还是被群体谩骂和惩罚。",
+										{
+											"name": "Social Climber",
+											"type": "entries",
+											"entries": [
+												"狼群等级制度中的这种流动性可以导致啄食顺序的迅速变化，甚至在顶部。因为，如果一个狼群的领主未能提供足够的屠戮来取悦耶诺古，那么最成功的死亡誓言者就会站出来作为挑战者。无论结果如何，屠宰之主都会感到高兴。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Gnoll Goreface",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GnollsLotP",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"要想成为地精的戈尔面，必须由耶诺古或萨满的獠牙选择，并涂上粗糙的符文或授予一个灰熊护身符。这个仪式改变了驱使所有地精的饥饿感，使其成为一种字面上的疯狂。",
+										{
+											"name": "Always Hungry",
+											"type": "entries",
+											"entries": [
+												"嗜血者被嗜血的欲望所征服，以至于他们经常在战斗中吞食倒下的敌人。与人们所期望的相反，这实际上延长了他们屠杀的能力。 如果有人一再剥夺他们的这种能力，即使是另一个地精，他们也会把它作为下一个受害者。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Gnoll Mangeheart (Yeenoghu Shaman)",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GnollsLotP",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"没有地精会选择成为地精的心腹，通常只是被称为萨满。相反，Yeenoghu从受伤和致残的人中挑选心腹。有希望的地精被修补得足够好，以至于他们不会被他们的族群伙伴撕碎。然后，耶诺古给他们提供了化身为鬣狗的能力，这样他们就能跟上战队的步伐，充当秘密的间谍。然而，无论他们的形态如何，他们都会保留一些受伤的外在迹象，如跛行、缺耳或严重的伤疤。它们几乎总是与一只或多只鬣狗为伴，这些鬣狗是它们唯一的伙伴，协助它们进行侦察。",
+										{
+											"name": "Early Retirement",
+											"type": "entries",
+											"entries": [
+												"不管怎么说，他们肆意屠戮的日子已经一去不复返了，用强大的斧头把受害者砍成两截。取而代之的是，人妖必须满足于举行仪式，为战士们注入屠杀之王的力量，培养出腐烂的行尸走肉和凋零者，并削弱敌人的力量，让他们去砍杀。如果地精是任何其他生物，他们可能会以怜悯的眼光看待地精。相反，他们看到的是一个离成为食物只有一步之遥的弱者。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Gnoll Rot-Walker",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GnollsLotP",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"受伤或死亡的地精不会持续太久，这是一条规则。幸存的族群成员会吞噬他们的肉，并将骨头保存起来，用于创造凋零者的祭祀活动。",
+										"同样，地精战队也确实不会攻击坚固的阵地，而是选择较软的目标。然而，有时耶诺古需要打碎据点，为他横冲直撞的食人魔打开整个区域。而有时，他只是觉得无聊。在这些时候，废墟和腐烂的统治者会发出预兆和迹象。",
+										{
+											"name": "Last Laugh",
+											"type": "entries",
+											"entries": [
+												"当他们的战队靠近城堡或有围墙的城镇时，叶诺古的獠牙和芒格赫特会注意预兆。如果敌人的盾牌碎了，或者被杀的地精在被吃掉之前就腐烂了，他们就把尸体放在一边。那天晚上，他们举行了一个黑暗的仪式，让死人复活，耶诺古用不同的武器来保佑他们：疾病。这些病态的僵尸被称为 \"腐尸\"，并携带咯咯热。这种疾病是如此强大，以至于即使在一个城镇的郊区发生小规模的入侵，也能决定其城堡驻军的命运。不可避免的是，一些伤员逃过了腐尸，逃到了安全的地方。但一旦进入城墙，他们就开始咳嗽......咳嗽和咯咯笑。很快，三分之一或更多的保卫者生病或死亡。这时，狼群领主释放了战队。曾经坚不可摧的地方，现在变成了一场公开的盛宴，弱者和死者都成了装饰品。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Gnoll Scout",
+			"source": "FightingC",
+			"_copy": {
+				"name": "GnollsLotP",
+				"source": "FightingC",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"尽管地精并不以合作著称，但地精侦察员非常善于捕捉其他族群成员的线索和信号。因此，地精总是成双成对地进行侦察，并因此而更加熟练。",
+										"狼群领主和狩猎大师派出侦察员远赴各地，追踪难以捉摸的猎物，发现商队或寻找防守薄弱的人口。当他们发现一个有希望的目标时，其中一个就会赶回来提醒战队。另一个可能真的有足够的耐心去等待。在由此产生的流血冲突中，地精侦察员通常会稍稍后退，以获得更好的战场视野，并摘掉那些逃跑的人。"
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			"name": "Hellseeker",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"地狱猎手是用只有尤戈洛斯领主才知道的肮脏的巫术--有些人指向布博尼克斯--和被杀的恶魔的残骸制作的。他们被雇为有权有势和愚蠢的人的仆人，专门负责取回物品和敌人。",
+								{
+									"name": "Obedience at a Price",
+									"type": "entries",
+									"entries": [
+										"他们坚定不移的决心使得地狱追寻者成为有价值的（也是昂贵的）召唤魔物。必要的仪式会暂时将地狱追寻者与召唤者绑定。在这段时间里，它无情地追求命令，直到完成它们或被摧毁。"
+									]
+								},
+								{
+									"name": "Knockoff",
+									"type": "entries",
+									"entries": [
+										"人们认为地狱猎手是以belberith为原型的；有一些相似之处：一个令人惊讶的快速、大象大小的蜘蛛，有厚厚的甲壳和多个宝石般的眼睛。(四只眼睛较小，能够产生毁灭性的魔法射线。) 地狱猎手最后面的四只肢体承担了它所有的重量。前面的四条肢体末端是像菜刀一样的刀片，这不是用来走路的。地狱猎手的下颚和獠牙看起来很可怕，但通常只是收集它被派去取的东西。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		},
+		{
+			"name": "Ooozes, Mutable",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"渗出物是多孔的，几乎能吸收它们接触到的所有东西。这似乎也适用于幻觉的散发，这可能会导致奇怪的变异。正因为如此，有多种ozes获得了幻觉能力。广义上讲，那些被称为 \"幻觉 \"的渗虫，发展出与它们的蛋白质形态相称的天赋--最明显的是，蜕变成与那些具有强大幻觉能力的生物相似的生物--被称为可变异渗虫。",
+								{
+									"name": "Hunter-Gatherer",
+									"type": "entries",
+									"entries": [
+										"不管它们的变异来源是什么，可变异乌贼通常都在等待猎物，隐藏在岩石壁架上、黑暗的洞穴天花板上、灌木丛中或水下的杂草床中。它们有限的智力使它们足够聪明，可以通过清理掠食者来照顾可用的食物，如苔藓或牡蛎，从而补充狩猎。有时，具有强大幻觉能力的生物会捕获并雇用它们作为守护者。"
+									]
+								},
+								{
+									"name": "Ooze Nature",
+									"type": "entries",
+									"entries": [
+										"渗出物不需要空气或睡眠，即使它的附加形式似乎需要这两者。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		},
+		{
+			"name": "Penanggalan",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"Penanggalans来自黑暗的祭祀，旨在避免来世的折磨。正确的仪式会给供奉者以不死的回报。这样一来，仆人就有时间收集更多的灵魂来偿还债务或在恶魔般的主人那里获得地位。",
+								"饮血的不死生物具有强大的力量和可怕的外表，白天伪装成活人，通常与它曾经的样子相似，并表现得很像。在这种形式下，它可能会表现得很亲切，但它没有灵魂，也不可能有真正的热情。任何感情的展示都可能会激怒这种恐怖的东西，并促使它在第二天晚上把犯罪者当作目标。",
+								{
+									"name": "Night Terror",
+									"type": "entries",
+									"entries": [
+										"一旦夜幕降临，伪装的亡灵就会显现出它的真实形态。它的身体瘫痪了，它的头脱离了，然后升到空中。它的眼睛发出微弱的光芒，飞去寻找可以大吃的受害者。更加恐怖的是，这个生物的内脏挂在头的底部，沾满了酸性的毒液。当它飞翔时，它有时会低声诉说卑鄙的秘密、地狱般的诅咒和贬低的折磨，只有这种憎恶才会知道。"
+									]
+								},
+								{
+									"name": "Death to the Defenseless",
+									"type": "entries",
+									"entries": [
+										"当找到一个合适的受害者时，penanggalan会从打开的窗户飞进去，或者融化成恶心的泥浆，从小缝隙中爬进去。然后，它对睡着的猎物施展魅力，用它充满獠牙的嘴在难以察觉的地方刺出几个小洞。它静静地享用着受害者的血液。(penanggalan很少攻击清醒的人，只有当它的身体或巢穴受到威胁时才会攻击。) 如果受害者在进食后幸存下来，他或她将什么都不记得，只记得令人不安的不祥之梦。",
+										"为了防止这种攻击，有些人发现penanggalan被厚厚的植被挡住了，特别是有刺的植物。生机勃勃的植被让可恶的人感到厌恶，但也会砍伤和卡住它。"
+									]
+								},
+								{
+									"name": "Flesh-Craving Servants",
+									"type": "entries",
+									"entries": [
+										"许多penanggalan的受害者变成了简单的食尸鬼--在它捕猎的时候被束缚着保护它的巢穴和身体。但如果penanggalan被杀，剩下的食尸鬼就会被释放。第一个喝了无辜者的血的人有机会成为penanggalan，其他食尸鬼则成为仆人。因此，冒险者如果不做研究并采取预防措施，可能会再次面临同样的敌人。"
+									]
+								},
+								{
+									"name": "Vital Corpse",
+									"type": "entries",
+									"entries": [
+										"佩南加兰人是一种可以理解的神秘生物，他们在矿井、废墟、地窖、地下城或其他废弃的建筑或结构中建立自己的巢穴。他们的巢穴总是由陷阱和食尸鬼仆人保护，以杀死或吓跑入侵者。在巢穴内，它的无头尸体看起来只是一具保存完好的被砍掉头的尸体。然而，任何有胆量检查颈部的人都会看到，体腔是空洞的，而且是干枯的。如果没有被陷阱惊动，当入侵者到达它的身体时，penanggalan会 \"知道\"。这是唯一的机会，它将试图摧毁一个有意识的敌人。",
+										"在身体附近，总是有一个装满草药醋的盆子。当头颅回来时，它必须把它的内脏浸泡在浴盆里，使它们缩小到足以装回身体里，并恢复其异样的外观。当penanggalan与身体分离时，如果阳光照射到它的头部，头部就会麻痹，无力地倒在地上。如果不在日出后的几个小时内重聚，头部和身体会迅速腐烂。因此，penanggalan总是会在黎明前赶回它的巢穴。"
+									]
+								},
+								{
+									"name": "Living Imposter",
+									"type": "entries",
+									"entries": [
+										"当头部和身体结合在一起时，侦测邪恶和善良、神识和类似的魔法将不会显示其不死的本质。同样地，\"活体 \"对神圣的符号和亡灵的转变也是免疫的，没有反应。身体就像生前一样，没有任何penangugalan的亡灵特征。然而，尽管有生命的多面性，头部仍然保持着所有的抗伤害能力、伤害免疫和条件免疫，并且不受身体受损的影响。"
+									]
+								},
+								{
+									"name": "Undead Nature",
+									"type": "entries",
+									"entries": [
+										"一个penanggalan不需要空气、食物、饮料或睡眠。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		},
+		{
+			"name": "Thirsting Death",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"饥渴的死神是一种邪恶的，以活人的血为食的蒸气生物。它苍白的灰色或白色的外形，以及其中心模糊不清的人形，很难从雾或云中分辨出来。",
+								{
+									"name": "In the Shadows",
+									"type": "entries",
+									"entries": [
+										"隐秘的渴死鬼居住在任何有雾和有黑暗的地方，但更喜欢沼泽和沼泽。巢穴通常在山洞、裂缝或有浓密灌木遮挡阳光的地方。",
+										"它极其沉默寡言，但仍有能力说话。它的声音是一连串几乎听不到的耳语，不比一阵轻风大。它的话语是用来结盟的，最好是那些能提供稳定的受害者的联盟。"
+									]
+								},
+								{
+									"name": "Cold and Calculated",
+									"type": "entries",
+									"entries": [
+										"它通常每周吞噬一名受害者。它聪明而谨慎，利用它收集的财宝来引诱受害者，最好是单独行动。如果有几个人在场，饥渴的死神会试图在其他人睡觉时挑掉守卫。",
+										"饥渴的死神能够提升它周围的任何物体，包括死去的受害者。这使得它可以通过在巢穴或深沼泽中处理尸体来掩盖其存在。"
+									]
+								},
+								{
+									"name": "True Colors",
+									"type": "entries",
+									"entries": [
+										"当它进食时，水汽呈现出容易注意到的葡萄酒色泽。同时，云的中心会变暗，并呈现出更坚实的、类似骨架的形式。如果渴死了，它就会立即消散，而任何未消化的血液都会以怪异的雨滴形式落下。",
+										"渴死的特征使圣人理论上认为它实际上是吸血鬼死亡或部分毁灭的结果。还有人相信，当一个吸血鬼被创造出来时，它的灵魂会在其他地方重生，成为深红色的死亡。一些传说说，如果吸血鬼与它的渴死对应物重新结合，就可以恢复正常生活。"
+									]
+								},
+								{
+									"name": "Undead Nature",
+									"type": "entries",
+									"entries": [
+										"渴死的人不需要空气、食物、饮料或睡眠。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		},
+		{
+			"name": "Undying Heresy",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"不死的异端是一个邪恶的牧师或圣人的不死之魂，他死后至少有一个重要的、通常是有争议的教义问题没有解决。它的幽灵形态被其邪恶的沉思所冻结，将其所有的能量都用于解开这个谜团。它对周围的环境毫无兴趣。没有任何东西能打动它或唤醒它，只有毁灭。",
+								{
+									"name": "Lost in Thought",
+									"type": "entries",
+									"entries": [
+										"不死的异端只在孤立的地方被发现，特别是寺庙、图书馆、修道院或其他学习场所的废墟。它出现时是一个坐着的、没有实体的身影，披着石板色的长袍。围绕着它运行的是微小的、飘忽不定的生物，被称为anticreeds。它们看起来很相似，但却长着细长而邪恶的爪子。这些尖锐的生物热切地攻击活人，实际上是异端的邪恶思想。它们居住在异端的光环中，光环不断增长，每个世纪都向外扩散。"
+									]
+								},
+								{
+									"name": "Sobering Thought",
+									"type": "entries",
+									"entries": [
+										"某些神学家推测，强大的邪恶教士在死亡时成为不朽的异端，可能是试图成为半神。人们担心在至少1000年后，少数人设法解决了他们的哲学困境，导致他们超越物质世界，成为深刻的邪恶、不朽的生命。圣人敦促那些发现异端的人立即摧毁它，以防这个可怕的理论有可取之处。"
+									]
+								},
+								{
+									"name": "Undead Nature",
+									"type": "entries",
+									"entries": [
+										"一个不死的异端和它的反叛者不需要空气、食物、饮料或睡眠。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "FightingC"
+		}
+	]
+}

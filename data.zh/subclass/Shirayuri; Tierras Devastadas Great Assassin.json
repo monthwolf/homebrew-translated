@@ -1,0 +1,226 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TDGreatAssassin",
+				"abbreviation": "TDGreatAssassin",
+				"full": "Tierras Devastadas Great Assassin",
+				"authors": [
+					"Nirah"
+				],
+				"convertedBy": [
+					"Shirayuri"
+				],
+				"version": "1.2",
+				"url": "https://drive.google.com/file/d/1WuvoD0WB_gDJN8nVkTlDuzw6ZRRlAKae/view?usp=drive_link"
+			}
+		],
+		"dateAdded": 1709248403,
+		"dateLastModified": 1709248403,
+		"_dateLastModifiedHash": "c547f35e38"
+	},
+	"subclass": [
+		{
+			"name": "Great Assassin",
+			"source": "TDGreatAssassin",
+			"page": 11,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"shortName": "Great Assassin",
+			"subclassFeatures": [
+				"Great Assassin|Rogue|PHB|Great Assassin|TDGreatAssassin|3|TDGreatAssassin",
+				"Poison Enthusiast|Rogue|PHB|Great Assassin|TDGreatAssassin|9|TDGreatAssassin",
+				"Unexpected Blow|Rogue|PHB|Great Assassin|TDGreatAssassin|13|TDGreatAssassin",
+				"Lethal Blow|Rogue|PHB|Great Assassin|TDGreatAssassin|17|TDGreatAssassin"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-power.webp"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Great Assassin",
+			"source": "TDGreatAssassin",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 6,
+			"subclassShortName": "Great Assassin",
+			"subclassSource": "TDGreatAssassin",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的训练专注于死亡的阴暗艺术。遵循这个原型的人各式各样\u2014\u2014雇佣杀手、间谍、赏金猎人，甚至是特别受命的祭司，他们接受训练来消灭他们神明的敌人。隐秘和毒药帮助你以致命的效率消灭敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Assassinate|Rogue|PHB|Great Assassin|TDGreatAssassin|3|TDGreatAssassin"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ready to Kill|Rogue|PHB|Great Assassin|TDGreatAssassin|3|TDGreatAssassin"
+				}
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-power.webp"
+		},
+		{
+			"name": "Assassinate",
+			"source": "TDGreatAssassin",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 6,
+			"subclassShortName": "Great Assassin",
+			"subclassSource": "TDGreatAssassin",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你掌握了将死亡带给受害者的技艺。每回合一次，你可以在进行武器攻击时给自己带来优势；如果攻击命中，它被视为暴击。你可以使用这个能力的次数等同于你的敏捷调整值，而且在完成一次长休后，你会恢复所有使用次数。无论攻击是否命中，使用次数都会减少。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"cost": 1,
+					"condition": ""
+				},
+				"uses": {
+					"value": 1,
+					"max": "@abilities.dex.mod",
+					"per": "lr"
+				}
+			},
+			"foundryImg": "icons/skills/melee/blood-slash-foam-red.webp"
+		},
+		{
+			"name": "Ready to Kill",
+			"source": "TDGreatAssassin",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 6,
+			"subclassShortName": "Great Assassin",
+			"subclassSource": "TDGreatAssassin",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你对那些还没有行动过的生物有优势，并且在先攻检定中也有优势。"
+			],
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "Ready to Kill",
+						"transfer": true,
+						"changes": [
+							{
+								"key": "flags.dnd5e.initiativeAdv",
+								"mode": 0,
+								"value": "true",
+								"priority": 20
+							}
+						]
+					}
+				]
+			},
+			"foundryImg": "icons/skills/melee/blade-tip-energy-green.webp"
+		},
+		{
+			"name": "Poison Enthusiast",
+			"source": "TDGreatAssassin",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassSource": "TDGreatAssassin",
+			"subclassShortName": "Great Assassin",
+			"page": 6,
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"在第9级时，你获得了对(`poisoner's kit`)的熟练，并可以将毒涂抹在武器上作为一个奖励动作。当你使用这个特性给武器涂抹毒药时，你可以选择在4发弹药或一件武器之间。毒药在一分钟后会稀释，对于武器来说，如果你用它击中了四次，效果也会结束。",
+				"此外，你的武器攻击额外造成{@dice 2d4}点毒素伤害。"
+			],
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
+				}
+			],
+			"foundrySystem": {
+				"actionType": "utility",
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"damage.parts": [
+					[
+						"2d4",
+						"poison"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/toxins/poison-bottle-open-fire-purple.webp"
+		},
+		{
+			"name": "Unexpected Blow",
+			"source": "TDGreatAssassin",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 6,
+			"subclassShortName": "Great Assassin",
+			"subclassSource": "TDGreatAssassin",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级时，你丰富的经验使你能够在敌对情况下果断行动。如果一场战斗开始时，你在场并参与了第一轮，你将在战斗开始前获得额外的回合。在这个回合中，将所有其他生物视为被惊讶状态。"
+			],
+			"foundryImg": "icons/skills/targeting/crosshair-arrowhead-blue.webp"
+		},
+		{
+			"name": "Lethal Blow",
+			"source": "TDGreatAssassin",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"page": 6,
+			"subclassShortName": "Great Assassin",
+			"subclassSource": "TDGreatAssassin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，你学会了对受害者的要害部位进行精准打击。当你造成暴击时，你可以将伤害翻倍。你可以每次短休息后使用这个特性一次。"
+			],
+			"foundrySystem": {
+				"actionType": "special",
+				"activation": {
+					"cost": 1,
+					"type": ""
+				},
+				"uses": {
+					"value": 1,
+					"max": "1",
+					"per": "sr"
+				}
+			},
+			"foundryImg": "icons/skills/melee/strike-axe-red.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Ready to Kill",
+			"source": "TDGreatAssassin",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Great Assassin",
+			"subclassSource": "TDGreatAssassin",
+			"level": 3,
+			"entries": [
+				"你对那些还没有行动过的生物有优势，并且在先攻检定中也有优势。"
+			],
+			"effects": [
+				{
+					"name": "Ready to Kill",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.initiativeAdv",
+							"mode": 0,
+							"value": "true",
+							"priority": 20
+						}
+					]
+				}
+			]
+		}
+	]
+}

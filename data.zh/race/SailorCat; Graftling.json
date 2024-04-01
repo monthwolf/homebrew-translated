@@ -1,0 +1,772 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SailorCat",
+				"abbreviation": "SCat",
+				"color": "fc49b2",
+				"full": "SailorCat",
+				"authors": [
+					"SailorCat"
+				],
+				"version": "3.2.0",
+				"url": "https://valkrana.moe/graftling.html",
+				"targetSchema": "3.2.0"
+			}
+		],
+		"dateAdded": 1568582441,
+		"dateLastModified": 1703373316,
+		"_dateLastModifiedHash": "0c1ce4d8ec"
+	},
+	"race": [
+		{
+			"name": "Graftling",
+			"source": "SailorCat",
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"undead"
+			],
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"resist": [
+				"poison"
+			],
+			"traitTags": [
+				"Improved Resting",
+				"Monstrous Race",
+				"Uncommon Race"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Type:",
+							"entry": "亡灵"
+						},
+						{
+							"type": "item",
+							"name": "Size:",
+							"entry": "中型或小型。你在获得这一血统时选择尺寸。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"嫁接者不会衰老。它们由创造它们的魔法维持。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ancestral Lineage",
+					"entries": [
+						"如果你用这个血统取代一个种族，你可以保留该种族的以下要素：你从该种族获得的任何技能熟练度和你从该种族获得的任何攀爬、飞行或游泳速度。",
+						"如果你不保留这些元素，或者你在创建角色时选择了这个血统，你会获得你选择的两个技能的熟练度。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"你可以在你周围60英尺内的昏暗光线下看东西，就像亮光一样，在黑暗中看东西，就像暗光一样。你在黑暗中不能辨别颜色，只能辨别灰色的深浅。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skeletal",
+					"entries": [
+						"你是一袋骨头，由以下利益代表。",
+						{
+							"type": "list",
+							"items": [
+								"你对疾病和被害的救赎有优势（%0%），并且你对毒药伤害有抵抗力。",
+								"你在救死扶伤方面有优势。",
+								"你不需要吃，不需要喝，不需要呼吸。",
+								"你不需要睡觉，魔法也不能使你入睡。你可以在4个小时内完成长时间的休息，如果你在不活动、不动弹的状态下度过这几个小时，在这期间你会保留意识。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bonegraft",
+					"entries": [
+						"你的骨架是可以接受进一步嫁接的。你可以花10分钟在你身体的任何地方永久地嫁接纯装饰性的骨头。此外，如果它有骨头，你可以嫁接一个比你大一号的生物的手臂，而且它变得有功能，可以随意移除。当你有三只或更多的手臂时。",
+						{
+							"type": "list",
+							"items": [
+								"你可以与第二个物体互动，作为你自由行动的一部分。",
+								"从魔法袋中取回一个物品，如{@item bag of holding|DMG}，遵循与物体互动的正常规则。",
+								"如果你的两只手臂挥舞着武器，你就不能从盾牌中获益。",
+								"你的灵巧修改器在你的第三只手臂之后每只手臂都会减少1。"
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Variant: Alternative Feature",
+					"entries": [
+						"经DM允许，你可以用下面详述的Marrowsense功能来交换你的祖先血统功能。",
+						"{@bold Marrowsense.} 你对骨头有一种嗅觉。作为一个额外的行动，直到你下一个回合结束，你可以使用这个能力来探测30英尺内未暴露的骨头和60英尺内暴露的骨头的位置和生物类型。 {@italic This ability can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, 3 feet of wood, or 7 feet of dirt. Once you use this trait, you can't use it again until you finish a short or long rest.}"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"{@italic An unimposing bundle watches with indifference as a battle unfolds before her. She shifts her weight, bones clinking, when it becomes apparent her allies don't have the fight entirely in hand. A skeleton rattles over. \"Eheheheh,\" she thinks. \"Cute.\"}",
+					"{@italic The graftling tightens her grip on her staff, a length of polished chimera fibula. With a free hand, she uncaps the scroll case hung by her waist to retrieve and unfurl a length of parchment. Coolly, she recites its mystical cipher. The runes etched into her staff exude bright pink fumes. Meanwhile, a third hand emerges from her poncho to rifle through the skeleton's pack.}",
+					"{@italic Her arcane utterances come to an abrupt halt. The scroll withers, and as it does, a sphere of negative energy ripples over the crowd. There. She pulls a pouch of bandages and salves from the skeleton's pack.}",
+					{
+						"type": "entries",
+						"name": "Bred to the Bone",
+						"entries": [
+							"一堆悲惨的各种骨头。嫁接者是那些被改造过的尸体，他们的骨架与其他生物的骨架嫁接在一起，并被注入负能量。他们被赋予了提取和粉碎骨头的牙齿，分解和同化骨头的腐蚀性消化液，以及吞噬骨头的饥饿感。嫁接体与原始种族的相似程度取决于其创造者的意愿，但由于嫁接体是移植的产物，而不是完全重建，所以通常有一些相似性。所有的嫁接者最终都是骨架的变态。",
+							"虽然嫁接苗的轮廓往往可以作为人形，但它的解剖结构却有问题。在它的包袱下面是一个扭曲的骨骼系统，以自然界从未想过的方式嫁接。在这里和那里，骨骼因被塑造的压力而产生褶皱或虬结，就像古树的根部。一只手臂可能包含锯鱼的鼻子、狼牙棒的爪子和嚎叫的肋骨--所有这些都与嫁接动物的原始骨架混合在一起。一个典型的嫁接苗安排还包括看起来是股票的部分。最常见的是头部和躯干。然而，这种相似性只是皮毛而已。血液被抽干，器官变成骨头，软骨伪装成肌肉和疤痕组织。在一个合适的腔体中，移植物配备了负责溶解骨骼的系统（移植物对自身的酸有免疫力）。由于这个系统一直处于活跃状态，移植者流口水是很常见的，尤其是在看到食物的时候。死灵法师必须提供能够粉碎骨头的牙齿和下颚，或者提供直接插入腔内的方法。",
+							"移植者的骨架被操纵的魔法成为一个永久的特征。这使他们能够超越创造者的设想，在他们认为合适的时候附加更多的骨头。有些人很少添加肋骨；有些人则喜欢装饰。不仅仅是形式大于功能，嫁接者可以通过这种方式同化四肢，这使他们能够以更高的效率行动。",
+							"除了简单的实验之外，还有一些原因可能会激发一个死灵法师创造一个嫁接者。由于他们的智慧和矜持的性格，嫁接者可以成为实用的、不那么有野心的学徒。更重要的是，曾经是一堆悲惨的杂碎骨头，现在可以处理任何不需要的悲惨的杂碎骨头堆了。虽然嫁接者往往在出现时智力完好，但他们的身份并不总是如此。所有的人都发现，在这个过程中，他们过去自我的某些部分无一例外地被腐蚀了。"
+						]
+					},
+					{
+						"type": "inset",
+						"name": "A Bone to Pick",
+						"entries": [
+							"不是所有的骨头都是一样的。哥布林的骨头可能是油腻的；坎比恩的骨头可能是辛辣的。嫁接者可能更喜欢某种类型的骨头，或者直接忽略其他骨头。"
+						]
+					},
+					{
+						"name": "Bottom Feeder",
+						"entries": [
+							"与许多亡灵不同，嫁衣女并不是为了成为掠食者。他们不猎杀活人。它们是战场上的秃鹰；它们出没于被掠夺的小村庄；它们在骨灰盒上大吃特吃。他们搜刮东西。如果一个人需要担心嫁接者，那么这个人已经死了。嫁衣匠会避免为尸体而战，宁可小心翼翼，也不愿意吃他们饥饿但不需要的食物。",
+							"在野外发现自己的嫁衣人在世界的角落里避难，这些角落足够黑暗以避免他人，但又足够接近生命，可以闻到风中的尸体。他们喜欢过孤独的生活。然而，这种偏爱并不能抹去他们生前的个性--前提是复活术没有做那么多。考虑嫁接性格是一个自然与养育的问题。"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Reluctant But Willing",
+						"entries": [
+							"嫁接者的性格并不使他们对流浪的欲望有免疫力；它只是抑制了这种欲望。旅行的呼唤可能来自对失去的生活的回忆。也许他们寻求对谋杀者进行报复。也许他们想面对他们的创造者。也许他们希望的不仅仅是生存。一个嫁衣人出发的原因就像任何角色一样多而杂。",
+							"那些不安分到要冒险进入文明的人必须轻装上阵，穿戴整齐。亡灵即使不被人憎恨，也会被人畏惧，所以发现亡灵很可能意味着死亡。嫁接者对文明的适应程度部分取决于他们在生活中的个性，部分取决于他们的意志力和谨慎。"
+						],
+						"type": "entries"
+					},
+					{
+						"type": "inset",
+						"name": "Bundle Up",
+						"entries": [
+							"嫁衣人在穿衣时最好记住他们的身材。厚重、宽松的衣服可以很好地掩盖他们奇怪的骨骼结构。幻觉、面具和伪装工具在任何嫁接者的剧目中都有一席之地。"
+						]
+					},
+					{
+						"name": "Graftling Names",
+						"entries": [
+							"嫁接者会使用他们生前的名字，除非他们已经忘记了，或者选择放弃他们不再属于的过去。在这两种情况下，他们会使用他们的创造者给他们的名字，如果有的话，或者选择一个吸引他们的名字。",
+							"嫁接的名字。Ahki, Callus, Caret, Chirr, Clak, Fyerk, Huam, Kashl, Kvetch, Mort, Nyargh, Odokuro, Pelops, Rote, Scroop, Sistrum, Skel, Skrim, Slummock, Smelch, Urk, Zailofon"
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Graftling Feats",
+						"entries": [
+							"如果你的管理员允许使用{@italic Player's Handbook}第六章中的功法，你的嫁接角色可以使用下列特殊功法。",
+							{
+								"type": "list",
+								"items": [
+									"嫁接灵出院。{@italic You have evolved to use your noxious digestive fluid as a defense mechanism. You gain the following benefits:}",
+									{
+										"type": "list",
+										"items": [
+											"你可以用你的行动在5×30英尺的范围内喷出酸液。每个生物都必须做一个灵巧的蓄力动作（DC8+你的熟练度加成+你的体质修改器）。拯救失败时，生物会受到2D6的酸液伤害，拯救成功时，会受到一半的伤害。伤害在6级时增加到3d6，11级时增加到4d6，16级时增加到5d6。一旦你使用了你的放电，你就不能再使用它，直到你完成一个短期或长期休息。",
+											"你对酸性伤害有抵抗力。"
+										]
+									},
+									"避免嫁接。{@italic Through constant vigil you have become better at sensing danger. You gain the following benefits:}",
+									{
+										"type": "list",
+										"items": [
+											"将你的智慧得分提高1，最高为20。",
+											{
+												"type": "list",
+												"items": [
+													"你获得马洛斯的能力。如果你已经拥有这个能力，你可以在短暂的休息之间使用它两次。",
+													"{@bold Marrowsense.} 你对骨头有一种嗅觉。作为一个额外的行动，直到你下一个回合结束，你可以使用这个能力来探测30英尺内未暴露的骨头和60英尺内暴露的骨头的位置和生物类型。 {@italic This ability can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, 3 feet of wood, or 7 feet of dirt. Once you use this trait, you can't use it again until you finish a short or long rest.}"
+												]
+											}
+										]
+									},
+									"移植的运动功能。{@italic You have adapted to regular use of your extra limb. You gain the following benefits:}",
+									{
+										"type": "list",
+										"items": [
+											"你的 \"骨雕 \"功能允许你增加一个手臂而不受惩罚。例如，如果你的灵巧修饰值在第三只手臂之后每只手臂都会减少，现在第四只手臂也会减少。",
+											"选择以下一项。",
+											{
+												"type": "list",
+												"items": [
+													"你可以采取 \"使用物体 \"行动作为额外行动。",
+													"你获得熟练掌握神出鬼没的技能。如果你已经精通该技能，你在使用该技能进行检查时将获得双倍的精通奖励。",
+													"如果你的两只或更多的手臂挥舞着武器装备，你可以从盾牌中获益。",
+													"你的爬升速度等于你的步行速度。",
+													"使你的灵巧得分增加1，最高为20。"
+												]
+											},
+											"您可以多次选择此特技。每次你这样做，你必须从上面的列表中选择一个不同的好处，或者将你的灵巧得分增加1，最多为20。"
+										]
+									}
+								]
+							}
+						],
+						"type": "entries"
+					},
+					{
+						"type": "table",
+						"caption": "Graftling Reasons for Adventure",
+						"colLabels": [
+							"{@dice d10}",
+							"Reason"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 1
+									}
+								},
+								"被一个怪物杀手盯上，你被迫逃离你的家。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 2
+									}
+								},
+								"你为你的创造者寻求正义，他向你展示了同情心，但被冒险者杀死了。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 3
+									}
+								},
+								"被前世的记忆所困扰，你希望调和或重聚。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 4
+									}
+								},
+								"你无意在文明的边缘地带挥霍你的第二次生命机会。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 5
+									}
+								},
+								"你想你会在考古学方面尝试一下。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 6
+									}
+								},
+								"你杀死了你的创造者，并被他们的飞地所追捕。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 7
+									}
+								},
+								"你的学徒生涯结束了，没有任何后果，你被允许离开你的主人。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 8
+									}
+								},
+								"你的方向感很差，一直跌跌撞撞地进入文明世界。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 9
+									}
+								},
+								"你被你的主人派遣去完成一项差事或任务。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 10
+									}
+								},
+								"你将同化所有其他的嫁接者。只能有一个。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "Graftling Quirks",
+						"colLabels": [
+							"{@dice d10}",
+							"Quirk"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 1
+									}
+								},
+								"你的复活术给你带来了极大的创伤，你已经对骨头产生了非理性的恐惧。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 2
+									}
+								},
+								"你认为骷髅很可爱，因为它们的样子。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 3
+									}
+								},
+								"在战斗中你更喜欢躲藏。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 4
+									}
+								},
+								"你煞费苦心地记录你所遇到的骨头。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 5
+									}
+								},
+								"你已经形成了每晚吸食骨粉的仪式。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 6
+									}
+								},
+								"你的身体是一个收藏品，你只用最稀有的骨头来点缀。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 7
+									}
+								},
+								"你是令人难以置信的笨拙。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 8
+									}
+								},
+								"你有强迫症的倾向。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 9
+									}
+								},
+								"你有一个习惯，那就是侧身走到别人身边，去嗅一嗅他们的骨架。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 10
+									}
+								},
+								"你把你的包袱当作一个避难所。甚至那些与你亲近的人都没有看到你的脸。"
+							]
+						]
+					},
+					{
+						"type": "table",
+						"caption": "Graftling Trinkets",
+						"colLabels": [
+							"{@dice d20}",
+							"Trinket"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 1
+									}
+								},
+								"一个无害的铁杵，刻着你创造者的首字母。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 2
+									}
+								},
+								"你过去生活中的一个饰品（{@italic see any other {@item trinket|PHB}表}）。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 3
+									}
+								},
+								"一块神秘的骨头藐视所有的识别尝试。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 4
+									}
+								},
+								"一个微小的、木制的、不幸的猫形象。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 5
+									}
+								},
+								"一瓶冒着气泡的彩虹色中和剂。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 6
+									}
+								},
+								"一对生锈的手铐。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 7
+									}
+								},
+								"一块楔形文字印记的卵石，曾经属于一个迷路的孩子。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 8
+									}
+								},
+								"一个装着保存在甲醛中的畸形物的罐子。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 9
+									}
+								},
+								"一套有时会发出鲸鱼歌声的scrimshaw骰子。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 10
+									}
+								},
+								"从使你复活的死灵法师那里提取的一个阴暗的头骨。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 11
+									}
+								},
+								"一把扭曲的黑木扫帚，刷子的毛永远不会脏。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 12
+									}
+								},
+								"一个龙形针，可以在某个地方被某人追踪到。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 13
+									}
+								},
+								"一个招手的抱枕，上面绣着摇摆不定的鸭子形象。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 14
+									}
+								},
+								"咸鱼领，让佩戴者感到被需要。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 15
+									}
+								},
+								"一个被活活煮熟的格朗的纹身手臂。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 16
+									}
+								},
+								"在死水中飘动的胡瓜鱼骨架。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 17
+									}
+								},
+								"一个有符文的笔记本，上面有关于亡灵的潦草笔记。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 18
+									}
+								},
+								"用麻绳固定的一卷厚重的食尸鬼肉。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 19
+									}
+								},
+								"一袋五颜六色的骷髅形明胶糖果。"
+							],
+							[
+								{
+									"type": "cell",
+									"roll": {
+										"exact": 20
+									}
+								},
+								"一枚印有镶嵌玻璃的蛇形缠绕杆的戒指。"
+							]
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://valkrana.moe/img/guide/clothingreference1.PNG"
+						}
+					}
+				]
+			}
+		}
+	],
+	"feat": [
+		{
+			"name": "Grafted Motor Functions",
+			"source": "SailorCat",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "graftling"
+						}
+					]
+				}
+			],
+			"entries": [
+				"你已经适应了经常使用你的额外肢体。你获得了以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你的 \"骨雕 \"功能允许你增加一个手臂而不受惩罚。例如，如果你的灵巧修饰值在第三只手臂之后每只手臂都会减少，现在第四只手臂也会减少。"
+					]
+				},
+				"选择以下一项。",
+				{
+					"type": "list",
+					"items": [
+						"你可以采取 \"使用物体 \"行动作为额外行动。",
+						"你获得熟练掌握神出鬼没的技能。如果你已经精通该技能，你在使用该技能进行检查时将获得双倍的精通奖励。",
+						"如果你的两只或更多的手臂挥舞着武器装备，你可以从盾牌中获益。",
+						"你的爬升速度等于你的步行速度。",
+						"使你的灵巧得分增加1，最高为20。"
+					]
+				},
+				"您可以多次选择此特技。每次你这样做，你必须从上面的列表中选择一个不同的好处，或者将你的灵巧得分增加1，最多为20。"
+			]
+		},
+		{
+			"name": "Graftling Discharge",
+			"source": "SailorCat",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "graftling"
+						}
+					]
+				}
+			],
+			"entries": [
+				"你已经进化到使用你的有毒消化液作为一种防御机制。你获得了以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你可以用你的行动在5×30英尺的范围内喷出酸液。每个生物都必须做一个灵巧的蓄力动作（DC8+你的熟练度加成+你的体质修改器）。拯救失败时，生物会受到2D6的酸液伤害，拯救成功时，会受到一半的伤害。伤害在6级时增加到3d6，11级时增加到4d6，16级时增加到5d6。一旦你使用了你的放电，你就不能再使用它，直到你完成一个短期或长期休息。",
+						"你对酸性伤害有抵抗力。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Graftling Avoidance",
+			"source": "SailorCat",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "graftling"
+						}
+					]
+				}
+			],
+			"entries": [
+				"通过不断的警戒，你对危险的感觉变得更好。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你获得马洛斯的能力。如果你已经拥有这个能力，你可以在短暂的休息之间使用它两次。",
+						"{@bold Marrowsense.} 你对骨头有一种嗅觉。作为一个额外的行动，直到你下一个回合结束，你可以使用这个能力来探测30英尺内未暴露的骨头和60英尺内暴露的骨头的位置和生物类型。 {@italic This ability can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, 3 feet of wood, or 7 feet of dirt. Once you use this trait, you can't use it again until you finish a short or long rest.}"
+					]
+				}
+			],
+			"ability": [
+				{
+					"wis": 1
+				}
+			]
+		}
+	]
+}

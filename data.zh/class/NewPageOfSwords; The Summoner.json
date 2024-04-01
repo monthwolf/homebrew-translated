@@ -1,0 +1,1633 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "NPOSS",
+				"abbreviation": "NPOSS",
+				"full": "The Summoner",
+				"authors": [
+					"/u/NewPageOfSwords"
+				],
+				"convertedBy": [
+					"Lxran#2292"
+				],
+				"version": "4.1",
+				"url": "https://www.gmbinder.com/share/-MBoRU3YqBjIc-mOokC8"
+			}
+		],
+		"optionalFeatureTypes": {
+			"S:AE": "Summoner; Artificial Evolutions"
+		},
+		"dateAdded": 1598017843,
+		"dateLastModified": 1687213881,
+		"_dateLastModifiedHash": "7eda9f5bc3"
+	},
+	"class": [
+		{
+			"name": "Summoner",
+			"source": "NPOSS",
+			"page": 2,
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"str",
+				"wis"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"{@item rapier|phb|rapiers}",
+					"{@item scimitar|phb|scimitars}",
+					"{@item shortsword|phb|shortswords}",
+					"{@item whip|phb|whips}",
+					"{@item hand crossbow|phb|hand crossbows}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"arcana",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"religion",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) two {@filter simple weapons|items|source=phb|type=simple weapon} or (b) any {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand} and a {@item shield|phb}",
+					"(a) {@item chain mail|PHB} or (b) {@item leather armor|PHB} and a {@item hand crossbow|PHB} with {@item crossbow bolts (20)|PHB|20 bolts}",
+					"(a) an {@item explorer's pack|PHB} or (b) {@item scholar's pack|PHB}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee"
+							},
+							"shield|phb"
+						]
+					},
+					{
+						"a": [
+							"chain mail|phb"
+						],
+						"b": [
+							"leather armor|phb",
+							"hand crossbow|phb",
+							"crossbow bolts (20)|phb"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"scholar's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"{@item shield|phb|shields}"
+					],
+					"weapons": [
+						"simple"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"arcana",
+									"insight",
+									"medicine",
+									"nature",
+									"perception",
+									"religion",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Summon's CR",
+						"Evolution Points",
+						"{@filter Cantrips Known|spells|level=0|class=Summoner (NPOSS)}"
+					],
+					"rows": [
+						[
+							"1/2",
+							0,
+							"2",
+							"2"
+						],
+						[
+							"1/2",
+							"2",
+							"2",
+							"2"
+						],
+						[
+							"1",
+							"3",
+							"2",
+							"3"
+						],
+						[
+							"1",
+							"4",
+							"2",
+							"3"
+						],
+						[
+							"1",
+							"5",
+							"2",
+							"4"
+						],
+						[
+							"2",
+							"6",
+							"2",
+							"4"
+						],
+						[
+							"2",
+							"7",
+							"2",
+							"5"
+						],
+						[
+							"2",
+							"8",
+							"2",
+							"5"
+						],
+						[
+							"3",
+							"9",
+							"2",
+							"6"
+						],
+						[
+							"3",
+							"10",
+							"3",
+							"6"
+						],
+						[
+							"3",
+							"11",
+							"3",
+							"3"
+						],
+						[
+							"4",
+							"12",
+							"3",
+							"7"
+						],
+						[
+							"4",
+							"13",
+							"3",
+							"8"
+						],
+						[
+							"4",
+							"14",
+							"4",
+							"8"
+						],
+						[
+							"5",
+							"15",
+							"4",
+							"9"
+						],
+						[
+							"5",
+							"16",
+							"4",
+							"9"
+						],
+						[
+							"5",
+							"17",
+							"4",
+							"10"
+						],
+						[
+							"6",
+							"18",
+							"4",
+							"10"
+						],
+						[
+							"6",
+							"19",
+							"4",
+							"11"
+						],
+						[
+							"6",
+							"20",
+							"4",
+							"11"
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Summoner (NPOSS)}",
+						"{@filter 2nd|spells|level=2|class=Summoner (NPOSS)}",
+						"{@filter 3rd|spells|level=3|class=Summoner (NPOSS)}",
+						"{@filter 4th|spells|level=4|class=Summoner (NPOSS)}",
+						"{@filter 5th|spells|level=5|class=Summoner (NPOSS)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Summoning Stones|Summoner|NPOSS|1",
+				"Spellcasting|Summoner|NPOSS|1",
+				"Natural Evolution|Summoner|NPOSS|2",
+				"Artificial Evolution|Summoner|NPOSS|2",
+				{
+					"classFeature": "Summoner Bond|Summoner|NPOSS|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Summoner|NPOSS|4",
+				"Natural Evolution Increase|Summoner|NPOSS|6",
+				{
+					"classFeature": "Summoner Bond Feature|Summoner|NPOSS|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Summoner|NPOSS|8",
+				"Improved Summoning|Summoner|NPOSS|10",
+				"Ability Score Improvement|Summoner|NPOSS|12",
+				"Natural Evolution Increase|Summoner|NPOSS|12",
+				{
+					"classFeature": "Summoner Bond Feature|Summoner|NPOSS|14",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Summoner|NPOSS|16",
+				{
+					"classFeature": "Summoner Bond Feature|Summoner|NPOSS|17",
+					"gainSubclassFeature": true
+				},
+				"Natural Evolution Increase|Summoner|NPOSS|18",
+				"Ability Score Improvement|Summoner|NPOSS|19",
+				"Sacrificial Pawn|Summoner|NPOSS|20"
+			],
+			"subclassTitle": "Summoner Bond",
+			"classSpells": [
+				"Acid Splash",
+				"Chill Touch",
+				"Dancing Lights",
+				"Fire Bolt",
+				"Light",
+				"Mage Hand",
+				"Mending",
+				"Message",
+				"Minor Illusion",
+				"Poison Spray",
+				"Shocking Grasp",
+				"absorb elements|xge",
+				"Alarm",
+				"Comprehend Languages",
+				"Detect Magic",
+				"Feather Fall",
+				"Grease",
+				"Identify",
+				"Jump",
+				"Mage Armor",
+				"Shield",
+				"Sleep",
+				"Blur",
+				"Darkness",
+				"Darkvision",
+				"Enlarge",
+				"Enlarge/Reduce",
+				"Flame Blade",
+				"Hold Person",
+				"Invisibility",
+				"Melf's Acid Arrow",
+				"Scorching Ray",
+				"See Invisibility",
+				"Suggestion",
+				"Blink",
+				"Counterspell",
+				"Dispel Magic",
+				"Elemental Weapon",
+				"Fear",
+				"Haste",
+				"Slow",
+				"Banishment",
+				"Confusion",
+				"Conjure Woodland Beings",
+				"Dimension Door",
+				"Freedom of Movement",
+				"Mordenkainen's Faithful Hound",
+				"Otiluke's Resilient Sphere",
+				"Polymorph",
+				"Stoneskin",
+				"Summon Lesser Demon",
+				"Animate Object",
+				"Bigby's Hand",
+				"Conjure Elemental",
+				"Summon Greater Demon",
+				"Telekinesis"
+			],
+			"fluff": [
+				{
+					"name": "The Summoner",
+					"source": "NPOSS",
+					"type": "section",
+					"entries": [
+						"一个穿着考究的年轻人在他的马车内等待，他看着武装的强盗们慢慢地接近他的坐骑。他从口袋里掏出一块符文石，把它扔出窗外。在空中，石头上的符文发出暗红色的光芒，在与地面撞击时，石头迸发出红色的奥术能量。站在石头落地的地方的是一个巨大的三头奇美拉，它从所有的头中发出可怕的吼声。",
+						{
+							"name": "Binders of Beasts",
+							"type": "entries",
+							"entries": [
+								"召唤师是那些将对自己有危险的野兽捆绑起来，在战斗中把它们作为盟友，把它们作为敌人的危险。这些召唤物既是忠实的朋友，也是他们主人永远忠诚的仆人。这些被召唤的生物可以按照自己的意愿行动，尽管召唤者的意愿更优先，因为它们被魔法强迫跟随召唤者的愿望。"
+							]
+						},
+						{
+							"name": "Creating a Summoner",
+							"type": "entries",
+							"entries": [
+								"在创建你的召唤师时，想想你的角色为什么会选择专门从事召唤工作。他们喜欢与动物为伴并把它们当作宠物？或者他们把它们看作是只适合于某些用途的奴隶？你喜欢你所召唤的生物吗？你对你所召唤的生物有什么反应？",
+								"与你的DM合作，更好地了解你与角色及其召唤物的关系，这一点很重要。你是他们的领袖吗？还是你对他们来说也是某种奇怪的存在，他们必须简单地跟随？"
+							]
+						},
+						{
+							"name": "Quick Build",
+							"type": "entries",
+							"entries": [
+								"按照这些建议，你可以迅速成为一名召唤师。首先，让智慧成为你最高的能力得分，其次是力量或灵巧。第二，选择（%0%）或（%1%）的背景。第三，选择{@spell Mage Hand}和{@spell Fire Bolt}的咒语，以及一级法术；{@spell Feather Fall}和{@spell Mage Armor}。"
+							]
+						}
+					]
+				}
+			],
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Natural Evolution Increase",
+			"source": "NPOSS",
+			"page": 3,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 18,
+			"entries": [
+				"你的自然进化根据其规则进行改进。"
+			]
+		},
+		{
+			"name": "Natural Evolution Increase",
+			"source": "NPOSS",
+			"page": 3,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 12,
+			"entries": [
+				"你的自然进化根据其规则进行改进。"
+			]
+		},
+		{
+			"name": "Natural Evolution Increase",
+			"source": "NPOSS",
+			"page": 3,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 6,
+			"entries": [
+				"你的自然进化根据其规则进行改进。"
+			]
+		},
+		{
+			"name": "Summoner Bond Feature",
+			"source": "NPOSS",
+			"page": 3,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得一个由你的召唤师结界赋予的功能。"
+			]
+		},
+		{
+			"name": "Summoner Bond Feature",
+			"source": "NPOSS",
+			"page": 3,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 14,
+			"entries": [
+				"在14级时，你获得一个由你的召唤师结界赋予的功能。"
+			]
+		},
+		{
+			"name": "Summoner Bond Feature",
+			"source": "NPOSS",
+			"page": 3,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 17,
+			"entries": [
+				"在17级时，你获得一个由你的召唤师结界授予的功能。"
+			]
+		},
+		{
+			"name": "Summoning Stones",
+			"source": "NPOSS",
+			"page": 3,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 1,
+			"entries": [
+				"从1级开始，你可以将你杀死的某些怪物的灵魂变成被称为召唤石的魔法物品。这个过程需要两个机械步骤。标记生物，然后杀死生物，将生物变成召唤石。",
+				{
+					"type": "entries",
+					"name": "Creating Summons",
+					"entries": [
+						"作为一个额外的动作，你可以将你的召唤师标记放在一个体型很小到很大的野兽、植物或怪兽身上，其CR等于你等级的三分之一（向下取整）。你每天可以这样做三次。你不能标记成群的生物。每当一个在你周围60英尺内的被标记的生物死亡时，你可以用你的反应将该生物的身体变成一个召唤石。你不需要是杀死该生物的人。你只能拥有与你的智慧修饰值相等的召唤师之石的数量（最少为1）。如果你获得了一块召唤师之石，如果你已经达到了你的极限，你必须选择销毁一块石头。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Summoning Summons",
+					"entries": [
+						"作为一个行动，你可以捏碎你的一个召唤石并召唤里面的生物。你所召唤的生物算作一方盟友，在你自己的回合之后，它的回合立即由你控制。你一次只能召唤一个生物。该生物是用来制造召唤石的原始生物的重构，并具有该生物生前所有的特征和能力，但该生物的传奇行动除外。当被召唤时，它以全额生命值出现，并在你选择的10英尺范围内的一个地方出现，或者在最近的无人空间出现。如果你采取{@action Attack}的行动或施放一个施法时间为一个行动的法术，你的召唤物不能在同一回合内采取{@action Attack}的行动。如果一个被召唤的生物被降低到0HP，它就会消失，并且不能再次被召唤，直到你完成一个长时间的休息。如果你被击倒（%2%），你的召唤物就会消失，并恢复为召唤石。召唤物可以无限制地被召唤和重新召唤，但它不会恢复任何命中率或其他依赖于休息的特性，直到相应的短期或长期休息。",
+						"召唤物不能被治疗法术如{@spell healing word}或{@spell cure wounds}或魔法物品如治疗药水所治愈。在1级时，你一次只能控制1个召唤生物。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Starting Stones",
+					"entries": [
+						"在1级的时候，你开始拥有1块召唤师之石。这个召唤石可以容纳一个CR为1/4或更低的中小型野兽，它不能飞行或游泳。你不能选择成群结队。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "NPOSS",
+			"page": 4,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 1,
+			"entries": [
+				"作为一名召唤师，你对魔法召唤石的使用已经让你对魔法有了基本的了解，你可以在战斗中使用这些魔法来帮助你的召唤物作战。",
+				{
+					"type": "entries",
+					"name": "Cantrips (0-Level Spell)",
+					"entries": [
+						"在1级时，你知道两个来自（%0%）的咒语。在更高的等级中，你会学习你所选择的额外的召唤师咒语，如召唤师表格中已知的咒语栏所示。当你在这个等级中获得一个级别时，你可以用召唤师法术列表中的另一个召唤术来替换你所知道的一个召唤师法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known",
+					"entries": [
+						"你知道（%0%）。召唤师表显示你何时学习更多你选择的召唤师法术。这些法术中的每一个都必须是你有法术槽的等级。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智慧是你的召唤师法术的施法能力。每当法术提到你的法术能力时，你就会使用你的智慧。此外，在设定你所施展的召唤师法术的蓄力DC时，以及在使用召唤师法术进行攻击时，你都会使用你的智慧修饰。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Natural Evolution",
+			"source": "NPOSS",
+			"page": 4,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 2,
+			"entries": [
+				"从2级开始，当你提升你目前身上的召唤物的等级时，你会获得某些好处。你会增加一个额外的命中率，并相应增加它的命中率。每当你从召唤师等级中获得能力得分提高的等级特征时，你的召唤物的能力也会提高。你的召唤物可以将你选择的一项能力得分提高2分，也可以将你选择的两项能力得分提高1分。和通常一样，你的召唤物不能用这个特性将能力得分提高到20分以上，除非它在被捕获时的状态超过20分。在6级、12级和18级时，你可以提高你在升级时拥有的每个召唤物的伤害模数。例如，如果你有一只巨鹰，用它的爪子造成{@dice 1d6}的砍击伤害，它就会提高到{@dice 2d6}。如果你捕获的新召唤物比你当前的最大CR值低一个CR值，那么它就会获得所有能力得分的增加和伤害的增加，这些增加是从它的CR值变得可用的等级开始的。"
+			]
+		},
+		{
+			"name": "Artificial Evolution",
+			"source": "NPOSS",
+			"page": 5,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 2,
+			"entries": [
+				"在2级时，你获得了2个进化点，你可以将其用于人工进化。人工进化是你可以用进化点购买的能力、力量和升级，以赋予召唤物。每个人造进化适用于一个召唤物，每个召唤物在同一时间最多可以有3个人造进化。每当召唤师获得一个新的等级时，人工进化可以被改变，但它们是固定的。进化点数不能被保存，每当召唤师获得一个等级时，所有的点数都必须被花费。人工进化的列表可以在（%0%）上找到。"
+			]
+		},
+		{
+			"name": "Summoner Bond",
+			"source": "NPOSS",
+			"page": 5,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 3,
+			"entries": [
+				"在3级的时候，你可以选择一个原型来增强你的召唤能力。选择 \"元素的结合\"、\"守护者的结合 \"或 \"观察者的结合\"，所有这些在等级描述的末尾都有详细说明。你所选择的原型会在3、7、14和17级时授予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "NPOSS",
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"page": 5,
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "NPOSS",
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"page": 5,
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "NPOSS",
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"page": 5,
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "NPOSS",
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"page": 5,
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "NPOSS",
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"page": 5,
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Improved Summoning",
+			"source": "NPOSS",
+			"page": 5,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 10,
+			"entries": [
+				"在10级时，你已经学会了提高召唤和捕捉怪物的技能。你现在可以标记、捕获和召唤任何生物，只要它不是人形生物。它们的体型现在被允许是巨大的。你的召唤物的攻击现在被算作魔法。你现在还可以同时召唤两个召唤物，如果它们的CR值加起来不超过你等级的一半（四舍五入）。例如，在10级时，如果两个召唤物的CR值加起来不超过5，你就可以召唤两个召唤物，两个召唤物都会紧随你之后，其中灵巧得分较高的那个会先走。"
+			]
+		},
+		{
+			"name": "Sacrificial Pawn",
+			"source": "NPOSS",
+			"page": 5,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"level": 20,
+			"entries": [
+				"在20级时，当你倒下（%0%）并且当前至少有一个召唤物被召唤时，你可以移除该召唤物并恢复它的命中率。在你的下一次长时休息之前，该召唤物不能再次被召唤。或者，如果你的召唤物下降到0点，你可以用你的反应从你自己身上移除它的CR值，并让它恢复与你损失的相同数量的命中率。如果召唤物的CR小于1，你就会获得或失去1点命中率。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Aerial",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物获得20英尺的飞行速度。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Aquatic",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物可以在空气和水中呼吸。召唤物还能获得20英尺的游泳速度。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Basic Magic",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 1 Evolution Points}",
+				"召唤物获得（%0%）。在确定法术修改器和DC时，体质是其法术能力。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Blindsight",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物获得盲目性，使其不需要眼睛就能看到60英尺。如果召唤物已经拥有（%0%），则会扩大60英尺。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Climbing Speed",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 1 Evolution Points}",
+				"召唤物获得20英尺的爬行速度。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Condition Immunity",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"一个召唤物获得对以下一种状态的免疫：{@condition Blinded}，{@condition Charmed}，{@condition Deafened}，{@condition Frightened}，{@condition Paralyzed}，{@condition Petrified}，{@condition Poisoned}，或{@condition Stunned}。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Darkvision",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 1 Evolution Points}",
+				"召唤物获得暗视，使其能够在黑暗中看到60英尺的灰色阴影。如果召唤物已经有了暗视能力，它就会扩大60英尺。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Elemental Resistance",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 3 Evolution Points}",
+				"召唤物获得对一种元素伤害类型的抗性。从下列元素中选择一个：酸、冷、火、闪电、坏死、毒药、精神、辐射或雷。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Forceful",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物的一次攻击能够将敌人击倒在地。选择一个攻击。召唤物迫使任何被攻击击中的敌人进行相当于8+召唤物的熟练度加成+召唤物的力量修饰的力量储蓄。如果失败，目标会被击倒在地。成功时，他们不受影响。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Improved Armor",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 1 Evolution Points}",
+				"召唤物增加其护甲等级+1。你可以多次选择这种进化，每次增加1个进化点，总共3个。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Keen Sense",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 1 Evolution Points}",
+				"召唤物在依靠一种感官进行感知检查时具有优势；听觉、视觉或嗅觉。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 4 Evolution Points}",
+				"召唤物在面对法术和其他魔法效果时，在蓄力攻击方面具有优势。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Major Magic",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 3 Evolution Points}",
+				"召唤物获得{@filter a single 2nd-level spell from the Summoner spell list|spells|level=2|class=Summoner (NPOSS)}。在需要长时间休息才能再次施展之前，它可以施展此法术一次。在确定法术修改器和DC时，体质是它的法术能力。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Minor Magic",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物获得一个（%0%）。它可以施放这个法术的次数与它的体质修改器相等。在确定法术修改器和DC时，体质是它的法术能力。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Mobile",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物获得10英尺的额外移动距离。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Mount",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 1 Evolution Points}",
+				"召唤物具有适当的技能和形态，可以作为战斗训练的坐骑。召唤物必须比其骑手至少大一个体型类别。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Multiattack",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 4 Evolution Points}",
+				"召唤物获得了在一个回合内额外攻击一次的能力。攻击可以用召唤物拥有的任何自然攻击来进行。如果召唤物已经拥有多重攻击的能力，它就会再增加一次攻击。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Physical Resistance",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 4 Evolution Points}",
+				"召唤物获得对一种物理伤害类型的抵抗。从以下类型中选择一个；力量、非魔法重击、非魔法穿刺或非魔法砍击。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Reach",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物的一种攻击能够在远处打击敌人。选择一种攻击方式。召唤物使用该攻击的范围增加5英尺。如果该攻击已经有范围，则范围会增加。这种人造进化可以被多次选择。它的效果不会叠加。每次你选择这个人工进化时，你都要选择不同的攻击来获得攻击范围。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Regeneration",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 4 Evolution Points}",
+				"召唤物在他们的回合开始时重新获得{@dice 1d10}的命中率。如果他们受到魔法伤害，这个特性在他们的下一个回合开始时不会发挥作用。召唤物只有在他们的回合开始时命中率为0并且没有再生时才会死亡。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Resilient",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物获得对召唤者选择的一种救赎方式的熟练度。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Skilled",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 1 Evolution Points}",
+				"召唤物获得召唤者选择的一项技能的熟练度。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Subterranean",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 3 Evolution Points}",
+				"召唤物获得10英尺的钻探速度。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Tremorsense",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物获得震感，使其能够感受到30英尺以内的大地运动。如果召唤物已经有了震感，那么它的震感会扩大30英尺。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Truesight",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物获得真实视力，使其能够看到星海中的30英尺。如果召唤物已经有了真实视力，那么它的范围会扩大30英尺。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		},
+		{
+			"name": "Venom",
+			"source": "NPOSS",
+			"entries": [
+				"{@b Cost: 2 Evolution Points}",
+				"召唤物的其中一个攻击会变成毒液。选择一个攻击。召唤物迫使任何被此攻击击中的敌人进行相当于8+召唤物的熟练度加成+召唤物的体质修饰的体质训练。如果失败，他们会受到{@dice 1d6}的中毒伤害。成功时，他们不受影响。如果召唤物已经造成了毒药伤害，那么他们的伤害会增加（%1%）。这种人工进化可以被多次选择。它的效果不会叠加。每次你选择这个人工进化，你都会选择一个不同的攻击来获得毒液。"
+			],
+			"featureType": [
+				"S:AE"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Bond of the Guardian",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Guardian",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"entries": [
+				"守护者是那些保护弱者免受危险的威胁而保护自己的人。守护者纽带的召唤者将他们的召唤物变成这样的存在。你发展强大的召唤物，作为你和你的盟友的防御塔。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Beastial Bulwark|Summoner|NPOSS|Guardian|NPOSS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Summoner's Armor|Summoner|NPOSS|Guardian|NPOSS|3"
+				}
+			]
+		},
+		{
+			"name": "Beastial Bulwark",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Guardian",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Guardian feature)}",
+				"从3级开始，你的召唤物被设计来保护你。你的召唤物会获得熟练的体质测试，体质得分等于它们原来的体质得分+你的智慧修正值（最小值为+1）。例如，一只体质为13的巨鹰召唤物，其召唤者的智慧为15，其体质得分将变成15。",
+				"召唤物的HP会根据其体质修饰值的变化而相应增加，因为怪物的体质修饰值也会影响它的命中点数。它的体质修正值乘以它所拥有的命中点数，然后将结果加到它的命中点数上。例如，如果一个怪物的体质是13（+1修改器），命中率是（%0%），它就有（%1%）的命中率（平均11）。"
+			]
+		},
+		{
+			"name": "Summoner's Armor",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Guardian",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Guardian feature)}",
+				"在3级时，如果你的召唤物没有任何形式的盔甲（自然或非自然的），它的攻击力会增加到13+你的召唤物的灵巧得分。"
+			]
+		},
+		{
+			"name": "Tower Aura",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Guardian",
+			"subclassSource": "NPOSS",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i (7th-level Bond of the Guardian feature)}",
+				"在7级时，你的召唤物会散发出一种保护的光环，你和你的盟友都会从中受益。所有在你的召唤物5英尺范围内的盟友在体质判断和注意力检查上都有优势。如果你有两个召唤物，你必须选择一个给予塔的光环。另一个则不产生光环。在17级时，这个光环增加到10英尺。"
+			]
+		},
+		{
+			"name": "Shield of Scales",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Guardian",
+			"subclassSource": "NPOSS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i (14th-level Bond of the Guardian feature)}",
+				"在14级的时候，你的召唤物会专门保护它周围的人。你的召唤物可以用他们的反应对任何针对他们或他们周围5英尺内的盟友的非法术攻击卷施加不利条件。"
+			]
+		},
+		{
+			"name": "Titan's Might",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Guardian",
+			"subclassSource": "NPOSS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i (17th-level Bond of the Guardian feature)}",
+				"从17级开始，你的召唤物保护他人和承受打击的能力赋予了它强大的抵抗力。你的召唤物获得了对所有形式的打击、穿刺和切割伤害的抵抗。"
+			]
+		},
+		{
+			"name": "Bond of the Observer",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"entries": [
+				"利用他们的召唤物作为间谍，从远处观察敌人。观察者的纽带使用他们的召唤物来帮助他们在世界范围内进行间谍活动、偷窃和潜行。你擅长于侦查和隐秘，并使用你的召唤物来帮助你进行冒险。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Summon's Proficiencies|Summoner|NPOSS|Observer|NPOSS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Third Eye|Summoner|NPOSS|Observer|NPOSS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tread Cautiously|Summoner|NPOSS|Observer|NPOSS|3"
+				}
+			]
+		},
+		{
+			"name": "Summon's Proficiencies",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Observer feature)}",
+				"从第三级开始，你的所有召唤物都会获得（%0%）、（%1%）和（%2%）的熟练度。"
+			]
+		},
+		{
+			"name": "Third Eye",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Observer feature)}",
+				"在第三级时，只要你的召唤物在你100英尺范围内，你就可以与它进行心灵感应，并通过它们的感官来观察。作为一个动作，你可以透过你的召唤物的眼睛看到它，听到它所听到的声音，直到你的下一个回合开始，获得召唤物所具有的任何特殊感官的好处。在这段时间内，你对自己的感官是（%0%）和（%1%）。"
+			]
+		},
+		{
+			"name": "Tread Cautiously",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Observer feature)}",
+				"三级时，你的召唤物可以暂时变成（%0%）。作为一个额外的动作，你的召唤物可以神奇地变成（%1%），直到它的下一个回合开始，或者直到你的召唤物进行攻击、做出伤害卷，或者迫使某人做出一个拯救动作。他们不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Trackless Aura",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i (7th-level Bond of the Observer feature)}",
+				"7级时，你的召唤物会散发出一种阴影的光环，你和你的盟友都能从中受益。所有在你的召唤物5英尺范围内的盟友，在{@skill Stealth}检查和灵巧救赎上有优势。如果你有两个召唤物，你必须选择一个来发出无轨光环。另一个则不产生光环。17级时，这个光环增加到10英尺。"
+			]
+		},
+		{
+			"name": "Hidden Agent",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i (14th-level Bond of the Observer feature)}",
+				"从14级开始，你的召唤物可以使用 \"小心翼翼 \"的功能，次数为你的智慧修正值（最小为1）。在完成短时或长时休息后，你会重新获得所有隐秘药剂的使用权。"
+			]
+		},
+		{
+			"name": "Surprise Attack",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i (14th-level Bond of the Observer feature)}",
+				"14级时，你的召唤物善于在战斗中给敌人带来惊喜。每当你的召唤物在攻击卷上有优势时，他们可以在伤害卷上增加一个额外的（%0%）伤害。"
+			]
+		},
+		{
+			"name": "Invisibility",
+			"source": "NPOSS",
+			"page": 10,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Observer",
+			"subclassSource": "NPOSS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i (17th-level Bond of the Observer feature)}",
+				"在17级时，每当你的召唤物使用他们的 \"小心翼翼 \"或 \"隐秘特工 \"能力时，隐形状态会持续1分钟。当你的召唤物进行攻击、进行伤害卷或强迫某人进行救赎时，它仍然会被驱散。"
+			]
+		},
+		{
+			"name": "Bond of Souls",
+			"source": "NPOSS",
+			"page": 11,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Souls",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"entries": [
+				"召唤师无法控制人形生物的强大灵魂。但如果是不死之身，他们就会弱到可以控制。灵魂结界的召唤师专注于削弱他们召唤物的灵魂，以便更好地控制它们并在战斗中使用它们。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Undead Summons|Summoner|NPOSS|Souls|NPOSS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Necromancer|Summoner|NPOSS|Souls|NPOSS|3"
+				}
+			]
+		},
+		{
+			"name": "Undead Summons",
+			"source": "NPOSS",
+			"page": 11,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Souls",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，你的召唤物的灵魂的弱化会削弱它们的身体。你的所有召唤物都会获得亡灵坚韧特性。",
+				{
+					"name": "Undead Fortitude",
+					"type": "entries",
+					"entries": [
+						"如果伤害将你的召唤物降低到0点，它必须做一个宪法救赎动作，DC为5+所受伤害，除非伤害是辐射或来自关键打击。如果成功，召唤物会下降到1点生命值。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Necromancer",
+			"source": "NPOSS",
+			"page": 11,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Souls",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Souls feature)}",
+				"三级时，你可以标记、捕获和召唤亡灵和人形生物。任何被你捕获和召唤的人形生物都会以他们自己的僵尸版本出现，但会使用他们原来的状态块，除了他们的生物类型变为亡灵，他们的智力分值变为3+他们生前的智力修改器。如果他们使用智力作为他们的法术能力，他们得到的奖励是3+他们生前的智力修饰值的两倍。"
+			]
+		},
+		{
+			"name": "Undead Bestiary",
+			"source": "NPOSS",
+			"page": 11,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Souls",
+			"subclassSource": "NPOSS",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i (7th-level Bond of the Souls feature)}",
+				"从7级开始，你可以决定你的召唤物出现的亡灵类型。在长期休息结束后，你可以选择让你的所有召唤物都变成阴影、骷髅或僵尸。",
+				{
+					"name": "Shadow",
+					"type": "entries",
+					"entries": [
+						"阴影的召唤物可以作为奖励动作隐藏起来，并且可以在1英寸宽的狭窄空间内移动而不被挤压。"
+					]
+				},
+				{
+					"name": "Skeletal",
+					"type": "entries",
+					"entries": [
+						"属于骷髅的召唤物对毒药伤害和{@condition poisoned}条件免疫。"
+					]
+				},
+				{
+					"name": "Zombified",
+					"type": "entries",
+					"entries": [
+						"被僵尸化的召唤物在体质测试中具有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Necrosis",
+			"source": "NPOSS",
+			"page": 11,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Souls",
+			"subclassSource": "NPOSS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i (14th-level Bond of the Souls feature)}",
+				"在14级时，你的召唤物已经变得强大，他们的骨体让他们对坏死的伤害有抵抗力，并且对（%0%）的影响免疫。"
+			]
+		},
+		{
+			"name": "Fallen Army",
+			"source": "NPOSS",
+			"page": 11,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Souls",
+			"subclassSource": "NPOSS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i (17th-level Bond of the Souls feature)}",
+				"在17级时，你的召唤物的性质会像传染病一样传播。当你的召唤物杀死一个人形生物时，它就会从死里复活，暂时为你服务。它使用{@creature zombie|MM}的状态块，并且如果你在战斗中，它保持它在主动权顺序中的位置。该僵尸为你服务的回合数等于你的智慧修正值（最低为1）。你一次只能拥有一个僵尸，如果你的召唤物杀死了另一个人形生物，那么这个僵尸就会变成一具尸体。"
+			]
+		},
+		{
+			"name": "Bond of the Elements",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Elements",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"entries": [
+				"在存在的边缘，有一些由宇宙的原始能量构成的世界。那些修炼元素之力的人专门研究这些领域的压倒性力量和其中的原始巨兽。你将元素与你召唤的生物的力量相结合，创造出战场上最危险的威胁。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Summoner|NPOSS|Elements|NPOSS|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Strike|Summoner|NPOSS|Elements|NPOSS|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Elements",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Elements feature)}",
+				"从3级开始，你可以说、读、写下列语言之一：奥兰语、阿奎恩语、伊格纳语或泰兰语。你还能获得以下一项的熟练度；{@skill Arcana}, {@skill Nature}, 或{@skill Religion}。"
+			]
+		},
+		{
+			"name": "Elemental Strike",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Elements",
+			"subclassSource": "NPOSS",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Bond of the Elements feature)}",
+				"在3级时，你的召唤物获得为他们的武器攻击注入元素能量的能力。在你的召唤物的每个回合，当他们用近战攻击击中一个生物时，他们会对目标造成额外的（%0%）伤害。你可以选择以下伤害类型之一。酸、冷、火、闪电或雷。你可以在长时间休息结束时选择哪种伤害类型，直到你的下一次长时间休息才能改变。",
+				"7级时，模子增加到（%0%），15级时，（%1%）。"
+			]
+		},
+		{
+			"name": "Primal Sacrifice",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Elements",
+			"subclassSource": "NPOSS",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i (7th-level Bond of the Elements feature)}",
+				"在第7级时，当你的召唤物下降到0命中率时，它们会产生一个爆炸性的元素伤害，其类型是你为你的元素攻击选择的。10英尺范围内的所有生物必须做一个灵巧的蓄力动作（DC=8+你的熟练度加成+召唤物的CR）。如果失败，他们会受到{@dice 1d10}+你的召唤师等级的伤害，与你选择的元素攻击类型相同。成功时，他们会受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Elemental Resistance",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Elements",
+			"subclassSource": "NPOSS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i (14th-level Bond of the Elements feature)}",
+				"在14级时，你的召唤物已经适应了在他们的攻击中使用元素，并获得对你目前选择的伤害类型的抵抗，作为他们的元素攻击。"
+			]
+		},
+		{
+			"name": "Final Bow",
+			"source": "NPOSS",
+			"page": 9,
+			"className": "Summoner",
+			"classSource": "NPOSS",
+			"subclassShortName": "Elements",
+			"subclassSource": "NPOSS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i (17th-level Bond of the Elements feature)}",
+				"在17级时，每当你解除召唤时，你可以选择激活原始牺牲的特性，即使他们的生命值没有下降到0。每个召唤物你只能做一次，每次都要等到长时间休息后才能再次使用这个特性。如果召唤物的命中率降至0，它仍然可以使用 \"原始祭祀\"，如果它已经用 \"最终之弓 \"使用过它。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Bond of the Elements",
+			"source": "NPOSS",
+			"page": 9,
+			"shortName": "Elements",
+			"subclassFeatures": [
+				"Bond of the Elements|Summoner|NPOSS|Elements|NPOSS|3",
+				"Primal Sacrifice|Summoner|NPOSS|Elements|NPOSS|7",
+				"Elemental Resistance|Summoner|NPOSS|Elements|NPOSS|14",
+				"Final Bow|Summoner|NPOSS|Elements|NPOSS|17"
+			],
+			"className": "Summoner",
+			"classSource": "NPOSS"
+		},
+		{
+			"name": "Bond of the Guardian",
+			"source": "NPOSS",
+			"page": 9,
+			"shortName": "Guardian",
+			"subclassFeatures": [
+				"Bond of the Guardian|Summoner|NPOSS|Guardian|NPOSS|3",
+				"Tower Aura|Summoner|NPOSS|Guardian|NPOSS|7",
+				"Shield of Scales|Summoner|NPOSS|Guardian|NPOSS|14",
+				"Titan's Might|Summoner|NPOSS|Guardian|NPOSS|17"
+			],
+			"className": "Summoner",
+			"classSource": "NPOSS"
+		},
+		{
+			"name": "Bond of the Observer",
+			"source": "NPOSS",
+			"page": 10,
+			"shortName": "Observer",
+			"subclassFeatures": [
+				"Bond of the Observer|Summoner|NPOSS|Observer|NPOSS|3",
+				"Trackless Aura|Summoner|NPOSS|Observer|NPOSS|7",
+				"Hidden Agent|Summoner|NPOSS|Observer|NPOSS|14",
+				"Surprise Attack|Summoner|NPOSS|Observer|NPOSS|14",
+				"Invisibility|Summoner|NPOSS|Observer|NPOSS|17"
+			],
+			"className": "Summoner",
+			"classSource": "NPOSS"
+		},
+		{
+			"name": "Bond of the Souls",
+			"source": "NPOSS",
+			"page": 11,
+			"shortName": "Souls",
+			"subclassFeatures": [
+				"Bond of Souls|Summoner|NPOSS|Souls|NPOSS|3",
+				"Undead Bestiary|Summoner|NPOSS|Souls|NPOSS|7",
+				"Necrosis|Summoner|NPOSS|Souls|NPOSS|14",
+				"Fallen Army|Summoner|NPOSS|Souls|NPOSS|17"
+			],
+			"className": "Summoner",
+			"classSource": "NPOSS"
+		}
+	]
+}

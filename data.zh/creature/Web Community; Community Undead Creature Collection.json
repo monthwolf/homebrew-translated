@@ -1,0 +1,1544 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMUndead",
+				"abbreviation": "COMUndead",
+				"full": "Community Undead Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.04.19",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1555319662,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "d99c5a03c9"
+	},
+	"monster": [
+		{
+			"name": "Skeleton Lord",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"undead",
+					"skeleton"
+				]
+			},
+			"source": "COMUndead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"scraps armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d10 + 38",
+				"average": 142
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"passive": 9,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"{@link Skeleton Lord|https://www.reddit.com/r/UnearthedArcana/comments/dz42sj/skeleton_lord_an_undead_boss_capable_of_summoning/} by {@link Enraric|https://docs.google.com/document/d/1X4IVKLcCeBDsd4Bm5wBKd-rJpMYq10JKUJCErjDSwZ0/edit}",
+					"当大量的人暴死并被埋在同一个地方时，挥之不去的怨恨和绝望的情绪会导致一个骷髅头领主从乱葬岗上升起。",
+					"骷髅领主披着被杀者的尸骨，将他们的愤怒和复仇的欲望发泄在任何接近屠杀现场的人身上。骷髅头领主也可以将被杀者的骸骨激活，那些与骷髅头领主战斗的人往往会发现自己也在与一群小型的骷髅头战斗。",
+					"{@b Blind Anger.} 骷髅领主不分善恶；它只是把被杀者的集体愤怒发泄到附近的任何事物上。即使谋杀者被杀，这种愤怒也不会减弱；除非他们被阻止，否则骷髅领主将永远继续杀人。",
+					"{@b Deadly Guardians.}由于骷髅领主不会远离催生他们的屠杀地点，他们偶尔会被那些想用他们来守护一个特别强大的秘密或宝藏的人创造出来。通过杀死一大群人，然后在骷髅领主出现之前逃离现场，一个人可以创造一个强大的警卫，而对自己的风险很小。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/fAQCB9S.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/fAQCB9S.png",
+			"shortName": "Skeleton Lord",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"trait": [
+				{
+					"name": "Skeleton Cloak",
+					"entries": [
+						"骷髅王有一件由（%0%）（%1%）组成的斗篷。当连接在斗篷上时，这些{@creature skeleton lord minion|COMUndead|skeletons}被认为是骷髅王的一部分。当骷髅领主受到伤害时，掷出（%3%）。在6分时，其中一个{@creature skeleton lord minion|COMUndead|skeletons}会被从斗篷中击出，落在距离骷髅领主5英尺内的一个无人空间中，并在主动权顺序中紧随其后行动。该骷髅作为骷髅领主的盟友行事，但不在其直接控制之下。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"骷髅领主进行两次骨质大剑攻击。"
+					]
+				},
+				{
+					"name": "Skeleton Toss",
+					"entries": [
+						"{@atk rw} {@hit 6}击中，到达10英尺，一个目标。{@h}8 ({@damage 2d4 + 3})重击伤害。",
+						"骷髅领主从其骷髅斗篷中拉出一个骷髅，并将其抛出。",
+						"被抛出的骷髅会落在目标5英尺内的一个无人空间，并在主动权顺序中紧随骷髅领主之后行动。该骷髅作为骷髅领主的盟友行事，但不在其直接控制之下。"
+					]
+				},
+				{
+					"name": "Bone Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达10英尺，一个目标。{@h}17 ({@damage 4d6 + 3})砍击伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"RCH",
+				"MW",
+				"MLW"
+			]
+		},
+		{
+			"name": "Skeleton Lord Minion",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"undead",
+					"skeleton"
+				]
+			},
+			"source": "COMUndead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"scraps armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"passive": 9,
+			"cr": "1/4",
+			"fluff": {
+				"entries": [
+					"{@link Skeleton Minion Lord|https://www.reddit.com/r/UnearthedArcana/comments/dz42sj/skeleton_lord_an_undead_boss_capable_of_summoning/} by {@link Enraric|https://docs.google.com/document/d/1X4IVKLcCeBDsd4Bm5wBKd-rJpMYq10JKUJCErjDSwZ0/edit}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/AeG5dYN.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/AeG5dYN.png",
+			"shortName": "Skeleton Lord Minion",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"damageTags": [
+				"P"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"languages": [
+				"Understands All Languages It Spoke In Life but can't speak"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围80/320英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			]
+		},
+		{
+			"name": "Skull Knight",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "COMUndead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 48",
+				"average": 102
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 14,
+			"wis": 14,
+			"cha": 14,
+			"passive": 12,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"{@link Some undead creature |https://5theditionhomebrewing.tumblr.com/post/164761157358/some-undead-creatures-used-them-a-while-back}",
+					"堕落的恩典",
+					"骷髅骑士曾经是高贵的英雄。他们是受人尊敬的圣骑士，受到许多人的敬仰。一路走来，他们被贪婪或权力所玷污，偏离了他们曾经遵循的正义之路，放弃了他们的誓言。",
+					"一个在亡灵界有足够影响力和力量的禽兽用不朽的身体和超越自然界的力量的承诺来诱惑曾经高贵的圣骑士。在这个承诺的吸引下，接受这个交易的圣骑士成为骷髅骑士。一个由坏死的能量和不死的渴求所推动的生物，可以吸干活人的生命。",
+					"每个骷髅骑士都带着一把盗命之剑，这是一把强大而黑暗的物品，每次伤害敌人时都会为持剑者提供治疗。这把剑的剑柄上还装有骷髅骑士的部分污秽灵魂。一旦骑士在战斗中倒下，如果有生物试图抓住这把武器，除非它们有足够的力量来抵抗这种影响，否则它就会失去所有剩余的生命，这些能量会转移到骷髅骑士身上。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/0oj1MpD.png"
+						}
+					}
+				]
+			},
+			"shortName": "Skull Knight",
+			"tokenUrl": "https://i.imgur.com/jzt41kO.png",
+			"isNpc": false,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands all languages it knew in life but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"athletics": "+8"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"variant": [
+				{
+					"name": "Tainted Willow",
+					"entries": [
+						"长剑，需要由非合法或善良的角色进行调教。",
+						"这把长剑会造成额外的3({@damage 1d6})坏死伤害，并治疗持剑者受到的坏死伤害总量（包括来自外界的额外坏死伤害）。",
+						"这把刀可以使用一系列的法术；灼热之击、雷霆之击、愤怒之击、烙印之击、刺眼之击。每次短时或长时休息时，你可以选择一个法术来注入刀身。每个咒语每天总共可以施放三次，不需要集中注意力。"
+					],
+					"type": "variant"
+				}
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"骑士与生俱来的法术能力是 \"魅力\"（法术保存（%0%），命中率+7）。骑士可以天生施展以下法术，不需要任何材料成分。"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blinding smite}",
+							"{@spell branding smite}",
+							"{@spell searing smite}",
+							"{@spell thunderous smite}",
+							"{@spell wrathful smite}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Life Exchange",
+					"entries": [
+						"一旦骑士被击败，如果一个生物在其死亡后一分钟内抓住他们的武器，他们必须做一个{@dc 15}宪法救赎，否则他们会立即下降到0命中率，并且他们失去的所有命中率会转移到骑士身上，使其复苏。"
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"如果伤害使骑士的命中率降至0，它必须做一个宪法救赎动作，DC为5+所受伤害，除非伤害是辐射或来自关键打击。如果成功的话，骑士会下降到1点生命值。"
+					]
+				}
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"骑士用它的Tainted Willow长剑进行两次攻击。"
+					]
+				},
+				{
+					"name": "Tainted Willow",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d10 + 4})砍击伤害，加上3 ({@damage 1d6})坏死伤害。骷髅骑士的治疗量为对目标造成的坏死伤害量。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTagsSpell": [
+				"F",
+				"R",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Skull Berserker",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "COMUndead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 60",
+				"average": 114
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 20,
+			"int": 8,
+			"wis": 9,
+			"cha": 14,
+			"passive": 9,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"{@link Some undead creature |https://5theditionhomebrewing.tumblr.com/post/164761157358/some-undead-creatures-used-them-a-while-back}",
+					"原始的怒火",
+					"狂暴者是在长期死亡的生物的精神进入最近死去的战士的身体后产生的。这些生物已经被困在边缘地带数千年了，他们仅靠对世界的愤怒而生存。这些新的容器给了他们一个带来混乱和死亡的机会。没有什么能阻止狂暴者的无情怒火。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/VvcegsQ.png"
+						}
+					}
+				]
+			},
+			"shortName": "Skull Berserker",
+			"tokenUrl": "https://i.imgur.com/RHD5S4J.png",
+			"isNpc": false,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands all languages it knew in life but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"save": {
+				"str": "+8",
+				"con": "+8"
+			},
+			"skill": {
+				"athletics": "+11"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"近战武器在骷髅头狂战士用它击中时，会造成一个额外的伤害。"
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"如果伤害使骷髅狂战士的命中率降至0，它必须做一个宪法救赎动作，DC为5+所受伤害，除非伤害是辐射或来自关键打击。如果成功，骷髅狂战士会下降到1点生命值。"
+					]
+				},
+				{
+					"name": "Undying Rage",
+					"entries": [
+						"狂暴者可以使用它的奖励动作进入狂暴状态，获得所有攻击的+2伤害，在所有力量检查中占据优势，并抵抗打击、砍击和穿刺伤害。这种愤怒持续1分钟或直到狂暴战士选择结束它。这种愤怒可以在每个长时间的休息中进入两次。"
+					]
+				}
+			],
+			"traitTags": [
+				"Brute",
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"骑士用它的大剑进行了两次攻击"
+					]
+				},
+				{
+					"name": "Berserker Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 8}击中，到达5英尺，一个目标。{@h}15 ({@damage 3d6 + 5})砍击伤害。目标必须成功地进行一次{@dc 12}宪法救赎，否则他们的最大命中率将减少5（在攻击的伤害被应用后）。拯救失败后，狂暴战士会恢复5点生命值。如果一个生物被这个效果带到了0命中率，狂暴战士的刀就会苏醒，给狂暴战士带来一些好处。",
+						"他们恢复的命中率等于其杀死的生物的等级或CR+狂暴者的体质修正值。",
+						"在1分钟内，狂暴战士获得一个坏死光环，使其所有的攻击造成额外的5（（%0%））坏死伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"variant": [
+				{
+					"name": "Berserker Greatsword",
+					"entries": [
+						"武器（大剑）稀有（需要调教）",
+						"一把注入了不死族战士的愤怒和生气的大剑。每回合一次，当这把剑对一个生物造成伤害时，该生物必须成功地进行一次{@dc 12}宪法救赎，否则他们的最大生命值将减少5点（在攻击的伤害被应用之后）。如果一个生物被这个效果带到了0命中率，这把刀会苏醒，给使用者带来一些好处。",
+						"他们恢复的命中率等于他们所杀的生物的等级或CR+他们的体质修正因子。",
+						"在1分钟内，使用者获得一个坏死光环，使其所有的攻击造成额外的5（（%0%））坏死伤害。"
+					],
+					"type": "variant"
+				}
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Skull Commander",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "COMUndead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 60",
+				"average": 102
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 19,
+			"int": 15,
+			"wis": 17,
+			"cha": 18,
+			"passive": 19,
+			"cr": "5",
+			"fluff": {
+				"entries": [
+					"{@link Some undead creature |https://5theditionhomebrewing.tumblr.com/post/164761157358/some-undead-creatures-used-them-a-while-back}",
+					"亡灵队长",
+					"队长是一种负责指挥较小的亡灵战士的生物。它本身是一个有能力的战士，但它的主要目的是作为部队的支援者，在战场上为他们提供支持。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/m1QGXIw.png"
+						}
+					}
+				]
+			},
+			"shortName": "Skull Commander",
+			"tokenUrl": "https://i.imgur.com/0L1W2Vp.png",
+			"isNpc": false,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands all languages it knew in life but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"save": {
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"trait": [
+				{
+					"name": "Aura Of Command",
+					"entries": [
+						"骷髅指挥官15英尺范围内的每个盟友生物都会获得若干奖励。",
+						"所有的攻击、技能和救赎卷都会在其总数上增加一个额外的（%0%）。",
+						"每个生物（不包括指挥官本身）的攻击都会造成额外的（%0%）坏死伤害。"
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"骷髅指挥官可以感应到它周围30英尺内的任何生物的存在，这些生物是{@condition invisible}或在虚无界。它可以准确定位这种正在移动的生物。"
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"如果伤害使骷髅指挥官的命中率降至0，它必须做一个宪法救赎动作，DC为5+所受伤害，除非伤害是辐射或来自关键打击。如果成功，骷髅指挥官会下降到1点生命值。"
+					]
+				},
+				{
+					"name": "Tainted Touch",
+					"entries": [
+						"近战武器在被生物击中时造成3({@damage 1d6})的坏死伤害（包含在攻击中）。"
+					]
+				}
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"骑士用它的长剑进行两次攻击"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 4})砍击伤害，外加3 ({@damage 1d6})坏死伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"reaction": [
+				{
+					"name": "Cutting Howl (3/Day)",
+					"entries": [
+						"当指挥官能看到的60英尺范围内的生物进行攻击、能力检查或伤害卷时，它可以用它的反应来卷一个（%0%），并从该生物的卷中减去所卷数字。它可以选择在生物做完卷子之后，但在GM决定卷子成功或失败之前使用这个特性。如果该生物听不到指挥官的话，或者它对被魅惑有免疫力的话，那么它就可以豁免。"
+					]
+				}
+			],
+			"attachedItems": [
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "Skull General (Undead General)",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"source": "COMUndead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 108",
+				"average": 207
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 22,
+			"int": 15,
+			"wis": 15,
+			"cha": 15,
+			"passive": 16,
+			"cr": "10",
+			"fluff": {
+				"entries": [
+					"{@link Some undead creature |https://5theditionhomebrewing.tumblr.com/post/164761157358/some-undead-creatures-used-them-a-while-back}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/hxpteUj.png"
+						}
+					}
+				]
+			},
+			"shortName": "Skull General (Undead General)",
+			"tokenUrl": "https://i.imgur.com/VWH6v3A.png",
+			"isNpc": false,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"damageTags": [
+				"S",
+				"C"
+			],
+			"save": {
+				"con": "+10",
+				"wis": "+6",
+				"str": "+10"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"languages": [
+				"Common but can't speak",
+				"Abyssal but can't speak"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"AB"
+			],
+			"trait": [
+				{
+					"name": "Cold Aura",
+					"entries": [
+						"任何在将军10英尺范围内开始回合的目标都会受到5（（%0%））的寒冷伤害。"
+					]
+				},
+				{
+					"name": "Detect Life",
+					"entries": [
+						"亡灵将军可以用魔法感应到5英里以外的活人目标的存在。它知道他们所处的大致方向，但不知道他们的确切位置。"
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"该生物对变成亡灵的效果免疫。"
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"如果伤害使骷髅将军（亡灵将军）的命中率降至0，它必须做一个宪法救赎动作，DC为5+所受伤害，除非伤害是辐射或来自关键打击。如果成功，骷髅将军（亡灵将军）会下降到1点生命值。"
+					]
+				}
+			],
+			"traitTags": [
+				"Turn Immunity",
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"将军用它的暴君之刃进行两次攻击"
+					]
+				},
+				{
+					"name": "Tyrant Blade",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达5英尺，一个目标。{@h}20 ({@damage 4d6 + 6})砍击伤害。被这把刀伤害的生物必须成功地做一个{@dc 15}宪法规定的投掷动作，否则就会被亡灵将军{@condition frightened}所控制，持续1分钟。生物可以在其每个回合结束时重复蓄力，如果成功则结束对自己的影响。如果一个生物的救赎成功或效果结束，该生物将在24小时内免疫于刀刃效果。"
+					]
+				},
+				{
+					"name": "Dreadful Gaze",
+					"entries": [
+						"在将军的30英尺范围内选择一个生物。只要他们两人可以看到对方，将军可以强迫目标进行宪法救赎，（%0%），只要该生物不是（%1%）。如果救赎失败，目标会神奇地开始变成石头，并且是（%2%）。它必须在下一回合结束时重复这个蓄力动作。成功时，效果结束。失败时，目标会被{@condition petrified}，直到被更大的恢复咒语或其他魔法解救。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"petrified",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Grave Knight",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"source": "COMUndead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 48",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"passive": 14,
+			"cr": "8",
+			"shortName": "Grave Knight",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"conditionImmune": [
+				"poisoned"
+			],
+			"immune": [
+				{
+					"immune": [
+						"necrotic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"坟墓骑士进行两次大剑攻击。它可以用它的生命耗损来代替一次大剑攻击。"
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}11 ({@damage 2d6 + 4})坏死性的伤害。目标必须在{@dc 13}宪法救赎中成功，否则其最大命中率将减少，数量相当于所受伤害。这种减少持续到目标完成长时间休息。如果这个效果将其最大命中率降低到0，则目标会死亡。"
+					]
+				},
+				{
+					"name": "Greatsword +2",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}12 ({@damage 2d6 + 6})砍击伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"HPR",
+				"MLW"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Tomb of the Grave Knight|https://www.reddit.com/r/DnDHomebrew/comments/jghgfi/free_mini_adventure_tomb_of_the_grave_knight/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/8ZfAB7m.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/TnVZDDS.png",
+			"attachedItems": [
+				"+2 greatsword|dmg"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Reaper Banshee",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "COMUndead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 8",
+				"average": 80
+			},
+			"speed": {
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 18,
+			"con": 10,
+			"int": 14,
+			"wis": 12,
+			"cha": 18,
+			"passive": 11,
+			"cr": "8",
+			"fluff": {
+				"entries": [
+					"{@link Reaper Banshee|https://www.reddit.com/r/UnearthedArcana/comments/etwzpk/monster_reaper_banshee_v10/?utm_source=share&utm_medium=ios_app&utm_name=iossmf}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/c5uY1mV.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/1HLyrHb.png",
+			"shortName": "Reaper Banshee",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"save": {
+				"wis": "+3",
+				"cha": "+6"
+			},
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Aura of Cold",
+					"entries": [
+						"任何在收割者女妖5英尺范围内开始其回合的非亡灵生物都会受到2（（%0%））的寒冷伤害。"
+					]
+				},
+				{
+					"name": "Detect Life",
+					"entries": [
+						"收割者女妖可以用魔法感知5英里以外的非亡灵或构造物的存在。她知道他们所在的大致方向，但不知道他们的确切位置。"
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"收割者女妖可以通过其他生物和物体移动，就像它们是困难的地形一样，如果她在一个物体内结束她的回合，她会受到5（（%0%））的力量伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"C",
+				"Y",
+				"O"
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"收割者女妖会进行两次攻击：两次收割镰刀攻击，或一次收割镰刀和一次冰风攻击。"
+					]
+				},
+				{
+					"name": "Reaping Scythe",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}13 ({@damage 3d6 + 3})坏死伤害。被此攻击击中的生物，其最大命中率降低，相当于所受伤害的一半。"
+					]
+				},
+				{
+					"name": "Icy Wind",
+					"entries": [
+						"{@atk rw} {@hit 7}击中，范围30英尺，一个目标。{@h}7 ({@damage 0})寒冷伤害。收割者女妖伸出它的手，变出2股冰冷的空气，击中5英尺宽、30英尺长的每一个生物。每个被此攻击击中的生物都会受到7({@damage 2d6})的寒冷伤害，并使其移动速度降低10英尺，直到收割者女妖的下一回合开始。"
+					]
+				},
+				{
+					"name": "Wail {@recharge 5}",
+					"entries": [
+						"收割者女妖会发出一声哀鸣。这声哀号对建筑和亡灵没有影响。在她周围60英尺内的所有其他生物，如果能听到她的声音，就必须做一个{@dc 13}宪法规定的投掷。失败时，生物会下降到0点生命值。成功时，生物会受到10（%1%）的精神伤害。"
+					]
+				},
+				{
+					"name": "Hontying Visage",
+					"entries": [
+						"每个在收割者女妖60英尺范围内的非亡灵生物，如果能看到她，必须在一个{@dc 13}智慧救赎上成功，否则会被{@condition frightened}1分钟。如果收割者女妖在视线范围内，{@condition frightened}目标可以在其每个回合结束时重复蓄力，如果收割者女妖在视线范围内，则为劣势，成功后结束对自身的影响。如果目标救赎成功或效果结束，目标将在接下来的24小时内免疫于收割者女妖的惊恐之眼。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Veiled Shade",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "COMUndead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "9d8 + 55",
+				"average": 95
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 17,
+			"con": 16,
+			"int": 13,
+			"wis": 14,
+			"cha": 16,
+			"passive": 10,
+			"cr": "7",
+			"shortName": "Veiled Shade",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Any it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"bludgeoning",
+						"cold",
+						"fire",
+						"lightning",
+						"piercing",
+						"slashing",
+						"thunder"
+					],
+					"note": "from non magical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Gravely Wed",
+					"entries": [
+						"如果面纱遮蔽者通过使用仪式法术，对与之结为夫妻的生物造成伤害，该生物必须成功地进行宪法救赎，DC等于面纱遮蔽者这次所造成的伤害，如果救赎失败，该生物立即死亡。"
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"阴阳师可以在其他生物和物体中移动，就像它们是困难的地形一样。如果它在一个物体内结束其回合，它会受到5({@dice 1d10})力的伤害。"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"当在阳光下时，被遮蔽的阴阳人在攻击卷轴以及依靠视觉的智慧（（%0%））检查上有劣势。"
+					]
+				},
+				{
+					"name": "Lift the Veil",
+					"entries": [
+						"作为一个额外的动作，阴阳师可以选择解除或降低面纱。当阴阳师解除面纱时，每个能看到阴阳师的生物必须成功地进行一次{@dc 15}的智慧救赎，否则就会被{@condition frightened}，直到它降低面纱。在揭开面纱时，它将受到（%2%）的影响。拯救成功后，它在接下来的24小时内对这种能力免疫。当面纱下降时，它将无视（%3%）的影响。"
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Veiled Shade | }"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Y93256Y.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/x6aminS.png",
+			"isNpc": false,
+			"action": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}16 ({@damage 4d8 + 3})坏死性的伤害。目标必须在{@dc 14}体质救赎中成功，其最大命中率将减少，数量相当于所受伤害。这种减少持续到目标完成一个长时间的休息。如果该效果将其最大命中率降低至0，则目标会死亡。"
+					]
+				},
+				{
+					"name": "Kiss of Death",
+					"entries": [
+						"遮蔽者选择一个它能接触到的5英尺范围内的生物，并强迫该生物成功地进行一个{@dc 13}灵巧的救赎，如果救赎失败，遮蔽者会亲吻该生物，使他们的生命值瞬间降至0。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"damageTags": [
+				"N"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Fallera",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"cleric",
+					"ghost"
+				]
+			},
+			"source": "COMUndead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "10d8 + 10",
+				"average": 55
+			},
+			"speed": {
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 13,
+			"int": 10,
+			"wis": 14,
+			"cha": 18,
+			"passive": 12,
+			"cr": "4",
+			"shortName": "Fallera",
+			"languages": [
+				"Common",
+				"Sylvan",
+				"Zemnian"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"con": "+3",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+2",
+				"intimidation": "+6",
+				"medicine": "+4",
+				"religion": "+2"
+			},
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"当鬼魂在物质界时，它可以看到60英尺的虚空界，反之亦然。"
+					]
+				},
+				{
+					"name": "Ethereal Glide {@recharge 5}",
+					"entries": [
+						"作为一个额外动作，鬼魂从物质界进入虚空界。当它在虚无边界时，它在物质位面是可见的，但它不能影响另一个位面的任何东西，也不能被其影响。它在下一回合开始时回到物质界。"
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"幽灵可以在其他生物和物体中移动，就像它们是困难的地形一样。如果它在一个物体内结束它的回合，它会受到5({@damage 1d10})武力伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Ethereal Glide {@recharge 5}",
+					"entries": [
+						"作为一个额外动作，鬼魂从物质界进入虚空界。当它在虚无边界时，它在物质位面是可见的，但它不能影响另一个位面的任何东西，也不能被其影响。它在下一回合开始时回到物质界。"
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"法勒拉用它的铃铛手杖攻击两次。它可以通过使用法术攻击来代替一次攻击。"
+					]
+				},
+				{
+					"name": "Bell Crozier",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达10英尺，一个目标。{@h}11 ({@damage 2d6 + 4})坏死性伤害。"
+					]
+				},
+				{
+					"name": "Horrifying Visage",
+					"entries": [
+						"在鬼魂60英尺范围内的每个非亡灵生物，如果能看到它，必须成功地进行智慧救赎，否则就会在1分钟内被{@condition frightened}。如果救赎失败5次或以上，目标也会衰老14 x 10年。一个{@condition frightened}的目标可以在它的每个回合结束时重复蓄力，在成功后结束对自己的{@condition frightened}条件。如果一个目标的自救成功或效果结束，该目标在接下来的24小时内对这个鬼魂的恐怖面孔免疫。衰老的效果可以用更大的恢复法术来逆转，但只能在它发生的24小时内逆转。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"鬼魂的先天法术能力是智慧（法术救赎（%0%），使用法术攻击时命中率+4）。它可以先天性地施展以下法术，只需要言语成分。"
+					],
+					"daily": {
+						"3e": [
+							"{@spell command}",
+							"{@spell ray of enfeeblement}"
+						],
+						"1e": [
+							"{@spell bane}",
+							"{@spell silence}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"tokenUrl": "https://i.imgur.com/lEZk1mG.png",
+			"fluff": {
+				"entries": [
+					"{@link Fallera|https://www.reddit.com/r/dndmonsters/comments/q5le3x/gonna_use_this_as_my_next_campaigns_first_boss_5/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/6QAxl9m.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
+			]
+		}
+	]
+}
