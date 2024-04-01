@@ -1,0 +1,3212 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AvCA",
+				"abbreviation": "AvCA",
+				"full": "Arbiter",
+				"authors": [
+					"Avaricium"
+				],
+				"convertedBy": [
+					"Infecter#4418"
+				],
+				"version": "1.1.1",
+				"color": "6A5ACD",
+				"url": "https://www.gmbinder.com/share/-MC-QMWrTCps6hPrUxQl",
+				"targetSchema": "1.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"AvCA|BS": "Blood Sacraments",
+			"AvCA|HA": "Herrscher Abilities",
+			"AvCA|VA": "Vermillion Assaults",
+			"AvCA|MA": "Martial Acumen",
+			"AvCA|BO": "Benthic Origin"
+		},
+		"dateAdded": 1672532467,
+		"dateLastModified": 1672863715,
+		"_dateLastModifiedHash": "92fd8f9ccf"
+	},
+	"class": [
+		{
+			"name": "Arbiter",
+			"source": "AvCA",
+			"classFeatures": [
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|1|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Ruincrest|Arbiter|AvCA|1|AvCA",
+				"Unyielding Preeminence|Arbiter|AvCA|2|AvCA",
+				"Martial Acumen|Arbiter|AvCA|3|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|3|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Arbiter|AvCA|4|AvCA",
+				"Extra Attack|Arbiter|AvCA|5|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|6|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Ruinous Augury|Arbiter|AvCA|7|AvCA",
+				"Ability Score Improvement|Arbiter|AvCA|8|AvCA",
+				"Frightful Crest|Arbiter|AvCA|9|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|10|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Unyielding Preeminence (2)|Arbiter|AvCA|11|AvCA",
+				"Ability Score Improvement|Arbiter|AvCA|12|AvCA",
+				"Greater Martial Acumen|Arbiter|AvCA|13|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|14|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Seeker's Sanction|Arbiter|AvCA|15|AvCA",
+				"Ability Score Improvement|Arbiter|AvCA|16|AvCA",
+				"Otherworldly Vengeance|Arbiter|AvCA|17|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|18|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Arbiter|AvCA|19|AvCA",
+				"Calamitous Warstorm|Arbiter|AvCA|20|AvCA"
+			],
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"arcana",
+								"athletics",
+								"insight",
+								"intimidation",
+								"investigation",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) a {@item scale mail|phb} or (b) a {@item leather armor|PHB}",
+					"(a) two {@item javelin|PHB|javelins} or (b) an {@item shield|PHB} (if you're proficient)",
+					"(a) an {@item explorer's pack|PHB} or (b) a {@item dungeoneer's pack|PHB}",
+					"two different {@filter weapons|items|source=phb|type=simple weapon;martial weapon|category=basic} you are proficient with"
+				],
+				"additionalFromBackground": true,
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|PHB"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "javelin|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							"shield|phb"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"equipmentType": "weapon",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"con": 13,
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"athletics": true
+						}
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Marked Bonus",
+						"Marked Penalty"
+					],
+					"rows": [
+						[
+							"+2",
+							"-3"
+						],
+						[
+							"+2",
+							"-3"
+						],
+						[
+							"+3",
+							"-3"
+						],
+						[
+							"+3",
+							"-4"
+						],
+						[
+							"+3",
+							"-4"
+						],
+						[
+							"+3",
+							"-4"
+						],
+						[
+							"+4",
+							"-4"
+						],
+						[
+							"+4",
+							"-5"
+						],
+						[
+							"+4",
+							"-5"
+						],
+						[
+							"+4",
+							"-5"
+						],
+						[
+							"+5",
+							"-5"
+						],
+						[
+							"+5",
+							"-5"
+						],
+						[
+							"+5",
+							"-5"
+						],
+						[
+							"+5",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+7",
+							"-6"
+						],
+						[
+							"+7",
+							"-6"
+						]
+					]
+				}
+			],
+			"fluff": [
+				{
+					"type": "section",
+					"name": "Arbiter",
+					"source": "AvCA",
+					"page": 1,
+					"entries": [
+						"他们的绰号并不能准确描述他们。当他们中的一员出现在战场上时，那些被他们选中的人的命运就已经注定 - 等待他们的猎物的要么是死亡，要么是极度的痛苦。他们是审判之手，面对他们而心中无畏是错误的。 ─ ?",
+						"踏着台阶走向竞技场，一个人类注视着对面的敌人，准备进行生死搏斗。她挥手向对手致意，而非打招呼，而是为了准备取得胜利\u2014\u2014当她的手回到身旁时，她的猎物已经被标记。当他们相遇并拔出武器时，她开始了愤怒的猛攻，令对手惊讶不已；迅速解决了他们，只剩下一幕可怕的景象。",
+						"一个龙裔后退，当他的标记，从头到脚披着钢铁的战士，猛击他。如果铁不能撕裂他的猎物，那么他将把他们烤在他们自己的盔甲里。他举起双臂，召唤出一把火焰之剑，挥舞着它，用火海淹没他的猎物。",
+						"在没有其他选择的情况下，一名精灵被迫从一个咒术师的奥术攻击中撤退，与施法者的咒语同步起舞。但他们无法永远这样做；在绝望之举中，她用一个牙齿形状的纹章标记了她的攻击者。在最后一刻，这个举动给了她避开一颗擦身而过的火球所需的力量。",
+						"无论种族或成长背景如何，仲裁者们都因独特的能力而团结在一起，他们可以用原始力量标记猎物，使自己专注于一个敌人，并拥有超乎寻常的武术技能，让那些被他们标记为失败的人感到恐惧。作为裁判 - 无论是自封还是被选中的 - 他们会按照自己的意愿施行正义，一次一个死亡或胜利。",
+						{
+							"type": "entries",
+							"name": "An Ancient Epithet",
+							"page": 1,
+							"entries": [
+								"在他们能够为自己取名之前，目睹了他们所拥有的无法理解的力量的人们先给予了他们称号。拥有超乎理解的力量，他们是行走的神话，传言中能够击败一切试图阻挡他们追求荣耀或救赎的人。",
+								"仲裁者们依赖着独特的能力，可以用一个纹章标记生物（或任何能够移动的东西），让他们能够在战斗中专注于一个敌人。被他们的纹章标记的人知道他们正面临一个不会放弃的刽子手，直到其中一方倒下为止。",
+								"仲裁者是一个可能出现在任何地方的异常现象 - 无论是皇室成员，普通士兵，甚至一无所有的人；然而，仲裁者的力量通常会在那些对战斗有亲和力且渴望伟大，或者在某些情况下，渴望悔改的人身上觉醒。这种力量很少觉醒，即使那些获得仲裁者力量的人也很少将其完全觉醒。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Primordial Crest",
+							"page": 2,
+							"entries": [
+								"仲裁者 wield the unique ability to mark creatures with a special crest, whose properties outside of combat are largely unknown. Few know the extent of the origins of 仲裁者 and their powers, and of the few who do know the source of them and the powers they wield, even fewer would part with such wisdom. Was it something so paramount that fanned the fires of their existence, or merely an event that is so insignificant that it wasn't worth etching their beginnings into the annals of history?",
+								"这种独特的力量，尽管在历史上并不重要，但却是一个被研究却没有结果的力量。由于仲裁者的稀缺，很难评估仲裁者真正的能力。那些天生具有仲裁者火种或继承它的人可以在一挥手或经过仔细练习后召唤其力量。与此同时，那些试图模仿仲裁者力量的人要么惨败，要么根本没有任何效果。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hand of Judgment",
+							"page": 2,
+							"entries": [
+								"裁决者的杀气是无法置疑的。在战斗中，他们散发出一种无人能忽视的氛围 - 死亡的阴影即将降临。由于他们在战斗中的娴熟（无论是有意还是无意）以及随之而来的传说，他们往往分为两派：一派是以善意行事并执行法官之言的刽子手，另一派是无视法律、以杀戮和伤害为手段的叛逆者。",
+								"并非所有仲裁者都使用赋予他们的力量。为什么你的角色使用他们所拥有的原始天赋？是为了炫耀他们的武艺，谋生，还是一天天地度过生活？你的角色是否利用这份天赋尽力实现他们的目标？或者他们尽可能单调地生活，努力变得更好，不依赖这份赐予，而是凭借自己的双手？"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating your Arbiter",
+							"page": 2,
+							"entries": [
+								"在创建你的仲裁者时，请考虑以下两个特定要素：赋予他们力量的火花的起源以及它是如何显现的，以及他们打算如何运用这原始的光辉。你是否接受了这种力量，还是对它给予你的期望感到愤恨？",
+								"仲裁者以其武艺闻名，但这并非总是天赋。你可能在军队或民兵中接受了多年的正规训练，或者你可能在年幼时就在一位热衷于磨练你技能的导师的指导下学习。",
+								"在冒险一段时间后，所有仲裁者必须回应召唤 - 成为审判之手，或是一个野心勃勃、有着自己对审判定义的叛徒。他们内心的火花是一种正在腐化的诅咒，随着时间的推移只会让你变得更加无情，还是一种让他们能够执行那些与欲看世界毁灭的力量相一致的人的祝福？你可能将其看作是一种工具，让你可以按照自己的意愿行事。"
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Quick Build",
+							"entries": [
+								"您可以按照以下建议创建一名仲裁者。首先，角色的 Constitution 应该是最高的能力分数，其次是力量或敏捷（取决于您想要什么样的武术角色）。然后选择士兵（Soldier）背景。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Unfathomable Whimsy",
+							"page": 2,
+							"entries": [
+								"没有两个仲裁者表现相同，很少有两个来自相同背景的。为了为你的仲裁者增添一些特色，考虑一些让他们与其他人不同的怪癖 - 例如，你可能鄙视你想要成为的贵族，或者你试图避免说出他人的名字。这些怪癖对游戏没有影响，但如果打扰了你的角色的怪癖，你的角色可能会感到烦躁或不安。它们是为游戏增添角色特色的绝佳工具。你可以从下面的表格中随机选择或挑选，也可以设计自己的怪癖。尽量至少选择两个怪癖赋予你的角色，这样更有可能发挥作用。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"选择一种提升，它详细描述了你力量的来源，并塑造了你作为仲裁者所走的道路。当你在1级选择它时，你的选择提升会赋予你特性，并在3级、6级、10级、14级和18级时再次赋予你特性。",
+				{
+					"type": "inset",
+					"name": "Saving Throws",
+					"entries": [
+						"一些仲裁者（Arbiter）的特性，除了你选择的飞升（ascension）赋予的特性外，会要求你进行攻击骰（attack roll）和/或目标进行豁免骰（saving throw）。对于这些能力，体质（Constitution）是调整值，因为你从自身汲取原始能量来供给它们。你使用体质调整值来设定仲裁者特性的豁免 DC，或者在进行攻击骰时使用。",
+						{
+							"type": "abilityDc",
+							"name": "Arbiter",
+							"attributes": [
+								"con"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Arbiter",
+							"attributes": [
+								"con"
+							]
+						}
+					]
+				},
+				"由于仲裁者能力的神秘性质，它们超出了魔网的范围，因此免疫取消或抑制魔法的效果，除非另有说明。然而，它们并非魔法；如果一个仲裁者特性造成割伤伤害，除非另有说明，它是非魔法的。"
+			]
+		},
+		{
+			"name": "Ruincrest",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"在战斗中，仲裁者可以用毁灭纹章，原始力量的印记，标记他们的敌人，以提升他们的专注力至超乎人类的水平。由于其特性，毁灭纹章不受魔网的限制 - 反魔法领域、驱散魔法和类似效果对毁灭纹章无效。",
+				"每位仲裁者都有一个独特的、风格化的废墟纹章；例如，一个龙裔仲裁者可能会在他们的纹章上有一个尖利的爪子或其他龙类特征，而一个被魔法启蒙的仲裁者的纹章可能是他们使用的魔法学派的符号。",
+				"你可以用你的奖励动作在你能看到的30英尺内的生物身上打上一个毁灭纹章，持续10分钟。如果已经有生物被你的毁灭纹章标记，你不能使用这个特性。当一个生物被你的毁灭纹章标记时，你在以下所有方面获得+2的奖励。这个奖励会随着你在这个职业中获得更多等级而增加，如仲裁者表中的标记奖励列所示。",
+				{
+					"type": "list",
+					"items": [
+						"你对那个生物进行的力量检定 (%num%)",
+						"你对那个生物进行的敏捷检定。",
+						"对该生物进行的攻击和伤害骰面。",
+						"你进行的豁免投掷来抵抗源自该生物的法术和其他效果。",
+						"你的仲裁者特性所施加的豁免 DC，是指生物必须对抗的难度等级。如果其他生物也因为同一特性而被迫进行豁免检定，只有被标记的生物需要对抗增加的 DC。"
+					]
+				},
+				"作为标记生物的反效果，当一个生物被你的毁灭纹章标记时，你不会加上你的熟练加值，并在进行以下投掷时遭受-3的惩罚。随着你作为仲裁者等级的提升，这些投掷的惩罚会增加，详见仲裁者表格中的标记惩罚栏。",
+				{
+					"type": "list",
+					"items": [
+						"你为不是源自带有你毁灭纹章的生物的法术和效果进行的豁免检定。",
+						"对于你对未被你的毁灭纹章标记的生物进行的攻击，你进行的攻击和伤害骰都要进行。"
+					]
+				},
+				"当使用两把单独的武器进行战斗时，你副手的武器在对被你的毁灭纹章标记的生物进行攻击时不会获得任何好处，但仍然会受到对未被你的毁灭纹章标记的生物进行攻击和伤害骰的惩罚。",
+				"当以下任何条件满足时，你在一只生物身上印记的废墟纹章会消散：",
+				{
+					"type": "list",
+					"items": [
+						"你完成了休息或者进行了先攻骰定(`initiative`)。",
+						"你的生命值降至0，死亡，或陷入无力状态。",
+						"当拥有你的毁灭纹章的生物的生命值降至0点。",
+						"一个仲裁者特性表明你给一个生物打上了标记。",
+						"神圣干预或一个愿望咒语可以移除这个印记。",
+						"一个带有你的毁灭纹章的生物移动到另一个存在平面，你会收到警报，但无法掌握他们的新位置。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Unyielding Preeminence",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 5,
+			"level": 2,
+			"entries": [
+				"从2级开始，只要你失去了至少一半的生命值，你的标记惩罚减少1点。在11级时，惩罚减少2点。"
+			]
+		},
+		{
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 3,
+			"entries": [
+				"在3级时，你从你的仲裁者飞升(Arbiter's Ascension)中获得一个特性。"
+			]
+		},
+		{
+			"name": "Martial Acumen",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 5,
+			"level": 3,
+			"entries": [
+				"当你达到3级时，你将获得仲裁者独有的天赋，可以增强你在战斗中的技能。选择以下其中一项。你不能多次选择武术敏锐特性。当你达到13级时，你将获得额外的武术敏锐，然后你选择的敏锐将为你提供额外的特性。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Critical Mark|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Evasive Duelist|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Great Weapon Fighting|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Hunter's Ward|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Promethean Strength|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Seeker's Alacrity|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Strider|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two Weapon Fighting|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 4,
+			"entries": [
+				"当你达到4级时，再次在8级、12级、16级和19级时，你可以将一个能力值提高2点，或者将两个能力值提高1点。与通常一样，使用此特性时不能将你的任何一个能力值提高到20以上。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合上采取{@action Attack|PHB}动作时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 6,
+			"entries": [
+				"在第6级时，你从你的（Arbiter's Ascension）中获得一个特性。"
+			]
+		},
+		{
+			"name": "Ruinous Augury",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 7,
+			"entries": [
+				"从7级开始，对被你的毁灭纹章标记的生物使用的武器攻击和仲裁者特性，对于克服非魔法攻击和伤害的抗性和免疫，都被视为具有魔法效果。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用此特性时不能将任何一个能力值提高到20以上。"
+			]
+		},
+		{
+			"name": "Frightful Crest",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 9,
+			"entries": [
+				"从第9级开始，一个被你的毁灭纹章标记的生物无法变得隐形。",
+				"此外，当你用你的毁灭纹章标记一只生物时，你可以让它进行一次感知豁免 throw，{@condition frightened|PHB|frightening} 在未通过豁免时对其造成影响1分钟。它可以在每个回合结束时重复进行豁免检定，若未通过则结束效果。如果生物通过了豁免检定或状态结束，那个生物在接下来的24小时内无法通过此特性受到惊吓。你可以使用此特性的次数等于1加上你的体质调整值（最少两次）。当你完成一次长休后，你会恢复已用次数。"
+			]
+		},
+		{
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 10,
+			"entries": [
+				"在10级时，你从你的(`Arbiter's Ascension`)中获得一个特性。"
+			]
+		},
+		{
+			"name": "Unyielding Preeminence (2)",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 5,
+			"level": 11,
+			"entries": [
+				"从11级开始，只要你失去了至少一半的生命值，你的标记惩罚值将减少2点。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用此特性时不能将你的任何一个能力值提高到20以上。"
+			]
+		},
+		{
+			"name": "Martial Acumen (2)",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 13,
+			"entries": [
+				"当你达到13级时，你将获得额外的武术技能。"
+			]
+		},
+		{
+			"name": "Greater Martial Acumen",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 13,
+			"entries": [
+				"达到13级时，你获得额外的武术精通，并且你选择的精通都会给予你额外的特性。"
+			]
+		},
+		{
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 14,
+			"entries": [
+				"在14级时，你从你的(`Arbiter's Ascension`)中获得一个特性。"
+			]
+		},
+		{
+			"name": "Seeker's Sanction",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 15,
+			"entries": [
+				"在15级时，每当一个被你的纹章标记的生物传送到另一个存在平面时，该纹章会在其身上停留24小时，你可以标记另一个生物使用你的毁灭纹章。在这24小时内，或者被标记的生物死亡或移除纹章之前，原始纹章不计入你拥有的毁灭纹章数量。",
+				"每当一个被你的毁灭纹章标记的生物传送到另一个存在平面，你可以使用你的反应追随它并传送到新的存在平面。如果你这样做，当以下任一情况发生时，你会被推回到你首次用毁灭纹章标记它时所在的存在平面，在你最初传送前所占据的空间，或者如果该空间已被占据，则推到最近的未被占据空间：",
+				{
+					"type": "list",
+					"items": [
+						"品牌生物死亡或者 24 小时过去。",
+						"你的生命值降至0点或者陷入无能状态。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用这个特性时不能将你的任何一个能力值提高到20以上。"
+			]
+		},
+		{
+			"name": "Otherworldly Vengeance",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 17,
+			"entries": [
+				"从17级开始，当你失去至少一半生命值时，你将获得第二次额外攻击机会（总共三次攻击，如果{@subclassFeature Elegy of the Arbiter|Arbiter|AvCA|Sovereign of Tides|AvCA|10}或{@optfeature Blood Dance|AvCA}对你有效，则为四次攻击）。"
+			]
+		},
+		{
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 18,
+			"entries": [
+				"在18级时，你从你的（Arbiter's Ascension）中获得一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用这个特性时不能将某个能力值提高到20以上。"
+			]
+		},
+		{
+			"name": "Calamitous Warstorm",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 20,
+			"entries": [
+				"在20级时，每当你击败一个被你的毁灭纹章标记的生物并轮到你行动时，你可以免费动作地将一个你能看到的生物标记为毁灭纹章，然后在本回合内额外进行一次攻击（仅限一次武器攻击），并且你的移动速度额外增加15英尺，直到回合结束。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Blood Voivode",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Blood Voivode",
+			"subclassFeatures": [
+				"Blood Voivode|Arbiter|AvCA|Blood Voivode|AvCA|1|AvCA",
+				"Deathleech|Arbiter|AvCA|Blood Voivode|AvCA|1|AvCA",
+				"Crimson Sacraments|Arbiter|AvCA|Blood Voivode|AvCA|3|AvCA",
+				"Vampiric Impetus|Arbiter|AvCA|Blood Voivode|AvCA|6|AvCA",
+				"Undying Fortitude|Arbiter|AvCA|Blood Voivode|AvCA|10|AvCA",
+				"Crimson Arrogation|Arbiter|AvCA|Blood Voivode|AvCA|14|AvCA",
+				"Bloodscarred Sovereignty|Arbiter|AvCA|Blood Voivode|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Entropic Herrscher",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Herrscher",
+			"subclassFeatures": [
+				"Entropic Herrscher|Arbiter|AvCA|Herrscher|AvCA|1|AvCA",
+				"Subspace Armaments|Arbiter|AvCA|Herrscher|AvCA|1|AvCA",
+				"Void Neophyte|Arbiter|AvCA|Herrscher|AvCA|3|AvCA",
+				"Astral Grace|Arbiter|AvCA|Herrscher|AvCA|6|AvCA",
+				"Temporal Distortion|Arbiter|AvCA|Herrscher|AvCA|10|AvCA",
+				"Sovereign's Grace|Arbiter|AvCA|Herrscher|AvCA|14|AvCA",
+				"Sundering Herald|Arbiter|AvCA|Herrscher|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Hand of Arrogation",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Hand of Arrogation",
+			"subclassFeatures": [
+				"Hand of Arrogation|Arbiter|AvCA|Hand of Arrogation|AvCA|1|AvCA",
+				"Bonded Weapon|Arbiter|AvCA|Hand of Arrogation|AvCA|1|AvCA",
+				"Psionic Control|Arbiter|AvCA|Hand of Arrogation|AvCA|3|AvCA",
+				"Warded Mind|Arbiter|AvCA|Hand of Arrogation|AvCA|6|AvCA",
+				"Second Contact|Arbiter|AvCA|Hand of Arrogation|AvCA|10|AvCA",
+				"Arrogation's Wrath|Arbiter|AvCA|Hand of Arrogation|AvCA|14|AvCA",
+				"The Usurper's Indignation|Arbiter|AvCA|Hand of Arrogation|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Prophet's Retainer",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Prophet's Retainer",
+			"subclassFeatures": [
+				"Prophet's Retainer|Arbiter|AvCA|Prophet's Retainer|AvCA|1|AvCA",
+				"Spellcasting|Arbiter|AvCA|Prophet's Retainer|AvCA|1|AvCA",
+				"Prophet's Anointment|Arbiter|AvCA|Prophet's Retainer|AvCA|3|AvCA",
+				"Prophet's Fangs|Arbiter|AvCA|Prophet's Retainer|AvCA|6|AvCA",
+				"Emissary of Authority|Arbiter|AvCA|Prophet's Retainer|AvCA|10|AvCA",
+				"Arcane Adeptus|Arbiter|AvCA|Prophet's Retainer|AvCA|14|AvCA",
+				"Agent of Sovereigns|Arbiter|AvCA|Prophet's Retainer|AvCA|18|AvCA"
+			],
+			"casterProgression": "1/3",
+			"spellcastingAbility": "wis",
+			"subclassSpells": [
+				{
+					"className": "Cleric",
+					"classSource": "PHB"
+				}
+			],
+			"cantripProgression": [
+				1,
+				1,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Prophet's Retainer",
+							"source": "AvCA"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=arbiter: prophet's retainer (avca)}",
+						"{@filter Spells Known|spells|level=1;2;3;4|subclass=arbiter: prophet's retainer (avca)}"
+					],
+					"rows": [
+						[
+							1,
+							0
+						],
+						[
+							1,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							7
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							12
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Arcane Knight",
+							"source": "LLAF"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=arbiter: prophet's retainer (avca)}",
+						"{@filter 2nd|spells|level=2|subclass=arbiter: prophet's retainer (avca)}",
+						"{@filter 3rd|spells|level=3|subclass=arbiter: prophet's retainer (avca)}",
+						"{@filter 4th|spells|level=4|subclass=arbiter: prophet's retainer (avca)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Sovereign of Tides",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Sovereign of Tides",
+			"subclassFeatures": [
+				"Sovereign of Tides|Arbiter|AvCA|Sovereign of Tides|AvCA|1|AvCA",
+				"Benthic Ascent|Arbiter|AvCA|Sovereign of Tides|AvCA|1|AvCA",
+				"Unbreakable Predator|Arbiter|AvCA|Sovereign of Tides|AvCA|3|AvCA",
+				"Deep-Dweller's Heart|Arbiter|AvCA|Sovereign of Tides|AvCA|6|AvCA",
+				"Elegy of the Arbiter|Arbiter|AvCA|Sovereign of Tides|AvCA|10|AvCA",
+				"Aquatic Tyrant|Arbiter|AvCA|Sovereign of Tides|AvCA|14|AvCA",
+				"Sovereign's Respite|Arbiter|AvCA|Sovereign of Tides|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Vermillion Knight",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Vermillion Knight",
+			"subclassFeatures": [
+				"Vermillion Knight|Arbiter|AvCA|Vermillion Knight|AvCA|1|AvCA",
+				"Searing Strikes|Arbiter|AvCA|Vermillion Knight|AvCA|1|AvCA",
+				"Vermillion Assault|Arbiter|AvCA|Vermillion Knight|AvCA|3|AvCA",
+				"Crimson Arbiter|Arbiter|AvCA|Vermillion Knight|AvCA|6|AvCA",
+				"Unyielding Savagery|Arbiter|AvCA|Vermillion Knight|AvCA|10|AvCA",
+				"Alpha Executioner|Arbiter|AvCA|Vermillion Knight|AvCA|14|AvCA",
+				"Flaming Crescendo|Arbiter|AvCA|Vermillion Knight|AvCA|18|AvCA"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Vermillion Knight",
+							"source": "AvCA"
+						}
+					],
+					"colLabels": [
+						"Charges"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							18
+						],
+						[
+							19
+						]
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Blood Voivode",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"血腥领主是不可动摇的巨头，能够吸取他们击败的对手的生命力，并牺牲自己的血液来施放咒语或执行非凡的壮举。他们经常被妖魔化，并被贴上毁灭的先兆的标签，由你来证明你是否真的是那些传言中所说的邪恶的预兆。"
+			]
+		},
+		{
+			"name": "Deathleech",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从1级开始，当你首次选择这个(`ascension`)时，每当你杀死一个带有你的(`ruincrest`)标记的生物，你恢复的生命值等于1d4+你的熟练加值。随着你在这个职业中获得更多等级，恢复的生命值数量会增加，如下表所示。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Level",
+						"HP Regained"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"1st - 5th",
+							"1d4"
+						],
+						[
+							"6th - 10th",
+							"2d4"
+						],
+						[
+							"11th - 15th",
+							"3d4"
+						],
+						[
+							"16th - 20th",
+							"4d4"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Crimson Sacraments",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"深红圣礼是血族领主进行的仪式，通过消耗自身的生命力来实现超凡的壮举和超越法师能力的行为。一些圣礼是凡人难以实现的行为，而另一些则是暴力行为，让旁观者感到恐惧，或者仅仅是复制法术的效果。",
+				"当你达到3级时，你可以学习两个你选择的圣礼。随着你作为（arbiter）等级的提升，你会学到更多的圣礼，这些圣礼会在你获得更高等级时由（blood voivode）特性指定。你可以在此特性描述的末尾找到可以在3级学习的圣礼列表。",
+				"深红圣礼每次休息只能使用有限次数。你可以执行圣礼的次数、使用它所需的生命值、以及是否需要空闲手来使用都在描述中有注明。",
+				"如果你的生命值少于可掷骰子确定损失生命值数量一半以下的最大结果，你就不能消耗生命值来进行圣礼。例如，如果你的生命值少于6点，你就不能执行圣血刀。因此，在执行圣礼时，你的生命值不能减少到少于1点，临时生命值也不能用于执行圣礼。完成短休后，你会恢复已消耗的使用次数。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blood Surge|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Crimson Claw|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Sangrite Cleaver|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Scarlet Spear|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vampiric Impetus",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"从6级开始，你的最大生命值和你的体质分数不能被减少。然后选择学习以下两种赤红圣礼中的两种。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Bloodburst|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mistwake|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Sword Flurry|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Undying Fortitude",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 8,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"从10级开始，你在死亡豁免投掷时获得优势。此外，如果你没有黑暗视觉，你将获得45英尺范围内的黑暗视觉。然后选择三个深红圣礼中的两个来学习。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blood Dance|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Crimson Flurry|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Vampiric Respite|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Crimson Arrogation",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 8,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"从14级开始，每当你受到来自你身边10英尺内生物的伤害时，你可以使用你的反应对该生物进行一次武器攻击；你不能对超出你武器射程范围的生物进行攻击。选择以下其中一个绯红圣礼进行学习。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Bloodstorm|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Forsaken Blade|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Symphony of Pain|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bloodscarred Sovereignty",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 9,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"从18级开始，每当你杀死一个被你的毁灭纹章标记的生物，你还会获得等同于你仲裁者等级的临时生命值。此外，你的原始力量会维持你，使你不会受到老年的脆弱影响，也不会被魔法使老化；然而你仍然可能死于老年。你也不再需要食物或水，每过5年，你的身体只会老化1年。"
+			]
+		},
+		{
+			"name": "Entropic Herrscher",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 9,
+			"subclassShortName": "Herrscher",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"熵主宰者是仲裁者，他们身负着一种超凡脱俗的天赋；这种天赋使他们能够使用超乎理解的能力。他们天生具备用手一挥便扭曲现实的能力，他们拥有的力量是由比神祇更古老更强大的力量赋予的。"
+			]
+		},
+		{
+			"name": "Subspace Armaments",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 9,
+			"subclassShortName": "Herrscher",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级时首次选择这个(`Ascension`)时，你学会了将多元宇宙的本质显化为一种武器，你可以远距离向敌人发射，造成致命的效果。",
+				"作为一次攻击，你可以召唤一根光滑、长矛般的针，只要你有一只空手来引导它，并将其发射到你45英尺内的生物或物体。对目标进行一次远程仲裁者攻击。命中后，目标受到1d6点力量伤害。在9级时，造成的伤害增加到2d6点。"
+			]
+		},
+		{
+			"name": "Void Neophyte",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 9,
+			"subclassShortName": "Herrscher",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时，为了增强你新获得的能力，你学会了{@optfeature Cosmic Sword|AvCA}能力和以下3种赫尔舍能力中的一种。你可以使用赫尔舍能力的次数等于1加上你的体质调整值（最少两次），除非另有规定。你在完成一次长休或短休后，恢复已用次数。",
+				"一个生物如果想要进行检定以了解你的圣痕能力，除非它过去曾经研究过，否则会以劣势进行检定。",
+				"一些女武神的能力需要复杂的手势来激发它们的力量。如果一个女武神的能力需要使用一只空手，它会在描述中注明。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Cosmic Sword|AvCA"
+						}
+					]
+				},
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Netherspike|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Spatial Ward|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Voidburst|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Astral Grace",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 10,
+			"subclassShortName": "Herrscher",
+			"subclassSource": "AvCA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"从6级开始，你拥有25英尺的悬浮速度。在移动时，你不能悬停超过5英尺以上的固体或液体表面。你还可以从以下列表中选择三种{@optfeature Cosmic Sword|AvCA}能力，并额外获得一次使用。",
+				{
+					"type": "options",
+					"count": 3,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Kinetic Crash|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Abyssal Claws|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Regeneration|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Teleportation|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Temporal Distortion",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 10,
+			"subclassShortName": "Herrscher",
+			"subclassSource": "AvCA",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"当你达到10级时，你将获得额外使用宇宙之剑的机会。此外，每当你杀死一个带有你的毁灭纹章的生物，使用{@optfeature Cosmic Sword|AvCA}或你的次空针特性时，一个半径为10英尺的负能量球体将从其身上出现。球体范围内的每个其他生物必须进行一次体质豁免才能。未通过豁免的生物的移动速度将减少15英尺，直到其下一个回合结束。你还可以选择学习以下三种赫舒尔（Herrscher）能力中的两种。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Abyssal Lance|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Nethersquall|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Voidsnare|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sovereign's Grace",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 10,
+			"subclassShortName": "Herrscher",
+			"subclassSource": "AvCA",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"当你达到14级时，来自星体恩赐特性的悬浮速度变为飞行速度，并增加至30英尺。此外，你学会以下所示的女武神能力之一，并获得额外使用 {@optfeature Cosmic Sword|AvCA} 的次数。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Abyssal Storm|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Herrscher's Rage|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Reality Conflagration|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sundering Herald",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 11,
+			"subclassShortName": "Herrscher",
+			"subclassSource": "AvCA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"在18级时，每当你进行先攻骰时，且{@optfeature Cosmic Sword|AvCA}的使用次数为0时，你会恢复3次使用机会。此外，你会额外获得一次使用宇宙之剑，并学习一个你尚未学习过的女武神技能，该技能必须从本次飞升的特性中学习。你不能通过这种方式从君主之恩特性学习女武神技能。"
+			]
+		},
+		{
+			"name": "Hand of Arrogation",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 11,
+			"subclassShortName": "Hand of Arrogation",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"一只自大的手夺取了属于他们的东西，无论是自愿还是强迫。作为被赋予轻微灵能力的仲裁者，他们能够远程控制武器，远离近战的危险。"
+			]
+		},
+		{
+			"name": "Bonded Weapon",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 11,
+			"subclassShortName": "Hand of Arrogation",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级时首次选择这个(`ascension`)时，你会学会一个仪式，可以在一个小时内创建你和一件武器之间的心灵连接。这个仪式可以在短休息期间完成。在整个仪式过程中，武器必须在你的触及范围内。仪式结束时，你会触摸这件武器并建立起联系。",
+				"一旦你将武器与自己绑定，除非你被使无能为力，否则无法被解除武装。如果它在与你相同的存在平面上，你可以将其作为一个奖励动作召唤，使其立即传送到你的手中。",
+				"你可以与最多两把武器结合，但每次只能用你的奖励动作召唤一把武器。如果你尝试与第三把武器结合，你必须解除与另外两把武器中的一把的结合。"
+			]
+		},
+		{
+			"name": "Psionic Control",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 11,
+			"subclassShortName": "Hand of Arrogation",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"从3级开始，你拥有一个接触点，这是你身体的一个灵能延伸，对其他人都是不可见的，你可以利用它远程攻击。在战斗之外，它会跟随你移动，你可以命令它随意移动到你附近的其他地方，初始范围为5英尺，随着你在这个职业中获得更多级别，范围会增加，如下表所示。如果它移出了最大范围，它会自动回到范围内，或者如果不可能的话，会传送到你身边或最近的未被占据的空间（以避免在挥舞武器时伤到其他人）。",
+				{
+					"type": "entries",
+					"name": "Contact Point Range",
+					"page": 11,
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Maximum Range"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"3rd - 6th",
+									"5 ft."
+								],
+								[
+									"7th - 11th",
+									"10 ft."
+								],
+								[
+									"12th - 16th",
+									"15 ft."
+								],
+								[
+									"17th - 20th",
+									"20 ft."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Contact Armed",
+					"page": 11,
+					"entries": [
+						"每当你要拔出或召唤与你绑定的武器时，你可以选择让它出现在你的接触点的隐形掌握中。由于它们的特性，接触点无法被剥夺所携带的武器，当你命令接触点收起它携带的武器时，武器会传送回到你身边。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Zero Contact",
+					"page": 11,
+					"entries": [
+						"每当你完成一次休息时，你的接触点通常会位于你的手所在的位置。你可以指定一个接触点跟随你的手，以避免在接触点位于手所在位置时给自己带来负担，当你手中拿着武器时，如果接触点位于你的手所在位置，你可以随意将武器转移到你的接触点。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Making Attacks & Contact Movement",
+					"page": 11,
+					"entries": [
+						"作为攻击动作的一部分，你可以将你的接触点移动到射程内的一个空位，前提是你能看到它移动的位置，所使用的武器可以穿越它移动的空间，并且它的移动不超过最大射程。然后，你使用该接触点所持的武器进行攻击和伤害骰投掷，就像平常一样。",
+						"要指示一个接触点，你必须张开手掌，仔细指导它的动作。如果你没有张开手掌，你的接触点将保持静止，直到它超出范围（例如，因为你移动了，它不再在范围内），在这种情况下，它要么会自行靠近你，要么会在一个回合内传送。当你传送时，你的接触点和它所持的武器也会与你一起传送，在最近的未占用空间，以避免传送到另一个生物或物体中。作为一个奖励动作，你可以召唤接触点和它手持的武器在你手中，或者召唤它在你旁边。",
+						{
+							"type": "inset",
+							"name": "Limitations:",
+							"entries": [
+								"由于接触点的真实形式，他们无法使用比剑或其他可以挥舞的近战武器更复杂的东西。他们无法搭箭或重新装填火器，也无法瞄准或开火这些武器。使用其中一种武器的攻击动作没有任何效果，也会浪费行动。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Warded Mind",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 12,
+			"subclassShortName": "Hand of Arrogation",
+			"subclassSource": "AvCA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"从第6级开始，你对精神伤害具有抗性。此外，每当一只生物试图进入你的思维时，它必须成功通过一次感知豁免才能留下，否则将被迫离开，遭受1d10点精神伤害，并提醒你其失败的精神侵入。诸如幻象杀手和怪异法术可以触发此特性，如果施法者未通过豁免检定，则不会产生任何效果。"
+			]
+		},
+		{
+			"name": "Second Contact",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 12,
+			"subclassShortName": "Hand of Arrogation",
+			"subclassSource": "AvCA",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"当你达到10级时，你获得另一个接触点。然而，这个接触点使用一个额外动作而不是攻击动作来移动和攻击，它不能携带重型或双手属性的武器，并且在对带有你的毁灭纹章的生物进行攻击时不会获得任何好处。你使用副手来指挥这个接触点。",
+				"{@b Marking Creatures:} 由于接触点的特性，您可以同时精确控制其中两个，并使用奖励动作将您的纹章烙印在生物身上，即使您没有空闲的手。"
+			]
+		},
+		{
+			"name": "Arrogation's Wrath",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 12,
+			"subclassShortName": "Hand of Arrogation",
+			"subclassSource": "AvCA",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"在14级时，你获得第二个额外行动，可以在每个回合使用。你只能使用第二个接触点进行攻击。此外，你还获得第二个反应，用于在你的回合之外进行机会攻击。"
+			]
+		},
+		{
+			"name": "The Usurper's Indignation",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 12,
+			"subclassShortName": "Hand of Arrogation",
+			"subclassSource": "AvCA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"从18级开始，当你失去超过一半的生命值时，你不再减去你标记的惩罚值用于你进行的任何攻击检定、伤害检定和豁免检定。"
+			]
+		},
+		{
+			"name": "Prophet's Retainer",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 12,
+			"subclassShortName": "Prophet's Retainer",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"先知的侍从通常侍奉一个权威人物，经常作为执行其直接命令的代理人。作为一个强大人物的手下，他们可以肆无忌惆地行动。他们无法像其他仲裁者那样使用超自然力量，而是利用魔法来弥补他们的武艺不足和缺乏其他世界力量。"
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 12,
+			"subclassShortName": "Prophet's Retainer",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级时首次选择这个(`Ascension`)时，你学会了如何作为(`agent of authority`)施法，以增强你的武术能力。你一开始只能从牧师法术清单中选择1个你喜欢的零级法术。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"page": 12,
+					"entries": [
+						"你可以选择一项来自牧师法术清单的零级法术。当你达到3级并再次在10级时，你可以选择学习一项额外的来自牧师法术清单的零级法术，这样你总共可以学习三项来自牧师法术清单的零级法术。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Prophet's Anointment",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 12,
+			"subclassShortName": "Prophet's Retainer",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你达到3级时，你的内在魔法能力会觉醒。你可以学会三个你选择的{@filter 1st level cleric spells|spells|level=1|subclass=arbiter: prophet's retainer (avca)}，并且如果你还没有熟练掌握{@skill Arcana}，你将获得熟练加值。",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"《(预言者)的侍从》表格显示了你用来施放1级及更高级仲裁者法术的法术槽数量。要施放这些法术之一，你必须消耗一个等级不低于该法术等级的法术槽。当你完成一次长休后，你会恢复所有已消耗的法术槽。",
+						"例如，如果你知道1级法术治疗伤口并且有一个1级和一个2级法术位可用，你可以使用任一法术位施放治疗伤口。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"你知道三个你选择的1级牧师法术。",
+						"《预言者的侍从》表格中的已知法术栏显示了你学会额外的1级或更高级别的牧师法术的时间。这些法术中的每一个必须是你拥有法术位等级的法术。例如，当你在这个职业中达到7级时，你可以学会一个新的1级或2级法术。",
+						"每当你在这个职业中升级时，你可以用牧师法术清单中另一个你选择的法术替换你已经掌握的一个牧师法术。新的法术必须是你拥有法术位的等级。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 0,
+					"entries": [
+						"智慧是你作为（cleric）牧师法术的施法能力。你法术的力量来自于你拥有的原始纽带，这些纽带被你对所帮助的人的忠诚唤醒。每当（cleric）牧师法术提到你的施法能力时，你都会使用你的智慧。此外，当你施放（cleric）牧师法术并设定豁免 DC 时，以及进行攻击检定时，你会使用你的智慧修正值。",
+						{
+							"type": "inset",
+							"name": "",
+							"entries": [
+								{
+									"type": "abilityDc",
+									"name": "Arbiter",
+									"attributes": [
+										"con"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "Arbiter",
+									"attributes": [
+										"con"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"如果那个法术带有仪式标签并且你知道该法术，你可以将牧师法术作为仪式施放。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以将你的身体作为你的(cleric)法术的焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Prophet's Fangs",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 13,
+			"subclassShortName": "Prophet's Retainer",
+			"subclassSource": "AvCA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"在6级时，你可以操纵纹理，即使没有法术槽，也可以施放你的牧师法术。你可以施放你已知的1级牧师法术，而不使用法术槽，前提是该法术以你的毁灭纹记的目标为单个生物。一旦用这种方式施放了一个法术，你就不能再使用这个特性施放另一个法术，直到你完成一次长休或短休。",
+				"当你达到11级时，你可以使用这个特性施放一项2级的（cleric）法术，当你达到16级时，你可以使用这个特性施放一项3级的（cleric）法术，当你达到18级时，你可以使用这个特性以这种方式施放一项3级或更低级的（paladin）法术。"
+			]
+		},
+		{
+			"name": "Emissary of Authority",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 13,
+			"subclassShortName": "Prophet's Retainer",
+			"subclassSource": "AvCA",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"从10级开始，你学会了让你的猎物在尝试施法时保持沉默。每当一个在你60英尺范围内、被你的毁灭纹章标记的生物施放法术时，你可以使用你的反应施放{@spell counterspell}，无需消耗法术位，以该生物为目标。一旦你使用了这个特性，你必须完成一次长休或短休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Arcane Adeptus",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 14,
+			"subclassShortName": "Prophet's Retainer",
+			"subclassSource": "AvCA",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"从14级开始，你学会了如何在与敌人搏斗时不间断地施放你的（cleric）牧师法术。在你的每个回合中的一次，你可以用一个动作的施法时间来代替你的一次攻击，施放你的1级或更高级别的（cleric）牧师法术之一。从18级开始，你可以选择用一个动作的施法时间来代替你的一次攻击，而施放你的1级或更高级别的（paladin）圣骑士法术。"
+			]
+		},
+		{
+			"name": "Agent of Sovereigns",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 14,
+			"subclassShortName": "Prophet's Retainer",
+			"subclassSource": "AvCA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"当你达到18级时，你学会了记忆并施展牧师和圣骑士法术。智慧是你施法这些法术的能力。",
+				"当你达到18级时，你可以用圣骑士法术清单中4级或更低级别的法术替换你已经掌握的任意数量的牧师法术。每当你作为（arbiter）获得一个等级时，你也可以用来自牧师或圣骑士法术清单中的另一个你选择的法术替换你已经掌握的牧师或圣骑士法术，该法术必须是你拥有法术位的级别。",
+				"此外，每当你用武器攻击杀死一个带有你的毁灭纹章的生物时，你会恢复一个1级法术位。每当你对一个带有你的毁灭纹章标记的生物进行武器攻击造成暴击并杀死它时，你会恢复一个2级法术位。"
+			]
+		},
+		{
+			"name": "Sovereign of Tides",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 14,
+			"subclassShortName": "Sovereign of Tides",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"潮汐主宰是一位拥有无与伦比的身体力量的仲裁者，在单挑时无人能敌。他们依靠自己的力量和武器，而不是其他仲裁者可以利用的神秘力量，以非人类的效率剿灭敌人，就像深渊中的猎人一样。"
+			]
+		},
+		{
+			"name": "Benthic Ascent",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 14,
+			"subclassShortName": "Sovereign of Tides",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你在1级时首次选择这条路时，你获得在水下呼吸的能力和30英尺的游泳速度。此外，你选择一个海底起源并获得其特性。你还会获得一些与你选择的起源有关的轻微生理特征。例如，如果你选择的起源是鲨鱼，你的皮肤可能非常粗糙，或者如果你选择的起源是鲸鱼，你可能比你种族的其他成员异常高大或体格强壮。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Benthic Ascent: Kraken|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Benthic Ascent: Leviathan|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Benthic Ascent: Orca|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Benthic Ascent: Shark|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Benthic Ascent: Whale|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Unbreakable Predator",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 15,
+			"subclassShortName": "Sovereign of Tides",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你达到3级时，如果你还不精通重甲，你将变得精通重甲。此外，你穿戴的任何装备在忽略那些可以损坏或摧毁非魔法装备的效果时被视为是魔法的，比如黑布丁怪的腐蚀形态，而且你对免疫被 {@condition frightened} 的豁免投掷获得优势。"
+			]
+		},
+		{
+			"name": "Deep-Dweller's Heart",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 15,
+			"subclassShortName": "Sovereign of Tides",
+			"subclassSource": "AvCA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"在6级时，你不再因极端寒冷或穿越深海受到极端水压而获得疲劳等级。此外，你根据所选择的起源获得超自然好处。你可以选择与1级时相同的起源，或者选择一个不同的。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Deep-Dweller's Heart: Kraken|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Deep-Dweller's Heart: Leviathan|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Deep-Dweller's Heart: Orca|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Deep-Dweller's Heart: Shark|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Deep-Dweller's Heart: Whale|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Elegy of the Arbiter",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 15,
+			"subclassShortName": "Sovereign of Tides",
+			"subclassSource": "AvCA",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"从10级开始，你可以作为一个奖励动作进入冥想状态，持续一分钟。当你这样做时，你获得一个临时生命值，数值等同于你的最大生命值，你获得额外攻击的机会，免疫于被 {@condition charmed} 和 {@condition frightened}，你的移动速度增加 20 英尺，且在冥想状态期间无法施放法术。如果你的生命值降至 0、被 {@condition incapacitated}，或选择作为奖励动作提前结束冥想状态，冥想状态也会提前结束。使用此特性后，你必须完成一次长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Aquatic Tyrant",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 15,
+			"subclassShortName": "Sovereign of Tides",
+			"subclassSource": "AvCA",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"在14级时，你根据你选择的起源获得一个超自然的好处。你可以选择之前选择过的起源，或者选择一个不同的起源。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Aquatic Tyrant: Kraken|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Aquatic Tyrant: Leviathan|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Aquatic Tyrant: Orca|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Aquatic Tyrant: Shark|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Aquatic Tyrant: Whale|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sovereign's Respite",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 15,
+			"subclassShortName": "Sovereign of Tides",
+			"subclassSource": "AvCA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"从18级开始，每当你完成一次长或短休息时，你会获得30点临时生命值，这些生命值会持续直到耗尽或你完成另一次休息。此外，你现在可以在休息之间两次使用你的深渊挽歌，但前提是你目前不处于恍惚状态。"
+			]
+		},
+		{
+			"name": "Vermillion Knight",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 16,
+			"subclassShortName": "Vermillion Knight",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"绯红骑士是仲裁者，能够召唤火焰来帮助他们在战斗中。有一团灭尽一切并孕育生命的火焰在他们身旁，烧尽所有敢于反抗他们的人。"
+			]
+		},
+		{
+			"name": "Searing Strikes",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 16,
+			"subclassShortName": "Vermillion Knight",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"在1级时，当你首次选择这个(`ascension`)时，当你进行武器攻击时，你可以让你的武器或其弹药着火，将命中造成的所有伤害改为火焰伤害。此外，这次攻击会点燃任何被击中的可燃物品，但不包括被穿戴或携带的物品。"
+			]
+		},
+		{
+			"name": "Vermillion Assault",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 16,
+			"subclassShortName": "Vermillion Knight",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"作为绯红骑士，你可以引导自己内心的火焰，并将其塑造成一股毁灭之力。",
+				"从3级开始，你能够从自身汲取能量，并将其塑造成一种毁灭性的火焰工具，使用动作。你可以通过该职业的等级来确定你所拥有的能量，这些能量以绯红骑士表中的\"充能\"栏显示。当你消耗一个充能时，直到你完成一次长休或短休为止，该充能将不可用，结束时，如果你的充能少于基础充能，你的身体将恢复所有已消耗的能量。",
+				"选择以下两种绯红突袭中的一种学习。如果使用绯红突袭需要一只空手，那么在该能力的描述中会有说明。",
+				{
+					"type": "inset",
+					"name": "Overheating",
+					"entries": [
+						"进行赤红突袭是一项体力消耗巨大的行动。在使用赤红突袭后，它会变得过热，直到你的下一个回合结束。当你使用一个过热的赤红突袭时，你在一分钟内无法再次使用它。"
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flame Slash|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Meteor Strike|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Phoenix Gale|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Crimson Arbiter",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 17,
+			"subclassShortName": "Vermillion Knight",
+			"subclassSource": "AvCA",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"从6级开始，你对火焰伤害具有抗性。你还可以从以下列表中选择另一个猩红突袭，或者从猩红突袭列表中选择一个。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dual Strike|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Salamander Strike|AvCA"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Unyielding Savagery",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 17,
+			"subclassShortName": "Vermillion Knight",
+			"subclassSource": "AvCA",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"在10级时，如果你失去了至少一半的生命值，你可以在过热之前两次而不是一次使用绯红突袭。"
+			]
+		},
+		{
+			"name": "Alpha Executioner",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 17,
+			"subclassShortName": "Vermillion Knight",
+			"subclassSource": "AvCA",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"当你达到14级时，你将学会以下所示的一种alpha执行 - 这些表演会极大地耗尽使用者，并且是纯粹、未经掺杂的残忍行为。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Heaven's Bane|AvCA"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Immolating Wave|AvCA"
+						}
+					]
+				},
+				"{@b Overdrive}",
+				"使用一次Alpha执行会让你获得两级疲惫，并且你完成的下一个长休不能减少你的疲惫级别。你不能每天使用超过一次Alpha执行。",
+				{
+					"type": "inset",
+					"name": "Override",
+					"entries": [
+						"你可以通过获得额外的一级疲劳来覆盖每天只能使用一次阿尔法执行的限制。但是，你不能通过这种方式超过每天一次的限制，因为这样做会让你失去生命，除非你对疲劳免疫，即使如此，这也是非常耗费体力的。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Flaming Crescendo",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 17,
+			"subclassShortName": "Vermillion Knight",
+			"subclassSource": "AvCA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"在18级时，你获得对火焰伤害的免疫，你进行的任何攻击都会无视对火焰伤害的抗性，每当你杀死一个被你的毁灭纹章标记的生物时，你会恢复一次充能。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Critical Mark",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"对标记有你的毁灭纹章的生物发动的攻击，在骰到19或20时会造成重击。",
+				"从13级开始，他们对被你的毁灭纹章标记的生物投掷18-20时，将会造成暴击。"
+			]
+		},
+		{
+			"name": "Evasive Duelist",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"你的护甲等级提高了2点。",
+				"从13级开始，你可以灵巧地躲避某些区域效果，比如一只远古红龙的火焰吐息或者一个冰风暴法术。每当你受到一个效果的影响，让你进行一次敏捷豁免来减少一半伤害时，如果你成功通过豁免，你将不会受到伤害，如果你失败，你将受到一半伤害。如果你持有多于一把武器或者盾牌，你将不会获得这些好处。"
+			]
+		},
+		{
+			"name": "Great Weapon Fighting",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"当你使用双手持有具有双手或多用途属性的武器，并且攻击目标是被你的毁灭纹章标记的生物时，你不能以劣势进行武器攻击。(%num%) (%num%)",
+				"从13级开始，每当你对一个没有被你的毁灭纹章标记的生物进行近战武器攻击时，你不会从攻击检定和伤害中减去你的标记惩罚。你必须使用具有双手或多用途属性的武器才能获得这个好处。"
+			]
+		},
+		{
+			"name": "Hunter's Ward",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"对你造成的伤害，如果来自一个被你的毁灭纹章标记的生物，将减少1d6点伤害（最少1点伤害）。从13级开始，这个伤害减少为2d6点。"
+			]
+		},
+		{
+			"name": "Promethean Strength",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"你可以像使用具有多用途属性的武器一样使用具有重型或双手属性的武器。这样做时，你不能再用另一只手持有武器，但你仍然可以使用盾牌，前提是你具备盾牌的熟练度。",
+				"从13级开始，当你主手的近战武器具有笨重或双手属性，副手的近战武器具有轻型属性时，你可以使用双武器战斗。"
+			]
+		},
+		{
+			"name": "Seeker's Alacrity",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"你学会了如何在一只手持武器，另一只手持盾牌的情况下执行你的仲裁者特性和法术的体态成分。",
+				"从13级开始，当你持盾时，你不能被击倒。"
+			]
+		},
+		{
+			"name": "Strider",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"只要一个生物被你的毁灭纹章标记，并且距离你至少30英尺，你的移动速度增加10英尺。",
+				"在13级时，这个距离增加到20英尺，任何用来靠近被你的毁灭纹章标记的生物的移动都不受复杂地形的影响。"
+			]
+		},
+		{
+			"name": "Two Weapon Fighting",
+			"source": "AvCA",
+			"page": 5,
+			"featureType": [
+				"AvCA|MA"
+			],
+			"entries": [
+				"你学会了如何在双手持武器的情况下执行仲裁者特性和法术的身体成分。此外，你学会了在通常只能抽取或收纳一件武器时，如何抽取或收纳两把单手武器。",
+				"从第13级开始，当你所持有的单手近战武器具有轻型或多用途属性时，你可以使用双武器战斗。而且，你副手的近战武器现在也会受益于你对被你的毁灭纹章标记的生物进行攻击和伤害骰投掷时的标记奖励。"
+			]
+		},
+		{
+			"name": "Blood Surge",
+			"source": "AvCA",
+			"page": 7,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Uses:} 2/每次休息",
+				"作为一个奖励动作，你调节你的身体以获得10点临时生命值，持续一分钟。",
+				"在第7级时，获得的生命值增加到15点，在第12级时增加到20点，在第17级时增加到25点。"
+			]
+		},
+		{
+			"name": "Crimson Claw",
+			"source": "AvCA",
+			"page": 7,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Uses:} 2/每次休息",
+				"{@b Cost:} (4) 2d4 HP ",
+				"你召唤一只血红色的爪子，它袭击你能看到的距离30英尺内的生物。目标必须进行一次敏捷豁免，未通过则受到2d6点割伤伤害，通过则只受到一半伤害。",
+				"伤害增加至7级时为3d6，12级时为4d6，17级时为5d6。"
+			]
+		},
+		{
+			"name": "Sangrite Cleaver",
+			"source": "AvCA",
+			"page": 7,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 4/休息",
+				"{@b Cost:} (5) 1d10 HP ",
+				"你召唤一把由自己的鲜血锻造而成的粘稠剑，用你的毁灭纹章标记一个你能看到的距离你5英尺的生物，并挥动新召唤的剑攻击它，无论命中与否，剑在之后都会褪去成为一团红雾。",
+				"对目标进行一次近战仲裁者攻击。命中则目标受到2d10点力量伤害。",
+				"伤害在7级时增加至3d10，12级时增加至4d10，17级时增加至5d10。"
+			]
+		},
+		{
+			"name": "Scarlet Spear",
+			"source": "AvCA",
+			"page": 7,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 3/次",
+				"{@b Cost:} (6) 1d12 HP",
+				"当你将一支深红色的长矛投向距离你不超过35英尺的目标时，它在你手中凭空出现。",
+				"对目标进行远程仲裁者攻击。目标在命中时受到2d10点穿刺伤害。",
+				"伤害增加至7级时为3d10，12级时为4d10，17级时为5d10。"
+			]
+		},
+		{
+			"name": "Bloodburst",
+			"source": "AvCA",
+			"page": 7,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 3/次",
+				"{@b Cost:} (8) 2d8 HP",
+				"你释放出一股能腐蚀肉体的血液爆发，作为一次攻击。你周围10英尺范围内的每个其他生物必须进行一次体质豁免投掷。未通过豁免的生物受到3d6点力量伤害，通过豁免的生物受到一半伤害。",
+				"伤害在10级时增加至4d6，14级时增加至5d6，18级时增加至6d6。"
+			]
+		},
+		{
+			"name": "Mistwake",
+			"source": "AvCA",
+			"page": 7,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Uses:} 5/休息",
+				"{@b Cost:} (3) 1d6 HP",
+				"你以一个奖励动作的形式，以鲜红花瓣的风姿，传送到你能看见的、距离不超过40英尺的未被占据的位置。在你传送后，你可以在你新位置附近15英尺内看见的生物身上打上一个{@classFeature Ruincrest|Arbiter|AvCA|1}标记。"
+			]
+		},
+		{
+			"name": "Sword Flurry",
+			"source": "AvCA",
+			"page": 8,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Uses:} 3/次",
+				"{@b Cost:} (6) 2d6 HP",
+				"你以致盲的速度发动一次攻击。你可以对两个目标进行两次武器攻击，这两个目标必须在你武器的射程内。此外，你在本回合还额外获得15英尺的移动速度。",
+				{
+					"type": "inset",
+					"entries": [
+						"这个圣礼不会减少你因其而造成的攻击和伤害骰面的惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Blood Dance",
+			"source": "AvCA",
+			"page": 8,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 1/每次休息",
+				"{@b Cost:} (9) 3d6 HP",
+				"你作为一个奖励动作进入了狂暴状态。在接下来的一分钟内，你在力量和敏捷豁免检定上获得优势，免疫{@condition charmed}和{@condition frightened}状态，额外攻击一次，但不能施放法术或执行血色圣礼。如果你的生命值降至0，选择用一个奖励动作提前结束，或者被{@condition incapacitated}，狂暴状态会提前结束。"
+			]
+		},
+		{
+			"name": "Crimson Flurry",
+			"source": "AvCA",
+			"page": 8,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 2/每次休息",
+				"{@b Cost:} (9) 3d6 HP",
+				"你释放原始力量的连续攻击，对你周围10英尺内可见的任意数量生物进行四次近战仲裁者攻击。每次命中，目标受到2d8的斩击伤害。",
+				{
+					"type": "inset",
+					"entries": [
+						"这个圣礼不会减少你因其而造成的攻击和伤害骰面的惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Vampiric Respite",
+			"source": "AvCA",
+			"page": 8,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"{@b Uses:} 3/次",
+				"{@b Cost:} (8) 2d8 HP",
+				"当你用武器进行攻击时，你注入寄生能量。命中后，攻击额外造成2d10点伤害，并获得等同于所造成伤害的临时生命值。"
+			]
+		},
+		{
+			"name": "Bloodstorm",
+			"source": "AvCA",
+			"page": 8,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"{@b Uses:} 1/每次休息",
+				"{@b Cost:} (20) 5d8 HP",
+				"你释放出一股撕裂肌肉的力量作为一个动作。你周围30英尺内的每个其他生物必须进行一次体质豁免检定。每个未通过豁免检定的生物和每个在附近的物体会受到6d10的斩击伤害，而每个通过检定的生物会受到一半伤害。"
+			]
+		},
+		{
+			"name": "Forsaken Blade",
+			"source": "AvCA",
+			"page": 8,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 1/每次休息",
+				"{@b Cost:} (16) 4d8 HP",
+				"你用毁灭纹章标记一只距离不超过15英尺的生物，然后召唤一把血衣大剑并用它攻击它们。对目标进行一次近战仲裁者攻击。命中时造成8d10的斩击伤害；如果它死于此仪式造成的伤害，你将恢复所有缺失的生命值。然后大剑消失。"
+			]
+		},
+		{
+			"name": "Symphony of Pain",
+			"source": "AvCA",
+			"page": 9,
+			"featureType": [
+				"AvCA|BS"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"{@b Uses:} 1/每次休息",
+				"{@b Cost:} (25) 5d10 HP",
+				"你将身体推至超人极限，瞬间发动十次攻击，每次攻击都使用你手持的武器，而其他人只能在这段时间内发动一次攻击。",
+				"对于你所持有的每一件武器，使用该武器进行十次攻击，这些攻击可以分配给该武器射程内的任意数量的生物。",
+				"执行这样壮举所遭受的身体创伤会使你的{@condition exhaustion}提升两个等级。",
+				{
+					"type": "inset",
+					"entries": [
+						"这个圣礼不会减少你因其而造成的攻击和伤害骰面的惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Cosmic Sword",
+			"source": "AvCA",
+			"page": 9,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"作为一次攻击，你召唤一把由星辰之物制成的刀，用毁灭纹章烙印一个距离你10英尺内的目标，然后用剑攻击它。对目标进行一次近战仲裁者攻击。命中时目标受到1d12点力量伤害。在10级时，伤害增加至2d12点。"
+			]
+		},
+		{
+			"name": "Netherspike",
+			"source": "AvCA",
+			"page": 9,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"作为一个奖励动作，一股深渊之力的间歇泉从你所看到的距离30英尺内的生物下方喷发出来。生物必须成功进行一次力量豁免才能不被击倒{@condition prone}。"
+			]
+		},
+		{
+			"name": "Spatial Ward",
+			"source": "AvCA",
+			"page": 9,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"你扭曲现实，以增强你的防御，作为对法术或攻击的反应。直到回合结束，你的护甲等级获得+2的加值，并且你进行的豁免投掷获得+2的加值。"
+			]
+		},
+		{
+			"name": "Voidburst",
+			"source": "AvCA",
+			"page": 9,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"作为一次攻击，你释放混乱能量，冲击着周围的其他生物。你周围10英尺内的每个其他生物必须通过一次敏捷豁免检定，否则将受到1d8点力场伤害。在10级时，伤害增加至2d8点。"
+			]
+		},
+		{
+			"name": "Kinetic Crash",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你向前直线冲刺，最多不超过20英尺的距离，穿过你触碰到的一切。每个被触碰到的生物必须进行一次体质豁免检定。未通过检定的生物受到4d6点力场伤害，通过检定的生物受到一半伤害。在11级时，伤害增加至5d6点。"
+			]
+		},
+		{
+			"name": "Abyssal Claws",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"你召唤出三只由宇宙能量制成的爪子。每只爪子可以向你选择的距离不超过10英尺的目标挥动。对于每只爪子，目标必须通过一次敏捷豁免检定，否则将受到2d6点力场伤害。在11级时，爪子的伤害增加至3d6点。"
+			]
+		},
+		{
+			"name": "Regeneration",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Uses:} 2/每次休息",
+				"你身上散发着闪烁的光芒，治疗你2d8点生命值。在11级时，恢复的生命值增加到3d8，并且你可以每次休息3次而不是两次使用这个能力。"
+			]
+		},
+		{
+			"name": "Teleportation",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"作为一个奖励动作，你融化成一个阴影质量，沉入地面，重新出现在你原始位置不超过30英尺之外的一个你能看到的空地上。"
+			]
+		},
+		{
+			"name": "Abyssal Lance",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 3/次",
+				"你召唤一支由星辰之物制成的长矛，对距离你15英尺内的生物发动近战裁决者攻击。命中则目标受到3d12点力量伤害。长矛在命中或未命中时消失。",
+				"伤害在15级时增加至4d12。",
+				{
+					"type": "inset",
+					"entries": [
+						"这位黑武者的能力遵循与{@item Lance|phb}的'特殊'特性相同的规则 - 如果你使用它对身边5英尺内的生物进行攻击，你将以劣势进行攻击检定。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Nethersquall",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"{@b Uses:} 2/每次休息",
+				"你召唤虚空来震撼你周围的环境。你周围30英尺范围内的每个其他生物必须成功进行一次力量豁免才能不被击倒{@condition prone}。"
+			]
+		},
+		{
+			"name": "Voidsnare",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 2/每次休息",
+				"作为一个奖励动作，你将虚空的重量强加在你附近的人身上。你可以看到的每个生物，必须在你身边30英尺范围内，进行一次体质豁免检定，否则它们的速度将被降低到0，直到你下一个回合开始。"
+			]
+		},
+		{
+			"name": "Abyssal Storm",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 1/每次休息",
+				"你在战场上降下星体物质。你可以看到的每个生物，在你身边45英尺范围内，都需要进行一次体质豁免检定。未通过检定的生物会受到5d10点力场伤害，通过检定的生物则只受到一半伤害。"
+			]
+		},
+		{
+			"name": "Herrscher's Rage",
+			"source": "AvCA",
+			"page": 10,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"{@b Uses:} 1/每次休息",
+				"作为一个奖励动作，你进入狂暴状态，持续1分钟。在狂暴期间，你免疫于被 {@condition charmed} 和 {@condition frightened}，并且作为一次攻击，你可以让自己充满负能量，冲击周围的生物。你周围15英尺内的每个其他生物都需要进行一次体质豁免才能。未通过豁免的生物受到2d12点力量伤害，通过豁免的生物受到一半伤害。",
+				"在你愤怒时，你可以在每个回合中使用这个攻击一次或两次，使用额外攻击特性。如果你提前结束愤怒，将其作为一个奖励动作提前结束，你的生命值降至0，或者你是{@condition incapacitated}，愤怒会提前结束。"
+			]
+		},
+		{
+			"name": "Reality Conflagration",
+			"source": "AvCA",
+			"page": 11,
+			"featureType": [
+				"AvCA|HA"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Uses:} 1/每次休息",
+				"你释放出一连串撕裂空间的压力。你能看到或意识到的每个生物，距离你不超过45英尺，必须进行一次体质豁免检定。在豁免失败的情况下，生物将获得两级疲劳，而在豁免成功的情况下，生物将获得一级疲劳。",
+				"受到这种能力影响的生物无法超过5级疲劳。"
+			]
+		},
+		{
+			"name": "Flame Slash",
+			"source": "AvCA",
+			"page": 16,
+			"featureType": [
+				"AvCA|VA"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Cost:} 1 次冲锋",
+				"你在击中敌人时，让武器燃烧起来，用符文标记烙印敌人。目标在被击中时额外受到1d8火焰伤害。",
+				"伤害在7级时增加至2d8，12级时增加至3d8，17级时增加至4d8。"
+			]
+		},
+		{
+			"name": "Meteor Strike",
+			"source": "AvCA",
+			"page": 17,
+			"featureType": [
+				"AvCA|VA"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Cost:} 2 充能",
+				"你从双手中发射出三把火焰剑，可以分配给距离你20英尺内的最多三个目标。对每把剑发射到的目标进行远程仲裁者攻击检定。命中时，目标会受到1d6火焰伤害。",
+				"你在7级时召唤四把剑，12级时召唤五把剑，17级时召唤六把剑。",
+				{
+					"type": "inset",
+					"entries": [
+						"在这次绯红突袭中，你不需要从攻击和伤害骰中减去你标记的惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Phoenix Gale",
+			"source": "AvCA",
+			"page": 17,
+			"featureType": [
+				"AvCA|VA"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 充能",
+				"你释放出一股热浪；你周围15英尺范围内的每个生物都需要进行一次敏捷豁免检定。在未通过检定的情况下，生物会受到2d6火焰伤害，通过检定的情况下则受到一半伤害。",
+				"伤害增加至7级时为3d6，12级时为4d6，17级时为5d6。"
+			]
+		},
+		{
+			"name": "Dual Strike",
+			"source": "AvCA",
+			"page": 17,
+			"featureType": [
+				"AvCA|VA"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Component}: 体感",
+				"{@b Cost:} 2 充能",
+				"你召唤出两把燃烧的刀剑。对距离你不超过10英尺的一个生物进行两次近战仲裁者攻击，或者对距离你不超过10英尺的两个生物进行一次近战仲裁者攻击。命中时，每把剑造成3d6火焰伤害。伤害在11级时增加至4d6，在16级时增加至5d6。",
+				{
+					"type": "inset",
+					"entries": [
+						"在这次绯红突袭中，你不需要从攻击和伤害骰中减去你标记的惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Salamander Strike",
+			"source": "AvCA",
+			"page": 17,
+			"featureType": [
+				"AvCA|VA"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"{@b Cost:} 2 充能",
+				"火焰从你的脚下喷发，迅速冲向你周围20英尺内的最多三个生物。每个目标必须进行一次力量豁免和一次敏捷豁免。在力量豁免失败的情况下，生物被击倒{@condition prone}，而在敏捷豁免失败的情况下，生物受到3d6火焰伤害，在敏捷豁免成功时只受到一半伤害。",
+				"伤害增加至11级时为4d6，16级时为5d6。"
+			]
+		},
+		{
+			"name": "Heaven's Bane",
+			"source": "AvCA",
+			"page": 17,
+			"featureType": [
+				"AvCA|VA"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你从翻腾的火焰中塑造出一把巨大的剑，向着一个距离你最多10英尺的生物跃去，用毁灭纹章烙印并攻击它。它必须进行一次体质豁免才能避免冲击的主要部分。生物在豁免失败时受到15d10点火焰伤害，豁免成功时受到一半伤害。"
+			]
+		},
+		{
+			"name": "Immolating Wave",
+			"source": "AvCA",
+			"page": 17,
+			"featureType": [
+				"AvCA|VA"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你周围30英尺范围内的每个生物都必须进行一次敏捷豁免检定。未通过检定的生物会受到10d10火焰伤害，通过检定的生物则只受到一半伤害。"
+			]
+		},
+		{
+			"name": "Benthic Ascent: Kraken",
+			"source": "AvCA",
+			"page": 14,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 1
+				}
+			],
+			"entries": [
+				"每当你用近战武器攻击一个被你的毁灭纹章标记的生物时，你可以让武器充满电能；这样做时，攻击额外造成1d8点闪电伤害。你可以使用这个特性的次数等于你的体质调整值加上2（最少3次），在完成一次长休后，你可以恢复已用次数。在12级时，闪电伤害增加到2d8点。"
+			]
+		},
+		{
+			"name": "Benthic Ascent: Leviathan",
+			"source": "AvCA",
+			"page": 14,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 1
+				}
+			],
+			"entries": [
+				"作为深渊领主的后裔，你展现出非凡的身体韧性。你在进行力量豁免投掷和对着身上刻有你毁灭纹章的生物进行搏斗检定时，获得+2的加值。"
+			]
+		},
+		{
+			"name": "Benthic Ascent: Orca",
+			"source": "AvCA",
+			"page": 14,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 1
+				}
+			],
+			"entries": [
+				"作为顶级捕食者，你标记的生物将无法幸免。每当你用武器攻击命中带有你的毁灭纹章标记的生物时，如果它失去了任何生命值，造成的伤害增加 2 点。"
+			]
+		},
+		{
+			"name": "Benthic Ascent: Shark",
+			"source": "AvCA",
+			"page": 14,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 1
+				}
+			],
+			"entries": [
+				"当你闻到猎物的血腥气味时，你变得更加勇敢。只要在你周围60英尺范围内的生物中，任何一个带有你的毁灭纹章的生物失去了任何生命值，你的移动速度就会增加10英尺。"
+			]
+		},
+		{
+			"name": "Benthic Ascent: Whale",
+			"source": "AvCA",
+			"page": 14,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 1
+				}
+			],
+			"entries": [
+				"你的猎物在你面前攻击无力。每当一个被你的毁灭纹章标记的生物对你进行攻击检定时，它的攻击检定会减少1点。当你达到12级时，这个惩罚增加到-2。"
+			]
+		},
+		{
+			"name": "Deep-Dweller's Heart: Kraken",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你对闪电伤害产生了抗性。此外，你的视野不再被浓雾或墨水遮挡。"
+			]
+		},
+		{
+			"name": "Deep-Dweller's Heart: Leviathan",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你的力量继续增长，但增长效果逐渐减弱。你的力量分数增加了2点，现在最大为22，而你的智力分数减少了2点（最低为1）。此外，你获得了对敏捷豁免 throws 的熟练加值。"
+			]
+		},
+		{
+			"name": "Deep-Dweller's Heart: Orca",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"在你的血腥之旅中，古老的符文无法阻止你。你的标记奖励和惩罚分别增加和减少1。"
+			]
+		},
+		{
+			"name": "Deep-Dweller's Heart: Shark",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你可以忽略艰难地形，而且魔法效果不能减慢你的速度或使你受限。此外，你可以花费10英尺的移动来摆脱非魔法约束或在水下被控制。"
+			]
+		},
+		{
+			"name": "Deep-Dweller's Heart: Whale",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"与你种族的其他成员相比，你展现出令人印象深刻的身体素质。你的最大生命值增加了12点，当你在这个职业中获得另一个等级时，你的最大生命值增加2点。"
+			]
+		},
+		{
+			"name": "Aquatic Tyrant: Kraken",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你增强自己，获得了更多类似于(卡拉肯)的能力。作为一个动作，你可以创造一道闪电，打击你能看到的距离60英尺内的目标。目标必须进行一次敏捷豁免，未通过则受到4d10点闪电伤害，通过则只受到一半伤害。你可以使用这个特性的次数等同于你的体质调整值（最少1次）。当你完成一次长休后，你恢复已用次数。"
+			]
+		},
+		{
+			"name": "Aquatic Tyrant: Leviathan",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你开始模仿利维坦的不可阻挡本质。效果使你在攻击一个被你的毁灭纹章标记的生物时，不会让你进行近战攻击骰时的劣势检定，并且当你用近战武器击中时，额外造成1d6点伤害。"
+			]
+		},
+		{
+			"name": "Aquatic Tyrant: Orca",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你的攻击具有致命力。每当你用具有重型或双手属性的武器击中一只生物时，该生物必须进行一次力量豁免投掷。如果未通过豁免，则被推回5英尺。在确定该生物是否未通过豁免之前，你可以花费一个额外动作使其倒地而不是被推回5英尺。"
+			]
+		},
+		{
+			"name": "Aquatic Tyrant: Shark",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"对于被你的毁灭纹章标记的生物，你进行的近战武器攻击在掷骰子得到18、19或20时会造成暴击。"
+			]
+		},
+		{
+			"name": "Aquatic Tyrant: Whale",
+			"source": "AvCA",
+			"page": 15,
+			"featureType": [
+				"AvCA|BO"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你已经成为了深海中无法攻破的猎人；你现在对非魔法来源的钝击、穿刺和斩击伤害具有抗性。"
+			]
+		}
+	]
+}

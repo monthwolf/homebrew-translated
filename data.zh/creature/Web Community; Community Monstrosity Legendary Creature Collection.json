@@ -1,0 +1,260 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMMonstrosityLegendary",
+				"abbreviation": "COMMonstrosityLegendary",
+				"full": "Community Monstrosity Legendary Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2022.07.16",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1632778501,
+		"dateLastModified": 1671646965,
+		"_dateLastModifiedHash": "ec271ca929"
+	},
+	"monster": [
+		{
+			"name": "Alodon, the Red Lion of Afeonia",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "COMMonstrosityLegendary",
+			"alignment": [
+				{
+					"alignment": [
+						"C",
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"C",
+						"E"
+					]
+				}
+			],
+			"ac": [
+				21
+			],
+			"hp": {
+				"special": "580"
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 40
+			},
+			"str": 25,
+			"dex": 20,
+			"con": 25,
+			"int": 11,
+			"wis": 6,
+			"cha": 16,
+			"passive": 8,
+			"cr": "15",
+			"shortName": "Alodon, the Red Lion of Afeonia",
+			"languages": [
+				"Aeonian",
+				"Common",
+				"Celestial",
+				"Draconic",
+				"Primordial"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"DR",
+				"P"
+			],
+			"save": {
+				"str": "+13",
+				"dex": "+11",
+				"con": "+13"
+			},
+			"vulnerable": [
+				"psychic"
+			],
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				},
+				{
+					"immune": [
+						"poison"
+					]
+				}
+			],
+			"conditionImmune": [
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistances (3/day)",
+					"entries": [
+						"每当阿洛顿的蓄力动作失败时，他可以选择成功代替。"
+					]
+				},
+				{
+					"name": "Rage Against",
+					"entries": [
+						"阿洛顿每失去58点命中率，他用近战攻击造成的伤害就会增加2。"
+					]
+				},
+				{
+					"name": "Scounge Marked",
+					"entries": [
+						"阿洛顿对毒药、疾病和灾祸完全免疫。"
+					]
+				},
+				{
+					"name": "Last Stand of the Dynasty (Half HP)",
+					"entries": [
+						"当生命值下降到290时，阿洛顿恢复了他的智慧，成为一个更危险的敌人。他获得了使用他的神话行动的权限。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"阿洛顿用他的爪子进行了四次攻击，用他的惊魂脚进行了一次攻击。如果他处于最后一搏的状态，他将用他的 \"掠夺之刃 \"或 \"黑血火焰裂缝 \"进行三次攻击，然后再进行一次 \"惊魂脚\"。"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 13}击中，到达5英尺，一个目标。{@h}18 ({@damage 2d10 + 7})砍击伤害。"
+					]
+				},
+				{
+					"name": "Stunning Kick",
+					"entries": [
+						"{@atk mw} {@hit 13}击中，到达5英尺，一个目标。{@h}20 ({@damage 2d12 + 7})重击伤害，并被推到20英尺外。此外，目标必须做一个反击治疗（%4%），否则会被眩晕，直到下一回合结束。"
+					]
+				},
+				{
+					"name": "Sundered Blade (Mythic)",
+					"entries": [
+						"{@atk mw} {@hit 13}击中，到达10英尺，一个目标。{@h}27 ({@damage 3d10 + 10})的砍击伤害，加上11 ({@damage 2d10})的火焰伤害，并且他们的最大HP会减少，减少量等于所受的火焰伤害。"
+					]
+				},
+				{
+					"name": "Blackblood Flame Rift (Mythic)",
+					"entries": [
+						"{@atk rs} {@hit 13}击中，范围60英尺，一个目标。{@h}27 ({@damage 3d12 + 7})火力伤害，并且他们的最大HP会减少，减少的量等于所受的火力伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"reaction": [
+				{
+					"name": "Avenging Attacks",
+					"entries": [
+						"作为被近战攻击击中的反应，阿洛顿可以对击中他的人进行两次爪子攻击。另外，在最后一搏时，他可以对近战和远程攻击者使用他的任一神话攻击。"
+					]
+				},
+				{
+					"name": "Oathblood Resilience",
+					"entries": [
+						"作为从任何来源受到伤害的反应，阿洛顿可以赋予自己对伤害的抵抗。"
+					]
+				}
+			],
+			"legendaryActions": 5,
+			"legendaryHeader": [
+				"Alodon每轮获得5个传奇行动。使用其中一个后，如果他失去了反应，则会恢复。"
+			],
+			"legendary": [
+				{
+					"name": "Stunning Kick (Costs 2 actions)",
+					"entries": [
+						"阿洛顿用他的 \"惊鸿一瞥 \"承受了一次攻击。"
+					]
+				},
+				{
+					"name": "Feral Leap (Costs 1 action)",
+					"entries": [
+						"阿洛顿跳到他能看到的30英尺内的空间，而不会引起机会攻击。"
+					]
+				},
+				{
+					"name": "Daunting Roar (Costs 2 actions)",
+					"entries": [
+						"阿洛顿释放出可怕的战吼。所有能听到他的敌人都必须做一个智慧救赎动作（%0%），否则就会被他吓到，持续1分钟。他们可以在他们的回合结束时重复这个蓄力动作，如果成功则结束该效果。"
+					]
+				}
+			],
+			"mythicHeader": [
+				"While he still has access to the above actions, he gains these upon entering Last Stand."
+			],
+			"mythic": [
+				{
+					"name": "Father's Thoms (Costs 2 actions)",
+					"entries": [
+						"阿洛顿施展荆棘之墙法术。对他来说，这不需要集中注意力，但他不能同时拥有超过一堵墙。对该法术的救赎DC是22。"
+					]
+				},
+				{
+					"name": "Blackblood Flame Pounce (Costs 3 actions)",
+					"entries": [
+						"阿洛顿使用他的 \"野性跳跃\"，但是当他落地时，在他的新空间15英尺范围内的所有生物都必须做一个灵巧的蓄力动作（%0%），否则会受到33（{@damage 5d12}）的火焰伤害，成功的话会受到一半的伤害。他们的最大命中率会因所受的火害而降低。"
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/OEErFp9.png",
+			"fluff": {
+				"entries": [
+					"{@link Alodon, the Red Lion of Afeonia|https://www.reddit.com/r/UnearthedArcana/comments/ud1pi4/alodon_the_red_lion_of_aeonia_a_very_lategame/}",
+					{
+						"name": "Credits",
+						"type": "inset",
+						"entries": [
+							"{@link Alodon, the Red Lion of Afeonia|https://www.reddit.com/r/UnearthedArcana/comments/ud1pi4/alodon_the_red_lion_of_aeonia_a_very_lategame/}"
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/W6mYMYq.jpg"
+						}
+					}
+				]
+			}
+		}
+	]
+}

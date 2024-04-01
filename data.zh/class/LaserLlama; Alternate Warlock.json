@@ -1,0 +1,4660 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLWrc",
+				"abbreviation": "LLWrc",
+				"full": "Alternate Warlock",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Dazzle#9021"
+				],
+				"color": "4B0082",
+				"version": "2.1.0",
+				"url": "https://www.gmbinder.com/share/-NRARRHW6KjsBfrQIzTs",
+				"targetSchema": "1.10.9"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"PHB",
+				"XGE",
+				"TCE"
+			]
+		},
+		"optionalFeatureTypes": {
+			"LL:EInv": "Eldritch Invocation (Alternate)",
+			"LL:EA": "Elder Arcanum",
+			"LL:PF": "Pact Focus"
+		},
+		"dateAdded": 1658237901,
+		"dateLastModified": 1708895016,
+		"_dateLastModifiedHash": "c99e8edbed"
+	},
+	"class": [
+		{
+			"name": "Alternate Warlock",
+			"source": "LLWrc",
+			"fluff": [
+				{
+					"name": "Warlock",
+					"type": "section",
+					"entries": [
+						"一个引人注目的提弗林（tiefling）,肤色赤褐，黑色的角站在他在满月的光下划出的仪式圈中心。当他用一种被遗忘的语言吟唱时，月亮被黑暗吞噬，一股来自星辰之外的异世界声音响起。这个无形的声音向他提供了无法言说的力量，条件是他要为这个声音的神秘目标努力。提弗林同意了，月亮的光重新出现，他的手闪耀着奥术能量。",
+						"这位庞大的巨人完成了从他所杀死的古代生物的骨骼中雕刻出一尊神秘的偶像。这头上古巨兽已经被古老丛林的魔法浸透多年。它的骨骼将成为他在那座巨兽守护的神庙中发现的神秘魔法的完美容器。",
+						"当一个敌对恶魔领主的邪教徒们围绕着他时，那个消瘦的战士伸出他的空手，凝聚出一把由清澈蓝冰制成的战斧。尽管他骨瘦如柴，但这个战士移动起来不可思议的快。在一个强大的恶魔领主的冰冷魔法的推动下，他迅速地解决了他的敌人。当那些邪教徒们躺在那里一动不动时，那把冰冷的战斧融化消失了。",
+						"上述三个角色是被称为术士的神秘法师的例子。通过收集黑暗秘密和邪恶魔法，这些奇怪的学者们打开了自己与无法言说的强大存在进行交易的大门。",
+						{
+							"type": "entries",
+							"name": "Lure of Secrets",
+							"entries": [
+								"受对知识无法抗拒的渴望驱使，术士将几乎不惜一切去揭示失落的知识碎片。与其他从事奥术艺术的人不同，术士会利用任何捷径来获取力量。他们常常被一系列奇怪的小饰品标记：小偶像、图腾、圣徽和神秘的仪式用品。他们利用这些小饰品来保存失落、秘密和邪恶的奥术魔法碎片，通常同时从许多不同的神秘传统中汲取力量。",
+								"对于一个术士来说，没有什么遗物是太神圣的，没有什么禁忌的文本是太危险的，没有什么坟墓是太冒险的，以追求神秘知识和随之而来的力量。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spiritual Existence",
+							"entries": [
+								"每个术士的终极目标是积累个人力量。这种追求的原因因术士而异：有些人渴望个人财富和荣耀，其他人寻求力量来保护他人或作为善良的手段，还有一些人利用他们的力量向敌人复仇。最终，所有术士都会偶然发现或被强大的异界生物所吸引，这些生物被他们对力量的渴望所吸引。",
+								"尽管每位术士积累知识的原因各不相同，导致他们与强大异界存在达成协议的情况也各式各样。无论是他们自愿达成协议，欺骗这个强大实体借给他们力量，还是秘密地从这些存在中汲取魔法，所有术士最终都会发现自己卷入这些可怕的交易中。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating Your Warlock",
+							"entries": [
+								"在创建一个术士时，你需要考虑的最重要的事情是他们追求知识和力量的动机。他们是被一种无法满足的渴望揭示失落秘密的欲望驱使吗？还是被一个强大的异界实体诱惑，成为他们在物质位面上的棋子？又或者，他们对力量的追求源于为他人服务的愿望？",
+								"另外，考虑你的术士的魔法是如何显现的。他们的每个法术和唤醒是否来自不同的神秘传统？一些魔法是否类似于牧师或圣骑士的魔法，而其他法术是否像巫师的法术一样？他们的力量是否以令普通人害怕生命安危的不安方式显现？或者，他们的艺术是否与更传统的法师们的艺术无法区分？",
+								{
+									"type": "inset",
+									"name": "Multiclassing and the Warlock",
+									"entries": [
+										"如果你的团队使用《玩家手册》中的多职业规则，那么如果你选择另类术士(Alternate Warlock)作为你的职业之一，这里有一些你需要知道的信息。",
+										{
+											"type": "entries",
+											"name": "Ability Score Minimum",
+											"entries": [
+												"作为一个多职业角色，你必须拥有至少13点智力分数才能作为一名术士(Warlock)的第一级，或者在已经是术士的情况下选择另一个职业。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Proficiencies Gained",
+											"entries": [
+												"如果术士不是你的初始职业，当你达到第一级时，你会获得轻甲和简单武器的熟练。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Spellcasting",
+											"entries": [
+												"如果你有来自另一个职业的特性，允许你学习和施放法术，你可以使用你的契约魔法法术位来施放通过那个特性获得的法术，并且你可以使用这些法术位来施放你的术士法术。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"你可以通过以下建议快速创建一个术士：首先，将智力设为最高的能力值，然后是体质或敏捷。其次，选择骗子(`Charlatan`)背景。最后，选择符文使者之眼(`Eyes of the Rune Keeper`)和多面面具(`Mask of Many Faces`)作为起始奥术附魔。"
+									]
+								}
+							]
+						}
+					],
+					"page": 2,
+					"source": "LLWrc"
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"history",
+								"intimidation",
+								"investigation",
+								"nature",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item light crossbow|phb} and 20 bolts or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item component poucn|phb} or (b) {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item dungeoneer's pack|phb}",
+					"{@item leather armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} and 2 daggers"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"light crossbow|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							{
+								"item": "arcane focus|phb"
+							}
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"Leather armor|phb",
+							{
+								"equipmentType": "weaponSimple"
+							},
+							{
+								"item": "dagger|phb",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"arcana",
+									"deception",
+									"history",
+									"intimidation",
+									"investigation",
+									"nature",
+									"religion"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
+			"classFeatures": [
+				"Eldritch Invocations|Alternate Warlock|LLWrc|1",
+				"Eldritch Blast|Alternate Warlock|LLWrc|1",
+				{
+					"classFeature": "Otherworldly Patron|Alternate Warlock|LLWrc|2",
+					"gainSubclassFeature": true
+				},
+				"Pact Magic|Alternate Warlock|LLWrc|2",
+				"Pact Focus|Alternate Warlock|LLWrc|3",
+				"Ability Score Improvement|Alternate Warlock|LLWrc|4",
+				"Empowered Blast|Alternate Warlock|LLWrc|5",
+				{
+					"classFeature": "Otherworldly Patron Feature|Alternate Warlock|LLWrc|6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Warlock|LLWrc|8",
+				{
+					"classFeature": "Otherworldly Patron Feature|Alternate Warlock|LLWrc|10",
+					"gainSubclassFeature": true
+				},
+				"Elder Arcanum|Alternate Warlock|LLWrc|11",
+				"Ability Score Improvement|Alternate Warlock|LLWrc|12",
+				{
+					"classFeature": "Otherworldly Patron Feature|Alternate Warlock|LLWrc|14",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Warlock|LLWrc|16",
+				"Ability Score Improvement|Alternate Warlock|LLWrc|19",
+				"Pact Master|Alternate Warlock|LLWrc|20"
+			],
+			"subclassTitle": "Patron",
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Invocations Known|optionalfeatures|feature type=LL:EInv}",
+						"{@filter Cantrips Known|spells|level=0|class=Alternate Warlock (LLWrc)}",
+						"{@filter Spells Known|spells|class=Alternate Warlock (LLWrc)}",
+						"Spell Slots",
+						"Slot Level"
+					],
+					"rows": [
+						[
+							"2",
+							"-",
+							"-",
+							"-",
+							"-"
+						],
+						[
+							"2",
+							"2",
+							"3",
+							"2",
+							"1st"
+						],
+						[
+							"3",
+							"2",
+							"3",
+							"2",
+							"2nd"
+						],
+						[
+							"4",
+							"3",
+							"4",
+							"2",
+							"2nd"
+						],
+						[
+							"4",
+							"3",
+							"4",
+							"2",
+							"3rd"
+						],
+						[
+							"4",
+							"3",
+							"5",
+							"2",
+							"3rd"
+						],
+						[
+							"5",
+							"3",
+							"5",
+							"2",
+							"4th"
+						],
+						[
+							"5",
+							"3",
+							"6",
+							"2",
+							"4th"
+						],
+						[
+							"6",
+							"3",
+							"6",
+							"2",
+							"5th"
+						],
+						[
+							"6",
+							"4",
+							"7",
+							"2",
+							"5th"
+						],
+						[
+							"6",
+							"4",
+							"7",
+							"3",
+							"5th"
+						],
+						[
+							"7",
+							"4",
+							"8",
+							"3",
+							"5th"
+						],
+						[
+							"7",
+							"4",
+							"8",
+							"3",
+							"5th"
+						],
+						[
+							"7",
+							"4",
+							"8",
+							"3",
+							"5th"
+						],
+						[
+							"8",
+							"4",
+							"9",
+							"3",
+							"5th"
+						],
+						[
+							"8",
+							"4",
+							"9",
+							"3",
+							"5th"
+						],
+						[
+							"8",
+							"4",
+							"9",
+							"4",
+							"5th"
+						],
+						[
+							"9",
+							"4",
+							"10",
+							"4",
+							"5th"
+						],
+						[
+							"9",
+							"4",
+							"10",
+							"4",
+							"5th"
+						],
+						[
+							"9",
+							"4",
+							"10",
+							"4",
+							"5th"
+						]
+					]
+				}
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				0,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				0,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				8,
+				9,
+				9,
+				9,
+				10,
+				10,
+				10
+			],
+			"classSpells": [
+				"Blade Ward",
+				"Booming Blade|TCE",
+				"Chill Touch",
+				"Control Flames|XGE",
+				"Create Bonfire|XGE",
+				"Dancing Lights",
+				"Frostbite|XGE",
+				"Green-Flame Blade|TCE",
+				"Infestation|XGE",
+				"Lightning Lure|TCE",
+				"Mage Hand",
+				"Magic Stone|XGE",
+				"Mind Sliver|TCE",
+				"Minor Illusion",
+				"Otherworldly Grasp|LLWrc",
+				"Poison Spray",
+				"Prestidigitation",
+				"Sword Burst|TCE",
+				"Thunderclap|XGE",
+				"Toll the Dead|XGE",
+				"True Strike",
+				"Armor of Agathys",
+				"Arms of Hadar",
+				"Bane",
+				"Cause Fear|XGE",
+				"Charm Person",
+				"Color Spray",
+				"Comprehend Languages",
+				"Dissonant Whispers",
+				"Expeditious Retreat",
+				"Ghastly Flight|LLWrc",
+				"Hellish Rebuke",
+				"Hex",
+				"Tasha's Hideous Laughter",
+				"Protection from Evil and Good",
+				"Ray of Sickness",
+				"Sleep",
+				"Unseen Servant",
+				"Witch Bolt (Alternate)|LLWrc",
+				"Cloud of Daggers",
+				"Crown of Madness",
+				"Darkness",
+				"Earthbind|XGE",
+				"Enthrall",
+				"Flame Whip|LLWrc",
+				"Hold Person",
+				"Invisibility",
+				"Levitate",
+				"mind Spike|XGE",
+				"Mind Whip|TCE",
+				"Mirror Image",
+				"Misty Step",
+				"Phantasmal Force",
+				"Ray of Enfeeblement",
+				"Shadow Blade|XGE",
+				"Shatter",
+				"Spider Climb",
+				"Suggestion",
+				"Bestow Curse",
+				"Counterspell",
+				"Dispel Magic",
+				"Enemies Abound|XGE",
+				"Fear",
+				"Fly",
+				"Gaseous Form",
+				"Hunger of Hadar (Alternate)|LLWrc",
+				"Hypnotic Pattern",
+				"Intellect Fortress|TCE",
+				"Life Transference|XGE",
+				"Magic Circle",
+				"Major Image",
+				"Remove Curse",
+				"Slow",
+				"Spirit Shroud|TCE",
+				"Summon Fey|TCE",
+				"Summon Lesser Demons|XGE",
+				"Summon Shadowspawn|TCE",
+				"Summon Undead|TCE",
+				"Thunder step|XGE",
+				"Tongues",
+				"Vampiric Touch",
+				"Arcane Eye",
+				"Banishment",
+				"Blight",
+				"Charm Monster|XGE",
+				"Compulsion",
+				"Confusion",
+				"Dimension Door",
+				"Eldritch Tentacles|LLWrc",
+				"Elemental Bane|XGE",
+				"Giant Insect",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Phantasmal Killer",
+				"Polymorph",
+				"Shadow of Moil|XGE",
+				"Sickening Radiance|XGE",
+				"Summon Aberration|TCE",
+				"Summon Elemental|TCE",
+				"Summon Greater Demon",
+				"Contact Other Plane",
+				"Contagion",
+				"Danse Macabre|XGE",
+				"Dominate Person",
+				"Dream",
+				"Enervation|XGE",
+				"Far Step|XGE",
+				"Geas",
+				"Hallow",
+				"Hold Monster",
+				"Infernal Calling|XGE",
+				"Insect Plague",
+				"Legend Lore",
+				"Mislead",
+				"Negative Energy Flood|XGE",
+				"Planar Binding",
+				"Scrying",
+				"Spiritual Sundering|LLWrc",
+				"Synaptic Static|XGE",
+				"Teleportation Circle",
+				"Wall of Light|XGE"
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Eldritch Invocation (Alternate)",
+					"featureType": [
+						"LL:EInv"
+					],
+					"progression": {
+						"1": 2,
+						"3": 3,
+						"5": 4,
+						"7": 5,
+						"9": 6,
+						"12": 7,
+						"15": 8,
+						"18": 9
+					}
+				},
+				{
+					"name": "Eldrer Arcanum",
+					"featureType": [
+						"LL:EA"
+					],
+					"progression": {
+						"11": 1,
+						"13": 2,
+						"15": 3,
+						"17": 4
+					}
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Eldritch Invocations",
+			"source": "LLWrc",
+			"page": 4,
+			"foundryImg": "icons/sundries/documents/document-symbol-triangle-pink.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 1,
+			"entries": [
+				"你发掘出了被称为{@filter Eldritch Invocations|optionalfeatures|feature type=LL:EInv}的黑暗、被遗忘的神秘力量的碎片，你将它们绑定在小饰品上，以便你能够利用这股力量。饰品是一种微小的物品，让人联想到其中所绑定的召唤。如果你的饰品丢失或被摧毁，它会在你的下一个短休或长休结束时重新出现在你身上。",
+				"在1级时，你有两个这样的小玩意，每个里面都绑定着你从本职业末尾列表中选择的一个奥术召唤。当你达到特定的术士等级时，你将学会额外的召唤，如上方术士表中的\"已知召唤\"栏所示。如果一个召唤有前提条件，比如特定的术士等级，你可以在满足其所有前提条件的同时学会它。",
+				"当你获得一级术士等级时，你可以用你选择的另一个邪能召唤来替换你已知的邪能召唤。",
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"当你从禁忌知识和传说中汲取魔法力量时，你可以使用你的智力作为你通过邪能召唤特性学到的任何法术的施法能力。当召唤或法术涉及到你的施法能力时，当设定法术或能力的豁免 DC 时，以及进行法术攻击检定时，你可以使用智力。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Eldritch Blast",
+			"source": "LLWrc",
+			"page": 4,
+			"foundryImg": "modules/plutonium/media/icon/spell/phb-eldritch-blast.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 1,
+			"entries": [
+				"你可以释放你的奥术附魔的力量，将其化为奥术能量射线。当持有一个包含附魔的小玩意时，你可以使用一个动作对你能看见的目标在120尺内进行远程法术攻击。命中时，目标受到等于1d8 + 你的智力调整值的力量伤害。"
+			]
+		},
+		{
+			"name": "Otherworldly Patron",
+			"source": "LLWrc",
+			"page": 4,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"在你的亵渎研究中，你重新发现、联系或与一个异界实体达成了交易。在2级时，你可以从以下列表中选择一个最能代表你与之缔结契约的异界主宰：(The Archfey)妖精之王、(The Ancient Wyrm)远古巨龙、(The Fiend)恶魔或(The Great Old One)上古之神。",
+				"在课程描述的末尾还包括了受到官方术士选项启发的其他世界守护者：深渊之主，黑暗领主，卓越者，贵族精灵和不朽者。",
+				"你的异界主宰在2级时授予你特性，当你达到6级、10级和14级时再次获得特性。",
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"每个异界主的法宝法术列表都会在你异界主描述中指定的术士等级时学会。这些法术对你来说算作术士法术，但不计入你已知法术的总数。",
+						"这个魔法也会改变你的《邪能冲击》(Eldritch Blast)的效果。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact Magic",
+			"source": "LLWrc",
+			"page": 4,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"在2级时，你的研究和由你的至尊赐予的力量赋予了你施展法术的能力：",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"你可以从术士法术列表中选择两个战斗法术，这些法术可以在这个职业描述的末尾找到。",
+						"你在第4级和第10级时学会另一个术士戏法，如同在术士表格的已知戏法栏中所示。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"由于你的契约魔法是你所收集的超自然和神秘知识的延伸，你使用你的(埃尔德里奇召唤) Eldritch Invocation 施法能力来施展你的契约魔法法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"术士表格显示了你可以用来施放1级至5级术士法术的法术位数量。表格还显示了这些法术位的等级；你所有的法术位都是同一等级的。要施放1级或更高级的术士法术，你必须消耗一个法术位。当你完成短休或长休时，你会恢复所有已消耗的法术位。",
+						"例如，如果你是5级，你有两个3级法术位。要施放1级法术《女巫闪电》，你必须消耗其中一个位，并将其作为3级法术施放。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st-Level and Higher",
+					"entries": [
+						"在2级时，你可以从《术士法术列表》（Warlock spell list）末尾的职业描述中选择三个1级法术。《术士》表格中的\"已知法术\"列显示了你何时学会额外的1级或更高级别的《术士》法术。你选择的法术的等级不能高于表格中对应你等级的\"位级别\"列所显示的等级。",
+						"例如，当你达到6级时，你将学会一个1级、2级或3级的新术士法术。",
+						"此外，当你在这个职业中升级时，你可以选择你已知的术士法术中的一个，然后用术士法术清单中你选择的另一个法术替换它，新法术的等级必须与你拥有法术位的等级相符。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Invocation Spells",
+					"entries": [
+						"通过唤醒所学习的法术对你来说算作术士法术，但不计入你已知的法术数量。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用任何拥有奇术召唤(Eldritch Invocation)的魔戒，或者一枚奥术焦点(arcane focus)，作为你的术士法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact Focus",
+			"source": "LLWrc",
+			"page": 3,
+			"foundryImg": "icons/commodities/treasure/broach-jeweled-pink.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 3,
+			"entries": [
+				"你与异界主的联系加深了，你学会了将他们的奥术力量引导到一个契约焦点中，这个焦点反映了你的异界主的真实本质。在3级时，你可以从以下列表中选择一个契约焦点：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Eldritch Blade|LLWrc"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Eldritch Familiar|LLWrc"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Eldritch Tome|LLWrc"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLWrc",
+			"page": 5,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Empowered Blast",
+			"source": "LLWrc",
+			"page": 5,
+			"foundryImg": "modules/plutonium/media/icon/spell/phb-eldritch-blast.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 5,
+			"entries": [
+				"你能够从你的附魔中汲取更多力量。从5级开始，当你使用邪能冲击时，你会创建两道射线。你可以将射线指向同一个目标或不同的目标，但你需要为每个射线进行单独的攻击检定。",
+				"在某些术士等级上，光束的数量会增加：在11级时会创建三个，最终在17级时会有四个。"
+			]
+		},
+		{
+			"name": "Otherworldly Patron Feature",
+			"source": "LLWrc",
+			"page": 4,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得了由你的守护者（Patron）赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLWrc",
+			"page": 5,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性不能将一个能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Otherworldly Patron Feature",
+			"source": "LLWrc",
+			"page": 4,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 10,
+			"entries": [
+				"在第10级时，你获得了由你的守护者（Patron）赋予的特性。"
+			]
+		},
+		{
+			"name": "Elder Arcanum",
+			"source": "LLWrc",
+			"page": 5,
+			"className": "Alternate Warlock",
+			"foundryImg": "icons/sundries/scrolls/scroll-runed-brown-purple.webp",
+			"classSource": "LLWrc",
+			"level": 11,
+			"entries": [
+				"利用你所收集到的禁忌、神秘和邪恶知识，你获得了对宇宙秘密运作的洞察。这种知识会显现为一个{@filter Elder Arcanum|optionalfeatures|feature type=LL:EA}。在11级时，你可以从该职业末尾的列表中学习一个上古奥秘。除非另有规定，否则你不能多次学习同一个奥秘，一旦选择了，就不能更改。",
+				"在某些术士等级上，你将解锁更多这些神秘的秘密。你将在第13级学习一个额外的奥秘，第15级学习一个，最后在第17级学习一个奥秘。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLWrc",
+			"page": 5,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与通常一样，使用这个特性时不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Otherworldly Patron Feature",
+			"source": "LLWrc",
+			"page": 4,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 14,
+			"entries": [
+				"在第10级时，你获得了由你的守护者（Patron）赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLWrc",
+			"page": 5,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLWrc",
+			"page": 5,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Pact Master",
+			"source": "LLWrc",
+			"page": 5,
+			"className": "Alternate Warlock",
+			"foundryImg": "icons/sundries/scrolls/scroll-magical-yellow.webp",
+			"classSource": "LLWrc",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以在极其需要的时候挤压你契约的奥术力量。每次长休一次，你可以使用一个动作来恢复你已经消耗的所有契约魔法法术位。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Archfey",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Archfey",
+			"subclassFeatures": [
+				"Archfey|Alternate Warlock|LLWrc|Archfey|LLWrc|2",
+				"Beguiling Blast|Alternate Warlock|LLWrc|Archfey|LLWrc|6",
+				"Misty Escape|Alternate Warlock|LLWrc|Archfey|LLWrc|6",
+				"Whimsical Defense|Alternate Warlock|LLWrc|Archfey|LLWrc|10",
+				"Terrible Delights|Alternate Warlock|LLWrc|Archfey|LLWrc|14"
+			],
+			"subclassSpells": [
+				"Faerie Fire",
+				"Sleep",
+				"Misty Step",
+				"Phantasmal Force",
+				"Fear",
+				"Hypnotic Pattern",
+				"Hallucinatory Terrain",
+				"Greater Invisibility",
+				"Mislead",
+				"Seeming"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Faerie Fire",
+							"Sleep"
+						],
+						"3": [
+							"Misty Step",
+							"Phantasmal Force"
+						],
+						"5": [
+							"Fear",
+							"Hypnotic Pattern"
+						],
+						"7": [
+							"Hallucinatory Terrain",
+							"Greater Invisibility"
+						],
+						"9": [
+							"Mislead",
+							"Seeming"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Ancient Wyrm",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Ancient Wyrm",
+			"subclassFeatures": [
+				"Ancient Wyrm|Alternate Warlock|LLWrc|Ancient Wyrm|LLWrc|2",
+				"Elemental Potency|Alternate Warlock|LLWrc|Ancient Wyrm|LLWrc|6",
+				"Regal Presence|Alternate Warlock|LLWrc|Ancient Wyrm|LLWrc|10",
+				"Draconic Wings|Alternate Warlock|LLWrc|Ancient Wyrm|LLWrc|14"
+			],
+			"subclassSpells": [
+				"Command",
+				"Burning Hands",
+				"Dragon's Breath|XGE",
+				"Scorching Ray",
+				"Fear",
+				"Fireball",
+				"Dominate Beast",
+				"Wall of Fire",
+				"Dominate Person",
+				"Cone of Cold"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Command",
+							"Burning Hands"
+						],
+						"3": [
+							"Dragon's Breath|XGE",
+							"Scorching Ray"
+						],
+						"5": [
+							"Fear",
+							"Fireball"
+						],
+						"7": [
+							"Dominate Beast",
+							"Wall of Fire"
+						],
+						"9": [
+							"Dominate Person",
+							"Cone of Cold"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Fiend",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Fiend",
+			"subclassFeatures": [
+				"Fiend|Alternate Warlock|LLWrc|Fiend|LLWrc|2",
+				"Accursed Blast|Alternate Warlock|LLWrc|Fiend|LLWrc|6",
+				"Dark Bargain|Alternate Warlock|LLWrc|Fiend|LLWrc|6",
+				"Fiendish Resilience|Alternate Warlock|LLWrc|Fiend|LLWrc|10",
+				"Hurl Through Hell|Alternate Warlock|LLWrc|Fiend|LLWrc|14"
+			],
+			"subclassSpells": [
+				"Command",
+				"Hellish Rebuke",
+				"Blindness/Deafness",
+				"Flame Whip|LLWrc",
+				"Bestow Curse",
+				"Fireball",
+				"Blight",
+				"Wall of Fire",
+				"Cloudkill",
+				"Immolation|XGE"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Command",
+							"Hellish Rebuke"
+						],
+						"3": [
+							"Blindness/Deafness",
+							"Flame Whip|LLWrc"
+						],
+						"5": [
+							"Bestow Curse",
+							"Fireball"
+						],
+						"7": [
+							"Blight",
+							"Wall of Firey"
+						],
+						"9": [
+							"Cloudkill",
+							"Immolation|XGE"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Great Old One",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Great Old One",
+			"subclassFeatures": [
+				"Great Old One|Alternate Warlock|LLWrc|Great Old One|LLWrc|2",
+				"Mental Lance|Alternate Warlock|LLWrc|Great Old One|LLWrc|6",
+				"Psionic Ward|Alternate Warlock|LLWrc|Great Old One|LLWrc|6",
+				"Thought Shield|Alternate Warlock|LLWrc|Great Old One|LLWrc|10",
+				"Create Thrall|Alternate Warlock|LLWrc|Great Old One|LLWrc|14"
+			],
+			"subclassSpells": [
+				"Arms of Hadar",
+				"Dissonant Whispers",
+				"Detect Thoughts",
+				"Mind Whip|TCE",
+				"Clairvoyance",
+				"Hunger of Hadar (Alternate)|LLWrc",
+				"Confusion",
+				"Eldritch tentacles|LLWrc",
+				"Modify Memory",
+				"Telekinesis"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Arms of Hadar",
+							"Dissonant Whispers"
+						],
+						"3": [
+							"Detect Thoughts",
+							"Mind Whip|TCE"
+						],
+						"5": [
+							"Clairvoyance",
+							"Hunger of Hadar (Alternate)|LLWrc"
+						],
+						"7": [
+							"Confusion",
+							"Eldritch Tentacles|LLWrc"
+						],
+						"9": [
+							"Modify Memory",
+							"Telekinesis"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Deep One",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Deep One",
+			"subclassFeatures": [
+				"Deep One|Alternate Warlock|LLWrc|Deep One|LLWrc|2",
+				"Oceanic Grasp|Alternate Warlock|LLWrc|Deep One|LLWrc|6",
+				"Thalassic Speech|Alternate Warlock|LLWrc|Deep One|LLWrc|6",
+				"Greater Tentacles|Alternate Warlock|LLWrc|Deep One|LLWrc|10",
+				"Unleash the Depths|Alternate Warlock|LLWrc|Deep One|LLWrc|14"
+			],
+			"subclassSpells": [
+				"Create or Destroy Water",
+				"Thunderwave",
+				"Gust of Wind",
+				"Shatter",
+				"Tidal Wave",
+				"Sleet Storm",
+				"Control Water",
+				"Eldritch Tentacles|LLWrc",
+				"Cone of Cold",
+				"Maelstrom|XGE"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Create or Destroy Water",
+							"Thunderwave"
+						],
+						"3": [
+							"Gust of Wind",
+							"Shatter"
+						],
+						"5": [
+							"Tidal Wave",
+							"Sleet Storm"
+						],
+						"7": [
+							"Control Water",
+							"Eldritch Tentacles|LLWrc"
+						],
+						"9": [
+							"Cone of Cold",
+							"Maelstrom|XGE"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Darklord",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Darklord",
+			"subclassFeatures": [
+				"Darklord|Alternate Warlock|LLWrc|Darklord|LLWrc|2",
+				"Living Shadow|Alternate Warlock|LLWrc|Darklord|LLWrc|6",
+				"Dread Mantle|Alternate Warlock|LLWrc|Darklord|LLWrc|10",
+				"Right Hand of Dread|Alternate Warlock|LLWrc|Darklord|LLWrc|14"
+			],
+			"subclassSpells": [
+				"Hex",
+				"Inflict Wounds",
+				"Silence",
+				"Shadow Blade|XGE",
+				"Fear",
+				"Haste",
+				"Freedom of Movement",
+				"Phantasmal Killer",
+				"Dream",
+				"Destructive Wave"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Hex",
+							"Inflict Wounds"
+						],
+						"3": [
+							"Silence",
+							"Shadow Blade|XGE"
+						],
+						"5": [
+							"Fear",
+							"Haste"
+						],
+						"7": [
+							"Freedom of Movement",
+							"Phantasmal Killer"
+						],
+						"9": [
+							"Dream",
+							"Destructive Wave"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Exalted",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Exalted",
+			"subclassFeatures": [
+				"Exalted|Alternate Warlock|LLWrc|Exalted|LLWrc|2",
+				"Radiant Conduit|Alternate Warlock|LLWrc|Exalted|LLWrc|6",
+				"Celestial Fortitude|Alternate Warlock|LLWrc|Exalted|LLWrc|10",
+				"Blinding Defiance|Alternate Warlock|LLWrc|Exalted|LLWrc|14"
+			],
+			"subclassSpells": [
+				"Cure Wounds",
+				"Guiding Bolt",
+				"Flaming Sphere",
+				"Lesser Restoration",
+				"Daylight",
+				"Revivify",
+				"Guardian of Faith",
+				"Wall of Fire",
+				"Flame Strike",
+				"Greater Restoration"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"Cure Wounds",
+							"Guiding Bolt"
+						],
+						"3": [
+							"Flaming Sphere",
+							"Lesser Restoration"
+						],
+						"5": [
+							"Daylight",
+							"Revivify"
+						],
+						"7": [
+							"Guardian of Faith",
+							"Wall of Fire"
+						],
+						"9": [
+							"Flame Strike",
+							"Greater Restoration"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Noble Genie",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Noble Genie",
+			"subclassFeatures": [
+				"Noble Genie|Alternate Warlock|LLWrc|Noble Genie|LLWrc|2",
+				"Ethereal Nature|Alternate Warlock|LLWrc|Noble Genie|LLWrc|6",
+				"Mystical Sanctuary|Alternate Warlock|LLWrc|Noble Genie|LLWrc|10",
+				"Limited Wish|Alternate Warlock|LLWrc|Noble Genie|LLWrc|14"
+			]
+		},
+		{
+			"name": "Undying",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"shortName": "Undying",
+			"subclassFeatures": [
+				"Undying|Alternate Warlock|LLWrc|Undying|LLWrc|2",
+				"Lifedrinker|Alternate Warlock|LLWrc|Undying|LLWrc|6",
+				"Unsettling Visage|Alternate Warlock|LLWrc|Undying|LLWrc|6",
+				"Unnatural Resilience|Alternate Warlock|LLWrc|Undying|LLWrc|10",
+				"Unending Life|Alternate Warlock|LLWrc|Undying|LLWrc|14"
+			],
+			"subclassSpells": [
+				"False Life",
+				"Ray of Sickness",
+				"Blindness/Deafness",
+				"Ray of Enfeeblement",
+				"Phantom Steed",
+				"Vampiric Touch",
+				"Blight",
+				"Death Ward",
+				"Contagion",
+				"Insect Plague"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"False Life",
+							"Ray of Sickness"
+						],
+						"3": [
+							"Blindness/Deafness",
+							"Ray of Enfeeblement"
+						],
+						"5": [
+							"Phantom Steed",
+							"Vampiric Touch"
+						],
+						"7": [
+							"Blight",
+							"Death Ward"
+						],
+						"9": [
+							"Contagion",
+							"Insect Plague"
+						]
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Archfey",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Archfey",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你与一位强大的仙灵实体签订了契约。无论是你被赐予这份契约，还是你欺骗你的主宰给予你一些力量，你都可以借助仙灵的异想天开和可怕力量。只有最古老的仙灵才能形成这样的契约；仙灵法庭的大仙、古老的林中精灵精神和最强大的女巫团。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fey Presence|Alternate Warlock|LLWrc|Archfey|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fey Magic|Alternate Warlock|LLWrc|Archfey|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Fey Magic",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"foundryImg": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+			"subclassShortName": "Archfey",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Archfey feature}",
+				"你的(守护者)将你的魔法注入了费伍德(Feywild)的扭曲力量。你可以选择让你的奥术射线(Eldritch Blast)造成等于1d10 + 你的智力修正的精神伤害。",
+				"在以下术士等级时，你还会学会以下守护者法术。当你获得一个术士等级时，你可以用来自吟游诗人或德鲁伊法术列表中相同等级的附魔或幻术法术来替换你的一个守护者法术。",
+				{
+					"type": "table",
+					"caption": "Archfey Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell faerie fire}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell misty step}, {@spell phantasmal force}"
+						],
+						[
+							"5th",
+							"{@spell fear}, {@spell hypnotic pattern}"
+						],
+						[
+							"7th",
+							"{@spell hallucinatory terrain}, {@spell greater invisibility}"
+						],
+						[
+							"9th",
+							"{@spell mislead}, {@spell seeming}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Fey Presence",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"foundryImg": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+			"subclassShortName": "Archfey",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Archfey feature}",
+				"你可以借助仙灵的魔法来迷惑敌人。作为一个动作，你可以迫使一个在10英尺内并能看到或听到你的生物进行一次智力豁免检定，检定 DC 为你的法术豁免 DC。如果未通过豁免检定，它将被你迷惑或者害怕，持续时间最长为10分钟。如果生物受到任何伤害，或者你或你的盟友攻击该生物或迫使它进行豁免检定，效果会提前结束。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。当你没有剩余使用次数时，你可以消耗一个契约魔法法术位再次使用它。"
+			]
+		},
+		{
+			"name": "Beguiling Blast",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"foundryImg": "icons/creatures/magical/spirit-mischief-fire-ice-blue.webp",
+			"subclassShortName": "Archfey",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Archfey feature}",
+				"你的魔法混淆了你敌人的判断。每当你用《(Eldritch Blast)邪能射线》对生物造成精神伤害时，它在你下一个回合开始前的第一次攻击投掷中有劣势。这个特性对免疫魅惑状态的生物无效。"
+			]
+		},
+		{
+			"name": "Misty Escape",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"foundryImg": "icons/magic/air/fog-gas-smoke-swirling-gray.webp",
+			"subclassShortName": "Archfey",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Archfey feature}",
+				"你可以借助精灵的魔法来躲避危险。当你受到伤害时，你可以使用你的反应变得隐形，并传送到你能看到的60英尺内的一个空位。你会保持隐形，直到你的下一个回合开始，或者直到你进行攻击、施放法术或者强迫进行豁免投掷。",
+				"使用此特性后，您必须完成一次短休或长休才能再次使用它。当您没有使用次数时，您可以消耗一个契约魔法法术位再次使用它。"
+			]
+		},
+		{
+			"name": "Whimsical Defense",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Archfey",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Archfey feature}",
+				"你的魔法中蕴含的精灵力量赋予你对魔法的亲和力。你免疫于被魅惑状态。",
+				"此外，每当一只生物试图迷惑你时，你可以使用你的反应将这个魅惑反弹回去，迫使它进行一次智力豁免检定，检定 DC 为你的法术豁免 DC。如果未通过检定，它会被你迷惑，就像被(精灵本质)所迷惑一样。如果这只生物对被迷惑状态免疫，那么它在未通过检定时会受到等同于你术士等级的精神伤害。"
+			]
+		},
+		{
+			"name": "Terrible Delights",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/magical/humanoid-silhouette-dashing-blue.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Archfey",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Archfey feature}",
+				"你那位精灵 (Fey) 保护者所赋予的病态甜美魔法甚至能淹没最坚定的心灵。你的术士法术和特性，如果施加魅惑状态，将无视对魅惑状态的免疫，但那些生物仍然在抵抗被魅惑时拥有优势。",
+				"此外，当一只生物未能通过你的精灵异能特性的豁免投掷时，你可以选择将其意识投入到一个无拘无束情感的幻境中。然而，你现在必须像专注于一个法术一样专注于这个效果。",
+				"在接下来的10分钟内，这个生物只能看到和听到自己、你，以及虚幻的现实。每当它受到伤害时，这个生物可以重复进行感知豁免投掷，成功时结束这个效应。如果一个生物在这次豁免投掷中成功，它将对这个效应免疫24小时。"
+			]
+		},
+		{
+			"name": "Ancient Wyrm",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Ancient Wyrm",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"作为天生具有魔法力量和极长寿命的存在，伟大的巨龙不仅囤积财富，还囤积仆人和奴隶。无论是善良还是恶毒，仁慈还是可怕，善良还是邪恶，各种类型的古老巨龙的动机都超出了大多数凡人生物的理解。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Spark|Alternate Warlock|LLWrc|Ancient Wyrm|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wyrm Magic|Alternate Warlock|LLWrc|Ancient Wyrm|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Wyrm Magic",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"foundryImg": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+			"subclassShortName": "Ancient Wyrm",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Ancient Wyrm feature}",
+				"你的魔法已经融合了龙族的力量。你可以选择让你的奥术射线造成等同于1d10 + 你的智力修正的龙族火花伤害。",
+				"你还会在以下列出的术士等级学会以下守护者法术。当你获得一个术士等级时，你可以用来自巫师或术士法术清单中相同等级的附魔或唤醒法术替换一个守护者法术。",
+				{
+					"type": "table",
+					"caption": "Ancient Wyrm Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell command}, {@spell burning hands}"
+						],
+						[
+							"5th",
+							"{@spell scorching ray}, {@spell dragon's breath|XGE}"
+						],
+						[
+							"7th",
+							"{@spell dominate beast}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell dominate person}, {@spell cone of cold}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Spark",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"foundryImg": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+			"subclassShortName": "Ancient Wyrm",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Ancient Wyrm feature}",
+				"你的守护者赋予你一缕龙之火，是其力量的一小部分。古代巨龙可以赋予任何元素，但通常会赐予与它们吐息武器相匹配的元素。选择酸性、冰冷、火焰、闪电或毒素作为你的龙之火的伤害类型。一旦选择，便无法更改，并为你带来以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得对该类型伤害的抗性。",
+						"当你施放一项术士法术或零级法术时，你可以选择让它造成你的龙之火伤害，而不是它的普通伤害。",
+						"你学会了说、读和写龙语(Draconic)。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Potency",
+			"source": "LLWrc",
+			"page": 7,
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Ancient Wyrm",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Ancient Wyrm feature}",
+				"你与你的龙之火天赋的亲和力增强了。当你用术士法术或《(Eldritch Blast)邪能冲击》造成龙之火伤害时，你可以将伤害骰子上的1或2视为3。"
+			]
+		},
+		{
+			"name": "Regal Presence",
+			"source": "LLWrc",
+			"page": 7,
+			"foundryImg": "icons/creatures/reptiles/dragon-horned-blue.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Ancient Wyrm",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Ancient Wyrm feature}",
+				"你已经发展出了与你古老的守护者相匹敌的意志力。你对被魅惑和受惊吓状态免疫。",
+				"你还要加上你的智力调整值（至少为+1）"
+			]
+		},
+		{
+			"name": "Draconic Wings",
+			"source": "LLWrc",
+			"page": 7,
+			"foundryImg": "icons/creatures/abilities/wing-batlike-purple-blue.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Ancient Wyrm",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Ancient Wyrm feature}",
+				"作为你回合中的一个奖励动作，你可以显现（或收回）一对坚韧的龙族翅膀，它们会从你的背部生长出来。这些翅膀让你获得60英尺的飞行速度，并摧毁任何不能容纳它们的服装或盔甲。"
+			]
+		},
+		{
+			"name": "Fiend",
+			"source": "LLWrc",
+			"page": 7,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Fiend",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你与来自存在的下位位面的强大恶魔签订了契约。无论是你达成了交易，被胁迫，还是欺骗了你的主人，你现在与一个绝对邪恶的存在联系在一起。只有最强大的恶魔才能担任主人；大恶魔、恶魔领主和特别强大的外域邪恶仆从是最常见的。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dark Blessing|Alternate Warlock|LLWrc|Fiend|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fiendish Magic|Alternate Warlock|LLWrc|Fiend|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Fiendish Magic",
+			"source": "LLWrc",
+			"page": 8,
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-clawed.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Fiend",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2rd-level Fiend feature}",
+				"你的守护者用地狱之火赋予你的魔法。你可以选择让《奥术射线》造成火焰伤害，伤害值为1d10+你的智力调整值，无视对火焰伤害的抗性。",
+				"你还会在以下列出的术士等级学会以下守护者法术。当你获得一个术士等级时，你可以用来自巫师或术士法术清单中该等级的一种感应或死灵法术来替换一个守护者法术。",
+				{
+					"type": "table",
+					"caption": "Fiend Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2rd",
+							"{@spell command}, {@spell hellish rebuke}"
+						],
+						[
+							"3th",
+							"{@spell blindness/deafness}, {@spell Flame Whip|LLWrc}"
+						],
+						[
+							"5th",
+							"{@spell bestow curse}, {@spell fireball}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell cloudkill}, {@spell Immolation|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dark Blessing",
+			"source": "LLWrc",
+			"page": 8,
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-clawed.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Fiend",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Fiend feature}",
+				"你可以从死亡中汲取活力。每当你杀死一个敌对生物时，你可以选择获得临时生命值，数值等同于你的术士等级 + 你的智力修正值。"
+			]
+		},
+		{
+			"name": "Accursed Blast",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/fire/flame-burning-skeleton-explosion.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Fiend",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Fiend feature}",
+				"你的魔法能够深入敌人的灵魂。每当你用《(Eldritch Blast)邪能冲击》对生物造成火焰伤害时，该生物直到你下一个回合开始前都无法恢复生命值。"
+			]
+		},
+		{
+			"name": "Dark Bargain",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/unholy/hand-claw-glow-orange.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Fiend",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Fiend feature}",
+				"你可以牺牲你的生命力来改变命运，让运气更倾向于你。当你进行属性检定或豁免检定时，你可以投掷一个d10，将结果加到你的检定结果上，并减少相同数量的生命值。你必须在进行攻击检定或豁免检定前选择使用这个特性。"
+			]
+		},
+		{
+			"name": "Fiendish Resilience",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-mask.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Fiend",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Fiend feature}",
+				"在每次短休或长休结束时，你可以选择一种伤害类型。你获得对该类型伤害的抗性，直到你下次短休或长休结束为止。来自于魔法或镀银武器的伤害会无视这种抗性。"
+			]
+		},
+		{
+			"name": "Hurl Through Hell",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-winged-roar.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Fiend",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Fiend feature}",
+				"你可以暂时将地狱的恐惧加诸于你的敌人。当你用《奥术射线》对生物造成伤害时，你可以将其传送到你的守护者的地狱位面，在那里经历那个位面的全部恐惧。在你的下一个回合结束时，它会回到先前所占据的空间或最近的空闲空间。如果这个生物不是恶魔，它会受到6d10点心灵伤害，因为它与恐惧抗争。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。"
+			]
+		},
+		{
+			"name": "Great Old One",
+			"source": "LLWrc",
+			"page": 9,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你与一个来自你现实之外、无法理解的实体签订了契约。也许它来自远域或星际之间的虚空。那些上古之神的欲望对凡人来说是无法理解的，你的守护者那庞大的异星智慧若为你所知，将会让你的心智崩溃，让你彻底陷入疯狂。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Awakened Mind|Alternate Warlock|LLWrc|Great Old One|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Aberrant Magic|Alternate Warlock|LLWrc|Great Old One|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Aberrant Magic",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Great Old One feature}",
+				"你的守护者用变异力量污染了你的魔法。每当你要释放一束邪能射线时，你可以选择强迫射线范围内的一只生物进行一次智力豁免检定。如果未通过检定，它会受到等于1d10 + 你的智力调整值的精神伤害。",
+				"在相应等级的术士等级上，你还会学会以下（(Patron)）守护者法术。当你获得一个术士等级时，你可以用来自吟游诗人或巫师法术列表中相同等级的占卜或魅惑法术来替换一个（(Patron)）守护者法术。",
+				{
+					"type": "table",
+					"caption": "Great Old One Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2rd",
+							"{@spell arms of hadar}, {@spell dissonant whispers}"
+						],
+						[
+							"3th",
+							"{@spell detect thoughts}, {@spell mind whip|TCE}"
+						],
+						[
+							"5th",
+							"{@spell clairvoyance}, {@spell hunger of hadar|LLWrc}"
+						],
+						[
+							"7th",
+							"{@spell confusion}, {@spell eldritch tentacles|LLWrc}"
+						],
+						[
+							"9th",
+							"{@spell modify memory}, {@spell telekinesis}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Awakened Mind",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Great Old One feature}",
+				"你可以与你能看到的任何生物进行60英尺内的心灵交流。你不需要分享相同的语言，但目标必须至少会说一种语言才能回应。你一次只能与一个生物进行交流。",
+				"你也获得对精神伤害的抗性。"
+			]
+		},
+		{
+			"name": "Mental Lance",
+			"source": "LLWrc",
+			"page": 10,
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Great Old One feature}",
+				"你的魔法穿透敌人的心灵，播下混乱并麻痹他们的感官。每当你用《(Eldritch Blast)邪能冲击》对生物造成精神伤害时，该生物直到你下个回合开始前都无法作出反应。"
+			]
+		},
+		{
+			"name": "Psionic Ward",
+			"source": "LLWrc",
+			"page": 10,
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Great Old One feature}",
+				"你可以利用你的精神能力来抵御攻击。每当你能看见的生物以攻击骰对你进行攻击时，你可以使用你的反应来让其攻击骰获得劣势。如果触发的攻击未命中，你可以在同一反应中以一束你的奥术射线瞄准攻击者。",
+				"你可以使用这个反应的次数等于你的智力调整值（最少一次），当你完成一次长休后，你恢复所有已用次数。"
+			]
+		},
+		{
+			"name": "Thought Shield",
+			"source": "LLWrc",
+			"page": 10,
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-pentagon-teal.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Great Old One feature}",
+				"你可以在与你的智力修正值相等的次数上使用这个反应（最少一次），当你完成一次长休后，你会恢复所有已用次数。你难以理解的守护者的力量已经扭曲了你的思维。除非你允许，否则你的思维无法被读取，无论是通过心灵感应还是其他任何魔法或灵能手段。",
+				"当你被迫进行一次感知豁免检定时，你可以选择进行一次智力豁免检定(`Wisdom`)。"
+			]
+		},
+		{
+			"name": "Create Thrall",
+			"source": "LLWrc",
+			"page": 10,
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-pendulum.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Great Old One feature}",
+				"你心灵深处扎根的难以理解的力量使你能够控制弱者。作为一个动作，你可以触摸一个无能为力的人类，并将他们变成一名（Thrall）。（Thrall）",
+				"这个萨尔被你迷住了，你可以用心灵感应给它下达命令，只要你们在同一存在平面上。它会尽力遵从你的命令，但不会执行会立即伤害到它的命令。",
+				"这个生物将保持为你的奴隶，直到它死亡，被解咒或类似强度的驱逐法术所瞄准，或者你使用这个特性来创造另一个奴隶。"
+			]
+		},
+		{
+			"name": "Deep One",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你已经与一股远古水域力量\u2014\u2014被称为深渊之神的存在\u2014\u2014结下了羁绊。这些海洋实体经常与绝望的水手、熟练的航海者或海洋学者签订契约。任何具有足够力量的水生生物都可以形成这种契约，但古老的巨型乌贼、原始水元素和海洋半神最为常见。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grasp of the Deep|Alternate Warlock|LLWrc|Deep One|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Scion of the Deep|Alternate Warlock|LLWrc|Deep One|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Deep Magic|Alternate Warlock|LLWrc|Deep One|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Deep Magic",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/tentacles/tentacles-suctioncups-pink.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Deep One feature}",
+				"你的守护者已经赋予你的魔法古老深渊的力量。你可以选择让你的奥术射线造成冰冷伤害，伤害值为1d10 + 你的智力调整值。",
+				"在以下术士等级时，你还会获得以下守护者法术。每当你获得一个术士等级时，你可以用德鲁伊或术士法术列表中相同等级的一项驱护或变化法术替换一个守护者法术。",
+				{
+					"type": "table",
+					"caption": "Deep One Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell create or destroy water}, {@spell thunderwave}"
+						],
+						[
+							"3rd",
+							"{@spell gust of wind}, {@spell shatter}"
+						],
+						[
+							"5th",
+							"{@spell tidal wave|XGE}, {@spell sleet storm}"
+						],
+						[
+							"7th",
+							"{@spell control water}, {@spell eldritch tentacles|LLWrc}"
+						],
+						[
+							"9th",
+							"{@spell cone of cold}, {@spell maelstrom|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Grasp of the Deep",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/tentacles/tentacles-suctioncups-pink.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Deep One feature}",
+				"你可以召唤你的守护者的众多触须之一。作为一个奖励动作，你可以在你能看到的30英尺内的一个空地上召唤一个幽灵触手。",
+				"作为一个奖励动作，包括用来召唤它的奖励动作，在30英尺内移动这根触手，并用它对距离内10英尺的生物进行近战法术攻击。命中时，生物受到1d8点冷伤害，如果它是大型或更小，则被触手抓住。",
+				"被抓住的生物可以使用其动作，对抗你的法术豁免 DC 进行一次力量（运动）或敏捷（体操）检定，成功则逃脱。",
+				"这个幽灵触手会持续1分钟，但如果你召唤另一个幽灵触手，它会消失。你可以使用这个特性的次数等于你的智力调整值（最少1次），当你完成一次长休后，你会恢复所有已用次数。"
+			]
+		},
+		{
+			"name": "Scion of the Deep",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/fish/deepsea-creature-glowing-blue.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Deep One feature}",
+				"你的契约改变了你的生理特征。你获得{@optfeature Gift of the Deep Ones}邪能召唤，并且不计入你已知召唤的总数。如果你已经知道这个召唤，你可以学习另一个你选择的召唤。",
+				"无论如何，在获得一个术士等级时，你不能用另一个奥术召唤替换{@optfeature Gift of the Deep Ones}。"
+			]
+		},
+		{
+			"name": "Oceanic Grasp",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/tentacles/tentacles-eyes-poisoned-green.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Deep One feature}",
+				"你的海洋魔法让你的敌人冻结。每当你用奥术射线、触手攻击，或者1级或更高级别的术士法术对生物造成冰冷伤害时，它们的速度会减少10英尺，直到你的下一个回合开始。"
+			]
+		},
+		{
+			"name": "Thalassic Speech",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/fish/fish-fangtooth-skeletal-green.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Deep One feature}",
+				"你与深渊的邪能联系赋予了你神秘的能力。你获得对冷伤害的抗性，当你完全浸泡在水中时，任何其他完全浸泡在水中的生物都能理解你的言语，你也能理解它的言语，就好像你们共享一种语言。"
+			]
+		},
+		{
+			"name": "Greater Tentacles",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/tentacles/tentacle-eyes-yellow-pink.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Deep One feature}",
+				"你能够从海洋深处召唤更多你的守护者的存在。当你施放{@spell eldritch tentacles|LLWrc}时，除非你结束它或者你失去意识，否则无法打断你的集中力。",
+				"另外，任何通过你的深渊之握特性召唤出的触手都会获得以下额外好处：",
+				{
+					"type": "list",
+					"items": [
+						"他们可以与巨大或更小的生物搏斗。",
+						"他们在命中时额外造成1d8点冰冷伤害。",
+						"任何被触手抓住的生物在抵抗你术士法术的豁免投掷时都有劣势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Unleash the Depths",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/creatures/fish/squid-kraken-orange.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Deep One",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Deep One feature}",
+				"你可以让你的守护者的全部力量浮现在表面，即便只是短暂的一刻。作为一个动作，你可以召唤五只幽灵触手，每个触手都在你能看到的30英尺范围内的一个空闲空间中。这些触手使用与《深渊之握》中描述的相同规则。",
+				"作为一个动作，包括你用来召唤(`Tentacles`)触手的动作，你可以对距离你10英尺内的生物进行一次近战法术攻击。如果一个目标被多个(`Tentacle`)触手抓住，它将被(`Tentacles`)触手束缚。被束缚的生物可以通过一次成功的检定从所有(`Tentacles`)触手中逃脱。",
+				"每次你使用这个特性后，你需要完成一次长休才能再次使用它。当你没有使用次数时，你可以消耗一个你的契约魔法法术位来再次使用它。"
+			]
+		},
+		{
+			"name": "Darklord",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Darklord",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你已经与暗影界的一个邪恶统治者签订了契约。这些强大的存在被称为黑暗领主，他们通常被囚禁在恐惧领域中，只能通过信任的仆从影响外界。这些术士被赋予了黑暗领主一部分黑暗力量，变身为无情的战士，运用诅咒和阴影的邪恶力量对抗敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shadow Warrior|Alternate Warlock|LLWrc|Darklord|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fell Curse|Alternate Warlock|LLWrc|Darklord|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Darklord Magic|Alternate Warlock|LLWrc|Darklord|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Darklord Magic",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Darklord",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Darklord feature}",
+				"你的(守护者)将你的魔法注入了暗影界的黑暗力量。你可以选择让你的(奥术射线)造成等于1d10 + 你的智力修正的死灵伤害。",
+				"在以下术士等级时，你还会学会以下（(Patron)）守护者法术。当你获得一个术士等级时，你可以用来自巫师或术士法术列表中相同等级的死灵术或幻术法术来替换你的一个（(Patron)）守护者法术。",
+				{
+					"type": "table",
+					"caption": "Darklord Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell hex}, {@spell inflict wounds}"
+						],
+						[
+							"3rd",
+							"{@spell silence}, {@spell eldritch tentacles|LLWrc}"
+						],
+						[
+							"5th",
+							"{@spell fear}, {@spell haste}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement}, {@spell phantasmal killer}"
+						],
+						[
+							"9th",
+							"{@spell dream}, {@spell destructive wave}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Warrior",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Darklord",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Darklord feature}",
+				"你将自己缠绕在防御性的阴影中。你获得了《暗影铠甲(Armor of Shadows)》奥术召唤，但它不会计入你已知召唤的数量。如果你已经知道这个召唤，你可以学习另一个你选择的召唤。",
+				"无论如何，当你获得一级术士（Warlock）时，你不能用另一个邪能召唤（Eldritch Invocation）替换影之铠甲（Armor of Shadows）。"
+			]
+		},
+		{
+			"name": "Fell Curse",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/unholy/projectile-spear-glow-pink.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Darklord",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你可以将你的神秘魔法与你的守护者的邪恶力量融合。你知道{@spell hex}这个法术，当你获得术士等级时，不能用其他法术替换它。对于你所诅咒的生物，你获得以下额外好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你施放{@spell hex}时，除非你自愿结束它或者你失去意识，否则无法打断你的专注。",
+						"最后，在每次长休之间，你可以以1级施放《咒术》(hex)法术，而不消耗契约魔法法术位。"
+					]
+				},
+				"当你对一只生物施放施放诅咒时，它不需要你集中注意力，但你一次只能让一只生物受到影响。再次施放会结束之前的效果。",
+				"最后，在每次长休之间，你可以以1级施放《咒术》(hex)法术，而不消耗契约魔法法术位。"
+			]
+		},
+		{
+			"name": "Living Shadow",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-power.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Darklord",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"entries": [
+				"你可以让你自己的阴影动起来来困扰你的敌人。作为一个动作，你可以消耗一个契约魔法法术位来让你的阴影动起来。你的阴影变得活灵活现，并使用以下更改后的阴影属性块：",
+				{
+					"type": "list",
+					"items": [
+						"它的最大生命值增加了你的术士等级。",
+						"它在战斗中在你的回合内起作用，但除非你使用一个额外动作命令它使用其属性块中的动作或其他动作，否则它只能采取闪避动作。",
+						"它使用你的术士法术攻击修正值进行攻击检定。",
+						"在你的空间中，它可以出现为你的正常阴影。"
+					]
+				},
+				"此外，当你的生命之影在30英尺内时，你可以使用你的动作与其融合，并获得临时生命值，数值等同于你的术士等级，同时摧毁它。当你的影子被摧毁时，它会以普通的影子形式返回到你身边。"
+			]
+		},
+		{
+			"name": "Dread Mantle",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Darklord",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Darklord feature}",
+				"你对暗影界黑暗魔法的掌握使你免受死亡和腐朽的影响。你在死亡豁免投掷时获得优势，并且对死灵伤害获得抗性。"
+			]
+		},
+		{
+			"name": "Right Hand of Dread",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/unholy/hand-claw-fog-green.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Darklord",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你发挥契约的黑暗力量到了极致。你对被你所诅咒的生物获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"每当你受到伤害时，你可以减少伤害值，减少值为你的智力调整值（最少为1）(Intelligence)。",
+						"每当它强迫你进行豁免投掷时，你可以将你的智力调整值加到你的投掷结果上。",
+						"你的暗影对它的攻击投掷有优势。(Shadow)"
+					]
+				},
+				"最终，{@spell hex} 不再需要你的专注，但你一次只能激活一个魔咒法术。"
+			]
+		},
+		{
+			"name": "Exalted",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Exalted",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你已经与一个强大的天界生灵签订了契约。无论是你的主人寻求你作为盟友，还是你证明了自己的价值，你现在与一个绝对善良的存在绑定在一起。只有最强大的天堂使者可以担任主人；大天使、众神的后裔和善良的强大半神最为常见。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Celestial Light|Alternate Warlock|LLWrc|Exalted|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Exalted Magic|Alternate Warlock|LLWrc|Exalted|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Exalted Magic",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/life/cross-worn-green.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Exalted",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Exalted feature}",
+				"你的守护者已经赋予你的魔法天堂般的神圣力量。你可以选择让《(Eldritch Blast)邪能冲击》造成等同于1d10 + 你的智力修正值的辐射伤害。",
+				"在以下术士等级时，你还会学会以下（(Patron)）法术。当你获得一个术士等级时，你可以用来自牧师法术列表中相同等级的一种驱护、占卜或唤醒法术来替换你的（(Patron)）法术。",
+				{
+					"type": "table",
+					"caption": "Exalted Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell cure wounds}, {@spell guiding bolt}"
+						],
+						[
+							"3rd",
+							"{@spell flaming sphere}, {@spell lesser restoration}"
+						],
+						[
+							"5th",
+							"{@spell daylight}, {@spell revivify}"
+						],
+						[
+							"7th",
+							"{@spell guardian of faith}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell flame strike}, {@spell greater restoration}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Celestial Light",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/life/cross-worn-green.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Exalted",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Exalted feature}",
+				"你可以借助契约的神圣力量来治愈他人。当你释放一束邪能冲击的光束时，你可以选择将一束治疗之光照射到你能看到的范围内的一名生物身上，为目标恢复1d10点生命值。",
+				"你可以这样做的次数等于1 + 你的术士等级，当你完成一次长休后，你会恢复所有使用次数。"
+			]
+		},
+		{
+			"name": "Radiant Conduit",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/light/explosion-star-glow-yellow.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Exalted",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"entries": [
+				"你对你的契约的掌控使你能更好地引导其神圣力量。每回合一次，当你使用奇术射线(Eldritch Blast)造成辐射伤害或使用天界之光(Celestial Light)恢复生命值时，你可以消耗多次天界之光（最多等于你的智力调整值）来增加每次消耗的辐射伤害或恢复的生命值1d10。",
+				"最后，在你的回合中作为一个奖励动作，你可以消耗一个契约魔法法术位来恢复与你的契约魔法法术位等级相同的天界之光使用次数。"
+			]
+		},
+		{
+			"name": "Celestial Fortitude",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/holy/barrier-shield-winged-blue.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Exalted",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Exalted feature}",
+				"你的神圣存在使你和你的盟友更加坚固。每当你完成一次短暂休息或长时间休息时，你会获得临时生命值，数值等同于你的术士等级 + 你的智力修正。你还可以选择最多五个与你一起完成短暂休息或长时间休息的生物，使它们也获得临时生命值，数值等同于你的术士等级的一半 + 你的智力修正。"
+			]
+		},
+		{
+			"name": "Blinding Defiance",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/light/explosion-star-glow-silhouette.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Exalted",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你的契约中注入了天堂的力量，使你能够抵抗死亡。当你进行一次死亡豁免投掷时，你可以选择立即以一半的最大生命值回到生命中，站起来，并释放一股耀眼的光芒。",
+				"当你这样做时，你选择的生物必须在30英尺内进行一次对抗你的法术豁免 DC 的体质豁免。未通过豁免的生物会受到 8d6 辐射伤害，并且直到你当前回合结束前都会被致盲。通过豁免的生物会受到一半的辐射伤害，并且不会被致盲。",
+				"使用此特性复活后，必须完成一次长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Noble Genie",
+			"source": "LLWrc",
+			"page": 6,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Noble Genie",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你已经与一位贵族精灵结成了契约，他是元素位面的统治者之一。只有来自Dao（达欧）、Djinn（巨灵）、Efreeti（伊弗利提）和Marid（马里德）中最强大的精灵才能达到贵族精灵所拥有的强大力量。作为元素力量的掌控者，这些实体拥有可以与次级神祇媲美的魔法能力，并且能够通过他们所赐予的愿望改变现实。",
+				"从下表中选择你的贵族精灵种类。每个精灵都与一个元素和伤害类型相关联：\n\n1. Djinn (风) - Thunder (%num%)\n2. Efreet (火) - Fire (%num%)\n3. Marid (水) - Cold (%num%)\n4. Dao (土) - Bludgeoning (%num%)",
+				{
+					"type": "table",
+					"caption": "Genie Kind",
+					"colLabels": [
+						"Noble Genie",
+						"Element",
+						"Damage"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5",
+						"col-5"
+					],
+					"rows": [
+						[
+							"Dao",
+							"地球",
+							"重击 (Bludgeoning)"
+						],
+						[
+							"巨灵(Djinn)",
+							"Air",
+							"雷霆"
+						],
+						[
+							"伊弗利提(Efreeti)",
+							"Fire",
+							"Fire"
+						],
+						[
+							"玛瑞德(Marid)",
+							"水",
+							"Cold"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Genie's Vessel|Alternate Warlock|LLWrc|Noble Genie|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Noble Magic|Alternate Warlock|LLWrc|Noble Genie|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Noble Magic",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/equipment/finger/ring-cabochon-squared-gold-red.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Noble Genie",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Noble Genie feature}",
+				"你从下面的表格中获得与你掌握的四大元素之一对应的灵性法术。当你在这个职业中获得一个等级时，你可以用另一个相同等级的法术替换这个特性中的一个法术，这个法术来自任何只造成其元素伤害类型的法术清单。",
+				"或者，您可以根据您的DM的判断，用另一个类似元素主题的法术来替换这个法术。",
+				{
+					"type": "table",
+					"caption": "Noble Genie Spells",
+					"colLabels": [
+						"Warlock Level",
+						"Genie Spells",
+						"Dao Spells",
+						"Djinn Spells",
+						"Efreeti Spells",
+						"Marid Spells"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-2-2",
+						"col-2-2",
+						"col-2-2",
+						"col-2-2",
+						"col-2-2"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell sleep}",
+							"{@spell sanctuary}",
+							"{@spell thunderwave}",
+							"{@spell burning hands}",
+							"{@spell fog cloud}"
+						],
+						[
+							"3rd",
+							"{@spell enlarge/reduce}",
+							"{@spell spike growth}",
+							"{@spell gust of wind}",
+							"{@spell scorching ray}",
+							"{@spell misty step}"
+						],
+						[
+							"5th",
+							"{@spell fly}",
+							"{@spell meld into stone}",
+							"{@spell gaseous form}",
+							"{@spell fireball}",
+							"{@spell tidal wave|XGE}"
+						],
+						[
+							"7th",
+							"{@spell polymorph}",
+							"{@spell stone shape}",
+							"{@spell greater invisibility}",
+							"{@spell fire shield}",
+							"{@spell watery sphere|XGE}"
+						],
+						[
+							"9th",
+							"{@spell bigby's hand}",
+							"{@spell wall of stone}",
+							"{@spell seeming}",
+							"{@spell flame strike}",
+							"{@spell cone of cold}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Genie's Vessel",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/equipment/finger/ring-cabochon-squared-gold-red.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Noble Genie",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Noble Genie feature}",
+				"你的(守护者)已经赐予你一个神秘的容器作为你契约的象征。这个容器是一个微小的物体，看起来像你选择的一个容器。你的容器可以作为你的奥术召唤之一的饰品，并且如果丢失了，它会在你下一个短暂休息或长休息结束时重新出现在你身边。",
+				"这个容器内有一个体积为20英尺立方的超维空间。作为一个动作，你可以通过将一个中等大小或更小的物体插入这个空间，将其放入你的容器开口中。",
+				"当你持有你的载体时，你可以使用一个动作进入它。你可以在里面停留的时间长度为你术士等级的一半小时，但你也可以使用一个动作提前离开，出现在离它最近的未被占据的空间中。"
+			]
+		},
+		{
+			"name": "Ethereal Nature",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Noble Genie",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Noble Genie feature}",
+				"你的元素魔法开始在身体上产生变化。你获得对你的贵族精灵的伤害类型的抗性。",
+				"此外，每回合一次，当你用你的贵族精灵的伤害类型对使用《(Eldritch Blast)邪能冲击》的生物造成伤害时，你可以让它对你的法术豁免 DC 进行一次魅力豁免。未通过豁免检定的话，你会立即与目标交换位置。"
+			]
+		},
+		{
+			"name": "Mystical Sanctuary",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/environment/settlement/tent.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Noble Genie",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Noble Genie feature}",
+				"当你进入你的载具时，你可以将你能看到的最多五个愿意的生物带入到你的载具中。在你的载具内的任何生物只需休息10分钟，而不是1小时，就能获得短暂休息的益处。",
+				"作为一个动作，你可以将一个或多个生物从（Vessel）中驱逐出去。其他生物在（Vessel）中最多只能待上1小时，超过这个时间他们会立刻被驱逐出去。"
+			]
+		},
+		{
+			"name": "Limited Wish",
+			"source": "LLWrc",
+			"page": 6,
+			"foundryImg": "icons/commodities/treasure/brass-lamp-yellow.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Noble Genie",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Noble Genie feature}",
+				"你可以发挥契约的全部力量，以微小的方式改变现实。作为一个动作，你可以使用你的载体施放一个你选择的来自任何职业法术列表中6级或更低级别的法术。它必须有一个行动或奖励动作的施法时间，但是你的载体的魔法会取代任何材料组件。",
+				"一旦你这样做，直到你进行下一个长休为止，你将无法进入你的载具内的超维空间，因为它的力量已经耗尽。使用此特性后，你必须完成三次长休，才能再次使用它。"
+			]
+		},
+		{
+			"name": "Undying",
+			"source": "LLWrc",
+			"page": 9,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"你与一个曾经是凡人的生物签订了契约，他找到了一种欺骗死神的方法。只有最强大的不死生物才能成为不朽守护者：强大的巫妖、可怕的吸血鬼领主、死亡骑士和邪恶的不死之灵。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Necrotic Husk|Alternate Warlock|LLWrc|Undying|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Touch of the Grave|Alternate Warlock|LLWrc|Undying|LLWrc|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Undying Magic|Alternate Warlock|LLWrc|Undying|LLWrc|2"
+				}
+			]
+		},
+		{
+			"name": "Undying Magic",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/hand-withered-gray.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Undying feature}",
+				"你的(巫师)Patron为你的魔法注入了不死力量。每当你要释放一束Eldritch Blast时，你可以选择让范围内的一只生物进行一次魅力豁免检定。如果未通过检定，该生物受到等同于1d8 + 你的智力调整值的死灵伤害。",
+				"在以下术士等级时，你还会学会以下（(Patron)）的法术。当你获得一个术士等级时，你可以用巫师或术士法术清单中相同等级的死灵术或变化术法术替换一个（(Patron)）法术。",
+				{
+					"type": "table",
+					"caption": "Undying Spells",
+					"colLabels": [
+						"Alternate Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell false life}, {@spell ray of sickness}"
+						],
+						[
+							"3th",
+							"{@spell blindness/deafness}, {@spell ray of enfeeblement}"
+						],
+						[
+							"5th",
+							"{@spell phantom steed}, {@spell vampiric touch}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell death ward}"
+						],
+						[
+							"9th",
+							"{@spell contagion}, {@spell insect plague}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Touch of the Grave",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/hand-withered-gray.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Undying feature}",
+				"你由誓约注入的魔法使你在其他不死生物眼中看起来像他们中的一员。与你术士等级相等或更低的不死生物对你不会表现敌意，直到你说或做出对他们具有敌意的行为，比如攻击他们、强迫进行豁免投掷或威胁他们。",
+				"例如，你可以在一群僵尸中间行走，直到你先攻击它们，它们才会反击。"
+			]
+		},
+		{
+			"name": "Necrotic Husk",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/skull-flames-white-blue.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 2,
+			"entries": [
+				"作为一个奖励动作，你可以将你的肉体注入不死之力，腐烂成为你活体的死灵躯壳。在转化期间，你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"当你进行变形时，你获得临时生命值，数值等同于你的术士等级 + 你的智力修正值。",
+						"你的外貌变得令人恐惧。",
+						"你对受到惊恐状态免疫。(Immune to the frightened condition)",
+						"你对非魔法和非镀银武器造成的钝击、穿刺和斩击伤害具有抗性。"
+					]
+				},
+				"这种变形持续1分钟，但如果你使用一个奖励动作恢复到你的正常形态，它会提前结束。一旦你以这种方式变形，你必须在再次变形之前完成一个短暂或长时间休息。当你没有剩余使用次数时，你可以消耗一个契约魔法法术位再次变形。"
+			]
+		},
+		{
+			"name": "Lifedrinker",
+			"source": "LLWrc",
+			"page": 10,
+			"className": "Alternate Warlock",
+			"foundryImg": "icons/magic/death/mouth-bite-fangs-vampire.webp",
+			"classSource": "LLWrc",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Undying feature}",
+				"你所掌握的不自然力量使你能够吸取他人的生命。每个回合一次，当你用你的《(Eldritch Blast)邪能冲击》对一个非不死生物造成死灵伤害时，你会获得临时生命值，数值等同于造成伤害的一半。",
+				"如果你处于你的死灵外壳形态，你可以将这些临时生命值加到你已有的任何临时生命值上。"
+			]
+		},
+		{
+			"name": "Unsettling Visage",
+			"source": "LLWrc",
+			"page": 10,
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"foundryImg": "icons/magic/death/projectile-skull-fire-orange.webp",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Undying feature}",
+				"当你以你的死灵外壳形态出现时，强迫一个在30英尺内能看见你的生物进行豁免投掷以抵抗恐惧时，它的掷骰有劣势。"
+			]
+		},
+		{
+			"name": "Unnatural Resilience",
+			"source": "LLWrc",
+			"page": 10,
+			"className": "Alternate Warlock",
+			"foundryImg": "icons/magic/death/hand-dirt-undead-zombie.webp",
+			"classSource": "LLWrc",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Undying feature}",
+				"你的凡人生命被不自然的魔法加固。你对死灵伤害具有抗性，当你处于(`Necrotic Husk`)形态时，你对死灵伤害免疫。",
+				"此外，每当你拥有临时生命值时，你对来自非魔法和非镀银武器的钝击、刺击和斩击伤害具有抗性。"
+			]
+		},
+		{
+			"name": "Unending Life",
+			"source": "LLWrc",
+			"page": 10,
+			"foundryImg": "icons/magic/death/undead-skeleton-lich-armor.webp",
+			"className": "Alternate Warlock",
+			"classSource": "LLWrc",
+			"subclassShortName": "Undying",
+			"subclassSource": "LLWrc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Undying feature}",
+				"你所掌握的力量使你几乎不可能被杀死。你可以施放死亡守卫法术，只能以自己为目标，而无需消耗契约魔法法术位。一旦以这种方式施放了死亡守卫，你必须完成一次长休才能再次这样做。",
+				"此外，如果你的回合开始时剩余的生命值少于一半，但至少有1点生命值，你将恢复等于你的智力调整值的生命值（最少为1点）。"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Otherworldly Grasp",
+			"source": "LLWrc",
+			"page": 14,
+			"foundryImg": "icons/magic/unholy/hand-light-green.webp",
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "an empty hand"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你引导死灵的精神力量到你的手中，使其变成了一个枯萎的幽灵。对你可触及范围内的生物进行一次近战法术攻击。命中后，生物受到{@dice 1d8}点死灵伤害，你获得{@dice 1d4}点持续专注期间的临时生命值。",
+				"当你达到5级({@dice 2d8})、11级({@dice 3d8})和17级({@dice 4d8})时，此法术的伤害和你获得的临时生命值分别增加了{@dice 1d8}和{@dice 1d4}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "necrotic damage",
+					"scaling": {
+						"1": "1d8",
+						"5": "2d8",
+						"11": "3d8",
+						"17": "4d8"
+					}
+				},
+				{
+					"label": "temporary hit points",
+					"scaling": {
+						"1": "1d4",
+						"5": "2d4",
+						"11": "3d4",
+						"17": "4d4"
+					}
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"THP"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Ghastly Flight",
+			"source": "LLWrc",
+			"page": 14,
+			"foundryImg": "icons/magic/death/undead-ghost-scream-teal.webp",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the powdered remains of a creature"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你释放出一个邪恶的灵魂，它从你身上飞出，沿着你选择的方向形成一条长60英尺、宽5英尺的线，然后消失不见。线上的每个生物都必须进行一次体质豁免检定。未通过检定的生物会受到{@dice 2d8}点死灵伤害，并且直到你的下一个回合开始前都无法恢复生命值。通过检定的生物只会受到一半伤害，并且可以正常恢复生命值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害值会每超过1级的位数增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Witch Bolt (Alternate)",
+			"level": 1,
+			"school": "C",
+			"foundryImg": "icons/magic/lightning/bolt-strike-sparks-purple.webp",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一道充满电能的光束射向范围内的生物，形成一道持续的闪电弧线连接你和目标。对该生物进行远程法术攻击。命中后，目标受到{@damage 1d12} 闪电伤害，而在此法术持续期间，你和目标都不能相距超过30英尺。",
+				"你可以在每个后续回合使用一个动作，对生物造成额外 {@damage 1d12} 闪电伤害。生物可以尝试通过使用动作对抗你的法术豁免 DC 的力量检定来移动超出法术的范围。如果另一个生物试图将此法术的目标移出法术范围，它可以使用动作对抗你的法术豁免 DC 的力量检定。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"source": "LLWrc",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of wood struck by lightning"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，初始和随后的伤害都会增加{@scaledamage 1d12|1-9|1d12}，每个超过1级的法术位级别。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Flame Whip",
+			"level": 2,
+			"school": "V",
+			"foundryImg": "icons/magic/fire/beam-strike-whip-red.webp",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你可以在一只空手中召唤一条持续时间内的纯火焰鞭，而不是进行攻击。如果你放开鞭子，它会消失，但你可以在不消耗法术槽的情况下再次召唤这个火焰鞭，代替另一次攻击。",
+				"每当你可以进行一次攻击时，你可以选择使用你的火焰鞭进行一次近战法术攻击，攻击范围为10英尺内的一个目标，该目标必须是你能看见的。命中后，目标受到等于{@dice 1d10} + 你的法术修正值的火焰伤害，如果目标是大型或更小，你可以立即用鞭子将其制服。",
+				"当鞭子与一名生物搏斗时，你不能使用它进行攻击，但一名{@condition grappled}生物在回合开始时会受到{@damage 1d10}火焰伤害，并可以使用动作进行力量检定，检定值需超过你的法术豁免 DC 才能成功逃脱。",
+				"当你手持着，你的火焰鞭在10英尺半径内散发明亮光芒，再额外照亮10英尺的范围。"
+			],
+			"source": "LLWrc",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a charred wooden hilt"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，每超过2级的两个法术位级别，所造成的火焰伤害都会增加{@scaledamage 1d10|2,4,6,8|1d10}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "Hunger of Hadar (Alternate)",
+			"level": 3,
+			"school": "C",
+			"foundryImg": "icons/magic/nature/root-vine-thorned-fire-purple.webp",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你打开了通往星际黑暗之间的门户，这是一个充斥着未知恐怖的地区。一个直径20英尺的黑暗和刺骨寒冷的球体出现了，以范围内的一个点为中心，持续一段时间。这个虚空充满了轻声细语和啜食声，可以在30英尺外被听到。没有光线，无论是魔法还是其他方式，可以照亮这个区域，而区域内的生物都是{@condition blinded}。",
+				"虚空在空间结构中制造了一处扭曲，这个区域成为了艰难地形。任何在该区域开始回合的生物会受到{@damage 2d6}的冷伤害。任何在该区域结束回合的生物必须通过敏捷豁免检定，否则会受到{@damage 2d6}的酸伤害，因为乳白色的、来自异世界的触手摩擦着它。"
+			],
+			"source": "LLWrc",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "pickled octopus tentacle"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，法术的半径增加5英尺，冷冻和酸性伤害分别每个插槽等级高于3级增加{@scaledamage 1d6|3-9|1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Eldritch Tentacles",
+			"level": 4,
+			"school": "C",
+			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在你能看到的范围内，一片外星生物触须填满了一个20英尺的正方形区域。在持续时间内，这个区域成为艰难地形。",
+				"当一个生物在一个回合内第一次进入这个区域或者在那里开始它的回合时，它必须成功进行一次敏捷豁免才能避免受到{@damage 3d6} 钝击伤害，并且会被触手缠绕直到法术结束。任何在该区域开始回合并被触手缠绕的生物，在其回合开始时会受到{@damage 3d6} 钝击伤害。",
+				"一个被触手缠绕的生物{@condition restrained}可以使用其动作，对抗你的法术豁免 DC 进行一次力量或敏捷检定（由其选择）。若成功，它将从触手中解脱。"
+			],
+			"source": "LLWrc",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of tentacle from a giant squid"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放此法术时，此法术造成的两次伤害都会每超过4级的法术位等级增加{@scaledamage 1d6|4-9|1d6}。"
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"areaTags": [
+				"Q"
+			]
+		},
+		{
+			"name": "Spiritual Sundering",
+			"source": "LLWrc",
+			"page": 14,
+			"level": 5,
+			"foundryImg": "icons/magic/control/silhouette-hold-beam-blue.webp",
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在你选择的范围内以一个点为中心的20英尺半径球体内的生物，它们的灵魂受到撕裂，必须进行一次魅力豁免检定。如果未通过检定，它们会受到{@dice 8d6}点死灵伤害，并在接下来的一分钟内，它们的自我意识变得模糊，对其进行的任何智力、感知或魅力豁免检定会减少{@dice 1d6}点。如果通过检定，它们只受到一半伤害并且不会受到任何豁免检定的惩罚。",
+				"目标可以在每个回合结束时进行一次魅力豁免检定，若成功则效果结束。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"S"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Armor of Shadows",
+			"source": "LLWrc",
+			"page": 8,
+			"foundryImg": "icons/equipment/chest/shirt-collared-pink.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"作为一个动作，你可以施展（或解除）由活影制成的护甲。只要你没有穿戴盔甲或盾牌，这些影子会让你的护甲等级达到10 + 你的智力修正 + 你的敏捷修正。"
+			]
+		},
+		{
+			"name": "Aspect of the Moon",
+			"source": "LLWrc",
+			"page": 8,
+			"foundryImg": "icons/magic/nature/moon-crescent.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"你不再需要睡觉，也无法被任何方式强迫入睡。为了获得长休息的益处，你可以花费全部8小时进行轻度活动，比如守夜。"
+			]
+		},
+		{
+			"name": "Beguiling Influence",
+			"source": "LLWrc",
+			"page": 8,
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"你被注入了一种来自异世界的魅力和存在。每当你进行一个魅力（欺骗）或魅力（劝说）检定时，你获得一个等同于你的智力调整值的奖励加值（最低为+1）。"
+			]
+		},
+		{
+			"name": "Devil's Sight",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/eyes/lizard-single-slit-pink.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"你可以通过恶魔的地狱魔法增强你的视力。你可以在120英尺的范围内正常看见昏暗光线和黑暗，无论是魔法的还是非魔法的。"
+			]
+		},
+		{
+			"name": "Eldritch Sight",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"作为一个动作，你可以唤醒你的感官，看到你周围30英尺内的魔法存在。在10分钟内，你可以看到在这个半径内任何可见生物或物体周围的微弱光环，如果有的话，立即了解它的魔法学派。这种视觉会被1英尺厚的石头、1英寸厚的金属、一张薄铅片或3英尺厚的木头或泥土阻挡。你必须像专注于一个法术一样集中精力在这种感知上。"
+			]
+		},
+		{
+			"name": "Eyes of the Rune Keeper",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/eyes/lizard-single-slit-blue.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"你眼睛的虹膜被发光的长者符文环绕着。你可以阅读和理解任何书面文字、符号或文字，就像它们是用你的母语写的一样。"
+			]
+		},
+		{
+			"name": "Gaze of Two Minds",
+			"source": "LLWrc",
+			"foundryImg": "icons/magic/perception/hand-eye-fire-blue.webp",
+			"page": 9,
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"作为一个动作，你可以触摸一个愿意的人形生物，并在你的下一个回合结束前通过它的感官感知。在此期间，你可以获得目标拥有的所有特殊感官，但你会对自己的周围环境失明和失聪。",
+				"当你们处于相同的存在平面时，你可以使用你的动作来延长这种连接一个回合。"
+			]
+		},
+		{
+			"name": "Gift of the Deep Ones",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/fish/deepsea-creature-glowing-blue.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"你显现出水生特征。你可以在水下呼吸，并且你获得一个与你步行速度相等的游泳速度。",
+				"在5级时，你学会了水下呼吸法术，你可以每次长休时施放一次，而不消耗法术位。"
+			]
+		},
+		{
+			"name": "Otherworldly Vigor",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/skull-humanoid-worn-teal.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"你用一种死灵法术模拟的生命力来增强自己。作为一个奖励动作，你可以给自己提供临时生命值，数值等同于你的智力调整值（最少为1）。（Intelligence）"
+			]
+		},
+		{
+			"name": "Mask of Many Faces",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/commodities/treasure/mask-bone-white.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"奇怪而邪恶的魔法使你的形态多变。作为一个动作，你可以改变你的外貌和声音，使其与你以前见过的生物相匹配，只要新的外表有相同的四肢排列。你决定具体细节，包括你的种族、肤色、性别、身高、体重和头发长度，但你不能改变尺寸。变形不会影响你的服装或游戏统计数据。"
+			]
+		},
+		{
+			"name": "Misty Visions",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"作为一个动作，你可以在60英尺内的某个地方召唤一个不大于15英尺立方体的虚幻图像，可以是物体、生物或其他可见现象。这个图像必须是纯视觉的；不能伴随声音、气味或其他感官效果。这个图像持续时间最长为10分钟。",
+				"作为一个动作，你可以让这个虚幻的影像移动到60英尺内的另一个位置。当你这么做时，你可以选择让它以对这个影像来说自然的方式移动。",
+				"一个生物如果在智力（调查）检定中成功超过你的法术豁免 DC，就能看穿这个幻术。",
+				"施放第二个幻象会消除先前的任何幻象。"
+			]
+		},
+		{
+			"name": "Sylvan Speech",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/nature/tree-animated-smile.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"entries": [
+				"你学会了说森语，当用森语交流时，你可以理解并口头交流与野兽。许多野兽的知识和意识受到它们的智力限制，但至少它们可以向你提供关于附近地点和怪物的信息，包括它们能感知到或在过去一天中感知到的任何事物。",
+				"在7级时，你可以用精灵语与植物交流，就好像你受到了与植物交谈的效果（Speak with Plants）一样。"
+			]
+		},
+		{
+			"name": "Cloak of Decay",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/blood-corruption-vomit-red.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"作为一个奖励动作，你可以让自己被一群地狱苍蝇包围，从你身上延伸出一个5英尺半径的范围。你必须像集中在一个法术上那样集中精力维持这个效果。",
+				"苍蝇使你在魅力（恫吓）检定中获得优势，但在所有其他魅力检定中获得劣势。此外，开始它们的回合时，处于虫群内的生物会受到等同于你的智力调整值的死灵伤害（最低为0）。"
+			]
+		},
+		{
+			"name": "Eldritch Spear",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/weapons/ammunition/arrow-broadhead-glowing-orange.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"每当你使用(艾德里奇射线)Eldritch Blast或施放需要进行远程法术攻击骰的法术时，射程加倍。"
+			]
+		},
+		{
+			"name": "Grasp of Hadar",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/unholy/hand-claw-fire-blue.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"当你用《(Eldritch Blast)邪能冲击》对一个大型或更小的生物造成伤害时，你可以将其沿着一条线拉近你最多10英尺。",
+				"这个祈愿可以在11级时召唤巨大生物。"
+			]
+		},
+		{
+			"name": "Lance of Lethargy",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/unholy/projectile-missile-green.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"当你用奥术射线(Eldritch Blast)伤害一个生物时，你可以将其速度减少10英尺，直到你下个回合开始。",
+				"每个生物每回合只能受到这个效果一次。"
+			]
+		},
+		{
+			"name": "Repelling Blast",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/unholy/strike-body-life-soul-green.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"当你用《(Eldritch Blast)邪能冲击》对一个大型或更小的生物造成伤害时，你可以将其推开，最多10英尺，沿着一条直线。",
+				"这个祈愿在11级时可以推动巨大生物。"
+			]
+		},
+		{
+			"name": "Thief of Five Fates",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/control/modfiy-luck-fortune-red.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以迫使你能看见的一个生物在30英尺内进行一次魅力豁免投掷。如果未通过豁免，它在接下来的1分钟内必须从任何一次d20投掷中减去1d4。",
+				"它可以在每个回合结束时重复进行豁免投掷，成功则效果结束。成功通过这次豁免投掷的生物在次日黎明前免疫此效果。"
+			]
+		},
+		{
+			"name": "Tome of Ancient Secrets",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/sundries/books/book-face-blue.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3,
+					"feature": [
+						"Eldritch Tome"
+					]
+				}
+			],
+			"entries": [
+				"你的邪术秘典增加了两页，每页详细描述了你从任意职业法术列表中选择的一个1级仪式法术。这些法术对你来说算作术士法术，但不计入你已知法术的总数。",
+				"你也可以神秘地向你的《邪能之书》中添加额外的仪式法术，只要这个仪式法术的等级不高于你的契约魔法法术位等级。要做到这一点，你需要进行一个1小时的仪式，期间你要烧掉一卷详细描述该仪式法术的卷轴，以及价值50 gp的香料，每个法术等级需要一份。之后，你的《邪能之书》中会出现一张详细描述该法术的页面。"
+			]
+		},
+		{
+			"name": "Voice of the Master",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/control/control-influence-puppet.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 3,
+					"feature": [
+						"Eldritch Familiar"
+					]
+				}
+			],
+			"entries": [
+				"只要你们在同一存在平面上，你可以用心灵感应与你的使魔交流，并通过它的感官感知事物。如果以这种方式连接，你可以用自己的声音通过你的使魔说话，即使使魔本身无法言语。"
+			]
+		},
+		{
+			"name": "Blasphemous Prayer",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/holy/angel-wings-gray.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Eldritch  Tome"
+					]
+				}
+			],
+			"entries": [
+				"《邪术秘典》中出现了一个新页面，详细描述了你选择的任何一种2级神职领域牧师的单一神圣能力选项。你使用你的术士等级和法术豁免 DC 作为牧师等级或法术豁免 DC。",
+				"你可以使用这个神圣力量一次，然后你必须完成一次短休或长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Erupting Blast",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/fire/projectile-meteor-salvo-light-pink.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你用奥术射线(Eldritch Blast)伤害一个生物时，你可以使用一个奖励动作来使你选择的目标（在你的目标周围5英尺内）受到与你的奥术射线相同类型的伤害，伤害值等于你的智力调整值（最少为1）。"
+			]
+		},
+		{
+			"name": "One of Shadows",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/nature/stealth-hide-beast-eyes-green.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你学会了隐形咒语，并且可以在每次长休后施放一次，只能以自己为目标，而且不消耗法术位，只要你在昏暗或黑暗的区域内。",
+				"在第9级时，它不再受长休限制，可以多次使用。"
+			]
+		},
+		{
+			"name": "Thirsting Blade",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/weapon-sword-skull-purple.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Eldritch  Blade"
+					]
+				}
+			],
+			"entries": [
+				"当你执行攻击动作并且只使用你的奥术之刃进行攻击时，你可以进行两次攻击，而不是一次。",
+				"此外，你可以选择使用你的(艾尔德里奇尖刃)进行攻击，造成与你的(艾尔德里奇冲击)相同的伤害类型。"
+			]
+		},
+		{
+			"name": "Tomb of Frost",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/water/barrier-ice-water-cube.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你受到伤害时，你可以使用你的反应将自己包裹在一个冰晶中，其生命值等于你的术士等级的十倍，并尽可能多地承受触发伤害。在冰晶的生命值保持不变时，你被禁锢和束缚在其中，并对所有伤害免疫。作为一个动作，你可以让剩余的冰立即融化，摧毁它。",
+				"使用此祈愿后，你必须完成一次短休或长休才能再次使用它。当你没有剩余此祈愿的使用次数时，你可以消耗一个你的契约魔法法术位来再次使用此祈愿。"
+			]
+		},
+		{
+			"name": "Vitality of the Ever-Living Ones",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/skills/trades/textiles-stitching-leather-brown.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Eldritch Familiar"
+					]
+				}
+			],
+			"entries": [
+				"每当你或你的邪术使者（Eldritch Familiar）在彼此相距30英尺以内时恢复生命值时，你可以将用于确定你或你的邪术使者恢复生命值的任何骰子视为其最大值，而不是进行投掷。"
+			]
+		},
+		{
+			"name": "Arcane Secrets",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/skills/trades/academics-book-study-purple.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你发现了一段强大的奥术知识碎片。你可以从4级或更低级别的《术士》法术清单中选择一个法术，并且可以以其最低级别施放一次，而不消耗法术槽。在这种方式下施放一次后，你必须完成一次长休才能再次这样做。",
+				"你可以多次获得这个祈愿，但每次必须选择一个新的术士法术，而且你只能以这种方式学习每个法术等级的一个术士法术。"
+			]
+		},
+		{
+			"name": "Ascendant Step",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/abilities/wing-batlike-white-blue.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"作为一个奖励动作，你可以给自己一个临时的飞行速度，速度等同于你的行走速度，持续到你当前回合结束，但你不能悬停。如果你结束回合时没有稳固地立足，你将坠落到地面。"
+			]
+		},
+		{
+			"name": "Eldritch Smite",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/light/explosion-impact-purple.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 7,
+					"feature": [
+						"Eldritch Blade"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你用厄尔达力刃（Eldritch Blade）攻击命中时，你造成额外伤害，伤害值等同于你的厄尔达力冲击（Eldritch Blast）的一束光线。",
+				"如果你的奥术射线施加了额外效果，比如减速的\"无力之矛\"（lance of lethargy），它也会受到这些影响。"
+			]
+		},
+		{
+			"name": "Ethereal Sight",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/eyes/humanoid-single-blind.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以利用亡灵的虚幻能量增强你的视力，让你能够在30英尺内看穿实体物体。在1分钟内，如果你之前没有，你会获得黑暗视觉，并且你会感知物体的幽灵般、透明的影子。你必须像专注于一个法术一样集中精力维持这种感知。"
+			]
+		},
+		{
+			"name": "Occult Servant",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/commodities/treasure/token-runed-circles-purple.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你的(守护者)给予了你一份礼物。你可以以与你的契约魔法法术槽位相等的等级施放你的(守护者)法术，而不消耗法术槽位。一旦你这样做了，你必须完成一次长休才能再次以这种方式施放它。"
+			]
+		},
+		{
+			"name": "Otherworldly Nature",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/magical/humanoid-silhouette-glowing-pink.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你的整个存在充满了神秘魔法。你不再需要进食、呼吸或睡眠。不过，为了获得长休息的益处，你必须花费8小时进行轻度活动。此外，每过10年，你的身体只会变老1年。"
+			]
+		},
+		{
+			"name": "Commune with Patron",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying-blue.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你的契约进展，使你能够直接与你的(守约者)沟通。你学会了(联系其他位面)。你可以无需消耗法术位来施展它，以与你的(守约者)联系，且你自动成功通过该法术的豁免扑。",
+				"当你以这种方式施放《(Contact Other Plane)》时，你必须完成一次长休才能再次以这种方式施放。"
+			]
+		},
+		{
+			"name": "Favor of the Master",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/unholy/demon-hairy-winged-pink.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"feature": [
+						"Eldritch Familiar"
+					]
+				}
+			],
+			"entries": [
+				"你赋予你的使魔一部分你的力量。在完成一次长休后，选择一个你所知道的1级或更高级别的《术士》法术。你的使魔可以施放它一次，施法等级等同于你的契约魔法法术位，而不消耗法术位。"
+			]
+		},
+		{
+			"name": "Witch Sight",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/eyes/slime-cluster-green.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你的眼睛闪烁着一种不自然的苍白绿光。当你清醒时，你拥有真实视觉，范围达到10英尺。",
+				"在15级时，你的真视半径变为30英尺。"
+			]
+		},
+		{
+			"name": "Whispers of the Grave",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/undead-skeleton-deformed-red.webp",
+			"featureType": [
+				"LL:EInv"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你学会了与死者交谈法术，你可以随意施放该法术，而不需要消耗任何契约魔法法术位。"
+			]
+		},
+		{
+			"name": "Elder Focus",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/skull-trio-badge-purple.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 11
+				}
+			],
+			"entries": [
+				"你的守护者赐予了你更多他们的力量。你可以选择额外的一个契约焦点。你不能多次选择相同的契约焦点。",
+				"你可以多次学习这个长者奥秘，但每次学习时必须选择不同的契约焦点。"
+			]
+		},
+		{
+			"name": "Minions of Chaos",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/unholy/demon-horned-black-yellow.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Eldritch Familiar"
+					]
+				}
+			],
+			"entries": [
+				"作为一个行动，你可以让你的契约异兽充满你契约的全部力量。它会变形，就像被变形术施放一样，但必须使用下表中对应法术的属性块，就好像该法术是以6级施放的：",
+				{
+					"type": "table",
+					"colLabels": [
+						"Eldritch Familiar",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"异常者",
+							"{@spell summon aberration|TCE}"
+						],
+						[
+							"龙语(Draconic)",
+							"{@spell summon draconic spirit|FTD}"
+						],
+						[
+							"仙灵(faerie)",
+							"{@spell summon fey|TCE}"
+						],
+						[
+							"地狱语（Infernal）",
+							"{@spell summon fiend|TCE}"
+						]
+					]
+				},
+				"变身持续1分钟，或直到（Familiar）的生命值降为0。使用此特性后，你必须完成一次长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Minor Arcanum",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/symbols/rune-sigil-black-pink.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 11
+				}
+			],
+			"entries": [
+				"从以下列表中选择一个法术。你可以以6级施放一次《次级奥秘》(Minor Arcanum)法术，而不消耗法术位。一旦以这种方式施放了法术，你必须完成一次长休才能再次施放《次级奥秘》。",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"{@spell arcane gate}",
+							"{@spell investiture of wind|XGE}"
+						],
+						[
+							"{@spell circle of death}",
+							"{@spell mass suggestion}"
+						],
+						[
+							"{@spell create undead}",
+							"{@spell mental prison|XGE}"
+						],
+						[
+							"{@spell eyebite}",
+							"{@spell otherworldly guise|TCE}"
+						],
+						[
+							"{@spell flesh to stone}",
+							"{@spell scatter|XGE}"
+						],
+						[
+							"{@spell investiture of flame|XGE}",
+							"{@spell soul cage|XGE}"
+						],
+						[
+							"{@spell investiture of ice|XGE}",
+							"{@spell summon fiend|TCE}"
+						],
+						[
+							"{@spell investiture of stone|XGE}",
+							"{@spell true seeing}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Occult Scholar",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/sundries/documents/document-torn-diagram-tan.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Eldritch Tome"
+					]
+				}
+			],
+			"entries": [
+				"你的魔典具有神秘力量，让你能够准备法术和奥术能力。在每次长休时，你可以与你的魔典进行一个神秘的1小时仪式，将你所知道的任意数量的术士法术替换为另一个你选择的1级或更高级别的术士法术。",
+				"此外，在这个仪式中，你可以用另一个你选择的奥术召唤来替换你已经掌握的一个奥术召唤。然而，这个新的奥术召唤必须与它替换的奥术召唤具有相同的先决条件等级。"
+			]
+		},
+		{
+			"name": "Otherworldly Step",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/movement/trail-streak-impact-blue.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Eldritch Blade"
+					]
+				}
+			],
+			"entries": [
+				"你的(奥术之刃 Eldritch Blade)切开现实本身。当你使用(奥术之刃 Eldritch Blade)进行攻击时，你可以传送到你可以在攻击前或后看到的一个未被占据的空间，距离最多10英尺。",
+				"此外，当你进行攻击动作并且只进行奥术之刃攻击时，你可以在该动作中额外进行一次奥术之刃攻击。"
+			]
+		},
+		{
+			"name": "Bond of the Master",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/creatures/unholy/demon-winged-horned-orange.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"Eldritch Familiar"
+					]
+				}
+			],
+			"entries": [
+				"当你和你的邪术使者伙伴在彼此之间的30英尺内时，你们在抵抗法术或其他魔法效果时都获得优势。",
+				"此外，当你施放一个以自己为目标的术士法术时，只要你的厄尔德里奇使者在你的30英尺内，你可以选择让它也获得法术的好处。"
+			]
+		},
+		{
+			"name": "Greater Arcanum",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/symbols/star-yellow.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"从下面的列表中选择一个法术。你可以以7级施放大奥秘法术，而不消耗法术位。一旦以这种方式施放了法术，你必须完成一次长休才能再次施放你的大奥秘法术。\n\n(Note: Greater Arcanum)（大奥秘）",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"{@spell crown of stars|XGE}",
+							"{@spell mirage arcane}"
+						],
+						[
+							"{@spell etherealness}",
+							"{@spell plane shift}"
+						],
+						[
+							"{@spell finger of death}",
+							"{@spell power word pain|XGE}"
+						],
+						[
+							"{@spell forcecage}",
+							"{@spell teleport}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Greater Magicks",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/sundries/books/book-symbol-hexagram-silver-red.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 13,
+					"feature": [
+						"Eldritch Tome"
+					]
+				}
+			],
+			"entries": [
+				"你的邪术秘典被魔法浸透，使你能够调用更多邪术潜力。你的契约魔法法术位总数增加了一格。"
+			]
+		},
+		{
+			"name": "Occult Warrior",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/symbols/runes-etched-steel-blade.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Eldritch Blade"
+					]
+				}
+			],
+			"entries": [
+				"你可以在攻击之间编织神秘咒语。当你在你的回合使用攻击动作时，你可以代替其中一个攻击施放一个1级或更高级别的术士法术。",
+				"如果这个法术迫使目标进行豁免检定，如果你在同一次攻击行动中用厄尔德里奇之刃攻击命中该目标，它进行豁免检定时会带有劣势。"
+			]
+		},
+		{
+			"name": "Arcana of the Ancients",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/symbols/star-inverted-yellow.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 15,
+					"feature": [
+						"Eldritch Tome"
+					]
+				}
+			],
+			"entries": [
+				"你的《(Eldritch Tome)邪术之书》的页面充满了来自被遗忘的秘密社团和黑暗邪教的魔法。你可以选择学习三项额外的《(Eldritch Invocation)邪术召唤》，并且你已知的邪术召唤数量增加三项以匹配。"
+			]
+		},
+		{
+			"name": "Chains of the Abyss",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/control/debuff-chains-shackle-movement-red.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 15,
+					"feature": [
+						"Eldritch Familiar"
+					]
+				}
+			],
+			"entries": [
+				"你可以用契约的邪能链条来支配其他生物。你学会了《控制怪物》法术，只要目标是天神、元素生物、精灵或恶魔，你可以施展该法术而无需消耗法术位或材料组件。",
+				"你可以每次长休后以这种方式对一个个体生物使用《控制怪物》一次，之后，你必须消耗一个契约魔法法术位再次对其使用《控制怪物》。"
+			]
+		},
+		{
+			"name": "Eldritch Wind",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/skills/melee/maneuver-daggers-paired-orange.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 15,
+					"feature": [
+						"Eldritch Blade"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以将你的契约之刃注入完整的契约力量并消失。选择你能看到的最多五个生物，对每个生物进行一次契约之刃攻击。命中后，它们会受到与你的契约射线相同类型的6d10伤害。每次攻击还会应用你的契约射线的任何额外效果。然后你会重新出现在离你的一个目标5英尺内的一个空位上。",
+				"一旦你使用这个奥秘，你必须完成一次短休或长休才能再次使用它。然而，如果你没有剩余使用次数，你可以消耗一个契约魔法法术位来再次使用它。"
+			]
+		},
+		{
+			"name": "Mystic Arcanum",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 15
+				}
+			],
+			"entries": [
+				"从下面的列表中选择一个法术。你可以以8级施放一次神秘奥秘法术，而不消耗法术槽。一旦以这种方式施放了法术，你必须完成一次长休才能再次施放你的神秘奥秘。",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"{@spell demiplane}",
+							"{@spell maddening darkness|XGE}"
+						],
+						[
+							"{@spell dominate monster}",
+							"{@spell maze}"
+						],
+						[
+							"{@spell feeblemind}",
+							"{@spell power word stun}"
+						],
+						[
+							"{@spell glibness}",
+							"{@spell telepathy}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Awakened Blade",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/skills/melee/sword-stuck-glowing-pink.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Eldritch Blade"
+					]
+				}
+			],
+			"entries": [
+				"你的邪能之刃获得了一级邪恶的自我意识。当你握着你的邪能之刃时，你不会因攻击而处于劣势，并且每当你被迫进行一次以维持对法术的集中力的体质豁免时，你可以将你的智力调整值加到你的投掷中。",
+				"最终，每回合当你用你的奥术之刃进行攻击检定时，你可以选择使用你的术士等级代替投掷d20进行该攻击。"
+			]
+		},
+		{
+			"name": "Ancient Arcanum",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/symbols/circle-ouroboros.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"从以下列表中选择一个法术。你可以以9级施放一次《古老奥秘》(Ancient Arcanum)法术，而不消耗法术位。一旦以这种方式施放了法术，你必须完成一次长休才能再次施放你的《古老奥秘》(Ancient Arcanum)。",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"{@spell astral projection}",
+							"{@spell power word kill}"
+						],
+						[
+							"{@spell foresight}",
+							"{@spell psychic scream|XGE}"
+						],
+						[
+							"{@spell gate}",
+							"{@spell true polymorph}"
+						],
+						[
+							"{@spell imprisonment}",
+							"{@spell weird}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Distort Reality",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/commodities/treasure/brass-lamp-yellow.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Eldritch Tome"
+					]
+				}
+			],
+			"entries": [
+				"在你的魔典中出现了最后一页，用创世的原始语言写成。它包含了愿望（wish）咒语。你可以每次长休后施放{@spell wish}一次，而不消耗法术位。",
+				"如果你使用愿望(wish)来复制一个法术，它只能复制施法时间为一次行动或一次奖励行动的法术。"
+			]
+		},
+		{
+			"name": "Eldritch Domination",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/magic/unholy/hand-marked-pink.webp",
+			"featureType": [
+				"LL:EA"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Eldritch Familiar"
+					]
+				}
+			],
+			"entries": [
+				"你可以通过你邪能羁绊的链接延伸你的意志。你可以以9级施放{@spell dominate monster}法术，每次长休一次，而无需消耗法术位。当你以{@spell dominate monster}法术瞄准受到你{@spell hold monster}法术影响的生物时，它会自动失败豁免扑，但{@spell hold monster}的效果会立即被驱散。"
+			]
+		},
+		{
+			"name": "Eldritch Blade",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/weapons/swords/greatsword-guard-split-eyes.webp",
+			"featureType": [
+				"LL:PF"
+			],
+			"entries": [
+				"你将你的守护者力量聚集到一把奥术之刃中。作为一个奖励动作，你可以在一只空手中召唤你的奥术之刃。每次你召唤它时，你的奥术之刃会变成你选择的近战武器，并获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"它可以作为一个奇术召唤(`Eldritch Invocation`)的饰品(`Trinket`)使用。",
+						"你可以使用智力调整值，代替力量或敏捷，进行此武器的攻击和伤害骰。",
+						"如果你还不是的话，你对这种武器很精通。(weapon)",
+						"该武器被视为魔法武器，可以克服对非魔法攻击的抗性和免疫能力。"
+					]
+				},
+				"如果奥术之刃离你超过5英尺达1分钟，或者你召唤另一把奥术之刃，或者你解除奥术之刃（无需动作），或者你死亡，奥术之刃会消失。",
+				"你可以通过进行一个小时的仪式将一把魔法近战武器作为《奥术之刃》进行绑定。你可以使用一个奖励动作将其移动到一个超维空间，或者召唤它。绑定第二把武器会结束之前武器的绑定。"
+			]
+		},
+		{
+			"name": "Eldritch Familiar",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/sundries/lights/candles-lit-red-evil.webp",
+			"featureType": [
+				"LL:PF"
+			],
+			"entries": [
+				"你将你的守护者力量集中在一只奥术使者上，将其绑定在你的意志之下。你学会{@spell find familiar}，可以将其作为仪式施放，但不计入你已知法术的数量。",
+				"当你施放{@spell find familiar}时，除了通常的熟悉形态外，你可以选择从本职业末尾详细列出的选项中召唤一只奥术使者。",
+				"你的(Cthulhu)契约使者被束缚以尽其所能遵从你的命令。在战斗中，它与你共享先攻，并在你的回合行动。然而，除非你使用你的奖励行动命令它执行其属性块或其他战斗行动，否则它只会在自己的回合采取躲避动作。",
+				"最后，每当你施放一项术士法术或使用(艾尔德里奇爆破)时，你可以选择让法术或任意数量的射线从你的使魔身上发出，前提是你在60英尺内。"
+			]
+		},
+		{
+			"name": "Eldritch Tome",
+			"source": "LLWrc",
+			"page": 9,
+			"foundryImg": "icons/sundries/books/book-symbol-triangle-silver-purple.webp",
+			"featureType": [
+				"LL:PF"
+			],
+			"entries": [
+				"你将你的守护者力量集中到一本被称为奥术秘典的黑暗魔典中。它包含你所知道的每个术士法术的一份副本，而这本魔典为你带来以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"《(Tome of Ancient Lore)古代知识之书》将成为您选择的没有先决条件的(奥术召唤)Eldritch Invocation的护符。这个召唤不计入您已知召唤的数量，当您获得一级(术士)Warlock等级时，它也不能被替换。",
+						"在一次长休结束时，你可以用另一个与原等级相同的术士法术替换你已知的一个术士法术。",
+						"如果你的魔法书中包含有仪式标签的术士法术，你可以将其作为仪式施放。"
+					]
+				},
+				"你可以施放任何术士法术。你可以花费1小时的时间，可以在短暂休息或长休息期间，召唤出你的《(Tome)》的精确副本，摧毁之前的任何《(Tome)》。如果你死亡，你的《(Tome)》会化为灰烬。如果那个术士法术带有仪式标签，你可以在你的《(Tome)》中找到它。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Aberrant Familiar",
+			"source": "LLWrc",
+			"page": 8,
+			"summonedByClass": "Alternate Warlock|LLWrc",
+			"size": [
+				"T"
+			],
+			"type": "aberration",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"special": "11 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + three times your Warlock level"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				}
+			},
+			"str": 3,
+			"dex": 16,
+			"con": 12,
+			"int": 13,
+			"wis": 10,
+			"cha": 8,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"psychic"
+			],
+			"languages": [
+				"Deep Speech, understands the languages spoken by its master."
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Hit Dice",
+					"entries": [
+						"你的《熟悉灵兽》(The Familiar) 拥有与你的术士等级相等的d4面体生命骰总数。它也会获得短休息和长休息的所有正常益处。"
+					]
+				},
+				{
+					"name": "Eldritch Bond",
+					"entries": [
+						"你可以将你的PB加到你的使魔所进行的任何能力检定或豁免投掷中。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"熟悉灵兽在豁免魔法和魔法效果时获得优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"一只生物，（熟悉的）可以看到在30英尺内必须成功进行一次智力豁免才能免受1d4点精神伤害，并在（熟悉的）下一个回合开始之前的第一次d20投掷中减去1d4。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Familiar",
+			"source": "LLWrc",
+			"page": 8,
+			"summonedByClass": "Alternate Warlock|LLWrc",
+			"size": [
+				"T"
+			],
+			"type": "dragon",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"special": "13 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + three times your Warlock level"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"str": 3,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 8,
+			"cha": 13,
+			"senses": [
+				"blindsight 10ft, darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"special": "Draconic Essence damage type"
+				}
+			],
+			"languages": [
+				"Draconic, understands the languages spoken by its master."
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Hit Dice",
+					"entries": [
+						"你的《熟悉灵兽》(The Familiar) 拥有与你的术士等级相等的d4面体生命骰总数。它也会获得短休息和长休息的所有正常益处。"
+					]
+				},
+				{
+					"name": "Draconic Essence",
+					"entries": [
+						"当被召唤时，使魔的主人选择酸、冰、火、毒或闪电作为使魔的龙族本质类型。这会影响它的伤害抗性和咬击攻击。"
+					]
+				},
+				{
+					"name": "Eldritch Bond",
+					"entries": [
+						"你可以将你的PB加到你的使魔所进行的任何能力检定或豁免投掷中。"
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"熟悉灵兽在依赖其视觉或嗅觉的感知（感知）检查中具有优势。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"熟悉灵兽在豁免魔法和魔法效果时获得优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"使用{@atk mw} +法术攻击修正来命中，射程5英尺，目标为一个。造成{@h}{@damage 1d4 + 3 + PB}穿刺伤害，额外造成{@damage 1d4}龙族精华伤害。命中后，目标必须通过一次力量豁免投掷（豁免 DC 等于 10 + PB）否则会被{@condition grappled}。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Faerie Familiar",
+			"source": "LLWrc",
+			"page": 8,
+			"summonedByClass": "Alternate Warlock|LLWrc",
+			"size": [
+				"T"
+			],
+			"type": "fey",
+			"alignment": [
+				"C"
+			],
+			"ac": [
+				{
+					"special": "11 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + three times your Warlock level"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"str": 3,
+			"dex": 16,
+			"con": 10,
+			"int": 8,
+			"wis": 13,
+			"cha": 12,
+			"passive": 13,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Sylvan, understands the languages spoken by its master."
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Hit Dice",
+					"entries": [
+						"你的《熟悉灵兽》(The Familiar) 拥有与你的术士等级相等的d4面体生命骰总数。它也会获得短休息和长休息的所有正常益处。"
+					]
+				},
+				{
+					"name": "Eldritch Bond",
+					"entries": [
+						"你可以将你的PB加到你的使魔所进行的任何能力检定或豁免投掷中。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"熟悉灵兽在豁免魔法和魔法效果时获得优势。"
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"该(Dungeons & Dragons)中的熟悉生物在攻击、迫使生物进行豁免投掷，或其集中力结束（就像它在施放法术一样）之前会变得隐形。熟悉生物穿戴或携带的任何装备也会和它一起变得隐形。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sting",
+					"entries": [
+						"使用法术攻击调整值来命中，射程5英尺，目标为一个。造成{@h}{@damage 1d4 + 3 + PB}穿刺伤害。如果目标是生物，伙伴将了解其当前的情绪状态和阵营（如果有的话）。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Fiendish Familiar",
+			"source": "LLWrc",
+			"page": 8,
+			"summonedByClass": "Alternate Warlock|LLWrc",
+			"size": [
+				"T"
+			],
+			"type": "fiend",
+			"alignment": [
+				"E"
+			],
+			"ac": [
+				{
+					"special": "11 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + three times your Warlock level"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 3,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 8,
+			"cha": 13,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"resist": [
+				"cold",
+				"fire",
+				"poison"
+			],
+			"passive": 12,
+			"languages": [
+				"Infernal, understands the languages spoken by its master."
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Hit Dice",
+					"entries": [
+						"你的《熟悉灵兽》(The Familiar) 拥有与你的术士等级相等的d4面体生命骰总数。它也会获得短休息和长休息的所有正常益处。"
+					]
+				},
+				{
+					"name": "Eldritch Bond",
+					"entries": [
+						"你可以将你的PB加到你的使魔所进行的任何能力检定或豁免投掷中。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"熟悉灵兽在豁免魔法和魔法效果时获得优势。"
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会影响使魔的黑暗视觉。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"使用法术攻击调整值来命中，射程5英尺，单个目标。造成{@h}{@damage 1d4 + 3 + PB}斩击伤害。如果目标是生物，它必须成功进行一次体质豁免才能免疫中毒状态，直到开始下一个回合。"
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"这个熟悉生物可以变成一个类似老鼠的野兽形态（速度20英尺，攀爬20英尺），一个类似蜥蜴的形态（20英尺，游泳20英尺），一个类似乌鸦的形态（20英尺，飞行60英尺），或者恢复成真实形态。它在每种形态下的统计数据都相同，除了速度的变化。它的装备不会被转变。如果它死亡，它会恢复成真实形态。"
+					]
+				}
+			]
+		}
+	]
+}

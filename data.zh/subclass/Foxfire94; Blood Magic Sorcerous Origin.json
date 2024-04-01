@@ -1,0 +1,177 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FFBloodSorc",
+				"abbreviation": "FFBLOODMAGIC",
+				"full": "Blood Magic Sorcerous Origin",
+				"authors": [
+					"Foxfire94"
+				],
+				"version": "1.0",
+				"url": "https://www.dmsguild.com/product/453871/The-Blood-Magic-Sorcerous-Origin-for-DD-5e",
+				"targetSchema": "1.0.0",
+				"color": "940101"
+			}
+		],
+		"dateAdded": 1650130290,
+		"dateLastModified": 1706587640,
+		"_dateLastModifiedHash": "ce01d5e327"
+	},
+	"subclass": [
+		{
+			"name": "Blood Magic",
+			"subclassFeatures": [
+				"Blood Magic|Sorcerer||Blood Magic|FFBloodSorc|1",
+				"Murderous Magic|Sorcerer||Blood Magic|FFBloodSorc|6",
+				"Stalwart Soul|Sorcerer||Blood Magic|FFBloodSorc|14",
+				"Theft of Life|Sorcerer||Blood Magic|FFBloodSorc|18"
+			],
+			"source": "FFBloodSorc",
+			"shortName": "Blood Magic",
+			"subclassSpells": [
+				"false life",
+				"inflict wounds",
+				"spare the dying",
+				"life leech|AdvancedArcaneries",
+				"ray of enfeeblement",
+				"life transference|xge",
+				"vampiric touch",
+				"compulsion",
+				"death ward",
+				"enervation|xge",
+				"haemorrhage|AdvancedArcaneries"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Blood Magic",
+			"source": "FFBloodSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Blood Magic",
+			"subclassSource": "FFBloodSorc",
+			"level": 1,
+			"entries": [
+				"你与生俱来的魔法来自于你自己的血液，它被注入了奥术能量。你可能与一位强大的法师有远亲，也许你是一些神秘实验的结果，或者你只是偶然发现了你体内的共鸣。",
+				"不管你是怎么来的，你已经意识到你自己的生命本质可以成为施法的催化剂，这使你获得了更多的魔法来源，但所有的力量都需要牺牲。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blood Magic|Sorcerer||Blood Magic|FFBloodSorc|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sanguine Sorcery|Sorcerer||Blood Magic|FFBloodSorc|1"
+				}
+			]
+		},
+		{
+			"name": "Blood Magic",
+			"entries": [
+				"当你在这个等级中达到一定级别时，你会学习额外的法术，如血魔法术表所示。这些法术中的每一个对你来说都算作一个巫师法术，但不计入你所会的巫师法术数量。",
+				"每当你获得一个巫师等级时，你可以用另一个相同等级的法术替换你从这个特征中获得的一个法术。新的法术必须是一个（%0%）。",
+				{
+					"type": "table",
+					"caption": "Blood Magic Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell false life|phb}, {@spell inflict wounds},{@spell spare the dying|phb}"
+						],
+						[
+							"3rd",
+							"{@spell life leech|AdvancedArcaneries|life leech¹}, {@spell ray of enfeeblement|phb}"
+						],
+						[
+							"5th",
+							"{@spell life transference|xge}, {@spell vampiric touch|phb}"
+						],
+						[
+							"7th",
+							"{@spell compulsion|phb}, {@spell death ward|phb}"
+						],
+						[
+							"9th",
+							"{@spell enervation|xge}, {@spell haemorrhage|AdvancedArcaneries|haemorrhage¹}"
+						]
+					]
+				},
+				"可在法术页面的自制部分找到高级阿卡诺里卷1。"
+			],
+			"source": "FFBloodSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Blood Magic",
+			"subclassSource": "FFBloodSorc",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Sanguine Sorcery",
+			"entries": [
+				"从1级开始，你可以利用自己的生命力来激发你的法术；你可以通过将你当前和最大生命值减少{@dice d6}等于法术等级的数量，以最低等级施放你已知的1级或更高级别的巫师法术，而不消耗法术位。",
+				"你的最大命中率的降低会持续到你完成一个长时间的休息。如果这使你的最大命中率降低到0，你就会死亡。",
+				"如果你使用这个功能来施放一个7级或更高等级的法术，你必须完成一个长时间的休息才能再次施放。"
+			],
+			"source": "FFBloodSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Blood Magic",
+			"subclassSource": "FFBloodSorc",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Murderous Magic",
+			"source": "FFBloodSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Blood Magic",
+			"subclassSource": "FFBloodSorc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你用1级或更高级别的法术将一个不是构装或不死生物的生物的生命值降至0时，你可以使用你的反应来收割他们的生命能量，并恢复1d4个已消耗的巫术点。你可以使用这个特性的次数等同于你的熟练加值；并在完成一次长休后，恢复所有已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Stalwart Soul",
+			"source": "FFBloodSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Blood Magic",
+			"subclassSource": "FFBloodSorc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你对生命的依恋越发强烈，它从你的血管中流出。当你没有穿戴盔甲或挥舞盾牌时，当你的命中率低于你的最大命中率时，你会获得相当于你的体质修饰词的AC奖励（最低为0）。"
+			]
+		},
+		{
+			"name": "Theft of Life",
+			"source": "FFBloodSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Blood Magic",
+			"subclassSource": "FFBloodSorc",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你学会了如何用别人的血来恢复自己的活力。作为一个行动，你可以选择一个你能看到的在你30英尺范围内的生物，他们必须对你的法术救赎DC进行一个宪法救赎。此项功能对构造物或不死生物没有影响。",
+				"在未通过豁免检定时，目标身上会出现一道动脉伤口，他们的鲜血会从身体中飞溅到你的身上，形成一团血雨；目标在你的下一个回合结束前为 {@condition stunned}，其当前和最大生命值会减少等同于你的术士等级，如果目标当前生命值少于这个数值，那么生命值会减至0。这种减少效果会持续直到目标完成一次长休。如果这个效果将目标的最大生命值减至0，目标会死亡。",
+				"你的当前生命值和最大生命值将增加一个与目标减少量相等的数值，这种效果持续到你完成一次长休。你可以使用这个特性的次数等于你的体质调整值（最少为1），当你完成一次长休后，你会恢复所有已用次数。"
+			]
+		}
+	]
+}

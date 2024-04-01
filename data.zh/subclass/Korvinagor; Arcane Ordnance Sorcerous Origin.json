@@ -1,0 +1,215 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ArcaneOrdnanceSorcerer",
+				"abbreviation": "AOS",
+				"full": "Arcane Ordnance",
+				"url": "https://homebrewery.naturalcrit.com/share/M3uDV9IVsB5r",
+				"authors": [
+					"Korvinagor"
+				],
+				"convertedBy": [
+					"Korvinagor"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1710660682,
+		"dateLastModified": 1710660682,
+		"_dateLastModifiedHash": "b17816fc54"
+	},
+	"subclass": [
+		{
+			"name": "Arcane Ordnance",
+			"source": "ArcaneOrdnanceSorcerer",
+			"shortName": "Arcane Ordnance",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Arcane Ordnance|Sorcerer||Arcane Ordnance|ArcaneOrdnanceSorcerer|1",
+				"Power Flux|Sorcerer||Arcane Ordnance|ArcaneOrdnanceSorcerer|6",
+				"Unstoppable Force|Sorcerer||Arcane Ordnance|ArcaneOrdnanceSorcerer|14",
+				"Mana Barrage|Sorcerer||Arcane Ordnance|ArcaneOrdnanceSorcerer|18"
+			],
+			"subclassSpells": [
+				"Mage Armor",
+				"Magic Missile",
+				"Shield",
+				"Darkness",
+				"Silence",
+				"Counterspell",
+				"Fly",
+				"Dimension Door",
+				"Otiluke's Resilient Sphere",
+				"Bigby's Hand",
+				"Wall of Force"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Arcane Ordnance",
+			"source": "ArcaneOrdnanceSorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Ordnance",
+			"subclassSource": "ArcaneOrdnanceSorcerer",
+			"level": 1,
+			"entries": [
+				"一位强大的巫师将战争魔法注入了你或你的祖先之一。他们想要一个能够将原始奥术能量转化为简单但毁灭性的力量之武器。他们只成功了一部分：压倒性的力量无法长时间被束缚。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arsenal Spells|Sorcerer|PHB|Arcane Ordnance|ArcaneOrdnanceSorcerer|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mystic Artillery|Sorcerer|PHB|Arcane Ordnance|ArcaneOrdnanceSorcerer|1"
+				}
+			]
+		},
+		{
+			"name": "Arsenal Spells",
+			"source": "ArcaneOrdnanceSorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Ordnance",
+			"subclassSource": "ArcaneOrdnanceSorcerer",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Arcane Ordnance feature}",
+				"你的魔法对法师和战士都是忌讳。你在下表中注明的巫师等级学会特定法术。它们对你来说算作巫师法术，但不计入你所知道的法术数量。",
+				"你可以在不消耗法术位的情况下，从这个表格中选择一个1级法术施放一次，并在完成一次长休后恢复这个能力。",
+				{
+					"type": "table",
+					"caption": "Arsenal Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell mage armor}, {@spell magic missile}, {@spell shield}"
+						],
+						[
+							"3rd",
+							"{@spell darkness}, {@spell silence}"
+						],
+						[
+							"5th",
+							"{@spell counterspell}, {@spell fly}"
+						],
+						[
+							"7th",
+							"{@spell dimension door}, {@spell otiluke's resilient sphere||resilient sphere}"
+						],
+						[
+							"9th",
+							"{@spell bigby's hand||arcane hand}, {@spell wall of force}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mystic Artillery",
+			"source": "ArcaneOrdnanceSorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Ordnance",
+			"subclassSource": "ArcaneOrdnanceSorcerer",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Arcane Ordnance feature}",
+				"你是一股纯净奥术力量的源泉。你可以将{@spell magic missile}作为零级战法施放。以这种方式施放时，它只会创造一个飞镖。当你达到一定的巫师等级时，飞镖的数量会增加，5级时增加到两个，11级时增加到三个，17级时增加到四个。"
+			]
+		},
+		{
+			"name": "Power Flux",
+			"source": "ArcaneOrdnanceSorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Ordnance",
+			"subclassSource": "ArcaneOrdnanceSorcerer",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Arcane Ordnance feature}",
+				"你的兵器库法术会根据你面对的敌人进行调整，让你可以对它们使用任何合适的元术选项，即使这是你没有的一个元术选项。",
+				"此外，当你施放{@spell magic missile}时，你可以按照以下方式之一进行修改：",
+				{
+					"type": "entries",
+					"name": "Seeking",
+					"entries": [
+						"每支飞镖可以瞄准一个看不见的生物，只要你仍然能探测到它的位置。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shattering",
+					"entries": [
+						"每支飞镖可以瞄准并对未被穿戴或携带的非魔法物体造成伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shifting",
+					"entries": [
+						"你可以将每支飞镖的伤害类型更改为你选择的其他伤害类型。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Staggering",
+					"entries": [
+						"当至少被一枚飞镖击中的每个大型或更小的生物，必须进行一次力量豁免投掷。未通过豁免的生物，将被推动至您选择的水平方向上至多 5 英尺，每枚击中它的飞镖最多可推动 15 英尺。如果生物被三枚或更多飞镖击中且未通过此豁免，则也会倒下{@condition prone}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Swarming",
+					"entries": [
+						"每个超过1级的法术位用来施放这个法术时，你可以额外制造一个飞镖。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Unstoppable Force",
+			"source": "ArcaneOrdnanceSorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Ordnance",
+			"subclassSource": "ArcaneOrdnanceSorcerer",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Arcane Ordnance feature}",
+				"当你施放1级或更高级别的法术时，你可以进行一次魅力检定，以在目标身后的掩体处施放该法术，绕过其提供的保护。对于半掩体、四分之三掩体和全掩体，相应的难度等级分别为15、17和19。",
+				"失败时，如果法术的目标是一个起点，那么这个起点会移动到障碍物的近侧。如果法术的目标是一个生物或物体，那么法术会失败。"
+			]
+		},
+		{
+			"name": "Mana Barrage",
+			"source": "ArcaneOrdnanceSorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Ordnance",
+			"subclassSource": "ArcaneOrdnanceSorcerer",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Arcane Ordnance feature}",
+				"你可以释放全部力量，发动一波压倒性的攻击。当你施放{@spell magic missile}时，你可以修改它以创建额外十一个飞镖，并且可以绕过任何导致生物不受其影响的效果，比如{@creature Tarrasque||Tarrasque's}反射甲壳。",
+				"一旦你使用这个特性，你必须完成一次长休才能再次使用它，除非你花费7个法术点再次使用它。"
+			]
+		}
+	]
+}

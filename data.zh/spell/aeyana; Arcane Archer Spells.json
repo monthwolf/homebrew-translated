@@ -1,0 +1,543 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ArcaneArcherSpells",
+				"abbreviation": "AAS",
+				"full": "Arcane Archer Spells",
+				"authors": [
+					"aeyana"
+				],
+				"convertedBy": [
+					"MrVauxs"
+				],
+				"url": "https://www.gmbinder.com/share/-LGrtJmtZnd4y9_tw_Wv",
+				"version": "1.0.0",
+				"color": "8A2BE2"
+			}
+		],
+		"dateAdded": 1594364848,
+		"dateLastModified": 1594364846,
+		"_dateLastModifiedHash": "be0b94df53"
+	},
+	"spell": [
+		{
+			"name": "Banishing Shot",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"在此法术持续期间，你下次用远程武器攻击时，你的攻击会造成额外的（%0%）武力伤害。如果目标是一个生物，它必须成功地进行 \"魅力储蓄\"，否则将被放逐。当以这种方式被放逐时，目标的速度为0，并且是（%1%）。在你的下一个回合结束时，目标会重新出现在它所腾出的空间中，或者在最近的无人空间中（如果该空间被占用）。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 1,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Enfeebling Shot",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"在此法术的持续时间内，当你用远程武器攻击击中一个生物时，你的武器会爆发出可怕的能量，并且攻击会对目标造成额外的（%0%）坏死伤害。此外，目标必须在宪法规定的投掷中获得成功，否则将被削弱，直到法术结束。在虚弱期间，其使用力量的武器攻击所造成的伤害减半，直到其下一回合结束。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 1,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Grasping Shot",
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动的一部分，你必须用武器对武器和法术范围内的一个生物进行一次远程攻击，否则法术失败。一旦命中，目标就会受到攻击的正常效果，并且弹药会召唤出抓人的、有毒的荆棘，这些荆棘会缠绕着目标，直到你下一个回合开始。如果目标在那之前自愿移动或被移出原来的空间，它将立即受到{@damage 1d6}的毒伤害，并且咒语结束。",
+				"当你达到5级（{@dice 2d6}）、11级（{@dice 3d6}）和17级（{@dice 4d6}）时，该法术的伤害增加{@dice 1d6}。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 1,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Piercing Shot",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"你向你选择的方向发射一条长30英尺、宽5英尺的弹药。弹药在这条线的末端消失，并无害地穿过物体，无视掩体。这条线上的每个生物都必须做一个灵巧的救命动作。蓄力失败时，生物会受到{@damage 3d6}的穿刺伤害，蓄力成功则受到一半的伤害。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 2,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"areaTags": [
+				"L"
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Resounding Shot",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动的一部分，你必须用武器对武器和法术范围内的一个生物进行一次远程攻击，否则法术失败。一旦命中，目标会受到攻击的正常影响，弹药会留下一个幽灵般的残影。在你的下一个回合开始时，当你施法时目标所在的空间内的每个生物都会受到{@damage 1d6}武力伤害，因为弹药的幽灵投影会穿透它。",
+				"当你达到5级（{@dice 2d6}）、11级（{@dice 3d6}）和17级（{@dice 4d6}）时，该法术的伤害增加{@dice 1d6}。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 2,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Seeking Shot",
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"选择一个你在过去一分钟内见过的生物。你向该生物发送一块弹药，如果有必要的话，弹药会在角落里移动，并无视四分之三的掩体和半掩体。如果目标在范围内，并且有一条足够大的路径让弹药到达目标，目标必须做一个灵巧的救赎动作。否则，弹药会在尽可能远的距离内消失。如果救赎失败，目标会受到{@damage 1d6}武力伤害，并且你会知道目标的当前位置，直到回合结束。",
+				"当你达到5级（{@dice 2d6}）、11级（{@dice 3d6}）和17级（{@dice 4d6}）时，该法术的伤害增加{@dice 1d6}。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 2,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Shadow Shot",
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动的一部分，你必须用武器对武器和法术范围内的一个生物进行一次远程攻击，否则法术失败。一旦命中，目标会受到攻击的正常效果，并且在回合结束前会受到（%0%）的影响。",
+				"当你达到较高等级时，这个法术的伤害会增加。在5级时，该攻击对目标造成额外的{@damage 1d6}精神伤害，在11级({@dice 2d6})和17级({@dice 3d6})时再次造成精神伤害。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 2,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"areaTags": [
+				"ST"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Bursting Shot",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Hunter",
+						"source": "Hunter"
+					}
+				]
+			},
+			"entries": [
+				"在此法术的持续时间内，你下次进行远程武器攻击时，弹药会在撞击时爆裂。攻击的目标和它周围10英尺内的每个生物都必须做一个灵巧的蓄力动作。蓄力失败时，目标会受到{@damage 2d10}武力伤害，蓄力成功时，会受到一半的伤害。"
+			],
+			"source": "ArcaneArcherSpells",
+			"page": 1,
+			"components": {
+				"s": true,
+				"m": "a piece of ammunition"
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"S"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					]
+				}
+			]
+		}
+	]
+}

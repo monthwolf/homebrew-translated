@@ -1,0 +1,2203 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "NationsAndCannonsStarter",
+				"abbreviation": "NnCS",
+				"full": "Nations & Cannons Starter Rules",
+				"url": "https://NationsAndCannonsStarter.com/wp-content/uploads/NationsAndCannonsStarter_StarterRules.pdf",
+				"authors": [
+					"Pat Mooney",
+					"Lin Taylor",
+					"Collyn Messier"
+				],
+				"convertedBy": [
+					"Moonstrous#5791"
+				],
+				"version": "1.0",
+				"targetSchema": "1.107.0",
+				"color": "19425d"
+			}
+		],
+		"dateAdded": 1595706432,
+		"dateLastModified": 1693671517,
+		"_dateLastModifiedHash": "6870560344"
+	},
+	"spell": [
+		{
+			"name": "Castigate",
+			"source": "NationsAndCannonsStarter",
+			"page": 40,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response to being mislead by a creature you are not in combat with"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你大声呵斥一个刚刚对你撒谎或以其他方式误导你或他人的对手。",
+				"该生物必须在范围内，并且能够看到、听到和理解你。该生物必须做一个魅力救赎动作，否则立即受到1级（%0%）的伤害，并在接下来的（%1%）天内，在与听到指控的人进行社交互动时，获得任何能力检查的不利条件。",
+				"如果作为你解释的一部分，你提供确凿的证据来支持你的主张，那么生物在这个救赎中就处于劣势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Demagogue",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Demagogue"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Barbed Spike",
+			"source": "NationsAndCannonsStarter",
+			"page": 40,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "metal spike & hammer"
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"你用锤子把大钉子打进大炮的通风口或门、箱子或舱口的铰链。",
+				"在钉子被撬出通风口之前，带钉子的大炮无法发射。一个带刺的铰链不能被打开，直到钉子被移除。",
+				"要移除一个钉子，一个生物必须花一分钟的时间使用类似钳子的工具来尝试把它撬出来。该生物必须对你的赌博救赎DC进行力量（木匠的工具）检查。",
+				"一个生物可以用其他的工具来移除钉子，但是如果他们这样做，他们不会把他们的熟练度加到他们的检查中。如果没有合适的工具，一个生物仍然可以尝试用力量检查来移除钉子，但这样做是不利的。",
+				"如果对一个受带刺的钉子影响的物体施展敲击术，钉子会立即被移除，并且大炮或铰链功能正常。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Turncoat",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Mercenary",
+							"shortName": "Turncoat"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Marksman",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Marksman"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Urban",
+							"shortName": "Trailblazer"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Beyond Reproach",
+			"source": "NationsAndCannonsStarter",
+			"page": 40,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a combination of clothing, makeup and forged documentation worth at least £ 7 which the gambit consumes"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"通过对伪造文件的精心组合，巧妙的伪装，以及对你的姿势和方言的改变，你创造了一个掩护身份。你可以利用这个伪装身份四处走动，不被那些可能对你的行为产生怀疑的人发现，例如走过敌人的营地或敌对城镇。除非你给围观者一个怀疑你身份的理由，否则你的伪装是有效的。",
+				"如果你的行动让一个生物产生了怀疑，它可以用它的行动来检查你的外表，并且必须在智力（调查）检查中成功地对抗你的赌博保全DC。如果它看穿了你的伪装，你的伪装就会被揭穿，而且消息会迅速传开，除非看穿伪装的生物被驱散。一个被揭穿的身份不能再被使用，创造它的成本也不能被收回。",
+				"你可以尝试创造一个冒充另一个人的伪装身份，而不是创造一个掩饰身份。被你冒充的目标必须做一个 \"魅力储蓄\"，这个储蓄是由你对目标的了解程度和你处理的与他们有关的物质物品的种类来修改。这个回合是由DM秘密进行的。无论结果如何，该生物都不会意识到你试图创造一个冒充行为。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Knowledge",
+						"Save Modifier"
+					],
+					"colStyles": [
+						"col-6 text-left",
+						"col-1-5 text-right "
+					],
+					"rows": [
+						[
+							"第二手资料（你听说过这个目标）",
+							"+5"
+						],
+						[
+							"第一手资料（你已经遇到了目标）。",
+							"+0"
+						],
+						[
+							"熟悉（你很了解目标）。",
+							"-5"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"Material Objects",
+						"Save Modifier"
+					],
+					"colStyles": [
+						"col-6 text-left",
+						"col-1-5 text-right "
+					],
+					"rows": [
+						[
+							"肖像或画像",
+							"-2"
+						],
+						[
+							"占有率或服装",
+							"-4"
+						],
+						[
+							"证明你身份的官方文件",
+							"-10"
+						]
+					]
+				},
+				"拯救成功后，你的冒充行为不会通过，熟悉目标的生物会立即将你视为冒牌货。",
+				"在拯救失败的情况下，你的冒充是不可思议的，你的掩护身份功能如常，不会引起怀疑，除非你给生物一个理由来怀疑你。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Turncoat",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Informant",
+							"shortName": "Turncoat"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Blowback",
+			"source": "NationsAndCannonsStarter",
+			"page": 40,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response to being in the effect radius of a grenade"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a loaded firearm"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"凭着本能反应，你向向你急速飞来的手榴弹射击，奇迹般地使其偏移或失效。",
+				"用上膛的枪支做一个远程攻击卷，并与攻击者投掷手榴弹的卷的结果相比较。",
+				"如果你的结果比攻击者高，你就把手榴弹偏向他们。手榴弹以投掷它的生物为中心引爆，而不是它原来的目标。如果你的卷轴比攻击者的低，你的射击设法使手榴弹失效，导致它无害地落在战场上的某个地方。",
+				"如果你掷错了子弹，你就错过了躲避的机会，自动导致你的灵巧救赎失败，无法避免手榴弹的初始效果。",
+				"从火器或迫击炮发射的手榴弹不能被挡住，只能通过反击使其失效。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Desert",
+							"shortName": "Trailblazer"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Marksman",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Marksman"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Create Draught",
+			"source": "NationsAndCannonsStarter",
+			"page": 41,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "gathered herbs and plants, or venom"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"你用各种毒液和植物创造出一种毒药或药物。",
+				"当用于制造药物时，该药水可作为治疗膏药使用。当用于制造毒药时，它可以制造下列任何一种毒药的单剂量。Hellebore, Poison Sumac, Wasp Venom, or Widow's Bite。",
+				"这种赌法创造的德拉克斯的功能与第四章所述相同，只是不能出售，如果不使用，8小时后就会退化。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当作为2级或更高等级的赌博施放时，你为1级以上的每一级创造一个额外的吃水。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Turncoat",
+							"source": "PHB",
+							"subSubclass": "Cutthroat",
+							"shortName": "Turncoat"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Forest",
+							"shortName": "Trailblazer"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Create Tincture",
+			"source": "NationsAndCannonsStarter",
+			"page": 41,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "gathered herbs and plants, or venom"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"你利用珍稀植物和毒液制作毒药或药物的酊剂。",
+				"当用于制造药物时，该酊剂的功能是一个大的治疗膏药。当用于制造毒药时，它可以制造下列任何一种毒药的单剂量。血根、致命的夜来香、毒蛇毒液或水苏碱。",
+				"用这种方法制造的酊剂的功能与第四章所述相同，只是不能出售，如果不使用，8小时后就会降解。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当作为四级或更高等级的赌博施放时，你在三级以上的每一级创造一个额外的酊剂。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Turncoat",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Cutthroat",
+							"shortName": "Turncoat"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Dead Drop",
+			"source": "NationsAndCannonsStarter",
+			"page": 41,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"m": "nearby town or settlement"
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"entries": [
+				"你发现附近有一个由你的事业成员储存的弹药和口粮的藏匿处。储藏室里的口粮足够你的同伴们吃一天，还有一些额外的物资，这些物资不能出售。掷出{@dice d12}并参考下面的表格来确定这些物资。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d12",
+						"Supplies"
+					],
+					"colStyles": [
+						"col-1-5 text-left",
+						"col-6 text-left "
+					],
+					"rows": [
+						[
+							"1-2",
+							"3磅牛油和价值1英镑的弹药"
+						],
+						[
+							"3-7",
+							"价值2英镑的弹药"
+						],
+						[
+							"8-9",
+							"两把通风镐和价值1英镑的弹药"
+						],
+						[
+							"10",
+							"疗伤膏药一贴"
+						],
+						[
+							"11",
+							"两枚港火或一枚烟火手榴弹"
+						],
+						[
+							"12",
+							"隐秘的线索，由DM决定。"
+						]
+					]
+				},
+				"在这个贮藏处，你可以留下一个25字以内的隐藏信息，让忠于你事业的生物或你熟悉的特定生物看到。",
+				"任何发现藏匿处的生物都可以用智力（调查）检查来搜索这个地方，并与你的赌博救赎DC对抗。如果成功，他们就能找到你隐藏的信息。",
+				"要找到死掉的东西，你必须在有忠于你的事业的游击队员的城镇或定居点的郊区附近。在城镇或定居点的一英里范围内，藏匿点的数量由你的DM决定，基于当地的人口和对你的事业的忠诚度。平均而言，藏匿点每周补充一次。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Turncoat",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Mercenary",
+							"shortName": "Turncoat"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Entrap",
+			"source": "NationsAndCannonsStarter",
+			"page": 41,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "hunting trap or firearm"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"通过修补和相当程度的狡猾，你可以为你的敌人设置高级陷阱。",
+				"选择一个狩猎陷阱或你所携带的枪支。你可以制作一个弹簧枪陷阱（如下所述）或固定一个狩猎陷阱以提高其有效性。",
+				"一个改良的狩猎陷阱几乎是不可能被发现的，需要对你的赌博救赎DC进行成功的智力（调查）检查才能辨别出来。当一个生物在面对改良型狩猎陷阱时，其灵巧救赎失败，而不是正常的效果，该生物会受到{@damage 1d8}的穿刺伤害并被{@condition restrained}。每一次解救被困在改良狩猎陷阱中的生物的检查失败，都会对被困的生物造成相当于你的施法能力修饰的穿刺伤害。",
+				"环境影响可能会破坏或降低由诱捕器创造的陷阱的效力，而诱捕器放置的时间超过了24小时。通过花费1分钟，你可以拆除你创造的陷阱，并恢复用于创造它的物品。",
+				{
+					"type": "table",
+					"caption": "Spring-Gun Trap",
+					"colLabels": [],
+					"colStyles": [],
+					"rows": []
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"机械捕集器"
+					]
+				},
+				"当门或箱子被打开时，或当生物走过绊线时，这种陷阱会触发火器。",
+				"当设置绊马索时，绊马索离地3英寸，并在不宽于10英尺的走廊上延伸。发现绊马索的DC是10+创造者的熟练度奖励。",
+				"当设置在箱子、门或其他有铰链的物体中时，当该物体被打开时，火器会被触发。发现机制的DC是12+创造者的熟练度奖励。",
+				"使用盗贼的工具，成功地进行DC13灵巧检查，可以无害地解除弹簧枪的陷阱。如果检查失败，陷阱就会触发。",
+				"当弹簧枪陷阱被触发时，它会对触发它的生物进行一次带有+5奖励的远程攻击。一旦命中，它就会造成枪械的基本伤害（并且不增加能力修饰或任何其他额外伤害）。一旦失误，火器就会被摧毁，无法恢复。"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Arctic",
+							"shortName": "Trailblazer"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Marksman",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Marksman"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Defilade Position",
+			"source": "NationsAndCannonsStarter",
+			"page": 41,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a shovel or pickaxe"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"勘察土地时，你找到了一个充足的区域来抵御炮火。",
+				"选择一个半径为15英尺的自然地形。你加强该区域的自然防御，防止来袭的炮火穿透该阵地。",
+				"这个区域对火炮射击有足够的屏障作用，当火炮击中地形时，它可以阻挡射击。然而，当该阵地被击中时，里面的所有生物必须对针对该地形的火炮的效果进行救赎。",
+				"只要防线还在，阵地上的所有生物都对炮火伤害有抵抗力。",
+				"当持续时间结束时，或者阵地被相当于你的赌博施法修改器的炮火击中，防御工事就会失效，不再保护里面或后面的人免受炮火的影响。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Escalade",
+			"source": "NationsAndCannonsStarter",
+			"page": 42,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "50 feet of rope"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"专注于登山者训练，你在所有力量（田径）检查中获得优势，攀登不需要花费额外的移动。",
+				"如果你把绳子放下来给你的盟友，你可以在持续时间内给予攀爬的力量（竞技）检查优势。",
+				"你可以用块状物固定这根绳子作为一个动作，并在随后的回合中使用一个动作，将一个大尺寸的生物或物体提升到相当于你力量修正值5倍的距离。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Mountain",
+							"shortName": "Trailblazer"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Esprit de Corps",
+			"source": "NationsAndCannonsStarter",
+			"page": 42,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你用一段振奋人心的演讲来支持自己或盟友对你的事业的奉献。选择一个你能看到的范围内的生物，并能听到和理解的生物作为你的冠军。在持续时间内，冠军对{@condition frightened}和{@condition charmed}的免疫，并在每个回合开始时获得10点临时命中率，这些临时命中率不能累积。",
+				"当冠军用武器攻击击中敌方生物时，该生物必须对你的赌博术救赎DC进行魅力救赎。如果救赎失败，该生物在对冠军以外的目标进行攻击时将受到-2的惩罚，直到冠军的下一个回合结束。",
+				"当赌博结束时，冠军会失去这个赌博的任何剩余的临时命中率。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Chaplain",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Chaplain"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SGT",
+				"THP"
+			]
+		},
+		{
+			"name": "Fog of War",
+			"source": "NationsAndCannonsStarter",
+			"page": 42,
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你只能在你身处可以合理隐藏你的自然地形后面时才可以施展这个赌法。躲在掩体后面，你会从你的敌人眼中消失。你和你所穿戴的一切都变得（%0%）。如果你掉落或移除一个物品，该物品不再是（%1%）。如果你移动，进行攻击或施放赌术，赌术结束。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Swamp",
+							"shortName": "Trailblazer"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Renegade",
+					"source": "NationsAndCannonsStarter"
+				}
+			]
+		},
+		{
+			"name": "Non Sequitur",
+			"source": "NationsAndCannonsStarter",
+			"page": 46,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当被搭讪、呼唤或挑战时，你的目标是一些生物，数量与你的施法修改器相当。这些生物必须做一个智力测验，否则就会被卷入争论，变得心烦意乱。如果你或你的同伴正在与任何生物战斗，或者你不说他们的语言，他们在这个救赎上有优势。",
+				"拯救失败时，目标会停止注意你，并且在你下一回合开始前不能对你的动作做出反应。这些生物在接下来的{@dice 1d4}回合内，对感知你的智慧(感知)检查有劣势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Demagogue",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Demagogue"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Renegade",
+					"source": "NationsAndCannonsStarter"
+				}
+			]
+		},
+		{
+			"name": "Fougasse",
+			"source": "NationsAndCannonsStarter",
+			"page": 42,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "shovels and £ 6 worth of ammunition which the gambit consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"你挖一个大坑，用火药、弹丸和碎片填满它，建造一个可以用作原始迫击炮或致命地雷的福格斯。挖好后，你选择制造迫击炮还是陷阱（如下所述）。每增加一个愿意帮助挖坑的带铲子的生物，就会减少10分钟的施法时间，最少也要10分钟的施法时间。",
+				"如果你创建了一个迫击炮，你指定120英尺内的一个点作为迫击炮的目标。你不需要对这个点有视线，但一旦挖好坑，你就不能改变目标。你可以作为一个动作触发爆炸，在以你的目标点为中心的15英尺半径、60英尺高的圆柱体中洒下一片碎片和子弹。任何在爆炸中的生物都必须在DC13的灵巧救赎中成功，如果救赎失败，将受到{@damage 3d8}的火焰伤害和{@damage 3d8}的重击伤害，如果救赎成功，将受到一半的伤害。",
+				"如果在24小时内没有引爆，Fougasse就无法使用，其成分也无法回收。恶劣的天气可能会使fougasse更快不能使用。",
+				{
+					"type": "table",
+					"caption": "Stone Mine",
+					"colLabels": [],
+					"colStyles": [],
+					"rows": []
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"机械捕集器"
+					]
+				},
+				"这种陷阱使用一根连接到卡彭斯装置上的绊马索，点燃埋在地下的粉末。绊线离地3英寸，在两棵树或木桩之间延伸。发现绊线的DC是10+创造者的熟练度奖励。使用盗贼工具成功地进行DC13灵巧检查，可以无害地解除绊线。没有盗贼工具的角色可以用任何带刃的武器或工具尝试这个检定，但处于劣势。如果检定失败，陷阱将被触发。",
+				"当陷阱被触发时，地雷会在以绊线中间为中心的15英尺范围内爆炸。任何在爆炸中的生物都必须在DC13的灵巧救赎中成功，救赎失败会受到3d8的火焰伤害和3d8的重击伤害，救赎成功则受到一半的伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Barbarian",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grenadier",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Grenadier"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Foxfire",
+			"source": "NationsAndCannonsStarter",
+			"page": 43,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a vial of fungi"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将一把真菌和孢子扔向范围内的一个点，引起一阵生物发光。在持续时间内，该区域在10英尺范围内发出昏暗的光。",
+				"当赌博被施放时，在该区域的任何生物必须进行灵巧救赎，否则就会暴露自己的位置，并且在所有的隐身检查中处于劣势，直到他们采取行动将真菌和孢子从自己身上刷掉。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Grassland",
+							"shortName": "Trailblazer"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Harsh Invective",
+			"source": "NationsAndCannonsStarter",
+			"page": 43,
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的辱骂和诅咒使你的对手痛苦不堪。选择一个你能看到的范围内的生物，该生物能听到并理解你。该生物必须做一个智慧救赎动作。如果救赎失败，目标会受到{@damage 2d8}的精神伤害，并且在持续时间内，在你选择的救赎动作中处于劣势。",
+				"在赌局结束前，你可以在随后的每个回合中使用一个额外行动，再次造成这个伤害。如果你与目标没有共同的语言，它将受到一半的伤害，并且在救赎上有优势。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或更高等级的卡槽施展这个赌术时，每超过三级的卡槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Demagogue",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Demagogue"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"ADV",
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Hold the Line",
+			"source": "NationsAndCannonsStarter",
+			"page": 43,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你发表了振奋人心的演讲，鼓励你的同伴们，增强他们继续战斗的决心。你声音中的激情超越了语言。半径30英尺内的所有友好生物，只要拥有一种语言并能看到和听到你，都会变得免疫（%0%），并获得相当于你的施法修改器的所有救赎奖励。",
+				"在赌博结束之前，你可以在你的每个回合使用一个额外的行动，让一个受影响的生物立即移动到他们速度的一半，并采取一个行动。这个动作可以用来攻击（仅限一次武器攻击），冲刺，脱离，隐藏，或使用一个物体，或重新装填或修理一个枪械。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Chaplain",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Chaplain"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Ignite Fervor",
+			"source": "NationsAndCannonsStarter",
+			"page": 43,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的决心和热情激发了盟友在他们的痛苦中奋斗。",
+				"选择一个你能看到的范围内的生物，并能听到和理解你。该生物在持续时间内获得对你选择的近战攻击伤害或远程攻击伤害（火炮的伤害不受影响）的抵抗。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Chaplain",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Chaplain"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Intelligence Network",
+			"source": "NationsAndCannonsStarter",
+			"page": 44,
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你与一个城镇或村庄中忠于你的事业的代理人取得联系。你可以利用这个代理人来收集关于这个定居点或其中的个人的信息（不包括处于不被发现的影响下的个人）。选择以下一项。",
+				"- 了解与某一特定地方官员有关的信息和八卦。",
+				"- 了解有关该镇安置的战术信息。",
+				"- 了解该镇对国王的忠诚度的细分。",
+				"- 了解当地的近期历史。",
+				"- 了解附近驻军或军队营地的细节和布局。",
+				"你的间谍将在8小时内带着你选择收集的信息返回。",
+				"你可以选择收集一个以上的信息作为施展这个赌博的一部分，但这样做会给所有参与者带来风险。从上面的列表中选择一个额外的项目来了解。你可以多次这样做，但每次都会增加出现负面结果的机会。DM掷出{@dice d100}，并参考下表来决定你的间谍是否成功。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d12",
+						"Supplies"
+					],
+					"colStyles": [
+						"col-1-5 text-left",
+						"col-6 text-left "
+					],
+					"rows": [
+						[
+							"1-65",
+							"8小时后，间谍带着信息回来了。"
+						],
+						[
+							"65-75",
+							"你的间谍在执行任务时遇到了困难。他们在8小时后返回，但没有任何信息。"
+						],
+						[
+							"76-85",
+							"你的间谍没有回来，被敌对势力抓住了，他们被告知你在这个定居点的存在。"
+						],
+						[
+							"86-90",
+							"你的间谍因无关的'罪行'而被捕。他们没有回来，但仍然忠诚于你的事业。敌对势力没有被通知你在这个定居点的存在。"
+						],
+						[
+							"91-95",
+							"你的间谍被发现了，但没有被抓。他们在8小时内带着情报回来，但他们已经被敌对部队跟踪回到了你的位置。"
+						],
+						[
+							"96-99",
+							"你的间谍被敌人策反了，他们在8小时内带着可能危及本方的虚假信息返回。敌对势力被告知你在这个定居点的存在。"
+						],
+						[
+							"100+",
+							"你的间谍在执行任务时被杀。他们没有回来，但在你在这个定居点的剩余时间里，敌对势力处于高度戒备状态。"
+						]
+					]
+				},
+				"你派你的间谍去收集的每一个额外的信息，DM都会在模子的结果上再加一个10。",
+				"在一个对你的事业友好的城镇或定居点，DM从这个结果中减去10。在一个对你有敌意的城镇或定居点，DM在这个结果上加10。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Demagogue",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Demagogue"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Turncoat",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Mercenary",
+							"shortName": "Turncoat"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Improvised Artillery",
+			"source": "NationsAndCannonsStarter",
+			"page": 44,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a hollowed out tree trunk found or crafted which the gambit consumes"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"通过加固树干的底座，你可以创造出一门临时大炮，装上圆形的子弹。临时大炮在制造后8小时就会散架。",
+				{
+					"type": "table",
+					"caption": "Makeshift Cannon",
+					"colLabels": [],
+					"colStyles": [],
+					"rows": []
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"中型物体 - 30磅"
+					]
+				},
+				"{@b Armor Class:} 11",
+				"{@b Hit Points:} 20",
+				"{@b Maximum Crew:} 4",
+				"{@b Misfire:} 5",
+				"{@b Range:} 100/150英尺",
+				"{@b Damage Immunities:}毒药，通灵",
+				"{@b Ammunition:}，葡萄注射(1英镑)，圆形注射(1-10英镑)",
+				"这门大炮的射击造成4d8的火炮伤害（关于如何发射和装载火炮的规则，见第四章）。如果你担任炮手，你可以使用你的赌博攻击加成来进行临时大炮的攻击，并使用赌博的施法DC来进行蓄力。",
+				"在误射的情况下，大炮会爆炸，而不是正常的效果。在大炮5英尺范围内的每一个生物都必须根据你的赌术救赎DC做一个灵巧的救赎动作。拯救失败时，生物会受到4d8的火炮伤害，成功时则会受到一半的伤害。",
+				"临时大炮是用一发子弹制造的，额外的子弹可以像平常一样购买或制作。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Marksman",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Marksman"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Leechcraft",
+			"source": "NationsAndCannonsStarter",
+			"page": 44,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "jar of European leeches worth £ 5"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"使用自古以来的治疗方法，你小心翼翼地将水蛭涂抹在愿意的生物的暴露皮肤上。清除这些多余的血液可以使生物恢复活力，恢复其体液平衡。这对那些性格软弱的人来说可能是一种消耗。",
+				"在使用水蛭后，该生物必须做一个宪法救赎动作。你可以选择是否给予该生物在这次救赎中的优势；如果你这样做，该生物将不知道你的选择。",
+				"一旦成功，该生物的最大命中率就会增加{@dice 1d10}+你的施法能力修正值，并获得相同数量的命中率。这些命中率会在赌博的持续时间内持续下去。该生物也会对他们所患的任何和所有的疾病或毒药进行一次新的救治，就像他们已经完成了一次长期休息一样。",
+				"失败时，该生物会被{@condition poisoned}并在持续时间内遭受2级{@condition exhaustion}的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的博弈槽施展此博弈时，成功时该生物的最大命中率增加（%0%），失败时受到3级（%1%）的影响。当你使用5级或更高等级的赌博槽时，该生物在成功时增加其最大命中率（%2%），在失败时受到4级（%3%）的影响。"
+					],
+					"type": "entries"
+				}
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				]
+			}
+		},
+		{
+			"name": "Logjam",
+			"source": "NationsAndCannonsStarter",
+			"page": 45,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "an axe",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"entries": [
+				"擦去额头上的汗水，手握斧头，你准备好展示你对木材的掌控能力。",
+				"选择一个主要由木材构成的障碍物，或者选择一个你购买或采伐的价值4英镑的大量新鲜木材。",
+				"如果你的目标是一个障碍物，如路障、沉船或原木围栏，你就会清除一个40英尺的立方体，把碎片砍掉和拖走，使该地区可以安全穿越。",
+				"如果你的目标是新鲜的木材，你要把原木推出来，形成一个原木陷阱（如下所述）或障碍物。原木障碍物的宽度不能超过10英尺，跨度不能超过40英尺。这个区域是困难的地形，如果没有成功的车辆熟练度检查和你的赌博保存DC，车辆或船只是不能穿越的。",
+				{
+					"type": "table",
+					"caption": "Log Trap",
+					"colLabels": [],
+					"colStyles": [],
+					"rows": []
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"机械捕集器"
+					]
+				},
+				"这种陷阱使用绊线将固定在斜面上的木头堆的楔子移开。绊线离地3英寸，在两棵树或木桩之间延伸。发现绊马索的DC是10+创造者的熟练度奖励。使用盗贼工具成功地进行DC14灵巧检查，可以无害地解除绊线。没有盗贼工具的角色可以用任何带刃的武器或工具尝试这个检定，但处于劣势。如果检定失败，陷阱将被触发。",
+				"任何检查日志的人都可以轻易地确定它们被设置成了一个陷阱，并可以把楔子拉出来作为一个动作，导致陷阱触发。",
+				"当陷阱被触发时，原木会滚下山去，在它们的路径上粉碎生物，一条15英尺宽的线。任何在路径上的生物都必须在DC14的灵巧救赎中成功，否则就会被击倒，救赎失败会受到4d10的重击伤害，救赎成功会受到一半的伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Portage",
+			"source": "NationsAndCannonsStarter",
+			"page": 46,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "nearby natural materials"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"你把你的手浸入一个凉爽的水体，考虑你发现自己所处环境的地形。你回忆从地图、口耳相传或自然哲学中收集到的关于这个水体的信息。你还要确定10英里内是否有可以涉水的地方，水体处于什么潮汐状态，以及水是否可以安全饮用。",
+				"如果水体周围有树木和灌木，你可以用它们来制作一个临时的木筏或独木舟。这种水上交通工具使用赛艇的统计数据，不过它的耐用性只有一半。你每花一小时施展这个赌术，就可以创造出额外的水上交通工具，其数量相当于你的智慧修正值（至少一个）。这些船在创造后的8小时内就会分解。",
+				"在驾驶你创造的飞船时，你被视为精通车辆（水）。如果你已经有了熟练度，在检查驾驶水上交通工具时，你的熟练度加成是双倍。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Coast",
+							"shortName": "Trailblazer"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Rhetoric",
+			"source": "NationsAndCannonsStarter",
+			"page": 46,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你专注于你说话的腔调和措辞，以最好地影响你周围的人。在这个游戏期间，你可以做一个魅力（表现）检查，以代替你要做的任何魅力检查。每当你进行魅力（表现）检查时，将7或更低的（%0%）卷视为8。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Turncoat",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Informant",
+							"shortName": "Turncoat"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ricochet",
+			"source": "NationsAndCannonsStarter",
+			"page": 46,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a firearm loaded with cartridge or patch ammunition"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"作为施展这个赌博的行动的一部分，你必须用你装备的上膛枪支进行一次攻击，目标是你武器范围内的一个生物、物体或车辆。一旦命中，目标将受到攻击的正常效果。",
+				"命中或未命中，子弹都会弹向原目标15英尺内的另一个目标。你不需要有一条通向第二个目标的清晰路径，它也不会从掩护中获得任何奖励。它必须在灵巧救赎中成功，否则也会受到攻击的正常影响。如果你的攻击没有命中，第二个目标在其蓄力投掷上有优势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Marksman",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Marksman"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Ruse de Guerre",
+			"source": "NationsAndCannonsStarter",
+			"page": 46,
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "between 5-20 assisting creatures which must stay within 100 feet of you"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"通过信号火、鼓声、喊声和对地形的创造性利用，你可以使一小群生物看起来像一支庞大的威武之师。当你专注于这个赌局时，你可以与你的盟友协调，让它看起来像一支大部队正朝着你选择的方向前进。你可以让这支部队看起来是在部署战斗，准备围攻，或者是在撤退。",
+				"5英里外的敌方指挥官可以尝试用智慧（洞察力）检查你的博弈保全区，以看穿你的诡计。识别了幻觉的指挥官，可以根据你的盟友的行动来确定你的位置。",
+				"这个幻象的强度与协助赌博的生物数量成正比。如果一个生物在你的位置150英尺范围内，或者正通过望远镜观察，他们在智慧检查中具有优势，可以看穿这个幻象或者追踪你的队伍。在你100英尺范围内的生物可以看穿这个幻象。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Demagogue",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Demagogue"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Sally Forth",
+			"source": "NationsAndCannonsStarter",
+			"page": 46,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"喊着命令，你鼓励一个生物往前冲。选择一个你能在范围内看到的、能听到并理解你的自愿生物。在赌博结束之前，该生物的速度增加一倍，它获得+2 AC的加成，并且在灵巧的救赎动作上有优势。",
+				"目标可以选择在他们的回合中主动结束该效果，以获得一个额外的行动。该行动只能用于攻击（仅限一次武器攻击）、冲刺、脱离、隐藏、使用物品，或重新装填或修理枪械。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Chaplain",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Chaplain"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"ADV",
+				"MAC",
+				"SGT"
+			]
+		},
+		{
+			"name": "Stinkpot",
+			"source": "NationsAndCannonsStarter",
+			"page": 47,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "nails, sulfur, and gunpowder"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"使用有臭味的材料和黑火药的混合物，你创造了一种有毒的爆炸物。",
+				"任何生物都可以用他们的攻击力投掷臭罐手榴弹。如果不使用，臭罐在8小时后就会退化。",
+				{
+					"type": "table",
+					"caption": "Stinkpot Grenade",
+					"colLabels": [],
+					"colStyles": [],
+					"rows": []
+				},
+				{
+					"type": "quote",
+					"entries": [
+						"武术兵器-误射2"
+					]
+				},
+				"当臭罐引爆时，在其引爆点10英尺半径范围内的每个生物都必须做一个DC14的灵巧反射。蓄力失败时，目标会受到2d6的火焰伤害和2d6的穿刺伤害，蓄力成功时则会受到一半的伤害。",
+				"在最初的爆炸之后，在引爆点的15英尺范围内会有一团恶臭的空气。在1分钟内，每个在其回合开始时完全在这团云内的生物必须做一个DC14的宪法救赎动作。如果拯救失败，生物会被毒死，并以半速移动，直到下一回合开始。中等强度的风（至少每小时10英里）会在4个回合后驱散该云。强风（至少每小时20英里）会在1轮后驱散它。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Barbarian",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grenadier",
+							"source": "PHB",
+							"shortName": "Grenadier"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Stock and Barrel",
+			"source": "NationsAndCannonsStarter",
+			"page": 47,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"触摸一个非大师级的枪械。它就会变成大师级的，获得攻击卷的+1，直到赌博结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的赌博槽时，奖励增加到+2。当你使用5级或更高等级的赌博槽时，奖励会增加到+3。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				]
+			}
+		},
+		{
+			"name": "To The Gallows",
+			"source": "NationsAndCannonsStarter",
+			"page": 47,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"通过谴责和威胁，你向你的敌人灌输一种可怕的感觉。选择一种你知道的语言。在以你为中心的20英尺范围内，任何你选择的能理解所选语言的生物都必须做一个智慧救赎动作。拯救失败时，生物会受到（%0%）的精神伤害，拯救成功时，会受到一半的伤害。",
+				"在拯救失败的情况下，受影响的生物也会（%0%），直到他们下一回合结束，因为他们在自己的死亡中挣扎，失去对周围世界的关注。",
+				"如果一个生物的救赎动作成功，该生物在接下来的24小时内对绞刑架免疫。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Firebrand",
+						"source": "NationsAndCannonsStarter"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Firebrand",
+							"source": "NationsAndCannonsStarter"
+						},
+						"subclass": {
+							"name": "Demagogue",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Demagogue"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "War Paint",
+			"source": "NationsAndCannonsStarter",
+			"page": 47,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "paints and pigments"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你在生物的脸上涂抹颜料，作为传统仪式的一部分，或创造一个令人生畏的面孔。",
+				"该生物在其下一次攻击卷中获得优势，并获得{@dice 1d6 + 2}临时命中率。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级以上的赌博槽施放这个赌博时，你可以在1级以上的每一个赌博槽中针对一个额外的生物。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Marksman",
+							"source": "NationsAndCannonsStarter",
+							"shortName": "Marksman"
+						}
+					},
+					{
+						"class": {
+							"name": "Ranger",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Trailblazer",
+							"source": "NationsAndCannonsStarter",
+							"subSubclass": "Grassland",
+							"shortName": "Trailblazer"
+						}
+					}
+				]
+			},
+			"miscTags": [
+				"ADV",
+				"THP"
+			]
+		}
+	]
+}

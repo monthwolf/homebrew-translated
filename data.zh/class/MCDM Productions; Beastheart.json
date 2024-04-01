@@ -1,0 +1,4900 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BST",
+				"abbreviation": "BST",
+				"full": "MCDM - Beastheart and Monstrous Companions",
+				"authors": [
+					"Matt Colville"
+				],
+				"convertedBy": [
+					"ForeverAlwaysGM (Billiam94)"
+				],
+				"version": "1.0.0",
+				"url": "https://shop.mcdmproductions.com/products/beastheart-companions",
+				"color": "539459"
+			}
+		],
+		"optionalFeatureTypes": {
+			"EXP": "Exploit"
+		},
+		"dateAdded": 1648054627,
+		"dateLastModified": 1692309855,
+		"_dateLastModifiedHash": "ba4cceb0ed"
+	},
+	"class": [
+		{
+			"name": "Beastheart",
+			"source": "BST",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"wis"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"{@item battleaxe|phb|battleaxes}",
+					"{@item greataxe|phb|greataxes}",
+					"{@item longbow|phb|longbows}",
+					"{@item net|phb|nets}",
+					"{@item scimitar|phb|scimitars}",
+					"{@item shortsword|phb|shortswords}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) {@item hide armor|phb} or (b) {@item leather armor|phb}, {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+					"(a) two {@item handaxe|phb|handaxes} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"additionalFromBackground": true,
+				"defaultData": [
+					{
+						"a": [
+							"chain mail|phb"
+						],
+						"b": [
+							"leather armor|phb",
+							"longbow|phb",
+							"arrows (20)|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "handaxe|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13,
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Primal Exploits"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Companion|Beastheart|BST|1",
+				"Natural Language|Beastheart|BST|1",
+				"Primal Exploits|Beastheart|BST|2",
+				"Superior Ferocity|Beastheart|BST|2",
+				{
+					"classFeature": "Companion Bond|Beastheart|BST|3",
+					"gainSubclassFeature": true
+				},
+				"Master Caregiver|Beastheart|BST|3",
+				"Ability Score Improvement|Beastheart|BST|4",
+				"Beyond Instinct|Beastheart|BST|5",
+				"Improved Signature Attack|Beastheart|BST|5",
+				"Faithful Companion|Beastheart|BST|6",
+				"Rejuvenating Ferocity|Beastheart|BST|6",
+				{
+					"classFeature": "Companion Bond Feature|Beastheart|BST|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Beastheart|BST|8",
+				"Primal Strike|Beastheart|BST|8",
+				"Mystic Connection|Beastheart|BST|9",
+				"Primal Exploits|Beastheart|BST|10",
+				"Beyond Instinct Improvement|Beastheart|BST|10",
+				"Improved Signature Attack|Beastheart|BST|11",
+				{
+					"classFeature": "Companion Bond Feature|Beastheart|BST|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Beastheart|BST|12",
+				"Loyal to the End|Beastheart|BST|13",
+				"Keen Senses|Beastheart|BST|14",
+				"Primal Strike Improvement|Beastheart|BST|14",
+				"Beyond Instinct Improvement|Beastheart|BST|15",
+				{
+					"classFeature": "Companion Bond Feature|Beastheart|BST|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Beastheart|BST|16",
+				"Primal Exploits|Beastheart|BST|17",
+				"Improved Signature Attack|Beastheart|BST|17",
+				"Summon the Wilds|Beastheart|BST|18",
+				"Ability Score Improvement|Beastheart|BST|19",
+				"Unbreakable Friendship|Beastheart|BST|20"
+			],
+			"subclassTitle": "Companion Bonds",
+			"fluff": [
+				{
+					"name": "The Beastheart",
+					"source": "BST",
+					"type": "section",
+					"entries": [
+						"一个半兽人骑在布莱特的背上从沙地里冲出来，跃入空中。他们用大剑在装甲的骷髅中劈出一条路，而他们的坐骑则向相反的方向冲去，在他们身后留下一团骨头粉末。",
+						"一个半身人骑在一只绿龙宝宝的背上飞过一片燃烧的森林。狼人嗅着空气，大声叫喊，用爪子指着一条安全的路，引导恐惧的森林生物穿过大火。",
+						"在他们的巨型蜘蛛同伴旁边倒着溜达，半精灵覆盖着网的脚让他们牢牢地贴在洞穴的天花板上。下面的强盗们不知道他们的营地已经被渗透了，他们攻击当地定居点的日子已经到头了。",
+						"野兽之心是一个冒险家，他与一个野生动物形成了友谊的纽带，并且随着时间的推移，他从这种纽带中获得了力量。作为一个团队，兽心人和他们忠实的伙伴可以进行最危险的冒险，挑战任何怪物，克服任何障碍。",
+						{
+							"type": "entries",
+							"name": "Supernatural Bond",
+							"entries": [
+								"兽心和同伴之间的联系不仅仅是爱和敬佩的关系。它是一种神秘的纽带，使兽心人能够利用他们同伴的愤怒、力量和生存本能。当他们的同伴被激怒时，兽心会将这种凶猛的力量转化为超自然的武术行为。作为回报，野生伴侣可以利用兽心的注意力和方向。",
+								"这种超自然的亲属关系可以在很长一段时间内形成。有些兽人在孩童时期就与非正统的宠物或野生保护者结合在一起，随着双方的成长而变得越来越亲密。其他兽心人在荒野中长大，在野生动物中长大，甚至被它们养大，以此来学习尊重和拥抱大自然的力量。但兽心的纽带也可以更快形成，通常是在面临巨大压力的时候。一个在野外迷路和挨饿的人，当他们与一个通过提供食物和庇护所而拯救他们生命的生物联系在一起时，就可能成为兽心。或者，一个受伤并被偷猎者围困的野生生物可以与一个拯救他们生命的角色交好，而这个生物的感激之情也会促成兽心的结合。",
+								"不是每个人都能成为兽心，就像不是每个动物都能成为同伴一样。两人必须拥有与生俱来的野性和坚定不移的信任，才能形成这种罕见的友谊。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Companions, Not Pets",
+							"entries": [
+								"大多数兽心人并不希望完全驯服他们的野生朋友，因为这样做会剥夺心爱的同伴的个性和战斗精神。相反，兽心人把自己看作是一个照顾者，照顾一个和自己的心一样猛烈和开放的伙伴。伴侣也有类似的观点，把他们的兽心当作群体的一员，把照顾者当作随时准备探索、狩猎和游戏的兄弟姐妹。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Wild at Heart",
+							"entries": [
+								"在外人看来，兽心人和同伴似乎是平等的（同伴很可能也这么认为！）但兽心人总是意识到，他们的同伴是一种自然力量，而不是一种被驯化的生物。因此，兽心人接受他们的同伴可能没有能力进行深刻的反省，因为大多数同伴都是活在当下，不纠结于过去，而且很少考虑到未来。因此，兽心人有责任为他们自己和他们的野生朋友做这些事情，对同伴负责，就像父母对孩子的关心一样，如果他们所关心的那颗野性的心曾经静止过，他们也会感到悲伤。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Untamed Pair",
+							"entries": [
+								"就像在他们身边跟踪和探索的同伴一样，野兽之心与自然界有着奇妙的联系，使他们能够追踪猎物，在恶劣的环境中生存，甚至与不是他们同伴的野生生物相处。许多兽灵在荒野中是最自在的，他们在星空下睡觉，享受大自然的恩赐。即使兽心人和他们的同伴在城镇中生活，他们的脑海中也常常浮现出定居点外的未被驯服的荒野或定居点下的地下深处，不断召唤他们去冒险。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Beastheart",
+							"entries": [
+								"当你创造你的兽心人物时，考虑你与你的同伴的友谊历史。你是在小时候发现了这个生物并一起长大的吗？还是你最近才与它们建立起联系？这是你的第一个同伴吗？你是第一个与你的同伴以这种方式结合的人吗？想一想你们成为朋友的时刻和你们已经面临的考验。你们可能一起在荒野中生存，而其中一个人受伤了。你可能从战利品猎人手中救了你的同伴。或者你的同伴可能反而因为击退了一个致命的敌人而救了你的命。",
+								"考虑你的同伴的个性和品味。他们是粗野的还是懒惰的？孤僻还是友好？你们可以一起表演什么技巧？你的伴侣最喜欢的食物是什么？你还应该考虑你的伴侣和你在外表或性格上如何互补。你的外貌与他们的外貌是相映成趣还是形成对比？你们都喜欢什么活动？你如何与你的伴侣沟通？你又是如何鼓励他人与你的朋友沟通并表示尊重的？"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"你可以通过以下建议快速制作一个兽心。首先，让灵巧成为你最高的能力得分（如果你想使用近战武器，则是力量），其次是智慧。第二，选择外乡人的背景。"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/life/heart-area-circle-red-green.webp"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Companion",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 1,
+			"entries": [
+				"在1级时，你获得一个同伴生物，在你的冒险中陪伴你，与你一起战斗、探索和生活。你可以选择本补编或其他MCDM补编中的任何同伴。你也可以在MCDM子论坛和MCDM Discord服务器中找到一些很酷的同伴。同伴部分有关于你可以为你的兽心选择的15种同伴生物的信息，以及关于使用同伴的规则的信息（包括凶猛和进入狂暴状态）。",
+				"你与同伴的超自然联系将他们的生命与你的生命联系在一起，使你能够帮助你的同伴克服最严重的伤痛。如果你的同伴失去了生命值或已经死亡，你可以花1分钟时间对你同伴的灵魂进行冥想。然后同伴就会恢复所有的命中率，如果他们已经死了，就会恢复生命，而你会获得一个等级的（%0%）。如果同伴的身体被摧毁，他们会在你的5英尺范围内进行改造。",
+				"在你获得该等级的等级后，第一次完成长时休息，你可以与你选择的一个新同伴结合，该同伴以GM决定的方式到达你身边5英尺内的一个无人空间。如果你已经有了这个功能的同伴，那么当新同伴到达时，他们就会离开，自生自灭。"
+			]
+		},
+		{
+			"name": "Natural Language",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 1,
+			"entries": [
+				"从1级开始，你可以理解并与你的同伴以及所有野兽和怪兽进行口头交流。这个功能不允许你交流复杂的思想或问题，但你可以做简单的陈述（比如向其他生物表明你对它们没有恶意）或问一些简单的问题（比如最近的水体的位置，或者最近是否有一个具有独特外观的特定个体经过这个地区）。这类生物的知识和意识受到它们智力的限制，而GM则决定一个特定的生物是否有交流的心情。在与使用此功能的野兽或怪兽交谈时，你可以用智慧（动物处理）检查代替魅力检查来影响该生物。"
+			]
+		},
+		{
+			"name": "Primal Exploits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 2,
+			"entries": [
+				"从2级开始，你学会将你的同伴的愤怒引导到被称为 \"原始探索 \"的非凡行为中，这些行为由你的同伴的凶猛所推动。",
+				"你学会了三种你选择的原始利用，详情如下。每当你在这个等级中获得一个等级，你可以从你所知道的原始利用中选择一个，并用另一个原始利用来代替它，为此你必须拥有相应的兽心等级。",
+				"有些漏洞是用你的反应激活的。其他的则是在特定情况下可以使用，但不需要行动。有些漏洞是作为攻击行动的一部分被激活的，在这种情况下，你每回合只能使用一个这样的漏洞。",
+				"所有的漏洞都需要你花费你同伴的力量来使用它们。当你使用漏洞时，你的同伴必须在你的60英尺范围内，并且必须拥有至少与漏洞成本相等的凶猛程度。当你使用漏洞时，同伴会失去与成本相等的力量。即使你的同伴是（%0%），你也可以使用漏洞，只要他们有适当的凶猛程度。当你的同伴已经进入狂暴状态时，你不能使用漏洞。",
+				"有些漏洞允许同伴进行一次标志性攻击。这种标志性的攻击不能用额外的漏洞来修改，也不能作为猛烈行动的一部分来使用。",
+				{
+					"type": "abilityDc",
+					"name": "Exploit",
+					"attributes": [
+						"wis"
+					]
+				},
+				"当你在2级获得此功能时，或在10级和17级获得新的功能时，你可以采取以下任何一种利用方式。",
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 3,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Aid Us, Friend (3 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Bring Them Down (4 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Drag Them (4 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Feral Reflexes (2 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Hurricane Blow (3 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "No Escape (1+ Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Primal Pounce (3 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Quick Hide (2 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Thrash (4 Ferocity)|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Superior Ferocity",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 2,
+			"entries": [
+				"同样在2级的时候，每当你的同伴使用一个需要生物进行能力检查或蓄力的凶猛动作时，同伴可以使用你的原始探索蓄力DC来代替正常DC。"
+			]
+		},
+		{
+			"name": "Companion Bond",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以选择一种与你的同伴共享的特殊结合。选择凶猛的结合、猎人的结合、地狱的结合、原始的结合、或保护者的结合。"
+			]
+		},
+		{
+			"name": "Master Caregiver",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"animal handling": true
+				}
+			],
+			"entries": [
+				"同样在3级时，你获得对动物处理技能的熟练度。如果你已经熟练掌握了处理动物的技能，那么在你使用该技能进行能力检查时，你的熟练度加成会加倍。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Beyond Instinct",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 5,
+			"entries": [
+				"在5级时，由于你的照顾，你的同伴的坚韧和多才多艺得到了增长。你和你的同伴获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"每当你的同伴在你的回合开始时获得凶猛，他们会额外获得1个凶猛。",
+						"你的同伴获得对你所选择的一种能力得分的救赎的熟练程度。",
+						"你的同伴获得以下技能的熟练度，你可以选择其中一项。杂技，动物处理，运动，恐吓，调查，感知，表演，神机妙算，隐身，或生存。当你的同伴使用调查技能进行能力检查时，可以用智慧代替智力；当他们使用恐吓或表演技能进行能力检查时，可以用力量或灵巧代替魅力。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Improved Signature Attack",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 5,
+			"entries": [
+				"在5级时，当你的同伴用他们的招牌攻击击中时，攻击会造成一个额外的武器伤害模子。",
+				"此外，为了克服对非魔法攻击和伤害的抵抗和免疫，你的同伴的攻击和凶猛行动造成的伤害也算作魔法。"
+			]
+		},
+		{
+			"name": "Faithful Companion",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 6,
+			"entries": [
+				"在第6级时，你与同伴的超自然联系会增长，使你能更快地协调，并能更好地与你的所有盟友一起工作。你不再需要使用你的奖励行动来指挥你的同伴。相反，只要你不是{@condition incapacitated}，你就可以简单地用不需要行动的语言或肢体符号来指挥他们采取一个行动。",
+				"此外，当你的同伴在你不在时进入狂暴状态（%0%），并且他们能看到或听到你，他们不会自动向最近的生物移动和攻击。相反，你可以选择同伴在你的回合中移动的位置，以及他们用他们的招牌攻击攻击哪个生物。"
+			]
+		},
+		{
+			"name": "Rejuvenating Ferocity",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 6,
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": 1,
+				"count": "@abilities.wis.mod"
+			},
+			"entries": [
+				"同样在6级时，你的同伴可以在战斗中利用自己的怒气来恢复自己的活力。你可以使用一个额外的动作来消耗你同伴的任何数量的怒气，同伴会重新获得与所消耗的怒气相等的命中率。你可以使用这个功能的次数与你的智慧修饰值相等（最少一次），当你完成一个长时间的休息时，可以重新获得所有的使用。"
+			]
+		},
+		{
+			"name": "Companion Bond Feature",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 7,
+			"entries": [
+				"在第7级时，你从你的同伴契约中获得一个额外的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Primal Strike",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 8,
+			"entries": [
+				"8级时，你获得了为你的武器攻击注入原始能量的能力。在你每个回合中，当你用武器攻击击中一个生物时，你可以使攻击对目标造成额外的1d8伤害。伤害类型由你在获得该特性时决定，并从以下列表中选择：酸、冷、火、闪电、毒或雷。每当你在这个等级中获得一个等级，你可以将这个特征的伤害类型改为列表中的另一个类型。"
+			]
+		},
+		{
+			"name": "Mystic Connection",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 9,
+			"entries": [
+				"在9级时，你与你的同伴的联系会赋予你一种天赋。你的神秘联系的好处取决于你的同伴。如果你获得了一个新的同伴，你的新同伴的神秘连接的好处将取代旧的。",
+				"{@bold {@italic Basilisk.}}作为一个额外动作，你的皮肤会被一层灵活的石头覆盖，持续10分钟。在涂上石头时，你对击打、穿刺和砍击伤害有抵抗力。在你完成一次长时间的休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Blood Hawk.}} 作为一个额外动作，你获得一个相当于你行走速度的飞行速度，持续1小时。在你完成一次长时间的休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Bulette.}} 作为一个额外动作，你获得一个相当于你步行速度的钻地速度，持续10分钟。在你完成一次短时或长时休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Deinonychus.}} 你可以采取隐藏行动作为一个额外的行动。你可以使用这个好处的次数等于你的智慧修改器（最少一次），当你完成长期休息时可以恢复所有的使用。",
+				"{@bold {@italic Dragon Wyrmling.}}作为一个额外动作，你给你持有的武器注入龙族的力量，持续10分钟。当此力量生效时，使用该武器的攻击会造成额外的1d10伤害，其类型与你的巫妖血统特质有关。在你完成长时间的休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Earth Elemental.}}作为一个额外动作，你的身体会变成泥土和石头，持续10分钟。在这种形态下，你可以穿过由土或石制成的非魔法物体。如果你在一个物体内结束你的回合，你会受到{@damage 1d10}力的伤害，并被分流回你进入该物体的空间。在你完成长时间的休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Gelatinous Cube.}}你的身体变得灵活，呈胶状。作为一个动作或额外动作，你可以将你持有的微小物体吸收到你的身体里，因此其他人无法接触到它。作为一个行动或额外行动，你可以将吸收的物体排泄到你的一只空手中，或让它落在你的脚边。你一次最多可以吸收四个物体。当你死亡时，任何被吸收的物体都会从你的身体里掉出来。",
+				"此外，当你周围5英尺内的另一个生物用近战攻击击中你时，你可以使用反应对攻击者造成（%0%）酸液伤害。在你完成短时或长时休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Giant Spider.}}你获得一种次要的感觉，可以警告你有危险。你在主动性卷轴上有优势，而且在你没有丧失能力的情况下，你不能被吓到。",
+				"{@bold {@italic Giant Toad.}}你可以屏住呼吸1小时，并获得相当于你行走速度的游泳速度。此外，你可以进行跳远或跳高，就像你有一个跑步起点一样，即使你没有。",
+				"{@bold {@italic Giant Weasel.}} 作为奖励动作，你使你的牙齿变成尖锐的黄鼠狼牙，持续1分钟，允许你对你5英尺内的目标进行咬合攻击，作为奖励动作。这是一个自然武器攻击，造成{@damage 1d10}穿刺伤害，可以使用你的力量或灵巧修正值进行攻击和伤害卷。在你完成长时间的休息之前，你不能再次使用这个技能。",
+				"{@bold {@italic Hell Hound.}}作为一个额外动作，你将自己笼罩在地狱之火中10分钟。当你以这种方式被笼罩时，5英尺范围内任何以近战攻击击中你的生物或在一个回合内首次触及你的生物都会受到{@damage 2d6}的火焰伤害。在你完成一次长时间的休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Mimic.}} 作为一个额外动作，你可以触碰一个小型或更小的非魔法物品，并将其多态化为任何其他一般大小和重量相同的非魔法物品，而且其价值不能超过原物品的价值。该物体在1小时内保持多形性，如果你离开该物体超过30英尺，多形性会提前结束，或者你可以选择提前结束它作为一个动作。用任何以这种方式多化的材料作为法术的材料成分会导致该法术失败。在你完成短时或长时的休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Owlbear.}}作为一项行动，你会释放出一个鼓舞人心的叫声。在你30英尺范围内，你选择的每个能听到你的生物都会获得与你的角色等级相等的临时打击点数。在你完成一次长时休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Sporeling.}} 当你用武器攻击击中另一生物时，你为攻击注入特殊孢子，使目标的攻击卷轴处于劣势，直到他们下一回合结束。在你完成短时或长时休息之前，你不能再次使用这个好处。",
+				"{@bold {@italic Worg.}}你的行走速度增加10英尺。"
+			]
+		},
+		{
+			"name": "Primal Exploits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 10,
+			"entries": [
+				"在达到10级时，你可以获得以下探索的机会。",
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 2,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Crushing Charge (8 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Expanding Fury (6 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Furious Vengeance (5 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Marked Prey (4 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Primal Shout (6 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Wrath of the Pack (4 Ferocity)|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Beyond Instinct Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 10,
+			"entries": [
+				"当你达到10级时，你的同伴获得的额外凶猛程度增加到3级。你的同伴获得对你选择的另一种救赎的熟练程度，并获得对上述列表中另一种技能的熟练程度。"
+			]
+		},
+		{
+			"name": "Improved Signature Attack",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 11,
+			"entries": [
+				"11级时，你的同伴的招牌攻击所造成的额外伤害会增加一个骰子，总共有三个伤害骰子。"
+			]
+		},
+		{
+			"name": "Companion Bond Feature",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 11,
+			"entries": [
+				"在11级时，你从你的同伴纽带中获得一个额外的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Loyal to the End",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 13,
+			"entries": [
+				"在13级时，即使是有害的魔法也不能动摇你和你的同伴对彼此和朋友的忠诚度。你和你的同伴不能成为（%0%）或（%1%）。"
+			]
+		},
+		{
+			"name": "Keen Senses",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 14,
+			"entries": [
+				"在14级时，你的感官变得更加敏锐，变得类似于那些可怕的捕食者。你在依靠听觉、视觉或嗅觉的智慧（感知）检查中具有优势。此外，你可以把搜索动作作为一个额外的动作。"
+			]
+		},
+		{
+			"name": "Primal Strike Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 14,
+			"entries": [
+				"当你达到14级时，你的原始打击的额外伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Beyond Instinct Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 15,
+			"entries": [
+				"当你达到15级时，你的同伴获得的额外凶猛度增加到5。 你的同伴获得对你所选择的另一种拯救方式的熟练度，并获得对上述列表中另一种技能的熟练度。"
+			]
+		},
+		{
+			"name": "Companion Bond Feature",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 15,
+			"entries": [
+				"在15级时，你从你的同伴纽带中获得一个额外的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Primal Exploits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 17,
+			"entries": [
+				"在达到17级时，你可以获得以下探索的机会。",
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 2,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Blood Sport (16 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Break the Earth (14 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Bury the Dead (16 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Imbue Projectile (14 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Rend (12 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Spirit Form (14 Ferocity)|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Improved Signature Attack",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 17,
+			"entries": [
+				"17级时，你的同伴的招牌攻击所造成的额外伤害会增加一个骰子，总共有四个伤害骰子。"
+			]
+		},
+		{
+			"name": "Summon the Wilds",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 18,
+			"entries": [
+				"在18级时，你可以召唤出附近的生物作为分散注意力的蜂群。根据你的位置，这个部落可以由鸟类、鱼类、昆虫、啮齿动物或其他你选择的类似生物组成。作为一个动作，你呼唤这些生物，它们会立即到达并占据一个30英尺的立方体，以你能看到的120英尺内的一个点为中心。虫群持续1分钟。在你的每个回合中，你都可以使用一个额外的行动来将虫群向任何方向移动最多30英尺。",
+				"你所选择的每一个生物，在开始他们的回合时，必须用智慧救赎来对抗你的利用救赎DC，否则在能力检查、攻击卷和救赎上都会处于劣势，并且他们的被动智慧（感知）得分会受到-5的惩罚，直到他们下一个回合开始。",
+				"在你完成短期或长期休息之前，你不能再次使用这个功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Unbreakable Friendship",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"level": 20,
+			"entries": [
+				"在20级时，你对你的同伴的感情和友谊给这个生物注入了原始的能量，使他们成为同类的典范。当你至少有1个命中率并且你的同伴能看到或听到你时，你和你的同伴获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你在智慧（动物处理）检查中自动成功，以防止你的同伴进入狂暴状态。(如果你想让你的同伴故意进入狂暴状态，你可以选择不做检查）。",
+						"如果你的同伴被降低到0点命中率但没有被彻底杀死，他们反而会下降到1点命中率。",
+						"每当你掷出主动权时，你的同伴就会获得（%0%）的凶猛。"
+					]
+				}
+			]
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Hunter's Instincts",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Hunter",
+			"subclassSource": "BST",
+			"level": 3,
+			"entryData": {
+				"expertise": [
+					{
+						"survival": true
+					}
+				]
+			}
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Aid Us, Friend (3 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"每当你采取攻击行动时，你都可以激活这个漏洞。在你攻击之前或之后，你的同伴可以采取帮助行动作为一个额外的行动。"
+			],
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		},
+		{
+			"name": "Bring Them Down (4 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴用他们的招牌攻击击中一个生物时，你可以用你的反应来命令同伴把目标拽下来。目标必须在力量救赎中成功，否则就会倒下（%0%）。"
+			]
+		},
+		{
+			"name": "Drag Them (4 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴用他们的招牌攻击击中一个大型或小型生物，并且同伴和目标都站在地面上时，你可以用你的反应来命令你的同伴移动该目标。目标必须做一个力量救赎的动作。如果失败，同伴会在你选择的任何方向上移动至其行走速度的一半，并拉着目标一起移动。"
+			]
+		},
+		{
+			"name": "Feral Reflexes (2 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你或你的同伴被攻击击中时，你可以使用你的反应来增加目标的AC值2，以对抗触发的攻击。"
+			]
+		},
+		{
+			"name": "Hurricane Blow (3 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"每当你采取攻击行动时，你都可以激活这个漏洞。本回合你第一次用武器攻击击中一个生物时，攻击会产生正常的效果，并且你可以将目标推到离你最远的10英尺。"
+			]
+		},
+		{
+			"name": "No Escape (1+ Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"在你的回合开始时，当你的同伴获得凶猛而没有进入狂暴状态时，你可以在凶猛中花费你的智慧修改器（最少1；不需要行动）。直到你下一个回合开始时，你的速度或你同伴的速度（你选择）增加5英尺×所花费的凶猛程度。"
+			],
+			"foundryImg": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp"
+		},
+		{
+			"name": "Primal Pounce (3 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴用他们的招牌攻击击中一个生物时，你可以用你的反应来命令同伴抓取目标。目标必须做一个灵巧的蓄力动作。一旦失败，同伴就会抓住目标，而目标会被{@condition grappled}（逃脱DC等于你的利用救赎DC）。如果你的同伴攻击目标以外的生物，抓捕也会结束。"
+			]
+		},
+		{
+			"name": "Quick Hide (2 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"每当你采取攻击行动时，你都可以激活这个漏洞。本回合你第一次用武器攻击击中一个生物时，如果你的同伴能够躲藏，他们可以采取隐藏动作作为反应。"
+			]
+		},
+		{
+			"name": "Thrash (4 Ferocity)",
+			"source": "BST",
+			"page": 28,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴用近身攻击击中一个大型或小型生物时，你可以用你的反应来命令同伴将目标从一边打到另一边，迫使他们做一个智慧救赎动作。如果失败，目标在攻击卷中处于劣势，而对目标的攻击卷则具有优势，直到你下一个回合开始。"
+			],
+			"foundryImg": "icons/magic/fire/beam-jet-stream-spiral-yellow.webp"
+		},
+		{
+			"name": "Crushing Charge (8 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你在一条直线上以你的速度移动，而不会引起机会攻击。你可以在其他生物的空间中移动，但必须在一个无人的空间中结束你的移动。除了你的同伴之外，你移动过的空间中的每个生物都必须做一个力量救赎动作。如果失败，生物会受到{@damage 4d6}重击伤害并被击倒{@condition prone}。成功时，生物会受到一半的伤害，并且不会被击倒（%2%）。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Expanding Fury (6 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴使用凶猛行动影响到同伴特定距离内的生物时，你可以使用你的反应将该距离扩大10英尺。"
+			]
+		},
+		{
+			"name": "Furious Vengeance (5 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当一个生物用近战攻击击中你或你的同伴时，你可以用你的反应对攻击者造成（%0%）的精神伤害。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Marked Prey (4 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴使用一个需要生物做出救赎动作的凶猛动作时，你可以使用你的反应在救赎上施加不利条件。"
+			]
+		},
+		{
+			"name": "Primal Shout (6 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你释放出威胁性的吼声。在你周围15英尺内能听到你的每个生物都必须在智慧救赎中成功，否则就会变成你的（%0%），直到你下一回合结束。"
+			]
+		},
+		{
+			"name": "Wrath of the Pack (4 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你用攻击击中一个生物，并且该生物在你同伴的5英尺范围内，你可以让你的同伴对该生物进行一次签名攻击（不需要行动）。一旦命中，攻击会产生正常效果，目标会被击倒（%0%）。"
+			]
+		},
+		{
+			"name": "Blood Sport (16 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你用近战武器攻击击中大型或小型生物时，你还可以将目标推到离你最远的30英尺处，并将其击倒（%0%）。如果目标在你同伴的5英尺范围内结束这个动作，同伴可以对目标进行一次签名攻击（不需要行动）。一旦命中，攻击会产生正常的效果，并且目标会被推到离你的同伴最远的30英尺处。如果目标在你5英尺范围内结束这个动作，你可以对他们进行一次近战武器攻击（不需要行动），如果命中会造成额外的（%1%）伤害。"
+			]
+		},
+		{
+			"name": "Break the Earth (14 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你在60英尺范围内的地面、地板或其他表面上打开一个半径为10英尺的坑。坑可以达到50英尺深，这取决于它被打开的地表下的深度。当坑打开时，站在该区域的每个生物必须做一个灵巧的蓄力动作。如果失败，生物就会掉进坑里，每下降10英尺受到{@damage 1d6}重击伤害，并落地{@condition prone}。如果成功，该生物会移动到他们选择的坑边上的一个无人空间。一个生物可以爬上坑的粗糙墙壁，而不需要进行能力检查。"
+			]
+		},
+		{
+			"name": "Bury the Dead (16 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你和你的同伴在一个生物的5英尺范围内时，你可以使用一个动作，使一个充满碎石和泥土的恶性旋风在该生物周围升起，该生物必须做一个灵巧的救命动作。如果失败，该生物会受到{@damage 8d6}的重击伤害，被击倒{@condition prone}，并被{@condition restrained}。成功时，目标会受到一半的伤害，并且不会被击倒（%3%）或（%4%）。这样的生物{@condition restrained}可以用一个动作对你的利用救赎DC进行力量(运动)检查，成功后可以释放自己。"
+			]
+		},
+		{
+			"name": "Imbue Projectile (14 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你进行一次远程武器攻击。无论攻击是否命中，一道能量波都会从攻击中使用的武器或弹药中爆发出来，以你的目标为中心。在目标20英尺范围内的每个生物（包括目标，不包括你的同伴）必须做一个灵巧的蓄力动作，如果蓄力失败，将受到（%0%）力量伤害，如果蓄力成功，将受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Rend (12 Ferocity)",
+			"source": "BST",
+			"page": 29,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个行动，在你和你的同伴的5英尺范围内选择一个你能看到的生物。你对目标进行一次近战武器攻击，你的同伴对目标进行一次签名攻击（不需要行动），如果你们都击中并对目标造成伤害，则目标被击倒（%0%），并受到任何一次攻击造成的额外（%1%）的伤害（你选择）。"
+			]
+		},
+		{
+			"name": "Spirit Form (14 Ferocity)",
+			"source": "BST",
+			"page": 30,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Beastheart"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个额外的动作，你可以让你和你的同伴变成无体状态，直到你下一个回合结束。在无体状态下，你们每个人都能抵抗酸、冷、火、闪电和雷电伤害，以及来自非魔法攻击的击打、穿刺和切割伤害。在无体状态下，你和你的同伴各自获得一个相当于你们各自行走速度的飞行速度，并且你们每个人都可以在其他生物和物体中移动，就像它们是困难的地形一样。如果你在一个物体内结束你的回合，你们中的任何一个人都会受到（%0%）武力伤害。"
+			]
+		},
+		{
+			"name": "Drain Them (4 Ferocity)",
+			"source": "BST",
+			"page": 36,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴用他们的招牌攻击击中另一个生物时，你可以用你的反应让你的同伴重新获得相当于所受伤害一半的打击点数。"
+			]
+		},
+		{
+			"name": "Hellish Wound (4 Ferocity)",
+			"source": "BST",
+			"page": 36,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你的同伴用他们的攻击击中另一个除构装体或亡灵以外的生物时，你可以让攻击对该生物造成一个地狱般的伤害（不需要行动）。在他们每个回合开始时，有地狱之伤的目标每有一个地狱之伤就会失去（%0%）的命中率。如果目标接受了魔法治疗，或者如果任何生物使用行动，通过成功的智慧（医学）检定来抑制伤口，其DC等于你利用的救赎DC，那么目标的所有地狱般的伤口都会关闭。"
+			]
+		},
+		{
+			"name": "Infernal Teleport (4 Ferocity)",
+			"source": "BST",
+			"page": 36,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你或你的同伴（你选择）被旋转的阴影和烟雾所包围。目标会被传送到他们起始位置90英尺内的一个无人的空间。"
+			]
+		},
+		{
+			"name": "Wicked Deception (3 Ferocity)",
+			"source": "BST",
+			"page": 36,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个行动，选择一个你能看到的30英尺内对你有敌意的生物。该生物必须在智慧救赎中成功，否则会突然将你和你的同伴视为朋友，直到你下一回合结束。在这种状态下，该生物无法攻击或以其他方式伤害你或你的同伴。如果你或你的同伴攻击受影响的生物，这个效果会提前结束。对{@condition charmed}条件免疫的生物不能受此利用的影响。"
+			]
+		},
+		{
+			"name": "Brimstone Teleport (8 Ferocity)",
+			"source": "BST",
+			"page": 38,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你传送到一个你能看到的30英尺内无人的空间。在你离开的空间的5英尺范围内的每个生物和在你的目的地空间的5英尺范围内的每个生物必须做一个灵巧的蓄力动作，如果蓄力失败会受到{@damage 4d6}火力伤害，如果蓄力成功会受到一半的伤害。你和你的同伴不会受到这个效果的伤害。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Chains from Hell (8 Ferocity)",
+			"source": "BST",
+			"page": 38,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你会显现出火热的锁链，试图缠绕在你所看到的30英尺范围内的最多三个生物上。每个目标必须做一个灵巧的蓄力动作。如果失败，目标会受到{@damage 4d6}的火焰伤害，并被{@condition restrained}，直到你下一回合结束。成功时，目标会受到一半的伤害，并且不会受到（%2%）。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Dark of Hell (8 Ferocity)",
+			"source": "BST",
+			"page": 38,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个行动，你使你的同伴在10英尺的范围内散发出一个神奇的黑暗光环，直到你下一个回合结束。你和你的同伴可以在这个黑暗中看到东西，而这个黑暗会随着你的同伴移动。"
+			]
+		},
+		{
+			"name": "Infernal Flames (8 Ferocity)",
+			"source": "BST",
+			"page": 38,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你会使一股火焰从你的同伴身上喷发出来。在同伴20英尺范围内的每个生物都必须做一个灵巧的蓄力动作，如果蓄力失败，将受到{@damage 4d10}的火焰伤害，如果蓄力成功，将受到一半的伤害。你和你的同伴不会受到这个效果的伤害。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Poison Rain (8 Ferocity)",
+			"source": "BST",
+			"page": 38,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Infernal"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个行动，你使有毒的绿色雨滴落在一个20英尺的立方体中，以你在60英尺范围内可以看到的点为中心。除了你和你的同伴之外，该区域内的每个生物都必须在宪法规定的投掷中获得成功，否则就会变得（%0%），直到你下一个回合结束。"
+			]
+		},
+		{
+			"name": "Elemental Shield (3 Ferocity)",
+			"source": "BST",
+			"page": 39,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你能看到的30英尺范围内的生物受到酸、冷、火、闪电或雷的伤害时，你可以使用一个反应来使受影响的生物对该伤害类型产生抗性（包括对触发的攻击），直到他们下一回合结束。"
+			]
+		},
+		{
+			"name": "Freezing Strike (2 Ferocity)",
+			"source": "BST",
+			"page": 39,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"每当你采取攻击行动时，你都可以激活这个漏洞。本回合你第一次用武器攻击击中一个生物时，攻击会造成额外的（%0%）寒冷伤害，并且目标的速度会降低10英尺，直到你下一回合开始。",
+				"当你达到5级（{@damage 2d6}）、11级（{@damage 3d6}）和17级（{@damage 4d6}）时，额外伤害增加{@dice 1d6}。"
+			]
+		},
+		{
+			"name": "Sickening Strike (3 Ferocity)",
+			"source": "BST",
+			"page": 39,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"每当你采取攻击行动时，你都可以激活这个漏洞。本回合你第一次用武器攻击击中一个生物时，目标必须在体质救赎上成功，否则就会被（%0%），直到你下一回合开始。"
+			]
+		},
+		{
+			"name": "Wings When I Need Them (5 Ferocity)",
+			"source": "BST",
+			"page": 39,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"在你的回合开始时，当你的同伴获得凶猛且没有进入狂暴状态时，你可以显化出一只幽灵鹰（无需行动），将你或你的同伴（由你选择）升上天空。目标获得相当于他们步行速度的飞行速度，直到他们下一回合的开始。"
+			]
+		},
+		{
+			"name": "Lava Geyser (8 Ferocity)",
+			"source": "BST",
+			"page": 39,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个行动，你可以召唤一股强大的熔岩，以你30英尺范围内可以看到的地面上的一个点为中心。熔岩填满了一个10英尺高、5英尺半径的圆柱体，并迫使其区域内的每个生物做一个灵巧的蓄力动作。如果失败，生物会受到{@damage 4d6}火灾伤害并被击倒{@condition prone}。成功时，生物会受到一半的伤害，但不会被击倒（%2%）。然后熔岩溶解成火雾并消散。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Lightning Eruption (8 Ferocity)",
+			"source": "BST",
+			"page": 39,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你用武器攻击击中一个生物时，该攻击会造成额外的{@damage 5d6}闪电伤害，你可以在目标30英尺内选择一个你能看到的其他生物。该生物必须做一个灵巧的蓄力动作，如果蓄力失败会受到{@damage 5d6}的闪电伤害，如果蓄力成功则受到一半的伤害。",
+				"当你达到17级时，这两种情况的伤害都增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Plant Prison (5 Ferocity)",
+			"source": "BST",
+			"page": 39,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，在你30英尺范围内选择一个你能看到的生物。有刺的藤蔓从目标下方的地面喷发出来，目标必须做一个灵巧的蓄力动作。如果失败，目标会受到{@damage 4d6}的穿刺伤害，并且{@condition restrained}直到你下一个回合开始。成功时，目标会受到一半的伤害，并且不会有{@condition restrained}。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Stinging Swarm (6 Ferocity)",
+			"source": "BST",
+			"page": 41,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"作为一个动作，你会召唤出一群刺痛的昆虫，排成一条5英尺宽、30英尺长的队伍。除了你的同伴之外，这条线上的每个生物都必须做一个 \"宪法救赎\"，如果救赎失败，会受到{@damage 4d6}穿刺伤害，如果救赎成功，会受到一半的伤害。然后这些昆虫就会化为影子并逐渐消失。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Thunderous Rebuke (6 Ferocity)",
+			"source": "BST",
+			"page": 41,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Beastheart"
+						},
+						"subclass": {
+							"name": "Primordial"
+						}
+					}
+				}
+			],
+			"featureType": [
+				"EXP"
+			],
+			"entries": [
+				"当你或你的同伴被5英尺范围内的生物近身攻击击中时，你可以用你的反应来迫使攻击者做一个宪法救赎动作。如果失败，攻击者会受到{@damage 3d6}的雷霆伤害，并被推离目标10英尺远。成功的话，攻击者会受到一半的伤害，并且不会被推开。",
+				"当你达到17级时，伤害增加到（%0%）。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Ferocious Bond",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Ferocious",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"当他们放弃所有的控制，让本能指导他们的一举一动时，一些兽人和同伴感觉最亲近。当你的同伴进入狂暴状态时，你会感受到他们每一刻的残暴，激发你自己的战斗怒火。",
+				{
+					"type": "table",
+					"caption": "Ferocious Bond Features",
+					"colLabels": [
+						"Beastheart Level",
+						"Feature"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"狂热的冲锋，智者的愤怒"
+						],
+						[
+							"7th",
+							"充满活力的横冲直撞"
+						],
+						[
+							"11th",
+							"愤怒的横冲直撞"
+						],
+						[
+							"15th",
+							"振奋人心的横冲直撞"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Frenzied Charge",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Ferocious",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"从你在3级时选择这种纽带开始，你学会了跟随你同伴的狂暴领导。每当你的同伴进入狂暴状态时，你可以使用一个反应来移动到你的速度，并在移动结束时对一个目标进行一次近战武器攻击。"
+			]
+		},
+		{
+			"name": "Fury of the Wise",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Ferocious",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"同样在3级时，你对你同伴的愤怒的体验使那些敢于反对你的人感到震惊。如果你还没有恐吓技能，你会获得该技能的熟练度。此外，你的魅力（恐吓）检查会获得相当于你的智慧修正值的奖励。"
+			]
+		},
+		{
+			"name": "Energizing Rampage",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Ferocious",
+			"subclassSource": "BST",
+			"level": 7,
+			"entries": [
+				"在7级时，你的同伴在狂暴后还能保持他们的韧性。当你的同伴结束狂暴时，他们的凶猛程度会下降到4而不是0。"
+			]
+		},
+		{
+			"name": "Furious Rampage",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Ferocious",
+			"subclassSource": "BST",
+			"level": 11,
+			"entries": [
+				"在11级时，你的同伴可以将他们的怒气转化为更强的攻击力。每当你的同伴在狂暴期间用标志性的攻击击中你的一个敌人时，该攻击会造成相当于同伴的凶猛程度的额外伤害（而不是他们凶猛程度的一半）。",
+				"此外，当你的同伴在狂暴状态下攻击你周围5英尺内的目标时，他们会以优势进行攻击。如果你在使用狂暴冲锋时攻击你同伴5英尺内的生物，你会以优势进行攻击。"
+			]
+		},
+		{
+			"name": "Invigorated Rampage",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Ferocious",
+			"subclassSource": "BST",
+			"level": 15,
+			"entries": [
+				"15级时，你和你的同伴可以将你的愤怒转化为压倒性的打击。当你的同伴在狂暴状态下用他们的招牌攻击击中另一个生物时，或者你用狂暴冲锋赋予你的攻击击中另一个生物时，目标是攻击者的（%0%）、（%1%）或（%2%）（你选择），直到目标的下一回合结束。"
+			]
+		},
+		{
+			"name": "Hunter Bond",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Hunter",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"你和你的同伴对狩猎有着共同的热爱。你们是无声的潜行者，共同捕杀各种大小的猎物，不管是为了喂养你的朋友还是消灭你的敌人。许多有这种联系的兽人使用远程武器从远处攻击猎物，而他们的同伴则在近处进行杀戮。",
+				{
+					"type": "table",
+					"caption": "Hunter Bond Features",
+					"colLabels": [
+						"Beastheart Level",
+						"Feature"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"被选中的猎物，猎人的本能"
+						],
+						[
+							"7th",
+							"原始护卫"
+						],
+						[
+							"11th",
+							"同步隐身"
+						],
+						[
+							"15th",
+							"看不见的猎手"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Chosen Quarry",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Hunter",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"从你在3级时选择这种结合开始，你和你的同伴可以单独挑出一个生物作为你们的猎物。每当你的同伴在你的回合开始时获得凶猛，并且没有进入狂暴状态时，你可以花费4个凶猛来标记你周围90英尺内的一个生物（不需要行动）。该生物将成为你的猎物，持续1分钟，或者直到你使用此特性标记另一个目标为你的猎物。每当你或你的同伴用武器攻击击中你的猎物或用凶猛行动对它们造成伤害时，猎物会受到额外的（%0%）伤害。"
+			]
+		},
+		{
+			"name": "Hunter's Instincts",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Hunter",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你的直觉得到提高，使你成为一个可怕的追踪者，并赋予你更好的直觉。如果你还没有生存技能，你会获得该技能的熟练度。当你使用该技能进行能力检查时，你的熟练度加分会翻倍，而且当你用智慧检查来解读生物的意图或辨别生物是否在说谎时，你可以用生存能力而不是洞察力。"
+			]
+		},
+		{
+			"name": "Primal Warding",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Hunter",
+			"subclassSource": "BST",
+			"level": 7,
+			"entries": [
+				"在第七级时，你学会使用原始魔法来设置由几乎看不见的力量构成的陷阱。作为一个动作，你以你30英尺范围内可以看到的一个点为中心，设置一个10英尺见方的地面区域，陷阱持续8小时或直到它被触发。当你设置陷阱时，你可以指定任何数量的特定生物不受其影响。找到这个陷阱需要对你的智力（调查）检查成功，并对你的利用救赎DC。",
+				"走入陷阱区域的生物会触发陷阱，并且必须用宪法规定的救赎方式来对抗你的利用救赎DC。如果失败，该生物会受到{@damage 4d8}武力伤害，并在1分钟内处于{@condition blinded}状态。如果成功，该生物会受到一半的伤害，并且不会有{@condition blinded}。陷阱中的生物（%3%）可以在他们每个回合结束时重复蓄力，成功时结束对自己的影响。",
+				"如果陷阱被触发时你在1英里范围内，精神警报会在你的脑海中发出提示。如果你正在睡觉，这个提示会唤醒你。如果你设置了一个以上的陷阱，你会知道哪一个被触发了。",
+				"你可以使用这个功能来设置与你的智慧修饰值相等数量的陷阱（最少一个）。当你完成一个长时间的休息时，你会恢复所有消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Synchronized Stealth",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Hunter",
+			"subclassSource": "BST",
+			"level": 11,
+			"entries": [
+				"在11级时，你和你的同伴学会了在眨眼间同时变得不被发现。当你或你的同伴采取隐藏行动时，如果对方能够隐藏，他们可以采取隐藏行动作为一种反应。此外，当你在你同伴的5英尺范围内采取隐藏行动时，你在作为行动一部分的灵巧（隐身）检查中具有优势。"
+			]
+		},
+		{
+			"name": "Unseen Hunters",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Hunter",
+			"subclassSource": "BST",
+			"level": 15,
+			"entries": [
+				"在15级时，你可以使用一个动作使你和你的同伴（%0%）持续10分钟。在{@condition invisible}期间，除非你或你的同伴选择留下痕迹，否则你们都不能被非魔法手段追踪到。你们中的任何一个人都可以作为额外动作结束自己的隐身状态。一旦你使用了这个特性，你可以在完成长时间休息时再次使用它。"
+			]
+		},
+		{
+			"name": "Infernal Bond",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Infernal",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"你和你的同伴彼此之间有着深厚的联系......以及与七座地狱之城的联系！这可能是你为一个魔鬼工作，然后一起被囚禁在地狱里。这可能是你在为一个魔鬼工作，你俩都在地狱里被囚禁了一段时间，然后一起抓紧时间出来，或者仅仅是你与一个出生在下层世界的恶魔伙伴结合在一起。不管是什么情况，你都与七城有联系，并能利用你同伴的凶残来释放地狱魔法。",
+				{
+					"type": "table",
+					"caption": "Infernal Bond Features",
+					"colLabels": [
+						"Beastheart Level",
+						"Feature"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"魔鬼的理解，无间道的探索"
+						],
+						[
+							"7th",
+							"地狱的魅力"
+						],
+						[
+							"11th",
+							"恶魔的特质，地狱的漏洞改进"
+						],
+						[
+							"15th",
+							"邪恶的形式"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Devil's Understanding",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Infernal",
+			"subclassSource": "BST",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"infernal": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"religion"
+						]
+					}
+				}
+			],
+			"entries": [
+				"从你在3级时选择这个纽带开始，你可以说、写、并理解地狱的内容。",
+				"此外，如果你还没有熟练掌握阿卡纳或宗教技能，你将获得这些技能的熟练度（你选择）。"
+			]
+		},
+		{
+			"name": "Infernal Exploits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Infernal",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得了一个你所选择的地狱漏洞，其功能与你的原始漏洞相同，并在适用时使用你的漏洞拯救DC。你所选择的利用必须是3级时可用的利用。",
+				"每当你在这个等级中获得一个等级，你可以从你所知道的无间道利用中选择一个，并用另一个无间道利用来代替它，为此你必须拥有相应的兽心等级。",
+				{
+					"type": "table",
+					"caption": "Infernal Exploits: 3rd Level",
+					"colLabels": [
+						"Exploit",
+						"Action Used",
+						"Ferocity Cost"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature Drain Them|BST}",
+							"反应",
+							"4"
+						],
+						[
+							"{@optfeature Hellish Wound|BST}",
+							"没有行动",
+							"4"
+						],
+						[
+							"{@optfeature Infernal Teleport|BST}",
+							"行动",
+							"4"
+						],
+						[
+							"{@optfeature Wicked Deception|BST}",
+							"行动",
+							"3"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Drain Them (4 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Hellish Wound (4 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Infernal Teleport (4 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Wicked Deception (3 Ferocity)|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Hell's Charmer",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Infernal",
+			"subclassSource": "BST",
+			"level": 7,
+			"entries": [
+				"7级时，你的同伴可以利用魔鬼的超自然魅力对其他生物施展魔法。作为一个行动，在你30英尺范围内选择一个能看到你和你的同伴的生物。该生物必须做一个智慧救赎动作，如果你或你的盟友正在与他们战斗，那么这样做是有优势的。如果成功，该生物知道你试图魅惑它们，并对你和你的同伴产生敌意。如果失败，该生物会在10分钟内被你和你的同伴视为（%0%），或者直到你或你的盟友对该生物做出任何身体上、精神上或情感上的伤害。这个{@condition charmed}的生物对你是友好的。当这个效果结束时，{@condition charmed}的生物不记得在他们被{@condition charmed}的时候发生了什么。",
+				"你可以使用这个功能的次数等于你的智慧修正值（最少一次）。当你完成一个长时间的休息时，你会恢复所有的使用。"
+			]
+		},
+		{
+			"name": "Fiendish Traits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Infernal",
+			"subclassSource": "BST",
+			"level": 11,
+			"entries": [
+				"11级时，你的同伴与地狱的联系使他们变得更加邪恶。为你的同伴选择以下特征之一。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "{@i Barbed Hide.}",
+							"entry": "你的同伴身上长满了倒刺。当你的同伴5英尺内的生物抓住他们或用近战攻击击中他们时，该生物会受到{@damage 1d10}穿刺伤害。"
+						},
+						{
+							"type": "item",
+							"name": "{@i Fiendish Immunities.}",
+							"entry": "你的同伴的皮肤、皮毛或其他颜色变成红色，同伴对火和毒伤害以及{@condition poisoned}状态免疫。"
+						},
+						{
+							"type": "item",
+							"name": "{@i Fiery Weapons.}",
+							"entry": "你的同伴的天然武器，如牙齿或爪子，会被黑火所覆盖。每当你的同伴用他们的招牌攻击命中时，该攻击会造成额外的（%0%）火焰伤害。"
+						},
+						{
+							"type": "item",
+							"name": "{@i Wings.}",
+							"entry": "你的同伴从背上长出皮质的翅膀，并获得40英尺的飞行速度。如果你的同伴已经有了翅膀，那些翅膀就会呈现出恶魔般的外观，其飞行速度也会增加到40英尺。"
+						}
+					]
+				},
+				"每当你完成一次长时间的休息，你可以用这个列表中的另一个特性来替换你同伴的恶魔特性。"
+			]
+		},
+		{
+			"name": "Infernal Exploits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Infernal",
+			"subclassSource": "BST",
+			"level": 11,
+			"entries": [
+				"当你在11级获得一个新的无间道漏洞时，你可以从以下漏洞中选择一个。",
+				{
+					"type": "table",
+					"caption": "Infernal Exploits: 11th Level",
+					"colLabels": [
+						"Exploit",
+						"Action Used",
+						"Ferocity Cost"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature Brimstone Teleport|BST}",
+							"行动",
+							"8"
+						],
+						[
+							"{@optfeature Chains from Hell|BST}",
+							"行动",
+							"8"
+						],
+						[
+							"{@optfeature Dark of Hell|BST}",
+							"行动",
+							"8"
+						],
+						[
+							"{@optfeature Infernal Flames|BST}",
+							"行动",
+							"8"
+						],
+						[
+							"{@optfeature Poison Rain|BST}",
+							"行动",
+							"8"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Brimstone Teleport (8 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Chains from Hell (8 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Dark of Hell (8 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Infernal Flames (8 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Poison Rain (8 Ferocity)|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Fiendish Form",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Infernal",
+			"subclassSource": "BST",
+			"level": 15,
+			"entries": [
+				"在15级的时候，你的同伴可以变成一个披着鳞片的地狱之子。作为一个额外的动作，你可以花费6点凶猛的力量将你的同伴变成一个恶魔的形态，持续1分钟。在这种形态下，你的同伴会发生以下变化。",
+				{
+					"type": "list",
+					"items": [
+						"他们是一个恶魔。",
+						"他们对重击、穿刺和砍击伤害有抵抗力。",
+						"他们对法术和其他魔法效果的救赎有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Primordial Bond",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Primordial",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"你和你的同伴与自然界的魔法有着特别深的联系。通过利用你同伴的愤怒，你可以挥舞元素的原始力量来对付你的敌人。",
+				{
+					"type": "table",
+					"caption": "Primordial Bond Features",
+					"colLabels": [
+						"Beastheart Level",
+						"Feature"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"自然探索，原始理解"
+						],
+						[
+							"7th",
+							"地球联盟"
+						],
+						[
+							"11th",
+							"自然探索的改进，精神风暴的出现"
+						],
+						[
+							"15th",
+							"联合体天气"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Nature Exploits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Primordial",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得一个你所选择的自然属性的利用，其功能与你的原始利用相同，并在适用时使用你的利用保存DC。你选择的利用必须是3级时可用的一种。",
+				"每当你在这个等级中获得一个等级，你可以从你所知道的自然探索中选择一个，用另一个自然探索来代替它，为此你必须有相应的兽心等级。",
+				{
+					"type": "table",
+					"caption": "Nature Exploits: 3rd Level",
+					"colLabels": [
+						"Exploit",
+						"Action Used",
+						"Ferocity Cost"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature Elemental Shield|BST}",
+							"反应",
+							"3"
+						],
+						[
+							"{@optfeature Freezing Strike|BST}",
+							"攻击行动",
+							"2"
+						],
+						[
+							"{@optfeature Sickening Strike|BST}",
+							"攻击行动",
+							"3"
+						],
+						[
+							"{@optfeature Wings When I Need Them|BST}",
+							"没有行动",
+							"5"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Elemental Shield (3 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Freezing Strike (2 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Sickening Strike (3 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Wings When I Need Them (5 Ferocity)|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Primal Understanding",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Primordial",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以说、写和理解原始人和希尔文语。",
+				"此外，如果你还没有自然技能，你将获得该技能的熟练度。"
+			]
+		},
+		{
+			"name": "Allied Earth",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Primordial",
+			"subclassSource": "BST",
+			"level": 7,
+			"entries": [
+				"在7级时，你的同伴周围的地面会长出阻碍敌人的藤蔓和植物。每当你的同伴拥有至少1个凶猛，他们周围10英尺内的地面对敌人来说就是困难的地形。"
+			]
+		},
+		{
+			"name": "Nature Exploits",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Primordial",
+			"subclassSource": "BST",
+			"level": 11,
+			"entries": [
+				"当你在11级获得一个新的自然探索时，你可以采取以下一种探索方式。",
+				{
+					"type": "table",
+					"caption": "Nature Exploits: 11th Level",
+					"colLabels": [
+						"Exploit",
+						"Action Used",
+						"Ferocity Cost"
+					],
+					"colStyles": [
+						"col-4",
+						"col-4",
+						"col-4 text-center"
+					],
+					"rows": [
+						[
+							"{@optfeature Lava Geyser|BST}",
+							"行动",
+							"8"
+						],
+						[
+							"{@optfeature Lightning Eruption|BST}",
+							"没有行动",
+							"8"
+						],
+						[
+							"{@optfeature Plant Prison|BST}",
+							"行动",
+							"5"
+						],
+						[
+							"蛰伏的蜂群",
+							"{@optfeature Action|BST}",
+							"6"
+						],
+						[
+							"{@optfeature Thunderous Rebuke|BST}",
+							"反应",
+							"6"
+						]
+					]
+				},
+				{
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Lava Geyser (8 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Lightning Eruption (8 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Plant Prison (5 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Stinging Swarm (6 Ferocity)|BST"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Thunderous Rebuke (6 Ferocity)|BST"
+								}
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Spirit Stampede",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Primordial",
+			"subclassSource": "BST",
+			"level": 11,
+			"entries": [
+				"11级时，当你的同伴进入狂暴状态时，他们会召唤看不见的死亡生物的灵魂，与他们一起狂奔。在你同伴30英尺范围内，你选择的每个生物都会受到与同伴的凶猛程度相当的力量伤害。"
+			]
+		},
+		{
+			"name": "Allied Weather",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Primordial",
+			"subclassSource": "BST",
+			"level": 15,
+			"entries": [
+				"15级时，你同伴周围的天气会响应你的意志，打击伤害他们的敌人。每当你的同伴拥有至少1个凶猛，并且被他们10英尺范围内的生物的近战攻击击中时，从以下效果中选择一个。",
+				{
+					"type": "list",
+					"items": [
+						"攻击者必须用力量救赎的方式成功对抗你的利用救赎DC，否则就会倒下（%0%）。",
+						"攻击者必须用灵巧救赎的方式成功对抗你的利用救赎DC，否则就会受到相当于你同伴凶猛程度的雷电伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Protector Bond",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Protector",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"对你和你的同伴来说，没有什么比你的族群更重要。你们之间的纽带使你们的进攻和防守能力更强，让你们把自己的身体和生命置于危险之中，以保护你们的盟友和那些与你们同行的人。",
+				{
+					"type": "table",
+					"caption": "Protector Bond Features",
+					"colLabels": [
+						"Beastheart Level",
+						"Feature"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"野兽生命力，包装法阵"
+						],
+						[
+							"7th",
+							"加厚的皮革"
+						],
+						[
+							"11th",
+							"哨兵同伴"
+						],
+						[
+							"15th",
+							"不朽的保护者"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Beast Vitality",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Protector",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"在3级时，当你选择这个纽带时，你与同伴的联系会增加你的自然活力。你的最大命中率增加3，并且每当你在这个等级中获得一个等级时，又会增加1。"
+			]
+		},
+		{
+			"name": "Pack Phalanx",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Protector",
+			"subclassSource": "BST",
+			"level": 3,
+			"entries": [
+				"三级时，你和你的同伴学会了与敌人近距离接触，以防止他们伤害你保护的人。每当你和你的同伴不在（%0%）并且都在一个生物的5英尺范围内时，该生物在对任何不是你或你的同伴的目标进行攻击时都有劣势。"
+			]
+		},
+		{
+			"name": "Thickened Hide",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Protector",
+			"subclassSource": "BST",
+			"level": 7,
+			"entries": [
+				"在第7级时，你的同伴的自然防御力提高，使他们更难受到伤害。你的同伴的攻击力增加2。"
+			]
+		},
+		{
+			"name": "Sentinel Companion",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Protector",
+			"subclassSource": "BST",
+			"level": 11,
+			"entries": [
+				"在11级时，你的同伴的凶猛警惕性驱使他们去攻击那些试图伤害你族群其他成员的懦夫。当你的同伴5英尺范围内的生物对你或你的同伴以外的生物进行攻击时，你可以花费2个凶猛来让你的同伴使用他们的反应对攻击的生物进行一次签名攻击。"
+			]
+		},
+		{
+			"name": "Undying Protector",
+			"source": "BST",
+			"className": "Beastheart",
+			"classSource": "BST",
+			"subclassShortName": "Protector",
+			"subclassSource": "BST",
+			"level": 15,
+			"entries": [
+				"在15级时，你的同伴的怒火能使你在惨痛的伤害和踉跄的打击中维持生命。如果你能看到你的同伴，当你的生命值下降到0时，你可以花费2个凶猛来代替你的生命值下降到1。在第一次使用后，每次使用此功能时，凶猛的代价都会增加2，当你完成短期或长期休息时，凶猛的代价会恢复到2。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Basilisk Companion",
+			"source": "BST",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"page": 9,
+			"tokenUrl": "https://i.imgur.com/jIMQ5A7.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the basilisk has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"athletics": "+3 plus PB",
+				"survival": "+1 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Poison Spittle (2 Ferocity)",
+					"entries": [
+						"玄武龙进行一次标志性攻击。一旦命中，攻击会造成额外的{@damage PB}伤害，并且巴斯里斯克选择的目标以外的5英尺内的生物会受到{@damage PB}毒药伤害。"
+					]
+				},
+				{
+					"name": "3rd Level: Poison Gaze (5 Ferocity)",
+					"entries": [
+						"玄武岩选择15英尺范围内可以看到的最多三个生物。每个生物都必须在一个{@dc 10 + PB|10 plus PB}的体质判定中成功，否则会变成{@condition poisoned}，直到巴斯里斯克的下一个回合开始。"
+					]
+				},
+				{
+					"name": "5th Level: Lesser Petrifying Gaze (8 Ferocity)",
+					"entries": [
+						"玄武岩的目标是在他们30英尺范围内可以看到的一个生物，这个生物必须做一个{@dc 10 + PB|10 plus PB}宪法规定的投掷。如果失败，该生物会神奇地开始变成石头，并且是（%1%）。该生物必须在下一回合结束时重复该蓄力动作。成功时，效果结束。如果失败，该生物将在1小时内被{@condition petrified}，或直到被{@spell lesser restoration|phb}的咒语或类似的魔法解救。(较少的恢复通常不会否定{@condition petrified}的条件，但同伴的较少石化凝视比其他形式的石化魔法要弱。)"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Heavy Glare",
+					"entries": [
+						"当巴斯里斯克的看护者击中一个可以看到巴斯里斯克的生物时，巴斯里斯克可以强迫该生物做一个{@dc 10 + PB|10 plus PB}宪法救赎动作。如果失败，目标不能进行机会攻击，并且速度降低10英尺，直到他们下一个回合开始。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Blood Hawk Companion",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/rKDT1Ku.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "6 + 6 times caregiver's level (the hawk has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 5,
+			"wis": 14,
+			"cha": 10,
+			"page": 10,
+			"save": {
+				"dex": "+3 plus PB",
+				"wis": "+2 plus PB"
+			},
+			"skill": {
+				"perception": "+2 plus PB"
+			},
+			"passive": "12 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"鹰在依靠视觉的智慧（感知）检查方面具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Beak (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Distracting Attack (2 Ferocity)",
+					"entries": [
+						"鹰会进行一次标志性攻击。一旦命中，攻击会产生正常的效果，并且在鹰的下一回合开始前对目标进行的下一次攻击具有优势。"
+					]
+				},
+				{
+					"name": "3rd Level: Swooping Attack (5 Ferocity)",
+					"entries": [
+						"鹰的移动速度达到了他们的速度，而不会引起机会攻击。在这个移动过程中或结束时，他们可以对一个目标进行一次标志性攻击。一旦命中，攻击会产生正常的效果，并且目标必须成功地进行{@dc 10 + PB|10 plus PB}力量救赎，或者丢掉他们所持有的一件物品。"
+					]
+				},
+				{
+					"name": "5th Level: Storm of Talons (8 Ferocity)",
+					"entries": [
+						"鹰在不引起机会攻击的情况下移动到他们的速度，然后可以瞄准他们5英尺内的一个生物，这个生物必须做一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作。如果失败，目标会受到{@damage (PB)d10}的砍击伤害，并且{@condition blinded}直到鹰的下一个回合结束。成功时，目标会受到一半的伤害，并且不会被（%3%）。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Swoop In",
+					"entries": [
+						"当鹰在看护者的30英尺范围内，看护者被攻击击中时，鹰可以按照自己的速度移动而不引起机会攻击。如果鹰在看护者的5英尺范围内结束这个移动，鹰就会被攻击击中，而且攻击造成的伤害是一半。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Bulette Companion",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/WSgngWH.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the bulette has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 5,
+			"wis": 8,
+			"cha": 8,
+			"page": 11,
+			"save": {
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"perception": "-1 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"passive": "9 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Plated Protection",
+					"entries": [
+						"在布莱特钻洞时，布莱特的照料者可以骑在布莱特身上。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Violent Attack (2 Ferocity)",
+					"entries": [
+						"布莱特会进行一次标志性的攻击。一旦命中，攻击会造成额外的PB伤害，并且布莱特可以将目标向任何方向移动5英尺。"
+					]
+				},
+				{
+					"name": "3rd Level: Burrowing Trip (5 Ferocity)",
+					"entries": [
+						"蟾蜍的移动速度为其钻地速度的一半，不会引起机会攻击。每一个站在布莱特移动的地面上的生物必须成功地进行一个{@dc 10 + PB|10 plus PB}的灵巧反射，否则就会跌倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "5th Level: Deadly Leap (8 Ferocity)",
+					"entries": [
+						"布莱特最多可以跳跃30英尺，如果他们落在一个包含一个或多个生物的空间里，每个生物都必须做一个{@dc 10 + PB|10 plus PB}的力量储蓄动作。如果失败，生物会受到{@damage (PB)d6}重击伤害并被击倒{@condition prone}。如果成功，生物会受到一半的伤害，不被击倒（%3%），并被推出5英尺的空间，进入生物自己选择的无人空间。如果没有空闲的空间，该生物会被击倒在布列特的空间内（%4%）。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Deinonychus Companion",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/9Oo8bNW.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the deinonychus has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 14,
+			"int": 5,
+			"wis": 12,
+			"cha": 8,
+			"page": 12,
+			"save": {
+				"str": "+2 plus PB",
+				"dex": "+3 plus PB"
+			},
+			"skill": {
+				"perception": "+1 plus PB",
+				"stealth": "+3 plus PB"
+			},
+			"passive": "11 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Overwhelming Attack (2 Ferocity)",
+					"entries": [
+						"恐龙做出了一次标志性的攻击。一旦命中，该攻击会造成额外的PB伤害，并且目标不能做出反应，直到地龙的下一个回合开始。"
+					]
+				},
+				{
+					"name": "3rd Level: Clever Girl (5 Ferocity)",
+					"entries": [
+						"地行龙可以采取{@action Hide}的行动，然后进行招牌攻击，或者可以先进行招牌攻击，然后采取{@action Hide}的行动。如果地行龙用招牌攻击命中，他们也会击倒目标（%2%）。地龙可以在隐藏动作和攻击之间移动，反之亦然，即使这种移动通常会否定隐藏的尝试。"
+					]
+				},
+				{
+					"name": "5th Level: Keep Them Down (8 Ferocity)",
+					"entries": [
+						"恐龙向5英尺内的另一个生物跃起，该生物必须做一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作。如果失败，目标会受到{@damage (PB)d12}的砍击伤害，并被击倒{@condition prone}和{@condition grappled}（逃跑{@dc 10 + PB|10 plus PB}）。成功时，目标受到一半的伤害，并且不被击倒（%5%）或（%6%）。被此功能击倒的生物（%7%）不能站起来，直到他们不再（%8%）。如果狮鹫攻击或对另一个目标使用 \"压制\"，则抓捕结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Part of the Pack (1/Long Rest)",
+					"entries": [
+						"当神龙的看护者在神龙5英尺范围内时，神龙的看护者是{@condition charmed}、{@condition frightened}或{@condition stunned}，神龙可以对看护者结束这些条件之一。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Dragon Wyrmling Companion",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/narm238.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the wyrmling has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 5,
+			"wis": 10,
+			"cha": 12,
+			"page": 13,
+			"save": {
+				"wis": "+0 plus PB"
+			},
+			"skill": {
+				"perception": "+0 plus PB"
+			},
+			"passive": "10 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P",
+				"A",
+				"C",
+				"F",
+				"L",
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Draconic Lineage",
+					"entries": [
+						"巫妖有一个血统决定了他们有免疫力的伤害类型，并适用于他们的吐息和呼吸武器行动所造成的伤害。更多信息请参见《龙族血统》表。",
+						{
+							"type": "table",
+							"caption": "Draconic Lineages",
+							"colLabels": [
+								"Lineage",
+								"Damage Type",
+								"Area"
+							],
+							"colStyles": [
+								"col-3",
+								"col-3",
+								"col-6"
+							],
+							"rows": [
+								[
+									"黑色，铜色",
+									"Acid",
+									"5×30英尺线(Dex. save)"
+								],
+								[
+									"银色，白色",
+									"Cold",
+									"15英尺锥体 (Con. save)"
+								],
+								[
+									"黄铜",
+									"Fire",
+									"5×30英尺线(Dex. save)"
+								],
+								[
+									"金色，红色",
+									"Fire",
+									"15英尺锥体(Dex. save)"
+								],
+								[
+									"蓝色，青铜色",
+									"閃電",
+									"5×30英尺线(Dex. save)"
+								],
+								[
+									"绿色",
+									"毒药",
+									"15英尺锥体 (Con. save)"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Shared Resistance",
+					"entries": [
+						"巫妖的看护者对与他们的龙族血统相关的伤害类型有抵抗力，并且不会从巫妖的呼吸武器行动中受到伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Spit Breath (2 Ferocity)",
+					"entries": [
+						"巫妖的招牌攻击是一种远程武器攻击，普通范围为30英尺，远程范围为60英尺。一旦命中，该攻击会造成额外的PB伤害，并且该攻击造成的所有伤害都是与巫妖的血统相关的类型，而不是穿刺伤害。"
+					]
+				},
+				{
+					"name": "3rd Level: Frightful Presence (5 Ferocity)",
+					"entries": [
+						"巫妖选择的每个生物，如果在巫妖的10英尺范围内，并且意识到他们，必须在一个{@dc 10 + PB|10 plus PB}的智慧救赎上成功，否则就会成为巫妖的{@condition frightened}，持续1分钟。一个生物可以在他们每个回合结束时重复蓄力，如果成功，则结束对自己的影响。如果一个生物救赎成功或效果结束，该生物在接下来的24小时内对巫妖的恐怖存在免疫。"
+					]
+				},
+				{
+					"name": "5th Level: Breath Weapon (8 Ferocity)",
+					"entries": [
+						"巫妖呼出的元素能量充满了一个区域。该区域内的生物必须做一个{@dc 10 + PB|10 plus PB}的蓄力动作，蓄力失败会受到{@damage (PB)d6}的伤害，蓄力成功会受到一半的伤害。伤害类型、区域和蓄力的类型由巫妖的龙族血统特征决定。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Earth Elemental Companion",
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/oJbt9uz.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "15 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the elemental has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 15,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"page": 14,
+			"save": {
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"athletics": "+3 plus PB"
+			},
+			"passive": "10",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Earth Glide",
+					"entries": [
+						"元素可以钻过非魔法的、未加工的土和石头。在这样做的时候，元素体不会干扰他们所移动的材料。当他们使用大地滑行时，元素不能作为坐骑使用。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}重击伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Stretch Attack (2 Ferocity)",
+					"entries": [
+						"元素会进行一次标志性的攻击，攻击范围为10英尺。一旦命中，攻击会造成额外的PB伤害，并且元素可以将目标拉向他们5英尺。"
+					]
+				},
+				{
+					"name": "3rd Level: Earthshaker (5 Ferocity)",
+					"entries": [
+						"元素在这轮攻击中，他们周围10英尺内的每个生物都必须在一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作上成功，否则就会被击倒{@condition prone}。元素的看护者会自动成功完成这个蓄力动作。"
+					]
+				},
+				{
+					"name": "5th Level: Transmute Ground (8 Ferocity)",
+					"entries": [
+						"元素会在他们30英尺范围内选择一个他们能看到的10英尺见方的地面区域。每个站在该区域的生物都必须成功地进行一次力量测验，否则就会部分沉入地下，变成{@condition restrained}。一个生物可以用他们的行动来做一个{@dc 10 + PB|10 plus PB}力量（运动）检查，如果成功，就可以释放自己或他们范围内的另一个生物，并结束被释放生物的{@condition restrained}状况。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Toss Me",
+					"entries": [
+						"当元素在他们的看护者的5英尺范围内时，他们可以将看护者向任何方向投掷5倍PB的距离，包括向上。如果看护者在被投掷后通常会受到坠落的伤害，他们可以通过成功的灵巧救赎来抵消伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Gelatinous Cube Companion",
+			"size": [
+				"L"
+			],
+			"type": "ooze",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/2kaxwMY.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "11 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "8 + 8 times caregiver's level (the cube has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"page": 15,
+			"save": {
+				"con": "+3 plus PB"
+			},
+			"skill": {
+				"stealth": "-1 plus PB"
+			},
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"prone"
+			],
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": "10",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"A"
+			],
+			"trait": [
+				{
+					"name": "Flowing Form",
+					"entries": [
+						"魔方的看护者可以进入被魔方占据的空间而不被吞噬。当与立方体在同一空间时，看护者可以攻击被立方体吞噬的生物并与之互动，而不会伤害到立方体或受到其伤害。"
+					]
+				},
+				{
+					"name": "Transparent",
+					"entries": [
+						"即使立方体在众目睽睽之下，也需要通过成功的{@dc 10 + PB|10 plus PB}智慧（感知）检查才能发现一个既没有移动也没有攻击的立方体。在不知道立方体的情况下，试图进入立方体空间的生物会受到3{@damage (1d6)}的酸性伤害，并且无法进入该空间。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pseudopod (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}酸液伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Burning Acid (2 Ferocity)",
+					"entries": [
+						"凝胶状的立方体会进行一次标志性的攻击，攻击范围为10英尺。一旦命中，攻击会造成额外的PB伤害，而受到攻击伤害的目标在立方体的下一回合开始前无法恢复命中率。"
+					]
+				},
+				{
+					"name": "3rd Level: Slime Shower (5 Ferocity)",
+					"entries": [
+						"方块快速旋转，在他们周围洒下粘稠的酸性粘液。每个在立方体5英尺范围内的生物必须在一个{@dc 10 + PB|10 plus PB}灵巧的投掷中获得成功，否则将受到{@damage 1d6}的酸液伤害，并将他们的速度降低到0，直到立方体的下一回合开始。魔方的看护者会自动成功地完成这个蓄力动作。"
+					]
+				},
+				{
+					"name": "5th Level: Engulf (8 Ferocity)",
+					"entries": [
+						"魔方试图将5英尺范围内的大型或小型生物拉入自己的身体。该生物必须做一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作。如果失败，目标进入立方体的空间而不引起机会攻击，受到{@damage (PB)d6}酸液伤害，并被吞噬。成功时，生物会受到一半的伤害，不会移动，也不会被吞噬。",
+						"被吞噬的生物不能呼吸，是{@condition restrained}，并在方块的每个回合开始时受到{@damage (PB)d6}的酸伤害。当立方体移动时，被吞噬的生物也随之移动。被吞噬的生物可以通过行动进行{@dc 10 + PB|10 plus PB}力量检查来试图逃脱。如果成功，该生物就会逃脱，并进入一个他们在立方体5英尺范围内选择的空间。",
+						"这个立方体可以同时吞噬一个大型生物或最多四个中型或小型生物。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Giant Spider Companion",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/iFckhUJ.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "6 + 6 times caregiver's level (the spider has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 12,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"page": 16,
+			"save": {
+				"str": "+2 plus PB",
+				"dex": "+3 plus PB"
+			},
+			"skill": {
+				"stealth": "+3 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": "10",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"蜘蛛可以爬上困难的表面，包括倒立在天花板上，而不需要进行能力检查。"
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"当接触到一张网时，蜘蛛知道与同一张网接触的任何其他生物的确切位置。"
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"蜘蛛无视由网状物造成的移动限制。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Destabilizing Attack (2 Ferocity)",
+					"entries": [
+						"蜘蛛会进行一次标志性的攻击。一旦命中，攻击就会产生正常的效果，而目标在蜘蛛的下一个回合开始前所做的下一次攻击卷轴上有劣势。"
+					]
+				},
+				{
+					"name": "3rd Level: Web (5 Ferocity)",
+					"entries": [
+						"蜘蛛向他们周围60英尺内可以看到的一个生物射出粘性网。目标必须在一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作上成功，否则就会被网住{@condition restrained}。作为一个动作，目标可以做一个{@condition restrained}的力量检查，如果成功，就可以刺破网，结束自己身上的{@condition restrained}状况。"
+					]
+				},
+				{
+					"name": "5th Level: Bite Frenzy (8 Ferocity)",
+					"entries": [
+						"蜘蛛对其5英尺范围内选择的PB生物进行标志性攻击。一旦命中，目标就会受到（%0%）的影响，直到他们下一个回合结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Sticky Stuff (1/Long Rest)",
+					"entries": [
+						"当蜘蛛的看护者在它的5英尺范围内时，蜘蛛可以在看护者的脚底或鞋底涂上选择性的粘合剂。这使得看护者可以在垂直表面上上下下移动，并沿着天花板上下颠倒，同时使他们的手保持自由，并使看护者的攀爬速度等同于他们的步行速度。这种粘合剂在10分钟后就会磨损。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Giant Toad Companion",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/8GAeE83.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the toad has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 10,
+			"cha": 10,
+			"page": 17,
+			"save": {
+				"str": "+3 plus PB",
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"athletics": "+3 plus PB",
+				"perception": "+0 plus PB"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": "10 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"蟾蜍可以呼吸空气和水。"
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"蟾蜍的跳远高度可达20英尺，它们的跳高高度可达10英尺，无论是否有跑步起步。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}重击伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Stretch Attack (2 Ferocity)",
+					"entries": [
+						"蟾蜍进行一次标志性攻击。一旦命中，该攻击会造成额外的PB伤害，并且蟾蜍可以将目标拉向他们5英尺。"
+					]
+				},
+				{
+					"name": "3rd Level: Fast Food (5 Ferocity)",
+					"entries": [
+						"蟾蜍会进行一次标志性攻击。一旦命中，攻击会产生正常的效果，并且蟾蜍可以在任何方向上跳跃20英尺，而不会引起机会攻击。如果攻击的目标是大型或小型的，蟾蜍会将目标带入。"
+					]
+				},
+				{
+					"name": "5th Level: Swallow (8 Ferocity)",
+					"entries": [
+						"蟾蜍试图吞下5英尺内的中型或小型生物，该生物必须做一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作。如果失败，目标会受到{@damage (PB)d6}重击伤害并被吞噬。成功时，目标受到一半的伤害，并且不被吞噬。",
+						"被吞噬的目标是（%0%）和（%1%），他们对蟾蜍以外的攻击和其他效果有完全的掩护，并且在蟾蜍的每个回合开始时受到（%2%）酸性伤害。蟾蜍在同一时间只能吞噬一个目标。",
+						"每当蟾蜍受到伤害时，他们必须成功地进行宪法救赎，或者将吞下的生物反刍出来，这些生物会在蟾蜍的5英尺范围内掉落（%0%）。这个蓄力动作的DC等于10或蟾蜍所受伤害的一半，以较高者为准。如果蟾蜍是（%1%）或死亡，被吞食的生物不再被蟾蜍（%2%），可以用5英尺的移动距离逃离尸体，退出（%3%）。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Psychedelic Skin (1/Long Rest)",
+					"entries": [
+						"当蟾蜍的看护者在蟾蜍的5英尺范围内时，蟾蜍可以使用一个额外的动作为看护者持有的近战武器涂上蟾蜍皮肤上分泌的毒药。该毒药持续1小时或直到该武器作为攻击的一部分造成伤害。当一个生物受到武器的伤害时，他们必须成功地进行一次{@dc 10 + PB|10 plus PB}的宪法救赎，否则会变成{@condition poisoned}，持续1分钟。该生物可以在他们每个回合结束时重复蓄力，成功后结束对自己的影响。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Giant Weasel Companion",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/AGoOzw2.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the weasel has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 5,
+			"wis": 12,
+			"cha": 10,
+			"page": 18,
+			"save": {
+				"str": "+1 plus PB",
+				"dex": "+3 plus PB"
+			},
+			"skill": {
+				"acrobatics": "+3 plus PB",
+				"perception": "+1 plus PB",
+				"stealth": "+3 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": "11 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"黄鼠狼在依靠听觉或嗅觉的智慧（感知）检查中具有优势。"
+					]
+				},
+				{
+					"name": "Treasure Sense",
+					"entries": [
+						"黄鼠狼可以通过气味准确地指出它们周围10英尺内的贵重金属和石头的位置，如钱币和宝石。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Overwhelming Attack (2 Ferocity)",
+					"entries": [
+						"黄鼠狼进行了一次标志性的攻击。一旦命中，攻击会造成额外的PB伤害，并且目标在黄鼠狼的下一回合开始前无法做出反应。"
+					]
+				},
+				{
+					"name": "3rd Level: Clamp Down (5 Ferocity)",
+					"entries": [
+						"黄鼠狼进行一次标志性攻击。一旦命中，攻击会产生正常的效果，并且目标是{@condition grappled}（逃跑{@dc 10 + PB|10 plus PB}）。当{@condition grappled}时，目标是{@condition restrained}，并且黄鼠狼不能咬住其他目标。"
+					]
+				},
+				{
+					"name": "5th Level: Bite Frenzy (8 Ferocity)",
+					"entries": [
+						"黄鼠狼对黄鼠狼5英尺范围内自己选择的PB生物进行标志性攻击。一旦命中，攻击的目标会被击倒（%0%）。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Keen Senses"
+			]
+		},
+		{
+			"name": "Hell Hound Companion",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/Ule4cDF.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the hound has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 12,
+			"cha": 8,
+			"page": 19,
+			"save": {
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"perception": "+1 plus PB"
+			},
+			"immune": [
+				"fire"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": "11 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P",
+				"F"
+			],
+			"trait": [
+				{
+					"name": "Consult Hell",
+					"entries": [
+						"猎犬的看护人可以与猎犬谈论看护人计划在未来30分钟内采取的具体行动，通过猎犬与地狱界的联系，挖掘出占卜的力量。1分钟后，猎犬会根据自己对结果的客观预感作出反应：好结果吠一声，坏结果吠两声，好坏结果都吠三声，而不是特别好或特别坏的结果则不吠。"
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"猎犬在依靠听觉或嗅觉的智慧（感知）检查方面具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Lava Spittle (2 Ferocity)",
+					"entries": [
+						"猎犬进行一次标志性攻击。一旦命中，攻击会造成额外的PB伤害，并且猎犬选择的5英尺范围内的生物（除目标外）会受到PB火力伤害。"
+					]
+				},
+				{
+					"name": "3rd Level: Brutal Charge (5 Ferocity)",
+					"entries": [
+						"猎犬可以在不引起机会攻击的情况下以他们的速度移动。在这个移动过程中或结束时，他们可以对一个目标进行一次标志性攻击。"
+					]
+				},
+				{
+					"name": "5th Level: Fire Breath (8 Ferocity)",
+					"entries": [
+						"猎犬在15英尺的范围内喷出火焰。该区域内的每个生物都必须做一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作，蓄力失败会受到{@damage (PB)d6}的火焰伤害，蓄力成功会受到一半的伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Mimic Companion",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Shapechanger"
+				]
+			},
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/5MMsW2m.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the mimic has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 8,
+			"page": 20,
+			"save": {
+				"dex": "+1 plus PB"
+			},
+			"skill": {
+				"stealth": "+1 plus PB"
+			},
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": "11",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						" 模仿者可以使用他们的行动来多态化为一个物体或回到他们真正的、无定形的形态。他们的统计数据在每种形态下都是一样的。他们所穿戴或携带的任何装备都不会被转化。如果模仿者死亡，他们会恢复到他们的真实形态。"
+					]
+				},
+				{
+					"name": "False Appearance (Object Form Only)",
+					"entries": [
+						"当模仿者保持不动，他们与普通物体没有区别。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Distracting Attack (2 Ferocity)",
+					"entries": [
+						"模仿者会进行一次标志性的攻击。一旦命中，该攻击会产生正常的效果，并且在模仿者下一回合开始前对目标进行的下一次攻击具有优势。"
+					]
+				},
+				{
+					"name": "3rd Level: Adhesive Pseudopods (5 Ferocity)",
+					"entries": [
+						"模仿者试图触摸他们周围5英尺内的每个生物。每个目标必须在一个{@dc 10 + PB|10 plus PB}的灵巧救赎上成功，或者被{@condition grappled}(逃脱{@dc 10 + PB|10 plus PB})。"
+					]
+				},
+				{
+					"name": "5th Level: I'm You (8 Ferocity)",
+					"entries": [
+						"拟态者使用他们的变形术特性，在他们5英尺范围内多态化为一个他们能看到的大型或小型生物，这种形态一直持续到拟态者下一回合的开始。除了体型之外，模仿者的统计数据不会改变。在变身之后，模仿者可以对他们所采取的形态的生物进行一次标志性的攻击，而该生物也必须进行一次{@dc 10 + PB|10 plus PB}的智慧救赎动作。如果失败，该生物在攻击卷和蓄力投掷中处于劣势，而对该生物的攻击具有优势，直到模仿者的下一回合开始。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Wearable Companion",
+					"entries": [
+						"当模仿者在照顾者的5英尺范围内时，模仿者可以覆盖照顾者的身体并呈现出衣服的外观。当穿上模仿体时，只要不是{@condition incapacitated}，看护者可以随意改变他们衣服的外观（不需要行动），并且在灵巧（隐身）检查中具有优势。任何击中护理者的攻击也会击中模仿者，反之亦然，双方都会受到攻击的全部伤害和影响。",
+						"当以这种方式被穿戴时，模仿者不能移动或采取行动，除了恢复到他们最近的形态（一个额外的行动），这将结束被他们的照顾者穿戴的状态。如果模仿者进入狂暴状态，被穿戴的状态立即结束。当模仿者不再被看护者佩戴时，模仿者会进入他们选择的最近的无人空间。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"False Appearance",
+				"Shapechanger"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Owlbear Companion",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/Q7We9l1.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the owlbear has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 10,
+			"page": 21,
+			"save": {
+				"str": "+3 plus PB",
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"athletics": "+3 plus PB",
+				"perception": "+1 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": "11 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"S",
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"猫头鹰熊在依靠视觉或嗅觉的智慧（感知）检查方面具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}砍伤。"
+					]
+				},
+				{
+					"name": "1st Level: Violent Attack (2 Ferocity)",
+					"entries": [
+						"猫头鹰熊会进行一次标志性的攻击。一旦命中，攻击会造成额外的PB伤害，并且猫头鹰熊可以将目标向任何方向移动5英尺。"
+					]
+				},
+				{
+					"name": "3rd Level: Owlie Oop (5 Ferocity)",
+					"entries": [
+						"猫头鹰熊最多可以跳跃20英尺，不会引起机会攻击。当他们落地时，在他们5英尺范围内的每个生物都必须成功地进行一个{@dc 10 + PB|10 plus PB}力量救赎，否则会被击倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "5th Level: Bear Hug (8 Ferocity)",
+					"entries": [
+						"猫头鹰熊试图抓住并压碎一个他们能看到的5英尺内的生物，该生物必须做一个{@dc 10 + PB|10 plus PB}灵巧的蓄力动作。如果失败，目标会受到{@damage (PB)d10}的重击伤害，并被{@condition grappled}(逃脱{@dc 10 + PB|10 plus PB})。成功时，目标受到一半的伤害，并且不被（%4%）。直到这个抓捕结束，目标也是（%5%）。如果猫头鹰熊对其他目标使用熊抱，则抓捕结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Give a Hoot (1/Long Rest)",
+					"entries": [
+						"猫头鹰熊会发出独特的战斗叫声。如果猫头鹰熊的看护者能听到这声呐喊，看护者会获得5倍于PB的临时命中值。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Sporeling Companion",
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/5LLN6tu.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the sporeling has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 15,
+			"int": 5,
+			"wis": 12,
+			"cha": 12,
+			"page": 22,
+			"save": {
+				"con": "+2 plus PB"
+			},
+			"skill": {
+				"perception": "+1 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"passive": "11 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"A"
+			],
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"当孢子菌保持不动，它们与普通真菌没有区别。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Corruption Cough (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6 plus PB}酸液伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Destabilizing Attack (2 Ferocity)",
+					"entries": [
+						"孢子虫会进行一次标志性的攻击。一旦命中，攻击就会产生正常的效果，而目标在孢子虫下一回合开始前所做的下一次攻击卷中会处于劣势。"
+					]
+				},
+				{
+					"name": "3rd Level: Spore Burst (5 Ferocity)",
+					"entries": [
+						"每个在他们5英尺范围内的孢子菌所选择的生物必须在一个{@dc 10 + PB|10 plus PB}宪法救赎上成功，否则会变成{@condition poisoned}，直到孢子菌的下一回合开始。"
+					]
+				},
+				{
+					"name": "5th Level: Hallucinogenic Spores (8 Ferocity)",
+					"entries": [
+						"每个在孢子虫10英尺范围内的敌人必须做一个{@dc 10 + PB|10 plus PB}智慧救赎动作。如果失败，孢子菌选择目标生物是否使用他们的反应对目标生物范围内孢子菌选择的另一个生物进行近战攻击，或者目标生物是否倒下（%1%）。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Invigorating Spores (1/Long Rest)",
+					"entries": [
+						"当孢子菌的照顾者在他们30英尺范围内时，孢子菌可以使用一个额外的行动，让照顾者在1分钟内享受拯救的优势。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Worg Companion",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "BST",
+			"tokenUrl": "https://i.imgur.com/BAQ4gXu.png",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "13 plus PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "7 + 7 times caregiver's level (the worg has a number of d8 Hit Dice equal to their caregiver's level)"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 14,
+			"int": 7,
+			"wis": 12,
+			"cha": 10,
+			"page": 23,
+			"save": {
+				"str": "+3 plus PB",
+				"dex": "+2 plus PB"
+			},
+			"skill": {
+				"perception": "+1 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": "11 plus PB",
+			"pbNote": "equals the caregiver's bonus",
+			"damageTags": [
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Move as One",
+					"entries": [
+						"当虫族的看护者骑在虫族身上时，对虫族或其看护者的机会攻击是以劣势进行的。虫族的看护者可以通过花费5英尺的移动来安装或卸载虫族。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite (Signature Attack)",
+					"entries": [
+						"{@atk mw} {@hit +3+PB|+3 plus PB}击中，到达5英尺，一个目标，{@h} {@damage 1d6+PB|1d6 plus PB}刺穿伤害。"
+					]
+				},
+				{
+					"name": "1st Level: Overwhelming Attack (2 Ferocity)",
+					"entries": [
+						"虫族进行了一次标志性的攻击。一旦命中，该攻击会造成额外的PB伤害，并且目标在虫族下一回合开始前不能做出反应。"
+					]
+				},
+				{
+					"name": "3rd Level: Brutal Charge (5 Ferocity)",
+					"entries": [
+						"虫子移动到他们的速度，而不会引起机会攻击。在这个移动过程中或结束时，他们可以对一个目标进行一次标志性攻击。"
+					]
+				},
+				{
+					"name": "5th Level: Bite Frenzy (8 Ferocity)",
+					"entries": [
+						"虫子对他们5英尺范围内选择的PB生物进行咬合攻击。一旦命中，目标会被击倒（%0%）。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	],
+	"foundryMonster": [
+		{
+			"name": "Basilisk Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.sur.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Blood Hawk Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "6 + 6 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.wis.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Deinonychus Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dragon Wyrmling Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.wis.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Earth Elemental Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gelatinous Cube Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "8 + 8 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Giant Spider Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "6 + 6 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Giant Toad Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Giant Weasel Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.acr.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hell Hound Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mimic Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ste.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Owlbear Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sporeling Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Worg Companion",
+			"source": "BST",
+			"effects": [
+				{
+					"name": "Beastheart's Companionship",
+					"changes": [
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "ADD",
+							"value": "+ @srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "OVERRIDE",
+							"value": "7 + 7 * @srd5e.userchar.details.level"
+						},
+						{
+							"key": "data.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.skills.prc.bonuses.check",
+							"mode": "ADD",
+							"value": "@srd5e.userchar.pb"
+						},
+						{
+							"key": "data.attributes.prof",
+							"mode": "OVERRIDE",
+							"value": "@srd5e.userchar.pb"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Ferocious Bond",
+			"source": "BST",
+			"shortName": "Ferocious",
+			"subclassFeatures": [
+				"Ferocious Bond|Beastheart|BST|Ferocious|BST|3",
+				"Frenzied Charge|Beastheart|BST|Ferocious|BST|3",
+				"Fury of the Wise|Beastheart|BST|Ferocious|BST|3",
+				"Energizing Rampage|Beastheart|BST|Ferocious|BST|7",
+				"Furious Rampage|Beastheart|BST|Ferocious|BST|11",
+				"Invigorated Rampage|Beastheart|BST|Ferocious|BST|15"
+			],
+			"className": "Beastheart",
+			"classSource": "BST",
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown-green.webp"
+		},
+		{
+			"name": "Hunter Bond",
+			"source": "BST",
+			"shortName": "Hunter",
+			"subclassFeatures": [
+				"Hunter Bond|Beastheart|BST|Hunter|BST|3",
+				"Chosen Quarry|Beastheart|BST|Hunter|BST|3",
+				"Hunter's Instincts|Beastheart|BST|Hunter|BST|3",
+				"Primal Warding|Beastheart|BST|Hunter|BST|7",
+				"Synchronized Stealth|Beastheart|BST|Hunter|BST|11",
+				"Unseen Hunters|Beastheart|BST|Hunter|BST|15"
+			],
+			"className": "Beastheart",
+			"classSource": "BST",
+			"foundryImg": "icons/commodities/treasure/totem-wooden-glowing-green.webp"
+		},
+		{
+			"name": "Infernal Bond",
+			"source": "BST",
+			"shortName": "Infernal",
+			"subclassFeatures": [
+				"Infernal Bond|Beastheart|BST|Infernal|BST|3",
+				"Devil's Understanding|Beastheart|BST|Infernal|BST|3",
+				"Infernal Exploits|Beastheart|BST|Infernal|BST|3",
+				"Hell's Charmer|Beastheart|BST|Infernal|BST|7",
+				"Fiendish Traits|Beastheart|BST|Infernal|BST|11",
+				"Infernal Exploits|Beastheart|BST|Infernal|BST|11",
+				"Fiendish Form|Beastheart|BST|Infernal|BST|15"
+			],
+			"className": "Beastheart",
+			"classSource": "BST",
+			"foundryImg": "icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp"
+		},
+		{
+			"name": "Primordial Bond",
+			"source": "BST",
+			"shortName": "Primordial",
+			"subclassFeatures": [
+				"Primordial Bond|Beastheart|BST|Primordial|BST|3",
+				"Nature Exploits|Beastheart|BST|Primordial|BST|3",
+				"Primal Understanding|Beastheart|BST|Primordial|BST|3",
+				"Allied Earth|Beastheart|BST|Primordial|BST|7",
+				"Nature Exploits|Beastheart|BST|Primordial|BST|11",
+				"Spirit Stampede|Beastheart|BST|Primordial|BST|11",
+				"Allied Weather|Beastheart|BST|Primordial|BST|15"
+			],
+			"className": "Beastheart",
+			"classSource": "BST",
+			"foundryImg": "icons/magic/nature/wolf-paw-glow-green.webp"
+		},
+		{
+			"name": "Protector Bond",
+			"source": "BST",
+			"shortName": "Protector",
+			"subclassFeatures": [
+				"Protector Bond|Beastheart|BST|Protector|BST|3",
+				"Beast Vitality|Beastheart|BST|Protector|BST|3",
+				"Pack Phalanx|Beastheart|BST|Protector|BST|3",
+				"Thickened Hide|Beastheart|BST|Protector|BST|7",
+				"Sentinel Companion|Beastheart|BST|Protector|BST|11",
+				"Undying Protector|Beastheart|BST|Protector|BST|15"
+			],
+			"className": "Beastheart",
+			"classSource": "BST",
+			"foundryImg": "icons/magic/nature/barrier-shield-wood-vines.webp"
+		}
+	],
+	"item": [
+		{
+			"name": "Badge of Battle +1",
+			"source": "BST",
+			"page": 43,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"这枚青铜徽章描绘了一种特定类型的可怕生物（龙、狼、猫头鹰熊等），在战斗中跃跃欲试，对抗敌人。在佩戴该徽章时，你在使用徒手攻击和自然武器进行攻击和伤害时获得+1的奖励。这种攻击被认为是神奇的。"
+			]
+		},
+		{
+			"name": "Badge of Battle +2",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"这枚青铜徽章描绘了一种特定类型的可怕生物（龙、狼、猫头鹰熊等），在战斗中跃跃欲试，对抗敌人。在佩戴该徽章时，你在使用徒手攻击和自然武器进行攻击和伤害时获得+2的奖励。这种攻击被认为是神奇的。"
+			]
+		},
+		{
+			"name": "Badge of Battle +3",
+			"source": "BST",
+			"page": 43,
+			"rarity": "very rare",
+			"wondrous": true,
+			"entries": [
+				"这枚青铜徽章描绘了一种特定类型的可怕生物（龙、狼、猫头鹰熊等），在战斗中跃跃欲试，对抗敌人。在佩戴该徽章时，你在使用徒手攻击和自然武器的攻击和伤害卷中获得+3的奖励。这种攻击被认为是神奇的。"
+			]
+		},
+		{
+			"name": "Badge of Ruin +1",
+			"source": "BST",
+			"page": 43,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"reqAttune": "by a Beastheart or a Companion",
+			"entries": [
+				"每当你的同伴在战斗中获得凶猛时，这个金色徽章就会发光。如果你的同伴与这个徽章相配，并且使用了一个需要另一个生物进行能力检查或蓄力的凶猛动作，那么检查或蓄力的DC会增加+1。当你戴着徽章时，你的攻击性救赎DC增加+1。"
+			]
+		},
+		{
+			"name": "Badge of Ruin +2",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": "by a Beastheart or a Companion",
+			"entries": [
+				"每当你的同伴在战斗中获得凶猛时，这个金色徽章就会发光。如果你的同伴与这个徽章相配，并且使用了一个需要另一个生物进行能力检查或蓄力的凶猛动作，那么检查或蓄力的DC会增加+2。当你戴着徽章时，你的攻击性救赎DC增加+2。"
+			]
+		},
+		{
+			"name": "Badge of Ruin +3",
+			"source": "BST",
+			"page": 43,
+			"rarity": "very rare",
+			"wondrous": true,
+			"reqAttune": "by a Beastheart or a Companion",
+			"entries": [
+				"每当你的同伴在战斗中获得凶猛时，这个金色徽章就会发光。如果你的同伴与这个徽章相配，并且使用了一个需要另一个生物进行能力检查或蓄力的凶猛动作，那么检查或蓄力的DC会增加+3。当你戴着徽章时，你的攻击性救赎DC增加+3。"
+			]
+		},
+		{
+			"name": "Beam Lenses",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": "by a Companion",
+			"range": "60",
+			"dmg1": "1d10 + @srd5e.userchar.pb",
+			"dmgType": "O",
+			"bonusWeaponAttack": "3 + @srd5e.userchar.pb",
+			"grantsProficiency": false,
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"target.value": 1,
+				"target.type": "creature"
+			},
+			"entries": [
+				"这些红宝石护目镜用黑色皮带固定在头上。当你的同伴戴着护目镜并且有3个以上的凶猛度时，你可以在你的回合中花费3个凶猛度（不需要行动），命令你的同伴用他们的行动从镜片中向他们60英尺内的目标发射一束魔法能量。同伴做出一个攻击卷，其修正值等于3+你的熟练度加成。一旦命中，攻击会造成1d10+你的熟练度加成的武力伤害。"
+			]
+		},
+		{
+			"name": "Bonded Bracelets",
+			"source": "BST",
+			"page": 43,
+			"rarity": "very rare",
+			"wondrous": true,
+			"reqAttune": true,
+			"entries": [
+				"这些简单的绳索手镯成对出现。当你和同一平面上的另一个生物与手镯相调和时，你们总是知道对方的确切位置，并能以心灵感应的方式与对方交谈。如果另一个被调和的生物不懂任何语言，你能理解他们的情绪状态，并能给他们下简单的命令。",
+				"此外，当你和另一个被调和的生物在彼此1英里范围内时，你们都不需要吃或喝，而且你们都可以在极度寒冷和极度炎热的条件下生存，而不会获得（%0%）的等级。当你们在对方60英尺范围内时，你们获得另一个生物所具有的任何伤害抵抗力或免疫力，反之亦然。"
+			]
+		},
+		{
+			"name": "Collar of Disguise",
+			"source": "BST",
+			"page": 43,
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": "by a Companion",
+			"entries": [
+				"当你的同伴戴着这个皮项圈时，你可以使用一个动作，说出一个命令词，将同伴多态化为以下生物之一：猫、青蛙、山羊、藏獒、骡子、猫头鹰、老鼠或乌鸦。同伴所穿戴或携带的任何装备都会被新形态吸收或承担（由你选择）。在这种形态下，你的同伴保留了除体型以外的所有统计数据，而且他们不能使用凶猛行动。你可以再次说出命令语作为行动，让你的同伴回到他们的原形。"
+			]
+		},
+		{
+			"name": "Companion Ball",
+			"source": "BST",
+			"page": 44,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"在这个半径为3英寸的铁球外侧刻有野兽、怪兽和其他类型的同伴生物的图像。当你拿着这个球，而你的同伴在你30英尺范围内，并且没有处于狂暴状态时，你可以使用一个动作说出一个命令词，将你的同伴传送到球内一个舒适、安全的次元空间。在球里时，你的同伴可以进行短期或长期的休息，而且不需要吃喝。一个{@i companion ball}球一次只能容纳一个同伴。"
+			]
+		},
+		{
+			"name": "Emblem of Elements",
+			"source": "BST",
+			"page": 44,
+			"rarity": "rare",
+			"wondrous": true,
+			"reqAttune": "by a Companion",
+			"entries": [
+				"这个吹玻璃的徽章看起来像一朵花，有蓝色、绿色、红色和黄色的花瓣。当你的同伴用招牌攻击或凶猛动作造成酸、冷、火、闪电、毒或雷的伤害时，你可以花2个凶猛动作（不需要动作）将伤害类型改为该列表中的任何其他类型。"
+			]
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Armor of the Caregiver",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of the Caregiver",
+				"source": "BST",
+				"page": 43,
+				"rarity": "rare",
+				"reqAttune": true,
+				"bonusAc": "+1",
+				"entries": [
+					"当你的同伴将他们的怒火转向你时，这件盔甲会将你的痛苦转化为力量。穿着这件盔甲时，你有一个+1的交流奖励。此外，当你的同伴处于狂暴状态时，你受到的伤害只有一半，而且你在下一回合结束前进行的下一次攻击如果命中，会造成额外的（%0%）伤害。"
+				]
+			}
+		}
+	]
+}

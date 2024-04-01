@@ -1,0 +1,6847 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FateforgeGrimoire",
+				"abbreviation": "FF:G",
+				"full": "Fateforge Grimoire",
+				"url": "https://www.drivethrurpg.com/product/302115/Fateforge--2--Grimoire",
+				"authors": [
+					"Studio Agate"
+				],
+				"convertedBy": [
+					"crabGoblin"
+				],
+				"version": "unknown"
+			},
+			{
+				"json": "FateforgeGrimoire-SRDx",
+				"abbreviation": "FF:G",
+				"full": "Fateforge Grimoire, modified SRD spells",
+				"url": "https://www.drivethrurpg.com/product/302115/Fateforge--2--Grimoire",
+				"authors": [
+					"Studio Agate"
+				],
+				"convertedBy": [
+					"crabGoblin"
+				],
+				"version": "unknown"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"PHB"
+			]
+		},
+		"dateAdded": 1631721764,
+		"dateLastModified": 1693671517,
+		"_dateLastModifiedHash": "d8fc522f67"
+	},
+	"spell": [
+		{
+			"name": "Acid Blob",
+			"source": "FateforgeGrimoire",
+			"page": 110,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一个淡黄色的气泡从你的手指射向范围内你选择的生物。对目标进行范围性的法术攻击。一旦命中，目标会受到{@damage 2d8}的酸液伤害，并且必须进行体质救赎，否则会受到{@condition blinded}的伤害，直到下一回合结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aura of Awe",
+			"source": "FateforgeGrimoire",
+			"page": 121,
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"强大的能量从你身上散发出来，形成一个半径为30英尺的光环，给予你的盟友一个光荣、可怕的面孔。直到咒语结束，光环会以你为中心随你移动。",
+				"每个在光环中的非敌对生物（包括你）都会出现令人恐惧的力量。每当这样的生物在它的回合中成功地进行了一次武器攻击，攻击的目标必须做一个魅力救赎，否则就会成为攻击者的（%0%），直到攻击者的下一个回合开始。如果被攻击的生物以5分或更大的差距没有通过蓄力，在它的下一个回合，它只能使用它的行动来冲刺，以便尽可能地远离它的恐惧源。"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aura of Confidence",
+			"source": "FateforgeGrimoire",
+			"page": 121,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"决心和勇气从你身上散发出来，形成一个半径为30英尺的光环，增强你盟友的意志。直到咒语结束，光环会以你为中心与你一起移动。",
+				"光环中的每个非敌对生物（包括你）对被（%0%）或（%1%）免疫，并在其每个回合开始时获得与你的法术能力修饰值相等的临时命中数。最后，每当光环中的非敌对生物进行能力检定时，它可以将9或更低的（%2%）卷视为10。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，能力检查的最小结果（%0%）在法术槽等级超过三级时增加1。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aura of Duplicity",
+			"source": "FateforgeGrimoire",
+			"page": 122,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"虚伪和不确定的浪潮从你身上散发出来，形成一个半径为30英尺的光环。直到咒语结束，光环会以你为中心随你移动。除你之外，光环中的每个生物在与欺骗有关的能力检查中具有优势，但在与洞察力有关的能力检查中处于劣势，而你在这两方面都具有优势。"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Aura of Elemental Protection",
+			"source": "FateforgeGrimoire",
+			"page": 122,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"保护性能量从你身上散发出来，形成一个半径为30英尺的光环。直到咒语结束，光环会以你为中心随你移动。从以下类型的伤害中选择一种：酸、冷、火、闪电或雷霆。光环中的每个非敌对生物（包括你）对所选的伤害类型有抵抗力。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以为2级以上的每一个法术槽等级选择一个额外的伤害类型。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aura of Excellence",
+			"source": "FateforgeGrimoire",
+			"page": 122,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"力量从你身上辐射到半径30英尺的范围内。直到咒语结束，光环会以你为中心随你移动。在光环中的每个非敌对生物（包括你）在所有能力检查和救赎上都有优势。"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Aura of Healing",
+			"source": "FateforgeGrimoire",
+			"page": 123,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"恢复性能量从你身上散发出来，形成一个半径为30英尺的光环。直到咒语结束，光环会以你为中心随你移动。在光环中的每个非敌对生物（包括你）在其每个回合开始时都会恢复与你的法术能力修饰值相等的打击点数。"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aura of Holy Armament",
+			"source": "FateforgeGrimoire",
+			"page": 123,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"神圣的转化能量从你身上散发出来，形成一个半径为30英尺的光环。直到咒语结束，光环会以你为中心随你移动。光环中的每个非敌对生物（包括你）都会被授予一个临时的神圣强化，该强化适用于受益人在下列装备中选择的一件非魔法装备：盔甲、盾牌、武器或弹药。在咒语结束之前，该装备是有魔力的，并给予其使用者+2 AC奖励（如果是一件盔甲或盾牌）或+2攻击和伤害卷奖励（如果是武器或弹药）。"
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aura of Truthfulness",
+			"source": "FateforgeGrimoire",
+			"page": 123,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"诚实和信任从你身上散发出来，形成一个半径为30英尺的光环。直到咒语结束，光环会以你为中心随你移动。光环中的每个生物（包括你）在与欺骗有关的能力检查中都处于劣势，在与洞察力有关的能力检查中处于优势。"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blindsight",
+			"source": "FateforgeGrimoire",
+			"page": 127,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a withered millipede"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你触碰一个愿意的生物，赋予它在不使用视觉的情况下感知环境的能力。在持续时间内，该生物拥有60英尺范围内的盲视能力。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级或以上的法术槽施展此法术时，你可以针对四级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloodthirsty Fury",
+			"source": "FateforgeGrimoire",
+			"page": 128,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of blood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"选择一个你能看到的范围内的生物。如果该生物不愿意，它可以做一个智慧救赎动作来抵抗这个咒语。在它的每个回合结束时，目标可以再次进行智慧救赎。如果成功，该咒语将在目标身上结束。",
+				"直到咒语结束。",
+				{
+					"type": "list",
+					"items": [
+						"目标在力量和灵巧方面有优势。",
+						"只要它还有命中率，目标就会在每个回合开始时恢复与你的施法能力修改值相等的命中率。",
+						"目标对以下类型的伤害有抵抗力：重击、寒冷、火、坏死、刺穿和砍伤。",
+						"目标不能施展法术或集中精力。",
+						"如果目标的回合结束，而它自上一回合以来没有攻击过一个生物，也没有受到过伤害，那么它的等级就会提高（%0%）（最高为5）。",
+						"每当对目标造成重击、穿刺或砍击伤害时，你的法术能力修正值会加到伤害上。",
+						"目标不能对你有敌意的行为，除非你是视线中唯一的生物。",
+						"目标不能放过被它降低到0HP的生物：它必须系统地杀死它们。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或以上的法术槽施放此法术时，你可以针对5级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"ADV",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Compulsive Strike",
+			"source": "FateforgeGrimoire",
+			"page": 135,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a sprig of nettle"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将你的手指指向范围内的一个生物，这个生物必须立即使用它的反应，用它所持有的武器对你选择的一个生物进行攻击。如果它无法这样做（无论是因为到达该生物需要它移动，还是因为环境使它无法攻击该生物），这个咒语就没有效果。",
+				"如果目标不愿意，该法术的施放就会被破坏，目标可以用智慧救赎来抵制该法术的效果。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以针对2级以上的每一个法术槽的一个额外生物。当你瞄准它们时，这些生物必须在30英尺范围内。"
+					],
+					"type": "entries"
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Celestial or Fiend",
+			"source": "FateforgeGrimoire",
+			"page": 136,
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你召唤一个挑战等级为4级或更低的（%0%）或（%1%）（你选择），它出现在一个你能看到的范围内无人的空间。当天体下降到0命中率或咒语结束时，天体就会消失。",
+				"天人或魔人在这段时间内对你和你的同伴很友好。为天人或魔人掷出主动权，它有自己的回合。它服从你对它发出的任何口头命令（不需要你的行动），只要这些命令不违反它的排列。如果你没有向天人或魔人发出任何命令，它就会保护自己不受敌对生物的伤害，但除此之外就没有任何行动。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用九级法术槽施展此法术时，你会召唤一个挑战等级为5或更低的（%0%）或（%1%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Fey or Ravager",
+			"source": "FateforgeGrimoire",
+			"page": 138,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你召唤一个{@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}，或一个以{@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}为形态的精灵。它出现在一个你能看到的范围内无人的空间。当它的命中率降至0或法术结束时，这个精灵就会消失。",
+				"妖怪在持续时间内对你和你的同伴都很友好。为该生物掷出主动权，它有自己的回合。它服从你对它发出的任何口头命令（不需要你的行动），只要这些命令不违反它的排列。如果你没有对这个精灵生物发出任何命令，它就会保护自己不受敌对生物的伤害，但除此之外就没有任何行动。",
+				"如果你的注意力被破坏了，这个精灵生物并不会消失。相反地，你会失去对精灵生物的控制，它变得对你和你的同伴有敌意，而且它可能会攻击。不受控制的精灵不能被你驱除，而且在你召唤它的1小时后它会消失。",
+				"{@bold The Influence of Corruption on the Conjuration of Fey.} 这个咒语的变体召唤出一个掠夺者，而不是一个精灵生物。",
+				"遭受严重腐化的施法者无法召唤出费伊生物，无论施法者的力量如何。妖怪会逃离堕落的生物，或者一见到他们就攻击他们。在召唤费伊或蹂躏者和召唤林地生物或小型蹂躏者的情况下，腐败会改变咒语，召唤蹂躏者而不是费伊。",
+				"此外，当这些法术中的任何一个被用来召唤蹂躏者时，其施法会被腐蚀。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，法术槽等级每超过6级，挑战等级就会增加1。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Woodland Beings or Minor Ravagers",
+			"source": "FateforgeGrimoire",
+			"page": 139,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "one holly berry per creature summoned"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你召唤出现在你能看到的范围内无人的空间的精灵生物。从以下选项中选择一个出现的东西。",
+				{
+					"type": "list",
+					"items": [
+						"One {@filter fey creature of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=fey|miscellaneous=!swarm}",
+						"Two {@filter fey creatures of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=fey|miscellaneous=!swarm}",
+						"Four {@filter fey creatures of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=fey|miscellaneous=!swarm}",
+						"八 {@filter fey creatures of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=fey|miscellaneous=!swarm}"
+					]
+				},
+				"当一个被召唤的生物下降到0命中率或咒语结束时，它就会消失。",
+				"被召唤的生物对你和你的同伴都很友好。对被召唤的生物作为一个群体进行主动性计算，它们有自己的回合。它们服从你对它们发出的任何口头命令（不需要你采取行动）。如果你没有向它们发出任何命令，它们会保护自己不受敌对生物的伤害，但除此之外没有任何行动。",
+				"DM拥有这些生物的统计资料。",
+				"{@bold The Influence of Corruption on the Conjuration of Fey.} 遭受严重腐化的施法者不能召唤费伊生物，无论施法者的力量如何。妖怪会逃离堕落的生物，或者一见到他们就攻击他们。在召唤费伊或蹂躏者和召唤林地生物或小型蹂躏者的情况下，腐败会改变咒语，召唤蹂躏者而不是费伊。",
+				"此外，当这些法术中的任何一个被用来召唤蹂躏者时，其施法会被腐蚀。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用某些更高级别的法术槽施展这个法术时，你选择上面的一个召唤选项，就会出现更多的生物：使用6级法术槽时是两倍，使用8级法术槽时是三倍。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Convergence",
+			"source": "FateforgeGrimoire",
+			"page": 143,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"这个法术显示了朝向最近的有可能帮助你的生物的方向。在咒语的持续时间内，一个内部罗盘会将你指向符合以下条件的最近的生物。",
+				{
+					"type": "list",
+					"items": [
+						"其智力得分至少为6分。",
+						"它位于离你3英里以内。",
+						"它的兴趣与你相符，它与你有共同的理想，它被你吸引，它对你所代表的东西有良好的倾向性，或者有任何其他理由欣赏你。这个咒语并不能迷惑有关的生物，它只是把你引向一个愿意帮助你的人。",
+						"你不认识这个生物，或者对它的存在一无所知。例如，如果你的一个老朋友和你位于同一个城镇而你却不知道，这个咒语可能会指向这个朋友。"
+					]
+				},
+				"咒语只显示朝向该生物的方向，不提供任何关于你与它之间的距离、它的身份或它帮助你的原因的指示。如果另一个符合上述详细条件的生物比最初的那个更接近你，咒语会立即切换到更近的生物。一旦你进入符合要求的生物的10英尺之内，咒语就会结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，持续时间增加1小时，并且每超过一级法术槽等级，到最近的生物的最大距离增加3英里。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Corrosive Geyser",
+			"source": "FateforgeGrimoire",
+			"page": 144,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of toad spit"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一颗绿色的珍珠从你的指尖射出，在范围内的一个点上碎裂，迸发成一个酸柱。每一个被卷入以该点为中心的10英尺半径、40英尺高的圆柱体中的生物都必须进行宪法救赎，如果救赎失败，将受到{@damage 8d6}酸的伤害，如果救赎成功，将受到一半的伤害。如果一个生物的救赎失败的幅度在5以上，它的所有非魔法武器和盔甲都会获得脆弱的特性。",
+				"脆弱：每当穿戴者受到关键打击时，脆弱盔甲的AC奖励下降1点。脆弱武器的伤害在其使用者每次获得伤害或关键打击时下降1点。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，每超过三级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"PRM",
+				"SCL"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Countershot",
+			"source": "FateforgeGrimoire",
+			"page": 144,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"在法术结束之前，每当你看到一个生物在你60英尺范围内进行远程武器攻击时，你可以使用你的反应，用你自己的带弦的弓、准备好的吊索或装好的弩射出一箭来阻止攻击。在这种情况下，进行一次范围性的法术攻击。如果你的攻击卷的结果高于或等于你所反应的攻击的结果，两个弹丸就会相撞。你的弹丸被摧毁，如果攻击者的弹丸是弹药，也被摧毁。如果攻击者的弹丸是武器，它将落在攻击者和目标之间你所选择的空间。你可以在攻击者做出攻击卷之后，但在攻击的任何效果被应用之前使用你的反应。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或以上的法术槽施放此法术时，反击拥有额外的效果，详见下表。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spell Slot Level",
+								"Special Effects",
+								"Bonus to Your Attack Roll Against the Projectile",
+								"Duration of the Spell"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-6 text-left",
+								"col-2 text-center",
+								"col-2 text-left"
+							],
+							"outro": [
+								"* When you successfully counter a shot, the collision can, if you wish, result in one of the listed effects."
+							],
+							"rows": [
+								[
+									"2nd",
+									"你可以反击目标在你60英尺范围内的投射物，无论你和攻击者之间的距离如何。",
+									"+1",
+									"2分钟"
+								],
+								[
+									"3rd",
+									"你可以反击你看不到的射击（如在黑暗中或在你视线范围外进行的射击）。",
+									"+2",
+									"3分钟"
+								],
+								[
+									"4th",
+									"你可以反击需要远程法术攻击的法术。",
+									"+3",
+									"4分钟"
+								],
+								[
+									"5th*",
+									{
+										"type": "list",
+										"items": [
+											"明亮的光线，以撞击点为中心，在60英尺范围内闪耀，直到你下一个回合结束。",
+											"一阵阵的声音从撞击点爆发出来，在300英尺内可以听到。",
+											"你的投射物保持其朝向攻击者的路线。你可以立即用有关的弹丸对攻击者进行一次远程武器攻击，但要符合你的武器范围。"
+										]
+									},
+									"+4",
+									"5分钟"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Decree",
+			"source": "FateforgeGrimoire",
+			"page": 149,
+			"level": 5,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你改变命运，以便有利于你的盟友，挫败你的敌人。在法术结束之前，每当你能看到的30英尺范围内的生物要进行攻击卷、蓄力或能力检查时，你可以用你的反应来发布一个命令。不愿意的生物可以用 \"魅力反射 \"来抵制这个效果。",
+				"在下列法令中选择一个法令。",
+				{
+					"type": "list",
+					"items": [
+						"{@bold Glory.}该生物会被自动视为掷出了20分(在攻击卷的情况下会导致关键一击)。你可以使用这个法令一次。",
+						"{@bold Huzzah.}该生物自动被视为掷出了15分。 你可以使用这个法令三次。",
+						"{@bold Alas.}该生物会被自动视为掷出了5，你可以使用这个法令三次。"
+					]
+				},
+				"在所有三种可能的法令的情况下，生物都不会掷出{@dice d20}，法令的效果取代了掷出。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用六级以上的法术槽施展此法术时，法术的半径增加30英尺，并且每超过五级的法术槽，你可以多发出一次嗡嗡声和一次唉声。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Detect Tracks",
+			"source": "FateforgeGrimoire",
+			"page": 152,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"在咒语结束之前，你知道在过去的一周里，你周围30英尺范围内是否有体型较小或较大的生物存在。作为一个行动，你可以特别关注一个轨迹，以确定相应生物的种类（和可能的亚种）和大小，以及它的方向，它的步伐（例如悠闲或匆忙），和它通过的日期。",
+				{
+					"type": "list",
+					"items": [
+						"侦查轨道挫折（%0%）。",
+						"{@spell Nondetection}和任何防止占卜的魔法都不会消除轨迹，但它会使它变得模糊不清，使人无法通过这个咒语获得有关它的信息，即使是作为一个动作关注它（如上文详述）。",
+						"如果在上个星期，半径范围内有超过20个微小或更大的生物出现，那么这个咒语就会有过多的信息，你无法获得更多的细节。然而，在施法时，你可以通过指定尺寸（微小、小型、中型、大型、巨大或巨型）和/或生物类型（畸变、野兽、天体、构造、龙、元素、精灵、恶魔、巨人、人形、怪兽、渗水、植物、掠夺者或亡灵）来缩小研究范围。",
+						"咒语可以穿透大多数障碍物，但它会被1英尺的石头、1英寸的普通金属、薄薄的铅板或3英尺的木头或泥土所阻挡。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Duplicate Potion",
+			"source": "FateforgeGrimoire",
+			"page": 159,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "water and a drop of honey"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你给作为材料成分的水注入与你所持有的魔法药水相同的属性。使用的槽位等级决定了你能复制多强大的药水。你只能复制通过物理手段创造的药水：炼金过程、发酵、煎煮等。例如，你不能复制一个被复制的药水。",
+				"当咒语结束时，如果复制的药水没有被消耗掉，它就会蒸发掉。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rarity of the Potion",
+						"Spell Slot Level Required"
+					],
+					"colStyles": [
+						"col-2 text-left",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"普通",
+							"1st"
+						],
+						[
+							"不常见",
+							"2nd"
+						],
+						[
+							"Rare",
+							"5th"
+						],
+						[
+							"非常罕见",
+							"7th"
+						],
+						[
+							"传说中的",
+							"9th"
+						]
+					]
+				}
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Elemental Weapon",
+			"source": "FateforgeGrimoire",
+			"page": 161,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将你的近战武器包裹在元素的力量中。直到咒语结束，每当你用此武器成功攻击时，你都会造成相当于你施法能力修饰值的额外伤害。当你施法时，在以下类型中选择额外伤害的类型：酸、冷、火、闪电、辐射或雷霆。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或以上的法术槽施放此法术时，额外的伤害等于你的法术能力修饰值的两倍。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"radiant",
+				"thunder"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Expose",
+			"source": "FateforgeGrimoire",
+			"page": 163,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 3
+					}
+				}
+			],
+			"entries": [
+				"你将手指指向一个生物，该生物必须做一个魅力救赎动作，否则将更容易受到你选择的一种伤害：酸、重击、冷、火、力量、闪电、坏死、穿刺、毒、精神、辐射、切割或雷霆。",
+				"如果该生物对该类型的伤害免疫，它现在对它有抵抗力；如果它对该类型的伤害有抵抗力，它就失去抵抗力；如果它对该类型的伤害既没有免疫力也没有抵抗力，它就获得对它的脆弱性。在它的每个回合结束时，该生物可以再做一次魅力拯救动作。如果成功，则咒语结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，你可以使目标在2级以上的每一个法术槽等级中额外受到一种类型的伤害。"
+					],
+					"type": "entries"
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fateful Twist",
+			"source": "FateforgeGrimoire",
+			"page": 165,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take after making an ability check, attack roll, or saving throw, but before being informed of its result"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"通过一句话，你通过预知和命运操纵的结合，巧妙地改变你的行动。你会在你刚做的卷轴上获得一个上限为+1的奖励（最高为20）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，封顶的奖励就会增加+1。"
+					],
+					"type": "entries"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Find Flying Steed",
+			"source": "FateforgeGrimoire",
+			"page": 167,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤出一个精灵，它的形态是一匹异常聪明、强壮、忠诚的飞行骏马，与它建立长久的联系。骏马出现在范围内一个无人的地方，它的形态由你选择：一个（%0%）、一个（%1%）或一个（%2%）。(你的DM可能允许其他动物被召唤为骏马。)骏马具有所选择的形态的统计数据，在狮鹫的情况下有以下区别：它是一个精灵而不是一个怪物，它的智力为6，并且它获得了理解你选择的一种语言的能力。",
+				"你的骏马作为坐骑为你服务，无论是在战斗中还是在外面，你与它有一种本能的联系，使你能够作为一个无缝的单位进行战斗。当你骑在你的骏马上时，你可以使你施放的任何只针对你的法术也针对你的骏马。",
+				"当骏马的命中率下降到0时，它就会消失，不留下任何物理形态。你也可以在任何时候将你的骏马作为一个动作解散，使它消失。在这两种情况下，再次施展这个法术会召唤出同一匹骏马，并恢复到它的最大命中率。当你的骏马在你1英里范围内时，你可以用心灵感应与对方交流。你不能在同一时间有超过一个由这个咒语或找寻的骏马所结合的骏马。作为一个动作，你可以在任何时候将骏马从它的结合中释放出来，使它消失。"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fleeting Aegis",
+			"source": "FateforgeGrimoire",
+			"page": 172,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within 60 feet of you cast a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"这个法术可以加强你的盟友对即将发生的法术的防御。当你使用你的反应时，在转瞬即逝的护盾施放之前，你会被告知你所反应的法术的以下特征。",
+				{
+					"type": "list",
+					"items": [
+						"如果是3级或更低级别",
+						"如果咒语涉及到在施放后立即进行蓄力或攻击卷的问题",
+						"如果该法术的施法时间为1个动作或更少"
+					]
+				},
+				"如果不符合上述所有条件，你可以选择不施放转瞬即逝的护盾。在这种情况下，你的反应力仍然被消耗，但不是相应的法术槽。",
+				"如果上述所有条件都满足，你和范围内你能看到的最多三个生物对触发咒语的蓄力攻击有优势，而触发咒语的攻击卷对受益者有劣势。一旦触发咒语的初始效果得到解决，这个效果就会结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或4级的法术槽施展此法术时，转瞬即逝的宙斯可以对抗5级或更低的法术；使用5级或6级的法术槽，转瞬即逝的宙斯可以对抗7级或更低的法术；使用7级或以上的法术槽，转瞬即逝的宙斯可以对抗任何级别的法术。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Flesh Pouch",
+			"source": "FateforgeGrimoire",
+			"page": 172,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"你永久地改变你的肉体，以便在你的体内储存物品。如果是中型生物，储存的物品在任何维度上都不能超过3英尺（小型生物为2英尺，大型生物为6英尺，超过大型生物的尺寸类别则为两倍）。储存的物品会加到你的总负荷上，但不会妨碍你。储存在你体内的物品无法通过非魔法手段被发现。在你的回合中，你可以将一个物品储存在你的肉袋中作为一个动作，而移除一个物品则被视为与一个物品互动。",
+				"{@bold Brutal Dispelling.}如果你的领袖使用这个选项，驱散肉体袋会产生危险的影响。",
+				"如果肉袋在被驱散时含有物体，请掷骰子（%0%）。如果结果是9到20，你体内的物体就会被无害地排出；如果结果是1到8，它们就会留在你体内，导致不适和疼痛，其严重程度取决于储存物体的大小。对于每一个至少有一个尺寸等于或大于最大允许尺寸一半的物体（对于中等生物来说是1.5英尺），你每分钟都会受到（%1%）坏死伤害，直到物体被提取出来。提取一个物体需要一个DC20的智慧（医学）检查。如果检定失败的幅度在5以上，你会受到{@damage 3d6}的砍伤伤害。"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Grim Escort",
+			"source": "FateforgeGrimoire",
+			"page": 181,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of humanoid bone ash"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你被一个可怕的光环所包围，在你身后升起非常细的黑色尘埃。直到法术结束，所有被你降低到0命中率的中型和小型人形生物在你下一回合开始时都会上升为（%0%）。这些僵尸只服从于你，并且只对以下命令做出反应，你可以将这些命令作为额外行动发出。在 \"攻击 \"命令之外，僵尸对其他生物仍然是被动的，只有在对攻击的反应中才会攻击。",
+				{
+					"type": "list",
+					"items": [
+						"{@bold Attack.} 僵尸攻击最近的生物，不包括施法者和任何携带施法者血液的生物。因此，一级和二级亲属（孩子、父母、兄弟姐妹、同父异母的兄弟姐妹、孙子孙女和祖父母），以及身上带有施法者血液的生物（无论是被溅到的还是施法者故意标记的）都可以幸免。",
+						"{@bold Follow.} 僵尸尽其所能跟随施法者。",
+						"{@bold Move.}僵尸移动到一个明显的、容易识别的地方，如山顶或村庄广场。",
+						"{@bold Rampage.}护卫队对最近的无生命元素进行攻击，不攻击生物。它优先考虑物体，然后是植物。",
+						"{@bold Split.}通过这个命令，施法者可以组织机动行动，例如钳形运动，指示部分护卫队沿着一条路走，而其余的人跟着施法者。",
+						"{@bold Stop.} 僵尸站立不动。如果受到攻击，它们会反击，但不会移动。"
+					]
+				},
+				"你使用这个法术所复活的僵尸不能超过你的法术能力修饰值的两倍。如果你在已经达到你的极限时将一个生物的命中率降为0，那么复活的僵尸会自动取代命中率最低的那个，成为一具简单的尸体。同样地，当法术结束时，所有的僵尸都会变成普通的尸体。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施放此法术时，法术的威力会增加，详见下表。大量的僵尸可以被赋予群居的原型。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spell Slot Level",
+								"Spell Duration",
+								"Maximum Number of Zombies",
+								"Additional Benefits (the Effects Stack)"
+							],
+							"colStyles": [
+								"col-1 text-left",
+								"col-1 text-left",
+								"col-3 text-left",
+								"col-7 text-left"
+							],
+							"rows": [
+								[
+									"5th",
+									"6小时",
+									"咒语能力修改器×3",
+									"所有的僵尸对来自非魔法攻击和伤害的击打、刺穿和砍伤都有抵抗力，并以33马力而不是正常的22马力上升。"
+								],
+								[
+									"6th",
+									"12小时",
+									"咒语能力修改器×4",
+									"所有僵尸的智力都是6，使他们能够理解更复杂的指令。然而，他们仍然无法区分生物，除了从你的血液中获得的信息。"
+								],
+								[
+									"7th",
+									"24小时",
+									"咒语能力修改器×5",
+									""
+								],
+								[
+									"8th",
+									"1 week",
+									"咒语能力修改值×10",
+									"你的僵尸的受害者作为你严峻的护卫队的一部分而上升（最大数量仍然适用）。"
+								],
+								[
+									"9th",
+									"1个月",
+									"无上限",
+									"在你周围800英尺的范围内，被你的血液携带者杀死的生物会上升为你狰狞护卫的一部分。"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL",
+				"SMN",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Healthy Carrier",
+			"source": "FateforgeGrimoire",
+			"page": 188,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a contagious sample, which the spell consumes, and an hourglass",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"entries": [
+				"你接触一个生物并给它接种一种疾病。用作物质成分的样本决定了疾病的性质。如果该生物不愿意，它可以用宪法救赎来抵制该咒语。否则，它就会成为你魔法的载体和咒语的健康载体。",
+				{
+					"type": "list",
+					"items": [
+						"{@bold Incubation.} 最初，健康的带菌者运输疾病而不显示症状。这个阶段的持续时间由作为材料成分的沙漏中所包含的沙子的流动情况决定（1到24小时之间）。可以将沙漏交给健康携带者，使其了解剩余的时间。在这一阶段结束时，健康携带者要么摆脱了疾病，要么开始出现症状。",
+						"{@bold Transmission of the disease.} 在初始阶段，健康的携带者最多可以将疾病传染给四个生物。每一个皮肤接触到健康携带者的生物都必须做一个宪法救赎动作，否则就会被污染。如果健康携带者成功地污染了四个生物，它就能摆脱这种疾病。除了健康携带者之外，被污染的生物不能传播疾病或摆脱它，直到咒语结束（见下文）。",
+						"{@bold Appearance of the symptoms.}一旦咒语的初始阶段结束，健康的携带者（如果它没有摆脱疾病）和所有被污染的生物都会受到疾病的全部影响。这些影响与疾病的潜伏期结束时发生的影响相吻合（从而使其比正常情况下短得多），然后疾病正常运行。"
+					]
+				},
+				"{@bold Healty Poison Carrier.}如果你使用这个选项，健康载体也可以用来给健康载体接种毒药。这个选择的作用如下。",
+				{
+					"type": "list",
+					"items": [
+						"一个或几个剂量的毒药可以替代传染性样本，最多4个剂量（4级以上的每一个法术槽等级+2）。",
+						"受污染生物的最大数量受接种给健康携带者的剂量数量的限制。每个生物只能传播一个剂量。例如，一个健康的携带者接种了两个剂量的毒药，可以使两个生物中毒。一旦所有的剂量都被传播，健康携带者就会摆脱毒药。",
+						"只要沙漏没有清空，携带毒药的生物就可以传播它。与疾病不同，毒药被转移后，最初的携带者不再携带它。在这个法术的范围内，不可能将毒药传回给之前携带它的生物。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高等级的法术槽施展此法术时，你可以额外接种两个健康的带菌者，并且每个健康带菌者必须污染的生物数量在4级以上每增加一个法术槽就会增加两个，以摆脱疾病。此外，当你使用8级或以上的法术槽施展此法术时，被污染的生物会成为健康的携带者，直到法术结束。"
+					],
+					"type": "entries"
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hunter's Haven",
+			"source": "FateforgeGrimoire",
+			"page": 192,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "special, see description"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"通过一个手势，你可以在周围的大自然中召唤出一个避难所。猎人的避难所的形状是一个约100平方英尺的洞穴，最大天花板高度为6英尺。它可以通过一扇5英尺高、5英尺宽的门进入，你可以让它出现在地面上、树干上、岩壁上，等等。门一直开着，直到你进入或关闭它。",
+				"从外面看，只有你能打开这扇门，但也有可能摧毁它。这扇门的AC值等于你的法术防御DC，HP值等于所用法术槽等级的10倍。",
+				"这个咒语只能在自然环境中施展，也就是说，至少有500平方英尺的区域未被开垦，至少一年。野生土地构成了该法术的物质成分。",
+				"你在同一时间只能有一个猎人的庇护所。如果你在另一个猎人的避难所处于活动状态时施展这个法术，之前的避难所就会消失，它所包含的一切都会被驱逐出去。",
+				"避难所的内部让人联想到周围的环境：沙漠中的沙墙，森林中的树根，沼泽中的豆荚状结构，等等。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，避风港的持续时间和大小会按照下表的规定增加。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spell Slot Level",
+								"Duration",
+								"Size"
+							],
+							"colStyles": [
+								"col-2 text-left",
+								"col-2 text-left",
+								"col-2 text-left"
+							],
+							"rows": [
+								[
+									"2nd",
+									"1 hour",
+									"150平方尺"
+								],
+								[
+									"3rd",
+									"24小时",
+									"300平方尺"
+								],
+								[
+									"4th",
+									"1 week",
+									"500平方尺"
+								],
+								[
+									"5th",
+									"直到被驱散",
+									"1000平方尺"
+								]
+							]
+						},
+						"当你使用四级或以上的法术槽施展此法术时，所施展的避风港是一个与飞地相同性质的超维空间。",
+						"如果你与附近的费伊人或精灵结盟，你的避难所包括一条通往他们领域入口的道路。你的避难所离有关王国的距离不能超过2英里（如果这个法术是用5级以上的法术槽施放的，则为3英里）。王国的精灵或妖怪可以自由地使用这条路并进入你的避难所，但你只有在他们的祝福下才能进入他们的领域。",
+						"此外，以下情况适用于避难所内。",
+						{
+							"type": "list",
+							"items": [
+								"如果周围有水，你的避难所就包括纯净水的来源。",
+								"避难所的内部由墙壁上发出的昏暗光线照亮。"
+							]
+						}
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Killer Shot",
+			"source": "FateforgeGrimoire",
+			"page": 201,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "the projectile used"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将你的手指指向一个生物，并对一个投射物进行施法，使其对这个生物特别致命。任何具有投掷属性的弹药或武器都可以被附魔。直到咒语结束，下一次被附魔的弹丸击中指定的生物时，攻击会造成该武器类型的额外伤害（%0%）。为了克服对非魔法攻击和伤害的抵抗力和免疫力，该弹丸算作是魔法。如果弹丸击中了除最初指定的目标之外的另一个目标，它将造成正常伤害。如果你用投射物攻击指定的生物但没有击中，投射物会立即回到你的手中，准备再次使用。当弹丸对指定的生物造成了伤害，另一个生物使用了它，或者咒语结束，弹丸就会失去它的魔法。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Leech",
+			"source": "FateforgeGrimoire",
+			"page": 202,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"吸血鬼的能量从你身上散发出来，半径为30英尺。直到咒语结束，光环会以你为中心随你移动。每回合一次，当范围内你能看到的至少是小体型的生物受到重击、穿刺或砍击伤害时，你可以恢复相当于该生物所受伤害一半的命中点。如果该生物的类型是以下几种：构筑物、元素、渗水、植物和亡灵，则该效果不能适用。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施展此法术时，法术槽等级每超过四级，半径就会增加10英尺。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"HL",
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lighting Strike",
+			"source": "FateforgeGrimoire",
+			"page": 204,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你旋转并传送到一个你能看到的60英尺内的无人空间，然后立即对你所选择的范围内的每个生物进行近战法术攻击。成功后，目标会受到{@damage 6d10}武力伤害。",
+				"一旦你进行了攻击，你可以立即传送回你施法时占据的空间。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施放此法术时，每超过5级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SCL",
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Magic Theft",
+			"source": "FateforgeGrimoire",
+			"page": 208,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a square of dark cloth"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"指定一个你能看到的范围内的生物，并选择它所施放的一个法术，这个法术的持续时间必须超过1轮，并且仍然处于活动状态。该生物必须用它的施法能力做一个拯救动作。如果你试图偷窃的法术槽等级高于你用来施展魔法偷窃的法术槽，那么该生物在蓄力投掷上有优势。",
+				"如果该生物的救赎失败，它的法术仍然有效，但你获得了该法术的控制权，现在被视为它的施法者。咒语的参数（目标、持续时间等）保持不变，但现在使用的是你的施法能力修改值和熟练度加成。",
+				"如果偷窃导致出现阻止咒语发挥作用的情况（例如，如果你离其目标太远），则咒语结束。"
+			],
+			"miscTags": [
+				"ADV",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mind Blast",
+			"source": "FateforgeGrimoire",
+			"page": 213,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你释放一波精神能量。30英尺范围内的每个生物都必须做一个智力救赎动作。拯救失败时，该生物会受到{@damage 4d8}的精神伤害，并在1分钟内处于{@condition stunned}的状态。拯救成功时，该生物会受到一半的伤害，并且不会有{@condition stunned}。",
+				"在它的每个回合结束时，该生物可以再做一次智力拯救动作。如果成功，该生物将不再是（%0%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施放此法术时，每超过5级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"MT",
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Overpowering Weapon",
+			"source": "FateforgeGrimoire",
+			"page": 219,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你用你的神性的压倒性力量填充你的近战武器。直到咒语结束，每当你用这把武器成功地进行攻击时，你会造成相当于你的法术能力修饰值两倍的额外力量伤害，并且目标必须进行力量救赎，否则会被打到离你10英尺远的地方并摔倒（%0%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级或以上的法术槽施放此法术时，额外的伤害等于你的法术能力修饰值的三倍。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Plant Kingdom",
+			"source": "FateforgeGrimoire",
+			"page": 225,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a seed or pit, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"在所选点的60英尺范围内长出茂盛的植被。在咒语结束之前，该区域对于对你有敌意的生物来说是困难的地形，当一个有敌意的生物在它的回合中第一次进入该区域或在那里开始它的回合时，它必须做一个力量救赎，否则会被（%0%），直到它下一个回合开始。",
+				"植被不会妨碍你的盟友的行动，甚至会促进你的行动。如果相应的运动在法术区域内开始，你可以使用冲刺动作作为奖励动作，而且当你在法术区域内时，你所有的力量和灵巧检查都有优势。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或更高级别的法术槽施展此法术时，你可以指定一个生物，该生物在每一个高于三级的法术槽等级中获得与你相同的利益。"
+					],
+					"type": "entries"
+				}
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Powerful Weapon",
+			"source": "FateforgeGrimoire",
+			"page": 226,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你给你所持的武器注入了更多的效力。在咒语结束之前，每当你为该武器掷出的伤害结果低于平均值时，你就会被认为是掷出了平均值，如下表所示。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Type of Die and Initial Result",
+						"Final Result"
+					],
+					"colStyles": [
+						"col-2 text-left",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"{@dice d4} (1-2)",
+							"3"
+						],
+						[
+							"{@dice d6} (1-3)",
+							"4"
+						],
+						[
+							"{@dice d8} (1-4)",
+							"5"
+						],
+						[
+							"{@dice d10} (1-5)",
+							"6"
+						],
+						[
+							"{@dice d12} (1-6)",
+							"7"
+						]
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施展此法术时，对重击、穿刺和砍击伤害的抗性对被施法的武器不适用。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Prehensile Appendage",
+			"source": "FateforgeGrimoire",
+			"page": 228,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一个5英尺长的触手状附属物从你的背部生长出来。你可以像控制你的主力手臂一样轻松地控制它。不活动时，它在你身后懒洋洋地摇摆，给观察者带来不安的景象。在咒语结束前，只要你不是（%0%），你就会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"{@bold Prehension.} 只要你的附肢是自由的，它的吸盘就能抓紧任何表面。对于任何利用你的附肢的运动学检查，使用你的法术能力而不是普通能力。此外，你获得的攀爬速度与你的步行速度相等。",
+						"{@bold Extra Action.} 只要该附属物是自由的，你就可以在你的回合中采取下列行动之一作为额外行动。攻击（包括抓取或推搡一个生物），帮助，或击退（见击退）。每回合一次，你也可以用你的附肢进行一次机会攻击，而无需使用你的反应。",
+						"{@bold Attack.}当你用你的附属物进行攻击动作时，使用你的法术能力修正值进行攻击和伤害卷。这也适用于你用它来抓取或推搡一个生物的时候。你不能用你的附肢来挥舞武器，并使用它进行攻击。用附肢攻击成功后，会造成相当于(1%)+你的法术能力修饰的打击性伤害。附属物的作用范围为5英尺，被认为是一种神奇的武器。",
+						"{@bold Parry.}直到你的下一个回合开始，所有你能看到的对手对你的近战攻击都有劣势。"
+					]
+				},
+				"{@bold A Psychurge's Appendages}",
+				"灵媒巫师可以施展这个法术的非腐蚀变体，在这个变体中，幻化的附属物是由原始的精神能量构成的，表现为灵媒巫师的心灵的物质化。一个灵媒的附属物是他们灵魂的反映（排列组合、特征、腐败等）：当他们的心灵纯洁宁静时，多个附属物的形状可以是发光的翅膀或孔雀的裙裾。",
+				"然而，精神病患者是最容易受到疯狂影响的施法者，因此也最容易受到腐蚀。因此，很少有人能长期保持精神上的附属物不受任何玷污。那些能够做到这一点的人已经证明能够成功地抵御不断威胁的堕落。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施展这个法术时，你在四级以上的每一个法术槽中创造一个额外的附肢。使用你的额外行动可以让你对你的每一个附肢都使用额外行动的好处。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SCL",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Psychic Weapon",
+			"source": "FateforgeGrimoire",
+			"page": 235,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在手中变出一件纯精神能量的武器。从你所精通的武器中选择该武器的性质。你的攻击和伤害动作与普通武器一样，但不同的是，通灵武器会造成通灵伤害。例如，你可以使用你的力量或灵巧修饰值用通灵匕首进行攻击，它将造成相当于（%0%）+你的力量或灵巧修饰值的通灵伤害。",
+				"如果你停止持有通灵武器，它就会消失。"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Raven's Claws",
+			"source": "FateforgeGrimoire",
+			"page": 236,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a throwing weapon made of metal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向你的敌人投射尖锐的弹丸。20英尺范围内的每个生物都必须做一个灵巧的蓄力动作。蓄力失败时，生物会受到{@damage 3d8}的砍伤，蓄力成功时，会受到一半的伤害。如果救赎失败的幅度为5或更多，则该生物在下一回合结束前会受到（%1%）的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"MT",
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Roar",
+			"source": "FateforgeGrimoire",
+			"page": 241,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of black powder"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你张开双臂，发出震耳欲聋的喊声。对你所选择的范围内的每个生物进行近战法术攻击。一旦成功，你将对目标造成{@damage 3d8}的雷霆伤害。每一个目标生物--即使是那些攻击卷不成功的生物--也必须进行宪法救赎，否则会受到{@condition deafened}和{@condition incapacitated}的伤害，直到你下一个回合开始。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Seraphic Summoning",
+			"source": "FateforgeGrimoire",
+			"page": 246,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"每一个被神选中的人（也就是说，任何具有牧师级别的角色）都与一个叫做（%0%）的天使结合在一起，他们的力量随着他们的门徒的力量而增长。",
+				"当你通过这个咒语召唤你的塞拉弗时，你会被传送到星界，沐浴在你只能困惑地感知到的光芒中。萨拉弗以其所有的荣耀出现在你的位置上。同时，你恢复了（%0%）的体力。",
+				{
+					"type": "list",
+					"items": [
+						"萨拉弗可以立即行动，你控制他们的行动。",
+						"当咒语结束或塞拉弗被降至0命中率时，塞拉弗就会消失，而你会重新出现在他们占据的空间。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，每超过三级的法术槽等级，持续时间就会增加一回合。在星界度过的每一回合都会使你恢复{@dice 1d8}hp。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"HL",
+				"SMN",
+				"TP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Silent Walk",
+			"source": "FateforgeGrimoire",
+			"page": 249,
+			"level": 3,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在你周围创造一个球形区域，半径在5到20英尺之间（在施法的时候选择），该区域内的所有噪音都被扼杀。直到咒语结束，球体与你一起移动，以你为中心。在该区域内可以正常听到外部和内部的声音，但没有任何声音可以逃离它。"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Slumber",
+			"source": "FateforgeGrimoire",
+			"page": 251,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在范围内的生物周围建立一个屏障，将其从魔法流中切断。目标必须做一个 \"魅力储蓄\"，否则会受到以下影响，直到法术结束。",
+				{
+					"type": "list",
+					"items": [
+						"该生物感到晕眩（等同于（%0%）的条件）。在它的每个回合结束时，它可以做一个魅力救赎动作，如果成功则结束这个效果。即使该生物处于休眠状态（没有被魔法唤醒），这个效果也适用。",
+						"该生物不能使用任何法术、先天法术、魔法力量或与觉醒有关的功能。",
+						"如果该生物正专注于一个法术或效果，它的注意力就会被打破。它也会失去对它所在的任何法术或魔法效果的控制。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或以上的法术槽施放此法术时，你可以针对5级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Spying Shot",
+			"source": "FateforgeGrimoire",
+			"page": 255,
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "the projectile used"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你用占卜魔法对一个投射物进行附魔。任何具有投掷属性的弹药或武器都可以被附魔。在咒语结束之前，你可以完全控制该弹丸，并在保留自己感官的情况下看穿它。视觉是你可以通过窥视射击使用的唯一感官，它的暗视范围为120英尺。你可以通过间谍射击进行基于视觉的智慧（感知）和智力（调查）检查，但有缺点。该弹丸可以以每轮120英尺的最大速度飞行。它可以在其尺寸允许的地方滑行。如果窥视射击被移到离你1英里以外的地方，则法术结束。当法术结束时，弹丸被摧毁。",
+				"窥视射击的动作可以被注意到。在弹丸视线范围内的生物可以用智慧（感知）检查来对抗你的法术救赎DC，以注意它的存在。",
+				"在法术结束之前，你可以使用窥视射击来攻击投射物60英尺内的目标，作为一个动作。对目标进行一次范围性的法术攻击。一旦成功，目标会受到投射物类型的（%0%）伤害。为了克服对非魔法攻击和伤害的抵抗力和免疫力，该伤害算作是魔法伤害。无论攻击是否命中，该法术都会结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，伤害增加（%0%），你可以通过窥视射击进行聆听，并且窥视射击在120英尺范围内具有盲目性；当你使用五级以上的法术槽施放此法术时，伤害再次增加（%1%），并且射出的子弹也是（%2%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Staggering Weapon",
+			"source": "FateforgeGrimoire",
+			"page": 255,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的近战武器的打击响起了你神性的至高权威。直到咒语结束，每当你用这把武器攻击成功时，你都会造成相当于你法术能力修饰值两倍的额外精神伤害，并且目标必须进行智慧救赎，否则会被（%0%），直到其下一回合开始。"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sudden Cramp",
+			"source": "FateforgeGrimoire",
+			"page": 257,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你伸出你的手，用手指着范围内的一个目标。在咒语结束前，每当目标进行攻击卷、蓄力或能力检查时，你可以用你的反应来掷出一个（%0%），并从卷中减去结果。你可以在卷轴之前或之后使用你的反应，但在卷轴的任何效果被应用之前。你必须看到你的目标才能使用这个效果。"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Torment",
+			"source": "FateforgeGrimoire",
+			"page": 264,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a snake's slough"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你指定一个你能看到的范围内的生物作为诅咒的目标。在咒语结束前，每当你用攻击击中它时，该生物会受到额外的（%0%）精神伤害。如果该生物在此咒语结束前下降到0点，你可以在你接下来的一个回合使用一个额外行动来折磨另一个生物。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或4级的法术槽施放此法术时，当你用攻击击中目标时，目标会被{@condition incapacitated}直到其下一回合开始。当你使用五级或更高级别的法术槽时，目标也会被（%1%），直到你用攻击击中它的下一回合开始。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"blinded"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Unholy Fusion",
+			"source": "FateforgeGrimoire",
+			"page": 268,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "bread crumbs and blood that you mix during the spellcasting"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择两个你能看到的范围内的生物，彼此相距5英尺以内。每个目标生物都必须做一个 \"魅力拯救\"。",
+				{
+					"type": "list",
+					"items": [
+						"该法术对当前总命中率高于50或降至0的生物，以及变身者和不能被（%0%）的生物没有效果。",
+						"一个生物可以自愿地不做拯救动作。",
+						"成功时，该生物受到{@damage 5d6}的精神伤害。失败时，该生物被你控制（%1%），直到咒语结束。",
+						"如果两个生物都没有通过他们的救赎，并且比对方大不超过两个尺寸，他们就会不可抗拒地被对方吸引，他们的肉体会在可憎的融合中融合。这两个生物现在是一体的，并且占据了同一个空间。如果它们的尺寸不同，其中较小的一个就会进入另一个的空间。如果它们的大小相同，则随机决定哪一个加入另一个的空间。融合的结果是一个连体的奇美拉，一个可怕的康克尔的蹂躏者。"
+					]
+				},
+				"无论融合是否发生，只要被这个咒语影响的生物（%0%）与你保持在60英尺范围内，就会与你有心灵感应的联系，允许你在不需要共同语言的情况下向它发出命令。这个{@condition charmed}的生物视你为朋友，并尽力满足你的要求，甚至不惜以身犯险。然而，如果你发出一个自杀性的或明显不合理的命令，这个咒语就会结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高等级的法术槽施放此法术时，你的目标生物每超过5级的法术槽就能多出10点HP。此外，当你使用7级或8级的法术槽施放此法术时，持续时间为集中，最长为10分钟。如果使用9级的法术槽，持续时间为集中，最长为1小时。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vengeful Weapon",
+			"source": "FateforgeGrimoire",
+			"page": 270,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的近战武器成为你神性的强大怒气的载体。直到咒语结束，每当你用这把武器成功攻击时，你都会造成相当于你的法术能力修饰的额外精神伤害，并且目标必须进行智慧救赎，否则在咒语持续期间将受到你的（%0%）影响。",
+				"在它的每个回合结束时，目标可以再做一次智慧救赎来重申它的意志。一旦成功，它就不再是你的（%0%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或以上的法术槽施放此法术时，额外的伤害等于你的法术能力修饰值的两倍。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Venomous Influx",
+			"source": "FateforgeGrimoire",
+			"page": 271,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向附近的一个生物灌输有毒的瘴气。该生物必须进行宪法救赎，否则会受到{@damage 4d8}的毒伤害，并在1分钟内受到{@condition poisoned}的伤害。如果救赎成功，该生物会受到一半的伤害，并且不会受到（%2%）。",
+				"在它的每个回合结束时，该生物可以再做一次宪法救赎动作。如果成功，它就不再受到这个法术的影响（%0%）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，每超过2级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vivacity",
+			"source": "FateforgeGrimoire",
+			"page": 271,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你触摸一个愿意的生物，使其速度增加5英尺，直到咒语结束或你再次施展。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级时，受此法术影响的生物总是跳跃，就像它事先移动了10英尺一样。当你达到11级时，受此法术影响的生物在进行远跳时可额外跳两英尺，在进行高跳时可额外跳一英尺。",
+						"当你达到17级时，这些距离会增加相同的数量，跳远时总共多出4英尺，跳高时多出2英尺。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Warcry",
+			"source": "FateforgeGrimoire",
+			"page": 274,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你发出的嚎叫声在300英尺范围内可以听到，你可以让人听懂。",
+				"在10英尺范围内的每个生物都必须做一个宪法救赎动作，否则会受到{@damage 1d6}的雷霆伤害，并被{@condition deafened}，直到你下一个回合开始。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级（{@damage 2d6}）、11级（{@damage 3d6}）和17级（{@damage 4d6}）时，该法术的伤害增加{@damage 1d6}。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"MT",
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wild Regression",
+			"source": "FateforgeGrimoire",
+			"page": 276,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a leaf"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤自然的力量，呼唤它们来回收有机物和矿物。在30英尺范围内的每个生物都必须做一个 \"魅力储蓄\"，否则它的装备和身体就会发生变化，就像它们被丢在大自然中几个月一样。如果失败，该生物的非魔法装备会发生以下变化。",
+				{
+					"type": "list",
+					"items": [
+						"所有由木头、石头或金属制成的武器（除了米塔尔、矮人和精灵钢以及金刚砂）都会生锈、变暗、长出苔藓和嫩芽等等。因此，使用这些武器的伤害卷会受到-2的惩罚。",
+						"具有弹药属性的武器（如弓、弩和弹弓）变得无法使用。",
+						"如果该生物穿戴的盔甲不是由密特拉尔、矮人或精灵钢或金刚砂制成的，它的攻击力将受到-2的惩罚。",
+						"该生物的表面生理结构和它的其他物品也受到影响，它的头发明显地生长，衣服变得破旧和肮脏。它的指甲也会生长，导致它在所有需要手动精确的能力检查中处于劣势，直到它们被修剪。"
+					]
+				},
+				"每件受影响的装备都可以通过智力（适当的工具）检查来恢复，以对抗你的法术保存DC。这需要1小时。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高等级的法术槽施放此法术时，3级以上的法术槽每增加1级的AC惩罚。此外，当你使用5级或更高等级的法术槽施放此法术时，用受影响的武器进行的攻击卷有劣势。"
+					],
+					"type": "entries"
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"MAC",
+				"SCL"
+			],
+			"areaTags": [
+				"MT",
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wondrous Domain",
+			"source": "FateforgeGrimoire",
+			"page": 279,
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 24,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a pinch of earth from a distant land and precious items worth at least 25,000 gp",
+					"cost": 2500000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "year",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你在自己周围创造一个注入魔法的领域，最大半径为1英里。领域的形状不一定是一个完美的圆形，因为法术会遵循地理边界，比如河流、墙壁、树篱、悬崖和其他可能的界限。所有奇妙领域都有一套共同的特征，而每个领域都有两个独特的特征，详见下文。你可以通过每年在同一天、在同一地点施放此咒语来创造一个永久的奇妙领域，持续十年。",
+				"{@bold Common Features.} 所有奇妙的领域都有以下特点。",
+				{
+					"type": "list",
+					"items": [
+						"{@bold Outskirts.}该领域被一个边界区所包围，当魔法强大时，或者当外界的季节或天气与该领域相匹配时，该边界区就会延伸。反之，当它与魔法薄弱的地区接触时，它可能会根据领导者的决定而缩小。郊区的宽度通常在300到1500英尺之间，这取决于具体情况。在郊区的定位需要对你的法术救赎DC进行一次或几次智慧（生存）检查，即使是游侠在他们喜欢的地形上。此外，无论是领域本身还是它的郊区都无法从外部感知。通过一种幻觉现象，它们只是作为其周围环境的延续而出现。在郊区内，奇异领域的部分特征可能是有效的，由领导者决定。",
+						"{@bold Physical Entrance.}虽然奇异领域具有非同寻常的物理特性，但它仍然与世界的其他部分有物理联系，实际上可以被偶然发现。寻找路径的咒语可以为其指明方向。",
+						"{@bold Nondetection.}在奇异领域的范围内或其外围的任何东西都不能被任何占卜魔法所针对，也不能通过外部的魔法探查传感器所感知。领域的边界是空灵的边界（见地理学章节）。",
+						"(领域内的生物在面对毒药和疾病时，在体质判断上有优势，也可以治疗伤口。此外，在该区域内完成长时间的休息后，可以消除两级的（%1%），而不是一级。",
+						"{@bold Aberrant Architecture.}在一个奇妙的领域，物理学规则更加灵活。在那里，有可能建造对抗重力的建筑、不融化的冰雕、永远流动的喷泉等等。这样的壮举仍然需要适当的技能和合适的劳动力，但该领域的性质将大大促进它们。",
+						"{@bold Strong Magic.}领域内的魔法永远强大。"
+					]
+				},
+				"{@bold Unique Features.} 你最多可以在你的奇妙领域中包括以下两个特征。你的领导可能会让你建议其他的特征，以及包括气氛的小特征（光线、植被、声音等）。",
+				"{@bold Time Loop}",
+				"在奇异领域的每一天都与前一天相同，任何衰老或衰弱都在其中暂停。唯一不受时间循环影响的物品是那些携带或运输的物品。时间每天都会重置，从居民的头脑中删除任何关于前一天的记忆。智力为5或更低的生物无法抵御这种现象。至于智力在6以上的生物，以下三种情况中的一种适用，取决于该生物与施法者的默契程度。",
+				{
+					"type": "list",
+					"items": [
+						"{@bold Friend of the domain.} 这只涉及被施法者明确承认的生物。他们不受这种现象的影响。",
+						"{@bold Neutral.} 这是默认状态。每当每日重置发生时，该生物必须做一个智力救赎，否则就会失去它在奇妙领域中度过的一天的记忆。拯救失败的生物将和之前的一天一模一样，除非发生不同的事情。",
+						"{@bold Enemy of the Domain.} 这只涉及施法者明确承认的生物。这不需要在生物的面前进行。\"我的表弟福尔佳是个敌人 \"或 \"所有人类都是敌人 \"与 \"这个无名氏是个敌人 \"一样有效。领域的敌人必须像中立生物一样进行智力储蓄，不同的是，如果失败的幅度在5以上，它就会失去对自己身体的控制，并被驱赶着离开领域24小时之久。当效果结束时，该生物会恢复意识，但不记得它走过的路，也不记得通往奇异领域的确切途径。"
+					]
+				},
+				"{@bold Aberrant Time}",
+				"该领域的时间流和/或天气与外部世界的不一致。下面是一些可能性，每行代表一个特征。如果你的领导同意，你可以发明其他的。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Outside World",
+						"Wondrous Domain"
+					],
+					"colStyles": [
+						"col-2 text-left",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"1 day",
+							"1 year"
+						],
+						[
+							"1 year",
+							"1 day"
+						],
+						[
+							"白天（或晚上）",
+							"与外部世界相对立"
+						],
+						[
+							"季节的正常周期",
+							"您选择的永久季节"
+						],
+						[
+							"正常的日/夜周期",
+							"永恒的白天、黑夜、黎明或黄昏"
+						]
+					]
+				},
+				"{@bold Teleportation}",
+				"由同一施法者或自愿的施法者创建的神奇领域可以用传送圈连接。这些传送圈只能通向它们所连接的神奇领域。",
+				"{@bold Wondrous Nature}",
+				"领域内的自然界永远悬浮在一个理想化的季节（冬季、春季、夏季或秋季）中。即使这个季节通常不会让植物生长，但它们却能做到，这意味着一片草莓可以在隆冬时节开花结果。",
+				"{@bold Key}",
+				"奇妙领域的创造者可以定义一个进入的条件。它可以是一个需要执行的动作，也可以是一个需要发音的口令。没有这把钥匙，生物就无法穿越郊区。钥匙也可以是一个时刻，例如 \"午夜，当忧郁症充满时\"。"
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"miscTags": [
+				"ADV",
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Alter Self",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 112,
+			"otherSources": [
+				{
+					"source": "PHB"
+				}
+			],
+			"_copy": {
+				"name": "Alter Self",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，法术槽等级每超过2级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Animate Dead",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 114,
+			"_copy": {
+				"name": "Animate Dead",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold A Pact with Death.} It is possible to cast this spell as a non-corrupted one by making a pact with Death. By virtue of the agreement, Death tasks a voluntary soul with animating the targeted corpse, thus absolving the corrupt nature of the spell. Some priests of this divinity are learned in this method and can teach it to others in return for a donation or as an exchange of favors. Those who make this commitment can cast animate dead without suffering corruption, on the condition that they make {@condition restrained} use of it. The precise limitations of this version of the spell (duration, frequency, taboos) are at the leader's discretion. In addition, the pact implies that the caster:"
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Antilife Shell",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 116,
+			"_copy": {
+				"name": "Antilife Shell",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施展此法术时，你可以选择在5级以上的每一个法术槽等级中增加屏障的半径10英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Arcane Lock",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 119,
+			"_copy": {
+				"name": "Arcane Lock",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，上述的DC增量会增加5，并且对象在2级以上的每一个法术槽等级中获得对你选择的另一种类型的伤害的抗性。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Arcane Sword",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 119,
+			"_copy": {
+				"name": "Mordenkainen's Sword",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级以上的法术槽施放此法术时，每超过7级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Arcanist's Magic Aura",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 119,
+			"_copy": {
+				"name": "Nystul's Magic Aura",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施放这个法术时，目标可以是一个不愿意的生物。然而，该咒语可以通过智力救赎来抵制。使用四级以上的法术槽时，该法术的范围为30英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Barkskin",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 125,
+			"_copy": {
+				"name": "Barkskin",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，法术槽等级每超过2级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Beacon of Hope",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 125,
+			"_copy": {
+				"name": "Beacon of Hope",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，每超过三级的法术槽等级，范围增加10英尺，持续时间增加5回合。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Black Tentacles",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 126,
+			"_copy": {
+				"name": "Evard's Black Tentacles",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施放此法术时，伤害增加（%0%），并且你可以在4级以上的每一个法术槽等级中增加5英尺的面积。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Blade Barrier",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 126,
+			"_copy": {
+				"name": "Blade Barrier",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，每超过6级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Blink",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 127,
+			"_copy": {
+				"name": "Blink",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或更高的法术槽施展此法术时，每超过三级的法术槽等级，消失在虚空界所需的卷轴就会减少1。因此，你在4级时需要掷出10或更高的分数，在5级时需要掷出9或更高的分数，以此类推。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Blur",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 128,
+			"_copy": {
+				"name": "Blur",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，法术槽等级每超过2级，持续时间就会增加1分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Calm Emotions",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 130,
+			"_copy": {
+				"name": "Calm Emotions",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Peace and Love.} If this option is used, when calm emotions is cast with its second effect, creatures who fail the saving throw by a margin of 5 or more will feel soothed or even giddy, their exact behavior depending on their personality. This state of mind may influence their decision-making toward pacifism  and conciliation."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，法术槽等级每超过2级，球体的半径就增加10英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Clairvoyance",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 132,
+			"_copy": {
+				"name": "Clairvoyance",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，法术槽等级每超过三级，持续时间就会增加10分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Commune",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 133,
+			"_copy": {
+				"name": "Commune",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Divine Wrath} If you anger your deity or their proxy, the negative mental energy results in psychic backlash.",
+							"You must make a DC 15 Wisdom saving throw or take {@damage 5d8} psychic damage."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Compulsion",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 135,
+			"_copy": {
+				"name": "Compulsion",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施放此法术时，法术槽等级每超过4级，范围就增加10英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Contact Other Plane",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 139,
+			"_copy": {
+				"name": "Contact Other Plane",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Persuade the Enemy} If your leader makes use of this option, the successful casting of the spell only enables contact with the entity by drawing its attention. The entity knows your name and where you are.",
+							{
+								"type": "list",
+								"items": [
+									"You have 1 minute to convince the entity to answer you. Entities with which you share a common enemy will usually be willing to help you at no cost.",
+									"Once you have successfully convinced the entity, you can ask your five questions, to which it is obligated to reply."
+								]
+							},
+							"{@bold The Power of Hatred} If you attempt to contact an entity that is hostile to you (whether it feels deepseated hatred or short-lived anger toward you), the negative mental energy results in psychic backlash. You must make a DC 15 Wisdom saving throw or take 5d8 psychic damage. In addition, angering the entity can incur its wrath and possibly make you the target of retaliation."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Contagion",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 140,
+			"_copy": {
+				"name": "Contagion",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施放此法术时，法术槽等级每超过5级，持续时间就会增加7天。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Control Water",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 142,
+			"_copy": {
+				"name": "Contagion",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施展此法术时，每超过四级的法术槽等级，范围增加50英尺，持续时间增加10分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Create Food and Water",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 145,
+			"_copy": {
+				"name": "Create Food and Water",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Gritty Option: Origin of the Food} The spell aggregates and alters basic, easily accessible organic substances within 5 miles: crumbs, food waste, dust, dead insect fragments, peels, etc. The created food takes the shape of dry, friable crackers of a dull, gray-brown color. Similarly, the water is drawn from the environment: dew, atmospheric humidity, waterways, bodies of water, etc. The resulting liquid is pure and tasteless. Mixing the water and crackers together results in a flavorless porridge.",
+							"Due to its specifics, this spell has the following limitations and undesirable effects:",
+							{
+								"type": "list",
+								"items": [
+									"In an arid desert, water, even within several miles, is rare. And create food and water cannot actually conjure water ex nihilo, only bring it to you. In other words, in a particularly dry area, this spell may yield as little as a gallon of water.",
+									"The spell indiscriminately draws from whatever sources are available. It may thus pilfer the water supplies of individuals within the spell's radius.",
+									"The crackers are severely lacking in vitamins and minerals, exposing its consumers to deficiencies should this diet continue for too long. After a week spent exclusively eating created food and water, your skin becomes unhealthy, your complexion waxy, your hair brittle, etc. You have disadvantage on saving throws against diseases and exhaustion.",
+									"Most animals will be reluctant to feed from created food and water."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Create or Destroy Water",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 146,
+			"_copy": {
+				"name": "Create or Destroy Water",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Gritty Option: Origin of the Food} The spell aggregates water within 5 miles. The water is drawn from the environment: dew, atmospheric humidity, waterways, bodies of water, etc. The resulting liquid is pure and tasteless.",
+							"Due to its specifics, this spell has the following limitations and undesirable effects:",
+							{
+								"type": "list",
+								"items": [
+									"In an arid desert, water, even within several miles, is rare. And create food and water cannot actually conjure water ex nihilo, only bring it to you. In other words, in a particularly dry area, this spell may yield as little as a gallon of water.",
+									"The spell indiscriminately draws from whatever sources are available. It may thus pilfer the water supplies of individuals within the spell's radius.",
+									"The crackers are severely lacking in vitamins and minerals, exposing its consumers to deficiencies should this diet continue for too long. After a week spent exclusively eating created food and water, your skin becomes unhealthy, your complexion waxy, your hair brittle, etc. You have disadvantage on saving throws against diseases and exhaustion."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Dancing Lights",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 148,
+			"_copy": {
+				"name": "Dancing Lights",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级时，在你的回合中，你可以在不使用奖励动作的情况下移动这些灯，每回合一次。11级时，你不再需要专注于这个法术，你可以独立地改变每盏灯的强度、方面和颜色。在第17级时，当你施放舞动之光时，你可以指定最多六个生物，除了具有真实视力的生物外，这些生物将是唯一能感知到光线的人。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Darkness",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 148,
+			"_copy": {
+				"name": "Darkness",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以将球体的半径增加5英尺，并且每超过2级的法术槽等级，持续时间增加10分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Darkvision",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 149,
+			"_copy": {
+				"name": "Darkvision",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以针对2级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Daylight",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 149,
+			"_copy": {
+				"name": "Daylight",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或更高等级的法术槽施放此法术时，它可以驱散由等级等于或低于所使用法术槽的法术所产生的黑暗。此外，该法术的持续时间每超过3级的法术槽等级，就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Demiplane",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 150,
+			"_copy": {
+				"name": "Demiplane",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Customized Demiplanes} Due to their nature as private spaces, demiplanes are a great asset for conjurers. Some demiplanes can be exceptionally expansive, large enough for their occupants to live in self-sufficiency. The creation of such sanctums requires massive preparations, usually involving months of arcane work.",
+							"In the course of their journeys, adventurers may discover extraordinary demiplanes crafted by reclusive wizards, imaginative warlocks, heroes who imprisoned abominable creatures, etc."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Detect Evil and Good",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 151,
+			"_copy": {
+				"name": "Detect Evil and Good",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，每超过一级的法术槽等级，半径就会增加30英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Detect Poison and Disease",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 151,
+			"_copy": {
+				"name": "Detect Poison and Disease",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Identifying the Evil.} If your leader uses this option, you must make an Intelligence (Medicine) check for every poison or disease detected by this spell in order to identify it. Likewise, identifying a poisonous creature requires an Intelligence (Nature) check. By default, the DC is 15, but it can be lower if the specimen is very common or, conversely, higher in the case of an obscure specimen. On a failure, you only know that the object or creature is poisoned, poisonous, or diseased."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，每超过一级的法术槽等级，半径就会增加30英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Dimension Door",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 153,
+			"_copy": {
+				"name": "Dimension Door",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施展此法术时，你可以为4级以上的每一个法术槽等级带来一个额外的生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Disguise Self",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 153,
+			"_copy": {
+				"name": "Disguise Self",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，每超过一级的法术槽等级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Dispel Evil and Good",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 154,
+			"_copy": {
+				"name": "Dispel Evil and Good",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施放此法术时，法术槽等级每超过5级，持续时间就会增加1分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Divine Favor",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 155,
+			"_copy": {
+				"name": "Divine Favor",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，每超过一级的法术槽等级，持续时间增加1分钟。此外，当你使用3级或更高等级的法术槽施放此法术时，你的武器攻击在命中时造成额外的（%0%）辐射伤害，而不是1D4。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Divination",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 156,
+			"_copy": {
+				"name": "Divination",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Announcing the Future.} Below are two examples of metaphorical replies:",
+							{
+								"type": "list",
+								"items": [
+									"An evil ritual is being prepared and will take place in five days. The organizers plan to rip out the hearts of a hundred victims. The divination could refer to this event as, \"Five fingers closing around a hundred hearts.\" Here, the leader describes the future as it will be if the adventurers fail to change it.",
+									"The adventurers are scheduling an expedition to a town in the midst of chaos and are wondering what they should expect. Since the spell cannot anticipate their actions, it provides a general outlook. The leader portrays a town plagued by smugglers and criminals: \"A sail toward a torn city. The dead's gold passes from hand to hand. None see, all watch.\""
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Dominate Beast",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 156,
+			"_copy": {
+				"name": "Dominate Beast",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold A Non-Corrupted Variant of Dominate Beast.} Enchanters in particular are aware of the dangers of using corrupt spells. Rumors among spellcasters speak of non-corrupted variants of the dominate beast, dominate monster, and dominate person spells. This little-known knowledge relies on the following two imperatives:",
+							{
+								"type": "list",
+								"items": [
+									"Using the spell sparingly (with the leader as the judge).",
+									"Only employing it to avoid more severe consequences (such as an outburst of violence), and without compromising the target physically, mentally, or morally."
+								]
+							},
+							"Certain arcanists believe that the alleged existence of these non-corrupted variants has no credible basis. Some even fear that it may only be a way to lure gullible spellcasters into the practice of corrupt magic."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Dominate Monster",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 157,
+			"_copy": {
+				"name": "Dominate Monster",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold A Non-Corrupted Variant of Dominate Monster.} Enchanters in particular are aware of the dangers of using corrupt spells. Rumors among spellcasters speak of non-corrupted variants of the dominate beast, dominate monster, and dominate person spells. This little-known knowledge relies on the following two imperatives:",
+							{
+								"type": "list",
+								"items": [
+									"Using the spell sparingly (with the leader as the judge).",
+									"Only employing it to avoid more severe consequences (such as an outburst of violence), and without compromising the target physically, mentally, or morally."
+								]
+							},
+							"Certain arcanists believe that the alleged existence of these non-corrupted variants has no credible basis. Some even fear that it may only be a way to lure gullible spellcasters into the practice of corrupt magic."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Dominate Person",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 157,
+			"_copy": {
+				"name": "Dominate Person",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold A Non-Corrupted Variant of Dominate Person.} Enchanters in particular are aware of the dangers of using corrupt spells. Rumors among spellcasters speak of non-corrupted variants of the dominate beast, dominate monster, and dominate person spells. This little-known knowledge relies on the following two imperatives:",
+							{
+								"type": "list",
+								"items": [
+									"Using the spell sparingly (with the leader as the judge).",
+									"Only employing it to avoid more severe consequences (such as an outburst of violence), and without compromising the target physically, mentally, or morally."
+								]
+							},
+							"Certain arcanists believe that the alleged existence of these non-corrupted variants has no credible basis. Some even fear that it may only be a way to lure gullible spellcasters into the practice of corrupt magic."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Dream",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 158,
+			"_copy": {
+				"name": "Dream",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Gritty Option: Sleep Deprivation.} If the target of a nightmare fails its Wisdom saving throw by a margin of 10 or more, the sleep deprivation and mental shock are particularly taxing, resulting in a level of exhaustion in addition to the spell's other effects."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高等级的法术槽施放此法术时，你可以为5级以上的每一个法术槽等级添加以下效果之一。每个效果可以选择多次。",
+						{
+							"type": "list",
+							"items": [
+								"如果这个梦是一个恶梦，在智慧救赎失败的情况下，目标会受到额外的（%0%）精神伤害。",
+								"如果这个梦是一个恶梦，目标在智慧救赎失败的情况下会受到一级的疲惫。",
+								"如果梦境不是恶梦，目标就会失去一级的疲惫。"
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Druidcraft",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 159,
+			"_copy": {
+				"name": "Druidcraft",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Corrupt Prematurity.} If you use this optional rule, druidcraft holds the seed of a corruption that will be quick to bloom under the influence of an overly hasty or greedy caster.",
+							"Casting this spell more than once per day on the same plant runs the risk of making its use corrupted. Starting from the second daily casting, follow the rules below:",
+							{
+								"type": "list",
+								"items": [
+									"Count how many times druidcraft has been used on this plant today.",
+									"The leader rolls a {@dice d20}. If the result is equal to or lower than the number of daily uses of druidcraft on this plant, the casting of the spell is resolved as corrupted.",
+									"The plant you cast druidcraft on is also corrupted."
+								]
+							}
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级、11级和17级时，这个法术的效果会增加，如下表所示。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Delimitations of the Effect",
+								"Range",
+								"Maximum Size of the Targeted Plant"
+							],
+							"colStyles": [
+								"col-2 text-left",
+								"col-4 text-left",
+								"col-2 text-left",
+								"col-4 text-left"
+							],
+							"rows": [
+								[
+									"1st",
+									"5英尺的立方体",
+									"30 feet",
+									"Tiny"
+								],
+								[
+									"5th",
+									"10英尺的立方体",
+									"60 feet",
+									"小型"
+								],
+								[
+									"11th",
+									"15英尺的立方体",
+									"90 feet",
+									"中型"
+								],
+								[
+									"17th",
+									"20英尺的立方体",
+									"120 feet",
+									"大型"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Enlarge/Reduce",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 161,
+			"_copy": {
+				"name": "Enlarge/Reduce",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以针对2级以上的每一个法术槽等级的一个额外的生物或物体。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Entangle",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 162,
+			"_copy": {
+				"name": "Entangle",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"The plants sprout from the seeds naturally present in the soil. This means that this spell cannot be cast in an area devoid of potential vegetal life. However, you can add a handful of seeds as a material component for this spell (which the spell consumes), the entangling plants springing forth from the accelerated growth of the seeds. This material component can also be used to grow a particular type of plant, the seeds mixing with those naturally present in the soil."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展这个法术时，你可以将广场的大小增加10英尺，并且每超过一级法术槽的等级，法术的持续时间就增加2分钟。当你使用5级或更高等级的法术槽施展此法术，并集中精力直到法术结束，所变出的植物在法术结束后仍然存在--尽管它们不再抓取生物。它们会一直存在，直到它们因正常原因死亡：寒冷、缺水、黑暗等等。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Expeditious Retreat",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 163,
+			"_copy": {
+				"name": "Expeditious Retreat",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级以上的法术槽施展此法术时，你的速度每超过1级的法术槽就会增加5英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Faerie Fire",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 164,
+			"_copy": {
+				"name": "Faerie Fire",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，你可以将立方体的大小增加5英尺，每超过一级法术槽等级。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Faithful Hound",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 165,
+			"_copy": {
+				"name": "Mordenkainen's Faithful Hound",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施放此法术时，狗造成的伤害每超过4级的法术槽等级就会增加1d8。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Fear",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 165,
+			"_copy": {
+				"name": "Fear",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Mad with Fear} If your leader makes use of this option, the consequences of a fear spell can be more severe and durable. If the target of a fear spell rolls a 1 on its Wisdom saving throw, it takes a short-term madness effect.",
+							"When you cast this spell using a spell slot of 6th level or higher, the madness is long-term instead. When you cast this spell using a spell slot of 9th level, the madness is indefinite."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，持续时间会增加1分钟，而且每超过三级的法术槽等级，你可以将锥体的大小增加10英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Feather Fall",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 166,
+			"_copy": {
+				"name": "Feather Fall",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或以上的法术槽施放此法术时，你可以针对每一个高于一级的法术槽等级的额外生物进行施放，最多三个。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Find Familiar",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 166,
+			"_copy": {
+				"name": "Find Familiar",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold More Powerful Familiars.} If the leader wants to give their players more freedom and grant them access to potentially more dangerous animals, they can allow other tiny beasts as familiars.",
+							"In addition, this optional rule grants all familiars a +4 increase to Intelligence and darkvision out to a range of 30 feet."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Find Steed",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 167,
+			"_copy": {
+				"name": "Find Familiar",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold The Right Place.} If this option is used, the ritual tag is added to this spell, but in order to summon your steed, you must cast find steed in a location related to the nature of the conjured entity.",
+							{
+								"type": "list",
+								"items": [
+									"{@bold Celestial:} A holy place, a location bathed in sunlight.",
+									"{@bold Fey:} A wild place close to a fey kingdom",
+									"{@bold Fiend:} A locale where a crime was committed, a cursed location, a frightening dark place."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Finger of Death",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 169,
+			"_copy": {
+				"name": "Finger of Death",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级以上的法术槽施放此法术时，每超过7级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Fire Shield",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 169,
+			"_copy": {
+				"name": "Fire Shield",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或7级的法术槽施放此法术时，伤害增加到（%0%）。当你使用8级或9级的法术槽施放时，伤害增加到{@damage 4d8}，并且你获得对所选伤害类型的免疫力。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Fire Storm",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 169,
+			"_copy": {
+				"name": "Fire Storm",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级以上的法术槽施放此法术时，法术槽等级每超过7级，伤害就会增加1d10。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Flesh to Stone",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 173,
+			"_copy": {
+				"name": "Flesh to Stone",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级或以上的法术槽施放此法术时，你可以针对一个额外的生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Forcecage",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 174,
+			"_copy": {
+				"name": "Forcecage",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你用8级的法术槽施展此法术时，持续时间变成8小时。如果使用9级的法术槽，则会变成24小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Freedom of Movement",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 175,
+			"_copy": {
+				"name": "Freedom of Movement",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级或以上的法术槽施展此法术时，你可以针对四级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Gaseous Form",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 176,
+			"_copy": {
+				"name": "Gaseous Form",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或以上的法术槽施放此法术时，你可以针对三级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Geas",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 177,
+			"_copy": {
+				"name": "Geas",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Harsher Geas.} If your leader makes use of this option, a creature under the effect of a geas takes {@damage 5d10} psychic damage each time it acts in a manner directly counter to the spellcaster's instructions, the difference being that this can occur once each hour, and not only once each day."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Giant Insect",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 177,
+			"_copy": {
+				"name": "Giant Insect",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold The Tyrant's Temptation.} Creatures transformed by giant insect may go as far as to give their lives in your service. The spell is considered corrupted if you make use of giant insect without regard for the life or well-being of the beasts that serve you.",
+							"When you are about to make a corrupted use of giant insect, your leader secretly makes a DC 15 Intelligence (Nature) check for you. On a success, your leader informs you that you are about to cross the line leading to corruption; on a failure, you are not aware of the corrupted nature of your action."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施放此法术时，每超过四级的法术槽等级，持续时间就增加10分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Gift of Conscience",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 178,
+			"_copy": {
+				"name": "Awaken",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用六级或以上的法术槽施展此法术时，你可以在五级以上的每一个法术槽等级中额外地使一个生物复活。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Goodberry",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 180,
+			"_copy": {
+				"name": "Goodberry",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，每超过一级的法术槽等级，你就会多创造五个浆果。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Grease",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 180,
+			"_copy": {
+				"name": "Grease",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，你可以在一级以上的每一个法术槽等级中增加5英尺的广场大小。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Mud",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 180,
+			"_copy": {
+				"name": "Grease",
+				"source": "PHB",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceTxt",
+							"replace": "Slick grease",
+							"with": "A slippery coat of mud about a food deep"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "the grease",
+							"with": "the mud"
+						}
+					]
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施展此法术时，你可以在一级以上的每一个法术槽等级中增加5英尺的广场大小。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Greater Invisibility",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 180,
+			"_copy": {
+				"name": "Greater Invisibility",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级或以上的法术槽施展此法术时，你可以针对四级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Guardian of Faith",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 182,
+			"_copy": {
+				"name": "Guardian of Faith",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施放此法术时，守护者在消失前造成的总伤害，每超过四级的法术槽等级就会增加20。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Guards and Wards",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 182,
+			"_copy": {
+				"name": "Guards and Wards",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，法术槽等级每超过6级，持续时间就会增加24小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Hallow",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 184,
+			"_copy": {
+				"name": "Hallow",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施放此法术时，你可以将法术的半径增加60英尺，或者每超过5级的法术槽等级增加一个额外效果。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Hallucinatory Terrain",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 186,
+			"_copy": {
+				"name": "Hallucinatory Terrain",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施展此法术时，范围增加30英尺，你可以将立方体的大小增加50英尺，并且每超过四级的法术槽等级，持续时间增加12小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Harm",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 186,
+			"_copy": {
+				"name": "Harm",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，每超过6级的法术槽等级，伤害会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Haste",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 186,
+			"_copy": {
+				"name": "Haste",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或以上的法术槽施放此法术时，你可以针对三级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Heroes' Feast",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 189,
+			"_copy": {
+				"name": "Heroes' Feast",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Gritty Option: Origin of the Feast.} Magic cannot create food, only transport it. In practice, heroes' feast teleports dishes to the spellcaster's taste within 60 miles. This will certainly incur the locals' wrath should they learn of the spellcaster's implication. In addition, if no food is available within 60 miles, the feast will be empty, and if only poor fare is available, the feast will inevitably be comprised of such dishes. However, provided any food at all is available, the spell's magic will still enchant it, giving it the benefits detailed in the spell's description."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，每超过6级的法术槽，就有12个额外的生物可以参加盛宴。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Hideous Laughter",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 190,
+			"_copy": {
+				"name": "Tasha's Hideous Laughter",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，你可以针对每一个高于一级的法术槽的额外生物。当你瞄准它们时，这些生物必须在30英尺范围内。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Hypnotic Pattern",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 193,
+			"_copy": {
+				"name": "Hypnotic Pattern",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施放此法术时，每超过三级的法术槽等级，持续时间增加5分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Illusory Script",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 195,
+			"_copy": {
+				"name": "Illusory Script",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Something off.} When a creature other than the recipients of an illusory script reads it, the creature can make a Wisdom (Insight) check against your spell save DC. On a success, the creature cannot read the hidden message, but it gets the feeling that something eludes it.",
+							"Once it has realized this, the creature can ascertain that magic is at work with a DC 15 Intelligence (Arcana) check."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Irresistible Dance",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 199,
+			"_copy": {
+				"name": "Otto's Irresistible Dance",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或以上的法术槽施放此法术时，你可以针对6级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Jump",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 200,
+			"_copy": {
+				"name": "Jump",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，每超过一级的法术槽等级，你可以针对一个额外的生物。此外，当你使用3级或更高等级的法术槽施放此法术时，持续时间增加到10分钟；使用4级或更高等级的法术槽，范围变为20英尺；使用6级或更高等级的法术槽，持续时间增加到1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Knock",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 201,
+			"_copy": {
+				"name": "Knock",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold The Sound of a Knock.} Depending on your playstyle, you can use either of the variants below concerning the noise a knock spell produces.",
+							{
+								"type": "list",
+								"items": [
+									"{@bold Reverberation.} The spell makes a loud, brief, reverberating noise. Outdoors, it is audible up to 300 feet, but indoors, echoes and repercussions can carry it up to 600 feet. Simply by being mindful of their environment, adventurers can easily ascertain how far sounds carry, and therefore how blatant a knock spell would be.",
+									"{@bold Magical Chime} The sound emanating from the target object within a 300 feet radius is a pure, clear magical chime. It is immediately audible and traceable by any creature within range, and causes no discomfort or deafening."
+								]
+							}
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以在2级以上的每一个法术槽等级中减少噪音的范围100英尺。因此，如果使用5级或更高等级的法术槽，该法术不会产生任何声音。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Legend Lore",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 202,
+			"_copy": {
+				"name": "Legend Lore",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Where do the Answeres Come From?} You receive your answers from deceased creatures, most of which reside in the domain of Death. These beings are forbidden from answering questions concerning a subject marked by Death's Ban. If this is the case, you become aware of it when casting the spell and can stop before the spell slot is expended and before the incense used as a material component is consumed."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Light",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 203,
+			"_copy": {
+				"name": "Light",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到第5、11和17级时，你可以分别创造1、2和3个额外的光。在这些相同的等级，光的半径分别增加到30英尺、40英尺和50英尺。11级时，作为一个额外动作，你可以将光的半径从0英尺修改为最大。在第17级，当你施放光线时，你可以指定最多六个生物，除了具有真实视力的生物外，这些生物将是唯一能感知到光线的生物。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Mage Armor",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 206,
+			"_copy": {
+				"name": "Mage Armor",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施放此法术时，目标的基本防御力变为14+其灵巧修正值；使用5级或以上的法术槽，目标的基本防御力变为15+其灵巧修正值；使用7级或以上的法术槽，目标对重击、穿刺和砍击伤害具有抵抗力。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Mage Hand",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 206,
+			"_copy": {
+				"name": "Mage Hand",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级、11级和17级时，你分别能变出1、2和3只额外的手。此外，在11级时，每只手可以携带20磅的重量。在第17级时，手可以在离你60英尺远的地方而不消失。然而，控制一只手仍然需要你在它的30英尺范围内--超出这个范围，一只手只能采取重复行动。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Magic Jar",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 207,
+			"_copy": {
+				"name": "Magic Jar",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，法术描述中的所有范围在6级以上的每一个法术槽等级都会增加100英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Magic Weapon",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 208,
+			"_copy": {
+				"name": "Magic Weapon",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Better Magic Weapon.} If you use this variant, when you cast this spell using a spell slot of 5th level or higher, you don't need to concentrate on this spell."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Mordenkainen's Magnificent Mansion",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 209,
+			"_copy": {
+				"name": "Mordenkainen's Magnificent Mansion",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold The Innter Workings of the Mansion}",
+							"Using the options below will complicate the use of a magnificent mansion, and possibly even expose an unscrupulous spellcaster to corruption.",
+							{
+								"type": "list",
+								"items": [
+									"{@bold The Location of the Extradimensional Dwelling.} The conjured dwelling exists in the Ethereal Plane, and can thus be seen and interacted with by the creatures that inhabit it. The walls of your mansion have the following statistics:",
+									{
+										"type": "list",
+										"items": [
+											"AC = your spell save DC",
+											"HP = level of the spell slot used × 5"
+										]
+									},
+									"{@bold Origin of the Food.} Magic cannot create food, only transport it. In practice, magnificent mansion teleports dishes to the spellcaster's taste within 60 miles in the Material  Plane. This will certainly incur the locals' wrath should they learn of the spellcaster's implication. In addition, if no food is available within 60 miles, the banquet will be empty, and if only poor fare is available, the meal will inevitably be comprised of such dishes."
+								]
+							},
+							"{@bold Nature of the Servants}",
+							"If the unseen servants are born from your psyche, the spell's casting is uncorrupted. If the unseen servants are stray souls, the spell's casting is corrupted.",
+							{
+								"type": "list",
+								"items": [
+									"{@bold Born from Your Psyche.} The unseen servants are the product of your psyche. The constant mental effort required to sustain their existence gives you disadvantage on all Intelligence, Wisdom, and Charisma checks until the spell ends. However, as a result of being extensions of your mind, the unseen servants have the same proficiencies as you. They are considered to have a proficiency bonus of +2 and a score of 10 in all abilities except for Strength and Dexterity. If you are proficient in Animal Handling, the unseen servants will be capable of skillfully tending to horses; if you are proficient in farming tools, they will be able to cultivate plants, etc.",
+									"{@bold Stray Souls.} The unseen servants are the souls of recently deceased mortals wandering through the Ethereal Plane. In this case, magnificent mansion is a corrupt spell that snatches the unfortunate souls and temporarily enslaves them. Even if the servants are disembodied souls, they are still sentient beings and they suffer from their servitude. The unseen servants are proficient in the same skills as when they were alive (at the leader's discretion)."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Mending",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 212,
+			"_copy": {
+				"name": "Mending",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Gritty Option: The Fine Details.} To be fully effective, mending must be cast on the components of the target object in their totality: shards of a broken vial, threads of a torn piece of cloth, metal rings from chainmail, etc. If a portion is missing, mending can still be cast on the object, but the repair will be more or less visible and fragile depending on how much of the object was missing. The leader then determines in what circumstances the object may break again. In addition, it is not possible to cast mending twice on the same object or object part. For example, it is possible to mend all four wheels of a cart separately, but not the same wheel twice.",
+							"{@bold Turn Back Time.} If you use this option, when you reach 5th level, you can cast another variant of mending. In this variant, the spell has a range of 5 feet and a casting time of 1 action. Its effects are to bring an object back to the state it was in on the previous round, provided that all of its components are within range. Anything that has been swallowed, incorporated, fused, has been used to inflict damage, or is held is unaffected by this spell. For example, if a glass of liquid has been shattered, it is possible to bring it back to its previous condition, along with the liquid it contained, but if its contents have just been drunk, they cannot be brought back.",
+							"When you reach 11th level, this variant's range becomes 10 feet and you can restore an object damaged during the two previous rounds. At 17th level, casting this variant restores all objects within the spell's range."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Message",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 212,
+			"_copy": {
+				"name": "Message",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到11级时，这个法术不再被魔法沉默所阻挡，你可以针对与你的法术能力修饰值相等的生物数量（最小为1）。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Minor Illusion",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 212,
+			"_copy": {
+				"name": "Minor Illusion",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级时，这个法术的范围变为60英尺。当你达到11级时，你可以同时创造两个幻象。当你达到17级时，你可以同时创造三个幻象。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Mirage Arcane",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 214,
+			"_copy": {
+				"name": "Mirage Arcane",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Seeing from Afar and Spotting the Mirage.} A mirage arcane spell affects whoever sees it, even from a great distance: a military camp settled in a valley, an oasis in the middle of a desert, an island in an ocean, a maelstrom in the sea, etc.",
+							"An attentive observation of the area can reveal the mirage. However, the observer must have a reason for suspecting the presence of an illusion, for example if it knows that the area should be uninhabited, if it remembers the presence of a river, if what it sees doesn't match what its map shows, etc. A successful Intelligence (Investigation) check against your spell save DC informs the observer that magic is at work."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级或以上的法术槽施展此法术时，你可以将海市蜃楼的大小增加1英里，每超过7级的法术槽等级。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Mirror Image",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 214,
+			"_copy": {
+				"name": "Mirror Image",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施放此法术时，复制体的AC值每超过2级就会增加1。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Mislead",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 215,
+			"_copy": {
+				"name": "Mislead",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施放此法术时，法术槽等级每超过5级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Misty Step",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 215,
+			"_copy": {
+				"name": "Misty Step",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施展这个法术时，你可以在2级以上的每一个法术槽等级中额外传送多达15英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Nondetection",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 218,
+			"_copy": {
+				"name": "Nondetection",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，你可以在任何维度上针对一个生物、地方或物体10英尺大的地方施展此法术，每一个法术槽等级高于三级。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Passwall",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 220,
+			"_copy": {
+				"name": "Passwall",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施展这个法术时，你可以使通道变宽5英尺，变高8英尺，或变深10英尺，每超过5级的法术槽等级。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Pass Without Trace",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 221,
+			"_copy": {
+				"name": "Pass Without Trace",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，法术槽等级每超过2级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Plant Growth",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 224,
+			"_copy": {
+				"name": "Plant Growth",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高等级的法术槽施放此法术时，每超过3级的法术槽等级，半径增加30英尺（如果你即时施放此法术）或300英尺（如果你施放此法术超过8小时）。此外，当你使用6级或更高等级的法术槽施放这个法术，并且你施放这个法术超过8小时，半径内的自然界就会再生，并且可以清除鬼魂和咒语。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Polymorph",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 226,
+			"_copy": {
+				"name": "Polymorph",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施展此法术时，每超过4级的法术槽等级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Prestidigitation",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 229,
+			"_copy": {
+				"name": "Prestidigitation",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级、11级和17级时，这个法术的效果会增加，如下表所示。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Level",
+								"Maximum Volume of the Cube",
+								"Range"
+							],
+							"colStyles": [
+								"col-1 text-left",
+								"col-6 text-left",
+								"col-2 text-left"
+							],
+							"rows": [
+								[
+									"1st",
+									"1立方英尺",
+									"10 feet"
+								],
+								[
+									"5th",
+									"2立方英尺",
+									"20 feet"
+								],
+								[
+									"11th",
+									"3立方英尺",
+									"30 feet"
+								],
+								[
+									"17th",
+									"4立方英尺",
+									"40 feet"
+								]
+							]
+						}
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Prismatic Spray",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 229,
+			"_copy": {
+				"name": "Prismatic Spray",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级的法术槽施展此法术时，红色、橙色、黄色、绿色和蓝色射线的伤害增加（%0%）。当你使用9级的法术槽施放此法术时，除了额外的伤害外，目标会被两道射线击中（如果你在d8上掷出8，则为三道）。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Programmed Illusion",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 232,
+			"_copy": {
+				"name": "Programmed Illusion",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你用7级的法术槽施展这个法术时，幻象的剧本表演可以持续15分钟；用8级的法术槽，可以持续1小时；用9级的法术槽，可以持续12小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Protection from Death",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 233,
+			"_copy": {
+				"name": "Death Ward",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级或以上的法术槽施展此法术时，你可以针对四级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Protection from Energy",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 233,
+			"_copy": {
+				"name": "Protection from Energy",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或以上的法术槽施放此法术时，你可以针对三级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Protection from Evil and Good",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 234,
+			"_copy": {
+				"name": "Protection from Evil and Good",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，你可以针对每一个高于一级的法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Protection from Poison",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 234,
+			"_copy": {
+				"name": "Protection from Poison",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以针对2级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Raise Dead",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 236,
+			"_copy": {
+				"name": "Raise Dead",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施展此法术时，目标的死亡时间可以追溯到5天之前，每超过5级的法术槽等级，就会增加5天。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Reincarnate",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 238,
+			"_copy": {
+				"name": "Reincarnate",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Mistaken Identity.} If the leader uses this variant, the spell copies the appearance of a person recently deceased in the region. The leader determines the details: who, where, how, when?",
+							"If the death is recent and news of it hasn't spread yet (a sailor lost at sea, a fleeing slave who met their demise, a merchant ambushed by bandits, etc.), the creature's new identity might bring its share of problems: misunderstandings, debts, grudges, unfavorable reputation, etc."
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施展此法术时，目标的死亡时间可以追溯到5天之前，每超过5级的法术槽等级，就会增加5天。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Remove Curse",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 238,
+			"_copy": {
+				"name": "Remove Curse",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold The Power of Dark Magic}",
+							"If the leader uses this variant, removing a curse or breaking a creature's attunement to a cursed magic item requires casting remove curse using a spell slot of a level at least equal to the spell at the origin of the curse. In the case of a cursed magic item, the following table shows the equivalence between the item's rarity and the required spell level:",
+							{
+								"type": "table",
+								"colLabels": [
+									"Item's Rarity",
+									"Spell Level"
+								],
+								"colStyles": [
+									"col-3 text-left",
+									"col-3 text-left"
+								],
+								"rows": [
+									[
+										"Common",
+										"3rd"
+									],
+									[
+										"Unommon",
+										"4th"
+									],
+									[
+										"Rare",
+										"5th"
+									],
+									[
+										"Very rare",
+										"7th"
+									],
+									[
+										"Legendary",
+										"9th"
+									]
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Resilient Sphere",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 239,
+			"_copy": {
+				"name": "Otiluke's Resilient Sphere",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用五级以上的法术槽施展此法术时，每超过四级的法术槽等级，范围增加10英尺，持续时间增加1分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Rope Trick",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 241,
+			"_copy": {
+				"name": "Rope Trick",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，法术槽等级每超过2级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Sanctuary",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 242,
+			"_copy": {
+				"name": "Sanctuary",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，你可以针对每一个高于一级的法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Scrying",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 243,
+			"_copy": {
+				"name": "Scrying",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施放此法术时，法术槽等级每超过5级，持续时间就会增加10分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "See Invisibility",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 244,
+			"_copy": {
+				"name": "See Invisibility",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，法术槽等级每超过2级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Sequester",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 245,
+			"_copy": {
+				"name": "Sequester",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级或以上的法术槽施放此法术时，你可以针对7级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Shield",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 247,
+			"_copy": {
+				"name": "Shield",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或4级的法术槽施放此法术时，对AC的奖励增加到+6；使用5级或6级的法术槽增加到+7；使用7级或8级的法术槽增加到+8；使用9级的法术槽增加到9。此外，当你使用3级以上的法术槽施放该法术时，你获得对武力伤害的抗性，当你使用7级以上的法术槽时，你获得对武力伤害的免疫。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Shield of Faith",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 248,
+			"_copy": {
+				"name": "Shield of Faith",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，你可以针对每一个高于一级的法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Silence",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 248,
+			"_copy": {
+				"name": "Silence",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高等级的法术槽施放此法术时，每超过一级的法术槽等级，持续时间就会增加10分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Simulacrum",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 249,
+			"_copy": {
+				"name": "Simulacrum",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold The Secrets of the Simulacrum}",
+							"The secrets of the simulacrum are littleknown features of this spell. Knowing about them requires a DC 20 Intelligence (Arcana) check made the moment the spell is learned. Learning about the secrets is also possible through ulterior research.",
+							"{@bold The Material Components.} The large quantities of snow and ice required as material components are typical of spells designed at the time of the Boreal civilization. Other variants of simulacrum exist in countries with no icy winters. In such regions, the snow and ice are replaced with powdered clay or flour mixed with water.",
+							"{@bold The Origin of the Simulacrum's Life Spark.} Even though the simulacrum cannot evolve, it is possessed of an intelligence that is not solely the doing of the spellcaster's magic. It comes from a soul wandering through the Ethereal Plane, which the spell captures on its way to its final destination. As a result, the simulacrum has a personality of its own, partially influenced by its former existence, which becomes more apparent with time. A particularly old simulacrum (at least a few months) may go as far as to wonder about its identity.",
+							"The leader determines who was the creature whose soul animates the simulacrum, and how it perished. The simulacrum's character depends on the deceased's personality, on the circumstances of its death, and on what the simulacrum is used for.",
+							"{@bold The Limitations of a Simulacrum.} A simulacrum is devoid of many individual characteristics, such as imagination, rhetoric, ruse, pedagogy, foresight, creativity, artistic inspiration, belief, Awakening to magic, etc."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Sleet or Sand Storm",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 250,
+			"_copy": {
+				"name": "Sleet Storm",
+				"source": "PHB",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "replaceTxt",
+							"replace": "freezing rain and sleet",
+							"with": "freezing rain and sleet\u2014or roaring sand or pouring rain\u2014"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "slick ice",
+							"with": "slick ice\u2014 or with shifting sand in the case of a sandstorm, or transformed into a mire in the case of a monsoon\u2014"
+						},
+						{
+							"mode": "appendArr",
+							"items": [
+								"{@bold Blinding Storm.} Pelting sleet, stinging sand, and unrelenting rain can all potentially blind their victims. If your leader makes use of this option, when a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Constitution saving throw in addition to the Dexterity saving throw. On a failure, the creature is blinded until the start of its next turn.",
+								"{@bold Ruined Land.} Due to its nature, this spell can damage the environment: frozen or drowned plants, thick mud, flood, etc. The spellcaster has no control over the consequences of its magic, which may be more or less problematic depending on the area. Additionally, such remains will leave a very obvious mark of the spellcaster's presence.",
+								"{@bold Storms by Geographical Area}",
+								"Spellcasters from tropical regions who have never seen snow in their lives would be hard-pressed to design a spell calling upon such a meteorological phenomenon. The same goes for the denizens of the Sand Kingdoms, where water is a precious resource.",
+								"If your leader makes use of this option, a spellcaster can only generate a storm matching their current environment:",
+								{
+									"type": "list",
+									"items": [
+										"{@bold Dry:} Sand storm (material component: a pinch of sand or dust).",
+										"{@bold Cold and humid:} Snow storm (material component: a pinch of dust and a few drops of water).",
+										"{@bold Hot and humid} Monsoon (material component: a pinch of mud or wet clay)."
+									]
+								},
+								"Regardless of the variant used, the effects are as detailed in the spell's description."
+							]
+						}
+					]
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，持续时间增加1分钟，圆柱体的高度增加5英尺，半径增加10英尺，每超过三级的法术槽等级。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Slow",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 251,
+			"_copy": {
+				"name": "Slow",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或以上的法术槽施放此法术时，你可以针对三级以上的每一个法术槽等级的两个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Spare the Dying",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 251,
+			"_copy": {
+				"name": "Spare the Dying",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到11级时，你可以把这个法术作为一个额外的动作来施放。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Speak with Animals",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 250,
+			"_copy": {
+				"name": "Speak with Animals",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Animal Intelligence} If your leader uses this option, the spell's limitations will depend on the type of animal you are communicating with.",
+							{
+								"type": "list",
+								"items": [
+									"{@bold Most amphibians, arthropods, molluscs, fish, and reptiles:} You can only convey simple messages related to their daily habits and primary needs, such as \"Danger,\" \"Danger there?\" \"No danger,\" \"Food there,\" \"Water there?\" etc. Such animals are usually incapable of grasping abstract notions such as past or future, meaning that questions and answers can only concern the present. They are incapable of lying.",
+									"{@bold Birds, mammals, cephalopods, and any beast with an Intelligence of at least 2:} Such animals have higher cognitive abilities, closer to that of humanoid species. The most intelligent of them are capable of elaborate trickery: feigning a wound, concealing information (such as the location of food), deliberately leading a rival to a place made dangerous by the presence of a predator, etc. They can understand simple mechanisms and collaborate to reach a goal. A social animal may be willing to help an individual it sees as part of its group without expecting a reward. Solitary animals, however, only provide their services if there is something in it for them\u2014typically food, with a portion given before the task, and another after."
+								]
+							},
+							"{@bold Deceiving and Manipulating an Animal.} The ethics of druids and rangers are strict: their powers come from Eana and represent an aspect of the balance of the natural world. If you use this spell to the detriment of the animal you are communicating with, for example by deliberately getting it to seek food in a deadly location, this casting of the spell is corrupted."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Spider Climb",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 254,
+			"_copy": {
+				"name": "Spider Climb",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以针对2级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Spike Growth",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 254,
+			"_copy": {
+				"name": "Spike Growth",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施放此法术时，法术槽等级每超过2级，伤害就会增加1d4。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Stinking Cloud",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 255,
+			"_copy": {
+				"name": "Stinking Cloud",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或以上的法术槽施放此法术时，受影响的生物对此法术的蓄力攻击有劣势。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Stone Shape",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 256,
+			"_copy": {
+				"name": "Stone Shape",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Working the Clay} If your leader makes use of this option, you must spend 10 minutes working the clay into the desired shape, which requires a DC 13 Dexterity (potter's tools) check."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Stoneskin",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 256,
+			"_copy": {
+				"name": "Stoneskin",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施展此法术时，每超过4级的法术槽等级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Sunbeam",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 258,
+			"_copy": {
+				"name": "Sunbeam",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级以上的法术槽施放此法术时，法术槽等级每超过6级，伤害就会增加1d8。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Symbol",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 259,
+			"_copy": {
+				"name": "Symbol",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级或以上的法术槽施放此法术时，你可以为7级以上的每一个法术槽等级增加一个效果。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Telekinesis",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 260,
+			"_copy": {
+				"name": "Telekinesis",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用六级以上的法术槽施展这个法术时，你可以移动一个重达1000磅的物体，并且法术槽等级每超过五级，范围就增加30英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Teleport",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 261,
+			"_copy": {
+				"name": "Teleport",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Lost.} If you roll two mishaps on the same teleportation, you are transported to another plane whose nature depends on the material component you used. If you used an alecrith, you are taken to the Ethereal Plane, and if you used a dracopal, you find yourself in the Astral Plane.",
+							"If you brought creatures or an object with you, the leader rolls a d100 for each teleporting creature or object. The closer the rolled results, the closer the passengers, and vice versa. A difference of more than 30 (for example, 01 for a passenger and 36 for another) means that the passengers are out of sight of each other, and a difference of more than 70 means the passengers are out of normal voice range, even at highest volume.",
+							"For the next {@dice 1d6} days, you cannot teleport or find your way by magical means. You will have to get your bearings, survive, and ultimately return to the Material Plane by your own means.",
+							"{@bold The Ways of Fate.} Since Eternity can influence a teleport spell, being transported to a similar area generally results in a cascade of coincidences leading up to extraordinary events. The teleportation error (though when fate is involved, can one really call it an error?) becomes the catalyst of heroic happenings, for better or for worse. Whatever the affected place and creatures may be, this twist of fate will be important for someone, even if it may not immediately be apparent. Here are a few possibilities:",
+							{
+								"type": "list",
+								"items": [
+									"The adventurers have been teleported to a location where a person lives who knows much about their objective. Thanks to this serendipitous encounter, they learn something important related to their quest, and leave better prepared to accomplish it.",
+									"A mysterious object is accidentally teleported somewhere. The consequences of its presence lead people to become adventurers.",
+									"Through a string of coincidences, the arrival of teleporting travelers brings to fruition a critical element of the dastardly plan of an evil genius who might have never been able to enact it without this happenstance."
+								]
+							}
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级以上的法术槽施展此法术时，范围增加10英尺，适合被传送物体的立方体的最大尺寸增加10英尺，并且每超过7级的法术槽等级，你可以传送的生物数量增加4。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Thaumaturgy",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 263,
+			"_copy": {
+				"name": "Thaumaturgy",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级时，范围增加到60英尺。当你达到11级时，你可以在没有语言成分的情况下施展这个法术。当你达到17级时，你可以通过一次施放此法术创造三个效果。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Tongues",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 264,
+			"_copy": {
+				"name": "Tongues",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级以上的法术槽施展此法术时，法术槽等级每超过三级，持续时间就会增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Transport via Plants",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 265,
+			"_copy": {
+				"name": "Transport via Plants",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或更高等级的法术槽施放此法术时，你可以在6级以上的每一个法术槽等级中增加1轮持续时间。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Tree Stride",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 265,
+			"_copy": {
+				"name": "Tree Stride",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施展此法术时，你可以进入和走出任何一种树，并且法术槽等级每超过5级，持续时间就会增加1分钟。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "True Seeing",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 267,
+			"_copy": {
+				"name": "True Seeing",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或以上的法术槽施放此法术时，你可以针对6级以上的每一个法术槽等级的一个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "True Strike",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 267,
+			"_copy": {
+				"name": "True Strike",
+				"source": "PHB"
+			},
+			"entries": [
+				"这个咒语能警告你即将采取的行动的困难。当你施展这个咒语时，从以下三种效果中选择一种。",
+				{
+					"type": "list",
+					"items": [
+						"{@bold Advantaged Attack.} 你伸出你的手，用手指着范围内的一个目标。你的魔法使你对目标的防御有了短暂的了解。在你的下一个回合，你在对目标的第一次攻击中获得优势，只要这个法术还没有结束。",
+						"{@bold Measured Action.} 你伸出你的手，用手指着你即将面对的障碍物，进行能力检查。这个障碍必须是你环境中的一个被动元素，例如在追踪、攀爬、游泳等情况下。在你的下一个回合，你可以在你的下一次能力检查中掷出2D10而不是D20，只要这个法术还没有结束。",
+						"{@bold Uncover.} 你伸出你的手，用手指着范围内的一个目标。在你的下一个回合，只要这个法术还没有结束，目标在你对它的第一次攻击卷中不会获得半遮蔽或四分之三遮蔽的攻击力加成。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级、11级和17级时，这个法术的效果会增加。在5级时，你可以选择在使用 \"测量行动 \"时掷出3d6，而不是2d10；在11级时，你在使用 \"测量行动 \"时获得一个+2的能力检查上限加成；在17级时，你可以同时使用攻击和揭发。"
+					],
+					"type": "entries"
+				}
+			],
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Unseen Servant",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 269,
+			"_copy": {
+				"name": "Unseen Servant",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold The Origin of the Servant}",
+							"In accordance with the atmosphere the leader wishes to establish for the campaign, unseen servant can be a neutral or corrupt spell depending on its origin. Both variants may also be accessible, with the spellcaster choosing which one they wish to use every time they cast the spell.",
+							"If the unseen servant is born from your psyche, the spell's casting is uncorrupted. If the unseen servant is a stray soul, the spell's casting is corrupted.",
+							"{@bold Born from Your Psyche.} The unseen servant is the product of your psyche. The constant mental effort required to sustain its existence gives you disadvantage on all Intelligence, Wisdom, and Charisma checks until the spell ends. However, as a result of being an extension of your mind, the unseen servant has the same proficiencies as you. It is considered to have a proficiency bonus of +2 and a score of 10 in all abilities except for Strength and Dexterity.",
+							"If you are proficient in Animal Handling, the unseen servant will be capable of skillfully tending to horses; if you are proficient in farming tools, it will be able to cultivate plants, etc.",
+							"{@bold A Stray Soul} The unseen servant is the soul of a recently deceased mortal wandering through the Ethereal Plane. In this case, unseen servant is a corrupt spell that snatches the unfortunate soul and temporarily enslaves it. Even if the servant is a disembodied soul, it is still a sentient being and it suffers from its servitude. The unseen servant is proficient in the same skills as when it was alive (at the leader's discretion)."
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Wall of Force",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 272,
+			"_copy": {
+				"name": "Wall of Force",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级以上的法术槽施展此法术时，圆顶或球体的最大半径（或面板的最大尺寸）在5级以上的每一个法术槽等级中增加5英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Wall of Stone",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 273,
+			"_copy": {
+				"name": "Wall of Stone",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用六级以上的法术槽施展此法术时，每超过五级的法术槽，面板的大小就会增加5英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Warding Bond",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 274,
+			"_copy": {
+				"name": "Warding Bond",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高等级的法术槽施放此法术时，你可以与目标相隔60英尺的距离，AC和蓄力的奖励增加+1，法术槽等级每超过2级，持续时间就增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Web",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 275,
+			"_copy": {
+				"name": "Web",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级以上的法术槽施展此法术时，你可以将立方体的大小增加10英尺，并且法术槽等级每超过2级，持续时间就增加1小时。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Wind Walk",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 277,
+			"_copy": {
+				"name": "Wind Walk",
+				"source": "PHB",
+				"_mod": {
+					"entries": {
+						"mode": "appendArr",
+						"items": [
+							"{@bold Wind Walkers.} A group traveling in a relatively compact formation has the aspect of a fast-moving patch of mist.",
+							{
+								"type": "list",
+								"items": [
+									"{@bold Exhaustion.} Creatures in cloud form require no effort to move. As long as they are in cloud form, the creatures are not at risk of taking levels of exhaustion from a forced march.",
+									"{@bold Speechlessness.} As long as they are in cloud form, the creatures are unable to communicate verbally. At most, they can position themselves in such a way as to express themselves through mimes or rebuses."
+								]
+							}
+						]
+					}
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用七级以上的法术槽施放此法术时，你可以针对六级以上的每一个法术槽等级的五个额外生物。"
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Word of Recall",
+			"source": "FateforgeGrimoire-SRDx",
+			"page": 280,
+			"_copy": {
+				"name": "Word of Recall",
+				"source": "PHB"
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用七级以上的法术槽施展这个法术时，你可以额外传送两个愿意的生物，而且法术槽等级每超过六级，法术的范围就增加10英尺。"
+					],
+					"type": "entries"
+				}
+			]
+		}
+	]
+}

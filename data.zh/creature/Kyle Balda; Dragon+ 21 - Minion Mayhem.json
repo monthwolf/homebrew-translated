@@ -1,0 +1,182 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DragonPlus21Minion",
+				"abbreviation": "DRA21",
+				"full": "Dragon+ 21: Minion Mayhem",
+				"url": "https://media.wizards.com/2018/dnd/dragon/21/DRA21_minions.pdf",
+				"color": "fbdd71",
+				"authors": [
+					"Kyle Balda"
+				],
+				"convertedBy": [
+					"Spappz"
+				],
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1683157122,
+		"dateLastModified": 1690651615,
+		"_dateLastModifiedHash": "a049086220",
+		"status": "ready"
+	},
+	"monster": [
+		{
+			"name": "Minion",
+			"source": "DragonPlus21Minion",
+			"page": 84,
+			"size": [
+				"S"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d6 + 4",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 15,
+			"int": 4,
+			"wis": 3,
+			"cha": 15,
+			"save": {
+				"con": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"stealth": "+4"
+			},
+			"passive": 6,
+			"languages": [
+				"Minion",
+				"understands Common but doesn't speak it"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Strategy Degeneration",
+					"entries": [
+						"每当一个手下的近战攻击投骰结果低于目标 AC 5 或更多时，它会自动击中其周围 5 英尺范围内的一个随机盟友。如果那个盟友也是一个手下，那个手下的下一次攻击将瞄准击中它的手下。"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"如果至少有一个小喽啰的盟友在离生物5英尺范围内且该盟友不是{@condition incapacitated}，那么小喽啰对该生物的攻击投掷获得优势。"
+					]
+				},
+				{
+					"name": "Convulsive Laughter",
+					"entries": [
+						"一个随从如果看到另一个生物在攻击检定、力量检定、敏捷检定、力量豁免检定或敏捷豁免检定中失败了5点或更多，必须进行一次{@dc 12}感知豁免检定。如果未能通过豁免检定，该随从会被歇斯底里的笑声所克制，遭受自己的Tickle攻击效果。"
+					]
+				},
+				{
+					"name": "Contagious Laughter",
+					"entries": [
+						"任何生物，在其回合开始时能看到或听到五个或更多受到(`Convulsive Laughter`)效果影响的爪牙，必须成功进行一次{@dc 12}感知豁免才能免疫受到一次爪牙的(`Tickle`)攻击效果。"
+					]
+				},
+				{
+					"name": "Tasty Temptation",
+					"entries": [
+						"一个爪牙在涉及被食物诱惑的任何能力检定或豁免投掷时都具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slap",
+					"entries": [
+						"{@atk mw} {@hit 4}攻击，射程5英尺，目标一个。造成{@h}4 ({@damage 1d4 + 2}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Tickle",
+					"entries": [
+						"{@atk mw}进行攻击，达到5英尺，一个目标。{@h}目标必须在一个{@dc 12}智力豁免检定中成功，否则会因歇斯底里的笑声而被影响1分钟，变得{@condition incapacitated}并且在持续时间内无法站起来。目标可以在自己的回合结束时以及每次受到伤害时进行新的豁免检定，成功后便可以结束自身的影响。"
+					]
+				},
+				{
+					"name": "Fart {@recharge 5}",
+					"entries": [
+						"小喽啰在一个15英尺的锥形范围内释放有毒烟雾。该区域内的每个生物必须成功进行一次{@dc 12}体质豁免才能在其下一个回合结束前保持{@condition poisoned}。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"小喽啰是一种小型、黄皮肤的人形生物，通常有一到两只眼睛。它们经常成群结队，数量从几十到几百只不等，尽管有时也会有三只的小团队执行特定任务。它们说着自己的语言，似乎是从许多语言中借来的词汇和短语组成的。虽然小喽啰天性混乱中立（强调混乱），但它们最强烈的愿望是为某一地区最邪恶的领袖提供服务。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonPlus21Minion/creatures/minion1.webp"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonPlus21Minion/creatures/minion2.webp"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonPlus21Minion/creatures/minion3.webp"
+						}
+					}
+				]
+			},
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"poisoned"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonPlus21Minion/creatures/token/minion1.webp",
+			"altArt": [
+				{
+					"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonPlus21Minion/creatures/token/minion2.webp",
+					"name": "Bananaphile",
+					"source": "DragonPlus21Minion"
+				},
+				{
+					"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/DragonPlus21Minion/creatures/token/minion3.webp",
+					"name": "Bedroom eyes",
+					"source": "DragonPlus21Minion"
+				}
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		}
+	]
+}

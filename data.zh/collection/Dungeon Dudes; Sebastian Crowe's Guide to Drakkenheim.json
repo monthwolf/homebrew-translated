@@ -1,0 +1,5860 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SCGtD",
+				"abbreviation": "SCGtD",
+				"full": "Sebastian Crowe's Guide to Drakkenheim",
+				"url": "https://www.youtube.com/@DungeonDudes",
+				"authors": [
+					"Dungeon Dudes"
+				],
+				"convertedBy": [
+					"Werring"
+				],
+				"version": "1.0",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"status": "wip",
+		"dateAdded": 1700993345,
+		"dateLastModified": 1704103734,
+		"_dateLastModifiedHash": "70c3287b67"
+	},
+	"class": [
+		{
+			"name": "Apothecary",
+			"source": "SCGtD",
+			"classFeatures": [
+				{
+					"classFeature": "Occult Practice|Apothecary|SCGtD|1",
+					"gainSubclassFeature": true
+				},
+				"Apothecary Magic|Apothecary|SCGtD|1",
+				"Esoteric Theories|Apothecary|SCGtD|2",
+				{
+					"classFeature": "Occult Practice feature|Apothecary|SCGtD|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Apothecary|SCGtD|4",
+				{
+					"classFeature": "Occult Practice feature|Apothecary|SCGtD|6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Apothecary|SCGtD|8",
+				{
+					"classFeature": "Occult Practice feature|Apothecary|SCGtD|10",
+					"gainSubclassFeature": true
+				},
+				"Greater Formula (6th level)|Apothecary|SCGtD|11",
+				"Ability Score Improvement|Apothecary|SCGtD|12",
+				"Greater Formula (7th level)|Apothecary|SCGtD|13",
+				{
+					"classFeature": "Occult Practice feature|Apothecary|SCGtD|14",
+					"gainSubclassFeature": true
+				},
+				"Greater Formula (8th level)|Apothecary|SCGtD|15",
+				"Ability Score Improvement|Apothecary|SCGtD|16",
+				"Greater Formula (9th level)|Apothecary|SCGtD|17",
+				{
+					"classFeature": "Occult Practice feature|Apothecary|SCGtD|18",
+					"gainSubclassFeature": true
+				},
+				"Additional Greater Formula (6th level)|Apothecary|SCGtD|19",
+				"Ability Score Improvement|Apothecary|SCGtD|19",
+				"Additional Greater Formula (7th level)|Apothecary|SCGtD|20",
+				"Miraculous Recovery|Apothecary|SCGtD|20"
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Apothecary}",
+						"Spell Slots",
+						"Slot Level",
+						"{@filter Theories Known|optionalfeatures|source=SCGtD|Feature Type=ET}"
+					],
+					"rows": [
+						[
+							3,
+							1,
+							"1st",
+							0
+						],
+						[
+							3,
+							2,
+							"1st",
+							2
+						],
+						[
+							3,
+							2,
+							"2nd",
+							2
+						],
+						[
+							4,
+							2,
+							"2nd",
+							3
+						],
+						[
+							4,
+							2,
+							"3rd",
+							3
+						],
+						[
+							4,
+							2,
+							"3rd",
+							4
+						],
+						[
+							4,
+							2,
+							"4th",
+							4
+						],
+						[
+							4,
+							2,
+							"4th",
+							5
+						],
+						[
+							4,
+							2,
+							"5th",
+							5
+						],
+						[
+							5,
+							2,
+							"5th",
+							6
+						],
+						[
+							5,
+							3,
+							"5th",
+							6
+						],
+						[
+							5,
+							3,
+							"5th",
+							7
+						],
+						[
+							5,
+							3,
+							"5th",
+							7
+						],
+						[
+							5,
+							3,
+							"5th",
+							8
+						],
+						[
+							5,
+							3,
+							"5th",
+							8
+						],
+						[
+							5,
+							3,
+							"5th",
+							9
+						],
+						[
+							5,
+							4,
+							"5th",
+							9
+						],
+						[
+							5,
+							4,
+							"5th",
+							10
+						],
+						[
+							5,
+							4,
+							"5th",
+							10
+						],
+						[
+							5,
+							4,
+							"5th",
+							11
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple",
+					"{@item short sword|phb|short swords}",
+					"{@item hand crossbow|phb|hand crossbows}"
+				],
+				"tools": [
+					"Any one tool proficiency",
+					"Plus another of your choice from the following: poisoner's kit, herbalism kit, or alchemist's supplies"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"investigation",
+								"medicine",
+								"nature",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts}, (b) a ${@item short sword|phb} or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"{@item Hide armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, and two {@item dagger|phb|daggers}",
+					"a {@item Healer's kit|phb}"
+				],
+				"additionalFromBackground": true,
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"tools": [
+						"Any one tool proficiency"
+					],
+					"skills": [
+						{
+							"acrobatics": true
+						}
+					]
+				}
+			},
+			"casterProgression": "pact",
+			"spellcastingAbility": "int",
+			"classSpells": [
+				"Acid Burn|SCGtD",
+				"Acid Splash",
+				"Bacterial Barrage|SCGtD",
+				"Chill Touch",
+				"Guidance",
+				"Light",
+				"Mending",
+				"Message",
+				"Poison Needle|SCGtD",
+				"Poison Spray",
+				"Resistance",
+				"Shocking Grasp",
+				"Spare the Dying",
+				"Thaumaturgy",
+				"Acrid Orb|SCGtD",
+				"Alarm",
+				"Comprehend Languages",
+				"Create or Destroy Water",
+				"Cure Wounds",
+				"Detect Evil and Good",
+				"Detect Magic",
+				"Detect Poison and Disease",
+				"Envenom|SCGtD",
+				"False Life",
+				"Feather Fall",
+				"Floating Disk",
+				"Fog Cloud",
+				"Grease",
+				"Healing Word",
+				"Hideous Laughter",
+				"Identify",
+				"Illusory Script",
+				"Infect|SCGtD",
+				"Jump",
+				"Purify Food and Drink",
+				"Sleep",
+				"Stream of Consumption|SCGtD",
+				"Toxic Shield|SCGtD",
+				"Unseen Servant",
+				"Acid Arrow",
+				"Aid",
+				"Biohazard|SCGtD",
+				"Blindness/Deafness",
+				"Caustic Grip|SCGtD",
+				"Enhance Ability",
+				"Enlarge/Reduce",
+				"Gentle Repose",
+				"Grasping Ghost|SCGtD",
+				"Hold Person",
+				"Invigorate|SCGtD",
+				"Lesser Restoration",
+				"Ocular Necrosis|SCGtD",
+				"Protection from Poison",
+				"Ray of Enfeeblement",
+				"See Invisibility",
+				"Silence",
+				"Spider Climb",
+				"Web",
+				"Bestow Curse",
+				"Corrosive Blast|SCGtD",
+				"Dispel Magic",
+				"Fear",
+				"Fetid Blade|SCGtD",
+				"Gaseous Form",
+				"Glyph of Warding",
+				"Haste",
+				"Hypnotic Pattern",
+				"Magic Circle",
+				"Mass Healing Word",
+				"Pestilence|SCGtD",
+				"Purge Contamination",
+				"Protection from Energy",
+				"Remove Curse",
+				"Revivify",
+				"Sending",
+				"Slow",
+				"Speak with Dead",
+				"Stinking Cloud",
+				"Tranquilizing Toxin|SCGtD",
+				"Vampiric Touch",
+				"Venomous Aura|SCGtD",
+				"Water Breathing",
+				"Black Tentacles",
+				"Blight",
+				"Blood Worm|SCGtD",
+				"Corpse Explosion|SCGtD",
+				"Corrupting Spores|SCGtDm",
+				"Death Ward",
+				"Freedom of Movement",
+				"Last Rites|SCGtD",
+				"Poison Wave|SCGtD",
+				"Polymorph",
+				"Stoneskin",
+				"Vitriolic Ichor|SCGtD",
+				"Acid Rain|SCGtD",
+				"Antilife Shell",
+				"Cloudkill",
+				"Contact Other Plane",
+				"Greater Restoration",
+				"Hold Monster",
+				"Mass Cure Wounds",
+				"Nerve Gas|SCGtD",
+				"Raise Dead",
+				"Scrying",
+				"Septic Shock|SCGtD",
+				"Telepathic Bond",
+				"Teleportation Circle",
+				"Toxic Barrage|SCGtD",
+				"Chain Lighting",
+				"Circle of Death",
+				"Create Undead",
+				"Disintegrate",
+				"Eyebite",
+				"Flesh to Stone",
+				"Globe of Invulnerability",
+				"Harm",
+				"Heal",
+				"Mephitic Vapors|SCGtD",
+				"True Seeing",
+				"Vile Necrosis|SCGtD",
+				"Etherealness",
+				"Finger of Death",
+				"Forcecage",
+				"Miasma|SCGtD",
+				"Plane Shift",
+				"Prismatic Spray",
+				"Grievous Wounds|SCGtD",
+				"Regenerate",
+				"Resurrection",
+				"Antimagic Field",
+				"Antipathy/Sympathy",
+				"Breath of Nightshade|SCGtD",
+				"Clone",
+				"Dominate Monster",
+				"Feeblemind",
+				"Mind Blank",
+				"Plague Wind|SCGtD",
+				"Power Word Stun",
+				"Astral Projection",
+				"Foresight",
+				"Mass Heal",
+				"Pandemic|SCGtD",
+				"Power Word Kill",
+				"Time Stop",
+				"Touch of Death|SCGtD",
+				"True Polymorph",
+				"True Resurrection"
+			],
+			"cantripProgression": [
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"preparedSpells": "<$level$> + <$int_mod$>",
+			"fluff": [
+				{
+					"name": "Apothecary",
+					"source": "SCGtD",
+					"page": 132,
+					"type": "section",
+					"entries": [
+						"一个戴着眼镜的男人站在手术台旁，研究着放在石板上的解剖怪物。电导体的噼啪声与他神秘的喃喃自语相和谐，当他拿起解剖刀和锯子时。当他完成最后一针时，生物的手突然抽搐，再次焕发生机。",
+						"穿着一件被酸蚀的厚外套，一个高大的半精灵酿制药剂和药水。她的脸被厚厚的黑色护目镜和呼吸面罩遮掩着，当她进行一种独特的草药学、炼金术、医学和魔法结合时。她的混合物在冒泡和沸腾，她在思考治疗是否会比疾病更糟糕。",
+						"一位苗条的提弗林人在安抚一位病人的痛苦时，抽取了一份受污染的血液样本。将小瓶举起来检查其中的液体，他们运用邪能将样本提炼成纯净的传染物。在一本枯萎的笔记本上匆匆记下他们的发现，然后将小瓶加入到他们的病原体和灾祸收藏中，以用来对抗敌人。",
+						{
+							"type": "entries",
+							"name": "Medical Experts",
+							"entries": [
+								"一位药剂师是一位经验丰富的医疗专家和奥术魔法使用者。",
+								"他们运用自己的知识来治愈和伤害，通过炼金术和神秘魔法增强他们的传统技能。",
+								"一些药剂师可能会首先尝试传统方法，如草药和外科手术技术来治疗。",
+								"当这些平凡的方法不够时，他们会使用奥术魔法和神秘力量来恢复他们的病人。",
+								"药剂师的独特技能在治疗自然或超自然疾病时都能派上用场，但药剂师拥有的对身体的知识不仅仅可以用于治疗。",
+								"他们的奥术方法可以强化、转化或保护他们的盟友，一些药剂师还懂得致命的技巧，可以伤害和杀死他们的敌人。",
+								"一位药剂师了解毒药和治疗药物之间的区别通常只在剂量上。(Apothecary)",
+								"他们对生死的仔细研究使得药剂师有能力帮助盟友从可怕的疾病、伤害中存活下来，并将他们从死亡的魔爪中解救出来，或者利用他们的敌人作为危险化合物、可怕疾病和有毒魔法的试验对象。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Knowledge Seekers",
+							"entries": [
+								"大多数药剂师都立志于深造，拓展他们的魔法视野，发现新的运用魔法的方式，以达到危险或救生的效果，并学习那些被世界其他地方所隐匿的禁忌知识。",
+								"他们相信知识就是力量，并将自己视为知识的追求者。",
+								"一些善良的药剂师将自己视为无辜者的守护者，将他们的生命奉献给帮助生病和受伤的人。(apothecaries)",
+								"他人看到每一个机会都是剥削弱者、推动他们追求真正力量的机会。",
+								"许多人处于两者之间，既像疯狂科学家又像著名医生。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Occult Practitioners",
+							"entries": [
+								"药剂师寻找神秘知识，并用它来研究和实践科学理论。",
+								"许多他们的魔法咒语，无论是用于拯救生命还是终结生命，都被视为实验性的。",
+								"许多药剂师都会随身携带笔记本，记录他们根据研究和实地工作得出的神秘理论。",
+								"在一些大陆上的偏远社区中，药剂师们正因为被视为人们可以求助的医生和治疗师而声名鹊起，而不是宗教人物。",
+								"然而，他们更常被视为危险的科学家和神秘的女巫，他们使用魔法制造毒素和毒药，可以消灭整个军队。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating an Apothecary",
+							"entries": [
+								"当你开始创建一个药剂师时，最重要的问题是决定你的学习路径。",
+								"是什么驱使你追求知识？",
+								"你是否在为善事工作？你的生活是否致力于帮助那些有需要的人？",
+								"通过研究毒药、疾病、神秘知识和禁忌知识，你希望帮助病人和受伤者吗？",
+								"也许你的目标是拯救你关心的人，或者保护你的王国或家园免受这个世界的邪恶侵害。",
+								"或许你的研究更具危险性质。你会踏上冒险之旅，测试你危险的化学配方吗？",
+								"你把每个怪物或敌人都视为你药剂和法术的试验对象吗？",
+								"所有药剂师都追求知识，涉猎禁忌知识和神秘实践。",
+								"尽管许多从业者乐于在城市中向付费高的贵族和国王出售他们的服务或药剂，但有些人被召唤踏上冒险之旅，追寻无尽的知识。",
+								"其他人则作为调查员和研究员。许多药剂师将冒险视为进行直接现场研究、完善他们的技能并测试他们理论真正潜力的手段。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照以下建议，你可以快速制作一个药剂师(apothecary)。",
+										"首先，智力应该是你最高的能力值，其次是体质。(Constitution)。",
+										"其次，选择您的角色血统和背景。(ancestry) (background)",
+										"第三步，选择{@spell poison needle|SCGtD}和{@spell spare the dying}的零级咒语，以及1级咒语{@spell envenom|SCGtD}和{@spell healing word}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Apothecaries in Drakkenheim",
+							"entries": [
+								"在这个大陆上，一个广泛使用的与魔法相关的术语，用来描述许多职业和形式。",
+								"这个术语在整个大陆上都能找到，并且可能的研究领域范围非常广泛，而且不断扩大。",
+								"紫晶学院有药剂师部门负责管理他们的实验室和研究中心。",
+								"在他们众多的学校和据点中，他们教授先进的科学和使用魔法来更好地理解身体和心灵，以及可以与魔法结合的各种现代医疗实践，以拯救生命 \u2014 或结束它们。",
+								"并非所有药剂师都是法师出身。这个广泛的术语已被用来描述几种将草药成分、化学物质和毒药与生物学研究相结合的实践，以达到类似于唤魔或死灵魔法效果的结果。",
+								"远在实验室中工作的病原体学家进行研究，创造出新的强大疾病和毒素品种。化学家们通过合适的化学剂量超越了魔法血统施法者的威力，实现了爆炸性和破坏性的效果。",
+								"其他与狂热变异效应一起工作的变异学家试图控制和隔离变异元素，并以更受控制的方式应用它们。",
+								"甚至有报告称，药剂师们正在研究解锁心灵潜能的技术。这些异能学家在贵族、法师和神职人员中引起了轰动，因为他们能够利用与魔法相似的心灵能力，而不需要法师血统。",
+								"秘密的复活者们追求对死亡和不死领域的可怕研究，他们凭借着新科学和发明来模仿死灵魔法。",
+								"在圣焰(`Sacred Flame`)的庇护下，有药剂师作为驱魔师工作，运用他们的神秘知识和研究来帮助清除圣地的不死生物，驱散不受欢迎的幽灵，并解除可怕的诅咒。",
+								"药剂师在每个大陆上都能找到；无论是天生的法师还是其他人，许多药剂师都是熟练的学者，他们有着敏锐的头脑，善于突破科学的界限。",
+								"这些研究人员已经走上了药剂师之路，为整个大陆的城市和城镇提供帮助，并偶尔在重大战争的战场上引入独特的化学战。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Apothecary Magic",
+			"source": "SCGtD",
+			"page": 135,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"你的奥术研究使你精通咒语。请参考核心规则中的一般咒语施放规则，以及本书中的《药剂师咒语列表》。",
+				{
+					"type": "entries",
+					"name": "Formula Book",
+					"entries": [
+						"你有一本书或笔记集，用来准备你的药剂师法术，发展你的神秘理论，记录你的神秘实践。",
+						"你可以将你的配方书作为你炼金术法术的奥术焦点。",
+						"您可以随意描述这本书。一些关于您书籍外观的例子包括：",
+						"- 一本大型的皮革书，黄色的页面用铁锁封闭（Iron Lock）",
+						"一堆零散的涂鸦笔记，用绳子松松地绑在一起。",
+						"- 一本完美无瑕的日记，边缘整齐，字迹优美",
+						"- 一个带有两个小金色锁的皮制公文包 (Leather Briefcase)",
+						"- 一只带有侧面手术符号的医疗包 (Medical Bag)",
+						"- 一个破旧的书包挂在一只肩膀上，口袋里露出各种小瓶和瓶子。",
+						"如果这本书被摧毁或丢失，你可以在一次长休期间使用墨水和纸重新创造它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"你可以从药剂师法术清单中选择三个你喜欢的零级法术。",
+						"你可以在更高等级时选择学习额外的药剂师零级咒语，如药剂师表中的已知零级咒语栏所示。",
+						{
+							"type": "entries",
+							"name": "Elementary Reformulation",
+							"entries": [
+								"每当你完成一次长休并查阅你的配方书时，你可以用另一个来自药剂师法术清单的法术替换你已知的一个药剂师零级法术。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"药剂师表格显示了你可以用来施放1级至5级药剂师法术的法术位数量。",
+						"这张表还显示了这些法术槽的等级；你所有的法术槽都是相同等级的。",
+						"要施放你的1级或更高级别的药剂师法术，你必须消耗一个法术位。当你完成短休或长休时，你会恢复所有已消耗的法术位。",
+						"你准备了一份药剂师法术清单，可以从{@filter apothecary spell list|spells|class=Apothecary}中选择施放。",
+						"当你这样做时，选择与你的炼金术师等级相等的药剂师法术数量，这个数量等于你的智力调整值加上你的炼金术师等级（最少为一个法术）。",
+						"你准备的法术必须符合药剂师表中对应你等级的槽位等级列所显示的最高等级。",
+						"例如，如果你是一名5级药剂师，你有三个3级法术位。",
+						"拥有智力16，你准备的法术清单可以包括八个1级、2级或3级法术，任意组合。",
+						"要施放1级法术治疗伤口，你必须消耗其中一个法术位，并将其作为3级法术施放。",
+						"施放一个法术不会将其从你准备的法术列表中移除。",
+						"你可以在完成一次长休后更改你准备的法术清单。",
+						"准备一份新的药剂师法术清单，每个法术需要至少1分钟，每个法术等级。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智力是你作为炼金师法术的施法能力，因为你通过专注的学习和神秘知识来学习你的法术。",
+						"每当一个法术提到你的施法能力时，你使用你的智力。（Intelligence）",
+						"此外，当你施放一项药剂师法术并制定豁免 DC 时，以及使用一项法术进行攻击投掷时，你需要使用你的智力调整值。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"如果那个法术带有仪式标签并且你已经准备好了该法术，你可以将药剂师法术作为仪式施放。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用{@item arcane focus|PHB}作为你的药剂师法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Occult Practice",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"在1级时，你选择其中一种神秘实践，这是你持续研究身体和精神的学科：异域学家(Alienist)，化学家(Chemist)，驱魔师(Exorcist)，变质学家(Mutagenist)，病原学家(Pathogenist)，或者复活者(Reanimator)。",
+				"你的选择在1级时会为你提供额外的熟练加点和扩展的法术列表，并在3级、6级、10级、14级和18级时提供额外的职业特性。"
+			]
+		},
+		{
+			"name": "Esoteric Theories",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 2,
+			"entries": [
+				"你发现了神秘理论，禁忌知识的碎片，可以用来增强你的魔法能力。",
+				"在2级时，你可以选择获得两个{@filter esoteric theories|optionalfeatures|source=SCGtD|Feature Type=ET}。你的理论选项将在课程描述的末尾详细说明。",
+				"当你获得特定药剂师等级时，你可以选择获得额外的理论，如药剂师表格中的已知理论列所示。",
+				"此外，当你在这个职业中升级时，你可以选择你所了解的理论之一，并用在那个等级可以学习的另一个理论来替换它。"
+			]
+		},
+		{
+			"name": "Occult Practice Feature",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得了你选择的专业（chosen discipline）赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Occult Practice Feature",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得了你选择的专业领域提供的一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Occult Practice Feature",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 10,
+			"entries": [
+				"在10级时，你获得了你选择的专业领域提供的一个特性。"
+			]
+		},
+		{
+			"name": "Greater Formula (6th level)",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 11,
+			"entries": [
+				"在11级时，你会发现一个被称为大师配方(Greater Formula)的魔法秘密。从药剂师法术清单中选择一个6级法术作为这个配方。",
+				"你可以施放你的大型配方一次，而不消耗法术位。在再次这样做之前，你必须完成一次长休。",
+				{
+					"type": "entries",
+					"name": "Master Reformulation",
+					"entries": [
+						"每当你完成一次长休并查阅你的配方书时，你可以用同级别的另一个药剂师法术替换你从这个特性获得的一个法术。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与通常一样，使用此特性时不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Greater Formula (7th level)",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 13,
+			"entries": [
+				"在13级时，你会发现一个被称为(大师配方)的魔法秘密。选择一项来自药剂师法术清单的7级法术作为这个配方。"
+			]
+		},
+		{
+			"name": "Occult Practice Feature",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 14,
+			"entries": [
+				"在14级时，你获得了你选择的专业领域提供的一个特性。"
+			]
+		},
+		{
+			"name": "Greater Formula (8th level)",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 15,
+			"entries": [
+				"在15级时，你会发现一个被称为大师配方(Greater Formula)的魔法秘密。从药剂师法术列表中选择一个8级法术作为这个配方。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性不能将一个能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Greater Formula (9th level)",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 17,
+			"entries": [
+				"在17级时，你会发现一个被称为大师配方(Greater Formula)的魔法秘密。从药剂师法术清单中选择一个9级法术作为这个配方。"
+			]
+		},
+		{
+			"name": "Occult Practice Feature",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 18,
+			"entries": [
+				"在18级时，你获得了你选择的专业领域提供的一个特性。"
+			]
+		},
+		{
+			"name": "Additional Greater Formula (6th level)",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 19,
+			"entries": [
+				"在19级时，你会发现一个名为大师配方(Greater Formula)的魔法秘密。选择另一个来自药剂师法术清单的6级法术作为这个配方。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Additional Greater Formula (7th level)",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 20,
+			"entries": [
+				"在20级时，你会发现一个被称为更强大配方(Greater Formula)的魔法秘密。选择一项额外的第7级法术，从药剂师法术清单中作为这个配方。"
+			]
+		},
+		{
+			"name": "Miraculous Recovery",
+			"source": "SCGtD",
+			"page": 136,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以花费5分钟将力量注入与你的智力修正值相等数量的生物（包括你自己），以促进异常快速的恢复。",
+				"在这段时间里，你必须照顾生物，使用一个剩余至少一次使用的{@item Healer's Kit|PHB}。",
+				"目标恢复生命值，法术位，生命骰，以及其他能力，就像他们完成了一次长休息一样。",
+				"一个生物在24小时内只能从一个(奇迹恢复)中受益。",
+				"使用此功能后，直到完成一次长休才能再次使用。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Acquired Tolerance",
+			"source": "SCGtD",
+			"page": 136,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你对毒素的豁免检定获得优势，并且获得对毒素伤害的抗性。",
+				"此外，你对自己的药剂师法术的豁免检定自动成功，并且永远不会受到自己的药剂师法术造成的伤害。"
+			]
+		},
+		{
+			"name": "Adrenaline Surge",
+			"source": "SCGtD",
+			"page": 136,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"当一个生物在0点生命值时，如果它通过你使用药剂师法术位施放的法术恢复生命值，那么它将获得对所有伤害的抗性，并在其下一个回合结束前获得优势豁免。",
+				"它在下一回合进行的第一次攻击投掷中获得优势。"
+			]
+		},
+		{
+			"name": "Anatomical Precision",
+			"source": "SCGtD",
+			"page": 136,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"当你进行武器攻击时，你可以使用你的智力调整值，而不是力量或敏捷，用于攻击和伤害骰。"
+			]
+		},
+		{
+			"name": "Anesthesiology",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你可以施放《定身术》(hold person) 而不消耗法术位或需要材料组件。",
+				"你必须在再次对同一生物使用这个理论之前完成一次长休。(long rest)"
+			]
+		},
+		{
+			"name": "Bedside Manner",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你获得洞察力和说服技能的熟练加值。",
+				"你的熟练加值在使用这两项技能进行的任何能力检定中翻倍。"
+			]
+		},
+		{
+			"name": "Caustic Formulae",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"每回合一次，当你用药剂师法术对生物或物体造成伤害时，你可以消耗一个药剂师法术位，对目标造成额外2d4酸性伤害，再加上法术位等级的2d4伤害。"
+			]
+		},
+		{
+			"name": "Clinical Conditioning",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你在体质豁免投掷上获得熟练加值。"
+			]
+		},
+		{
+			"name": "Combat Medic",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你获得对武器和盾牌的熟练加值。"
+			]
+		},
+		{
+			"name": "Corrosive Compound",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"当你用你的药剂师法术造成毒素伤害时，你可以选择将法术伤害的一半作为毒素伤害，另一半作为酸性伤害。"
+			]
+		},
+		{
+			"name": "Cosmetic Surgery",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你可以花费8小时对一只愿意的生物进行一项神秘手术程序，永久改变其外貌。",
+				"你可以决定这个生物的外貌，包括面部特征、声音、头发长度、颜色和独特特征，但它的游戏统计数据都不会改变。",
+				"你不能改变生物的大小，它的基本形状保持不变。",
+				"最终的转变是非魔法的，然而，可以通过强力恢复(`Greater Restoration`)法术或类似的魔法施加在生物身上，将其恢复到原始外貌。"
+			]
+		},
+		{
+			"name": "Critical Condition",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"当一个生物在对抗你的药剂师法术时的豁免投掷中掷出自然1，并且该法术造成伤害时，将该法术的所有伤害骰子都投掷两次并相加。",
+				"然后按照正常方式添加任何相关的修饰词，以确定生物从法术中受到的伤害。"
+			]
+		},
+		{
+			"name": "Diagnosis",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你可以在你的回合中将帮助动作作为一个奖励动作。"
+			]
+		},
+		{
+			"name": "Doctor's Note",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你可以随意使用发送法术。",
+				"你必须完成一次长休才能再次使用这个理论来联系同一个生物。(long rest)"
+			]
+		},
+		{
+			"name": "Double Dose",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"当你使用一个药剂师法术位施放一个针对单个生物并为其恢复生命值的药剂师法术时，你可以额外选择一个范围内的生物作为目标。"
+			]
+		},
+		{
+			"name": "Extracurricular Research",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你可以从任意职业的法术列表中选择两个额外的零级法术。",
+				"这些cantrips对你来说变成了药剂师cantrips。"
+			]
+		},
+		{
+			"name": "Inoculation",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你对死灵伤害具有抗性，且你的生命值上限不能被降低。",
+				"此外，你对疾病免疫。(Dungeons & Dragons)"
+			]
+		},
+		{
+			"name": "Interdisciplinary Practice",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"当你使用动作施放一个法术时，你可以将一次武器攻击作为一个奖励动作。"
+			]
+		},
+		{
+			"name": "Laboratory Assistant",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你学会了法术《寻找伙伴》(find familiar)，并且始终准备着这个法术。",
+				"这不会计入你可以准备的药剂师法术数量。"
+			]
+		},
+		{
+			"name": "Liability Insurance",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你可以在自己身上施放一次《应急措施》(contingency)，无需材料组件。",
+				"你必须完成一次长休才能再次这样做。"
+			]
+		},
+		{
+			"name": "Medical Expertise",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你获得对医学和自然技能的熟练加成。",
+				"你的熟练加值在使用这两项技能进行的任何能力检定中翻倍。"
+			]
+		},
+		{
+			"name": "Medical Lexicon",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你学习了六种你选择的语言。",
+				"你可以随意施展侦测毒药和疾病((detect poison and disease))。"
+			]
+		},
+		{
+			"name": "Nerve Agent",
+			"source": "SCGtD",
+			"page": 137,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"当你使用你的药剂师法术造成毒素伤害时，你可以选择改为造成心灵伤害。"
+			]
+		},
+		{
+			"name": "Noxious Blood",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"当一个生物在距离你5英尺内用近战攻击命中你时，它会受到毒素伤害，伤害值为1d6 + 你的体质调整值。"
+			]
+		},
+		{
+			"name": "Pharmacology",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"当你使用药剂师法术位或你的大师配方特性施放一个恢复生命值的法术时，该生物额外恢复的生命值等同于你的智力调整值。"
+			]
+		},
+		{
+			"name": "Physiological Analysis",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"如果你在战斗之外至少观察或与另一个生物互动1分钟，你可以了解关于它的生理特征的某些信息。",
+				"游戏主公开给你选择两项以下特征中的一项：",
+				"- 任意一项能力值",
+				"- 护甲等级 (Armor Class)",
+				"- 当前生命值 (Current hit points)",
+				"- 抗性（如有）",
+				"- 免疫（如有）",
+				"- 漏洞（如有）",
+				"或者，你可以花费1分钟观察一具尸体。",
+				"1分钟后，你确定了死因。"
+			]
+		},
+		{
+			"name": "Practical Resuscitation",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"当你施放一个唯一效果是让生物复活（但不是亡灵）的法术，比如(`raise dead`)，如果生物在过去的一小时内死亡，你施放该法术时不需要材料组件。"
+			]
+		},
+		{
+			"name": "Putrefaction",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你的药剂师法术和能力无视不死生物对毒性伤害的抗性或免疫，以及对中毒状态的免疫。"
+			]
+		},
+		{
+			"name": "Rapid Response",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"当你施放一个药剂师法术，为一个生物恢复生命值时，在施放法术之前或之后，你可以移动你的速度而不会引发机会攻击。"
+			]
+		},
+		{
+			"name": "Routine Procedure",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"你可以随意施放次级恢复术，而无需消耗法术位。"
+			]
+		},
+		{
+			"name": "Stolen Secrets",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"你可以从任意职业的法术清单中学习一个法术。",
+				"它必须是你拥有药剂师法术位或更低级别的法术。",
+				"这个法术对你来说被视为一种药剂师法术，并不计入你所知道的药剂师法术数量。"
+			]
+		},
+		{
+			"name": "Subject Preparation",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"当你用近战武器攻击一个生物时，该生物在你的下一个回合结束前对你施放的药剂师法术的下一个豁免检定有劣势。"
+			]
+		},
+		{
+			"name": "Surgeon's Instinct",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"你拥有一种在10英尺范围内的盲视能力。"
+			]
+		},
+		{
+			"name": "Surgical Strikes",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你可以在你的回合上采取攻击动作时，攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Toxicology",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你可以在造成毒素伤害的法术的伤害骰中加上你的智力调整值。"
+			]
+		},
+		{
+			"name": "Triage",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"如果你还不会，你学会了《(Spare the Dying)》法术。",
+				"当你施放这个cantrip时，它的射程为60英尺。"
+			]
+		},
+		{
+			"name": "Unfailing Focus",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"当你在维持对一种药剂师法术的专注时，如果你未能通过一次体质豁免检定，你可以选择成功。",
+				"使用此功能后，直到完成短休或长休，你才能再次使用。"
+			]
+		},
+		{
+			"name": "Venomous Instruments",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，该生物会受到额外毒素伤害，数值等同于你的智力调整值。"
+			]
+		},
+		{
+			"name": "Virulence",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"当你在施放一项造成毒素伤害的药剂师法术时，如果伤害骰掷出了1，你可以重新投掷这个骰子。",
+				"即使新的骰结果是1，你也必须使用新的结果。"
+			]
+		},
+		{
+			"name": "Vital Signs",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"entries": [
+				"当你能看见的生物在你30英尺内失败了一次豁免投掷或死亡豁免投掷时，你可以使用你的反应将你的智力调整值加到该生物的投掷中，有可能将一个失败变成一个成功。",
+				"你必须在再次对同一生物使用这个理论之前完成一个短休息。"
+			]
+		},
+		{
+			"name": "Vivisection",
+			"source": "SCGtD",
+			"page": 138,
+			"featureType": [
+				"ET"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"你的武器攻击在19或20时造成暴击。(D&D)"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Alienist",
+			"shortName": "Alienist",
+			"source": "SCGtD",
+			"page": 140,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassSpells": [
+				"charm person",
+				"hideous laughter",
+				"detect thoughts",
+				"suggestion",
+				"hypnotic pattern",
+				"major image",
+				"arcane eye",
+				"dimension door",
+				"animate objects",
+				"modify memory"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"charm person",
+							"hideous laughter"
+						],
+						"s2": [
+							"detect thoughts",
+							"suggestion"
+						],
+						"s3": [
+							"hypnotic pattern",
+							"major image"
+						],
+						"s4": [
+							"arcane eye",
+							"dimension door"
+						],
+						"s5": [
+							"animate objects",
+							"modify memory"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Alienist|Apothecary|SCGtD|Alienist|SCGtD|1|SCGtD",
+				"Mental Influence|Apothecary|SCGtD|Alienist|SCGtD|3|SCGtD",
+				"Metaphysical Tether|Apothecary|SCGtD|Alienist|SCGtD|3|SCGtD",
+				"Force Manipulation|Apothecary|SCGtD|Alienist|SCGtD|6|SCGtD",
+				"Mental Magic|Apothecary|SCGtD|Alienist|SCGtD|10|SCGtD",
+				"Self-Diagnosis|Apothecary|SCGtD|Alienist|SCGtD|14|SCGtD",
+				"Impenetrable Mind|Apothecary|SCGtD|Alienist|SCGtD|18|SCGtD"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "int"
+		},
+		{
+			"name": "Chemist",
+			"shortName": "Chemist",
+			"source": "SCGtD",
+			"page": 141,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassSpells": [
+				"burning hands",
+				"grease",
+				"acid arrow",
+				"flaming sphere",
+				"fireball",
+				"stinking cloud",
+				"ice storm",
+				"wall of fire",
+				"cloudkill",
+				"cone of cold"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"burning hands",
+							"grease"
+						],
+						"s2": [
+							"acid arrow",
+							"flaming sphere"
+						],
+						"s3": [
+							"fireball",
+							"stinking cloud"
+						],
+						"s4": [
+							"ice storm",
+							"wall of fire"
+						],
+						"s5": [
+							"cloudkill",
+							"cone of cold"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Chemist|Apothecary|SCGtD|Chemist|SCGtD|1|SCGtD",
+				"Precise Application|Apothecary|SCGtD|Chemist|SCGtD|3|SCGtD",
+				"Chain Reaction|Apothecary|SCGtD|Chemist|SCGtD|6|SCGtD",
+				"Chemical Conditioning|Apothecary|SCGtD|Chemist|SCGtD|6|SCGtD",
+				"Bottled Spells|Apothecary|SCGtD|Chemist|SCGtD|10|SCGtD",
+				"Elemental Adjustment|Apothecary|SCGtD|Chemist|SCGtD|14|SCGtD",
+				"Chemical Cataclysm|Apothecary|SCGtD|Chemist|SCGtD|18|SCGtD"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "int"
+		},
+		{
+			"name": "Exorcist",
+			"shortName": "Exorcist",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassSpells": [
+				"bless",
+				"protection from evil and good",
+				"spiritual weapon",
+				"zone of truth",
+				"counterspell",
+				"spirit guardians",
+				"banishment",
+				"last rites|SCGtD",
+				"dispel evil and good",
+				"flame strike"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"bless",
+							"protection from evil and good"
+						],
+						"s2": [
+							"spiritual weapon",
+							"zone of truth"
+						],
+						"s3": [
+							"counterspell",
+							"spirit guardians"
+						],
+						"s4": [
+							"banishment",
+							"last rites|SCGtD"
+						],
+						"s5": [
+							"dispel evil and good",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Exorcist|Apothecary|SCGtD|Exorcist|SCGtD|1|SCGtD",
+				"Exorcism|Apothecary|SCGtD|Exorcist|SCGtD|3|SCGtD",
+				"Sacred Vessel|Apothecary|SCGtD|Exorcist|SCGtD|6|SCGtD",
+				"Negation|Apothecary|SCGtD|Exorcist|SCGtD|10|SCGtD",
+				"Empowered Healing|Apothecary|SCGtD|Exorcist|SCGtD|14|SCGtD",
+				"Devout Witness|Apothecary|SCGtD|Exorcist|SCGtD|18|SCGtD"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "int"
+		},
+		{
+			"name": "Mutagenist",
+			"shortName": "Mutagenist",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassSpells": [
+				"jump",
+				"toxic shield",
+				"alter self",
+				"enhance ability",
+				"haste",
+				"water breathing",
+				"polymorph",
+				"stoneskin",
+				"reincarnate",
+				"septic shock"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"jump",
+							"toxic shield|SCGtD"
+						],
+						"s2": [
+							"alter self",
+							"enhance ability"
+						],
+						"s3": [
+							"haste",
+							"water breathing"
+						],
+						"s4": [
+							"polymorph",
+							"stoneskin"
+						],
+						"s5": [
+							"reincarnate",
+							"septic shock|SCGtD"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Mutagenist|Apothecary|SCGtD|Mutagenist|SCGtD|1|SCGtD",
+				"Transmogrifying Elixir|Apothecary|SCGtD|Mutagenist|SCGtD|3|SCGtD",
+				"Extra Attack|Apothecary|SCGtD|Mutagenist|SCGtD|6|SCGtD",
+				"Potent Biology|Apothecary|SCGtD|Mutagenist|SCGtD|6|SCGtD",
+				"Adaptive Genetics|Apothecary|SCGtD|Mutagenist|SCGtD|10|SCGtD",
+				"Unnatural Evolution|Apothecary|SCGtD|Mutagenist|SCGtD|14|SCGtD",
+				"The New Flesh|Apothecary|SCGtD|Mutagenist|SCGtD|18|SCGtD"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "int"
+		},
+		{
+			"name": "Pathogenist",
+			"shortName": "Pathogenist",
+			"source": "SCGtD",
+			"page": 145,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassSpells": [
+				"infect",
+				"inflict wounds",
+				"blindness/deafness",
+				"biohazard",
+				"pestilence",
+				"venomous aura",
+				"blight",
+				"blood worm",
+				"contagion",
+				"insect plague"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"infect",
+							"inflict wounds"
+						],
+						"s2": [
+							"blindness/deafness",
+							"biohazard|SCGtD"
+						],
+						"s3": [
+							"pestilence|SCGtD",
+							"venomous aura|SCGtD"
+						],
+						"s4": [
+							"blight",
+							"blood worm|SCGtD"
+						],
+						"s5": [
+							"contagion",
+							"insect plague"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Pathogenist|Apothecary|SCGtD|Pathogenist|SCGtD|1|SCGtD",
+				"Pernicious Pathogens|Apothecary|SCGtD|Pathogenist|SCGtD|3|SCGtD",
+				"Mutant Strain|Apothecary|SCGtD|Pathogenist|SCGtD|3|SCGtD",
+				"Breakthrough Infection|Apothecary|SCGtD|Pathogenist|SCGtD|6|SCGtD",
+				"Outbreak|Apothecary|SCGtD|Pathogenist|SCGtD|6|SCGtD",
+				"Insidious Incubation|Apothecary|SCGtD|Pathogenist|SCGtD|10|SCGtD",
+				"Immunocompromised|Apothecary|SCGtD|Pathogenist|SCGtD|14|SCGtD",
+				"Rapid Evolution|Apothecary|SCGtD|Pathogenist|SCGtD|18|SCGtD"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "int"
+		},
+		{
+			"name": "Reanimator",
+			"shortName": "Reanimator",
+			"source": "SCGtD",
+			"page": 146,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassSpells": [
+				"false life",
+				"inflict wounds",
+				"gentle repose",
+				"invigorate|SCGtD",
+				"lightning bolt",
+				"revivify",
+				"death ward",
+				"corpse explosion|SCGtD",
+				"raise dead",
+				"nerve gas|SCGtD"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"false life",
+							"inflict wounds"
+						],
+						"s2": [
+							"gentle repose",
+							"invigorate|SCGtD"
+						],
+						"s3": [
+							"lightning bolt",
+							"revivify"
+						],
+						"s4": [
+							"death ward",
+							"corpse explosion|SCGtD"
+						],
+						"s5": [
+							"raise dead",
+							"nerve gas|SCGtD"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Reanimator|Apothecary|SCGtD|Reanimator|SCGtD|1|SCGtD",
+				"Corpsewrought Creature|Apothecary|SCGtD|Reanimator|SCGtD|3|SCGtD",
+				"Bodyguard|Apothecary|SCGtD|Reanimator|SCGtD|6|SCGtD",
+				"Reanimated Head|Apothecary|SCGtD|Reanimator|SCGtD|6|SCGtD",
+				"Behold, My Creation|Apothecary|SCGtD|Reanimator|SCGtD|10|SCGtD",
+				"Berserk Fury|Apothecary|SCGtD|Reanimator|SCGtD|14|SCGtD",
+				"I Can't Stop The Monster I Created|Apothecary|SCGtD|Reanimator|SCGtD|18|SCGtD"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "int"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Alienist",
+			"source": "SCGtD",
+			"page": 140,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"一位异能学者寻求掌握心灵的奥秘。经过多年的研究大脑的内部运作，并解锁其潜在潜力，一位异能学者能够阅读和操纵他人的思维，并改变现实本身。他们利用从神秘学知识和奥秘知识中召唤的精神能量，进入难以理解的现实，并利用这些能量按照自己的意愿改变世界。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Advanced Psychology|Apothecary|SCGtD|Alienist|SCGtD|1|SCGtD"
+				},
+				{
+					"type": "entries",
+					"name": "Alienist Spells",
+					"entries": [
+						"在你达到特定等级时，你总是会准备一些特定的法术，就像《异邦法术》表格中所示。这些法术对你来说算作药剂师法术，但不会计入你准备的药剂师法术数量。",
+						{
+							"type": "table",
+							"caption": "Alienist Spells",
+							"colLabels": [
+								"Apothecary Level",
+								"Spell"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell charm person}, {@spell hideous laughter}"
+								],
+								[
+									"3rd",
+									"{@spell detect thoughts}, {@spell suggestion}"
+								],
+								[
+									"5th",
+									"{@spell hypnotic pattern}, {@spell major image}"
+								],
+								[
+									"7th",
+									"{@spell arcane eye}, {@spell dimension door}"
+								],
+								[
+									"9th",
+									"{@spell animate objects}, {@spell modify memory}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Advanced Psychology",
+			"source": "SCGtD",
+			"page": 140,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"你学会了{@spell eldritch blast}战斗法术。你获得了{@skill Arcana}技能的熟练。如果你已经精通这项技能，你可以选择另一项技能获得熟练。"
+			]
+		},
+		{
+			"name": "Mental Influence",
+			"source": "SCGtD",
+			"page": 140,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"你努力学习，解锁了你内心最深处的秘密，释放出自己内在的潜在心灵潜能。这种能量由心灵点数池表示。你有四个心灵点数。",
+				"你在6级时再获得两个，10级时再获得另外两个，14级时再获得两个，你可以消耗它们来使用下面详细描述的各种超能力。",
+				"如果你已经耗尽了所有的心灵能量点，你将无法使用这些能力。",
+				"完成短暂休息或长休息时，你会恢复所有已消耗的心灵点数。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Cerebral Breakthrough",
+							"entries": [
+								"当你施放一个造成伤害的药剂师法术时，你可以消耗一个（Psychic Point）来重新投掷任意数量的骰子。你必须使用新的点数。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mind Over Matter",
+							"entries": [
+								"每当你受到伤害时，你可以使用你的反应并消耗一个（Psychic Point），将受到的伤害减少等同于你（apothecary）等级的数值。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mind Whisperer",
+							"entries": [
+								"当你施放一个不造成伤害的药剂师法术时，你可以花费一个心灵点来施放它，而无需任何手势或口头组件。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Metaphysical Tether",
+			"source": "SCGtD",
+			"page": 140,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"作为一个动作，你可以触摸一个愿意的生物，与其建立一个持续时间等于你药剂师等级的小时数的心灵联系，或者直到你结束这个联系（不需要动作）。",
+				"你可以同时拥有的最大链接数量等于你的熟练加值（proficiency bonus）数。",
+				"所有以这种方式捆绑的生物可以在彼此之间进行心灵感应交流，只要它们彼此之间的距离不超过100英尺。"
+			]
+		},
+		{
+			"name": "Force Manipulation",
+			"source": "SCGtD",
+			"page": 141,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"你的心灵力量使你能够控制周围现实的本质，让你能够违抗重力，仅凭意念推动自己在空中飞行。作为一个额外动作，你可以消耗一个心灵点，让自己在1分钟内获得与步行速度相同的飞行速度，期间可以悬停。"
+			]
+		},
+		{
+			"name": "Mental Magic",
+			"source": "SCGtD",
+			"page": 141,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 10,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Prescribed Effects",
+							"entries": [
+								"每回合一次，当你施放的法术的目标（在你能看到的范围内，距离不超过30英尺）成功通过你施放的法术的智力、感知或魅力豁免检定时，你可以消耗一个（Psychic Point）来填充它的大脑，使其重新投掷d20，并使用较低的点数作为它的豁免检定，有可能将成功变为失败。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mentally Prepared",
+							"entries": [
+								"每个回合一次，当你能看见的目标（包括你自己）在你30英尺内失败了一个智力、感知或魅力豁免扑，你可以使用一个（Psychic Point）并且将你的智力调整值加到该生物的豁免扑中，有可能将失败变成成功。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Fight or Flight Response",
+							"entries": [
+								"作为一个奖励动作，你可以消耗一个心灵点并传送到你能看到的一个未被占据的空间，最远距离为30英尺。你立即获得临时生命值，数值等同于你智力调整值的两倍。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Self-Diagnosis",
+			"source": "SCGtD",
+			"page": 141,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 14,
+			"entries": [
+				"如果你没有剩余的心灵点数，你可以使用一个奖励动作并消耗一个法术位来恢复1d4心灵点数。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Careful Examination",
+							"entries": [
+								"每当你施放一个为生物恢复生命值的法术时，你可以消耗一个（Psychic Point）。如果你这样做，法术所选目标的所有生物额外恢复的生命值数量等于你智力调整值的两倍。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Enhanced Cerebellum",
+							"entries": [
+								"当你从异邦术士法术特性中施放任何1级或更高级的法术时，你可以像平常消耗一个法术位一样施放，或者消耗与该法术等级相等的心灵点数。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Impenetrable Mind",
+			"source": "SCGtD",
+			"page": 141,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Alienist",
+			"subclassSource": "SCGtD",
+			"level": 18,
+			"entries": [
+				"你对精神伤害具有抵抗力，免疫于被 {@condition charmed} 或 {@condition frightened}。魔法无法让你入睡，你在抵抗那些试图读取你的思维或控制你思维或行动的法术时具有优势，比如支配人类。",
+				"此外，当你使用自我诊断功能通过一个法术位来恢复灵能点时，你现在会恢复与该法术等级相等的灵能点。"
+			]
+		},
+		{
+			"name": "Chemist",
+			"source": "SCGtD",
+			"page": 141,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"一位化学家是一位受过训练的科学家，他们对化合物进行了深入研究，使他们能够用炼金爆炸、毁灭性气体和其他可怕的混合物来恐吓敌人。化学家喜欢在实地测试他们的新化合物，并始终热衷于进一步推动他们的研究，寻找新的组合来燃烧他们的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Chemical Compound|Apothecary|SCGtD|Chemist|SCGtD|1|SCGtD"
+				},
+				{
+					"type": "entries",
+					"name": "Chemist Spells",
+					"entries": [
+						"在你达到特定等级后，你总是有一些特定的法术准备好，就像在炼金师法术表中所示。这些法术对你来说算作药剂师法术，但不会计入你准备的药剂师法术数量。",
+						{
+							"type": "table",
+							"caption": "Chemist Spells",
+							"colLabels": [
+								"Apothecary Level",
+								"Spell"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell Burning Hands}, {@spell Grease}"
+								],
+								[
+									"3rd",
+									"{@spell Acid Arrow}, {@spell Flaming Sphere}"
+								],
+								[
+									"5th",
+									"{@spell Fireball}, {@spell Stinking Cloud}"
+								],
+								[
+									"7th",
+									"{@spell Ice Storm}, {@spell Wall of Fire}"
+								],
+								[
+									"9th",
+									"{@spell Cloudkill}, {@spell Cone of Cold}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Chemical Compound",
+			"source": "SCGtD",
+			"page": 141,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"如果你还没有炼金术工具的熟练度，你将获得这个熟练度。你还会学会火球术 cantrip 和从巫师法术清单中选择的另一个附魔 cantrip。这些 cantrip 对你来说算作药剂师 cantrip，但不会计入你已知的 cantrip 数量。"
+			]
+		},
+		{
+			"name": "Precise Application",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"当你施放一个对其他生物造成酸性、冰冷、火焰、闪电或毒素伤害的法术时，你可以选择数量等于你的智力调整值的生物。被选择的生物自动成功通过对该法术的豁免检定，并且如果他们通常在成功豁免后会受到一半伤害的话，他们将不会受到任何伤害。"
+			]
+		},
+		{
+			"name": "Chain Reaction",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"当你施放一个药剂师(cantrip)法术，通常只能以酸、冰、火、闪电或毒素伤害为目标的时候，这个法术可以选择改为以法术范围内的两个生物为目标。"
+			]
+		},
+		{
+			"name": "Chemical Conditioning",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"作为一个行动，你可以触摸一个生物（包括可能是你自己），使其对酸性、寒冷、火焰、闪电或毒素伤害获得抗性，持续1小时。如果你再次使用这个特性，这个效益会立即结束。"
+			]
+		},
+		{
+			"name": "Bottled Spells",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 10,
+			"entries": [
+				"你可以将你的炼金术法术特性中的一个法术存储为液体，放入一个小瓶或瓶子中，当你施放该法术时触碰它。",
+				"这个法术除了被储存在瓶子里之外没有任何效果。",
+				"这个法术会一直存储在瓶子里，直到有生物打开瓶子。",
+				"一旦你使用这个特性，之前创造的任何未使用的瓶装法术将变得无效，直到你完成一次短休才能再次瓶装另一个法术。",
+				"任何生物持有这个瓶子都可以花费一个动作来打开它并施放瓶内的咒语。",
+				"该法术使用你的法术命中加值和豁免 DC，但在其他方面，该法术将释放它的生物视为施法者。"
+			]
+		},
+		{
+			"name": "Elemental Adjustment",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 14,
+			"entries": [
+				"当你使用一位药剂师法术位施放一个法术，该法术造成以下列表中的一种伤害类型时，你可以将该伤害类型更改为其他列出的类型之一：酸(%num%), 冰冷(%num%), 火焰(%num%), 闪电(%num%), 或 毒素(%num%)。"
+			]
+		},
+		{
+			"name": "Chemical Cataclysm",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Chemist",
+			"subclassSource": "SCGtD",
+			"level": 18,
+			"entries": [
+				"当你使用药剂师法术位施放一个造成酸性、冰冷、火焰、闪电或毒素伤害的法术时，它被视为使用了一个7级法术位进行施放。"
+			]
+		},
+		{
+			"name": "Exorcist",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"一位驱魔师带着圣物、祈祷书和一袋仪式小玩意儿，准备好应对邪恶实体、阴险灵魂和可怕的恶魔。他们随时准备面对领域中最不自然和超自然的实体。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spiritual Study|Apothecary|SCGtD|Exorcist|SCGtD|1|SCGtD"
+				},
+				{
+					"type": "entries",
+					"name": "Exorcist Spells",
+					"entries": [
+						{
+							"type": "table",
+							"caption": "Exorcist Spells",
+							"colLabels": [
+								"Apothecary Level",
+								"Spell"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell bless}, {@spell protection from evil and good}"
+								],
+								[
+									"3rd",
+									"{@spell spiritual weapon}, {@spell zone of truth}"
+								],
+								[
+									"5th",
+									"{@spell counterspell}, {@spell spirit guardians}"
+								],
+								[
+									"7th",
+									"{@spell banishment}, {@spell last rites|SCGtD}"
+								],
+								[
+									"9th",
+									"{@spell dispel evil and good}, {@spell flame strike}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spiritual Study",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"你获得重甲和宗教技能的熟练加值。如果你已经具备这些熟练加值，你可以选择另一项技能来获得熟练加值。你可以使用圣徽作为你炼金术士法术的奥术焦点，并且你可以从牧师法术列表中选择一个法术零级咒语。对你而言，这个法术零级咒语算作炼金术士的法术零级咒语。"
+			]
+		},
+		{
+			"name": "Exorcism",
+			"source": "SCGtD",
+			"page": 142,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"在3级时，你获得了通过你的圣符号注入神圣能量的能力，以驱逐区域内的邪恶实体或清除它们对盟友的有害影响。",
+				"你可以使用这个特性的次数等于你熟练加值的一半（%num%）向下取整，你在短休或长休后会恢复所有已用次数。",
+				"从5级开始，当一个不死生物或邪恶生物在你的《(Expel Evil) 驱邪特性》的豁免检定中失败时，该生物遭受4d8点辐射伤害。",
+				{
+					"type": "entries",
+					"name": "Expel Evil",
+					"entries": [
+						"作为一个动作，你展示你的圣符并说出一段祈祷，谴责那些对你构成威胁的生物。在30英尺内的每个不死生物、天界生物、精灵或恶魔必须进行一次感知豁免投掷。如果失败，它将被驱散1分钟，或者直到它受到任何伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Purge Corruption",
+					"entries": [
+						"你触摸一个生物或物品，可以结束其身上的一个状态。如果一个生物被占据或被控制思维，你可以使用这个特性来移除与占据相关的任何特质。如果被占据，该生物会受到精神伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sacred Vessel",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"你对受到惊恐状态免疫，无法被附身或诅咒，并且在豁免被魅惑效果时拥有优势。"
+			]
+		},
+		{
+			"name": "Negation",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "SCGtD",
+			"level": 10,
+			"entries": [
+				"当敌对生物以盟友为目标时，你可以消耗一个药剂师法术位，迫使其进行一次魅力豁免检定。如果未通过检定，该行动失败，使用的资源则被浪费。"
+			]
+		},
+		{
+			"name": "Empowered Healing",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "SCGtD",
+			"level": 14,
+			"entries": [
+				"每当你施放一个治疗生物的法术时，该法术提供最大治疗效果，而生物还会获得临时生命值，数值等同于你的药剂师等级。"
+			]
+		},
+		{
+			"name": "Devout Witness",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "SCGtD",
+			"level": 18,
+			"entries": [
+				"作为虔诚的见证者，你代表你的神发言，并能感受到他们的力量在你体内涌动。对你的驱邪术未能通过豁免检定的生物会受到额外的辐射伤害，而那些受到净化腐化协助的生物会获得临时生命值。"
+			]
+		},
+		{
+			"name": "Mutagenist",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"变种学家们研究了一种血清，他们注射后可以变身为一个怪物形态。他们将自己作为这种力量的传导者，向敌人投掷自己，化身为一个庞大的畸形体。他们花费一生的时间研究和发现改进和修改血清的新方法，希望成为完美形态。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Natural Philosophy|Apothecary|SCGtD|Mutagenist|SCGtD|1|SCGtD"
+				},
+				{
+					"type": "entries",
+					"name": "Mutagenist Spells",
+					"entries": [
+						"在你达到特定等级后，你总是会预先准备好一些法术，就像《变质剂师法术》表格中所示。这些法术对你来说算作药剂师法术，但不会计入你准备的药剂师法术数量中。",
+						{
+							"type": "table",
+							"caption": "Mutagenist Spells",
+							"colLabels": [
+								"Apothecary Level",
+								"Spell"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell jump}, {@spell toxic shield|SCGtD}"
+								],
+								[
+									"3rd",
+									"{@spell alter self}, {@spell enhance ability}"
+								],
+								[
+									"5th",
+									"{@spell haste}, {@spell water breathing}"
+								],
+								[
+									"7th",
+									"{@spell polymorph}, {@spell stoneskin}"
+								],
+								[
+									"9th",
+									"{@spell reincarnate}, {@spell septic shock|SCGtD}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Natural Philosophy",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"你获得炼金工具和草药工具或毒药工具的熟练。你还获得对两种额外语言的熟练以及自然技能。如果你已经具备这种熟练，你可以选择获得另一种技能的熟练。"
+			]
+		},
+		{
+			"name": "Transmogrifying Elixir",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"作为一个奖励动作，你可以消耗一个法术位来进行一次怪诞的变身。变身在一分钟后结束，或者当你的生命值降至0或陷入无能为力状态时结束。当你进行这次变身时，你保持你的个性、阵营和游戏统计数据。然而，会发生一些变化：",
+				{
+					"type": "list",
+					"items": [
+						"你的力量和智力属性分数被交换了。",
+						"你的体型变成大型，你的跳跃距离加倍，当确定你的携带能力和推、拉、举重量时，你被视为比实际体型大一级。",
+						"你的每只手都会变成一个又大又肉的拳头，你可以用它们进行近战武器攻击。对你而言，它们算作简单武器。你的大肉拳击中目标时造成1d10 + 你的力量调整值 + 你的药剂师等级的钝击伤害。",
+						"你不能施放或集中法术。",
+						"你拥有暗视能力，范围为120英尺。",
+						"你获得临时生命值，数值等同于你药剂师等级的五倍。",
+						"你也会根据你的药剂的效力增强你的能力。这与你用来进行转化的法术位级别有关：",
+						"你的速度每使用一个法术位等级增加5英尺。",
+						"你的护甲等级为13 + 使用的法术位等级。",
+						"在你的每个回合开始时，只要你至少还有1点生命值，你会恢复与所使用法术位等级相等的生命值。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"从6级开始，每当你在你的回合上采取攻击动作时，你将攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Potent Biology",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"当你处于变形形态时，你拥有更强大的攻击能力，可以绕过你敌人最强大的防御。",
+				"你的大块肉拳攻击被视为魔法攻击，可以克服对非魔法攻击和伤害的抗性和免疫。",
+				"当你用你的大块肉拳进行攻击时，你可以消耗一个法术位，用不自然的能量增强你的打击力量。当你以这种方式消耗一个法术位时，你每消耗一个法术位，额外造成1d8的力量伤害，每个法术位等级增加1d8伤害。"
+			]
+		},
+		{
+			"name": "Adaptive Genetics",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 10,
+			"entries": [
+				"你可以利用改变后的生物学来保护自己免受死亡的威胁。当你在自然状态或变形状态下的生命值降至0时，你的另一个自我会接管。",
+				{
+					"type": "list",
+					"items": [
+						"当你以自然形态且生命值降至0时，你可以立即使用你的变形药剂特性，消耗一个法术位如常。当你这样做时，你恢复的生命值数量等同于你的药剂师等级（除了从变形中获得的临时生命值）。",
+						"当你在变形形态中被减至0点生命值时，你会恢复到你的自然形态，剩余1点生命值。如果如此做，你在完成短休或长休之前不能再次变形。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Unnatural Evolution",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 14,
+			"entries": [
+				"你可以使用你的大型配方特性，变形时就好像你使用了相应等级的法术位。当你以这种方式转变时，你会获得以下附加的基因突变之一。",
+				{
+					"type": "entries",
+					"name": "Draconic Genome",
+					"entries": [
+						"你从背部长出肉质翅膀，皮肤呈现鳞片状外观。你获得一个与你步行速度相同的飞行速度，并且作为一个动作，可以向一个30英尺锥形区域喷射胆汁。该区域内的所有生物必须通过一次对抗你的法术豁免 DC 的体质豁免才能避免受到 8d6 酸性伤害，成功豁免的生物只受到一半伤害。一旦你使用了这个特性，你必须完成一次短休或长休才能再次使用。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Giant Genome",
+					"entries": [
+						"你变成了一个庞大的肌肉和肉体的质量，将自己变成了一个活生生的攻城武器。",
+						"你的体型变成巨大(Huge)，对物体和建筑造成的所有伤害现在翻倍。",
+						"作为一个动作，你可以在你的回合消耗一个法术位，将你的拳头猛击地面，引发冲击波和碎石在你周围猛烈撞击。",
+						"你周围半径30英尺范围内的所有生物必须通过一次敏捷豁免检定，豁免 DC 为你的法术豁免 DC，否则它们将受到 8d6 钝击伤害并倒地。",
+						"如果他们在豁免投掷中成功，他们会受到一半伤害，并且不会被击倒。(saving throw)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cerebellum Genome",
+					"entries": [
+						"当你变形时，你保留了一部分思维，让你研究的痕迹停留在你的怪物大脑中。现在你有能力在变形的形态下保持对法术的集中。在变形状态下，你的集中不会因受到伤害而被打断。"
+					]
+				}
+			]
+		},
+		{
+			"name": "The New Flesh",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "SCGtD",
+			"level": 18,
+			"entries": [
+				"你已经完善了你的变形药剂，突破了进化的限制，将你的形态推向你认为是进化的顶点。你在变形状态下获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"只要你还有一个或更多的生命值，你可以使用一个奖励动作并消耗一个法术位来恢复相当于所使用法术位等级的十倍的生命值。",
+						"如果你未能通过豁免投骰，你可以作为一次反应，消耗一个法术位来取得成功，而不是失败。",
+						"当变形时，你的力量得分变成与智力得分相等。此外，你可以在变形形态下施放法术。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Pathogenist",
+			"source": "SCGtD",
+			"page": 145,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"疾病研究打开了许多危险的科学发现之门。作为既擅长清除身体疾病又了解传染病变异的专家，病原学家们将他们的研究带到战场上，利用怪物和敌人作为感染的试验对象。多年来，他们精心监测这些瘟疫的起因和影响，使他们成为疾病变异的专家，让他们的疾病以一种可怕的方式传播，并使他们的敌人饱受病症的折磨，削弱他们的身体，撼动他们的心灵。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Plague Proficiency|Apothecary|SCGtD|Pathogenist|SCGtD|1|SCGtD"
+				},
+				{
+					"type": "entries",
+					"name": "Pathogenist Spells",
+					"entries": [
+						"在你达到特定等级时，你总是会准备好一些特定的法术，就像《病原体学家法术》表中所示。这些法术对你来说算作药剂师法术，但不会计入你准备的药剂师法术数量中。",
+						{
+							"type": "table",
+							"caption": "Pathogenist Spells",
+							"colLabels": [
+								"Apothecary Level",
+								"Spell"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell Infect|SCGtD}, {@spell Inflict Wounds}"
+								],
+								[
+									"3rd",
+									"{@spell Blindness/Deafness}, {@spell Biohazard|SCGtD}"
+								],
+								[
+									"5th",
+									"{@spell Pestilence|SCGtD}, {@spell Venomous Aura|SCGtD}"
+								],
+								[
+									"7th",
+									"{@spell Blight}, {@spell Blood Worm|SCGtD}"
+								],
+								[
+									"9th",
+									"{@spell Contagion}, {@spell Insect Plague}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Plague Proficiency",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"你学会了{@spell Chill Touch}的战斗法术。你获得草药工具包的熟练。如果你已经具备这种熟练，你可以选择另一种类型的工匠工具包获得熟练。"
+			]
+		},
+		{
+			"name": "Pernicious Pathogens",
+			"source": "SCGtD",
+			"page": 145,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"每当一个生物施放一个法术或使用一个特性或特征来治愈或移除你的疾病（比如施放{@spell lesser restoration}来移除你的{@spell infect|SCGtD}法术），该生物必须首先进行一次能力检定，使用它的施法能力值（如果法术或特殊能力没有指定施法能力值，则使用它的魅力调整值）。检定 DC 等同于你的法术豁免 DC。",
+				"在失败的检定中，生物的法术、特性或特征失败且无效果。使用的任何材料组件都会消耗掉，消耗的任何法术位都会被浪费。"
+			]
+		},
+		{
+			"name": "Mutant Strain",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"你可以进化你的疾病，引起新的症状。你学会两种自选的突变菌株，每次你在这个职业中获得一个等级时，你可以用这个特性中的另一种不同的突变菌株替换你已知的一种突变菌株。当你在这个职业中达到一定等级时，你会学到额外的突变菌株，如突变菌株已知表所示。",
+				{
+					"type": "table",
+					"caption": "Mutant Strains Known",
+					"colLabels": [
+						"Apothecary Level",
+						"Number of Strains"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"2"
+						],
+						[
+							"9th",
+							"3"
+						],
+						[
+							"15th",
+							"4"
+						]
+					]
+				},
+				"每当你施放一个施加疾病效果的法术（比如{@spell infect|SCGtD}或{@spell contagion|SCGtD}），你可以将你的变种菌株的额外效果应用于该法术的一个目标，该效果持续该法术的持续时间。",
+				"当你学习一种突变菌株时，以下突变菌株可供选择。如果一种菌株有等级要求，你必须至少达到该职业的等级才能学习该菌株。",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "entries",
+							"name": "Dizziness",
+							"entries": [
+								"目标无法进行反应。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Fatigue",
+							"entries": [
+								"每当目标对你的疾病豁免检定失败时，其速度将减少至5英尺，直到其下一个回合开始。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Coughing Fits",
+							"entries": [
+								"在目标的每个回合开始时，它必须根据你的法术豁免 DC 进行一次体质豁免检定。未通过豁免检定的话，目标将无法说话，直到其下一个回合开始。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Shivers",
+							"entries": [
+								"目标不受控制地颤抖着。在每个目标回合开始时，它会掉落它手中的任何物品。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Weakness (9th level)",
+							"entries": [
+								"目标使用近战武器攻击时造成一半的伤害。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dry Eyes (9th level)",
+							"entries": [
+								"每当目标对你的疾病豁免检定失败时，它将在下一个回合开始前失明。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Intense Fever (9th level)",
+							"entries": [
+								"目标无法恢复生命值。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Lesions (9th level)",
+							"entries": [
+								"目标失去任何伤害抗性。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Nausea (15th level)",
+							"entries": [
+								"每当目标未能通过你的疾病豁免检定时，它将在其下一个回合开始前陷入无力状态。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dystrophy (15th level)",
+							"entries": [
+								"目标变得容易受到钝击、刺击和挥砍伤害。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Breakthrough Infection",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"当你使用药剂师法术位或你的大师配方（Greater Formula）特性施放一个引起疾病的法术时，该法术会无视任何生物对疾病的免疫。这样的生物反而会以优势进行对抗你的疾病的豁免投掷。"
+			]
+		},
+		{
+			"name": "Outbreak",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"当一个生物死于你的疾病感染时，你可以使用你的反应将这种疾病传播给你能看见的另一个生物，距离不超过30英尺。"
+			]
+		},
+		{
+			"name": "Insidious Incubation",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 10,
+			"entries": [
+				"当你开始施放{@spell infect|SCGtD}时，你可以修改它，使其不需要集中精神。如果你这样做，该法术的持续时间在那次施法中变为1分钟。在再次使用此特性之前，你必须完成一次短休或长休。"
+			]
+		},
+		{
+			"name": "Immunocompromised",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 14,
+			"entries": [
+				"被你的疾病之一（如{@spell infect|SCGtD}或{@spell contagion}）感染的生物，在面对你的药剂师法术时，对豁免投掷有劣势。"
+			]
+		},
+		{
+			"name": "Rapid Evolution",
+			"source": "SCGtD",
+			"page": 143,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Pathogenist",
+			"subclassSource": "SCGtD",
+			"level": 18,
+			"entries": [
+				"每当你施放一个施加疾病的法术时，你可以将你的突变菌株的两个额外效果应用于法术的一个目标，而不是一个。"
+			]
+		},
+		{
+			"name": "Reanimator",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"一个复活师是生死的主宰。花费多年时间完善他们的配方，将新近死去的人复活，或者用被丢弃的肉体和拼凑的解剖构造新生命，这些让大多数复活师不断徘徊在天才和疯狂之间。复活师的技能在死亡的咽喉中抓住生命，使他们极其适合处理死亡和不死之事。他们疯狂的天才通过用敌人留下的残缺身体部分构造出的生物来展现，这些生物会在他们的命令下冲向战场。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spark of Life|Apothecary|SCGtD|Reanimator|SCGtD|1|SCGtD"
+				},
+				{
+					"type": "entries",
+					"name": "Reanimator Spells",
+					"entries": [
+						"在你达到特定等级后，你总是会准备好一些特定的法术，就像在《复活者法术》表中所示。这些法术对你来说算作药剂师法术，但不会计入你准备的药剂师法术数量中。",
+						{
+							"type": "table",
+							"caption": "Reanimator Spells",
+							"colLabels": [
+								"Apothecary Level",
+								"Spell"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell false life}, {@spell inflict wounds}"
+								],
+								[
+									"3rd",
+									"{@spell gentle repose}, {@spell invigorate|SCGtD}"
+								],
+								[
+									"5th",
+									"{@spell lightning bolt}, {@spell revivify}"
+								],
+								[
+									"7th",
+									"{@spell death ward}, {@spell corpse explosion|SCGtD}"
+								],
+								[
+									"9th",
+									"{@spell raise dead}, {@spell nerve gas|SCGtD}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spark of Life",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 1,
+			"entries": [
+				"你学会了{@spell shocking grasp}和{@spell spare the dying}的零级咒语。这些对你来说算作药剂师咒语，不计入你所知道的药剂师零级咒语的数量。"
+			]
+		},
+		{
+			"name": "Corpsewrought Creature",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 3,
+			"entries": [
+				"你用拾来的尸体部件构建了一个伙伴，并用你的神秘魔法让它复活：一个{@creature corpsewrought creature|SCGtD}。",
+				"这个生物对你和你的同伴友好，并且会听从你的命令。请查看附带的{@creature corpsewrought creature|SCGtD}属性块中的游戏统计数据，其中在几个地方使用了你的熟练加值（PB）。",
+				"你可以确定生物的外观特征；你的选择不会影响其游戏统计数据。",
+				"在战斗中，该生物与你共享先攻值，但它会在你之后立即行动。",
+				"它可以自行移动并使用自己的反应，但它在自己的回合中所采取的唯一行动是躲闪动作，除非你在你的回合中采取一个额外动作来命令它采取另一个行动。",
+				"该动作可以是其属性块中的一个动作，也可以是其他动作。",
+				"如果你无力行动，该生物可以选择任何动作，而不仅仅是躲闪动作。",
+				"如果你的尸魂生物在过去的一小时内死亡，你可以使用你的治疗工具包作为一个动作来复活它，前提是你与它在5英尺内，并且你消耗了一个药剂师法术位。",
+				"尸魂同伴在1分钟后以其所有生命值恢复的状态复活。",
+				"在一次长休结束时，如果你携带着你的医疗包并且有合适的\"材料\"，你可以创造一个新的尸魂生物。",
+				"如果你已经拥有一个来自这个特性的尸魔生物，第一个立即死亡。",
+				"如果你死亡，这个生物也会灭亡。"
+			]
+		},
+		{
+			"name": "Bodyguard",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"当一个生物在你的尸魂生物的5英尺范围内对你发动攻击时，它可以使用其反应对这个攻击者进行一次近战武器攻击。",
+				"此外，你的尸魔生物的重击攻击被视为魔法攻击，以克服对非魔法攻击和伤害的抗性和免疫。",
+				"另外，你可以使用药剂师法术位施放一次《(%Animate Dead)》。一旦施放，你必须完成一次长休才能再次施放该法术。"
+			]
+		},
+		{
+			"name": "Reanimated Head",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 6,
+			"entries": [
+				"你已经复活了一个死亡人形生物的头颅，现在它为你服务于学习之中。你可以使用这个头颅作为施法焦点。这个头颅会说通用语和你选择的另一种语言。",
+				"每当你进行一个让你可以加上熟练加值的智力检定时，你可以将骰子点数为9或更低的d20骰结果视为10。此外，你会获得对奥术学和侦查技能的熟练加值。",
+				"你可以使用头颅施放与死者交谈，而无需消耗法术位。一旦你使用了这个特性，你必须完成一次短休或长休才能再次使用。"
+			]
+		},
+		{
+			"name": "Behold, My Creation",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 10,
+			"entries": [
+				"你的尸体铸造生物的体型增加到大型，并且速度增加到40尺。",
+				"当你的尸体锻造生物用近战攻击命中一名生物时，它可以立即对目标发起一次擒抱尝试。",
+				"要摆脱这个搏斗，DC等于8 + 尸魂生物的力量调整值(+4) + 你的PB。"
+			]
+		},
+		{
+			"name": "Berserk Fury",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 14,
+			"entries": [
+				"当你命令你的尸铸生物采取攻击动作时，该生物可以进行两次攻击。"
+			]
+		},
+		{
+			"name": "I Can't Stop The Monster I Created",
+			"source": "SCGtD",
+			"page": 144,
+			"className": "Apothecary",
+			"classSource": "SCGtD",
+			"subclassShortName": "Reanimator",
+			"subclassSource": "SCGtD",
+			"level": 18,
+			"entries": [
+				"你的尸体铸造生物增加到巨大尺寸，获得10英尺的攻击范围，速度增加到50英尺。它的猛击攻击额外造成1d8点钝击伤害。",
+				"此外，你的尸魂生物可以推动或举起的重量加倍。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Corpsewrought Creature",
+			"source": "SCGtD",
+			"page": 147,
+			"summonedByClass": "Apothecary|SCGtD",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"ac": [
+				{
+					"special": "14 + PB"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your apothecary level (the creature has a number of hit dice [d12s] equal to your apothecary level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 8,
+			"save": {
+				"con": "+3 plus PB",
+				"wis": "+1 plus PB"
+			},
+			"skill": {
+				"athletics": "+4 plus PB"
+			},
+			"senses": [
+				"darkvision 60 ft"
+			],
+			"passive": 11,
+			"immune": [
+				"poison",
+				"lightning"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"pbNote": "equals your proficiency bonus",
+			"trait": [
+				{
+					"name": "Lightning Absorption",
+					"entries": [
+						"每当尸铸生物受到闪电伤害时，它不会受到伤害，而是恢复的生命值等于所受闪电伤害的数量。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 4 plus PB} 进行攻击，射程5英尺，一个目标。造成{@h}{@damage 1d8 + 4} 钝击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "The Thing with the Writhing Tail",
+			"isNamedCreature": true,
+			"source": "SCGtD",
+			"page": 191,
+			"summonedBySpell": "Summon the Thing with the Writhing Tail|SCGtD",
+			"summonedBySpellLevel": 4,
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "12 + the level of the spell"
+				}
+			],
+			"hp": {
+				"special": "50 + 10 for each spell level above 4th"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 13,
+			"dex": 19,
+			"con": 12,
+			"int": 19,
+			"wis": 15,
+			"cha": 19,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Deep Speech",
+				"telepathy 120 ft."
+			],
+			"pbNote": "Equals your proficiency bonus",
+			"trait": [
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"这个物品能看见{@condition invisible}个生物，并且能看到虚空位面。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"该生物进行的爪击次数等于该法术等级的一半（向下取整）。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack}攻击，达到5英尺，一个目标。造成{@h}{@dice 1d6} + 法术等级 + 4点斩击伤害以及{@damage 2d6}点冰冷伤害。"
+					]
+				},
+				{
+					"name": "Eldritch Hiss",
+					"entries": [
+						"这个事物向它能看到的一个生物低语着一个可怕的真相，距离在5英尺内。目标必须进行一次感知豁免检定。未通过检定的话，它会受到{@damage 4d6}点精神伤害，并且必须立即使用其反应（如果有的话），以其速度允许的范围尽可能远离这个事物。这个生物不会移动到明显危险的地面上，比如火源或坑洞。"
+					]
+				},
+				{
+					"name": "Thought Tendril",
+					"entries": [
+						"这个物体在5英尺内能看到的一个生物身上进行精神攻击。目标必须进行一次智力豁免才能。未通过豁免的目标会受到{@damage 4d6}点的精神伤害，并且直到其下一个回合结束前不能进行反应。另外，在它的下一个回合，它必须选择是移动、行动还是奖励行动；它只能选择其中的一个。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Acid Burn",
+			"source": "SCGtD",
+			"page": 186,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在你面前的一个15英尺锥形范围内神奇地喷出一股酸性配方。锥形范围内的所有生物必须成功进行一次敏捷豁免检定，否则将受到{@damage 1d6}酸性伤害。",
+				"这个法术的伤害在你达到5级（{@dice 2d6}），11级（{@dice 3d6}）和17级（{@dice 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": {
+				"label": "acid damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Bacterial Barrage",
+			"source": "SCGtD",
+			"page": 186,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你对范围内的生物发动攻击，使用一种快速蔓延的感染，利用现有的条件。对目标进行远程法术攻击，在命中时，感染会对目标造成{@damage 1d8}点死灵伤害。如果目标正在患有{@condition poisoned}状态或疾病，则会改为造成{@damage 1d12}点死灵伤害。",
+				"当你达到5级（%0%或%1%）时，法术的伤害增加一个骰子；当你达到11级（%2%或%3%）时，伤害再增加一个骰子；当你达到17级（%4%或%5%）时，伤害再次增加一个骰子。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Poison Needle",
+			"source": "SCGtD",
+			"page": 186,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向一个你能看到的生物发射一支涂有致命毒药的幻术飞镖。对目标进行远程法术攻击。命中后，目标受到{@damage 1d10}毒素伤害。",
+				"如果毒素伤害将目标降至0点生命值，目标会保持稳定，但在1小时内仍然是{@condition poisoned}，即使恢复生命值后也是如此，并且在这种情况下是{@condition paralyzed}，而且在{@condition poisoned}时。",
+				"这个法术的伤害在你达到5级（{@dice 2d10}），11级（{@dice 3d10}）和17级（{@dice 4d10}）时增加了{@dice 1d10}。"
+			],
+			"scalingLevelDice": {
+				"label": "poison damage",
+				"scaling": {
+					"1": "1d10",
+					"5": "2d10",
+					"11": "3d10",
+					"17": "4d10"
+				}
+			},
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"HL",
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Acrid Orb",
+			"source": "SCGtD",
+			"page": 187,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of stomach acid and a pinch of sulfate"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造了一个酸性凝胶球，并将其投向射程内的一个生物。对目标进行远程法术攻击。命中时，目标受到{@damage 2d6}酸性伤害。无论攻击是否命中，球体都会爆炸。目标及其周围5英尺范围内的每个生物必须进行一次敏捷豁免，否则将受到{@damage 2d6}酸性伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，爆炸性酸性伤害会每超过1级的位数增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Envenom",
+			"source": "SCGtD",
+			"page": 187,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of basic poison"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"选择你能看到范围内的一个生物，施加魔法毒药。目标受到{@damage 2d4}点毒素伤害，并必须进行一次体质豁免。未通过豁免的生物，在法术持续时间内变成{@condition poisoned}。",
+				"在这种情况下，目标必须在每个回合结束时进行一次体质豁免检定。在未通过豁免检定时，目标会受到{@damage 2d4}点毒素伤害。若通过检定，该法术在目标身上结束。",
+				"对目标施放的一次次级恢复（lesser restoration）法术会提前结束这个法术。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"2级或更高级时，你可以每超过1级，对一个额外目标施放法术。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Infect",
+			"source": "SCGtD",
+			"page": 187,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a petri dish"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你用一种魔法疾病折磨一个你能看到的生物，距离内。在目标的每个回合开始时，它必须进行一次体质豁免检定。生物在豁免检定失败时受到{@damage 1d12}点死灵伤害，成功时受到一半伤害。如果一个目标在三次检定中成功，那么法术结束。",
+				"对目标施放的一次次级恢复（lesser restoration）法术会提前结束这个法术。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"2级或更高级，伤害每超过1级的两个法术位等级增加{@dice 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stream of Consumption",
+			"source": "SCGtD",
+			"page": 187,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在法术持续时间内，你的舌头变成了一根长长的死灵绿能连接线，你可以用它来吸取其他生物的活力。你可以看到的距离60英尺内的一个你选择的生物必须进行一次体质豁免才能。未通过豁免的目标获得 {@condition exhaustion} 的等级，你则回复等同于 {@dice 1d4} + 你的法术属性调整值的生命值。",
+				"在法术持续期间的每个回合，你可以使用你的动作来瞄准同一个生物或不同的生物，但如果某生物在此次施放的消耗之流法术的豁免检定中成功了，就不能再次瞄准该生物。"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Toxic Shield",
+			"source": "SCGtD",
+			"page": 187,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a drop of dwarven blood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你获得对毒性伤害的抗性，并在持续时间内对被{@condition poisoned}影响的豁免 throws 获得优势。此外，每当在你5英尺范围内的生物用近战攻击击中你时，盾牌会向他们喷洒毒液，对攻击者造成{@damage 1d8}点毒性伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，每超过1级的2个法术位级别，毒素伤害就会增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageResist": [
+				"poison"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Biohazard",
+			"source": "SCGtD",
+			"page": 187,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a withered root and a drop of vinegar"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"在法术持续时间内，你将一座边长为15英尺的立方体涂满有毒淤泥。这个区域是艰难地形，充满危险的烟雾。任何进入该区域或在其中开始回合的生物必须进行一次体质豁免检定。未通过豁免检定的生物会受到{@damage 1d8}毒素伤害，并在其下一个回合开始前处于{@condition poisoned}状态。即使生物屏住呼吸或不需要呼吸，它们也会受到影响。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"3级或更高级时，每超过2级的插槽等级，伤害增加 {@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Caustic Grip",
+			"source": "SCGtD",
+			"page": 188,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在咒语持续时间内，你的手会分泌黏稠灼热的酸液，你可以用它来抓住生物并让其承受痛苦。当你施放这个咒语时，并且在你的回合中作为一个动作，直到咒语结束，你可以对你身边5英尺内的一个生物进行近战法术攻击。命中时，你对目标造成{@damage 4d4}酸性伤害，并且该生物会在你的酸性控制下，直到你的下一个回合结束。你可以每轮攻击同一个目标，或随时选择一个新目标。如果你切换目标，之前的目标将不再受该咒语影响。",
+				"一个生物{@condition restrained}被你抓住后，可以使用其动作对抗你的法术豁免 DC 进行力量检定。如果成功，它就不再是{@condition restrained}。每当一个生物以这个法术结束其回合{@condition restrained}时，它会额外受到{@damage 4d4}点酸性伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"3级或更高级时，每超过2级的插槽等级，伤害增加 {@dice 2d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Grasping Ghost",
+			"source": "SCGtD",
+			"page": 188,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a finger bone and a scrap of fabric"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一群漂浮的幽灵之手出现并抓住你能看到的目标。目标必须成功进行一次力量豁免投掷。目标在豁免失败时受到{@damage 3d8}点死灵伤害，豁免成功时受到一半伤害。",
+				"此外，在未能通过豁免检定时，幽灵之手将缠住目标，直到你的下一个回合结束，并立即将目标朝你选择的方向移动多达30英尺（但不能向上）。在目标的回合，该生物可以使用一个动作来尝试通过进行一次力量或敏捷检定（由其选择）对抗你的法术豁免 DC 以尝试摆脱缠绕。如果成功，缠绕结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"3级或更高级别，(Grasping Ghost) 可以针对每个超过2级的法术等级再额外选择一个范围内的生物。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Invigorate",
+			"source": "SCGtD",
+			"page": 188,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a syringe and a blood sample"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"选择范围内的最多三个生物。每个目标获得10点临时生命值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，每个高于2级的法术位级别，临时生命值增加5点。"
+					]
+				}
+			],
+			"miscTags": [
+				"THP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ocular Necrosis",
+			"source": "SCGtD",
+			"page": 188,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"对你能看到的范围内的生物进行远程法术攻击。如果命中，你用致命毒素折磨该生物，导致它们的眼睛流血。该生物受到{@damage 2d6}点死灵伤害，并在你的下一个回合结束前处于{@condition blinded}状态。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，每个高于2级的法术位，死灵伤害增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Corrosive Blast",
+			"source": "SCGtD",
+			"page": 188,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of acid"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一股刺鼻的化学物质从你的手中喷涌而出。30英尺锥形范围内的每个生物必须进行一次敏捷豁免检定。在豁免失败时生物会受到{@damage 10d4}酸性伤害，在豁免成功时则只受到一半伤害。",
+				"该酸性物质会摧毁咒语区域内的所有有机材料制成的物体。被这个咒语杀死的生物，其肉体会完全溶解，只留下腐蚀的骨架。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，酸性伤害将每个高于3级的法术位等级增加{@dice 2d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fetid Blade",
+			"source": "SCGtD",
+			"page": 188,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of acid and a pinch of iron dust"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你将你触摸的武器涂上一种酸性物质。直到咒语结束，用它进行的武器攻击在命中时额外造成{@damage 2d4}点酸性伤害。如果武器还不是一把魔法武器，它将在持续时间内变成一把魔法武器。",
+				"此外，被使用该武器进行近战攻击击中的生物必须进行一次体质豁免检定。如果未能通过豁免检定，它将在攻击者的下一个回合结束前变为{@condition poisoned}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，酸性伤害将每超过3级的位级增加{@dice 1d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"AAD"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Pestilence",
+			"source": "SCGtD",
+			"page": 189,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a withered flower"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你可以感染你能看到范围内的最多三个生物，使它们感染一种魔法疾病。在每个目标的回合开始时，它必须进行一次体质豁免检定。如果未通过豁免检定，该生物会受到{@damage 3d6}点死灵伤害，并获得1级{@condition exhaustion}。如果一个目标在三次检定中成功了三次，那个生物的法术效果就会结束。",
+				"对目标施放的次级恢复（Lesser Restoration）法术会提前结束该生物的这个法术。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Purge Contamination",
+			"source": "SCGtD",
+			"page": 189,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "100 gp of alchemical fluids or holy water, which the spell consumes",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在背诵着一段严谨的魔法咒语的同时，向被污染的人形生物涂抹炼金液或圣水，从其身体中驱逐异界污染物。当你完成施法时，该生物身上的所有污染等级和变异都会被清除。接着，它会因为这个法术移除的每一个污染等级而获得 {@condition exhaustion} 的1级。"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tranquilizing Toxin",
+			"source": "SCGtD",
+			"page": 189,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你选择的范围内一个目标必须进行一次体质豁免才能，否则会受到{@damage 8d6}毒素伤害并在你的下一个回合结束前变成{@condition poisoned}。在这种方式下，目标也会被{@condition stunned}。豁免成功的话，目标只受一半伤害并不会{@condition poisoned}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，毒素伤害将每超过3级的位数增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"stunned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Venomous Aura",
+			"source": "SCGtD",
+			"page": 189,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "scales or fangs of a venomous snake"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你散发出一股凶恶的气场，让靠近你的生物感到迷惑。任何在你身边10英尺范围内开始他们的回合的生物都会在他们的下一个回合开始前处于{@condition poisoned}状态。"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blood Worm",
+			"source": "SCGtD",
+			"page": 189,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a jar full of leeches"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你可以看到范围内的生物感染一种恶性寄生虫形式的魔法疾病。每回合一次，当一名生物用武器攻击命中被感染的目标时，该攻击额外造成{@damage 4d6}点死灵伤害，并且攻击者回复等同于死灵伤害的生命值。每次被感染的目标承受这个死灵伤害时，都需要进行一次针对该法术的体质豁免检定。如果豁免成功，法术结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，死灵伤害会每超过4级的位级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Corpse Explosion",
+			"source": "SCGtD",
+			"page": 189,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature you can see dies within 120 feet of you."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你让触发生物的身体在一阵暴力的血肉和感染组织的喷射中爆炸。距离以触发生物身体为中心的点10英尺内的生物受到{@damage 4d8}死灵伤害和{@damage 4d8}酸性伤害，或者在成功的敏捷豁免扑救后受到一半伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"5级或更高级，伤害增加{@damage 1d8}酸性伤害，每超过4级的槽位等级增加一次。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Corrupting Spores",
+			"source": "SCGtD",
+			"page": 190,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dried mushroom"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在你能看到的射程内，一个5英尺的正方形区域里突然长出了三朵毒蘑菇。这些蘑菇散发出有毒的孢子，任何一个在距离蘑菇区域10英尺内开始回合的生物必须进行一次体质豁免才能。未通过豁免的生物会因为每朵蘑菇造成{@damage 1d8}毒素伤害，并在其下一个回合开始前处于{@condition poisoned}状态。",
+				"在咒语持续期间，你可以在你的回合使用一个额外动作，使补丁内长出另一个蘑菇。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，每超过4级的位级都会额外长出一个蘑菇，与最初的一片一起。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Last Rites",
+			"source": "SCGtD",
+			"page": 190,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small piece of brass, a rose petal, and a drop of holy water"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你瞄准你能看见的范围内的生物，用一道神圣之光照射在它们身上。目标必须进行一次感知豁免投骰。目标在未通过豁免检定时受到{@damage 8d8}点辐射伤害，通过检定时受到一半伤害。这个法术对天神或构造物无效。",
+				"如果你的目标是不死生物或恶魔，它们进行豁免检定时会带有劣势，并且法术对它们造成的伤害为最大值。",
+				"如果一个不死生物或恶魔被这个法术降低到0点生命值，它就会死亡，它的身体会化为灰烬。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，你可以针对每个超过5级的法术等级，在每个距离30英尺以内的额外生物进行目标选择。"
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Poison Wave",
+			"source": "SCGtD",
+			"page": 190,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a withered root and a drop of vinegar"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一股有毒的烟雾从你身上散发出来。在你30英尺范围内的生物必须进行一次体质豁免检定。",
+				"在未通过豁免检定时，每个生物会受到{@damage 4d12}毒素伤害，并在你的下一个回合结束前变为{@condition poisoned}。若通过豁免检定，生物会受到一半伤害且不会变为{@condition poisoned}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"5级或更高级别时，每超过4级的插槽等级，伤害增加 {@dice 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Summon the Thing with the Writhing Tail",
+			"source": "SCGtD",
+			"page": 190,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tuft of cat hair and a dead rat"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你召唤出{@creature The Thing with the Writhing Tail|SCGtD}。它显现在你能看到的范围内的一个空地方。这个有形形态使用下面的属性块。当它的生命值降到0或法术结束时，这个生物会消失。",
+				"这个生物是你和你的同伴的盟友。在战斗中，这个生物与你共享先攻顺序，但它会在你之后立即行动。它会听从你的口头指令（你不需要采取任何行动）。如果你没有下达任何指令，它会采取{@action Dodge}行动并利用移动来避开危险。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，在状态块中出现法术等级的地方使用更高级别的等级。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vitriolic Ichor",
+			"source": "SCGtD",
+			"page": 191,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of nitric acid and a flask of water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"选择范围内具有天然盔甲或穿着盔甲的生物。你让这个生物的天然或制造的盔甲在法术持续时间内变得腐蚀且脆弱。当盔甲被腐蚀时，生物的护甲等级变为10 + 生物的敏捷调整值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，你可以针对每个高于4级的法术位级别额外选择一个生物作为目标。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Acid Rain",
+			"source": "SCGtD",
+			"page": 191,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of sulfur and ground coal"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"直到法术结束，一场酸雨将在一个以你选择的点为中心、半径为40英尺、高40英尺的圆柱内降落。该区域被轻度遮蔽，区域内的明火将被扑灭。",
+				"化学池在该区域的地面上积累，使其成为艰难地形。当生物在一个回合内第一次进入法术区域或在那里开始它的回合时，它会受到{@damage 3d6}酸性伤害，并必须进行一次敏捷豁免投掷。如果豁免失败，它会落入{@condition prone}池中，受到额外{@damage 3d6}酸性伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，酸性伤害每超过5级的位级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBS"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Nerve Gas",
+			"source": "SCGtD",
+			"page": 191,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "samples of phosphate and chlorine mixed with a drop of pure alcohol"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在射程内选择的一个点上创造一个半径为10英尺的有毒雾气球。这团雾气可以穿过拐角。",
+				"这个效果持续一段时间，或者直到强风吹散了雾气，结束这个法术。这片雾气的区域是浓雾。",
+				"当一个生物在一个回合内第一次进入法术的范围或者在那里开始它的回合时，该生物必须进行一次智力豁免检定。如果豁免失败，该生物会受到{@damage 3d6}点精神伤害，并且会成为{@condition stunned}，直到其下一个回合开始。如果豁免成功，该生物会受到一半伤害并且不会成为{@condition stunned}。即使生物屏住呼吸或者不需要呼吸，它们也会受到影响。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"6级或更高级，伤害每超过5级的位级增加{@damage 1d6}点心灵伤害。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"OBS"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Septic Shock",
+			"source": "SCGtD",
+			"page": 192,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of a rotten liver"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择你能看到范围内没有所有生命值的生物。你用腐烂细菌感染目标的伤口。目标必须进行一次体质豁免才能。",
+				"如果生物的生命值剩余不到最大值的一半，它将以劣势进行豁免投掷。如果豁免失败，目标将受到{@damage 10d8}死灵伤害，并获得1级{@condition exhaustion}。如果豁免成功，它会受到一半伤害，并且不会获得任何{@condition exhaustion}级别。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Toxic Barrage",
+			"source": "SCGtD",
+			"page": 192,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Four death cap mushrooms"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造出四道纯净的毒素射线，将它们投向射程内的目标。你可以将它们投向一个目标或多个目标。",
+				"对每一道射线进行远程法术攻击。命中目标后，目标会受到{@damage 3d6}毒素伤害。如果目标被一道或多道射线击中，它必须进行一次体质豁免。未通过豁免的目标会在1分钟内处于{@condition poisoned}状态。在这种方式下，目标可以在自己的回合结束时重复进行豁免检定。若成功，它将不再处于{@condition poisoned}状态。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，你会为每个高于5级的法术位级别额外创造一道射线。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mephitic Vapors",
+			"source": "SCGtD",
+			"page": 192,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of chlorine"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在施法距离内可见的一个点上，涂抹一层刺鼻粘液，覆盖一个半径为20英尺的区域，持续时间内保持不变。这个区域变成艰难地形，任何完全位于该区域内的生物都被{@condition blinded}，且不能作出反应。",
+				"一个生物如果在该区域开始其回合，必须成功进行一次体质豁免才能避免受到{@damage 2d8} 毒素伤害和{@damage 2d8} 酸性伤害，并获得一层{@condition exhaustion}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"如果你使用一个法术位来施放这个法术(%num%)。",
+						"在第7级或更高级别时，每超过第6级的插槽等级，伤害增加{@damage 1d8}毒性伤害和{@damage 1d8}酸性伤害。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"poison"
+			],
+			"conditionInflict": [
+				"blinded",
+				"exhaustion"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"DFT",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vile Necrosis",
+			"source": "SCGtD",
+			"page": 192,
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of coagulated blood"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你伸出手指指向射程内的生物，向它们发射一道苍白的绿光束，产生削弱能量。",
+				"对目标进行远程法术攻击。命中后，目标受到{@damage 12d6}点死灵伤害，并陷入虚弱状态。",
+				"在受到这个法术影响时，目标使用武器攻击和施法造成的伤害减半。",
+				"一个虚弱的目标可以在每个回合结束时进行一次体质豁免检定。在成功豁免后，虚弱状态结束。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Contamination Immunity",
+			"source": "SCGtD",
+			"page": 192,
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an eldritch lily mixed into 250 gp worth of purified fluids per target, which the spell consumes",
+					"cost": 25000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"直到法术结束，你触摸的一个愿意的生物对死灵伤害免疫，并且无法获得污染等级。",
+				"受影响的生物可以在（Haze）中正常休息。",
+				"如果生物施放了一个受污染的法术，这个法术会立即结束。",
+				{
+					"type": "entries",
+					"name": "Researching the Spell:",
+					"entries": [
+						"一个可以施放7级法术，了解中和领域法术，并曾访问过疯狂之心的角色可以研究污染免疫力。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Grievous Wounds",
+			"source": "SCGtD",
+			"page": 193,
+			"level": 7,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a needle and several stitches"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择你能看到范围内的一个生物。你暂时剥夺目标的生理机能，足以使一个轻微的擦伤变成可怕的伤害。直到你的下一个回合结束，目标失去任何伤害抗性或免疫力，对所有伤害变得脆弱，并且所有豁免投掷都带有劣势。"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Miasma",
+			"source": "SCGtD",
+			"page": 193,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a freshly harvested corpse lily"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在射程内的固体表面上创建了一堵病态的、黄绿色的有毒烟雾墙。你可以制造一堵长达60英尺、高20英尺、厚1英尺的墙，或者一堵直径长达20英尺、高20英尺、厚1英尺的环形墙。这堵墙是不透明的，持续时间内保持存在。",
+				"当墙壁出现时，其范围内的每个生物必须进行一次敏捷豁免投掷。未通过豁免的生物会受到{@damage 10d4}酸性伤害，通过豁免的生物则只受到一半伤害。",
+				"当你施放这个法术时，你选择的墙的一侧会散发有毒烟雾。每当一个生物结束回合时，如果它在距离该侧墙30英尺内或在墙内，它会受到{@damage 8d8}点毒性伤害。生物在一个回合内第一次进入墙内时也会受到同样的伤害。墙的另一侧不会造成伤害。",
+				"墙壁对毒素伤害的生物必须进行一次体质豁免才能在咒语持续时间内成为{@condition poisoned}(Wall of Thorns)。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级或更高级别的法术位施放这个法术时，伤害会每超过第7级的位级增加{@dice 2d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"poison"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution",
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Pandemic",
+			"source": "SCGtD",
+			"page": 193,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the fetid corpse of a plague rat"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你感染一个你能看到范围内的生物，使其患上一种致命且高度传染的疾病，该疾病会持续直到被(大愈合), (治愈)或(许愿)治愈。其他能够移除疾病的法术和魔法效果均无法治愈此法术引起的感染。",
+				"当被感染时，生物必须在每个回合开始时进行一次体质豁免检定。如果豁免检定失败，它会受到{@damage 10d8}点死灵伤害，并在下一个回合开始前变成{@condition incapacitated}。如果豁免检定成功，它会受到一半伤害且不会是{@condition incapacitated}。被感染的生物必须在每个回合开始时进行豁免检定，直到死亡或被治愈。",
+				"一个生物在距离被这个法术感染的生物10英尺内开始其回合时，必须进行一次体质豁免投。",
+				"在未能通过豁免检定时，该生物感染了疾病。",
+				"当你施放这个法术时，你可以选择自己和最多其他八个生物不受这次施法引起的感染影响。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Touch of Death",
+			"source": "SCGtD",
+			"page": 193,
+			"level": 9,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the finger of a hag"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"对距离你5英尺内的目标进行一次近战法术攻击。",
+				"命中时，目标受到200点毒素伤害。这种伤害无视目标对毒素伤害的任何抗性或免疫，无法被减少或阻止。",
+				"这种强效毒药残留在目标体内，将其引向死亡。受到这种毒药伤害而生命值降至零的目标，在完成一次长休息之前会自动失败死亡豁免投掷。对目标施放治疗术或强力恢复术的法术也会结束这种效果。"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Breath of Nightshade",
+			"source": "SCGtD",
+			"page": 193,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A pair of deadly nightshade flowers"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你呼出一股60英尺锥形的致命毒气。施法时范围内的每个生物必须进行一次体质豁免投。未通过豁免的生物在1小时内变为{@condition poisoned}。在受到这个法术的影响时，生物会变成{@condition paralyzed}。",
+				"如果受影响的生物受到任何伤害，该法术就会结束。"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Plague Wind",
+			"source": "SCGtD",
+			"page": 193,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "mucus from a ghoul"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤了一股滚滚肉食性疾病和剧烈血液沸腾烟雾的风暴，从你身上散发出来，覆盖了一个120英尺的锥形区域。该区域内的生物必须进行一次体质豁免才能。未通过豁免的生物会受到{@damage 5d8} 毒性伤害和{@damage 5d8} 死灵伤害，通过豁免的生物则只会受到一半伤害。在承受这些伤害后，任何生命值剩余25点或更少的受影响生物会立即死亡，并化为风化的骷髅，其肉体和软组织如灰烬般飞散。"
+			],
+			"damageInflict": [
+				"necrotic",
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Neutralizing Field",
+			"source": "SCGtD",
+			"page": 192,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A delerium crystal or holy relic worth 1,000 gp",
+					"cost": 100000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你在一个半径为10英尺的球形范围内消除了被污染的魔法能量。直到咒语结束，这个球体会随着你移动，以你为中心。在球体内的生物（包括你）无法获得（`contaminated magical energies`）。",
+				"污染水平和对死灵伤害具有抵抗力。",
+				"受污染的法术不能被区域内的生物施放。",
+				{
+					"type": "entries",
+					"name": "Researching the Spell:",
+					"entries": [
+						"一个可以施放5级法术，知道净化污染法术，并且已经制造了至少1剂水净化剂的角色可以研究中和领域（Neutralizing Field）。"
+					]
+				}
+			],
+			"damageResist": [
+				"necrotic"
+			],
+			"damageImmune": [
+				"necrotic"
+			],
+			"damageVulnerable": [
+				"necrotic"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}

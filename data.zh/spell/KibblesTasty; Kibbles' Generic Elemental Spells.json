@@ -1,0 +1,6331 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KibblesGenericElementalSpells",
+				"abbreviation": "KGES",
+				"full": "Kibbles' Generic Elemental Spells",
+				"url": "https://www.gmbinder.com/share/-MW5r6wBJTW_lOU6gLyU",
+				"authors": [
+					"KibblesTasty"
+				],
+				"convertedBy": [
+					"Aven"
+				],
+				"color": "ff80ff",
+				"version": "2.0"
+			}
+		],
+		"dateAdded": 1709460980,
+		"dateLastModified": 1709460980,
+		"_dateLastModifiedHash": "220c26d036"
+	},
+	"spell": [
+		{
+			"name": "Unstable Explosion",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你选择一个范围内的点引发一个不稳定的爆炸，投掷{@dice 3d6}。对于每个掷出6的骰子，额外投掷{@dice d6}，并且法术的半径扩大5英尺。在扩大范围内的10英尺半径球体内的每个生物必须进行一次敏捷豁免。未通过豁免的生物会受到等于掷出骰子总值的火焰伤害。通过豁免的目标会受到一半伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"subschools": [
+				"arcane"
+			],
+			"page": 12,
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，伤害会每超过2级的位数增加{@dice 1d6}。"
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Acid Bubble",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你创造了一个酸性泡泡，漂浮到目标点然后爆炸成酸雨。在一个直径为5英尺的球形范围内的所有生物和物体必须进行一次敏捷豁免检定。未通过检定的目标会受到{@damage 3d4}点酸性伤害，通过检定的则只受到一半伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 5,
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"S"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害将每个高于1级的法术位等级增加{@dice 2d4}。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Melting Glob",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你向射程内的生物投掷一团酸液，进行远程法术攻击。命中后，生物会受到{@damage 4d4}点酸性伤害，并开始被酸液腐蚀。在接下来的1分钟里，在它的回合结束时，它会受到{@damage 1d4}点酸性伤害。生物可以通过使用动作清除酸液来提前结束效果。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 5,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，初始伤害将每个高于1级的法术位等级增加{@dice 2d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Pseudopod Slam",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤出一根酸性粘液的伪足，猛击范围内的生物或物体。进行一次近战法术攻击。命中后，目标受到{@damage 8d4}酸性伤害，并向你选择的方向移动5英尺。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，伤害会每超过2级的法术位等级增加{@dice 2d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"page": 5
+		},
+		{
+			"name": "Acidic Pit",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你在射程内的某点打开一个充满酸液的坑。距离该点10英尺半径范围内的所有生物必须进行一次敏捷豁免检定。未通过检定的生物会掉入下方的酸坑中，受到{@damage 6d4 + 6}酸性伤害。通过检定的生物只会受到洪水酸液一半的伤害，并可以使用其反应速度移动到离该区域最近的安全点，如果它无法使用反应或到达安全点，则自动失败豁免检定。",
+				"当一个生物在坑中结束他们的回合时，该生物会受到{@damage 2d4}酸性伤害。坑中的酸在1分钟内仍然具有强烈的腐蚀性，之后它变成了简单的恶臭淤泥，不再造成伤害。坑中会一直充满恶臭淤泥，直到被填满或清理。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 5,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"R"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Erode",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你用一团酸液轰击目标。目标必须进行一次敏捷豁免检定。未通过检定的目标立即受到{@damage 8d4}点酸性伤害，并被酸液覆盖。通过检定的目标只受到一半伤害，并且不被酸液覆盖。被酸液覆盖时，目标在每个回合结束时受到{@damage 2d4}点酸性伤害。目标或距离目标5英尺内的生物可以通过使用动作清除酸液来结束这种伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 5,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，伤害（初始和后续）会每超过3级增加{@dice 1d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Acid Rain",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"source": "KibblesGenericElementalSpells",
+			"page": 5,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entries": [
+				"酸雨开始在距离你选择的范围内心点为中心的半径40英尺、高60英尺的圆柱体内降落。当生物首次进入法术范围内或在其回合开始时位于该区域内时，生物必须进行一次敏捷豁免才能，否则将受到{@damage 6d4}酸性伤害，并被酸覆盖。豁免成功的生物将只受到一半的初始伤害并且不被酸覆盖。",
+				"一只生物如果在被酸液覆盖时结束回合，会受到{@damage 3d4}酸性伤害。目标或距离它不超过5英尺的生物可以通过使用动作来清除酸液来结束这种伤害。"
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Arctic Breath",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"一道长30英尺、宽5英尺的冰冷北极风从你身上喷射而出，方向由你选择。线上的每个生物必须进行一次敏捷豁免。未通过豁免的生物会受到{@damage 2d8}的冰冷伤害，并且其移动速度将减少10英尺，直到它们的下一个回合结束。通过豁免的生物会受到一半伤害，并且不会被减速。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 6,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级的位数增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"Q"
+			]
+		},
+		{
+			"name": "Entomb",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你试图将你能看到的中型或更小体型的生物包裹在冰中。该生物必须进行一次力量豁免才能否定{@condition restrained}，持续时间内被冰冻。在每个回合结束时，目标会受到{@damage 1d8}的冰冷伤害，并可以进行另一次力量豁免。若成功，法术对目标结束。",
+				"如果生物在{@condition restrained}时从单次伤害中受到5点以上的火焰或钝击伤害，则冰块会破裂，目标将被释放，法术对目标结束。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 6,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"restrained"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级的位数增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Ice Arrow",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤一块冰晶，然后将其投向你能看到且在射程内的目标。进行一次远程法术攻击。命中后，目标受到{@damage 2d8} + 你的法术属性调整值的冰冷伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 6,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Cold Snap",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"用手指一弹，一股旋转的冰冷风暴在你选择的范围内的一个点爆发。以那一点为中心的5英尺半径范围内的每个生物必须进行一次体质豁免才能。未通过豁免的生物会受到{@damage 3d8}点冰冷伤害，并被冰冻困住，使其移动速度减少10英尺，直到你的下一个回合开始。通过豁免的目标只会受到一半伤害，并不会被冰冻住。",
+				"该区域的地面覆盖着光滑的冰雪，直到你的下一个回合开始前，它将成为困难地形。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 6,
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，伤害会每超过2级的位数增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"miscTags": [
+				"DFT"
+			]
+		},
+		{
+			"name": "Shattering Shield",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you can take when a creature within range is hit by a melee attack."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你制造出一面冰盾来挡住攻击。攻击造成的伤害会减少 {@dice 1d8} + 你的施法属性调整值。如果攻击伤害没有完全被挡住，冰盾会破裂，将被挡住的伤害量作为冰冷伤害对袭击者造成伤害。如果冰盾没有被破坏，它会在挡住伤害后消融。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 6,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放此法术时，每超过2级的法术位级别，阻挡的伤害量增加 {@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Arctic Aura",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"在释放冰冷光环的持续时间内。开始他们的回合时，位于你周围20英尺半径范围内的生物必须成功通过一次体质豁免才能避免受到{@damage 2d8}冰冷伤害，并且其速度将降低至0，直到它们的下一个回合开始。成功豁免的生物将只受到一半伤害，并且速度减半。",
+				"在法术持续期间，你可以在每个回合的奖励动作中积极控制光环，将区域内最多(%num%)个生物排除在法术效果之外，直到你的下一个回合结束。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 6,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，伤害将每个高于3级的法术位等级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Flash Freeze",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"一股刺骨的寒风向外扩散。在一个30英尺锥形范围内的每个生物必须进行一次体质豁免检定。未通过检定的生物将受到{@damage 4d8}的冰冷伤害，并且被冰冻，直到你的下一个回合开始。通过检定的目标将只受到一半伤害，并且不会被{@condition restrained}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 7,
+			"conditionInflict": [
+				"restrained"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，伤害将每个高于3级的法术位等级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Ice Spike",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你创造出一支冰矛，从地面射出以刺穿范围内的生物。目标必须进行一次敏捷豁免。在未通过豁免时，目标受到{@damage 4d8} 刺伤伤害和{@damage 4d8} 冰冷伤害。在通过豁免时，目标只受到{@damage 4d8} 冰冷伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 7,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或7级的法术位施放这个法术时，你可以创建第二个尖刺。当你使用8级或9级的法术位施放这个法术时，你可以创建第三个尖刺。额外的尖刺可以瞄准相同或不同的生物。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		},
+		{
+			"name": "Blizzard",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤出呼啸的暴风雪，冰雪云团在你能看到的范围内的一个点中心形成一个半径30英尺、高40英尺的圆柱体。该区域变得浓雾重重，移动速度变慢。任何在该区域内开始他们的回合或在回合内第一次进入该区域的生物必须进行一次体质豁免检定。生物在豁免检定失败时受到{@damage 6d8}的冰冷伤害，成功时则减半。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 7,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或更高级别的法术位施放这个法术时，伤害会每超过6级的位级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Form of Ice",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你冻结成一团元素冰。直到法术结束，你获得以下效果：",
+				{
+					"type": "list",
+					"items": [
+						"你对寒冷伤害免疫。(immune to cold damage)",
+						"你可以在冰雪制造的艰难地形上移动，而不需要额外消耗移动力。",
+						"你周围半径为10英尺的地面结冰，对于除你之外的生物来说是艰难的地形。这个半径会随着你移动。",
+						"你可以使用你的动作，在你伸出的手向你选择的方向创造一个30英尺的冰风锥。锥形范围内的每个生物必须进行一次体质豁免才能。未通过豁免的生物会受到{@damage 4d8}的冰冷伤害，通过豁免的生物则只受到一半伤害。未通过此效果豁免的生物速度减半，直到你的下一个回合开始。",
+						"在你的回合中，如果你投掷了冰冷伤害，你会获得等于投掷的一个骰子的临时生命值（你选择）。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 7,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"miscTags": [
+				"THP",
+				"DFT"
+			]
+		},
+		{
+			"name": "Form of the Elements",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"在咒语持续期间，你获得{@spell form of fire|kibblesgenericelementalspells}，{@spell form of ice|kibblesgenericelementalspells}，{@spell form of stone|kibblesgenericelementalspells}，{@spell form of water|kibblesgenericelementalspells}和{@spell form of wind|kibblesgenericelementalspells}咒语的效果。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 23,
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Dragon Surge",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你引导元素力量形成龙翼，选择酸、冰、火、闪电或毒素中的一个元素。在你周围10英尺范围内的所有生物必须进行一次敏捷豁免检定，当龙翼以元素力量的涌动形成时，未能通过豁免检定的生物会受到所选元素类型的{@damage 2d8}伤害，通过检定的生物则只受一半伤害。你获得30的飞行速度，直到回合结束，之后龙翼再次消失。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 23,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放此法术时，伤害增加 {@dice 1d8}，飞行速度每超过2级时增加10英尺。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Elemental Orb",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你形成一团能量球，将其塑造成你选择的元素。从酸、冰、火、闪电或毒素中选择一个元素伤害类型。对你能看到的范围内的目标进行远程法术攻击。命中后，目标受到所选元素伤害类型的{@damage 3d8}伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 23,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级的位数增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Form of Wind",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你化身为一股元素之风。直到法术结束，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你有60英尺的飞行速度。",
+						"你可以穿过并占据其他生物的空间，并且你可以忽略艰难地形。",
+						"你是{@condition invisible}。",
+						"你可以使用你的动作，在一个30英尺的锥形范围内释放一股强大的风。锥形范围内的每个生物必须进行一次力量豁免检定。在未通过检定的情况下，生物会受到{@damage 4d8}的钝击伤害，并被击退15英尺，通过检定的生物则只受到一半伤害且不会被击退。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 23,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Tornado",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"一股旋转的龙卷风爆发，填满一个以范围内某点为中心的半径20英尺、高40英尺的圆柱体。",
+				"任何在龙卷风内开始其回合的生物必须进行一次力量豁免投。未通过豁免的生物会受到{@damage 4d8} 钝击伤害，并被推开10英尺并向上40英尺。通过豁免的生物只会受到一半伤害，并且不会被推开。",
+				"作为一个奖励动作，你可以将龙卷风向任意方向移动30英尺。对于龙卷风范围内20英尺的目标进行的任何远程武器攻击都具有劣势，并且任何穿过龙卷风的远程攻击都会自动失误。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 22,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Suffocate",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你创造了一个围绕生物的旋转气流球，让它们呼吸困难。目标必须进行一次体质豁免投。未通过检定的目标因缺氧损失{@dice 5d8}生命值，所有能力检定都有劣势，并且无法言语。通过检定的目标受到一半伤害并不受其他影响。在持续时间内，你可以作为一个动作，强迫生物再次进行一次豁免检定。",
+				"如果目标连续3次未能通过对这个法术的豁免检定，他们会变成{@condition incapacitated}，直到他们成功通过一次检定或法术结束。如果你没有使用你的动作来迫使目标进行检定，那将被视为成功。",
+				"不需要呼吸的生物不受这个法术影响。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 22,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Aero Barrage",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你创造出四支迅速旋转的凝聚风之枪，并将它们投向射程内的目标。你可以将它们投向一个目标或多个目标。",
+				"对每一支长矛进行远程法术攻击。命中目标时，目标受到{@damage 2d8}点割伤伤害，并向后击退10英尺。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 22,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，你会为每个高于4级的法术位等级额外创造一支长矛。"
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Vortex Blast",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你制造了一个突然的猛烈漩涡，向外方向喷发，将区域内的角色和物体抛出。区域内的生物会受到{@damage 4d6} 钝击伤害，并必须进行一次力量豁免才能不被击退30英尺并向上30英尺。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 22,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，伤害将每超过3级的法术位等级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Vacuum Pull",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你引发一股突如其来的狂风呼啸着朝你吹来，试图将你能看到的范围内的一个巨大或更小的生物拉向你。目标必须通过一次力量豁免才能不被拽倒并朝你被甩过来，最终落地在你的5英尺内并摔倒{@condition prone}。飞行生物以劣势进行力量豁免。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 22,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，该法术的射程增加10英尺。"
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Hurricane Slash",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你将风凝聚成一股锋利的射线，撕裂出一个长30英尺宽5英尺的区域。该区域内的生物必须进行一次敏捷豁免检定。未通过检定的生物会受到{@dice 3d8}点割伤伤害，通过检定的生物则只受到一半伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 21,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，你可以创建一个额外的效果线。在多个斜线区域内的生物只受到一次影响。"
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Dust Cyclone",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"选择你能看到的范围内的一个地面目标点。在目标点处，产生一个半径为5英尺，高度为30英尺的小龙卷风。",
+				"任何生物，在风尘魔(Tornado)的半径内开始其回合或在其回合内首次进入其半径，必须进行一次力量豁免检定。未通过检定的生物会受到{@damage 1d12} 钝击伤害，并被推离中心5英尺。通过检定的生物只会受到一半伤害，并且不会被推开。",
+				"作为一个奖励动作，你可以将尘魔向任意方向移动30英尺。当你第一次将尘暴的半径穿过一个生物时，该生物必须进行豁免投掷以抵抗尘暴的伤害，并在失败时被推开。你可以继续移动尘暴，但它的力量会在你的回合结束前耗尽，后续的生物不会受到影响。",
+				"如果尘魔移动到沙子、尘土、松散的泥土或小砾石上，它会吸入这些材料并严重遮挡其半径，直到你的下一个回合开始。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 21,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of dust"
+			},
+			"savingThrow": [
+				"strength"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Become Wind",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"直到下一回合开始，你化为一股元素风。你获得对闪电伤害以及来自非魔法攻击的钝击、穿刺和斩击伤害的抗性。此外，你获得30英尺的飞行速度，可以穿过其他生物的空间，忽略难行地形，但如果没有被支撑，你将在下一回合开始时坠落。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 21,
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"name": "Violent Updraft",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你制造了一股猛烈的上升气流，试图将一个体型为大或更小的生物抛向空中。目标必须进行一次力量豁免才能，可以选择失败。如果失败，它们会被击飞20英尺。如果目标无法抓住任何东西或飞行，它们会立即坠落，受到{@damage 2d6} 钝击伤害并坠落{@condition prone}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 21,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，目标被击退额外1英尺，每个位级别高于1级。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Gale Bolt",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"一股浓缩的风向着你选择范围内的生物急速飘去。对目标进行远程法术攻击。命中后，目标受到{@damage 2d8} 钝击伤害，如果目标是大型或更小，则被击退10英尺远离你。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 21,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Windborne Weapon",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"在施放这个法术时，将法术的材料组件作为施法行动的一部分，使其成为一次远程法术攻击。这次攻击无视掩护。命中后，造成武器伤害类型的{@damage 1d8}伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 21,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of ammunition or weapon with the thrown property worth at least 1 cp"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的伤害在你达到5级（{@dice 2d8}），11级（{@dice 3d8}）和17级（{@dice 4d8}）时增加了{@dice 1d8}。"
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Form of Water",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你化身为一股元素水流。直到法术结束，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你对非魔法攻击造成的钝击、穿刺和砍砍伤害具有抗性。",
+						"你可以穿过其他生物的空间并忽略艰难地形；第一次穿过一个大型或更小的生物时，它必须通过一次力量豁免才能不被击倒。",
+						"你可以使用你的动作释放一股水流，长15英尺，宽5英尺，延伸自你身边朝你选择的方向。线上的每个生物必须进行一次力量豁免投。在未通过豁免时，生物会受到{@damage 5d6}的钝击伤害，并被击倒{@condition prone}；在通过豁免时，受到一半伤害且不被击倒{@condition prone}。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"conditionInflict": [
+				"prone"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"L"
+			],
+			"page": 20
+		},
+		{
+			"name": "Pressure Cutter",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你释放出一股高压水柱，沿着60英尺长、15英尺宽的直线冲击一切。直线上的每个生物必须进行一次敏捷豁免，未能通过则受到{@damage 10d6}的斩击伤害。成功豁免的生物只受到一半伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 20,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，伤害将每超过5级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Geyser",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你在射程内的某点引发了一场巨大的水柱喷发。距离该点10英尺内的生物必须进行一次敏捷豁免，否则将受到{@damage 4d6} 钝击伤害并被击飞60英尺。豁免成功的生物只受到一半伤害，并可以选择被击飞10英尺远离该点或者向上10英尺。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 20,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放此法术时，伤害将每超过4级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Waterspout",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤出一大团水，将其形成一个旋转漩涡，围绕着你所能看到的地面上的一个点。这个旋转漩涡填满了一个半径为10英尺、高30英尺的圆柱体。每个回合一次，当一个生物的空间完全被水龙卷所包围时，它必须进行一次力量豁免检定。如果失败，它会受到{@damage 2d8}的钝击伤害，并变成{@condition blinded}，{@condition deafened}，并且无法说话。在它的下一个回合开始时，它会被从水中驱逐到最近的空间。如果成功，它只会受到一半的伤害，并且不会遭受法术的其他影响。",
+				"在你的回合中，你可以将水龙卷沿着地面向任意方向移动多达20英尺，作为一个额外动作，吞没沿途的任何生物。在被这种方式吞没的生物中，未能通过豁免检定的生物会随着水龙卷的移动被带走，直到它们在自己的回合开始时像平常一样被喷射出去。",
+				"如果这个法术的中心点位于一个巨大或更大的水体上方，水龙卷的大小将加倍。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 20,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"areaTags": [
+				"Y"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			]
+		},
+		{
+			"name": "Water Cannon",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你释放出一股水柱，形成一条长60英尺、宽5英尺的直线。区域内的生物必须进行一次力量豁免才能避免受到{@damage 6d6} 钝击伤害，并被推到远离你的直线末端的开放空间。如果没有开放空间可供移动（例如他们会撞到墙壁或另一个生物），他们会被推到最近的空间，并受到额外{@damage 2d6} 钝击伤害，并被击倒{@condition prone}。豁免成功的生物只会受到一半伤害，并且不会被推动。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 19,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，伤害将每超过3级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Dancing Wave",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你在射程内的地面某点召唤出一股汹涌的水流。水流保持凝聚，填满半径5英尺的区域，但只有离地面3英尺高。对于没有游泳速度的生物，这个区域是难以通过的地形。",
+				"在咒语持续期间，作为一个奖励动作，你可以将水浪沿着表面朝任意方向移动30英尺。在你的回合中，当水浪第一次进入任何生物的空间时，它们必须进行一次力量豁免才能，否则会受到{@damage 2d6} 钝击伤害并被击倒{@condition prone}。如果生物处于{@condition prone}，则自动失败这次豁免才能。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 19,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"miscTags": [
+				"DFT"
+			]
+		},
+		{
+			"name": "Water Blast",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你聚集一团水球，然后将其投向目标。对目标进行远程法术攻击。命中后，目标会受到{@damage 3d6}的钝击伤害，如果目标是大型或更小，则必须进行一次力量豁免才能避免被击倒{@condition prone}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 19,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Crashing Wave",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"一股水浪从你身上席卷而出。20英尺锥形范围内的每个生物必须进行一次力量豁免才能。未通过豁免的生物会受到{@damage 2d6}的钝击伤害，并被击退10英尺。如果生物被击退到墙壁、另一个生物，或者豁免失败值超过5，它还会额外被击退{@condition prone}。通过豁免的生物只会受到一半伤害且不会被击退。如果在你施放法术时，你身边5英尺内有至少5立方英尺的水源，你可以移动那些水，将法术范围增加至25英尺锥形范围。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 19,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Become Water",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你化为一股元素水流。直到你下个回合开始前，你获得以下效益：",
+				{
+					"type": "list",
+					"items": [
+						"你对非魔法攻击造成的钝击、穿刺和斩击伤害具有抗性。",
+						"你可以穿过其他生物的空间并忽略艰难地形；在一个回合内第一次穿过一个大型或更小的生物时，它必须通过一次力量豁免才能不被击倒{@condition prone}。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 19,
+			"conditionInflict": [
+				"prone"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "Water Bullet",
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你创造了一个压缩的水珠，将其射向你能看到的范围内的生物。进行远程法术攻击。命中后，目标受到{@damage 1d6} + 你的法术属性调整值的穿刺伤害。",
+				"这个法术的伤害在你达到5级（{@dice 2d6}），11级（{@dice 3d6}），和17级（{@dice 4d6}）时增加了{@dice 1d6}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 19,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Sonic Shriek",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你释放出一个覆盖范围巨大的声波冲击。在一个120英尺的锥形范围内的每个生物必须进行一次体质豁免检定。未通过豁免的生物会受到{@damage 6d8} 雷属性伤害。通过豁免的生物会受到一半伤害。如果一个生物距离你超过60英尺，则其豁免检定自动成功。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 18,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放此法术时，伤害将每超过5级的槽级别增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Echoing Lance",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你对范围内的生物释放了一个有针对性的强烈声波能量爆发。目标必须进行一次体质豁免才能。如果未通过豁免，他们会受到{@damage 3d8} 雷属性伤害，并在一段时间内因强烈的声音而变为{@condition stunned}。如果通过了豁免，目标会受到一半伤害且不会成为{@condition stunned}。",
+				"在每个目标的回合结束时，目标可以进行另一次体质豁免检定。若成功，法术结束，若失败，他们在心灵中的回声中受到额外 {@dice 1d8} 的雷霆伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 18,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"stunned"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，初始伤害将每超过4级的法术位等级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Thunder Pulse",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你聚集声波能量，可以将其释放为一个15英尺锥形冲击波。该区域内的每个生物必须进行一次体质豁免检定。未通过豁免检定的生物会受到{@damage 3d8} 雷属性伤害并被击退10英尺。通过豁免检定的生物只会受到一半伤害且不会被击退。",
+				"你可以在接下来的回合中将一个新的震荡波作为你的行动，直到法术结束。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 18,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，伤害会每超过2级的位数增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Thunder Punch",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你让你的手（或类似附肢）充满雷电能量。对一名生物进行近战法术攻击。命中后，你和目标周围最多300英尺范围内能听到一声巨响，目标受到{@damage 3d8}点雷属性伤害，并被击退10英尺。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 18,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级的位数增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Stinging Swarm",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤出一群飞行昆虫的魔法群落，填满施法距离内的一个5英尺立方体空间。在法术持续期间，这群昆虫会被魔法补充，无法被摧毁。作为一个奖励动作，你可以指挥这群昆虫移动最多30英尺。如果这群昆虫进入另一个生物的空间，它会停下来并围攻它，反复刺它，并且在你的下一个回合开始前无法移动。该生物受到{@damage 2d4} 刺伤伤害，并必须进行一次体质豁免，如果失败则受到{@damage 6d4} 毒素伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 18,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"piercing",
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"C"
+			]
+		},
+		{
+			"name": "Poison Puff",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你呼出一团毒气，神奇地扩散成一个30英尺的锥形区域。该区域内的生物必须进行一次体质豁免才能。未通过豁免的生物将受到{@damage 4d12}点毒性伤害，并在他们的下一个回合开始前变成{@condition poisoned}。通过豁免的生物将受到一半伤害，并不会被{@condition poisoned}。",
+				"在你的回合开始之前，该区域会被轻微遮蔽，任何在该区域结束他们的回合的生物会受到{@damage 2d4}毒素伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 18,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"poisoned"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Wasp Barrage",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤一群魔法黄蜂，它们飞出并刺伤你选择的生物，范围为40英尺的锥形区域。对每个选择的目标进行远程法术攻击。命中时，目标受到1点刺伤伤害{@damage  + 4d12}毒素伤害。攻击结束后，魔法黄蜂消失。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"subschools": [
+				"primal"
+			],
+			"page": 17,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，毒素伤害会每超过3级的法术位等级增加{@dice 1d12}。"
+					]
+				}
+			],
+			"areaTags": [
+				"N"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"damageInflict": [
+				"piercing",
+				"poison"
+			]
+		},
+		{
+			"name": "Spider Bite",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你用一根微小的魔法毒牙刺向一个目标。对身边范围内的生物进行一次近战法术攻击。命中后，目标受到{@damage 4d12}点毒性伤害，并必须通过一次体质豁免才能在1分钟内不再是{@condition poisoned}。在每个回合结束时，目标可以再次进行体质豁免。若成功，目标不再是{@condition poisoned}。",
+				"如果你未命中近战攻击检定，你可以集中精力（就像在一个法术上{@status concentration||concentrating}）来维持攻击，直到你的下一个回合结束。 （你可以继续尝试，直到命中或失去{@status concentration})"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 17,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"poisoned"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，伤害会每超过3级的法术位等级增加{@dice 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"spellAttack": [
+				"M"
+			]
+		},
+		{
+			"name": "Vicious Vapors",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤一股毒气在你周围旋转。在咒语持续期间，你被轻微遮蔽。当你施放这个咒语时，以及在接下来的每个回合中作为一个奖励动作，你可以让毒雾涌动并环绕在范围内最多三个你选择的生物周围。每个生物必须进行一次体质豁免。未通过豁免的生物会受到{@damage 1d12}毒素伤害，并在你的下一个回合开始前变成{@condition poisoned}。通过豁免的生物会受到一半的毒素伤害，并不会成为{@condition poisoned}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 17,
+			"subschools": [
+				"arcane",
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，伤害会每超过2级增加{@dice 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Poison Dart",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤一枚纯净毒液飞镖，投向你能看见且在射程内的生物。进行一次远程法术攻击。命中后，目标受到{@damage 3d12}毒性伤害，并必须通过一次体质豁免才能免疫{@condition poisoned}，直到你下个回合开始前。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 17,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"poisoned"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，伤害会每超过2级增加{@dice 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Nauseating Poison",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你将你的手、你握着的武器，或者你的天然武器笼罩在黑暗的黏液瘴气中。在你的下一个回合开始前，下一次进行近战攻击（包括近战法术攻击）时，攻击额外造成{@damage 1d12}毒素伤害，并且目标必须通过一次体质豁免检定，否则会被{@condition poisoned}，持续到你的下一个回合结束。",
+				"法术在造成伤害后结束，或在你的下一个回合开始时结束，以先发生者为准。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 17,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"poisoned"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Bad Blood",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"针对你能看到的范围内生物，你试图腐化它的血液。没有血液的生物对此效果免疫。目标必须进行一次体质豁免才能。如果失败，它们会受到{@damage 1d12} 毒素伤害，并在持续时间内成为{@condition poisoned}。",
+				"在目标的每个回合结束时，目标可以再次进行一次体质豁免检定。若成功，法术在目标身上结束；若失败，他们会额外受到{@dice 1d4}毒素伤害，因为毒素继续折磨他们。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 17,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of rotten meat"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，你可以为每个高于2级的法术位级别额外选择一个目标。当你选择目标时，这些目标必须彼此相距不超过30英尺。"
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Sky Burst",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"五道闪电劈中你在范围内可见的五个点。每个距离你选择的点5英尺内的生物必须进行一次敏捷豁免。未通过豁免的生物会受到{@damage 4d12 + 4}点闪电伤害，通过豁免的生物则只受到一半伤害。处于多个闪电爆炸范围内的生物只受到一次影响。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 16,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，你可以召唤额外的一道闪电，针对范围内的另一个点，每超过5级的法术位级别增加一个。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Jumping Jolt",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你释放一道闪电弧线，瞄准范围内的生物。对目标进行远程法术攻击检定。命中后，目标受到{@damage 4d12}点闪电伤害，你可以让法术跳到距第一个目标20英尺内的另一个目标，为每个目标进行新的攻击检定。法术不能再次命中同一目标，也不能跳到超出法术范围的目标。法术最多可以跳跃五次。",
+				"未命中时，目标受到伤害减半，法术不会跳转至新目标。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 16,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，起始伤害会每超过4级的位数增加{@dice 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Static Field",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"在你能看到的范围内，一个直径为20英尺的静电能量场突然出现。每当一个生物在效果范围内移动超过5英尺或采取行动时，它会受到{@damage 1d12} 闪电伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 16,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Lightning Tendril",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"蓝色能量的电光从你的手中跃出。在咒语持续期间，作为一个动作，你可以将它们对准范围内的一个生物，对该生物造成{@damage 1d12} 闪电伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 16,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a twig from a tree that has been struck by lightning"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或4级法术位施放此法术时，伤害增加到{@dice 2d12}，射程增加到30英尺。当你使用5级或6级法术位施放时，伤害增加到{@dice 3d12}，射程增加到60英尺。当你使用7级或更高级法术位施放时，伤害增加到{@dice 4d12}，射程增加到120英尺。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Electrify",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你将闪电聚集在双手中。在你的下一个回合开始前，如果你用近战攻击（包括近战法术攻击）命中一名生物，那个目标会受到{@damage 1d12}点闪电伤害，并必须进行一次体质豁免才能。未能通过豁免检定的目标会被电击，使其在下一个回合开始前陷入震慑状态。",
+				"法术在造成伤害后结束，或在你的下一个回合开始时结束，以先发生者为准。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 15,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Electrocute",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"一道巨大的闪电弧线从你的手中跃向你能看到的范围内的目标。目标必须进行一次体质豁免才能。未通过豁免的目标会受到{@damage 4d12} 闪电伤害，并在你下个回合开始前处于{@condition stunned}状态。通过豁免的目标会受到一半伤害，并不会{@condition stunned}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 15,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"stunned"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，伤害会每超过3级的法术位等级增加{@dice 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Crackle",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你制造出三道闪电弧，击中范围内的目标。你可以将它们指向一个目标或多个目标。",
+				"对每个弧线进行远程法术攻击。命中目标时，目标会受到{@damage 1d12}点闪电伤害。如果三个或更多弧线命中同一个目标，目标必须进行一次体质豁免才能避免被电击，使其受到震慑，直到下一回合开始前。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 15,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，你会为每个高于2级的法术位级别创建一个额外的弧线。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		},
+		{
+			"name": "Electric Arc",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你向你能看到的生物射出一道闪电。对目标进行远程法术攻击。命中后，目标受到{@damage 1d8} 闪电伤害，并一道闪电弧跳到你选择的另一生物身上，距离15英尺，使用相同的攻击骰，命中后造成{@damage 1d4} 闪电伤害。",
+				"这个法术的伤害在你达到5级时增加了{@dice 1d8}的主要伤害和{@damage 1d4}的次要伤害({@dice 2d8}和{@dice 2d4})，在11级时增加了{@dice 3d8}的主要伤害和{@dice 3d4}的次要伤害，以及在17级时增加了{@dice 4d8}的主要伤害和{@dice 4d4}的次要伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 15,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Power Torrent",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你释放了一股巨大的原始奥术能量，以极其强大的力量轰击了一条长60英尺、宽15英尺的直线。这个法术穿过所有障碍物、墙壁和其他非魔法屏障。区域内的所有生物受到{@damage 4d12 + 4}点力量伤害。",
+				"所有受到此伤害的生物身上的所有1级或更低级别的法术都会被解除，维持由此伤害触发的法术的{@status concentration}的体质豁免检定将以劣势进行。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 15,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或更高级别的法术位施放此法术时，伤害将每超过6级的位级增加{@dice 1d12 + 1}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Aether Storm",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤一场以太风暴，从你选择的范围内的一个点爆发出来。这场以太风暴填满一个直径为10英尺，高40英尺的圆柱体。当风暴出现时，每个在其范围内的生物会受到{@damage 8d4}的力量伤害。当一个生物移动进入或穿过风暴时，它会每移动5英尺受到{@damage 2d4}的力量伤害，并且每当一个生物结束它的回合在风暴中时，它会受到额外{@damage 8d4}的力量伤害。",
+				"在法术持续时间内的每个后续回合，作为一个奖励动作，你可以将风暴向任意方向移动15英尺，并使其发射一阵力量箭雨，寻找风暴周围15英尺内的最多3个你选择的目标。每个被瞄准的生物从力量箭雨中受到{@damage 3d4 + 3}的力量伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 14,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，风暴和闪电的伤害会每超过5级的位数增加{@dice 1d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Force Blade",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你在手中创造出一把纯净闪耀的力量之刃。在法术持续期间，作为一个动作，你可以将这把刀片挥向你能够触及的最多两个生物，每个生物造成{@damage 2d12}的力量伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 14,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用第5或第6级法术位施放时，伤害增加到{@dice 3d12}。当你使用第7级或更高级法术位施放时，伤害增加到{@dice 4d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			]
+		},
+		{
+			"name": "Aether Lance",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你聚集原始以太在你的手中，将其喷发成一道能量之矛，形成一个长30英尺、宽5英尺的直线。直线上的每个生物受到{@damage 8d4}力量伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 14,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，伤害将每超过3级的位数增加{@dice 1d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Star Dust",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你唤起一阵闪亮的力量粒子爆发，形成一个30度锥形，起源于你。在半径范围内的生物受到{@damage 3d4}的力量伤害，并且在你的下一个回合开始之前对它们进行的下一次攻击投掷获得优势。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 14,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"areaTags": [
+				"N"
+			],
+			"damageInflict": [
+				"force"
+			]
+		},
+		{
+			"name": "Seeking Orb",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你创造了一个纯粹奥术能量的微型球体，悬浮在施法范围内，并指定一个距离120英尺内的目标生物。在法术持续期间，每当轮到你的回合结束时，球体就会变得更大，并向目标生物直线移动30英尺。如果球体到达目标，它会爆炸，造成{@damage 6d4}的力量伤害，以及每轮自你施放法术以来对目标造成的额外{@damage 2d4}伤害，最多达到{@dice 10d4}。法术在造成伤害后结束。如果球体在法术结束前未到达目标，它将消失而不造成伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 14,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Ethereal Immolation",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你用看不见的虚幻力量笼罩目标，当魔法出现时会产生剧烈反应。在咒语持续期间，如果目标施放法术，它会每消耗一个法术位等级受到{@damage 1d12}的力量伤害（对戏法则为{@dice 1d12}）。如果目标在{@status concentration||concentrating}施法结束时，会受到{@damage 1d4}的力量伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 14,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Force Bolt",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你向射程内的生物或物体投掷一团奥术能量。对目标进行远程法术攻击。命中时，目标受到{@damage 2d4}的力量伤害。",
+				"这个法术的伤害在你达到5级（{@dice 4d4}），11级（{@dice 6d4}），和17级（{@dice 8d4}）时增加了{@dice 2d4}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 14,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"spellAttack": [
+				"R"
+			],
+			"damageInflict": [
+				"force"
+			]
+		},
+		{
+			"name": "Melt",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你指向一个生物或者在射程内的未被穿戴或携带的大型或者更小的物体，并试图让它融化成一滩熔渣。如果目标是一个生物，它需要进行一次体质豁免。如果未能通过，它会受到{@damage 10d10}点火焰伤害。如果通过了豁免，它会受到一半伤害。",
+				"如果目标是一个物体，它会受到{@damage 20d10}火焰伤害。如果这将其降至0点生命值，它将被熔化成一滩熔渣。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 13,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或更高级别的法术位施放此法术时，伤害会每超过6级的法术位等级增加{@dice 1d10}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Form of Fire",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你化身为元素火，散发出30英尺半径的明亮光芒，再额外照亮30英尺的暗淡光芒。直到法术结束，你获得以下效果：",
+				{
+					"type": "list",
+					"items": [
+						"你对火焰伤害免疫。",
+						"你可以穿过其他生物的空间并忽略难以通过的地形。在你的回合第一次进入另一个生物的空间时，它会受到{@damage 1d6}火焰伤害。",
+						"如果一个生物在5英尺范围内用近战攻击击中你，它会受到{@damage 1d6}火焰伤害。",
+						"你可以使用你的动作，在你选择的方向上，从你身边延伸出一条30英尺长、5英尺宽的火线。线上的每个生物必须进行一次敏捷豁免检定。未通过检定的生物会受到{@damage 6d6}火焰伤害，通过检定的生物则只受到一半伤害。",
+						"在你的回合中，如果你投掷火焰伤害，你可以使一颗火焰伤害骰子的点数最大化。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 13,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Pyroclastic Lance",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤一支炽热岩浆长矛，然后将其投掷到射程内的目标。进行一次远程法术攻击。命中后，目标受到{@damage 8d6}火焰伤害。无论命中与否，长矛随后爆炸，形成一个直径10英尺的球形区域，里面充满了密集的掩盖性火山灰，直到你的下一个回合开始。任何在火山灰云中开始他们的回合的生物必须进行一次体质豁免才能避免受到{@damage 4d6}火焰伤害并且被{@condition blinded}，直到他们的下一个回合开始。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 13,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"blinded"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，初始伤害会每超过5级的位数增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Pillar of Fire",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"在距离内的某点上，形成一个半径为5英尺、高30英尺的圆柱形火柱。圆柱内的每个生物都必须进行一次敏捷豁免检定。未通过检定的生物会受到{@damage 10d6}火焰伤害，通过检定的生物则只受到一半伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 13,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放此法术时，伤害会每超过4级的位数增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Flamethrower",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你从手中释放出一股火焰流，瞄准一条长30英尺、宽10英尺的线，将其充满持续的火焰流。在你施放法术时或在你下一个回合开始前进入该区域的任何生物必须进行一次敏捷豁免检定，失败则受到{@damage 4d6}火焰伤害，成功则减半。",
+				"在接下来的每个回合中，你可以使用你的动作释放一个具有相同效果的新火线。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 12,
+			"subschools": [
+				"arcane"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，伤害将每超过3级的法术位等级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Fire Cyclone",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"瞄准你能看到的地面一点，你引发了一个由翻腾火焰组成的旋风，填满一个半径为10英尺，高30英尺的圆柱体。",
+				"在你施放这个法术时或在一个回合内第一次进入它的生物必须进行一次力量豁免投。未通过豁免的生物会受到{@damage 3d6}火焰伤害，并被弹射15英尺向上，然后以随机确定的水平方向落地15英尺。通过豁免的生物只会受到一半伤害，并且不会被弹射。",
+				"当一个生物并非完全在旋风半径内，但在其转动开始时距离中心不超过30英尺时，它仍然感受到狂暴旋风的强烈吸引力，并且必须花费2英尺（如果它正在飞行则为3英尺）的移动来脱离旋风时每移动1英尺。",
+				"在法术持续期间，你可以花费一个动作，将旋风沿着地面向任意方向移动30英尺。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 12,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of ashes from a forest fire"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，伤害增加 {@dice 1d6}，旋风的高度以及生物被抛向上方的距离每超过3级增加5英尺。"
+					]
+				}
+			],
+			"areaTags": [
+				"Y"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"damageInflict": [
+				"fire"
+			]
+		},
+		{
+			"name": "Become Fire",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你化为一团元素之火。直到你的下一个回合开始前，你获得以下效果：",
+				{
+					"type": "list",
+					"items": [
+						"你对火焰伤害以及来自非魔法攻击的钝击、穿刺和斩击伤害具有抗性。",
+						"你可以穿过其他生物的空间并忽略艰难地形。在一个回合内第一次进入另一个生物的空间时，它会受到{@damage 1d6}火焰伤害。",
+						"在你的回合中，当你投掷火焰伤害骰时，你可以将其中一颗骰子的值最大化。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 12,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"fire"
+			]
+		},
+		{
+			"name": "Eyes of Immolation",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你的眼睛闪烁着火焰般的光芒，然后聚焦在你能看到的范围内的生物身上，引发一道火焰射出。目标生物必须进行一次敏捷豁免才能。未能通过豁免的话，它会受到{@damage 3d6}火焰伤害并着火，在每个它的回合结束时受到{@damage 1d6}伤害，直到它或者另一个在它身边5英尺范围内的生物花费一个动作来扑灭火焰。若通过了豁免，生物会受到一半伤害且不会着火。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 12,
+			"subschools": [
+				"arcane",
+				"primal"
+			],
+			"components": {
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，初始伤害将每个高于1级的法术位等级增加{@dice 1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Volcanic Burst",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你召唤地底的热力，使地下的岩石熔化并喷发成岩浆。周围10英尺半径的地面爆炸，火焰和岩浆如雨般向外喷射，覆盖20英尺半径范围。在该区域内的生物必须进行敏捷豁免检定。未通过检定的生物将受到{@damage 4d10} 钝击伤害和{@damage 4d6} 火焰伤害。如果生物位于10英尺内半径范围内，则它们还会被额外抛至空中10英尺，造成{@damage 1d6} 钝击伤害，并在落地时受到{@condition prone} 伤害。通过检定的生物只受到一半伤害，并不会受到额外影响。",
+				"中心10英尺半径的区域成为难行地形，直到被清理。该区域的每个5英尺正方形部分至少需要1分钟用手清理。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 11,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of obsidian"
+			},
+			"damageInflict": [
+				"bludgeoning",
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"areaTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Form of Stone",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你变成了石头。直到咒语结束，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你对非魔法攻击造成的钝击、穿刺和砍砍伤害具有抗性。",
+						"你可以在由土或石头构成的困难地形上移动，而无需额外消耗移动力。你可以穿过实体的土地或石头，就像穿过空气一样，并且不会使其不稳定，但你不能在那里结束移动。如果你这样做，你将被弹出到最近的未占据空间，这个法术结束，并且在你的下一个回合结束前，你将被{@condition stunned}。",
+						"你可以使用你的动作召唤石刺从地面上升起。 你周围15英尺范围内的所有生物必须进行一次敏捷豁免。 在豁免失败的情况下，生物会受到{@damage 4d8}点穿刺伤害，豁免成功则只受到一半伤害。无论如何，它们所在的空间都会变成艰难地形。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 11,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Avalanche",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你引发地面波动，触发一场岩石和石头的雪崩，向前涌动，形成一个长60英尺，宽15英尺的线。如果施法表面的倾斜度超过15度（一个中等陡峭的山坡），线的长度将加倍。被卷入滚动岩石中的生物必须进行一次敏捷豁免。未能通过豁免的生物受到{@damage 6d10} 钝击伤害，并被击倒{@condition prone}。豁免失败5点或更多的生物在其下一个回合结束前处于{@condition stunned}，而豁免失败10点或更多的生物在法术结束时被额外击倒到法术创建的线末端最近的空间。成功豁免的生物只受到一半伤害，并不受法术的其他影响。",
+				"这个法术在法术创造的线的尽头产生一个 15 英尺乘以 15 英尺的难行地形区域。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 10,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或更高级别的法术位施放此法术时，伤害会每超过6级的法术位等级增加{@dice 1d10}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Fissure",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你撕裂地面，形成一个60英尺长、5英尺宽的线，目标是至少有10英尺深的土壤、沙子或岩石区域。",
+				"在那条线上的生物必须进行一次敏捷豁免检定。如果检定失败，生物会掉入地面上突然裂开的裂缝中，被压扁后才会合拢。未通过豁免检定的生物从跌落和被压扁中受到{@damage 6d10} 钝击伤害。生物被埋在10英尺厚的瓦砾中，没有掘地速度的生物需要消耗25尺的移动速度才能从松散的瓦砾中挣脱，回到未通过豁免检定的地点。如果它们结束回合时仍被埋在瓦砾中，会受到额外{@damage 1d10} 钝击伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 10,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Burial Barrage",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你挖掘并发射出五块沉重的土块或石块，瞄准范围内的目标。你可以将它们投向一个目标或多个目标。为每个投掷的物体进行一次远程法术攻击。命中时，目标受到{@damage 1d12 + 1} 震荡伤害，如果目标是大型或更小，则被击倒{@condition prone}。作为此法术的一部分进行的攻击对{@condition prone}目标有优势，并忽略从距离大于5英尺的{@condition prone}目标进行的普通远程攻击的劣势。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 10,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，你可以每超过5级的位数投掷一个额外的物体。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Stone Coffin",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你引发了一股石头的涌动，试图将一个大型或更小的生物埋在石头中。目标必须进行一次敏捷豁免检定。如果失败，他们将变成石棺中的{@condition restrained}和{@condition blinded}。生物可以选择放弃豁免。被困在石棺中时，他们对所有来源的攻击都拥有完全掩护。石棺的护甲等级为15，有50点生命值，并对除了钝击和雷电伤害之外的所有伤害具有抗性。当法术结束或石棺的生命值降至0时，它将破碎成碎片，石棺内的生物将不再是{@condition restrained}和{@condition blinded}。",
+				"在法术持续期间，你可以使用你的奖励动作来试图压碎被棺材包裹的生物，造成{@damage 1d10} 钝击伤害。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 10,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，石棺每超过5级的等级就会获得额外的10点生命值。"
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Orbital Stones",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你从距离你不超过10英尺的地方抬起三块无生命的小型或中型石头或类似物体，使它们违背重力，围绕你缓慢旋转。当三块石头都在轨道上时，你获得三分之一掩体。只要有一块石头保持在轨道上，你获得一半掩体。",
+				"作为一个奖励动作，只要至少有一块石头在轨道上，你可以使用魔法将一块石头投向60英尺内的目标。进行远程法术攻击检定。命中后，目标受到{@damage 3d10} 钝击伤害，并向后击退5英尺。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 9,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"R"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Quick Sand",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你让你能看到的一个点为中心的半径为20英尺的区域的地面在法术持续期间变成流沙。通过该区域移动或离开的生物必须花费每移动1英尺4英尺的移动力。结束他们的回合的生物必须进行一次力量豁免检定。失败的话，他们会跌倒{@condition prone}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 9,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of sand"
+			},
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"R"
+			]
+		},
+		{
+			"name": "Seismic Wave",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你释放了一道地震波，猛烈地撞击你面前的地面，导致地面在一个30英尺的锥形范围内剧烈爆炸。在该区域接触地面的生物必须进行一次力量豁免检定。未通过检定的生物会受到{@damage 4d10} 震荡伤害并倒地{@condition prone}。通过检定的生物只会受到一半伤害且不会倒地{@condition prone}。在效果范围内的大型或更大的物体和结构会自动失败豁免检定并受到双倍伤害。地面变成难行地形，直到被清理。每个5英尺的正方形区域至少需要1分钟的时间才能用手清理干净。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 9,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，伤害会每超过3级增加{@dice 1d10}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Instant Bulwark",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you can take when a creature within range takes damage from a ranged attack or area of effect."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你制造了一堵长10英尺，高10英尺，几英寸厚的土墙，从地面上喷发出来，提供完全掩护，并阻挡任何源自墙的另一侧的伤害，直到墙被打破。这会阻挡远程攻击，以及那些以墙的另一侧为起点的范围效果（例如，半径法术的中心点或锥形或直线的源头）。",
+				"所有墙壁阻挡的伤害都应用在墙壁上，即使该伤害通常只影响生物，但只承受一次被阻挡的伤害，即使阻挡相同伤害对多个生物。墙壁有{@dice 4d10} + 你的施法调整值 的生命值，当生命值降至0时化为尘土。墙壁被摧毁后剩余的伤害按正常方式处理。如果墙壁没有被摧毁，它会在你的下一个回合开始时崩塌。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 9,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，墙壁将额外拥有{@dice 1d10}的生命值，并且每超过3级，长度增加5英尺。"
+					]
+				}
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Earth Ripple",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你让大地变形起伏，目标生物必须进行一次敏捷豁免检定，否则将遭受以下效果之一（你选择）：",
+				{
+					"type": "list",
+					"items": [
+						"它被拉入地面，受到{@damage 1d8}的钝击伤害，并将其移动速度降低到零，直到有生物花费一个动作将其挖出。",
+						"被一股地之波击飞，向你选择的方向被猛烈冲击5英尺，受到{@damage 2d8} 钝击伤害，并被击倒{@condition prone}。",
+						"被一根大地之刺刺穿，受到{@damage 4d8}穿刺伤害。"
+					]
+				}
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 9,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"bludgeoning",
+				"piercing"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Stone Fist",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你将你的手和前臂（或类似附肢）变成石头，直到你下一个回合开始。在施放咒语的过程中，你可以对你能够触及的一名生物进行近战法术攻击。命中时，目标受到{@damage 2d10} 钝击伤害。",
+				"直到你的下一个回合开始，当你受到一次攻击造成的割砍或穿刺伤害时，你可以使用你的反应来获得对该攻击的伤害抗性。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放此法术时，伤害会每超过1级的法术位等级增加{@dice 1d10}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"M"
+			]
+		},
+		{
+			"name": "Create Pit",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你选择在你能看到的泥土或天然石头区域的地面上的一个点。地面隆起，围绕着那个点打开一个半径为5英尺，深度为10英尺的坑。如果表面不够大以容纳这个坑，法术失败。在该区域内的生物必须进行一次敏捷豁免投。成功的话，它们可以移动到法术半径外5英尺。未通过豁免投的生物掉入坑底（受到{@damage 1d6} 钝击伤害并掉落{@condition prone}）。坑的边缘很粗糙，可以攀爬。坑会一直存在直到被填满。如果一个生物通过了豁免投，但无法移动5英尺，它们会掉落{@condition prone}，悬挂在坑边缘，直到它们移出坑区域或掉入其中，才能站起来。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，每个比1级更高的法术位，坑洞就会再深5英尺（最多深20英尺）。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"如果陷阱会突破另一个开口（比如下方的房间或洞穴），那么这个法术会失败，因为这意味着无法将陷阱封闭。DM对于哪些表面适用于这个法术有很大的裁量权。"
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"Y"
+			]
+		},
+		{
+			"name": "Become Stone",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你凝固成一块石头。直到你的下一个回合开始，你是{@condition petrified}。你的盔甲等级变为20，你获得10点临时生命值。法术结束时，任何剩余的临时生命值都会消失。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"miscTags": [
+				"THP",
+				"MAC"
+			]
+		},
+		{
+			"name": "Stone Forming",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你触摸石头表面或地面，并召唤石头按照你的意志塑造。你可以用石头制作任何粗略形状的小型或微型物品，包括功能简单或军用近战武器（适用于中等或更小的生物），具有魔法耐久性以抵抗破碎或断裂。",
+				"或者你可以用石头包裹你的四肢，在咒语持续期间，使你的徒手攻击造成{@damage 1d8}钝击伤害。",
+				"用这种方式制作的物品在一个小时后失去任何魔法耐久性，如果它们在那种形状下通常不会正常工作，它们会变得容易破碎。你一次可以拥有由这个战斗法术创造的三个物品或效果，当创造第四个时，最老的那个将失去其魔法耐久性并变得容易破碎。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"bludgeoning"
+			]
+		},
+		{
+			"name": "Rock Slam",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你向一个你能看到的生物投掷一块岩石。进行一次远程法术攻击。命中后，目标受到{@damage 1d10} 钝击伤害。在暴击时，目标被击倒（你选择）或向后推10英尺。",
+				"当你达到5级（{@dice 2d10}），11级（{@dice 3d10}）和17级（{@dice 4d10}）时，该法术的伤害增加了{@dice 1d10}。"
+			],
+			"source": "KibblesGenericElementalSpells",
+			"page": 8,
+			"subschools": [
+				"primal"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		}
+	]
+}

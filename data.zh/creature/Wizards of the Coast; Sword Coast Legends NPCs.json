@@ -1,0 +1,779 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SwordCoastLegendsNPCs",
+				"abbreviation": "SCL",
+				"full": "Sword Coast Legends NPCs",
+				"url": "https://dndwizards.tumblr.com/post/131500397081/sword-coast-legends-companions-as-dd-npcs",
+				"version": "",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"convertedBy": [
+					"Lucas Hiltz"
+				]
+			}
+		],
+		"dateAdded": 1563530393,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "bc231d380c"
+	},
+	"monster": [
+		{
+			"name": "Jarhild Stoneforge",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "dwarf",
+						"prefix": "shield"
+					}
+				]
+			},
+			"source": "SwordCoastLegendsNPCs",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item scale mail|phb}",
+						"{@item shield|phb}",
+						"defense fighting style"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 9",
+				"average": 25
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 12,
+			"wis": 13,
+			"cha": 10,
+			"passive": 11,
+			"cr": "2",
+			"senseTags": [
+				"D"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"save": {
+				"str": "+5",
+				"con": "+5"
+			},
+			"resist": [
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"贾希德在对毒物的救赎上有优势"
+					]
+				},
+				{
+					"name": "Improved Critical",
+					"entries": [
+						"Jarhild的武器攻击在掷出19或20的时候可以获得关键性的打击。"
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围20/60英尺，一个目标。{@h}6 ({@damage 1d6 + 3})砍击伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"isNamedCreature": true,
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"作为一个像牛一样坚韧、像石墙一样顽强的盾牌矮人，贾希尔德穿上盔甲和盾牌，为她认为的朋友而战。作为燃烧的黎明骑士团的成员，她有机会保护无辜的人，为邪恶的人伸张正义......并从中赚取一些钱财。她有智慧，有力量，有丰富的战斗策略，当她所爱的人受到威胁时，这个世界上没有什么东西能抵挡她的愤怒。",
+					"作为一名训练有素的士兵，贾希德总是准备好进行战斗，无论是在小规模战斗的前线还是在酒馆的密室。然而，在没有准备好即将开始的战斗时，她会准备好与其他坚韧不拔的战士一起踢球和吹气。她战斗力强，玩得也很卖力，谁要是对她的举止、穿着或拔剑的方式有意见，那可就惨了。作为一个面对过兽人群、击退过巨人的入侵、甚至坚守过龙的伏击的矮人，贾希德不觉得有必要向任何人解释自己。她就是她：一股不可忽视的力量。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/sword-coast-legends/images/9/93/Companions_Jarhild.png"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"handaxe|phb",
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "Hommet Shaw",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "SwordCoastLegendsNPCs",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "3d6 + 9",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 16,
+			"int": 16,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "2",
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E",
+				"I"
+			],
+			"save": {
+				"int": "+5",
+				"wis": "+2"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"霍梅特是一个3级的施法者。他的法术能力是智力（保存（%0%），（%1%）用法术攻击命中）。霍梅特准备了以下巫师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell light}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell ray of sickness}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell ray of enfeeblement}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTags": [
+				"B"
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d8})重击伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"一个年轻的巫师要想被流放出龙鞍，即著名的古怪的哈佩尔巫师的家，需要很多东西，但霍梅特-肖成功地做到了。他是一个非常有天赋的巫师，但他对细节的关注还有待提高......至少可以这么说。他很年轻，也很热心，渴望证明自己，但是，好吧，死灵法术并不是最广泛接受的魔法专业，而且很难找到一个不会对你说 \"在可怕的死亡之恨中进餐 \"的导师。当他看到有机会与英雄们一起战斗时，他把它当作一个证明自己的机会......并在交易中结交一些朋友。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/sword-coast-legends/images/3/35/Companions_Hommet.png"
+						}
+					}
+				]
+			},
+			"damageTagsSpell": [
+				"I",
+				"L",
+				"N",
+				"O"
+			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Illydia Maethellyn",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "elf",
+						"prefix": "moon"
+					}
+				]
+			},
+			"source": "SwordCoastLegendsNPCs",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 16,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"passive": 14,
+			"cr": "2",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Celestial",
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"CE",
+				"C",
+				"DR",
+				"D",
+				"E",
+				"S"
+			],
+			"save": {
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"伊莉迪亚是一个3级的施法者。她的法术能力是智慧（保存（%0%），（%1%）用法术攻击击中）。Illydia准备了以下的牧师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell identify}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell augury}",
+								"{@spell lesser restoration}",
+								"{@spell prayer of healing}",
+								"{@spell suggestion}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围150/600英尺，一个目标。{@h}7 ({@damage 1d8 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Turn Undead (Recharges after a Short or Long Rest)",
+					"entries": [
+						"伊莉迪亚展示她的神圣标志，并说了一段谴责亡灵的祷告。每个在她30英尺范围内能看到或听到她的亡灵都必须做一个智慧救赎动作。如果该生物没有成功，它就会被转化，持续1分钟或直到它受到任何伤害。被转化的生物必须在它的回合中尽量远离伊利迪亚，而且它不能自愿地移动到离她30英尺以内的空间。它也不能做出反应。对于它的行动，它只能使用 \"冲刺 \"行动，或者试图逃离一个阻止它移动的效果。如果没有地方可以移动，该生物可以使用 \"闪避 \"动作。"
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"作为Sehanine Moonbow的月精灵牧师，Illydia在她140年的时间里所看到的痛苦和损失甚至比大多数精灵一生所看到的还要多，但她对Sehanine Moonbow（月亮和梦想的女神）的信仰使她的头脑保持清醒，内心充满希望。在她永远忠诚的朋友和保镖拉雷萨的帮助下，她利用自己的弓箭天赋和女神的祝福来弥补自己过去的错误。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/sword-coast-legends/images/d/d4/Companions_Illydia.png"
+						}
+					}
+				]
+			},
+			"damageTagsSpell": [
+				"R"
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Larethar Gulgrin",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "dwarf",
+						"prefix": "gold"
+					}
+				]
+			},
+			"source": "SwordCoastLegendsNPCs",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 6",
+				"average": 19
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 10,
+			"cha": 9,
+			"passive": 10,
+			"cr": "2",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Thieves' cant"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"TC"
+			],
+			"save": {
+				"dex": "+5",
+				"int": "+4"
+			},
+			"resist": [
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"Larethar在对毒物的救赎上有优势。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当Larethar用武器攻击击中目标并在攻击卷上有优势时，或者当目标在Larethar的盟友5英尺范围内不是{@condition incapacitated}且Larethar在攻击卷上没有劣势时，会造成额外的7（{@dice 2d6}）伤害。"
+					]
+				},
+				{
+					"name": "Cunning Action/Fast Hands",
+					"entries": [
+						"Larethar在战斗中的每个回合都可以采取一个额外的行动。这个动作可以用来进行冲刺、脱离、隐藏或使用物品等动作。他也可以用这个动作来进行灵巧（灵巧）检查，并获得（%0%）的奖励，或者使用他的盗贼工具来解除陷阱或打开锁。"
+					]
+				},
+				{
+					"name": "Thief",
+					"entries": [
+						"Larethar在使用他的盗贼工具时，可以获得{@hit 7}的灵巧度检查。"
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Larethar进行了两次攻击：一次用他的匕首，一次用他的短剑。"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d4 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围80/320英尺，一个目标。{@h}4 ({@damage 1d8 + 3})穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"fluff": {
+				"entries": [
+					"一个金矮人流氓很少有机会与伊莉迪亚-梅特林这样的人同行，而拉雷萨也不会把这种荣誉视为理所当然。作为一个喜欢喝酒和放荡的卢斯坎居民，Larethar很少不说冷笑话或进行尖锐的侮辱......除了涉及伊利迪亚的时候。没有她，Larethar是个小偷，是个斗士，偶尔也是个二流人物。然而，有了她，他就可以成为一个英雄--一个冷笑话、俏皮话、有点贪婪的英雄，但还是一个英雄。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/sword-coast-legends/images/c/c6/Companions_Larethar.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"light crossbow|phb",
+				"shortsword|phb"
+			]
+		},
+		{
+			"name": "Bryn Lightfingers",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "halfling",
+						"prefix": "strongheart"
+					}
+				]
+			},
+			"source": "SwordCoastLegendsNPCs",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 6",
+				"average": 22
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 9,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"passive": 14,
+			"cr": "2",
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Halfling"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"H"
+			],
+			"save": {
+				"str": "+1",
+				"dex": "+5"
+			},
+			"resist": [
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Lucky",
+					"entries": [
+						"当布林在攻击卷、能力检查或蓄力投掷中掷出1时，她可以重新掷出骰子，并且必须使用新的骰子。"
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"布林在对被攻击者的救赎上有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Stout Resilience",
+					"entries": [
+						"布林在对毒物的救赎上有优势。"
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"布林是一个3级的施法者。她的法术能力是智慧（保存（%0%），使用法术攻击时，命中率+4）。布林有以下游侠法术准备。"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell ensnaring strike}",
+								"{@spell hunter's mark}",
+								"{@spell longstrider}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"布林做了两次攻击：一次是用她的匕首，一次是用她的短剑。"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d4 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围80/320英尺，一个目标。{@h}3 ({@damage 1d6})穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"fluff": {
+				"entries": [
+					"光指家族可能在整个大陆上并不出名，但这并不妨碍他们认为自己应该出名。光指家族是一个强心半身人的家族，总部设在沃特迪普北部的一个小村庄--红落叶，光指家族以该地区最好的碎石蛋糕而闻名。然而，当布林和她那头脑发热的弟弟贝拉米成年后，他们放弃了家族的烘烤传统，走上了一条更危险的道路。那就是冒险家的道路。",
+					"布林-光指在阿迪普森林的游侠中受训，直到她和她的队伍被艾德莱斯-维鲁斯拉赶走。她利用她的野外技能独自生存，直到她的哥哥贝拉米找到她，让她加入一个名为 \"燃烧的黎明 \"的冒险者公会。虽然她和她哥哥一样有脾气暴躁的倾向，但她的好奇心和开放的心态使她成为骑士团的重要成员。这些天来，大多数人认为她是做领导的料，只要她能控制住她的光指态度。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/sword-coast-legends/images/c/c1/Companions_Bryn.png"
+						}
+					}
+				]
+			},
+			"isNpc": true,
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"shortbow|phb",
+				"shortsword|phb"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
+			]
+		}
+	]
+}

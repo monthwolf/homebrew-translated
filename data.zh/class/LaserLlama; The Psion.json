@@ -1,0 +1,3367 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLPS",
+				"abbreviation": "LLPS",
+				"full": "The Psion",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"ProfForp#0242"
+				],
+				"color": "7B84FF",
+				"version": "2.0.1",
+				"url": "https://www.gmbinder.com/share/-MPkCSxSj0OETiEd3Pyf",
+				"targetSchema": "1.0"
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"PHB",
+				"XGE",
+				"TCE",
+				"FTD"
+			]
+		},
+		"optionalFeatureTypes": {
+			"LL:MT": "Mystic Talents"
+		},
+		"dateAdded": 1685730802,
+		"dateLastModified": 1693671517,
+		"_dateLastModifiedHash": "4a925e77cf"
+	},
+	"class": [
+		{
+			"name": "Psion",
+			"source": "LLPS",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "full",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15
+			],
+			"spellsKnownProgressionFixedByLevel": {
+				"11": {
+					"6": 1
+				},
+				"13": {
+					"7": 1
+				},
+				"15": {
+					"8": 1
+				},
+				"17": {
+					"9": 1
+				}
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Mystic Talents",
+					"featureType": [
+						"LL:MT"
+					],
+					"progression": [
+						0,
+						2,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						8,
+						8,
+						8,
+						9,
+						9,
+						9,
+						10,
+						10
+					]
+				}
+			],
+			"classSpells": [
+				"Blade Ward",
+				"Friends",
+				"Guidance",
+				"Light",
+				"Mage Hand",
+				"Magic Stone|XGE",
+				"Message",
+				"Mind Sliver|TCE",
+				"Mind Thrust|LLPS",
+				"Minor Illusion",
+				"Psionic Strike|LLPS",
+				"Spare the Dying",
+				"Sword Burst|TCE",
+				"Thaumaturgy",
+				"Toll the Dead|XGE",
+				"True Strike",
+				"Alarm",
+				"Catapult|XGE",
+				"Cause Fear|XGE",
+				"Charm Person",
+				"Command",
+				"Comprehend Languages",
+				"Detect Magic",
+				"Disguise Self",
+				"Dissonant Whispers",
+				"Expeditious Retreat",
+				"Faerie Fire",
+				"Tasha's Hideous Laughter",
+				"Id Insinuation|LLPS",
+				"Identify",
+				"Jump",
+				"Longstrider",
+				"Magic Missile",
+				"Shield",
+				"Silent Image",
+				"Sleep",
+				"Unseen Servant",
+				"Nathair's Mischief|FTD",
+				"Blindness/Deafness",
+				"Blur",
+				"Calm Emotions",
+				"Crown of Madness",
+				"Detect Thoughts",
+				"Enlarge/Reduce",
+				"Hold Person",
+				"Invisibility",
+				"Levitate",
+				"Locate Object",
+				"Mind Spike|XGE",
+				"Tasha's Mind Whip|TCE",
+				"Mirror Image",
+				"Misty Step",
+				"Phantasmal Force",
+				"See Invisibility",
+				"Suggestion",
+				"Tower of Iron Will|LLPS",
+				"Blink",
+				"Catnap|XGE",
+				"Cerebral Blast|LLPS",
+				"Clairvoyance",
+				"Enemies Abound|XGE",
+				"Fear",
+				"Feign Death",
+				"Fly",
+				"Haste",
+				"Hypnotic Pattern",
+				"Intellect Fortress|TCE",
+				"Life Transference|XGE",
+				"Major Image",
+				"Nondetection",
+				"Sending",
+				"Slow",
+				"Tongues",
+				"Water Walk",
+				"Arcane Eye",
+				"Charm Monster|XGE",
+				"Compulsion",
+				"Confusion",
+				"Dimension Door",
+				"Ego Scourge|LLPS",
+				"Freedom of Movement",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Locate Creature",
+				"Phantasmal Killer",
+				"Raulothim's Psychic Lance|FTD",
+				"Otiluke's Resilient Sphere",
+				"Bigby's Hand",
+				"Dominate Person",
+				"Dream",
+				"Far Step|XGE",
+				"Geas",
+				"Hold Monster",
+				"Legend Lore",
+				"Mislead",
+				"Modify Memory",
+				"Psychic Crush|LLPS",
+				"Scrying",
+				"Seeming",
+				"Skill Empowerment|XGE",
+				"Synaptic Static|XGE",
+				"Telekinesis",
+				"Rary's Telepathic Bond",
+				"Wall of Force",
+				"Arcane Gate",
+				"Tenser's Transformation|XGE",
+				"Eyebite",
+				"Globe of Invulnerability",
+				"Otto's Irresistible Dance",
+				"Magic Jar",
+				"Mass Suggestion",
+				"Mental Prison|XGE",
+				"Fizban's Platinum Shield|FTD",
+				"Psionic Oppression|LLPS",
+				"Scatter|XGE",
+				"True Seeing",
+				"Dream of the Blue Veil|TCE",
+				"Etherealness",
+				"Forcecage",
+				"Mirage Arcane",
+				"Plane Shift",
+				"Power Word Pain|XGE",
+				"Project Image",
+				"Reverse Gravity",
+				"Sequester",
+				"Teleport",
+				"Antimagic Field",
+				"Antipathy/Sympathy",
+				"Dominate Monster",
+				"Feeblemind",
+				"Maddening Darkness|XGE",
+				"Mind Blank",
+				"Power Word Stun",
+				"Telepathy",
+				"Astral Projection",
+				"Foresight",
+				"Imprisonment",
+				"Invulnerability|XGE",
+				"Power Word Kill",
+				"Psychic Scream|XGE",
+				"Time Stop",
+				"Weird"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"{@item leather armor|phb} and a {@item quarterstaff|phb}",
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) a {@item sling|phb}",
+					"(a) two {@item dagger|phb|daggers} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item explorers's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"leather armor|phb",
+							"quarterstaff|phb"
+						]
+					},
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							"sling|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "dagger|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Psion}",
+						"{@filter Spells Known|spells|class=Psion}",
+						"Mental Limit",
+						"{@filter Mystic Talents|optionalfeatures|feature type=LL:MT}"
+					],
+					"rows": [
+						[
+							2,
+							2,
+							"{@filter 1st|spells|level=1|class=Psion}",
+							0
+						],
+						[
+							2,
+							3,
+							"{@filter 1st|spells|level=1|class=Psion}",
+							2
+						],
+						[
+							2,
+							4,
+							"{@filter 2nd|spells|level=2|class=Psion}",
+							3
+						],
+						[
+							3,
+							5,
+							"{@filter 2nd|spells|level=2|class=Psion}",
+							3
+						],
+						[
+							3,
+							6,
+							"{@filter 3rd|spells|level=3|class=Psion}",
+							4
+						],
+						[
+							3,
+							7,
+							"{@filter 3rd|spells|level=3|class=Psion}",
+							4
+						],
+						[
+							3,
+							8,
+							"{@filter 4th|spells|level=4|class=Psion}",
+							5
+						],
+						[
+							3,
+							9,
+							"{@filter 4th|spells|level=4|class=Psion}",
+							5
+						],
+						[
+							3,
+							10,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							6
+						],
+						[
+							4,
+							10,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							6
+						],
+						[
+							4,
+							11,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							7
+						],
+						[
+							4,
+							11,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							7
+						],
+						[
+							4,
+							12,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							8
+						],
+						[
+							4,
+							12,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							8
+						],
+						[
+							4,
+							13,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							8
+						],
+						[
+							4,
+							13,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							9
+						],
+						[
+							4,
+							14,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							9
+						],
+						[
+							4,
+							14,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							9
+						],
+						[
+							4,
+							15,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							10
+						],
+						[
+							4,
+							15,
+							"{@filter 5th|spells|level=5|class=Psion}",
+							10
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Psionics|Psion|LLPS|1|LLPS",
+				{
+					"classFeature": "Psionic Awakening|Psion|LLPS|1|LLPS",
+					"gainSubclassFeature": true
+				},
+				"Harmonious Recovery|Psion|LLPS|2|LLPS",
+				"Mystic Talents|Psion|LLPS|2|LLPS",
+				{
+					"classFeature": "Awakening Feature|Psion|LLPS|3|LLPS",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Psion|LLPS|4|LLPS",
+				{
+					"classFeature": "Awakening Feature|Psion|LLPS|6|LLPS",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Psion|LLPS|8|LLPS",
+				"Consumptive Power|Psion|LLPS|10|LLPS",
+				"6th-level Interior Gate|Psion|LLPS|11|LLPS",
+				"Ability Score Improvement|Psion|LLPS|12|LLPS",
+				"7th-level Interior Gate|Psion|LLPS|13|LLPS",
+				{
+					"classFeature": "Awakening Feature|Psion|LLPS|14|LLPS",
+					"gainSubclassFeature": true
+				},
+				"8th-level Interior Gate|Psion|LLPS|15|LLPS",
+				"Ability Score Improvement|Psion|LLPS|16|LLPS",
+				"9th-level Interior Gate|Psion|LLPS|17|LLPS",
+				{
+					"classFeature": "Awakening Feature|Psion|LLPS|18|LLPS",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Psion|LLPS|19|LLPS",
+				"Limitless|Psion|LLPS|20|LLPS"
+			],
+			"subclassTitle": "Psionic Awakening",
+			"fluff": [
+				{
+					"type": "section",
+					"name": "Psion",
+					"page": 1,
+					"source": "LLPS",
+					"entries": [
+						"当这位年迈的人类看着他的学徒挣扎着用意念举起那块小石头时，他回想起自己的青年时代，以及为解锁自己的超能力所花费的多年训练。在周游世界后，他意识到真正的启示只能从内心找到，于是他退隐到他所称之为家的洞穴中。随着他剩下的岁月越来越少，他收了眼前的年轻小伙子为徒，传授他所学到的一切。",
+						"因为她潜在的超能力，这位年轻的精灵在出生时就被选中，被塑造成完美的刺客。当她将最新的目标牢牢地压在身下时，男爵发出了一声轻轻的呼喊，一道纯粹的超能力之刃刺穿了他的心脏。第二天早晨，男爵的卫兵们会发现他已经死了，尽管他的突然死亡原因将永远成为一个谜。",
+						"年轻的矮人逃进森林，心中充满了对自己所做之事的恐惧。在他记忆中的很长一段时间里，他心中一直有{@i something}，他努力压抑着。那天早晨，在一时的软弱中，他的注意力松懈了，一股狂野的精神力量从他体内爆发出来。他醒来时，家园已经变成了废墟，他的家人被埋在废墟中。他心底深处，他一直知道这股力量终将挣脱。他决定在荒野中过着隐士的生活，以免再伤害他人。",
+						{
+							"type": "entries",
+							"name": "Wondrous Inner Power",
+							"page": 1,
+							"entries": [
+								"无论是通过多年的实践，还是一代人中难得一见的天赋，（Psions）（异能者）学会用他们惊人的心灵力量操纵世界。借助内在的神秘力量，他们可以在不说话的情况下进行交流，移动物体，改变自己的身体，甚至施展法术。（Psions）（异能者）仅依靠对自己心灵的掌握，可以完成被认为是不可能的壮举，即使是最博学的巫师和虔诚的牧师也无法做到。对于（Psions）（异能者）来说，他们可以在没有外部力量帮助的情况下创造奇迹，这是一种巨大的骄傲。",
+								"由于他们的潜力，（Psions）通常被普通民众误解和害怕。如果他们不学会控制自己的力量，他们奇特的能力可能会导致他们被周围的人排斥和憎恨。大多数（Psions）只在必要时展示他们的力量，并且不愿轻易信任他人。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Master & Apprentice",
+							"page": 1,
+							"entries": [
+								"如果他们幸运的话，潜在的灵能者会被一位大师发现，并被带离家园，以独自磨练他们的灵能力。无论他们对生活持何种哲学观，每位灵能者都将这视为自己的神圣职责，有朝一日接受具有灵能天赋的学徒，并教导他们控制自己的力量，传授一切他们自己所学到的知识。",
+								"一位（Psion）的导师以及他们的训练方式对他们的能力性质有着巨大影响。对于一些人来说，他们的天赋是通过多年的练习和冥想来磨练的。其他人则接受训练，利用他们的神秘能力将自己的身体变形成致命的武器。对于那些从未被导师发现或试图扼杀自己力量的少数人来说，他们面临着野蛮的超能能量爆发，可能会造成毁灭性后果。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating Your Psion",
+							"page": 1,
+							"entries": [
+								"在创建你的灵能者时，考虑你是如何首次发现自己的超能力的。是在纯情感的瞬间吗？还是通过平静的冥想意识到自己的力量？是有一次神秘的经历唤醒了你内心沉睡的某种东西吗？无论你的经历是什么，第一次灵能者意识到自己心灵的真正潜力将对他们如何看待和运用自己的力量产生持久影响。",
+								"另外，考虑一下你的灵能大师。是另一位先知将你收为徒弟，教导你控制你那神奇的力量吗？还是你自己学会驾驭这种神秘的内在力量？你对自己的灵能天赋有什么感觉？是一种巨大的骄傲吗？是一种让你与普通人区分开来的东西吗？还是你认为这份天赋是一种需要隐藏，并只在最危急情况下使用的诅咒？",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"page": 1,
+									"entries": [
+										"你可以按照以下建议快速创建一个感应师。首先，将智力设为最高能力值，其次是敏捷。其次，选择{@background hermit}背景。第三，选择{@spell message}和{@spell mind thrust|LLPS}的零级咒语，以及1级法术{@spell command}和{@spell dissonant whispers}。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Psionics",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 2,
+			"level": 1,
+			"entries": [
+				"你已经唤醒了你心灵中奇妙的超能力潜力。从1级开始，这种超能力让你能够施展法术。查看法术施放规则的{@book Player's Handbook|PHB|10}，以及本职业末尾的{@filter Psion spell list|spells|class=Psion}。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"page": 2,
+					"entries": [
+						"在1级时，你可以选择了解两个{@filter Psion cantrips|spells|level=0|class=Psion}。你将在4级和10级时学会额外的一种念能0级法术，如同在念能者表格的已知0级法术栏中所示。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Psi Points",
+					"page": 2,
+					"entries": [
+						"你的心灵异能力由一组灵能点表示。你拥有的灵能点数等于1 + 你的先知（Psion）等级。要施展你所知道的先知法术之一，你必须消耗与该法术等级相等的灵能点数（对于零级法术则为0），每当你完成一次短休或长休时，你会恢复所有已消耗的灵能点数。",
+						"例如，作为一名3级（Psion），你可以通过花费2点灵能点，在2级上施展法术{@spell detect thoughts}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mental Limit",
+					"page": 2,
+					"entries": [
+						"你的（Psion）（等级）限制了你可以用（psionics）施展的法术的效力。这个限制体现在（Psion Table）的（Mental Limit）列中。如果一个（Psion）职业特性受到你的（Mental Limit）的限制，你不能消耗比施展一个等级为你（Mental Limit）的法术更多的（Psi Points）。",
+						"例如，一名5级（5th level）灵能师（Psion）只能学习和施展3级或更低级别的灵能师法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st-level and Higher",
+					"page": 3,
+					"entries": [
+						"在1级时，你可以从本职业的法术列表中选择两个1级法术。Psion表中的\"已知法术\"栏显示了你何时可以学习更多Psion法术。这些法术中的每一个必须等于或低于你的精神极限等级，如Psion表所示。例如，当你达到本职业的3级时，你可以学习一个新的1级或2级Psion法术。",
+						"当你获得一级先知（Psion）时，你可以用你选择的另一个先知（Psion）法术替换你已知的一个先知（Psion）法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 3,
+					"entries": [
+						"智力是你的（Psion）法术的施法能力，因为你的魔法源自你的心灵力量。当一个法术提到你的施法能力时，你使用你的智力。当你为（Psion）法术设置豁免 DC 或进行攻击骰时，你也使用你的智力修正值。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"page": 3,
+					"entries": [
+						"你的思维是你的（Psion）法术的施法焦点。你必须有一只空手来施放需要手势或物质组件的法术，你仍然必须提供任何被消耗或需要金币成本的物质组件。",
+						"当你用你的灵能施展一个法术时，你会展现出明显的变化。无论是你的眼睛闪耀着异界远境的光芒，还是你的身体部分融入了星界，生物们都会意识到你正在使用你的灵能，除非有某个特性另有说明。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Psionic Awakening",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"超能力，虽然总是源自内心，但会在一个头脑中觉醒，这取决于训练或缺乏训练。在1级时，选择一个最能代表你的导能者的超能觉醒：共情者，启蒙者，不朽者，异乡者，或者狂野者。",
+				"你的超能觉醒在1级时赋予你特性，并在你达到3级、6级、14级和18级时再次赋予特性。",
+				{
+					"type": "entries",
+					"name": "Awakening Spells",
+					"page": 3,
+					"entries": [
+						"每次灵能觉醒都会有一个法术清单，你在觉醒描述中指定的灵能师等级时学会这些法术。这些觉醒法术对你来说算作灵能师法术。它们不计入你已知法术的总数，你在升级时不能更换你的觉醒法术。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Awakening Feature",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 3,
+			"level": 3,
+			"entries": [
+				"在3级时，你获得了由你的灵能觉醒（Psionic Awakening）赋予的特性。"
+			]
+		},
+		{
+			"name": "Awakening Feature",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 3,
+			"level": 6,
+			"entries": [
+				"在第(%num%)级，你获得了由你的灵能觉醒赋予的特性。"
+			]
+		},
+		{
+			"name": "Awakening Feature",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 3,
+			"level": 14,
+			"entries": [
+				"在14级时，你获得了由你的心灵觉醒（Psionic Awakening）赋予的特性。"
+			]
+		},
+		{
+			"name": "Awakening Feature",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 3,
+			"level": 18,
+			"entries": [
+				"在18级时，你获得了由你的灵能觉醒（Psionic Awakening）赋予的特性。"
+			]
+		},
+		{
+			"name": "Harmonious Recovery",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 3,
+			"level": 2,
+			"entries": [
+				"从2级开始，你可以在你的回合使用一个奖励动作来清空你的头脑，并恢复一个等于你智力调整值的已消耗的灵能点数（最少为1）。（Intelligence）",
+				"使用此特性后，你必须完成一次长休才能再次使用。当你在这个职业中达到11级时，你可以在每次长休之间使用此特性两次。"
+			]
+		},
+		{
+			"name": "Mystic Talents",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 3,
+			"level": 2,
+			"entries": [
+				"在训练的宁静中，每个超能力者的心灵都会显现出独特的能力，被称为{@filter Mystic Talents|optionalfeatures|feature type=LL:MT}。在2级时，你可以从本职业末尾列表中选择两个{@filter Mystic Talents|optionalfeatures|feature type=LL:MT}。随着你获得超能力者等级，你将学会额外的天赋，如超能力者表中的秘术天赋栏所示。",
+				"每当你在这个职业中升级时，你可以选择你已掌握的一个（Mystic Talents）并用你符合条件的另一个天赋替换它。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用这个特性时不能将你的任何一个能力值提高到20以上。",
+				"如果你的DM允许使用专长，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与通常一样，使用此特性不能将你的任何一个能力值提高到20以上。",
+				"如果你的DM允许使用专长，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用这个特性时不能将你的任何一个能力值提高到20以上。",
+				"如果你的DM允许使用专长，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用这个特性时不能将你的任何一个能力值提高到20以上。",
+				"如果你的DM允许使用专长，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，你不能通过这个特性将你的任何一个能力值提高到20以上。",
+				"如果你的DM允许使用专长，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Consumptive Power",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 10,
+			"entries": [
+				"在紧急情况下，你可以动用生命力来显现超能力。从10级开始，每当你消耗灵能点来施展（Psion）法术或使用（Psion）特性时，你可以代替消耗你的生命值。当你这样做时，将你当前和最大生命值减少相当于你通常消耗的灵能点数的两倍。这种减少无法以任何方式减少。这个特性导致的最大生命值减少会在你完成一次长休后恢复正常。"
+			]
+		},
+		{
+			"name": "6th-level Interior Gate",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 11,
+			"entries": [
+				"即使是一名心灵先知（Psion）的觉醒思维也有更多待解锁的极限，被称为内在之门。在11级时，你解锁了你心灵中的第一个内在之门，这使你可以学习一个{@filter 6th-level Psion spell|spells|level=6|class=Psion}。你可以在不消耗灵能点的情况下，以6级施展这个法术一次。一旦你这样做了，你必须完成一次长休才能再次这样做。",
+				"在特定等级时，您将解锁越来越强大的内部之门，使您能够学习并施展更高等级的（Psion）法术，但仍受到相同的限制。在13级时获得一个7级（Psion）法术，在15级时获得一个8级（Psion）法术，最终在17级时获得一个9级（Psion）法术。",
+				"当你获得一级先知时，你可以用另一个相同等级的先知法术替换一个内在之门法术。"
+			]
+		},
+		{
+			"name": "7th-level Interior Gate",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 13,
+			"entries": [
+				"在13级时，你解锁了你心灵中的第二个内部之门，这使你可以学习一个{@filter 7th-level Psion spell|spells|level=7|class=Psion}。你可以在7级时施展这个法术一次，而不消耗灵能点。一旦你这样做了，你必须完成一次长休才能再次这样做。",
+				"当你获得一级先知时，你可以用另一个相同等级的先知法术替换一个内在之门法术。"
+			]
+		},
+		{
+			"name": "8th-level Interior Gate",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 15,
+			"entries": [
+				"在15级时，你解锁了你心灵中的第三个内门，这使你可以学习一个{@filter 8th-level Psion spell|spells|level=8|class=Psion}。你可以在8级时施展这个法术一次，而不需要消耗灵能点。一旦你这样做了，你必须完成一次长休才能再次这样做。",
+				"当你获得一级先知时，你可以用另一个相同等级的先知法术替换一个内在之门法术。"
+			]
+		},
+		{
+			"name": "9th-level Interior Gate",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 17,
+			"entries": [
+				"在第17级时，你解锁了你心灵中最后一个内部之门，这使你可以学习一个{@filter 9th-level Psion spell|spells|level=9|class=Psion}。你可以在9级时施展这个法术一次，而不需要消耗灵能点。一旦你这样做了，你必须完成一次长休才能再次这样做。",
+				"当你获得一级先知时，你可以用另一个相同等级的先知法术替换一个内在之门法术。"
+			]
+		},
+		{
+			"name": "Limitless",
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"page": 4,
+			"level": 20,
+			"entries": [
+				"你的身体只是你完全觉醒的心灵的简单容器。在20级时，你的超能力充满了你的身体，使你对钝击、穿刺、精神和挥砍伤害具有抗性。你不再衰老，对所有疾病、毒素伤害和{@condition poisoned}状态免疫。",
+				"此外，你对于你的超能力已经获得了如此的控制，以至于你可以在进行其他动作的同时冥想并恢复你的精神储备。当你进行轻松活动时，比如以正常速度旅行、进食喝水、阅读书籍或与其他生物交谈时，你每分钟恢复1点已用的灵能点。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Celerity I",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"精神力量掌握者使用他们的心灵神秘力量，以惊人的速度移动，增强他们的反应能力，并克服可能阻碍他们前进的任何障碍。",
+				"你的行走速度增加10英尺，并且你可以在你的回合中将{@action Dash}动作作为一个奖励动作。"
+			]
+		},
+		{
+			"name": "Celerity II",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你的行走速度再增加5英尺，并且当你{@action Dash}时，对你发动的机会攻击具有劣势。(opportunity attacks)"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Celerity Ⅰ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Celerity III",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你的行走速度额外增加5英尺。此外，当你{@action Dash}时，你忽略所有{@quickref difficult terrain||3}的影响，并且在该回合的移动中可以沿着垂直表面和液体移动而不会摔倒。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Celerity Ⅰ, ⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Celerity IV",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"当你进行敏捷豁免投掷以减少法术或效果造成的伤害时，如果你成功通过豁免，你将不会受到伤害，如果你失败，则只会受到一半的伤害。",
+				"此外，当你进行敏捷检定或豁免投掷时，你可以使用你的智力分数代替敏捷分数。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 16,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Celerity Ⅰ, ⅠⅠ, ⅠⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Iron Durability I",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"掌握铁之坚韧的先知使用他们心灵的神秘力量来增强他们的身体形态。虽然他们可能看起来正常，但他们和铁一样坚固和有弹性。",
+				"只要你没有穿戴盔甲或使用盾牌，你的护甲等级等于13 + 你的智力调整值。"
+			]
+		},
+		{
+			"name": "Iron Durability II",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"作为一个奖励动作，你可以花费1点灵能点数，使自己获得临时生命值，数值等同于你的智力调整值（最少为1点临时生命值）。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Iron Durability Ⅰ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Iron Durability III",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"每当你受到伤害时，你可以使用你的反应来消耗3点灵能点，并获得对触发伤害类型的抗性，直到你的下一个回合开始。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Iron Durability Ⅰ, ⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Iron Durability IV",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"每当你进行豁免投掷时，你的投掷结果会获得一个等同于你智力调整值的加值（最低为+1）。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 16,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Iron Durability Ⅰ, ⅠⅠ, ⅠⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Metamorphosis I",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"掌握《形体变异》的先知使用他们心灵的神秘力量来操纵他们身体的大小和形状。",
+				"这个天赋的变形持续10分钟，你需要像专注于一个法术一样专注于它。",
+				"你学会了{@spell psionic strike|LLPS}战斗法术，当你施展{@spell psionic strike|LLPS}时，你可以使用你的智力调整值代替力量或敏捷调整值进行攻击和伤害骰投掷。"
+			]
+		},
+		{
+			"name": "Metamorphosis II",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"作为一个奖励动作，你可以消耗1点灵能点来进行转化，变成大型或者微型，获得相应的好处：",
+				{
+					"type": "entries",
+					"name": "Large",
+					"entries": [
+						"你获得临时生命值，数值等同于你的先知（Psion）等级加上你的智力调整值，你的攻击范围增加5英尺，且你的近战攻击在命中时额外造成{@dice 1d4}伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tiny",
+					"entries": [
+						"你在敏捷度({@skill Stealth})检定上有优势，并且可以在不挤压的情况下通过6英寸的缝隙。"
+					]
+				}
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Metamorphosis Ⅰ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Metamorphosis III",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"作为一个奖励动作，你可以花费3点灵能点来变身，就好像你对自己施放了{@spell polymorph}法术一样。在这种变身状态下，你保留你的心智能力分数和个性。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Metamorphosis Ⅰ, ⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Metamorphosis IV",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"作为一个奖励动作，你可以消耗5点灵能点来进行转化，变成巨大或微小，获得以下好处：",
+				{
+					"type": "entries",
+					"name": "Huge",
+					"entries": [
+						"你获得临时生命值，数值等同于你的先知等级的两倍加上你的智力修正，你的攻击距离增加10英尺，你的近战攻击额外造成{@dice 2d6}伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Diminutive",
+					"entries": [
+						"你在敏捷度检定中获得+10的加值，对你进行的攻击有劣势，并且你可以在不挤压的情况下通过1英寸的缝隙。当你是微小生物时，你太小而无法进行武器攻击。"
+					]
+				}
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 16,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Metamorphosis Ⅰ, ⅠⅠ, ⅠⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Precognition I",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"精神力量者掌握预知能力，利用他们的心灵神秘力量获得对不远的未来的洞察，并利用这些洞察来更好地保护自己免受攻击。",
+				"除非你是{@condition unconscious}睡着了，或者{@condition incapacitated}，否则你不能被惊讶，你的先攻骰获得一个等同于你智力调整值的加值（最低为+1）。"
+			]
+		},
+		{
+			"name": "Precognition II",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"当你被攻击时，你可以投掷一个{@dice d4}，并将结果加到你的护甲等级上，用来对抗触发攻击，有可能将一次命中变成未命中。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Precognition Ⅰ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Precognition III",
+			"source": "LLPS",
+			"page": 10,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"作为你的回合的一个奖励动作，你可以花费3点灵能点进入一个提升的预知状态，持续1分钟。在这种状态下，针对你的攻击不能获得优势，并且会心一击变成普通命中。你必须像专注于一个法术一样专注于这个能力。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Precognition Ⅰ, ⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Precognition IV",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"当你投掷先攻骰时，你可以在任何其他生物行动之前进行一次特殊回合。你可以使用一个动作，奖励动作，或者移动你的速度，而不会引发机会攻击。",
+				"在你处于增强的预知状态时，所有针对你的攻击都具有劣势。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 16,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Precognition Ⅰ, ⅠⅠ, ⅠⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Restoration I",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"在超能力者中，掌握了恢复术的人是一种罕见的天赋，他们利用心灵的神秘力量通过意志力来激发自身和他人的愈合过程。",
+				"你学会了{@spell spare the dying} cantrip。它不计入你已知cantrip的总数。当你施展{@spell spare the dying}时，它的射程为30英尺。"
+			]
+		},
+		{
+			"name": "Restoration II",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你拥有一个治疗能量池，可以恢复相当于你（Psion）等级五倍的生命值。作为一个动作，你可以触摸一个生物，并从能量池中汲取力量，恢复的生命值数量最多不超过池中剩余的最大值。你不能治疗不死生物或构造体。你的治疗能量池在你完成一次长休后重新填满。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Restoration Ⅰ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Restoration III",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"作为一个动作，你可以触摸一个愿意的生物，并消耗2点灵能点来结束以下其中一种影响它的状态：{@condition blinded}，{@condition charmed}，{@condition deafened}，{@condition frightened}，{@condition poisoned}，或{@condition stunned}。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Restoration Ⅰ, ⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Restoration IV",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"作为一个动作，你可以触摸一名在过去一分钟内死亡的生物，并消耗3点灵能点立即使其复活，生命值为1点。这个能力对于死于老年或自然原因的生物无效。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 16,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Restoration Ⅰ, ⅠⅠ, ⅠⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Telekinesis I",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"被认为是一名先知能够掌握的最纯粹的天赋，那些掌握了念动力的人利用他们的思维神秘地操纵物体和生物。",
+				"你学会了{@spell mage hand}战斗法术，当你施展它时，无需提供口头或手势成分。你的{@spell mage hand}是隐形的，可以提起重量等于你智力调整值的10倍（最低为10磅）。"
+			]
+		},
+		{
+			"name": "Telekinesis II",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你可以同时显现两个{@spell mage hand}实例，只要它们保持在彼此之间不超过30英尺的范围内。同时显现两个{@spell mage hand||mage hands}需要你集中注意力。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Telekinesis Ⅰ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Telekinesis III",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你学会{@spell telekinesis}，但这不会计入你已知法术的总数。如果你已经知道这个法术，你可以学会另一个你选择的（Psion）法术。当你施展它时，你无需提供语言或手势成分。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Telekinesis Ⅰ, ⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Telekinesis IV",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你可以随意施放{@spell telekinesis}，而无需消耗灵能点。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 16,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Telekinesis Ⅰ, ⅠⅠ, ⅠⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Telepathy I",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"精神力量者掌握了心灵感应，利用他们的心灵神秘力量与其他生物进行心灵沟通。有些人甚至可以将这种力量武器化，对敌人进行心灵攻击。",
+				"你可以与你能看到的任何生物进行60英尺内的心灵交流。你不需要分享一种语言，但目标必须至少会说一种语言才能回应。你一次只能与一个生物交流。"
+			]
+		},
+		{
+			"name": "Telepathy II",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你的感应范围扩大至120英尺。作为一个动作，你可以建立一个心灵网络，连接你和数量等于你的智力调整值的生物，持续1小时。只要这些生物在你的感应范围内，它们可以在心灵上互相交流。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Telepathy Ⅰ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Telepathy III",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你的心灵感应范围扩展到1英里。要与你看不见的生物建立心灵联系，你必须先与它们建立过心灵联系。",
+				"你也可以通过心灵传达方式完成你施展的任何（Psion）法术的口头组成部分。目标会在他们的脑海中以你的声音听到法术的口头组成部分。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Telepathy Ⅰ, ⅠⅠ"
+					]
+				}
+			]
+		},
+		{
+			"name": "Telepathy IV",
+			"source": "LLPS",
+			"page": 11,
+			"featureType": [
+				"LL:MT"
+			],
+			"entries": [
+				"你的心灵感应范围是你所在平面的整个范围。此外，你可以形成一个心灵网络，连接你自己和与你的（Psion）等级相同数量的生物。",
+				"如果你的心灵感应网络中的生物总数超过1 + 你的智力调整值，你必须像专注于一个法术一样专注于这个网络。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 16,
+						"class": {
+							"name": "Psion",
+							"source": "LLPS",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Telepathy Ⅰ, ⅠⅠ, ⅠⅠⅠ"
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Mind Thrust",
+			"source": "LLPS",
+			"page": 13,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你用一股灵能力量向范围内的生物发动攻击。对目标进行远程法术攻击。命中后，目标受到{@dice 1d12}点魔法钝击伤害。",
+				"这个法术的伤害在你达到5级（{@dice 2d12}），11级（{@dice 3d12}）和17级（{@dice 4d12}）时增加了{@dice 1d12}。"
+			],
+			"scalingLevelDice": {
+				"label": "magical bludgeoning damage",
+				"scaling": {
+					"1": "1d12",
+					"5": "2d12",
+					"11": "3d12",
+					"17": "4d12"
+				}
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Psionic Strike",
+			"source": "LLPS",
+			"page": 13,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "an empty hand"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"作为一次徒手攻击的一部分，你在手中显现出一把灵能之刃。命中时，目标受到{@dice 1d6} + 你的力量修正值的精神伤害，代替你徒手攻击的常规伤害。在攻击结束时，你的手立即恢复正常外观。",
+				"这个法术的伤害骰在达到5级（{@dice 1d8}）、11级（{@dice 1d10}）和17级（{@dice 1d12}）时会增加。"
+			],
+			"scalingLevelDice": {
+				"label": "psychic damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "1d8",
+					"11": "1d10",
+					"17": "1d12"
+				}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Id Insinuation",
+			"source": "LLPS",
+			"page": 13,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你释放出目标生物内部的冲突欲望，削弱其做出决策的能力。它必须成功通过一次感知豁免才能避免成为{@condition incapacitated}。",
+				"在它的每个回合结束时，以及每次受到伤害时，目标可以进行另一次感知豁免投掷。在豁免失败时受到{@damage 1d6}点的精神伤害，并且在豁免成功时，法术结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，你可以为每个高于1级的法术位级别额外选择一个生物作为目标。当你选择它们作为目标时，这些生物必须彼此之间距离不超过30英尺。"
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		},
+		{
+			"name": "Tower of Iron Will",
+			"source": "LLPS",
+			"page": 13,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when you are forced to make an Intelligence, Wisdom, or Charisma saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你通过不起眼、重复的思维口头禅来保护你的心灵，以更好地抵抗心灵攻击。直到你的下一个回合开始之前，你在所有智力、感知和魅力豁免检定上获得优势，并且对精神伤害获得抗性。"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Cerebral Blast",
+			"source": "LLPS",
+			"page": 13,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你的思维在一个30英尺的锥形范围内释放出一股压倒性力量的心灵冲击。在这个法术范围内的每个生物必须进行一次力量豁免投骰。如果未通过检定，生物会受到{@damage 5d8}点魔法钝击伤害，并被从你身边推开20英尺，然后摔倒{@condition prone}。如果通过检定，生物会受到一半伤害并保持原位。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放这个法术时，魔法重击伤害会每超过3级的法术位等级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Ego Scourge",
+			"source": "LLPS",
+			"page": 13,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你袭击了你能看到范围内的生物的思维，攻击它的自我意识。目标必须成功进行一次智力豁免才能避免在攻击检定和能力检定上获得劣势，并且无法施放法术。在每个回合结束时，目标可以重复进行豁免才能。",
+				"成功豁免后，此效果在目标身上结束。"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Psychic Crush",
+			"source": "LLPS",
+			"page": 13,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你对一只生物施加了全部意志力。目标必须进行一次力量豁免，失败则受到{@damage 5d8}的力量伤害，成功则减半。在每个回合结束时，它必须重复进行豁免检定。在豁免失败时受到{@damage 2d8}的力量伤害，豁免成功则法术结束。",
+				"如果这个法术将一只生物的生命值降至0，它们会被压缩成一个拳头大小的球。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放此法术时，初始力量伤害将每超过5级的法术位等级增加{@dice 1d8}。"
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Psionic Oppression",
+			"source": "LLPS",
+			"page": 13,
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你用超能力压倒了你能看到范围内的一只生物的思维。目标必须进行一次智力豁免才能。未通过豁免的话，它会受到{@damage 12d6}点的精神伤害并且在1分钟内处于{@condition stunned}状态。若通过了豁免，目标会受到一半伤害且不会被{@condition stunned}。",
+				"目标{@condition stunned}可以在每个回合结束时重复豁免扑克牌，成功则效果结束。"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Empath",
+			"page": 4,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"shortName": "Empath",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"charm person"
+						],
+						"3": [
+							"calm emotions"
+						],
+						"5": [
+							"fear"
+						],
+						"7": [
+							"charm monster|xge"
+						],
+						"9": [
+							"dominate person"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"charm person",
+				"calm emotions",
+				"fear",
+				"charm monster|xge",
+				"dominate person"
+			],
+			"subclassFeatures": [
+				"Empath|Psion|LLPS|Empath|LLPS|1|LLPS",
+				"Emotional Flood|Psion|LLPS|Empath|LLPS|3|LLPS",
+				"Mantle of Calm|Psion|LLPS|Empath|LLPS|6|LLPS",
+				"Empathic Control|Psion|LLPS|Empath|LLPS|14|LLPS",
+				"Ascended Empath|Psion|LLPS|Empath|LLPS|18|LLPS"
+			]
+		},
+		{
+			"name": "Enlightened",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"shortName": "Enlightened",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"catapult|xge"
+						],
+						"3": [
+							"levitate"
+						],
+						"5": [
+							"slow"
+						],
+						"7": [
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"wall of force"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"catapult|xge",
+				"levitate",
+				"slow",
+				"otiluke's resilient sphere",
+				"wall of force"
+			],
+			"subclassFeatures": [
+				"Enlightened|Psion|LLPS|Enlightened|LLPS|1|LLPS",
+				"Mystical Precision|Psion|LLPS|Enlightened|LLPS|3|LLPS",
+				"Focused Psionics|Psion|LLPS|Enlightened|LLPS|6|LLPS",
+				"Telekinetic Flight|Psion|LLPS|Enlightened|LLPS|14|LLPS",
+				"Ascended Form|Psion|LLPS|Enlightened|LLPS|18|LLPS"
+			]
+		},
+		{
+			"name": "Immortal",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"shortName": "Immortal",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"jump"
+						],
+						"3": [
+							"blur"
+						],
+						"5": [
+							"haste"
+						],
+						"7": [
+							"freedom of movement"
+						],
+						"9": [
+							"mislead"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"jump",
+				"blur",
+				"haste",
+				"freedom of movement",
+				"mislead"
+			],
+			"subclassFeatures": [
+				"Immortal|Psion|LLPS|Immortal|LLPS|1|LLPS",
+				"Psionic Smite|Psion|LLPS|Immortal|LLPS|3|LLPS",
+				"Extra Attack|Psion|LLPS|Immortal|LLPS|6|LLPS",
+				"Immortal Will|Psion|LLPS|Immortal|LLPS|14|LLPS",
+				"Phase Walk|Psion|LLPS|Immortal|LLPS|18|LLPS"
+			]
+		},
+		{
+			"name": "Outsider",
+			"page": 7,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"shortName": "Outsider",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"arms of hadar"
+						],
+						"3": [
+							"spider climb"
+						],
+						"5": [
+							"hunger of hadar"
+						],
+						"7": [
+							"summon aberration|tce"
+						],
+						"9": [
+							"contact other plane"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"arms of hadar",
+				"spider climb",
+				"hunger of hadar",
+				"summon aberration|tce",
+				"contact other plane"
+			],
+			"subclassFeatures": [
+				"Outsider|Psion|LLPS|Outsider|LLPS|1|LLPS",
+				"Alien Evolution|Psion|LLPS|Outsider|LLPS|3|LLPS",
+				"Extra Attack|Psion|LLPS|Outsider|LLPS|6|LLPS",
+				"Psionic Control|Psion|LLPS|Outsider|LLPS|6|LLPS",
+				"Eldritch Rift|Psion|LLPS|Outsider|LLPS|14|LLPS",
+				"Glimpse Beyond the Veil|Psion|LLPS|Outsider|LLPS|18|LLPS"
+			]
+		},
+		{
+			"name": "Wilder",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"shortName": "Wilder",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"tasha's hideous laughter"
+						],
+						"3": [
+							"crown of madness"
+						],
+						"5": [
+							"cerebral blast|llps"
+						],
+						"7": [
+							"confusion"
+						],
+						"9": [
+							"synaptic static|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"tasha's hideous laughter",
+				"crown of madness",
+				"cerebral blast|llps",
+				"confusion",
+				"synaptic static|xge"
+			],
+			"subclassFeatures": [
+				"Wilder|Psion|LLPS|Wilder|LLPS|1|LLPS",
+				"Psionic Burst|Psion|LLPS|Wilder|LLPS|3|LLPS",
+				"Mental Force|Psion|LLPS|Wilder|LLPS|6|LLPS",
+				"Mental Torrent|Psion|LLPS|Wilder|LLPS|14|LLPS",
+				"Channeled Chaos|Psion|LLPS|Wilder|LLPS|14|LLPS",
+				"Ascended Wilder|Psion|LLPS|Wilder|LLPS|18|LLPS"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Empath",
+			"page": 4,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Empath",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"人类之所以高于野兽和怪物的一点在于他们能够体验情感。极少数人能够如此深刻地理解自己的情感，以至于能够利用他们强烈的感情来激发他们的灵能潜力。被称为(心灵感应者)的这些灵能者是控制他人情感的专家。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Aura Sight|Psion|LLPS|Empath|LLPS|1|LLPS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Empath Spells|Psion|LLPS|Empath|LLPS|1|LLPS"
+				}
+			]
+		},
+		{
+			"name": "Aura Sight",
+			"page": 4,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Empath",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Empath feature}",
+				"你可以看到情感光环，环绕着所有生物的虚幻颜色，可以用来读取它们当前的情绪状态。你在{@skill Insight}上获得熟练加值，每当你进行一次感知({@skill Insight})检定时，你的检定奖励值等于你的智力调整值（最低为+1）。",
+				"作为一个动作，你可以消耗1点灵能点来解读你能看到的60英尺内的生物的光环。你会了解到它最强烈的表面情绪。例如，你可能会得知一个生物是兴奋的，害怕的，愤怒的，悲伤的，或者满足的。",
+				"每当你进行魅力检定与你已读取光环的生物互动时，你的检定获得一个等同于你智力调整值的奖励（最低为+1）。",
+				"对于一种能够隐藏自己不受感应术、占卜魔法或心灵读取的生物，该特性无效。"
+			]
+		},
+		{
+			"name": "Empath Spells",
+			"page": 4,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Empath",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Empath feature}",
+				"您在下表中指定的先知等级学会以下法术。这些法术对您来说算作先知法术，但不计入您已知法术的总数。",
+				{
+					"type": "table",
+					"page": 4,
+					"colLabels": [
+						"Psion Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell charm person}"
+						],
+						[
+							"3rd",
+							"{@spell calm emotions}"
+						],
+						[
+							"5th",
+							"{@spell fear}"
+						],
+						[
+							"7th",
+							"{@spell charm monster|XGE}"
+						],
+						[
+							"9th",
+							"{@spell dominate person}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Emotional Flood",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Empath",
+			"subclassSource": "LLPS",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Empath feature}",
+				"你可以利用你的共情能力来操纵其他生物的情绪状态。作为一个动作，你可以对30英尺内的一只生物施加以下情绪之一：",
+				{
+					"type": "entries",
+					"name": "Depress",
+					"entries": [
+						"目标必须成功通过一个魅力豁免才能避免其速度减少，减少的尺数等于你的智力调整值的5倍（最少5尺），并且直到你下一个回合开始前，它不能做出反应。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Elate",
+					"entries": [
+						"目标获得{@dice 1d4}点临时生命值。在这些临时生命值保持的同时，目标在豁免抗拒被{@condition charmed}或{@condition frightened}时获得优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enrage",
+					"entries": [
+						"目标必须成功进行一次魅力豁免才能立即使用其反应力量对范围内选择的一个目标进行一次近战攻击。如果范围内没有目标，它将受到{@damage 1d6}点心灵伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Mantle of Calm",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Empath",
+			"subclassSource": "LLPS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Empath feature}",
+				"你在10英尺半径内散发出平静的情绪。当你或在这个范围内的友好生物进行智力、感知或魅力豁免检定时，它们的检定获得一个等于你的智力调整值的奖励（最低为+1）。",
+				"此外，您可以使用您的光环视觉(Aura Sight)来解读这个护盾内生物的光环，而无需消耗灵能点(Psi Points)。"
+			]
+		},
+		{
+			"name": "Empathic Control",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Empath",
+			"subclassSource": "LLPS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Empath feature}",
+				"你可以在精神上摧毁其他生物的心灵。当你成功{@condition charmed||charm}或{@condition frightened||frighten}一个生物时，你可以额外花费1点灵能点来增强该效果，作用于该法术的一个目标。在效果持续期间，它会{@condition incapacitated}，速度降低为0。",
+				"另外，你对被 {@condition charmed} 和 {@condition frightened} 免疫。"
+			]
+		},
+		{
+			"name": "Ascended Empath",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Empath",
+			"subclassSource": "LLPS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Empath feature}",
+				"你已经唤醒了你内在共情能力的全部潜力。这种力量赋予你以下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"你的(Mantle of Calm)的范围变为30英尺。",
+						"当你用灵能法术控制{@condition charmed||charm}生物时，在持续时间内，它会尽其所能保护你，无论之前的忠诚如何。",
+						"当你用{@condition frightened||frighten}施放一个先知法术时，只要你在它身边30英尺内且它能看见你，它就会{@condition stunned}直到法术持续结束。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Enlightened",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Enlightened",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"启迪先知们通过刻苦练习和奉献精心磨练他们的超能力。无论是在伟大的秘术师指导下学习，还是在多年的努力中自行开发力量，他们对自己的天赋拥有精确的控制能力。由于需要多年的训练才能释放他们的潜力，启迪先知以无与伦比的奉献精神、几乎无限的耐心和令人印象深刻的坚韧性而闻名。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Third Eye|Psion|LLPS|Enlightened|LLPS|1|LLPS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Enlightened Spells|Psion|LLPS|Enlightened|LLPS|1|LLPS"
+				}
+			]
+		},
+		{
+			"name": "Third Eye",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Enlightened",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Enlightened feature}",
+				"你已经唤醒了你内心的眼睛，也就是第三只眼，它赋予你奇妙的洞察能力。你获得{@skill Perception}的熟练加值，每当你进行一次感知({@skill Perception})检定时，你的检定奖励值等于你的智力调整值（最低为+1）。",
+				"你的第三只眼睛也让你在一个半径为10英尺的范围内拥有{@sense blindsight}，并且可以看到虚实平面。作为一个动作，你可以消耗灵能点数，每消耗1点灵能点数增加你的增强视觉范围10英尺（最多达到你的精神极限），持续1分钟。"
+			]
+		},
+		{
+			"name": "Enlightened Spells",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Enlightened",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Enlightened feature}",
+				"您在下表中指定的先知等级学会以下法术。这些法术对您来说算作先知法术，但不计入您已知法术的总数。",
+				{
+					"type": "table",
+					"page": 5,
+					"colLabels": [
+						"Psion Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell catapult|XGE}"
+						],
+						[
+							"3rd",
+							"{@spell levitate}"
+						],
+						[
+							"5th",
+							"{@spell slow}"
+						],
+						[
+							"7th",
+							"{@spell otiluke's resilient sphere||resilient sphere}"
+						],
+						[
+							"9th",
+							"{@spell wall of force}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mystical Precision",
+			"page": 5,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Enlightened",
+			"subclassSource": "LLPS",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Enlightened feature}",
+				"通过极度的专注和练习，你学会了以微妙的方式运用你的灵能力量，让未经训练的眼睛难以察觉。每当你施展一项先知法术时，你可以额外消耗1点灵能点，以无需提供法术的正常手势或口头组成部分，或者展现出灵能力量的任何正常外在迹象。"
+			]
+		},
+		{
+			"name": "Focused Psionics",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Enlightened",
+			"subclassSource": "LLPS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Enlightened feature}",
+				"你对超能力的精准控制增强了你施展效果的效力。每当你施展一项（Psion）法术或使用一个天赋，该法术或天赋造成的伤害为钝击、力量、穿刺或精神伤害时，你可以将你的智力修正值（最低为+1）添加到该法术或天赋的一个伤害骰中。"
+			]
+		},
+		{
+			"name": "Telekinetic Flight",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Enlightened",
+			"subclassSource": "LLPS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Enlightened feature}",
+				"你的心灵超能力已经充斥了你身体的每一根纤维，使你能够颠覆自然法则。你获得一个与你步行速度相同的飞行速度。以这种方式飞行时，你可以悬停在原地。",
+				"当你以这种方式飞行时，你周围的空气立即因为你的超能力而闪烁，岩石、泥土和其他小的松散物体从地面上升起，围绕着你飘浮。"
+			]
+		},
+		{
+			"name": "Ascended Form",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Enlightened",
+			"subclassSource": "LLPS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Enlightened feature}",
+				"你可以简要释放你的思维，进入一个(Ascended Form)。作为一个奖励动作，你可以将你的身体转化为纯粹的超能能量，并获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你变得半透明，并在5英尺半径内散发出超凡脱俗的明亮光芒，超出5英尺的地方则是昏暗的光线。",
+						"你获得对所有伤害的抗性。",
+						"你可以像穿过{@quickref difficult terrain||3}一样穿过其他生物和物体。如果你结束移动时在另一个物体或生物内部，你会立即被推到最近的未被占据的空间，每移动5英尺就会受到{@damage 1d10}力量伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Immortal",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从出生开始就被培养来掌握身体和心灵，不朽先知(Immortal Psions)极其难以被杀死。他们利用心灵能力增强身体，并展现出卓越的体能和武术技能。不朽先知花费多年磨练心灵战斗能力，使他们成为那些负担得起的人的理想游击队员、刺客和保镖。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Immortal Spells|Psion|LLPS|Immortal|LLPS|1|LLPS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Esoteric Proficiency|Psion|LLPS|Immortal|LLPS|1|LLPS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Immortal Training|Psion|LLPS|Immortal|LLPS|1|LLPS"
+				}
+			]
+		},
+		{
+			"name": "Immortal Spells",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Immortal feature}",
+				"您在下表中指定的先知等级学会以下法术。这些法术对您来说算作先知法术，但不计入您已知法术的总数。",
+				{
+					"type": "table",
+					"page": 6,
+					"colLabels": [
+						"Psion Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell jump}"
+						],
+						[
+							"3rd",
+							"{@spell blur}"
+						],
+						[
+							"5th",
+							"{@spell haste}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement}"
+						],
+						[
+							"9th",
+							"{@spell mislead}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Esoteric Proficiency",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Immortal feature}",
+				"作为一名不朽者，你通过心灵力量增强了自己的身体能力。你可以从以下列表中选择一个技能获得熟练加成：{@skill Acrobatics}，{@skill Athletics}，{@skill Perception}，{@skill Sleight of Hand}，或{@skill Stealth}。",
+				"在一次长休结束时，你可以用列表中的另一项熟练加值来替换这个熟练加值。",
+				"当你进行一个使用这种熟练度的能力检定时，你可以消耗1点灵能点来使用你的智力代替你通常用于该检定的能力分数。"
+			]
+		},
+		{
+			"name": "Immortal Training",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Immortal feature}",
+				"与大多数（Psions）不同，你已经磨练了身体和头脑，以用于战斗。你获得所有军用武器的熟练加成。",
+				"此外，你的生命值上限增加1点，每次获得（Psion）等级时再增加1点。"
+			]
+		},
+		{
+			"name": "Psionic Smite",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Immortal feature}",
+				"你可以用灵能强化你的攻击。当你用近战攻击命中一名生物时，你可以消耗灵能点数对目标造成额外的心灵伤害。每消耗一点灵能点数（最多达到你的精神极限），你的攻击额外造成{@damage 1d6}心灵伤害。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"page": 6,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Immortal feature}",
+				"每当你在你的回合上执行{@action Attack}动作时，你可以攻击两次，而不是一次。此外，你可以在其中一次攻击中施展你的（Psion）念能戏法。"
+			]
+		},
+		{
+			"name": "Immortal Will",
+			"page": 7,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Immortal feature}",
+				"你已经掌握了让不朽者得名的技巧，你的意志可以让你在通常会致命的打击中存活下来。当你的生命值降至0点，但没有立即死亡时，你可以消耗5点灵能点立即恢复生命值，恢复量为你的智力调整值（最少为1）+ 你的（Psion）等级。"
+			]
+		},
+		{
+			"name": "Phase Walk",
+			"page": 7,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Immortal",
+			"subclassSource": "LLPS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Immortal feature}",
+				"你可以用普西能力穿过固体物体。当你进行{@action Dash}动作时，你可以消耗1点普西点进入一个虚幻状态，持续直到当前回合结束。",
+				"在这种虚幻状态下，你可以穿过固体物体和生物，就像它们是{@quickref difficult terrain||3}一样。如果你结束移动时在物体内部，你会被推到最近的未被占据的空间，并且每移动5英尺受到{@damage 1d10}的力量伤害。"
+			]
+		},
+		{
+			"name": "Outsider",
+			"page": 7,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你的超能力可能不是自愿觉醒的。外来者是那些心灵被难以理解的外星力量扭曲的先知。有些人被远域的奇异光芒触及。其他人则是来自其他世界和时代的畸变实验的结果。无论他们的起源如何，外来者可以驾驭畸变的压倒性超能力，但往往以精神健康为代价。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Aberrant Form|Psion|LLPS|Outsider|LLPS|1|LLPS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Outsider Spells|Psion|LLPS|Outsider|LLPS|1|LLPS"
+				}
+			]
+		},
+		{
+			"name": "Aberrant Form",
+			"page": 7,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Outsider feature}",
+				"当你虚弱时，你心灵深处的无法预知的存在会占据你。当你剩余0点灵能点时，你会立即变异成你的异常形态。作为一个动作，你可以消耗剩余的灵能点来随意变异。",
+				"你的畸变形态的外观可能会根据你的异界力量来源而有所不同，但看起来令人恐惧。在畸变形态下，适用以下规则：",
+				{
+					"type": "list",
+					"items": [
+						"你无法再集中精力施放法术或使用技能。(spells or abilities)",
+						"你获得临时生命值，数值等同于你的（Psion）等级的两倍。如果你恢复到正常形态，这些临时生命值会被驱散。",
+						"你的双手突变成扭曲的触手，它们被视为具有轻型属性的简单近战武器。你使用你的智力调整值来进行触手的攻击和伤害骰投，命中时，它们造成1d6点精神伤害。",
+						"如果你用触手攻击击中一个和你一样大小或更小的生物，你可以选择与该生物搏斗。逃脱 DC 等于你的法术豁免 DC。",
+						"你的护甲等级等于13 + 你的智力调整值，如果它还没有更高的话。"
+					]
+				},
+				"你会保持你的异常形态，直到你恢复至少1点灵能点，或者你的生命值降至0点。"
+			]
+		},
+		{
+			"name": "Outsider Spells",
+			"page": 7,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Outsider feature}",
+				"您在下表中指定的先知等级学会以下法术。这些法术对您来说算作先知法术，但不计入您已知法术的总数。",
+				{
+					"type": "table",
+					"page": 7,
+					"colLabels": [
+						"Psion Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell arms of hadar}"
+						],
+						[
+							"3rd",
+							"{@spell spider climb}"
+						],
+						[
+							"5th",
+							"{@spell hunger of hadar}"
+						],
+						[
+							"7th",
+							"{@spell summon aberration|TCE}"
+						],
+						[
+							"9th",
+							"{@spell contact other plane}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Alien Evolution",
+			"page": 7,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Outsider feature}",
+				"你暴露于神秘力量之中已经改变了你。你可以从以下选项中选择一个特性。在第6级、第14级和第18级时，你可以再选择一个特性。",
+				{
+					"type": "entries",
+					"name": "Amorphous",
+					"entries": [
+						"你的身体是柔软的，虽然你可以保持你的形状，并且可以像正常人一样使用物体。你可以挤过只有1英寸宽的空间和缝隙。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amphibian",
+					"entries": [
+						"你长出了鳃。你可以在空气和水中呼吸，并且你获得了与你步行速度相同的游泳速度。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arachnid",
+					"entries": [
+						"你在四肢上长出了锯齿状的吸盘或小毛发。你获得一个等同于你行走速度的攀爬速度，并且可以在包括天花板在内的困难表面上攀爬，而无需进行能力检定。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armored",
+					"entries": [
+						"你的身体覆盖着黏稠的粘液或昆虫外骨骼。只要你不穿戴盔甲或使用盾牌，你的护甲等级获得+2的加值。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Outsider feature}",
+				"当你处于你的异常形态时，每当你执行攻击动作时，你可以攻击两次，而不是一次。此外，你可以在其中一次攻击中施展一个（Psion）念力零级法术。"
+			]
+		},
+		{
+			"name": "Psionic Control",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Outsider feature}",
+				"你内在的超能力已经增长，使你能够控制你心灵中的异界力量。你可以在你的回合中将自己变异为你的畸变形态，作为一个额外动作。",
+				"只要你至少有1个灵能点，你就可以集中精力保持对先知法术、特性和天赋的控制，并且你可以使用一个奖励动作来恢复到你的正常形态。"
+			]
+		},
+		{
+			"name": "Eldritch Rift",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Outsider feature}",
+				"你的异界力量使你能够穿越现实本身的裂缝。在你施展一项1级或更高级别的（Psion）法术后，你可以立即传送到你能看到的30英尺内的一个你选择的未被占据的空间。"
+			]
+		},
+		{
+			"name": "Glimpse Beyond the Veil",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Outsider",
+			"subclassSource": "LLPS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Outsider feature}",
+				"你可以向较低等级的思维揭示超越这个现实的异界恐怖。作为一个动作，你可以迫使你看得见的一个生物在60英尺内进行一次魅力豁免检定。如果未通过豁免检定，目标将消失通过超越星星之外黑暗的畸变虚空的异界之门。",
+				"在你的下一个回合结束时，目标将返回到它先前所占据的空间或最近的未占据空间。如果它不是异常生物，它会受到{@damage 10d12}点精神伤害。成功的话，生物对这个效果免疫24小时。",
+				"使用此特性后，你必须完成一次长休才能再次使用它。当你没有剩余使用次数时，你可以消耗5个灵能点再次使用它。"
+			]
+		},
+		{
+			"name": "Wilder",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"迄今为止最不稳定的感应者，狂野者是那些从未真正学会控制他们心灵奇妙力量的人。他们经常在创伤事件后意外发现他们的感应能力，或者在多年试图控制后，突然表现出神秘力量。狂野者像他们的力量一样善变，很少有感应大师。当这些不受控制的能力发展时，往往已经太迟，无法控制他们内心的感应力量洪流。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Inscrutable Mind|Psion|LLPS|Wilder|LLPS|1|LLPS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Psionics|Psion|LLPS|Wilder|LLPS|1|LLPS"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wilder Spells|Psion|LLPS|Wilder|LLPS|1|LLPS"
+				}
+			]
+		},
+		{
+			"name": "Inscrutable Mind",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Wilder feature}",
+				"你那变幻莫测的思绪就像一场暴风雨，让他人难以控制你。每当你被迫进行豁免投掷以抵抗被 {@condition charmed}，{@condition frightened}，或者读取你的思绪时，你在投掷时获得优势。",
+				"此外，当你在一次智力、感知或魅力豁免检定中成功时，你可以花费1点灵能点并迫使攻击者进行一次智力豁免检定。如果未通过豁免检定，它将受到等同于你（Psion）等级的心灵伤害。"
+			]
+		},
+		{
+			"name": "Wild Psionics",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Wilder feature}",
+				"当你释放内在的未驯服的灵能力量时，可能会产生不可预测的影响。在你施展1级或更高级别的（Psion）法术后，立即投掷一个{@dice d8}骰。如果投掷的结果等于你用来施展该法术的灵能点数，你将在法术的正常效果之外施展一个灵能涌动。",
+				"在下一页上投掷一个{@dice d100}，以确定发生的灵能突发效果。",
+				{
+					"type": "table",
+					"caption": "Psionic Surge Table",
+					"page": 9,
+					"colLabels": [
+						"d100",
+						"Surge"
+					],
+					"colStyles": [
+						"col-1-5 text-center",
+						"col-10-5 text-left"
+					],
+					"rows": [
+						[
+							"01-02",
+							"在接下来的一分钟内，在每个回合开始时在这个表格上掷骰子，忽略后续掷骰的结果。"
+						],
+						[
+							"03-05",
+							"你在5级时显现{@spell magic missile}。"
+						],
+						[
+							"06-08",
+							"在接下来的一个小时里，你离地面{@dice 1d10}英寸悬浮着。"
+						],
+						[
+							"09-11",
+							"你传送到距离60英尺内的一个随机未被占据的空间。"
+						],
+						[
+							"12-14",
+							"在接下来的一分钟里，你只能用{@language Deep Speech}说话。"
+						],
+						[
+							"15-17",
+							"你获得{@dice 1d20}点临时生命值。"
+						],
+						[
+							"18-20",
+							"你留下了一小时的足迹，发出一种超凡脱俗的光芒。"
+						],
+						[
+							"21-23",
+							"你的跳跃距离在1分钟内变为三倍。"
+						],
+						[
+							"24-26",
+							"你显现出{@spell disguise self}，化身为最近的人形生物的样子。"
+						],
+						[
+							"27-29",
+							"你在自己身上施放{@spell levitate}。这个法术不需要集中注意力。"
+						],
+						[
+							"30-32",
+							"你的皮肤变得半透明，持续1分钟。"
+						],
+						[
+							"33-35",
+							"在接下来的一分钟内，你可以看到以30英尺半径范围内的虚实界。"
+						],
+						[
+							"36-38",
+							"你失去了所有的独特特征，看起来就像你种族的普通人。(race)。"
+						],
+						[
+							"39-41",
+							"你在10英尺半径范围内发出光芒，持续1分钟。"
+						],
+						[
+							"42-44",
+							"你短暂地看到了一个在60英尺内的随机生物的美好童年记忆。"
+						],
+						[
+							"45-47",
+							"你在所有技能上都变得熟练，持续1分钟。"
+						],
+						[
+							"48-50",
+							"你恢复消耗的灵能点数，数值等同于你的智力调整值。"
+						],
+						[
+							"51-53",
+							"你选择的距离你30英尺内的最多三个生物受到{@damage 4d10}点心灵伤害。"
+						],
+						[
+							"54-56",
+							"你恢复所有已消耗的生命骰。"
+						],
+						[
+							"57-59",
+							"你的力量得分在1分钟内变为4分。"
+						],
+						[
+							"60-62",
+							"你在施放触发这次奇迹的法术等级上，对自己施放睡眠法术。"
+						],
+						[
+							"63-65",
+							"你施放{@spell confusion}，以自己为目标。这个法术不需要集中注意力。"
+						],
+						[
+							"66-68",
+							"你在自己身上显化{@spell grease}。"
+						],
+						[
+							"69-71",
+							"你被最近的生物影响，直到你的下一个回合结束。"
+						],
+						[
+							"72-74",
+							"你在接下来的一分钟内抵抗所有伤害。"
+						],
+						[
+							"75-77",
+							"你在自己身上施展{@spell hypnotic pattern}。这个法术不需要集中精力。"
+						],
+						[
+							"78-80",
+							"在接下来的一分钟内，在你的每个回合开始时，你会恢复5点灵能点。"
+						],
+						[
+							"81-83",
+							"你可以立即执行一次额外的行动。"
+						],
+						[
+							"84-86",
+							"你施展{@spell blur}，以自己为目标。"
+						],
+						[
+							"87-89",
+							"你在60英尺内的一个随机生物身上显化{@spell fly}。它必须集中精力维持这个效果。"
+						],
+						[
+							"90-92",
+							"在接下来的一分钟内，最大化你施放的下一个法术的伤害。"
+						],
+						[
+							"93-95",
+							"在接下来的一分钟内，你可以作为一个奖励动作，进行最多20英尺的传送。"
+						],
+						[
+							"96-98",
+							"你施放{@spell invisibility}，以自己为目标。这个法术不需要你集中注意力。"
+						],
+						[
+							"99-100",
+							"你恢复所有已消耗的灵能点。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Wilder Spells",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Wilder feature}",
+				"您在下表中指定的先知等级学会以下法术。这些法术对您来说算作先知法术，但不计入您已知法术的总数。",
+				{
+					"type": "table",
+					"page": 8,
+					"colLabels": [
+						"Psion Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell tasha's hideous laughter||hideous laughter}"
+						],
+						[
+							"3rd",
+							"{@spell crown of madness}"
+						],
+						[
+							"5th",
+							"{@spell cerebral blast|LLPS}"
+						],
+						[
+							"7th",
+							"{@spell confusion}"
+						],
+						[
+							"9th",
+							"{@spell synaptic static|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Psionic Burst",
+			"page": 8,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Wilder feature}",
+				"当你施展一项（Psion）法术时，你可以消耗额外的灵能点（最多达到你的精神上限）来释放你周围的一股超能力能量爆发。你选择的生物在你周围10英尺范围内，必须通过一次智力豁免才能避免受到伤害，否则将受到每花费额外灵能点数的1d8点精神伤害。",
+				"这个特性的半径会随着你在这个职业中的等级提升而增加；在14级时为（15英尺），在18级时为（30英尺）。"
+			]
+		},
+		{
+			"name": "Mental Force",
+			"page": 9,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Wilder feature}",
+				"你的心灵的野性力量增强了你的灵能法术。每当你施展一项造成钝击、力量、穿刺或心灵伤害的先知法术时，你可以投掷一个{@dice d8}，并将结果加到该法术的一个伤害骰中。"
+			]
+		},
+		{
+			"name": "Mental Torrent",
+			"page": 9,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Wilder feature}",
+				"你的心灵放射出的超能力干扰了附近生物的思维。当你迫使一个在15英尺内的生物进行一次智力、感知或魅力豁免检定，以抵抗你的一项先知法术、天赋或特性的影响时，它在初始投掷时具有劣势。",
+				"此外，当你用（Psion）法术伤害一只正在专注于法术的生物时，它在维持专注的体质豁免 throws 时有劣势。"
+			]
+		},
+		{
+			"name": "Channeled Chaos",
+			"page": 9,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Wilder feature}",
+				"你已经在你狂野的心灵力量上获得了一定程度的控制。每当你触发一次灵能涌动时，你可以在上面的灵能涌动表格上投掷两次，并选择哪种效果发生。"
+			]
+		},
+		{
+			"name": "Ascended Wilder",
+			"page": 9,
+			"source": "LLPS",
+			"className": "Psion",
+			"classSource": "LLPS",
+			"subclassShortName": "Wilder",
+			"subclassSource": "LLPS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Wilder feature}",
+				"你的无法控制的超能潜力是无限的。当你为一项（Psion）法术掷骰子造成伤害，并且在该法术的任何伤害骰子上掷出可能的最高结果时，你可以再次掷那个骰子，并将其结果加到法术的总伤害骰中。",
+				"如果你再次投掷出最高可能的结果，你需要再次投掷那个骰子，直到投掷出比最高结果小的数字。",
+				"最后，你的心灵洪流特性的范围扩大，包括你选择的生物，范围为30英尺。"
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Psionic Surge Table",
+			"source": "LLPS",
+			"page": 9,
+			"colLabels": [
+				"d100",
+				"Surge"
+			],
+			"colStyles": [
+				"col-1-5 text-center",
+				"col-10-5 text-left"
+			],
+			"rows": [
+				[
+					"01-02",
+					"在接下来的一分钟内，在每个回合开始时在这个表格上掷骰子，忽略后续掷骰的结果。"
+				],
+				[
+					"03-05",
+					"你在5级时显现{@spell magic missile}。"
+				],
+				[
+					"06-08",
+					"在接下来的一个小时里，你离地面{@dice 1d10}英寸悬浮着。"
+				],
+				[
+					"09-11",
+					"你传送到距离60英尺内的一个随机未被占据的空间。"
+				],
+				[
+					"12-14",
+					"在接下来的一分钟里，你只能用{@language Deep Speech}说话。"
+				],
+				[
+					"15-17",
+					"你获得{@dice 1d20}点临时生命值。"
+				],
+				[
+					"18-20",
+					"你留下了一小时的足迹，发出一种超凡脱俗的光芒。"
+				],
+				[
+					"21-23",
+					"你的跳跃距离在1分钟内变为三倍。"
+				],
+				[
+					"24-26",
+					"你显现出{@spell disguise self}，化身为最近的人形生物的样子。"
+				],
+				[
+					"27-29",
+					"你在自己身上施放{@spell levitate}。这个法术不需要集中注意力。"
+				],
+				[
+					"30-32",
+					"你的皮肤变得半透明，持续1分钟。"
+				],
+				[
+					"33-35",
+					"在接下来的一分钟内，你可以看到以30英尺半径范围内的虚实界。"
+				],
+				[
+					"36-38",
+					"你失去了所有的独特特征，看起来就像你种族的普通人。(race)。"
+				],
+				[
+					"39-41",
+					"你在10英尺半径范围内发出光芒，持续1分钟。"
+				],
+				[
+					"42-44",
+					"你短暂地看到了一个在60英尺内的随机生物的美好童年记忆。"
+				],
+				[
+					"45-47",
+					"你在所有技能上都变得熟练，持续1分钟。"
+				],
+				[
+					"48-50",
+					"你恢复消耗的灵能点数，数值等同于你的智力调整值。"
+				],
+				[
+					"51-53",
+					"你选择的距离你30英尺内的最多三个生物受到{@damage 4d10}点心灵伤害。"
+				],
+				[
+					"54-56",
+					"你恢复所有已消耗的生命骰。"
+				],
+				[
+					"57-59",
+					"你的力量得分在1分钟内变为4分。"
+				],
+				[
+					"60-62",
+					"你在施放触发这次奇迹的法术等级上，对自己施放睡眠法术。"
+				],
+				[
+					"63-65",
+					"你施放{@spell confusion}，以自己为目标。这个法术不需要集中注意力。"
+				],
+				[
+					"66-68",
+					"你在自己身上显化{@spell grease}。"
+				],
+				[
+					"69-71",
+					"你被最近的生物影响，直到你的下一个回合结束。"
+				],
+				[
+					"72-74",
+					"你在接下来的一分钟内抵抗所有伤害。"
+				],
+				[
+					"75-77",
+					"你在自己身上施展{@spell hypnotic pattern}。这个法术不需要集中精力。"
+				],
+				[
+					"78-80",
+					"在接下来的一分钟内，在你的每个回合开始时，你会恢复5点灵能点。"
+				],
+				[
+					"81-83",
+					"你可以立即执行一次额外的行动。"
+				],
+				[
+					"84-86",
+					"你施展{@spell blur}，以自己为目标。"
+				],
+				[
+					"87-89",
+					"你在60英尺内的一个随机生物身上显化{@spell fly}。它必须集中精力维持这个效果。"
+				],
+				[
+					"90-92",
+					"在接下来的一分钟内，最大化你施放的下一个法术的伤害。"
+				],
+				[
+					"93-95",
+					"在接下来的一分钟内，你可以作为一个奖励动作，进行最多20英尺的传送。"
+				],
+				[
+					"96-98",
+					"你施放{@spell invisibility}，以自己为目标。这个法术不需要你集中注意力。"
+				],
+				[
+					"99-100",
+					"你恢复所有已消耗的灵能点。"
+				]
+			]
+		}
+	]
+}

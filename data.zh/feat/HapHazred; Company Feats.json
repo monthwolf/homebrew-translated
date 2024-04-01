@@ -1,0 +1,531 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BITCFeats",
+				"abbreviation": "BITC",
+				"full": "Blood in the Company: Feats",
+				"authors": [
+					"HapHazred"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"color": "8f7411",
+				"version": "2023-11-18",
+				"url": "https://homebrewery.naturalcrit.com/share/4iVlkMvg3Z6P",
+				"dateReleased": "2023-11-18"
+			}
+		],
+		"status": "ready",
+		"dateAdded": 1700342109,
+		"dateLastModified": 1711542627,
+		"_dateLastModifiedHash": "5985c81727"
+	},
+	"feat": [
+		{
+			"name": "Administrative Mind",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"作为一个额外动作，在他们的回合中，角色可以给他们能看到的60英尺内的若干个愿意的生物（最多为他们的智力调整值（最少为1））在他们的下一个回合结束前选择一个攻击骰或技能检定获得优势。这必须在掷骰之前宣布。这个能力每次长休可以使用一次。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": 1,
+					"type": "bonus"
+				},
+				"uses": {
+					"max": 1,
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/sundries/documents/document-official-capital.webp"
+		},
+		{
+			"name": "Communications Officer",
+			"source": "BITCFeats",
+			"page": 2,
+			"skillProficiencies": [
+				{
+					"persuasion": true
+				},
+				{}
+			],
+			"expertise": [
+				{},
+				{
+					"persuasion": true
+				}
+			],
+			"entries": [
+				"角色获得{@skill Persuasion}技能的熟练。如果角色已经熟练，增加双倍的熟练加值来进行检定，并且角色在影响银色公司成员的{@skill Persuasion}检定中也具有优势。此外，当与卡斯卡奇陌生组织的成员互动时，您每天可以与该组织的领导或权威人士见面一次。"
+			],
+			"foundryImg": "icons/sundries/scrolls/scroll-bound-sealed-red.webp"
+		},
+		{
+			"name": "Company Boat",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"该角色被公司赠予一艘船，相当于一个{@vehicle keelboat|GoS}。这艘{@vehicle keelboat|GoS}停靠在公司的码头，并将被公司免费维护（但不包括维修），只要它仍然停在那里。如果船只沉没或被摧毁，公司将在{@dice 3d6}天内发放一艘替代船只。"
+			],
+			"foundryImg": "icons/tools/nautical/anchor-blue.webp"
+		},
+		{
+			"name": "Company First Aider",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"角色可以在任何恢复生命值的治疗法术或效果中额外增加{@dice 1d6}点治疗量。角色可以使用这个能力的次数等同于你的熟练加值，并在进行一次长休后恢复所有已用次数。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/magic/life/cross-worn-green.webp"
+		},
+		{
+			"name": "Company Lodgings",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"该角色被赠送了一个更加豪华的住所供个人使用。这座房子位于商人区，拥有三个房间，每个房间都是20x20英尺，高15英尺。这些房间包括一个睡眠区、一个厨房和一个起居区。在这个空间中进行长休会使角色获得额外的临时生命值，数值等同于{@dice ceil(@details.level/2)|half their character level, rounded up}。居住空间可以根据所有者的意愿使用家具和物品进行定制。"
+			],
+			"foundryImg": "icons/environment/settlement/house-two-stories.webp"
+		},
+		{
+			"name": "Company Magic Specialist",
+			"source": "BITCFeats",
+			"page": 1,
+			"prerequisite": [
+				{
+					"spell": [
+						{
+							"choose": "level=1;2;3;4;5;6;7;8;9",
+							"entry": "具备施放1级或更高级法术的能力 (1st level)"
+						}
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									{
+										"choose": "level=1"
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"如果角色有能力施放1级或更高级别的法术，角色可以将来自任何法术列表的1级法术作为固有法术施放，每次长休息可以施放一次。该法术的施法能力可以选择为智力、感知或魅力。"
+			],
+			"foundryImg": "icons/magic/air/air-smoke-casting.webp"
+		},
+		{
+			"name": "Company Militant Specialist",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"角色可以在1分钟内为使用任何武器进行的攻击投掷增加+1。角色每次长休息后可以使用此能力一次。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": 1,
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryEffects": [
+				{
+					"name": "Company Militant Specialist",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"duration": 60,
+						"seconds": 60,
+						"turns": 10
+					},
+					"changes": [
+						{
+							"key": "system.bonuses.rwak.attack",
+							"mode": 2,
+							"value": "1"
+						},
+						{
+							"key": "system.bonuses.mwak.attack",
+							"mode": 2,
+							"value": "1"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/strike-sword-slashing-red.webp"
+		},
+		{
+			"name": "Company Mount",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"角色被公司提供了一匹坐骑，可以是{@creature camel|MM}、{@item donkey|PHB}、{@creature mule|MM}、{@creature draft horse|MM}、{@creature riding horse|MM}、{@creature mastiff|MM}或{@creature pony|MM}，并使用怪物手册中该生物的属性块。这匹坐骑由公司照料，可以留在银色公司总部（或等同地点），只要坐骑在那里安顿，就会被喂养和庇护。如果坐骑被杀死，公司将在{@dice 1d4}天内发放一匹替代品。"
+			],
+			"foundryImg": "icons/environment/creatures/horses.webp"
+		},
+		{
+			"name": "Company Wetworker",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"角色的熟练加值次数（%num%）次，角色可以在试图打开锁或者闯入某个区域的能力检定中额外添加+5。必须在掷骰前宣布使用此加值。此能力的使用次数在完成一次长休后恢复。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/tools/hand/lockpicks-steel-grey.webp"
+		},
+		{
+			"name": "Connoisseur",
+			"source": "BITCFeats",
+			"page": 2,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"角色可以在点酒或饮料时，每天可以免费再点一瓶或一罐酒（最高1gp）。此外，当消费价值超过5银币的酒后，他们在接下来的一小时内对他们的{@skill Performance}和{@skill History}能力检定获得一个等于他们体质调整值的加值。"
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Connoisseur",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"duration": 3600,
+						"seconds": 3600,
+						"turns": 600
+					},
+					"changes": [
+						{
+							"key": "system.skills.per.bonuses.check",
+							"mode": 2,
+							"value": "@abilities.con.mod"
+						},
+						{
+							"key": "system.skills.his.bonuses.check",
+							"mode": 2,
+							"value": "@abilities.con.mod"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/survival/corkscrew.webp"
+		},
+		{
+			"name": "Deepest Lore",
+			"source": "BITCFeats",
+			"page": 3,
+			"entries": [
+				"当进行技能检定时，除了{@skill History}之外，角色可以进行一个{@skill History}检定，以回忆与活动相关的细节。这可能涉及到使用的物品，检定发生的位置，或者涉及的角色。这个检定的难度等级为13，每天可以进行的次数等于角色的熟练加值。成功时，你可以为能看到并听到你的友好生物提供一个加值，该加值等于你的智力调整值，用于他们下一次相同类型的技能检定。如果一小时后未使用，这个加值会消失。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "day",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/environment/wilderness/arch-stone.webp"
+		},
+		{
+			"name": "Disruptive Element",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"每天(%num%)次，角色可以在进行攻击检定时获得优势，直到角色下一个回合开始之前。在角色周围20英尺范围内的所有盟友将在角色下一个回合开始之前所有攻击检定都获得劣势。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "day",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/tools/hand/lockpicks-steel-grey.webp"
+		},
+		{
+			"name": "Enhanced Earnings",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"角色的收入（如金融效果中描述的）增加了10 gp，然后在10级时再增加10 gp。"
+			],
+			"foundryImg": "icons/commodities/currency/coins-plain-stack-gold-yellow.webp"
+		},
+		{
+			"name": "Executive Presence",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"每天的次数等于角色的魅力调整值，角色可以为一个愿意的生物的先攻投掷加上+10。这可以在目标投掷先攻时进行。这个能力不能对准角色自己。所有使用次数在完成一次长休后恢复。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@abilities.cha.mod",
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/sundries/flags/banner-flag-red-white.webp"
+		},
+		{
+			"name": "Loather of the City",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"当角色用武器攻击对人形生物造成伤害时，可以多次投掷伤害骰，取最高结果，次数等同于角色的熟练加值(%num%)次。角色在完成一次长休后，可以重新获得此特性的所有使用次数。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/skills/melee/strike-dagger-skull-white.webp"
+		},
+		{
+			"name": "Paperwork Savvy",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"角色可以每天多次（最少1次），次数等于他们的智力调整值，获得在涉及回忆书面细节的任何技能检定中获得优势。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "max(1,@abilities.int.mod)",
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/sundries/documents/document-sealed-brown-red.webp"
+		},
+		{
+			"name": "Party Animal",
+			"source": "BITCFeats",
+			"page": 1,
+			"entries": [
+				"在任何酒馆、客栈或类似场所完成长休后，角色可以根据{@classFeature Bardic Inspiration|Bard|PHB|1|PHB|Bard ability Bardic Inspiration}，向多达其魅力调整值（最少为1）的愿意生物授予灵感。用于这种灵感的骰子是{@dice d6}，持续到角色的下一个短休或长休开始前。"
+			],
+			"foundryImg": "icons/magic/light/explosion-beam-impact-silhouette.webp"
+		},
+		{
+			"name": "Proficient Briber",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"这个角色在涉及从角色那里交换超过5 gp的金钱的{@skill Persuasion}检查中具有优势。你尝试行贿时也不会受到负面社交后果。角色每次短休息可以使用这个特性。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": 1,
+					"per": "sr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/skills/social/theft-pickpocket-bribery-brown.webp"
+		},
+		{
+			"name": "Protector of the City",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"每当角色使用武器攻击对任何邪恶的怪物、畸变体或恶魔造成伤害时，伤害值可根据角色的熟练加值投掷两次，取最高结果。角色在完成一次长休后，可以重新获得此特性的所有使用次数。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/skills/melee/shield-block-bash-yellow.webp"
+		},
+		{
+			"name": "Repairer",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"角色可以在短暂休息时，花费一定数量的分钟来修理武器（花费的分钟数等于修理的武器数量乘以10）。这些武器在接下来的攻击中将获得+1的命中加值，次数等于角色的熟练加值。"
+			],
+			"foundryImg": "icons/skills/trades/smithing-anvil-silver-red.webp"
+		},
+		{
+			"name": "Side Gig",
+			"source": "BITCFeats",
+			"page": 2,
+			"skillProficiencies": [
+				{
+					"any": 2
+				},
+				{}
+			],
+			"expertise": [
+				{},
+				{
+					"anyProficientSkill": 1
+				}
+			],
+			"entries": [
+				"角色可以选择获得熟练掌握的2项技能，或者将他们已经熟练掌握的一项技能的熟练加值加倍。角色还可以每周至少4天花费1小时的时间，从事一份兼职工作，每周可以赚取{@dice 2d6} gp，每7天结算一次。"
+			],
+			"foundryImg": "icons/commodities/currency/coins-assorted-mix-copper-silver-gold.webp"
+		},
+		{
+			"name": "Socialite",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"角色在高级社交场合中变得特别擅长。当穿着适当的服装风格（商人或贵族服装）时，角色与贵族或名人互动时，可以在{@skill Persuasion}或{@skill Deception}投掷中获得优势（因为高级社会人士更有可能倾听他们的每个字）次数等于他们的熟练加值；所有使用次数在长休息结束时恢复。此外，他们可以要求与这些个人会面，或者邀请他们出席高级社交活动。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "day",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/equipment/finger/ring-signet-tech.webp"
+		},
+		{
+			"name": "Streetwise",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"这个角色擅长在下城区和城镇粗糙地带中导航。当穿着适当的服装（commoner）时，角色在与街头人物或暴徒互动时，可以在{@skill Intimidation}或{@skill Insight}投掷中获得优势（因为街头人物更有可能在角色周围放松警惕），次数等同于他们的熟练加值；所有使用次数在完成一次长休后恢复。此外，角色可以在大多数街头地区中融入而不引起注意。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@prof",
+					"per": "day",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/equipment/chest/shirt-collared-brown.webp"
+		},
+		{
+			"name": "Supervisor",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"在进行短暂休息时，角色可以使多达{@dice 1 + @abilities.int.mod|1 + their Intelligence modifier}个愿意的生物获得临时生命值，数值等同于角色的{@dice @prof|proficiency bonus}。"
+			],
+			"foundryImg": "icons/magic/life/heart-hand-gold-green.webp"
+		},
+		{
+			"name": "Team Player",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"角色可以在看到的情况下，以反应的形式为愿意的生物提供优势，次数等于你的感知调整值（最少为1次）。你在完成一次长休后恢复所有使用次数。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "reaction",
+					"cost": 1
+				},
+				"uses": {
+					"max": "max(1,@abilities.wis.mod)",
+					"per": "lr",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/magic/life/heart-hand-gold-green.webp"
+		},
+		{
+			"name": "Trade Expert",
+			"source": "BITCFeats",
+			"page": 2,
+			"entries": [
+				"角色在每天可以一定次数（等同于他们的智力调整值，最少为1次）获得优势，用于回忆交易历史的任何{@skill History}检定，或者对商人或推销员进行的任何{@skill Persuasion}或{@skill Deception}检定。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				},
+				"uses": {
+					"max": "@abilities.int.mod",
+					"per": "day",
+					"value": 1
+				}
+			},
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp"
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Company Feats",
+			"source": "BITCFeats",
+			"page": 1,
+			"ruleType": "V",
+			"entries": [
+				"在4级、12级和16级，玩家将获得公司特性，代表着银色公司授予他们的特权、责任和技能，或者是在执行任务过程中获得的。这些特性不会取代《玩家手册》中提供的特性，而是根据《血脉同仁》战役的进展而授予的。这些特性旨在表现角色如何与自己在公司中的位置互动。"
+			]
+		}
+	]
+}

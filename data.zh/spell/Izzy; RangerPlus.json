@@ -1,0 +1,556 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Ranger+",
+				"abbreviation": "Ranger+",
+				"full": "RangerPlus",
+				"url": "https://www.gmbinder.com/share/-LDxH6v8BCej6XvhD5pW",
+				"authors": [
+					"Izzy"
+				],
+				"convertedBy": [
+					"Ikaguia"
+				],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 1642116367,
+		"dateLastModified": 1668987711,
+		"_dateLastModifiedHash": "7cb83053d0"
+	},
+	"spell": [
+		{
+			"name": "Beast Totem",
+			"source": "Ranger+",
+			"page": 9,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a figurine in the shape of the beast the spell targets worth at least 25gp",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"你伸出小雕像，并以范围内CR1/2或更低的自愿野兽为目标，将该野兽与小雕像绑定。当野兽被束缚且你拥有小雕像时，你可以使用你的额外行动将野兽遣散到小雕像中（只要你在同一个存在平面上），或者将它召唤到你周围10英尺内无人的空间。你不能与一个{@condition charmed}或{@condition incapacitated}的魔兽建立联系。",
+				"当它在雕像内时，时间会正常流逝，但它不会衰老，不需要食物或水，并且对任何伤害、状况或有害影响免疫。当它在{@condition paralyzed}、{@condition restrained}、{@condition frightened}或{@condition charmed}时，不能被驱除。",
+				"如果这个野兽被杀死，你可以用这个小雕像来代替它的身体，以达到复活的目的。如果你或野兽花了10分钟专注于你们之间的联系，或者如果小雕像被打破，那么野兽与小雕像的联系就会结束。即使在小雕像内，野兽也可以选择打破纽带。如果纽带在小雕像内被终止，小雕像会立即出现在离小雕像最近的空位上。",
+				"你可以拥有的野兽图腾数量等于你的法术能力修饰值（最小为1）。如果你在拥有你最大数量的绑定图腾时对一个野兽施展此法术，你必须选择结束其中一个绑定，否则法术失败。"
+			],
+			"miscTags": [
+				"PRM",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cordon of Arrows",
+			"source": "Ranger+",
+			"page": 9,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "arrows or bolts"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"你在范围内的地面上放置四件非魔法弹药--箭或弩箭，并在其上施展魔法以保护一个区域。在法术结束之前，每当除你之外的生物在一个回合中第一次进入弹药的30英尺范围内，或者在那里结束回合，就会有一块弹药飞起来攻击它。该生物必须在灵巧救赎中成功，否则会受到{@damage 2d6}+你的施法修改器的穿刺伤害。然后这块弹药会被摧毁。当没有弹药残留时，咒语结束。",
+				"当你施展这个法术时，你可以指定你所选择的任何生物，而法术会忽略它们。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施放此法术时，每超过2级的法术槽等级，可影响的弹药数量就会增加4。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Barrage",
+			"source": "Ranger+",
+			"page": 9,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "ammunition or a thrown weapon, which is not consumed"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向空中投掷一个非魔法武器或发射一个非魔法弹药，形成一个由相同的武器组成的圆锥体，向前射出，然后消失。在60英尺范围内选择任意数量的生物，并在它们之间分配20个弹丸（一个生物最多可以被5个弹丸所瞄准）。每个生物都必须做一个灵巧的蓄力动作，每发射一个弹丸就会受到{@damage 1d8}的伤害，如果蓄力成功，则会受到一半的伤害。伤害类型与作为组件的武器或弹药的伤害类型相同。"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"MT",
+				"N"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Grasping Vine",
+			"source": "Ranger+",
+			"page": 9,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你变出一根藤蔓，在你选择的范围内你能看到的无人空间中从地面喷发出来。当你施展这个法术时，你可以指挥藤蔓向60英尺范围内你能看到的一个大或小的生物扑去。该生物必须在灵巧的救赎中成功，否则会受到（%0%），受到（%1%）的重击伤害，并被直接拉向藤蔓30英尺。当藤蔓抓着一个生物时，你可以使用一个额外的动作对它造成{@damage 3d8}重击伤害。在它的每个回合结束时，该生物可以重复蓄力动作，如果成功就能逃脱抓捕。",
+				"在咒语结束之前，你可以在每个回合中指挥藤蔓向同一生物或另一生物发动攻击，作为额外行动。"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV",
+				"SGT",
+				"UBA"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hail of Thorns",
+			"source": "Ranger+",
+			"page": 9,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon or piece of ammunition"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你用魔法荆棘包裹你的武器或弹药，并对范围内的生物进行武器攻击。一旦命中，目标将受到正常的伤害。命中或未命中，荆棘都会向外爆炸。目标和它周围5英尺内的每个生物都必须在灵巧的救赎中成功，否则会受到{@damage 1d10}的穿刺伤害，并且他们的速度减半，直到他们下一回合结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"荆棘的伤害在1级以上的每一个槽位增加{@dice 1d10}，最大为{@dice 6d10}。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hurricane Slash",
+			"source": "Ranger+",
+			"page": 10,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一场暴风雨在你身边呼啸而过，狂热的风变成了叶片的形状，随你的意志而弯曲。你可以使用你所挥舞的近战武器对你周围15英尺内的所有生物进行近战攻击。命中时，攻击会造成正常的伤害，加上额外的{@damage 3d6}斩击伤害。如果没有命中，则目标只受到{@damage 3d6}的砍击伤害。"
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Imbue Element",
+			"source": "Ranger+",
+			"page": 10,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon or piece of ammunition"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你给你接触的生物注入元素能量。从以下伤害类型中选择一个：酸、冷、火、闪电或雷霆。在持续时间内，该生物的武器攻击被视为具有魔力，并造成所选伤害类型的额外（%0%）。此外，任何用近战攻击击中被施法生物的生物都会受到所选类型的1%的伤害。"
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lightning Arrow",
+			"source": "Ranger+",
+			"page": 10,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 1000
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a thrown weapon or piece of ammunition"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你施展这个法术时，你向你能看到的范围内的目标投掷武器或发射弹药，当它离开你的手时，会转化为一道狂暴的闪电。用该武器对目标进行一次远程武器攻击。命中时，目标受到{@damage 6d8}的闪电伤害，其速度降为0，直到你下一回合开始。如果没有命中，目标会受到一半的伤害，并且速度不会被降低。有雷电抗性或豁免权的目标不会被降低速度。",
+				"无论是否命中，目标10英尺范围内的每个生物（不包括目标）都必须做一个灵巧的拯救。拯救失败时，每个生物都会受到{@damage 2d8}雷霆伤害，成功时则受到一半伤害。然后武器或弹药会恢复到正常形态。"
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"初始射击的伤害在3级以上的每一个槽位增加{@dice 1d8}，最大为{@dice 8d8}。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"lightning",
+				"thunder"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Primeval Awareness",
+			"source": "Ranger+",
+			"page": 10,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a figurine worth at least 50gp, in the shape of any creature of the type you are searching for",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你变得与你的周围环境紧密相连，对非自然的存在变得敏感。从以下类型的生物中选择一种：反常者、天人、龙、元素、妖怪、魔人和亡灵。你可以知道在你的范围内是否有这种类型的生物存在。你会意识到离最近的这类生物群的方向，以及这群生物的数量。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Zephyr Strike",
+			"source": "Ranger+",
+			"page": 10,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon or piece of ammunition"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一阵呼啸的狂风围绕着你的身体，你感觉自己变得像风一样轻。在这段时间内，你的行动不会引起机会攻击。",
+				"此外，你可以选择在进行攻击前结束这个咒语，以赋予该攻击优势。一旦命中，该攻击会造成额外的（%0%）伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
