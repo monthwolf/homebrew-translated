@@ -1,0 +1,3487 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMHumanoid",
+				"abbreviation": "COMHumanoid",
+				"full": "Community Humanoid Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2022.04.27",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1608058117,
+		"dateLastModified": 1708296841,
+		"_dateLastModifiedHash": "a20c689bac"
+	},
+	"monster": [
+		{
+			"name": "Guard Simple",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Chain Shirt",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/8",
+			"shortName": "Guard Simple",
+			"languages": [
+				"Any One Language (Usually Common)"
+			],
+			"fluff": {
+				"entries": [
+					"简单防护"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/e9T053Y.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"damageTags": [
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/e9T053Y.png",
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达20/60英尺，一个目标。{@h}4 ({@damage 1d6 + 1})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}3 ({@damage 1d6})穿刺伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"shortsword|phb",
+				"spear|phb"
+			]
+		},
+		{
+			"name": "Guard Captain",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Chain Shirt",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 13,
+			"passive": 13,
+			"cr": "1",
+			"languages": [
+				"Any One Language (usually Common)"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Guard captains (dandwiki)|https://www.dandwiki.com/wiki/Guard_Captain_(5e_Creature)}",
+					"侍卫长是特别有影响力的侍卫，在他们的指挥系统中实际上高了一级。一个人可能有权力管理两到二十个低级卫兵。当用一个相当大的单位监视一个大的区域时，队长打算走向一个中心位置，从那里可以最有效地发布命令。如果一个队长宣誓效忠于一个王国或其他大型组织，它很可能会服从于骑士、将军或高级贵族。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/q52gtpy.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/q52gtpy.png",
+			"languageTags": [
+				"C"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"船长进行两次近战攻击"
+					]
+				},
+				{
+					"name": "Longsword (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Longsword (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d10 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "ShortBow",
+					"entries": [
+						"{@atk rw} {@hit 2}击中，达到80/320英尺，一个目标。{@h}5 ({@damage 1d6})穿刺伤害。",
+						"{@b Ammunition:} 你可以使用具有弹药属性的武器进行远程攻击，但前提是你有弹药可以从该武器发射。每次你用该武器进行攻击，你都要消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。在战斗结束时，你可以通过花一分钟时间搜索战场来恢复你消耗的一半弹药。",
+						"如果你使用具有弹药属性的武器进行近战攻击，你将该武器视为简易武器（见本节后面的 \"简易武器\"）。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"在1分钟内，每当它能看到的30英尺范围内的非敌对生物进行攻击卷或蓄力投掷时，船长可以发出一个特殊的命令或警告。如果该生物能听到并理解队长的话，它可以在它的卷轴上加一个（%0%）。一个生物一次只能从一个领导力模子中受益。如果队长是（%1%），这个效果就会结束。(一个{@condition incapacitated}的生物不能采取行动或作出反应。)"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"shortName": "Guard Captain",
+			"save": {
+				"wis": "+3"
+			},
+			"skill": {
+				"insight": "+3",
+				"perception": "+3",
+				"persuasion": "+3"
+			},
+			"attachedItems": [
+				"longsword|phb",
+				"shortbow|phb"
+			]
+		},
+		{
+			"name": "Guard with Bow Simple",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Chain Shirt",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/8",
+			"shortName": "Guard with Bow Simple",
+			"languages": [
+				"Any One Language (Usually Common)"
+			],
+			"fluff": {
+				"entries": [
+					"弓箭手警卫"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kAkS895.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"damageTags": [
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/kAkS895.png",
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达20/60英尺，一个目标。{@h}4 ({@damage 1d6 + 1})穿刺伤害。"
+					]
+				},
+				{
+					"name": "ShortBow",
+					"entries": [
+						"{@atk rw} {@hit 2}击中，达到80/320英尺，一个目标。{@h}4 ({@damage 1d6+1})穿刺伤害。",
+						"{@b Ammunition:} 你可以使用具有弹药属性的武器进行远程攻击，但前提是你有弹药可以从该武器发射。每次你用该武器进行攻击，你都要消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。在战斗结束时，你可以通过花一分钟时间搜索战场来恢复你消耗的一半弹药。",
+						"如果你使用具有弹药属性的武器进行近战攻击，你将该武器视为简易武器（见本节后面的 \"简易武器\"）。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"attachedItems": [
+				"shortbow|phb",
+				"spear|phb"
+			]
+		},
+		{
+			"name": "Guard Elite Simple",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Chain Shirt",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 7",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 14,
+			"cr": "1/8",
+			"shortName": "Guard Elite Simple",
+			"languages": [
+				"Any One Language (Usually Common)"
+			],
+			"fluff": {
+				"entries": [
+					"精英警卫队"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/LMMbkIi.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"damageTags": [
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/LMMbkIi.png",
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"acrobatics": "+5",
+				"athletics": "+5",
+				"perception": "+5"
+			},
+			"action": [
+				{
+					"name": "Spear (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 1}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d6 + 1})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Spear (Thrown)",
+					"entries": [
+						"{@atk rw} {@hit 1}击中，到达20/60英尺，一个目标。{@h}4 ({@damage 1d6 + 1})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Spear (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 1}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d8 + 1})穿刺伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"spear|phb"
+			]
+		},
+		{
+			"name": "City Guard Commander",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"Plate",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 13,
+			"wis": 14,
+			"cha": 15,
+			"passive": 12,
+			"cr": "10",
+			"shortName": "City Guard Commander",
+			"languages": [
+				"Common"
+			],
+			"fluff": {
+				"entries": [
+					"{@link City Guard|https://www.pinterest.es/pin/AVgoHUmwjQUrTKFX0Ibws-szXiveyrXK_IFeXeZfj_6cvJ9U8Dmb7Sg/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/IxTylof.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/IxTylof.png",
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"wis": "+5",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+5"
+			},
+			"trait": [
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"每回合一次，武将可以对其用武器攻击击中的生物造成额外的10（3d6）伤害，如果该生物在武将的盟友5英尺以内，而该盟友不是（%0%）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"指挥官进行三次近战或两次远程攻击"
+					]
+				},
+				{
+					"name": "Longsword (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Longsword (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d10 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Javelin (Thrown)",
+					"entries": [
+						"{@atk rw} {@hit 6}击中，到达30/120英尺，一个目标。{@h}6 ({@damage 1d6 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long rest)",
+					"entries": [
+						"在1分钟内，每当它能看到的30英尺范围内的非敌对生物进行攻击或蓄力时，指挥官可以说出一个特殊的命令或警告。只要该生物能听到并理解指挥官的话，就可以在它的卷轴上加一个D4。一个生物每次只能受益于一个领导力。如果指挥官是（%0%），这个效果就会结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"指挥官在面对通常会击中它的近战攻击时增加+2 AC。要做到这一点，指挥官必须看到攻击者并挥舞着近战武器。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"THW",
+				"MLW"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"attachedItems": [
+				"javelin|phb",
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "City Guard Watch Captain",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Scale Mail"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 13,
+			"passive": 12,
+			"cr": "4",
+			"languages": [
+				"Any One Language (Usually Common)"
+			],
+			"fluff": {
+				"entries": [
+					"{@link City Guard|https://www.5esrd.com/gamemastering/monsters-foes/npc/guards-city-watch-npcs/city-watch-captain-3pp/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/T90LIP5.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/T90LIP5.png",
+			"languageTags": [
+				"C"
+			],
+			"shortName": "City Guard Watch Captain",
+			"skill": {
+				"perception": "+2"
+			},
+			"trait": [
+				{
+					"name": "Tactical Insight",
+					"entries": [
+						"城管队长在主动权卷上有优势。在队长指挥下的守城士兵在与队长相同的主动权计数下进行轮换。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"城市守望者队长进行两次剑术攻击和一次匕首攻击。队长可以用一次缴械攻击代替一次剑术攻击。"
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d4 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Dagger (Thrown)",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，到达20/60英尺，一个目标。{@h}5 ({@damage 1d4 + 3})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，达到80/320英尺，一个目标。{@h}5 ({@damage 1d8 + 3})穿刺伤害。",
+						"{@b Ammunition:} 你可以使用具有弹药属性的武器进行远程攻击，但前提是你有弹药可以从该武器发射。每次你用该武器进行攻击，你都要消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。在战斗结束时，你可以通过花一分钟时间搜索战场来恢复你消耗的一半弹药。如果你使用具有弹药属性的武器来进行近战攻击，你将该武器视为一种简易武器（见本节后面的 \"简易武器\"）。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+					]
+				},
+				{
+					"name": "Disarming Attack",
+					"entries": [
+						"{@atk mw} 命中加值+5，射程5英尺，单目标。命中：目标必须进行一次成功的DC 13力量豁免检定，否则必须放下一件城市守卫队长选择的物品。该物品落在距离目标最多10英尺的地方，由队长选择的位置。"
+					]
+				},
+				{
+					"name": "Orders to Attack (1/Day)",
+					"entries": [
+						"城市守望者队长选择的每个生物，如果在其30英尺范围内并能听到它的声音，可以进行一次近战或远程武器攻击作为反应。这个人很容易成为法律的另一方，但他喜欢自己穿着城市守望者制服的样子--以及当他带领巡逻队走在街上时城市居民看他的样子。他留着长长的胡子，戴着一顶欢快的帽子，不可否认的是，他的身影帅气逼人。作为一名训练有素的调查员，这位城市守望者队长并不害怕拔出他的刀来结束对城市的威胁。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"THW",
+				"MLW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"light crossbow|phb",
+				"rapier|phb"
+			]
+		},
+		{
+			"name": "City Guard",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Breastplate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "1",
+			"languages": [
+				"Common"
+			],
+			"fluff": {
+				"entries": [
+					"{@link City Guard|https://www.5esrd.com/gamemastering/monsters-foes/npc/guards-city-watch-npcs/city-watch-captain-3pp/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/T90LIP5.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"damageTags": [
+				"P"
+			],
+			"tokenUrl": "https://i.imgur.com/T90LIP5.png",
+			"languageTags": [
+				"C"
+			],
+			"shortName": "City Guard",
+			"skill": {
+				"athletics": "+4"
+			},
+			"trait": [
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"每回合一次，守卫可以对它用武器攻击击中的生物造成额外的7（（%0%））伤害，如果该生物在守卫的盟友的5英尺范围内，而该盟友不是（%1%）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达10英尺，一个目标。{@h}7 ({@damage 1d10 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，达到100/400英尺，一个目标。{@h}7 ({@damage 1d10 + 2})穿刺伤害。",
+						"{@b Ammunition:} 你可以使用具有弹药属性的武器进行远程攻击，但前提是你有弹药可以从该武器发射。每次你用该武器进行攻击，你都要消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。在战斗结束时，你可以通过花一分钟时间搜索战场来恢复你消耗的一半弹药。如果你使用具有弹药属性的武器来进行近战攻击，你将该武器视为一种简易武器（见本节后面的 \"简易武器\"）。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"RCH",
+				"MLW"
+			],
+			"attachedItems": [
+				"light crossbow|phb",
+				"pike|phb"
+			]
+		},
+		{
+			"name": "Thief",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 0",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "1/4",
+			"fluff": {
+				"entries": [
+					"{@link Thief (dandwiki)|https://www.dandwiki.com/wiki/Thief_(5e_Creature)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/skDWNAj.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/skDWNAj.png",
+			"shortName": "Thief",
+			"damageTags": [
+				"P"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"skill": {
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Tools",
+					"entries": [
+						"盗贼的工具+6"
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"在它的每个回合中，盗贼可以使用一个额外的动作来进行冲刺、脱离或隐藏动作。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当盗贼用武器攻击击中目标并在攻击卷轴上有优势时，或者当目标在盗贼的盟友5英尺范围内不是{@condition incapacitated}，且盗贼在攻击卷轴上没有劣势时，会造成额外的3({@damage 1d6})伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Dagger (Thrown)",
+					"entries": [
+						"{@atk rw} {@hit 2}击中，范围20/60英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			]
+		},
+		{
+			"name": "Barbarian",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"NX",
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 8,
+			"wis": 10,
+			"cha": 8,
+			"passive": 10,
+			"cr": "1/4",
+			"fluff": {
+				"entries": [
+					"{@link Barbarian (dandwiki)|https://www.dandwiki.com/wiki/Barbarian_(5e_Creature)}",
+					"{@b Design Note:}如果你使用的是{@link damage Reduction (5e Variant Rule)|https://www.dandwiki.com/wiki/Damage_Reduction_(5e_Variant_Rule)}，野蛮人反而有一个11的AC，和一个1的伤害减少值。",
+					"野蛮人也被称为强盗，是指在战斗中依靠纯粹的力量和野蛮的人。野蛮人往往在有组织的军队难以入侵的山区安家。野蛮人通常组成盗贼集团，但他们为了钱把自己雇给别人也是很常见的。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/vkKyyl5.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/vkKyyl5.png",
+			"shortName": "Barbarian",
+			"damageTags": [
+				"S",
+				"B"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"trait": [
+				{
+					"name": "Axefaire",
+					"entries": [
+						"野蛮人在使用斧头和锤子（包括在攻击中）的攻击卷上获得+1的加成。每当野蛮人在用斧头或锤子进行的近战攻击卷中拥有优势并命中时，如果{@dice d20}的较低卷也会命中的话，它可以将目标击倒{@condition prone}。当野蛮人在用斧头或锤子进行的近战攻击卷中处于劣势时，如果野蛮人没有命中，但较高的{@dice d20}卷会命中，则目标会受到2个重击伤害。当野蛮人采取帮助行动来帮助盟友的近战攻击时，除了盟友在卷轴上获得优势外，如果目标使用盾牌，盟友也会在其攻击卷轴上获得+2奖励。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Battleaxe (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Battleaxe (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 2}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d10 + 2})砍击伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"battleaxe|phb"
+			]
+		},
+		{
+			"name": "Brawler of Tavern (Dwarf)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 9,
+			"wis": 10,
+			"cha": 9,
+			"passive": 10,
+			"cr": "1/8",
+			"fluff": {
+				"entries": [
+					"{@link Tavern Brawler (Sailor)|https://www.reddit.com/r/dndnext/comments/4j1fqv/monsters_tavern_brawler_and_the_rat_king/}",
+					"{@b Is always itching for a fight.}它拥有所有的工具来完成一场电影中的酒吧斗殴：它可以全速移动被抓捕的目标，穿过酒吧柜台的顶部（沿途打翻饮料），是把可怜的傻瓜推过桌子或推到墙上的专家。他们同样善于用拳头打架，或者把椅子腿折断，然后像棍子一样挥舞! 这个酒馆斗士是一个矮人，但只要稍加修改就可以很容易地成为任何种族。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/YefhAGw.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/YefhAGw.png",
+			"shortName": "Tavern Brawler (Dwarf)",
+			"damageTags": [
+				"B"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"trait": [
+				{
+					"name": "Improvised Weapons",
+					"entries": [
+						"斗士可以从环境中捡起一个简易的武器，例如一个破瓶子或一个桌腿。它可以对该武器使用徒手攻击动作，但伤害类型可能会发生变化[一个破瓶子会造成穿刺伤害而不是击打伤害]。"
+					]
+				},
+				{
+					"name": "Wrestler",
+					"entries": [
+						"斗士在推搡生物的运动能力检查中具有优势，只要生物的体型是中等或更小，就可以全速拖动或携带一个（%0%）的生物。"
+					]
+				},
+				{
+					"name": "Dwarven Resilience",
+					"entries": [
+						"斗士对毒药的救赎有优势，并对毒药伤害有抵抗力。"
+					]
+				}
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"intimidation": "+2"
+			},
+			"action": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d4 + 2})重击伤害。",
+						"如果目标是大型或较小的生物，则是{@condition grappled}（逃脱{@dc 12}）。在这个抓取动作结束之前，斗士只能攻击{@condition grappled}的生物，并且在攻击卷轴上有优势，这样做。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Brawler of Tavern (Human)",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"L",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 9,
+			"wis": 10,
+			"cha": 9,
+			"passive": 10,
+			"cr": "1/8",
+			"fluff": {
+				"entries": [
+					"{@link Tavern Brawler (Sailor)|https://www.reddit.com/r/dndnext/comments/4j1fqv/monsters_tavern_brawler_and_the_rat_king/}",
+					"它总是渴望一场战斗。它有所有的工具来完成一场电影中的酒吧斗殴：它可以全速移动被抓捕的目标，穿过酒吧柜台的顶部（沿途打翻饮料），是把可怜的傻瓜推过桌子或推到墙上的专家。他们同样善于用拳头打架，或者把椅子腿折断，然后像棍子一样挥舞! 这个酒馆斗士是一个矮人，但只要稍加修改就可以很容易地成为任何种族。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/2oLE9nU.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/2oLE9nU.png",
+			"shortName": "Tavern Brawler",
+			"damageTags": [
+				"B"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Improvised Weapons",
+					"entries": [
+						"斗士可以从环境中捡起一个简易的武器，比如一个破瓶子或一个桌腿。它可以对该武器使用徒手攻击动作，但伤害类型可能会发生变化[破瓶子会造成穿刺伤害而不是重击伤害]。"
+					]
+				},
+				{
+					"name": "Wrestler",
+					"entries": [
+						"斗士在推搡生物的运动能力检查中具有优势，只要生物的体型是中等或更小，就可以全速拖动或携带一个（%0%）的生物。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d4 + 2})重击伤害。",
+						"如果目标是大型或较小的生物，则是{@condition grappled}（逃脱{@dc 12}）。在这个抓取动作结束之前，斗士只能攻击{@condition grappled}的生物，并且在攻击卷轴上有优势，这样做。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Darkblade Agent",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 16",
+				"average": 89
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 11,
+			"int": 10,
+			"wis": 15,
+			"cha": 14,
+			"passive": 14,
+			"cr": "3",
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"{@link Darkblade Agents|https://www.reddit.com/r/Pauper/comments/9fixlr/grn_darkblade_agent/}是迪米尔最常见的一种外勤特工。虽然他们可以杀人，但这并不是他们的主要目标。他们做侦察和基本的间谍工作。因此，如果他们没有被发现，他们很可能会逃离现场，而不是开始一场公开的战斗。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MyzhXcr.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/VgBuPd7.png",
+			"shortName": "Darkblade Agent",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+8",
+				"perception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Surveil 2th Level",
+					"entries": [
+						"每天一次，暗刃特工能够激活Surveil。通过这样做，它可以看到20英尺范围内的任何生物。如果它专注于它能看到的生物，或者成功地通过智慧检查来专注于它认识的生物。它能够看到自己留下的任何物理和魔法的尾巴，例如脚步声或施法留下的能量。这将持续2分钟。当被询问时，这个生物会回话而不是回答。"
+					]
+				},
+				{
+					"name": "Servelled skill",
+					"entries": [
+						"当暗刃特工使用它的监视能力时，暗刃特工会造成额外的（%0%）坏死伤害，这个伤害会降低被击中的生物的最大命中率。此外，每当暗刃特工成功击中一个生物，它就会重新获得一回合的监视。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"暗刃特工用匕首进行两次攻击或用投掷匕首进行两次攻击"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw}{@hit 5}击中，距离5英尺或范围30/60英尺，一个目标。{@h}5 ({@damage 1d4})的近战穿刺伤害，或5 ({@damage 1d4})的范围内穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW",
+				"MLW"
+			],
+			"isNpc": false,
+			"attachedItems": [
+				"dagger|phb"
+			]
+		},
+		{
+			"name": "Pirate Captain",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 18",
+				"average": 99
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20,
+				"swim": {
+					"number": 20,
+					"condition": "when Vehicles (water) + 10 ft."
+				}
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 13,
+			"int": 15,
+			"wis": 9,
+			"cha": 17,
+			"passive": 9,
+			"cr": "7",
+			"tokenUrl": "https://i.imgur.com/FbkKBel.png",
+			"fluff": {
+				"entries": [
+					"{@link Pirate Captain - 5e monster (CR7ish..)|https://www.reddit.com/r/UnearthedArcana/comments/8bd71d/pirate_captain_5e_monster_cr7ish/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Qk1sugy.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"coastal"
+			],
+			"shortName": "Pirate Captain",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+3",
+				"deception": "+6"
+			},
+			"trait": [
+				{
+					"name": "Lightfooted",
+					"entries": [
+						"船长可以在其每个回合中采取冲刺或脱离行动作为额外行动。"
+					]
+				},
+				{
+					"name": "Sea Legs",
+					"entries": [
+						"船长在站在水上交通工具上时，对力量和灵巧的检查具有优势（如《玩家手册》第157页所述）。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Tum)",
+					"entries": [
+						"当队长用武器攻击击中目标并在攻击卷上有优势时，或当目标在队长的盟友5英尺范围内不是{@condition incapacitated}且队长在攻击卷上没有劣势时，队长会造成额外的14({@damage 6d6})伤害。"
+					]
+				},
+				{
+					"name": "Suave Defense",
+					"entries": [
+						"当队长用武器攻击击中目标并在攻击卷上有优势时，或当目标在队长的盟友5英尺范围内不是{@condition incapacitated}且队长在攻击卷上没有劣势时，队长会造成额外的14({@damage 6d6})伤害。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone",
+				"incapacitated"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"船长进行了三次攻击：一次用鞭子，两次用剑锋。"
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d8 + 4})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Whip",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达10英尺，一个目标。{@h}6 ({@damage 1d4 + 4})砍击伤害。如果目标是中等或较小的生物，它必须做一个{@dc 15}的力量反射，否则会被击倒{@condition prone}。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"isNpc": false,
+			"attachedItems": [
+				"rapier|phb",
+				"whip|phb"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Ninja",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 10,
+			"passive": 13,
+			"cr": "6",
+			"fluff": {
+				"entries": [
+					"{@link Ninja|https://www.pinterest.se/pin/232920611966519039/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/s4880uv.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/sYctZGY.png",
+			"environment": [
+				"urban"
+			],
+			"isNpc": false,
+			"shortName": "Ninja",
+			"languages": [
+				"Any one language (usually Common)"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+10",
+				"wis": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+3",
+				"sleight of hand": "+7",
+				"stealth": "+7"
+			},
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"如果忍者受到的效果允许它做一个灵巧的蓄力动作，只受到一半的伤害，如果蓄力动作成功，忍者就不会受到伤害，如果失败，就只受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"在昏暗的光线或黑暗中，忍者可以把隐藏动作作为一个额外的动作。"
+					]
+				},
+				{
+					"name": "Unarmored defense",
+					"entries": [
+						"当忍者没有穿戴盔甲和挥舞盾牌的时候，它的AC包括它的智慧修正值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"忍者进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Shortswords",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d6 + 4})穿刺伤害，加上7 ({@damage 2d6})毒药伤害。"
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 7}击中，范围20/60英尺，一个目标。{@h}6 ({@damage 1d4 + 4})穿刺伤害，加上7 ({@damage 2d6})毒药伤害。"
+					]
+				},
+				{
+					"name": "Smoke Bomb (1/Day)",
+					"entries": [
+						"忍者向60英尺以上的地方投掷一个烟雾弹。冲击半径5英尺内的区域立即变得严重遮蔽。中等风（至少每小时10英里）在4个回合内驱散烟雾；强风（每小时20英里或以上）在一个回合内驱散。否则，该烟雾会在1分钟后消散。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missile",
+					"entries": [
+						"在被远程武器击中时，忍者会偏转导弹。它从攻击中受到的伤害会减少（%0%）。如果伤害减少到0，如果导弹小到可以用一只手握住，忍者就会把它扔掉。"
+					]
+				}
+			],
+			"attachedItems": [
+				"dart|phb"
+			]
+		},
+		{
+			"name": "Witch Human",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"cr": "3",
+			"environment": [
+				"coastal",
+				"forest",
+				"swamp"
+			],
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/bM0dJ5D.png",
+			"fluff": {
+				"entries": [
+					"{@link Human Witch|https://www.deviantart.com/dizman/art/DnD-Next-Monster-Cards-Human-Witch-404860763}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/HDcVyL8.png"
+						}
+					}
+				]
+			},
+			"shortName": "Witch Human",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}3 ({@damage 1d6 + 1})重击伤害，如果双手使用，则为5 ({@damage 1d8 + 1})重击伤害。"
+					]
+				},
+				{
+					"name": "Shocking Grasp",
+					"entries": [
+						"巫医选择一个在其范围内的生物。目标必须在一个{@dc 14}灵巧的拯救动作上成功。否则，目标会受到4({@damage 1d8})的闪电伤害，并且在下一次打坐之前不能做出反应。"
+					]
+				},
+				{
+					"name": "Ray of Enfeeblement (2/day)",
+					"entries": [
+						"巫医选择50英尺内的一个生物。目标必须做一个{@dc 14}灵巧的救赎。如果救赎失败，目标将受到14{@damage 4d6}的坏死伤害，如果目标的最大命中率为25或更低，目标的近战攻击只能造成一半的伤害，并且目标在力量和灵巧的检查和救赎上有劣势。这个效果持续1分钟。"
+					]
+				},
+				{
+					"name": "Light",
+					"entries": [
+						"巫医触碰一个物体，使其在半径20英尺的范围内发出亮光，在半径40英尺的范围内发出暗光。光线持续1小时或直到巫医再次使用这个动作。"
+					]
+				},
+				{
+					"name": "Damage Resistance (1/day)",
+					"entries": [
+						"巫医触碰一个自己以外的自愿生物，并选择一种伤害类型：酸、重击、冷、火、闪电、穿刺、坏死、猛击、或雷霆。被触碰的生物获得对该伤害类型的抗性，持续1小时。"
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"N"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "The Bastion",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 52",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"passive": 12,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"{@link The Bastion|https://deadmanstales.wordpress.com/2018/02/18/the-bastion/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/FTMa0FR.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"environment": [
+				"urban"
+			],
+			"tokenUrl": "https://i.imgur.com/H5EFY84.png",
+			"shortName": "The Bastion",
+			"languages": [
+				"Any one language (usually common)"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+3"
+			},
+			"trait": [
+				{
+					"name": "Brute",
+					"entries": [
+						"当堡垒用它击中时，近战武器会造成一个额外的伤害。"
+					]
+				},
+				{
+					"name": "Shelter",
+					"entries": [
+						"如果堡垒不是{@condition prone}或{@condition incapacitated}，在堡垒5英尺范围内的盟友获得+2的攻击力奖励。"
+					]
+				},
+				{
+					"name": "Shield Charge",
+					"entries": [
+						"如果堡垒移动至少10英尺直线朝目标移动，然后在同一回合用连枷击中目标，目标会受到额外13({@dice 3d8}) 钝击伤害。如果目标是生物，它必须成功进行一次{@dc 15} 力量豁免才能避免被击倒{@condition prone}。"
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"堡垒进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d8 + 4})重击伤害。"
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw}{@hit 7}击中，距离5英尺或范围30/120英尺，一个目标。{@h}11 ({@damage 2d6 + 4})的近战穿刺伤害，或11 ({@damage 2d6 + 4})的范围内穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"reaction": [
+				{
+					"name": "Block",
+					"entries": [
+						"堡垒对通常会击中它的攻击会增加+3 AC。要做到这一点，堡垒必须看到攻击者并且挥舞着盾牌。"
+					]
+				}
+			],
+			"attachedItems": [
+				"flail|phb",
+				"javelin|phb"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Elite Arrester",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"NX",
+				"NY",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 39",
+				"average": 97
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 17,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"passive": 12,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"{@link Elite Arrester|https://ravnicacardsconverted.tumblr.com/post/620214122202660864/join-the-ravnica-cards-converted-discord-and-come}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/dl03zFo.png"
+						}
+					}
+				]
+			},
+			"environment": [
+				"urban"
+			],
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/jtUIEh0.png",
+			"shortName": "Elite Arrester",
+			"languages": [
+				"Common",
+				"And any other two language"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+4"
+			},
+			"trait": [
+				{
+					"name": "Nonleathal Fighter",
+					"entries": [
+						"当精英逮捕者在进行非致命性的攻击时，攻击会造成额外的伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"精英逮捕者用它的战锤攻击两次。"
+					]
+				},
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}10 ({@damage 1d12 + 4})重击伤害，如果双手使用，则为10 ({@damage 1d12 + 4})重击伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"warhammer|phb"
+			]
+		},
+		{
+			"name": "Priest of the sun",
+			"shortName": "Priest of the sun",
+			"source": "COMHumanoid",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 16,
+			"skill": {
+				"intimidation": "+5",
+				"religion": "+3",
+				"persuasion": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Terran"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"牧师是一个5级的施法者。它的法术能力是魅力（法术救赎（%0%），用法术攻击命中率（%1%））。它知道以下的巫师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell blade ward}",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell mold earth|XGE}",
+								"{@spell produce flame}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell chromatic orb}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell flame blade}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell daylight}",
+								"{@spell fireball}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell fire shield}",
+								"{@spell wall of fire}"
+							],
+							"slots": 2
+						},
+						"5": {
+							"spells": [
+								"{@spell immolation|XGE}",
+								"{@spell ivaldi|COMSpells}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"牧师进行两次近战攻击。"
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达10英尺，一个目标。{@h}7 ({@damage 1d10 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Solar Strike",
+					"entries": [
+						"作为一个行动，你可以召唤太阳的力量，攻击你周围30英尺内的一个点。在该点5英尺范围内的生物必须做一个灵巧的蓄力动作，如果蓄力动作失败，将受到{@damage 1d10}+你的牧师等级的火焰伤害，并在1分钟内被{@condition blinded}，或者在成功的情况下被一半而不被{@condition blinded}。目标可以在他们每个回合结束时重复该救赎动作，成功时结束效果。"
+					]
+				},
+				{
+					"name": "Praise the Sun!",
+					"entries": [
+						"作为一个动作，你可以摆出赞美太阳的姿势，大喊'赞美太阳！'。在1分钟内，在你60英尺范围内的盟友生物的数量等于你的智慧修正值（最小1），在一个回合内对一次近战攻击造成（%0%）火焰或辐射（他们的选择）伤害，并获得与你的牧师等级相等的临时命中率。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Unyielding",
+					"entries": [
+						"当牧师受到一个会使其移动、击倒（%0%）或两者兼而有之的效果时，它可以使用它的反应，既不被移动也不被击倒（%1%）。"
+					]
+				}
+			],
+			"hasToken": true,
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"fluff": {
+				"entries": [
+					"基于{@link Cleric of Sun Domain|https://blackbandos-homebrew.fandom.com/wiki/Solar_Domain_(5e_Cleric_Archetype) }的"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/4BxBJKn.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/4g66KF9.png",
+			"isNpc": false,
+			"trait": [
+				{
+					"name": "Heavy armored",
+					"entries": [
+						"你获得对重甲的熟练度。"
+					]
+				},
+				{
+					"name": "Sun's Radiance",
+					"entries": [
+						"你学会了（%0%）的咒语，它不计入你已知的牧师咒语的数量。此外，每当你造成火焰或辐射伤害时，你可以选择从一个或另一个中改变它。"
+					]
+				},
+				{
+					"name": "Divine Strike",
+					"entries": [
+						"你获得为你的武器攻击注入燃烧的火焰的能力。在你的每个回合中，当你用武器攻击击中一个生物时，你可以使攻击对目标造成额外的（%0%）火焰伤害。"
+					]
+				},
+				{
+					"name": "Shroud of the Desert",
+					"entries": [
+						"你获得对火型或辐射型伤害的抗性，并且可以在祈祷中作为1分钟的仪式改变抗性。此外，你对被{@condition blinded}免疫。"
+					]
+				}
+			],
+			"conditionImmune": [
+				"blinded"
+			],
+			"resist": [
+				"fire",
+				"radiant"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"T"
+			],
+			"attachedItems": [
+				"glaive|phb"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "High Priest of the sun",
+			"shortName": "High Priest of the sun",
+			"source": "COMHumanoid",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"intimidation": "+5",
+				"religion": "+2"
+			},
+			"passive": 10,
+			"resist": [
+				"fire",
+				"radiant"
+			],
+			"languages": [
+				"Common",
+				"Ignan"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"大祭司是一个5级的施法者。它的法术能力是魅力（法术救赎（%0%），用法术攻击击中（%1%））。它知道以下的巫师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell control flames|xge}",
+								"{@spell create bonfire|xge}",
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell chromatic orb}",
+								"{@spell mage armor}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell flame blade}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell daylight}",
+								"{@spell fireball}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell fire shield}",
+								"{@spell wall of fire}"
+							],
+							"slots": 2
+						},
+						"5": {
+							"spells": [
+								"{@spell immolation|XGE}",
+								"{@spell ivaldi|COMSpells}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"isNpc": false,
+			"trait": [
+				{
+					"name": "Sun's Radiance",
+					"entries": [
+						"你学会了（%0%）的咒语，它不计入你已知的牧师咒语的数量。此外，每当你造成火焰或辐射伤害时，你可以选择从一个或另一个中改变它。"
+					]
+				},
+				{
+					"name": "Divine Strike",
+					"entries": [
+						"你获得为你的武器攻击注入燃烧的火焰的能力。在你的每个回合中，当你用武器攻击击中一个生物时，你可以使攻击对目标造成额外的（%0%）火焰伤害。"
+					]
+				},
+				{
+					"name": "Shroud of the Desert",
+					"entries": [
+						"你获得对火型或辐射型伤害的抗性，并且可以在祈祷中作为1分钟的仪式改变抗性。此外，你对被{@condition blinded}免疫。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw}{@hit 4}击中，距离5英尺或范围20/60英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d6 + 1})砍击伤害。"
+					]
+				},
+				{
+					"name": "Solar Strike",
+					"entries": [
+						"作为一个行动，你可以召唤太阳的力量，攻击你周围30英尺内的一个点。在该点5英尺范围内的生物必须做一个灵巧的蓄力动作，如果蓄力动作失败，将受到{@damage 1d10}+你的牧师等级的火焰伤害，并在1分钟内被{@condition blinded}，或者在成功的情况下被一半而不被{@condition blinded}。目标可以在他们每个回合结束时重复该救赎动作，成功时结束效果。"
+					]
+				},
+				{
+					"name": "Praise the Sun!",
+					"entries": [
+						"作为一个动作，你可以摆出赞美太阳的姿势，大喊'赞美太阳！'。在1分钟内，在你60英尺范围内的盟友生物的数量等于你的智慧修正值（最小1），在一个回合内对一次近战攻击造成（%0%）火焰或辐射（他们的选择）伤害，并获得与你的牧师等级相等的临时命中率。"
+					]
+				}
+			],
+			"hasToken": true,
+			"languageTags": [
+				"C",
+				"IG"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"conditionImmune": [
+				"blinded"
+			],
+			"fluff": {
+				"entries": [
+					"基于{@link Cleric of Sun Domain|https://blackbandos-homebrew.fandom.com/wiki/Solar_Domain_(5e_Cleric_Archetype) }的"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/G4NF1W4.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LYWcWI5.png",
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"T"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"scimitar|phb"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Cultist",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 7,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "1/4",
+			"fluff": {
+				"entries": [
+					"{@link Cultist|https://valldoesdnd.tumblr.com/image/148703473015}",
+					"对于一个明智的冒险家来说，普通的邪教分子是不值得关注的。他们并不勇敢，也不强悍。然而，他们对他们所崇拜的神非常虔诚，这可能使他们在数量上成为问题。",
+					"危险的仪式、隐藏的教派和背景交易都是一个地区的邪教活动的证据。聪明的冒险家会很好地杜绝这种活动，以免狂热的傻瓜开始变得众多和自信，或者更糟糕的是意外地（或故意地）向毫无戒心的世界释放出更可怕的古老恐怖。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/RdBa1Z6.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/p9JhX2b.png",
+			"shortName": "Cultist",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+3"
+			},
+			"skill": {
+				"stealth": "+3"
+			},
+			"trait": [
+				{
+					"name": "Multiple Weapons",
+					"entries": [
+						"众所周知，崇拜者会使用各种不同类型的武器来满足他们的需要。一个邪教徒可以用他们可能获得的任何远程或近战武器来代替他们的短剑，尽管他们不算是精通它的人。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d6 + 1})砍击伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"shortsword|phb"
+			]
+		},
+		{
+			"name": "Sun Knight",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item breastplate|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "33d8 + 66",
+				"average": 214
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 12,
+			"wis": 18,
+			"cha": 12,
+			"passive": 18,
+			"cr": "10",
+			"shortName": "Sun Knight",
+			"fluff": {
+				"entries": [
+					"{@link Sun Knight|https://www.pinterest.it/pin/747316131913640012/}",
+					"太阳骑士被他们的神性所感动，他们是正义之士赖以对抗面纱的支柱，他们被责任所束缚，要结束邪恶和腐败的生物在阴影中的存在。",
+					"希望的灯塔。太阳骑士能够通过他们的神圣符号引导太阳本身的亮度，照亮世界上最黑暗的角落，这样他们就能将邪恶的人从这个领域清除出去。这种灼热的光芒烧掉了隐藏在黑暗中的杂质，将太阳光芒的温暖带给那些对其光辉望而却步的生物。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Kv9hRqb.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/gFBZnlG.png",
+			"isNpc": false,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"con": "+6",
+				"wis": "+8"
+			},
+			"skill": {
+				"insight": "+8",
+				"perception": "+8",
+				"religion": "+7"
+			},
+			"immune": [
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Illumination (1/Day)",
+					"entries": [
+						"太阳骑士可以使用一个额外的动作，在30英尺范围内发出亮光，在另外30英尺范围内发出暗光。"
+					]
+				}
+			],
+			"traitTags": [
+				"Illumination"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"太阳骑士是一名9级法术施法者。其施法能力为感知（法术豁免{@dc 16}，法术攻击命中加值+8）。太阳骑士已准备了以下法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell resistance}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell cure wounds}",
+								"{@spell sanctuary}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell calm emotions}",
+								"{@spell prayer of healing}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell crusader's mantle}",
+								"{@spell remove curse}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell aura of life}",
+								"{@spell death ward}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell circle of power}",
+								"{@spell raise dead}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"太阳骑士用其光芒四射的长剑进行三次攻击。"
+					]
+				},
+				{
+					"name": "Radiant Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害，外加13 ({@damage 3d8})辐射伤害。"
+					]
+				},
+				{
+					"name": "Turn Unholy",
+					"entries": [
+						"每个在30英尺范围内能看到或听到太阳骑士的魔物或亡灵必须做一个{@dc 16}的智慧救赎动作，否则会变成{@condition frightened}，持续1分钟。一个生物可以在它的每一个回合结束时重复这个投掷智慧的动作，如果成功的话，就会对自己产生效果。如果一个生物的蓄力投掷成功或者效果对其生效，那么这个生物在接下来的24小时内对骑士的 \"邪恶化 \"免疫。骑士可以在短暂的休息时间内使用这个动作一次。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Blade Juggler",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item common clothes|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8",
+				"average": 81
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 11,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"passive": 11,
+			"cr": "3",
+			"isNpc": false,
+			"fluff": {
+				"entries": [
+					"{@link Blade Juggler|https://ravnicacardsconverted.tumblr.com/post/612221643017830400/join-the-ravnica-cards-converted-discord-and-come}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/XYRC47m.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/LYrMweC.png",
+			"shortName": "Blade Juggler",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"sleight of hand": "+6"
+			},
+			"trait": [
+				{
+					"name": "Blur of Blades",
+					"entries": [
+						"在刀锋杂耍者被击中或攻击之前，任何来袭的攻击都有劣势。刀锋杂耍者可以使用一个动作来再次获得这个好处。"
+					]
+				},
+				{
+					"name": "Spectacle: Retrieve blades",
+					"entries": [
+						"如果刀术师在本回合对一个生物造成了伤害，他们可以将此作为一个额外动作。耍刀人可以移动到10英尺，取回不再属于他们的任何数量的匕首。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"耍刀人每持有一把匕首就攻击一次"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw}{@hit 6}击中，距离5英尺或范围15/30英尺，一个目标。{@h}6 ({@damage 1d4 + 4})的近战穿刺伤害，或6 ({@damage 1d4 + 4})的范围内穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			]
+		},
+		{
+			"name": "Janissary",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item leather armor|phb}",
+						"{@item scimitar|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 14,
+			"int": 12,
+			"wis": 15,
+			"cha": 12,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Janissary",
+			"fluff": {
+				"entries": [
+					"{@link Janissary|https://www.reddit.com/r/monsteraday/comments/ab1er1/janissary/?utm_medium=android_app&utm_source=share}",
+					"\"来和魔鬼跳舞？最好是领导它。\" .",
+					"- 贾尼萨里-艾克雷姆",
+					"杰尼斯人是最精锐的士兵。对他们来说，他们的兵刃是他们身体的延伸，毫不费力地旋转着，将通常会击中他们的攻击转到其他人身上。俗话说：\"强大的防御就是良好的进攻\"，这句话适用于所有的战士，但对于贾尼萨里人来说，这对他们来说毫无意义，因为他们的刀片就像盾牌一样，毫不费力地偏移攻击。他们利用他们的爪铠在对手身上留下深深的伤口，使对手要么专注于他们屈服的伤口，要么专注于他们与旋涡状魔鬼的战斗。这种热情和技巧的结合使许多人被他们舞动的刀锋所杀。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Py0VWh3.png"
+						}
+					}
+				]
+			},
+			"isNpc": false,
+			"tokenUrl": "https://i.imgur.com/la8jvBh.png",
+			"languages": [
+				"any three languages"
+			],
+			"languageTags": [
+				"X"
+			],
+			"skill": {
+				"acrobatics": "+8",
+				"athletics": "+4",
+				"intimidation": "+3"
+			},
+			"trait": [
+				{
+					"name": "Blade Mastery",
+					"entries": [
+						"当贾尼萨里用它的弯刀击中时，它会掷出一个额外的伤害模子，并将其加入攻击的伤害中（包括在攻击中）。"
+					]
+				},
+				{
+					"name": "Blade Ward",
+					"entries": [
+						"贾尼萨里从其弯刀上获得的好处与从盾牌上获得的好处相同。"
+					]
+				},
+				{
+					"name": "Dervish",
+					"entries": [
+						"在杂役的回合中，如果它对一个生物进行了近战攻击，该生物不能对它进行机会攻击，直到杂役的回合结束。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"贾尼萨里进行了三次攻击，一次是用它的爪铠，两次是用它的弯刀。"
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}11 ({@damage 2d6 + 4})砍击伤害。"
+					]
+				},
+				{
+					"name": "Clawed Gauntlet",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d4 + 2})穿刺伤害。如果目标是不死生物或结构体以外的生物，它必须在每个回合结束时成功进行{@dc 15}宪法救赎，否则会失去2({@dice 1d4})点生命值，直到它或5英尺内的生物使用其行动来维持伤口。如果目标接受魔法治疗，伤口也会关闭。每次贾尼萨里用武器攻击击中受伤的目标时，伤口造成的伤害增加2（（%6%））。"
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"reaction": [
+				{
+					"name": "Deflection Attack",
+					"entries": [
+						"当一个敌对的生物用近战武器攻击没有击中贾尼萨里时，贾尼萨里可以使该攻击击中它所选择的一个生物，而不是攻击者，它可以在它的5英尺范围内看到这个生物。"
+					]
+				}
+			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Bodyguard",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"L",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 30",
+				"average": 97
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 10,
+			"wis": 12,
+			"cha": 13,
+			"passive": 14,
+			"cr": "5",
+			"shortName": "Bodyguard",
+			"languages": [
+				"any one language (usually common)"
+			],
+			"languageTags": [
+				"X"
+			],
+			"save": {
+				"con": "+4"
+			},
+			"skill": {
+				"perception": "+4",
+				"athletics": "+4"
+			},
+			"trait": [
+				{
+					"name": "Sentinel",
+					"entries": [
+						"当生物离开保镖的范围时，即使他们脱离了，也会引发机会攻击。当保镖用机会攻击击中一个生物时，该生物的速度在该回合的剩余时间内变为零。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"保镖进行三次长剑攻击。"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害，如果双手使用，则为8 ({@damage 1d10 + 3})砍击伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"reaction": [
+				{
+					"name": "Counterstrike",
+					"entries": [
+						"当保镖5英尺内的生物对保镖以外的生物进行攻击时，保镖可以对该生物进行攻击。"
+					]
+				},
+				{
+					"name": "Parry",
+					"entries": [
+						"在被近战攻击击中时，保镖可以在其护甲等级上增加3个AC。要做到这一点，它必须佩戴近战武器并且看到攻击者。"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"{@link Bodyguard (dandwiki)|https://www.dandwiki.com/wiki/Bodyguard_(5e_Creature)}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/2DMorEY.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/GUSc2Ob.png",
+			"attachedItems": [
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "Handmaiden or Prostitute or Hooker or Courtesan",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 12,
+			"int": 12,
+			"wis": 13,
+			"cha": 14,
+			"passive": 13,
+			"cr": "1/2",
+			"shortName": "Handmaiden or Prostitute or Hooker or Courtesan",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+3"
+			},
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d4 + 2})砍击伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"tokenUrl": "https://i.imgur.com/Jria7rW.png",
+			"fluff": {
+				"entries": [
+					"{@link HandMaiden|https://dnd-5e-homebrew.tumblr.com/post/147716547969/princess-class-by-by-impersonater/amp}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PH17sG3.jpg"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"dagger|phb"
+			]
+		},
+		{
+			"name": "Sivir, the Battle Mistress",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 11,
+			"wis": 14,
+			"cha": 15,
+			"passive": 15,
+			"cr": "7",
+			"shortName": "Sivir, the battle mistress",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+4",
+				"dex": "+7",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+4",
+				"investigation": "+3",
+				"persuasion": "+5",
+				"perception": "+5"
+			},
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Sivir挥舞着十字刀Chalicar，这是一件魔法武器，可以为攻击和伤害卷提供+1的奖励（已经包含在她的统计数字中）。在她使用该武器进行攻击后，该武器将回到她的手中。"
+					]
+				},
+				{
+					"name": "Desert Born",
+					"entries": [
+						"Sivir天生适应炎热的气候，对极度炎热的影响的任何拯救都会自动成功。"
+					]
+				},
+				{
+					"name": "Fleet of Foot",
+					"entries": [
+						"西维尔可以在她的回合中使用一个额外的行动来进行冲刺行动。"
+					]
+				},
+				{
+					"name": "Rise of the Ascended (1/Day)",
+					"entries": [
+						"当Sivir死亡时，她会在1分钟内恢复她总命中率的一半，除非她的身体被摧毁，或者她原生在与她目前所在的平面不同的平面。"
+					]
+				},
+				{
+					"name": "Tomb Raider",
+					"entries": [
+						"在确定超过一个世纪的非魔法物品的货币价值时，西维尔在能力检查方面有优势。此外，在古代遗迹中，Sivir对她能看到的有害影响的灵巧判断具有优势。要获得这个好处，她不能是（%0%）、（%1%）或（%2%）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sivir进行了两次chalicar攻击。"
+					]
+				},
+				{
+					"name": "Chalicar",
+					"entries": [
+						"{@atk rw} {@hit 8}击中，范围30/90英尺，一个目标。{@h}11 ({@damage 2d6 + 5})砍伤，目标10英尺内的敌对生物必须成功进行{@dc 15}的灵巧救赎，否则会受到7({@damage 2d6})的砍伤。每次目标的蓄力失败，西维尔可以在前一个目标的10英尺范围内选择一个新的目标（最多6次），但不能多次选择同一个目标。"
+					]
+				},
+				{
+					"name": "Deadly Hurl",
+					"entries": [
+						"西维尔将她的十字刀投掷成一条30英尺长、5英尺宽的线。队列中的每个生物都必须做一个{@dc 15}灵巧的蓄力动作，蓄力失败会受到14({@damage 4d6})的砍击伤害，蓄力成功则受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Dauntless Charge (1/Day)",
+					"entries": [
+						"西维尔和她选择的每个在她30英尺范围内并能听到她的生物的速度都会加倍，直到西维尔的下一个回合开始。然后Sivir可以作为奖励动作进行一次攻击。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"reaction": [
+				{
+					"name": "Spell Shield",
+					"entries": [
+						"西维尔可以在她对有害咒语或其他魔法效果所做的拯救动作上增加一个（%0%）。"
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/hNoJBGv.png",
+			"fluff": {
+				"entries": [
+					"{@link Sivir, the Battle Mistress|https://www.reddit.com/r/monsteraday/comments/pi8qbz/sivir_every_problem_has_its_price_every_life_its/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PFxUHR7.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Shyvana - the half-dragon",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"source": "COMHumanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				},
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					],
+					"condition": "in dragon form"
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 50,
+					"condition": "in dragon form"
+				}
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 14,
+			"passive": 16,
+			"cr": "7",
+			"shortName": "Shyvana - the half-dragon",
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"con": "+6",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+7",
+				"perception": "+6"
+			},
+			"resist": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Burnout",
+					"entries": [
+						"作为她转身时的额外动作，Shyvana可以在10英尺范围内发出炽热的火焰，持续到她下一回合的开始。在这个半径范围内开始行动的生物必须在一个{@dc 14}灵巧的蓄力动作上成功，否则就会受到7({@damage 2d6})的火焰伤害。",
+						"当Shyvana处于龙形状态时，如果救赎失败，目标会受到额外的3({@damage 1d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Dragon Slayer",
+					"entries": [
+						"Shyvana在对龙的武器攻击卷上有优势。当Shyvana用武器攻击击中一条龙时，武器会造成一个额外的伤害。"
+					]
+				},
+				{
+					"name": "Fury of the Dragon",
+					"entries": [
+						"每当Shyvana在一个回合中受到20个或更多的火焰伤害时，她会立即恢复她的改变形状行动的任何消耗的使用。"
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"F",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Shyvana用她的爪子攻击两次。如果可以的话，她可以用咬来代替其中一次攻击。"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d4 + 4})砍击伤害，外加3 ({@damage 1d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Bite (Dragon Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达10英尺，一个目标。{@h}13 ({@damage 2d8 + 4})穿刺伤害，外加3 ({@damage 1d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge}",
+					"entries": [
+						"Shyvana在5英尺宽的30英尺范围内释放火焰。该区域内的每个生物都必须做一个{@dc 14}灵巧救赎，救赎失败会受到28({@damage 8d6})的火焰伤害，救赎成功则受到一半的伤害。",
+						"当Shyvana处于龙形状态时，该区域会变成一个30英尺的圆锥体，目标会受到额外的14({@damage 4d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Change Shape (1/Day)",
+					"entries": [
+						"Shyvana神奇地多态化为一只大龙，并能在此形态下保持1小时。她的统计数据，除了她的体型，在这种形态下保持不变。她所穿戴或携带的任何装备都不会被转化。如果她死亡或坠落，Shyvana会恢复到她的真实形态（%0%）。她可以在她的回合中使用一个额外的动作恢复到她的真实形态。"
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"tokenUrl": "https://i.imgur.com/79ROzTF.png",
+			"fluff": {
+				"entries": [
+					"{@link Shyvana - the half-dragon|https://www.reddit.com/r/monsteraday/comments/p9bd5y/shyvana_suffer_the_true_fury_of_a_halfdragon/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/MQOCnQ7.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	]
+}

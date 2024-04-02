@@ -1,0 +1,1656 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ADMesmer",
+				"abbreviation": "MESM",
+				"full": "The Mesmer",
+				"version": "1.0",
+				"url": "https://drive.google.com/file/d/1JUjWgDKCC190EgmazSwYrtjHp7Tu_It7/view",
+				"authors": [
+					"Aeron Drake"
+				],
+				"convertedBy": [
+					"Aeron Drake"
+				]
+			}
+		],
+		"dateAdded": 1644264098,
+		"dateLastModified": 1668987711,
+		"_dateLastModifiedHash": "6f7b748fea"
+	},
+	"class": [
+		{
+			"name": "Mesmer",
+			"source": "ADMesmer",
+			"fluff": [
+				{
+					"name": "The Mesmer",
+					"type": "section",
+					"entries": [
+						"一个穿着华丽的人类静静地走过战场，直接看向他面前的兽人萨满。兽人举起手臂，开始喊出一个奥秘的咒语。一个小火球出现在他的手中，随着每个字的出现，火球越来越大。当火球准备释放时，人类指着兽人，同时他快速地低语了几句，就在火球释放的前一秒，它在空中消失了，而人类又开始向困惑的兽人走去。",
+						"地精检查了一个大房间，里面充满了空箱子和布满灰尘的桌子。几分钟后，她闭上眼睛，摸着地面施了一个法术。几秒钟过去了，转眼间，整个房间变成了一个干净的房间，箱子里装满了武器，在其中一张桌子上出现了一张完整的城市地图和一些带有运输非法产品命令的信件。侏儒拿着地图和信件离开了街道，去了当地政府总部的方向。",
+						"精灵走到大宅门口。他不认识这些守卫，但这不是问题。当他到达大门时，他完成了低声的咒语，然后两个卫兵向他致敬并打开了门。精灵笑了笑，进入了大宅。",
+						"无论是冒险家、调查员还是潜入者，迷幻者都能控制能量来操纵思想、创造幻觉和中断魔法的流动，以阻止魔法效果或咒语。",
+						{
+							"type": "entries",
+							"name": "Energy Manipulators",
+							"entries": [
+								"对于普通人来说，魔术师是一个来自马戏团的幻术师，他可以创造幻觉，在观众的脑海中玩弄花样以示娱乐。尽管巫师可以做那种把戏，但他们比当地的魔术师更强大，只有少数人知道或见过巫师的真正力量。他们利用每个生命实体周围的能量，并将其转化为强大的法术，创造幻觉，并打击心灵。他们不断地储存能量，并在每次施法时释放能量，维持他们周围的生物之间的平衡，除非他们决定摧毁某个特定敌人的能量，造成毁灭性的心灵打击，在某些情况下，还会耗尽其能量。",
+								"与巫师类似，巫师研究活人的能量，并操纵其中的奥术精华，按自己的需要使用。每所介人学校都专门教授和发现使用介人魔法传统的新方法：支配、决斗、幻术和灵感。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Covert Agents and Investigators",
+							"entries": [
+								"当一个帝国或行会不能派盗贼或刺客去一个地方收集信息时，他们会派一个迷魂师去收集他们需要的东西。凭借幻觉和诡计，巫师可以像什么都没发生一样进入和离开一个地方。他们有能力伪装自己，并利用心智技巧分散敌人的注意力，这使他们成为隐秘任务中的完美潜入者。",
+								"在其他情况下，他们与地方当局合作，调查涉及或可能涉及魔法的未知事件，并用于追踪危险的施法者，因为它能够控制法术中使用的能量，在敌人施法之前就打断他们。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Combat Illusionists",
+							"entries": [
+								"幻术师是幻觉和控制的大师，颠覆敌人的能量为自己和盟友所用。与其他职业相结合，他们的技能可以提供很好的支持，使敌人的力量对他们不利，并改变现实的结构来阻碍敌人，帮助盟友。弥赛亚人有快速施法的能力，这在激烈的战斗中能起到很大的作用。他们的支配能力使他们能够控制敌人的技能和能量。他们独特的幻象天赋可以减缓甚至停止敌人的行动和技能施放，或者造成想象中的疾病，消耗敌人的健康和能量，同时为盟友提供治疗和能量。虽然弥赛亚人不以蛮力著称，但他们迷惑、分散注意力和消耗敌人资源的能力足以弥补。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Mesmer",
+							"entries": [
+								"创建一个介人需要一个与一个介人传统相关的背景故事。作为一个起始角色，你将选择一个引导你如何使用能量的介人传统，但发现的确切时刻是由你决定的。也许你属于一个介人家族 也许你发现你能在一定程度上控制这种能量？有人教给你介人魔术的基本知识？你为进入当地马戏团学会了一些幻术技巧？你是否参加了一个介人学校，在那里你学习了介人传统并练习了你的咒语？你是一个小镇的调查员学徒吗？",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照这些建议，你可以迅速成为一个迷魂者。首先，魅力应该是你最高的能力得分，其次是灵巧。第二，选择（%0%）或（%1%）的背景。第三，选择（%2%）和（%3%）的咒语。"
+									]
+								}
+							]
+						}
+					],
+					"page": 2,
+					"source": "Mesmer"
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"{@item greatsword|phb|greatswords}",
+					"{@item rapier|phb|rapiers}",
+					"{@item scimitar|phb|scimitars}"
+				],
+				"tools": [
+					"{@item disguise kit|PHB}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"insight",
+								"perception",
+								"performance",
+								"persuasion",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$cha_mod$>",
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item shortbow|phb} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"An {@item arcane focus|phb}, a {@item dagger|phb}, and an {@item entertainer's pack|phb}"
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"shortbow|phb",
+							"arrows (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"arcane focus|phb",
+							"dagger|phb",
+							"entertainer's pack|phb"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Mesmer}"
+					],
+					"rows": [
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Mesmer}",
+						"{@filter 2nd|spells|level=2|class=Mesmer}",
+						"{@filter 3rd|spells|level=3|class=Mesmer}",
+						"{@filter 4th|spells|level=4|class=Mesmer}",
+						"{@filter 5th|spells|level=5|class=Mesmer}",
+						"{@filter 6th|spells|level=6|class=Mesmer}",
+						"{@filter 7th|spells|level=7|class=Mesmer}",
+						"{@filter 8th|spells|level=8|class=Mesmer}",
+						"{@filter 9th|spells|level=9|class=Mesmer}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Mesmer Casting|Mesmer|ADMesmer|1",
+				{
+					"classFeature": "Mesmer Magic Tradition|Mesmer|ADMesmer|1",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "Fast Casting|Mesmer|ADMesmer|2",
+					"tableDisplayName": "Fast Casting (2 uses)"
+				},
+				"Charismatic|Mesmer|ADMesmer|3",
+				"Energy Drain|Mesmer|ADMesmer|3",
+				"Ability Score Improvement|Mesmer|ADMesmer|4",
+				{
+					"classFeature": "Mesmer Magic Feature|Mesmer|ADMesmer|6",
+					"gainSubclassFeature": true
+				},
+				"Mesmer Knowledge|Mesmer|ADMesmer|7",
+				"Ability Score Improvement|Mesmer|ADMesmer|8",
+				{
+					"classFeature": "Mesmer Magic Feature|Mesmer|ADMesmer|10",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "Fast Casting|Mesmer|ADMesmer|11",
+					"tableDisplayName": "Fast Casting (3 uses)"
+				},
+				"Ability Score Improvement|Mesmer|ADMesmer|12",
+				{
+					"classFeature": "Mesmer Magic Feature|Mesmer|ADMesmer|14",
+					"gainSubclassFeature": true
+				},
+				"Veil of Illusions|Mesmer|ADMesmer|15",
+				"Ability Score Improvement|Mesmer|ADMesmer|16",
+				{
+					"classFeature": "Fast Casting|Mesmer|ADMesmer|17",
+					"tableDisplayName": "Fast Casting (4 uses)"
+				},
+				"Web of Disruption|Mesmer|ADMesmer|18",
+				"Ability Score Improvement|Mesmer|ADMesmer|19",
+				"Ether Feast|Mesmer|ADMesmer|20"
+			],
+			"subclassTitle": "Mesmer Magic Tradition",
+			"classSpells": [
+				"Energy Bolt|mesm",
+				"Friends",
+				"Light",
+				"Mage Hand",
+				"Minor Illusion",
+				"Prestidigitation",
+				"Sword Burst|tce",
+				"Thaumaturgy",
+				"Backfire|mesm",
+				"Charm Person",
+				"Color Spray",
+				"Detect Magic",
+				"Disguise Self",
+				"Dissonant Whispers",
+				"Empathy|mesm",
+				"Illusory Script",
+				"Mage Armor",
+				"Magic Missile",
+				"Silent Image",
+				"Sleep",
+				"Alter Self",
+				"Blindness/Deafness",
+				"Blur",
+				"Calm Emotions",
+				"Crown of Madness",
+				"Hold Person",
+				"Invisibility",
+				"Lesser Restoration",
+				"Magic Mouth",
+				"Mind Spike|xge",
+				"Mirror Image",
+				"Nystul's Magic Aura",
+				"Phantasmal Force",
+				"Shadow Blade|xge",
+				"Silence",
+				"Spirit of Failure|mesm",
+				"Suggestion",
+				"Zone of Truth",
+				"Catnap|xge",
+				"Counterspell",
+				"Dispel Magic",
+				"Enemies Abound|xge",
+				"Fear",
+				"Haste",
+				"Hypnotic Pattern",
+				"Major Image",
+				"Nondetection",
+				"Phantom Steed",
+				"Power Leech|mesm",
+				"Protection from Energy",
+				"Remove Curse",
+				"Slow",
+				"Charm Monster|xge",
+				"Chaos Storm|mesm",
+				"Compulsion",
+				"Confusion",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Otiluke's Resilient Sphere",
+				"Phantasmal Killer",
+				"Polymorph",
+				"Bigby's Hand",
+				"Creation",
+				"Dominate Person",
+				"Dream",
+				"Greater Restoration",
+				"Hold Monster",
+				"Mislead",
+				"Modify Memory",
+				"Scrying",
+				"Seeming",
+				"Steel Wind Strike|xge",
+				"Synaptic Static|xge",
+				"Wall of Force",
+				"Disintegrate",
+				"Globe of Invulnerability",
+				"Guards and Wards",
+				"Mass Suggestion",
+				"Mental Prison|xge",
+				"Programmed Illusion",
+				"Etherealness",
+				"Forcecage",
+				"Mirage Arcane",
+				"Mordenkainen's Sword",
+				"Power Word Pain|xge",
+				"Project Image",
+				"Sequester",
+				"Simulacrum",
+				"Antimagic Field",
+				"Antipathy/Sympathy",
+				"Dominate Monster",
+				"Feeblemind",
+				"Glibness",
+				"Illusory Dragon|xge",
+				"Maddening Darkness|xge",
+				"Mind Blank",
+				"Power Word Stun",
+				"Mass Polymorph|xge",
+				"Psychic Scream|xge",
+				"Shapechange",
+				"True Polymorph",
+				"Weird"
+			],
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Mesmer Casting",
+			"source": "ADMesmer",
+			"page": 2,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 1,
+			"entries": [
+				"随着对流淌在你和其他生物体内的能量的操纵，你学会了一种基于这种能量使用魔法的方法。关于法术的一般规则，请看（%0%）。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"在1级的时候，你知道两个你所选择的巫师法术列表中的咒语。在更高的等级，你会学习更多你所选择的巫师咒语，如巫师表的已知咒语栏所示。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"咒语表显示了你有多少个法术槽来施展你的一级及以上的法术。要施展其中一个法术，你必须消耗一个该法术等级或更高的法术槽。当你完成一个长时间的休息时，你会重新获得所有消耗的法术槽。",
+						"你准备好可供你施展的迷魂法术清单，从迷魂法术清单中选择。当你这样做的时候，选择与你的魅力修正值+你的巫师等级相等数量的巫师法术（最少一个法术）。这些法术的等级必须是你有法术槽的。",
+						"例如，如果你是一个3级的巫师，你有四个1级和两个2级的法术槽。在魅力值为16的情况下，你准备的法术清单可以包括6个1级或2级的法术，以任何方式组合。如果你准备了1级法术（%0%），你可以用1级或2级法术槽来施放它。施放该法术并不会从你的准备好的法术列表中移除它。",
+						"你可以在完成长时间休息时改变你准备的法术清单。准备一个新的弥赛亚法术清单需要花时间集中精力：对于你清单上的每个法术等级，至少需要1分钟。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"魅力是你施展迷魂咒的能力，因为你的魔法的力量依赖于你利用自己和其他生物体内的能量的能力。每当咒语提到你的施法能力时，你就会使用你的魅力。此外，在设定你所施展的迷魂咒的蓄力DC时，以及在用迷魂咒进行攻击时，你会使用你的魅力修饰。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"你可以以仪式的方式施放一个迷魂咒，如果该咒语有仪式标签，并且你已经准备好该咒语。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用一个{@item arcane focus|phb}作为你的迷魂法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Mesmer Magic Tradition",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 1,
+			"entries": [
+				"在第一级，你选择一种梅斯梅尔魔法传统。支配魔法、决斗魔法、幻觉魔法或灵感魔法，这些都在等级描述的末尾有详细说明。你的选择在1级时授予你特性，在6级、10级和14级时再次授予你特性。"
+			]
+		},
+		{
+			"name": "Fast Casting",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 2,
+			"entries": [
+				"二级时，你被训练成比以前更快地施法，以打断你的敌人并保护自己。你有两个额外的反应，可以在同一回合或分开的回合中使用（允许你在下一回合前使用三个反应或在分开的两个回合中使用两个反应）。你只能用这些反应来使用你的迷魂咒语或迷魂功能之一。当你完成短时或长时休息时，你会重新获得任何已消耗的反应。",
+				"当你在这个等级中达到11级时，额外的反应次数增加到3次，当你在这个等级中达到17级时增加到4次。"
+			]
+		},
+		{
+			"name": "Charismatic",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 3,
+			"entries": [
+				"从第三级开始，当你在你精通的基于魅力的技能检查中掷出1或2时，你可以重掷骰子，并且必须使用新的骰子，即使新的骰子是1或2。"
+			]
+		},
+		{
+			"name": "Energy Drain",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以使用你与生俱来的迷魂术来获取敌人的能量并恢复你的能量。作为一个动作，你能看到的60英尺范围内的生物必须做一个宪法救赎动作（DC等于你的迷魂咒救赎DC）。如果救赎失败，目标将受到相当于1d6+你的魅力修饰的力量伤害，并且你可以恢复已消耗的法术槽。咒语槽的综合等级可以等于所受伤害的一半（四舍五入），并且没有一个咒语槽可以是6级或更高。",
+				"当你达到10级（2d6）和14级（3d6）时，伤害增加1d6。",
+				"一旦你使用这个功能，你必须完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Mesmer Magic feature",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的梅斯梅尔魔法传统赋予的功能。"
+			]
+		},
+		{
+			"name": "Mesmer Knowledge",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 7,
+			"entries": [
+				"在7级的时候，你被认为是一个能量知识方面的圣人，这要归功于你在迷幻学院多年的学习。你在任何与魔法和奥术知识有关的技能检查中都有优势。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Mesmer Magic feature",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 10,
+			"entries": [
+				"在10级时，你获得一个由你的梅斯梅尔魔法传统赋予的功能。"
+			]
+		},
+		{
+			"name": "Fast Casting",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 11,
+			"entries": [
+				"从11级开始，额外反应的数量增加到三个。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Mesmer Magic feature",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 14,
+			"entries": [
+				"在14级时，你获得一个由你的梅斯梅尔魔法传统赋予的功能。"
+			]
+		},
+		{
+			"name": "Veil of Illusions",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 15,
+			"entries": [
+				"15级时，你在自己周围创造了一层神奇的面纱，使人更难读懂你的意图。你现在精通魅力（欺骗）和魅力（劝说）技能。此外，作为一个额外的行动，你可以花费一个法术槽对你的智慧（洞察力）检查施加不利条件，持续10分钟。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Fast Casting",
+			"source": "ADMesmer",
+			"page": 3,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 17,
+			"entries": [
+				"从17级开始，额外反应的数量增加到4个。"
+			]
+		},
+		{
+			"name": "Web of Disruption",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 18,
+			"entries": [
+				"在18级时，你可以专注于一个敌人，并施放一个强大的魔法，在短时间内完全打断他。",
+				"作为一个行动，你以一个生物为目标，它必须做一个魅力储蓄动作。如果救赎失败，它将被麻痹若干回合，麻痹时间等于你的魅力修正值。",
+				"在它的每个回合结束时，目标可以再做一次魅力储蓄动作。如果成功，扰乱之网的效果就会在目标身上结束。如果效果在网的持续时间之前结束，目标会受到6d6的力量伤害。",
+				"你不能同时在两个或更多的生物身上使用此功能，也不能在过去24小时内受到干扰之网影响的生物身上使用。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ether Feast",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以花1分钟的时间，花费一个6级或更低级的法术槽。然后你可以选择重新获得一个高一级的法术槽，或两个低一级的法术槽。一旦你用这个功能恢复了法术槽，你必须在完成一个长时间的休息后才能再次这样做。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Domination Magic",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Domination",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"entries": [
+				"专注于支配魔法的巫师使用的技能和法术可以在造成伤害的同时扰乱他们的敌人。这些巫师还专注于惩罚他们的敌人的行为。",
+				"使用支配魔法的调解人专注于尽可能地关闭他们的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Visions of Regret|Mesmer|ADMesmer|Domination|ADMesmer|1"
+				}
+			]
+		},
+		{
+			"name": "Visions of Regret",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Domination",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"一级时，当一个你能看到的60英尺范围内的生物用攻击击中你时，你可以用一个反应来使该生物做一个魅力拯救动作。如果救赎失败，该生物会受到2d8的力量伤害，如果救赎成功，则会受到一半的伤害。",
+				"在你完成长时间休息之前，你可以使用这个功能两次。"
+			]
+		},
+		{
+			"name": "Cry of Frustration",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Domination",
+			"subclassSource": "ADMesmer",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从第6级开始，当你能看到的60英尺范围内的生物进行救赎时，你可以使用反应并花费1个法术槽让它的第一次救赎处于劣势。如果该生物救赎失败，它也会受到相当于1d10+你的魅力修改器的力量伤害。",
+				"在你完成短期或长期休息之前，你可以使用这个功能的次数与你的魅力修改器相等（至少一次）。"
+			]
+		},
+		{
+			"name": "Power Lock",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Domination",
+			"subclassSource": "ADMesmer",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，作为反应，当你能看到的60英尺范围内的生物进行攻击或使用法术时，它必须做一个魅力储蓄动作。如果救赎失败，它的攻击就会失败，并且在下一回合结束前不能使用同样的攻击或咒语。",
+				"一旦你使用这个功能，你就不能再使用它，直到完成长时间的休息。"
+			]
+		},
+		{
+			"name": "Overload",
+			"source": "ADMesmer",
+			"page": 4,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Domination",
+			"subclassSource": "ADMesmer",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，当你用咒语或法术攻击单一生物时，你可以使攻击对目标造成额外的1d10武力伤害。"
+			]
+		},
+		{
+			"name": "Dueling Magic",
+			"source": "ADMesmer",
+			"page": 5,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Dueling",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"entries": [
+				"献身于决斗魔法的巫师是魔法战士，他们在近身战斗时使用自己的强大幻象来迷惑和分散敌人的注意力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Illusory Duelist|Mesmer|ADMesmer|Dueling|ADMesmer|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjure Illusions|Mesmer|ADMesmer|Dueling|ADMesmer|1"
+				}
+			]
+		},
+		{
+			"name": "Illusory Duelist",
+			"source": "ADMesmer",
+			"page": 5,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Dueling",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"从1级开始，你可以使用你精通的武器作为你的迷魂法术的施法重点。",
+				"同样在1级时，当你没有穿戴盔甲并且没有挥舞盾牌时，你的护甲等级等于10+你的灵巧修正值+你的魅力修正值。"
+			]
+		},
+		{
+			"name": "Conjure Illusions",
+			"source": "ADMesmer",
+			"page": 5,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Dueling",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在第一层，作为一个动作，你引导你的能量来创造一个你自己的幻象。它出现在一个你能看到的30英尺内的无人空间。幻象的攻击力为10，命中率为1，力量为2，它们根据你的主动权进行回合，它们可以移动到你能看到的空间，最多30英尺，但它们必须保持在你的120英尺之内。幻象会模仿你的动作，包括你的攻击，但不会造成伤害。",
+				"幻象持续10分钟，直到你失去注意力（就像你在专注于一个法术），或者直到它的命中率下降到0。 你可以使用你的行动来解除幻象。",
+				"每次当你在你的幻象的5英尺范围内时，一个生物用攻击或咒语来攻击你，它必须对你的咒语救赎DC进行智力测验。如果救赎失败，它就会以幻象为目标。",
+				"你创造的幻象数量在你达到6级时增加到2个，在你达到10级时增加到3个，在你达到14级时增加到4个。",
+				"你可以在完成长时间休息之前使用这个功能，次数与你的魅力修改器相等（至少一次）。"
+			]
+		},
+		{
+			"name": "Improved Illusions",
+			"source": "ADMesmer",
+			"page": 5,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Dueling",
+			"subclassSource": "ADMesmer",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你至少有一个自己的幻象时，你可以使用下面的选项。",
+				"一旦你使用这个功能，你就不能再使用它，直到你完成一个长时间的休息，或者你施展了一个1级或更高的魔法。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Illusion Strike",
+							"entries": [
+								"当你进行近战攻击或施法时，你可以花费一个法术槽来进行，就像你在幻象的空间中一样，但你必须使用自己的感官。当你花费一个反应来进行机会攻击时，你也可以使用这个选项。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Mirror Image",
+							"entries": [
+								"作为一个额外的行动，你可以花费一个法术槽，在你周围30英尺内创造一个新的幻象。你可以拥有的幻象的最大数量由 \"幻术 \"功能决定。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Phantasmal Swap",
+							"entries": [
+								"当你被攻击击中或被法术瞄准时，作为反应，但在受到伤害之前，你可以花费一个法术槽，与你身边10英尺内的一个幻象交换你的位置。在你完成短时或长时休息之前，你可以使用这个特性两次。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Shatter",
+							"entries": [
+								"作为一个额外的行动，你可以选择你的一个幻象并摧毁它。所有在幻象5英尺范围内的生物必须做一个灵巧的蓄力动作。如果救赎失败，它将受到相当于1d10+你的魅力修改器的力量伤害，如果救赎成功，将受到一半的伤害。你可以消耗一个法术槽，使你使用的法术槽等级的伤害增加1d10。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Perfect Illusions",
+			"source": "ADMesmer",
+			"page": 5,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Dueling",
+			"subclassSource": "ADMesmer",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，如果你在一个你自己的幻象周围5英尺内，生物在对你或对该幻象的攻击卷和法术攻击中处于劣势。"
+			]
+		},
+		{
+			"name": "Illusion Magic",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Illusion",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"entries": [
+				"专注于幻象魔法的巫师专注于阻碍敌人，用六芒星降低他们的效率和移动，欺骗他们的敌人。",
+				"幻象魔法还能帮助施法者用幻象来欺骗你的敌人，使你自己受益，或者为施法者提供防御和临时功能。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Imagined Burden|Mesmer|ADMesmer|Illusion|ADMesmer|1"
+				}
+			]
+		},
+		{
+			"name": "Imagined Burden",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Illusion",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"一级时，当你能看到的60英尺范围内的生物移动或采取行动时，你可以使用反应将其速度减半，并且目标在相当于你魅力修饰的一半的回合内不能采取反应（向上取整）。",
+				"一旦你使用这个功能，你就不能再使用它，直到完成短期或长期休息。"
+			]
+		},
+		{
+			"name": "Distortion",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Illusion",
+			"subclassSource": "ADMesmer",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你可以扭曲你的身体形态以避免一些伤害。作为你受到伤害时的反应，你可以将对你的伤害减半。在你完成短时或长时休息之前，你可以使用这个功能两次。"
+			]
+		},
+		{
+			"name": "Illusionary Condition",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Illusion",
+			"subclassSource": "ADMesmer",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，当你对60英尺范围内你能看到的生物使用法术时，它必须做一个智慧救赎动作。拯救失败后，目标会失明或失聪（由你选择），并且它只能在它的每个回合中使用一个额外的行动或一个行动，回合数等于你的魅力修正值的一半（四舍五入）。",
+				"你可以在完成长时间休息之前使用这个功能，次数与你的魅力修改器相等（至少一次）。"
+			]
+		},
+		{
+			"name": "Phantom Pain",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Illusion",
+			"subclassSource": "ADMesmer",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，作为一个额外的动作，在你60英尺范围内的一个你能看到的生物必须做一个魅力储蓄动作。如果救赎失败，目标会在每个回合开始时受到1d6的力量伤害，并且它收到的任何治疗效果会在1分钟内减少一半。在它的每个回合结束时，目标可以再做一次魅力救赎。如果成功，幻痛效果在目标身上结束。",
+				"你不能同时在两个或更多的生物中使用这个功能。"
+			]
+		},
+		{
+			"name": "Inspiration Magic",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Inspiration",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"entries": [
+				"使用灵感魔法的巫师专注于更多的防御性风格，给予抵抗力，减少伤害，并使用奥术能量来治疗和保护自己。",
+				"灵感魔法使用特殊的咒语，这是一系列的姿态，为介人提供保护和防御。"
+			]
+		},
+		{
+			"name": "Mantra of Protection",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Inspiration",
+			"subclassSource": "ADMesmer",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"在1级时，你获得对另一个你选择的救赎的熟练度。此外，你学会了（%0%）的法术，你总是有它的准备，而且它不计入你每天可以准备的法术数量。"
+			]
+		},
+		{
+			"name": "Channeling",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Inspiration",
+			"subclassSource": "ADMesmer",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你施放一个法术时，你可以使用你的反应并花费最多两个迷幻命中率来恢复已消耗的法术槽。每花费一个命中率骰子，就掷1d8。咒语槽的综合等级可以等于总卷，而且没有一个咒语槽可以是6级或更高。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Mantra of Restoration",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Inspiration",
+			"subclassSource": "ADMesmer",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级时，你可以在使用法术时恢复少量的健康。每当你使用法术槽时，你在每一个法术槽等级中恢复1点生命值。"
+			]
+		},
+		{
+			"name": "Mantra of Expel",
+			"source": "ADMesmer",
+			"page": 6,
+			"className": "Mesmer",
+			"classSource": "ADMesmer",
+			"subclassShortName": "Inspiration",
+			"subclassSource": "ADMesmer",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，作为一种反应，你可以消耗一个法术槽来获得对一个法术的救赎优势。此外，如果该法术造成伤害，如果你检查失败，你只受到一半的伤害，成功则没有伤害。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Domination Magic",
+			"shortName": "Domination",
+			"source": "ADMesmer",
+			"page": 4,
+			"subclassFeatures": [
+				"Visions of Regret|Mesmer|ADMesmer|Domination|ADMesmer|1",
+				"Cry of Frustration|Mesmer|ADMesmer|Domination|ADMesmer|6",
+				"Power Lock|Mesmer|ADMesmer|Domination|ADMesmer|10",
+				"Overload|Mesmer|ADMesmer|Domination|ADMesmer|14"
+			],
+			"className": "Mesmer",
+			"classSource": "ADMesmer"
+		},
+		{
+			"name": "Dueling Magic",
+			"shortName": "Dueling",
+			"source": "ADMesmer",
+			"page": 5,
+			"subclassFeatures": [
+				"Illusory Duelist|Mesmer|ADMesmer|Dueling|ADMesmer|1",
+				"Conjure Illusions|Mesmer|ADMesmer|Dueling|ADMesmer|1",
+				"Improved Illusions|Mesmer|ADMesmer|Dueling|ADMesmer|6",
+				"Perfect Illusions|Mesmer|ADMesmer|Dueling|ADMesmer|14"
+			],
+			"className": "Mesmer",
+			"classSource": "ADMesmer"
+		},
+		{
+			"name": "Illusion Magic",
+			"shortName": "Illusion",
+			"source": "ADMesmer",
+			"page": 6,
+			"subclassFeatures": [
+				"Imagined Burden|Mesmer|ADMesmer|Illusion|ADMesmer|1",
+				"Distortion|Mesmer|ADMesmer|Illusion|ADMesmer|6",
+				"Illusionary Condition|Mesmer|ADMesmer|Illusion|ADMesmer|10",
+				"Phantom Pain|Mesmer|ADMesmer|Illusion|ADMesmer|14"
+			],
+			"className": "Mesmer",
+			"classSource": "ADMesmer"
+		},
+		{
+			"name": "Inspiration Magic",
+			"shortName": "Inspiration",
+			"source": "ADMesmer",
+			"page": 6,
+			"subclassFeatures": [
+				"Mantra of Protection|Mesmer|ADMesmer|Inspiration|ADMesmer|1",
+				"Channeling|Mesmer|ADMesmer|Inspiration|ADMesmer|6",
+				"Mantra of Restoration|Mesmer|ADMesmer|Inspiration|ADMesmer|10",
+				"Mantra of Expel|Mesmer|ADMesmer|Inspiration|ADMesmer|14"
+			],
+			"className": "Mesmer",
+			"classSource": "ADMesmer"
+		}
+	],
+	"spell": [
+		{
+			"name": "Backfire",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take in response when you see a creature making an attack within 60 feet of you."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Mesmer",
+						"source": "ADMesmer"
+					}
+				]
+			},
+			"entries": [
+				"该生物必须做一个智慧救赎动作。拯救失败时，它在攻击卷中处于不利地位。如果攻击仍然命中，救赎失败时攻击者会受到{@damage 2d8}武力伤害，救赎成功时则受到一半的伤害。"
+			],
+			"source": "ADMesmer",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Chaos Storm",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Mesmer",
+						"source": "ADMesmer"
+					}
+				]
+			},
+			"entries": [
+				"你在地面上以范围内的一个点为中心，在一个20英尺半径的球体中创造一个能量风暴。当风暴持续时，该区域被视为困难地形。当一个生物在一个回合中第一次进入该区域或在那里开始它的回合时，它必须做一个智慧救赎，如果救赎失败，将受到{@damage 3d8}武力伤害，如果救赎成功，将受到一半的伤害。",
+				"你可以使用一个额外的动作将风暴向任何方向移动10英尺。"
+			],
+			"source": "ADMesmer",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级以上的法术槽施放此法术时，每超过4级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"S"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Empathy",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Mesmer",
+						"source": "ADMesmer"
+					}
+				]
+			},
+			"entries": [
+				"你能看到的范围内的生物必须做一个智慧救赎动作。拯救失败时，目标会受到此法术的影响。直到法术结束，每当该生物进行攻击时，它都会受到{@damage 1d10}武力伤害。",
+				"该生物可以在其每个回合结束时做一个智慧救赎动作。拯救成功后，法术结束。"
+			],
+			"source": "ADMesmer",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，每超过一级的法术槽等级，伤害就会增加（%0%）。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Energy Bolt",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Mesmer",
+						"source": "ADMesmer"
+					}
+				]
+			},
+			"entries": [
+				"作为一个动作，你创造一个小型的能量弹来攻击你周围120英尺内你能看到的一个生物或物体。对目标进行一次远程法术攻击。一旦命中，目标会受到{@damage 1d10}武力伤害。"
+			],
+			"source": "ADMesmer",
+			"page": 8,
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"当你达到5级（{@dice 2d10}）、11级（{@dice 3d10}）和17级（{@dice 4d10}）时，该法术的伤害增加{@dice 1d10}。"
+					],
+					"type": "entries"
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Power Leech",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within 60 feet of you casting a spell."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Mesmer",
+						"source": "ADMesmer"
+					}
+				]
+			},
+			"entries": [
+				"选择一个你能看到的范围内正在施法的生物。该生物必须做一个智慧救赎动作。如果救赎失败，该生物会受到{@damage 1d6}的精神伤害，并且你会重新获得一个相当于该生物所使用的法术等级的一半的已消耗的法术槽（取整）。"
+			],
+			"source": "ADMesmer",
+			"page": 8,
+			"components": {
+				"v": true
+			},
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Spirit of Failure",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Mesmer",
+						"source": "ADMesmer"
+					}
+				]
+			},
+			"entries": [
+				"你在你的敌人身上植入一个充满思想与失败的精神，以降低他们在战斗中的能力。直到你的下一回合结束，该生物在进行攻击时必须掷出（%0%）。如果结果是1到25，则攻击失败，法术结束。"
+			],
+			"source": "ADMesmer",
+			"page": 8,
+			"components": {
+				"v": true
+			},
+			"areaTags": [
+				"ST"
+			]
+		}
+	]
+}

@@ -1,0 +1,173 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "InxsinonCircleOfWinds",
+				"abbreviation": "ICoWD",
+				"full": "Circle of Winds Druid",
+				"authors": [
+					"Inxsinon"
+				],
+				"convertedBy": [
+					"DXHHH101"
+				],
+				"version": "1.0",
+				"url": "https://drive.google.com/file/d/1BoR70gf_SVuOQJ39ziZ2Ly-LFH7Oq-h9/view",
+				"targetSchema": "1.2"
+			}
+		],
+		"status": "wip",
+		"dateAdded": 1643306617,
+		"dateLastModified": 1671544279,
+		"_dateLastModifiedHash": "6d909ec771"
+	},
+	"subclass": [
+		{
+			"name": "Circle of Winds",
+			"source": "InxsinonCircleOfWinds",
+			"className": "Druid",
+			"classSource": "phb",
+			"shortName": "Winds",
+			"subclassFeatures": [
+				"Circle of Winds|Druid|phb|Winds|InxsinonCircleOfWinds|2",
+				"Glide|Druid|phb|Winds|InxsinonCircleOfWinds|6",
+				"Ride the Wind|Druid|phb|Winds|InxsinonCircleOfWinds|10",
+				"Wild Winds|Druid|phb|Winds|InxsinonCircleOfWinds|14"
+			],
+			"subclassSpells": [
+				"gust|xge",
+				"gust of wind",
+				"skywrite|xge",
+				"sleet storm",
+				"wind wall",
+				"locate creature",
+				"storm sphere|xge",
+				"control winds|xge",
+				"steel wind strike|xge",
+				"warding wind|xge"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of Winds",
+			"source": "InxsinonCircleOfWinds",
+			"className": "Druid",
+			"classSource": "phb",
+			"subclassShortName": "Winds",
+			"subclassSource": "InxsinonCircleOfWinds",
+			"level": 2,
+			"entries": [
+				"风之环的德鲁伊是自由奔放的天空守护者。他们通常是旅行者，风带他们去哪里，他们就去哪里，不会被束缚在一个地方太久。",
+				"当这个圈子的德鲁伊们聚集在一起时，他们倾向于在宽阔的田野或山顶上公开进行，俯瞰云层。他们交换旅行的故事，并一起飞行，直到他们赶上新的风向。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid|phb|Winds|InxsinonCircleOfWinds|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gale Force|Druid|phb|Winds|InxsinonCircleOfWinds|2"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "InxsinonCircleOfWinds",
+			"className": "Druid",
+			"classSource": "phb",
+			"subclassShortName": "Winds",
+			"subclassSource": "InxsinonCircleOfWinds",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"你与风的联系使你可以施展某些法术。在2级时，你学会了{@spell gust}咒语，它对你的范围是60英尺。在3级、5级、7级和9级时，你可以获得圆形法术。",
+				"一旦你获得一个圆圈法术，它就会一直被准备好，它不计入你可以准备的法术数量，而且它被认为是你的一个德鲁伊法术。",
+				{
+					"type": "table",
+					"caption": "Circle of Winds Spells",
+					"colLabels": [
+						"Druid Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell gust of wind}, {@spell skywrite|xge}"
+						],
+						[
+							"5th",
+							"{@spell sleet storm}, {@spell wind wall}"
+						],
+						[
+							"7th",
+							"{@spell locate creature}, {@spell storm sphere|xge}"
+						],
+						[
+							"9th",
+							"{@spell control winds|xge}, {@spell steel wind strike|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Gale Force",
+			"source": "InxsinonCircleOfWinds",
+			"className": "Druid",
+			"classSource": "phb",
+			"subclassShortName": "Winds",
+			"subclassSource": "InxsinonCircleOfWinds",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"从2级开始，当你在你的回合中施放1级或以上的德鲁伊法术时，你可以将{@spell gust|xge}作为一个额外的行动，针对一个被该法术伤害或瞄准的生物。",
+				"你也可以用风的全部力量赋予你的魔法。当你的一个德鲁伊法术导致一个生物被移动时，你可以使该法术对该生物造成{@dice 1d8}武力伤害。你可以造成这个额外的伤害，其次数与你的德鲁伊等级相等。当你完成一次长时间的休息时，你会重新获得这一特性的所有使用权。"
+			]
+		},
+		{
+			"name": "Glide",
+			"source": "InxsinonCircleOfWinds",
+			"className": "Druid",
+			"classSource": "phb",
+			"subclassShortName": "Winds",
+			"subclassSource": "InxsinonCircleOfWinds",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"从6级开始，你可以轻松地在空中滑行。当你使用你的动作时，你可以在地面上盘旋1英尺，无视你下面的非魔法困难地形。当你坠落并且你有意识时，你不会受到坠落的伤害，并且可以用你的脚着地。",
+				"此外，你可以用你的行动在你身下召唤一阵风，使你被直接提升到20英尺，并获得相当于你行走速度的飞行速度，直到你的回合结束。"
+			]
+		},
+		{
+			"name": "Ride the Wind",
+			"source": "InxsinonCircleOfWinds",
+			"className": "Druid",
+			"classSource": "phb",
+			"subclassShortName": "Winds",
+			"subclassSource": "InxsinonCircleOfWinds",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"在10级的时候，你可以让别人和你一起在风中滑行。在你的回合开始时，你可以让你周围30英尺内的任何数量的生物获得你的滑翔功能的好处，直到他们的下一回合结束。",
+				"你可以使用这个能力的次数与你的智慧修饰值相等（最少一次）。当你完成一次长时间的休息时，你会恢复所有已消耗的使用。"
+			]
+		},
+		{
+			"name": "Wild Wind",
+			"source": "InxsinonCircleOfWinds",
+			"className": "Druid",
+			"classSource": "phb",
+			"subclassShortName": "Winds",
+			"subclassSource": "InxsinonCircleOfWinds",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"从14级开始，你可以在不消耗法术槽的情况下随意施放（%0%）。此外，当你用你的野性形态特征变身为野兽时，该野兽获得了30英尺的飞行速度，除非它已经有了更高的飞行速度。"
+			]
+		}
+	]
+}

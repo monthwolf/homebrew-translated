@@ -1,0 +1,5848 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLAM",
+				"abbreviation": "LLAM",
+				"full": "Alternate Monk",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Lxran#2292",
+					"DrGoo282#5334",
+					"Dazzle#9021"
+				],
+				"version": "3.0.1",
+				"color": "316167",
+				"url": "https://www.gmbinder.com/share/-MhGHvc1sNLoUrISINrV",
+				"targetSchema": "1.2"
+			},
+			{
+				"json": "LLAM:E",
+				"abbreviation": "LLAM:E",
+				"full": "Alternate Monk Expanded",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Lxran#2292",
+					"Dazzle#9021"
+				],
+				"version": "3.0.1",
+				"color": "316167",
+				"url": "https://www.gmbinder.com/share/-MyVERQKKbawlJLVjpyo",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1649140894,
+		"dateLastModified": 1702292882,
+		"optionalFeatureTypes": {
+			"LLAM:T": "Alternate Monk; Techniques",
+			"LLAM:T:B": "Alternate Monk; Techniques; Boulder",
+			"LLAM:T:DF": "Alternate Monk; Techniques; Drunken Fist",
+			"LLAM:T:Fe": "Alternate Monk; Techniques; Ferocity",
+			"LLAM:T:Fl": "Alternate Monk; Techniques; Flowing River",
+			"LLAM:T:H": "Alternate Monk; Techniques; Hurricane",
+			"LLAM:T:OH": "Alternate Monk; Techniques; Open Hand",
+			"LLAM:T:Ra": "Alternate Monk; Techniques; Radiance",
+			"LLAM:T:Re": "Alternate Monk; Techniques; Reaper",
+			"LLAM:T:SA": "Alternate Monk; Techniques; Shadow Arts",
+			"LLAM:T:SI": "Alternate Monk; Techniques; Sacred Inks",
+			"LLAM:T:Vi": "Alternate Monk; Techniques; Vigilante",
+			"LLAM:T:Vo": "Alternate Monk; Techniques; Void",
+			"LLAM:T:Wx": "Alternate Monk; Techniques; Wuxia",
+			"LLAM:T:YY": "Alternate Monk; Techniques; Yin and Yang",
+			"LLAM:T:AW": "Alternate Monk; Techniques; Astral Warrior",
+			"LLAM:T:RD": "Alternate Monk; Techniques; Rising Dragon",
+			"FS:AM": "Fighting Style; Alternate Monk",
+			"LL:SE": "Savage Exploit"
+		},
+		"_dateLastModifiedHash": "993a823392"
+	},
+	"class": [
+		{
+			"name": "Alternate Monk",
+			"source": "LLAM",
+			"page": 1,
+			"hd": {
+				"faces": 10,
+				"number": 1
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"{@item shortsword|phb|shortswords}"
+				],
+				"tools": [
+					"a set of {@item artisan's tools|phb} or a {@item musical instrument|phb}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"history",
+								"ınsight",
+								"nature",
+								"religion",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item shortsword|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item shortbow|phb} and {@item arrows (20)|phb|20 arrows} or (b) {@item dart|phb|20 darts}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"(a) a {@item holy symbol|phb} or (b) a {@item musical instrument|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"shortsword|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"shortbow|phb",
+							"arrows (20)|phb"
+						],
+						"b": [
+							{
+								"item": "dart|phb",
+								"quantity": 20
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"holy symbol|phb"
+						],
+						"b": [
+							"musical instrument|phb"
+						]
+					}
+				]
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Techniques",
+					"featureType": [
+						"LLAM:T"
+					],
+					"progression": [
+						0,
+						3,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						8,
+						8,
+						9,
+						9,
+						9,
+						10,
+						10,
+						10
+					]
+				}
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Martial Arts",
+						"Unarmored Movement",
+						"Techniques Known"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 0
+							},
+							0
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							3
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							4
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							5
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							6
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							7
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							8
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							10
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							},
+							10
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Martial Arts|Alternate Monk|LLAM|1",
+				"Unarmored Defense|Alternate Monk|LLAM|1",
+				"Ki|Alternate Monk|LLAM|2",
+				"Flurry of Blows|Alternate Monk|LLAM|2",
+				"Unarmored Movement|Alternate Monk|LLAM|2",
+				{
+					"classFeature": "Monastic Tradition|Alternate Monk|LLAM|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Monk|LLAM|4",
+				"Extra Attack|Alternate Monk|LLAM|5",
+				"Enlightened Fist|Alternate Monk|LLAM|6",
+				{
+					"classFeature": "Monastic Tradition Feature|Alternate Monk|LLAM|6",
+					"gainSubclassFeature": true
+				},
+				"Evasion|Alternate Monk|LLAM|7",
+				"Ability Score Improvement|Alternate Monk|LLAM|8",
+				"Spirit of Tranquility|Alternate Monk|LLAM|9",
+				{
+					"classFeature": "Monastic Tradition Feature|Alternate Monk|LLAM|10",
+					"gainSubclassFeature": true
+				},
+				"Ki Adept|Alternate Monk|LLAM|11",
+				"Ability Score Improvement|Alternate Monk|LLAM|12",
+				"Purity of Body|Alternate Monk|LLAM|13",
+				"Purity of Mind|Alternate Monk|LLAM|14",
+				"Timeless Body|Alternate Monk|LLAM|15",
+				"Ability Score Improvement|Alternate Monk|LLAM|16",
+				{
+					"classFeature": "Monastic Tradition Feature|Alternate Monk|LLAM|17",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Monk|LLAM|19",
+				"Purity of Spirit|Alternate Monk|LLAM|20"
+			],
+			"subclassTitle": "Monastic Tradition",
+			"fluff": [
+				{
+					"type": "section",
+					"name": "The Monk",
+					"page": 1,
+					"source": "LLAM",
+					"entries": [
+						"年轻人深吸一口气，在食人魔冲向他时稳住了自己。回想一下他的训练，他准备反击即将到来的打击。当食人魔的棍子打在他刚才所在的泥土上时，这个年轻人利用他的精神力量库，对这个毫无防备的野兽进行了一阵猛烈的打击。在巨大的食人魔意识到发生了什么之前，它就已经呆呆地躺在泥地里了。希望当食人魔恢复意识时，它在袭击当地人的家园之前会三思而行。",
+						"在没有月亮的夜晚，一队地精刺客在黑暗中悄悄移动，接近了敌方将军的帐篷。从出生开始就接受武术训练，这些致命的战士无声无息地杀死了敌人的卫兵。当将军从睡梦中惊醒时，他的眼睛睁得大大的，因为妖精们似乎是从黑暗中出现的。他试图呼救，但他嘴里没有发出任何声音，因为他的生命被刺客们无情地扼杀了。就像他们到达时一样悄无声息，黑暗的妖精刺客们消失在黑夜中。",
+						"大法师走上前去，堵住了通道。当她的学生们不情愿地逃进山里时，她研究了很快就会出现在她面前的妖精群。虽然她是在世的最强大的吴仁宝，但即使在她的全盛时期，她也不可能希望杀死这么多敌人的一半。她放下肩上的斗篷，身上的纹身闪烁着元素魔法的光芒，她准备将山峰本身降到她身上。虽然她肯定会死，但通道会被堵住，最重要的是，她的学生们将能够逃脱。",
+						{
+							"type": "entries",
+							"name": "Mastery of Body and Mind",
+							"page": 1,
+							"entries": [
+								"大多数战士努力追求身体的完美，而僧侣们则用他们的生命来训练他们的身体和心灵，使之共同发挥作用。当自己的这两个方面都被掌握后，僧侣就能够引导自己体内的生命精神能量，即他们的气。利用这种隐藏的力量，这些隐居的战士可以完成超自然的身体壮举。",
+								"僧侣们总是向内看，他们往往摒弃任何他们无法背负的物质财富，而专注于非物质财富。无论是开悟、幸福、挑战敌人，还是对力量的考验，所有的僧侣通常都有一个理想或目标，他们不断地为之奋斗。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mystic Asceticism",
+							"page": 1,
+							"entries": [
+								"僧侣们通常在隐蔽的寺院或由隐居的大师训练，他们必须放弃任何遗产或头衔，才能被接受为僧侣学生。有些大师甚至要求在开始训练新的学生之前，必须对寺院进行多年的奴役和奉献。一旦开始，僧侣的训练就不会停止，直到他们死去。他们把自己的全部心思和灵魂都投入到对完美自我的追求中。",
+								"即使是最伟大的寺院大师，有时也会寻找其他寺院，以新手的身份进入，甚至到了老年。对完美的追求是永无止境的，尽管精神上有很大的进步，但最伟大的人把自己看作是新手，渴望在下一步的开悟中取得进步。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating Your Monk",
+							"page": 1,
+							"entries": [
+								"当你创造你的僧侣时，考虑一下是谁指导你学习武术的，以及他们为了成为学生而放弃了什么。你是一个被遗弃在山间寺院台阶上的孤儿，从出生起就被抚养成永恒山术的学生？或者你是一个贵族家庭的较小的孩子，为了学习影子艺术而放弃了一切，以寻求复仇的目的？无论你受训的原因是什么，考虑一下你为什么要离开孤独和反省的生活，而选择冒险家的危险生活。",
+								{
+									"type": "table",
+									"caption": "Example Monasteries",
+									"colLabels": [
+										"Name",
+										"Monastic Tradition"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6 text-center"
+									],
+									"rows": [
+										[
+											"道路的门徒",
+											"张开手的方式"
+										],
+										[
+											"铁影刺客",
+											"影子艺术之路"
+										],
+										[
+											"守墓人骑士团",
+											"死神之路"
+										],
+										[
+											"圣光寺",
+											"光辉之路"
+										],
+										[
+											"五道庙",
+											"吴仁宝之道"
+										]
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"page": 2,
+									"entries": [
+										"你可以通过这些建议迅速成为一名僧侣。首先，让灵巧成为你最高的能力得分，如果你想专注于身体力量，那么其次是体质，如果你想专注于精神启蒙，那么你的智慧。第二，选择（%0%）或（%1%）的背景。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"simple",
+						"{@item shortsword|phb|shortswords}"
+					]
+				}
+			}
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Martial Arts",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 2,
+			"level": 1,
+			"entries": [
+				"你把自己的身体磨练成武器，掌握了多种风格的武术。就你的僧侣能力而言，武术攻击是指你的徒手攻击，以及没有重型或特殊属性的近战武器攻击。",
+				"从1级开始，只要你不穿重甲、不挥舞盾牌、不挥舞重武器，你的武术攻击就会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你可以用你的灵巧来代替力量，用于攻击和伤害卷或你的武术攻击。",
+						"你可以对{@action grapple}或{@action shove}进行灵巧({@skill Athletics})检查，以取代正常的力量({@skill Athletics})检查。",
+						"你可以滚动你的武术模子来代替武术攻击的正常伤害。这个模子一开始是{@dice d6}，随着你获得僧侣等级而改变，如上面僧侣表的武术一栏所示。",
+						"当你在你的回合中采取{@action Attack}行动并进行武术攻击时，你可以在同一回合中使用你的额外行动，进行一次徒手攻击。"
+					]
+				},
+				"有些武术风格使用异国武器，如双节棍（{@item club|phb|clubs}）、卡马斯（{@item sickle|phb|sickles}）或赛（{@item dagger|phb|daggers}）。"
+			]
+		},
+		{
+			"name": "Unarmored Defense",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 2,
+			"level": 1,
+			"entries": [
+				"你已经受过训练，即使在没有盔甲的情况下也能保护自己不受致命的打击。从1级开始，只要你没有穿戴盔甲，也没有挥舞盾牌，你的护甲等级就等于10+你的灵巧修正值+你的智慧修正值。"
+			]
+		},
+		{
+			"name": "Ki",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 2,
+			"entries": [
+				"在第2级时，你学会了操纵存在于你体内的精神能量，即所谓的Ki。你可以利用你的气来进行超自然的物理表演，称为技巧。",
+				{
+					"type": "entries",
+					"name": "Ki Points",
+					"page": 3,
+					"entries": [
+						"你内心的Ki储备由一个Ki点数池来代表。这个池子里的Ki点数的总数等于你的僧侣等级+你的智慧修正值。当你完成短期或长期的休息时，只要你在休息中至少花了30分钟进行精神冥想，你就能重新获得消耗的Ki点数。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Techniques Known",
+					"page": 3,
+					"entries": [
+						"在第2级时，你从本等级描述末尾的列表中学习三个（%0%）你选择的技术。僧侣表显示了你何时学习更多你选择的技术。每当你获得一个僧侣等级时，你可以选择一个你所知道的技法，并用你所选择的另一个技法来代替它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"page": 3,
+					"entries": [
+						"技术依赖于你对身体和精神的掌握，并与你的自我控制能力成正比。当一个技术需要蓄力时，其蓄力DC的计算方法如下。",
+						{
+							"type": "abilityDc",
+							"name": "Technique",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flurry of Blows",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"你可以借助你的精神力量以令人眩目的速度攻击。从2级开始，当你进行攻击动作并进行一次武术攻击时，你可以花费1点气点，在那个回合作为奖励动作进行两次徒手攻击。"
+			]
+		},
+		{
+			"name": "Unarmored Movement",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 2,
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "Unarmored Movement",
+						"changes": [
+							{
+								"key": "data.attributes.movement.walk",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.walk) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.burrow",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.burrow) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.climb",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.fly",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							},
+							{
+								"key": "data.attributes.movement.swim",
+								"mode": "ADD",
+								"value": "sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 4) * 5) + 5)"
+							}
+						]
+					}
+				]
+			},
+			"entries": [
+				"你对身体完美的追求唤醒了你身体的隐藏潜力。在2级时，只要你没有穿戴盔甲或盾牌，你的速度就会增加10英尺。",
+				"这个速度奖励会随着你的等级提高而增加，如僧侣表的无甲移动一栏所示。"
+			]
+		},
+		{
+			"name": "Monastic Tradition",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 3,
+			"entries": [
+				"在3级时，从以下僧侣传统中选择一个最能代表你作为僧侣的训练和理念的传统：醉拳之法、张手之法、光芒之法、死神之法、影子之法、武仁之法或武侠之法，每个传统都在本课的末尾有详细说明。",
+				"你选择的僧侣传统在3级时赋予你特性，再在达到6级、10级和17级时再次获得特性。",
+				{
+					"type": "entries",
+					"name": "Signature Techniques",
+					"page": 3,
+					"entries": [
+						"每个僧侣传统都有一个签名技法的清单，你可以在你的传统描述中指出的僧侣等级中学习。这些技法不计入你所掌握的技法总数，而且当你在这个等级中获得一个级别时，它们不能被其他技法所取代。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Monastic Tradition Feature",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的修道士传统赋予的功能。"
+			]
+		},
+		{
+			"name": "Monastic Tradition Feature",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 10,
+			"entries": [
+				"在10级时，你获得由你的僧侣传统（Monastic Tradition）赋予的特性。"
+			]
+		},
+		{
+			"name": "Monastic Tradition Feature",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 17,
+			"entries": [
+				"在17级时，你获得一个由你的修道士传统赋予的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Enlightened Fist",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 6,
+			"entries": [
+				"你的精神赋予了你的攻击力。在达到6级时，你的徒手攻击被视为魔法攻击，以克服对非魔法攻击的抵抗和免疫力。"
+			]
+		},
+		{
+			"name": "Spirit of Tranquility",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 9,
+			"foundrySystem": {
+				"name": "Saving Throw Bonus",
+				"effects": {
+					"key": "data.attributes.wis.mod",
+					"mode": "ADD",
+					"value": "+@abilities.wis.mod"
+				}
+			},
+			"entries": [
+				"从第9级开始，你可以借助你的精神活力来增强你的身体和精神防御。当你被迫进行豁免投掷时，你可以花费1点气点，将你的智力调整值加到你的投掷结果上。"
+			]
+		},
+		{
+			"name": "Purity of Body",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 13,
+			"conditionImmune": [
+				"disease",
+				"poisoned"
+			],
+			"entries": [
+				"你对自己身体的掌控使你免疫于所有疾病和中毒状态。从9级起，你对所有疾病和中毒状态免疫。"
+			]
+		},
+		{
+			"name": "Ki Adept",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 11,
+			"entries": [
+				"你已经掌握了偏爱的气技。从11级开始，每回合你可以使用一个消耗1点气的你已掌握的气技，或者不消耗气就使用连击。"
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 7,
+			"entries": [
+				"从7级开始，你的本能敏捷让你能够躲避某些区域效果，比如黑龙的酸息或者{@spell lightning bolt}法术。当你受到一个效果影响，让你进行敏捷豁免来减少伤害时，如果你成功通过豁免，你将不会受到伤害，如果你未通过豁免，你只会受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Purity of Mind",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 14,
+			"entries": [
+				"从14级开始，如果你在回合开始时被魅惑或恐惧，你可以花费1点气点立即结束自己的魅惑或恐惧状态。"
+			]
+		},
+		{
+			"name": "Timeless Body",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 15,
+			"entries": [
+				"从15级开始，你已经脱离了肉体的欲望。你不再需要食物和水，你也不会遭受年老的虚弱。此外，每过10年，你的身体就会衰老1年。"
+			]
+		},
+		{
+			"name": "Purity of Spirit",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 20,
+			"entries": [
+				"你已经掌握了对自己精神的控制，以至于即使在进行其他简单动作时也能冥想。在20级时，如果你花费10分钟冥想或只进行轻松活动，比如旅行、进食、交谈或探索，你将会恢复所有已消耗的气点。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Arresting Strike",
+			"source": "LLAM",
+			"page": 11,
+			"foundryImg": "icons/magic/control/debuff-energy-snare-purple-blue.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"当你用近战武术攻击击中一名生物时，你可以花费1点气点来阻碍其移动，并强迫它进行一次敏捷豁免投掷。如果未通过豁免，目标的速度将降为零，直到你下个回合开始。"
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
+			"name": "Crippling Strike",
+			"source": "LLAM",
+			"page": 11,
+			"foundryImg": "icons/skills/wounds/injury-eyes-blood-red-pink.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:Fe",
+				"LLAM:T:Re"
+			],
+			"entries": [
+				"当你用近战武术攻击击中一名生物时，你可以花费1点气点来削弱其感官，并迫使目标进行一次体质豁免投掷。如果未通过，目标将在你下一个回合开始前被致盲、失聪或无法言语（你选择）直到你的下一个回合开始。"
+			]
+		},
+		{
+			"name": "Empowered Strike",
+			"source": "LLAM",
+			"page": 11,
+			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue-green.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:OH",
+				"LLAM:T:Ra"
+			],
+			"entries": [
+				"当你用近战武术攻击击中一只生物时，你可以花费1点气点，以强大的力量打击目标，并迫使目标进行一次力量豁免投掷。未通过豁免的生物将被从你的智力调整值的五倍（最小为5英尺）的距离直线击退，并倒地。比你至少大一个尺寸的生物在抵抗此效果的豁免投掷时获得优势。"
+			]
+		},
+		{
+			"name": "Mystic Healing",
+			"source": "LLAM",
+			"page": 11,
+			"foundryImg": "icons/magic/life/cross-explosion-burst-green.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 2
+			},
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:AW"
+			],
+			"entries": [
+				"你可以借助你的气来激发自然疗愈。作为一个动作，你可以花费2点气来恢复相当于你的武术骰子点数加上你的智力调整值的生命值。"
+			]
+		},
+		{
+			"name": "Patient Defense",
+			"source": "LLAM",
+			"page": 11,
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:Fl"
+			],
+			"entries": [
+				"你平静下来，进入一种防御姿态，以更好地抵御来袭的攻击。你可以花费1点气来作为一个额外动作在你的回合内采取躲避动作。"
+			]
+		},
+		{
+			"name": "Slow Fall",
+			"source": "LLAM",
+			"page": 11,
+			"foundryImg": "icons/commodities/materials/feather-white-glowing-fire.webp",
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:Vi",
+				"LLAM:T:SA"
+			],
+			"entries": [
+				"你如同轻如羽毛般在空中移动。只要你还有意识，你所受到的任何坠落伤害都会减少一个数值，该数值等于你等级的五倍。"
+			]
+		},
+		{
+			"name": "Step of the Wind",
+			"source": "LLAM",
+			"page": 11,
+			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp",
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:DF",
+				"LLAM:T:RD",
+				"LLAM:T:Vo"
+			],
+			"entries": [
+				"你以风的速度移动。你可以采取{@action Dash}或{@action Disengage}的行动作为奖励行动。当你这样做时，你的跳跃距离会增加一倍，直到你当前回合结束。"
+			]
+		},
+		{
+			"name": "Deflect Missile",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/skills/ranged/arrow-flying-white-blue.webp",
+			"entries": [
+				"当你被远程武器攻击击中时，你可以使用你的反应来尝试接住抛射物。将伤害减少一个等于你的武僧等级 + 一个武术骰的点数 + 你的敏捷修正的数值。如果你将伤害减少到零，你可以在一只空手中接住抛射物。",
+				"如果你抓住了抛射物，你可以在同一个反应中使用该抛射物进行射程为（20/60）的武术攻击。你对这种远程武器攻击有熟练加成。",
+				"从11级开始，你可以花费1点气点，在你被一个法术攻击命中时使用这个反应。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:AW",
+				"LLAM:T:DF",
+				"LLAM:T:Fl",
+				"LLAM:T:RD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Gentling Touch",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/magic/control/sleep-bubble-purple.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"在进行攻击时，你可以消耗1点气点，触摸一个生物，并操纵它的气来使其进入睡眠状态。投掷你的武术骰子五次。如果目标剩余的生命值小于或等于你投掷的数量，它立即昏迷10分钟。如果它受到伤害或另一个生物使用一个动作来唤醒它，那么这个生物会醒来。",
+				"你可以消耗额外的气点（最多等于你的感知调整值）来强化这个技能，每消耗一个额外的气点，你可以额外投掷一个武术骰。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:SA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Seeking Strike",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/skills/ranged/target-bullseye-arrow-yellow.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"当你的身体失败时，你的精神将引导你的攻击。当你的武术攻击失败时，你可以花费1个Ki点来重新进行攻击。你必须使用新的结果。"
+			],
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Slowing Strike",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/magic/time/hourglass-tilted-gray.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"当你用近战武术攻击击中一个生物时，你可以花费1个Ki Point来打断他们的Ki流，迫使目标做出一个魅力救赎。如果救赎失败，该生物将受到（%0%）法术的影响，直到你下一回合开始。你不需要专注于这个效果。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:Re",
+				"LLAM:T:Vo"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Stunning Strike",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"当你用近战武术攻击命中一名生物时，你可以花费1点气来发动无情力量的打击，迫使其进行一次体质豁免投掷。如果未通过豁免，该生物会晕眩直到你的下一个回合开始。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:Fe",
+				"LLAM:T:H",
+				"LLAM:T:OH",
+				"LLAM:T:Ra"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 5
+					}
+				}
+			]
+		},
+		{
+			"name": "Aura Sight",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp",
+			"entries": [
+				"你可以运用你的气来感知周围环境。你获得一个范围为20英尺的盲视。在这个范围内，你可以看到任何没有被完全遮挡的东西，即使你被致盲或处于黑暗中。除非生物成功地隐藏起来，你可以在这个范围内看到隐形生物。",
+				"随着你在这个职业中的等级提升，这种盲视的范围也会增加；在13级时（30尺）和18级时（60尺）。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:Re",
+				"LLAM:T:Vo"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			]
+		},
+		{
+			"name": "Heavenly Step",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+			"entries": [
+				"你可以沿着垂直表面移动，穿过液体，并在天花板上倒立，而不会在移动过程中摔倒。",
+				"如果你在垂直表面、液体或倒挂在天花板上结束你的运动，你可以花费1个Ki点来保持原地不动，直到你下一个回合开始。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:DF",
+				"LLAM:T:Fl",
+				"LLAM:T:SA",
+				"LLAM:T:Vi"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			]
+		},
+		{
+			"name": "Indomitable Spirit",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"你可以用精神力量增强你的身体能力。当你进行力量({@skill Athletics})或灵巧({@skill Athletics})检查时，你可以花费1个Ki点，将你的智慧修饰值(最小值+1)加入你的卷轴。你可以在掷骰子之后，但在你知道你是成功还是失败之前使用这个技巧。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:OH",
+				"LLAM:T:Ra",
+				"LLAM:T:RD"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			]
+		},
+		{
+			"name": "Armor of the Ascetic",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/equipment/chest/robe-layered-white.webp",
+			"entries": [
+				"你散发出一种和平的光环。在短期或长期休息结束时，你获得（%0%）的效果，该效果持续到你下一次短期或长期休息的开始。这个法术和普通的一样提前结束。"
+			],
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 13
+					}
+				}
+			]
+		},
+		{
+			"name": "Mystical Integrity",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/creatures/magical/construct-golem-stone-blue.webp",
+			"entries": [
+				"你的自我意识和意志力非常坚定。你对于任何试图改变你形态或强迫你传送的法术或效果都具有免疫力，除非你自愿受影响。"
+			],
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 13
+					}
+				}
+			]
+		},
+		{
+			"name": "Mantle of Courtesy",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/skills/social/diplomacy-handshake.webp",
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "Mantle of Courtesy",
+						"changes": [
+							{
+								"key": "data.skills.per.ability",
+								"mode": "OVERRIDE",
+								"value": "wis"
+							}
+						]
+					}
+				]
+			},
+			"entries": [
+				"你获得说服技能熟练加值，每当你进行魅力（说服）检定时，你的检定奖励值等同于你的感知调整值（最低为+1）（Wisdom modifier）。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:AW"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 9
+					}
+				}
+			]
+		},
+		{
+			"name": "Tongue of Sun and Moon",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/skills/social/diplomacy-unity-alliance.webp",
+			"entries": [
+				"你可以触摸其他思想的基点，并与任何讲语言的生物交流。不讲语言的生物也能交流，并理解简单的想法。"
+			],
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 13
+					}
+				}
+			]
+		},
+		{
+			"name": "Empty Body",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/creatures/magical/spirit-undead-ghost-blue.webp",
+			"additionalSpells": [
+				{
+					"innate": {
+						"18": [
+							"astral projection"
+						]
+					}
+				}
+			],
+			"entries": [
+				"作为你回合中的额外行动，你可以花费4个Ki点数来隐身1分钟。在以这种方式隐身时，你获得对所有伤害的抵抗力，除了力量伤害。",
+				"你也可以花费8个Ki点数来施放（%0%），而不需要物质成分。当你这样做时，你的目标只有你自己，不能带着其他生物。"
+			],
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 18
+					}
+				}
+			]
+		},
+		{
+			"name": "Quivering Palm",
+			"source": "LLAM",
+			"page": 12,
+			"foundryImg": "icons/skills/wounds/anatomy-organ-heart-red.webp",
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 5
+			},
+			"entries": [
+				"当你用近身武术攻击击中一个生物时，你可以花费5点Ki点数为它的精神注入难以察觉的振动，这种振动最多可以持续几天，相当于你的僧侣等级。只要你和该生物在同一个存在平面上，你就可以用你的行动来结束这些振动，迫使该生物做出宪法规定的救赎。拯救失败时，它的命中率会降至0，拯救成功时，会受到{@damage 10d10}坏死的伤害。",
+				"你一次只能有一个生物受到此特征的影响，对另一个目标使用此特征会无害地结束对任何其他生物的影响。"
+			],
+			"featureType": [
+				"LLAM:T"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						},
+						"level": 18
+					}
+				}
+			]
+		},
+		{
+			"name": "Improvised Strikes",
+			"source": "LLAM:E",
+			"page": 1,
+			"foundryImg": "icons/tools/hand/shovel-spade-steel-grey.webp",
+			"entries": [
+				"你善于用手边的任何东西战斗。你获得了对简易武器的熟练掌握，它们对你来说算作武术攻击，而且你可以用你的灵巧来代替力量，进行简易武器的攻击和伤害卷。"
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
+			"name": "Spiritual Armor",
+			"source": "LLAM:E",
+			"page": 1,
+			"foundryImg": "icons/magic/defensive/shield-barrier-blades-teal.webp",
+			"entries": [
+				"你可以用精神力量强化你的身体。作为一个奖励动作，你可以花费1点气点，使自己获得临时生命值，数值等同于你的智力调整值（最少为1）。",
+				"当一名生物第一次对这些临时生命值造成伤害时，你可以使用你的反应使其受到等同于你武术骰的一次掷骰的力量伤害。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:B",
+				"LLAM:T:SI"
+			]
+		},
+		{
+			"name": "Whirling Strike",
+			"source": "LLAM:E",
+			"page": 1,
+			"foundryImg": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+			"entries": [
+				"作为一个行动，你可以花费1个Ki点来攻击并迫使你范围内的每一个生物做一个灵巧的救赎动作。如果救赎失败，他们会受到相当于你的武术模子+你的灵巧修饰的打击性伤害。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:H"
+			]
+		},
+		{
+			"name": "Adept Fighting Style",
+			"source": "LLAM:E",
+			"page": 1,
+			"foundryImg": "icons/weapons/swords/sword-guard-blue.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你已经训练了一种专门的战斗风格。你从以下列表中获得一种你所选择的格斗风格。作为一个僧侣，你只能通过这个技巧获得一种格斗风格。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Archery"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blind Warrior|LLAM:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defensive Fighting|LLAM:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Featherweight Fighting|LLAM:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Wrestler|LLAM:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thrown Weapon Fighting"
+						}
+					]
+				}
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
+			"name": "Defensive Fighting",
+			"source": "LLAM:E",
+			"page": 1,
+			"foundryEffects": [
+				{
+					"name": "Defensive Fighting AC Bonus",
+					"changes": [
+						{
+							"mode": "ADD",
+							"key": "data.attributes.ac.bonus",
+							"value": "+1"
+						}
+					]
+				}
+			],
+			"entries": [
+				"So long as you are either wearing armor or wielding a shield, you gain a +1 bonus to your Armor Class."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Featherweight Fighting",
+			"source": "LLAM:E",
+			"page": 1,
+			"foundryEffects": [
+				{
+					"name": "Featherweight Fighting",
+					"changes": [
+						{
+							"mode": "ADD",
+							"key": "data.attributes.movement.walk",
+							"value": "+10"
+						},
+						{
+							"mode": "ADD",
+							"key": "data.attributes.movement.swim",
+							"value": "+10"
+						},
+						{
+							"mode": "ADD",
+							"key": "data.attributes.movement.fly",
+							"value": "+10"
+						},
+						{
+							"mode": "ADD",
+							"key": "data.attributes.movement.burrow",
+							"value": "+10"
+						},
+						{
+							"mode": "ADD",
+							"key": "data.bonuses.mwak.damage",
+							"value": "+2"
+						},
+						{
+							"mode": "ADD",
+							"key": "data.bonuses.rwak.damage",
+							"value": "+2"
+						}
+					]
+				}
+			],
+			"entries": [
+				"While you are unarmed or wielding only light weapons, and are not wearing medium or heavy armor, your walking speed increases by 10 feet, and you gain a +1 bonus to your damage rolls with light melee weapons and unarmed strikes."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Blind Warrior",
+			"source": "LLAM:E",
+			"page": 1,
+			"entries": [
+				"You have blindsight with a range in feet equal to 5 times your proficiency bonus. In that range, you can see invisible targets and anything that isn't behind total cover or hidden from you."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Wrestler",
+			"source": "LLAM:E",
+			"page": 1,
+			"entries": [
+				"When you hit a creature with a melee attack on your turn, you can use a bonus action on that turn to attempt to grapple or shove that creature, so long as you have a free hand to do so. Also, you can drag grappled creatures up to your full speed."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Crushing Strike",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/skills/melee/strike-flail-spiked-pink.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你使用徒手攻击时，你可以花费气点（最多等于你的感知调整值）来赋予你的攻击致命力量，并造成额外的钝击伤害，伤害值等于每花费一个气点时你的武术骰的点数。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:B",
+				"LLAM:T:Vi"
+			]
+		},
+		{
+			"name": "Divine Light",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"_": [
+							{
+								"choose": "class=Cleric|level=0",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"你从（牧师）法术清单中学会了两个{@filter cantrip of your choice|spells|class=Cleric|level=0}，它们的施法调整值为感知力。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:SI"
+			]
+		},
+		{
+			"name": "Unyielding Perseverence",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以利用你的Ki，在最需要的时候找到成功。当你进行能力检查或蓄力投掷时，你可以花费任意数量的Ki点数，每花费一个Ki点数，你的投掷就会增加+1奖励。你可以在掷骰子之后，但在你知道你是成功还是失败之前使用这个功能。"
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
+			"name": "Commune with Self",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/magic/holy/yin-yang-balance-symbol.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 5
+			},
+			"entries": [
+				"你已经获得了与你前世的Ki联系以获得信息的能力。作为一项行动，你可以花费5个Ki点数进入冥想状态，持续10分钟，并咨询你的前世。在冥想结束时，你获得的信息与你施展的信息相同（%0%）。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:SI"
+			]
+		},
+		{
+			"name": "Friend of Beast and Leaf",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/magic/nature/plant-sprout-hands-vines.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 5
+			},
+			"entries": [
+				"你可以进入冥想状态，将你的气与你周围的自然世界的气进行交流。作为一项行动，你可以花费5个Ki点数来进入这种冥想状态，持续10分钟。在冥想结束时，你获得的信息与你施展的信息相同（%0%）。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:B",
+				"LLAM:T:Fe"
+			]
+		},
+		{
+			"name": "Monastic Fortitude",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/magic/defensive/armor-stone-skin.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 2
+			},
+			"foundrySystem": {
+				"activation.type": "minute",
+				"activation.condition": "When you take damage",
+				"activation.cost": 1,
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"2d(6 + (floor(@classes.alternate-monk.levels / 5) * 2)) + @abilities.wis.mod"
+					]
+				]
+			},
+			"entries": [
+				"当你受到伤害时，作为一种反应，你可以消耗2个Ki点数来减少传来的伤害，其数额相当于你的婚姻艺术模子的两次滚动+你的智慧修正值。"
+			],
+			"featureType": [
+				"LLAM:T",
+				"LLAM:T:H"
+			]
+		},
+		{
+			"name": "Banishing Strike",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/creatures/unholy/demons-horned-glowing-pink.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 3
+			},
+			"foundrySystem": {
+				"activation.type": "none",
+				"activation.condition": "When you hit a creature with a melee Martial Arts attack",
+				"activation.cost": 1,
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"3d(6 + (floor(@classes.alternate-monk.levels / 5) * 2)) + @abilities.wis.mod",
+						"force"
+					]
+				],
+				"save.ability": "cha",
+				"save.scaling": "wis"
+			},
+			"entries": [
+				"当你用武术攻击击中一个生物时，你可以消耗3个Ki点数来赋予你的打击以传奇的力量，并迫使目标做一个魅力储蓄动作。如果失败，它将受到相当于你的武术模子三卷的额外力量伤害，如果成功，将受到一半的伤害。",
+				"如果这次攻击使目标的命中率降低到50点以下，它就会被分流到一个无害的半位面，在那里它是（%0%）。在你的下一回合结束时，该生物会重新出现在离它最后占据的空间最近的未被占据的空间。"
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
+			"name": "Conjure Previous Life",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/creatures/magical/spirit-undead-masked-blue.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 5
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"summon celestial|TCE#5"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以利用你前世的气，召唤一个前世的幽灵来帮助你。作为一项行动，你可以花费5个Ki点数在5级时施放{@spell summon celestial|TCE}（{@creature celestial spirit|TCE|defender}）。当被召唤时，它有以下变化。",
+				{
+					"type": "list",
+					"items": [
+						"它是一种类似于人形僧侣的中等生物，尽管它可能与你不是同一个种族。",
+						"它的辐射矛攻击类似于徒手打击。",
+						"召唤时，你可以为它注入你所选择的Ki点数，而在它被召唤时，你的Ki点数上限会减少相同的数量。它可以使用注入的Ki来使用你知道的任何技巧。"
+					]
+				}
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
+			"name": "Awaken the Third Eye",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 8
+			},
+			"foundrySystem": {
+				"activation.type": "minute",
+				"activation.cost": 1
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"foresight"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以对流经所有生物的Ki敞开心扉，使你能够在生物发生之前预测它们的行动。你可以执行一个1分钟的冥想仪式，消耗8个Ki点数来施展（%0%），只针对你自己。当这个效果处于激活状态时，你的基点上限会减少8个，你可以用行动来结束这个效果。"
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
+			"name": "Word of Creation",
+			"source": "LLAM:E",
+			"page": 2,
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Alternate Monk",
+							"source": "LLAM"
+						}
+					}
+				}
+			],
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 7
+			},
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": 1
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"rest": {
+								"1": [
+									"divine word"
+								]
+							}
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以利用你对流经万物的气的深入了解，说出创造的神谕。作为一项行动，你可以花费7个Ki点数来施展（%0%），用智慧作为你的法术修改器。",
+				"一旦你使用你的Ki来施展（%0%），你必须完成一个短期或长期的休息，才能再次以这种方式施展。"
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Martial Arts Initiate",
+			"source": "LLAM:E",
+			"page": 2,
+			"entries": [
+				"你有一些基本的武术训练，使你在徒手格斗和徒手防御方面都有一定的技能。",
+				{
+					"type": "list",
+					"items": [
+						"只要你没有穿戴盔甲或盾牌，你的装甲等级就等于13+你的灵巧修饰值。",
+						"你的徒手攻击造成的打击伤害等于{@dice 1d4}+你的力量或灵巧修正值，一击即中。",
+						"当你在你的回合中采取{@action Attack}行动并只进行非武装打击时，你可以在同一回合中以奖励行动的方式进行一次非武装打击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ki Warrior",
+			"source": "LLAM:E",
+			"page": 2,
+			"entries": [
+				"你已经学习并掌握了修道院技巧，使你能够执行超自然的精神力量壮举。",
+				{
+					"type": "list",
+					"items": [
+						"你从替代僧侣职业学会了两项技能。如果该技能有先决条件或提到了武术骰，你只能在你是一名僧侣并且符合其先决条件时学会它。如果一项技能要求目标进行豁免才能抵抗其效果，则豁免 DC 为 8 + 你的熟练加值 + 你的感知调整值。",
+						"你获得2点气血值，可用于技巧。当你完成短期或长期休息时，你会重新获得所有消耗的Ki点数。如果你有来自其他功能的Ki，这些Ki点数将被添加到你的Ki点数总数中。"
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Way of the Boulder",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Boulder",
+			"optionalfeatureProgression": [
+				{
+					"name": "Boulder Techniques",
+					"featureType": [
+						"LLAM:T:B"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Boulder|Alternate Monk|LLAM|Boulder|LLAM:E|3",
+				"Rebounding Defense|Alternate Monk|LLAM|Boulder|LLAM:E|6",
+				"Ki Infused Bulk|Alternate Monk|LLAM|Boulder|LLAM:E|10",
+				"Mighty Form|Alternate Monk|LLAM|Boulder|LLAM:E|17",
+				"EarthShaker|Alternate Monk|LLAM|Boulder|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Brawler",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Brawler",
+			"optionalfeatureProgression": [
+				{
+					"name": "Martial Exploits",
+					"featureType": [
+						"LLAM:BME"
+					],
+					"progression": {
+						"3": 2,
+						"6": 2,
+						"17": 2
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Brawler|Alternate Monk|LLAM|Brawler|LLAM:E|3",
+				"Spiritual Stamina|Alternate Monk|LLAM|Brawler|LLAM:E|6",
+				"Infamous Reputation|Alternate Monk|LLAM|Brawler|LLAM:E|10",
+				"Underworld Master|Alternate Monk|LLAM|Brawler|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of Ferocity",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Ferocity",
+			"optionalfeatureProgression": [
+				{
+					"name": "Ferocity Techniques",
+					"featureType": [
+						"LLAM:T:Fe"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of Ferocity|Alternate Monk|LLAM|Ferocity|LLAM:E|3",
+				"Primal Intuition|Alternate Monk|LLAM|Ferocity|LLAM:E|6",
+				"Power of the Wild|Alternate Monk|LLAM|Ferocity|LLAM:E|10",
+				"Master of Ferocity|Alternate Monk|LLAM|Ferocity|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Flowing River",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Flowing River",
+			"optionalfeatureProgression": [
+				{
+					"name": "Flowing River Techniques",
+					"featureType": [
+						"LLAM:T:Fl"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Flowing River|Alternate Monk|LLAM|Flowing River|LLAM:E|3",
+				"Graceful Step|Alternate Monk|LLAM|Flowing River|LLAM:E|6",
+				"Enchanting Flow|Alternate Monk|LLAM|Flowing River|LLAM:E|10",
+				"Master of the Flowing River|Alternate Monk|LLAM|Flowing River|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Hurricane",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Hurricane",
+			"optionalfeatureProgression": [
+				{
+					"name": "Hurricane Techniques",
+					"featureType": [
+						"LLAM:T:H"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Hurricane|Alternate Monk|LLAM|Hurricane|LLAM:E|3",
+				"Crushing Counter|Alternate Monk|LLAM|Hurricane|LLAM:E|6",
+				"Buffeting Winds|Alternate Monk|LLAM|Hurricane|LLAM:E|10",
+				"Master of the Hurricane|Alternate Monk|LLAM|Hurricane|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Sacred Inks",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Sacred Inks",
+			"optionalfeatureProgression": [
+				{
+					"name": "Sacred Ink Techniques",
+					"featureType": [
+						"LLAM:T:SI"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Sacred Inks|Alternate Monk|LLAM|Sacred Inks|LLAM:E|3",
+				"Heavenly Protection|Alternate Monk|LLAM|Sacred Inks|LLAM:E|6",
+				"Light of the Heavens|Alternate Monk|LLAM|Sacred Inks|LLAM:E|10",
+				"Master of the Sacred Inks|Alternate Monk|LLAM|Sacred Inks|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Vigilante",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Vigilante",
+			"optionalfeatureProgression": [
+				{
+					"name": "Vigilante Techniques",
+					"featureType": [
+						"LLAM:T:Vi"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Vigilante|Alternate Monk|LLAM|Vigilante|LLAM:E|3",
+				"Valiant Action|Alternate Monk|LLAM|Vigilante|LLAM:E|6",
+				"Inspiring Presence|Alternate Monk|LLAM|Vigilante|LLAM:E|10",
+				"Master Vigilante|Alternate Monk|LLAM|Vigilante|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Void",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Void",
+			"optionalfeatureProgression": [
+				{
+					"name": "Void Techniques",
+					"featureType": [
+						"LLAM:T:Vo"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Void|Alternate Monk|LLAM|Void|LLAM:E|3",
+				"Vorpal Step|Alternate Monk|LLAM|Void|LLAM:E|6",
+				"Dispelling Touch|Alternate Monk|LLAM|Void|LLAM:E|10",
+				"Master of Entropy|Alternate Monk|LLAM|Void|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Drunken Fist",
+			"shortName": "Drunken Fist",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 5,
+			"optionalfeatureProgression": [
+				{
+					"name": "Drunken Fist Techniques",
+					"featureType": [
+						"LLAM:T:DF"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Drunken Fist|Alternate Monk|LLAM|Drunken Fist|LLAM|3",
+				"Unpredictable Sway|Alternate Monk|LLAM|Drunken Fist|LLAM|6",
+				"Chaotic Luck|Alternate Monk|LLAM|Drunken Fist|LLAM|10",
+				"Master of the Drunken Fist|Alternate Monk|LLAM|Drunken Fist|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Open Hand",
+			"shortName": "Open Hand",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 6,
+			"optionalfeatureProgression": [
+				{
+					"name": "Open Hand Techniques",
+					"featureType": [
+						"LLAM:T:OH"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Open Hand|Alternate Monk|LLAM|Open Hand|LLAM|3",
+				"Ebb and Flow|Alternate Monk|LLAM|Open Hand|LLAM|6",
+				"Open Hand Strike|Alternate Monk|LLAM|Open Hand|LLAM|10",
+				"Master of Many Forms|Alternate Monk|LLAM|Open Hand|LLAM|10",
+				"Master of the Open Hand|Alternate Monk|LLAM|Open Hand|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of Radiance",
+			"shortName": "Radiance",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 7,
+			"optionalfeatureProgression": [
+				{
+					"name": "Radiance Techniques",
+					"featureType": [
+						"LLAM:T:Ra"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of Radiance|Alternate Monk|LLAM|Radiance|LLAM|3",
+				"Searing Blast|Alternate Monk|LLAM|Radiance|LLAM|6",
+				"Luminous Burst|Alternate Monk|LLAM|Radiance|LLAM|10",
+				"Master of Light|Alternate Monk|LLAM|Radiance|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Reaper",
+			"shortName": "Reaper",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 7,
+			"optionalfeatureProgression": [
+				{
+					"name": "Reaper Techniques",
+					"featureType": [
+						"LLAM:T:Re"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Reaper|Alternate Monk|LLAM|Reaper|LLAM|3",
+				"Sinister Vitality|Alternate Monk|LLAM|Reaper|LLAM|6",
+				"Armor of the Grave|Alternate Monk|LLAM|Reaper|LLAM|10",
+				"Master of Death|Alternate Monk|LLAM|Reaper|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Shadow Arts",
+			"shortName": "Shadow Arts",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 8,
+			"optionalfeatureProgression": [
+				{
+					"name": "Shadow Arts Techniques",
+					"featureType": [
+						"LLAM:T:SA"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Shadow Arts|Alternate Monk|LLAM|Shadow Arts|LLAM|3",
+				"Shadow Step|Alternate Monk|LLAM|Shadow Arts|LLAM|6",
+				"Cloak of Shadows|Alternate Monk|LLAM|Shadow Arts|LLAM|10",
+				"Master of Shadows|Alternate Monk|LLAM|Shadow Arts|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Wu Jen",
+			"shortName": "Wu Jen",
+			"source": "LLAM",
+			"spellcastingAbility": "wis",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				7,
+				7,
+				7,
+				7
+			],
+			"subclassSpells": [
+				"blade ward",
+				"control flames|XGE",
+				"create bonfire|XGE",
+				"druidcraft",
+				"frostbite",
+				"gust",
+				"light",
+				"magic stone|XGE",
+				"mold earth|XGE",
+				"produce flame",
+				"ray of frost",
+				"shape water",
+				"thorn whip",
+				"thunderclap|XGE",
+				"absorb elements",
+				"armor of agathys",
+				"burning hands",
+				"create or destroy water",
+				"earth tremor|XGE",
+				"ensnaring strike",
+				"entangle",
+				"fog cloud",
+				"frost fingers|XGE",
+				"hail of thorns",
+				"hellish rebuke",
+				"ice knife|XGE",
+				"sanctuary",
+				"thunderwave",
+				"witch bolt",
+				"barkskin",
+				"continual flame",
+				"dust devil|XGE",
+				"earthbind|XGE",
+				"earthen grasp|XGE",
+				"flame blade",
+				"flaming sphere",
+				"gust of wind",
+				"hold person",
+				"levitate",
+				"misty step",
+				"scorching ray",
+				"shatter",
+				"snowball swarm|XGE",
+				"spike growth",
+				"warding wind|XGE",
+				"call lighting",
+				"erupting earth|XGE",
+				"fireball",
+				"fly",
+				"gaseous form",
+				"lighting bolt",
+				"meld into stone",
+				"minute meteors|XGE",
+				"plant growth",
+				"sleet storm",
+				"speak with plants",
+				"thunder step|XGE",
+				"tidal wave|XGE",
+				"wall of sand|XGE",
+				"wall of water|XGE",
+				"wind wall",
+				"control water",
+				"elemental bane|XGE",
+				"fire shield",
+				"freedom of movement",
+				"grasping vine",
+				"guardian of nature|XGE",
+				"ice storm",
+				"resilient sphere",
+				"stone shape",
+				"stoneskin",
+				"storm sphere|XGE",
+				"wall of fire",
+				"watery sphere|XGE"
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Way of the Wu Jen",
+							"source": "LLAM"
+						}
+					],
+					"colLabels": [
+						"Monk Level",
+						"{@filter Spells Known|spells|subclass=Wu Jen}",
+						"Spell Slots",
+						"Slot Level"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							"3rd",
+							2,
+							1,
+							"{@filter 1st|spells|level=1|subclass=Wu Jen}"
+						],
+						[
+							"4rd",
+							2,
+							2,
+							"{@filter 1st|spells|level=1|subclass=Wu Jen}"
+						],
+						[
+							"5th",
+							3,
+							2,
+							"{@filter 1st|spells|level=1|subclass=Wu Jen}"
+						],
+						[
+							"6th",
+							3,
+							2,
+							"{@filter 1st|spells|level=1|subclass=Wu Jen}"
+						],
+						[
+							"7th",
+							4,
+							2,
+							"{@filter 2nd|spells|level=2|subclass=Wu Jen}"
+						],
+						[
+							"8th",
+							4,
+							2,
+							"{@filter 2nd|spells|level=2|subclass=Wu Jen}"
+						],
+						[
+							"9th",
+							5,
+							2,
+							"{@filter 2nd|spells|level=2|subclass=Wu Jen}"
+						],
+						[
+							"10th",
+							5,
+							2,
+							"{@filter 2nd|spells|level=2|subclass=Wu Jen}"
+						],
+						[
+							"11th",
+							5,
+							2,
+							"{@filter 2nd|spells|level=2|subclass=Wu Jen}"
+						],
+						[
+							"12th",
+							5,
+							2,
+							"{@filter 2nd|spells|level=2|subclass=Wu Jen}"
+						],
+						[
+							"13th",
+							6,
+							2,
+							"{@filter 3rd|spells|level=3|subclass=Wu Jen}"
+						],
+						[
+							"14th",
+							6,
+							2,
+							"{@filter 3rd|spells|level=3|subclass=Wu Jen}"
+						],
+						[
+							"15th",
+							6,
+							2,
+							"{@filter 3rd|spells|level=3|subclass=Wu Jen}"
+						],
+						[
+							"16th",
+							6,
+							2,
+							"{@filter 3rd|spells|level=3|subclass=Wu Jen}"
+						],
+						[
+							"17th",
+							7,
+							2,
+							"{@filter 3rd|spells|level=3|subclass=Wu Jen}"
+						],
+						[
+							"18th",
+							7,
+							2,
+							"{@filter 3rd|spells|level=3|subclass=Wu Jen}"
+						],
+						[
+							"19th",
+							7,
+							2,
+							"{@filter 4th|spells|level=4|subclass=Wu Jen}"
+						],
+						[
+							"20th",
+							7,
+							2,
+							"{@filter 4th|spells|level=4|subclass=Wu Jen}"
+						]
+					]
+				}
+			],
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 9,
+			"subclassFeatures": [
+				"Way of the Wu Jen|Alternate Monk|LLAM|Wu Jen|LLAM|3",
+				"Fist of the Five Ways|Alternate Monk|LLAM|Wu Jen|LLAM|6",
+				"Spiritual Flow|Alternate Monk|LLAM|Wu Jen|LLAM|10",
+				"Master of the Elements|Alternate Monk|LLAM|Wu Jen|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Wuxia",
+			"shortName": "Wuxia",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 10,
+			"optionalfeatureProgression": [
+				{
+					"name": "Wuxia Techniques",
+					"featureType": [
+						"LLAM:T:Wx"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Wuxia|Alternate Monk|LLAM|Wuxia|LLAM|3",
+				"Ki-Infused Weapons|Alternate Monk|LLAM|Wuxia|LLAM|6",
+				"Spirit Blade|Alternate Monk|LLAM|Wuxia|LLAM|10",
+				"Master of Steel|Alternate Monk|LLAM|Wuxia|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Astral Warrior",
+			"shortName": "Astral Warrior",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 10,
+			"optionalfeatureProgression": [
+				{
+					"name": "Astral Techniques",
+					"featureType": [
+						"LLAM:T:AW"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Astral Warrior|Alternate Monk|LLAM|Astral Warrior|LLAM|3",
+				"Astral Visage|Alternate Monk|LLAM|Astral Warrior|LLAM|6",
+				"Mystical Defense|Alternate Monk|LLAM|Astral Warrior|LLAM|10",
+				"Master Astral Warrior|Alternate Monk|LLAM|Astral Warrior|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Rising Dragon",
+			"shortName": "Rising Dragon",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 10,
+			"optionalfeatureProgression": [
+				{
+					"name": "Astral Techniques",
+					"featureType": [
+						"LLAM:T:RD"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Rising Dragon|Alternate Monk|LLAM|Rising Dragon|LLAM|3",
+				"Ascendant Step|Alternate Monk|LLAM|Rising Dragon|LLAM|6",
+				"Draconic Mantle|Alternate Monk|LLAM|Rising Dragon|LLAM|10",
+				"Master of Draconic Might|Alternate Monk|LLAM|Rising Dragon|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of Yin & Yang",
+			"shortName": "Yin & Yang",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 10,
+			"optionalfeatureProgression": [
+				{
+					"name": "Astral Techniques",
+					"featureType": [
+						"LLAM:T:YY"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of Yin & Yang|Alternate Monk|LLAM|Yin & Yang|LLAM|3",
+				"Precise Manipulation|Alternate Monk|LLAM|Yin & Yang|LLAM|6",
+				"Mystical Touch|Alternate Monk|LLAM|Yin & Yang|LLAM|10",
+				"Master of Life & Death|Alternate Monk|LLAM|Yin & Yang|LLAM|17"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Way of the Drunken Fist",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Drunken Fist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"大多数僧侣都是严肃和沉思的，而醉拳的学生无论走到哪里都会寻找到快乐。这些僧侣掌握了一种模仿醉汉不可预测的动作的风格，他们会用自己相当高的技能来装傻，让别人笑，或者让傲慢的贵族们难堪。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drunken Fist Techniques|Alternate Monk|LLAM|Drunken Fist|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Jovial Performer|Alternate Monk|LLAM|Drunken Fist|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drunken Style|Alternate Monk|LLAM|Drunken Fist|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Drunken Fist Techniques",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Drunken Fist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature step of the wind|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature deflect missile|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature heavenly step|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Jovial Performer",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Drunken Fist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你运用独特的武术风格，通过滑稽表演带来快乐。你获得表演、酿酒工具和即兴武器的熟练加值。此外，你使用即兴武器进行的攻击算作武术攻击。"
+			]
+		},
+		{
+			"name": "Drunken Style",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Drunken Fist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你以混乱的优雅在战斗中移动。在你的回合中，当你用一次武术攻击击中一个独特生物时，你的速度会增加5英尺，直到回合结束。",
+				"此外，当你用一次武术攻击击中一只生物时，该生物在你的下一个回合开始之前对你发动的任何机会攻击都具有劣势。"
+			]
+		},
+		{
+			"name": "Unpredictable Sway",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Drunken Fist",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的不规律动作变得更加复杂，甚至更难以预测。你获得以下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你处于俯卧状态时，你可以在不消耗移动力的情况下站起来，而不是消耗一半的移动力。",
+						"当一名生物用近战攻击未命中你时，你可以使用你的反应花费1点气点，并强迫它攻击你选择的另一名生物，该生物必须在你身边5英尺范围内，并且也在它的攻击范围内。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Chaotic Luck",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Drunken Fist",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"每当你进行带有劣势的攻击检定、能力检定或豁免检定时，你可以花费1点气来取消该劣势。"
+			]
+		},
+		{
+			"name": "Master of the Drunken Fist",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Drunken Fist",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在战斗中，你展现出无与伦比的混乱风格。当你在回合内进行攻击动作时，你可以对每个你经过且在你的徒手攻击范围内的生物进行一次武术攻击，即使你进行的攻击次数超过了正常限制。"
+			]
+		},
+		{
+			"name": "Way of the Open Hand",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Open Hand",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"虽然所有的僧侣都是战士，但追随 \"开放之手 \"的僧侣们坚持不懈地训练，将他们的身体锻造成致命的武器。他们并不忽视精神训练，但张开手的弟子们以他们的武术技能为荣，很少看到张开手的僧侣挥舞拳头以外的武器。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Open Hand Techniques|Alternate Monk|LLAM|Open Hand|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Practiced Strikes|Alternate Monk|LLAM|Open Hand|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Open Hand Techniques",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Open Hand",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中提到的僧侣等级中学习某些技术。这些技巧不计入你所掌握的技巧总数。此外，当你获得一个僧侣等级时，你可以用你选择的另一个攻击技巧来取代你通过这个功能学到的一个攻击技巧。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature empowered strike|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature stunning strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature ındomitable spirit|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Practiced Strikes",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Open Hand",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的纪律使得打击对你来说已经变得如同第二天性一般。每回合一次，当你用徒手攻击命中时，你可以使用你已掌握的一项打击技巧，而无需花费气点。",
+				"你可以使用你的打击技巧，次数等于你的智力调整值（最少一次），每次完成一次长休后，你就会恢复所有已用次数。"
+			]
+		},
+		{
+			"name": "Ebb and Flow",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Open Hand",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你已经接受过训练，可以利用你敌人的动量来反击他们。当你能看见的生物用近战攻击未击中你时，你可以使用以下其中一种反应：",
+				{
+					"type": "list",
+					"items": [
+						"你强迫它进行一次敏捷豁免检定。如果未通过豁免检定，它将被击倒并且速度降为0，直到回合结束。任何比你至少大一号的生物在豁免检定时获得优势。",
+						"你可以对该生物进行一次徒手攻击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Open Hand Strike",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Open Hand",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的拳头打击如此之猛，以至于打乱了你敌人的气的流动。当你用徒手攻击取得了暴击时，该生物在作为该徒手攻击的一部分而强迫其进行的任何豁免扑克牌检定上获得劣势。"
+			]
+		},
+		{
+			"name": "Master of Many Forms",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Open Hand",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你能够轻松掌握新的技巧。在进行长时间休息时，你可以花10分钟练习你的武术形式，并用你满足条件的另一项技巧替换你目前已掌握的技巧。"
+			]
+		},
+		{
+			"name": "Master of the Open Hand",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Open Hand",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已经成为无与伦比的徒手武术大师，能够以压倒性的力量和奇妙的速度发动攻击。你获得以下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"每当你使用(风暴连击)(Flurry of Blows)时，你可以进行三次徒手攻击，而不是通常的两次。",
+						"当你对一个生物进行机会攻击时，你可以用两次徒手打击来代替该攻击。",
+						"当你使用Ebb and Flow对一个生物进行徒手攻击时，你可以进行两次徒手攻击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of Radiance",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Radiance",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"传说中，流浪的圣人从他们的身体里发出阵阵光芒。这些光芒的学生对自己的精神有很好的控制，他们可以用光芒四射的Ki来攻击别人。这些光芒四射的战士在陆地上旅行，促进所有人民之间的和谐与正义。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Radiant Techniques|Alternate Monk|LLAM|Radiance|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Radiant Bolt|Alternate Monk|LLAM|Radiance|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Radiant Techniques",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 7,
+			"subclassShortName": "Radiance",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature empowered strike|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature stunning strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature indomitable spirit|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Radiant Bolt",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Radiance",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经训练过，可以将你的气聚集成灼热光芒的射线。每当你能进行一次徒手攻击时，你可以用一次辐射射线攻击来替代。",
+				"辐光箭是一种射程为(30/90)的武术攻击，你精通于此。命中时，它们造成的辐光伤害等同于你的武术骰的一次投掷加上你的敏捷调整值。"
+			]
+		},
+		{
+			"name": "Searing Blast",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Radiance",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"你可以释放灼热的光辉气。作为一个奖励动作，你可以消耗1点气来迫使所有在相邻的15英尺锥形范围内的生物进行一次敏捷豁免检定。未通过检定的生物会受到等于你的武术骰的三次掷骰结果的光辉伤害，通过检定的生物则受到一半伤害。",
+				"从11级开始，你可以使用你的气灵特性，使用炽炎冲击而不消耗气。"
+			]
+		},
+		{
+			"name": "Luminous Burst",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Radiance",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的灵魂充满了明亮的辐射，你可以引导它来净化世界。作为一个动作，你可以释放一道奇妙的辐射气的冲击波，形成一个5英尺宽，100英尺长的直线，迫使该区域内的所有生物进行一次敏捷豁免检定。在未通过检定的情况下，它们会受到相当于你的武术骰子投掷六次的辐射伤害，通过检定的情况下则受到一半的辐射伤害。",
+				"你可以使用气点（最多等于你的感知调整值）来强化你的光辉爆发，每花费一个气点，就可以为伤害额外增加一个武术骰的掷骰结果。",
+				"你可以使用这个特性的次数等于你的感知调整值（最少一次），当你完成一次长休时，你会恢复所有已用次数。当你没有使用次数时，你可以花费3点气点再次使用(Luminous Burst)。"
+			]
+		},
+		{
+			"name": "Master of Light",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Radiance",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你辉煌的精神是所有站在邪恶面前的人的一盏希望之光。你获得以下益处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得的飞行速度与你的移动速度相等。",
+						"你被光芒环绕。你在30英尺半径内散发出明亮的阳光，30英尺之外是微弱的阳光。你可以将光线熄灭或恢复为奖励动作。",
+						"你的(Radiant Bolt)、(Searing Blast)和(Luminous Burst)特性所造成的辐射伤害都被视为真正的阳光。",
+						"你获得对死灵伤害的抗性，对所有辐射伤害的免疫，以及对致盲状态的免疫。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of the Reaper",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Reaper",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"虽然大多数寺院教导他们的学生要充分发挥他们的生活潜力，但有些寺院却痴迷于夺取生命。收割者之路就是这样一个教团。这些僧侣是扼杀其他凡人生命的专家，他们学习使用死亡之气来激发自己的武功。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Reaper Techniques|Alternate Monk|LLAM|Reaper|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Frightful Touch|Alternate Monk|LLAM|Reaper|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Necrotic Spirit|Alternate Monk|LLAM|Reaper|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Reaper Techniques",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Reaper",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature crippling strike|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature slowing strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature aura sight|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Frightful Touch",
+			"source": "LLAM",
+			"page": 7,
+			"foundryImg": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Reaper",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"你可以将你的气聚集到其他生物身上，让它们感染恐惧。当你用武术攻击命中一只生物时，你可以花费1点气来迫使它进行一次感知豁免检定，否则它会在你的下一个回合开始前对你感到恐惧。",
+				"从11级开始，你可以使用你的气灵特性来使用无需消耗任何气点的恐怖之触（Frightful Touch）。"
+			]
+		},
+		{
+			"name": "Necrotic Spirit",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Reaper",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你与死亡气息的亲和力完全渗透了你的身体、心灵和精神，为你带来以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以使你的徒手攻击造成坏死的伤害，以代替正常的击打伤害。",
+						"你对坏死的伤害有抵抗力。",
+						"当你被迫做一个抵抗被（%0%）的储蓄动作时，你在掷骰子时有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sinister Vitality",
+			"source": "LLAM",
+			"page": 7,
+			"foundryImg": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Reaper",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你可以将死灵活力注入你的肉体。在你的回合中作为一个奖励动作，你可以给自己提供临时生命值，数值等同于你的感知调整值（最低为1）。（Wisdom）",
+				"在这些临时生命值持续期间，你对非魔法来源的钝击、穿刺和斩击伤害具有抗性。"
+			]
+		},
+		{
+			"name": "Armor of the Grave",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Reaper",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"你对死亡如此熟悉，以至于你抵抗它的控制。如果你的生命值降至0点但没有立即死亡，你可以花费1点气点，使自己的生命值变为1点。",
+				"每次在完成一次长休前再次使用此特性时，你必须额外花费1点气点。"
+			]
+		},
+		{
+			"name": "Master of Death",
+			"source": "LLAM",
+			"page": 7,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Reaper",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你可以通过接触释放致命气的Ki。当你在你的回合内进行攻击动作时，你可以用接触代替一次攻击，并花费多达10点Ki点数，迫使目标进行一次体质豁免投骰。在未通过豁免时，目标每花费的Ki点数会受到2d10点死灵伤害，通过时伤害减半。",
+				"对你感到恐惧的生物，在抵抗这个特性的体质豁免 throws 时，会受到劣势。"
+			]
+		},
+		{
+			"name": "Way of the Shadow Arts",
+			"source": "LLAM",
+			"page": 8,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Shadow Arts",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"虽然大多数武术练习者都高度重视光荣的行为和战斗，但那些遵循影子艺术之道的人却尽可能地利用一切弱点。暗杀者、间谍和潜入者，影子和尚利用黑暗来发挥他们的优势，只有在确保成功的情况下才动手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shadow Techniques|Alternate Monk|LLAM|Shadow Arts|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eyes of Night|Alternate Monk|LLAM|Shadow Arts|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shadow Arts|Alternate Monk|LLAM|Shadow Arts|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Shadow Techniques",
+			"source": "LLAM",
+			"page": 8,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Shadow Arts",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature slow fall|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature gentling touch|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature heavenly step|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Eyes of Night",
+			"source": "LLAM",
+			"page": 8,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Shadow Arts",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你获得暗视能力，范围为60英尺。如果你已经拥有暗视能力，其范围增加30英尺。",
+				"此外，当你在昏暗的光线或黑暗中时，你对任何灵巧（隐身）的检查都有优势。"
+			]
+		},
+		{
+			"name": "Shadow Arts",
+			"source": "LLAM",
+			"page": 8,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Shadow Arts",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 2
+			},
+			"entries": [
+				"你可以运用你的气来施放以下法术：黑暗(darkness)、夜视(darkvision)、悄无踪迹(pass without trace)或沉默(silence)。你可以透过你施放的法术产生的魔法黑暗看到事物。",
+				"你每个法术只能施放一次，当你完成一次长休后，你恢复施放它们的能力。如果你没有剩余的法术使用次数，你可以花费2点气点再次施放它。"
+			]
+		},
+		{
+			"name": "Shadow Step",
+			"source": "LLAM",
+			"page": 8,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Shadow Arts",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你在黑暗中悄无声息地移动，可以从一个阴影中跨越到另一个。当你处于微光或黑暗中时，你可以使用一个奖励动作，传送到你能看到的、同样处于微光或黑暗中的一个未被占据的空间，最远距离为60英尺。传送后，在该回合结束前，你对第一次使用武术攻击时获得优势。"
+			]
+		},
+		{
+			"name": "Cloak of Shadows",
+			"source": "LLAM",
+			"page": 8,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Shadow Arts",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你可以运用气和融入阴影中。当你处于微弱光线或黑暗中时，你可以使用一个动作变得隐形，直到你攻击、施放法术或移动到明亮光线区域为止。",
+				"此外，当一个生物在你处于隐形状态时进入你的攻击范围，你可以使用你的反应进行一次机会攻击。最后，只有当你击中目标时，机会攻击才会结束你的隐形状态。如果攻击未命中，你将保持隐形。"
+			]
+		},
+		{
+			"name": "Master of Shadows",
+			"source": "LLAM",
+			"page": 8,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Shadow Arts",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是无与伦比的暗影艺术大师，解锁了标志着你为真正暗影大师的黑暗气功。你获得以下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以随意施放你的暗影艺术法术。",
+						"你的阴影步法的范围增加到120英尺。",
+						"你可以使用你的阴影斗篷作为一个奖励动作。",
+						"你可以在不消耗法术槽或材料组件的情况下施放《隐形术》或《暗影之焰》。你每个法术可以施放一次，当你完成一次长休后，你可以重新施放它们。如果你没有剩余的法术使用次数，你可以花费4点气点再次施放它。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of the Wu Jen",
+			"source": "LLAM",
+			"page": 9,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"一些僧侣并不专注于内部，而是将自己与大自然的力量相协调。这些原始的圣人被称为Wu Jens，他们用五种元素的力量增强自己的技能；空气、地球、火、水和木。通过冥想，他们可以学会将自己的气引导到元素力量的展示中。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Disciple of the Elements|Alternate Monk|LLAM|Wu Jen|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Disciple of the Elements",
+			"source": "LLAM",
+			"page": 9,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的元素形态持续1分钟，但如果你被使无能力或使用一个奖励动作来结束它，它会提前结束。一旦你学会了古老的修道院艺术，允许你施放法术。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"在这个传统描述的末尾，你可以选择从巫人法术列表中学习两个你喜欢的零级法术。在第10级和第17级时，你分别可以学习一个额外的巫人法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"吴仁宝法术表显示你有多少个法术槽，以及这些法术槽的等级。你所有的法术槽都是一样的等级。要施展一个1级或更高等级的武仁法术，你必须耗费一个法术槽。你使用该法术的施法时间和其他规则，但你的身体成为这些法术的施法焦点，而且你不需要提供任何物质成分。当你完成短时或长时休息时，你会恢复所有已消耗的吴珍法术槽。",
+						"例如，在7级时，你有两个2级法术位。要施放1级法术《燃烧之手》，你必须消耗其中一个武士法师法术位，并将其作为2级法术施放。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ki Casting",
+					"entries": [
+						"你可以借助你的气来恢复你的元素力量。作为你回合的一个奖励动作，你可以消耗与1 + 你的位级相等的气点数，来恢复你已用掉的武僧法术位之一。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"你从本传统末尾的吴珍法术列表中选择学习三个一级法术。吴仁宝法术表的已知法术栏显示你何时学习更多的吴仁宝法术。你选择的法术的等级必须不高于表格中你的等级的槽位等级一栏所显示的。",
+						"当你获得一个等级时，你可以选择一个你所知道的吴仁宝法术，并用吴仁宝法术列表中的另一个法术代替它，这个法术必须是你有法术槽的等级。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智慧是你对吴仁宝法术的施法能力，所以每当法术提到你的施法能力时，你就会使用你的智慧，在设定蓄力DC时，以及在进行法术攻击卷时，都会使用你的智慧。",
+						{
+							"type": "abilityDc",
+							"name": "Spell save DC",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell attack modifier",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fist of the Five Ways",
+			"source": "LLAM",
+			"page": 9,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你可以将五行之力注入你的拳头。每当你进行一次徒手攻击时，你可以选择让它造成钝击、冰冷、火焰、毒素或雷电伤害。",
+				"此外，当你以这种方式强化徒手攻击时，你的徒手攻击范围增加5英尺。",
+				"最后，当你使用你的动作施放一个武士法师(Wu Jen)法术时，你可以作为一个奖励动作进行一次徒手攻击。"
+			]
+		},
+		{
+			"name": "Spiritual Flow",
+			"source": "LLAM",
+			"page": 9,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 2
+			},
+			"entries": [
+				"你将你的武术与灵魔相结合。当你施放一个施法时间为1个行动的武士法术时，你可以花费2点气来将其作为一个奖励行动来施放。"
+			]
+		},
+		{
+			"name": "Master of the Elements",
+			"source": "LLAM",
+			"page": 10,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wu Jen",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 6
+			},
+			"entries": [
+				"作为一个动作，你可以将五大元素吸收到自己身上，进入元素形态，获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你获得一个飞行速度，等同于你的步行速度。",
+						"你抵抗 钝击、穿刺 和 砍砍 伤害。",
+						"对你的暴击命中将变为普通命中。",
+						"对你的机会攻击有劣势。",
+						"你可以在每个回合开始时获得临时生命值，数值等同于你的感知调整值（最少为1）(Wisdom modifier)。"
+					]
+				},
+				"你的元素形态持续1分钟，但如果你被击倒或使用一个奖励动作来结束它，它会提前结束。一旦你使用了这个特性，你必须在再次使用它之前完成一次长休。当你没有剩余使用次数时，你可以消耗6点气点再次进入你的元素形态。"
+			]
+		},
+		{
+			"name": "Way of the Wuxia",
+			"source": "LLAM",
+			"page": 10,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wuxia",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"虽然所有的僧侣都能够挥舞他们的风格的武器以达到巨大的效果，但那些遵循武侠之道的人将他们的生命奉献给了对选定的少数武器的完全掌握。这些战士以极度专注而闻名，并且一直在寻找逐渐强大的战士来挑战和测试他们使用战争武器的技巧。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wuxia Techniques|Alternate Monk|LLAM|Wuxia|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Student of Steel|Alternate Monk|LLAM|Wuxia|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Wuxia Techniques",
+			"source": "LLAM",
+			"page": 10,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wuxia",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature patient defense|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature seeking strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature heavenly step|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Student of Steel",
+			"source": "LLAM",
+			"page": 10,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wuxia",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你追求用你的标志性武器达到精通。选择一种没有笨重或特殊属性的近战武器，和一种远程武器成为你的武侠武器。如果你还没有，你获得这些武器的熟练加成，并且它们符合你的武术攻击。你在第6级、第11级和第17级时可以选择额外的武侠武器。",
+				"你的培训还允许你使用以下功能。",
+				{
+					"type": "list",
+					"items": [
+						"精湛招架。当你握持一把近战武侠武器，且一名你能看见的生物用近战攻击命中你时，你可以使用一次反应，在那次攻击中将你的智力调整值（最少+1）加到你的护甲等级上。",
+						"精准瞄准。作为你回合的一个奖励动作，你可以集中精神来提高你的准确性，在你当前回合结束前，你进行的下一个武侠兵器攻击骰检之前，你可以将骰子点数为7或更低的d20骰检视为8。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ki-Infused Weapons",
+			"source": "LLAM",
+			"page": 11,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wuxia",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你已经学会通过你的武器来引导你的气。从6级开始，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"武侠小说中的武器具有魔力，是为了克服对非魔力攻击的抵抗和免疫。",
+						"每回合一次，当你用武学武器攻击击中一个生物时，你可以花费1点气力对目标造成相当于你的武功值的额外伤害。",
+						"当你使用连续拳(Flurry of Blows)时，你可以用近战武侠兵器攻击替代你的徒手攻击。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spirit Blade",
+			"source": "LLAM",
+			"page": 11,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wuxia",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 3
+			},
+			"entries": [
+				"你可以沿着你的武器长度引导精细磨练的气。从11级开始，你可以使用一个额外的动作，将1到3个基点注入你所持有的武学武器中，每注入一个基点，其攻击和伤害奖励就增加1。该奖励持续1分钟或直到你将气注入另一件武器。你不能使用此功能将武器的攻击和伤害提高到+3以上。"
+			]
+		},
+		{
+			"name": "Master of Steel",
+			"source": "LLAM",
+			"page": 11,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Wuxia",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是你招牌武器的无可争议的大师。当你使用一项武侠武器进行攻击检定时，你可以选择使用你的武僧等级代替掷骰子（d20）来确定结果。",
+				"如果使用你的武僧等级会导致该攻击骰的暴击，那么这次攻击就会变成暴击。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。"
+			]
+		},
+		{
+			"name": "Way of the Boulder",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 3,
+			"entries": [
+				"这个传统与山峰本身一样古老，从文明的最早期就已经从师父那里传给了学生。这个传统的学生把他们的寺院建在山峰上和深洞里，专注于成为像山一样大而不倒的人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Boulder Techniques|Alternate Monk|LLAM|Boulder|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Solid Body|Alternate Monk|LLAM|Boulder|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Stalwart Strength|Alternate Monk|LLAM|Boulder|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Boulder Techniques",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature spiritual armor|LLAM:E}"
+						],
+						[
+							"5th",
+							"{@optfeature crushing strike|LLAM:E}"
+						],
+						[
+							"9th",
+							"{@optfeature friend of beast and leaf|LLAM:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Solid Body",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 3,
+			"header": 1,
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "Solid Body",
+						"changes": {
+							"key": "data.attributes.ac.base",
+							"mode": "UPGRADE",
+							"value": "10 + @abilities.con.mod + @abilities.wis.mod"
+						}
+					}
+				]
+			},
+			"entries": [
+				"当你在3级时采用这个传统时，你可以使用你的身体体积来增强你的进攻和防御。当不穿戴盔甲或盾牌时，你的装甲等级等于10+你的体质修正值+你的智慧修正值。",
+				"你也可以用体质来代替你的力量或你的灵巧来进行武术攻击和伤害卷。"
+			]
+		},
+		{
+			"name": "Stalwart Strength",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你从脚下的大地中汲取力量。当你在接触地面时进行基于力量的技能检定或力量豁免检定时，你可以花费1点气点，将你的体质调整值加到你的投掷中。",
+				"当你达到11级时，你可以在这个职业中使用你的坚韧力量，而不需要消耗一个气点。(Stalwart Strength)"
+			]
+		},
+		{
+			"name": "Rebounding Defense",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你能看见的生物用近战武器攻击你时，你可以花费1点气点作为反应，试图用你的体魄吸收这一打击。减少的伤害量等于你的武僧等级 + 一个武术骰的点数 + 你的体质调整值。",
+				"如果你将攻击的伤害降低到零，你可以将这一击反弹回去，作为同一反应的一部分，对你的攻击者进行一次近战武术攻击。"
+			]
+		},
+		{
+			"name": "Ki Infused Bulk",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从11级开始，你密集的、被Ki注入的身体形态使你能够抵御物理和元素攻击。在每次短休或长休结束时，选择以下一种伤害类型：重击、穿刺、砍击、酸、冷、火、照明或雷。你对这种类型的伤害有抵抗力，直到你下一次短暂或长时间休息结束。",
+				"作为一个额外的动作，你可以消耗2个Ki点数来重新调整你的Ki，并将你从这个能力中获得的伤害抵抗换成上面列表中的另一个伤害抵抗。"
+			]
+		},
+		{
+			"name": "Mighty Form",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 17,
+			"header": 2,
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "Mighty Form",
+						"changes": {
+							"key": "data.abilities.con.value",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					}
+				]
+			},
+			"entries": [
+				"在达到17级时，你的身体超越了普通凡人的密度和质量极限。你的体质得分和最大体质得分都会增加2。"
+			]
+		},
+		{
+			"name": "Earthshaker",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Boulder",
+			"page": 3,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你可以利用你的超自然密度来引发地震。作为一个动作，你可以消耗3点气点来压碎地面，将你周围15英尺范围内的地面变成艰难地形，并迫使该范围内你选择的生物进行一次力量豁免检定。未能通过检定的生物会受到等同于你武术骰子点数两次的重击伤害，并倒地。通过检定的生物会受到一半伤害。",
+				"当你使用这个特性时，你可以消耗额外的气点（最多为你的感知调整值）来增加每消耗一个气点的伤害，增加一个武术骰的掷骰结果。"
+			]
+		},
+		{
+			"name": "Way of the Brawler",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Brawler",
+			"page": 4,
+			"level": 3,
+			"entries": [
+				"斗士之道是一种非正式的寺院传统，大师们用它来指代那些从未接受过正式武术训练的人。斗士是指那些在小巷和斗兽场中学习战斗的人。他们往往是白手起家的劣等生，为了获胜不惜一切代价。对这些野蛮的废柴来说，每一场战斗都是为了生存而战。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Savage Exploits|Alternate Monk|LLAM|Brawler|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Streetwise|Alternate Monk|LLAM|Brawler|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Savage Exploits",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Brawler",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在你的暗中搏斗中，你学会了许多残酷和卑鄙的手段。你获得以下特性：",
+				{
+					"type": "table",
+					"caption": "Brawler Exploits",
+					"colLabels": [
+						"Monk Level",
+						"Exploits Known",
+						"Exploit Die",
+						"Exploit Dice",
+						"High Degree"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"3rd",
+							"2",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"4th",
+							"2",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"5th",
+							"3",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"6th",
+							"3",
+							"{@dice d4}",
+							"2",
+							"1st"
+						],
+						[
+							"7th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"8th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"9th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"10th",
+							"4",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"11th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"12th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"13th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"141th",
+							"5",
+							"{@dice d6}",
+							"3",
+							"2nd"
+						],
+						[
+							"15th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"16th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"17th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"18th",
+							"6",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"19th",
+							"7",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						],
+						[
+							"20th",
+							"7",
+							"{@dice d8}",
+							"4",
+							"3rd"
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exploit Dice",
+					"entries": [
+						"搏击者（The Brawler）特技表显示你有多少个特技骰（Exploit Dice）来使用你的特技。要使用你已经掌握的特技，你需要消耗一个特技骰，并且当你完成短暂休息或长休息时，你会重新获得所有已消耗的特技骰。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High Degree",
+					"entries": [
+						"你的武僧等级限制了你能够执行的技巧的复杂程度。这个限制体现在《搏击者技巧》表格的\"高度\"列中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exploits",
+					"entries": [
+						"你可以从可供选择的替代野蛮人能力中学习两个{@filter Savage Exploits|optionalfeatures|feature type=ll:se}。在每次能力检定、攻击或豁免检定中，你只能使用一个特技。",
+						"当你获得一级(`Monk`)时，你可以用你选择的另一个(`Martial`)武技(`Exploit`)替换你已知的一个武技。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"如果一个利用（Exploit）需要生物进行豁免检定，那么豁免检定 DC 的计算如下：",
+						{
+							"type": "abilityDc",
+							"name": "Exploit",
+							"attributes": [
+								"str",
+								"dex"
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Multiclassing and Exploits",
+					"entries": [
+						"你的武技部分取决于你在学习Exploits的职业中的综合等级，部分取决于你在每个职业中的个人等级。如果你的团队使用了多职业的可选规则，并且你从多个职业中学习Exploits，你需要遵循以下规则：https://www.gmbinder.com/share/-NGUL51kfZCPlESxL1wq (GMBinder)"
+					]
+				}
+			]
+		},
+		{
+			"name": "Streetwise",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Brawler",
+			"page": 4,
+			"level": 3,
+			"header": 1,
+			"languageProficiencies": [
+				{
+					"thieves' cant": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"entries": [
+				"你已经学会了在街头生存所需的技能。你获得了恐吓技能的熟练加值，并学会了说、读和破译盗贼暗语，即犯罪者使用的语言。"
+			]
+		},
+		{
+			"name": "Spiritual Stamina",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Brawler",
+			"page": 4,
+			"level": 6,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 2
+			},
+			"entries": [
+				"你可以借助你的精神力量来激发你的武术能力。作为一个奖励动作，你可以消耗2点气点来恢复你已经消耗的（Exploit Dice）。",
+				"此外，当你用徒手攻击取得暴击时，你可以在该攻击中使用你已掌握的一个野蛮技(Savage Exploit)而无需消耗一个技能骰(Exploit Die)。"
+			]
+		},
+		{
+			"name": "Infamous Reputation",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Brawler",
+			"page": 4,
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"entries": [
+				"你的名声在前。作为一个奖励动作，你可以花费1点气点，迫使一个在30英尺内且能看到或听到你的生物进行一次感知豁免。如果豁免失败，该生物会在你下一个回合开始前害怕你。",
+				"任何对你感到恐惧的生物，在其豁免投掷中对你的野蛮行径具有劣势。",
+				"从11级开始，你可以使用你的气灵特性来施展无耻名声，而不需要消耗1点气点。"
+			]
+		},
+		{
+			"name": "Underworld Master",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Brawler",
+			"page": 4,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是无情战斗的大师。你的武术攻击在d20上掷出19或20时会造成暴击。",
+				"此外，每当你用一次武术攻击对生物造成重击时，它必须通过一次以你的利用存档 DC 为豁免 DC 的感知豁免检定，否则将被眩晕直到你下个回合开始。"
+			]
+		},
+		{
+			"name": "Way of Ferocity",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Ferocity",
+			"page": 5,
+			"level": 3,
+			"entries": [
+				"当每个传统的僧侣都在努力掌握他们的身体形态，将他们的身体磨练成武器时，天生具有天然武器的生物；凶恶的爪子、强壮的角、锋利的牙齿、或鞭打的尾巴，在寻求将他们的身体变成武器进行战斗时具有天然优势。",
+				"具有这些天然优势的僧侣往往采用凶猛之道。通过练习这一古老而野蛮的传统，他们用秘密技术增强自己的身体特征，并将他们对气的掌握与居住在所有野生生物中的原始凶猛结合起来。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Optional Rule: Race Restriction|Alternate Monk|LLAM|Ferocity|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ferocity Techniques|Alternate Monk|LLAM|Ferocity|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Natural Predator|Alternate Monk|LLAM|Ferocity|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Optional Rule: Race Restriction",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Ferocity",
+			"page": 5,
+			"level": 3,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"凶猛之道通常只由兽类祖先的生物修炼。只有拥有天然武器的生物，如{@race Lizardfolk|MPMM}、{@race Tortle|TTP|Tortles}、{@race Tabaxi|MPMM}、{@race Minotaurs|MPMM}、{@race Leonin|MOT}，或其他兽人，才能修炼这一修道传统。虽然，你的桌子可以取消这个限制，以适应你的竞选环境。"
+			]
+		},
+		{
+			"name": "Ferocity Techniques",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Ferocity",
+			"page": 5,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature crippling strike|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature stunning strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature friend of beast and leaf|LLAM:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Natural Predator",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Ferocity",
+			"page": 5,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在3级时采用这个传统后，你可以用以下的一个学科来增强你的自然能力。生物经常掌握增强其自然特征的学科。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Bestial Rend",
+							"page": 5,
+							"entries": [
+								"这种戒律最常被拥有锋利爪牙的僧侣采用。你的徒手攻击造成割伤伤害并造成深创。每次你用徒手攻击命中目标时，目标的移动速度将累积减少5英尺，直到你的下一个回合开始。如果这个特性将目标的速度降低到零，它在你的下一个回合开始前对敏捷豁免扔骰子时有劣势。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Natural Defense",
+							"page": 5,
+							"entries": [
+								"这种戒律通常由穿着鳞片或甲壳等护甲的武僧采纳。当你能看到的生物用攻击命中你时，你可以使用你的反应，在该攻击中将你的武术骰掷出一个点数，加到你的护甲等级上，有可能将一次命中变成未命中。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Savage Charge",
+							"page": 5,
+							"entries": [
+								"这种戒律最常被有蹄或有角的僧侣采用。如果你朝着一个生物直线移动至少15英尺，你在本回合结束前对该生物的第一次武术攻击获得优势。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Intuition",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Ferocity",
+			"page": 5,
+			"level": 6,
+			"header": 2,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"insight",
+							"perception",
+							"stealth",
+							"survival"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你已经磨练了你的原始本能和武艺。从以下列表中选择两项技能：运动（Athletics）、洞察（Insight）、威吓（Intimidation）、感知（Perception）、潜行（Stealth）或生存（Survival）。",
+				"你获得这两项技能的熟练加值，每当你使用这两项技能进行能力检定时，你的检定结果会额外增加一个你的武术骰掷骰结果的加值。"
+			]
+		},
+		{
+			"name": "Power of the Wild",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Ferocity",
+			"page": 5,
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Ki Points",
+				"amount": 1
+			},
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"2d6",
+						"bludgeoning"
+					]
+				]
+			},
+			"entries": [
+				"在你的训练中，你学会了用气的力量来增强你的物理攻击。从11级开始，当你用徒手攻击击中一个生物时，你可以消耗1个基点对目标造成额外的（%0%）伤害。"
+			]
+		},
+		{
+			"name": "Master of Ferocity",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Ferocity",
+			"page": 5,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已经发挥了你野生身体的真正潜力。在17级时，你学会了以下一种修炼方法。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Bestial Fury",
+							"page": 5,
+							"entries": [
+								"就像荒野中最伟大的猎人一样，当你的猎物虚弱时，你可以激起原始的愤怒。当你对一只生物使用徒手攻击造成暴击时，它的移动速度降为零，并且直到你的下一个回合开始之前，你对该生物进行的任何徒手攻击都具有优势。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Natural Resilience",
+							"page": 5,
+							"entries": [
+								"你可以借助你的神秘力量来强化你的防御，并抵御攻击。每当你能看见的生物用攻击命中你时，你可以消耗气点（最多等于你的感知调整值）来减少伤害，每消耗一个气点，你可以减少一个武术骰的点数的伤害。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Savage Rush",
+							"page": 5,
+							"entries": [
+								"你可以释放原始速度的爆发来践踏那些挡路的人。作为一个动作，你可以花费4点气点，沿直线移动你的全程步行速度，并迫使任何你穿过的生物进行一次敏捷豁免检定。失败的生物会受到等于你的武术骰子点数四倍的钝击伤害，并倒地。成功的生物会受到一半伤害且不会倒地。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of the Flowing River",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Flowing River",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"采用流动河道的新手被教导一种强调非暴力的武术风格，只在必要时使用武力。由于这些战士表现出娴熟的优雅和流畅的动作而得名，流河的练习者通常被称为跳舞的僧侣。",
+				{
+					"type": "inset",
+					"name": "Acrobats, Dancers, and Performers",
+					"entries": [
+						"虽然僧侣类鼓励你扮演禁欲主义的战士，但流河的僧侣可以作为艺人、舞者和杂技演员的味道！这就是流河。"
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Flowing River Techniques|Alternate Monk|LLAM|Flowing River|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Monastic Acrobat|Alternate Monk|LLAM|Flowing River|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Flowing River Stance|Alternate Monk|LLAM|Flowing River|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Flowing River Techniques",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Flowing River",
+			"page": 6,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature patient defense|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature deflect missile|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature heavenly step|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Monastic Acrobat",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Flowing River",
+			"page": 6,
+			"level": 3,
+			"header": 1,
+			"skillProficiencies": [
+				{
+					"acrobatics": true,
+					"performance": true
+				}
+			],
+			"entries": [
+				"你的训练使你能够以一种细腻的优雅移动，这在战士中并不常见。你获得熟练加成：（Acrobatics）和（Performance）技能。每当你使用这些技能进行能力检定时，你可以获得一个额外加值，数值等同于你的（Martial Arts）骰投掷的结果。",
+				"你的传统中的僧侣也以他们的舞蹈而闻名。当你进行魅力（表演）检定时，你可以选择进行敏捷（表演）检定。"
+			]
+		},
+		{
+			"name": "Flowing River Stance",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Flowing River",
+			"page": 6,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经接受过训练，可以运用你所属宗派的标志性架势。你可以在你的回合使用一个动作进入(Flowing River Stance)，该架势持续到你下一个回合开始之前。",
+				"当你处于这个姿态时，你每轮可以使用第二个反应。在特定的武僧等级上，你会获得额外的反应：在6级时(3)，10级时(4)，和17级时(5)。",
+				"当一个生物在你处于(流水之舞)状态时，你可以看到它用近战攻击未命中你时，你可以使用一次反应，迫使它进行一次敏捷豁免。如果未通过，目标被击倒，其移动速度降低为0，直到你下个回合开始前。"
+			]
+		},
+		{
+			"name": "Graceful Step",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Flowing River",
+			"page": 6,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你可以像温柔的溪流一样优雅地绕过攻击。在6级时，你学会了{@optfeature patient defense|LLAM}技术，并且它不计入你所知道的技术总数。",
+				"另外，当你进入你的 \"流河 \"姿态时，你可以使用（%0%）而不消耗一个Ki Point。"
+			]
+		},
+		{
+			"name": "Enchanting Flow",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Flowing River",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"name": "Ki"
+			},
+			"entries": [
+				"从11级开始，当你进入 \"流淌的河流 \"状态时，你可以消耗2个Ki点数来诱惑你周围的敌人。在该姿态的持续时间内，任何在你10英尺范围内开始其回合的生物在对你以外的生物进行攻击时都有劣势，直到其回合结束。"
+			]
+		},
+		{
+			"name": "Master of the Flowing River",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Flowing River",
+			"page": 6,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"当一只生物未能通过你的(Flowing River Stance)反应的豁免投掷时，你可以将其击退到一条直线上，除了反应的正常效果之外。当你这样做时，根据生物的大小，它会被击退一定数量的英尺：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"Tiny",
+							"60 feet",
+							"大型",
+							"20 feet"
+						],
+						[
+							"小型",
+							"50 feet",
+							"Huge",
+							"15 feet"
+						],
+						[
+							"中型",
+							"30 feet",
+							"巨大的",
+							"10 feet"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of the Hurricane",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Hurricane",
+			"page": 7,
+			"level": 3,
+			"entries": [
+				"大多数僧侣掌握的武术都侧重于快速打击和难以捉摸的动作，而那些遵循飓风之道的人则掌握强大的武器。使用他们的标志性风格，这个传统的学生成为旋转的钢铁之墙，砍倒任何敢于反对他们的人。",
+				{
+					"type": "inset",
+					"name": "Hurricane Monks & the Tetsubo",
+					"entries": [
+						"虽然飓风僧侣可以使用任何重型武器，但他们传统上会挥舞Tetsubo，这是一种具有重型和双手属性的武术近战武器，击中后会造成{@item 2d6}重击伤害{@homebrew *|\"So does a maul.\" ~Converter}。"
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hurricane Techniques|Alternate Monk|LLAM|Hurricane|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Heavy Warrior|Alternate Monk|LLAM|Hurricane|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tempestuous Strike|Alternate Monk|LLAM|Hurricane|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Hurricane Techniques",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Hurricane",
+			"page": 7,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature whirling strike|LLAM:E}"
+						],
+						[
+							"5th",
+							"{@optfeature stunning strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature monastic fortitude|LLAM:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Heavy Warrior",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Hurricane",
+			"page": 7,
+			"level": 3,
+			"header": 1,
+			"weaponProficiencies": [
+				{
+					"glaive|phb": true,
+					"greataxe|phb": true,
+					"greatsword|phb": true,
+					"halberd|phb": true,
+					"maul|phb": true,
+					"pike|phb": true
+				}
+			],
+			"entries": [
+				"你接受过一种融合重型武器的武术训练。你熟练掌握所有带有重型属性的近战武器，并且使用这些重型近战武器进行的攻击对你来说算作武术攻击。",
+				"此外，当你挥舞一把带有（重型）属性的近战武器时，你在豁免投掷中抵抗被抓取或被迫移动时拥有优势。"
+			]
+		},
+		{
+			"name": "Tempestuous Strike",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Hurricane",
+			"page": 7,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以像暴风雨一样愤怒地挥舞你的重型武器。只要你握持一把重型近战武器，你可以使用旋风打击，而不消耗任何气点。",
+				"此外，您可以选择在旋风打击的伤害骰中，使用您的力量调整值代替敏捷调整值。"
+			]
+		},
+		{
+			"name": "Crushing Counter",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Hurricane",
+			"page": 7,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你可以利用你的重型武器的重量来驱逐你的敌人。当你握持重型近战武器时，一名你能看见的生物用攻击命中你时，你可以使用你的反应对其进行一次武术攻击。命中后，除了造成正常伤害外，你可以选择将该生物的速度减少到0，直到你的下一个回合开始。"
+			]
+		},
+		{
+			"name": "Buffeting Winds",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Hurricane",
+			"page": 7,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你可以用强劲的风势赋予你的打击更强大的力量。当你用重型近战武器攻击一个生物时，你可以花费1点气点，迫使它进行一次力量豁免检定。如果未通过豁免检定，你可以选择让它倒地，或者将其向直线后退，后退距离等于你的感知调整值的五倍。",
+				"此外，每当你使用旋风打击时，你可以额外花费1点气点，使其在对方豁免失败时造成额外的雷属性伤害，伤害值为你的武术骰的一次掷骰结果。",
+				"从11级开始，你可以使用你的气灵特性来使用任一特性，而无需消耗气。"
+			]
+		},
+		{
+			"name": "Master of the Hurricane",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Hurricane",
+			"page": 7,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"尽管它们沉重，你却能挥舞你的武器如旋转的钢铁之风。作为一个动作，你可以消失并立即对你能看到的最多五个生物进行单次近战武器攻击，射程为60英尺。然后你会出现在你的一个目标旁边。你必须装备一把具有重型属性的近战武器才能使用这个特性。",
+				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。如果你没有剩余次数，你可以消耗5点气点再次使用它。"
+			]
+		},
+		{
+			"name": "Way of the Sacred Inks",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Sacred Inks",
+			"page": 8,
+			"level": 3,
+			"entries": [
+				"神圣墨水的入门者花数年时间练习天体书法。一旦他们准备好了，僧侣们就用越来越复杂的天体纹身标记他们的身体，使他们能够获得神圣的力量。随着僧侣与神的精神联系的增长，他们的天体纹身的美也在增长。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Ink Techniques|Alternate Monk|LLAM|Sacred Inks|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Celestial Artist|Alternate Monk|LLAM|Sacred Inks|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Divine Conduit|Alternate Monk|LLAM|Sacred Inks|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Sacred Ink Techniques",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Sacred Inks",
+			"page": 8,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature spiritual armor|LLAM:E}"
+						],
+						[
+							"5th",
+							"{@optfeature divine light|LLAM:E}"
+						],
+						[
+							"9th",
+							"{@optfeature commune with self|LLAM:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Celestial Artist",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Sacred Inks",
+			"page": 8,
+			"level": 3,
+			"header": 1,
+			"languageProficiencies": [
+				{
+					"celestial": true
+				}
+			],
+			"expertise": [
+				{
+					"calligrapher's supplies": true
+				}
+			],
+			"entries": [
+				"你已经学会了天界纹身师的技巧。你学会了说、读和写天界语。尽管大多数武僧会因为对神灵的尊敬而拒绝大声说出天界语。",
+				"此外，你获得书法工具的熟练加值，每当你使用书法工具进行检定时，你可以将你的熟练加值翻倍加到你的骰子点数上。"
+			]
+		},
+		{
+			"name": "Divine Conduit",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Sacred Inks",
+			"page": 8,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的天界纹身使你能够引导上位面的光辉力量。你获得以下列出的特征：",
+				{
+					"type": "list",
+					"items": [
+						"在进行短休期间花费生命骰来恢复生命值时，你可以花费1点气点来恢复最大数量的生命值，而不是进行掷骰。",
+						"当你用一次武术攻击命中目标时，你可以花费气点（最多等于你的感知调整值）来对目标造成额外的辐射伤害，伤害值为每花费一个气点就投掷一次你的武术骰的结果。",
+						"作为一个动作，你可以触摸一个生物，并花费2点气点来恢复其生命值，恢复量等于你的武术骰的一次投掷结果加上你的智力修正值。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Heavenly Protection",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Sacred Inks",
+			"page": 8,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你与神圣的联系和你天界纹身的复杂性都增加了，赋予你一种神圣祝福，保护你免于死亡。当你的生命值降至0点时，你可以选择将其降至1点而不是死亡。",
+				"使用此功能后，必须完成一次长休才能再次使用。"
+			]
+		},
+		{
+			"name": "Light of the Heavens",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Sacred Inks",
+			"page": 8,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"作为一个奖励动作，你可以揭示你身上神圣纹身的神圣之光，让它们在10英尺半径范围内散发明亮的阳光，持续1分钟。当你的纹身被揭示时，你可以在使用神圣导管时，将你的感知调整值（最低为+1）加到你恢复的生命值和造成的辐射伤害上。",
+				"如果你被使无能力，或者在你的回合使用一个奖励动作来结束它，这个特性会提前结束。一旦你使用了这个特性，你必须完成一个短暂或长时间的休息，然后才能再次以这种方式展示你的天体纹身。"
+			]
+		},
+		{
+			"name": "Master of the Sacred Inks",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Sacred Inks",
+			"page": 8,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你是一位被神圣墨水祝圣的大师，你的纹身直接反映了神圣之美。作为一个动作，你可以激发你纹身的力量，化身为天使形态，持续1分钟，赋予你以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你的纹身显现出天使的翅膀。你获得一个飞行速度，等同于你的行走速度，并且可以悬停。",
+						"当你用徒手攻击击中一个生物时，你可以选择造成辐射伤害，而不是钝击伤害。",
+						"你获得了天堂之光(Light of the Heavens)的所有好处。"
+					]
+				},
+				"使用此特性后，你必须完成一次长休才能再次使用它。如果你没有剩余使用次数，你可以花费5点气来再次使用此特性。"
+			]
+		},
+		{
+			"name": "Way of the Vigilante",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Vigilante",
+			"page": 9,
+			"level": 3,
+			"entries": [
+				"虽然所有的僧侣都以这样或那样的方式努力追求完美，但这个传统的僧侣是正义、自由和公平竞争的典范。有些人称赞他们是英雄，有些人则嘲笑他们是法外之徒，守夜人僧侣努力完成更多令人印象深刻的英雄主义壮举。",
+				"守夜人僧侣的标志性标志是他们的英雄角色，这是他们为自己创造的一个保护自己真实身份的衣钵。守夜人修士几乎都有一个深刻的个人原因，那就是穿上他们的英雄角色，努力挫败各种恶棍。你的理由是什么？",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vigilante Techniques|Alternate Monk|LLAM|Vigilante|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Combat Ready|Alternate Monk|LLAM|Vigilante|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Heroic Persona|Alternate Monk|LLAM|Vigilante|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Vigilante Techniques",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Vigilante",
+			"page": 9,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature slow fall|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature crushing strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature heavenly step|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Combat Ready",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Vigilante",
+			"page": 9,
+			"level": 3,
+			"header": 1,
+			"armorProficiencies": [
+				{
+					"light": true,
+					"medium": true,
+					"shield|phb": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"intimidation",
+							"performance"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"你在威吓或表演中选择一项技能获得熟练加值，当你使用该技能进行能力检定时，你的检定获得一个额外加值，数值等同于你的武术骰的一个投掷结果。",
+				"你还获得轻型和中型盔甲以及盾牌的熟练加值。当穿戴盔甲或使用盾牌时，你仍然能够获得(武术)和(无甲移动)的益处。"
+			]
+		},
+		{
+			"name": "Heroic Persona",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Vigilante",
+			"page": 9,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经创造了一个英勇角色，一个超凡脱俗的身份，可以包括一套轻型或中型盔甲和一个盾牌。作为一个奖励动作，只要你不被看见，你可以穿上你的英勇角色，这将为你提供临时生命值，数值等同于你的武僧等级，并获得以下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"作为一个奖励动作，你可以花费1点气点获得临时生命值，数值等同于你的感知调整值。",
+						"当你使用一次武术攻击命中时，你可以花费1点气来对目标造成额外1d10点伤害。",
+						"在计算你穿轻甲或中甲的护甲等级时，你可以用你的智慧来代替灵巧。",
+						"辨别你真实身份的能力检查和占卜法术会自动失败。"
+					]
+				},
+				"你的英勇人格效果持续1小时，如果你使用一个奖励动作来结束它，效果会提前结束。一旦你采用了你的英勇人格，你必须完成一个短休息或长休息，除非你花费3点气点再次使用它。"
+			]
+		},
+		{
+			"name": "Valiant Action",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Vigilante",
+			"page": 9,
+			"level": 6,
+			"header": 2,
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"acrobatics"
+						],
+						"count": 1
+					}
+				}
+			],
+			"entries": [
+				"你英雄人物的神秘力量增强了你的身体能力。你可以选择在体操或竞技中获得熟练加成。你还获得了不属于你已知技能数量的不屈精神技能。",
+				"此外，在你的英勇人格处于激活状态时，你可以每回合使用不屈之心，而无需花费1点气点。"
+			]
+		},
+		{
+			"name": "Inspiring Presence",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Vigilante",
+			"page": 9,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你英勇人格的存在激发了那些与你并肩作战的人的信心。当你的英勇人格激活时，你选择的生物在15英尺内，对抗被魅惑或受到惊吓的豁免 throws 时获得优势。",
+				"在17级时，这个能力的半径增加到30英尺。"
+			]
+		},
+		{
+			"name": "Master Vigilante",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Vigilante",
+			"page": 9,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你的英勇人格是绝对美德的典范。当你采用你的英勇人格时，它的神秘效果会持续直到你解除它。",
+				"另外，当你使用压制打击时，目标必须在进行一次力量豁免检定，否则它会被击退10英尺，每个作为该技能一部分花费的气点。"
+			]
+		},
+		{
+			"name": "Way of the Void",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Void",
+			"page": 10,
+			"level": 3,
+			"entries": [
+				"虽然所有的僧侣都在寻求与宇宙的统一，认为这是值得期待的事情，但那些追随虚无之道的人则通过消灭来寻求统一。传统的虚无主义学生用他们的力量来加速这个宇宙衰败的自然过程。无论是凡人还是仙人，无论是世俗还是魔法，最终都将在不可避免的虚空中成为一体。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Entropic Techniques|Alternate Monk|LLAM|Void|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Entropic Touch|Alternate Monk|LLAM|Void|LLAM:E|3|LLAM:E"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Void Strike|Alternate Monk|LLAM|Void|LLAM:E|3|LLAM:E"
+				}
+			]
+		},
+		{
+			"name": "Entropic Techniques",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Void",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature step of the wind|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature slowing strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature aura sight|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Entropic Touch",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Void",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以引导虚空的无序力量来摧毁。作为一个动作，你花费2点气和触碰一个微小的非魔法物体，立即将其化为一堆细小的尘土。",
+				"在某些武僧等级上，你可以使用这个特性来摧毁更大尺寸的非魔法物体：在6级（中等），在10级（大型），最后在17级（巨大）。"
+			]
+		},
+		{
+			"name": "Void Strike",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Void",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你用徒手攻击命中目标时，你可以花费1点气来对目标造成额外的力量伤害，伤害值等于你的武术骰的点数。如果目标正在集中，它在维持集中的豁免检定上有劣势。",
+				"从11级开始，你可以使用你的气灵特性来施展虚空一击，而无需消耗一个气点。"
+			]
+		},
+		{
+			"name": "Vorpal Step",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Void",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"当你使用(Step of the Wind)时，你可以引导虚空力量暂时脱离实体。直到你的回合结束，你可以穿过非魔法物体和生物，就像它们是艰难地形一样。如果你停在物体或生物内部，你会被推到最近的未被占据的空间，并且每移动5英尺就会受到1d10的力量伤害。"
+			]
+		},
+		{
+			"name": "Dispelling Touch",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Void",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你可以引导虚空的力量来干扰法术。你可以花费3点气点以3级施放《(Counterspell)反魔法》或《(Dispel Magic)驱散魔法》，使用感知作为你的施法能力修正。"
+			]
+		},
+		{
+			"name": "Master of Entropy",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM:E",
+			"subclassShortName": "Void",
+			"page": 10,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"作为一个动作，你可以触摸一个生物，并迫使它进行一次针对你的技术豁免 DC 的体质豁免检定。如果未通过豁免检定，它将遭受灭绝术的效果，就好像是以 6 级施放的一样。",
+				"使用此特性后，你必须完成一次长休才能再次使用它。如果你没有剩余使用次数，你可以花费6点气点再次使用此特性。"
+			]
+		},
+		{
+			"name": "Way of the Rising Dragon",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Rising Dragon",
+			"page": 10,
+			"level": 3,
+			"entries": [
+				"常常为古代龙类效劳，升龙门的门徒学会运用他们的气来模仿龙类的力量。这些龙战士根据他们模仿的龙而有所不同，但尽管有差异，他们都带着伟大龙类的威严风度。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rising Dragon Techniques|Alternate Monk|LLAM|Rising Dragon|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Disciple|Alternate Monk|LLAM|Rising Dragon|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Breath|Alternate Monk|LLAM|Rising Dragon|LLAM|3|LLAM"
+				}
+			]
+		},
+		{
+			"name": "Rising Dragon Techniques",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Rising Dragon",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature step of the wind|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature deflect missile|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature indomitable spirit|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Disciple",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Rising Dragon",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你的武术基于特定类型的龙。 从以下选项中选择你的龙的鳞片颜色，这将使你对某种元素具有亲和力。 每当你用徒手攻击命中时，你可以造成该元素伤害，而不是钝击伤害。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Color",
+						"Elemental"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"黑色",
+							"Acid"
+						],
+						[
+							"Blue",
+							"闪电"
+						],
+						[
+							"黄铜",
+							"Fire"
+						],
+						[
+							"青铜 (Bronze)",
+							"闪电"
+						],
+						[
+							"铜",
+							"Acid"
+						],
+						[
+							"Gold",
+							"Fire"
+						],
+						[
+							"绿色 (Green)",
+							"毒药"
+						],
+						[
+							"Red",
+							"Fire"
+						],
+						[
+							"白银",
+							"Cold"
+						],
+						[
+							"白色",
+							"Cold"
+						]
+					]
+				},
+				"在你的训练中，你还学会了说、读和写龙语，这是伟大龙类的语言。",
+				"最后，选择恫吓（通常是彩色龙）或说服（通常是金属龙）。你获得该技能的熟练加值，并且每当你使用所选技能进行魅力检定时，你的检定奖励值等同于你的智力调整值。"
+			]
+		},
+		{
+			"name": "Elemental Breath",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Rising Dragon",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你可以将你的气聚集成破坏性的元素吐息，让人联想到强大的龙类。当你在你的回合使用攻击动作时，你可以花费1点气来用元素吐息替换一次攻击，选择在相邻的20英尺锥形区域内呼出或者在30英尺长、5英尺宽的直线内呼出。",
+				"在你呼出的范围内的生物必须进行一次敏捷豁免投。它们在未通过豁免时受到你的武术骰(%num%)次的伤害，通过豁免时受到一半的伤害。",
+				"此外，您可以花费额外的气点（最多不超过您的感知调整值）来增加您的气息伤害，每花费一个气点可以使您的武术骰增加一次投掷。",
+				"从11级开始，你可以使用气功专家(Ki Adept)特性，以基础级别使用该特性，而无需消耗任何气点(Ki Points)。"
+			]
+		},
+		{
+			"name": "Ascendant Step",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Rising Dragon",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你可以运用你的气和神秘技巧来模仿龙的奇妙能力。每当你使用(Step of the Wind)时，你获得一个飞行速度，等同于你的行走速度，持续到当前回合结束。"
+			]
+		},
+		{
+			"name": "Draconic Mantle",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Rising Dragon",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的训练已经开始将你转变成一个真正的龙类生物。你和你选择的生物在你周围10英尺范围内获得对你的元素伤害的抗性，并且在抵抗被魅惑或恐惧时拥有优势。",
+				"另外，当你使用你的元素吐息时，你可以将你的感知调整值（最低为+1）加到伤害骰中。"
+			]
+		},
+		{
+			"name": "Master of Draconic Might",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Rising Dragon",
+			"page": 10,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你的神秘力量和战斗能力堪比真正成年龙。你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你显现出皱褶的龙翼，使你获得一个永久的飞行速度，等同于你的步行速度。",
+						"当你使用你的元素吐息时，你可以选择让它成为一个30英尺的锥形或一个60英尺长，5英尺宽的直线。",
+						"你的龙之披风的范围变为30英尺。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of Yin & Yang",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 3,
+			"entries": [
+				"万物平衡。这是奉行阴阳之道的僧侣们的口头禅。以操纵气来治愈伤口、治愈疾病，甚至打破强大诅咒而闻名的他们，一直保持着一切的平衡。然而，当生物试图通过不自然的手段延长寿命或欺骗死神时，这些战士将利用他们的力量摧毁这些生物，恢复平衡。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Yin & Yang Techniques|Alternate Monk|LLAM|Yin & Yang|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Monastic Healer|Alternate Monk|LLAM|Yin & Yang|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Touch of Life|Alternate Monk|LLAM|Yin & Yang|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Touch of Death|Alternate Monk|LLAM|Yin & Yang|LLAM|3|LLAM"
+				}
+			]
+		},
+		{
+			"name": "Yin & Yang Techniques",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature mystic healing|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature gentling touch|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature mantle of courtesy|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Monastic Healer",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"为了学会用气治疗，你首先必须掌握平凡的药物医术。你获得草药工具包的熟练加值，以及洞察和医学技能，每当你使用这些熟练加值进行能力检定时，你的检定获得额外加值，数值等同于你的武术骰的一次投掷。"
+			]
+		},
+		{
+			"name": "Touch of Life",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你已经学会了操纵其他生物的气来治愈伤口。每当你进行一次徒手攻击时，你可以选择花费1点气来触摸除了你自己以外的一只生物，并为其恢复相当于你的武术骰的一次掷骰结果加上你的感知调整值的生命值。",
+				"从11级开始，你可以使用你的(Ki Adept)特性来使用(Touch of Life)而不消耗气点。然而，当你这样做时，你会给予目标临时生命值。"
+			]
+		},
+		{
+			"name": "Touch of Death",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你学会了操纵其他生物的气来造成伤害。当你用徒手攻击命中一只生物时，你可以花费1点气来对目标造成额外的死灵伤害，伤害值等同于你的武术骰的一次投掷。",
+				"从11级开始，你可以使用你的气灵特性来使用(`Ki Adept`)的死亡之触，而无需消耗(`Ki Point`)。"
+			]
+		},
+		{
+			"name": "Precise Manipulation",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你影响他人气的能力增强了。当你使用生命之触时，你可以结束以下其中一种状态：失明(blinded)、失聪(deafened)、麻痹(paralyzed)、中毒(poisoned)或昏迷(stunned)。",
+				"另外，当你使用死亡之触时，你可以选择在接下来的回合结束前也让目标中毒。"
+			]
+		},
+		{
+			"name": "Mystical Touch",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的平衡生死之能力随着你的精神增长。每当你使用生命之触或死亡之触时，你可以额外消耗气点（最多等于你的感知调整值），每额外消耗一个气点，你恢复的生命值或造成的伤害都会增加一个武术骰的点数。"
+			]
+		},
+		{
+			"name": "Master of Life & Death",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Yin & Yang",
+			"page": 10,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你的神秘能力变得非常强大，以至于你可以驱逐死亡本身。作为一个动作，你可以花费6点气点，触摸一个在过去24小时内死亡的生物，立即使其复活，恢复的生命值等于你的武僧等级 + 你的智力修正值。生物死亡时受到的任何状态也会被结束。"
+			]
+		},
+		{
+			"name": "Way of the Astral Warrior",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Astral Warrior",
+			"page": 10,
+			"level": 3,
+			"entries": [
+				"这个传统的门徒几乎完全专注于精神的发展，通过气将他们内在的自我展现到世界上。这些神秘的战士们通过极大的奉献和实践学会了将他们的星体自我显化，这是他们气的一种发光投影，覆盖在他们身上形成一层盔甲。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Astral Techniques|Alternate Monk|LLAM|Astral Warrior|LLAM|3|LLAM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Astral Self|Alternate Monk|LLAM|Astral Warrior|LLAM|3|LLAM"
+				}
+			]
+		},
+		{
+			"name": "Astral Techniques",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Astral Warrior",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你在下表中指出的等级中学习某些技术。它们不计入你所知道的技术数量，而且在获得一个等级后，它们不能被转换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature mystic healing|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature deflect missile|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature mantle of courtesy|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Astral Self",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Astral Warrior",
+			"page": 10,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你将你的气聚集成一套发光的盔甲，形似你的真实自我。作为一个奖励动作，你可以消耗2点气来显现你的星体自我。当你这样做时，在你周围10英尺范围内的生物必须进行一次敏捷豁免检定。未通过检定的生物会受到等同于你的武术骰子投掷两次的力量伤害。",
+				"当你的星体自我(manifested Astral Self)显现时，你获得以下列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"每当你进行力量检定或力量豁免投掷时，你可以使用你的感知调整值代替力量调整值。",
+						"当你进行徒手攻击时，你可以使用智力代替力量或敏捷进行攻击和伤害骰。此外，你的徒手攻击范围增加5英尺，造成的伤害为力场伤害。"
+					]
+				},
+				"你的星体自我显现持续10分钟。如果你死亡、陷入无能力状态，或者你使用奖励动作来解散它，它会立即消失。"
+			]
+		},
+		{
+			"name": "Astral Visage",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Astral Warrior",
+			"page": 10,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"即使你的星体自我没有显现，你仍然可以借助它的存在。你学会了奇迹术cantrip，智慧是你施法的属性调整值。此外，每当你进行一次智慧（洞察）或魅力（威吓）检定时，你可以在检定中加上一个武术骰的点数。",
+				"当你的星体自我(`Astral Self`)显现时，你可以在半径为120英尺的范围内在魔法和日常黑暗中正常看见。"
+			]
+		},
+		{
+			"name": "Mystical Defense",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Astral Warrior",
+			"page": 10,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你与你的星体自我的神秘联系使你能够操纵元素。当你受到酸、冷、火、力量、雷霆或闪电伤害时，你可以使用你的导弹偏转技巧来减少伤害。如果你将伤害减少到零，你可以在同一反应中进行远程武术攻击，攻击命中时造成触发伤害类型的伤害。",
+				"此外，每回合当你的幻影自我(manifested Astral Self)发动时，你使用徒手攻击命中目标后，可以额外造成等同于你的武术骰(Martial Arts die)的一次伤害的力量伤害。"
+			]
+		},
+		{
+			"name": "Master Astral Warrior",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassSource": "LLAM",
+			"subclassShortName": "Astral Warrior",
+			"page": 10,
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"你已经了解了自己的真正身份，并与你的星体自我合而为一。当你的星体自我显现时，你获得对所有伤害的抗性，除了力量伤害。",
+				"此外，当你的星体之灵(manifested Astral Self)出现时，你可以使用一个动作在相邻的20英尺锥形区域释放一连串的拳击。该区域内的目标必须进行一次敏捷豁免检定。在未通过豁免检定的生物将受到等同于你武术骰子(Martial Arts die)投掷四次的力量伤害，通过检定的生物则只受到一半伤害。"
+			]
+		}
+	]
+}

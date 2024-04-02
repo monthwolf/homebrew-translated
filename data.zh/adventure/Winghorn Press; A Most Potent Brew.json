@@ -1,0 +1,377 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AMostPotentBrew",
+				"abbreviation": "AMPB",
+				"full": "A Most Potent Brew",
+				"authors": [
+					"Richard Jansen-Parkes",
+					"Winghorn Press"
+				],
+				"convertedBy": [
+					"Eulum"
+				],
+				"version": "1.4",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"color": "afAF09"
+			}
+		],
+		"dateAdded": 1696157081,
+		"dateLastModified": 1696157081,
+		"_dateLastModifiedHash": "27598413e5"
+	},
+	"monster": [
+		{
+			"name": "Giant Inferno Spider",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "AMostPotentBrew",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 5",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"passive": 10,
+			"cr": "1",
+			"page": 4,
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"skill": {
+				"stealth": "+6"
+			},
+			"resist": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"巨型地狱蜘蛛可以攀爬困难的表面，包括在天花板上倒挂，无需进行能力检定。"
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"action": [
+				{
+					"name": "Flaming Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}攻击，达到5英尺，一个生物。造成{@h}6 ({@damage 1d8 + 2})穿刺伤害，并且目标必须进行一次{@dc 11}体质豁免才能，未通过则受到7 ({@damage 2d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Burning Web {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 5}攻击，射程30/60尺，一名生物。{@h}目标被燃烧的蛛丝束缚。被这种方式束缚时，目标在其回合开始时受到3({@damage 1d6})火焰伤害。作为一个动作，被{@condition Restrained}目标可以进行一个{@dc 12}力量检定，成功时爆破蛛丝。蛛丝也可以被攻击和摧毁（AC 10；HP 5；免疫钝击、毒素、火焰和精神伤害）。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Z9uapRT.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/CCePEib.png",
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		}
+	],
+	"adventure": [
+		{
+			"name": "A Most Potent Brew",
+			"id": "AMPB",
+			"source": "AMostPotentBrew",
+			"group": "homebrew",
+			"storyline": "None",
+			"published": "2016-06-26",
+			"level": {
+				"start": 1,
+				"end": 2
+			},
+			"contents": [
+				{
+					"name": "A Most Potent Brew",
+					"headers": [
+						"Introduction",
+						"Meeting Glowkindle",
+						{
+							"header": "1. Beer Cellar",
+							"depth": 1
+						},
+						{
+							"header": "2. Mosaic Corridor",
+							"depth": 1
+						},
+						{
+							"header": "3. Well Room",
+							"depth": 1
+						},
+						{
+							"header": "4. The Lab",
+							"depth": 1
+						},
+						{
+							"header": "5. Storeroom",
+							"depth": 1
+						},
+						"Returning to Glowkindle",
+						"What's Next?"
+					]
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "AMPB",
+			"source": "AMostPotentBrew",
+			"data": [
+				{
+					"name": "A Most Potent Brew",
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Introduction",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "What is this Adventure?",
+									"entries": [
+										"这个一级冒险适合D&D老手和完全新手。它只使用了在从Wizards of the Coast网站下载的免费基础规则集中找到的规则、物品、怪物和概念。",
+										"这意味着你和你的朋友们可以玩这个游戏，而不必购买除了零食、饮料和也许一些骰子之外的任何东西 - 尽管这些甚至可以被手机和平板电脑上提供的许多免费骰子掷骰应用程序所替代。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "How do I play?",
+									"entries": [
+										"《龙与地下城第五版》的基本规则可以在网上下载{@link here|https://dndbeyond.com/playdnd}。"
+									]
+								},
+								{
+									"name": "Summary",
+									"type": "entries",
+									"entries": [
+										"该队被派去处理一个对所有新手冒险者来说应该是非常熟悉的问题 - 消灭已经在啤酒地窖中定居的巨鼠。然而，为了实现他们的目标，我们的英雄们将不得不第一次体验真正的地牢，探索一座古老巫师塔的废墟。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Set-up",
+									"entries": [
+										"巫师塔酿酒公司 - 一家以其多啤酒夏季艾尔而闻名的精酿啤酒厂 - 急需一群可靠、价格合理的冒险者来帮忙。业主已在当地告示板上发布了一份工作，并请求镇上各处友好的旅店老板帮忙传达这个消息。",
+										"派对可以通过检查广场上设置的工作板、与一位老朋友交谈，或者只是在喝一杯时与当地人聊天来了解这项工作。",
+										"无论如何，他们被指示在巫师塔酿酒厂寻找{@b Glowkindle}。只要有礼貌地询问，也许先买一杯饮料，大多数旅馆老板和啤酒爱好者都能指引有希望的冒险者前往酿酒厂的方向！",
+										"如果你正在为新玩家主持游戏，最好让冒险从他们已经在路上开始。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Meeting Glowkindle",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你按照指示前行，沿着一条古老的土路，艰难地走了大概一英里或两英里，这条路蜿蜒而上，通往一座低矮的小山。",
+										"当你接近顶部时，一座大石头建筑出现在视野中，两侧是几座谷仓。门口有一块醒目的彩绘牌匾，上面写着\"巫师塔酿酒公司。在王国中最新鲜的一品！\""
+									]
+								},
+								"如果冒险者敲门，门会被一个相当年轻的侏儒开启，他身穿一件白色衬衫和紧身黑裤，系着绿色吊带，头上却长着一把令人印象深刻的胡须。这位是{@b Glowkindle}，这家酿酒厂的所有者。",
+								"在短暂的困惑后，他会注意到队伍的武器和魔法工具，并意识到他们一定是冒险者。这个侏儒提议在一杯饮料中解释他需要队伍做什么，如果他们愿意的话，会带他们进入酿酒厂角落里设立的一个小酒吧。",
+								"整个建筑充满了啤酒和啤酒花的味道，但是干净整洁。几个人类和半身人，穿着与他们的老板相似的服装，四处走动，检查着装满冒泡液体的桶和大缸，没有任何紧迫感。",
+								"在向任何想要的人分发了一些塔沙拉淡色艾尔之后，格洛克因德尔解释道：",
+								{
+									"type": "list",
+									"items": [
+										"这家企业一直运营良好，打算扩大业务。为了做到这一点，他们首先需要扩大他们的啤酒地窖。",
+										"当他的工人们在那里挖掘一些额外的空间时，他们发现了一堵古老的墙壁\u2014\u2014据推测是某个被遗忘的废墟的残余。出于好奇，他们在墙上敲了一个洞，结果被从另一边黑暗中冲出来的{@i \"black rats the size of dogs! Big dogs too, not poodles, you know?\"}袭击了。",
+										"他们都成功逃脱，只是受了一些割伤和擦伤，但地下室已经完全无法使用。如果他们想要重新启动生产，他需要冒险者们来处理巨鼠的侵扰。",
+										"他不确定老鼠是从哪里来的，但酿酒厂的名字取自原来位于这个地点的老巫师塔，所以可能与那个有关。"
+									]
+								},
+								"工作条款是，该队伍要清除老鼠，找出它们是从哪里来的，并确保它们将来不会再遇到类似的惊喜。作为回报，他将支付{@b 25gp per party member.}。",
+								"如果他们同意，Glowkindle将带领冒险者们前往地窖入口\u2014\u2014这是位于他们主要酿酒区地板上的一个舱口\u2014\u2014并祝他们好运。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/8qO3WMr.png"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "1. Beer Cellar",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"当你走下木制楼梯，脚下发出吱吱作响的声音，进入地窖的凉爽干燥空气中，空气中弥漫着啤酒和潮湿毛皮的气味。在黑暗中的某处，你听到爪子在地板上刮擦的声音和微弱的尖叫声。"
+											]
+										},
+										"地窖完全黑暗，地板上大部分空间被啤酒桶和木桶占据，使得整个房间一次性看不清。唯一相对清晰的区域是地窖的远端，那里有一个铺满石头和工人工具的泥地。",
+										"带着{@sense Darkvision}或点着的火炬的冒险者们将能够看出Glowkindle提到的墙上的洞。这个洞大约高4英尺，宽3英尺。",
+										"八只大老鼠潜伏在阴影和桶后面。一旦超过一半的冒险者进入房间，它们将试图伏击。在此之前发现老鼠需要在房间里的冒险者进行一次智力检测，DC 10 ((智力))。如果没有人成功，巨鼠将在{@quickref Surprise}回合后开始战斗。",
+										"在战斗中，巨鼠不会尝试使用除了向冒险者们发起围攻之外的任何战术。一旦有五只巨鼠被杀死，幸存者将试图逃回墙壁上的洞穴。任何成功逃脱的巨鼠将会在{@b Mosaic Corridor.}的陷阱中被杀死。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "2. Mosaic Corridor",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"透过墙上的洞，你可以看到一个布满灰尘的石头走廊，它的地板比你站立的地下室低大约一英尺。",
+												"在左边，你可以看到一段楼梯的开端被倒塌的砖石、土壤和碎石掩埋，完全挡住了去路。向右走，通道转过一个拐角，但你可以隐约看到墙上似乎用清晰的金色字体写着文字。"
+											]
+										},
+										"这是老巫师塔地下室的第一个区域。通往上层的楼梯已被坍塌的天花板完全封住。",
+										"这段文字被刻在墙上，用金色字体书写，即使在完全黑暗中也似乎微微闪光。它用{@language Common}书写，内容如下：",
+										"\"黎明伴随着激动人心的空气到来。当太阳照耀在一个美好的新日子上时。\"",
+										"正午的烈日炙烤着大地和草地。农夫等待着炎热过去。",
+										"夜晚，Coll（科尔）带来了水，葡萄酒。喝着酒，笑语盈盈，消磨时光。",
+										"夜晚看到闪耀、咆哮的火焰，木头和煤炭在火堆上燃烧。",
+										"通道向左延伸，最终分为两个门道，一个向左，另一个直走。在它们前面是一个长20英尺的地板区域，上面铺满了描绘乡村景观的马赛克（如下图所示）。它展示了太阳、天空、山坡和一条河流。有四个5英尺的\"面板\"，每个展示了不同时间的场景。",
+										"然而，当冒险者们靠近时，他们会注意到在第二和第三幅画的河流部分，有两半似乎被巨大刀片切开的巨鼠。",
+										"这个马赛克是一个陷阱，站在地板的错误部分会导致一把大刀切割闯入者。安全区域与适当诗句中提到的四大元素有关。它们是：",
+										"第一面 - {@b Air (Sky)}",
+										"第二个面板 - {@b Earth (Hill)}",
+										"第三面板 - {@b Water (River)}",
+										"第四面板 - {@b Fire (Fire)}",
+										"任何站在除了这些区域以外的地方的生物必须进行一次 DC 12 的敏捷豁免检定，失败则受到 5 ({@dice 1d10}) 斩击伤害，成功则减半。每当生物踩在不安全的面板上时，这个陷阱就会被触发。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/c87W6tX.png"
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "3. Well Room",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"在你前方的小房间中央是一个大石井，顶部有一个木柄和腐烂的断裂绳索残留物，从中降入井口。",
+												"在最右边的角落，天花板有些坍塌，一道狭窄的阳光从一个小洞中射进来。",
+												"在最左边是一张普通的木桌，上面沾满了污垢和灰尘，摆放着旧盘子、桶和其他奇怪的餐具。"
+											]
+										},
+										"任何在搜索房间时能够进行一次DC 12感知({@skill Perception})检定的角色，或者直接检查桌子的角色，都会注意到一些旧盘子是由发黑的银制成的。一旦清洁干净，这套餐具应该价值约50gp。",
+										"任何冒险者如果试图不悄无声息地穿过房间，将会引起三只从井内爬出的{@creature Giant Centipedes|MM|Giant Centipedes}的注意。这些生物会试图击晕冒险者，然后将其拖入井中，以便可以悠闲地吃掉这个不幸的受害者。",
+										"井筒深50英尺，在底部有大约10英尺的停留水，可以减缓任何掉落的人的冲击。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "4. The Lab",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"门打开后，你看到了一个可能曾经是实验室或工作室的地方。在你的左边是一个腐烂的桌子和破碎的炼金玻璃器皿，而房间的中央是一组背靠背排列的高书架。",
+												"四周到处都是烧焦的痕迹和无数小火的痕迹，空气中弥漫着烟味和烧焦肉的气味。",
+												"木制家具在某些地方变黑并烧焦，而曾经可能是一堆书的东西已经化为灰烬。天花板上可能是蜘蛛网的痕迹被烧焦。",
+												"当你走进去时，脚下发出了一阵嘎吱作响的声音 - 低头一看，你意识到那是一只巨鼠的烧焦后躯(`Giant Rat`)。"
+											]
+										},
+										"一个{@creature Giant Inferno Spider|AMostPotentBrew} - 来自储藏室里几瓶溅出的药水的产物 - 潜伏在房间的西南角的阴影中。这只野兽大约有八英尺宽，但擅长藏匿在巢穴天花板上，使其在敏捷度检定中获得优势({@skill Stealth})。",
+										"这个生物会尽可能悄无声息地蠕动，希望利用它的燃烧蛛网能力伏击冒险者，它会尽可能经常使用这个能力。",
+										"多年的浪费和巨型地狱蜘蛛传播的火焰使大部分书籍和设备完全无法使用。然而，一个搜索房间并且能够通过一次DC 13的智力检定({@skill Peception})的角色会注意到其中一本书似乎奇迹般地没有受损。",
+										"这本书是一本巫师的咒语书，包含了{@spell Detect Magic}、{@spell Identify}和{@spell Arcane Lock}咒语。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "5. Storeroom",
+									"entries": [
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"这个小房间的后墙上排满了看起来结实的木制货架。显然，这些曾经装满了瓶子和玻璃小瓶，但多年来，许多已经变成了散落在地板上的闪闪发光的玻璃碎片。",
+												"在残骸中有一丝动静，你看到一只小黑鼠正在舔着一瓶深蓝色瓶子残留的最后一滴液体。"
+											]
+										},
+										"老鼠正在喝的破碎瓶子上贴着一张撕破的白色标签。上面写着{@i '-tion of enlargement'}。大约一分钟后，除非处理掉，否则老鼠将会变成{@creature Giant Rat}。",
+										"地板上又有一个破碎而空的瓶子，上面贴着标签{@i 'Essence of Fire Ele-'}。",
+										"然而，货架上还剩下几瓶。有两个{@item Potion of Healing}，一个{@item Potion of Invisibility}和一个{@item Potion of Vitality}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Returning to Glowkindle",
+							"entries": [
+								"胡须侏儒将焦急地等在通往地窖的活板门旁。冒险者们回来后，他会询问他们旅程的情况，最好是在一两杯啤酒的情况下！",
+								"他将非常乐意支付冒险者，也很乐意让他们保留在老地窖里发现的任何有价值的物品。",
+								"每个帮助清理巫师塔酿酒厂地下室的角色都会额外获得{@b 100xp}或足以让他们达到第二级，以较高者为准。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "What's Next?",
+							"entries": [
+								"有数十种方法可以让冒险继续进行。现在他们已经完成了一项任务，更多需要英雄的人可能会寻求雇佣他们，或者奖励足够让他们开始在荒野中冒险！"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

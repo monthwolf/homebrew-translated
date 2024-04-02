@@ -1,0 +1,243 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CircleOfTheRainbow",
+				"abbreviation": "CotR",
+				"full": "Circle of the Rainbow",
+				"url": "https://homebrewery.naturalcrit.com/share/YQCSR9P5xKtU",
+				"authors": [
+					"Korvinagor"
+				],
+				"convertedBy": [
+					"Korvinagor"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1688598012,
+		"dateLastModified": 1708296524,
+		"_dateLastModifiedHash": "57da8b2e6c"
+	},
+	"subclass": [
+		{
+			"name": "Circle of the Rainbow",
+			"source": "CircleOfTheRainbow",
+			"shortName": "Rainbow",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Circle of the Rainbow|Druid||Rainbow|CircleOfTheRainbow|2",
+				"Dazzling Iridescence|Druid||Rainbow|CircleOfTheRainbow|6",
+				"Full Spectrum|Druid||Rainbow|CircleOfTheRainbow|10",
+				"Catch the Rainbow|Druid||Rainbow|CircleOfTheRainbow|14"
+			],
+			"subclassSpells": [
+				"Minor Illusion",
+				"Chromatic Orb",
+				"Color Spray",
+				"Calm Emotions",
+				"Vortex Warp|scc",
+				"Hypnotic Pattern",
+				"Sending",
+				"Dimension Door",
+				"Otiluke's Resilient Sphere",
+				"Commune",
+				"Rary's Telepathic Bond",
+				"Prismatic Spray",
+				"Prismatic Wall"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of the Rainbow",
+			"source": "CircleOfTheRainbow",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Rainbow",
+			"subclassSource": "CircleOfTheRainbow",
+			"level": 2,
+			"entries": [
+				"彩虹之环德鲁伊将他们的名字视为自然之美的顶峰。拥有类似闪烁能力的许多德鲁伊试图激励他人尊敬，既尊敬他们崇拜的发光奇迹，也尊敬整个自然界。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid|PHB|Rainbow|CircleOfTheRainbow|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mantle of Many Colours|Druid|PHB|Rainbow|CircleOfTheRainbow|2"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "CircleOfTheRainbow",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Rainbow",
+			"subclassSource": "CircleOfTheRainbow",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Rainbow feature}",
+				"彩虹的奇妙光芒充盈着你的魔法。你学会了{@spell minor illusion} cantrip。",
+				"当你达到特定德鲁伊等级时，你可以获得下表中的法术。它们对你来说算作德鲁伊法术，你始终准备好它们，但它们不计入你每天准备的法术总数。",
+				"此外，当你施放{@spell color spray}时，你可以修改它，使其影响区域内所有未通过体质豁免检定的生物，而不是使用其原始方法。",
+				{
+					"type": "table",
+					"caption": "Circle of the Rainbow Spells",
+					"colLabels": [
+						"Druid Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell chromatic orb}, {@spell color spray}"
+						],
+						[
+							"3rd",
+							"{@spell calm emotions}, {@spell vortex warp|scc}"
+						],
+						[
+							"5th",
+							"{@spell hypnotic pattern}, {@spell sending}"
+						],
+						[
+							"7th",
+							"{@spell dimension door}, {@spell otiluke's resilient sphere}"
+						],
+						[
+							"9th",
+							"{@spell commune}, {@spell rary's telepathic bond}"
+						],
+						[
+							"17th",
+							"{@spell prismatic wall}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mantle of Many Colours",
+			"source": "CircleOfTheRainbow",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Rainbow",
+			"subclassSource": "CircleOfTheRainbow",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Rainbow feature}",
+				"作为一个奖励动作，你可以消耗一个你的野性变身特性使用次数，将一层不断变幻色彩的披风编织在你周围，并在五彩祝福表上投掷骰子。这个表决定了你披风的颜色和效果，在投掷后立即发生。",
+				"披风一直受到{@spell light} cantrip的影响，在1分钟后消失。穿戴时，你可以在接下来的回合使用你的奖励动作再次在这个表上掷骰。",
+				{
+					"type": "table",
+					"caption": "Prismatic Boons",
+					"colLabels": [
+						"{@dice d8}",
+						"Colour",
+						"Effect"
+					],
+					"colStyles": [
+						"col-0.5 text-center",
+						"col-1",
+						"col-10.5"
+					],
+					"rows": [
+						[
+							"1",
+							"Red",
+							"你选择距离你30英尺内的一个生物，在你的下一个回合开始前获得{@spell divine favor}的效果。"
+						],
+						[
+							"2",
+							"橙色",
+							"你不需要集中精力施放{@spell bane}。这个法术持续到你的下一个回合结束，并且对你来说算作德鲁伊法术。"
+						],
+						[
+							"3",
+							"黄色 (Yellow)",
+							"你选择距离你30英尺内的一个生物，在其下一个回合结束前获得{@spell zephyr strike|xge}的效果。"
+						],
+						[
+							"4",
+							"绿色 (Green)",
+							"你选择的每个生物在你周围30英尺范围内获得临时生命值，数值等同于你的感知调整值。"
+						],
+						[
+							"5",
+							"Blue",
+							"在距离你30英尺范围内，最多三个你选择的生物在你的下一个回合结束前获得{@spell bless}的效果。"
+						],
+						[
+							"6",
+							"靛蓝 (Indigo)",
+							"你选择距离你30英尺以内的生物，使它们在1轮内获得+1的AC奖励。"
+						],
+						[
+							"7",
+							"紫罗兰 (Violet)",
+							"你施放了{@spell sanctuary}。这个法术持续到你的下一个回合结束，并且对你来说算作德鲁伊法术。"
+						],
+						[
+							"8",
+							"彩虹",
+							"你使用一个产生彩虹的传送术{@spell misty step}，并从上述七种中选择另一个祝福来施加。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dazzling Iridescence",
+			"source": "CircleOfTheRainbow",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Rainbow",
+			"subclassSource": "CircleOfTheRainbow",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of the Rainbow feature}",
+				"万花筒般的光在你指尖舞动，让你在生物发动攻击或施法前作为反应施放{@spell color spray}，并且每使用高于1级的法术位来施放，增加法术锥形范围10英尺。",
+				"你也可以不消耗法术位两次施放{@spell color spray}，在完成短休或长休后，恢复所有已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Full Spectrum",
+			"source": "CircleOfTheRainbow",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Rainbow",
+			"subclassSource": "CircleOfTheRainbow",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Rainbow feature}",
+				"你的披风闪烁着无限的潜力。佩戴它时，你的飞行速度等同于你的行走速度，并且可以悬停，同时还有重新投掷你的棱彩恩赐的选项，可以选择两者中的任意结果。"
+			]
+		},
+		{
+			"name": "Catch the Rainbow",
+			"source": "CircleOfTheRainbow",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Rainbow",
+			"subclassSource": "CircleOfTheRainbow",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Rainbow feature}",
+				"七彩之精华在你身上闪耀。你的法术圈列表中新增了{@spell prismatic spray}，每天可以无需消耗法术槽来施放一次。",
+				"任何射线法术产生的射线都可以用与您上一个Prismatic Boon相同颜色的射线替换。"
+			]
+		}
+	]
+}

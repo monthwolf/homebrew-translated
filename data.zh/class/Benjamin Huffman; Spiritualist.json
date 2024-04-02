@@ -1,0 +1,2317 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BH:SP",
+				"abbreviation": "BH:SP",
+				"full": "Spiritualist",
+				"authors": [
+					"Benjamin Huffman"
+				],
+				"convertedBy": [
+					"SasquatchBrah"
+				],
+				"url": "https://www.dmsguild.com/product/257383/The-Spiritualist-Class",
+				"version": "1.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"bhsp": "Spirits"
+		},
+		"dateAdded": 1603793256,
+		"dateLastModified": 1666524919,
+		"_dateLastModifiedHash": "fe99c722c9"
+	},
+	"item": [
+		{
+			"name": "Spirit Board",
+			"source": "BH:SP",
+			"page": 5,
+			"rarity": "unknown (magic)",
+			"entries": [
+				"3 sp 1 lb",
+				"招魂板由一个刨花板和小板或平板组成，通常由纸和木头层压而成，上面装饰着字母和数字。人们使用招魂板试图与死者沟通，方法是大声提问并轻触板子，相信不安静的灵魂会用板子拼出请求者问题的答案。",
+				"灵媒可以使用灵板作为施法重点。"
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Spiritualist",
+			"source": "BH:SP",
+			"page": 3,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"{@item net|phb|nets}"
+				],
+				"armor": [
+					"light"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"history",
+								"insight",
+								"intimidation",
+								"investigation",
+								"medicine",
+								"perception",
+								"performance",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item component pouch|phb} or (b) a {@item crystal|phb} or (c) a {@item reliquary|phb} or (d) a spirit board or (e) a {@item totem|phb}",
+					"(a) a {@item burglar's pack|phb} or (b) a {@item priest's pack|phb} or (c) a {@item Spiritualist's pack|phb}",
+					"{a} {@item Leather armor|phb} or {b} {@item scale mail|phb}",
+					"a {@filter simple weapon|items|source=phb|category=basic|type=simple weapon} of your choice"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"crystal|phb"
+						],
+						"c": [
+							"reliquary|phb"
+						],
+						"d": [
+							"spirit board|BH:SP"
+						],
+						"e": [
+							"totem|phb"
+						]
+					},
+					{
+						"a": [
+							"burglar's pack|phb"
+						],
+						"b": [
+							"priest's pack|phb"
+						],
+						"c": [
+							"Spiritualist's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 1
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Ectoplasm Points",
+						"{@filter Spirits Known|optionalfeatures|feature type=bhsp}",
+						"{@filter Cantrips Known|spells|level=0|class=Spiritualist (BH:SP)}",
+						"Spell Slots",
+						"Slot Level"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							2,
+							1,
+							"{@filter 1st|spells|level=1|class=Spiritualist (BH:SP)}"
+						],
+						[
+							2,
+							1,
+							2,
+							2,
+							"{@filter 1st|spells|level=1|class=Spiritualist (BH:SP)}"
+						],
+						[
+							3,
+							1,
+							2,
+							2,
+							"{@filter 2nd|spells|level=2|class=Spiritualist (BH:SP)}"
+						],
+						[
+							4,
+							2,
+							3,
+							2,
+							"{@filter 2nd|spells|level=2|class=Spiritualist (BH:SP)}"
+						],
+						[
+							5,
+							2,
+							3,
+							2,
+							"{@filter 3rd|spells|level=3|class=Spiritualist (BH:SP)}"
+						],
+						[
+							6,
+							3,
+							3,
+							2,
+							"{@filter 3rd|spells|level=3|class=Spiritualist (BH:SP)}"
+						],
+						[
+							7,
+							3,
+							3,
+							2,
+							"{@filter 4th|spells|level=4|class=Spiritualist (BH:SP)}"
+						],
+						[
+							8,
+							3,
+							3,
+							2,
+							"{@filter 4th|spells|level=4|class=Spiritualist (BH:SP)}"
+						],
+						[
+							9,
+							3,
+							3,
+							2,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							10,
+							4,
+							4,
+							2,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							11,
+							4,
+							4,
+							3,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							12,
+							4,
+							4,
+							3,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							13,
+							4,
+							4,
+							3,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							14,
+							4,
+							4,
+							3,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							15,
+							4,
+							4,
+							3,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							16,
+							4,
+							4,
+							3,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							17,
+							4,
+							4,
+							4,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							18,
+							5,
+							4,
+							4,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							19,
+							5,
+							4,
+							4,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						],
+						[
+							20,
+							5,
+							4,
+							4,
+							"{@filter 5th|spells|level=5|class=Spiritualist (BH:SP)}"
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Pact Magic|Spiritualist|BH:SP|1",
+				{
+					"classFeature": "Death's Threshold|Spiritualist|BH:SP|1",
+					"gainSubclassFeature": true
+				},
+				"Channel Spirit|Spiritualist|BH:SP|2",
+				"Ectoplasm|Spiritualist|BH:SP|2",
+				"Sixth Sense|Spiritualist|BH:SP|3",
+				"Thanatophobia|Spiritualist|BH:SP|3",
+				"Ability Score Improvement|Spiritualist|BH:SP|4",
+				"Lingua Mortis|Spiritualist|BH:SP|5",
+				{
+					"classFeature": "Death's Threshold feature|Spiritualist|BH:SP|6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Spiritualist|BH:SP|8",
+				"Stygian Inhalation|Spiritualist|BH:SP|10",
+				"Occult Insight (6th level)|Spiritualist|BH:SP|11",
+				"Ability Score Improvement|Spiritualist|BH:SP|12",
+				"Occult Insight (7th level)|Spiritualist|BH:SP|13",
+				{
+					"classFeature": "Death's Threshold feature|Spiritualist|BH:SP|14",
+					"gainSubclassFeature": true
+				},
+				"Occult Insight (8th level)|Spiritualist|BH:SP|15",
+				"Ability Score Improvement|Spiritualist|BH:SP|16",
+				"Occult Insight (9th level)|Spiritualist|BH:SP|17",
+				"Spectral Shroud|Spiritualist|BH:SP|18",
+				"Ability Score Improvement|Spiritualist|BH:SP|19",
+				"Ectoplasmic Transubstantiation|Spiritualist|BH:SP|20"
+			],
+			"subclassTitle": "Death's Threshold",
+			"classSpells": [
+				"manipulate fate|kibblestasty:cc",
+				"twisting eruption|kibblestasty:cc",
+				"baba's walking hut|kibblestasty:cc",
+				"swapping curse|kibblestasty:cc",
+				"killing curse|kibblestasty:cc",
+				"divide self|kibblestasty:cc",
+				"curse of impotence|kibblestasty:cc",
+				"deglove creature|kibblestasty:cc",
+				"wither|kibblestasty:cc",
+				"cruel puppetry|kibblestasty:cc",
+				"animate shadow|kibblestasty:cc",
+				"disorient|kibblestasty:cc",
+				"boil blood|kibblestasty:cc",
+				"alacrity|kibblestasty:cc",
+				"spiritual consultation|kibblestasty:cc",
+				"rotting curse|kibblestasty:cc",
+				"induce headache|kibblestasty:cc",
+				"fall|kibblestasty:cc",
+				"grip of the dead|kibblestasty:cc",
+				"crippling agony|kibblestasty:cc",
+				"befuddling curse|kibblestasty:cc",
+				"binding curse|kibblestasty:cc",
+				"Blade Ward",
+				"Chill Touch",
+				"Dancing Lights",
+				"exorcise|bh:sp",
+				"Guidance",
+				"Mage Hand",
+				"Message",
+				"Minor Illusion",
+				"Prestidigitation",
+				"Resistance",
+				"Spare the Dying",
+				"Thaumaturgy",
+				"toll the dead|xge",
+				"Vicious Mockery",
+				"Bane",
+				"cause fear|xge",
+				"catapult|xge",
+				"Comprehend Languages",
+				"corpse mask|bh:sp",
+				"Detect Evil and Good",
+				"Dissonant Whispers",
+				"drain|bh:sp",
+				"False Life",
+				"Feather Fall",
+				"Fog Cloud",
+				"forsaken chains|bh:sp",
+				"Healing Word",
+				"Hex",
+				"Identify",
+				"Illusory Script",
+				"inquisitor's eye|bh:sp",
+				"Mage Armor",
+				"Protection from Evil and Good",
+				"Ray of Sickness",
+				"Silent Image",
+				"Sleep",
+				"Tasha's Hideous Laughter",
+				"Unseen Servant",
+				"Augury",
+				"Aid",
+				"Blindness/Deafness",
+				"Calm Emotions",
+				"Darkvision",
+				"Detect Thoughts",
+				"enemies abound|xge",
+				"Enthrall",
+				"Find Traps",
+				"Gentle Repose",
+				"Hold Person",
+				"Invisibility",
+				"Knock",
+				"Lesser Restoration",
+				"Levitate",
+				"Locate Animals or Plants",
+				"Locate Object",
+				"mind spike|xge",
+				"Phantasmal Force",
+				"Rope Trick",
+				"See Invisible",
+				"Silence",
+				"Zone of Truth",
+				"Animate Dead",
+				"Bestow Curse",
+				"Blink",
+				"Clairvoyance",
+				"Dispel Magic",
+				"Fear",
+				"Feign Death",
+				"Major Image",
+				"Remove Curse",
+				"Revivify",
+				"Sending",
+				"shadow blade|xge",
+				"Slow",
+				"Speak with Dead",
+				"Tongues",
+				"Arcane Eye",
+				"Banishment",
+				"Confusion",
+				"Death Ward",
+				"Divination",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Locate Creature",
+				"Phantasmal Killer",
+				"shadow of moil|xge",
+				"Contact Other Plane",
+				"danse macabre|xge",
+				"Dispel Evil and Good",
+				"Dominate Person",
+				"Dream Symbol",
+				"Greater Restoration",
+				"Hallow",
+				"Hold Monster",
+				"Legend Lore",
+				"Mislead",
+				"Raise Dead",
+				"Reincarnate",
+				"Scrying",
+				"stolen life|bh:sp",
+				"summon ghost|bh:sp",
+				"synaptic static|xge",
+				"Telekinesis",
+				"Circle of Death",
+				"Create Undead",
+				"Disintegrate",
+				"Eyebite",
+				"Find the Path",
+				"Magic Jar",
+				"Mass Suggestion",
+				"mental prison|xge",
+				"Programmed Illusion",
+				"soul cage|xge",
+				"True Seeing",
+				"Etherealness",
+				"Finger of Death",
+				"Forcecage",
+				"power word pain|xge",
+				"Project Image",
+				"Regenerate",
+				"Resurrection",
+				"Sequester",
+				"Simulacrum",
+				"abi-dalzim's horrid wilting|xge",
+				"Antimagic Field",
+				"Demiplane",
+				"Dominate Monster",
+				"Feeblemind",
+				"maddening darkness|xge",
+				"Mind Blank",
+				"Power Word Stun",
+				"Telepathy",
+				"Astral Projection",
+				"Foresight",
+				"Imprisonment",
+				"Power Word Kill",
+				"psychic scream|xge",
+				"soul switch|soulbinderfragsauce"
+			],
+			"fluff": [
+				{
+					"name": "Spiritualist",
+					"type": "section",
+					"entries": [
+						"当一缕缕的香在她周围升起时，一个人深呼吸，将她的意志集中在神秘的纽带上，将她手中的物品与曾经拥有它们的人联系在一起。当她吸气时，她的眼睛向后翻，眼皮跳动，而她的脑海中充满了一个遥远地方的景象。透过朦胧，她看到了她正在寻找的那个年轻的半矮人，以及他所藏身的肮脏的酒馆房间。",
+						"一个半身人聚精会神地看着铅笔在棋盘上移动，盘旋在一个又一个字母上。当这些字母串联成一个名字时，她一直在追捕的谋杀案的身份就暴露出来了，她惊恐地举起一只手放在嘴边。",
+						"突然停下脚步，一个狐狸精仔细听着他的同伴们没有听到的声音。有东西跟着他从虚空界回来了。有些东西太危险了，不能离开。他迅速转身，在空中做了一个驱魔的手势，同时走向那个黑暗的存在。",
+						"灵媒是沟通活人和死人世界的桥梁。在自己勉强逃脱了与死亡的遭遇之后，灵媒与不安的灵魂交流，以获得神秘的力量。他们利用自己的法术和神秘的天赋来确保他们的第二次生命机会不会被浪费。",
+						{
+							"type": "entries",
+							"name": "Brush with Death",
+							"entries": [
+								"不是每个有濒死体验的人都会成为灵媒，但所有灵媒都经历过将他们带到死亡边缘的遭遇。灵媒人对事件的具体细节记得很不清楚。他们常常记得一个不祥的身影从黑暗中走出来，表示要延长他们的生命，但更多的细节，如这个忙的代价，他们却不知道。这一事件是他们获得神秘力量的催化剂，从咒语到与死人交流，再到看到物理领域的边界之外。",
+								"灵修者与死亡擦肩而过的具体情形给他们留下了永久的印象。那些在野兽袭击中幸存下来的人发现他们有能力在经历过后指挥这些掠夺者。在可能致命的疾病中幸存下来的灵媒，发现他们可以抵御以前会致命的疾病和毒素。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Beyond the Veil",
+							"entries": [
+								"在他们能看到鬼魂之前，灵媒可以感觉到它们。在虚无缥缈的生命面前，他们的脖子后面的头发会竖起来，或者他们会感到偏头痛，或者在附近没有人的情况下听到河流奔腾的声音。不久之后，他们学会了召唤精神来分享他们的思想和身体。然后，灵媒的眼睛终于睁开了，看到了他们已经知道存在的世界，那是与物质世界并存的精神世界。",
+								"新手灵媒很快发现，虽然世界上有很多死人，但他们往往会吸引某种类型的人。这方面的原因并不确切，但在灵修者中，他们认为与他们产生共鸣的灵体种类代表了灵修者自己被压抑或未表达的情绪。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Spiritualist",
+							"entries": [
+								"灵媒人在活人和死人的世界之间纠结。当你创造你的灵媒角色时，要考虑的最重要问题是：你如何看待你作为这两个世界之间的媒介的作用？你的能力是你永远不会忘记的创伤性经历所带来的不必要的反响吗？你与死亡擦肩而过的例子是否标志着你一个新的和更好的生活的开始？你是否希望你能把你的感官从死者的灵魂中移开？你对空灵领域的意识是否带来了与你失去的人的意外重逢？",
+								"灵媒的定义还包括他们濒临死亡的经历和他们最常接触的灵体。你是否是一个小贵族的孩子，作为恐吓上层阶级的一种方式而成为暗杀的目标？你是否在农村长大，却发现有一年瘟疫席卷而来，只有你活了下来？你是否在从一个城市到另一个城市的旅行中，一群狼袭击了你和你的商队，几乎夺走了你的生命？当你离死亡不远的时候，但没有，你就成了一个灵媒。",
+								"作为一个灵媒，不安静的死者会找你，恳求你代表他们进行干预。你对哪种请求最感同情？灵魂是否曾经要求你做一些你不愿意做的事情？你是否曾经同意帮助一个灵魂，后来又后悔了？你觉得对死者还是对生者的责任更大？离世者的灵魂是为你自己的利益而使用的工具，还是他们自己的同伴？",
+								"对这些问题的回答将决定你是一个灵修者。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照这些建议，你可以迅速成为一个灵媒。首先，魅力应该是你最高的能力得分，其次是灵巧或体质。第二，选择（%0%）、（%1%）或（%2%）的背景。"
+									]
+								}
+							]
+						}
+					],
+					"source": "BH:SP",
+					"page": 3
+				}
+			],
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Despair",
+			"source": "BH:SP",
+			"page": 8,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"绝望的灵魂离开了活人的世界，确信像他们这样的人是没有希望的。在死亡中，他们努力使生者相信，他们的宿命论观点是唯一现实的观点。在引导绝望之灵时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导绝望之灵时，以下法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell sleep}"
+								],
+								[
+									"3rd",
+									"{@spell silence}"
+								],
+								[
+									"5th",
+									"{@spell slow}"
+								],
+								[
+									"7th",
+									"{@spell confusion}"
+								],
+								[
+									"9th",
+									"{@spell stolen life|BH:SP}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Despair",
+					"entries": [
+						"当你进行智慧({@skill Insight})能力检查以了解某人的悲伤情况时，你可以花费1个外骨点来获得该能力检查的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Abandon Hope",
+					"entries": [
+						"你可以使用一个动作并花费3个外骨质点，使60英尺内你能看到的一个生物产生残废的忧郁。该生物必须在 \"魅力救赎 \"中获得成功，否则在所有的攻击卷和救赎中都处于劣势，直到其下一回合结束。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Greed",
+			"source": "BH:SP",
+			"page": 9,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"那些死后只希望有机会获得更多财富的人成为贪婪的灵魂。在死后，他们的状态使财富变得毫无意义，但他们仍然渴望着它们。在引导贪婪之灵时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导贪婪之灵时，以下法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell tenser's floating disk}"
+								],
+								[
+									"3rd",
+									"{@spell knock}"
+								],
+								[
+									"5th",
+									"{@spell clairvoyance}"
+								],
+								[
+									"7th",
+									"{@spell leomund's secret chest}"
+								],
+								[
+									"9th",
+									"{@spell animate objects}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Greed",
+					"entries": [
+						"当你进行智慧({@skill Insight})能力检定以了解某人的嫉妒对象时，你可以花费1个异质点来获得该能力检定的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blood Money",
+					"entries": [
+						"当一个在你60英尺范围内的生物死亡时，你可以使用你的反应并花费1个ectoplasm点将他们逃跑的灵魂变成stygian硬币。当你这样做时，你会获得相当于该生物的挑战等级或1（以较高者为准）的冥币数量。",
+						{
+							"type": "entries",
+							"name": "Stygian Coins",
+							"entries": [
+								"{@coinflip Stygian coins|Stygian coin|Skull with crown of flowers|Wrought iron gate}是由一种抛光的黑色反光金属制成。一边是一个带有花冠的骷髅头。另一边是一扇锻打的铁门。对于那些不能看穿幻觉且不是灵媒的生物来说，每一个看起来都与金块相同。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hate",
+			"source": "BH:SP",
+			"page": 9,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"仇恨的灵魂在痛苦的情况下死去，在他们的心中只有对敌人的恶意，而没有其他东西。在死亡中，他们对每一个被认为是轻视的人感到愤怒，并且永远不会忘记怨恨。在引导仇恨之灵时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导仇恨之灵时，以下法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell hellish rebuke}"
+								],
+								[
+									"3rd",
+									"{@spell shadow blade|XGE}"
+								],
+								[
+									"5th",
+									"{@spell enemies abound|XGE}"
+								],
+								[
+									"7th",
+									"{@spell banishment}"
+								],
+								[
+									"9th",
+									"{@spell cloudkill}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Hate",
+					"entries": [
+						"当你进行智慧({@skill Insight})能力检查以了解某人愤怒的情况时，你可以花费1个外骨点来获得该能力检查的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spiteful Refrain",
+					"entries": [
+						"你可以使用一个额外的行动，并花费2个异质点，使你本回合已经造成伤害的生物受到进一步的伤害。该生物必须在智慧救赎中成功，否则会受到（%0%）精神伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Hubris",
+			"source": "BH:SP",
+			"page": 9,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"那些在地球上的最后时刻被用来重温他们自己的辉煌的珍贵记忆的人，会成为傲慢的精神。在死亡时，狂妄之灵试图向生者强调其生前的成就和死亡时的欲望的重要性。在引导傲慢之灵时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导傲慢之灵时，以下法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell command}"
+								],
+								[
+									"3rd",
+									"{@spell suggestion}"
+								],
+								[
+									"5th",
+									"{@spell fly}"
+								],
+								[
+									"7th",
+									"{@spell banishment}"
+								],
+								[
+									"9th",
+									"{@spell dominate person}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Hubris",
+					"entries": [
+						"当你进行智慧({@skill Insight})能力检查以了解一个生物的自我价值感时，你可以花费1个外质点来获得该能力检查的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grandiose Delusion",
+					"entries": [
+						"当你做一个不加熟练度加分的能力检查时，你可以花费2个异质点来获得滚动的优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Jealousy",
+			"source": "BH:SP",
+			"page": 9,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"嫉妒的灵魂在最后的时刻固定在一个人、物或地位上，而他们知道这个人、物或地位很快就会永远超出他们的掌握。在死亡中，他们痴迷于控制和占有。在引导妒忌之灵时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导嫉妒之灵时，以下法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell charm person}"
+								],
+								[
+									"3rd",
+									"{@spell detect thoughts}"
+								],
+								[
+									"5th",
+									"{@spell bestow curse}"
+								],
+								[
+									"7th",
+									"{@spell locate creature}"
+								],
+								[
+									"9th",
+									"{@spell modify memory}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Jealousy",
+					"entries": [
+						"当你进行智慧({@skill Insight})能力检查以了解某人的嫉妒情况时，你可以花费1个外骨点来获得该能力检查的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Possessive",
+					"entries": [
+						"你可以使用一个行动，并花费3个异质点，试图用你的魅力引诱一个你能看到的30英尺内的生物。当你这样做时，该生物必须做一个智慧拯救动作。如果失败，该生物会在1分钟内被你控制（%0%），或者直到它受到你或你的同伴的伤害。此外，如果该生物被任何其他生物影响（%1%），该效果立即结束。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Madness",
+			"source": "BH:SP",
+			"page": 10,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"疯癫的精神在生前可能并不疯癫，但都是在强烈的心理压力下度过了最后的生活时光，出现了裂痕。在死亡时，他们会被精神错乱所吞噬。在引导一个疯狂的灵魂时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导一个疯狂的灵魂时，以下的法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell tasha's hideous laughter}"
+								],
+								[
+									"3rd",
+									"{@spell crown of madness}"
+								],
+								[
+									"5th",
+									"{@spell major image}"
+								],
+								[
+									"7th",
+									"{@spell confusion}"
+								],
+								[
+									"9th",
+									"{@spell mislead}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Madness",
+					"entries": [
+						"当你进行智慧（（%0%））能力检查以发现某人是否心智健全时，你可以花费1个外质点来获得该能力检查的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fractured Psyche",
+					"entries": [
+						"当一个你能看到的60英尺范围内的生物在智力、智慧或魅力方面失败时，你可以使用你的反应，并花费2个ectoplasm点，大声尖叫，使他们虚弱的心灵崩溃。当你这样做时，那个生物必须做一个智力救赎动作。如果失败，它将受到（%0%）的精神伤害。成功时，它将受到一半的伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Shame",
+			"source": "BH:SP",
+			"page": 10,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"当一个人死后充满了自责和悔恨，他们可能会成为一个羞耻的灵魂。在死亡中，耻辱之灵会哀叹自己在生者中浪费的时间，并指责他们认为是别人的缺点的东西。在引导耻辱之灵时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导耻辱之灵时，以下法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell disguise self}"
+								],
+								[
+									"3rd",
+									"{@spell zone of truth}"
+								],
+								[
+									"5th",
+									"{@spell meld into stone}"
+								],
+								[
+									"7th",
+									"{@spell mordenkainen's private sanctum}"
+								],
+								[
+									"9th",
+									"{@spell antilife shell}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Shame",
+					"entries": [
+						"当你进行智慧（（%0%））能力检定以了解生物的自我憎恶时，你可以花费1个异质点来获得该能力检定的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Toxic Shame",
+					"entries": [
+						"你可以使用一个额外的行动，并花费2个异质点来选择一个你能看到的60英尺内的生物。直到你下一个回合开始时，该生物第一次在能力检查、攻击卷或蓄力投掷失败时，会被自我憎恨所征服，并受到（%0%）精神伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Terror",
+			"source": "BH:SP",
+			"page": 10,
+			"featureType": [
+				"bhsp"
+			],
+			"entries": [
+				"恐怖的灵魂在绝对恐惧的状态下逝去。在死亡中，他们已经固执地用同样的感觉来折磨别人。在引导恐怖之灵时，你会获得以下能力。",
+				{
+					"type": "entries",
+					"name": "Spell List",
+					"entries": [
+						"当你在引导一个恐怖的灵魂时，以下的法术被认为是你准备的灵媒法术。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Spiritualist Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"2nd",
+									"{@spell web}"
+								],
+								[
+									"3rd",
+									"{@spell invisibility}"
+								],
+								[
+									"5th",
+									"{@spell fear}"
+								],
+								[
+									"7th",
+									"{@spell phantasmal killer}"
+								],
+								[
+									"9th",
+									"{@spell dream}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sense Terror",
+					"entries": [
+						"当你进行智慧({@skill Insight})能力检定以了解某人的恐惧情况时，你可以花费1个异质点来获得该能力检定的优势。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Paralyzing Fear",
+					"entries": [
+						"你可以使用一个额外的行动，并花费2个ectoplasm点，使60英尺内你能看到的一个生物经历麻痹的恐惧。当你这样做时，该生物必须在智慧救赎中成功，否则就会被你影响到（%0%），直到其下一回合结束。当它在你身边的时候，它的移动速度会降低到0。"
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Corpse Mask",
+			"source": "BH:SP",
+			"page": 11,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"触摸一个人形生物的尸体，你会改变你的身体外观--包括你的衣服、盔甲、武器和你身上的其他物品--看起来就像尸体死前几分钟的样子。你会保留你自己所有的能力分数、特征、特性和其他能力。",
+				"在伪装成死者的时候，你也会本能地模仿它的举止。熟悉死者的人形生物可以尝试确定你是否真的是死者，方法是用它的行动对你的法术救赎DC进行智力（（%0%））检查。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施放此法术时，持续时间增加到8小时。当你使用3级或以上的法术槽施放此法术时，持续时间增加到8小时。",
+						"五级或以上，持续时间增加到24小时。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Drain",
+			"source": "BH:SP",
+			"page": 11,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a red ribbon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"伸出你的手，将你的手指指向范围内的生物，一道负能量的闪光短暂地将你们两个人连接起来。目标生物必须在宪法规定的投掷中成功，否则会受到{@damage 3d4}坏死的伤害。如果该生物的蓄力动作失败，你会获得相当于该生物所受伤害的临时命中率。一分钟后，你会失去这个法术所赋予的任何临时命中点。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级以上的法术槽施放此法术时，超过一级的每一级都会使此法术的伤害增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"THP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Exorcise",
+			"source": "BH:SP",
+			"page": 11,
+			"level": 0,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a prayer book"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在你和你能看到的范围内的一个生物之间的空气中做一个保护标志。如果目标是亡灵或不属于物质界，它必须成功地进行魅力救赎，否则会受到{@damage 1d8}武力伤害，并且在下一回合结束前不能自愿地靠近你。",
+				"当你达到以下条件时，该法术的伤害增加{@dice 1d8}",
+				"5级（（%0%）），11级（（%1%）），17级（（%2%））。"
+			],
+			"scalingLevelDice": {
+				"label": "force damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Forsaken Chains",
+			"source": "BH:SP",
+			"page": 11,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a length of chain"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你对范围内的生物做手势，三个幽灵般的手铐和锁链从地面弹出，套住该生物。每当该生物移动5英尺，其中一条锁链就会断裂，该生物就会受到{@damage 1d12}坏死性伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二阶以上的法术槽施展此法术时，每超过一阶的法术槽会有两条额外的锁链锁住生物。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Inquisitor's Eye",
+			"source": "BH:SP",
+			"page": 11,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你打开你的头脑，了解那些可能会被你忽略的细节。每当你在此咒语结束前进行{@skill Insight}、{@skill Intimidation}、{@skill Investigation}或{@skill Perception}的能力检查时，你可以掷出{@dice 1d4}并将其加入结果中。在用这些技能之一进行能力检查后，你可以提前结束这个法术，将（%5%）的卷轴结果改为20。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Stolen Life",
+			"source": "BH:SP",
+			"page": 12,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a calendar or timepiece older than you are worth 1 sp or more",
+					"cost": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"用你的手指划过一个生物，他们的身体就会被偷来的生命的痛苦所缠绕，因为原本属于他们的岁月变成了你的。对范围内的生物进行近身法术攻击。一旦命中，造成{@damage 8d8}坏死伤害。如果该生物是一个人形生物，它必须在体质救赎中成功，否则就会衰老（%1%）年。你将该生物衰老的年数加入到你的最大自然寿命中。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Summon Ghost",
+			"source": "BH:SP",
+			"page": 12,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bed sheet"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你呼唤不安的死者进入你的身边，召唤出一个鬼魂。该鬼魂出现在你能看到的范围内的无人空间，当它的命中率降至0或法术结束时，该鬼魂就会消失。",
+				"为鬼魂掷出主动权，它有自己的回合。",
+				"在它的每个回合，你可以发出一个口头命令（不需要你的行动），告诉它在下一回合必须做什么。如果你没有发出任何命令，它就会用它的回合来攻击任何在其范围内攻击过它的生物。",
+				"当这个咒语结束时，鬼魂会做一个 \"魅力救赎\"。如果你知道它的名字和它的死亡过程，那么该鬼魂在这个救赎动作中处于不利地位。如果救赎失败，法术就会结束，鬼魂就会消失。如果救赎成功，你对鬼魂的控制就会结束，它可以自由地回到它的来处或留在原地。"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Death's Threshold",
+			"source": "BH:SP",
+			"page": 5,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 1,
+			"entries": [
+				"在1级时，你的精神能力来自于你的濒死体验的原因，称为阈值。你的选择在1级时授予你特性，在6级和14级时再次授予你特性。"
+			]
+		},
+		{
+			"name": "Pact Magic",
+			"source": "BH:SP",
+			"page": 5,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 1,
+			"entries": [
+				"你有能力穿透分隔生者和死者的面纱，这使你有能力施展法术。关于施法的一般规则，请参见《玩家手册》的（%0%），关于灵媒的法术列表，请参见本文件。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"你知道两个你选择的咒语（%0%）。你在更高的等级中学习你所选择的额外的灵媒咒语，如灵媒表的已知咒语栏所示。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"灵媒表显示你有多少个法术槽。该表还显示了这些法术槽的等级；你所有的法术槽都是一样的等级。要施展你的一个1级或更高等级的灵媒法术，你必须消耗一个法术槽。当你完成短时或长时休息时，你会重新获得所有消耗的法术槽。",
+						"你准备可供你施展的灵媒法术清单，从（%0%）中选择。当你这样做时，选择与你的魅力修正值+你的灵媒等级的一半相等的灵媒法术数量，向下取整（最少一个法术）。该法术的等级必须是你有法术槽的。",
+						"例如，当你5级的时候，你有两个3级的法术槽。要施放1级法术 \"被抛弃的锁链\"，你必须花费其中一个法术槽，并将其作为3级法术施放。施放该法术并不会将其从你的预备法术列表中移除。",
+						"你可以在完成长期休息时改变你准备的法术清单。准备一份新的灵媒法术清单需要花时间进行冥想并与死者的灵魂进行交流：对于你清单上的每个法术等级，至少需要1分钟。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"魅力是你对灵媒法术的施法能力。你有能力呼唤不安静的死者，并进入活人的思想，这来自于强大的自我意识。每当灵媒法术提到你的法术能力时，你就会使用你的魅力。此外，在设定你所施展的灵媒法术的蓄力DC时，以及在使用灵媒法术进行攻击时，你会使用你的魅力修饰。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用（0%）、（1%）、（2%）或（3%）（见《玩家手册》第5章 \"装备\"）作为你灵媒法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Spirit",
+			"source": "BH:SP",
+			"page": 5,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 2,
+			"entries": [
+				"你与死亡的联系使你能够引导不安的亡灵。在引导这些灵魂时，你仍然可以控制自己的行为和行动。作为对再次生活的替代体验的交换，灵魂将其一部分神秘的力量借给你。",
+				"在2级时，你认识一种精神。你可以执行一个10分钟的仪式来引导你所认识的一个精神。在你昏迷之前，该灵魂会一直被引导，使用一个动作来解除它，或者再次执行这个仪式。当你获得一定的灵媒等级时，你会认识额外的（%0%）你所选择的精神，如灵媒表中已知的精神一栏所示。",
+				"此外，当你在这个等级中获得一个级别时，你可以从你所知道的精神中选择一个，并用另一个精神代替它。"
+			]
+		},
+		{
+			"name": "Ectoplasm",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 2,
+			"entries": [
+				"从2级开始，你学会操纵无形的、虚无的死亡能量--外质。你对这种物质的使用由外质点的数量来表示。你的灵术师等级决定了你拥有的点数，如灵术师表格中的外质点一栏所示。",
+				"你可以花这些点数来激活某些灵媒的功能，其中大部分取决于你所引导的精神。此外，你可以在你的回合中使用一个额外的动作，将你的外骨质点转换成额外的法术槽。创建法术槽的表格显示了创建一个特定等级的法术槽的成本。你可以创造出比你的契约魔法所能施放的等级更高的法术槽。当你长时间休息时，你会失去以这种方式创造的未使用的法术槽。",
+				"当你花掉一个外挂点时，在你完成一个长时间的休息之前，它是不可用的，在休息结束后，你会重新获得所有消耗的外挂点。",
+				{
+					"type": "table",
+					"caption": "Creating Spell Slots",
+					"colLabels": [
+						"Spell Slot",
+						"Ectoplasm"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"2"
+						],
+						[
+							"2nd",
+							"3"
+						],
+						[
+							"3rd",
+							"5"
+						],
+						[
+							"4th",
+							"6"
+						],
+						[
+							"5th",
+							"7"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Sixth Sense",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 3,
+			"entries": [
+				"在第3级时，你可以使用一个动作并花费1个异质点来打开你对不可见世界的感官，持续1小时。在这段时间内，你可以看到不可见的生物和物体，就像它们是可见的一样，而且你可以看到和听到虚无界。"
+			]
+		},
+		{
+			"name": "Thanatophobia",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以熟练掌握死亡拯救术。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Lingua Mortis",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 5,
+			"entries": [
+				"从5级开始，你可以使用一个动作并花费1个外质点来施展（%0%）的法术。当你这样做时，你和尸体能完全理解对方，即使你们没有共同的语言。"
+			]
+		},
+		{
+			"name": "Death's Threshold feature",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 6,
+			"entries": [
+				"在6级时，你从你的死亡之门获得一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BH:SP",
+			"page": 4,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Stygian Inhalation",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 10,
+			"entries": [
+				"10级时，你可以吸入活物经过时放出的死亡蒸汽。当你周围30英尺内的生物死亡时，你可以使用你的反应来获得相当于你本级水平两倍的临时命中率。当你拥有这个特性所赋予的临时命中率时，当你说话时，会有一缕黑烟从你口中喷出，并且你对非魔法伤害有抵抗力。一旦你使用这个特性，你必须完成一个短暂或长时间的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Occult Insight (6th level)",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 11,
+			"entries": [
+				"11级时，你的精神力量得到进化，使你有能力施展更高级的法术。每当你完成一次长时休息，你可以选择一个（%0%）。你可以在不消耗法术槽的情况下施放该法术，并且必须在完成长时间休息后才能再次施放。",
+				"在更高的等级，你获得了以同样的方式施放额外的灵媒法术的能力：在13级时你可以选择一个（%0%），在15级时你可以选择一个（%1%），而在17级时你可以选择一个（%2%）。当你完成一个长时间的休息时，你会重新获得用这个特性施放上述每个等级的法术的能力。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BH:SP",
+			"page": 4,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Occult Insight (7th level)",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 13,
+			"entries": [
+				"你可以另外使用你的奥术洞察力来施展一个（%0%）。"
+			]
+		},
+		{
+			"name": "Death's Threshold feature",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 14,
+			"entries": [
+				"在14级时，你从你的死亡之门获得一个特性。"
+			]
+		},
+		{
+			"name": "Occult Insight (8th level)",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 15,
+			"entries": [
+				"你可以另外使用你的奥术洞察力来施展一个（%0%）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BH:SP",
+			"page": 4,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Occult Insight (9th level)",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 17,
+			"entries": [
+				"你可以另外使用你的奥术洞察力来施展一个（%0%）。"
+			]
+		},
+		{
+			"name": "Spectral Shroud",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 18,
+			"entries": [
+				"在18级时，你被笼罩在幽灵般的能量中，死亡很难找到你。你不会因为年老而死亡，而且当你在做死亡挽救动作时，在D20上掷出1，它只算作一次失败，而不是像正常情况下的两次。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "BH:SP",
+			"page": 4,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Ectoplasmic Transubstantiation",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"level": 20,
+			"entries": [
+				"在20级时，你发现了将你的肉体转化为精神的物质的能力。当你采取行动这样做时，你会获得一半的最大外骨骼点数和以下好处，持续1分钟。",
+				{
+					"type": "list",
+					"items": [
+						"你获得60的飞行速度。",
+						"你对非魔法伤害具有免疫力。",
+						"你可以在生物和物体中移动，但不能在其中结束你的移动。",
+						"你拥有300英尺范围内的真实视力。",
+						"作为你每个回合的额外行动，你可以从物质界踏入边界虚空，或者从边界虚空踏入物质界。在你使用这个功能后，你必须完成一个长时间的休息才能再次使用它。"
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Beast and Briar",
+			"source": "BH:SP",
+			"page": 6,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Beast and Briar",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"entries": [
+				"与野兽的激烈交锋或毒荨麻的刺痛几乎使你倒下。当你幸存下来时，你发现你的经历已经改变了你。你不仅意识到了生与死之间不稳定的界限，你还发现你与自然界有了联系。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Spiritualist|BH:SP|Beast and Briar|BH:SP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grey Gardener|Spiritualist|BH:SP|Beast and Briar|BH:SP|1"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Beast and Briar",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你濒死体验的性质扩大了你可用的魔法。以下法术被添加到灵媒的法术列表中，供你使用。",
+				{
+					"type": "table",
+					"caption": "Beast and Briar Expanded Spells",
+					"colLabels": [
+						"Spell Levels",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell animal friendship}, {@spell entangle}"
+						],
+						[
+							"2nd",
+							"{@spell animal messenger}, {@spell spike growth}"
+						],
+						[
+							"3rd",
+							"{@spell conjure animals}, {@spell plant growth}"
+						],
+						[
+							"4th",
+							"{@spell grasping vine}, {@spell polymorph}"
+						],
+						[
+							"5th",
+							"{@spell commune with nature}, {@spell tree stride}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Grey Gardener",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Beast and Briar",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从你一阶选择这个门槛开始，你获得了（%0%）的咒语，这对你来说被认为是一个灵媒的咒语。这个咒语不计入你所知道的灵媒咒语的数量。",
+				"此外，在非魔法的困难地形上移动不需要额外的移动费用，而且你对那些用魔法创造或操纵来阻碍移动的植物，例如那些由（%0%）法术创造的植物，在拯救动作上有优势。"
+			]
+		},
+		{
+			"name": "Possess Beast",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Beast and Briar",
+			"subclassSource": "BH:SP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你可以使用一个行动来尝试附身于你在120英尺范围内可以看到的野兽。当你这样做时，选择范围内的一只野兽并花费任意数量的外质点。你每花费一个外质点，就会滚动（%0%）+一个额外的（%1%）。如果总点数等于或超过该野兽当前的命中率，并且该野兽的智力为3或更低，你就占有它。这个附身在与你在这个等级中的等级相等的小时后结束，当你使用一个行动来结束它时，或者当被附身的生物被降低到0命中率时。",
+				"当你拥有这个生物时，你通过它的感官从它的角度体验事物，并完全控制它的行动。在这段时间里，你不能施展法术或采取需要你自己的身体移动才能成功的行动，而且你对自己的感官是盲的和聋的。",
+				"在你使用这个功能后，你必须完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Green Graveyard",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Beast and Briar",
+			"subclassSource": "BH:SP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你可以使用一个动作，使幽灵动植物在你周围显现，持续1分钟。当你这样做时，你周围60英尺内的区域对你选择的生物来说被视为困难地形。此外，你可以在你的每个回合中使用一个额外的行动，以获得以下效果之一。",
+				{
+					"name": "Spectral Vines",
+					"type": "entries",
+					"entries": [
+						"选择一个你能看到的60英尺内的生物。该生物必须在幽灵藤蔓抓向它时做一个灵巧的蓄力动作。如果失败，该生物会受到{@damage 2d6}的穿刺伤害，其移动速度减半，直到其下一回合结束。如果成功，它将受到一半的伤害，其速度不会降低。"
+					]
+				},
+				{
+					"name": "Ectoplasmic Animals",
+					"type": "entries",
+					"entries": [
+						"选择一个你能看到的60英尺内的生物。当外生兽攻击它时，该生物必须做一个智慧救赎动作。如果失败，该生物会受到{@damage 1d8}的精神伤害，并且是你的{@condition frightened}，直到其下一回合结束。"
+					]
+				},
+				"在你使用这个功能后，你必须完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Bloody Blade",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Bloody Blade",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"entries": [
+				"你差点被另一个人形生物的攻击所杀。无论是一个值得信赖的朋友、一个陌生人，还是一个受雇的刺客，这种经历给你打上了对他人施加身体暴力的兴趣和能力。这种门槛的灵媒有时把自己看作是死亡的天使，肩负着判断谁生谁死的责任。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Spiritualist|BH:SP|Bloody Blade|BH:SP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Spiritualist|BH:SP|Bloody Blade|BH:SP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bad Blood|Spiritualist|BH:SP|Bloody Blade|BH:SP|1"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Bloody Blade",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你濒死体验的性质扩大了你可用的魔法。以下法术被添加到灵媒的法术列表中，供你使用。",
+				{
+					"type": "table",
+					"caption": "Bloody Blade Expanded Spells",
+					"colLabels": [
+						"Spell Levels",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell armor of agathys}, {@spell wrathful smite}"
+						],
+						[
+							"2nd",
+							"{@spell branding smite}, {@spell magic weapon}"
+						],
+						[
+							"3rd",
+							"{@spell haste}, {@spell vampiric touch}"
+						],
+						[
+							"4th",
+							"{@spell freedom of movement}, {@spell mordenkainen's faithful hound}"
+						],
+						[
+							"5th",
+							"{@spell passwall}, {@spell steel wind strike|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Bloody Blade",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"一级时，你获得对中型盔甲、盾牌和武术武器的熟练度。"
+			]
+		},
+		{
+			"name": "Bad Blood",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Bloody Blade",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"同样在1级时，你的最大命中率增加1，每当你在这个等级中获得一个等级时，它又增加1。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Bloody Blade",
+			"subclassSource": "BH:SP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Killing Field",
+			"source": "BH:SP",
+			"page": 7,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Bloody Blade",
+			"subclassSource": "BH:SP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你可以使用一个动作，使你周围的区域充满暴力的能量。当你这样做时，在接下来的每一个回合中，你都可以使用一个额外的动作来对60英尺内你能看到的生物造成伤害。如果该生物的当前命中率等于其最大命中率，它就会受到{@damage 1d6}坏死伤害。如果该生物当前的命中率等于其最大命中率的一半以上，它将受到{@damage 2d6}坏死伤害。如果该生物的当前命中率等于或低于其最大命中率，它将受到（%2%）坏死伤害。在你使用这个特性后，你必须完成一个长时间的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Plague and Poison",
+			"source": "BH:SP",
+			"page": 8,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Plague and Poison",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"entries": [
+				"就在疾病或毒素把你带到死亡的边缘时，你的高烧退了，你活了下来。差点杀死你的外来元素在你的灵魂上留下了一个污点，使你对瘟疫和毒药有一种非自然的亲和力。一些具有这种门槛的灵媒看起来永远都在生病，或者被差点杀死他们的毒素所折磨。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Spiritualist|BH:SP|Plague and Poison|BH:SP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Inured to Toxins|Spiritualist|BH:SP|Plague and Poison|BH:SP|1"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "BH:SP",
+			"page": 8,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Plague and Poison",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你濒死体验的性质扩大了你可用的魔法。以下法术被添加到灵媒的法术列表中，供你使用。",
+				{
+					"type": "table",
+					"caption": "Plague and Poison Expanded Spells",
+					"colLabels": [
+						"Spell Levels",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell detect poison and disease}, {@spell purify food and drink}"
+						],
+						[
+							"2nd",
+							"{@spell melf's acid arrow}, {@spell protection from poison}"
+						],
+						[
+							"3rd",
+							"{@spell gaseous form}, {@spell vampiric touch}"
+						],
+						[
+							"4th",
+							"{@spell blight}, {@spell sickening radiance|XGE}"
+						],
+						[
+							"5th",
+							"{@spell contagion}, {@spell enervation|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Inured to Toxins",
+			"source": "BH:SP",
+			"page": 8,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Plague and Poison",
+			"subclassSource": "BH:SP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"从你在1级的时候开始，你对毒药伤害有抵抗力。此外，你对疾病和被害的救赎有优势（%0%）。"
+			]
+		},
+		{
+			"name": "Devitalizing Touch",
+			"source": "BH:SP",
+			"page": 8,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Plague and Poison",
+			"subclassSource": "BH:SP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你使用行动接触一个生物时，你可以向他们的系统释放一种毁灭性的疾病。当你这样做时，你可以消耗任何数量的外骨质点。该生物会失去（%0%）的命中率+额外的（%1%），因为你每消耗一个外骨质点。该生物必须在宪法救赎中成功，否则其最大命中率将减少相同的数量。这种最大命中率的降低在该生物完成长时间休息后结束。",
+				"在你使用这个功能后，你必须完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Scarlet Fever",
+			"source": "BH:SP",
+			"page": 8,
+			"className": "Spiritualist",
+			"classSource": "BH:SP",
+			"subclassShortName": "Plague and Poison",
+			"subclassSource": "BH:SP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你可以使用一个动作，向60英尺内你选择的每个生物发出一种快速作用的空气传播疾病。被选中的生物必须在宪法规定的投掷中成功，否则会受到（%0%）坏死性的伤害。在接下来的一分钟内，你可以在你的每个回合中使用一个额外的动作，使一个没有成功的生物重复这个蓄力动作，如果失败则再次受到伤害。",
+				"在你使用这个功能后，你必须完成一个长时间的休息才能再次使用。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Beast and Briar",
+			"shortName": "Beast and Briar",
+			"source": "BH:SP",
+			"page": 6,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"animal friendship",
+							"entangle"
+						],
+						"2": [
+							"animal messenger",
+							"spike growth"
+						],
+						"3": [
+							"conjure animals",
+							"plant growth"
+						],
+						"4": [
+							"grasping vine",
+							"polymorph"
+						],
+						"5": [
+							"commune with nature",
+							"tree stride"
+						]
+					},
+					"innate": {
+						"1": [
+							"druidcraft#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Beast and Briar|Spiritualist|BH:SP|Beast and Briar|BH:SP|1",
+				"Possess Beast|Spiritualist|BH:SP|Beast and Briar|BH:SP|6",
+				"Green Graveyard|Spiritualist|BH:SP|Beast and Briar|BH:SP|14"
+			],
+			"className": "Spiritualist",
+			"classSource": "BH:SP"
+		},
+		{
+			"name": "Bloody Blade",
+			"shortName": "Bloody Blade",
+			"source": "BH:SP",
+			"page": 7,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"armor of agathys",
+							"wrathful smite"
+						],
+						"2": [
+							"branding smite",
+							"magic weapon"
+						],
+						"3": [
+							"haste",
+							"vampiric touch"
+						],
+						"4": [
+							"freedom of movement",
+							"mordenkainen's faithful hound"
+						],
+						"5": [
+							"passwall",
+							"steel wind strike|xge"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Bloody Blade|Spiritualist|BH:SP|Bloody Blade|BH:SP|1",
+				"Extra Attack|Spiritualist|BH:SP|Bloody Blade|BH:SP|6",
+				"Killing Field|Spiritualist|BH:SP|Bloody Blade|BH:SP|14"
+			],
+			"className": "Spiritualist",
+			"classSource": "BH:SP"
+		},
+		{
+			"name": "Plague and Poison",
+			"shortName": "Plague and Poison",
+			"source": "BH:SP",
+			"page": 8,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"detect poison and disease",
+							"purify food and drink"
+						],
+						"2": [
+							"melf's acid arrow",
+							"protection from poison"
+						],
+						"3": [
+							"gaseous form",
+							"vampiric touch"
+						],
+						"4": [
+							"blight",
+							"sickening radiance|xge"
+						],
+						"5": [
+							"contagion",
+							"enervation|xge"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Plague and Poison|Spiritualist|BH:SP|Plague and Poison|BH:SP|1",
+				"Devitalizing Touch|Spiritualist|BH:SP|Plague and Poison|BH:SP|6",
+				"Scarlet Fever|Spiritualist|BH:SP|Plague and Poison|BH:SP|14"
+			],
+			"className": "Spiritualist",
+			"classSource": "BH:SP"
+		}
+	]
+}

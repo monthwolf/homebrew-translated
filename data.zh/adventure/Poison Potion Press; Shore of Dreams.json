@@ -1,0 +1,1649 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SOD",
+				"abbreviation": "SOD",
+				"full": "Shore of Dreams",
+				"authors": [
+					"Florian Emmerich",
+					"JVC Parry",
+					"Poison Potion Press"
+				],
+				"convertedBy": [
+					"gambit"
+				],
+				"color": "5eafa5",
+				"version": "1.0.0",
+				"url": "https://www.dmsguild.com/product/232354/Shore-of-Dreams",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0,
+		"_dateLastModifiedHash": "f0efc8c08a"
+	},
+	"adventure": [
+		{
+			"name": "Shore of Dreams",
+			"id": "SOD",
+			"source": "SOD",
+			"group": "homebrew",
+			"contents": [
+				{
+					"name": "SHORE OF DREAMS",
+					"headers": [
+						"RUNNING THE MODULE",
+						"ADVENTURE BACKGROUND",
+						"GETTING INVOLVED",
+						"OPENING"
+					]
+				},
+				{
+					"name": "YOKOTORO VILLAGE",
+					"headers": [
+						"DOCKS",
+						"ELDER'S HUT",
+						"BLACKSMITH",
+						"GUARD TOWER",
+						"THE SHORE OF DREAMS"
+					]
+				},
+				{
+					"name": "CAPTURED!"
+				},
+				{
+					"name": "TEMPLE OF THE STORM",
+					"headers": [
+						"GENERAL FEATURES",
+						"T1: PRISONER PEN",
+						"T2: CAVERN ENTRANCE",
+						"T3: HALL OF OLHYDRA",
+						"T4: VAULT",
+						"T5: STUDY",
+						"T6: BARRED ROOM"
+					]
+				},
+				{
+					"name": "PISCA HERALD OF OLHYDRA"
+				},
+				{
+					"name": "CONCLUDING THE ADVENTURE",
+					"headers": [
+						"A HARSH REALITY"
+					]
+				},
+				{
+					"name": "APPENDIX A: MONSTERS & NPCS"
+				},
+				{
+					"name": "APPENDIX B: MAGIC ITEMS"
+				}
+			],
+			"level": {
+				"start": 5,
+				"end": 7
+			},
+			"published": "2018-01-25",
+			"storyline": "None"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "SOD",
+			"source": "SOD",
+			"data": [
+				{
+					"type": "section",
+					"name": "SHORE OF DREAMS",
+					"id": "SHORE OF DREAMS",
+					"entries": [
+						{
+							"type": "inset",
+							"name": "\"You seek for the treasure of ol' Jadescale? All you need to do is Talk with Pisca at the Shore of Dreams.\"",
+							"entries": [
+								"",
+								"--江考"
+							]
+						},
+						"《梦境之岸》是一个适合4至5名5级至7级角色的龙与地下城冒险模块。根据角色遇到的元素，完成这个模块通常需要3至6个小时。这个冒险模块可以与《末日王子》（见第16页的元素之怒）、《湮灭之墓》连接，或者您可以将其放置在您的家庭战役中。",
+						{
+							"type": "inset",
+							"name": "A Remote Island",
+							"entries": [
+								"",
+								"地牢主可以轻松地将梦境之岸冒险模块放置在任何其他已绘制或以前未绘制的岛屿串中。如果你想在剑海岸玩，可以用兰坦替换尼兰瑟地区，用迷雾悬崖替换云峰。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "RUNNING THE MODULE",
+							"id": "RUNNING THE MODULE",
+							"entries": [
+								"在运行(`Dungeon Master's Guide`)之前，建议阅读整个冒险模块。该模块涉及(`Player's Handbook`)、(`Monster Manual`)和(`Elemental Evil Player's Companion`)。",
+								"粗体字的生物指的是在《%0%》或《%1%》中对应的条目。",
+								"斜体书写的魔法物品和法术指的是《元素之邪恶玩家手册》中的相应条目。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "ADVENTURE BACKGROUND",
+							"id": "ADVENTURE BACKGROUND",
+							"entries": [
+								"有传言称在丘尔特（Chult）的谜雾悬崖（Mistcliff）附近，海盗埋藏了一处巨大的宝藏，但从未取走。许多人谈论这笔巨大的财富，但由于涉及的风险，很少有人尝试去索取。当地人讲述着一个酒馆，梦幻海岸（Shore of Dreams），由一位最受欢迎的三叉戟（triton）所有，这是船员们在启程前补给的最佳地点。",
+								"不幸的是，这个故事是一个谎言，由《梦境之岸》的所有者{@creature Pisca Ahlorsath|SOD}散布。Pisca是两个贵族海妖家族的私生女，小时候被社区驱逐。",
+								"她在恶劣的海洋中挣扎求生，于是转向陆地，寻找其他流亡者一起生活。",
+								"然而，最终她未能融入。受到巨大悲伤的影响，皮斯卡(Pisca)变得执着于权力，希望教训那些会回避她的人一个教训。",
+								"经过多年的研究，她发现了一本古老的书，讲述了{@item Crown of Black Pearls|SOD}，这是属于碎浪教派的一件强大魔法物品。她花了近十年的时间追踪这件物品，最终找到了它所在的一个遥远的岛屿，靠近兰坦，被来自卡拉图尔的定居者占据，只是发现这座寺庙已经半埋没且长满了植被。",
+								"毫不气馁，皮斯卡开始迷住当地人，以在神殿中埋藏的巨大财富为诱饵赢得他们的信任。最终，皮斯卡成为了这个岛屿社区的首领，大部分小众人口都在为神殿辛勤工作。尽管如此，皮斯卡变得不耐烦了。她设计了一个计划，可以奴役冒险家来做工作。他们工作更快，也比岛上的人更容易取代。因此，她编造了海盗宝藏的传说。",
+								"现在，Pisca拥有梦境之滨 (Shore of Dreams)，当地的旅馆，是通往迷雾峭壁 (Mistcliff) 的最后一站。在这里，她会给冒险者下药并奴役他们，强迫他们帮助挖掘古老的神庙，她希望在那里找到她的皇冠。",
+								"Pisca相信她离神庙地面很近，但不确定里面需要做多少工作，并计划寻求进一步的帮助。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "GETTING INVOLVED",
+							"id": "GETTING INVOLVED",
+							"entries": [
+								"有许多方法可以让玩家角色参与到冒险模组中。以下引子可以帮助你引发事件的发生。",
+								{
+									"type": "entries",
+									"name": "TREASURE OF CAPTAIN JADESCALE",
+									"id": "TREASURE OF CAPTAIN JADESCALE",
+									"entries": [
+										"有传言说在丘尔特的密斯克利夫沿线，有一大批宝藏被臭名昭著的海盗翡翠鳞船长及其船员埋藏在海底。自那时起，来自该地区各地的冒险家们纷纷前往丘尔特试试手气。据说，在梦境之岸，一个靠近兰坦岛的客栈，由最迷人的(Trition)所有，那里有关于宝藏确切位置的线索，也是前往密斯克利夫之前补给的好去处。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "LOST EXPLORERS",
+									"id": "LOST EXPLORERS",
+									"entries": [
+										"最近，几组探险家在寻找翡翠鳞船长的宝藏时神秘失踪了。这些组的唯一共同点是他们的探险任务，但他们都在启程前在梦境之滨停留过。委托方雇佣了一支队伍来发现这些可怜人的命运，他们的亲属将奖励冒险者每人100gp。这些冒险者的名字是{@creature scout|MM|Rolen Moonbrook (male half-elf scout)}，{@creature thug|MM|Chung (female half-orc thug)}，{@creature acolyte|MM|Errich}和{@creature bandit|Wellby Highbarrel}（男性和女性半身人兄妹，分别是侍僧和强盗）。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "THE SHORE OF DREAMS",
+									"id": "THE SHORE OF DREAMS",
+									"entries": [
+										"在从之前的冒险归来时，队伍发现了一个小而宜人的岛屿，位于兰坦(Lantan)附近，看起来是一个很好的地方可以靠岸并过夜。尽管岛屿的海岸看起来很不错，更吸引人的是梦境之滨和其主人，海底人皮斯卡(Pisca)。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "ON THE WAY TO PORT NYANZARU",
+									"id": "ON THE WAY TO PORT NYANZARU",
+									"entries": [
+										"一行人前往丘尔特，在一场雷暴中受困。仅仅凭借幸运，一行人被困在离兰坦附近的一个小岛上。也许有机会重新踏上前往目的地的路途。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "OPENING",
+							"id": "OPENING",
+							"entries": [
+								"冒险从一行人抵达梦境之滨和名为Yokotoro的村庄开始。这个村庄本身是一个宁静而破旧的渔村，但梦境之滨旅馆却是一个更为宏伟的建筑。",
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你们发现自己身处一个小岛上，四周是木制浮桥和小圆船。岛内，你们可以看到几座简陋的竹屋和一座更加宏伟的建筑，那肯定就是梦境之岸。当你们靠近时，开始听到从酒馆传来的欢声笑语。"
+									]
+								}
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master//_img/SOD/Yokotoro Village.jpg"
+							},
+							"title": "Yokotoro Village"
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "YOKOTORO VILLAGE",
+					"id": "YOKOTORO VILLAGE",
+					"entries": [
+						{
+							"type": "inset",
+							"name": "\"Madame Ahlorsath will be available for you this evening. Is there anything I can do for your in the meantime?\"",
+							"entries": [
+								"",
+								"--穆拉萨·塞普雷特(Murasa Sepret)"
+							]
+						},
+						"这个村庄本身相对较小，但种族多样，各种种族自由交融。大多数房屋都是用竹子做成的厚实原木，从地面上升起。向南是一个停泊着捕鱼小船的浮船网络，向北是被切割成梯田的山丘。所有村民都知道Pisca的计划和诡计，但没有人知道足够多以真正揭露她。队伍可能希望进入几个地点。",
+						"外来者很少造访(Yokotoro), 因此这里的商品很少。这里出售的大多数物品价格是平常的两倍，除了常见物品，比如口粮、钓鱼设备等。村庄外的土地完全是荒野，可能还未被探索。",
+						{
+							"type": "section",
+							"name": "DOCKS",
+							"id": "DOCKS",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"环绕着岛屿南部边缘的是一系列木栈道，上面停泊着数十艘小型渔船。这个地方熙熙攘攘，人们在清洁渔网、卸载渔获或者维护他们的小船。一些较大的船只停靠在栈道边缘，使得这些小渔船显得微不足道。"
+									]
+								},
+								"角色们可以通过进行一次DC 14的智力（调查）检定，注意到这些大船来自世界不同的地方。",
+								"如果队伍询问当地人关于前往宝藏、租船旅行或住宿的事情，他们会被指向梦境之岸，并告诉他们找皮斯卡(Pisca)谈谈，她拥有所有的船只。成功的DC 15的智力（洞察）检定会让角色怀疑渔民们在隐瞒一些事情。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "ELDER'S HUT",
+							"id": "ELDER'S HUT",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"在城镇边缘隐藏着一间小屋，屋外聚集着一群当地人。当你走近时，燃烧的鼠尾草的味道充斥着你的鼻腔。屋内，一对老年妇女坐在一个冒着泡的大锅旁。"
+									]
+								},
+								"村里的长者是两位古老的妇女，皱纹满面，名叫{@creature commoner|MM|Lui Dua (NG female Shou commoner)}和{@creature commoner|MM|Mei Zhueng (NG female Shou commoner)}。她们住在镇外的一间小屋里，给生病的人施药或给有需要的人提供建议。当Pisca声称自己正在努力揭示岛上遗产的古老遗址，而人们将分享这些财富时，她其实在欺骗她们。Pisca如此独特和有魅力的承诺说服了长者们让她按照自己的意愿行事，只要岛上的人们没有受到任何伤害。",
+								"长者们可以将治疗药水和抗毒药瓶以正常价格的两倍卖给角色们。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "BLACKSMITH",
+							"id": "BLACKSMITH",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"铁匠铺是岛上为数不多的石头建筑之一。它从外部锻炉散发出热量，几个铁砧就在一个原始水井不远处。你可以看到一个粗鲁的男人在用一块红热的铁粗暴地锤打着。"
+									]
+								},
+								"这个男人的名字是{@creature Thug|MM| Jiang Kao (NG male Shou thug)}。他有点粗鲁，但本意是好的，会乐意回答角色们的问题。他经常赞美着Pisca，他已经爱上了她。（他没有告诉角色们这一点。）他声称制作了Pisca那套精美的鳞甲和腰刀。如果角色们想从他那里购买武器，他会使用武侠词汇来描述武器（参见{@book Dungeon Master's Guide|DMG|1|Wuxia}）。",
+								"当他领他们进入房间时，他迅速关上了通往后面房间的门，并用钥匙将其牢牢锁住。感知被动智慧（察觉）分数达到18或更高的角色会注意到远墙上挂着一把精湛的武器，显然是某人用不可思议的技艺打造而成。如果询问此事，江（Jiang）迅速摒弃任何评论，称他的父亲是一位著名的铸剑师。",
+								"进行一次{@dc 14}的智慧（洞察）检定，可以发现他感到不安。在得知这一点后，如果进一步追问，他会声称他曾试图打造一些特定的刀剑，以期达到他父亲的造诣；这些刀剑存放在后房。然而，它们仍然不够好，他宁愿不展示他的失败，并且不想再谈论这个话题。",
+								"事实上，后院堆满了先前被 Pisca 奴役的冒险者们的旧武器。江将这些武器熔化并重新利用金属，但展示的刀刃质量特别好，他舍不得将其熔化。",
+								"要进入后屋，角色必须通过使用盗贼工具进行成功的DC 16敏捷检定来撬锁，或者通过成功的DC 20敏捷（巧手）检定从江(%Jiang%)脖子上的皮绳上取下钥匙。里面装满了旧武器的箱子，其中一些已经损坏或生锈。其中包括一个{@item +1 longsword|DMG}。如果PC们来到这个村庄搜寻失踪的探险者，他们可以进行一次DC 12的智力（调查）检定，以注意到这件武器上的家族徽章揭示出它属于其中一位失踪探险者的家族。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "GUARD TOWER",
+							"id": "GUARD TOWER",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"在村庄中心，俯瞰着房屋和浮码头，有一座竹制的塔楼。从下面看不到任何守卫在塔楼上值守。"
+									]
+								},
+								"一条绳梯通向顶部，在那里有{@creature veteran|MM|four guards (NG male & female Shou veterans)}。他们都因为在寺庙工作太久，轮夜班看守奴隶{@adventure (see Captured! on page 11).|SOD|2}而受到一级疲劳的影响。",
+								"如果角色们沿着绳梯上升，他们几乎到达顶部时，卫兵才注意到，这时他们突然挺直身体，要求角色们下去。很明显他们都半睡半醒。如果角色们说他们在调查失踪的探险者，那么卫兵会允许他们上来问几个问题。",
+								"卫兵们大多会回避问题，说任何到达的冒险者都要与皮斯卡(Pisca)交谈，领取一艘帆船或者船长碧鳞宝藏(Treasure of Captain Jadescale)的地图，并指明正确的方向。皮斯卡可能知道更多。之后，他们是否返回就是他们自己的问题，与村庄无关。如果角色询问如何获取一艘船或地图，他们会把队伍指向梦境之岸(Shore of Dreams)。"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SOD/Murasa Sepret.jpg"
+							},
+							"title": "Murasa Sepret"
+						},
+						{
+							"type": "section",
+							"name": "THE SHORE OF DREAMS",
+							"id": "THE SHORE OF DREAMS 2",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"梦之岸（The Shore of Dreams）是一座两层石头建筑，里面摆满了长桌和长凳，有一座熊熊燃烧的壁炉和一个货物充足的酒吧。几个村民坐在那里喝着清酒，享用着丰盛的海鲜大餐。酒馆的后面是一个装饰精美的竹雕舞台。一个精美制作的三味线（shamisen）静静地躺在舞台的角落里。"
+									]
+								},
+								"在傍晚和晚上，当地人们喜欢喝着浓烈的米酒，聆听音乐，挤满了酒馆。Pisca每天晚上都会弹奏三味线，用她的表演迷住当地人。当她弹奏时，原本喧闹的客栈会安静下来，专心聆听她迷人的民谣。尽管她的三味线摆在那里，但必须明确指出除了她之外，没有人可以触碰它。",
+								"客栈有四名员工，{@creature Pisca Ahlorsath|SOD|Pisca Ahlorsath (NE female triton)}，{@creature Breena \"Scorch\" Sizzlepock|SOD|Breena \"Scorch\" Sizzlepock (CE female rock- gnome)}，{@creature commoner|MM|Murasa Sepret (LG female Shou commoner)}和{@creature Larissa Temerity|SOD|Larissa Temerity (NE female tiefling)}。Pisca是客栈的老板，Scorch是厨师，而Murasa和Temerity是服务员。",
+								"{@b The Pantry's Secret.} 食品储藏室不仅存放着腌制食品、大米和各种酒精饮料，还有一些装满了从被俘冒险者那里偷来的财宝的桶和箱子。这些财宝价值250gp，包括宝石、硬币或其他类型的财宝。此外，Breena 还存放了她从 Zhentarim（黑网络）那里偷来的赃物，价值另外300gp 的各种物品。",
+								{
+									"type": "entries",
+									"name": "PISCA AHLORSATH",
+									"id": "PISCA AHLORSATH",
+									"entries": [
+										"皮斯卡(Pisca)有点像一个女性致命者。她非常有魅力和智慧，但也痴迷于权力。她迷惑了村庄，说服长者们允许她俘虏游客，并让他们挖掘一个包含她所渴望的古代神庙的神器。她以\"翡翠鳞船长的宝藏\"为幌子进行所有这些。她编造了一个有关海盗和一张古老地图的故事来诱使冒险者。当他们到达时，她会在他们的食物中下药，偷走他们的财物并囚禁他们。她皮肤呈明亮的蓝色，铜色头发。她穿着长长的流苏服装，袖子几乎拖在地上，她在酒馆里飘然而过。在她的长袍下，她穿着一件美丽的鳞甲衬衫，映着火光。她腰间挂着一个装饰华丽的短刀鞘。",
+										"她大部分时间都在照顾顾客和经营客栈，偶尔退到楼上的房间，那里堆满了来自她信徒的各种礼物。它们从简单的小玩意到豪华设计的物品和珠宝不等。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "BREENA \"SCORCH\" SIZZLEPOCK",
+									"id": "BREENA \"SCORCH\" SIZZLEPOCK",
+									"entries": [
+										"脾气暴躁、神经质、多疑，Scorch与她的老板截然相反。她是酒馆的厨师，但并不喜欢烹饪或酒馆的欢乐气氛。她的日常任务包括准备饭菜和购买食材。",
+										"她在脱离了(黑牙)之后逃到了这个岛屿，她从他们那里偷走了一大笔财宝。尽管成功逃脱，但她仍然对黑牙网络的特工跟踪和暗杀她感到极度恐惧。因此，她穿着乏味的、普通的棕色和黑色衣服，经常用披风遮挡自己的身份。",
+										"尽管她把大部分财富存放在客栈的食品储藏室里，但她还保留了两颗黄水晶宝石，每颗价值75gp，在她身边以防万一需要匆忙离开。",
+										"Scorch在冒险者身上抢夺的黄金中分走一大部分，因为她是给他们食物下药的人{@adventure (see Curtain Call on page 9)|SOD|1|CURTAIN CALL}。",
+										{
+											"type": "inset",
+											"name": "THE GNOME'S PARANOIA",
+											"entries": [
+												"",
+												"如果你愿意的话，你可以让角色在一个晚上抓到Scorch翻找他们的物品。她对Zhentarim非常假装，怀疑她遇到的每个人。如果他们逮捕了她，她会说有人偷了她的秘密调味料，她只是想拿回来而已。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "MURASA SEPRET",
+									"id": "MURASA SEPRET",
+									"entries": [
+										"年轻而天真，身材娇小的穆拉萨一辈子都在客栈工作。她的父母以前拥有这家客栈，但皮斯卡出现后他们乐意以高价出售，而穆拉萨出于怀旧留了下来。穆拉萨一直为皮斯卡绑架冒险家而感到内疚，最近，她与一位名叫{@creature scout|MM|Rolen Moonbrook (male half-elf scout)}的探险家相爱了。当两人相遇时，他们彼此坠入爱河，尽管穆拉萨试图警告罗伦关于皮斯卡，但她无法让自己要求他离开，并且她将自己的恋情隐藏了起来。因此，穆拉萨正在密谋反抗皮斯卡{@adventure (see Thugs and Waitresses on page 9)|SOD|1|THUGS AND WAITRESSES}。白天，穆拉萨大部分时间都在清理前一晚的杂物，受到泰米瑞蒂的监督。一旦傍晚来临，客栈开始热闹起来，她就在吧台为顾客服务，并将食物送到桌子上。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "LARISSA TEMERITY",
+									"id": "LARISSA TEMERITY",
+									"entries": [
+										"英俊但危险，无畏（Temerity）是皮斯卡（Pisca）的得力助手。她崇拜这位三叉戟（triton）女性，不仅因为她的美貌和魅力，还因为她邪恶的计划唤起了她的地狱血统。她充当皮斯卡的保镖，负责繁重的工作，并将叛逆的冒险者打入规矩。无畏已告知皮斯卡，穆拉萨（Murasa）正在密谋反对她，她们一起安排一群暴徒前来解决她。",
+										"Temerity在客栈中扮演着相当监督的角色。她不仅确保Scorch和Murasa完成他们的工作，而且在繁忙的晚上还负责等候桌子和在吧台后面服务。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "EVENTS AT THE SHORE OF DREAMS",
+									"id": "EVENTS AT THE SHORE OF DREAMS",
+									"entries": [
+										"当角色们在梦境之岸时，可能会发生几个事件，无论是你还是角色们发起。",
+										{
+											"type": "entries",
+											"name": "RETAINING SERVICES",
+											"entries": [
+												"在某个时候，角色们可能会想要了解更多关于海盗宝藏以及宝藏的确切位置的信息。他们甚至可能需要雇佣一艘船进行旅程。所有被问及这件事的村民都会指向皮斯卡(Pisca)，声称她拥有宝藏的地图，并可以租出一艘船供他们旅行。",
+												"如果角色们来到梦境之滨出于这个原因，让他们在与 Pisca 会面时遇到一些困难，因为她一段时间内一直在疼爱其他顾客。当角色们最终有机会与她交谈时，她可以告诉他们以下内容之一：",
+												{
+													"type": "list",
+													"items": [
+														"她愿意免费为他们准备一艘船，并帮助他们规划前往宝藏位置的最佳航线，前提是她能获得任何他们发现的宝藏的25%份额。她需要大约三天的时间来准备一艘船并等待有利的潮汐。角色可以在码头上帮忙装载口粮、绳索、水等物资。",
+														"她在与一些人鱼交易时找到了地图，她可以为冒险者们复制一份（尽管这份地图当然是假的）。他们从一艘沉船中带来了宝藏，其中包括这张地图。复制地图需要她花一天左右的时间，因为她还需要帮忙经营客栈。如果他们想要一份复制品，她希望能从他们找到的任何宝藏中分得10%。",
+														"当角色们等待潮水、一艘船或地图时，Pisca让他们免费住在梦境之岸，只要她能分一部分。",
+														"如果有人问她为什么不亲自去寻找宝藏，她会声称自己对冒险毫无兴趣，完全满足于在梦境之岸(`Shore of Dreams`)这里的生活。她热爱表演，而她的顾客们也很喜欢她。",
+														"如果被问及失踪的冒险者，Pisca的脸上露出一丝悲伤。她说她记得那群人。他们是勇敢的年轻探险家，渴望成名，但他们匆忙准备，在潮水好之前就离开了。他们从未回到这个岛上，Pisca渴望听到他们的命运。成功的DC 16智力（洞察）检定让角色有点明白她有点言过其实，但并不在乎。检定结果20或更高则揭示她在故事的某个部分说谎。"
+													]
+												},
+												"一旦谈判结束，角色们可以参与各种日常活动，从闲聊、赌博，到帮助捕鱼和耕种，如果他们选择不在码头上提供帮助的话。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master//_img/SOD/Yokotoro Meal.jpg"
+													},
+													"title": "Yokotoro Meal"
+												},
+												{
+													"type": "inset",
+													"name": "ON WITH THE SHOW!",
+													"entries": [
+														"",
+														"在这次遭遇之后，{@adventure Thugs and waitresses (see page 9)|SOD|1|THUGS AND WAITRESSES} 和 {@adventure Curtain Call (see page 9)|SOD|1|CURTAIN CALL} 的遭遇应该发生在角色离开前的准备工作之前。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "THUGS AND WAITRESSES",
+											"entries": [
+												"Temerity(大胆), Pisca(皮斯卡)'s得力助手，一直在监视Murasa(穆拉萨)，并揭露了她营救恋人Rolen(罗伦)的计划。Murasa的父母曾经拥有梦境之岸，都是擅长草药的专家。在他们的指导下，她制作了一种可以使人从昏迷中苏醒的药剂。她打算在下一批被下药的冒险者身上使用这种药剂，希望他们能帮助她推翻Pisca，并拯救Rolen免于不可避免的厄运。",
+												"不幸的是，Murasa并不知道Temerity已经发现了她的计划，并继续密谋反对Pisca。与此同时，Temerity已经组织了一群暴徒前往客栈，发动一场斗殴，并带走了Murasa。她对他们接下来会怎么做并不关心，只要Murasa不回到那个岛上。",
+												"当角色们准备上床睡觉时，一群暴徒（三名狂战士和一名土匪首领）闯入客栈并发起了一场战斗。",
+												"你可以阅读或解释以下内容：",
+												{
+													"type": "insetReadaloud",
+													"entries": [
+														"当你准备上床睡觉时，你听到楼下传来一声巨大的砰然声。几个人尖叫着，你听到他们急忙从酒吧里跑出去的脚步声。突然，玻璃破裂的声音划破空气，随后是木头被砸碎的雷鸣声。"
+													]
+												},
+												"如果他们下去调查，他们会看到Pisca和Temerity躲在楼梯后面准备武器，狂战士们守卫着吧台，土匪船长在吧台后面搜寻Murasa。感知技能（感知）达到14或更高的角色会注意到Scorch藏在一堆桶后面。她认为这些是来绑架她的Zhentarim特工。",
+												"雇佣绑架者团队将乐意与PCs展开战斗。如果队伍似乎占据上风，Scorch将加入战斗，对敌人大声辱骂。她试图杀死任何她能杀死的绑架者。如果角色不希望发生这种情况，他们必须采取严肃措施制止她，比如与她搏斗或施放诸如`命令`这样的法术。",
+												"塔楼里的{@creature veteran|MM|four guards (NG male & female Shou veterans)}将会来得太迟。他们参与了绑架穆拉萨的计划，如果被质疑为什么反应如此迟缓，他们会声称他们在外面与更多的绑匪搏斗。",
+												"如果队伍设法让其中一名绑匪活下来，他们可能会尝试审讯他们。成功通过 DC 15 魅力（恐吓）检定就足以让他们透露一些信息。他们声称他们被雇佣来除掉（the small woman of the staff）.",
+												"如果被问及黑暗之眼，他们会声称自己是成员，但进行一次DC 12的感知（智力）检定会揭示他们在撒谎。如果一个角色通过了魅力检定并且超过了目标值5点，而且Temerity不在房间里，绑架者会告诉他们Temerity雇佣他们除掉Murasa，但没有说明原因。",
+												"Temerity(恶意)将不惜一切否认这一点，威胁要将派对赶出客栈，如果他们继续追问此事。",
+												"如果Murasa在这次遭遇中幸存下来，她会偷偷地给其中一个角色一个小瓶液体，告诉他们在每次在梦境之岸用餐前滴一滴在他们的饮料里。她说解释原因太冒险了，但她保证这会帮助他们。",
+												{
+													"type": "inset",
+													"name": "MURASA'S TINCTURE",
+													"entries": [
+														"",
+														"当你喝下这瓶药剂时，你在面对毒素的豁免投掷中获得优势，并且除非生命值降至0，否则不会陷入昏迷状态，持续一小时。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "CURTAIN CALL",
+											"entries": [
+												"在梦之岸角色们逗留的最后一晚，皮斯卡(Pisca)进行了她最重要的表演。",
+												"你可以阅读或解释以下内容：",
+												{
+													"type": "insetReadaloud",
+													"entries": [
+														"当你坐下开始晚餐时，皮斯卡从舞台上对你大喊道：",
+														"\"这份礼物是给我们最尊贵的客人。感谢您光临我们这座小岛，祝您旅途一路顺风！\"",
+														"Triton(涡牙人)开始在她的三味线上演奏一首小曲，这与你以前听过的任何曲调都不同。音符清晰干净，每一个音都在你的脑海中回响。当她开始唱歌时，你发现自己对Pisca(皮斯卡)产生了强烈的吸引力。"
+													]
+												},
+												"每个能听到音乐的角色必须成功通过一次DC 14的感知豁免检定，否则会分心。在分心状态下，角色在音乐持续时感知检定会受到劣势，并且被动感知检定分数减5。在这首长达五分钟的歌曲中，Scorch正在给派对的食物中下毒。任何被动感知检定分数达到15或更高的角色会注意到Scorch在他们的盘子上撒了一些粉末。",
+												{
+													"type": "inset",
+													"name": "STUPOR DUST (INGESTED)",
+													"entries": [
+														"受到这种毒药影响的生物必须通过一次 DC 15 的体质豁免检定，否则会中毒一小时。中毒的生物会陷入昏迷状态。"
+													]
+												},
+												"{@b Aftershow.} 如果一切顺利，冒险者们将会失去意识。接着，Scorch 和 Pisca 会剥夺他们的财物，而 Temerity 和卫兵们会把他们拖到监狱，他们会在一个小时后在那里醒来。{@adventure (Continue to the Captured! on page 11).|SOD|2}。",
+												"如果队伍没有失去意识，{@creature veteran|MM|four guards (NG male & female Shou veterans)}从警卫塔上几分钟后赶到，被Temerity惊动，试图把他们从酒馆里拖出去并用武力使他们失去意识{@adventure (Continue to the Captured! on page 11).|SOD|2}。",
+												"如果角色们设法击败了战士，卫兵们会泄露整个计划。由于Pisca让他们超负荷工作，他们对她的忠诚度降低。他们告诉队伍，Pisca编造了海盗宝藏的故事，并奴役任何前来调查的冒险家或探险家，其中有两人仍在现场。这些可怜的人随后被拖到半埋的神庙继续挖掘工作。",
+												"在梦之岸和(Yokotoro)镇上，受到惊吓的(Scorch)试图逃离。如果被阻止，她会试图通过提供有关(Pisca)的最终目标的信息来谈判自己的自由，但如果角色们威胁将她交给(Zhentarim)，她很容易被吓倒。她宁愿逃跑也不愿战斗，尤其是在人数上处于劣势时。",
+												"在表演结束后，Pisca已经在前往{@adventure Temple of the Storm (see page 12)|SOD|3|TEMPLE OF THE STORM}的路上了。由于Temerity与队伍进行了一场简短但平凡的对话，使得她能够顺利离开梦境之岸。一旦队伍参与了这些遭遇，他们应该要么被捕获，要么对村庄中正在发生的事情有一个很好的了解。",
+												"如果他们需要进一步指导，Murasa现在可以自由发言，不再受到Temerity或Pisca的监视，并可以与队伍互动并送他们前行。",
+												{
+													"type": "inset",
+													"name": "HIDING IN PLAIN SIGHT",
+													"entries": [
+														"为了让《(Curtain Call)》活动尽可能有效，请在进行冒险前进行一次骰点，并将结果用于所需的感知豁免骰点。这样可以让玩家角色对他们眼前发生的事情毫无戒备。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master//_img/SOD/Larissa Temerity.png"
+													},
+													"title": "Larissa Temerity"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "CAPTURED!",
+					"id": "CAPTURED!",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master//_img/SOD/Rolen Moonbrook.jpg"
+							},
+							"title": "Rolen Moonbrook"
+						},
+						{
+							"type": "inset",
+							"name": "\"You could fry to flee and be eaten or dig forward. It's up to you how long you'll live.\"",
+							"entries": [
+								"",
+								"-- 皮斯卡·阿洛萨斯(Pisca Ahlorsath)"
+							]
+						},
+						"如果Pisca或她的手下毒害或俘虏了队伍，他们会没收PC们的装备（除了他们的衣服），然后队伍在一个小时后在洞穴里醒来。PC们的装备现在被放在{@adventure Blacksmith's (see page 5)|SOD|1|BLACKSMITH}的后房间里。",
+						"你可以阅读或解释以下内容：",
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"慢慢地，你带着一阵颤抖醒来。你感到昏昏沉沉，全身酸痛，就像有人把你拖过地面一样。当你开始清醒过来时，你意识到自己被困住了。厚厚的竹木原木嵌入了你所在的房间的天花板和地板。从洞穴系统更深处传来滴水的声音回荡在你耳边。",
+								"\"小心点，\"背后传来一个声音，\"不要做得太快，你刚刚昏倒了。\""
+							]
+						},
+						"在{@adventure area T1 (see page 12)|SOD|3|T1: PRISONER PEN}里，与角色一起的是{@creature scout|MM|Rolen Moonbrook (CG male half-elf scout)}和{@creature thug|MM|Chung (CG female half-ore thug)}。这两位都属于失落探险者组。角色可以向Rolen和Chung询问他们所在地和周围情况。他们知道以下信息。",
+						{
+							"type": "list",
+							"items": [
+								"他们来到这个岛上寻找翡翠鳞船长的宝藏，但皮斯卡的英雄们却诱骗了他们，最终他们被灌了药并被扔进了这些洞穴中。",
+								"每个晚上，皮斯卡(Pisca)、大胆(Temerity)或一些村庄的卫兵下来带走囚犯。卫兵们给他们镐和铲子，强迫他们挖掘下方的废墟。",
+								"他们还有另外两位同伴，艾瑞奇(Errich)和威尔比·海巴瑞尔(Wellby Highbarrel)，但在挖掘洞穴后被困在瓦砾下溺水身亡。",
+								"这些废墟看起来像是一座古老的神庙，他们听到(Pisca)说，只有与(Temerity)在一起时，才会谈论里面的一件强大的神器。他们已经清理了一个巨大的天然洞穴，接近突破最后的房间，但他们说他们听到了最后的瓦砾墙外传来的声音。"
+							]
+						},
+						"虽然没有角色被束缚，但他们被困住了。成功通过 DC 17 力量检定就足以冲破牢房的竹栏。这样做会释放所有人，但会引起洞穴外的{@creature tempest beast|SOD}的警觉。或者，通过 DC 20 敏捷检定可以解开复杂的竹门闩，让门自由摆动开启。",
+						"在洞穴中度过的第一个晚上，Pisca带着{@creature veteran|MM|one guard (NG male or female Shou veteran)}下来，让囚犯们开始工作。她给每个角色一把铲子或一把矿工镐，并护送他们到{@adventure area T2 (see page 13)|SOD|3|T2: CAVERN ENTRANCE}。囚犯们必须在那里清理碎石，但他们会有机会战斗或逃跑。当他们挖了一会儿的碎石后，跳到{@adventure Breakthrough section (see page 13)|SOD|3|BREAKTHROUGH}。",
+						"由于Rolen和Chung营养不良且精疲力尽，他们无法参加战斗，也不会跟随英雄们深入寺庙。他们不知道该信任谁，也无处可去，只能等待玩家角色返回。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "TEMPLE OF THE STORM",
+					"id": "TEMPLE OF THE STORM",
+					"entries": [
+						{
+							"type": "inset",
+							"name": "\"The crown is here, Larissa. All we need to do is unearth it.\"",
+							"entries": [
+								"",
+								"-- 皮斯卡·阿洛萨斯(Pisca Ahlorsath)"
+							]
+						},
+						"如果角色强迫皮斯卡或其他NPC之一透露信息，他们将被指向废墟神庙，就在城镇外约15分钟的地方。",
+						"一旦他们到达，您可以阅读或解释以下内容：",
+						{
+							"type": "insetReadaloud",
+							"entries": [
+								"你沿着岛边的徒步旅行被一处陡峭的悬崖挡住了，悬崖上长满了缠绕的藤蔓。在悬崖底部有一个敞开的洞口，洞口旁是一座受损的雕刻拱门，标志着通往一个寺庙或神殿的入口。"
+							]
+						},
+						"要到达神庙入口，角色们必须找到一种方式下到他们目前所在的悬崖下方。一次成功的(%num%)",
+						"DC 12 力量（运动）检定足以爬下覆盖悬崖表面的藤蔓。另外，诸如羽落术之类的法术可以让角色安全下降。如果角色尝试失败，他们会掉落50英尺并落入水中，不会受到伤害，但会惊动并被{@creature tempest beast|SOD}下方的敌人偷袭。",
+						"在下降时，感知被动智慧检定得分为14或更高的角色会注意到一个庞大的身影半浸在浑浊的水中。这是一只风暴兽((tempest beast))。一旦角色们下降，或者如果他们攻击风暴兽，它将会反击角色们，从最靠近神庙入口的人开始。",
+						"尽管寺庙的外部已经破败不堪，但美人鱼和鲨鱼的被破坏的雕刻仍然清晰可见在入口周围。水拍打着寺庙的入口，一大群十二只淡水贻贝（每只都含有价值5gp的珍珠）紧贴在石头上。当检查拱门时，成功的DC 14智力（宗教）或（历史）检定会揭示它与\"碎浪教派\"有联系。",
+						{
+							"type": "section",
+							"name": "GENERAL FEATURES",
+							"id": "GENERAL FEATURES",
+							"entries": [
+								"以下功能在所有地区都很常见。",
+								"寺庙：",
+								"{@b Desecrated Ground.} 寺庙的所有区域都被视为亵渎之地（见《地牢主教指南》）。",
+								"{@b Light.} 这座寺庙没有灯光，除非另有说明。",
+								"{@b Rubble.} 许多寺庙区域都有瓦砾，角色可以通过成功的DC 16 力量检定来移动它。每次移动瓦砾时，掷一次10面骰。如果掷出1，瓦砾周围5英尺内的每个生物必须进行一次DC 10 敏捷豁免检定，未通过则受到11点伤害({@damage 3d6})，通过则减半。角色可以选择是否引发这个效果。",
+								"{@b Water.} 除非另有说明，否则该庙宇部分被一英尺淡水淹没。所有依赖听觉的敏捷（潜行）和感知（感知）检定都需以劣势进行。"
+							]
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master//_img/SOD/Temple of the Storm.jpg"
+							},
+							"title": "Temple of the Storm"
+						},
+						{
+							"type": "section",
+							"name": "T1: PRISONER PEN",
+							"id": "T1",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"一排厚实的竹条围成了一个小壁龛。壁龛里放着几张羊皮毯子、一些干草和一个水桶。当你的眼睛逐渐适应黑暗时，你注意到囚牢里有两个人影。它们慢慢地走近。"
+									]
+								},
+								"请查看{@adventure Captured! section (see page 11)|SOD|2}中的信息，了解该区域的详细情况。该区域并没有被水淹没。",
+								"如果该队伍没有被捕获，你可以运行{@adventure An Impatient Triton event (see page 14)|SOD|3|AN IMPATIENT TRITON}，{@creature scout|MM|Rolen Moonbrook (CG male half-elf scout)}和{@creature thug|MM|Chung (CG female half-ore thug)}，可以分享以下额外信息：",
+								{
+									"type": "list",
+									"items": [
+										"他们可以确认，皮斯卡匆匆走过，甚至没有看一眼他们。",
+										"两人听到Pisca在挖掘现场工作了一会儿，然后听到了打斗声。之后，他们听到Pisca在唱歌。他们认为Pisca在清理碎石时遇到了他们在另一边听到的事情，但不知道为什么Pisca在唱歌。",
+										"Rolen进一步推测Pisca靠近了这件神器，并希望她遇到更多障碍。他建议队伍赶紧。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "T2: CAVERN ENTRANCE",
+							"id": "T2",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"当你继续深入寺庙建筑群时，滴水声变得更加明显。大约走了三十英尺后，你发现自己已经到腰部深的水中。"
+									]
+								},
+								"这个洞穴散落着碎石，但其他地方都是空的。",
+								"大部分的碎石都堆积在T3区域的入口处，但也有一些碎片散落在房间各处。",
+								"在洞穴的东部有一个有栅栏的入口，通往{@adventure T6 (see page 17)|SOD|3|T6: BARRED ROOM}，如果移除了栅栏。在T2区域可能发生两种事件。如果队伍被捕获，使用{@adventure Breakthrough event|SOD|3|BREAKTHROUGH}。如果全副武装的PC们在追赶Pisca，{@adventure An Impatient Triton event (see page 14)|SOD|3|AN IMPATIENT TRITON}会更具挑战性。",
+								{
+									"type": "entries",
+									"name": "BREAKTHROUGH",
+									"id": "BREAKTHROUGH",
+									"entries": [
+										"如果角色们开始清理T2区域和{@adventure T3 (see page 14)|SOD|3|T3: HALL OF OLHYDRA}之间的瓦砾，很快他们就会取得突破。感知被动技能值在15或以上的角色可以听到在瓦砾墙的另一侧偶尔传来的刮擦或叮当声。经过三次成功的力量检定{@adventure (see the General Features section on page 13)|SOD|3|GENERAL FEATURES}，最后一堵瓦砾墙倒塌了。在另一侧，四个穿着蝠鲼斗篷残片的骷髅（斗篷已破烂，不再具有魔法），背后绣有碎浪教派标志，手持{@item scimitar|PHB|scimitars}（+4命中，射程5英尺，单个目标；命中：5 ({@damage 1d6- 2}) 砍击伤害）和盾牌（AC 15）朝着角色们迈进。",
+										"你可以阅读或解释以下内容：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"最后，在清理瓦砾的辛苦劳作后，最后一块破碎的石头掉落了。突然间，一只骷髅手抓住了你，一把弯刀擦过你的头部，一名长已死去的战士的骷髅试图斩断你的头颅！"
+											]
+										},
+										"如果Pisca在事件发生时与角色在一起，她会留在后面，看着角色们在没有武器和盔甲的情况下挣扎战斗，笑个不停。然而最终，她会想要探索这座庙宇新发现的部分。",
+										"好消息是，如果角色们勇敢地冲向{@adventure area T3 (see page 14)|SOD|3|T3: HALL OF OLHYDRA}，他们有可能会被奖励一些物品，帮助他们保护自己{@adventure (see A Show of Force on page 14)|SOD|3|T3: HALL OF OLHYDRA}。",
+										"另外，这是他们逃跑的机会，因为Pisca太专注于寻找{@item Crown of Black Pearls|SOD}，而没有注意到角色。如果前者属实，继续穿过神庙；如果后者发生，查看{@adventure Pisca, Herald of Olhydra section (on page 17)|SOD|4|PISCA HERALD OF OLHYDRA}。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "AN IMPATIENT TRITON",
+									"id": "AN IMPATIENT TRITON",
+									"entries": [
+										"当PC们追赶Pisca时，她已经匆忙穿过{@adventure area T2 (see page 13)|SOD|3|T2: CAVERN ENTRANCE}和T3之间的瓦砾，目前正在检查神庙和挖掘{@item Crown of Black Pearls|SOD}所需的潜在工作。",
+										"她本来会让Rolen和Chung来做这项工作，但她没有护卫。即使寺庙里的野兽变得平静，它也是不可靠和善变的。",
+										"她按照{@adventure Breakthrough section (see page 13)|SOD|3|BREAKTHROUGH}中描述的方式处理了那四具骷髅，但没有拿走任何斗篷。",
+										"为了让她能够安静地调查寺庙周围的情况，她解开了{@adventure area T6 (see page 17)|SOD|3|T6: BARRED ROOM}上的栅栏，并在这里用歌声诱使{@creature tempest beast|SOD}，尽管它仍然靠近她的{@creature giant lizard|MM|two offspring (use the giant lizard statistic)}。这两只幼崽待在T6区域内，以Highbarrel兄弟的尸体为食。",
+										"当派对遭遇到风暴兽时，你可以阅读或解释以下内容：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"当你继续向房间深处探索时，有些东西朝着你飞速而来，嘴里充满了无数锋利的牙齿。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "T3: HALL OF OLHYDRA",
+							"id": "T3",
+							"entries": [
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"在踉跄穿过瓦砾和停滞的水后，你发现自己置身于一个巨大的人造洞穴中。墙壁上挂满了描绘人类骑着巨大鲨鱼穿越破碎海啸的壁画。挂在墙上的是各种武器和盾牌，这些必定是属于这个地方最初居民的。房间内散落着倒塌和破碎的长凳，比房间其他部分更低，上面布满了各种各样的帆船。在祭坛后面站岗，挡住了房间后方的是一幅描绘着一股巨浪仿佛要冲进这个房间的后殿画。"
+									]
+								},
+								"这个房间包含许多元素。",
+								"{@b Ominous Walls.} 挂在墙上的是各种不同的武器。在每把武器前面都有由风暴兽鳞片制成的盾牌。",
+								"在检查这幅壁画时，通过成功的 DC 14 智力（宗教）或（历史）检定，可以发现它与\"碎浪教派\"有关。在壁画上进行 DC 16 智力（调查）检定，可以发现一个贝壳后面有一个小按钮{@adventure (see the Door to the Vault section on page 15 for details)|SOD|3|T3: HALL OF OLHYDRA}。",
+								{
+									"type": "inset",
+									"name": "A SHOW OF FORCE",
+									"entries": [
+										"如果角色被剥夺了装备，这里发现的武器应该能帮助他们阻止皮斯卡，而不需要返回至约科托洛。",
+										"",
+										"如果你想进行{@adventure Pisca, Herald of Olhydra event (see page 17)|SOD|4|PISCA HERALD OF OLHYDRA}，请明确告诉队伍，他们要想一劳永逸地结束这一切，最好的办法就是在(Yokotoro)寻找他们的装备。"
+									]
+								},
+								"{@b Altar of Olhydra.} 在祭坛屏风后面是一个大木箱，上面长满了海洋生物，开始腐烂。打开这个箱子需要进行一次 DC 12 的力量检定或者一次 DC 15 的敏捷检定，使用盗贼工具，尽管这个箱子被设置了一个{@trap poison needle|DMG|poison needle (see Dungeon Master's Guide)}。箱子里面包含两个{@item potion of healing|DMG|potions of healing}，三个{@item antitoxin (vial)|PHB|vials of antitoxins}，一个{@item potion of water breathing|DMG|potion of water breathing}，一个{@spell tidal wave|XGE} {@item spell scroll|DMG}，一个{@spell wall of water|XGE} {@item spell scroll|DMG}，一个{@spell shape water|XGE|optional text} {@item spell scroll|DMG} 和一个{@item cloak of the manta ray|DMG}，还有一些其他（非魔法的）卷轴，上面记载着关于碎浪教派的宗教文本。",
+								"虽然斗篷上绣有\"碎浪教派\"(Cult of the Crushing Wave)的徽记，但大部分已经被刮掉了。",
+								"对于对碾波教派有深入了解的角色，可以将从祭坛背后涌出的波浪识别为奥赫德拉(Olhydra)。在研究发现在树干中的卷轴半小时后，通过成功的DC 12智力（调查）检定也可以获得这一信息。进行围绕祭坛的DC 16感知（感知）检定可以发现偶尔从其底部冒出的气泡和水中奇怪的流动。在祭坛上进行成功的DC 16智力（调查）检定可以让角色找到一个小珍珠，占据了从祭坛背后涌出的波浪的上部和旁边的一个空插槽。",
+								"如果第二颗珍珠被放置在另一个空插槽中，祭坛屏风将开始移动，揭示出一个通往{@adventure T5 (see page 16)|SOD|3|T5: STUDY}的水下隧道。",
+								"进行一次DC 20的奥秘（智力）检定会揭示出某物被绑定在圣坛后壁(reredos)上。",
+								{
+									"type": "inset",
+									"name": "Princess OF EVIL WATER",
+									"entries": [
+										"",
+										"奥赫德拉（Olhydra）是元素邪恶之王中的四位王子之一，元素位面的原始力量被纯邪恶所污染。她是邪恶水之公主，喜欢创造危险的元素水体现，如大漩涡。她无法淹没的东西，她会耐心地随时间侵蚀，就像潮汐一样，退去，只为更强大地回归。"
+									]
+								},
+								"{@b Shade of Olhydra.} 教堂的长椅和祭坛位于一个以前的盆地中，这个盆地在过去经常被水淹没。如果PC们正在打开通往{@adventure T5 (see page 16)|SOD|3|T5: STUDY}的路径，而插入珍珠的人没有佩戴碎浪教派的徽章，那么一个水怪会从奥尔赫德拉的雕像中释放出来，并被束缚在盆地中，将攻击重点放在释放它的人身上。",
+								"{@b Door to the Vault.} 房间的南侧有一扇门，尽管祭坛挡住了直接视线，通往T4区域，门是用石头制成的，但似乎没有把手。相反，门中央有一个小的蓝色晶体圆盘，连接着两侧。",
+								"在门上方刻着一则被贝壳覆盖、被时间侵蚀的信息。上面写着：\"凡是反抗黑潮的人都将淹没。\"",
+								"按下贝壳后面的按钮（如{@adventure Ominous Walls section (see page 14)|SOD|3|T3: HALL OF OLHYDRA}中描述的那样）会导致晶莹的圆盘发出明亮的蓝光，并以一种明胶状的方式液化，但不会溢出到地板上。",
+								"只有在液体中绘制碎浪教派的标志才能打开门。如果角色绘制了错误的形状，他们会开始听到一阵裂响声，很快就会变成一片喧嚣声。石门开始闪烁着闪电，然后释放到水中。距离门口50英尺内至少部分浸入水中的每个生物必须成功通过一次DC 18的敏捷豁免才能跳出水面，否则会受到17 ({@damage 3d10}) 闪电伤害。陷阱可以通过成功的DC 20智力（奥术）检定或施放驱散魔法法术来解除。如果他们绘制了正确的符号，门就会打开。",
+								"如果皮斯卡（Pisca）进入房间，她会在试图破译通往T4区域的门机制之前，简短地环顾四周。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master//_img/SOD/Sign of the Cult of the Crushing Wave.jpg"
+									},
+									"title": "Sign of the Cult of the Crushing Wave"
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "T4: VAULT",
+							"id": "T4",
+							"entries": [
+								"只有在{@adventure area T3|SOD|3|T3: HALL OF OLHYDRA}上激活光盘后，在门上绘制正确的标志才能进入这个房间。",
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"当门打开时，它显露出一个没有家具或装饰的房间。从房间中央升起的是一个巨大的贝壳，色彩鲜艳的粉蓝相间。贝壳的开口足够大，可以让一个人进入，上面雕刻着流动的图案。贝壳底部长满了几把发出淡蓝光芒的蓝色晶体，光芒在墙壁和天花板上闪烁。随着荡漾的水流和舞动的光芒，整个洞穴似乎被淹没在水中。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "THUNDERING SQUALL",
+									"id": "THUNDERING SQUALL",
+									"entries": [
+										"复杂陷阱 (5-10级，致命威胁)",
+										"碎浪教派(Cult of the Crushing Wave)用魔法将这个房间中的海螺贝壳困住了。里面装着他们最珍贵的文物之一，因此必须得到妥善保护，以防那些希望摧毁教派的人。",
+										"{@b Trigger.} 当任何没有佩戴碾波教团徽记的人靠近贝壳25英尺时，陷阱就会被触发。",
+										"{@b Initiative.} 陷阱对30和10号先攻生效。",
+										"{@b Active Elements.} 雷鸣风暴充满了房间，带来了类似暴风雨的效果。",
+										"{@b Thunderous Slam (Initiative 30).} 保险库的门砰地一声关上，发出一声巨大的轰鸣。任何站在门口的生物必须通过一次DC 18的敏捷豁免检定，否则会受到7 ({@damage 2d6}) 钝击伤害并被迫进入房间内。成功豁免的角色可以选择在门的哪一边停留，并且不会受到伤害。房间内的每个生物必须通过一次DC 18的体质豁免检定，否则会受到7 ({@damage 2d6}) 雷属性伤害，并在下一回合开始前失聪。",
+										"{@b Whirling Tempest (Initiative 30).} 房间的拱形天花板突然充满了愤怒的风暴。这个{@spell storm sphere|XGE}法术以4级施放，并以海螺为中心（法术豁免 DC 16，命中加值+12）。闪电将瞄准离海螺最近的目标。每次释放闪电时，海螺上的三个图案都会闪烁出明亮的蓝光。",
+										"从风暴中螺旋而出，两只{@creature storm mephit|SOD|storm mephits}袭击离海螺最近的角色。",
+										"{@b Dynamic Element-Mephit Spawning.}每次行动顺序10，会有两个额外的风暴小魔怪从风暴中出现，并攻击距离海螺最近的角色。如果有六个或更多的风暴小魔怪存在，这个元素将不再生效。",
+										"{@b Constant Element-Whirling Tempest.}查看风暴领域（storm sphere）法术。",
+										"{@b Countermeasures.} 一些陷阱的活动元素提供了潜在的对策。",
+										"{@b Open the Door.} 打开门将允许角色通过离开金库来逃避陷阱的影响。门可以通过三次成功的DC 20力量检定打开；每个协助的生物可以使DC减少五点（如《玩家手册》中所述）。每次检定都需要一个动作。此后，雷鸣猛击效果在24小时内不会再次发生。",
+										"{@b Dispel the Storm.} 旋风风暴可以通过成功进行三次在海螺上的图案上进行的 DC 16 智力（奥术）检定来解除。每次检定需要一个行动。每次成功的检定会减少风暴球的伤害量 {@damage 1d6}（包括重击和闪电）。另外，也可以通过成功施放三次驱散魔法法术（DC 14）瞄准海螺图案来禁用风暴。如果风暴被驱散，小恶魔的生成就会停止。",
+										"{@b Take the Crown.}海螺壳内是{@item Crown of Black Pearls|SOD}。如果一个角色能够进入海螺壳并拿到皇冠，每个陷阱元素都会停止运作，门会打开。角色在海螺壳内时不会被风暴球的闪电击中。",
+										"不幸的是，皇冠被放置在贝壳内的基座上的一只防弹玻璃箱中。箱子由两把挂锁锁住，而钥匙已经丢失。角色可以使用盗贼工具进行一次DC 17的敏捷检定来打开每个锁。另外，也可以进行一次DC 20的力量检定，使用武器或其他坚固的工具来砸开其中一把锁。此外，锁也可以通过敲击咒语或类似的魔法来打开，需要对每个锁施放一次该咒语。",
+										"每次检查都需要一个动作。在处理完箱子之后，任何角色都可以拿起皇冠，结束所有陷阱效果。",
+										"当进入海螺时，您可以阅读或解释以下内容：",
+										{
+											"type": "insetReadaloud",
+											"entries": [
+												"当你进入海螺壳时，外面暴风雨的声音略有减弱，但你却感到一股冰冷的不适，仿佛你的身体被扔进了一池冰冷的水中。在你面前的珊瑚和海草基座上，摆放着一个被雾气笼罩的玻璃盒。里面，你勉强可以看到一顶王冠的轮廓。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "T5: STUDY",
+							"id": "T5",
+							"entries": [
+								"只有在{@adventure area T3 (see page 14)|SOD|3|T3: HALL OF OLHYDRA}的祭坛背后的空槽中放置一颗珍珠才能进入这个房间。",
+								"你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你潜入水下的隧道，沿着滑腻的墙壁摸索，直到它开始向上转弯。向上游泳，你冲破水面，来到一个房间，房间里摆满了无数书卷和书籍，环绕着一张桌子。似乎有什么东西搁在桌子上，被从书架上倾泻到桌子上的卷轴掩埋着。在房间更深处，你看到更多塌方的迹象。"
+									]
+								},
+								"经过仔细调查，发现骷髅骨架被覆盖在经文下面，就像之前遇到的那些一样，它穿着一件被撕破的蝠鲼斗篷(%num%)（斗篷已破烂，没有剩余的魔法），背后绣着\"碎浪教派\"(Cult of the Crushing Wave)的标志。它的头骨似乎有裂痕。",
+								"研究卷轴和经文揭示出，虽然(`the Cult of the Crushing Wave`)从这个岛上运作，但它已经遭受了攻击。",
+								"在一个角落里，角色们可以找到一个腐烂的宝箱，部分被砸开，覆盖着海洋生物。里面装满了古老的硬币，因为在潮湿环境中度过数十年而变得晦暗和氧化，还有其他有价值的物品：",
+								{
+									"type": "list",
+									"items": [
+										"价值500gp的各种硬币，不能在商店使用，但可以卖给收藏家或铁匠熔化。",
+										"四个银高脚杯，上面刻有碎浪教派的标志，并镶嵌着价值750gp的蓝宝石。",
+										"一袋六颗每颗价值10gp的蓝铜矿石(%num%)",
+										"价值50gp的水晶酒瓶",
+										"六瓶价值每瓶10gp的优质葡萄酒"
+									]
+								},
+								"在房间的一角，角色们可以看到一条隧道被几块坍塌的巨石挡住了。要清理这些巨石以深入寺庙需要数月的时间。",
+								{
+									"type": "inset",
+									"name": "ELEMENTAL EVIL",
+									"entries": [
+										"",
+										"如果你想把这次冒险与《(Princes of the Apocalypse) 诸侯的启示》活动联系起来，你可以放置额外的经文，谈论在(Desert Valley)中的行动，尽管这些经文很古老且不太详细。",
+										"",
+										"深入黑暗(%(Dungeons & Dragons)%)",
+										"",
+										"如果你想扩建风暴神殿，唯一需要做的就是清除挡住通道的巨石。PC们在神殿深处会遇到什么完全取决于你。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "T6: BARRED ROOM",
+							"id": "T6",
+							"entries": [
+								"这个房间只能通过移开遮挡{@adventure area T2 (see page 13)|SOD|3|T2: CAVERN ENTRANCE}的木栏才能进入。",
+								"当玩家角色进入房间后，你可以阅读或解释以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你的出现显然扰乱了某种东西。你听到一声类似鳄鱼的喉音低吼，以及在黑暗中有东西移动时的水声。"
+									]
+								},
+								"这个房间被禁锢，但里面有一个{@creature tempest beast|SOD}和她的{@creature giant lizard|MM|two offspring (use the giant lizard statistic)}。",
+								"如果你击败了{@adventure An Impatient Triton event (see page 14)|SOD|3|AN IMPATIENT TRITON}，只剩下两个后代需要面对。它们在这里筑巢，并以不幸冒险者的尸体为食。如果角色在这个房间四处搜寻，他们会发现海巴雷尔兄弟的遗骸和风暴兽的芦苇巢。成功的DC. 16感知（智力）检定足以注意到一条潜伏的水道通向岛屿的海岸。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "PISCA HERALD OF OLHYDRA",
+					"id": "PISCA HERALD OF OLHYDRA",
+					"entries": [
+						"当 Pisca 到达 {@item Crown of Black Pearls|SOD} 时，她毫不犹豫地开始利用它。她将返回村庄并开始摧毁它，召唤强大的风暴和海啸摧毁船只，毁坏房屋。皇冠的力量让她疯狂了。",
+						"这些角色可能只是为了活着离开这个岛屿而感到高兴，或者他们可能希望对抗 Pisca。一旦她拥有 {@item Crown of Black Pearls|SOD}，这将是一次艰难的遭遇，但对你的PCs来说可能是一次有益的经历。如果看起来 Pisca 一旦被队伍追捕就处于劣势，你可以给她一些盟友，比如一群 {@creature merrow|MM}，甚至是一个 {@creature giant shark|MM}。如果 Temerity，或者 {@creature veteran|MM|four guards (NG male & female Shou veterans)} 的一部分还活着，他们可能会和她一起行动。",
+						"在适当的时间，皮斯卡将加入碎浪教派，并晋升他们的阶级。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "CONCLUDING THE ADVENTURE",
+					"id": "CONCLUDING THE ADVENTURE",
+					"entries": [
+						"根据冒险的进展和带领队伍来到这里的钩子，他们可能已经实现了以下目标：",
+						{
+							"type": "list",
+							"items": [
+								"揭露了关于海盗翡翠鳞船长宝藏的谣言是虚假的。",
+								"发现并解救了Pisca绑架并迫使工作的失踪探险家们。他们可能也已经找到了Highbarrel兄弟姐妹的遗骸，并将他们归还给家人进行埋葬。此外，你可能已经让Murasa和Rolen（见《A Harsh Reality》）团聚。",
+								"在了解到皮斯卡的真正意图后，我们阻止了她在找到{@item Crown of Black Pearls|SOD}之前的行动。",
+								"在 Pisca 的手中拯救了村庄免遭毁灭的命运，如果她发现了 {@item Crown of Black Pearls|SOD} 的话。",
+								"在当地雇佣的暴徒手中拯救了穆拉萨，免受绑架或更糟糕的命运，并让特米里蒂为她在阴谋中的角色付出了代价。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "A HARSH REALITY",
+							"id": "A HARSH REALITY",
+							"entries": [
+								"无论如何，横托洛镇的居民都将面临残酷的现实。如果皮斯卡成功取回{@item Crown of Black Pearls|SOD}，而玩家角色(PCs)没有阻止她，他们将失去用处并且被她杀害。",
+								"如果玩家角色能阻止皮斯卡((Pisca))，镇民们将需要面对他们对允许皮斯卡继续邪恶行径和个人不作为的后果。当他们请求宽恕时，村民们将承诺在帮助未来冒险者而不是剥削他们方面做出补偿。",
+								"在被告知PCs在挖掘现场发现的情况后，他们更愿意重新埋葬这座神庙，而不是探索它。",
+								"Rolen (罗伦) 和 Chung (钟) 愤然离开村庄，尽管如果PCs被 Murasa (穆拉莎) 的药剂从恍惚中拯救出来并告诉了 Rolen，他愿意和她留下来。",
+								"Murasa很可能会再次在梦境之岸(`Shore of Dreams`)担任舵手。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "APPENDIX A: MONSTERS AND NPCS",
+					"id": "APPENDIX A: MONSTERS AND NPCS",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SOD/Tempest Beast.jpg"
+							},
+							"title": "Tempest Beast"
+						},
+						"这个附录包含了运行冒险模块（the module）所需的额外属性块。",
+						{
+							"type": "list",
+							"items": [
+								"{@creature Tempest Beast|SOD}",
+								"{@creature Storm Mephit|SOD}",
+								"{@creature Breena \"Scorch\" Sizzlepock|SOD}",
+								"{@creature Larissa Temerity|SOD}",
+								"{@creature Pisca Ahlorsath|SOD}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "APPENDIX B: MAGIC ITEMS",
+					"id": "APPENDIX B: MAGIC ITEMS",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SOD/Crown of Black Pearls.jpg"
+							},
+							"title": "Crown of Black Pearls"
+						},
+						"这个附录包含了模组中呈现的新魔法物品：",
+						{
+							"type": "list",
+							"items": [
+								"{@item Crown Of Black Pearls|SOD}"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Crown of Black Pearls",
+			"source": "SOD",
+			"page": 20,
+			"rarity": "very rare",
+			"weight": 1,
+			"wondrous": true,
+			"reqAttune": true,
+			"charges": 10,
+			"attachedSpells": [
+				"maelstrom",
+				"tidal wave",
+				"wall of water",
+				"water walk"
+			],
+			"entries": [
+				"你拥有在水下呼吸的能力，并且在佩戴这顶皇冠时获得30英尺的固有游泳速度。",
+				"这顶王冠有10个充能。佩戴它时，你可以使用一个动作来消耗其中一个或多个充能，从中施放以下法术之一，使用你的法术豁免 DC：{@spell maelstrom|XGE} (5充能)，{@spell tidal wave|XGE} (4充能)，{@spell wall of water|XGE} (3充能) 或 {@spell water walk|PHB} (3充能)。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Breena \"Scorch\" Sizzlepock",
+			"source": "SOD",
+			"page": 19,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "gnome",
+						"prefix": "rock"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d6 + 32",
+				"average": 88
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 12,
+			"save": {
+				"str": "+4",
+				"dex": "+7"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+3",
+				"sleight of hand": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Gnomish",
+				"Thieves' cant"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"在她的每个回合，布莉娜可以使用一个奖励动作来执行冲刺（Dash）、脱离战斗（Disengage）或隐藏（Hide）动作。"
+					]
+				},
+				{
+					"name": "Gnome Cunning",
+					"entries": [
+						"Breena对所有魔法的智力、感知和魅力豁免检定获得优势。"
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"如果Breena受到一个效果的影响，使她可以进行一次敏捷豁免才能只受一半伤害，如果她成功通过豁免检定，Breena将不受伤害，如果失败则只受一半伤害。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当Breena使用武器攻击命中目标并具有优势攻击检定时，或者目标在她的一个未被使无能力的盟友5英尺范围内且Breena没有劣势攻击检定时，她造成额外14点伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Breena用她的匕首进行了三次攻击。"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 6}攻击，射程5英尺，目标一个。造成{@h}6 ({@damage 1d4 + 4})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} 近战攻击，射程80/320尺，目标一个。造成{@h}10 ({@damage 1d4 + 8}) 穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"Breena（布莉娜）减半受到的伤害，来自攻击命中她。她必须能看到攻击者。"
+					]
+				}
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"dart|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"G",
+				"TC"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"fluff": {
+				"entries": [
+					"脾气暴躁、神经质、多疑，Scorch与她的老板截然相反。她是酒馆的厨师，但并不喜欢烹饪或酒馆的欢乐气氛。她的日常任务包括准备饭菜和购买食材。",
+					"她在脱离了(黑牙)之后逃到了这个岛屿，她从他们那里偷走了一大笔财宝。尽管成功逃脱，但她仍然对黑牙网络的特工跟踪和暗杀她感到极度恐惧。因此，她穿着乏味的、普通的棕色和黑色衣服，经常用披风遮挡自己的身份。"
+				]
+			}
+		},
+		{
+			"name": "Larissa Temerity",
+			"source": "SOD",
+			"page": 19,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tiefling"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"str": "+4",
+				"dex": "+4"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"拉丽莎的天赋施法能力是魅力（法术豁免{@dc 12}）。她可以天生施放以下法术，无需任何材料：",
+						"每天1次：{@spell thaumaturgy}，{@spell darkness}"
+					]
+				},
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"当Larissa没有穿戴盔甲或使用盾牌时，她的AC包括她的感知调整值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"拉丽莎进行四次攻击，每次可以选择进行徒手攻击，双截棍攻击，或手里剑攻击。她还可以在其中一次攻击前后使用地狱步法((Infernal Step))。"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} 使用攻击命中，达到5英尺，一个目标。造成{@h}5 ({@damage 1d4 + 3}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Nunchaku",
+					"entries": [
+						"{@atk mw} {@hit 4}攻击，达到5英尺，一个目标。造成{@h}8 ({@damage 1d8 + 4}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Shuriken",
+					"entries": [
+						"{@atk rw} 近战攻击，射程 20/60 尺，目标一个。造成 {@h}8 ({@damage 1d4 + 6}) 穿刺伤害。"
+					]
+				},
+				{
+					"name": "Infernal Step",
+					"entries": [
+						"拉丽莎（Larissa）在魔法的作用下，连同她穿戴或携带的任何装备，可以传送到她能看到的未被占据的空间，最远距离为30英尺。她在出发的空间留下一道硫磺烟的痕迹。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Larissa在看见攻击者并持有近战武器的情况下，对一次即将命中她的近战攻击，可以将她的AC提高3点。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"fluff": {
+				"entries": [
+					"英俊但危险，无畏（Temerity）是皮斯卡（Pisca）的得力助手。她崇拜这位三叉戟（triton）女性，不仅因为她的美貌和魅力，还因为她邪恶的计划唤起了她的地狱血统。她充当皮斯卡的保镖，负责繁重的工作，并将叛逆的冒险者打入规矩。无畏已告知皮斯卡，穆拉萨（Murasa）正在密谋反对她，她们一起安排一群暴徒前来解决她。",
+					"Temerity在客栈中扮演着相当监督的角色。她不仅确保Scorch和Murasa完成他们的工作，而且在繁忙的晚上还负责等候桌子和在吧台后面服务。"
+				]
+			}
+		},
+		{
+			"name": "Pisca Ahlorsath",
+			"source": "SOD",
+			"page": 20,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"triton"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "1d8 + 2",
+				"average": 6
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 18,
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+5",
+				"performance": "+8",
+				"deception": "+8"
+			},
+			"passive": 15,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Primordial"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"皮斯卡的天赋施法能力是魅力（法术豁免{@dc 15}，法术攻击命中加值+7）。她可以天生施放以下法术，无需任何材料："
+					],
+					"daily": {
+						"1e": [
+							"{@spell fog cloud}",
+							"{@spell gust of wind}",
+							"{@spell wall of water|XGE}"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"皮斯卡是一名10级法术施法者。她的法术属性是魅力（法术豁免 {@dc 15}，法术攻击命中加值+7）。她准备了以下吟游诗人法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell friends}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell vicious mockery}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell healing word}",
+								"{@spell heroism}",
+								"{@spell shield}",
+								"{@spell sleep}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell invisibility}",
+								"{@spell shatter}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell hypnotic pattern}",
+								"{@spell tongues}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell compulsion}",
+								"{@spell dimension door}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell hold monster}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"皮斯卡(Pisca)可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"name": "Emissary of the Depths",
+					"entries": [
+						"皮斯卡能够与那些能够在水中呼吸的野兽简单交流。她忽略了深水环境带来的任何缺点。"
+					]
+				},
+				{
+					"name": "Magical Secrets",
+					"entries": [
+						"Pisca会施展{@spell counterspell}和{@spell shield}咒语。"
+					]
+				},
+				{
+					"name": "Song of Rest",
+					"entries": [
+						"皮斯卡(Pisca)可以在短暂休息时演唱一首歌。任何听到这首歌的盟友，在休息结束时如果消耗任何生命骰(Hit Dice)来恢复生命值，将额外恢复{@dice 1d6}的生命值。皮斯卡也可以将这个效果赋予自己。"
+					]
+				},
+				{
+					"name": "Taunt (3/day)",
+					"entries": [
+						"Pisca可以在她的回合使用一个奖励动作，以目标距离她30英尺内的生物。如果目标能听到她，它必须成功通过一个{@dc 15}魅力豁免才能在Pisca的下一个回合开始前拥有对技能检定、攻击骰和豁免骰的劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Pisca用她的脇差(Wakizashi)进行了四次攻击。"
+					]
+				},
+				{
+					"name": "Wakizashi",
+					"entries": [
+						"{@atk mw}进行攻击，射程5英尺，目标为一个。造成{@h}5 ({@damage 1d6 + 2})点割伤伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"O",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CB",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"皮斯卡(Pisca)有点像一个女性致命者。她非常有魅力和智慧，但也痴迷于权力。她迷惑了村庄，说服长者们允许她俘虏游客，并让他们挖掘一个包含她所渴望的古代神庙的神器。她以\"翡翠鳞船长的宝藏\"为幌子进行所有这些。她编造了一个有关海盗和一张古老地图的故事来诱使冒险者。当他们到达时，她会在他们的食物中下药，偷走他们的财物并囚禁他们。她皮肤呈明亮的蓝色，铜色头发。她穿着长长的流苏服装，袖子几乎拖在地上，她在酒馆里飘然而过。在她的长袍下，她穿着一件美丽的鳞甲衬衫，映着火光。她腰间挂着一个装饰华丽的短刀鞘。",
+					"她大部分时间都在照顾顾客和经营客栈，偶尔退到楼上的房间，那里堆满了来自她信徒的各种礼物。它们从简单的小玩意到豪华设计的物品和珠宝不等。"
+				]
+			},
+			"savingThrowForced": [
+				"charisma"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Storm Mephit",
+			"source": "SOD",
+			"page": 18,
+			"size": [
+				"S"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12
+				}
+			],
+			"hp": {
+				"formula": "5d6",
+				"average": 17
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 5,
+			"dex": 13,
+			"con": 10,
+			"int": 9,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"lightning",
+				"poison"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Aquan",
+				"Auran",
+				"Ignan"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Death Burst",
+					"entries": [
+						"当小恶魔死亡时，它会爆炸并释放出一团闪电。每个在它周围5英尺范围内的生物，必须成功进行一次{@dc 11}敏捷豁免才能避免受到7（{@damage 2d6}）点闪电伤害，豁免成功则只受到一半伤害。"
+					]
+				},
+				{
+					"name": "Innate Spellcasting (1/Day)",
+					"entries": [
+						"这只小恶魔可以天生地施放雷波（法术豁免{@dc 10}），无需任何材料成分，其天生法术能力为魅力。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} 近战攻击，射程5英尺，目标一个。{@h}3 ({@damage 1d4 + 1}) 斩击伤害。"
+					]
+				},
+				{
+					"name": "Stunning Breath {@recharge}",
+					"entries": [
+						"小恶魔呼出一股长15英尺的充满电光的锥形射线。区域内的每个生物必须成功进行一次{@dc 10}敏捷豁免才能避免在接下来的回合结束前成为{@condition stunned}。"
+					]
+				}
+			],
+			"traitTags": [
+				"Death Burst"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"AQ",
+				"AU",
+				"IG"
+			],
+			"damageTags": [
+				"L",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"这些类似恐龙的生物类似于大型鳄鱼，但嘴巴较短，颈部较长。它们背部有一排蓝色鳞片，张开的大嘴里有一排锋利的牙齿。它们靠近碎浪教派的神庙，吸收了一些元素力量，这是神庙的原始居民培育出来的。(Cult of the Crushing Wave)"
+				]
+			}
+		},
+		{
+			"name": "Tempest Beast",
+			"source": "SOD",
+			"page": 18,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 36",
+				"average": 102
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"passive": 13,
+			"immune": [
+				"lightning"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Hold Breath.",
+					"entries": [
+						"这只风暴兽可以屏住呼吸长达一小时。"
+					]
+				},
+				{
+					"name": "Charmed to Submission.",
+					"entries": [
+						"皮斯卡·阿洛萨斯（Pisca Ahlorsath）训练了风暴兽，当她演奏音乐时它们会保持冷静。角色可以用任何乐器进行一次 {@dc 16} 魅力（表演）检定来驯服风暴兽。"
+					]
+				},
+				{
+					"name": "Charged Body.",
+					"entries": [
+						"当一个生物接触到风暴兽或在其5英尺内用近战攻击击中它时，会受到7 ({@damage 2d6}) 闪电伤害。如果这个生物至少部分浸泡在水中，这个伤害会增加4 ({@dice 1d6})。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"风暴兽进行两次攻击：一次咬击，一次利爪攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} 使用 {@hit 6} 进行攻击，达到5英尺，一个目标。造成 {@h}10 ({@damage 1d10 + 4}) 点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} 使用 {@hit 6} 进行攻击，达到5英尺，一个目标。造成{@h}13 ({@damage 2d6 + 4})点割伤伤害。"
+					]
+				},
+				{
+					"name": "Thunderous Sweep {@recharge}",
+					"entries": [
+						"两个在彼此之间距离不超过10英尺，并且距离风暴兽不超过5英尺的生物必须成功通过一次{@dc 14}敏捷豁免才能避免受到影响。未能通过豁免的目标将受到11({@damage 2d4 + 4})点劈砍伤害和4({@damage 1d6})点雷霆伤害，并被推开10英尺远离风暴兽。若成功通过豁免，目标将只受到一半伤害且不会被推开。"
+					]
+				}
+			],
+			"traitTags": [
+				"Hold Breath"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"这些类似恐龙的生物类似于大型鳄鱼，但嘴巴较短，颈部较长。它们背部有一排蓝色鳞片，张开的大嘴里有一排锋利的牙齿。它们靠近碎浪教派的神庙，吸收了一些元素力量，这是神庙的原始居民培育出来的。(Cult of the Crushing Wave)"
+				]
+			}
+		}
+	]
+}

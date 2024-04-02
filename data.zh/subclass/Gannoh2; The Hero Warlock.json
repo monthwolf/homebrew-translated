@@ -1,0 +1,563 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WarlockHero",
+				"abbreviation": "WP:TH",
+				"full": "Warlock Patron: The Hero",
+				"version": "1.0.0",
+				"url": "https://www.gmbinder.com/share/-M4-3NC6ncrZqNAHFBjj",
+				"authors": [
+					"Gannoh2"
+				],
+				"convertedBy": [
+					"MrVauxs"
+				],
+				"color": "1d618f"
+			}
+		],
+		"dateAdded": 1589516344,
+		"dateLastModified": 1690651615,
+		"_dateLastModifiedHash": "5698107a5d"
+	},
+	"subclass": [
+		{
+			"name": "The Hero",
+			"shortName": "Hero",
+			"source": "WarlockHero",
+			"subclassSpells": [
+				"Heroism",
+				"Zephyr Strike",
+				"Aid",
+				"Branding Smite",
+				"Blinding Smite",
+				"Motivational Speech",
+				"Death Ward",
+				"Staggering Smite",
+				"Banishing Smite",
+				"Destructive Wave"
+			],
+			"subclassFeatures": [
+				"The Hero|Warlock||Hero|WarlockHero|1",
+				"Steely Negotiator|Warlock||Hero|WarlockHero|6",
+				"Duel of Destiny|Warlock||Hero|WarlockHero|10",
+				"Hour of Triumph|Warlock||Hero|WarlockHero|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Pact of the Shield",
+			"source": "WarlockHero",
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"你可以用你的行动在你的空手中创造一个契约盾牌。你可以在每次创造它时选择它的具体形式。在你挥舞它的时候，你会熟练地使用它。",
+				"如果你的契约盾牌离你超过5英尺，并持续1分钟或以上，它就会消失。如果你再次使用这个功能，如果你解除护盾（不需要任何行动），或者你死亡，它也会消失。",
+				"你可以将一个魔法盾转化为你的契约盾，方法是在你手持盾牌时进行一个特殊的仪式。你在1小时内完成这个仪式，可以在短暂的休息中完成。",
+				"然后你可以解除这个盾牌，把它分流到一个次元空间，此后只要你创造你的契约盾牌，它就会出现。你不能以这种方式影响一个神器或一个有生命的盾牌。如果你死了，如果你对另一个盾牌进行了1小时的仪式，或者如果你用1小时的仪式来打破你与它的联系，那么这个盾牌就不再是你的契约盾牌。如果盾牌在纽带断裂时处于次元空间，它就会出现在你的脚下。"
+			]
+		},
+		{
+			"name": "Shield Bash",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"pact": "Shield"
+				}
+			],
+			"entries": [
+				"你可以使用你的契约盾牌作为武术近战武器。它能造成1点重击伤害。为了克服对非魔法攻击和伤害的抵抗和免疫，它算作是魔法的。",
+				"如果你有能力将你的魅力修饰值加到武器的攻击和伤害上，你也可以用你的契约盾牌这样做。",
+				"如果盾牌对它的AC有魔法加成，它的攻击和伤害卷也会得到同样的加成。",
+				"当你在你的回合中采取攻击行动时，你可以在你的正常攻击之外进行一次盾牌攻击。"
+			]
+		},
+		{
+			"name": "Shield Toss",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以像回旋镖一样投掷你的契约护盾。对30英尺内你能看到的最多两个目标进行一次远程武器攻击。如果命中，会造成{@dice 3d4}+相应的能力修改器的破坏性伤害。如果你用这次攻击打出了关键一击，并且目标体型较大或较小，它必须对你的咒语DC进行力量救赎成功，否则会被击倒（%1%）。",
+				"在你扔出盾牌后，盾牌会回到你的手中。在11级和17级时，你可以用这个特性瞄准一个额外的生物。"
+			]
+		},
+		{
+			"name": "Bulwark",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"pact": "Shield"
+				}
+			],
+			"entries": [
+				"作为奖励动作或反应，当你或在此效果范围内的盟友受到攻击或被迫进行灵巧或宪法规定的投掷以获得一半或无伤害时，你可以在自己周围10英尺的范围内投射一个力量堡垒。直到你的下一个回合结束，你和你在该区域的盟友在这种蓄力投掷中获得+2的加成，并对AC值进行加成。在你完成短期或长期休息之前，你不能再这样做。"
+			]
+		},
+		{
+			"name": "Great Bulwark",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"堡垒的范围增加到半径30英尺，对攻击力和蓄力的奖励变为+4。"
+			]
+		},
+		{
+			"name": "Improved Pact Shield",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Shield"
+				}
+			],
+			"entries": [
+				"你可以使用你用盾牌之约功能召唤的任何盾牌作为你的术士法术的施法重点。",
+				"此外，该盾牌还获得了一个+1的交流奖励，除非它是一个已经有交流奖励的魔法盾牌。"
+			]
+		},
+		{
+			"name": "Superior Pact Shield",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"pact": "Shield"
+				}
+			],
+			"entries": [
+				"你可以使用你用盾牌之约功能召唤的任何盾牌作为你的术士法术的施法重点。",
+				"此外，你的契约盾牌获得了一个+2的交流奖励，除非它是一个已经有交流奖励的魔法盾牌。"
+			]
+		},
+		{
+			"name": "Ultimate Pact Shield",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"pact": "Shield"
+				}
+			],
+			"entries": [
+				"你可以使用你用盾牌之约功能召唤的任何盾牌作为你的术士法术的施法重点。",
+				"此外，你的契约盾牌获得了一个+3的交流奖励，除非它是一个已经有交流奖励的魔法盾牌。"
+			]
+		},
+		{
+			"name": "Heroic Guardian",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"当你或你的坐骑被攻击击中时，你可以施放（%0%）或（%1%）（如果你知道它们）作为反应，或成为（%2%）。如果你这样做了，你就不能再施展，直到你完成一个短期或长期休息。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"rest": {
+								"1e": [
+									"armor of agathys",
+									"heroism"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Shining Servant",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"当你施展术士咒语或一级术士法术（甚至是更高等级的施法）时，你可以将伤害改为辐射伤害。",
+				"此外，当你用攻击击中时，你可以造成与你的术士等级相等的额外辐射伤害。如果你这样做了，在你完成一次长时间的休息之前，你不能再这样做。"
+			]
+		},
+		{
+			"name": "Dawnbringer",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"pact": "Blade"
+				}
+			],
+			"entries": [
+				"当你用你的契约武器击中一个生物时，该生物会受到相当于你的魅力修正值（最小为1）的额外辐射伤害。你不能同时从（%0%）中获益。"
+			]
+		},
+		{
+			"name": "Hero's Steed",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你知道这个法术（%0%）。对你来说，这是一个术士法术，它不计入你所知道的法术数量限制。你可以在不消耗法术槽的情况下施放一次。在你完成一次长时间的休息之前，你不能再这样做。",
+				"被召唤的生物有额外的命中率，相当于你的术士等级的两倍。"
+			]
+		},
+		{
+			"name": "Hero's Legendary Steed",
+			"source": "WarlockHero",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你知道这个法术（%0%）。对你来说，这是一个术士法术，它不计入你所知道的法术数量限制。",
+				"当你使用你的{@optfeature Hero's Steed|WarlockHero}召唤时，你可以改成施放{@spell Find Greater Steed|XGE}一次而不需要消耗一个法术槽。除了从英雄之骥的召唤中获得额外的命中率外，被召唤的生物的攻击在克服对非魔法攻击和伤害的抵抗力和免疫力时也算作魔法攻击，它在攻击卷轴和蓄力时有一个额外的奖励，并且其AC等于你熟练度奖励的一半。",
+				"当你施展{@spell Find Greater Steed|XGE}时，你可以召唤一个{@creature Drake|WarlockHero}。"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Drake",
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"source": "WarlockHero",
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "7d10 + 21",
+				"average": 59
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 16,
+			"int": 10,
+			"wis": 15,
+			"cha": 15,
+			"passive": 14,
+			"cr": "2",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"save": {
+				"dex": "+2",
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"cold",
+						"fire",
+						"lightning",
+						"radiant",
+						"thunder"
+					],
+					"preNote": "Choose one:"
+				}
+			],
+			"action": [
+				{
+					"name": "Multitattack",
+					"entries": [
+						"德雷克会进行两次攻击：一次是咬人，一次是用它的爪子。"
+					]
+				},
+				{
+					"name": "Breath {@recharge 5}",
+					"entries": [
+						"德雷克在一条30英尺长、5英尺宽的线上呼出能量。该区域内的每个生物都必须做一个{@dc 13}灵巧的蓄力动作，蓄力失败则受到18({@damage 5d6})的伤害，成功则受到一半伤害。伤害的类型与德雷克的抗性相同。如果伤害类型是寒冷、辐射或雷霆，则救赎动作为宪法。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d6 + 4})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d4 + 4})砍击伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Hero",
+			"source": "WarlockHero",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hero",
+			"subclassSource": "WarlockHero",
+			"level": 1,
+			"entries": [
+				"你已经与一位传奇英雄签订了契约。在你身上看到了伟大的种子，他们授予你力量，让你克服不可能的困难，激励他人走向胜利。潜在的赞助人包括阿托利亚-潘德拉贡、德里兹-多乌尔登、明斯克和派克-崔克特。",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"英雄让你在学习术士法术时从一个扩展的法术列表中选择。以下法术会被添加到术士法术列表中为你所用。当你用术士法术槽（非神秘奥术）施放（%0%）或（%1%）时，该法术会在你完成短暂休息后结束。",
+						{
+							"type": "table",
+							"caption": "Hero Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell Heroism}, {@spell Zephyr Strike|XGE}"
+								],
+								[
+									"2nd",
+									"{@spell Aid}, {@spell Branding Smite}"
+								],
+								[
+									"3rd",
+									"{@spell Blinding Smite}, {@spell Motivational Speech|AI}"
+								],
+								[
+									"4th",
+									"{@spell Death Ward}, {@spell Staggering Smite}"
+								],
+								[
+									"5th",
+									"{@spell Banishing Smite}, {@spell Destructive Wave}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Battle-Ready|Warlock||Hero|WarlockHero|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Moment of Greatness|Warlock||Hero|WarlockHero|1"
+				}
+			]
+		},
+		{
+			"name": "Battle-Ready",
+			"entries": [
+				"在1级时，你的守护者会指导你学习战斗的艺术。你获得对中型盔甲、盾牌和武术武器的熟练度。",
+				"你的守护者的影响也允许你通过特定的武器神秘地引导你的意志。每当你完成一个长时间的休息，你就可以接触一件你精通的、缺乏双手属性的武器。当你用该武器进行攻击时，你可以使用你的魅力修改器，而不是力量或灵巧，来进行攻击和伤害卷。这个好处一直持续到你完成一个长时间的休息。如果你后来获得了{@optfeature Pact of the Blade}特性，这个好处会延伸到你用该特性变出的每一件契约武器，无论武器的类型如何。"
+			],
+			"source": "WarlockHero",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hero",
+			"subclassSource": "WarlockHero",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Moment of Greatness",
+			"entries": [
+				"从1级开始，你可以向你的守护者呼唤灵感。作为一个额外动作，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你在所有的攻击卷、能力检查和蓄力投掷上都有优势，直到你下一个回合开始。",
+						"你获得相当于你的术士等级+你的魅力修正值的临时命中率，持续1小时。"
+					]
+				},
+				"一旦你使用了这个功能，你必须等到完成短暂或长时间的休息才能再次使用它。"
+			],
+			"source": "WarlockHero",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hero",
+			"subclassSource": "WarlockHero",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Steely Negotiator",
+			"source": "WarlockHero",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hero",
+			"subclassSource": "WarlockHero",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"6级时，你的守护者教导你，冲突并不总是在战场上获胜。你获得对（%0%）或（%1%）（你选择）的熟练度。如果你已经精通这两门技能，那么你将获得术士可用的任何其他技能的熟练度。",
+				"你也知道这个法术（%0%）。对你来说，这是一个术士法术，它不计入你所知道的法术数量限制。",
+				"你可以在不耗费法术槽的情况下施放一次。在你完成短期或长期休息之前，你不能再这样做。"
+			]
+		},
+		{
+			"name": "Duel of Destiny",
+			"source": "WarlockHero",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hero",
+			"subclassSource": "WarlockHero",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"虽然你更喜欢和你的朋友一起战斗，但你知道有时你必须独自面对一个强大的恶棍。从10级开始，当你使用你的伟大时刻功能时，选择一个你能看到或听到的生物。在1分钟内，或者直到你达到（%0%），当那个生物用攻击卷轴击中你时，要掷出（%1%）。在4或更高的分数上，攻击反而会错过你，不管它的卷子如何。"
+			]
+		},
+		{
+			"name": "Hour of Triumph",
+			"source": "WarlockHero",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hero",
+			"subclassSource": "WarlockHero",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以真正地召唤你的守护神，并带领你的同伴们走向胜利。当你使用 \"伟大时刻 \"时，你可以选择你周围60英尺内任何数量的生物，并能看到或听到你。他们会在1小时内获得相当于你的术士等级+你的魅力修饰的临时命中率，并且在你下一个回合开始前，他们在攻击卷、能力检查和蓄力方面都有优势。",
+				"一旦你使用这个功能，你就不能再使用它，直到你完成长时间的休息。"
+			]
+		}
+	]
+}

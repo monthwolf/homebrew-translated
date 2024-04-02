@@ -1,0 +1,7445 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TPM",
+				"abbreviation": "TPM",
+				"full": "Taron Pounds: Merchant",
+				"authors": [
+					"Taron \"Indestructoboy\" Pounds"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"version": "3.2 02/09/2022",
+				"color": "8caea7",
+				"url": "https://www.dmsguild.com/product/251199/The-Merchant-Class",
+				"dateReleased": "2022-02-09"
+			}
+		],
+		"optionalFeatureTypes": {
+			"PE:B": "Potion Effect: Blast",
+			"PE:C": "Potion Effect: Consumable",
+			"PDE": "Pet Dealer Exotica"
+		},
+		"status": "ready",
+		"dateAdded": 1681120601,
+		"dateLastModified": 1709503923,
+		"_dateLastModifiedHash": "028d19f73f"
+	},
+	"class": [
+		{
+			"name": "Merchant",
+			"source": "TPM",
+			"page": 3,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "artificer",
+			"preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"2": [
+							"identify"
+						]
+					}
+				}
+			],
+			"classSpells": [
+				"blade ward",
+				"control flames|XGE",
+				"create bonfire|XGE",
+				"dancing lights",
+				"doohickey|TPM",
+				"exchange|TPM",
+				"fool's gold|TPM",
+				"friends",
+				"guidance",
+				"light",
+				"mage hand",
+				"mage ward|TPM",
+				"mending",
+				"message",
+				"aid",
+				"alarm",
+				"catapult|XGE",
+				"charm person",
+				"command",
+				"comprehend languages",
+				"create or destroy water",
+				"cure wounds",
+				"detect magic",
+				"detect poison and disease",
+				"disguise self",
+				"expeditious retreat",
+				"feather fall",
+				"find familiar",
+				"healing word",
+				"hedge risk|TPM",
+				"identify",
+				"illusory script",
+				"jump",
+				"longstrider",
+				"money shot|TPM",
+				"pilfer|TPM",
+				"purify food and drink",
+				"sleep",
+				"Tenser's floating disk",
+				"unseen servant",
+				"animal messenger",
+				"calm emotions",
+				"continual flame",
+				"darkvision",
+				"enhance ability",
+				"enthrall",
+				"gold dust|TPM",
+				"hold person",
+				"Ivaldi's rustproof coating|TPM",
+				"knock",
+				"lesser restoration",
+				"levitate",
+				"locate object",
+				"magic mouth",
+				"magic weapon",
+				"mineral wealth|TPM",
+				"protection from poison",
+				"rope trick",
+				"see invisibility",
+				"silence",
+				"skywrite|XGE",
+				"suggestion",
+				"Tagmay's thermal container|TPM",
+				"zone of truth",
+				"catnap|XGE",
+				"clairvoyance",
+				"counterspell",
+				"create food and water",
+				"dispel magic",
+				"find vessel|TPM",
+				"haste",
+				"nondetection",
+				"protection from energy",
+				"remove curse",
+				"sending",
+				"slow",
+				"tiny servant|XGE",
+				"tongues",
+				"water breathing",
+				"water walk",
+				"compulsion",
+				"confusion",
+				"fabricate",
+				"freedom of movement",
+				"Leomund's secret chest",
+				"locate creature",
+				"Mordenkainen's private sanctum",
+				"stoneskin",
+				"hold monster",
+				"legend lore",
+				"passwall",
+				"scrying",
+				"seeming"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@quickref improvised weapons|PHB|1|0}"
+				],
+				"tools": [
+					"Your choice of two {@item artisan's tools|PHB} or vehicles"
+				],
+				"skills": [
+					{
+						"any": 3
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) a {@item light crossbow|PHB} and {@item Crossbow Bolts (20)|PHB|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"a {@item staff|PHB} and an {@item abacus|PHB}",
+					"a {@table Adventuring Gear; Container Capacity|PHB|container} for use with your {@classFeature Portable Storefront|Merchant|TPM|1} feature",
+					"(a) a {@item diplomat's pack|PHB} or (b) an {@item explorer's pack|PHB}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"staff|phb",
+							"abacus|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"special": "a {@table Adventuring Gear; Container Capacity|PHB|container} for use with your {@classFeature Portable Storefront|Merchant|TPM|1} feature"
+							}
+						]
+					},
+					{
+						"a": [
+							"diplomat's pack|PHB"
+						],
+						"b": [
+							"explorer's pack|PHB"
+						]
+					}
+				],
+				"additionalFromBackground": true,
+				"goldAlternative": "a {@table Adventuring Gear; Container Capacity|PHB|container} for use with your {@classFeature Portable Storefront|Merchant|TPM|1} feature and {@dice 5d4 × 10|5d4 × 10|Starting Gold}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple",
+						"{@quickref improvised weapons|PHB|1|0}"
+					],
+					"tools": [
+						"{@item artisan's tools|PHB}"
+					],
+					"skills": [
+						{
+							"any": 3
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Storefront Value(gp)",
+						"{@filter Cantrips Known|spells|level=0|class=merchant}"
+					],
+					"rows": [
+						[
+							50,
+							2
+						],
+						[
+							100,
+							2
+						],
+						[
+							150,
+							2
+						],
+						[
+							200,
+							2
+						],
+						[
+							300,
+							2
+						],
+						[
+							400,
+							2
+						],
+						[
+							500,
+							2
+						],
+						[
+							650,
+							2
+						],
+						[
+							800,
+							2
+						],
+						[
+							1000,
+							3
+						],
+						[
+							2000,
+							3
+						],
+						[
+							3000,
+							3
+						],
+						[
+							4000,
+							3
+						],
+						[
+							5000,
+							4
+						],
+						[
+							6000,
+							4
+						],
+						[
+							7000,
+							4
+						],
+						[
+							8000,
+							4
+						],
+						[
+							9000,
+							4
+						],
+						[
+							9500,
+							4
+						],
+						[
+							10000,
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Merchant}",
+						"{@filter 2nd|spells|level=2|class=Merchant}",
+						"{@filter 3rd|spells|level=3|class=Merchant}",
+						"{@filter 4th|spells|level=4|class=Merchant}",
+						"{@filter 5th|spells|level=5|class=Merchant}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Portable Storefront|Merchant|TPM|1|TPM",
+				"Spellcasting|Merchant|TPM|1|TPM",
+				"Arcane Appraiser|Merchant|TPM|2|TPM",
+				"Bang for Your Buck|Merchant|TPM|2|TPM",
+				{
+					"classFeature": "Merchant Guild|Merchant|TPM|3|TPM",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Merchant|TPM|4|TPM",
+				"Pack Mule|Merchant|TPM|5|TPM",
+				{
+					"classFeature": "Merchant Guild Feature|Merchant|TPM|5|TPM",
+					"gainSubclassFeature": true
+				},
+				"Top Shelf|Merchant|TPM|6|TPM",
+				"Use an Extra Object|Merchant|TPM|7|TPM",
+				"Ability Score Improvement|Merchant|TPM|8|TPM",
+				{
+					"classFeature": "Merchant Guild Feature|Merchant|TPM|9|TPM",
+					"gainSubclassFeature": true
+				},
+				"Backstock|Merchant|TPM|10|TPM",
+				"Use Magic Device|Merchant|TPM|11|TPM",
+				"Improved Top Shelf|Merchant|TPM|11|TPM",
+				"Ability Score Improvement|Merchant|TPM|12|TPM",
+				"Insider Trading|Merchant|TPM|14|TPM",
+				{
+					"classFeature": "Merchant Guild Feature|Merchant|TPM|15|TPM",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Merchant|TPM|16|TPM",
+				"On the House|Merchant|TPM|18|TPM",
+				"Improved Top Shelf|Merchant|TPM|18|TPM",
+				"Ability Score Improvement|Merchant|TPM|19|TPM",
+				"Improved Backstock|Merchant|TPM|20|TPM",
+				"Business Tycoon|Merchant|TPM|20|TPM"
+			],
+			"subclassTitle": "Merchant Guild",
+			"fluff": [
+				{
+					"type": "section",
+					"name": "Merchant",
+					"page": 2,
+					"source": "TPM",
+					"entries": [
+						"无论是稀有魔法物品的鉴定师，非法物品的小贩，还是皇室法庭的簿记员，商人都是交易的大师。他们可以投资于盟友以加强他们，或者花钱确保他们不满的对象被彻底揭露所有不堪的秘密。",
+						{
+							"type": "entries",
+							"name": "The Magic of Value",
+							"page": 2,
+							"entries": [
+								"Volo（沃罗）和Elminster（艾尔明斯特）都曾就魔法与花费之间的联系进行了哲学探讨；这两位著名的传承者就物质是否天生具有魔力，或者一样东西的珍贵是否赋予了它魔法属性的辩论发表了各自的看法，类似于信仰赋予神灵力量的方式。商人通过交易艺术和价值本身的精髓获得他们的魔法。这种魔法可能受到某种力量的影响，比如商业之神、贪婪、幸运或财富之神的神圣力量，或者贸易、机会和混沌的内在本质。",
+								"无论你站在辩论的哪一边，经济和价值背后都有一种不可否认的力量。没有那颗珍贵的钻石，{@spell revivify} 有什么用呢？商业本身已经被视为拥有某种内在的、超自然的品质，能够带来成功和幸福的生活。商业之神受到崇拜，{@deity Waukeen|Faerûnian|SCAG} 是被广泛崇拜的遗忘国度中这些神中最为崇拜的。在一些城市地区，对主宰生育和自然领域的神祇的崇拜已经被抛弃，因为人们觉得当贸易提供一切时，这些神祇就显得不再必要。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Enticement to Adventure",
+							"page": 2,
+							"entries": [
+								"传统上，冒险者只需要金宝的动机就愿意冒险。没有人比商人更了解追寻黄金的驱使力。经营一家商店、看着日子一天天过去是一种简单的生活方式，但旅行者传闻他们最近的旅程带回了巨额战利品，这足以诱使商店老板离开他们那个停滞不前的店面，踏入地牢。",
+								"有些商人选择流浪生活，从一个城镇到另一个城镇，停下来兜售商品进行商业冒险。对于一个筋疲力尽、挨饿的队伍来说，流浪商人是一个令人欣喜的景象，因为他们可能提供食物、水和周围地区的信息。如果这个商人总是在附近，那该有多好啊？",
+								{
+									"type": "entries",
+									"name": "A Merchant's Place in the Party",
+									"page": 2,
+									"entries": [
+										"这位商人是一位高级支援法术施法者，帮助队伍保持装备，并奖励那些喜欢利用手头现有装备解决问题而非施法和技能检定的玩家。这个职业创造了一个玩家风格为：",
+										{
+											"type": "list",
+											"page": 2,
+											"items": [
+												"通过法术和特性来支持中线，这些法术和特性可以操控其他生物的能力和整体力量。",
+												"供应商可以确保派对上随时提供凡俗物品和魔法物品的访问。",
+												"地牢探险者(Dungeoneer)和面孔(Face)，装备了大量随需应变的物品，以应对冒险的危险。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Merchant",
+							"page": 3,
+							"entries": [
+								"在创建一个商人角色时，考虑一下你的角色会经营什么样的生意，以及为什么这会推动他们踏上冒险之路。也许你一直在寻找一种独特物品的材料，因为你知道这将成为下一个大热门，或者你只是试图通过欺诈来积累足够的财富，以资助自己的盗贼行会。也许你曾经是一位善良的旅店老板，当一群人意外地把你卷入他们的任务时，你被迫踏上了冒险之路。你也可以只是在寻找奇珍异宝。无论哪种情况，考虑一下为什么你的商人不只是在一个大城镇里开店，而是选择踏上冒险之路。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"page": 3,
+									"entries": [
+										"按照以下建议，您可以快速创建一个商人。首先，魅力应该是您最高的能力分数。然后优先选择敏捷。其次，选择{@background Variant Guild Artisan (Guild Merchant)|PHB|Guild Merchant}背景。第三，选择{@spell light}和{@spell mending}的零级咒语，以及1级法术{@spell comprehend languages}和{@spell purify food and drink}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "statblock",
+							"tag": "variantrule",
+							"source": "TPM",
+							"name": "Merchant Spell List",
+							"page": 5,
+							"collapsed": true,
+							"style": "inset"
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Apothecary",
+			"shortName": "Apothecary",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 6,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"cure wounds|PHB",
+							"Tasha's caustic brew|TCE"
+						],
+						"5": [
+							"enhance ability|PHB",
+							"gentle repose|PHB"
+						],
+						"9": [
+							"mass healing word|PHB",
+							"revivify|PHB"
+						],
+						"13": [
+							"aura of life|PHB",
+							"death ward|PHB"
+						],
+						"17": [
+							"greater restoration|PHB",
+							"raise dead|PHB"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"cure wounds|PHB",
+				"Tasha's caustic brew|TCE",
+				"enhance ability|PHB",
+				"gentle repose|PHB",
+				"mass healing word|PHB",
+				"revivify|PHB",
+				"aura of life|PHB",
+				"death ward|PHB",
+				"greater restoration|PHB",
+				"raise dead|PHB"
+			],
+			"subclassFeatures": [
+				"Apothecary|Merchant|TPM|Apothecary|TPM|3|TPM",
+				"Triage|Merchant|TPM|Apothecary|TPM|5|TPM",
+				"Mithridatism|Merchant|TPM|Apothecary|TPM|9|TPM",
+				"Socialized Medicine|Merchant|TPM|Apothecary|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Architect",
+			"shortName": "Architect",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 9,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"alarm|PHB",
+							"unseen servant|PHB"
+						],
+						"5": [
+							"arcane lock|PHB",
+							"rope trick|PHB"
+						],
+						"9": [
+							"Leomund's tiny hut|PHB",
+							"wall of sand|XGE"
+						],
+						"13": [
+							"stone shape|PHB",
+							"wall of fire|PHB"
+						],
+						"17": [
+							"wall of light|XGE",
+							"wall of stone|PHB"
+						]
+					},
+					"known": {
+						"3": [
+							"mold earth|XGE"
+						]
+					},
+					"innate": {
+						"15": [
+							"bones of the earth|XGE",
+							"wall of ice",
+							"wall of thorns"
+						],
+						"17": [
+							"Mordenkainen's magnificent mansion"
+						],
+						"20": [
+							"prismatic wall"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"alarm|PHB",
+				"unseen servant|PHB",
+				"arcane lock|PHB",
+				"rope trick|PHB",
+				"Leomund's tiny hut|PHB",
+				"wall of sand|XGE",
+				"stone shape|PHB",
+				"wall of fire|PHB",
+				"wall of light|XGE",
+				"wall of stone|PHB",
+				"mold earth|XGE",
+				"bones of the earth|XGE",
+				"wall of ice",
+				"wall of thorns",
+				"Mordenkainen's magnificent mansion",
+				"prismatic wall"
+			],
+			"subclassFeatures": [
+				"Architect|Merchant|TPM|Architect|TPM|3|TPM",
+				"Structural Integrity|Merchant|TPM|Architect|TPM|5|TPM",
+				"Supporting Wall|Merchant|TPM|Architect|TPM|9|TPM",
+				"Real Estate Mogul|Merchant|TPM|Architect|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Blacksmith",
+			"shortName": "Blacksmith",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 9,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"searing smite|PHB",
+							"shield|PHB"
+						],
+						"5": [
+							"heat metal|PHB",
+							"magic weapon|PHB"
+						],
+						"9": [
+							"elemental weapon|PHB",
+							"protection from energy|PHB"
+						],
+						"13": [
+							"Ivaldi's impervious anvil|TPM",
+							"summon construct|TCE"
+						],
+						"17": [
+							"creation|PHB",
+							"immolation|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"searing smite|PHB",
+				"shield|PHB",
+				"heat metal|PHB",
+				"magic weapon|PHB",
+				"elemental weapon|PHB",
+				"protection from energy|PHB",
+				"Ivaldi's impervious anvil|TPM",
+				"summon construct|TCE",
+				"creation|PHB",
+				"immolation|XGE"
+			],
+			"subclassFeatures": [
+				"Blacksmith|Merchant|TPM|Blacksmith|TPM|3|TPM",
+				"Smash and Grab|Merchant|TPM|Blacksmith|TPM|5|TPM",
+				"Heart of the Forge|Merchant|TPM|Blacksmith|TPM|9|TPM",
+				"Forgemaster|Merchant|TPM|Blacksmith|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Esotericism",
+			"shortName": "Esotericism",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"bane|PHB",
+							"hex|PHB"
+						],
+						"5": [
+							"Nystul's magic aura|PHB",
+							"phantasmal force|PHB"
+						],
+						"9": [
+							"bestow curse|PHB",
+							"remove curse|PHB"
+						],
+						"13": [
+							"banishment|PHB",
+							"phantasmal killer|PHB"
+						],
+						"17": [
+							"scrying|PHB",
+							"seeming|PHB"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"bane|PHB",
+				"hex|PHB",
+				"Nystul's magic aura|PHB",
+				"phantasmal force|PHB",
+				"bestow curse|PHB",
+				"remove curse|PHB",
+				"banishment|PHB",
+				"phantasmal killer|PHB",
+				"scrying|PHB",
+				"seeming|PHB"
+			],
+			"subclassFeatures": [
+				"Esotericism|Merchant|TPM|Esotericism|TPM|3|TPM",
+				"Occult Sagacity|Merchant|TPM|Esotericism|TPM|5|TPM",
+				"The Patronage of Patrons|Merchant|TPM|Esotericism|TPM|9|TPM",
+				"Curse Scribe|Merchant|TPM|Esotericism|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Gambler",
+			"shortName": "Gambler",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 12,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"bless|PHB",
+							"chaos bolt|XGE"
+						],
+						"5": [
+							"enhance ability|PHB",
+							"mirror image|PHB"
+						],
+						"9": [
+							"counterspell|PHB",
+							"intellect fortress|TCE"
+						],
+						"13": [
+							"compulsion|PHB",
+							"streak of luck|TPM"
+						],
+						"17": [
+							"Bigby's hand|PHB",
+							"skill empowerment|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"bless|PHB",
+				"chaos bolt|XGE",
+				"enhance ability|PHB",
+				"mirror image|PHB",
+				"counterspell|PHB",
+				"intellect fortress|TCE",
+				"compulsion|PHB",
+				"streak of luck|TPM",
+				"Bigby's hand|PHB",
+				"skill empowerment|XGE"
+			],
+			"subclassFeatures": [
+				"Gambler|Merchant|TPM|Gambler|TPM|3|TPM",
+				"Poker Face|Merchant|TPM|Gambler|TPM|5|TPM",
+				"Double or Nothing|Merchant|TPM|Gambler|TPM|9|TPM",
+				"The House Always Wins|Merchant|TPM|Gambler|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Gourmand",
+			"shortName": "Gourmand",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 14,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"purify food and drink|PHB"
+						],
+						"5": [
+							"Tagmay's thermal container|TPM"
+						],
+						"9": [
+							"create food and water|PHB"
+						],
+						"13": [
+							"compulsion|PHB"
+						],
+						"17": [
+							"creation|PHB"
+						]
+					},
+					"expanded": {
+						"s0": [
+							"frostbite|XGE#c",
+							"produce flame#c"
+						],
+						"s1": [
+							"burning hands",
+							"fondue fountain|TPM",
+							"goodberry",
+							"grease",
+							"hellish rebuke",
+							"ice knife|XGE",
+							"popping corn|TPM",
+							"searing smite"
+						],
+						"s2": [
+							"Aganazzar's scorcher|XGE",
+							"heat metal",
+							"healing spirit|XGE",
+							"scorching ray",
+							"Snilloc's snowball swarm|XGE"
+						],
+						"s3": [
+							"aura of vitality",
+							"create mandrake|TPM",
+							"fireball",
+							"plant growth",
+							"stinking cloud"
+						],
+						"s4": [
+							"fruits of labor|TPM"
+						],
+						"s5": [
+							"animate objects"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"purify food and drink|PHB",
+				"Tagmay's thermal container|TPM",
+				"create food and water|PHB",
+				"compulsion|PHB",
+				"creation|PHB",
+				"frostbite|XGE",
+				"produce flame",
+				"burning hands",
+				"fondue fountain|TPM",
+				"goodberry",
+				"grease",
+				"hellish rebuke",
+				"ice knife|XGE",
+				"popping corn|TPM",
+				"searing smite",
+				"Aganazzars scorcher|XGE",
+				"heat metal",
+				"healing spirit|XGE",
+				"scorching ray",
+				"Snilloc's snowball swarm|XGE",
+				"aura of vitality",
+				"create mandrake|TPM",
+				"fireball",
+				"plant growth",
+				"stinking cloud",
+				"fruits of labor|TPM",
+				"animate objects"
+			],
+			"subclassFeatures": [
+				"Gourmand|Merchant|TPM|Gourmand|TPM|3|TPM",
+				"Flavortown|Merchant|TPM|Gourmand|TPM|5|TPM",
+				"Natural Preservatives|Merchant|TPM|Gourmand|TPM|9|TPM",
+				"Soup for the Soul|Merchant|TPM|Gourmand|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Mariner",
+			"shortName": "Mariner",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 15,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"create or destroy water|PHB",
+							"fog cloud|PHB"
+						],
+						"5": [
+							"gust of wind|PHB",
+							"misty step|PHB"
+						],
+						"9": [
+							"beacon of hope|PHB",
+							"tidal wave|XGE"
+						],
+						"13": [
+							"control water|PHB",
+							"storm sphere|XGE"
+						],
+						"17": [
+							"control winds|XGE",
+							"maelstrom|XGE"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"create or destroy water|PHB",
+				"fog cloud|PHB",
+				"gust of wind|PHB",
+				"misty step|PHB",
+				"beacon of hope|PHB",
+				"tidal wave|XGE",
+				"control water|PHB",
+				"storm sphere|XGE",
+				"control winds|XGE",
+				"maelstrom|XGE"
+			],
+			"subclassFeatures": [
+				"Mariner|Merchant|TPM|Mariner|TPM|3|TPM",
+				"Sea Legs|Merchant|TPM|Mariner|TPM|5|TPM",
+				"Ship-Shape|Merchant|TPM|Mariner|TPM|5|TPM",
+				"Old Salt|Merchant|TPM|Mariner|TPM|9|TPM",
+				"Winds of Trade|Merchant|TPM|Mariner|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Pet Dealer",
+			"shortName": "Pet Dealer",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 15,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"animal friendship|PHB",
+							"find familiar|PHB"
+						],
+						"5": [
+							"beast sense|PHB",
+							"summon beast|TCE"
+						],
+						"9": [
+							"conjure animals|PHB",
+							"feign death|PHB"
+						],
+						"13": [
+							"charm monster|XGE",
+							"dominate beast|PHB"
+						],
+						"17": [
+							"awaken|PHB",
+							"geas|PHB"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"animal friendship|PHB",
+				"find familiar|PHB",
+				"beast sense|PHB",
+				"summon beast|TCE",
+				"conjure animals|PHB",
+				"feign death|PHB",
+				"charm monster|XGE",
+				"dominate beast|PHB",
+				"awaken|PHB",
+				"geas|PHB",
+				"summon undead|TCE",
+				"beast bond|XGE"
+			],
+			"subclassFeatures": [
+				"Pet Dealer|Merchant|TPM|Pet Dealer|TPM|3|TPM",
+				"Exceptional Taming|Merchant|TPM|Pet Dealer|TPM|5|TPM",
+				"Bestiary Exotica|Merchant|TPM|Pet Dealer|TPM|9|TPM",
+				"Zoo Tycoon|Merchant|TPM|Pet Dealer|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Swindler",
+			"shortName": "Swindler",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 18,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person|PHB",
+							"disguise self|PHB"
+						],
+						"5": [
+							"blur|PHB",
+							"knock|PHB"
+						],
+						"9": [
+							"hypnotic pattern|PHB",
+							"invisibility|PHB"
+						],
+						"13": [
+							"charm monster|XGE",
+							"hallucinatory terrain|PHB"
+						],
+						"17": [
+							"mislead|PHB",
+							"modify memory|PHB"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"charm person|PHB",
+				"disguise self|PHB",
+				"blur|PHB",
+				"knock|PHB",
+				"hypnotic pattern|PHB",
+				"invisibility|PHB",
+				"charm monster|XGE",
+				"hallucinatory terrain|PHB",
+				"mislead|PHB",
+				"modify memory|PHB"
+			],
+			"subclassFeatures": [
+				"Swindler|Merchant|TPM|Swindler|TPM|3|TPM",
+				"Now You See Me...|Merchant|TPM|Swindler|TPM|5|TPM",
+				"Double-Dealer|Merchant|TPM|Swindler|TPM|9|TPM",
+				"...Now You Don't|Merchant|TPM|Swindler|TPM|15|TPM"
+			]
+		},
+		{
+			"name": "Vagabond",
+			"shortName": "Vagabond",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"page": 19,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"expeditious retreat|PHB",
+							"guiding bolt|PHB"
+						],
+						"5": [
+							"find steed|PHB",
+							"pass without trace|PHB"
+						],
+						"9": [
+							"haste|PHB",
+							"fly|PHB"
+						],
+						"13": [
+							"dimension door|PHB",
+							"freedom of movement|PHB"
+						],
+						"17": [
+							"far step|XGE",
+							"teleportation circle|PHB"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"expeditious retreat|PHB",
+				"guiding bolt|PHB",
+				"find steed|PHB",
+				"pass without trace|PHB",
+				"haste|PHB",
+				"fly|PHB",
+				"dimension door|PHB",
+				"freedom of movement|PHB",
+				"far step|XGE",
+				"teleportation circle|PHB"
+			],
+			"subclassFeatures": [
+				"Vagabond|Merchant|TPM|Vagabond|TPM|3|TPM",
+				"Caravaneer|Merchant|TPM|Vagabond|TPM|5|TPM",
+				"Spry|Merchant|TPM|Vagabond|TPM|9|TPM",
+				"Everywhere at Once|Merchant|TPM|Vagabond|TPM|15|TPM"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Portable Storefront",
+			"source": "TPM",
+			"page": 4,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 1,
+			"entries": [
+				"当你选择这个职业赋予你的装备时，你还要指定一个可关闭的容器作为你的便携商店。你的便携商店是一个魔法供应品，你可以选择稀有度不高于普通的物品。便携商店中所有选择物品的总价值必须小于或等于商人表格中\"商店价值\"列所示的成本。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Supply List",
+							"page": 4,
+							"entries": [
+								"选定的物品组成了你的供应清单，除非便携式货摊被完全补充，否则不能更改。只能在进行长休时更改供应清单，新物品会取代你在休息期间移除的物品。当你获得此特性时，以及每当你在这个职业中获得一个等级时，你的便携式货摊会自动用你选择的供应清单中的物品完全补充。",
+								"如果物品通常无法放入容器中（参见{@table Adventuring Gear; Container Capacity|PHB|Container Capacity table}，{@homebrew |Player's Handbook p. 153}），或者价值低于1铜币，则无法将物品添加到您的便携式店铺中。无论存货量如何，便携式店铺的重量始终为10磅。您可以在短暂或长时间休息中将新容器指定为您的便携式店铺。这样做时，先前的容器将失去其魔法属性。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Using the Storefront",
+							"page": 4,
+							"entries": [
+								"使用{@action Use an Object}动作，你可以把手放进你的便携式货架，想着一个出现在你供应清单上的物品。货架会立即把物品放在你手中，但为了再次提供该物品，必须重新补充。如果物品需要使用动作，你可以在同一个动作中使用它。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Restocking",
+							"page": 4,
+							"entries": [
+								"你可以通过在{@action Use an Object}行动中将物品放回你的便携式店铺内，或者在短暂或长时间休息时，将价值等于或高于物品成本的货币或宝石放入便携式店铺中来重新补充物品。一旦你把这些放入便携式店铺，它们就会被消耗掉，当你完成休息时，物品就会重新补充。将其他任何物品放入容器时，当你关闭它时，它会立即重新出现在便携式店铺旁边的一个空间中。"
+							]
+						}
+					]
+				},
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Currency Conversion",
+					"page": 4,
+					"style": "inset"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "TPM",
+			"page": 4,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 1,
+			"entries": [
+				"你通过价值的内在魔法属性发展出施放法术的能力。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"page": 4,
+					"entries": [
+						"你可以选择商人法术清单中的两个零级法术。在第10级和第14级时，你可以学习额外的商人法术清单中的一个零级法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"page": 4,
+					"entries": [
+						"商人表格显示了你可以用来施放商人法术的法术槽数量。要施放一级或更高级别的商人法术，你必须消耗等级或更高级别的法术槽。当你完成一次长休时，你会恢复所有已消耗的法术槽。",
+						"你准备了商人法术清单，可以选择施展商人法术清单中的法术。在这个过程中，你需要选择数量等同于你的魅力调整值加上你商人等级的一半（向下取整），至少选择一个法术。这些法术的等级必须在你拥有法术位的范围内。",
+						"例如，如果你是一个5级的商人，你有四个1级和两个2级的法术位。拥有14点魅力值，你准备的法术清单可以包括四个1级或2级的法术，以任意组合。如果你准备了1级法术《治疗伤口》，你可以使用1级或2级位来施法。施放法术不会将其从你的准备法术清单中移除。",
+						"你可以在完成一次长休后更改你准备的法术清单。准备一份新的(商人)法术清单需要每个法术等级至少1分钟的时间。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gold Required",
+					"page": 4,
+					"entries": [
+						"你通过具有价值的物品来施展商人法术效果。当你使用这个施法特性施放任何法术时，你必须手持价值不低于10 gp的物品或价值超过10 gp的物品，这将作为你商人法术的焦点。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"page": 5,
+					"entries": [
+						"魅力是你商人法术的施法修正值。你的魔法源自价值本身的品质，以及你识别和谈判交易的能力。每当一个法术提到你的施法能力时，你就使用魅力。此外，当你施放商人法术并设定豁免扑克牌 DC 或进行攻击检定时，也要使用魅力。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exchangeable Casting",
+					"page": 5,
+					"entries": [
+						"你可以使用你的动作将你的一个商人法术位赠予另一个你可以触摸的生物。该法术位变成该生物职业的一个法术位，并保持其法术位等级。你不能将一个法术位赠予一个生物，使其拥有该法术位等级超过四个。",
+						"此外，作为一个行动，你可以将你的一个商人法术位转换成与该法术位等级相等的若干低等级法术位。例如，如果你有一个3级法术位，你可以将其交换成三个1级法术位，或一个1级法术位和一个2级法术位。你不能拥有超过四个任何等级的商人法术位。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Component Subsidizing",
+					"page": 5,
+					"entries": [
+						"你可以利用你的商业魔法来补充法术的物质组件。当你或一个愿意的生物使用{@action Cast a Spell}动作并宣布他们打算施放的法术时，你可以使用你的反应，并消耗一个商人法术位，其等级与正在施放的法术等级相等，以移除该法术施放所需的任何物质组件。"
+					]
+				},
+				{
+					"type": "statblock",
+					"tag": "variantrule",
+					"source": "TPM",
+					"name": "Merchant Spell List",
+					"page": 5,
+					"collapsed": true,
+					"style": "inset"
+				}
+			]
+		},
+		{
+			"name": "Arcane Appraiser",
+			"source": "TPM",
+			"page": 5,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 2,
+			"entries": [
+				"你在贸易路线上的旅行和交流使你对王国各种文化有了丰富的了解。每当你进行任何技能检定来确定物品或物体的价值或文化意义时，你被视为精通该技能，并在检定中加上你的熟练加值的两倍，而不是正常的熟练加值。",
+				"此外，你始终准备了{@spell identify}法术，并且可以将其作为仪式施法。作为仪式的一部分，你可以花费10金币将该法术作为一个动作施放。当你这样做时，金币会被法术消耗掉。"
+			]
+		},
+		{
+			"name": "Bang for Your Buck",
+			"source": "TPM",
+			"page": 5,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 2,
+			"entries": [
+				"你可以选择用你的魅力调整来替代使用{@action Use an Object}动作的物品的奖励加值。 (例如：{@item potion of healing|DMG}通常会治疗{@dice 2d4 + 2}点生命值。使用这个特性，你可以用你的魅力调整来替代+2。) 如果物品没有奖励加值，你可以将你的魅力调整加到上面。",
+				"此外，您可以使用您的商人法术豁免 DC 替代物品的 DC，当您使用物品的属性造成伤害或治疗生命值时，您可以消耗一个商人法术位来增加伤害或治疗效果 {@dice 1d6}，对于 1 级法术位，再额外增加 {@dice 1d6}，每高出 1 级，最多达到 {@dice 4d6}。"
+			]
+		},
+		{
+			"name": "Merchant Guild",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 3,
+			"entries": [
+				"你加入了一个由其他小贩、商人和货物供应商组成的行会。当你在这个职业达到5级、9级和15级时，你的行会会不时地为你提供特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，再次在8级、12级、16级和19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。正常情况下，你不能通过这个特性将一个能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Merchant Guild Feature",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 5,
+			"entries": [
+				"当你在这个职业中达到5级时，你的公会会授予你一个特性。"
+			]
+		},
+		{
+			"name": "Pack Mule",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 5,
+			"entries": [
+				"你的负重能力加倍。"
+			]
+		},
+		{
+			"name": "Top Shelf",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 6,
+			"entries": [
+				"你现在可以在你的便携商店中存放不寻常的魔法物品。一旦你在这个职业中达到11级，你可以在你的便携商店中存放稀有度不超过稀有的魔法物品。在18级时，你可以在你的便携商店中存放稀有度不超过非常稀有的魔法物品。",
+				"另外，当你达到这些级别时，你可以将这些物品添加到你的便携商店的特殊区域，称为你的顶层货架。你的顶层货架只能容纳与你的熟练加值相等的物品数量，而且顶层货架上的物品可以无视你便携商店特性的价值限制。顶层货架上的物品不需要重新补充以更改你供应清单上不在顶层货架上的物品，但它们仍然遵守所有其他重新补充的限制，并且在你在这个职业中升级时不会自动重新补充。"
+			]
+		},
+		{
+			"name": "Use an Extra Object",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 7,
+			"entries": [
+				"在你的回合中，每次当你执行{@action Use an Object}动作时，你可以使用两个物品，而不是一个。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与常规规则相同，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Merchant Guild Feature",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 9,
+			"entries": [
+				"当你在这个职业中达到9级时，你的公会将授予你一个特性。"
+			]
+		},
+		{
+			"name": "Backstock",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 10,
+			"entries": [
+				"总是有可能你库存里正好有你需要的东西，你可能需要去后面检查一下。",
+				"使用你的动作，你可以把手放入为你的便携店铺指定的容器中，尝试找到一个物品。该物品的金币成本不得高于你的商人等级的五倍。命名该物品和{@dice d100|roll percentile dice}。如果你掷出的数字等于或低于你的商人等级，无论该物品是否已经出现在你的便携店铺中或者你是否有库存，该物品都会出现在你的手中。",
+				"你可以搜索物品的次数等于你的魅力调整值（最少为1次）。当你完成一次长休时，你会恢复所有已用次数。一旦你找到一个物品，你就不能再次使用这个特性，直到你完成一次长休。",
+				"当你在这个职业达到20级时，你总是第一次使用这个特性搜索物品时就找到它。"
+			]
+		},
+		{
+			"name": "Improved Top Shelf",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 11,
+			"entries": [
+				"一旦你达到11级，你就可以在你的便携式商店中储存稀有度不超过稀有的魔法物品。"
+			]
+		},
+		{
+			"name": "Use Magic Device",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 11,
+			"entries": [
+				"在你的交易和交往中遇到的顾客教会了你关于各种魔法物品的知识和运作方式。因此，即使这些物品不是为你设计的，你也能灵活运用。你可以忽略所有关于使用魔法物品的职业、种族和等级要求。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与常规规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Insider Trading",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 14,
+			"entries": [
+				"当你重新补充你的便携式店面时，你只需要商人表中价值列显示的金币数量的一半来完全补充它。",
+				"一旦你使用这个特性进行补充，直到你完成下一次长休之前都不能再次这样做。"
+			]
+		},
+		{
+			"name": "Merchant Guild Feature",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 15,
+			"entries": [
+				"当你在这个职业中达到15级时，你的公会将赋予你一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性时不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Improved Top Shelf",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 18,
+			"entries": [
+				"在18级时，你可以将稀有度不超过非常稀有的魔法物品存放在你的便携式商店中。"
+			]
+		},
+		{
+			"name": "On the House",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 18,
+			"entries": [
+				"你获得了一个特殊的第五级法术位，除了你的施法特性赋予的正常法术位之外。这个法术位只能用于你{@classFeature Spellcasting|Merchant|TPM|1|TPM|Spellcasting feature}的可交换施法和组件补贴能力。",
+				"一旦你使用了这个特性提供的法术位，你在完成一次长休后会重新获得它。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用专长(feats)，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Business Tycoon",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 20,
+			"entries": [
+				"你可以使用你的动作来立即为你的便携式店面中不在顶层货架上的物品补充货物，而无需付费。一旦你使用了这个特性，你在7天内不能再次这样做。"
+			]
+		},
+		{
+			"name": "Improved Backstock",
+			"source": "TPM",
+			"page": 6,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"level": 20,
+			"entries": [
+				"当你在这个职业达到20级时，在第一次使用你的{@classFeature Backstock|Merchant|TPM|10|TPM|Backstock feature}搜索时，你总是能找到物品。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Apothecary",
+			"source": "TPM",
+			"page": 7,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"旅行者经常寻求药剂师的帮助，使得这种交易成为各个领域中最赚钱的生意之一。炼金药剂商行会专注于销售和交易炼金药物和致命药膏。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Apothecary Magic|Merchant|TPM|Apothecary|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Potion Seller|Merchant|TPM|Apothecary|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Deft Decoctions|Merchant|TPM|Apothecary|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Apothecary Magic",
+			"source": "TPM",
+			"page": 7,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Apothecary Spells",
+					"page": 7
+				}
+			]
+		},
+		{
+			"name": "Deft Decoctions",
+			"source": "TPM",
+			"page": 7,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你可以使用{@action Use an Object}动作触摸一瓶药水、瓶子、烧瓶、小瓶或其他容器，并消耗一个1级或更高级的商人法术位来立即制作一个定制药水或给药水注入额外效果，每消耗一个法术位级别选择一个效果。不能多次选择同一个效果。药水可以在你制作药水的同一个{@action Use an Object}动作中使用。",
+				"药水效果列在这个子职业的最后，持续到药水被使用或者直到你进行下一次长休。你制造的药水对于你的{@classFeature Bang for Your Buck|Merchant|TPM|2|TPM|Bang for Your Buck feature}来说是魔法物品，并且属于爆炸或消耗品两种类型中的一种。",
+				{
+					"type": "inset",
+					"name": "Potion Effects",
+					"page": 8,
+					"entries": [
+						"药水效果按字母顺序列出。爆炸效果不能被选择为可消耗药水，反之亦然，除非在效果描述中另有规定。",
+						{
+							"type": "entries",
+							"name": "Blast",
+							"page": 8,
+							"entries": [
+								"你也可以将药剂投掷到你附近60英尺内的某个点。以该点为中心的半径10英尺的圆内的任何生物必须通过与你的法术豁免 DC 的豁免检定。未通过检定的生物将受到药剂的影响。药剂的半径每消耗1级以上的法术位等级增加10英尺。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Consumable",
+							"page": 8,
+							"entries": [
+								"必须饮用药剂才能获得它的好处。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Effects",
+							"page": 8,
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "options",
+													"entries": [
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Acclimation|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Baleful|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Boldness|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Corrosive|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Envenomed|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Flammable|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Flash Freeze|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Flight|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Healing|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Inoculate|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Sight|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Splash|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Swiftness|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Vanish|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Volatility|TPM"
+														},
+														{
+															"type": "refOptionalfeature",
+															"optionalfeature": "Zap|TPM"
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Potion Seller",
+			"source": "TPM",
+			"page": 7,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "TPM",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"medicine": true,
+					"nature": true
+				},
+				{
+					"medicine": true,
+					"any": 1
+				},
+				{
+					"nature": true,
+					"any": 1
+				},
+				{
+					"any": 2
+				}
+			],
+			"toolProficiencies": [
+				{
+					"herbalism kit": true
+				},
+				{
+					"any": 1
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你获得熟练加值于{@item herbalism kit|PHB|herbalism kits}、{@skill Medicine}和{@skill Nature}技能。如果你已经通过此特性获得了某项技能或工具的熟练加值，你可以选择另一个代替。",
+				"此外，您可以在您的便携式店面中以半价（四舍五入）储备药水，而且您制作药水和毒药所需的时间减半。"
+			]
+		},
+		{
+			"name": "Triage",
+			"source": "TPM",
+			"page": 8,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"你可以在休息期间处理伤口并施用药物，帮助增强你的盟友的自然愈合能力。在短暂或长时间休息期间，你可以处理数量等于你的魅力调整值的生物。被处理的生物获得以下好处：",
+				{
+					"type": "list",
+					"page": 8,
+					"items": [
+						"当在休息期间投掷治疗骰时投出1或2时，可以重新投掷该骰任意次数。",
+						"当它完成剩下的部分时，它会获得临时生命值，数值等同于你的魅力调整值加上你的商人等级。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Mithridatism",
+			"source": "TPM",
+			"page": 8,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "TPM",
+			"level": 9,
+			"resist": [
+				"poison"
+			],
+			"immune": [
+				{
+					"choose": {
+						"from": [
+							"poison"
+						]
+					}
+				},
+				{}
+			],
+			"conditionImmune": [
+				"disease",
+				"poisoned"
+			],
+			"header": 1,
+			"entries": [
+				"持续接触和治疗危险毒药和疾病使你拥有天生的抵抗力。你对毒性伤害具有抗性，并且免疫患病或中毒。如果你之前已经对毒性伤害具有抗性，这个特性会使你免疫毒性伤害。如果一个法术或其他效果让你对毒性伤害具有抗性，在效果持续期间，这个特性会使你免疫它。"
+			]
+		},
+		{
+			"name": "Socialized Medicine",
+			"source": "TPM",
+			"page": 8,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"每当你或你能看到的生物在你身边30英尺内消耗一瓶药水时，你可以使用你的反应将药水的效果延长到消耗者30英尺内的另一个你选择的生物身上。",
+				"一旦你使用这个特性，你必须完成一次短休或长休才能再次使用。"
+			]
+		},
+		{
+			"name": "Architect",
+			"source": "TPM",
+			"page": 9,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Architect",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在整个多元宇宙中，那些具备技能和训练来建造建筑物和规划定居点的人具有巨大的价值。建筑师公会的商人们将这些技能提升到了艺术的境界，利用魔法以无与伦比的速度和效率建造基础和墙壁，即使在紧要关头也能如此。尽管他们的墙壁建造显然匆忙，但这些商人建造的建筑物以持久和更好的老化而闻名，远胜于使用更传统方法建造的建筑物。无论您是想要建立一个养育家庭的地方还是抵御一支军队，一个建筑师都能为您提供保障。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Architect Magic|Merchant|TPM|Architect|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Property Developer|Merchant|TPM|Architect|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Laying Foundation|Merchant|TPM|Architect|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Architect Magic",
+			"source": "TPM",
+			"page": 9,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Architect",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Architect Spells",
+					"page": 9
+				}
+			]
+		},
+		{
+			"name": "Laying Foundation",
+			"source": "TPM",
+			"page": 9,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Architect",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你学会了如何使用魔法构建墙壁。作为一个动作，你可以让一个非魔法的坚实石墙在你能看到的60英尺内的地点突然出现。这堵墙是由石头制成的物体，可以被破坏从而被穿透。它的护甲等级等同于你的商人法术豁免 DC，它的尺寸和生命值取决于它的建造类型（每次你使用这个特性创建墙壁时都可以选择）：",
+				{
+					"type": "list",
+					"page": 9,
+					"items": [
+						"这堵墙是一块1英寸厚的、10英尺乘以10英尺的面板，其生命值等于你的商人等级 + 你的魅力调整值。",
+						"这堵墙是一块厚2英寸，5英尺乘以10英尺的面板，生命值等于你的商人等级的两倍加上你的魅力修正值。",
+						"这堵墙是一个4英寸厚的，5英尺乘以5英尺的面板，生命值等于你的商人等级的四倍加上你的魅力修正值。"
+					]
+				},
+				"如果墙壁出现时穿过生物的空间，生物会被推到墙壁的一侧（你选择的一侧）。如果生物会被墙壁和其他表面包围在四面，它可以根据你的法术豁免 DC 进行一次敏捷豁免检定。若成功，它可以使用其反应移动，速度不超过自身速度，以便不再被墙壁围住。",
+				"这堵墙不需要垂直，也不需要靠在坚固的基础上。然而，它必须与地面或环境中已有的构造物（如雕像、建筑、树木或巨石）融为一体，并得到坚实支撑。因此，你可以利用这个特性来跨越小缝隙或创建一个斜坡。",
+				"一旦创建，这堵墙会一直保留直到被摧毁。你可以在触摸到用这个特性创建的墙壁时使用你的动作来立即摧毁它。当你的一堵墙被摧毁时，它会安全地崩塌成碎石和灰尘。",
+				"一旦你使用这个特性，你必须完成一次长休，或者消耗一个法术位才能再次使用它。当你使用2级或更高级别的法术位来使用这个特性时，你可以创造与消耗的法术位等级相同数量的墙壁。这些墙壁可以合并成一个连续的、粗糙的结构，也可以在你能看到的范围内的不同点突然出现。每堵墙必须使用相同类型的结构。毁坏一个连续的墙可能会导致任何与其相连的墙在DM的决定下倒塌。"
+			]
+		},
+		{
+			"name": "Property Developer",
+			"source": "TPM",
+			"page": 9,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Architect",
+			"subclassSource": "TPM",
+			"level": 3,
+			"toolProficiencies": [
+				{
+					"carpenter's tools": true,
+					"mason's tools": true,
+					"woodcarver's tools": true
+				},
+				{
+					"any": 3
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你学会了{@spell mold earth|XGE}的战斗法术，并且获得了{@item carpenter's tools|PHB}、{@item mason's tools|PHB}和{@item woodcarver's tools|PHB}的熟练。如果你已经熟练掌握其中一个或多个工具，你可以选择另一个代替。",
+				"此外，您可以将建筑材料（如木材、灰泥、石头、茅草等）以半价（向上取整）的价格存放在您的便携式店铺中，包括任何一组{@item carpenter's tools|PHB}、{@item mason's tools|PHB}和{@item woodcarver's tools|PHB}。"
+			]
+		},
+		{
+			"name": "Structural Integrity",
+			"source": "TPM",
+			"page": 9,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Architect",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"当你使用你的{@subclassFeature Laying Foundation|Merchant|TPM|Architect|TPM|3|TPM}来创建一堵墙时，你可以在其中创建可以用来固定窗户和门的开口。你可以创建任意数量的开口，每个开口可以是任意大小和形状，但是开口的总面积不能超过墙面积的一半。",
+				"此外，当你看到你的{@subclassFeature Laying Foundation|Merchant|TPM|Architect|TPM|3|TPM}墙壁之一的生命值降至0时，你可以使用你的反应，并消耗一个法术位，使其每个消耗的法术位等级恢复{@dice 1d8}生命值。"
+			]
+		},
+		{
+			"name": "Supporting Wall",
+			"source": "TPM",
+			"page": 10,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Architect",
+			"subclassSource": "TPM",
+			"level": 9,
+			"header": 1,
+			"entries": [
+				"当你使用你的{@subclassFeature Laying Foundation|Merchant|TPM|Architect|TPM|3|TPM}特性创建一个或多个墙壁时，你可以看到的每个生物，距离至少一堵墙不超过5英尺，获得临时生命值，数值等同于你商人等级的一半。当生物从这个特性获得临时生命值时，该生物在抗击被击倒方面的任何能力检定或豁免检定都自动成功。"
+			]
+		},
+		{
+			"name": "Real Estate Mogul",
+			"source": "TPM",
+			"page": 10,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Architect",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"当你完成短休或长休时，你恢复对你的{@subclassFeature Laying Foundation|Merchant|TPM|Architect|TPM|3|TPM}特性的使用。",
+				"此外，你可以消耗一个4级或更高级的法术位来施放{@spell bones of the earth|XGE}，{@spell wall of ice}或{@spell wall of thorns}法术中的一个。一旦你达到本职业的17级，你可以消耗一个5级法术位来施放{@spell Mordenkainen's magnificent mansion}。一旦你达到本职业的20级，你可以消耗一个5级法术位来施放{@spell prismatic wall}。当你使用此特性施放任何这些法术时，它对你来说算作商人法术，你必须完成一次长休才能再次使用相同级别的法术位施放此特性的法术。"
+			]
+		},
+		{
+			"name": "Blacksmith",
+			"source": "TPM",
+			"page": 10,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Blacksmith",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"一把刀与绳索一样必不可少，铁匠商会（Blacksmiths Merchant Guild）靠着寻求刺激的旅行者发财。他们可能会成为锻造领域（Forge domain）的教士的好朋友，并且是队伍中武士的亲密盟友。一名战士如果让自己的刀剑和盔甲被锈怪（Rust Monster）氧化，通常会陷入困境，所以与王国中的武器商交好是明智之举。",
+				"在所有的商人行业中，铁匠是故事中最常见的，真正响应冒险的号召，因为在战争时期，他们可能会被要求敲击头骨而不是金属。铁匠行会的商人们已经改进了他们的魔法，使其成为便携式锻造炉，并研究了盔甲和武器附魔的强大本质。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blacksmith Magic|Merchant|TPM|Blacksmith|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arms Dealer|Merchant|TPM|Blacksmith|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Retool Enchantments|Merchant|TPM|Blacksmith|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Arms Dealer",
+			"source": "TPM",
+			"page": 10,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Blacksmith",
+			"subclassSource": "TPM",
+			"level": 3,
+			"weaponProficiencies": [
+				{
+					"simple": true,
+					"martial": true
+				}
+			],
+			"armorProficiencies": [
+				{
+					"light": true,
+					"medium": true,
+					"heavy": true,
+					"shield|phb": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"smith's tools": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"作为铁匠公会的一员，你获得对{@item smith's tools|PHB}以及所有武器和盔甲的熟练技能。",
+				"此外，您可以将盔甲和武器存放在您的便携式店铺中，价格为原价的一半（向上取整），而您制作金属盔甲和武器所需的时间减半。"
+			]
+		},
+		{
+			"name": "Blacksmith Magic",
+			"source": "TPM",
+			"page": 10,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Blacksmith",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Blacksmith Spells",
+					"page": 10
+				}
+			]
+		},
+		{
+			"name": "Retool Enchantments",
+			"source": "TPM",
+			"page": 10,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Blacksmith",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你可以花费一个短暂休息时间来分解和解除魔法盔甲或武器，只要它们没有诅咒。在这样做之后，你可以选择学习该物品上的一个属性，并可以用你这种方式学到的属性来给非魔法武器和盔甲附魔。例如，如果你解除了一个{@item +1 shortsword|DMG}，它在命中时还会造成{@damage 1d4}火焰伤害，你可以选择学习+1的攻击和伤害加值，或者额外的{@damage 1d4}火焰伤害。",
+				"附魔一件装备需要花费10分钟的时间与装备在一起，之后它将保持附魔状态24小时。可以同时使用这个特性附魔的物品数量等于你的魅力调整值。",
+				"你所创建的物品只能拥有一个属性。你可以在9级时给物品额外的两个属性，在15级时给物品额外的三个属性。"
+			]
+		},
+		{
+			"name": "Smash and Grab",
+			"source": "TPM",
+			"page": 11,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Blacksmith",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"每当你在你的回合中进行{@action Attack}动作时，你可以攻击两次，而不是一次。在你的回合中的一次，你可以用{@action Use an Object}动作替换其中一次攻击，来使用需要动作的物品。"
+			]
+		},
+		{
+			"name": "Heart of the Forge",
+			"source": "TPM",
+			"page": 11,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Blacksmith",
+			"subclassSource": "TPM",
+			"level": 9,
+			"resist": [
+				"fire"
+			],
+			"header": 1,
+			"entries": [
+				"你对火焰伤害具有抗性，当你受到钝击、穿刺、斩击或火焰伤害时，你可以使用你的反应来减少等于你体质调整值的伤害量。"
+			]
+		},
+		{
+			"name": "Forgemaster",
+			"source": "TPM",
+			"page": 11,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Blacksmith",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"在您的便携式商店中制作或储备的任何盔甲或武器都可以选择以下魔法属性之一，而无需增加制作或储备成本：",
+				{
+					"type": "list",
+					"page": 11,
+					"items": [
+						"攻击和伤害骰增加1点。",
+						"+1 护甲等级。",
+						"该武器额外造成你选择的伤害类型的{@damage 1d4}伤害。",
+						"武器或盔甲可以在1分钟内与被附魔的生物结合，可以作为一个奖励动作召唤（出现在身上或手中）或解除。",
+						"选择一个伤害类型。当佩戴者受到该伤害时，投掷{@dice 1d4}，并从伤害中减去投掷的数字。"
+					]
+				},
+				"物品可以通过你的{@subclassFeature Retool Enchantments|Merchant|TPM|Blacksmith|TPM|3|TPM|Retool Enchantments feature}获得附魔，而不会增加物品上的总附魔。一旦物品从你的便携式店铺中移除，就无法再放回去。",
+				"此外，当你在这个职业中达到17级时，每当你使用一个5级法术位施放一个增强武器或盔甲的法术时，它不需要{@status concentration}，而是被施放得好像你使用了一个9级法术位。"
+			]
+		},
+		{
+			"name": "Esotericism",
+			"source": "TPM",
+			"page": 11,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Esotericism",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"即使是那些使用古老语言的人和进行可怕仪式的人也必须提供他们宗教传统的复杂要求。当他们这样做时，他们会寻找(`guild of esotericism`)的商人，一位精通神秘古怪物品和阴森商品的专家评估师。(`esotericist`)通常被寻求来处理那些冒失的冒险者们所带来的诅咒，这些冒险者们到处摸索着他们能触及的每一件宝藏，有些(`esotericist`)会收取高昂的费用来解除诅咒的束缚。",
+				"在一些地区，这些商人已经与巫师结成联盟，并发展出巨大的经济和政治实力。在卢斯坎城中，奥术之塔（Host Tower of the Arcane）驻扎着奥术兄弟会（Arcane Brotherhood），这是一个神秘的组织，几个世纪以来一直是北方剑海岸的主要统治力量。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Esoteric Magic|Merchant|TPM|Esotericism|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eye for Curses|Merchant|TPM|Esotericism|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Page Master|Merchant|TPM|Esotericism|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Esoteric Magic",
+			"source": "TPM",
+			"page": 11,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Esotericism",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Esoteric Spells",
+					"page": 11
+				}
+			]
+		},
+		{
+			"name": "Eye for Curses",
+			"source": "TPM",
+			"page": 11,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Esotericism",
+			"subclassSource": "TPM",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"arcana": true
+				},
+				{
+					"any": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"jeweler's tools": true
+				},
+				{
+					"any": 1
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你获得{@skill Arcana}技能的熟练加值，以及{@item Jeweler's Tools|PHB|jeweler's kits}的熟练加值。如果你已经对这个特性赋予你的技能或工具有熟练加值，你可以选择另一个代替。",
+				"此外，每当你施放{@spell identify}时，你可以进行一次智力检定。如果检定结果为20或更高，你还可以得知该物品是否被诅咒，但不会得知诅咒的具体效果。"
+			]
+		},
+		{
+			"name": "Page Master",
+			"source": "TPM",
+			"page": 11,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Esotericism",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"如果你找到一个{@item spell scroll|DMG}，你可以将其添加到你的便携式店面中，无视便携式店面特性中列出的稀有度限制。每当你的便携式店面中有一个{@item spell scroll|DMG}，你可以准备并施放卷轴上的法术，就好像它是商人法术一样。如果你把它从你的便携式店面中取出，你将失去以这种方式施放它的能力，而且你必须遵守所有选择法术的限制，如你的施法特性中所描述的那样。通过这个特性在{@item spell scroll|DMG}上施放法术不会摧毁它，只要它仍然在你的便携式店面中。"
+			]
+		},
+		{
+			"name": "Occult Sagacity",
+			"source": "TPM",
+			"page": 12,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Esotericism",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"你与奥术智者的商业努力和合作伙伴关系教会了你如何在魔杖的反面识别一个咒语的手势和召唤。每当你目睹一个生物执行用于{@action cast a spell}的必要组件时，你可以使用你的反应来对该生物的施法DC进行一次{@skill Arcana}检定。成功时，你会得知这个咒语是什么，施法者的施法属性是什么，并且在接下来的一分钟内，你对该生物施放该咒语时进行的豁免检定获得优势。",
+				"你可以使用这个特性的次数等于你的魅力调整值(%num%)次，并在完成一次长休后恢复已用次数。"
+			]
+		},
+		{
+			"name": "The Patronage of Patrons",
+			"source": "TPM",
+			"page": 12,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Esotericism",
+			"subclassSource": "TPM",
+			"level": 9,
+			"header": 1,
+			"entries": [
+				"没有人会与古老神祇的教徒做生意而不采取适当的预防措施。 你可以使用你的动作使自己免疫任何能感知你的情绪或读取你的思想的效果，包括占卜法术，除非你允许，否则你不能被魔法或心灵交流。 这个效果持续1小时。",
+				"一旦你使用了这个特性，在完成短休或长休之前不能再次使用。如果你没有剩余的特性使用次数，你可以消耗一个2级或更高级的法术位来再次使用它。"
+			]
+		},
+		{
+			"name": "Curse Scribe",
+			"source": "TPM",
+			"page": 12,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Esotericism",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"每当你研究被诅咒的物品时，你可以选择了解诅咒的内部机制。当你对一个带有诅咒的物品施放{@spell identify}时，你会自动了解该物品是否被诅咒以及诅咒的属性。当你与一个被诅咒的物品建立联系时，你可以选择是否受到它的诅咒。",
+				"此外，你可以使用一个动作，将你能看到的距离30英尺内的另一个物品附上相同的诅咒。这样做不会将原物品上的诅咒移除。你只能让具有此特性的物品数量等于你的魅力调整值。如果对一个你已经附上诅咒的物品施放了{@spell remove curse}法术，它会完全移除该物品上的诅咒。"
+			]
+		},
+		{
+			"name": "Gambler",
+			"source": "TPM",
+			"page": 12,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gambler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"这些商人是另类的交易者，是娱乐和机会刺激的小贩。快速致富的诱惑众所周知，赌徒专精于轻松财富的诱人力量。",
+				"任何赌注的结果总是由运气、技巧或可能两者兼而有之来决定。赌徒商人公会的成员能够操纵这两个概念，确保赔率总是对他们有利。",
+				{
+					"type": "inset",
+					"page": 12,
+					"name": "Subclass Requirement: Poker Cards",
+					"entries": [
+						"这个子类需要一个{@item Playing Card Set|PHB|standard 52-card deck of Poker cards}（去除了王牌的一副牌）来使用它的特性。你的卡牌技能特性参考下面的卡牌技能表格：",
+						{
+							"type": "statblock",
+							"tag": "table",
+							"source": "TPM",
+							"name": "Cardistry",
+							"page": 12
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gambler Magic|Merchant|TPM|Gambler|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Jackpot|Merchant|TPM|Gambler|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cardistry|Merchant|TPM|Gambler|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Cardistry",
+			"source": "TPM",
+			"page": 13,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gambler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"insight": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"gaming set": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你获得熟练加值于{@item Playing Card Set|PHB|playing card sets}和{@skill Insight}技能。使用{@action Use an Object}动作，你可以使用手中持有的一副{@item Playing Card Set|PHB|playing cards}牌对距离60英尺内的生物进行远程法术攻击。命中时，牌造成{@damage 1d8} + 你的魅力调整值的伤害，伤害类型可以选择酸、冰冷、火焰或闪电中的一种。",
+				"此外，每当你进行能力检定、攻击检定或豁免检定时，你可以从一副标准的52张扑克牌（不包括小丑）中抽取一张牌，而不是掷骰子进行{@dice d20}。在这种情况下，查阅{@table Cardistry|TPM}表格，并使用该检定的结果，加上任何适用的修正值。",
+				"完成这个动作后，你将卡牌放入弃牌堆，你可以随时查看这些卡牌。当你完成短休或长休时，你可以将弃牌堆洗入你的牌库。"
+			]
+		},
+		{
+			"name": "Gambler Magic",
+			"source": "TPM",
+			"page": 13,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gambler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Gambler Spells",
+					"page": 13
+				}
+			]
+		},
+		{
+			"name": "Jackpot",
+			"source": "TPM",
+			"page": 13,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gambler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"每次你使用商人法术位时，投掷{@dice 3d10}。如果每个骰子都掷出7，那么法术位变为比原来高4级的法术位，在你的便携商店中出现与便携商店价值相等的金币，并且接下来的一分钟内，你进行的所有能力检定、攻击骰和豁免骰都获得优势。"
+			]
+		},
+		{
+			"name": "Poker Face",
+			"source": "TPM",
+			"page": 13,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gambler",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"你在进行能力检定和豁免检定时，获得优势，以防止他人感知你的动机、察觉你的情绪或读取你的思绪。"
+			]
+		},
+		{
+			"name": "Double or Nothing",
+			"source": "TPM",
+			"page": 13,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gambler",
+			"subclassSource": "TPM",
+			"level": 9,
+			"header": 1,
+			"entries": [
+				"当你看见一只生物命中攻击时，你可以使用你的反应来迫使该生物进行一次感知豁免投，它可以自愿失败。如果它失败了，从你的牌库中抽取一张牌，根据抽取的牌改变攻击骰结果：",
+				{
+					"type": "list",
+					"page": 13,
+					"items": [
+						"如果结果是20，伤害翻倍。",
+						"如果结果是2-19，这次攻击只造成普通伤害，任何由暴击触发的效果都被取消。",
+						"如果结果是1，则将该命中转换为未命中。"
+					]
+				},
+				"你可以使用这个特性的次数等于你的熟练加值。你也可以通过消耗一个2级或更高级别的法术位来使用这个特性。当你完成一次长休时，你会恢复所有已消耗的使用次数。",
+				"此外，如果你在骰子中的任何一个上投掷了一个7，你可以选择重新投掷任何一个骰子一次，以便重新投掷你的{@subclassFeature Jackpot|Merchant|TPM|Gambler|TPM|3|TPM|Jackpot feature}。"
+			]
+		},
+		{
+			"name": "The House Always Wins",
+			"source": "TPM",
+			"page": 13,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gambler",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"当你可以从你的牌库中抽一张牌时，你可以选择从弃牌堆中选择一张牌并将其用于结果。在你再次弃牌后，你必须将你的弃牌堆洗入你的牌库。",
+				"此外，如果你为你的{@subclassFeature Jackpot|Merchant|TPM|Gambler|TPM|3|TPM|Jackpot feature}掷骰子的总结果为7，你就会触发这个特性。一旦以这种方式触发，你必须完成一次长休才能再次触发。"
+			]
+		},
+		{
+			"name": "Gourmand",
+			"source": "TPM",
+			"page": 7,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gourmand",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"无论是屠夫还是面包师，厨师、烹饪师或糕点师，美食行会的商人涵盖了所有食品贩卖者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Culinarian's Connections|Merchant|TPM|Gourmand|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Magic Menu|Merchant|TPM|Gourmand|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gourmet|Merchant|TPM|Gourmand|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Culinarian's Connections",
+			"source": "TPM",
+			"page": 14,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gourmand",
+			"subclassSource": "TPM",
+			"level": 3,
+			"toolProficiencies": [
+				{
+					"cook's utensils": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"如果你还没有，你会获得{@item cook's utensils|PHB}的熟练加值。当你使用{@item cook's utensils|PHB}进行任何能力检定时，你的熟练加值会加倍。你可以使用{@action Use an Object}动作检查你周围5英尺内的任何食物，判断它是否被毒害，前提是你能看到或闻到它。",
+				"此外，你必须花费的金币来制作食物或补充口粮、食物、盐、香料以及你的便携式店铺中的{@item cook's utensils|PHB}，减半（四舍五入）。"
+			]
+		},
+		{
+			"name": "Gourmet",
+			"source": "TPM",
+			"page": 14,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gourmand",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"美食家是大厨，他们的食物质量如此之高，可以被视为珍贵的宝石。你可以花费10分钟准备这样一顿饭。这需要你随手准备烹饪器具，一种准备饭菜的场所（比如篝火或火炉），并且每磅食材需要花费1gp。你制作的任何饭菜在制作后可以持续24小时，除非你有保存它们的方法。",
+				"作为准备饭菜的一部分，你可以消耗一个商人法术位来赋予1磅食物魔法风味，从而让你可以选择以下一种方式影响食物：",
+				{
+					"type": "list",
+					"page": 14,
+					"items": [
+						"一种消耗食物的生物，其当前和最大生命值在接下来的24小时内增加{@dice 1d6} + 你的商人等级。当你达到该职业的第9级时，这个增加额外增加{@dice 1d6}。",
+						"这食物被注入了你的商人法术槽之一，就像通过你的{@classFeature Spellcasting|Merchant|TPM|1|TPM|Exchangeable Casting feature}一样，然后被食用者所获得。",
+						"食物被注入了你的商人法术之一，范围为自身或接触。当生物食用这顿饭时，该法术将以食用者为目标施放。"
+					]
+				},
+				"生物需要完全消耗这顿饭才能获得它的好处，至少需要1分钟来做到这一点，而且一次只能从你的一顿饭中获益。",
+				{
+					"type": "inset",
+					"page": 14,
+					"name": "Gourmet and the Chef Feat",
+					"entries": [
+						"美食家特性的设计是为了与{@feat Chef|TCE}特性（来自{@book Tasha's Cauldron of Everything|TCE}）和其他流行的自制烹饪规则配合使用，而不是相互抵触。",
+						"我建议如果你允许食用能够提供被动增益的食材，那么效果不应该超过杂货商熟练加值的一半，向下取整，相当于一个法术等级。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Magic Menu",
+			"source": "TPM",
+			"page": 14,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gourmand",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术，或者可以从特定列表中选择一个法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你来说仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Gourmand Spells",
+					"page": 14
+				},
+				"此外，当你准备商人法术时，你的行会允许你访问以下列表中的额外法术，这些法术将被添加到你的商人法术列表中。",
+				{
+					"type": "list",
+					"style": "list-no-bullets",
+					"columns": 5,
+					"page": 14,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "Cantrips (0-level)",
+							"items": [
+								"{@spell frostbite|XGE}",
+								"{@spell produce flame}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "1st-Level",
+							"items": [
+								"{@spell burning hands}",
+								"{@spell fondue fountain|TPM}",
+								"{@spell goodberry}",
+								"{@spell grease}",
+								"{@spell hellish rebuke}",
+								"{@spell ice knife|XGE}",
+								"{@spell popping corn|TPM}",
+								"{@spell searing smite}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "2nd-Level",
+							"items": [
+								"{@spell Aganazzar's scorcher|XGE}",
+								"{@spell heat metal}",
+								"{@spell healing spirit|XGE}",
+								"{@footnote light bulb|This spell is not found within the document.} {@sup NAD}",
+								"{@spell scorching ray}",
+								"{@spell Snilloc's snowball swarm|XGE}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "3rd-Level",
+							"items": [
+								"{@spell aura of vitality}",
+								"{@spell create mandrake|TPM}",
+								"{@spell fireball}",
+								"{@spell plant growth}",
+								"{@spell stinking cloud}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "4th-Level",
+							"items": [
+								"{@spell fruits of labor|TPM}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "5th-Level",
+							"items": [
+								"{@spell animate objects}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flavortown",
+			"source": "TPM",
+			"page": 14,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gourmand",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"您的菜肴如此精致，仅凭味道就能推断出它们的好处。生物可以使用{@action Use an Object}动作来食用您准备的食物一口，立即获得其好处，而不是在短暂休息或长时间休息结束时获得。",
+				"生物必须完成一次长休才能再次受益于这个特性。"
+			]
+		},
+		{
+			"name": "Natural Preservatives",
+			"source": "TPM",
+			"page": 14,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gourmand",
+			"subclassSource": "TPM",
+			"level": 9,
+			"savingThrowProficiencies": [
+				{
+					"con": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"从事餐饮行业意味着你总是能吃得很好。在你至少吃掉1磅食物后，你获得对体质豁免投掷的熟练加值。如果你超过24小时没有进餐，你将失去这个熟练加值。"
+			]
+		},
+		{
+			"name": "Soup for the Soul",
+			"source": "TPM",
+			"page": 15,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Gourmand",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"每当一个生物在短休息中吃了你准备的食物，它会获得完成了一次长休息的益处。在完成休息后，该生物再次无法从这个特性中获益，直到完成{@dice 1d4}次长休息。"
+			]
+		},
+		{
+			"name": "Mariner",
+			"source": "TPM",
+			"page": 15,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"水手公会包括鱼贩、码头主管，甚至一些海盗，他们希望在某种程度上合法化他们的行动。这个由航海者和海事贸易商组成的网络也充当着某种程度上的开放水域的治理机构，因为在大多数世界中，海事法律往往难以执行，甚至是不可能的。要成为一名水手，你需要坚定的决心、勇气，如果你能编织一个精彩的故事，那就更好了。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maritime Magic|Merchant|TPM|Mariner|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Any Port in a Storm|Merchant|TPM|Mariner|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dock Master|Merchant|TPM|Mariner|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Any Port in a Storm",
+			"source": "TPM",
+			"page": 16,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在港口定居时，只要当地承认你是本行会员且信誉良好，你可以以半价（四舍五入）补充你便携商店的{@item fishing tackle|PHB}、{@item net|PHB|nets}、{@item Hempen Rope (50 feet)|PHB|rope}和{@item trident|PHB|tridents}。此外，你还可以享受食物、住宿和海上旅行半价优惠。",
+				"此外，当你进行与航海导航、水上船只的维护和操作，或者打结相关的能力检定时，你被视为精通该技能，并且将你的熟练加值翻倍加到检定中，而不是你正常的熟练加值。"
+			]
+		},
+		{
+			"name": "Dock Master",
+			"source": "TPM",
+			"page": 16,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 3,
+			"weaponProficiencies": [
+				{
+					"net|phb": true,
+					"trident|phb": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"vehicles (water)": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你获得一个与你步行速度相同的游泳速度，并且熟练掌握{@item net|PHB|nets}、{@item trident|PHB|tridents}和车辆（水上）的使用。如果你已经熟练掌握此特性赋予的工具，你可以选择另一个代替。你可以使用{@action Use an Object}动作使用{@item net|PHB}进行攻击，你的{@classFeature Bang for Your Buck|Merchant|TPM|2|TPM|Bang for Your Buck feature}适用于这种方式使用的渔网。"
+			]
+		},
+		{
+			"name": "Maritime Magic",
+			"source": "TPM",
+			"page": 15,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Maritime Spells",
+					"page": 15
+				}
+			]
+		},
+		{
+			"name": "Sea Legs",
+			"source": "TPM",
+			"page": 16,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"你在抵抗被移动或击倒时的能力检定和豁免投掷中获得优势{@condition prone}(Advantage on ability checks and saving throws to resist being moved or knocked)."
+			]
+		},
+		{
+			"name": "Ship-Shape",
+			"source": "TPM",
+			"page": 16,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"当你看到船只的一个部件受损时，你可以使用你的反应并消耗一个法术位，使其恢复{@dice 1d8}点生命值，每消耗一个法术位等级。这将使无法操作的部件变得可操作。"
+			]
+		},
+		{
+			"name": "Old Salt",
+			"source": "TPM",
+			"page": 16,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 9,
+			"resist": [
+				"cold",
+				"lightning"
+			],
+			"header": 1,
+			"entries": [
+				"在世界上最汹涌的水域生活使你变得勇敢无畏，习惯于与自然的最猛烈抗争。你获得以下好处：",
+				{
+					"type": "list",
+					"page": 16,
+					"items": [
+						"你对冰冷和闪电伤害具有抗性。",
+						"你可以透过雾和雨看到{@quickref Vision and Light|PHB|2|0|obscured}区域。",
+						"使用{@item net|PHB|nets}时，你可以{@condition restrained|PHB|restrain}巨型或更小的生物。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Winds of Trade",
+			"source": "TPM",
+			"page": 16,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"当你施放{@spell gust of wind|PHB}法术时，它不需要{@status concentration}，持续时间增加至8小时，你可以选择让风专门瞄准范围内船只的与移动相关的部分，使船只的行进速度加倍。这样做不会影响船上的任何生物或货物，但你可以使用你的奖励动作将法术改变为法术中描述的效果。"
+			]
+		},
+		{
+			"name": "Pet Dealer",
+			"source": "TPM",
+			"page": 17,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Pet Dealer",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"宠物商人是友谊的商人，他们漫游世界，发现文明未曾见过的野兽。宠物商人知道一些顾客有着不寻常的口味，甚至愿意尝试驯服领域中的不寻常怪物，因为谁不想拥抱一只蓬松的{@creature owlbear}幼崽或者让家犬复活呢？",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pet Dealer Magic|Merchant|TPM|Pet Dealer|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mobile Menagerie|Merchant|TPM|Pet Dealer|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Domesticate|Merchant|TPM|Pet Dealer|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Domesticate",
+			"source": "TPM",
+			"page": 17,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Pet Dealer",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当一只未驯服的野兽未能通过你施放的魅惑法术的豁免检定，或者你对其进行了{@skill Animal Handling}检定并成功时，你可以尝试驯服它。要这样做，该野兽的挑战等级必须等于或低于你商人等级的一半，或者法术的等级（以较低者为准），并且你必须花费（该生物的CR × 100）金币，这些金币会被消耗掉。然后，该野兽必须通过一次感知豁免检定，否则将被你驯服。",
+				"一只驯养的野兽是你和你的同伴的盟友。在战斗中，这只生物与你共享先攻顺序，但它会在你之后立即行动。它可以自行移动并使用反应，但除非你在你的回合中采取一个额外动作来命令它执行另一个动作，否则它在自己的回合中只能执行{@action Dodge}动作。那个动作可以是它的属性块中的动作，也可以是其他动作。如果你是{@condition incapacitated}，防御者可以采取任何选择的动作，而不仅仅是{@action Dodge}。",
+				"你一次只能控制一只驯养的野兽。如果一只野兽被忽略超过1周，它将恢复到野性本能，不再被驯养。"
+			]
+		},
+		{
+			"name": "Mobile Menagerie",
+			"source": "TPM",
+			"page": 17,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Pet Dealer",
+			"subclassSource": "TPM",
+			"level": 3,
+			"expertise": [
+				{
+					"animal handling": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你获得 {@skill Animal Handling} 检定的熟练加值，并且在进行 {@skill Animal Handling} 检定时，你的熟练加值翻倍。",
+				"此外，当你施放{@spell find familiar}时，你选择的动物形态可以是{@filter any beast of a challenge rating of 1/8 or lower|bestiary|source=|Challenge Rating=[&0;&1/8]|type=beast|miscellaneous=!adventure npc}，并且你可以使用20 gp 作为施法的额外材料组件，该材料会被消耗。如果你这样做，咒语的施法时间是瞬间的，熟悉生物将变成一个自主野兽，不再受咒语影响。"
+			]
+		},
+		{
+			"name": "Pet Dealer Magic",
+			"source": "TPM",
+			"page": 17,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Pet Dealer",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Pet Dealer Spells",
+					"page": 17
+				}
+			]
+		},
+		{
+			"name": "Exceptional Taming",
+			"source": "TPM",
+			"page": 17,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Pet Dealer",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"野兽在对抗你的商人法术的{@condition charmed}豁免 throws 时有劣势。",
+				"此外，你驯养和召唤出来的生物的攻击现在被视为魔法攻击，可以克服对非魔法攻击和伤害的抗性和免疫力。"
+			]
+		},
+		{
+			"name": "Bestiary Exotica",
+			"source": "TPM",
+			"page": 17,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Pet Dealer",
+			"subclassSource": "TPM",
+			"level": 9,
+			"header": 1,
+			"entries": [
+				"你现在可以同时控制两只驯养生物，并且你可以选择以下一个特性：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Dead Petz|TPM"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Exotic Pets|TPM"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Otherworldly Pets|TPM"
+								},
+								{
+									"type": "refOptionalfeature",
+									"optionalfeature": "Pack Leader|TPM"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Zoo Tycoon",
+			"source": "TPM",
+			"page": 18,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Pet Dealer",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"当你施放一个{@filter merchant spell that summons creatures|spells|source=|class=merchant (tpm)|subclass=merchant: pet dealer (tpm)|components & miscellaneous=smn}时，你可以不消耗法术位或材料成分来施放它。如果你这样做，该法术不需要{@condition concentration}，并且在那次施法中持续时间变为1分钟。",
+				"你可以使用这个特性一次，当你完成一次长休后，你恢复使用这个特性的能力。"
+			]
+		},
+		{
+			"name": "Swindler",
+			"source": "TPM",
+			"page": 18,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Swindler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"无论技能如何，盗贼们仍然需要找到人来支付他们偷来的货物和走私品。黑市应运而生，以促进这种交易，几乎总是会建立一个欺诈者公会。也许最著名的这类组织之一，可以归入这个公会范围的是黑网络(Zhentarim)的黑色网络，几个世纪以来一直在穆恩海(Moonsea)地区运输产品。他们庞大的商业联系网络已经在费伦(Faerûn)大陆传播了毒品、奴隶、毒药，甚至非法武器。",
+				"骗子并非总是要从事道德上令人反感的活动，所有团队都可以利用某人具有更灵活道德观念的帮助。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swindler Magic|Merchant|TPM|Swindler|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hustler's Gambit|Merchant|TPM|Swindler|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Misdirection|Merchant|TPM|Swindler|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Hustler's Gambit",
+			"source": "TPM",
+			"page": 18,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Swindler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"languageProficiencies": [
+				{
+					"thieves' cant": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"deception": true
+				},
+				{
+					"sleight of hand": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit|phb": true,
+					"forgery kit|phb": true
+				}
+			],
+			"header": 2,
+			"entries": [
+				"你可以选择获得{@skill Deception}或{@skill Sleight of Hand}技能的熟练加成，同时也获得{@item disguise kit|PHB|disguise kits}和{@item forgery kit|PHB|forgery kits}的熟练加成。每当你重新补充你的便携式店面时，你可以以半价补充{@item Ball Bearings (bag of 1,000)|PHB|ball bearings}、小玩意儿、{@item disguise kit|PHB|disguise kits}和{@item forgery kit|PHB|forgery kits}。",
+				"另外，你学会了{@language Thieves' Cant|PHB}，就像在{@class rogue|PHB}职业{@homebrew see below|(Player's Handbook p. 96)}类中详细描述的那样。",
+				{
+					"type": "refClassFeature",
+					"classFeature": "Thieves' Cant|Rogue|PHB|1|PHB"
+				}
+			]
+		},
+		{
+			"name": "Misdirection",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Swindler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"作为一个动作，你可以对距离你5英尺以内的生物进行一个魅力检定（{@skill Deception}）或敏捷检定（{@skill Sleight of Hand}），检定结果需超过该生物的被动感知{@skill Perception}。若成功，你可以交换该生物携带或持有的物品，与你携带或持有的物品进行交换。你必须能够合理地用一只手拿住这个物品才能这样做。若失败，你在接下来的24小时内对该生物进行这些能力检定时有劣势，并且会激怒该生物，引发一次{@action opportunity attack}。"
+			]
+		},
+		{
+			"name": "Swindler Magic",
+			"source": "TPM",
+			"page": 18,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Swindler",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Swindler Spells",
+					"page": 18
+				}
+			]
+		},
+		{
+			"name": "Now You See Me...",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Swindler",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"当你使用你的行动来使用你的{@subclassFeature Misdirection|Merchant|TPM|Swindler|TPM|3|TPM}特性时，你可以使用你的奖励行动来进行一个{@action attack}或{@action use an object}，这需要使用一个行动。"
+			]
+		},
+		{
+			"name": "Double-Dealer",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Swindler",
+			"subclassSource": "TPM",
+			"level": 9,
+			"savingThrowProficiencies": [
+				{
+					"int": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你在智力豁免检定上获得熟练加值，每当你对抗幻术进行能力检定时，你可以将你的熟练加值加到检定中。",
+				"此外，任何手段都不能强迫你说出真相，如果另一个生物试图读取你的思维，它会相信你希望它相信的任何事情。"
+			]
+		},
+		{
+			"name": "...Now You Don't",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Swindler",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"每当一个敌对生物以法术或攻击瞄准你时，你可以使用你的反应来魔法地变成{@condition invisible}，直到你的下一个回合开始或者直到你进行攻击、造成伤害骰投掷，或者迫使某人进行豁免骰投掷。",
+				"一旦你使用了这个特性，在完成短休或长休之前不能再次使用。如果你没有剩余的特性使用次数，你可以消耗一个2级或更高级的法术位来再次使用它。"
+			]
+		},
+		{
+			"name": "Nomadic Acuity",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 3,
+			"expertise": [
+				{
+					"survival": true,
+					"vehicles (land)": true,
+					"vehicles (space)": true,
+					"vehicles (water)": true,
+					"navigator's tools|phb": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你获得{@item navigator's tools|PHB}、所有载具和{@skill Survival}技能的熟练加成。在使用这些熟练加成进行能力检定时，你的熟练加成翻倍。"
+			]
+		},
+		{
+			"name": "Those Who Wander",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"你总是知道哪个方向是北方，而且你可以完美地回忆起你走过的任何路径。当你在一个不需要使用魔法就能生存的环境中完成一次长休息时，你会适应那个环境的气候（如{@book Chapter 5 of the Dungeon Master's Guide|DMG|5|Wilderness Survival}中描述的那样）。你会保持对该气候的适应直到再次使用这个特性。",
+				"此外，当以正常或缓慢的速度旅行时，你的队伍获得以下好处：",
+				{
+					"type": "list",
+					"page": 19,
+					"items": [
+						"你不能通过非魔法手段迷失或惊讶。",
+						"非魔法的{@quickref difficult terrain|PHB|3}对你没有影响。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Vagabond",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"流浪商人公会欢迎没有固定住所的商人，如商队队长和通勤商人。虽然其他商人更喜欢待在他们的商店里，但流浪者勇敢地面对这个荒蛮世界，对任何冒险队伍来说都是一个受欢迎的景象。流浪者公会会选择熊、马、候鸟、浣熊、大象，甚至牛头人作为他们的吉祥物，代表着他们的旅程、决心和不会迷路的特质。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nomadic Acuity|Merchant|TPM|Vagabond|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Those Who Wander|Merchant|TPM|Vagabond|TPM|3|TPM"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vagabond Magic|Merchant|TPM|Vagabond|TPM|3|TPM"
+				}
+			]
+		},
+		{
+			"name": "Vagabond Magic",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到商人等级栏中注明的等级时，你将获得以下法术。你始终准备这些法术，它们不计入你每天可以准备的法术数量。如果一个法术不在商人法术列表中，但对你而言仍然是商人法术。",
+				{
+					"type": "statblock",
+					"tag": "table",
+					"source": "TPM",
+					"name": "Vagabond Spells",
+					"page": 19
+				}
+			]
+		},
+		{
+			"name": "Caravaneer",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 5,
+			"header": 1,
+			"entries": [
+				"你的行走速度增加10英尺。当骑乘坐骑或控制载具时，它们的每个速度都会增加10英尺。",
+				"当你达到9级时，这个奖励增加到15英尺。当你达到15级时，这个奖励增加到20英尺。"
+			]
+		},
+		{
+			"name": "Spry",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 9,
+			"savingThrowProficiencies": [
+				{
+					"dex": true
+				}
+			],
+			"header": 1,
+			"entries": [
+				"你在敏捷豁免投掷上获得熟练加值。"
+			]
+		},
+		{
+			"name": "Everywhere at Once",
+			"source": "TPM",
+			"page": 19,
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"你的{@subclassFeature Vagabond Magic|Merchant|TPM|Vagabond|TPM|3|TPM|Vagabond Spells}特性赋予的法术不需要你的{@status concentration}，而且通过你的商人法术提供的传送法术的传送距离增加了20英尺。"
+			]
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Dock Master",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Mariner",
+			"subclassSource": "TPM",
+			"level": 3,
+			"effects": [
+				{
+					"name": "Dock Master",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.movement.swim",
+							"mode": "UPGRADE",
+							"value": "data.attributes.movement.walk"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Caravaneer",
+			"source": "TPM",
+			"className": "Merchant",
+			"classSource": "TPM",
+			"subclassShortName": "Vagabond",
+			"subclassSource": "TPM",
+			"level": 5,
+			"effects": [
+				{
+					"name": "Caravaneer",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "10"
+						}
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Acclimation",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"喝下这个药剂的人在对抗 {@hazard extreme heat|DMG} 和 {@hazard extreme cold|DMG} 的体质豁免 throws 时获得优势。"
+			]
+		},
+		{
+			"name": "Baleful",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"在距离该点10英尺半径范围内的任何生物必须成功进行一次体质豁免才能免受影响。失败的生物会受到{@damage 2d6}点死灵伤害，并且直到其下一回合结束前都无法恢复生命值。成功的生物只受到一半伤害。"
+			]
+		},
+		{
+			"name": "Boldness",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"饮用药剂的人可以投掷一个{@dice d4}，并将投掷的数字加到接下来一分钟内进行的一次攻击骰或豁免骰中。"
+			]
+		},
+		{
+			"name": "Corrosive",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"区域内的任何目标必须成功进行一次敏捷豁免才能避免受到{@damage 2d6}酸性伤害。物体和建筑受到双倍伤害。成功豁免的目标只受到一半伤害。"
+			]
+		},
+		{
+			"name": "Dead Petz",
+			"source": "TPM",
+			"page": 17,
+			"featureType": [
+				"PDE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"subclass": {
+							"name": "Pet Dealer",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"_": [
+							"summon undead|TCE"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你准备了{@spell summon undead|TCE}法术。对你来说，它算作商人法术，不计入你可以准备的法术数量。你用这个法术召唤的不死生物总是采取野兽的形态。"
+			]
+		},
+		{
+			"name": "Envenomed",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"喝下者必须成功进行一次体质豁免才能避免受到{@damage 2d6}毒素伤害，并在接下来的1分钟内变为{@condition poisoned}。在这种状态下，喝下者在每个回合开始时会受到{@damage 1d6}毒素伤害。"
+			]
+		},
+		{
+			"name": "Exotic Pets",
+			"source": "TPM",
+			"page": 18,
+			"featureType": [
+				"PDE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"subclass": {
+							"name": "Pet Dealer",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"现在，您的商人法术和特性中受限于野兽的效果可以影响畸变生物。"
+			]
+		},
+		{
+			"name": "Flammable",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"区域内的任何目标必须成功进行一次敏捷豁免才能避免受到{@damage 1d6}火焰伤害并着火。在着火状态下，目标在每个回合开始时受到{@damage 1d6}火焰伤害。目标可以通过使用动作进行一次敏捷检定来熄灭火焰以结束这种伤害。如果被攻击的易燃物品没有被穿戴或携带，它将被点燃。成功时，目标受到一半伤害并且不会着火。"
+			]
+		},
+		{
+			"name": "Flash Freeze",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"该区域内的任何目标必须成功进行一次体质豁免才能免受{@damage 2d6}冰冷伤害，并且其移动速度减半，直到其下一个回合结束。成功豁免的目标只受到一半伤害。"
+			]
+		},
+		{
+			"name": "Flight",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"喝下这瓶药剂的人获得10英尺的飞行速度，持续1分钟。如果用来赋予药剂这种效果的法术位是3级或更高级的，速度增加到30英尺，持续1小时。"
+			]
+		},
+		{
+			"name": "Healing",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"喝下这瓶药剂的角色会恢复{@dice 2d4}点生命值。这瓶药剂的治疗效果会随着用来制作药剂的法术位等级高于1级和每额外花费50 gp 而增加{@dice 2d4}。"
+			]
+		},
+		{
+			"name": "Inoculate",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"喝下这个药剂的人将被治愈，不再受到 {@condition blinded}，混乱，或 {@condition deafened} 的影响。"
+			]
+		},
+		{
+			"name": "Otherworldly Pets",
+			"source": "TPM",
+			"page": 18,
+			"featureType": [
+				"PDE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"subclass": {
+							"name": "Pet Dealer",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"现在，你的商人法术和特性中受限于野兽的效果也可以影响畸变生物。"
+			]
+		},
+		{
+			"name": "Pack Leader",
+			"source": "TPM",
+			"page": 18,
+			"featureType": [
+				"PDE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"subclass": {
+							"name": "Pet Dealer",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"_": [
+							"beast bond|XGE"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你已经准备好了{@spell beast bond|XGE}法术。对你来说，它算作商人法术，不会计入你可以准备的法术数量。你可以将其作为一个奖励动作施放，而且不需要你的{@status concentration}。此外，你可以不消耗法术位的情况下，最多使用次数等于你的魅力调整值来施放它，并在完成一次长休后恢复以这种方式施放的能力。"
+			]
+		},
+		{
+			"name": "Sight",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"饮用者在1小时内获得30英尺的{@sense darkvision}。"
+			]
+		},
+		{
+			"name": "Splash",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"一个可消耗的药水，获得这种效果后可以用作爆炸药水，区域内的目标可以自愿放弃豁免投掷。"
+			]
+		},
+		{
+			"name": "Swiftness",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"饮用者的步行速度在1小时内增加10英尺。"
+			]
+		},
+		{
+			"name": "Vanish",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:C"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"饮用者立即转 {@condition invisible} 直到其下一个回合结束，或者如果它进行了一次 {@action attack} 或 {@action cast a spell|PHB|casts a spell}。"
+			]
+		},
+		{
+			"name": "Volatility",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"药水效果造成的伤害增加了{@damage 1d6}，半径增加了10英尺。"
+			]
+		},
+		{
+			"name": "Zap",
+			"source": "TPM",
+			"page": 8,
+			"featureType": [
+				"PE:B"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "TPM"
+						}
+					}
+				}
+			],
+			"entries": [
+				"区域内的任何目标必须成功进行一次体质豁免才能免受{@damage 2d6}闪电伤害，否则它在接下来的回合结束前不能作出反应。豁免成功的目标只受一半伤害。"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Mugger",
+			"source": "TPM",
+			"page": 25,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"wis"
+						],
+						"amount": 1,
+						"count": 1
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"sleight of hand": true
+				}
+			],
+			"entries": [
+				"你灵巧的双手使你能够在攻击时从目标身上偷取或植入物品。你获得以下好处：",
+				{
+					"type": "list",
+					"page": 25,
+					"items": [
+						"你获得{@skill Sleight of Hand}技能的熟练加成。",
+						"每当你在与目标距离5英尺以内进行近战攻击时，你可以作为攻击的一部分对目标的被动{@skill Perception}进行敏捷（{@skill Sleight of Hand}）检定，尝试从目标身上偷取物品或植入物品。成功时，你可以从目标身上偷取一个物品，或者在目标身上植入一个物品。这个物品必须足够小，可以用一只手拿起，并且不能是目标正在穿戴或使用的物品。如果攻击是暴击，你可以带有优势进行{@skill Sleight of Hand}检定。"
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Create Mandrake",
+			"source": "TPM",
+			"page": 20,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a mandrake root and a squirrel's heart"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"当你不断地向自然力量祈祷时，你将曼德拉草根雕刻成一个人形，并在胸口开一个口，将松鼠的心脏放入其中。",
+				"完成后，曼陀罗根会突变并长成一个{@creature mandrake minion|TPM}，使用以下属性。",
+				"一旦创造出来，这个生物就是你忠实的伙伴，听从你的命令。在你的每个回合中，你可以使用一个额外动作来精神指挥你用这个法术制造的任何魔鬼根手下，只要它在你的60英尺范围内（如果你控制多个生物，你可以同时命令任何一个或全部生物，给每一个下达相同的命令）。你决定这个生物将采取什么行动以及在下一个回合中它将移动到哪里，或者你可以发布一个一般性命令，比如守护特定的房间或走廊。",
+				"如果你不发布任何命令，该生物只会在有敌对生物存在时自卫，或者在没有敌对生物存在时跟随你。一旦接到命令，该生物会继续遵循直到任务完成。",
+				"{@creature mandrake minion|TPM}可以使用简单武器和物品，但不能穿戴盔甲。它具有类人生物的智力得分，使其能够解决简单问题并执行任务，而无需您提供详细说明。",
+				"{@creature mandrake minion|TPM}会一直保留，直到它或你被杀死。你一次只能控制数量等于你的施法能力调整值的{@creature mandrake minion|TPM|mandrake minions}。",
+				"当你达到最大数量时，创建一个新的{@creature mandrake minion|TPM}会导致你控制下的最老的{@creature mandrake minion|TPM}死亡。",
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "TPM",
+					"name": "Mandrake Minion",
+					"page": 20,
+					"style": "inset"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SMN",
+				"UBA"
+			]
+		},
+		{
+			"name": "Cruciferous Comets",
+			"source": "TPM",
+			"page": 20,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a cabbage or other cruciferous vegetable, studded with small meteorites"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你选择范围内的一个点，将蔬菜抛向空中。然后蔬菜分裂成多个副本，以极大的力量坠落。距离该点20英尺范围内的所有生物必须进行一次敏捷豁免检定，未通过的将受到{@damage 2d6} 钝击伤害，通过的则受到一半伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels:",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害增加{@dice 1d6}，半径每超过1级的法术位增加5英尺。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Doohickey",
+			"source": "TPM",
+			"page": 21,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tool or utensil from a set of artisan's tools"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"在施法时使用的工具或器具会被赋予内在的魔法力量，这个力量具有价值。",
+				"在此期间，您可以使用您的施法能力代替力量进行使用该物品的近战攻击的攻击和伤害骰，您可以使用{@action Use an Object}动作而不是{@action Attack}动作进行攻击。",
+				"该物品的伤害骰为其形态所适用的伤害类型之一，可以是钝击、穿刺或劈砍中的{@dice d6}。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Exchange",
+			"source": "TPM",
+			"page": 21,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a handful of coins"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在将硬币握在手中后，你立即将它们转化为你之前见过的价值相等的另一种货币形式。如果这样做是为了创造价值较低的硬币（例如1金币转化为10银币），那么法术会创造它们，最多不超过10枚硬币。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"miscTags": [
+				"PRM"
+			]
+		},
+		{
+			"name": "Find Vessel",
+			"source": "TPM",
+			"page": 21,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@note This spell graciously provided by Benjamin Huffman.}",
+				"你召唤一个灵体，它化身为一艘水上船只。灵体出现在你选择的范围内的一个空位上，采取你选择的形态：{@item keelboat|DMG} 或 {@item rowboat|DMG}。这艘船具有《地牢主宰手册》中所提供的所选形态的统计数据。此外，这艘船对非魔法来源的钝击、穿刺和斩击伤害免疫。",
+				"你在操纵船只时获得优势。当你在船上时，它会听从你的口头指令，使你可以忽略操作车辆所需的最低船员数量。船只的速度、货物重量限制和生命值都加倍。当你召唤船只时，你可以再次施放这个法术，将其生命值恢复到最大值。",
+				"当飞船的生命值降至0点或者你将其作为一个动作解散时，飞船会消失。当飞船消失时，它会留下它携带的任何生物或物体。",
+				"你不能同时召唤超过一个容器，通过这个法术。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你用5级或更高级别的法术位施放这个法术时，你可以从两种额外的水上船只形状中选择召唤的灵体：{@item longship|DMG}或{@item sailing ship|DMG}。当你使用7级或更高级别的法术位施放这个法术时，你可以从另外两种额外的水上船只形状中选择召唤的灵体：{@item galley|DMG}或{@item warship|DMG}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"ADV",
+				"HL",
+				"OBJ",
+				"SMN"
+			]
+		},
+		{
+			"name": "Fondue Fountain",
+			"source": "TPM",
+			"page": 21,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a wheel of cheese worth at least 15 gp, which the spell consumes",
+					"cost": 1500,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你让奶酪自发地沸腾并喷射成一条长20英尺、宽5英尺的线。该区域内的生物必须进行一次敏捷豁免。未通过豁免的生物会受到{@damage 2d4}火焰伤害，并且其速度将在下一回合结束前减少10英尺。通过豁免的生物只受到一半伤害，且速度不会减少。",
+				"此外，线的区域以及线外5英尺的区域（不包括你的空间）覆盖着黏黏的奶酪，变成了{@quickref difficult terrain|PHB|3}，每移动1英尺需要额外消耗3英尺的移动力，持续1分钟。之后，奶酪会变硬。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels:",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害增加 {@dice 2d4}，每超过1级的法术位长度增加5英尺。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Fool's Gold",
+			"source": "TPM",
+			"page": 22,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "1 gold coin"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"{@note This spell graciously provided by Benjamin Huffman.}",
+				"当你施放这个法术时，你会使你用作这个法术的物质组件的硬币附魔。在这个法术持续时间结束之前的任何时候，你都可以将硬币召回到你的手中。这样做会结束这个法术。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Fruits of Labor",
+			"source": "TPM",
+			"page": 22,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an apple seed suspended in a small vial of blood, sweat, and tears"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造了3个魔法水果，外表和口味与你选择的任何普通水果相同。吃了其中一个水果的生物无法从非魔法来源获得{@condition exhaustion}级别，并在接下来的8小时内获得与你的法术能力调整值相等的力量和体质检定奖励（最低为1）。如果未在24小时内食用，这些水果会在变成灰尘。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels:",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，你会为每个高于4级的法术位等级额外创造一个水果。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"conditionInflict": [
+				"exhaustion"
+			]
+		},
+		{
+			"name": "Gilded Touch",
+			"source": "TPM",
+			"page": 22,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "ten metal coins that are at least 1 inch in circumference"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你用一片与施法所需金币相同金属材质的薄叶覆盖一个不大于5英尺立方体的物体。这些金币足以覆盖一把大剑的刀刃、一个盾牌、10件弹药，或者任何适合手掌大小的物体。这种金属赋予了额外的属性。",
+				"以下是一些典型金属及其效果。在冒险中，你可能会发现除了这里描述的金属之外的另一种金属。如果你这样做了，GM将决定这种金属的行为。",
+				{
+					"type": "entries",
+					"name": "Copper",
+					"entries": [
+						"每当持有或穿戴该物品的生物受到闪电伤害时，它会受到额外的{@damage 1d10} 闪电伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cold Iron",
+					"entries": [
+						"当用于攻击精灵生物时，获得暴击所需的投掷值减少1点。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Silver",
+					"entries": [
+						"它变成了一个{@item silvered weapon|PHB} {@homebrew |(Player's Handbook p. 148)}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gold",
+					"entries": [
+						"在受到另一个法术影响时，它会造成额外{@damage 1d4}的伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Platinum",
+					"entries": [
+						"它的重量翻倍，并获得了沉重属性。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Adamantine",
+					"entries": [
+						"它变成 {@item adamantine armor|DMG}, {@item Adamantine Ammunition|XGE|ammunition}, 或者一个 {@item Adamantine Weapon|XGE|weapon} {@homebrew |(see Xanathar's Guide to Everything p. 78)}。",
+						"当法术结束时，硬币会神奇地重新出现在你的手中，除非它们被摧毁。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Expending a Spell Slot",
+					"entries": [
+						"你可以通过使用一个法术位来延长这个法术的持续时间。当你使用一个1级或更高级别的法术位施放这个法术时，每个位级别增加1小时的持续时间。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"damageInflict": [
+				"lightning"
+			]
+		},
+		{
+			"name": "Gold Dust",
+			"source": "TPM",
+			"page": 22,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "20 gold pieces"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你在施法范围内选择的点中心创造一个半径为10英尺的球形飞行硬币云。任何生物第一次进入法术范围或在其回合开始时位于其中，必须进行一次敏捷豁免检定，否则会受到{@damage 2d10} 钝击伤害。成功豁免的生物只受到一半伤害。",
+				"作为你回合的奖励动作，你可以将云移动多达20英尺。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，伤害会每个法术位等级增加{@damage 1d10}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Hedge Risk",
+			"source": "TPM",
+			"page": 23,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature takes damage"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "gold pieces"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你以健康换取财富。当你能看到的范围内的生物受到伤害时，你可以通过花费金币来减少伤害，每花费1点金币可以减少1点伤害，最多可花费10金币。任何花费的金币都会被魔法摧毁。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，你可以花费的金币数量每个法术位等级增加10 gp。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Ivaldi's Impervious Anvil",
+			"source": "TPM",
+			"page": 23,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "A tiny silver anvil worth at least 50 gold pieces"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"选择射程内的一块未被占据的地面区域，宽10英尺，长15英尺，高5英尺。在该区域召唤一个巨大的魔法铁砧，它是半透明但实体的。这个铁砧是一个魔法物品，坚不可摧且不可移动，可以让物体用巨大的力量在上面加工，比如加工需要用到精金的物品。",
+				"铁砧只能被一个6级或更高级别的{@spell dispel magic}法术，{@spell antimagic field|PHB|antimagic}，{@spell wish}法术，或者你在法术上停止{@status concentration||concentrating}来解除。在铁砧空间结束他们的回合的非实体生物会受到双倍于通常受到的伤害。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Ivaldi's Rustproof Coating",
+			"source": "TPM",
+			"page": 23,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A drop of oil on a small rag or a 1 inch cube of lard, which the spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"{@note This spell graciously provided by Nate Butler.}",
+				"你在一个愿意的目标上挥动手，散发出一股绿雾，附着在目标穿戴或携带的所有金属盔甲、武器和其他物品上，使它们笼罩在淡淡的绿色光泽中。在持续时间内，所有受影响的物品对腐蚀金属的攻击和效果免疫，比如{@creature rust monster|MM|rust monster's}天线攻击。这个法术不会增强物品的物理耐久度。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels:",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，你可以为每个高于2级的法术位级别额外选择一个目标生物。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mage Ward",
+			"source": "TPM",
+			"page": 23,
+			"level": 0,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"{@note This spell graciously provided by Ross Leiser.}",
+				"你在自己周围创造了一个保护结界，对那些攻击你的人进行反击。第一次在你的下一个回合开始之前，有生物用攻击命中你时，它会受到{@damage 1d10}的力量伤害，法术随之结束。",
+				"当你达到5级（{@dice 2d10}），11级（{@dice 3d10}）和17级（{@dice 4d10}）时，该法术的伤害增加了{@dice 1d10}。"
+			],
+			"scalingLevelDice": {
+				"label": "force damage",
+				"scaling": {
+					"1": "1d10",
+					"5": "2d10",
+					"11": "3d10",
+					"17": "4d10"
+				}
+			},
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Mineral Wealth",
+			"source": "TPM",
+			"page": 23,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a set of jeweler's tools"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你触摸一堆货币时，可以将其转化为价值相等的非魔法宝石或宝石。你必须事先见过并触摸过某种类型的宝石的实例，才能创造出该类型的宝石。",
+				"或者，你可以触摸一堆相同种类的宝石，将它们融合成一个同种类的大宝石，其金币价值等于用于制作它的宝石的总价值。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Money Shot",
+			"source": "TPM",
+			"page": 23,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "gold pieces used for the attack"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你触摸一枚金币，并在持续时间内或再次施放此法术之前赋予它魔法。当你施放该法术时，你可以使用金币对距离60英尺内的生物进行远程法术攻击。命中时，目标受到{@damage 1d6}+ 你的法术属性调整值的钝击伤害。",
+				"作为你的回合的奖励动作，你可以对范围内的任何生物重复进行攻击。或者，你可以弹指一下，让硬币回到你的手中。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，你可以影响每个高于1级的法术位等级多一个硬币。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Money Talks",
+			"source": "TPM",
+			"page": 24,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "two coins with the likeness of any creature on them"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"当你施放这个法术时，你要命名另外一名与你共享语言的生物，并将其中一枚硬币交给他们。你给他们的硬币上的图像会呈现出你的外貌，而你留下的硬币上的图像会呈现出他们的外貌。",
+				"在各自的回合期间，你们中的任何一方都可以使用硬币与另一方交流，前提是你们在同一存在平面上。生物不需要握住他们的硬币，另一方就可以通过硬币与他们交谈。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Pilfer",
+			"source": "TPM",
+			"page": 24,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a melee weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"使用作为此法术组件的武器对一名生物进行近战法术攻击。命中后，生物受到武器的伤害，如果生物对你有敌意，武器会在最近的未占用空间掉落与目标受到的伤害相等的金币。武器不能创造比目标生物的生命值更多的金币。一旦武器创造了20 gp，法术结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，武器可以在法术结束前每个高于1级的法术位等级额外创造20金币。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"spellAttack": [
+				"M"
+			]
+		},
+		{
+			"name": "Popping Corn",
+			"source": "TPM",
+			"page": 24,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a thin copper wire wrapped around an ear of corn"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你赋予玉米的耳朵魔法能量，然后将其投掷到你能看到的一个点，距离不超过60英尺。当它着地时爆炸。距离那个点10英尺内的所有生物必须进行一次敏捷豁免，未通过者受到{@damage 2d4} 雷属性伤害，通过者受到一半伤害。未通过豁免的生物还会被击倒{@condition prone}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels:",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放这个法术时，伤害会每超过1级的法术位等级增加{@dice 2d4}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Streak of Luck",
+			"source": "TPM",
+			"page": 24,
+			"level": 4,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rabbit's foot"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你引发了一场莫名其妙的幸运转折，为范围内的三个你选择的生物（包括可能是你自己）赋予1点幸运点，就像{@feat Lucky}特性{@homebrew |(Player's Handbook p. 167)}一样。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放这个法术时，你可以针对每个高于4级的法术位等级额外选择一个生物作为目标。当你使用5级或更高级别的法术位时，你为每个生物额外授予1个幸运点。当你使用7级或更高级别的法术位时，你为每个生物额外授予2个幸运点。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Tagmay's Thermal Container",
+			"source": "TPM",
+			"page": 24,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a Large or smaller closable metal container, a jar of animal blubber, and a vial of mercury"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 10
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"这个法术允许施法时使用的容器内部根据小瓶中的汞量来改变温度。容器保持其形状、重量和容量，并且其外部仍然舒适触摸和处理。",
+				"在你的回合中，当这个法术仍然有效时，你可以使用{@action Use an Object}动作来填充或移除药瓶中的水银，这会改变容器内部的温度，如下所示：",
+				{
+					"type": "entries",
+					"name": "Empty",
+					"entries": [
+						"容器内部成为{@hazard extreme cold|DMG}环境，任何放入容器内的食物或其他有机材料在1分钟后会被冻结，从而免受自然腐烂或变质的影响。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Half",
+					"entries": [
+						"无论容器外部温度如何，容器内部始终保持舒适的温度。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Full",
+					"entries": [
+						"容器内部变成了{@hazard extreme heat|DMG}的环境，容器内的任何食物或其他有机材料开始烹饪，在1分钟后达到您喜欢的可食用状态。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels:",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放此法术时，容器的移动速度为法术位等级的10倍{@action Dash}，你可以作为一个奖励动作命令它在你的回合结束后立即执行{@action Dash}动作。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Merchant",
+						"source": "TPM"
+					}
+				]
+			},
+			"miscTags": [
+				"SCL",
+				"UBA"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Blacksmith",
+			"source": "TPM",
+			"page": 26,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|PHB}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"insight": "+7",
+				"persuasion": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Common and one other language"
+			],
+			"cr": "3",
+			"pbNote": "+3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"铁匠是一名5级咒术师。它的咒术能力是魅力（咒语豁免{@dc 14}，咒语攻击命中加值{@hit 6}）。它准备了以下商人咒语："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell control flames|XGE}",
+								"{@spell gilded touch|TPM}",
+								"{@spell light}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell searing smite}",
+								"{@spell shield}",
+								"{@spell Tenser's floating disk}",
+								"{@spell unseen servant}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell continual flame}",
+								"{@spell heat metal}",
+								"{@spell Ivaldi's rustproof coating|TPM}",
+								"{@spell lesser restoration}",
+								"{@spell magic weapon}",
+								"{@spell mineral wealth|TPM}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Bang for Your Buck",
+					"entries": [
+						"铁匠使用其魅力调整值来进行攻击、伤害和治疗掷骰，这些掷骰是使用{@action Use an Object}动作的。如果其商人法术豁免 DC 高于这些物品的 DC，它将使用其法术豁免 DC。"
+					]
+				},
+				{
+					"name": "Portable Storefront (300 gp)",
+					"entries": [
+						"铁匠有一个神奇的容器，里面装有以下物品。商店里的物品可以通过将金币放回容器中来进行短时或长时休息时重新补充：",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"type": "item",
+									"name": "Equipment",
+									"entries": [
+										"{@item Abacus|PHB} (1), {@item bedroll|PHB} (3), {@item Chalk (1 piece)|PHB|chalk} (10 pieces), {@item crowbar|PHB} (1), {@item hematite|DMG} (1), {@item Hempen Rope (50 feet)|PHB|hempen rope} (3), {@item traveler's clothes|PHB} (3), {@item Miner's Pick|PHB|pickaxe} (1)"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Tools:",
+									"entries": [
+										"任何一个工具"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Magic Items:",
+									"entries": [
+										"{@item +1 shortsword|DMG|short sword (+1)}, {@item +1 shield|DMG|shield (+1)}"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Smash and Grab",
+					"entries": [
+						"铁匠用他的战锤进行两次攻击。他可以选择用{@action Use an Object}动作来替代其中一次攻击。"
+					]
+				},
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 6}攻击，射程5英尺，一个目标。造成{@h}7 ({@damage 1d8 + 3}) 钝击伤害，或者如果双手持握则造成8 ({@damage 1d10 + 3}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Exchange Spell Slot",
+					"entries": [
+						"铁匠将其一个法术位分享给另一个它可以触摸到的生物。该法术位变成了该生物职业的法术位，并保持其法术位等级，但不能将法术位分享给一个生物，使得该生物拥有超过该法术位等级四个法术位。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/BlacksmithToken.webp"
+			},
+			"attachedItems": [
+				"warhammer|phb"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Blacksmith.webp"
+						},
+						"width": 419,
+						"height": 508
+					}
+				]
+			}
+		},
+		{
+			"name": "Mandrake Minion",
+			"source": "TPM",
+			"page": 20,
+			"summonedBySpell": "Create Mandrake|TPM",
+			"size": [
+				"T"
+			],
+			"type": "plant",
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d4 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 5,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"resist": [
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages spoken by its creator but does not speak"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"当位于{@spell antimagic field}区域内时，曼德拉草仆从是{@condition incapacitated}。如果被{@spell dispel magic}选中，曼德拉草仆从必须通过一次对抗施法者法术豁免 DC 的体质豁免才能幸存。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rake",
+					"entries": [
+						"{@atk mw} {@hit 3}攻击，达到5英尺，一个目标。造成{@h}1点劈砍伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Merchant",
+			"source": "TPM",
+			"page": 25,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item leather armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 13,
+			"con": 14,
+			"int": 12,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"insight": "+7",
+				"persuasion": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Common and one other language"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"这个商人是一个2级法术施法者。它的法术施法能力是魅力（法术豁免 {@dc 13}，使用法术攻击命中加值 {@hit 5}）。它已经准备了以下商人法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell exchange|TPM}",
+								"{@spell guidance}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell illusory script}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Bang for Your Buck",
+					"entries": [
+						"商人在使用{@action Use an Object}动作的物品进行攻击、伤害和治疗骰时，使用其魅力调整值。如果其商人法术豁免 DC 高于这些物品的 DC，则使用其法术豁免 DC。"
+					]
+				},
+				{
+					"name": "Portable Storefront (100 gp)",
+					"entries": [
+						"这位商人有一个神奇的容器，里面装有以下物品。商店里的物品可以通过将金币放回容器中来进行短暂或长时间休息时重新补充：",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"type": "item",
+									"name": "Equipment",
+									"entries": [
+										"{@item Abacus|PHB} (1), {@item bedroll|PHB} (3), {@item Chalk (1 piece)|PHB|chalk} (10 片), {@item crowbar|PHB} (1), {@item hematite|DMG} (1), {@item Hempen Rope (50 feet)|PHB|hempen rope} (3), {@item traveler's clothes|PHB} (3)"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Tools:",
+									"entries": [
+										"任何一个工具"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Magic Items:",
+									"entries": [
+										"{@item potion of healing|DMG}"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw}使用{@hit 3}进行攻击，射程5英尺或射程20/60英尺，目标为一个。造成{@h}3 ({@damage 1d4 + 1})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Exchange Spell Slot",
+					"entries": [
+						"商人将其一个法术位赠予另一名它可以触摸到的生物。该法术位变成该生物职业的法术位，并保持原有的法术位等级，但不能将法术位赠予一个生物，使其拥有该法术位等级超过四个法术位。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/MerchantToken.webp"
+			},
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Merchant.webp"
+						},
+						"width": 408,
+						"height": 546
+					}
+				]
+			}
+		},
+		{
+			"name": "Swindler",
+			"source": "TPM",
+			"page": 26,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 38,
+				"formula": "7d8 + 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"wis": "+4",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"sleight of hand": "+6",
+				"stealth": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Thieves' cant"
+			],
+			"cr": "2",
+			"pbNote": "+3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"骗子是一名7级咒术师。它的咒术能力是魅力（法术豁免{@dc 15}，法术攻击命中加值{@hit 7}）。它准备了以下商人法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fool's gold|TPM}",
+								"{@spell mage ward|TPM}",
+								"{@spell mage hand}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell charm person}",
+								"{@spell cure wounds}",
+								"{@spell detect magic}",
+								"{@spell disguise self}",
+								"{@spell feather fall}",
+								"{@spell identify}",
+								"{@spell illusory script}",
+								"{@spell pilfer|TPM}",
+								"{@spell sleep}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell blur}",
+								"{@spell darkvision}",
+								"{@spell enhance ability}",
+								"{@spell enthrall}",
+								"{@spell knock}",
+								"{@spell rope trick}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Bang for Your Buck",
+					"entries": [
+						"骗子在使用{@action Use an Object}动作的物品进行一次伤害或治疗骰时，可以额外加上其魅力调整值。如果商人的法术豁免 DC 更高，它可以使用商人的法术豁免 DC 替代这些物品的 DC。"
+					]
+				},
+				{
+					"name": "Portable Storefront (800 gp)",
+					"entries": [
+						"骗子有一个神奇的容器，里面装有以下物品，其中有四件是神奇物品，不计入商店价值：",
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"items": [
+								{
+									"type": "item",
+									"name": "Equipment",
+									"entries": [
+										"{@item Ball Bearings (bag of 1,000)|PHB|Bag of 1,000 ball bearings} (5), {@item Playing Card Set|PHB|deck of playing cards} (5)"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Tools:",
+									"entries": [
+										"{@item disguise kit|PHB}, {@item forgery kit|PHB}"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Magic Items:",
+									"entries": [
+										"{@item +1 dagger|DMG}, {@item bag of tricks|DMG}, {@item boots of elvenkind|DMG}, {@item Charlatan's Die|XGE|charlatan's dice}, {@item gloves of thievery|DMG}, {@item potion of healing|DMG} (4), {@item wand of magic missiles|DMG}"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Extra Use an Object",
+					"entries": [
+						"骗子使用了两件需要进行{@action Use an Object}动作的物品。"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 7}攻击，射程5英尺或射程20/60英尺，目标一个。造成{@h}6 ({@damage 1d4 + 4})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Exchange Spell Slot",
+					"entries": [
+						"骗子将其一个法术位赠予另一生物，只要它们能触碰到。该法术位变成了该生物职业的法术位，并保持原有的法术位等级，但不能将法术位赠予一个生物，使得该生物拥有该法术位等级超过四个。"
+					]
+				},
+				{
+					"name": "Misdirect",
+					"entries": [
+						"骗子对身边5英尺内的生物进行一次魅力（{@skill Deception}）或敏捷（{@skill Sleight of Hand}）检定，检定结果需超过该生物的被动感知{@skill Perception}。若成功，骗子可以将生物携带或持有的物品与自己携带或持有的物品交换。",
+						"骗子必须能够合理地用一只手拿住物体才能这样做。如果失败，骗子在接下来的24小时内对该生物进行这些检查时将处于劣势，并且该生物可以作为一次反应对骗子发动攻击。"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/SwindlerToken.webp"
+			},
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"languageTags": [
+				"C",
+				"TC"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"在当地的语言习惯中，盗贼行会的成员经常会在{@creature bandit|MM|bandits}中充当他们的保镖。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Swindler.webp"
+						},
+						"width": 395,
+						"height": 588
+					}
+				]
+			}
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Merchant Spell List",
+			"source": "TPM",
+			"page": 5,
+			"ruleType": "O",
+			"entries": [
+				"这是你学习商人法术时可以参考的法术列表。该列表按照法术等级而非角色等级进行组织。{@homebrew Each spell is tagged with the appropriate source|Each spell is in the {@book Player's Handbook|PHB}，除非在撇号*（稍后在本文中出现），XGE{@book Xanathar's Guide to Everything|XGE}，或TCE{@book Tasha's Cauldron of Everything|TCE}中另有说明。",
+				"其他创作者提供的法术也会以上标形式显示，可能是由本杰明·哈夫曼{@sup SVAC}、罗斯·莱泽{@sup OAP}或内特·巴特勒{@sup NAD}提供的，并且在得到他们的许可后，这些法术慷慨地被包含在这个职业中。",
+				{
+					"type": "list",
+					"style": "list-no-bullets",
+					"columns": 3,
+					"page": 5,
+					"items": [
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "Cantrips (0-level)",
+							"items": [
+								"{@spell blade ward}",
+								"{@spell control flames|XGE}",
+								"{@spell create bonfire|XGE}",
+								"{@spell dancing lights}",
+								"{@spell doohickey|TPM}",
+								"{@spell exchange|TPM}",
+								"{@spell fool's gold|TPM} {@sup SVAC}",
+								"{@spell friends}",
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell mage ward|TPM} {@sup OAP}",
+								"{@spell mending}",
+								"{@spell message}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "1st-Level",
+							"items": [
+								"{@spell aid}",
+								"{@spell alarm}",
+								"{@spell catapult|XGE}",
+								"{@spell charm person}",
+								"{@spell command}",
+								"{@spell comprehend languages}",
+								"{@spell create or destroy water}",
+								"{@spell cure wounds}",
+								"{@spell detect magic}",
+								"{@spell detect poison and disease}",
+								"{@spell disguise self}",
+								"{@spell expeditious retreat}",
+								"{@spell feather fall}",
+								"{@spell find familiar}",
+								"{@spell healing word}",
+								"{@spell hedge risk|TPM}",
+								"{@spell identify}",
+								"{@spell illusory script}",
+								"{@spell jump}",
+								"{@spell longstrider}",
+								"{@spell money shot|TPM}",
+								"{@spell pilfer|TPM}",
+								"{@spell purify food and drink}",
+								"{@spell sleep}",
+								"{@spell Tenser's floating disk}",
+								"{@spell unseen servant}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "2nd-Level",
+							"items": [
+								"{@spell animal messenger}",
+								"{@spell calm emotions}",
+								"{@spell continual flame}",
+								"{@spell darkvision}",
+								"{@spell enhance ability}",
+								"{@spell enthrall}",
+								"{@spell gold dust|TPM}",
+								"{@spell hold person}",
+								"{@spell Ivaldi's rustproof coating|TPM} {@sup NAD}",
+								"{@spell knock}",
+								"{@spell lesser restoration}",
+								"{@spell levitate}",
+								"{@spell locate object}",
+								"{@spell magic mouth}",
+								"{@spell magic weapon}",
+								"{@spell mineral wealth|TPM}",
+								"{@spell protection from poison}",
+								"{@spell rope trick}",
+								"{@spell see invisibility}",
+								"{@spell silence}",
+								"{@spell skywrite|XGE}",
+								"{@spell suggestion}",
+								"{@spell Tagmay's thermal container|TPM}",
+								"{@spell zone of truth}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "3rd-Level",
+							"items": [
+								"{@spell catnap|XGE}",
+								"{@spell clairvoyance}",
+								"{@spell counterspell}",
+								"{@spell create food and water}",
+								"{@spell dispel magic}",
+								"{@spell find vessel|TPM} {@sup SVAC}",
+								"{@spell haste}",
+								"{@spell nondetection}",
+								"{@spell protection from energy}",
+								"{@spell remove curse}",
+								"{@spell sending}",
+								"{@spell slow}",
+								"{@spell tiny servant|XGE}",
+								"{@spell tongues}",
+								"{@spell water breathing}",
+								"{@spell water walk}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "4th-Level",
+							"items": [
+								"{@spell compulsion}",
+								"{@spell confusion}",
+								"{@spell fabricate}",
+								"{@spell freedom of movement}",
+								"{@spell Leomund's secret chest}",
+								"{@spell locate creature}",
+								"{@spell Mordenkainen's private sanctum}",
+								"{@spell stoneskin}"
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"page": 5,
+							"name": "5th-Level",
+							"items": [
+								"{@spell hold monster}",
+								"{@spell legend lore}",
+								"{@spell passwall}",
+								"{@spell scrying}",
+								"{@spell seeming}"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Apothecary Spells",
+			"source": "TPM",
+			"page": 7,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell cure wounds|PHB}, {@spell Tasha's caustic brew|TCE}"
+				],
+				[
+					"5th",
+					"{@spell enhance ability|PHB}, {@spell gentle repose|PHB}"
+				],
+				[
+					"9th",
+					"{@spell mass healing word|PHB}, {@spell revivify|PHB}"
+				],
+				[
+					"13th",
+					"{@spell aura of life|PHB}, {@spell death ward|PHB}"
+				],
+				[
+					"17th",
+					"{@spell greater restoration|PHB}, {@spell raise dead|PHB}"
+				]
+			]
+		},
+		{
+			"name": "Architect Spells",
+			"source": "TPM",
+			"page": 9,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell alarm|PHB}, {@spell unseen servant|PHB}"
+				],
+				[
+					"5th",
+					"{@spell arcane lock|PHB}, {@spell rope trick|PHB}"
+				],
+				[
+					"9th",
+					"{@spell Leomund's tiny hut|PHB}, {@spell wall of sand|XGE}"
+				],
+				[
+					"13th",
+					"{@spell stone shape|PHB}, {@spell wall of fire|PHB}"
+				],
+				[
+					"17th",
+					"{@spell wall of light|XGE}, {@spell wall of stone|PHB}"
+				]
+			]
+		},
+		{
+			"name": "Blacksmith Spells",
+			"source": "TPM",
+			"page": 10,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell searing smite|PHB}, {@spell shield|PHB}"
+				],
+				[
+					"5th",
+					"{@spell heat metal|PHB}, {@spell magic weapon|PHB}"
+				],
+				[
+					"9th",
+					"{@spell elemental weapon|PHB}, {@spell protection from energy|PHB}"
+				],
+				[
+					"13th",
+					"{@spell Ivaldi's impervious anvil|TPM}, {@spell summon construct|TCE}"
+				],
+				[
+					"17th",
+					"{@spell creation|PHB}, {@spell immolation|XGE}"
+				]
+			]
+		},
+		{
+			"name": "Cardistry",
+			"source": "TPM",
+			"page": 12,
+			"colLabels": [
+				"Suit",
+				"A",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"J, Q, K"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center",
+				"col-1 text-center"
+			],
+			"rows": [
+				[
+					"{@color ♠ ♣|000000}",
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10",
+					"1"
+				],
+				[
+					"{@color ♥ ♦|e40707}",
+					"11",
+					"12",
+					"13",
+					"14",
+					"15",
+					"16",
+					"17",
+					"18",
+					"19",
+					"20",
+					"20"
+				]
+			]
+		},
+		{
+			"name": "Currency Conversion",
+			"source": "TPM",
+			"page": 4,
+			"colLabels": [
+				"D&D Currency",
+				"Abbr.",
+				"USD ($)"
+			],
+			"colStyles": [
+				"col-4",
+				"col-4 text-center",
+				"col-4 text-right"
+			],
+			"intro": [
+				"If you'd like to stock items in your Portable Storefront that aren't in the Player's Handbook, you can follow the guidelines in the Currency Conversion table below to estimate the cost of items with their real-world prices."
+			],
+			"rows": [
+				[
+					"{@item Copper (cp)|PHB|Copper piece}",
+					"cp",
+					"$0.10"
+				],
+				[
+					"{@item Silver (sp)|PHB|Silver piece}",
+					"sp",
+					"$1.00"
+				],
+				[
+					"{@item Electrum (ep)|PHB|Electrum piece}",
+					"ep",
+					"$5.00"
+				],
+				[
+					"{@item Gold (gp)|PHB|Gold piece}",
+					"gp",
+					"$10.00"
+				],
+				[
+					"{@item Platinum (pp)|PHB|Platinum piece}",
+					"pp",
+					"$100.00"
+				]
+			]
+		},
+		{
+			"name": "Esoteric Spells",
+			"source": "TPM",
+			"page": 11,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell bane|PHB}, {@spell hex|PHB}"
+				],
+				[
+					"5th",
+					"{@spell Nystul's magic aura|PHB}, {@spell phantasmal force|PHB}"
+				],
+				[
+					"9th",
+					"{@spell bestow curse|PHB}, {@spell remove curse|PHB}"
+				],
+				[
+					"13th",
+					"{@spell banishment|PHB}, {@spell phantasmal killer|PHB}"
+				],
+				[
+					"17th",
+					"{@spell scrying|PHB}, {@spell seeming|PHB}"
+				]
+			]
+		},
+		{
+			"name": "Gambler Spells",
+			"source": "TPM",
+			"page": 13,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell bless|PHB}, {@spell chaos bolt|XGE}"
+				],
+				[
+					"5th",
+					"{@spell enhance ability|PHB}, {@spell mirror image|PHB}"
+				],
+				[
+					"9th",
+					"{@spell counterspell|PHB}, {@spell intellect fortress|TCE}"
+				],
+				[
+					"13th",
+					"{@spell compulsion|PHB}, {@spell streak of luck|TPM}"
+				],
+				[
+					"17th",
+					"{@spell Bigby's hand|PHB}, {@spell skill empowerment|XGE}"
+				]
+			]
+		},
+		{
+			"name": "Gourmand Spells",
+			"source": "TPM",
+			"page": 14,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell purify food and drink|PHB}"
+				],
+				[
+					"5th",
+					"{@spell Tagmay's thermal container|TPM}"
+				],
+				[
+					"9th",
+					"{@spell create food and water|PHB}"
+				],
+				[
+					"13th",
+					"{@spell compulsion|PHB}"
+				],
+				[
+					"17th",
+					"{@spell creation|PHB}"
+				]
+			]
+		},
+		{
+			"name": "Maritime Spells",
+			"source": "TPM",
+			"page": 15,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell create or destroy water|PHB}, {@spell fog cloud|PHB}"
+				],
+				[
+					"5th",
+					"{@spell gust of wind|PHB}, {@spell misty step|PHB}"
+				],
+				[
+					"9th",
+					"{@spell beacon of hope|PHB}, {@spell tidal wave|XGE}"
+				],
+				[
+					"13th",
+					"{@spell control water|PHB}, {@spell storm sphere|XGE}"
+				],
+				[
+					"17th",
+					"{@spell control winds|XGE}, {@spell maelstrom|XGE}"
+				]
+			]
+		},
+		{
+			"name": "Pet Dealer Spells",
+			"source": "TPM",
+			"page": 17,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell animal friendship|PHB}, {@spell find familiar|PHB}"
+				],
+				[
+					"5th",
+					"{@spell beast sense|PHB}, {@spell summon beast|TCE}"
+				],
+				[
+					"9th",
+					"{@spell conjure animals|PHB}, {@spell feign death|PHB}"
+				],
+				[
+					"13th",
+					"{@spell charm monster|XGE}, {@spell dominate beast|PHB}"
+				],
+				[
+					"17th",
+					"{@spell awaken|PHB}, {@spell geas|PHB}"
+				]
+			]
+		},
+		{
+			"name": "Swindler Spells",
+			"source": "TPM",
+			"page": 18,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell charm person|PHB}, {@spell disguise self|PHB}"
+				],
+				[
+					"5th",
+					"{@spell blur|PHB}, {@spell knock|PHB}"
+				],
+				[
+					"9th",
+					"{@spell hypnotic pattern|PHB}, {@spell invisibility|PHB}"
+				],
+				[
+					"13th",
+					"{@spell charm monster|XGE}, {@spell hallucinatory terrain|PHB}"
+				],
+				[
+					"17th",
+					"{@spell mislead|PHB}, {@spell modify memory|PHB}"
+				]
+			]
+		},
+		{
+			"name": "Vagabond Spells",
+			"source": "TPM",
+			"page": 18,
+			"colLabels": [
+				"Merchant Level",
+				"Spell"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"3rd",
+					"{@spell expeditious retreat|PHB}, {@spell guiding bolt|PHB}"
+				],
+				[
+					"5th",
+					"{@spell find steed|PHB}, {@spell pass without trace|PHB}"
+				],
+				[
+					"9th",
+					"{@spell haste|PHB}, {@spell fly|PHB}"
+				],
+				[
+					"13th",
+					"{@spell dimension door|PHB}, {@spell freedom of movement|PHB}"
+				],
+				[
+					"17th",
+					"{@spell far step|XGE}, {@spell teleportation circle|PHB}"
+				]
+			]
+		}
+	],
+	"book": [
+		{
+			"name": "Taron Pounds: Merchant",
+			"id": "TPM",
+			"source": "TPM",
+			"group": "homebrew",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Cover.webp"
+			},
+			"published": "2022-02-09",
+			"author": "Taron \"Indestructoboy\" Pounds",
+			"contents": [
+				{
+					"name": "Cover & Credits",
+					"headers": [
+						"Credits",
+						"Patreon Sponsors (February 2022)",
+						"Contents",
+						"Changelog"
+					]
+				},
+				{
+					"name": "Merchant",
+					"headers": [
+						"Class Features",
+						"Merchant Spell List"
+					]
+				},
+				{
+					"name": "Merchant Guilds",
+					"headers": [
+						"Apothecary",
+						"Architect",
+						"Blacksmith",
+						"Esotericism",
+						"Gambler",
+						"Gourmand",
+						"Mariner",
+						"Pet Dealer",
+						"Swindler",
+						"Vagabond"
+					]
+				},
+				{
+					"name": "Supporting Materials",
+					"headers": [
+						"Spell Descriptions",
+						"Feats",
+						"Nonplayer Characters"
+					]
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "TPM",
+			"source": "TPM",
+			"data": [
+				{
+					"type": "section",
+					"name": "Cover & Credits",
+					"page": "C1",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Cover-Full.webp"
+							},
+							"title": "Taron Pounds: Merchant Cover",
+							"width": 817,
+							"height": 1057
+						},
+						{
+							"type": "entries",
+							"page": 1,
+							"style": "text-center",
+							"entries": [
+								"{@style A spellcasting support class with pecuniary potential.|small-caps;dnd-font}",
+								"{@style by Taron \"Indestructoboy\" Pounds|small-caps;dnd-font}"
+							],
+							"id": "001"
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"columns": 2,
+							"page": 1,
+							"items": [
+								{
+									"type": "entries",
+									"name": "Credits",
+									"page": 1,
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"page": 1,
+											"items": [
+												{
+													"type": "item",
+													"name": "Class Design:",
+													"entries": [
+														"塔龙\"不毁男孩\"庞斯",
+														{
+															"type": "list",
+															"style": "list-no-bullets",
+															"columns": 4,
+															"page": 1,
+															"items": [
+																"{@link Website|https://indestructoboy.shop/}",
+																"{@link DMsGuild|https://www.dmsguild.com/browse.php?author=Taron%20Pounds}",
+																"{@link YouTube|https://www.youtube.com/c/Indestructoboy}",
+																"{@link Twitter|https://twitter.com/Indestructoboy}"
+															]
+														}
+													]
+												},
+												{
+													"type": "item",
+													"name": "Architect Guild Design:",
+													"entries": [
+														"Ross Leiser（Outlandish Adventure Productions）"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Additional Spells:",
+													"entries": [
+														"内特\"不是狗\"巴特勒，本杰明·赫夫曼（Sterling Vermin Adventure Co.），罗斯·莱泽"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Mechanical Consultants:",
+													"entries": [
+														"本杰明·哈夫曼（Benjamin Huffman），罗斯·莱泽（Ross Leiser）"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Graphic Design & Layout:",
+													"entries": [
+														"塔龙·磅(%num%)"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Interior Art:",
+													"entries": [
+														"Adobe Stock 图片, 地牢主编公会创作者资源, {@link Jeremy Luther|https://www.jeremyluther.com/}, {@link eldersdays|https://sketchmob.com/user-profile/Eldersdays/}, {@link Evan Winston|https://www.artstation.com/irrelevantevan}, 丹尼尔·科默奇, 费利佩·加奥纳, 迪恩·斯宾塞"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Reviewer Feedback:",
+													"entries": [
+														"Eric \"RogueWatson\" Watson, Tony & Sean of Homebrew Crew, Ted Sikora, Az Z., Gage R., Lovett S. \n埃里克\"RogueWatson\"沃森，Homebrew Crew的Tony和Sean，泰德·西科拉，Az Z.，Gage R.，Lovett S."
+													]
+												},
+												{
+													"type": "item",
+													"name": "Community Feedback:",
+													"entries": [
+														"卡纸施法者，德拉纳尔，莱斯特·奥尔蒂斯-米兰达，斯潘塞诺克斯，奇术师，Xandi Games"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Patreon Sponsors (February 2022)",
+									"page": 1,
+									"entries": [
+										"对于我的YouTube社区和Patreon赞助者，非常感谢你们的支持。你们都是绝对的英雄。",
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"page": 1,
+											"items": [
+												{
+													"type": "item",
+													"name": "Silver Sponsors",
+													"entries": [
+														"醉酒的尤达, 菲尔·基尔尼, 乔纳森·赫林, 尼奥克斯狂欢, 尼克·桑多瓦尔, 萨拉·J·达塔, 斯宾塞·杰克逊, 汤米·比茨"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Copper Sponsors",
+													"entries": [
+														"阿里克·威尔逊 (Aric Wilson), 巴斯蒂安·米勒坎 (Bastien Millecam), 布赖恩·F. (Brian F.), 凯西·亨特 (Casey Hunter), 丹尼·斯卡尔夫 (Denny Scalf), 伊莱贾·哈特 (Elijah Harter), 盖茨·道德 (Gates Dowd), heavyarms, 莱斯特·奥尔蒂斯-米兰达 (Lester Ortiz-Miranda), 迈克尔·库克 (Michael Cook), 奥利弗·奥尔森 (Oliver Olson), 瑞恩·贝克 (Ryan Baker), 颤音马克思主义 (VibraphonicMarxism)"
+													]
+												},
+												{
+													"type": "item",
+													"name": "Iron Sponsors",
+													"entries": [
+														"费恩·迪尔克斯-布朗 (Finn Dierks-Brown)，QuickICNH，奇术师 (Thaumatarge)，v1talsign"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "list",
+							"style": "list-no-bullets",
+							"columns": 2,
+							"page": 1,
+							"items": [
+								{
+									"type": "entries",
+									"name": "Contents",
+									"page": 1,
+									"entries": [
+										{
+											"type": "list",
+											"style": "list-no-bullets",
+											"page": 1,
+											"items": [
+												"{@note You can also use the dynamic contents table on the left of the screen.}",
+												"{@book Merchant|TPM|1}",
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"page": 1,
+													"items": [
+														"{@book Class Features|TPM|1|Class Features}",
+														"{@book Merchant Spell List|TPM|1|Merchant Spell List}"
+													]
+												},
+												"{@book Merchant Guilds|TPM|2}",
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"page": 1,
+													"items": [
+														"{@book Apothecary|TPM|2|Apothecary}",
+														"{@book Architect|TPM|2|Architect}",
+														"{@book Blacksmith|TPM|2|Blacksmith}",
+														"{@book Esotericism|TPM|2|Esotericism}",
+														"{@book Gambler|TPM|2|Gambler}",
+														"{@book Gourmand|TPM|2|Gourmand}",
+														"{@book Mariner|TPM|2|Mariner}",
+														"{@book Pet Dealer|TPM|2|Pet Dealer}",
+														"{@book Swindler|TPM|2|Swindler}",
+														"{@book Vagabond|TPM|2|Vagabond}"
+													]
+												},
+												"{@book Supporting Materials|TPM|3}",
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"page": 1,
+													"items": [
+														"{@book Spell Descriptions|TPM|3|Spell Descriptions}",
+														"{@book Feats|TPM|3|Feats}",
+														"{@book Nonplayer Characters|TPM|3|Nonplayer Characters}"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Changelog",
+									"page": 1,
+									"entries": [
+										"版本 3.2\u2014{@i Date: 02/09/2022}",
+										{
+											"type": "list",
+											"style": "list-hang",
+											"page": 1,
+											"items": [
+												{
+													"type": "list",
+													"page": 1,
+													"name": "General",
+													"items": [
+														"布局更新"
+													]
+												},
+												{
+													"type": "list",
+													"page": 1,
+													"name": "Proficiencies",
+													"items": [
+														"移除了\"弩\"作为一种熟练项。"
+													]
+												},
+												"{@i Sweeping proficiency with all crossbows just turned out to actually eat up more power than I anticipated, with a lack of flavor.}",
+												{
+													"type": "list",
+													"page": 1,
+													"name": "Equipment",
+													"items": [
+														"将手持弩换成轻型弩。"
+													]
+												},
+												"{@i The merchant lost proficiency with all crossbows, but not simple weapons, so this still allows for a ranged merchant loadout at 1st level.}",
+												{
+													"type": "list",
+													"page": 1,
+													"name": "Portable Storefront",
+													"items": [
+														"文字整理。",
+														"现在改为从袋子中取出物品，从奖励动作改为使用物品，使用物品作为同一动作的一部分。当前商人角色需要更新以符合新的措辞。"
+													]
+												},
+												"{@i This change was made to get out of the way of bonus action features that are appearing more frequently in racial traits in more modern races. This should be an extremely welcome buff for lovers of the Swindler Merchant/Rogue multiclass!}",
+												{
+													"type": "list",
+													"page": 1,
+													"items": [
+														"重新进货应该更容易理解，通常在其限制方面更加直接。"
+													]
+												},
+												{
+													"type": "list",
+													"page": 1,
+													"name": "Spells",
+													"items": [
+														"曼德拉草仆从(Mandrake Minion)已被清理，需要更新任何商人角色的法术。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/DMsGuildLogo.webp"
+									},
+									"title": "DMsGuild Product Logo",
+									"width": 134,
+									"height": 140
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Indestructoboy.webp"
+									},
+									"title": "Indestructoboy Designs",
+									"width": 155,
+									"height": 179
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Gold.webp"
+									},
+									"title": "DMsGuild GOLD Best Seller",
+									"width": 140,
+									"height": 140
+								}
+							]
+						},
+						{
+							"type": "hr"
+						},
+						"{@note Dungeons & Dragons, D&D, Wizards of the Coast, Forgotten Realms, the dragon ampersand, Player's Handbook, Monster Manual, Dungeon Master's Guide, D&D Adventurers League, all other Wizards of the Coast product names, and their respective logos are trademarks of Wizards of the Coast in the USA and other countries.}",
+						"{@note This work contains material that is copyright Wizards of the Coast and/or other authors. Such material is used with permission under the Community Content Agreement for Dungeon Masters Guild.}",
+						"{@note ©2019 Wizards of the Coast LLC, PO Box 707, Renton, WA 98057-0707, USA. Manufactured by Hasbro SA, Rue Emile-Boéchat 31, 2800 Delémont, CH. Represented by Hasbro Europe, 4 The Square, Stockley Park, Uxbridge, Middlesex, UB11 1ET, UK.}",
+						"{@note All other original material in this work is copyright 2021 by Taron Pounds and published under the Community Content Agreement for Dungeon Masters Guild.}"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Merchant",
+					"page": 2,
+					"entries": [
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Roof.webp"
+									},
+									"width": 437,
+									"height": 624
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Merchant.webp"
+									},
+									"width": 408,
+									"height": 546
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/ScalesWreath.webp"
+									},
+									"width": 326,
+									"height": 295
+								}
+							]
+						},
+						"无论是稀有魔法物品的鉴定师，非法物品的小贩，还是皇室法庭的簿记员，商人都是交易的大师。他们可以投资于盟友以加强他们，或者花钱确保他们不满的对象被彻底揭露所有不堪的秘密。",
+						{
+							"type": "entries",
+							"name": "The Magic of Value",
+							"page": 2,
+							"entries": [
+								"Volo（沃罗）和Elminster（艾尔明斯特）都曾就魔法与花费之间的联系进行了哲学探讨；这两位著名的传承者就物质是否天生具有魔力，或者一样东西的珍贵是否赋予了它魔法属性的辩论发表了各自的看法，类似于信仰赋予神灵力量的方式。商人通过交易艺术和价值本身的精髓获得他们的魔法。这种魔法可能受到某种力量的影响，比如商业之神、贪婪、幸运或财富之神的神圣力量，或者贸易、机会和混沌的内在本质。",
+								"无论你站在辩论的哪一边，经济和价值背后都有一种不可否认的力量。没有那颗珍贵的钻石，{@spell revivify} 有什么用呢？商业本身已经被视为拥有某种内在的、超自然的品质，能够带来成功和幸福的生活。商业之神受到崇拜，{@deity Waukeen|Faerûnian|SCAG} 是被广泛崇拜的遗忘国度中这些神中最为崇拜的。在一些城市地区，对主宰生育和自然领域的神祇的崇拜已经被抛弃，因为人们觉得当贸易提供一切时，这些神祇就显得不再必要。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Enticement to Adventure",
+							"page": 2,
+							"entries": [
+								"传统上，冒险者只需要金宝的动机就愿意冒险。没有人比商人更了解追寻黄金的驱使力。经营一家商店、看着日子一天天过去是一种简单的生活方式，但旅行者传闻他们最近的旅程带回了巨额战利品，这足以诱使商店老板离开他们那个停滞不前的店面，踏入地牢。",
+								"有些商人选择流浪生活，从一个城镇到另一个城镇，停下来兜售商品进行商业冒险。对于一个筋疲力尽、挨饿的队伍来说，流浪商人是一个令人欣喜的景象，因为他们可能提供食物、水和周围地区的信息。如果这个商人总是在附近，那该有多好啊？",
+								{
+									"type": "entries",
+									"name": "A Merchant's Place in the Party",
+									"page": 2,
+									"entries": [
+										"这位商人是一位高级支援法术施法者，帮助队伍保持装备，并奖励那些喜欢利用手头现有装备解决问题而非施法和技能检定的玩家。这个职业创造了一个玩家风格为：",
+										{
+											"type": "list",
+											"page": 2,
+											"items": [
+												"通过法术和特性来支持中线，这些法术和特性可以操控其他生物的能力和整体力量。",
+												"供应商可以确保派对上随时提供凡俗物品和魔法物品的访问。",
+												"地牢探险者(Dungeoneer)和面孔(Face)，装备了大量随需应变的物品，以应对冒险的危险。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Merchant",
+							"page": 3,
+							"entries": [
+								"在创建一个商人角色时，考虑一下你的角色会经营什么样的生意，以及为什么这会推动他们踏上冒险之路。也许你一直在寻找一种独特物品的材料，因为你知道这将成为下一个大热门，或者你只是试图通过欺诈来积累足够的财富，以资助自己的盗贼行会。也许你曾经是一位善良的旅店老板，当一群人意外地把你卷入他们的任务时，你被迫踏上了冒险之路。你也可以只是在寻找奇珍异宝。无论哪种情况，考虑一下为什么你的商人不只是在一个大城镇里开店，而是选择踏上冒险之路。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"page": 3,
+									"entries": [
+										"按照以下建议，您可以快速创建一个商人。首先，魅力应该是您最高的能力分数。然后优先选择敏捷。其次，选择{@background Variant Guild Artisan (Guild Merchant)|PHB|Guild Merchant}背景。第三，选择{@spell light}和{@spell mending}的零级咒语，以及1级法术{@spell comprehend languages}和{@spell purify food and drink}。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Class Features",
+							"page": 4,
+							"entries": [
+								"{@note For the class table and full details view the {@class Merchant|TPM|Merchant on the Classes Page}.}",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Hit Points",
+											"page": 3,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"page": 3,
+													"items": [
+														{
+															"type": "item",
+															"name": "Hit Dice:",
+															"entries": [
+																"每个商人等级为{@dice 1d8}"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Hit points at 1st Level:",
+															"entries": [
+																"8 + 你的体质调整值 (Constitution modifier)"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Hit Points at Higher Levels:",
+															"entries": [
+																"每个商人等级后的修正值为{@dice 1d8}（或5）+ 你的体质调整值"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Proficiencies",
+											"page": 3,
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-no-bullets",
+													"page": 3,
+													"items": [
+														{
+															"type": "item",
+															"name": "Armor:",
+															"entries": [
+																"轻甲 (Light Armor)"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Weapons:",
+															"entries": [
+																"简单武器，{@quickref improvised weapons|PHB|1|0}"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Tools:",
+															"entries": [
+																"你可以选择两种工匠工具或载具。"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Saving Throws:",
+															"entries": [
+																"智慧, 魅力"
+															]
+														},
+														{
+															"type": "item",
+															"name": "Skills:",
+															"entries": [
+																"选择任意三个 (%num%)。"
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Equipment",
+											"page": 3,
+											"entries": [
+												"你开始时拥有以下装备，除了背景赋予的装备之外：",
+												{
+													"type": "list",
+													"page": 3,
+													"items": [
+														"(a) 一个 {@item light crossbow|PHB} 和 {@item Crossbow Bolts (20)|PHB|20 bolts} 或 (b) 任何 {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+														"一个 {@item staff|PHB} 和一个 {@item abacus|PHB}",
+														"一个用于您的{@classFeature Portable Storefront|Merchant|TPM|1}功能的{@table Adventuring Gear; Container Capacity|PHB|container}",
+														"(a) 一个 {@item diplomat's pack|PHB} 或 (b) 一 {@item explorer's pack|PHB}"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Starting Wealth",
+											"page": 3,
+											"entries": [
+												"或者，您可以选择以({@dice 5d4 × 10|5d4 × 10|Starting Gold}) gp 的起始财富开始，并购买您选择的起始装备，但您始终会携带一个{@table Adventuring Gear; Container Capacity|PHB|container} 以供使用您的{@classFeature Portable Storefront|Merchant|TPM|1} 特性。"
+											]
+										},
+										{
+											"type": "inset",
+											"page": 4,
+											"name": "Multiclassing and the Merchant",
+											"entries": [
+												"如果你的团队在{@book Player's Handbook|PHB}中使用了{@variantrule multiclassing|PHB}的可选规则，那么如果你选择商人作为你的职业之一，这里有一些你需要知道的事情。",
+												{
+													"type": "entries",
+													"name": "Ability Score Minimum",
+													"page": 4,
+													"entries": [
+														"作为一个多职业角色，你必须至少有一个魅力分数为13才能在这个职业中获得一个等级，或者如果你已经是一个商人，也可以在另一个职业中获得一个等级。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Proficiencies Gained",
+													"page": 4,
+													"entries": [
+														"如果商人不是你的初始职业，通过多职业转为商人，你将获得简单武器、{@quickref improvised weapons|PHB|1|0}，以及一套工匠工具的熟练。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Spell Slots",
+													"page": 4,
+													"entries": [
+														"在确定你的法术位数量时，你可以加上你的商人等级的一半。"
+													]
+												}
+											]
+										}
+									]
+								},
+								"作为一个商人，你获得以下职业特性。",
+								{
+									"type": "statblock",
+									"tag": "class",
+									"source": "TPM",
+									"name": "Merchant",
+									"page": 4
+								},
+								{
+									"type": "entries",
+									"name": "Merchant Spell List",
+									"page": 5,
+									"entries": [
+										{
+											"type": "statblock",
+											"tag": "variantrule",
+											"source": "TPM",
+											"name": "Merchant Spell List",
+											"page": 5
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Merchant Guilds",
+					"page": 7,
+					"entries": [
+						"商人加入一个行会，行会会给予他们奖励，帮助促进他们的经济事业。你选择的商人行会反映了你专门销售的产品以及你的一般商业政策。",
+						{
+							"type": "entries",
+							"name": "Apothecary",
+							"page": 7,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Apothecary.webp"
+									},
+									"width": 819,
+									"height": 565
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Apothecary",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 7
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Architect",
+							"page": 9,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Architect",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 9
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Blacksmith",
+							"page": 10,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Blacksmith.webp"
+									},
+									"width": 419,
+									"height": 508
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Blacksmith",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 10
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Esotericism",
+							"page": 11,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Esotericism",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 11
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Esotericism.webp"
+									},
+									"width": 417,
+									"height": 402
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gambler",
+							"page": 12,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Gambler",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 12
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Gambler.webp"
+									},
+									"width": 360,
+									"height": 408
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gourmand",
+							"page": 14,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Gourmand",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 14
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mariner",
+							"page": 15,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Mariner.webp"
+									},
+									"width": 817,
+									"height": 895
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Mariner",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 15
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/OldSalt.webp"
+									},
+									"width": 350,
+									"height": 809
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Pet Dealer",
+							"page": 17,
+							"entries": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/PetDealer.webp"
+									},
+									"width": 358,
+									"height": 489
+								},
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Pet Dealer",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 17
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Swindler",
+							"page": 18,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Swindler",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 18
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Swindler.webp"
+									},
+									"width": 395,
+									"height": 588
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Vagabond",
+							"page": 19,
+							"entries": [
+								{
+									"type": "statblock",
+									"prop": "subclass",
+									"source": "TPM",
+									"name": "Vagabond",
+									"className": "Merchant",
+									"classSource": "TPM",
+									"page": 19
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Supporting Materials",
+					"page": 20,
+					"entries": [
+						{
+							"type": "section",
+							"name": "Spell Descriptions",
+							"page": 20,
+							"entries": [
+								"这些法术按照字母顺序列出。",
+								"{@note Please view {@filter these on the spells page|spells|source=tpm} 为了方便。",
+								{
+									"type": "list",
+									"columns": 3,
+									"page": 20,
+									"items": [
+										"{@note {@spell Create Mandrake|TPM} 包括 {@creature mandrake minion|TPM}。",
+										"{@spell Cruciferous Comets|TPM}",
+										"{@spell Doohickey|TPM}",
+										"{@spell Exchange|TPM}",
+										"{@spell Find Vessel|TPM}",
+										"{@spell Fondue Fountain|TPM}",
+										"{@spell Fool's Gold|TPM}",
+										"{@spell Fruits of Labor|TPM}",
+										"{@spell Gilded Touch|TPM}",
+										"{@spell Gold Dust|TPM}",
+										"{@spell Hedge Risk|TPM}",
+										"{@spell Ivaldi's Impervious Anvil|TPM}",
+										"{@spell Ivaldi's Rustproof Coating|TPM}",
+										"{@spell Mage Ward|TPM}",
+										"{@spell Mineral Wealth|TPM}",
+										"{@spell Money Shot|TPM}",
+										"{@spell Money Talks|TPM}",
+										"{@spell Pilfer|TPM}",
+										"{@spell Popping Corn|TPM}",
+										"{@spell Streak of Luck|TPM}",
+										"{@spell Tagmay's Thermal Container|TPM}"
+									]
+								},
+								{
+									"type": "gallery",
+									"images": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Spells.webp"
+											},
+											"width": 403,
+											"height": 453
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Spells2.webp"
+											},
+											"width": 229,
+											"height": 269
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Feats",
+							"page": 25,
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"page": 25,
+									"items": [
+										"{@feat Mugger|TPM}"
+									]
+								},
+								{
+									"type": "statblock",
+									"tag": "feat",
+									"source": "TPM",
+									"name": "Mugger",
+									"page": 25
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Nonplayer Characters",
+							"page": 25,
+							"entries": [
+								"这些属性块可以作为创建非玩家商人角色的指南，用于你的战役中。",
+								{
+									"type": "list",
+									"columns": 3,
+									"page": 25,
+									"items": [
+										"{@creature Merchant|TPM}",
+										"{@creature Blacksmith|TPM}",
+										"{@creature Swindler|TPM}"
+									]
+								}
+							]
+						},
+						{
+							"type": "hr"
+						},
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Cover-Splash.webp"
+							},
+							"width": 816,
+							"height": 1056
+						},
+						{
+							"type": "gallery",
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Dancer.webp"
+									},
+									"width": 245,
+									"height": 317
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TPM/Indestructoboy2.webp"
+									},
+									"width": 257,
+									"height": 257
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"page": "C2",
+							"style": "text-center",
+							"entries": [
+								"也考虑{@loader Dancer by Taron Pounds|class/Taron Pounds; Dancer.json}。"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

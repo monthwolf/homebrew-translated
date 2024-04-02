@@ -1,0 +1,129 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CollegeOfMetronomes",
+				"abbreviation": "CoM",
+				"full": "College of Metronomes",
+				"url": "https://homebrewery.naturalcrit.com/share/SH49gWbCjmgo",
+				"authors": [
+					"Korvinagor"
+				],
+				"convertedBy": [
+					"Korvinagor"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1704798068,
+		"dateLastModified": 1704798068,
+		"_dateLastModifiedHash": "7d8dc74e65"
+	},
+	"subclass": [
+		{
+			"name": "College of Metronomes",
+			"source": "CollegeOfMetronomes",
+			"shortName": "Metronomes",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"College of Metronomes|Bard||Metronomes|CollegeOfMetronomes|3",
+				"Da Capo al Fine|Bard||Metronomes|CollegeOfMetronomes|6",
+				"Largo/Presto|Bard||Metronomes|CollegeOfMetronomes|14"
+			],
+			"subclassSpells": [
+				"Kinetic Jaunt|scc",
+				"Haste",
+				"Slow"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "College of Metronomes",
+			"source": "CollegeOfMetronomes",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Metronomes",
+			"subclassSource": "CollegeOfMetronomes",
+			"level": 3,
+			"entries": [
+				"节拍学院的吟游诗人通常更注重技术的掌握，而非激情的表现。作为音乐理论和技艺方面的专家，他们的歌曲在面对不和谐时坚定和谐，能够将战斗中的混乱编排成完美的终止音。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Adagio/Allegro|Bard|PHB|Metronomes|CollegeOfMetronomes|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "A Piacere|Bard|PHB|Metronomes|CollegeOfMetronomes|3"
+				}
+			]
+		},
+		{
+			"name": "Adagio/Allegro",
+			"source": "CollegeOfMetronomes",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Metronomes",
+			"subclassSource": "CollegeOfMetronomes",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Metronomes feature}",
+				"每当战斗开始且你不是{@quickref Surprise|PHB|3|0|surprised}时，你可以消耗一次你的吟游诗人灵感，将你的魅力调整值加或减到一个生物的先攻骰（不愿意的生物可以进行一次感知豁免骰来避免此效果）。"
+			]
+		},
+		{
+			"name": "A Piacere",
+			"source": "CollegeOfMetronomes",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Metronomes",
+			"subclassSource": "CollegeOfMetronomes",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level College of Metronomes feature}",
+				"你可以使用你的奖励动作将你选择的生物绑定到你音乐的节奏中，在你的下一个回合结束前，增加它的速度10英尺。",
+				"此外，您可以在使用此特性时额外消耗一次您的吟游诗人灵感。当您这样做时，受影响的生物也会在1分钟内获得{@spell kinetic jaunt|scc}法术的效果。"
+			]
+		},
+		{
+			"name": "Da Capo al Fine",
+			"source": "CollegeOfMetronomes",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Metronomes",
+			"subclassSource": "CollegeOfMetronomes",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level College of Metronomes feature}",
+				"你的音乐激发了完美主义者的热情，通过纯粹的机械重复将失败变成成功。在你的对抗咒音效果下的每个生物都可以使用其反应来消耗一个生命骰并重新投掷一次能力检定、豁免检定或攻击检定。生物在看到其投掷成功或失败后再做出这个决定。",
+				"另外，作为使用你的抗魅力特性的一部分，你可以消耗一个法术位或使用你的吟游诗人灵感来将其持续时间更改为1分钟。"
+			]
+		},
+		{
+			"name": "Largo/Presto",
+			"source": "CollegeOfMetronomes",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Metronomes",
+			"subclassSource": "CollegeOfMetronomes",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level College of Metronomes feature}",
+				"当你使用你的Countercharm（反咒）特性时，或在其仍然有效时的后续回合中作为一个动作，你还可以让它执行以下效果之一，该效果持续到你的下一个回合结束：",
+				{
+					"type": "list",
+					"items": [
+						"你和范围内的每个友好生物获得{@spell haste}法术的效果（受法术影响结束后不会感到疲倦）。",
+						"在其射程内的每个敌对生物必须通过一次感知豁免检定，检定 DC 为你的法术豁免 DC，否则将受到 {@spell slow} 法术的影响。"
+					]
+				},
+				"你可以使用这个特性的次数等于你吟游诗人等级的一半，当你完成一次长休时，你会恢复所有已用次数。"
+			]
+		}
+	]
+}

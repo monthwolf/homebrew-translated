@@ -1,0 +1,1613 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "OSH2024",
+				"abbreviation": "OSH",
+				"full": "Olofir's Samurai Handbook",
+				"authors": [
+					"Maeglad Olofir"
+				],
+				"convertedBy": [
+					"Maeglad Olofir"
+				],
+				"url": "https://www.reddit.com/r/homebrewery/comments/1b1k9ja/comment/ksfws66/?context=3",
+				"dateReleased": "2024-02-28",
+				"version": "1.1.4",
+				"color": "2292E7"
+			}
+		],
+		"dateAdded": 1580617082,
+		"dateLastModified": 1710695326,
+		"_dateLastModifiedHash": "7216860445"
+	},
+	"class": [
+		{
+			"name": "Samurai",
+			"source": "OSH2024",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"tools": [
+					"{@item calligrapher's supplies|phb}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"animal handling",
+								"history",
+								"insight",
+								"medicine",
+								"nature",
+								"perception"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Challenges"
+					],
+					"rows": [
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							1
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							6
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"Challenge Damage"
+					],
+					"rows": [
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 1d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 2d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 3d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						],
+						[
+							"{@dice 4d6}"
+						]
+					]
+				}
+			],
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a martial weapon or (b) two simple weapons",
+					"(a) a {@item chain mail|phb}, or (b) {@item scale mail|phb} or (c) {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item diplomat's pack|phb}"
+				],
+				"goldAlternative": "{@dice 2d4×10|2d4 × 10|Starting Gold}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"heavy"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					],
+					"tools": [
+						"{@item calligrapher's supplies|phb}"
+					]
+				}
+			},
+			"classFeatures": [
+				"Challenge|Samurai|OSH2024|1",
+				"Iajutsu|Samurai|OSH2024|1",
+				"Fighting Style|Samurai|OSH2024|2",
+				"Sacrificial Surge|Samurai|OSH2024|2",
+				{
+					"classFeature": "Samurai Honor|Samurai|OSH2024|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Samurai|OSH2024|4",
+				"Extra Attack|Samurai|OSH2024|5",
+				{
+					"classFeature": "Honor Feature|Samurai|OSH2024|6",
+					"gainSubclassFeature": true
+				},
+				"Resolve|Samurai|OSH2024|7",
+				"Ability Score Improvement|Samurai|OSH2024|8",
+				"Parry|Samurai|OSH2024|9",
+				"Tradition|Samurai|OSH2024|10",
+				{
+					"classFeature": "Honor Feature|Samurai|OSH2024|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Samurai|OSH2024|12",
+				"Precise Strike|Samurai|OSH2024|13",
+				"Focus|Samurai|OSH2024|14",
+				"Clean Cut|Samurai|OSH2024|15",
+				"Ability Score Improvement|Samurai|OSH2024|16",
+				"Restful Meditation|Samurai|OSH2024|17",
+				{
+					"classFeature": "Honor Feature|Samurai|OSH2024|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Samurai|OSH2024|19",
+				"True Challenge|Samurai|OSH2024|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Challenge",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 1,
+			"entries": [
+				"武士能够集中精力，在战斗中释放出更具破坏性的剑术。武士可以针对60英尺内的单个选择的生物激活挑战。针对该生物，在接下来的一分钟内，他们获得以下特征：",
+				"• 对它们的攻击投掷获得优势。",
+				"• 当你使用武器对它们造成伤害时，每回合一次，额外造成{@dice 1d6}伤害。这个伤害在5级、10级和15级时增加1d6。",
+				"• 每回合一次，你可以将你的AC视为比他们发动的任何攻击高3点。或者，在他们强迫你进行的任何豁免投掷上获得此加值。",
+				"如果你将一只生物的生命值降低到0点，你可以用一个奖励动作或反应将你的挑战转移给范围内的另一只生物，将你的挑战持续时间增加2回合。",
+				"你拥有这个能力的一次使用机会，并在短休息后恢复它。随着你在这个职业中的进展，你会获得额外的使用次数。"
+			]
+		},
+		{
+			"name": "Iajutsu",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 1,
+			"entries": [
+				"另外，在1级时，你在先攻检定中获得优势。在战斗的第一回合，你获得以下好处：",
+				"• 你有额外的一个行动，可以用来进行一次武器攻击，或者使用侦测(`Detect`)、冲刺(`Dash`)或脱离(`Disengage`)行动。"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 2,
+			"entries": [
+				"在2级时，你会选择一种特定的战斗风格作为你的专长。选择以下选项之一。即使你有机会再次选择，也不能再次选择相同的战斗风格选项。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Archery",
+							"entries": [
+								"你使用远程武器进行攻击时，获得+2的攻击加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Defense",
+							"entries": [
+								"当你穿戴盔甲时，你的AC获得+1的加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dueling",
+							"entries": [
+								"当你单手持有一把近战武器且没有其他武器时，你对该武器的伤害骰获得+2的加值。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Great Weapon Fighting",
+							"entries": [
+								"当你使用双手持有的近战武器进行攻击时，如果伤害骰子掷出1或2，你可以重新投掷该骰子，并且必须使用新的点数，即使新的点数仍然是1或2。武器必须具有双手或多用途属性，你才能获得这个好处。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Two-Weapon Fighting",
+							"entries": [
+								"当你进行双武器战斗时，你可以将你的能力修正值加到第二次攻击的伤害上。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sacrificial Surge",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 2,
+			"entries": [
+				"你已经学会了用纯粹的心智力量推动身体超越其正常能力，以换取纯粹的专注。作为一个奖励动作，你可以在以下技能上给自己优势：（Acrobatics）敏捷、（Athletics）运动、（Intimidation）威吓、（Perception）感知或（Stealth）潜行。作为结果，你会受到1d4点死灵伤害，这种伤害无法通过任何方式减少或忽略。这种伤害会随着你的角色等级增加，在6级、12级和18级时增加，最多为5d4点。",
+				"另外，如果你在挑战中将一只生物的生命值降至0点，你可以使用牺牲冲刺将其转移给一个新目标，而不是使用一个奖励动作或反应。"
+			]
+		},
+		{
+			"name": "Samurai Honor",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 3,
+			"entries": [
+				"在3级时，你将自己与一条被称为荣誉的道路联系在一起。荣誉决定了你所走的道路、获得的能力以及未来的发展。子职业在职业特性之后列出。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"使用可选特性规则，您可以放弃选择此特性，而选择一项您喜欢的{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合上采取{@action Attack}动作时，你可以进行两次攻击，而不是一次。"
+			]
+		},
+		{
+			"name": "Honor Feature",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 6,
+			"entries": [
+				"在第6级时，你从你的武士荣誉(Samurai Honor)中获得一个特性。"
+			]
+		},
+		{
+			"name": "Resolve",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 7,
+			"entries": [
+				"在7级时，当你需要进行一次智力、感知或魅力豁免检定且失败时，你可以作为一次反应再次投掷骰子。你在短休息后恢复此特性的使用。在14级和18级时，你会获得额外的使用次数。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"使用可选特性规则，您可以放弃选择此特性，而选择一项您喜欢的{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Parry",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 9,
+			"entries": [
+				"在9级时，你对武器的训练使你能够避开敌人的进攻。当一只生物用近战武器对你造成伤害时，只要你握着一种你精通的武器，你可以作为一次反应将伤害减少{@dice 1d10}+你的力量或敏捷调整值。如果你将伤害减少到0，你可以选择以下结果之一：",
+				"• 该生物被解除了武装。",
+				"• 生物受到你的武器造成的4点伤害。",
+				"如果你招架比你大的生物，每个你们之间的尺寸类别差异，都会在你的招架骰上获得-3的惩罚。对于这项能力，小型的武士被视为中等大小。"
+			]
+		},
+		{
+			"name": "Tradition",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 10,
+			"entries": [
+				"在10级时，你的道路已经引领你到了一个十字路口，需要在战斗至上 (Combat Supremeacy) 和心灵坚韧 (Mental Fortitude) 之间做出选择。你必须选择以下能力之一，并且之后不能更改：",
+				"• 坚韧不拔的精神。您获得对感知豁免投掷的熟练加值，并且不会受到任何对其的劣势影响。",
+				"• 压制形态。你的攻击变成了持续的连续打击。当你用一次攻击命中一名生物时，他们会被标记，直到你的下一个回合结束。当你攻击一个被标记的生物时，你造成额外的一颗骰子的武器伤害。你每回合只能标记一次生物。"
+			]
+		},
+		{
+			"name": "Honor Feature",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 11,
+			"entries": [
+				"在11级时，你从你的武士荣誉(Samurai Honor)中获得一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性时不能将能力值提高到20以上。",
+				"使用可选特性规则，您可以放弃选择此特性，而选择一项您喜欢的{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Precise Strike",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 13,
+			"entries": [
+				"在13级时，当使用你熟练的武器进行攻击检定时，你将暴击范围视为19-20。"
+			]
+		},
+		{
+			"name": "Focus",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 14,
+			"entries": [
+				"在14级时，你对受到惊恐和被魅惑状态免疫。"
+			]
+		},
+		{
+			"name": "Clean Cut",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 15,
+			"entries": [
+				"在15级时，当你对一名被挑战生物进行暴击时，你会额外造成2d6点伤害，伤害类型与你的武器相匹配。如果你对一名生命值低于其最大生命值50%的生物进行暴击，这个额外伤害增加到4d6点。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与常规规则一样，使用此特性不能将能力值提高到20以上。",
+				"使用可选特性规则，您可以放弃选择此特性，而选择一项您喜欢的{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Restful Meditation",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 17,
+			"entries": [
+				"到了17级，你可以安静地休息，让自己的思绪平静下来，从而实现高效休息。当你需要进行长休时，你可以选择冥想。冥想只需要4小时，而不是8小时\u2014\u2014对于那些已经能够冥想的生物，比如(Elf)，时间缩短到2小时。",
+				"冥想时，你仍然敏锐地意识到周围的事物。你在感知检定上不会受到劣势。",
+				"或者，你可以通过花费整整8小时冥想来净化你的心灵。这样你可以对自己施放(%Greater Restoration%)。"
+			]
+		},
+		{
+			"name": "Honor Feature",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 18,
+			"entries": [
+				"在18级时，你从你的武士荣誉(Samurai Honor)中获得一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"使用可选特性规则，您可以放弃选择此特性，而选择一项您喜欢的{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "True Challenge",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"level": 20,
+			"entries": [
+				"在20级时，你的挑战适用于所有生物，只要它仍然有效，并且你获得三次额外使用挑战的机会。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Honor of the Sparrow",
+			"shortName": "Sparrow",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassFeatures": [
+				"Honor of the Sparrow|Samurai|OSH2024|Sparrow|OSH2024|3",
+				"Sparrow's Eyes|Samurai|OSH2024|Sparrow|OSH2024|3",
+				"Sureshot|Samurai|OSH2024|Sparrow|OSH2024|3",
+				"Acute Senses|Samurai|OSH2024|Sparrow|OSH2024|6",
+				"Archer's Riposte|Samurai|OSH2024|Sparrow|OSH2024|11",
+				"Headshot|Samurai|OSH2024|Sparrow|OSH2024|18"
+			]
+		},
+		{
+			"name": "Honor of the Oni",
+			"shortName": "Oni",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassFeatures": [
+				"Honor of the Oni|Samurai|OSH2024|Oni|OSH2024|3",
+				"Yōkai|Samurai|OSH2024|Oni|OSH2024|3",
+				"Brutish Strike|Samurai|OSH2024|Oni|OSH2024|6",
+				"Aura of Hate|Samurai|OSH2024|Oni|OSH2024|11",
+				"Icon of Fear|Samurai|OSH2024|Oni|OSH2024|18"
+			]
+		},
+		{
+			"name": "Honor of the Revenger",
+			"shortName": "Revenger",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"page": 7,
+			"subclassFeatures": [
+				"Honor of the Revenger|Samurai|OSH2024|Revenger|OSH2024|3",
+				"Hatred|Samurai|OSH2024|Revenger|OSH2024|3",
+				"Bloody Conquest|Samurai|OSH2024|Revenger|OSH2024|6",
+				"Rend|Samurai|OSH2024|Revenger|OSH2024|11",
+				"True Hatred|Samurai|OSH2024|Revenger|OSH2024|18"
+			]
+		},
+		{
+			"name": "Honor of the Rabbit",
+			"shortName": "Rabbit",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"page": 4,
+			"subclassFeatures": [
+				"Honor of the Rabbit|Samurai|OSH2024|Rabbit|OSH2024|3",
+				"Art of Evasion|Samurai|OSH2024|Rabbit|OSH2024|3",
+				"Spin and Piourette|Samurai|OSH2024|Rabbit|OSH2024|6",
+				"Artful Defense|Samurai|OSH2024|Rabbit|OSH2024|11",
+				"Deft Movement|Samurai|OSH2024|Rabbit|OSH2024|18",
+				"Burst of Speed|Samurai|OSH2024|Rabbit|OSH2024|18"
+			]
+		},
+		{
+			"name": "Honor of the Juggernaut",
+			"shortName": "Juggernaut",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"page": 8,
+			"subclassFeatures": [
+				"Honor of the Juggernaut|Samurai|OSH2024|Juggernaut|OSH2024|3",
+				"Iron Stance|Samurai|OSH2024|Juggernaut|OSH2024|3|",
+				"Wisdom of the Juggernaut|Samurai|OSH2024|Juggernaut|OSH2024|6",
+				"Mighty Parry|Samurai|OSH2024|Juggernaut|OSH2024|11",
+				"Unstoppable|Samurai|OSH2024|Juggernaut|OSH2024|18"
+			]
+		},
+		{
+			"name": "Honor of the Slayer",
+			"shortName": "Slayer",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"page": 5,
+			"subclassFeatures": [
+				"Honor of the Slayer|Samurai|OSH2024|Slayer|OSH2024|3",
+				"The Breath|Samurai|OSH2024|Slayer|OSH2024|3",
+				"Miraculous Feint|Samurai|OSH2024|Slayer|OSH2024|6",
+				"Focused Breathing|Samurai|OSH2024|Slayer|OSH2024|11",
+				"Constant Breathing Technique|Samurai|OSH2024|Slayer|OSH2024|18"
+			]
+		},
+		{
+			"name": "Honor of the Spellbound",
+			"shortName": "Spellbound",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"page": 9,
+			"subclassFeatures": [
+				"Honor of the Spellbound|Samurai|OSH2024|Spellbound|OSH2024|3",
+				"Flow|Samurai|OSH2024|Spellbound|OSH2024|6",
+				"Arcane Parry|Samurai|OSH2024|Spellbound|OSH2024|11",
+				"This is Power|Samurai|OSH2024|Spellbound|OSH2024|18"
+			],
+			"spellcastingAbility": "cha",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				8,
+				9
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=Warlock"
+							},
+							{
+								"all": "level=1|class=Warlock"
+							}
+						],
+						"6": [
+							{
+								"all": "level=2|class=Warlock"
+							}
+						],
+						"9": [
+							{
+								"all": "level=3|class=Warlock"
+							}
+						],
+						"12": [
+							{
+								"all": "level=4|class=Warlock"
+							}
+						],
+						"16": [
+							{
+								"all": "level=5|class=Warlock"
+							}
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Spellbound",
+							"source": "OSH2024"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Warlock}",
+						"{@filter Spells Known|spells|class=Warlock}",
+						"Spell Slots",
+						"Slot Level"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							2,
+							1,
+							"{@filter 1st|spells|level=1|class=Warlock}"
+						],
+						[
+							2,
+							2,
+							1,
+							"{@filter 1st|spells|level=1|class=Warlock}"
+						],
+						[
+							2,
+							3,
+							1,
+							"{@filter 1st|spells|level=1|class=Warlock}"
+						],
+						[
+							2,
+							3,
+							1,
+							"{@filter 2nd|spells|level=2|class=Warlock}"
+						],
+						[
+							2,
+							3,
+							1,
+							"{@filter 2nd|spells|level=2|class=Warlock}"
+						],
+						[
+							2,
+							4,
+							1,
+							"{@filter 2nd|spells|level=2|class=Warlock}"
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 3rd|spells|level=3|class=Warlock}"
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 3rd|spells|level=3|class=Warlock}"
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 3rd|spells|level=3|class=Warlock}"
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 4th|spells|level=4|class=Warlock}"
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 4th|spells|level=4|class=Warlock}"
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 4th|spells|level=4|class=Warlock}"
+						],
+						[
+							3,
+							6,
+							3,
+							"{@filter 4th|spells|level=4|class=Warlock}"
+						],
+						[
+							3,
+							7,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock}"
+						],
+						[
+							3,
+							7,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock}"
+						],
+						[
+							3,
+							8,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock}"
+						],
+						[
+							3,
+							8,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock}"
+						],
+						[
+							3,
+							9,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock}"
+						]
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Honor of the Rabbit",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Rabbit",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"兔子的荣誉是敏捷、速度和灵巧躲避的路径。一位兔子武士知道如何快速在战场上移动，并利用他们的快速动作来避开每一次打击的全力冲击。不可预测且迅速，一位兔子武士可以在延长的时间内生存下来。"
+			]
+		},
+		{
+			"name": "Art of Evasion",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Rabbit",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，当不穿戴盔甲和不使用盾牌时，你的护甲等级计算为13+敏捷修正值。",
+				"此外，当你四处移动时，你可以将伤口和擦伤转化为擦伤。只要你能够移动且没有被致盲，你受到的所有钝击、劈砍、刺击、火焰、冰冻、闪电和酸性伤害都减少2点。在7级和18级时，这个减少值会增加1点。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Quickstep|Samurai|OSH2024|Rabbit|OSH2024|3"
+				}
+			]
+		},
+		{
+			"name": "Quickstep",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Rabbit",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你可以将冲刺动作作为一个奖励动作进行。"
+			]
+		},
+		{
+			"name": "Spin and Piourette",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Rabbit",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的速度增加了5尺，到11级时再增加5尺。",
+				"此外，每回合一次，当你要对一名生物进行攻击检定时，你可以朝任意方向移动多达10英尺。"
+			]
+		},
+		{
+			"name": "Artful Defense",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Rabbit",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，每次短休息两次，即使你已经用完了反应，你也可以使用招架特性。"
+			]
+		},
+		{
+			"name": "Deft Movement",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Rabbit",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，只要你能移动，你在敏捷豁免 throws 上获得优势。"
+			]
+		},
+		{
+			"name": "Burst of Speed",
+			"source": "OSH2024",
+			"page": 4,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Rabbit",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"另外，在18级时，每次短休息时，你可以展示真正的技巧和速度。当你将这个能力作为一个动作激活时，你获得以下好处：",
+				"• 你的速度翻倍，并且你不能成为机会攻击的目标。",
+				"• 本回合内，对每个你移动到15英尺内的生物进行一次攻击检定。该攻击造成额外的两个骰子的武器伤害。"
+			]
+		},
+		{
+			"name": "Honor of the Juggernaut",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Juggernaut",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"那些发现自己走上了\"主宰者\"之路的人，是强大无比、不可阻挡的战士，他们以自己巨大的力量和身躯冲破敌人的防线。他们的攻击摧毁敌人的防御，同时保持自己的防御坚定。"
+			]
+		},
+		{
+			"name": "Iron Stance",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Juggernaut",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你学会了采取缓慢但耐久的姿势，只有在穿着中重甲时才能进入。你可以用你的奖励动作进入铁壁之势。铁壁之势没有持续时间，而且在你的回合开始时退出它只需要一个自由动作。当你处于这种姿势中时，获得以下特性：",
+				"• 你的AC值增加了3。",
+				"• 你在力量豁免投掷时获得优势。(Advantage)",
+				"• 你的速度减半。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Posture Break|Samurai|OSH2024|Juggernaut|OSH2024|3"
+				}
+			]
+		},
+		{
+			"name": "Posture Break",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Juggernaut",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"另外，在3级时，当你处于铁壁架势（Iron Stance）中时，你的攻击变得严厉而残酷。当你使用你擅长的力量进行近战武器攻击造成伤害时，目标的AC降低1点。这个减少持续到他们的下一个回合结束。这个减少效果最多可以叠加2次。",
+				"在11级时，你每造成1点伤害，目标的AC就会降低2点，最多降低3点。"
+			]
+		},
+		{
+			"name": "Wisdom of the Juggernaut",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Juggernaut",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你们的教义教导控制思维。在6级时，在一次挑战中，你可以将你的熟练加值的一半加到所有智力、魅力和感知豁免上。"
+			]
+		},
+		{
+			"name": "Mighty Parry",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Juggernaut",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的(Parry)招架是一种强大的力量。在铁壁姿态下，获得+3的奖励用于(Parry)招架检定。此外，如果伤害降低至至少5点或更低，你可以选择将生物推开10英尺或使其倒地。这只能用于与你相同大小或更大的生物。"
+			]
+		},
+		{
+			"name": "Unstoppable",
+			"source": "OSH2024",
+			"page": 8,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Juggernaut",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，即使死神也难以夺走你的生命。当你在铁壁姿态下降到0点生命值时，你仍然保持清醒。你仍然按照正常规则进行死亡豁免投掷。如果你成功通过所有3次投掷，你会自动稳定在1点生命值。如果你掷出自然20，你会在10点生命值上稳定。"
+			]
+		},
+		{
+			"name": "Honor of the Slayer",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"《屠龙者》是一支古老的武士团，曾经与怪物和不死生物战斗，阻止它们统治世界以保护人类。虽然这个团体早已消失，但他们的技能和传统的残余仍然存在，其中最著名的是\"呼吸\"（The Breath）。\"呼吸\"是一种强大的能力，允许使用者调节他们的呼吸到极致精准的水平，使他们能够展现出远远超出其种族通常能力的壮举。"
+			]
+		},
+		{
+			"name": "The Breath",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"作为一个奖励动作，或者作为发出挑战的一部分，你可以开始\"呼吸\"(The Breath)。你获得以下好处：",
+				"• 你的力量、敏捷或体质（你选择）提高 +2。",
+				"• 你的速度增加10尺。",
+				"• 你在体质豁免 throws 时有优势，除非试图保持(The Breath)。",
+				"• 你的负重能力翻倍。",
+				"如果你有任何{@condition exhaustion|phb}，你可以使用（The Breath）的时间减半。",
+				"呼吸占用你的专注位，如果你能施放任何法术，但不需要豁免才能维持。",
+				"你可以在你的回合将《呼吸》（The Breath）结束为自由动作。",
+				"你可以维持（The Breath）的回合数，等于你的2+你的体质调整值（最少1）。一旦超过这个限制，你必须在每个回合结束时开始进行 DC 8 的体质豁免检定。如果失败，你获得1级{@condition exhaustion|phb}。如果成功，你可以继续维持（The Breath），尽管 DC 增加 +2。如果你将会失败这次豁免，你可以使用牺牲冲刺（Sacrificial Surge）作为一次反应再尝试一次。",
+				"使用完「呼吸」后，你必须等待至少一分钟才能再次使用它。每次在第一次使用「呼吸」之后再次使用时，你可以免费维持的回合数会减少1。这在一次长休后重置。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Breath Evolution|Samurai|OSH2024|Slayer|OSH2024|6"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Breath Evolution|Samurai|OSH2024|Slayer|OSH2024|11"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Breath Evolution|Samurai|OSH2024|Slayer|OSH2024|18"
+				}
+			]
+		},
+		{
+			"name": "Breath Evolution",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，气息（The Breath）得到了改善：",
+				"• 你可以将武器的伤害骰视为比实际值高一级 (d4>d6>d8>d10>d12>2d6>2d8)。",
+				"• 你的速度额外增加5英尺。"
+			]
+		},
+		{
+			"name": "Miraculous Feint",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你能够释放爆发速度来避免即将到来的危险。当有攻击对你进行攻击检定，或者你被迫进行力量、敏捷或体质豁免检定时，你可以作为一次反应触发这个能力。你可以让攻击检定受到劣势，或者在豁免检定中获得优势。如果攻击未命中，或者你的豁免成功，你可以移动最多半个你的速度。"
+			]
+		},
+		{
+			"name": "Breath Evolution",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，(The Breath) 的效果提升：",
+				"• 你可以将属性提升奖励应用于两项属性。",
+				"• 你在力量和敏捷豁免 throws 上获得 +2 的奖励。",
+				"• 你在招架（Parry）职业特性中被视为比实际尺寸大一号。"
+			]
+		},
+		{
+			"name": "Focused Breathing",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"你已经学会了如何最大化维持《呼吸》的效率。在11级时，《呼吸》的持续时间增加了2轮，并且你对所有维持《呼吸》的豁免投掷获得优势。"
+			]
+		},
+		{
+			"name": "Breath Evolution",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，掌握了（The Breath）的技能。",
+				"• 选择力量 (Strength)、敏捷 (Dexterity) 或体质 (Constitution) 中的一个属性。该属性增加4点，最高不超过24点。另外两个未选择的属性增加2点。"
+			]
+		},
+		{
+			"name": "Constant Breathing Technique",
+			"source": "OSH2024",
+			"page": 5,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Slayer",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你学会了始终专注于呼吸，将你的力量和极限提升十倍。你始终受益于呼吸的第3级特性，尽管必须进入这种能力的传统形式才能使用更高级别的功能。如果你的疲劳值超过最大值的一半，或者处于濒死状态，你将无法从这个特性中受益。"
+			]
+		},
+		{
+			"name": "Honor of the Spellbound",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Spellbound",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"那些崇拜这种荣誉的人拥有与生俱来的魔法能力，能够召唤魔法。他们将这种能力与武士的纪律性相结合，以勤奋和精准地挥舞钢刀和咒语。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Samurai|OSH2024|Spellbound|OSH2024|3"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Spellbound",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你达到3级时，你可以通过施法能力增强你的武术技能。请参阅{@book chapter 10|PHB|10}了解施法的一般规则，{@book chapter 11|PHB|11}了解{@filter warlock spell list|spells|class=warlock}。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"你可以从{@filter warlock spell list|spells|class=warlock}中选择两个零度法术。在10级时，你可以再学习一个额外的(%Warlock%)法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spell Slots",
+							"entries": [
+								"《被咒咀嚼法术施法表》显示了你有多少法术位来施放你{@filter warlock spells|spells|class=warlock}的1级至4级法术。该表还显示了这些法术位的等级；你所有的法术位都是同一等级。要施放你的1级或更高级的术士法术之一，你必须消耗一个法术位。当你完成短暂休息或长休息时，你会恢复所有已消耗的法术位。",
+								"例如，当你达到7级时，你会有一个2级法术位。要施放1级法术{@spell Arms of Hadar}，你必须消耗其中一个法术位，并将其作为2级法术施放。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spells Known of 1st-Level and Higher",
+							"entries": [
+								"在3级时，你可以从术士法术清单中选择两个1级法术。这些法术必须属于召唤或塑能系法术。",
+								"表格中的已知法术栏显示了你学会更多术士法术的时间，这些法术可以是1级或更高级别的。你选择的法术的等级不能高于表格中对应你等级的槽位等级栏所显示的等级。例如，当你达到10级时，你会学会一个新的术士法术，可以是1级、2级或3级。",
+								"另外，当你达到8级、13级和18级时，你可以选择任意一种魔法学派的一个法术。",
+								"当你在这个职业中升级时，你可以选择你已经掌握的术士法术中的一个，然后用术士法术清单中的另一个法术替换它，遵循学派限制，并且新法术的等级必须与你拥有法术位的等级相符。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spellcasting Ability",
+							"entries": [
+								"魅力是你作为(术士)的法术施放能力，因此当一个法术提到你的法术施放能力时，你就使用你的魅力。此外，当你施放(术士)法术并设定豁免 DC 时，以及进行攻击检定时，你也会使用你的魅力修正值。",
+								{
+									"type": "abilityDc",
+									"name": "Spell",
+									"attributes": [
+										"cha"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "Spell",
+									"attributes": [
+										"cha"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flow",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Spellbound",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你采取攻击动作时，每回合一次，你可以用一个法术替换你的一次攻击。然而，无限法术将以低一级的规模施放，法术将以低一级的规模施放，最低为1级。你只能使用具有一个升级特性的法术来施放法术。如果法术在提升等级时会增加一个骰子，那么如果在其正常等级以下施放，就移除一个骰子。"
+			]
+		},
+		{
+			"name": "Arcane Parry",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Spellbound",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，由于你自己的研究，你能够穿透魔法本身。当你受到来自法术或魔法能力的伤害时，作为一次反应，你可以将伤害减少{@dice 2d8}+你的魅力调整值。如果你将伤害减少到0，你可以向施放该法术的生物发射一束厄尔多瑞之光。前提是它们在射程内。"
+			]
+		},
+		{
+			"name": "This Is Power",
+			"source": "OSH2024",
+			"page": 9,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Spellbound",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，每次长休后，你可以施放任何{@filter 7th Level Warlock Spell|spells|level=7|class=warlock}。"
+			]
+		},
+		{
+			"name": "Honor of the Revenger",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Revenger",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"那些走上复仇之路的人会发现自己被一种燃烧的仇恨所吞噬，慢慢地腐蚀他们的内心。尽管如此，很少有人在向敌人释放最真实的仇恨时关心他们给自己带来的伤害。"
+			]
+		},
+		{
+			"name": "Hatred",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Revenger",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你活着就是为了杀死那些挡在你路上的人。在3级时，当你要挑战一个生物时，你可以选择憎恨他们。如果你这样做，你将获得以下好处：",
+				"• 当你造成挑战伤害时，将骰子增加到 {@dice d10}。你的挑战骰最少造成3点伤害。",
+				"然而:",
+				"• 你不能对它们造成非致命伤害 (Non-Lethal Damage)。",
+				"• 如果你在一轮内没有与它们交战或受到伤害，你的挑战结束。",
+				"当你在仇恨状态下将你的挑战转移给另一个生物时，你可以选择停止仇恨或继续保持仇恨。"
+			]
+		},
+		{
+			"name": "Bloody Conquest",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Revenger",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你击败一个被挑战的生物并将你的挑战延伸到一个新目标时，它们必须通过一次感知豁免检定（豁免 DC 8+熟练加值+力量或敏捷调整值）否则它们会因为你而感到害怕，直到它们的下一个回合结束。"
+			]
+		},
+		{
+			"name": "Rend",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Revenger",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当攻击一只你憎恨的生物，其生命值低于50%时，你的暴击范围增加2。此外，你的暴击造成的伤害每个骰子最少为3点。"
+			]
+		},
+		{
+			"name": "True Hatred",
+			"source": "OSH2024",
+			"page": 7,
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Revenger",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，当你憎恨一个生物时，你的挑战伤害骰变为d12，并造成最少4点伤害。此外，当你试图招架他们时，造成的伤害量等同于你招架骰点数的一半。",
+				"在20级时，你可以选择在发起挑战时憎恨所有生物。"
+			]
+		},
+		{
+			"name": "Honor of the Oni",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Oni",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"那些走鬼道的人要么天生如此，要么选择成为巨大可怕的怪物。通常被周围的人所避之不及，倾向于走上残忍邪恶的道路，大多数鬼武士最终会被同行所击倒..."
+			]
+		},
+		{
+			"name": "Yōkai",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Oni",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在第3级时，你的形态会永久改变，无论是来自你自身的潜能还是经历某种化学过程。你的外表会发生变化，变得略微像恶鬼鬼鬼(`Oni`)。你可能会长出角，瞳孔可能变成缝隙，或者你的皮肤会长出鳞片。你获得以下特征：",
+				"• 你获得运动技能熟练加值，并且可以使用力量代替魅力进行恐吓（Athletics (Strength)）。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oni Unleashed|Samurai|OSH2024|Oni|OSH2024|3"
+				}
+			]
+		},
+		{
+			"name": "Oni Unleashed",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Oni",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你能释放出真正的力量。当你发出挑战时，你会变身为一个近乎真实的鬼鬼（Oni）形象，长出锋利的牙齿，眼睛发出威胁的光芒，身材变得庞大。在你的挑战结束前，你获得以下好处：",
+				"• 临时生命值等于你的角色等级 x 1.5。",
+				"• 你的尺寸增加一级，你的射程增加5英尺。",
+				"• 当你进行力量豁免检定或检定时，如果骰出的点数低于6，视为骰出了6。",
+				"• 你可以将推挤动作作为一个奖励动作（Shove Action）来执行。"
+			]
+		},
+		{
+			"name": "Brutish Strike",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Oni",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，当你进行近战攻击检定时，你可以选择进行一次蛮力打击。进行一次带有劣势的攻击检定，造成额外一个武器伤害骰，并将目标击退5英尺。",
+				"如果你在鬼神释放状态下使用这个能力，每回合一次，它们还必须进行一次魅力豁免检定，否则直到他们的回合结束都会获得{@condition Frightened}状态。"
+			]
+		},
+		{
+			"name": "Aura of Hate",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Oni",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，当你处于你的鬼鬼解放状态时，你的存在本身就充满了恐惧和恐怖。这表现为一个20英尺的光环，使所有位于其中的生物在对抗你造成的{@condition Frightened}状态时，拥有劣势。此外，作为一个奖励动作，你可以强迫光环内的生物进行一次魅力豁免，否则会受到{@dice 2d4}点精神伤害，成功豁免时减半。一个距离你{@condition Frightened}的生物会受到{@dice 3d4}点精神伤害。这被视为对恐惧的豁免。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Omen of Doom|Samurai|OSH2024|Oni|OSH2024|11"
+				}
+			]
+		},
+		{
+			"name": "Omen of Doom",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Oni",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"每次长休后，当你成功通过一次感知或魅力豁免检定时，你可以强迫造成这一情况的生物进行一次魅力豁免检定，否则他们会在接下来的回合结束前成为你的{@condition Frightened}。"
+			]
+		},
+		{
+			"name": "Icon of Fear",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Oni",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"到达18级时，当你进行先攻骰时，你可以立即向选择的目标发出挑战。当你这样做时，你周围60英尺范围内的每个生物必须进行一次魅力豁免才能在1分钟内变成你的{@condition Frightened}。他们可以在他们的每个回合开始时尝试豁免。"
+			]
+		},
+		{
+			"name": "Honor of the Sparrow",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Sparrow",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"那些追随麻雀荣耀的人会发现，弓是他们值得信赖的朋友、伴侣，也是和平与死亡的使者。他们的射击精准，几乎不会失手。他们能够感知看不见的事物，并且能够清晰地辨认出微小的细节，这也是他们名字的由来。"
+			]
+		},
+		{
+			"name": "Sparrow's Eyes",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Sparrow",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你获得对{@skill Perception}的熟练，如果你已经熟练则变为专家。你能看到的距离为3英里，而不是2英里。",
+				"此外，当使用弓时，分别将其射程增加30和60。"
+			]
+		},
+		{
+			"name": "Sureshot",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Sparrow",
+			"subclassSource": "OSH2024",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"此外，你可以将你的伤害转化为纯粹的精准伤害。当你对一个被挑战的目标使用弓进行攻击检定时，你可以消耗骰子数量的一半。当你这样做时，每消耗一个挑战骰，你的攻击检定中会额外增加 {@dice 1d4}。这会永久性地减少你的挑战骰直到下一个回合开始前。",
+				"每次短休期间的次数等于你的熟练加值，你可以对一个你尚未挑战的生物使用这个特性，尽管你不能添加任何挑战伤害。"
+			]
+		},
+		{
+			"name": "Acute Senses",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Sparrow",
+			"subclassSource": "OSH2024",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级时，你的警觉性增强，Passive Perception提高5点。你可以察觉到即使是微小的动作，消除在昏暗光线下和对隐形生物进行感知检查时的劣势。每次长休后，你可以利用环境线索追踪最微小的动作，并获得{@spell See Invisibility}的益处，尽管它不算作法术，只持续1分钟。"
+			]
+		},
+		{
+			"name": "Archer's Riposte",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Sparrow",
+			"subclassSource": "OSH2024",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得了能力来避开远程攻击。当被弩箭或箭矢瞄准时，你可以使用你的反应来减少攻击骰的结果数{@dice 1d8}，即使骰已经投掷完毕。如果攻击未命中，你可以作为这个反应的一部分将同一抛射物射回攻击者，如果他们在射程内。如果攻击命中，你可以自愿承受你的牺牲冲刺能力所造成的伤害，无论如何都可以将抛射物射回攻击者。"
+			]
+		},
+		{
+			"name": "Headshot",
+			"source": "OSH2024",
+			"className": "Samurai",
+			"classSource": "OSH2024",
+			"subclassShortName": "Sparrow",
+			"subclassSource": "OSH2024",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你的精准达到了巅峰。每次短休息一次，使用弓对你已经挑战的生物进行攻击检定，从你的（Sureshot）技能中增加{@dice 5d4}来命中。如果你命中并且检定结果超过30，你的攻击将额外造成你全部的挑战伤害，并且是一个无法被否定的暴击。"
+			]
+		}
+	]
+}

@@ -1,0 +1,135 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "GelidityPathOfTheHoneyBadger",
+				"abbreviation": "PotHB",
+				"full": "Path of the Honey Badger Barbarian",
+				"authors": [
+					"Gelidity"
+				],
+				"convertedBy": [
+					"Gelidity"
+				],
+				"version": "1.0",
+				"url": "https://www.gmbinder.com/share/-NIregFUvtHseDRAQgTb",
+				"targetSchema": "1.0"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 1670615564,
+		"_dateLastModifiedHash": "dbe2640d34"
+	},
+	"subclass": [
+		{
+			"name": "Path of the Honey Badger",
+			"source": "GelidityPathOfTheHoneyBadger",
+			"shortName": "Honey Badger",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Path of the Honey Badger|Barbarian|PHB|Honey Badger|GelidityPathOfTheHoneyBadger|3|GelidityPathOfTheHoneyBadger",
+				"Fearless Mount|Barbarian|PHB|Honey Badger|GelidityPathOfTheHoneyBadger|6|GelidityPathOfTheHoneyBadger",
+				"Vicious Attack|Barbarian|PHB|Honey Badger|GelidityPathOfTheHoneyBadger|10|GelidityPathOfTheHoneyBadger",
+				"The Harder They Fall|Barbarian|PHB|Honey Badger|GelidityPathOfTheHoneyBadger|14|GelidityPathOfTheHoneyBadger"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Honey Badger",
+			"source": "GelidityPathOfTheHoneyBadger",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Honey Badger",
+			"subclassSource": "GelidityPathOfTheHoneyBadger",
+			"level": 3,
+			"entries": [
+				"愤怒的力量并不仅限于体型庞大或威风凛凛的生物。在那些生长在野蛮文化和环境中的人中，那些幸存下来的小个体才是真正最坚强的。为了弥补他们的缺点，他们必须学会摒弃所有恐惧，并对任何可能视他们为易捕猎目标的人或事物反击。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Restriction\u2014Small Races Only|Barbarian|PHB|Honey Badger|GelidityPathOfTheHoneyBadger|3|GelidityPathOfTheHoneyBadger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ankle Biter|Barbarian|PHB|Honey Badger|GelidityPathOfTheHoneyBadger|3|GelidityPathOfTheHoneyBadger"
+				}
+			]
+		},
+		{
+			"name": "Restriction\u2014Small Races Only",
+			"source": "GelidityPathOfTheHoneyBadger",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Honey Badger",
+			"subclassSource": "GelidityPathOfTheHoneyBadger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"只有小角色才能追随蜜獾之路。你的DM可以解除这一限制，以更好地适应战役或你的角色。也许你在成长过程中有了显著的成长，或者你是在异常巨大的人群中长大的。"
+			]
+		},
+		{
+			"name": "Ankle Biter",
+			"source": "GelidityPathOfTheHoneyBadger",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Honey Badger",
+			"subclassSource": "GelidityPathOfTheHoneyBadger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你在3级时选择这条路线时，你残酷成长的好处开始显现。你学会了如何最好地利用你的体型和速度来获得优势。你可以穿过任何尺寸敌对生物的空间。",
+				"当你愤怒时，如果在你的回合中的任何时刻与生物处于相同空间，你对生物进行近战武器攻击时可以额外造成{@dice 1d4}伤害。你每回合对同一生物只能造成一次额外伤害。当你达到一定等级时，此特性的伤害也会增加，分别在该职业的第6级增加到{@dice 1d6}，第10级增加到{@dice 1d8}，第14级增加到{@dice 1d10}。"
+			]
+		},
+		{
+			"name": "Fearless Mount",
+			"source": "GelidityPathOfTheHoneyBadger",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Honey Badger",
+			"subclassSource": "GelidityPathOfTheHoneyBadger",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"从6级开始，一旦敌人进入你的攻击范围，你就绝不会让他们逃脱。当你在你的回合用近战武器攻击命中生物时，你可以使用一个额外动作来尝试{@action grapple}目标。",
+				"当你试图{@action grapple}一个比你更大的生物时，你可以尝试进行无畏骑乘，遵循{@variantrule Action Options|DMG|the rules for climbing onto a bigger monster from page 271 of the Dungeon Master's Guide}，但有以下例外情况：",
+				{
+					"type": "list",
+					"items": [
+						"你手持武器的手被视为自由，用于发动和维持无畏坐骑(Fearless Mount)的能力检定。",
+						"当你骑乘的生物在其回合移动时，你可以使用你的反应来减半它的速度，直到你下个回合开始。",
+						"当你骑乘的生物以外的生物攻击时，你可以使用你的反应将你攀爬的生物作为攻击的{@quickref Cover|PHB|3|0|half cover}，并且攻击遵循{@variantrule Hitting Cover|DMG|the rules for hitting cover on page 272 of the Dungeon Master's Guide}。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Vicious Attack",
+			"source": "GelidityPathOfTheHoneyBadger",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Honey Badger",
+			"subclassSource": "GelidityPathOfTheHoneyBadger",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"在10级时，你能够近身作战，找出敌人的弱点，并毫不留情地攻击他们。当你使用你的{@classFeature Reckless Attack|Barbarian||2}特性时，你可以放弃获得攻击优势的好处。如果你这样做，你使用力量进行的近战武器攻击在接下来的回合中，19或20的点数会造成暴击。"
+			]
+		},
+		{
+			"name": "The Harder They Fall",
+			"source": "GelidityPathOfTheHoneyBadger",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Honey Badger",
+			"subclassSource": "GelidityPathOfTheHoneyBadger",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"从14级开始，无论敌人的体型如何，都无法阻止你打倒他们。当你使用你的{@subclassFeature Ankle Biter|Barbarian||Honey Badger|GelidityPathOfTheHoneyBadger|3}特性对生物造成额外伤害时，你可以尝试让其倒地。这种方式造成的{@action shove}不需要消耗行动，并且没有体型限制。"
+			]
+		}
+	]
+}

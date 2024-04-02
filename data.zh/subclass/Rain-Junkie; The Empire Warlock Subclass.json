@@ -1,0 +1,461 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "RJTE",
+				"abbreviation": "RJTE",
+				"full": "The Empire Warlock Subclass",
+				"authors": [
+					"Rain-Junkie"
+				],
+				"url": "https://www.gmbinder.com/share/-Nf9y2yP07DPLqOrjzCU",
+				"color": "9e1b15",
+				"convertedBy": [
+					"Lxran"
+				],
+				"dateReleased": "2023-10-12",
+				"version": "v1"
+			}
+		],
+		"dateAdded": 1697466259,
+		"dateLastModified": 1697466275,
+		"status": "wip",
+		"_dateLastModifiedHash": "8158445213"
+	},
+	"subclass": [
+		{
+			"name": "The Empire",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Empire",
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"bless",
+							"command"
+						],
+						"s2": [
+							"calm emotions",
+							"zone of truth"
+						],
+						"s3": [
+							"crusader's mantle",
+							"create food and water"
+						],
+						"s4": [
+							"aura of purity",
+							"otiluke's resilient sphere"
+						],
+						"s5": [
+							"circle of power",
+							"geas"
+						]
+					},
+					"known": {
+						"1": [
+							"word of radiance|XGE"
+						]
+					},
+					"innate": {
+						"14": {
+							"daily": {
+								"1": [
+									"divine word",
+									"power word pain|XGE"
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Empire|Warlock||Empire|RJTE|1",
+				"Exalted Emissary|Warlock||Empire|RJTE|6",
+				"Empowered Decree|Warlock||Empire|RJTE|10",
+				"Voice of the Empire|Warlock||Empire|RJTE|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Empire",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "RJTE",
+			"subclassShortName": "Empire",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"这是我们的家园，我们的家庭，我们的战友。这是我们的骄傲，我们的荣誉，我们的力量。因此，今天，当我们为它的防卫和存在而战斗时。为了我们的人民！为了我们的帝国！"
+					]
+				},
+				"你的 (patron) 是你家的力量和人民的信念，当你代表一个贵族家族、国家，甚至整个国家旅行和战斗时。你的魔法可能是来自于宫廷、君主，或者是你帝国中其他高级官员的赐予，他们的权力使他们能够赐予你这些恩惠。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock||Empire|RJTE|1|RJTE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Imperial Emissary|Warlock||Empire|RJTE|1|RJTE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Radiant Decree|Warlock||Empire|RJTE|1|RJTE"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "RJTE",
+			"subclassShortName": "Empire",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你学习术士法术时，帝国允许你从一个扩展列表中进行选择。以下法术被添加到你的术士法术列表中。",
+				{
+					"type": "table",
+					"caption": "Empire Expanded Spells",
+					"page": 1,
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell bless}, {@spell command}"
+						],
+						[
+							"2nd",
+							"{@spell calm emotions}, {@spell zone of truth}"
+						],
+						[
+							"3rd",
+							"{@spell create food and water}, {@spell crusader's mantle}"
+						],
+						[
+							"4th",
+							"{@spell aura of purity}, {@spell otiluke's resilient sphere}"
+						],
+						[
+							"5th",
+							"{@spell circle of power}, {@spell geas}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Imperial Emissary",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "RJTE",
+			"subclassShortName": "Empire",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"languageProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"expertise": [
+				{
+					"persuasion": true,
+					"insight": true
+				},
+				{
+					"intimidation": true
+				}
+			],
+			"armorProficiencies": [
+				{
+					"light": true,
+					"medium": true
+				}
+			],
+			"entries": [
+				"你是帝国的忠诚管家，可以是外交官或侍从。你可以选择何时获得这个特性：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Diplomat",
+							"page": 1,
+							"entries": [
+								"你学会了两种你选择的语言。如果你还没有，你也会熟练掌握{@skill Persuasion}和{@skill Insight}技能。当你使用这些技能进行能力检定时，你的熟练加值翻倍。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Retainer",
+							"page": 1,
+							"entries": [
+								"你获得对中型和重型盔甲的熟练。如果你还没有，你也获得{@skill Intimidation}技能的熟练，并且在使用该技能进行的任何能力检定中，你的熟练加值翻倍。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Radiant Decree",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "RJTE",
+			"subclassShortName": "Empire",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"你传达了帝国的意志，迅速而准确。你学会了{@spell word of radiance|XGE}战士咒语，这对你来说算作一种术士战士咒语，但不计入你已掌握的咒语数量。",
+				"当你施放{@spell word of radiance|XGE}时，你可以选择一个在你视线范围内的生物作为目标，使法术产生的灼热辐射从目标身上喷发，而不是从你身上喷发。你可以在这种方式下施放法术时决定目标是否受到影响。",
+				"范围内的所有盟友生物获得临时生命值，数值等同于你的熟练加值，持续到你的下一个回合开始。",
+				"从3级开始，你可以将你的魅力调整值加到{@spell word of radiance|XGE}的伤害上。"
+			]
+		},
+		{
+			"name": "Exalted Emissary",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "RJTE",
+			"subclassShortName": "Empire",
+			"page": 2,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你获得了控制战场的手段。在1级时，根据你的选择，你获得以下其中一项好处之一：",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Diplomat",
+							"page": 2,
+							"entries": [
+								"在你投掷先攻检定时，你可以选择另一个距离你不超过30英尺且愿意接受的生物，并对其施放{@spell sanctuary}，而无需消耗法术位。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Retainer",
+							"page": 2,
+							"entries": [
+								"当你进行先攻骰时，你可以选择距离你30英尺以内的另一名愿意的生物，并对其施放{@spell heroism}，而无需消耗法术槽。当你以这种方式施放时，这个法术不需要集中力。"
+							]
+						}
+					]
+				},
+				"一旦你使用这个特性，你必须完成一次短休或长休才能再次使用。"
+			]
+		},
+		{
+			"name": "Empowered Decree",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "RJTE",
+			"subclassShortName": "Empire",
+			"page": 2,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"光耀之言所引发的燃烧光辉范围增加到10英尺，成功通过豁免检定的生物从该法术中受到的伤害减半。"
+			]
+		},
+		{
+			"name": "Voice of the Empire",
+			"source": "RJTE",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "RJTE",
+			"subclassShortName": "Empire",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"你将帝国的意志说成现实。你可以施放{@spell divine word}或{@spell power word pain|XGE}，而不消耗法术位。",
+				"你可以施放其中一个法术一次，并在完成一次长休后恢复这个能力。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Book of Law",
+			"source": "RJTE",
+			"page": 2,
+			"prerequisite": [
+				{
+					"patron": "The Empire",
+					"pact": "Tome"
+				}
+			],
+			"entries": [
+				"你可以施放你的2级或更低级扩展法术清单中的任何法术，而无需消耗法术槽。你不需要知道这个法术就可以这样施放。在完成一次长休息之前，你不能再这样做。",
+				"当你达到11级时，你可以在完成一次长休前使用这个特性两次。"
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+		{
+			"name": "Cultured Citizen",
+			"source": "RJTE",
+			"page": 2,
+			"prerequisite": [
+				{
+					"patron": "Empire"
+				}
+			],
+			"toolProficiencies": [
+				{
+					"artisan's tools": true,
+					"gaming set": true,
+					"musical instrument": true
+				}
+			],
+			"entries": [
+				"你获得一种工匠工具、一种游戏套装和一种你选择的乐器的熟练，并且可以将它们中的任何一种用作你的术士法术的施法焦点。",
+				"此外，你在进行关于你帝国的情报回忆的智力检定中获得优势。"
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+		{
+			"name": "Guardian Ancestors",
+			"source": "RJTE",
+			"page": 2,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"patron": "The Empire",
+					"pact": "Chain"
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"2": [
+									"spirit guardians"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以使用术士法术位施放{@spell spirit guardians}两次。完成一次长休后，你将恢复这一能力。"
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+		{
+			"name": "Martial Authority",
+			"source": "RJTE",
+			"page": 2,
+			"prerequisite": [
+				{
+					"patron": "The Empire",
+					"pact": "Blade"
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"2": [
+									"spirit guardians"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你在你的回合中进行{@action Attack}动作时，你可以将{@spell word of radiance|XGE}作为一个奖励动作施放。",
+				"你可以这样做的次数等于你的熟练加值（%num%）次，并在完成一次长休后恢复所有已用次数。"
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+		{
+			"name": "Seat of Power",
+			"source": "RJTE",
+			"page": 2,
+			"prerequisite": [
+				{
+					"patron": "The Empire",
+					"level": {
+						"level": 18
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"2": [
+									"Mighty Fortress|XGE"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以施放{@spell mighty fortress|XGE}，而无需消耗法术位或需要材料组件。当你以这种方式施放法术时，要塞持续30天，然后你必须等待30天才能再次以这种方式施放该法术。",
+				"每30天在同一地点施放这个法术一次，持续一年，就能让这座堡垒变得永久。(fortress)"
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+		{
+			"name": "Token of Authority",
+			"source": "RJTE",
+			"page": 2,
+			"prerequisite": [
+				{
+					"patron": "The Empire",
+					"pact": "Talisman"
+				}
+			],
+			"entries": [
+				"当佩戴者的护身符失败一次魅力属性检定，并使用你的护身符之约（Pact of the Talisman）来获得一个额外的{@dice d4}奖励时，你可以额外投掷{@dice d4}个骰子，并选择两者中较高的结果。"
+			],
+			"featureType": [
+				"EI"
+			]
+		}
+	]
+}

@@ -1,0 +1,888 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "WANTEDSCORES",
+				"abbreviation": "WANTEDSCORES",
+				"full": "Wanted Scores",
+				"authors": [
+					"Michael J Winegar"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2020.04.12",
+				"url": "https://www.dmsguild.com/product/266052/Wanted-Scores",
+				"targetSchema": "1.6.3"
+			}
+		],
+		"dateAdded": 1586704492,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "303c0f93ab"
+	},
+	"monster": [
+		{
+			"name": "Town Watch/Guard/Soldier",
+			"shortName": "Town Watch/Guard/Soldier",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "WANTEDSCORES",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain shirt|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/8",
+			"fluff": {
+				"entries": [
+					"镇守/警卫/士兵"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WacDXEX.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/WacDXEX.png",
+			"isNpc": false,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"action": [
+				{
+					"name": "Spear (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}4 ({@damage 1d6 + 1})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Spear (Thrown)",
+					"entries": [
+						"{@atk rw} {@hit 3}击中，范围20/60英尺，一个目标。{@h}4 ({@damage 1d6 + 1})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Spear (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d8 + 1})穿刺伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"spear|phb"
+			]
+		},
+		{
+			"name": "Watch Detective",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "WANTEDSCORES",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "6d8 + 0",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"passive": 16,
+			"cr": "1",
+			"fluff": {
+				"entries": [
+					"观察侦探"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ojYkDkv.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ojYkDkv.png",
+			"isNpc": false,
+			"languages": [
+				"any two language"
+			],
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"persuasion": "+5",
+				"investigation": "+5",
+				"sleight of hand": "+4",
+				"stealth": "+4",
+				"perception": "+6"
+			},
+			"damageTags": [
+				"P"
+			],
+			"shortName": "Watch Detective",
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"侦探使用一个奖励动作来冲刺、脱离或隐藏。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当侦探击中目标并在攻击卷上有优势时，或当目标在非{@condition incapacitated}盟友的5英尺范围内且侦探在攻击卷上没有劣势时，会造成额外的7（{@damage 2d6}）伤害"
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"间谍进行两次近战攻击。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"shortsword|phb"
+			]
+		},
+		{
+			"name": "Tracker",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "WANTEDSCORES",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"passive": 15,
+			"cr": "1/2",
+			"fluff": {
+				"entries": [
+					"追踪器"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/I6tndeX.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/I6tndeX.png",
+			"isNpc": false,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"damageTags": [
+				"P"
+			],
+			"shortName": "Tracker",
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"skill": {
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"trait": [
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"追踪者在依靠听觉或视觉的智慧（感知）检查方面具有优势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"侦察员进行两次近战攻击或两次远程攻击。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围150/600英尺，一个目标。{@h}6 ({@damage 1d8 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			]
+		},
+		{
+			"name": "Professional Bounty Hunter",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "WANTEDSCORES",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 18",
+				"average": 58
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": 12,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"专业赏金猎人"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/pvOI85B.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/pvOI85B.png",
+			"isNpc": false,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"damageTags": [
+				"S",
+				"B",
+				"P"
+			],
+			"shortName": "Professional Bounty Hunter",
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"赏金猎人进行两次长剑攻击。如果它拔出了短剑，它也可以进行一次棍棒攻击。"
+					]
+				},
+				{
+					"name": "Longsword (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Longsword (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d10 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Cudgel",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})重击伤害。"
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围100/400英尺，一个目标。{@h}7 ({@damage 1d10 + 2})穿刺伤害。",
+						"{@b Ammunition:} 你可以使用具有弹药属性的武器进行远程攻击，但前提是你有弹药可以从该武器发射。每次你用该武器进行攻击，你都要消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。在战斗结束时，你可以通过花一分钟时间搜索战场来恢复你消耗的一半弹药。",
+						"如果你使用具有弹药属性的武器进行近战攻击，你将该武器视为简易武器（见本节后面的 \"简易武器\"）。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+					]
+				},
+				{
+					"name": "Bola",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围30/50英尺，一个目标。{@h}4 ({@damage 1d4 + 2})重击伤害。",
+						"波拉是一条两端都有重物的绳子，扔向逃跑的目标的腿。被击中的大型或小型生物必须在一个{@dc 13}灵巧救赎中成功，或成为{@condition grappled}。{@dc 12} 力量检查来打破。博拉有4个打击点。赏金猎人可以在机会攻击中使用博拉，即使目标已经使用了撤退动作。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"skill": {
+				"athletics": "+5",
+				"perception": "+3",
+				"stealth": "+4",
+				"survival": "+3"
+			},
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"longsword|phb"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Captain of the Watch",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "WANTEDSCORES",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"passive": 10,
+			"cr": "3",
+			"fluff": {
+				"entries": [
+					"监察长"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/1JU5dZu.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/1JU5dZu.png",
+			"isNpc": false,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"damageTags": [
+				"S"
+			],
+			"shortName": "Captain of the Watch",
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"船长进行了两次近战攻击。"
+					]
+				},
+				{
+					"name": "Longsword (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Longsword (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d10 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"在1分钟内，每当它能看到的30英尺范围内的非敌对生物进行攻击或蓄力时，船长可以发出一个特殊的命令或警告。",
+						"只要生物能听到并理解队长的话，它就可以在它的卷轴上增加（%0%）。一个生物每次只能从一个领导力骰子中获益。如果队长是（%1%），这个效果就会结束。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"save": {
+				"con": "+4",
+				"wis": "+2"
+			},
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"船长在对被攻击者的救赎上有优势（%0%）。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"舰长在对抗一次会击中它的近战攻击时，会在其攻击力上加2。要做到这一点，船长必须看到攻击者并挥舞着近战武器。"
+					]
+				}
+			],
+			"attachedItems": [
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "Amateur Bounty Hunter",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "WANTEDSCORES",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"passive": 10,
+			"cr": "1/2",
+			"fluff": {
+				"entries": [
+					"业余赏金猎人"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/EQTRhfz.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/EQTRhfz.png",
+			"isNpc": false,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"shortName": "Amateur Bounty Hunter",
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"歹徒进行了两次近战攻击。"
+					]
+				},
+				{
+					"name": "Truncheon",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d6 + 2})重击伤害。"
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 2}击中，范围100/400英尺，一个目标。{@h}5 ({@damage 1d10})穿刺伤害。",
+						"{@b Ammunition:} 你可以使用具有弹药属性的武器进行远程攻击，但前提是你有弹药可以从该武器发射。每次你用该武器进行攻击，你都要消耗一块弹药。从箭筒、箱子或其他容器中提取弹药是攻击的一部分。在战斗结束时，你可以通过花一分钟时间搜索战场来恢复你消耗的一半弹药。",
+						"如果你使用具有弹药属性的武器进行近战攻击，你将该武器视为简易武器（见本节后面的 \"简易武器\"）。以这种方式使用时，吊索必须上膛才能造成任何伤害。"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"如果赏金猎人的至少一个盟友在生物的5英尺范围内，而该盟友不在该生物的5英尺范围内，则业余赏金猎人对该生物的攻击卷有优势（%0%）。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"skill": {
+				"intimidation": "+2"
+			},
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"heavy crossbow|phb"
+			]
+		},
+		{
+			"name": "Bounty Hunter Mage",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"source": "WANTEDSCORES",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "(15 with {@spell mage armor})"
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 0",
+				"average": 40
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"passive": 11,
+			"cr": "6",
+			"fluff": {
+				"entries": [
+					"赏金猎人法师"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/3JEBOCk.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/3JEBOCk.png",
+			"isNpc": false,
+			"languages": [
+				"any four languages"
+			],
+			"damageTags": [
+				"B"
+			],
+			"shortName": "Bounty Hunter Mage",
+			"languageTags": [
+				"X"
+			],
+			"save": {
+				"int": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6"
+			},
+			"action": [
+				{
+					"name": "Staff (One-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d6 + 2})重击伤害。"
+					]
+				},
+				{
+					"name": "Staff (Two-Handed)",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d8 + 2})重击伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"法师是一个9级的施法者。它的法术能力是智力（法术救赎（%0%），用法术攻击命中率+6）。法师准备了以下巫师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt|PHB}",
+								"{@spell light|PHB}",
+								"{@spell message|PHB}",
+								"{@spell ray of frost|PHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic|PHB}",
+								"{@spell disguise self|PHB}",
+								"{@spell mage armor|PHB}",
+								"{@spell magic missile|PHB}",
+								"{@spell sleep|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person|PHB}",
+								"{@spell ray of enfeeblement|PHB}",
+								"{@spell suggestion|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell clairvoyance|PHB}",
+								"{@spell counterspell|PHB}",
+								"{@spell fly|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility|PHB}",
+								"{@spell locate creature|PHB}",
+								"{@spell polymorph|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dominate person|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		}
+	]
+}

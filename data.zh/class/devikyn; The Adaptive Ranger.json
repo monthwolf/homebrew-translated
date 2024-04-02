@@ -1,0 +1,2547 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AdaptiveRanger",
+				"abbreviation": "AR",
+				"full": "The Adaptive Ranger",
+				"authors": [
+					"/u/devikyn"
+				],
+				"convertedBy": [
+					"GoR"
+				],
+				"version": "1.30",
+				"color": "6e7b40",
+				"url": "https://drive.google.com/file/d/1ndh9fpRdjpnlpllMZY_AVvQ-OnZe_NOl/view",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1625065042,
+		"dateLastModified": 1687213881,
+		"_dateLastModifiedHash": "a20b5a19e6"
+	},
+	"class": [
+		{
+			"name": "Adaptive Ranger",
+			"source": "AdaptiveRanger",
+			"classFeatures": [
+				"Deft Explorer|Adaptive Ranger|AdaptiveRanger|1|AdaptiveRanger",
+				"Mark of the Hunt|Adaptive Ranger|AdaptiveRanger|1|AdaptiveRanger",
+				"Fighting Style|Adaptive Ranger|AdaptiveRanger|2|AdaptiveRanger",
+				"Spellcasting|Adaptive Ranger|AdaptiveRanger|2|AdaptiveRanger",
+				{
+					"classFeature": "Ranger Archetype|Adaptive Ranger|AdaptiveRanger|3|AdaptiveRanger",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Adaptive Ranger|AdaptiveRanger|4|AdaptiveRanger",
+				"Extra Attack|Adaptive Ranger|AdaptiveRanger|5|AdaptiveRanger",
+				"Hide in Plain Sight|Adaptive Ranger|AdaptiveRanger|6|AdaptiveRanger",
+				"Land's Stride|Adaptive Ranger|AdaptiveRanger|6|AdaptiveRanger",
+				{
+					"classFeature": "Ranger Archetype Feature|Adaptive Ranger|AdaptiveRanger|7|AdaptiveRanger",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Adaptive Ranger|AdaptiveRanger|8|AdaptiveRanger",
+				"Evasion|Adaptive Ranger|AdaptiveRanger|10|AdaptiveRanger",
+				{
+					"classFeature": "Ranger Archetype Feature|Adaptive Ranger|AdaptiveRanger|11|AdaptiveRanger",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Adaptive Ranger|AdaptiveRanger|12|AdaptiveRanger",
+				"Vanish|Adaptive Ranger|AdaptiveRanger|14|AdaptiveRanger",
+				{
+					"classFeature": "Ranger Archetype Feature|Adaptive Ranger|AdaptiveRanger|15|AdaptiveRanger",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Adaptive Ranger|AdaptiveRanger|16|AdaptiveRanger",
+				"Feral Senses|Adaptive Ranger|AdaptiveRanger|18|AdaptiveRanger",
+				"Ability Score Improvement|Adaptive Ranger|AdaptiveRanger|19|AdaptiveRanger",
+				"Foe Slayer|Adaptive Ranger|AdaptiveRanger|20|AdaptiveRanger"
+			],
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"insight",
+								"investigation",
+								"nature",
+								"medicine",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
+				],
+				"additionalFromBackground": true,
+				"goldAlternative": "{@dice 5d4x10}",
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "shortsword|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"longbow|phb",
+							"arrows (20)|phb"
+						]
+					}
+				]
+			},
+			"casterProgression": "1/2",
+			"spellcastingAbility": "wis",
+			"preparedSpells": "<$level$> / 2 + <$wis_mod$>",
+			"classSpells": [
+				{
+					"className": "Ranger",
+					"classSource": "PHB"
+				}
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Marks"
+					],
+					"rows": [
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Adaptive Ranger (AR)}",
+						"{@filter 2nd|spells|level=2|class=Adaptive Ranger (AR)}",
+						"{@filter 3rd|spells|level=3|class=Adaptive Ranger (AR)}",
+						"{@filter 4th|spells|level=4|class=Adaptive Ranger (AR)}",
+						"{@filter 5th|spells|level=5|class=Adaptive Ranger (AR)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"subclassTitle": "Ranger Archetype",
+			"fluff": [
+				{
+					"type": "section",
+					"name": "The Adaptive Ranger",
+					"source": "AdaptiveRanger",
+					"page": 1,
+					"entries": [
+						"看到游侠的独特身份，许多人想出了一些伟大的想法，进一步充实了这个身份，增加了独特的新能力，使游侠玩起来更加有趣。我喜欢这些构思，但我想创造一个游侠，它包含了原始游侠的想法，并简单地让它们变得更加真实。游侠是狡猾的、适应性强的，并能为党的其他成员提供有用的洞察力--我认为这些变化对让你实现这种幻想有很大的帮助。",
+						"这些变化确实使这个游侠比它的基础--PHB游侠--更强大。最有影响的和不偏不倚的改动是对猎人的标记和游侠的法术的改动。如果你觉得这个游侠对你的活动来说太强大了，我会在尝试其他东西之前首先恢复法术的改变。",
+						{
+							"type": "entries",
+							"name": "Design Goals",
+							"page": 1,
+							"entries": [
+								"当我看到游侠时，我看到了一小串基本问题。这些都与游侠的身份无关；它们都是使游侠难以使用的机械绊脚石。我在写这篇文的时候试图解决的问题如下。",
+								{
+									"type": "list",
+									"items": [
+										"护林员应该是一个熟练的追踪者和猎手。他们的职业，有时也是他们的热情，在于维护文明郊区的安全。还提到，他们经常可以在不同的文明之间旅行，经历截然不同的敌人和地形。那么，为什么游骑兵对所有的敌人和地形都视而不见，只有一种类型？他们不是应该比其他人更快地适应所呈现的每一种情况吗？",
+										"游骑兵的进攻经常被归结为debuff-攻击，没有什么变化。这是因为他们的法术能力和许多法术都受到很大的限制，我相信这是为了抵消他们综合的远程和追踪能力。然而，在游戏中，这给他们留下了一套沉闷的选择，几乎完全无法相互影响。增加新的方法来使用他们的法术，并解除一些限制，有助于缓解这些问题。",
+										"他们的能力都是被动的。这使得他们完全可以被遗忘--因此，我从来没有见过一个游侠能一直记得他们得到的每一个被动的好处，也没有见过一个DM能准确地说明游侠的情况。这也让人没有动力去扮演你的等级。很多人可以通过巧妙的角色背景来弥补这一点，但是游侠的等级远不如德鲁伊或圣骑士那样深入角色的内心。你应该感觉到没有人能因为你的技能而躲避你，而不是简单地被授予上述技能而没有获得它们的满足感。"
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Other Changes",
+							"page": 1,
+							"entries": [
+								"这里的其他一些变化可以适用于其他等级，只是一种自由。法术（%0%）已经被削弱到了我觉得合适的程度。你也可以用许多不同种类的自制游侠，以及PHB和修订版的游侠来使用游侠的法术变化。对野兽大师原型的大修应该适用于任何版本的游侠。文件中可能还有其他类似的修改，但这些是最容易适应几乎所有游戏的。"
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Questions? Feedback?",
+							"entries": [
+								"谢谢你花时间阅读、评论和欣赏这个自酿啤酒。请随时在reddit上联系我。{@link /u/devikyn|https://www.reddit.com/u/devikyn}与我联系，提出您的评论和改进意见!",
+								"使用的艺术可以在这里找到。",
+								{
+									"type": "list",
+									"columns": 2,
+									"items": [
+										"{@link Cover - Alexander Gustafon|https://www.illustratedpixels.com/}",
+										"{@link Ranger - TwoDeeTen|http://twodeeten.blogspot.com/2012/01/gauren-lightfoot.html}",
+										"{@link Ranger Tracking - Veli Nyström|https://www.artstation.com/artwork/Xzb0y}",
+										"{@link Hide in Plain Sight - Nick Keller|http://www.nickkellerart.com/}",
+										"{@link Beast Master Ranger - DigitalSashimi|https://www.deviantart.com/digitalsashimi/art/White-Tiger-408821183}",
+										"{@link Dragonguard Ranger - Straban|https://www.deviantart.com/straban/art/Elf-warrior-and-the-dragon-726130994}",
+										"{@link Hunter Ranger - Golarion|http://pathtogolarion.wikidot.com/part-4}",
+										"{@link Primeval Watch Ranger - Guild Wars|https://guildwars.fandom.com/wiki/Category:Concept_art}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Beast Master",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"shortName": "Beast Master",
+			"subclassFeatures": [
+				"Beast Master|Adaptive Ranger|AdaptiveRanger|Beast Master|AdaptiveRanger|3|AdaptiveRanger",
+				"Nature's Fury|Adaptive Ranger|AdaptiveRanger|Beast Master|AdaptiveRanger|7|AdaptiveRanger",
+				"Beast Whisperer|Adaptive Ranger|AdaptiveRanger|Beast Master|AdaptiveRanger|11|AdaptiveRanger",
+				"Share Spells|Adaptive Ranger|AdaptiveRanger|Beast Master|AdaptiveRanger|15|AdaptiveRanger"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"find familiar"
+						],
+						"5": [
+							"warding bond"
+						],
+						"9": [
+							"conjure animals"
+						],
+						"13": [
+							"dominate beast"
+						],
+						"17": [
+							"awaken"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Dragonguard",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"shortName": "Dragonguard",
+			"subclassFeatures": [
+				"Dragonguard|Adaptive Ranger|AdaptiveRanger|Dragonguard|AdaptiveRanger|3|AdaptiveRanger",
+				"Spectral Rider|Adaptive Ranger|AdaptiveRanger|Dragonguard|AdaptiveRanger|7|AdaptiveRanger",
+				"Frightful Aspect|Adaptive Ranger|AdaptiveRanger|Dragonguard|AdaptiveRanger|11|AdaptiveRanger",
+				"Freedom's Wing|Adaptive Ranger|AdaptiveRanger|Dragonguard|AdaptiveRanger|15|AdaptiveRanger"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"cause fear|xge"
+						],
+						"5": [
+							"dragon's breath|xge"
+						],
+						"9": [
+							"fly"
+						],
+						"13": [
+							"polymorph"
+						],
+						"17": [
+							"control winds|xge"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Hunter",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"shortName": "Hunter",
+			"subclassFeatures": [
+				"Hunter|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|3|AdaptiveRanger",
+				"Defensive Tactics|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|7|AdaptiveRanger",
+				"Multiattack|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|11|AdaptiveRanger",
+				"Superior Hunter's Defense|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|15|AdaptiveRanger"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"expeditious retreat"
+						],
+						"5": [
+							"see invisibility"
+						],
+						"9": [
+							"meld into stone"
+						],
+						"13": [
+							"staggering smite"
+						],
+						"17": [
+							"scrying"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Primeval Watch",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"shortName": "Primeval Watch",
+			"subclassFeatures": [
+				"Primeval Watch|Adaptive Ranger|AdaptiveRanger|Primeval Watch|AdaptiveRanger|3|AdaptiveRanger",
+				"Ancient Fortitude|Adaptive Ranger|AdaptiveRanger|Primeval Watch|AdaptiveRanger|7|AdaptiveRanger",
+				"Rooted Defense|Adaptive Ranger|AdaptiveRanger|Primeval Watch|AdaptiveRanger|11|AdaptiveRanger",
+				"Ironwood Bark|Adaptive Ranger|AdaptiveRanger|Primeval Watch|AdaptiveRanger|15|AdaptiveRanger"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"faerie fire"
+						],
+						"5": [
+							"warding wind"
+						],
+						"9": [
+							"plant growth"
+						],
+						"13": [
+							"guardian of nature"
+						],
+						"17": [
+							"insect plague"
+						]
+					}
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Deft Explorer",
+			"source": "AdaptiveRanger",
+			"page": 3,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 1,
+			"entries": [
+				"你在不同环境中旅行的经验使你学会了在最严酷的条件下生存的技巧。",
+				"选择（%0%）或（%1%）的技能。你会成为所选技能的熟练者，当你使用该技能进行能力检查时，你的熟练度奖励会翻倍。",
+				"你每花一分钟研究一个生物的踪迹，你就可以了解这个生物的一个特定的统计资料--从它的类型、大小、速度，或者它是否精通（%0%）、（%1%）或（%2%）技能中选择。",
+				"此外，你和与你一起旅行的生物获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"困难的地形不会减缓你的旅行。",
+						"你不需要减少你的步伐来隐蔽地旅行。",
+						"如果你掷出的命中率骰子的结果低于你的熟练度奖励，你可以重掷一次，并使用较高的结果。",
+						"当你完成一个短暂的休息时，你可以将你的疲惫等级降低1，直到你完成一个长时间的休息，你才能再次这样做。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Mark of the Hunt",
+			"source": "AdaptiveRanger",
+			"page": 3,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 1,
+			"entries": [
+				"你已经开发了先进的技术来追踪和猎杀生物，使你成为一个无情的对手。",
+				"在你的每个回合中，你可以标记一个你能看到的90英尺范围内的生物为猎物（不需要行动）。你的武器攻击会对被你标记为狩猎的生物造成额外的（%0%）武器类型的伤害。这个伤害在5级时增加到{@damage 1d6}，在11级时增加到{@damage 1d8}。",
+				"你在追踪被你标记为狩猎的生物时，在智力和智慧检查上有优势，当你在它的30英尺范围内时，只要该生物没有被你隐藏，并且你没有失明或失聪，你就知道该生物的位置。你一次只能标记一个生物；如果你标记另一个生物，你的标记就会从之前标记的目标身上移走。",
+				"你可以用这种方式标记一个生物，次数相当于游侠表中的标记栏，而且当你完成短时或长时休息时，你会恢复已消耗的使用次数。"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "AdaptiveRanger",
+			"page": 3,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 2,
+			"entries": [
+				"在2级时，你采用一种特定的战斗风格作为你的专长。你不能多次选择一种格斗风格，即使你后来可以再次选择。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Archery"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two-Weapon Fighting"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "AdaptiveRanger",
+			"page": 3,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 2,
+			"entries": [
+				"2级时，你学会了利用自然界固有的魔法，使你能够施展法术。",
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"page": 0,
+					"entries": [
+						"适应性游侠表显示了你有多少个法术槽来施展你的游侠法术。要施放一个1级或以上的游侠法术，你必须消耗一个与该法术等级相同或更高的法术槽。当你完成一个长时间的休息时，你会重新获得所有消耗的法术槽。",
+						"你准备好可供你施展的游侠法术清单，从游侠法术清单中选择。当你这样做的时候，选择的游侠法术数量等于你的智慧修正值+你的游侠等级的一半，向下取整（最少一个法术）。这些法术的等级必须是你有法术槽的。",
+						"施放一个法术并不会从你的准备好的法术列表中移除它。你可以在完成长时间的休息后改变你的准备法术列表。准备一个新的游侠法术需要花时间与土地交流：每一个法术等级，你准备的法术至少需要1分钟。"
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "Primal Awareness|Adaptive Ranger|AdaptiveRanger|2|AdaptiveRanger"
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智慧是你的游侠法术的施法能力，因为你的魔法是基于你对自然的适应性。每当法术提到你的法术能力时，你就会使用你的智慧。此外，在设定你所施展的游侠法术的蓄力DC时，以及在使用游侠法术进行攻击时，你会使用你的智慧修饰。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"你可以将你准备的任何游侠法术作为仪式来施放，如果该法术有仪式标签的话。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Awareness",
+			"source": "AdaptiveRanger",
+			"page": 3,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 2,
+			"entries": [
+				"你的施法通过你周围的自然界穿透你的感官：当你在这个等级达到一定程度时，你可以在不消耗法术槽的情况下施放原始意识法术表中的每个法术一次。一旦你施展了其中的一个法术，你必须完成一个长时间的休息才能再次施展该法术。",
+				{
+					"type": "table",
+					"caption": "Primal Awareness Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell detect magic}, {@spell speak with animals}"
+						],
+						[
+							"5th",
+							"{@spell beast sense}. {@spell locate animals or plants}"
+						],
+						[
+							"9th",
+							"{@spell speak with plants}"
+						],
+						[
+							"13th",
+							"{@spell locate creature}"
+						],
+						[
+							"17th",
+							"{@spell commune with nature}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Ranger Archetype",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 3,
+			"entries": [
+				"在3级的时候，选择一个原型来努力实现。你的选择在3级时授予你特性，在7级、11级和15级时再次授予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，以及在8级、12级、16级和19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 5,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Hide in Plain Sight",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 6,
+			"entries": [
+				"从6级开始，当你把自己压在由天然材料制成的坚固表面上时，你会获得+5的灵巧({@skill Stealth})检查奖励，例如足够大的树木或石墙为你提供掩护，或者例如当你俯卧在草丛中时，材料会神奇地重新排列和成型，为你提供适当的伪装。",
+				"如果你在你的回合中移动超过5英尺，而你在能看到你的生物的60英尺范围内，你会失去这个好处，直到你下一个回合开始。"
+			]
+		},
+		{
+			"name": "Land's Stride",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 6,
+			"entries": [
+				"同样在6级时，你周围的土地会承认你是它的保护者，并为你提供安全通道。非魔法性的困难地形不会让你花费额外的行动力，而且植物不能减缓你的速度，也不能通过荆棘、刺或其他类似的危险来伤害你，它们有。"
+			]
+		},
+		{
+			"name": "Ranger Archetype Feature",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 7,
+			"entries": [
+				"在7级时，你获得了游侠原型赋予你的一个特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 10,
+			"entries": [
+				"从10级开始，你可以灵活地躲避某些区域效应，例如红龙的火热气息或（%0%）的法术。当你受到一个允许你做一个灵巧救赎来承受一半伤害的效果时，如果你救赎成功，你就不会受到伤害，如果你失败，就只会受到一半伤害。"
+			]
+		},
+		{
+			"name": "Ranger Archetype Feature",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 11,
+			"entries": [
+				"11级时，你获得游侠原型赋予你的一项功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Vanish",
+			"source": "AdaptiveRanger",
+			"page": 5,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 14,
+			"entries": [
+				"从14级开始，你可以在每个回合中采取{@action Hide}的行动作为额外行动。每当你成功地躲藏起来，你就会变得（%1%），并且在你下一个回合开始之前，或者在你攻击或施法之前，不会留下你的踪迹或痕迹。"
+			]
+		},
+		{
+			"name": "Ranger Archetype Feature",
+			"source": "AdaptiveRanger",
+			"page": 5,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得一个由你的游侠原型赋予你的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AdaptiveRanger",
+			"page": 5,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 16,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Feral Senses",
+			"source": "AdaptiveRanger",
+			"page": 5,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 18,
+			"entries": [
+				"在18级时，你对你标记为狩猎的生物的攻击卷轴永远不会有劣势。",
+				"你也能知道在你30英尺范围内的每个生物的位置，只要该生物没有被你藏起来，而且你没有被弄瞎或弄聋。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AdaptiveRanger",
+			"page": 5,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "AdaptiveRanger",
+			"page": 4,
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 20,
+			"entries": [
+				"在20级时，每回合一次，你可以在你进行的一次武器攻击的攻击卷和伤害卷中加入你的智慧修改值。你可以在攻击卷之后，但在决定攻击结果之前这样做。",
+				"另外，当你用攻击击中一个你标记为狩猎的生物时，你可以选择打出关键一击，并在关键一击上增加一个额外的（%0%）伤害。在你完成短暂或长时间的休息之前，你不能再这样做。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Beast Master",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"page": 5,
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"野兽大师的原型体现了文明种族和世界上的野兽之间的友谊。野兽和游侠团结一致，共同对抗威胁文明和荒野的可怕敌人。模仿 \"野兽大师 \"的原型意味着将自己投入到这一理想中，作为动物的伙伴和朋友与之合作。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Beast Master Magic|Adaptive Ranger|AdaptiveRanger|Beast Master|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Animal Companion|Adaptive Ranger|AdaptiveRanger|Beast Master|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Master's Command|Adaptive Ranger|AdaptiveRanger|Beast Master|AdaptiveRanger|3|AdaptiveRanger"
+				}
+			]
+		},
+		{
+			"name": "Beast Master Magic",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"page": 5,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，当你达到这个等级的某些级别时，你总是有额外的法术准备，如野兽大师法术表中所示。这些法术对你来说算作游侠法术，而且不计入你可以准备的游侠法术中。",
+				{
+					"type": "table",
+					"caption": "Beast Master Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell find familiar}"
+						],
+						[
+							"5th",
+							"{@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell conjure animals}"
+						],
+						[
+							"13th",
+							"{@spell dominate beast}"
+						],
+						[
+							"17th",
+							"{@spell awaken}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Animal Companion",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"page": 5,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在第三级，你可以从野外召唤出一只动物作为你忠实的伙伴，将它的灵魂与你的灵魂结合起来。",
+				"你可以在一个自然栖息地内花8个小时不间断地集中注意力，找到一个动物伙伴，此后它将忠实地跟随你。你找到你的第一个动物伙伴是获得这个功能的一部分。",
+				"你的同伴可以从（%0%）中选择。然而，你的DM可能只允许某些动物，基于周围的地形和该地区逻辑上会有哪些类型的生物。你一次只能有一个动物伙伴。",
+				"你的动物伙伴尽其所能地服从你的命令。它在你的回合中移动和行动，但你决定它的行动、决定、态度等等。你和你的伴侣可以按照你选择的任何顺序移动和行动。如果你没有能力或不在，你的同伴就会自行行动。",
+				"你的同伴被专门训练成与你一起战斗。当它通过此功能与你结合时，以下规则适用。",
+				{
+					"type": "list",
+					"items": [
+						"它不能采取其状态块中的攻击行动，但它可以进行徒手攻击，使用{@damage d4}进行伤害。",
+						"除了正常的蓄力和技能的熟练程度外，它还精通两种蓄力和两种你选择的技能。",
+						"它能听懂你所选择的一种语言，你的语言。",
+						"它的攻击卷轴、护甲等级、蓄力和它所精通的技能都会获得奖励。这个奖励等于你的熟练度奖励减去2（最低为+0）。",
+						"当你获得这个特性时，并且在你的游侠等级超过3级时再次获得，你的同伴会获得一个命中率，并且它的最大命中率会增加，数量等于它的体质修正值（最小为1）加4。另外，每当你从这个等级中获得能力得分提高的特性时，你的同伴可以将你选择的一个能力得分提高2分，或者将你选择的两个能力得分提高1分，最高为20分。",
+						"如果你的动物伙伴被杀，你们之间的魔力纽带可以让你在完成长时间的休息后让它恢复生命。即使你不拥有动物伙伴身体的任何部分，你也可以通过这种方式使其恢复生命。如果你在已经有一个同伴的情况下使用这种能力使以前的同伴恢复生命，你现在的同伴就会离开你，由恢复的同伴取代。"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "On Creature Proficiency",
+					"entries": [
+						"辨别一个生物的适当奖励可能很困难，所以这些提示将帮助你理解熟练度和能力分数如何应用于一个生物的统计。一个生物的CR值决定了它的熟练度加成，就像它在任何等级中都是一样的，无论它的CR值是多少，它的熟练度加成都不能低于+2。",
+						"这种计算方式会被纳入生物的状态块中，供你使用。例如，{@creature wolf}的咬合力有+4的加成，这是加上它的熟练度加成+2和它的灵巧修饰值+2的结果。狼的咬人蓄力DC被设定为11（8+它的熟练度加成+它的力量修正值）。当你达到5级时，你的同伴的熟练度奖励将增加到+3。这将使它的命中率提高到+5，咬人的蓄力DC提高到12。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Master's Command",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在第三级，你可以训练你的同伴与你一起听从某些命令，从而改善你们的关系。",
+				"你有一个等于你的游侠等级的一半+你的智慧修饰的命令骰子池。一个命令骰子是一个D6，用来向训练有素的野兽发布命令，比如你的动物伙伴。你每次可以向120英尺范围内能听到你的训练有素的野兽发出一个命令；野兽必须能听到你的命令，如果野兽在你下一回合开始前没有执行命令，命令就会被浪费掉。你的命令模子在这个等级的某些级别上会增加：7级时为d8，11级时为d10。",
+				"你的动物伙伴知道两个你选择的野兽指令，详情如下。当你达到这个等级的第11级时，它就会学习另一个命令。你也可以教你的同伴以外的任何友好的野兽一个野兽指令，方法是每天至少花1小时训练该生物，持续7天。只有你的同伴可以使用此功能学习一个以上的野兽指令。",
+				"当你完成长期休息时，你会重新获得已消耗的指挥骰子。",
+				"{@b \u2014Beast Commands\u2014}",
+				{
+					"type": "entries",
+					"name": "Attack",
+					"entries": [
+						"你可以使用你的额外行动并消耗一个指令模子来发出这个指令。你的同伴可以使用它的行动来采取它的一个自然攻击行动，多重攻击除外。如果攻击命中，则掷骰子并将结果加入攻击的伤害卷中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Down",
+					"entries": [
+						"你可以使用你的额外行动并消耗一个指令模子来发出这个指令。你的同伴用它的反应俯卧，并试图（%0%），滚动骰子并将结果加入它的灵巧（（%1%））检查。它在以这种方式隐藏时进行的第一次攻击也会将指令模子的结果加入其攻击卷。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Find",
+					"entries": [
+						"你可以使用你的额外行动并消耗一个指令模子来发出这个指令。你的同伴用它的反应试图（%0%）寻找隐藏的生物或物体，滚动骰子并将结果加入它的智慧（{@skill Perception}）检查的行动中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grab",
+					"entries": [
+						"当你的同伴做出（%0%）的动作时，你可以使用你的反应并消耗一个指令模子来发出这个指令。如果攻击命中，你的同伴可以作为攻击的一部分尝试对目标进行（%1%），滚动骰子并将结果加入它为尝试而进行的技能检查中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rush",
+					"entries": [
+						"你可以使用你的额外行动并消耗一个指令模子来发出这个指令。你的同伴使用它的反应来采取（%0%）的行动，协助下一次对它能看到的范围内的生物进行攻击。如果这次攻击命中，就掷出指令模子，并将结果作为攻击的额外伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Nature's Fury",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第7级开始，你的同伴的攻击在克服对非魔法伤害的抗性方面算作魔法攻击。"
+			]
+		},
+		{
+			"name": "Beast Whisperer",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，如果你还没有熟练掌握{@skill Animal Handling}技能，你将获得熟练度加成，你使用该技能进行能力检查时，熟练度加成将翻倍。"
+			]
+		},
+		{
+			"name": "Share Spells",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级开始，当你施展一个以你为目标的法术时，如果你的动物在你30英尺以内，你也可以用这个法术影响你的动物伙伴。"
+			]
+		},
+		{
+			"name": "Dragonguard",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"龙卫是为龙提供忠实服务的游侠。他们为这些骄傲的生物提供服务，捍卫它们的领土。作为交换，龙可以向龙卫提供它们的超自然能力的使用。然而，这些游侠们要记住，龙的智慧和傲慢是无法被驯服的，而且龙的愤怒是持久的。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dragonguard Magic|Adaptive Ranger|AdaptiveRanger|Dragonguard|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dragon Servant|Adaptive Ranger|AdaptiveRanger|Dragonguard|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Aspect of the Dragon|Adaptive Ranger|AdaptiveRanger|Dragonguard|AdaptiveRanger|3|AdaptiveRanger"
+				}
+			]
+		},
+		{
+			"name": "Dragonguard Magic",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，当你达到本阶级的某些等级时，你总是有额外的法术准备，如龙卫法术表所示。这些法术对你来说算作游侠法术，而且不计入你可以准备的游侠法术中。",
+				{
+					"type": "table",
+					"caption": "Dragonguard Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell cause fear|xge}"
+						],
+						[
+							"5th",
+							"{@spell dragon's breath|xge}"
+						],
+						[
+							"9th",
+							"{@spell fly}"
+						],
+						[
+							"13th",
+							"{@spell polymorph}"
+						],
+						[
+							"17th",
+							"{@spell control winds|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dragon Servant",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当你在3级时选择这个原型时，你就注定要为龙服务并保护它的领土。你可以说、读、写德拉贡语。同时，从下面的列表中选择一种龙的颜色，这决定了你的龙卫特征将采取的形式，并赋予你对该颜色伤害类型的抗性。",
+				{
+					"type": "table",
+					"caption": "Dragon Servant Colors",
+					"colLabels": [
+						"Dragon Color",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"黑色",
+							"acid"
+						],
+						[
+							"Blue",
+							"闪电"
+						],
+						[
+							"黄铜",
+							"fire"
+						],
+						[
+							"铜质",
+							"闪电"
+						],
+						[
+							"铜",
+							"acid"
+						],
+						[
+							"Gold",
+							"fire"
+						],
+						[
+							"绿色",
+							"毒药"
+						],
+						[
+							"Red",
+							"fire"
+						],
+						[
+							"银色",
+							"cold"
+						],
+						[
+							"白",
+							"cold"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aspect of the Dragon",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级的时候，通过龙和游侠魔法的结合，你可以把龙的一面吸引到自己身上，变成它的样子。",
+				"你可以使用你的额外行动来转变为一个（%0%）。你保持这种形态的时间与你的游侠等级相等，或者直到你使用你的奖励行动提前结束转变。在变身时，你的装备会与你的形态合并。你可以通过额外行动提前恢复到你的正常形态。在变身时，以下规则适用。",
+				{
+					"type": "list",
+					"items": [
+						"你的游戏数据会被替换成龙的数据，但你会保留你的游侠特征、你的熟练度奖励、你的智力、智慧和魅力分数、你的排列组合以及你所掌握的任何语言。",
+						"你的巨龙之神会获得一个命中率，并且你的游侠等级每超过3级，它的命中率就会增加8（（%0%））。当你恢复到正常形态时，你的命中率会恢复到你变身前的数字。然而，如果你因为命中率下降到0而恢复，而不是立即被打晕，任何多余的伤害都会延续到你的正常形态。例如，如果你在龙形态下受到10点伤害，而你只剩下1点命中率，你就会恢复并受到9点伤害。",
+						"你的龙形态对你为你的龙仆特征选择的颜色相关的伤害类型免疫，并且它的咬合攻击会造成{@damage 1d4}相同类型的额外伤害。",
+						"除了你从你的龙卫魔法特征中知道的法术外，你不能施展其他法术，而且你不需要为你以这种方式施展的法术提供材料组件。然而，变身并不会破坏你对已经施展的法术的专注，也不会阻止你采取属于法术的行动，例如（%0%）。"
+					]
+				},
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Spectral Rider",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你的正常形态的一个幽灵般的流动面孔骑在你的龙形上，使你的能力与龙的能力同步。",
+				"你的龙形态会获得你正常形态的感官，并且会精通你所精通的任何技能。此外，你可以在你的正常形态和龙形态下，将你的熟练度加到你的（%0%）法术伤害上。"
+			]
+		},
+		{
+			"name": "Frightful Aspect",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你体内的龙的一面创造了一种存在，你可以召唤它来让你的敌人感到恐惧。",
+				"你可以用你的行动来选择你周围60英尺内的任何数量的生物。被选择的生物如果能看到或听到你，必须对你的法术救赎DC进行智慧救赎成功，否则就会被（%0%），持续1分钟。一个生物可以在它的每个回合结束时重复蓄力，如果成功则结束对它的影响。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Freedom's Wing",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你可以使用你的龙的方面来萌发翅膀，让你在没有变身的时候也能逃离危险。",
+				"作为你被近战攻击击中后的反应，攻击者必须对你的法术救赎DC进行力量救赎成功，否则会被击倒（%0%）。然后你可以在不引起机会攻击的情况下飞到30英尺，并漂浮在那里（如果你选择的话），直到你的下一个回合结束，那时你会轻轻地漂浮到地面，除非有其他东西让你在高空。"
+			]
+		},
+		{
+			"name": "Hunter",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"模仿猎人的原型意味着接受你作为文明和荒野恐怖之间的堡垒的地位。当你走在猎人的道路上时，你会学习专门的技术来对抗你所面临的威胁，从猖獗的食人魔和成群的兽人到高大的巨人和可怕的龙。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter Magic|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Prey|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Stalker's Adaptation|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|3|AdaptiveRanger"
+				}
+			]
+		},
+		{
+			"name": "Hunter Magic",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，当你达到这个等级的某些级别时，你总是有额外的法术准备，如猎人法术表中所示。这些法术对你来说算作游侠法术，它们不计入你可以准备的游侠法术中。",
+				{
+					"type": "table",
+					"caption": "Hunter Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell expeditious retreat}"
+						],
+						[
+							"5th",
+							"{@spell see invisibility}"
+						],
+						[
+							"9th",
+							"{@spell meld into stone}"
+						],
+						[
+							"13th",
+							"{@spell staggering smite}"
+						],
+						[
+							"17th",
+							"{@spell scrying}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Hunter's Prey",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在3级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Colossus Slayer|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|3|AdaptiveRanger"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Predator Crusher|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|3|AdaptiveRanger"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Horde Breaker|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|3|AdaptiveRanger"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Colossus Slayer",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"你的坚韧可以消磨掉最强大的敌人。当你用武器攻击击中一个生物时，如果该生物低于其最大命中率，你可以对其造成额外的（%0%）伤害。你每回合只能造成一次这种额外伤害。"
+			]
+		},
+		{
+			"name": "Predator Crusher",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"当一个在你5英尺范围内的生物攻击你时，你可以在其攻击后立即使用你的反应来尝试抓捕该生物，只要你能看到该生物。如果你的尝试成功，该生物会受到{@damage 1d8}重击伤害。另外，每回合一次，当你用武器攻击生物时，如果它被你抓住了，你可以造成额外的（%1%）重击伤害。"
+			]
+		},
+		{
+			"name": "Horde Breaker",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"在你的每个回合中，只要有另一个敌对生物在你攻击目标的5英尺范围内，你就可以将你为武器攻击所掷的一个武器伤害模子的结果最大化。你可以在滚动伤害模子之前或之后这样做。"
+			]
+		},
+		{
+			"name": "Stalker's Adaptation",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在第三级，每当你完成一次短时或长时的休息时，你可以用同一列表中你选择的另一个特征来替换你选择的（%0%）特征。当你以后从（1%）、（2%）和（3%）中获得一个特性时，你也可以用各自特性列表中的不同选择来替换你对这些特性的选择。"
+			]
+		},
+		{
+			"name": "Defensive Tactics",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Escape the Horde|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|7|AdaptiveRanger"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Multiattack Defense|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|7|AdaptiveRanger"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Steel Will|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|7|AdaptiveRanger"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Escape the Horde",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"对你的机会攻击是以劣势进行的，当一个机会攻击没有击中你时，你的速度会增加10英尺，直到你的回合结束。"
+			]
+		},
+		{
+			"name": "Multiattack Defense",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"当一个生物用攻击击中你时，你会在接下来的回合中对该生物的所有后续攻击获得一个+4的攻击力奖励。"
+			]
+		},
+		{
+			"name": "Steel Will",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"header": 3,
+			"entries": [
+				"当你对任何持续的效果重复你的拯救动作时，你在拯救动作上有优势。"
+			]
+		},
+		{
+			"name": "Multiattack",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Volley|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|11|AdaptiveRanger"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Whirlwind Attack|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|11|AdaptiveRanger"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Volley",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"header": 3,
+			"entries": [
+				"作为一个动作，你可以对你的武器范围内你能看到的10英尺范围内的任何数量的生物进行一次远程攻击。你必须为每个目标准备弹药，就像平时一样，你为每个目标进行单独的攻击卷。"
+			]
+		},
+		{
+			"name": "Whirlwind Attack",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"header": 3,
+			"entries": [
+				"作为一个动作，你可以对你所持武器范围内的任何数量的生物进行近战攻击，对每个目标进行单独的攻击卷。"
+			]
+		},
+		{
+			"name": "Superior Hunter's Defense",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Stand Against the Tide|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|15|AdaptiveRanger"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Uncanny Dodge|Adaptive Ranger|AdaptiveRanger|Hunter|AdaptiveRanger|15|AdaptiveRanger"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Stand Against the Tide",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"header": 3,
+			"entries": [
+				"当一个敌对的生物用近战攻击错过你时，你可以用你的反应迫使该生物对你选择的另一个生物（包括它自己）重复同样的攻击。"
+			]
+		},
+		{
+			"name": "Uncanny Dodge",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"header": 3,
+			"entries": [
+				"当一个你能看到的攻击者用攻击击中你时，你可以用你的反应使攻击对你的伤害减半。"
+			]
+		},
+		{
+			"name": "Primeval Watch",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"原始守望原型的游侠潜伏在古老的森林、林地和自然保护区的边界，因为他们认为保护这些原始生命的堡垒是他们的职责。他们的信条为原始守望提供了实物保护，用他们掌握的自然魔法增强他们的身体。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primeval Watch Magic|Adaptive Ranger|AdaptiveRanger|Primeval Watch|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guardian Soul|Adaptive Ranger|AdaptiveRanger|Primeval Watch|AdaptiveRanger|3|AdaptiveRanger"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Piercing Thorns|Adaptive Ranger|AdaptiveRanger|Primeval Watch|AdaptiveRanger|3|AdaptiveRanger"
+				}
+			]
+		},
+		{
+			"name": "Primeval Watch Magic",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，当你达到这个等级的某些级别时，你总是有额外的法术准备，如原始观察法术表所示。这些法术对你来说算作游侠法术，而且不计入你可以准备的游侠法术中。",
+				{
+					"type": "table",
+					"caption": "Primeval Watch Magic",
+					"colLabels": [
+						"Ranger Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell faerie fire}"
+						],
+						[
+							"5th",
+							"{@spell warding wind}"
+						],
+						[
+							"9th",
+							"{@spell plant growth}"
+						],
+						[
+							"13th",
+							"{@spell guardian of nature}"
+						],
+						[
+							"17th",
+							"{@spell insect plague}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Guardian Soul",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从3级开始，你获得了神奇地穿上树状外壳的能力，上面覆盖着树叶和树皮。",
+				"作为一个额外的行动，你会变成这个守护者形态，这个形态一直持续到你结束它的额外行动或你失去能力为止。在这种形态下，你会发生以下变化。",
+				{
+					"type": "list",
+					"items": [
+						"当你使用这个功能时，你会获得与你的智慧修饰值相等的临时命中率，以及在你每个回合的开始，这将持续到你的守护形态结束。",
+						"你的触角增加5英尺。",
+						"当你施放一个造成伤害的游侠法术时，你可以在该法术的每个伤害卷上加上你的智慧修正值。"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Guardian Soul Note",
+					"entries": [
+						"守护之魂并不适用于{@classFeature Mark of the Hunt|Adaptive Ranger|AdaptiveRanger|1|AdaptiveRanger}的特性，但它确实适用于{@spell hunter's mark}的法术。由于这一变化，该特征在这里起作用，但要使其适用于任何其他风格的游侠，请将猎人的标记排除在获得守护之魂的好处之外。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Piercing Thorns",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"同样在3级时，你可以短暂地长出锋利的防御性荆棘。",
+				"每当你被近战攻击击中时，你可以使用你的反应对攻击者造成{@damage 1d8}的穿刺伤害。当你的等级达到11级时，这个伤害会增加到（%1%）。"
+			]
+		},
+		{
+			"name": "Ancient Fortitude",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你可以像古树一样忍耐。当你处于守护者形态时，你的攻击力会增加2，并且可以在你的力量、灵巧和体质方面增加你的智慧修正值。"
+			]
+		},
+		{
+			"name": "Rooted Defense",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你可以投射藤蔓和树皮，使你周围的地面分层，减缓你的敌人并保护你的盟友。",
+				"当你处于守护者形态时，你周围20英尺内的地面成为困难地形。当你激活你的守护者形态时，你可以选择任意数量的生物，这些生物会忽略这种困难地形，而在该区域内有一半的掩护。"
+			]
+		},
+		{
+			"name": "Ironwood Bark",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级的时候，你的树皮已经变得异常坚韧和有弹性。你可以把你的游侠等级的一半加到你从守护者形态获得的临时命中率上。"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Conjure Barrage",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Adaptive Ranger",
+						"source": "AdaptiveRanger"
+					}
+				]
+			},
+			"entries": [
+				"你扔出一块弹药或你持有的武器，从你开始的圆锥体中迸发出危险的相同武器。该区域内的每个生物都必须做一个灵巧的蓄力动作，蓄力失败会受到武器类型的伤害（%0%），蓄力成功会受到一半的伤害。",
+				"直到你的下一个回合结束，该区域会被武器或弹药的尖锐碎片所覆盖；当一个生物在一个回合中第一次进入该区域或在那里开始其回合时，你可以使其中一个碎片攻击该生物（不需要行动）。对该生物进行一次近战法术攻击。一旦命中，目标受到{@damage 2d8}的穿刺伤害。",
+				"当咒语结束时，由它产生的碎片就会消失。"
+			],
+			"source": "AdaptiveRanger",
+			"page": 11,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "ammunition or thrown weapon"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"三级以上的法术槽等级，此法术的初始伤害增加（%0%）。"
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"N"
+			]
+		},
+		{
+			"name": "Cordon of Arrows",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Adaptive Ranger",
+						"source": "AdaptiveRanger"
+					}
+				]
+			},
+			"entries": [
+				"你对最多四件非魔法弹药--箭或弩箭--进行附魔，这些弹药在持续时间内会在你附近盘旋。在咒语结束之前，每当除你之外的生物在一个回合中第一次进入弹药的30英尺范围内，或者在那里结束其回合，你可以让一块弹药飞起来攻击它。该生物必须在灵巧救赎中成功，否则会受到{@damage 1d8}的穿刺伤害。然后这块弹药会被摧毁。当没有剩余的弹药时，咒语结束。",
+				"当你施展这个法术时，或者作为一个动作，你可以将任何数量的碎片种在你5英尺范围内的地面上，并在它们上面施加魔法以保护一个区域。",
+				"当你施展这个法术时，你可以指定任何你选择的生物，并且法术会忽略它们。"
+			],
+			"source": "AdaptiveRanger",
+			"page": 11,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "one or more arrows/bolts"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或以上的法术槽施放此法术时，每超过2级的法术槽等级，可影响的弹药数量就会增加2。"
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Healing Spirit",
+			"source": "AdaptiveRanger",
+			"page": 11,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Adaptive Ranger",
+						"source": "AdaptiveRanger"
+					}
+				]
+			},
+			"entries": [
+				"你召唤一个无形的灵魂到一个你能看到的5英尺的空间。当灵体出现时，它可以为5英尺范围内你选择的最多两个生物恢复{@dice 1d6}的生命值。你可以使用你的额外行动，将灵体移动到一个你能看到的空间，重复这个治疗效果。灵魂不能治疗构造物或亡灵。"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"每超过2级的插槽等级，灵体会额外治疗{@dice 1d6}的命中率，而且当你使用法术的额外行动时，你可以针对灵体5英尺内的一个额外生物。"
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"UBA"
+			]
+		},
+		{
+			"name": "Lightning Arrow",
+			"source": "AdaptiveRanger",
+			"level": 3,
+			"page": 12,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Adaptive Ranger",
+						"source": "AdaptiveRanger"
+					}
+				]
+			},
+			"entries": [
+				"作为施展此法术的一部分，你必须使用你持有的远程或投掷武器对范围内的生物进行远程武器攻击，否则法术失败。武器（如果是投掷的）或其弹药会转化为一道闪电，无视掩体，向目标涌去。命中时，目标会受到攻击的正常效果，并受到额外的（%0%）闪电伤害。如果没有击中，目标将受到一半的伤害。",
+				"无论是否击中，在你和目标之间5英尺宽的直线上的每个生物，以及目标10英尺内的每个生物，都必须做一个灵巧的蓄力动作。蓄力失败时，生物会受到{@damage 4d8}的闪电伤害，蓄力成功时，会受到一半的伤害。武器或弹药随后会恢复到正常形态。"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a weapon capable of making ranged attacks"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"每超过3级的槽位，被击中的额外雷电伤害增加{@damage 1d10}，生物在救赎失败时受到的伤害量增加{@damage 1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"areaTags": [
+				"L"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Zephyr Strike",
+			"source": "AdaptiveRanger",
+			"page": 12,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Adaptive Ranger",
+						"source": "AdaptiveRanger"
+					}
+				]
+			},
+			"entries": [
+				"风从你身上掠过，带着你的手脚，使你能够快速移动和攻击。你的移动不会引起机会攻击，直到咒语结束。",
+				"在你施展法术后，或在法术结束前的一次额外行动中，你可以移动到30英尺，对你周围5英尺内的生物进行一次近战法术攻击，对目标造成相当于{@damage 1d8}加你法术能力修饰的武力伤害，一击必杀。"
+			],
+			"components": {
+				"v": true
+			},
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Dragon Aspect",
+			"source": "AdaptiveRanger",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 9",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"swim": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 11,
+			"cha": 14,
+			"passive": 10,
+			"cr": "1",
+			"page": 8,
+			"languages": [
+				"Draconic"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"save": {
+				"dex": "+2",
+				"con": "+5",
+				"wis": "+2",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+2"
+			},
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}13 ({@damage 1d10 + 4})穿刺伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"遵循龙卫原型的游骑兵能够将自己转化为龙的方面，获得各种好处。"
+				]
+			},
+			"dragonAge": "aspect"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"name": "Deft Explorer",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 1,
+			"entryData": {
+				"skillProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"nature",
+								"survival"
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Mark of the Hunt",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 1,
+			"system": {
+				"activation.type": "none",
+				"target.type": "creature",
+				"target.units": "ft",
+				"target.value": "90",
+				"uses.max": "@classes.adaptive-ranger.levels > 16 ? 6  : @classes.adaptive-ranger.levels > 10 ? 5  : @classes.adaptive-ranger.levels > 4 ?  4  : 3",
+				"uses.per": "sr"
+			},
+			"effects": [
+				{
+					"name": "Mark of the Hunt",
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "+1d4"
+						},
+						{
+							"key": "data.bonuses.rwak.damage",
+							"mode": "ADD",
+							"value": "+1d4"
+						}
+					],
+					"disabled": true
+				}
+			]
+		},
+		{
+			"name": "Vanish",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 14,
+			"system": {
+				"activation.type": "bonus",
+				"activation.cost": 1
+			}
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"level": 20,
+			"system": {
+				"uses.value": 1,
+				"uses.max": 1,
+				"uses.per": "sr"
+			}
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Beast Whisperer",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Beast Master",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"entryData": {
+				"skillProficiencies": [
+					{
+						"animal handling": true
+					}
+				],
+				"expertise": [
+					{
+						"animal handling": true
+					}
+				]
+			}
+		},
+		{
+			"name": "Aspect of the Dragon",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"system": {
+				"activation.type": "bonus",
+				"activation.cost": 1,
+				"uses.value": 1,
+				"uses.max": 1,
+				"uses.per": "sr"
+			}
+		},
+		{
+			"name": "Frightful Aspect",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"system": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"target.type": "creature",
+				"target.units": "ft",
+				"target.value": 60,
+				"uses.max": 1,
+				"uses.value": 1,
+				"uses.per": "lr",
+				"actionType": "save",
+				"save.ability": "wis",
+				"save.scaling": "spell"
+			}
+		},
+		{
+			"name": "Freedom's Wing",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Dragonguard",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"system": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"activation.condition": "after you are hit with a melee attack",
+				"actionType": "save",
+				"save.ability": "str",
+				"save.scaling": "spell"
+			}
+		},
+		{
+			"name": "Colossus Slayer",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"system": {
+				"activation.type": "special",
+				"activation.condition": "hit a creature with a weapon attack while it's below its hit point maximum",
+				"actionType": "other",
+				"damage.parts[0][0]": "1d8"
+			}
+		},
+		{
+			"name": "Predator Crusher",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"system": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"activation.condition": "a creature within 5 ft. of you attacks you",
+				"target.type": "creature",
+				"target.value": 1,
+				"range.value": 5,
+				"range.units": "ft"
+			}
+		},
+		{
+			"name": "Horde Breaker",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"system": {
+				"activation.type": "special",
+				"activation.condition": "another hostile creature is within 5 ft. of the target of your attack"
+			}
+		},
+		{
+			"name": "Multiattack Defense",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"system": {
+				"activation.type": "special",
+				"activation.condition": "a creature hits you with an attack"
+			},
+			"effects": [
+				{
+					"name": "Multiattack Defense",
+					"changes": [
+						{
+							"key": "data.attributes.ac.value",
+							"mode": "ADD",
+							"value": "+4"
+						}
+					],
+					"disabled": true
+				}
+			]
+		},
+		{
+			"name": "Volley",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"system": {
+				"activation.type": "action",
+				"activation.cost": 1
+			}
+		},
+		{
+			"name": "Whirlwind Attack",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 11,
+			"system": {
+				"activation.type": "action",
+				"activation.cost": 1
+			}
+		},
+		{
+			"name": "Stand Against the Tide",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"system": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"activation.condition": "a hostile creature misses you with a melee attack"
+			}
+		},
+		{
+			"name": "Uncanny Dodge",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Hunter",
+			"subclassSource": "AdaptiveRanger",
+			"level": 15,
+			"system": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"activation.condition": "an attacker that you can see hits you with an attack"
+			}
+		},
+		{
+			"name": "Guardian Soul",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"system": {
+				"activation.type": "bonus",
+				"activation.cost": 1
+			},
+			"effects": [
+				{
+					"name": "Guardian Soul: Extra Spell Damage",
+					"changes": [
+						{
+							"key": "data.bonuses.msak.damage",
+							"mode": "ADD",
+							"value": "+@abilities.wis.mod"
+						},
+						{
+							"key": "data.bonuses.rsak.damage",
+							"mode": "ADD",
+							"value": "+@abilities.wis.mod"
+						}
+					],
+					"disabled": true
+				}
+			]
+		},
+		{
+			"name": "Piercing Thorns",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 3,
+			"system": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"activation.condition": "Whenever you are hit with a melee attack",
+				"damage.parts[0][0]": "ceil((@classes.adaptive-ranger.levels)/10)d8",
+				"actionType": "other"
+			}
+		},
+		{
+			"name": "Ancient Fortitude",
+			"source": "AdaptiveRanger",
+			"className": "Adaptive Ranger",
+			"classSource": "AdaptiveRanger",
+			"subclassShortName": "Primeval Watch",
+			"subclassSource": "AdaptiveRanger",
+			"level": 7,
+			"effects": [
+				{
+					"name": "Ancient Fortitude",
+					"changes": [
+						{
+							"key": "data.attributes.ac.value",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					],
+					"disabled": true
+				}
+			]
+		}
+	]
+}

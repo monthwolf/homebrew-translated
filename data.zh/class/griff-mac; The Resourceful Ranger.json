@@ -1,0 +1,1448 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TRR",
+				"abbreviation": "TRR",
+				"full": "The Resourceful Ranger",
+				"authors": [
+					"griff-mac"
+				],
+				"url": "https://drive.google.com/file/d/1_imKF5eM5FYcSkgQn_vu4azknFvPMInk/view",
+				"version": "1.6.3"
+			}
+		],
+		"optionalFeatureTypes": {
+			"CO": "Concoction"
+		},
+		"dateAdded": 1545342498,
+		"dateLastModified": 1545342498,
+		"_dateLastModifiedHash": "a51e390c90"
+	},
+	"class": [
+		{
+			"name": "Ranger (Resourceful)",
+			"source": "TRR",
+			"hd": {
+				"faces": 10,
+				"number": 1
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"tools": [
+					"Herbalism Kit",
+					"Poisoner's Kit"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item scale mail|PHB} or (b) {@item leather armor}",
+					"(a) a martial weapon and a shield or (b) two shortswords or two simple melee weapons",
+					"(a) a dungeoneer's pack or (b) an explorer's pack",
+					"A longbow and a quiver of 20 arrows"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|PHB"
+						],
+						"b": [
+							"leather armor"
+						]
+					},
+					{
+						"a": [],
+						"b": []
+					},
+					{
+						"a": [],
+						"b": []
+					},
+					{
+						"_": []
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Known Recipes|optionalfeatures|source=null|feature type=CO}",
+						"Mark Uses"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							3,
+							2
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							3
+						],
+						[
+							4,
+							3
+						],
+						[
+							4,
+							4
+						],
+						[
+							4,
+							4
+						],
+						[
+							4,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							6,
+							5
+						],
+						[
+							7,
+							5
+						],
+						[
+							7,
+							5
+						],
+						[
+							7,
+							5
+						],
+						[
+							7,
+							6
+						],
+						[
+							9,
+							6
+						],
+						[
+							9,
+							6
+						],
+						[
+							9,
+							6
+						],
+						[
+							9,
+							6
+						]
+					]
+				}
+			],
+			"fluff": [
+				{
+					"source": "TRR",
+					"page": 1,
+					"entries": [
+						"一个看起来粗野的人类独自漫步在树影中，猎杀他知道正在计划袭击附近农场的兽人。他双手紧握着一把带毒的短剑，变成一股钢铁旋风，砍倒一个又一个敌人。",
+						"在从冰冷的空气中翻滚开来后，一个精灵找到了她的脚，拉开她的弓，向白龙放箭。甩开从龙身上散发出来的恐惧浪潮，就像龙的呼吸的寒冷一样，她发出一支又一支的箭，寻找龙厚厚的鳞片之间的缝隙。",
+						"一个半精灵高举着手，对着在他头顶上盘旋的鹰吹口哨，召唤鸟儿回到他身边。他用精灵语低声指示，指向他一直在追踪的猫头鹰，并派鹰去引开那只动物，同时他准备好他的弓。",
+						"远离城市和城镇的喧嚣，越过为最遥远的农场提供庇护的篱笆，使其免受野生动物的威胁，在无轨森林的密集树木中，以及在宽阔空旷的平原上，护林员保持着无尽的警惕。",
+						{
+							"type": "entries",
+							"name": "Deadly Hunters",
+							"entries": [
+								"游骑兵是荒野的勇士，专门猎杀威胁文明边缘的怪物--人形突袭者、横冲直撞的野兽和怪兽、可怕的巨人和致命的龙。他们学会了像捕食者一样追踪他们的猎物，在荒野中隐秘地移动，把自己藏在灌木和瓦砾中。游骑兵将他们的战斗训练集中在对他们所喜欢的特定敌人特别有用的技术上。",
+								"由于他们对自然界的熟悉，游侠们学会了将土地上的资源转化为强大的药剂，来毒害他们的敌人并支持他们的盟友。这些配方可以使敌人无能为力，支持他们的盟友，并解决冒险者的许多日常不便。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Independent Adventurers",
+							"entries": [
+								"虽然游侠可能以猎人、向导或追踪者为生，但游侠的真正使命是保卫文明的外围，使其免受从野外涌来的怪物和人形大军的蹂躏。在一些地方，游侠们聚集在秘密的秩序中，或者与德鲁伊教派的圈子联合起来。然而，许多游骑兵几乎是独立的，他们知道，当龙或兽人队伍进攻时，游骑兵可能是第一道--也可能是最后一道--防线。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Ranger",
+							"entries": [
+								"当你创建游侠角色时，考虑赋予你特殊能力的训练的性质。你是否和一个导师一起训练，一起在荒野中游荡，直到你掌握了游侠的方法？你是否离开了你的学徒生涯，或者你的导师被杀了--也许是被成为你最喜欢的敌人的那种怪物所杀？或者你是作为隶属于德鲁伊教派的游骑兵队伍的一部分学习了你的技能，接受了荒野传说和自然植物的力量的训练。",
+								"你可能是自学成才的，一个通过在荒野中生存的需要学会战斗技能、追踪或草药学的隐士。",
+								"你对某类敌人的特别仇恨的来源是什么？是一个怪物杀死了你所爱的人或摧毁了你的家乡？还是你看到了太多这些怪物造成的破坏，并承诺要控制它们的掠夺行为？你的冒险生涯是你保护边疆的工作的延续，还是一个重大的改变？",
+								"是什么让你加入了一个冒险者的队伍？你是否觉得向新盟友传授野外生存之道是一种挑战，还是欢迎他们提供的孤独的解脱？",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"你可以通过以下建议快速制作一个游侠。首先，让灵巧成为你最高的能力得分，其次是智慧。(一些专注于双武器战斗的游骑兵将力量定得比灵巧高。） 第二，选择外乡人的背景。"
+									]
+								}
+							]
+						}
+					],
+					"name": "Ranger (Resourceful)",
+					"type": "section"
+				}
+			],
+			"classFeatures": [
+				"Favored Enemy|Ranger (Resourceful)|TRR|1",
+				"Natural Explorer|Ranger (Resourceful)|TRR|1",
+				"Wild Kinship|Ranger (Resourceful)|TRR|1",
+				"Fighting Style|Ranger (Resourceful)|TRR|2",
+				"Marked Prey|Ranger (Resourceful)|TRR|2",
+				"Concoctions|Ranger (Resourceful)|TRR|2",
+				{
+					"classFeature": "Ranger Conclave|Ranger (Resourceful)|TRR|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Resourceful)|TRR|4",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Resourceful)|TRR|5",
+					"gainSubclassFeature": true
+				},
+				"Cunning Action|Ranger (Resourceful)|TRR|6",
+				"New Favored Enemy|Ranger (Resourceful)|TRR|6",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Resourceful)|TRR|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Resourceful)|TRR|8",
+				"Hide in Plain Sight|Ranger (Resourceful)|TRR|8",
+				"Sharpened Mark|Ranger (Resourceful)|TRR|10",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Resourceful)|TRR|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Resourceful)|TRR|12",
+				"Subversive Mark|Ranger (Resourceful)|TRR|14",
+				"New Favored Enemy|Ranger (Resourceful)|TRR|14",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Resourceful)|TRR|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Resourceful)|TRR|16",
+				"Vial of Swiftness|Ranger (Resourceful)|TRR|18",
+				"Ability Score Improvement|Ranger (Resourceful)|TRR|19",
+				"Foe Slayer|Ranger (Resourceful)|TRR|20"
+			],
+			"subclassTitle": "Ranger Conclaves"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Healing Draught",
+			"source": "TRR",
+			"page": 7,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"喝下这种混合物可以恢复相当于1d8+你的智慧修正值的健康。一个生物在每个短暂的休息时间可以从这些效果中受益一次。在短时休息前喝下额外的治疗药水的生物，只能得到一半的治疗量。这种药水可以作为一个动作施给另一个愿意的生物。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"在第五、第九、第十三和第十七级时，这种喝水疗法可额外治疗1d8。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Vial of Cat's Sight",
+			"source": "TRR",
+			"page": 7,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"一个生物可以喝下这种混合物作为奖励动作，使他们的眼睛扩张到超过正常的极限，持续一个小时，要么赋予他们30英尺的暗视，要么使他们现有的暗视增加15。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"效果会额外延长一小时，并且在第五、第九、第十三和第十七级时可以多容纳一次服役。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Acidic Flask",
+			"source": "TRR",
+			"page": 7,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"作为一个动作，你可以向你30英尺范围内的一个生物或物体投掷这个凝结物。瓶子在撞击时破碎。一个生物如果在灵巧的救赎中失败，就会受到2d6+你的智慧修正值的酸液伤害。无生命的物体会自动被击中，并且伤害会最大化。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"你的酸性酒壶在第五、第九、第十三和第十七级会造成额外的2d6酸性伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Draught of Soft Steps",
+			"source": "TRR",
+			"page": 7,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"一个生物可以在行动中喝下这种滑溜溜的混合物，以暂时提高他们的精细运动控制能力，在接下来的一小时内，给予它任何灵巧（隐身）检查+10的奖励。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"在第5级时，你修改了配方，以产生一种恶臭的蒸汽，当深呼吸时，能提供与喝水相同的好处。作为一个额外的动作，你可以打开炼金术，将混合物暴露在空气中，在你周围形成一片看不见的蒸汽云。在你周围30英尺范围内的生物，可以持续吸入混合剂的蒸汽，使他们的灵巧（隐身）检查也得到+10。",
+						"在13级时，选择喝下这杯酒，可以对任何灵巧（灵巧）的检查给予+10的奖励。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Tar Flask",
+			"source": "TRR",
+			"page": 8,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"作为一个动作，你可以向你30英尺范围内的一个生物或点投掷这个凝结物。烧瓶在撞击时碎裂，并将焦油散布在10英尺的范围内，使其变成困难的地形。在瓶子撞击点5英尺范围内的目标必须做一个灵巧的蓄力动作。如果救赎失败，该生物就会被厚厚的焦油覆盖，并被束缚长达1分钟之久。该生物可以在每一回合使用它的行动来做一个力量救赎动作，并将自己从焦油中取出。焦油会迅速变干，并在一分钟后失去其粘性。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"到5级时，焦油半径范围内的所有生物都必须在它散开时做一个灵巧的蓄力动作。9级时，你开始将焦油与可燃成分混合，一旦扩散就会被点燃。如果被点燃，进入该地形或在该地形开始他们的回合的生物会受到2d6的火焰伤害。一旦被点燃，焦油会在30秒或5轮战斗后烧掉。被焦油覆盖的生物会一直被点燃并受到火力伤害，直到他们从焦油中抽身出来或者焦油被烧掉。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Vial of Everlasting Air",
+			"source": "TRR",
+			"page": 8,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"以奖励行动的方式喝下这种混合物，可以提高饮用者的肺活量，使生物可以屏住呼吸的时间延长三倍。该药剂的效果持续一小时。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"在你达到5级、9级、13级和17级的时候，这种药水会进一步浓缩，每瓶多容纳一份。在第9级时，该药水的效力也会增加，让喝下它的生物屏住呼吸的时间达到正常时间的5倍。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Panacea Draught",
+			"source": "TRR",
+			"page": 8,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"喝下此药剂的{@condition blinded}、{@condition deafened}、{@condition diseased}或{@condition poisoned}的生物，在接下来的一分钟内，为了从这些状况中恢复过来，其蓄力攻击会获得优势。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"到9级时，你已经学会了如何治疗大多数临时性疾病。你的灵丹妙药除了有其他好处外，还能立即治愈上述的一种状态。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Bloodfire Poison",
+			"source": "TRR",
+			"page": 8,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"这个混合物可以用来毒化一个砍杀或刺穿的近战武器或一套弹药。作为一个额外动作，你可以在刀剑或弹药上涂抹毒药。你的下一次成功的武器攻击，如果使用中毒的刀剑或弹药，会造成额外的1d4毒药伤害。未命中的毒药有可能被回收，由DM决定。有足够的毒药份量，可以通过这种方式进行两次施放。如果在一次成功的攻击中没有使用，被施加在武器或弹药上的毒药可以持续一个小时。",
+				"被这种混合物毒害过的食物或饮料带有一种轻微的金属味道，可以通过成功的智力（调查）检查或通过你的混合物DC争夺的足够高的被动感知来检测。摄入毒药的生物会受到每份使用的最大伤害量。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"毒药的伤害值在5级时增加到1d6，9级时增加到1d8，13级时增加到1d10，17级时增加到1d12。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Glimmeringbug Flask",
+			"source": "TRR",
+			"page": 8,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"作为一个动作，你可以向你30英尺范围内的一个生物或点投掷这个凝结物。酒瓶在撞击时破碎，将无数闪亮的灰尘碎片送入10英尺半径范围内的空中。该范围内的生物必须做一个灵巧的蓄力动作。如果他们失败了，他们就会被覆盖在灰尘中。覆盖在细小尘埃中的生物似乎在闪闪发光，使他们更容易成为目标。对覆盖在尘埃中的生物进行攻击是有优势的。灰尘会在一分钟后松动并脱落。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"到了9级，你已经学会了如何进一步打磨闪光虫的碎片，迫使受影响的生物在灵巧（隐身）检查中处于不利地位。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Glow Potion",
+			"source": "TRR",
+			"page": 8,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"你创造了一种糖浆状的发光混合物，可在20英尺内发出亮光，在另外20英尺内发出暗光。这种混合物含有足够的液体，可供三份使用，每份的威力足以让它发光四小时。你可以在你的回合中加入一种化学试剂作为奖励动作，以改变光的颜色或暂停发光效果：将剩余的时间留待以后使用。",
+				"作为一个动作，你可以将一份这种混合物涂抹在一件物品或自愿的生物上，使其发出光。你可以把混合物擦掉，作为一个额外的动作来消除光线。如果你试图在一个不愿意的生物身上使用这种混合物，它必须做一个灵巧的拯救动作来避免它。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"到了第9级，你可以用有毒成分使混合物呈酸性。通过消耗两份作为行动，你可以在立即进行单次武器攻击前将刀或箭浸泡在调制物中。如果命中，目标会受到额外的4d6酸性伤害，并发出昏暗的光芒，直到你的下一个回合结束，给予下一个对其进行攻击的盟友以攻击优势。",
+						"在13级时，奖励伤害增加到5d6。在第17级时，增加到6d6。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Draught of the Beast",
+			"source": "TRR",
+			"page": 8,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"作为一项行动，你可以喝下这种药水，并在10分钟内获得暂时的致幻效果。你可以将野兽发出的声音解释为语言，让你与它们进行基本的对话。许多野兽的知识和意识受到它们智力的限制，但至少，野兽可以给你提供关于附近地点和怪物的信息，包括它们能感知到的或在过去一天中感知到的东西。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"在5级的时候，你可以和一个愿意的野兽分享这个调制物，暂时分享它的意识。在调制物的持续时间内，你会变得失明和失聪，但会通过野兽的感官进行感知，包括野兽可能拥有的任何特殊感官。你可以用一个动作提前结束效果，重新获得你的感官。",
+						"到9级时，你的生存感觉变得更强，并能在持续时间内以优势进行智慧（感知和生存）检查。",
+						"到13级时，炼金术的效果赋予你一种强大的原始战斗本能。在持续时间内，你的指尖会硬化成爪子，允许你在持续时间内进行你所精通的徒手近战攻击。这些攻击造成1d6的斩击伤害，并使用你的力量或灵巧修正值。",
+						"17级时，徒手伤害增加到1d8。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Betterberry Gruel",
+			"source": "TRR",
+			"page": 9,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"一个生物可以花一个行动来食用这种粥。它提供足够的营养来维持一个生物24小时的生命，并在你的每一个游侠等级中给予该生物1个临时打击点。一旦食用，生物需要经过长时间的休息才能再次获得这些好处。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"格鲁尔人在5级、9级、13级和17级时持有额外的服务。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Vial of Nurseweed",
+			"source": "TRR",
+			"page": 9,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"一个生物可以花一个额外的行动来喝下这一小瓶散发着恶臭的液体，以恢复2d4+4的健康。这种药水会使神经变得迟钝，以提供一些暂时的疼痛缓解，给予它相当于你游侠等级一半的临时命中率（四舍五入）。在完成长时间的休息之前，生物不能再从这个药剂中获益。这个小瓶可以作为一个动作给另一个愿意的生物使用。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"这个小瓶在第五、第九、第十三和第十七级时可额外治疗1d4。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Firewater Flask",
+			"source": "TRR",
+			"page": 9,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"作为一个动作，你可以向你30英尺范围内的一个生物或点投掷这个凝结物。烧瓶在撞击时破碎，并在那里产生一个半径为10英尺的有毒蒸汽云，持续一分钟后消散。在这团云内的生物在他们的回合开始时必须做一个宪法规定的救赎动作。如果救赎失败，该生物的眼睛就会开始刺痛难忍，导致它在该回合的任何攻击都会处于劣势。如果一个生物拥有盲目性、震颤感或没有眼睛，它们就不会受到蒸汽云的影响。",
+				"中等强度的风（至少每小时10英里）在5轮之后就会驱散云。强风（至少每小时20英里）在1轮后驱散它。",
+				"你可以喝这个来喝醉，尽管这不是一个愉快的方式。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"到9级时，你已经学会了如何使这种凝结物变得易燃。如果用魔法或非魔法手段点燃了这朵云，这朵云会被点燃成一个火焰球，然后立即消散。陷入火焰的生物必须做一个灵巧的救赎动作。如果救赎失败，他们会受到8d6的火焰伤害，如果救赎成功，会受到一半的伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Draught of Oaken Flesh",
+			"source": "TRR",
+			"page": 9,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"喝下这种药水可以暂时收紧并强化生物的皮肤，持续一小时，使其AC值增加2，最高可达16。",
+				"一个生物在每个短暂的休息时间内只能从这种吃水中受益一次，而且它的效果可以被一个驱散魔法咒语提前结束。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"到了5级，效果变得更加强大。在持续时间内，该生物的AC值不能低于16，不管它穿着什么样的盔甲。到13级时，一个生物可以在两次休息之间从这种吃水中受益，次数不限。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Sleep Flask",
+			"source": "TRR",
+			"page": 9,
+			"featureType": [
+				"CO"
+			],
+			"entries": [
+				"作为一个动作，你可以向你30英尺范围内的一个生物或一个点投掷这个调和物。烧瓶在撞击时碎裂，产生一个半径为10英尺的睡眠气体云。滚动3d8；总和就是这个凝结物可以影响多少点的生物。在你选择的范围内，10英尺内的生物按其当前命中率的升序受到影响（无视无意识的生物）。",
+				"从当前命中率最低的生物开始，每个受到这团睡眠气体影响的生物都会昏迷一分钟。如果沉睡者受到伤害或有人使用动作摇晃或拍打沉睡者，该生物会重新醒来。从总数中减去每个生物的命中率，然后再转到命中率次低的生物。一个生物的命中率必须等于或小于剩余的总数，该生物才会受到影响。亡灵和对魅惑免疫的生物不受此凝结物的影响。",
+				"这种药水可以用来给食物和饮料下药。当以这种方式应用它时，在任何生物摄取它之前要掷出骰子。受它影响的生物的顺序是由它被摄入的顺序决定的。",
+				{
+					"type": "entries",
+					"name": "At higher levels",
+					"entries": [
+						"在第5、9、13和17级确定受影响的生物的总命中率时，可额外掷出2d8。"
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Favored Enemy",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 1,
+			"entries": [
+				"从1级开始，你有大量研究、追踪、狩猎的经验，甚至可以和荒野中常遇到的某类敌人交谈。",
+				"选择一种受宠的敌人：异形、野兽、天人、建筑、龙、元素、妖怪、魔人、巨人、怪兽、乌兹、植物或亡灵。或者，你可以选择两个种族的人形生物作为你所喜爱的敌人。当你对你所偏爱的敌人进行攻击时，你的攻击具有优势。",
+				"此外，你在追踪你所喜欢的敌人的智慧（生存）检查上有优势，在回忆有关他们的信息的智力检查上也有优势。当你获得这个特性时，你也会学习一种你选择的语言，通常是你喜欢的敌人或与之相关的生物所讲的语言。然而，你可以自由选择任何你想要学习的语言。你在第6级和第14级时获得一个额外的喜爱的敌人（和相关语言）。"
+			]
+		},
+		{
+			"name": "Natural Explorer",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 1,
+			"entries": [
+				"你是驾驭自然界的高手，让你无视穿越困难地形的减速效果。",
+				"此外，当旅行至少一个小时时，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"困难的地形不会减缓你的团队的旅行。",
+						"除非用魔法手段，否则你的小组不可能迷路。",
+						"即使你在旅行中从事另一项活动（如觅食、导航或追踪），你仍然对危险保持警惕。",
+						"如果你是一个人，你可以以正常的速度隐秘地移动。",
+						"觅食时，你发现的食物是正常情况下的两倍。",
+						"在追踪其他生物的同时，你还可以了解到它们的确切数量，以及它们在多长时间之前经过该地区。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Wild Kinship",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 1,
+			"entries": [
+				"在1级时，你对自然界的熟悉让你与野兽产生了联系，它们也承认你是一个同类。",
+				"通过声音和手势，你可以把简单的想法作为一种行动传达给野兽，并能读懂它的基本情绪和意图。你可以了解它的情绪状态，它是否受到魔法的影响，它的短期需求（如食物或安全），以及你可以采取的行动（如果有的话）来劝说它不要攻击。",
+				"你不能对在过去10分钟内被你攻击过的生物使用此能力。"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 2,
+			"entries": [
+				"你采用一种特殊的战斗风格作为你的专长。选择其中的一种（%0%）。你不能多次选择相同的格斗风格，即使你可以再次选择。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Archery",
+							"entries": [
+								"你在使用远程武器进行攻击时获得+2的奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Close Quarters Shooter",
+							"entries": [
+								"当你在敌对生物的5英尺范围内进行远程攻击时，你在攻击卷上没有劣势。你的远程攻击对你30英尺内的目标无视半掩体和四分之三掩体。你对远程攻击的攻击卷轴有一个+1的奖励。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"type": "entries",
+							"name": "Defense",
+							"entries": [
+								"当你穿着盔甲时，你会获得一个+1的交流奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dueling",
+							"entries": [
+								"当你单手挥舞近战武器而没有其他武器时，你使用该武器的伤害卷获得+2的奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mariner",
+							"entries": [
+								"只要你不穿重甲或不使用盾牌，你的游泳速度和攀爬速度与你的正常速度相等，并且你获得+1的交流奖励。"
+							],
+							"source": "UAWaterborneAdventures"
+						},
+						{
+							"type": "entries",
+							"name": "Tunnel Fighter",
+							"entries": [
+								"作为一个额外动作，你可以进入一个防御姿态，持续到你下一个回合的开始。当你处于防御状态时，你可以在不使用你的反应的情况下进行机会攻击，并且你可以使用你的反应来对在你范围内移动超过5英尺的生物进行近身攻击。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"type": "entries",
+							"name": "Two-Weapon Fighting",
+							"entries": [
+								"当你进行双武器战斗时，你可以在第二次攻击的伤害上加上你的能力修改值。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Marked Prey",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 2,
+			"entries": [
+				"同样在2级时，你获得了在你90英尺范围内标记一个目标作为你的猎物的能力，使用一个奖励动作。你将注意力集中在目标的行为、声音和气味上，以便预测其一举一动。你可以在一个目标上保持这个标记长达一个小时，并且你在为寻找猎物而进行的任何感知或生存能力检查中获得优势。",
+				"每轮你用武器攻击击中被标记的目标时，该目标会受到额外的1d8武器伤害。你一次只能有一个被标记的猎物，如果你昏迷了，你就会失去标记的影响。",
+				"你可以按照游侠表上显示的次数使用这个特性，然后需要完成一个长时间的休息才能再次使用它。如果你的猎物下降到0点，你可以在一分钟内将你的标记移动到另一个目标上，作为一个额外的动作，而不需要再次使用这个特性。"
+			]
+		},
+		{
+			"name": "Concoctions",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 2,
+			"entries": [
+				"从2级开始，你可以开始使用天然材料进行制作（%0%）。在你的冒险过程中，你会觅食并储存你所需要的材料，以便制作它们。",
+				"当你获得这个功能时，你会学习三个你选择的配方。随着你在这个等级中等级的提高，调制的药效也会增加。你在5级、9级、13级和17级学习更多的配方，如游侠表中所示。每当你获得一个新的游侠等级时，你可以选择忘记一个配方，用另一个来代替。食谱在本等级描述的最后有详细说明。",
+				"你可以在每个长休日从你的已知配方列表中制作调和剂。为了保持它们的新鲜度和效力，在每次长休结束后，你会清空你未使用过的调制物，然后用你储藏的采集材料制作新的调制物。每次长休时，你最多可以制作与你的游侠等级相当的调制物。制作一个药剂需要两分钟，在时间允许的情况下可以在一天内完成。",
+				"你可以给你的盟友提供炼金术，让他们使用。你的盟友所持有的未使用的凝结物也会在他们下一次长时间休息结束时失效。",
+				"每当你所做的炼金术要求目标做一个蓄力动作时，就使用下面的炼金术DC。",
+				{
+					"type": "abilityDc",
+					"name": "Maneuver",
+					"attributes": [
+						"wis"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ranger Conclave",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以选择效仿游侠会的理想和训练：野兽会、猎人会或潜行者会，这些都在等级描述的末尾有详细说明。你的选择在3级时赋予你特性，在5级、7级、11级和15级时再次赋予你特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 5,
+			"entries": [
+				"在5级时，你的教会提供另一项功能"
+			]
+		},
+		{
+			"name": "Cunning Action",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 6,
+			"entries": [
+				"在6级时，你的快速思维和敏捷性使你能够快速移动和行动。你可以在战斗中的每个回合采取一个奖励行动。这个行动只能用于采取冲刺、脱离或隐藏行动。",
+				"如果你有一个动物伙伴，它也会获得这个功能。"
+			]
+		},
+		{
+			"name": "New Favored Enemy",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 6,
+			"entries": [
+				"同样在6级时，你获得一个额外的喜爱的敌人（和相关语言）。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 7,
+			"entries": [
+				"在7级时，你的教会提供了另一项功能"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一个能力得分提高2分，或者将你选择的两个能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Hide in Plain Sight",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 8,
+			"entries": [
+				"到8级时，你是一个在休息时避免被发现的专家。你可以花30分钟的时间利用当地的资源和自然产生的材料来伪装一个营地，并在15英尺的范围内隐藏多达6个中等大小的同伴。通过这样做，你还可以消除营地周围的任何足迹或其他旅行痕迹。",
+				"以这种方式伪装营地，使其半径范围内的生物在隐身检查中获得+10的奖励，以保持对生物的隐蔽。任何公开的行为，例如生火或以低声说话，都会否定这一好处。"
+			]
+		},
+		{
+			"name": "Sharpened Mark",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 10,
+			"entries": [
+				"10级时，你对 \"标记猎物 \"的关注会加强。你的标记猎物造成的伤害增加到每回合2d8。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 11,
+			"entries": [
+				"在11级时，你的教会提供了另一个功能"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Subversive Mark",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 14,
+			"entries": [
+				"在14级时，受你的标记猎物影响的生物不能再躲在他们的防御系统后面。你或动物同伴对你的猎物进行的武器攻击，在克服对非魔法攻击和伤害的抵抗力和免疫力方面，算作魔法攻击。"
+			]
+		},
+		{
+			"name": "New Favored Enemy",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 14,
+			"entries": [
+				"同样在14级时，你获得一个额外的喜爱的敌人（和相关语言）。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 15,
+			"entries": [
+				"在15级时，你的教会提供了另一个功能"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Vial of Swiftness",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 18,
+			"entries": [
+				"在18级时，你设计了一个新的调制配方，赋予你的双手超自然的敏捷性。在喝下它之后的一分钟内，你可以在每个回合中作为额外动作进行两次远程或近战武器攻击。以这种方式进行的近战攻击必须使用具有精巧属性的武器。",
+				"在需要长时间休息才能再次使用之前，你可以喝下这种调和剂两次，而且只有你能从中受益。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"level": 20,
+			"entries": [
+				"到了20级，你已经形成了无与伦比的直觉。你的智慧值增加4，即使它已经是20。你的最大智慧得分增加到24。",
+				"在你的每个回合中，你可以在你所做的攻击的攻击卷或伤害卷上加上你的智慧修饰。你可以选择在卷轴之前或之后使用这个功能，但在卷轴的任何效果被应用之前。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Beast Conclave",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 3,
+			"entries": [
+				"许多游骑兵在荒野中比在文明中更自在，以至于动物都认为他们是亲戚。野兽协约的游骑兵与野兽建立了密切的联系，随着他们之间的关系越来越密切，成为一支精心策划的力量。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Animal Companion|Ranger (Resourceful)|TRR|Beast|TRR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Companion's Bond|Ranger (Resourceful)|TRR|Beast|TRR|3"
+				}
+			]
+		},
+		{
+			"name": "Animal Companion",
+			"entries": [
+				"在3级时，你与自然界的一种生物形成一种强大的联系。无论是通过一个改变生活的事件，还是通过偶遇而产生的相互理解感，或者是其他的力量，你和一个生物成为了伙伴。在3级时，如果你的同伴出现的背后没有叙述，你可以花8小时和价值50gp的强力稀有草药，从荒野中召唤出一个生物来作为你的同伴。你一次只能有一个同伴。",
+				"根据经验，如果一个野兽是中型或更小，有15点或更少的命中率，并且单次攻击不能造成超过8点的伤害，就可以作为一个动物伙伴。一般来说，这适用于挑战等级为1/4或以下的生物，但也有例外。你的管理员可能会根据周围的地形和可用的野生动物为你选择其中的一种。如果你想与所列生物之外的其他生物建立联系，请咨询你的管理员。",
+				"如果你的同伴死了，你可以用你已故同伴的毛皮、鳞片或羽毛碎片以及各种稀有的、可供采集的成分制作一种特殊的凝结剂。采集和制作这种混合物的过程是缓慢而精细的，需要你集中精力8小时。你可以将这种凝结物送给新的同伴，让他们获得其前任的知识和经验。"
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Companion's Bond",
+			"entries": [
+				"当你的动物伙伴与你相连时，它将获得各种好处。建议为同伴准备一份角色表，因为它们被视为具有独特能力和统计数据的独立生物。",
+				{
+					"type": "list",
+					"items": [
+						"动物伙伴失去了它拥有的任何多重攻击行动。",
+						"同伴尽可能地服从你的命令。它像其他生物一样进行主动性滚动，但你决定它的行动、决定、态度等等。如果你失去了能力或不在，你的同伴就会自行行动。",
+						"当使用你的自然探索功能时，你和你的动物伙伴可以以正常的速度隐秘地移动。伴侣使用你的熟练度加分来增加它的卷轴，而不是它自己的。将你的熟练度加成加到野兽的AC、攻击卷、伤害卷、所有蓄力和它所精通的任何技能上。",
+						"你的同伴的最大命中率等于它的正常最大命中率或你的游侠等级的四倍，以较高者为准。",
+						"除了已经掌握的任何技能外，选择两个技能让它变得精通。",
+						"每当你获得游侠的能力值提升类特征时，你的同伴的能力也会提升。你和你的同伴各有2个能力点可以随意使用。在你的管理员的决定下，你的同伴可以选择参加一项特技，而不是增加它的能力分值。",
+						"你的同伴获得了猎杀你的标记猎物和喜欢的敌人的好处。每一回合，你或你的同伴都可以从你的标记猎物获得额外的伤害。"
+					]
+				}
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Pack Sharing",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"到了5级，你和你的同伴形成了一种类似于背包的联系。你可以从你在对方身边时喝下的酒的效果中获益。",
+				"此外，当你们一起进行短暂的休息时，你们每个人都会额外恢复1d6点命中率。"
+			]
+		},
+		{
+			"name": "Beast's Resolve",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，当你和你的同伴能看到对方时，你的同伴在所有拯救动作上都有优势。"
+			]
+		},
+		{
+			"name": "Storm of Claws and Fangs",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"同样在7级时，你的同伴可以用它的行动对5英尺内它选择的每个生物进行近战攻击，对每个目标进行单独的攻击卷。它可以使用这个功能的次数等于你的智慧修正值（最少一次），然后需要完成一个短暂或长时间的休息才能再次使用它。"
+			]
+		},
+		{
+			"name": "Coordinated Attack",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你和你的动物伙伴形成了一个完美的战斗团队。当你在你的回合中使用攻击动作时，如果你的同伴能看到你，它可以使用它的反应来进行近战攻击。"
+			]
+		},
+		{
+			"name": "Watchful Eye",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，每当你能看到的攻击者用攻击击中你的动物伙伴时，你可以用你的反应来提醒你的伙伴，并将攻击的伤害减半。"
+			]
+		},
+		{
+			"name": "Selfless Loyalty",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Beast",
+			"subclassSource": "TRR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"同样在15级的时候，你的同伴可以在它的回合中使用一个动作来引开它周围5英尺内的一个大型或小型生物。只要该生物保持在你的同伴的5英尺范围内，它在任何不以你的同伴为目标的攻击卷中都有劣势。这将持续到你的同伴的下一回合开始。",
+				"如果这个生物的一次攻击仍然会击中你同伴以外的盟友，你的同伴可以用它的反应来阻挡攻击，并代替它承受伤害。",
+				"你可以使用这个功能的次数等于你的智慧修改器（最少一次），并且在完成长时间休息后恢复所有消耗的使用。"
+			]
+		},
+		{
+			"name": "Hunter Conclave",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 3,
+			"entries": [
+				"一些游侠寻求掌握武器，以更好地保护文明免受荒野的恐怖。猎人俱乐部的成员学习专门的战斗技巧，用于对付最可怕的威胁，从猖獗的食人魔和成群的兽人到高大的巨人和可怕的巨龙。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Sense|Ranger (Resourceful)|TRR|Hunter|TRR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vicious Tactics|Ranger (Resourceful)|TRR|Hunter|TRR|3"
+				}
+			]
+		},
+		{
+			"name": "Hunter's Sense",
+			"entries": [
+				"在3级时，你获得了分析生物并辨别如何最好地伤害它的能力。作为一个行动，在你60英尺范围内选择一个你能看到的生物。你会立即了解该生物是否有任何伤害免疫、抗性或脆弱性，以及它们是什么。如果该生物是隐藏在占卜魔法之外的，你会感觉到它没有伤害免疫、抗性或弱点。",
+				"你可以使用这个功能的次数等于你的智慧修正值（最少一次）。当你完成一个长时间的休息时，你会恢复所有已使用的功能。"
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Vicious Tactics",
+			"entries": [
+				"同样在3级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Colossus Slayer",
+							"entries": [
+								"你的坚韧可以消磨掉最强大的敌人。每回合一次，当你用武器攻击击中一个生物时，如果该生物低于其最大命中率，就会受到额外的1d8伤害。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Overdoser",
+							"entries": [
+								"你对毒药并不陌生。你可以在每个短暂的休息时间内喝下最多两杯愈合之水而不失去其效力。此外，当你用攻击或调制物造成的毒物或酸液伤害的骰子掷出1或2时，你可以重新掷骰子，并且必须使用新的骰子。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Horde Breaker",
+							"entries": [
+								"在你的每个回合中，当你进行一次武器攻击时，你可以用相同的武器对在原目标5英尺范围内且在你的武器范围内的不同生物再次进行攻击。"
+							]
+						}
+					]
+				}
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Defensive Tactics",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Multiattack Defense",
+							"entries": [
+								"当一个生物用攻击击中你时，你会在剩下的回合中对该生物随后的所有攻击获得一个+4的攻击力奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Poison Tolerance",
+							"entries": [
+								"你不能再被非魔法手段所毒害，并获得对毒害的抵抗。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hunter's Defense",
+							"entries": [
+								"当你的 \"标记猎物 \"的目标迫使你做一个蓄力动作或能力检查来逃脱它的抓捕时，在你的卷轴上加1D6。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Multiattack",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Volley",
+							"entries": [
+								"你可以用你的行动对你的武器范围内你能看到的10英尺范围内的任何数量的生物进行一次远程攻击。你必须为每个目标准备弹药，就像平时一样，而且你为每个目标进行单独的攻击卷。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Whirlwind Attack",
+							"entries": [
+								"你可以用你的行动对你周围5英尺内的任何数量的生物进行近身攻击，对每个目标进行单独的攻击卷。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，当你受到一个允许你做出灵巧救赎的效果，只受到一半的伤害时，如果你救赎成功，你就不会受到伤害，如果你失败，则只受到一半的伤害。"
+			]
+		},
+		{
+			"name": "Reflexive",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Hunter",
+			"subclassSource": "TRR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你获得你所选择的以下特征之一。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Uncanny Dodge",
+							"entries": [
+								"当一个你能看到的攻击者用攻击击中你时，你可以用你的反应使攻击对你的伤害减半。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Assault Breaker",
+							"entries": [
+								"当一个敌对的生物用近战攻击错过你时，你可以用你的反应来改变它的方向，并迫使该生物对你选择的另一个生物（除其自身外）重复同样的攻击。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Hunter's Counter",
+							"entries": [
+								"如果你的 \"标记猎物 \"的目标迫使你进行蓄力，如果猎物在范围内，你可以用你的反应对它进行一次武器攻击。你在进行蓄力之前立即进行这次攻击。如果攻击命中，你的蓄力会自动"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Harvest Conclave",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 3,
+			"entries": [
+				"其他游骑兵则喜欢让化学处理冒险的困难。丰收教会的游骑兵倾向于发展对自然世界的天生理解，并会用炼金术补充他们的攻击，以削弱他们的敌人并保护他们的盟友。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Concoctions|Ranger (Resourceful)|TRR|Harvest|TRR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiences|Ranger (Resourceful)|TRR|Harvest|TRR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Thrown Concoctions|Ranger (Resourceful)|TRR|Harvest|TRR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mixologist|Ranger (Resourceful)|TRR|Harvest|TRR|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Concoctions",
+			"entries": [
+				"你在第5级和第13级的时候会额外学习一个炼金术的配方。"
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Bonus Proficiences",
+			"entries": [
+				"当你在3级选择这个协约时，你获得对酿酒师用品或厨师用具的熟练度。"
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Thrown Concoctions",
+			"entries": [
+				"在3级的时候，你开始创造可以通过皮肤吸收的药剂。当你通常会对一个盟友使用水壶或小瓶时，你可以选择将它作为一个动作投掷到他们身上，最远可达30英尺。容器一经撞击就会破碎，而该生物也会像往常一样获得炼金术的好处。被投掷的调和剂影响的生物只能获得一份的效果。如果有剩余的份量可供多次使用，它们会在撞击后消失。"
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Mixologist",
+			"entries": [
+				"同样在3级时，每当你用酒壶攻击你的标记猎物目标时，你会将标记的额外伤害加入酒壶的伤害中。如果烧瓶通常不造成伤害，那么标记的伤害就被认为是砍伤，并在凝结剂的影响之前被应用。"
+			],
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "One Fluid Motion",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，如果你在你的回合中使用吃水术作为行动，你可以作为一个额外的行动进行一次武器攻击。"
+			]
+		},
+		{
+			"name": "Recycle",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"到了11级，你对配方的熟悉程度让你可以迅速改变你现有药剂的效果。作为一个额外的动作，你可以从你的已知配方列表中把你已经制成的调和物变成另一种。",
+				"你可以使用这个能力的次数与你的智慧修饰值相等（最少为1），然后需要完成一个长时间的休息才能再次使用。"
+			]
+		},
+		{
+			"name": "Quick Mix",
+			"source": "TRR",
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR",
+			"subclassShortName": "Harvest",
+			"subclassSource": "TRR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，当你掷出主动权并没有剩余的炼金术时，你可以匆忙地从你已知的配方中拼凑出材料来创造两个炼金术。如果你在最后一次长时休息后已经制作了最大数量的混合物，那么你可以创造一个。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Beast Conclave",
+			"source": "TRR",
+			"shortName": "Beast",
+			"subclassFeatures": [
+				"Beast Conclave|Ranger (Resourceful)|TRR|Beast|TRR|3",
+				"Pack Sharing|Ranger (Resourceful)|TRR|Beast|TRR|5",
+				"Beast's Resolve|Ranger (Resourceful)|TRR|Beast|TRR|7",
+				"Storm of Claws and Fangs|Ranger (Resourceful)|TRR|Beast|TRR|7",
+				"Coordinated Attack|Ranger (Resourceful)|TRR|Beast|TRR|11",
+				"Watchful Eye|Ranger (Resourceful)|TRR|Beast|TRR|15",
+				"Selfless Loyalty|Ranger (Resourceful)|TRR|Beast|TRR|15"
+			],
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR"
+		},
+		{
+			"name": "Hunter Conclave",
+			"shortName": "Hunter",
+			"source": "TRR",
+			"subclassFeatures": [
+				"Hunter Conclave|Ranger (Resourceful)|TRR|Hunter|TRR|3",
+				"Extra Attack|Ranger (Resourceful)|TRR|Hunter|TRR|5",
+				"Defensive Tactics|Ranger (Resourceful)|TRR|Hunter|TRR|7",
+				"Multiattack|Ranger (Resourceful)|TRR|Hunter|TRR|11",
+				"Evasion|Ranger (Resourceful)|TRR|Hunter|TRR|11",
+				"Reflexive|Ranger (Resourceful)|TRR|Hunter|TRR|15"
+			],
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR"
+		},
+		{
+			"name": "Harvest Conclave",
+			"shortName": "Harvest",
+			"source": "TRR",
+			"subclassFeatures": [
+				"Harvest Conclave|Ranger (Resourceful)|TRR|Harvest|TRR|3",
+				"Extra Attack|Ranger (Resourceful)|TRR|Harvest|TRR|5",
+				"One Fluid Motion|Ranger (Resourceful)|TRR|Harvest|TRR|7",
+				"Recycle|Ranger (Resourceful)|TRR|Harvest|TRR|11",
+				"Quick Mix|Ranger (Resourceful)|TRR|Harvest|TRR|15"
+			],
+			"className": "Ranger (Resourceful)",
+			"classSource": "TRR"
+		}
+	]
+}

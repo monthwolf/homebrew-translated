@@ -1,0 +1,428 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "GiddyGoblinWoodII",
+				"abbreviation": "GBLII",
+				"full": "Goblin Wood II",
+				"authors": [
+					"TheGiddyLimit"
+				],
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1654352423,
+		"dateLastModified": 1661723687,
+		"_dateLastModifiedHash": "fb9540bc4a"
+	},
+	"background": [
+		{
+			"name": "Grot",
+			"source": "GiddyGoblinWoodII",
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"toolProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "任意选择两个"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "任意选择两个"
+						}
+					]
+				},
+				{
+					"name": "Feature: Snivelling Grot",
+					"type": "entries",
+					"entries": [
+						"你并不特别。"
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			],
+			"foundryImg": "icons/consumables/mushrooms/mushroom-spotted-red.webp"
+		}
+	],
+	"subrace": [
+		{
+			"name": "Stumpy",
+			"source": "GiddyGoblinWoodII",
+			"raceName": "Goblin",
+			"raceSource": "MPMM",
+			"lineage": null,
+			"ability": [
+				{
+					"str": 2,
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"goblin": true
+				}
+			],
+			"traitTags": [
+				"Natural Armor",
+				"Powerful Build"
+			],
+			"entries": [
+				{
+					"name": "Languages",
+					"entries": [
+						"你可以说哥布林语。如果你的起始智力分数（由你的基础智力加上你的种族奖励决定）是13或更高，你也可以读写哥布林语。"
+					],
+					"data": {
+						"overwrite": "Languages"
+					},
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Furious Hammering",
+					"entries": [
+						"当你使用 \"渺小之怒 \"时，生物必须在力量救赎上获得成功，否则会被击倒（%0%）。蓄力的DC等于8+你的熟练度加成+你的力量修正值。"
+					]
+				},
+				{
+					"name": "Thick Hide",
+					"entries": [
+						"你获得一个+1的装甲等级奖励。"
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"在确定你的运载能力和你能推动、拖动或举起的重量时，你算大一码。"
+					]
+				}
+			],
+			"overwrite": {
+				"ability": true,
+				"languageProficiencies": true
+			},
+			"foundryImg": "icons/sundries/flags/banner-flag-skull-red.webp"
+		},
+		{
+			"name": "Skinny",
+			"source": "GiddyGoblinWoodII",
+			"raceName": "Goblin",
+			"raceSource": "MPMM",
+			"lineage": null,
+			"ability": [
+				{
+					"dex": 2,
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"goblin": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Languages",
+					"entries": [
+						"你可以说哥布林语。如果你的起始智力分数（由你的基础智力加上你的种族奖励决定）是13或更高，你也可以读写哥布林语。"
+					],
+					"data": {
+						"overwrite": "Languages"
+					},
+					"type": "entries"
+				},
+				{
+					"name": "Frenetic",
+					"entries": [
+						"你可以在不耗费额外行动的情况下使用你的敏捷逃脱。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Skittering",
+					"entries": [
+						"你的爬行速度等同于你的步行速度。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Surprise Attack",
+					"entries": [
+						"如果你用攻击卷击中一个生物，如果该生物在当前战斗中还没有进行回合，则会受到额外的（%0%）伤害。"
+					],
+					"type": "entries"
+				}
+			],
+			"overwrite": {
+				"ability": true,
+				"languageProficiencies": true
+			}
+		},
+		{
+			"name": "Shifty",
+			"source": "GiddyGoblinWoodII",
+			"raceName": "Goblin",
+			"raceSource": "MPMM",
+			"lineage": null,
+			"ability": [
+				{
+					"wis": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"cha"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"goblin": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Languages",
+					"entries": [
+						"你可以说哥布林语。如果你的起始智力分数（由你的基础智力加上你的种族奖励决定）是13或更高，你也可以读写哥布林语。"
+					],
+					"data": {
+						"overwrite": "Languages"
+					},
+					"type": "entries"
+				},
+				{
+					"name": "You First",
+					"entries": [
+						"作为奖励动作，你让30英尺内你能看到的一个盟友在你下一回合开始前所做的下一次攻击卷中获得优势。如果该盟友的攻击命中，你在所有的攻击卷上都获得优势，直到你下一回合结束。如果该盟友的攻击没有命中，你在所有攻击卷上都处于劣势，直到你的下一回合结束。",
+						"你可以使用这个功能的次数与你的熟练度加成相等。当你完成一个长时间的休息时，你会重新获得任何已消耗的使用次数。"
+					],
+					"data": {
+						"overwrite": "Fury of the Small"
+					},
+					"type": "entries"
+				},
+				{
+					"name": "Sixth Sense",
+					"entries": [
+						"在你有意识的情况下，你不能被惊讶。此外，你还精通（%0%）的技能。"
+					],
+					"type": "entries"
+				}
+			],
+			"overwrite": {
+				"ability": true,
+				"languageProficiencies": true
+			}
+		},
+		{
+			"name": "Ugly",
+			"source": "GiddyGoblinWoodII",
+			"raceName": "Goblin",
+			"raceSource": "MPMM",
+			"lineage": null,
+			"ability": [
+				{
+					"cha": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"goblin": true
+				}
+			],
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Languages",
+					"entries": [
+						"你可以说哥布林语。如果你的起始智力分数（由你的基础智力加上你的种族奖励决定）是13或更高，你也可以读写哥布林语。"
+					],
+					"data": {
+						"overwrite": "Languages"
+					},
+					"type": "entries"
+				},
+				{
+					"name": "Barbed Tongue",
+					"entries": [
+						"当你身边30英尺内能听到你的盟友进行攻击卷、能力检定或蓄力投掷时，你可以用你的反应对他们造成（%0%）精神伤害。然后该盟友在他们的卷轴结果上加上双倍的量。",
+						"你可以在盟友掷出他们的（%0%）之后，但在结果确定之前使用这个功能。",
+						"你可以使用这个功能的次数与你的熟练度加成相等。当你完成一个长时间的休息时，你会重新获得任何已消耗的使用次数。"
+					],
+					"data": {
+						"overwrite": "Fury of the Small"
+					},
+					"type": "entries"
+				},
+				{
+					"name": "Menacing",
+					"entries": [
+						"你对{@skill Intimidation}的技能很熟练。此外，当你以劣势进行魅力检查时，你的检查结果就像你既没有劣势也没有优势一样。"
+					],
+					"type": "entries"
+				}
+			],
+			"overwrite": {
+				"ability": true,
+				"languageProficiencies": true
+			}
+		},
+		{
+			"name": "Touched",
+			"source": "GiddyGoblinWoodII",
+			"raceName": "Goblin",
+			"raceSource": "MPMM",
+			"lineage": null,
+			"ability": [
+				{
+					"int": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"cha"
+						],
+						"amount": -1
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"goblin": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Languages",
+					"entries": [
+						"你可以说哥布林语。如果你的起始智力分数（由你的基础智力加上你的种族奖励决定）是13或更高，你也可以读写哥布林语。"
+					],
+					"data": {
+						"overwrite": "Languages"
+					},
+					"type": "entries"
+				},
+				{
+					"name": "Warped Magiks",
+					"entries": [
+						"当你施展影响一个区域的法术时，你可以将该区域的尺寸翻倍，只要在翻倍前没有超过100英尺的尺寸。例如，一个20英尺半径的球体将被加倍为40英尺半径的球体；一条30英尺长、5英尺宽的线将被加倍为60英尺长、10英尺宽的线。",
+						"你可以使用这个功能的次数与你的熟练度加成相等。当你完成一个长时间的休息时，你会重新获得任何已消耗的使用次数。"
+					],
+					"data": {
+						"overwrite": "Fury of the Small"
+					},
+					"type": "entries"
+				},
+				{
+					"name": "Twisted Form",
+					"entries": [
+						"另一个世界的触碰让你的身体发生了改变，或者以某种方式被毁容（例如，你可能有奇怪的颜色和图案的皮肤，或者一对鹿角，或者一条分叉的尾巴）。你在与其他妖精互动时，在魅力检查上有劣势，他们不信任你，并躲避你。"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Wyrdo",
+					"entries": [
+						"不管是什么触动了你，都在你小小的心灵上留下了深深的印记。你{@i know}的事情；那些没有自尊心的妖精都没有资格知道的事情。当你的智力检查（（%%1%）、（%%2%）或（%%3%））成功时，DM可以选择根据你在另一个世界的直觉和潜意识的印象来授予你额外的信息。"
+					],
+					"type": "entries"
+				}
+			],
+			"overwrite": {
+				"ability": true,
+				"languageProficiencies": true
+			}
+		}
+	],
+	"foundryRaceFeature": [
+		{
+			"name": "Thick Hide",
+			"source": "GiddyGoblinWoodII",
+			"raceName": "Goblin (Stumpy)",
+			"raceSource": "GiddyGoblinWoodII",
+			"effects": [
+				{
+					"name": "Thick Hide",
+					"changes": [
+						{
+							"key": "data.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Spoiled Potion of Healing",
+			"source": "GiddyGoblinWoodII",
+			"type": "P",
+			"tier": "minor",
+			"rarity": "common",
+			"weight": 0.5,
+			"entries": [
+				"当你喝下这种药水时，请掷出（%0%）。如果你在两个d4上都掷出相同的数字，则不会发生任何事情。否则，你会恢复与掷骰子结果相等的命中率+2。搅动时，淤泥状的颗粒在药水浑浊的红褐色液体中旋转。"
+			]
+		}
+	]
+}

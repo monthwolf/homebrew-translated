@@ -1,0 +1,298 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMHumanoidLegendary",
+				"abbreviation": "COMHumanoidLegendary",
+				"full": "Community Humanoid Legendary Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2022.04.27",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1608058117,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "1c3d28074b"
+	},
+	"monster": [
+		{
+			"name": "Pelior Ashellon",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"cleric",
+					"priest"
+				]
+			},
+			"source": "COMHumanoidLegendary",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 51",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 12,
+			"wis": 22,
+			"cha": 12,
+			"passive": 22,
+			"cr": "16",
+			"shortName": "Pelior Ashellon",
+			"languages": [
+				"Celestial",
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"CE",
+				"C"
+			],
+			"save": {
+				"wis": "+12",
+				"cha": "+7"
+			},
+			"skill": {
+				"athletics": "+9",
+				"insight": "+12",
+				"perception": "+12",
+				"religion": "+7"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"如果Pelior的拯救动作失败，她可以选择成功。"
+					]
+				},
+				{
+					"name": "Guided Strike {@recharge 5}",
+					"entries": [
+						"当Pelior进行攻击卷时，她可以选择在结果上增加+10。"
+					]
+				},
+				{
+					"name": "War Caster",
+					"entries": [
+						"Pelior在保持注意力的体质判断上有优势，可以作为机会攻击施放时间为一个动作的单目标法术，即使手中拿着武器和盾牌也能施放法术。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Pelior是一个18级的施法者。她的法术能力是智慧（法术救赎（%0%），使用法术攻击命中率+12）。她准备了以下的牧师法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell light}",
+								"{@spell mending}",
+								"{@spell sacred flame}",
+								"{@spell spare the dying}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell divine favor}",
+								"{@spell guiding bolt}",
+								"{@spell healing word}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell magic weapon}",
+								"{@spell prayer of healing}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell crusader's mantle}",
+								"{@spell dispel magic}",
+								"{@spell magic circle}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell guardian of faith}",
+								"{@spell stoneskin}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell flame strike}",
+								"{@spell hold monster}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell heal}",
+								"{@spell planar ally}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell conjure celestial}",
+								"{@spell divine word}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell holy aura}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell true resurrection}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O",
+				"R"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"佩利奥用她的战锤进行了两次攻击。"
+					]
+				},
+				{
+					"name": "Warhammer +2",
+					"entries": [
+						"{@atk mw} {@hit 11}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d8 + 5})重击伤害，加上9 ({@damage 2d8})辐射伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"佩里奥可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作选项，并且只能在另一个生物的回合结束时使用。佩里奥在她的回合开始时恢复已使用的传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"佩利奥以她的速度前进。"
+					]
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"佩利奥施展了一个咒语。"
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Pelior用她的战锤或她的（%0%）进行攻击，如果适用的话。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://i.imgur.com/d5sJ6r3.png",
+			"fluff": {
+				"entries": [
+					"{@link Pelior Ashellon|https://homebrewery.naturalcrit.com/share/BJ06j_vYx} from {@link High Level Cleric NPC Statblock|https://www.reddit.com/r/UnearthedArcana/comments/5v08nw/high_level_cleric_npc_statblock/}",
+					"{@b Champion of Cerys}",
+					"Pelior Ashellon是天使女王Cerys最多产的教士。佩利奥一生都在做维纶的守望者，在她的职业生涯中承接了许多合同，在她的力量和对她的神灵的奉献中不断成长。佩利奥现在已经退休，被隔离在维尔福特北部岛屿的贝鲁斯山顶上她自己建造的一个圣地里。",
+					"佩利奥是一位灰头土脸的退伍军人，虽然她努力以同情心、尊严和优雅的方式行事，但她并不害怕为捍卫她的光芒的荣誉而战斗，也不害怕抵御任何会对她造成伤害的人的冲击。",
+					"{@b Battle Routine}",
+					"佩利奥会以施放灵力武器（6级）和灵力守护者开启战斗，依靠她的（%0%）特技和传奇抗性来确保后者尽可能长时间地保持下去。她会利用传说中的行动，不断地把她积极的战斗套路推到离敌人越来越近的地方，尽可能地用她的战锤和精神武器打击他们。作为一个牧师本身，她会知道如何集中击倒任何有治疗能力的敌人，而作为一个退休的维纶观察者，她很了解如何优先考虑一个正在合作的均衡的冒险队伍。"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/TNu0ggf.jpg"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"+2 warhammer|dmg"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		}
+	]
+}

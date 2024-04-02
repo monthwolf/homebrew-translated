@@ -1,0 +1,203 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CircleOfKudzu",
+				"abbreviation": "CoK",
+				"full": "Circle of Kudzu",
+				"url": "https://homebrewery.naturalcrit.com/share/WPfQVenhRVav",
+				"authors": [
+					"Korvinagor"
+				],
+				"convertedBy": [
+					"Korvinagor"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1686325885,
+		"dateLastModified": 1690140488,
+		"_dateLastModifiedHash": "761e345458"
+	},
+	"subclass": [
+		{
+			"name": "Circle of Kudzu",
+			"source": "CircleOfKudzu",
+			"shortName": "Kudzu",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Circle of Kudzu|Druid||Kudzu|CircleOfKudzu|2",
+				"Lash of a Thousand Thorns|Druid||Kudzu|CircleOfKudzu|6",
+				"Endless Entanglement|Druid||Kudzu|CircleOfKudzu|10",
+				"Stride of Boundless Ivy|Druid||Kudzu|CircleOfKudzu|14"
+			],
+			"subclassSpells": [
+				"Thorn Whip",
+				"Entangle",
+				"Grasping Vine"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of Kudzu",
+			"source": "CircleOfKudzu",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Kudzu",
+			"subclassSource": "CircleOfKudzu",
+			"level": 2,
+			"entries": [
+				"葛藤之环德鲁伊崇拜\"杂草\"，比如他们的名字来源，欣赏它们在逆境中迅速传播和小巧但坚韧的身姿。他们的魔法反映了这些特质，能够迅速穿越地形并阻碍甚至是最强大的敌人。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "One with the Weeds|Druid|PHB|Kudzu|CircleOfKudzu|2"
+				}
+			]
+		},
+		{
+			"name": "One with the Weeds",
+			"source": "CircleOfKudzu",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Kudzu",
+			"subclassSource": "CircleOfKudzu",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of Kudzu feature}",
+				"你对小型、缠绕植物的亲和力使你能够轻松驾驭它们，为你带来以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你学会了{@spell thorn whip}战斗法术，并且可以在不使用语言或物质组件的情况下施展它。",
+						"你的{@spell thorn whip}可以瞄准物体，并以与{@spell mage hand}cantrip相同的方式与其互动。",
+						"你已经准备好了{@spell entangle}法术，并可以在施放时消耗一个野性变身使用次数来维持它，而不需要{@condition concentration}。如果你重新施放或解除该法术，它会提前结束（无需行动）。",
+						"你可以穿过由非魔法植物或你自己的法术效果造成的任何移动障碍，而不会被它们减速。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Lash of a Thousand Thorns",
+			"source": "CircleOfKudzu",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Kudzu",
+			"subclassSource": "CircleOfKudzu",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of Kudzu feature}",
+				"你学会了以各种独特的方式操纵你的{@spell thorn whip}，为它提供以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以将它的施法时间改为一个奖励动作。",
+						"对愿意目标的攻击投掷自动命中。",
+						"你可以选择不对目标造成伤害。",
+						"你可以选择将生物移动多达10英尺，沿着任意水平方向，而不是拉动它。"
+					]
+				},
+				"此外，每回合一次，当你用{@spell thorn whip}命中目标时，你可以造成以下效果之一：",
+				{
+					"type": "entries",
+					"name": "Snag",
+					"entries": [
+						"如果目标是一只生物，你可以使其速度减少10英尺，直到你的下一个回合开始，并且它必须成功进行一次敏捷豁免才能避免摔倒{@condition prone}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Constrict",
+					"entries": [
+						"如果目标是一只生物，它会被长及法术射程的藤蔓（逃脱 DC = 你的法术豁免 DC）缠住，占据你施法的手，并在释放时消失。直到抓取结束，你可以使用你的动作或奖励动作再次自动对其造成 {@spell thorn whip} 的效果。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ingrain",
+					"entries": [
+						"你可以直接向目标拉拽自己，最多移动你的距离。这个移动不会引发机会攻击。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Uproot",
+					"entries": [
+						"如果目标是一只生物，你需要用你的法术属性进行一次能力检定，与该生物的力量检定进行对抗。如果你成功，你可以将生物朝你拉拽，最多拉拽到你与它的距离之内。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Endless Entanglement",
+			"source": "CircleOfKudzu",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Kudzu",
+			"subclassSource": "CircleOfKudzu",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of Kudzu feature}",
+				"有足够的决心，即使是最被忽视的植物也能倒下最高的树木。如果你以更高等级施放{@spell entangle}，你可以以以下方式改变它：",
+				{
+					"type": "entries",
+					"name": "2nd level or higher",
+					"entries": [
+						"当一个生物在一个回合内第一次进入受影响区域或者在那里开始他们的回合时，必须进行一次力量豁免检定，就好像他们在施法时就在那个区域内一样，否则将遭受相同的效果。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "3rd level or higher",
+					"entries": [
+						"你可以将这个法术的持续时间增加到1小时，而不是1分钟。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "4th level or higher",
+					"entries": [
+						"在受到该法术束缚或未能通过豁免检定的生物，也会受到{@dice 3d6} 钝击伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "5th level or higher",
+					"entries": [
+						"你可以将法术的范围改为一个40英尺的立方体，而不是一个20英尺的正方形。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Stride of Boundless Ivy",
+			"source": "CircleOfKudzu",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Kudzu",
+			"subclassSource": "CircleOfKudzu",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of Kudzu feature}",
+				"你对小型芽和杂草的精通使你能够以无与伦比的娴熟召唤它们。",
+				"你已经准备好了{@spell grasping vine}法术，并且可以在不消耗法术位的情况下施放它。一旦你以这种方式施放了{@spell grasping vine}，你就不能再这样做，直到你完成一次短休或长休。",
+				"此外，每当你施放这个法术时，你可以按照以下方式修改其行为：",
+				{
+					"type": "list",
+					"items": [
+						"你可以在没有{@condition concentration}的情况下维持这个法术。如果你再次施放{@spell grasping vine}，它会提前结束。",
+						"你可以在你的回合内控制藤蔓，而无需使用一个额外动作。",
+						"不再被向藤蔓拉动20英尺，你可以让法术将目标生物移动到离其30英尺范围内的任意位置。",
+						"生物可以选择放弃对法术的豁免检定。",
+						"你可以使被藤蔓移动的任何生物摔倒 {@condition prone}。"
+					]
+				}
+			]
+		}
+	]
+}
