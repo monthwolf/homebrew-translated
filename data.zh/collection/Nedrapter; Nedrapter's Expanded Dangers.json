@@ -1,0 +1,3569 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "NED",
+				"abbreviation": "NED",
+				"full": "Nedrapter's Expanded Dangers",
+				"authors": [
+					"Nedrapter"
+				],
+				"convertedBy": [
+					"Lxran#2292"
+				],
+				"version": "2023-01-17",
+				"color": "8e08af",
+				"url": "https://docs.google.com/document/d/1APSlGxuB6ph73c5sKT20ZH0C9MrMEewL6Fq2sHK2Uuo/edit",
+				"dateReleased": "2023-01-17"
+			}
+		],
+		"dependencies": {
+			"race": [
+				"MPMM"
+			]
+		},
+		"optionalFeatureTypes": {
+			"TL:CotN": "The Lord; Champion of the Night"
+		},
+		"status": "ready",
+		"dateAdded": 1673971471,
+		"dateLastModified": 1676160163,
+		"_dateLastModifiedHash": "6761ce4c73"
+	},
+	"feat": [
+		{
+			"name": "Attuned to Earth",
+			"source": "NED",
+			"page": 1,
+			"foundryEffects": [
+				{
+					"name": "Attuned To Earth Tremorsense",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.senses.tremorsense",
+							"mode": "UPGRADE",
+							"value": "60"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你获得60尺的{@sense tremorsense}。 (地触感对需要你看见生物的情况不能替代视觉。)",
+						{
+							"type": "item",
+							"name": "Walls Have Ears",
+							"entries": [
+								"使用你的动作，你触摸一面相邻的墙壁。你能感受到半径150英尺内每个在距离墙壁10英尺内交谈的生物的振动。墙壁之间必须有物理路径连接。你可以在每次长休后使用此特性的次数等同于你的熟练加值。"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/stone/paver-brick-blue.webp"
+		},
+		{
+			"name": "Divided Mind",
+			"source": "NED",
+			"page": 1,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"con": 15,
+							"int": 15
+						}
+					]
+				},
+				{
+					"ability": [
+						{
+							"con": 15,
+							"wis": 15
+						}
+					]
+				},
+				{
+					"ability": [
+						{
+							"con": 15,
+							"cha": 15
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"在与你的熟练加值相等的回合数内，你可以集中精力维持两个法术，而不是一个。持续时间结束后，先施放的那个法术会失效。",
+						"在专注于两个法术时，保持专注的豁免 DC 为 10 + 两个法术使用的法术位等级之和，或者受到伤害的一半，以较高者为准。"
+					]
+				}
+			],
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"name": "Smith on the Go",
+			"source": "NED",
+			"page": 2,
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "熟练度 {@item smith's tools|phb}",
+						"entrySummary": "Smith's tools prof."
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"在完成一次长休后，你可以调整一把近战武器，使其伤害增加1点。每把武器只能进行一次修改。",
+						"此外，选择与你的熟练加值相等的一定数量的盔甲，你可以调整盔甲以获得临时保护。每个调整过的盔甲都会给穿戴者提供临时生命值，数值取决于盔甲的类型：轻型：等同于穿戴者的最高职业等级。中型：穿戴者的最高职业等级的两倍。重型：穿戴者的最高职业等级的三倍。每个盔甲只能被调整一次。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/trades/smithing-tongs-metal-red.webp"
+		},
+		{
+			"name": "Survivor",
+			"source": "NED",
+			"page": 2,
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"skillProficiencies": [
+				{
+					"survival": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你在{@skill Survival}上获得熟练。",
+						"第一次面对一只生物时，你可以进行一次{@skill Survival}检定，以发现它最致命的非法术特征。",
+						"在战斗的第一轮中，你对所有伤害具有抗性。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/24 (3).webp"
+		},
+		{
+			"name": "Seasoned Weapon Master",
+			"source": "NED",
+			"page": 2,
+			"prerequisite": [
+				{
+					"feat": [
+						"Weapon Master|PHB"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Chosen Weapon Damage Increase (Melee)",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					]
+				},
+				{
+					"name": "Chosen Weapon Damage Increase (Ranged)",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.rwak.damage",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"所选择武器造成的伤害增加2点。",
+						"每回合一次，当你持有其中一种武器并受到近战攻击时，你可以使用你的反应对攻击者进行一次攻击。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/20 (3).webp"
+		},
+		{
+			"name": "Arcane Prodigy",
+			"source": "NED",
+			"page": 2,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Wizard",
+							"source": "PHB",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"int": 13
+						},
+						{
+							"wis": 13
+						},
+						{
+							"cha": 13
+						}
+					]
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Warlock",
+							"source": "PHB",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"int": 13
+						},
+						{
+							"wis": 13
+						},
+						{
+							"cha": 13
+						}
+					]
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Bard",
+							"source": "PHB",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"int": 13
+						},
+						{
+							"wis": 13
+						},
+						{
+							"cha": 13
+						}
+					]
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"int": 13
+						},
+						{
+							"wis": 13
+						},
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"每当你为一个法术投掷伤害骰时，你可以重新投掷等于你法术施法调整值的数量的伤害骰。你必须保留新的结果。",
+						"每当你学习一个新法术时，投掷一个{@dice d20}。在投掷20时，你可以学习一个符合触发投掷的法术相同要求的额外法术。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/33.webp"
+		},
+		{
+			"name": "Specialist",
+			"source": "NED",
+			"page": 2,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"expertise": [
+				{
+					"anyProficientSkill": 2
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你可以用已经熟练掌握的两项技能来取代一个技能熟练加强。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/11 (2).webp"
+		},
+		{
+			"name": "Tactician",
+			"source": "NED",
+			"page": 2,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Tactician Damage Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "+5"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"选择与你熟练加值相等数量的生物，在先攻骰上获得优势。",
+						"当你看到30英尺内的另一个生物进行机会攻击时，你可以使用你的反应为其提供优势，并额外造成5点伤害。如果攻击未命中，你将恢复你的反应。（Opportunity Attack）"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/19 (3).webp"
+		},
+		{
+			"name": "Dwarven Champion",
+			"source": "NED",
+			"page": 3,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dwarf"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true,
+					"survival": true
+				}
+			],
+			"expertise": [
+				{
+					"history": true,
+					"survival": true
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Dwarven Champion Extra Damage",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "@abilities.str.mod + @abilities.con.mod"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你在{@skill History}和{@skill Survival}方面获得熟练。如果你已经熟练，那么你将获得专家水平。",
+						"每回合一次，当你用钝击近战武器命中时，你可以造成额外伤害，数值等同于你的力量 + 体质调整值。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/13 (2).webp"
+		},
+		{
+			"name": "Martyr",
+			"source": "NED",
+			"page": 3,
+			"foundryEffects": [
+				{
+					"name": "Martyr Saving Throw Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.abilities.save",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					]
+				},
+				{
+					"name": "Martyr Speed Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "10"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你的生命值低于最大生命值的50%时，距离你30英尺内的盟友在他们的豁免投掷上获得+2的加值。(HP)",
+						"当你的生命值低于最大生命值的30%时，距离你30英尺内的盟友的速度增加10英尺。",
+						"当你的最大生命值的10%以下时，距离你30英尺内的盟友可以将{@action Dash}或{@action Dodge}动作作为奖励动作。",
+						"当你的生命值低于或等于0时，距离你30英尺内的盟友可以作为一次反应移动他们速度的一半。",
+						"当你死亡时，每个在30英尺范围内的盟友受到{@spell bless}法术的影响，持续{@dice 3d10}天。如果你复活，效果结束。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/26 (3).webp"
+		},
+		{
+			"name": "Therapist",
+			"source": "NED",
+			"page": 3,
+			"ability": [
+				{
+					"cha": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你与一个生物连续交谈一小时或更长时间时，你赋予他们以下效果：",
+						{
+							"type": "list",
+							"items": [
+								"临时生命值等于你最高职业等级 + 你的魅力修正值。",
+								"在对{@condition frightened|fear}效果方面具有优势，直到第二天。",
+								"在每次战斗的第一轮中对所有攻击获得优势，直到第二天。",
+								"在他们的第一次生死豁命豁免检定中获得优势，直到第二天。",
+								"在第一次先攻检定中获得优势，直到第二天。"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/Artboard1.webp"
+		},
+		{
+			"name": "Quick Footed",
+			"source": "NED",
+			"page": 3,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Quick Footed",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.init.bonus",
+							"mode": "ADD",
+							"value": "+5"
+						},
+						{
+							"key": "data.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "5"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你在先攻检定上获得+5的加值。",
+						"从俯卧姿势站起来会消耗你5英尺的移动距离。",
+						"你的步行速度增加了5。(Walking Speed)"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/9.webp"
+		},
+		{
+			"name": "Legionnaire",
+			"source": "NED",
+			"page": 3,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你的近战武器攻击对每个与你相邻的盟友，伤害增加 +1。",
+						"你可以使用10尺的移动来与一个愿意的、相邻的盟友交换位置。这个移动不会引发你们两个人的机会攻击。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/43 (3).webp"
+		},
+		{
+			"name": "Flawless Focus",
+			"source": "NED",
+			"page": 3,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你受到的伤害小于你体质调整值的两倍时，不会打断你的集中力。(Constitution modifier)"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/42.webp"
+		},
+		{
+			"name": "Toxic",
+			"source": "NED",
+			"page": 4,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4
+					},
+					"otherSummary": {
+						"entry": "魅力分数为8或更低 (Charisma)",
+						"entrySummary": "Cha 8-"
+					}
+				},
+				{
+					"level": {
+						"level": 4
+					},
+					"ability": [
+						{
+							"cha": 16
+						}
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Toxic Attack Debuff",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.attack",
+							"mode": "ADD",
+							"value": "-3"
+						},
+						{
+							"key": "data.bonuses.rwak.attack",
+							"mode": "ADD",
+							"value": "-3"
+						},
+						{
+							"key": "data.bonuses.msak.attack",
+							"mode": "ADD",
+							"value": "-3"
+						},
+						{
+							"key": "data.bonuses.rsak.attack",
+							"mode": "ADD",
+							"value": "-3"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你天生的辞藻让每个人都感到恼火。只要它们的智力高于3且能听懂你说的话，距离你10英尺内的生物在进行攻击检定时会受到-3的惩罚。",
+						"你的恼怒程度已经成为一种嘲弄机制。每当你周围30英尺范围内的盟友被远程攻击或法术瞄准时，你可以使用你的反应将攻击目标转移到自己身上。如果是范围法术，你将成为中心。攻击者必须能看到你并听到你，攻击/法术的限制仍然适用。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/Artboard10.webp"
+		},
+		{
+			"name": "Elemental Surge",
+			"source": "NED",
+			"page": 4,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"每当你施放1级或更高级别的法术，该法术造成酸性、冰冷、火焰、闪电或雷电伤害时，在你周围10英尺的范围内会形成一个相应元素的漩涡光环，直到你的下一个回合开始。进入或在光环内开始他们的回合的敌人，会受到等于所使用法术位等级两倍的该类型元素伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Shield Artist",
+			"source": "NED",
+			"page": 4,
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Shield Artist Self AC Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.ac.value",
+							"mode": "ADD",
+							"value": "+ @abilities.str.mod"
+						}
+					]
+				},
+				{
+					"name": "Shield Artist Adjacent Ally AC Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.ac.value",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你用单手近战武器攻击时，另一只手持盾牌，你可以放弃一半的伤害，并获得一个AC加值，数值等同于你的力量调整值，直到你下一个回合开始。",
+						"在你的回合结束时，如果在该回合内你没有移动，那么与你相邻的盟友在你附近5英尺范围内时，他们的AC获得+2的加值。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/41 (2).webp"
+		},
+		{
+			"name": "Versatile Magus",
+			"source": "NED",
+			"page": 4,
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"作为一个奖励动作，你可以在你的下一个法术中交换伤害类型，如下所示：",
+						{
+							"type": "list",
+							"items": [
+								"光明 <> (Necrotic)死灵",
+								"火 <> 冷 (Fire <> Cold)",
+								"雷电 <> 闪电",
+								"酸 <> 力量 (Force)",
+								"毒 <> 精神(Psychic)"
+							]
+						},
+						"每当你对一个受到易伤伤害类型的生物造成伤害时，你获得临时生命值，数值等同于你最高职业等级。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/41 (2).webp"
+		},
+		{
+			"name": "Spell Aegis",
+			"source": "NED",
+			"page": 4,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当对你施放一个只针对你的非驱散法术时，你可以使用你的反应来进行一个{@skill Arcana}检定。如果{@skill Arcana}检定结果高于法术等级+10，你可以选择要么抵消伤害，要么抵消法术剩余的效果。如果{@skill Arcana}检定结果高于法术等级+14，你可以抵消两者。如果{@skill Arcana}检定结果高于法术等级+20，你可以将法术反弹回施法者身上。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/41 (2).webp"
+		},
+		{
+			"name": "Twist the Blade",
+			"source": "NED",
+			"page": 5,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4
+					},
+					"otherSummary": {
+						"entry": "至少熟练掌握4种刺击武器",
+						"entrySummary": "Prof. w/ 4 piercing weapons"
+					}
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Twist the Blade Piercing Damage Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "+@prof"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"每当你用一把造成刺伤伤害的近战武器击中一个生物时，伤害增加一个等同于你熟练加值的数值。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/41 (2).webp"
+		},
+		{
+			"name": "Unreachable",
+			"source": "NED",
+			"page": 5,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你挥舞一把具有(Reach)属性的武器时，生物在进入你的攻击范围时会引发机会攻击，而不是离开时。",
+						"机会攻击造成2点伤害，每移动5英尺进入你的攻击范围。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/41 (2).webp"
+		},
+		{
+			"name": "Teamplayer",
+			"source": "NED",
+			"page": 5,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你可以将{@action Help}行动作为一个奖励动作，并且射程变为30英尺。如果被协助的角色失败，你可以花费你的反应移动你速度的一半，而不会引发机会攻击。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/18 (3).webp"
+		},
+		{
+			"name": "Big Spender",
+			"source": "NED",
+			"page": 5,
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"persuasion": true,
+					"history": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"每当你在一个定居点内花费一定数量的金币时，你会获得以下好处：",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "1000+ Gold",
+									"entries": [
+										"这位交易者开始记得你了，愿意分享有益的（但不是机密的）信息，向其他交易者推荐你，或者为你预留产品或服务。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "5000+ Gold",
+									"entries": [
+										"你的名字开始在那个定居点的交易者中间变得知名。你开始享受折扣或定制订单。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "10000+ Gold",
+									"entries": [
+										"你已经成为一个知名的富有人士。人们渴望得到你的青睐，更愿意为你做事。你在社会或经济事务上的意见受到重视（除非你因其他原因声誉不佳）。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "25000+ Gold",
+									"entries": [
+										"商贩们会考虑向你借出黄金，而你很容易在定居点购买有价值的房地产。人们非常乐意为你工作或受雇于你。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "100000+ Gold",
+									"entries": [
+										"如果在定居点出现了新的领导机会，你是每位商人和普通市民最受青睐的候选人。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/currency/coins-leather-pouch-stone.webp"
+		},
+		{
+			"name": "Acolyte",
+			"source": "NED",
+			"page": 5,
+			"skillProficiencies": [
+				{
+					"religion": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你在{@skill Religion}上获得熟练。",
+						"选择一个{@5etools deity|deities.html}。你得到了一个证明你信仰的护身符或徽章。同一位神明的信徒们毫无疑问地认为你也是他们中的一员。",
+						"你可以在任何其他{@dice d20}检定中使用一个{@skill Religion}检定。你可以使用这个能力的次数等于你熟练加值的一半（向下取整）。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/Artboard6.webp"
+		},
+		{
+			"name": "Zealot",
+			"source": "NED",
+			"page": 5,
+			"prerequisite": [
+				{
+					"feat": [
+						"Acolyte|NED"
+					]
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Cleric",
+							"source": "PHB",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 1,
+						"class": {
+							"name": "Paladin",
+							"source": "PHB",
+							"visible": true
+						}
+					}
+				},
+				{
+					"otherSummary": {
+						"entry": "神圣子职业 (Divine Subclass)",
+						"entrySummary": "Divine Subclass"
+					}
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"每天你可以使用2级的神圣打击，而无需消耗法术槽（无论你是否是圣骑士）。",
+						"作为一个奖励动作，你获得等同于你{@skill Religion}奖励的生命值。(5次使用，休息后重置)"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/Artboard6.webp"
+		},
+		{
+			"name": "Fanatic",
+			"source": "NED",
+			"page": 6,
+			"prerequisite": [
+				{
+					"feat": [
+						"Zealot|NED"
+					]
+				}
+			],
+			"ability": [
+				{
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你每天可以使用神圣打击的次数等于你的{@skill Religion}奖励。",
+						"当与您的神完全相反信仰的生物看到您时，有{@chance 15|15%}的几率将您视为{@condition frightened}。这种效果持续一天。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/Artboard6.webp"
+		},
+		{
+			"name": "Champion",
+			"source": "NED",
+			"page": 6,
+			"prerequisite": [
+				{
+					"feat": [
+						"Zealot|NED"
+					]
+				}
+			],
+			"foundryEffects": [
+				{
+					"name": "Champion Radiant Damage",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "+3"
+						},
+						{
+							"key": "data.bonuses.rwak.damage",
+							"mode": "ADD",
+							"value": "+3"
+						},
+						{
+							"key": "data.bonuses.msak.damage",
+							"mode": "ADD",
+							"value": "+3"
+						},
+						{
+							"key": "data.bonuses.rsak.damage",
+							"mode": "ADD",
+							"value": "+3"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当伤害将使你的生命值降至0或更低时，进行一次{@skill Religion}检定。在将你的生命值降至1以下之前，你会获得同等数量的临时生命值。",
+						"你的所有攻击造成额外(+3)的辐射伤害。",
+						"对抗你施放的造成辐射伤害的法术的豁免投掷有-5的惩罚。",
+						"在你开始进行长休时，你可以向你的神提出一个问题。在你休息期间，征兆会作为答案出现，或者是一场神秘的梦境。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/Artboard6.webp"
+		},
+		{
+			"name": "Extraordinary",
+			"source": "NED",
+			"page": 6,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"entry": "将你选择的一个能力值提高1点。这个提升可以使你的能力值超过20。",
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"repeatable": true,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"你可以多次选择这个特性。",
+						"每次长休后，你可以重新投掷一个高于20的攻击骰、能力检定或豁免骰（此效果不可叠加）"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/Artboard4.webp"
+		},
+		{
+			"name": "Desperate Caster",
+			"source": "NED",
+			"page": 6,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你没有法术位时，你可以尝试施放一个法术。像平常一样选择法术位的等级（最高为5级），然后掷出一个{@dice d100}，并查阅以下表格。X代表法术的位级。",
+						{
+							"type": "statblock",
+							"tag": "table",
+							"source": "NED",
+							"name": "Desperate Caster",
+							"page": 6
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/air/air-smoke-casting.webp"
+		},
+		{
+			"name": "Master Caster",
+			"source": "NED",
+			"page": 7,
+			"prerequisite": [
+				{
+					"feat": [
+						"Desperate Caster|NED"
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你在{@table Desperate Caster|NED}表上掷骰时，将结果加9。将任何超过100的结果视为100。",
+						"最大法术等级从5级增加到7级。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/39.webp"
+		},
+		{
+			"name": "Eye for Coin",
+			"source": "NED",
+			"page": 7,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"如果你在一个定居点待了{@dice 1d4}天，你可以找到在该地区赚钱的有效方法。",
+						"每天你会在经过的地方找到掉落的硬币。每天结束时，你会找到{@dice 1d12} x 你的等级 的金币。"
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/currency/coins-assorted-mix-copper-silver-gold.webp"
+		},
+		{
+			"name": "Brothers in Arms",
+			"source": "NED",
+			"page": 7,
+			"foundryEffects": [
+				{
+					"name": "Brothers in Arms Adjacent Attack Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.attack",
+							"mode": "ADD",
+							"value": "+2"
+						},
+						{
+							"key": "data.bonuses.rwak.attack",
+							"mode": "ADD",
+							"value": "+2"
+						}
+					]
+				},
+				{
+					"name": "Brothers in Arms Flanking Attack Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.attack",
+							"mode": "ADD",
+							"value": "+4"
+						},
+						{
+							"key": "data.bonuses.rwak.attack",
+							"mode": "ADD",
+							"value": "+4"
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@b {@i IMPORTANT: This feature requires {@color two (or more) separate characters|ff0000} 让它正常运行！",
+				{
+					"type": "list",
+					"items": [
+						"当与你的兄弟之一相邻时，你的武器攻击获得+2，你可以将你受到的任何钝击、穿刺或挥砍（无论是否是魔法伤害）伤害分担给你和你的兄弟。",
+						"如果你和你的兄弟之一在对敌人实施夹击，你的武器攻击获得+4的加值。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/8 (3).webp"
+		},
+		{
+			"name": "Deeply Flawed by Damn Important",
+			"source": "NED",
+			"page": 7,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"随机减少一个能力值分数3点，另一个减少1点。如果这会使其降至0或更低，重新随机直到选择一个更高的分数。",
+						"你总是通过你的前两个死亡豁免检定。"
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/5 (2).webp"
+		},
+		{
+			"name": "Magic Synergist",
+			"source": "NED",
+			"page": 7,
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "可以使用3级或更高级别的法术位。",
+						"entrySummary": "Access to 3rd level spell slots"
+					}
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"当你施放一个法术时，如果你与另一个拥有此天赋的法术施法者相邻，你可以使用相邻法术施法者的法术位来施放你的法术（前提是他们愿意）。如果你这样做，选择以下其中一项：",
+						{
+							"type": "list",
+							"items": [
+								"两名法术施法者中的一名，消耗相应等级的法术位施放法术。如果是一项需要集中的法术，你必须维持集中，同时考虑你的法术施放 DC。(spellcasters)(spell slot)(concentration spell)(spellcasting DC)",
+								"两位施法者使用相同的法术等级。该法术随后被升级1级。您可以选择哪个施法者的施法难度等级被采用，并由谁来集中精力维持法术。"
+							]
+						}
+					]
+				}
+			],
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/1.webp"
+		}
+	],
+	"table": [
+		{
+			"name": "Desperate Caster",
+			"source": "NED",
+			"page": 6,
+			"colLabels": [
+				"{@dice d100}",
+				"Effect"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"rows": [
+				[
+					"1-10",
+					"法术发生严重故障。你受到X{@dice d10}点心灵伤害。这种伤害无法以任何方式减少。"
+				],
+				[
+					"11-20",
+					"法术失败了，你将在接下来的回合结束前变为{@condition stunned}状态。"
+				],
+				[
+					"21-30",
+					"咒语施放后，你将持续掉血 {@condition unconscious} X 天。"
+				],
+				[
+					"31-45",
+					"咒语施放后，你获得{@condition exhaustion}等级的X。"
+				],
+				[
+					"46-50",
+					"该法术的效果为其预期效果的四分之一（向下取整）。"
+				],
+				[
+					"51-75",
+					"该法术的效果减半（向下取整）。"
+				],
+				[
+					"76-100",
+					"咒语按预期效果发挥作用。"
+				]
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "The Lord",
+			"source": "NED",
+			"page": 8,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "The Lord",
+			"subclassFeatures": [
+				"The Lord|Warlock||The Lord|NED|1",
+				"Hypnotic Bite|Warlock||The Lord|NED|6",
+				"Apex Predator|Warlock||The Lord|NED|10",
+				"Champion of the Night|Warlock||The Lord|NED|14"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha",
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"Command",
+							"Sleep"
+						],
+						"2": [
+							"Melf's Acid Arrow",
+							"Silence"
+						],
+						"3": [
+							"Animate Dead",
+							"Bestow Curse"
+						],
+						"4": [
+							"Dominate Beast",
+							"Phantasmal Killer"
+						],
+						"5": [
+							"Dominate Person",
+							"Modify Memory"
+						]
+					},
+					"known": {
+						"_": {
+							"will": [
+								"Primal Savagery|XGE"
+							]
+						}
+					},
+					"innate": {
+						"6": {
+							"daily": {
+								"1": [
+									"suggestion"
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassSpells": [
+				"Primal Savagery|XGE",
+				"Command",
+				"Sleep",
+				"Melf's Acid Arrow",
+				"Silence",
+				"Animate Dead",
+				"Bestow Curse",
+				"Dominate Beast",
+				"Phantasmal Killer",
+				"Dominate Person",
+				"Modify Memory",
+				"Blood Spear"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Lord",
+			"source": "NED",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "NED",
+			"subclassShortName": "The Lord",
+			"page": 8,
+			"level": 1,
+			"entries": [
+				"你与一个臭名昭著的吸血鬼领主达成了契约。无论是通过直接对抗、血书还是蝙蝠信使，都有一份交易被提出并被你接受了。这位强大的吸血鬼赐予了你一丝它可怕力量的体验，以测试你的用处和潜力。其他吸血鬼或吸血生物认识到你们之间的联系，要么尊重，要么害怕，要么羡慕。你可能还没有变成吸血鬼，但只差一步，前提是你的赞助人也同意。你和其他夜行子都在领主的赞助下效力，秘密地与凡人交往，以进一步推动领主的野心。永生、超自然能力和通往新社会的通行证让你兴奋不已，推动你在这个契约中前进。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock||The Lord|NED|1|NED"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mortals' Bane|Warlock||The Lord|NED|1|NED"
+				}
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "NED",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "NED",
+			"subclassShortName": "The Lord",
+			"page": 8,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"当你学习术士法术时，上帝让你从一个扩展的法术列表中进行选择。以下法术被添加到你的术士法术列表中。",
+				{
+					"type": "table",
+					"caption": "The Lord Expanded Spells",
+					"page": 9,
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell command}, {@spell sleep}"
+						],
+						[
+							"2nd",
+							"{@spell Melf's acid arrow}, {@spell silence}"
+						],
+						[
+							"3rd",
+							"{@spell animate dead}, {@spell bestow curse}"
+						],
+						[
+							"4th",
+							"{@spell dominate beast}, {@spell phantasmal killer}"
+						],
+						[
+							"5th",
+							"{@spell dominate person}, {@spell modify memory}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mortals' Bane",
+			"source": "NED",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "NED",
+			"subclassShortName": "The Lord",
+			"page": 9,
+			"level": 1,
+			"header": 1,
+			"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/1.webp",
+			"entries": [
+				"你学会了{@spell primal savagery|XGE}（Eldritch Blast）cantrip，现在它会让你的牙齿变成尖牙。你可以将其作为一个额外动作施放，它造成的伤害为死灵伤害而非酸性伤害。每次成功命中后，你可以回复等同于你术士等级的生命值。如果一次成功的攻击杀死了一个生物，你还会获得临时生命值，数值等同于所造成的伤害。",
+				"作为一种反应，当你受到人形生物的攻击时，你可以将你的魅力调整值加到你的防御等级上。在攻击骰结果揭晓之前，你可以这样做，每次长休可以使用的次数等同于你的熟练加值。"
+			]
+		},
+		{
+			"name": "Hypnotic Bite",
+			"source": "NED",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "NED",
+			"subclassShortName": "The Lord",
+			"page": 9,
+			"level": 6,
+			"header": 2,
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
+			"entries": [
+				"每天一次，你可以在过去24小时内咬过的生物身上施放{@spell suggestion}，而不消耗法术位。如果目标未通过豁免检定，它会被迫继续执行这个行动，直到它的生命终结，或者直到你再次使用这个特性。{@spell suggestion}的其他限制或要求仍然适用。"
+			]
+		},
+		{
+			"name": "Apex Predator",
+			"source": "NED",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "NED",
+			"subclassShortName": "The Lord",
+			"page": 9,
+			"level": 10,
+			"header": 2,
+			"foundryImg": "icons/creatures/magical/humanoid-silhouette-dashing-blue.webp",
+			"entries": [
+				"在夜间，你慢慢变成了一种顶级捕食者。当你不处于明亮光线下时，你在{@skill Perception}、{@skill Insight}、{@skill Stealth}、{@skill Sleight of Hand}、{@skill Intimidation}和先攻检定中获得优势。你还可以嗅到150英尺外的血腥气味。"
+			]
+		},
+		{
+			"name": "Champion of the Night",
+			"source": "NED",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "NED",
+			"subclassShortName": "The Lord",
+			"page": 9,
+			"level": 14,
+			"header": 2,
+			"foundryImg": "icons/magic/control/fear-fright-shadow-monster-purple.webp",
+			"entries": [
+				"你希望通过与你的主人的勇士们建立更直接的契约来加强你的契约。你将获得所选择勇士的好处。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Night Huntress|NED"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blood Caller|NED"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Crimson Lancer|NED"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mist Warrior|NED"
+						}
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Blood Spear",
+			"source": "NED",
+			"page": 10,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "blood from a dead creature that has been killed within 24 hours or from a willing creature which takes {@dice 3d8} damage. The blood is consumed by the spell",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将鲜血塑造成一支独特的长矛。鲜血凝固成暗红色物质。血之矛是一种简单的近战武器（作为长矛），你精通它。在成功攻击时，它造成{@damage 2d6} 刺穿伤害 + {@damage 2d8} 妖术伤害 + 你的法术属性调整值伤害。你将恢复等同于妖术伤害量的生命值。这个武器无视抗性，但不影响免疫。",
+				"如果血之矛离开你的手超过6秒，它会再次液化成血液。血之矛具有60/120射程的投掷属性。如果投掷，它会迅速加速，并且对于一名流血的生物，它永远不会有劣势。在成功的投掷命中后，伤害为Xd6死灵伤害 + 10穿刺伤害，其中X为你的术士等级。"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	],
+	"race": [
+		{
+			"name": "Aarakocra (S)",
+			"source": "NED",
+			"page": 11,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"wis",
+								"int"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"wis": 1,
+					"cha": 1
+				}
+			],
+			"_copy": {
+				"name": "Aarakocra",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": "Flight",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Flight",
+									"page": 10,
+									"entries": [
+										"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor. You can only fly short distances."
+									]
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Aasimar",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Aasimar",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"wis": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Bugbear (S)",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Bugbear",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"dex": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Centaur",
+			"source": "NED",
+			"page": 11,
+			"foundryEffects": [
+				{
+					"name": "Centaur Mounting AC Debuff",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.ac.value",
+							"mode": "ADD",
+							"value": "-2"
+						}
+					]
+				}
+			],
+			"_copy": {
+				"name": "Centaur",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "insertArr",
+							"index": -1,
+							"items": [
+								{
+									"type": "entries",
+									"name": "I'm not a Horse!",
+									"page": 11,
+									"entries": [
+										"A creature mounting the Centaur has disadvantage on attacks and saving throws. The Centaur has -2 AC if mounted."
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"con",
+								"int"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"con": 1,
+					"int": 1
+				}
+			]
+		},
+		{
+			"name": "Changeling",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Changeling",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"int": 1,
+					"wis": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Deep Gnome",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Deep Gnome",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"speed": 25,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"int",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"int": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Duergar",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Duergar",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"con",
+								"int"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"con": 1,
+					"int": 1
+				}
+			],
+			"speed": 25
+		},
+		{
+			"name": "Eladrin",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Eladrin",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": "Trance",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Trance",
+									"page": 12,
+									"entries": [
+										"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
+										"Whenever you gain a level in your class, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you level up again."
+									],
+									"data": {
+										"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"wis": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Fairy",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Fairy",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"int",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"int": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Firbolg",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Firbolg",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"con",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"con": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Air Genasi",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Genasi (Air)",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"con",
+								"int"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"con": 1,
+					"int": 1
+				}
+			]
+		},
+		{
+			"name": "Earth Genasi",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Genasi (Earth)",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"dex": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Fire Genasi",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Genasi (Fire)",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"int",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"int": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Water Genasi",
+			"source": "NED",
+			"page": 11,
+			"_copy": {
+				"name": "Genasi (Water)",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "insertArr",
+							"index": -1,
+							"items": [
+								{
+									"type": "entries",
+									"name": "Cold Resistance",
+									"page": 11,
+									"entries": [
+										"You have resistance to cold damage."
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"con",
+								"int",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"con": 1,
+					"int": 1,
+					"wis": 1
+				}
+			],
+			"resist": [
+				"cold"
+			]
+		},
+		{
+			"name": "Githyanki",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Githyanki",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"int"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"dex": 1,
+					"int": 1
+				}
+			]
+		},
+		{
+			"name": "Githzerai",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Githzerai",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"int",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"int": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Goblin (S)",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Goblin",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"int",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"int": 1,
+					"cha": 1
+				}
+			],
+			"speed": 25
+		},
+		{
+			"name": "Goliath",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Goliath",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"con",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"con": 1,
+					"wis": 1
+				}
+			],
+			"speed": 35
+		},
+		{
+			"name": "Harengon",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Harengon",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"wis": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Hobgoblin (S)",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Hobgoblin",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"int",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"int": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Kenku (S)",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Kenku",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"int": 1,
+					"wis": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Kobold (S)",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Kobold",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"dex": 1,
+					"con": 1
+				}
+			],
+			"speed": 25
+		},
+		{
+			"name": "Lizardfolk",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Lizardfolk",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"dex": 1,
+					"con": 1
+				}
+			]
+		},
+		{
+			"name": "Minotaur (S)",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Minotaur",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": "Labyrinthine Recall",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Brutal Presence",
+									"page": 13,
+									"entries": [
+										"When hitting a bloodied creature with your horns, you have advantage on {@skill Intimidation} checks against it until the end of your next turn."
+									],
+									"data": {
+										"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/23 (2).webp"
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"con",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"con": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Orc (S)",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Orc",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"dex": 1,
+					"con": 1
+				}
+			]
+		},
+		{
+			"name": "Satyr",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Satyr",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"int",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"int": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Sea Elf",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Sea Elf",
+				"source": "MPMM",
+				"_mod": {
+					"entries": [
+						{
+							"mode": "insertArr",
+							"index": -1,
+							"items": [
+								{
+									"type": "entries",
+									"name": "Sea Elf Training",
+									"page": 12,
+									"entries": [
+										"You gain proficiency with {@item trident|phb|tridents} and {@item net|phb|nets}."
+									]
+								}
+							]
+						},
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Languages",
+									"page": 12,
+									"entries": [
+										"You can speak, read, and write Common, Aquan and one other language that you and your DM agree is appropriate for your character."
+									]
+								}
+							]
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Trance",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Trance",
+									"page": 12,
+									"entries": [
+										"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
+										"Whenever you gain a level in your class, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you level up again."
+									],
+									"data": {
+										"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			"weaponProficiencies": [
+				{
+					"net|phb": true,
+					"trident|phb": true
+				}
+			],
+			"lineage": null,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"aquan": true,
+					"anyStandard": 1
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"con",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"con": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Shadar-Kai",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Shadar-Kai",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "replaceArr",
+							"replace": "Trance",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Trance",
+									"page": 12,
+									"entries": [
+										"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
+										"Whenever you gain a level in your class, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you level up again."
+									],
+									"data": {
+										"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+									}
+								}
+							]
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Blessing of the Raven Queen",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Blessing of Zeriax",
+									"page": 12,
+									"entries": [
+										"As a bonus action, you can magically teleport up to 40 feet to an unoccupied space you can see. You take necrotic damage equal to your highest hit die. This damage cannot be reduced or prevented. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+										"Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
+									],
+									"data": {
+										"foundryImg": "icons/creatures/eyes/void-single-black-purple.webp"
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"int",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"int": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Shifter",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Shifter",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "prependArr",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Ability Score Info",
+									"page": 12,
+									"entries": [
+										"If you choose the option to increase two ability scores by two, you must also decrease your Dexterity, Constitution or Charisma score by 2."
+									]
+								}
+							]
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "additional benefit based on one of the following options",
+							"with": "additional benefit based on two of the following options",
+							"flags": "i"
+						}
+					]
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"int",
+								"wis"
+							],
+							"weights": [
+								2,
+								2
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"int": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Tabaxi",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Tabaxi",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"con",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"con": 1,
+					"cha": 1
+				}
+			]
+		},
+		{
+			"name": "Tortle",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Tortle",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove"
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"con",
+								"int",
+								"wis"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"con": 1,
+					"int": 1,
+					"wis": 1
+				}
+			]
+		},
+		{
+			"name": "Triton",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Triton",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Languages",
+									"page": 12,
+									"entries": [
+										"You can speak, read, and write Common, Aquan and one other language that you and your DM agree is appropriate for your character."
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"aquan": true,
+					"anyStandard": 1
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"int"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"str": 1,
+					"dex": 1,
+					"int": 1
+				}
+			]
+		},
+		{
+			"name": "Yuan-Ti (S)",
+			"source": "NED",
+			"page": 12,
+			"_copy": {
+				"name": "Yuan-Ti",
+				"source": "MPMM",
+				"_mod": {
+					"lineage": "remove",
+					"entries": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Languages",
+									"page": 12,
+									"entries": [
+										"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character. Additionally, you can also speak, read, and write Druidic if you choose to only increase your Intelligence and Charisma ability scores instead of boosting all three."
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"dex",
+								"int",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"dex": 1,
+					"int": 1,
+					"cha": 1
+				}
+			]
+		}
+	],
+	"subrace": [
+		{
+			"name": "Agile",
+			"source": "NED",
+			"raceName": "Orc (S)",
+			"raceSource": "NED",
+			"overwrite": {
+				"ability": true
+			},
+			"ability": [
+				{
+					"dex": 3,
+					"choose": {
+						"weighted": {
+							"from": [
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								-1,
+								-1
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Brute",
+			"source": "NED",
+			"raceName": "Orc (S)",
+			"raceSource": "NED",
+			"overwrite": {
+				"ability": true
+			},
+			"ability": [
+				{
+					"str": 3,
+					"choose": {
+						"weighted": {
+							"from": [
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								-1,
+								-1
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Hardy",
+			"source": "NED",
+			"raceName": "Orc (S)",
+			"raceSource": "NED",
+			"overwrite": {
+				"ability": true
+			},
+			"ability": [
+				{
+					"con": 3,
+					"choose": {
+						"weighted": {
+							"from": [
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								-1,
+								-1
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"background": [
+		{
+			"name": "Eratus Citizen",
+			"source": "NED",
+			"page": 13,
+			"skillProficiencies": [
+				{
+					"history": true,
+					"religion": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"elvish",
+							"dwarvish",
+							"orc",
+							"other"
+						],
+						"count": 2
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"navigator's tools": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"holy symbol|phb",
+						{
+							"item": "book|phb",
+							"displayName": "prayer book"
+						},
+						{
+							"special": "Stick of incense",
+							"quantity": 5
+						},
+						{
+							"special": "vestments"
+						},
+						"common clothes|phb",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill History}, {@skill Religion}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entry": "在精灵语、矮人语、吉斯语或兽人语中选择两种。"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Navigator's Tools|PHB}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "一个{@item holy symbol|phb}，一本祷告书{@item book|phb}，5根香，祭服，一套{@item common clothes|phb}，和一个包含10 gp的{@item pouch|phb}"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Together as One",
+					"page": 13,
+					"entries": [
+						"Eratus的人民已经意识到，只要团结一心，他们可以面对任何困难。在(Arzen)的旗帜下，帝国甚至能够应对最强大的敌人。每当你进行豁免投掷以抵抗会使你{@condition frightened}的效果，并且你能看到至少另外一个拥有相同背景的生物时，你对这些豁免投掷获得+2的加值。"
+					],
+					"data": {
+						"isFeature": true,
+						"foundryImg": "https://assets.forge-vtt.com/605a098442344c6355e6bd4f/moulinette/images/custom/Icons/6 (2).webp"
+					}
+				}
+			],
+			"foundryImg": "icons/environment/people/infantry-army.webp"
+		},
+		{
+			"name": "Caldar Survivor",
+			"source": "NED",
+			"page": 14,
+			"skillProficiencies": [
+				{
+					"survival": true,
+					"perception": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"herbalism kit": true,
+					"cook's utensils": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"hunting trap|phb",
+						{
+							"item": "rations (1 day)",
+							"quantity": 5
+						},
+						"hempen rope (50 feet)",
+						{
+							"item": "pouch|phb",
+							"containsValue": 1000
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Survival}, {@skill Perception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Herbalism kit|PHB}, {@item cook's utensils|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "一个{@item hunting trap|phb}，5个{@item rations (1 day)|phb|rations}，{@item hempen rope (50 feet)|phb|50 ft of hempen rope}和一个{@item pouch|phb}，里面有10gp。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: On the Move",
+					"page": 14,
+					"entries": [
+						"你已经学会了快速打包、高效旅行，并且擅长在这个世界的怪物面前隐藏自己。每当有人跟踪你或者追踪你时，你知道如何留下假踪迹，给追逐者制造障碍。"
+					],
+					"data": {
+						"isFeature": true,
+						"foundryImg": "icons/tools/navigation/map-plain-green.webp"
+					}
+				}
+			],
+			"foundryImg": "icons/environment/people/group.webp"
+		},
+		{
+			"name": "Guest of the Blades",
+			"source": "NED",
+			"page": 14,
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"investigation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"disguise kit": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"fine clothes|phb",
+						{
+							"special": "elven tattoo"
+						},
+						{
+							"item": "book|phb",
+							"displayName": "book of elven poetry"
+						},
+						{
+							"item": "pouch|phb",
+							"displayName": "purse",
+							"containsValue": 2500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Arcana}, {@skill Investigation}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entries": [
+								"在你的选择中，选择一种标准语言。"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Disguise kit|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "一套{@item fine clothes|phb}，一枚精灵纹身，一本精灵诗歌{@item book|phb}，以及一个包含25 gp的{@item pouch|phb|purse}。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Forgotten Wisdom",
+					"page": 14,
+					"entries": [
+						"那些与精灵同住的人通常被允许进入图书馆。来自一个已经结束的世界的传说被保存并被精心归档在那里。你在回忆知识时获得+3的加值，如果你的检定失败，你有{@chance 50|50%}的机会认识可能知道更多的人。"
+					],
+					"data": {
+						"isFeature": true,
+						"foundryImg": "icons/sundries/books/book-clasp-spiral-green.webp"
+					}
+				}
+			],
+			"foundryImg": "icons/skills/melee/strike-blade-scimitar-green-purple.webp"
+		},
+		{
+			"name": "Member of the Order",
+			"source": "NED",
+			"page": 14,
+			"skillProficiencies": [
+				{
+					"intimidation": true,
+					"insight": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"alchemist's supplies": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						"fine clothes|phb",
+						{
+							"special": "official identity document"
+						},
+						{
+							"special": "scroll of pedigree"
+						},
+						{
+							"item": "pouch|phb",
+							"displayName": "purse",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "{@skill Intimidation}, {@skill Insight}"
+						},
+						{
+							"type": "item",
+							"name": "Languages:",
+							"entries": [
+								"在你的选择中，选择一种标准语言。"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies:",
+							"entry": "{@item Alchemist's Supplies|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "一套{@item fine clothes|phb}，一份官方身份文件，一卷家谱卷轴，以及一个包含15 gp的{@item pouch|phb|purse}。"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feature: Protector of the Land",
+					"page": 14,
+					"entries": [
+						"你的祖先为保护这片土地免受入侵的人类和怪物们付出了巨大的努力，并参加了无数次的战斗。你熟悉这片土地，能够利用它来获益。你知道该地区作战的最有利位置，并且在统一卡尔达尔荒野中寻路时具有优势。"
+					],
+					"data": {
+						"isFeature": true,
+						"foundryImg": "icons/tools/navigation/map-plain-green.webp"
+					}
+				}
+			],
+			"foundryImg": "icons/magic/nature/symbol-sun-yellow.webp"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Night Huntress",
+			"source": "NED",
+			"page": 10,
+			"foundryEffects": [
+				{
+					"name": "Night Huntress Speed Increase",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+20"
+						}
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"hunter's mark"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"当与夜猎者接触时，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你的速度增加了20。",
+						"你每天可以施放{@spell hunter's mark}一次，而不消耗法术位。你的奥术射线也会触发猎人印记的伤害。"
+					]
+				}
+			],
+			"featureType": [
+				"TL:CotN"
+			]
+		},
+		{
+			"name": "Blood Caller",
+			"source": "NED",
+			"page": 10,
+			"entries": [
+				"当与血召唤者接触时，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"每当距离你15英尺内的生物受到割破或穿刺伤害时，你可以使用你的反应施放一个只针对该生物的法术。",
+						"每当你用法术将一只生物的生命值降低到50%以下时，直到你的下一个回合结束前，你对该生物的所有伤害获得抗性。"
+					]
+				}
+			],
+			"featureType": [
+				"TL:CotN"
+			]
+		},
+		{
+			"name": "Crimson Lancer",
+			"source": "NED",
+			"page": 10,
+			"additionalSpells": [
+				{
+					"known": {
+						"_": [
+							"blood spear|NED"
+						]
+					}
+				}
+			],
+			"entries": [
+				"当与(Crimson Lancer)签订合同时，您将获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你学会了{@spell blood spear|NED}法术。",
+						"每当你用你的{@spell blood spear|NED}杀死一个生物时，你可以选择60英尺内的每个生物，它们必须进行一次感知豁免检定，否则在1分钟内会成为你的{@condition frightened}。这些生物可以在他们的回合结束时重复豁免检定。"
+					]
+				}
+			],
+			"featureType": [
+				"TL:CotN"
+			]
+		},
+		{
+			"name": "Mist Warrior",
+			"source": "NED",
+			"page": 10,
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"gaseous form"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"当与迷雾战士接触时，你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"如果伤害会将你的生命值降至0或更低，它会将其降至1，然后你会自动对自己施放{@spell gaseous form}，而不消耗法术位。你获得临时生命值，数值等同于你术士等级的两倍，持续到法术结束。你在完成一次长休后恢复此特性的使用。",
+						"当光线变暗时，你周围笼罩着一层薄雾。在昏暗光线条件下，你可以使用一个奖励动作来执行{@action Dodge}动作。"
+					]
+				}
+			],
+			"featureType": [
+				"TL:CotN"
+			]
+		}
+	]
+}

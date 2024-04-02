@@ -1,0 +1,477 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TouhouSpells2",
+				"abbreviation": "THSP2",
+				"full": "Touhou Spells 2",
+				"url": "https://www.gmbinder.com/share/-LhjEilkc6Mphojsd91E",
+				"authors": [
+					"nomiddlename303"
+				],
+				"convertedBy": [
+					"Lilo Marino"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1705688286,
+		"dateLastModified": 1705693749,
+		"_dateLastModifiedHash": "ce0f8377b1"
+	},
+	"spell": [
+		{
+			"name": "Astronomical Entombment",
+			"level": 8,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你唤起苍白的天体能量，将其笼罩在你能看到的一只生物周围。那个生物必须进行一次感知豁免投。在豁免成功的情况下，目标受到{@damage 4d8}辐射伤害，法术结束。在豁免失败的情况下，目标受到{@damage 8d8}辐射伤害，并且天体能量形成一个以目标为中心的不透明的半径15英尺的球体，提供完全掩护。试图进入球体的生物受到{@damage 8d8}辐射伤害，并被推到球体外最近的未被占据的空间。如果目标太大无法适应球体内，则法术结束。否则，目标被困在球体内。",
+				"当目标被困在球体中时，它处于 {@condition blinded} 和 {@condition restrained} 状态，并且在每个回合开始时受到 {@damage 8d8} 辐射伤害。被困生物可以在每个回合结束时重复豁免扑克。成功后，此法术造成的任何后续伤害都会累积减少 {@dice 2d8}。一旦伤害减少到0，法术结束。"
+			],
+			"source": "TouhouSpells2",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a moonstone worth at least 500 gp"
+			},
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST",
+				"S"
+			]
+		},
+		{
+			"name": "Devil's Recitation",
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"四道深红色的地狱能量光柱从天空中击落，以你在射程内能看到的点为中心，形成半径15英尺，高120英尺的圆柱体。这些光柱在30英尺范围内散发出明亮光芒，另外30英尺范围内为昏暗光线，并点燃那些未被穿戴或携带的易燃物品。",
+				"当你首次施放这个法术时，范围内能看见你的你选择的生物必须通过一次感知豁免检定，否则在持续时间内会成为你的{@condition frightened}。如果一只{@condition frightened}生物在一个无法看见你的位置结束它的回合，它可以重复豁免检定，成功后会结束效果。",
+				"当一个生物在一个回合内第一次进入光束的区域或者在那里开始它的回合时，它必须进行一次体质豁免投。生物在豁免失败时受到{@damage 7d10}火焰伤害，豁免成功时受到一半伤害。",
+				"在你的每个回合中作为一个奖励动作，你可以将任意数量的光束移动到你选择的范围内的一个或多个点，最多60英尺。"
+			],
+			"source": "TouhouSpells2",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"frightened"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution",
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"Y"
+			],
+			"miscTags": [
+				"LGT",
+				"UBA"
+			],
+			"spellAttack": [
+				"O"
+			]
+		},
+		{
+			"name": "Eye of Destruction",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "sight"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你用一次手势，猛烈地扭曲现实，彻底摧毁你能看到的生物或物体。如果目标是生物，对目标进行远程攻击鉴定。命中则目标受到{@damage 20d12}的力量伤害。这种伤害无视抗性和免疫，无法以任何方式减少。目标的最大生命值也会减少与所受力量伤害相等的数值。目标的最大生命值只能通过{@spell Wish |PHB}法术或神圣干预恢复正常。被这个法术降至0生命值的生物将被完全湮灭。",
+				"如果你瞄准一个物体，无论是不是魔法的，只要它能放进一个30英尺的立方体中，就会被完全消灭。如果物体比那个区域大，那么最多相当于那个尺寸的一部分会被消灭。",
+				"一件神器并未完全摧毁，但已经受损以至于在接下来的7天内无法使用。"
+			],
+			"source": "TouhouSpells2",
+			"miscTags": [
+				"SGT",
+				"PRM",
+				"OBJ"
+			],
+			"components": {
+				"s": true
+			},
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"C"
+			]
+		},
+		{
+			"name": "Quadruple Barrier",
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"对你可触及范围内的生物进行一次近战法术攻击。命中后，你创造出几道跨维度屏障，迅速刻入目标生物。目标受到{@damage 8d10}的力场伤害，并被{@condition incapacitated}，速度为0，持续整个法术的时效期间。在持续时间内的每个你的回合，你可以使用你的动作自动对目标造成{@damage 8d10}的力场伤害。如果你使用你的动作做其他事情，或目标生物离开你的触及范围，法术将会结束。",
+				"此外，在你的回合中，你可以使屏障破裂，提前结束法术。目标受到{@damage 12d10}力量伤害，法术结束。"
+			],
+			"source": "TouhouSpells2",
+			"components": {
+				"s": true,
+				"m": "a fan and a silver key"
+			},
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Red Eyes of Lunacy",
+			"level": 7,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"在法术持续时间内，你的眼睛充满了令人疯狂的猩红能量。当你施放这个法术时，你能看见的距离你120英尺内的一个生物必须进行一次智力豁免检定。如果目标对于被 {@condition charmed} 的效果免疫，那么它会自动成功。",
+				"在未通过豁免检定时，目标开始感知到从各个角度对其发动的虚幻攻击。目标为{@condition restrained}，每当目标受到伤害时，你可以使用你的反应对其造成{@damage 5d10}点心灵伤害。目标在每个他们的回合结束时重复进行豁免检定，若成功则结束该法术。",
+				"在法术持续期间的每个回合，你可以使用你的动作将法术对准另一个生物。你一次只能影响一个生物，而且不能对已成功通过此法术豁免检定的生物使用法术。"
+			],
+			"source": "TouhouSpells2",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"conditionInflict": [
+				"restrained"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"AAD"
+			]
+		},
+		{
+			"name": "Seventeen Article Laser",
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"你的手中射出十七道金光。每道光线可以瞄准你能看到的敌人或友方生物，你也可以用多道光线瞄准同一个生物。",
+				"对每个被任意数量射线瞄准的敌人进行远程法术攻击。命中则目标受到{@damage 1d8}辐射伤害，每条瞄准它的射线都会造成这个伤害。如果目标被七条或更多射线瞄准，它还会在你的下个回合前被{@condition blinded}。",
+				"当一个友好生物被任意数量的射线瞄准时，每个瞄准它的射线都会使其恢复5点生命值。如果它被七个或更多射线瞄准，你还可以结束影响目标的任何疾病和一个可以是{@condition blinded}、{@condition deafened}、{@condition paralyzed}或{@condition poisoned}的状态。"
+			],
+			"source": "TouhouSpells2",
+			"components": {
+				"s": true,
+				"m": "a ceremonial sword worth at least 50 gp"
+			},
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		}
+	],
+	"roll20Spell": [
+		{
+			"name": "Astronomical Entombment",
+			"source": "TouhouSpells2",
+			"data": {
+				"Save": "Wisdom",
+				"Damage": "8d8",
+				"Damage Type": "Radiant",
+				"Save Success": "4d8"
+			}
+		},
+		{
+			"name": "Devil's Recitation",
+			"source": "TouhouSpells2",
+			"data": {
+				"Save": "Constitution",
+				"Damage": "7d10",
+				"Damage Type": "Fire",
+				"Save Success": "Half Damage"
+			}
+		},
+		{
+			"name": "Eye of Destruction",
+			"source": "TouhouSpells2",
+			"data": {
+				"Damage": "20d12",
+				"Damage Type": "Force",
+				"Target": "Any creature or object you can see",
+				"Spell Attack": "Ranged"
+			}
+		},
+		{
+			"name": "Quadruple Barrier",
+			"source": "TouhouSpells2",
+			"data": {
+				"Damage": "8d10",
+				"Damage Type": "Force",
+				"Target": "Any creature within your reach",
+				"Spell Attack": "Melee",
+				"Secondary Damage": "12d10",
+				"Secondary Damage Type": "Force"
+			}
+		},
+		{
+			"name": "Red Eyes of Lunacy",
+			"source": "TouhouSpells2",
+			"data": {
+				"Save": "Intelligence",
+				"Damage": "5d10",
+				"Damage Type": "Psychic",
+				"Target": "One creature within 120 feet of you that you can see",
+				"Save Success": "Ending the spell for themselves"
+			}
+		},
+		{
+			"name": "Seventeen Article Laser",
+			"source": "TouhouSpells2",
+			"data": {
+				"Damage": "1d8",
+				"Damage Type": "Radiant",
+				"Target": "Each ray targets an enemy or friendly creature you can see within range",
+				"Healing": "5",
+				"Spell Attack": "Ranged"
+			}
+		}
+	]
+}

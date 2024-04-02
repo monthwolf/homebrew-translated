@@ -1,0 +1,2902 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WC",
+				"abbreviation": "WC",
+				"full": "Warlord Collection",
+				"url": "https://www.gmbinder.com/share/-LtrZrYqZl6TBt8gu9lt",
+				"version": "1.0.0",
+				"authors": [
+					"badooga"
+				],
+				"convertedBy": [
+					"badooga"
+				]
+			}
+		],
+		"dateAdded": 1590989143,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "c41f41b69d"
+	},
+	"monster": [
+		{
+			"name": "Wolf Pack Leader",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 12,
+			"int": 7,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"passive": 14,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"狼群首领在对被攻击者的救赎上有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"狼群领袖在依靠听觉或嗅觉的智慧（感知）检查中具有优势。"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"如果狼群的盟友中至少有一人在生物的5英尺范围内，而该盟友不在，则狼群首领在对生物的攻击卷中具有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Pin Down",
+					"entries": [
+						"狼群首领可以尝试抓捕一个生物作为奖励动作。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}7 ({@damage 2d4 + 2})穿刺伤害。如果目标是一个生物，它必须在一个{@dc 11}的力量反射中成功，或者被击倒{@condition prone}。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"狼群领袖的移动速度达到它的速度。另外，最多五只能看到和听到狼群首领的狼可以利用它们的反应来移动到它们速度的一半。"
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"狼群领袖进行智慧（感知）检查。"
+					]
+				},
+				{
+					"name": "Howl (Costs 3 Actions)",
+					"entries": [
+						"在狼群首领30英尺范围内的每个敌对生物，如果能听到它的嚎叫，就必须成功地进行一次{@dc 13}智慧救赎，否则就会变成{@condition frightened}，直到狼群首领的下一个回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Warlord Skirmisher",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 229,
+				"formula": "27d8 + 108"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 18,
+			"int": 12,
+			"wis": 18,
+			"cha": 16,
+			"save": {
+				"dex": "+10",
+				"con": "+9",
+				"wis": "+9"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"insight": "+9",
+				"perception": "+9",
+				"stealth": "+10"
+			},
+			"passive": 19,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Archer's Eye",
+					"entries": [
+						"作为一个额外的动作，军阀可以在它周围120英尺内标记一个它能看到的生物。这个标记持续1分钟，如果军阀标记另一个目标，则提前结束。当军阀或其盟友对被标记的目标进行攻击时，可以掷出（%0%），并将掷出的数字加入攻击卷。"
+					]
+				},
+				{
+					"name": "Brave",
+					"entries": [
+						"军阀对被攻击者的救赎有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"在它的每个回合中，军阀可以使用一个额外的行动来进行冲刺、脱离或隐藏行动。"
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"如果战神受到的效果允许它做一个灵巧的蓄力动作来承受一半的伤害，如果蓄力动作成功，战神将不会受到任何伤害，如果失败，则只会受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当军阀用武器攻击击中目标并在攻击卷上有优势时，或当目标在军阀的盟友5英尺范围内不是{@condition incapacitated}且军阀在攻击卷上没有劣势时，军阀会造成额外的7（{@dice 2d6}）伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"军阀进行三次武器攻击。"
+					]
+				},
+				{
+					"name": "Volley",
+					"entries": [
+						"战神对其武器范围内所能看到的10英尺范围内的任何数量的生物进行一次范围攻击。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d6 + 5})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 10}击中，范围150/600英尺，一个目标。{@h}9 ({@damage 1d8 + 5})穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Skirmisher",
+					"entries": [
+						"当敌人在军阀的5英尺范围内结束其回合时，军阀可以在不引起机会攻击的情况下移动到其速度的一半。"
+					]
+				},
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"军阀在被攻击时受到的伤害会减半。军阀必须能够看到攻击者。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Quick Step",
+					"entries": [
+						"战神的移动速度达到了它的速度，不会引起机会攻击。"
+					]
+				},
+				{
+					"name": "Advance",
+					"entries": [
+						"最多五个能看到和听到军阀的盟友可以利用他们的反应来移动，速度达到他们的一半。"
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"军阀进行一次智慧（感知）检查。"
+					]
+				},
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"军阀进行一次武器攻击。"
+					]
+				},
+				{
+					"name": "Command Allies (Costs 2 Actions)",
+					"entries": [
+						"军阀的目标是它在60英尺范围内可以看到的最多三个盟友。如果目标能看到并听到军阀，它可以将一次武器攻击作为反应，并在攻击卷上获得优势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"MLW"
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			]
+		},
+		{
+			"name": "Thug Boss",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 14,
+			"int": 13,
+			"wis": 9,
+			"cha": 13,
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+3",
+				"perception": "+1"
+			},
+			"passive": 11,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Cheap Shot (1/Turn)",
+					"entries": [
+						"当暴徒老大用武器攻击击中目标并在攻击卷上有优势时，或者当目标在暴徒老大的盟友5英尺范围内，而暴徒老大在攻击卷上没有劣势时，会造成额外的7（（%0%））伤害。如果一个生物受到任何这种额外的伤害，它的速度会降低到0，直到暴徒老大的下一个回合结束。"
+					]
+				},
+				{
+					"name": "Discern Lies",
+					"entries": [
+						"暴徒老大知道，当它听到一个生物用它知道的语言说了一个谎言。"
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"暴徒老大可以在它的每个回合中采取脱离或隐藏行动作为额外行动。"
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"如果暴徒老板的盟友中至少有一个人在生物的5英尺范围内，而盟友不在，那么暴徒老板在对生物的攻击卷上有优势（%0%）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"暴徒老板进行了两次武器攻击。"
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d6 + 3})重击伤害。"
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw}{@hit 5}命中，距离5英尺或范围20/60英尺，一个目标。{@h}5 ({@damage 1d4 + 3})穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Redirect Attack",
+					"entries": [
+						"当暴徒老大能看到的生物以它为攻击目标时，暴徒老大会选择一个在它5英尺内的盟友。这两个生物互换位置，被选择的盟友将成为目标。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Apprehend",
+					"entries": [
+						"一个能看到和听到暴徒老板的盟友可以用它的反应来尝试抓取它所能触及的一个生物。"
+					]
+				},
+				{
+					"name": "Shove",
+					"entries": [
+						"暴徒老板试图推开一个在其范围内的生物。"
+					]
+				},
+				{
+					"name": "Leadership (Costs 2 Actions)",
+					"entries": [
+						"直到暴徒老大的下一个回合结束，暴徒老大选择的每个能看到暴徒老大的盟友都可以在他们的攻击卷、能力检查和蓄力攻击中各加一个（%0%）。如果暴徒老大是（%1%），这个效果就会结束。"
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 3 Actions)",
+					"entries": [
+						"暴徒老大的目标是在它30英尺范围内它能看到的一个敌人。如果目标能看到和听到它，目标必须成功地进行一个{@dc 11}的智慧救赎，否则会被{@condition frightened}，直到暴徒老板的下一个回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"mace|phb"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Supreme Warlord",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 256,
+				"formula": "27d8 + 135"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 20,
+			"int": 16,
+			"wis": 14,
+			"cha": 19,
+			"save": {
+				"str": "+11",
+				"dex": "+11",
+				"con": "+11",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+11",
+				"insight": "+8",
+				"intimidation": "+10",
+				"perception": "+8",
+				"persuasion": "+10"
+			},
+			"passive": 18,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"any three languages"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Action Surge (Recharges after a Short or Long Rest)",
+					"entries": [
+						"军阀在其回合中可以采取额外的行动。"
+					]
+				},
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"军阀可以重新掷出一个失败的蓄力。它必须使用新的卷轴。"
+					]
+				},
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"在其每个回合中，军阀可以对其用武器攻击击中的生物造成额外的14（（%0%））伤害，如果该生物在军阀的盟友5英尺内，而该盟友不是（%1%）。军阀还可以强迫该生物做一个{@dc 19}的力量储蓄动作。如果拯救失败，该生物会被击倒（%3%）。"
+					]
+				},
+				{
+					"name": "Rally",
+					"entries": [
+						"当军阀不是{@condition incapacitated}时，军阀60英尺范围内的每个盟友都不能是{@condition charmed}或{@condition frightened}，并且可以在他们的攻击卷、能力检查和蓄力攻击中各加一个{@dice d4}。"
+					]
+				},
+				{
+					"name": "Second Wind (Recharges after a Short or Long Rest)",
+					"entries": [
+						"作为一个额外的动作，战神可以恢复20点生命值。"
+					]
+				},
+				{
+					"name": "Survivor",
+					"entries": [
+						"如果军阀至少有1个命中率但少于其最大命中率的一半，则在其回合开始时重新获得10个命中率。"
+					]
+				},
+				{
+					"name": "Tactical Discipline",
+					"entries": [
+						"战神在战斗中对所有的能力检查和蓄力投掷都有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"军阀进行三次武器攻击。"
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 11}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d8 + 5})重击伤害。"
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 11}击中，到达10英尺，一个目标。{@h}10 ({@damage 1d10 + 5})砍击伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 11}击中，范围150/600英尺，一个目标。{@h}9 ({@damage 1d8 + 5})穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Hold the Line",
+					"entries": [
+						"战神可以对进入其范围、离开其范围、或在其范围内移动5英尺或以上的生物进行一次近战武器攻击。如果攻击命中，目标的速度会降低到0，直到当前回合结束。"
+					]
+				},
+				{
+					"name": "Parry",
+					"entries": [
+						"军阀在对抗一次会击中它的近战攻击时，其攻击力增加4。要做到这一点，军阀必须看到攻击者并挥舞着近战武器。"
+					]
+				}
+			],
+			"legendaryHeader": [
+				"军阀可以进行5次传奇行动，可以从以下选项中选择。每次只能使用一个传奇行动选项，并且只能在另一个生物的回合结束时使用。军阀在其回合开始时恢复已用的传奇行动。"
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"军阀的移动速度达到它的速度。另外，最多五个能看到和听到军阀的盟友可以利用他们的反应，以他们一半的速度移动。"
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"军阀的目标是它能看到的60英尺内的一个盟友。如果目标能看到并听到军阀的声音，它可以作为反应进行一次武器攻击，并在攻击卷上获得优势。"
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"军阀进行一次智慧（感知）检查。"
+					]
+				},
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"军阀进行一次武器攻击。"
+					]
+				},
+				{
+					"name": "Frighten Foes (Costs 3 Actions)",
+					"entries": [
+						"战神的目标是在其30英尺范围内可以看到的最多五个生物。每个目标必须在一个{@dc 18}的智慧救赎中成功，否则就会被战神{@condition frightened}，直到战神的下一个回合结束。任何在军阀5英尺范围内的目标在蓄力投掷上都有劣势。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG",
+				"RW",
+				"MLW"
+			],
+			"attachedItems": [
+				"flail|phb",
+				"glaive|phb",
+				"longbow|phb"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Squadron Leader",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "13d8 + 39"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 14,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"str": "+6",
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+6",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Formation Tactics",
+					"entries": [
+						"中队队长和其30英尺范围内的每个盟友，在与至少一个盟友的5英尺范围内，对被{@condition charmed}、{@condition frightened}、{@condition grappled}或{@condition restrained}的拯救动作有优势。"
+					]
+				},
+				{
+					"name": "Martial Advantage (1/Turn)",
+					"entries": [
+						"中队长可以对它用武器攻击击中的生物造成额外的7({@dice 2d6})伤害，如果该生物在中队长的盟友5英尺以内，而该盟友不是{@condition incapacitated}。"
+					]
+				},
+				{
+					"name": "Master of Tactics",
+					"entries": [
+						"中队长可以采取帮助行动作为奖励行动。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"中队长进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d8 + 3})砍击伤害，如果双手使用，则为8 ({@damage 1d10 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw}{@hit 6}击中，到达5英尺或范围30/120英尺，一个目标。{@h}6 ({@damage 1d6 + 3})穿刺伤害。"
+					]
+				}
+			],
+			"legendaryHeader": [
+				"中队领袖可以进行2次传奇行动，可从以下选项中选择。每次只能使用一种传奇行动选项，并且只能在另一个生物的回合结束时使用。中队领袖在其回合开始时恢复已使用的传奇行动。"
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"中队队长的移动速度达到了它的速度。另外，最多五个能看到和听到中队队长的盟友可以利用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"中队长的目标是它能看到的30英尺内的一个盟友。如果目标能看到并听到中队队长，它可以作为反应做出一次武器攻击。"
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"中队队长进行智慧（感知）检查。"
+					]
+				},
+				{
+					"name": "Defensive Position (Costs 2 Actions)",
+					"entries": [
+						"直到中队长的下一回合结束，每一个它所选择的能看到中队长的盟友，在每次被攻击击中或进行救赎时都可以掷出一个（%0%）。掷出的数字会从攻击卷中减去，或者加到蓄力投掷的总数中。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"javelin|phb",
+				"longsword|phb"
+			]
+		},
+		{
+			"name": "Skull Overlord",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 209,
+				"formula": "22d8 + 110"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 21,
+			"con": 20,
+			"int": 16,
+			"wis": 15,
+			"cha": 22,
+			"save": {
+				"dex": "+11",
+				"wis": "+8",
+				"cha": "+12"
+			},
+			"skill": {
+				"athletics": "+10",
+				"history": "+9",
+				"perception": "+8",
+				"stealth": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"languages": [
+				"all the languages it knew in life"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"骷髅头霸主是一个15级的施法者。它的法术能力是 \"魅力\"（法术救赎（%0%），用法术攻击命中率（%1%））。骷髅领主知道以下法术。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell poison spray}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell magic missile}",
+								"{@spell expeditious retreat}",
+								"{@spell thunderwave}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell darkness}",
+								"{@spell mirror image}",
+								"{@spell scorching ray}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell fear}",
+								"{@spell haste}",
+								"{@spell vampiric touch}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell ice storm}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell cone of cold}",
+								"{@spell dominate person}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell eyebite}",
+								"{@spell soul cage|XGE}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell plane shift}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell Abi-Dalzim's horrid wilting|XGE}",
+								"{@spell earthquake}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Avoidance",
+					"entries": [
+						"如果骷髅头霸主受到的效果允许它进行救赎，只受到一半的伤害，那么如果救赎成功，它就不会受到伤害，如果失败，则只受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"如果骷髅头霸主的拯救动作失败，它可以选择成功。"
+					]
+				},
+				{
+					"name": "Marshal Undead",
+					"entries": [
+						"除非骷髅头霸主是{@condition incapacitated}，否则它和它所选择的60英尺范围内的亡灵生物，对变成亡灵的效果在蓄力上有优势。"
+					]
+				},
+				{
+					"name": "Master of the Grave",
+					"entries": [
+						"在骷髅头霸主的60英尺范围内，骷髅头霸主的任何亡灵盟友都能以优势进行蓄力攻击，并且该盟友在那里开始回合时都会恢复（%0%）的命中率。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"骷髅头霸主进行了三次骨剑攻击。"
+					]
+				},
+				{
+					"name": "Bone Sword",
+					"entries": [
+						"{@atk mw} {@hit 11}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d8 + 5})砍击伤害加上14 ({@damage 4d6})坏死伤害。"
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"骷髅王的目标是它所看到的60英尺内的一个生物。目标必须在一个{@dc 20}宪法救赎中成功，如果救赎失败，将受到36({@damage 8d8})的坏死伤害，如果救赎成功，将受到一半的伤害。骷髅头霸主恢复的命中率等于所受伤害的一半。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"骷髅霸主的移动速度可以达到它的速度，而不会引起机会攻击。另外，最多五个能看到和听到骷髅头霸主的亡灵可以使用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Bolster Undead",
+					"entries": [
+						"骷髅头霸主的目标是它在60英尺范围内所能看到的最多五个亡灵。每个亡灵获得15({@dice 2d8 + 6})个临时打击点。"
+					]
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"骷髅头霸主施展了一个咒语。"
+					]
+				},
+				{
+					"name": "Command Undead (Costs 2 Actions)",
+					"entries": [
+						"最多五个能听到和看到骷髅头霸主的亡灵可以各自使用其反应来进行一次武器攻击。"
+					]
+				},
+				{
+					"name": "Life Drain (Costs 2 Actions)",
+					"entries": [
+						"骷髅头霸主使用了它的生命耗损。"
+					]
+				},
+				{
+					"name": "Summon Undead (Costs 3 Actions)",
+					"entries": [
+						"最多五个{@creature minotaur skeleton|mm|minotaur skeletons}或{@creature ogre zombie|mm|ogre zombies}的亡灵出现在骷髅头霸主30英尺范围内无人的地方，并保持到被消灭。以这种方式召唤的亡灵会在下一个可用的回合中进行主动滚动并采取行动。骷髅头霸主一次最多可以用这个能力召唤十个亡灵。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"T"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Psychic Commander",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 229,
+				"formula": "27d8 + 108"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+8",
+				"int": "+9"
+			},
+			"skill": {
+				"arcana": "+9",
+				"athletics": "+9",
+				"perception": "+6",
+				"persuasion": "+8"
+			},
+			"passive": 16,
+			"languages": [
+				"any two languages",
+				"telepathy 60 ft."
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Psionics)",
+					"headerEntries": [
+						"指挥官是一个8级的施法者。它与生俱来的法术能力是智力（法术保存（%0%））。它可以先天性地施展以下法术，不需要任何组件。"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell minor illusion}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell bane}",
+								"{@spell bless}",
+								"{@spell expeditious retreat}",
+								"{@spell sanctuary}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell augury}",
+								"{@spell detect thoughts}",
+								"{@spell enlarge/reduce}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell fear}",
+								"{@spell fly}",
+								"{@spell slow}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell locate creature}"
+							]
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"指挥官重新掷出一个失败的蓄力球。它必须使用新的投票。"
+					]
+				},
+				{
+					"name": "Rally the Troops",
+					"entries": [
+						"作为一个额外的行动，指挥官可以使用幻术来结束自己和它所看到的30英尺范围内的每个生物的（%0%）和（%1%）条件。"
+					]
+				},
+				{
+					"name": "Victory Before Battle (3/Day)",
+					"entries": [
+						"当指挥官掷出主动权时，它可以给自己和120英尺范围内它所选择的最多五个生物一个+10的主动权奖励。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"指挥官进行两次武器攻击，每次都可以用一次精神干扰来代替。"
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}12 ({@damage 2d6 + 5})砍击伤害加上7 ({@damage 2d6})力量伤害。"
+					]
+				},
+				{
+					"name": "Psychic Disruption",
+					"entries": [
+						"指挥官120英尺范围内的一个生物必须做一个{@dc 17}智力救赎动作。拯救失败时，目标会受到13（%1%）的精神伤害，并且在指挥官下一回合结束前第一次进行攻击卷或能力检查时，必须掷出（%2%）并从总数中减去掷出的数字。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Teleport",
+					"entries": [
+						"指挥官最多可以传送30英尺到它能看到的未被占用的空间。"
+					]
+				},
+				{
+					"name": "Commander's Sight",
+					"entries": [
+						"指挥官选择一个它能看到的60英尺内的生物。在指挥官的回合开始之前，指挥官的盟友在对该目标的攻击卷上有优势。"
+					]
+				},
+				{
+					"name": "Command Ally (Costs 2 Actions)",
+					"entries": [
+						"指挥官的目标是它能看到的30英尺内的一个盟友。该盟友可以进行一次武器攻击作为反应，并在攻击卷上获得优势。"
+					]
+				},
+				{
+					"name": "Psionics (Costs 2 Actions)",
+					"entries": [
+						"指挥官施展先天法术。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"X"
+			],
+			"damageTags": [
+				"S",
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Narzugon Elite",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 187,
+				"formula": "22d8 + 88"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 19,
+			"int": 18,
+			"wis": 16,
+			"cha": 20,
+			"save": {
+				"dex": "+7",
+				"con": "+10",
+				"cha": "+11"
+			},
+			"skill": {
+				"athletics": "+12",
+				"intimidation": "+11",
+				"perception": "+9"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"acid",
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"纳苏贡是一个10级的施法者。它的法术能力是魅力（法术救赎（%0%），用法术攻击命中率（%1%））。它有以下的圣骑士法术准备。"
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell command}",
+								"{@spell hellish rebuke}",
+								"{@spell searing smite}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell darkness}",
+								"{@spell scorching ray}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell dispel magic}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Death in Hellfire",
+					"entries": [
+						"当纳尔苏贡杀死一个生物时，该生物的灵魂会在{@dice 1d4}小时内从冥河中升起，成为阿弗纳斯的一个{@creature lemure}。如果该生物在那之前没有复活，只有用{@spell wish}法术或杀死雷姆并对该生物的原体施放{@spell true resurrection}才能使其恢复生命。构造物和魔鬼对这个效果免疫。"
+					]
+				},
+				{
+					"name": "Diabolical Sense",
+					"entries": [
+						"纳苏贡在感知善意生物的智慧（感知）检查中具有优势。"
+					]
+				},
+				{
+					"name": "Infernal Command",
+					"entries": [
+						"当Narzugon不是{@condition incapacitated}时，在它60英尺范围内的每个Narzugon的盟友都不能是{@condition charmed}或{@condition frightened}，并且可以在他们的攻击卷、能力检查和蓄力攻击中各加一个{@dice d4}。"
+					]
+				},
+				{
+					"name": "Infernal Tack",
+					"entries": [
+						"纳苏贡佩戴的马刺是（%0%）的一部分，它可以召唤它的（%1%）同伴。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"纳尔苏贡对法术和其他魔法效果的救赎有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"narzugon的武器攻击是神奇的。"
+					]
+				},
+				{
+					"name": "Mounted Combatant",
+					"entries": [
+						"narzugon可以迫使针对其坐骑的攻击改为针对它。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"narzugon可进行三次武器攻击。"
+					]
+				},
+				{
+					"name": "Hellfire Lance",
+					"entries": [
+						"{@atk mw} {@hit 12}击中，距离10英尺，一个目标。{@h}12 ({@damage 1d12 + 6})穿刺伤害加上22 ({@damage 4d10})火焰伤害。"
+					]
+				},
+				{
+					"name": "Terrifying Command",
+					"entries": [
+						"每个在narzugon周围60英尺内的非魔族的生物，如果能听到它的声音，就必须在一个{@dc 19}的魅力救赎中成功，否则就会成为它的{@condition frightened}。一个生物可以在它的每个回合结束时重复蓄力，如果成功则结束对它的影响。蓄力成功的生物会在24小时内免疫于这个纳尔苏贡的恐怖指令。"
+					]
+				},
+				{
+					"name": "Heal (1/Day)",
+					"entries": [
+						"纳苏贡或它接触到的一个生物，最多恢复100点命中率。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"纳兹贡或其坐骑的移动速度达到其速度。另外，最多五个能看到和听到纳木错的盟友可以使用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Hellfire Sweep (Costs 2 Actions)",
+					"entries": [
+						"麻醉枪扫过它的长矛，在60英尺的范围内释放地狱之火。该区域内的每个生物都必须做一个{@dc 19}灵巧的蓄力动作，蓄力失败会受到22({@damage 4d10})的火焰伤害，蓄力成功则受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Terrifying Command (Costs 2 Actions)",
+					"entries": [
+						"纳苏贡使用它的恐怖指令。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"F"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N"
+			],
+			"attachedItems": [
+				"hellfire lance|bgdia"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Mummy Warlord",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 256,
+				"formula": "27d8 + 135"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 14,
+			"wis": 20,
+			"cha": 18,
+			"save": {
+				"con": "+11",
+				"int": "+8",
+				"wis": "+11",
+				"cha": "+10"
+			},
+			"skill": {
+				"athletics": "+11",
+				"history": "+8",
+				"perception": "+11",
+				"persuasion": "+10",
+				"religion": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 21,
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"木乃伊战神可以重新掷出它失败的救赎。它必须使用新的卷轴。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"木乃伊战神在面对法术和其他魔法效果时，在蓄力攻击方面具有优势。"
+					]
+				},
+				{
+					"name": "Marshal Undead",
+					"entries": [
+						"除非木乃伊战神是{@condition incapacitated}，否则它和周围60英尺内的任何其他亡灵生物在面对变成亡灵的效果时，在拯救动作上有优势。"
+					]
+				},
+				{
+					"name": "Master of the Grave",
+					"entries": [
+						"在木乃伊战神的60英尺范围内，木乃伊战神的任何亡灵盟友都能以优势进行蓄力攻击，并且该盟友在开始其回合时都能恢复（%0%）的命中率。"
+					]
+				},
+				{
+					"name": "Mummy Rot",
+					"entries": [
+						"当木乃伊战神用近战武器攻击到一个生物时，它必须在一个{@dc 18}宪法救赎中成功，否则就会被木乃伊腐烂所诅咒。被诅咒的目标无法恢复命中率，并且每过24小时，其最大命中率会减少10（（%1%））。如果诅咒将目标的最大命中率降低到0，目标就会死亡，其身体会变成灰尘。诅咒持续到被{@spell remove curse}法术或其他魔法解除为止。拯救成功后，生物对该效果免疫，直到其下一回合结束。"
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"被摧毁的木乃伊战神在24小时内会获得一个新的身体，如果它的心脏是完整的，就会恢复所有的命中率并再次变得活跃。新的身体会出现在木乃伊战神心脏的5英尺范围内。"
+					]
+				},
+				{
+					"name": "Unholy Weapons",
+					"entries": [
+						"木乃伊战神的武器攻击是神奇的。当木乃伊战神用任何武器击中时，该武器会造成额外的（%0%）坏死伤害（包含在攻击中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"木乃伊战神可以使用其可怕的目光，并进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 11}击中，到达5英尺，一个目标。{@h}12 ({@damage 2d6 + 5})砍击伤害加上18 ({@damage 4d8})坏死伤害。"
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 11}命中，距离5英尺或范围20/60英尺，一个目标。{@h}8 ({@damage 1d6 + 5})穿刺伤害，如果用双手进行近身攻击，则为9 ({@damage 1d8 + 5})穿刺伤害，外加18 ({@damage 4d8})坏死伤害。"
+					]
+				},
+				{
+					"name": "Dreadful Glare",
+					"entries": [
+						"木乃伊战神的目标是它周围60英尺内它能看到的一个生物。如果目标能看到木乃伊领主，它必须对这个魔法进行{@dc 18}的智慧救赎，否则会变成{@condition frightened}，直到木乃伊领主的下一回合结束。如果目标以5分或更高的分数失败，它也会在相同的时间内变成（%2%）。蓄力成功的目标在接下来的24小时内对所有木乃伊、木乃伊领主和木乃伊军阀的可怕凝视免疫。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"木乃伊战神的移动速度达到了它的速度。另外，最多五个能看到和听到木乃伊战神的亡灵可以利用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"木乃伊领主进行一次武器攻击或使用其可怕的目光。"
+					]
+				},
+				{
+					"name": "Blinding Dust",
+					"entries": [
+						"木乃伊战神周围的尘埃和沙子神奇地旋转起来。在木乃伊战神周围5英尺范围内的每个生物都必须成功地进行一次 \"宪法救赎\"，否则会受到1%的伤害，直到该生物的下一回合结束。"
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"木乃伊战神的目标是它能看到的30英尺内的一个盟友。如果目标能看到并听到木乃伊战神的声音，它可以作为反应进行一次武器攻击，并在攻击卷上获得优势。"
+					]
+				},
+				{
+					"name": "Apprehend (Costs 2 Actions)",
+					"entries": [
+						"最多五个能看到和听到木乃伊战神的亡灵可以利用他们的反应来试图抓取他们范围内的一个生物。亡灵们可以抓捕同一个目标，也可以在不同的目标之间分头抓捕。"
+					]
+				},
+				{
+					"name": "Whirlwind of Sand (Costs 2 Actions)",
+					"entries": [
+						"木乃伊战神会神奇地变成一股沙旋风，最多可以移动60英尺，然后恢复到正常形态。在旋风状态下，木乃伊战神对所有伤害免疫，并且不能被{@condition grappled}、{@condition petrified}、{@condition prone}、{@condition restrained}或{@condition stunned}击倒。木乃伊战神所穿戴或携带的装备仍归其所有。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE",
+				"MLW"
+			],
+			"attachedItems": [
+				"maul|phb",
+				"spear|phb"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Guard Captain",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 12,
+			"int": 13,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"intimidation": "+4",
+				"perception": "+3",
+				"persuasion": "+4"
+			},
+			"passive": 13,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"护卫队长在对人的救赎上有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Alert",
+					"entries": [
+						"护卫队长在主动性的卷轴上有优势，而且在它有意识的时候不能被惊讶。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"警卫队长进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})砍击伤害，如果用双手进行近身攻击，则为7 ({@damage 1d10 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围80/320英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"警卫队长的移动速度可以达到它的速度。或者，最多五个能看到和听到警卫队长的警卫可以利用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Apprehend",
+					"entries": [
+						"一个能看到和听到守卫队长的守卫可以用它的反应来试图抓住一个在它范围内的生物。"
+					]
+				},
+				{
+					"name": "Detect",
+					"entries": [
+						"警卫队长进行智慧（感知）检查。"
+					]
+				},
+				{
+					"name": "Leadership (Costs 2 Actions)",
+					"entries": [
+						"直到护卫队长的下一个回合结束，护卫队长选择的每个能看到护卫队长的护卫可以在他们的攻击卷、能力检查和蓄力上各加一个（%0%）。如果护卫队长是{@condition incapacitated}，则此效果结束。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"MLW"
+			],
+			"attachedItems": [
+				"longsword|phb",
+				"shortbow|phb"
+			]
+		},
+		{
+			"name": "Goblin Warlord",
+			"source": "WC",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d6 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 14,
+			"int": 15,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"dex": "+4"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"intimidation": "+4",
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"军阀可以在其每个回合中采取脱离或隐藏行动作为奖励行动。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"战神进行两次近战攻击。"
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d6 + 2})砍击伤害。"
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围30/120英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"战神或其坐骑的移动速度达到其速度。另外，最多五个能看到和听到战神的地精可以使用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"战神的目标是它在30英尺范围内能看到的一个地精。如果地精能看到并听到军阀的声音，它可以作为反应进行一次武器攻击，并在攻击卷上获得优势。"
+					]
+				},
+				{
+					"name": "Leadership (Costs 2 Actions)",
+					"entries": [
+						"直到战神的下一个回合结束，战神选择的每个能看到战神的地精都可以在他们的攻击卷、能力检查和蓄力攻击中各加一个（%0%）。如果军阀是{@condition incapacitated}，则此效果结束。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"S",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"MLW"
+			],
+			"attachedItems": [
+				"hand crossbow|phb",
+				"scimitar|phb"
+			]
+		},
+		{
+			"name": "Death Knight Elite",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 273,
+				"formula": "26d8 + 156"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 22,
+			"int": 16,
+			"wis": 17,
+			"cha": 23,
+			"save": {
+				"dex": "+8",
+				"wis": "+10",
+				"cha": "+13"
+			},
+			"skill": {
+				"athletics": "+13",
+				"intimidation": "+13",
+				"perception": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"死亡骑士是一个20级的施法者。它的法术能力是魅力（法术保存（%0%））。它有以下的圣骑士法术准备。"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell hellish rebuke}",
+								"{@spell searing smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkness}",
+								"{@spell hold person}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell bestow curse}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell staggering smite}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell destructive wave} (necrotic)",
+								"{@spell dominate person}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dread Lord",
+					"entries": [
+						"当在死亡骑士的60英尺范围内时，死亡骑士的任何盟友都能以优势进行蓄力投掷，并且该盟友在开始其回合时都会恢复（%0%）的命中率。"
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"如果死亡骑士的拯救动作失败，它可以选择成功。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"死亡骑士在面对法术和其他魔法效果时，在蓄力攻击方面具有优势。"
+					]
+				},
+				{
+					"name": "Marshal Undead",
+					"entries": [
+						"除非死亡骑士是（%0%），否则它和它周围60英尺内的不死生物对变成不死生物的效果免疫。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"死亡骑士进行了三次连枷攻击。"
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 13}击中，到达5英尺，一个目标。{@h}10 ({@damage 1d8 + 6})重击伤害加上27 ({@damage 6d8})坏死伤害。如果目标是中型或小型生物，它必须成功地进行{@dc 21}力量投掷或被击倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "Hellfire Orb {@recharge}",
+					"entries": [
+						"死亡骑士投掷一个魔法火球，在它周围120英尺内可以看到的地方爆炸。以该点为中心的20英尺半径范围内的每个生物都必须做一个{@dc 21}灵巧的救赎动作。球体在转角处扩散。如果救赎失败，生物会受到35({@damage 10d6})的火焰伤害和35({@damage 10d6})的坏死伤害，如果救赎成功，则受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Dreadful Aspect",
+					"entries": [
+						"死亡骑士散发着神奇的威胁。在死亡骑士30英尺范围内的每个敌人都必须在一个{@dc 21}的智慧救赎中成功，否则会在1分钟内被{@condition frightened}。如果一个{@condition frightened}的目标在离死亡骑士超过30英尺的地方结束其回合，该目标可以重复蓄力，成功后结束对自己的影响。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"死亡骑士在对抗一次会击中它的近战攻击时，会在其攻击力上加6。要做到这一点，死亡骑士必须看到攻击者并且挥舞着近战武器。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"死亡骑士或其坐骑的移动速度达到其速度。另外，最多五个能看到和听到死亡骑士的盟友可以使用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Apprehend (Costs 2 Actions)",
+					"entries": [
+						"最多五个能看到和听到死亡骑士的盟友可以使用他们的反应来尝试抓取他们范围内的一个生物。所有盟友可以抓捕同一个目标，也可以在不同的目标之间分头抓捕。"
+					]
+				},
+				{
+					"name": "Dreadful Aspect (Costs 2 Actions)",
+					"entries": [
+						"死亡骑士使用 \"可怕的方面\"。"
+					]
+				},
+				{
+					"name": "Flail (Costs 2 Actions)",
+					"entries": [
+						"死亡骑士进行了一次挥舞武器的攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"F"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"MLW"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"R",
+				"T",
+				"Y"
+			],
+			"attachedItems": [
+				"flail|phb"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Bone Knight",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"armor scraps",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 16,
+			"int": 14,
+			"wis": 10,
+			"cha": 13,
+			"skill": {
+				"intimidation": "+3",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft"
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"骨骑士进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}6 ({@damage 1d8 + 2})重击伤害。"
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4}击中，范围30/120英尺，一个目标。{@h}5 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"骨骑士的移动速度达到了它的速度。另外，最多五个能看到和听到骨骑士的亡灵可以利用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Apprehend (Costs 2 Actions)",
+					"entries": [
+						"最多五个能看到和听到骨骑士的亡灵可以利用他们的反应来尝试抓取他们范围内的一个生物。这些亡灵可以抓捕同一个目标，也可以在不同的目标之间分头抓捕。"
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 2 Actions)",
+					"entries": [
+						"骨骑士的目标是它在30英尺内能看到的一个敌人。如果目标能看到和听到它，那么目标必须在一个{@dc 11}的智慧救赎上成功，否则就会被{@condition frightened}，直到骨骑士的下一个回合结束。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"MLW"
+			],
+			"attachedItems": [
+				"flail|phb",
+				"hand crossbow|phb"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Barbarian Leader",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 17,
+			"int": 10,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"str": "+5",
+				"con": "+5"
+			},
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+5"
+			},
+			"passive": 11,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"any one language"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Reckless",
+					"entries": [
+						"在它的回合开始时，野蛮人首领可以在它在该回合所做的所有近战武器攻击卷上获得优势，但对它的攻击卷有优势，直到下一回合开始。"
+					]
+				},
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"当野蛮人首领没有穿戴盔甲时，它的交流率包括它的体质修正值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"野蛮人领袖进行一次武器攻击并使用集结号。"
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d12 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"{@atk mw,rw}{@hit 5}命中，距离5英尺或范围20/60英尺，一个目标。{@h}6 ({@damage 1d6 + 3})砍击伤害。"
+					]
+				},
+				{
+					"name": "Rallying Cry",
+					"entries": [
+						"野蛮人首领在其30英尺范围内选择一个它能看到的盟友。如果该盟友能看到或听到野蛮人首领，它就会获得10个临时命中率，并在1分钟内不能被（%0%）。"
+					]
+				}
+			],
+			"legendaryHeader": [
+				"野蛮人领袖可以进行2个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作选项，并且只能在另一个生物的回合结束时使用。野蛮人领袖在其回合开始时恢复已用传奇动作。"
+			],
+			"legendary": [
+				{
+					"name": "Charge",
+					"entries": [
+						"野蛮人首领的移动速度达到了它的速度。"
+					]
+				},
+				{
+					"name": "Rallying Cry",
+					"entries": [
+						"野蛮人领袖使用集结号。"
+					]
+				},
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"野蛮人领袖进行一次武器攻击。"
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"野蛮人首领的目标是它能看到的30英尺内的一个盟友。如果目标能看到并听到野蛮人首领的声音，它可以作为反应做出一次武器攻击。"
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 2 Actions)",
+					"entries": [
+						"野蛮人首领的目标是30英尺内它能看到的一个敌人。如果目标能看到和听到它，那么目标必须在一个{@dc 13}的智慧救赎上成功，否则就会被{@condition frightened}，直到野蛮人首领的下一回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Reckless"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"greataxe|phb",
+				"handaxe|phb"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Banneret",
+			"source": "WC",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 143,
+				"formula": "22d8 + 44"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+9",
+				"perception": "+7",
+				"persuasion": "+8"
+			},
+			"passive": 17,
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Indomitable (2/Day)",
+					"entries": [
+						"旗手重新掷出失败的蓄力。它必须使用新的投票。"
+					]
+				},
+				{
+					"name": "Martial Advantage",
+					"entries": [
+						"在它的每个回合中，旗手可以对它用武器攻击击中的生物造成额外的7({@dice 2d6})伤害，如果该生物在旗手的盟友的5英尺内，而该盟友不是{@condition incapacitated}。"
+					]
+				},
+				{
+					"name": "Rally",
+					"entries": [
+						"当旗手不是{@condition incapacitated}时，它和30英尺内的盟友对被{@condition charmed}或{@condition frightened}的拯救有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"旗手会进行三次武器攻击，并使用战场激励或集结号。"
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw}{@hit 9}命中，距离5英尺或范围30/120英尺，一个目标。{@h}8 ({@damage 1d6 + 5})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Battlefield Inspiration",
+					"entries": [
+						"旗手选择30英尺范围内它能看到的最多三个盟友。直到班纳特的下一个回合结束，每个目标都可以在其攻击卷和蓄力动作上增加一个（%0%）。"
+					]
+				},
+				{
+					"name": "Rallying Cry",
+					"entries": [
+						"旗手选择一个它能看到的30英尺内的盟友。如果这个盟友能看到或听到旗手，它就会获得15个临时命中率，并在1分钟内不能被{@condition charmed}或{@condition frightened}。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Bulwark",
+					"entries": [
+						"当一个在旗手30英尺范围内的盟友投篮失败时，旗手可以消耗一次 \"不屈不挠 \"来让盟友重新投篮。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"旗手的移动速度达到了它的速度。另外，最多三个能看到和听到旗手的盟友可以使用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Command Ally",
+					"entries": [
+						"旗手的目标是它能看到的30英尺内的一个盟友。如果目标能看到并听到旗手的声音，它可以进行一次武器攻击作为反应。"
+					]
+				},
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"旗手进行了一次武器攻击。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"attachedItems": [
+				"javelin|phb"
+			]
+		},
+		{
+			"name": "Demon General",
+			"shortName": "general",
+			"source": "WC",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 149,
+				"formula": "13d12 + 65"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 15,
+			"con": 21,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"str": "+10",
+				"con": "+9",
+				"wis": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+4",
+				"perception": "+4"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				{
+					"immune": [
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Aura of Slaughter",
+					"entries": [
+						"除非将军是（%0%），否则它30英尺内的每个盟友都不能是（%1%）或（%2%），并且在攻击卷和能力检查上有优势。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"将军在面对法术和其他魔法效果时，在蓄力攻击方面具有优势。"
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"将军对物体和结构造成双倍伤害。"
+					]
+				},
+				{
+					"name": "Unbreakable (3/Day)",
+					"entries": [
+						"如果将军在其回合开始时是{@condition incapacitated}，则导致该条件的效果立即在将军身上结束。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"将军进行两次近战攻击。"
+					]
+				},
+				{
+					"name": "Demonic Weapon",
+					"entries": [
+						"{@atk mw} {@hit 10}击中，到达5英尺，一个目标。{@h}19 ({@damage 3d8 + 6})的砍击伤害，目标必须在{@dc 18}力量救赎中成功，否则被击倒{@condition prone}。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Advance",
+					"entries": [
+						"将军的移动速度达到了它的速度。另外，最多五个能看到和听到将军的盟友可以利用他们的反应来移动到他们速度的一半。"
+					]
+				},
+				{
+					"name": "Frighten Foe (Costs 2 Actions)",
+					"entries": [
+						"将军的目标是30英尺内它能看到的一个敌人。如果目标能看到并听到它的声音，那么目标必须在一个{@dc 17}的智慧救赎上成功，否则就会被{@condition frightened}，直到将军的下一个回合结束。"
+					]
+				},
+				{
+					"name": "Overwhelming Assault (Costs 3 Actions)",
+					"entries": [
+						"最多五个能听到和看到将军的盟友可以各自使用他们的反应来进行一次武器攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			]
+		}
+	],
+	"makebrewCreatureTrait": [
+		{
+			"name": "Bolster",
+			"source": "WC",
+			"entries": [
+				"当在<$name$>的30英尺范围内时，<$name$>的任何盟友都能以优势进行蓄力，并且该盟友每当在那里开始其回合时，都会恢复1d6的命中率。"
+			]
+		},
+		{
+			"name": "Inspiring Presence",
+			"source": "WC",
+			"entries": [
+				"当<$name$>没有丧失能力时，<$name$>周围30英尺内的任何盟友都不会被吓到，而且该盟友每当在那里开始其回合时，都会获得与<$name$>的魅力修改器相等的临时命中率。"
+			]
+		},
+		{
+			"name": "Master of Tactics",
+			"source": "WC",
+			"entries": [
+				"<$name$>可以采取{@action Help}的行动作为奖励行动。"
+			]
+		},
+		{
+			"name": "Rally",
+			"source": "WC",
+			"entries": [
+				"当<$$$>没有丧失能力时，<$$$>周围30英尺内的每个盟友都不能被迷惑或惊吓。"
+			]
+		},
+		{
+			"name": "Tactical Discipline",
+			"source": "WC",
+			"entries": [
+				"在战斗中，<$name$>在所有的能力检查和蓄力投掷上都有优势。"
+			]
+		}
+	]
+}

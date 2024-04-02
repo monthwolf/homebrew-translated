@@ -1,0 +1,231 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CircleOfTheSeasons",
+				"abbreviation": "CotS",
+				"full": "Circle of the Seasons",
+				"url": "https://homebrewery.naturalcrit.com/share/3r8qVJVhuIhB",
+				"authors": [
+					"Korvinagor"
+				],
+				"convertedBy": [
+					"Korvinagor"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1683857260,
+		"dateLastModified": 1708448828,
+		"_dateLastModifiedHash": "0f9cbfb9bf"
+	},
+	"subclass": [
+		{
+			"name": "Circle of the Seasons",
+			"source": "CircleOfTheSeasons",
+			"shortName": "Seasons",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Circle of the Seasons|Druid||Seasons|CircleOfTheSeasons|2",
+				"Blessings of the Cycle|Druid||Seasons|CircleOfTheSeasons|6",
+				"Call Solstice, Call Equinox|Druid||Seasons|CircleOfTheSeasons|10",
+				"Hidden Star in Four Seasons|Druid||Seasons|CircleOfTheSeasons|14"
+			],
+			"subSubclassSpells": {
+				"Summer": [
+					"Fire Bolt",
+					"Magic Missile",
+					"Scorching Ray",
+					"Fireball",
+					"Sickening Radiance|xge",
+					"Dawn|xge"
+				],
+				"Autumn": [
+					"Mind Sliver|tce",
+					"Bane",
+					"Blindness/Deafness",
+					"Slow",
+					"Compulsion",
+					"Synaptic Static|tce"
+				],
+				"Winter": [
+					"Ray of Frost",
+					"Shield",
+					"Invisibility",
+					"Fear",
+					"Otiluke's Resilient Sphere",
+					"Wall of Force"
+				],
+				"Spring": [
+					"Minor Illusion",
+					"Bless",
+					"Aid",
+					"Thunder Step|xge",
+					"Death Ward",
+					"Holy Weapon|xge"
+				]
+			}
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of the Seasons",
+			"source": "CircleOfTheSeasons",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Seasons",
+			"subclassSource": "CircleOfTheSeasons",
+			"level": 2,
+			"entries": [
+				"在炎热的夏季激情之后，紧随其后的是凋零的秋天，很快就会迎来难以捉摸的冬季喘息，只为在春天重新绽放生命。于是这个过程不断重复，一次又一次。",
+				"季节之环德鲁伊(revere this constant cycle)崇敬这个永恒的循环，借助大地的无数阶段来赋予他们的魔法以类似的多变性，并适应手头的任何情况。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Call Summer, Autumn, Winter, Spring|Druid|PHB|Seasons|CircleOfTheSeasons|2"
+				}
+			]
+		},
+		{
+			"name": "Call Summer, Autumn, Winter, Spring",
+			"source": "CircleOfTheSeasons",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Seasons",
+			"subclassSource": "CircleOfTheSeasons",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Seasons feature}",
+				"作为一个动作，你可以消耗你的野性变身特性的使用次数，通过自己召唤一个季节的本质，暂时利用它的力量。",
+				"召唤一个季节将使你可以在下面的季节法术表中获得对应的法术，以及你可以选择一个额外的德鲁伊零级法术。这些法术的施法能力为感知。",
+				"这种变身持续8小时。如果你解除它（无需动作）、达到{@condition incapacitated}、死亡或再次使用这个特性，它会提前结束。",
+				{
+					"type": "table",
+					"caption": "Seasonal Spells",
+					"colLabels": [
+						"Druid Level",
+						"Summer's Assault",
+						"Autumn's Decline",
+						"Winter's Protection",
+						"Spring's Resurgence"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2.5",
+						"col-2.5",
+						"col-2.5",
+						"col-2.5"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell fire bolt}, {@spell magic missile}",
+							"{@spell bane}, {@spell mind sliver|tce}",
+							"{@spell ray of frost}, {@spell shield}",
+							"{@spell bless}, {@spell minor illusion}"
+						],
+						[
+							"3rd",
+							"{@spell scorching ray}",
+							"{@spell blindness/deafness}",
+							"{@spell invisibility}",
+							"{@spell aid}"
+						],
+						[
+							"5th",
+							"{@spell fireball}",
+							"{@spell slow}",
+							"{@spell fear}",
+							"{@spell thunder step|xge}"
+						],
+						[
+							"7th",
+							"{@spell sickening radiance|xge}",
+							"{@spell compulsion}",
+							"{@spell otiluke's resilient sphere}",
+							"{@spell death ward}"
+						],
+						[
+							"9th",
+							"{@spell dawn|xge}",
+							"{@spell synaptic static|xge}",
+							"{@spell wall of force}",
+							"{@spell holy weapon|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Blessings of the Cycle",
+			"source": "CircleOfTheSeasons",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Seasons",
+			"subclassSource": "CircleOfTheSeasons",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of the Seasons feature}",
+				"你接纳了你所召唤的季节的另一个特质，使你在变身时获得特殊的恩惠：",
+				{
+					"type": "entries",
+					"name": "Summer's Assault",
+					"entries": [
+						"每当你使用你的法术造成伤害时，你可以将你的熟练加值加到伤害结果中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Autumn's Decline",
+					"entries": [
+						"每当一个生物对你的法术的豁免检定失败时，你可以使其在其下一个回合结束前被你所{@condition charmed}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Winter's Protection",
+					"entries": [
+						"你在体质豁免检定上获得熟练加值，如果你已经熟练，那么在体质豁免检定上得到+2加值。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spring's Resurgence",
+					"entries": [
+						"每当你施放1级或更高级别的法术时，你可以使你选择的一个生物在你身边30英尺内获得临时生命值，数值等同于你的熟练加法术等级。如果它的生命值为0，它还会恢复1点生命值。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Call Solstice, Call Equinox",
+			"source": "CircleOfTheSeasons",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Seasons",
+			"subclassSource": "CircleOfTheSeasons",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Seasons feature}",
+				"你可以扩展你的野性变身特性的两次使用，同时召唤两个季节，利用它们交替的边界来融合它们各自的力量。这两个季节必须是相邻的 - 你不能同时召唤夏季和冬季，或秋季和春季。"
+			]
+		},
+		{
+			"name": "Hidden Star in Four Seasons",
+			"source": "CircleOfTheSeasons",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Seasons",
+			"subclassSource": "CircleOfTheSeasons",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Seasons feature}",
+				"借助于季节之力，你可以轻松地召唤它们，作为一个奖励动作。此外，每次你使用野性变身来召唤时，你可以施放一个你可用的季节法术中的三级或更低级法术，而不消耗法术位。"
+			]
+		}
+	]
+}

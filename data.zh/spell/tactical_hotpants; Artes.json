@@ -1,0 +1,5276 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Artes",
+				"abbreviation": "Artes",
+				"full": "Artes",
+				"authors": [
+					"tactical_hotpants"
+				],
+				"convertedBy": [
+					"Maal"
+				],
+				"version": "1.1",
+				"color": "f96c0b",
+				"url": "https://docs.google.com/document/d/1lkB8MmKyUQlECzSzwyo5L77vwk7Uvvi5ps00gJhTg7A/edit",
+				"targetSchema": "1.2"
+			},
+			{
+				"json": "ArtesExtra",
+				"abbreviation": "Artes+",
+				"full": "Artes Extra",
+				"authors": [
+					"Maal"
+				],
+				"convertedBy": [
+					"Maal"
+				],
+				"version": "1.1",
+				"color": "f96c0b",
+				"url": "https://www.reddit.com/r/dndnext/comments/zchdvy/martial_cantrips_artes_homebrew_project/jsphesu/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1671361149,
+		"dateLastModified": 1698825429,
+		"spellSchools": {
+			"AR": {
+				"full": "Arte",
+				"short": "Arte",
+				"color": "f96c0b"
+			}
+		},
+		"_dateLastModifiedHash": "50105ba180"
+	},
+	"book": [
+		{
+			"name": "Martial Cantrip / Artes",
+			"id": "Artes",
+			"published": "2021-09-28",
+			"group": "homebrew",
+			"source": "Artes",
+			"contents": [
+				{
+					"name": "Artes"
+				},
+				{
+					"name": "Customization"
+				},
+				{
+					"name": "FAQ"
+				},
+				{
+					"name": "Grand Artes"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "Artes",
+			"source": "Artes",
+			"data": [
+				{
+					"type": "section",
+					"name": "Artes",
+					"page": 1,
+					"entries": [
+						{
+							"type": "entries",
+							"page": 1,
+							"name": "Overview",
+							"entries": [
+								"{@filter Artes|spells|school=AR|subschool=!Grand}（也称为武术小术）是一种附加内容，旨在增强武术角色的力量和多样性。它们专门为那些没有使用小术的职业设计，旨在模拟小术的功能和伤害。"
+							]
+						},
+						{
+							"type": "entries",
+							"page": 1,
+							"name": "Classes",
+							"entries": [
+								"以下职业在1级时会学会2、3或4个技艺，分别在4级和10级时学习一个新技艺。当一个会使用技艺的角色升级时，他们可以用新的技艺替换他们已学会的一个技艺。",
+								"如果DM希望提供更多灵活性，一个懂得(**artes**)的角色可以在完成长休后用另一个(**arte**)替换他们已经掌握的一个(**arte**)。",
+								{
+									"type": "table",
+									"colLabels": [
+										"Class",
+										"Number of Artes at 1st Level"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6 text-center"
+									],
+									"rows": [
+										[
+											"铁匠, 圣骑士, 游侠",
+											"2"
+										],
+										[
+											"野蛮人 (Barbarian), 武僧 (Monk), 盗贼 (Rogue)",
+											"3"
+										],
+										[
+											"战士 (Fighter)",
+											"4"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"page": 1,
+							"name": "Casting Time",
+							"entries": [
+								"一个施法时间为\"1次攻击\"的{@filter arte|spells|school=AR|subschool=!Grand}可以作为额外攻击或类似功能的一部分使用（例如战争领域牧师的{@subclassFeature War Priest|Cleric||War||1}特性，或术士的{@optfeature Thirsting Blade}召唤），牺牲一次攻击将其作为攻击动作的一部分。你在回合中只能使用一个神器。为了在单个回合中施放多个法术，使用神器算作施放一个杀戮法术。"
+							]
+						},
+						{
+							"type": "entries",
+							"page": 1,
+							"name": "Arte Ability Modifier",
+							"entries": [
+								"一个{@filter arte's|spells|school=AR|subschool=!Grand}能力修正值是力量或敏捷（取两者中较高者）的能力修正值。这会设定豁免扑克牌 DC 并决定当一个技艺需要进行技艺攻击骰时你需要投掷的骰子。如果一个技艺需要武器作为材料组件，那么使用的能力分数是通常用于使用该武器进行攻击时的那个。在技艺列表上的零级技艺也算作技艺，并受到这些规则的约束。你的技艺豁免 DC 如下所示。",
+								"{@b Artes save DC} = 8 + 你的熟练加值 + 你的力量或敏捷调整值",
+								"在你的DM自行决定下，你可以使用不同的能力值来确定你的(Artes)豁免DC和(Arte)攻击投掷，如果这样更适合你的角色概念（比如一个专注于智力而不是敏捷的武僧，或者一个强调智力而不是力量的奥术骑士）。"
+							]
+						},
+						{
+							"type": "entries",
+							"page": 2,
+							"name": "Components",
+							"entries": [
+								"{@spell Booming Blade|TCE}和{@spell Green-Flame Blade|TCE}的物质成分被替换为\"一把近战武器\"，不再需要硬币价值。为了满足神器的物质成分要求，具有武僧{@classFeature Martial Arts|Monk||1}职业特性、{@feat Tavern Brawler}专长、{@optfeature Unarmed Fighting|tce}战斗风格或类似无需武器战斗方式的角色，即使徒手也被视为持有武器。",
+								"在DM的裁量下，如果游戏的风格是高飞的武侠风格，可以考虑取消武器要求，允许所有武术在无武器时使用。",
+								"如果一个法术有手势成分，那么它可以用握着的武器来施展，而不是空手。这意味着法术可以在握着双手武器或握着武器和盾牌时施展。"
+							]
+						},
+						{
+							"type": "list",
+							"page": 2,
+							"name": "Artes List",
+							"items": [
+								"{@spell Berserker's Brand|Artes}",
+								"{@spell Binding Blade|Artes}",
+								"{@spell Blade Ward|Artes}*PHB",
+								"{@spell Booming Blade|Artes}*TCE",
+								"{@spell Boreal Gale|Artes}",
+								"{@spell Cinder Surge|Artes}",
+								"{@spell Clean Sweep|Artes}",
+								"{@spell Conqueror's Glare|Artes}",
+								"{@spell Cyclone Surge|Artes}",
+								"{@spell Frigid Blade|Artes}",
+								"{@spell Flames of Punishment|Artes}",
+								"{@spell Green-Flame Blade|Artes}*TCE",
+								"{@spell Knight's Litany|Artes}",
+								"{@spell Lightning Lure|Artes}*TCE",
+								"{@spell Maledictor's Smite|Artes}",
+								"{@spell Parting Blaze|Artes}",
+								"{@spell Razor Gale|Artes}",
+								"{@spell Ruinous Rime|Artes}",
+								"{@spell Second Surge|Artes}",
+								"{@spell Sentry's Levin|Artes}",
+								"{@spell Shield Pitch|Artes}",
+								"{@spell Shield Slam|Artes}",
+								"{@spell Shockwave|Artes}",
+								"{@spell Shrapnel Shot|Artes}",
+								"{@spell Spirit Tether|Artes}",
+								"{@spell Storm Dance|Artes}",
+								"{@spell Sword As Shield|Artes}",
+								"{@spell Sword Burst|Artes}*TCE",
+								"{@spell Tailwind|Artes}",
+								"{@spell Thorn Whip|Artes}*PHB",
+								"{@spell Thunderclap|Artes}*元素之门",
+								"{@spell True Strike|Artes}*PHB",
+								"{@spell Tundral Slam|Artes}",
+								"{@spell Void Fang|Artes}",
+								"{@spell Waning Crescent|Artes}"
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								"* 带有星号的技艺原本是零级咒语，现在施放时间为1次攻击。",
+								"PHB代表着玩家手册(Player's Handbook)中的一个戏法(cantrip)。",
+								"PoTA代表着《风暴王座》中的一个杂耍。",
+								"TCE代表《塔莎的万物之锅》中的一个零级法术(cantrip)。"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"page": 11,
+					"name": "Customization",
+					"entries": [
+						{
+							"type": "entries",
+							"page": 11,
+							"name": "Multiclassing",
+							"entries": [
+								"在多职业转职时，学习新的{@filter artes|spells|school=AR|subschool=!Grand}与在施法职业中学习戏法咒语时一样对待。就像戏法咒语一样，技艺在更高等级时根据你的角色等级而不是特定职业等级提升能力。",
+								"同样地，上面\"职业\"部分列出的每个职业在其第4级和第10级职业等级时都会学习新的零级法术。将这些职业视为在其职业表上具有一个\"已知技艺\"列，就像许多施法职业表上的\"已知零级法术\"列一样。例如，如果你在战士职业中有1级，在盗贼职业中有1级，你将总共了解7个技艺，并且当你达到其中一个职业的第4级时会学习一个新的技艺。"
+							]
+						},
+						{
+							"type": "entries",
+							"page": 12,
+							"name": "Adaptation",
+							"entries": [
+								"如果一些{@filter artes|spells|school=AR|subschool=!Grand}不太适合你的战役，或者玩家角色想使用它们，但没有一个感觉合适，那么很容易通过更改它们的名称和伤害类型来进行调整。因为冰冷、火焰和闪电是《怪物手册》中抵抗力最强的伤害类型之一，它们通常应该具有最高的伤害骰。唯一的例外是如果一种神器已经造成武器伤害，那么它应该有一个低伤害骰，比如d4或d6。怪物很少抵抗力量、死灵、精神或光辉伤害，所以它们应该具有中等到低的伤害骰。",
+								"技艺也相对没有特定的风味，我鼓励任何使用它们的人添加自己的风格或更改技艺的名称。例如，如果一个野蛮人角色学会了{@spell Parting Blaze|Artes}，这个技艺的火焰伤害可以被描述为一只兽性的火焰之爪，当他们挥动武器时跟随着攻击目标。",
+								"你可以通过不仅仅是重新命名技能，而且通过按风格、伤害类型或功能对它们进行分组来增添额外的特色。例如，也许以移动为中心的技能（比如{@spell Storm Dance|Artes}和{@spell Parting Blaze|Artes}）是由一支精英步兵部队创造的，或者所有基于闪电的技能（比如{@spell Lightning Lure|Artes}、{@spell Second Surge|Artes}和{@spell Storm Dance|Artes}）是由一群崇拜风暴神的战士僧侣开发的，又或者所有防御技能（比如{@spell Blade Ward|Artes}、{@spell Booming Blade|Artes}、{@spell Flames of Punishment|Artes}和{@spell Sword as Shield|Artes}）属于某个王国皇家卫队的标志性风格。"
+							]
+						},
+						{
+							"type": "entries",
+							"page": 12,
+							"name": "Feats",
+							"entries": [
+								"如果你在你的战役中包含了(`artes`)，以下的技能可以作为你的玩家的选择之一。",
+								{
+									"type": "list",
+									"items": [
+										"{@feat Martial Scholar|Artes}",
+										"{@feat Swift Artes|Artes}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"page": 13,
+					"name": "FAQ",
+					"entries": [
+						"问：这是为谁准备的？",
+						"A: 从机械角度来看，武术法术 / 技能是为了让DMs（Dungeon Masters）给予武术角色玩家更多在战斗中的选择，而不仅仅是一遍又一遍地使用普通攻击。",
+						"问：那么关于动漫迷战斗魔法风格呢？",
+						"A: 在口味上，这是为那些希望为战士们增添更多调味的人而设计的，而不仅仅是'普通拿着武器和盔甲的家伙' -- 这种口味可以来自于现实世界神话英雄(如卡德墨斯(Cadmus), 比斯马(Bhishma), 贝奥武夫(Beowulf), 罗兰(Roland), 库罗伊(Cu Roi), 阿拉什(Arash), 贝迪维尔(Bedivere), 迪欧米德(Diomedes)等)，通过视频游戏和日本动漫，通过中国武侠小说，以及许多其他灵感来源。",
+						"问：我是一个无聊的人，除非我的巫师精灵游戏涉及怪物和魔法发生在历史欧洲的完美再现中，否则我无法激动起来。你能为我专门制作这些特殊的平凡、非魔法版本吗？",
+						"A: 不行。如果你想要这些武术咒语的普通非魔法版本，那就自己创造吧。改变现有技艺的伤害类型、风味和名称以适应你的口味应该对你来说很容易，因为像你这样的人有很多吸走乐趣的经验。",
+						"问：这些被认为是魔法物品，因此受到有关反魔法的规则约束吗？",
+						"A: 只有在符合你的游戏设定时才这样做。默认假设是它们遵循与其他武术零级法术相同的逻辑（作为一种魔法），比如{@spell Booming Blade|TCE}，{@spell Green-Flame Blade|TCE}和{@spell Sword Burst|TCE}。如果在你的设定中将其解释为气而不是魔法更合理，那就这样做。",
+						"Q: 这不是太过强大了吗？",
+						"A: 它不仅没有过分强大，而且几乎是普通的强度。零级法术的伤害确实会增加总体伤害输出，但增加的数量并不显著，而且这些效果都不会特别破坏游戏平衡。它们的效果是根据现有的零级法术建模的，这些法术在连续回合中重复使用时是平衡的。",
+						"问：但是平衡游戏 (`game balance`)。",
+						"A: D&D 5e已经是一个严重失衡的游戏，非常偏向施法者。在施法者开启通往其他存在平面的裂缝、召唤闪电、变身为元素生物、制造不死生物、石化敌人和控制思维的等级上，一个武者可能只是第三次攻击，对潜行攻击或神圣打击造成额外的伤害骰子，或者获得全职施法者八级前就拥有的法术。",
+						"我保证让战斗角色使用战斗动作中的低阶咒语和等效物并不会破坏你的游戏，只会让战斗角色的玩家在战斗中更加享受乐趣。"
+					]
+				},
+				{
+					"type": "section",
+					"page": 14,
+					"name": "Grand Artes",
+					"entries": [
+						{
+							"type": "entries",
+							"page": 14,
+							"name": "Overview",
+							"entries": [
+								"{@filter Grand artes|spells|school=AR|subschool=Grand} 大法术是{@filter artes|spells|school=AR|subschool=!Grand}的可选进阶。它们比法术更强大，但在休息之间的使用次数有限。许多职业已经有多个需要追踪的资源，因此这些规则可能并不适合每个游戏。如果你认为某个武术职业或子职业实力不足或缺乏多样性，并希望为其提供超越法术所提供的增益，请考虑允许该职业的角色使用大法术。"
+							]
+						},
+						{
+							"type": "entries",
+							"page": 14,
+							"name": "Progression",
+							"entries": [
+								"所有学习技艺的职业在5级时也会学会一个{@filter grand arte|spells|school=AR|subschool=Grand}，可以使用一次，直到你完成短暂或长时间休息前不能再次使用。在9级时，你学会第二个大技艺，每次休息之间总共可以使用两次；在13级时，你学会第三个大技艺，每次休息之间总共可以使用三次。",
+								{
+									"type": "table",
+									"colLabels": [
+										"Character Level",
+										"Grand Artes Known",
+										"Uses per Short Rest"
+									],
+									"colStyles": [
+										"col-4 text-center",
+										"col-4 text-center",
+										"col-4 text-center"
+									],
+									"rows": [
+										[
+											"5",
+											"1",
+											"1"
+										],
+										[
+											"9",
+											"2",
+											"2"
+										],
+										[
+											"13",
+											"3",
+											"3"
+										]
+									]
+								},
+								"当一个角色在升级时，如果他们掌握了一个伟大艺术，他们可以用另一个伟大艺术替换其中一个。可选地，如果DM希望提供更多灵活性，一个掌握了伟大艺术的角色可以在完成一次长休后，用另一个伟大艺术替换其中一个。",
+								"大绝技也会随着角色等级提高而增加伤害，分别在第9级、第13级和第17级时增加一颗伤害骰。这些信息已包含在每个大绝技的描述中。"
+							]
+						},
+						{
+							"type": "list",
+							"page": 14,
+							"name": "Artes List",
+							"items": [
+								"{@spell Cocytean Gavel|Artes}",
+								"{@spell Cometary Collision|Artes}",
+								"{@spell Converging Echoes|Artes}",
+								"{@spell Divine Battlecry|Artes}",
+								"{@spell Falling Star|Artes}",
+								"{@spell Maelstrom Blade|Artes}",
+								"{@spell Magmatic Blast|Artes}",
+								"{@spell Ricochet Shield|Artes}",
+								"{@spell Ride the Lightning|Artes}",
+								"{@spell Round Trip|Artes}",
+								"{@spell Sea of Swords|Artes}",
+								"{@spell Spectral Phalanx|Artes}",
+								"{@spell War God's Wrath|Artes}",
+								"{@spell Warp Strike|Artes}"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Berserker's Brand",
+			"source": "Artes",
+			"page": 3,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将诅咒注入武器，让目标的心灵充满对你的愤怒。在使用这个技艺的同时进行一次近战武器攻击。命中后，目标遭受武器攻击的正常效果，并在你下个回合开始前对除你以外的目标的攻击投掷有劣势。",
+				"从5级开始，这个技能的武器攻击额外造成{@damage 1d6}的心灵伤害。在11级时，这个技能的心灵伤害增加{@dice 1d6}，在17级时再次增加({@damage 2d6})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "psychic damage",
+					"scaling": {
+						"5": "1d6",
+						"11": "2d6",
+						"17": "3d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d6",
+						"psychic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/death/skull-weapon-staff-glow-pink.webp"
+		},
+		{
+			"name": "Binding Blade",
+			"source": "Artes",
+			"page": 3,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你的攻击召唤了幽灵锁链，缠绕住目标的身体并将其固定在原地。在使用这个技艺的同时进行一次武器攻击。命中后，目标受到武器攻击的正常效果，如果目标是大型或更小，它的移动范围将受到限制。直到目标的下一个回合结束前，如果它在使用这个技艺时移动超过15英尺远离原位，它将受到{@damage 1d6}的力量伤害，并且无法再移动。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "force damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/control/debuff-energy-hold-green.webp"
+		},
+		{
+			"name": "Blade Ward",
+			"source": "Artes",
+			"page": 2,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你伸出手，在空中划过一个驱逐的符文。直到你的下一个回合结束前，你对武器攻击造成的钝击、穿刺和砍击伤害具有抗性。"
+			],
+			"damageResist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special"
+			},
+			"foundryImg": "icons/skills/melee/sword-damaged-broken-blue.webp"
+		},
+		{
+			"name": "Booming Blade",
+			"source": "Artes",
+			"page": 2,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你挥舞着用于施法的武器，对你身边5英尺内的一个生物发动近战攻击。命中后，目标受到武器攻击的正常效果，然后被包裹在隆隆能量中，直到你下个回合开始。如果目标在此之前自愿移动5英尺或更多，目标会受到{@damage 1d8} 雷霆伤害，并且法术结束。",
+				"这个技能在你达到特定等级时会增加伤害。在5级时，近战攻击对目标造成额外 {@damage 1d8} 的雷霆伤害，被攻击目标移动时受到的伤害增加到 {@damage 2d8}。在11级时，这两次伤害骰都会增加1d8 ({@damage 2d8} 和 {@damage 3d8})，而在17级时再次增加 ({@damage 3d8} 和 {@damage 4d8})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "thunder damage on moving",
+					"scaling": {
+						"1": "1d8",
+						"5": "2d8",
+						"11": "3d8",
+						"17": "4d8"
+					}
+				},
+				{
+					"label": "thunder damage on hit",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8[on hit]",
+						"thunder"
+					]
+				],
+				"damage.versatile": "(floor(((@details.level + @details.spellLevel) + 1) / 6) + 1)d8[on willing movement]"
+			},
+			"foundryImg": "icons/skills/melee/strike-sword-slashing-red.webp"
+		},
+		{
+			"name": "Boreal Gale",
+			"source": "Artes",
+			"page": 3,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你挥舞着武器，向敌人召唤致命的冰霜浪潮。从你身上发出的一个15英尺立方体范围内的所有生物和物体必须通过与你的Artes豁免DC对抗的体质豁免检定，否则将受到{@damage 1d6}点冰冷伤害。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "cold damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"C"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"range.units": "self"
+			},
+			"foundryImg": "icons/magic/air/air-wave-gust-blue.webp"
+		},
+		{
+			"name": "Cinder Surge",
+			"source": "Artes",
+			"page": 4,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你的武器在命中目标时会散发炽热、闪烁的火焰微粒，燃烧目标及其附近的任何东西。在使用这个神器时进行一次武器攻击。命中后，目标承受武器的正常效果，并且目标及目标周围5英尺范围内的所有生物和物体（除了你）会受到{@damage 1d4}火焰伤害。",
+				"这个技能的伤害在你达到5级({@damage 2d4})、11级({@damage 3d4})和17级({@damage 4d4})时增加了{@dice 1d4}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "fire damage",
+					"scaling": {
+						"1": "1d4",
+						"5": "2d4",
+						"11": "3d4",
+						"17": "4d4"
+					}
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"AAD",
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/skills/melee/strike-hammer-destructive-orange.webp"
+		},
+		{
+			"name": "Clean Sweep",
+			"source": "Artes",
+			"page": 4,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤一股水流围绕着你，冲向你的敌人并迫使他们后退。在你周围5英尺范围内的所有生物和物体（除了你自己），必须通过一次力量豁免检定，否则将受到{@damage 1d6}的钝击伤害并被推离你5英尺。在你周围5英尺范围内的每个空间都被淋湿，每个空间会被1加仑的水淋湿，这些水会在你的回合结束时蒸发。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。",
+				"在11级时，目标被推动的距离从5英尺增加到10英尺。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV",
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "5",
+				"target.units": "ft",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/water/vortex-water-whirlpool.webp"
+		},
+		{
+			"name": "Conqueror's Glare",
+			"source": "Artes",
+			"page": 4,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将愤怒凝聚成一道威慑的眼神，只用你的战斗气场攻击一个敌人。你能看到的范围内的一只生物必须通过一次感知豁免检定，检定 DC 为你的艺术豁免 DC，否则会受到 {@damage 1d6} 精神伤害，并且直到你的下一个回合结束前，无法自愿向你移动。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "psychic damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature"
+			},
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp"
+		},
+		{
+			"name": "Cyclone Surge",
+			"source": "Artes",
+			"page": 4,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将你的武器注入元素之风，发动一次攻击，用狂暴的狂风击打你的敌人。在使用这个技艺的过程中进行一次武器攻击。命中后，目标遭受武器攻击的正常效果，若目标是大型或更小，则被推离你5英尺。",
+				"这个神器的伤害会随着你达到一定等级而增加。在5级时，武器攻击对目标造成额外{@damage 1d8}的钝击伤害。这个神器的钝击伤害会在11级时增加{@damage 1d8}，在17级时增加{@damage 2d8}。",
+				"在11级时，目标被推动的距离从5英尺增加到10英尺。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"AAD",
+				"FMV",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8",
+						"bludgeoning"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/air/wind-tornado-spiral-blue-gray.webp"
+		},
+		{
+			"name": "Flames of Punishment",
+			"source": "Artes",
+			"page": 5,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"火焰从你的武器中飞出，环绕着你的敌人，威胁地漂浮在他们周围，准备好在他们胆敢攻击你的盟友时发动攻击。在使用这个技艺的同时进行一次武器攻击。命中后，目标受到武器攻击的正常效果，并被摇曳的火焰环绕，直到你的下一个回合开始。如果目标在此之前对除你以外的生物造成伤害，目标将受到等同于你技艺能力修正值的伤害，并且技艺效果结束。",
+				"这个武器在你达到一定等级时会增加伤害。在5级时，近战攻击对目标造成额外{@damage 1d8}的火焰伤害，目标受到攻击时的伤害增加到{@damage 1d8} + 你的武器能力调整值。在11级时，这两个伤害骰都会增加{@damage 1d8} ({@damage 2d8} 和 {@damage 2d8})，并在17级时再次增加 ({@damage 3d8} 和 {@damage 3d8})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "fire damage on attacking another target",
+					"scaling": {
+						"1": "{{spellcasting_mod}}",
+						"5": "1d8 + {{spellcasting_mod}}",
+						"11": "2d8 + {{spellcasting_mod}}",
+						"17": "3d8 + {{spellcasting_mod}}"
+					}
+				},
+				{
+					"label": "fire damage on hit",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"ability": "str",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8[on hit]",
+						"fire"
+					]
+				],
+				"damage.versatile": "@mod + (floor(((@details.level + @details.spellLevel) + 1) / 6))d8[on attacking another target]"
+			},
+			"foundryImg": "icons/magic/fire/flame-burning-chain.webp"
+		},
+		{
+			"name": "Green-Flame Blade",
+			"source": "Artes",
+			"page": 2,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你挥舞着用于施法的武器，对一个生物进行近战攻击。命中后，目标遭受武器攻击的正常效果，并且你可以让绿色火焰从目标跳跃到你能看到的另一个生物身上，距离不超过5英尺。第二个生物受到等同于你的艺术能力修正值的火焰伤害。",
+				"这个技艺在你达到特定等级时会增加伤害。在5级时，近战攻击对目标造成额外{@damage 1d8}的火焰伤害，第二个生物的火焰伤害增加到{@damage 1d8} + 你的技艺能力调整值。在11级时，这两个伤害骰增加{@damage 1d8} ({@damage 2d8} 和 {@damage 2d8})，而在17级时增加到{@damage 3d8}和{@damage 3d8}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "fire damage to secondary creature",
+					"scaling": {
+						"1": "{{spellcasting_mod}}",
+						"5": "1d8 + {{spellcasting_mod}}",
+						"11": "2d8 + {{spellcasting_mod}}",
+						"17": "3d8 + {{spellcasting_mod}}"
+					}
+				},
+				{
+					"label": "fire damage on hit",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"ability": "str",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8[on hit]",
+						"fire"
+					]
+				],
+				"damage.versatile": "@mod + (floor(((@details.level + @details.spellLevel) + 1) / 6))d8[splash]"
+			},
+			"foundryImg": "icons/weapons/swords/greatsword-evil-green.webp"
+		},
+		{
+			"name": "Frigid Blade",
+			"source": "Artes",
+			"page": 5,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"当你攻击时，武器上结冰，然后蔓延到目标身上，阻碍他们的移动。在使用这个技艺时进行一次武器攻击。命中后，目标受到武器攻击的正常效果，并且其速度减少10英尺，直到你下一个回合开始。",
+				"从5级开始，这个技艺的武器攻击额外造成{@damage 1d8}的冰冷伤害。在11级时，这个技艺的冰冷伤害增加{@dice 1d8}，在17级时再次增加({@damage 2d8})。",
+				"在11级时，目标的速度减少20尺，而不是10尺。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "cold damage",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8",
+						"cold"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/water/strike-weapon-blade-ice-blue.webp"
+		},
+		{
+			"name": "Knight's Litany",
+			"source": "Artes",
+			"page": 6,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你说出一段祈祷，让你的武器和身体充满神圣之光，增强你的抗性。在使用这个技艺的同时进行一次武器攻击。命中后，目标遭受武器攻击的正常效果，如果目标是一个值得的敌人，你获得一个{@dice d4}，持续1分钟。你可以掷骰子，将掷出的数字加到一个技能检定或豁免投中。一旦掷出骰子，它就消失了。你一次只能拥有一个来自这个技艺的骰子。",
+				"从5级开始，这个技艺的武器攻击额外造成{@damage 1d6}辐射伤害。在11级时，这个技艺的辐射伤害增加{@dice 1d6}，在17级时再次增加({@damage 2d6})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "radiant damage",
+					"scaling": {
+						"5": "1d6",
+						"11": "2d6",
+						"17": "3d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d6",
+						"radiant"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/melee/sword-winged-holy-orange.webp"
+		},
+		{
+			"name": "Lightning Lure",
+			"source": "Artes",
+			"page": 2,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造一道闪电能量，打击你能看到的距离15英尺内的一个目标生物。目标必须成功进行一次力量豁免才能抵抗，否则将被拉向你10英尺的直线距离，然后如果目标在你5英尺内，则受到{@damage 1d8} 闪电伤害。",
+				"这个技能的伤害在你达到5级（{@damage 2d8}），11级（{@damage 3d8}）和17级（{@damage 4d8}）时增加了{@dice 1d8}。"
+			],
+			"scalingLevelDice": {
+				"label": "lightning damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV",
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"save.scaling": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "15",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/lightning/bolt-strike-sparks-teal.webp"
+		},
+		{
+			"name": "Maledictor's Smite",
+			"source": "Artes",
+			"page": 6,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你发出谴责之言，点燃你的武器为黑色火焰，施加一种诅咒，削弱敌人的抵抗力。在使用此技艺时进行一次武器攻击。命中后，目标受到武器攻击的正常效果，并在你的下一个回合结束前，每次进行豁免骰时，必须投掷一个{@dice d4}，并从该豁免骰中减去投掷的数字。",
+				"从5级开始，这个技能的武器攻击额外造成{@damage 1d6}点死灵伤害。这个技能的死灵伤害在11级时增加{@dice 1d6}点({@damage 2d6})，并在17级时再次增加{@damage 3d6}点({@damage 3d6})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "necrotic damage",
+					"scaling": {
+						"5": "1d6",
+						"11": "2d6",
+						"17": "3d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d6",
+						"necrotic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/death/weapon-sword-skull-purple.webp"
+		},
+		{
+			"name": "Ruinous Rime",
+			"source": "Artes",
+			"page": 6,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"当你使用这个神器时，寒意环绕着你的武器，当你攻击时会传播一种麻木的寒意给目标。作为使用这个神器的一部分，进行一次武器攻击。命中后，目标遭受武器攻击的正常效果，并且在你的下一个回合结束前，目标下次进行攻击时，必须投掷一个{@dice d4}，并从攻击骰中减去投掷的数字。",
+				"从5级开始，这个技艺的武器攻击额外造成{@damage 1d8}的冰冷伤害。在11级时，这个技艺的冰冷伤害增加{@dice 1d8}，在17级时再次增加({@damage 2d8})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "cold damage",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8",
+						"cold"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/melee/strike-weapon-polearm-ice-blue.webp"
+		},
+		{
+			"name": "Parting Blaze",
+			"source": "Artes",
+			"page": 6,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你的武器冒出滚滚火焰，让你的敌人无法看清你的位置。在使用这个技艺的同时进行一次近战武器攻击。命中后，目标受到武器攻击的正常效果，并且你可以移动多达15英尺，而不消耗移动并且不会招致目标的机会攻击。",
+				"从5级开始，这个技能的武器攻击额外造成{@damage 1d8}火焰伤害。在11级时，这个技能的火焰伤害增加{@dice 1d8}，在17级时再次增加({@damage 2d8})。",
+				"在11级时，你可以传送15英尺，而不是移动。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "fire damage",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL",
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "15",
+				"range.units": "ft",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8",
+						"fire"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/fire/explosion-embers-evade-silhouette.webp"
+		},
+		{
+			"name": "Razor Gale",
+			"source": "Artes",
+			"page": 7,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将巨大的力量注入武器，然后挥舞它，释放出集中的力量冲击。对你能看到的范围内的一个生物或物体进行一次远程技艺攻击。命中后，目标受到{@damage 1d10}点力量伤害。",
+				"这个技能的伤害在你达到5级({@damage 2d10})、11级({@damage 3d10})和17级({@damage 4d10})时增加了{@dice 1d10}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "force damage",
+					"scaling": {
+						"1": "1d10",
+						"5": "2d10",
+						"11": "3d10",
+						"17": "4d10"
+					}
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "rwak",
+				"ability": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature"
+			},
+			"foundryImg": "icons/skills/melee/strike-polearm-glowing-white.webp"
+		},
+		{
+			"name": "Second Surge",
+			"source": "Artes",
+			"page": 7,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你的攻击注入了致命的电光能量到目标体内，当你的盟友跟进时会释放出来。你挥舞着用于施法的武器，对一个生物或物体进行武器攻击。命中后，目标受到武器攻击的正常效果，并被电光所充斥。在你的下一个回合开始之前，如果除你以外的任何生物用武器攻击命中该目标，它会受到等同于你的技艺能力修正值的电击伤害，并且技艺结束。",
+				"这个技艺在你达到一定等级时会增加伤害。在5级时，初始武器攻击对目标造成额外 {@damage 1d8} 闪电伤害，击中后第二次攻击的闪电伤害增加到 {@damage 1d8} + 你的技艺能力修正。在11级时，这两次伤害骰都会增加 {@damage 1d8} ({@damage 2d8} 和 {@damage 2d8})，而在17级时则增加到 {@damage 3d8} 和 {@damage 3d8}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "lightning damage from third creature",
+					"scaling": {
+						"1": "{{spellcasting_mod}}",
+						"5": "1d8 + {{spellcasting_mod}}",
+						"11": "2d8 + {{spellcasting_mod}}",
+						"17": "3d8 + {{spellcasting_mod}}"
+					}
+				},
+				{
+					"label": "lightning damage on hit",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"AAD",
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"ability": "str",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8[on hit]",
+						"lightning"
+					]
+				],
+				"damage.versatile": "@mod + (floor(((@details.level + @details.spellLevel) + 1) / 6))d8[third creature]"
+			},
+			"foundryImg": "icons/weapons/swords/sword-flanged-lightning.webp"
+		},
+		{
+			"name": "Sentry's Levin",
+			"source": "Artes",
+			"page": 7,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将闪电注入武器，震慑并震撼你的敌人。在使用这个技艺的过程中进行一次武器攻击。命中时，目标受到武器的正常效果，并且直到其下一个回合开始前都无法作出反应。",
+				"从5级开始，这个技艺的武器攻击会额外造成{@damage 1d10}点闪电伤害。在11级({@damage 2d10})时，这个技艺的闪电伤害会增加{@dice 1d10}点，而在17级({@damage 3d10})时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "lightning damage",
+					"scaling": {
+						"5": "1d10",
+						"11": "2d10",
+						"17": "3d10"
+					}
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "15",
+				"range.units": "ft",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d10",
+						"lightning"
+					]
+				]
+			},
+			"foundryImg": "icons/weapons/polearms/spear-flared-silver-pink.webp"
+		},
+		{
+			"name": "Shield Pitch",
+			"source": "Artes",
+			"page": 8,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a shield"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将力量集中到盾牌上，将其投向你的敌人，然后仅凭意志力将其抛回到你身边。对射程内的一个生物或物体进行一次盾牌远程技艺攻击。命中后，目标受到{@damage 1d6} 钝击伤害 + 你的技艺能力修正值。",
+				"无论你击中还是未击中，你的盾牌都会在回合结束时回到你身边。如果你的盾牌是魔法的，将其加值AC的奖励加到这个武器的攻击和伤害骰中。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"1": "1d6 + {{spellcasting_mod}}",
+						"5": "2d6 + {{spellcasting_mod}}",
+						"11": "3d6 + {{spellcasting_mod}}",
+						"17": "4d6 + {{spellcasting_mod}}"
+					}
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "rwak",
+				"ability": "str",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "60",
+				"range.units": "ft",
+				"damage.parts": [
+					[
+						"@mod + (floor(((@details.level + @details.spellLevel) + 1) / 6) +1)d6",
+						"bludgeoning"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/melee/shield-block-gray-yellow.webp"
+		},
+		{
+			"name": "Shield Slam",
+			"source": "Artes",
+			"page": 8,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a shield"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将力量集中到你的盾牌上，并用它发动一次决定性的攻击，让你处于完美的位置来应对反击。对范围内的一个生物进行一次近战武器攻击，使用你的盾牌。命中后，你的攻击造成{@damage 1d6} 钝击伤害 + 你的艺术能力修正，并且目标在其下一个回合结束前对你的下一个攻击投掷有劣势。",
+				"如果你的盾牌是魔法的，将其加值加到这个武器的攻击和伤害骰中。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"1": "1d6 + {{spellcasting_mod}}",
+						"5": "2d6 + {{spellcasting_mod}}",
+						"11": "3d6 + {{spellcasting_mod}}",
+						"17": "4d6 + {{spellcasting_mod}}"
+					}
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "mwak",
+				"ability": "str",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft",
+				"damage.parts": [
+					[
+						"@mod + (floor(((@details.level + @details.spellLevel) + 1) / 6) +1)d6",
+						"bludgeoning"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/melee/shield-block-bash-yellow.webp"
+		},
+		{
+			"name": "Shockwave",
+			"source": "Artes",
+			"page": 8,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你挥动近战武器时，你将巨大力量注入其中，制造出毁灭性的力量波。在一个15英尺锥形范围内的每个生物必须通过对你的Artes豁免DC的敏捷豁免检定，否则将受到{@damage 1d8}的雷霆伤害。",
+				"这个技能的伤害在你达到5级（{@damage 2d8}），11级（{@damage 3d8}）和17级（{@damage 4d8}）时增加了{@dice 1d8}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "thunder damage",
+					"scaling": {
+						"1": "1d8",
+						"5": "2d8",
+						"11": "3d8",
+						"17": "4d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"N"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"range.units": "self"
+			},
+			"foundryImg": "icons/magic/sonic/projectile-shock-wave-blue.webp"
+		},
+		{
+			"name": "Shrapnel Shot",
+			"source": "Artes",
+			"page": 9,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "ammunition or a thrown weapon, which the art consumes"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你为你的弹药或投掷武器注入超出其物理容量的力量，导致它爆炸并将碎片飞向靠近你目标的生物。对射程内的一个生物或物体进行远程武器攻击。命中后，目标受到武器攻击的正常效果，目标及其周围5英尺范围内的每个生物或物体受到{@damage 1d6}穿刺伤害。然后弹药或投掷武器被摧毁。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "piercing damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"miscTags": [
+				"AAD",
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/fire/projectile-needles-salvo-red.webp"
+		},
+		{
+			"name": "Spirit Tether",
+			"source": "Artes",
+			"page": 9,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤一道魔法力量链条连接你和一个敌人，利用它将自己拉向敌人，利用这股动力打击更强。选择一个你能看到的距离15英尺内的生物。你被拉到距离目标最近的一个未被占据的空间内，距离目标5英尺，并且这次移动不会引发机会攻击。然后，你可以使用作为这个技艺材料组件的武器对目标进行近战武器攻击。",
+				"从5级开始，这个技能的近战武器攻击会额外造成武器类型伤害的 {@damage 1d6}。这个技能的额外伤害在11级 ({@damage 2d6}) 和17级 ({@damage 3d6}) 时会增加 {@dice 1d6}。",
+				"在11级时，你将会传送到目标周围5英尺内的任何未被占据的空间。"
+			],
+			"scalingLevelDice": {
+				"label": "weapon damage",
+				"scaling": {
+					"5": "1d6",
+					"11": "2d6",
+					"17": "3d6"
+				}
+			},
+			"miscTags": [
+				"AAD",
+				"SCL",
+				"SGT",
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "15",
+				"range.units": "ft",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d6[weapon's type]",
+						"0"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/melee/strike-chain-whip-blue.webp"
+		},
+		{
+			"name": "Storm Dance",
+			"source": "Artes",
+			"page": 9,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你缩短与敌人的距离，并释放一次闪电力量的打击。选择范围内的一个生物或物体。你可以向你的目标移动多达15英尺，而不消耗你的移动，但你必须在你的武器射程内结束你的移动。然后，你可以对目标进行一次近战武器攻击。",
+				"从5级开始，这个技艺的近战武器攻击额外造成 {@damage 1d8} 闪电伤害。在11级 ({@damage 2d8}) 和17级 ({@damage 3d8})，这个技艺的闪电伤害增加 {@dice 1d8}。",
+				"在11级时，你可以传送15英尺，而不是移动。"
+			],
+			"scalingLevelDice": {
+				"label": "lightning damage",
+				"scaling": {
+					"5": "1d8",
+					"11": "2d8",
+					"17": "3d8"
+				}
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"AAD",
+				"OBJ",
+				"SCL",
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "15",
+				"range.units": "ft",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d8",
+						"lightning"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-impact-blue.webp"
+		},
+		{
+			"name": "Sword as Shield",
+			"source": "Artes",
+			"page": 10,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"当你攻击时，你的武器会留下一串短暂存在的幻影副本，它们会自行移动以阻挡攻击。在使用这个技艺时进行一次近战武器攻击。命中后，目标受到武器攻击的正常效果，你还造成额外 {@damage 1d4} 的武器类型伤害，并获得临时生命值，数值等同于额外伤害 + 你的技艺能力修正值（最少1点）。这些临时生命值持续到你的下一个回合结束。",
+				"这个技能的伤害在你达到5级({@damage 2d4})、11级({@damage 3d4})和17级({@damage 4d4})时增加了{@dice 1d4}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bonus hit points",
+					"scaling": {
+						"1": "1d4 + {{spellcasting_mod}}",
+						"5": "2d4 + {{spellcasting_mod}}",
+						"11": "3d4 + {{spellcasting_mod}}",
+						"17": "4d4 + {{spellcasting_mod}}"
+					}
+				},
+				{
+					"label": "weapon damage",
+					"scaling": {
+						"1": "1d4",
+						"5": "2d4",
+						"11": "3d4",
+						"17": "4d4"
+					}
+				}
+			],
+			"miscTags": [
+				"AAD",
+				"SCL",
+				"THP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"ability": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6) + 1)d4[weapon's type]",
+						"0"
+					]
+				],
+				"formula": "@mod[+damage as bonus hit points]"
+			},
+			"foundryImg": "icons/skills/melee/swords-triple-orange.webp"
+		},
+		{
+			"name": "Sword Burst",
+			"source": "Artes",
+			"page": 2,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你制造出一个瞬时的幻影刀刃圈，围绕着你旋转。所有距离你5英尺以内的其他生物必须成功进行一次敏捷豁免才能避免受到{@damage 1d6}的力量伤害。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": {
+				"label": "force damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "5",
+				"target.units": "ft",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/skills/ranged/daggers-thrown-salvo-teal.webp"
+		},
+		{
+			"name": "Tailwind",
+			"source": "Artes",
+			"page": 10,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤风来帮助你的移动，使你能够从威胁的敌人身边溜走，或者轻松地绕过他们的防御。你可以在不消耗移动并且不引发机会攻击的情况下移动多达5英尺，作为使用这个技艺的一部分，并且可以选择在攻击之前或之后这样做。在使用这个技艺的过程中进行一次武器攻击。命中后，目标受到武器攻击的正常效果。",
+				"从5级开始，你的武器被致命的风围绕，抽打你的敌人。这个技艺的武器攻击额外造成{@damage 1d6}的割伤伤害。这个技艺的割伤伤害在11级({@damage 2d6})和17级({@damage 3d6})时增加{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "slashing damage",
+					"scaling": {
+						"5": "1d6",
+						"11": "2d6",
+						"17": "3d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d6",
+						"slashing"
+					]
+				]
+			},
+			"foundryImg": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp"
+		},
+		{
+			"name": "Thorn Whip",
+			"source": "Artes",
+			"page": 3,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你创造了一条长长的、覆盖着荆棘的藤鞭，根据你的指令向范围内的生物抽打。对目标进行一次近战武器攻击。如果攻击命中，生物受到{@damage 1d6}点穿刺伤害，如果生物的体型为大型或更小，你可以将其拉近10英尺到你身边。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": {
+				"label": "piercing damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"piercing"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"FMV",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "mwak",
+				"ability": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature"
+			},
+			"foundryImg": "icons/magic/nature/vines-thorned-glow-green.webp"
+		},
+		{
+			"name": "Thunderclap",
+			"source": "Artes",
+			"page": 3,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你制造出一阵雷鸣般的声音，能够传达到100英尺之外。范围内的每个生物（除了你以外）必须进行一次体质豁免才能避免受到{@damage 1d6} 雷属性伤害。",
+				"当你达到5级({@damage 2d6})、11级({@damage 3d6})和17级({@damage 4d6})时，该神器的伤害增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": {
+				"label": "thunder damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "5",
+				"target.units": "ft",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue-green.webp"
+		},
+		{
+			"name": "True Strike",
+			"source": "Artes",
+			"page": 3,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你伸出手指指向射程内的目标。你的技艺让你对目标的防御有了短暂的了解。直到你的下一个回合结束前，你对该目标的下一次武器攻击投掷获得优势。命中后，目标承受武器攻击的正常效果，并额外受到你武器类型的{@damage 1d8}伤害。",
+				"此外，你的下一次武器攻击无视对一个被严重遮蔽目标进行攻击的劣势。(heavily obscured)。",
+				"这个技能的伤害在你达到5级（{@damage 2d8}），11级（{@damage 3d8}）和17级（{@damage 4d8}）时增加了{@dice 1d8}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "weapon damage",
+					"scaling": {
+						"1": "1d8",
+						"5": "2d8",
+						"11": "3d8",
+						"17": "4d8"
+					}
+				}
+			],
+			"miscTags": [
+				"ADV",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature"
+			},
+			"foundryImg": "icons/skills/ranged/target-bullseye-archer-orange.webp"
+		},
+		{
+			"name": "Tundral Slam",
+			"source": "Artes",
+			"page": 10,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你跺脚，释放出一股寒冷气流，覆盖地面，形成不均匀的黑冰斑块。你周围5英尺范围内的所有生物和物体（除你外）必须进行一次体质豁免才能避免受到{@damage 1d6}点冰冷伤害。你周围5英尺范围内的每个空间，除你外，直到你的下一个回合开始前，对所有生物都成为艰难地形。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": {
+				"label": "cold damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"DFT",
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "5",
+				"target.units": "ft",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/water/barrier-ice-crystal-wall-jagged-blue.webp"
+		},
+		{
+			"name": "Void Fang",
+			"source": "Artes",
+			"page": 11,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你的打击强制性地传送你的敌人，与你交换位置。你挥舞着在施法时使用的武器，并对一个体型为大或更小的生物或物体发动攻击。命中后，目标遭受武器攻击的正常效果，你和目标传送并交换位置。",
+				"从5级开始，这个武器攻击会额外造成{@damage 1d6}点死灵伤害，因为强制传送会痛苦地扭曲和撕裂他们的身体。这个技艺的死灵伤害在11级({@damage 2d6})和17级({@damage 3d6})时增加了{@dice 1d6}点。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "necrotic damage",
+					"scaling": {
+						"5": "1d6",
+						"11": "2d6",
+						"17": "3d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"AAD",
+				"OBJ",
+				"SCL",
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"(floor(((@details.level + @details.spellLevel) + 1) / 6))d6",
+						"necrotic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/unholy/projectiles-binary-pink.webp"
+		},
+		{
+			"name": "Waning Crescent",
+			"source": "Artes",
+			"page": 3,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你挥舞武器，释放出一道毁灭性气的弧线，自由穿过敌人。所有在一条长20英尺、宽5英尺的线上的生物和物体必须通过一次敏捷豁免检定，否则将受到{@damage 1d10}力量伤害。",
+				"这个技能的伤害在你达到5级({@damage 2d10})、11级({@damage 3d10})和17级({@damage 4d10})时增加了{@dice 1d10}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "force damage",
+					"scaling": {
+						"1": "1d10",
+						"5": "2d10",
+						"11": "3d10",
+						"17": "4d10"
+					}
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"L"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"range.units": "self"
+			},
+			"foundryImg": "icons/magic/air/air-wave-gust-smoke-yellow.webp"
+		},
+		{
+			"name": "Cocytean Gavel",
+			"source": "Artes",
+			"page": 15,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在这个大法术的持续时间内，下次你用武器攻击命中一只生物时，地狱般寒冷的风围绕着你的敌人，将其包裹在冰中，并使攻击对目标造成额外 {@damage 5d8} 的冷伤害。此外，如果目标是大型或更小的生物，它必须进行一次体质豁免才能免疫 {@condition restrained} 1分钟。",
+				"一只生物{@condition restrained}通过这个宏伟的神器可以使用其动作来对你的神器豁免 DC 进行力量检定。如果成功，它将不再是{@condition restrained}。此外，如果这只{@condition restrained}生物受到任何火焰伤害，它也将不再是{@condition restrained}。",
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d8}的伤害，然后在13级({@damage 6d8})和17级({@damage 7d8})再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "cold damage",
+					"scaling": {
+						"5": "5d8",
+						"9": "6d8",
+						"13": "7d8",
+						"17": "8d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"5d8 + (floor((@details.level - 5) / 4))d8",
+						"cold"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/water/barrier-ice-water-cube.webp"
+		},
+		{
+			"name": "Cometary Collision",
+			"source": "Artes",
+			"page": 15,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你的武器充满了潜在的威胁性。在这个伟大神器的持续时间内，下一次你用近战武器攻击击中一个大小为大或更小的生物时，你的敌人将被作为致命的抛射物击飞。这次攻击额外造成 {@damage 4d6} 的雷霆伤害，如果你的目标是一个大小为大或更小的生物，它必须通过一次力量豁免检定，否则将被推开30英尺并被击晕 {@condition prone}。",
+				"目标路径上的任何生物或物体会受到{@damage 4d6} 钝击伤害，或者在成功的敏捷豁免扑克牌上受到一半伤害。如果伤害超过{@object Generic Object|DMG|object's hit points} 并且会摧毁它（或者摧毁它的一部分，如果目标与墙壁或类似大物体相撞），目标会继续穿过该物体的空间。",
+				"当你达到9级（{@damage 5d6}）时，这件宏伟的神器的初始和次要伤害都会增加{@dice 1d6}，并在13级（{@damage 6d6}）和17级（{@damage 7d6}）时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "thunder damage",
+					"scaling": {
+						"5": "4d6",
+						"9": "5d6",
+						"13": "6d6",
+						"17": "7d6"
+					}
+				},
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"5": "4d6",
+						"9": "5d6",
+						"13": "6d6",
+						"17": "7d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"thunder",
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"AAD",
+				"FMV",
+				"OBJ",
+				"SCL",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"4d6 + (floor((@details.level - 5) / 4))d6[on hit]",
+						"thunder"
+					]
+				],
+				"damage.versatile": "4d6 + (floor((@details.level - 5) / 4))d6[bludgeoning obstacles]",
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/sonic/explosion-impact-shock-wave.webp"
+		},
+		{
+			"name": "Converging Echoes",
+			"source": "Artes",
+			"page": 15,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤自己在未实现的时间线中的时间阴影，向你的敌人发起攻击，通过多方向同时攻击来压倒他们的防御。在使用这个宏伟技艺时，你对射程内的一名生物进行武器攻击。命中时，目标受到武器的正常效果。无论命中与否，目标会受到你武器类型的{@damage 4d10}伤害，并在你的下一个回合结束前处于{@condition stunned}状态。在成功的体质豁免扑救中，目标会受到一半伤害，并且不会受到{@condition stunned}。",
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d10}的伤害({@damage 5d10})，并在13级({@damage 6d10})和17级({@damage 7d10})时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "weapon damage",
+					"scaling": {
+						"5": "4d10",
+						"9": "5d10",
+						"13": "6d10",
+						"17": "7d10"
+					}
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"4d10 + (floor((@details.level - 5) / 4))d10[weapon's type]"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp"
+		},
+		{
+			"name": "Divine Battlecry",
+			"source": "Artes",
+			"page": 16,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将所有力量聚集到一个超自然的呐喊中，鼓舞你的盟友，让你的敌人感到震惊和困惑。从你身上发出的20英尺半径范围内，你选择的每个生物必须进行一次体质豁免检定。未通过豁免的生物会受到{@damage 3d6} 雷属性伤害，并在1分钟内士气低落。当一只士气低落的生物进行攻击检定或豁免检定时，它必须掷出一个{@dice d4} 的骰子，并从攻击检定或豁免检定中减去所掷骰子的点数。通过豁免检定的生物会受到一半的伤害且不会士气低落。免疫{@condition frightened} 状态的生物不会受到士气低落的影响。",
+				"你选择的所有盟友在20英尺范围内获得临时生命值，数值等同于你的角色等级，并且不能被{@condition frightened}。如果一个盟友处于{@condition frightened}状态，该状态将在持续时间内被移除。这个强大的神器的效果范围可听到的距离为300英尺。",
+				"这件宏伟的神器在你达到9级时增加{@dice 1d6}伤害，然后在13级({@damage 4d6})和17级({@damage 5d6})再次增加伤害。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "thunder damage",
+					"scaling": {
+						"5": "3d6",
+						"9": "4d6",
+						"13": "5d6",
+						"17": "6d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SCL",
+				"THP"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"3d6 + (floor((@details.level - 5) / 4))d6",
+						"thunder"
+					]
+				],
+				"formula": "@details.level[bonus hit points]",
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp"
+		},
+		{
+			"name": "Falling Star",
+			"source": "Artes",
+			"page": 16,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将你的身体注入宇宙之火，并向你的敌人发起冲击，在你着陆的地方释放能量，形成熊熊烈火。选择范围内的一个空位。你可以直线跳到那个位置，不消耗移动并且不会引发机会攻击，只要你对它有明确的视线。从你着陆的地方起源的20英尺范围内的所有生物，必须根据你的武术豁免 DC 进行一次敏捷豁免。在未通过豁免时，生物会受到 {@damage 3d8} 火焰伤害和 {@damage 3d8} 雷电伤害，通过豁免时则只受到一半伤害。",
+				"这个强大的神器会损坏周围的物体，并点燃未被穿戴或携带的易燃物品。这个强大的神器的声音可以传到300英尺外。",
+				"这件宏伟的神器的火焰伤害在你达到9级时增加了{@dice 1d8}，并在13级({@damage 4d8})和17级({@damage 5d8})时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "fire damage",
+					"scaling": {
+						"5": "3d8",
+						"9": "4d8",
+						"13": "5d8",
+						"17": "6d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"fire",
+				"thunder"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"target.value": "20",
+				"target.units": "ft",
+				"target.type": "sphere",
+				"range.value": "120",
+				"range.units": "ft",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"3d8 + (floor((@details.level - 5) / 4))d8",
+						"fire"
+					],
+					[
+						"3d8",
+						"thunder"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/fire/projectile-wave-arrow.webp"
+		},
+		{
+			"name": "Maelstrom Blade",
+			"source": "Artes",
+			"page": 17,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"元素能量如洪水般涌现，停留在你的武器上。你可以选择冰冷、火焰或闪电，你周围20英尺范围内的所有生物必须通过一个敏捷豁免，豁免 DC 为你的艺术豁免 DC，否则受到相应类型的 {@damage 3d6} 伤害，豁免成功则减半。在1分钟内，你手持的一把武器在命中时额外造成 {@damage 1d6} 相应类型的伤害。如果你放下武器，效果结束。",
+				"这件宏伟的神器在你达到9级({@damage 4d6})时，初始伤害增加了{@dice 1d6}，并在13级({@damage 5d6})和17级({@damage 6d6})时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "cold damage",
+					"scaling": {
+						"5": "3d6",
+						"9": "4d6",
+						"13": "5d6",
+						"17": "6d6"
+					}
+				},
+				{
+					"label": "fire damage",
+					"scaling": {
+						"5": "3d6",
+						"9": "4d6",
+						"13": "5d6",
+						"17": "6d6"
+					}
+				},
+				{
+					"label": "lightning damage",
+					"scaling": {
+						"5": "3d6",
+						"9": "4d6",
+						"13": "5d6",
+						"17": "6d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"3d6 + (floor((@details.level - 5) / 4))d6[cold, fire or lightning]",
+						"lightning"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryEffects": [
+				{
+					"name": "Maelstrom Blade",
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "1d6"
+						},
+						{
+							"key": "data.bonuses.rwak.damage",
+							"mode": "ADD",
+							"value": "1d6"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/sword-stuck-glowing-pink.webp"
+		},
+		{
+			"name": "Magmatic Blast",
+			"source": "Artes",
+			"page": 17,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将炽热的能量注入武器，然后猛击地面，将那股能量扩散出去，形成爆炸性的喷发，将你的敌人冲向天空。在一条长60英尺、宽5英尺、高15英尺的直线上，每个生物和物体都必须进行一次敏捷豁免检定。未通过检定的生物会受到{@damage 4d8}火焰伤害，并被击倒{@condition prone}。通过检定的生物会受到一半伤害，并且不会被击倒{@condition prone}。",
+				"这个宏伟的法术会损坏区域内的物体，并点燃未被穿戴或携带的易燃物品。",
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d8}的伤害，然后在13级({@damage 5d8})和17级({@damage 6d8})再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "fire damage",
+					"scaling": {
+						"5": "4d8",
+						"9": "5d8",
+						"13": "6d8",
+						"17": "7d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"L"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"4d8 + (floor((@details.level - 5) / 4))d8",
+						"fire"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/earth/explosion-lava-stone-orange.webp"
+		},
+		{
+			"name": "Ricochet Shield",
+			"source": "Artes",
+			"page": 17,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a shield"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将你的盾牌注入气，然后投掷出去，将其转化为你意志的延伸，寻找你的敌人。选择范围内的一个目标。然后你可以选择最多三个其他目标，每个目标必须在第一个目标的30英尺内。目标可以是生物或物体，并且每个目标只能被选择一次。",
+				"目标必须成功进行一次敏捷豁免才能避免受到伤害。在未能通过豁免时，目标将受到{@damage 3d6} 钝击伤害，再加上你的阿尔特斯 (Artes) 能力修正值；若成功通过豁免，则只受到一半伤害。你的盾牌随后会回到你的手中。",
+				"这个技能的伤害在你达到9级时增加了{@dice 1d6}，次要目标数量增加1个({@damage 4d6}和4)，并在13级({@damage 5d6}和5)以及17级({@damage 6d6}和6)时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"5": "3d6 + {{spellcasting_mod}}",
+						"9": "4d6 + {{spellcasting_mod}}",
+						"13": "5d6 + {{spellcasting_mod}}",
+						"17": "6d6 + {{spellcasting_mod}}"
+					}
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"target.value": "3",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "150",
+				"range.units": "ft",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"ability": "str",
+				"damage.parts": [
+					[
+						"@mod + 3d6 + (floor((@details.level - 5) / 4))d6",
+						"bludgeoning"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/light/beam-impact-deflect-teal.webp"
+		},
+		{
+			"name": "Ride the Lightning",
+			"source": "Artes",
+			"page": 18,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你化身为活雷电，无阻地冲过你的敌人。你可以移动多达60英尺而不消耗移动力，这种移动方式不会引发机会攻击，你可以穿过生物，但不能停留在生物的空间内。你选择的任何生物，如果你穿过其空间或在其5英尺内移动，会受到{@damage 3d8} 闪电伤害，成功进行敏捷豁免则减半。每个生物每回合只能受到这个大法术的影响一次。",
+				"这件宏伟的神器在你达到9级时增加{@dice 1d8}伤害({@damage 4d8})，并在13级({@damage 5d8})和17级({@damage 6d8})再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "lightning damage",
+					"scaling": {
+						"5": "3d8",
+						"9": "4d8",
+						"13": "5d8",
+						"17": "6d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"target.value": "60",
+				"target.units": "ft",
+				"target.type": "self",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"3d8 + (floor((@details.level - 5) / 4))d8",
+						"lightning"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-zigzag-teal.webp"
+		},
+		{
+			"name": "Round Trip",
+			"source": "Artes",
+			"page": 18,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你凝聚意志力在武器上，然后投掷它，将其变成一个致命的旋转陷阱，任何愚蠢到靠近的人都会受到伤害。你的武器飞到射程内的一个空位。在持续时间内，任何在武器周围10英尺内结束回合的生物必须进行一次敏捷豁免检定。生物在豁免失败时受到你武器类型的{@damage 2d10}伤害，豁免成功时受到一半伤害。",
+				"作为一个奖励动作，你可以将你的武器移动最多30英尺。如果你将武器移动到一个生物的空间中，那个生物必须对武器的伤害进行豁免检定，而武器在本回合停止移动。当这个伟大的神器结束时，武器会回到你的手中。如果你没有空闲的手接住它，它会落在你的脚边。",
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d10}的伤害，然后在13级({@damage 3d10})和17级({@damage 4d10})再次增加伤害。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "weapon damage",
+					"scaling": {
+						"5": "2d10",
+						"9": "3d10",
+						"13": "4d10",
+						"17": "5d10"
+					}
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL",
+				"UBA"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"target.value": "10",
+				"target.units": "ft",
+				"target.type": "sphere",
+				"damage.parts": [
+					[
+						"2d10 + (floor((@details.level - 5) / 4))d10[weapon's type]",
+						"0"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/movement/pinwheel-turning-blue.webp"
+		},
+		{
+			"name": "Sea of Swords",
+			"source": "Artes",
+			"page": 19,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你挥舞武器，凭空显现出幽灵剑，它们旋转、切割、刺击，无所不在，直至所有空间都变成了剑。从你身边起源的一个30英尺立方体范围内的每个生物必须进行一次敏捷豁免检定，否则将受到{@damage 5d6}力量伤害，豁免成功则只受一半伤害。",
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d6}的伤害，然后在13级({@damage 6d6})和17级({@damage 7d6})时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "force damage",
+					"scaling": {
+						"5": "5d6",
+						"9": "6d6",
+						"13": "7d6",
+						"17": "8d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"C"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"5d6 + (floor((@details.level - 5) / 4))d6",
+						"force"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/holy/projectiles-blades-salvo-yellow.webp"
+		},
+		{
+			"name": "Spectral Phalanx",
+			"source": "Artes",
+			"page": 19,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你创造了一些幻影副本，它们围绕着你旋转，并与你一起攻击。当敌对生物在一个回合内首次进入该区域或在那里开始它的回合时，它会受到{@damage 2d6}的力量伤害。",
+				"当这个大奥术物品激活时，在你的回合中第一次进行近战武器攻击命中时，你对目标造成额外 {@damage 2d6} 的力量伤害。",
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d6}的伤害，然后在13级({@damage 3d6})和17级({@damage 4d6})再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "force damage",
+					"scaling": {
+						"5": "2d6",
+						"9": "3d6",
+						"13": "4d6",
+						"17": "5d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"target.value": "5",
+				"target.units": "ft",
+				"target.type": "creature",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"2d6 + (floor((@details.level - 5) / 4))d6",
+						"force"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryEffects": [
+				{
+					"name": "Spectral Phalanx",
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "2d6"
+						},
+						{
+							"key": "data.bonuses.rwak.damage",
+							"mode": "ADD",
+							"value": "2d6"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/light/swords-light-glowing-white.webp"
+		},
+		{
+			"name": "War God's Wrath",
+			"source": "Artes",
+			"page": 19,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将所有愤怒注入武器，挥舞它，用撕裂的冲击波和旋转的幻影武器副本摧毁了一个广阔区域。60英尺锥形范围内的所有生物和物体受到{@damage 4d6}武器类型的伤害，或在成功的敏捷豁免扑克牌上减半。",
+				"这件宏伟的神器具有额外效果，取决于您武器的伤害类型。",
+				{
+					"type": "list",
+					"items": [
+						"{@i Bludgeoning:} 任何未能通过豁免检定的生物也会被这次强大攻击的力量推开，最多15英尺远离你。",
+						"{@i Piercing:} 任何未能通过豁免检定的生物的速度将被降为0，直到你的下一个回合结束，因为它被幻影武器困住而无法移动。",
+						"{@i Slashing:} 任何未能通过豁免检定的生物也会被剧痛所压倒，并且在你的下一个回合结束前，攻击检定会受到劣势。"
+					]
+				},
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d6}的伤害，然后在13级({@damage 5d6})和17级({@damage 6d6})再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "weapon damage",
+					"scaling": {
+						"5": "4d6",
+						"9": "5d6",
+						"13": "6d6",
+						"17": "7d6"
+					}
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV",
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"N"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"4d6 + (floor((@details.level - 5) / 4))d6[weapon's type]",
+						"0"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/skills/melee/strike-weapons-orange.webp"
+		},
+		{
+			"name": "Warp Strike",
+			"source": "Artes",
+			"page": 20,
+			"level": 0,
+			"school": "AR",
+			"subschools": [
+				"Grand"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你的武器成为你气的焦点和信标，你毫不犹豫地将其投向你的敌人。你周围120英尺内的一个生物或物体受到你武器类型伤害的{@damage 4d10}，或者在成功的敏捷豁免扑救后受到一半伤害。然后你可以选择传送到武器的位置或将武器传送回到你的手中。",
+				"这件宏伟的神器在你达到9级时增加了{@dice 1d10}的伤害({@damage 5d10})，并在13级({@damage 6d10})和17级({@damage 7d10})时再次增加。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "weapon damage",
+					"scaling": {
+						"5": "4d10",
+						"9": "5d10",
+						"13": "6d10",
+						"17": "7d10"
+					}
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL",
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"save.scaling": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"4d10 + (floor((@details.level - 5) / 4))d10[weapon's type]",
+						"0"
+					]
+				],
+				"uses.max": "1",
+				"uses.per": "sr",
+				"uses.value": "1"
+			},
+			"foundryImg": "icons/magic/light/beam-layered-teal.webp"
+		},
+		{
+			"name": "Illusionary Phantom",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将魔法聚集到武器上，创造出一个与你并肩站立的自身倒影。这个倒影是一个幻象，会跟随并复制你的动作，直到你的下一个回合开始或者你被攻击为止。下一个攻击你的生物必须进行一次智力豁免检定，目标值为你的护甲豁免 DC，否则攻击会命中倒影而不是你，导致倒影对攻击者造成 {@damage 1d6} 精神伤害并破碎。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "psychic damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str"
+			},
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"name": "Waterfall Crash",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你用武器进行一次上挥，同时通过它引导水流。当你的武器下落时，水流呈弧线流向你能看到的范围内的生物，目标必须根据你的神器豁免 DC 进行一次力量豁免检定，否则被击倒 {@condition prone} 并受到 {@damage 1d6} 钝击伤害。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "30",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/water/water-jet-wave-blue.webp"
+		},
+		{
+			"name": "Lightning Blitz",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将充满闪电能量的武器插入剑鞘，准备好迅速进行反击。当你能看到的生物在你武器的射程内移动或发动攻击时，你可以使用你的反应立即拔出武器并进行一次近战武器攻击。命中后，目标受到武器的正常效果，并额外受到{@damage 1d10} 闪电伤害。",
+				"当这个神器 (artefact) 处于激活状态时，你不能在你的回合进行武器攻击。",
+				"这个技能的伤害在你达到5级({@damage 2d10})、11级({@damage 3d10})和17级({@damage 4d10})时增加了{@dice 1d10}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "lightning damage",
+					"scaling": {
+						"1": "1d10",
+						"5": "1d10",
+						"11": "2d10",
+						"17": "3d10"
+					}
+				}
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special"
+			},
+			"foundryImg": "icons/magic/lightning/bolt-beam-strike-blue.webp"
+		},
+		{
+			"name": "Corroding Coating",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一团黏糊糊的绿色粘液在你的武器周围形成。选择在你武器的正常射程内的一个目标，它必须进行一个敏捷豁免检定，DC为你的神器豁免DC，否则会接触到你的武器。虽然粘液减轻了冲击，但酸液溅到生物身上，造成{@damage 1d8}点酸性伤害并软化其盔甲，将其AC降低1，直到你的下一个回合开始，因为酸液失去了效力。目标的AC不能降低到低于10 + 它的敏捷修正。",
+				"这个技能的伤害在你达到5级（{@damage 2d8}），11级（{@damage 3d8}）和17级（{@damage 4d8}）时增加了{@dice 1d8}。",
+				"在11级时，AC下降2点，而不是1点。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "acid damage",
+					"scaling": {
+						"1": "1d8",
+						"5": "2d8",
+						"11": "3d8",
+						"17": "4d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"MAC",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature"
+			},
+			"foundryImg": "icons/skills/melee/blade-tip-damaged-acid-green.webp"
+		},
+		{
+			"name": "Sonic Burst",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将空气集中到武器中，然后释放在一个生物身上，冲击让目标窒息并导致耳鸣。选择一个你能看到的范围内的生物，它必须对你的神器豁免 DC 进行一次体质豁免检定，否则会受到 {@damage 1d4} 雷属性伤害，被 {@condition deafened} 并且直到你下个回合开始前无法施放需要口头组件的法术。",
+				"这个技能的伤害在你达到5级({@damage 2d4})、11级({@damage 3d4})和17级({@damage 4d4})时增加了{@dice 1d4}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "thunder damage",
+					"scaling": {
+						"1": "1d4",
+						"5": "2d4",
+						"11": "3d4",
+						"17": "4d4"
+					}
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature"
+			},
+			"foundryImg": "icons/skills/ranged/projectile-spiral-gray.webp"
+		},
+		{
+			"name": "Life Siphoning Strike",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你的武器开始散发出一种邪恶的红色光环。在使用这个技艺的同时进行一次武器攻击。命中目标后，目标遭受武器攻击的正常效果，如果该生物是中型或更大且既不是构造体也不是不死生物，且在你的下一个回合开始之前死亡，你将恢复等于你的技艺能力调整值（最少1点）的生命值。在这种效果下，生物的伤口会散发出与武器相同的光环。",
+				"这个技艺在你达到一定等级时会增加伤害和治疗效果。在5级时，近战攻击对目标造成额外{@damage 1d4}的死灵伤害，并且治疗效果增加到{@damage 1d4} + 你的技艺能力调整值。在11级时，这两个数值会增加{@damage 1d4} ({@damage 2d4} 和 {@dice 2d4})，而在17级时会增加到({@damage 3d4} 和 {@dice 3d4})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "hit points",
+					"scaling": {
+						"1": "{{spellcasting_mod}}",
+						"5": "1d4 + {{spellcasting_mod}}",
+						"11": "2d4 + {{spellcasting_mod}}",
+						"17": "3d4 + {{spellcasting_mod}}"
+					}
+				},
+				{
+					"label": "necrotic damage",
+					"scaling": {
+						"5": "1d4",
+						"11": "2d4",
+						"17": "3d4"
+					}
+				}
+			],
+			"miscTags": [
+				"AAD",
+				"HL",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"ability": "str",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"@mod+(floor(((@details.level + @details.spellLevel) + 1) / 6))d4",
+						"healing"
+					]
+				],
+				"damage.versatile": "(floor(((@details.level + @details.spellLevel) + 1) / 6))d4[necrotic]"
+			},
+			"foundryImg": "icons/skills/melee/strike-axe-red.webp"
+		},
+		{
+			"name": "Venomous Sting",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 2
+					}
+				}
+			],
+			"entries": [
+				"当你准备发动攻击时，你手中的武器上出现了一抹深绿色的色调，仿佛在朝着武器的尽头蠕动。在使用这个技艺的同时进行一次武器攻击。命中后，目标受到武器的正常效果，并在其下一个回合结束时受到等同于你的技艺能力修正值的毒性伤害。",
+				"这个技艺的伤害会随着你达到特定等级而增加。在5级时，毒素伤害增加到{@damage 1d8} + 你的技艺能力调整值，并且目标在受到这个技艺影响后的第二回合结束时额外受到{@damage 1d8} 毒素伤害。在11级时，这两次伤害骰都会增加{@damage 1d8} ({@damage 2d8} 和 {@damage 2d8})，而在17级时再次增加({@damage 3d8} 和 {@damage 3d8})。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "first poison damage",
+					"scaling": {
+						"1": "{{spellcasting_mod}}",
+						"5": "1d8 + {{spellcasting_mod}}",
+						"11": "2d8 + {{spellcasting_mod}}",
+						"17": "3d8 + {{spellcasting_mod}}"
+					}
+				},
+				{
+					"label": "second poison damage",
+					"scaling": {
+						"5": "1d8",
+						"11": "2d8",
+						"17": "3d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"actionType": "other",
+				"ability": "str",
+				"scaling.mode": "none",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"damage.parts": [
+					[
+						"@mod + (floor(((@details.level + @details.spellLevel) + 1) / 6))d8[first poison damage]",
+						"poison"
+					]
+				],
+				"damage.versatile": "(floor(((@details.level + @details.spellLevel) + 1) / 6))d8[second poison damage]"
+			},
+			"foundryImg": "icons/skills/melee/blade-tip-energy-green.webp"
+		},
+		{
+			"name": "Mantle of Mist",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你挥舞着武器，使其变得足够冷，将你周围的空气变成一团浓雾跟随着你。你所占据的空间变得浓雾弥漫。这团浓雾会在你的下一个回合开始时消散，或者在你发动攻击或被攻击后消散。在浓雾存在时，你的下一次攻击额外造成{@damage 1d6}点冰冷伤害。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "cold damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"miscTags": [
+				"AAD",
+				"OBS",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special"
+			},
+			"foundryImg": "icons/magic/air/wind-vortex-swirl-blue-purple.webp"
+		},
+		{
+			"name": "Shield Barrier",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a shield"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你通过盾牌引导魔法，将防御屏障投射在你周围。这个屏障是以你为中心的一个直径为5英尺的球体，并会随着你移动，直到你的下一个回合开始。该屏障保护球体内的生物，可以减少它们下一次受到的伤害骰点数，减少量为{@dice 1d4} + 你的神器能力调整值，之后屏障消失。",
+				"如果你的盾牌是魔法的，将其奖励加到AC上，然后加到这个物品的减伤骰中。",
+				"这个技能的伤害减免在你达到5级（{@damage 2d4}），11级（{@damage 3d4}），和17级（{@damage 4d4}）时增加了{@dice 1d4}。",
+				"在11级时，屏障可以影响两次伤害骰投掷后消失。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "damage reduction",
+					"scaling": {
+						"1": "1d4 + {{spellcasting_mod}}",
+						"5": "2d4 + {{spellcasting_mod}}",
+						"11": "3d4 + {{spellcasting_mod}}",
+						"17": "4d4 + {{spellcasting_mod}}"
+					}
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"ability": "str",
+				"target.value": "5",
+				"target.units": "ft",
+				"target.type": "creature",
+				"range.value": "5",
+				"range.units": "ft",
+				"scaling.mode": "none",
+				"damage.parts": [
+					[
+						"@mod + (floor(((@details.level + @details.spellLevel) + 1) / 6) +1)d4[damage reduction]",
+						"0"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp"
+		},
+		{
+			"name": "Gravity Pull",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你用原始能量充能你的武器，然后释放出一股黑色能量脉冲在你头顶上方，导致周围的空气被吸向你。所有距离你不少于5英尺但在10英尺范围内的生物和物体必须通过一次力量豁免才能避免受到{@damage 1d4} 钝击伤害，并被拉向你5英尺。",
+				"这个技能的伤害在你达到5级({@damage 2d4})、11级({@damage 3d4})和17级({@damage 4d4})时增加了{@dice 1d4}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "bludgeoning damage",
+					"scaling": {
+						"1": "1d4",
+						"5": "2d4",
+						"11": "3d4",
+						"17": "4d4"
+					}
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV",
+				"OBJ",
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "10",
+				"target.units": "ft",
+				"target.type": "creature",
+				"range.value": "10",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/unholy/orb-beam-pink.webp"
+		},
+		{
+			"name": "Field of Blades",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将武器插入距离你5英尺以内的坚固表面，比如地面或墙壁，持续一秒钟。武器可以魔法般地穿透任何材料，但不会对其造成实际影响或损坏。当你的武器进入表面时，几把刀刃和尖刺会从刺入区域升起。它们填满一个5英尺立方体区域，持续一分钟或直到你再次使用这个技艺，之后它会恢复到原始状态。当你使用这个技艺时，处于刀刃区域内的任何生物必须进行一次敏捷豁免检定，否则会受到{@damage 1d8}点刺伤伤害。生物在移动到该区域时首次进行转弯或在那里结束转弯时，也必须进行豁免检定。",
+				"这个技能的伤害在你达到5级（{@damage 2d8}），11级（{@damage 3d8}）和17级（{@damage 4d8}）时增加了{@dice 1d8}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "piercing damage",
+					"scaling": {
+						"1": "1d8",
+						"5": "2d8",
+						"11": "3d8",
+						"17": "4d8"
+					}
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"C"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "5",
+				"target.units": "ft",
+				"target.type": "cube",
+				"range.value": "5",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/skills/melee/blade-tips-triple-bent-white.webp"
+		},
+		{
+			"name": "Static Discharge",
+			"source": "ArtesExtra",
+			"page": 1,
+			"level": 0,
+			"school": "AR",
+			"time": [
+				{
+					"number": 1,
+					"unit": "attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"当你的武器开始发出电光时。用武器指向你15英尺内的生物，闪电从你的武器跳向生物。目标必须通过对抗你的护甲豁免 DC 的体质豁免才能避免受到 {@damage 1d6} 闪电伤害，并且失去他们的敏捷调整值对AC的加值，直到他们受到伤害或者到你的下一个回合开始。",
+				"这个技能的伤害在你达到5级（{@damage 2d6}），11级（{@damage 3d6}），和17级（{@damage 4d6}）时增加了{@dice 1d6}。"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "lightning damage",
+					"scaling": {
+						"1": "1d6",
+						"5": "2d6",
+						"11": "3d6",
+						"17": "4d6"
+					}
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"MAC",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"foundrySystem": {
+				"preparation.mode": "atwill",
+				"activation.cost": "1",
+				"activation.type": "special",
+				"save.scaling": "str",
+				"target.value": "1",
+				"target.units": "0",
+				"target.type": "creature",
+				"range.value": "15",
+				"range.long": "",
+				"range.units": "ft"
+			},
+			"foundryImg": "icons/magic/lightning/bolt-strike-blue-white.webp"
+		}
+	],
+	"feat": [
+		{
+			"name": "Martial Scholar",
+			"source": "Artes",
+			"page": 12,
+			"prerequisite": [
+				{
+					"other": "The ability to use at least one arte"
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你对武术技巧的广泛了解使你能够针对任何敌人调整自己的风格。",
+				"你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"作为一个奖励动作，你可以学会任何一个{@filter arte|spells|school=AR|subschool=!Grand}。一旦你这样做了，你就会知道这个技艺，直到你完成一次长休。你每次只能以这种方式知道一个技艺。"
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-symbol-axe-brown.webp"
+		},
+		{
+			"name": "Swift Artes",
+			"source": "Artes",
+			"page": 12,
+			"prerequisite": [
+				{
+					"other": "The ability to use at least one arte"
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"当一个敌对生物触发了你的机会攻击时，你可以使用你的反应来使用一个{@filter arte|spells|school=AR|subschool=!Grand}，而不是进行一次机会攻击。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/spear-tips-three-purple.webp"
+		},
+		{
+			"name": "Double Artes",
+			"source": "ArtesExtra",
+			"page": 1,
+			"prerequisite": [
+				{
+					"level": 5,
+					"other": "The Extra Attack feature, The ability to use at least two artes"
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"你可以在你的回合中使用两个{@filter artes|spells|school=AR|subschool=!Grand}，而不是一个，但你不能使用相同的技艺两次，它们必须用于不同的攻击。第二个技艺不会随等级提升，它总是被施放为你是1级时的效果。"
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Artes",
+			"source": "Artes",
+			"page": 1,
+			"ruleType": "O",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Overview",
+					"entries": [
+						"{@filter Artes|spells|school=AR|subschool=!Grand}（也称为武术小术）是一种附加内容，旨在增强武术角色的力量和多样性。它们专门为那些没有使用小术的职业设计，旨在模拟小术的功能和伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Classes",
+					"entries": [
+						"以下职业在1级时会学会2、3或4个技艺，分别在4级和10级时学习一个新技艺。当一个会使用技艺的角色升级时，他们可以用新的技艺替换他们已学会的一个技艺。",
+						"如果DM希望提供更多灵活性，一个懂得(**artes**)的角色可以在完成长休后用另一个(**arte**)替换他们已经掌握的一个(**arte**)。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Class",
+								"Number of Artes at 1st Level"
+							],
+							"colStyles": [
+								"col-6",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"铁匠, 圣骑士, 游侠",
+									"2"
+								],
+								[
+									"野蛮人 (Barbarian), 武僧 (Monk), 盗贼 (Rogue)",
+									"3"
+								],
+								[
+									"战士 (Fighter)",
+									"4"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Casting Time",
+					"entries": [
+						"一个施法时间为\"1次攻击\"的{@filter arte|spells|school=AR|subschool=!Grand}可以作为额外攻击或类似功能的一部分使用（例如战争领域牧师的{@subclassFeature War Priest|Cleric||War||1}特性，或术士的{@optfeature Thirsting Blade}召唤），牺牲一次攻击将其作为攻击动作的一部分。你在回合中只能使用一个神器。为了在单个回合中施放多个法术，使用神器算作施放一个杀戮法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arte Ability Modifier",
+					"entries": [
+						"一个{@filter arte's|spells|school=AR|subschool=!Grand}能力修正值是力量或敏捷（取两者中较高者）的能力修正值。这会设定豁免扑克牌 DC 并决定当一个技艺需要进行技艺攻击骰时你需要投掷的骰子。如果一个技艺需要武器作为材料组件，那么使用的能力分数是通常用于使用该武器进行攻击时的那个。在技艺列表上的零级技艺也算作技艺，并受到这些规则的约束。你的技艺豁免 DC 如下所示。",
+						"{@b Artes save DC} = 8 + 你的熟练加值 + 你的力量或敏捷调整值",
+						"在你的DM自行决定下，你可以使用不同的能力值来确定你的(Artes)豁免DC和(Arte)攻击投掷，如果这样更适合你的角色概念（比如一个专注于智力而不是敏捷的武僧，或者一个强调智力而不是力量的奥术骑士）。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Components",
+					"entries": [
+						"{@spell Booming Blade|TCE}和{@spell Green-Flame Blade|TCE}的物质成分被替换为\"一把近战武器\"，不再需要硬币价值。为了满足神器的物质成分要求，具有武僧{@classFeature Martial Arts|Monk||1}职业特性、{@feat Tavern Brawler}专长、{@optfeature Unarmed Fighting|tce}战斗风格或类似无需武器战斗方式的角色，即使徒手也被视为持有武器。",
+						"在DM的裁量下，如果游戏的风格是高飞的武侠风格，可以考虑取消武器要求，允许所有武术在无武器时使用。",
+						"如果一个法术有手势成分，那么它可以用握着的武器来施展，而不是空手。这意味着法术可以在握着双手武器或握着武器和盾牌时施展。"
+					]
+				},
+				{
+					"type": "list",
+					"name": "Artes List",
+					"items": [
+						"{@spell Berserker's Brand|Artes}",
+						"{@spell Binding Blade|Artes}",
+						"{@spell Blade Ward|Artes}*PHB",
+						"{@spell Booming Blade|Artes}*TCE",
+						"{@spell Boreal Gale|Artes}",
+						"{@spell Cinder Surge|Artes}",
+						"{@spell Clean Sweep|Artes}",
+						"{@spell Conqueror's Glare|Artes}",
+						"{@spell Cyclone Surge|Artes}",
+						"{@spell Frigid Blade|Artes}",
+						"{@spell Flames of Punishment|Artes}",
+						"{@spell Green-Flame Blade|Artes}*TCE",
+						"{@spell Knight's Litany|Artes}",
+						"{@spell Lightning Lure|Artes}*TCE",
+						"{@spell Maledictor's Smite|Artes}",
+						"{@spell Parting Blaze|Artes}",
+						"{@spell Razor Gale|Artes}",
+						"{@spell Ruinous Rime|Artes}",
+						"{@spell Second Surge|Artes}",
+						"{@spell Sentry's Levin|Artes}",
+						"{@spell Shield Pitch|Artes}",
+						"{@spell Shield Slam|Artes}",
+						"{@spell Shockwave|Artes}",
+						"{@spell Shrapnel Shot|Artes}",
+						"{@spell Spirit Tether|Artes}",
+						"{@spell Storm Dance|Artes}",
+						"{@spell Sword As Shield|Artes}",
+						"{@spell Sword Burst|Artes}*TCE",
+						"{@spell Tailwind|Artes}",
+						"{@spell Thorn Whip|Artes}*PHB",
+						"{@spell Thunderclap|Artes}*元素之门",
+						"{@spell True Strike|Artes}*PHB",
+						"{@spell Tundral Slam|Artes}",
+						"{@spell Void Fang|Artes}",
+						"{@spell Waning Crescent|Artes}"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"* 带有星号的技艺原本是零级咒语，现在施放时间为1次攻击。",
+						"PHB代表着玩家手册(Player's Handbook)中的一个戏法(cantrip)。",
+						"PoTA代表着《风暴王座》中的一个杂耍。",
+						"TCE代表《塔莎的万物之锅》中的一个零级法术(cantrip)。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Grand Artes",
+			"source": "Artes",
+			"page": 14,
+			"ruleType": "O",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Overview",
+					"entries": [
+						"{@filter Grand artes|spells|school=AR|subschool=Grand} 大法术是{@filter artes|spells|school=AR|subschool=!Grand}的可选进阶。它们比法术更强大，但在休息之间的使用次数有限。许多职业已经有多个需要追踪的资源，因此这些规则可能并不适合每个游戏。如果你认为某个武术职业或子职业实力不足或缺乏多样性，并希望为其提供超越法术所提供的增益，请考虑允许该职业的角色使用大法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Progression",
+					"entries": [
+						"所有学习技艺的职业在5级时也会学会一个{@filter grand arte|spells|school=AR|subschool=Grand}，可以使用一次，直到你完成短暂或长时间休息前不能再次使用。在9级时，你学会第二个大技艺，每次休息之间总共可以使用两次；在13级时，你学会第三个大技艺，每次休息之间总共可以使用三次。",
+						{
+							"type": "table",
+							"colLabels": [
+								"Character Level",
+								"Grand Artes Known",
+								"Uses per Short Rest"
+							],
+							"colStyles": [
+								"col-4 text-center",
+								"col-4 text-center",
+								"col-4 text-center"
+							],
+							"rows": [
+								[
+									"5",
+									"1",
+									"1"
+								],
+								[
+									"9",
+									"2",
+									"2"
+								],
+								[
+									"13",
+									"3",
+									"3"
+								]
+							]
+						},
+						"当一个角色在升级时，如果他们掌握了一个伟大艺术，他们可以用另一个伟大艺术替换其中一个。可选地，如果DM希望提供更多灵活性，一个掌握了伟大艺术的角色可以在完成一次长休后，用另一个伟大艺术替换其中一个。",
+						"大绝技也会随着角色等级提高而增加伤害，分别在第9级、第13级和第17级时增加一颗伤害骰。这些信息已包含在每个大绝技的描述中。"
+					]
+				},
+				{
+					"type": "list",
+					"name": "Artes List",
+					"items": [
+						"{@spell Cocytean Gavel|Artes}",
+						"{@spell Cometary Collision|Artes}",
+						"{@spell Converging Echoes|Artes}",
+						"{@spell Divine Battlecry|Artes}",
+						"{@spell Falling Star|Artes}",
+						"{@spell Maelstrom Blade|Artes}",
+						"{@spell Magmatic Blast|Artes}",
+						"{@spell Ricochet Shield|Artes}",
+						"{@spell Ride the Lightning|Artes}",
+						"{@spell Round Trip|Artes}",
+						"{@spell Sea of Swords|Artes}",
+						"{@spell Spectral Phalanx|Artes}",
+						"{@spell War God's Wrath|Artes}",
+						"{@spell Warp Strike|Artes}"
+					]
+				}
+			]
+		}
+	]
+}

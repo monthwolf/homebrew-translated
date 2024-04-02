@@ -1,0 +1,2468 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KSB",
+				"abbreviation": "KSB",
+				"full": "Kibbles' Spellblade",
+				"version": "0.1",
+				"url": "https://www.kthomebrew.com/",
+				"authors": [
+					"Kibblestasty"
+				],
+				"convertedBy": [
+					"ThatCowyDolphin#0950"
+				]
+			}
+		],
+		"dependencies": {
+			"spell": [
+				"KibblesTasty:CC"
+			]
+		},
+		"optionalFeatureTypes": {
+			"SB_A_1st": "1st level Aegis",
+			"SB_A_2nd": "2nd level Aegis",
+			"SB_A_3rd": "3rd level Aegis",
+			"SB_A_4th": "4th level Aegis",
+			"SB_A_5th": "5th level Aegis"
+		},
+		"dateAdded": 1682415851,
+		"dateLastModified": 1695071855,
+		"_dateLastModifiedHash": "21ed2bd3af"
+	},
+	"spell": [
+		{
+			"name": "Elemental Barrage",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Spellblade",
+						"source": "KSB"
+					}
+				]
+			},
+			"entries": [
+				"你触摸一颗弹药，注入混沌元素力量。在你的下一个回合开始之前，如果这颗弹药被射击，它将被摧毁并转化为三个元素箭矢，其中一个造成火焰伤害，一个造成冰冻伤害，另一个造成闪电伤害。",
+				"为每个元素箭矢进行武器攻击检定。你可以将所有三个箭矢射向同一目标，或者射向武器攻击范围内的不同目标。命中时，每个元素箭矢造成的元素伤害等于攻击的普通武器伤害。"
+			],
+			"source": "KSB",
+			"page": 17,
+			"damageInflict": [
+				"cold",
+				"fire",
+				"lightning"
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Spellblade",
+			"source": "KSB",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"arcana",
+								"history",
+								"investigation",
+								"medicine",
+								"nature",
+								"perception",
+								"religion",
+								"slight of hand",
+								"stealth"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"spellsKnownProgression": [
+				0,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12
+			],
+			"startingEquipment": {
+				"default": [
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"(a) {@item light crossbow|PHB} and a quiver of 20 bolts or (b) any two {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}."
+				],
+				"additionalFromBackground": true,
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"_": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 1
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"light crossbow|PHB"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Cantrips Known"
+					],
+					"rows": [
+						[
+							1
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							8
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Spells Known|spells|class=Spellblade}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							12
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Spellblade}",
+						"{@filter 2nd|spells|level=2|class=Spellblade}",
+						"{@filter 3rd|spells|level=3|class=Spellblade}",
+						"{@filter 4th|spells|level=4|class=Spellblade}",
+						"{@filter 5th|spells|level=5|class=Spellblade}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"subclassTitle": "Technique",
+			"optionalfeatureProgression": [
+				{
+					"name": "Aegis (1st level)",
+					"featureType": [
+						"SB_A_1st"
+					],
+					"progression": {
+						"2": 1,
+						"10": 2
+					}
+				},
+				{
+					"name": "Aegis (2nd level)",
+					"featureType": [
+						"SB_A_2nd"
+					],
+					"progression": {
+						"14": 1
+					}
+				},
+				{
+					"name": "Aegis (3rd level)",
+					"featureType": [
+						"SB_A_3rd"
+					],
+					"progression": {
+						"18": 1
+					}
+				}
+			],
+			"classSpells": [
+				"Acid Splash",
+				"Chill Touch",
+				"Dancing Lights",
+				"Decaying Touch|kibblestasty:cc",
+				"Electric Arc|kibblestasty:cc",
+				"Fire Bolt",
+				"Freeze|kibblestasty:cc",
+				"Force Bolt|kibblestasty:cc",
+				"Illusionary Dart|kibblestasty:cc",
+				"Light",
+				"Mage Hand",
+				"Message",
+				"Minor Illusion",
+				"Poison Spray",
+				"Prestidigitation",
+				"Produce Flame",
+				"Ray of Frost",
+				"Resistance",
+				"Rock Slam|kibblestasty:cc",
+				"Shocking Grasp",
+				"True Strike",
+				"Water Bullet|kibblestasty:cc",
+				"Acid Bubble|kibblestasty:cc",
+				"Alarm",
+				"Aldricor's Elemental Rebuke|kibblestasty:cc",
+				"Arcane Ablation|kibblestasty:cc",
+				"Arcane Weapon|kibblestasty:cc",
+				"Arctic Breath|kibblestasty:cc",
+				"Bad Blood|kibblestasty:cc",
+				"Bane",
+				"Burning Hands",
+				"Blade Mirage|kibblestasty:cc",
+				"Crashing Wave|kibblestasty:cc",
+				"Crippling Agony|kibblestasty:cc",
+				"Electrify|kibblestasty:cc",
+				"Elemental Orb|kibblestasty:cc",
+				"Entomb|kibblestasty:cc",
+				"Eyes of Immolation|kibblestasty:cc",
+				"Faerie Fire",
+				"Feather Fall",
+				"Fog Cloud",
+				"Gale Bolt|kibblestasty:cc",
+				"Grease",
+				"Inflict Wounds",
+				"Lightning Tendril|kibblestasty:cc",
+				"Longstrider",
+				"Mage Armor",
+				"Magic Missile",
+				"Melting Glob|kibblestasty:cc",
+				"Prismatic Flash|kibblestasty:cc",
+				"Sense Blood|kibblestasty:bms",
+				"Shield",
+				"Shadow Bind|kibblestasty:cc",
+				"Hideous Laughter",
+				"Thunder Punch|kibblestasty:cc",
+				"Thunderwave",
+				"Unseen Servant",
+				"Violent Updraft|kibblestasty:cc",
+				"Water Blast|kibblestasty:cc",
+				"Acidic Pit|kibblestasty:cc",
+				"Alacrity|kibblestasty:cc",
+				"Arctic Aura|kibblestasty:cc",
+				"Become Fire|kibblestasty:cc",
+				"Become Stone|kibblestasty:cc",
+				"Become Water|kibblestasty:cc",
+				"Become Wind|kibblestasty:cc",
+				"Blindness/Deafness",
+				"Blur",
+				"Boil Blood|kibblestasty:cc",
+				"Burning Strike|kibblestasty:cc",
+				"Clay Touch|kibblestasty:cc",
+				"Cold Snap|kibblestasty:cc",
+				"Crackle|kibblestasty:cc",
+				"Crescent Wind Slash|kibblestasty:cc",
+				"Disorient|kibblestasty:cc",
+				"Darkness",
+				"Darkvision",
+				"Dragon Surge|kibblestasty:cc",
+				"Earth Ripple|kibblestasty:cc",
+				"Elemental Barrage|kibblestasty:cc",
+				"Enhance Ability",
+				"Enlarge/Reduce",
+				"Ethereal Immolation|kibblestasty:cc",
+				"Fling|x",
+				"Gravity Surge|kibblestasty:cc",
+				"Hold Person",
+				"Hurricane Slash|kibblestasty:cc",
+				"Infernal Shackles|kibblestasty:cc",
+				"Instant Counter|kibblestasty:cc",
+				"Invisibility",
+				"Iron Wind Strike|kibblestasty:cc",
+				"Mirror Image",
+				"Misty Step",
+				"Poison Dart|kibblestasty:cc",
+				"Pseudopod Slam|kibblestasty:cc",
+				"Ray of Enfeeblement",
+				"See Invisibility",
+				"Shatter",
+				"Shattering Shield|kibblestasty:cc",
+				"Spiderclimb",
+				"Star Dust|kibblestasty:cc",
+				"Vacuum Pull|kibblestasty:cc",
+				"Web",
+				"Wind Cutter|kibblestasty:cc",
+				"Aether Lance|kibblestasty:cc",
+				"Blink",
+				"Counterspell",
+				"Crushing Singularity|kibblestasty:cc",
+				"Dispel Magic",
+				"Electrocute|kibblestasty:cc",
+				"Erode|kibblestasty:cc",
+				"Fireball",
+				"Fire Cyclone|kibblestasty:cc",
+				"Flash Freeze|kibblestasty:cc",
+				"Fly",
+				"Ghost Step|kibblestasty:cc",
+				"Haste",
+				"Hungering Void|kibblestasty:cc",
+				"Lightning Bolt",
+				"Seismic Wave|kibblestasty:cc",
+				"Sleet Storm",
+				"Spider Bite|kibblestasty:cc",
+				"Static Field|kibblestasty:cc",
+				"Stinking Cloud",
+				"Tongues",
+				"Vampiric Touch",
+				"Vortex Blast|kibblestasty:cc",
+				"Water Breathing",
+				"Water Cannon|kibblestasty:cc",
+				"Water Walk",
+				"Wither|kibblestasty:cc",
+				"Aero Barrage|kibblestasty:cc",
+				"Arcane Eye",
+				"Banishment",
+				"Black Tentacles",
+				"Blight",
+				"Confusion",
+				"Devour Shadow|kibblestasty:cc",
+				"Dimension Cutter|kibblestasty:cc",
+				"Dimension Door",
+				"Echoing Lance|kibblestasty:cc",
+				"Fire Shield",
+				"Force Blade|kibblestasty:cc",
+				"Freedom of Movement",
+				"Geyser|kibblestasty:cc",
+				"Greater Invisibility",
+				"Ice Spike|kibblestasty:cc",
+				"Ice Storm",
+				"Iron Garden|kibblestasty:cc",
+				"Jumping Jolt|kibblestasty:cc",
+				"Orbital Stones|kibblestasty:cc",
+				"Phantasmal Killer",
+				"Pillar of Fire|kibblestasty:cc",
+				"Poison Puff|kibblestasty:cc",
+				"Quicksilver Steps|kibblestasty:cc",
+				"Stoneskin",
+				"Suffocate|kibblestasty:cc",
+				"Wall of Fire",
+				"Acid Rain|kibblestasty:cc",
+				"Aether Storm|kibblestasty:cc",
+				"Anvil Drop|kibblestasty:cc",
+				"Burial Barrage|kibblestasty:cc",
+				"Cloudkill",
+				"Cone of Cold",
+				"Deglove Creature|kibblestasty:cc",
+				"Devouring Darkness|kibblestasty:cc",
+				"Fissure|kibblestasty:cc",
+				"Flickering Strikes|kibblestasty:cc",
+				"Hold Monster",
+				"Mislead",
+				"Passwall",
+				"Pressure Cutter|kibblestasty:cc",
+				"Pyroclastic Lance|kibblestasty:cc",
+				"Scrying",
+				"Sky Burst|kibblestasty:cc",
+				"Sonic Shriek|kibblestasty:cc",
+				"Tornado|kibblestasty:cc"
+			],
+			"fluff": [
+				{
+					"name": "Spellblade",
+					"source": "KSB",
+					"type": "section",
+					"entries": [
+						"一个人类用手沿着他们的刀刃划过，勾勒出神秘的图案，一触即发地点燃，火焰在他们的手指触及之处闪烁着生机，突然在阴暗的洞穴中投下一道炽热的光芒，黑暗中的生物们都因火光而退缩。",
+						"一名侏儒的眼睛开始发光，一把巨大的能量大剑凝聚在他们等待的手中，形成一把纯能量的刀刃，高度是他们的两倍，但在他们手中却没有重量。",
+						"这个锐利的精灵从视线中消失，传送到他们的敌人身后，然后神秘地低声说了些什么，将对手击倒。(elf)",
+						"咒剑士将魔法和武术才能完美融合，能够将它们的使用融合成一种单一的艺术。与那些碰巧擅长剑术的巫师或懂得一些魔法的战士不同，咒剑士以将法术和武术才能融合为一击而定义：咒剑击(%num%)。",
+						{
+							"name": "Pursuit of Mastery",
+							"type": "entries",
+							"entries": [
+								"成为一个法术剑士并非偶然 - 这是一条艰难的道路，需要集中精力和锻炼，才能在战斗风暴中熟练地施放法术，与攻击完美地同步。因此，法术剑士几乎总是受到某种动机的驱使，使他们努力追求这种独特的完美风格。有些人将其视为对他们重要的一种艺术或传统，有些人将其视为克服巨大障碍的终极武器，还有一些人追求这种挑战本身，试图证明自己。",
+								"大多数法术剑士与他们传统的源头有着紧密的联系，无论是一位大师、古老的技巧，甚至是他们倾注了心血和汗水去掌握的新颖风格。"
+							]
+						},
+						{
+							"name": "Rare Talent",
+							"type": "entries",
+							"entries": [
+								"法师剑士(Spellblades)并不常见，相较于那些选择专注并精通两个具有挑战性领域中的一个的人，他们需要更加不寻常的天赋来掌握自己的技艺。冒险者本就稀有，但法师剑士更加罕见，这常常让他们超越人们的期望。",
+								"一个书呆子般温和的法术剑士可能会出奇地灵活或强壮，而一个看起来像肌肉粗壮的蠢货可能会出奇地博学。由于他们的本质，他们是那些在思维和身体上都掌握得非同寻常的人。"
+							]
+						},
+						{
+							"name": "Creating a Spellblade",
+							"type": "entries",
+							"entries": [
+								"制作一个(法术剑士)时，最重要的起点是了解是什么吸引你的角色选择这条困难而罕见的道路。法术剑士的道路几乎没有世俗用途\u2014\u2014他们不是学者，他们的技能在冒险艺术之外几乎毫无用处，那么是什么驱使你的角色掌握这些技能呢？法术剑士有一种类似于圣骑士的故意性。",
+								"确定你是通过多年的努力自学技能，还是有一位师傅或学校传授艺术给你\u2014\u2014这是否影响你使用的武器类型或对待技能及如何运用它们的态度？"
+							]
+						},
+						{
+							"name": "Quick Build",
+							"type": "entries",
+							"entries": [
+								"你可以通过以下建议快速创建一个法术剑士。如果你想遵循战斗法师或以太剑士的传统，把你最高的分数放在智力上，第二和第三高的分数分别放在敏捷和体质上。如果你想遵循守护者的传统，把你最高的分数放在力量上，然后是体质，再是智力。如果你想追随迅影剑士或法术射手的道路，把你最高的分数放在敏捷上，然后是智力，再是体质。选择一个背景来反映你多年来努力学习掌握这条独特之路，最好是一个能提供身体和精神技能的背景，以代表你掌握的双重技能之路。当你在2级获得杂耍时，你可以选择战斗或实用选项 - 当你达到5级时，你将获得额外选项，并可以在施法打击时使用它们，所以你不需要在2级时计划想要使用什么。"
+							]
+						}
+					]
+				}
+			],
+			"classFeatures": [
+				"Arcane Surge|Spellblade|KSB|1|KSB",
+				"Magic Trick|Spellblade|KSB|1|KSB",
+				"Spellcasting|Spellblade|KSB|2|KSB",
+				"Spellstrike|Spellblade|KSB|2|KSB",
+				"Arcane Deflection|Spellblade|KSB|2|KSB",
+				"Aegis|Spellblade|KSB|2|KSB",
+				{
+					"classFeature": "Spellblade Technique|Spellblade|KSB|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Spellblade|KSB|4|KSB",
+				"Empowered Strike|Spellblade|KSB|5|KSB",
+				"Arcane Recuperation|Spellblade|KSB|6|KSB",
+				"Magical Warding|Spellblade|KSB|6|KSB",
+				{
+					"classFeature": "Spellblade Technique feature|Spellblade|KSB|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Spellblade|KSB|8|KSB",
+				"Archetypal Magic|Spellblade|KSB|10|KSB",
+				"Expanded Aegis|Spellblade|KSB|10|KSB",
+				"Splash Damage|Spellblade|KSB|11|KSB",
+				"Blast Zone Immunity|Spellblade|KSB|11|KSB",
+				"Ability Score Improvement|Spellblade|KSB|12|KSB",
+				"Surging Focus|Spellblade|KSB|14|KSB",
+				"Magical Sensitivity|Spellblade|KSB|14|KSB",
+				{
+					"classFeature": "Spellblade Technique feature|Spellblade|KSB|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Spellblade|KSB|16|KSB",
+				"Blast Zone Control|Spellblade|KSB|18|KSB",
+				"Ability Score Improvement|Spellblade|KSB|19|KSB",
+				{
+					"classFeature": "Spellblade Technique feature|Spellblade|KSB|20",
+					"gainSubclassFeature": true
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Arcane Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 1,
+			"entries": [
+				"你对魔法的亲和力赋予了你一定数量的奥术涌动。在你的回合期间，你可以消耗一次奥术涌动来执行以下任一操作：",
+				"* 施放探测魔法(Detect Magic)而不消耗法术位。",
+				"* 在进行攻击骰时获得优势（无需行动）",
+				"* 将你的智力调整值加到一个力量或敏捷属性检定中（无需行动）。",
+				"传送到你能看到的一个未被占据的空间上方5英尺处（无需行动）。这个距离在5级（10英尺）、9级（15英尺）、13级（20英尺）和17级（25英尺）时增加5英尺。",
+				"你可以使用这个特性的次数等于你的熟练加值（%num%）次。当你完成短休或长休时，你可以恢复已用次数。随着你的等级提升，你可能会获得额外的奥术涌动使用次数，但每回合仍然只能使用一次奥术涌动。"
+			]
+		},
+		{
+			"name": "Magic Trick",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 1,
+			"entries": [
+				"另外，在1级时，你可以从法术剑士职业列表中选择一个法术小技能。智力是你施法这个法术小技能的能力值。"
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 2,
+			"entries": [
+				"作为你学习魔法的一部分，在2级时你获得了施放法术的能力。你学会的法术范围有限，主要是增强你的能力并摧毁你的敌人。",
+				{
+					"name": "Cantrips",
+					"type": "entries",
+					"entries": [
+						"在2级时，你可以从Spellblade（法术剑士）法术列表中选择额外两个零级法术。随着等级的提升，你将学会更多Spellblade法术剑士的零级法术，具体请参考Spellblade法术剑士表中的已知零级法术栏。该表格包括从Spellblade法术剑士职业特性（比如Empowered Strike）获得的额外零级法术。"
+					]
+				},
+				{
+					"name": "Spell Slots",
+					"type": "entries",
+					"entries": [
+						"法术剑士表格显示了你可以用来施放1级及更高级法术的法术槽数量。要施放法术剑士法术中的一个，你必须消耗一个与该法术等级相同或更高级的槽。当你完成一次长休后，你会恢复所有已消耗的法术槽。"
+					]
+				},
+				{
+					"name": "Spells Known of 1st Level and Higher",
+					"type": "entries",
+					"entries": [
+						"你可以选择三个1级法术，来自（Spellblade）法术列表。《法术掌握》栏显示了你学会更多（Spellblade）法术的时间。",
+						"这些法术必须符合你拥有的法术位等级。例如，当你在这个职业达到5级时，你可以学习一个1级或2级的新法术。",
+						"此外，当你在这个职业中升级时，你可以选择你已知的一个法术剑士法术，并用法术剑士法术清单中的另一个法术替换它，新选择的法术也必须是你拥有法术位的等级。"
+					]
+				},
+				{
+					"name": "Spellcasting Focus",
+					"type": "entries",
+					"entries": [
+						"你可以使用奥术焦点作为你的法术剑士法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellstrike",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 2,
+			"entries": [
+				"从2级开始，你可以将法术灌注到武器中。作为一个奖励动作，你可以以一种特殊的方式施放一个施法时间为1个行动的1级或更高级别的（Spellblade）法术，将其灌注到近战武器中，而不是立即生效。在你的回合结束前，下一次你用该武器进行近战攻击时，该法术将对攻击目标施放。如果你在攻击前施放了另一个法术，该法术将失败并消失。",
+				"Spellstrike（法术打击）与法术机制的互动取决于法术的效果：",
+				"* 如果法术需要进行攻击骰（近战或远程），则当武器攻击命中时，法术自动命中目标；当武器攻击未命中时，法术未命中目标。",
+				"* 如果法术有豁免扑救，那么在命中目标时，它会自动造成伤害，就好像目标未能通过法术的豁免扑救一样。但如果除了造成伤害外还有其他效果，目标则会像被法术瞄准一样正常进行扑救（无论攻击是否命中）。如果法术对通过扑救的目标造成一半伤害，那么在未命中攻击时，他们会受到一半伤害，就好像他们通过了豁免扑救一样。如果一个法术总是命中（比如魔法飞弹），那么这个法术无论你的攻击是否命中，都会生效。",
+				"* 如果法术具有影响范围，那个影响范围必须包括法术打击目标所在的空间，必须放置在这样一个位置：它的一条边界在你的武器射程内，并且在其他方面遵循法术关于放置和射程的规则。被影响范围内的其他生物将会将这个法术视为你正常施放的一样。目标不会再次受到法术影响（因为已经作为攻击的一部分解决了）。",
+				"具有多次攻击骰（如灼热射线或爆裂）的法术只将第一次攻击骰的结果与近战武器攻击绑定。你将法术的所有后续攻击骰解决为你已施放该法术，但在这样做时可以忽略因在5英尺内有敌对生物而对远程攻击骰造成的劣势。",
+				"你只能使用Spellstrike施放Spellblade职业列表中的法术，而且只能以Spellblade职业的等级施放它们，尽管你可以使用任何可用的法术位来施放该法术。"
+			]
+		},
+		{
+			"name": "Arcane Deflection",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 2,
+			"entries": [
+				"在2级时，你学会了盾牌法术，将其融入你的护盾中，使你能够在不需要材料的情况下施展它，并使你能够在不消耗法术槽的情况下施展它一次，之后你必须像平常一样消耗法术槽，直到你完成一次短休或长休。"
+			]
+		},
+		{
+			"name": "Aegis",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 2,
+			"entries": [
+				"此外，在2级时，你开始形成一个魔法护盾，用魔法力量增强你的物理能力，将它们融合在一起。你可以选择一个1级护盾效果（在职业末尾列出），并获得其效果。",
+				"当你完成一次长休时，你可以改变你选择的1级护盾效果，或者通过牺牲法术位来进一步增强你的护盾，提供持续到你完成下次长休的魔法增强效果。当你这样做时，选择一个额外的护盾效果（在职业文件的末尾列出），并消耗所列级别的法术位。",
+				"你可以通过这种方式扩展的最大法术等级数，等于你的法术剑士等级除以四（向上取整）。",
+				"*您可以在可选功能选项卡中找到Aegis效果列表。"
+			]
+		},
+		{
+			"name": "Spellblade Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 3,
+			"entries": [
+				"当你达到3级时，你可以为你的能力选择一个专长。你可以选择战斗法师(Battlemage), 以太刃(Aether Blade), 守护者(Guardian), 法师猎手(Mage Hunter), 迅刃(Swiftblade), 或者法术射手(Spellshot)技巧中的一个，每个都会赋予你额外的特性。",
+				"你的选择在3级时赋予你特性，然后在7级、15级和20级时再次获得。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"如果你的DM允许使用特性，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Empowered Strike",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 5,
+			"entries": [
+				"从5级开始，你可以在你的Spellstrike特性中使用Spellblade职业列表上的零级法术。",
+				"你可以选择学习2个额外的零级法术，从法术剑士零级法术列表中选择，分别在第9级、第13级和第17级学习1个额外的零级法术（这些额外的零级法术在法术剑士表格中列出）。"
+			]
+		},
+		{
+			"name": "Arcane Recuperation",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 6,
+			"entries": [
+				"从6级开始，你获得了通过快速专注冥想来恢复一些魔法能量的能力。当你完成一个短休息时，你可以恢复一些已用掉的法术位。这些法术位的总等级可以等于或小于你的Spellblade等级的三分之一（向下取整）。直到你完成一次长休息之前，你无法再次使用这个特性。",
+				"此外，你可以在任何时候，作为一个奖励动作，消耗一个法术位来恢复等同于所消耗法术位等级的奥术涌动。（Arcane Surges）"
+			]
+		},
+		{
+			"name": "Magical Warding",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 6,
+			"entries": [
+				"此外，在6级时，你可以选择在感知或魅力豁免 throws 中获得熟练加值，并且你对自己施放的法术的豁免 throws 将自动成功。"
+			]
+		},
+		{
+			"name": "Spellblade Technique feature",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 7,
+			"entries": [
+				"在第7级时，你将获得由你的法术剑士技能（Spellblade Technique）赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性不能将能力值提高到20以上。",
+				"如果你的DM允许使用特性，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Archetypal Magic",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 10,
+			"entries": [
+				"在10级时，你可以通过你的法术剑技能施放每个法术，而无需消耗法术位。在以这种方式施放一个法术后，直到你完成一次长休，你不能再以这种方式施放它。"
+			]
+		},
+		{
+			"name": "Expanded Aegis",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 10,
+			"entries": [
+				"从10级开始，当你完成一次长休时，你可以选择一个额外的1级护盾效果，获得其效果而不消耗法术位。这个效果持续直到你完成下一次长休，届时你可以选择一个新的效果。",
+				"在14级时，你可以额外选择一种2级护盾效果，而在18级时，你可以额外选择一种3级护盾效果。"
+			]
+		},
+		{
+			"name": "Splash Damage",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 11,
+			"entries": [
+				"从11级开始，当你用法术打击击中一个生物时，目标和目标周围5英尺范围内的你选择的生物，如果它们会被同一次攻击命中，则受到额外1d8点的力量伤害。如果未命中，目标受到一半伤害，附近的生物不受伤害（即使攻击命中它们）。"
+			]
+		},
+		{
+			"name": "Blast Zone Immunity",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 11,
+			"entries": [
+				"从11级开始，你对自己施放的法术的范围效果免疫。你不会受到它们的伤害，并且除非你选择受影响，否则会忽略所有其他影响。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性不能将一个能力值提高到20以上。",
+				"如果你的DM允许使用特性，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Surging Focus",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 14,
+			"entries": [
+				"从14级开始，如果你在维持对一个法术的专注时未能通过一次体质豁免检定，你可以消耗一点奥术激涌来取代成功。"
+			]
+		},
+		{
+			"name": "Magical Sensitivity",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 14,
+			"entries": [
+				"此外，在14级时，你学会了探测魔法(detect magic)法术，它不会计入你已知法术的数量，而且对你来说，探测魔法(detect magic)法术不再需要集中精力。",
+				"在探测魔法的持续时间内，你获得奥秘技能的熟练加成。如果你已经熟练于奥秘技能，那么在持续时间内你获得专长，允许你将你的熟练加值翻倍用于使用奥秘技能进行的能力检定中。"
+			]
+		},
+		{
+			"name": "Spellblade Technique feature",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得了由你的法术剑士技能（Spellblade Technique）赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用这个特性不能将一个能力值提高到20以上。",
+				"如果你的DM允许使用特性，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Blast Zone Control",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 18,
+			"entries": [
+				"在18级时，当使用法术打击施放影响范围的法术时，你可以消耗一次奥术激增来扩大你的爆破区免疫效果，作用对象数量为你的智力调整值。当以这种方式使用时，它只保护你的盟友直到你的下一个回合开始时，此时他们将重新受到法术的持续影响。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"如果你的DM允许使用特性，你可以选择取得一个{@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Spellblade Technique feature",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"level": 20,
+			"entries": [
+				"在20级时，你获得了由你的法术剑技能（Spellblade Technique）赋予的特性。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Battlemage Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"shortName": "Battlemage",
+			"subclassFeatures": [
+				"Battlemage Technique|Spellblade|KSB|Battlemage|KSB|3|KSB",
+				"Battlemage Spells|Spellblade|KSB|Battlemage|KSB|3|KSB",
+				"Arcane Warrior|Spellblade|KSB|Battlemage|KSB|3|KSB",
+				"Quickening Surge|Spellblade|KSB|Battlemage|KSB|3|KSB",
+				"Twin Surge|Spellblade|KSB|Battlemage|KSB|7|KSB",
+				"Surge Mastery|Spellblade|KSB|Battlemage|KSB|15|KSB",
+				"Unlimited Surges|Spellblade|KSB|Battlemage|KSB|20|KSB"
+			]
+		},
+		{
+			"name": "Aether Blade Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"shortName": "Aether Blade",
+			"subclassFeatures": [
+				"Aether Blade Technique|Spellblade|KSB|Aether Blade|KSB|3|KSB",
+				"Aether Blade Spells|Spellblade|KSB|Aether Blade|KSB|3|KSB",
+				"Aether Blade|Spellblade|KSB|Aether Blade|KSB|3|KSB",
+				"Empowering Surge|Spellblade|KSB|Aether Blade|KSB|3|KSB",
+				"Aether Great Weapon|Spellblade|KSB|Aether Blade|KSB|7|KSB",
+				"Channeled Power|Spellblade|KSB|Aether Blade|KSB|15|KSB",
+				"Massive Blade|Spellblade|KSB|Aether Blade|KSB|20|KSB"
+			]
+		},
+		{
+			"name": "Guardian Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"shortName": "Guardian",
+			"subclassFeatures": [
+				"Guardian Technique|Spellblade|KSB|Guardian|KSB|3|KSB",
+				"Guardian Spells|Spellblade|KSB|Guardian|KSB|3|KSB",
+				"Guardian Proficiency|Spellblade|KSB|Guardian|KSB|3|KSB",
+				"Projected Barrier|Spellblade|KSB|Guardian|KSB|3|KSB",
+				"Fortifying Surge|Spellblade|KSB|Guardian|KSB|7|KSB",
+				"Swapping Surge|Spellblade|KSB|Guardian|KSB|15|KSB",
+				"Resilient Aegis|Spellblade|KSB|Guardian|KSB|20|KSB"
+			]
+		},
+		{
+			"name": "Swiftblade Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"shortName": "Swiftblade",
+			"subclassFeatures": [
+				"Swiftblade Technique|Spellblade|KSB|Swiftblade|KSB|3|KSB",
+				"Swiftblade Spells|Spellblade|KSB|Swiftblade|KSB|3|KSB",
+				"Fighting Style|Spellblade|KSB|Swiftblade|KSB|3|KSB",
+				"Swift Casting|Spellblade|KSB|Swiftblade|KSB|3|KSB",
+				"Rapid Surge|Spellblade|KSB|Swiftblade|KSB|3|KSB",
+				"Relentless Spellstrike|Spellblade|KSB|Swiftblade|KSB|7|KSB",
+				"Vanishing Surge|Spellblade|KSB|Swiftblade|KSB|15|KSB",
+				"Infinite Strikes|Spellblade|KSB|Swiftblade|KSB|20|KSB"
+			]
+		},
+		{
+			"name": "Mage Hunter",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"shortName": "Mage Hunter",
+			"subclassFeatures": [
+				"Mage Hunter|Spellblade|KSB|Mage Hunter|KSB|3|KSB",
+				"Mage Hunter Spells|Spellblade|KSB|Mage Hunter|KSB|3|KSB",
+				"Disrupting Blows|Spellblade|KSB|Mage Hunter|KSB|3|KSB",
+				"Purging Surge|Spellblade|KSB|Mage Hunter|KSB|3|KSB",
+				"Nullifying Surge|Spellblade|KSB|Mage Hunter|KSB|7|KSB",
+				"Expert Abjuration|Spellblade|KSB|Mage Hunter|KSB|15|KSB",
+				"Mana Void|Spellblade|KSB|Mage Hunter|KSB|20|KSB"
+			]
+		},
+		{
+			"name": "Spellshot",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"shortName": "Spellshot",
+			"subclassFeatures": [
+				"Spellshot|Spellblade|KSB|Spellshot|KSB|3|KSB",
+				"Spellshot Spells|Spellblade|KSB|Spellshot|KSB|3|KSB",
+				"Ranged Spellstrike|Spellblade|KSB|Spellshot|KSB|3|KSB",
+				"Distant Surge|Spellblade|KSB|Spellshot|KSB|3|KSB",
+				"Transmuted Ammunition|Spellblade|KSB|Spellshot|KSB|7|KSB",
+				"Seeking Surges|Spellblade|KSB|Spellshot|KSB|15|KSB",
+				"Arcane Bolts|Spellblade|KSB|Spellshot|KSB|15|KSB",
+				"Perfect Escape|Spellblade|KSB|Spellshot|KSB|20|KSB"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Battlemage Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Battlemage",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"战斗法师是最常见的法剑技巧，平衡了各种法术和全面的战斗风格。这种标志性的魔法和武术的混合体，几乎没有弱点，但有很多选择。"
+			]
+		},
+		{
+			"name": "Aether Blade Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Aether Blade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"以太刃法师利用他们的魔法技巧创造出一把纯粹奥术力量的武器，他们的大部分能力都围绕着掌握这把武器的使用而展开。"
+			]
+		},
+		{
+			"name": "Guardian Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"擅长保护盟友的法术剑士们，遵循这种技巧，广泛运用辟邪术和自我增强魔法，通常更专注于他们的物理技能。他们将自己置于战斗的最前线，但是是一个高度机动的防线。"
+			]
+		},
+		{
+			"name": "Swiftblade Technique",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"在符文剑士中，最快速、最致命的是迅刃(Swiftblade)，他们擅长机动性，从阴影中袭击，然后迅速撤离，偏爱较轻的武器和连续的打击，让目标在还手之前就已经倒下。"
+			]
+		},
+		{
+			"name": "Mage Hunter",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"一些法术剑士锤炼他们的魔法能力，以对抗其他魔法用途。他们成为所有咒术师的大忌，他们以火攻火，磨练自己的魔法技能来束缚和剥夺他人的魔法能力。"
+			]
+		},
+		{
+			"name": "Spellshot",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"作为唯一一个能够在远程使用他们的法术打击的选项，法术射手在位置和目标选择方面拥有很大的自由度，能够在战场上灵活运用他们的力量，从远处降下死亡，而他们的天赋也在不断增长。"
+			]
+		},
+		{
+			"name": "Battlemage Spells",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Battlemage",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"你在以下等级学会以下法术。以下是适合你的法术剑法法术，但不计入你已知的法术。",
+				{
+					"type": "table",
+					"caption": "Battlemage Spells",
+					"colLabels": [
+						"Spellblade Level",
+						"Spells Learned"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell burning hands}"
+						],
+						[
+							"5th",
+							"{@spell mirror image}"
+						],
+						[
+							"9th",
+							"{@spell lightning bolt}"
+						],
+						[
+							"13th",
+							"{@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aether Blade Spells",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Aether Blade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"你在以下等级学会以下法术。以下是适合你的法术剑法法术，但不计入你已知的法术。",
+				{
+					"type": "table",
+					"caption": "Aether Blade Spells",
+					"colLabels": [
+						"Spellblade Level",
+						"Spells Learned"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell magic missile}"
+						],
+						[
+							"5th",
+							"{@spell star dust|kibblestasty:cc}"
+						],
+						[
+							"9th",
+							"{@spell aether lance|kibblestasty:cc}"
+						],
+						[
+							"13th",
+							"{@spell resilient sphere}"
+						],
+						[
+							"17th",
+							"{@spell aether storm|kibblestasty:cc}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Guardian Spells",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"你在以下等级学会以下法术。以下是适合你的法术剑法法术，但不计入你已知的法术。",
+				{
+					"type": "table",
+					"caption": "Guardian Spells",
+					"colLabels": [
+						"Spellblade Level",
+						"Spells Learned"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell arcane ablation|kibblestasty:cc}"
+						],
+						[
+							"5th",
+							"{@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell haste}"
+						],
+						[
+							"13th",
+							"{@spell resilient sphere}"
+						],
+						[
+							"17th",
+							"{@spell wall of stone}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Swiftblade Spells",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"你在以下等级学会以下法术。以下是适合你的法术剑法法术，但不计入你已知的法术。",
+				{
+					"type": "table",
+					"caption": "Swiftblade Spells",
+					"colLabels": [
+						"Spellblade Level",
+						"Spells Learned"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell inflict wounds}"
+						],
+						[
+							"5th",
+							"{@spell poison dart|kibblestasty:cc}"
+						],
+						[
+							"9th",
+							"{@spell spider bite|kibblestasty:cc}"
+						],
+						[
+							"13th",
+							"{@spell blight}"
+						],
+						[
+							"17th",
+							"{@spell mislead}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mage Hunter Spells",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"你在以下等级学会以下法术。以下是适合你的法术剑法法术，但不计入你已知的法术。",
+				{
+					"type": "table",
+					"caption": "Mage Hunter Spells",
+					"colLabels": [
+						"Spellblade Level",
+						"Spells Learned"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Aldricor's elemental rebuke|KSB}"
+						],
+						[
+							"5th",
+							"{@spell silence}"
+						],
+						[
+							"9th",
+							"{@spell counterspell}"
+						],
+						[
+							"13th",
+							"{@spell suffocate}"
+						],
+						[
+							"17th",
+							"{@spell dispel evil and good}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellshot Spells",
+			"source": "KSB",
+			"page": 0,
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"你在以下等级学会以下法术。以下是适合你的法术剑法法术，但不计入你已知的法术。",
+				{
+					"type": "table",
+					"caption": "Spellshot Spells",
+					"colLabels": [
+						"Spellblade Level",
+						"Spells Learned"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell multishot|kibblestasty:cc}"
+						],
+						[
+							"5th",
+							"{@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell lightning bolt}"
+						],
+						[
+							"13th",
+							"{@spell greater invisibility}"
+						],
+						[
+							"17th",
+							"{@spell pressure cutter|kibblestasty:cc}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Warrior",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Battlemage",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"在选择这个职业分支时，从3级开始，每当你完成一次长休时，你可以触摸一把你熟练使用且没有双手属性的武器。当你使用该武器进行攻击时，你可以使用你的智力调整值，而不是力量或敏捷，来进行攻击和伤害骰的投掷。这个效益持续直到你完成一次长休。"
+			]
+		},
+		{
+			"name": "Quickening Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Battlemage",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从3级开始，你的奥术激涌特性获得了一个新选项：",
+				"* 你可以将施法时间为一次行动的法术剑法术作为一个奖励动作施放。"
+			]
+		},
+		{
+			"name": "Twin Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Battlemage",
+			"subclassSource": "KSB",
+			"level": 7,
+			"entries": [
+				"在第7级时，当你使用奥术激涌时，你可以选择两个可用选项。"
+			]
+		},
+		{
+			"name": "Surge Mastery",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Battlemage",
+			"subclassSource": "KSB",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你使用你的奥术激涌时，你会获得增强效果：",
+				"* 当你使用你的奥术激发(Arcane Surge)施放侦测魔法(detect magic)时，你也会获得夜视和看见隐形(see invisibility)的效果。",
+				"* 当你通过奥术突袭获得攻击优势时，你可以重新投掷一次攻击骰子。(%num%)当你通过奥术突袭获得攻击优势时，你可以重新投掷一次攻击骰子。(%num%)",
+				"* 当你在智力检定中加上你的力量或敏捷属性时，你在检定中获得优势。",
+				"* 当你传送时，你可以传送的范围增加10英尺。"
+			]
+		},
+		{
+			"name": "Unlimited Surges",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Battlemage",
+			"subclassSource": "KSB",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以进入完美奥术共鸣状态，持续1分钟（无需动作）。在这个状态下，你在回合中使用的第一个奥术激涌不会消耗你的奥术激涌特性的使用次数。",
+				"使用此特性后，直到完成一次长休之前，你无法再次使用它。"
+			]
+		},
+		{
+			"name": "Aether Blade",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Aether Blade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"在选择这个职业分支时，从3级开始，当你进行先攻骰或在任何时候作为一个奖励动作时，你可以显现出一把纯粹的力量能量制成的超大近战武器。它可以呈现为任何有刃的近战武器的形状，但无论其形态如何，它都是一把单手武器，造成1d10点伤害，射程为5英尺。",
+				"当你使用这把武器进行攻击时，你可以使用你的智力修正值（代替你的力量）来进行攻击和伤害骰。这把武器会持续到你放开它、陷入无能为力状态，或者作为一个奖励动作解除它。",
+				"虽然这把武器是暂时的和魔法的，但在施法时，它被视为价值1sp的材料成分。",
+				"作为一个需要1小时的仪式，你可以吸收来自一把魔法武器的力量，获得攻击和伤害骰的加值。这不能对神器、有意识的武器或被诅咒的物品使用。",
+				"根据你的GM的裁量，这可能对其他武器无效，取决于它们的起源和类型。这会耗尽武器的力量，使其变成一把普通武器，但你的以太剑(Aethersword)会获得之前由魔法武器拥有的攻击和伤害加值。"
+			]
+		},
+		{
+			"name": "Empowering Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Aether Blade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从3级开始，你的奥术激涌特性获得了一个新选项：",
+				"* 你赋予你的以太之刃（无需行动）额外造成一个伤害骰直到你的下一个回合结束。在效果期间，你可以重新投掷来自你的以太之刃的任何武器伤害骰一次（重新投掷后必须使用新的点数）。"
+			]
+		},
+		{
+			"name": "Aether Great Weapon",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Aether Blade",
+			"subclassSource": "KSB",
+			"level": 7,
+			"entries": [
+				"从7级开始，由以太剑(Aethersword)显现的以太武器变得更大更强大。它的伤害增加到1d12，并获得了延长属性(reach property)。"
+			]
+		},
+		{
+			"name": "Channeled Power",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Aether Blade",
+			"subclassSource": "KSB",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你使用你的任何奥术涌动效果时，你获得强化涌动(`Empowering Surge`)的效果。"
+			]
+		},
+		{
+			"name": "Massive Blade",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Aether Blade",
+			"subclassSource": "KSB",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以超载你的以太之刃1分钟（无需动作）。在持续时间内，当你用你的以太之刃攻击时，你可以忽略所有非魔法盔甲和防御，将目标的AC视为10 +他们的敏捷调整值进行攻击（像魔法盾或法师护甲这样的魔法防御不会被绕过）。在使用你的以太之刃以这种方式攻击时，你的攻击可以瞄准最多2个生物，只要它们相距不超过10英尺，尽管如果一次攻击通过法术打击触发了法术施放，它不会影响第二个目标，除非该法术可以瞄准多个生物。",
+				"使用此特性后，直到完成一次长休之前，你无法再次使用它。"
+			]
+		},
+		{
+			"name": "Guardian Proficiency",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从3级开始选择这个职业分支时，你会获得重甲和盾牌的熟练加成。",
+				"此外，你可以将近战武器作为你的奥术焦点，当你这样做时，你可以用握着奥术焦点的手进行身体动作成分（即使是没有材料成分的法术）。"
+			]
+		},
+		{
+			"name": "Projected Barrier",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从3级开始，你的奥术激涌特性获得了一个新选项：",
+				"* 当30英尺内的盟友生物被攻击或被魔法飞弹法术瞄准时，你可以使用一次奥术激发来施展护盾术，而不消耗法术槽，为该生物提供AC加值，而不是为自己提供。"
+			]
+		},
+		{
+			"name": "Fortifying Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "KSB",
+			"level": 7,
+			"entries": [
+				"在第7级时，当你消耗一次奥术激增时，你获得的临时生命值为1d8 + 你的智力调整值。"
+			]
+		},
+		{
+			"name": "Swapping Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "KSB",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你使用你的奥术突袭进行传送时，你可以选择与范围内的一名愿意生物交换位置，传送到他们的位置并将他们传送到你的位置。当你这样做时，你和他们都会获得坚固突袭带来的临时生命值。"
+			]
+		},
+		{
+			"name": "Resilient Aegis",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Guardian",
+			"subclassSource": "KSB",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以用魔法强化自己1分钟（无需行动）。在持续时间内，你对所有伤害具有抗性。一旦你使用了这个特性，你必须完成一次长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从3级开始，当你获得这个职业分支时，你将获得双武器格斗格斗风格（Two Weapon Fighting）.",
+				{
+					"type": "entries",
+					"name": "Two-Weapon Fighting",
+					"entries": [
+						"当你进行双武器战斗时，你可以将你的能力修正值加到第二次攻击的伤害上。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Swift Casting",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从3级开始，你可以在进行近战武器攻击之前，作为攻击动作的一部分使用法术打击(Spellstrike)。你不能在一回合内多次使用法术打击。",
+				"此外，你可以将近战武器作为你的奥术焦点，当你这样做时，你可以用握着奥术焦点的手进行身体动作成分（即使是没有材料成分的法术）。"
+			]
+		},
+		{
+			"name": "Rapid Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从（3级）开始，你的奥术激涌特性获得了一个新选项。",
+				"* 你可以使用一次奥术激涌来进行一次单次武器攻击（无需行动）。"
+			]
+		},
+		{
+			"name": "Relentless Spellstrike",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 7,
+			"entries": [
+				"在第7级时，如果你使用法术打击强化的攻击未命中，你可以选择不触发效果。当你这样做时，在你的回合结束前，你的下一次攻击将代替触发效果。"
+			]
+		},
+		{
+			"name": "Vanishing Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你使用一次奥术激涌时，你会在接下来的回合开始前变得隐形。"
+			]
+		},
+		{
+			"name": "Infinite Strikes",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Swiftblade",
+			"subclassSource": "KSB",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以借助魔法让自己加速到令人眼花缭乱的速度（无需行动）。在一分钟内，每当你使用动作或奖励动作进行攻击时，你可以立即用同一武器再次进行攻击。",
+				"使用此特性后，直到完成一次长休之前，你无法再次使用它。"
+			]
+		},
+		{
+			"name": "Disrupting Blows",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从3级开始，每回合当你用近战武器击中目标时，你造成额外的力量伤害，数值等同于你的熟练加值。当你施放一项庇护或猎法者法术时，这个额外伤害会在你的回合结束前翻倍。",
+				"此外，你的武器攻击投掷可以绕过一级法术（如法师护甲（Mage Armor）, 护盾（Shield）, 或庇护（Sanctuary））的效果。"
+			]
+		},
+		{
+			"name": "Purging Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从（3级）开始，你的奥术激涌特性获得了一个新选项。",
+				"* 在你的回合中，你可以消耗一次奥术突袭来结束施加在你身上的魔法效果或超自然状态（比如被魅惑或惊恐）（无需行动）。如果这个法术的等级高于你的半数（向上取整）的法术剑士等级，你必须进行一次智力豁免检定，DC为10 + 法术等级，才能结束它。如果你处于无能力状态，你不能使用这个能力。"
+			]
+		},
+		{
+			"name": "Nullifying Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "KSB",
+			"level": 7,
+			"entries": [
+				"从7级开始，即使处于无力状态，你也可以使用净化冲击。此外，你可以将净化力量投射出去，消耗两次奥术涌动的使用来施展反魔法或驱散魔法，而不消耗法术位。"
+			]
+		},
+		{
+			"name": "Expert Abjuration",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "KSB",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你使用净化冲击或抵消冲击进行驱散或抵消魔法效果的法术检定时，你可以将你的熟练加值加到骰子点数上。"
+			]
+		},
+		{
+			"name": "Mana Void",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Mage Hunter",
+			"subclassSource": "KSB",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以将自己转化为一个魔法虚空，吞噬和抵消周围的魔法。在一分钟内，你可以在你周围5英尺范围内投射反魔法领域的效果（无需动作）。在这个领域内，你仍然可以施放法术，但只能使用遣散法术和零级法术。在持续时间内，每回合一次，当你抵消或结束一个法术的效果时，你恢复1次奥术激增的使用。",
+				"这个效果会在你失去意识时提前结束，或者你可以随时结束它（无需行动）。"
+			]
+		},
+		{
+			"name": "Ranged Spellstrike",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"在选择这个职业分支时，从3级开始，你可以将你的法术打击应用于弹药以及近战武器，并且可以在使用灌注的弹药进行的远程武器攻击中触发法术打击。",
+				"当将法术灌注到远程武器中时，当武器发射时，法术会影响远程武器的目标，但只有与法术范围或武器的常规射程相等的射程（以较短的射程为准）。如果你攻击超出该范围的目标，法术将失败并消失。"
+			]
+		},
+		{
+			"name": "Distant Surge",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 3,
+			"entries": [
+				"从（3级）开始，你的奥术激涌特性获得了一个新选项。",
+				"* 当你使用法术斩击将一个法术灌注到一枚弹药中时，你可以消耗一点奥术激增，将该法术的射程增加到用于发射该弹药的武器的射程。"
+			]
+		},
+		{
+			"name": "Transmuted Ammunition",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 7,
+			"entries": [
+				"此外，在第7级时，当你赋予一个以直线为目标的法术时，你可以将你的弹药转化为法术效果，从你身上以直线释放该法术，就好像你自己施放了它，但使用你的力量或敏捷调整值（你可以选择）代替智力调整值作为法术豁免 DC。当你这样做时，你将你的武器伤害（包括调整值）加到法术的伤害骰中。"
+			]
+		},
+		{
+			"name": "Seeking Surges",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你使用一次奥术激涌时，你可以在下一次攻击投掷中加上你的智力修正值。"
+			]
+		},
+		{
+			"name": "Arcane Bolts",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 15,
+			"entries": [
+				"此外，在15级时，当你使用远程武器射击时，你可以始终利用奥术力量生成弹药。当你这样做时，使用具有弹药属性的远程武器时不消耗弹药，且你的武器伤害变为力场伤害。"
+			]
+		},
+		{
+			"name": "Perfect Escape",
+			"source": "KSB",
+			"className": "Spellblade",
+			"classSource": "KSB",
+			"subclassShortName": "Spellshot",
+			"subclassSource": "KSB",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以在一分钟内变得无法追踪（无需行动）。在此期间，你对敏捷豁免 throws 有优势，你处于自由行动的效果下，并且在每个你的回合开始时，你可以传送至多30英尺（无需行动）。",
+				"使用此特性后，直到完成一次长休之前，你无法再次使用它。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Arcane Agility",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_1st"
+			],
+			"entries": [
+				"你受到跳跃法术的影响，在效果期间(`jump`)"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Armor",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_1st"
+			],
+			"entries": [
+				"你在(mage armor)法术的效果下。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Swiftness",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_1st"
+			],
+			"entries": [
+				"你的移动速度增加了5英尺。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Enchanted Shield",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_1st"
+			],
+			"entries": [
+				"你触摸了一面盾牌，使其更容易挥舞。在效果期间，你对该盾牌有熟练加值。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Surging Saves",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_1st"
+			],
+			"entries": [
+				"你可以使用你的奥术激涌(Arcane Surge)将你的智力修正值添加到力量或敏捷豁免检定以及能力检定中（无需动作），消耗一个使用次数，就像增强能力检定一样。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Warding Barrier",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_1st"
+			],
+			"entries": [
+				"你减少所有受到的伤害 1 点。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Weapon Focus",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_1st"
+			],
+			"entries": [
+				"你将你的武器转化为一个奥术焦点，用于你的法术剑士法术。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Eyes",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_2nd"
+			],
+			"entries": [
+				"你获得了在黑暗中看清的能力。在效果范围内，你拥有60英尺的黑暗视觉。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Style",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_2nd"
+			],
+			"entries": [
+				"当这个护盾(Aegis)激活时，你可以选择获得一项来自战士(Fighter)职业的战斗风格(Fighting Style)选项。如果你已经拥有一种风格，那么你选择的这种必须是不同的。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Blade Channel",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_2nd"
+			],
+			"entries": [
+				"当你使用Spellstrike施放法术时，你可以使用用于使用该武器进行攻击的能力调整值，而不是你的智力值作为施法能力调整值。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Illusionary Ally",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_2nd"
+			],
+			"entries": [
+				"当你投掷先攻骰时，你会创造一个与镜像法术相同的镜像。你在同一时间只能拥有一个来自这个效果的镜像。如果在效果期间施放了镜像法术，法术保持不变，但在失去一个镜像的第一次时，这个镜像会被摧毁。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Loyal Weapon",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_2nd"
+			],
+			"entries": [
+				"选择这个护盾时，你触摸的武器将受到回返武器（Returning Weapon）魔法效果的影响。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Quickened Movement",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_2nd"
+			],
+			"entries": [
+				"你的移动速度增加了5。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Aether Barrier",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_3rd"
+			],
+			"entries": [
+				"当你用你的以太刀造成伤害时，你获得临时生命值，数值等同于你的智力调整值。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Spellblade"
+						},
+						"subclass": {
+							"name": "Aether Blade",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Shield",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_3rd"
+			],
+			"entries": [
+				"你可以创造一面奥术能量的盾牌，保护你，挡住来袭的攻击。你的AC增加+2，就像你装备了一面盾牌一样。这算作一面已装备的盾牌，但不需要使用你的手，你不能同时受益于这个和一面已装备的盾牌。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Blastwave",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_3rd"
+			],
+			"entries": [
+				"每当你使用奥术激涌或1级或更高级法术进行传送时，你的神盾会释放出一股冲击波。在你传送目的地周围5英尺范围内的生物必须进行一次力量豁免，豁免 DC 为你的法术豁免 DC，否则被击倒。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Contingent Blink",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_3rd"
+			],
+			"entries": [
+				"第一次你因受到伤害而降至0点生命值时，你将会降至1点生命值，并消失在你所在的位面，出现在以太位面上。在你的回合开始时，你将会回到你选择的一个未被占据的空间，该空间必须在你消失的位置周围10英尺内且你能看到。一旦触发，直到你完成一次长休之前，这个效应不会再次触发。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Resistance",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_4th"
+			],
+			"entries": [
+				"在效果期间，你获得对酸性、冰冷、火焰、闪电、毒素或雷电伤害的抗性。当你再次选择这个护盾时，你可以选择一个新的伤害类型。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Combat Contingency",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_4th"
+			],
+			"entries": [
+				"你在你的护盾中加入了一个用于快速部署战斗魔法的应急方案。当你进行先攻检定时，作为一次反应，你可以施放一个对你自己有效且施法时间为1个行动的3级或更低级别的法术。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Dimensional Pathways",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_4th"
+			],
+			"entries": [
+				"当你使用奥术突袭传送时，你可以带着一个愿意的中等或更小体型的生物与你一起传送，将它们传送到目的地附近5英尺内。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Runic Strength",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_4th"
+			],
+			"entries": [
+				"在效果期间，你的力量分数变为与你的智力分数相等。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Flight",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_5th"
+			],
+			"entries": [
+				"在效果期间，你获得30尺的飞行速度。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Alacrity",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_5th"
+			],
+			"entries": [
+				"当你进行攻击动作时，你可以攻击两次，而不是一次。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Stone Aegis",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_5th"
+			],
+			"entries": [
+				"你减少所有受到的伤害5点。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Resilient Aegis",
+			"source": "KSB",
+			"page": 0,
+			"featureType": [
+				"SB_A_5th"
+			],
+			"entries": [
+				"在效果期间，你可以选择获得一个存活豁免的熟练加值。"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"name": "Spellblade"
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1622 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Companion",
+				"full": "The Companion",
+				"authors": [
+					"Shadowsocks"
+				],
+				"abbreviation": "COMP",
+				"url": "https://homebrewery.naturalcrit.com/share/HyrZKEiimV",
+				"version": "V9"
+			}
+		],
+		"optionalFeatureTypes": {
+			"SStep": "Solo Step",
+			"DStep": "Duet Step"
+		},
+		"dateAdded": 1558265586,
+		"dateLastModified": 1692309855,
+		"_dateLastModifiedHash": "feac4061f3"
+	},
+	"class": [
+		{
+			"name": "Companion",
+			"source": "Companion",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"cha",
+				"dex"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Solo Steps Known",
+						"Duet Steps Known",
+						"Tempo Points"
+					],
+					"rows": [
+						[
+							3,
+							1,
+							1
+						],
+						[
+							3,
+							1,
+							2
+						],
+						[
+							3,
+							2,
+							2
+						],
+						[
+							4,
+							2,
+							3
+						],
+						[
+							4,
+							3,
+							3
+						],
+						[
+							4,
+							3,
+							4
+						],
+						[
+							4,
+							4,
+							4
+						],
+						[
+							5,
+							4,
+							5
+						],
+						[
+							5,
+							5,
+							5
+						],
+						[
+							5,
+							5,
+							6
+						],
+						[
+							5,
+							6,
+							6
+						],
+						[
+							6,
+							6,
+							6
+						],
+						[
+							6,
+							7,
+							6
+						],
+						[
+							6,
+							7,
+							7
+						],
+						[
+							6,
+							8,
+							7
+						],
+						[
+							7,
+							8,
+							7
+						],
+						[
+							7,
+							9,
+							7
+						],
+						[
+							7,
+							9,
+							8
+						],
+						[
+							7,
+							10,
+							8
+						],
+						[
+							7,
+							10,
+							8
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+					"{@item scimitar|phb|scimitars}",
+					"{@item shortsword|phb|shortswords}",
+					"{@item whip|phb|whips}"
+				],
+				"tools": [
+					"One tools or musical instrument of your choice"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"athletics",
+								"deception",
+								"history",
+								"insight",
+								"perception",
+								"performance",
+								"persuasion",
+								"sleight of hand"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) any 3 {@filter simple weapons|items|source=phb|category=basic|type=simple weapon} (b) a {@item whip|phb} and a {@item scimitar|phb}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a tool or instrument, {@item Leather armor|phb}, and a {@item diplomat's pack|phb}",
+					"(a) a book of lore, (b) an hourglass, or (c) two steel mirrors"
+				],
+				"goldAlternative": "{@dice 4d4×10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 3
+							}
+						],
+						"b": [
+							"whip|phb",
+							"scimitar|phb"
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+					},
+					{
+						"a": [
+							"Leather armor|phb",
+							"diplomat's pack|phb"
+						]
+					},
+					{
+						"a": [],
+						"b": [],
+						"c": []
+					}
+				]
+			},
+			"classFeatures": [
+				"Swaying Steps|Companion|Companion|1",
+				"Cadence|Companion|Companion|1",
+				"Fledgling's Favorite|Companion|Companion|2",
+				"Unarmored Defense|Companion|Companion|2",
+				{
+					"classFeature": "Companion Style|Companion|Companion|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Companion|Companion|4",
+				"Fluttering Counterpart|Companion|Companion|5",
+				"Counter-Curio|Companion|Companion|5",
+				"Vain Vivacity|Companion|Companion|6",
+				"Virtuoso's Vernacular|Companion|Companion|6",
+				{
+					"classFeature": "Companion Style feature|Companion|Companion|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Companion|Companion|8",
+				"Merry Visionary|Companion|Companion|9",
+				"Cadence (x2)|Companion|Companion|10",
+				"Subtle Spectacle|Companion|Companion|10",
+				{
+					"classFeature": "Companion Style feature|Companion|Companion|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Companion|Companion|12",
+				"Tarantella Therapy|Companion|Companion|13",
+				"Set the Stage|Companion|Companion|14",
+				{
+					"classFeature": "Companion Style feature|Companion|Companion|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Companion|Companion|16",
+				"Poise Destroys|Companion|Companion|17",
+				"Join the Jamboree|Companion|Companion|18",
+				"Ability Score Improvement|Companion|Companion|19",
+				"Roar of the Crowd|Companion|Companion|20"
+			],
+			"subclassTitle": "Companion Style"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Bewitching Ballet",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合结束。",
+				"你以惊人的优雅和惊人的阿拉伯舞姿，在人们的脑海中跳舞。在30英尺范围内，你选择的一个生物必须做一个智力储蓄动作。一旦失败，它将忘记自己，在持续时间内被你毒害和迷惑，因为它的智慧完全被迷惑了。如果目标受到伤害，这个步骤的效果会提前结束。当这个效果结束时，该生物会立即意识到它被你的芭蕾舞神奇地操纵了。"
+			]
+		},
+		{
+			"name": "Burlesque Breakdancing",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:}直到目标挣脱（或你释放他们）。",
+				"掉落到低处，你有力地旋转，并以平衡密集的姿势定格，玩弄你的目标。对触手可及的生物进行一次近战武器攻击。一旦命中，目标将受到你的武器的伤害，如果它不比你大一圈，它必须成功地进行力量救赎，否则它将在整个过程中被你的光环卷轴抓住。目标可以在它的每个回合结束时重复它的蓄力，或者作为一个动作，如果成功则结束抓捕。这种抓捕不需要自由的手，但你不能用它来拖动或携带目标：如果你移动到离目标超过5英尺的地方，抓捕就会结束。"
+			]
+		},
+		{
+			"name": "Can-Can Cannon",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你把你的光环砸向一个目标，用高踢和盛气凌人的方式炫耀你的豪迈。用你的魅力修改器对邻近的生物进行一次近战武器攻击，该生物的体型不超过你的一个。一旦命中，目标不会受到你的武器的伤害，而是被直接向上发射，其数量相当于你当前消耗的节奏点的十倍。在你的回合结束时，目标会坠落相同的距离。当生物在下降过程中与表面相撞时，它每下降10英尺就会受到{@dice 1d6}的魔法打击伤害。如果你的攻击是关键一击，你可以掷出两倍的伤害骰子，并且目标在下落过程中俯卧。"
+			]
+		},
+		{
+			"name": "Contra Body Movement",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 直到你的回合结束或你的准备行动结束。",
+				"通过旋转你的躯干，摆动你相应的手臂，并将肩膀向后倾斜，你将自己向前推进。在这段时间里，每当你向以前与你进行过二重奏的生物消耗运动时，你可以将你移动的距离增加三倍。"
+			]
+		},
+		{
+			"name": "Freestyle Favor",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你在{@dice 1d4}回合中的回合开始。",
+				"你对一种情感的任性描述使你的指尖沾满了魔力。如果你受到卡德鲁斯的影响，你可以通过触摸他们的心脏将效果转移到你周围5英尺内的生物身上，暂时放弃它的好处。当攻击目标是他们时，他们可以利用你的灵巧救赎奖励来躲避攻击。你必须像往常一样专注于这个效果。如果该效果维持了整个持续时间，音律会从他们身上转移到你身上。"
+			]
+		},
+		{
+			"name": "Head Over Heels",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"利用各种翻转和翻滚，你可以将自己抛向任何方向20英尺，而不需要花费你这一回合的动作。在这些魔法体操过程中，任何使用他们的反应来攻击你的生物都必须先做一个魅力储蓄动作。一旦失败，他们的攻击就会失败，并且他们会被你迷住，直到你下一个回合结束。"
+			]
+		},
+		{
+			"name": "Heartfelt Hula",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你的威严要求你身边10英尺内的生物注意你。目标必须在 \"魅力拯救 \"中成功，否则它将无法自愿移动或传送离开你，直到它的下一回合结束。"
+			]
+		},
+		{
+			"name": "Hopak Hypnosis",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你步履轻盈，你的下蹲跳跃和转身踢腿旨在迷惑目标。你在攻击中推动你的光环，并对触手可及的生物进行近战武器攻击。一旦命中，目标会受到你的武器的伤害。然后，如果目标能看到你，它必须在 \"魅力救赎 \"中成功，否则它将被你迷惑1分钟。如果他们当前的命中率低于其最大命中率的一半（四舍五入），他们在这一步的蓄力攻击中具有优势。目标可以在他们的回合开始时重复这个蓄力动作，如果成功则结束该效果。"
+			]
+		},
+		{
+			"name": "Jester's Jive",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"当视线范围内的生物受到惊吓时，你可以将他们的恐惧来源踩进他们的心灵。在你30英尺范围内受到惊吓的目标必须做一个智慧储蓄动作，它可以选择失败。一旦失败，目标就会被吓到他们的东西的虚幻复制体完全包围。只有目标能看到这些复制品。直到幻象在目标的下一个回合结束时消失，目标会被幻象所吓倒，并且其速度会降低到0。",
+				"杰斯特的舞步也可以作为二重奏表演，不过它不计入你已知的二重奏步数。当你和一个伙伴一起跳时（并消耗一个节奏点），你可以针对范围内任何数量的受惊生物。"
+			]
+		},
+		{
+			"name": "Laudable Lavani",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你的举止会让30英尺内的生物感到敬畏。如果你说的是目标的语言之一，他们必须在 \"魅力储蓄 \"中获得成功，否则就会被你迷住，持续1小时。如果你或你的盟友对他们有敌意，他们会自动成功。在被魅惑时，目标会对你感到真诚的尊重，但不一定会信任你。如果你或你的盟友伤害或侮辱了目标，这个效果就会结束。如果一个生物在这个步骤的救赎中成功，或者效果提前结束，他们会在24小时内变得免疫。你在任何时候都只能有一个生物被这个步骤所迷惑。在这个步骤的效果结束后，生物会回忆起他们失去了对自己的控制，但他们相信这种行为是由于他们自己的情感--他们被你短暂地迷住了。"
+			]
+		},
+		{
+			"name": "Pendulum Wing",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"利用稳定的平衡，当你挥舞着你精通的武器时，你的脚会向两边挥舞。在你周围5英尺范围内的生物必须对你的挥舞攻击做一个灵巧的蓄力动作。失败者会被你的武器击中并受到伤害。在5级时，你可以对一个受影响的生物激活闪烁武器的光环属性，放弃对它的伤害。"
+			]
+		},
+		{
+			"name": "Spellthief's Sabar",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你引人入胜的漫游会嘲弄你周围5英尺内的生物，该目标必须做一个智慧救赎动作。一旦失败，直到他们的下一个回合结束，他们都无法用他们的法术或魔法效果针对你以外的生物。此外，如果他们要使用覆盖一个效果区的魔法，他们必须将效果瞄准你，使你在其范围内。"
+			]
+		},
+		{
+			"name": "Walkover",
+			"source": "Companion",
+			"featureType": [
+				"SStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合开始。",
+				"你准备以惊人的艺术手法在空中完全旋转你的身体。在持续时间内，下一次敌人以你为攻击目标时，他们必须先做一个灵巧的蓄力动作。一旦失败，攻击就会落空，因为你的速度超过了他们。攻击结束后，你可以消耗你上一回合剩余的动作，在不引起机会攻击的情况下移动。这个步骤随后结束。"
+			]
+		},
+		{
+			"name": "Backroom Bolero",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:} 最多1分钟",
+				"你和你的伙伴靠在一起，开始了悠闲而激烈的俯冲和转身表演。当你们用脚在地板上踩出符号时，你们都在为逃跑做准备。当这个舞蹈结束时，你们两个人都会立即被传送回一个无人的空间，与你们任何一个人开始双人舞的地方相邻。如果你们开始任何其他的二重奏，这个步骤立即结束。在5级时，这个二重奏还可以传送你目前正在抓捕的任何生物或物体，或者你用链式闪电武器捆绑住的生物或物体。"
+			]
+		},
+		{
+			"name": "Cha-Cha-Challenge",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合开始。",
+				"带着挑衅性的炫耀，你们两个人夸耀自己的能力。选择一个人从这个舞蹈中受益：你或你的伙伴。在持续时间内，被选择的一方会被置于躲避动作的效果之下，在躲避的舞者30英尺范围内，你所选择的生物必须做一个魅力拯救动作。如果生物对被魅惑有免疫力，就不会受到影响。一旦失败，生物会被迷惑：在它的下一个回合，它不能对任何生物进行攻击，除了躲避的舞者。如果躲避的舞者移动到离目标超过30英尺远的地方，或者如果有任何效果导致目标被他们迷住，这种迷恋就会结束。"
+			]
+		},
+		{
+			"name": "Disco Dynamism",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合开始。",
+				"表现出急切的赌博和跳动，你们两个人都在跳动。你的伙伴在下一回合可以采取一个额外的行动，除了分配给他们的正常行动之外。"
+			]
+		},
+		{
+			"name": "Fanciful Foxtrot",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Prerequisite:} 5级。{@b Duration:} 最多1分钟。",
+				"当你对一场私人盛宴产生激动人心的幻想时，你和你的伙伴就会迷失在彼此之中。每当你或你的伙伴用攻击击中除你们自己以外的生物时，那个生物会立即对你们的存在视而不见，并且会被视为对你们两个人失明和失聪，无论它拥有何种感官，都无法在持续时间内感知到你们中的任何一个。如果你们中的任何一方以任何方式影响到被遗忘的生物，这个二重奏就会立即结束，所有的目标都会重新感知到你们。如果你开始任何其他的二重奏，这个步骤就会立即结束。"
+			]
+		},
+		{
+			"name": "Festal Flamenco",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:} 最多30分钟。",
+				"你开始一个突然的、激烈的、扭动的激情展示，你的伙伴提供伴奏。在持续时间内，你在一个你能看到的120英尺范围内的无人空间里创造并维持一个精心设计的人形幻影，它的外表、声音、气味、质地和行为由你选择，并可以随时自由改变。除此之外，它的功能与同类的典型人形相似。你可以通过这个幻象说话，通过它的眼睛看，听到它所听到的东西，通过消耗你自己的运动来移动它，以及以其他方式感受它所感受到的东西，而不会失去对你自己感官的控制。",
+				"每当有生物看到你的幻象，该生物必须做一个智慧救赎动作。那些成功的人（或拥有真实视力的人）会立即不相信你的幻象，但会被诅咒：在这个舞蹈的持续时间里，他们不能自愿向任何其他生物暗示这个幻象不是真的。那些失败的人相信它是真的，如果他们认出它，他们就会确信它的身份。他们甚至会将任何不合逻辑的行为合理化，包括它的突然到来和离开，作为它所出现的那个生物的典型。幻象感觉是有形的，经得起物理检查，但如果它受到伤害就会消失。攻击会自动击中它，而且它总是无法挽救。如果你执行任何其他步骤，这个二重奏会立即结束。"
+			]
+		},
+		{
+			"name": "Flare Share",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你和你的伙伴戏剧性地一起扭动手臂，在地板上滑行，用对过去的回忆淹没你的观众的头脑。你或你的伙伴必须是分享者，并且必须回忆一个时刻作为起点。根据咒语，一道短暂的闪光会在该回合的剩余时间内从分享者身上散发出来。所有看到这道闪光的生物都会经历一个生动的精神场景，即分享者诚实地记得从那一刻起的感觉和感受。那些选择移开视线的人可以尝试用智慧救赎，如果成功则不会有任何体验。最多可以在一瞬间分享1小时的记忆，观看者会拥有这段记忆，就像他们最近用分享者的感官体验过一样。"
+			]
+		},
+		{
+			"name": "Mazurka Moratorium",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Prerequisite:} 13级。{@b Duration:} 1轮。",
+				"在一种活泼的、有光泽的同步跳动中，世界似乎在你周围停滞了。通过接触你身边5英尺内的生物，你会让他们在持续时间内悬浮在时间中。不愿意的生物必须在宪法规定的投掷中成功，才能抵制这个效果。受影响的目标会失去行动能力，不能移动或说话，但仍能感知周围的环境。目标在其当前位置无法移动，并且不能被瞄准、影响、损坏、治疗或以其他方式与之互动，除了一个愿望法术。当效果在你的下一回合开始时结束，目标可以立即进行它所失去的那一回合。为了比目标更快地行动，你和其他同时行动的人可以尝试做一个灵巧检查，目标可以用自己的灵巧检查来抗衡。"
+			]
+		},
+		{
+			"name": "Mesmer's Mambo",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合结束。",
+				"你和你的伙伴通过精神上的晃动，使你们任何一方30英尺范围内的生物感到困惑，迫使它做一个智力储蓄动作。一旦失败，目标将失去对它所维持的任何效果的注意力，并在持续时间内无法施法。在第9级时，你可以用这个步骤针对范围内任意数量的生物。"
+			]
+		},
+		{
+			"name": "Playful Polka",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你和你的伙伴开始了一阵蹦蹦跳跳的表演，你和你的伙伴召唤了两个你自己想象的小生物，作为比赛的裁判员。小裁判的行为由你的DM决定，用10个字或更少的字解释一个游戏--例如 \"找到我们的藏身之处 \"或 \"发现我们的秘密\"，然后你选择的60英尺内的生物可以用他们的反应来尝试使用裁判允许的任何技能进行适当的能力检查，如果有必要，可以在范围内移动（不消耗移动）。检查总结果最高的参赛者就是胜利者。裁判员随后消失。在8小时内，胜利者受到高度尊重：他们在与所有其他参与者进行社交互动的能力检查中具有优势。另外，在这段时间内，当其他参与者使用胜利者所使用的技能进行能力检查时，他们必须使用胜利者的永久奖励或惩罚来进行检查，因为他们被迫模仿之前的胜利。"
+			]
+		},
+		{
+			"name": "Quixotic Quebradita",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合开始。",
+				"你和你的伙伴开始了一连串狂热的举起和拉起，盘旋在一起。在你们两个人5英尺范围内的空间对其他任何人来说都是困难的地形。你们使用对方的身体作为旋转的武器：在持续时间内，你们选择的生物如果在你们任何一方的5英尺范围内开始他们的回合，或者在他们的回合中第一次进入这个范围，必须在一个灵巧的救赎上成功，或者受到1d12的魔法打击伤害，成功后受到一半的伤害。",
+				"这个二重奏的伤害在你达到这个等级的某些级别时增加1d12。3级（2d12），5级（3d12），9级（4d12），13级（5d12），17级（6d12）。"
+			]
+		},
+		{
+			"name": "Rattlesnake Rumba",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Prerequisite:} 5级。{@b Duration:} 最多1分钟。",
+				"就像蛇在争夺它们的大小一样，你的性感摇摆使你的能力超越了极限。选择你们中的哪一个将从这个二重奏中受益--你或你的伙伴。在这个步骤的持续时间内，被选择的一方被赋予了灵活性：他们的武器攻击可以在通常的两倍范围内进行，他们的法术效果区域（长、宽、高、深）可以覆盖两倍的尺寸。"
+			]
+		},
+		{
+			"name": "Red Rover",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"你们用魔法火焰吞噬自己的身体，然后奔跑起来。通过消耗你自己在该回合的剩余动作，你可以将你自己和你的伙伴在一条直线上移动到距离你们各自所站的目的地的距离。你的伙伴不需要消耗移动力来跟随你到这个距离。你们都可以在其他生物的空间中移动，但你们不能在其他生物的空间中结束你们的移动。这种移动不受非魔法困难地形的阻碍，而机会攻击只能针对你。你可以对你本轮第一次进入其空间的每个生物进行一次武器攻击，包括你的伙伴，在其中一次攻击中，你可以在得知击中后造成额外的1d6火焰伤害。",
+				"当你达到这个等级的某些级别时，额外的火焰伤害增加1d6。3级（2d6），5级（3d6），9级（4d6），13级（5d6），17级（6d6）。"
+			]
+		},
+		{
+			"name": "Seer's Samba",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:} 瞬时",
+				"当你像拥有这个地方一样昂首阔步时，你与你的伙伴摆出一个姿势，向一个神秘的观众提出一个问题。这个问题必须是一个以 \"谁\"、\"什么\"、\"哪里\"、\"什么时候 \"或 \"为什么 \"开头的单句。例如，\"谁是最美丽的人\"、\"国王害怕什么\"、\"解药在哪里\"、\"我何时离开犯罪现场 \"或 \"我为什么被出卖\"？如果答案晦涩难懂或属于严密的秘密，你或你的伙伴可能会被要求对你的询问程度进行魅力（说服力）检查。你联系一个实体--一个有他们认为正确答案的人--如果他们愿意，他们的答案就会在最近的反射表面上出现一个无声的图像。这个图像保持1分钟。他们的答案可以以任何形式出现，如文字或风景。这种舞蹈可以联系过去或现在的实体，但不能联系未来。"
+			]
+		},
+		{
+			"name": "Shielding Swing",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合开始。",
+				"你和你的伙伴开始通过流畅的非节奏运动来分享好心情。在你们任何一方的5英尺范围内，你们选择的友好生物可以立即感觉到他们的光环在他们周围变成一个可见的装甲圆顶，保护他们免受伤害。在持续时间内，目标被授予完全的掩护--他们不能被攻击或魔法直接瞄准。他们仍然容易受到覆盖一个区域而不针对所选生物的效果的影响。"
+			]
+		},
+		{
+			"name": "Suitor's Kathak",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你下一回合结束。",
+				"你和你的伙伴各自扮演一个你选择的角色：崇拜者或偶像，进行一场简短的视觉故事会。在仰慕者的回合中，他们第一次用攻击击中偶像时，你可以用你的光环将痛苦转化为快乐。攻击不是造成伤害，而是使神像重新获得与所受伤害相等的命中率。这个二重奏在其治疗生效后立即结束。"
+			]
+		},
+		{
+			"name": "Tantalizing Tango",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Prerequisite:} 13级。{@b Duration:} 最多1分钟。",
+				"你和你的伙伴将目光吸引到你那冒失的步伐上。在你周围60英尺内选择与你的魅力修饰值相等的生物，并进行魅力（表现）检查。你选择的每个生物都会在持续时间内获得与结果相等的临时打击点数。"
+			]
+		},
+		{
+			"name": "Troublesome Tourdion",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Prerequisite:} 9级。{@b Duration:}直到你下一个回合开始。",
+				" 在一场引人注目的抢劫的欢庆中，你和你的伙伴疯狂地转弯，就在伸手不见五指的地方。每当一个生物的攻击没有击中你或你的伙伴，你可以立即对你范围内的一个生物进行武器攻击。如果在这个二重奏中你们都没有被攻击到，那么在二重奏结束时你们会重新获得一个节奏点。"
+			]
+		},
+		{
+			"name": "Waning Waltz",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Duration:}直到你的下一回合开始时，在与你的最大节奏点数相等的回合数过去之后。",
+				"你用天体庆典的盘旋上升和下降来庄重你的地点。你和你的伙伴各自扮演一个你选择的角色：一个是太阳，一个是月亮。当这个二重奏结束时，太阳可以对范围内的目标进行一次近战法术或武器攻击。一旦命中，这次攻击造成的坏死伤害等于月亮在这次二重奏中受到的总伤害的一半（向下取整）。在它完成长时间的休息之前，目标的最大命中率也会减少，减少的量与它受到的伤害相同。"
+			]
+		},
+		{
+			"name": "Zippy Zekari",
+			"source": "Companion",
+			"featureType": [
+				"DStep"
+			],
+			"entries": [
+				"{@b Prerequisite:} 9级。{@b Duration:}直到你的伙伴的下一个回合结束。",
+				"你开始模仿你的伙伴，令人费解地夸大他们的每一个动作。在这段时间内，你的伙伴在所有的攻击卷上获得优势。在这段时间内，每当你的伙伴用攻击击中一个生物时，你可以对一个触手可及的目标进行闪烁攻击。"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Chains",
+			"type": "M",
+			"rarity": "none",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"FLR",
+				"F"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Aura - Shackle",
+					"entries": [
+						"当你用此武器击中一个大型或更小的无约束生物或物体时，你可以放弃伤害，将该目标与你绑定。捆绑时你们的速度减半，当其中一方移动时，另一方也会向同一方向移动（不考虑重量）。为了逃脱，你和目标生物可以在各自的回合开始时对你的步数救赎DC做一个灵巧或力量的救赎，并且你们每个人都可以作为一个动作尝试额外的救赎。你可以将这些链子装备在你的手臂或腿上。你不能同时将一个以上的目标捆绑在你身上。"
+					]
+				}
+			],
+			"source": "Companion"
+		},
+		{
+			"name": "Dual Chakrams",
+			"type": "M",
+			"rarity": "none",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"property": [
+				"FLR",
+				"F",
+				"T",
+				"L"
+			],
+			"entries": [
+				"在持有时，这种武器可以毫不费力地分成两半或合并成一个整体。",
+				{
+					"type": "entries",
+					"name": "Aura - Symmetry",
+					"entries": [
+						"当你用这把武器的任何部分击中一个生物时，你可以放弃伤害，为目标灌注阴气或阳气，直到下一回合结束。如果你在当前回合中没有消耗一个节奏点，则该光环属性不能使目标附身。",
+						{
+							"type": "entries",
+							"name": "Yin",
+							"entries": [
+								"每当目标被攻击击中时，其攻击者会受到1d6辐射伤害。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Yang",
+							"entries": [
+								"每当目标被攻击击中，它的攻击者就会恢复1d6点命中率。"
+							]
+						}
+					]
+				}
+			],
+			"range": "60/150",
+			"source": "Companion"
+		},
+		{
+			"name": "Fans",
+			"type": "M",
+			"rarity": "none",
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"property": [
+				"FLR",
+				"F"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Aura - Heave",
+					"entries": [
+						"当你用这个武器击中一个中等或较小的生物时，你可以放弃伤害，将该生物在空中向你选择的方向抛出（%0%）英尺。一个不情愿的生物必须对你的步数救赎DC成功地进行力量救赎以避免被移动。如果这个移动造成了坠落伤害，目标在落地时不会俯卧。"
+					]
+				}
+			],
+			"source": "Companion"
+		},
+		{
+			"name": "Getas",
+			"type": "M",
+			"rarity": "none",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"FLR",
+				"F",
+				"L",
+				"S"
+			],
+			"entries": [
+				"佩戴在脚上。可以是重击伤害或砍击伤害。",
+				{
+					"type": "entries",
+					"name": "Aura - Disrupt",
+					"entries": [
+						"当你用这些带刃的凉鞋武器击中大型或小型生物时，你可以放弃伤害，用魔法使目标失去平衡，减少他们当前回合的主动权，其数量等于（%0%）+你的力量或灵巧修正值。"
+					]
+				}
+			],
+			"source": "Companion"
+		},
+		{
+			"name": "Needles",
+			"type": "M",
+			"rarity": "none",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"property": [
+				"FLR",
+				"F",
+				"T",
+				"L"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Aura - Acupuncture",
+					"entries": [
+						"当你用这个武器击中一个生物时，你可以放弃伤害来刺穿目标的生命力，麻痹他们的敏感性，直到你下一个回合开始。每当一个受影响的生物被攻击击中时，你可以减少攻击的伤害，减少的量等于你的魅力修正值。"
+					]
+				}
+			],
+			"range": "30/120",
+			"source": "Companion"
+		},
+		{
+			"name": "Props",
+			"type": "M",
+			"rarity": "none",
+			"dmg1": "1d4",
+			"property": [
+				"FLR",
+				"F",
+				"S"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"当你获得熟练度时，从冷、火、闪电、坏死、毒药或辐射中选择一种伤害类型。"
+					]
+				},
+				"通过强调一个道具，你可以明显地施展你的光环来笼罩邻近的目标，作为一种攻击。",
+				{
+					"type": "entries",
+					"name": "Aura - Allure",
+					"entries": [
+						"当你用道具攻击击中一个生物时，你可以放弃伤害，而是引诱目标。在视线范围内选择一个盟友（除你自己外）。直到你的下一回合结束，目标会被所选的盟友迷住，视他们为朋友。如果你或所选的盟友攻击被魅惑的目标，对其造成伤害，或迫使其做出蓄力动作，则此效果提前结束。"
+					]
+				},
+				"任何能增强你的表演的物品都可以被认为是道具，由你的管理员决定。例如：异国情调的面具、镜子、珠宝、阳伞、乐器、鲜花、头骨、旗帜、流苏、手杖、波伊，或体操器具，如吊环、球、丝带或杂耍棒。"
+			],
+			"source": "Companion",
+			"grantsProficiency": true
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "FLR",
+			"source": "Companion",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Flicker",
+					"entries": [
+						"缺省情况下，没有任何角色能精通闪烁武器。闪烁武器有一个特殊的光环属性，只有在你精通该武器的情况下才可以使用。"
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Swaying Steps",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 1,
+			"entries": [
+				"你已经学会了排练舞步--协调的舞蹈技巧，以便有天赋地战斗。这些舞步运用你的个性，表达你的情感情绪，产生近乎超人的效果，因为你的轮廓明显闪烁着与你的灵魂相匹配的光环。",
+				"你的旅程从三个单人舞步和一个自选的双人舞步开始，你在等级表中显示的等级获得对新舞步的控制。每当你获得一个同伴等级时，你可以用一个二重奏步法换取另一个。",
+				"步骤选项可以在{@filter Optional Features|optionalfeatures|Feature Type=Solo;Duet}页面找到。",
+				"步法是魔法舞蹈技术，与咒语不同，它们是广泛练习的结果--无论是自己还是与伙伴。每一个舞步都是作为一个动作开始的。",
+				"单人舞步可以进行任何次数而不会使你感到疲倦，而双人舞步则考验你合作精神的极限。你必须消耗一个节奏点来开始二重舞，并且必须有一个愿意的人形盟友在你的5英尺范围内。你的伙伴不需要任何行动，但他们必须跟着跳舞。如果你的伙伴不再在你的10英尺范围内，二重奏就会立即结束。每当你完成一个长时间的休息，你就会恢复所有消耗的节奏点。最后，要用步法瞄准一个生物，你必须能看到他们。",
+				"有些步骤需要你的目标做一个蓄力动作来抵抗该步骤的效果。你的步法蓄力DC的计算方式如下。",
+				{
+					"type": "abilityDc",
+					"name": "Step",
+					"attributes": [
+						"cha"
+					]
+				}
+			]
+		},
+		{
+			"name": "Cadence",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 1,
+			"entries": [
+				"从狭路相逢的快感中，你感受到了生命的韵律。当攻击没有击中你的时候，你可以用韵律为你的光环加持，作为一种反应，使你能够听到战斗流程中的模式。在长达10分钟的时间里，每当你被攻击时，你可以做一个与攻击卷相等的灵巧拯救动作。如果你成功了，攻击就会错过你，因为它被你有节奏的光环转移了。你必须集中精力维持这个效果，就像它是一个咒语一样，专注于节拍，而且你可以在短暂的休息时间内用韵律给自己加持一次。如果你失聪、丧失能力，或者你的速度变为0，就像你被抓紧或限制时发生的那样，你会失去对这个效果的注意力。"
+			]
+		},
+		{
+			"name": "Fledgling's Favorite",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 2,
+			"entries": [
+				"总有一种二重奏毫不费力地、自然而然地出现，仿佛它亲自选择了你。从第二级开始，你可以学习以下二重奏中的一种，而不计入你已知的二重奏步骤数。欢快的弗拉门戈舞，火焰分享，俏皮的波尔卡舞，或预言家的桑巴。每短时休息一次，这个二重奏可以在不消耗节奏点的情况下进行。"
+			]
+		},
+		{
+			"name": "Unarmored Defense",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 2,
+			"entries": [
+				"即使在训练的初期，你那不可预知的滑行动作也是一种防御性的资产：你从不停留在原地，这让你很神秘。在第2级时，当你有意识，没有穿戴盔甲，没有受到卡顿的影响，没有挥舞盾牌，没有被抓捕、麻痹或限制时，你的攻击力等于10+你的灵巧修正值+你的魅力修正值。"
+			]
+		},
+		{
+			"name": "Companion Style",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 3,
+			"entries": [
+				"作为一个伴侣，你的伙伴、激情和欲望都能很好地驱动你，但一个人不能永远优柔寡断地生活。",
+				{
+					"type": "options",
+					"entries": [
+						"在达到3级时，你必须献身于一种适合你的角色和动机的特殊生活方式：苦行僧（Dervish）、晕轮（Halcyon）、灵媒（Psychopomp）或占卜师（Soothsayer），每一种都在等级描述的末尾有详细说明。你的选择会在以下级别赋予你特征：3、7、11和15。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Fluttering Counterpart",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 5,
+			"entries": [
+				"到了第五级，你可以熟练地控制非常规武器，确保它们顺利地伴随你练习的步伐。在（%0%）中，选择三个。你获得对它们的熟练度。当你使用你的行动来进行步法，或者简单地跳舞时，你可以使用你的奖励行动来使用你精通的闪烁武器进行一次攻击--闪烁攻击。",
+				"所有闪烁的武器都有精巧的属性，因为你把它们融入了你的艺术。每件武器的描述还详细说明了特殊光环属性的效果，只有当你精通该武器时才能使用。当你在攻击时将你的光环附在武器上，而不是造成伤害，你用你的人格力量来控制目标。最后，如果你参加武器大师的特技，你可以选择获得对更多闪电武器的熟练度。",
+				{
+					"type": "inset",
+					"name": "Note: Attacking Allies",
+					"entries": [
+						"当你以自己为目标进行攻击时，你可以让它自动命中。同样地，在任何二重奏中，只要你和你愿意的伙伴以对方为目标进行攻击，目标可以让它自动命中。",
+						"所有其他自愿的目标都可以选择在针对他们的任何攻击中给予你优势。被魅惑的目标在这个目的上是不愿意的，即使是在被胁迫的情况下，除非你的DM规定他们不努力避免伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Counter-Curio",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 5,
+			"entries": [
+				"同样在5级时，你可以用保护性的魔法给纪念品施法。通过花30分钟让自己沉浸在一个愿意帮助你的人的光环中，你可以创造一个饰品，具有保护佩戴者免受你的帮助者能够施展的一个法术的能力。",
+				"当佩戴者受到这一个咒语的影响时，这个饰品会吸收咒语的魔力并破碎，使佩戴者完全不受伤害。这种古玩在凋零前会持续一周，而且你一次只能维持一个这样的魔法。创造古玩的过程可以在短暂的休息中进行和完成，而不被视为剧烈的活动。"
+			]
+		},
+		{
+			"name": "Vain Vivacity",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 6,
+			"entries": [
+				"达到6级后，你已经对赞赏上瘾了。每当你们的二重奏结束时，你或你的伙伴都可以试图说服对方，他们的表演是完美的10分。接受赞美的人可以在下一回合的主动权上增加1d10。"
+			]
+		},
+		{
+			"name": "Virtuoso's Vernacular",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 6,
+			"entries": [
+				"此外，在6级时，完美自然而然地出现。选择一个你精通的技能。在你进行任何使用所选熟练度的能力检查时，你的熟练度加成会加倍。此外，每当你在使用该技能的能力检查中掷出16或更高的分数时，你可以将该分数视为20。"
+			]
+		},
+		{
+			"name": "Companion Style feature",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 7,
+			"entries": [
+				"7级时，你从你的同伴风格中获得一个特征。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Merry Visionary",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 9,
+			"entries": [
+				"从第9级开始，每一起走一步，都会在你身后留下一种感觉。想象力与现实的结合--故事变成了现实。",
+				"当你使用你的行动与伙伴跳舞时，作为一个额外的行动，你可以像{@spell programmed illusion|phb}法术一样，变出并描述你希望在你周围5英尺内发生的任何视觉和听觉现象，只是这个效果会持续到你的舞蹈结束。你可以用这个幻象来创造一个唱歌的聚光灯、一套迷人的服装、一束为你的名字欢呼的鲜花、一个演奏你最喜欢的歌曲的乐队，或者以其他方式为你的行为添加令人难忘的潇洒。任何受到你的幻象阻碍或威胁的生物都能轻易地看穿它，使其感官品质变得微弱而空洞。",
+				"如果你的舞蹈是双人舞，你可以用幻象来鼓励自己或你的伙伴。被鼓励的目标在下一回合结束前的下一次能力检查、攻击卷或蓄力投掷中获得优势。"
+			]
+		},
+		{
+			"name": "Cadence (x2)",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 10,
+			"entries": [
+				"在10级时，这个功能可以在每个短暂的休息时间内对你施展两次魔法。"
+			]
+		},
+		{
+			"name": "Subtle Spectacle",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 10,
+			"entries": [
+				"当你达到10级时，你的灵魂的旋律漩涡是均匀的，奇特的prosodic，因为你已经掌握了艺术的隐藏习惯。当你使用你的行动来执行独奏步法时，当你的节奏点为偶数时，你可以开始一个二重奏步法作为一个奖励行动。",
+				"同样地，当你使用你的行动开始一个二重奏步骤时，而你的节奏点是奇数，你可以使用你的奖励行动来变出一个鼓励性的快乐幻象，然后立即进行两次闪烁攻击。"
+			]
+		},
+		{
+			"name": "Companion Style feature",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 11,
+			"entries": [
+				"11级时，你从你的同伴风格中获得一个特征。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Tarantella Therapy",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 13,
+			"entries": [
+				"一旦你达到第13级，你就倾向于避免不活动。每当你短暂休息的时候，你可以让任何数量的愿意的伙伴参与到一个欢快的、充满活力的舞蹈中。",
+				"所有参与休息的人在休息期间（没有中断）将失去一级疲惫，在休息结束时，他们可以消耗他们的命中率骰子来代替恢复他们选择的一个舞蹈生物的命中率。每当你以这种方式完成一个短暂的休息时，你就会恢复一个节奏点。"
+			]
+		},
+		{
+			"name": "Set the Stage",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 14,
+			"entries": [
+				"如果你达到14级，你一定会发现，风景是感情的关键。你可以在每个长时间休息时施放一次（%0%）的法术。",
+				"然而，你只能用这个法术来创造或改变一个单一的结构，如剧院、竞技场、狂欢帐篷或神殿。它可以有任何你想要的人造外观、内部布局、背景、装饰和氛围，可能包含虚幻的物品，如家具、楼梯、衣柜、戏剧性的灯光、膳食（以你选择的方式品尝）、工具、玩具，甚至是详细描述你所拥有的任何知识的文字著作。这个结构必须适合在1000英尺的立方体内。"
+			]
+		},
+		{
+			"name": "Companion Style feature",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 15,
+			"entries": [
+				"15级时，你从你的同伴风格中获得一个特征。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Poise Destroys",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 17,
+			"entries": [
+				"到了第17级，你的神秘感才真正让人分心：敌人无法把目光从你身上移开。在战斗开始时，当敌人进行灵巧检查以确定他们在主动权顺序中的位置时，如果他们在你的30英尺范围内并能看到你，他们将处于不利地位。"
+			]
+		},
+		{
+			"name": "Join the Jamboree",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 18,
+			"entries": [
+				"在18级时，你对搅动战斗流程的热爱在狂欢中体现出来。你从下面列出的五种舞步中学习单一的团体舞步，并且可以在每个长休息时间作为行动或额外行动开始表演一次。在你周围20英尺内选择任意数量的自愿盟友，让他们集体参与你的舞蹈表演。为了从这个舞蹈中获益，被选择的盟友必须使用他们的反应来参与，必须保持在范围内，必须能看到你，并且不能被抓捕、俯卧、丧失能力或被限制。如果一个盟友因为不符合这些要求而停止从这个舞蹈中受益，他们可以在他们的回合中使用他们的反应，在满足要求时再次进入这个舞蹈。",
+				"如果你个人受到上述任何情况的困扰，如果你选择结束它（不需要任何行动），或者如果没有盟友与你一起表演，那么舞蹈立即结束。每支舞蹈持续1分钟，你可以在其间执行步骤而不中断舞蹈。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Coy Ceili",
+							"entries": [
+								"任何进行这种求爱表演的人都可以选择给他们周围5英尺内的盟友提供3/4的掩护，不需要任何行动，通过将盟友笼罩在他们的光环中。当任何一个生物不再处于对方的5英尺范围内时，这种掩护就会消失。那些以这种方式给予掩护的人不能从这个舞蹈中得到掩护。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Harrowing Haka",
+							"entries": [
+								"每当任何人执行这个强壮的仪式时，关键性地击中一个敌方生物，该敌方就会对你和你的哈卡舞者同伴感到恐惧，直到其下一回合结束。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Maestro's Minuet",
+							"entries": [
+								"在所有小步舞者转身的开始和结束时，每个受益于此舞的礼节性游行的盟友可以在任何方向移动5英尺而不消耗动作。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Para Para Parade",
+							"entries": [
+								"每当一个没有表演这种舞蹈的生物在帕拉帕拉舞者的5英尺范围内开始它的回合时，那个生物必须对你的步法蓄力DC做一个智慧蓄力。一旦失败，它就会被置于不可抗拒的舞蹈法术的效果之下，直到它的下一个回合结束，只是目标不能试图以行动来结束这个效果。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Praise Polonaise",
+							"entries": [
+								"每当执行这个庄严步骤的盟友使用行动、额外行动或反应来恢复另一个生物的命中率时，他们的目标会重新获得额外的1d12命中率。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。"
+			]
+		},
+		{
+			"name": "Roar of the Crowd",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"level": 20,
+			"entries": [
+				"当你设法达到20级时，你可以完全引导注意力的能量。每长时休息一次，当你用 \"快乐的幻象 \"变出一个温暖人心的幻象时，你可以鼓励大众的人。每个看到它的生物（除了你自己）都可以选择在24小时内的一次D20卷中获得优势。他们必须在投骰之前选择是否这样做。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Dervish Style",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Dervish",
+			"subclassSource": "Companion",
+			"level": 3,
+			"entries": [
+				"也有人认为这种艺术是一种比较片面的事情--一些受人尊敬的练习者纯粹是为了自己的快乐而表演。苦行僧是崇拜自己的战士，在彻底摧毁他们的伙伴中找到狂喜，因为每一步都使他们更接近卓越的地位。在这种风格中，通过每个舞蹈的恍惚来寻求完美的启蒙，你理所当然地拥有的力量可以征服一切。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Authoritarian Pluck|Companion|Companion|Dervish|Companion|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Whirling Winnow|Companion|Companion|Dervish|Companion|3"
+				}
+			]
+		},
+		{
+			"name": "Authoritarian Pluck",
+			"entries": [
+				"三级时，你开始走一条无情的道路，障碍对你来说只是垫脚石。你获得了对武术武器的熟练掌握，并且你在所有宪法规定的救赎动作上都有优势，以保持你对节奏的专注。",
+				"此外，如果敌方生物目前被你抓捕或被任何生物魅惑，它们现在也算作符合你的二重唱的伙伴。他们必须不比你大或小一号，但他们可以是任何生物类型。被迫服从，只要他们的条件还在，你的伙伴就不能心甘情愿地停止表演二重唱，但他们可以通过引导和跟随选择不跟随你的行动。"
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Dervish",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Whirling Winnow",
+			"entries": [
+				"同样在3级时，从以下天赋中选择一个。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Abduct Hostage",
+							"entries": [
+								"让他们大失所望的是，你可以利用你的伙伴的身体作为堡垒。在你与被抓捕的伙伴进行的任何二重奏中，你可以通过给你的伙伴在他们的AC和灵巧救赎上施加-2的惩罚来获得半掩护的好处。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Frisson Fanatic",
+							"entries": [
+								"每走一步，你都能从展示你崇高灵魂的荣耀快感中获得狂喜。在你表演的任何二重奏中，你被置于祝福咒语的效果之下，而你的伙伴则被置于诅咒咒语的效果之下。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Heartbreaker",
+							"entries": [
+								"当你的伙伴们的希望破灭时，你的猛攻会粉碎他们。在你的每个回合中，当你用双手挥舞的近战武器击中你的魅力二重奏伙伴之一时，你可以将你的攻击的一个伤害骰子的掷出结果加倍。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Revenge Recital",
+							"entries": [
+								"你拒绝遵从任何轻视你的人的意志。你在每个回合中的第一次武器攻击，如果击中了自你上一回合以来使你受到伤害的生物，会造成额外的1d12武力伤害。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spinning Steel",
+							"entries": [
+								"双重威胁，你的武器违背了所有的期望。在你的每个回合中，当你用符合双武器战斗条件的武器击中你当前的二重奏伙伴时，你可以自动用你装备的第二件符合条件的近战武器击中同一目标，不需要额外动作。你不能在第二次攻击的伤害中加入你的能力修饰，并且在你激活此功能的任何回合都不能参与双兵器战斗。"
+							]
+						}
+					]
+				}
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Dervish",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Vain Vivacity Improvement",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Dervish",
+			"subclassSource": "Companion",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"作为一个6级的Dervish，即使你的伙伴不愿意，当你的一个二重奏结束时，你总是能从 \"虚妄的活力 \"中获益。你的伙伴永远不会从中受益。"
+			]
+		},
+		{
+			"name": "Unforgiving Competitor",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Dervish",
+			"subclassSource": "Companion",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"当你达到第七级时，你会努力超越所有会表现出弱点的人。你可以用对相邻生物的推搡或抓取检查来代替任何闪烁的攻击或武器攻击。此外，当你对你的二重奏伙伴之一激活灵气属性时，你不需要放弃伤害。"
+			]
+		},
+		{
+			"name": "Paso Doble Disarray",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Dervish",
+			"subclassSource": "Companion",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你对丢弃破碎伙伴的熟悉程度成为你的强项。每当你的一个二重奏因你将你的伙伴减少到0点而结束时，你可以将你的伙伴扔下，并消耗你上一回合的剩余行动来接近另一个符合条件或愿意的伙伴。如果你在这个伙伴的5英尺范围内结束你的行动，你可以立即开始一个新的二重奏，没有节奏点的代价，不需要任何行动。"
+			]
+		},
+		{
+			"name": "Miracle Maven",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Dervish",
+			"subclassSource": "Companion",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在达到第15级时，不可能的事情变成了日常，因为你可以塑造你的灵魂以适应任何情况。你可以将简单的武器和武术武器作为闪烁的武器，只要你想进行闪烁攻击，就可以用它们进行攻击。此外，你还学会了如何在最普通的武器中体现你的情绪：当你用任何武器击中一个生物时，你可以激活你所精通的任何闪烁武器的光环属性。"
+			]
+		},
+		{
+			"name": "Halcyon Style",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Halcyon",
+			"subclassSource": "Companion",
+			"level": 3,
+			"entries": [
+				"与哈尔西恩人在一起的生活就像一片绿洲，充满了温暖的感情、幸福和不容置疑的安全。走这条路的人倾向于不注意他们的环境。他们的目光只盯着他们的伴侣，他们保护和服务他们所珍视的人的愿望很强烈。在这种风格中，你扮演的是一个宠爱的看护者的角色。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Overbearing Ward|Companion|Companion|Halcyon|Companion|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Jubilant Reminiscence|Companion|Companion|Halcyon|Companion|3"
+				}
+			]
+		},
+		{
+			"name": "Overbearing Ward",
+			"entries": [
+				"到了第三级，你会获得一种相互的迷恋。在任何短暂的休息结束时，指定一个友好的、愿意的生物作为你关注的对象：你的知己。在你选择其他人之前，或者在他们不再愿意之前，你和这个生物在所有对社会影响或理解对方的技能检查中都有优势。另外，每回合一次，你和你的知己可以通过做一个特定的手势、以某种方式移动一个物体、给对方一个有意义的眼神、或发出一个独特的声音，向对方传达一个单一的思想、想法或情感，长度不超过10个字。",
+				"最后，只要你和你的知己在同一个存在平面上，你们就能各自感受到对方的存在，并能通过闭上眼睛时想象他们的剪影来感知他们相对于你的确切位置。当你这样做时，你可以看到他们的身体语言是否试图向你传达一个想法，但不能看到他们的周围环境。"
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Halcyon",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Jubilant Reminiscence",
+			"entries": [
+				"另外，从第三级开始，你的支持会有更甜美、更滋润的音调，每一次舞蹈都是田园诗般的遐想。",
+				"每当你的一个二重奏结束时，你或你的伙伴周围都会有温暖的水，因为你选择的接受者立即恢复相当于1d8+你同伴等级一半的命中率（向下取整）。"
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Halcyon",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Never Miss a Beat",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Halcyon",
+			"subclassSource": "Companion",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从7级开始，你细心的天性使你对你仔细观察的人做出快速反应。每一轮当你与你选择的霸气病房的生物进行战斗时，如果你会以较低的主动权行动，你的主动权被设定为与他们相同。你可以选择谁先出手。",
+				"此外，当你或这个知己在一起表演二重奏时被攻击，作为反应，你们中的任何一个都可以选择成为攻击的目标而不是对方。你们也可以互相交换位置，进入对方曾经占据的空间。这样做的次数等同于你在每个长时区的熟练度加成，而且必须在你知道攻击是否会击中之前完成。"
+			]
+		},
+		{
+			"name": "We Are One",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Halcyon",
+			"subclassSource": "Companion",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"当你达到11级时，当你启迪你周围的人时，你的另一半可以完全回应你的关心。每当你使用 \"快乐幻象 \"来鼓励你的知己时，你可以在下一回合开始前在你选择的一次攻击卷、能力检查或蓄力上获得优势，因为他们的快乐就是你的满足。",
+				"此外，在每个回合开始时，如果你的知己会以较低的主动性行动，那么他们的主动性将被设定为与你相同。你们中的任何一方都可以选择谁先行动。"
+			]
+		},
+		{
+			"name": "Timeless Comfort",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Halcyon",
+			"subclassSource": "Companion",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，你和你所爱的人将永远因体贴的无私而感到安心。每当你或你的知己使用 \"永不错过 \"成为攻击的目标时，对方就会按照 \"欢乐回忆 \"恢复命中率。",
+				"此外，你和你的知己都可以随心所欲地施展探测思想，不需要任何行动，但只能针对对方。你们可以以行动或额外行动的方式深入探究对方的想法，并可以选择在对方的探究蓄力动作中失败。这个法术使用你的步数救赎DC。"
+			]
+		},
+		{
+			"name": "Psychopomp Style",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Psychopomp",
+			"subclassSource": "Companion",
+			"level": 3,
+			"entries": [
+				"很少有人拥有护送迷失的灵魂并帮助他们度过难关的意识，因为很少有人能够信任这样的个人请求。作为一名精神病患者，你会根据需要通过诡计或同情心将生物送至它们所属的地方。这种风格使用萨满教的服务来为最无助的灵魂找到解决方案。通过寻找悲伤并为过渡阶段带来轻松，你充当了一个调和的守护者。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Veil of the Vale|Companion|Companion|Psychopomp|Companion|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cryptic Customs|Companion|Companion|Psychopomp|Companion|3"
+				}
+			]
+		},
+		{
+			"name": "Veil of the Vale",
+			"entries": [
+				"到了第三级，你知道你看到的世界并不是全部。根据意志，你可以呼出一团幽灵般的雾气，从四面八方围绕着你，与你一起移动，穿过物体，并轻度遮蔽你周围30英尺内的区域。这种雾气一直保持到你解除它为止，不需要任何行动，或者直到你死亡。这种雾的最大范围在7级时增加到60英尺，11级时增加到90英尺，15级时增加到120英尺。当你有意识的时候，你总是能感觉到这个迷雾中的小型或大型生物的确切数量，尽管你不能感觉到它们的位置或它们的身份，只能感觉到它们的存在。这包括虚空界的生物，如幽灵。",
+				"此外，你可以让快乐的鬼魂变成现实。只要你有一个愿意的人形盟友在你的迷雾中，你就可以从任何距离开始与他们对唱。如果你的伙伴不再在你的10英尺范围内，你的二重唱就不会结束，而是在你的伙伴离开你的迷雾时立即结束。在舞蹈过程中，你们每个人都会出现一个朦胧的幻象来拥抱对方，因为距离无法将你们的精神分开。"
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Psychopomp",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Cryptic Customs",
+			"entries": [
+				"同样在3级时，你发现了一些晦涩难懂的套路，这些套路赋予你有利于灵魂牧羊人的魔法。你会四种精神类法术，但你只能以仪式的方式施展它们。要做到这一点，除了法术的正常施法时间外，你必须进行10分钟的神秘舞蹈或文化纪念活动。这些仪式可以在短暂的休息中进行，而不被视为剧烈的活动。你必须拥有物质成分，并且每当咒语需要时必须保持注意力集中。这个功能的法术使用你的步数救赎DC。每当你获得一个心理学风格特征时，你就会学习额外的法术，你可以用这种方式来施展。",
+				{
+					"type": "table",
+					"caption": "Psychopomp Ritual Spells",
+					"colLabels": [
+						"Companion Level",
+						"Spells Known"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell ceremony|xge}, {@spell detect evil and good}, {@spell find familiar}, {@spell identify}"
+						],
+						[
+							"7th",
+							"{@spell catnap|xge}, {@spell feign death}, {@spell magic circle}, {@spell warding bond}"
+						],
+						[
+							"11th",
+							"{@spell banishment}, {@spell hallucinatory terrain}, {@spell legend lore}, {@spell locate creature}"
+						],
+						[
+							"15th",
+							"{@spell arcane gate}, {@spell find the path}, {@spell magic jar}, {@spell planar ally}"
+						]
+					]
+				}
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Psychopomp",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Smile with the Faceless",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Psychopomp",
+			"subclassSource": "Companion",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你可以隐藏你的客户，让他们远离窥探的目光。在你的迷雾范围内的所有东西都会受到不被发现的法术的影响。",
+				"此外，你全方位的同理心为你提供了新的机会。每当非你当前位面的生物、亡灵或不死生物在每轮第一次进入你的迷雾半径时，它必须做一个魅力拯救动作。一旦失败，该生物就会被你迷住，将你视为其潜在的救世主。这个效果一直持续到目标离开你的迷雾半径为止，但是如果你或你的盟友侮辱了目标或以任何方式伤害了它，这个效果就会提前结束，他们会在24小时内对这个效果产生免疫。在符咒的持续时间内，受影响的生物会被置于（%0%）法术的效果之下。"
+			]
+		},
+		{
+			"name": "Spirit's Serenity",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Psychopomp",
+			"subclassSource": "Companion",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，你的仁慈可以将人们从战斗的纷争中解放出来。每次长时休息时，相当于你的魅力修改器的次数，当你的迷雾中的生物被降低到0点，但没有被彻底杀死时，你可以选择让他们的灵魂休息。即使你失去能力或失去意识也可以这样做（只要你还活着），而且你可以以自己为目标。当你放过他们时，他们会被稳定下来，他们会变得宁静：直到下一回合结束，他们不能受到伤害或重新获得命中率。",
+				"所有看到目标的安详面容的生物都会凭直觉意识到这种安详的效果，并能本能地分辨出目标的沉睡不能被打扰。"
+			]
+		},
+		{
+			"name": "A Ghostly Guide",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Psychopomp",
+			"subclassSource": "Companion",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"当你达到15级时，你作为世界间的行者已经有了良好的地位。每当你直接将一个生物的命中率降至0或稳定他们时，你可以将他们置于（%0%）的法术效果之下。你不需要物质成分。目标被认为是一个自愿的生物，你可以指定他们的大致目的地。即使他们是宁静的，他们在到达时也会恢复1点命中率。"
+			]
+		},
+		{
+			"name": "Soothsayer",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Soothsayer",
+			"subclassSource": "Companion",
+			"level": 3,
+			"entries": [
+				"那些练习远见的人倾向于在任何地方寻求确定的答案，但占卜师是凭直觉行事。在他们周围广泛存在着相关、因果关系和潜在性的字符串；每个人都在他们的计划中扮演着一个角色。在这种风格中，你对创造自己的真理的兴趣赋予你对命运的控制权，你要求一个宏伟的命运。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sympathetic Sight|Companion|Companion|Soothsayer|Companion|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oscillating Ornithomancy|Companion|Companion|Soothsayer|Companion|3"
+				}
+			]
+		},
+		{
+			"name": "Sympathetic Sight",
+			"entries": [
+				"从第三级开始，你可以看到世界潜力的迹象。在长时间休息之前，你可以说出一个生物的名字，并模糊地梦到他们的可能性。然后，在短暂的休息过程中，你可以通过解释他们在你梦中的表现来教他们一个技能、武器或工具的熟练程度。只要他们愿意，他们就会发现这一课毫不费力，因为你保证这对他们来说是自然的。如果他们已经永久地精通某项技能或工具，你可以教他们在与之相关的能力检查中获得双倍的熟练度奖励。这个课程在每个目标身上只能完成一次，而且你永远不能教自己。",
+				"此外，你还能监视你的瞳孔。随意作为一个动作，你可以在任何你通过交感视力教过的生物旁边召唤一个传感器。这个感应器的功能与{@spell clairvoyance}法术一样，只是没有范围限制，而且你的感应器是可见的，以象征你或你的理想的徽章的形式出现。你一次只能专注于观察一个学生。"
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Soothsayer",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Oscillating Ornithomancy",
+			"entries": [
+				"同样从3级开始，你知道不要让你的飞行机会逃脱你。每当你开始一个二重奏步骤时，你可以变出一个光环回旋镖，并将它抛向你30英尺内的一个大型或小型生物或不受约束的物体。你的回旋镖在舞蹈的持续时间内无形地在目标内旋转。",
+				"当二重奏结束时，回旋镖回到你身边，你的目标会被直线拉到离你5英尺内的一个无人空间。不情愿的生物必须通过智力救赎成功，以避免被拉动，想办法移除你的诱饵。如果你的目标会与沿途的生物、物体或危险相撞，它会在到达障碍物之前被无害地释放。你的回旋镖的范围在7级时增加到60英尺，11级时增加到90英尺，15级时增加到120英尺。"
+			],
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Soothsayer",
+			"subclassSource": "Companion",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Auspicious Auspice",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Soothsayer",
+			"subclassSource": "Companion",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在达到7级时，你开始预言偶然性。每次长时休息时，当你能看到的生物（除你自己外）进行攻击时，在你知道他们的卷轴结果之前，你可以大声地预测它是否会命中或不中。如果你正确地预见了结果，目标的命运就会被逆转：他们在1分钟内的下一次攻击会有相反的结果，如果你说他们会失手，就会自动击中，如果你预测他们会击中，就会自动失手。你不能对一个目前已经被它逆转了命运的生物使用这个特性。"
+			]
+		},
+		{
+			"name": "Expect Eventualities",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Soothsayer",
+			"subclassSource": "Companion",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"到了11级，你已经是培养你的朋友为你处理棘手情况的专家了。在长时间休息结束后，当你与任何具有法术功能的盟友聚会时，你可以花10分钟时间混合你们的灵气，并教导他们哪些法术他们可能很快就需要。如果你这样做，在他们完成下一次长时休息之前，他们可以将你选择的额外法术添加到他们已知或准备的法术数量中。这些法术的等级必须是他们有法术槽的，而且必须是他们可以使用的法术列表中的。你可以授予的额外法术总数等于你的同伴等级的一半（向下取整），由你选择在你和你的盟友之间分配。"
+			]
+		},
+		{
+			"name": "Doomsayer and Messiah",
+			"source": "Companion",
+			"className": "Companion",
+			"classSource": "Companion",
+			"subclassShortName": "Soothsayer",
+			"subclassSource": "Companion",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"一旦你达到15级，无论好坏，你所练习的篡改天意的行为就会有结果。当你的二重奏伙伴之一通过预言一个可怕的命运而迫使生物做出拯救动作时，你可以让视线范围内的一个受影响的生物在不利的情况下进行拯救动作。每当你花费一个节奏点开始一个新的二重唱时，你就会重新获得这个功能的单次使用权。",
+				"此外，当盟友（除你自己外）在佩戴你的反库里奥功能的饰品时，对魔法的救赎会失败，他们可以摧毁该饰品，放弃它的好处并释放它的保护性本质，让他们在救赎结果上增加一个奖励。这个奖励等于你当前的节奏点数。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Dervish Style",
+			"subclassFeatures": [
+				"Dervish Style|Companion|Companion|Dervish|Companion|3",
+				"Vain Vivacity Improvement|Companion|Companion|Dervish|Companion|7",
+				"Unforgiving Competitor|Companion|Companion|Dervish|Companion|7",
+				"Paso Doble Disarray|Companion|Companion|Dervish|Companion|11",
+				"Miracle Maven|Companion|Companion|Dervish|Companion|15"
+			],
+			"source": "Companion",
+			"shortName": "Dervish",
+			"className": "Companion",
+			"classSource": "Companion"
+		},
+		{
+			"name": "Halcyon Style",
+			"subclassFeatures": [
+				"Halcyon Style|Companion|Companion|Halcyon|Companion|3",
+				"Never Miss a Beat|Companion|Companion|Halcyon|Companion|7",
+				"We Are One|Companion|Companion|Halcyon|Companion|11",
+				"Timeless Comfort|Companion|Companion|Halcyon|Companion|15"
+			],
+			"source": "Companion",
+			"shortName": "Halcyon",
+			"className": "Companion",
+			"classSource": "Companion"
+		},
+		{
+			"name": "Psychopomp Style",
+			"subclassFeatures": [
+				"Psychopomp Style|Companion|Companion|Psychopomp|Companion|3",
+				"Smile with the Faceless|Companion|Companion|Psychopomp|Companion|7",
+				"Spirit's Serenity|Companion|Companion|Psychopomp|Companion|11",
+				"A Ghostly Guide|Companion|Companion|Psychopomp|Companion|15"
+			],
+			"source": "Companion",
+			"shortName": "Psychopomp",
+			"className": "Companion",
+			"classSource": "Companion"
+		},
+		{
+			"name": "Soothsayer",
+			"subclassFeatures": [
+				"Soothsayer|Companion|Companion|Soothsayer|Companion|3",
+				"Auspicious Auspice|Companion|Companion|Soothsayer|Companion|7",
+				"Expect Eventualities|Companion|Companion|Soothsayer|Companion|11",
+				"Doomsayer and Messiah|Companion|Companion|Soothsayer|Companion|15"
+			],
+			"source": "Companion",
+			"shortName": "Soothsayer",
+			"className": "Companion",
+			"classSource": "Companion"
+		}
+	]
+}

@@ -1,0 +1,4074 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "EldArc",
+				"abbreviation": "EldArc",
+				"full": "Eldritch Arcana",
+				"url": "https://drive.google.com/file/d/11FZmg1SXwOfjstWAS-e6svh8DF-R5tWD/view",
+				"authors": [
+					"devikyn"
+				],
+				"convertedBy": [
+					"ForeverAlwaysGM (Billiam94)"
+				],
+				"version": "v1.96"
+			},
+			{
+				"json": "EldArc-PHB",
+				"abbreviation": "PHB",
+				"full": "Eldritch Arcana - Player's Handbook",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"version": "1.0",
+				"targetSchema": "1.0.0"
+			},
+			{
+				"json": "EldArc-TCE",
+				"abbreviation": "TCE",
+				"full": "Eldritch Arcana - Tasha's Cauldron of Everything",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"version": "1.0",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1652281649,
+		"dateLastModified": 1706998579,
+		"_dateLastModifiedHash": "7130445ab1"
+	},
+	"class": [
+		{
+			"name": "Warlock",
+			"source": "EldArc",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"cha",
+				"wis"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15
+			],
+			"classSpells": [
+				{
+					"className": "Warlock",
+					"classSource": "PHB"
+				},
+				"Eldritch Blast|EldArc",
+				"Sapping Sting|EGW",
+				"Fog Cloud",
+				"Frost Fingers|IDRotF",
+				"Ray of Sickness",
+				"Sleep",
+				"Snare",
+				"Thunderwave",
+				"Augury",
+				"Continual Flame",
+				"Locate Object",
+				"Knock",
+				"Magic Weapon",
+				"Rime's Binding Ice|FTD",
+				"See Invisibility",
+				"Tasha's Mind Whip|TCE",
+				"Ashardalon's Stride|FTD",
+				"Blink|XGE",
+				"Glyph of Warding",
+				"Life Transference|XGE",
+				"Meld into Stone",
+				"Stinking Cloud",
+				"Greater Invisibility",
+				"Leomund's Secret Chest",
+				"Stone Shape",
+				"Storm Sphere",
+				"Vitriolic Sphere|XGE",
+				"Antilife Shell",
+				"Destructive Wave",
+				"Dominate Person",
+				"Mislead",
+				"Modify Memory",
+				"Planar Binding",
+				"Teleportation Circle",
+				"Bones of the Earth|XGE",
+				"Create Homunculus|XGE",
+				"Guards and Wards",
+				"Harm",
+				"Magic Jar",
+				"Programmed Illusion",
+				"Create Magen|IDRotF",
+				"Prismatic Spray",
+				"Project Image",
+				"Reverse Gravity",
+				"Sequester",
+				"Tether Essence|EGW",
+				"Maze",
+				"Mind Blank",
+				"Telepathy",
+				"Gate",
+				"Ravenous Void|EGW",
+				"Shapechange",
+				"Weird"
+			],
+			"spellsKnownProgressionFixedByLevel": {
+				"11": {
+					"6": 1
+				},
+				"13": {
+					"7": 1
+				},
+				"15": {
+					"8": 1
+				},
+				"17": {
+					"9": 1
+				}
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Eldritch Invocations",
+					"featureType": [
+						"EI"
+					],
+					"progression": [
+						0,
+						1,
+						2,
+						2,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						6,
+						7,
+						7,
+						7,
+						8,
+						8,
+						8,
+						9
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"skills": [
+					{
+						"choose": {
+							"count": 2,
+							"from": [
+								"arcana",
+								"deception",
+								"history",
+								"intimidation",
+								"investigation",
+								"nature",
+								"religion"
+							]
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"Any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, {@item leather armor|phb}, and two {@item dagger|phb|daggers}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"component pouch|phb"
+						],
+						"b": [
+							"arcane focus|phb"
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							},
+							"leather armor|phb",
+							{
+								"item": "dagger",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Warlock|Source=EldArc}",
+						"{@filter Spells Known|spells|class=Warlock|Source=EldArc}",
+						"Spell Slots",
+						"Spell Slot Level",
+						"{@filter Invocations Known|optionalfeatures|feature type=EI|Source=EldArc}"
+					],
+					"rows": [
+						[
+							2,
+							2,
+							1,
+							"{@filter 1st|spells|level=1|class=Warlock|Source=EldArc}",
+							"\u2014"
+						],
+						[
+							2,
+							3,
+							2,
+							"{@filter 1st|spells|level=1|class=Warlock|Source=EldArc}",
+							1
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 2nd|spells|level=2|class=Warlock|Source=EldArc}",
+							2
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 2nd|spells|level=2|class=Warlock|Source=EldArc}",
+							2
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 3rd|spells|level=3|class=Warlock|Source=EldArc}",
+							3
+						],
+						[
+							3,
+							7,
+							2,
+							"{@filter 3rd|spells|level=3|class=Warlock|Source=EldArc}",
+							3
+						],
+						[
+							3,
+							8,
+							2,
+							"{@filter 4th|spells|level=4|class=Warlock|Source=EldArc}",
+							4
+						],
+						[
+							3,
+							9,
+							3,
+							"{@filter 4th|spells|level=4|class=Warlock|Source=EldArc}",
+							4
+						],
+						[
+							3,
+							10,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							5
+						],
+						[
+							4,
+							10,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							5
+						],
+						[
+							4,
+							11,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							6
+						],
+						[
+							4,
+							11,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							6
+						],
+						[
+							4,
+							12,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							6
+						],
+						[
+							4,
+							12,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							7
+						],
+						[
+							4,
+							13,
+							3,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							7
+						],
+						[
+							4,
+							13,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							7
+						],
+						[
+							4,
+							14,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							8
+						],
+						[
+							4,
+							14,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							8
+						],
+						[
+							4,
+							15,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							8
+						],
+						[
+							4,
+							15,
+							4,
+							"{@filter 5th|spells|level=5|class=Warlock|Source=EldArc}",
+							9
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				{
+					"classFeature": "Otherworldly Patron|Warlock|EldArc|1",
+					"gainSubclassFeature": true
+				},
+				"Pact Magic|Warlock|EldArc|1",
+				"Eldritch Invocations|Warlock|EldArc|2",
+				"Pact Boon|Warlock|EldArc|2",
+				"Agonizing Cantrip|Warlock|EldArc|3",
+				"Ability Score Improvement|Warlock|EldArc|4",
+				"Liminal Loop|Warlock|EldArc|5",
+				{
+					"classFeature": "Otherworldly Patron feature|Warlock|EldArc|6",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warlock|EldArc|8",
+				{
+					"classFeature": "Otherworldly Patron feature|Warlock|EldArc|10",
+					"gainSubclassFeature": true
+				},
+				"Mystic Arcanum (6th level)|Warlock|EldArc|11",
+				"Ability Score Improvement|Warlock|EldArc|12",
+				"Mystic Arcanum (7th level)|Warlock|EldArc|13",
+				{
+					"classFeature": "Otherworldly Patron feature|Warlock|EldArc|14",
+					"gainSubclassFeature": true
+				},
+				"Mystic Arcanum (8th level)|Warlock|EldArc|15",
+				"Ability Score Improvement|Warlock|EldArc|16",
+				"Mystic Arcanum (9th level)|Warlock|EldArc|17",
+				"Vault of Knowledge|Warlock|EldArc|18",
+				"Ability Score Improvement|Warlock|EldArc|19",
+				"Arcane Feedback|Warlock|EldArc|20"
+			],
+			"subclassTitle": "Otherworldly Patron",
+			"fluff": [
+				{
+					"name": "Warlock",
+					"source": "EldArc",
+					"type": "section",
+					"entries": [
+						"肩膀上蜷缩着一条假龙，一个身穿金色长袍的年轻精灵热情地微笑着，在他的蜜语中编织着一种神奇的魅力，使宫殿里的哨兵屈服于他的意志。",
+						"当火焰在她手中涌现的时候，一个古怪的人类低声说出了她的恶魔守护者的秘密名字，为她的咒语注入了邪恶的魔法。在一本破旧的书本和头顶上奇怪的星星排列之间转移视线，一个野眼的盗贼吟唱着神秘的仪式，这将打开通往一个遥远世界的大门。",
+						"术士是对隐藏在多元宇宙结构中的知识的追求者。通过与具有超自然力量的神秘生物签订契约，术士们释放出既微妙又壮观的魔法效果。术士们利用诸如费伊贵族、恶魔、女巫和远界的外星实体等生物的古老知识，拼凑出神秘的秘密来增强自己的力量。",
+						{
+							"type": "entries",
+							"name": "Sworn and Beholden",
+							"entries": [
+								"术士的定义是与一个异世界的存在签订契约。有时，术士和守护者之间的关系就像牧师和神灵之间的关系，尽管作为术士的守护者的生命并不是神灵。术士可能会领导一个致力于恶魔王子、大恶魔或完全陌生的实体的崇拜，这些生命通常不会被牧师服务。但更常见的是，这种安排类似于师傅和学徒之间的关系。术士学习并增长力量，代价是偶尔为赞助人提供服务。",
+								"赋予术士的魔法范围很广，从对术士的微小但持久的改变（比如在黑暗中看东西或阅读任何语言的能力）到获得强大的法术。与书本上的巫师不同，术士们用一些徒手搏斗的技巧来补充他们的魔法。他们穿着轻质的盔甲，知道如何使用简单的武器。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Delvers into Secrets",
+							"entries": [
+								"术士们被对知识和力量的永不满足的需求所驱使，这迫使他们加入他们的契约并塑造他们的生活。这种渴求促使术士们加入他们的契约，也塑造了他们后来的职业生涯。",
+								"术士将自己与恶魔结合的故事广为人知。但许多术士服务的主顾并不是恶魔。有时，一个在荒野中的旅行者来到一座奇怪的美丽的塔楼前，见到了塔楼的主人或女士，并在不知不觉中达成了契约。有时，在翻阅禁忌传说的书本时，一个聪明但疯狂的学生的头脑被打开，看到了物质世界以外的现实和居住在外太空的异类。",
+								"一旦签订了契约，术士对知识和力量的渴求就不能仅靠学习和研究来满足。如果不打算使用由此获得的力量，就没有人与这样一个强大的守护者签订契约。相反，大多数术士整天都在积极追求他们的目标，这通常意味着某种冒险。此外，他们的赞助人的要求促使术士们走向冒险。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Warlock",
+							"entries": [
+								"当你塑造你的术士角色时，想想你的赞助人和你的契约对你施加的义务。是什么导致了你的契约，你又是如何与你的守护者取得联系的？你是被引诱去召唤一个魔鬼，还是去寻找能让你与一个外星长老神接触的仪式？是你在寻找你的守护神，还是你的守护神找到并选择了你？你是在契约的义务下感到苦恼，还是在期待着承诺给你的回报中快乐地服务？",
+								"与你的DM合作，确定你的契约在你的角色的冒险生涯中会起到多大的作用。你的赞助人的要求可能会驱使你去冒险，也可能完全是你在冒险之间可以做的小恩惠。",
+								"你和你的赞助人有什么样的关系？是友好的、对立的、不安的，还是浪漫的？你对你的赞助人有多重要？你在你主子的计划中扮演什么角色？你认识你的赞助人的其他仆人吗？",
+								"你的守护者如何与你交流？如果你有一个熟悉的人，它可能偶尔会用你的守护者的声音说话。有些术士发现他们的守护者的信息刻在树上，混在茶叶中，或者漂浮在云端--这些信息只有术士能看到。其他术士在梦中或清醒的幻觉中与他们的赞助人交谈，或者只与联络人打交道。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照这些建议，你可以迅速成为一名术士。首先，魅力应该是你最高的能力得分，其次是体质。第二，选择{@background charlatan}的背景。第三，选择{@spell chill touch}和{@spell minor illusion}的咒语，以及一级法术{@spell ray of sickness}和{@spell witch bolt}。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Otherworldly Patron",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 7,
+			"level": 1,
+			"entries": [
+				"在1级时，你与你所选择的一个异界生物达成了协议：古凤凰、{@class warlock|phb|Archfey|archfey}、天人、神秘之选、{@class warlock|phb|Fiend|fiend}、{@class warlock|phb|Great Old One|great old one}、暗影部队或{@class warlock|phb|Undying|undying}。你的选择在1级时授予你特性，在6级、10级和14级时再次授予你特性。"
+			]
+		},
+		{
+			"name": "Pact Magic",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 7,
+			"level": 1,
+			"entries": [
+				"你对奥术的研究和你的赞助人赋予你的魔法使你具备了使用法术的能力。关于{@book spellcasting|PHB|10}和{@filter warlock spell list|spells|class=warlock (EldArc)}的一般规则，请参见{@i Player's Handbook}。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"你会从术士法术列表中选择两个咒语。上面的术士表显示了你何时学习你选择的其他术士咒语。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"术士表显示你有多少个法术槽。该表还显示了这些法术槽的等级；你的法术槽都是一样的等级。要施展你的一个1级或以上的术士法术，你必须消耗一个法术槽。当你完成短时或长时休息时，你会重新获得所有消耗的法术槽。",
+						"例如，当你5级的时候，你有两个3级的法术槽。为了施放1级法术（%0%），你必须花费其中一个法术槽，并且你将其作为3级法术施放。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"一级时，你会从术士法术列表中选择两个一级法术。",
+						"术士表的 \"已知法术 \"一栏显示了你何时学习更多你所选择的1级以上的术士法术。你所选择的法术的等级必须不高于表格中你的等级的插槽等级栏所显示的等级。例如，当你达到6级时，你会学习一个新的3级或以下的术士法术。",
+						"另外，当你在这个等级中获得一个级别时，你可以用术士法术列表中的另一个法术来替换你所知道的一个术士法术。新的法术也必须是你有法术槽的级别。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"当你获得此功能时，可以选择智力或魅力。你的选择决定了你的术士法术的施法能力。你在设定蓄力DC和使用术士法术进行攻击时使用所选择的能力得分。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int",
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用一个{@item arcane focus|phb}作为你的术士法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Eldritch Invocations",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 8,
+			"level": 2,
+			"entries": [
+				"在2级时，通过对神秘学的研究，你发现了长生召唤，这些禁忌知识的碎片赋予了你持久的魔法能力。你可以从列出的选项中选择一个长生召唤（%0%）。在特定的术士等级中，你会获得新的自选召唤，如术士表的已知召唤一栏所示。",
+				"当你在这个等级中获得一个级别时，你可以用你的术士等级的另一个可用的召唤来替换你所知道的一个召唤。"
+			]
+		},
+		{
+			"name": "Pact Boon",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 8,
+			"level": 2,
+			"entries": [
+				"同样在2级的时候，你的赞助人会因为你的忠诚服务而赐予你一份礼物，你会获得你选择的以下特征之一。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"name": "Pact of the Armory",
+							"source": "EldArc",
+							"page": 8,
+							"entries": [
+								"你可以用你的行动在你的空手中创造一个神奇的契约武器。你每次创造武器时都可以选择它的形态；它可以采取任何（%0%）、（%1%）、（%2%）、（%3%）或（%4%）的形态。当你挥舞你的契约武器时，你会精通它，并且你可以使用你的法术能力修饰，而不是力量或灵巧，来进行你的攻击和伤害卷。",
+								"如果你的契约武器在离你5英尺以上的地方停留1分钟或更久，如果你再次使用这个动作，如果你解散这个武器（不需要动作），或者如果你死亡，你的契约武器就会消失。",
+								"你可以将一件魔法武器转化为你的契约武器，方法是在你持有该武器时进行一个长达1小时的特殊仪式。仪式在你休息的时候算作轻度活动。你获得了解除武器的能力（不需要行动），将其转移到一个超维空间。此后当你创造你的契约武器时，你可以使它重新出现。如果你死了，如果你对另一件武器进行了仪式，或者如果你进行了1小时的仪式来打破你对它的束缚，该武器就不再是你的契约武器。如果武器在纽带断裂时被移开，它就会出现在你的脚下。",
+								"另外，你可以用你的行动去触碰一套没有被穿戴或携带的轻型或中型盔甲，其中可以包括一个盾牌。在你对另一套装备再次使用此功能之前，当你穿上这件装备时，它是有魔力的，你对它很精通。"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Pact of the Chain",
+							"source": "EldArc",
+							"page": 8,
+							"entries": [
+								"你学会了寻找熟悉的人的法术，并可以将其作为一种仪式来施展。该法术不计入你已知的法术数量。你可以选择你熟悉的人的形态：{@creature imp}、{@creature phoenix wisp|EldArc}、{@creature pseudodragon}、{@creature quasit}或{@creature sprite|EldArc}。你可以与你的熟人进行心灵感应，当你们在同一平面上时，可以通过你的熟人的感官进行感知。在通过你熟悉的人的感官进行感知时，你可以通过你熟悉的人用自己的声音说话，即使你熟悉的人通常不能说话。",
+								"此外，你可以使用你的行动，或者当你采取允许你进行一次或多次攻击的行动时，你可以放弃你的一次攻击，比如攻击或施法行动，以允许你的熟悉人使用其反应进行一次攻击。"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Pact of the Effigy",
+							"source": "EldArc",
+							"page": 9,
+							"entries": [
+								"你有一个神秘的雕像，它的表面会像水一样不断变化。你可以使用你的行动，选择一个你能看到的60英尺范围内的生物，用魔法偷取他们的一丝精华，诅咒他们并将精华储存在你的遗像中。这个精华使该生物对你的智慧（洞察力）检查以及对被你迷惑的拯救动作产生不利影响。对被诅咒的生物或遗像施放{@spell remove curse}，可以消除诅咒，并使该生物在24小时内对该效果免疫。",
+								"你可以同时拥有与你的熟练度加成相等的精华数量储存在遗像中。当你偷取一个生物的精华时，你可以选择用新的精华替换你当前的一个精华。"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Pact of the Gauntlet",
+							"source": "EldArc",
+							"page": 9,
+							"entries": [
+								"你的手臂上覆盖着一层薄薄的阴森恐怖的金属，可以引导强大的奥术爆炸。你学会了{@spell eldritch blast}的咒语；如果你已经知道，你可以选择学习一个术士的咒语。每回合当你施放长生爆炸时，你可以分割部分光束，针对范围内的不同生物，进行单独的攻击。这个光束在命中时造成{@damage 1d4}的力量伤害。",
+								"有了这副铠甲，你可以用你的法术能力修正值代替力量值来进行能力检查和蓄力。你也可以选择使用你的法术能力修正值来进行徒手打击的攻击和伤害卷。"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Pact of the Symbol",
+							"source": "EldArc",
+							"page": 9,
+							"entries": [
+								"你会收到一个被你的守护者的力量所影响的符号。你可以使用你的额外行动，在你的一只空手中创造这个契约符号，它的形状可以是你选择的任何（%0%）、（%1%）、（%2%）或（%3%）。如果你选择了一种乐器，你在挥舞它的时候就会精通它。你可以使用这个符号作为你的术士法术的施法焦点。再次使用此功能会破坏你当前的契约符号。",
+								"你的契约符号包含一个影响电荷，用来召唤你的守护者对你命运的力量。当你持有这个符号时，在为你的一个术士法术进行d20卷之前，你可以消耗这个电荷，将d20卷换成10。每当你完成一次短期或长期的休息，或者每当你为一次法术攻击在d20上掷出1或20时，如果符号已经被消耗，它就会重新获得它的影响力。"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Pact of the Tome",
+							"source": "EldArc",
+							"page": 9,
+							"entries": [
+								"你的赞助人给了你一本叫做 \"阴影之书 \"的魔法书。当你获得这个特性时，你可以从任何等级的法术列表中选择三个咒语（这三个咒语不一定是来自同一个列表）。当这本书在你身上时，你可以随意施放这些咒语。它们不计入你已知的咒语数量。如果它们没有出现在术士法术列表中，它们对你来说就不是术士法术。",
+								"如果你失去了你的阴影之书，你可以进行一个1小时的仪式，从你的赞助人那里得到一个替代品。这个仪式可以在短时或长时的休息中进行，而且会毁掉之前的书。当你死亡时，书会变成灰烬。"
+							],
+							"type": "entries"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Agonizing Cantrip",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 3,
+			"entries": [
+				"从3级开始，你可以在使用任何术士咒语进行的伤害卷中加入你的法术能力修正值，除了已经加入你的法术能力修正值的伤害卷。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Liminal Loop",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 5,
+			"entries": [
+				"在5级时，当你施放术士咒语时，你可以在同一动作中额外施放咒语，而不是在你达到一定等级时增加该伤害。该咒语必须造成伤害，并且必须进行法术攻击或需要一个蓄力动作。你可以在5级时施放2次，11级时施放3次，17级时施放4次。当你这样做时，该咒语可以多次造成伤害，但它的其他效果不会再次应用于同一目标。"
+			]
+		},
+		{
+			"name": "Otherworldly Patron feature",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 6,
+			"entries": [
+				"6级时，你从你的异世界守护者那里获得一个额外的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Otherworldly Patron feature",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 10,
+			"entries": [
+				"10级时，你从你的异世界守护者那里获得一个额外的特性。"
+			]
+		},
+		{
+			"name": "Mystic Arcanum (6th Level)",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 11,
+			"entries": [
+				"在11级时，从术士法术列表中选择一个6级法术作为奥术。你可以在不消耗法术槽的情况下施放一次你的奥术法术。你必须在完成一个长时间的休息后才能再次施放。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Mystic Arcanum (7th Level)",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 13,
+			"entries": [
+				"在13级时，从术士法术列表中选择一个7级的法术作为额外的奥术。你可以在不消耗法术槽的情况下施放一次你的额外奥术法术。你必须在完成一个长时间的休息后才能再次施放。"
+			]
+		},
+		{
+			"name": "Otherworldly Patron feature",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 14,
+			"entries": [
+				"14级时，你从你的异世界守护者那里获得一个额外的特性。"
+			]
+		},
+		{
+			"name": "Mystic Arcanum (8th Level)",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 15,
+			"entries": [
+				"在15级时，从术士法术列表中选择一个8级的法术作为额外的奥术。你可以在不消耗法术槽的情况下施放一次你的额外奥术法术。你必须在完成一个长时间的休息后才能再次施放。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Mystic Arcanum (9th Level)",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 17,
+			"entries": [
+				"在17级时，从术士法术列表中选择一个9级的法术作为额外的奥术。你可以在不消耗法术槽的情况下施放一次你的额外奥术法术。你必须在完成一个长时间的休息后才能再次施放。"
+			]
+		},
+		{
+			"name": "Vault of Knowledge",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 18,
+			"entries": [
+				"18级时，你学会了挖掘你的守护者的深层知识和力量的秘密。当你完成短时或长时的休息时，你可以用另一个选项取代你的一个召唤。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Arcane Feedback",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"page": 9,
+			"level": 20,
+			"entries": [
+				"在20级时，每当你使用你的神秘奥术特征时，你可以从你的契约魔法特征中恢复一个消耗的法术槽。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Aberrant Implantation",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"awaken"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Accursed Weapon",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"feature": [
+						"Pact of the Armory"
+					]
+				}
+			],
+			"entries": [
+				"当你用你的契约武器击中时，你可以造成相当于你的法术能力修饰值的额外坏死伤害（最小为1）。"
+			]
+		},
+		{
+			"name": "Ancient Insight",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"legend lore"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Enigma",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell nystul's magic aura}，不需要消耗法术槽或材料组件。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"nystul's magic aura"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Armor of Shadows",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随意对自己施展（%0%），不需要消耗法术槽或材料成分。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"mage armor"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Ascendant Step",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"你可以随意对自己施展（%0%），不需要消耗法术槽或材料成分。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"levitate"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Aspect of the Moon",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你不再需要睡眠，也不能强迫你睡觉。你可以通过花8小时只做轻度活动来获得长时间休息的好处。"
+			]
+		},
+		{
+			"name": "Beast Song",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随意施展{@spell speak with animals}，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"speak with animals"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Beguiling Influence",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你获得对欺骗和劝说技能的熟练度。如果你已经精通这两种技能，你用该技能做任何检查时，你的熟练度加成都会加倍。"
+			],
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"persuasion": true
+				}
+			]
+		},
+		{
+			"name": "Bewitching Whispers",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"compulsion"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Bolstered Familiar",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Pact of the Chain"
+					]
+				}
+			],
+			"entries": [
+				"当你使用你的链之契约功能召唤一个熟悉的人时，它将获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你选择的一个熟悉的能力分数增加2，最多20。",
+						"熟悉的人的最大命中率会增加，数量相当于你的术士等级的两倍。",
+						"熟悉的人对它的攻击力、蓄力、使用它精通的技能的能力检查以及攻击卷都会增加一个奖励。该奖励等于你的熟练度奖励减去2。",
+						"熟悉的人可以使用你的术士法术DC来实现其功能。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Book of Ancient Secrets",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Tome"
+					]
+				}
+			],
+			"entries": [
+				"你现在可以在你的阴影之书中铭刻仪式。从任何一个等级的法术列表中选择两个带有仪式标记的一级法术（这两个法术不一定是来自同一个列表）。这些法术会出现在书中，并且不计入你所会的法术数量。拿着你的阴影之书，你可以施放所选择的法术。你只能以仪式的形式施展这些法术，除非你已经通过其他方式学会了这些法术。你也可以将有仪式标签的术士法术作为仪式施放。",
+				"在你的冒险中，你可以将其他的仪式性法术加入你的阴影之书。当你发现这样的咒语时，如果该咒语的等级等于或低于你的术士等级的一半（四舍五入），并且你能抽出时间来抄写该咒语，你就可以把它加入书中。每一级的咒语，抄写过程需要2个小时，并且需要花费50金币来购买刻写所需的稀有墨水。"
+			]
+		},
+		{
+			"name": "Breath of the Night",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Pact of the Effigy"
+					]
+				}
+			],
+			"entries": [
+				"你知道（%0%）法术，这对你来说算得上是一个术士法术。当你的目标是一个已经被你的契约效法所诅咒的生物时，你每对目标施加一次诅咒（包括这次施放的（%2%）），该法术的等级就会提高一个，如果你施放该法术时，该法术的等级是第五级或更高，你就不需要专注于该法术，如果目标没有通过任何其他方式被你诅咒，该法术会提前结束。"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"_": [
+							"bestow curse"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Call of the Lost",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"phantasmal force"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Chain Master's Fury",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Pact of the Chain"
+					]
+				}
+			],
+			"entries": [
+				"你的熟人现在可以在战斗中进行攻击，使用它的正常行动选项（除了它的多重攻击，如果熟人有一个的话）。同时，当你的熟人用攻击命中时，你可以用你的反应对你的熟人的攻击目标施放（%0%）的法术。"
+			]
+		},
+		{
+			"name": "Chains of Carceri",
+			"source": "EldArc",
+			"page": 14,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 14,
+					"feature": [
+						"Pact of the Chain"
+					]
+				}
+			],
+			"entries": [
+				"你可以随意施展（%0%）--以天人、魔人或元素为目标--而不需要消耗法术槽或物质成分。你必须在完成长时间的休息后才能对同一生物再次使用这个召唤。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"hold monster"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Cloak of Flies",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"作为一个额外动作，你可以用一个神奇的光环包围自己，看起来像嗡嗡作响的苍蝇。光环从你身上向各个方向延伸5英尺，但不能穿过全部遮蔽物。它一直持续到你丧失能力或你作为奖励动作解除它。",
+				"该光环使你在魅力（恐吓）检查中获得优势，但在所有其他魅力检查中处于劣势。任何在光环中开始行动的其他生物都会受到相当于你的法术能力修饰值的毒害（最小伤害为0）。",
+				"一旦你使用这个召唤，你就不能再使用它，直到你完成一个短期或长期休息。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Devil's Sight",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在黑暗中正常看清，包括魔法和非魔法，距离为120英尺。"
+			]
+		},
+		{
+			"name": "Dreadful Word",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"confusion"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Emblazoned Chain",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Chain"
+					]
+				}
+			],
+			"entries": [
+				"你的熟人可以触发你施加在生物身上的诅咒效果，并且在其伤害卷中加入你的法术能力修改值。"
+			]
+		},
+		{
+			"name": "Ejection of Spirit",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Effigy"
+					]
+				}
+			],
+			"entries": [
+				"当你的遗像里有一个生物的精华时，当你被攻击时，你可以用你的反应来弹出精华，试图吸收攻击。掷一个D20，如果11或以上，精华就会代替你吸收攻击；你不会受到攻击的伤害，而你的攻击者和精华所属的生物都会受到相当于你的术士等级的坏死伤害，再加上你对它们施加的每个诅咒的{@damage 1d6}。无论你在D20上的掷骰子情况如何，精华都会被摧毁。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.cost": "1",
+				"activation.condition": "you are attacked while your effigy has a creature's essence in it"
+			}
+		},
+		{
+			"name": "Eldritch Cone",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Pact of the Gauntlet"
+					]
+				}
+			],
+			"entries": [
+				"作为一个行动，你创造一个以你为起点的15英尺范围内的噼啪能量锥。该区域内的生物必须在一个灵巧的蓄力动作上成功，否则会受到相当于{@damage 4d8}加上你的法术能力修饰的力量伤害。你可以消耗一个法术槽来增加伤害（%1%），并且每一级法术槽的锥体大小增加5英尺。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Eldritch Doom",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Pact of the Gauntlet"
+					]
+				}
+			],
+			"entries": [
+				"作为一个行动，在你120英尺范围内选择一个你能看到的点。从该点爆发出噼里啪啦的能量，充斥在它周围5英尺的范围内。该区域内的生物必须在灵巧救赎中成功，否则会受到相当于（%0%）加上你的法术能力修饰的力量伤害。你可以消耗一个法术槽，使伤害增加%1%，半径增加5英尺，每一级的法术槽。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Eldritch Sight",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随意施展{@spell detect magic}，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"detect magic"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Eldritch Spear",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"当你施放{@spell eldritch blast}时，它的范围会增加一倍。"
+			]
+		},
+		{
+			"name": "Eldritch Wave",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Pact of the Gauntlet"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你创造一个5英尺宽、20英尺长的噼啪能量束。该区域内的生物必须在一个灵巧的蓄力动作中成功，否则就会受到相当于{@damage 2d10}加上你的法术能力修正值的力量伤害。你可以消耗一个法术槽，使伤害增加%1%，光束的长度增加10英尺，每一级法术槽。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Eyes of the Rune Keeper",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你会自动理解你所读的任何非魔法文字的含义，而且你能看到看不见的文字。"
+			]
+		},
+		{
+			"name": "Fate's Vice",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Pact of the Effigy"
+					]
+				}
+			],
+			"entries": [
+				"当你用诅咒造成伤害时，你可以造成精神伤害，而不是诅咒的伤害类型。另外，在每个小时的顶点，你可以对任何数量的被你诅咒的生物造成精神伤害，只要你们在同一个存在平面。你可以选择每个目标受到的伤害量，但你对单个生物造成的伤害不能超过你的术士等级的一半乘以你对该生物施加的诅咒数量。"
+			]
+		},
+		{
+			"name": "Fiendish Vigor",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随心所欲地对自己施展（%0%）的最低等级，而不需要消耗法术槽或材料成分。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"false life"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Gaze of Two Minds",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以用你的行动去接触一个愿意的人形生物，并通过它的感官进行感知，直到你下一回合结束。只要该生物与你处于同一存在平面，你可以在随后的回合中使用你的行动来延长持续时间，直到你的下一回合结束。在通过目标生物的感官进行感知时，你可以从该生物的任何特殊感官中获益，并且你对自己的周围环境失明和失聪。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Ghostly Gaze",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"作为一个动作，你获得了透过固体物体看到30英尺范围的能力，持续1分钟或直到你的注意力结束（就像你在专注于一个法术）。在这个范围内，如果你还没有暗视觉，你就有暗视觉。在那段时间内，你会将物体感知为幽灵般的透明图像。在你完成短暂或长时间的休息之前，你不能再次使用这个召唤。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Gift of the Depths",
+			"source": "EldArc",
+			"page": 15,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你可以在水下呼吸，你获得的游泳速度与你的步行速度相等。",
+				"你也可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"water breathing"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Gift of the Ever-Living Ones",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Chain"
+					]
+				}
+			],
+			"entries": [
+				"当你的熟人在你的100英尺范围内时，每当你恢复命中率时，将为确定你恢复的命中率而掷出的任何骰子视为为你掷出了最大值。"
+			]
+		},
+		{
+			"name": "Gift of the Protectors",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Pact of the Tome"
+					]
+				}
+			],
+			"entries": [
+				"在你的阴影之书中会出现一页，其中包含的名字数量等于你的法术能力修正值。如果你允许，一个生物可以用它的行动在这一页上写下它的名字。任何名字出现在书页上的生物都会受到（%0%）法术的影响。当咒语对某一生物结束时，该生物的名字会从页面上消失。每个生物的名字都不能再被刻在纸上，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Grasp of Hadar",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"当你用你的{@spell eldritch blast}击中一个生物时，你可以将目标在一条直线上移动到离你10英尺的地方。"
+			]
+		},
+		{
+			"name": "Heed the Call",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Pact of the Symbol"
+					]
+				}
+			],
+			"entries": [
+				"当你施展术士法术时，只要你们在同一个存在平面上，你可以使法术从你的契约符号中产生，而不是从你身上产生。另外，持有你的契约符号的生物可以使用其行动进行传送，与你交换位置，并将符号留下，只要你们彼此在500英尺以内。一旦这个动作被使用，就不能被任何生物再次使用，直到你完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Hidden in Oblivion",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 11
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell nondetection}，以自己为目标，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"nondetection"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Hideous Blow",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Gauntlet"
+					]
+				}
+			],
+			"entries": [
+				"当你施放{@spell eldritch blast}时，你可以用同等数量的近战法术攻击代替任意数量的光束，这些攻击造成的武力伤害与光束命中时的伤害相等。你可以在你以这种方式进行的每一次近战法术攻击的攻击和伤害卷上增加一个+1的奖励。"
+			]
+		},
+		{
+			"name": "Horrific Shackles",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"phantasmal killer"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Improved Pact Weapon",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Armory"
+					]
+				}
+			],
+			"entries": [
+				"你可以使用你用军械库契约功能召唤的任何武器作为你的术士法术的施法重点。",
+				"此外，每回合一次，当你用你的契约武器击中一个生物时，你可以消耗一个术士法术槽来造成额外的（%0%）武力伤害，再加上每级法术槽的1d8，如果目标是巨大或更小，你可以将其击倒（%1%）。"
+			]
+		},
+		{
+			"name": "Lance of Lethargy",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"在你的每个回合中，当你用你的（%0%）击中一个生物时，你可以使该生物的速度降低10英尺，直到你的下一回合结束。"
+			]
+		},
+		{
+			"name": "Lifedrinker",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Pact of the Armory"
+					]
+				}
+			],
+			"entries": [
+				"在你的每个回合中，当你用你的契约武器攻击到一个生物时，你可以恢复相当于所受伤害一半的命中率（最小值为0）。"
+			]
+		},
+		{
+			"name": "Maddening Hex",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"spell": [
+						"hex/curse#x"
+					]
+				}
+			],
+			"entries": [
+				"在你的每个回合中，当你用你的契约武器攻击到一个生物时，你可以恢复相当于所受伤害一半的命中率（最小值为0）。"
+			]
+		},
+		{
+			"name": "Mask of Many Faces",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随意施展{@spell disguise self}，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"disguise self"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Master's Imposition",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Pact of the Symbol"
+					]
+				}
+			],
+			"entries": [
+				"当你的契约符号在你身上时，你在能力检查和对法术（包括你施放的法术）的自救上有优势，其他生物对你的术士法术的能力检查DC会增加你术士等级的一半。"
+			]
+		},
+		{
+			"name": "Mask of Many Faces",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell alter self}，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"alter self"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Materializing Focus",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Symbol"
+					]
+				}
+			],
+			"entries": [
+				"当你使用你的守护者的符号作为施法焦点来施展术士法术时，如果其价值不超过你的术士等级的25gp，你可以放弃提供材料成分。如果该法术的材料组件的成本超过这个数额，你可以将所需的组件的成本降低相同的数额。"
+			]
+		},
+		{
+			"name": "Minions of Chaos",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"conjure elemental"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Mire the Mind",
+			"source": "EldArc",
+			"page": 16,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"slow"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Nightmares from Beyond",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"你可以使用一个术士法术槽施展（%0%）。在你完成一次长时间的休息之前，你不能再这样做。你也可以在不消耗法术槽的情况下施放一次法术，在你再次施放之前，你必须完成一次长时间的休息。"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"_": {
+							"daily": {
+								"1": [
+									"animate dead"
+								]
+							}
+						}
+					},
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"animate dead"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "One with Shadows",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"当你在昏暗的光线或黑暗中时，你可以用你的行动变得（%0%），直到你移动、采取行动或做出反应。"
+			],
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Otherworldly Leap",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你的跳跃距离增加了三倍，而且你不需要跑动开始就能达到长距离跳跃的全部距离。"
+			]
+		},
+		{
+			"name": "Otherworldly Whispers",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你获得对奥术和宗教技能的熟练度。如果你已经精通这两种技能，你用该技能做任何检查时，你的熟练度奖励都会翻倍。"
+			],
+			"skillProficiencies": [
+				{
+					"arcana": true,
+					"religion": true
+				}
+			]
+		},
+		{
+			"name": "Pact-forged Counsel",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 20
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"planar ally"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Prophetic Falsehoods",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Symbol"
+					]
+				}
+			],
+			"entries": [
+				"你可以施展（%0%）的咒语。如果你以自己以外的生物为目标，而不是将其d4卷的结果加到能力检查中，DM会暗中减去其结果。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"guidance#c"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Relentless Hex",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"spell": [
+						"hex/curse#x"
+					]
+				}
+			],
+			"entries": [
+				"作为一个额外的行动，你可以传送到一个你能看到的、距离被你的（%0%）法术或你的术士特征（例如 \"凶兆\"）所诅咒的目标5英尺以内的空地上，最多可以传送30英尺。要以这种方式传送，你必须能够看到被诅咒的目标。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Scribe of Esoteric Knowledge",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Pact of the Tome"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你不需要知道法术，而是从术士法术列表中准备与术士表已知法术一栏加你的法术能力修改值相等的法术。你选择的法术的等级必须不高于术士表的插槽等级一栏中显示的你的等级。每当你完成一次长时休息，你可以替换你准备的任何法术。"
+			]
+		},
+		{
+			"name": "Sculptor of Flesh",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"polymorph"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Shepherd of the Occult",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Pact of the Effigy"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随心所欲地施展（%0%）--以被你诅咒的生物为目标--而不需要消耗法术槽或提供物质成分。你的诅咒算作身体的一部分，以决定该法术的救赎DC。在你以这种方式施展的{@spell scrying}法术的持续时间内，你窥探的目标也是你其他术士法术的有效目标--无论你和目标之间的距离如何--只要你能通过感应器看到目标，而且你施展的法术只能针对单一生物。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"scrying"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Shroud of Shadow",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随意施展{@spell invisibility}，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"invisibility"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Sign of Ill Omen",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"bestow curse"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Sovereign Arcana",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 11,
+					"feature": [
+						"Pact of the Tome"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"每当你完成一个长时间的休息，你可以从术士的法术列表中选择新的法术来替代你的神秘奥术选择。每个新的法术必须与它所替代的法术等级相同。"
+			]
+		},
+		{
+			"name": "Symbolic Bond",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Pact of the Symbol"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"当另一个生物携带你的契约符号时，只要你允许，该生物可以施展你所知道的任何术士法术。以这种方式施展的法术来自携带你的符号的生物，你必须支付任何相关的费用，但在其他方面则被视为你施展了该法术。"
+			]
+		},
+		{
+			"name": "Thief of Five Fates",
+			"source": "EldArc",
+			"page": 17,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。在你完成一次长时间的休息之前，你不能再这样做。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"bane"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Thirsting Blade",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 5,
+					"feature": [
+						"Pact of the Armory"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"每当你在你的回合中采取{@action Attack}行动时，你可以用你的契约武器进行一次额外的攻击，作为行动的一部分。"
+			]
+		},
+		{
+			"name": "Tomb of Levistus",
+			"source": "EldArc",
+			"page": 17,
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"当你受到伤害时，作为一种反应，你可以将自己困在冰中，在下一回合结束时融化。你在每个术士等级获得10个临时命中点，这些命中点尽可能多地承受触发的伤害。在你受到伤害后，你立即获得对火系伤害的脆弱性，你的速度被降低到0，并且你是（%0%）。这些效果，包括任何剩余的临时命中率，都会在冰融化时结束。",
+				"一旦你使用这个召唤，你就不能再使用它，直到你完成一个短期或长期休息。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.cost": "1",
+				"activation.condition": "you take damage"
+			}
+		},
+		{
+			"name": "Toy of Whimsy's Calling",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。当你完成一次长时间的休息时，你会重新获得这样的能力。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"tiny servant|XGE"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Trickster's Escape",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。当你完成一次长时间的休息时，你会重新获得这样的能力。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"freedom of movement"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Two Wise Monkeys",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。当你完成一次长时间的休息时，你会重新获得这样的能力。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"blindness/deafness"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Usurper in Shadow",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 17,
+					"feature": [
+						"Pact of the Chain"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以将{@spell find familiar}作为一个动作来施放，而不是正常的施放时间，而且你最多可以从这个法术中拥有两个家族成员。此外，当你施放{@spell find familiar}时，除了你已经拥有的形态外，你还可以从以下形态中选择一个。{@creature gargoyle}, {@creature nothic}, 和 {@creature will-o'-wisp}。"
+			]
+		},
+		{
+			"name": "Visions of Distant Realms",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随意施展{@spell arcane eye}，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"arcane eye"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Warmonger's Calling",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"feature": [
+						"Pact of the Armory"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"当你触碰一件盔甲并赋予它你的 \"军械库契约 \"功能的好处时，那件盔甲可以是重甲，而且你可以将它传送到你身上，作为动作的一部分立即穿上它。"
+			]
+		},
+		{
+			"name": "Weaver of Nightmares",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 3
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在不消耗法术槽的情况下施放一次（%0%）。当你完成一次长时间的休息时，你会重新获得这样的能力。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"web"
+								]
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Whispers of the Grave",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以随意施展{@spell speak with dead}，而不需要消耗一个法术槽。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"will": [
+								"speak with dead"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Witch Sight",
+			"source": "EldArc",
+			"page": 18,
+			"prerequisite": [
+				{
+					"level": 14
+				}
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以看到任何变身者或被幻觉或转化魔法掩盖的生物的真实形态，当该生物在你30英尺范围内并在视线范围内。"
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Eldritch Blast",
+			"source": "EldArc",
+			"page": 18,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"当使用{@class warlock|EldArc|this class}时，建议对长生爆裂咒语做如下改变。这一改变要求你在(%%1%)中达到5级，以获得他们标志性的 \"多重施法 \"咒语风格，作为多类的平衡措施。"
+				]
+			},
+			"entries": [
+				"一束噼里啪啦的能量射向范围内的一个生物。对目标进行一次范围性的法术攻击。一旦命中，目标将受到{@damage 1d10}武力伤害。",
+				"当你达到5级({@damage 2d10}),11级({@damage 3d10})和17级({@damage 4d10})时，该法术的伤害增加{@damage 1d10}。"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "EldArc"
+					}
+				]
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Phoenix Wisp",
+			"source": "EldArc",
+			"page": 19,
+			"size": [
+				"T"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d4 + 4",
+				"average": 9
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 14,
+			"int": 11,
+			"wis": 15,
+			"cha": 14,
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+4",
+				"stealth": "+5"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"radiant"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"understands Common and Primordial, but can't speak"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"ability": "cha",
+					"displayAs": "trait",
+					"headerEntries": [
+						"凤仙花的先天法术能力是魅力（法术保存（%0%），法术攻击的命中率+4）。它可以天生施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"control flames",
+						"light",
+						"spare the dying"
+					],
+					"daily": {
+						"1": [
+							"burning hands"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"凤仙花在依靠视觉、听觉或嗅觉的智慧（感知）检查方面具有优势。"
+					]
+				},
+				{
+					"name": "Limited Telepathy",
+					"entries": [
+						"凤凰之翼可以用魔法与它周围100英尺内的任何能理解语言的生物进行简单的思想、情感和图像的心灵感应。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"凤仙花对法术和其他魔法效果的救赎有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Peck",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}5 ({@damage 1d4 + 3})穿刺和2 ({@damage 1d4})火焰或辐射伤害。"
+					]
+				},
+				{
+					"name": "Flame Lick",
+					"entries": [
+						"{@atk rs} {@hit 4}击中，范围20/60英尺，一个目标。{@h}6 ({@damage 1d8 + 2})火焰或辐射伤害。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance"
+			]
+		},
+		{
+			"name": "Sprite",
+			"source": "EldArc",
+			"page": 19,
+			"size": [
+				"T"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"leather armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d4 + 2",
+				"average": 7
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 50
+			},
+			"str": 3,
+			"dex": 18,
+			"con": 12,
+			"int": 14,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"perception": "+3",
+				"persuasion": "+2",
+				"stealth": "+8"
+			},
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"ability": "wis",
+					"displayAs": "trait",
+					"headerEntries": [
+						"该精灵的先天法术能力是智慧（法术保存（%0%），使用法术攻击时命中率+3）。它可以先天性地施展以下法术，不需要任何组件。"
+					],
+					"will": [
+						"dancing lights",
+						"druidcraft",
+						"friends"
+					],
+					"daily": {
+						"1": [
+							"ray of sickness"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"该精灵的武器攻击是神奇的。"
+					]
+				},
+				{
+					"name": "Read Intent",
+					"entries": [
+						"精灵知道它能看到的任何生物的情绪状态。它还知道该生物对精灵是敌对的、中立的还是友好的。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 6}击中，到达5英尺，一个目标。{@h}7 ({@damage 1d6 + 4})砍击伤害，并且目标必须在{@dc 10}宪法救赎中成功，否则会变成{@condition poisoned}，持续1分钟。如果中毒的目标在救赎中失败了5次或更多，它会在相同的持续时间内倒下（%6%），或者直到它受到伤害或其他生物采取行动将其摇醒。"
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 6}击中，范围40/160英尺，一个目标。{@h}7 ({@damage 1d6 + 4})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Heart Sight",
+					"entries": [
+						"该精灵触碰一个生物，目标必须做一个{@dc 10}魅力拯救动作。如果救赎失败，精灵会知道该生物的位置。天人、魔人和不死之身会自动失败。"
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"该精灵会神奇地变成（%0%），直到它攻击或施法，或直到它的注意力结束（就像集中在一个法术上）。该精灵所穿戴或携带的任何装备都会随它一起隐身。"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG",
+				"MLW"
+			],
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "The Fiend",
+			"source": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"shortName": "Fiend",
+			"subclassFeatures": [
+				"The Fiend|Warlock|PHB|Fiend|PHB|1",
+				"Dark One's Own Luck|Warlock|PHB|Fiend|PHB|6",
+				"Fiendish Resilience|Warlock|PHB|Fiend|PHB|10",
+				"Hurl Through Hell|Warlock|PHB|Fiend|PHB|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"burning hands",
+							"command"
+						],
+						"s2": [
+							"blindness/deafness",
+							"scorching ray"
+						],
+						"s3": [
+							"fireball",
+							"stinking cloud"
+						],
+						"s4": [
+							"fire shield",
+							"wall of fire"
+						],
+						"s5": [
+							"flame strike",
+							"hallow"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Celestial",
+			"source": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"shortName": "Celestial",
+			"subclassFeatures": [
+				"The Celestial|Warlock|PHB|Celestial|XGE|1",
+				"Radiant Soul|Warlock|PHB|Celestial|XGE|6",
+				"Celestial Resilience|Warlock|PHB|Celestial|XGE|10",
+				"Searing Vengeance|Warlock|PHB|Celestial|XGE|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"cure wounds",
+							"guiding bolt"
+						],
+						"s2": [
+							"flaming sphere",
+							"lesser restoration"
+						],
+						"s3": [
+							"daylight",
+							"revivify"
+						],
+						"s4": [
+							"guardian of faith",
+							"wall of fire"
+						],
+						"s5": [
+							"flame strike",
+							"greater restoration"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Celestial",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"shortName": "Celestial",
+			"subclassFeatures": [
+				"The Celestial|Warlock|EldArc|Celestial|EldArc-PHB|1|EldArc",
+				"Expanded Spell List|Warlock|EldArc|Celestial|EldArc-PHB|1|EldArc",
+				"Bonus Cantrips|Warlock|EldArc|Celestial|EldArc-PHB|1|EldArc",
+				"Healing Light|Warlock|EldArc|Celestial|EldArc-PHB|1|EldArc",
+				"Radiant Soul|Warlock|EldArc|Celestial|EldArc-PHB|6|EldArc",
+				"Celestial Reinforcement|Warlock|EldArc|Celestial|EldArc-PHB|10|EldArc",
+				"Ascendant Aura|Warlock|EldArc|Celestial|EldArc-PHB|14|EldArc"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"light#c",
+							"sacred flame#c"
+						]
+					},
+					"expanded": {
+						"s1": [
+							"cure wounds",
+							"guiding bolt"
+						],
+						"s2": [
+							"flaming sphere",
+							"lesser restoration"
+						],
+						"s3": [
+							"daylight",
+							"revivify"
+						],
+						"s4": [
+							"guardian of faith",
+							"wall of fire"
+						],
+						"s5": [
+							"flame strike",
+							"greater restoration"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Shadowforce",
+			"shortName": "Shadowforce",
+			"source": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Shadowforce|Warlock|EldArc|Shadowforce|EldArc|1",
+				"Expanded Spell List|Warlock|EldArc|Shadowforce|EldArc|1",
+				"Hexblade's Curse|Warlock|EldArc|Shadowforce|EldArc|1",
+				"Shadow Shroud|Warlock|EldArc|Shadowforce|EldArc|6",
+				"Accursed Specter|Warlock|EldArc|Shadowforce|EldArc|10",
+				"Master of Hexes|Warlock|EldArc|Shadowforce|EldArc|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"ensnaring strike",
+							"shield"
+						],
+						"s2": [
+							"blur",
+							"branding smite"
+						],
+						"s3": [
+							"blink",
+							"elemental weapon"
+						],
+						"s4": [
+							"Mordenkainen's faithful hound",
+							"phantasmal killer"
+						],
+						"s5": [
+							"banishing smite",
+							"cone of cold"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Ancient Phoenix",
+			"source": "EldArc",
+			"shortName": "Phoenix",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Ancient Phoenix|Warlock|EldArc|Phoenix|EldArc|1",
+				"Positive Energy Infusion|Warlock|EldArc|Phoenix|EldArc|1",
+				"Expanded Spell List|Warlock|EldArc|Phoenix|EldArc|1",
+				"Mantle of Flame|Warlock|EldArc|Phoenix|EldArc|1",
+				"Warding Cyclone|Warlock|EldArc|Phoenix|EldArc|6",
+				"Spark of Rebirth|Warlock|EldArc|Phoenix|EldArc|10",
+				"Phoenix Pinion|Warlock|EldArc|Phoenix|EldArc|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"feather fall",
+							"guiding bolt"
+						],
+						"s2": [
+							"heat metal",
+							"pyrotechnics"
+						],
+						"s3": [
+							"beacon of hope",
+							"melf's minute meteors"
+						],
+						"s4": [
+							"aura of purity",
+							"fire shield"
+						],
+						"s5": [
+							"holy weapon",
+							"reincarnate"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Chosen of Mystra",
+			"source": "EldArc",
+			"shortName": "Mystra",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Chosen of Mystra|Warlock|EldArc|Mystra|EldArc|1",
+				"Protect the Weave|Warlock|EldArc|Mystra|EldArc|1",
+				"Expanded Spell List|Warlock|EldArc|Mystra|EldArc|1",
+				"Minor Spellfire|Warlock|EldArc|Mystra|EldArc|1",
+				"Chosen's Absorption|Warlock|EldArc|Mystra|EldArc|6",
+				"Arcane Senses|Warlock|EldArc|Mystra|EldArc|10",
+				"Silver Fire|Warlock|EldArc|Mystra|EldArc|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"identify",
+							"magic missile"
+						],
+						"s2": [
+							"arcane lock",
+							"dragon's breath|XGE"
+						],
+						"s3": [
+							"glyph of warding",
+							"pulse wave|EGW"
+						],
+						"s4": [
+							"conjure minor elementals",
+							"Otiluke's resilient sphere"
+						],
+						"s5": [
+							"bigby's hand",
+							"passwall"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Archfey",
+			"source": "EldArc-PHB",
+			"shortName": "Archfey",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Archfey|Warlock|PHB|Archfey|PHB|1",
+				"Misty Escape|Warlock|PHB|Archfey|PHB|6",
+				"Beguiling Defenses|Warlock|PHB|Archfey|PHB|10",
+				"Dark Delirium|Warlock|PHB|Archfey|PHB|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"faerie fire",
+							"sleep"
+						],
+						"s2": [
+							"calm emotions",
+							"phantasmal force"
+						],
+						"s3": [
+							"blink",
+							"plant growth"
+						],
+						"s4": [
+							"dominate beast",
+							"greater invisibility"
+						],
+						"s5": [
+							"dominate person",
+							"seeming"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Fathomless",
+			"source": "EldArc-TCE",
+			"shortName": "Fathomless",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Fathomless|Warlock|PHB|Fathomless|TCE|1",
+				"Oceanic Soul|Warlock|PHB|Fathomless|TCE|6",
+				"Guardian Coil|Warlock|PHB|Fathomless|TCE|6",
+				"Grasping Tentacles|Warlock|PHB|Fathomless|TCE|10",
+				"Fathomless Plunge|Warlock|PHB|Fathomless|TCE|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"create or destroy water",
+							"thunderwave"
+						],
+						"s2": [
+							"gust of wind",
+							"silence"
+						],
+						"s3": [
+							"lightning bolt",
+							"sleet storm"
+						],
+						"s4": [
+							"control water",
+							"summon elemental|TCE"
+						],
+						"s5": [
+							"Bigby's hand",
+							"cone of cold"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Genie",
+			"source": "EldArc-TCE",
+			"shortName": "Genie",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Genie|Warlock|PHB|Genie|TCE|1",
+				"Elemental Gift|Warlock|PHB|Genie|TCE|6",
+				"Sanctuary Vessel|Warlock|PHB|Genie|TCE|10",
+				"Limited Wish|Warlock|PHB|Genie|TCE|14"
+			],
+			"additionalSpells": [
+				{
+					"name": "Dao",
+					"expanded": {
+						"9": [
+							"wish"
+						],
+						"s1": [
+							"detect evil and good",
+							"sanctuary"
+						],
+						"s2": [
+							"phantasmal force",
+							"spike growth"
+						],
+						"s3": [
+							"create food and water",
+							"meld into stone"
+						],
+						"s4": [
+							"phantasmal killer",
+							"stone shape"
+						],
+						"s5": [
+							"creation",
+							"wall of stone"
+						]
+					}
+				},
+				{
+					"name": "Djinni",
+					"expanded": {
+						"9": [
+							"wish"
+						],
+						"s1": [
+							"detect evil and good",
+							"thunderwave"
+						],
+						"s2": [
+							"phantasmal force",
+							"gust of wind"
+						],
+						"s3": [
+							"create food and water",
+							"wind wall"
+						],
+						"s4": [
+							"phantasmal killer",
+							"greater invisibility"
+						],
+						"s5": [
+							"creation",
+							"seeming"
+						]
+					}
+				},
+				{
+					"name": "Efreeti",
+					"expanded": {
+						"9": [
+							"wish"
+						],
+						"s1": [
+							"detect evil and good",
+							"burning hands"
+						],
+						"s2": [
+							"phantasmal force",
+							"scorching ray"
+						],
+						"s3": [
+							"create food and water",
+							"fireball"
+						],
+						"s4": [
+							"phantasmal killer",
+							"fire shield"
+						],
+						"s5": [
+							"creation",
+							"flame strike"
+						]
+					}
+				},
+				{
+					"name": "Marid",
+					"expanded": {
+						"9": [
+							"wish"
+						],
+						"s1": [
+							"detect evil and good",
+							"fog cloud"
+						],
+						"s2": [
+							"phantasmal force",
+							"blur"
+						],
+						"s3": [
+							"create food and water",
+							"sleet storm"
+						],
+						"s4": [
+							"phantasmal killer",
+							"control water"
+						],
+						"s5": [
+							"creation",
+							"cone of cold"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Great Old One",
+			"source": "EldArc-PHB",
+			"shortName": "Great Old One",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Great Old One|Warlock|PHB|Great Old One|PHB|1",
+				"Entropic Ward|Warlock|PHB|Great Old One|PHB|6",
+				"Thought Shield|Warlock|PHB|Great Old One|PHB|10",
+				"Create Thrall|Warlock|PHB|Great Old One|PHB|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"dissonant whispers",
+							"Tasha's hideous laughter"
+						],
+						"s2": [
+							"detect thoughts",
+							"phantasmal force"
+						],
+						"s3": [
+							"clairvoyance",
+							"sending"
+						],
+						"s4": [
+							"dominate beast",
+							"Evard's black tentacles"
+						],
+						"s5": [
+							"dominate person",
+							"telekinesis"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Undead",
+			"source": "EldArc-PHB",
+			"shortName": "Undead",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Undead|Warlock|PHB|Undead|VRGR|1",
+				"Grave Touched|Warlock|PHB|Undead|VRGR|6",
+				"Necrotic Husk|Warlock|PHB|Undead|VRGR|10",
+				"Spirit Projection|Warlock|PHB|Undead|VRGR|14"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"spare the dying#c"
+						]
+					},
+					"expanded": {
+						"s1": [
+							"false life",
+							"ray of sickness"
+						],
+						"s2": [
+							"blindness/deafness",
+							"silence"
+						],
+						"s3": [
+							"feign death",
+							"speak with dead"
+						],
+						"s4": [
+							"aura of life",
+							"death ward"
+						],
+						"s5": [
+							"contagion",
+							"legend lore"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Undying",
+			"source": "EldArc-PHB",
+			"shortName": "Undying",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"subclassFeatures": [
+				"The Undying|Warlock|PHB|Undying|SCAG|1",
+				"Defy Death|Warlock|PHB|Undying|SCAG|6",
+				"Undying Nature|Warlock|PHB|Undying|SCAG|10",
+				"Indestructible Life|Warlock|PHB|Undying|SCAG|14"
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"bane",
+							"false life"
+						],
+						"s2": [
+							"blindness/deafness",
+							"phantasmal force"
+						],
+						"s3": [
+							"phantom steed",
+							"speak with dead"
+						],
+						"s4": [
+							"death ward",
+							"greater invisibility"
+						],
+						"s5": [
+							"antilife shell",
+							"cloudkill"
+						]
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Celestial",
+			"source": "EldArc",
+			"subclassShortName": "Celestial",
+			"subclassSource": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"你的守护者是上层世界的强大存在。你已将自己与一个古老的（%0%）、（%1%）、（%2%）、（%3%）或其他居住在永恒极乐世界的实体结合起来。你与该实体的契约使你能体验到照亮多元宇宙的圣光的最基本的触觉。",
+				"与这种力量相连会导致你的行为和信仰的改变。你可能会发现自己被驱使去消灭亡灵，打败恶魔，保护无辜者。有时，你的内心也可能充满了对你的守护者的天界的渴望，并渴望在余下的日子里徜徉在那个天堂。但你知道，你的任务目前是在凡人中间，你的契约约束你把光明带到世界的黑暗处。"
+			],
+			"header": 1
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "EldArc",
+			"subclassShortName": "Celestial",
+			"subclassSource": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"天人让你在学习术士法术时从一个扩大的法术列表中选择。以下的法术会被添加到术士法术列表中，供你使用。",
+				{
+					"type": "table",
+					"caption": "Celestial Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell cure wounds}, {@spell guiding bolt}"
+						],
+						[
+							"2nd",
+							"{@spell flaming sphere}, {@spell lesser restoration}"
+						],
+						[
+							"3rd",
+							"{@spell daylight}, {@spell revivify}"
+						],
+						[
+							"4th",
+							"{@spell guardian of faith}, {@spell wall of fire}"
+						],
+						[
+							"5th",
+							"{@spell flame strike}, {@spell greater restoration}"
+						]
+					]
+				}
+			],
+			"header": 2
+		},
+		{
+			"name": "Bonus Cantrips",
+			"source": "EldArc",
+			"subclassShortName": "Celestial",
+			"subclassSource": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"当你在一阶选择这个守护者时，你学会了（%0%）和（%1%）的咒语。它们对你来说算作术士的咒语，但不计入你已知的咒语数量。"
+			],
+			"header": 2
+		},
+		{
+			"name": "Healing Light",
+			"source": "EldArc",
+			"subclassShortName": "Celestial",
+			"subclassSource": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"一级时，你获得了引导天体能量来治疗伤口的能力。你有一个由8个骰子组成的池子，你可以用它来推动这种治疗。骰子的数量等于1+你的术士等级的一半，向下取整（最小为0）。当你完成长时间的休息时，你的池子会重新获得所有消耗的骰子。",
+				"作为一个额外的行动，你可以从这个池子里花费骰子来治疗你周围60英尺内你能看到的一个生物。你一次所能花费的骰子数量最多相当于你的法术能力修饰值（最少为一个骰子）。掷出你所花费的骰子，把它们加在一起，然后恢复与总数相等的命中率。"
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Radiant Soul",
+			"source": "EldArc",
+			"subclassShortName": "Celestial",
+			"subclassSource": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 6,
+			"entries": [
+				"从6级开始，你与天神的联系使你的灵魂充满了辐射能量，保护你。你对辐射伤害有抵抗力，并且对毒药和疾病免疫。"
+			],
+			"header": 2,
+			"resist": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"immune": [
+				"poison"
+			]
+		},
+		{
+			"name": "Celestial Reinforcement",
+			"source": "EldArc",
+			"subclassShortName": "Celestial",
+			"subclassSource": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 10,
+			"entries": [
+				"从10级开始，你挥舞的天体魔法在你体内循环，加强你的治疗能力。",
+				"当你掷出的 \"治愈之光 \"骰子的结果低于你的熟练度加成时，你可以用你的熟练度加成来替换该结果。另外，你和你选择的最多5个能看到你的生物，在你完成长时间休息时，会获得相当于你的术士等级+你的法术能力修饰的临时打击点数。"
+			],
+			"header": 2
+		},
+		{
+			"name": "Ascendant Aura",
+			"source": "EldArc",
+			"subclassShortName": "Celestial",
+			"subclassSource": "EldArc-PHB",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 14,
+			"entries": [
+				"从14级开始，你引导的辐射能量从你的身体中散发出来，治疗你的盟友，燃烧你的敌人。",
+				"在你每个回合开始时，你可以从你的治愈之光池中掷出一个骰子。在你周围30英尺范围内，你选择的每个生物都会恢复相当于掷骰子的数量+你的术士等级的一半的命中率，并且该区域内的每个其他生物都必须进行宪法救赎，如果救赎失败，会受到相当于掷骰子的数量+你的术士等级一半的辐射伤害，如果成功，会受到一半的伤害。"
+			],
+			"header": 2
+		},
+		{
+			"name": "The Shadowforce",
+			"source": "EldArc",
+			"subclassShortName": "Shadowforce",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"你已经与一个神秘的实体签订了契约--一种体现在用影子材料雕刻的有生命的魔法武器上的力量。这些武器背后的力量可以为与之缔结契约的术士提供力量。这些术士--有时被称为六角刀--可以将这种强大的黑暗魔法编织到这个世界上。"
+			],
+			"header": 1
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "EldArc",
+			"subclassShortName": "Shadowforce",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"影子部队让你在学习术士法术时从一个扩展的法术列表中选择。以下的法术会被添加到术士法术列表中为你所用。",
+				{
+					"type": "table",
+					"caption": "Shadowforce Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell ensnaring strike}, {@spell shield}"
+						],
+						[
+							"2nd",
+							"{@spell blur}, {@spell branding smite}"
+						],
+						[
+							"3rd",
+							"{@spell blink}, {@spell elemental weapon}"
+						],
+						[
+							"4th",
+							"{@spell Mordenkainen's faithful hound|PHB|faithful hound}, {@spell phantasmal killer}"
+						],
+						[
+							"5th",
+							"{@spell banishing smite}, {@spell cone of cold}"
+						]
+					]
+				}
+			],
+			"header": 2
+		},
+		{
+			"name": "Hexblade's Curse",
+			"source": "EldArc",
+			"subclassShortName": "Shadowforce",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"同样在1级时，你可以给你的武器注入一个诅咒，封印受害者的能力。",
+				"当你挥舞武器或奥术焦点时，你可以在它上面刻上复杂的符文，形成一个邪恶的、密封的诅咒--六角刀的诅咒。当你挥舞这个印记时，你可以强迫被你用武器或法术攻击到的生物对你的法术救赎DC进行魅力救赎成功，或者被六芒星的诅咒诅咒1分钟。一个生物每回合只能被强迫做一次这个蓄力动作。",
+				"由于强大的六芒星阻碍了它的能力，被你的六芒星诅咒所诅咒的生物必须掷一个D4，并从它所做的任何能力检查、攻击卷或蓄力动作中减去这个数字。",
+				"一旦你用这个特征诅咒了一个生物，你就不能再使用这个特征，直到你完成一个短期或长期休息。"
+			],
+			"header": 2
+		},
+		{
+			"name": "Shadow Shroud",
+			"source": "EldArc",
+			"subclassShortName": "Shadowforce",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 6,
+			"entries": [
+				"6级时，你在身体周围编织朦胧的魔法，保护你免受攻击。",
+				"当你被攻击击中时，你可以用你的反应来激活你的保护罩，这将持续到你下一回合的开始。如果你这样做，每当有攻击击中你时，包括在触发攻击的过程中，你都要掷一个D6；如果掷到4或更高，攻击反而会错过你。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.cost": "1",
+				"activation.condition": "you are hit with an attack"
+			}
+		},
+		{
+			"name": "Accursed Specter",
+			"source": "EldArc",
+			"subclassShortName": "Shadowforce",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 10,
+			"entries": [
+				"从10级开始，你可以将被杀者的灵魂捆绑起来为你服务，将它们编织成一个阴暗的形式。",
+				"当你杀死一个生物时，你可以使它的灵魂作为一个（%0%）从它的尸体中升起，其统计资料见《怪物手册》。当幽灵出现时，它会变成一个朦胧的、类似于豹子的生物的形态，并获得相当于你的术士等级的两倍加上你的法术能力修饰的临时命中。为幽灵掷出主动权，它有自己的回合。幽灵会一直为你服务，直到你的下一次长时间休息结束，那时它就会消失在来世。",
+				"它听从你的口头命令（不需要你的行动），并在它的攻击和伤害卷上获得一个特殊的奖励。这个奖励等于你的法术能力修正值（最低为+0）。",
+				"一旦你用这个功能绑定了一个幽灵，你就不能再使用这个功能，直到你完成一个长时间的休息。"
+			],
+			"header": 2
+		},
+		{
+			"name": "Master of Hexes",
+			"source": "EldArc",
+			"subclassShortName": "Shadowforce",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 14,
+			"entries": [
+				"从14级开始，你的诅咒变得更加持久，并给予你进一步的好处。",
+				"你现在可以在诅咒生效时用你的六角刀的诅咒来诅咒其他生物。如果你这样做了，诅咒会在前一个生物身上结束，并且诅咒的剩余持续时间会延续。",
+				"此外，你对受到你的六角刀诅咒影响的生物获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"每回合一次，当你对被诅咒的目标造成伤害时，你可以造成（%0%）相同类型的额外伤害。",
+						"你对被诅咒的目标所做的任何攻击卷都是在d20上掷出19或20的关键一击。",
+						"如果被诅咒的目标死亡，你会重新获得相当于你的术士等级+你的法术能力修饰的点数。"
+					]
+				}
+			],
+			"header": 2
+		},
+		{
+			"name": "The Ancient Phoenix",
+			"source": "EldArc",
+			"subclassShortName": "Phoenix",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"你的守护者是一个在数千年的追捕中幸存下来的（%0%）。这个生命在火元素层面上定居下来，并且充满了神奇的能量，其强大的魔力可以通过仪式被吸走，甚至在最内部的层面上。"
+			],
+			"header": 1
+		},
+		{
+			"name": "Positive Energy Infusion",
+			"source": "EldArc",
+			"subclassShortName": "Phoenix",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"有志于成为术士的人如果与古老的凤凰接触，就会意外地接触到注入凤凰精华的原始生命能量。这种对你的灵魂组成的改变会导致你与它的容器发生轻微的不相容性。你可以滚动或从以下怪癖中选择，将这种变化的表现添加到你的角色中。",
+				{
+					"type": "table",
+					"caption": "Ancient Phoenix Quirks",
+					"colLabels": [
+						"d6",
+						"Quirk"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-3 text-left"
+					],
+					"rows": [
+						[
+							"1",
+							"你心不在焉地点燃小火，但很快就会熄灭。"
+						],
+						[
+							"2",
+							"你欣赏火，即使它烧伤了你的朋友。"
+						],
+						[
+							"3",
+							"你浑身都是烧伤，这标志着你的力量第一次显现出来。"
+						],
+						[
+							"4",
+							"你有一种紧张的强迫症，即使是最微弱的阴影也要保持亮光。"
+						],
+						[
+							"5",
+							"你对不死生物有一种压倒性的憎恨。"
+						],
+						[
+							"6",
+							"当你看不到太阳的时候，你会烦躁不安。"
+						]
+					]
+				}
+			],
+			"header": 2
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "EldArc",
+			"subclassShortName": "Phoenix",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"以下法术被添加到术士法术列表中，供你使用。",
+				{
+					"type": "table",
+					"caption": "Ancient Phoenix Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell feather fall}, {@spell guiding bolt}"
+						],
+						[
+							"2nd",
+							"{@spell heat metal}, {@spell pyrotechnics}"
+						],
+						[
+							"3rd",
+							"{@spell beacon of hope}, {@spell melf's minute meteors}"
+						],
+						[
+							"4th",
+							"{@spell aura of purity}, {@spell fire shield}"
+						],
+						[
+							"5th",
+							"{@spell holy weapon}, {@spell reincarnate}"
+						]
+					]
+				}
+			],
+			"header": 2
+		},
+		{
+			"name": "Mantle of Flame",
+			"source": "EldArc",
+			"subclassShortName": "Phoenix",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"从你在1级选择这个守护者开始，你可以释放出在你体内燃烧的凤凰之火。",
+				"作为一个动作，你将自己包裹在旋转的火焰中，你的眼睛像热煤一样发光。你获得以下的好处，直到你使用你的额外行动来结束这个效果，或者你是（%0%）。",
+				{
+					"type": "list",
+					"items": [
+						"每次一个生物用近战攻击击中你或触碰你时，它都会受到相当于1加你术士等级一半的火焰伤害。",
+						"你在30英尺范围内发出亮光，在另外30英尺范围内发出暗光。"
+					]
+				}
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Warding Cyclone",
+			"source": "EldArc",
+			"subclassShortName": "Phoenix",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 6,
+			"entries": [
+				"从6级开始，你可以在自己周围唤起一股保护性的火热狂风。当你被攻击或者你必须对一个只造成伤害的效果进行蓄力，你可以使用你的反应来移动5英尺而不引起机会攻击。如果你的新位置在攻击或效果的范围之外，攻击卷有劣势，或者你的救赎有优势。"
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.cost": "1",
+				"activation.condition": "you are attacked or you must make a saving throw against an effect that only deals damage"
+			}
+		},
+		{
+			"name": "Spark of Rebirth",
+			"source": "EldArc",
+			"subclassShortName": "Phoenix",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 10,
+			"entries": [
+				"从10级开始，面对失败，你的火焰结成你的伤口，在火热的咆哮中向外涌动。",
+				"如果你的生命值降至0，你可以吸取凤凰的火花。你反而会恢复到你最大命中率的一半，在你周围10英尺内的生物会受到相当于你的术士等级+你的法术能力修饰的火焰伤害。",
+				"一旦你使用这个功能，你就不能再使用它，直到你完成长时间的休息。"
+			],
+			"header": 2
+		},
+		{
+			"name": "Phoenix Pinion",
+			"source": "EldArc",
+			"subclassShortName": "Phoenix",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 14,
+			"entries": [
+				"从14级开始，你可以显现出你的守护者的一根羽毛来灼伤你的敌人，治疗你的盟友，甚至恢复生命。",
+				"作为一个动作，你可以在自由的手中变出一个凤凰针筒。在灰飞烟灭之前可以使用一次，你可以用以下方式之一使用它。",
+				{
+					"type": "list",
+					"items": [
+						"对你来说，它是一个简单的近战武器，具有精巧和投掷（范围20/60）的属性，造成（%0%）的火焰伤害。当你击中它时，你选择的目标周围20英尺范围内的生物会恢复{@dice 5d8}的命中率，并且小齿轮会碎裂成灰。",
+						"作为一个动作，你用小齿轮刺入一个死亡生物的心脏。如果该生物在过去10天内死亡，针状物会在1分钟内发出耀眼的光芒。如果在这段时间内没有移除针状物，生物的身体和针状物就会化为灰烬，生物会像被{@spell resurrection}法术恢复生命，并且你在7天内不能再次使用这个选项。"
+					]
+				},
+				"一旦你使用这个功能，你就不能再使用它，直到你完成长时间的休息。如果你在那个时候有一个小齿轮，它就会解体。"
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "The Chosen of Mystra",
+			"source": "EldArc",
+			"subclassShortName": "Mystra",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"你的守护者是Mystra的神选者之一：具有强大力量的凡人，为所有魔法之母Mystra服务。这些凡人被授予了Mystra的部分神圣精华--称为咒语之火--他们用它来保护织网不被破坏，维护各领域的魔法现状。这些被选中的凡人虽然非常强大，但他们自己并不是无懈可击的；他们有时会与术士签订合同，让他们协助实现自己的目标，并授予他们一小部分银色火焰作为交换。"
+			],
+			"header": 1
+		},
+		{
+			"name": "Protect the Weave",
+			"source": "EldArc",
+			"subclassShortName": "Mystra",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"偶尔，神秘选民的术士们会收到他们的守护者发来的信息，命令他们调查一个可能对织网造成破坏的事件。这类事件可能包括从仪式到神灵的行为。通常情况下，这些事件是由一个邪恶的实体故意策划的；然而，一个巫师胡乱地制造一个破碎的召唤圈还是有点可能。与你的管理人合作确定这种情况，并与你的队伍一起探索它们。"
+			],
+			"header": 2
+		},
+		{
+			"name": "Expanded Spell List",
+			"source": "EldArc",
+			"subclassShortName": "Mystra",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"以下法术被添加到术士法术列表中，供你使用。",
+				{
+					"type": "table",
+					"caption": "Chosen of MYstra Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-2 text-left"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell identify}, {@spell magic missile}"
+						],
+						[
+							"2nd",
+							"{@spell arcane lock}, {@spell dragon's breath|XGE}"
+						],
+						[
+							"3rd",
+							"{@spell glyph of warding}, {@spell pulse wave|EGW}"
+						],
+						[
+							"4th",
+							"{@spell conjure minor elementals}, {@spell otiluke's resilient sphere|PHB|resilient sphere}"
+						],
+						[
+							"5th",
+							"{@spell bigby's hand|PHB|arcane hand}, {@spell passwall}"
+						]
+					]
+				}
+			],
+			"header": 2
+		},
+		{
+			"name": "Minor Spellfire",
+			"source": "EldArc",
+			"subclassShortName": "Mystra",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 1,
+			"entries": [
+				"当你在1级选择这个守护者时，你拥有Mystra的法术之火的一个碎片，这个火焰可以保护你不受强制性的影响。",
+				"在你每个回合开始时，或作为一个行动，你可以为自己结束一个导致你变成（%0%）或（%1%）的效果。",
+				"你可以使用这个功能两次，当你完成短期或长期休息时，消耗的使用量会得到补充。"
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		},
+		{
+			"name": "Chosen's Absorption",
+			"source": "EldArc",
+			"subclassShortName": "Mystra",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 6,
+			"entries": [
+				"从6级开始，你可以挫败针对你的法术，并将被挫败的法术所释放的多余魔力窃为己有。",
+				"当一个法术只针对你时，你可以在不消耗法术槽的情况下施放（%0%）。当你以这种方式施展时，你可以将你的术士等级的一半加到你对（%1%）的能力检查上。",
+				"此外，当一个法术在你60英尺范围内失败时，你可以在下一回合采取额外行动，将该法术窃为己有。该法术的等级必须是你有法术槽的。你可以使用一个术士的法术槽，作为术士的法术施放一次。",
+				"一旦你使用这个奖励动作，你必须完成一个长时间的休息才能再次这样做。当你完成一个长时间的休息时，一个偷来的法术就会消失。"
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "bonus",
+				"activation.cost": "1",
+				"activation.condition": "in the previous turn, a spell failed within 60 feet of you"
+			}
+		},
+		{
+			"name": "Arcane Senses",
+			"source": "EldArc",
+			"subclassShortName": "Mystra",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 10,
+			"entries": [
+				"从10级开始，你可以投射你的视野并感知奥术能量。",
+				"你可以在不消耗法术槽的情况下施放（%0%）。当通过此功能施放时，该法术的施放时间为1个动作，你通过传感器的视觉获得{@spell detect magic}法术的效果。"
+			],
+			"header": 2
+		},
+		{
+			"name": "Silver Fire",
+			"source": "EldArc",
+			"subclassShortName": "Mystra",
+			"subclassSource": "EldArc",
+			"className": "Warlock",
+			"classSource": "EldArc",
+			"level": 14,
+			"entries": [
+				"从14级开始，你获得了向外投射法术之火的能力，可以轰击你的敌人。",
+				"作为一个动作，你可以创造一条银色的奥术能量线，类似于火的喷发。在一条从你开始的90英尺长5英尺宽的线上的生物，必须对你的术士法术保全DC做出灵巧的救赎，失败时受到{@damage 8d8}武力伤害，成功时受到一半的伤害。这种伤害可以绕过抵抗和免疫。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。"
+			],
+			"header": 2,
+			"foundrySystem": {
+				"activation.type": "action",
+				"activation.cost": "1"
+			}
+		}
+	]
+}

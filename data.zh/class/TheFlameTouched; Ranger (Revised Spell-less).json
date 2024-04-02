@@ -1,0 +1,3758 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "RangedRevisedNoSpells",
+				"abbreviation": "RRSL",
+				"full": "Ranger (Revised Spell-less)",
+				"authors": [
+					"TheFlameTouched"
+				],
+				"version": "1.0",
+				"convertedBy": [
+					"Foxfire94"
+				],
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1517270880,
+		"dateLastModified": 1697576005,
+		"_dateLastModifiedHash": "78d2b8f47b"
+	},
+	"class": [
+		{
+			"name": "Ranger (Revised Spell-less)",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Fighting Style",
+					"featureType": [
+						"FS:R"
+					],
+					"progression": {
+						"2": 1
+					}
+				},
+				{
+					"name": "Maneuvers",
+					"featureType": [
+						"MV:B"
+					],
+					"progression": {
+						"2": 2,
+						"5": 3,
+						"9": 4,
+						"13": 5,
+						"17": 6
+					}
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"insight",
+								"investigation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "shortsword|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"longbow|phb",
+							"arrows (20)|phb"
+						]
+					}
+				]
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Maneuvers Known"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							6
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Favored Enemy|Ranger (Revised Spell-less)|RangedRevisedNoSpells|1",
+				"Natural Explorer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|1",
+				"Fighting Style|Ranger (Revised Spell-less)|RangedRevisedNoSpells|2",
+				"Combat Superiority|Ranger (Revised Spell-less)|RangedRevisedNoSpells|2",
+				{
+					"classFeature": "Ranger Conclave|Ranger (Revised Spell-less)|RangedRevisedNoSpells|3",
+					"gainSubclassFeature": true
+				},
+				"Primeval Awareness|Ranger (Revised Spell-less)|RangedRevisedNoSpells|3",
+				"Poultices|Ranger (Revised Spell-less)|RangedRevisedNoSpells|3",
+				"Ability Score Improvement|Ranger (Revised Spell-less)|RangedRevisedNoSpells|4",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Revised Spell-less)|RangedRevisedNoSpells|5",
+					"gainSubclassFeature": true
+				},
+				"Additional Maneuvers|Ranger (Revised Spell-less)|RangedRevisedNoSpells|5",
+				"Greater Favored Enemy|Ranger (Revised Spell-less)|RangedRevisedNoSpells|6",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Revised Spell-less)|RangedRevisedNoSpells|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Revised Spell-less)|RangedRevisedNoSpells|8",
+				"Fleet of Foot|Ranger (Revised Spell-less)|RangedRevisedNoSpells|8",
+				"Natural Antivenom|Ranger (Revised Spell-less)|RangedRevisedNoSpells|9",
+				"Additional Maneuvers|Ranger (Revised Spell-less)|RangedRevisedNoSpells|9",
+				"Hide in Plain Sight|Ranger (Revised Spell-less)|RangedRevisedNoSpells|10",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Revised Spell-less)|RangedRevisedNoSpells|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Revised Spell-less)|RangedRevisedNoSpells|12",
+				"Call Natural Allies|Ranger (Revised Spell-less)|RangedRevisedNoSpells|13",
+				"Additional Maneuvers|Ranger (Revised Spell-less)|RangedRevisedNoSpells|13",
+				"Vanish|Ranger (Revised Spell-less)|RangedRevisedNoSpells|14",
+				{
+					"classFeature": "Ranger Conclave feature|Ranger (Revised Spell-less)|RangedRevisedNoSpells|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Revised Spell-less)|RangedRevisedNoSpells|16",
+				"Relentless|Ranger (Revised Spell-less)|RangedRevisedNoSpells|17",
+				"Additional Maneuvers|Ranger (Revised Spell-less)|RangedRevisedNoSpells|17",
+				"Feral Senses|Ranger (Revised Spell-less)|RangedRevisedNoSpells|18",
+				"Ability Score Improvement|Ranger (Revised Spell-less)|RangedRevisedNoSpells|19",
+				"Foe Slayer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|20"
+			],
+			"subclassTitle": "Ranger Conclave",
+			"fluff": [
+				{
+					"name": "Ranger",
+					"type": "section",
+					"entries": [
+						"粗犷而野性的外表，一个人类独自潜行在树影中，追踪他知道正在策划袭击附近农场的兽人。他双手各持一把短剑，成为一道旋风般的钢铁，一次又一次地击倒敌人。",
+						"在一个冰冷空气锥体的作用下，一个(elf)精灵摔倒后站起身来，拉开弓，向白龙射出一箭。她无视从龙身上散发出来的恐惧波动，就像无视龙呼出的寒冷气息一样，她一箭接一箭地射向龙厚厚鳞甲之间的缝隙。",
+						"举起手，一个半精灵向高空盘旋的鹰吹口哨，把鸟召回到他身边。他用精灵语低语给鹰下达指示，指向他一直在追踪的猫头鹰熊，并让鹰去分散那只生物的注意力，同时他准备好弓。",
+						"远离城镇的喧嚣，在保护最偏远农场免受荒野恐怖的树篱之后，在茂密的无人痕迹森林和广阔空旷的平原上，游侠们保持着他们永无止境的守护。",
+						{
+							"type": "entries",
+							"name": "Deadly Hunters",
+							"entries": [
+								"荒野战士，游侠专精于猎杀威胁文明边缘的怪物\u2014\u2014人形掠夺者、狂暴野兽和怪物、可怕的巨人以及致命的龙。他们学会像捕食者一样追踪猎物，悄无声息地穿行于荒野之间，并将自己隐藏在灌木丛和瓦砾中。游侠将他们的战斗训练重点放在那些对付特定偏爱敌人特别有效的技巧上。",
+								"由于对荒野的熟悉，游侠们获得了施展魔法的能力，这些魔法利用了自然的力量，就像德鲁伊一样。他们的魔法和战斗能力一样，强调速度、隐秘和狩猎。游侠的才能和能力被锻炼得致命，专注于保护边境的严峻任务。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Independent Adventurers",
+							"entries": [
+								"虽然游侠可能以猎人、向导或追踪者的身份谋生，但游侠真正的使命是保卫文明边缘，抵御从荒野中涌入的怪物和人类兽群的侵袭。在一些地方，游侠会聚集在秘密组织中，或者与德鲁伊圈子联手。然而，许多游侠都独来独往，甚至有些过于独立，他们知道，当一条龙或一群兽人发起攻击时，游侠可能是第一道，也可能是最后一道防线。",
+								"这种强烈的独立性使得游侠非常适合冒险，因为他们习惯了远离舒适的干燥床铺和热水浴的生活。面对那些在野外抱怨困难的城市出生的冒险者，游侠们会以一种混合了娱乐、沮丧和同情的方式回应。但他们很快就会意识到，其他能够在与文明敌人的战斗中自力更生的冒险者是值得承担任何额外负担的。被宠坏的城市人也许不知道如何在野外找到食物或淡水，但他们在其他方面弥补了这一点。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Ranger",
+							"entries": [
+								"在创建你的游侠角色时，考虑一下赋予你特殊能力的训练性质。你是跟着一位导师训练，一起在荒野中漫游直到掌握了游侠的技能吗？你是离开了你的学徒生涯，还是你的导师被杀害了\u2014\u2014也许是被成为你宿敌的怪物所杀？或者你是作为与德鲁伊团结的一群游侠中学到这些技能的，接受了神秘路径和荒野知识的训练。你也可能是自学成才，一个隐士通过在荒野生存的必要性学会了战斗技能、追踪能力，甚至与自然建立了魔法联系。",
+								"你对某种特定敌人的仇恨源自何处？是有怪物杀死了你所爱的人或摧毁了你的家乡？还是你亲眼目睹了这些怪物造成的破坏，决心遏制它们的掠夺行为？你的冒险生涯是在保护边境的工作中延续，还是一个重大转变？是什么促使你加入一群冒险者？你是否觉得教导新盟友野外生存的方式具有挑战性，还是欢迎他们带来的摆脱孤独的解脱？",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"您可以通过以下建议快速创建一个游侠。首先，将敏捷作为您最高的能力值，其次是感知力。 （一些专注于双武器战斗的游侠可能会将力量值调高于敏捷。）其次，选择{@background outlander}背景。"
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB",
+					"page": 89
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"我大部分时间都远离文明，守护在其边缘。不要以为我不向你们的国王屈膝，就代表我没有比他所有的骑士们更多地保护过他。"
+							],
+							"by": "Soveliss"
+						},
+						"游侠是自由心灵的漫游者和探索者，他们巡逻在文明领地的边缘，驱逐野地之外的居民。这是一项无人感激的工作，因为他们的努力很少被理解，几乎从不被奖赏。然而，游侠们坚持自己的职责，从不怀疑自己的工作使世界变得更安全。",
+						"每位游侠的个性和历史都受文明关系的影响。一些游侠视自己为文明边疆上法律的执行者和正义的使者，不受任何主权势力约束。另一些是拒绝文明的野外生存专家。他们打败怪物以保护自己，同时在世界危险的荒野地区生活和旅行。如果他们的努力也使他们避开的王国和其他文明领域受益，那就更好。",
+						"如果你正在创造或扮演一个游侠角色，以下部分提供了一些想法来丰富角色并增强你的角色扮演体验。",
+						{
+							"type": "entries",
+							"name": "View of the World",
+							"entries": [
+								"一个游侠对世界的看法始于（有时也终于）该角色对文明人和他们所占据的地方的态度。一些游侠对文明社会持有根深蒂固的鄙视态度，而另一些则怜悯他们发誓要保护的人们\u2014\u2014然而在战场上，很难区分一个游侠和另一个。事实上，对于那些见过他们行动并受益于他们技艺的人来说，游侠为何做事几乎无关紧要。话虽如此，两个游侠不太可能以相同的方式表达他们对任何事情的看法。",
+								"如果你还没有考虑过你角色世界观的细节，可以通过用一个简短的陈述来总结这种观点来更清晰地表达（例如下表中的条目）。这种感觉会如何影响你的行为举止呢？",
+								{
+									"type": "table",
+									"caption": "View of the World",
+									"colLabels": [
+										"{@dice d6}",
+										"View"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"对于那些无法独立生存的人来说，城镇和城市是最好的选择。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"文明的进步是遏制混乱的最佳途径，但其影响必须受到监控。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"城镇和城市是必要的邪恶，但一旦荒野被超自然威胁清除，我们将不再需要它们。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"墙壁是给懦夫的，他们躲在墙后，让其他人来努力使世界变得安全。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"参观一个城镇并不令人不快，但几天后我感到无法抗拒地想要回到荒野。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"城市通过将人们与荒野的严酷教训隔离开来，培养了软弱。(Dungeons & Dragons)。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Homelands",
+							"entries": [
+								"所有游侠，无论是如何开始从事这个职业的，都与自然界及其各种地形有着强烈的联系。对于一些游侠来说，荒野是他们成长的地方，可能是因为在那里出生，或者在年幼时搬到那里。对于其他游侠来说，文明起初是他们的家园，但荒野成为了第二故乡。",
+								"思考你角色的背景故事，并决定哪种地形最像家，无论你是否在那里出生。那种地形反映了你的个性？它是否影响你选择学习哪些法术？你在那里的经历是否塑造了你喜欢的敌人是谁？\n\n在角色的背景故事中，有一种地形可能会被描述为\"家\"，无论角色是否在那里出生。这种地形通常反映了角色的个性特征和经历，也可能影响他们在冒险中选择的法术和对抗的敌人类型。",
+								{
+									"type": "table",
+									"caption": "Homelands",
+									"colLabels": [
+										"{@dice d6}",
+										"Homeland"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你巡逻了一片古老的森林，被几处通往暗影界的交叉点所腐化和昏暗。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"作为一群游牧民族的一员，你学会了在沙漠中生存的技能。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你在地底世界的早期生活为你应对其居民的挑战做好了准备。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你居住在一个沼泽边缘，这个地区不仅受到陆地生物的威胁，还有水生生物的威胁。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"因为你在山峰间长大，找到穿越山脉的最佳路径对你来说是本能的。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你漫游在极北之地，学习如何在被冰覆盖的领域中保护自己并取得成功。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sworn Enemy",
+							"entries": [
+								"每位游侠都会从一个或两个偏爱敌人开始。选择偏爱敌人可能与角色早年生活中的特定事件有关，也可能完全是个人选择。",
+								"是什么促使你的角色选择了特定的敌人？是出于传统还是好奇，还是因为有仇要报？",
+								{
+									"type": "table",
+									"caption": "Sworn Enemies",
+									"colLabels": [
+										"{@dice d6}",
+										"Enemy"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你代表大自然寻求报复，为你的敌人所犯下的巨大罪行。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你的祖先或前辈与这些生物战斗过，你也将如此。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你不对你的敌人怀有敌意。你像猎人追踪野生动物一样追踪这样的生物。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你发现你的敌人很迷人，你收集关于它的传说和历史书籍。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你收集你打倒敌人的标记，以提醒自己每次击杀。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你尊重你选择的敌人，并把战斗看作是对双方技能的考验。"
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 40,
+					"source": "XGE"
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Favored Enemy",
+			"source": "RangedRevisedNoSpells",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 1,
+			"entries": [
+				"从1级开始，你有大量研究、追踪、狩猎的经验，甚至可以和荒野中常遇到的某类敌人交谈。",
+				"选择喜欢的敌人类型：野兽、精灵、人形生物、怪兽或亡灵。在对所选类型的生物进行武器攻击时，你会获得+2的伤害卷奖励。此外，你在追踪你所喜爱的敌人的智慧（生存）检查中具有优势，在回忆关于他们的信息的智力检查中也具有优势。",
+				"当你获得这个特性时，你也会学习一种你所选择的语言，通常是你喜欢的敌人或与之相关的生物所讲的语言。然而，你可以自由选择任何你想学习的语言。"
+			]
+		},
+		{
+			"name": "Natural Explorer",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 1,
+			"entries": [
+				"你是驾驭自然界的高手，在受到攻击时，你的反应迅速而果断。这使你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你忽略了困难的地形。",
+						"你在主动权卷上有优势。",
+						"在战斗中的第一个回合，你对尚未行动的生物的攻击卷有优势。"
+					]
+				},
+				"此外，你还能熟练地在荒野中航行。当旅行一小时或更长时间时，你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"困难的地形不会减缓你的团队的旅行。",
+						"除非用魔法手段，否则你的小组不可能迷路。",
+						"即使你在旅行中从事另一项活动（如觅食、导航或追踪），你仍然对危险保持警惕。",
+						"如果你是独自旅行，你可以以正常的速度隐秘地移动。",
+						"当你觅食时，你会找到比平时多一倍的食物。",
+						"在追踪其他生物的同时，你还可以了解它们的确切数量、大小以及它们多久前经过该地区。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 2,
+			"entries": [
+				"2级时，你采用一种特殊的战斗方式作为你的专长。从以下选项中选择一个。射箭，防御，决斗，水手，或双武器格斗。你不能多次选择一种格斗方式，即使你后来可以再次选择。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Archery",
+							"entries": [
+								"你在使用远程武器进行攻击时获得+2的奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Close Quarters Shooter",
+							"entries": [
+								"当你在敌对生物的5英尺范围内进行远程攻击时，你在攻击卷上没有劣势。你的远程攻击对你30英尺内的目标无视半掩体和四分之三掩体。你对远程攻击的攻击卷轴有一个+1的奖励。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"type": "entries",
+							"name": "Defense",
+							"entries": [
+								"当你穿着盔甲时，你会获得一个+1的交流奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dueling",
+							"entries": [
+								"当你单手挥舞近战武器而没有其他武器时，你使用该武器的伤害卷获得+2的奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mariner",
+							"entries": [
+								"只要你不穿重甲或不使用盾牌，你的游泳速度和攀爬速度与你的正常速度相等，并且你获得+1的交流奖励。"
+							],
+							"source": "UAWaterborneAdventures"
+						},
+						{
+							"type": "entries",
+							"name": "Tunnel Fighter",
+							"entries": [
+								"作为一个额外动作，你可以进入一个防御姿态，持续到你下一个回合的开始。当你处于防御状态时，你可以在不使用你的反应的情况下进行机会攻击，并且你可以使用你的反应来对在你范围内移动超过5英尺的生物进行近身攻击。"
+							],
+							"source": "UALightDarkUnderdark"
+						},
+						{
+							"type": "entries",
+							"name": "Two-Weapon Fighting",
+							"entries": [
+								"当你进行双武器战斗时，你可以在第二次攻击的伤害上加上你的能力修改值。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Combat Superiority",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 2,
+			"entries": [
+				"在2级时，你学会了由特殊骰子推动的机动性，这些骰子被称为优势骰子。",
+				{
+					"type": "entries",
+					"name": "Maneuvers",
+					"entries": [
+						"你学习两个自选动作，这些动作从战斗大师原型的战士可用的动作列表中选择。许多演习以某种方式加强攻击。你每次攻击只能使用一个演习。",
+						"你在5级、9级、13级和17级时可以额外学习一种你选择的演习。每次你学习一个新动作时，你也可以用一个不同的动作取代你所知道的一个动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superiority Dice",
+					"entries": [
+						"你有四个优势骰子，都是D8。当你使用一个优越性骰子时，它就会被消耗掉。当你完成短时或长时的休息时，你会重新获得你所有消耗的优势骰子。",
+						"你在9级时获得另一个优势模子，在17级时再获得一个。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"你的某些演习需要你的目标做出一个蓄力动作来抵抗演习的效果。蓄力动作的计算方式如下。",
+						{
+							"type": "abilityDc",
+							"name": "Maneuver",
+							"attributes": [
+								"str",
+								"dex"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ranger Conclave",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"在3级的时候，你可以从可用的宗派列表中选择模仿一个游侠宗派的理想和训练。你的选择会在3级时赋予你特性，在5级、7级、11级和15级时再次赋予你特性。"
+			]
+		},
+		{
+			"name": "Primeval Awareness",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"从3级开始，你对游侠传说的掌握使你能够与野兽和你周围的土地建立强大的联系。",
+				"你有一种与生俱来的能力，可以与野兽交流，它们会把你当成同类。通过声音和手势，你可以把简单的想法作为一种行动传达给野兽，并能读懂它的基本情绪和意图。你可以了解它的情绪状态，它是否受到任何一种魔法的影响，它的短期需求（比如食物或安全），以及你可以采取的行动（如果有的话）来说服它不要攻击。",
+				"你不能对在过去10分钟内被你攻击过的生物使用这个能力。",
+				"此外，你可以调整你的感官，以确定附近是否有你喜欢的敌人潜伏。通过花费1分钟不间断的专注（就像你专注于一个法术一样），你可以感觉到你周围5英里内是否有你喜欢的敌人存在。这个功能可以显示出哪些你喜欢的敌人存在，他们的数量，以及这些生物的大致方向和与你的距离（英里）。",
+				"如果范围内有多组你喜欢的敌人，你就为每一组学习这个信息。"
+			]
+		},
+		{
+			"name": "Poultices",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"在3级时，你可以制作特殊的草药膏药，其治疗能力可与一些药水相媲美。你可以花1个小时收集草药，并使用经过处理的绷带制作草药膏药，制作的数量等于你的智慧修正值（最少1）。你可以在同一时间携带与你的智慧修正值相同数量的膏药（最少1）。除了你之外，任何人都不能使用你所创造的药膏。24小时后，任何你没有使用过的药膏都会失去药效。",
+				"如果你花了1分钟给一个受伤的人形生物贴上你的膏药，从而消耗了它的使用时间，那么这个生物每有两个游侠等级就会恢复1d6的命中率（四舍五入）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和通常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"entries": [
+				"在5级时，你获得了游侠公会赋予你的一项功能。"
+			]
+		},
+		{
+			"name": "Additional Maneuvers",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"entries": [
+				"在5级时，你可以额外学习一种你选择的演习，该演习从战斗大师原型的战士可用的演习列表中选择。"
+			]
+		},
+		{
+			"name": "Greater Favored Enemy",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 6,
+			"entries": [
+				"在第6级时，你已经准备好去猎取更致命的猎物。选择一种更大的敌人：异形、天人、建筑、龙、元素、魔人或巨人。你在面对这个被选中的敌人时，会获得所有你在面对你所喜爱的敌人时通常获得的好处，包括一种额外的语言。你对所有你喜欢的敌人的伤害卷的奖励增加到+4。",
+				"此外，你对更受宠的敌人所使用的法术和能力的救赎有优势。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"entries": [
+				"在第7级时，你获得了一个由你的游侠公会赋予你的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Fleet of Foot",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 8,
+			"entries": [
+				"从8级开始，你可以在你的回合中使用冲刺动作作为奖励动作。"
+			]
+		},
+		{
+			"name": "Natural Antivenom",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 9,
+			"entries": [
+				"从9级开始，你对毒药的救赎有优势，并对毒药伤害有抵抗力。此外，你可以用你的一个膏药来治疗你所使用的生物的一个毒药效果，除了恢复命中率之外。"
+			]
+		},
+		{
+			"name": "Additional Maneuvers",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 9,
+			"entries": [
+				"在9级时，你可以额外学习一种你选择的演习，该演习从战斗大师原型的战士可用的演习列表中选择。"
+			]
+		},
+		{
+			"name": "Hide in Plain Sight",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 10,
+			"entries": [
+				"从10级开始，你可以长时间保持完全静止的状态来设下伏击。",
+				"当你试图在你的回合中隐藏时，你可以选择在该回合中不移动。如果你避免移动，试图探测你的生物会对他们的智慧（感知）检查采取-10的惩罚，直到你下一回合开始。如果你移动或跌倒（%0%），无论是自愿的还是因为某些外部影响，你都会失去这个好处。如果任何效果或行动导致你不再隐藏，你仍然会被自动探测到。",
+				"如果你在下一回合仍被隐藏，你可以继续保持不动，并获得这个好处，直到你被发现。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"entries": [
+				"在11级时，你获得了一个由你的游侠公会授予你的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Call Natural Allies",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 13,
+			"entries": [
+				"从13级开始，当你在一个你喜欢的地形区域时，你可以召唤该地形的自然生物为你作战，利用你对自然界的调和来说服它们帮助你。DM从那些能听到你的声音并且在你周围1英里范围内的野兽中选择适合该地形的野兽来帮助你，这些野兽属于以下群体之一。",
+				{
+					"type": "list",
+					"items": [
+						"一个挑战等级为2级或更低的魔兽",
+						"两只挑战等级为1或更低的魔兽",
+						"四个挑战等级为1/2或更低的魔兽",
+						"八个挑战等级为1/4或更低的魔兽"
+					]
+				},
+				"这些野兽从它们当前的位置接近你，并将与你并肩作战，攻击任何对你有敌意的生物。它们对你和你的战友都很友好，你为被召唤的生物滚动主动权，作为一个团体，它需要自己的回合。DM有这些生物的统计数据。",
+				"1小时后，这些野兽会回到它们之前的位置。一旦你使用这个功能，24小时内你不能在同一大区再次使用它，因为同样的动物不会重复听从你的召唤。"
+			]
+		},
+		{
+			"name": "Additional Maneuvers",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 13,
+			"entries": [
+				"在13级时，你会额外学习一种你选择的演习，该演习会从战斗大师原型的战士可用的演习列表中选择。"
+			]
+		},
+		{
+			"name": "Vanish",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 14,
+			"entries": [
+				"从14级开始，你可以在你的回合中使用隐藏动作作为奖励动作。另外，除非你选择留下痕迹，否则你不能被非魔法手段追踪。"
+			]
+		},
+		{
+			"name": "Ranger Conclave feature",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"entries": [
+				"在15级时，你获得了一个由你的游侠公会授予你的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Relentless",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 17,
+			"entries": [
+				"从17级开始，当你掷出主动权并且没有剩余的优势骰子时，你会重新获得1个优势骰子。"
+			]
+		},
+		{
+			"name": "Additional Maneuvers",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 17,
+			"entries": [
+				"在17级时，你会额外学习一种你选择的演习，该演习会从战斗大师原型的战士可用的演习列表中选择。"
+			]
+		},
+		{
+			"name": "Feral Senses",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 18,
+			"entries": [
+				"在18级时，你获得了超自然的感觉，可以帮助你对抗你看不到的生物。当你攻击一个你看不到的生物时，你看不到它并不会在你对它的攻击卷中造成劣势。你也能知道在你30英尺范围内的任何{@condition invisible}生物的位置，只要该生物没有被你隐藏，而且你不是{@condition blinded}或{@condition deafened}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者你可以将你选择的两项能力得分提高1分，和平常一样，你不能用这个功能将能力得分提高到20分以上。",
+				"如果你的DM允许使用特技，你可以改用特技。"
+			]
+		},
+		{
+			"name": "Foe Slayer",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"level": 20,
+			"entries": [
+				"在20级时，你成为一个无与伦比的猎人。在你的每个回合中，你可以将你的智慧修正值加到你所进行的攻击卷或伤害卷中。你可以选择在卷轴之前或之后使用这个功能，但在卷轴的任何效果被应用之前。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Beast Conclave (UA)",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Beast Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"许多游骑兵在荒野中比在文明中更自在，以至于动物们认为他们是亲戚。野兽协会的游骑兵与野兽建立了密切的联系，然后通过使用魔法进一步加强这种联系。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Animal Companion|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Beast Conclave|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Companion's Bond|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Beast Conclave|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Animal Companion",
+			"entries": [
+				"三级时，你学会使用你的魔法与自然界的生物建立强大的联系。",
+				"经过8个小时的努力，并花费价值50戈比的稀有草药和精美食物，你从荒野中召唤出一只动物作为你忠实的伙伴。你通常从以下动物中选择你的同伴：猿猴、黑熊、野猪、大獾、大黄鼠狼、骡子、豹子或狼。然而，你的管理员可能会根据周围的地形和该地区合乎逻辑的生物类型，为你挑选这些动物中的一种。",
+				"在8小时结束时，你的动物伙伴会出现，并获得你的伙伴的结合能力的所有好处。你一次只能拥有一个动物伙伴。",
+				"如果你的动物伙伴被杀了，你们之间的魔法联系可以让你让它复活。通过8个小时的工作和花费价值25金币的稀有草药和精美食物，你可以召唤出你同伴的灵魂，并使用你的魔法为它创造一个新的身体。即使你不拥有动物同伴身体的任何部分，你也可以通过这种方式使其恢复生命。",
+				"如果你在拥有当前动物伙伴的情况下使用这个能力使以前的动物伙伴恢复生命，你的当前伙伴就会离开你，由恢复的伙伴取代。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Beast Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Companion's Bond",
+			"entries": [
+				"当你的动物伴侣与你联系在一起时，它可以获得各种好处。",
+				"如果动物伙伴有多重攻击行动，它就会失去这种行动。",
+				"同伴尽可能地服从你的命令。它像其他生物一样进行主动性滚动，但你决定它的行动、决定、态度等等。如果你失去了能力或不在，你的同伴就会自行行动。",
+				"当使用你的自然探索功能时，你和你的动物伙伴都能以正常的速度隐秘地移动。",
+				"你的动物伙伴的能力和游戏数据部分由你的等级决定。你的同伴使用你的熟练度加成，而不是它自己的。除了通常使用熟练度加成的领域外，动物伙伴还将其熟练度加成加到其AC和伤害卷上。",
+				"你的动物伙伴获得对你选择的两个技能的熟练程度。它还能熟练掌握所有的蓄力术。",
+				"三级以后每升一级，你的动物伙伴就会获得一个额外的命中率，并相应增加其命中率。",
+				"每当你获得能力得分提高的类特征时，你的同伴的能力也会提高。你的同伴可以将你选择的一项能力得分提高2分，也可以将你选择的两项能力得分提高1分。如常，你的同伴不能使用该特征将能力得分提高到20分以上，除非其描述另有规定。",
+				"你的同伴和你一样，有一个性格特征和一个缺陷，你可以从下面的表格中选择。你的同伴与你的理想相同，它的纽带永远是：\"与我同行的游侠是我心爱的伙伴，我很乐意为之付出生命。\"",
+				"你的动物伙伴获得了你所喜爱的敌人特征的好处，当你在6级获得该特征时，你的动物伙伴也获得了你的大喜爱的敌人特征的好处。它使用你为这些特征所选择的宠爱的敌人。",
+				{
+					"type": "table",
+					"caption": "Companion Trait",
+					"colLabels": [
+						"d6",
+						"Trait"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"面对困境，我无所畏惧。"
+						],
+						[
+							"2",
+							"威胁我的朋友，威胁我。"
+						],
+						[
+							"3",
+							"我保持警惕，以便其他人能够休息。"
+						],
+						[
+							"4",
+							"人们看到的是一个动物，而低估了我。"
+						],
+						[
+							"5",
+							"我有一个诀窍，就是在关键时刻出现。"
+						],
+						[
+							"6",
+							"我在所有事情上都把朋友的需要放在自己的需要之前。"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Companion Flaw",
+					"colLabels": [
+						"d6",
+						"Flaw"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"如果有食物无人看管，我就会吃。"
+						],
+						[
+							"2",
+							"我对陌生人咆哮，除了我的护林员，所有的人对我来说都是陌生人。"
+						],
+						[
+							"3",
+							"任何时候都是揉肚皮的好时机。"
+						],
+						[
+							"4",
+							"我对水有致命的恐惧。"
+						],
+						[
+							"5",
+							"我对 \"你好 \"的理解是在脸上舔一圈。"
+						],
+						[
+							"6",
+							"我跳上生物，告诉他们我是多么爱他们。"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Beast Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Coordinated Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Beast Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，你和你的动物伙伴形成了一股更强大的战斗力。当你在你的回合中使用攻击动作时，如果你的同伴能看到你，它可以使用它的反应来进行近战攻击。"
+			]
+		},
+		{
+			"name": "Beast's Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Beast Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，当你的同伴能看到你时，它在所有的拯救动作上都有优势。"
+			]
+		},
+		{
+			"name": "Storm of Claw and Fangs",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Beast Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你的同伴可以用它的行动对它周围5英尺内的每一个它选择的生物进行一次近战攻击，对每个目标进行单独的攻击卷。"
+			]
+		},
+		{
+			"name": "Superior Beast's Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Beast Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，每当你的同伴能看到的攻击者用攻击击中它时，它可以用它的反应将攻击对它的伤害减半。"
+			]
+		},
+		{
+			"name": "Hunter Conclave (UA)",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Hunter Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"一些游侠寻求掌握武器，以更好地保护文明免受荒野的恐怖。猎人俱乐部的成员学习专门的战斗技巧，用于对付最可怕的威胁，从猖獗的食人魔和成群的兽人到高大的巨人和可怕的巨龙。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hunter's Prey|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Hunter Conclave|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Hunter's Prey",
+			"entries": [
+				"在3级的时候，你会获得你所选择的以下特征之一。巨人屠夫、巨人杀手或部落破坏者。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Colossus Slayer",
+							"entries": [
+								"你的坚韧可以消磨掉最强大的敌人。当你用武器攻击击中一个生物时，如果该生物低于其最大命中率，它将受到额外的1d8伤害。你每回合只能造成一次这样的额外伤害。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Giant Killer",
+							"entries": [
+								"当你周围5英尺内的大型或更大的生物用攻击击中或未击中你时，你可以使用你的反应在该生物的攻击后立即攻击它，只要你能看到该生物。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Horde Breaker",
+							"entries": [
+								"在你的每个回合中，当你进行一次武器攻击时，你可以用相同的武器对在原目标5英尺范围内且在你的武器范围内的不同生物再次进行攻击。"
+							]
+						}
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Hunter Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Hunter Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Defensive Tactics",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Hunter Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你获得你所选择的以下特征之一。逃离部落，多重攻击防御，或钢铁意志。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Escape the Horde",
+							"entries": [
+								"对你的机会性攻击是以劣势进行的。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Multiattack Defense",
+							"entries": [
+								"当一个生物用攻击击中你时，你会在剩下的回合中对该生物随后的所有攻击获得一个+4的攻击力奖励。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Steel Will",
+							"entries": [
+								"你对受惊吓的拯救动作有优势。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Multiattack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Hunter Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得你选择的以下特征之一。扫射或旋风攻击。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Volley",
+							"entries": [
+								"你可以用你的行动对你的武器范围内你能看到的10英尺范围内的任何数量的生物进行一次远程攻击。你必须为每个目标准备弹药，就像平时一样，而且你为每个目标进行单独的攻击卷。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Whirlwind Attack",
+							"entries": [
+								"你可以用你的行动对你周围5英尺内的任何数量的生物进行近战攻击，对每个目标进行单独的攻击卷。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Superior Hunter's Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Hunter Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级的时候，你获得了你所选择的以下特征之一。躲避，逆流而上，或不可思议的躲避。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Evasion",
+							"entries": [
+								"当你受到一个效果，例如红龙的火热呼吸或{@spell lightning bolt}的法术，允许你做一个灵巧的救赎，只受到一半的伤害，如果你救赎成功，你反而不会受到伤害，如果你失败，只受到一半的伤害。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Stand Against the Tide",
+							"entries": [
+								"当一个敌对的生物用近战攻击错过你时，你可以用你的反应迫使该生物对你选择的另一个生物（除其自身外）重复同样的攻击。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Uncanny Dodge",
+							"entries": [
+								"当一个你能看到的攻击者用攻击击中你时，你可以用你的反应使攻击对你的伤害减半。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Deep Stalker Conclave (UA)",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Deep Stalker Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"大多数人只有在最紧迫的情况下才会进入暗黑世界的深处，进行一些绝望的探索或遵循巨大财富的承诺。很多时候，邪恶在地底滋生而不为人知，深渊潜行者协会的游侠们努力在他们到达地表之前发现并击败这些威胁。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Deep Stalker Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Deep Stalker Conclave|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Underdark Scout|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Deep Stalker Conclave|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Deep Stalker Magic",
+			"entries": [
+				"在第3级时，你拥有90英尺范围内的黑暗视觉。如果你已经有了黑暗视觉，你的范围会增加30英尺。你在3级、5级、9级、13级和15级的时候还可以获得额外的法术。一旦你获得了深层潜行者法术，它就会被算作你的游侠法术，但不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Deep Stalker Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell disguise self}"
+						],
+						[
+							"5th",
+							"{@spell rope trick}"
+						],
+						[
+							"9th",
+							"{@spell glyph of warding}"
+						],
+						[
+							"13th",
+							"{@spell greater invisibility}"
+						],
+						[
+							"17th",
+							"{@spell seeming}"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Deep Stalker Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Underdark Scout",
+			"entries": [
+				"3级时，你掌握了伏击的艺术。在战斗中的第一个回合，你的速度获得+10的奖励，如果你在该回合使用攻击动作，你可以进行一次额外的攻击。你也善于躲避依赖暗视的生物。这种生物在黑暗和昏暗的条件下试图探测你时不会获得任何好处。此外，当DM决定你是否可以躲避一个生物时，该生物不会从其暗视中获得任何好处。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Deep Stalker Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Deep Stalker Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Iron Mind",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Deep Stalker Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你获得对智慧救赎的熟练程度。"
+			]
+		},
+		{
+			"name": "Stalker's Flurry",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Deep Stalker Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"从11级开始，在你的每个回合中，当你攻击失败时，你可以再次进行攻击。在你的回合中，你可以用这个能力获得一次额外的攻击。"
+			]
+		},
+		{
+			"name": "Stalker's Dodge",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Deep Stalker Conclave",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，每当一个生物攻击你并且没有优势时，你可以用你的反应在该生物对你的攻击卷上施加劣势。你可以在做出攻击卷之前或之后使用这个特性，但必须在决定攻击卷的结果之前使用。"
+			]
+		},
+		{
+			"name": "Horizon Walker",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"地平线协约国的游骑兵保护世界免受来自其他位面的威胁。他们寻找平面传送门并对其进行监视，在需要时前往外部和内部平面以击败威胁。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Planar Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Planar Warrior|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Portal Lore|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Planar Magic",
+			"entries": [
+				"从3级开始，当你在这个等级中达到一定级别时，你会额外学习一个法术，如地平线行者法术表所示。这个法术对你来说算作游侠法术，而且不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Horizon Walker Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}"
+						],
+						[
+							"5th",
+							"{@spell alter self}"
+						],
+						[
+							"9th",
+							"{@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell banishment}"
+						],
+						[
+							"17th",
+							"{@spell teleportation circle}"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Planar Warrior",
+			"entries": [
+				"在3级时，你学会利用平面的能量来增强你的攻击。",
+				"作为额外行动，在你30英尺范围内选择一个你能看到的生物。直到本回合结束，你对该生物的攻击无视其伤害抗性，并且在本回合的下一次你击中它时，它会受到额外的1d6武力伤害。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Portal Lore",
+			"entries": [
+				"三级时，你获得探测平面传送门存在的能力。作为一项行动，你可以探测到你周围1,000英尺内的任何平面传送门的距离和方向。你还能感觉到每个传送门通往哪个存在平面。然而，如果魔法掩盖了传送门的任何细节，这个功能就不会显示出来。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期休息。另外，如果你消耗了一个2级或以上的法术槽，你可以再次使用该功能。",
+				"关于平面传送门的例子，请参见《地下城管理员指南》第二章中的 \"平面旅行 \"部分。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Ethereal Step",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在7级时，你学会了穿越虚空界。作为你回合中的额外行动，你可以用这个特征施放（%0%）的法术，但该法术在当前回合结束时结束。一旦你使用这个特性，你就不能再使用它，直到你完成一个短暂或长时间的休息。"
+			]
+		},
+		{
+			"name": "Distant Strike",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得了在眨眼间就能在不同星球间穿行的能力。当你使用攻击动作时，你可以在每次攻击前最多传送10英尺。你必须能够看到传送的目的地。",
+				"如果你用这个动作攻击至少两个不同的生物，你可以用它对第三个生物进行一次额外的攻击。"
+			]
+		},
+		{
+			"name": "Spectral Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你在平面间移动的能力变得更加精细了。作为一种反应，当你受到伤害时，你可以将对你的伤害减半。有那么一瞬间，你会滑入平面边界以减轻伤害。"
+			]
+		},
+		{
+			"name": "Primeval Guardian",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"原始守护者协会的游骑兵遵循一种植根于强大德鲁伊魔法的古老传统。这些游侠学会了与自然融为一体，使他们能够引导各种野兽和植物的各个方面，以战胜他们的敌人。",
+				"这些护林员居住在世界的古老森林中。他们很少冒险出去，因为他们认为保护德鲁伊丛林和见证世界最早的古树是他们神圣的职责。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guardian Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guardian Soul|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Piercing Thorns|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Guardian Magic",
+			"entries": [
+				"从3级开始，当你在这个等级中达到一定级别时，你会额外学习一个法术，如原始守护者法术表所示。这个法术对你来说算作游侠法术，而且不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Primeval Guardian Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell entangle}"
+						],
+						[
+							"5th",
+							"{@spell enhance ability}"
+						],
+						[
+							"9th",
+							"{@spell conjure animals}"
+						],
+						[
+							"13th",
+							"{@spell giant insect}"
+						],
+						[
+							"17th",
+							"{@spell insect plague}"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Guardian Soul",
+			"entries": [
+				"从3级开始，你获得了暂时成长的能力，并呈现出树状人的外观，被树叶和树皮覆盖。作为一个额外的动作，你会呈现出这种守护者的形态，这种形态会一直持续到你作为一个额外动作结束它，或者直到你丧失能力。",
+				"在你的监护人形态下，你经历了以下变化。",
+				{
+					"type": "list",
+					"items": [
+						"你的尺寸变成大号，除非你原来更大。",
+						"你的任何速度都会变成5英尺，除非速度更低。",
+						"你的触角增加5英尺。",
+						"你在每个回合开始时获得一定数量的临时打击点数。这个数字等于你游侠等级的一半。当这个形态结束时，你会失去你所拥有的任何临时打击点数。"
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Piercing Thorns",
+			"entries": [
+				"在3级时，你对原始魔法的掌握使你可以用荆棘加强你的攻击。在你的每个回合中，你可以对你用武器攻击击中的一个生物造成额外的1d6穿刺伤害。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Ancient Fortitude",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"7级时，你获得了古代森林的耐力。当你变成守护者形态时，你的最大命中率和当前命中率每级增加2。这种增加一直持续到你离开这个形态；然后你的最大命中率恢复到正常水平，但你当前的命中率保持不变，除非它们必须减少以遵守你的最大命中率。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Rooted Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得了扭曲和转动你脚下的地面的能力。当你处于守护者形态时，你周围30英尺内的地面对你的敌人来说是困难的地形。"
+			]
+		},
+		{
+			"name": "Guardian Aura",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Primeval Guardian (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级开始，你的守护者形态会散发出一种神奇的光环，强化你受伤的盟友。当任何盟友在你的守护形态的30英尺范围内开始他们的回合时，该盟友会恢复相当于你游侠等级一半的命中率。这个光环对拥有一半或更多命中率的生物没有影响，对亡灵和建筑也没有影响。"
+			]
+		},
+		{
+			"name": "Monster Slayer",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"杀手联盟的游侠们寻找吸血鬼、龙、邪恶的精灵、恶魔和其他强大的魔法威胁。为了战胜这些怪物，杀手们接受了各种奥术和神术的训练，他们是发掘和击败强大敌人的专家。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Slayer's Mysticism|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Slayer's Eye|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer (UA)|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Slayer's Mysticism",
+			"entries": [
+				"当你在这个等级中达到一定级别时，你会额外学习一个法术，如杀手法术表所示。这个法术对你来说算作游侠法术，但不计入你会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Monster Slayer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}"
+						],
+						[
+							"5th",
+							"{@spell zone of truth}"
+						],
+						[
+							"9th",
+							"{@spell magic circle}"
+						],
+						[
+							"13th",
+							"{@spell banishment}"
+						],
+						[
+							"17th",
+							"{@spell planar binding}"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Slayer's Eye",
+			"entries": [
+				"从第三级开始，你获得研究和解开生物防御的能力。作为一个额外动作，在你120英尺范围内选择一个你能看到的生物。你会立即了解目标的弱点、免疫力和抵抗力。你还可以了解目标受到伤害时触发的任何特殊效果，例如火伤害会停止其再生。",
+				"此外，每回合你第一次用武器攻击击中目标时，目标会从武器中获得额外的1d6伤害。",
+				"这个好处一直持续到你用这个特征瞄准一个不同的生物，或者直到你完成一个短期或长期休息。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Supernatural Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你获得了额外的抗击猎物对你精神和身体的攻击的能力。每当你的 \"杀手之眼 \"的目标迫使你做一个蓄力的动作时，你的动作要加1D6。"
+			]
+		},
+		{
+			"name": "Relentless Slayer",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"11级时，你获得了挫败敌人逃跑能力的能力。你对民间传说和奥术知识的研究给了你一个关键的洞察力，使你的猎物被困住。如果你的杀手之眼的目标试图传送、改变形状、前往另一个存在平面或变成气态，你可以用你的反应来进行智慧检定，由目标做出的智慧检定来争夺。要使用这个能力，你必须能够看到目标，并且需要在它的30英尺之内。如果你成功了，你就挫败了它的尝试，导致它浪费了它所使用的行动、额外行动或反应。"
+			]
+		},
+		{
+			"name": "Slayer's Counter",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，当你的猎物试图破坏你时，你获得反击的能力。如果你的 \"杀手之眼 \"的目标迫使你进行蓄力，你可以用你的反应对它进行一次武器攻击。你在进行蓄力之前立即进行这次攻击。如果攻击命中，你的救赎自动成功，此外还有攻击的正常效果。"
+			]
+		},
+		{
+			"name": "Gloom Stalker",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"阴暗潜行者在最黑暗的地方安家：地底深处、阴暗的小巷、原始森林，以及其他光线暗淡的地方。大多数人进入这些地方时都战战兢兢，但阴暗潜行者会大胆地进入黑暗，在威胁到达更广阔的世界之前寻求伏击。这样的游侠经常出现在暗黑世界，但他们也会去任何邪恶潜伏在阴影中的地方。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gloom Stalker Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dread Ambusher|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Umbral Sight|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Gloom Stalker Magic",
+			"entries": [
+				"从3级开始，当你在这个等级中达到一定的等级时，你会额外学习一个法术，如Gloom Stalker法术表所示。这个法术对你来说算作游侠法术，但不计入你会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Gloom Stalker Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell disguise self}"
+						],
+						[
+							"5th",
+							"{@spell rope trick}"
+						],
+						[
+							"9th",
+							"{@spell fear}"
+						],
+						[
+							"13th",
+							"{@spell greater invisibility}"
+						],
+						[
+							"17th",
+							"{@spell seeming}"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Dread Ambusher",
+			"entries": [
+				"3级时，你掌握了伏击的艺术。你可以给自己的主动性卷轴提供相当于你的智慧修正值的奖励。",
+				"在你每次战斗的第一个回合开始时，你的行走速度增加10英尺，持续到该回合结束。如果你在该回合采取攻击行动，你可以作为该行动的一部分进行一次额外的武器攻击。如果那次攻击命中，目标会受到该武器伤害类型的额外1d8伤害。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Umbral Sight",
+			"entries": [
+				"在3级时，你获得60英尺范围内的黑暗视觉。如果你已经拥有你的种族的暗视能力，其范围会增加30英尺。",
+				"你也善于躲避依赖暗视的生物。在黑暗中时，任何依靠暗视的生物都看不到你在黑暗中的身影。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Iron Mind",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"到了第七级，你已经磨练出了抵抗猎物改变心智的能力。你获得了对智慧救赎的熟练程度。如果你已经有了这种能力，你将获得智力或魅力投掷的能力（你选择）。"
+			]
+		},
+		{
+			"name": "Stalker's Flurry",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你学会了以如此出人意料的速度进行攻击，你可以将一次失误变成另一次攻击。在你的每个回合中，当你的武器攻击失误时，你可以作为同一行动的一部分进行另一次武器攻击。"
+			]
+		},
+		{
+			"name": "Shadowy Dodge",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级开始，你可以用未曾预料到的方式躲避，在你周围有一缕超自然的阴影。每当一个生物对你进行攻击卷，并且在卷轴上没有优势时，你可以用你的反应对它施加不利条件。你必须在知道攻击卷的结果之前使用这一特性。"
+			]
+		},
+		{
+			"name": "Horizon Walker",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"地平线行者守卫着这个世界，防止来自其他位面的威胁，或试图用其他世界的魔法蹂躏凡人的世界。他们寻找平面传送门并对其进行监视，根据需要前往内层世界和外层世界追击敌人。这些游侠也是多元宇宙中任何力量的朋友--特别是仁慈的龙、费伊和元素--它们致力于保护生命和各星球的秩序。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Horizon Walker Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Detect Portal|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Planar Warrior|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Horizon Walker Magic",
+			"entries": [
+				"从3级开始，当你在这个等级中达到一定级别时，你会额外学习一个法术，如地平线行者法术表所示。这个法术对你来说算作游侠法术，但不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": " Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}"
+						],
+						[
+							"5th",
+							"{@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell haste}"
+						],
+						[
+							"13th",
+							"{@spell banishment}"
+						],
+						[
+							"17th",
+							"{@spell teleportation circle}"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Detect Portal",
+			"entries": [
+				"在3级时，你获得了神奇地感知平面传送门存在的能力。作为一项行动，你可以探测到离你1英里内最近的平面传送门的距离和方向。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。",
+				"关于平面传送门的例子，请参见《地下城管理员指南》第二章中的 \"平面旅行 \"部分。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Planar Warrior",
+			"entries": [
+				"三级时，你学会利用多元宇宙的能量来增强你的攻击。",
+				"作为额外行动，在你30英尺范围内选择一个你能看到的生物。下次你在本回合用武器攻击击中该生物时，攻击造成的所有伤害都会变成武力伤害，并且该生物会从攻击中获得额外的1d8武力伤害。当你达到这个等级的第11级时，额外的伤害增加到2d8。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Ethereal Step",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你学会了穿越虚空界。作为一个额外的动作，你可以用这个特征施放（%0%）的法术，而不需要消耗一个法术槽，但这个法术在当前回合结束时结束。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Distant Strike",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你获得了在眨眼间在各个星球之间通行的能力。当你采取攻击行动时，你可以在每次攻击前传送到一个你能看到的无人的空间，最多可以传送10英尺。",
+				"如果你用这个动作攻击至少两个不同的生物，你可以用它对第三个生物进行一次额外的攻击。"
+			]
+		},
+		{
+			"name": "Spectral Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你在平面间移动的能力使你能够滑过平面边界，以减少战斗中对你的伤害。当你受到攻击的伤害时，你可以使用你的反应使自己在这一回合对该攻击的所有伤害产生抵抗。"
+			]
+		},
+		{
+			"name": "Monster Slayer",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"你致力于猎杀黑夜中的生物和邪恶魔法的施展者。怪物杀手寻找吸血鬼、龙、邪恶的精灵、恶魔和其他魔法威胁。经过超自然技术的训练来克服这些怪物，杀手们是发掘和击败强大的神秘敌人的专家。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Monster Slayer Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "entries",
+					"name": "",
+					"entries": [
+						"在第3级时，你获得窥视生物的能力，并以魔法辨别如何最好地伤害它。作为一个行动，在你60英尺范围内选择一个你能看到的生物。你会立即了解该生物是否有任何伤害免疫、抗性或脆弱性，以及它们是什么。如果该生物是隐藏在占卜魔法之外的，你会感觉到它没有伤害免疫、抗性或弱点。",
+						"你可以使用这个功能的次数等于你的智慧修正值（最少一次）。当你完成一个长时间的休息时，你会恢复所有已使用的功能。"
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Slayer's Prey|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Monster Slayer Magic",
+			"entries": [
+				"从3级开始，当你在这个等级中达到一定级别时，你会额外学习一个法术，如怪物杀手法术表所示。这个法术对你来说算作游侠法术，但不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": " Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}"
+						],
+						[
+							"5th",
+							"{@spell zone of truth}"
+						],
+						[
+							"9th",
+							"{@spell magic circle}"
+						],
+						[
+							"13th",
+							"{@spell banishment}"
+						],
+						[
+							"17th",
+							"{@spell hold monster}"
+						]
+					]
+				}
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Slayer's Prey",
+			"entries": [
+				"从第三级开始，你可以将你的愤怒集中在一个敌人身上，增加你对其造成的伤害。作为一个额外的行动，你指定一个你能看到的60英尺范围内的生物为这个特性的目标。每一回合，当你用武器攻击击中该目标时，它将从武器中获得额外的1d6伤害。",
+				"这个好处持续到你完成一个短时或长时休息。如果你指定了一个不同的生物，它就会提前结束。"
+			],
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Supernatural Defense",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你获得了额外的抗击猎物对你身心的攻击的能力。每当你的 \"杀手的猎物 \"的目标强迫你做一个蓄力动作时，以及每当你做一个能力检定以逃脱该目标的抓捕时，你的检定结果要加1d6。"
+			]
+		},
+		{
+			"name": "Magic-User's Nemesis",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"11级时，你获得了挫败别人的魔法的能力。当你看到一个生物在你60英尺范围内施法或传送时，你可以用你的反应来尝试用魔法挫败它。该生物必须用智慧救赎来对抗你的法术救赎，否则它的法术或传送就会失败并被浪费掉。",
+				"一旦你使用了这个功能，你就不能再使用它，直到你完成一个短期或长期的休息。"
+			]
+		},
+		{
+			"name": "Slayer's Counter",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Monster Slayer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，当你的猎物试图破坏你时，你获得反击的能力。如果你的 \"杀手的猎物 \"的目标迫使你做一个蓄力动作，你可以用你的反应对猎物进行一次武器攻击。你在进行蓄力之前立即进行这次攻击。如果你的攻击命中，你的救赎自动成功，此外还有攻击的正常效果。"
+			]
+		},
+		{
+			"name": "Drakewarden",
+			"source": "RangedRevisedNoSpells",
+			"page": 2,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Drakewarden (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"{@note Note that this subclass is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Spell-less Ranger subclass.}",
+				"Drakewardens是游侠，他们利用自己与自然的神奇联系，与一条小龙，即德雷克形成了持久的联系。这种联系使游侠能够召唤出",
+				"龙在他们身边，并分享龙所挥舞的令人敬畏的力量。考虑一下你的游侠是如何获得与龙的联系的。德雷克守护者起源表提供了一些例子。",
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"Origin"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"你研究了龙的鳞片或爪子，或者它囤积的饰品，并通过信物挥之不去的龙族魔法建立了你的纽带。"
+						],
+						[
+							"2",
+							"一个收集和守护龙人传说的秘密游侠组织向你传授了他们的方法。"
+						],
+						[
+							"3",
+							"一条真龙给了你一个龙蛋让你照顾。当它孵化时，这只母龙与你结合。"
+						],
+						[
+							"4",
+							"你喝了几滴龙血，永远为你的自然魔法注入龙的力量。"
+						],
+						[
+							"5",
+							"当你大声朗读时，一块立在石头上的古老的德拉贡铭文赋予了你力量。"
+						],
+						[
+							"6",
+							"你做了一个生动的梦，梦见一个神秘的人，身边有七只黄色的金丝雀，他警告你即将到来的厄运。当你醒来时，你的德雷克就在那里，看着你。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Gift|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Drakewarden (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drake Companion|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Drakewarden (UA)|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Draconic Gift",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Drakewarden (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Drakewarden feature}",
+				"你与你的德雷克共享的纽带创造了与龙类更深的联系，赋予你理解力并赋予你的存在感。你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"如果你还不会，你要学会说话、阅读和写作（%0%）。",
+						"你学会了{@spell thaumaturgy}咒语，这对你来说是一个游侠法术。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Drake Companion",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Drakewarden (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Drakewarden feature}",
+				"你可以用魔法召唤绑定在你身上的公鸭。作为一个行动，你可以召唤公牛，它出现在你选择的、你能看到的30英尺范围内的一个无人空间。",
+				"这只龙幼崽对你和你的同伴友好，并服从你的命令。在{@creature Drake Companion|RangedRevisedNoSpells}属性块中查看它的游戏统计数据，其中在几个地方使用了你的熟练加值（PB）。当你召唤这只龙幼崽时，选择其龙之精华特性中列出的伤害类型。你可以确定龙幼崽的外观特征，比如它的颜色、鳞片质地，或者其龙之精华的任何可见效果；你的选择不会影响它的游戏统计数据。",
+				"在战斗中，德雷克分享你的主动权计数，但它在你的回合之后立即进入自己的回合。它可以自己移动和使用反应，但它在自己的回合中唯一的行动是（%0%）行动，除非你在自己的回合中采取一个额外的行动来命令它采取另一个行动。这个行动可以是它的状态块中的一个，也可以是其他的行动。如果你是{@condition incapacitated}，这只公鸭可以采取它所选择的任何行动，而不仅仅是{@action Dodge}。",
+				"一旦你召唤出公鸭，你就不能再这样做，直到你完成一个长时间的休息，除非你消耗一个一级或更高级别的法术槽来召唤它。",
+				"这只渡鸦会停留数小时，时间与你的熟练度加成相等，直到它的命中率降至0，直到你再次使用此功能召唤渡鸦，或者直到你死亡。德雷克消失时，它所穿戴或携带的东西都会被留下。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 2,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Drakewarden (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Bond of Fang and Scale",
+			"source": "RangedRevisedNoSpells",
+			"page": 4,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Drakewarden (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Drakewarden feature}",
+				"你与你的龙骑兵之间的联系会加强，保护你并激起龙骑兵的怒火。当你的龙骑兵被召唤时，你和龙骑兵获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你获得对为德雷克的德雷克精华所选择的伤害类型的抵抗。",
+						"请选择以下一项：公鸭获得40英尺的游泳速度，并能同时呼吸空气和水，或者公鸭长出翅膀，获得40英尺的飞行速度。",
+						"德雷克的咬合攻击会造成一个额外的{@damage 1d6}为其德雷克精华所选择的类型的伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Drake's Breath",
+			"source": "RangedRevisedNoSpells",
+			"page": 4,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Drakewarden (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Drakewarden feature}",
+				"作为一个动作，你可以呼出一个30英尺的锥形伤害性气息，或者使你的德雷克呼出它。选择酸、冷、火、闪电或毒伤害。锥体中的每个生物都必须对你的法术救赎DC做出灵巧的救赎，救赎失败会受到{@damage 6d6}的伤害，救赎成功会受到一半的伤害。",
+				"当你在这个等级达到15级时，这个伤害增加到（%0%）。",
+				"一旦你使用这个功能，你就不能再这样做了，直到你完成一个长时间的休息，除非你消耗一个3级以上的法术槽来再次使用它。"
+			]
+		},
+		{
+			"name": "Perfected Bond",
+			"source": "RangedRevisedNoSpells",
+			"page": 4,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Drakewarden (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Drakewarden feature}",
+				"你与你的德雷克的结合达到了力量的巅峰。当你的德雷克被召唤时，你和德雷克获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"鸭子长到大尺寸。",
+						"德雷克的咬合攻击会造成额外的{@damage 1d6}为其德雷克本质所选择的类型的伤害(总共有{@damage 2d6}的额外伤害)。",
+						"当你或德雷克在彼此30英尺范围内受到伤害时，你可以用你的反应使自己或德雷克对该次伤害产生抵抗。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Fey Wanderer",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"{@note Note that this subclass is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Spell-less Ranger subclass.}",
+				"作为一名费伊流浪者，你守卫着费伊世界和物质世界的边界，引导迷失者离开费伊世界，并防止危险的费伊人破坏物质世界。你在这两个领域的经验使你成为这些世界的居民之间的杰出谈判者，因为你既了解人形的心态，也了解费伊人法庭的诡计。",
+				"费城流浪者拥有来自费城盟友或费城力量之地的超自然祝福。从 \"仙界礼物 \"表中选择你的祝福，或随机确定它。",
+				{
+					"type": "table",
+					"caption": "Feywild Gifts",
+					"colLabels": [
+						"d6",
+						"Gift"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"虚幻的蝴蝶在你身边飞来飞去，而你要进行短期或长期的休息。"
+						],
+						[
+							"2",
+							"每当黎明时分，新鲜的季节性花朵就会从你的头发上萌发出来。"
+						],
+						[
+							"3",
+							"你隐约闻到肉桂、薰衣草、肉豆蔻或另一种令人舒适的草药或香料。"
+						],
+						[
+							"4",
+							"你的影子在没有人直视的情况下跳舞。"
+						],
+						[
+							"5",
+							"精致的角或鹿角从你的头上冒出来。"
+						],
+						[
+							"6",
+							"你的皮肤和头发在每个黎明都会改变颜色，以配合季节的变化。"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fey Wanderer Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cunning Will|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Strikes|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Cunning Will",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"你与精灵的经验使你的思想得到保护，并使你的舌头更加敏锐。你在对被{@condition charmed}或{@condition frightened}的救赎中具有优势。",
+				"此外，你获得以下技能的熟练度：{@skill Deception}、{@skill Performance}或{@skill Persuasion}，由你选择。"
+			]
+		},
+		{
+			"name": "Dreadful Strikes",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"你可以用从不知名的精灵的阴暗洞穴中提取的、令人心惊肉跳的魔法来增强你的攻击。你获得一个额外的行动，你可以用它来给你目前持有的武器注入魔法。直到该回合结束，这些武器都具有魔力，它们在击中后会造成额外的（%0%）精神伤害。一个生物每回合只能受到一次这种额外的伤害。",
+				"当你参与双武器战斗时，你可以将你的武器作为你用来进行攻击的同一奖励动作的一部分来灌输。"
+			]
+		},
+		{
+			"name": "Fey Wanderer Magic",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"当你在这个等级中达到一定的等级时，你会学习一个额外的法术，如费恩流浪者法术表所示。这个法术对你来说算作游侠法术，但不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Fey Wanderer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}"
+						],
+						[
+							"5th",
+							"{@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell dispel magic}"
+						],
+						[
+							"13th",
+							"{@spell banishment}"
+						],
+						[
+							"17th",
+							"{@spell mislead}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Blessings of the Courts",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Fey Wanderer feature}",
+				"你已经从阴阳师学院和夏日精灵学院学到了阴森恐怖的技术。在你每个回合中，当你用武器攻击击中一个生物时，你可以消耗一个法术槽来造成额外的精神伤害。额外的伤害是{@damage 3d6}精神伤害，并且该生物必须对你的法术救赎DC进行智慧救赎成功，否则就会被你{@condition frightened}，直到你下一回合结束。",
+				"此外，每当你进行魅力检查时，你都会获得相当于你的智慧修正值的检查奖励。"
+			]
+		},
+		{
+			"name": "Beguiling Twist",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Fey Wanderer feature}",
+				"你学会了如何操纵改变心智的魔法，将它从你的盟友那里引向其他人。每当一个你能看到的120英尺范围内的生物对被{@condition charmed}或{@condition frightened}的救赎成功时，你可以用你的反应迫使一个你能看到的120英尺范围内的不同生物对你的法术救赎DC进行智慧救赎成功，或者遭受你选择的下列效果之一。",
+				{
+					"type": "list",
+					"items": [
+						"该生物被你{@condition charmed}或{@condition frightened}(你选择)，持续1分钟。该生物可以在它的每个回合结束时重复蓄力，在蓄力成功时结束对它的影响。",
+						"该生物受到{@damage 3d10}的精神伤害。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Misty Presence",
+			"source": "RangedRevisedNoSpells",
+			"page": 5,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Fey Wanderer feature}",
+				"你可以用魔法将自己从一个生物的感知中移除：你获得一个额外的行动，你可以用它来强迫30英尺内你能看到的一个生物对你的法术救赎DC进行智慧救赎。如果救赎失败，目标将在24小时内无法看到或听到你。目标可以在你用攻击卷打中它、强迫它进行蓄力、或对它造成伤害的任何回合结束时重复蓄力动作。如果你再次使用这个奖励动作，效果会提前结束。如果救赎成功，目标将在7天内对该特性免疫。",
+				"一旦你使用了这个奖励动作，你就不能再使用它，直到你完成一个长时间的休息，或者直到你消耗一个四级以上的法术槽来再次使用它。"
+			]
+		},
+		{
+			"name": "Fey Wanderer",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"{@note Note that this subclass is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Spell-less Ranger subclass.}",
+				"围绕着你的是一种精灵的神秘感，这要归功于一位大帝的恩赐，你从一棵会说话的树上吃下的闪亮的果实，你在其中游泳的魔法泉水，或者其他一些吉祥的事件。无论你如何获得你的精灵魔法，你现在是一个精灵流浪者，一个同时代表凡人和精灵界的游侠。当你在多元宇宙中游荡时，你欢快的笑声照亮了被压迫者的心，你的武功让你的敌人感到恐惧，因为精灵的欢笑是伟大的，他们的愤怒是可怕的。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreadful Strikes|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fey Wanderer Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Otherworldly Glamour|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Dreadful Strikes",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"你可以用从阴暗的魔窟中提取的心灵伤害魔法来增强你的武器攻击力。当你用武器击中一个生物时，你可以对目标造成额外的{@damage 1d4}精神伤害，目标每回合只能承受一次这种额外的伤害。",
+				"当你在这个等级达到11级时，额外的伤害增加到（%0%）。"
+			]
+		},
+		{
+			"name": "Fey Wanderer Magic",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"当你在这个等级中达到一定的等级时，你会额外学习一个法术，如精灵流浪者法术表所示。每个法术对你来说都算作游侠法术，但不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Fey Wanderer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}"
+						],
+						[
+							"5th",
+							"{@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell dispel magic}"
+						],
+						[
+							"13th",
+							"{@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell mislead}"
+						]
+					]
+				},
+				"你还拥有一个来自精灵盟友或精灵力量之地的超自然祝福。从 \"仙界礼物 \"表中选择你的祝福，或随机确定它。",
+				{
+					"type": "table",
+					"caption": "Feywild Gifts",
+					"colLabels": [
+						"d6",
+						"Gift"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"虚幻的蝴蝶在你身边飞来飞去，而你要进行短期或长期的休息。"
+						],
+						[
+							"2",
+							"每当黎明时分，新鲜的季节性花朵就会从你的头发上萌发出来。"
+						],
+						[
+							"3",
+							"你隐约闻到肉桂、薰衣草、肉豆蔻或另一种令人舒适的草药或香料。"
+						],
+						[
+							"4",
+							"你的影子在没有人直视的情况下跳舞。"
+						],
+						[
+							"5",
+							"犄角或鹿角从你的头上长出。"
+						],
+						[
+							"6",
+							"你的皮肤和头发在每个黎明都会改变颜色，以配合季节的变化。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Otherworldly Glamour",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"你的特质给了你一种超自然的魅力。因此，每当你进行魅力检查时，你会获得与你的智慧修饰值相等的检查奖励（最低为+1）。",
+				"此外，你获得以下技能的熟练度：{@skill Deception}、{@skill Performance}或{@skill Persuasion}，由你选择。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Beguiling Twist",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Fey Wanderer feature}",
+				"妖魔的魔力守护着你的心灵。你在对{@condition charmed}或{@condition frightened}的救赎中具有优势。",
+				"此外，每当你或你能看到的120英尺内的生物对被{@condition charmed}或{@condition frightened}的救赎成功时，你可以用你的反应迫使你120英尺内的另一个生物对你的法术救赎DC进行智慧救赎。如果救赎失败，目标会在1分钟内被你（你的选择）伤害（2%）或（3%）。目标可以在它的每个回合结束时重复蓄力，如果蓄力成功则结束对自己的影响。"
+			]
+		},
+		{
+			"name": "Fey Reinforcements",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Fey Wanderer feature}",
+				"精灵界的皇家法庭已经赐予你精灵生物的帮助：你知道{@spell summon fey|RangedRevisedNoSpells}。这并不计入你所知道的游侠法术数量，你可以在没有材料组件的情况下施放它。你还可以在不消耗法术槽的情况下施放它一次，并在完成一次长休后恢复这个能力。",
+				"每当你开始施法时，你可以修改它，使它不需要集中注意力。如果你这样做，该法术的持续时间就会变成1分钟。"
+			]
+		},
+		{
+			"name": "Misty Wanderer",
+			"source": "RangedRevisedNoSpells",
+			"page": 58,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Fey Wanderer feature}",
+				"你可以在一眨眼的时间内溜进和溜出Feywild来移动：你可以在不消耗法术槽的情况下施展（%0%）。你可以这样做的次数等于你的智慧修改器（最少一次），当你完成一次长时间的休息时，你会恢复所有消耗的使用。",
+				"此外，每当你施展（%0%）时，你可以带着一个你能看到的、在你周围5英尺内的自愿生物。该生物会被传送到你的目标空间5英尺内你选择的一个无人空间。"
+			]
+		},
+		{
+			"name": "Swarmkeeper",
+			"source": "RangedRevisedNoSpells",
+			"page": 59,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"{@note Note that this subclass is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Spell-less Ranger subclass.}",
+				"感受到与周围环境的深刻联系，一些游侠通过他们与世界的神奇联系，与一群自然之灵结合。蜂群在战斗中成为一种强大的力量，同时也是游侠的好伙伴。有些蜂群守护者是被遗弃者或隐士，他们只与自己和随行的蜂群待在一起，而不去处理其他人的不愉快。其他的蜂群守护者则喜欢建立充满活力的社区，为所有他们认为是其蜂群一部分的人的共同利益而工作。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gathered Swarm|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swarmkeeper Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Gathered Swarm",
+			"source": "RangedRevisedNoSpells",
+			"page": 59,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Swarmkeeper feature}",
+				"一群无形的自然之灵已经与你结合在一起，可以在战斗中协助你。在你死亡之前，这群自然精灵会留在你的空间里，在你身上爬行，或者在你的空间里围绕你飞行和滑行。你决定它的外观，或者你通过在蜂群外观表上滚动来产生它的外观。",
+				{
+					"type": "table",
+					"caption": "Swarm Appearance",
+					"colLabels": [
+						"d4",
+						"Appearance"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"蜂拥而至的昆虫"
+						],
+						[
+							"2",
+							"微型树枝枯萎病"
+						],
+						[
+							"3",
+							"飞翔的鸟儿"
+						],
+						[
+							"4",
+							"俏皮的小精灵"
+						]
+					]
+				},
+				"在你的每个回合中，你可以在你用攻击击中一个生物后，立即使蜂群以下列方式之一来协助你。",
+				{
+					"type": "list",
+					"items": [
+						"攻击的目标受到蜂群的{@damage 1d6}穿刺伤害。",
+						"攻击的目标必须对你的法术救赎DC进行力量救赎成功，否则就会被蜂群在你选择的方向上水平移动最多15英尺。",
+						"你会被蜂群在你选择的方向上水平移动5英尺。"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "It's Your Swarm",
+					"entries": [
+						"蜂群守护者的蜂群和法术是角色与自然之灵的联系的反映。趁此机会，在游戏中描述蜂群和游侠的魔法。例如，当你的游侠施展气态时，他们可能会出现融化在蜂群中，而不是一团雾，或者{@spell arcane eye}的法术可以创造一个为你侦查的蜂群的延伸。这样的描述并不改变法术的效果，但它们是一个令人兴奋的机会，可以通过你的类能力来探索你的角色的叙述。关于定制法术的更多指导，见第三章的 \"个性化法术 \"部分。",
+						"另外，请记住，精灵群的外观是由你来定制的，不要觉得被限制在一个单一的外观里。也许这些精灵的外观会随着游侠的心情或季节的变化而变化。你自己决定吧。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Swarmkeeper Magic",
+			"source": "RangedRevisedNoSpells",
+			"page": 59,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Swarmkeeper feature}",
+				"如果你还不知道，你可以学习（%0%）的咒语。当你施展它时，手会变成你蜂拥而至的自然精灵的形状。",
+				"当你在这个等级中达到一定级别时，你还会额外学习一个1级或更高的法术，如群居者法术表所示。每个法术对你来说都算作游侠法术，但不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Swarmkeeper Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell faerie fire}"
+						],
+						[
+							"5th",
+							"{@spell web}"
+						],
+						[
+							"9th",
+							"{@spell gaseous form}"
+						],
+						[
+							"13th",
+							"{@spell arcane eye}"
+						],
+						[
+							"17th",
+							"{@spell insect plague}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 59,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Writhing Tide",
+			"source": "RangedRevisedNoSpells",
+			"page": 59,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Swarmkeeper feature}",
+				"你可以将你的蜂群的一部分凝结成一个集中的质量，将你提升起来。作为一个额外动作，你获得10英尺的飞行速度，并且可以盘旋。这个效果持续1分钟，或者直到你是（%0%）。",
+				"你可以使用这个功能的次数与你的熟练度加成相等，当你完成一个长时间的休息时，你会恢复所有消耗的使用。"
+			]
+		},
+		{
+			"name": "Mighty Swarm",
+			"source": "RangedRevisedNoSpells",
+			"page": 59,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Swarmkeeper feature}",
+				"你所聚集的蜂群在以下方面变得更加强大。",
+				{
+					"type": "list",
+					"items": [
+						"聚集的蜂群的伤害增加到{@dice 1d8}。",
+						"如果一个生物对被聚集的蜂群移动的救赎失败，你也可以使蜂群击倒该生物（%0%）。",
+						"当你被集结的蜂群移动时，它给你一半的掩护，直到你下一回合开始。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Swarming Dispersal",
+			"source": "RangedRevisedNoSpells",
+			"page": 59,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Swarmkeeper feature}",
+				"你可以融入你的蜂群，避开危险。当你受到伤害时，你可以用你的反应来使自己对该伤害产生抵抗。你消失在你的蜂群中，然后传送到一个你能看到的30英尺内无人的地方，在那里你和蜂群一起重新出现。",
+				"你可以使用这个功能的次数与你的熟练度加成相等，当你完成一个长时间的休息时，你会恢复所有消耗的使用。"
+			]
+		},
+		{
+			"name": "Swarmkeeper",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"entries": [
+				"{@note Note that this subclass is intended for use with the Ranger class presented in the Player's Handbook. It is presented here for convenience, and may be unsuitable for use as a Revised Spell-less Ranger subclass.}",
+				"一些游侠觉得自己与周围的世界有很深的联系，通过他们与自然的神奇联系，聚集了大量的精灵，它们以群居动物的形式出现--无论是嗡嗡叫的昆虫、飞翔的鸟儿、滑溜溜的鱿鱼，还是其他。蜂群在战斗中成为一股强大的力量，同时也是游侠的好帮手--尽管有可能是令人不安的--伙伴。有些蜂群守护者是被遗弃者或隐士，他们把自己和随行的蜂群关在一起，而不是去处理其他人的不愉快。其他的蜂群守护者则喜欢建立充满活力的社区，为所有他们认为属于他们的蜂群的人的共同利益工作。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swarmkeeper Magic|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gathered Swarm|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|3"
+				}
+			]
+		},
+		{
+			"name": "Gathered Swarm",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Swarmkeeper feature}",
+				"你神奇地吸引了一群看起来像你选择的小兽的精灵。这群精灵会留在你的空间里，在你身上或通过你的衣服爬行，或在你的空间里立即围绕你飞行和滑行。",
+				"作为一个额外的动作，你可以在1分钟内搅动蜂群。在持续时间内，当你攻击时，一些蜂群会附着在你的武器上或跟随你的攻击：在你的每个回合中，当你用武器攻击击中一个生物时，你可以对该生物造成额外的（%0%）武力伤害，并且蜂群会将该生物移向你或远离你（你选择），最多 5 英尺。在11级时，额外的伤害增加到（%1%）。",
+				"你可以使用这个功能的次数等于你的智慧修饰值（最少一次），当你完成一个长距离休息时，你会恢复所有消耗的使用。"
+			]
+		},
+		{
+			"name": "Swarmkeeper Magic",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Swarmkeeper feature}",
+				"如果你还不知道法师之手的咒语，你可以学习它。当你施展它时，法师之手会变成蜂拥而来的自然精灵的形态。当你在这个等级中达到一定级别时，你还会学习一个额外的法术，如群居者法术表所示。这些法术对你来说算作游侠法术，但不计入你所会的游侠法术数量。",
+				{
+					"type": "table",
+					"caption": "Swarmkeeper Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell faerie fire}"
+						],
+						[
+							"5th",
+							"{@spell web}"
+						],
+						[
+							"9th",
+							"{@spell gaseous form}"
+						],
+						[
+							"13th",
+							"{@spell giant insect}"
+						],
+						[
+							"17th",
+							"{@spell insect plague}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"从5级开始，每当你在你的回合中采取{@action Attack}行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Writhing Tide",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Swarmkeeper feature}",
+				"你可以将你的部分蜂群凝结成一个集中的群体，将你提升或扫荡。每当你激活你的集结群功能时，从以下的额外好处中选择一个。",
+				{
+					"type": "list",
+					"items": [
+						"你的行走速度增加10英尺，你可以采取{@action Disengage}行动作为额外行动。",
+						"你获得的攀爬速度与你的步行速度相等。你可以爬上困难的表面，包括倒挂在天花板上，而无需进行能力检查。",
+						"你获得10英尺的飞行速度，并能悬停。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Gathered Swarm Improvement",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Swarmkeeper feature}",
+				"你的蜂群的额外伤害增加到{@dice 2d6}。"
+			]
+		},
+		{
+			"name": "Scuttling Eyes",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Swarmkeeper feature}",
+				"作为一个行动，你可以用魔法将你的族群中的一个灵魂变成你所选择的小兽的形状。变形持续1小时，届时该精灵将消失。在持续时间内，灵体的速度为40英尺，它可以用来行走、攀爬、飞行或游泳。灵魂拥有你的感官，并以心灵感应的方式向你传递它所看到和听到的信息。在你的回合中，你可以通过灵体说话，以心灵感应命令它移动，并且它可以（%0%）使用你的灵巧（（%1%））检查奖励。灵魂有AC18。如果它受到伤害，你必须成功地进行智慧救赎（DC等于10，或所受伤害的一半，以较高者为准），否则精神就会消失。",
+				"作为一个行动，你可以提前解除这个灵魂。如果你这样做了，你可以用魔法传送到离灵魂消失的地方5英尺内的一个无人的空间。",
+				"一旦你使用了这个功能，你就不能再这样做，直到你完成一个长时间的休息。你也可以通过消耗一个3级以上的法术槽再次使用它。"
+			]
+		},
+		{
+			"name": "Storm of Minions",
+			"source": "RangedRevisedNoSpells",
+			"page": 3,
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"subclassShortName": "Swarmkeeper (UA)",
+			"subclassSource": "RangedRevisedNoSpells",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Swarmkeeper feature}",
+				"你的蜂群可以驱逐一个愤怒的灵魂风暴，从他人身上吸取生命。作为一个行动，你创造一个魔法球体，以你能看到的120英尺范围内的一个点为中心，充满被激怒的蜂群。该球体的半径为10英尺，持续1分钟。球体对你以外的生物来说是困难地形。你以外的生物如果在球体范围内开始它的回合，必须对你的法术救赎DC做一个宪法救赎。如果救赎失败，该生物会受到{@damage 2d8}的坏死伤害，并在下一回合开始前受到{@condition blinded}的伤害。救赎成功时，它将受到一半的伤害，并且不受（%2%）。在你的回合开始时，如果任何数量的小型或大型生物从虫群中受到坏死伤害，你会恢复（%3%）的命中率。在随后的回合中，你可以使用一个额外动作将球体移动到30英尺以内。",
+				"当你激活此功能时，你可以选择你能看到的任何数量的生物不受其影响。",
+				"一旦你使用了这个功能，你就不能再这样做，直到你完成一个长时间的休息。你也可以通过消耗一个四级以上的法术槽再次使用它。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Beast Conclave",
+			"subclassFeatures": [
+				"Beast Conclave (UA)|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Beast Conclave|RangedRevisedNoSpells|3",
+				"Coordinated Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Beast Conclave|RangedRevisedNoSpells|5",
+				"Beast's Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Beast Conclave|RangedRevisedNoSpells|7",
+				"Storm of Claw and Fangs|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Beast Conclave|RangedRevisedNoSpells|11",
+				"Superior Beast's Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Beast Conclave|RangedRevisedNoSpells|15"
+			],
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Beast Conclave",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Hunter Conclave",
+			"subclassFeatures": [
+				"Hunter Conclave (UA)|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Hunter Conclave|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Hunter Conclave|RangedRevisedNoSpells|5",
+				"Defensive Tactics|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Hunter Conclave|RangedRevisedNoSpells|7",
+				"Multiattack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Hunter Conclave|RangedRevisedNoSpells|11",
+				"Superior Hunter's Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Hunter Conclave|RangedRevisedNoSpells|15"
+			],
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Hunter Conclave",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Deep Stalker Conclave",
+			"subclassFeatures": [
+				"Deep Stalker Conclave (UA)|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Deep Stalker Conclave|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Deep Stalker Conclave|RangedRevisedNoSpells|5",
+				"Iron Mind|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Deep Stalker Conclave|RangedRevisedNoSpells|7",
+				"Stalker's Flurry|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Deep Stalker Conclave|RangedRevisedNoSpells|11",
+				"Stalker's Dodge|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Deep Stalker Conclave|RangedRevisedNoSpells|15"
+			],
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Deep Stalker Conclave",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Horizon Walker (UA)",
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Horizon Walker (UA)",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"isReprinted": true,
+			"subclassFeatures": [
+				"Horizon Walker|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|5",
+				"Ethereal Step|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|7",
+				"Distant Strike|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|11",
+				"Spectral Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker (UA)|RangedRevisedNoSpells|15"
+			]
+		},
+		{
+			"name": "Primeval Guardian (UA)",
+			"subclassFeatures": [
+				"Primeval Guardian|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|5",
+				"Ancient Fortitude|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|7",
+				"Rooted Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|11",
+				"Guardian Aura|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Primeval Guardian (UA)|RangedRevisedNoSpells|15"
+			],
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Primeval Guardian (UA)",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Monster Slayer (UA)",
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Monster Slayer (UA)",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"isReprinted": true,
+			"subclassFeatures": [
+				"Monster Slayer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer (UA)|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer (UA)|RangedRevisedNoSpells|5",
+				"Supernatural Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer (UA)|RangedRevisedNoSpells|7",
+				"Relentless Slayer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer (UA)|RangedRevisedNoSpells|11",
+				"Slayer's Counter|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer (UA)|RangedRevisedNoSpells|15"
+			]
+		},
+		{
+			"name": "Gloom Stalker",
+			"subclassFeatures": [
+				"Gloom Stalker|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|5",
+				"Iron Mind|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|7",
+				"Stalker's Flurry|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|11",
+				"Shadowy Dodge|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Gloom Stalker|RangedRevisedNoSpells|15"
+			],
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Gloom Stalker",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Horizon Walker",
+			"subclassFeatures": [
+				"Horizon Walker|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|5",
+				"Ethereal Step|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|7",
+				"Distant Strike|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|11",
+				"Spectral Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Horizon Walker|RangedRevisedNoSpells|15"
+			],
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Horizon Walker",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Monster Slayer",
+			"subclassFeatures": [
+				"Monster Slayer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer|RangedRevisedNoSpells|5",
+				"Supernatural Defense|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer|RangedRevisedNoSpells|7",
+				"Magic-User's Nemesis|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer|RangedRevisedNoSpells|11",
+				"Slayer's Counter|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Monster Slayer|RangedRevisedNoSpells|15"
+			],
+			"source": "RangedRevisedNoSpells",
+			"shortName": "Monster Slayer",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Drakewarden (UA)",
+			"subclassFeatures": [
+				"Drakewarden|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Drakewarden (UA)|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Drakewarden (UA)|RangedRevisedNoSpells|5",
+				"Bond of Fang and Scale|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Drakewarden (UA)|RangedRevisedNoSpells|7",
+				"Drake's Breath|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Drakewarden (UA)|RangedRevisedNoSpells|11",
+				"Perfected Bond|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Drakewarden (UA)|RangedRevisedNoSpells|15"
+			],
+			"shortName": "Drakewarden (UA)",
+			"source": "RangedRevisedNoSpells",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells"
+		},
+		{
+			"name": "Fey Wanderer",
+			"shortName": "Fey Wanderer",
+			"source": "RangedRevisedNoSpells",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person"
+						],
+						"5": [
+							"misty step"
+						],
+						"9": [
+							"dispel magic"
+						],
+						"13": [
+							"dimension door"
+						],
+						"17": [
+							"mislead"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Fey Wanderer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|5",
+				"Beguiling Twist|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|7",
+				"Fey Reinforcements|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|11",
+				"Misty Wanderer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer|RangedRevisedNoSpells|15"
+			]
+		},
+		{
+			"name": "Fey Wanderer (UA)",
+			"shortName": "Fey Wanderer (UA)",
+			"source": "RangedRevisedNoSpells",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"isReprinted": true,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person"
+						],
+						"5": [
+							"misty step"
+						],
+						"9": [
+							"dispel magic"
+						],
+						"13": [
+							"banishment"
+						],
+						"17": [
+							"mislead"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Fey Wanderer|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|5",
+				"Blessings of the Courts|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|7",
+				"Beguiling Twist|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|11",
+				"Misty Presence|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Fey Wanderer (UA)|RangedRevisedNoSpells|15"
+			]
+		},
+		{
+			"name": "Swarmkeeper",
+			"shortName": "Swarmkeeper",
+			"source": "RangedRevisedNoSpells",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"mage hand",
+							"faerie fire"
+						],
+						"5": [
+							"web"
+						],
+						"9": [
+							"gaseous form"
+						],
+						"13": [
+							"arcane eye"
+						],
+						"17": [
+							"insect plague"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Swarmkeeper|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper|RangedRevisedNoSpells|5",
+				"Writhing Tide|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper|RangedRevisedNoSpells|7",
+				"Mighty Swarm|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper|RangedRevisedNoSpells|11",
+				"Swarming Dispersal|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper|RangedRevisedNoSpells|15"
+			]
+		},
+		{
+			"name": "Swarmkeeper (UA)",
+			"shortName": "Swarmkeeper (UA)",
+			"source": "RangedRevisedNoSpells",
+			"className": "Ranger (Revised Spell-less)",
+			"classSource": "RangedRevisedNoSpells",
+			"isReprinted": true,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"faerie fire"
+						],
+						"5": [
+							"web"
+						],
+						"9": [
+							"gaseous form"
+						],
+						"13": [
+							"giant insect"
+						],
+						"17": [
+							"insect plague"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Swarmkeeper|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|3",
+				"Extra Attack|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|5",
+				"Writhing Tide|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|7",
+				"Scuttling Eyes|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|11",
+				"Gathered Swarm Improvement|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|11",
+				"Storm of Minions|Ranger (Revised Spell-less)|RangedRevisedNoSpells|Swarmkeeper (UA)|RangedRevisedNoSpells|15"
+			]
+		}
+	]
+}

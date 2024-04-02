@@ -1,0 +1,5876 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LoRDToB",
+				"abbreviation": "DToB",
+				"full": "Legends of Runeterra: Dark Tides of Bilgewater",
+				"authors": [
+					"DnD Beyond"
+				],
+				"convertedBy": [
+					"TheGiddyLimit"
+				],
+				"color": "64878a",
+				"version": "1.0.0",
+				"url": "https://www.dndbeyond.com/sources/lrdtob",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"FU:Min": "Firearm Upgrade; Minor",
+			"FU:Maj": "Firearm Upgrade; Major"
+		},
+		"dateAdded": 1591895014,
+		"dateLastModified": 1705266948,
+		"_dateLastModifiedHash": "8de90c7c1a"
+	},
+	"book": [
+		{
+			"name": "Legends of Runeterra: Dark Tides of Bilgewater",
+			"id": "LoRDToB",
+			"source": "LoRDToB",
+			"group": "homebrew",
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"Chapters",
+						"Using this Source"
+					]
+				},
+				{
+					"name": "Bilgewater Setting Guide ",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"History of Bilgewater",
+						"Bilgewater Today",
+						"Economy and Trade",
+						"Religion in Bilgewater ",
+						"City Districts",
+						"Random Encounters in Bilgewater",
+						"Beyond Bilgewater"
+					]
+				},
+				{
+					"name": "Heroes and Scoundrels of Bilgewater",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Races of Runeterra",
+						"Character Options",
+						"Barbarian: Path of the Depths",
+						"Martial Archetype: Renegade",
+						"Roguish Archetype: Wild Card"
+					]
+				},
+				{
+					"name": "Herald of the Harrowing",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Background",
+						"Overview",
+						"Part 1: Grim Shadows",
+						"Part 2: Chasing Ghosts",
+						{
+							"depth": 1,
+							"header": "1. The Warren"
+						},
+						{
+							"depth": 1,
+							"header": "2. Carrack Row"
+						},
+						{
+							"depth": 1,
+							"header": "3. Scouts' Waterfront"
+						},
+						{
+							"depth": 1,
+							"header": "4. Warehouses"
+						},
+						{
+							"depth": 1,
+							"header": "5. The Peregrine"
+						},
+						{
+							"depth": 1,
+							"header": "6. The Wreck of the Telemachus"
+						},
+						{
+							"depth": 1,
+							"header": "7. The Phantom's Ire"
+						},
+						"Part 3: Turning Tides"
+					]
+				},
+				{
+					"name": "Beasts of Bilgewater",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"How to Use Monster Stat Blocks",
+						"NPCs"
+					]
+				},
+				{
+					"name": "Booty of Bilgewater",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": [
+						"Magic Items"
+					]
+				}
+			],
+			"published": "2020-06-10",
+			"cover": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/cover_DToB.png"
+			}
+		}
+	],
+	"bookData": [
+		{
+			"id": "LoRDToB",
+			"source": "LoRDToB",
+			"data": [
+				{
+					"type": "section",
+					"name": "Introduction",
+					"id": "000",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/000-bilgewater-splash-poster.jpg"
+							}
+						},
+						"欢迎来到比尔吉沃特，鲁奈特拉世界中最了不起的港口！D&D Beyond很高兴将这个著名的城市带入了现实。D&D Beyond很高兴能将这个著名的城市带入现实，给你提供工具来创建你自己的《龙与地下城的传说》的活动。",
+						"这是一个由冠军和怪物组成的世界，国家在征服和魔法的战争中崛起和衰落。Runeterra的许多土地上充满了各种各样的冒险，从街头巷尾的争斗到超自然力量之间的史诗般的战斗，Bilgewater也不例外。比尔吉沃特被走私者、恶棍和无赖挤得满满的，它不仅仅是一个普通的海盗天堂，尽管它也有超过其公平份额的海盗!",
+						"尽管这个版本的比尔吉沃特描述得非常详细，并尽可能频繁地遵守鲁内特拉法典，但这个资料中的冒险和故事钩子并不是法典。这让你不必再去创造坚持正统细节的故事了。你可以随心所欲地编造新的故事、危险和人物。只要你和你的朋友们玩得开心，你的比尔吉沃特版本才是最重要的。",
+						"许多鲁内特拉最强大的冠军都把比尔吉沃特当作自己的家。持枪的海盗传奇人物莎拉-财富小姐和甘普兰克曾为争夺比尔吉沃特的控制权而闻名，无数的恶棍与这些交战的势力结盟，试图在硝烟散尽后登上顶峰。像鹦鹉螺号这样的海洋深处的主人，以及像海怪女祭司伊拉奥伊和长生河王塔姆-肯奇这样的神秘力量，都经常到比尔吉沃特的肮脏海岸来。",
+						"然而，这些冠军远不是唯一在比尔吉沃特兴风作浪的人。你现在有机会创建你自己的角色，探索鲁内特拉最了不起的港口，乘坐大帆船进行盛大的航海冒险，探索无情的海洋深处，或者深入研究潜伏在比尔吉沃特阴影中的黑暗魔法的未知奥秘。如果你是玩家，请从阅读{@book chapter 2: Heroes and Scoundrels of Bilgewater|LoRDToB|2}的介绍开始，开始制作你的角色。",
+						"一旦你有了你的角色，你的地下城管理员（DM）就可以使用（%0%）来开始你的英雄们在Runeterra的冒险。这个冒险是一个预制的故事，以比尔吉沃特为背景，开始你的团体的故事。这个冒险假定你的角色是在海浪中寻求利益和刺激的雇佣兵冒险家。",
+						"在你完成这次冒险后，你的管理员可以使用本资料的其余部分为你的小组创造全新的冒险。一旦你的第一次冒险结束，就开始考虑你的角色的背景故事和特征，并将其展示给你的DM。这些会帮助你的管理员创造一个故事，将你和你朋友的角色定位为故事的英雄，而不仅仅是高级NPC的光荣跑腿者。",
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/001-bilgewater_crest_icon.png"
+							}
+						},
+						{
+							"type": "section",
+							"name": "Chapters",
+							"id": "001",
+							"entries": [
+								"本资料是你进入比尔吉沃特的门户，让你和你的朋友们一起讲述你自己的高级冒险故事。它分为五个章节。",
+								{
+									"type": "entries",
+									"name": "{@book Chapter 1: Bilgewater Setting Guide|LoRDToB|1}",
+									"id": "002",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/002-card-ye-been-warned.png"
+											}
+										},
+										"本指南分解了比尔吉沃特的历史、派别和政治，为玩家和地下城主提供了他们扮演这个卑鄙港口的角色和NPC所需的所有背景故事。除此之外，这个城市的所有地区都有足够详细的描述，以便在这些地区创建自己的NPC和地点。最后，这里有大量的情节钩子和小型遭遇战，供管理员掠夺并适应他们自己的故事。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@book Chapter 2: Heroes and Scoundrels of Bilgewater|LoRDToB|2}",
+									"id": "003",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/003-double-up.png"
+											}
+										},
+										"本章介绍了如何快速创建一个可以用来在比尔吉沃特冒险的角色，从3级开始（适合\"{@book Herald of the Harrowing|LoRDToB|3} \"冒险的级别）。这里还介绍了三个新的子类：野蛮人的 \"深渊之路\"、战士的 \"叛逆者 \"原型和无赖的 \"狂野卡片 \"原型。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@book Chapter 3: Herald of the Harrowing|LoRDToB|3} (For the Dungeon Master's Eyes Only!)",
+									"id": "004",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/004-the-harrowing-2.png"
+											}
+										},
+										"当影子岛的一个强大的幽灵试图将整个比尔吉沃特湾笼罩在致命的黑雾中时，保卫比尔吉沃特免受蹂躏。这场冒险是地下城主在比尔吉沃特进行单人游戏所需要的一切。它也是以比尔吉沃特为背景的长期活动的完美起点。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@book Chapter 4: Beasts of Bilgewater|LoRDToB|4} (For the Dungeon Master's Eyes Only!)",
+									"id": "005",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/005-mists-call.png"
+											}
+										},
+										"本章包括\"{@book Herald of the Harrowing|LoRDToB|3} \"中使用的所有怪物的游戏统计数据，以及一些额外的内容。地牢管理员可以将这些怪物和NPC与免费的D&D(%%)中的怪物结合起来使用，使他们的玩家陷入严重的航海危险之中"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "{@book Chapter 5: Booty of Bilgewater|LoRDToB|5}",
+									"id": "006",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/006-card-lure-of-the-depths.png"
+											}
+										},
+										"没有魔法宝物的冒险是不完整的。地牢管理员可以按照\"{@book Herald of the Harrowing|LoRDToB|3} \"中的描述，以及在他们完成自己的自制冒险时，将本章中描述的宝物作为奖励发给他们的玩家。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Using this Source",
+							"id": "007",
+							"entries": [
+								"要使用本书，你需要一份免费的D&D{@book Basic Rules|PHB}的副本。拥有D&D第五版核心规则书：{@book Player's Handbook|PHB}、{@book Dungeon Master's Guide|DMG}和{@book Monster Manual|MM}，你的D&D游戏将得到加强，但它们并不是必须的。",
+								{
+									"type": "insetReadaloud",
+									"id": "008",
+									"entries": [
+										"出现在这样的方框中的文字是为了让玩家在他们的角色第一次到达某个地点或在某个特定情况下大声朗读或转述，如文中所述。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Abbreviations",
+									"id": "009",
+									"entries": [
+										"本书中出现了以下缩略语。",
+										{
+											"type": "inset",
+											"id": "00a",
+											"entries": [
+												"{@b hp} = 命中率",
+												"{@b AC} = 盔甲等级",
+												"{@b DC} = 难度等级",
+												"{@b XP} = 经验值",
+												"{@b NPC} = 非玩家角色",
+												"{@b DM} = 地下城管理员",
+												"{@b pp} = 铂金片(s)",
+												"{@b gp} = 金块(s)",
+												"{@b ep}=电子片(s)",
+												"{@b sp}=银块(s)",
+												"{@b cp} = 铜片(s)"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 1: Bilgewater Setting Guide ",
+					"id": "00b",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/007-butchers-bridge.png"
+							}
+						},
+						"比尔吉沃特是一个由海怪猎人、走私者和海盗建立的独立港口城市。它是一个避风港，在这里，那些逃离债务、正义或迫害的人可以重新开始，而没有被困扰的过去所带来的负担。这座充满机遇的城市也充满了危险，它被险恶的地貌和充满怪物的海洋所包围。尽管危险重重，但比尔吉沃特是一个天堂，这里什么都可以卖，幸运之神眷顾勇敢的人。",
+						{
+							"type": "section",
+							"name": "History of Bilgewater",
+							"id": "00c",
+							"entries": [
+								"比尔吉沃特城开始时是一片荒凉的土地，是布赫鲁人勉强赠送给一群难民的。这些难民试图逃离大陆各派的压迫性统治，希望重新开始。通过运气和毅力，这些难民为自己创造了生活，他们新定居点的消息开始传播。现在形成比尔吉沃特的海湾非常隐蔽，到处都是停靠船只的地方，更好的是被废弃的废墟所覆盖，可以提供庇护。这些特点使它成为船只的理想藏身之处，而定居者对大陆法律的不满也使它成为吸引海盗的港口。随着各派系的兴衰，鲁奈特拉的海盗活动也在不断减少，小海湾仍然是那些躲避海军铁拳的安全基地。",
+								"不可避免的是，随着越来越多的船员开始使用这个海湾，这个定居点开始扩大。愿意交易被盗财富的商人和准备迎合这些船员的企业家们在海湾的废墟中开起了商店。顽强的定居者开始建造更多的永久性建筑，使用找到的材料在废墟的地基上建造。",
+								"随着比尔吉沃特的人口开始增长，布赫鲁土著人再一次被迫采取行动。他们与比尔吉沃特的人们接触，并与定居点中最有影响力的人举行了会议。布赫鲁人同意允许比尔吉沃特的扩张，但条件是该城市决不能扩张到海湾的范围之外。人们同意了这些条件，随着这场胜利的到来，比尔吉沃特开始繁荣起来。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/008-bilgewater_emblem.png"
+									}
+								},
+								{
+									"type": "entries",
+									"name": "Fall of the King",
+									"id": "00d",
+									"entries": [
+										"在随后的几年里，一位名叫{@creature Gangplank|LoRDToB}的海盗船长成为比尔吉沃特的非官方统治者，并自封为海狸国王。他在这个位置上保持了多年的影响力，直到一个名叫{@creature Miss Fortune|LoRDToB|Sarah Fortune}的赏金猎人企图暗杀他的生命。虽然冈普兰克设法在这次暗杀中幸存下来，但他的船和他最忠实的追随者都被摧毁，迫使他从公众视野中消失。",
+										"在甘普兰克所谓的死亡后的权力真空中，一个名为海盗帮的统治机构成立了。该委员会由比尔吉沃特四个最有影响力的船长组成（包括莎拉-财富），他们将比尔吉沃特划分为多个地区，以实施他们的统治。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fickle Fortune",
+									"id": "00e",
+									"entries": [
+										"经过几年的和平时期，海盗团的三名成员决定联合起来，将萨拉从他们的队伍中清除出去。在这次背叛之后，财富小姐发动了一场政变，她成功地谋杀或驱逐了那些叛徒队长。在这次血腥事件之后，莎拉成为控制比尔吉沃特的唯一力量。",
+										"最近，Gangplank已经开始在这个城市崭露头角。他在比尔吉沃特获得了布赫鲁人的支持，并壮大了他的支持者，旨在再次从财富小姐手中夺取他的王位。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/009-card-the-dreadway.png"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Bilgewater Today",
+							"id": "00f",
+							"entries": [
+								"比尔吉沃特是一个自由的城市，充满了机遇。这些机会催生了许多对控制比尔吉沃特所提供的东西感兴趣的人。",
+								{
+									"type": "entries",
+									"name": "Factions",
+									"id": "010",
+									"entries": [
+										"虽然比尔吉沃特没有建立正式的政府，但它是一个充斥着各种派别的城市，每个派别都在寻找自己的目标和议程。以下是一些影响比尔吉沃特生活的活跃力量。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/010-LoR-decoration-02.png"
+											}
+										},
+										{
+											"type": "entries",
+											"name": "Soldiers of Fortune",
+											"id": "011",
+											"entries": [
+												"在一场血腥的政变之后，莎拉-财富（俗称\"{@creature Miss Fortune|LoRDToB}\"）成为比尔吉沃特事实上的统治者。虽然她没有正式的头衔，但她的盟友和船员在城市里贯彻她的意志，根据需要施加压力以实现她的目标。她目前专注于寻找并杀死之前统治比尔吉沃特的冈普兰克。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/011-LoR-decoration-03.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Jagged Hooks",
+											"id": "012",
+											"entries": [
+												"{@creature Gangplank|LoRDToB}是第一个也是唯一一个自封为比尔吉沃特的海狸王的队长。在他权力的巅峰时期，他被财富小姐废黜，现在他从比尔吉沃特的阴影中收集盟友。他的盟友越来越多，试图杀死财富小姐，恢复江普兰克作为海狸王的地位。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/012-LoR-decoration-11.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Buhru",
+											"id": "013",
+											"entries": [
+												"在大陆人建立比尔吉沃特之前，布赫鲁人已经在蛇岛居住了数千年。布赫鲁人仍然主宰着这些岛屿，来到他们海岸的外国人只被允许在比尔吉沃特定居。布赫鲁人有自己的语言、首都和宗教，并以对伟大的克拉肯-纳加布罗斯的崇拜为中心。布赫鲁人的文化影响了比尔吉沃特的大部分地区，在这个城市里生活着大量的布赫鲁人。虽然布赫鲁人容忍这个定居点，但他们中的大多数人认为这是对他们岛屿的玷污。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Enemies and Allies",
+									"id": "014",
+									"entries": [
+										"与蛇岛隔海相望，鲁奈特拉的许多派别为争夺控制权而相互斗争。其中一些派别选择与比尔吉沃特结盟，而另一些则试图完全吞噬这座城市。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/013-shadow_isles_emblem.png"
+											}
+										},
+										{
+											"type": "entries",
+											"name": "Shadow Isles",
+											"id": "015",
+											"entries": [
+												"蛇岛的东南方有一个被称为阴影岛的恐怖地区。自从它在一场魔法悲剧中被破坏后，阴影群岛就散发出危险的黑雾，经常威胁着比尔吉沃特的人们。这些黑雾变浓并穿越海洋，使蛇岛充斥着渴望受害者的不死之魂。这一事件被称为 \"劫难\"，而布赫鲁人的力量是唯一能阻止其威力的东西。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/014-Noxus_Crest.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Noxus",
+											"id": "016",
+											"entries": [
+												"位于蛇岛的西北部，是不断发展的诺克萨斯帝国。诺克萨斯决心以侵略性的扩张行动征服鲁内特拉，并将目光投向比尔吉沃特，将其作为海军作战的潜在资源。诺克萨斯没有对比尔吉沃特采取任何敌对行动，但他们在这个港口城市安插了重要的士兵，希望能讨好那些争相控制它的势力。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Economy and Trade",
+							"id": "017",
+							"entries": [
+								"比尔吉沃特是一个充满财富和机会的城市。居民们可以在海上搜刮财富，猎杀那些逃离正义的人，或者迎合那些人的需求。",
+								{
+									"type": "entries",
+									"name": "Bounty Hunting",
+									"id": "018",
+									"entries": [
+										"比尔吉沃特是一个无法无天的城市，远离Runterra的其他派别。因此，它吸引了大量旨在逃避司法的罪犯。如此多的通缉犯的存在，使得赏金猎人的数量激增。比尔吉沃特有几个赏金委员会，每天都有新的赏金发布，由猎人支付给目标的死活。有这么多的海盗、刺客和罪犯在比尔吉沃特及其周围活动，赏金猎人是一个非常有利可图的职业。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Monster Hunters",
+									"id": "019",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/015-LoR-decoration-04.png"
+											}
+										},
+										"比尔吉沃特因其怪物狩猎贸易而闻名，其经济围绕这一新兴产业而发展。蛇岛周围的海域充斥着各种大小的海怪。这些怪物使城市周围的旅行相当危险，但怪物猎人团队已经将这种危险转化为利润。这些人有时被称为 \"猎蛇人\"，他们开始执行任务，猎杀这些怪物，然后把它们的尸体带回比尔吉沃特，卖给出价最高的人。比尔吉沃特的整个地区都建有将这些尸体加工成食物、宝物和其他可出售资源的设施。通过猎杀这些怪物，或者在处理这些怪物的码头工作，可以获得舒适的生活。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Salvage Divers",
+									"id": "01a",
+									"entries": [
+										"如果说成群的海怪还不能阻止前往比尔吉沃特的航行，那么残酷的地形肯定能阻止它。蛇岛周围的海域遍布着岩石和珊瑚礁，这些岩石和珊瑚礁可以在船员意识到他们撞上什么之前就摧毁一艘船。许多载有珍贵货物的船只都沉没在比尔吉沃特湾周围的海底，而打捞这些丢失的货物已经成为一种职业。寻宝者和打捞者每天都会在海岸边的船舶墓地里挖到很多东西。穿越海洋是非常危险的，所以熟练的打捞潜水员可以将他们的服务卖到非常高的价格。那些有能力从事这一职业的人，通过为商人、海盗和带领他们的私人探险队找回丢失的宝物而发财。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Piracy",
+									"id": "01b",
+									"entries": [
+										"海盗行为在历史上一直与比尔吉沃特的遗产息息相关，而且今天它仍然是该城市经济的一个活跃部分。由于比尔吉沃特在法律之外运作，它是唯一一个海盗船员可以安全地出售赃物获利的地方。城市中的许多企业专门为这些船员提供服务，他们在海上劳累了一段时间后，带着满满一口袋的钱回来寻求狂欢。由于蛇岛周围的自然灾害，海盗船员可以回到海湾而不用担心受到迫害。最优秀的航海家们对通往蛇岛的安全路线的了解非常谨慎，这迫使大型海军船只放弃了在蛇岛海岸登陆的希望。在比尔吉沃特，对海盗的唯一真正威胁来自于其他更强大的船员和偶尔的赏金猎人。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/016-Bilgewater_The_Serpent_Isles.png"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Religion in Bilgewater ",
+							"id": "01c",
+							"entries": [
+								"虽然比尔吉沃特是大量文化和信仰的家园，但有两种值得注意的信仰是蛇岛独有的。",
+								{
+									"type": "entries",
+									"name": "Buhru Religion",
+									"id": "01d",
+									"entries": [
+										"布赫鲁教是原产于蛇岛的布赫鲁人的主要宗教。该宗教围绕着对纳卡布罗斯（Nagakabouros）的崇拜而展开，纳卡布罗斯是一个经常被描绘成巨大的海怪的神。布赫鲁教的信徒认为，每个人的灵魂都是为宇宙服务的，而实现个人命运的最佳方式是追求自己固有的欲望。",
+										{
+											"type": "entries",
+											"name": "Nagakabouros",
+											"id": "01e",
+											"entries": [
+												"纳卡布罗斯是主持生命、海洋、风暴和运动的神。虽然她的真实形态不详，但在宗教图腾中，海怪的形象最常代表她。该神被称为 \"母蛇\"，而充斥在附近海洋中的大量海怪则被称为纳卡布罗斯的孩子。",
+												"Nagakabouros是一个重行动轻言语的神，对软弱或失败没有耐心。布赫鲁人的宗教仪式之一被称为 \"纳加布罗斯的考验\"，在这个仪式中，一个人要接受来自神的幽灵触手的恶毒的精神攻击。失败的人就会灭亡，但那些活下来的人则证明他们拥有蛇母的青睐。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Buhru in Bilgewater",
+											"id": "01f",
+											"entries": [
+												"在比尔吉沃特建有几座纳卡布罗斯的寺庙，尽管牧师们严格限制哪些居民可以进入这些寺庙。即使有这些限制，布胡教在这个城市的所有居民中也越来越受欢迎。这种受欢迎程度与布胡教目前的精神领袖有很大关系，她是一位名叫伊拉奥伊的女祭司，拥有真理承载者的荣誉称号。伊拉奥伊一直是保护比尔吉沃特的坚定盟友，使其免受 \"蹂躏 \"的有害影响，并受到市民们的好评。当冈普兰克统治比尔吉沃特的时候，伊拉奥伊和布赫鲁是亲密的盟友。随着冈普兰克的倒台，目前还不清楚布赫鲁会在领导政治中扮演什么角色。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Tithe",
+									"id": "020",
+									"entries": [
+										"十一税 \"是一种迷信，而不是一个完整的信仰体系，但在比尔吉沃特，大多数水手都虔诚地遵守它。据说，当一艘船开始航行时，船长必须向大海（也有人说是向Nagakabouros）献上祭品，否则就会被大海夺走船只。水手们通常在身上放一枚硬币，以备需要缴纳什一税时使用。",
+										"警示性的故事警告说，一个名叫鹦鹉螺的打捞者在他的船长拒绝支付什一税时被拖到海底，变成了一个怪物。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/017-card-hired-gun.png"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "City Districts",
+							"id": "021",
+							"entries": [
+								"比尔吉沃特是一个无序的城市，在形成比尔吉沃特湾的悬崖上垂直和水平地扩张。这个城市的扩张被划分为几个不同的区域，这些区域容纳了不同类型的居民，并具有不同的功能。",
+								{
+									"type": "entries",
+									"name": "Rat Town ",
+									"id": "022",
+									"entries": [
+										"鼠城是比尔吉沃特最大的贫民窟，充斥着恶棍和污秽。在这里，小偷们和成群的码头老鼠一起在弯曲的巷子里游荡，疲惫不堪的屠宰队队员们可以在下一次狩猎前喝上一杯廉价的啤酒。",
+										"老鼠镇占据了比尔吉沃特西部的大部分地区，在屠夫桥结束。在任何一天，从风化的老船长，到德玛西亚的逃亡者，甚至是一些兴奋的约德尔人，都可以在这个地区的弯曲街道上找到。由于其居民的不同性质，老鼠城拥有无数的建筑风格；挤在翻转的弗莱杰罗迪木船中的公寓与装饰着布赫鲁雕刻的高耸建筑相映成趣，你甚至可以看到一个用早已死去的海怪的骨头建造的酒馆。",
+										"虽然很多住在老鼠镇的人都是以酒馆工人或各种屠宰队的成员来维持生计，但更有魄力的人可能会去找附近的各种告示牌。大胆的雇佣兵可以在那里找到从传统的武术工作到暗中的黑市交易的各种信息，甚至可以找到一些比尔吉沃特最臭名昭著的领导人的悬赏。",
+										{
+											"type": "entries",
+											"name": "Fleet Street",
+											"id": "023",
+											"entries": [
+												"从舰队街的酒馆里传出的喧闹笑声在白码头一直可以听到。各种各样的酒吧充斥着鼠城的这一部分，你经常可以看到一个退休的人对着半醉的酒杯聊天，讲述过去很久以前在咸海中的高尚故事。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Brazen Hydra",
+											"id": "024",
+											"entries": [
+												"勇敢的九头蛇也许是舰队街最有名的酒馆，它是水手、赌徒和雇佣兵们的热门目的地。酒馆建在一艘前屠杀舰队的翻转船身内，一个复杂的多头蛇雕刻头像耸立在酒馆门口。",
+												{
+													"type": "inset",
+													"id": "025",
+													"entries": [
+														"{@b Iron Wills (Low-Level})",
+														"渴望向潜在的雇主展示他们的能力，两个喧闹的{@creature Ironback|LoRDToB|ironbacks}参与了各种酒馆游戏，包括掰手腕、飞镖和喊话比赛。但他们的友好竞争正迅速演变为更具侵略性的攻击，舰队街紧张的酒馆经理们要求有人在这场竞争导致房子倒塌之前进行干预--事实上。"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/018-LoR-decoration-01.png"
+													}
+												},
+												"酒馆本身有三层楼：酒吧和厨房占据了一楼，而纸牌游戏和台球桌则摆满了二楼，顶楼只包括为雇佣兵和商业交易保留的小型私人会议室。虽然白天也有一些顾客光顾，但太阳一落山，Brazen Hydra就活跃起来了，疲惫不堪的船员们在海上忙碌了一天后，都挤在这里吃饭喝酒。",
+												"霍冯-贝克（中立，男性人类（%0%））经营着Brazen Hydra。在一次与传说中的海怪相遇后，他无法行走，霍冯亲自用那只可恶的怪物的骨头给自己刻了腿套，并把他的船的残骸拖到岸上，建造了比尔吉沃特有史以来最好的酒吧--至少，这是他喜欢告诉任何愿意倾听的酒吧顾客的故事。许多人把他的故事看作是老水手的传说，但他的腿支架上锯齿状的象牙光泽（以及酒馆外面溃烂的咬痕）表明情况并非如此。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Flophouses",
+											"id": "026",
+											"entries": [
+												"虽然不一定是老鼠城的一个部分，但食堂仍是该区的一个突出特点。许多怪物猎人和倒霉的海盗在沉闷的航行之间把这些廉价的公寓当作家。",
+												{
+													"type": "inset",
+													"id": "027",
+													"entries": [
+														"{@b Sick Bay (Low-Level})",
+														"一种可怕的疾病正在席卷老鼠镇的食堂。许多人指责最近在附近的沉船上安家的一窝{@creature diseased giant rats|LoRDToB}，但还没有人知道这种疾病是什么，它来自哪里，或者如何治愈它。勇敢的雇佣兵们正竞相捕捉这些患病的标本之一，并开始研究治疗方法。"
+													]
+												},
+												{
+													"type": "inset",
+													"id": "028",
+													"entries": [
+														"{@b Upsetting the Yeti (Mid-Level)}",
+														"一艘弗雷尔乔迪的船将一个{@creature Yeti||yetis}的家庭偷运到港口。不幸的是，走私者忘了考虑比尔吉沃特温暖的岛屿气候，这些雪人对天气变化的反应很差，从原本关押他们的软屋马厩里挣脱出来，在镇上乱跑。这些雪人到底去了哪里？为什么他们会被带到比尔吉沃特？"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Raider's Hold",
+											"id": "029",
+											"entries": [
+												"如果你想找一个睡觉的地方，并让贪婪的码头老鼠远离你，\"袭击者之家 \"就是你的旅馆。虽然不是老鼠城中最漂亮的食堂之一，但 \"袭击者之家 \"因其较灵活的住房价格而闻名。经营这里的老年海盗布兰娜-齐尔船长（混乱中立，女性人类（%0%）），在整个比尔吉沃特以交易人情而不是银蛇而闻名。她很乐意为你提供一周的食宿，以换取你追捕一个债务人或确保她的一个对手在下一次航行中失败。正因为如此，布兰娜的赏金是比尔吉沃特告示牌上所列的最高赏金之一，然而，似乎没有人热衷于拿起武器对付她，因为每个人都知道她有许多强大的人物欠她的债。",
+												"一些居民声称发现潮汐魔术师菲兹在一些晚上在食堂的大厅里出没，但除了他们关于他存在的高谈阔论之外，没有人拿出任何证据。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Butcher's Bridge",
+											"id": "02a",
+											"entries": [
+												"屠夫桥位于老鼠城的最末端，连接着贫民窟和比尔吉沃特上部的眼球和纳卡布罗斯神庙。屠夫桥由古老的石头制成，是城市中最古老的建筑之一。风化的鹅卵石上还留有哈洛因过去留下的伤痕，桥的西端有一道沉重的木门，用来封锁城市的上层，防止来自港口的威胁。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Slaughter Docks",
+									"id": "02b",
+									"entries": [
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/019-carving-bay.png"
+											}
+										},
+										"屠宰码头构成了比尔吉沃特的沿海地区之一。这个地区由雕刻湾、杀戮屋、屠宰场和其他服务于蓬勃发展的怪物猎杀行业的地方组成。屠宰码头的街道上经常流淌着鲜血和其他内脏，其臭味是臭名昭著的。",
+										"这些建筑本身就是他们行业的证明，通常被设计成可怕的海兽的样子，并使用它们的皮肤和骨骼建造。",
+										"码头周围的水域染上了红色，并被径流毒害，这使得任何经过的海怪都远离比尔吉沃特的海岸。这一事实加剧了与比尔吉沃特的布赫鲁人之间的紧张关系，当哈罗威威胁到蛇岛时，他们依靠海怪来提供帮助。",
+										{
+											"type": "entries",
+											"name": "Carving Bays",
+											"id": "02c",
+											"entries": [
+												"这些巨大的码头配备了起重机和塔楼，甚至能够将最巨大的怪物从水中吊起。有尸体要卖的船长可以期待在他们的渔获腐烂在水里之前，为一个可靠的海湾的服务进行激烈的讨价还价。由于利润取决于新鲜的材料，雕刻海湾经常日夜繁忙。",
+												{
+													"type": "inset",
+													"id": "02d",
+													"entries": [
+														"{@b Something Fishy (Mid-Level})",
+														"有人发现一只饥饿的{@creature dragon shark|LoRDToB}在雕刻湾徘徊，对着停靠的船只猛拍，并直接从吊车的钩子上拉出尸体。但是，像这样的生物通常坚持在比尔吉沃特湾以外的更深水域。是什么邪恶的原因把这条龙鲨赶到内陆这么远的地方？"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Killhouses",
+											"id": "02e",
+											"entries": [
+												"屠宰码头的杀戮屋在被发现之前就已经被闻到了--这些类似仓库的大型建筑涂满了他们交易的血液和粘液。一旦一具尸体在海湾被切割成碎片，它就会被送到这些仓库里。",
+												"屠宰场将这些身体部位加工成有价值的皮肤、盔甲鳞片和油。他们还清洗和准备海怪的骨头和牙齿来出售。",
+												{
+													"type": "inset",
+													"id": "02f",
+													"entries": [
+														"{@b Tidal Sacrifice (Low-Level})",
+														"屠宰场里开始流传着这样的传言：一个腐朽的（%0%）潜伏在屠宰场周围，带着宝贵的怪物零件，甚至是一些毫无戒心的工人潜逃，以 \"安抚下面的野兽\"。这个巫婆试图从深渊中唤醒什么--或者更糟糕的是，她试图阻止什么东西笼罩比尔吉沃特？是巫婆要对这些绑架事件负责，还是有什么更平凡的东西是罪魁祸首？"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Butcheries",
+											"id": "030",
+											"entries": [
+												"特别是一些可以挽救的肉块，会从雕刻台上被送到屠宰码头的屠宰场。这些屠宰场将最新杀戮的任何可食用的肉块卖给比尔吉沃特的人们。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Bid House",
+											"id": "031",
+											"entries": [
+												"标书馆是一个仓库变成的会议厅。这座令人印象深刻的建筑坐落在一条长着螺旋形珠光角的泰坦尼克号鲸鱼的肋骨里。竞标屋里热闹非凡，整个白天和夜晚，船长和海湾工人都在这个巨大的建筑里进进出出，希望能达成当天的最佳交易。在这里，屠宰码头雕刻区和屠宰场的老板们会聚在一起，制定价格，并与希望出售最新捕获物的怪物猎人进行谈判。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/020-LoR-decoration-10.png"
+													}
+												},
+												"没有正式的工会来统治屠宰码头，但朱尼-史密斯（合法中立，女性人类（%0%））被认为是码头工人未经选举的领导者。朱尼经常在标书馆召开会议，召集码头上的企业主，这样他们可以就一般的价格点达成一致，并互相警告危险的客户。",
+												"想要获得知名雕刻店或杀人屋的服务的人必须到竞标屋去寻找。招标所也是比尔吉沃特赏金的主要来源。在这里见面的企业主们会迅速发布赏金，以逮捕任何威胁他们的人，在交易中出尔反尔，或者与未经朱尼批准的码头进行暗中交易。",
+												"朱尼在屠宰场有很大的影响力；财富小姐和Gangplank都曾试图争取她对比尔吉沃特统治的支持。朱尼把他们都拒之门外，公开宣称她只忠于屠宰场的工人，而不是其他任何人。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Squidrow",
+											"id": "032",
+											"entries": [
+												"鱿鱼罗也许是最著名的屠宰场，它挤满了一系列被恰当地命名为血港的街道。这家屠宰场由吉尔-安伯布鲁（中性，男性人类（%0%））和大麦-芬恩（中性，男性人类（%1%））经营，他们在从多年的怪物猎杀贸易中退休后购买了这家店。乌贼罗从其他屠宰场中脱颖而出，只出售最奇特的海怪原料。游客和当地人都排队购买蜜饯深海鱼眼、克拉肯菲力牛排、龙鲨汤，以及安伯布鲁和芬恩当天出售的任何稀有产品。",
+												"由于他们的特殊需要，水手们经常向值得信赖的冒险家提供工作，为他们寻求的任何捕获物支付丰厚的报酬。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Eyries",
+									"id": "033",
+									"entries": [
+										"在比尔吉沃特有一个公认的真理：你爬得越高，你就越不容易淹死。正因为如此，城市的最高层被称为 \"眼\"，是城市中最富有的酒馆、剧院和骰子馆的所在地。那些幸运地拥有一些额外硬币的人经常长途跋涉到这些高层，享受眼界的美酒和奢华的陪伴--尽管对于一个过于贪婪的水手来说，在眼界的高赌注牌桌上输掉他们的积蓄，第二天早上回到屠宰码头也是很常见的。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/021-bilgewater-ancient-architecture.png"
+											}
+										},
+										{
+											"type": "entries",
+											"name": "Cardsharp Walk",
+											"id": "034",
+											"entries": [
+												"虽然整个比尔吉沃特有许多骰子屋和赌博厅，但没有任何一家能像卡萨普街（Cardsharp Walk）这样的高档次和高赌注的赌博场所。卡萨普街闪烁着金色克拉肯的诱惑，拥有大量的游戏桌，充满了快速致富的机会。令人惊讶的是，这里几乎可以容忍作弊，只要你不被当场抓住。毕竟，骗钱只是赢得游戏的一种方式。",
+												{
+													"type": "inset",
+													"id": "035",
+													"entries": [
+														"{@b Winner Take All (Mid-Level)}",
+														"在过去的一周里，有三个{@creature Pool Shark|LoRDToB|pool sharks}的人一直在突袭卡萨普城臭名昭著的骰子屋，尽管他们的抢劫行为总是在这些房子的金库里留下了相当多的钱。这些恶棍到底在追求什么，谁在雇用他们？"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Fortune's Glory",
+											"id": "036",
+											"entries": [
+												"财富的荣耀 \"以其正面的弗莱尔乔迪式建筑和入口处无所事事地摆动的金漆招牌为标志，是纸牌街最受欢迎的目的地之一。虽然有些人来到这个赌博厅，把他们的毕生积蓄押在骰子上，但同样有很多人是来观战的；财富的荣耀因举办一些比尔吉沃特有史以来最激烈的纸牌游戏而赢得了声誉。",
+												"狡猾的扎尔康-布拉特（混沌中立，非二进制（%0%））目前担任该机构的司仪，不过有几个水手对扎尔康对一个好的骗局的容忍度不满，一直在密谋将他们赶下台。",
+												"据说这家赌坊也是臭名昭著的扭曲命运的首选赌坊，尽管自从这个无赖赢了商人亨玛之后，就再也没有人在这里看到过他本人。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Songbird's Row",
+											"id": "037",
+											"entries": [
+												"对于那些不愿意把钱输给牌的人来说，\"鸣禽街 \"的剧院和酒馆为 \"眼 \"的顾客提供了足够的娱乐。",
+												{
+													"type": "inset",
+													"id": "038",
+													"entries": [
+														"{@b Duel of the Divas (Mid-Level)}",
+														"两位才华横溢的歌手正在争夺 \"歌声之街 \"即将上演的节目中的主角，这个节目将在未来几周内成为比尔吉沃特的话题。两人都渴望得到这个角色，但其中一人与一个不死人（%0%）做了交易，希望这能增加他们获胜的机会。女妖的目的是要从这个交易中得到什么？他们的鬼哭狼嚎又会给整个鸣禽行带来怎样可怕的命运？"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Garnay",
+											"id": "039",
+											"entries": [
+												"加内是一家豪华的夜总会，拥有比尔吉沃特最好的表演。婀娜多姿的舞者在漆黑的舞台上翩翩起舞，而酿酒师则为陶醉的人群提供实验性的混合物，在加内的演出没有两次。",
+												"Lue Rhodenhart夫人（混乱的好人，女性人类（%0%））经营着这个机构。作为比尔吉沃特最慷慨和最有创造力的灵魂之一，卢女士一直在寻找新的人才在她的歌舞厅里发展。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/022-card-brash-gambler.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Temple of Nagakabouros",
+											"id": "03a",
+											"entries": [
+												"虽然从技术上讲，纳卡布罗斯神庙并不属于眼界的一部分，但它位于老鼠镇和比尔吉沃特上层的中间点。",
+												"这座庞大的母蛇庙已经存在了一千多年，是海盗城中维护得最好的建筑之一。它的前窗可以看到比尔吉沃特湾汹涌的水面，其中心是一个大院子，形状像利维坦的獠牙之口。在里面，圣徒们在火光四射的大厅里踱步，在供奉碗里装满各种水果，供纳卡布罗斯享用。当伊拉奥伊不挥舞时，游客还可以看到坐在寺庙中央台子上的闪亮的神之眼。",
+												{
+													"type": "inset",
+													"id": "03b",
+													"entries": [
+														"{@b Lights on the Water (Low-Level)}",
+														"从他们俯瞰比尔吉沃特湾的有利位置，几位纳加布罗斯的信徒发现了日落之后沿着海浪舞动的微弱的淡色光线。有人说这些一定是新的生物发光植物，但也有人怀疑这些光其实是（%0%），是以死者的灵魂为食的小精灵。哪一个才是真相，这对比尔吉沃特的命运有什么启示？"
+													]
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/023-Nagakabouros.png"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "White Wharf",
+									"id": "03c",
+									"entries": [
+										"白码头是比尔吉沃特的一个区域，死者在那里的浮动墓地安息。这些墓地是平静的水面，连接着坟墓浮标的木桶被放置在那里漂浮。这些浮标作为标记；有些是用木头做的，只是刻上名字，有些则是精心制作的雕塑。这些尸体吸引了大量的食腐动物，海鸥也挤满了码头。白色码头的名字来源于这些食腐动物留下的大量鸟类排泄物。",
+										{
+											"type": "inset",
+											"id": "03d",
+											"entries": [
+												"{@b Floating Spirits (Mid-Level})",
+												"在过去的几个晚上，比尔吉沃特的许多居民都声称看到蓝色的发光体（%0%）从散落在海湾边缘的浮动墓地里升起。死者应该平静地休息，那么是什么把这些灵魂从沉睡中唤醒呢？影子岛会不会又要对比尔吉沃特下手，或者是另一个派别在作怪？"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Mark's Spot",
+											"id": "03e",
+											"entries": [
+												"马克-洛卡斯（混沌中性，男性人类（%0%））是一个工匠，以雕刻纪念白色码头上的死者的浮标为生。他在白色码头的家兼作工作室和商店，城市的人们可以在这里委托制作这些漂浮的墓碑。他的生意很有名，而且由于比尔吉沃特的死亡率很高，他的利润也很可观。",
+												"由于马克从事的是死亡交易，他是新闻和谣言的最佳来源。除了他的销售，马克还为比尔吉沃特的几个有权势的犯罪分子提供资金支持。他在确保只有正确的尸体被发现方面发挥了作用，并且在需要时不惜调换坟墓浮标来隐藏证据。",
+												"马克的斑点目前被{@creature Miss Fortune|LoRDToB}盯上了，他正确地怀疑马克在掩盖{@creature Gangplank|LoRDToB|Gangplank's}的生存方面起到了作用。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/024-card-prowling-cuthroat.png"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Random Encounters in Bilgewater",
+							"id": "03f",
+							"entries": [
+								"比尔吉沃特是一个多姿多彩的人和危险的聚集地。本节描述了在比尔吉沃特停留时可能发生的一些遭遇。当队伍在城市中旅行时，你可以选择在下面的表格中滚动，以确定发生的随机事件。",
+								{
+									"type": "table",
+									"caption": "City Encounters",
+									"colLabels": [
+										"d20",
+										"Encounter"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1",
+											"{@book Street Rats|LoRDToB|1|Street Rats}"
+										],
+										[
+											"2",
+											"{@book Tough As Nails|LoRDToB|1|Tough As Nails}"
+										],
+										[
+											"3",
+											"{@book Shark In Bilgewater|LoRDToB|1|Shark In Bilgewater}"
+										],
+										[
+											"4",
+											"{@book Good Egg|LoRDToB|1|Good Egg}"
+										],
+										[
+											"5",
+											"{@book Crossfire|LoRDToB|1|Crossfire}"
+										],
+										[
+											"6",
+											"{@book One of the Gang|LoRDToB|1|One of the Gang}"
+										],
+										[
+											"7",
+											"{@book Not-Dead-Yet|LoRDToB|1|Not-Dead-Yet}"
+										],
+										[
+											"8",
+											"{@book Fortune Smiles|LoRDToB|1|Fortune Smiles}"
+										],
+										[
+											"9",
+											"{@book Not-Dead-Yet|LoRDToB|1|Not-Dead-Yet}"
+										],
+										[
+											"10",
+											"{@book Grift|LoRDToB|1|Grift}"
+										],
+										[
+											"11",
+											"{@book Collect Call|LoRDToB|1|Collect Call}"
+										],
+										[
+											"12",
+											"{@book Penny Dreadful|LoRDToB|1|Penny Dreadful}"
+										],
+										[
+											"13",
+											"{@book Surprise Inside|LoRDToB|1|Surprise Inside}"
+										],
+										[
+											"14",
+											"{@book Graffiti|LoRDToB|1|Graffiti}"
+										],
+										[
+											"15",
+											"{@book This Sucks|LoRDToB|1|This Sucks}"
+										],
+										[
+											"16",
+											"{@book Nightlife|LoRDToB|1|Nightlife}"
+										],
+										[
+											"17",
+											"{@book Rotten Core|LoRDToB|1|Rotten Core}"
+										],
+										[
+											"18",
+											"{@book Serpent Spectacle|LoRDToB|1|Serpent Spectacle}"
+										],
+										[
+											"19",
+											"{@book Mob Mentality|LoRDToB|1|Mob Mentality}"
+										],
+										[
+											"20",
+											"{@book Finders Keepers|LoRDToB|1|Finders Keepers}"
+										]
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Encounters A - F",
+									"id": "040",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Collect Call",
+											"id": "041",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "042",
+													"entries": [
+														"一支弩箭在你头上呼啸而过，有人叫道。\"站住，肯德里克! 你的恐怖统治现在结束了！\""
+													]
+												},
+												"一个叫韦斯特利-格雷夫的人类赏金猎人（（%0%））把其中一个人物误认为是一个叫肯德瑞克的小罪犯。如果成功通过DC15魅力（{@skill Persuasion}）检查，韦斯特利就会相信他犯了一个错误。否则，赏金猎人将继续攻击。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Crossfire",
+											"id": "043",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "044",
+													"entries": [
+														"当一只猴子从屋顶向街上的一群流氓俯冲下来时，一阵火花在你头顶爆炸。你周围的人开始争先恐后地逃离这场冲突。"
+													]
+												},
+												"队伍陷入了六名财富小姐（%0%）和六名忠于Gangplank的（%1%）之间的战斗中。如果一行人决定避开这场战斗，他们必须在DC13力量（（%2%））或灵巧（（%3%））的检查中取得成功，才能成功走出恐慌的人群。如果一行人决定介入战斗，他们可能会获得财富小姐或Gangplank的青睐，这取决于他们与哪一方并肩作战。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/025-powder-monkeys.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Finders Keepers",
+											"id": "045",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "046",
+													"entries": [
+														"一只皮靴的脚趾从一堆箱子后面探出头来。"
+													]
+												},
+												"一个不幸的商人被谋杀了，他的尸体被匆忙地藏在一堆木箱后面。通过智慧（（%0%））检查，发现该商人死了不到一个小时。搜查尸体的人没有发现钱，但商人的脖子上戴着一个（%1%）。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Fortune Smiles",
+											"id": "047",
+											"entries": [
+												"一个名叫雷吉-莫特（Reggie Mott）的人类（%0%）找到了这支队伍，他对财富小姐很忠诚。雷吉注意到该党的能力，想衡量他们是否有兴趣加入赏金猎人的支持者。",
+												"如果当事人表示有兴趣，雷吉承诺很快会与他们联系，提供一些 \"商业 \"机会。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Encounters G - N",
+									"id": "048",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Good Egg",
+											"id": "049",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "04a",
+													"entries": [
+														"一个街头小贩向你们一行人喊道：\"你们看起来很有品味！我有一个你们不能错过的宝物。我有一个你们不能错过的宝物。\""
+													]
+												},
+												"摊主是一位名叫西娅-布朗的异国宠物经销商。她的滚动推车上挂满了美丽的鸣禽笼子，还有几个被稀有类型蜥蜴占据的水箱。西娅最近得到了一个怪物蛋，并要出售它。如果一个角色购买了这个蛋，它将在（%0%）天内孵化。掷骰子决定它是什么类型的蛋，以及西娅的要价。",
+												{
+													"type": "table",
+													"colLabels": [
+														"1d4",
+														"Egg type (and price)"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"A {@creature giant sea horse} (200 gp)"
+														],
+														[
+															"2",
+															"A {@creature giant toad} (350 gp)"
+														],
+														[
+															"3",
+															"A {@creature pseudodragon} (3000 gp)"
+														],
+														[
+															"4",
+															"A {@creature dragon shark|LoRDToB} (15,000 gp)"
+														]
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Graffiti",
+											"id": "04b",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "04c",
+													"entries": [
+														"一个神秘的蒙面人物奇怪地盘旋在附近的悬赏牌上。"
+													]
+												},
+												"如果人物与这个人物对峙，蒙面人就会以惊人的敏捷性跑开，并叫道：\"我的画笔永远不会被压制！如果当事人检查黑板，他们会看到所有悬赏海报上都画着大胡子。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Grift",
+											"id": "04d",
+											"entries": [
+												"一个身穿金色亮片长袍的巫师开始了一场吃火的表演。如果有角色停下来观看，他们就会成为三个年轻扒手（人类（%0%））团队的标记。任何被动感知力为14或更高的角色都会注意到这个偷窃企图。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Mob Mentality",
+											"id": "04e",
+											"entries": [
+												"附近的小巷里传来了响亮的吆喝声。一群暴躁的海盗把两个穿着诺克萨斯颜色衣服的（%0%）逼到了角落。",
+												"一群8个海盗（使用{@creature bandit}统计数字）整夜喝酒，庆祝他们刚回到港口。在出城的时候，他们发现了两个来自诺克萨斯的（%1%），现在正威胁要打起来。如果党不进行干预，这两个骑士就会被宰杀。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Nightlife",
+											"id": "04f",
+											"entries": [
+												"一个名叫琪琪-萨默斯（Kiki Summers）的魅力表演者站在街角，提供优惠券，让人们在鸣禽街著名的加内夜总会免费喝酒。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Not-Dead-Yet",
+											"id": "050",
+											"entries": [
+												"一个{@creature giant octopus}的人逃出了一个杀戮屋，正在街上攻击人们。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Encounters O - S",
+									"id": "051",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "One of the Gang",
+											"id": "052",
+											"entries": [
+												"一个名叫奥菲利亚-兰德里（Ophelia Landry）的（%0%）人找到了该党，她对冈普兰克很忠诚。奥菲利亚注意到了这支队伍的能力，想了解他们是否有兴趣加入船长的支持者。",
+												"如果当事人表示有兴趣，奥菲利亚承诺很快会与他们联系，提供一些 \"商业 \"机会。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/026-smooth-soloist.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Penny Dreadful",
+											"id": "053",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "054",
+													"entries": [
+														"一个蜷缩的乞丐喊道：\"只要一便士，请好心人。只要一便士，我就为你算命。\""
+													]
+												},
+												"如果人物给她一个硬币，乞丐就会把一杯鸡骨头滚到地上。在考虑了这些骨头后，她告诉他们她的预测。掷骰子决定她讲的是什么运程。",
+												{
+													"type": "table",
+													"colLabels": [
+														"1d4",
+														"Fortune"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"你有一个秘密的双胞胎。这个双胞胎目前正试图找到并杀死你。"
+														],
+														[
+															"2",
+															"一个非凡的宝藏很快就会从天而降。不过，它可能是一把剑，所以如果你不小心，它会杀死你。"
+														],
+														[
+															"3",
+															"你的下一个生日将是不可思议的。欢乐的数量会杀了你。"
+														],
+														[
+															"4",
+															"你去的下一个酒馆会在不知情的情况下提供被污染的食物。如果你吃了它，它将杀死你。"
+														]
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Rotten Core",
+											"id": "055",
+											"entries": [
+												"一条木制走道的支撑梁已经腐烂成废墟。所有站在这段路上的生物都必须在DC13的灵巧救赎中成功跳出，否则就会跌落20英尺，受到{@dice 2d6}重击伤害。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Serpent Spectacle",
+											"id": "056",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "057",
+													"entries": [
+														"你周围的人开始喃喃自语，当一群布赫鲁人在街上移动时，他们就会分开。这群战士穿着令人印象深刻的盔甲，看起来就像海怪。"
+													]
+												},
+												"一群五名布赫鲁大蛇召唤者（使用（%0%）状态）刚刚抵达比尔吉沃特，正在前往纳卡布罗斯神庙。他们很快就会对任何干扰他们通过城市的人进行正义的审判。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Shark In Bilgewater",
+											"id": "058",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "059",
+													"entries": [
+														"你身后突然传来一声断喝，两个拿着劈啪作响的球杆的人影走进来。一个人叫道：\"好了，朋友，只要付点过路费，就不用再受伤了。\""
+													]
+												},
+												"这支队伍引起了一对（%0%）的注意。池中的鲨鱼一直在追踪这支队伍，并等待一个合适的时机来接近。鲨鱼要求200金币或同等价值的物品。如果当事人付钱，鲨鱼会让他们安然离开。如果队伍拒绝，池中的鲨鱼就会攻击。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/027-pool-shark.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Surprise Inside",
+											"id": "05a",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "05b",
+													"entries": [
+														"一群水手聚集在一个大木箱周围。他们紧张地看着它，因为里面传来响亮的、不稳定的敲击声。"
+													]
+												},
+												"水手们不知道的是，这个刚卸下的箱子里面挤着六个（%0%）。如果没有人打开箱子，敲了一分钟后，一个僵尸就会打穿木头。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Street Rats",
+											"id": "05c",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "05d",
+													"entries": [
+														"一声高亢的哀号将你的注意力转向一个在街上奔跑的年轻人。一群灰色毛发的身体紧跟在他身后。"
+													]
+												},
+												"三只{@creature Wharf Rat|LoRDToB|wharf rats}老鼠在比尔吉沃特的街道上追赶一只{@creature commoner}名叫比利-布里格斯的老鼠。如果党不干涉，这些老鼠就会追上比利并攻击他。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Encounters T - Z",
+									"id": "05e",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "This Sucks",
+											"id": "05f",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "060",
+													"entries": [
+														"嗡嗡声充满了空气，一群飞行生物从木板路下冲出来。"
+													]
+												},
+												"队伍的经过使一窝咬人的甲虫移位，三只{@creature swarms of insects (beetles)|LoRDToB}涌出，攻击60英尺内的所有生物--甚至可能是无辜的旁观者!"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Tough As Nails",
+											"id": "061",
+											"entries": [
+												{
+													"type": "insetReadaloud",
+													"id": "062",
+													"entries": [
+														"一群观众欢呼着，因为一只乌龟般的生物胜利地击倒了一个肌肉发达的水手的手臂。该生物在胜利中挥舞着手臂，并大喊：\"还有谁有胆量面对我？\""
+													]
+												},
+												"挑战者是一个{@creature ironback|LoRDToB}，他在掰手腕的比赛中打败了三个挑战者。如果一个角色决定向他们挑战，他们会掷出有争议的力量（（%1%））检查。如果一个角色在三场比赛中赢了两场，铁背人就会认输，并交出50戈比。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Beyond Bilgewater",
+							"id": "063",
+							"entries": [
+								"抵达比尔吉沃特并非易事。蛇岛周围有数英里长的水域，充斥着可怕的海怪和致命的暗礁。穿越岛屿本身也有其危险性，最明显的是遇到布赫鲁人，他们不允许非本地人居住在比尔吉沃特的范围之外。",
+								"使用以下表格来确定人物在往返比尔吉沃特的路上可能遇到的人或事。可根据需要经常使用这些表格。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/028-the-beast-below.png"
+									}
+								},
+								{
+									"type": "table",
+									"caption": "Encounters on the Land",
+									"colLabels": [
+										"d20",
+										"Encounter"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1-10",
+											"没有遇到"
+										],
+										[
+											"11",
+											"巡逻的{@dice 1d6}Buhru{@creature Scout||scouts}。"
+										],
+										[
+											"12",
+											"{@dice 2d4} {@creature Flying Snake||flying snakes}"
+										],
+										[
+											"13",
+											"一群{@dice 1d6}{@creature Axe Beak||axe beaks}的人"
+										],
+										[
+											"14",
+											"{@dice 1d4} {@creature Ape||apes}"
+										],
+										[
+											"15",
+											"一个由1名{@creature bandit captain}领导的{@dice 1d4}{@creature Bandit||bandits}小组"
+										],
+										[
+											"16",
+											"一对{@creature Awakened Tree||awakened trees}的"
+										],
+										[
+											"17",
+											"一对{@creature Giant Boar||giant boars}的"
+										],
+										[
+											"18",
+											"友好的 {@creature blink dog}"
+										],
+										[
+											"19",
+											"{@dice 1d6} {@creature Giant Wolf Spider||giant wolf spiders}"
+										],
+										[
+											"20",
+											"1 {@creature shambling mound}"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Encounters on the Sea",
+									"colLabels": [
+										"d20",
+										"Encounter"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1-10",
+											"没有遇到"
+										],
+										[
+											"11",
+											"巡逻的{@dice 1d6}{@creature sahuagin}。"
+										],
+										[
+											"12",
+											"一对{@creature merrow}的"
+										],
+										[
+											"13",
+											"1 {@creature giant octopus}"
+										],
+										[
+											"14",
+											"{@dice 1d4} {@creature Harpy||harpies}"
+										],
+										[
+											"15",
+											"一对{@creature plesiosaurus}的"
+										],
+										[
+											"16",
+											"伪装成海难幸存者的{@creature sea hag}人"
+										],
+										[
+											"17",
+											"一艘由{@dice 2d6}海盗船员经营的船只（使用{@creature bandit}状态块）。"
+										],
+										[
+											"18",
+											"{@dice 1d4} {@creature Killer Whale||killer whales}"
+										],
+										[
+											"19",
+											"一艘被{@dice 3d6}{@creature Wharf Rat|LoRDToB|wharf rats}侵袭的废弃船只"
+										],
+										[
+											"20",
+											"1 {@creature dragon shark|LoRDToB}"
+										]
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/029-LoR-decoration-05.png"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 2: Heroes and Scoundrels of Bilgewater",
+					"id": "064",
+					"entries": [
+						{
+							"type": "image",
+							"href": {
+								"type": "external",
+								"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/030-bilgewater-dock.png"
+							}
+						},
+						"创建一个属于自己的角色很容易。首先打开D&D Beyond{@link Character Builder|https://www.dndbeyond.com/characters/builder}，点击快速建立。遵循这些步骤。",
+						{
+							"type": "list",
+							"items": [
+								"选择 \"人类 \"作为你的种族",
+								"选择 \"野蛮人\"、\"战士 \"或 \"流氓 \"作为你的等级。",
+								"查看你的角色表",
+								"在左上角点击你的肖像，从菜单中选择 \"管理等级\"。",
+								"将你的等级设置为3（本资料中冒险的起始等级）。",
+								"做出任何你需要的决定，包括你的子类",
+								"如果你是野蛮人，请选择\"{@book Path of the Depths|LoRDToB|2|Barbarian: Path of the Depths}\"；如果你是战士，请选择\"{@book Renegade|LoRDToB|2|Martial Archetype: Renegade}\"；如果你是流氓，请选择\"{@book Wild Card|LoRDToB|2|Roguish Archetype: Wild Card}\"。"
+							]
+						},
+						"请务必与你的同伴讨论选择不同的等级。如果一两个人都选择战士，这不是问题；你们中的一个人可以玩不同的子类，比如冠军原型战士而不是叛徒--或者你们可以做出选择，让你们的角色与众不同，即使你们在游戏性上有些相似。一旦你开始有三个或更多的玩家扮演相同的角色类别，你的游戏可能会变得很混乱。",
+						"D&D中共有12个等级，其中3个有专门针对Bilgewater的子等级。你可以在D&D{@book Basic Rules|PHB}中找到所有这些类别。在{@book Player's Handbook|PHB}中甚至还有更多的十二个类的子类，其中一些非常适合比尔吉沃特，比如暴风雨领域的牧师，或者是守护者是伟大的老者的术士（如Tahm Kench）。如果你想扮演一个会施法的类别，比如吟游诗人、牧师、德鲁伊、巫师、魔法师或术士，就要小心了。咒语是D&D中比较复杂的部分之一，所以在加入咒语规则之前，先学习基本规则比较容易。",
+						{
+							"type": "section",
+							"name": "Races of Runeterra",
+							"id": "065",
+							"entries": [
+								"有各种形状和大小的生物生活在Runeterra。虽然大多数常见的D&D种族并不完全适合这些不同的民族，但你可以把这些种族作为一个起点。龙裔可能是一个半龙半人的角色的好模板。Runeterra的大多数魔法生物在形态上差异很大，所以你可以使用这些种族中的任何一个种族的游戏统计数据来创造你想要的任何类型的角色，只要你的地下城主说在他们的活动中可以这样做。",
+								"除了人类之外，还有一个种族出现在Runeterra的各个角落：被称为Yordles的奇怪和不可预知的精神生物。通常被厚厚的皮毛覆盖，身高约三英尺，充满了另一个世界的任性，D&D中的地精种族很适合做约德尔人。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Character Options",
+							"id": "066",
+							"entries": [
+								"下面是三个子类，它们赋予野蛮人、战士和无赖以力量，使他们特别适合比尔吉沃特的水生、黑火药熏制和高滚动的氛围。我们强烈建议新的D&D玩家选择这些子类中的一个。你可以在下面阅读这些子类，然后在你开始创建你的角色后，在D&D Beyond（%0%）中选择它们。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/031-card-nautilus.png"
+									}
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Barbarian: Path of the Depths",
+							"id": "067",
+							"entries": [
+								"遭遇深海的恐怖，可以击垮意志薄弱者的心智，但有些人将他们的创伤锻造成在海浪之上从未见过的武器。走在这条路上的野蛮人已经从这样的遭遇中幸存下来，并从这一经历中获得了非凡的能力。",
+								{
+									"type": "entries",
+									"id": "068",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Gift of the Drowned Ones",
+											"id": "069",
+											"entries": [
+												"在3级的时候，当你采用这条道路时，你获得与你的步行速度相等的游泳速度，并获得水下呼吸的能力。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Dredge Line",
+											"id": "06a",
+											"entries": [
+												"从你3级选择这条道路开始，当你进入愤怒状态时，你会显现出一个额外的附属物。这个武器可以表现为海怪的触手、巨大的锚、超自然的下颚，或者其他基于你历史的东西。",
+												"作为一个额外的动作，你可以使用这个附属物来攻击你所选择的15英尺内的一个生物。目标必须成功地进行力量救赎（DC等于8+你的熟练度加成+你的力量修饰），或者被拉到10英尺外的一条直线上朝你走来。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Ghostwater Dive",
+											"id": "06b",
+											"entries": [
+												"从6级开始，你可以在水中爆裂，然后作为一个动作出现在其他地方。你和你所穿戴或携带的任何装备一起神奇地传送到一个你能看到的无人的空间，最远可达30英尺。在传送之前或之后，你可以进行一次攻击，作为你行动的一部分。以这种方式移动不会激起机会攻击。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Manifestations of the Deep",
+											"id": "06c",
+											"entries": [
+												"在10级的时候，你可以表现出额外的深层适应性。你可以从以下适应性中选择一种，在长时间的休息中，你可以用这个列表中的一个新选项来替换你选择的适应性。",
+												{
+													"type": "entries",
+													"name": "Eyes of the Deep",
+													"id": "06d",
+													"entries": [
+														"你获得使用回声定位的能力。当你这样做时，你会施放（%0%）的法术，而不使用法术槽或材料成分。在你以这种方式施展法术后，你不能再使用这个功能，直到你完成一个短期或长期休息。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "",
+											"id": "06e",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Arms of the Deep",
+															"entry": "在愤怒的时候，你现在会显现出两个神奇的附属物，它们可以是触手、链子和锚、动画索具，或者你选择的另一个抓取手臂。当你使用你的疏浚线能力时，你可以尝试用你的每一个附肢进行抓捕。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "",
+											"id": "06f",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Heart of the Deep",
+															"entry": "现在在你的回合中，你可以使用一个额外的动作来获得相当于{@dice 1d12}+你的野蛮人等级的临时打击点数。一旦你使用这个特性，你必须完成一个短暂或长时间的休息才能再次使用它。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "",
+											"id": "070",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Soul of the Deep",
+													"id": "071",
+													"entries": [
+														"你现在对所有会导致你（%0%）或（%1%）的效果免疫。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "",
+											"id": "072",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Armor of the Deep",
+															"entry": "你的皮肤会变硬，使你的装甲等级增加1。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Depth Charge",
+											"id": "073",
+											"entries": [
+												"在14级时，当你使用鬼水潜行能力时，你可以选择以潮汐力量的波浪出现。当你出现时，所有在你周围10英尺内的生物都必须做一个力量救赎。拯救失败时，生物会受到{@dice 3d6}力量伤害并被击倒{@condition prone}。拯救成功时，生物会受到一半的伤害，并且不被击倒（%2%）。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/033-miss-fortune-2.png"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Martial Archetype: Renegade",
+							"id": "074",
+							"entries": [
+								"定义叛逆者的不是他们所挥舞的武器，也不是他们的战斗方式那么简单。一个叛逆者，首先是一个具有狡猾魅力和豪迈的战士。叛逆者拥有粗鲁的狂妄，他们建造自己的定制枪械，以完美地适应他们自己比生命更重要的个性。特别是资金充裕的叛徒甚至可能拥有个性化的Hextech武器，但这样的人在比尔吉沃特的恶棍中很少见。",
+								"不要误以为他们的吹嘘是空穴来风--低估了叛徒华丽的枪法的人往往会死于非命。",
+								{
+									"type": "entries",
+									"id": "075",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Scoundrel's Wit",
+											"id": "076",
+											"entries": [
+												"从第三级开始，你获得以下两个技能的熟练度。{@skill Deception}, {@skill Persuasion}, 或 {@skill Sleight of Hand}。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Gunfighter Form",
+											"id": "077",
+											"entries": [
+												"此外，当你在3级选择这个原型时，你开始建造一个适合你独特的叛逆者风格的定制枪械。这个过程从选择你的武器所依据的形式开始。从以下选项中选择一个；每一种形态都会赋予你一种新的能力，并解锁某些升级，你可以在更高等级的武器上添加。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Pistoleer",
+															"entry": "喜欢速度和风格而不是原始的力量，一个采用Pistoleer形态的叛逆者会挥舞一把小型燧发枪。在你的行动中，你可以瞄准30英尺范围内的一个生物并开枪。对目标进行一次远程攻击。你精通该攻击，一旦命中，该攻击造成的穿刺伤害等于（%0%）+你的灵巧修饰。"
+														}
+													]
+												},
+												"当你达到该子类的更高等级时，你在一次行动中可以射击的次数会增加：5级时为2次，11级时为3次，20级时为4次。射击的目标可以是同一个生物或不同的生物。每次射击都要进行单独的攻击卷。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Sniper",
+															"entry": "采用狙击手形态的叛徒拥有一把大型的双手枪械，可以在一次射击中造成巨大的伤害。在你的回合中，你可以瞄准120英尺范围内的一个生物并开枪。对目标进行一次远程攻击。你精通该攻击，一旦命中，该攻击会造成相当于{@dice 1d10}+你的灵巧修改器的穿刺伤害。"
+														}
+													]
+												},
+												"当你达到更高的等级时，你在使用这种形态时造成额外的伤害，在5级时造成相当于{@dice 2d10}+你的灵巧修饰的伤害，在11级时造成{@dice 4d10}，在20级时造成{@dice 6d10}。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Weapon of Choice",
+											"id": "078",
+											"entries": [
+												"通过打捞偷来的奥术技术碎片和纯粹的Rekish聪明才智的结合，你可以用各种升级来定制你的枪械。当你在3级选择这个原型时，从本子类末尾的{@filter Firearm Upgrades|optionalfeatures|Feature Type=FU:Min;FU:Maj}列表中挑选一个小升级和一个大升级。如果某项升级有先决条件，你必须满足该先决条件才能从该升级中获益。",
+												"你在5级获得一个额外的小升级，在10级获得一个额外的大升级。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Cunning Shot",
+											"id": "079",
+											"entries": [
+												"从第七级开始，你学会利用敌人的弱点，即使他们看起来没有弱点。你的枪械造成的伤害，包括通过枪械升级造成的伤害，无视抵抗力和免疫力。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Grin and Bear It",
+											"id": "07a",
+											"entries": [
+												"在10级时，你可以在激烈的战斗中振作起来，即使受了重伤也是如此。当你使用你的 \"第二风 \"功能时，你的攻击力获得+1的奖励，并且你的移动速度增加10英尺，直到你下一个回合开始。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Right Gun for the Job",
+											"id": "07b",
+											"entries": [
+												"15级时，你的枪械技能可以适应任何情况。当你完成长时间的休息时，你可以用一个不同的枪械升级来代替你的任何一个枪械升级，尽管你在同一时间不能装备超过两个主要的升级。你仍然必须满足某项升级的先决条件，才能从中受益。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Light 'Em Up",
+											"id": "07c",
+											"entries": [
+												"在18级时，你学会了将你枪械中黑火药的挥发性力量转化为单一的震荡性爆炸。作为一个额外的动作，你可以投掷或放下一个小型炸药。如果投掷，炸药的范围是30英尺，并在撞击时立即引爆；如果放下，炸药可以在60英尺外远程引爆，这是另一个奖励动作。",
+												"当被引爆时，每个在爆炸物15英尺范围内的生物都必须做一个灵巧的蓄力动作，失败时受到{@dice 12d6}力量伤害，成功时受到一半的伤害。这个蓄力动作的DC等于你的火器升级DC。",
+												"一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Firearm Upgrades",
+									"id": "07d",
+									"entries": [
+										"与许多在作坊里刻苦钻研的工匠不同，叛徒们改变他们的武器以适应他们个人的骑士精神。下面的清单提供了各种选择，以增强你的枪械的能力。这些升级可能是你在武器上的个人修饰，或者是你发现并装配在你的武器上的Hextech的拾取部分。",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												{
+													"type": "item",
+													"name": "Saving Throws",
+													"entry": "其中一些升级需要你的目标做一个蓄力动作来抵御效果。蓄力动作的计算方式如下。"
+												}
+											]
+										},
+										"{@b Firearm Upgrade save DC}=8+你的熟练度奖励+你的魅力修改器"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Minor Firearm Upgrades",
+									"id": "07e",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Blade and Black Powder",
+											"id": "07f",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Prerequisite",
+															"entry": "Pistoleer表格"
+														}
+													]
+												},
+												"你创造了一把与你的枪械相匹配的刀，使你在近战和远程战斗中都成为致命的对手。在敌对生物的5英尺范围内，不会对你的远程攻击卷轴造成不利影响。此外，当你使用你的枪手形态进行射击时，你可以使用你的额外行动来攻击近战范围内的一个生物。做一个近战攻击卷。攻击卷使用你的灵巧修改器，并且你精通该攻击。一旦命中，攻击造成的砍击伤害等于（%0%）+你的灵巧修正值。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Caliber Net",
+											"id": "080",
+											"entries": [
+												"通过重新利用一些残余的Hextech零件，你为你的枪配备了一个奥术网，用来困住对手。作为一个行动，在你的枪械范围内选择一个生物。该生物必须在力量救赎上获得成功，否则会被（%0%）。在它的每个回合结束时，目标可以重复这个蓄力动作，如果成功则结束该效果。一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Collateral Damage",
+											"id": "081",
+											"entries": [
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Prerequisite",
+															"entry": "狙击手形式"
+														}
+													]
+												},
+												"你改变你的弹药，使其具有爆炸能力。当你用你的枪支成功击中一个目标时，在目标5英尺范围内的所有生物都必须在灵巧反射中成功，否则会受到{@dice 1d6}的刺穿伤害。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Crosshairs",
+											"id": "082",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Prerequisite",
+													"id": "083",
+													"entries": [
+														"5级",
+														"你为你的枪械装备了一个瞄准装置。如果你本回合没有移动，你可以作为一个额外的动作瞄准你的瞄准器，将你的速度降低到0，并在你使用枪手形态特征进行的所有攻击中给予你优势，直到你回合结束。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Double-Barrel",
+											"id": "084",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Prerequisite",
+													"id": "085",
+													"entries": [
+														"狙击手形态，5级",
+														"你在你的枪械上增加了第二个枪管。当你使用枪手形态时，你可以在一次行动中射击两次，而不是一次。这两次射击可以针对同一生物或不同的生物。每次射击都要进行单独的攻击卷。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Smoke Screen",
+											"id": "086",
+											"entries": [
+												"作为一个动作，你改变你的枪的发射装置，释放一阵灰烬和烟雾。这团烟形成一个10英尺的立方体，以你在枪械范围内选择的一个点为中心，在拐角处扩散，这个立方体所覆盖的区域被认为是严重遮蔽的。这种烟雾持续10分钟，并且不能被驱散。一旦你使用这个功能，你就不能再使用它，直到你完成一个短或长的休息。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Major Firearm Upgrades",
+									"id": "087",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Barrage",
+											"id": "088",
+											"entries": [
+												"作为一个动作，你可以发射一连串的子弹。在以你为中心的15英尺范围内的每个生物都必须做一个灵巧的蓄力动作，失败时受到相当于{@dice 3d10}+你灵巧修饰的穿刺伤害，成功时受到一半的伤害。一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Double Up",
+											"id": "089",
+											"entries": [
+												"当你用枪械的远程武器攻击成功击中一个生物时，你可以立即使子弹击中原目标15英尺内的另一个生物。第二个目标受到的穿刺伤害等于你的灵巧修正值（最少一个）。你可以用这种方式改变子弹的方向，次数与你的魅力修饰值相同，并且在短暂或长时间休息后恢复所有消耗的使用。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Lightning Round",
+											"id": "08a",
+											"entries": [
+												"你在你的枪械上装备了一块不稳定的偷来的Hextech，使你可以在你的回合中释放出一道刺眼的电光作为行动。闪电从你身上射出，形成一条宽1英尺、长30英尺的直线。在这条直线上的每个生物都必须做一个灵巧的蓄力动作，如果失败会受到{@dice 3d8}的闪电伤害，如果成功会受到一半的伤害。一旦你使用这个特性，你就不能再使用它，直到你完成一个短期或长期休息。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Trial by Fire",
+											"id": "08b",
+											"entries": [
+												"作为一个额外的动作，你可以用炽热的力量为你的武器充电。直到你下一回合开始，每当你成功攻击时，你会造成相当于你战士等级一半的额外火焰伤害，四舍五入。你可以用这种方式为你的武器充电，次数等于你的魅力修改器（最少一次），并在短暂或长时间休息后恢复所有使用。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/038-twisted-fate-2.png"
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Roguish Archetype: Wild Card",
+							"id": "08c",
+							"entries": [
+								"有些流氓喜欢磨练他们的技能和精确性，其他人则喜欢完善银色的舌头，但你......嗯，你总是喜欢把事情交给机会去做。",
+								"狂牌类的流氓在游戏桌上的高额赌注和随机的刺激中茁壮成长。这些狡猾的赌徒拥有狡猾的作弊手段和不小的运气，他们按自己的规则生存和死亡，从不热衷于简单地接受命运给他们的手。",
+								{
+									"type": "entries",
+									"id": "08d",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Tricks Up the Sleeve",
+											"id": "08e",
+											"entries": [
+												"你对游戏的嗜好使你有能力巧妙地操纵财富对你有利。当你在3级选择这个原型时，你学会了（%0%）的咒语。从9级开始，它对你的范围是30英尺，你可以把它作为一个奖励动作来施放。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Wild Card's Gambit",
+											"id": "08f",
+											"entries": [
+												"同样在3级时，你获得对以下游戏套装之一的熟练度：（%0%）、（%1%）或（%2%）。",
+												"你所选择的博弈套路授予你一个野牌的赌法，详见下文。如果你精通多种类型的游戏组合，你必须在获得此功能时选择使用哪种赌法。每当你在这个等级中获得一个等级时，你可以改变你选择的赌博方式。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Loaded Dice",
+											"id": "090",
+											"entries": [
+												"你获得一个D6池，等于你为你的偷袭伤害所掷的D6数量。(你的池子在3级时以{@dice 2d6}开始，在5级时增加到{@dice 3d6}，以此类推。)",
+												"当一个生物以你为攻击目标时，你可以用你的反应从骰子池中花费一个骰子，并从攻击中减去掷出的数字。你可以选择在生物进行掷骰子之后，但在DM决定攻击卷是否命中之前使用此功能。从9级开始，你可以一次从骰子池中花费最多两个骰子，而从17级开始，你可以一次花费最多三个骰子。当你完成一次长时间的休息时，你会从你的装填骰子池中重新获得所有消耗的骰子。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Dragonchess",
+											"id": "091",
+											"entries": [
+												"你对棋盘的精通使你成为战场上熟练的战术家。作为你回合中的额外行动，你可以执行以下的国际象棋动作之一。你可以以这种方式使用奖励动作，次数等于你的魅力修改器（最少一次），并在长时间休息后恢复所有使用。",
+												{
+													"type": "list",
+													"style": "list-hang-notitle",
+													"items": [
+														{
+															"type": "item",
+															"name": "Dragon",
+															"entry": "选择一个你能看到的在你30英尺范围内的生物。在你下一回合开始前，该生物第一次成功地进行攻击卷，就会造成与你本级别的等级相等的额外伤害。"
+														},
+														{
+															"type": "item",
+															"name": "Griffon",
+															"entry": "你的移动速度增加10英尺，而且你的移动不会引起机会攻击。这些好处一直持续到你下一回合的开始。"
+														},
+														{
+															"type": "item",
+															"name": "Sylph",
+															"entry": "你和你周围5英尺范围内的所有友好生物在灵巧救赎上有优势，直到你下一个回合开始。"
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Playing Cards",
+											"id": "092",
+											"entries": [
+												"你已经形成了一种基于蛇岛的卡曼术的战斗风格。你拥有自己的魔法卡牌，并能通过手腕的弹动使其边缘变得锋利。如果你本回合还没有使用偷袭，你可以使用你的行动，拿起其中一张牌，用它攻击30英尺内的生物。这个功能的攻击卷轴使用你的灵巧修饰，一旦命中，就会造成等于（%0%）+你的灵巧修饰的斩击伤害。当你掷出伤害时，请看掷出的数字（%1%）。攻击会根据掷出的数字获得一个随机效果，详见下面的野卡套装表。",
+												"你可以以这种方式使用卡片进行攻击，次数与你的魅力修饰值相等（最少一次），并在长时间休息后恢复所有使用。",
+												{
+													"type": "table",
+													"caption": "Wild Card Suit Table",
+													"colLabels": [
+														"Damage die (d4)",
+														"Suit"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"刀片。掷出你的偷袭伤害，并将其加入你的剃刀牌的伤害。在其下一回合开始时，目标受到的额外伤害等于所滚动的偷袭伤害的一半。"
+														],
+														[
+															"2",
+															"枷锁。直到你下一回合开始，目标的速度减半。当它的速度以这种方式降低时，它在其回合中不能进行一次以上的攻击。"
+														],
+														[
+															"3",
+															"心灵。滚动你的偷袭伤害并将其加入你的剃刀卡的伤害。你也立即恢复与所受伤害的一半相等的命中率。恢复的任何多余的命中率都成为临时命中率。"
+														],
+														[
+															"4",
+															"野生A。这张牌会根据庄家的意愿而变换花色。选择 \"刀\"、\"枷 \"或 \"心\"。然后这张牌立即获得相应花色的效果。"
+														]
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Shifting the Odds",
+											"id": "093",
+											"entries": [
+												"从第9级开始，你敏锐地意识到如何在你领先时退出，当机会开始对你不利时，你会瞬间消失。作为一个额外的动作，你可以以一种戏剧性的姿态消失。在你10英尺范围内的每个生物都必须做一个灵巧的蓄力动作（DC8+你的熟练度加成+你的魅力修饰），如果蓄力失败会受到（%0%）武力伤害，如果蓄力成功会受到一半的伤害。",
+												"然后你会把自己传送到一个你能看到的、离你原来位置120英尺以内的无人空间。一旦你使用了这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Twist of Fate",
+											"id": "094",
+											"entries": [
+												"在13级时，你对游戏桌的掌握磨练了你在战斗中的速度和狡猾。在滚动主动权之后，但在战斗的第一个回合之前，你可以选择与你能看到的一个生物交换主动权的位置。如果该生物是你的盟友之一，该盟友必须同意与你交换主动权。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Joker Wild",
+											"id": "095",
+											"entries": [
+												"在17级时，你对机会的掌握甚至包括了你自己的形态，使你能够存在于潜在的现实世界之间。作为你回合中的额外行动，你可以变成无体的形态，在此期间你会获得以下好处。",
+												{
+													"type": "list",
+													"items": [
+														"你为你的野牌的Gambit功能重新获得消耗的力量。",
+														{
+															"type": "list",
+															"items": [
+																"{@b {@i Cards}.} 你会重新获得该功能的所有已用次数。",
+																"{@b {@i Dragonchess}.} 你会重新获得该功能的所有已用次数。",
+																"{@b {@i Dice}.} 你重新获得所有已用的骰子。"
+															]
+														},
+														"你的移动速度增加一倍。",
+														"你获得对所有伤害的抵抗力，并对{@condition grappled}、{@condition paralyzed}、{@condition stunned}和{@condition restrained}的状况免疫。",
+														"你可以在物体和生物中移动，就像它们是困难地形一样。如果你在一个生物体内结束你的回合，该生物会受到{@dice 1d10}力的伤害，并被分流到他们原来位置5英尺内的一个邻近空间。"
+													]
+												},
+												"这种无体状态会持续一分钟，或者直到你的状态为（%0%）。一旦你使用这个功能，你就不能再使用它，直到你完成一个长时间的休息。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 3: Herald of the Harrowing",
+					"id": "096",
+					"entries": [
+						"俗话说：\"在比尔吉沃特，从来没有枯燥的一天。从勇敢的走私者到公海上的传奇怪物狩猎，这座港口城市充满了冒险。",
+						"这一章介绍了 \"荒芜的先驱\"，这是一个简短的冒险，可以帮助冒险者在比尔吉沃特开始他们的活动。当一个酒馆的夜晚变得漆黑一片时，冒险者们发现自己正在与阴影搏斗，调查幽灵般的港口，陷入了一场为城市本身而战的战斗。如果你打算以玩家的身份体验这次冒险，现在就不要再看了",
+						{
+							"type": "section",
+							"name": "Background",
+							"id": "097",
+							"entries": [
+								"虽然比尔吉沃特的许多居民通过屠宰船队和雕刻海湾赚取生活费，但也有少数人从事废品回收工作，从海水深处挖出沉船，打捞他们能找到的任何部件。最近，这样的一群铲运工在比尔吉沃特湾的底部发现了一艘巨大的沉没的大帆船（%0%）。虽然很多人都很兴奋地想在它腐烂的船体中找到什么有价值的宝物，但一些比尔吉沃特的居民却很担心，认为这艘船对城市的未来是个不祥之兆。",
+								"他们的猜测被证明是正确的，在一些夜晚，黑暗魔法的卷轴从阴影岛伸出来，并抓住了沉船，使其在城市中喷出了充满亡灵的黑雾。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Overview",
+							"id": "098",
+							"entries": [
+								"\"荒芜的先驱 \"是一个为3级人物的聚会设计的冒险。该冒险可分为以下几点。",
+								{
+									"type": "list",
+									"items": [
+										"在Brazen Hydra酒馆发生斗殴事件后，黑雾开始吞噬比尔吉沃特湾。亡灵在街道上肆虐，这就是所谓的 \"蹂躏\"，一种来自阴影群岛的祸患。",
+										"冒险家们被比尔吉沃特的现任领导人（%0%）或该市的前掠夺者国王（%1%）所招募，前往比尔吉沃特的打捞码头，将这艘位于这次劫难中心的船拆毁。",
+										"在打捞码头，冒险者们与阴影群岛的（%0%）对峙，必须在哈罗夫人将城市全部吞噬之前摧毁沉船。"
+									]
+								},
+								"如果你的玩家想在冒险过程中提升等级，建议他们在第一部分结束时提升等级。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/041-bilgewater-bar.png"
+									}
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Part 1: Grim Shadows",
+							"id": "099",
+							"entries": [
+								"当水手们经过一天的辛勤劳作回到港口时，比尔吉沃特湾的空气中充斥着各种传说。但其中有些故事是事实而非虚构的，当一个酒馆顾客的胡言乱语被证明比预期的更真实时，整个老鼠镇发现自己被吞噬在黑雾中的一个大劫。这些人物必须在阴影中战斗，并达成不可能的交易，所有这些都是为了摆脱这个城市的黑暗。",
+								{
+									"type": "entries",
+									"name": "Where to Start",
+									"id": "09a",
+									"entries": [
+										"这个冒险假设人物已经认识，并且正在比尔吉沃特最著名的酒馆--Brazen Hydra过夜。角色们是如何认识的，由小组决定：他们可以是一群雇佣兵，也可以是寻找闲钱的海盗团，或者只是在夜晚休息时放松的航海伙伴。另外，你也可以在每个角色进入Brazen Hydra的时候开始这个冒险，他们各自独立行动，然后在危险威胁到他们的时候团结起来。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Brazen Hydra",
+									"id": "09b",
+									"entries": [
+										"勇敢的九头蛇是一家喧闹的酒馆，坐落在一艘老式屠杀舰队大帆船的三层残骸中，是比尔吉沃特各种人渣和小人的温床。每时每刻都有台球高手和纸牌高手在酒馆的许多骰子桌上下注，还能听到衣衫褴褛的水手们向任何愿意倾听的人讲述他们最近的航海经历。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/042-LoR-decoration-09.png"
+											}
+										},
+										{
+											"type": "entries",
+											"name": "Patrons",
+											"id": "09c",
+											"entries": [
+												"鉴于九头蛇酒馆的知名度，酒馆周围不乏有趣的面孔。目前占据酒馆的两个最响亮的顾客是废柴塔拉-肯顿和卑鄙的扒手戴恩-皮尔庞特。",
+												"塔拉（混乱中立，女性人类（%0%））是一个高大的女人，有着一头狂野的黑发和戏剧性的天赋，她在比尔吉沃特周围以喜欢讲故事而闻名。塔拉还秘密地与据说已经去世的前海狸王冈普兰克（Gangplank）结盟。由于她的母亲是纳卡布罗斯神庙的祭司之一，塔拉对潜伏在比尔吉沃特潮汐中的奇怪传说有更多的了解，而不是她一开始就说出来。",
+												"戴恩-皮尔庞特（中性，男性人类（%0%））听过他的塔拉的故事，知道要对她说的东西持谨慎态度。他经常和他的几个酒友坐在一起，大声嘲笑塔拉的传说。他的光头和厚厚的银色羊排很容易让经常去九头蛇的人认出。",
+												"角色们在Brazen Hydra里闲逛时还可能遇到无数的其他顾客。关于酒馆里更多有趣的面孔，请看冒险的（%0%）。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Tales From the Dark Depths ",
+											"id": "09d",
+											"entries": [
+												"当人物在Brazen Hydra放松时，他们听到一个狂妄的斗士讲述她最新的发现，这让其他顾客感到非常懊恼。阅读下面的内容来设置场景。",
+												{
+													"type": "insetReadaloud",
+													"id": "09e",
+													"entries": [
+														"你们坐在一张破旧的木桌旁，周围是喧闹的笑声和酣畅淋漓的比尔吉沃特最好的朗姆酒。在角落里，一个穿着艳丽的紫色大衣的女人把她的脚踢到桌子上。\"于是我们就在那里，\"她说，眼神肃穆，\"我和我的船员们，在那个被诅咒的残骸中挖掘。突然，\"嗖！\" 她扫了扫手臂，几乎打翻了一罐麦酒。\"一些黑暗的东西从地平线上俯冲下来。我告诉你们，我这辈子从来没有感觉到如此可怕和寒冷的东西！\"。我说，这艘船在闹鬼。我们不应该把那艘船从潮水中拉出来。\"",
+														"一个穿着深色衣服的蹲着的身影从几张桌子外走过来。\"来吧，塔拉，我们知道最好不要相信你的高谈阔论，现在！\""
+													]
+												},
+												"穿紫色衣服的女人是塔拉-肯顿。塔拉身材高大，有一头波浪形的银色黑发，有一种戏剧性的天赋，她刚从打捞码头工作回来，在那里她和一个小队一直在拆卸{@i Phantom's Ire}号的残骸。",
+												"但是穿黑衣服的人，Daine Pierpont，有其他的看法。达因不喜欢迷信和神话，他认为塔拉夸大了沉船的危险性，以便为自己索取更多的财宝。他交替地大声插话驳斥塔拉的故事，并安抚他那些醉醺醺的同伴，说他们会从沉船上得到他们那份宝贵的东西。",
+												"塔拉和达因的争吵在 \"九头蛇 \"的背景下继续进行，直到他们的争吵达到了一个爆发点。",
+												{
+													"type": "insetReadaloud",
+													"id": "09f",
+													"entries": [
+														"一个突然的喊声在人群中响起。\"我要让你们看看，如果你们不相信这个斗士的故事会发生什么！\" 指关节与骨头相撞，同一个穿着深色衣服的蹲着的男人被打飞了，因为那个穿紫色衣服的女人用拳头砸向他的脸。该男子的一个酒友把他从地上扶起来，而另一个人则向那女人扑去。酒吧里有人举起酒杯欢呼，喧闹的人群开始鼓动这场战斗。你是怎么做的？"
+													]
+												},
+												"塔拉、达因和达因的两个伙伴之间爆发了一场争吵，这两个伙伴都（%0%）像他们的朋友。达因试图在塔拉继续编造故事之前将她打倒；塔拉为了她认为的真相和她受伤的自尊而战斗。塔拉和达因都不想杀死对方；他们战斗只是为了捍卫自己的自尊。",
+												"如果人物决定介入战斗，让每个人都掷出主动权。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Siding with Tala",
+											"id": "0a0",
+											"entries": [
+												"如果有一个或所有的角色帮助塔拉，要么把达因和他的朋友打倒，要么把她从争吵中拉出来，队长会不情愿地感谢这些角色的帮助。",
+												"如果他们想知道更多的信息，塔拉很乐意向他们提供完整的故事：她和另外两个铲运工在三天前的晚上从比尔吉沃特湾深处挖出了{@i Phantom's Ire}。然而，每当她试图从大帆船上打捞出任何东西时，她发誓她发现有一卷影子穿过地平线向比尔吉沃特冲去。塔拉对魔法高度怀疑，认为这对城市的未来是个不祥之兆，因此一直敦促她的同伴们将沉船送回潮汐下的正确位置。",
+												"如果角色说他们相信她的故事，塔拉就会感谢他们，并承诺在未来帮助他们作为回报。如果一个角色想对塔拉撒谎说相信她的故事，他们必须在DC12魅力（{@skill Deception}）检查中取得成功。如果检查失败，或者如果一个角色直接说塔拉的故事是假的，塔拉就会在这个角色的脸上吐口水，然后暴走。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Siding with Daine",
+											"id": "0a1",
+											"entries": [
+												"如果有一个或所有的角色帮助戴恩，要么把塔拉打晕，要么把他和他的同伴从争吵中拉出来，戴恩会气喘吁吁地感谢这些角色的干预，并忙着检查他的酒友是否受伤。",
+												"在给他的伙伴们包扎时，达因解释说他无法忍受塔拉散布这种谎言。如果被问及此事，Daine会告诉大家{@i Phantom's Ire}。一个小型的废品回收队在三天前的晚上把残骸从海湾拉了出来，从那时起，绝望的废品回收者和小偷就一直试图把船上的一些有价值的部件据为己有。他还解释说，少数迷信的水手（\"当然，哪个水手不迷信呢？\"他补充说），认为这艘船被诅咒了，尽管他认为这只是一个诡计，让其他船员远离残骸。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Staying Back",
+											"id": "0a2",
+											"entries": [
+												"选择观看争吵的角色可以听到塔拉和达因争吵的片段。那些想更仔细地听的人必须进行DC12智慧（（%0%））检查。如果成功，该人物会听到双方的争论片段。塔拉坚信{@i Phantom's Ire}会给比尔吉沃特带来厄运，而达因则坚持认为她只是在编造这样的故事，让别人远离她那份宝藏。",
+												"如果没有任何角色决定介入这场争吵，塔拉在达因对她的肠子打出一记重拳之前就打倒了达因的两个同伴。她踉踉跄跄地走到酒吧柜台前又要了一杯饮料，而达因则被留在那里无力地包扎他朋友的伤口。在这种状态下，试图接近他们中的任何一个进行交谈，需要成功地进行DC13魅力（（%0%））检查。否则，对方将无视这些人物。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/043-the-harrowing.png"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Harrowing Begins",
+									"id": "0a3",
+									"entries": [
+										"然而，斗殴后笼罩在九头蛇上的不安的和平并没有持续很久。当人物在斗殴后与人们交谈完毕后，请阅读或转述以下内容。",
+										{
+											"type": "insetReadaloud",
+											"id": "0a4",
+											"entries": [
+												"一下子，酒馆吊灯上的蜡烛闪烁了一下，然后就熄灭了。门被冷风吹得吱吱作响，在从阴暗的窗户渗入的月光下，房间里的影子似乎拉长了。长出了长长的四肢，锋利的爪子，张开的嘴巴。他们自己从地上站起来。他们的眼睛应该在的口袋里闪烁着幽灵般的、饥饿的蓝色。"
+											]
+										},
+										"无数卷起的黑雾在老鼠镇的街道上延伸，成群的亡灵在街上撕咬。混乱的呼喊与恐慌的呼喊交织在一起，镇民们急忙拿起他们的武器，寻找庇护所。",
+										{
+											"type": "entries",
+											"name": "Encounter: Vanguard of the Harrowing",
+											"id": "0a5",
+											"entries": [
+												"这场遭遇战可以发生在九头蛇内，也可以发生在比尔吉沃特的街道上。当人物试图逃离黑雾时，他们发现自己被两个{@creature Barkbeast|LoRDToB|barkbeasts}和一个{@creature shadow}搭讪，他们都渴望为暗影岛索取灵魂。让每个人掷出主动权。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Aftermath",
+											"id": "0a6",
+											"entries": [
+												"一旦战斗停止，人物就会听到达因的声音在喧嚣中响起。他吼道：\"快到街垒去！\"他催促着混乱的镇民潮往街上走。跟随这群人，人物来到了屠夫桥（见\"{@book Butcher's Bridge|LoRDToB|3|Butcher's Bridge}\"），那里有劫难的幸存者在避难。",
+												"一个成功通过DC15智慧（{@skill Perception}）检查的角色注意到黑雾正从一个港口涌出，这个港口建在比尔吉沃特湾突出的众多岩石尖顶之一--城市的打捞码头。更勇敢的人可能会选择直接前往风暴之眼。在这种情况下，请直接前往{@book Part 2|LoRDToB|3|Part 2: Chasing Ghosts}。",
+												"塔拉也在暗中观察着这些人物。如果人物在酒馆争吵中与塔拉结盟，那么屠宰船队的船长就会接近他们，并承诺将他们带到安全的地方。然后塔拉通过一艘划艇护送他们到冈普兰克的船--{@i Dreadway}号（见\"{@book The Dreadway|LoRDToB|3|The Dreadway}\"）。",
+												"如果这些角色没有与塔拉结盟，成功进行DC14智慧（（%0%））检查的角色会发现塔拉的紫色海岸的飘动，消失在一条小巷中，远离其他人群。如果角色决定跟随她，他们必须成功进行DC 16的灵巧（{@skill Stealth}）检查，才能不被发现。塔拉与任何她认为在追踪她的人交手，并在逃跑时开枪。在无人注意的情况下跟随她来到一个小型橡皮艇的码头，角色们在那里看到她在向{@i Dreadway}划船。角色可以乘坐自己的划艇跟随（见\"{@book The {@i Dreadway}|LoRDToB|3|The Dreadway}\"）。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "A Tale of Two Captains",
+									"id": "0a7",
+									"entries": [
+										"莎拉-财富小姐和海贼王Gangplank之间的冲突是不折不扣的传奇。许多人认为船长之间的战争在六个月前就已经结束了，当时财富小姐轰炸了刚普兰克的船{@i Dead Pool}，表面上看是杀死了其海盗船长。但冈普兰克活了下来，现在，在布赫鲁人的支持下，他的目标是夺回比尔吉沃特的领导权。",
+										"根据人物在第一次遇到哈罗夫后所到的地点，他们可能会发现自己与（%0%）或（%1%）的人结盟。",
+										{
+											"type": "entries",
+											"name": "Butcher's Bridge",
+											"id": "0a8",
+											"entries": [
+												"当人物冲向屠夫桥时，惊恐和木头劈裂的声音迎面而来。",
+												{
+													"type": "insetReadaloud",
+													"id": "0a9",
+													"entries": [
+														"鼠城的街道很快就让位于一座破败的石桥，桥上有一扇沉重的木门。紧急的呼喊声充斥着你的耳朵。\"快，把门堵上！不要让那些雾气通过！不要让任何雾气通过！\" 你推开人群，在大门被重重关上之前，跌跌撞撞地走到另一边。"
+													]
+												},
+												"逃过老鼠镇大劫难的少数幸存者（约5人（0%）和10人（1%））挤在屠夫桥边，照料他们的伤口。在大门对面的桥端，耸立着纳卡布罗斯神庙的塔楼。",
+												"幸存者之一是达因，但他两个受伤的朋友都被影子岛的生物杀死了。如果人物在酒馆斗殴中站在达因一边，或者选择不干预，那么扒手的声音就会表达出惊讶和遗憾，他用空洞的笑声解释说，他从未想到塔拉的故事是真的。如果这些人物站在塔拉一边，达因则沮丧地咆哮着说他们信任她是正确的决定。",
+												"不管怎么说，Daine解释说他为传奇人物Sarah Fortune小姐工作，她召集了她所有的忠诚者到寺庙，寻找有能力的战士在打捞码头清理被诅咒的沉船，并为成功的任务提供相当大的奖励。考虑到他们在老鼠镇上与阴影对抗时的表现，他建议这些人物去和她谈谈。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/044-miss-fortune.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Temple of Nagakabouros",
+											"id": "0aa",
+											"entries": [
+												"寻找 \"财富小姐 \"将人物带入寺庙的主院。",
+												{
+													"type": "insetReadaloud",
+													"id": "0ab",
+													"entries": [
+														"你的脚步在寺庙古老的石厅中回响，直到你出现在一个宽阔的院子里，院子里装饰着几十座咆哮着的獠牙蛇雕像。在远处站着一个年轻的女人，火红的头发从时尚的海盗帽下翻卷而过，身边放着两把雕刻精美的手枪。她的上衣沾满了烧焦的痕迹。她笑着向你打招呼，并点头说：\"我听说有一群战士在老鼠城救了很多人。也符合你的描述。你是他们吗？\""
+													]
+												},
+												"虽然平时自信而迷人，但{@creature Miss Fortune|LoRDToB}的心情却很糟糕，她不惜一切代价向大家解释情况。她告诉角色们，她发现有一根黑雾的卷须从暗影岛伸出来，将比尔吉沃特打捞码头的一艘沉船套住，这让她相信暗影岛的某个更强大的幽灵已经控制了这艘沉船，并打算用黑雾吞噬整座城市。一个成功通过DC15智慧（{@skill Insight}）检查的人物会直觉到，在她坚强的外表下，财富小姐被这些事件深深地震撼了，并且真正关心那些生活在比尔吉沃特的人的福祉。",
+												"财富小姐提供给角色们每人25戈比，如果他们成功地将被诅咒的沉船打捞起来并送回海浪之下。试图谈判的角色必须进行DC13魅力（{@skill Persuasion}）检查。如果成功，财富小姐要么同意将最后的报酬提高到30戈比，要么先付给每个角色10戈比，但不能同时支付。",
+												"一旦交易完成，\"财富 \"小姐会给每个角色一个{@item powder keg|LoRDToB}，帮助他们拆船，并将角色指向打捞码头。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/045-Slaughter_Docks_3.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Dreadway",
+											"id": "0ac",
+											"entries": [
+												"划过比尔吉沃特湾时，人物看到令人生畏、像鲨鱼一样的{@i Dreadway}船体从雾中升起。",
+												{
+													"type": "insetReadaloud",
+													"id": "0ad",
+													"entries": [
+														"一艘巨大的船的影子在你面前晃动，像眼睛一样的灯光在它的船头闪着绿色的光芒。两门大炮从刻在船头的鲨鱼嘴里升起，黑色的船帆在风中飘扬。"
+													]
+												},
+												"如果人物没有塔拉的陪伴，他们必须在DC18的团体灵巧（（%0%））检查中取得成功，以避免被Gangplank的各种监视者注意。如果失败的次数多于成功的次数，队伍就会被发现（见 \"被俘的观众\"）。如果成功，一行人可以不受阻碍地登上(1%)，混入Gangplank的盟友的杂乱人群中。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "A Captive Audience",
+											"id": "0ae",
+											"entries": [
+												"如果一行人被发现了，甲板上就会响起一阵喊声。\"间谍们，从右舷船头出发！\" 然后，船员们将多门大炮对准人物的小船，要求他们投降。成功通过DC13魅力（（%0%）或（%1%））检查后，船员们相信这些人物不是间谍，但船员们仍然要求他们登上（%2%）号。",
+												"一旦上了船，这些人物就会与咸水祸害本人面对面。",
+												{
+													"type": "insetReadaloud",
+													"id": "0af",
+													"entries": [
+														"在你面前站着一个高大的男人，他的胡子像风暴云一样灰暗，在破旧的船长帽下，眼睛炯炯有神。一只完全由吱吱作响的铁器和齿轮组成的手，握着一把凶狠的弯刀的刀柄。\"以为像你们这样的狗可以偷袭老江湖，嗯？\"他冷笑道。\"你们以为我还在潮水中腐烂吗？哈! 再想想吧。\""
+													]
+												},
+												"Gangplank很想阻止他的生存消息传到比尔吉沃特，并考虑杀死这些人物以确保他们保持沉默。然而，经过片刻的思考，他提出了一个交易：如果角色们能够阻止目前在城市中肆虐的黑雾，他将让他们带着他们的生命离开他的船。一个成功通过DC15智慧（（%0%））检查的角色会直觉到，尽管Gangplank为了权力采取了种种手段，但他还是关心这个城市--至少在他回到自己的王位后还能留下一些东西来统治。如果这些人物拒绝Gangplank的提议，他会把他们扔进{@i Dreadway}的牢房，直到他们重新考虑。",
+												"一旦同意，Gangplank强迫人物进入{@i Dreadway}的一艘救生船，并让他们驶向比尔吉沃特的众多打捞码头之一，在那里他可以看到比尔吉沃特最浓的黑雾浓度。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/046-gangplank.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Captain's Orders",
+											"id": "0b0",
+											"entries": [
+												"如果被塔拉带到{@i Dreadway}上，或在未被发现的情况下登船，就会遇到{@creature Gangplank|LoRDToB}焦急地看着黑雾吞噬比尔吉沃特。",
+												{
+													"type": "insetReadaloud",
+													"id": "0b1",
+													"entries": [
+														"在身着布赫鲁服饰的海盗和圣徒的人群中，一个有着暴风雨般的眼睛和狂野的灰色胡须的高大男子--咸水之祸，在比尔吉沃特的大多数人看来早已死亡。一只完全由铁和齿轮组成的手靠在船舵上。\"血腥的萨拉-福克斯将无法抵御另一个哈罗夫的城市，\"他喃喃自语。\"我希望在我回来的时候还能留下一座城市。\""
+													]
+												},
+												"冈普兰克提供了20金币和一个在他的精英战士中的位置给任何帮助赶走这个骚扰的人。如果这些人物在布拉辛九头蛇时帮助过塔拉，她会亲自推荐他们去做这个工作。冈普兰克很固执，拒绝在他的条件上让步，但如果一个角色成功地进行了DC18魅力({@skill Persuasion})检查，就可以用甜言蜜语说服他先支付每个人5戈比。",
+												"一旦交易完成，Gangplank会给每个角色一个{@item powder keg|LoRDToB}，并借给他们一艘{@i Dreadway}的救生艇。然后他给他们指出打捞码头的方向，他在那里发现了黑雾的聚集。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Pursuing the Mist",
+									"id": "0b2",
+									"entries": [
+										"无论是陆路还是海路，角色们都要前往打捞码头。你可以把这段旅程当作短暂的休息，让角色消耗命中率并重新获得其他资源。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Part 2: Chasing Ghosts",
+							"id": "0b3",
+							"entries": [
+								"任务在手，人物跟随黑雾号前往打捞码头。作为这次劫难的中心，这里被遗弃，一片狼藉。这场劫难的核心是{@i Phantom's Ire}，一艘被挖出来的鬼船，现在由影子岛的一个可怕的战士掌舵。",
+								{
+									"type": "entries",
+									"name": "The Salvage Docks",
+									"id": "0b4",
+									"entries": [
+										"这个码头位于比尔吉沃特湾的一个孤立的岩石尖顶上，是该市许多废品商的作业基地，他们以从深海中挖出沉船并打捞出其可用的部件为生。一条加固的木板路从比尔吉沃特本土延伸到尖顶，但也很容易乘船到达。码头基本上是空的；尽管铲运工是一个狡猾而机智的群体，但他们不适合战斗，因此很快就被黑雾淹没了。",
+										{
+											"type": "entries",
+											"name": "Regional Effects",
+											"id": "0b5",
+											"entries": [
+												"作为 \"蹂躏 \"的中心，暗影岛的黑暗魔法使打捞码头变得不正常。不管是来自纳卡布罗斯神庙还是来自Gangplank的{@i Dreadway}，一种不自然的寒意刺痛了人物的后背，粘稠的雾气附着在他们身上。当人物开始探索附近时，请记住以下几点。",
+												{
+													"type": "entries",
+													"name": "Pestilence",
+													"id": "0b6",
+													"entries": [
+														"在打捞码头一英里范围内的所有植物看起来都是枯萎的；叶子是墨黑色的，茎上有幽灵般的白色斑点。吃了枯萎植物的生物会病得很厉害，必须做一个DC15的宪法救赎动作，否则就会被（%0%）1小时。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Light",
+													"id": "0b7",
+													"entries": [
+														"阴暗的阴影一直笼罩着这个地区。除非另有提及，否则整个地区的光线都很暗（见《D&D》{@book chapter 8|PHB|-1}中的\"{@book Vision and Light|PHB|8|Vision and Light}\"{@book Basic Rules|PHB}。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Eyes in the Dark",
+									"id": "0b8",
+									"entries": [
+										"当黑雾的卷轴从暗影岛延伸到{@i Phantom's Ire}的时候，它带来了不死的指挥官莱德罗斯。这个被诅咒的幽灵被束缚着，为暗影岛夺取了打捞码头，并与暗影岛的其他亡灵军团一起，旨在蹂躏整个比尔吉沃特。",
+										"莱德罗斯呆在{@i Phantom's Ire}号上，它停靠在附近的北港；任何向北看的人物都能看到{@i Phantom's Ire}号破烂的鬼帆在该地区上空的微风中摇摆。一些{@creature Shadow||shadows}的人在街上巡逻，扼杀了该地区任何剩余的生命。",
+										"每当人物进入地图的一个新区域，他们必须进行DC10的灵巧（（%0%））检查。为了避免被发现，群体中成功的数量必须多于失败的数量。如果人物在前一个区域参与了战斗，那么这些检查是以劣势进行的。",
+										"一个角色可以通过做DC14智慧（（%0%））检查来搜索隐藏在黑雾中的潜在侵略者。如果成功，角色会注意到一个{@creature shadow}在窥视他们的队伍。如果角色选择参与战斗，将影子的命中率降低到0，就可以防止它向指挥官Ledros报告，而角色仍然没有被发现。",
+										"阴影被束缚在黑雾中，无法进入至少部分未被黑雾覆盖的空间（见地图）。然而，人物在打捞码头探索的时间越长，黑雾扩散的程度就越大。如果你愿意，你可以每分钟在地图上任何地方用黑雾填满一个新的10英尺乘10英尺的正方形区域，但你可以加快或放慢这个速度，这取决于你想让 \"劫难 \"变得多么可怕。",
+										"追踪莱德罗斯的爪牙是否注意到人物的存在。这将影响到与他的最后交锋。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/047-Slaughter_Docks_2.png"
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Areas of the Salvage Docks",
+									"id": "0b9",
+									"entries": [
+										"在一片废墟中，这一带只不过是沿着裂开的街道的各种摇摇欲坠的库房而已。码头上的老鼠和其他害虫在酒馆的残垣断壁中乱窜，一些残破的船只在码头上漫无目的地晃动。",
+										"以下区域是地图上的关键。如果人物从Nagakabouros的寺庙到达，他们通过Warren（（%0%））进入该地区。如果人物是从Gangplank's {@i Dreadway}到达的，他们从Scouts'Waterfront ({@book area 3|LoRDToB|3|3. Scouts' Waterfront})进入该地区。",
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/048-map-3.1-docks-DM.jpg"
+													},
+													"title": "Map 3.1: docks DM",
+													"imageType": "map"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/049-map-3.1-docks-player.jpg"
+													},
+													"title": "Player Version",
+													"imageType": "mapPlayer"
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "1. The Warren",
+											"id": "0ba",
+											"entries": [
+												"由于许多进入这一带的主干道都被蹂躏得面目全非，这一系列蜿蜒曲折的小巷成为进入比尔吉沃特残余码头的主要通道。这些通道散发着腐烂的鱼腥味，但没有害虫在翻倒的箱子和废弃的建筑中翻找，使它们变得异常寂静。像{@spell detect magic}这样的效果，让人感觉到一种渗入沃伦的土地中的挥之不去的亡灵的存在，从而深入到街区的中心。华伦街的尽头将人物送入卡瑞克街。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0bb",
+													"entries": [
+														"想要搜索这个区域的人物可以进行DC14智力（（%0%））检查。如果成功，他们会发现一个生锈的（%1%）和（%2%）sp。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "2. Carrack Row",
+											"id": "0bc",
+											"entries": [
+												"曾经是这个地区的商业中心，现在不过是一个空壳。在破败的街道上，恶毒的火药痕迹与褪色的血迹并存，以前商店破裂的窗户在微弱的风中闲置地吱吱作响。在码头的入口处，坐落着一个似乎是酒馆的遗迹，由两个翻转的船体夹在一起建成。碎裂的门上有褪色的油漆，写着 \"百灵鸟\"。",
+												"大多数建筑物的入口仍然无法进入，它们的门洞在大劫难中凹陷并被瓦砾覆盖，但人物可以通过成功的DC12力量（（%0%））检查强行通过游隼号的破门。如果人物进入酒馆，就跳到游隼号上（{@book area 5|LoRDToB|3|5. The Peregrine}）。",
+												"巡查卡拉克街其他建筑的角色会遇到3个（%0%）潜伏在该地区的黑雾中。这些亡灵试图继续他们以前的生活动作，为货架补货和清洁柜台。如果这些程序被打断，这些骷髅就会攻击入侵者。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "3. Scouts' Waterfront",
+											"id": "0bd",
+											"entries": [
+												"西边的这组较小的码头通常是由小型侦察船使用的，它们在派出较大的打捞人员之前，会搜索和标记潜在的沉船区域。但现在，这些码头已经破败不堪，发黑的藤壶涂在腐烂的木桩上。当人物踏上这些木板时，断裂的木板发出吱吱的响声和下垂的声音。离仓库更近的地方有一个废弃的小棚子，曾经是码头负责人的办公室。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0be",
+													"entries": [
+														"好奇的角色在检查棚子内部时发现了一具穿着凹陷（%0%）的骷髅遗骸，这具骷髅可以被人类角色（或其他中等大小的人形生物）抢救出来，并穿上精通中等盔甲。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "4. Warehouses",
+											"id": "0bf",
+											"entries": [
+												"这些仓库曾经储存了无数的设备和从各种残骸中打捞出来的宝物。百灵鸟酒店就坐落在卡拉克街和仓库之间，这个酒馆曾经是疲惫不堪的码头工人在漫长的一天之后的一个常见的休息场所。",
+												"黑雾涌向仓库的一个角落。除了\"{@book Eyes in the Dark|LoRDToB|3|Eyes in the Dark} \"中提到的潜伏在整个地区的间谍{@creature Shadow||shadows}之外，还可以发现莱德罗斯的一个幽灵般的蓝色准将（使用{@creature specter}统计）在废弃的仓库中移动。当迷雾侵袭该地区时，准将与该地区随处可见的各种尸体进行交流，召唤出2个（3%）。",
+												"如果角色试图与准将交战，灵魂会命令僵尸与角色战斗，然后逃到{@i Phantom's Ire}并提醒Ledros角色的存在。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "5. The Peregrine",
+											"id": "0c0",
+											"entries": [
+												"百灵鸟曾经是一家热闹的酒馆，建在两个翻转的船壳内，现在里面充满了尘土飞扬的翻转的桌子和破碎的酒罐。",
+												"如果人物与财富小姐结盟，他们还会遇到三只（%0%）在酒馆里翻找。码头老鼠的领地性极强，一看到人物就会攻击他们。",
+												"如果人物与Gangplank结盟，他们反而会遇到三个{@creature Powder Monkey|LoRDToB|powder monkeys}从椽子上吊下来。角色可以通过成功的DC13智力({@skill History})检查来识别这些暴躁的生物是财富小姐的走狗。除非受到挑衅，否则这些粉猴不会参与战斗。一旦其中一只粉猴的命中率降至0，其余的粉猴就会试图逃跑，并将它们看到的情况告知财富小姐。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0c1",
+													"entries": [
+														"一个角色检查了酒吧后面的破损货架，并成功地进行了DC10智力（（%0%））检查，发现在一个已经空了的朗姆酒瓶后面藏了3（%1%）。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "6. The Wreck of the Telemachus",
+											"id": "0c2",
+											"entries": [
+												"卡雷克街和仓库都与这些主要码头相连。虽然大部分都被遗弃了，但可以发现一些随潮水晃动的沉船，其中最近的是一艘名为\"%0%\"的单桅帆船的残骸。",
+												"0％的人坐在一个辅助码头上。时间让木板腐烂，在码头上留下分裂的孔洞，一只饥饿的{@creature abyssal eye|LoRDToB} 跃过这些破碎的部分，呲牙咧嘴。希望穿过破损的码头并进入{@i Telemachus}的角色必须成功地进行DC14灵巧（{@skill Stealth}）检查。如果失败，深渊之眼就会从水中跃起，用它的 \"去鱼 \"能力对角色进行撕咬攻击。",
+												"暴风雨严重削弱了{@i Telemachus}号的结构完整性。每次只有两个中型生物，或一个中型生物和两个小型生物可以登上（%%）。如果有更多的生物登上沉船，这艘船就会开始下沉，船上的所有角色都必须成功地进行DC12力量救赎，否则就会被下沉的碎石压住。被钉住的角色开始溺水（见D&D {@book Basic Rules|PHB}第8章中的\"{@book Suffocating|PHB|8|Suffocating}\"），但在以后的回合中可以重复力量救赎的动作，成功后可以逃离废墟。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0c3",
+													"entries": [
+														"如果探索忒勒马科斯号残骸的人物成功地进行了DC13智力（（%0%））检查，那么该人物会在废弃的货物中找到一个（%1%）。如果该检定成功5次或更多，则可找到一组（%2%）。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "7. The Phantom's Ire",
+											"id": "0c4",
+											"entries": [
+												"这艘巨大的幽灵般的大帆船坐落在码头的尽头。它的船体上曾经破碎的部分现在已经用幽蓝的木头重建起来，而一个像饥饿的大嘴一样的船头则涌动着黑雾。",
+												"{@i Phantom's Ire}有一个荒芜的顶层甲板，在船的前部和后部有高台，中心有一个大的单体桅杆。到甲板下发现了一个完全荒芜的船舱，指挥官Ledros正在等待船上的角色。当人物登上{@i Phantom's Ire}号时，进入 \"与指挥官对峙\"。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/050-ledros.png"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Confronting the Commander",
+									"id": "0c5",
+									"entries": [
+										"指挥官莱德罗斯在人物登船时如何问候他们，取决于莱德罗斯是否发现他们在附近出现。",
+										{
+											"type": "entries",
+											"name": "Encounter: Ledros Expectant",
+											"id": "0c6",
+											"entries": [
+												"如果人物被发现，（%0%）正在等待他们。他站在甲板中央，绕着桅杆踱步。",
+												{
+													"type": "insetReadaloud",
+													"id": "0c7",
+													"entries": [
+														"船只的灰色木头在你脚下吱吱作响，破旧的船帆在你头顶沙沙作响。在弯曲和呻吟的桅杆旁，站着一个身穿发黑盔甲的高大身影，鬼魅般的绿色笑容在他的头盔后面伸展得不可能再宽。他的一只手拿着一面参差不齐的盾牌，另一只手紧握着一把断刀，诅咒的雾气从其锋利的边缘飘散。",
+														"\"那么，你是来看看莱德罗斯指挥官的威力的，\"他说。他的声音隆隆作响，就像一千个灵魂同时在说话。\"你应该乖乖地离开。\""
+													]
+												},
+												"莱德罗斯立即使用他的Harrowing Mist能力，将{@i Phantom's Ire}的甲板覆盖在蠕动的黑雾中。让大家掷出主动权。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Encounter: Ledros Surprised",
+											"id": "0c8",
+											"entries": [
+												"还没有意识到人物的存在，{@creature Commander Ledros|LoRDToB}站在船头，望着比尔吉沃特的方向。阅读或转述以下内容。",
+												{
+													"type": "insetReadaloud",
+													"id": "0c9",
+													"entries": [
+														"在这艘船的舵手，站着一个身穿黑色盔甲的威武身影，身体该有的缝隙反而充满了幽幽的绿光。他的目光扫过汹涌的黑雾，涌向比尔吉沃特，发出沉重的叹息，听起来就像一千个灵魂在说话。",
+														"\"这次我不会失败，\"他对自己说，握紧了手中的断剑。\"每一步都让群岛更接近解救。\""
+													]
+												},
+												"试图在不引起他注意的情况下登船的角色必须进行DC11灵巧（{@skill Stealth}）检查。如果成功，角色就能给莱德罗斯一个惊喜（见D&D{@book Basic Rules|PHB}第九章的\"{@book Surprise|PHB|9|Surprise}\"）。每个人都会掷出主动权，被惊动的生物会失去他们在主动权顺序中的第一回合。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Blood in the Water",
+									"id": "0ca",
+									"entries": [
+										"当{@creature Commander Ledros|LoRDToB}的命中率降至0时，他发出刺耳的死亡之声，震动了船的内部。",
+										{
+											"type": "insetReadaloud",
+											"id": "0cb",
+											"entries": [
+												"一声痛苦的呻吟从船体上回荡。\"不！\" 莱德罗斯尖叫起来。更多的劈啪声和碎木声从船体上回荡，桅杆在你头顶摇晃。很快，指挥官身形的边缘褪去了烟雾，随着船体的再次摇晃，他盔甲的严酷边缘变成了薄雾。\"我已经被打碎过一次，我不会再被打碎。你还没有看到莱德罗斯的最后一面！你很快就会尝到我不朽的愤怒。你很快就会尝到我不朽的怒火！\""
+											]
+										},
+										"莱德罗斯指挥官的幽灵形态消失在迷雾中，只留下被诅咒的人（%0%）。莱德罗斯的失败挫败了他征服比尔吉沃特的计划，但他远远没有死。这个阴影群岛的不死仆从有一天会改头换面，向打败他的冒险者们复仇。",
+										{
+											"type": "entries",
+											"name": "Encounter: Scuttling the Ship",
+											"id": "0cc",
+											"entries": [
+												"伤痕累累、饱经风霜的{@i Phantom's Ire}船体拥有AC15和50点命中率，容易受到火灾伤害。当船体的命中率达到0时，该船开始下沉。当{@i Phantom's Ire}号开始下沉时，船上的任何角色都必须在它把他们拖入盐水深渊之前争相逃离。",
+												"在这次遭遇战中，队伍可以保持与Ledros战斗时相同的主动权顺序，或者每个人都可以再次掷出主动权。在他们的回合中，一个角色可以尝试从沉船上跃起，做一个DC14的力量（{@skill Athletics}）或灵巧（{@skill Acrobatics}）检查，如果成功则安全降落在码头的残骸上。如果失败，该角色将跌入沉船的深处，受到2({@dice 1d4})的重击伤害。",
+												"每一回合，在主动权计数20（失去主动权的平局）时，沉船会产生一个复杂情况。在沉船并发症表上掷骰子，以决定这群人遭遇到什么不幸。",
+												"5个回合后，{@i Phantom's Ire}号被完全淹没。此时，任何仍在船上的角色都会被淹没，并开始被淹死（见D&D{@book Basic Rules|PHB}中{@book chapter 8|PHB|-1}的\"{@book Suffocating|PHB|8|Suffocating}\"）。",
+												{
+													"type": "table",
+													"caption": "Sinking Ship Complications",
+													"colLabels": [
+														"d8",
+														"Complication"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"幽灵般的蓝手从深海中升起。在沉船上的每个角色都必须做一个DC10的力量储蓄动作。如果失败，角色必须在下一次进行力量或灵巧检查时减去{@dice 1d4}，因为这些鬼手会抓紧他们的身体。"
+														],
+														[
+															"2",
+															"一个木桶爆裂，用黑暗能量淹没沉船。沉船上的每个人都必须成功地进行DC12宪法救赎，否则就会受到3({@dice 1d6})的坏死伤害。"
+														],
+														[
+															"3",
+															"一个巨大的波浪席卷了沉船。船上的每个人都必须成功地进行DC10力量救赎，否则将被推到水下10英尺。"
+														],
+														[
+															"4",
+															"桅杆上的一大块碎片掉入水中。沉船上的每个人都必须成功地做一个DC14的灵巧救赎，否则就会被掉下来的碎片造成5({@dice 2d4})的重击伤害。"
+														],
+														[
+															"5\u20138",
+															"没有并发症发生。"
+														]
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "A New Dawn",
+									"id": "0cd",
+									"entries": [
+										"随着最后一个{@i Phantom's Ire}沉入比尔吉沃特的潮水之下，黑雾开始从比尔吉沃特退去。",
+										{
+											"type": "insetReadaloud",
+											"id": "0ce",
+											"entries": [
+												"随着最后一声嘎吱声，船头坠入海中。慢慢地，就像被卷入漩涡一样，黑雾号也被吸到了海浪之下，直到比尔吉沃特的朦胧黑暗的地平线再次变得清晰。"
+											]
+										},
+										"随着被诅咒的沉船沉没，劫难结束了，比尔吉沃特的居民们又活了一天。如果莱德罗斯在{@i Phantom's Ire}沉船之前没有被打败，他就会被退去的黑雾卷走，无法在其被诅咒的范围内寻求报复。当人物准备好向财富小姐或Gangplank领取奖励时，他们就可以回到比尔吉沃特本土。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/051-bilgewater-waterways.png"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Part 3: Turning Tides",
+							"id": "0cf",
+							"entries": [
+								"虽然 \"劫难 \"暂时被避免了，但更多的冒险仍在等待着这些人物。从两个争夺城市权力的船长，到搅动深海的海怪，再到潜伏在地平线上的更黑暗的力量--这只是比尔吉沃特的又一个美丽的日子。",
+								{
+									"type": "entries",
+									"name": "Fickle Fortune",
+									"id": "0d0",
+									"entries": [
+										"回到纳卡布罗斯神庙后，{@creature Miss Fortune|LoRDToB}祝贺这些人物完成了工作，并向他们支付了各自的奖励。然而，如果成功通过DC18智慧（（%%1%））检查，就可以直觉到财富小姐是在有计划地注意他们的技能组合，以便将来工作。",
+										"其中一项工作特别涉及到前掠夺者国王Gangplank的问题。财富小姐怀疑她的老克星并不像他看起来那样死了。她对这个人物推倒哈罗夫的能力印象深刻，将来可能会要求他们帮助调查关于冈普兰克如何从他的暗杀企图中幸存下来的传闻。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Saltwater Scourge",
+									"id": "0d1",
+									"entries": [
+										"回到{@i Dreadway}号后，{@creature Gangplank|LoRDToB}要么清除人物对他的债务（如果他们被抓到偷偷上船），要么支付他们应有的报酬。然后，他允许这些人物离开，但威胁说，如果他发现他们散布他的生存信息，他将亲自把他们送进卤水中。",
+										"如果这些人物希望继续与Gangplank合作，那么这位前腐烂者国王可能会让他们收集更多关于财富小姐的信息，并开始策划他最终返回比尔吉沃特。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Other Adventures in Bilgewater",
+									"id": "0d2",
+									"entries": [
+										"如果这些人物不想再与争斗的船长打交道，那么在港口城市里还有很多其他奇怪的家伙和更奇怪的谜团需要调查。",
+										{
+											"type": "entries",
+											"name": "New Faces",
+											"id": "0d3",
+											"entries": [
+												"角色可以在九头蛇或比尔吉沃特周围遇到以下任何一个角色。每个角色都有自己的遭遇，详见设定指南。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Kyren Addams",
+											"id": "0d4",
+											"entries": [
+												"这个年轻的街头流浪汉带着一支画笔和极其反叛的精神，从无害的恶作剧中获得乐趣。他最近的工作是破坏比尔吉沃特的各种告示牌。更多内容请见\"{@book Graffiti|LoRDToB|1|Graffiti} \"的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Billy Brigs",
+											"id": "0d5",
+											"entries": [
+												"比利是一个眼界开阔、天真烂漫的比尔吉沃特新人，他发现自己不断被这个城市的讨厌的意外所困扰。更多内容请参见《{@book Street Rats|LoRDToB|1|Street Rats}》的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Commodore Edwin Holt",
+											"id": "0d6",
+											"entries": [
+												"这个灰头土脸的士兵身穿诺克萨斯的盔甲。他和他的伙伴一直被各种希望的海盗所骚扰，目前发现自己被一群醉酒的暴徒所困扰。更多信息请参见\"{@book Mob Mentality|LoRDToB|1|Mob Mentality} \"的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Jessamin Oz",
+											"id": "0d7",
+											"entries": [
+												"杰萨明是一个衣衫褴褛的年轻女子，靠给感兴趣的路人算命为生。更多内容请参见《{@book Penny Dreadful|LoRDToB|1|Penny Dreadful}》的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Kiki Summers",
+											"id": "0d8",
+											"entries": [
+												"琪琪是一位腰间系着亮丽的染色腰带的年轻女士，她在比尔吉沃特周围穿梭，分发邀请函和优惠券到比尔吉沃特上层的Eyries的独家酒馆。更多信息请参见\"{@book Nightlife|LoRDToB|1|Nightlife} \"的遭遇。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Shadow Isles",
+									"id": "0d9",
+									"entries": [
+										"角色们也可能希望了解更多关于 \"痛苦 \"和神秘的 \"阴影群岛 \"的信息。他们可以咨询纳卡布罗斯神庙的圣徒，他们可以提供更多关于母蛇和荒野的信息。虽然布赫鲁人对外来者很警惕，但这些人物的行为已经为他们赢得了初步的信任，一些牧师可能会提议带这些人物去蛇岛的其他地方，调查来自暗影岛的突然侵略行为。更多无畏的冒险者甚至可以自己去阴影群岛。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/052-shadow-isles-sea.png"
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Mishaps and More",
+									"id": "0da",
+									"entries": [
+										"对于更专注于独立冒险的角色，设定指南提供了许多地点、个人，甚至是随机遇到的情况，供当事人体验。但不要觉得被提供的信息所束缚。这是你的游戏，你的比尔吉沃特版本。在这个充斥着人渣和恶棍的城市，可能性是无穷的。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 4: Beasts of Bilgewater",
+					"id": "0db",
+					"entries": [
+						"本章仅供地下城管理员参考，包含了比尔吉沃特和鲁奈特拉世界特有的标志性怪物的简短兽皮资料。许多其他的怪物，包括本资料第一章的遭遇战中提到的一些怪物，都可以在免费的D&D（%0%）中找到。你可以使用本书和(%%1%)中的游戏统计数据，为你在鲁尼特拉公海上的持续冒险创造精彩的故事和战斗遭遇。",
+						"本章还包括比尔吉沃特两个著名NPC的游戏统计数据：（%0%）和（%1%）。角色不需要与这些强大的冠军作战，但我们鼓励DM使用这些统计数字来判断他们在突然被凶残的冒险家攻击时可能会做出的反应，或者他们决定暂时与英雄们结盟。",
+						{
+							"type": "section",
+							"name": "How to Use Monster Stat Blocks",
+							"id": "0dc",
+							"entries": [
+								"一个怪物的游戏统计数据，也被称为它的状态块，提供了地下城管理员在战斗中描绘该怪物所需要的所有信息。它的叙述性描述也提供了所有关于如何在没有战斗的场景中扮演它的信息。关于怪物统计工作的完整描述可以在第12章：D&D的怪物（%0%）中找到。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature Abyssal Eye|LoRDToB}",
+										"{@creature Barkbeast|LoRDToB}",
+										"{@creature Dragon Shark|LoRDToB}",
+										"{@creature Ironback|LoRDToB}",
+										"{@creature Pool Shark|LoRDToB}",
+										"{@creature Powder Monkey|LoRDToB}",
+										"{@creature Wharf Rat|LoRDToB}"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "NPCs",
+							"id": "0e4",
+							"entries": [
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@creature Commander Ledros|LoRDToB}",
+										"{@creature Miss Fortune|LoRDToB}",
+										"{@creature Gangplank|LoRDToB}"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chapter 5: Booty of Bilgewater",
+					"id": "0e8",
+					"entries": [
+						"没有什么比在一次危险的冒险结束后发现一大堆黄金和珠宝更好的了。当然，除了发现混在战利品中的魔法物品。这个来源的冒险，\"{@book Herald of the Harrowing|LoRDToB|3}\"，包括几个散落在各处的这种魔法物品。除了这个冒险，地下城管理员可以在他们自己的自制冒险中放置这些魔法物品作为对角色的奖励。",
+						{
+							"type": "section",
+							"name": "Magic Items",
+							"id": "0e9",
+							"entries": [
+								"更多的魔法物品，以及如何使用魔法物品的规则，可以在《D&D》（%0%）的第14章中找到。",
+								{
+									"type": "list",
+									"columns": 3,
+									"items": [
+										"{@item Adaptive Helm|LoRDToB}",
+										"{@item Banshee's Veil|LoRDToB}",
+										"{@item Bilgewater Cutlass|LoRDToB}",
+										"{@item Blade of Ledros|LoRDToB}",
+										"{@item Boots of Swiftness|LoRDToB}",
+										"{@item Dead Man's Plate|LoRDToB}",
+										"{@item Powder Keg|LoRDToB}"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"adventure": [
+		{
+			"name": "Legends of Runeterra: Dark Tides of Bilgewater",
+			"id": "LoRDToB",
+			"source": "LoRDToB",
+			"group": "homebrew",
+			"contents": [
+				{
+					"name": "Chapter 3: Herald of the Harrowing",
+					"headers": [
+						"Background",
+						"Overview",
+						"Part 1: Grim Shadows",
+						"Part 2: Chasing Ghosts",
+						"Part 3: Turning Tides"
+					]
+				}
+			],
+			"level": {
+				"start": 3,
+				"end": 4
+			},
+			"published": "2020-06-12",
+			"storyline": "Legends of Runeterra"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "LoRDToB",
+			"source": "LoRDToB",
+			"data": [
+				{
+					"type": "section",
+					"name": "Chapter 3: Herald of the Harrowing",
+					"id": "096",
+					"entries": [
+						"俗话说：\"在比尔吉沃特，从来没有枯燥的一天。从勇敢的走私者到公海上的传奇怪物狩猎，这座港口城市充满了冒险。",
+						"这一章介绍了 \"荒芜的先驱\"，这是一个简短的冒险，可以帮助冒险者在比尔吉沃特开始他们的活动。当一个酒馆的夜晚变得漆黑一片时，冒险者们发现自己正在与阴影搏斗，调查幽灵般的港口，陷入了一场为城市本身而战的战斗。如果你打算以玩家的身份体验这次冒险，现在就不要再看了",
+						{
+							"type": "section",
+							"name": "Background",
+							"id": "097",
+							"entries": [
+								"虽然比尔吉沃特的许多居民通过屠宰船队和雕刻海湾赚取生活费，但也有少数人从事废品回收工作，从海水深处挖出沉船，打捞他们能找到的任何部件。最近，这样的一群铲运工在比尔吉沃特湾的底部发现了一艘巨大的沉没的大帆船（%0%）。虽然很多人都很兴奋地想在它腐烂的船体中找到什么有价值的宝物，但一些比尔吉沃特的居民却很担心，认为这艘船对城市的未来是个不祥之兆。",
+								"他们的猜测被证明是正确的，在一些夜晚，黑暗魔法的卷轴从阴影岛伸出来，并抓住了沉船，使其在城市中喷出了充满亡灵的黑雾。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Overview",
+							"id": "098",
+							"entries": [
+								"\"荒芜的先驱 \"是一个为3级人物的聚会设计的冒险。该冒险可分为以下几点。",
+								{
+									"type": "list",
+									"items": [
+										"在Brazen Hydra酒馆发生斗殴事件后，黑雾开始吞噬比尔吉沃特湾。亡灵在街道上肆虐，这就是所谓的 \"蹂躏\"，一种来自阴影群岛的祸患。",
+										"冒险家们被比尔吉沃特的现任领导人（%0%）或该市的前掠夺者国王（%1%）所招募，前往比尔吉沃特的打捞码头，将这艘位于这次劫难中心的船拆毁。",
+										"在打捞码头，冒险者们与阴影群岛的（%0%）对峙，必须在哈罗夫人将城市全部吞噬之前摧毁沉船。"
+									]
+								},
+								"如果你的玩家想在冒险过程中提升等级，建议他们在第一部分结束时提升等级。",
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/041-bilgewater-bar.png"
+									}
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Part 1: Grim Shadows",
+							"id": "099",
+							"entries": [
+								"当水手们经过一天的辛勤劳作回到港口时，比尔吉沃特湾的空气中充斥着各种传说。但其中有些故事是事实而非虚构的，当一个酒馆顾客的胡言乱语被证明比预期的更真实时，整个老鼠镇发现自己被吞噬在黑雾中的一个大劫。这些人物必须在阴影中战斗，并达成不可能的交易，所有这些都是为了摆脱这个城市的黑暗。",
+								{
+									"type": "entries",
+									"name": "Where to Start",
+									"id": "09a",
+									"entries": [
+										"这个冒险假设人物已经认识，并且正在比尔吉沃特最著名的酒馆--Brazen Hydra过夜。角色们是如何认识的，由小组决定：他们可以是一群雇佣兵，也可以是寻找闲钱的海盗团，或者只是在夜晚休息时放松的航海伙伴。另外，你也可以在每个角色进入Brazen Hydra的时候开始这个冒险，他们各自独立行动，然后在危险威胁到他们的时候团结起来。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Brazen Hydra",
+									"id": "09b",
+									"entries": [
+										"勇敢的九头蛇是一家喧闹的酒馆，坐落在一艘老式屠杀舰队大帆船的三层残骸中，是比尔吉沃特各种人渣和小人的温床。每时每刻都有台球高手和纸牌高手在酒馆的许多骰子桌上下注，还能听到衣衫褴褛的水手们向任何愿意倾听的人讲述他们最近的航海经历。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/042-LoR-decoration-09.png"
+											}
+										},
+										{
+											"type": "entries",
+											"name": "Patrons",
+											"id": "09c",
+											"entries": [
+												"鉴于九头蛇酒馆的知名度，酒馆周围不乏有趣的面孔。目前占据酒馆的两个最响亮的顾客是废柴塔拉-肯顿和卑鄙的扒手戴恩-皮尔庞特。",
+												"塔拉（混乱中立，女性人类（%0%））是一个高大的女人，有着一头狂野的黑发和戏剧性的天赋，她在比尔吉沃特周围以喜欢讲故事而闻名。塔拉还秘密地与据说已经去世的前海狸王冈普兰克（Gangplank）结盟。由于她的母亲是纳卡布罗斯神庙的祭司之一，塔拉对潜伏在比尔吉沃特潮汐中的奇怪传说有更多的了解，而不是她一开始就说出来。",
+												"戴恩-皮尔庞特（中性，男性人类（%0%））听过他的塔拉的故事，知道要对她说的东西持谨慎态度。他经常和他的几个酒友坐在一起，大声嘲笑塔拉的传说。他的光头和厚厚的银色羊排很容易让经常去九头蛇的人认出。",
+												"角色们在Brazen Hydra里闲逛时还可能遇到无数的其他顾客。关于酒馆里更多有趣的面孔，请看冒险的（%0%）。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Tales From the Dark Depths ",
+											"id": "09d",
+											"entries": [
+												"当人物在Brazen Hydra放松时，他们听到一个狂妄的斗士讲述她最新的发现，这让其他顾客感到非常懊恼。阅读下面的内容来设置场景。",
+												{
+													"type": "insetReadaloud",
+													"id": "09e",
+													"entries": [
+														"你们坐在一张破旧的木桌旁，周围是喧闹的笑声和酣畅淋漓的比尔吉沃特最好的朗姆酒。在角落里，一个穿着艳丽的紫色大衣的女人把她的脚踢到桌子上。\"于是我们就在那里，\"她说，眼神肃穆，\"我和我的船员们，在那个被诅咒的残骸中挖掘。突然，\"嗖！\" 她扫了扫手臂，几乎打翻了一罐麦酒。\"一些黑暗的东西从地平线上俯冲下来。我告诉你们，我这辈子从来没有感觉到如此可怕和寒冷的东西！\"。我说，这艘船在闹鬼。我们不应该把那艘船从潮水中拉出来。\"",
+														"一个穿着深色衣服的蹲着的身影从几张桌子外走过来。\"来吧，塔拉，我们知道最好不要相信你的高谈阔论，现在！\""
+													]
+												},
+												"穿紫色衣服的女人是塔拉-肯顿。塔拉身材高大，有一头波浪形的银色黑发，有一种戏剧性的天赋，她刚从打捞码头工作回来，在那里她和一个小队一直在拆卸{@i Phantom's Ire}号的残骸。",
+												"但是穿黑衣服的人，Daine Pierpont，有其他的看法。达因不喜欢迷信和神话，他认为塔拉夸大了沉船的危险性，以便为自己索取更多的财宝。他交替地大声插话驳斥塔拉的故事，并安抚他那些醉醺醺的同伴，说他们会从沉船上得到他们那份宝贵的东西。",
+												"塔拉和达因的争吵在 \"九头蛇 \"的背景下继续进行，直到他们的争吵达到了一个爆发点。",
+												{
+													"type": "insetReadaloud",
+													"id": "09f",
+													"entries": [
+														"一个突然的喊声在人群中响起。\"我要让你们看看，如果你们不相信这个斗士的故事会发生什么！\" 指关节与骨头相撞，同一个穿着深色衣服的蹲着的男人被打飞了，因为那个穿紫色衣服的女人用拳头砸向他的脸。该男子的一个酒友把他从地上扶起来，而另一个人则向那女人扑去。酒吧里有人举起酒杯欢呼，喧闹的人群开始鼓动这场战斗。你是怎么做的？"
+													]
+												},
+												"塔拉、达因和达因的两个伙伴之间爆发了一场争吵，这两个伙伴都（%0%）像他们的朋友。达因试图在塔拉继续编造故事之前将她打倒；塔拉为了她认为的真相和她受伤的自尊而战斗。塔拉和达因都不想杀死对方；他们战斗只是为了捍卫自己的自尊。",
+												"如果人物决定介入战斗，让每个人都掷出主动权。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Siding with Tala",
+											"id": "0a0",
+											"entries": [
+												"如果有一个或所有的角色帮助塔拉，要么把达因和他的朋友打倒，要么把她从争吵中拉出来，队长会不情愿地感谢这些角色的帮助。",
+												"如果他们想知道更多的信息，塔拉很乐意向他们提供完整的故事：她和另外两个铲运工在三天前的晚上从比尔吉沃特湾深处挖出了{@i Phantom's Ire}。然而，每当她试图从大帆船上打捞出任何东西时，她发誓她发现有一卷影子穿过地平线向比尔吉沃特冲去。塔拉对魔法高度怀疑，认为这对城市的未来是个不祥之兆，因此一直敦促她的同伴们将沉船送回潮汐下的正确位置。",
+												"如果角色说他们相信她的故事，塔拉就会感谢他们，并承诺在未来帮助他们作为回报。如果一个角色想对塔拉撒谎说相信她的故事，他们必须在DC12魅力（{@skill Deception}）检查中取得成功。如果检查失败，或者如果一个角色直接说塔拉的故事是假的，塔拉就会在这个角色的脸上吐口水，然后暴走。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Siding with Daine",
+											"id": "0a1",
+											"entries": [
+												"如果有一个或所有的角色帮助戴恩，要么把塔拉打晕，要么把他和他的同伴从争吵中拉出来，戴恩会气喘吁吁地感谢这些角色的干预，并忙着检查他的酒友是否受伤。",
+												"在给他的伙伴们包扎时，达因解释说他无法忍受塔拉散布这种谎言。如果被问及此事，Daine会告诉大家{@i Phantom's Ire}。一个小型的废品回收队在三天前的晚上把残骸从海湾拉了出来，从那时起，绝望的废品回收者和小偷就一直试图把船上的一些有价值的部件据为己有。他还解释说，少数迷信的水手（\"当然，哪个水手不迷信呢？\"他补充说），认为这艘船被诅咒了，尽管他认为这只是一个诡计，让其他船员远离残骸。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Staying Back",
+											"id": "0a2",
+											"entries": [
+												"选择观看争吵的角色可以听到塔拉和达因争吵的片段。那些想更仔细地听的人必须进行DC12智慧（（%0%））检查。如果成功，该人物会听到双方的争论片段。塔拉坚信{@i Phantom's Ire}会给比尔吉沃特带来厄运，而达因则坚持认为她只是在编造这样的故事，让别人远离她那份宝藏。",
+												"如果没有任何角色决定介入这场争吵，塔拉在达因对她的肠子打出一记重拳之前就打倒了达因的两个同伴。她踉踉跄跄地走到酒吧柜台前又要了一杯饮料，而达因则被留在那里无力地包扎他朋友的伤口。在这种状态下，试图接近他们中的任何一个进行交谈，需要成功地进行DC13魅力（（%0%））检查。否则，对方将无视这些人物。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/043-the-harrowing.png"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Harrowing Begins",
+									"id": "0a3",
+									"entries": [
+										"然而，斗殴后笼罩在九头蛇上的不安的和平并没有持续很久。当人物在斗殴后与人们交谈完毕后，请阅读或转述以下内容。",
+										{
+											"type": "insetReadaloud",
+											"id": "0a4",
+											"entries": [
+												"一下子，酒馆吊灯上的蜡烛闪烁了一下，然后就熄灭了。门被冷风吹得吱吱作响，在从阴暗的窗户渗入的月光下，房间里的影子似乎拉长了。长出了长长的四肢，锋利的爪子，张开的嘴巴。他们自己从地上站起来。他们的眼睛应该在的口袋里闪烁着幽灵般的、饥饿的蓝色。"
+											]
+										},
+										"无数卷起的黑雾在老鼠镇的街道上延伸，成群的亡灵在街上撕咬。混乱的呼喊与恐慌的呼喊交织在一起，镇民们急忙拿起他们的武器，寻找庇护所。",
+										{
+											"type": "entries",
+											"name": "Encounter: Vanguard of the Harrowing",
+											"id": "0a5",
+											"entries": [
+												"这场遭遇战可以发生在九头蛇内，也可以发生在比尔吉沃特的街道上。当人物试图逃离黑雾时，他们发现自己被两个{@creature Barkbeast|LoRDToB|barkbeasts}和一个{@creature shadow}搭讪，他们都渴望为暗影岛索取灵魂。让每个人掷出主动权。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Aftermath",
+											"id": "0a6",
+											"entries": [
+												"一旦战斗停止，人物就会听到达因的声音在喧嚣中响起。他吼道：\"快到街垒去！\"他催促着混乱的镇民潮往街上走。跟随这群人，人物来到了屠夫桥（见\"{@book Butcher's Bridge|LoRDToB|3|Butcher's Bridge}\"），那里有劫难的幸存者在避难。",
+												"一个成功通过DC15智慧（{@skill Perception}）检查的角色注意到黑雾正从一个港口涌出，这个港口建在比尔吉沃特湾突出的众多岩石尖顶之一--城市的打捞码头。更勇敢的人可能会选择直接前往风暴之眼。在这种情况下，请直接前往{@book Part 2|LoRDToB|3|Part 2: Chasing Ghosts}。",
+												"塔拉也在暗中观察着这些人物。如果人物在酒馆争吵中与塔拉结盟，那么屠宰船队的船长就会接近他们，并承诺将他们带到安全的地方。然后塔拉通过一艘划艇护送他们到冈普兰克的船--{@i Dreadway}号（见\"{@book The Dreadway|LoRDToB|3|The Dreadway}\"）。",
+												"如果这些角色没有与塔拉结盟，成功进行DC14智慧（（%0%））检查的角色会发现塔拉的紫色海岸的飘动，消失在一条小巷中，远离其他人群。如果角色决定跟随她，他们必须成功进行DC 16的灵巧（{@skill Stealth}）检查，才能不被发现。塔拉与任何她认为在追踪她的人交手，并在逃跑时开枪。在无人注意的情况下跟随她来到一个小型橡皮艇的码头，角色们在那里看到她在向{@i Dreadway}划船。角色可以乘坐自己的划艇跟随（见\"{@book The {@i Dreadway}|LoRDToB|3|The Dreadway}\"）。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "A Tale of Two Captains",
+									"id": "0a7",
+									"entries": [
+										"莎拉-财富小姐和海贼王Gangplank之间的冲突是不折不扣的传奇。许多人认为船长之间的战争在六个月前就已经结束了，当时财富小姐轰炸了刚普兰克的船{@i Dead Pool}，表面上看是杀死了其海盗船长。但冈普兰克活了下来，现在，在布赫鲁人的支持下，他的目标是夺回比尔吉沃特的领导权。",
+										"根据人物在第一次遇到哈罗夫后所到的地点，他们可能会发现自己与（%0%）或（%1%）的人结盟。",
+										{
+											"type": "entries",
+											"name": "Butcher's Bridge",
+											"id": "0a8",
+											"entries": [
+												"当人物冲向屠夫桥时，惊恐和木头劈裂的声音迎面而来。",
+												{
+													"type": "insetReadaloud",
+													"id": "0a9",
+													"entries": [
+														"鼠城的街道很快就让位于一座破败的石桥，桥上有一扇沉重的木门。紧急的呼喊声充斥着你的耳朵。\"快，把门堵上！不要让那些雾气通过！不要让任何雾气通过！\" 你推开人群，在大门被重重关上之前，跌跌撞撞地走到另一边。"
+													]
+												},
+												"逃过老鼠镇大劫难的少数幸存者（约5人（0%）和10人（1%））挤在屠夫桥边，照料他们的伤口。在大门对面的桥端，耸立着纳卡布罗斯神庙的塔楼。",
+												"幸存者之一是达因，但他两个受伤的朋友都被影子岛的生物杀死了。如果人物在酒馆斗殴中站在达因一边，或者选择不干预，那么扒手的声音就会表达出惊讶和遗憾，他用空洞的笑声解释说，他从未想到塔拉的故事是真的。如果这些人物站在塔拉一边，达因则沮丧地咆哮着说他们信任她是正确的决定。",
+												"不管怎么说，Daine解释说他为传奇人物Sarah Fortune小姐工作，她召集了她所有的忠诚者到寺庙，寻找有能力的战士在打捞码头清理被诅咒的沉船，并为成功的任务提供相当大的奖励。考虑到他们在老鼠镇上与阴影对抗时的表现，他建议这些人物去和她谈谈。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/044-miss-fortune.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Temple of Nagakabouros",
+											"id": "0aa",
+											"entries": [
+												"寻找 \"财富小姐 \"将人物带入寺庙的主院。",
+												{
+													"type": "insetReadaloud",
+													"id": "0ab",
+													"entries": [
+														"你的脚步在寺庙古老的石厅中回响，直到你出现在一个宽阔的院子里，院子里装饰着几十座咆哮着的獠牙蛇雕像。在远处站着一个年轻的女人，火红的头发从时尚的海盗帽下翻卷而过，身边放着两把雕刻精美的手枪。她的上衣沾满了烧焦的痕迹。她笑着向你打招呼，并点头说：\"我听说有一群战士在老鼠城救了很多人。也符合你的描述。你是他们吗？\""
+													]
+												},
+												"虽然平时自信而迷人，但{@creature Miss Fortune|LoRDToB}的心情却很糟糕，她不惜一切代价向大家解释情况。她告诉角色们，她发现有一根黑雾的卷须从暗影岛伸出来，将比尔吉沃特打捞码头的一艘沉船套住，这让她相信暗影岛的某个更强大的幽灵已经控制了这艘沉船，并打算用黑雾吞噬整座城市。一个成功通过DC15智慧（{@skill Insight}）检查的人物会直觉到，在她坚强的外表下，财富小姐被这些事件深深地震撼了，并且真正关心那些生活在比尔吉沃特的人的福祉。",
+												"财富小姐提供给角色们每人25戈比，如果他们成功地将被诅咒的沉船打捞起来并送回海浪之下。试图谈判的角色必须进行DC13魅力（{@skill Persuasion}）检查。如果成功，财富小姐要么同意将最后的报酬提高到30戈比，要么先付给每个角色10戈比，但不能同时支付。",
+												"一旦交易完成，\"财富 \"小姐会给每个角色一个{@item powder keg|LoRDToB}，帮助他们拆船，并将角色指向打捞码头。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/045-Slaughter_Docks_3.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "The Dreadway",
+											"id": "0ac",
+											"entries": [
+												"划过比尔吉沃特湾时，人物看到令人生畏、像鲨鱼一样的{@i Dreadway}船体从雾中升起。",
+												{
+													"type": "insetReadaloud",
+													"id": "0ad",
+													"entries": [
+														"一艘巨大的船的影子在你面前晃动，像眼睛一样的灯光在它的船头闪着绿色的光芒。两门大炮从刻在船头的鲨鱼嘴里升起，黑色的船帆在风中飘扬。"
+													]
+												},
+												"如果人物没有塔拉的陪伴，他们必须在DC18的团体灵巧（（%0%））检查中取得成功，以避免被Gangplank的各种监视者注意。如果失败的次数多于成功的次数，队伍就会被发现（见 \"被俘的观众\"）。如果成功，一行人可以不受阻碍地登上(1%)，混入Gangplank的盟友的杂乱人群中。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "A Captive Audience",
+											"id": "0ae",
+											"entries": [
+												"如果一行人被发现了，甲板上就会响起一阵喊声。\"间谍们，从右舷船头出发！\" 然后，船员们将多门大炮对准人物的小船，要求他们投降。成功通过DC13魅力（（%0%）或（%1%））检查后，船员们相信这些人物不是间谍，但船员们仍然要求他们登上（%2%）号。",
+												"一旦上了船，这些人物就会与咸水祸害本人面对面。",
+												{
+													"type": "insetReadaloud",
+													"id": "0af",
+													"entries": [
+														"在你面前站着一个高大的男人，他的胡子像风暴云一样灰暗，在破旧的船长帽下，眼睛炯炯有神。一只完全由吱吱作响的铁器和齿轮组成的手，握着一把凶狠的弯刀的刀柄。\"以为像你们这样的狗可以偷袭老江湖，嗯？\"他冷笑道。\"你们以为我还在潮水中腐烂吗？哈! 再想想吧。\""
+													]
+												},
+												"Gangplank很想阻止他的生存消息传到比尔吉沃特，并考虑杀死这些人物以确保他们保持沉默。然而，经过片刻的思考，他提出了一个交易：如果角色们能够阻止目前在城市中肆虐的黑雾，他将让他们带着他们的生命离开他的船。一个成功通过DC15智慧（（%0%））检查的角色会直觉到，尽管Gangplank为了权力采取了种种手段，但他还是关心这个城市--至少在他回到自己的王位后还能留下一些东西来统治。如果这些人物拒绝Gangplank的提议，他会把他们扔进{@i Dreadway}的牢房，直到他们重新考虑。",
+												"一旦同意，Gangplank强迫人物进入{@i Dreadway}的一艘救生船，并让他们驶向比尔吉沃特的众多打捞码头之一，在那里他可以看到比尔吉沃特最浓的黑雾浓度。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/046-gangplank.png"
+													}
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Captain's Orders",
+											"id": "0b0",
+											"entries": [
+												"如果被塔拉带到{@i Dreadway}上，或在未被发现的情况下登船，就会遇到{@creature Gangplank|LoRDToB}焦急地看着黑雾吞噬比尔吉沃特。",
+												{
+													"type": "insetReadaloud",
+													"id": "0b1",
+													"entries": [
+														"在身着布赫鲁服饰的海盗和圣徒的人群中，一个有着暴风雨般的眼睛和狂野的灰色胡须的高大男子--咸水之祸，在比尔吉沃特的大多数人看来早已死亡。一只完全由铁和齿轮组成的手靠在船舵上。\"血腥的萨拉-福克斯将无法抵御另一个哈罗夫的城市，\"他喃喃自语。\"我希望在我回来的时候还能留下一座城市。\""
+													]
+												},
+												"冈普兰克提供了20金币和一个在他的精英战士中的位置给任何帮助赶走这个骚扰的人。如果这些人物在布拉辛九头蛇时帮助过塔拉，她会亲自推荐他们去做这个工作。冈普兰克很固执，拒绝在他的条件上让步，但如果一个角色成功地进行了DC18魅力({@skill Persuasion})检查，就可以用甜言蜜语说服他先支付每个人5戈比。",
+												"一旦交易完成，Gangplank会给每个角色一个{@item powder keg|LoRDToB}，并借给他们一艘{@i Dreadway}的救生艇。然后他给他们指出打捞码头的方向，他在那里发现了黑雾的聚集。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Pursuing the Mist",
+									"id": "0b2",
+									"entries": [
+										"无论是陆路还是海路，角色们都要前往打捞码头。你可以把这段旅程当作短暂的休息，让角色消耗命中率并重新获得其他资源。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Part 2: Chasing Ghosts",
+							"id": "0b3",
+							"entries": [
+								"任务在手，人物跟随黑雾号前往打捞码头。作为这次劫难的中心，这里被遗弃，一片狼藉。这场劫难的核心是{@i Phantom's Ire}，一艘被挖出来的鬼船，现在由影子岛的一个可怕的战士掌舵。",
+								{
+									"type": "entries",
+									"name": "The Salvage Docks",
+									"id": "0b4",
+									"entries": [
+										"这个码头位于比尔吉沃特湾的一个孤立的岩石尖顶上，是该市许多废品商的作业基地，他们以从深海中挖出沉船并打捞出其可用的部件为生。一条加固的木板路从比尔吉沃特本土延伸到尖顶，但也很容易乘船到达。码头基本上是空的；尽管铲运工是一个狡猾而机智的群体，但他们不适合战斗，因此很快就被黑雾淹没了。",
+										{
+											"type": "entries",
+											"name": "Regional Effects",
+											"id": "0b5",
+											"entries": [
+												"作为 \"蹂躏 \"的中心，暗影岛的黑暗魔法使打捞码头变得不正常。不管是来自纳卡布罗斯神庙还是来自Gangplank的{@i Dreadway}，一种不自然的寒意刺痛了人物的后背，粘稠的雾气附着在他们身上。当人物开始探索附近时，请记住以下几点。",
+												{
+													"type": "entries",
+													"name": "Pestilence",
+													"id": "0b6",
+													"entries": [
+														"在打捞码头一英里范围内的所有植物看起来都是枯萎的；叶子是墨黑色的，茎上有幽灵般的白色斑点。吃了枯萎植物的生物会病得很厉害，必须做一个DC15的宪法救赎动作，否则就会被（%0%）1小时。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Light",
+													"id": "0b7",
+													"entries": [
+														"阴暗的阴影一直笼罩着这个地区。除非另有提及，否则整个地区的光线都很暗（见《D&D》{@book chapter 8|PHB|-1}中的\"{@book Vision and Light|PHB|8|Vision and Light}\"{@book Basic Rules|PHB}。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Eyes in the Dark",
+									"id": "0b8",
+									"entries": [
+										"当黑雾的卷轴从暗影岛延伸到{@i Phantom's Ire}的时候，它带来了不死的指挥官莱德罗斯。这个被诅咒的幽灵被束缚着，为暗影岛夺取了打捞码头，并与暗影岛的其他亡灵军团一起，旨在蹂躏整个比尔吉沃特。",
+										"莱德罗斯呆在{@i Phantom's Ire}号上，它停靠在附近的北港；任何向北看的人物都能看到{@i Phantom's Ire}号破烂的鬼帆在该地区上空的微风中摇摆。一些{@creature Shadow||shadows}的人在街上巡逻，扼杀了该地区任何剩余的生命。",
+										"每当人物进入地图的一个新区域，他们必须进行DC10的灵巧（（%0%））检查。为了避免被发现，群体中成功的数量必须多于失败的数量。如果人物在前一个区域参与了战斗，那么这些检查是以劣势进行的。",
+										"一个角色可以通过做DC14智慧（（%0%））检查来搜索隐藏在黑雾中的潜在侵略者。如果成功，角色会注意到一个{@creature shadow}在窥视他们的队伍。如果角色选择参与战斗，将影子的命中率降低到0，就可以防止它向指挥官Ledros报告，而角色仍然没有被发现。",
+										"阴影被束缚在黑雾中，无法进入至少部分未被黑雾覆盖的空间（见地图）。然而，人物在打捞码头探索的时间越长，黑雾扩散的程度就越大。如果你愿意，你可以每分钟在地图上任何地方用黑雾填满一个新的10英尺乘10英尺的正方形区域，但你可以加快或放慢这个速度，这取决于你想让 \"劫难 \"变得多么可怕。",
+										"追踪莱德罗斯的爪牙是否注意到人物的存在。这将影响到与他的最后交锋。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/047-Slaughter_Docks_2.png"
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Areas of the Salvage Docks",
+									"id": "0b9",
+									"entries": [
+										"在一片废墟中，这一带只不过是沿着裂开的街道的各种摇摇欲坠的库房而已。码头上的老鼠和其他害虫在酒馆的残垣断壁中乱窜，一些残破的船只在码头上漫无目的地晃动。",
+										"以下区域是地图上的关键。如果人物从Nagakabouros的寺庙到达，他们通过Warren（（%0%））进入该地区。如果人物是从Gangplank's {@i Dreadway}到达的，他们从Scouts'Waterfront ({@book area 3|LoRDToB|3|3. Scouts' Waterfront})进入该地区。",
+										{
+											"type": "gallery",
+											"images": [
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/048-map-3.1-docks-DM.jpg"
+													},
+													"title": "Map 3.1: docks DM",
+													"imageType": "map"
+												},
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/049-map-3.1-docks-player.jpg"
+													},
+													"title": "Player Version",
+													"imageType": "mapPlayer"
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "1. The Warren",
+											"id": "0ba",
+											"entries": [
+												"由于许多进入这一带的主干道都被蹂躏得面目全非，这一系列蜿蜒曲折的小巷成为进入比尔吉沃特残余码头的主要通道。这些通道散发着腐烂的鱼腥味，但没有害虫在翻倒的箱子和废弃的建筑中翻找，使它们变得异常寂静。像{@spell detect magic}这样的效果，让人感觉到一种渗入沃伦的土地中的挥之不去的亡灵的存在，从而深入到街区的中心。华伦街的尽头将人物送入卡瑞克街。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0bb",
+													"entries": [
+														"想要搜索这个区域的人物可以进行DC14智力（（%0%））检查。如果成功，他们会发现一个生锈的（%1%）和（%2%）sp。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "2. Carrack Row",
+											"id": "0bc",
+											"entries": [
+												"曾经是这个地区的商业中心，现在不过是一个空壳。在破败的街道上，恶毒的火药痕迹与褪色的血迹并存，以前商店破裂的窗户在微弱的风中闲置地吱吱作响。在码头的入口处，坐落着一个似乎是酒馆的遗迹，由两个翻转的船体夹在一起建成。碎裂的门上有褪色的油漆，写着 \"百灵鸟\"。",
+												"大多数建筑物的入口仍然无法进入，它们的门洞在大劫难中凹陷并被瓦砾覆盖，但人物可以通过成功的DC12力量（（%0%））检查强行通过游隼号的破门。如果人物进入酒馆，就跳到游隼号上（{@book area 5|LoRDToB|3|5. The Peregrine}）。",
+												"巡查卡拉克街其他建筑的角色会遇到3个（%0%）潜伏在该地区的黑雾中。这些亡灵试图继续他们以前的生活动作，为货架补货和清洁柜台。如果这些程序被打断，这些骷髅就会攻击入侵者。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "3. Scouts' Waterfront",
+											"id": "0bd",
+											"entries": [
+												"西边的这组较小的码头通常是由小型侦察船使用的，它们在派出较大的打捞人员之前，会搜索和标记潜在的沉船区域。但现在，这些码头已经破败不堪，发黑的藤壶涂在腐烂的木桩上。当人物踏上这些木板时，断裂的木板发出吱吱的响声和下垂的声音。离仓库更近的地方有一个废弃的小棚子，曾经是码头负责人的办公室。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0be",
+													"entries": [
+														"好奇的角色在检查棚子内部时发现了一具穿着凹陷（%0%）的骷髅遗骸，这具骷髅可以被人类角色（或其他中等大小的人形生物）抢救出来，并穿上精通中等盔甲。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "4. Warehouses",
+											"id": "0bf",
+											"entries": [
+												"这些仓库曾经储存了无数的设备和从各种残骸中打捞出来的宝物。百灵鸟酒店就坐落在卡拉克街和仓库之间，这个酒馆曾经是疲惫不堪的码头工人在漫长的一天之后的一个常见的休息场所。",
+												"黑雾涌向仓库的一个角落。除了\"{@book Eyes in the Dark|LoRDToB|3|Eyes in the Dark} \"中提到的潜伏在整个地区的间谍{@creature Shadow||shadows}之外，还可以发现莱德罗斯的一个幽灵般的蓝色准将（使用{@creature specter}统计）在废弃的仓库中移动。当迷雾侵袭该地区时，准将与该地区随处可见的各种尸体进行交流，召唤出2个（3%）。",
+												"如果角色试图与准将交战，灵魂会命令僵尸与角色战斗，然后逃到{@i Phantom's Ire}并提醒Ledros角色的存在。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "5. The Peregrine",
+											"id": "0c0",
+											"entries": [
+												"百灵鸟曾经是一家热闹的酒馆，建在两个翻转的船壳内，现在里面充满了尘土飞扬的翻转的桌子和破碎的酒罐。",
+												"如果人物与财富小姐结盟，他们还会遇到三只（%0%）在酒馆里翻找。码头老鼠的领地性极强，一看到人物就会攻击他们。",
+												"如果人物与Gangplank结盟，他们反而会遇到三个{@creature Powder Monkey|LoRDToB|powder monkeys}从椽子上吊下来。角色可以通过成功的DC13智力({@skill History})检查来识别这些暴躁的生物是财富小姐的走狗。除非受到挑衅，否则这些粉猴不会参与战斗。一旦其中一只粉猴的命中率降至0，其余的粉猴就会试图逃跑，并将它们看到的情况告知财富小姐。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0c1",
+													"entries": [
+														"一个角色检查了酒吧后面的破损货架，并成功地进行了DC10智力（（%0%））检查，发现在一个已经空了的朗姆酒瓶后面藏了3（%1%）。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "6. The Wreck of the Telemachus",
+											"id": "0c2",
+											"entries": [
+												"卡雷克街和仓库都与这些主要码头相连。虽然大部分都被遗弃了，但可以发现一些随潮水晃动的沉船，其中最近的是一艘名为\"%0%\"的单桅帆船的残骸。",
+												"0％的人坐在一个辅助码头上。时间让木板腐烂，在码头上留下分裂的孔洞，一只饥饿的{@creature abyssal eye|LoRDToB} 跃过这些破碎的部分，呲牙咧嘴。希望穿过破损的码头并进入{@i Telemachus}的角色必须成功地进行DC14灵巧（{@skill Stealth}）检查。如果失败，深渊之眼就会从水中跃起，用它的 \"去鱼 \"能力对角色进行撕咬攻击。",
+												"暴风雨严重削弱了{@i Telemachus}号的结构完整性。每次只有两个中型生物，或一个中型生物和两个小型生物可以登上（%%）。如果有更多的生物登上沉船，这艘船就会开始下沉，船上的所有角色都必须成功地进行DC12力量救赎，否则就会被下沉的碎石压住。被钉住的角色开始溺水（见D&D {@book Basic Rules|PHB}第8章中的\"{@book Suffocating|PHB|8|Suffocating}\"），但在以后的回合中可以重复力量救赎的动作，成功后可以逃离废墟。",
+												{
+													"type": "entries",
+													"name": "Loot",
+													"id": "0c3",
+													"entries": [
+														"如果探索忒勒马科斯号残骸的人物成功地进行了DC13智力（（%0%））检查，那么该人物会在废弃的货物中找到一个（%1%）。如果该检定成功5次或更多，则可找到一组（%2%）。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "7. The Phantom's Ire",
+											"id": "0c4",
+											"entries": [
+												"这艘巨大的幽灵般的大帆船坐落在码头的尽头。它的船体上曾经破碎的部分现在已经用幽蓝的木头重建起来，而一个像饥饿的大嘴一样的船头则涌动着黑雾。",
+												"{@i Phantom's Ire}有一个荒芜的顶层甲板，在船的前部和后部有高台，中心有一个大的单体桅杆。到甲板下发现了一个完全荒芜的船舱，指挥官Ledros正在等待船上的角色。当人物登上{@i Phantom's Ire}号时，进入 \"与指挥官对峙\"。",
+												{
+													"type": "image",
+													"href": {
+														"type": "external",
+														"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/050-ledros.png"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Confronting the Commander",
+									"id": "0c5",
+									"entries": [
+										"指挥官莱德罗斯在人物登船时如何问候他们，取决于莱德罗斯是否发现他们在附近出现。",
+										{
+											"type": "entries",
+											"name": "Encounter: Ledros Expectant",
+											"id": "0c6",
+											"entries": [
+												"如果人物被发现，（%0%）正在等待他们。他站在甲板中央，绕着桅杆踱步。",
+												{
+													"type": "insetReadaloud",
+													"id": "0c7",
+													"entries": [
+														"船只的灰色木头在你脚下吱吱作响，破旧的船帆在你头顶沙沙作响。在弯曲和呻吟的桅杆旁，站着一个身穿发黑盔甲的高大身影，鬼魅般的绿色笑容在他的头盔后面伸展得不可能再宽。他的一只手拿着一面参差不齐的盾牌，另一只手紧握着一把断刀，诅咒的雾气从其锋利的边缘飘散。",
+														"\"那么，你是来看看莱德罗斯指挥官的威力的，\"他说。他的声音隆隆作响，就像一千个灵魂同时在说话。\"你应该乖乖地离开。\""
+													]
+												},
+												"莱德罗斯立即使用他的Harrowing Mist能力，将{@i Phantom's Ire}的甲板覆盖在蠕动的黑雾中。让大家掷出主动权。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Encounter: Ledros Surprised",
+											"id": "0c8",
+											"entries": [
+												"还没有意识到人物的存在，{@creature Commander Ledros|LoRDToB}站在船头，望着比尔吉沃特的方向。阅读或转述以下内容。",
+												{
+													"type": "insetReadaloud",
+													"id": "0c9",
+													"entries": [
+														"在这艘船的舵手，站着一个身穿黑色盔甲的威武身影，身体该有的缝隙反而充满了幽幽的绿光。他的目光扫过汹涌的黑雾，涌向比尔吉沃特，发出沉重的叹息，听起来就像一千个灵魂在说话。",
+														"\"这次我不会失败，\"他对自己说，握紧了手中的断剑。\"每一步都让群岛更接近解救。\""
+													]
+												},
+												"试图在不引起他注意的情况下登船的角色必须进行DC11灵巧（{@skill Stealth}）检查。如果成功，角色就能给莱德罗斯一个惊喜（见D&D{@book Basic Rules|PHB}第九章的\"{@book Surprise|PHB|9|Surprise}\"）。每个人都会掷出主动权，被惊动的生物会失去他们在主动权顺序中的第一回合。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Blood in the Water",
+									"id": "0ca",
+									"entries": [
+										"当{@creature Commander Ledros|LoRDToB}的命中率降至0时，他发出刺耳的死亡之声，震动了船的内部。",
+										{
+											"type": "insetReadaloud",
+											"id": "0cb",
+											"entries": [
+												"一声痛苦的呻吟从船体上回荡。\"不！\" 莱德罗斯尖叫起来。更多的劈啪声和碎木声从船体上回荡，桅杆在你头顶摇晃。很快，指挥官身形的边缘褪去了烟雾，随着船体的再次摇晃，他盔甲的严酷边缘变成了薄雾。\"我已经被打碎过一次，我不会再被打碎。你还没有看到莱德罗斯的最后一面！你很快就会尝到我不朽的愤怒。你很快就会尝到我不朽的怒火！\""
+											]
+										},
+										"莱德罗斯指挥官的幽灵形态消失在迷雾中，只留下被诅咒的人（%0%）。莱德罗斯的失败挫败了他征服比尔吉沃特的计划，但他远远没有死。这个阴影群岛的不死仆从有一天会改头换面，向打败他的冒险者们复仇。",
+										{
+											"type": "entries",
+											"name": "Encounter: Scuttling the Ship",
+											"id": "0cc",
+											"entries": [
+												"伤痕累累、饱经风霜的{@i Phantom's Ire}船体拥有AC15和50点命中率，容易受到火灾伤害。当船体的命中率达到0时，该船开始下沉。当{@i Phantom's Ire}号开始下沉时，船上的任何角色都必须在它把他们拖入盐水深渊之前争相逃离。",
+												"在这次遭遇战中，队伍可以保持与Ledros战斗时相同的主动权顺序，或者每个人都可以再次掷出主动权。在他们的回合中，一个角色可以尝试从沉船上跃起，做一个DC14的力量（{@skill Athletics}）或灵巧（{@skill Acrobatics}）检查，如果成功则安全降落在码头的残骸上。如果失败，该角色将跌入沉船的深处，受到2({@dice 1d4})的重击伤害。",
+												"每一回合，在主动权计数20（失去主动权的平局）时，沉船会产生一个复杂情况。在沉船并发症表上掷骰子，以决定这群人遭遇到什么不幸。",
+												"5个回合后，{@i Phantom's Ire}号被完全淹没。此时，任何仍在船上的角色都会被淹没，并开始被淹死（见D&D{@book Basic Rules|PHB}中{@book chapter 8|PHB|-1}的\"{@book Suffocating|PHB|8|Suffocating}\"）。",
+												{
+													"type": "table",
+													"caption": "Sinking Ship Complications",
+													"colLabels": [
+														"d8",
+														"Complication"
+													],
+													"colStyles": [
+														"col-2 text-center",
+														"col-10"
+													],
+													"rows": [
+														[
+															"1",
+															"幽灵般的蓝手从深海中升起。在沉船上的每个角色都必须做一个DC10的力量储蓄动作。如果失败，角色必须在下一次进行力量或灵巧检查时减去{@dice 1d4}，因为这些鬼手会抓紧他们的身体。"
+														],
+														[
+															"2",
+															"一个木桶爆裂，用黑暗能量淹没沉船。沉船上的每个人都必须成功地进行DC12宪法救赎，否则就会受到3({@dice 1d6})的坏死伤害。"
+														],
+														[
+															"3",
+															"一个巨大的波浪席卷了沉船。船上的每个人都必须成功地进行DC10力量救赎，否则将被推到水下10英尺。"
+														],
+														[
+															"4",
+															"桅杆上的一大块碎片掉入水中。沉船上的每个人都必须成功地做一个DC14的灵巧救赎，否则就会被掉下来的碎片造成5({@dice 2d4})的重击伤害。"
+														],
+														[
+															"5\u20138",
+															"没有并发症发生。"
+														]
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "A New Dawn",
+									"id": "0cd",
+									"entries": [
+										"随着最后一个{@i Phantom's Ire}沉入比尔吉沃特的潮水之下，黑雾开始从比尔吉沃特退去。",
+										{
+											"type": "insetReadaloud",
+											"id": "0ce",
+											"entries": [
+												"随着最后一声嘎吱声，船头坠入海中。慢慢地，就像被卷入漩涡一样，黑雾号也被吸到了海浪之下，直到比尔吉沃特的朦胧黑暗的地平线再次变得清晰。"
+											]
+										},
+										"随着被诅咒的沉船沉没，劫难结束了，比尔吉沃特的居民们又活了一天。如果莱德罗斯在{@i Phantom's Ire}沉船之前没有被打败，他就会被退去的黑雾卷走，无法在其被诅咒的范围内寻求报复。当人物准备好向财富小姐或Gangplank领取奖励时，他们就可以回到比尔吉沃特本土。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/051-bilgewater-waterways.png"
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Part 3: Turning Tides",
+							"id": "0cf",
+							"entries": [
+								"虽然 \"劫难 \"暂时被避免了，但更多的冒险仍在等待着这些人物。从两个争夺城市权力的船长，到搅动深海的海怪，再到潜伏在地平线上的更黑暗的力量--这只是比尔吉沃特的又一个美丽的日子。",
+								{
+									"type": "entries",
+									"name": "Fickle Fortune",
+									"id": "0d0",
+									"entries": [
+										"回到纳卡布罗斯神庙后，{@creature Miss Fortune|LoRDToB}祝贺这些人物完成了工作，并向他们支付了各自的奖励。然而，如果成功通过DC18智慧（（%%1%））检查，就可以直觉到财富小姐是在有计划地注意他们的技能组合，以便将来工作。",
+										"其中一项工作特别涉及到前掠夺者国王Gangplank的问题。财富小姐怀疑她的老克星并不像他看起来那样死了。她对这个人物推倒哈罗夫的能力印象深刻，将来可能会要求他们帮助调查关于冈普兰克如何从他的暗杀企图中幸存下来的传闻。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Saltwater Scourge",
+									"id": "0d1",
+									"entries": [
+										"回到{@i Dreadway}号后，{@creature Gangplank|LoRDToB}要么清除人物对他的债务（如果他们被抓到偷偷上船），要么支付他们应有的报酬。然后，他允许这些人物离开，但威胁说，如果他发现他们散布他的生存信息，他将亲自把他们送进卤水中。",
+										"如果这些人物希望继续与Gangplank合作，那么这位前腐烂者国王可能会让他们收集更多关于财富小姐的信息，并开始策划他最终返回比尔吉沃特。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Other Adventures in Bilgewater",
+									"id": "0d2",
+									"entries": [
+										"如果这些人物不想再与争斗的船长打交道，那么在港口城市里还有很多其他奇怪的家伙和更奇怪的谜团需要调查。",
+										{
+											"type": "entries",
+											"name": "New Faces",
+											"id": "0d3",
+											"entries": [
+												"角色可以在九头蛇或比尔吉沃特周围遇到以下任何一个角色。每个角色都有自己的遭遇，详见设定指南。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Kyren Addams",
+											"id": "0d4",
+											"entries": [
+												"这个年轻的街头流浪汉带着一支画笔和极其反叛的精神，从无害的恶作剧中获得乐趣。他最近的工作是破坏比尔吉沃特的各种告示牌。更多内容请见\"{@book Graffiti|LoRDToB|1|Graffiti} \"的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Billy Brigs",
+											"id": "0d5",
+											"entries": [
+												"比利是一个眼界开阔、天真烂漫的比尔吉沃特新人，他发现自己不断被这个城市的讨厌的意外所困扰。更多内容请参见《{@book Street Rats|LoRDToB|1|Street Rats}》的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Commodore Edwin Holt",
+											"id": "0d6",
+											"entries": [
+												"这个灰头土脸的士兵身穿诺克萨斯的盔甲。他和他的伙伴一直被各种希望的海盗所骚扰，目前发现自己被一群醉酒的暴徒所困扰。更多信息请参见\"{@book Mob Mentality|LoRDToB|1|Mob Mentality} \"的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Jessamin Oz",
+											"id": "0d7",
+											"entries": [
+												"杰萨明是一个衣衫褴褛的年轻女子，靠给感兴趣的路人算命为生。更多内容请参见《{@book Penny Dreadful|LoRDToB|1|Penny Dreadful}》的遭遇。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Kiki Summers",
+											"id": "0d8",
+											"entries": [
+												"琪琪是一位腰间系着亮丽的染色腰带的年轻女士，她在比尔吉沃特周围穿梭，分发邀请函和优惠券到比尔吉沃特上层的Eyries的独家酒馆。更多信息请参见\"{@book Nightlife|LoRDToB|1|Nightlife} \"的遭遇。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "The Shadow Isles",
+									"id": "0d9",
+									"entries": [
+										"角色们也可能希望了解更多关于 \"痛苦 \"和神秘的 \"阴影群岛 \"的信息。他们可以咨询纳卡布罗斯神庙的圣徒，他们可以提供更多关于母蛇和荒野的信息。虽然布赫鲁人对外来者很警惕，但这些人物的行为已经为他们赢得了初步的信任，一些牧师可能会提议带这些人物去蛇岛的其他地方，调查来自暗影岛的突然侵略行为。更多无畏的冒险者甚至可以自己去阴影群岛。",
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/052-shadow-isles-sea.png"
+											}
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Mishaps and More",
+									"id": "0da",
+									"entries": [
+										"对于更专注于独立冒险的角色，设定指南提供了许多地点、个人，甚至是随机遇到的情况，供当事人体验。但不要觉得被提供的信息所束缚。这是你的游戏，你的比尔吉沃特版本。在这个充斥着人渣和恶棍的城市，可能性是无穷的。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Adaptive Helm",
+			"source": "LoRDToB",
+			"page": 0,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"这个金属头盔上镶嵌着水晶，当受到元素能量的影响时，水晶会改变颜色。在佩戴此头盔时，如果你是攻击的目标，会造成酸、冷、火、闪电或雷电伤害，你可以使用反应来适应该伤害类型。在适应期间，你对该伤害类型有抵抗力。十分钟后头盔会恢复到正常状态。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Adaptive Helm",
+					"source": "LoRDToB"
+				}
+			}
+		},
+		{
+			"name": "Banshee's Veil",
+			"source": "LoRDToB",
+			"page": 0,
+			"rarity": "uncommon",
+			"reqAttune": "by a spellcaster",
+			"wondrous": true,
+			"entries": [
+				"这个护身符的形状像一把剑，护手上镶嵌着一颗小红宝石。每天一次，当你是一个法术的目标时，你可以使用反应来施放（%0%）（使用你的法术能力）。以这种方式施放{@spell counterspell}并不消耗一个法术槽。"
+			],
+			"attachedSpells": [
+				"counterspell"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Banshee's Veil",
+					"source": "LoRDToB"
+				}
+			},
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			]
+		},
+		{
+			"name": "Bilgewater Cutlass",
+			"source": "LoRDToB",
+			"page": 0,
+			"srd": true,
+			"baseItem": "scimitar|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 3,
+			"value": 2500,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"entries": [
+				"这些弯曲的刀片在空中挥舞时发出金色的光芒。",
+				"你在使用该魔法武器进行攻击和伤害的时候有一个+1的加成。在成功命中弯刀后，目标的速度会降低10英尺，直到你下一个回合开始。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Bilgewater Cutlass",
+					"source": "LoRDToB"
+				}
+			}
+		},
+		{
+			"name": "Blade of Ledros",
+			"source": "LoRDToB",
+			"page": 0,
+			"srd": true,
+			"baseItem": "longsword|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"curse": true,
+			"weight": 3,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+1",
+			"entries": [
+				"这把刀的锯齿状碎片被病态的绿色能量结合在一起。你在使用这把魔法武器进行攻击和伤害的时候获得+1的奖励。",
+				"当你用此武器击中一个人形物体时，该人形物体会受到额外的（%0%）砍击伤害。",
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"这把武器是被诅咒的，而成为它的附庸会使诅咒延伸到你身上。在用移除诅咒或类似的魔法解除诅咒之前，你不愿意与这把武器分离，一直保持它在你手边。此外，你在使用这把武器以外的其他武器进行攻击时有劣势。",
+						"当你与剑合拍时，每天午夜一次，除非你是不死之身，否则你必须在DC17宪法救赎中成功。如果救赎失败，你的最大命中率会降低10。以这种方式失去的命中率只能通过愿望法术来恢复。如果你的最大命中率以这种方式降低到0，你就会死亡并立即上升为（%0%）。"
+					]
+				}
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Blade of Ledros",
+					"source": "LoRDToB"
+				}
+			}
+		},
+		{
+			"name": "Boots of Swiftness",
+			"source": "LoRDToB",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"这些时尚的靴子上装饰着白色的小翅膀。当你穿上这双靴子时，你的基本行走速度增加10英尺。此外，你的行动不受困难地形的影响，法术和其他魔法效果既不能降低你的速度，也不能导致你（%0%）。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Boots of Swiftness",
+					"source": "LoRDToB"
+				}
+			}
+		},
+		{
+			"name": "Dead Man's Plate",
+			"source": "LoRDToB",
+			"page": 0,
+			"srd": true,
+			"baseItem": "plate armor|PHB",
+			"type": "HA",
+			"rarity": "rare",
+			"weight": 65,
+			"value": 150000,
+			"ac": 18,
+			"strength": "15",
+			"stealth": true,
+			"entries": [
+				"这个锯齿状的盔甲是由废弃的钩子和倒钩组成的。穿着这件盔甲时，如果你在你的回合中采取{@action Attack}的行动，你可以使用一个额外的行动来尝试推搡你周围5英尺内的一个生物（见《D&D基本规则》第9章的 \"推搡生物\"）。被推的生物会受到{@damage 1d8}的穿刺伤害，此外还可能被撞倒{@condition prone}或被推。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Dead Man's Plate",
+					"source": "LoRDToB"
+				}
+			}
+		},
+		{
+			"name": "Powder Keg",
+			"source": "LoRDToB",
+			"page": 0,
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"这些小木桶里装满了极易挥发的火药，然后用魔法密封，方便运输。点燃火桶需要一个动作和一个点燃的火把、火柴或类似的魔法效果。一旦着火，火药桶会在它被点燃的那一轮结束时爆炸，对周围10英尺内的生物和物体造成{@damage 1d10}的火灾伤害。成功的DC12灵巧救赎会使伤害减半。"
+			],
+			"fluff": {
+				"_itemFluff": {
+					"name": "Powder Keg",
+					"source": "LoRDToB"
+				}
+			}
+		}
+	],
+	"itemFluff": [
+		{
+			"name": "Adaptive Helm",
+			"source": "LoRDToB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Adaptive Helm.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Banshee's Veil",
+			"source": "LoRDToB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Banshee's Veil.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Bilgewater Cutlass",
+			"source": "LoRDToB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Bilgewater Cutlass.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Blade of Ledros",
+			"source": "LoRDToB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Blade of Ledros.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Boots of Swiftness",
+			"source": "LoRDToB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Boots of Swiftness.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Dead Man's Plate",
+			"source": "LoRDToB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Dead Man's Plate.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Powder Keg",
+			"source": "LoRDToB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/itemFluff/Powder Keg.jpg"
+					}
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Abyssal Eye",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d10 + 15"
+			},
+			"speed": {
+				"walk": 5,
+				"swim": 50
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 16,
+			"int": 5,
+			"wis": 14,
+			"cha": 3,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 14,
+			"languages": [
+				"understands Deep Speech but can't speak"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Vigilant",
+					"entries": [
+						"深渊之眼不能惊讶。"
+					]
+				},
+				{
+					"name": "Water Breathing",
+					"entries": [
+						"深渊之眼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5}击中，到达5英尺，一个目标。{@h}13 ({@damage 2d6 + 6})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Evil Eye",
+					"entries": [
+						"深渊之眼用它的眼睛创造一个恐惧的光环。在30英尺范围内的每个生物都必须在一个{@dc 13}的智慧投掷中成功，否则就会在1分钟内被{@condition frightened}。目标可以在其每个回合结束时重复蓄力，如果成功则结束对自己的影响。"
+					]
+				},
+				{
+					"name": "Go Fish",
+					"entries": [
+						"深渊之眼使用一个动作从水中跃起，落在30英尺以外的另一个水点上，这个路径必须遵循一条直线。在这个跳跃过程中，它可以对其路径上的一个目标进行咬合攻击。如果攻击成功，目标会被（%0%）（逃脱（%1%））并被深渊之眼带到它的着陆点。直到这个抓捕结束，目标是（%2%），深渊之眼不能对另一个目标使用它的咬合。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS",
+				"DS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"restrained"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Abyssal Eye",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Barkbeast",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"fire",
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"如果树皮兽的盟友中至少有一人在生物的5英尺范围内，而盟友不在该生物的5英尺范围内，则树皮兽在对该生物的攻击卷中具有优势（%0%）。"
+					]
+				},
+				{
+					"name": "Soul Feast",
+					"entries": [
+						"当树皮兽将敌人的命中率降至0时，树皮兽会获得5个临时命中率。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk ms} {@hit 4}击中，到达5英尺，一个生物。{@h}7 ({@damage 2d6})坏死性的伤害。目标必须在{@dc 10}宪法救赎中成功，否则它的最大命中率会减少，减少的量等于所受的伤害。这种减少持续到该生物完成一个长时间的休息。如果这个效果将其最大命中率降低到0，则目标会死亡。"
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"N"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Barkbeast",
+					"source": "LoRDToB"
+				}
+			},
+			"miscTags": [
+				"HPR"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Commander Ledros",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|PHB}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 73,
+				"formula": "7d8 + 42"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 15,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"dex": "+3",
+				"wis": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"莱德罗斯可以在其他生物和物体中移动，就像它们是困难的地形一样。如果他在一个物体内结束他的回合，他会受到5({@damage 1d10})力的伤害。"
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"在阳光下时，Ledros在攻击卷轴以及依靠视觉的智慧（感知）检查中都处于劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sword of Ledros",
+					"entries": [
+						"{@atk mw} {@hit 7}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d8 + 4})的砍击伤害，如果目标是人形生物，则加上10 ({@damage 3d6})的砍击伤害。"
+					]
+				},
+				{
+					"name": "Harrowing Mist {@recharge}",
+					"entries": [
+						"莱德罗斯释放出一股阴暗的雾气，以他自己为中心凝聚成一个15英尺半径的圆圈。半径内的每个生物都必须成功地进行一次{@dc 14}体质测试，失败时受到22({@damage 4d10})坏死伤害，成功时受到一半的伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Commander Ledros",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Dragon Shark",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armour"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "11d12 + 55"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 60
+			},
+			"str": 23,
+			"dex": 11,
+			"con": 21,
+			"int": 1,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 13,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Water Breathing",
+					"entries": [
+						"龙鲨只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，达到5英尺，一个目标。{@h}22 ({@damage 3d10 + 6})的穿刺伤害，目标必须成功地进行{@dc 15}力量救赎，或者被扔到龙鲨选择的方向20英尺。"
+					]
+				},
+				{
+					"name": "Fin Rays",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达10英尺，一个目标。{@h}22 ({@damage 3d10 + 6})穿刺伤害。目标必须做一个{@dc 15}体质判定，如果判定失败，将受到24({@damage 6d6})的中毒伤害，如果判定成功，将受到一半的伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Dragon Shark",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			]
+		},
+		{
+			"name": "Gangplank",
+			"isNamedCreature": true,
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 190,
+				"formula": "20d8 + 100"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 16,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"con": "+9"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+8",
+				"perception": "+5",
+				"sleight of hand": "+6"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Indomitable (3/Day)",
+					"entries": [
+						"当Gangplank的拯救动作失败时，他可以选择重新掷骰子。他必须使用新的卷轴。"
+					]
+				},
+				{
+					"name": "Remove Scurvy",
+					"entries": [
+						"只要他有至少1点生命值，Gangplank在回合开始时就会恢复10点生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gangplank会进行两次火焰刀攻击。其中一次攻击可以用步枪攻击代替。"
+					]
+				},
+				{
+					"name": "Flame Blade",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个生物。{@h}6 ({@damage 1d8 + 5})砍击伤害，加上7 ({@damage 2d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Rifle",
+					"entries": [
+						"{@atk rw} {@hit 6}击中，范围60/150英尺，一个目标。{@h}8 ({@damage 1d12 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Parrrley",
+					"entries": [
+						"Gangplank用他的步枪进行了一次攻击。"
+					]
+				},
+				{
+					"name": "Dead Man's Plate (Costs 2 Actions)",
+					"entries": [
+						"Gangplank试图推搡一个在他5英尺范围内的生物（见《D&D基本规则》第9章的 \"推搡生物\"）。被推的生物会受到4({@damage 1d8})的穿刺伤害，此外还可能被撞倒{@condition prone}或被推。"
+					]
+				},
+				{
+					"name": "Cannon Barrage (Costs 3 Actions)",
+					"entries": [
+						"Gangplank发射一颗魔法子弹，爆炸后会产生一场炮弹雨。Gangplank在他周围60英尺范围内选择一个点，以该点为中心的20英尺半径范围内的每个生物都必须做一个{@dc 17}灵巧的蓄力动作。拯救失败时，目标会受到11({@damage 2d10})的重击伤害并被击倒{@condition prone}。拯救成功时，目标受到一半的伤害，并且不被击倒（%3%）。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"F",
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Gangplank",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Ironback",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 12,
+			"skill": {
+				"athletics": "+4",
+				"survival": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Aquan",
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"铁背人可以呼吸空气和水。"
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"铁背对物体和结构造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}9 ({@damage 2d6 + 2})重击伤害。"
+					]
+				},
+				{
+					"name": "Harpoon",
+					"entries": [
+						"{@atk mw,rw}{@hit 4}击中，到达5英尺或范围20/60英尺，一个目标。{@h}11 ({@damage 2d6 + 4})穿刺伤害。如果目标是大型或小型生物，它必须在与铁背的力量较量中成功，否则会被拉向铁背20英尺。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Iron Plating",
+					"entries": [
+						"铁背人在面对一次会击中它的近战攻击时，会在其攻击力上增加2。要做到这一点，铁背人必须能够看到攻击者。"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Ironback",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true
+		},
+		{
+			"name": "Miss Fortune",
+			"isNamedCreature": true,
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 123,
+				"formula": "19d8 + 38"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 14,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"int": "+8"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"deception": "+8",
+				"perception": "+7",
+				"sleight of hand": "+9"
+			},
+			"passive": 17,
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"如果Fortune小姐受到的效果允许她做一个灵巧的蓄力动作来承受一半的伤害，Fortune小姐在蓄力动作成功的情况下不会受到任何伤害，如果失败则只会受到一半的伤害。如果她是{@condition incapacitated}，她就不能使用这个特性。"
+					]
+				},
+				{
+					"name": "Fortune's Favor (1/Day)",
+					"entries": [
+						"如果 \"财富小姐 \"的拯救动作失败，她可以选择成功。"
+					]
+				},
+				{
+					"name": "Gunslinger",
+					"entries": [
+						"在敌方生物的5英尺范围内或在远距离攻击时，不会对财富小姐用手枪进行的远程攻击卷轴造成不利影响。此外，在使用手枪进行远程攻击时，财富小姐无视半掩体和四分之三掩体。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"财富小姐进行两次武器攻击。"
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 9}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d8 + 5})穿刺伤害"
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atk rw} {@hit 9}击中，范围30/90英尺，一个目标。{@h}10 ({@damage 1d10 + 5})穿刺伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Strut",
+					"entries": [
+						"财富小姐以她的速度移动，不会引起机会攻击。"
+					]
+				},
+				{
+					"name": "Bullet Time (Costs 2 Actions)",
+					"entries": [
+						"财富小姐用她的手枪进行了两次攻击。",
+						"让它下雨（花费3次行动）。财富小姐发射了一连串的子弹。15英尺范围内的每个生物必须做一个{@dc 17}灵巧的蓄力动作，蓄力失败会受到16({@damage 3d10})的穿刺伤害，蓄力成功则受到一半的伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW",
+				"MLW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Miss Fortune",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"pistol|dmg",
+				"rapier|phb"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Pool Shark",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"NX",
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 11,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"sleight of hand": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"any two languages (usually Common and one other)"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Gambler's Luck",
+					"entries": [
+						"当池鲨在攻击卷、能力检查或蓄力投掷时，在{@dice d20}上掷出1，重新掷出骰子并使用新的骰子（即使该骰子也是1）。"
+					]
+				},
+				{
+					"name": "Sharking (2/Day)",
+					"entries": [
+						"池鲨可以在它的回合中使用一个额外的动作，以它30英尺内的一个生物为目标。如果目标能听到池鲨的声音，那么目标必须成功地完成一个{@dc 12} \"魅力 \"救赎，否则在能力检查、攻击卷和救赎方面处于劣势，直到池鲨的下一个回合开始。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"台球鲨鱼会进行两次球杆攻击。其中一次攻击可以用简易的武器代替。"
+					]
+				},
+				{
+					"name": "Cue Stick",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}6 ({@damage 1d6 + 2})穿刺伤害。"
+					]
+				},
+				{
+					"name": "Improvised Weapon",
+					"entries": [
+						"{@atk rw} {@hit 5}击中，范围20/60英尺，一个目标。{@h}5 ({@damage 1d6 + 2})重击伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Pool Shark",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Powder Monkey",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "elemental",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d6 + 5"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands Common and Ignan",
+				"but can't speak"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Animalistic Elemental",
+					"entries": [
+						"与动物对话，定位动物或植物的咒语，把粉猴当作野兽。"
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"当粉猴受到一个允许它进行灵巧救赎的效果，只受到一半的伤害时，如果救赎成功，它就不会受到伤害，如果失败，则只受到一半的伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 3}击中，达到5英尺，一个生物。{@h}3 ({@damage 1d4 + 1})砍击伤害加上2 ({@damage 1d4})火力伤害。"
+					]
+				},
+				{
+					"name": "Explosive Excretion",
+					"entries": [
+						"火药猴变出火药，并将其抛向60英尺外的一个点。在该点5英尺范围内的每个生物必须做一个{@dc 12}灵巧的蓄力动作，如果蓄力失败会受到{@damage 3d6}重击伤害，如果蓄力成功会受到一半的伤害。"
+					]
+				},
+				{
+					"name": "Flash Powder {@recharge 4}",
+					"entries": [
+						"随着一道明亮的闪光，火药猴与它所穿戴或携带的任何装备一起神奇地传送到它能看到的一个无人的空间。在传送之前或之后，火药猴可以用重装属性给它能接触到的一件武器重装。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"IG"
+			],
+			"damageTags": [
+				"S",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Powder Monkey",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Wharf Rat",
+			"source": "LoRDToB",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 11,
+				"formula": "3d6 + 1"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 12,
+			"int": 2,
+			"wis": 10,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"码头鼠在依靠嗅觉的智慧（感知）检查方面具有优势。"
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"码头鼠在对任何没有全部命中率的生物进行近战攻击时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个生物。{@h}4 ({@damage 1d4 + 2})穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Wharf Rat",
+					"source": "LoRDToB"
+				}
+			},
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Abyssal Eye",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"深渊之眼是一种畸形的鱼状畸形物，有剃刀般锋利的牙齿，头骨上有一只紫色的单眼。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Abyssal Eye.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Barkbeast",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"树皮兽是由石化的树皮和坏死的雾气形成的不死仆从，它是由哈洛因催生出来的，用来吞噬生者的灵魂。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Barkbeast.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Commander Ledros",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"当黑雾的卷轴从暗影岛延伸到{@i Phantom's Ire}时，它带来了亡灵指挥官莱德罗斯。这个被诅咒的幽灵被束缚着，为暗影岛夺取了打捞码头，并与暗影岛的其他亡灵军团一起，旨在蹂躏整个比尔吉沃特。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Commander Ledros.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Dragon Shark",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"龙鲨是水龙的表亲，它是一种巨大的生物，带有有毒的鳍状射线，在比尔吉沃特的海岸徘徊。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Gangplank",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"冈普兰克是一位指挥有方、身经百战的海盗船长。冈普兰克是比尔吉沃特的前任里弗尔国王，在经历了一次刺杀未遂后，他试图夺回自己的头衔。冈普兰克以可怕的力量和钢铁般的意志主宰着比尔吉沃特，这两种品质在他重建支持以再次统治这座城市时对他非常有利。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Gangplank.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Ironback",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"铁背人是一种坦克，像乌龟一样的人形生物，将他们令人印象深刻的破坏能力卖给出价最高的人。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Miss Fortune",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Sarah Fortune是一个有魅力的、持枪的赏金猎人。通过耐心和计划，她已经成为比尔吉沃特最有影响力的冠军，统治着这个城市。莎拉用她的智慧、魅力和无与伦比的目标，在这个混乱的城市建立了一种秩序，并打算保持这种秩序。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Miss Fortune.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Pool Shark",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"作为比尔吉沃特酒馆和赌场的常见特征，台球鲨鱼对技巧性游戏很感兴趣。他们并不惧怕老式的斗殴；对他们来说，战斗是最有技巧的游戏。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Pool Shark.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Powder Monkey",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"财富小姐的这些元素爪牙让她的敌人日子不好过，四处投掷炸药，造成混乱。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Powder Monkey.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Wharf Rat",
+			"source": "LoRDToB",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"恶毒的怪物盯上了比尔吉沃特，码头鼠结合了老鼠和鲨鱼最致命的特质，成为一个可怕的猎手。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/monsterFluff/Wharf Rat.jpg"
+					}
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Path of the Depths",
+			"shortName": "Depths",
+			"source": "LoRDToB",
+			"subclassFeatures": [
+				"Path of the Depths|Barbarian||Depths|LoRDToB|3",
+				"Dredge Line|Barbarian||Depths|LoRDToB|3",
+				"Ghostwater Dive|Barbarian||Depths|LoRDToB|6",
+				"Manifestations of the Deep|Barbarian||Depths|LoRDToB|10",
+				"Depth Charge|Barbarian||Depths|LoRDToB|14"
+			],
+			"className": "Barbarian",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Renegade",
+			"shortName": "Renegade",
+			"source": "LoRDToB",
+			"subclassFeatures": [
+				"Renegade|Fighter||Renegade|LoRDToB|3",
+				"Cunning Shot|Fighter||Renegade|LoRDToB|7",
+				"Grin and Bear It|Fighter||Renegade|LoRDToB|10",
+				"Right Gun for the Job|Fighter||Renegade|LoRDToB|15",
+				"Light 'Em Up|Fighter||Renegade|LoRDToB|18"
+			],
+			"className": "Fighter",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Wild Card",
+			"shortName": "Wild Card",
+			"source": "LoRDToB",
+			"subclassFeatures": [
+				"Wild Card|Rogue||Wild Card|LoRDToB|3",
+				"Shifting the Odds|Rogue||Wild Card|LoRDToB|9",
+				"Twist of Fate|Rogue||Wild Card|LoRDToB|13",
+				"Joker Wild|Rogue||Wild Card|LoRDToB|17"
+			],
+			"className": "Rogue",
+			"classSource": "PHB"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Blade and Black Powder",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "Pistoleer表格",
+						"entrySummary": "Pistoleer Form"
+					}
+				}
+			],
+			"entries": [
+				"你创造了一把与你的枪械相匹配的刀，使你在近战和远程战斗中都成为致命的对手。在敌对生物的5英尺范围内，不会对你的远程攻击卷轴造成不利影响。",
+				"此外，当你使用枪手形态的动作进行射击时，你可以使用你的额外动作来攻击近战范围内的生物。做一个近战攻击卷。攻击卷使用你的灵巧修改器，并且你精通该攻击。一旦命中，攻击造成的砍击伤害等于（%0%）+你的灵巧修正值。"
+			]
+		},
+		{
+			"name": "Caliber Net",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Min"
+			],
+			"entries": [
+				"通过重新利用一些残余的Hextech零件，你为你的枪配备了一个奥术网，用来困住对手。作为一个行动，在你的枪械范围内选择一个生物。该生物必须在力量救赎上获得成功，否则会被（%0%）。在它的每个回合结束时，目标可以重复这个蓄力动作，如果成功则结束该效果。一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Collateral Damage",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "狙击手形式",
+						"entrySummary": "Sniper Form"
+					}
+				}
+			],
+			"entries": [
+				"你改变你的弹药，使其具有爆炸能力。当你用你的枪支成功击中一个目标时，在目标5英尺范围内的所有生物都必须在灵巧反射中成功，否则会受到{@dice 1d6}的刺穿伤害。"
+			]
+		},
+		{
+			"name": "Crosshairs",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Fighter"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你为你的枪械装备了一个瞄准装置。如果你本回合没有移动，你可以作为一个额外的动作瞄准你的瞄准器，将你的速度降低到0，并在你使用枪手形态特征进行的所有攻击中给予你优势，直到你回合结束。"
+			]
+		},
+		{
+			"name": "Double-Barrel",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Min"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "狙击手形式",
+						"entrySummary": "Sniper Form"
+					},
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Fighter"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你在你的枪械上增加了第二个枪管。当你使用枪手形态时，你可以在一次行动中射击两次，而不是一次。这两次射击可以针对同一生物或不同的生物。每次射击都要进行单独的攻击卷。"
+			]
+		},
+		{
+			"name": "Smoke Screen",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Min"
+			],
+			"entries": [
+				"作为一个动作，你改变你的枪的发射装置，释放一阵灰烬和烟雾。这团烟形成一个10英尺的立方体，以你在枪械范围内选择的一个点为中心，在拐角处扩散，这个立方体所覆盖的区域被认为是严重遮蔽的。这种烟雾持续10分钟，并且不能被驱散。一旦你使用这个功能，你就不能再使用它，直到你完成一个短或长的休息。"
+			]
+		},
+		{
+			"name": "Barrage",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"作为一个动作，你可以发射一连串的子弹。在以你为中心的15英尺范围内的每个生物都必须做一个灵巧的蓄力动作，失败时受到相当于{@dice 3d10}+你灵巧修饰的穿刺伤害，成功时受到一半的伤害。一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Double Up",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"当你用枪械的远程武器攻击成功击中一个生物时，你可以立即使子弹击中原目标15英尺内的另一个生物。第二个目标受到的穿刺伤害等于你的灵巧修正值（最少一个）。你可以用这种方式改变子弹的方向，次数与你的魅力修饰值相同，并且在短暂或长时间休息后恢复所有消耗的使用。"
+			]
+		},
+		{
+			"name": "Lightning Round",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"你在你的枪械上装备了一块不稳定的偷来的Hextech，使你可以在你的回合中释放出一道刺眼的电光作为行动。闪电从你身上射出，形成一条宽1英尺、长30英尺的直线。在这条直线上的每个生物都必须做一个灵巧的蓄力动作，如果失败会受到{@dice 3d8}的闪电伤害，如果成功会受到一半的伤害。一旦你使用这个特性，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Trial by Fire",
+			"source": "LoRDToB",
+			"featureType": [
+				"FU:Maj"
+			],
+			"entries": [
+				"作为一个额外的动作，你可以用炽热的力量为你的武器充电。直到你下一回合开始，每当你成功攻击时，你会造成相当于你战士等级一半的额外火焰伤害，四舍五入。你可以用这种方式为你的武器充电，次数等于你的魅力修改器（最少一次），并在短暂或长时间休息后恢复所有使用。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Depths",
+			"source": "LoRDToB",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"entries": [
+				"遭遇深海的恐怖，可以击垮意志薄弱者的心智，但有些人将他们的创伤锻造成在海浪之上从未见过的武器。走在这条路上的野蛮人已经从这样的遭遇中幸存下来，并从这一经历中获得了非凡的能力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gift of the Drowned Ones|Barbarian||Depths|LoRDToB|3"
+				}
+			]
+		},
+		{
+			"name": "Gift of the Drowned Ones",
+			"entries": [
+				"在3级的时候，当你采用这条道路时，你获得与你的步行速度相等的游泳速度，并获得水下呼吸的能力。"
+			],
+			"source": "LoRDToB",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Dredge Line",
+			"source": "LoRDToB",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"从你3级选择这条道路开始，当你进入愤怒状态时，你会显现出一个额外的附属物。这个武器可以表现为海怪的触手、巨大的锚、超自然的下颚，或者其他基于你历史的东西。",
+				"作为一个额外的动作，你可以使用这个附属物来攻击你所选择的15英尺内的一个生物。目标必须成功地进行力量救赎（DC等于8+你的熟练度加成+你的力量修饰），或者被拉到10英尺外的一条直线上朝你走来。"
+			]
+		},
+		{
+			"name": "Ghostwater Dive",
+			"source": "LoRDToB",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你可以在水中爆裂，然后作为一个动作出现在其他地方。你和你所穿戴或携带的任何装备一起神奇地传送到一个你能看到的无人的空间，最远可达30英尺。在传送之前或之后，你可以进行一次攻击，作为你行动的一部分。以这种方式移动不会激起机会攻击。"
+			]
+		},
+		{
+			"name": "Manifestations of the Deep",
+			"source": "LoRDToB",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级的时候，你可以表现出额外的深层适应性。你可以从以下适应性中选择一种，在长时间的休息中，你可以用这个列表中的一个新选项来替换你选择的适应性。",
+				{
+					"type": "entries",
+					"name": "Eyes of the Deep",
+					"entries": [
+						"你获得使用回声定位的能力。当你这样做时，你会施放（%0%）的法术，而不使用法术槽或材料成分。在你以这种方式施展法术后，你不能再使用这个功能，直到你完成一个短期或长期休息。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arms of the Deep",
+					"entries": [
+						"在愤怒的时候，你现在会显现出两个神奇的附属物，它们可以是触手、链子和锚、动画索具，或者你选择的另一个抓取手臂。当你使用你的疏浚线能力时，你可以尝试用你的每一个附肢进行抓捕。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Heart of the Deep",
+					"entries": [
+						"现在在你的回合中，你可以使用一个额外的动作来获得相当于{@dice 1d12}+你的野蛮人等级的临时打击点数。一旦你使用这个特性，你必须完成一个短暂或长时间的休息才能再次使用它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Soul of the Deep",
+					"entries": [
+						"你现在对所有会导致你（%0%）或（%1%）的效果免疫。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armor of the Deep",
+					"entries": [
+						"你的皮肤会变硬，使你的装甲等级增加1。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Depth Charge",
+			"source": "LoRDToB",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Depths",
+			"subclassSource": "LoRDToB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，当你使用鬼水潜行能力时，你可以选择以潮汐力量的波浪出现。当你出现时，所有在你周围10英尺内的生物都必须做一个力量救赎。拯救失败时，生物会受到{@dice 3d6}力量伤害并被击倒{@condition prone}。拯救成功时，生物会受到一半的伤害，并且不被击倒（%2%）。"
+			]
+		},
+		{
+			"name": "Renegade",
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"entries": [
+				"定义叛逆者的不是他们所挥舞的武器，也不是他们的战斗方式那么简单。一个叛逆者，首先是一个具有狡猾魅力和豪迈的战士。叛逆者拥有粗鲁的狂妄，他们建造自己的定制枪械，以完美地适应他们自己比生命更重要的个性。特别是资金充裕的叛徒甚至可能拥有个性化的Hextech武器，但这样的人在比尔吉沃特的恶棍中很少见。",
+				"不要误以为他们的吹嘘是空穴来风--低估了叛徒华丽的枪法的人往往会死于非命。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Scoundrel's Wit|Fighter||Renegade|LoRDToB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gunfighter Form|Fighter||Renegade|LoRDToB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Weapon of Choice|Fighter||Renegade|LoRDToB|3"
+				}
+			]
+		},
+		{
+			"name": "Scoundrel's Wit",
+			"entries": [
+				"从第三级开始，你获得以下两个技能的熟练度。{@skill Deception}, {@skill Persuasion}, 或 {@skill Sleight of Hand}。"
+			],
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Gunfighter Form",
+			"entries": [
+				"此外，当你在3级选择这个原型时，你开始建造一个适合你独特的叛逆者风格的定制枪械。这个过程从选择你的武器所依据的形式开始。从以下选项中选择一个；每一种形态都会赋予你一种新的能力，并解锁某些升级，你可以在更高等级的武器上添加。",
+				{
+					"type": "entries",
+					"name": "Pistoleer",
+					"entries": [
+						"喜欢速度和风格而不是原始的力量，一个采用Pistoleer形态的叛逆者会挥舞一把小型燧发枪。在你的行动中，你可以瞄准30英尺范围内的一个生物并开枪。对目标进行一次远程攻击。你精通该攻击，一旦命中，该攻击造成的穿刺伤害等于（%0%）+你的灵巧修饰。",
+						"当你达到该子类的更高等级时，你在一次行动中可以射击的次数会增加：5级时为2次，11级时为3次，20级时为4次。射击的目标可以是同一个生物或不同的生物。每次射击都要进行单独的攻击卷。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sniper",
+					"entries": [
+						"采用狙击手形态的叛徒拥有一把大型的双手枪械，可以在一次射击中造成巨大的伤害。在你的回合中，你可以瞄准120英尺范围内的一个生物并开枪。对目标进行一次远程攻击。你精通该攻击，一旦命中，该攻击会造成相当于{@dice 1d10}+你的灵巧修改器的穿刺伤害。",
+						"当你达到更高的等级时，你在使用这种形态时造成额外的伤害，在5级时造成相当于{@dice 2d10}+你的灵巧修饰的伤害，在11级时造成{@dice 4d10}，在20级时造成{@dice 6d10}。"
+					]
+				}
+			],
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Weapon of Choice",
+			"entries": [
+				"通过打捞偷来的奥术技术碎片和纯粹的Rekish聪明才智的结合，你可以用各种升级来定制你的枪械。当你在3级选择这个原型时，从本子类末尾的{@filter Firearm Upgrades|optionalfeatures|Feature Type=FU:Min;FU:Maj}列表中挑选一个小升级和一个大升级。如果某项升级有先决条件，你必须满足该先决条件才能从该升级中获益。",
+				"你在5级获得一个额外的小升级，在10级获得一个额外的大升级。",
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"其中一些升级需要你的目标做一个蓄力动作来抵御效果。蓄力动作的计算方式如下。",
+						{
+							"type": "abilityDc",
+							"name": "Firearm Upgrade",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				}
+			],
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Cunning Shot",
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，你学会利用敌人的弱点，即使他们看起来没有弱点。你的枪械造成的伤害，包括通过枪械升级造成的伤害，无视抵抗力和免疫力。"
+			]
+		},
+		{
+			"name": "Grin and Bear It",
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你可以在激烈的战斗中振作起来，即使受了重伤也是如此。当你使用你的 \"第二风 \"功能时，你的攻击力获得+1的奖励，并且你的移动速度增加10英尺，直到你下一个回合开始。"
+			]
+		},
+		{
+			"name": "Right Gun for the Job",
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，你的枪械技能可以适应任何情况。当你完成长时间的休息时，你可以用一个不同的枪械升级来代替你的任何一个枪械升级，尽管你在同一时间不能装备超过两个主要的升级。你仍然必须满足某项升级的先决条件，才能从中受益。"
+			]
+		},
+		{
+			"name": "Light 'Em Up",
+			"source": "LoRDToB",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Renegade",
+			"subclassSource": "LoRDToB",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你学会了将你枪械中黑火药的挥发性力量转化为单一的震荡性爆炸。作为一个额外的动作，你可以投掷或放下一个小型炸药。如果投掷，炸药的范围是30英尺，并在撞击时立即引爆；如果放下，炸药可以在60英尺外远程引爆，这是另一个奖励动作。",
+				"当被引爆时，每个在爆炸物15英尺范围内的生物都必须做一个灵巧的蓄力动作，失败时受到{@dice 12d6}力量伤害，成功时受到一半的伤害。这个蓄力动作的DC等于你的火器升级DC。",
+				"一旦你使用这个功能，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Wild Card",
+			"source": "LoRDToB",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"entries": [
+				"有些流氓喜欢磨练他们的技能和精确性，其他人则喜欢完善银色的舌头，但你......嗯，你总是喜欢把事情交给机会去做。",
+				"狂牌类的流氓在游戏桌上的高额赌注和随机的刺激中茁壮成长。这些狡猾的赌徒拥有狡猾的作弊手段和不小的运气，他们按自己的规则生存和死亡，从不热衷于简单地接受命运给他们的手。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tricks Up the Sleeve|Rogue||Wild Card|LoRDToB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Card's Gambit|Rogue||Wild Card|LoRDToB|3"
+				}
+			]
+		},
+		{
+			"name": "Tricks Up the Sleeve",
+			"entries": [
+				"你对游戏的嗜好使你有能力巧妙地操纵财富对你有利。当你在3级选择这个原型时，你学会了（%0%）的咒语。从9级开始，它对你的范围是30英尺，你可以把它作为一个奖励动作来施放。"
+			],
+			"source": "LoRDToB",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Wild Card's Gambit",
+			"entries": [
+				"同样在3级时，你获得对以下游戏套装之一的熟练度：（%0%）、（%1%）或（%2%）。",
+				"你所选择的博弈套路授予你一个野牌的赌法，详见下文。如果你精通多种类型的游戏组合，你必须在获得此功能时选择使用哪种赌法。每当你在这个等级中获得一个等级时，你可以改变你选择的赌博方式。",
+				{
+					"type": "entries",
+					"name": "Loaded Dice",
+					"entries": [
+						"你获得一个D6池，等于你为你的偷袭伤害所掷的D6数量。(你的池子在3级时以{@dice 2d6}开始，在5级时增加到{@dice 3d6}，以此类推。)",
+						"当一个生物以你为攻击目标时，你可以用你的反应从骰子池中花费一个骰子，并从攻击中减去掷出的数字。你可以选择在生物进行掷骰子之后，但在DM决定攻击卷是否命中之前使用此功能。从9级开始，你可以一次从骰子池中花费最多两个骰子，而从17级开始，你可以一次花费最多三个骰子。当你完成一次长时间的休息时，你会从你的装填骰子池中重新获得所有消耗的骰子。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragonchess",
+					"entries": [
+						"你对棋盘的精通使你成为战场上熟练的战术家。作为你回合中的额外行动，你可以执行以下的国际象棋动作之一。你可以以这种方式使用奖励动作，次数等于你的魅力修改器（最少一次），并在长时间休息后恢复所有使用。",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Dragon.",
+									"entry": "选择一个你能看到的在你30英尺范围内的生物。在你下一回合开始前，该生物第一次成功地进行攻击卷，就会造成与你本级别的等级相等的额外伤害。"
+								},
+								{
+									"type": "item",
+									"name": "Griffon.",
+									"entry": "你的移动速度增加10英尺，而且你的移动不会引起机会攻击。这些好处一直持续到你下一回合的开始。"
+								},
+								{
+									"type": "item",
+									"name": "Sylph.",
+									"entry": "你和你周围5英尺范围内的所有友好生物在灵巧救赎上有优势，直到你下一个回合开始。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Playing Cards",
+					"entries": [
+						"你已经形成了一种基于蛇岛的卡曼术的战斗风格。你拥有自己的魔法卡牌，并能通过手腕的弹动使其边缘变得锋利。如果你本回合还没有使用偷袭，你可以使用你的行动，拿起其中一张牌，用它攻击30英尺内的生物。这个功能的攻击卷轴使用你的灵巧修饰，一旦命中，就会造成等于（%0%）+你的灵巧修饰的斩击伤害。当你掷出伤害时，请看掷出的数字（%1%）。攻击会根据掷出的数字获得一个随机效果，详见下面的野卡套装表。",
+						"你可以以这种方式使用卡片进行攻击，次数与你的魅力修饰值相等（最少一次），并在长时间休息后恢复所有使用。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wild Card Suit Table",
+					"colLabels": [
+						"Damage die (d4)",
+						"Suit"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@b {@i Blade.}}滚动你的偷袭伤害，并将其加入你的剃刀卡的伤害。在其下一回合开始时，目标受到的额外伤害等于所滚动的偷袭伤害的一半。"
+						],
+						[
+							"2",
+							"{@b {@i Shackle.}}直到你下一回合开始，目标的速度减半。当它的速度以这种方式降低时，它在其回合中不能进行一次以上的攻击。"
+						],
+						[
+							"3",
+							"{@b {@i Heart.}}滚动你的偷袭伤害，并将其加入你的剃刀卡的伤害。你也会立即恢复与所受伤害的一半相等的命中率。重新获得的任何多余的命中率都成为临时命中率。"
+						],
+						[
+							"4",
+							"{@b {@i Wild Ace.}}这张牌会根据庄家的意愿变换花色。选择 \"刀\"、\"枷 \"或 \"心\"。然后这张牌立即获得该花色的相应效果。"
+						]
+					]
+				}
+			],
+			"source": "LoRDToB",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Shifting the Odds",
+			"source": "LoRDToB",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToB",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"从第9级开始，你敏锐地意识到如何在你领先时退出，当机会开始对你不利时，你会瞬间消失。作为一个额外的动作，你可以以一种戏剧性的姿态消失。在你10英尺范围内的每个生物都必须做一个灵巧的蓄力动作（DC8+你的熟练度加成+你的魅力修饰），如果蓄力失败会受到（%0%）武力伤害，如果蓄力成功会受到一半的伤害。",
+				"然后你会把自己传送到一个你能看到的、离你原来位置120英尺以内的无人空间。一旦你使用了这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Twist of Fate",
+			"source": "LoRDToB",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToB",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"在13级时，你对游戏桌的掌握磨练了你在战斗中的速度和狡猾。在滚动主动权之后，但在战斗的第一个回合之前，你可以选择与你能看到的一个生物交换主动权的位置。如果该生物是你的盟友之一，该盟友必须同意与你交换主动权。"
+			]
+		},
+		{
+			"name": "Joker Wild",
+			"source": "LoRDToB",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Card",
+			"subclassSource": "LoRDToB",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在17级时，你对机会的掌握甚至包括了你自己的形态，使你能够存在于潜在的现实世界之间。作为你回合中的额外行动，你可以变成无体的形态，在此期间你会获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"你为你的野牌的Gambit功能重新获得消耗的力量。",
+						{
+							"type": "list",
+							"items": [
+								"{@b {@i Cards}.} 你会重新获得该功能的所有已用次数。",
+								"{@b {@i Dragonchess}.} 你会重新获得该功能的所有已用次数。",
+								"{@b {@i Dice}.} 你重新获得所有已用的骰子。"
+							]
+						},
+						"你的移动速度增加一倍。",
+						"你获得对所有伤害的抵抗力，并对{@condition grappled}、{@condition paralyzed}、{@condition stunned}和{@condition restrained}的状况免疫。",
+						"你可以在物体和生物中移动，就像它们是困难地形一样。如果你在一个生物体内结束你的回合，该生物会受到{@dice 1d10}力的伤害，并被分流到他们原来位置5英尺内的一个邻近空间。"
+					]
+				},
+				"这种无体状态会持续一分钟，或者直到你的状态为（%0%）。一旦你使用这个功能，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		}
+	]
+}

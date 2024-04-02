@@ -1,0 +1,331 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "WotCFarideh",
+				"abbreviation": "WotC",
+				"full": "Farideh",
+				"url": "https://media.wizards.com/2014/downloads/dnd/MM_Faridehv2.pdf",
+				"version": "1.0.0",
+				"authors": [
+					"Wizards of the Coast"
+				],
+				"convertedBy": [
+					"Giddy"
+				]
+			}
+		],
+		"dateAdded": 1683211226,
+		"dateLastModified": 1708296841,
+		"_dateLastModifiedHash": "2c07970ffa"
+	},
+	"monster": [
+		{
+			"name": "Farideh",
+			"source": "WotCFarideh",
+			"isNamedCreature": true,
+			"page": 1,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tiefling"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 14,
+			"wis": 13,
+			"cha": 18,
+			"save": {
+				"wis": "+5",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+6",
+				"athletics": "+4",
+				"deception": "+8",
+				"history": "+6",
+				"insight": "+5",
+				"persuasion": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"resist": [
+				"fire"
+			],
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Infernal"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"法丽德是一名12级法术施放者。她的法术能力是魅力（法术豁免 {@dc 17}，法术攻击命中加值 {@hit 9}）。法丽德施放的法术被视为5级法术，她有3个法术位，在完成一次长休或短休后会恢复。法丽德可以随意施放魔法盔甲，并知道以下法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast}",
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell shocking grasp}",
+								"{@spell thaumaturgy}",
+								"{@spell true strike}"
+							]
+						},
+						"5": {
+							"lower": 1,
+							"slots": 3,
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell hellish rebuke}",
+								"{@spell protection from evil and good}",
+								"{@spell misty step}",
+								"{@spell scorching ray}",
+								"{@spell shatter}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell banishment}",
+								"{@spell fire shield}",
+								"{@spell flame strike}",
+								"{@spell circle of death}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"法瑞德的天生施法能力是魅力（法术豁免{@dc 17}）。法瑞德可以天生施放以下法术，无需任何材料组件："
+					],
+					"will": [
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell hellish rebuke}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Agonizing Blast",
+					"entries": [
+						"在命中时，法瑞德 (Farideh) 会为她的奥术射线 (eldritch blast) 造成的伤害额外增加4点。"
+					]
+				},
+				{
+					"name": "Armor of Shadows",
+					"entries": [
+						"法丽德 can cast {@spell mage armor} at will, without expending a spell slot or material components."
+					]
+				},
+				{
+					"name": "Beguiling Influence",
+					"entries": [
+						"法丽德精通欺骗和说服技能（包括在她的技能中）。"
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"法丽德(Farideh)在魔法和非魔法黑暗中都能正常看到，距离为120尺。"
+					]
+				},
+				{
+					"name": "Eldritch Sight",
+					"entries": [
+						"法瑞德可以随意施放{@spell detect magic}，而无需消耗法术位。"
+					]
+				},
+				{
+					"name": "One With Shadows",
+					"entries": [
+						"当在昏暗或黑暗区域时，法丽德 (Farideh) 可以使用一个动作来变成 {@condition invisible}，直到她移动、采取行动或反应为止。"
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"法丽德（Farideh）有一根杖，可以使她的法术豁免 DC 和法术攻击修正值增加 1 点。"
+					]
+				},
+				{
+					"name": "Dark One's Blessing",
+					"entries": [
+						"当法丽德(Farideh)将一个敌对生物的生命值降低到0点时，她获得16点临时生命值。"
+					]
+				},
+				{
+					"name": "Dark One's Own Luck",
+					"entries": [
+						"法丽德可以呼唤她的主人，半魔人洛肯(Lorcan)，来改变她的命运，使之对她有利。当她进行属性检定或豁免投掷时，她可以使用这个特性，在她的骰子点数上增加 {@dice d10}。她必须完成一次长休或短休才能再次使用这个特性。"
+					]
+				},
+				{
+					"name": "Fiendish Resilience",
+					"entries": [
+						"法丽德在完成一次长休或短休后可以选择一个伤害类型。她将对该伤害类型获得抗性，直到使用此特性选择另一种伤害类型。",
+						"来自魔法武器或银武器的伤害会无视这种抗性。"
+					]
+				},
+				{
+					"name": "Mystic Arcanum",
+					"entries": [
+						"法丽德 can cast {@spell circle of death} 次每天 without expending a spell slot. She must finish a long rest before she can cast this spell again."
+					]
+				},
+				{
+					"name": "Pact of the Tome",
+					"entries": [
+						"洛肯授予法瑞德一本名为影子之书的魔法书。当她携带这本书时，除了她已经掌握的零级法术外，她还可以施展{@spell fire bolt}、光明和震荡之触。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw}进行攻击，达到5英尺，一个目标。造成{@h}5({@damage 1d6 + 2})点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"N",
+				"O",
+				"R",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"fluff": {
+				"_monsterFluff": {
+					"name": "Farideh",
+					"source": "WotCFarideh"
+				}
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WotCFarideh/token/Farideh.png",
+			"attachedItems": [
+				"greatclub|phb",
+				"shortsword|phb"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity"
+			]
+		}
+	],
+	"monsterFluff": [
+		{
+			"name": "Farideh",
+			"source": "WotCFarideh",
+			"entries": [
+				"法丽德（Farideh）是一位术士，利用她的力量保护她关心的人（以及她前往的各个城市）免受九层地狱和其他邪恶团体的侵害。她被一位名叫梅亨（Mehen）的雄性龙裔收养，她有一个同卵双生的姐姐哈维拉（Havilar），她使用戈尖杆（glaive）作战，有点善变。法丽德获得她的力量是因为哈维拉意外召唤了洛肯（Lorcan），一个来自第六层（Malbolge）的混血恶魔，他正在寻找布赖西斯·卡基斯托斯（Bryseis Kakistos）的继承人来补全他的阵容。法丽德恰好是那位继承人，她渴望更好地控制自己的生活并保护她的姐姐。她很容易被洛肯所左右，因为他非常迷人且善于操纵。",
+				"布赖西斯·卡基斯托斯（Bryseis Kakistos）是一名术士，曾与其他十二名鬼族术士一起进行仪式，帮助阿斯莫迪斯（Asmodeus）升格为神灵，并改变鬼族的血统，使其成为真正的阿斯莫迪安人。所有自那时起的鬼族都是阿斯莫迪安人，这要归功于她的结社\u2014\u2014托瑞尔十三人（Toril Thirteen）。布赖西斯·卡基斯托斯没有及时获得她承诺的奖赏，于是开始策划阴谋，最终导致了她的死亡。二十五年前，她逃离了九层地狱，并试图通过她的后裔和追随者转世，但她试图附着的受精卵在过程中分裂成两个，撕裂了她的幽灵。",
+				"两块碎片留存下来，最终由双生灵魂形成。这两块碎片中蕴含着如何摧毁罪恶之神的知识。",
+				"在分裂时期，法瑞德和哈维拉作为阿斯莫迪斯的被选者而获得了力量。他们没有意识到这些力量实际上是为了布赖西斯·卡基斯托斯而设的，作为她协助的报酬。但阿斯莫迪斯也知道他的命运之知存在于这对双胞胎之中，并希望他们被彻底而悄然地处理掉。",
+				"为什么他们没有早点被处理？这对双胞胎都受到了强大的保护，使得他们无法被窥视，除非采取相应的变通方法（例如，Lorcan收集了Farideh的一滴血样，这使他能够召唤出她的其他血液），并且还能驱逐Bryseis Kakistos的幽灵。这种保护的起源是未知的；有人猜测这可能与Selune和一个名叫Alyona的魔鬼有关，而Bryseis Kakistos却无法完全记起。",
+				"这对双胞胎与瓦特德普的(`Waterdeep`)哈珀(`Harpers`)有联系，在他们成为高级哈珀(`High Harper`)之前曾协助塔姆·扎瓦德(`Tam Zawad`)执行任务。他们的两位同伴是哈珀成员：达尔·佩雷杜(`Dahl Peredur`)（奥格玛(`Oghma`)的堕落圣骑士和哈珀处理者）和奥布林\"布林\"·克朗希尔瓦(`Aubrin \"Brin\" Crownsilver`)（科尔米尔(`Cormyrean`)贵族和自由行动特工）。",
+				"他们还与恶魔、黑网络(Zhentarim)、尼瑟瑞斯(Netherese)巫师（死去和活着的）、红巫师(Red Wizards)、深渊鱼(aboleths)、科尔马尔(Cormyrean)贵族和阿什玛代(Ashmadai)教徒发生过冲突。到目前为止，这些书都设定在尼瑟瑞斯山脉(Nether Mountains)、瓦特德普(Waterdeep)和高等森林(High Forest)以及科尔马(Cormyr)及其周边地区。",
+				{
+					"type": "entries",
+					"name": "Chosen as Asmodeus",
+					"entries": [
+						"作为阿斯莫迪斯的被选者，法丽德（Farideh）继承了以下两个特殊特征，如下所述。",
+						{
+							"type": "entries",
+							"name": "Soul Gaze",
+							"entries": [
+								"当法丽德使用这个特性时，她可以查看任何一个凡人灵魂的状态。借助这种力量，她可以感知某人的腐化程度，并能判断生物在善良/中立/邪恶的光谱上处于何种位置。此外，她还可以判断生物是否已被某位神明（如牧师或圣骑士）或甚至被选民中的一位所认可。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Infernal Aspect",
+							"entries": [
+								"法丽德（Farideh）可以采取行动，散发一种威胁的光环，影响她周围30英尺范围内的敌对生物。这些生物中的每一个必须成功通过一次{@dc 17}感知豁免才能避免被{@condition frightened}并受到类似被虚弱射线击中的影响。在受影响生物的每个回合结束时，它可以进行另一次感知豁免。若成功，则该生物对法丽德的威胁光环免疫，持续24小时。威胁光环持续时间最长为1分钟，需要{@status concentration}。",
+								"此外，在效果生效期间，法瑞德 (Farideh) 被一圈火焰光环环绕，背后还会冒出一对火焰之翼。法瑞德和她携带的任何人或物体对这团火焰的热量免疫。每当在你身边5英尺范围内的生物用近战攻击命中她时，光环会爆发火焰，攻击者会受到{@damage 2d8}火焰伤害。",
+								"一旦法瑞德使用了这个能力，她必须完成一次长休才能再次使用。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/WotCFarideh/monster/Farideh.webp"
+					}
+				}
+			]
+		}
+	]
+}

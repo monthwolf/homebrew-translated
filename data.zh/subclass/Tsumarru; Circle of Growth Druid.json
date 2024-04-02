@@ -1,0 +1,425 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CircleofGrowth",
+				"abbreviation": "Growth",
+				"full": "Circle of Growth",
+				"authors": [
+					"Tsu"
+				],
+				"convertedBy": [
+					"Tsu"
+				],
+				"version": "1.0",
+				"url": "https://github.com/TheGiddyLimit/homebrew"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 1679260896,
+		"_dateLastModifiedHash": "5e0390a6e9"
+	},
+	"subclass": [
+		{
+			"name": "Circle of Growth",
+			"source": "CircleofGrowth",
+			"className": "Druid",
+			"classSource": "PHB",
+			"shortName": "Growth",
+			"subclassSpells": [
+				"goodberry",
+				"entangle",
+				"enhance ability",
+				"dust devil",
+				"call lightning",
+				"wall of water",
+				"ice storm",
+				"summon elemental",
+				"transmute rock",
+				"scrying"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"2": [
+							"goodberry",
+							"entangle"
+						],
+						"3": [
+							"enhance ability",
+							"dust devil"
+						],
+						"5": [
+							"call lightning",
+							"wall of water"
+						],
+						"7": [
+							"ice storm",
+							"summon elemental"
+						],
+						"9": [
+							"transmute rock",
+							"scrying"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Circle of Growth|Druid||Growth|CircleofGrowth|2",
+				"Boons of Nature|Druid||Growth|CircleofGrowth|6",
+				"Natural Burst|Druid||Growth|CircleofGrowth|10",
+				"Rapid Growth|Druid||Growth|CircleofGrowth|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of Growth",
+			"source": "CircleofGrowth",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassSource": "CircleofGrowth",
+			"subclassShortName": "Growth",
+			"page": 1,
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"成长之环德鲁伊相信自然不应该被用户限制或过度操纵，而是应该允许魔法的使用者让自然按照自己的意愿生长。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Spells|Druid||Growth|CircleofGrowth|2|CircleofGrowth"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Leech of Nature|Druid||Growth|CircleofGrowth|2|CircleofGrowth"
+				}
+			]
+		},
+		{
+			"name": "Circle Spells",
+			"source": "CircleofGrowth",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassSource": "CircleofGrowth",
+			"subclassShortName": "Growth",
+			"page": 1,
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"{@i 2nd-level Circle of Growth Feature}",
+				"你已经接纳了大自然的原始力量，你获得了法术，以便让大自然得以扩展。",
+				{
+					"type": "table",
+					"caption": "Circle of Growth Spells",
+					"colLabels": [
+						"Druid Level",
+						"Spells"
+					],
+					"colStyles": [
+						"text-center col-3",
+						"text-align-left col-9"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell goodberry}, {@spell entangle}"
+						],
+						[
+							"3rd",
+							"{@spell enhance ability}, {@spell dust devil}"
+						],
+						[
+							"5th",
+							"{@spell call lightning}, {@spell wall of water}"
+						],
+						[
+							"7th",
+							"{@spell ice storm}, {@spell summon elemental}"
+						],
+						[
+							"9th",
+							"{@spell transmute rock}, {@spell scrying}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Leech of Nature",
+			"source": "CircleofGrowth",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassSource": "CircleofGrowth",
+			"subclassShortName": "Growth",
+			"page": 1,
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"{@i 2nd-level Circle of Growth Feature}",
+				"当你使用德鲁伊法器施放1级或更高级法术时，吸收周围的自然能量，投掷一个D20。如果投掷结果为1、2、19或20，则会在自然魔法突发表上进行一次投掷。每回合只能发生一次。",
+				{
+					"type": "table",
+					"caption": "Wild Magic Surge",
+					"colLabels": [
+						"{@dice d100}",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"01-02",
+							"在接下来的一分钟内，在每个你的回合开始时在这个表格上掷骰，这效果可以叠加。"
+						],
+						[
+							"03-04",
+							"在接下来的一分钟里，你和距离你不超过10英尺的任何人都可以与动物和植物交谈。"
+						],
+						[
+							"05-06",
+							"一个野兽被DM选择并控制，出现在你附近5英尺内的空地上，1分钟后消失。"
+						],
+						[
+							"07-08",
+							"你以第5级的水平对一个随机目标施放{@spell ice knife}。"
+						],
+						[
+							"09-10",
+							"你将{@spell magic missile}施展为5级法术。"
+						],
+						[
+							"11-12",
+							"掷骰子{@dice d100}。你的身高会增加或减少与投掷结果相等的厘米数。如果点数为奇数，你会缩短。如果点数为偶数，你会增长。"
+						],
+						[
+							"13-14",
+							"你以自己为中心施放{@spell confusion}。"
+						],
+						[
+							"15-16",
+							"在接下来的一分钟内，在你的每个回合开始时，你恢复5点生命值。"
+						],
+						[
+							"17-18",
+							"你长出一顶由树叶制成的长胡须，直到你打喷嚏时，树叶从你的脸上爆炸出来。"
+						],
+						[
+							"19-20",
+							"你对自己施放了伪装死亡（Feign Death）法术，必须等待持续时间结束。"
+						],
+						[
+							"21-22",
+							"生物在接下来的一分钟内对你施放的下一个需要豁免投掷的法术有劣势。"
+						],
+						[
+							"23-24",
+							"你的皮肤变成树皮，不会带来任何优势或劣势。一次解咒法术可以结束这种效果。"
+						],
+						[
+							"25-26",
+							"你头上长着一个发光的蘑菇，为周围提供30英尺的微光，5英尺的强光。"
+						],
+						[
+							"27-28",
+							"在接下来的一分钟内，所有你的施法时间为1个动作的法术，施法时间变为1个奖励动作。"
+						],
+						[
+							"29-30",
+							"你随机变形一个你能看见的生物。"
+						],
+						[
+							"31-32",
+							"你被传送到星界，直到你的下一个回合结束，之后你会回到之前所占据的空间，如果那个空间已经被占据，你会回到最近的未被占据的空间。"
+						],
+						[
+							"33-34",
+							"在接下来的一分钟内，最大化你施放的下一个造成伤害的法术的伤害。"
+						],
+						[
+							"35-36",
+							"掷骰子，结果为{@dice d10}。你的年龄会增加或减少与掷骰结果相等的年数。如果结果为奇数，你会变年轻（最小为1岁）。如果结果为偶数，你会变年长。"
+						],
+						[
+							"37-38",
+							"{@dice 1d6} {@creature twig blight||twig blights} 由主持人控制，出现在离你不超过60英尺的空地上，并且是你的{@condition frightened}。1分钟后它们会消失。"
+						],
+						[
+							"39-40",
+							"你恢复 {@dice 2d10} 生命值。"
+						],
+						[
+							"41-42",
+							"你变成一盆植物，直到你的下一个回合开始。在植物状态下，你是{@condition incapacitated}，对所有伤害都具有脆弱性。如果你的生命值降至0点，你的花盆会破裂，你的形态会恢复。"
+						],
+						[
+							"43-44",
+							"在接下来的一分钟内，你可以在每个回合的奖励行动中传送多达20英尺。"
+						],
+						[
+							"45-46",
+							"你对自己施放了{@spell meld with stone}，然后被拖入最近的石头中。"
+						],
+						[
+							"47-48",
+							"一个由DM控制的{@creature unicorn}出现在你附近5英尺的空间内，然后1分钟后消失。"
+						],
+						[
+							"49-50",
+							"在接下来的一分钟里，你无法说话。每当你尝试说话时，粉色的泡泡会从你的嘴里飘出来。"
+						],
+						[
+							"51-52",
+							"在你附近生长出一面藤盾，持续一分钟，为你提供+2的AC奖励。"
+						],
+						[
+							"53-54",
+							"你被类似于酒精的东西迷醉了，持续5d6天。"
+						],
+						[
+							"55-56",
+							"你的头发会掉落，但在24小时内会重新长出来。"
+						],
+						[
+							"57-58",
+							"在接下来的一分钟内，任何你触碰到的非被其他生物穿戴或携带的易燃物体都会突然燃烧起来。"
+						],
+						[
+							"59-60",
+							"你恢复你最低等级已消耗的法术位。"
+						],
+						[
+							"61-62",
+							"在接下来的一分钟里，你必须大声喊话。"
+						],
+						[
+							"63-64",
+							"你以自己为中心施放{@spell daylight}。"
+						],
+						[
+							"65-66",
+							"你选择的距离你30英尺内的最多三个生物受到{@damage 4d10} 闪电伤害。"
+						],
+						[
+							"67-68",
+							"你被最近的生物影响，直到你的下一个回合结束。"
+						],
+						[
+							"69-70",
+							"你周围30英尺范围内的每个生物在接下来的一分钟内都会变形。"
+						],
+						[
+							"71-72",
+							"你在接下来的一分钟内对所有伤害获得抗性。"
+						],
+						[
+							"73-74",
+							"你身边60英尺范围内的一个随机生物变成{@condition poisoned}，持续{@dice 1d4}小时。"
+						],
+						[
+							"75-76",
+							"在接下来的一分钟内，你身边会散发出30英尺半径的明亮光芒。任何在你5英尺范围内结束回合的生物都会在其下一个回合结束前变为{@condition blinded}(Turned)。"
+						],
+						[
+							"77-78",
+							"你对自己施放了{@spell polymorph}。如果你未能通过豁免检定，你将在法术持续时间内变成一只羊。"
+						],
+						[
+							"79-80",
+							"在你周围10英尺范围内，虚幻的蝴蝶和花瓣在空中飘舞，持续一分钟。"
+						],
+						[
+							"81-82",
+							"你可以立即执行一个额外的动作。"
+						],
+						[
+							"83-84",
+							"你周围30英尺范围内的每个生物受到{@damage 1d10}死灵伤害。你回复的生命值等于造成的死灵伤害总和。"
+						],
+						[
+							"85-86",
+							"你施放了{@spell stone skin}。"
+						],
+						[
+							"87-88",
+							"你对距离你60英尺内的一个随机生物施放{@spell fly}。"
+						],
+						[
+							"89-90",
+							"在接下来的一分钟里，你变成了{@condition invisible}。在这段时间内，其他生物无法听到你。如果你攻击或施放法术，隐形效果就会结束。"
+						],
+						[
+							"91-92",
+							"如果在接下来的一分钟内死亡，你会立即复活，就像通过{@spell reincarnate}法术一样。"
+						],
+						[
+							"93-94",
+							"你的尺寸在接下来的一分钟内增加一个尺寸类别。"
+						],
+						[
+							"95-96",
+							"你和你周围30英尺范围内的所有生物在接下来的一分钟内对穿刺伤害获得易伤状态。"
+						],
+						[
+							"97-98",
+							"在接下来的一分钟里，你被微弱、空灵的Smash Mouth音乐包围着。"
+						],
+						[
+							"99-00",
+							"你恢复已耗尽的法术位，数量等同于你的等级。"
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Boons of Nature",
+			"source": "CircleofGrowth",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassSource": "CircleofGrowth",
+			"subclassShortName": "Growth",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of Growth Feature}",
+				"你的攻击被龙的内在魔法注入。当你处于你的龙之本质形态时，每当你在你的回合使用攻击动作时，你可以攻击两次，而不是一次。此外，在你的龙之本质形态中进行的攻击被视为具有魔法属性，用于克服对非魔法攻击和伤害的抵抗和免疫。"
+			]
+		},
+		{
+			"name": "Natural Burst",
+			"source": "CircleofGrowth",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassSource": "CircleofGrowth",
+			"subclassShortName": "Growth",
+			"page": 2,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of Growth Feature}",
+				"你可以使用 2 次野性变身，并对一个随机目标施放你最高级别的法术。"
+			]
+		},
+		{
+			"name": "Rapid Growth",
+			"source": "CircleofGrowth",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassSource": "CircleofGrowth",
+			"subclassShortName": "Growth",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of Growth Feature}",
+				"短暂休息后，您可以随意触发（Natral Magic Surge）自然魔法涌动。"
+			]
+		}
+	]
+}

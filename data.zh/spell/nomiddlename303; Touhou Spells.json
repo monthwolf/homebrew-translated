@@ -1,0 +1,722 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TouhouSpells",
+				"abbreviation": "THSP1",
+				"full": "Touhou Spells",
+				"url": "https://www.gmbinder.com/share/-LbMzjRQigkO3UAJ7pCJ",
+				"authors": [
+					"nomiddlename303"
+				],
+				"convertedBy": [
+					"Lilo Marino, TamagoGamer"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1705785772,
+		"dateLastModified": 1705785772,
+		"_dateLastModifiedHash": "074152a07c"
+	},
+	"spell": [
+		{
+			"name": "Fantasy Seal",
+			"source": "TouhouSpells",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ying-yang orb"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在这个法术持续期间，八个明亮的多彩光球环绕着你。你可以使用你的奖励动作释放最多两个光球，将它们发送到你在90英尺内选择的一个或多个点。一旦一个光球到达目标点，它就会爆炸，释放出辐射能量。在以该点为中心的15英尺半径范围内的每个生物必须进行一次敏捷豁免，未通过则受到{@damage 6d8}辐射伤害，通过则受到一半伤害。在多个爆炸范围内的生物只受到一次影响。",
+				"当你还有五个或更多的球时，它们在30英尺半径内散发出明亮光芒，并在额外30英尺内散发微弱光芒，你被视为受到所有非魔法远程攻击的半掩护。如果你还剩下一个到四个球，它们在30英尺半径内散发微弱光芒。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"LGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"R"
+			]
+		},
+		{
+			"name": "Killing Doll",
+			"source": "TouhouSpells",
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a silvered dagger worth at least 100 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"挥舞着用于这个施法的匕首，你召唤出数百把小刀，将它们全部向射程内的生物发射。这些小刀的轨迹形成一条5英尺长的直线，从你延伸到目标处。",
+				"在符合当地语言习惯的情况下，文本中像(%num%)这样的内容在翻译中仍应保持为(%num%)。\n\n线上的每个生物，不包括你和被选中的生物，必须进行一次敏捷豁免检定，未通过检定的生物将受到{@damage 10d4}点刺穿或劈砍伤害（你选择），通过检定的生物则只受一半伤害。",
+				"此外，目标生物必须进行一次敏捷豁免，未能通过则受到{@damage 20d4}点刺穿或劈砍伤害（你选择），通过则只受一半伤害。",
+				"这个法术创造的任何刀具在施法后会消失。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用7级或更高级别的法术位施放这个法术时，目标生物和直线上的生物所受到的伤害分别增加 {@dice 4d4} 和 {@dice 2d4}，每超过6级的法术位增加一次。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"piercing",
+				"slashing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Master Spark",
+			"source": "TouhouSpells",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a miniature furnace worth at least 500 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一道巨大的能量光束从你身上射出，形成一条长120英尺、宽20英尺的线，持续整个法术的持续时间。当法术施放时，被光束区域内的每个生物必须进行一次体质豁免才能。未能通过豁免的生物会受到{@damage 8d8}的力量伤害，并在你的下一个回合开始前处于{@condition blinded}状态。成功通过豁免的生物只会受到一半的伤害，并不会被{@condition blinded}。生物在首次移动到光束内或在其回合开始时也需要进行这次豁免。",
+				"能量束随着你移动并保持相对于你的位置不变，你可以利用你的动作在咒语持续时间内改变束的方向。如果你不改变束的方向且不移动，你也可以利用你的动作增加咒语的伤害量{@dice 2d8}。这个额外伤害叠加直到你移动或改变束的方向，此时伤害会恢复到原始数值。",
+				"这束光线可以驱散其空间内由8级或更低级法术创造的任何黑暗。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"LGT"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Peerless Wind",
+			"source": "TouhouSpells",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你赋予自己灼热的速度。在此法术持续期间，你所有的速度增加120尺。此外，你可以在你的回合中将冲刺动作作为一个额外动作进行，而且机会攻击对你有劣势。然而，在你拥有这个速度增加的时候，你不能在直线上移动少于30尺才能自愿停下或改变方向，而改变方向需要15尺的移动。",
+				"如果你在这个法术激活时采取冲刺动作，你本回合的移动会引起一股致命的冲击波。在你移动轨迹的10英尺范围内的每个生物必须进行一次力量豁免投。未通过豁免的生物会受到{@damage 5d6} 钝击伤害并被击倒{@condition prone}。通过豁免的生物只受一半伤害且不被击倒{@condition prone}。每个生物在你的回合内只能受到一次影响。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Perfect Freeze",
+			"source": "TouhouSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a shard of ice"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你猛击你面前的地面，导致以你为中心的一个20英尺正方形区域突然冻结。在该区域内的每个生物必须进行一次敏捷豁免检定。未通过检定的生物会受到{@damage 8d6}的冰冷伤害，通过检定的生物则只受到一半伤害。一个大型或更小的未通过豁免检定的生物也会被{@condition restrained}，持续1分钟。",
+				"一个{@condition restrained}生物可以使用其动作对你的法术豁免 DC 进行力量检定。若成功，它将挣脱冰冻状态。",
+				"该法术的范围也会变成艰难地形，直到你的下一个回合结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放这个法术时，伤害会每超过5级的位数增加{@dice 2d6}。"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"areaTags": [
+				"Q"
+			]
+		},
+		{
+			"name": "Present World Slash",
+			"source": "TouhouSpells",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "hemisphere",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a martial melee slashing weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你赋予你手持的武器力量，释放一次毁灭性的、魔法充能的攻击。作为施放这个法术的一部分行动，你必须用你的武器进行一次近战武器攻击。这次攻击是魔法攻击，无视目标AC的任何魔法增加。",
+				"无论攻击是否命中，都会从武器中发出一道巨大的能量斩击，形成一个以你为起点的半径15英尺的半圆形范围。该范围内的每个生物都必须进行一次敏捷豁免检定，未通过检定的生物将受到{@damage 6d10}的力量伤害，通过检定的生物则只受到一半伤害。如果初始攻击命中目标，目标在这次豁免检定中将处于劣势。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"H"
+			]
+		},
+		{
+			"name": "Return Inanimateness",
+			"source": "TouhouSpells",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你让一个非魔法物体或生物魔法性地爆炸。如果目标是一个生物，它必须进行一次体质豁免，未通过则受到{@damage 8d10}火焰伤害，通过则受到一半伤害。构造物在豁免时有劣势。如果目标是一个物体，它必须完全放入一个10英尺立方体内，并且会自动受到法术的最大伤害。",
+				"爆炸形成以目标为中心的15英尺半径球体。该区域内的每个生物（不包括原始目标）必须进行一次敏捷豁免检定。生物在豁免失败时受到{@damage 4d10}火焰伤害，豁免成功时受到一半伤害。该法术会损坏区域内的物体，并点燃未被穿戴或携带的易燃物品。",
+				"如果目标被这个法术降为0点生命值，它将化为灰烬。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"areaTags": [
+				"ST",
+				"S"
+			]
+		},
+		{
+			"name": "Royal Flare",
+			"source": "TouhouSpells",
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"一道耀眼的光芒从你的手掌中爆发出来。这道光芒照亮了60英尺范围内的区域，并在额外的60英尺范围内投射出微弱的光芒。当你施放这个法术时，你可以选择范围内的每个生物。",
+				"在你身边60英尺范围内的生物必须进行一次体质豁免才能避免成为{@condition blinded}，直到你的下一个回合开始。",
+				"在法术持续时间内，你可以使用你的动作从手掌发出四道闪亮的辐射能量束，横扫过地面。对于每一束，选择距离你不超过60英尺的地面上两个点，它们之间的距离不超过30英尺。介于这两点之间的5英尺宽线上的每个生物必须进行一次敏捷豁免，未通过豁免的生物将受到{@damage 5d8}辐射伤害，通过豁免的生物受到一半伤害。处于多道光束覆盖范围内的生物只受到一次影响。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			],
+			"miscTags": [
+				"LGT"
+			],
+			"areaTags": [
+				"L"
+			]
+		},
+		{
+			"name": "Subconscient Aura",
+			"source": "TouhouSpells",
+			"level": 7,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"在施放此法术的持续时间内，你周围30英尺范围内笼罩着一种精神混乱的氛围。当你施放这个法术时，你可以选择任意数量的你能看到的生物不受其影响。在法术范围内受到影响的每个生物必须进行一次智力豁免检定。任何智力分数为2或更低的生物不受影响。生物在豁免检定失败时受到{@damage 4d10}点精神伤害，成功时受到一半伤害。生物在首次进入该范围或在其回合开始时也必须进行这次豁免检定。",
+				"此外，当你施放这个法术时，请选择以下效果之一。当一名生物未能通过这个法术的豁免扑克时，它也会受到所选择的效果影响。如果一名生物成功通过这个法术的豁免扑克，那么它在法术剩余时间内免疫光环的额外效果。",
+				"{@b Id Release.}光环放大了其中人的{@condition unconscious}本能，使理性思维几乎不可能。该生物被你{@condition charmed}，直到其下一个回合开始。在这种方式下{@condition charmed}，它在智力、感知和魅力豁免检定上有劣势。这个劣势不适用于对抗此法术的豁免检定。",
+				"{@b Super-Ego Repression.} 光环点燃了良心，使心智无法正常运转，让生物陷入近乎瘫痪的偏执状态。该生物在其下个回合开始前是{@condition frightened}。在这种状态下，它是{@condition incapacitated}，速度降低为0。"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST",
+				"MT",
+				"R"
+			]
+		}
+	],
+	"roll20Spell": [
+		{
+			"name": "Fantasy Seal",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Dexterity",
+				"Damage": "6d8",
+				"Damage Type": "Radiant",
+				"Save Success": "Half as much damage"
+			}
+		},
+		{
+			"name": "Killing Doll",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Dexterity",
+				"Damage": "20d4",
+				"Damage Type": "Piercing or Slashing",
+				"Save Success": "Half as much damage",
+				"Higher Spell Slot Die": "d4",
+				"Higher Spell Slot Dice": "4",
+				"Secondary Damage": "10d4",
+				"Secondary Damage Type": "Piercing or Slashing",
+				"Secondary Higher Spell Slot Die": "d4",
+				"Secondary Higher Spell Slot Dice": "2"
+			}
+		},
+		{
+			"name": "Master Spark",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Constitution",
+				"Damage": "8d8",
+				"Damage Type": "Force",
+				"Save Success": "Takes half as much damage and aren't blinded."
+			}
+		},
+		{
+			"name": "Peerless Wind",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Strength",
+				"Damage": "5d6",
+				"Damage Type": "Bludgeoning",
+				"Save Success": "Takes half as much damage and isn't knocked prone"
+			}
+		},
+		{
+			"name": "Perfect Freeze",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Dexterity",
+				"Damage": "8d6",
+				"Damage Type": "Cold",
+				"Save Success": "Half as much damage",
+				"Higher Spell Slot Die": "d6",
+				"Higher Spell Slot Dice": "2"
+			}
+		},
+		{
+			"name": "Present World Slash",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Dexterity",
+				"Damage": "6d10",
+				"Damage Type": "Force",
+				"Save Success": "Half as much damage"
+			}
+		},
+		{
+			"name": "Return Inanimateness",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Constitution",
+				"Damage": "8d10",
+				"Damage Type": "Fire",
+				"Save Success": "Half as much damage",
+				"Secondary Damage": "4d10",
+				"Secondary Damage Type": "Fire"
+			}
+		},
+		{
+			"name": "Royal Flare",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Dexterity",
+				"Damage": "5d8",
+				"Damage Type": "Radiant",
+				"Save Success": "Half as much damage"
+			}
+		},
+		{
+			"name": "Subconscient Aura",
+			"source": "TouhouSpells",
+			"data": {
+				"Save": "Intelligence",
+				"Damage": "4d10",
+				"Damage Type": "Psychic",
+				"Save Success": "Half Damage"
+			}
+		}
+	]
+}

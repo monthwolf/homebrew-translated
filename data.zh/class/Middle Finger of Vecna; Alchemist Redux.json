@@ -1,0 +1,2933 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MFoV-CAR",
+				"abbreviation": "MFoV",
+				"full": "Complete Alchemist Redux",
+				"authors": [
+					"Middle Finger of Vecna"
+				],
+				"convertedBy": [
+					"LL",
+					"Lxran#2292"
+				],
+				"version": "1.0",
+				"url": "http://mfov.magehandpress.com/2019/01/alchemist-redux.html",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"optionalFeatureTypes": {
+			"BO": "Bomb Formula",
+			"DI": "Discovery"
+		},
+		"dateAdded": 1552865157,
+		"dateLastModified": 1689601324,
+		"_dateLastModifiedHash": "3ff9003a17"
+	},
+	"class": [
+		{
+			"name": "Alchemist",
+			"source": "MFoV-CAR",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Formulae Known",
+						"Discoveries Known",
+						"Reagent Dice"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							3,
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							4,
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							4,
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							5,
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							5,
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							6,
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							6,
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							7,
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 11,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							7,
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 12,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							8,
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 13,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							8,
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 14,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							9,
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 15,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							9,
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 16,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							10,
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 17,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							10,
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 18,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							11,
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 19,
+										"faces": 10
+									}
+								]
+							}
+						],
+						[
+							11,
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 20,
+										"faces": 10
+									}
+								]
+							}
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"Simple",
+					"Bomb"
+				],
+				"tools": [
+					"Herbalism Kit",
+					"Alchemist's Supplies"
+				],
+				"armor": [
+					"light"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"sleight of hand",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"{@item Leather armor|phb}, a {@item dagger|phb}, and {@item alchemist's supplies|phb}",
+					"(a) {@item explorer's pack|phb} or (b) a {@item scholar's pack|phb}",
+					"(a) {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item acid (vial)|phb|vial of acid} or (b) a {@item alchemist's fire (flask)|phb|flask of alchemist's fire}, or (c) a {@item basic poison (vial)|phb|vial of basic poison}"
+				],
+				"defaultData": [
+					{
+						"_": [
+							"leather armor|phb",
+							"dagger|phb",
+							"alchemist's supplies|phb"
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"scholar's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"acid (vial)|phb"
+						],
+						"b": [
+							"alchemist's fire (flask)|phb"
+						],
+						"c": [
+							"basic poison (vial)|phb"
+						]
+					}
+				]
+			},
+			"classFeatures": [
+				"Natural Philosopher|Alchemist|MFoV-CAR|1",
+				"Bombs|Alchemist|MFoV-CAR|1",
+				"Bomb Formulae|Alchemist|MFoV-CAR|2",
+				{
+					"classFeature": "Field of Study|Alchemist|MFoV-CAR|2",
+					"gainSubclassFeature": true
+				},
+				"Reagent|Alchemist|MFoV-CAR|3",
+				"Discoveries|Alchemist|MFoV-CAR|4",
+				"Ability Score Improvement|Alchemist|MFoV-CAR|4",
+				"Flashbang|Alchemist|MFoV-CAR|5",
+				{
+					"classFeature": "Field of Study Feature|Alchemist|MFoV-CAR|6",
+					"gainSubclassFeature": true
+				},
+				"Additional Discoveries|Alchemist|MFoV-CAR|6",
+				"Potion Improvement|Alchemist|MFoV-CAR|7",
+				"Ability Score Improvement|Alchemist|MFoV-CAR|8",
+				"Additional Discoveries|Alchemist|MFoV-CAR|9",
+				{
+					"classFeature": "Field of Study Feature|Alchemist|MFoV-CAR|10",
+					"gainSubclassFeature": true
+				},
+				"Evasion|Alchemist|MFoV-CAR|11",
+				"Ability Score Improvement|Alchemist|MFoV-CAR|12",
+				"Additional Discoveries|Alchemist|MFoV-CAR|13",
+				"Potion Improvement|Alchemist|MFoV-CAR|14",
+				"Blast Coating|Alchemist|MFoV-CAR|15",
+				"Ability Score Improvement|Alchemist|MFoV-CAR|16",
+				"Additional Discoveries|Alchemist|MFoV-CAR|17",
+				{
+					"classFeature": "Field of Study Feature|Alchemist|MFoV-CAR|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alchemist|MFoV-CAR|19",
+				"Philosopher's Stone|Alchemist|MFoV-CAR|20"
+			],
+			"subclassTitle": "Field of Study",
+			"fluff": [
+				{
+					"entries": [
+						"一个大大咧咧的地精高兴地笑着，他把一枚炸弹扔向一群冲锋陷阵的地精，把他们炸成焦炭。他又拿出一枚炸弹，扔到自己脚下，然后仍然笑着消失在随之而来的烟云中。",
+						"一个苗条的精灵在一个小碗里快速混合液体和草药。她将混合物涂抹在一个受伤的矮人身上的箭伤上，伤口立即止血。",
+						"无论他们的方法是爆炸性的、变革性的还是恢复性的，炼金术士都是为了将他们周围的世界转化为他们喜欢的样子。",
+						{
+							"type": "entries",
+							"name": "Chemical Reactions",
+							"entries": [
+								"炼金术士最先学会的东西之一是如何混合相互间有爆炸反应的化学品。表面上看，这是教给学生的，以防止致命的事故，但冒险的炼金术士经常应用这些知识来制造炸弹。",
+								"炼金炸弹是一个1磅重、苹果大小的球形玻璃或粘土烧瓶，里面装满了反应性化学品。一个装有试剂的较小的薄玻璃瓶悬浮在液体中，整个瓶子用软木塞或蜡封密封。化学品在混合后会发生剧烈爆炸。这发生在内瓶破裂时，通常是在炸弹撞击固体表面或导火线引爆小瓶内的小型炸药雷管之后。炸弹主要用于抵御敌人，但有创造力的炼金术士可能会为炸药找到更实用的用途，如拆除障碍物。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Serums and Tinctures",
+							"entries": [
+								"更有经验的炼金术士学会将不太易挥发的物质混合成药水，即复制魔法效果的炼金术混合物。这些药水的范围很广，有药用的，如治疗药水；有转化的，如气态药水；也有直接致命的，如毒药药水。炼金术士是无可争议的药水大师，他们不断创新新的配方和制剂，将他们的药水改进为自己的魔法物品。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Elemental Sciences",
+							"entries": [
+								"炼金术力量的主要来源来自元素界。因此，炼金术士努力深入挖掘这种力量，研究和发现由元素组成的新化合物，这并不奇怪。炼金术的顶峰是哲学家之石，据传它能赋予持有者最高的元素力量。很少有炼金术士成功地创造出哲人石，更少有人能活着泄露它的秘密。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating an Alchemist",
+							"entries": [
+								"当你创造一个炼金术士时，考虑你的角色为什么要研究炼金术。你是被其危险的力量所吸引，还是被其帮助他人的能力所吸引？你是否渴望使用魔法，但缺乏天赋或天生的能力？",
+								"你为什么要冒险？你在寻找新的炼金术配方或稀有成分吗？你是否像许多人一样，寻求哲学家的石头？",
+								"一定要了解炼金术在你的活动世界中的地位。你可能已经从一个大师那里学到了你的手艺，或者在大学里与工匠和巫师一起学习。你的手艺可能是普通的，也可能是奇特的。根据不同的背景，你可能因为你的知识而受到尊重，也可能因为你的破坏性潜力而受到畏惧。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"按照这些建议，你可以很快地做出一个炼金术士。首先，让智力成为你的最高能力得分，其次是灵巧。选择任何背景。"
+									]
+								}
+							]
+						}
+					],
+					"name": "Alchemist",
+					"source": "MFoV-CAR",
+					"type": "section"
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Acid Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸物与几滴阿登氟酸（一种高腐蚀性的化学物质）混合，你可以将它变成一个酸性炸弹。酸性炸弹会造成酸性伤害，而不是火灾伤害，并且有{@dice d4}伤害骰子。此外，目标以及爆炸半径内的每一个生物，如果救赎失败，在其回合结束时将再次受到相同数量的伤害。"
+			]
+		},
+		{
+			"name": "Black Powder Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"subclass": {
+							"name": "Mad Bomber",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				" 通过将炸弹的爆炸试剂换成黑火药，你可以把它变成黑火药炸弹。黑火药炸弹有{@dice d12}的伤害骰子。"
+			]
+		},
+		{
+			"name": "Bramble Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"在你的炸弹的爆炸物中加入一种有效的肥料，你可以把它变成一个荆棘炸弹。荆棘炸弹不会造成任何伤害，反而会使炸弹爆炸半径内的任何天然地面上长出坚韧、多刺的荆棘，成为困难地形。此外，如果炸弹引爆时，爆炸半径内的生物处于俯卧状态，它就会被荆棘笼罩，并且必须进行强度（{@skill Athletics}）检查，与你的炸弹救赎DC对抗，以便移动或站立。荆棘在1分钟后萎缩并死亡。"
+			]
+		},
+		{
+			"name": "Cryo Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的炸药换成一块冰九，你可以将它变成一个低温炸弹。低温炸弹会造成冷伤害，而不是火伤害，有{@dice d8}的伤害骰子，并且需要宪法救赎，而不是灵巧救赎。此外，目标以及在爆炸半径内的每个生物，如果救赎失败，其速度会降低10英尺，直到下一回合结束。"
+			]
+		},
+		{
+			"name": "Holy Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过在炸弹的爆炸物中加入几滴圣水，你可以把它变成一个神圣的炸弹。除非目标是天人、恶魔或亡灵，否则神圣炸弹会造成辐射伤害，而不是火灾伤害，并有{@dice d8}的伤害骰子。炸弹对天人的伤害骰子是{@dice d6}，对魔人和亡灵的伤害骰子是{@dice d12}。"
+			]
+		},
+		{
+			"name": "Impact Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过把你的炸弹的爆炸性试剂换成反应性更强的试剂，你可以把它变成一个冲击炸弹。冲击弹会造成力的伤害，而不是火的伤害，并且有{@dice d8}伤害骰子。此外，目标以及在爆炸半径内的每个生物，如果救赎失败，会被推到离爆炸中心5英尺的地方。"
+			]
+		},
+		{
+			"name": "Incendiary Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过在你的炸弹的爆炸物中加入增稠剂，你可以把它变成一个燃烧弹。燃烧弹有{@dice d6}的伤害骰子。此外，爆炸半径的区域会被火焰吞噬，并持续到你下一回合的开始。这个区域内没有被穿戴或携带的易燃物会被点燃。任何在此区域结束其回合的生物都会受到炸弹的一半伤害。"
+			]
+		},
+		{
+			"name": "Laughing Gas Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸物与一滴Jesterate（一种高度兴奋的化学物质）混合，你可以将它变成笑气炸弹。笑气炸弹会造成毒药伤害，而不是火灾伤害，有{@dice d6}的伤害骰子，并且需要宪法救赎，而不是灵巧救赎。此外，目标以及爆炸半径内的每个生物，如果救赎失败，会在笑声中倒下（%1%）。一旦一个生物被这个炸弹锁定，或者对它的救赎成功，它就不会在随后的救赎失败中跌倒（%2%）。"
+			]
+		},
+		{
+			"name": "Lightning Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过用一个带电的奥术电容取代你的炸弹的爆炸试剂，你可以把它变成一个闪电炸弹。闪电炸弹会造成闪电伤害，而不是火灾伤害，并且有{@dice d8}的伤害骰子。此外，目标以及爆炸半径内的每一个生物，如果其蓄力失败，在其下一回合结束前都不能做出反应。"
+			]
+		},
+		{
+			"name": "Nonlethal Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过用一袋橡胶颗粒代替你的炸弹的爆炸试剂，你可以把它变成一个非致命的炸弹。非致命炸弹会造成打击性伤害，而不是火灾伤害，并且有{@dice d8}伤害骰子。如果这个炸弹的伤害将一个生物的命中率降至0，它会将该生物击倒，而不是造成致命一击，使该生物（%1%）和稳定。此外，这个炸弹的橡胶弹丸会在角落里反弹，对爆炸半径内的目标无视半数和四分之三的掩护。"
+			]
+		},
+		{
+			"name": "Oil Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸物与几滴超级表面活性剂混合，你可以把它变成一个油弹。油弹不会造成伤害，但会在爆炸半径内的每个生物身上涂上粘稠的、可燃的油。下次被油覆盖的生物受到火力伤害时，每掷出一个火力伤害的骰子，它就会受到额外的（%0%）伤害。油可以通过用一加仑的水浇灌生物来清除。"
+			]
+		},
+		{
+			"name": "Painkiller Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸试剂与镇痛油浆混合，你可以将它变成一个镇痛炸弹。止痛弹不会造成任何伤害，而是给予其爆炸半径内的每个生物相当于{@dice 1d8}加你炼金术士等级一半的临时命中率，持续到你下一回合结束。该炸弹对构筑物和亡灵没有效果。"
+			]
+		},
+		{
+			"name": "Pheromone Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"subclass": {
+							"name": "Amorist",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸性试剂换成强效的费洛蒙，你可以将它变成费洛蒙炸弹。费洛蒙炸弹需要用智慧救赎而不是用灵巧救赎。炸弹不会造成任何伤害，反而会使目标，以及爆炸半径内的每个生物，如果救赎失败，就会被你影响（%0%），直到其回合结束或受到伤害。"
+			]
+		},
+		{
+			"name": "Plasma Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"subclass": {
+							"name": "Ionizer",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸试剂换成离子交换器，你可以将它变成一个等离子体炸弹。等离子炸弹会造成辐射伤害，而不是火灾伤害。当你用这个炸弹击中一个生物时，一种强烈的吸引力会使它永久地粘在该生物身上，在该生物的回合结束时爆炸并造成正常伤害。"
+			]
+		},
+		{
+			"name": "Psionic Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸物与幻象水晶的灰尘混合，你可以将它变成一个幻象炸弹。幻象炸弹会造成精神伤害，而不是火灾伤害，有{@dice d6}的伤害骰子，并且需要用智慧救赎而不是灵巧救赎。此外，目标以及在爆炸半径内的每个生物，如果救赎失败，则在其下一回合结束前，都会以不利的方式进行能力检查以集中施法。"
+			]
+		},
+		{
+			"name": "Quiet Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"将你的炸弹的爆炸试剂换成一包热棉，你就可以把它变成一个安静的炸弹。一个安静的炸弹有{@dice d8}的伤害骰子。当这种炸弹引爆时，它只发出低沉的砰砰声，在10英尺以外都能听到，并释放出一股烟雾来掩盖其爆炸发出的光线。生物在检测该炸弹在附近被引爆的能力检查中处于劣势。"
+			]
+		},
+		{
+			"name": "Seeking Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"将你的炸弹的爆炸性试剂换成一个强大的石块，你就可以把它变成一个寻找炸弹。寻路炸弹有{@dice d6}的伤害骰子。当你在敌对生物的5英尺范围内，使用这个炸弹进行远程攻击时，你不会受到不利影响。"
+			]
+		},
+		{
+			"name": "Shrapnel Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"subclass": {
+							"name": "Mad Bomber",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"通过用金属轴承增强你的炸弹的爆炸试剂，你可以把它变成一个弹片炸弹。弹片炸弹造成的是穿透性伤害，而不是火灾伤害，有{@dice d8}伤害骰子，并在10英尺范围内爆炸。"
+			]
+		},
+		{
+			"name": "Slime Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"subclass": {
+							"name": "Ooze Rancher",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				" 通过将你的炸弹的爆炸物与泥浆的残余物混合，你可以将它变成一个粘液炸弹。粘液炸弹不会造成伤害，但会使爆炸半径内的每个生物都被粘稠的绿色粘液包裹。任何被粘液包裹的生物都不能采取{@action Dash}行动或{@action Disengage}行动。粘液可以通过用一加仑的水浇灌生物来清除，或者通过采取行动来清除大部分粘液。"
+			]
+		},
+		{
+			"name": "Smoke Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过完全移除你的炸弹的爆炸试剂，你可以把它变成一个烟雾弹。烟雾弹不会造成伤害，但会在10英尺半径的球体中充满烟雾。这种雾气会在角落里扩散，其区域被严重遮蔽。它持续的回合数等于你的智力修正值，或者直到中等或更高速度的风（至少每小时10英里）将其驱散。一旦你扔了一个这样的炸弹，你在1分钟内就不能再扔了。"
+			]
+		},
+		{
+			"name": "Sonic Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸物与几滴空气元素精华混合，你可以把它变成一个音速炸弹。声波炸弹会造成雷霆伤害，而不是火灾伤害，有{@dice d6}的伤害骰子，并且需要宪法救赎，而不是灵巧救赎。此外，目标以及爆炸半径内的每一个生物如果救赎失败，就会受到{@condition deafened}的伤害，直到其下一回合结束。"
+			]
+		},
+		{
+			"name": "Stink Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过添加一滴skunkanide，一种太过邪恶的化学物质，你可以把它变成一个臭气弹。臭气弹会造成毒药伤害，而不是火灾伤害，有{@dice d8}的伤害骰子，并且需要宪法救赎，而不是灵巧救赎。此外，目标以及在爆炸半径内的每个生物，如果救赎失败，在下一回合结束前进行能力检查时将处于不利地位。"
+			]
+		},
+		{
+			"name": "Teleportation Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"将你的炸弹的爆炸试剂换成发光的乙醚石晶体，你可以将它变成一个传送炸弹。传送炸弹不会造成任何伤害，而是在空间中打开一个裂缝，如果它在你周围30英尺内爆炸，就会立即将你传送到它的爆炸点。"
+			]
+		},
+		{
+			"name": "Thermobaric Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸试剂换成延迟爆炸物，你可以将它变成一个热压炸弹。热爆弹会造成{@dice d6}的伤害点数，并在一个10英尺半径的球体中爆炸。"
+			]
+		},
+		{
+			"name": "Venom Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"subclass": {
+							"name": "Venomsmith",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				" 将几滴快速生效的毒素混入你的炸弹的爆炸部件中，你可以把它变成一个毒液炸弹。毒液炸弹会造成毒药伤害，而不是火灾伤害，有{@dice d8}的伤害骰子，并且需要宪法救赎，而不是灵巧救赎。此外，目标以及在爆炸半径内的每个生物，如果救赎失败，在其下一回合结束前进行的下一次力量、灵巧或宪法救赎中都处于不利地位。"
+			]
+		},
+		{
+			"name": "Withering Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过将你的炸弹的爆炸成分与强大的干燥剂混合，你可以将它变成一个枯萎炸弹。枯萎炸弹会造成坏死的伤害，而不是火灾伤害，有{@dice d8}的伤害骰子，并且需要宪法救赎，而不是灵巧的救赎。此外，目标以及爆炸半径内的每一个生物，如果救赎失败，在其下一回合结束前都无法恢复命中率。"
+			]
+		},
+		{
+			"name": "Prismatic Bomb",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"BO"
+			],
+			"entries": [
+				"通过在你的炸弹的爆炸物中加入一盎司的多聚物，一种不可预测的、多色的化学物质，你可以把它变成一个棱镜炸弹。棱镜炸弹造成的伤害是随机决定的，而不是火灾伤害，有{@dice d8}伤害骰子，并且需要随机决定的救赎类型。在下面的表格中分别进行滚动。",
+				{
+					"type": "table",
+					"colLabels": [
+						"{@dice d6}",
+						"Damage"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4-5 text-align-left "
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"Fire"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"Acid"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"閃電"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"毒药"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"Cold"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"辐射"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"{@dice d6}",
+						"Save"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4-5 text-align-left "
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 1,
+									"max": 2
+								}
+							},
+							"灵活性"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 3,
+									"max": 4
+								}
+							},
+							"宪法"
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"min": 5,
+									"max": 6
+								}
+							},
+							"智慧"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Advanced Poisoner",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "Venomsmith",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你对最恶毒、最奇特的毒药的病态研究，揭示了你在酿制药水时如何合成下列毒药。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Poison",
+						"Cost"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4-5 text-align-left "
+					],
+					"rows": [
+						[
+							"{@item Burnt Othur Fumes}",
+							"3个试剂骰子"
+						],
+						[
+							"{@item Crawler Mucus}",
+							"3个试剂骰子"
+						],
+						[
+							"{@item Drow Poison}",
+							"3个试剂骰子"
+						],
+						[
+							"{@item Midnight Tears}",
+							"5个试剂骰子"
+						],
+						[
+							"{@item Pale Tincture}",
+							"4个试剂骰子"
+						],
+						[
+							"{@item Wyvern Poison}",
+							"6个试剂骰子"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Alchemy of Ascendancy",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"你的炼金术研究取得了突破性进展，发现了几种有效的灵丹妙药的配方。你可以酿制以下药水。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Potion",
+						"Cost"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4-5 text-align-left "
+					],
+					"rows": [
+						[
+							"{@item Necromantic Draught|MFoV-CAR}",
+							"4个试剂骰子"
+						],
+						[
+							"{@item Oil of Etherealness}",
+							"4个试剂骰子"
+						],
+						[
+							"{@item Potion of Speed}",
+							"3个试剂骰子"
+						],
+						[
+							"{@item Potion of Stone Giant Strength}",
+							"5个试剂骰子"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Alchemy of Influence",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13
+					}
+				}
+			],
+			"entries": [
+				"你的炼金术研究已经揭示了许多支配情绪的基本化学物质。你可以酿制以下药剂。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Potion",
+						"Cost"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4-5 text-align-left "
+					],
+					"rows": [
+						[
+							"{@item Potion of Animal Friendship}",
+							"1个试剂模子"
+						],
+						[
+							"{@item Philter of Love}",
+							"2个试剂骰子"
+						],
+						[
+							"{@item Potion of Clairvoyance}",
+							"3个试剂骰子"
+						],
+						[
+							"{@item Potion of Mind Reading}",
+							"3个试剂骰子"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Alchemy of Transformation",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13
+					}
+				}
+			],
+			"entries": [
+				"你已经掌握了转移物质的炼金术秘密，这让你能够酿造出以下药剂。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Potion",
+						"Cost"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4-5 text-align-left "
+					],
+					"rows": [
+						[
+							"{@item Oil of Slipperiness}",
+							"2个试剂骰子"
+						],
+						[
+							"{@item Sandstone Solution|MFoV-CAR}",
+							"2个试剂骰子"
+						],
+						[
+							"{@item Aqua Fortis|MFoV-CAR}",
+							"3个试剂骰子"
+						],
+						[
+							"{@item Chameleon Concoction|MFoV-CAR}",
+							"3个试剂骰子"
+						],
+						[
+							"{@item Potion of Gaseous Form}",
+							"3个试剂骰子"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Study",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"你从{@filter wizard spell list|spells|class=wizard|level=cantrip}中学习三个你选择的咒语。你对这些咒语的施法修改器是智力。"
+			]
+		},
+		{
+			"name": "Ballistics Research",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"你要学习两个额外的炸弹公式。"
+			]
+		},
+		{
+			"name": "Battle Training",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"你获得对武术武器和盾牌的熟练度。"
+			]
+		},
+		{
+			"name": "Beguiling Haze",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "Amorist",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你魅惑一个生物时，你可以选择让它进入梦境，从梦境中，它把它看到的每个人都视为亲密的朋友。当该生物处于（%0%）状态时，它是没有敌意的，并且表现得好像它被它看到的每个生物平等地迷住了一样。一旦你使用这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Buffered Metabolism",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"13th level, Xenoalchemist Field of Study"
+					]
+				}
+			],
+			"entries": [
+				"当你受到伤害时，作为一种反应，你可以消耗任意数量的试剂骰子，直到你的熟练度加成，以减少所受的伤害，购买骰子上滚动的总数。"
+			]
+		},
+		{
+			"name": "Clotting Agent",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"你已经开发出一种血清，可以保护你免受伤害。你的最大命中率按你的炼金术士等级+你的体质修正值增加，并且每当你在这个等级中获得一个等级时再增加1。"
+			]
+		},
+		{
+			"name": "Craft Homunculus",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"使用一个特殊的炼金过程，需要8个小时的工作，你可以创造一个同形体。同体人的功能与{@spell find familiar}法术所召唤的熟人一样，但有几个不同之处。",
+				{
+					"type": "list",
+					"items": [
+						"你和你的同体人之间的心灵感应联系在任何距离都能发挥作用，只要你和你的同体人在同一个存在平面。",
+						"你的同体人是一种构造。",
+						"你不能像对待一个熟悉的人那样解雇你的同体人。",
+						"你的同体人不能采取不同的形式。"
+					]
+				},
+				"当你的同体人死亡时，它的身体仍然存在，并且可以作为一个需要1小时工作的仪式而复活，这个仪式可以在短期或长期休息的过程中进行。你的同体人可以在它的回合中采取（%0%）的行动。"
+			]
+		},
+		{
+			"name": "Demolition Spree",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "Mad Bomber",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你采取{@action Use an Object}的行动来引爆并投掷炸弹时，你可以投掷与炸弹伤害骰子数量相等的炸弹，而不是只有一个。你投掷的每个炸弹都会造成{@dice 1d10}的伤害，加上你的智力修饰，而且不能针对同一个生物或空间。你必须在这些炸弹上分别花费试剂骰子，并且只能对其中一个炸弹应用炸弹公式。"
+			]
+		},
+		{
+			"name": "Explosive Missile",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"作为你回合中的额外行动，你可以将你的一个炸弹装在弩箭的头部。这个弩箭所造成的伤害不是正常的伤害，而是像你引爆并投掷炸弹一样的动作，但没有爆炸半径。每次只能在弩箭上装一个炸弹，如果你在你的回合中已经扔了一个炸弹，你就不能发射一个爆炸性的弩箭。"
+			]
+		},
+		{
+			"name": "Fire Brand",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"你可以将你的炸弹的试剂混合在一起，并将火热的混合物应用于你持有的近战武器，作为一个额外的动作。直到你的回合结束，这个近战武器在击中后会造成额外的{@dice 1d6}火焰伤害。这个额外伤害在5级（{@dice 2d6}）、11级（{@dice 3d6}）和17级（{@dice 4d6}）增加{@dice 1d6}。"
+			]
+		},
+		{
+			"name": "Fire Eater",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"你可以采取{@action Use an Object}的行动来喝下炸弹的内容物，并在15英尺的范围内将其吐出，而不是投掷炸弹。锥形范围内的每个生物都必须做一个灵巧的蓄力动作，否则会受到伤害，就像炸弹被扔出去一样。拯救成功时，生物会受到一半的伤害。当你使用这个能力时，你的每个炸弹的伤害骰子都会受到1%的火焰伤害。"
+			]
+		},
+		{
+			"name": "Fire in the Hole",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"你调整了你的炸弹配方以增加其爆炸力。你的炸弹救命技能增加了你的熟练度奖励的一半，向下取整。"
+			]
+		},
+		{
+			"name": "Fortified Serum",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "Apothecary",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"每当一个生物通过喝下你的一种药水而恢复命中率时，它就会获得对来自非魔法武器的击打、穿刺和切割伤害的抗性，直到下一回合结束。"
+			]
+		},
+		{
+			"name": "Grenadier",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"当你采取{@action Use an Object}的行动来准备和投掷炸弹时，你可以使用你的额外行动来用非双手的武器进行攻击。"
+			]
+		},
+		{
+			"name": "Hemoreagent",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"当你采取{@action Use an Object}行动投掷炸弹时，你可以将自己的一定量的血液转化为试剂。你可以在炸弹的伤害卷中加入五个或更少的试剂骰子，每加入一个试剂骰子，你就会受到（%1%）坏死伤害。这种伤害不能被避免或减少。"
+			]
+		},
+		{
+			"name": "Lazarus Bolt",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"你发现了一个激进的死灵疗法：用直达心脏的电流恢复生命。作为一个行动，你可以将一个螺栓插入一个在过去一分钟内死亡的生物的躯干，并将其震醒。该生物恢复生命时有1个打击点。该功能不能使缺乏心脏的生物、因年老而死亡的生物或缺少重要器官的生物恢复生命。",
+				"一旦你使用这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		},
+		{
+			"name": "Magnified Blast",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"由于你的炸弹采用了新的内部设计，你可以在扩大其爆炸半径的同时扩大其威力。每当你为炸弹的伤害增加试剂骰子时，你也可以选择将炸弹的爆炸半径扩大，每花两个试剂骰子可扩大5英尺的距离。"
+			]
+		},
+		{
+			"name": "Ooze Cowboy",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "Ooze Rancher",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"厌倦了等待你的ozes来追赶你，你修改了你的配方，制造了超快的史莱姆！你制造的所有史莱姆都有30英尺的移动速度。你制造的所有史莱姆都有30英尺的移动速度，如果它更低的话。此外，你可以骑着你制造的任何中型或大型的史莱姆作为坐骑。你和你的装备直接接触你的史莱姆不会受到不良影响。最后，你的渗水体在它们的伤害卷和主动权卷上加上你的熟练度修正值。"
+			]
+		},
+		{
+			"name": "Poisoner",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"由于你对有毒化合物的研究，你已经学会了如何调制致命的毒素。你获得了对（%0%）的熟练度。此外，你在炼制药水时可以炼制以下毒药，这些药水使用你的炸弹救赎DC，而不是它们的正常救赎DC。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Poison",
+						"Cost"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4-5 text-align-left "
+					],
+					"rows": [
+						[
+							"2x {@item Basic Poison (vial)|phb}",
+							"1个试剂模子"
+						],
+						[
+							"2x {@item Antitoxin (vial)|phb}",
+							"1个试剂模子"
+						],
+						[
+							"{@item Potion of Poison}",
+							"2个试剂骰子"
+						],
+						[
+							"{@item Oil of Taggit}",
+							"2个试剂骰子"
+						],
+						[
+							"{@item Serpent Venom}",
+							"2个试剂骰子"
+						],
+						[
+							"{@item Truth Serum}",
+							"2个试剂骰子"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Precision Explosives",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"你把你的炸弹改装成在爆炸时有狭窄的空隙，非常适合让一些生物免受爆炸的影响。你可以选择一个在炸弹爆炸半径内的生物，而不是目标，自动成功地对炸弹进行救赎，并且不受伤害。"
+			]
+		},
+		{
+			"name": "Reactionary Gulp",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17
+					}
+				}
+			],
+			"entries": [
+				"把你的药水放在一个带子上或一系列的小袋子里，你就可以在一瞬间迅速提取它们。在你受到你能看到的生物的伤害后，你可以立即用你的反应来喝药水。"
+			]
+		},
+		{
+			"name": "Reagent Pulse",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "Ionizer",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以通过1分钟的工作在你选择的爆破器中整合一个特殊的电离室。一旦你以这种方式改造了一个爆破器，当你用该爆破器进行攻击时，你可以花费一定数量的试剂骰子，并在爆破器的伤害卷中加入你的智力修正值和试剂骰子。"
+			]
+		},
+		{
+			"name": "Recycled Potions",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"当你酿制药水时，你可以蒸馏那些已经酿制过的药水，回收其中储存的试剂。你可以将酿造的药水转换成试剂骰子，你可以选择消耗这些骰子来制造新的药水。使用这种能力，你获得的试剂骰子不能超过你的最大数量。"
+			]
+		},
+		{
+			"name": "Syringe",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"entries": [
+				"使用精密的皮下注射针，你可以更快速地注射药水和毒药。作为一个额外的动作，你可以将药水注射到你自己或你周围5英尺内自愿的生物身上，给予药水的好处，就像它被正常喝下一样。你可以通过一次成功的近身攻击将药水注入一个不愿意的生物体内。"
+			]
+		},
+		{
+			"name": "Tri-Mutation",
+			"source": "MFoV-CAR",
+			"featureType": [
+				"DI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"subclass": {
+							"name": "Mutagenist",
+							"source": "MFoV-CAR",
+							"visible": true
+						},
+						"class": {
+							"name": "Alchemist",
+							"source": "MFoV-CAR"
+						}
+					}
+				}
+			],
+			"entries": [
+				"你已经开发出一种强大的、但转瞬即逝的方法，将你的诱变剂混合在一起。当你给自己注射一种诱变剂时，你可以选择注射一种三联诱变剂，这将使你同时获得所有诱变剂的好处。这种好处持续1分钟，或者直到你使用你的额外行动为自己注射不同的诱变剂。一旦你使用这个能力，你就不能再使用它，直到你完成一个长时间的休息。"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Alchemical Anesthetic",
+			"type": "P",
+			"rarity": "uncommon",
+			"weight": 0.5,
+			"source": "MFoV-CAR",
+			"entries": [
+				"这种透明、无味的药水被装在一个看起来很邪恶的注射器里，里面有4个剂量。你可以将麻醉剂作为一个动作给一个愿意的生物使用，使其神经变得迟钝，在一小时内无法感受到疼痛。被麻醉的生物在体质检查和救赎上有优势，并且不会因为疼痛而出现{@condition incapacitated}或不利的滚动。然而，该生物不知道他们有多痛，也不知道他们有多少级的疲惫。如果玩家的角色被审美了，GM会在持续时间内代替玩家追踪角色的命中率和疲惫等级。",
+				"如果你在一分钟内给一个自愿的或{@condition unconscious}的生物注射一剂，你可以使该生物{@condition unconscious}持续一小时。如果你继续缓慢地注射麻醉剂（每八小时一剂），你可以让一个生物（%2%）保持24小时；让一个生物（%3%）超过这个时间就会死亡。"
+			]
+		},
+		{
+			"name": "Aqua Fortis",
+			"type": "P",
+			"rarity": "rare",
+			"weight": 0.5,
+			"source": "MFoV-CAR",
+			"entries": [
+				"这种透明的酸在其密封的小瓶中不断冒泡。作为一个动作，你可以将小瓶扔到20英尺以外，在撞击时将其击碎。进行一次远程攻击，将小瓶视为一种简易武器。",
+				"如果目标是一个没有被穿戴或携带的物体，酸液会溶解该物体的1英尺立方体。如果溅到盔甲或盾牌上，该物体会对其提供的AC值产生永久且累积的-1惩罚。如果溅到武器上，它的伤害卷会受到永久性和累积性的-1惩罚。它对魔法物品和由金、玻璃、石头或金刚砂制成的物品没有影响。",
+				"如果目标是生物，它会受到{@dice 3d6}的酸液伤害，然后在下一回合结束时受到额外的{@dice 2d6}酸液伤害，在之后的回合结束时再受到{@dice 1d6}酸液伤害。可以用一加仑的水洗掉Aqua fortis，提前结束该效果。"
+			]
+		},
+		{
+			"name": "Chameleon Concoction",
+			"type": "P",
+			"rarity": "uncommon",
+			"weight": 0.5,
+			"source": "MFoV-CAR",
+			"entries": [
+				"这种液体的色调会迅速转变，以配合它所接近的任何材料。当你喝下这种药水时，你的皮肤会伪装成与周围环境的颜色和质地相匹配，使你在避免被发现的灵巧性（（%0%））检查中获得优势，持续1小时。"
+			]
+		},
+		{
+			"name": "Cure-All",
+			"type": "P",
+			"rarity": "uncommon",
+			"weight": 0.5,
+			"source": "MFoV-CAR",
+			"entries": [
+				"治愈剂含有{@dice 1d4 + 1}剂量的强效药物。一个生物可以作为行动喝下一剂，治愈它的任何疾病，结束它的中毒，并使它在1小时内对{@condition poisoned}的人免疫。药水中心有一个复杂的红色液体漩涡，类似于柱子上的一条蛇。摇晃瓶子不能使颜色混合。"
+			]
+		},
+		{
+			"name": "Necromantic Draught",
+			"type": "P",
+			"rarity": "rare",
+			"weight": 0.5,
+			"source": "MFoV-CAR",
+			"entries": [
+				"这种发光的霓虹黄色粘稠物会被触及其容器的生物排斥开来。将这种药水倒在人形尸体上，会使{@spell animate dead}的法术效果持续24小时。你可以通过这种方式来指挥不死生物。"
+			]
+		},
+		{
+			"name": "Ooze Bottle",
+			"type": "P",
+			"rarity": "rare",
+			"weight": 0.5,
+			"source": "MFoV-CAR",
+			"entries": [
+				"瓶子里的木炭色液体似乎以不自然的势头奔跑着。作为一个动作，你可以将这个小瓶扔到20英尺远的地方，在撞击时将其击碎，并释放出一个（%0%）。这股渗出物对你和你的盟友是友好的，否则会攻击它能探测到的最近的生物。如果没有生物可供攻击，这股渗出物会跟随你。然而，这种淤泥的生物化学性质是不稳定的，淤泥在一小时后会溶解成无生命的淤泥。"
+			]
+		},
+		{
+			"name": "Sandstone Solution",
+			"type": "P",
+			"rarity": "rare",
+			"weight": 0.5,
+			"source": "MFoV-CAR",
+			"entries": [
+				"这种沙子状的物质像液体一样在其容器中流动。你可以把这种物质倒在地上作为一个动作。如果倒在石头上，石头上10英尺深、10英尺半径的地方会变成软泥，持续1小时。",
+				"当倒入泥土、沙子或流沙中时，10英尺深、10英尺范围内的材料会变成坚固的石头，持续1小时。石头有75HP，17AC，并对精神和毒药伤害免疫。当它变成石头时，里面的任何生物都必须做一个DC14的灵巧救赎动作，否则就会被（%0%）。{@condition restrained}的生物可以通过DC20力量检查成功或对石头造成25的伤害来挣脱。"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Natural Philosopher",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 1,
+			"entries": [
+				"你在学习期间学到了很多关于炼金术的东西。从1级开始，你可以在任何识别草药、药水、毒药或其他炼金术物质的技能检查中加入你熟练度加成的一半，四舍五入。如果你精通这种技能，这个加分可以与你的正常熟练度加分叠加。"
+			]
+		},
+		{
+			"name": "Bombs",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 1,
+			"entries": [
+				"一级时，你可以用你的（%0%）创造挥发性的炼金炸弹。每当你进行短时或长时休息时，你可以制造相当于10加两倍你的炼金术士等级的炸弹。制造这些炸弹所需的材料成本可以忽略不计。炸弹的统计数据显示在炸弹的侧边栏中。24小时后，未使用的炸弹会变成惰性的。",
+				"你可以在每回合进行一次{@action Attack}动作，用爆炸性的试剂给炸弹上色，然后扔出去，增加炸弹的爆炸潜力，使你能造成额外的伤害，而不是用炸弹进行攻击。当你这样做时，你可以在炸弹的伤害卷中加入你的智力修饰，而不是灵巧。此外，当你以这种方式投掷炸弹时，当你达到5级（{@dice 2d6}）、11级（{@dice 3d6}）和17级（{@dice 4d6}）时，其伤害会增加（%2%）。",
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"当你的炸弹要求救赎时，其救赎DC的计算方式如下。",
+						{
+							"type": "abilityDc",
+							"name": "Bomb",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Bomb",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"炸弹是武术范围内的武器，其统计数据如下。",
+								{
+									"type": "table",
+									"colLabels": [
+										"Name",
+										"Cost",
+										"Damage",
+										"Weight",
+										"Properties"
+									],
+									"colStyles": [
+										"col-0-3 text-center",
+										"col-0-3 text-center",
+										"col-0-3 text-center",
+										"col-0-3 text-center",
+										"col-1-5 text-center"
+									],
+									"rows": [
+										[
+											"Bomb",
+											"2 sp",
+											"{@dice 1d10} fire",
+											"1 lb.",
+											"技巧，特殊，投掷（范围30/60）"
+										]
+									]
+								},
+								{
+									"type": "list",
+									"style": "list-hang",
+									"name": "Special Property",
+									"items": [
+										{
+											"type": "item",
+											"name": "Bomb.",
+											"entry": "当炸弹击中目标时，它在5英尺范围内爆炸并被摧毁。炸弹可以被扔到其范围内无人的空间。爆炸半径内除目标外的每个生物都必须在DC11灵巧救赎中成功，救赎失败时受到一半的伤害，救赎成功时没有伤害。"
+										},
+										"此外，作为一个额外的动作，你可以清空炸弹的一些爆炸材料，以永久消除这个炸弹的爆炸半径，只对炸弹的目标造成伤害。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Missed Bombs",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"由于炸弹是爆炸性的投射物，问一下如果扔出去的炸弹没有击中目标会发生什么是有意义的。为了简单起见，我们假设未命中的炸弹在背景中无害地爆炸或完全没有引爆，但不会在目标的空间中爆炸并以其爆炸半径造成伤害。GM可以决定这两种结果中的哪一种发生，也可以随机地确定结果。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bomb Formulae",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"到2级时，你的研究已经使你对炸弹的新炼金配方有了深入的了解。从（%0%）中选择三个炸弹配方。每回合一次，当你采取{@action Use an Object}的行动来投掷炸弹时，你可以对它应用一个配方。",
+				"当你在这个等级中获得一定的等级时，你会学习额外的公式，如炼金术士表中已知的炸弹公式一栏中所示。此外，当你在这个等级中获得一个级别时，你可以从你所知道的公式中选择一个，并用另一个公式来代替它。"
+			]
+		},
+		{
+			"name": "Field of Study",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"虽然所有的炼金术士都有一个共同的知识基础，但大多数炼金术士都专注于一个特定的研究领域。当你达到2级时，你会选择你的研究领域，这将在2级、6级、10级和18级时授予你特性。",
+				"你的研究领域授予的公式不计入你知道的公式总数。"
+			]
+		},
+		{
+			"name": "Reagent",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 3,
+			"entries": [
+				"从第三级开始，你有一套强大的炼金试剂，由一个试剂骰子池代表，你可以用它来酿制药水或放大你的炸药的威力。",
+				{
+					"type": "entries",
+					"name": "Reagent Dice",
+					"entries": [
+						"你开始时有三个试剂骰子，是{@dice d10}s，当你在这个等级中获得等级时，你会获得额外的试剂骰子，如炼金术士表中的试剂骰子栏所示。当你完成长期休息时，你会重新获得所有消耗的试剂骰子。",
+						"当你采取{@action Use an Object}的行动准备投掷炸弹时，你可以消耗一定数量的试剂骰子，其数量不超过你的熟练度修正值，并将这些骰子加入炸弹的伤害卷。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Brewing Potions",
+					"entries": [
+						"你可以花10分钟时间，消耗任意数量的试剂骰子来酿制药水。这些药水在24小时内保持效力，之后它们就会变成惰性。如果一种药水要求进行救赎，它使用你的炸弹救赎DC。",
+						"下表给出了酿制药水所需的试剂骰子数量和炼金术士等级。"
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"Potion",
+						"Cost",
+						"Alchemist Level"
+					],
+					"colStyles": [
+						"col-6 text-align-left",
+						"col-4-5 text-align-left ",
+						"col-1-5 text-center "
+					],
+					"rows": [
+						[
+							"{@item Potion of Climbing}",
+							"1个试剂模子",
+							"3rd"
+						],
+						[
+							"{@item Potion of Growth}",
+							"1个试剂模子",
+							"3rd"
+						],
+						[
+							"{@item Potion of Healing}",
+							"1个试剂模子",
+							"3rd"
+						],
+						[
+							"{@item Potion of Water Breathing}",
+							"1个试剂模子",
+							"3rd"
+						],
+						[
+							"{@item Cure-All|MFoV-CAR}",
+							"2个试剂骰子",
+							"7th"
+						],
+						[
+							"{@item Potion of Greater Healing}",
+							"2个试剂骰子",
+							"7th"
+						],
+						[
+							"{@item Potion of Heroism}",
+							"2个试剂骰子",
+							"7th"
+						],
+						[
+							"{@item Potion of Resistance}",
+							"2个试剂骰子",
+							"7th"
+						],
+						[
+							"{@item Potion of Diminution}",
+							"3个试剂骰子",
+							"14th"
+						],
+						[
+							"{@item Potion of Flying}",
+							"4个试剂骰子",
+							"14th"
+						],
+						[
+							"{@item Potion of Hill Giant Strength}",
+							"4个试剂骰子",
+							"14th"
+						],
+						[
+							"{@item Potion of Invisibility}",
+							"4个试剂骰子",
+							"14th"
+						],
+						[
+							"{@item Potion of Superior Healing}",
+							"4个试剂骰子",
+							"14th"
+						]
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reagent Synthesis",
+					"entries": [
+						"每天一次，当你完成短暂的休息时，你可以重新获得所有你没有用来酿造药水的消耗的试剂骰子。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Discoveries",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 4,
+			"entries": [
+				"在你的研究过程中，你对炼金术的本质有了一些发现。在4级时，你获得两个你选择的发现，发现率（%0%）。当你获得一定的炼金术士等级时，你会获得额外的自选发现，如炼金术士表的已知发现一栏中所示",
+				"此外，当你学习一个新的发现时，你可以选择你所知道的一个发现，并用你在该级别可以学习的另一个发现来代替它。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 4,
+			"entries": [
+				"当你达到四级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。",
+				"另外，作为一个炼金术士，当你获得一个能力得分的提升时，你可以选择学习一个你符合先决条件的新发现。"
+			]
+		},
+		{
+			"name": "Flashbang",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 5,
+			"entries": [
+				"从5级开始，你可以携带一批震荡性炸药，帮助你从危险的环境中逃脱。作为一个额外的动作，你可以将这些炸药中的一个扔到你的脚下，使附近的敌人迷失方向并分心。在你5英尺范围内的每个生物在下一回合开始前都不能做出反应。"
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 6,
+			"entries": [
+				"在6级时，你获得一个由你的研究领域授予的功能。"
+			]
+		},
+		{
+			"name": "Additional Discoveries",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 6,
+			"entries": [
+				"在第6级时，你可以进行第3次发现。"
+			]
+		},
+		{
+			"name": "Potion Improvement",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 7,
+			"entries": [
+				"在第7级时，你的药水种类会扩大。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。",
+				"另外，作为一个炼金术士，当你获得一个能力得分的提升时，你可以选择学习一个你符合先决条件的新发现。"
+			]
+		},
+		{
+			"name": "Additional Discoveries",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 9,
+			"entries": [
+				"在第9级时，你做出了你的第4次发现。"
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 10,
+			"entries": [
+				"在10级时，你获得一个由你的研究领域授予的功能。"
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 11,
+			"entries": [
+				"从11级开始，你可以灵活地躲避某些区域效应，例如红龙的火热气息或{@spell ice storm}法术。当你受到一个允许你做一个灵巧救赎来承受一半伤害的效果时，如果你救赎成功，你就不会受到伤害，如果你失败，就只会受到一半伤害。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。",
+				"另外，作为一个炼金术士，当你获得一个能力得分的提升时，你可以选择学习一个你符合先决条件的新发现。"
+			]
+		},
+		{
+			"name": "Additional Discoveries",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 13,
+			"entries": [
+				"在13级时，你会有第五次发现。"
+			]
+		},
+		{
+			"name": "Potion Improvement",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 14,
+			"entries": [
+				"在14级时，你的药水种类会扩大。"
+			]
+		},
+		{
+			"name": "Blast Coating",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 15,
+			"entries": [
+				"从15级开始，你对自己的炸弹的救赎自动成功，并且永远不会受到它们的伤害。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。",
+				"另外，作为一个炼金术士，当你获得一个能力得分的提升时，你可以选择学习一个你符合先决条件的新发现。"
+			]
+		},
+		{
+			"name": "Additional Discoveries",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 17,
+			"entries": [
+				"在17级时，你会有第6次发现。"
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 18,
+			"entries": [
+				"在18级时，你获得一个由你的研究领域授予的功能。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。",
+				"如果你的DM允许使用功法，你可以改用（%0%）。",
+				"另外，作为一个炼金术士，当你获得一个能力得分的提升时，你可以选择学习一个你符合先决条件的新发现。"
+			]
+		},
+		{
+			"name": "Philosopher's Stone",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"level": 20,
+			"entries": [
+				"在20级时，你可以解锁所有炼金术的最高成就：哲学家之石，一个在拳头大小的发光宝石中的炼金术能量的动力。你可以用你的炼金术士用品、价值1,000金币的材料和1周的工作来建造你的哲人石。你一次只能拥有一块哲学家之石，而且只有你能获得这块石头的好处。只要你拥有这块石头，你就能获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"每当你完成一次短暂的休息，你就会重新获得所有消耗的试剂骰子。",
+						"使用石头的转化魔法，你可以作为一个行动来酿制药水，而不是在10分钟内。",
+						"你的年龄比正常人慢10倍，而且你的年龄不能被神奇地改变。"
+					]
+				},
+				"此外，你还学会了以下公式，它不计入你所知道的公式总数。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Nuclear Bomb",
+							"entries": [
+								"用你的哲学家之石代替你的炸弹的爆炸试剂，你可以把它变成一个核弹。核弹会造成{@dice 10d10 + 100}武力伤害，而不是正常的火焰伤害，爆炸半径为1英里，并完全摧毁哲学家之石。此外，在爆炸半径内的每个生物，如果救赎失败，将受到完全的伤害，而不是一半的伤害，每个救赎成功的生物将受到一半的伤害，而不是没有伤害。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Armorist",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Amorist",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"对影响心灵的炼金术的研究是一个微妙的问题，只有少数炼金术士，即所谓的爱欲者，才会进行研究。他们通常被客户称为 \"爱情医生\"，专门酿造能使饮用者产生强烈情感反应的药水。虽然到目前为止，爱情药水是他们最受欢迎的产品，但爱情学家也可以制作刺激性的费洛蒙炸弹，甚至可以软化可怕怪物的心。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alchemist|MFoV-CAR|Amorist|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pheromone Bomb|Alchemist|MFoV-CAR|Amorist|MFoV-CAR|2"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"当你在2级时选择这个研究领域，你会获得{@skill Deception}和{@skill Persuasion}技能的熟练度。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Amorist",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Pheromone Bomb",
+			"entries": [
+				"从第二级开始，你可以制作费洛蒙炸弹。通过将你的炸弹的爆炸性试剂换成有效的费洛蒙，你可以将它变成一个费洛蒙炸弹。信息素炸弹需要用智慧救赎来代替灵巧救赎。炸弹不会造成任何伤害，反而会使目标，以及爆炸半径内的每个生物，如果救赎失败，就会被你影响（%0%），直到其回合结束或受到伤害。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Amorist",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Magnetic Personality",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Amorist",
+			"subclassSource": "MFoV-CAR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你可以在你做的魅力检查中加入你的智力修饰。"
+			]
+		},
+		{
+			"name": "Alchemical Perfume",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Amorist",
+			"subclassSource": "MFoV-CAR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你穿上一种芳香的改变心智的香水，使别人对你产生好感。当一个在你5英尺范围内的敌对生物对你进行攻击时，它必须对你的炸弹拯救DC进行智慧拯救，否则在攻击卷中处于劣势。一旦一个生物成功地完成了这个救赎，它就会在24小时内对这个效果免疫。免疫力为0%的生物会自动完成这个救赎。"
+			]
+		},
+		{
+			"name": "Alchemical Romance",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Amorist",
+			"subclassSource": "MFoV-CAR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从18级开始，在长时间的休息中，你可以花费4个试剂骰子来制作一种极其有效的真爱药水。这种药水的作用很像（%0%），只是当你制作药水时，你会选择目标视为其真爱的生物，前提是目标认识该生物或在饮用药水的24小时内遇到该生物。此外，这个效果会无限期地持续下去，只有当你制作一个新的真爱药水时才会结束，或者这个效果被{@spell remove curse}法术或类似的魔法移除。当这种药水的效果在目标身上结束时，它将以完全厌恶的态度看待它曾经爱过的生物，并且永远不会再爱那个生物。"
+			]
+		},
+		{
+			"name": "Apothecary",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"许多有实际想法的炼金术士承担了药剂师的角色，因为冒险队伍总是需要一个治疗师，而牧师可能是短缺的。在他们的休息时间，这样的炼金术士有一个可以依赖的市场技能来获得收入，并且可以用他们的知识做大量的好事。炼药师经常在工作中研究药水和草药学，更愿意学习如何修补身体，而不是破坏它。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alchemist|MFoV-CAR|Apothecary|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Painkiller Bomb|Alchemist|MFoV-CAR|Apothecary|MFoV-CAR|2"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"当你在2级选择这个研究领域时，你获得对（%0%）技能的熟练度。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Painkiller Bomb",
+			"entries": [
+				"二级时，你可以制造止痛剂炸弹。通过将你的炸弹的爆炸试剂与镇痛油浆混合，你可以将它变成一个镇痛炸弹。止痛弹不会造成任何伤害，而是给予其爆炸半径内的每个生物相当于（%0%）加你炼金术士等级一半的临时命中率，持续到你下一回合结束。该炸弹对构筑物和亡灵没有效果。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Potion Toss",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "MFoV-CAR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你已经开发出一种化学机制，可以更有效地将药水送到远方的盟友手中。你可以用你的行动向你周围20英尺内愿意的生物投掷药水。目标获得的好处就像他们正常喝了药水一样。"
+			]
+		},
+		{
+			"name": "Self-Medication",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "MFoV-CAR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"到了10级，你已经测试出了自己对止痛药的耐受性，以至于你可以定期服用一小部分而不受影响。每当你喝下具有恢复命中率效果的药水时（即使你已经有了所有的命中率），你在救赎时获得优势，直到你下一回合结束。"
+			]
+		},
+		{
+			"name": "Alchemical Resurrection",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "MFoV-CAR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从18级开始，你的药力足以唤醒死者。通过使用你的行动将价值500金币的钻石粉混合到{@item potion of superior healing}或{@item potion of supreme healing}中，你可以制造一种唤醒死者的药剂。将这种药水倒在一具死亡时间不超过10天的人形尸体上作为行动，会产生（%2%）法术的效果。"
+			]
+		},
+		{
+			"name": "Ionzier",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ionizer",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"很少有炼金术师对爆破器或个人防护罩发射器等设备的替代方案进行研究，更多的是出于科学的好奇心，而不是真正的创新精神。然而，少数人成为真正的能量操纵大师。这些所谓的电离器可以使用复杂的炼金术反应使大多数形式的能量屈服于他们的意志。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dark Matter|Alchemist|MFoV-CAR|Ionizer|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alchemist|MFoV-CAR|Ionizer|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Plasma Bomb|Alchemist|MFoV-CAR|Ionizer|MFoV-CAR|2"
+				}
+			]
+		},
+		{
+			"type": "inset",
+			"name": "Dark Matter",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"电离器研究领域使用《暗物质》一书中的爆破器规则。"
+					]
+				}
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ionizer",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"当你在2级选择这个研究领域时，你获得技术技能的熟练度。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ionizer",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Plasma Bomb",
+			"entries": [
+				"2级时，你可以制作等离子体炸弹。通过将炸弹的爆炸性试剂替换成离子交换器，你可以将它变成一个等离子体炸弹。等离子炸弹会造成辐射伤害，而不是火灾伤害。当你用这个炸弹击中一个生物时，一种强烈的吸引力使它永久地粘在该生物身上，在该生物的回合结束时爆炸并造成正常的伤害。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ionizer",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Heatsink",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ionizer",
+			"subclassSource": "MFoV-CAR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"到了6级，你已经学会了一种炼金术，可以把多余的热量从爆破器上引开，使其温度正常。每回合一次，你可以使用一个行动或一个额外的行动来对你接触到的爆破器进行过冷处理。在接下来的一分钟内，当这个爆破器会过热时，它会自动降温并停止过热。如果你对过热的爆破器进行过冷，它将立即停止过热。",
+				"你可以使用这个能力的次数等于你的智力修饰值，并且在你完成长时间休息时恢复所有消耗的使用。"
+			]
+		},
+		{
+			"name": "Electromagnetic Shield",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ionizer",
+			"subclassSource": "MFoV-CAR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你发现了一种通过逆向工程的等离子体炸弹来转移有害射弹的方法。当你被一个造成力量、闪电、坏死或辐射伤害的远程武器攻击击中时，作为一种反应，你可以掷出一个（%0%）。如果掷出6分，攻击就会打不中你。"
+			]
+		},
+		{
+			"name": "Energetic Discharge",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ionizer",
+			"subclassSource": "MFoV-CAR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你创造了一个拳头大小的 \"放电装置\"，可以吸收、储存和重新定向少量的任何击中你的能量。当你使用你的电磁护盾功能时，无论你如何翻滚，你的放电装置都会获得1次充电，最多10次。充电时间持续24小时。作为你回合中的额外行动，你可以消耗任何数量的储存的电荷，并对60英尺内的目标进行一次远程攻击卷。一旦命中，目标就会因每一次消耗的电荷而受到{@dice 1d8}武力或辐射伤害（你选择）。"
+			]
+		},
+		{
+			"name": "Mad Bomber",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mad Bomber",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"虽然许多疯狂的炸弹袭击者实际上并不疯狂，但需要一种特殊的疯狂才能将自己的生命投入到研究爆炸物中。大多数专攻这一领域的炼金术士都是无可救药的发火狂，他们以燃烧、爆破和炸毁东西为乐。疯狂的炸弹人总是在努力提高他们的炸弹的有效性。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blasting Specialty|Alchemist|MFoV-CAR|Mad Bomber|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Shrapnel Bomb|Alchemist|MFoV-CAR|Mad Bomber|MFoV-CAR|2"
+				}
+			]
+		},
+		{
+			"name": "Blasting Specialty",
+			"entries": [
+				"从你在2级选择这个研究领域开始，你的炸弹对物体和结构造成双倍伤害。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mad Bomber",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Shrapnel Bomb",
+			"entries": [
+				"2级时，你可以制造弹片炸弹。通过用金属轴承增强你的炸弹的爆炸试剂，你可以把它变成一个弹片炸弹。弹片炸弹造成的是穿透性伤害，而不是火焰伤害，有{@dice d8}伤害骰子，并在10英尺范围内爆炸。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mad Bomber",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Timed Demolition",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mad Bomber",
+			"subclassSource": "MFoV-CAR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级的时候，你已经学会了如何设置炸弹的延迟爆炸。当你采取{@action Use an Object}行动给炸弹填料并投掷它时，你可以为它的引爆设定一个持续时间，这个持续时间可以是任何回合数（6秒的任何增量），最长为1分钟。在这个持续时间之后，炸弹会在你的回合结束时引爆。"
+			]
+		},
+		{
+			"name": "Blast Shield",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mad Bomber",
+			"subclassSource": "MFoV-CAR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你已经开发出一种元素镀层来保护你免受危险能量的伤害。你获得了对你所选择的酸、冷、火或闪电伤害的抵抗力，并且每当你完成一次长时间的休息就可以改变你的选择。"
+			]
+		},
+		{
+			"name": "Formula: Black Powder Bomb",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mad Bomber",
+			"subclassSource": "MFoV-CAR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从18级开始，你可以制作可怕的黑火药炸弹。通过将你的炸弹的爆炸试剂换成黑火药，你可以把它变成黑火药炸弹。黑火药炸弹有（%0%）的伤害骰子。"
+			]
+		},
+		{
+			"name": "Mutagenist",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"炼金术的研究从根本上说是对转化的研究。所有的炼金术士都将世俗的材料转化为神奇的物质：药水、灵药和炸弹，但有些人却更进一步。你已经发现了诱变剂的秘密，它是转化的关键，它允许你改变你的身体，获得超自然的力量或速度，长出额外的肢体或爪子，或者将你的皮肤增厚成一个石质的护罩。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alchemist|MFoV-CAR|Mutagenist|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mutagen|Alchemist|MFoV-CAR|Mutagenist|MFoV-CAR|2"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"在2级时，你获得对你选择的（%0%）或（%1%）技能的熟练度，以及对盾牌的使用。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Mutagen",
+			"entries": [
+				"从2级开始，你可以使用你的额外行动为自己注射一种被称为诱变剂的强大转化药剂。你会获得你所选择的以下一种好处，持续1分钟，或者直到你使用你的奖励动作为自己注射不同的诱变剂。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"name": "Strength",
+							"type": "entries",
+							"entries": [
+								"你的力量值增加3，最高可达20。此外，你会长出爪子、獠牙、刺、角，或你选择的不同的自然武器。你可以使用这种自然武器进行徒手攻击。一旦命中，你造成的伤害等于（%0%）+你的力量修饰值，而不是非武装攻击的正常破坏性伤害。这种攻击的伤害是重击、穿刺或砍击，根据自然武器的情况而定。"
+							]
+						},
+						{
+							"name": "Dexterity",
+							"type": "entries",
+							"entries": [
+								"你的灵巧得分增加3分，最高为20分。此外，你的移动速度增加5英尺。"
+							]
+						},
+						{
+							"name": "Constitution",
+							"type": "entries",
+							"entries": [
+								"你的体质得分增加3分，最高为20分。当你获得这一增长时，你的当前和最大命中率会随着你新的体质得分而相应增加，但当这一效果结束时，你的当前和最大命中率都会以相同的数量减少。"
+							]
+						}
+					]
+				}
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Shared Mutagen",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "MFoV-CAR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级时，你已经创造了一种你的诱变剂的配方，足以安全地注射到他人身上。你可以使用你的行动并花费一个试剂模子，给你周围5英尺内的一个自愿的生物注射你选择的诱变剂。一个生物在同一时间只能受到一种诱变剂的影响。一旦你给另一个生物注射了一种诱变剂，你就不能再这样做，直到原来的诱变剂结束。"
+			]
+		},
+		{
+			"name": "Advanced Mutation",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "MFoV-CAR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，每当你给自己注射变异剂时，你可以选择以下一种额外的变异。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"name": "Hyperelastic",
+							"type": "entries",
+							"entries": [
+								"你的肉体呈现出一种橡胶的品质，使你能够轻松地弯曲和伸展。你的近战武器攻击会获得 \"伸手 \"属性，如果它们还没有的话。此外，你在逃脱抓捕或滑行束缚的能力检查中具有优势。"
+							]
+						},
+						{
+							"name": "Mucilaginous",
+							"type": "entries",
+							"entries": [
+								"你的皮肤会分泌一种厚厚的、极其粘稠的物质，帮助你粘住物体。你可以向上、向下和穿过垂直表面，并沿着天花板倒立移动，同时让你的双手保持自由。你的攀爬速度也等于你的行走速度。此外，生物在逃避抓取你的能力检查时有劣势。"
+							]
+						},
+						{
+							"name": "Polybrachia",
+							"type": "entries",
+							"entries": [
+								"你会长出一对额外的手臂。这些手臂功能齐全，可以用来握住武器和盾牌（允许你握住2个双手武器，或4个单手武器），执行法术的躯体部分，以及执行其他行动，尽管这些手臂本身并不给予你任何额外的行动。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mutated Blood",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "MFoV-CAR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"到18级时，你的诱变剂已经永久地改变了你的生物学特性。选择力量，灵巧，或体质。该能力得分增加2，其最大值为22。一旦你选择了一个能力值，这个选择就不能被改变了。"
+			]
+		},
+		{
+			"name": "Ooze Rancher",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ooze Rancher",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"毫不奇怪，对于希望拼凑出无生命的化学物质如何形成并上升为移动的、饥饿的质量的炼金术士来说，渗出物、果冻和粘液是一个迷人的主题。这个问题的答案很可能是炼金术本身的核心所在。选择深入研究史莱姆的炼金术士被称为渗出物牧场主，因为他们培育和饲养大量的史莱姆来进行实验。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ooze Empathy|Alchemist|MFoV-CAR|Ooze Rancher|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Slime Bomb|Alchemist|MFoV-CAR|Ooze Rancher|MFoV-CAR|2"
+				}
+			]
+		},
+		{
+			"name": "Ooze Empathy",
+			"entries": [
+				"从你在2级时选择这个研究领域开始，你已经开发出了一种费洛蒙混合物，可以让各种粘液对你产生吸引力。无论什么时候，只要有一个粘液试图攻击你，它就必须对你的炸弹救赎DC做一个智慧救赎。如果救赎失败，它的攻击就会失败。如果救赎成功，则在接下来的24小时内对该特性免疫。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ooze Rancher",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Slime Bomb",
+			"entries": [
+				"二级时，你可以制造粘液炸弹。通过将炸弹的爆炸物与泥浆的残余物混合，你可以将它变成一个粘液炸弹。粘液炸弹不会造成任何伤害，但会将爆炸半径内的每个生物包裹在粘稠的绿色粘液中。任何被粘液包裹的生物都不能采取{@action Dash}行动或{@action Disengage}行动。粘液可以通过用一加仑的水浇灌生物来清除，或者通过采取行动来清除大部分粘液。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ooze Rancher",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Bottled Oozes",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ooze Rancher",
+			"subclassSource": "MFoV-CAR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你学会了一种巧妙的炼金术技巧，可以将软泥压缩成更密实的状态，并将它们储存在静止状态以备后用。每当你酿造药剂时，你可以花费2个试剂骰来制作一个{@item Ooze Bottle|MFoV-CAR}。"
+			]
+		},
+		{
+			"name": "Liquid Anatomy",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ooze Rancher",
+			"subclassSource": "MFoV-CAR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"到10级时，你的渗水炼金术实验已经使你自己注射了一定量的ozoplasm，一种构成渗水和黏液的基本物质。因此，你可以在任何狭窄到1英寸宽的空间内移动而不被挤压（尽管你的装备不会同样被压缩）。此外，你不会从关键打击中获得额外的伤害。"
+			]
+		},
+		{
+			"name": "Ooze Jug",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Ooze Rancher",
+			"subclassSource": "MFoV-CAR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从18级开始，你解决了阻止大型软泥怪被装瓶的主要问题：你只需要一个更大的瓶子。你有一个软泥壶，它的功能类似于一个{@item Ooze Bottle|MFoV-CAR}，但里面装有一个更大的软泥怪。你一次只能拥有一个软泥壶，里面也只能装一个软泥怪。在酿造药水时，你可以用以下软泥填充它：",
+				{
+					"type": "table",
+					"colLabels": [
+						"Ooze",
+						"Cost"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-4 text-align-left "
+					],
+					"rows": [
+						[
+							"{@creature Ochre Jelly}",
+							"4个试剂骰子"
+						],
+						[
+							"{@creature Gelatinous Cube}",
+							"8个试剂骰子"
+						],
+						[
+							"{@creature Black Pudding}",
+							"10个试剂骰子"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Venomsmith",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"entries": [
+				"对于每一个致力于治疗病人和弱者的炼金术士来说，还有一个有着更黑暗的使命。这些炼金术士通常被称为毒药师或毒液师，他们是制作致命和削弱性毒药的艺术大师。无论是受雇于刺客公会还是自己执行暗杀任务，毒药师的出现通常伴随着过早的死亡。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poisoner|Alchemist|MFoV-CAR|Venomsmith|MFoV-CAR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Venom Bomb|Alchemist|MFoV-CAR|Venomsmith|MFoV-CAR|2"
+				}
+			]
+		},
+		{
+			"name": "Poisoner",
+			"entries": [
+				"从你在2级时选择这个研究领域开始，你获得{@optfeature Poisoner|MFoV-CAR}的发现。直到你达到3级，你有2个试剂骰，只能用于使用这个发现制作毒药。当你在这个职业中升级时，你不能用其他发现替换这个发现。",
+				"此外，当你对一个生物造成毒药伤害时，你无视对毒药伤害的抵抗，而将对毒药伤害的免疫视为抵抗，造成一半伤害。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Venom Bomb",
+			"entries": [
+				"2级时，你可以制造毒液炸弹。通过将几滴快速生效的毒素混合到炸弹的爆炸部件中，你可以将它变成一个毒液炸弹。毒液炸弹会造成毒药伤害，而不是火灾伤害，有{@dice d8}的伤害骰子，并且需要宪法救赎，而不是灵巧救赎。此外，目标以及在爆炸半径内的每个生物，如果救赎失败，在下一回合结束前进行的下一次力量、灵巧或宪法救赎中都处于劣势。"
+			],
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "MFoV-CAR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Alchemical Assassin",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "MFoV-CAR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，你善于在不被发现的情况下使用毒药。你在将摄入的毒药添加到食物或饮料中时，在灵巧性（（%0%））的检查中具有优势，可以在不被发现的情况下将毒药施加到你所持有的武器上，或者在另一个人身上放置一小瓶毒药而不被他们察觉。"
+			]
+		},
+		{
+			"name": "Mithridatism",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "MFoV-CAR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"到10级时，通过给自己注射小剂量的各种毒药和毒素，你已经对它们的破坏产生了免疫力。你对毒药伤害和被毒害有免疫力。"
+			]
+		},
+		{
+			"name": "Toxic Recompense",
+			"source": "MFoV-CAR",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "MFoV-CAR",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"从18级开始，每当你身边5英尺内的生物用近身攻击击中你时，你可以用你的反应来释放毒气。攻击者必须对你的炸弹救赎DC进行宪法救赎，否则将被毒害1分钟。在中毒期间，该生物在其每个回合开始时都会受到{@dice 1d10}的中毒伤害。中毒的生物可以在其每个回合结束时重复蓄力，如果成功则结束对自己的影响。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Amorist",
+			"subclassFeatures": [
+				"Armorist|Alchemist|MFoV-CAR|Amorist|MFoV-CAR|2",
+				"Magnetic Personality|Alchemist|MFoV-CAR|Amorist|MFoV-CAR|6",
+				"Alchemical Perfume|Alchemist|MFoV-CAR|Amorist|MFoV-CAR|10",
+				"Alchemical Romance|Alchemist|MFoV-CAR|Amorist|MFoV-CAR|18"
+			],
+			"source": "MFoV-CAR",
+			"shortName": "Amorist",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR"
+		},
+		{
+			"name": "Apothecary",
+			"subclassFeatures": [
+				"Apothecary|Alchemist|MFoV-CAR|Apothecary|MFoV-CAR|2",
+				"Potion Toss|Alchemist|MFoV-CAR|Apothecary|MFoV-CAR|6",
+				"Self-Medication|Alchemist|MFoV-CAR|Apothecary|MFoV-CAR|10",
+				"Alchemical Resurrection|Alchemist|MFoV-CAR|Apothecary|MFoV-CAR|18"
+			],
+			"source": "MFoV-CAR",
+			"shortName": "Apothecary",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR"
+		},
+		{
+			"name": "Ionizer",
+			"subclassFeatures": [
+				"Ionzier|Alchemist|MFoV-CAR|Ionizer|MFoV-CAR|2",
+				"Heatsink|Alchemist|MFoV-CAR|Ionizer|MFoV-CAR|6",
+				"Electromagnetic Shield|Alchemist|MFoV-CAR|Ionizer|MFoV-CAR|10",
+				"Energetic Discharge|Alchemist|MFoV-CAR|Ionizer|MFoV-CAR|18"
+			],
+			"source": "MFoV-CAR",
+			"shortName": "Ionizer",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR"
+		},
+		{
+			"name": "Mad Bomber",
+			"subclassFeatures": [
+				"Mad Bomber|Alchemist|MFoV-CAR|Mad Bomber|MFoV-CAR|2",
+				"Timed Demolition|Alchemist|MFoV-CAR|Mad Bomber|MFoV-CAR|6",
+				"Blast Shield|Alchemist|MFoV-CAR|Mad Bomber|MFoV-CAR|10",
+				"Formula: Black Powder Bomb|Alchemist|MFoV-CAR|Mad Bomber|MFoV-CAR|18"
+			],
+			"source": "MFoV-CAR",
+			"shortName": "Mad Bomber",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR"
+		},
+		{
+			"name": "Mutagenist",
+			"subclassFeatures": [
+				"Mutagenist|Alchemist|MFoV-CAR|Mutagenist|MFoV-CAR|2",
+				"Shared Mutagen|Alchemist|MFoV-CAR|Mutagenist|MFoV-CAR|6",
+				"Advanced Mutation|Alchemist|MFoV-CAR|Mutagenist|MFoV-CAR|10",
+				"Mutated Blood|Alchemist|MFoV-CAR|Mutagenist|MFoV-CAR|18"
+			],
+			"source": "MFoV-CAR",
+			"shortName": "Mutagenist",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR"
+		},
+		{
+			"name": "Ooze Rancher",
+			"subclassFeatures": [
+				"Ooze Rancher|Alchemist|MFoV-CAR|Ooze Rancher|MFoV-CAR|2",
+				"Bottled Oozes|Alchemist|MFoV-CAR|Ooze Rancher|MFoV-CAR|6",
+				"Liquid Anatomy|Alchemist|MFoV-CAR|Ooze Rancher|MFoV-CAR|10",
+				"Ooze Jug|Alchemist|MFoV-CAR|Ooze Rancher|MFoV-CAR|18"
+			],
+			"source": "MFoV-CAR",
+			"shortName": "Ooze Rancher",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR"
+		},
+		{
+			"name": "Venomsmith",
+			"subclassFeatures": [
+				"Venomsmith|Alchemist|MFoV-CAR|Venomsmith|MFoV-CAR|2",
+				"Alchemical Assassin|Alchemist|MFoV-CAR|Venomsmith|MFoV-CAR|6",
+				"Mithridatism|Alchemist|MFoV-CAR|Venomsmith|MFoV-CAR|10",
+				"Toxic Recompense|Alchemist|MFoV-CAR|Venomsmith|MFoV-CAR|18"
+			],
+			"source": "MFoV-CAR",
+			"shortName": "Venomsmith",
+			"className": "Alchemist",
+			"classSource": "MFoV-CAR"
+		}
+	]
+}

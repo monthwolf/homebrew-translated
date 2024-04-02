@@ -1,0 +1,2995 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MFOV:WM",
+				"full": "Warmage (Complete)",
+				"authors": [
+					"Middle Finger of Vecna"
+				],
+				"abbreviation": "MFoV",
+				"url": "https://store.magehandpress.com/products/complete-warmage",
+				"version": "2018.06.29",
+				"convertedBy": [
+					"Jafner"
+				]
+			}
+		],
+		"optionalFeatureTypes": {
+			"T:WM": "Warmage Trick",
+			"M:WM": "Warmage Maneuver"
+		},
+		"dateAdded": 1545342498,
+		"dateLastModified": 1545342498,
+		"_dateLastModifiedHash": "53aa65a05f"
+	},
+	"class": [
+		{
+			"name": "Warmage",
+			"source": "MFOV:WM",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"tools": [
+					"One artisan's kit",
+					"One musical instrument"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"arcana",
+								"athletics",
+								"acrobatics",
+								"history",
+								"investigation",
+								"medicine",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"Leather armor, a dagger, and any simple weapon",
+					"(a) a light crossbow and 20 bolts or (b) a shortbow and 20 arrows",
+					"An explorer's pack an (a) a traveler's pack or (b) one kit you're proficient in"
+				],
+				"defaultData": [
+					{
+						"_": []
+					},
+					{
+						"a": [],
+						"b": []
+					},
+					{
+						"An explorer's pack an": [],
+						"a traveler's pack or": []
+					}
+				]
+			},
+			"classSpells": [
+				"Acid Splash",
+				"Chill Touch",
+				"Fire Bolt",
+				"Light",
+				"Mage Hand",
+				"Mending",
+				"Poison Spray",
+				"Ray of Frost",
+				"Shillelagh",
+				"Shocking Grasp",
+				"True Strike"
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Warmage (MFoV)}",
+						"{@filter Tricks Known|optionalfeatures|feature type=T:WM}"
+					],
+					"rows": [
+						[
+							3,
+							0
+						],
+						[
+							3,
+							2
+						],
+						[
+							4,
+							2
+						],
+						[
+							4,
+							2
+						],
+						[
+							5,
+							4
+						],
+						[
+							5,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							6,
+							4
+						],
+						[
+							7,
+							6
+						],
+						[
+							7,
+							6
+						],
+						[
+							8,
+							6
+						],
+						[
+							8,
+							6
+						],
+						[
+							9,
+							8
+						],
+						[
+							9,
+							8
+						],
+						[
+							10,
+							8
+						],
+						[
+							10,
+							8
+						],
+						[
+							11,
+							10
+						],
+						[
+							11,
+							10
+						],
+						[
+							12,
+							10
+						],
+						[
+							12,
+							10
+						]
+					]
+				}
+			],
+			"fluff": [
+				{
+					"entries": [
+						"一个身穿灿烂的铂金仪式盔甲的人与一支士兵部队并肩作战，完美无缺地行进着。当他喊出行军命令时，他的手下几乎是超自然地回应，期待着他的命令。在快速连续的过程中，每个人都向天空伸出一只手，释放出明亮的火焰脉冲，瞬间就在头顶爆炸，发出雷鸣般的爆炸声。盔甲骑士做了一些记录，点了点头，士兵们又开始了他们的表演。",
+						"一个女精灵和20个学员站在一个让人想起射箭场的地方，虽然完全由金属建造。在她的示意下，他们向一群雕像发射了一连串有能量的箭矢。一些人完全没有击中目标，而另一些人则只打了一个闪电。精灵不以为然地摇了摇头，命令学生们聚集在她身后。热量和能量在她伸出的手掌中涌出，然后飞到射程之外，爆炸成一个灿烂的火球，将这些雕像变成了废墟。她冷笑着转过身，打了个响指，学生们迅速拿起扫帚、簸箕和更多雕像。",
+						"一千名装甲部队以完美的军衔和队列站在那里。在队伍的最前面是一个高台，一个半兽人跪在一个火发的矮人女仆面前。她用一根复杂的金棍拍打着他的一个肩膀，然后是另一个肩膀。然后他站起来，女护士把棍子放在他手里，另一只手拿着一面印有马脸的盾牌。半兽人鞠了一躬，转向他的战友们，瞬间打破了门面：无数的声音响起，欢呼着欢迎他们的新兄弟加入。",
+						{
+							"type": "entries",
+							"name": "Martial Spellcasters",
+							"entries": [
+								"作为战时雇佣兵和维和人员，暖男是一个独特的法术师品种，他们擅长并完善使用最低级别的法术--咒语。暖男哲学告诉我们，只要有纪律，就可以在最低级别使用魔法，就像普通战士挥舞弓箭、剑或斧头一样容易。当以这种方式使用时，魔法不是一种神秘的、不可知的力量，而是一种可训练的武器，并且几乎可以教给任何有能力的人。因此，魔法师学院已经成功组建了一支高效（虽然相对简单）的施法者军队。",
+								"由于暖男学院的做法和教义，世界上其他地方的人都对其进行审查（如果不是直接的敌视）。对于那些没有魔法天赋的人来说，学院的超强力量是一种永久的威胁。学院本身就是一个东道主，它的军队，尽管肯定还是很光荣的，但完全是雇佣兵。一个国家如果在一场战争中征用了暖男的帮助，可能会在下一场战争中发现暖男与他们的敌人结盟了。",
+								"另一方面，魔法师和巫师认为暖男是简陋而陈腐的，主要是因为暖男不了解魔法的细微差别。暖男对研究魔法不感兴趣，他们也不希望探究困惑各地施法者的奥秘；他们只寻求破坏。由于这个原因，暖男们甚至对其他施法者构成了威胁。他们对魔法的一心一意的利用磨练了他们的魔法的破坏力，他们巨大的数量在一场直接的战斗中威胁着稀有的施法者。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Glory and Duty",
+							"entries": [
+								"虽然规则、传统和指挥系统是学院的规则和法律，但毕业生有足够的自由去旅行和冒险。毕业生只需满足两个要求：第一，学院可以召回暖男，让其每年服务一次；第二，暖男决不能诋毁或玷污学院的声誉。那些有此行为的人很快就会发现自己被带到调查委员会面前，惩罚范围从鞭打和监禁，到被开除出学院，甚至处决。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Warmage",
+							"entries": [
+								"成为暖男的选择既不容易，也不是偶然的。每一个暖男都有魔法天赋和正式的军事训练，并有意识地决定将他或她的生命的一部分奉献给学院。也就是说，由于学院几乎接受任何符合培训前提条件的候选人，暖男可能来自无数的背景和起点。",
+								"对暖男的性格来说，最重要的是他的奥术入门。你从哪里学会的魔法？它是与生俱来的，是你与生俱来的东西吗？你是在女修道院或寺院里长大的吗？你是在一个合适的巫师或炼金术士那里当学徒吗？还有，你为什么选择拒绝成为一个正式的施法者的道路？",
+								"虽然选择军国主义背景是一个自然的选择，但几乎任何一个人都可以适合学院的模式。你也许是个小偷或骗子，误打误撞地从鲁克家族的成员那里偷了东西？你是否是一名城镇警卫或民兵，接触到了骑士、小卒或皇后，并被他们的能力所震慑？",
+								"最后，确定你的暖男想属于哪个学院。暖男在进入学院的第一周就开始进入他或她的家族，但直到他们在第三级获得他们的家族子类时才完全毕业。对暖男来说，成为暖男之家的成员不仅仅是选择一个专业，它是他们身份的一部分。他们会有世界各地的兄弟姐妹通过他们佩戴的奖章、展示的标志来了解他们；还有握手、暗语、一个家族所有成员之间共享的共同俚语，以及其他几十个大大小小的传统。",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"你可以通过以下建议迅速成为一名暖男。首先，智力应该是你最高的能力得分，其次是体质。如果你打算参加 \"骑士时代 \"或 \"士卒时代\"，那么力量应该是你的第三高分。然后选择咒语 \"寒冰之触\"、\"火弹 \"和 \"法师之手\"，以及学者 \"奥术启动\"。"
+									]
+								}
+							]
+						}
+					],
+					"name": "Warmage",
+					"source": "MFOV:WM",
+					"type": "section"
+				}
+			],
+			"classFeatures": [
+				"Spellcasting|Warmage|MFOV:WM|1",
+				"Arcane Initiation|Warmage|MFOV:WM|1",
+				"Arcane Fighting Style|Warmage|MFOV:WM|1",
+				"Warmage Edge|Warmage|MFOV:WM|2",
+				"Warmage Trick|Warmage|MFOV:WM|2",
+				{
+					"classFeature": "Warmage House|Warmage|MFOV:WM|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warmage|MFOV:WM|4",
+				"Warmage Tactics|Warmage|MFOV:WM|6",
+				{
+					"classFeature": "Warmage House feature|Warmage|MFOV:WM|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warmage|MFOV:WM|8",
+				{
+					"classFeature": "Warmage House feature|Warmage|MFOV:WM|10",
+					"gainSubclassFeature": true
+				},
+				"Commander's Mount|Warmage|MFOV:WM|11",
+				"Ability Score Improvement|Warmage|MFOV:WM|12",
+				"Warmage's Eye|Warmage|MFOV:WM|14",
+				{
+					"classFeature": "Warmage House feature|Warmage|MFOV:WM|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warmage|MFOV:WM|16",
+				{
+					"classFeature": "Warmage House feature|Warmage|MFOV:WM|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Warmage|MFOV:WM|19",
+				"Master Warmage|Warmage|MFOV:WM|20"
+			],
+			"subclassTitle": "Warmage House",
+			"cantripProgression": [
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Acidic Blade",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 5,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动之一，你必须用武器对法术范围内的一个生物进行近身攻击，否则法术失败。一旦命中，攻击会造成正常的伤害，只是整个攻击会造成酸性伤害而不是正常类型的伤害。该生物还必须做一个灵巧的救赎动作，否则在其下一回合开始时受到{@damage 1d8}的酸液伤害。"
+			],
+			"entriesHigherLevel": [
+				"At 5th level, the melee attack and secondary damage each deal an additional {@damage 1d8} acid damage to the target. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8 / 3d8}), and 17th level ({@dice 3d8 / 4d8})."
+			]
+		},
+		{
+			"name": "Force Buckler",
+			"source": "MFOV:WM",
+			"school": "A",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A specially prepared gauntlet worth at least 5 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"你召唤出一个半透明的，但可见的力场，从准备好的护手中涌出。在持续时间内，你可以把这个力场当作盾牌来挥舞，并且你可以熟练地使用它。"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Force Dart",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"你向范围内的生物或物体投掷一个魔力飞镖。对目标进行一次范围内的法术攻击。一旦命中，目标会受到{@damage 1d10}力量伤害。"
+			],
+			"entriesHigherLevel": [
+				"This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Glacial Blade",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 5,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动的一部分，你必须用武器对法术范围内的一个生物进行近身攻击，否则法术失败。一旦命中，攻击会造成正常的伤害，只是整个攻击会造成冷伤害，而不是正常类型的伤害。此外，目标必须做一个宪法规定的救赎动作，否则就会被脆皮霜覆盖。如果目标在下一回合开始前再次被攻击击中，目标会受到额外的（%0%）寒冷伤害。"
+			],
+			"entriesHigherLevel": [
+				"At 5th level, the melee attack and secondary damage each deal an additional {@damage 1d8} cold damage to their targets. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8 / 3d8}), and 17th level ({@dice 3d8 / 4d8})."
+			]
+		},
+		{
+			"name": "Magic Daggers",
+			"source": "MFOV:WM",
+			"school": "C",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"随着一声欢呼，你会召唤出一定数量的投掷武器，数量相当于你的法术修饰值的两倍。这些武器可以是任何类型的：匕首、手斧、吊弹、飞镖等等。在咒语的持续时间内，被召唤的武器会漂浮在触手可及的地方，让你可以轻松地抓住并投掷它们。作为一个动作，你可以将一件武器作为范围性法术攻击扔出去，范围为60英尺。一旦命中，武器会造成{@dice 1d6}的魔法穿刺、砍击或重击伤害，具体伤害取决于所投掷的武器。一次攻击后，武器会消失。"
+			],
+			"entriesHigherLevel": [
+				"At higher levels, you can make more attacks with your weapons. At 5th level, you can make two attacks, at 11th level, three attacks, and at 17th level, four attacks."
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Molten Blade",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 5,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动的一部分，你必须用武器对法术范围内的一个生物进行近战攻击，否则法术失败。一旦命中，攻击就会造成正常的伤害，只是整个攻击会造成火焰伤害而不是正常类型的伤害。此外，火焰充满了目标周围的空间。直到你下一个回合开始时，任何进入该空间或结束其回合的生物都会受到{@damage 1d8}的火焰伤害。"
+			],
+			"entriesHigherLevel": [
+				"At 5th level, the melee attack and secondary damage each deal an additional {@damage 1d8} fire damage to their targets. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8 / 3d8}), and 17th level ({@dice 3d8 / 4d8})."
+			]
+		},
+		{
+			"name": "Mystical Blade",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 5,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a blade-less sword hilt worth at least 5 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"你变出一把魔力之刃，通过聚焦手柄引导，并向你的敌人猛烈攻击。进行一次近战法术攻击。一旦命中，你会造成{@damage 1d8}力量伤害。这把刀在短时间内保持存在；直到你下一个回合开始时，你可以用你的神秘之刀作为机会攻击进行一次攻击。"
+			],
+			"entriesHigherLevel": [
+				"You can make 1 additional strike on your turn at 5th level (2 attacks), at 11th level (3 attacks), and at 17th level (4 attacks)."
+			]
+		},
+		{
+			"name": "Phantom Grapnel",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"你变出一条由魔法力量构成的链子和钩子，你将其推向范围内你能看到的生物、物体或无人的空间。当你以一个空间为目标时，你的葡萄架会以一条直线把你拉到那个地方。你在这个动作中会像平常一样引发机会攻击。",
+				"当你瞄准一个生物或物体时，进行一次范围性的法术攻击。一旦命中，你会将该生物或物体拉向你，最多 20 英尺。一个生物可以做一个力量救赎来抵抗这个移动。如果目标比你大两个或两个以上的体型（例如，一个巨大的生物对一个中等的生物），你会被拉向目标。"
+			],
+			"miscTags": [
+				"FMV",
+				"SGT"
+			]
+		},
+		{
+			"name": "Quickstep",
+			"source": "MFOV:WM",
+			"school": "T",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"你召唤你的内在储备，给你一个短暂的速度闪光。当你施展这个法术时，你的基本移动速度在持续时间内增加10英尺。"
+			]
+		},
+		{
+			"name": "Springheel",
+			"source": "MFOV:WM",
+			"school": "T",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"你将魔力涌入你的双腿，使你能从静止状态下束缚到高空。当你施展这个法术时，你的跳跃距离在持续时间内增加10英尺，而且你可以进行跑步跳高或跑步跳远，而不需要跑步起步。"
+			]
+		},
+		{
+			"name": "Storming Blade",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 5,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动的一部分，你必须用武器对法术范围内的一个生物进行近战攻击，否则法术失败。一旦命中，攻击就会造成正常的伤害，只是整个攻击会造成闪电伤害而不是正常类型的伤害。此外，你可以使你的闪电跳到目标5英尺内的一个生物身上，造成相当于你的法术修改器的闪电伤害。"
+			],
+			"entriesHigherLevel": [
+				"At 5th level, the melee attack and secondary damage each deal an additional {@damage 1d8} lightning damage to their targets. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8 / 3d8}), and 17th level ({@dice 3d8 / 4d8})."
+			]
+		},
+		{
+			"name": "Thundering Blade",
+			"source": "MFOV:WM",
+			"school": "E",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 5,
+					"type": "feet"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warmage",
+						"source": "MFOV:WM"
+					}
+				]
+			},
+			"entries": [
+				"作为施放此法术的行动的一部分，你必须用武器对法术范围内的一个生物进行近身攻击，否则法术失败。一旦命中，攻击就会造成正常的伤害，只是整个攻击会造成雷霆伤害，而不是正常类型。此外，从你的攻击中响起一阵雷声，迫使5英尺范围内除你自己和目标外的所有生物进行灵巧救赎，否则将受到{@damage 1d8}雷霆伤害。"
+			],
+			"entriesHigherLevel": [
+				"At 5th level, the melee attack and secondary damage each deal an additional {@damage 1d8} thunder damage to their targets. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8 / 3d8}), and 17th level ({@dice 3d8 / 4d8})."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Bishop's Blessing",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"House of Bishops"
+					]
+				}
+			],
+			"entries": [
+				"从以下伤害类型中选择一个：酸、冷、火、雷电、毒、辐射或坏死。你可以用所选的伤害类型替换你的近战攻击和你施放的任何暖男法术的伤害类型。你可以多次学习这个技巧，每次选择一个新的伤害类型。"
+			]
+		},
+		{
+			"name": "Blinding Light",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"Light"
+					]
+				}
+			],
+			"entries": [
+				"当你使用{@i light}咒语针对你所持有的物体时，你可以向你10英尺范围内的一个生物发射信号，这个生物必须做一个宪法规定的救赎动作。如果救赎失败，它就会被（%1%），直到你下一个回合开始。在一个生物对这个能力的救赎失败后，它在随后24小时内对这个能力的所有救赎都有优势。"
+			]
+		},
+		{
+			"name": "Charged Blade",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"Shillelagh"
+					]
+				}
+			],
+			"entries": [
+				"当你施放{@i shillelagh}时，你现在可以用该法术针对任何武器。如果该武器的伤害模子已经是1d8或更大，那么它仍然是一样的。此外，你的shillelagh咒语的持续时间增加到24小时，并且只有在你选择结束它或者你以外的生物试图挥舞该武器时才会结束。"
+			]
+		},
+		{
+			"name": "Cloak of Feathers",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"House of Rooks"
+					]
+				}
+			],
+			"entries": [
+				"在不穿戴盔甲或使用盾牌时，你的交流等于10+你的灵巧修饰+你的智力修饰。"
+			]
+		},
+		{
+			"name": "Commander's Call",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"House of Kings"
+					]
+				}
+			],
+			"entries": [
+				"你可以在不使用法术槽的情况下施展该法术（%0%）。你可以使用这个能力的次数等于你的智力修改器。当你长时间休息时，你会重新获得所有已消耗的使用次数。"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"_": [
+							"command"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Extended Range",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"entries": [
+				"当你施展一个需要远程法术攻击的暖男咒语时，该咒语的范围会翻倍。"
+			]
+		},
+		{
+			"name": "Field Medic",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"House of Bishops"
+					]
+				}
+			],
+			"entries": [
+				"你学会了咒语（%0%）和法术（%1%）。此外，当你对生命值为0的生物施展{@i spare the dying}时，目标会治疗1个生命值，并获得与你等级相等的临时生命值，持续1分钟。"
+			]
+		},
+		{
+			"name": "Flexible Range",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"entries": [
+				"当你在近战中施放一个需要远程法术攻击的暖男咒语时，你在攻击卷上没有劣势。此外，当你施展一个需要近战法术攻击的暖男咒语时，你可以将其作为一个范围为30英尺的远程法术攻击。"
+			]
+		},
+		{
+			"name": "Knight's Ward",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"House of Knights"
+					]
+				}
+			],
+			"entries": [
+				"你可以使用你的额外行动来获得对你所选择的非魔法打击、穿刺或切割伤害的抵抗，直到你下一回合开始。"
+			]
+		},
+		{
+			"name": "Mystical Armor",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"entries": [
+				"你可以在不使用法术槽的情况下施展该法术（%0%）。"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"_": [
+							"mage armor"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Mystical Athlete",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"quickstep and springheel cantrips"
+					]
+				}
+			],
+			"entries": [
+				"当你施展{@spell quickstep|MFOV:WM}咒语时，你的速度增加20英尺，而不是10英尺。当你施放{@spell springheel|MFOV:WM}的咒语时，你的跳跃距离增加20英尺，而不是10英尺。当你施放其中一个咒语时，你可以立即施放另一个咒语（不需要行动）。"
+			]
+		},
+		{
+			"name": "Pawn Storm",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"House of Pawns"
+					]
+				}
+			],
+			"entries": [
+				"你的移动速度增加10英尺。此外，在第一轮战斗中，你的移动速度会增加一倍。"
+			]
+		},
+		{
+			"name": "Phantom Hookshot",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"phantrom grpnel"
+					]
+				}
+			],
+			"entries": [
+				"你可以把{@spell phantom grapnel|MFOV:WM}作为一个额外动作来施放。如果你这样做，它的范围会减少到60英尺。此外，被你的幻影弹片击中的生物和物体会受到1d6力的伤害。"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"phantom grapnel|mfov:wm"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Blasting Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Force Dart",
+						"Mystical Blade"
+					]
+				}
+			],
+			"entries": [
+				"当你用温热法师的咒语对一个生物造成武力伤害时，你可以将该生物在一条直线上推到离你最远的10英尺处。"
+			]
+		},
+		{
+			"name": "Booming Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Thundering Blade"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你用温热法师的咒语对一个生物造成雷霆伤害时，你可以迫使该生物的力量救赎成功或被击倒在地。"
+			]
+		},
+		{
+			"name": "Caustic Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Acid Splash",
+						"Acidic Blade"
+					]
+				}
+			],
+			"entries": [
+				"当你用温热术对一个生物造成酸性伤害时，该生物必须做一个灵巧的救赎动作，否则在下一回合开始时将再次受到一半的伤害。一个生物每回合只能被这个能力影响一次。"
+			]
+		},
+		{
+			"name": "Electrified Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Shocking Grasp",
+						"Storming Blade"
+					]
+				}
+			],
+			"entries": [
+				"当你用温热术对一个生物造成闪电伤害时，你可以强迫该生物在宪法规定的救赎动作上获得成功，否则就会被击晕，直到你下一回合开始。你可以使用这个能力的次数等于你的智力修饰值。当你完成一个长时间的休息时，你会恢复所有已消耗的使用。"
+			]
+		},
+		{
+			"name": "Entropic Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Chill Touch"
+					]
+				}
+			],
+			"entries": [
+				"当你用温暖术对一个生物造成坏死伤害时，它必须做一个宪法救赎动作，否则就会获得一级的疲惫。在受到这个法术的影响后，生物会对它免疫，直到它完成一个长时间的休息。"
+			]
+		},
+		{
+			"name": "Explosive Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Fire Bolt",
+						"Molten Blade"
+					]
+				}
+			],
+			"entries": [
+				"当你用温热术对一个生物造成火焰伤害时，除了你自己和目标5英尺范围内的每个生物都必须做一个灵巧的蓄力动作，否则将受到一半的火焰伤害。在一个以上的炸药爆炸范围内的生物只受一次影响。一个生物每回合只能被这个能力影响一次。"
+			]
+		},
+		{
+			"name": "Frigid Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Glacial Blade",
+						"Ray of Frost"
+					]
+				}
+			],
+			"entries": [
+				"当你用温热术对一个生物造成寒冷伤害时，该生物必须做一个宪法救赎动作。如果救赎失败，在你下一回合开始之前，它不能进行一次以上的近战或远程攻击。一个生物每回合只能被这个能力影响一次。"
+			]
+		},
+		{
+			"name": "Improved Martial Training",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"feature": [
+						"House of Kings",
+						"House of Knights",
+						"House of Pawns"
+					]
+				}
+			],
+			"entries": [
+				"每当你在你的回合中采取攻击行动时，你可以攻击两次，而不是一次。"
+			]
+		},
+		{
+			"name": "Mystical Weaponmaster",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"feature": [
+						"magic daggers and mystical blade cantrips"
+					]
+				}
+			],
+			"entries": [
+				"当你使用你的行动来投掷由（%0%）咒语召唤的武器时，你可以使用你的额外行动来额外投掷一把匕首。",
+				"此外，{@spell mystical blade|MFOV:WM}咒语的范围增加到10英尺。"
+			]
+		},
+		{
+			"name": "Promotion",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmage",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"feature": [
+						"House of Pawms"
+					]
+				}
+			],
+			"entries": [
+				"当你学习这个技巧时，请选择另一个暖气片屋。你可以学习该房屋可用的招数。"
+			]
+		},
+		{
+			"name": "Rook's Perch",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"feature": [
+						"House of Rooks"
+					]
+				}
+			],
+			"entries": [
+				"你的基本移动速度增加10英尺，并获得与你正常移动速度相等的攀爬速度。"
+			]
+		},
+		{
+			"name": "Select Fire",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					}
+				}
+			],
+			"entries": [
+				"当你施展一个需要法术攻击卷的温热法术时，你可以选择多个目标并对每个目标进行法术攻击卷。你的目标生物数量与咒语造成的伤害点数相等，并将你的伤害点数分给你的目标，每个目标至少有一个伤害点数。",
+				"例如，（%0%）造成3d10的伤害。你可以选择以三个生物为目标，对每个生物造成1d10的伤害，或者你可以以两个生物为目标，对一个生物造成1d10的伤害，对另一个生物造成2d10的伤害，或者你可以针对一个生物造成3d10的伤害。"
+			]
+		},
+		{
+			"name": "Skilled Hand",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Mage Hand"
+					]
+				}
+			],
+			"entries": [
+				"当你施展{@spell mage hand}咒语时，你可以用它来挥舞武器。这只手可以握住任何你精通的、不重的武器。你必须有与正常情况下挥舞这只手的武器一样多的空闲双手，否则武器就会掉在地上。在你指挥它移动或攻击之前，武器会在原地盘旋和旋转。",
+				"当你在你的回合中采取攻击行动时，你可以放弃你自己的一次或多次攻击，让这只手去攻击它所及范围内的一个目标。你使用你的智力修改器，而不是力量或灵巧，来进行武器的攻击和伤害卷。如果你放弃了所有的攻击，你可以使用你的额外行动来用这只手进行一次额外的攻击。",
+				"在你的回合中，你可以在不使用动作的情况下移动这只手，最多可以移动30英尺，达到你的法师之手咒语的最大范围。"
+			]
+		},
+		{
+			"name": "Venomous Cantrip",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 5
+					},
+					"spell": [
+						"Poison Spray"
+					]
+				}
+			],
+			"entries": [
+				"当你用温热术对一个生物造成毒药伤害时，你可以强迫该生物进行宪法救赎，否则会获得中毒状态，直到你下一回合开始。你可以使用这个能力的次数等于你的智力修饰值。当你完成一个长时间的休息时，你会恢复所有已消耗的使用。"
+			]
+		},
+		{
+			"name": "Bishop's Maneuver",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 10
+					},
+					"feature": [
+						"House of Bishops"
+					]
+				}
+			],
+			"entries": [
+				"你可以采取{@action Disengage}行动作为奖励行动，当你采取脱离行动时，你的移动速度会加倍。"
+			]
+		},
+		{
+			"name": "Castle",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 10
+					},
+					"feature": [
+						"House of Rooks"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以神奇地与你周围100英尺内的一个自愿的小型或中型生物交换位置，你们每个人都在一阵羽毛中消失，然后出现在对方之前的位置。"
+			]
+		},
+		{
+			"name": "Flurry of Daggers",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 10
+					},
+					"spell": [
+						"Magic Daggers"
+					]
+				}
+			],
+			"entries": [
+				"当你使用一个动作来投掷由你的魔法匕首咒语召唤的武器时，你可以额外投掷一把匕首。"
+			]
+		},
+		{
+			"name": "Knight's Shield",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 10
+					},
+					"spell": [
+						"Force Buckler"
+					],
+					"feature": [
+						"House of Knights"
+					]
+				}
+			],
+			"entries": [
+				"当你施展{@spell force buckler|MFOV:WM}时，它为你的AC增加+3而不是+2。"
+			]
+		},
+		{
+			"name": "Pawn's Sacrifice",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmage",
+							"source": "MFOV:WM"
+						},
+						"level": 10
+					},
+					"feature": [
+						"House of Pawns"
+					]
+				}
+			],
+			"entries": [
+				"当一个在你30英尺范围内的友好生物被近战或远程攻击击中时，你可以使用你的反应移动到该生物旁边，并成为攻击的目标，有可能导致攻击失败。一旦你使用了这一招，你必须在完成一个短暂或长时间的休息后才能再次这样做。"
+			]
+		},
+		{
+			"name": "Queen's Charge",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmage",
+							"source": "MFOV:MW"
+						},
+						"level": 10
+					},
+					"feature": [
+						"House of Kings"
+					]
+				}
+			],
+			"entries": [
+				"作为一个动作，你可以向你能看到的生物移动最多三倍于你的移动速度，你可以对它进行一次攻击或施放一个需要近身攻击的暖男咒语。你可以在骑马时执行这个动作。"
+			]
+		},
+		{
+			"name": "Unerring Strike",
+			"source": "MFOV:WM",
+			"featureType": [
+				"T:WM"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"class": {
+							"name": "Warmarge",
+							"source": "MFOV:WM"
+						},
+						"level": 10
+					},
+					"spell": [
+						"True Strike"
+					]
+				}
+			],
+			"entries": [
+				"当你施展{@spell true strike}时，你可以在相当于你智力修正值的回合内专注于它。当你保持对（1%）的专注时，你在每一轮对目标进行的第一次攻击卷中获得优势。"
+			]
+		},
+		{
+			"name": "Arcane Ripose",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当一个生物的近身攻击没有击中你时，你可以使用你的反应并消耗一个主控模子来施放一个针对该生物的咒语。"
+			]
+		},
+		{
+			"name": "Check",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你用法术攻击击中一个生物时，你可以花费一个主控模子来迫使该生物远离你。你在攻击的伤害卷上加上主控模子，而目标必须做一个魅力拯救动作。如果救赎失败，目标必须立即使用它的反应（如果有的话），以最多一半的速度直接离开你。"
+			]
+		},
+		{
+			"name": "Checkmate",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"作为你回合中的额外行动，你可以指挥你的一个同伴进行攻击。当你这样做时，选择一个能看到或听到你的友好生物，并消耗一个精通模子。该生物可以立即使用它的反应来进行一次武器攻击，或者施放一个需要攻击卷的咒语，并将精通模子加入攻击的伤害卷。"
+			]
+		},
+		{
+			"name": "Decoy",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你用武器或法术攻击命中时，你可以消耗一个主控模子，并使用一个额外动作将你自己（以及你的坐骑，如果适用的话）传送到离你所击中的生物最多一半的移动速度。"
+			]
+		},
+		{
+			"name": "Distracting Blast",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你用法术攻击击中一个生物时，你可以消耗一个精通模子来分散该生物的注意力，给你的盟友一个机会。你可以将这个主控模子加入到攻击的伤害卷中。如果攻击是在你的下一个回合开始前进行的，那么由你以外的攻击者对目标进行的下一次攻击卷有优势。"
+			]
+		},
+		{
+			"name": "Feinting Blast",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"你可以消耗一个主控模子，并在你的回合中使用一个额外行动来佯攻，选择一个在你5英尺内的生物作为你的目标。你在对该生物的下一次攻击卷中具有优势。如果该次攻击命中，则在该次攻击的伤害卷中加入精通模子。"
+			]
+		},
+		{
+			"name": "Impeccable Tactics",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"在你的回合中，你可以使用一个额外的行动并消耗一个主控模子来支持你的一个同伴的决心。当你这样做时，选择一个能看到或听到你的友好生物。该生物获得的临时命中率等于主控模子的卷数+你的智力修正值。"
+			]
+		},
+		{
+			"name": "King's Order",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你用法术攻击击中一个生物时，你可以消耗一个精通模子来操纵你的一个同伴到一个更有利的位置。你在攻击的伤害卷上加上精通模子，并选择一个能看到或听到你的友好生物。该生物可以使用它的反应来移动到它的一半速度，而不会引起来自你攻击目标的机会攻击。"
+			]
+		},
+		{
+			"name": "Opening Move",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你在你的回合中采取攻击行动时，你可以花费一个主控模子来加倍你的移动速度，直到你下一回合开始。"
+			]
+		},
+		{
+			"name": "Parry",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当另一个生物用近战武器或法术攻击伤害你时，你可以使用你的反应并消耗一个主控模子来减少你的主控模子上滚动的数字+你的智力修正值的伤害。"
+			]
+		},
+		{
+			"name": "Precision Attack",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你对一个生物进行法术攻击卷时，你可以消耗一个主控模子将其加入卷中。你可以在做出攻击卷之前或之后使用这个动作，但在攻击的任何效果被应用之前。"
+			]
+		},
+		{
+			"name": "Queen's Gambit",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当另一个生物用近战或远程攻击伤害你时，你可以使用你的反应并消耗一个主控模子来施放一个针对该生物的咒语。"
+			]
+		},
+		{
+			"name": "Stalemate",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你用近战武器或法术攻击击中一个生物时，你可以消耗一个精通模子来尝试用奥术能量带抓取它。在你的抓捕检定中加入精通模子：如果你成功了，你和你的目标都会被限制住，直到你结束抓捕或者该生物挣脱。"
+			]
+		},
+		{
+			"name": "Stonewall Attack",
+			"source": "MFOV:WM",
+			"featureType": [
+				"M:WM"
+			],
+			"entries": [
+				"当你用法术攻击击中一个生物时，你可以消耗一个主控模子将该生物固定在原地。目标必须在力量救赎中成功，否则就会被束缚，直到你下一回合开始。"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 1,
+			"entries": [
+				"在1级的时候，你开始学习简单而有力的法术，这也是暖男们所熟知的品牌。",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"在1级时，你从暖男法术列表中学习3个咒语。在更高的等级，你可以学习你所选择的额外的暖场咒语，如暖场表已知的咒语栏所示。",
+						"此外，当你在这个等级中获得一个级别时，你可以选择一个你所知道的温热法师咒语，并用另一个温热法师咒语来代替它。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"智力是你的法术能力，用于你的温热法术，因为你通过学习和背诵来学习你的法术。每当法术提到你的法术能力时，你就会使用你的智力。此外，在设定你所施展的温热法术的蓄力DC时，以及在使用温热法术进行攻击时，你会使用你的智力修饰。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"你可以使用一个奥术焦点作为你的暖场法术的施法焦点。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Initiation",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 1,
+			"entries": [
+				"暖炉学院招收来自各行各业的学生，但只训练那些对魔法有一定天赋的人。在1级的时候，请从下列地方选择你第一次遇到魔法火花的地方。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Scholar",
+							"entries": [
+								"你通过学习和练习学会了你的法术和技能，可能是在学校或在大师的指导下。你有一本法术书，上面开始刻有你选择的两个一级法术，这些法术有任何等级的法术列表中的仪式标签。拿着你的法术书，你可以把选择的法术作为仪式来施放。",
+								"在你的冒险中，你可以将其他的仪式性法术加入你的法术书。当你发现这样的咒语时，如果该咒语的等级等于或小于你的暖气师等级的一半（四舍五入），并且你能抽出时间来抄写该咒语，你就可以把它加入书中。每一级的咒语，抄写过程需要2个小时，并且需要花费50戈比来购买刻写所需的稀有墨水。",
+								"此外，你还学会了{@spell prestidigitation}和{@spell dancing lights}的咒语，这些咒语不计入你知道的咒语总数。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sage",
+							"entries": [
+								"你在修道院、教堂或尼姑庵中学习魔法，或许是作为德鲁伊圈子的一部分。你学会了{@spell guidance}、{@spell light}和{@spell sacred flame}的咒语，这些咒语不计入你所知道的咒语总数，以及一个一级牧师或德鲁伊的法术，你可以不使用法术槽而施放一次。当你完成一次长时间的休息时，你会重新获得施放这个法术的能力。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Savant",
+							"entries": [
+								"你的力量要么是与生俱来的，要么是通过神奇的偶然事件继承的。不管是哪种情况，你都比别人训练得少，但你的魔法却以惊人的速度流露出来。你从巫师法术列表中选择学习两个额外的咒语，这些咒语不计入你所知道的咒语总数，而且当你在法术攻击卷上掷出关键一击时，你会造成一个额外的伤害。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Fighting Style",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 1,
+			"entries": [
+				"暖男学院教导人们，魔法是最纯粹的武器，可以像其他武器一样轻松挥舞。在1级时，从以下战斗方式中选择一种。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Blaster",
+							"entries": [
+								"当你施展暖男咒语时，你可以将它的伤害模子增加一步，最多到d12。一个最初造成1d12伤害的咒语会在每个伤害模子上造成额外的1d4伤害。(模子的进展如下：d4→d6→d8→d10→d12。)"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Deflector",
+							"entries": [
+								"当你有一只手空闲时，一个生物用法术攻击或远程武器攻击你，你可以用你的反应将你的熟练度加到你的AC上，有可能导致攻击失败。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Resistive",
+							"entries": [
+								"当你穿着轻型或中型盔甲或受到{spell mage armor}法术的影响时，你会获得一个+1的交流奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sniper",
+							"entries": [
+								"当进行远程法术攻击时，你的攻击卷获得+2的奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Striker",
+							"entries": [
+								"当你为你所施展的需要近战攻击的巫师法术的伤害骰子掷出1或2时，你可以重新掷骰子，并且必须使用新的骰子，即使新的骰子是1或2。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Warmage Edge",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 2,
+			"entries": [
+				"从2级开始，每回合一次，当你用温热法术造成伤害时，你可以在伤害卷上加上你的智力修正值+你温热法术等级的一半（四舍五入）。"
+			]
+		},
+		{
+			"name": "Warmage Trick",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 2,
+			"entries": [
+				"从2级开始，你会学习一种暖男技巧，一种改变你战斗、移动和施法方式的特殊技巧。你在2级时学习2个技巧，在5级、9级、13级和17级时额外学习2个技巧。",
+				"此外，当你在这门课上获得一个等级时，你可以用另一个你符合先决条件的招数来代替你所知道的招数。"
+			]
+		},
+		{
+			"name": "Warmage House",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 3,
+			"entries": [
+				"温暖师学院将其学生分为不同的院系，教授不同的技能、能力和技巧。在达到第三级时，你可以从以下方面选择你的宫位。卒、马、主教、车、王。你在3级时获得你的第一个家族能力，并在7级、10级、15级和18级时获得一个额外的能力。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 4,
+			"entries": [
+				"当你达到4级、8级、12级、16级和18级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Warmage Tactics",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 6,
+			"entries": [
+				"在6级时，每当你或你10英尺范围内的友好生物必须做一个拯救动作时，该生物可以使用你的智力修改器和拯救动作的熟练度奖励，而不是它自己的奖励来做这个动作。",
+				"18级时，该效果的范围增加到30英尺。"
+			]
+		},
+		{
+			"name": "Warmage House feature",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 7,
+			"entries": []
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 8,
+			"entries": [
+				"当你达到8级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Warmage House feature",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 10,
+			"entries": []
+		},
+		{
+			"name": "Commander's Mount",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 11,
+			"entries": [
+				"从11级开始，你被授予访问暖男们的神秘马厩的权利。你学会了法术（%0%），并且可以在不使用法术槽的情况下施放它。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Warmage's Eye",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 14,
+			"entries": [
+				"在14级时，你可以在不消耗一个法术槽的情况下施展该法术（%0%）。"
+			]
+		},
+		{
+			"name": "Warmage House feature",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 15,
+			"entries": []
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Warmage House feature",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 18,
+			"entries": []
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以将你选择的一项能力得分提高2分，或者将你选择的两项能力得分提高1分。"
+			]
+		},
+		{
+			"name": "Master Warmage",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"level": 20,
+			"entries": [
+				"在20级的时候，你达到了你的巫术能力的顶峰。每当你施放一个暖男咒语时，你可以使用你的额外行动来立即施放另一个咒语。"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "House of Bishops",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Bishop",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"entries": [
+				"主教院只专注于施法，将温热学原理扩展到更复杂的魔法。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Warmage|MFOV:WM|Bishop|MFOV:WM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Study|Warmage|MFOV:WM|Bishop|MFOV:WM|3"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"entries": [
+				"三级时，你获得了施展比咒语更有效的法术的能力。",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"主教施法表显示了你有多少个法术槽来施展你的一级及以上的法术。要施展其中一个法术，你必须消耗一个该法术等级或更高的法术槽。当你完成一次长时间的休息时，你会重新获得所有消耗的法术槽。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st-Level or Higher",
+					"entries": [
+						"你会三个自选的一级巫师法术，其中两个必须从巫师法术列表中的施法和唤醒法术中选择。",
+						"主教法术表的 \"已知法术 \"一栏显示了你何时学习更多1级或以上的巫师法术。除了在8级和14级学到的法术外，这些法术中的每一个都必须是你选择的法术或唤醒法术，并且必须是你有法术槽的等级。",
+						"每当你在这个等级中获得一个等级，你可以用你在巫师法术列表中选择的另一个法术替换你所知道的一个巫师法术。新的法术必须是你有法术槽的等级，而且必须是法术或召唤法术，除非你替换的是你在8级或14级获得的法术。"
+					]
+				}
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Bishop",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Arcane Study",
+			"entries": [
+				"在3级的时候，你可以从奥术、历史、医学、调查和宗教中选择任意两个技能。如果你之前没有该技能，你将获得该技能的熟练度，如果你已经有该技能的熟练度，你将获得双倍的熟练度奖励。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Bishop",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Mystical Guardian",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Bishop",
+			"subclassSource": "MFOV:WM",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你学会了（%0%）的法术，并可以将其作为一种仪式施放。该法术不计入你已知的法术数量。",
+				"当你施法时，你可以为你的熟人选择一种正常的形态，或以下一种特殊形态：{@creature imp}、{@creature pseudodragon}、{@creature blink dog}或{@creature wolf}。",
+				"此外，当你采取攻击行动时，你可以放弃你自己的一次攻击，让你的熟人进行一次自己的攻击。"
+			]
+		},
+		{
+			"name": "Siege Casting",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Bishop",
+			"subclassSource": "MFOV:WM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级时，每回合一次，当你用温热法术对一个生物或物体造成伤害时，你会造成额外的1d8武力伤害。此外，当你在你的回合中施展一个范围超过5英尺的温热法术时，你可以使用一个额外的行动来使该法术的范围扩大三倍。"
+			]
+		},
+		{
+			"name": "Arcane Sculpting",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Bishop",
+			"subclassSource": "MFOV:WM",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从15级开始，当你施展影响其他你能看到的生物的暖场法术时，你可以选择与你智力修正值相等的数量。被选择的生物会自动成功地对该法术进行蓄力，如果它们在蓄力成功的情况下通常会受到一半的伤害，那么它们不会受到伤害。"
+			]
+		},
+		{
+			"name": "Arcane Dominance",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Bishop",
+			"subclassSource": "MFOV:WM",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"18级时，你学会了一个强大的魔法技巧。选择一个你知道的一级巫师法术。你可以在这个法术的最低等级时施放它而不需要消耗一个法术槽。"
+			]
+		},
+		{
+			"name": "House of Kings",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"entries": [
+				"国王之家培训暖男军队的中尉和将军，专门研究战术和战略。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Warmage|MFOV:WM|King|MFOV:WM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Mastery|Warmage|MFOV:WM|King|MFOV:WM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Trusted Advisor|Warmage|MFOV:WM|King|MFOV:WM|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"三级时，你获得对中型盔甲、盾牌和长矛的熟练度。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Arcane Mastery",
+			"entries": [
+				"当你在3级选择这个原型时，你会学习由特殊骰子推动的演习，这些骰子被称为精通骰子。",
+				{
+					"type": "entries",
+					"name": "Maneuvers.",
+					"entries": [
+						"你学习三个自选动作，从国王动作列表中选择。如果一个演习造成额外的伤害，该伤害是你选择的酸、冷、火或闪电伤害。",
+						"你在第7、10、15和18级的时候可以额外学习两个你选择的演习。每次你学习新动作时，你也可以用一个不同的动作代替你所知道的动作。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mastery Dice.",
+					"entries": [
+						"你有四颗精通的骰子，都是D8。当你使用它的时候，就会消耗掉一个大师级的骰子。当你完成短时或长时的休息时，你会重新获得你所有已消耗的精通骰子。",
+						"你在7级时获得另一个主控模子，在15级时再获得一个。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws.",
+					"entries": [
+						"当一个演习要求用蓄力来抵抗该演习的效果时，使用你的法术蓄力DC。"
+					]
+				}
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Trusted Advisor",
+			"entries": [
+				"在3级时，当你进行欺骗、恐吓和劝说检查时，你可以用你的智力修饰来代替你的魅力修饰。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Lead from the Front",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 7,
+			"entries": [
+				"从第七级开始，你和100英尺内能看到你的盟友都不会受到粗糙地形的影响。"
+			]
+		},
+		{
+			"name": "Improved Arcane Mastery",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 10,
+			"entries": [
+				"在10级时，你的精通骰子会变成D10。在18级时，它们会变成D12。"
+			]
+		},
+		{
+			"name": "Relentless",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你掷出主动权并且没有剩余的掌握骰子时，你会重新获得一个掌握骰子。"
+			]
+		},
+		{
+			"name": "Improved Arcane Mastery",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "King",
+			"subclassSource": "MFOV:WM",
+			"level": 18,
+			"entries": [
+				"18级时，你的精通骰子变成了D12。"
+			]
+		},
+		{
+			"name": "House of Knights",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Knight",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"entries": [
+				"骑士家族有着悠久的传统，他们将近战和剑术与暖男的简单法术融合在一起。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Warmage|MFOV:WM|Knight|MFOV:WM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knight's Armory|Warmage|MFOV:WM|Knight|MFOV:WM|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"三级时，你获得对中型盔甲、盾牌和武术武器的熟练度。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Knight",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Knight's Armory",
+			"entries": [
+				"三级时，你可以进入骑士之家的军械库，这是一个存放学院武器库的异次元空间。你可以使用你的额外行动从军械库中召唤一个你选择的简单或武术武器到你的空手中。任何从军械库中召唤出来的武器都算作是魔法武器，以克服对非魔法攻击和伤害的抵抗和免疫。需要弹药的武器会被召唤出来，并带有一个箭筒或箱子和50个合适的弹药。",
+				"从军械库中召唤出来的武器如果离你超过5英尺，就会消失1分钟，而弹药在使用后立即消失。如果你召唤一个新的武器，如果你使用一个动作来解除你的武器，或者如果你死亡，它也会消失。",
+				"你可以将个人的魔法武器存放在军械库中，只有你自己可以访问，只要在你持有武器的时候，在短暂或长时间的休息中进行一个特殊的仪式。然后你可以把武器放回军械库，并在此后的任何时候把它召唤回来。如果你死亡，在不同的武器上进行1小时的仪式，或者你使用1小时的仪式来打破你对它的束缚，那么该武器就会从仓库中移除。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Knight",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Knight's Flurry",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Knight",
+			"subclassSource": "MFOV:WM",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"从第七级开始，当你用行动施展咒语时，你可以用你的军械库武器作为额外行动进行一次攻击。"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Knight",
+			"subclassSource": "MFOV:WM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级时，你采用一种战斗风格作为你的专长。从以下选项中选择一个。你不能多次选择一种格斗风格的选项，即使你后来可以再次选择。",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Dueling",
+							"entries": [
+								"当你单手挥舞近战武器而没有其他武器时，你使用该武器的伤害卷获得+2奖励。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Great Weapon Fighting",
+							"entries": [
+								"当你用双手挥舞的近战武器进行攻击时，你可以重新掷骰子，并且必须使用新的骰子，即使新的骰子是1或2。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Two-Weapon Fighting",
+							"entries": [
+								"当你进行双武器战斗时，你可以在第二次攻击的伤害上加上你的能力修改值。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Knight's Maneuver",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Knight",
+			"subclassSource": "MFOV:WM",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在15级时，你可以用你的全部行动来传送，最多可以传送一半的移动速度。"
+			]
+		},
+		{
+			"name": "Master Strike",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Knight",
+			"subclassSource": "MFOV:WM",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"18级时，你学会了用奥术能量不断充斥你的武器。当你完成短时或长时休息时，选择冷、火或雷电伤害。你用近战武器进行的攻击会造成所选类型的额外1d6伤害。在你的回合中，当你使用你的行动来施放一个温暖的咒语时，你可以使用一个额外的行动来改变你的额外伤害类型为该咒语的相同伤害类型。"
+			]
+		},
+		{
+			"name": "House of Pawns",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Pawn",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"entries": [
+				"棋子之家训练部队的前线，构成学院军队的防御堡垒。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Warmage|MFOV:WM|Pawn|MFOV:WM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fortress Defense|Warmage|MFOV:WM|Pawn|MFOV:WM|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"三级时，你获得对中型盔甲、重型盔甲和盾牌的熟练度。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Pawn",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Fortress Defense",
+			"entries": [
+				"从第三级开始，你可以在你的回合中使用一个动作来召唤一个防御性的力墙。在你周围15英尺内选择一个空间。从该点开始，出现与你智力修饰值相等的若干半透明的力墙，它们连接起来形成一道连续的墙。每块板子有5英尺宽，4英尺高，1/4英寸厚，其高度足以为它后面的任何生物提供一半的掩护。生物不能穿过墙壁，但它们可以跳过它。这堵墙会持续1分钟，或者直到你将其解除。一旦你使用这个能力，你必须在短期或长期休息后才能再次使用。",
+				"你的墙会随着你等级的提高而提高，如下图所示。",
+				{
+					"type": "list",
+					"items": [
+						"在7级时，在你的墙后面做掩护的生物对会让它们不由自主地移动的效果免疫。",
+						"在10级时，你的墙足够大，可以提供四分之三的掩护。",
+						"15级时，你可以在两次休息之间额外使用这个能力。",
+						"18级时，范围和板块数量增加一倍（30英尺和两倍于你的智力修正值）。"
+					]
+				}
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Pawn",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Defensive Casting",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Pawn",
+			"subclassSource": "MFOV:WM",
+			"level": 7,
+			"entries": [
+				"从第七级开始，即使你的一只手或两只手拿着武器或盾牌，你也可以执行一个法术的体质成分，当一个生物挑起你的机会攻击时，你可以用你的反应来施放一个只针对该生物的咒语。"
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Pawn",
+			"subclassSource": "MFOV:WM",
+			"level": 10,
+			"entries": [
+				"10级时，你采用一种战斗风格作为你的专长。从以下选项中选择一个。你不能多次选择一种格斗风格的选项，即使你后来可以再次选择。",
+				{
+					"type": "entries",
+					"name": "Defensive",
+					"entries": [
+						"当你穿戴盔甲时，你获得一个+1的AC奖励。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Protection",
+					"entries": [
+						"当一个你能看到的生物攻击一个你以外的、在你5英尺范围内的目标时，你可以用你的反应在攻击卷上施加不利条件。你必须挥舞着一个盾牌。"
+					]
+				}
+			]
+		},
+		{
+			"name": "En Passant",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Pawn",
+			"subclassSource": "MFOV:WM",
+			"level": 15,
+			"entries": [
+				"从15级开始，当你采取攻击行动或使用你的行动来施展需要近战攻击的咒语时，你可以使用一个额外的行动来推搡你的咒语或攻击的目标。如果你在进行这次攻击之前，立即在一条直线上移动了至少10英尺，你就会在推搡能力检查中获得优势。"
+			]
+		},
+		{
+			"name": "Impenetrable Fortress Defense",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Pawn",
+			"subclassSource": "MFOV:WM",
+			"level": 18,
+			"entries": [
+				"18级时，你学会了召唤更强大、更令人印象深刻的墙壁。你学会了{@spell wall of fire}、{@spell wall of force}、{@spell wall of ice}和{@spell wall of stone}的法术，并且可以在不使用法术槽的情况下各施放一次。一旦你施展了这些法术中的一个，你必须完成一个长时间的休息才能再次施展。"
+			]
+		},
+		{
+			"name": "House of Rooks",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Rook",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"entries": [
+				"鲁克斯家族训练有效管理军队所需的间谍、刺客和秘密特工。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Warmage|MFOV:WM|Rook|MFOV:WM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rook Strike|Warmage|MFOV:WM|Rook|MFOV:WM|3"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"在3级时，你获得对手弩、剑客、短弓、短剑、鞭子、盗贼工具和隐身技能的熟练度。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Rook",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Rook Strike",
+			"entries": [
+				"从3级开始，每回合一次，如果你在攻击卷上有优势，你可以对你击中的一个生物造成额外的1d4伤害。攻击必须使用精巧的武器、远程武器或温热法师的咒语。",
+				"如果目标的另一个敌人在它的5英尺范围内，该敌人没有丧失能力，并且你在攻击卷上没有劣势，你就不需要在攻击卷上有优势。",
+				"额外的伤害量会随着你在这个等级中的等级提升而增加，如Rook Strike表格中所示。在10级时，你可以选择造成冷、火或闪电伤害，在15级时，你可以选择用车击造成武力伤害。"
+			],
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Rook",
+			"subclassSource": "MFOV:WM",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Rook's Flight",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Rook",
+			"subclassSource": "MFOV:WM",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，你可以采取冲刺或隐藏行动作为额外行动。"
+			]
+		},
+		{
+			"name": "Rook's Caw",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Rook",
+			"subclassSource": "MFOV:WM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级的时候，如果你之前没有，你获得了（%0%）的咒语。在施法时，你可以以你认识但看不见的生物为目标，不受范围限制，前提是该生物与你在同一平面上，并且你有他们的个人物品（比如一个标志、一个信物或一封信）。"
+			]
+		},
+		{
+			"name": "Rook's Wings",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Rook",
+			"subclassSource": "MFOV:WM",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"15级时，你获得了以正常移动速度飞行的能力。你必须在坚实的地面上开始和结束你的运动，否则你会坠落。"
+			]
+		},
+		{
+			"name": "Rook's Flash",
+			"source": "MFOV:WM",
+			"className": "Warmage",
+			"classSource": "MFOV:WM",
+			"subclassShortName": "Rook",
+			"subclassSource": "MFOV:WM",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在18级时，你可以从你的敌人眼中消失，出现在他们身后并攻击他们最脆弱的地方。作为一个行动，你可以传送到100英尺内的生物旁边，并进行一次近战武器攻击或使用需要近战或远程法术攻击的咒语。你在攻击卷上获得优势。",
+				"一旦你使用这个能力，你就不能再使用它，直到你完成一个短期或长期休息。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "House of Bishops",
+			"shortName": "Bishop",
+			"source": "MFOV:WM",
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "House of Bishops",
+							"source": "MFOV:WM"
+						}
+					],
+					"colLabels": [
+						"{@filter Spells Known|spells|class=Wizard}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						]
+					]
+				},
+				{
+					"subclasses": [
+						{
+							"name": "House of Bishops",
+							"source": "MFOV:WM"
+						}
+					],
+					"title": "Spell Slots per Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Wizard}",
+						"{@filter 2nd|spells|level=2|class=Wizard}",
+						"{@filter 3rd|spells|level=3|class=Wizard}",
+						"{@filter 4th|spells|level=4|class=Wizard}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"House of Bishops|Warmage|MFOV:WM|Bishop|MFOV:WM|3",
+				"Mystical Guardian|Warmage|MFOV:WM|Bishop|MFOV:WM|7",
+				"Siege Casting|Warmage|MFOV:WM|Bishop|MFOV:WM|10",
+				"Arcane Sculpting|Warmage|MFOV:WM|Bishop|MFOV:WM|15",
+				"Arcane Dominance|Warmage|MFOV:WM|Bishop|MFOV:WM|18"
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"className": "Warmage",
+			"classSource": "MFOV:WM"
+		},
+		{
+			"name": "House of Kings",
+			"shortName": "King",
+			"source": "MFOV:WM",
+			"subclassFeatures": [
+				"House of Kings|Warmage|MFOV:WM|King|MFOV:WM|3",
+				"Lead from the Front|Warmage|MFOV:WM|King|MFOV:WM|7",
+				"Improved Arcane Mastery|Warmage|MFOV:WM|King|MFOV:WM|10",
+				"Relentless|Warmage|MFOV:WM|King|MFOV:WM|15",
+				"Improved Arcane Mastery|Warmage|MFOV:WM|King|MFOV:WM|18"
+			],
+			"className": "Warmage",
+			"classSource": "MFOV:WM"
+		},
+		{
+			"name": "House of Knights",
+			"shortName": "Knight",
+			"source": "MFOV:WM",
+			"subclassFeatures": [
+				"House of Knights|Warmage|MFOV:WM|Knight|MFOV:WM|3",
+				"Knight's Flurry|Warmage|MFOV:WM|Knight|MFOV:WM|7",
+				"Fighting Style|Warmage|MFOV:WM|Knight|MFOV:WM|10",
+				"Knight's Maneuver|Warmage|MFOV:WM|Knight|MFOV:WM|15",
+				"Master Strike|Warmage|MFOV:WM|Knight|MFOV:WM|18"
+			],
+			"className": "Warmage",
+			"classSource": "MFOV:WM"
+		},
+		{
+			"name": "House of Pawns",
+			"shortName": "Pawn",
+			"source": "MFOV:WM",
+			"subclassFeatures": [
+				"House of Pawns|Warmage|MFOV:WM|Pawn|MFOV:WM|3",
+				"Defensive Casting|Warmage|MFOV:WM|Pawn|MFOV:WM|7",
+				"Fighting Style|Warmage|MFOV:WM|Pawn|MFOV:WM|10",
+				"En Passant|Warmage|MFOV:WM|Pawn|MFOV:WM|15",
+				"Impenetrable Fortress Defense|Warmage|MFOV:WM|Pawn|MFOV:WM|18"
+			],
+			"className": "Warmage",
+			"classSource": "MFOV:WM"
+		},
+		{
+			"name": "House of Rooks",
+			"shortName": "Rook",
+			"source": "MFOV:WM",
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "House of Rooks",
+							"source": "MFOV:WM"
+						}
+					],
+					"title": "Rook Strike",
+					"colLabels": [
+						"Bonus Damage"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							"{@dice 1d4}"
+						],
+						[
+							"{@dice 1d4}"
+						],
+						[
+							"{@dice 1d4}"
+						],
+						[
+							"{@dice 1d4}"
+						],
+						[
+							"{@dice 2d4}"
+						],
+						[
+							"{@dice 2d4}"
+						],
+						[
+							"{@dice 2d4}"
+						],
+						[
+							"{@dice 3d4}"
+						],
+						[
+							"{@dice 3d4}"
+						],
+						[
+							"{@dice 3d4}"
+						],
+						[
+							"{@dice 3d4}"
+						],
+						[
+							"{@dice 3d4}"
+						],
+						[
+							"{@dice 4d4}"
+						],
+						[
+							"{@dice 4d4}"
+						],
+						[
+							"{@dice 4d4}"
+						],
+						[
+							"{@dice 5d4}"
+						],
+						[
+							"{@dice 5d4}"
+						],
+						[
+							"{@dice 5d4}"
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"House of Rooks|Warmage|MFOV:WM|Rook|MFOV:WM|3",
+				"Rook's Flight|Warmage|MFOV:WM|Rook|MFOV:WM|7",
+				"Rook's Caw|Warmage|MFOV:WM|Rook|MFOV:WM|10",
+				"Rook's Wings|Warmage|MFOV:WM|Rook|MFOV:WM|15",
+				"Rook's Flash|Warmage|MFOV:WM|Rook|MFOV:WM|18"
+			],
+			"className": "Warmage",
+			"classSource": "MFOV:WM"
+		}
+	]
+}

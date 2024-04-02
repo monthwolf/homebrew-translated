@@ -1,0 +1,186 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "mfovslime",
+				"abbreviation": "MFoV",
+				"full": "Middle Finger of Vecna: Slime Domain",
+				"authors": [
+					"Middle Finger of Vecna"
+				],
+				"convertedBy": [
+					"EldritchTiefling"
+				],
+				"version": "26.8.2016",
+				"url": "https://mfov.magehandpress.com/2016/08/slime-domain.html"
+			}
+		],
+		"dateAdded": 1570823193,
+		"dateLastModified": 1591440332,
+		"_dateLastModifiedHash": "18fca4914f"
+	},
+	"subclass": [
+		{
+			"name": "Slime Domain",
+			"source": "mfovslime",
+			"shortName": "Slime",
+			"subclassFeatures": [
+				"Slime Domain|Cleric||Slime|mfovslime|1",
+				"Corrosive Touch|Cleric||Slime|mfovslime|1",
+				"Channel Divinity: Rebuke Ooze|Cleric||Slime|mfovslime|2",
+				"Secrete Slime|Cleric||Slime|mfovslime|6",
+				"Divine Strike|Cleric||Slime|mfovslime|8",
+				"Summon Cube|Cleric||Slime|mfovslime|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Slime Domain",
+			"source": "mfovslime",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Slime",
+			"subclassSource": "mfovslime",
+			"level": 1,
+			"entries": [
+				"你所崇拜的神很奇怪，几乎被人界的所有人遗忘。粘液之神通常是无名的，搅动污秽的神灵，没有庙宇，如果有崇拜者，也很少。因此，他们巨大的力量是如何产生的，这是一个谜。神学学者们推测，也许，史莱姆领域是由于其他神的浪费而自然产生的。也可能，尽管在所有可想而知的意义上，渗出物本身是没有智慧的，但它们仍然拥有某种程度的崇拜能力，因此赋予这些无名的神灵以力量。",
+				{
+					"type": "entries",
+					"name": "Slime Domain Spells",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"Cleric Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-9"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell Grease}, {@spell Ray of Sickness}"
+								],
+								[
+									"3rd",
+									"{@spell Acid Arrow}, {@spell Enlarge/Reduce}"
+								],
+								[
+									"5th",
+									"{@spell Meld into Stone}, {@spell Stinking Cloud}"
+								],
+								[
+									"7th",
+									"{@spell Blight}, {@spell Freedom of Movement}"
+								],
+								[
+									"9th",
+									"{@spell Cloudkill}, {@spell Contagion}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Cantrips|Cleric||Slime|mfovslime|1"
+				}
+			]
+		},
+		{
+			"name": "Bonus Cantrips",
+			"entries": [
+				"一级时，你学会了（%0%）和（%1%）的咒语，这些咒语对你来说算作牧师的咒语。"
+			],
+			"source": "mfovslime",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Slime",
+			"subclassSource": "mfovslime",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Corrosive Touch",
+			"source": "mfovslime",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Slime",
+			"subclassSource": "mfovslime",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"从1级开始，你对酸和毒伤害有抵抗力。",
+				"此外，当你施展一个对目标造成酸性伤害的法术时，它将受到额外的1d4酸性伤害。如果目标携带或穿戴金属盔甲或金属盾牌，它必须做一个灵巧的救赎动作。如果救赎失败，你选择的一件金属盔甲或盾牌会对其提供的攻击力产生永久的、累积的-1惩罚。降低到AC值10的盔甲或下降到+0奖励的盾牌会被摧毁。",
+				"当你达到5级({@dice 2d4})、11级({@dice 3d4})和17级({@dice 4d4})时，这种酸性伤害会增加{@dice 1d4}。"
+			]
+		},
+		{
+			"name": "Channel Divinity: Rebuke Ooze",
+			"source": "mfovslime",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Slime",
+			"subclassSource": "mfovslime",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"在第2级时，作为一个行动，你可以尝试指挥你周围30英尺内你能看到的海怪。在接下来的24小时内，或者在你再次使用这个通道神性的选项之前，这只敖包必须进行智慧救赎或服从你的命令。一个挑战等级等于或大于你的等级的敖包对这个效果免疫。",
+				"当敖包在你的指挥下时，如果它在你的60英尺范围内，你可以在你的每个回合使用一个额外的行动来精神上指挥它。你决定该生物在下一回合将采取什么行动，以及它将在哪里移动。如果不给它命令，它就不会行动。"
+			]
+		},
+		{
+			"name": "Secrete Slime",
+			"source": "mfovslime",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Slime",
+			"subclassSource": "mfovslime",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级的时候，你可以从你的皮肤和口中分泌粘液作为一个动作。在接下来的一分钟里，你对被抓捕的检查有优势，并且，当一个在你范围内的生物用近身攻击击中你时，你可以用你的反应对它造成3d6酸液伤害。"
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "mfovslime",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Slime",
+			"subclassSource": "mfovslime",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"8级时，你获得了为你的武器攻击注入神圣能量的能力。在你的每个回合中，当你用武器攻击击中一个生物时，你可以使攻击对目标造成额外的（%0%）酸液伤害。当你达到14级时，额外的伤害会增加到（%1%）。"
+			]
+		},
+		{
+			"name": "Summon Cube",
+			"source": "mfovslime",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Slime",
+			"subclassSource": "mfovslime",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"从17级开始，你可以用你的行动召唤一个（%0%）来笼罩你的敌人。在120英尺内选择一个你能看到的空间，让立方体出现。如果你将立方体召唤到一个生物的空间中，该生物会受到立方体的吞噬作用，并且在蓄力动作上处于劣势。你可以用你的 \"叱咤风云 \"功能来指挥这个立方体。",
+				"魔方的最大命中率增加了两倍，如果魔方要求救赎，它将使用你的法术救赎DC。",
+				"如果方块的命中率降至0，或在一小时后消失。在使用这个能力召唤出一个水鬼后，你不能再这样做，直到你完成一个长时间的休息。"
+			]
+		}
+	]
+}

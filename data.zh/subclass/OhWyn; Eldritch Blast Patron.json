@@ -1,0 +1,228 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "EBPatron",
+				"abbreviation": "EB",
+				"full": "Eldritch Blast Patron",
+				"authors": [
+					"/u/ohwyn"
+				],
+				"convertedBy": [
+					"Lxran#2292"
+				],
+				"version": "1.0",
+				"color": "553f95",
+				"url": "https://old.reddit.com/r/UnearthedArcana/comments/swxa48/otherworldly_patron_eldritch_blast_thats_right/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1646665836,
+		"dateLastModified": 1671646965,
+		"_dateLastModifiedHash": "7d23c0eec6"
+	},
+	"subclass": [
+		{
+			"name": "Eldritch Blast Patron",
+			"source": "EBPatron",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Eldritch Blast",
+			"page": 0,
+			"subclassFeatures": [
+				"Eldritch Blast|Warlock||Eldritch Blast|EBPatron|1",
+				"Eldritch Deflection|Warlock||Eldritch Blast|EBPatron|6",
+				"Eldritch Bombardment|Warlock||Eldritch Blast|EBPatron|10",
+				"Eldritch Cloak|Warlock||Eldritch Blast|EBPatron|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Eldritch Blast",
+			"source": "EBPatron",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "EBPatron",
+			"subclassShortName": "Eldritch Blast",
+			"page": 0,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"有些术士与古老的神灵订立契约，有些则与邪恶的魔鬼订立契约，甚至只是一把普通的会说话的剑。但你不是，你选择与形成{@spell Eldritch Blast}法术本身的噼里啪啦的能量达成协议。它是一个神，一些原始的力量，还是只是一个想法？谁知道呢？不管你是出于什么原因订立这样一个怪异的契约，你已经获得了对{@spell Eldritch Blast}法术无与伦比的掌握和理解。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eldritch Blaster|Warlock||Eldritch Blast|EBPatron|1|EBPatron"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pact Boon Option: Pact of the Blast|Warlock||Eldritch Blast|EBPatron|1|EBPatron"
+				}
+			]
+		},
+		{
+			"name": "Eldritch Blaster",
+			"source": "EBPatron",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "EBPatron",
+			"subclassShortName": "Eldritch Blast",
+			"page": 0,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"从1级开始，你对（%0%）法术的精通程度大大增强。你获得以下好处。",
+				{
+					"type": "list",
+					"items": [
+						"每当你以行动施展（%0%）时，你可以以你的额外行动再次施展它。",
+						"当你施放（%0%）时，你可以选择对攻击卷进行-5的惩罚。如果该法术命中，你会在该法术的伤害上增加+10。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact Boon Option: Pact of the Blast",
+			"source": "EBPatron",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "EBPatron",
+			"subclassShortName": "Eldritch Blast",
+			"page": 0,
+			"level": 1,
+			"header": 0,
+			"entries": [
+				"{@footnote When you select a pact boon at 3rd level, you may instead select the following option:|This feature was added because homebrew cannot modify existing site data, which the Pact Boon feature counts as.}",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Pact of the Blast|EBPatron"
+				}
+			]
+		},
+		{
+			"name": "Eldritch Deflection",
+			"source": "EBPatron",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "EBPatron",
+			"subclassShortName": "Eldritch Blast",
+			"page": 0,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"从6级开始，当你被近战攻击击中时，你可以使用你的反应施展（%0%）来试图偏转武器。当你这样做时，你从攻击中受到的伤害会被你的（%1%）的伤害所减少。",
+				"如果你把伤害降低到0，你就解除了目标的武装，迫使它放下攻击中使用的武器。"
+			]
+		},
+		{
+			"name": "Eldritch Bombardment",
+			"source": "EBPatron",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "EBPatron",
+			"subclassShortName": "Eldritch Blast",
+			"page": 0,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"从10级开始，你可以花费1个法术槽，在你的{@spell Eldritch Blast}范围内，对你能看到的一个点释放{@spell Eldritch Blast|PHB|Eldritch Blasts}的炮击。以你选择的点为中心的60英尺半径范围内的每个生物都必须做一个灵巧的蓄力动作。蓄力失败时，生物会受到{@dice 10d10}的力量伤害，蓄力成功则受到一半的伤害。",
+				"你的术士等级每超过10级，伤害增加（%0%）。"
+			]
+		},
+		{
+			"name": "Eldritch Cloak",
+			"source": "EBPatron",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "EBPatron",
+			"subclassShortName": "Eldritch Blast",
+			"page": 0,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你可以花费2个法术槽为你的身体披上一层噼啪作响的能量斗篷。你会获得以下好处，持续1分钟。",
+				{
+					"type": "list",
+					"items": [
+						"当你使用一个动作来施放（%0%）时，你可以立即再次施放它，作为同一动作的一部分。",
+						"每当你受到伤害时，你可以掷出等于你的{@dice d10}所产生的光束数量的{@spell Eldritch Blast}，并以结果减少伤害。",
+						"你的移动速度等同于你的{@spell Eldritch Blast}范围"
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Pact of the Blast",
+			"source": "EBPatron",
+			"page": 0,
+			"entries": [
+				"每一回合，当你施放{@spell Eldritch Blast}的法术时，你可以选择下列选项之一来修改该法术。",
+				{
+					"type": "entries",
+					"name": "Precision Shot",
+					"page": 0,
+					"entries": [
+						"你将你的{@spell Eldritch Blast}的伤害骰子增加到{@dice d12}，但该法术创造的所有光束必须以同一个生物为目标。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Burst Shot",
+					"page": 0,
+					"entries": [
+						"你可以将你的{@spell Eldritch Blast}的伤害骰子减少到{@dice d6}，使法术产生的光束数量加倍。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Elemental Shot",
+					"page": 0,
+					"entries": [
+						"你可以将你的（%0%）造成的伤害类型改为你选择的类型。"
+					]
+				}
+			],
+			"featureType": [
+				"PB"
+			]
+		},
+		{
+			"name": "Improved Eldritch Blaster",
+			"source": "EBPatron",
+			"page": 0,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5
+					},
+					"pact": "Pact of the Blast"
+				}
+			],
+			"entries": [
+				"当你使用你的 \"爆炸契约 \"能力时，你可以选择使用这些选项之一。",
+				{
+					"type": "entries",
+					"name": "Piercer Shot",
+					"page": 0,
+					"entries": [
+						"由你的{@spell Eldritch Blast}创造的光束形成一条长100英尺、宽5英尺的线，从你身上向你选择的方向轰出。这条线上的每一个生物，如果其攻击力低于你的法术攻击卷，就会受到该光束的伤害。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cluster Shot",
+					"page": 0,
+					"entries": [
+						"你的{@spell Eldritch Blast}创造的光束在你选择的地点爆发成20英尺半径的球体。球体半径内的每个生物，如果其攻击力低于你的法术攻击卷，则会受到该光束的伤害。"
+					]
+				}
+			],
+			"featureType": [
+				"EI"
+			]
+		}
+	]
+}

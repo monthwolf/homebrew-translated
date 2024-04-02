@@ -1,0 +1,328 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "COMConstruct",
+				"abbreviation": "COMConstruct",
+				"full": "Community Construct Collection",
+				"authors": [
+					"A collection derived from the web community (Reddit,Pinterest,DmsGuild,ecc.). For credits, authors are provided with a web link in the entity description"
+				],
+				"convertedBy": [
+					"p4535992"
+				],
+				"version": "2021.10.01",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.7.0"
+			}
+		],
+		"dateAdded": 1555319662,
+		"dateLastModified": 1690651615,
+		"_dateLastModifiedHash": "8894a0bf35"
+	},
+	"monster": [
+		{
+			"name": "Animated Trap",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "construct",
+				"tags": [
+					"item"
+				]
+			},
+			"source": "COMConstruct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "24d4 + 96",
+				"average": 156
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 13,
+			"dex": 20,
+			"con": 19,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"passive": 7,
+			"cr": "7",
+			"fluff": {
+				"entries": [
+					"\"这是个陷阱！\" - 阿克巴上将（Admiral Ackbar）。\"欺骗性的双击\"。动画陷阱是物体动画的一个大手笔，人们倾向于谨慎地对待它们，直到它们被解除；一旦 \"解除\"，动画陷阱可以让对手真正地措手不及。被遗弃在自己的设备中的动画陷阱会试图遵循他们最后留下的任何命令，这通常是一些组合。动画陷阱在成功杀戮后会隐藏自己，远离尸体，以免表明自己的位置.构造性质。陷阱不需要空气、食物、饮料或睡眠。怪物一天A194由1d6AdventurersTome of Madness Vol1, p21"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://s3.amazonaws.com/files.d20.io/images/60181771/XiwisCw98gXYiC7nLndPKg/med.png?1533893974"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://s3.amazonaws.com/files.d20.io/images/60181759/YvropFKv05YG03sBUVfJnQ/med.png?1533893945",
+			"shortName": "Animated Trap",
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"skill": {
+				"stealth": "+8"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"陷阱在反魔法区域内时，会有%0%的效果。如果被驱散魔法锁定，陷阱必须在宪法规定的救赎DC下成功，否则会在1分钟内坠落（%1%）。"
+					]
+				},
+				{
+					"name": "Assassinate",
+					"entries": [
+						"在它的第一个回合中，陷阱在对任何还没有回合的生物的攻击卷轴上有优势。陷阱对被惊动的生物的任何一击都是关键一击。"
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"当陷阱保持不动，它与普通物体没有区别。"
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"陷阱对任何改变其形态的法术或效果都是免疫的。"
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"当陷阱用武器攻击击中目标并在攻击卷上有优势时，或者当目标在陷阱的盟友5英尺范围内不是（%1%）且陷阱在攻击卷上没有劣势时，陷阱会造成额外的7（（%0%））伤害。"
+					]
+				},
+				{
+					"name": "Thieves' Tools Susceptibility",
+					"entries": [
+						"如果被盗贼的工具所攻击，陷阱会进行一次宪法规定的救赎，由对方生物的盗贼工具检查来争夺。如果陷阱赢了，它可以对对方的生物进行一次咬人攻击作为反应。如果陷阱输了，它就会变成（%0%），直到它的下一个回合结束。",
+						"此外，如果陷阱输了5个或更多，那么对方的生物就会意识到陷阱的真正性质。"
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance",
+				"Immutable Form",
+				"Sneak Attack"
+			],
+			"conditionInflict": [
+				"grappled",
+				"incapacitated"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"陷阱会进行三次攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8}击中，到达5英尺，一个目标。{@h}9 ({@damage 1d8 + 5})穿刺伤害。",
+						"目标是{@condition grappled}(逃脱DC16)"
+					]
+				},
+				{
+					"name": "Crush",
+					"entries": [
+						"{@atk mw}{@hit 8}击中，达到5英尺，一个生物{@condition grappled}被困住。{@h}7 ({@damage 2d10 + 5})穿刺伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Mortimer's Armor",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "COMConstruct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 11",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 13,
+			"int": 1,
+			"wis": 3,
+			"cha": 1,
+			"passive": 6,
+			"cr": "6",
+			"shortName": "Mortimer's Armor",
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"在反魔法区域内，盔甲会失去行动能力。如果被驱散魔法锁定，盔甲必须对施法者的法术救赎DC进行宪法救赎成功，否则就会昏迷1分钟。"
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"当盔甲保持不动，它与普通盔甲没有区别。"
+					]
+				},
+				{
+					"name": "Damage Transfer",
+					"entries": [
+						"当它吞噬一个生物时，莫蒂默的盔甲只承受一半的伤害，而被莫蒂默的盔甲吞噬的生物则承受另一半。"
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"盔甲会进行两次近战攻击。"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 4}击中，到达5英尺，一个目标。{@h}8 ({@damage 1d8 + 4})重击伤害。"
+					]
+				},
+				{
+					"name": "Doff {@recharge 5}",
+					"entries": [
+						"盔甲摔成碎片，为唐的动作做好准备。在这种状态下，它不能进行常规的猛击攻击。"
+					]
+				},
+				{
+					"name": "Don",
+					"entries": [
+						"盔甲的移动速度可以达到它的速度。在这样做的时候，它可以进入中型或小型人形生物的空间。每当盔甲进入一个人形生物的空间时，该人形生物必须做一个{@dc 15}灵巧反射。",
+						"拯救成功后，人形生物可以选择向后或向盔甲的一侧跳5英尺。选择不跳的生物将承受拯救失败的后果。",
+						"如果救赎失败，盔甲会进入人形的空间，人形会受到20(606)重击伤害，并被",
+						"被吞噬。被吞噬的生物可以呼吸，是（%0%），并受到伤害转移的影响。当盔甲移动时，被吞噬的人形生物也随之移动。",
+						"一个被保护的人形生物可以通过采取行动进行强度检查来尝试逃跑。如果成功，这个人形生物就会逃跑，并进入一个它所选择的距离盔甲5英尺以内的空间。",
+						"无论是哪种方式，盔甲都会因为这个动作而恢复其形态。"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"tokenUrl": "https://i.imgur.com/84R7VaS.png",
+			"fluff": {
+				"entries": [
+					"{@link Mortimer's Armor|https://www.reddit.com/r/monsteraday/comments/p6tn0e/customizing_animated_armor_to_make_it_a_more/}"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/sjm9RRZ.jpg"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	]
+}

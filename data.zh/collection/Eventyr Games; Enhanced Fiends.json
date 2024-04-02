@@ -1,0 +1,4338 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "EnhancedDemons",
+				"abbreviation": "ED",
+				"full": "Enhanced Demons",
+				"url": "https://www.dmsguild.com/product/304129/Enhanced-Demons-an-Eventyr-Games-Compendium",
+				"authors": [
+					"Eventyr Games"
+				],
+				"convertedBy": [
+					"RufusPiedmont"
+				],
+				"version": "1.0",
+				"targetSchema": "1.0"
+			},
+			{
+				"json": "EnhancedDevils",
+				"abbreviation": "ED",
+				"full": "Enhanced Devils",
+				"url": "https://www.dmsguild.com/product/296927/Enhanced-Devils--an-Eventyr-Games-Compendium",
+				"authors": [
+					"Eventyr Games"
+				],
+				"convertedBy": [
+					"Nerd02",
+					"RufusPiedmont"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1670702069,
+		"dateLastModified": 1706998579,
+		"_dateLastModifiedHash": "7742ccf29b"
+	},
+	"monster": [
+		{
+			"name": "Manes",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d6 + 2"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 10,
+			"dex": 9,
+			"con": 13,
+			"int": 3,
+			"wis": 8,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"understands but can't speak"
+			],
+			"cr": "1/8",
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} 近战攻击，射程5英尺，目标一个。{@h}5 ({@damage 2d4}) 斩击伤害。"
+					]
+				},
+				{
+					"name": "Grotesque Display",
+					"entries": [
+						"恶魔在疯狂的恶心表演中抽打自己。每个距离鬃毛10英尺以内且能看到它的生物必须进行一次{@dc 10}感知豁免投掷。如果失败，该生物在接下来的回合结束前，下一次攻击投掷或技能检定投掷时都会获得劣势。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dretch",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d6 + 4"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 11,
+			"dex": 11,
+			"con": 12,
+			"int": 5,
+			"wis": 8,
+			"cha": 3,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 60 ft."
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔小丑(dretch)用嘴咬一次，用爪子攻击一次。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 2}命中，达到5英尺。造成{@h}3 ({@damage 1d6})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 2} 命中，达到5英尺。造成{@h}5 ({@damage 2d4}) 切割伤害。"
+					]
+				},
+				{
+					"name": "Latch On",
+					"entries": [
+						"恶鬼试图爬上一个距离它5英尺以内的中等或更大体型的生物。目标必须进行一次{@dc 10}敏捷（体操）检定。如果失败，恶鬼成功移动到目标生物的空间并紧贴其身体。在目标的空间中，恶鬼随着目标移动，并对其进行攻击时获得优势。目标可以通过花费一个动作并成功进行一次{@dc 10}力量（竞技）检定来摆脱恶鬼。在成功紧贴生物后，恶鬼可以作为奖励动作对该生物进行一次咬击攻击。"
+					]
+				},
+				{
+					"name": "Fetid Cloud (1/Day)",
+					"entries": [
+						"从恶心的绿色气体中心向外延伸10英尺半径，这是从(dretch)身上散发出来的。气体可以绕过角落传播，其区域被轻微遮蔽。它持续1分钟，或者直到强风将其驱散。任何在该区域开始其回合的生物必须成功进行一次{@dc 11}体质豁免才能免疫{@condition poisoned}，直到其下一个回合开始。在这种方式下{@condition poisoned}，目标在自己的回合内只能进行动作或者奖励动作之一，不能两者兼得，并且不能进行反应。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Quasit",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 7,
+				"formula": "3d4"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 5,
+			"dex": 17,
+			"con": 10,
+			"int": 7,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"小恶魔(quasit)可以使用动作将自己变形成类似蝙蝠(speed 10 ft., fly 40 ft.)、蜈蚣(40 ft., climb 40 ft.)或蟾蜍(40 ft., swim 40 ft.)的野兽形态，或者恢复成真实形态。在每种形态下，它的属性都是一样的，除了速度变化。它穿戴的或携带的任何装备都不会被转化。如果它死亡，就会恢复成真实形态。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"小恶魔(quasit)在抵抗法术和其他魔法效果的豁免 throws 中拥有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 4} 命中，达到5英尺。受到{@h}5 ({@damage 1d4 + 3}) 穿刺伤害，目标必须成功通过一次{@dc 10} 体质豁免才能避免受到5 ({@damage 2d4}) 毒素伤害并在1分钟内变成{@condition poisoned}。目标可以在自己的回合结束时重复进行豁免才能，成功则结束自身的效果。"
+					]
+				},
+				{
+					"name": "Scare (1/Day)",
+					"entries": [
+						"quasit选择的20英尺内的一个生物必须成功通过一个{@dc 10}的感知豁免才能避免在1分钟内被{@condition frightened}。目标可以在每个回合结束时重复进行豁免扔，如果quasit在视线内，则具有劣势，成功后效果消失。"
+					]
+				},
+				{
+					"name": "Grease (1/Day)",
+					"entries": [
+						"在距离60英尺内的某点上，覆盖了一个10英尺正方形区域的光滑油脂，将其变成1分钟的艰难地形。当油脂出现时，站在其区域内的每个生物必须成功进行一次{@dc 10} 敏捷豁免才能不摔倒{@condition prone}。进入该区域或在其中结束回合的生物也必须成功进行一次{@dc 10} 敏捷豁免才能不摔倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"小恶魔在攻击、使用恐惧或润滑术，或专注结束（就像专注于一个法术）之前，会被魔法地变成{@condition invisible}。小恶魔穿戴或携带的任何装备也会与它一起变化。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"invisible",
+				"poisoned",
+				"prone"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/quasit-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/quasit-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Shadow Demon",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "(demon)",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 1,
+			"dex": 17,
+			"con": 12,
+			"int": 14,
+			"wis": 13,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid",
+				"fire",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"lightning",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"恶魔可以像穿越艰难地形一样穿过其他生物和物体。如果它在物体内结束自己的回合，它会受到5 ({@damage 1d10}) 点的力量伤害。"
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"恶魔的施法能力是智力（法术豁免 {@dc 12}）。该恶魔可以天生地施放以下法术，无需任何材料组件：",
+						{
+							"type": "list",
+							"items": [
+								"每天1次：敌人横行 (enemies abound), 沉默 (silence)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Light Sensitivity",
+					"entries": [
+						"在明亮光线下，恶魔在进行攻击检定时有劣势，以及在依赖视觉的感知（感知）检定上也有劣势。"
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"在昏暗或黑暗中，恶魔可以将躲藏动作作为一个额外动作。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，达到5英尺。{@h}10 ({@damage 2d6 + 3}) 精神伤害，或者，如果恶魔在攻击骰上有优势，则为17 ({@damage 4d6 + 3}) 精神伤害。"
+					]
+				},
+				{
+					"name": "Shadow Absorption (1/Day)",
+					"entries": [
+						"恶魔从附近敌人投射的阴影中汲取能量。在它能看到的30英尺范围内，最多可以选择六个生物，它们必须进行一次{@dc 12}体质豁免才能，失败则受到10({@damage 2d10})点死灵伤害，成功则减半。恶魔获得的临时生命值等同于通过这种方式造成的死灵伤害总数的一半。"
+					]
+				},
+				{
+					"name": "Enemies Abound (1/Day)",
+					"entries": [
+						"恶魔可以看到的生物必须在其120英尺内进行一次{@dc 12}智力豁免 throw。",
+						"如果生物对于被{@condition frightened}免疫，那么它会自动成功。如果豁免失败，目标将失去分辨朋友和敌人的能力，视其所见到的所有生物为敌人，持续1分钟，或者直到恶魔失去集中力。",
+						"每次目标受到伤害时，它可以重复豁免扑克，成功后自行结束效果。每当受影响的生物选择另一个生物作为目标时，它必须从它可以看到的攻击、法术或其他能力范围内的生物中随机选择目标。",
+						"如果一个敌人引发了一个受影响生物的机会攻击，那么生物必须在能够的情况下进行攻击。"
+					]
+				},
+				{
+					"name": "Silence (1/Day)",
+					"entries": [
+						"在10分钟内，或者直到恶魔失去集中力量，半径20英尺的球体内或通过球体的声音都会被禁止，球体的中心点由恶魔在其120英尺范围内选择。完全位于球体内的任何生物或物体对雷电伤害免疫，生物在完全位于球体内时处于{@condition deafened}状态。在那里无法施展包含口头组件的法术。"
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Light Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/shadow_demon-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/shadow_demon-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"intelligence"
+			]
+		},
+		{
+			"name": "Barlgura",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 7,
+			"wis": 14,
+			"cha": 9,
+			"save": {
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"巴尔古拉的施法能力是感知（法术豁免{@dc 13}）。巴尔古拉可以天生施放以下法术，无需材料组件：",
+						{
+							"type": "list",
+							"items": [
+								"每天1次：纠缠(entangle)，幻象力(phantasmal force)",
+								"每天2次每次：伪装自我，隐形术（仅限自身）"
+							]
+						}
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"在它的回合开始时，巴尔古拉(barlgura)可以获得在该回合内进行的所有近战武器攻击投掷的优势，但对它的攻击投掷在其下一个回合开始之前具有优势。"
+					]
+				},
+				{
+					"name": "Running Leap",
+					"entries": [
+						"巴鲁古拉(barlgura)的长跳可达40英尺，而在有助跑的情况下，它的高跳可达20英尺。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"巴尔古拉(Balguara)进行三次攻击：一次咬和两次拳击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7}攻击，达到5英尺。造成{@h}11({@damage 2d6 + 4})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 7} 命中，达到5英尺。造成{@h}9 ({@damage 1d10 + 4}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Deadly Leap",
+					"entries": [
+						"如果巴尔古拉（barlgura）在移动中至少跳过15英尺，它可以利用这个动作着陆并站稳脚跟，落在一个包含一个或多个其他生物的空间中。那些生物中的每一个必须成功通过一个{@dc 15}力量或敏捷豁免才能避免被击倒并受到20点伤害（{@dice 3d10}。",
+						"+ 4) 持续性伤害。在成功豁免后，生物只受到一半伤害，不被击倒{@condition prone}，并被推出巴尔古拉的空间5英尺，进入生物选择的一个未被占据的空间。如果范围内没有未被占据的空间，生物将在巴尔古拉的空间内摔倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "Entangle (1/Day)",
+					"entries": [
+						"从地面上的一个点开始，20英尺的正方形区域里长出了一片杂草和藤蔓，距离内90英尺。在1分钟内或者直到巴尔古拉失去集中力，这些植物将该区域的地面变成艰难地形。当巴尔古拉施放这个法术时，区域内的生物必须通过一次{@dc 13}力量豁免才能避免被这些植物纠缠住，直到法术结束（逃脱{@dc 13}）。法术结束时，召唤出的植物会凋零。"
+					]
+				}
+			],
+			"traitTags": [
+				"Reckless"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/barlgura-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/barlgura-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Chasme",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "13d10 + 13"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"str": 15,
+			"dex": 15,
+			"con": 12,
+			"int": 11,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"dex": "+5",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Drone",
+					"entries": [
+						"恶魔对chasme发出的可怕嗡嗡声免疫。任何其他生物若在距离chasme 30英尺内开始其回合，必须通过一次 {@dc 12} 体质豁免才能免疫，否则会陷入 {@condition unconscious} 状态，持续10分钟。",
+						"一个无法听到嗡嗡声的生物会自动成功豁免检定。如果生物受到伤害或其他生物采取行动用圣水泼洒在它身上，效果就会结束。如果生物的豁免检定成功或效果对其结束，那么它在接下来的24小时内对嗡嗡声免疫。"
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"恶魔蝇的施法能力是智力（法术豁免{@dc 13}）。 恶魔蝇可以天生施放以下法术，无需材料组件：",
+						{
+							"type": "list",
+							"items": [
+								"每天1次：恐惧 (fear), 蜘蛛网 (web)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恶魔蝇对于法术和其他魔法效果的豁免投掷有优势。"
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"恶魔蝇(chasme)可以攀爬困难的表面，包括在天花板上倒挂，无需进行能力检定。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Proboscis",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，达到5英尺。造成{@h}16 ({@damage 4d6 + 2}) 穿刺伤害加上24 ({@damage 7d6}) 死灵伤害，并且目标的生命值上限减少等同于所受死灵伤害的数值。如果这个效果将一个生物的生命值上限减少至0，该生物死亡。这种对生物生命值上限的减少持续直到生物完成一次长休或受到类似强力恢复的法术影响。"
+					]
+				},
+				{
+					"name": "Fear (1/Day)",
+					"entries": [
+						"在一个30英尺锥形范围内的每个生物必须成功通过一个{@dc 13}感知豁免才能保持住手中的物品并变为{@condition frightened}，持续1分钟，或者直到恶魔蝇失去集中力。在这种状态下，生物必须在每个回合采取冲刺动作，并沿着最安全的可用路线远离恶魔蝇，除非没有地方可移动。如果生物结束回合时处于看不见恶魔蝇的位置，则可以进行一个{@dc 13}感知豁免，成功则结束效果。"
+					]
+				},
+				{
+					"name": "Web (1/Day)",
+					"entries": [
+						"恶魔蝇(chasme)施法，制造出一团填满(%num%)的蛛网。",
+						"在距离60英尺内以某点为中心的一个20英尺立方体范围内，持续1小时或直到失去集中力。这些蜘蛛网是难以通过的地形，并且轻微遮蔽其区域。覆盖在平面表面上的蜘蛛网深度为5英尺。这些蜘蛛网是可燃的。任何暴露在火焰中的5英尺立方体蜘蛛网将在1回合内燃烧殆尽，对任何在火焰中开始其回合的生物造成{@damage 2d4}火焰伤害。每个在蜘蛛网中开始其回合或在其回合内进入其中的生物必须进行{@dc 13}敏捷豁免检定。未通过豁免检定的生物将被{@condition restrained}，直到它摆脱（解脱{@dc 13}）蜘蛛网。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"HPR",
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained",
+				"unconscious"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/chasme-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/chasme-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Vrock",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "11d10 + 44"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 18,
+			"int": 8,
+			"wis": 13,
+			"cha": 8,
+			"save": {
+				"dex": "+5",
+				"wis": "+4",
+				"cha": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"翼魔(vrock)在抵抗法术和其他魔法效果的豁免 throws 时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"翼魔进行两次攻击：一次使用其喙，一次使用其爪。"
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 6}命中，达到5英尺。造成{@h}10({@damage 2d6 + 3})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 6} 命中，达到5英尺。{@h}14 ({@dice 2d10}",
+						"+ 3) 切割伤害。"
+					]
+				},
+				{
+					"name": "Wing Attack",
+					"entries": [
+						"翼魔振动翅膀。在翼魔周围5英尺范围内的每个生物必须成功进行一次{@dc 15}敏捷豁免才能避免受到10({@damage 2d6 + 3}) 钝击伤害并被击倒{@condition prone}。然后翼魔可以飞行达到其飞行速度的一半。"
+					]
+				},
+				{
+					"name": "Spores {@recharge}",
+					"entries": [
+						"一团半径为15英尺的有毒孢子云从恶魔离开。这些孢子可以在拐角处传播。",
+						"在该区域内的每个生物必须成功进行一次{@dc 14}体质豁免才能避免成为{@condition poisoned}。在这种状态下，目标在每个回合开始时会受到5({@damage 1d10})毒素伤害。目标可以在自己的回合结束时重复进行豁免才能结束这种效果。在目标身上倒空一瓶圣水也可以结束这种效果。"
+					]
+				},
+				{
+					"name": "Stunning Screech (1/Day)",
+					"entries": [
+						"翼魔(vrock)发出可怕的尖叫声。",
+						"在它周围20英尺范围内的每个生物，只要能听到它的声音且不是恶魔，必须进行一次{@dc 14}的体质豁免才能免疫被{@condition stunned}，持续到下一个回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/vrock-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/vrock-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Hezrou",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "13d10 + 65"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 17,
+			"con": 20,
+			"int": 5,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"str": "+7",
+				"con": "+8",
+				"wis": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"赫兹鲁 (hezrou) 在对抗法术和其他魔法效果的豁免 throws 时具有优势。"
+					]
+				},
+				{
+					"name": "Stench",
+					"entries": [
+						"任何在距离{@dc 14}英尺内的生物，在其回合开始时必须成功进行一次体质豁免才能免疫{@condition poisoned}，直到其下一个回合开始。如果豁免成功，该生物在接下来的24小时内对(%Hezrou%)的恶臭免疫。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"赫兹鲁 (hezrou) 进行三次攻击：一次咬击和两次爪击。如果赫兹鲁拥有 {@condition grappled} 生物，它可以在这些攻击中的一次使用\"抛弃\"（Throwaway）代替。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7}命中，达到5英尺。造成{@h}15 ({@damage 2d10 + 4})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} 命中，达到5英尺。造成{@h}11 ({@damage 2d6 + 4}) 斩击伤害。"
+					]
+				},
+				{
+					"name": "Throwaway",
+					"entries": [
+						"hezrou(赫茲魯)可以将一个中型或更小的生物投掷{@condition grappled}，最远可达30英尺，方向由hezrou(赫茲魯)选择。当目标着陆时，目标必须进行{@dc 15}敏捷豁免检定。如果失败，目标将受到10点({@damage 3d6})钝击伤害，并被{@condition prone}。如果成功，只受到一半伤害，并且不被{@condition prone}。如果目标生物在投掷过程中撞到另一个生物，两者都必须进行豁免检定，失败则受到7点({@damage 2d6})钝击伤害。"
+					]
+				},
+				{
+					"name": "Spew Gall (1/Day)",
+					"entries": [
+						"海兹鲁 (hezrou) 喷射出其胃部恶心的内容，形成一个30英尺的锥形区域。该区域内的每个生物必须进行一次 {@dc 16} 敏捷豁免检定，未通过则受到28 ({@damage 8d6}) 点酸性伤害，通过则减半。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"prone"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/hezrou-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/hezrou-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Glabrezu",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 157,
+				"formula": "15d10 + 75"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 15,
+			"con": 21,
+			"int": 19,
+			"wis": 17,
+			"cha": 16,
+			"save": {
+				"str": "+9",
+				"con": "+9",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"这只格拉布雷祖的施法能力包括以下咒语，无需任何材料组件：",
+						{
+							"type": "list",
+							"items": [
+								"随意：黑暗，侦测魔法，{@spell dispel magic}",
+								"每天1次：混乱 (confusion), 飞行 (fly), 动力词震慑 (power word stun)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"格拉布雷祖 (glabrezu) 在对抗法术和其他魔法效果的豁免 throws 中拥有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"格拉布雷祖(Glabrezu)进行四次攻击：两次使用其钳子(pincers)和两次使用其拳头(fists)。或者，它可以使用两次钳子攻击并施放一个法术。如果格拉布雷祖用其钳子抓住一只生物，它可以使用\"震荡摇晃\"(Rattling Shake)代替一次钳子攻击。"
+					]
+				},
+				{
+					"name": "Pincer",
+					"entries": [
+						"{@atk mw} {@hit 9} 命中，达到10英尺。{@h}16 ({@dice 2d10}",
+						"+ 5) 被钝击伤害。如果目标是中型或更小的生物，则它是{@condition grappled} (逃脱{@dc 15})。格拉布雷祖有两只钳子，每只只能钳住一个目标。"
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 9} 命中，达到5英尺。造成{@h}7 ({@damage 2d4 + 2}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Rattling Shake",
+					"entries": [
+						"格拉布雷祖（glabrezu）摇晃着它用钳子抓住的中型或更小的生物。目标受到10点伤害（{@dice 1d10}）。",
+						"+ 5) 钝击伤害，并必须成功通过一次 {@dc 15} 体质豁免才能在下一轮开始前解除被 {@condition stunned}。"
+					]
+				},
+				{
+					"name": "Darkness",
+					"entries": [
+						"魔法黑暗从距离60尺内的一个点向外扩散，形成一个半径15尺的球体，持续10分钟或直到恶魔失去集中力。黑暗会绕过角落传播。",
+						"具有黑暗视觉的生物无法穿透这片黑暗，非魔法光也无法照亮它。如果黑暗点位于物体上，则黑暗从物体上散发出来并随物体移动。",
+						"用不透明物体完全覆盖黑暗的源头，比如一个碗或头盔，可以阻挡黑暗。如果这个法术的区域与由2级或更低级法术创造的光照区域重叠，那么创造光照的法术会被驱散。"
+					]
+				},
+				{
+					"name": "Dispel Magic",
+					"entries": [
+						"在120英尺范围内，对一个生物、物体或魔法效果施加的任何3级或更低级别的法术都会结束。对于每个法术，(%num%) (Counterspell)都可以使其结束。",
+						"当目标为4级或更高级时，恶魔可以使用其法术施放能力（+8）进行一次能力检定，对抗一个等于10加上法术等级的DC。若检定成功，法术结束。"
+					]
+				},
+				{
+					"name": "Fly (1/Day)",
+					"entries": [
+						"恶魔触摸一个愿意的生物。目标在接下来的10分钟内获得60英尺的飞行速度，直到恶魔失去集中力。法术结束时，如果目标仍在空中，它将坠落，除非它能够阻止下落。"
+					]
+				},
+				{
+					"name": "Power Word Stun (1/Day)",
+					"entries": [
+						"恶魔说出一段能够压倒一只它能看见的生物头脑的力量之词，使其变得目瞪口呆。如果目标生物的生命值为150或更少，那么它会被{@condition stunned}。否则，法术无效。{@condition stunned}目标在每个回合结束时必须进行{@dc 16}体质豁免才能解除这种震慑效果。成功豁免后，震慑效果结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/glabrezu-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/glabrezu-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Yochol",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 18,
+			"int": 13,
+			"wis": 15,
+			"cha": 15,
+			"save": {
+				"dex": "+6",
+				"int": "+5",
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"deception": "+10",
+				"insight": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"yochlol可以使用其动作将自己变形成类似女性卓尔或巨蜘蛛的形态，或者变回真实形态。它在每种形态下的统计数据都是相同的。它穿戴或携带的任何装备都不会被转化。如果它死亡，它会恢复到真实形态。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"约克洛尔 (yochlol) 在对抗法术和其他魔法效果的豁免 throws 中拥有优势。"
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"油克洛尔(yochlol)可以在困难的表面上攀爬，包括在天花板上倒挂，而无需进行能力检定。"
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"邪恶蜘蛛女祭司的施法能力是魅力（法术豁免{@dc 14}）。邪恶蜘蛛女祭司可以天生施放以下法术，无需材料组件：",
+						{
+							"type": "list",
+							"items": [
+								"随意：侦测思绪，蛛网（detect thoughts, web）",
+								"每天1次：支配人类 (dominate person)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"邪影(yochlol)无视蛛网带来的移动限制。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"邪恶蜘蛛女祭司(yochlol)进行两次近战攻击。"
+					]
+				},
+				{
+					"name": "Slam (Bite in Spider Form)",
+					"entries": [
+						"{@atk mw} {@hit 6}命中，达到5英尺（恶魔形态下为10英尺）{@h}5 ({@dice 1d6 + 2}) 钝击（蜘蛛形态下为穿刺）伤害加上21 ({@damage 6d6}) 毒素伤害，并且目标在犹克洛尔的下一个回合结束前对感知豁免 throws 造成劣势。"
+					]
+				},
+				{
+					"name": "Mist Form",
+					"entries": [
+						"邪影女妖可以变成有毒雾气，或者恢复成真实形态。它所穿戴的任何装备也会被转化。如果它死亡，它会恢复成真实形态。在雾气形态下，邪影女妖是{@condition incapacitated}，无法说话。它拥有30英尺的飞行速度，可以悬停，并且可以穿过任何非密闭的空间。它在力量、敏捷和体质豁免 throws 上有优势，并且对非魔法伤害免疫。在雾气形态下，邪影女妖可以进入生物的空间并停留在那里。每当生物在其空间内以邪影女妖开始其回合时，生物必须成功进行一次{@dc 14}体质豁免 throw，否则会被{@condition poisoned}直到其下一个回合开始。在这种方式下，目标是{@condition incapacitated}。"
+					]
+				},
+				{
+					"name": "Maddening Presence",
+					"entries": [
+						"yochlol选择的每个生物在其30英尺范围内必须进行一次{@dc 14}智力豁免。",
+						"失败时，生物会受到17 ({@damage 5d6}) 精神伤害，并且在约克洛尔的下一个回合结束前处于 {@condition paralyzed} 状态。如果生物的豁免成功，那么该生物在接下来的24小时内对约克洛尔的疯狂存在效果免疫。"
+					]
+				},
+				{
+					"name": "Web",
+					"entries": [
+						"邪影女妖施放一团浓稠黏糊的蜘蛛网，填满一个以距离60英尺内某点为中心的20英尺立方体区域，持续1小时或直到邪影女妖失去集中力。这些蛛网是难以通过的地形，并轻微遮蔽其区域。铺设在平面表面上的蛛网深度为5英尺。这些蛛网是可燃的。任何",
+						"5英尺立方的蜘蛛网暴露在火焰中，1回合内燃烧殆尽，对任何在火焰中开始回合的生物造成{@damage 2d4}火焰伤害。每个在蜘蛛网中开始回合或在其回合内进入其中的生物必须进行{@dc 14}敏捷豁免投。未通过豁免的生物将被{@condition restrained}，直到它摆脱（逃脱{@dc 14}）为止。"
+					]
+				},
+				{
+					"name": "Dominate Person (1/Day)",
+					"entries": [
+						"yochlol能看见的60尺内的一个目标人形生物必须成功进行一次{@dc 14}感知豁免才能抵抗它，否则会被它控制1分钟，或直到yochlol失去集中力。如果目标正在与yochlol或友好于yochlol的生物战斗，则目标在豁免扑克上有优势。当目标处于{@condition charmed}状态且与yochlol在同一存在平面上时，yochlol可以通过心灵感应向生物发出简单而一般性的命令（无需行动），目标会尽力服从。如果目标完成了命令并且没有接到进一步的指示，它会尽最大努力保护自己。yochlol也可以使用其行动来完全和精确地控制目标。直到yochlol的下一个回合结束，目标只能采取它选择的行动，不做其他任何事情。在此期间，yochlol也可以让生物使用一次反应，但这需要它自己也使用自己的反应。每次目标受到伤害时，它都需要进行一次新的{@dc 14}感知豁免来抵抗这个法术。如果豁免成功，法术就会结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger",
+				"Spider Climb",
+				"Web Walker"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated",
+				"paralyzed",
+				"poisoned",
+				"restrained"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/yochol-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/yochol-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Nalfeshnee",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 184,
+				"formula": "16d10 + 96"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 30
+			},
+			"str": 21,
+			"dex": 10,
+			"con": 22,
+			"int": 19,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"con": "+11",
+				"int": "+9",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"纳尔菲什尼 (nalfeshnee) 在对抗法术和其他魔法效果的豁免 throws 中拥有优势。"
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"那尔菲什尼的施法能力是智力（法术豁免{@dc 17}）。约克洛尔可以天生施放以下法术，无需材料组件：",
+						{
+							"type": "list",
+							"items": [
+								"随意：{@spell dispel magic}，闪电箭（作为6级法术）",
+								"1/天：连锁闪电，虚弱神智 (Feeblemind)"
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"纳尔菲什尼 (nalfeshnee) 如果可以的话会使用传送 (Teleport) 或恐怖光环 (Horror Nimbus)。然后它会进行三次攻击：一次咬击和两次爪击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10}攻击，达到5英尺。造成{@h}32({@damage 5d10 + 5})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 10} 命中，达到10英尺。造成{@h}15 ({@damage 3d6 + 5}) 切割伤害。"
+					]
+				},
+				{
+					"name": "Horror Nimbus {@recharge 5}",
+					"entries": [
+						"那尔费什尼(nalfeshnee)魔法地散发着闪烁的、多彩的光芒。每个距离那尔费什尼15英尺内且能看到光芒的生物必须成功通过一次{@dc 15}感知豁免才能免疫{@condition frightened}1分钟。生物可以在自己的回合结束时重复进行豁免才能，成功则结束自身的影响。如果生物的豁免成功或效果结束，该生物在接下来的24小时内免疫那尔费什尼的恐怖光环(Horror Nimbus)。"
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"那尔菲什尼 (nalfeshnee) 通过魔法传送，连同其穿戴或携带的任何装备，最多可传送至120英尺之内的一个它能看见的空位。"
+					]
+				},
+				{
+					"name": "Dispel Magic",
+					"entries": [
+						"在120英尺范围内，对一个生物、物体或魔法效果施加的任何3级或更低级别的法术都会结束。对于每个法术，(%num%) (Counterspell)都可以使其结束。",
+						"当目标为4级或更高级时，恶魔可以使用其法术施展能力（+9）进行一次能力检定，对抗一个等于10加上法术等级的难度等级（DC）。若检定成功，法术结束。"
+					]
+				},
+				{
+					"name": "Lightning Bolt",
+					"entries": [
+						"那尔费什尼 (nalfeshnee) 在自己选择的方向上释放一道100英尺长、5英尺宽的闪电。",
+						"每个生物都必须进行一次{@dc 17}敏捷豁免检定。在豁免失败时，生物会受到38({@damage 11d6})点闪电伤害；在豁免成功时，伤害减半。这道闪电会点燃区域内未被穿戴或携带的易燃物品。"
+					]
+				},
+				{
+					"name": "Chain Lightning (1/Day)",
+					"entries": [
+						"那尔费什尼 (nalfeshnee) 创造一道闪电，向它能看见的目标发射，距离不超过150英尺。然后从该目标上跳出三道闪电，分别传向最多三个其他目标，这些目标必须距离第一个目标不超过30英尺。",
+						"目标可以是生物或物体，并且只能被其中一道闪电击中。目标必须进行一次 {@dc 17} 敏捷豁免。目标在豁免失败时受到45 ({@damage 10d8}) 点闪电伤害，豁免成功时受到一半伤害。"
+					]
+				},
+				{
+					"name": "Feeblemind (1/Day)",
+					"entries": [
+						"那尔费什尼(nalfeshnee)向150英尺内可见的生物发射心灵攻击。目标受到{@damage 4d6}点精神伤害，并必须进行{@dc 17}的智力豁免才能。未通过豁免的生物智力和魅力属性变为1。该生物无法施放法术、激活魔法物品、理解语言或以任何可理解的方式交流。",
+						"然而，这个生物可以识别它的朋友，跟随它们，甚至保护它们。在每30天的结束时，生物可以重复对这个法术的豁免投掷。如果它成功通过豁免投掷，法术就会结束。这个法术也可以通过强力恢复、治疗或许愿来结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Marilith",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 189,
+				"formula": "18d10 + 90"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 20,
+			"int": 18,
+			"wis": 16,
+			"cha": 20,
+			"save": {
+				"str": "+9",
+				"con": "+10",
+				"wis": "+8",
+				"cha": "+10"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"魔蛇女(marilith)在抵抗法术和其他魔法效果的豁免 throws 中拥有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"魔裂蛇女的武器攻击是魔法的。"
+					]
+				},
+				{
+					"name": "Reactive",
+					"entries": [
+						"马利利斯在战斗中每轮可以做出一次反应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"邪蛇女（Marilith）进行七次攻击：六次使用长剑，一次使用尾巴。"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 9} 命中，达到5英尺。{@h}13 ({@damage 2d8 + 4}) 切割伤害。"
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 9} 命中，达到10英尺。{@h}15 ({@dice 2d10}",
+						"+ 4) 钝击伤害。如果目标是中等大小或更小，则它是 {@condition grappled} (逃脱 {@dc 19})。直到这次擒抱结束，目标被 {@condition restrained}，魔蛇女可以自动用尾部攻击目标，而且魔蛇女不能对其他目标进行尾部攻击。"
+					]
+				},
+				{
+					"name": "Swath of Destruction",
+					"entries": [
+						"瑪瑞利斯以直线方式移动其移动速度。此移动无视艰难地形，不会引发机会攻击，瑪瑞利斯可以穿过中型或更小生物的空间。在此移动过程中，每个距离瑪瑞利斯5英尺以内的生物都必须进行一次{@dc 19}敏捷豁免检定。未通过检定的生物会受到22（{@damage 4d8 + 4}）点割伤伤害并被击倒（{@condition prone}）。通过检定的目标只会受到一半伤害且不会被击倒（{@condition prone}）。"
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"魔蛇女（marilith）在魔法的作用下，连同身上或携带的任何装备，可以传送到它能看到的未被占据的空间，最远距离为120英尺。"
+					]
+				},
+				{
+					"name": "Blade Barrier (1/Day)",
+					"entries": [
+						"魔蛇女 (marilith) 创造了一道由魔法能量形成的旋转、锋利的刀刃垂直墙壁。这道墙壁出现在90英尺内，持续10分钟或者直到魔蛇女失去集中力。魔蛇女可以创造一道直线墙壁，长达100英尺，高20英尺，厚5英尺；或者一道环形墙壁，直径达60英尺，高20英尺，厚5英尺。墙壁为其后方的生物提供四分之三掩护，并且其空间为艰难地形。当一个生物在一个回合内第一次进入墙壁的区域或者在那里开始其回合时，该生物必须进行一次{@dc 19} 敏捷豁免扑。未通过豁免的生物会受到{@damage 6d10} 切割伤害。通过豁免的生物会受到一半伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"魔蛇女 (marilith) 对一次即将命中它的近战攻击，AC 值增加 5 点。为此，魔蛇女必须看见攻击者并握持一把近战武器。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry",
+				"Teleport"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/marilith-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/marilith-portrait.webp"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Goristro",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 310,
+				"formula": "23d12 + 161"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 25,
+			"int": 6,
+			"wis": 13,
+			"cha": 14,
+			"save": {
+				"str": "+13",
+				"dex": "+6",
+				"con": "+13",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"如果戈瑞斯特罗移动至少15英尺直线向目标移动，然后在同一回合内用角攻击击中目标，目标会受到额外38({@damage 7d10})点穿刺伤害。如果目标是生物，它必须成功进行一次{@dc 21}力量豁免才能被推开最多20英尺并被击倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "Labyrinthine Recall",
+					"entries": [
+						"戈里斯特罗(goristro)能够完美地回忆起它曾经走过的任何路径。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"戈里斯特罗在对抗法术和其他魔法效果的豁免 throws 时具有优势。"
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"戈里斯特罗对物体和结构造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"戈里斯特罗(Goristro)进行三次攻击：两次用拳头，一次用蹄。"
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 13} 命中，达到10英尺。造成{@h}20 ({@damage 3d8 + 7}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Hoof",
+					"entries": [
+						"{@atk mw} {@hit 13} 命中，达到5英尺。{@h}23 ({@dice 3d10}",
+						"+ 7) 钝击伤害。如果目标是一只生物，它必须成功进行一次 {@dc 21} 力量豁免才能避免被击倒。"
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 13} 命中，达到10英尺。{@h}45 ({@dice 7d10}",
+						"+ 7) 刺伤伤害。"
+					]
+				},
+				{
+					"name": "Shockwave",
+					"entries": [
+						"戈里斯特罗用巨大的蹄子重重地跺地，引发强大的冲击波震动大地。",
+						"在距离戈里斯特罗（Goristro）30英尺范围内的每个生物必须进行一次{@dc 21}力量豁免检定。如果未通过检定，生物会受到27点（{@damage 5d10}）殴打伤害和27点（{@damage 5d10}）雷霆伤害，并被击倒{@condition prone}。若通过检定，生物只会受到一半伤害且不会被击倒{@condition prone}。"
+					]
+				},
+				{
+					"name": "Lost in the Maze (1/Day)",
+					"entries": [
+						"戈里斯特罗从深渊中显现混乱的魔法，以迷惑和困惑敌人。在戈里斯特罗选择的60英尺范围内，每个生物必须进行一次{@dc 21}智力豁免。如果未通过豁免，生物会在1分钟内变为{@condition paralyzed}，因为它认为自己迷失在一个迷宫中。生物可以在自己的回合结束时重复进行豁免检定，成功则结束效果。"
+					]
+				}
+			],
+			"traitTags": [
+				"Charge",
+				"Magic Resistance",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"prone"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/goristro-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/goristro-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"intelligence",
+				"strength"
+			]
+		},
+		{
+			"name": "Balor",
+			"source": "EnhancedDemons",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 262,
+				"formula": "21d12 + 126"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80
+			},
+			"str": 26,
+			"dex": 15,
+			"con": 22,
+			"int": 20,
+			"wis": 16,
+			"cha": 22,
+			"save": {
+				"str": "+14",
+				"con": "+12",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "19",
+			"trait": [
+				{
+					"name": "Death Throes",
+					"entries": [
+						"当巴洛尔(Balor)死亡时，它爆炸了，距离它30英尺范围内的每个生物必须进行一次{@dc 20}敏捷豁免检定，未通过检定则受到70({@damage 20d6})火焰伤害，通过检定则受到一半伤害。爆炸点燃该区域内未被穿戴或携带的易燃物品，并摧毁巴洛尔的武器。"
+					]
+				},
+				{
+					"name": "Fire Aura",
+					"entries": [
+						"在巴洛魔王的每个回合开始时，距离它5英尺内的每个生物会受到10({@damage 3d6})火焰伤害，并且在光环中的易燃物体（未被穿戴或携带的）会点燃。当一个生物触碰巴洛魔王或在距离它5英尺内对其进行近战攻击时，会受到10({@damage 3d6})火焰伤害。"
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"巴洛尔的施法能力是魅力（法术豁免{@dc 20}）。巴洛尔可以天生施放以下法术，无需材料组件：",
+						{
+							"type": "list",
+							"items": [
+								"每天3次每个：力量之词痛苦，减速 (power word pain, slow)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"巴洛魔神对法术和其他魔法效果的豁免 throws 有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"巴洛尔的武器攻击是魔法的。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"巴洛尔(Balor)进行两次攻击：一次使用长剑，一次使用鞭子。巴洛尔(Balor)可以在这两次攻击中的一次中施放一个法术或使用传送(Teleport)。"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 14} 命中，达到10英尺。{@h}21 ({@damage 3d8 + 8}) 砍伤伤害加上13 ({@damage 3d8}) 闪电伤害。如果巴洛尔(Balor)获得了暴击，它将掷骰子三次，而不是两次。"
+					]
+				},
+				{
+					"name": "Whip",
+					"entries": [
+						"{@atk mw} {@hit 14} 命中，射程30英尺。{@h}15 ({@dice 2d6}",
+						"+ 8) 斩击伤害加上 10 火焰伤害，目标必须成功通过一个 {@dc 20} 力量豁免才能免受巴洛尔(Balor)拉拽，拉拽距离最多为 25 英尺。"
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"巴洛魔神在其所能看见的未被占据的空间内，进行魔法传送，连同其所穿戴或携带的任何装备，最多可传送至120尺的距离。"
+					]
+				},
+				{
+					"name": "Power Word Pain (3/Day)",
+					"entries": [
+						"巴洛尔(Balor)念出一道能量之词，使得一名它能看见的生物在60英尺内遭受剧烈疼痛的冲击。如果目标生物的生命值为100点或更少，它将遭受致残性的疼痛。否则，该法术对其没有任何影响。如果目标对{@condition charmed}免疫，也不受影响。",
+						"当目标受到严重疼痛影响时，其速度不能超过10英尺。目标在攻击检定、能力检定和豁免检定中都有劣势，除了体质豁免检定之外。最后，如果目标试图施放法术，必须首先成功进行一次{@dc 20}体质豁免检定，否则施法失败，法术被浪费。受到这种疼痛影响的目标可以在每个回合结束时进行一次{@dc 20}体质豁免检定。成功豁免后，疼痛消失。"
+					]
+				},
+				{
+					"name": "Slow (3/Day)",
+					"entries": [
+						"巴洛尔在120英尺内的一个40英尺立方体内改变了最多六个选择的生物周围的时间。每个目标必须成功进行一次{@dc 20}的感知豁免才能受到这个法术的影响，持续1分钟或者直到巴洛尔失去集中力。",
+						"受影响的目标速度减半，AC和敏捷豁免投掷减2，不能使用反应。在它的回合，它只能使用行动或者奖励行动，而不能两者都用。",
+						"无论生物的能力或魔法物品如何，它在自己的回合内只能进行一次近战或远程攻击。",
+						"如果生物试图施放一个施法时间为1个行动的法术，就要投掷一个{@dice d20}。在11或更高的情况下，法术直到生物的下一个回合才生效，生物必须在那个回合使用其行动来完成法术。如果无法完成，法术就会被浪费。受这个法术影响的生物在每个回合结束时都要进行另一个{@dc 20}感知豁免投。在豁免成功时，效果就会结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Death Burst",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"L",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/tokens/balor-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDemons/balor-portrait.webp"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"longsword|phb",
+				"whip|phb"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Imp, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"T"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil",
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d4 + 3"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 6,
+			"dex": 17,
+			"con": 13,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"insight": "+3",
+				"persuasion": "+4",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"小恶魔可以使用动作将自己变形成类似老鼠（速度20英尺）、乌鸦（20英尺，飞行60英尺）或蜘蛛（20英尺，攀爬20英尺）的野兽形态，或者变回真实形态。除了所述的速度变化外，在每种形态下它的统计数据都是一样的。它穿戴或携带的任何装备不会被转化。如果它死亡，它会恢复到真实形态。"
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会阻碍小恶魔的黑暗视觉。(darkvision)"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"小恶魔在对抗法术和其他魔法效果的豁免 throws 时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sting (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，达到5英尺。受到{@h}5 ({@damage 1d4 + 3}) 穿刺伤害，并且目标必须进行一次{@dc 11} 体质豁免才能，未通过则受到10 ({@damage 3d6}) 毒素伤害，通过则伤害减半。"
+					]
+				},
+				{
+					"name": "Vicious Mockery",
+					"entries": [
+						"在60英尺范围内且能听到小恶魔的目标（尽管不需要能理解它），必须成功进行一次{@dc 12}感知豁免才能免受{@damage 1d4}精神伤害，并在其下一个回合结束前进行的下一次攻击投掷中获得劣势。"
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"小恶魔在攻击之前或专注结束（就像专注于一个法术）之前，会变得 {@condition invisible}。小恶魔所穿戴或携带的任何装备都会与它一起变得 {@condition invisible}。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Lemure, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				7
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d8"
+			},
+			"speed": {
+				"walk": 15
+			},
+			"str": 10,
+			"dex": 5,
+			"con": 11,
+			"int": 1,
+			"wis": 11,
+			"cha": 3,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"understands Infernal",
+				"but can't speak"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会影响恶魔（lemure）的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Hellish Rejuvenation",
+					"entries": [
+						"在九层地狱中死亡的小恶魔会在{@dice 1d10}天内以满血复活，除非它被一个受到祝福法术影响的善良生物杀死，或者它的尸体被洒上圣水。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 3}攻击，达到5英尺。造成{@h}2 ({@damage 1d4}) 钝击伤害。"
+					]
+				},
+				{
+					"name": "Pitiful Babble",
+					"entries": [
+						"每个在离(`%0%`)的狐魔范围内且能听到它的生物必须进行一次感知豁免。如果未通过豁免，该生物在接下来的回合结束前，对下一个攻击骰或技能检定骰都有劣势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Spined Devil, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d6 + 5"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 12,
+			"int": 11,
+			"wis": 14,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗并不能阻止刺脊恶魔的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"当脊刺恶魔从敌人的攻击范围飞出时，不会引发机会攻击。"
+					]
+				},
+				{
+					"name": "Limited Spines",
+					"entries": [
+						"恶魔有十二根尾刺。使用过的尾刺会在恶魔完成一次长休息时再生。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"尖刺恶魔在拯救投掷对抗法术和其他魔法效果时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔进行两次攻击：一次是咬，一次是用叉子，或者用尾刺进行两次攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 2} 进行攻击，达到5英尺。造成{@h}5 ({@damage 2d4}) 穿刺伤害。"
+					]
+				},
+				{
+					"name": "Fork",
+					"entries": [
+						"{@atk mw} {@hit 2}命中，达到5英尺。造成{@h}3 ({@damage 1d6})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Tail Spine",
+					"entries": [
+						"{@atk rw} {@hit 4} 命中，射程20/80英尺。造成{@h}4 ({@damage 1d4 + 2}) 穿刺伤害加上3 ({@damage 1d6}) 火焰伤害。"
+					]
+				},
+				{
+					"name": "Reckless Dive",
+					"entries": [
+						"恶魔以其速度飞向目标生物，当它接近时，目标生物可以作为一次反应对恶魔发动机会攻击。如果恶魔存活下来，它在本回合结束前对该生物进行的任何近战攻击都具有优势，并且这些攻击在命中时额外造成{@damage 1d6}点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Searing Spines",
+					"entries": [
+						"恶魔摇晃着自己，向附近的生物抛洒着炙热的脊椎碎片。距离恶魔10英尺内的每个生物必须进行一次{@dc 12}体质豁免才能。未通过检定的生物会受到7({@damage 2d6})火焰伤害，并且在其下一个回合结束前处于{@condition blinded}状态。通过检定的生物只会受到一半伤害，并且不会被{@condition blinded}。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Flyby",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/tokens/spined_devil-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/spined_devil-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Barbed Devil, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 110,
+				"formula": "13d8 + 52"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 18,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"con": "+7",
+				"wis": "+5",
+				"cha": "+5"
+			},
+			"skill": {
+				"deception": "+5",
+				"insight": "+5",
+				"perception": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"恶魔的天生施法能力是感知（法术豁免 {@dc 13}，用法术攻击命中 {@hit 5}）。它可以天生施放以下法术，无需任何材料组件："
+					],
+					"daily": {
+						"1e": [
+							"{@spell cloud of daggers}",
+							"{@spell spike growth}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Barbed Hide",
+					"entries": [
+						"在每个回合开始时，恶魔对任何与其缠斗的生物造成5点刺伤伤害。"
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会妨碍恶魔的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恶魔在对抗法术和其他魔法效果的豁免 throws 中拥有优势。 (The devil)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔进行三次近战攻击：一次使用尾巴，两次使用爪子。或者，它可以选择两次使用投掷火焰(HurlFlame)。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} 命中，达到5英尺。造成{@h}6 ({@damage 1d6 + 3}) 穿刺伤害。"
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 6} 命中，达到5英尺。造成{@h}8 ({@damage 1d10 + 3}) 穿刺伤害，并且刺刺恶魔可以尝试拼抱住目标。"
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"{@atk rs} {@hit 5} 命中，射程150英尺。造成{@h}10 ({@damage 3d6}) 火焰伤害。如果目标是一个易燃物品且未被穿戴或携带，它也会着火。"
+					]
+				},
+				{
+					"name": "Piercing Shriek",
+					"entries": [
+						"恶魔展开它的尖刺，发出可怕的尖叫。每个能看到恶魔的30英尺范围内的生物必须进行一次{@dc 13}感知豁免。如果未通过，生物将受到13({@damage 3d8})点心灵伤害，并且在接下来的回合结束前成为恶魔的{@condition frightened}。"
+					]
+				},
+				{
+					"name": "Cloud of Daggers (1/Day)",
+					"entries": [
+						"恶魔在一个边长为5英尺的立方体中充满了旋转的匕首，中心点位于60英尺内。生物第一次进入法术区域或在那里开始回合时，会受到{@damage 4d4}的割伤伤害。法术持续1分钟，或者直到恶魔失去集中力。"
+					]
+				},
+				{
+					"name": "Spiked Growth (1/Day)",
+					"entries": [
+						"在距离150英尺内某点为中心的20英尺半径范围内，地面扭曲并长出坚硬的尖刺和荆棘。该区域在10分钟内成为艰难地形，或者直到恶魔失去专注。当生物进入或在该区域内移动时，每移动5英尺会受到{@damage 2d4} 刺伤伤害。地面的变化被伪装成自然景象。在施法时无法看到该区域的任何生物必须进行{@dc 13} 感知（感知）检定，以在进入之前识别该地形为危险。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"damageTagsSpell": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Chain Devil, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d8 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 18,
+			"int": 11,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"con": "+7",
+				"wis": "+4",
+				"cha": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会妨碍恶魔的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恶魔在对抗法术和其他魔法效果的豁免 throws 中拥有优势。 (The devil)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔用它的链条进行两次攻击。"
+					]
+				},
+				{
+					"name": "Chain",
+					"entries": [
+						"{@atk mw} {@hit 8} 命中，达到10英尺。{@h}11 ({@damage 2d6 + 4}) 斩击伤害。目标是{@condition grappled}（逃脱）。",
+						"{@dc 14})如果恶魔还没有与一名生物搏斗。直到这次搏斗结束，目标被{@condition restrained}，并在每个回合开始时受到7({@damage 2d6})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Animate Chains (Recharges after a Short or Long Rest)",
+					"entries": [
+						"魔鬼周围60英尺内最多可看到四条链条，在魔法作用下突然长出带有锋利刺刀的倒刺，并在魔鬼控制下活动，前提是这些链条没有被佩戴或携带。",
+						"每条动画链都是一个对象，具有AC 20，20点生命值，对刺击伤害具有抗性，并对精神和雷电伤害免疫。当恶魔在其回合使用多重攻击时，它可以使用每条动画链进行一次额外的链条攻击。一条动画链可以抓住一只生物，但在抓住时无法进行攻击。如果一条动画链的生命值降至0，或者恶魔是{@condition incapacitated}或死亡，那么该动画链将恢复到其非活动状态。"
+					]
+				},
+				{
+					"name": "Whirling Chains",
+					"entries": [
+						"恶魔在狂乱的旋风中甩动着它的锁链。每个在10英尺内的生物必须进行一次{@dc 14}敏捷豁免检定。如果失败，生物会受到10({@damage 3d6})点割伤伤害，再加上每个与恶魔的\"激活锁链\"特性激活的锁链在其10英尺内会造成7({@damage 2d6})点割伤伤害。如果成功，生物只会受到一半的伤害。此外，在恶魔的下一个回合开始前，对恶魔的近战和远程武器攻击都会带有劣势。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Unnerving Mask",
+					"entries": [
+						"当恶魔看得见的生物在距离恶魔30英尺内开始其回合时，恶魔可以制造幻觉，使其看起来像是生物已故的亲人或仇敌之一。如果生物能看见恶魔，它必须成功进行一次{@dc 14}感知豁免才能避免被{@condition frightened}，持续到回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"restrained"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/tokens/spined_devil-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/spined_devil-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Bone Devil, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 142,
+				"formula": "15d10 + 60"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 40
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 13,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+5",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"insight": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会妨碍恶魔的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恶魔在对抗法术和其他魔法效果的豁免 throws 中拥有优势。 (The devil)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔进行三次攻击：两次使用它的爪子，一次使用它的毒刺。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8}攻击，达到10英尺。造成{@h}8 ({@damage 1d8 + 4})点割伤伤害。"
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 8} 命中，达到10英尺。{@h}13 ({@damage 2d8 + 4}) 穿刺伤害加上17 ({@damage 5d6}) 毒素伤害，并且目标必须在一个{@dc 14} 体质豁免检定中成功，否则会在1分钟内变成{@condition poisoned}。目标可以在自己的每个回合结束时重复进行豁免检定，成功则结束效果。"
+					]
+				},
+				{
+					"name": "Bone Spear",
+					"entries": [
+						"{@atk rw} {@hit 8}攻击，射程60/120英尺。造成{@h}31 ({@damage 6d8 + 4})穿刺伤害，并且目标被一根巨大的骨头碎片刺穿。被刺穿时，目标的移动速度减半，对能力检定、武器攻击和豁免投掷都有劣势。"
+					]
+				},
+				{
+					"name": "Strength or Dexterity",
+					"entries": [
+						"骨头碎片可以通过一名生物成功进行一次{@dc 14}力量（医学）检定动作来移除。"
+					]
+				},
+				{
+					"name": "Grotesque Regrowth",
+					"entries": [
+						"骨魔停下来用魔法重新缝合它的骨头，恢复33（{@dice 6d10}）点生命值。此外，魔鬼选择的每个在30英尺内且能看见它的生物必须进行一次（{@dc 14}）感知豁免检定，否则在其下一个回合结束前将成为魔鬼的奴仆。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/tokens/bone_devil-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/bone_devil-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Horned Devil, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 178,
+				"formula": "17d10 + 85"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"str": 22,
+			"dex": 17,
+			"con": 21,
+			"int": 12,
+			"wis": 16,
+			"cha": 17,
+			"save": {
+				"str": "+10",
+				"dex": "+7",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"恶魔的天生施法能力是感知（法术豁免 {@dc 15}，用法术攻击命中 {@hit 7}）。它可以天生施放以下法术，无需材料组件："
+					],
+					"daily": {
+						"3": [
+							"{@spell dispel magic}"
+						],
+						"1e": [
+							"{@spell hypnotic pattern}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会妨碍恶魔的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恶魔在对抗法术和其他魔法效果的豁免 throws 中拥有优势。 (The devil)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔进行三次近战攻击：两次使用其叉子，一次使用其尾巴。它可以在任何近战攻击中使用投掷火焰（Hurl Flame）。"
+					]
+				},
+				{
+					"name": "Fork",
+					"entries": [
+						"{@atk mw} {@hit 10}命中，达到10英尺。造成{@h}15 ({@damage 2d8 + 6})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 10}命中，达到10英尺。造成10({@damage 1d8 + 6})穿刺伤害。如果目标是除了不死族或构造体之外的生物，它必须成功进行一次{@dc 17}体质豁免才能在其每个回合开始时不因地狱伤口而损失10({@dice 3d6})生命值。每当恶魔用这次攻击命中受伤目标时，伤口造成的伤害增加10({@dice 3d6})。任何生物都可以采取行动通过成功进行一次{@dc 12}感知（医学）检定来止血。如果目标接受魔法治疗，伤口也会愈合。"
+					]
+				},
+				{
+					"name": "Hurl Flame",
+					"entries": [
+						"{@atk rs} {@hit 7} 命中，射程150英尺。{@h}14 ({@damage 4d6}) 火焰伤害。如果目标是一个易燃物品且未被穿戴或携带，它也会着火。"
+					]
+				},
+				{
+					"name": "Dispel Magic (3/Day)",
+					"entries": [
+						"在120英尺范围内，对一个生物、物体或魔法效果施放的任何3级或更低级别的法术都会结束。",
+						"对于目标上的每个4级或更高级的法术，恶魔可以使用其法术施放能力（+7）进行一次能力检定，对抗一个DC为10 + 法术等级的难度等级。若检定成功，该法术结束。"
+					]
+				},
+				{
+					"name": "Hypnotic Pattern (1/Day)",
+					"entries": [
+						"恶魔在120英尺内的30英尺立方体内创造了一个扭曲的色彩图案，这个图案在空中编织着。这个图案出现了一会儿又消失了。在区域内看到这个图案的每个生物必须进行一次{@dc 15}感知豁免检定。未通过豁免检定的生物在持续时间内变为{@condition charmed}。受到这个法术影响时，生物会陷入{@condition charmed}状态，速度为0。如果受影响的生物受到任何伤害，或者有人使用一个动作来唤醒它，法术就会对该生物结束。"
+					]
+				},
+				{
+					"name": "Hellscape Eruption {@recharge 5}",
+					"entries": [
+						"恶魔利用其地狱之力，使地面在60英尺内的某点隆起并喷发成小型地狱火山。该点周围10英尺半径内的每个生物必须成功通过一个{@dc 15} 的力量豁免才能不被击倒{@condition prone}。随后，每个生物必须进行一个{@dc 15} 的敏捷豁免，因为岩浆喷发出来。未通过豁免的生物将受到33({@damage 6d10})点火焰伤害。通过豁免的生物只受一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Erinyes, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 153,
+				"formula": "18d8 + 72"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"dex": "+7",
+				"con": "+8",
+				"wis": "+6",
+				"cha": "+8"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"厄里尼厄斯的天生施法能力是魅力（法术豁免 {@dc 16}，法术攻击命中加值 {@hit 8}）。它可以天生施放以下法术，无需任何材料成分："
+					],
+					"daily": {
+						"3e": [
+							"{@spell dominate person}",
+							"{@spell fireball} (as a 5th-level spell)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Hellish Weapons",
+					"entries": [
+						"厄里尼厄斯的武器攻击是魔法的，在命中时会额外造成13({@damage 3d8})点毒素伤害（包含在攻击中）。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"厄里尼厄斯 (Erinyes) 在抵抗法术和其他魔法效果的豁免 throws 时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"厄里尼斯(Erinyes)进行三次攻击，或者两次攻击并使用其缠绕绳(Rope of Entanglement)。"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} 命中，达到5英尺。造成8 ({@damage 1d8 + 4}) 斩击伤害，或者如果双手使用则造成9 ({@damage 1d10 + 4}) 斩击伤害，再加上13 ({@damage 3d8}) 毒素伤害。"
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} 命中，射程",
+						"150/600英尺。{@h}7 ({@damage 1d8 + 3}) 穿刺伤害加上13 ({@damage 3d8}) 毒素伤害，并且目标必须成功通过一个 {@dc 14} 体质豁免才能避免被 {@condition poisoned}。毒素会持续直到被次级恢复法术或类似魔法移除。"
+					]
+				},
+				{
+					"name": "Rope of Entanglement",
+					"entries": [
+						"厄里尼厄斯指挥它的缠绕绳索（AC 20，20点生命值）来缠绕20英尺内的生物。目标必须成功进行一次{@dc 15}敏捷豁免才能避免成为{@condition restrained}（逃脱{@dc 15}）。厄里尼厄斯也可以使用一个奖励动作来释放目标。"
+					]
+				},
+				{
+					"name": "Dominate Person (3/Day)",
+					"entries": [
+						"{@dc 16} {@condition charmed}60{@condition charmed}(艾瑞尼斯)能看到的目标人形生物必须在60尺内进行一次{@dc 16}感知豁免检定，否则将被{@condition charmed}，持续1分钟，或直到艾瑞尼斯失去集中力。如果目标正在与艾瑞尼斯或友好于艾瑞尼斯的生物作战，目标在豁免检定时获得优势。只要目标在{@condition charmed}并且在同一存在平面上，艾瑞尼斯可以通过心灵感应向该生物发出简单和一般性的命令（无需动作），目标会尽力服从。如果目标完成命令并且没有接到进一步指示，它会尽最大努力保护自己。艾瑞尼斯还可以使用其动作来完全和精确地控制目标。直到艾瑞尼斯的下一个回合结束，目标只执行它选择的动作，不做其他任何事情。在此期间，艾瑞尼斯还可以让该生物使用一次反应，但这需要它自己也使用自己的反应。每次目标受到伤害时，它都需要进行一次新的智力豁免检定来抵抗这个法术。如果豁免检定成功，法术结束。"
+					]
+				},
+				{
+					"name": "Fireball (3/Day)",
+					"entries": [
+						"在距离150英尺内以一个点为中心的20英尺半径球体内的每个生物必须进行一次{@dc 16}敏捷豁免投骰。在未能通过豁免投骰的情况下，目标会受到35({@damage 10d6})火焰伤害，通过豁免投骰的情况下则只受到一半伤害。",
+						"火势蔓延到角落。它点燃了区域内未被穿戴或携带的易燃物品。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"埃里尼斯在一次近战攻击中增加4点AC，以抵御攻击。为此，埃里尼斯必须看到攻击者并持有一把近战武器。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RNG",
+				"RW",
+				"MLW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"poisoned",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/tokens/erinyes-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/erinyes-portrait.png"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Ice Devil, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 180,
+				"formula": "19d10 + 76"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 14,
+			"con": 18,
+			"int": 18,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+7",
+				"con": "+9",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会妨碍恶魔的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恶魔在对抗法术和其他魔法效果的豁免 throws 中拥有优势。 (The devil)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔进行三次攻击：一次咬击，一次利爪攻击，一次尾部攻击；或者进行两次攻击：一次矛攻击和一次尾部攻击。"
+					]
+				},
+				{
+					"name": "Ice Spear",
+					"entries": [
+						"{@atk mw} 使用近战武器攻击，射程10英尺，目标一个。{@h}14 ({@damage 2d8 + 5}) 穿刺伤害加上10 ({@damage 3d6}) 冰冻伤害。如果目标是生物，它必须通过一次{@dc 15} 体质豁免才行，否则在1分钟内，其速度减少10英尺；它每个回合只能进行一个动作或一个奖励动作，而不能两者兼顾；并且不能做出反应。",
+						"目标可以在每个回合结束时重复进行豁免投掷，成功则结束自身上的效果。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} 命中，达到5英尺。{@h}12 ({@damage 2d6 + 5}) 穿刺伤害加上10 ({@damage 3d6}) 冰冷伤害。"
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 10} 命中，达到5英尺。造成{@h}10 ({@damage 2d4 + 5}) 斩击伤害加上10 ({@damage 3d6}) 冰冷伤害。"
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 10} 命中，达到10英尺。{@h}12 ({@damage 2d6 + 5}) 钝击伤害加上10 ({@damage 3d6}) 冰冷伤害。"
+					]
+				},
+				{
+					"name": "Ice Knife",
+					"entries": [
+						"{@atk rs} {@hit 9} 进行攻击，射程60英尺。造成{@h}27 ({@damage 5d10}) 穿刺伤害。命中或未命中，目标及其周围每个生物必须成功进行一次{@dc 17} 敏捷豁免检定，否则将受到21 ({@damage 6d6}) 寒冷伤害。"
+					]
+				},
+				{
+					"name": "Wall of Ice {@recharge}",
+					"entries": [
+						"恶魔在距离其60英尺内能看到的固体表面上神奇地形成一堵不透明的冰墙。这堵墙厚1英尺，长最多30英尺，高10英尺，或者是直径最多20英尺的半球形圆顶。当墙出现时，其空间内的每个生物都会被沿着最短路径推出。生物可以选择在墙的哪一侧停留，除非该生物是{@condition incapacitated}。然后，生物进行{@dc 17}敏捷豁免，未通过豁免则受到35({@damage 10d6})点冰冷伤害，通过则只受到一半伤害。墙持续1分钟，或者直到恶魔被{@condition incapacitated}或死亡。墙可以受损和被破坏；每个10英尺的部分有AC",
+						"5, 30生命值，对火焰伤害有脆弱性，免疫酸性、冷冻、死灵、毒素和精神伤害。如果一个部分被摧毁，它会在墙原来的位置留下一片寒冷的空气。每当一个生物在一个回合内通过这片寒冷的空气移动结束时，无论是自愿还是非自愿，这个生物必须进行一次{@dc 17}体质豁免才能，在豁免失败时受到17({@damage 5d6})点冷伤害，豁免成功时受到一半伤害。当墙的其余部分消失时，这片寒冷的空气也会消散。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/tokens/ice_devil-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/ice_devil-portrait.webp"
+						}
+					}
+				]
+			},
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Pit Fiend, enhanced",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 300,
+				"formula": "24d10 + 168"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 26,
+			"dex": 14,
+			"con": 24,
+			"int": 22,
+			"wis": 18,
+			"cha": 24,
+			"save": {
+				"dex": "+8",
+				"con": "+13",
+				"wis": "+10"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"坑穴恶魔的施法能力是魅力（法术豁免{@dc 21}）。坑穴恶魔可以天生施放以下法术，无需材料组件："
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell fireball} (as a 7th-level spell)"
+					],
+					"daily": {
+						"3e": [
+							"{@spell hold monster} (as a 7th-level spell)",
+							"{@spell wall of fire} (as a 7th-level spell)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"任何对坑魔敌对的生物，在距离坑魔20英尺内开始其回合时，必须进行一次 {@dc 21} 意志豁免，除非坑魔处于 {@condition incapacitated}。",
+						"在未通过豁免检定时，生物会在其下一个回合开始前处于 {@condition frightened} 状态。如果生物的豁免检定成功，该生物在接下来的 24 小时内对恶魔领主的恐惧光环免疫。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"坑穴恶魔在对抗法术和其他魔法效果的豁免 throws 中拥有优势。"
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"坑穴恶魔的武器攻击是魔法的。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"深渊恶魔进行三次攻击，可以选择咬、爪、狼牙棒或尾部攻击，但其中只能有两次是相同的攻击。"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw}进行攻击，达到5英尺。造成{@h}22({@damage 4d6 + 8})点穿刺伤害。目标必须成功进行",
+						"进行{@dc 21}宪法豁免才能，否则成为{@condition poisoned}。在这种状态下，目标无法恢复生命值，并且在每个回合开始时受到21({@damage 6d6})毒素伤害。",
+						"目标{@condition poisoned}可以在每个回合结束时重复进行豁免才能检定，若成功则效果结束。"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 14} 命中，达到10英尺。造成{@h}17 ({@damage 2d8 + 8}) 斩击伤害，恶魔深渊领主回复等同于攻击造成的伤害的生命值。"
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 14} 命中，达到10英尺。造成15 ({@damage 2d6 + 8}) 钝击伤害加上21 ({@damage 6d6}) 火焰伤害。"
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} 命中，达到10英尺。造成{@h}24 ({@damage 3d10 + 8}) 钝击伤害。如果目标是中型或更小，它必须成功进行一次{@dc 21} 力量豁免检定，否则被击倒。"
+					]
+				},
+				{
+					"name": "Fireball",
+					"entries": [
+						"深渊恶魔向150英尺内的一个点投掷一个火球。在以该点为中心的20英尺半径球体内的每个生物必须进行一次{@dc 21}敏捷豁免投。未通过豁免的目标将受到42({@damage 12d6})火焰伤害，通过豁免的目标则只受到一半伤害。火焰会绕过拐角传播，点燃该区域内未被穿戴或携带的易燃物品。"
+					]
+				},
+				{
+					"name": "Hold Monster (3/Day)",
+					"entries": [
+						"在距离坑魔（Pit Fiend）90英尺以内且彼此相距不超过30英尺的地方，坑魔可以选择最多三个生物。这些生物必须通过一次{@dc 21}的感知豁免检定，否则将在1分钟内或者坑魔失去集中力之前，成为{@condition paralyzed}。",
+						"这个法术对不死族无效。在目标的每个回合结束时，目标可以再次进行一次感知豁免投骰。如果成功，法术对目标结束。"
+					]
+				},
+				{
+					"name": "Wall of Fire (3/Day)",
+					"entries": [
+						"深渊恶魔在射程内的坚固表面上创造一堵火墙。这堵墙长达60英尺，高20英尺，厚1英尺，或者是一个直径长达20英尺，高20英尺，厚1英尺的环形墙。这堵墙是不透明的，持续1分钟，或者直到深渊恶魔失去集中力。当墙出现时，其区域内的每个生物必须进行一次{@dc 21}敏捷豁免投。未通过豁免的生物会受到36（{@damage 8d8}）火焰伤害，通过豁免的生物受到一半伤害。深渊恶魔在创造墙壁时选择的一侧会对靠近该侧10英尺内或墙内结束回合的每个生物造成36（{@damage 8d8}）火焰伤害。生物第一次进入墙壁或结束回合时也会受到相同伤害。另一侧不会造成伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"I",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"paralyzed"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/tokens/pit_fiend-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/pit_fiend-portrait.webp"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"mace|phb"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Bearded Devil",
+			"source": "EnhancedDevils",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 15,
+			"int": 9,
+			"wis": 11,
+			"cha": 11,
+			"save": {
+				"str": "+5",
+				"con": "+4",
+				"wis": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"恶魔的天生施法能力是感知（法术豁免 {@dc 10}，用法术攻击命中 {@hit 2}）。它天生可以施放以下法术，无需任何材料。"
+					],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell silence}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"魔法黑暗不会妨碍恶魔的黑暗视觉。"
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"恶魔在对抗法术和其他魔法效果的豁免 throws 中拥有优势。 (The devil)"
+					]
+				},
+				{
+					"name": "Steadfast",
+					"entries": [
+						"当它能看到30英尺内的一个友方生物时，恶魔无法成为{@condition frightened}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"恶魔发动两次攻击：一次用它的胡须，一次用它的戈（glaive）。"
+					]
+				},
+				{
+					"name": "Beard",
+					"entries": [
+						"{@atk mw} {@hit 5}命中，达到5英尺。{@h}6 ({@damage 1d8 + 2})穿刺伤害，并且目标必须成功进行一次{@dc 12}体质豁免才能在1分钟内被{@condition poisoned}。在这种方式下，目标无法恢复生命值。目标可以在自己的每个回合结束时重复进行豁免才能，成功则结束效果。"
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，达到10英尺。造成 {@h}88 ({@damage 1d10 + 3}) 切割伤害。如果目标是一名不死生物或构造体以外的生物，它必须成功进行一次 {@dc 12} 体质豁免才能避免因地狱伤口而在每个回合开始时失去5 ({@dice 1d10}) 生命值。每当恶魔用这次攻击命中受伤的目标时，伤口造成的伤害就会增加5 ({@dice 1d10})。任何生物都可以采取行动，通过成功进行一次 {@dc 12} 智慧（医学）检定来止住伤口。如果目标接受了魔法治疗，伤口也会愈合。"
+					]
+				},
+				{
+					"name": "Devastating Strike",
+					"entries": [
+						"恶魔使用优势进行长戈攻击。如果攻击命中，目标在对来自其地狱伤口的伤害进行豁免时有劣势。"
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"deafened"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/tokens/bearded_devil-token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/EDevils/bearded_devil-portrait.webp"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"glaive|phb"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		}
+	]
+}
