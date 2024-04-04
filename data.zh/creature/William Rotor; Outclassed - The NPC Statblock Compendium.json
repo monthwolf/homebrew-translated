@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
 		"sources": [
 			{
@@ -18,7 +19,7 @@
 			}
 		],
 		"dateAdded": 1661975645,
-		"dateLastModified": 1710696458,
+		"dateLastModified": 1712246199,
 		"dependencies": {
 			"monster": [
 				"MM",
@@ -28,7 +29,7 @@
 		"internalCopies": [
 			"monster"
 		],
-		"_dateLastModifiedHash": "dc30a08bd4"
+		"_dateLastModifiedHash": "657340a9bb"
 	},
 	"monster": [
 		{
@@ -499,8 +500,7 @@
 					"name": "Innate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"继承者的施法能力是 (%num%)。",
-						"它可以天生施放以下法术："
+						"The inheritor's spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can cast the following spells innately:"
 					],
 					"daily": {
 						"1e": [
@@ -1165,13 +1165,13 @@
 				{
 					"name": "Hunt",
 					"entries": [
-						"潜行者移动他的速度并执行搜索动作。"
+						"The Prowler moves up to his speed and takes the {@action Search} action."
 					]
 				},
 				{
 					"name": "Skulk",
 					"entries": [
-						"潜行者移动他的速度并采取躲藏动作。"
+						"The Prowler moves up to his speed and takes the {@action Hide} action."
 					]
 				},
 				{
@@ -1272,25 +1272,27 @@
 				{
 					"name": "Blood Points",
 					"entries": [
-						"当这位血腥狂怒者在上一回合受到超过20点伤害时，它在本回合选择以下效果之一："
-					]
-				},
-				{
-					"name": "Empowered Attack",
-					"entries": [
-						"血腥狂暴者在第一次命中攻击时额外增加10点伤害。"
-					]
-				},
-				{
-					"name": "Empowered Senses",
-					"entries": [
-						"在血腥狂怒者的回合结束前，他可以将{@condition invisible}生物视为在60英尺范围内可见。"
-					]
-				},
-				{
-					"name": "Empowered Speed",
-					"entries": [
-						"直到其回合结束，血之暴怒者的速度增加30英尺。"
+						"当这位血腥狂怒者在上一回合受到超过20点伤害时，它在本回合选择以下效果之一：",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Empowered Attack",
+									"entry": "血腥狂暴者在第一次命中攻击时额外增加10点伤害。"
+								},
+								{
+									"type": "item",
+									"name": "Empowered Senses",
+									"entry": "在血腥狂怒者的回合结束前，他可以将{@condition invisible}生物视为在60英尺范围内可见。"
+								},
+								{
+									"type": "item",
+									"name": "Empowered Speed",
+									"entry": "直到其回合结束，血之暴怒者的速度增加30英尺。"
+								}
+							]
+						}
 					]
 				},
 				{
@@ -1322,8 +1324,7 @@
 				{
 					"name": "Battleaxe",
 					"entries": [
-						"{@atk mw} {@hit 6} 进行攻击，射程5英尺，目标一个。造成{@h}7 ({@damage 1d8 + 3}) 斩击伤害，或8 ({@dice 1d10}",
-						"+ 3) 如果双手使用，造成割伤伤害。"
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
 					]
 				}
 			],
@@ -1550,43 +1551,43 @@
 				{
 					"name": "Mercury Action",
 					"entries": [
-						"狂战士掷骰子{@dice 1d6}，并执行下面相应的动作。"
-					]
-				},
-				{
-					"name": "1: Charge",
-					"entries": [
-						"狂战士选择一个距离自己至少20英尺的可见生物，并向其移动自己的速度，然后如果在攻击范围内，对其进行战斧攻击。命中后，目标额外受到11点伤害({@damage 2d10})，若该生物为大型或更小，则必须成功进行一次力量豁免才能不被击倒{@condition prone}。"
-					]
-				},
-				{
-					"name": "2: Escape",
-					"entries": [
-						"狂战士采取了闪避（Dodge）、脱离战斗（Disengage）和冲刺（Dash）的动作。"
-					]
-				},
-				{
-					"name": "3: Flurry",
-					"entries": [
-						"狂战士用他的战斧进行三次攻击。"
-					]
-				},
-				{
-					"name": "4: Power Strike",
-					"entries": [
-						"狂战士进行一次战斧攻击，其命中加值为+7。命中时，狂战士造成一次暴击。"
-					]
-				},
-				{
-					"name": "5: Rejuvenate",
-					"entries": [
-						"狂战士回复了10点生命值并获得了10点临时生命值。"
-					]
-				},
-				{
-					"name": "6: Teleport",
-					"entries": [
-						"狂战士使用魔法传送到最多120尺内可见的空地。如果它传送到离生物不到5尺的地方，它可以对该生物进行一次战斧攻击。"
+						"狂战士掷骰子{@dice 1d6}，并执行下面相应的动作。",
+						{
+							"type": "list",
+							"style": "list-decimal",
+							"items": [
+								{
+									"type": "item",
+									"name": "Charge",
+									"entry": "狂战士选择一个距离自己至少20英尺的可见生物，并向其移动自己的速度，然后如果在攻击范围内，对其进行战斧攻击。命中后，目标额外受到11点伤害({@damage 2d10})，若该生物为大型或更小，则必须成功进行一次力量豁免才能不被击倒{@condition prone}。"
+								},
+								{
+									"type": "item",
+									"name": "Escape",
+									"entry": "The berserker takes the {@action Dodge}, {@action Disengage}, and {@action Dash} actions."
+								},
+								{
+									"type": "item",
+									"name": "Flurry",
+									"entry": "狂战士用他的战斧进行三次攻击。"
+								},
+								{
+									"type": "item",
+									"name": "Power Strike",
+									"entry": "The berserker makes one battleaxe attack, and its to-hit bonus is {@hit 7}. On a hit, the berserker scores a critical hit."
+								},
+								{
+									"type": "item",
+									"name": "Rejuvenate",
+									"entry": "狂战士回复了10点生命值并获得了10点临时生命值。"
+								},
+								{
+									"type": "item",
+									"name": "Teleport",
+									"entry": "狂战士使用魔法传送到最多120尺内可见的空地。如果它传送到离生物不到5尺的地方，它可以对该生物进行一次战斧攻击。"
+								}
+							]
+						}
 					]
 				}
 			],
@@ -1616,22 +1617,22 @@
 								{
 									"type": "item",
 									"name": "Beast Shape.",
-									"entry": "狂战士变身为1级或更低级别的野兽，通常是一只棕熊。它的装备融入新形态中，保留其智力、感知和魅力分数，以及其生命值。它可以立即执行野兽的一个动作。狂战士在被杀死或在下一个回合开始时恢复到原始形态。"
+									"entry": "The berserker transforms into a beast of CR 1 or lower, usually a {@creature brown bear}. Its equipment melds into its new form and it retains its Intelligence, Wisdom, and Charisma scores, as well as its hit points. It can immediately take one of the beast's actions. The berserker reverts to its original form when it is killed or at the beginning of its next turn."
 								},
 								{
 									"type": "item",
 									"name": "Challenge.",
-									"entry": "狂战士挑战距离其60英尺以内、能看见并听见它的生物。目标必须进行一次DC 11的感知豁免检定。未通过检定的目标在攻击除狂战士以外的生物时有劣势，并且不能自愿远离狂战士。无论目标成功与否，狂战士随后可以进行一次攻击。"
+									"entry": "The berserker challenges a creature within 60 feet of it that can see and hear it. The target must make a {@dc 11} Wisdom saving throw. On a failed save, the target has disadvantage on attack rolls against creatures other than the berserker, and it can't willingly move further away from the berserker. Whether the target succeeds or fails, the berserker can then make one attack."
 								},
 								{
 									"type": "item",
 									"name": "Frighten.",
-									"entry": "每个在离狂战士30英尺范围内、能看见并听到它的敌对生物，必须通过一次DC 11的感知豁免检定，否则会在狂战士的下一个回合结束前变得受到惊吓。"
+									"entry": "Each hostile creature within 30 feet of the berserker that can see and hear it must succeed on a {@dc 11} Wisdom saving throw or become {@condition frightened} until the end of the berserker's next turn."
 								},
 								{
 									"type": "item",
 									"name": "Grow.",
-									"entry": "狂战士在其下一个回合结束前变成一个大型生物，获得在力量豁免和能力检定上的优势，并在攻击中获得额外1d10点伤害。然后，狂战士进行一次攻击。"
+									"entry": "The berserker becomes a Large creature until the end of its next turn, gaining advantage on Strength saving throws and ability checks and a bonus {@damage 1d10} damage on its attacks. The berserker then makes one attack."
 								},
 								{
 									"type": "item",
@@ -1641,7 +1642,7 @@
 								{
 									"type": "item",
 									"name": "Wild Magic Surge.",
-									"entry": "狂战士在狂野魔法突发表（PHB 104）上进行骰掷，但有以下变化。任何持续效果在1分钟后或狂战士死亡时结束。"
+									"entry": "The berserker rolls on the {@table Wild Magic Surge|PHB} table, with the following changes. Any ongoing effects end after 1 minute or when the berserker dies."
 								},
 								{
 									"type": "list",
@@ -2235,7 +2236,7 @@
 				{
 					"name": "Wild Magic Initiative",
 					"entries": [
-						"当狂战士（Berserker）进行先攻骰点时，它需要在《狂野魔法涌现（Wild Magic Surge）》表上骰两次，并选择其中任意一个结果。如果它两次骰到相同的数字，它可以在表上选择任意一个结果。"
+						"When the berserker rolls initiative, it rolls twice on the {@table Wild Magic Surge|PHB} table and uses either result. If it rolls the same number twice, it can choose any result on the table."
 					]
 				}
 			],
@@ -2257,7 +2258,7 @@
 				{
 					"name": "Wild Magic Reaction",
 					"entries": [
-						"当狂战士受到伤害时，它在狂野魔法突发表上投掷两次，并使用其中任意一个结果。如果它两次投掷相同的数字，它可以在表上选择任意一个结果。"
+						"When the berserker takes damage, it rolls twice on the {@table Wild Magic Surge|PHB} table and uses either result. If it rolls the same number twice, it can choose any result on the table."
 					]
 				}
 			],
@@ -2941,8 +2942,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法庭辩论者是一名4级法术施展者。",
-						"它的施法能力是魅力（法术豁免 {@dc 13}，用法术攻击命中时为 {@hit 5}）。它准备了以下吟游诗人法术。"
+						"The court debater is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following bard spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -2977,13 +2977,13 @@
 				{
 					"name": "Facts Don't Care About Your Feelings (1/Day)",
 					"entries": [
-						"在施放平静情绪后，法庭辩论者会恢复一个2级法术位。受法庭辩论者施放的平静情绪影响的生物在专注检定时有劣势。"
+						"After casting {@spell calm emotions}, the court debater regains a 2nd level spell slot. Creatures under the effects of {@spell calm emotions} cast by the court debater have disadvantage on concentration checks."
 					]
 				},
 				{
 					"name": "Silence, Liberal (1/Day)",
 					"entries": [
-						"施放寂静后，法庭辩论者恢复了两个1级法术位。"
+						"After casting {@spell silence}, the court debater regains two 1st level spell slots."
 					]
 				}
 			],
@@ -3329,7 +3329,7 @@
 				{
 					"name": "Endless Waltz",
 					"entries": [
-						"在进行舞蹈物品进行一次猛击攻击后，它可以作为一个奖励动作采取闪避动作。"
+						"Immediately after the dancing item makes a slam attack, it can take the {@action Dodge} action as a bonus action."
 					]
 				},
 				{
@@ -3585,7 +3585,7 @@
 				{
 					"name": "Tumbler",
 					"entries": [
-						"作为一个奖励动作，小丑可以同时执行冲刺和躲闪动作。"
+						"As a bonus action, the jester can take both the {@action Dash} and {@action Disengage} actions."
 					]
 				}
 			],
@@ -3814,8 +3814,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位舞者是一名8级咒术师。这位舞者的咒术能力是魅力（法术豁免 DC）。",
-						"13，{@hit 5} 用法术攻击命中）。它会以下吟游诗人法术。"
+						"The dancer is an 8th-level spellcaster. The dancer's spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It knows the following bard spells."
 					],
 					"spells": {
 						"0": {
@@ -3867,8 +3866,7 @@
 				{
 					"name": "Spreading Shadow",
 					"entries": [
-						"当舞者（dancer）投掷先攻检定时，它选择自己和距离它不超过60英尺的最多3名盟友。",
-						"舞者选择的生物在它们的第一个回合可以额外移动20英尺，只要这个移动是在微弱光线或黑暗中，并且它们可以在第一个回合将躲避或隐藏动作作为奖励动作。"
+						"When the dancer rolls initiative, it chooses itself and up to 3 allies within 60 feet of it. Creatures chosen by the dancer can move an additional 20 feet on their first turn as long as that movement is in dim light or darkness, and they can take the {@action Disengage} or {@action Hide} action as a bonus action on their first turn."
 					]
 				}
 			],
@@ -4318,9 +4316,8 @@
 				{
 					"name": "Turn Undead (Recharges after a Short or Long Rest)",
 					"entries": [
-						"主教展示它的圣物，并祈祷。",
-						"每个能看到或听到主教的不死生物必须进行一次 {@dc 14} 感知豁免检定。如果目标是1级或更低等级的不死生物，在未通过检定的情况下将被摧毁。否则，在未通过检定的情况下，目标将被转化1分钟，或者直到它受到任何伤害。被转化的生物以自身速度远离主教，并且不能自愿靠近30英尺以内。它不能进行反应，并且必须要么使用冲刺动作，要么试图逃离阻止其移动的效果。",
-						"如果它无法移动，它可以采取闪避动作。"
+						"The bishop presents its holy symbol and speaks a prayer. Each undead that can see or hear the bishop must make a {@dc 14} Wisdom saving throw. If the target is an undead of CR 1 or lower, it is destroyed on a failed save. Otherwise, on a failed save the target is turned for 1 minute or until it takes any damage.",
+						"A turned creature moves up to its speed away from the bishop and can't willingly move within 30 feet of it. It can't take reactions and must either use the {@action Dash} action or try to escape from an effect that stops it from moving. If it can't move, it can take the {@action Dodge} action."
 					]
 				}
 			],
@@ -4486,9 +4483,8 @@
 				{
 					"name": "Turn Undead (Recharges after a Short or Long Rest)",
 					"entries": [
-						"枢机主教拿出他的圣徽并祈祷。",
-						"每个能看到或听到红衣主教的不死生物必须进行一次{@dc 16}感知豁免检定。如果目标是3级或更低等级的不死生物，则在豁免失败时被摧毁。否则，在豁免失败时，目标会被转化1分钟，或者直到受到任何伤害。一个被转化的生物会以自己的速度远离红衣主教，并且不会自愿靠近30英尺内。它不能做出反应，并且必须使用冲刺动作或者试图逃离阻止其移动的效果。",
-						"如果它无法移动，它可以采取闪避动作。"
+						"The cardinal presents its holy symbol and speaks a prayer. Each undead that can see or hear the cardinal must make a {@dc 16} Wisdom saving throw. If the target is an undead of CR 3 or lower, it is destroyed on a failed save. Otherwise, on a failed save the target is turned for 1 minute or until it takes any damage.",
+						"A turned creature moves up to its speed away from the cardinal and can't willingly move within 30 feet of it. It can't take reactions and must either use the {@action Dash} action or try to escape from an effect that stops it from moving. If it can't move, it can take the {@action Dodge} action."
 					]
 				}
 			],
@@ -4671,9 +4667,8 @@
 				{
 					"name": "Turn Undead (Recharges after a Short or Long Rest)",
 					"entries": [
-						"化身展示它的神圣符号并祈祷。",
-						"每个能看见或听见阿凡达的不死生物必须进行一次{@dc 19}感知豁免检定。如果目标是4级或更低等级的不死生物，在豁免失败时会被摧毁。否则，在豁免失败时，目标会被转化1分钟，或者直到受到任何伤害。一个被转化的生物会以自己的速度远离阿凡达，并且不能自愿移动到它的30英尺范围内。它不能做出反应，并且必须要么使用冲刺动作，要么试图摆脱阻止它移动的效果。",
-						"如果它无法移动，它可以采取闪避动作。"
+						"The avatar presents its holy symbol and speaks a prayer. Each undead that can see or hear the avatar must make a {@dc 19} Wisdom saving throw. If the target is an undead of CR 4 or lower, it is destroyed on a failed save. Otherwise, on a failed save the target is turned for 1 minute or until it takes any damage.",
+						"A turned creature moves up to its speed away from the avatar and can't willingly move within 30 feet of it. It can't take reactions and must either use the {@action Dash} action or try to escape from an effect that stops it from moving. If it can't move, it can take the {@action Dodge} action."
 					]
 				}
 			],
@@ -4807,12 +4802,11 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw,rw} {@hit 4}攻击，射程5英尺或射程20/60英尺，一个目标。造成{@h}4 ({@damage 1d4 + 2})点穿刺伤害。",
-						"摒弃超自然力量（短休或长休后重置）"
+						"{@atk mw,rw} {@hit 4}攻击，射程5英尺或射程20/60英尺，一个目标。造成{@h}4 ({@damage 1d4 + 2})点穿刺伤害。"
 					]
 				},
 				{
-					"name": "Rest)",
+					"name": "Abjure the Supernatural (Recharges after a Short or Long Rest)",
 					"entries": [
 						"祭司可以看到的30英尺内的天神、元素生物、精灵或邪恶生物必须成功进行一次{@dc 13}的感知豁免才能抵抗祭司的{@condition frightened}。在受到{@condition frightened}影响时，目标无法采取行动或反应，并且必须利用移动尽可能远离祭司。目标可以在回合结束时重复豁免检定，如果祭司不在视线内，则在成功时结束效果。"
 					]
@@ -6126,8 +6120,7 @@
 				{
 					"name": "Radiant Defense (Recharges after a Short or Long Rest)",
 					"entries": [
-						"牧师选择一个它能看到的盟友，距离不超过30英尺。",
-						"在接下来的一分钟内，第一次该生物受到攻击时，攻击者会受到16 ({@damage 3d10}) 点辐射伤害。"
+						"The priest chooses an ally it can see within 30 feet of it. The first time that creature is hit by an attack in the next minute, the attacker takes 16 ({@damage 3d10}) radiant damage."
 					]
 				}
 			],
@@ -6383,14 +6376,7 @@
 				{
 					"name": "Duplicitous Dagger",
 					"entries": [
-						"近战或远程武器攻击：",
-						"{@hit 5}攻击，射程5英尺或射程20/60英尺，目标一个。造成{@h}5({@damage 1d4 + 3})穿刺伤害，如果目标能看到牧师的幻象，则额外造成7({@damage 2d6})精神伤害。"
-					]
-				},
-				{
-					"name": "Invoke Duplicity",
-					"entries": [
-						"这是一把(+1)魔法武器。"
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, plus 7 ({@damage 2d6}) psychic damage if the target can see the priest's illusion from Invoke Duplicity. This is a +1 magic weapon."
 					]
 				},
 				{
@@ -6535,7 +6521,7 @@
 				{
 					"name": "Stay in This Moment (1/Day)",
 					"entries": [
-						"在施放庇护 (sanctuary) 后，牧师恢复了一个1级法术位。"
+						"After casting {@spell sanctuary}, the priest regains a 1st level spell slot."
 					]
 				},
 				{
@@ -6993,6 +6979,33 @@
 								"{@spell guidance}"
 							]
 						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell charm person}",
+								"{@spell create or destroy water}",
+								"{@spell faerie fire}",
+								"{@spell sleep}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell enhance ability}",
+								"{@spell invisibility}",
+								"{@spell mirror image}",
+								"{@spell moonbeam}",
+								"{@spell pass without trace}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell daylight}",
+								"{@spell meld into stone}",
+								"{@spell slow}"
+							]
+						},
 						"4": {
 							"slots": 3,
 							"spells": [
@@ -7012,11 +7025,6 @@
 							]
 						}
 					},
-					"footerEntries": [
-						"1st Level (4 slots): charm person, create or destroy water, faerie fire, sleep",
-						"2nd Level (3 slots): enhance ability, invisibility, mirror image, moonbeam, pass without trace",
-						"3rd Level (3 slots): daylight, meld into stone, slow"
-					],
 					"ability": "wis"
 				}
 			],
@@ -7024,7 +7032,7 @@
 				{
 					"name": "Moonlight Hearth",
 					"entries": [
-						"在短暂或长时间休息期间，梦境守护者触碰空间中的一个点，一个{@condition invisible}，半径30英尺的魔法球出现在该点中心。完全遮挡会阻挡这个球。",
+						"During a short or long rest, the dream guardian touches a point in space, and an invisible, 30-foot-radius sphere of magic appears, centered on that point. Total cover blocks the sphere.",
 						"在这个领域内，梦境守护者及其盟友在敏捷度检定中获得+5的加值（{@skill Stealth}），在感知检定中也获得+5的加值（{@skill Perception}），而且在这个领域内的明火光线对外部不可见。这个领域会在休息结束或梦境守护者离开领域时消失。"
 					]
 				},
@@ -7220,8 +7228,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"这位灭火者是一名9级法术施法者。",
-						"它的施法能力是智力（法术豁免 {@dc 15}，用法术攻击命中为 {@hit 7}）。它已准备了以下德鲁伊法术。"
+						"The flamefighter is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following druid spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -7578,8 +7585,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"沙漠萨满是一个6级的法术施法者。",
-						"它的施法能力是智力（施法豁免 {@dc 13}，用法术攻击命中 {@hit 5}）。它准备了以下德鲁伊法术。"
+						"The sand shaman is a 6th level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following druid spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -8388,7 +8394,7 @@
 					"name": "Ritual Sacrifice",
 					"entries": [
 						"当德鲁伊将一只生物的生命值降至0时，该生物死亡，德鲁伊可以立即施放以下其中一个法术，无需材料组件，并立即触发其效果。一旦它施放了其中一个仪式法术，就不能再使用这个特性施放相同的法术，直到完成一次长休。智慧是这些法术的施法能力（法术豁免 {@dc 17}，法术攻击命中加值 {@hit 9}）。",
-						"仪式法术：{@spell augury}，与自然{@spell commune}，{@spell find familiar}，{@spell forbiddance}（造成死灵伤害并以人形生物为目标），{@spell meld into stone}，{@spell silence}"
+						"Ritual Spells: {@spell augury}, {@spell commune with nature}, {@spell find familiar}, {@spell forbiddance} (deals necrotic damage and targets humanoids), {@spell meld into stone}, {@spell silence}"
 					]
 				}
 			],
@@ -8546,6 +8552,27 @@
 								"{@spell druidcraft}"
 							]
 						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell disguise self}",
+								"{@spell sleep}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell gentle repose}",
+								"{@spell ray of enfeeblement}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell gaseous form}"
+							]
+						},
 						"4": {
 							"slots": 3,
 							"spells": [
@@ -8561,11 +8588,6 @@
 							]
 						}
 					},
-					"footerEntries": [
-						"1st Level (4 slots): disguise self, sleep",
-						"2nd Level (3 slots): gentle repose, ray of enfeeblement",
-						"3rd Level (3 slots): animate dead, gaseous form"
-					],
 					"ability": "wis"
 				}
 			],
@@ -8892,8 +8914,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"星图绘制者是一名3级法术施展者。",
-						"它的施法能力是智力（施法豁免 {@dc 14}，用法术攻击命中为{@hit 6}）。它已准备了以下德鲁伊法术。"
+						"The starmapper is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following druid spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -9043,12 +9064,8 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"乞丐僧用他的(%num%)次攻击。"
+						"The mendicant makes two attacks with its Harvest's Scythe."
 					]
-				},
-				{
-					"name": "Harvest's Scythe",
-					"entries": []
 				},
 				{
 					"name": "Harvest's Scythe",
@@ -9439,7 +9456,7 @@
 							"items": [
 								{
 									"type": "item",
-									"name": "Commander's Strike (Recharge 5-6).",
+									"name": "Commander's Strike {@recharge 5}.",
 									"entry": "作为一个奖励动作，战争大师选择一个距离自己30英尺以内、能看见并听到自己的友方生物。那个生物可以立即使用其反应进行一次武器攻击。"
 								},
 								{
@@ -9484,8 +9501,8 @@
 								},
 								{
 									"type": "item",
-									"name": "Rally (Recharge 5-6).",
-									"entry": "作为一个奖励动作，战争大师选择距离它30英尺以内、能看见并听到它的最多3个友方生物。每个目标获得5（1d6 + 2）点临时生命值。"
+									"name": "Rally {@recharge 5}.",
+									"entry": "As a bonus action, the battlemaster chooses up to 3 friendly creatures within 30 feet of it that can see and hear it. Each target gains 5 ({@dice 1d6 + 2}) temporary hit points."
 								},
 								{
 									"type": "item",
@@ -9621,7 +9638,7 @@
 							"items": [
 								{
 									"type": "item",
-									"name": "Commander's Strike (Recharge 5-6).",
+									"name": "Commander's Strike {@recharge 5}.",
 									"entry": "作为一个奖励动作，战争大师选择一个距离自己30英尺以内、能看见并听到自己的友方生物。那个生物可以立即使用其反应进行一次武器攻击。"
 								},
 								{
@@ -9666,8 +9683,8 @@
 								},
 								{
 									"type": "item",
-									"name": "Rally (Recharge 5-6).",
-									"entry": "作为一个奖励动作，战争大师选择距离它30英尺以内、能看见并听到它的最多3个友方生物。每个目标获得5（1d6 + 2）点临时生命值。"
+									"name": "Rally {@recharge 5}.",
+									"entry": "As a bonus action, the battlemaster chooses up to 3 friendly creatures within 30 feet of it that can see and hear it. Each target gains 5 ({@dice 1d6 + 2}) temporary hit points."
 								},
 								{
 									"type": "item",
@@ -9807,7 +9824,7 @@
 							"items": [
 								{
 									"type": "item",
-									"name": "Commander's Strike (Recharge 5-6).",
+									"name": "Commander's Strike {@recharge 5}.",
 									"entry": "作为一个奖励动作，战争大师选择一个距离自己30英尺以内、能看见并听到自己的友方生物。那个生物可以立即使用其反应进行一次武器攻击。"
 								},
 								{
@@ -9852,8 +9869,8 @@
 								},
 								{
 									"type": "item",
-									"name": "Rally (Recharge 5-6).",
-									"entry": "作为一个奖励动作，战争大师选择距离它30英尺以内、能看见并听到它的最多3个友方生物。每个目标获得5（1d6 + 2）点临时生命值。"
+									"name": "Rally {@recharge 5}.",
+									"entry": "As a bonus action, the battlemaster chooses up to 3 friendly creatures within 30 feet of it that can see and hear it. Each target gains 5 ({@dice 1d6 + 2}) temporary hit points."
 								},
 								{
 									"type": "item",
@@ -9998,7 +10015,7 @@
 							"items": [
 								{
 									"type": "item",
-									"name": "Commander's Strike (Recharge 5-6).",
+									"name": "Commander's Strike {@recharge 5}.",
 									"entry": "作为一个奖励动作，战争大师选择一个距离自己30英尺以内、能看见并听到自己的友方生物。那个生物可以立即使用其反应进行一次武器攻击。"
 								},
 								{
@@ -10043,7 +10060,7 @@
 								},
 								{
 									"type": "item",
-									"name": "Rally (Recharge 5-6).",
+									"name": "Rally {@recharge 5}.",
 									"entry": "作为一个奖励动作，战争大师选择距离它30英尺以内、能看见并听到它的最多3个友方生物。每个目标获得5（1d6 + 2）点临时生命值。"
 								},
 								{
@@ -10619,7 +10636,7 @@
 				{
 					"name": "Mask of the Wild",
 					"entries": [
-						"当被自然现象轻微遮挡时，弓箭手可以采取躲藏动作。"
+						"The archer can take the {@action Hide} action when lightly obscured by natural phenomena."
 					]
 				}
 			],
@@ -10823,8 +10840,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"灵能战士进行两次武器攻击。",
-						"它可以用其心灵打击或其念动壁垒中的一个来替换这些攻击。"
+						"The psi warrior makes two weapon attacks. It can exchange one of these attacks for its Psi Strike or its Telekinetic Bulwark."
 					]
 				},
 				{
@@ -10848,8 +10864,7 @@
 				{
 					"name": "Telekinetic Bulwark (1/Day)",
 					"entries": [
-						"灵能战士在自身周围10英尺半径范围内投射一个力场，持续1分钟或直到灵能战士达到{@condition incapacitated}状态。",
-						"在影响范围内的灵能战士及其盟友获得半掩体的益处，并在力量豁免检定中获得优势。"
+						"The psi warrior projects a forcefield in a 10-foot radius around itself, which lasts for 1 minute or until the psi warrior is {@condition incapacitated}. The psi warrior and its allies within the area of effect gain the benefits of half cover and have advantage on Strength saving throws."
 					]
 				}
 			],
@@ -10921,9 +10936,6 @@
 				"special": "{@item calligrapher's supplies|phb} {@d20 6}, {@item mason's tools|phb} {@d20 3}, {@item woodcarver's tools|phb} {@d20 3}"
 			},
 			"passive": 11,
-			"resist": [
-				"cold"
-			],
 			"languages": [
 				"any three languages",
 				"at least one of which is usually an exotic language"
@@ -10934,45 +10946,23 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"符文铭刻师是一名2级咒术师。",
-						"它的施法能力是智力。它可以施放以下法术。"
+						"The rune scribe is a 2nd-level spellcaster. Its spellcasting ability is Intelligence. It can cast the following spells."
 					],
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell mending}",
-								"{@spell 1st-level} (3 slots): comprehend languages",
+								"{@spell mending}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell comprehend languages}",
 								"{@spell identify}"
 							]
 						}
 					},
 					"ability": "int"
-				}
-			],
-			"action": [
-				{
-					"name": "Ild Rapier",
-					"entries": [
-						"{@atk mw} {@hit 4}攻击，射程5英尺，目标一个。{@h}6 ({@damage 1d8 + 2})火焰伤害。这是一把魔法武器。"
-					]
-				},
-				{
-					"name": "Combustion {@recharge 5}",
-					"entries": [
-						"符文铭刻者用灰烬在距其位置5英尺内的生物身上标记伊尔德符文。该生物立即受到11 ({@damage 2d10}) 火焰伤害。"
-					]
-				},
-				{
-					"name": "Ignite",
-					"entries": [
-						"符文铭刻者用灰烬在易燃物上标记火焰符文（Ild Rune）。那个物体立刻燃起了熊熊大火。"
-					]
-				},
-				{
-					"name": "Fire Tamer",
-					"entries": [
-						"符文铭刻者用手在明火上划过伊尔德符文。符文铭刻者可以按照{@spell control flames|XGE}法术操纵火焰。"
-					]
 				}
 			],
 			"languageTags": [
@@ -10987,6 +10977,198 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "Ild Rune Scribe",
+			"source": "OCLD",
+			"page": 113,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/mSaqXY9.png"
+			},
+			"_copy": {
+				"name": "Rune Scribe",
+				"source": "OCLD",
+				"_mod": {
+					"resist": {
+						"mode": "appendArr",
+						"items": [
+							"cold"
+						]
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Ild Rapier",
+								"entries": [
+									"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) fire damage. This is a magic weapon."
+								]
+							},
+							{
+								"name": "Combustion {@recharge 5}",
+								"entries": [
+									"The rune scribe marks the Ild Rune with ash on a creature within 5 feet of its position. The creature immediately takes 11 ({@damage 2d10}) fire damage."
+								]
+							},
+							{
+								"name": "Ignite",
+								"entries": [
+									"The rune scribe marks the Ild Rune with ash on a flammable object. That object immediately bursts into flames."
+								]
+							},
+							{
+								"name": "Fire Tamer",
+								"entries": [
+									"The rune scribe traces the Ild Rune with its hand over an open flame. The rune scribe can manipulate the flame as per the {@spell control flames|XGE} spell."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Stein Rune Scribe",
+			"source": "OCLD",
+			"page": 113,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/mSaqXY9.png"
+			},
+			"str": 15,
+			"_copy": {
+				"name": "Rune Scribe",
+				"source": "OCLD",
+				"_mod": {
+					"conditionImmune": {
+						"mode": "appendArr",
+						"items": [
+							"petrified"
+						]
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Stein Mace",
+								"entries": [
+									"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage. If the rune scribe scores a critical hit, the target is knocked prone. This is a magic weapon that ignores resistances and immunities to bludgeoning damage."
+								]
+							},
+							{
+								"name": "Indomitable Stand",
+								"entries": [
+									"The rune scribe scratches the Stein Rune with a chisel into the ground at its feet. Until it moves, it gains advantage on all ability checks and saving throws that would force it to move, and it can force a creature that moves within 10 feet of its position to succeed on a {@dc 14} Strength saving throw or have its movement speed reduced to 0 until the start of its next turn."
+								]
+							},
+							{
+								"name": "Stone's Secrets",
+								"entries": [
+									"The rune scribe scratches the Stein Rune with a chisel into a stone wall or ϐloor. It learns the location and size of any creatures touching the surface within 30 feet of its position at the moment it completes the rune."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Vind Rune Scribe",
+			"source": "OCLD",
+			"page": 113,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/mSaqXY9.png"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"_copy": {
+				"name": "Rune Scribe",
+				"source": "OCLD",
+				"_mod": {
+					"conditionImmune": {
+						"mode": "appendArr",
+						"items": [
+							"poisoned"
+						]
+					},
+					"immune": {
+						"mode": "appendArr",
+						"items": [
+							"poison"
+						]
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Vind Whip",
+								"entries": [
+									"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage. While holding this magic weapon, the rune scribe does not suffer disadvantage due to range."
+								]
+							},
+							{
+								"name": "Longbow",
+								"entries": [
+									"{@atk rw} {@hit 4} to hit, range 600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Kalt Rune Scribe",
+			"source": "OCLD",
+			"page": 113,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/mSaqXY9.png"
+			},
+			"str": 15,
+			"_copy": {
+				"name": "Rune Scribe",
+				"source": "OCLD",
+				"_mod": {
+					"resist": {
+						"mode": "appendArr",
+						"items": [
+							"fire"
+						]
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Kalt War Pick",
+								"entries": [
+									"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) cold damage. This is a magic weapon."
+								]
+							},
+							{
+								"name": "Frigid Touch",
+								"entries": [
+									"The rune scribe traces the Kalt Rune with its foot over a body of water. The water freezes in a 10-foot radius around the rune."
+								]
+							},
+							{
+								"name": "Icy Mantle {@recharge}",
+								"entries": [
+									"The rune scribe paints the Kalt Rune with water on itself or a willing creature, forming a mantle of ice that lasts for 1 minute. While the mantle is active, the next time the target takes damage, the damage is reduced to 0 and the mantle is destroyed."
+								]
+							}
+						]
+					}
+				}
+			}
 		},
 		{
 			"name": "Samurai",
@@ -11407,8 +11589,7 @@
 				{
 					"name": "Sylvan Spear",
 					"entries": [
-						"这位求生专家的长矛攻击是魔法的。",
-						"生存专家对于任何在过去一分钟内被生存专家的矛击中的生物施放的法术豁免有优势。生存专家可以在奖励动作中魔法地将其矛召唤到手中。如果生存专家死亡，矛将失去其魔法效果。"
+						"The survivalist's spear attacks are magical. The survivalist has advantage on saving throws against spells cast by any creature hit by the survivalist's spear in the past minute. The survivalist can magically summon its spear to its hand as a bonus action. The spear loses its magic if the survivalist dies."
 					]
 				}
 			],
@@ -11791,8 +11972,7 @@
 				{
 					"name": "Words of the Spirit",
 					"entries": [
-						"当星界精灵说话时，它的声音可以传达到600英尺以外。",
-						"或者，它可以选择只有它能看到的30英尺内的某些生物能听到它的话语。"
+						"When the astral spirit speaks, it can make its voice be heard up to 600 feet away. Alternatively, it can choose only certain creatures it can see within 30 feet of it to be able to hear its words."
 					]
 				}
 			],
@@ -12044,7 +12224,7 @@
 				{
 					"name": "Bleeding Edge",
 					"entries": [
-						"作为一个奖励动作，(the bender)可以将其生命值减少任意数量，最多不超过7点，直到回合结束，每失去1点生命值，速度就增加5英尺。或者，它可以选择减少7点生命值来执行闪避动作。"
+						"As a bonus action, the bender reduces its hit points by any amount up to 7 and until the end of its turn increases its speed by 5 feet for each hit point lost in this manner. Alternatively, it can instead reduce its hit points by 7 to take the {@action Dodge} action."
 					]
 				},
 				{
@@ -12261,8 +12441,7 @@
 				{
 					"name": "Drunken Technique",
 					"entries": [
-						"醉拳师在自己的回合移动时不会触发机会攻击。",
-						"此外，当{@condition prone}时，醉拳师可以花费5英尺的移动来站起来。"
+						"The drunken master does not trigger opportunity attacks when it moves on its turn. Also, when {@condition prone}, the drunken master can spend 5 feet of movement to stand up."
 					]
 				},
 				{
@@ -12627,8 +12806,7 @@
 				{
 					"name": "Katana",
 					"entries": [
-						"{@atk mw} {@hit 5} 进行攻击，达到5英尺，一个目标。造成{@h}7 ({@damage 1d8 + 3}) 斩击伤害，或8 ({@dice 1d10}",
-						"+ 3) 如果双手使用，造成割伤伤害。"
+						"{@atk mw} {@hit 5}攻击，达到5英尺，一个目标。造成{@h}7 ({@damage 1d8 + 3})点劈砍伤害，或者如果双手使用则造成8 ({@damage 1d10 + 3})点劈砍伤害。"
 					]
 				},
 				{
@@ -12648,8 +12826,7 @@
 				{
 					"name": "Deflect Missile",
 					"entries": [
-						"当被远程武器攻击击中时，剑圣可以偏转导弹。它从攻击中受到的伤害减少了14 ({@dice 2d10}",
-						"+ 3) 导弹被摧毁。"
+						"In response to being hit by a ranged weapon attack, the kensei deflects the missile. The damage it takes from the attack is reduced by 14 ({@damage 2d10 + 3}) and the missile is destroyed."
 					]
 				}
 			],
@@ -13045,7 +13222,7 @@
 				{
 					"name": "Unarmored Defense",
 					"entries": [
-						"当僧侣没有穿戴盔甲时，其盔甲等级包括其智力调整值(Wisdom modifier)。"
+						"While the monk isn't wearing armor, its armor class includes its Wisdom modifier."
 					]
 				}
 			],
@@ -13053,13 +13230,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"这位僧侣用它的太阳 (Sun) 进行两次攻击。"
-					]
-				},
-				{
-					"name": "Bolt",
-					"entries": [
-						"如果可用，它可以使用其(Radiant Swathe)。"
+						"The monk makes two attacks with its Sun Bolt. It can then use its Radiant Swathe, if available."
 					]
 				},
 				{
@@ -13151,7 +13322,7 @@
 				{
 					"name": "Patient Defense",
 					"entries": [
-						"宁静大师可以利用其奖励动作来执行闪避动作。"
+						"The tranquil master can use its bonus action to take the {@action Dodge} action."
 					]
 				},
 				{
@@ -13165,7 +13336,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"宁静大师进行三次无武器攻击，或者进行两次无武器攻击然后使用其疗愈之手。"
+						"The tranquil master makes three attacks with its unarmed strike, or it makes two attacks with its unarmed strike then uses its Healing Hands."
 					]
 				},
 				{
@@ -13183,13 +13354,7 @@
 				{
 					"name": "Healing Hands",
 					"entries": [
-						"宁静大师触摸一个愿意的生物。目标恢复宁静大师选择的数量的生命值，这些生命值来自于宁静大师的治疗力量。"
-					]
-				},
-				{
-					"name": "Pool",
-					"entries": [
-						"作为另一种选择，宁静大师可以花费其20生命值池中的5点生命值来治愈目标身上的一种疾病或毒素。宁静大师可以从20生命值池中汲取生命值，用于使用其治疗之手动作。当它完成一次长休后，生命值池会重新填满。"
+						"The tranquil master touches a willing creature. The target regains a number of hit points of the tranquil master's choice, drawn from its Healing Pool. Alternatively, the tranquil master can spend 5 hit points from its pool to cure one disease or one poison afflicting the target. The tranquil master has a pool of 20 hit points it can draw from to use its Healing Hands action. It replenishes the pool when it completes a long rest."
 					]
 				}
 			],
@@ -13728,8 +13893,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"该角色使用其《放逐敌人》（Abjure Enemy），如果可以的话。",
-						"接着用它的大槌进行三次攻击。"
+						"The aspect uses its Abjure Enemy, if it can. It then makes three attacks with its maul."
 					]
 				},
 				{
@@ -15287,15 +15451,13 @@
 				{
 					"name": "Halberd of Material Superiority",
 					"entries": [
-						"近战武器攻击：",
-						"{@hit 5}攻击，射程10英尺，一个目标。造成{@h}8({@damage 1d10 + 3})点劈砍伤害，如果目标不是来自物质平面，则额外造成4({@damage 1d8})点力场伤害。这是一把魔法武器。"
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage, plus 4 ({@damage 1d8}) force damage if the creature is not from the material plane. This is a magic weapon."
 					]
 				},
 				{
 					"name": "Abjure the Extraplanar (1/Day)",
 					"entries": [
-						"骑士周围30英尺范围内的每个元素生物、仙灵、邪物或畸变生物，只要能听到它的声音，必须进行一次{@dc 13}感知豁免投掷。",
-						"在未通过豁免检定时，生物会被转变1分钟，或直到受到伤害。被转变的生物必须花费它的回合尝试尽可能远离骑士，且不能自愿移动到距离骑士30英尺以内的空间。它只能使用冲刺动作或试图摆脱阻止其移动的效果。如果没有地方可以移动，生物可以使用躲闪动作。"
+						"Each elemental, fey, fiend, or aberration within 30 feet of the knight that can hear it must make a {@dc 13} Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from the knight as it can, and it can't willingly move to a space within 30 feet of the knight. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action."
 					]
 				},
 				{
@@ -15680,7 +15842,7 @@
 				{
 					"name": "Animal Companion",
 					"entries": [
-						"兽王与兽结成了羁绊，兽就是它的动物伙伴。这个伙伴会自行行动，但会听从兽王的命令。作为一个奖励动作，兽王可以命令它的伙伴使用它的反应来采取冲刺、脱离、闪避或帮助行动。"
+						"The beastmaster is bonded to a beast, which is its animal companion. The companion acts on its own initiative, but otherwise obeys the beastmaster's commands. As a bonus action, the beastmaster can command its companion to use its reaction to take the {@action Dash}, {@action Disengage}, {@action Dodge}, or {@action Help} action."
 					]
 				}
 			],
@@ -16045,7 +16207,7 @@
 				{
 					"name": "Vanish",
 					"entries": [
-						"幽暗追猎者可以将躲藏或脱离战斗动作作为一个额外动作。"
+						"The gloom stalker can take the {@action Hide} or {@action Disengage} action as a bonus action."
 					]
 				}
 			],
@@ -16260,7 +16422,7 @@
 				{
 					"name": "Distant Strike",
 					"entries": [
-						"当地平线行者在每次攻击后将其传送到一个它可以看到的未占据空间时。"
+						"When the horizon walker takes the Multiattack action, it can teleport up to 10 feet before or after each attack to an unoccupied space it can see."
 					]
 				},
 				{
@@ -16280,8 +16442,7 @@
 				{
 					"name": "Subtle Knife",
 					"entries": [
-						"{@atk mw} {@hit 5}攻击，射程5英尺，目标一个。{@h}13 ({@damage 1d4 + 2d8 + 2}) 点力场伤害。",
-						"当游侠对携带着灵体的目标进行暴击（如使用{@spell astral projection}法术时），游侠可以切断将目标与其物质身体相连的银色绳索，而不是造成伤害。这是一把魔法武器。"
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d4 + 2d8 + 2}) force damage. On a critical hit against a target in an astral body (as with the {@spell astral projection} spell), the horizon walker can cut the silvery cord that tethers the target to its material body, instead of dealing damage. This is a magic weapon."
 					]
 				},
 				{
@@ -16293,8 +16454,7 @@
 				{
 					"name": "Open Portal",
 					"entries": [
-						"地平线行者使用其微妙的刀具瞄准一个隐藏的位面裂缝，创造一条通往随机确定位面的单向传送门。",
-						"传送门会一直保持开启，直到地平行者的下一个回合结束；地平行者可以使用动作来保持传送门开启。"
+						"The horizon walker targets a hidden planar gash with its subtle knife, creating a one-way portal to a randomly-determined plane of existence. The portal stays open until the end of the horizon walker's next turn; the horizon walker can use its action to keep the portal open."
 					]
 				}
 			],
@@ -16318,6 +16478,68 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Legendary Horizon Walker",
+			"source": "OCLD",
+			"page": 167,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/ZCdZWAM.png"
+			},
+			"hp": {
+				"average": 121,
+				"formula": "22d8 + 22"
+			},
+			"cr": "11",
+			"skill": {
+				"arcana": "+6",
+				"perception": "+8",
+				"survival": "+8"
+			},
+			"passive": 18,
+			"_copy": {
+				"name": "Horizon Walker",
+				"source": "OCLD",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "Subtle Knife",
+						"items": {
+							"name": "Subtle Knife",
+							"entries": [
+								"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d4 + 2d8 + 2}) force damage. On a critical hit against a target in an astral body (as with the {@spell astral projection} spell), the horizon walker can cut the silvery cord that tethers the target to its material body, instead of dealing damage. This is a magic weapon."
+							]
+						}
+					}
+				}
+			},
+			"legendary": [
+				{
+					"name": "Open Portal to the Elemental Plane of Air",
+					"entries": [
+						"The horizon walker uses its subtle knife to open a two-way portal to the Elemental Plane of Air. Until the end of the Horizon Walker's next turn, the portal stays open and emanates a gust of wind in a 60 foot by 5 foot line. Creatures that start their turn in the area of effect must succeed on a {@dc 15} Strength saving throw or be pushed 30 feet in the direction of the wind. Ranged weapon attacks that pass through the area of effect are made with disadvantage. A creature moving against the wind must spend 3 feet of movement for every 1 foot moved."
+					]
+				},
+				{
+					"name": "Open Portal to the Elemental Plane of Earth (Costs 2 Actions)",
+					"entries": [
+						"The horizon walker uses its subtle knife to open a two-way portal to the Elemental Plane of Earth. The portal opens and immediately closes. A 10 foot high, 5 foot wide, and 30 foot long wall of stone appears next to the portal in a configuration of the horizon walker's choice. The wall has an AC of 18 and 100 hit points."
+					]
+				},
+				{
+					"name": "Open Portal to the Elemental Plane of Fire (Costs 2 Actions)",
+					"entries": [
+						"The horizon walker uses its subtle knife to open a two-way portal to the Elemental Plane of Fire. The portal opens and immediately closes. Creatures in a 15-foot cone originating from the portal must make a {@dc 15} Dexterity saving throw, taking 33 ({@damage 6d10}) fire damage on a failed save, or half as much damage as a successful one."
+					]
+				},
+				{
+					"name": "Open Portal to the Elemental Plane of Water",
+					"entries": [
+						"The horizon walker uses its subtle knife to open a two-way portal to the Elemental Plane of Air. The portal opens and immediately closes. Creatures in a 20-foot cube originating from the portal must make a {@dc 15} Strength saving throw. On a failed save, a target takes 11 ({@damage 2d10}) bludgeoning damage and is knocked {@condition prone}. On a successful save, a target takes half as much damage and isn't knocked prone."
+					]
+				}
 			]
 		},
 		{
@@ -17433,12 +17655,8 @@
 				{
 					"name": "Follow Prey",
 					"entries": [
-						"典狱长在追踪目标时具有优势，并且其被动感知能力增加。"
+						"The warden has advantage on checks to track a target, and its passive Perception is increased by 5."
 					]
-				},
-				{
-					"name": "by 5",
-					"entries": []
 				},
 				{
 					"name": "Longbow Specialist",
@@ -17592,7 +17810,7 @@
 				{
 					"name": "Master of Tactics",
 					"entries": [
-						"这位犯罪头目可以将帮助动作作为一个奖励动作。当用于协助盟友攻击生物时，攻击目标可以在距离犯罪头目30英尺内。"
+						"The crime boss can use the {@action Help} action as a bonus action. When used to assist an ally in attacking a creature, the target of the attack can be within 30 feet of the crime boss."
 					]
 				},
 				{
@@ -17743,7 +17961,7 @@
 				{
 					"name": "Master of Tactics",
 					"entries": [
-						"这位犯罪头目可以将帮助动作作为一个奖励动作。当用于协助盟友攻击生物时，攻击目标可以在距离犯罪头目30英尺内。"
+						"The crime boss can use the {@action Help} action as a bonus action. When used to assist an ally in attacking a creature, the target of the attack can be within 30 feet of the crime boss."
 					]
 				},
 				{
@@ -18344,7 +18562,7 @@
 				{
 					"name": "Master of Tactics",
 					"entries": [
-						"主谋可以将帮助动作作为一个奖励动作使用。当用于协助盟友攻击生物时，攻击目标可以在主谋的30英尺内。"
+						"The mastermind can use the {@action Help} action as a bonus action. When used to assist an ally in attacking a creature, the target of the attack can be within 30 feet of the mastermind."
 					]
 				},
 				{
@@ -18457,6 +18675,9 @@
 					"headerEntries": [
 						"幻影生物的天生施法能力是智力（法术豁免 {@dc 12}，用法术攻击命中为 {@hit 4}）。它可以施放以下法术。"
 					],
+					"will": [
+						"{@spell speak with dead}"
+					],
 					"ability": "int"
 				}
 			],
@@ -18470,8 +18691,7 @@
 				{
 					"name": "Undead Nature",
 					"entries": [
-						"幽灵不需要空气，食物，饮料或睡眠。",
-						"随意：与死者交谈 (`speak with dead`)"
+						"幽灵不需要空气，食物，饮料或睡眠。"
 					]
 				},
 				{
@@ -18566,7 +18786,7 @@
 				{
 					"name": "Cunning Action",
 					"entries": [
-						"私掠船可以进行冲刺，转向。"
+						"The privateer can take the {@action Dash}, {@action Disengage}, or {@action Hide} actions as a bonus action on its turn."
 					]
 				},
 				{
@@ -19850,7 +20070,8 @@
 				{
 					"name": "Possession {@recharge}",
 					"entries": [
-						"巫师可以看到的5英尺内的一个人形生物必须成功通过一个{@dc 14}魅力豁免才能不被巫师附身；巫师随后消失，目标被{@condition incapacitated}并失去对自己身体的控制。巫师现在控制着身体，但不剥夺目标的意识。在此期间，巫师被视为不死生物。巫师不能成为任何攻击、法术或其他效果的目标，除非是用于驱散不死生物的效果，它保留其原有的阵营和智力、感知和魅力分数。除此之外，它使用被附身目标的统计数据，但不获得目标的知识、职业特性或熟练加值。附身持续直到身体降至0点生命值、巫师将其作为一个奖励动作结束，或者巫师被如驱散善恶法术之类的效果驱逐出去。当附身结束时，巫师重新出现在距离身体5英尺内的一个未被占据的空间。目标在成功通过豁免检定后或附身结束后的24小时内对巫师的附身免疫。"
+						"One humanoid that the sorcerer can see within 5 feet of it must succeed on a {@dc 14} Charisma saving throw or be possessed by the sorcerer; the sorcerer then disappears, and the target is {@condition incapacitated} and loses control of its body. The sorcerer now controls the body but doesn't deprive the target of awareness. While doing so, the sorcerer is considered to be undead. The sorcerer can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment and its Intelligence, Wisdom, and Charisma scores. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+						"The possession lasts until the body drops to 0 hit points, the sorcerer ends it as a bonus action, or the sorcerer is forced out by an effect like the {@spell dispel good and evil} spell. When the possession ends, the sorcerer reappears in an unoccupied space within 5 feet of the body. The target is immune to the sorcerer's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
 					]
 				}
 			],
@@ -20029,8 +20250,8 @@
 				{
 					"name": "Possession {@recharge}",
 					"entries": [
-						"巫师可以看到的一个人形生物在其5英尺范围内，必须成功通过一个{@dc 18}魅力豁免才能免受巫师的控制；然后巫师消失，目标被{@condition incapacitated}并失去对自己身体的控制。巫师现在控制着这具身体，但不剥夺目标的意识。在此期间，巫师被视为不死生物。巫师不能成为任何攻击、法术或其他效果的目标，除非是用于驱散不死生物的效果，它保留其立场和智力、感知和魅力得分。除此之外，它使用被控制目标的统计数据，但不获得目标的知识、职业特性或熟练加分。控制持续直到身体降至0点生命值、巫师将其作为一个奖励行动结束，或者巫师被类似于驱散善恶法术的效果驱逐出去。",
-						"当控制结束时，术士会重新出现在离身体不超过5英尺的未被占据的空间中。目标在成功豁免检定后或控制结束后的24小时内对术士的《控制》免疫。"
+						"One humanoid that the sorcerer can see within 5 feet of it must succeed on a {@dc 18} Charisma saving throw or be possessed by the sorcerer; the sorcerer then disappears, and the target is {@condition incapacitated} and loses control of its body. The sorcerer now controls the body but doesn't deprive the target of awareness. While doing so, the sorcerer is considered to be undead. The sorcerer can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment and its Intelligence, Wisdom, and Charisma scores. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+						"The possession lasts until the body drops to 0 hit points, the sorcerer ends it as a bonus action, or the sorcerer is forced out by an effect like the {@spell dispel good and evil} spell. When the possession ends, the sorcerer reappears in an unoccupied space within 5 feet of the body. The target is immune to the sorcerer's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
 					]
 				}
 			],
@@ -20596,8 +20817,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"被选者是一名18级的法术施放者。",
-						"被选者的施法能力是魅力（法术豁免 {@dc 18}，用法术攻击命中为 {@hit 10}）。被选者知道以下巫师法术。"
+						"The chosen is an 18th-level spellcaster. The chosen's spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The chosen knows the following sorcerer spells."
 					],
 					"will": [
 						"{@spell light}",
@@ -20802,8 +21022,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"被选者是一名18级的法术施放者。",
-						"被选者的施法能力是魅力（法术豁免 {@dc 18}，用法术攻击命中为 {@hit 10}）。被选者知道以下巫师法术。"
+						"The chosen is an 18th-level spellcaster. The chosen's spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The chosen knows the following sorcerer spells."
 					],
 					"will": [
 						"{@spell light}",
@@ -21113,8 +21332,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位巫师是一名10级法术施法者。",
-						"巫师的施法能力是魅力（法术豁免 {@dc 17}，用法术攻击命中时为 {@hit 9}）。它知道以下巫师法术。"
+						"The sorcerer is a 10th-level spellcaster. The sorcerer's spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It knows the following sorcerer spells."
 					],
 					"will": [
 						"{@spell control flames|XGE}",
@@ -21157,7 +21375,7 @@
 						"4": {
 							"slots": 3,
 							"spells": [
-								"{@spell conjure minor elementals} (magmin only)",
+								"{@spell conjure minor elementals} ({@creature magmin} only)",
 								"{@spell elemental bane|XGE} (fire only)",
 								"{@spell fire shield}",
 								"{@spell wall of fire}"
@@ -21166,7 +21384,7 @@
 						"5": {
 							"slots": 2,
 							"spells": [
-								"{@spell conjure elemental} (fire elemental only)",
+								"{@spell conjure elemental} ({@creature fire elemental} only)",
 								"{@spell flame strike}",
 								"{@spell immolation|XGE}"
 							]
@@ -21296,8 +21514,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"巫师是一个6级法术施展者。巫师的法术施展能力是魅力（法术豁免 DC）。",
-						"15，{@hit 7} 用法术攻击命中）。它会以下巫师法术。"
+						"The sorcerer is a 6th-level spellcaster. The sorcerer's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It knows the following sorcerer spells."
 					],
 					"will": [
 						"{@spell gust|XGE}",
@@ -21340,7 +21557,7 @@
 				{
 					"name": "Amphibious",
 					"entries": [
-						"这位术士可以在陆地和水下呼吸。"
+						"The sorcerer can breathe air and water."
 					]
 				},
 				{
@@ -21475,8 +21692,7 @@
 					"name": "Innate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"巫师的施法能力是魅力（法术豁免 {@dc 15}，用法术攻击命中时为 {@hit 7}）。",
-						"巫师可以天生施放以下法术。"
+						"The sorcerer's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The sorcerer can cast the following spells innately."
 					],
 					"will": [
 						"{@spell chill touch}",
@@ -21530,7 +21746,7 @@
 				{
 					"name": "Summon Hound of Ill Omen (1/Day)",
 					"entries": [
-						"巫师在距离自己30英尺的空间内召唤一个{@creature shadow mastiff|VGM}或{hell hound}。被召唤的猎犬对巫师忠心耿耿，在1分钟后或者巫师将其作为一个动作解散时，猎犬会回到原处。"
+						"The sorcerer summons a {@creature shadow mastiff|VGM} or {@creature hell hound} to an empty space within 30 feet of it. The summoned hound is fiercely loyal to the sorcerer and returns from whence it came after 1 minute or when the sorcerer dismisses it as an action."
 					]
 				}
 			],
@@ -21941,8 +22157,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位术士是一名8级法术施法者。",
-						"巫师的施法能力是魅力（法术豁免{@dc 15}，用法术攻击命中为{@hit 7}）。它知道以下巫师法术。"
+						"The sorcerer is an 8th-level spellcaster. The sorcerer's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It knows the following sorcerer spells."
 					],
 					"will": [
 						"{@spell booming blade|TCE}",
@@ -22104,8 +22319,7 @@
 					"name": "Innate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"巫师的施法能力是魅力（法术豁免 {@dc 15}，用法术攻击命中时为 {@hit 7}）。",
-						"巫师可以天生施放以下法术。"
+						"The sorcerer's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The sorcerer can cast the following spells innately."
 					],
 					"will": [
 						"{@spell gust|XGE}",
@@ -22139,8 +22353,7 @@
 				{
 					"name": "Conductor of the Wind",
 					"entries": [
-						"巫师可以利用其奖励动作来改变(`sorcerer`)风的方向。",
-						"周围100英尺半径范围内。术士可以选择风向，但不能控制风力。"
+						"The sorcerer can use its bonus action to change the direction of the wind within a 100-foot radius around it. The sorcerer can choose the direction but not the strength of the wind."
 					]
 				}
 			],
@@ -22434,7 +22647,7 @@
 				{
 					"name": "Wild Magic Surge",
 					"entries": [
-						"当术士施放1级或更高级别的法术时，在《PHB 104》的《狂野魔法突发表》上投掷两次，并使用其中任意一个结果。"
+						"When the sorcerer casts a spell of 1st-level or higher, it rolls twice on the {@table Wild Magic Surge|PHB} table and uses either result."
 					]
 				}
 			],
@@ -22467,6 +22680,100 @@
 			],
 			"miscTags": [
 				"MW"
+			]
+		},
+		{
+			"name": "Wild Magic Sorcerer",
+			"source": "OCLD",
+			"page": 212,
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/J0KqSiO.png"
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 11,
+			"wis": 12,
+			"cha": 17,
+			"trait": [
+				{
+					"name": "Wild Magic Surge",
+					"entries": [
+						"When the sorcerer casts a spell of 1st-level or higher, it rolls twice on the {@table Wild Magic Surge|PHB} table and uses either result."
+					]
+				}
+			],
+			"_copy": {
+				"name": "Mage",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "mage",
+							"with": "sorcerer",
+							"flags": "i"
+						}
+					]
+				}
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The wild magic sorcerer is a 9th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mage has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell cone of cold}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
 			]
 		},
 		{
@@ -22608,7 +22915,7 @@
 				{
 					"name": "Wild Magic Surge",
 					"entries": [
-						"当术士施放1级或更高级别的法术时，在《PHB 104》的《狂野魔法突发表》上投掷两次，并使用其中任意一个结果。"
+						"When the sorcerer casts a spell of 1st-level or higher, it rolls twice on the {@table Wild Magic Surge|PHB} table and uses either result."
 					]
 				}
 			],
@@ -22861,8 +23168,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"信仰探寻者是一名3级法术施展者。",
-						"它的施法能力是魅力（法术豁免 {@dc 12}，用法术攻击命中时为{@hit 4}）。它在完成短休或长休后会恢复已用的法术位。它知道以下术士法术。"
+						"The faith seeker is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells."
 					],
 					"spells": {
 						"0": {
@@ -24502,26 +24808,27 @@
 				{
 					"name": "Curse of the Sea",
 					"entries": [
-						"当术士伤害一个生物时，它可以施加以下效果之一。",
-						"效果持续到术士的下一个回合结束。"
-					]
-				},
-				{
-					"name": "Calm Before the Storm",
-					"entries": [
-						"目标额外受到9点({@damage 2d8})冰冷、闪电或雷电伤害（术士选择）。"
-					]
-				},
-				{
-					"name": "Rolling Fog",
-					"entries": [
-						"目标的视野被虚幻的迷雾遮挡，使他们在对距离超过15英尺的生物进行攻击检定和感知（{@skill Perception}）检定时处于劣势。能看穿幻术的生物不受影响。"
-					]
-				},
-				{
-					"name": "Treading Water",
-					"entries": [
-						"目标的速度降低到0。(the target)"
+						"When the warlock damages a creature, it can impose one of the following effects. The effects last until the end of the warlock's next turn.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Calm Before the Storm",
+									"entry": "The target takes an additional 9 ({@damage 2d8}) cold, lightning, or thunder damage (warlock's choice)"
+								},
+								{
+									"type": "item",
+									"name": "Rolling Fog",
+									"entry": "目标的视野被虚幻的迷雾遮挡，使他们在对距离超过15英尺的生物进行攻击检定和感知（{@skill Perception}）检定时处于劣势。能看穿幻术的生物不受影响。"
+								},
+								{
+									"type": "item",
+									"name": "Treading Water",
+									"entry": "目标的速度降低到0。(the target)"
+								}
+							]
+						}
 					]
 				}
 			],
@@ -24917,19 +25224,14 @@
 				{
 					"name": "Raven Queen's Servant",
 					"entries": [
-						"术士有一只乌鸦形式的熟悉。当乌鸦停在它的肩膀上时，它不能被攻击、法术或其他有害效果所针对，它不会受到伤害，并且它是{@condition incapacitated}，直到术士将其从肩膀上释放为止（作为一个奖励动作）。术士可以随意通过乌鸦的感官感知（保持自己的感官意识），乌鸦可以利用它的行动传送到离术士5英尺范围内的空间，只要它们在同一存在平面上。乌鸦不会睡觉，如果它在100英尺内，可以作为一个奖励动作唤醒术士。",
-						"如果乌鸦或术士被杀死，乌鸦就会消失。"
+						"The warlock has a familiar in the form of a {@creature raven}. While the raven is perched on its shoulder, it cannot be targeted by attacks, spells, or other harmful effects, it can't take damage, and it is {@condition incapacitated} until the warlock releases it from its shoulder as a bonus action. The warlock can perceive through the raven's senses at will (remaining aware through its own senses) and the raven can use its action to teleport to a space within 5 feet of the warlock as long as they are on the same plane of existence. The raven doesn't sleep and can wake the warlock as a bonus action if it is within 100 feet of it. The raven vanishes if it or the warlock are killed."
 					]
 				},
 				{
 					"name": "Raven's Gifts",
 					"entries": [
-						"如果术士的乌鸦不停留在它的肩膀上，它将失去黑暗视觉和熟练度。"
+						"If the warlock's raven isn't perched on its shoulder, it loses its darkvision and its proficiency in {@skill Perception}."
 					]
-				},
-				{
-					"name": "Perception",
-					"entries": []
 				}
 			],
 			"action": [
@@ -25018,8 +25320,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"渡鸦仆从是一名3级法术施法者。",
-						"它的施法能力是魅力（法术豁免 {@dc 13}，用法术攻击命中时为 {@hit 5}）。它可以施放以下术士法术。"
+						"The raven servant is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can cast the following warlock spells."
 					],
 					"spells": {
 						"0": {
@@ -25178,7 +25479,7 @@
 					],
 					"daily": {
 						"1": [
-							"{@spell find familiar} (a raven)"
+							"{@spell find familiar} (a {@creature raven})"
 						]
 					},
 					"ability": "cha"
@@ -25442,7 +25743,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"剑歌武者是一名5级咒术师。它的咒术能力是智力（咒语豁免 {@dc 15}，咒语攻击命中加值 {@hit 7}）。它已准备了以下巫师法术。"
+						"The bladesinger is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following wizard spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -25452,13 +25753,37 @@
 								"{@spell prestidigitation}",
 								"{@spell ray of frost}"
 							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell color spray}",
+								"{@spell expeditious retreat}",
+								"{@spell false life}",
+								"{@spell find familiar}",
+								"{@spell shield}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell cloud of daggers}",
+								"{@spell hold person}",
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell see invisibility}",
+								"{@spell spider climb}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fly}",
+								"{@spell haste}"
+							]
 						}
 					},
-					"footerEntries": [
-						"1st Level (4 slots): color spray, expditious retreat, false life, find familiar, shield",
-						"2nd Level (3 slots): cloud of daggers, hold person, mirror image, misty step, see invisibility, spider climb",
-						"3rd Level (2 slots): counterspell, fly, haste"
-					],
 					"ability": "int"
 				}
 			],
@@ -25999,8 +26324,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"知识大师是一名6级法术施法者。",
-						"它的施法能力是智力（法术豁免 {@dc 15}，用法术攻击命中为 {@hit 7}）。它已准备了以下巫师法术。"
+						"The lore master is a 6th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following wizard spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -26052,12 +26376,11 @@
 				{
 					"name": "Elemental Secrets (1/Turn)",
 					"entries": [
-						"当传说大师造成酸性、冰冷、火焰、力场、闪电、死灵、光辉或雷霆伤害时，它可以用该列表中的另一种类型替代该伤害类型。",
-						"身心的秘密 (短暂或恢复)"
+						"当传说大师造成酸性、冰冷、火焰、力场、闪电、死灵、光辉或雷霆伤害时，它可以用该列表中的另一种类型替代该伤害类型。"
 					]
 				},
 				{
-					"name": "Long Rest)",
+					"name": "Secrets of the Body and Mind (Recharges after a Short or Long Rest)",
 					"entries": [
 						"当传说大师施放一个需要目标进行豁免投掷的法术时，传说大师可以将豁免投掷的能力分数从一个选择改为另一个。"
 					]
@@ -26144,8 +26467,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位法师是一个10级的施法者。法师的施法能力是智力（法术豁免 DC）。",
-						"15，{@hit 7} 施法攻击命中）。它会以下巫师法术。"
+						"The wizard is a 10th-level spellcaster. The wizard's spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It knows the following wizard spells."
 					],
 					"spells": {
 						"0": {
@@ -26471,8 +26793,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位法师是一个6级法术施法者。法师的施法能力是智力（法术豁免 DC）。",
-						"16，{@hit 8} 用法术攻击命中）。它准备了以下巫师法术。"
+						"The wizard is a 6th-level spellcaster. The wizard's spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It has the following wizard spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -26542,8 +26863,7 @@
 				{
 					"name": "Arcane Deflection",
 					"entries": [
-						"当巫师受到攻击或未能通过豁免检定时，它可以使用其反应来获得一个 (%num%)",
-						"对于该攻击，AC获得+3加值，或者对于该豁免投掷，获得+6加值。此外，巫师选择的最多三个生物，每个生物在其能看见的60英尺范围内，各受到10({@damage 4d4})力场伤害。"
+						"When the wizard is hit by an attack or it fails a saving throw, it can use its reaction to gain a +3 bonus to its AC against that attack or a +6 bonus to that saving throw. Additionally, up to three creatures of the wizard's choice that it can see within 60 feet of it each take 10 ({@damage 4d4}) force damage."
 					]
 				}
 			],
@@ -26734,7 +27054,7 @@
 				{
 					"name": "Throw Potion",
 					"entries": [
-						"{@atk mw,rw} {@hit 5,} 命中，射程5英尺或射程30/90英尺，一个生物。{@h}药水中注入的法术被释放，只影响此次攻击的目标，然后药水破碎。未命中：药水会安全地破碎。"
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/90 ft., one creature. {@h}The spell infused in the potion is cast, affecting only the target of this attack, and the potion shatters. On a miss, the potion shatters harmlessly."
 					]
 				}
 			],
@@ -26908,13 +27228,9 @@
 					"entries": [
 						"{@atk mw} 使用攻击命中，达到5英尺，一个目标。造成{@h}1 ({@damage 1d4 - 1}) 钝击伤害。如果Dearest Gran被解除了她的扫帚，她将失去飞行速度。"
 					]
-				},
-				{
-					"name": "Legendary Actions",
-					"entries": [
-						"亲爱的奶奶可以执行3个传奇动作，可以从以下选项中选择。每次只能使用一个传奇动作选项，并且只能在另一个生物的回合结束时使用。亲爱的奶奶在回合开始时恢复已用传奇动作。"
-					]
-				},
+				}
+			],
+			"legendary": [
 				{
 					"name": "Fey Casting",
 					"entries": [
@@ -27342,7 +27658,7 @@
 				{
 					"name": "Threat Seeker",
 					"entries": [
-						"铁之复仇者将其致盲视觉扩展至120尺，直到其下一个回合结束。"
+						"The iron avenger extends its {@sense blindsight} to 120 feet until the end of its next turn."
 					]
 				}
 			],
@@ -27537,8 +27853,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"炼金术士是一名4级咒术师。",
-						"炼金术士的施法能力是智力（法术豁免 {@dc 14}，用法术攻击命中时为 {@hit 6}）。炼金术士了解以下的造物师法术。"
+						"The alchemist is a 4th-level spellcaster. The alchemist's spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The alchemist knows the following artificer spells."
 					],
 					"spells": {
 						"0": {
@@ -27583,8 +27898,7 @@
 				{
 					"name": "Compound Hand Crossbow",
 					"entries": [
-						"远程武器攻击：",
-						"{@hit 6}攻击，射程30/120尺，目标为一个。造成{@h}7 ({@damage 1d6 + 4})穿刺伤害。这把弩不具备弩的装填特性，攻击之间无需重新装填。这是一把+1魔法武器。"
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage. This crossbow does not have the loading property of crossbows and does not need to be reloaded between attacks. This is a +1 magic weapon."
 					]
 				},
 				{
@@ -27682,8 +27996,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位疯狂的科学家是一名5级法术施展者。",
-						"疯狂科学家的施法能力是智力（法术豁免 {@dc 14}，用法术攻击命中时为 {@hit 6}）。疯狂科学家知道以下的制造师法术。"
+						"The mad scientist is a 5th-level spellcaster. The mad scientist's spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mad scientist knows the following artificer spells."
 					],
 					"spells": {
 						"0": {
@@ -28063,8 +28376,7 @@
 				{
 					"name": "Flamethrower",
 					"entries": [
-						"炮塔在一个15英尺的锥形范围内喷射火焰。",
-						"区域内的每个生物必须进行一次{@dc 14}敏捷豁免检定，未通过检定则受到9({@damage 2d8})火焰伤害，通过检定则只受一半伤害。火焰会点燃区域内未被穿戴或携带的易燃物品。"
+						"The turret exhales fire in a 15-foot cone. Each creature in the area must make a {@dc 14} Dexterity saving throw, taking 9 ({@damage 2d8}) fire damage on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried."
 					]
 				},
 				{
@@ -28140,8 +28452,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"炼金术士是一名4级咒术师。",
-						"炮术师的施法能力是智力（法术豁免 DC {@dc 14}，使用法术攻击命中加值为 {@hit 6}）。炮术师了解以下的制造师法术。"
+						"The alchemist is a 4th-level spellcaster. The artillerist's spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The artillerist knows the following artificer spells."
 					],
 					"spells": {
 						"0": {
@@ -28273,8 +28584,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"投石机手是一名4级法术施展者。",
-						"投石机术士的施法能力是智力（法术豁免 DC {@dc 15}，使用法术攻击命中加值为 {@hit 7}）。投石机术士了解以下的神器师法术。"
+						"The trebucheter is a 4th-level spellcaster. The trebucheter's spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The trebucheter knows the following artificer spells."
 					],
 					"spells": {
 						"0": {
@@ -28316,8 +28626,7 @@
 				{
 					"name": "Dynamite Mortar",
 					"entries": [
-						"投石机手发射一根炸药棒，瞄准它能看到的距离不超过1,500英尺的地点。",
-						"炸药会在投石机手下一回合开始时着陆并爆炸。生物可以通过进行一次{@dc 15}感知({@skill Perception})检定来确定炸药将着陆的确切位置。当炸药爆炸时，每个距离炸药5英尺以内的生物必须进行一次{@dc 12}敏捷豁免才能，未通过则受到10({@damage 3d6})点雷属性伤害，通过则只受一半伤害。"
+						"The trebucheter launches a stick of dynamite at a point it can see within 1,500 feet of it. The dynamite lands and explodes at the start of the trebucheter's next turn. A creature can ascertain the precise location the dynamite will land with a {@dc 15} Wisdom ({@skill Perception}) check. Each creature within 5 feet of the dynamite when it explodes must make a {@dc 12} Dexterity saving throw, taking 10 ({@damage 3d6}) thunder damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
@@ -28582,8 +28891,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"铁匠战士是一个4级法术施法者。",
-						"铁匠战士的施法能力是智力（法术豁免 {@dc 14}，法术攻击命中加值为 {@hit 6}）。铁匠战士了解以下工匠法术。"
+						"The battle smith is a 4th-level spellcaster. The battle smith's spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The battle smith knows the following artificer spells."
 					],
 					"spells": {
 						"0": {
@@ -28831,7 +29139,7 @@
 				{
 					"name": "Hunter's Bane",
 					"entries": [
-						"血猎人对不死生物有优势，并且在回忆有关它们的信息时进行智力检定时也有优势。"
+						"血猎人在智慧检定中对追踪精灵、恶魔和不死生物有优势{@skill Survival}，在情报检定中回忆有关它们的信息也有优势。"
 					]
 				},
 				{
@@ -28881,8 +29189,7 @@
 				{
 					"name": "Rite Strike (Hybrid Form Only)",
 					"entries": [
-						"近战武器攻击：",
-						"{@hit 10}攻击，达到5英尺，一个目标。造成{@h}16 ({@damage 2d8 + 7})点斩击伤害。这是一次魔法武器攻击。"
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage. This is a magic weapon attack."
 					]
 				}
 			],
@@ -29074,8 +29381,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位血猎是一名5级法术施法者。",
-						"它的施法能力是智力（施法豁免 {@dc 13}，施法攻击命中加值 {@hit 5}）。当它完成短休或长休时，它会恢复已消耗的法术位。它了解以下术士法术，并可以使用其仪式武器作为施法焦点来施放它们。"
+						"The blood hunter is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells, and can cast them using its rite weapon as its spellcasting focus."
 					],
 					"spells": {
 						"0": {
@@ -29105,7 +29411,7 @@
 				{
 					"name": "Hunter's Bane",
 					"entries": [
-						"血猎人对不死生物有优势，并且在回忆有关它们的信息时进行智力检定时也有优势。"
+						"血猎人在智慧检定中对追踪精灵、恶魔和不死生物有优势{@skill Survival}，在情报检定中回忆有关它们的信息也有优势。"
 					]
 				}
 			],
@@ -29791,7 +30097,7 @@
 				{
 					"name": "Surge of Speed {@recharge 5}",
 					"entries": [
-						"作为一个奖励动作，（mystic）可以同时执行冲刺（Dash）和脱离（Disengage）动作。"
+						"As a bonus action, the mystic can take both the {@action Dash} and {@action Disengage} actions."
 					]
 				}
 			],
@@ -29884,8 +30190,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"小丑是一个8级法术施法者。小丑的法术施法能力是魅力（法术豁免 DC）。",
-						"14，{@hit 6}使用法术攻击命中）。它准备了以下盗贼法术。"
+						"The clown is an 8th level spellcaster. The clown's spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following rouge spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -29957,7 +30262,7 @@
 				{
 					"name": "Tumbler",
 					"entries": [
-						"作为一个奖励动作，小丑可以执行脱离战斗的动作。"
+						"As a bonus action, the clown can take the {@action Disengage} action."
 					]
 				}
 			],
@@ -30059,8 +30364,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"效果大师是一个8级法术施法者。",
-						"它的施法能力是魅力（法术豁免 {@dc 14}，使用法术攻击命中为 {@hit 6}）。它可以施放以下盗贼法术。"
+						"The effects master is an 8th level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It can cast the following rouge spells."
 					],
 					"spells": {
 						"0": {
@@ -30229,8 +30533,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这位时尚达人是一个8级的法术施法者。",
-						"它的施法能力是魅力（法术豁免 {@dc 15}，用法术攻击命中时为 {@hit 7}）。它可以施放以下盗贼法术。"
+						"The fashionista is an 8th level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can cast the following rouge spells."
 					],
 					"spells": {
 						"0": {
@@ -30803,6 +31106,22 @@
 			"cr": "4",
 			"spellcasting": [
 				{
+					"name": "Ritual Adept",
+					"type": "spellcasting",
+					"headerEntries": [
+						"鱼饵法师是一个仪式施法者。它的施法能力是智力（法术豁免 {@dc 13}，用法术攻击命中为 {@hit 5}）。它可以将以下法术作为仪式施放，所需时间为通常的一半。"
+					],
+					"ritual": [
+						"{@spell alarm}",
+						"{@spell identify}",
+						"{@spell illusory script}",
+						"{@spell leomund's tiny hut}",
+						"{@spell magic mouth}",
+						"{@spell unseen servant}"
+					],
+					"ability": "int"
+				},
+				{
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
@@ -30856,15 +31175,6 @@
 						}
 					},
 					"ability": "int"
-				}
-			],
-			"trait": [
-				{
-					"name": "Ritual Adept",
-					"entries": [
-						"鱼饵法师是一个仪式施法者。它的施法能力是智力（法术豁免 {@dc 13}，用法术攻击命中为 {@hit 5}）。它可以将以下法术作为仪式施放，所需时间为通常的一半。",
-						"仪式：警报，识别，幻象文字，(Leomund的微型小屋)，魔法之口，隐形仆役"
-					]
 				}
 			],
 			"action": [
@@ -31030,8 +31340,7 @@
 					"name": "Initiate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"教会手是一名魔法新手。(The church hand)",
-						"它的施法能力是智力（法术豁免{@dc 11}，用法术攻击命中时为{@hit 3}）。它可以施放以下牧师法术。"
+						"The church hand is a magic initiate. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can cast the following cleric spells."
 					],
 					"will": [
 						"{@spell guidance}",
@@ -31210,7 +31519,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"侍臣使用其集结能力，如果可以的话。然后它可以选择进行一次近战武器攻击，或者采取躲避动作。"
+						"The courtier uses its Rally, if it can. It can then either make a melee weapon attack or take the {@action Dodge} action."
 					]
 				},
 				{
@@ -32074,7 +32383,7 @@
 				{
 					"name": "Helm of Comprehending Languages",
 					"entries": [
-						"佩戴这顶头盔（(helm)）时，它呈现出一顶华丽的王冠形状，国王或女王会被魔法效果理解语言（(comprehend languages)）所影响。"
+						"While wearing this helm, which takes the shape of an opulent crown, the king or queen is magically under the effects of {@spell comprehend languages}."
 					]
 				},
 				{
@@ -32100,8 +32409,7 @@
 				{
 					"name": "Rod of Rulership (1/Day)",
 					"entries": [
-						"每个能看见或听到国王或女王在其120英尺内的生物必须成功进行一次{@dc 15}感知豁免才能免疫国王或女王的{@condition charmed}，持续8小时。在这种方式下，目标将国王或女王视为其值得信赖的领袖。如果国王或女王的行动伤害了生物，或者命令其做违背其本性的事情，效果将结束。",
-						"国王或女王与这个魔法物品相调和。"
+						"Each creature that can see and hear the king or queen within 120 feet of it must succeed on a {@dc 15} Wisdom saving throw or be {@condition charmed} by the king or queen for 8 hours. While {@condition charmed} in this way, the target regards the king or queen as its trusted leader. The effect ends if the king or queen's actions harm the creature or if it is commanded to do something contrary to its nature. The king or queen is attuned to this magic item."
 					]
 				}
 			],
@@ -32558,8 +32866,7 @@
 					"name": "Initiate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这个逃犯是一个魔法初学者。",
-						"它的施法能力是智力（法术豁免{@dc 11}，用法术攻击命中时为{@hit 3}）。它可以施放以下牧师法术。"
+						"The outlaw is a magic initiate. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can cast the following cleric spells."
 					],
 					"will": [
 						"{@spell light}",
@@ -32607,8 +32914,7 @@
 					"name": "Initiate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"这个逃犯是一个魔法初学者。",
-						"它的施法能力是智力（法术豁免 {@dc 11}，使用法术攻击命中加值为 {@hit 3}）。它可以施放以下巫师法术。"
+						"The outlaw is a magic initiate. Its spellcasting ability is Intelligence (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can cast the following wizard spells."
 					],
 					"will": [
 						"{@spell prestidigitation}",
@@ -32738,8 +33044,7 @@
 					"name": "Initiate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"围城法师是一名魔法初学者。",
-						"它的施法能力是智力（法术豁免 {@dc 11}，使用法术攻击命中加值为 {@hit 3}）。它可以施放以下巫师法术。"
+						"The siege mage is a magic initiate. Its spellcasting ability is Intelligence (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can cast the following wizard spells."
 					],
 					"will": [
 						"{@spell light}",
@@ -32783,8 +33088,7 @@
 				{
 					"name": "Pepper Bomb (1/Day)",
 					"entries": [
-						"围城法师向其能看到的30英尺范围内的一个点投掷了一颗胡椒炸弹。",
-						"在该点周围10英尺半径范围内的每个生物必须成功通过一次{@dc 11}体质豁免才能避免在1分钟内变为{@condition blinded}。目标可以在每个回合结束时重复这次豁免，成功则结束效果。"
+						"The siege mage throws a pepper bomb at a point within 30 feet of it that it can see. Each creature within a 10 foot radius of that point must succeed on a {@dc 11} Constitution saving throw or become {@condition blinded} for 1 minute. A target can repeat this save at the end of each of its turns, ending the effect on a success."
 					]
 				}
 			],
@@ -32896,7 +33200,7 @@
 						"items": {
 							"name": "Spotter",
 							"entries": [
-								"当侍从采取帮助动作来协助其骑士攻击生物时，目标可以在距离侍从30英尺内。"
+								"When the squire takes the {@action Help} action to assist its knight in attacking a creature, the target can be within 30 feet of the squire."
 							]
 						}
 					}
@@ -32957,8 +33261,7 @@
 					"name": "Initiate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"侍从是一名魔法初学者。",
-						"它的施法能力是智力（法术豁免{@dc 11}，用法术攻击命中时为{@hit 3}）。它可以施放以下牧师法术。"
+						"The squire is a magic initiate. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can cast the following cleric spells."
 					],
 					"will": [
 						"{@spell resistance}",
@@ -32986,8 +33289,7 @@
 					"name": "Initiate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"侍从是一名魔法初学者。",
-						"它的施法能力是智力（施法豁免 {@dc 11}，施法攻击命中加值 {@hit 3}）。它可以施放以下吟游诗人法术。"
+						"The squire is a magic initiate. Its spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). It can cast the following bard spells."
 					],
 					"will": [
 						"{@spell dancing lights}",
@@ -33127,8 +33429,7 @@
 					"name": "Initiate Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"法术狙击手是一个魔法新手。(Spell Sniper)",
-						"它的施法能力是魅力（法术豁免 {@dc 12}，用法术攻击命中时为 {@hit 4}）。它可以施放以下巫师法术。"
+						"The spell sniper is a magic initiate. Its spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can cast the following sorcerer spells."
 					],
 					"will": [
 						"{@spell fire bolt}",
@@ -33146,13 +33447,13 @@
 				{
 					"name": "Distant Spell",
 					"entries": [
-						"法术狙击手（Spell Sniper）的火焰箭（Fire Bolt）和混沌箭（Chaos Bolt）的射程为600尺。"
+						"The range of the spell sniper's {@spell fire bolt} and {@spell chaos bolt|XGE} is 600 feet."
 					]
 				},
 				{
 					"name": "Wild Magic Surge",
 					"entries": [
-						"当法术狙击手(Spell Sniper)施放1级或更高级别的法术时，它在《野性魔法突发表》(PHB 104)上投掷两次，并使用其中任意一个结果。"
+						"When the spell sniper casts a spell of 1st-level or higher, it rolls twice on the {@table Wild Magic Surge|PHB} table and uses either result."
 					]
 				}
 			],
@@ -33363,8 +33664,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"巫医是一名1级法术施法者。",
-						"它的施法能力是智力（法术豁免 {@dc 12}，用法术攻击命中为 {@hit 4}）。它已准备了以下德鲁伊法术。"
+						"The witch doctor is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared."
 					],
 					"spells": {
 						"0": {
@@ -33392,8 +33692,7 @@
 				{
 					"name": "Shillelagh Staff",
 					"entries": [
-						"{@atk ms} {@hit 4}攻击，达到5英尺，一个目标。造成{@h}6 ({@damage 1d8 + 2}) 钝击伤害。",
-						"这是一次魔法武器攻击。"
+						"{@atk ms} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage. This is a magic weapon attack."
 					]
 				}
 			],
@@ -33468,8 +33767,7 @@
 				{
 					"name": "Unarmed Strike",
 					"entries": [
-						"{@atk mw}进行攻击，射程5英尺，目标一个。造成{@h}5({@damage 1d4 + 3})点钝击伤害。",
-						"被这次攻击降至0点生命值的生物会稳定下来。"
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. A creature reduced to 0 hit points by this attack is stabilised."
 					]
 				},
 				{
