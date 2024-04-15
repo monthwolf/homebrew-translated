@@ -615,17 +615,17 @@
 				"在此法术持续期间，生物获得以下额外特征：(spell)",
 				"1. 这个生物的类型现在是不死族(Undead)。",
 				"2. 被僵尸近战攻击命中的生物必须进行一次等同于你的法术豁免 DC 的体质豁免检定，否则会在其下一个回合结束前变为{@condition poisoned}。根据当地语言习惯，像（%num%）这样的文本在翻译中仍应输出为（%num%）。翻译应符合 DND 运行组规则，专有名词在翻译后应在括号中保留英文。",
-				"3.Creatures {@condition poisoned} by the zombie cannot regain hitpoints for the duration of that effect.",
+				"3. 受到僵尸影响的生物{@condition poisoned}在效果持续期间无法恢复生命值。",
 				"4. 僵尸可以使用其奖励动作，向它能看到的敌对生物移动其移动速度。根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。翻译应符合 DND 运行组规则，专有名词在翻译后应在括号中保留英文。",
 				"它获得了对毒素和死灵伤害的免疫能力。",
 				"6. 它获得了免疫能力，不会被 {@condition charmed}，疲劳，{@condition frightened}，或 {@condition poisoned} 影响。",
-				"7.It gains resistance to bludgeoning, piercing, and slashing damage from attacks that are not silvered.",
-				"8.It no longer needs to breathe or eat",
-				"9.When it is reduced to 0 hitpoints, it can make a Constitution saving throw equal to half the damage dealt (minumum 10) to regain 1 hitpoint instead. It cannot benefit from this feature if it is turned or takes radiant damage on that turn.",
-				"The undead is friendly to you and your allies and acts on your initiative after your turn. It obeys your verbal commands as a bonus action as you mentally command any undead you made with this spell within 60 feet of you (if you control multiple undeads, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the undead will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the undead only defends itself against hostile creatures. Once given an order, the undead continues to follow it until its task is complete.",
+				"它获得了对未镀银攻击的钝击、穿刺和砍杀伤害的抵抗力。",
+				"它不再需要呼吸或进食 (8. 它不再需要呼吸或进食)",
+				"当生命值降低到 0 时，它可以进行一次与所受伤害一半相等的体质豁免检定（最低为 10）以恢复 1 点生命值。如果在该回合被使转或受到辐射伤害，则无法从此特性中受益。 (Constitution saving throw) (turned) (radiant damage)",
+				"不死生物对你和你的盟友友好，并在你的回合之后按你的倡议行动。它听从你的口头命令作为额外行动，当你在60英尺范围内以这个法术创造的任何不死生物（如果你控制多个不死生物，你可以同时命令任何一个或全部，向每个发出相同的命令）。你决定不死生物将采取什么行动以及在其下一个回合将移动到何处，或者你可以发出一般命令，比如守卫特定的房间或走廊。如果你没有发出命令，不死生物只会防御自己免受敌对生物的攻击。一旦给出命令，不死生物将继续遵循直到任务完成。 (dnd, undeads)",
 				"根据当地语言习惯，像（%num%）这样的文本在翻译中仍应输出为（%num%）。\n翻译应符合DND游戏组规则，专有名词在翻译后应在括号中保留英文。 \n\n你可以控制亡灵24小时，之后它将不再服从你的任何命令。为了在另外24小时内继续控制亡灵，你必须在当前24小时结束之前再次对亡灵施放此法术。这次使用法术将重新确立你对该亡灵的控制。",
 				"如果亡灵被杀死，它会完全化为灰烬，彻底毁灭其形态。（DND进行组规则）",
-				"Upon casting this spell on the same undead every day for one year, it becomes permanently under your control"
+				"在连续一年每天对同一不死生物施放此咒语后，它将永久地受到你的控制。（undead）"
 			],
 			"conditionInflict": [
 				"poisoned"
@@ -635,9 +635,9 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell",
-						"slot of 4th Level or higher, the challenge rating of a creature",
-						"that you can reanimate increases by 1."
+						"在更高的等级时，当你使用一个法术施放这个咒语时 (%num%)",
+						"四级或更高级别的位置，生物的挑战等级",
+						"你可以复活的次数增加1。(reanimate)"
 					]
 				}
 			],
@@ -691,9 +691,9 @@
 				]
 			},
 			"entries": [
-				"With a surge of necromantic energy, you can cause a corpse, or a creature with 0 hitpoints to explode. If the creature has 0 hitpoints, it must succeed a Constitution saving throw. On a failed saving throw, that creature instantly dies and explodes. Creatures in a 10ft. radius around that creature must succeed a Constitution saving throw or take {@damage 6d8} necrotic damage on a failed saving throw and half as much on a success. A creature or corpse that explodes is instantly killed and is reduced to ashes.",
-				"On a successful saving throw, the target with 0 hitpoints loses one death saving throw (if applicable) and is otherwise unaffected.",
-				"This spell can only target corpses and automatically fails and is wasted if you target a construct, undead, or a living creature."
+				"用一股死灵能量的激增，你可以使一个尸体，或者一个生命值为0的生物爆炸。如果生物的生命值为0，它必须成功通过一次体质豁免检定。如果豁免检定失败，该生物立即死亡并爆炸。在该生物周围10英尺半径内的生物必须成功通过一次体质豁免检定，否则在豁免检定失败时受到 {@damage 6d8} 死灵伤害，在豁免检定成功时伤害减半。爆炸的生物或尸体立即死亡并化为灰烬。",
+				"在成功的豁免投掷中，目标若生命值为0，则失去一次死亡豁免投掷（如适用），其他情况不受影响。 (Dungeons & Dragons)",
+				"这个法术只能以尸体为目标，如果你选择一个构造物、不死生物或活物作为目标，则自动失败并浪费。(%num%)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 5,
@@ -758,7 +758,7 @@
 				]
 			},
 			"entries": [
-				"As an action, you or a willing creature can assume the ethereal presence of a phantom. For the duration, You can move through other creatures and objects as if they were Difficult Terrain. Upon ending your turn in the space in another creature or object, your are shunted to the nearest unoccupied space. For every 5ft. you are shunted, you take 5 ({@damage 1d10}) force damage."
+				"作为一个行动，你或者一个愿意的生物可以进入一个幻影的虚实存在。在持续时间内，你可以像穿越困难地形一样穿过其他生物和物体。当你结束你的回合处于另一个生物或物体的空间时，你会被推到最近的未占用空间。每移动 5 英尺，你受到 5 ({@damage 1d10}) 的力量伤害。"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 5,
@@ -771,7 +771,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a 4th level spell of higher, you can target an additional creature for each slot above 3rd."
+						"在更高的等级时，当你使用4级或更高级别的法术施放这个法术时，你可以针对每个高于3级的槽位再额外选择一个目标生物。 (At Higher Levels)"
 					]
 				}
 			],
@@ -829,7 +829,7 @@
 				]
 			},
 			"entries": [
-				"You can fire a pulse of necrotic energy that causes a creature's body to begin to wither an decay. Make a ranged attack against a creature. On a hit, the target takes {@damage 4d8} necrotic damage and must succeed a Constitution saving throw. On a failed saving throw, that creature suffers vulnerability to the next damage roll against it until the end of your next turn as its body is corrupted by necrotic magic."
+				"你可以释放一股死灵能量脉冲，使生物的身体开始枯萎腐烂。对一名生物进行远程攻击。命中后，目标受到{@damage 4d8}死灵伤害，并必须进行体质豁免。在豁免失败时，该生物在你的下一个回合结束前，对其进行的下一次伤害投掷将使其脆弱，因其身体被死灵魔法腐化。 (necrotic damage) (Constitution)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 5,
@@ -842,7 +842,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+						"在更高的级别上，当你使用4级或更高级别的法术位施放这个法术时，伤害将增加{@dice 1d8}，每个法术位等级高于1级的伤害。"
 					]
 				}
 			],
@@ -900,9 +900,9 @@
 				]
 			},
 			"entries": [
-				"You can summon four ethereal souls to orbit around you. These souls can take the form of phantoms, skulls, or wisps, for the spell's duration.",
-				"When you cast a spell and as a bonus action on each of your turns thereafter, you can expend one of these souls to attack a creature you choose within 120ft. of you. Once the spirit reaches its target, that creature must succeed a Wisdom saving throw. On a failed saving throw, it takes {@damage 2d8} necrotic damage and is considered {@condition frightened} until the end of its next turn. On a successful saving throw, it takes half damage and is not {@condition frightened}.",
-				"If one of these souls reduces a creature to 0 hitpoints, you regain one expended soul for the duration of the spell as you temporarily bind the spirit of your foe to fight for you."
+				"你可以召唤四个虚幻的灵魂围绕着你。这些灵魂可以化身为幽灵、骷髅或幽光，持续一段时间。",
+				"当你施放一个法术并且在之后的每个回合中作为一个额外行动时，你可以消耗其中的一个灵魂来攻击你选择的一名生物，该生物必须在你120英尺内。一旦灵魂到达目标，该生物必须进行一次感知豁免投骰。在未通过豁免投骰的情况下，它受到{@damage 2d8}点死灵伤害，并被视为{@condition frightened}，直到其下一个回合结束。在通过豁免投骰的情况下，它受到一半伤害，并且不是{@condition frightened}。",
+				"如果其中一个灵魂将生物的生命值降低至0，你在法术持续期间将重新获得一个消耗的灵魂，因为你暂时将敌人的灵魂绑定，让其为你而战。（dnd running group rules）"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 5,
@@ -916,7 +916,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 4th level or higher, the number of souls you can conjure increases by 1."
+						"在更高等级时，当你使用4级或更高级的法术位施放此法术时，你可以召唤的灵魂数量增加1。(%num%)"
 					]
 				}
 			],
@@ -974,10 +974,10 @@
 				]
 			},
 			"entries": [
-				"You can cast a necromantic soul curse on a creature within range. Until the spell ends, you can deal an additional {@damage 1d6} necrotic damage to the target whenever you hit it with an attack. A Remove Curse cast on the target ends this spell early.",
-				"If a humanoid dies while under this curse, it returns to life as a skeleton or zombie at the start of its next turn. You can decide whether it is a zombie or a skeleton (the statistics for zombies and skeletons are in the Monster Manual).",
-				"You can use a bonus action to mentally command that undead with this spell. To receive the command, a creature must be within 60 feet of you. You decide what action the undead will take and where they will move during their next turn, or you can issue a general command.",
-				"If you issue no commands, the undead do nothing except defend themselves against hostile creatures. Once given an order, the undead continue to follow it until their task is complete. That creature under your control until the spell ends, after which they become inanimate once more."
+				"你可以对范围内的生物施加一道死灵灵魂诅咒。直到法术结束，你每次攻击命中目标时，都可以额外造成{@damage 1d6}点死灵伤害。对目标施放的解除诅咒法术会提前结束此法术。",
+				"如果一个类人生物在这个诅咒下死亡，它会在下一回合开始时作为骷髅或僵尸复活。你可以决定它是僵尸还是骷髅（僵尸和骷髅的统计数据在《怪物手册》中）。 (the statistics for zombies and skeletons are in the Monster Manual)",
+				"你可以使用一个奖励动作来精神指挥这个不死生物，使用这个法术。为了接收指令，一个生物必须在你的60英尺内。你决定不死生物将采取什么行动以及它们在下一个回合将移动到哪里，或者你可以发布一个一般指令。(undead)",
+				"如果您没有下达命令，亡灵将什么也不做，只是保护自己免受敌对生物的攻击。一旦接到命令，亡灵将继续遵循直至任务完成。直到法术结束，那个生物都在您的控制之下，之后它们再次变得无生命。 (dnd running group规则)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 6,
@@ -991,7 +991,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 5th or 6th level, you can maintain your {@status concentration} on the spell for up to 8 hours. When you use a spell slot of 7th level or higher, you can maintain your {@status concentration} on the spell for up to 24 hours. At 9th level, you no linger have to maintain {@status concentration} on this spell and its duration lasts indefinitely or until you end it."
+						"在更高的等级时，当你使用一个5级或6级的法术槽施放此法术时，你可以保持法术上的 {@status concentration} 长达8小时。当你使用一个7级或更高级别的法术槽时，你可以保持法术上的 {@status concentration} 长达24小时。在9级时，你不再需要维持此法术上的 {@status concentration}，其持续时间将无限期地持续下去，直到你结束它。"
 					]
 				}
 			],
@@ -1042,8 +1042,8 @@
 				]
 			},
 			"entries": [
-				"You are able to assault the very soul of your target with a torrent of necrotic magic. Creatures in a 20ft. radius sphere must make a Charisma saving throw. On a failed saving throw, a creature takes {@damage 6d8} necrotic damage and half as much on a successful saving throw. If this spell reduces a creature to 0 hitpoints, it is instantly killed.",
-				"This spell has no effect on constructs and undead."
+				"你可以用一波死灵魔法袭击目标的灵魂。20英尺半径范围内的生物必须进行一次魅力豁免。若未能通过豁免，生物将受到{@damage 6d8}点死灵伤害，通过豁免则受到一半伤害。若此法术将生物的生命值降至0，其立即死亡。 (necrotic damage)",
+				"此法术对机械和亡灵无效。(constructs) (undead)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 6,
@@ -1057,7 +1057,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 5th level or higher, the extra damage increases by one {@dice 1d8}"
+						"在更高的级别，当你使用5级或更高级别的法术位施放此法术时，额外伤害增加一点{@dice 1d8}。"
 					]
 				}
 			],
@@ -1116,8 +1116,8 @@
 				]
 			},
 			"entries": [
-				"You can conjure a gateway to the realm of the dead causing a vortex of swirling spirits to harass your foes. A 20ft. radius and 40ft. high cylinder appears, centered on a point within range, lasting for the duration of the spell. This vortex is filled with the wails and screams of hundreds of spirits that can be heard up to 100ft. away.",
-				"This vortex is considered to be difficult terrain and heavily obscures the vision of any creature in its area. Any creature that starts its turn in this area takes {@damage 2d8} necrotic damage. Any creature that ends its turn in this area must succeed a Wisdom saving throw or become {@condition frightened} until the end of its next turn. Creatures {@condition frightened} in this manner have their movement speed halved until the end of its next turn."
+				"你可以召唤一个通往死者之境的门户，引发一股旋转的灵魂漩涡来困扰你的敌人。在施法范围内的某点为中心，出现一个直径20英尺，高度40英尺的圆柱体，持续法术的整个持续时间。这个漩涡中充满了数百个灵魂的哀号和尖叫声，能听到距离高达100英尺的地方。 (DND running group规则)",
+				"这个漩涡被认为是艰难的地形，并且严重遮挡了其区域内任何生物的视线。任何在该区域开始其回合的生物会受到{@damage 2d8}点死灵伤害。任何在该区域结束其回合的生物必须进行一次感知豁免检定，否则会在其下一个回合结束时变为{@condition frightened}。以这种方式被影响的生物在其下一个回合结束时，其移动速度减半{@condition frightened}。"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 6,
@@ -1134,7 +1134,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 5th level or higher, the extra damage increases by one {@dice 1d8}."
+						"在更高的等级时，当你使用5级或更高级别的法术位施放此法术时，额外伤害增加一点{@dice 1d8}。"
 					]
 				}
 			],
@@ -1193,7 +1193,7 @@
 				]
 			},
 			"entries": [
-				"You can generate a sphere of withering magic in a 30ft. radius around a spot you can see within range. Creatures that first enter this field or starts its turn within the cannot regain hitpoints until the end of its next turn."
+				"你可以在你能看到的范围内的一个点周围产生一个直径30英尺的凋零魔法球。在此范围内首次进入或开始其回合的生物直到其下一个回合结束都不能恢复生命值。\n"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 6,
@@ -1237,20 +1237,20 @@
 				]
 			},
 			"entries": [
-				"You can imbue necromantic magic into a corpse of a creature of challenge rating 1 or lower that has died within the last month that is not an Construct, Plant, or Undead to raise it back to life as a zombie. After you finish casting your spell, the corpse returns to life as a zombified servant.",
-				"In its undead form, the target's game statistics remain the same except for the following: the creature can't use any features from Class features, Innate Spellcasting, Pact Magic, Spellcasting, abilities with a recharge, legendary actions or lair actions of its original form.",
+				"你可以将死亡不超过一个月、挑战等级为1或更低的生物的尸体注入死灵魔法，使其复活为僵尸，这与当地语言习惯相符，且文本中像(%num%)这样的内容在翻译中应仍保留为(%num%)。\n\n翻译符合DND游戏组规则，适当名词在翻译后应保留为英文，用括号括起。",
+				"在其亡灵形态下，目标的游戏统计数据保持不变，除非以下情况：生物不能使用来自类特性、天生咒术、契约魔法、咒术、具有充能、传奇行动或巢穴行动的任何特性。\n",
 				"在此法术持续期间，生物获得以下额外特征：(spell)",
 				"1. 这个生物的类型现在是不死族(Undead)。",
-				"2.Creatures hit by the ghoul's melee attacks must succeed a Constitution saving throw equal to your spell DC or become {@condition paralyzed} until the end of its next turn",
-				"3.The creature gains a climbing speed equal to its walking speed and it can climb difficult surfaces without needing an ability check",
-				"4.The creature has disadvantage on Wisdom (Perception) checks and attack rolls if it starts its turn in sunlight",
-				"5.The creature can use its bonus action to move up to its movement speed towards a hostile creature it can see.",
-				"6.It gains immunity to poison and necrotic damage.",
-				"7.It gains immunity to being {@condition charmed}, exhausted, or {@condition poisoned}",
-				"8.It gains resistance to bludgeoning, piercing, and slashing damage from attacks that are not silvered.",
-				"9.It no longer needs to breathe or eat",
-				"10.When it is reduced to 0 hitpoints, it can make a Constitution saving throw equal to half the damage dealt (minumum 10) to regain 1 hitpoint instead. It cannot benefit from this feature if it is turned or takes radiant damage on that turn.",
-				"The undead is friendly to you and your allies and acts on your initiative after your turn. It obeys your verbal commands as a bonus action as you mentally command any undead you made with this spell within 60 feet of you (if you control multiple undeads, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the undead will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the undead only defends itself against hostile creatures. Once given an order, the undead continues to follow it until its task is complete.",
+				"2. 被尸鬼的近战攻击击中的生物必须通过等于你的法术豁免 DC 的体质豁免检定，否则会在其下一个回合结束前成为{@condition paralyzed}(ghoul)。",
+				"该生物获得一个等同于其行走速度的攀爬速度，并且它可以在不需要进行能力检定的情况下攀爬困难表面。 (dnd running group rules)",
+				"这个生物如果在阳光下开始它的回合，则智慧（感知）检定和攻击检定会受到劣势。",
+				"这个生物可以利用它的奖励动作，以其移动速度向它能看见的敌对生物移动。 (Dungeons & Dragons 规则)",
+				"6. 它获得了对毒素和死灵伤害的免疫力。 (Dungeons & Dragons游戏群规定)",
+				"7. 它获得免疫性，不受 {@condition charmed}，疲惫，或 {@condition poisoned} 的影响。",
+				"它获得了对非银制攻击所造成的钝击、刺击和斩击伤害的抵抗力。",
+				"不再需要呼吸或进食 (DND 运行团规则)",
+				"当它的生命值减少到0时，它可以进行一个等于受到伤害一半（最小值为10）的体质豁免投掷，以恢复1点生命值。如果在该回合中被转化或受到辐射伤害，它不能从此特性中获益。 (0) (Constitution) (10) (1)",
+				"不死生物对你和你的盟友友好，并在你的回合之后按你的倡议行动。它听从你的口头命令作为额外行动，当你在60英尺范围内以这个法术创造的任何不死生物（如果你控制多个不死生物，你可以同时命令任何一个或全部，向每个发出相同的命令）。你决定不死生物将采取什么行动以及在其下一个回合将移动到何处，或者你可以发出一般命令，比如守卫特定的房间或走廊。如果你没有发出命令，不死生物只会防御自己免受敌对生物的攻击。一旦给出命令，不死生物将继续遵循直到任务完成。 (dnd, undeads)",
 				"根据当地语言习惯，像（%num%）这样的文本在翻译中仍应输出为（%num%）。\n翻译应符合DND游戏组规则，专有名词在翻译后应在括号中保留英文。 \n\n你可以控制亡灵24小时，之后它将不再服从你的任何命令。为了在另外24小时内继续控制亡灵，你必须在当前24小时结束之前再次对亡灵施放此法术。这次使用法术将重新确立你对该亡灵的控制。",
 				"如果亡灵被杀死，它会完全化为灰烬，彻底毁灭其形态。（DND进行组规则）",
 				"当你每天在同一具不死生物上施放这个法术一年后，它将永久地受到你的控制。 (法术: \"永久控制\" 英文不变)"
@@ -1272,7 +1272,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 6th Level or higher, the challenge rating of a creature that you can reanimate increases by 1."
+						"在更高级别时，当你使用6级或更高级别的法术位施放这个法术时，你可以复活的生物的挑战等级增加1。 (spell slot) (creature)"
 					]
 				}
 			],
@@ -1328,12 +1328,12 @@
 				]
 			},
 			"entries": [
-				"You can conjure a scythe of necromantic energy to create a reaping scythe. This magic weapon counts as a martial melee weapon which you are proficient. The scythe deals {@damage 4d8} necrotic damage on a hit and has the heavy and two handed property.",
-				"When you use this weapon to reduce a humanoid to 0 hitpoints, it instantly dies and returns to life as your choice of a zombie or skeleton at the start of your next turn.",
-				"You can decide whether it is a zombie or a skeleton (the statistics for zombies and skeletons are in the Monster Manual).",
-				"You can use a bonus action to mentally command these undead with this spell. To receive the command, the undead must be within 60 feet of you. You decide what action the undead will take and where they will move during their next turn, or you can issue a general command.",
-				"If you issue no commands, the undead do nothing except defend themselves against hostile creatures. Once given an order, the undead continue to follow it until their task is complete. That creature under your control until the spell ends, after which they become inanimate once more.",
-				"If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter while the spell persists, you can use a bonus action to cause the scythe to reappear in your hand."
+				"你可以召唤一把死灵能量的镰刀来制造一把收割镰刀。这个魔法武器被视为一种战斗近战武器，你精通它。这把镰刀在命中时造成{@damage 4d8}的死灵伤害，并具有沉重和双手属性。(reaping scythe)",
+				"当你使用这个武器将一个人型生物的生命值降至0时，它会立即死亡，并在你下一个回合开始时选择变成僵尸或骷髅。（zombie或skeleton）",
+				"你可以决定是僵尸还是骷髅（僵尸和骷髅的统计数据在《怪物手册》中）。",
+				"你可以使用一个额外行动，用这个法术来精神命令这些不死生物。为了接收命令，不死生物必须在你的60英尺内。你决定不死生物将采取什么行动以及它们在下一个回合将移动到哪里，或者你可以发布一个一般性命令。（D&D）",
+				"如果您没有下达命令，亡灵将什么也不做，只是保护自己免受敌对生物的攻击。一旦接到命令，亡灵将继续遵循直至任务完成。直到法术结束，那个生物都在您的控制之下，之后它们再次变得无生命。 (dnd running group规则)",
+				"如果你放下武器或抛出它，它会在回合结束时消失。在此之后，当法术持续时，你可以使用一个奖励动作使镰刀重新出现在你的手中。 (dnd)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 8,
@@ -1346,7 +1346,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 7th level or higher, the damage increases to {@dice 5d8}."
+						"在更高的级别时，当你使用7级或更高级别的法术槽施放此法术时，伤害增加到{@dice 5d8}。"
 					]
 				}
 			],
@@ -1401,9 +1401,9 @@
 				]
 			},
 			"entries": [
-				"You are able to harness the last vestiges of life from a creature's soul to view it last moments of life through your own eyes. You can choose one corpse in range that that has not been dead no longer than a year. The spell fails if the corpse has been dead more than a year.",
-				"Until the spell ends, you are able to view and access any memories that the corpse may have had within the last hour of its death. You are able to see and hear as if you were using the target's senses during life. While in this state, you are {@condition blinded} and {@condition deafened} to your own senses.",
-				"While in this state, you can target specific memories that creature had based on any names, places, individuals, or other topics related to a specific memory ."
+				"你能够从生物的灵魂中提取最后一丝生命，通过自己的眼睛观看它生命的最后时刻。你可以选择范围内的一具尸体，该尸体死亡时间不超过一年。如果尸体死亡时间超过一年，咒语将失败。 (dnd running group rules)",
+				"在法术结束之前，你能够查看并访问尸体在死亡的最后一小时内可能拥有的任何记忆。你能够像在生前使用目标的感官一样看到和听到。在这种状态下，你保持对自己的感官不受影响{@condition blinded}，{@condition deafened}。",
+				"在符合当地语言习惯的基础上，文本中像 (%num%) 这样的内容在翻译中应该仍然输出为 (%num%)。\n\n在这种状态下，你可以根据任何与特定记忆相关的名称、地点、个人或其他话题，针对该生物曾经有过的特定记忆进行定位。\n\nTranslation comply with dnd running group rules and proper nouns should keep the English in `( )` after the translation.（遵守dnd运行组规则，专有名词在翻译后应保留英文括号内的内容。）"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 8,
@@ -1417,7 +1417,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Level When you cast this spell at 7th level, this duration of accessed memories increases to 24 hours. When you use a 9th level spell slot, you can view any moment in the creatures life up to 1 year before its death."
+						"在更高的等级上，当你以第7级施放这个法术时，所访问的记忆持续时间增加到24小时。当你使用第9级法术位时，你可以查看生物在死亡前一年内的任何时刻。 (At Higher Level When you cast this spell at (7th level), this duration of accessed memories increases to 24 hours. When you use a (9th level) spell slot, you can view any moment in the creature's life up to 1 year before its death.)"
 					]
 				}
 			]
@@ -1467,13 +1467,13 @@
 				]
 			},
 			"entries": [
-				"You touch a point and infuse an area with necromantic magics. The area can have a radius up to 60 feet and the spell fails if the radius includes an area already under the effect of the Desecration or Hallow spell. The affected area is subject to the following effects:",
-				"**Undying.** Dead bodies and corpses in the area cannot be revived or brought back to life by any means short of a Wish spell. After remaining in this area for one hour, dead bodies in this area return to life as a zombie or skeleton.",
-				"Undead raised in this manner are unfriendly to all living creatures. Roll initiative for the undead which has its own turns. It is under the Dungeon Master's control and acts according to its nature on each of its turns",
-				"**Cursed.** Creatures in this area cannot recover hitpoints. Whenever creatures take a short or long rest while in this area cannot use or regain hit die. Effects such as Lesser Restoration and Greater Restoration has no effect.",
-				"**Wither.** Affected creatures other than constructs and undead have their hitpoint maximum reduced by {@dice 2d10} while in this area. The damage can't reduce the target's hit points below 1. Once the creature leaves this area, its hit point returns to normal after 1 hour. A creature can only suffer from the effects of this casting of the spell once every day.",
-				"**Aura of Negativity.** Affected undead within this area gain {@dice 2d10} temporary hitpoints.",
-				"**Soul Siphon.** Creatures reduced to 0 hitpoint while in this area are instantly killed."
+				"你触摸一个点并将一片区域注入死灵魔法。该区域的半径最多可达 60 英尺，如果半径包含已经受到亵渎或神圣化法术影响的区域，则法术失败。受影响的区域受以下效果影响：(Desecration or Hallow)。",
+				"**不死之地。** 该区域内的尸体无法通过任何手段复活或苏醒，除非使用祝愿法术。在该区域内停留一小时后，该区域内的尸体将以僵尸或骷髅的形式复活。 (Undying)",
+				"以本地语言习惯为准，类似(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译符合dnd游戏团规则，专有名词在翻译后应在`()`中保留英文。\n\n以这种方式复活的不死生物对所有生物都不友好。为不死生物掷骰子决定先攻顺序，它有自己的回合。不死生物由地下城主宰控制，并在每个回合按其本性行动。",
+				"**诅咒。** 该区域内的生物无法恢复生命值。每当生物在该区域内进行短暂休息或长时间休息时，都无法使用或恢复生命骰。效果如次级恢复术和强效恢复术均无效果。 (D&D running group rules)",
+				"**凋零。** 在此区域内，受影响的生物（不包括构造和亡灵）的生命值上限减少了{@dice 2d10}。伤害不能将目标的生命值降低到1以下。一旦生物离开这个区域，其生命值在1小时后恢复正常。一个生物每天只能受到该法术施法的影响一次。 (Wither.)",
+				"**负面光环。** 在这个区域受到影响的不死生物获得{@dice 2d10}的临时生命值。",
+				"**灵魂虹吸**。 在此区域内降至 0 点生命值的生物将立即被杀死。"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 8,
@@ -1533,20 +1533,20 @@
 				]
 			},
 			"entries": [
-				"You can imbue necromantic magic into a corpse of a creature of challenge rating 1 or lower that has died within the last day, that is not an Construct or Undead to raise it back to life as a ghost. After you finish casting your spell, the corpse returns to life as a spectral servant while its physical corpse still remains. In its undead form, the target's game statistics remain the same except for the following: The creature can't use any features from Class features, Innate Spellcasting, Pact Magic, Spellcasting, abilities with a recharge, legendary actions or lair actions of its original form.",
+				"你可以在过去一天内死亡的挑战等级为1或更低的生物的尸体上施加亡灵魔法，将其复活为幽灵。在你完成施法后，尸体将以幽灵仆从的形式复活，而其肉体尸体仍然存在。在其亡灵形态下，目标的游戏统计数据保持不变，除了以下内容：该生物不能使用其原始形态中的任何职业特性、固有法术、契约魔法、法术、带有充能的能力、传奇行动或巢穴行动。 (necromantic magic)(Construct)(Undead)",
 				"在此法术持续期间，生物获得以下额外特征：(spell)",
 				"1. 这个生物的类型现在是不死族(Undead)。",
-				"2.The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object.",
-				"3.When the ghost reduces a creature to 0 hitpoints, that creature must succeed a Charisma saving throw equal to your spell save DC or be instantly killed",
-				"4.The ghost gains a flying speed equal to its walking speed.",
-				"5.It gains immunity to poison, necrotic, and nonmagical bludgeoning, piercing, and slashing damage.",
-				"6.It gains immunity to being {@condition charmed}, exhausted, {@condition frightened}, {@condition grappled}, {@condition restrained}, {@condition petrified}, or {@condition poisoned}",
-				"7.It gains resistance to cold, bludgeoning, piercing, and slashing damage from magical weapons",
-				"8.It no longer needs to breathe or eat",
-				"9.When it is reduced to 0 hitpoints, it can make a Constitution saving throw equal to half the damage dealt (minumum 10) to regain 1 hitpoint instead. It cannot benefit from this feature if it is turned or takes radiant damage on that turn.",
-				"The undead is friendly to you and your allies and acts on your initiative after your turn. It obeys your verbal commands as a bonus action as you mentally command any creature you made with this spell within 60 feet of you (if you control multiple undead, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
-				"The creature is under your control for 24 hours, after which it stops obeying any Command you've given it. To maintain the control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control on that creature.",
-				"Upon casting this spell on the same creature every day for one year, it becomes permanently under your control"
+				"2. 鬼魂可以像穿越艰难地形一样穿过其他生物和物体。 如果鬼魂在物体内结束回合，它会受到5点({@damage 1d10})的力量伤害。",
+				"当幽灵将一个生物的生命值降至0时，该生物必须通过一个与你的法术豁免 DC 相等的魅力豁免，否则会立即死亡。 (D&D running group rules)",
+				"幽灵获得的飞行速度等同于它的行走速度。（D&D跑团规则）",
+				"它获得免疫毒素、死灵和非魔法钝击、穿刺和斩击伤害。（D&D进行组规则）",
+				"它获得免疫于被 {@condition charmed}、疲惫、{@condition frightened}、{@condition grappled}、{@condition restrained}、{@condition petrified} 或 {@condition poisoned} 的状态。",
+				"它对来自魔法武器的冷、钝击、穿刺和砍砍伤害具有抗性。（DND 运行组规则）",
+				"它不再需要呼吸或进食 (8. 它不再需要呼吸或进食)",
+				"当生命值降低到 0 时，它可以进行一次与所受伤害一半相等的体质豁免检定（最低为 10）以恢复 1 点生命值。如果在该回合被使转或受到辐射伤害，则无法从此特性中受益。 (Constitution saving throw) (turned) (radiant damage)",
+				"不死生物对你和你的盟友友好，并在你的回合后按照你的先机行动。 它遵从你的口头命令，作为一个额外动作，就像你在60英尺内用这个法术创造的任何生物一样（如果你控制多个不死生物，你可以同时命令其中任何一个或全部，给每个人发出相同的命令）。 你决定生物将采取什么行动以及在其下一个回合中它将移动到何处，或者你可以发布一个一般命令，比如守卫特定的房间或走廊。 如果你没有发布命令，该生物只会保护自己免受敌对生物的攻击。 一旦给出命令，该生物将继续遵循直到任务完成。 （不死生物）",
+				"这个生物在24小时内受你控制，之后它停止服从你给予的任何指令。为了在另外24小时内继续控制这个生物，你必须在当前24小时周期结束之前再次对这个生物施放这个咒语。这个咒语的使用重新确立了你对那个生物的控制。 (DND 运行组规则)",
+				"在连续一年每天对同一生物施放此咒语后，它将永久地处于你的控制之下（under your control）。"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 9,
@@ -1563,7 +1563,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 7th Level or higher, the challenge rating of a creature that you can reanimate increases by 1."
+						"在更高级别的情况下，当你使用第7级或更高级别的法术位施放此法术时，你可以重新唤醒的生物的挑战等级将增加1。 (Dungeons & Dragons 跑团规则)"
 					]
 				}
 			],
@@ -1610,8 +1610,8 @@
 				]
 			},
 			"entries": [
-				"A creature you can see within 150ft. become consumed with necromantic magic. You can force a creature you can see within range to make a Charisma saving throw. On a failed saving throw, that creature takes {@damage 10d8} necrotic damage and half as much on a successful saving throw.",
-				"If this attack reduces a creature to 0 hitpoints, you can choose to force another creature of your choice within range to make this saving throw. This creature takes {@damage 12d8} necrotic damage on a failed saving throw and half as much on a success. After this creature is targeted, the spell ends."
+				"你可以看到的生物在150英尺范围内受到了死灵魔法的影响。你可以强迫你能看到的范围内的生物进行一次魅力豁免检定。若未能通过豁免检定，该生物会受到{@damage 10d8}点死灵伤害，而在通过检定时则只受一半伤害。 (dnd running group rules)\n",
+				"如果这次攻击将一名生物的生命值降低至0，你可以选择强制范围内的另一名你选择的生物进行此豁免投掷。这个生物在未能通过豁免投掷时受到 {@damage 12d8} 死灵伤害，在成功通过时受到一半伤害。在这个生物被选中后，法术结束。 (necrotic damage)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 10,
@@ -1624,7 +1624,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 7th level or higher, you can target one additional creature before the spell ends, provided the prior target was reduced to 0 hitpoints. For each consecutive creature targeted, the damage die increases by {@dice 2d8}."
+						"在更高等级时，当你使用7级或更高级的法术槽施放此法术时，在法术结束前，你可以额外目标一名生物，前提是之前的目标已经降为0点生命值。对于每个连续被目标的生物，伤害骰增加{@dice 2d8}。 (D&D运行小组规则)"
 					]
 				}
 			],
@@ -1681,13 +1681,13 @@
 				]
 			},
 			"entries": [
-				"You unleash a bubbling orb of necrotic energy imbuing creatures in range with various necromantic sicknesses. Each creature in a 30ft. radius around a spot that you can see within range must roll a {@dice d6} to determine the effect:",
-				"1. Agony Creatures take {@damage 5d8} necrotic damage on a failed saving throw and half as much on a success. If creatures are missing any hitpoints, the target takes {@damage 5d12} necrotic damage instead.",
-				"2. Withered Creatures take {@damage 5d8} necrotic damage and cannot recover hitpoints for one minute on a failed saving throw. Creatures can repeat its saving throw at the end of each of its turns to end the effect on a success. On a successful saving throw, creatures take half damage and are otherwise unaffected.",
-				"3. Disease Creatures take {@damage 5d8} poison damage and are {@condition poisoned} for one minute on a failed saving throw. Creatures can repeat its saving throw at the end of each of its turns to end the effect on a success. On a successful saving throw, creatures take half damage and are otherwise unaffected.",
-				"4. Decay Creatures take {@damage 5d8} necrotic damage on failed saving throw and half as much on a success. On a failed saving throw, that creature suffers vulnerability to the next damage roll against it for the next minute.",
-				"5. Doom Creatures take {@damage 5d8} necrotic damage on a failed saving throw and half as much on a success. If this attack reduces a creature to 0 hitpoints, it is instantly killed.",
-				"6. Special The target suffers from two effects. Roll twice more rerolling any 6s."
+				"你释放出一团冒着泡沫的死灵能量，赋予范围内的生物各种死灵疾病。 在你能看到的范围内的一个点周围，半径为30英尺的范围内的每个生物都必须掷骰子来决定效果：{@dice d6}。 (dnd 运行小组规则)",
+				"1. 痛苦生物在未能通过豁免检定时受到{@damage 5d8}死灵伤害，通过时则受到一半伤害。如果生物失去了任何生命值，目标则受到{@damage 5d12}死灵伤害。（DND进行组规则）",
+				"枯萎生物失败豁免检定时受到 {@damage 5d8} 瘟疫伤害，并且在一分钟内无法恢复生命值。生物可以在自己的回合结束时重复进行豁免检定，若成功则结束效果。成功豁免的生物只受到一半伤害，并且其他方面不受影响。(Withered Creatures take {@damage 5d8} necrotic damage and cannot recover hitpoints for one minute on a failed saving throw. Creatures can repeat its saving throw at the end of each of its turns to end the effect on a success. On a successful saving throw, creatures take half damage and are otherwise unaffected.)",
+				"疾病生物在未通过豁免检定时受到 {@damage 5d8} 的毒素伤害，并在一分钟内处于 {@condition poisoned} 状态。生物可以在每个回合结束时重复进行豁免检定，以在成功时结束效果。在成功的豁免检定中，生物受到一半的伤害，否则不受影响。",
+				"4. 衰败生物在保存投掷失败时受到 {@damage 5d8} 死灵伤害，成功时受到一半伤害。在保存投掷失败时，该生物在接下来的一分钟内对下一个伤害投掷获得脆弱状态。",
+				"5. 毁灭生物在未通过豁免检定时受到 {@damage 5d8} 死灵伤害，通过时受到一半伤害。如果此次攻击将生物的生命值降低至 0 点，则立即被击杀。",
+				"特殊 (6) 对象受到两种效果影响。再投两次骰子，重新投掷任何6。"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 10,
@@ -1700,7 +1700,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 7th level or higher, the extra initial damage increases by {@dice 1d8} for every level above 6th."
+						"在更高级别时，当你使用 7 级或更高级别的法术位施放这个法术时，额外的初始伤害会每超过 6 级增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -1754,10 +1754,10 @@
 				]
 			},
 			"entries": [
-				"You can create a wall of wailing souls that appears at a point you choose in range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. This wall can be free floating or it can rest on a solid surface.",
-				"The wall can be 60ft. long, 10ft. high, and 5ft. thick. The wall blocks line of sight through it.",
-				"When the wall appears, each creature in its area must succeed a Wisdom saving throw. on a failed saving throw, creatures take {@damage 4d8} necrotic damage and is {@condition frightened} for one minute. Creatures {@condition frightened} in this manner have their movement speed halved for the duration as they are tormented by angry souls.",
-				"On a successful saving throw, it takes half as much damage and is not {@condition frightened}. A {@condition frightened} creature can repeat a Wisdom saving throw at the end of each of its turns, end the effect on a success."
+				"你可以在你选择的范围内生成一堵哀嚎灵魂之墙。该墙可以按你选择的任何方向出现：水平、垂直或对角线。这堵墙可以自由漂浮，也可以靠在坚固的表面上。(D&D)",
+				"墙可以长60英尺，高10英尺，厚5英尺。这堵墙阻挡了通过它的视线。 (Dungeons & Dragons)",
+				"当墙壁出现时，其区域内的每个生物必须成功进行一次感知豁免投骰。在豁免投骰失败时，生物会受到 {@damage 4d8} 死灵伤害，并且在一分钟内处于 {@condition frightened} 状态。以此方式受影响的生物在此期间的移动速度减半，因为他们被愤怒的灵魂所折磨。 (necrotic damage",
+				"在成功的豁免投掷中，它承受一半伤害，且不是{@condition frightened}。一名{@condition frightened}生物可以在每个自己的回合结束时重复进行一次感知豁免投掷，若成功则结束效果。"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 11,
@@ -1771,7 +1771,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@dice 1d8} for each slot level above 6th."
+						"在更高的等级时，当你使用7级或更高级别的法术位施放此法术时，伤害将每个高出6级的法术位级别增加 {@dice 1d8}。"
 					]
 				}
 			],
@@ -1820,9 +1820,9 @@
 				]
 			},
 			"entries": [
-				"You unleash of wave of both positive and negative energy that either ravages or replenishes the vitality of those in a 120 feet long and 10 feet wide blasts out from you in a direction you choose. For each creature in range, you can choose to inflict one of the following effects.",
-				"1. An affected creature regains {@dice 8d8} hitpoints. This effect has no affect on undead an constructs.",
-				"2. An affected creature must succeed a Constitution saving throw or take {@damage 8d8} necrotic damage on a failed saving throw. On a successful saving throw, creatures take half damage and are otherwise unaffected."
+				"你释放出一股正负能量的波动，会在你选择的方向上冲击120英尺长、10英尺宽的区域，无论是摧毁还是恢复该范围内生物的生命力。对于范围内的每个生物，你可以选择施加以下效果之一。（保留英文名词）",
+				"受影响的生物恢复{@dice 8d8}生命值。这种效果对不死族和构造物没有影响。 (dnd running group rules)",
+				"受影响的生物必须成功进行一次体质豁免检定，否则在未通过豁免检定时会受到{@damage 8d8}点死灵伤害。若通过了豁免检定，生物会减半伤害且其他方面不受影响。(DND 运行团规则生效，专有名词翻译后保留英文括号内)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 11,
@@ -1836,7 +1836,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 9th level or higher, the extra damage increases by {@dice 1d8}"
+						"在更高级别时，当你使用9级或更高级别的法术槽施放此法术时，额外伤害增加了{@dice 1d8}。"
 					]
 				}
 			],
@@ -1893,10 +1893,10 @@
 				]
 			},
 			"entries": [
-				"You are able to conjure a volatile orb of necrotic magic. Each creature in a 30ft. radius sphere centered on a spot within range must succeed a Constitution saving throw equal to your spell save DC.",
-				"On a failed saving throw, creatures take {@damage 10d6} necrotic damage and its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Remove Curse or Greater Restoration allows a creature's hit point maximum to return to normal before that time passes.",
-				"On a successful saving thow, creatures take half damage and are otherwise unaffected.",
-				"If this attack reduces a creature to 0 hitpoints, it is instantly killed. This spell has no effect on constructs and undead."
+				"你能召唤一个不稳定的死灵魔法球。在射程内以某一点为中心的半径为30英尺的球体内的每个生物都必须通过一次等于你的法术豁免 DC 的体质豁免检定。 (法术豁免 DC)",
+				"当未能通过豁免检定时，生物受到{@damage 10d6}点死灵伤害，其生命值上限减少相同数量的死灵伤害，持续1小时。解除诅咒或强力恢复术可以使生物的生命值上限在此时间结束前恢复正常。 (Remove Curse) 或 (Greater Restoration)",
+				"在成功的豁免投掷中，生物受到一半伤害，其他方面不受影响。(dnd running group rules)",
+				"如果这次攻击使生物的生命值降低至0，它将立即死亡。这个咒语对构造和不死生物无效。 (Dungeons & Dragons)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 11,
@@ -1910,7 +1910,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"At Higher Levels When you cast this spell using a spell slot of 9th level or higher, the extra damage increases by one {@dice 2d6}"
+						"在更高级别时，当你使用9级或更高级别的法术位施放此咒语时，额外伤害增加1 {@dice 2d6}。 (Dungeons & Dragons游戏组规则适用，并且适当名词在翻译后应保留英文在 `()` 中。)"
 					]
 				}
 			],
@@ -1959,9 +1959,9 @@
 				]
 			},
 			"entries": [
-				"You unleash a wave of necromantic energy that brutally cripples a creature you can see in range, shattering every bone in its body and rendering its muscles useless. The target takes {@damage 4d6} necrotic damage and must succeed a Constitution saving throw. On a failed saving throw, the creatures Strength and Dexterity scores become 1 and its movement speed is reduced to 0 . For the duration, the creature cannot use its action, bonus action, or reaction to make a weapon attack, use material components for spells, use or interact with objects, or even simple perform tasks.",
-				"At the end of 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.",
-				"The spell can also be ended by a greater restoration, heal, or wish."
+				"你释放了一股死灵能量，残酷地摧毁了你能看到范围内的生物，粉碎了它身体的每根骨头，使其肌肉无法运作。目标受到{@damage 4d6}点死灵伤害，并必须通过一次体质豁免。未通过豁免的生物的力量和敏捷分数变为1，移动速度减为0。在持续时间内，该生物无法使用动作、额外动作或反应进行武器攻击，使用法术的材料组件，使用或互动物品，甚至进行简单任务。（D&D规则）",
+				"在30天结束时，生物可以再次进行对这个咒语的豁免投骰。如果它成功通过了豁免投骰，咒语就会结束。",
+				"该咒语也可以通过一种更强大的复原、治疗或愿望来结束。(greater restoration, heal, or wish)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 11,
@@ -2022,8 +2022,8 @@
 				]
 			},
 			"entries": [
-				"You can unleash a wave of necromantic energy that corrupting all living creatures in your wake binding their souls to your will upon their demise. All creatures within a 120ft. radius around you must succeed a Constitution saving throw. On a failed saving throw, creatures take {@damage 10d8 + 30} necrotic damage and half as much on a successful saving throw.",
-				"A humanoid creature killed by this spell rises at the start of your next turn as your choice of a skeleton or zombie that is permanently under your command, following your verbal orders to the best of its ability."
+				"你可以释放一股死灵能量，腐化你路径上的所有生物，将他们的灵魂绑定到你的意志之下，直至他们死去。你周围120英尺范围内的所有生物必须进行一次体质豁免检定。未通过豁免检定的生物受到{@damage 10d8 + 30}死灵伤害，通过检定的生物受到一半伤害。 (necrotic damage)",
+				"这个法术杀死的人形生物将在你的下一个回合开始时复活，成为你选择的骷髅或僵尸，永久地听从你的命令，尽其所能。"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 11,
@@ -2085,10 +2085,10 @@
 				]
 			},
 			"entries": [
-				"You are able to focus the power of dying souls into a beam of necrotic energy that gets stronger which each creature slain. A creature in a 10ft. wide and 120ft. long line must succeed a Charisma saving throw. On a failed saving throw, creatures take {@damage 10d8} necrotic damage. On a successful saving throw, creatures take half damage.",
-				"If this attack reduces any creature to 0 hitpoints on that turn, that creature is instantly killed and the base damage of this spell increases by {@dice 1d8}. This spell can only increase in this manner once on each of your turns.",
-				"Creatures killed in this manner cannot be revived by any means except for a Wish spell",
-				"You can use your action to create a new soul beam as your action on any turn until the spell ends."
+				"你能够将垂死灵魂的力量集中成一束死灵能量，随着每个被杀死的生物而变得更强。在一个10英尺宽、120英尺长的线上的生物必须成功进行一次魅力豁免检定。未能通过豁免检定的生物会受到{@damage 10d8}死灵伤害。通过豁免检定的生物会受到一半伤害。 (dnd running group rules) (Charisma)",
+				"如果这次攻击将任何生物的生命值降至0，该生物立即死亡，并且这个咒语的基础伤害增加了{@dice 1d8}。该咒语在每个你的回合中只能以这种方式增加一次。 (DND运行团规则)",
+				"以符合当地的语言习惯，并且像(%num%)这样的文本在翻译中应该仍然输出为(%num%)。\n\n在此方式被杀死的生物除了使用愿望法术外，无法通过任何方式复活。\n\n（DND运行团规则）",
+				"你可以在任何回合使用你的动作来创造一束新的灵魂光束，直到法术结束。 (soul beam)"
 			],
 			"source": "ExpandedNecromancySpells",
 			"page": 12,
