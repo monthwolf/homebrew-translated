@@ -1,0 +1,4772 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "llspell",
+				"abbreviation": "LL:SC",
+				"full": "Laserllama's Spell Compendium",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"hakr14"
+				],
+				"url": "https://www.gmbinder.com/share/-NQcEN32m0-1u_UMFV5h",
+				"color": "000080",
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1713674892,
+		"dateLastModified": 1713674892,
+		"_dateLastModifiedHash": "d929934813"
+	},
+	"spell": [
+		{
+			"name": "Booming Blade (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "TCE",
+					"page": 106
+				}
+			],
+			"school": "V",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a simple or martial melee weapon"
+			},
+			"duration": [
+				{
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"作为一个额外动作，你用于施放此法术的近战武器被雷鸣魔法所笼罩。直到你下一个回合开始之前，你使用该武器进行的攻击将以雷电伤害取代武器的普通伤害类型。 (DND跑团规则)",
+				"每次施法时，当你使用此法术造成雷电伤害时，你可以将目标笼罩在雷鸣能量中，直到你的下一个回合开始。如果目标在那之前自愿移动了5英尺或更多，这股雷鸣能量就会爆炸，它将受到{@damage 1d6}的雷电伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术对生物造成的雷电伤害，在生物移动至少5英尺时，在第5级{@damage 1d8}、第11级{@damage 1d10}和第17级{@damage 1d12}增加。"
+					]
+				}
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d6",
+					"5": "1d8",
+					"11": "1d10",
+					"17": "1d12"
+				}
+			},
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1d(2 * floor((@details.level + 19) / 6))",
+						"thunder"
+					]
+				],
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/skills/melee/strike-sword-slashing-red.webp"
+		},
+		{
+			"name": "Green-Flame Blade (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "TCE",
+					"page": 107
+				}
+			],
+			"school": "V",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a simple or martial melee weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"作为一个额外动作，你将用于施放这个法术的近战武器缠绕上翡翠之火。直到你的下个回合开始，你使用那个武器进行的攻击将以火属性伤害取代武器的普通伤害类型。(火焰翡翠之怒)",
+				"每次施法时，当你用这个法术造成火焰伤害时，你可以使火焰跳到另一个你能看到的生物身上，在你的目标身边的5英尺范围内，对其造成{@damage 1d6}点火焰伤害。(fire damage)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术对第二个生物造成的火焰伤害在第5级时增加至{@damage 1d8}，在第11级时增加至{@damage 1d10}，在第17级时增加至{@damage 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d6",
+					"5": "1d8",
+					"11": "1d10",
+					"17": "1d12"
+				}
+			},
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1d(2 * floor((@details.level + 19) / 6))",
+						"fire"
+					]
+				],
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/weapons/swords/greatsword-evil-green.webp"
+		},
+		{
+			"name": "Friends (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 244
+				}
+			],
+			"school": "E",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a small amount of makeup applied to the face as this spell is cast"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你用舒缓的魔法编织了你的话语，并迫使一个能听得懂你并且能理解你的生物进行一次感知豁免。如果失败，你在接下来的一段时间内对该生物进行的所有魅力检定都具有优势。 (D&D running group rules)",
+				"成功拯救后，生物意识到你使用了魔法试图影响它，并对你产生敌意。易于暴力的生物可能会攻击你，其他生物可能会以其他方式对你进行报复。（Dungeons & Dragons）"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/consumables/drinks/alcohol-beer-mug-yellow.webp"
+		},
+		{
+			"name": "Glitterbeam",
+			"source": "llspell",
+			"school": "V",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你朝范围内的生物或物体发射一束闪烁的光束。对目标进行远程法术攻击。命中时，它受到{@damage 1d8}辐射伤害。直到有生物采取行动将闪光清除为止，被此法术击中的目标在5英尺半径内发出明亮光芒，并在进行任何敏捷（{@skill Stealth}）检定时具有劣势，用于隐藏或掩藏自己。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的伤害在第5级{@damage 2d8}、第11级{@damage 3d8}和第17级{@damage 4d8}时增加1d8。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"miscTags": [
+				"LGT",
+				"SCL"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1d8",
+						"radiant"
+					]
+				],
+				"target": {
+					"value": 1,
+					"type": "creatureOrObject"
+				}
+			},
+			"foundryImg": "icons/magic/light/beams-rays-orange-purple-small.webp"
+		},
+		{
+			"name": "Mind Thrust",
+			"source": "llspell",
+			"school": "V",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你用心灵力量向范围内的生物发动了一连串的攻击。对目标进行一次远程法术攻击。命中后，目标受到{@damage 1d12}点魔法钝击伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的伤害在5级时增加1d12（{@damage 2d12}），11级时增加1d12（{@damage 3d12}），17级时增加1d12（{@damage 4d12}）。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d12",
+					"5": "2d12",
+					"11": "3d12",
+					"17": "4d12"
+				}
+			},
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1d12",
+						"bludgeoning"
+					]
+				],
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-pink.webp"
+		},
+		{
+			"name": "Otherworldly Grasp",
+			"source": "llspell",
+			"school": "N",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"s": true,
+				"m": "an empty hand"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你将死灵的精神力量注入你的手，使其变成了一个枯萎的幽灵。对于你能够触及的生物进行一次近战法术攻击。命中后，生物受到{@damage 1d8}点死灵伤害，并且你获得{@dice 1d4}点临时生命值，这些生命值持续到你集中注意力的持续时间结束。 (DND running group 规则)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的伤害，以及你获得的临时生命值，在你达到第5级时增加1d8和1d4分别为{@damage 2d8}和{@dice 2d4}，达到第11级时增加1d8和1d4分别为{@damage 3d8}和{@dice 3d4}，达到第17级时增加1d8和1d4分别为{@damage 4d8}和{@dice 4d4}。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"SCL",
+				"THP"
+			],
+			"scalingLevelDice": [
+				{
+					"label": "necrotic damage",
+					"scaling": {
+						"1": "1d8",
+						"5": "2d8",
+						"11": "3d8",
+						"17": "4d8"
+					}
+				},
+				{
+					"label": "temporary hit points",
+					"scaling": {
+						"1": "1d4",
+						"5": "2d4",
+						"11": "3d4",
+						"17": "4d4"
+					}
+				}
+			],
+			"spellAttack": [
+				"M"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"(floor((@details.level + 7) / 6))d8",
+						"necrotic"
+					],
+					[
+						"(floor((@details.level + 7) / 6))d4",
+						"temphp"
+					]
+				],
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/unholy/hand-light-green.webp"
+		},
+		{
+			"name": "Primal Savagery (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "XGE",
+					"page": 163
+				}
+			],
+			"school": "T",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "1 attack"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"s": true,
+				"m": "an empty hand"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"作为非武器攻击的一部分，你让你的牙齿或手指变成了野蛮的利齿或爪子。打击命中时，这个非武器攻击造成魔法穿刺或割裂伤害，伤害值等于 {@damage 1d6} 加上你的力量调整值。这个非武器攻击后，你的牙齿和手指会恢复正常。或者，你可以使用你的施法能力进行攻击和伤害投掷。 (unarmed strike)(Strength modifier)(Spellcasting ability)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的伤害骰在5级时增加至 ({@damage 1d8})，11级时增加至 ({@damage 1d10})，17级时增加至 ({@damage 1d12})。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"piercing",
+				"slashing"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d6",
+					"5": "1d8",
+					"11": "1d10",
+					"17": "1d12"
+				}
+			},
+			"spellAttack": [
+				"M"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1d(2 * floor((@details.level + 19) / 6)) + @mod",
+						""
+					]
+				],
+				"target.type": null
+			},
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
+		},
+		{
+			"name": "Psionic Strike",
+			"source": "llspell",
+			"school": "V",
+			"level": 0,
+			"time": [
+				{
+					"unit": "special",
+					"condition": "1 attack"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"s": true,
+				"m": "an empty hand"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"作为无武器攻击的一部分，你在手中显现出一道灵能之刃。击中目标时，目标受到的精神伤害为{@damage 1d6} + 你的力量调整值，代替你无武器攻击的普通伤害。你的手在攻击结束时立即恢复到正常状态。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的伤害骰在5级时增加至 ({@damage 1d8})，11级时增加至 ({@damage 1d10})，17级时增加至 ({@damage 1d12})。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d6",
+					"5": "1d8",
+					"11": "1d10",
+					"17": "1d12"
+				}
+			},
+			"foundrySystem": {
+				"ability": "str",
+				"damage.parts": [
+					[
+						"1d(2 * floor((@details.level + 19) / 6)) + @mod",
+						"psychic"
+					]
+				],
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/unholy/strike-hand-glow-pink.webp"
+		},
+		{
+			"name": "Seance",
+			"source": "llspell",
+			"school": "T",
+			"level": 0,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你引导小型灵体，让它们通过你进行工作，以便它们再次影响物质世界。你在范围内创造以下效果之一： (%num%)",
+				{
+					"type": "list",
+					"items": [
+						"你创造出一种瞬间的、无害的感官效果，比如闪烁的天蓝色火焰、不自然的凉风、有节奏的吟唱，或者香味。 (dnd 跑团规则)",
+						"一个小的精灵短暂地出现然后消失了。 (A minor spirit briefly appears and fades away.)",
+						"你可以即时点燃或熄灭蜡烛、火把或小篝火。(torch)",
+						"一束或彩虹般的光，指向最接近的精神力量之处，最近的死亡或新生。(dnd running group rules)",
+						"在符合当地语言习惯的前提下，文本中的 (%num%) 应该在翻译中保持为 (%num%)。\n翻译需符合 dnd 运行团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n范围内的地脉短暂地显露出自己，随着异界光芒的闪烁。 (Ley lines)"
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"foundryImg": "icons/magic/unholy/silhouette-light-fire-blue.webp"
+		},
+		{
+			"name": "Tempestuous Blade",
+			"source": "llspell",
+			"school": "V",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": "a simple or martial melee weapon"
+			},
+			"duration": [
+				{
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"作为一项额外动作，你将施法时使用的近战武器注入电击魔法。直到你下个回合开始前，你使用该武器的攻击将造成闪电伤害，而不是武器的普通伤害类型。 (DND: 龙与地下城, Bonus Action: 奖励动作)",
+				"每次施法时，当你使用此法术造成闪电伤害时，你可以将电荷灌注到目标身上，直到你下一回合开始。如果目标在此之前使用了任何一种反应，这股风暴般的电荷就会释放出来，它会受到{@damage 1d6}的闪电伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术造成的闪电伤害，当生物移动至少5英尺时，5级时为{@damage 1d8}，11级时为{@damage 1d10}，17级时为{@damage 1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d6",
+					"5": "1d8",
+					"11": "1d10",
+					"17": "1d12"
+				}
+			},
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1d(2 * floor((@details.level + 19) / 6))",
+						"lightning"
+					]
+				],
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/weapons/swords/sword-flanged-lightning.webp"
+		},
+		{
+			"name": "True Strike (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 284
+				}
+			],
+			"school": "D",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "round"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你瞄准范围内的目标，给它缠绕着占卜魔法，引导它的打击。在你下一回合开始前，每次使用该武器对该目标进行近战攻击时，你的攻击命中加 {@dice 1d4}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的攻击加值在你达到5级{@dice 1d6}、11级{@dice 1d8}和17级{@dice 1d10}时增加。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d4",
+					"5": "1d6",
+					"11": "1d8",
+					"17": "1d10"
+				}
+			},
+			"foundrySystem": {
+				"damage.parts": [],
+				"formula": "1d(2 * floor((@details.level + 13) / 6))",
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/skills/ranged/target-bullseye-archer-orange.webp"
+		},
+		{
+			"name": "Vicious Mockery (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 285
+				}
+			],
+			"school": "E",
+			"level": 0,
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向能听到并理解你的生物释放一系列挑衅性的言辞。目标必须成功进行一次感知豁免才行，否则它将受到{@damage 1d4}的精神伤害，并在你的下一回合开始前对除了你以外的目标的每次攻击投掷都有劣势。 (D&D运行组规则)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"这个法术的伤害会在你达到第5级({@damage 2d4})、第11级({@damage 3d4})和第17级({@damage 4d4})时增加1d4。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"scalingLevelDice": {
+				"scaling": {
+					"1": "1d4",
+					"5": "2d4",
+					"11": "3d4",
+					"17": "4d4"
+				}
+			},
+			"foundrySystem": {
+				"acivation.condition": "At a creature that can hear and understand you within range",
+				"damage.parts": [
+					[
+						"1d4",
+						"psychic"
+					]
+				],
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/creatures/magical/spirit-poison-smoke-green.webp"
+		},
+		{
+			"name": "Arcane Lance",
+			"source": "llspell",
+			"level": 1,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 90,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a clear 1-inch crystal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在手中凝聚了一柄纯粹的奥术能量长矛，并对你能看到的范围内的生物进行远程法术攻击。击中时，目标受到 {@damage 5d4} 的力量伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放此法术时，伤害会随着每个高于1级的法术位等级增加 {@scaledamage 5d4|1-9|2d4}。"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/sonic/projectile-shock-wave-blue.webp"
+		},
+		{
+			"name": "Divine Favor (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 234
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你的祈祷让你选择的一件武器在你十英尺范围内散发出神圣的光芒。直到法术结束，使用那件武器的攻击在命中时额外造成{@damage 1d4}点辐射伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高级的法术位施放此法术时，你可以额外选择一把在你身边10英尺范围内的武器，每个法术位等级高于一级时增加一把。（spell slot）、（1st）"
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "object"
+				}
+			},
+			"foundryImg": "icons/skills/ranged/wand-attack-beam-blue.webp"
+		},
+		{
+			"name": "Ensnaring Strike (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 237
+				}
+			],
+			"level": 1,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，你可以使命中点爆炸，产生一团蔓藤的扭曲物质。目标必须成功进行一次力量豁免检定，否则将被蔓藤所束缚，直到法术结束。大型或更大的生物对此豁免检定具有优势。 (Writhing Mass of Thorns)",
+				"被限制的生物在每个回合开始时受到{@damage 1d6}点穿刺伤害。被限制的生物或距离其5英尺内的另一个生物可以使用动作对你的法术豁免 DC 进行一次力量检定，成功则解除束缚。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级的法术槽施放此法术时，每个回合开始时受到的伤害将每个超出1级的法术槽等级增加 {@scaledamage 1d6|1-9|1d6}。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"foundrySystem": {
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/nature/root-vine-hand-strike.webp"
+		},
+		{
+			"name": "Ethereal Anchor",
+			"source": "llspell",
+			"level": 1,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a silver nail"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你朝范围内的生物投掷一道纯粹的灵魂之箭。对目标进行一次远程法术攻击。命中后，它受到{@damage 3d6}辐射伤害，且在持续时间内，其速度降低为0，因为被灵魂之箭牢牢固定在原地。该生物可以在其回合内以一个动作，进行一次力量属性检定，检定的难度等级为你的法术豁免 DC，若成功则结束该法术（英文名字）."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术槽施放这个法术时，辐射伤害每超过1级的槽级别增加{@scaledamage 3d6|1-9|1d6}。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/control/debuff-energy-snare-blue.webp"
+		},
+		{
+			"name": "Ghastly Flight",
+			"source": "llspell",
+			"level": 1,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				},
+				"type": "line"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the powdered remains of a creature"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"释放了一个恶毒的灵魂，它从你身上飞出，在你选择的方向上形成一个长60英尺、宽5英尺的直线，然后消失不见。直线范围内的每个生物都必须进行一次体质豁免才能。豁免失败的生物会受到 {@damage 2d8} 死灵伤害，并且在你的下一个回合开始前不能恢复生命值。豁免成功的生物则受到一半伤害，并且可以像平常一样恢复生命值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级的法术槽施放这个法术时，每超过1级的法术槽等级，伤害增加{@scaledamage 2d8|1-9|1d8}。 (dnd running group)"
+					]
+				}
+			],
+			"areaTags": [
+				"L"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"foundrySystem": {
+				"target.width": 5
+			},
+			"foundryImg": "icons/magic/unholy/projectile-flame-white-purple.webp"
+		},
+		{
+			"name": "Hail of Thorns (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 249
+				}
+			],
+			"level": 1,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你用远程武器攻击范围内的生物时，你可以使弹药爆炸成一阵荆棘雨。除了攻击的正常效果外，你的目标和每个在5英尺范围内的生物都必须进行一次敏捷豁免检定。生物在失败时受到{@damage 1d10}穿刺伤害，成功时则受到一半伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用二级或更高级的法术位施放此法术时，伤害将每个高出1级的法术位等级增加{@scaledamage 1d10|1-9|1d10}。（Dungeons & Dragons）"
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 5,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/magic/nature/root-vine-spiral-thorns-teal.webp"
+		},
+		{
+			"name": "Id Insinuation",
+			"source": "llspell",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你释放了对一个你能看见范围内的生物的相互冲突的欲望，损害了它做出决定的能力。它必须成功进行一次感知豁免，否则为{@condition incapacitated}。(dnd)",
+				"每当它的回合结束时，以及每当它受到此法术以外的伤害时，它可以再次进行一次智力豁免检定。在未能通过检定时，它会受到 {@damage 1d6} 精神伤害，并且法术在通过检定时结束。 (dnd running group rules)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级的法术位施放此法术时，你可以针对每个高于1级的法术位额外选择一个生物作为目标。当你选择目标时，这些生物必须彼此相距不超过30英尺。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye-tan.webp"
+		},
+		{
+			"name": "Inspiring Melody",
+			"source": "llspell",
+			"level": 1,
+			"school": "E",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 10,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": "a musical instrument that you are proficient with"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你奏响一曲，激励听到的人站起来战斗。 在范围内能听到你声音的你选择的生物，获得临时生命值，数值等同于你的咒法能力修正值（最少为1临时生命值）。 (spellcasting ability modifier)",
+				"在每个随后的回合中作为一个额外动作，你可以使用一个乐器再次演奏这个曲调，并为另一个能听到你声音的生物提供临时生命值。(D&D 运行组规则)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术槽施放此法术时，施法距离增加5英尺，并且每次施法，你可以为一个额外目标提供临时生命值，对于每个超过1级的法术槽级别。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"MT"
+			],
+			"miscTags": [
+				"SCL",
+				"THP",
+				"UBA"
+			],
+			"foundrySystem": {
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"max(1, @mod)",
+						"temphp"
+					]
+				],
+				"target": {
+					"value": null,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/tools/instruments/bell-gold.webp"
+		},
+		{
+			"name": "Searing Smite (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 274
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你用近战武器进行攻击时，你可以让武器燃烧起来，呈现白热的强度。这次攻击额外造成{@damage 1d8}点火焰伤害，并且目标会突然燃烧起来。在其每个回合开始时，它必须进行一次体质豁免检定。在一次未通过的检定中，它会受到{@damage 1d8}点火焰伤害，但若通过了，火焰将熄灭。另一个生物可以使用一个动作来熄灭这些魔法火焰。(melee weapon attack, Constitution, another creature)",
+				"如果你的目标是一棵植物，无论是初始火焰伤害还是在未能通过豁免检定后造成的火焰伤害，都会增加 {@damage 1d8}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放此法术时，攻击造成的初始火焰伤害以及对生物造成的火焰伤害（在未通过豁免检定时）都会每级增加 {@scaledamage 1d8;2d8|1-9|1d8}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"foundrySystem": {
+				"damage.versatile": "2d8[against a plant]",
+				"target.type": null
+			},
+			"foundryImg": "icons/skills/melee/strike-hammer-destructive-orange.webp"
+		},
+		{
+			"name": "Shield (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 275
+				}
+			],
+			"level": 1,
+			"school": "A",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are hit by an attack you can see or targeted by {@spell magic missile}"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一道闪烁着魔力的屏障出现，保护着你。直到当前回合结束，你的护甲等级提高了1点，再加上你的施法属性修正值，并且你免疫来自{@spell magic missile}法术的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级的法术槽施放此咒语时，你的护甲等级奖励会每超出1级增加1点。 (spell slot)"
+					]
+				}
+			],
+			"miscTags": [
+				"MAC",
+				"SCL"
+			],
+			"foundrySystem": {
+				"formula": "@item.level + @mod",
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/defensive/shield-barrier-deflect-teal.webp"
+		},
+		{
+			"name": "Thunderous Smite (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 282
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你用近战武器攻击命中时，你可以使武器爆炸，发出可在300英尺范围内听到的雷鸣冲击波。此次攻击额外造成{@damage 1d8}的雷电伤害，目标必须成功进行一次力量豁免才能抵挡，否则将被推开10英尺，并摔倒{@condition prone}。巨大或更大的目标在这次豁免扔中有优势。 (DND 运行小组规则)(thunder damage)",
+				"如果目标是一个构造物或土元素，则额外的雷霆伤害增加 {@damage 1d8}，并且它在力量豁免检定中具有劣势。 (dnd running group rules)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级的法术位施放这个咒语时，雷霆伤害增加了{@scaledamage 1d8;2d8|1-9|1d8}，并且目标被额外推动10英尺，沿直线远离你，每个法术位等级高于1级。 (spell slot)"
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"AAD",
+				"FMV",
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"foundrySystem": {
+				"damage": {
+					"parts": [
+						[
+							"1d8",
+							"thunder"
+						]
+					],
+					"versatile": "2d8[against a construct or an earth elemental]"
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/lightning/bolt-strike-wide-white.webp"
+		},
+		{
+			"name": "Torrent",
+			"source": "llspell",
+			"level": 1,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "line"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a mirror"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"一股元素水从你身上喷涌而出，在你选择的方向上形成一条长30英尺、宽5英尺的直线，迫使该区域内的任何生物进行一次力量豁免投掷。如果未能通过，它会受到{@damage 1d12}的冰冷伤害，并向后推10英尺，摔倒至于地面{@condition prone}。若成功通过，则只受到一半伤害，且不会移动或摔倒。巨型或更大的生物在其豁免投掷中具有优势。（Cold damage）"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放此法术时，伤害增加 {@scaledamage 1d12|1-9|1d12} 并且每个高于1级的法术位级别增加10英尺的击退距离。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"L"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"miscTags": [
+				"FMV",
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"foundrySystem": {
+				"target.width": 5
+			},
+			"foundryImg": "icons/magic/water/projectile-water-wave-teal.webp"
+		},
+		{
+			"name": "Witch Bolt (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 289
+				}
+			],
+			"level": 1,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of wood struck by lightning"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"一道刺耳的能量束射向射程内的生物，形成一道持续的闪电弧线连接你和目标。对那个生物进行远程法术攻击。命中时，目标受到{@damage 1d12}闪电伤害，而在这个法术持续期间，你和目标都不能彼此移动超过30英尺。 (D&D运行组规则)",
+				"你可以在每个后续的回合使用一个动作，向该生物额外造成1d12的闪电伤害。生物可以尝试通过使用动作来进行一次力量检定，检定结果需要超过你的法术豁免 DC，以移动超出法术的范围。如果另一个生物尝试移动此法术的目标超出法术范围，它可以使用动作进行一次力量检定，检定结果需要超过你的法术豁免 DC。目标或另一个生物（无论是魔法的还是凡俗的）试图将目标移动到超出此范围之外的任何尝试都会自动失败。（%num%）",
+				"这个法术会立即结束，如果你被迫离开这个法术的目标超过30英尺。 (dnd跑团规则)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放此法术时，初始伤害和随后的伤害都会增加{@scaledamage 1d12|1-9|1d12}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/lightning/bolt-strike-sparks-purple.webp"
+		},
+		{
+			"name": "Wrathful Smite (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 289
+				}
+			],
+			"level": 1,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"当你用近战武器攻击时，你可以使武器同时打击身体和心灵。该攻击额外造成 {@damage 1d8} 心灵伤害，并且目标必须进行一次感知豁免才能免受该效果，否则它会成为你的 {@condition frightened}，直到法术结束。作为一个动作，生物可以重复进行这次感知豁免，成功则法术效果结束。{@condition frightened}",
+				"如果你的目标是一种畸变生物，或者它能够进行心灵交流，这个额外的心灵伤害会增加 {@damage 1d8}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术槽施放此法术时，每个法术槽等级高于1级的心灵伤害增加 {@scaledamage 1d8;2d8|1-9|1d8}。 (dnd running group)"
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"foundrySystem": {
+				"damage.versatile": "2d8[against an aberration or can speak telepathically]",
+				"target.type": null
+			},
+			"foundryImg": "icons/weapons/polearms/spear-flared-silver-pink.webp"
+		},
+		{
+			"name": "Aura of Frost",
+			"source": "llspell",
+			"level": 2,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 10,
+					"type": "feet"
+				},
+				"type": "radius"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"奥术的冰霜、雪花和风在你周围形成一个半径为10英尺的光环，直到咒语结束，该光环跟随你移动，以你为中心。当除你以外的生物首次进入该区域或者开始它的回合时，它必须成功进行一次体质豁免才能，否则将受到{@damage 2d8}的冷伤害，并且其速度将减少20英尺，直到下一回合开始。豁免成功的话，它只受到一半的冷伤害且速度不减少。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，一个未通过豁免检定的生物将额外受到{@scaledamage 2d8|2-9|1d8}的冰冷伤害，并且其速度将每超过2级的法术等级额外降低10英尺。 (dnd)"
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"foundryImg": "icons/magic/air/wind-weather-snow-gusts.webp"
+		},
+		{
+			"name": "Branding Smite (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 219
+				}
+			],
+			"level": 2,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"当你使用近战武器进行攻击时，你可以使武器闪耀着异界的星体辉光。该攻击造成{@damage 2d8}额外的辐射伤害，目标在法术结束前在半径5英尺范围内散发微弱光芒。如果目标曾经是{@condition invisible}，它也会变得可见，并且在持续时间内无法通过魔法或世俗手段变得隐形。（English）",
+				"如果你的目标是邪魔或不死生物，或者具有日光敏感特性，那么额外的辐射伤害会增加 {@damage 1d8}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级的法术位施放此法术时，光辉伤害将每超过2级的法术位等级增加{@scaledamage 2d8;3d8|2-9|1d8}。 (spell slot)"
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"miscTags": [
+				"AAD",
+				"LGT",
+				"SCL"
+			],
+			"foundrySystem": {
+				"damage": {
+					"parts": [
+						[
+							"2d8",
+							"radiant"
+						]
+					],
+					"versatile": "3d8[against a fiend or undead, or has the sunlight sensitivity trait]"
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-red.webp"
+		},
+		{
+			"name": "Chromatic Blade",
+			"source": "llspell",
+			"level": 2,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a charred wooden hilt"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 10,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你在自由手中召唤出一个元素之刃，选择以下其中一种伤害类型：酸、冷、火、雷、毒、或者雷霆。这个元素之刃看起来就像是由选择的元素制成的，并持续一段时间。如果你松开这个刃，它会消失，但你可以再次在作为一个奖励行动时召唤出这个刃，而不消耗一个法术槽。 (elemental blade)",
+				"每当你进行近战攻击时，你可以使用元素之刃进行近战法术攻击，攻击范围内的目标。命中时，它受到选择的类型的元素伤害，伤害值为{@damage 2d6}+你的法术施法调整值。",
+				"当你手中拿着时，刀刃在半径为10英尺的范围内发出明亮的光，再额外延伸10英尺处发出微光。 (D&D)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，伤害会每提升2个法术位级别增加{@scaledamage 2d6|2,4,6,8|1d6}。 (spell slot)"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				"thunder"
+			],
+			"miscTags": [
+				"LGT",
+				"SCL"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"(floor(@item.level / 2) + 1)d6 + @mod",
+						""
+					]
+				],
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/weapons/swords/sword-broad-serrated-blue.webp"
+		},
+		{
+			"name": "Cordon of Arrows (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 228
+				}
+			],
+			"level": 2,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 5,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "three or more arrows or bolts"
+			},
+			"duration": [
+				{
+					"duration": {
+						"amount": 8,
+						"type": "hour"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你在射程范围内将三枚远程武器弹药埋入地面，并将它们变换成保护该区域的形态。首个靠近这些魔法弹药30英尺范围内的生物必须进行一次敏捷豁免。目标若未通过豁免，则受到{@damage 3d6}点穿刺伤害；若通过了豁免，则受到一半的穿刺伤害。 (range weapon ammunition)",
+				"作为施放此法术的一部分，您可以指定任意数量的生物，并且该法术会忽略它们。(DND running group rules)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级的法术位施放此法术时，可以转化的弹药数量将每超过2级增加两个。对于你用这个法术转化的每一件额外的弹药，伤害增加{@scaledamage 3d6|2-9|2d6||1d6}。 (dnd running group rules)"
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"foundryImg": "icons/skills/ranged/arrows-flying-salvo-yellow.webp"
+		},
+		{
+			"name": "Find Steed (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 240
+				}
+			],
+			"level": 2,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在射程内的一个空地召唤一只灵魂，它会化身为一匹超自然智慧、强壮忠诚的坐骑，并立即与你结合。这匹坐骑化身为你之前见过的中等或大型四足野兽，其挑战等级为1/2或更低，没有攀爬、飞行或游泳速度。例如：{@creature elk}、{@creature camel}、{@creature giant goat}、{@creature mastiff}、{@creature pony}或{@creature warhorse}。",
+				"你的坐骑使用你选择的形式的属性块，但它的生物类型现在反映了你的阵营：天界生物（善良），精灵（中立），或恶魔（邪恶）。坐骑的智力如果低于6，则变为6，并且它能理解你说的一种语言。 (celestial (good), fey (neutral), or fiend (evil))",
+				"战斗中，坐骑与你同步行动，并在你的回合内行动。你控制坐骑，并选择其在战斗内外的行动方式。当骑在上面时，你可以使你施放的任何只以你自己为目标的法术也以坐骑为目标。 (Steed)",
+				"当你和你的战马相距不超过1英里时，你可以使用一种特殊形式的心灵感应进行交流。 (Steed)",
+				"如果你的坐骑的生命值减至0，则它会消失。你也可以使用一个奖励动作来解散你的坐骑，导致它消失。如果你再次施放这个法术，你可以选择要么召唤相同的坐骑，在其最大生命值的范围内重新出现，要么召唤一个新的坐骑，在这个过程中释放你以前的坐骑。 (Steed)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级的法术位施放此咒语时，你的坐骑可以化身为你之前见过的任何中型或大型四足或有翼的野兽、天体或畸形生物，其CR值为2或更低。例如：{@creature dire wolf}、{@creature griffon}、{@creature pegasus}、{@creature peryton}、{@creature polar bear}或{@creature rhinoceros}。(Steed)"
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"foundryImg": "icons/magic/control/buff-luck-fortune-gold.webp"
+		},
+		{
+			"name": "Flame Whip",
+			"source": "llspell",
+			"level": 2,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "1 attack"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a charred wooden hilt"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 10,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"在一次攻击的位置，你可以在一个自由的手中召唤一条纯火焰鞭，持续时间内有效。如果你放开鞭子，它会消失，但你可以再次召唤这个火焰鞭代替另一次攻击，而不消耗法术位置。 (Flame Whip)",
+				"每当你可以进行攻击时，你可以选择改为对你能看见的10英尺内的一个目标进行近战法术攻击，使用你的火焰鞭。命中后，目标受到火焰伤害，伤害值等于{@damage 1d10}加上你的法术修正值，如果目标是大型或者更小的大小，你可以立即{@action grapple}。 (Flame Whip)",
+				"你不能在鞭子抓住生物时使用它进行攻击，但被抓住的生物在其回合开始时会受到{@damage 1d10}火焰伤害，并可以使用动作对你的法术豁免 DC 进行一次力量检定，成功时解除抓取状态。",
+				"当你手持着时，你的火焰鞭在半径为10英尺的范围内散发出明亮的光芒，并在额外的10英尺范围内散发微弱的光芒。 (Flame Whip)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级的法术位施放此法术时，每超过2级的两个法术位，造成的火焰伤害都会增加{@scaledamage 1d10|2,4,6,8|1d10}。 (fire damage)"
+					]
+				}
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"LGT",
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"(floor(@item.level / 2) + 1)d10 + @mod[on hit]",
+						"fire"
+					],
+					[
+						"(floor(@item.level / 2) + 1)d10[grappled]",
+						"fire"
+					]
+				],
+				"scaling": {
+					"mode": "none",
+					"formula": null
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/fire/beam-jet-stream-trails-orange.webp"
+		},
+		{
+			"name": "Locate",
+			"source": "llspell",
+			"level": 2,
+			"school": "D",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a magnet dipped in holy water"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "hour"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"描述你曾经在30英尺内至少看到过的物体，或者描述一个特定类型的物体，比如书、钥匙或剑。如果它在1000英尺内，那么这个法术的物质组成部分将指向它，就像它是一个指南针一样。如果物体在移动，只要它仍然在范围内，它就会指向它。 (Describe an object that you have seen within 30英尺 at least once, or describe a particular kind of object, like a book, key, or sword. If it is within 1000英尺, the material component of this spell points to it as if it were a compass. If the object is in motion, it points to it for as long as it remains within range.)",
+				"这个法术无法定位目标，如果铅或者一条流动的水体阻碍了直线到目标的路径。 (Dungeons & Dragons)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放此法术时，此法术的射程增加1000英尺，每超过2级的法术位级别增加1000英尺。 (spell slot, 3rd-level)",
+						"如果你用4级或更高级的法术位施放这个法术，你可以描述你见过的特定生物或者某种生物，代替一个物体，以相同的方式追踪它。 (spell slot) (creature)"
+					]
+				}
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "object"
+				}
+			},
+			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
+		},
+		{
+			"name": "Magic Weapon (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 257
+				}
+			],
+			"level": 2,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "touch"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "hour"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你触摸了一件非魔法武器，并赋予它力量，使它成为一件魔法武器。选择酸、冰冷、火焰、闪电、毒素或雷霆。直到咒语结束，该武器的攻击得分增加1点，并在取代武器的正常伤害类型时造成选择的伤害类型。 (魔法武器)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级的法术位施放此法术时，效果如下所示：(%num%)",
+						{
+							"type": "table",
+							"colLabels": [
+								"Slot Level",
+								"Attack Bonus",
+								"Bonus Damage"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-5 text-center",
+								"col-5 text-center"
+							],
+							"rows": [
+								[
+									"3rd",
+									"+1",
+									"{@damage 1d4}"
+								],
+								[
+									"4th",
+									"+2",
+									"{@damage 1d4}"
+								],
+								[
+									"5th",
+									"+2",
+									"{@damage 2d4}"
+								],
+								[
+									"6th",
+									"+3",
+									"{@damage 2d4}"
+								],
+								[
+									"7th+",
+									"+3",
+									"{@damage 3d4}"
+								]
+							]
+						}
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"min(3, floor((@item.level - 1) / 2))d4",
+						""
+					]
+				],
+				"formula": "min(3, floor(@item.level / 2))[attack bonus]"
+			},
+			"foundryImg": "icons/weapons/clubs/club-spiked-glowing.webp"
+		},
+		{
+			"name": "Pass Without Trace (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 264
+				}
+			],
+			"level": 2,
+			"school": "A",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Ashes from a burned leaf of mistletoe"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "hour"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"一个阴影和沉默的面纱从你身上散发出来，掩盖了你和你的同伴，使它们不易被察觉。在持续时间内，你和你选择的30英尺内的生物被视为轻微遮蔽，并获得所有敏捷（{@skill Stealth}）检定的奖励，其数值等于你的施法修正值。受此法术影响的生物在经过时不留下任何足迹或痕迹。 (D&D 运行组规则)"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": null,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/nature/stealth-hide-beast-eyes-green.webp"
+		},
+		{
+			"name": "Purify",
+			"source": "llspell",
+			"level": 2,
+			"school": "A",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a consecrated piece of clear glass"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As an action, you open your senses and become aware of the presence and locations of any of the following within 30 feet: poisons, diseases, creatures capable of inflicting the {@condition blinded}, {@condition deafened}, {@condition paralyzed}, or {@condition poisoned} condition, or any disease, or creatures suffering from a disease or the conditions above.",
+				"根据当地的语言习惯，并且像 (%num%) 这样的文本应该在翻译中仍然输出为 (%num%)。\n\n您还可以识别毒药、疾病、生物或者特定状态或疾病一种生物正在受到的。",
+				"作为这项行动的一部分，您可以立即治愈范围内的一只生物的一种疾病，或结束其失明、聋、麻痹或中毒的状态，或在此范围内清除一个5英尺立方体的食物和饮料中的所有毒药和疾病。 (dnd running group rules)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术槽施放此法术时，你可以在范围内结束一个额外的疾病或影响生物的状态，或者在范围内从一个额外的5英尺立方体的食物和饮料中去除毒素和疾病，每个法术槽等级高于2级。 (DND running group rules)"
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ",
+				"SCL"
+			],
+			"foundrySystem": {
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"name": "Song of Confidence",
+			"source": "llspell",
+			"level": 2,
+			"school": "E",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 20,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": "a musical instrument that you are proficient with"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你演奏一首激励听者充分发挥潜力的歌曲。选择一个能力值。在范围内能听到你的生物，在你的下一个回合开始之前，他们的能力检定或豁免投掷中使用选择的能力值时，加上你的法术施展调整值（最低+1）。 (spellcasting modifier)",
+				"每个后续回合作为一项额外行动，您可以使用乐器再次演奏这段曲调，选择一个新的能力得分和不同的生物来获得这个法术的效益（bonus action）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当以3级或更高级别的槽位施放时，其范围每超过2级增加10英尺。 (DND跑团规则)"
+					]
+				}
+			],
+			"miscTags": [
+				"SCL",
+				"UBA"
+			],
+			"foundryImg": "icons/tools/instruments/harp-red.webp"
+		},
+		{
+			"name": "Totemic Cowl",
+			"source": "llspell",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "touch"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a leaf from the first day of fall"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "hour"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你触摸了一个自愿的生物。直到咒语结束，它将被笼罩在一层幽灵般的披风下，而且它受到的任何伤害都会减少 1 点。 (cloak)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放此法术时，头巾的减伤效果将每超过2级的法术位等级增加1点。(cowl)"
+					]
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"foundrySystem": {
+				"formula": "@item.level - 1",
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp"
+		},
+		{
+			"name": "Tower of Iron Will",
+			"source": "llspell",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when you are forced to make an Intelligence, Wisdom, or Charisma saving throw."
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你用平凡、重复的思维方式保护你的心灵，以更好地抵抗心理攻击。直到下一个轮次开始之前，你在所有智力、智慧和魅力豁免 throws 上都有优势，并且你对心灵伤害获得抗性。(mental assault)\n"
+			],
+			"damageResist": [
+				"psychic"
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"foundrySystem": {
+				"target.type": null
+			},
+			"foundryImg": "icons/environment/settlement/watchtower-moonlit-blue.webp"
+		},
+		{
+			"name": "Blinding Smite (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 219
+				}
+			],
+			"level": 3,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"当你使用近战武器进行攻击时，你可以使武器迸发出令人震撼的耀眼光芒。此攻击造成 {@damage 3d8} 额外的辐射伤害，并且目标必须在一次体质豁免投掷中成功，否则在法术结束前成为{@condition blinded}。目标可以在其每个回合结束时重复进行这次豁免投掷，若成功则效果消失。",
+				"如果你的目标是邪魔或不死生物，或者具有日光敏感特性，那么额外的辐射伤害会增加 {@damage 1d8}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级的法术位施放这个法术时，辐射伤害每超过2级的法术位等级增加 {@scaledamage 3d8;4d8|3-9|1d8}。 (DND)"
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"foundrySystem": {
+				"damage": {
+					"parts": [
+						[
+							"3d8",
+							"radiant"
+						]
+					],
+					"versatile": "4d8[against a fiend or undead, or has the sunlight sensitivity trait]"
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/skills/wounds/injury-eyes-blood-red.webp"
+		},
+		{
+			"name": "Cerebral Blast",
+			"source": "llspell",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "cone"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你的心灵释放出一股无法抗拒的压倒性力量，形成一个30英尺的锥形范围。在这个法术的范围内的每个生物都必须进行一次力量豁免。若未能通过豁免，生物将受到{@damage 5d8}点魔法重击伤害，并被推离你20英尺，并摔倒{@condition prone}。若成功通过豁免，生物将受到一半的伤害并留在原地。 (D&D running group rules)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，魔法钝击伤害将每超过3级的法术位等级增加{@scaledamage 5d8|3-9|1d8}。"
+					]
+				}
+			],
+			"areaTags": [
+				"N"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"FMV",
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"5d8",
+						"bludgeoning"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/air/air-burst-spiral-pink.webp"
+		},
+		{
+			"name": "Conjure Volley (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 226
+				}
+			],
+			"level": 3,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a single piece of ammunition and a ranged weapon, or one thrown weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你从远程武器中射出一枚非魔法弹药，或将一枚非魔法投掷武器扔向空中，并选择在武器的正常射程内的一个点。 (nonmagical ammunition; ranged weapon; nonmagical thrown weapon)",
+				"武器或弹药爆炸成为其精确副本的大量，这些副本落入您选择的点为中心的半径30英尺，高20英尺的圆柱体内。该区域内的生物必须进行敏捷豁免检定。他们在未通过豁免检定时受到{@damage 6d8}武器或弹药类型的伤害，并在通过检定时受到一半的伤害。此法术创建的任何弹药或武器一旦该法术的效果解除后即会消失。 (DND规则适用，保留英文中的专有名词)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，此法术的伤害增加了{@scaledamage 6d8|3-9|1d8}，并且圆柱体的半径随每个高于3级的法术位级别增加5英尺。 (D&D running group rules)"
+					]
+				}
+			],
+			"areaTags": [
+				"Y"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "cylinder"
+				}
+			},
+			"foundryImg": "icons/magic/holy/projectiles-blades-salvo-yellow.webp"
+		},
+		{
+			"name": "Corrosive Bolt",
+			"source": "llspell",
+			"level": 3,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 90,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the skin of a poisonous snake"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你召唤出一支腐蚀性酸的长矛，并对你能看到的范围内的生物或物体进行远程法术攻击。命中后，你的目标受到{@damage 4d10}酸性伤害，并其护甲等级降低2。这个法术无法使生物的护甲等级低于10。（D&D运行组规则）",
+				"一只生物可以使用一个动作将此法术上的酸液擦掉目标，将其护甲等级恢复正常。 (D&D 运行团规则)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，伤害增加{@scaledamage 4d10|3-9|1d10}，并且对于每个高于3级的法术位，目标的护甲等级进一步降低1点。(spell slot)"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"miscTags": [
+				"MAC",
+				"SCL",
+				"SGT"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"foundrySystem": {
+				"formula": "@item.level - 1[AC reduction]",
+				"target": {
+					"value": 1,
+					"type": "creatureOrObject"
+				}
+			},
+			"foundryImg": "icons/magic/acid/projectile-stream-bubbles.webp"
+		},
+		{
+			"name": "Dire Wail",
+			"source": "llspell",
+			"level": 3,
+			"school": "N",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "radius"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你发出了充满异界力量的哀嚎。在30英尺范围内的你选择的生物必须成功进行一次体质豁免才能避免受到{@damage 4d10}的雷霆伤害，并在一段时间内保持听觉受损（英文：deafened）。在每个回合结束时，目标可以进行一次体质豁免，若成功则结束该法术。在成功豁免时，目标受到一半伤害且不受聋（英文：deafened）的影响。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级的法术槽施放此法术时，伤害将每个超过3级的槽级增加{@scaledamage 4d10|3-9|1d10}。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"foundryImg": "icons/magic/death/projectile-skull-flaming-yellow.webp"
+		},
+		{
+			"name": "Flame Arrows (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "XGE",
+					"page": 156
+				}
+			],
+			"level": 3,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "touch"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"duration": {
+						"amount": 1,
+						"type": "hour"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你触摸了一个箭袋，里面装着远程武器弹药。从箭袋中取出的前十二支弹药，其伤害类型变为火属性，并额外造成{@damage 1d6}火属性伤害。如果射向易燃物体，击中时会燃起火焰。每一支弹药击中或未击中时，此法术的魔力都会消失，并且在发射了十二支弹药后此法术会结束。 (quiver) (fire) (spell)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级别的法术位施放此法术时，你可以从箭筒中每超过3级的法术位水平多抽取两支额外的弹药。 (quiver)"
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"AAD",
+				"OBJ",
+				"SCL"
+			],
+			"foundryImg": "icons/magic/fire/projectile-arrow-fire-orange-yellow.webp"
+		},
+		{
+			"name": "Heroic Anthem",
+			"source": "llspell",
+			"level": 3,
+			"school": "E",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": "a musical instrument that you are proficient with"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你奏起一曲激励英勇行动的颂歌。范围内能听到你声音的生物可以在你下一个回合开始前，给他们所作出的任何攻击投掷加上你的法术施放修正值（至少+1）。\n",
+				"在每个后续回合的奖励动作中，您可以使用乐器来继续演奏这个国歌并重复其效果。(anthem)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当以4级或更高级别的槽位施放时，其范围每超过3级增加10英尺。 (D&D 运行小组规则)"
+					]
+				}
+			],
+			"miscTags": [
+				"SCL",
+				"UBA"
+			],
+			"foundrySystem": {
+				"formula": "max(1, @mod)"
+			},
+			"foundryImg": "icons/magic/control/control-influence-rally-purple.webp"
+		},
+		{
+			"name": "Hunger of Hadar (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 251
+				}
+			],
+			"level": 3,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "pickled octopus tentacle"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你打开了通往星际黑暗之间的门户，一个充斥着未知恐怖的区域。一个半径为20英尺的黑暗和刺骨寒冷的球体出现了，以距离内的一点为中心，持续一段时间。这个虚空充满了一片轻柔的低语和啜饮声，可以听到30英尺外。没有光，无论是魔法还是其他方式，都无法照亮这个区域，而且区域内的生物是{@condition blinded}。",
+				"虚空在空间构造中造成了一条裂缝，该区域变得艰难地形。任何生物在该区域开始其回合时受到 {@damage 2d6} 冷伤害。任何生物在该区域结束其回合时必须成功进行敏捷豁免才能避免受到酸性伤害 {@damage 2d6}，因为乳白色的、异世界的触手摩擦其身体。 (void) (Dexterity)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级的法术位施放此法术时，法术的半径增加5英尺，冷却和酸性伤害每个槽级以上增加{@scaledamage 2d6|3-9|1d6}。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"damageInflict": [
+				"acid",
+				"cold"
+			],
+			"miscTags": [
+				"DFT",
+				"SCL"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 20,
+					"units": "ft",
+					"type": "sphere"
+				}
+			},
+			"foundryImg": "icons/magic/nature/root-vine-thorned-fire-purple.webp"
+		},
+		{
+			"name": "Lightning Arrow (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 255
+				}
+			],
+			"level": 3,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "1 attack"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"作为远程武器攻击的一部分，你可以将一枚弹药或投掷武器转化为一道闪电箭。命中时，目标受到攻击的普通伤害，加上额外{@damage 4d8}的闪电伤害。未命中时，目标受到一半的闪电伤害，没有普通伤害。 (lightning damage)",
+				"无论这次攻击是否命中，目标周围10英尺内的所有生物都必须进行一次敏捷豁免。未能通过豁免的生物会受到{@damage 2d8}点闪电伤害，通过豁免的生物会受到一半伤害。然后，发射的弹药或投掷的武器会恢复到其正常形态。 (lightning damage)",
+				"这个法术对受到雷电伤害的任何生物，直到你下个回合开始之前，都不能做出反应。 (lighting)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级的法术槽施放此咒语时，该咒语的两种效果的伤害都将因每个高于3级的槽位水平而增加{@scaledamage 4d8;2d8|3-9|1d8}。 (dnd running group)"
+					]
+				}
+			],
+			"areaTags": [
+				"S"
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"4d8[on hit]",
+						"lightning"
+					],
+					[
+						"2d8[splash]",
+						"lightning"
+					]
+				],
+				"target": {
+					"value": 10,
+					"units": "ft",
+					"type": "radius"
+				}
+			},
+			"foundryImg": "icons/weapons/polearms/spear-ice-crystal-blue.webp"
+		},
+		{
+			"name": "Sonic Wave",
+			"source": "llspell",
+			"level": 3,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "cone"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你强力地合拢双手，一股巨大的冲击波从你身上迸发，发出的轰鸣声可在500英尺外听到。在一个30英尺的锥形范围内的所有生物必须成功进行一次体质豁免才能避免受到{@damage 4d8} 雷霆伤害，倒地{@condition prone}，并且在1分钟内被{@condition deafened}。成功的生物只受到一半的伤害，不会倒地或失聪。 (thunder damage, fall prone, deafened)",
+				"一种生物可以在其每个回合结束时重复进行此豁免检定，若成功则效果结束。 (dnd running group)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用4级或更高级的法术位施放这个法术时，伤害增加{@scaledamage 4d8|3-9|1d8}，并且锥形范围每超过3级增加5英尺。 (spell slot) (3rd)"
+					]
+				}
+			],
+			"areaTags": [
+				"N"
+			],
+			"conditionInflict": [
+				"deafened",
+				"prone"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"foundryImg": "icons/magic/sonic/explosion-shock-sound-wave.webp"
+		},
+		{
+			"name": "Spectral Passage",
+			"source": "llspell",
+			"level": 3,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "touch"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an object a spirit has passed through"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你触摸一个愿意的生物。直到法术结束，它变得半透明，并且可以像穿越困难地形一样穿过其他生物和物体。如果生物结束移动在另一个物体或生物内部，它会立即被推到最近的未被占用的空间，并且每穿越 5 英尺就受到 {@damage 1d10} 的力量伤害。 (semi-incorporeal) (force damage)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用四级或更高级别的法术位施放此法术时，你可以针对每个高于三级的法术位等级额外目标一个生物。 (dnd running group)"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/death/undead-ghost-strike-white.webp"
+		},
+		{
+			"name": "Accursed Touch",
+			"source": "llspell",
+			"level": 4,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "touch"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a basilisk scale"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你试图将一个生物变成石头。 作为一个行动，你触摸一个生物，迫使它进行一次体质豁免。 如果未能通过豁免，则该生物以{@condition restrained}形式受到影响，因为它的肉体开始变硬。 如果成功通过豁免，则不受影响。 (transmutation变形魔法)",
+				"这个咒语束缚的生物每个回合结束时都必须再次进行一次体质豁免检定。如果它成功地抵抗了这个咒语三次，咒语结束。如果它失败了三次豁免检定，它将被石化并保持原位。成功和失败的次数不需要连续；跟踪生物的抵抗情况，直到它失败或通过了三次豁免检定。(0)",
+				"如果生物在石化状态下遭到身体破坏，当它恢复到原始状态时，会出现类似的畸形。 (DND)",
+				"如果你在整个持续时间内保持注意力，生物将被石化，直到效果被移除（Stone）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级的法术槽施放此法术时，它必须失败的次数减少了1次（最少为1次），每超过4级增加1级。 (spell slot)"
+					]
+				}
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			],
+			"miscTags": [
+				"PRM",
+				"SCL"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/death/hand-withered-gray.webp"
+		},
+		{
+			"name": "Eldritch Tentacles",
+			"source": "llspell",
+			"level": 4,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 90,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of tentacle from a giant squid"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"外星生物的触须填满了你在范围内能看到的地面上的一个20英尺的正方形区域。在持续时间内，这个区域被视为难度地形。\n\n(Note: Proper noun \"D&D\" remains in English within `()`)",
+				"当一个生物首次进入这个区域或者在那里开始它的回合时，它必须成功进行一个敏捷豁免检定，否则将受到{@damage 3d6}的钝击伤害，并被触手{@condition restrained}，直到咒语结束。在该区域开始其回合并被触手束缚的任何生物，在其回合开始时受到{@damage 3d6}的钝击伤害。 (DND 运行组规则)",
+				"受到触手束缚的生物可以使用其动作进行一次力量或敏捷检定（由其选择），检定目标为你的法术豁免 DC。若成功，它将摆脱触手的束缚。（Dungeons & Dragons跑团规则）"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级的法术位施放此法术时，此法术造成的伤害均会增加 {@scaledamage 3d6|4-9|1d6}，每超过4级的法术位级别增加一次。 (Dungeons & Dragons)"
+					]
+				}
+			],
+			"areaTags": [
+				"Q"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"miscTags": [
+				"DFT",
+				"SCL"
+			],
+			"savingThrow": [
+				"dexterity",
+				"strength"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"3d6",
+						"bludgeoning"
+					]
+				],
+				"target": {
+					"value": 20,
+					"units": "ft",
+					"type": "square"
+				}
+			},
+			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp"
+		},
+		{
+			"name": "Ego Scourge",
+			"source": "llspell",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你攻击一个你能看见的生物的心智，冲击其自我感知。目标必须成功进行一次智力豁免检定，否则在攻击检定和技能检定中受到劣势，并且无法施放法术。在其每个回合结束时，目标可以重复进行豁免检定。若成功豁免，则该效果在目标身上结束。（Intelligence saving throw）"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/control/fear-fright-white.webp"
+		},
+		{
+			"name": "Revitalizing Hymn",
+			"source": "llspell",
+			"level": 4,
+			"school": "E",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 40,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": "a musical instrument that you are proficient with"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你表演一首赞美诗，激励听到它的人摆脱强效影响。在范围内的你选择的生物能听到你，可以立即重复一次豁免扑克，以结束一个当前影响它的敌意效果或咒语，将你的施法属性调整值（最低为+1）加到他们的掷骰中。 (D&D跑团规则允许的情况下，英文保留在括号内)",
+				"每个后续回合作为一个额外动作，你可以使用一件乐器来继续圣歌，并允许你选择的一个生物（其听得到你的声音且在范围内）再次获得这些好处。 (instrument)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你用5级法术槽施放这个法术时，法术的射程增加10英尺。 (DND 运行小组规则)"
+					]
+				}
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"foundrySystem": {
+				"formula": "max(1, @mod)"
+			},
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+		},
+		{
+			"name": "Staggering Smite (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 278
+				}
+			],
+			"level": 4,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"当你用近战武器攻击命中时，你可以使武器穿透身体和心灵。这次攻击造成 {@damage 4d6} 额外的精神伤害，并且目标必须在智力豁免检定中成功，或者直到其下一回合开始，它在攻击检定和能力检定上都具有劣势，且不能进行反应。",
+				"如果你的目标是异常生物或者可以进行心灵交流，这个额外的心灵伤害会增加 {@damage 1d6}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用5级或更高级别的法术位施放此咒语时，心灵伤害将增加 {@scaledamage 4d6;5d6|4-9|1d6}，每超过4级的法术位增加一级。 (Dungeons & Dragons)"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"foundrySystem": {
+				"damage": {
+					"parts": [
+						[
+							"4d6",
+							"psychic"
+						]
+					],
+					"versatile": "5d6[against an aberration or can speak telepathically]"
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/skills/melee/strike-axe-energy-pink.webp"
+		},
+		{
+			"name": "Banishing Smite (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 216
+				}
+			],
+			"level": 5,
+			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "on hit"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "self"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"当你用近战武器攻击时，你可以使武器充满纯粹的奥术力量。此次攻击额外造成{@damage 5d10}点奥术伤害，如果将目标削减到50点或更少的生命值，它将从当前位面放逐。(D&D运行组规则)",
+				"如果目标是与当前所在世界不同位面的本地存在，则它会消失，返回其本位面。如果目标是与你当前位面相同的本地存在，则它会被放逐到一个无害的半位面，那里是{@condition incapacitated}。当法术结束时，目标会回到被放逐的空间，或者最近的未被占据的空间。 (dnd)",
+				"如果目标不是你当前存在的平面的本地居民，此额外的力量伤害增加 {@damage 1d10}。 (DND)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术槽施放此法术时，每超过5级的法术槽级别，额外的力量伤害增加{@scaledamage 5d10;6d10|5-9|1d10}。 (DND运行组规则)"
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"AAD",
+				"SCL"
+			],
+			"foundrySystem": {
+				"damage": {
+					"parts": [
+						[
+							"5d10",
+							"force"
+						]
+					],
+					"versatile": "6d10[against not native to your current plane of existence]"
+				},
+				"target.type": null
+			},
+			"foundryImg": "icons/magic/control/silhouette-fall-slip-prone.webp"
+		},
+		{
+			"name": "Legendary Ballad",
+			"source": "llspell",
+			"level": 5,
+			"school": "E",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 50,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": "a musical instrument that you are proficient with"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你演唱一首史诗般的歌谣，激发那些能听到的人去完成传奇般的英勇壮举。一些你选择的生物数量等于你的施法能力修正值（最少为1），能听到你的声音的生物可以立刻进行一次单一的武器攻击或施放1级或更低级别的法术。 (传奇般的英勇壮举)",
+				"在每个随后的回合作为一个额外动作，你可以使用一种乐器继续这首歌谣，并允许(`creature`)听得见你的生物立即进行一次单一武器攻击或施放一个1级或更低级别的法术。"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": null,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/control/control-influence-crown-gold.webp"
+		},
+		{
+			"name": "Psychic Crush",
+			"source": "llspell",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 90,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你全力压制住了目标。目标必须进行一次力量豁免才能抵挡住这个法术，失败的话受到 {@damage 5d8} 的力量伤害，成功则受到一半伤害。在每个自己的回合结束时，目标必须重新进行豁免。失败则受到 {@damage 2d8} 的力量伤害，成功则法术结束。(力量豁免, spell)",
+				"如果这个法术将一个生物的生命值降至0，它们会被挤成一个拳头大小的球。 (Dungeons & Dragons 运行组规则)"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级别的法术位施放此法术时，初始的力量伤害增加了{@scaledamage 5d8;2d8|5-9|1d8}，每超过5级的法术位水平增加一级。 (spell slot)"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"5d8[initial]",
+						"psychic"
+					],
+					[
+						"2d8[repeating]",
+						"psychic"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/unholy/orb-hands-pink.webp"
+		},
+		{
+			"name": "Spiritual Sundering",
+			"source": "llspell",
+			"level": 5,
+			"school": "E",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 120,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"在距离你选择的范围内心灵地点的20英尺半径球形区域内的生物，必须进行一次魅力豁免检定。如果失败，它们会受到{@damage 8d6}死灵伤害，接下来的一分钟内，它们的自我感觉模糊，对其进行的任何智力、感知或魅力豁免检定都会减少{@dice 1d6}。如果成功，它们只受到一半伤害，不会受到任何豁免检定惩罚。 (`Charisma`)",
+				"目标可以在每个轮到他们的回合结束时进行一次魅力豁免检定，成功豁免则效果结束。 (Targets can make a Charisma saving throw at the end of each of their turns, ending the effect on a successful save.)"
+			],
+			"areaTags": [
+				"S"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"foundrySystem": {
+				"formula": "1d6",
+				"target": {
+					"value": 20,
+					"units": "ft",
+					"type": "sphere"
+				}
+			},
+			"foundryImg": "icons/magic/death/skull-flames-white-blue.webp"
+		},
+		{
+			"name": "Steel Wind Strike (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "XGE",
+					"page": 166
+				}
+			],
+			"level": 5,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"m": {
+					"text": "a melee weapon worth at least 1 sp",
+					"cost": 10,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你挥舞着施法所用的武器，然后像风一样消失，来对付敌人。选择范围内最多五个你能看见的生物。对每个目标进行一次近战武器攻击，使用施法所用的武器。命中时，目标承受该武器攻击的正常伤害外加额外 {@damage 5d10} 的力量伤害。",
+				"你可以传送到你能看到的一个未被占据的空间，距离你击中或未击中的目标 5 英尺以内。"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"AAD",
+				"TP"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 5,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/skills/melee/maneuver-daggers-paired-orange.webp"
+		},
+		{
+			"name": "Swift Quiver (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 279
+				}
+			],
+			"level": 5,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "touch"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a quiver with a piece of ammunition"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你将你的箭袋转化，使其产生无穷无尽的非魔法弹药，在你伸手去拿时似乎会跃入你的手中。 (D&D running group)",
+				"在法术持续期间的每个回合，您可以使用一个奖励动作（包括用于施放此法术的奖励动作）进行两次使用此箭筒提供的弹药的远程武器攻击。当您进行这样的远程攻击时，您的箭筒会在法术结束时用非魔法的弹药副本替换您使用的弹药。由此法术创建的弹药片在法术结束时会消失。如果箭筒离开您的控制范围，法术将结束。（DND运行组规则）"
+			],
+			"miscTags": [
+				"OBJ",
+				"UBA"
+			],
+			"foundryImg": "icons/skills/ranged/arrows-flying-salvo-gray.webp"
+		},
+		{
+			"name": "Vorpal Blade",
+			"source": "llspell",
+			"level": 5,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"unit": "special",
+					"condition": "1 attack"
+				}
+			],
+			"range": {
+				"distance": {
+					"type": "touch"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the finger bone of a necromancer"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你在空手中聚集了一把纯负能量的刀锋，并对你可触及的生物进行一次近战武器攻击，试图将其斩首。击中时，它受到等于{@damage 6d8}加上你的法术施放调整值的力量伤害。 (dnd running group)",
+				"如果这个伤害使生物的生命值减少到50点或更少，您可以立即选择其中一个头部切除。 (dnd running group规则)",
+				"如果生物失去头部而无法生存，它会立即死亡。如果生物对斩击伤害免疫，或者它没有头部或不需要头部，则不会移除生物的头部。"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"foundrySystem": {
+				"attack": {
+					"bonus": "@prof + @abilities.str.mod + @bonuses.mwak.attack",
+					"flat": true
+				},
+				"damage.parts": [
+					[
+						"6d8 + @mod",
+						"force"
+					]
+				],
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/death/weapon-sword-skull-purple.webp"
+		},
+		{
+			"name": "Psionic Oppression",
+			"source": "llspell",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你用心灵压制你能看到的一只生物的思维。目标必须进行一个智力豁免。在未能通过豁免时，它会受到{@damage 12d6}点心灵伤害并且被（Stunned）1分钟。如果通过了豁免，目标会受到一半伤害且不会被击晕。",
+				"被震慑的目标可以在每个轮次结束时重复进行豁免检定，若成功则结束效果。 (dnd running group rules)"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 1,
+					"type": "creature"
+				}
+			},
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye.webp"
+		}
+	]
+}
