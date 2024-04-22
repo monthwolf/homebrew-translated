@@ -1,0 +1,521 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AFamiliarsQuandary",
+				"abbreviation": "AFQ",
+				"full": "A Familiar's Quandary",
+				"authors": [
+					"Michael Galvis"
+				],
+				"convertedBy": [
+					"Lyra [he/him]"
+				],
+				"version": "2021-08-18",
+				"url": "https://www.dndbeyond.com/posts/1058-free-adventure-play-as-familiars-and-undo-a",
+				"dateReleased": "2021-08-18"
+			}
+		],
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"status": "ready",
+		"dateAdded": 1713709111,
+		"dateLastModified": 1713709111,
+		"_dateLastModifiedHash": "7b58d20538"
+	},
+	"monster": [
+		{
+			"name": "Amid",
+			"source": "AFamiliarsQuandary",
+			"_copy": {
+				"name": "Commoner",
+				"source": "MM"
+			},
+			"token": {
+				"name": "Orc",
+				"source": "MM"
+			}
+		},
+		{
+			"name": "Nixing Vine",
+			"source": "AFamiliarsQuandary",
+			"_copy": {
+				"name": "Awakened Shrub",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the shrub",
+						"with": "the vine",
+						"flags": "i"
+					}
+				}
+			},
+			"token": {
+				"name": "Awakened Shrub",
+				"source": "MM"
+			}
+		}
+	],
+	"adventure": [
+		{
+			"name": "A Familiar's Quandary",
+			"id": "AFamiliarsQuandary",
+			"source": "AFamiliarsQuandary",
+			"group": "homebrew",
+			"published": "2021-08-18",
+			"author": "Michael Galvis",
+			"storyline": "A Familiar's Quandary",
+			"level": {
+				"custom": "Uses non-standard PC rules"
+			},
+			"contents": [
+				{
+					"name": "A Familiar's Quandary",
+					"headers": [
+						"Watch: 'A Familar's Quandary' Liveplay",
+						"Mister Taberknack, familiar collector",
+						"Adventure summary",
+						"Character creation",
+						"Adventure start",
+						"First floor: Wizard turned to goo",
+						"First floor: A recipe for disaster",
+						"First floor: Toe nail gone rogue",
+						"Second floor: A fatal floral attraction",
+						"Third floor: Salami for one",
+						"First floor: Knock, knock, housekeeping!",
+						"Fourth floor: An amusing encounter",
+						"First floor: My first potion",
+						"Conclusion"
+					]
+				}
+			]
+		}
+	],
+	"adventureData": [
+		{
+			"id": "AFamiliarsQuandary",
+			"source": "AFamiliarsQuandary",
+			"data": [
+				{
+					"type": "section",
+					"name": "A Familiar's Quandary",
+					"entries": [
+						"在《熟悉的困境》中，玩家扮演使魔的角色，他们必须共同努力来消除一个错误的{@i polymorph potion}的影响，这个{@i polymorph potion}已经将他们的巫术朋友变成了粘液。他们需要迅速行动，因为这种转变可能会变成永久的！这次冒险是在一个巫师的塔楼中进行的轻松奔跑，可以在四到五名玩家的情况下，在两到三个小时内完成，而且不需要战斗。 (A Familiar's Quandary)",
+						{
+							"type": "section",
+							"name": "Watch: 'A Familar's Quandary' Liveplay",
+							"entries": [
+								"为了庆祝{@link D&D Beyond's 4th anniversary|https://www.dndbeyond.com/posts/1056-schedule-of-events-celebrate-4-years-with-d-d}，我们现场演出了《A Familiar's Quandary》，以支持两个了不起的慈善机构，Jasper's Game Day和Stack Up。你可以在这里观看：",
+								{
+									"type": "entries",
+									"style": "text-center",
+									"entries": [
+										"{@link Youtube|https://www.youtube.com/watch?v=2u3fulaoQOU}"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Mister Taberknack, familiar collector",
+							"entries": [
+								"老成有智慧的人类法师泰贝克纳克先生已经花费几十年的时间来掌握在他破旧的家\u2014\u2014泰贝克纳克塔中召唤 familiars 的艺术。他认为像 {@spell find familiar} 和 {@spell flock of familiars|LLK} 这样的咒语是幼稚且有缺陷的咒语。事实上，泰贝克纳克先生不仅学会了如何召唤多个 familiars 并使它们在物质位面上永久存在，他还打造了一个魔法烤箱，可以在 familiars 摔倒并且变成 {@i poof} 时重新构造它们。",
+								"但塔伯克纳克先生的野心在《熟悉的困境》中起了作用。在品尝新鲜酿造的{@i potion of polymorph}时，他为了能够花些时间身处他的熟悉者鞋子中，发现了他调制的计算有误。他的熟悉者们从他们的囚笼中观察着，看着这位巫师变成一滩黏液，突然被交付了逆转魔法的任务。 (Mister Taberknack)",
+								{
+									"type": "inset",
+									"name": "Tell me more about Taberknack Tower",
+									"entries": [
+										"原名为塔莫尔的塔，塔贝克纳克塔是选择的城镇或城市郊外的一座四层巫师塔。塔贝克纳克先生从他的前同事玛丽安·莫尔（Marian More）手中获得了这块地产，她是一位女精灵，厌倦了人类社会的复杂性，并使用{@spell true polymorph}变成了一只驼鹿。她现在整天漫游在乡间，偶尔回到塔贝克纳克塔拜访塔贝克纳克先生。",
+										"草地凌乱，杂草丛生，围绕着塔楼，多年来，受一棵老树的影响，塔楼已经倾斜，老树危险地靠在塔楼上，长入了第三层的厨房。塔楼所有者协会（TOA）曾两次拜访塔贝纳克先生，要求他美化他的庭院并修复塔楼。在塔贝纳克先生的辩护中，TOA在填补巫师产权线外的一个坑洞上拖延不前。",
+										"塔内情况也同样破旧。Taberknack先生常常沉浸于工作之中，因此依赖家政服务来维护他的家。但就连记得给他们 {@spell sending} 也可能成为巫师的麻烦事。 (Taberknack)"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "items/AI/travel-alchemical-kit.webp"
+									},
+									"credit": "Chris Walton"
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Adventure summary",
+							"entries": [
+								"根据当地语言习惯，像(%num%)这样的文本在翻译中应仍然输出为(%num%)。\n- 翻译遵守dnd running group规则，专有名词在翻译后应在`()`中保留英文。\n\n作为 Mister Taberknack 的 familiars，队伍必须解开一个坏的{@i polymorph potion}的魔法，将他们的巫师主人变成了粘稠物质。他们需要探索 Taberknack Tower 来收集配料，调制出一个{@i potion of last resort}。",
+								{
+									"type": "list",
+									"style": "list-decimal",
+									"name": "Player objectives",
+									"items": [
+										"逃离它们的囚笼，并阻止正在流向下水道的粘乎乎的塔伯克纳克先生（一楼）。",
+										"在符合当地语言习惯的前提下，文本中像 (%num%) 这样的部分应该在翻译中仍然输出为 (%num%)。\n\n根据dnd游戏团规则翻译，并且专有名词在翻译后应该在英文括号 `()` 中保留。\n\n解读一份位于 Taberknack 先生办公桌（一楼）上的一本书中的 {@i potion of last resort} 配方。",
+										"从整个塔中收集以下材料：一个脚趾甲（1楼或4楼），从黑藤上剪下的一朵紫色花（2楼），一根萨拉米香肠（3楼），以及从{@creature flumph}（4楼）采集的一勺粉红色凝胶。",
+										"阻止管家把Taberknack先生(1楼)扔掉。",
+										"制作药水，并将其\"喂\"给塔贝克纳克先生（一楼）。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Character creation",
+							"entries": [
+								"在这个冒险中，玩家们是熟悉的。在角色创建时，每个玩家从提供的{@spell find familiar}法术中选择一个形态。如果玩家选择了鱼({@creature quipper})或{@creature sea horse}，他们将在游戏开始时靠近一个{@adventure definitely not a hamster ball|AFamiliarsQuandary|0|Definitely not a hamster ball}。在地下城主的判断下，玩家可以从其他书籍提供的形态中选择，比如{@creature fox|IDRotF}和{@creature hare|IDRotF}，这些选项在{@adventure Icewind Dale: Rime of the Frostmaiden|IDRotF}中呈现。",
+								{
+									"type": "homebrew",
+									"entries": [
+										"{@note See the filtered bestiary page for {@filter all options|bestiary|source=|miscellaneous=familiar}.}"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Special considerations for characters",
+											"entries": [
+												"塔贝克纳克先生已经掌握了召唤宠物的艺术。请注意以下内容： (Mister Taberknack has mastered the art of summoning familiars. Take note of the following:)",
+												{
+													"type": "list",
+													"items": [
+														"每个熟悉物体都具有其形式的最大生命值。例如，一个{@creature rat}有3个生命值。",
+														"这些角色可以自由地彼此交流并理解彼此，即使它们的正常形态和统计数据不允许它们说话或理解语言。它们也能理解塔贝纳克先生，尽管他无法理解它们。 (Mister Taberknack)",
+														"如果一个角色的生命值降至0点，他们的灵魂将被拉入魔法师塔的{@adventure familiar reconstitution oven|AFamiliarsQuandary|0|Familiar reconstitution oven}。1分钟后，角色以随机选择的形式从{@spell find familiar}法术中出现。他们在新形态中有可用的最大生命值。"
+													]
+												},
+												{
+													"type": "inset",
+													"name": "DM tip: Want to add a bit of drama to the game?",
+													"entries": [
+														"在角色创建或冒险开始时，随机选择一个玩家，并公开宣布他们的角色是塔伯克纳克先生最喜欢的熟悉人物。然后，选择第二个玩家，并宣布他们的角色是塔伯克纳克先生最不喜欢的熟悉人物。询问团队为什么会出现这种情况。 (Mister Taberknack)"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/AFamiliarsQuandary/dice.webp"
+									}
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Adventure start",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"塔贝克纳克先生从不擅长打扫。这位蓝发人类巫师擅长在他的四层塔周围搞得一团糟，而这座塔稍微倾斜，昏暗的光线是由一棵树慢慢穿过的。甚至他的草坪也长满了杂草，这是塔主协会（TOA）每当他拿着一杯茶出去晒太阳时都会指出的事实。该死的，塔贝克纳克先生几乎没有精力穿上更多的东西，只是穿着他的紫色巫师长袍，上面绣着银色的星星。",
+										"尽管有他的缺点，塔伯纳克塔的巫师以疼爱他的灵兽而闻名。他们对他的感情是另一回事，但这是我们即将发现的事情。 (Taberknack Tower)",
+										"我们的冒险从巫师塔的一楼开始，这里是塔伯克纳克先生的工作场所。这里配备了一张桌子和椅子，书架，大锅，以及巫师最伟大的发明：熟悉再造烤箱。塔伯克纳克先生的桌子上堆满了文件，半满的药水瓶，还有溢出的炼金材料。 (Mister Taberknack)",
+										"你们每个人都在各自的围栏里，看着老巫师拿起一只勺子，将它浸入大锅中。他将一勺子热气腾腾、闪闪发光的液体倒进一个宽口的药水瓶里。\"向你们，我亲爱的朋友们，致以敬礼，为了动物的长寿与追求！\" (wizard)"
+									]
+								},
+								"在符合当地语言习惯的情况下，像 (%num%) 这样的文本在翻译中应仍然输出为 (%num%)。\n翻译应符合 dnd 运行组规则，专有名词在翻译后应保留英文括号中的内容。\n当塔贝纳克先生向他的熟悉的人行礼时，让每个玩家介绍他们的角色并描述他们的住所。",
+								"尽管塔伯纳克先生的住所很乱，但他却不遗余力地装饰他的使者的围栏，并保持它们整洁。对于他最喜爱的使者，他在它们的围栏上挂了一幅微小的肖像，上面有一个铜牌，上面写着：\"本月之使者\"。（Mister Taberknack）",
+								"每当这位巫师将注意力转向酿造药水时，他都会将他的熟悉生物关在它们的围笼中，以尽量减少意外事件。正是从这些围笼中，人物们看着塔伯纳克先生喝下他最新的饮品，结果却是一个有问题的{@i potion of polymorph}。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Familiar reconstitution oven",
+													"entries": [
+														"塔贝克纳克先生最精妙的发明是熟悉的再造烤箱。看起来像一个小烤箱，它是一个神奇的装置，可以捕捉任何熟悉的灵魂，当它们在或附近的塔贝克纳克塔上的时候，血量降到0点。当一个灵魂进入装置时，它会嗡嗡作响，计时器开始计时。在烤箱内停留1分钟后，灵魂会以新的动物形态出现，随机选择自{@spell find familiar}咒语提供的形态。 (Taberknack)"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "First floor: Wizard turned to goo",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"塔贝纳克先生喝下了药水。他嘴唇发出噗嗤声。\"有趣...\"他说道，随后，噗！一股彩虹烟雾充满了房间。一些东西溅落在地上。随着烟雾消散，你看到一团彩虹粘液，原本站着的巫师不见了。(Mister Taberknack)",
+										"\"哦，天哪，这太不愉快了。\"你听到一个从淤泥中飘出的声音说道，\"我担心你得帮我脱困。现在，我的皮肤不多，但我确信我正慢慢地朝着排水口滑动。\"塔贝克纳克先生的黏黏的形态变平，你看着他慢慢地朝着{@footnote center of the room.*|Does Mister Taberknack follow protocols for safe disposal of magical waste? I'll leave that up to you.}排水口滑动。你要怎么做？"
+									]
+								},
+								"根据当地语言习惯，文本如(%num%)应仍然在翻译中输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文在`()`中。\n\n如果角色们希望阻止塔贝纳克先生被冲走，他们需要迅速行动。每个围栏门都被锁上，但可以通过成功的{@dc 10}力量检定来撞开。另外，如果生物在他们的围栏中成功进行了{@dc 8}敏捷({@skill Acrobatics})检定，它们可以从围栏的缝隙中挤出来。鱼({@creature quipper|MM|quippers})和{@creature sea horse|MM|sea horses}被放在露天鱼缸中，可以通过成功的{@dc 5}力量({@skill Athletics})检定跳出他们的围栏。",
+								"逃脱他们的囚笼后，角色可以选择堵住排水口，或者找到一种方法将Taberknack先生带到一个安全的地点。成功通过一次{@dc 8}智力检定的角色注意到房间角落堆满纸张下埋藏着一把灰尘飞扬的扫帚和空桶。",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Definitely not a hamster ball",
+													"entries": [
+														"塔伯克纳克先生偶尔会带着他的使者出去散步 \u2014 即使是水生生物也一样。为了这样的时刻，他发明了{@i definitely not a hamster ball}。这个神奇的装置充满了水，是任何小型或微小型水生生物的栖息环境。在{@i definitely not a hamster ball}内，使者可以用心灵感应操控它，并拥有20英尺的行走速度。 (Taberknack)"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "First floor: A recipe for disaster",
+							"entries": [
+								"尽管Taberknack先生免受变成魔法污水的威胁，但对于小组来说仍然存在一个复杂的情况：如果变化在一两个小时内没有被逆转，那么这种变化将变得永久。为了开始他们的任务，角色必须获取巫师的炼金术书，并解读制作{@i potion of last resort}的配方。Taberknack先生为小组提供了指导：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										{
+											"type": "quote",
+											"entries": [
+												"我想现在是个好时机解释一下，如果在接下来的一个小时内我没有改回来的话，这或许会变成永久性的。幸运的是，我早就为这种麻烦做好了准备。逆转这个混乱的合适药水可以在我的炼金书中找到。我现在恐怕没有眼睛，但我向你保证，配方就在那里。只需要在页边找一些污渍。"
+											]
+										}
+									]
+								},
+								"尽管陷入困境，塔伯纳克先生仍然保持镇定，并鼓励他的熟悉朋友们。只要角色们能够获取他的炼金书，他就可以说话，这本书是一本破旧的绿色皮革书，上面满是医生笔迹一样难以辨认的涂鸦。对于队伍来说，幸运的是，这位巫师有在页边随手画画的习惯。通过成功的{@dc 10}智力检定（{@skill Investigation}），角色们可以翻阅这本书的页面，找到逆转巫师变形的适当配方。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你来到一个描绘着一滩未知物质的页面，上面有一个指向一个微笑的棍人的箭头。在下面，你看到了以下成分，这些成分已经为你方便地绘制了出来:",
+										{
+											"type": "list",
+											"items": [
+												"一只脚趾甲 (A toe nail)",
+												"从黑色的藤蔓上剪下的紫色花朵 (A purple flower clipped from a black vine)",
+												"一根意大利香肠 (One salami)",
+												"从一个{@creature flumph}取出一勺粉红色的凝胶。"
+											]
+										},
+										"符合当地的语言习惯，并且像（%num%）这样的文本在翻译中仍然应该输出为（%num%）。\n\n根据dnd运行组的规则进行翻译，专有名词在翻译后应该在`()`中保留英文。\n\n另一幅图描述了这些成分被投入一个装满彩虹液体的大锅中，周围有着画得很差的动物发出叫声和吠声。"
+									]
+								},
+								"当队伍找到{@i potion of last resort}的配方时，塔伯纳克先生的嘴巴融化成了他像软泥一样的形态。（Mister Taberknack）"
+							]
+						},
+						{
+							"type": "section",
+							"name": "First floor: Toe nail gone rogue",
+							"entries": [
+								"当Taberknack先生变成了软泥，一根脚趾甲飞了起来，卡在了天花板上。一个拥有被动{@skill Perception}得分为10或更高的角色会发现这个脚趾甲:",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"塔贝克纳克先生不幸的变形似乎让他掉了一根脚趾甲。抬头一看，你会看到一颗小而脏的指甲卡在天花板上。 (Mister Taberknack)"
+									]
+								},
+								"脚趾甲可以通过手（或爪）从天花板上移除，需要进行{@dc 8}力量（{@skill Athletics}）检定。如果检定失败并且失败值为5或更多，则脚趾甲被拔出，但天花板部分坍塌。处于坍塌天花板下方的生物必须进行{@dc 8}敏捷豁免检定，否则受到1点钝击伤害并被碎片掩埋。以这种方式被掩埋的生物为{@condition blinded}和{@condition restrained}。它可以尝试以行动方式用成功的{@dc 10}力量（{@skill Athletics}）检定来挣脱。这样做会结束其本身的{@condition blinded}和{@condition restrained}状态。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Second floor: A fatal floral attraction",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"塔伯纳克塔的第二层是一个座位区，配备了一张沙发、几把椅子、一张咖啡桌，以及一个装有四只{@creature quipper|MM|quippers}的鱼缸。鱼缸被装饰得像一艘沉船。鱼缸和沙发之间夹着一株高高的黑叶植物，上面有一朵紫色的花。这些年来，植物已经把鱼缸和沙发都狠狠地削弱了。 (Taberknack Tower)"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "bestiary/MM/Quipper.webp"
+									}
+								},
+								"座位区很少使用，因为Taberknack先生很少有客人。这是幸运的，考虑到这株{@creature nixing vine|AFamiliarsQuandary}植物，它是一种危险的有感知的植物，会攻击靠近它五英尺范围内的生物或触摸其细黑叶子的物体。该{@creature nixing vine|AFamiliarsQuandary}使用{@creature awakened shrub}的属性表，并且其紫色花朵是逆转Taberknack先生转化所需药水的成分。",
+								"鱼缸上爬的角色能够到达紫色的花朵。然而，一旦登上鱼缸，角色们会发现塔贝克纳克先生在喂鱼后忘记关闭鱼缸的顶部。他们需要成功进行一个{@dc 10}敏捷度（{@skill Acrobatics}）检定来穿过鱼缸到达{@creature nixing vine|AFamiliarsQuandary|nixing vine's}花朵。那些失败的角色会落入鱼缸，并立即受到{@creature quipper|MM|quippers}的攻击。",
+								"紫色花朵可以在多种方式中无需战斗而获得：",
+								{
+									"type": "list",
+									"items": [
+										"一个不断接触着{@creature nixing vine|AFamiliarsQuandary}的物体足以让生物分心，从而可以攀爬藤蔓摘取花朵。",
+										"紫色的花可以用扫帚或类似的物体从{@creature nixing vine|AFamiliarsQuandary}的顶部拍掉。",
+										"一小束火焰会吓到{@creature nixing vine|AFamiliarsQuandary}，让它不敢攻击。"
+									]
+								},
+								"在取得紫色花朵后，楼上传来了一声巨响。塔伯纳克先生的魔法意外引起了区域内一个{@creature gremishka|VRGR}的注意。它爬上穿过厨房小窗户的树，落到了厨房台面上。看到一个陶瓷杯，{@creature gremishka|VRGR}感到不满，将其推下台面，导致杯子碎裂。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Third floor: Salami for one",
+							"entries": [
+								"当角色们往上走到三楼时，可以听到有东西在吃东西的声音。当他们进入厨房时，请阅读以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"塔伯克纳克先生的厨房和他的组织能力一样完美：一点也不。在厨房远端的水槽里塞满了脏盘子，墙壁上的柜台和橱柜上沾满了意面酱和其他食物的溅迹。后墙上有许多架子，上面放着供人类和使魔享用的零食。尤其引人注目的是，在柜台上有一只只能被描述为无毛突变猫的东西。它正在一根意大利香肠上咬着，当它看到你时，它发出嘶嘶声，准备攻击。 (Mister Taberknack)"
+									]
+								},
+								"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 DND（Dungeons & Dragons）游戏团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n{@creature gremishka|VRGR|Gremishkas} 是小小的、脾气暴躁的怪物，但这只怪物偏偏喜欢吃意大利腊肠。不幸的是，对于 {@creature gremishka|VRGR} 来说，这根腊肠是房子里唯一的肉食，而冒险队需要它来完成他们的任务。",
+								"意符合当地的语言习惯，文本如(%num%)应仍然在翻译中输出为(%num%)。\n- 翻译需遵循dnd running group的规定，专有名词在翻译后应在`()`中保留英文。\n\n意符合当地的语言习惯，文本如(%num%)应仍然在翻译中输出为(%num%)。\n- 翻译需遵循dnd running group的规定，专有名词在翻译后应在`()`中保留英文。可通过多种方式在无需战斗的情况下取回沙拉米肠。",
+								{
+									"type": "list",
+									"items": [
+										"{@creature gremishka|VRGR} 会放弃萨拉米，追赶任何嘲笑它的角色。如果 {@creature gremishka|VRGR} 被引到 {@creature nixing vine|AFamiliarsQuandary} 并受到其攻击，两个怪物将互相战斗。",
+										"在符合当地语言习惯的情况下，文本中像 (%num%) 这样的内容在翻译中仍应保持为 (%num%)。\n\n根据dnd运行小组规则，成功进行了 {@dc 10} 魅力检定，角色可以用不同的食物交换意大利香肠。",
+										"一个成功的 {@dc 10} 群体魅力 ({@skill Intimidation}) 检定会吓跑 {@creature gremishka|VRGR}。它会从厨房窗户逃走。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "DM tip: Gremishkas can have a little salami as a treat",
+									"entries": [
+										"需要逆转 Taberknack 先生的变身的配方要求萨拉米，但如果从记录中缺少一小部分，当他再次变回人类时，这位巫师将不会遭受任何不利影响。如果允许 {@creature gremishka|VRGR} 吃掉大部分的萨拉米，当 Taberknack 先生再次变回人类时，他将会比原来矮 {@dice 1d2} 英尺。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "First floor: Knock, knock, housekeeping!",
+							"entries": [
+								"当派对得到莎拉米时，在一楼前门处突然响起了一声巨响。派对成员并不知道，塔贝纳克先生最近决定整理自己的住所，并雇了一个管家来为他做大部分的重活。不幸的是，他没有提到他养了一群魔兽作为宠物，而管家服务偏偏派来了一个不懂礼貌的兽人，名叫{@creature Amid|AFamiliarsQuandary}，他分不清害虫和宠物的区别。",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"塔楼一楼前门传来敲门声。你听到门打开之前钥匙的轻微声响。\"打扫卫生。\" 一个怒气冲冲的声音呼喊着。 (Housekeeping)"
+									]
+								},
+								"{@creature Amid|AFamiliarsQuandary} 使用 {@creature commoner} 属性块，携带着羽毛扫帚、拖把和水桶，进入了塔楼。看到塔贝克纳克先生造成的混乱，{@creature Amid|AFamiliarsQuandary} 立即开始清理一楼。除非塔贝克纳克先生已经被藏起来，否则兽人会首先把巫师扔进下水道。",
+								"{@creature Amid|AFamiliarsQuandary} 可以在不进行战斗的情况下通过几种方式弃置他的家务职责:",
+								{
+									"type": "list",
+									"items": [
+										"一个成功的 {@dc 10} 组魅力 ({@skill Intimidation}) 检定可以把兽人吓出房子。他会留下他的补给品。",
+										"在塔楼的第三层闹事会吸引 {@creature Amid|AFamiliarsQuandary|Amid's} 的注意力到厨房，在那里他将立即袭击 {@creature gremishka|VRGR}。{@creature gremishka|VRGR} 会把他赶走。如果 {@creature gremishka|VRGR} 不在场，{@creature Amid|AFamiliarsQuandary} 将会被食物架分散注意力，足以让角色完成他们的任务。",
+										"如果一个角色偷了{@creature Amid|AFamiliarsQuandary|Amid's} 鸡毛掸子或其他物品，他会追赶他们。 他会很快感到疲倦，然后睡个长觉，足够让队伍完成他们的任务。 (dnd running group rules)"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "DM tip: Mister Taberknack went down the drain!",
+									"entries": [
+										"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd运行组规则，专有名词在翻译后应在`()`中保留英文。\n\n如果角色们拒绝面对{@creature Amid|AFamiliarsQuandary}，他将不知不觉地把塔贝克纳克先生冲进下水道。如果这种情况发生，不要担心：当队伍完成了解除巫师变形的药剂时，他们可以简单地将{@i potion of last resort}倒进下水道。塔贝克纳克先生将重新变回人类，并施展{@spell misty step}法术将自己传送回他的塔中。然而，他会被污水覆盖。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Fourth floor: An amusing encounter",
+							"entries": [
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"你来到塔伯纳克塔的顶层，迎接你的是对你这样的生物最大的敌人：一扇关闭的门。塔伯纳克先生的卧室门是由木头制成的，经过岁月的风吹雨打已经风化。门上有一个铜制的圆形把手。 (Mister Taberknack)"
+									]
+								},
+								"穿过卧室门是一个棘手的任务。不仅门把手光滑，大多数熟悉的人很难抓住，而且门没有对齐，需要用力推才能打开。通过成功的{@dc 8}敏捷（{@skill Acrobatics}）检定，角色可以转动门把手。另一个角色通过成功的{@dc 10}力量（{@skill Athletics}）检定，可以强行打开门。当角色进入房间时，请阅读以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"塔伯克纳克先生的铺着地毯的房间有一股发霉的气味，很暗，有几扇窗户被被单挡住了。房间中央是一张对他的体型来说太小的床。房间的一侧，一个书架上摆放着巫师收藏的一些轻松的读物。另一侧是一个新安装的围栏，高耸于房间之上。里面摆放着各种发光植物，以及一种与水母相似但又有所不同的奇特生物，除了它的两只小眼睛、宽大的头部和一根裹着绷带的触手之外。它在围栏中空中漂浮着，注意到你后，歪着头。它身上有微弱的绿光。 (Mister Taberknack)"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "internal",
+										"path": "bestiary/MM/Flumph.webp"
+									}
+								},
+								"围栏里的生物是一个{@creature flumph}。这些生物根据心情发出不同的颜色：柔和的粉红色表示愉快，蓝色表示悲伤，绿色表示好奇，深红色表示愤怒。听到门开了，{@creature flumph}变成了绿色，好奇地看着它的访客。",
+								"{@creature flumph} 是令人愉快的，但塔伯克纳克先生小心翼翼地将其隔离了。他在最近一次到地下世界寻找炼金材料时，与一群冒险家一起发现了这只受伤的生物。发现这只生物孤单而害怕，这位法师收留了它，并正在等待一个康复中心的回复，以便将其送往接受治疗。 (Mister Taberknack)",
+								"符合当地语言习惯，文本如 (%num%) 应仍然输出为 (%num%) 在翻译中。\n- 翻译符合 dnd 运行组规则，专有名词在翻译后应保留英文在 `()` 中。\n\n角色可以安全地进入它的圈地或释放它。如果 {@creature flumph} 被先攻击或在它发出深红色光芒时被接近，它才会攻击。为了从 {@creature flumph} 收集粉色粘液，队伍必须逗乐或激励这个生物。他们可以用各种方式做到这一点，包括：",
+								{
+									"type": "list",
+									"items": [
+										"喂食{@creature flumph}。任何角色搜查卧室时会发现一个小罐子的食物放在flumph围栏旁边。角色可以通过成功的{@dc 8}力量({@skill Athletics})检定来攀爬flumph的围栏以喂养这个生物。",
+										"在{@creature flumph}的情况下跳舞，这需要成功的{@dc 8}团队魅力检定({@skill Performance})。"
+									]
+								},
+								"一旦莲花怪发出粉红色光芒，角色就可以用勺子或类似工具轻松地收集一勺粘液。 (flumph)",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "The missing toe nail",
+													"entries": [
+														"如果队伍在一楼没有找到脚趾甲，他们可以在地毯上搜寻。一个在卧室搜寻至少1分钟或者在一 {@dc 10} 智力 ({@skill Perception}) 检定中成功的角色，在地毯纤维中找到一个隐藏的脚趾甲。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "First floor: My first potion",
+							"entries": [
+								"根据当地语言习惯，文本中像 (%num%) 这样的内容在翻译中仍应保持为 (%num%)。\n\n- 翻译需遵循dnd游戏组规定，专有名词应在翻译后保留英文括号中的原文。\n\n在收集了逆转塔贝克纳克先生的变身所需的必要材料后，角色们可以在一楼的大锅中熬制一种最后的救命药水。将材料混合到大锅中后，角色们需要发出咯咯声、吠声或者其他动物的声音，以完成药水的制作。在这样做之后，请阅读以下内容：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"鼎中的七彩液体变成了明亮的粉红色，并冷却下来。一股甜美的香味充满了房间。(cauldron)"
+									]
+								},
+								"根据当地语言习惯，文本中如（%num%）这样的内容在翻译中应保持为（%num%）。\n翻译需遵守dnd运行团规则，专有名词在翻译后应保留英文括号`()`。\n\n该团队可以通过将药剂倒在塔伯纳克先生身上，或者用勺子舀一勺给他\"喂食\"来施用这种药剂。（祝你们好运找到他的嘴巴！）当他们这样做时，塔伯纳克先生恢复到原来的形态：",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"密斯特·塔伯纳克 (Mister Taberknack) 的软泥嘀嗒着跳动，仿佛在跳舞。它向上延伸，扭曲变形，变成了肉色。突然一声啪！一团烟雾出现，密斯特·塔伯纳克 (Mister Taberknack) 就在你面前。"
+									]
+								},
+								"如果三楼的{@creature gremishka|VRGR}吃了一大块萨拉米，那么塔贝克纳克先生将会比角色上次见到他时明显矮一些。尽管如此，这位巫师很高兴能恢复到他平常的形态。 (Mister Taberknack)",
+								{
+									"type": "insetReadaloud",
+									"entries": [
+										"\"不可思议！太棒了！亲爱的朋友们，你们救了我，使我免于一种十分不舒服的命运！\"泰伯克纳克先生欣喜地说道。他友好地抚摸着每个人。\"我相信应该庆祝一番。让我们都到厨房去吃点小吃吧！说实话，你们不觉得这地方需要好好清洁一番吗？\" (Mister Taberknack)"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Conclusion",
+							"entries": [
+								"随着冒险的结束，您可以询问每个玩家，他们的熟悉如何庆祝这个场合。您还可以详细描述他们角色在巫师塔内奔跑留下的混乱，或者让一个非常不高兴的兽人管家回来与泰伯克纳克先生交谈！ (Mister Taberknack)",
+								"无论你选择何种方式结束这个故事，我希望你和你的玩家都能享受到这个毛茸茸的小冒险！(furry little adventure)"
+							]
+						},
+						{
+							"type": "inset",
+							"entries": [
+								"{@i Michael Galvis ({@link @michaelgalvis|https://twitter.com/MichaelGalvis} 是D&D Beyond的桌面内容制作者。他是一位资深地下城主，喜欢恐怖电影和一切奇幻与科幻的事物。当他不是在地下城主的位置上，或者作为他焦虑的半身人巫师掷骰子时，他就和他的丈夫一起玩英雄联盟和魔法：聚会。他们和可爱的狗Quentin一起生活在洛杉矶。"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
