@@ -1,0 +1,4531 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "WhereEvilLives",
+				"abbreviation": "WEL",
+				"full": "Where Evil Lives: The MCDM Book of Boss Battles",
+				"url": "https://www.backerkit.com/c/mcdm-productions/where-evil-lives-the-mcdm-book-of-boss-battles",
+				"authors": [
+					"MCDM Productions"
+				],
+				"convertedBy": [
+					"ForeverAlwaysGM"
+				],
+				"version": "1.1"
+			}
+		],
+		"dateAdded": 1695240316,
+		"dateLastModified": 1695240316,
+		"dependencies": {
+			"monster": [
+				"FleeMortals"
+			]
+		},
+		"_dateLastModifiedHash": "f49e3914cc"
+	},
+	"book": [
+		{
+			"name": "Where Evil Lives: The MCDM Book of Boss Battles",
+			"id": "WhereEvilLives",
+			"source": "WhereEvilLives",
+			"group": "homebrew",
+			"author": "MCDM Productions",
+			"published": "2023-09-20",
+			"contents": [
+				{
+					"name": "Foreword"
+				},
+				{
+					"name": "Introduction",
+					"headers": [
+						"Maps",
+						"Area Descriptions",
+						"Stat Blocks",
+						"The Timescape",
+						"New Rules and Styles",
+						"Action-Oriented Creatures",
+						"Companion Creatures",
+						"Demons",
+						"Retainers",
+						"Minions"
+					]
+				},
+				{
+					"name": "Jagged Edge Hideaway"
+				},
+				{
+					"name": "Hanging Tree"
+				},
+				{
+					"name": "Shtriga Nonna's Hut"
+				}
+			]
+		}
+	],
+	"bookData": [
+		{
+			"id": "WhereEvilLives",
+			"source": "WhereEvilLives",
+			"data": [
+				{
+					"type": "section",
+					"name": "Foreword",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"我们应该把这本书称为{@i Oops! All Lairs.}"
+							],
+							"by": "Matthew Colville"
+						},
+						"我们最终出了两本书。在{@book Flee, Mortals! The MCDM Monster Book|FleeMortals}甚至在Kickstarter上发布之前，我们就知道达到我们的巢穴伸展目标可能意味着另一本书的内容。当{@book Flee, Mortals!|FleeMortals}达到了布局阶段，我们意识到我们的命运预测是正确的。我们可以从巢穴和{@book Flee, Mortals!|FleeMortals}的其他部分剪掉五十页的内容，或者我们可以将巢穴单独制作成一本书，增加更多的内容，让我们梦寐以求的地下城和Boss战书变成现实。既然你在阅读这篇文章，你就知道我们选择了哪条路线。",
+						"这些藏身之地实际上值得有专属的一本书。每个小小的地狱片段都包含着情节引子、背景信息、详细的危险和NPC、一个恶棍、独特的奖励，以及你运行它们所需的所有状态块。你可以使用这本书而不必参考{@book Flee, Mortals!|FleeMortals}",
+						"这本书的真正明星是反派。每个都以自己的方式令人憎恶；每个巢穴首领都是独特的怪物，从他们的个性到他们的统计数据。当一群英雄入侵一个反派的家时，那个恶棍会拼命地与威胁作斗争。我们为每个反派提供了强大的、经过测试的统计数据，使他们能够抵御甚至是最优化的队伍的挑战。 (DND running group rules)",
+						"每个巢穴都是专门为恶棍及其盟友而设计的。一个巢穴是其恶棍权力和个性的延伸和例证。{@creature Lord Syuul|WhereEvilLives} 在一个由肉体构成的实验室中进行邪恶的实验。{@creature Kiona the Dread Lord|WhereEvilLives} 在她的超维图书馆里着迷地研究{@item Codex Mortis|SaF}。曾经自豪的{@creature Ithu'rath|WhereEvilLives}在一个摇摇欲坠的城堡中策划着他们宏伟的回归。",
+						"这本书中的首领战斗和巢穴拯救了我的游戏之夜。如果我没有准备好什么，或者如果玩家的行动出乎我的意料，我可以轻松地抓住一个故事引子或者用一些独特的宝藏诱惑他们，把他们带到一个邪恶（和有趣！）的地方。当我在策划完美的冠绝之战，结束一个精彩的冒险时，我会翻阅这本书。（boss battles and lairs）",
+						"作者们在这些首领及其家园中注入了如此多美妙的邪恶。我非常感激他们，以及所有的艺术家、顾问、编辑、测试玩家和 MCDM 团队的其他成员，他们辛苦工作，使我们在一年内创作的内容页数比以往任何时候都多。我们学到了很多\u2014\u2014真的很多。（MCDM）",
+						"希望您喜欢阅读和运行这些巢穴，就像我们制作它们一样。勇敢的冒险者们，前进吧。只有你们有勇气直面邪恶的所在。\n\n(Note: Proper nouns like \"lairs\" and \"adventurers\" are kept in English within parentheses according to the provided instructions.)",
+						"依照当地语言习惯，文本中像(%num%)这样的内容应在翻译后仍然输出为(%num%)。\n翻译需符合dnd跑团规则，专有名词在翻译后应保留为英文，并用`()`括起来。 \n(Ex animo)",
+						"詹姆斯·因特拉卡索 (James Intracaso)",
+						"MCDM首席游戏设计师 (Lead Game Designer)"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Introduction",
+					"page": 1,
+					"entries": [
+						"二十二个洞穴已经准备好，你可以直接投入你的游戏中。每一个洞穴都是独特的恶棍的家，充满了走狗、危险、陷阱和一个宝藏，其中包含独特的奖励。每个洞穴都经过优化，为特定等级的五名玩家角色提供了有趣的挑战，这在洞穴的描述和《按等级分的洞穴》表中有所指示。",
+						"巢穴按其挑战逐渐增加的顺序呈现。 (D&D运行组规则)",
+						{
+							"type": "section",
+							"name": "Maps",
+							"page": 1,
+							"entries": [
+								"每个巢穴都有一张地图，显示所有隐藏信息，如陷阱和秘密门。购买本书时将附带数字版地图（以及不包括秘密的玩家版本）。 (D&D 运行组规则)",
+								{
+									"type": "entries",
+									"name": "Cardinal Directions",
+									"page": 1,
+									"entries": [
+										"大多数巢穴地图都包括指南针图案，即使该地点位于平凡世界以外的平面上。时空的大多数平面（见{@book \"The Timescape\"|WhereEvilLives|1|The Timescape}）都是圆形行星，也是平面，因此它们有北、南、东、西。但对于没有基本方向的稀有平面，仍然包括指南针图案以便更容易解读地图。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Area Descriptions",
+							"page": 1,
+							"entries": [
+								"每个巢穴区域都以项目符号开头，概述了房间的最重要特征，为您提供了运行该区域所需的所有信息。其中一些旨在与玩家共享，而其他一些则仅供GM查看，如下所示：",
+								{
+									"type": "list",
+									"items": [
+										"\"If you see a description in quotation marks like this, read or paraphrase it to the players when their characters first enter the area\u2014provided they can sense their surroundings properly. This text describes what the characters immediately notice.\"",
+										"符合当地语言习惯，并且文本像(%num%)这样的应该在翻译中仍然输出为(%num%)。\n翻译遵守dnd跑团规则，专有名词在翻译后应保留英文在括号中。\n\t\t\t\t\t\n({@i If the characters did X in area Y...}) \"如果引用以括号条件开头，像这样，只有当这些条件适用时才向玩家朗读或解释。\"",
+										"{@b (Secret)}如果一个弹项以这个括号子标题开头，请不要大声朗读！此描述包含了对GM的信息，不应该在玩家进一步调查该区域之前透露给他们。隐藏的生物、陷阱等可能通过这种方式呈现。"
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Lairs by Level",
+									"colLabels": [
+										"Optimized Level",
+										"Lair Name",
+										"Lair Boss",
+										"Boss Ancestry",
+										"Page"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-3 text-left",
+										"col-3 text-left",
+										"col-2 text-left",
+										"col-1 text-center"
+									],
+									"rows": [
+										[
+											"2nd",
+											"{@book Jagged Edge Hideaway|WhereEvilLives|2}",
+											"{@creature Queen Bargnot|WhereEvilLives}",
+											"哥布林 (Goblin)",
+											"16"
+										],
+										[
+											"3rd",
+											"{@book Hanging Tree|WhereEvilLives|3}",
+											"{@creature Dohma Raskovar|WhereEvilLives}",
+											"Orc",
+											"29"
+										],
+										[
+											"4th",
+											"{@book Shtriga Nonna's Hut|WhereEvilLives|4}",
+											"{@creature Shtriga Nonna|WhereEvilLives}",
+											"Hag",
+											"45"
+										],
+										[
+											"5th",
+											"{@book Burnock Mill|WhereEvilLives|5}",
+											"{@creature Baron Uthrak|WhereEvilLives}",
+											"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍然应该输出为 (%num%)。\n翻译需遵守 dnd 运行小组规则，专有名词在翻译后应在 `()` 中保留英文。",
+											"55"
+										],
+										[
+											"6th",
+											"{@book Camp Firefield|WhereEvilLives|6}",
+											"{@creature Bloodlord Varrox|WhereEvilLives}",
+											"Hobgoblin\n地精 (Hobgoblin)",
+											"68"
+										],
+										[
+											"7th",
+											"{@book Shifting Library|WhereEvilLives|7}",
+											"{@creature Kiona the Dread Lord|WhereEvilLives}",
+											"非实体亡灵 (Incorporeal Undead)",
+											"82"
+										],
+										[
+											"8th",
+											"{@book Cloud Fang Keep|WhereEvilLives|8}",
+											"{@creature Lady Emer|WhereEvilLives}",
+											"美杜莎 (Medusa)",
+											"94"
+										],
+										[
+											"9th",
+											"{@book Molten Enclave|WhereEvilLives|9}",
+											"{@creature Zenith Aastrika|WhereEvilLives}",
+											"火巨人 (Fire Giant)",
+											"110"
+										],
+										[
+											"10th",
+											"{@book Ruins of Wrathrock|WhereEvilLives|10}",
+											"{@creature Ithu'rath|WhereEvilLives}",
+											"Olothec (奥洛西克)",
+											"121"
+										],
+										[
+											"10th",
+											"{@book The White Tower|WhereEvilLives|11}",
+											"{@creature Xorannox|WhereEvilLives}",
+											"超心 (Overmind)",
+											"137"
+										],
+										[
+											"11th",
+											"{@book Canyon of the Tower Crown|WhereEvilLives|12}",
+											"{@creature Aurumvas of Meaningless Greed|WhereEvilLives}",
+											"恶魔 (Demon)",
+											"152"
+										],
+										[
+											"11th",
+											"{@book Tomb of the Keeper|WhereEvilLives|13}",
+											"{@creature Ashyra|WhereEvilLives}",
+											"木乃伊 (Mummy)",
+											"166"
+										],
+										[
+											"12th",
+											"{@book Terminal Excrescence|WhereEvilLives|14}",
+											"{@creature Lord Syuul|WhereEvilLives}",
+											"Voiceless Talker\n无声说话者",
+											"176"
+										],
+										[
+											"13th",
+											"{@book Eighth City Advocacy Services|WhereEvilLives|15}",
+											"{@creature Chancellor Lazivos|WhereEvilLives}",
+											"恶魔 (Devil)",
+											"193"
+										],
+										[
+											"13th",
+											"{@book Shadowkeep|WhereEvilLives|16}",
+											"{@creature Count Rhodar von Glauer|WhereEvilLives}",
+											"吸血鬼 (Vampire)",
+											"208"
+										],
+										[
+											"14th",
+											"{@book Durixaviinox's Rest|WhereEvilLives|17}",
+											"{@creature Durixaviinox|WhereEvilLives}",
+											"龙 (Dragon)",
+											"224"
+										],
+										[
+											"15th",
+											"{@book Coronal Hollow|WhereEvilLives|18}",
+											"{@creature Qazyldrath|WhereEvilLives}",
+											"龙 (Dragon)",
+											"236"
+										],
+										[
+											"16th",
+											"{@book Eyes of the Mountain|WhereEvilLives|19}",
+											"{@creature Yserthrax|WhereEvilLives}",
+											"龙 (Dragon)",
+											"251"
+										],
+										[
+											"17th",
+											"{@book Glass Cavern|WhereEvilLives|20}",
+											"{@creature Xaantikorijek|WhereEvilLives}",
+											"龙 (Dragon)",
+											"263"
+										],
+										[
+											"18th",
+											"{@book Mount Brazen|WhereEvilLives|21}",
+											"{@creature Forzaantilirys|WhereEvilLives}",
+											"龙 (Dragon)",
+											"274"
+										],
+										[
+											"19th",
+											"{@book Ash Queen's Reliquary|WhereEvilLives|22}",
+											"{@creature Atæshia|WhereEvilLives}",
+											"元素（Elemental）",
+											"287"
+										],
+										[
+											"20th",
+											"{@book Boughs of Eternity|WhereEvilLives|23}",
+											"{@creature High Mage Vairae|WhereEvilLives}",
+											"Lich",
+											"302"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Treasure Hoards",
+							"page": 2,
+							"entries": [
+								"兽穴中的大部分宝藏都在兽穴的尾部列出。每个宝藏都包括一个独特的魔法或灵能物品，以及另一个独特的奖励，比如一个新毒药的配方。 (DND游戏规则)",
+								"在符合当地语言习惯的前提下，文本中像(%num%)这样的内容在翻译时仍应保留为(%num%)。\n\n宝藏不包括在财宝中，而是分布在巢穴中。这些出现在它们被发现的地方的\"宝藏\"子标题下。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Stat Blocks",
+							"page": 2,
+							"entries": [
+								"除非另有说明，当生物出现在巢穴区域描述中时，它们的属性块位于巢穴条目的末尾。例如，{@creature Queen Bargnot|WhereEvilLives}的统计块，{@book Jagged Edge Hideaway|WhereEvilLives|2}的统治者，与巢穴中所有其他生物的统计块一起出现在锯齿边隐匿处的条目末尾。统计块按字母顺序排列。 {@creature Queen Bargnot|WhereEvilLives} {@book Jagged Edge Hideaway|WhereEvilLives|2}"
+							]
+						},
+						{
+							"type": "section",
+							"name": "The Timescape",
+							"page": 2,
+							"entries": [
+								"这本书中的地点、人物和其他专有名称来自于时空之中，即MCDM多元宇宙。这本书中详细描述的大多数生物都在奥登（Orden）找到，这是一个高奇幻世界，也是时空众多位面（也称为流形）之一。奥登也被称为\"平凡世界\"。如果你喜欢你所阅读的内容，你可以在MCDM Patreon的 {@link mcdm.gg/patreon} 找到更多关于时空的知识。",
+								"根据当地语言习惯，文本中像 (%num%) 这样的内容在翻译中应保持为 (%num%)。\n- 翻译需遵守 dnd 运行小组规则，专有名词在翻译后需保留英文括号内的内容。在你的游戏中，如果你希望以其他方式使用某个生物的背景知识，可以忽略它。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "New Rules and Styles",
+							"page": 2,
+							"entries": [
+								"这本书中的生物通常遵循核心规则，但我们做了一些调整。这些新规则和呈现风格旨在使战斗遭遇更易于进行，更有趣，更令人难忘。(D&D跑团规则)",
+								{
+									"type": "entries",
+									"name": "Allies and Enemies",
+									"page": 2,
+									"entries": [
+										"这本书中的效果有时只影响盟友或敌人。 如果一名生物倾向于帮助你或与你并肩作战\u2014\u2014或者你相信他们有这种倾向，那么他们就是你的{@b ally}。 但是，你不是你自己的盟友，所以如果你以某种效果影响你的盟友，那对你自己没有影响。 如果一名生物倾向于反对你或与你对抗\u2014\u2014或者你认为他们有这种倾向，或者你计划无论如何都要与他们发生争执，那么他们就是你的{@b enemy}。 如果有疑问，就由游戏主宰决定一名生物是否算作盟友、敌人或既非盟友也非敌人。 (ally) (enemy)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Challenge Rating",
+									"page": 3,
+									"entries": [
+										"每个生物的属性块将其挑战等级列在右上角。 挑战等级的更明显位置使得查找属性块并建立能够挑战玩家的遭遇变得更容易。\n\n(Note: Proper noun \"DND\" remains in English within `()`. Translations are done in consideration of local language habits.)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Conditions",
+									"page": 3,
+									"entries": [
+										"这本书中的一些生物会施加\u2014\u2014或对以下新条件免疫\u2014\u2014。（%num%）",
+										{
+											"type": "entries",
+											"name": "Dazed",
+											"page": 3,
+											"entries": [
+												"一个{@condition Dazed|FleeMortals}生物在他们的回合只能执行以下一项动作：移动、使用一个动作，或者使用一个额外动作。如果一个生物在他们的回合中变得晕眩，他们的回合就结束了。{@i cure ailment}能力，{@spell lesser restoration}法术和{@spell greater restoration}法术可以解除晕眩状态。在GM的判断下，其他能力，法术或效果也可能解除晕眩状态。",
+												"当一个被眩晕的生物受到能够在他们的回合中给予他们额外行动的咒语或效果影响时（比如 {@spell haste} 咒语或战士的行动突击特性），他们仍然可以进行这个额外行动，除了眩晕状态允许的移动、动作或奖励动作之外。",
+												"这本书中的一些生物免疫被晕眩状态。在GM的自由裁量下，核心规则或其他补充内容中已经公布对麻痹或眩晕状态免疫的生物也免疫被晕眩状态（Dungeons & Dragons）。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Flanked",
+											"page": 3,
+											"entries": [
+												"如果您的游戏使用核心规则中的可选包围规则，那么无论其敌人的位置如何，一个对 {@condition Flanked|FleeMortals} 状态免疫的生物都不能被包围。 {@condition Flanked|FleeMortals}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Creature Roles",
+									"page": 3,
+									"entries": [
+										"每个生物在其挑战等级旁列出了一个角色。 角色是描述性的，大多数不遵循特殊规则\u2014\u2014它们只是帮助您构建遭遇并有效地在战斗中使用生物。 (DND运行组规则)",
+										{
+											"type": "entries",
+											"name": "Ambusher",
+											"page": 3,
+											"entries": [
+												"埋伏者是擅长隐藏的生物\u2014\u2014不仅在遭遇前，而且在遭遇中。他们利用突袭和隐秘来占据优势。 (Ambushers)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Artillery",
+											"page": 3,
+											"entries": [
+												"炮兵生物最擅长远程作战。无论是他们挥舞箭矢还是施展魔法光线，这些生物总是努力保持与敌人的距离。 (Artillery creatures fight best from afar. Whether they wield arrows or magical rays, these creatures always try to keep a distance from their foes.)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Brute",
+											"page": 3,
+											"entries": [
+												"蛮族是强壮的生物，拥有大量的生命值并造成大量伤害。他们可能不是最有纪律的战士，但他们以极端的坚韧和攻击性弥补了这一点。 (Brutes)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Companion",
+											"page": 3,
+											"entries": [
+												"伴侣生物旨在陪伴玩家角色展开冒险。有关更多信息，请参阅\"伴侣生物\"部分（Companion Creatures）。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Controller",
+											"page": 3,
+											"entries": [
+												"控制型职业会削弱、移动并阻碍他们的敌人。他们通常拥有可以对多个生物施加虚弱效果或者同时影响多个目标的控场技能。 (Controllers)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Leader",
+											"page": 3,
+											"entries": [
+												"领袖是一个以行动为导向的生物，与部下并肩作战。有关更多信息，请参阅\"行动导向生物\"部分（Action-Oriented Creatures）。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Minion",
+											"page": 3,
+											"entries": [
+												"手下是弱小的生物，它们通过数量获得力量。有关更多信息，请参阅\"（Minions）\"部分。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Retainer",
+											"page": 3,
+											"entries": [
+												"随附角色的智慧生物意在陪同玩家角色进行冒险。更多信息，请参阅\"（Retainers）随从\"章节。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Skirmisher",
+											"page": 3,
+											"entries": [
+												"游击队是在战斗中使用游击战术的机动战士。他们的特点使他们能够充分利用自己的位置。 (Skirmishers are mobile warriors who use hit-and-run tactics in combat. Their traits allow them to make the most of their position.)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Soldier",
+											"page": 3,
+											"entries": [
+												"士兵们是穿着良好护甲的生物，他们吸引敌人的攻击，使盟友得以在战场上自由移动。这些训练有素的战士通常具有较高的攻击加值和AC。 (D&D running group规则)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Solo",
+											"page": 3,
+											"entries": [
+												"一个独行生物是一个以行动为导向的生物，可以独自应对玩家角色。更多信息，请参阅\"行动导向生物（Action-Oriented Creatures）\"部分。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Support",
+											"page": 3,
+											"entries": [
+												"支援生物帮助他们的盟友，提供增益效果、治疗、移动或行动选项。 (Dungeons & Dragons 运行组规则)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Mundane and Supernatural",
+									"page": 3,
+									"entries": [
+										"这本书使用术语 {@b mundane} 指代攻击、物品和其他不属于魔法或灵能的效果。",
+										"另一方面，术语{@b supernatural}描述的是具有神奇或灵能效果的物品或效果。例如，一个生物的属性方块可能会说它们对\"来自凡俗攻击的钝击、穿刺和斩击伤害\"具有抵抗力。这意味着当你使用咒语、力量、魔法武器或灵能武器对它们造成钝击、穿刺或斩击伤害时，伤害是超自然的，因此生物对其没有抵抗力。 {@b supernatural}"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Pronouns",
+									"page": 4,
+									"entries": [
+										"核心规则经常使用单数代词\"它\"来指代单个生物。这本书则使用单数代词\"它们\"来清楚地区分生物和物体。物体仍然使用\"它\"作为单数代词。 (D&D)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Psionic Powers",
+									"page": 4,
+									"entries": [
+										"一些生物拥有灵能力，凭借意志力的纯粹力量产生效果，而不是通过魔法。当一个生物表现出一种力量时，它们产生的效果与施放法术有着类似的规则，但有以下例外。\n\n(Note: Proper nouns are kept in English within `()` as requested.)",
+										{
+											"type": "entries",
+											"name": "Not Magic",
+											"page": 4,
+											"entries": [
+												"超能力不产生魔法效果，因此不受像{@spell antimagic field}，{@spell counterspell}和{@spell dispel magic}这样的特性和法术影响。超能力攻击造成的伤害不是魔法伤害。如果一条规则只影响法术或魔法效果，那么它不会影响超能力。然而，灵能力是超自然的，所以如果一条规则影响超自然效果，它确实会影响超能力（见{@book \"Mundane and Supernatural\"|WhereEvilLives|1|Mundane and Supernatural}）。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Power Orders",
+											"page": 4,
+											"entries": [
+												"每一种力量都有一个{@b order}，这是它的强度水平的表达。第一阶段的力量是最弱的（相当于cantrips的强度），而第六阶段的力量是最强的。",
+												"如果一个属性块功能被视为一种力量，其顺序将在括号中注明。 (power)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "No Components",
+											"page": 4,
+											"entries": [
+												"能力不具有物质、动作或口头组成部分。（Dungeons & Dragons 运行团规则）"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Manifesting Multiple Powers",
+											"page": 4,
+											"entries": [
+												"与玩家角色不同，如果生物的属性块允许它们以奖励动作形式表现力量，它们仍然可以在那一轮以动作形式表现另一项二级或更高级的力量。例如，一个生物如果以奖励动作形式表现跳跃力量，也可以在同一回合以动作形式进行二级力量的攻击。同样，许多多重攻击动作允许生物在一回合内进行多次力量攻击，尽管每次攻击都是其自身的力量。 (jaunt)\n"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Power Attacks as Opportunity Attacks",
+											"page": 4,
+											"entries": [
+												"当敌人的移动触发了拥有近战强力攻击的生物的机会攻击时，该生物可以使用他们的反应对该生物进行一次近战强力攻击，而不是进行一次机会攻击。(DND跑团规则)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "New Powers",
+											"page": 4,
+											"entries": [
+												"一个扮演天赋职业的角色\u2014\u2014在 MCDM 补充资料中发现的类别{@link The Talent and Psionics|https://mcdm.gg/talent}\u2014\u2014可以使用该书中的规则从{@i Where Evil Lives}中的生物学习新的力量，那些不在{@i The Talent and Psionics}中的力量在生物的属性块中用星号(*)标注，并在本书的\"新超能力\"章节中提供。",
+												"{@note Converter's Note: I left these asterisks out because they were ugly and, in the contexts in which this will be used, unnecessary.}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Save Ends Effects",
+									"page": 4,
+									"entries": [
+										"有些生物具有一种特性或行动，如果未能通过豁免检定，会在一段时间内施加削弱效果。但有时候，幸运的敌人可以重新尝试他们的豁免检定，潜在地提前结束效果。在这种情况下，状态块会指定\"回合开始时结束保存\"或\"回合结束时结束保存\"。(dnd running group rules)",
+										"当你看到这个短语时，它意味着受到 {@b save ends effect} 影响的任何生物都可以在他们的回合上每次重复豁免扔骰，成功后提前结束对自己的效果。他们只能在回合开始或结束时进行这次豁免扔骰，正如在属性块中指定的那样。",
+										"这是一个攻击的例子，带有一个在{@creature goblin cursespitter|FleeMortals}属性块中的\"存活结束\"效果。 {@creature goblin cursespitter|FleeMortals}",
+										"在符合当地语言习惯的情况下，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n翻译要遵守 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n{@b Toxic Touch (Cantrip).} {@atk ms,rs} {@hit 4} 攻击，达到 5 英尺或射程 30 英尺，一个目标。 {@h}7 ({@damage 2d6}) 毒害伤害，并且目标必须成功进行一次 {@dc 12} 体质豁免才能在 1 分钟内不 {@condition poisoned} (豁免在回合结束时结束)。",
+										{
+											"type": "inset",
+											"name": "Behind the Design: Save Ends Effects",
+											"entries": [
+												"符合当地的语言习惯，并且像 (%num%) 这样的文本在翻译中仍然应输出为 (%num%)。\n翻译需符合dnd游戏团规则，专有名词在翻译后应保留英文括号`()`。\n\n保存效果是在属性块中节省空间并使其更少复杂，以便于主持人在桌上运行。就像属性块只是引用了中毒状态而不是每次都详细说明规则一样，我们不想通过重复类似于这句话的长句来填满页面：\"以这种方式中毒的目标可以在每个他们的回合结束时重复进行豁免投掷，成功则结束对自己的影响。\""
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Spells",
+									"page": 4,
+									"entries": [
+										"一些生物拥有魔法行动、奖励行动和反应。 当这些特征被视为法术时（用于{@spell counterspell}、{@spell dispel magic}等效果的目的），法术等级将用括号标注。 如果法术需要集中注意力，这也将在括号中注明。 除非另有说明，否则这些法术具有手势和语言成分。 {@spell counterspell} 和 {@spell dispel magic}",
+										{
+											"type": "entries",
+											"name": "Casting Multiple Spells",
+											"page": 5,
+											"entries": [
+												"与玩家角色不同，如果生物的属性块允许它们将法术作为奖励动作释放，它们仍然可以在那一轮将另一个1级或更高级别的法术作为行动释放。例如，一个生物如果将{@spell misty step}法术作为奖励动作释放，也可以在行动中进行2级法术攻击。同样，许多多次攻击动作让生物在一回合内进行多次法术攻击，尽管每次攻击都是它自己的法术。 {@spell misty step}"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Spell Attacks as Opportunity Attacks",
+											"page": 5,
+											"entries": [
+												"当敌人的移动引发了一名拥有近战法术攻击的生物的机会攻击时，该生物可以利用他们的反应对该敌人进行一次近战法术攻击，而不是进行一次机会攻击。（DND游戏规则）"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Utility Spells",
+											"page": 5,
+											"entries": [
+												"除了以战斗为重点的咒语外，一些生物可以施放主要用于非战斗场合的咒语。为了简化统计块，这些咒语不会在生物的战斗导向的\"行动\"部分详细列出。相反，它们的名称将列在统计块末尾的单独的\"辅助咒语\"部分中。在每个咒语名称后面，施法时间以上标形式指示，如施法时间表所示。 (Actions)",
+												"{@note Note that at least for the moment, there is no \"Utility Spells\" section in these blocks on this site. The casting times superscripts are included, however.}"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Casting Times",
+											"page": 5,
+											"entries": [
+												{
+													"type": "table",
+													"colLabels": [
+														"Superscript",
+														"Casting Time",
+														""
+													],
+													"colStyles": [
+														"col-1 text-center",
+														"col-2 text-left",
+														"col-7 text-left"
+													],
+													"rows": [
+														[
+															"A",
+															"符合当地语言习惯，文本中像 (%num%) 这样的内容在翻译时仍应输出为 (%num%)。\n\n翻译需遵守DND跑团规则，专有名词在翻译后应在 `()` 中保留英文。 \n\n1 (action)"
+														],
+														[
+															"B",
+															"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍然应该输出为 (%num%)。\n- 翻译应遵守 dnd 跑团规则，专有名词在翻译后应保留英文在 `()` 中。\n\n1个奖励行动"
+														],
+														[
+															"R",
+															"符合当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n翻译需符合dnd跑团规则，专有名词应在翻译后保留英文括号中的英文。"
+														],
+														[
+															"+",
+															"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中应仍然输出为(%num%)。\n- 翻译需遵循dnd运行组规则，并且专有名词在翻译后应保留英文括号内的内容。\n\n超过1个动作（见法术描述）"
+														]
+													]
+												},
+												"符合当地语言习惯，文本中像 (%num%) 这样的内容在翻译中应仍然输出为 (%num%)。\n\n翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文在 `()` 中。\n\n例如，一个施法者的实用法术可能会显示如下：",
+												"每天各一次：快速撤退{@sup B}，法师护甲{@sup A}，幻影战马{@sup +}"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Section Structure",
+									"page": 5,
+									"entries": [
+										"在这本书中，生物部分始于对该部分中所有生物的广泛描述。虽然并非所有信息都是角色内普遍的知识，但如果你不介意他们有一些元知识的话，你可以与你的玩家分享这些早期页面。 (Dungeons & Dragons 运行组规则）",
+										"生物属性块直到每个部分的末尾才呈现，这样你就可以与你的玩家分享有趣的信息，并在运行类似生物群体时翻动更少的页面。\n\n（DND） 战斗团队规则"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Unusual Needs",
+									"page": 5,
+									"entries": [
+										"核心规则中的属性块通常指示了生物是否具有不寻常的特性，不需要空气、食物、睡眠或水来生存和运作。为了使本书中的属性块简洁，我们省略了个别属性块中的这些特征。相反，您可以参考以下列表，以确定每种生物类型的特殊需求（或不需要）：",
+										{
+											"type": "list",
+											"style": "list-hang-notitle",
+											"items": [
+												"{@b Construct.} 构造物不需要空气、食物、饮料或睡眠。(Constructs)",
+												"元素生物不需要空气、食物、饮料或睡眠。(Elementals)",
+												"{@b Ooze.} 黏液怪物不需要空气或睡眠。（Oozes）",
+												"{@b Undead.} 不死族不需要空气、食物、饮水或睡眠。（Undead）",
+												"{@b Other Creature Types.} 除非另有规定，其他生物类型都需要空气、食物、饮水和睡眠。 {@b Other Creature Types.}"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Action-Oriented Creatures",
+							"page": 5,
+							"entries": [
+								"这本书中呈现的独行者和领袖生物旨在成为首领：他们是能够独自或与少数下属对抗整个队伍的敌人。与其简单地增加挑战评级（这种做法经常导致令人失望的遭遇），本书引入了{@b action-oriented creatures.} (dnd running group rules)",
+								"一个强大的反派需要充足的机会来行动和移动，即使不是他们的回合。因此，每个以行动为导向的生物至少拥有一个特殊的额外行动和反应，以及一个特殊的部分，包含着反派行动，让他们主宰战场。 (villain actions)",
+								"这些行动使得首领生物变得充满活力而且令人畏惧。不论是作为令人兴奋的单人挑战，还是与一些易于运行的手下一起作战，以行动为导向的生物在战斗中用戏剧性和强大的行动挑战角色。 (D&D)",
+								{
+									"type": "entries",
+									"name": "Villain Actions",
+									"page": 5,
+									"entries": [
+										"每个以行动为导向的生物在敌人回合结束后有三个{@b villain actions}可以使用。反派行动类似于传奇行动，但有以下例外：",
+										{
+											"type": "list",
+											"items": [
+												"一个生物每回合只能使用一次恶棍行动（因此，恶棍行动往往比传奇行动更强大）。",
+												"每个恶棍行动在战斗遭遇期间只能使用一次。 (villain)"
+											]
+										},
+										"与当地语言习惯一致，像(%num%)这样的文本在翻译中应仍然输出为(%num%)。\n翻译需符合DND运行组规则，专有名词在翻译后应保留英文在`()`内。\n\n像传说中的动作一样，如果生物无法行动或无法采取行动，则不能使用恶棍动作。",
+										{
+											"type": "entries",
+											"name": "Choosing Villain Actions",
+											"page": 5,
+											"entries": [
+												"每组恶棍行动都有推荐的回合顺序。这些能力赋予了战斗逻辑流程和电影般的弧线。",
+												{
+													"type": "list",
+													"items": [
+														"第一个恶棍的动作是一个开场白，它向角色展示他们并不是在与典型的生物战斗。开场白通常会造成一些伤害，召唤一些手下，给首领增益，削弱角色，或者将生物移动到有利的位置。它们只是未来战斗的一小部分。 (villain)",
+														"第二个恶棍动作提供人群控制。通常在英雄有机会回应一两次、进入位置并包围恶棍之后触发。这个第二个动作帮助恶棍重新占据上风。就像开场一样，这个动作有多种形式，但比开场动作更强大。",
+														"第三个也是最后一个反派动作是终极招式或\"终极技能\"\u2014\u2014在战斗结束前，反派可以使用它对角色造成毁灭性打击。 (ult)"
+													]
+												},
+												"尽管每个生物都有推荐的行动顺序，但如果让你的战斗更加戏剧性，你可以以任何顺序进行反派行动。如果某个生物被眩晕或可能在三个回合以上存活，则可以推迟反派行动，或者在多次意外的重要打击后，在第二轮执行推荐的第三个行动！(DND跑团规则)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Unique Creatures",
+									"page": 5,
+									"entries": [
+										"这本书中许多以行动为主的生物都很独特。它们通常都有特定的名称和背景故事，但如果你希望在你的游戏中以其他方式使用该生物的属性块，你可以忽略这些。例如，{@creature Queen Bargnot|FleeMortals}的属性块可以用于你游戏中的任何一个以行动为主的地精。"
+									]
+								},
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://i.imgur.com/2wLWTH5.png"
+									}
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Companion Creatures",
+							"page": 6,
+							"entries": [
+								"一个 {@b companion} 是与角色一起冒险的狂野盟友。每个伙伴都有独特的特质和行动，使他们成为出色的盟友。但要小心！这些生物在战斗的热度中可能难以控制，甚至可能反噬喂养它们的手。不过，不要太担心！拥有一个凝胶立方体或猫头鹰熊伙伴，绝对值得偶尔野性暴走的风险。(gelatinous cube) 或 (owlbear)",
+								{
+									"type": "entries",
+									"name": "Caregiver",
+									"page": 6,
+									"entries": [
+										"每个伴侣都有一个玩家角色{@b caregiver}，指挥着这个生物。在游戏过程中，护理者的玩家大部分时间控制着伴侣，尽管游戏主持人可以在伴侣和护理者分开或护理者以某种方式虐待伴侣时介入控制。",
+										"在战斗中，同伴与其照料者共享一个回合，并在照料者的回合中行动。同伴可以自行移动并使用自己的反应和奖励行动。但是，除非照料者使用奖励行动命令同伴执行不同的行动（包括同伴属性表中指定的任何行动），否则他们只能执行冲刺、退出战斗或闪避行动。同伴必须能够看到或听到他们的照料者才能接收命令。如果同伴的照料者无法行动，或者同伴陷入暴走状态（如下文所述），同伴还可以采取其他行动。 (dnd 运行小组规则)",
+										{
+											"type": "inset",
+											"name": "One Companion Per Group",
+											"entries": [
+												"同伴们非常有趣，但是管理多个同伴可能会在桌上慢下来。同伴是队伍的另一个成员，需要跟踪统计数据和行动，额外的同伴很容易使战斗变得缓慢。如果每个玩家都想参与同伴的行动，对角色来说，让角色轮流成为生物的照顾者会更简单，而不是四处冒险带着一群动物。 (DND 跑团规则)",
+												"为希望分享同伴的角色，该同伴可在短暂或长时休息结束时接受新的照顾者。由于同伴的熟练加值和生命值取决于他们的照顾者级别，如果队伍中的角色级别不同，这些统计数据可能会波动，反映出更有经验的照顾者在指导同伴方面更为娴熟。 (dnd running group rules)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Charmed Caregiver",
+											"page": 6,
+											"entries": [
+												"一个被魅惑的照料者仍然可以命令他们的同伴，但他们不能命令同伴攻击一个魅惑了他们的生物。（dnd running group规则）"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Incapacitated or Absent Caregiver",
+											"page": 6,
+											"entries": [
+												"如果同伴的照顾者无法行动或死亡，GM决定谁控制同伴\u2014\u2014通常来说，照顾者的玩家可以在他们对抗敌人时保持对同伴的控制。 (GM: 游戏主持人)",
+												"然而，在照顾者和他们的伙伴被物理上分开的情况下，例如当伙伴被捕获时，GM可能希望控制伙伴，以使玩家对生物的命运保持悬念。 (GM)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "New Caregiver",
+											"page": 6,
+											"entries": [
+												"根据当地语言习惯，文本中的类似(%num%)的内容应保持为翻译后的(%num%)。\n\n按照dnd运行小组规则，陪伴者可以根据GM的判断，放弃一位看护者角色，并选择另一只愿意的生物作为看护者（caregiver）。（dnd运行小组规则）"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Ferocity",
+									"page": 6,
+									"entries": [
+										"伴侣们是危险的生物。虽然通常比它们野生的同类更温顺，但它们并没有完全驯服。每个伴侣的{@b ferocity}都是衡量它们的韧性和愤怒的标志，以及这些在战斗中的积累。随着伴侣的凶猛度增加，它们获得了强大的新行动的权限，但同时也变得更难被照顾者控制。 (dnd 运行组规则)\n",
+										"如果同伴在他们和他们的照料者的回合开始时没有失去行动能力，他们的凶猛度会增加{@dice 1d4}+ 同伴能在5英尺范围内看到或听到的敌人数量。为了增加凶猛度，共享相同属性的一组生物（例如一群老鼠）算作一个生物。在战斗期间，凶猛度每轮增加一次，同伴可以获得的凶猛度等级没有上限。 (Ferocity)",
+										{
+											"type": "inset",
+											"name": "Bag of Rats",
+											"entries": [
+												"我们已经能够发现一些狡猾的玩家正在策划把一袋微醉的老鼠塞满，然后在战斗中打开这个袋子，以此来增强他们伙伴的凶猛性。然而，一个太容易的目标并不能像在一场生死搏斗中被敌人威胁那样激起伙伴的愤怒。因此，对于增加伙伴的凶猛性的目的，GM（游戏主持人）有权做出最终决定，什么构成了一个敌人。同样地，对于增加凶猛性的目的，一群生物被视为单个生物，GM可以自由决定两三只弱小生物可能只算一个生物。 (GM)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Rampage",
+											"page": 7,
+											"entries": [
+												"在它们的回合开始时投掷以增加凶猛度后，如果同伴的凶猛度达到或超过10，并且没有被阻止，它们有可能陷入{@b rampage}。同伴的照顾者可以进行一次感知（动物驯养）检定（无需动作）来试图阻止同伴陷入暴走状态。进行检定时，照顾者不能被阻止，而且同伴必须能够看到或听到照顾者。检定的DC等于5 + 同伴的凶猛度。检定成功时，同伴在它们的回合上正常行动。检定失败或者照顾者没有进行检定时，同伴进入暴走状态。",
+												"当同伴进入暴走状态时，他们立即朝着能感知到的最近的生物移动并使用他们的标志性攻击（见下文）攻击该生物，如果攻击命中，则额外造成伤害等于他们凶猛属性的一半。如果至少有一个盟友和一个敌人与同伴距离相等且最近，护理者的玩家投掷任意一颗骰子。在奇数时，同伴攻击盟友。在偶数时，同伴攻击敌人。护理者的玩家确定同伴接触的具体距离相等的盟友或敌人（如果他们愿意，可以选择他们自己的角色）。 (D&D 运行组规则适用，专有名词在翻译后保留英文在 `()` 中。)",
+												"在符合当地语言习惯的前提下，文本中像 (%num%) 这样的内容在翻译时应保持为 (%num%)。\n\n翻译需符合 dnd 跑团规则，专有名词翻译后应保留英文括号内的原文。\n\n在狂暴状态下无法接近敌人的同伴会使用冲刺动作朝着他们能感知到的最近的生物移动。如果同伴无法感知到任何潜在目标，他们将按照由GM决定的随机方向尽可能远地移动，避开危险。",
+												"当一名进入暴走状态的同伴解决他们的动作或结束他们的回合时，他们的狂暴值降为0，并且他们不再处于暴走状态。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Reducing Ferocity",
+											"page": 7,
+											"entries": [
+												"为了防止伴侣陷入危险的暴怒状态，照顾者有几种选择来减少生物的凶猛程度。",
+												{
+													"type": "entries",
+													"name": "Ferocity Actions",
+													"page": 7,
+													"entries": [
+														"每位同伴在他们的属性板块中都有三个消耗狂暴值的行动。要使用其中一个狂暴行动，照顾者的角色等级必须等于或大于该狂暴行动的等级，并且同伴在使用该行动之前必须花费相应数量的狂暴值。如果同伴没有足够的狂暴值可供支出，他们就不能使用该行动。 (ferocity)",
+														"野性行动始终使用伙伴的行动，意味着它们不能作为机会攻击的一部分使用。野性行动不能在伙伴处于暴走状态时使用。（Ferocity actions always use the companion's action, meaning they can't be used as part of an opportunity attack. Ferocity actions can't be used while a companion is in a rampage.）"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "End of Combat",
+													"page": 7,
+													"entries": [
+														"当涉及到伴侣的战斗遭遇结束且伴侣未濒死时，伴侣恢复生命值，数值等同于他们的凶猛度，而他们的凶猛度降为0。GM 决定何时战斗遭遇结束，通常在生物停止按照先攻顺序行动的时候。 (GM: 游戏主持人)"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Dying Companions",
+									"page": 7,
+									"entries": [
+										"当同伴生命值降至0时，它们处于濒死状态并像角色一样进行死亡豁免投掷。因此，角色们总是有机会拯救它们毛茸茸（或鳞片、黏滑、或外骨骼）的朋友们的生命！如果战斗结束时同伴处于濒死状态，它们的凶猛度降至0，但它们不会恢复生命值（见{@book \"End of Combat\"|WhereEvilLives|1|End of Combat}上方）。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Statistics",
+									"page": 7,
+									"entries": [
+										"除了他们的凶猛行为外，伙伴的统计数据与其野生对应物的统计数据有所不同。这使得伙伴更容易管理，保持其力量与其他伙伴相当，并确保伙伴永远不会超过角色。作为野生生物的某种更社交化的版本，伙伴通常比其未被驯服的对应物更聪明和更多才多艺。 (DND)",
+										{
+											"type": "entries",
+											"name": "Hit Dice",
+											"page": 7,
+											"entries": [
+												"根据当地语言习惯，文本中像（%num%）这样的内容在翻译时应保持为（%num%）。\n\n大多数没有职业的生物的生命骰类型由其体型确定（对于微小生物为d4，对于小型生物为d6等等）。然而，同伴是特殊的，无论大小都使用d8作为生命骰。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Language",
+											"page": 7,
+											"entries": [
+												"一个伴侣与其照顾者分享着独特的纽带，可以理解由照顾者选择的一种语言中的基本命令。然而，该伴侣无法阅读、说话或书写任何语言，即使通常类似的生物可以。 (DND running group rules)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Proficiency Bonus",
+											"page": 7,
+											"entries": [
+												"因为同伴的有效性和生存能力取决于他们护理者的训练和专业知识，所以同伴的熟练加值等同于他们护理者的熟练加值。此外，一些同伴的统计数据涉及到他们的熟练加值，简写为PB。其他统计数据使用与同伴的熟练加值相等的骰子数量；这些数据用PB代替骰子的数量来表示。例如，如果一个同伴有+2的熟练加值，PBd6意味着2d6。 (PB = 熟练加值)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Signature Attack",
+											"page": 7,
+											"entries": [
+												"每个同伴都有一个指定为他们的特色攻击的动作。特色攻击总是近战攻击，通常是生物最好的自然攻击方式。同伴在进入暴走状态时使用他们的特色攻击。 (companion)",
+												"每个同伴还有特殊的行动，他们只能在自己的回合中通过消耗狂暴来使用，其中一些行动利用了同伴的标志性攻击。有关狂暴行动的更多信息，请参见上面的{@book \"Reducing Ferocity\"|WhereEvilLives|1|Reducing Ferocity}。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Companion Mounts",
+									"page": 8,
+									"entries": [
+										"许多同伴体型足够大以供骑乘，尤其是当小型照顾者配备了类似水生或飞行坐骑所使用的奇特鞍具时。当照顾者骑着同伴参与战斗时，实际上并没有太大变化。照顾者和同伴仍然在同一个回合内行动，而照顾者必须使用他们的奖励行动来指挥同伴进行除了冲刺、脱离战斗或闪避动作以外的任何行动。在某些情况下，同伴可能允许除了照顾者以外的其他生物骑乘它们，尽管那些生物不能给予同伴命令。 (DND 运行组规则)",
+										"如果伴侣在承载骑手时暴怒，那么当确定伴侣攻击哪个生物时，该骑手算作与伴侣在5英尺范围内。如果伴侣攻击它们的骑手，则它们的攻击检定有劣势。 (DND)",
+										{
+											"type": "inset",
+											"name": "Companion Barding",
+											"entries": [
+												"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中应保持为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号内的原文。\n\n在GM的酌情下，角色可以为同伴购买马甲，如核心规则所述，以下是调整后的规定：",
+												{
+													"type": "list",
+													"items": [
+														"小型伙伴的装甲比人形生物相同装甲重量的一半轻。中型伙伴的装甲与人形生物相同，而大型伙伴的装甲重量是人形生物的四倍。",
+														"同伴们精通他们穿着的任何护甲。 (Companions are proficient in any barding they wear.)",
+														"当同伴穿着装甲时，他们不会将他们的护卫的熟练加值加到他们的AC上。 (barding)",
+														"形态变化的同伴（比如模仿同伴）在穿戴战甲时无法使用该能力。",
+														"伴侣们如果拥有腐蚀性体质或是无定形的（比如凝胶立方体伴侣），不能穿戴非魔法马甲。"
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Companion Encounter Balance",
+									"page": 8,
+									"entries": [
+										"除非照顾者拥有{@class beastheart|BST}职业（位于{@link Beastheart and Monstrous Companions|https://shop.mcdmproductions.com/products/beastheart-companions}中），GM应该将伙伴视为一个强大的战斗重点魔法物品，以此来构建遭遇。伙伴给予队伍显著的力量提升，不仅仅是通过造成更多伤害和提供更多生命值给敌人攻击的目标，还通过制造使战斗对队伍的对手更具挑战性的复杂情况。GM可以通过调整遭遇难度一个步骤（从容易到中等，从困难到致命等等）来适当挑战拥有伙伴的一组角色，尤其是如果角色的平均等级为第7级或更低。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "NPCs with Companions",
+									"page": 8,
+									"entries": [
+										"同伴生物旨在陪伴玩家角色冒险。如果NPC有宠物或生物仆从，建议您使用生物的正常属性块。例如，如果一个NPC游侠有一只猫头鹰熊作为伙伴，该生物将使用正常{@creature owlbear}的属性块，并由GM正常扮演。但如果角色被指派解救一名倒下的德鲁伊NPC的猫头鹰熊宠物脱离恶棍的掌控，GM可以选择将宠物作为{@creature owlbear companion|FleeMortals}，允许生物加入他们的救援行动。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Demons",
+							"page": 9,
+							"entries": [
+								"恶魔消耗凡间灵魂来供养他们的邪恶力量。每当你运行本书中的其中一只恶魔时，请使用以下规则。 (Demons)",
+								{
+									"type": "entries",
+									"name": "Demons and Souls",
+									"page": 9,
+									"entries": [
+										"恶魔不以食物或水为食，而是以灵魂为食。这些灵魂为他们的嗜血力量提供了能量，而当缺乏灵魂时，恶魔几乎无法思考。 (Demons)",
+										{
+											"type": "entries",
+											"name": "Soul Count",
+											"page": 9,
+											"entries": [
+												"一个恶魔的属性块会说明在战斗开始时，该恶魔已经吞噬的灵魂数量。这个数字会以类似的方式呈现：在它们的生命值之下，既以骰子表达式形式，也以平均数字形式。 (dnd running group rules)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Soul Devourer",
+											"page": 9,
+											"entries": [
+												"恶魔可以通过杀死其他生物来获得更多的灵魂，就像他们的灵魂吞噬者特性中描述的那样。与生命值不同，恶魔的灵魂计数没有最大限制。 (Demons)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Soul-Fueled Power",
+											"page": 9,
+											"entries": [
+												"大多数恶魔有一个或多个需要使用灵魂的特征。(dnd 运行组规则)",
+												{
+													"type": "entries",
+													"name": "Passive Traits",
+													"page": 9,
+													"entries": [
+														"被动特性会在恶魔的灵魂数量超过该特性描述的阈值后自动生效。该特性会保持生效，直到恶魔的灵魂数量降低到阈值以下，当恶魔的灵魂数量达到或超过阈值时，该特性会重新激活。 (dnd running group rules)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Active Features",
+													"page": 9,
+													"entries": [
+														"在遇到场景中，恶魔可以燃烧灵魂来使用或增强某些能力。当他们这样做时，他们的灵魂数量会减少相应的数量。这个花费有时会在能力的开头用括号注明，比如\"(花费1灵魂)\"。其他时候，能力本身的文本会描述它，比如说\"恶魔可以燃烧1个灵魂\"以获得额外效果。"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Lethe",
+											"page": 9,
+											"entries": [
+												"当恶魔的灵魂计数降至0时，它们陷入一种被称为\"遗忘\"的状态\u2014\u2014一种剧烈的饥饿状态，在这种状态下它们只能绝望地寻找食物。陷入\"遗忘\"状态的恶魔变得一心只想消耗，变得暴力，只寻求吞噬。请参阅恶魔的遗忘特性以了解更多信息。（Lethe）"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Soulsight",
+											"page": 9,
+											"entries": [
+												"恶魔具有一种特殊感知能力，称为\"灵魂视觉\"，使它们能够感知到一定半径内的每个生物，除了构造物和亡灵之外。 灵魂视觉不依赖视觉，但对于需要视觉的特性来说算作\"看到\"。 除非另有说明，否则物理物体（包括完全遮挡）和超自然效应都无法阻挡灵魂视觉。 恶魔的属性块将其灵魂视觉的半径列在\"感知\"下方。\n\n(dnd运行组规则)"
+											]
+										},
+										{
+											"type": "inset",
+											"name": "Adjusting Lethality",
+											"entries": [
+												"吞噬灵魂使恶魔成为致命的对手。为了让角色有更好的机会在与恶魔的遭遇中存活下来，你可以降低豁免投骰的 DC\u2014\u2014或者你可以完全取消豁免投骰，并且只允许恶魔在其他方式导致生物在其60英尺范围内死亡时吞噬灵魂。另一方面，你可能希望通过更强大的恶魔增加致命性！如果是这样，你可以将 DC 设置为 8 加上恶魔的熟练加值，而不总是使用 DC 11 的豁免投骰。 (dnd, DC)"
+											]
+										},
+										{
+											"type": "quote",
+											"entries": [
+												"有时我整天坐在我的宝藏中。我有一堆硬币，独一无二的雕像，以及强大力量的魔法物品。当我凝视我的广阔财富时，你知道我在想什么吗？我想，\"与一个凡人灵魂的味道相比，这算不了什么。\" (mortal soul)"
+											],
+											"by": "Aurumvas of Meaningless Greed"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Retainers",
+							"page": 10,
+							"entries": [
+								"{@b Retainers}是与玩家角色一起冒险的有智慧的存在。每个侍从都是一名经验较少的冒险者，玩家角色可以将其纳为门徒。侍从永远不应达到与玩家角色相同的力量水平。 {@b Retainers} (retainers)",
+								"保持从{@book Strongholds & Followers|SaF|8|Retainers}开始首次出现的随从规则。这本书包含了这些随从的更新规则。",
+								{
+									"type": "entries",
+									"name": "Mentor",
+									"page": 10,
+									"entries": [
+										"每位仆人都有一个玩家角色{@b mentor}。 仆人的导师给予他们指示，而导师的玩家也控制着仆人。 仆人在战斗中与他们的导师在同一倡议计数上行动，可以选择在导师之前或之后立即行动。 随着导师的经验和等级提升，他们的仆人也会提升（参见{@book \"Statistics\"|WhereEvilLives|1|Statistics|1}）。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Statistics",
+									"page": 10,
+									"entries": [
+										"随着当地语言习惯，像（%num%）这样的文本在翻译中仍应输出为（%num%）。\n- 翻译应符合dnd跑团规则，专有名词在翻译后应保留英文在 `()` 中。\n\n随从被设计成易于管理，以便他们的玩家（已经在管理复杂的角色）不会因为更多的细节而感到不知所措。每个随从都有一个简单的属性块 \u2014 虽然这些与其他生物的属性块类似，但随从遵循一些不同的规则。",
+										{
+											"type": "entries",
+											"name": "Level",
+											"page": 10,
+											"entries": [
+												"一个随从的等级等于他们导师的等级。当随从升级时，他们的生命值增加（参见{@book \"Hit Points and Hit Dice\"|WhereEvilLives|1|Hit Points and Hit Dice}），他们获得战斗特性（参见{@book \"Features\"|WhereEvilLives|1|Features}）。此外，当他们的导师的熟练加值提升时，其中一些统计数据也会增加，包括攻击加值、技能和豁免 DC（参见{@book \"Proficiency Bonus\"|WhereEvilLives|1|Proficiency Bonus|1}）。他们的其他统计数据通常不受等级影响。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Armor Class",
+											"page": 10,
+											"entries": [
+												"与本地语言习惯一致，文本中类似于 (%num%) 的内容应保持翻译后仍然输出为 (%num%)。\n\n翻译需符合 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n与玩家角色不同，仆人的盔甲等级不是由他们穿戴的特定装备（比如尖刺皮甲）决定的。相反，每个仆人的盔甲等级被简化为三种盔甲类型之一：",
+												{
+													"type": "list",
+													"items": [
+														"轻甲护从者的 AC 为 13。 (Retainers with light armor have AC 13.)",
+														"轻武器保护者AC 15。",
+														"重甲侍从的护甲等级为18。 (Retainers with heavy armor have AC 18.)"
+													]
+												}
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Hit Points and Hit Dice",
+											"page": 10,
+											"entries": [
+												"随着当地语言习惯，并且像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译符合 DND 运行小组规则，并且专有名词在翻译后应保留英文在 `()` 中。\n\n追随者每级获得一个命中骰。 他们的生命值最大值基于他们的命中骰大小，如《追随者生命值表》所示。",
+												"侍从的生命值异常高\u2014\u2014有时甚至比他们的导师还要高。这使得队伍可以享受到心爱侍从的陪伴，而不必担心他们因为一次不幸的掷骰子或某个玩家的决定而失去。游戏主持人通常会在奖励角色时给予侍从，而不是其他宝物。这样的奖励不应该轻易丧失。(Retainers)"
+											]
+										},
+										{
+											"type": "table",
+											"caption": "Retainer Hit Points",
+											"colLabels": [
+												"Hit Die Size",
+												"Hit Point Maximum",
+												""
+											],
+											"colStyles": [
+												"col-2 text-center",
+												"col-3 text-left",
+												"col-5 text-left"
+											],
+											"rows": [
+												[
+													"d6",
+													"根据当地语言习惯，文本如 (%num%) 应该在翻译中仍然输出为 (%num%)。\n翻译需符合 dnd 运行组规则，专有名词在翻译后应在括号内保留英文。 \n\n他们等级的 6 倍 (6 times their level)"
+												],
+												[
+													"d8",
+													"按照当地语言习惯，文本中类似 (%num%) 的内容在翻译时应保持为 (%num%)。\n\n遵守龙与地下城游戏组规则，专有名词在翻译后应保留英文括号 `()`。\n\n他们等级的 7 倍"
+												],
+												[
+													"d10",
+													"以当地语言习惯为准，文本中类似 (%num%) 的内容在翻译中应保持为 (%num%)。\n\n遵守 DND 运行组规则的翻译，专有名词在翻译后应在 `()` 中保留英文。\n\n8 倍他们的等级"
+												],
+												[
+													"d12",
+													"九倍他们的等级 (9 times their level)"
+												]
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Proficiency Bonus",
+											"page": 10,
+											"entries": [
+												"由于随从的效力和生存能力取决于其导师的训练和专业知识，因此随从的熟练加值等同于其导师的熟练加值。（Dungeons & Dragons）",
+												"一些随从的统计数据涉及到他们的熟练加值，简称为PB。其他统计数据使用的骰子数量等于随从的熟练加值；这些数据使用PB来代替骰子数量。例如，如果一个随从有+3的熟练加值，{@dice PBd10} 表示 {@dice 3d10}。 (随从)",
+												"一个仆人在进行豁免投骰时，会加上他们的熟练加值。 (retainer)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Features",
+											"page": 10,
+											"entries": [
+												"每个随从每轮可以使用一次攻击动作来发动一个{@b signature attack}。即使随从的标志性攻击不是近战武器攻击，随从也可以利用自己的标志性攻击进行机会攻击。",
+												"侍从在3级、5级和7级时获得新的特性。某些特性每天只能使用一定次数（在侍从的属性块中有注明）。 (retainer)",
+												"根据当地的语言习惯，文本中像(%num%)这样的内容在翻译中应保持为(%num%)。\n- 翻译应符合dnd running group的规则，专有名词在翻译后应保留英文括号内的内容。\n\n此外，如果一个随从的标志性攻击是武器攻击，通常在第7级时（在他们的属性块中有说明），他们将获得额外的攻击，使他们每轮可以进行两次标志性攻击，而不是一次。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Gear",
+											"page": 10,
+											"entries": [
+												"当一名随从加入队伍时，他们通常携带适合其职位的衣物、一套盔甲、一件武器和一个探险者背包。如果随从施展法术，他们也会携带一个施法工具。任何额外的装备必须由他们的导师提供。 (retainer 随从) (party 队伍) (armor 盔甲) (weapon 武器) (explorer's pack 探险者背包) (spellcasting implement 施法工具) (mentor 导师)",
+												"{@i {@b Magic Items.}）随从可以像其他人一样使用魔法物品。例如，{@item +1 weapon}会增加他们的攻击和伤害值各1点，而{@item +1 armor}会增加相应类型（轻甲、中甲或重甲）的防御等级1点。",
+												"拥有仆人的一个愉快的副作用是，随着玩家角色的升级和获得更好的装备，他们可以把过时的物品传给仆人。 (player character)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Dying Retainers",
+									"page": 10,
+									"entries": [
+										"当仆役的生命值减少至0点时，他们遵循与玩家角色相同的规则。如果没有被大量伤害立即杀死，他们会陷入无意识状态，进行死亡豁免投掷，并可以被稳定或治疗。 (DND 运行组规则)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Optional Rules: Shared Attacks",
+									"page": 11,
+									"entries": [
+										"如果玩家想要加速其侍从的行动，他们可以在{@b shared attacks}处于GM的判断下进行。",
+										"当导师用攻击命中生物时，如果他们的侍从能看到或听到他们，侍从会受到导师成功的启发。在受到启发的侍从的下一个回合，对于导师刚刚取得的每次成功攻击，侍从可以自动对范围内的一种生物使用他们的标志性攻击命中，直到侍从可以进行的攻击次数为止。 (dnd运行组规则中的proper nouns保持英文在 `()` 中的翻译。)",
+										"如果导师受到的攻击次数少于随从可以进行的攻击次数，那么随从可以为那些攻击进行额外的攻击检定，以查看它们是否命中。（retainer）"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Retainer Encounter Balance",
+									"page": 11,
+									"entries": [
+										"在构建遭遇时，GM 应将随从视为一个类似于强大的以战斗为重点的魔法物品。一个随从给予了队伍显著的力量提升；它们不仅能造成更多伤害并提供更多敌人攻击的生命值，而且还会制造复杂情况来挑战队伍的敌人。GM 可以将遭遇难度提升一个等级（从简单到中等，从困难到致命等等），以恰当地挑战具有随从的一组角色。"
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Minions",
+							"page": 11,
+							"entries": [
+								"{@b minion} 是一个弱小的敌人，旨在让主持人能够创建战斗场景，使敌人的数量众多，而不会让角色感到不堪重负。事实上，与爪牙的遭遇让角色感到英勇，因为他们可以应对众多敌人，并且活着讲述这个故事。",
+								"然而，仆从仍然构成威胁。击败一个仆从仍然需要穿透他们的防御，角色们不能仅仅轻易抵挡住仆从的攻击造成的伤害。 (minion)",
+								"那么，手下如何使游戏主持人迅速轻松地运行一大群敌人呢？(minions)",
+								{
+									"type": "list",
+									"items": [
+										"手下易于操作。他们的统计数据表简单而不复杂。 (Minions are simple to run. Their stat blocks are small and uncomplicated.)",
+										"手下行动迅速。他们不进行多次攻击，不进行伤害掷骰，也不采取独特的奖励动作或反应，因此他们的回合不会很长。（D&D游戏组规则）",
+										"手下们死得很快。一个角色可以用一次武器攻击击败几个手下！ (Minions die fast. A character can kill several minions with a single weapon attack!)",
+										"手下人在人数上有优势。他们的攻击可以集中在一起，使它们在桌上更致命，更快速地使用。\n\n(Note: Proper nouns and terms like \"DND\" remain unchanged in the translation.)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "No Hit Dice",
+									"page": 11,
+									"entries": [
+										"手下有生命值但没有投掷骰子（Hit Dice），简化了它们的设计。手下在短休息期间无法花费投掷骰子来治疗，因为它们没有。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "No Damage Rolls",
+									"page": 11,
+									"entries": [
+										"手下不会掷骰子确定伤害，因为它们的攻击造成的伤害是固定的。它们也不能造成暴击。 (Minions don't roll for damage because their attacks deal a static amount of damage. They also can't score critical hits.)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Shared Turns",
+									"page": 11,
+									"entries": [
+										"通常情况下，相同状态块的所有爪牙会在同一回合行动。由于它们共享一个回合，这些爪牙可以各自移动到位置，然后如果他们希望的话，各自使用一个动作，而不是各自移动并单独采取行动。 (stat block)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Minion Trait",
+									"page": 11,
+									"entries": [
+										"每个仆从都具有仆从特质，它会以以下方式影响生物：(Minion trait)",
+										{
+											"type": "list",
+											"items": [
+												"如果仆从受到攻击或未能通过豁免检定而受到任何伤害，则它们的生命值将减少至0。(D&D running group规则)",
+												"如果仆从受到其他效果的伤害，则如果伤害等于或超过其生命值上限，则它们死亡；否则它们不受伤害。(D&D 运行组规则)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Overkill Attacks",
+									"page": 11,
+									"entries": [
+										"强力武器攻击可以在一次名为{@b overkill attack.}的单个动作中杀死多个仆从。",
+										"按照当地语言习惯，并且像(%num%)这样的文本在翻译时应该仍然输出为(%num%)。\n\n翻译需符合dnd跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n正如已经讨论的那样，武器攻击只需造成1点伤害即可将小兵的生命值降至0，无论其生命值最大值为何。但是，当武器攻击的伤害超过目标小兵的生命值最大值时，该攻击变为超杀攻击，超出小兵生命值最大值的伤害将成为{@b overkill damage.}。",
+										"过量伤害可以应用于第二个具有与目标相同属性块的小兵，并且处于过量伤害范围内（见下文）。对第二个小兵的伤害计算为你对其进行了武器攻击；由于只需1点武器伤害就可以将小兵的生命值降为0，任何数量的过量伤害都会立即将其击倒。但等等，事情还会变得更好\u2014\u2014如果初始攻击的过量伤害超过了第二个小兵的生命值上限，剩余的过量伤害可以滚动到第三个小兵，以此类推！换句话说，每当过量伤害超过新目标的生命值上限时，攻击者可以选择额外的一个小兵将其生命值降为0。 (DND跑团规则)",
+										"根据当地语言习惯，并且像(%num%)这样的文本在翻译时应该保持为(%num%)。\n\n例如，当一次武器攻击对一个生命值最大为5的随从造成18点伤害时，过量伤害为13。如果在过量伤害范围内有三个相同状态的额外随从，它们都可以立即减至0点生命值，因为过量伤害超过目标的生命值最大值两倍以上。",
+										"过度攻击不能作为机会攻击的一部分。 (Overkill attacks cannot be made as part of an opportunity attack.)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Overkill Range",
+									"page": 11,
+									"entries": [
+										"部下必须在一定范围内才能符合超杀攻击的条件，这取决于攻击是近战还是远程攻击。除了以下示例外，\"超杀伤害示例\"侧边栏还演示了如何计算超杀伤害。(Overkill Damage Illustrated)",
+										{
+											"type": "entries",
+											"name": "Melee Overkill Attacks",
+											"page": 12,
+											"entries": [
+												"当一个生物用近战武器攻击一名爪牙时，攻击范围内的其他爪牙处于{@b overkill range}，可以被选择作为超杀攻击的额外目标。超杀攻击不能瞄准武器攻击范围外的爪牙。",
+												"{@i Lady Ulnock the paladin battles a horde of goblin minions (each with 6 hit points). She hits a goblin minion with her longsword and uses Divine Smite, dealing 8 slashing damage and 11 radiant damage to the target for a total of 19 damage. Since Lady Ulnock dealt 13 points of overkill damage\u2014more than the hit point maximum of two additional minions\u2014she can choose up to three additional goblin minions within 5 feet of her (the reach of her longsword attack) and reduce them to 0 hit points. If there are no other goblin minions within 5 feet of Lady Ulnock, she can't damage additional minions with this attack.}"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Ranged Overkill Attacks",
+											"page": 12,
+											"entries": [
+												"当一个生物用远程武器攻击一个爪牙时，从该生物起始、朝向目标的直线上的其他爪牙，到武器的短程范围内，都处于{@b overkill range}，可以选择作为超杀攻击的额外目标。超杀攻击不能选择直线外或超出武器短程范围的爪牙作为目标。",
+												"{@i Perigold Quickfingers the rogue is hidden and takes aim at a group of zombie minions (each with 6 hit points) with his light crossbow (which has a short range of 80 feet). He hits a zombie minion with his crossbow, dealing extra damage thanks to his Sneak Attack, for a total of 14 damage. Since Perigold dealt 8 points of overkill damage\u2014more than the hit point maximum of one additional minion\u2014he can choose up to two additional zombie minions in an 80-foot-long line extending from Perigold in the direction of the target, reducing them to 0 hit points. If there are no other zombie minions in the line, then Perigold can't damage other minions with this attack.}"
+											]
+										},
+										{
+											"type": "inset",
+											"name": "Behind the Design: Minion Trait",
+											"entries": [
+												"你可能会问，为什么不给手下只有1点生命值，当他们节省一半伤害时不受伤，就像第四版那样？首先，像{@spell color spray}和{@spell sleep}这样使用生物生命值来确定有效性的法术\u2014\u2014会摧毁所有手下，甚至那些用来挑战高级角色的手下。这些法术对手下仍然有效，只是不会造成毁灭性的影响！\n\n(Note: Proper nouns and terms like \"{@spell color spray}\" and \"{@spell sleep}\" remain in English within parentheses according to the instruction.)",
+												"符合当地语言习惯，文本中像（%num%）这样的内容在翻译后应仍然输出为（%num%）。\n\n其次，对于没有任何攻击检定或豁免检定的法术和效果\u2014\u2014例如{@spell magic missile}和{@spell spike growth}\u2014\u2014将会摧毁拥有 1 点生命值的小喽啰。这适用于具有低挑战等级的小喽啰，比如哥布林和僵尸。但是，当相同的法术在高等级时轻易击倒强大的恶魔小喽啰时，战斗和虚构之间的平衡会变得近乎荒谬。",
+												"符合当地语言习惯，像 (%num%) 这样的文本在翻译中应保持为 (%num%)。\n\n最后，对半伤害的高级法术\u2014\u2014比如 {@spell fireball} 或 {@spell meteor swarm}\u2014\u2014在面对只有1点生命值的爪牙时会感觉浪费。为什么要使用高级法术，当低级法术就能起到作用呢？同样地，第四版设计可能导致一个龙崽爪牙在火球术的攻击中无逻辑地幸存下来，而旁边的一个\"更强\"的标准龙崽却死亡了，尽管这两个生物都成功通过了它们的豁免投掷。相比之下，在本书的爪牙规则下，法师们仍然有充分的理由对爪牙使用高级法术。"
+											]
+										},
+										{
+											"type": "quote",
+											"entries": [
+												"人数不足？切换到区域效果技能。否则你会度过一个糟糕的一天，可能会持续你的余生。（Dungeons & Dragons 玩家规则）"
+											],
+											"by": "The Sun, Senior Pyrokinetic, The Society"
+										},
+										{
+											"type": "image",
+											"href": {
+												"type": "external",
+												"url": "https://i.imgur.com/VxiNC8v.png"
+											}
+										},
+										{
+											"type": "inset",
+											"name": "Overkill Damage Illustrated",
+											"entries": [
+												"符合当地语言习惯，文本中像 (%num%) 这样的文本应该在翻译中仍然输出为 (%num%)。\n\n根据 dnd 跑团规则翻译，并且专有名词在翻译后应在 `()` 中保留英文。\n\n假设一名战士正在用短剑对付一名帮凶进行近战攻击，而另外两名帮凶正处于该攻击的过杀范围内。每个帮凶是一个拥有 6 点生命值的小兵。在示例 A 中，攻击命中并造成 4 点穿刺伤害。这只击败了被选定的帮凶。对小兵的成功攻击总是会击败目标。",
+												"在例B中，攻击是一次致命打击，造成13点穿刺伤害。这击败了目标手下，剩余7点过量伤害，这些伤害会传播到战士过量伤害范围内的其他小喽啰。所以，距离战士5英尺以内的第二个手下受到6点穿刺伤害并死亡，剩余1点过量伤害。第三个手下承受最后一点过量伤害而死亡。 (fighter)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Group Attacks",
+									"page": 13,
+									"entries": [
+										"每个爪牙都至少有一个群体攻击动作，以加快游戏进程。在群体攻击中，共享一个回合的两到五个相同状态块的爪牙可以同时使用他们的动作参与攻击，前提是目标在每个爪牙的原始攻击范围内。 (DND 运行组规则)",
+										{
+											"type": "list",
+											"style": "list-hang",
+											"items": [
+												"为团队攻击进行一次攻击检定。这算作一次攻击。 (DND 运行组规则)",
+												"一次集体攻击投掷骰获得一个+1的奖励，每个加入攻击的小兵都会增加攻击骰的奖励。 (例如，如果四个哥布林小兵一起进行集体攻击，攻击骰将获得+4的奖励。)",
+												"如果团队攻击命中，将伤害乘以参与该团队攻击的小兵数量。（例如，如果四个哥布林小兵使用能造成{@damage 1}伤害的团队攻击命中，他们的团队攻击将造成{@damage 4}伤害。）"
+											]
+										},
+										"GM（Game Master）决定有多少仆从参与群体攻击。例如，如果有五个仆从包围一个目标，GM可能决定让所有五个同时攻击以加快战斗速度，或者将攻击分配给较小的几组，以增加一些仆从命中而另一些仆从失手的几率。单个仆从甚至可以独自使用他们的群体攻击动作\u2014\u2014他们像普通生物一样进行攻击，并且简单地不会从上述的群体加成中受益。",
+										{
+											"type": "entries",
+											"name": "Advantage and Disadvantage",
+											"page": 13,
+											"entries": [
+												"一组攻击只有在所有参与组攻击的小兵在攻击检定中获得优势或劣势时，才能以优势或劣势进行。否则，攻击将不以优势或劣势进行。 (DND running group rules)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Cover and Concealment",
+											"page": 13,
+											"entries": [
+												"如果目标被一些但不是全部的手下掩盖或隐藏，GM应根据他们拥有的掩盖或隐藏类型将手下分成多个组，然后针对每个组进行单独的攻击。 (D&D游戏小组规则)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Target Response Effects",
+											"page": 13,
+											"entries": [
+												"如果一个团队攻击触发了一个反应或类似效果，通常会影响单个攻击者，例如{@spell fire shield}或{@spell hellish rebuke}咒语，那么团队攻击的目标选择加入攻击的一个随从来受到效果影响。(DnD运行组规则)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Group Opportunity Attacks",
+											"page": 13,
+											"entries": [
+												"如果一个生物同时激怒了同一种状态块的多个小兵，且这些小兵拥有近战群体攻击动作，那么这些小兵可以分别使用他们的反应加入一个群体攻击作为一次机会攻击。 (DND running group rules)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Optional Rule: Group Saving Throws",
+									"page": 13,
+									"entries": [
+										"尽管仆从通常要单独进行豁免检定，但在某些情况下，为每个仆从逐一进行豁免检定可能会拖慢战斗，比如当一个被十八名影子仆从包围的牧师使用了「驱散不死亡」。 (Turn Undead)",
+										"当许多具有相同状态的随从需要同时对同一效果进行豁免检定时，您可以同时为最多五个随从的一组进行一次豁免检定。组中的所有随从都使用豁免检定的结果。 (DnD游戏团规则)",
+										"符合当地语言习惯，像(%num%)这样的文本在翻译中应保持为(%num%)。\n\n根据dnd跑团规则进行翻译，专有名词在翻译后应在`()`中保留英文。\n\n例如，如果有34个哥布林手下需要对催眠图案法术进行豁免检定，则这些手下将总共进行7次对该法术的豁免检定：30个手下分成6组，每组5个进行6次检定，剩下的4个手下再进行一次检定。"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Optional Rule: Tough Minions",
+									"page": 13,
+									"entries": [
+										"挑战等级较高的手下，比如深渊食尸鬼或火巨人，是强大的敌人。因此，NPC 平民用一次攻击就杀死这样的手下可能会破坏游戏的真实感。为了让手下更加可信，您可以使用以下规则。 (NPC commoner)",
+										"When a minion's challenge rating is at least 6 higher than an NPC's challenge rating, that NPC's actions and traits affect a minion as if they didn't have the Minion trait, reducing the minion's hit points like a normal creature instead of automatically dropping them to 0.",
+										"这个规则不应适用于玩家角色\u2014\u2014他们是可以一击杀死手下的英雄。(player characters)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Special Traits",
+									"page": 14,
+									"entries": [
+										"许多仆从具有的特征让它们在数量上更强大，但随着他们的盟友被打败而变得不那么强大。例如，一个敌人如果在距离三个或更多哥布林爪牙5英尺内开始他们的回合，必须成功进行一次豁免才能免受爪牙的\"微小刺痛\"特性所造成的伤害。 (goblin lackeys 哥布林爪牙)"
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Challenge Ratings",
+									"page": 14,
+									"entries": [
+										"手下像其他生物一样具有挑战等级。 然而，他们的经验值取决于他们的挑战等级，如手下遭遇建筑表所示。 除了他们的伤害产出，手下特性和他们的经验值之外，手下的统计数据与相同挑战等级的标准生物相当。（Minions have a challenge rating just like any other creature. However, their experience point value depends on their challenge rating, as shown on the Minion Encounter Building table. Aside from their damage output, the Minion trait, and their experience point value, a minion's statistics are on par with a standard creature of the same challenge rating.）",
+										"当规则涉及到挑战等级，比如 {@spell polymorph} 法术或牧师的毁灭不死生物特性时，使用随从列出的挑战等级就像平常一样。例如，一个5级的牧师可以用他们的毁灭不死生物特性影响挑战等级为1/2或更低的不死生物\u2014\u2014因此，这个特性可以影响腐烂僵尸随从（CR 1/4），但不能影响暗影随从（CR 1）。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Minion Bands",
+									"entries": [
+										"每个角色的战斗遭遇中，如果每个角色对应五个以上的爪牙，情况可能会变得十分危险\u2014\u2014角色在自己的回合里剿灭了一波波的爪牙，但随后承受着海啸般的爪牙袭击所带来的大量伤害。虽然很多团队喜欢这种挑战，你也可以选择将爪牙分成不同的小队，根据不同的先攻顺序行动。如果这样做，爪牙只能与同一小队的爪牙一起进行群体攻击。在新一轮开始时，两个或更多小队的爪牙可以重新组合成一个小队，根据组合后小队的最低先攻顺序行动。 (minions)",
+										"如果你把侍从分成一组，请确保区分哪些侍从应该放在一起。在格子战斗中，你可以为每个微型模型使用一个彩色标记。在脑海中的遭遇中，尝试使用\"僵尸矮人\"和\"僵尸精灵\"等群组描述词。 (DND游戏小组规则)"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Jagged Edge Hideaway",
+					"page": 16,
+					"entries": [
+						"{@adventure Jagged Edge Hideaway|JaggedEdge}",
+						{
+							"type": "section",
+							"name": "Jagged Edge Hideaway Stat Blocks",
+							"page": 20,
+							"entries": [
+								"以下状态块出现在巢穴中。",
+								{
+									"type": "inset",
+									"name": "Goblin Tactics",
+									"entries": [
+										"哥布林在有攀爬和躲藏特征的环境中战斗会受益，比如树木和柱子。机警的特质意味着以近战为重点的哥布林可以冲入战斗，攻击，然后与他们的盟友重新集合。它还允许哥布林手下的小喽啰穿过敌人战士，包围他们的施法敌人，利用他们的小刺特质。远程作战的哥布林爬高以获得更好的视线和防御。 (Crafty, Tiny Stabs)",
+										"如果明显处于失利状态，哥布林通常不会固守阵地，拼死战斗到最后一人。相反，他们会逃往未开发的荒野和狭窄的地下通道，利用自身的天赋敏捷性来逃跑并躲避威胁。成功逃脱的哥布林会花时间舔舐伤口，然后聚集更多的盟友，以鲜血和压倒性的数量重新冲回来面对威胁。 (goblins)"
+									]
+								},
+								"{@creature Goblin Assassin|WhereEvilLives}",
+								{
+									"type": "quote",
+									"entries": [
+										"先发制人，出手狠辣，抓住机会，然后消失在阴影中。如果找不到阴影，不用担心。莫基会为你制造一个。 (Morky)"
+									],
+									"by": "Queen Bargnot"
+								},
+								"{@creature Goblin Cursespitter|WhereEvilLives}",
+								"{@creature Goblin Lackey|WhereEvilLives}",
+								"{@creature Goblin Sneak|WhereEvilLives}",
+								"{@creature Goblin Sniper|WhereEvilLives}",
+								{
+									"type": "quote",
+									"entries": [
+										"看，你救了我\u2014\u2014这足以让我为一天的利器。但如果你帮助我阻止巴格诺特，我们就是一生的朋友。(Bargnot)"
+									],
+									"by": "Toblobb"
+								},
+								"{@creature Goblin Spinecleaver|WhereEvilLives}",
+								"{@creature Goblin Underboss|WhereEvilLives}",
+								"{@creature Goblin Warrior|WhereEvilLives}",
+								"{@creature Swarm of Skitterlings|WhereEvilLives}",
+								{
+									"type": "inset",
+									"name": "Skitterling",
+									"entries": [
+										"一只大小如家猫的六足、有翅膀的啮齿类动物，一个滑行者在飞行时用他们的爪子移动，看起来好像在空中匆匆而过。哥布林训练这些宠物向敌人的脸部抓去，因为它们的脚分泌的毒素会导致暂时失明。\n\n(Note: The proper noun \"Skitterling\" remains in English in `()` after the translation.)"
+									]
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"Skitterlings 会成为出色的小守卫，但它们会留下一地的混乱。确保它们被喂饱。如果没有，你就会成为它们制造的下一个混乱。 (Skitterlings)"
+									],
+									"by": "Queen Bargnot"
+								},
+								"{@creature Queen Bargnot|WhereEvilLives}",
+								"{@creature Swarm of Spiders|WhereEvilLives}",
+								"{@creature War Spider|WhereEvilLives}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Hanging Tree",
+					"page": 29,
+					"entries": [
+						"{@adventure Hanging Tree|HangingTree}",
+						{
+							"type": "section",
+							"name": "Hanging Tree Stat Blocks",
+							"page": 35,
+							"entries": [
+								"以下状态块出现在巢穴中。",
+								"{@creature Dohma Raskovar|WhereEvilLives}",
+								"{@creature Human Brawler|WhereEvilLives}",
+								"{@creature Human Guard|WhereEvilLives}",
+								"{@creature Mimic|WhereEvilLives}",
+								{
+									"type": "quote",
+									"entries": [
+										"{@i Just} 那个门把手，对吧？不是{@i door}，就是那个门把手。那个小东西几乎在我意识到发生了什么之前就咬断了我的手。但你能怎么办呢？你不能就这样停止开门。只需要做好意外的准备。我意识到这不是最有用的教训。 {@i Just} the doorknob, right? Not the {@i door}, just that one doorknob. Little shit almost chewed my hand off before I even knew what was happening. But what are you gonna do? You can't just . . . stop opening doors. Just need to expect the unexpected. Not the most useful lesson, I realize."
+									],
+									"by": "The Sun, Senior Pyrokinetic, The Society"
+								},
+								"{@creature Mohler|WhereEvilLives}",
+								"{@creature Mohler Companion|WhereEvilLives}",
+								{
+									"type": "inset",
+									"name": "Mystic Connection: Mohler",
+									"entries": [
+										"根据当地语言习惯，并且像（%num%）这样的文本在翻译中应该仍然输出为（%num%）。\n- 翻译应遵守 dnd 跑团规则，专有名词在翻译后应该保留英文在 `()` 中。 \n\n如果你在玩一个{@class beastheart|BST}并且有一只摩勒伙伴，那么在你获得兽心秘境的连接特性时，你在第9级时获得以下益处：",
+										{
+											"type": "entries",
+											"name": "Earthen Strength",
+											"entries": [
+												"作为一个额外动作，你的四肢变得密集，并且在接下来的1分钟内带着惊人的力量挥舞。在此期间，当你用近战武器攻击一个大小不超过你一个尺寸类别的生物时，这个生物也会被击倒。一旦你使用了这个额外动作，你在完成一次长休息之前无法再次使用它。 (DND Running Group)"
+											]
+										}
+									]
+								},
+								"{@creature Orc Blitzer|WhereEvilLives}",
+								"{@creature Orc Bloodrunner|WhereEvilLives}",
+								"{@creature Orc Conduit|WhereEvilLives}",
+								"{@creature Orc Fury|WhereEvilLives}",
+								{
+									"type": "quote",
+									"entries": [
+										"兽人在外面，而我们在这里。我查了编年史上的围攻建议。\"要在外面\"，它说。太棒了，谢谢。 (兽人在外面，而我们在这里。我查了编年史上的围攻建议。\"要在外面\"，它说。太棒了，谢谢。)"
+									],
+									"by": "Dancer, Chronicler of the Chain of Acheron, Heroes 216\u2013231"
+								},
+								"{@creature Orc Garroter|WhereEvilLives}",
+								"{@creature Orc Godcaller|WhereEvilLives}",
+								"{@creature Orc Rampart|WhereEvilLives}",
+								{
+									"type": "quote",
+									"entries": [
+										"欢迎大家来到吊树。只有当我发现有人在不该去的地方四处闲逛时，事情才会变得暴力起来。在我们拔剑之前，你愿意解释一下为什么你在这里吗？我很乐意在之后听你解释，但是当你的嘴唇在流血时，要理解你就会更加困难了。"
+									],
+									"by": "Dohma Raskovar"
+								},
+								"{@creature Orc Terranova|WhereEvilLives}",
+								"{@creature Scyza|WhereEvilLives}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Shtriga Nonna's Hut",
+					"page": 45,
+					"entries": [
+						"{@adventure Shtriga Nonna's Hut|HagHut}",
+						{
+							"type": "section",
+							"name": "Hut Stat Blocks",
+							"page": 51,
+							"entries": [
+								"以下状态块出现在巢穴中。",
+								"{@creature Chimera|WhereEvilLives}",
+								"{@creature Human Mercenary|WhereEvilLives}",
+								{
+									"type": "quote",
+									"entries": [
+										"老实说，这是一项艰巨的工作。他们的皮很结实，几乎没有花纹，一旦你把所有鳞片都剥掉，基本上就没有多少肉了。但是如果你准备了足够多的他们，然后炖一锅，让它炖上几个小时，你会为自己没早点尝试狗头人而后悔的，我的爱人们。 (kobold)"
+									],
+									"by": "Shtriga Nonna"
+								},
+								"{@creature Kobold Decanus|WhereEvilLives}",
+								"{@creature Shtriga Nonna|WhereEvilLives}",
+								"{@creature Troll|WhereEvilLives}",
+								"{@creature Troll Whelp|WhereEvilLives}",
+								{
+									"type": "quote",
+									"entries": [
+										"巨魔确实是最可爱的走狗。我的宝贝们几乎不需要任何维护。他们的伤口不经过我的治疗就会好转，而且这些巨魔只为食物工作！哦，当涉及到付款时，它们并不挑剔\u2014\u2014只要是肉，亲爱的。如果你真的很聪明，你可以割下一块巨魔的肉来喂另一个，并将更珍贵的肉留给自己。(Trolls, 美人、trollies, 你)"
+									],
+									"by": "Shtriga Nonna"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"adventure": [
+		{
+			"name": "Jagged Edge Hideaway",
+			"id": "JaggedEdge",
+			"source": "WhereEvilLives",
+			"level": {
+				"custom": "Five 2nd-level characters"
+			},
+			"contents": [
+				{
+					"name": "Hideaway Story Hooks"
+				},
+				{
+					"name": "Hideaway Features"
+				},
+				{
+					"name": "Bandits"
+				},
+				{
+					"name": "Resting in the Hideaway"
+				},
+				{
+					"name": "Entering the Hideaway"
+				},
+				{
+					"name": "Jagged Edge Hideaway Areas"
+				},
+				{
+					"name": "Queen Bargnot's Hoard"
+				}
+			],
+			"published": "2023-09-21",
+			"publishedOrder": 1,
+			"storyline": "Where Evil Lives",
+			"group": "homebrew"
+		},
+		{
+			"name": "Hanging Tree",
+			"id": "HangingTree",
+			"source": "WhereEvilLives",
+			"level": {
+				"custom": "Five 3rd-level characters"
+			},
+			"contents": [
+				{
+					"name": "Hanging Tree Story Hooks"
+				},
+				{
+					"name": "Hanging Tree Features"
+				},
+				{
+					"name": "Ivory Throne Mercenaries"
+				},
+				{
+					"name": "Resting in the Hanging Tree"
+				},
+				{
+					"name": "Boiling Oil"
+				},
+				{
+					"name": "Entering the Hanging Tree"
+				},
+				{
+					"name": "Hanging Tree Areas"
+				},
+				{
+					"name": "The Dohma's Hoard"
+				}
+			],
+			"published": "2023-09-21",
+			"publishedOrder": 2,
+			"storyline": "Where Evil Lives",
+			"group": "homebrew"
+		},
+		{
+			"name": "Shtriga Nonna's Hut",
+			"id": "HagHut",
+			"source": "WhereEvilLives",
+			"contents": [
+				{
+					"name": "Hut Story Hooks"
+				},
+				{
+					"name": "Hut Features"
+				},
+				{
+					"name": "Chimera, Trolls, and Cats"
+				},
+				{
+					"name": "Resting in the Hut"
+				},
+				{
+					"name": "Entering the Hut"
+				},
+				{
+					"name": "Shtriga Nonna's Hut Areas"
+				},
+				{
+					"name": "Shtriga Nonna's Hoard"
+				}
+			],
+			"level": {
+				"custom": "Five 4th-level characters"
+			},
+			"published": "2023-09-21",
+			"publishedOrder": 3,
+			"storyline": "Where Evil Lives",
+			"group": "homebrew"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "JaggedEdge",
+			"source": "WhereEvilLives",
+			"data": [
+				{
+					"type": "section",
+					"name": "Jagged Edge Hideaway",
+					"id": "Hideaway Story Hooks",
+					"entries": [
+						"{@i Optimized for Five 2nd-Level Characters}",
+						{
+							"type": "inset",
+							"name": "Content Warning: Spiders",
+							"entries": [
+								"骨噬蜘蛛是一只非常大的蜘蛛！如果你或者你的小组中的任何玩家不喜欢描述蜘蛛嘀嗒的场景，你在叙述有关这个生物的场景时可以不必详细描述。你也可以将战争蜘蛛转变为另一种生物，比如一只具有粘性唾液的战争蜥蜴。一桶蜘蛛也可以作为G9区域的陷阱。你也可以类似地重新构想这个陷阱。 (Marrowgnaw)"
+							]
+						},
+						"巴格诺女王 (Queen Bargnot)，高路之噬 (Scourge of the High Road)，率领锯齿边 (Jagged Edge) 强盗团劫掠商队。在她崛起之前，哥布林们苦苦挣扎，只敢对无组织的袭击中的最弱旅行者下手。当她杀死了自己的老板，并成为了该团的自封女王时，一切都改变了。",
+						"锯齿边缘（Jagged Edges）在高路（High Road）下柔软的土地下挖掘了一个庞大的隧道网络。秘密入口让地精能够进行协调的打击，并在受害者组织起来反抗之前就消失了。锯齿边缘藏身处（Jagged Edge Hideaway）包含了强盗的起居区、宠物、囚犯和不义之财。",
+						{
+							"type": "inset",
+							"name": "Goblins",
+							"entries": [
+								"根据当地语言习惯，并且像(%num%)这样的文本在翻译中仍然应该输出为(%num%)。\n\n翻译需符合DND游戏组规则，专有名词在翻译后应保留英文在`()`内。\n\n与所有人形血统一样，哥布林和哥布林文化有许多不同，每种都有其独特的理念。在他们自己的语言中，他们称自己为{@i rogabrin}，意为\"我们更多\"，哥布林是世界上数量最多的人形生物之一。他们可以在人类居住的每一个环境中找到，并且在许多其他人避开的地方，如深度洞穴系统。",
+								"他们比例适当的长臂和能抓握的脚趾使得他们同样适应树栖环境。 鬼怪舒适地生活在树顶城市和地下环境中，那里有钟乳石、岩石和深谷。 其他人更喜欢居住在多元城市的紧密社区中。 (Goblins)",
+								"那些与冒险英雄交锋的地精是最坏的一群，是被自己的同类所排斥的小偷和杀人犯，被迫居住在社会边缘。 (Dungeons & Dragons, 地精)"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Hideaway Story Hooks",
+							"page": 16,
+							"entries": [
+								"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍然应输出为 (%num%)。\n\n- 翻译需遵守dnd游戏组规则，专有名词应在翻译后保留英文括号内的原文。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Bandit Attack",
+											"entries": [
+												"在角色穿越高路时，由十名{@creature goblin lackey|WhereEvilLives}、一名{@creature goblin sniper|WhereEvilLives}和一名{@creature goblin warrior|WhereEvilLives}组成的锯齿边缘土匪团袭击。如果角色打败了土匪，队伍可以在不需要能力检定的情况下追踪哥布林回到藏身处。"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Friends of Toblobb",
+											"entries": [
+												"其中一名角色与托布洛布（见G7区域）是朋友。托布洛布的母亲，莫巴，联系了这名角色。莫巴知道托布洛布去面对了锯齿边匪徒，但这位年轻的地精从未回来过。母亲请求角色们找到她的孩子，并提供了一个{@item potion of gaseous form}作为将托布洛布带回来的奖励。"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Merchant's Request",
+											"entries": [
+												"Fenrir Whipp，一位人类铜匠，也是\"高路商会\"（High Road Guild of Merchants）的领导者，对女王巴格诺（Queen Bargnot）悬赏捉拿。商人提供500 gp，以换取能够抓获或杀死这位土匪女王的任何冒险者团队。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Hideaway Features",
+					"id": "Hideaway Features",
+					"page": 16,
+					"entries": [
+						"除非另有说明，Jagged Edge Hideaway 的每个区域都具有以下特点：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Ceilings",
+									"entries": [
+										"地面天花板高达15英尺，具有攀爬速度的生物可以在其上倒挂而不需要进行能力检定。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Dirt Walls",
+									"entries": [
+										"一个没有攀爬速度或攀爬装备的生物可以通过成功的DC 12力量（体育）检定来攀爬藏身处的泥土墙壁。如果一个生物在尝试攀爬时检定失败5点或更多，他们在攀爬时会摔落，每摔落10英尺受到{@damage 1d6}钝击伤害。一个生物可以使用铲子或其他挖掘设备在5分钟内挖掘出一个5英尺立方体的墙壁部分。多个生物一起工作可以按比例减少时间。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Doors",
+									"entries": [
+										"重型橡木門高達8英尺。門上沒有鎖。（機翻過來說：重型橡木门高达8英尺。门上没有锁。）"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Illumination",
+									"entries": [
+										"各个区域的天花板上挂着灯笼。盗匪们让灯笼燃烧得很低，只散发出微弱的光芒。 (bandits)"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Noise",
+									"entries": [
+										"隐匿处的实心门和土墙能够减轻声音。在封闭区域内的生物听不见区域外的生物。（dnd running group）"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Secret Doors",
+									"entries": [
+										"每个土匪都知道藏身之处的秘密门的位置。任何具有14或更高的被动感知智力（感知）得分的生物都会发现这些门的轮廓，以及搜索该区域并成功进行DC 14情报（调查）检查的生物。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Bandits",
+					"id": "Bandits",
+					"page": 18,
+					"entries": [
+						"在崎岖边缘的藏匿处，盗匪们一旦注意到入侵者就会发动攻击。妖精利用他们狡猾的特性进行游击战术，并逃避与危险敌人的近战对抗。明显处于劣势的妖精会为了生命而逃跑，并通过最直接的路径逃离藏身之处。 (Bandits in the Jagged Edge hideout attack intruders as soon as the bandits notice them. The goblins make use of their Crafty trait to engage in hit-and-run tactics and escape melee confrontations with dangerous foes. Goblins who are clearly losing flee for their lives and escape the lair by the most direct route.)",
+						"{@b {@i Captured Bandits.}在一次特定难度等级为13的魅力（欺骗、恐吓或说服）检定成功后，角色说服了一个被捕获或被逼到墙角的土匪提供以下信息中的一项：",
+						{
+							"type": "list",
+							"items": [
+								"一个秘密通道的位置，连接地区 G4 到 G7 或地区 G7 到 G9。 (G4, G7, G9)",
+								"在G2区域的陷阱位置。（Dungeons & Dragons）",
+								"在G4地区发现了战争蜘蛛（War Spider）的存在。",
+								"宝藏位于G7区域。",
+								"在G9区域内的女王巴格诺特位置。 (Queen Bargnot)"
+							]
+						},
+						"{@b {@i Defeated Characters.}} 如果土匪打败了角色，那么 Jagged Edges（锯齿边缘） 不会杀死他们。相反，土匪会把他们关在笼子里，并把他们的装备存放在 G7 区域。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Resting in the Hideaway",
+					"id": "Resting in the Hideaway",
+					"page": 18,
+					"entries": [
+						"在符合当地语言习惯的基础上，文本中像(%num%)这样的文本应该在翻译中仍然输出为(%num%)。\n翻译应符合DND（龙与地下城）跑团规则，专有名词在翻译后应在`()`中保留英文。\n\n提供的人物首先要处理该区域的任何敌人，他们可以安全地在G1、G3、G4、G6和G7区域进行短暂休息，以及在G1、G3和G4区域进行长时间休息。否则，如果人物尝试休息，有50%的机会会有四个{@creature goblin warrior|WhereEvilLives}在他们休息过程中打扰他们。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Entering the Hideaway",
+					"id": "Entering the Hideaway",
+					"page": 18,
+					"entries": [
+						"如果角色在寻找高路的入口以进入巢穴，成功通过 DC 12 的智力（调查）检定会揭示其中一个隐藏的、长满青苔的陷阱门，通往 G2 或 G3 区域。或者，成功通过 DC 12 的感知（生存）检定的角色会发现一些哥布林的脚印，从而找到并揭示其中一个陷阱门。",
+						"{@b {@i False Entrance.}哥布林在G1区域设置了一个假的陷阱门，通向一个死胡同陷阱。这个陷阱门故意设计得很容易发现。在高路上搜索并成功进行了DC 8的智力（调查）检查的角色注意到了这个藏得很糟糕的陷阱门。如果队伍还注意到了其他陷阱门，他们会观察到这个门的隐藏远不及其他门，并且周围几乎没有哥布林的足迹。{@b {@i False Entrance.}",
+						"{@b {@i Scouting Party.}} 如果队伍未能找到巢穴的真正入口，也没有从调查G1区域坍塌隧道的任何地精那里得知入口情报，那么具有最高被动感知的角色会发现三个{@creature goblin warrior|WhereEvilLives}和一个{@creature goblin sniper|WhereEvilLives}离开藏身处，通过G2区域的一个活板门。这些地精正在外出寻找要抢劫的商人。 (goblins)"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Jagged Edge Hideaway Areas",
+					"id": "Jagged Edge Hideaway Areas",
+					"page": 18,
+					"entries": [
+						{
+							"type": "table",
+							"rows": [
+								[
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://i.imgur.com/M5ZU1mT.jpeg"
+										},
+										"title": "Jagged Edge Hideaway Map (GM)"
+									},
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://i.imgur.com/PKSwRdq.jpeg"
+										},
+										"title": "Jagged Edge Hideaway Map (Player)"
+									}
+								]
+							]
+						},
+						"以下区域与\"锯齿边避隐地图\"相对应。",
+						{
+							"type": "entries",
+							"name": "G1. Dead-End Tunnel",
+							"page": 18,
+							"entries": [
+								"死胡同隧道具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"入口通向一个缓缓倾斜的隧道。它的土墙用垂直的木梁支撑着。隧道的尽头是一扇沾满泥污的木门。(dnd running group rules)",
+										"{@b (Secret)} 在隧道尽头打开虚假的门会触发一个陷阱，导致隧道坍塌。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Collapsing Tunnel",
+											"page": 18,
+											"entries": [
+												"一个角色成功进行了一次 DC 13 的智力（感知）检定后，注意到一系列不寻常的木板连接着门框和隧道支撑梁。如果一个角色调查了门并成功进行了 DC 13 的智力（调查）检定，他们会确定门后是一堵坚固的土墙。",
+												"如果有生物拉门打开它，门会从门框上摔下来，所有与之连接的木梁都会掉落，导致隧道的天花板坍塌。当隧道坍塌时，每个中型或更小的生物必须进行一次 DC 12 的敏捷豁免检定。未通过豁免检定的生物会受到 7 ({@damage 2d6}) 钝击伤害，并且会变成 {@condition restrained} 处的 3 英尺深的泥土中。通过豁免检定的生物受到一半的伤害且不被限制。一个生物可以使用他们的行动进行一次 DC 10 的力量检定，成功则他们可以使自己或者他们范围内的另一个被这种方式束缚的生物解脱。",
+												"当隧道坍塌时，整个天花板坍塌下来，暴露了隧道的表面。两轮之后，来自入口隧道（G2区域）的三个{@creature goblin warrior|WhereEvilLives}和一个{@creature goblin sniper|WhereEvilLives}到达以进行调查。如果被捕获，他们会自由地透露G2区域或G3区域的入口之一，以及队伍诱导出的其他信息，保留英文的专有名词（）."
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G2. Entrance Tunnels",
+							"page": 18,
+							"entries": [
+								"隐藏处的六个主入口隧道位于高路的两侧。每个隧道具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"\"这个圆形的竖井深入地下30英尺，通向一个有朦胧光线的隧道。它的土墙上布满了小洞。\"",
+										"{@b (Secret)}一个被泥土覆盖的画布掩盖了隧道尽头的坑，与入口井相对。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Entrance Shaft",
+													"page": 18,
+													"entries": [
+														"入口通道没有梯子或其他攀爬手段。成功通过DC 10的智力（生存）检定的角色会意识到通道上的孔洞是由地精的手指和脚趾造成的（Goblin fingers and toes）。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Pit Trap",
+													"page": 18,
+													"entries": [
+														"哥布林通过攀爬隧道天花板和墙壁来避开陷阱坑。一个在智力（调查）检定或感知（智慧）检定中取得至少12点的角色会注意到在陷阱上方的泥土上没有脚印。如果检定结果为14或更高，角色还会注意到覆盖坑洞入口的帆布。",
+														"这个坑口有一个5英尺见方的开口，深度为10英尺。坑底铺满了生锈的铁锅。（pit）",
+														"当一个小型或更大的生物踩在帆布上时，帆布会坍塌，生物会发出咔嗒声落入下方的坑中，受到3 ({@damage 1d6}) 钝击伤害并落地 {@condition prone}。如果有任何生物在相邻区域（G4或G5），它们会听到这个声音并前来调查。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G3. War Spider Entrance",
+							"page": 19,
+							"entries": [
+								"这个宽敞的入口隧道位于高路的一侧。它没有任何光源，具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"这个宽敞的入口竖井向地下延",
+										"\"厚如绳子的蛛网贴满了洞口，一股腐臭的气味从隧道中飘了上来。\""
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Entrance Shaft",
+													"page": 19,
+													"entries": [
+														"角色可以利用蜘蛛网爬下井轴，无需进行检定（见{@adventure \"Climbing Webs\"|JaggedEdge|5|Climbing Webs}）。如果他们试图在爬下井轴时避免接触蜘蛛网，则必须成功进行一次DC 12的敏捷（杂技）检定。检定失败时，生物必须在抓住蜘蛛网和坠落到井轴底部之间做出选择。选择坠落的生物受到10点（{@damage 3d6}）的重击伤害，着陆在{@condition prone}。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Climbing Webs",
+													"page": 19,
+													"entries": [
+														"这些网比 G4 区域中的捕猎网要稀疏得多，生物可以安全地爬上去而不受阻碍。在该区域的 {@creature war spider|WhereEvilLives} Marrowgnaw，需要时利用这些蛛网爬到地面参加战斗。它们让她能够以全速穿过这个区域。 (Marrowgnaw)",
+														"如果有生物触碰或损坏这些蜘蛛网，它会警觉到Marrowgnaw。她会爬到G4区域天花板上，隐藏在黑暗中，等待他们进入该区域时伏击他们。 (Marrowgnaw)"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G4. Marrowgnaw's Cavern",
+							"page": 19,
+							"entries": [
+								"这个洞穴的天花板有 25 英尺高，没有光源。只有当角色有光源或其他方法可以在黑暗中看到时，他们才会注意到以下特征： (D&D running group rules)",
+								{
+									"type": "list",
+									"items": [
+										"\"粘稠的厚重蛛网纵横交错于地面。\"",
+										"\"地上散落着恶臭的人类骨骼和沾满血迹的破布。\" (D&D running group rules)",
+										"{@i (If the characters didn't touch the webs in area G3)} \"一只象大小的、灰色毛发的蜘蛛咯咯地吱吱作响着她的下颚，然后她在裹着染血刀片的腿上顺墙爬行。\" {@i (If the characters didn't touch the webs in area G3)}",
+										"{@b (Secret)}如果角色们触摸了 G3 区域的蜘蛛网，蜘蛛已经隐藏起来，角色们看不到她在墙上蹦来蹦去。",
+										"{@b (Secret)}一个秘密门打开，显露出通往G7区域的通道（见{@adventure \"Hideaway Features\"|JaggedEdge|1}）。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "War Spider",
+													"page": 19,
+													"entries": [
+														"这个洞穴是Marrowgnaw的巢穴，一个{@creature war spider|WhereEvilLives}，这个地方的强盗用囚犯喂养得很好。如果她在人物进入区域之前没有发现他们，他们可以进行一次团队灵巧（潜行）检定，DC 10，如果成功悄悄穿过洞穴（只要他们避免触摸\"黏性网\"中描述的蜘蛛网）。 (Marrowgnaw)",
+														"如果生物触摸或损坏G3或G4区域的蜘蛛网，这将引起骨齿对它们的注意，如果它们尚未见到她，她会隐藏在洞穴天花板上的阴影中。一个有办法在黑暗中看见的角色和被动感知智慧（感知）技能得分达到12或更高的角色会注意到骨齿的隐藏。否则，当她攻击时，角色会感到惊讶。 (Marrowgnaw)",
+														"她开始战斗时使用网喷，然后冲进战团进行咬击攻击。当Marrowgnaw只剩下20点生命值时，她使用践踏尝试逃离G3区域。 (Marrowgnaw)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Sticky Webs",
+													"page": 19,
+													"entries": [
+														"网上都是困难地形。一个生物首次进入网状区域或在那里开始他们的回合时，必须进行一次DC 10的敏捷（体操）检查。如果检查失败，他们的速度将减少至0，直到他们的下一个回合结束，并且骨髓啃噬者会察觉到他们的位置。如果检查成功，他们将避免触摸该区域的蛛网。 (Marrowgnaw)",
+														"对网造成火焰或斩击伤害将摧毁一个5英尺方的部分。(web)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 19,
+													"entries": [
+														"一个角色花费10分钟在房间地板上搜索到一个{@item potion of healing}，三颗金牙（每颗价值2金币），以及一个腰包，里面有210个铜币，55个银币和16个金币。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G5. Living Quarters",
+							"page": 19,
+							"entries": [
+								"这个房间具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"{@i (If a character fell into a pit trap in area G2 that is connected to this area, these goblins may have already engaged the party in combat.)} \"一个身穿袍子的小人和一个肌肉发达的哥布林，扛着比她体积大两倍的斧头，带领着十名土匪进行搏斗练习。\" (dnd running group rules) (bandits)",
+										"\"帐篷和背包整齐地放在洞穴周围的地板上。\" (Bedrolls and backpacks lie neatly on the floor around the cave's perimeter.)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Goblins",
+													"page": 19,
+													"entries": [
+														"Forcan（a {@creature goblin cursespitter|WhereEvilLives}）和Ulgna（a {@creature goblin spinecleaver|WhereEvilLives}）培训一群十名{@creature goblin lackey|WhereEvilLives}。当他们注意到这群冒险者时，Ulgna试图将任何靠近深坑的角色推入陷阱（见G2区域），然后她切换到Greataxe进行攻击。Forcan在向着蠕动窝（G8区域）的方向移动时投掷着诅咒，以激起这些生物的注意；如果可以的话，他会继续前往王座室（G9区域）警告巴格诺女王有入侵者。如果Forcan到达女王那里，她会与Forcan和她的护卫一起在G9区域设下伏击。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 19,
+													"entries": [
+														"房间里的背包总共装有三十六份干粮，五支镀银箭，九十个铜币，二十三个银币和八个金币。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G6. Guard Post",
+							"page": 20,
+							"entries": [
+								"这个房间具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"喧闹的笑声和浓烈的酒味充斥着这个小房间。三个喋喋不休的地精坐在泥土地板上，滚着明亮的绿色骰子，赌着铜币。 (goblins)",
+										"\"A barrel at the north end of the room is labeled, 'Brimshire's Best.'\""
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Goblin Party",
+													"page": 20,
+													"entries": [
+														"摩尔基（一名{@creature goblin assassin|WhereEvilLives}）正在掷骰子赢过诺瑞卡（一名{@creature goblin underboss|WhereEvilLives}）和斯凯尔弗（一名{@creature goblin warrior|WhereEvilLives}）。三人都醉醺醺的，被视为{@condition poisoned}。他们本应该看守监狱大门（G7区域），但他们却全神贯注于游戏、笑话和酒精之中。角色可以通过成功的 DC 11 敏捷（隐秘）检定悄悄溜过他们。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Explosive Alcohol",
+													"page": 20,
+													"entries": [
+														"如果一个角色精通酿酒工具或者在一次DC 15的智力（历史）检定中成功，那么他就会知道《布林郡最佳》是一种具有爆炸潜力的威士忌。如果酒桶或其内容物受到火焰伤害，那么酒桶就会爆炸，距离它10英尺内的每个生物都必须进行一次DC 13的敏捷豁免检定，未通过检定的生物将受到9({@damage 2d8})火焰伤害，通过检定的生物则只受到一半伤害。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 20,
+													"entries": [
+														"地上有27 cp，还有一套用明亮的绿色牙齿雕刻而成的骰子套装，它在黑暗中发光（价值"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G7. Prison and Storage",
+							"page": 20,
+							"entries": [
+								"这个房间具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"三个6英尺高的铁笼子立在房间的北端。两个是空的，但中间的笼子里有一个身穿肮脏衣服的瘦小地精。 (goblin)",
+										"房间的东西两面墙上，堆满了到天花板的板条箱，上面印着各种商人的标记。",
+										"{@b (Secret)} 两扇秘密门打开，显露通往G4和G9区域的通道 ({@adventure \"Hideaway Features\"|JaggedEdge|1})。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Cages",
+													"page": 20,
+													"entries": [
+														"笼子被锁上了，女王巴格诺特（在G9区域）掌握着它们的钥匙。一个角色可以通过成功的DC 18力量检定来强行打开笼子，或者他们可以使用盗贼工具成功的DC 15敏捷检定来撬开笼子的锁。笼子门的AC为19，18点生命值，并对毒素和精神伤害免疫。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Prisoner Toblobb",
+													"page": 20,
+													"entries": [
+														"囚犯是Toblobb，一个地精冒险者。他们不喜欢锯齿边缘，因为这让地精声名狼藉。Toblobb在高路上侦察强盗的藏身之处，但锯齿边缘先找到了Toblobb。强盗计划将Toblobb喂给Marrowgnaw。(Toblobb) (Jagged Edges) (Marrowgnaw)",
+														"Toblobb 在注意到角色时请求释放，表示愿意帮助对抗女王巴格诺特。如果被释放，Toblobb 将成为 {@creature goblin sneak|FleeMortals}，并在他们在巢穴中逗留的期间与团队一起。由GM决定，Toblobb 可以选择加入队伍更长的时间。",
+														"Toblobb知道房间的两个秘密通道，但他们不知道通道通向哪里。 (Toblobb knows about both of the room's secret passages, but they don't know where the passages lead.)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 20,
+													"entries": [
+														"Toblobb的装备在最近的箱子"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G8. Skitterling Den",
+							"page": 20,
+							"entries": [
+								"这个房间具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"{@i (If the skitterlings have already been stirred up to attack the characters, they aren't in this room.)} \"成群的有六条腿的有翼啮齿动物紧贴着泥土天花板，彼此吱吱地交谈着。\" (Winged rodents with six legs)",
+										"臭气熏天的粪便覆盖了地板。 (Foul-smelling guano covers the floor.)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Skitterlings",
+													"page": 20,
+													"entries": [
+														"这里有个{@creature swarm of skitterlings|WhereEvilLives}贴着天花板，渴望暴力。当一个锯齿边强盗进入这个房间时，他们可以利用自己的动作激起滑行虫，然后滑行虫会在整个建筑中寻找入侵者。 (Jagged Edge bandit)",
+														"每个角色进入该区域时，如果蟾蜍蜘蛛处于休息状态，则必须成功通过一次 DC 11 的敏捷（隐匿）检定才能避免打扰它们。或者，角色可以通过成功通过一次 DC 11 的感知（动物驯养）检定来结交这群蟾蜍蜘蛛，如果角色提供食物，则有优势。被结交的群体不会攻击任何角色。 (skitterlings)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Guano",
+													"page": 20,
+													"entries": [
+														"当一个不是\"Jagged Edge bandit\"或\"skitterling\"的生物在这个区域开始他们的回合时，他们必须成功进行一次DC 12的体质豁免才能免于中毒，直到他们下一个回合开始。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "G9. Throne Room",
+							"page": 20,
+							"entries": [
+								"这个房间具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"房间东侧，一个五英尺高的木制平台立在木腿上。上面，一个长着长白发和宝石王冠的哥布林坐在她的王座上。她两侧各站着一个哥布林战士。 (goblin)(goblin warrior)",
+										"在房间的西端，一张桌子上放着一张高路地图，上面用哥布林语写满了笔记。 (Goblin)",
+										"{@b (Secret)} 一个哥布林狙击手藏在平台下的阴影中。 (Goblin Sniper)",
+										"{@b (Secret)} 如果来自 G5 区域的 Forcan 警告了 Queen Bargnot 有入侵者，一个生锈的铁桶里塞满了蜘蛛，放在通往这个区域的门口（见{@adventure \"Spider Bucket\"|JaggedEdge|5|Spider Bucket}），Forcan 藏在平台下面与狙击手一起，并且所有的地精都已准备好在看到入侵者时进行攻击。",
+										"{@b (Secret)}一个秘密门打开，显露出通往G7区域的通道（见{@adventure \"Hideaway Features\"|JaggedEdge|1}）。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Goblins",
+													"page": 20,
+													"entries": [
+														"{@creature Queen Bargnot|WhereEvilLives}被两个{@creature goblin warrior|WhereEvilLives}包围，并在平台下受到隐藏{@creature goblin sniper|WhereEvilLives}的保护（可能还有来自G5区域的{@creature goblin cursespitter|WhereEvilLives}Forcan）。任何具有被动感知智慧（感知）分数达到15或更高的角色都能察觉到所有隐藏的地精。",
+														"巴格诺女王允许她的战士们冲入战团，而她则进行短弓攻击。如果被逼入绝境，她会进行短剑攻击。当她使用她的\"快来这里\"（Get in Here）奖励行动时，哥布林走狗可以从G7区域或G8区域出现，或者从藏身处、天花板上的阴影或平台或桌子下面出现。",
+														"如果她的失败已成定局，巴格诺特女王请求和谈，并提供区域G7内的所有物品以换取她的自由（见{@adventure \"Queen Bargnot's Hoard\"|JaggedEdge|6}）。如果角色们拒绝，她会恢复攻击，奋勇战斗至死。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Platform",
+													"page": 21,
+													"entries": [
+														"中型生物必须挤过平台才能移动。小型和微型生物可以自由地在其下移动。该平台的防御等级为15，有27点生命值，并对毒素和精神伤害免疫。如果平台被摧毁，平台上和下的每个生物将受到3({@damage 1d6}) 钝击伤害。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Spider Bucket",
+													"page": 21,
+													"entries": [
+														"如果Forcan向女王发出警告，一个装满蜘蛛的桶已经被设置在通往G8区域的门上方。第一个通过那扇门进入这个房间的生物会撞倒桶，必须进行一次DC 12的敏捷豁免检定。在未能通过检定的情况下，蜘蛛会向目标涌去，目标会受到2 ({@damage 1d4}) 钝击伤害加上2 ({@damage 1d4}) 穿刺伤害，然后蜘蛛会匆匆逃走。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Map",
+													"page": 21,
+													"entries": [
+														"桌子上的地图记录了以前和即将发生的抢劫事件。角色可以利用这张地图将货物从G7区域归还给它们的主人。在GM的决定下，地图可能标有其他生物的巢穴。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 21,
+													"entries": [
+														"巴格诺特女王佩戴着一顶镶嵌着小月光石的银王冠（价值125 gp），手持着由一个半身人头骨制成的高脚杯（价值70 gp）。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Queen Bargnot's Hoard",
+					"page": 21,
+					"entries": [
+						"巴格诺特女王的宝藏被装在她巢穴的G7区域的箱子里。她的宝藏是从她抢劫的商人那里偷来的，她并不完全意识到其中的内容。 (Queen Bargnot)",
+						"宝藏中包含以下物品：",
+						{
+							"type": "list",
+							"items": [
+								"{@item Bag of holding}包含了一个{@item potion of climbing}，一个{@item spell scroll}的{@spell cure wounds}，一个{@item spell scroll}的{@spell lesser restoration}，和一个{@item glowing poison recipe|WhereEvilLives}。",
+								"{@item Monocle of Secrets|WhereEvilLives}",
+								"5支银箭",
+								"250磅的面粉（价值5 gp）",
+								"10磅的姜（价值10 gp）",
+								"200 磅盐（价值 10 gp）",
+								"5磅丁香（价值15 gp）",
+								"200磅的铁条（价值20 gp）",
+								"3磅藏红花（价值45 gp）",
+								"10平方码的亚麻（价值50金币）",
+								"符合当地语言习惯，并且像（%num%）这样的文本在翻译中仍应输出为（%num%）。\n\n根据dnd running group规则进行翻译，专有名词在翻译后应在`()`中保留英文。\n\n193 cp，110 sp和83 gp"
+							]
+						},
+						{
+							"type": "inset",
+							"name": "Returning the Hoard",
+							"entries": [
+								"如果角色们希望把尖刃匪徒偷走的物品归还给它们的合法主人，拥有面粉、盐、姜、丁香、铁、藏红花和亚麻布的商人将给予角色们奖励，金额等于物品价值的一半，或者如果角色们击败了女王巴格诺特，将给予物品完整价值的奖励。魔法物品、毒药配方、镀银箭和硬币的主人都被尖刃匪徒杀害了，因此角色们可以自行留下这些物品。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "HangingTree",
+			"source": "WhereEvilLives",
+			"data": [
+				{
+					"type": "section",
+					"name": "Hanging Tree",
+					"id": "Hanging Tree Story Hooks",
+					"page": 29,
+					"entries": [
+						"{@i Optimized for Five 3rd-Level Characters}",
+						"Dohma Raskovar 是象牙王座一系列长期领导人\u2014\u2014被称为 dohmas\u2014\u2014的最新一位兽人领袖。在 Raskovar 的领导下，王座已经壮大到一百多人，并且现在他们同时处理多份合同，偶尔联合起来在战斗中作为一个整体单元战斗。 (Dohma Raskovar 是象牙王座一系列长期领导人\u2014\u2014被称为 dohmas\u2014\u2014的最新一位兽人领袖。在 Raskovar 的领导下，王座已经壮大到一百多人，并且现在他们同时处理多份合同，偶尔联合起来在战斗中作为一个整体单元战斗。)",
+						"Raskovar从Hanging Tree经营王座，他的酒馆，他在那里扮演酒吧老板的角色。在这里，了解情况的客户可以通过点一杯滚烫的油（boiling oil）来悄悄表示他们想要雇佣赏金猎人、刺客或者小偷。这是一种普通的威士忌和朗姆酒的混合饮料，没有出现在任何菜单上。一旦点了这种饮料，Raskovar本人会出现在桌旁，准备做生意。他自豪于保持政治中立，平等地对待所有潜在客户，这让他的一些客户感到不满。 (Hanging Tree) (boiling oil)",
+						"悬树酒馆下隐藏着象牙王座的真正总部，一个拥有致命防御措施和华丽装",
+						{
+							"type": "inset",
+							"name": "Orcs",
+							"entries": [
+								"在一个已经失传的语言中，词语oruk\u2014\u2014\"血火\"\u2014\u2014描述了兽人在他们极限挑战时发出的发光的外观。虽然兽人用自己的语言称呼彼此为kanin，但他们也以\"orc\"自豪地对待，特别是在与其他种族打交道时。（oruk）",
+								"兽人历史横跨世界各地和所有年代。 他们定居在村庄和城市中，无论是炎热还是寒冷的气候，高山之上或深入地下。 大多数兽人生活在多样化的人形社会中，尽管少数人隐居在热带地区。（Orc）",
+								"尽管兽人与其他种族一样不太可能挡住冒险者的路，但那些确实这样做的人扮演着与其他人形生物相同的角色：雇佣兵，赏金猎人，绞索者，卫兵，邪教徒，以及腐败的国王（corrupt kings）。"
+							]
+						},
+						{
+							"type": "section",
+							"name": "Hanging Tree Story Hooks",
+							"page": 29,
+							"entries": [
+								"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍然应输出为 (%num%)。\n\n- 翻译需遵守dnd游戏组规则，专有名词应在翻译后保留英文括号内的原文。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Disgraced Soldier",
+											"entries": [
+												"为了恢复他们家族的荣誉，一位名叫艾尔扎尔的老兽人士兵提议给予角色们1,000金币以夺回他们的家族纹章，这个纹章是在许多年前艾尔扎尔加入象牙王座时被夺走的。纹章位于拉斯科瓦尔的宝藏库（区域O9）内的悬树内。 (Erzal)"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Shadowy Patron",
+											"entries": [
+												"神秘的资助者通过邮件联系角色，提议给予他们 {@item +1 longsword}，如果他们杀死或迫使 Raskovar 放弃象牙王座的王位。该资助者是 Orvakar，在翻译后应保留英文括号中的 `()`。"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Unearned Debt",
+											"entries": [
+												"一个死去的人类雇佣兵的儿子，Torvend，被迫加入象牙王座来偿还他父亲的债务。渴望自由，他请求角色们找到并摧毁他父亲的合同，这份合同被锁在悬树的金库（区域O9）里。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Hanging Tree Features",
+					"id": "Hanging Tree Features",
+					"page": 29,
+					"entries": [
+						"除非另有说明，悬挂树下总部的每个区域都具有以下特点：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Ceilings",
+									"entries": [
+										"石头天花板高15英尺。老旧破碎的刀"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Illumination",
+									"entries": [
+										"腰部高的象牙灯笼立在每个区域的角落里，用明亮的白光填满了整个地方。所有灯光可以同时通过大声说出一个所有象牙王座成员都知道的命令词来关闭、变红或恢复成白色：nict（暗）、orr（红）和ior（白）。将灯光变成红色会向整个建筑群发出入侵者警报（见{@adventure \"Ivory Throne Mercenaries\"|HangingTree|2}），并促使多玛·拉斯科瓦尔在酒馆（区域 O1）使用魔法摇鼓将其传送至多玛尼（区域 O8）。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Nothing Bolted Down",
+									"entries": [
+										"一只生物可以作为一个奖励动作翻转范围内的桌子或灯笼，或者将其推开多达10英尺的水平距离。翻转的桌子为中等大小及更小的生物提供半掩护。路径中的中等大小或更小的生物必须在推动物体的过程中通过一次DC 12的敏捷豁免检定，否则将被击倒。 (D&D)"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Ivory Throne Mercenaries",
+					"id": "Ivory Throne Mercenaries",
+					"page": 29,
+					"entries": [
+						"符合当地语言习惯，并且像(%num%)这样的文本在翻译中仍然应该输出为(%num%)。\n- 翻译遵守dnd游戏组规则，专有名词在翻译后应该保留英文括号内的内容。 \n\n在拉斯科瓦尔（Raskovar）大部分象牙王座（Ivory Throne）业务都在酒馆进行，他的雇佣兵则在下方总部处理更隐秘的事务。除非另有说明，雇佣兵的行动如下：",
+						{
+							"type": "list",
+							"items": [
+								"如果总部的灯光是白色的，雇佣兵会质疑没有参与可疑活动的入侵者。通过一次 DC 14 的魅力（欺骗）检定成功的角色可以说服该区域的雇佣兵，他们有合法的理由在巢穴中。否则，雇佣兵会攻击入侵者，并通过将灯光变红来发出警报。",
+								"如果总部的灯暗或是红色，或者雇佣兵发现入侵者进行可疑行为（例如撬锁或偷窃），则会立即攻击入侵者，以符合当地语言习惯，而且像（%num%）这样的文本在翻译时应保持为（%num%）。"
+							]
+						},
+						"在战斗中，雇佣兵利用环境优势（见{@adventure \"Hanging Tree Features\"|HangingTree|1}），制造掩护，从天花板上打落武器，并将任何入侵者击倒，然后与其正面交锋。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Sharing Information",
+									"page": 30,
+									"entries": [
+										"根据当地语言习惯，并且像(%num%)这样的文本在翻译中应该仍然输出为(%num%)。\n\n根据DND跑团规则进行翻译，专有名词在翻译后应在`()`中保留英文。\n\n一个成功通过DC 16的魅力（威吓或劝说）检定的角色说服了一名被俘的雇佣兵或者一名相信角色受到欢迎的雇佣兵，透露以下信息之一：",
+										{
+											"type": "list",
+											"items": [
+												"Dohmain的钥匙位置在拘留区（区域O4）旁的拿着。",
+												"绿色条纹的钥匙位于拘留室（O4 区域）旁边，事实上是个模仿者。",
+												"狭窄走廊（区域O3）墙壁中隐藏着的兽人位置和多玛之门（区域O7）的喷泉。",
+												"餵料室（區域O6）的陷阱觸發器。",
+												"灯笼的指令词。 (The command words for the lanterns.)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Defeated Characters",
+									"page": 30,
+									"entries": [
+										"如果雇佣兵打败角色，他们会试图活捉他们进行审讯和赎金。除了一个角色外，其他所有角色都会在O4区的拘留室里醒来。剩下的角色会在O1区的酒吧里醒来，与拉斯科瓦尔面对面，准备讨论他们的安全条件。所有角色的装备都被存放在O5区的储藏单元中。 (Raskovar)"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Resting in the Hanging Tree",
+					"id": "Resting in the Hanging Tree",
+					"page": 30,
+					"entries": [
+						"如果树上的绞刑台没有警戒，角色可以在任何地方短暂休息，前提是他们处理了该区域的任何敌人。他们也可以在储藏室短暂或长时间休息而不会发生意外。否则，如果角色试图休息，有 80% 的几率两个 (Raskovar) 找到他们在休息 5 分钟后。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Boiling Oil",
+					"id": "Boiling Oil",
+					"page": 30,
+					"entries": [
+						"如果角色知道悬挂树是象牙王座的总部，他们可以询问雇佣兵团的成员或他们的客户，并了解在酒吧点一杯热油（一种饮料）会让你与多玛·拉斯科瓦尔见面。 (Hanging Tree 悬挂树) (Ivory Throne 象牙王座) (Dohma Raskovar 多玛·拉斯科瓦尔)"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Entering the Hanging Tree",
+					"id": "Entering the Hanging Tree",
+					"page": 30,
+					"entries": [
+						"悬挂的树在任何时候都开放。角色可以通过前门进入酒馆（O1 区域）。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Hanging Tree Areas",
+					"id": "Hanging Tree Areas",
+					"page": 30,
+					"entries": [
+						{
+							"type": "table",
+							"rows": [
+								[
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://i.imgur.com/cKyvpdn.jpeg"
+										},
+										"title": "Hanging Tree Map (GM)"
+									},
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://i.imgur.com/Ps7kDu3.jpeg"
+										},
+										"title": "Hanging Tree Map (Player)"
+									}
+								]
+							]
+						},
+						"以下区域与《悬树地图》上的标记相对应。",
+						{
+							"type": "entries",
+							"name": "O1. Tavern",
+							"page": 30,
+							"entries": [
+								"除非Raskovar已经清理了这个地方以进行私人会议，否则酒馆会很忙碌。它具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"酒馆里充满了喧闹的谈话声和杯子碰撞的声音。一名人类和一名兽人保安在房间里巡视，寻找麻烦，而一名疲惫的兽人酒保则在倒酒。 (Human) 和 (orc) (bouncer)扫描 (room) 寻找麻烦，而一名疲惫的 (orc bartender) 倒酒。",
+										"\"挂满风景和肖像的大幅卷轴几乎覆盖了墙壁的每一寸，每当前门开启或关闭时，它们轻轻摇晃。\" (Large scrolls illustrated with landscapes and portraits line nearly every inch of the walls, swaying gently whenever the front doors open and close.)",
+										"{@b (Secret)} 后面的一幅挂轴隐藏着一个门户，通向会议区域（O2区）。",
+										"{@b (Secret)}隐藏在吧台后面的象牙摇晃器会将摇动它的人传送到 Dohmain（O8 区域）内的酒吧。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Raskovar",
+											"page": 30,
+											"entries": [
+												"{@creature Dohma Raskovar|WhereEvilLives} 管理着吧台，并与客人友好交谈，他们认识他叫Roscoe（罗斯科）。他与任何点酒的角色都会进行礼貌的交谈，询问他们来自哪里，以及是什么带他们来到了悬挂树。如果被问及象牙王座，Raskovar（拉斯科瓦尔）声称对这支雇佣兵团一无所知。他回避个人问题，称自己只是一家酒馆的老板。一名成功进行 DC 16 的智力（洞察）检定的角色会知道 Raskovar（拉斯科瓦尔）在撒谎。",
+												"如果角色点了一份热油，Raskovar 的态度会有所改变。他邀请他们坐在桌旁，并加入他们，介绍自己为 Dohma Raskovar，询问象牙王座可以提供什么服务。对于冒险者，他愿意点一次刺杀或小规模战斗\u2014\u2014只要他们能够回报他一次。如果他怀疑角色对他有恶意，他会请求保安的帮助，并使用吧台后面的摇篮器传送到 Dohmain 区域 (O8)。 (Raskovar)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Bouncers",
+											"page": 30,
+											"entries": [
+												"在房间两端，一个{@creature orc rampart|WhereEvilLives}和一个{@creature human brawler|WhereEvilLives}充当保镖。如果发生斗殴，第二位{@creature orc rampart|WhereEvilLives}假扮成顾客从酒吧座位上站起来，帮助护送混混出去。角色可以通过成功的DC 13智力（洞察）检定来认出这位顾客已经准备好进行战斗。",
+												"如果一个角色搜查房间或者有其他可疑行为，他们必须通过 DC 13 的敏捷（隐蔽）或者魅力（欺瞒）检定，否则将被保安要求离开。如果一个角色拒绝离开，保安们会进行攻击。(D&D 运行团规则)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Patrons",
+											"page": 30,
+											"entries": [
+												"酒吧里有十二位非战斗人员顾客。如果发生打斗，他们会逃离酒馆。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Portal",
+											"page": 30,
+											"entries": [
+												"一个角色在酒馆里搜寻并在一次DC 13的智力（调查）检定中成功时，会注意到南墙上的卷轴后面有一个传送门，卷轴上画着一只有红条纹的兽人正面对着一支无面骑士的军队。使用 {@spell detect magic} 法术可以揭示传送门周围的传送魔法光环。如果角色们在酒馆里停留了10分钟却没有注意到传送门，具有最高被动感知（察觉）智力分数的角色会注意到两个 {@creature orc blitzer|WhereEvilLives} 静静地从卷轴后面的传送门滑出来加入了保镖。传送门通往会议区域（区域O2）。角色们可以通过在一次DC 13的团体敏捷（潜行）或魅力（欺骗）检定中成功而悄悄地潜入而不被察觉。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Shaker",
+											"page": 31,
+											"entries": [
+												"一个角色在酒吧后面注意到象牙调料瓶，通过成功的DC 15感知（智力）检查。使用{@spell detect magic}咒语揭示了调料瓶具有传送魔法的光环。当一个生物使用奖励动作摇动物品时，它们会被传送到Dohmain（O8区域）的酒吧后面。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O2. Meeting Area",
+							"page": 32,
+							"entries": [
+								"这个地区具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"一道石梯从一个漩涡般的绿色传送门通向一个宽敞、庄严的会议室，然后继续通向复合体的另一层。 (D&D游戏小组规则)",
+										"两张橡木桌子相交在一张红色地毯的中央。六个兽人和五个人类围绕着桌子打牌。(Six orcs and five humans)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Mercenaries",
+											"page": 32,
+											"entries": [
+												"布伦萨（一个{@creature orc godcaller|WhereEvilLives}）、五个{@creature orc blitzer|WhereEvilLives}和五个{@creature human guard|WhereEvilLives} 正沉浸在他们的游戏中。如果他们注意到角色，布伦萨会质询他们。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O3. Narrow Hallway",
+							"page": 32,
+							"entries": [
+								"这条昏暗的走廊具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"这个狭窄的走廊有木板墙。 (wood-paneled walls)",
+										"{@b (Secret)}东墙上的秘密门藏着一只兽人，位于墙后的狭窄房间里。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Secret Room",
+													"page": 32,
+													"entries": [
+														"一个具有被动智慧（感知）分数为16或更高或者在DC 16的智力（调查）检定中成功的角色会注意到墙底部有一个2英尺边长的方形门的轮廓。中等体型生物必须挤过入口。 (Perception) (Investigation)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Garroter",
+													"page": 32,
+													"entries": [
+														"雅尔，一名兽人绞杀者，隐藏在秘密房间里。只有当角色们进入秘密房间并且基地处于警戒状态时，她才会攻击他们。否则，雅尔会等待直到角色们离开区域，然后跟踪着他们。如果她的观察让她相信他们是入侵者，雅尔会在下一次战斗爆发时或者角色们进入被雇佣兵人数占优的区域时发动攻击。一个拥有16或更高的被动感知（智慧）得分的角色会注意到雅尔跟踪着他们。 (Yarl)"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O4. Holding Cell",
+							"page": 32,
+							"entries": [
+								"这个区域天花板上没有刀片嵌入（见{@adventure \"Hanging Tree Features\"|HangingTree|1}）。它具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"这个房间的西侧是一个长长的铁栏围成的牢房。牢房的门在门轴上懒洋洋地摇晃着。 (Dungeons & Dragons 跑团规则)",
+										"在房间的东墙上挂着两把沉重的青铜钥匙，每把都超过两英尺长。每把钥匙的环上都有一种彩色图案：一把带绿色条纹，另一把带蓝色斑点。(room)",
+										"{@b (Secret)} 这个绿带钥匙是个拟态兽。 (The green-banded key is a mimic.)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Cell Door",
+													"page": 32,
+													"entries": [
+														"如果角色被关押在牢房里（见{@adventure \"Ivory Throne Mercenaries\"|HangingTree|2}），门被关闭并上锁。锁可以用成功的DC 18敏捷检定使用盗贼工具来撬开。没有盗贼工具的角色仍然可以用小针或类似物品尝试检定，但会带来劣势。牢房的铁栅可以用成功的DC 18力量检定弯开。牢门的AC为19，27生命值，对毒素和精神伤害免疫。攻击门或弯曲铁栅会导致模仿兽进行反击。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Keys",
+													"page": 32,
+													"entries": [
+														"蓝色斑点的钥匙打开了多明地区（O8）的门。另一把钥匙是一只经过训练的{@creature mimic|WhereEvilLives},如果触摸到会攻击的生物。模仿者战斗直到生命值降至15点或更少，然后逃走。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O5. Storeroom",
+							"page": 33,
+							"entries": [
+								"储藏室本身没有光源，走廊的双门被锁上了。一个角色可以用盗贼工具进行成功的DC 16敏捷检定来撬锁，或者用成功的DC 16力量检定强行打开门。在多马的门（区域O7）旁边的兽人哨塔持有这些门的钥匙。每扇门的防御等级为17，27点生命值，并且免疫毒素和精神伤害。",
+								"这个地区具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"这个房间乱糟糟的。被摧毁的板条箱、农产品和香料的残余物被涂抹在地板上，地板上还有几个浅浅的坑。 (D&D running group rules)",
+										"一个兴奋、呜咽的、胡萝卜泥覆盖的鼹鼠样的小动物从一个洞中跳出来，嗅着空气。 (mole-like critter)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Mohler",
+													"page": 33,
+													"entries": [
+														"{@creature mohler|WhereEvilLives}来自饲料间（O6区）的一个人被意外地锁在仓库里。它们不会攻击角色。在GM的裁定下，如果一个角色与摩尔（Mohler）分享食物和善意，这个野兽可能会跟随他们作为一个{@creature mohler companion|WhereEvilLives}。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 33,
+													"entries": [
+														"仓库里只剩下一个储物箱没有损坏。它里面装有八个黏土瓶装的奎宁水（每个价值 1 铜币），四个黏土瓶装的姜汁汽水（每个价值 2 铜币），还有两个{@item potion of healing|DMG|potions of healing}。 (DND)"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O6. Feed Room",
+							"page": 33,
+							"entries": [
+								"这个区域天花板上没有刀片嵌入（见{@adventure \"Hanging Tree Features\"|HangingTree|1}）。它具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"\"几只鼹鼠般的生物在这个房间的泥地上跳来跳去，它们在房间中央的石料饲料槽周围追逐彼此。\" (Dungeons & Dragons 运行小组规则，`room`保持英文名)",
+										"三只兽人从喂食槽的内部观察野兽。 (Three orcs watch the beasts from the inner portion of the feeding trough.)",
+										"{@b (Secret)} 波谷被魔法陷阱困住。 {@b (Secret)}"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Mohlers",
+													"page": 33,
+													"entries": [
+														"三个 {@creature mohler|WhereEvilLives} 在泥土中玩耍。如果兽人袭击，莫勒斯加入战斗。莫勒斯与兽人战斗直到他们被击败，然后退回泥土中。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Orcs",
+													"page": 33,
+													"entries": [
+														"纳兰（一个{@creature orc terranova|WhereEvilLives}）和两个{@creature orc fury|WhereEvilLives|orc furies} 观察着摩尔勒家族的比赛，试图确定是否有人失踪。如果战斗在这里爆发，兽人会试图引诱角色走进槽环内，触发陷阱。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Scyza Trap",
+													"page": 33,
+													"entries": [
+														"如果除了摩勒或象牙宝座雇佣兵之外的生物移入槽内的圆圈，位于槽中心的一个直径为10英尺的传送门连接到地下室（区域O9）。这允许守卫地下室的斯奇扎（scyza）仅伸出头部并攻击入侵者。传送门保持打开状态，直到触发生物死亡或不再位于饲料室内。随着传送门关闭，斯奇扎将他的头部无害地收回。",
+														"{@spell detect magic} 法术揭示了降灵魔法的槽的光环。每个槽上都雕刻有一个1英寸见方的符号，它保持着陷阱的魔法。成功通过DC 14的智力（调查）检定的角色会找到符号，而成功通过DC 16的智力（奥术）检定的角色会知道符号控制着房间中的陷阱。用工具或武器划掉其中一个符号作为一个动作永久地停用了陷阱及其魔法。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O7. Dohma's Door",
+							"page": 33,
+							"entries": [
+								"这个地区具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"一个石制喷泉不断地向上喷水，形成高大的圆柱形水幕，遮挡着它的中心。 (stone fountain 不做翻译，在括号中保留英文)",
+										"\"后墙上有两扇华丽的象牙门延伸至天花板，两侧是比整个建筑内其他灯笼高两倍的灯笼。\" (D&D跑团规则和专有名词保留英文在`()`中的翻译)",
+										"两个警觉的兽人像雕像一样站在门前，专心阻止未经邀请的访客。(orcs)",
+										"{@b (Secret)} 一个兽人传导隐藏在喷泉中。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Orcs",
+													"page": 33,
+													"entries": [
+														"凯夫利克（Kevlic）和利维（Liway），两个{@creature orc rampart|WhereEvilLives}，不允许任何生物在没有多玛（dohma）的允许下靠近门。他们无法通过世俗手段被说服。他们会先警告，然后攻击那些坚持要见多玛但没有预约的生物。隐藏的兽人导管在麻烦发生后才会出手。一个具有16或更高被动感知（智慧）得分的角色可以通过落水帘察觉到隐藏的导管。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Ivory Doors",
+													"page": 33,
+													"entries": [
+														"Dohmain（O8 区域）的门被锁上了。角色可以使用盗贼工具进行成功的 DC 22 敏捷检定来撬开锁，或者使用成功的 DC 20 力量检定强行打开门。每扇门的 AC 为 17，有 54 点生命值，并且对毒素和精神伤害免疫。这些门的钥匙挂在拘留室（O4 区域）的墙上。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Keys",
+													"page": 33,
+													"entries": [
+														"一个城墙上有一个锁和一个钥匙，用于区域 O4 的拘留室。另一个城墙上有一个储藏室的钥匙（区域 O5）。"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 33,
+													"entries": [
+														"喷泉的水从其中心的 {@item decanter of endless water} 流出。 一个生物可以在行动中将瓶子从喷泉上取下。 所有的雇佣兵都知道这个瓶子是多玛的珍贵物品，并攻击他们注意到携带它的任何生物。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O8. The Dohmain",
+							"page": 33,
+							"entries": [
+								"这个房间，由象牙王座的成员称为多梅因（Dohmain），具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"\"十几个兽人坐在桌子旁和一长条吧台上碰杯畅饮。\" (Translation)\n\n(A dozen orcs sitting at tables and a long bar clink glasses and make merry.)",
+										"\"一扇巨大的铁门占据了东墙。在它前面站着一把雕刻成象牙的王座。\" (Dungeons & Dragons)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Mercenaries",
+													"page": 33,
+													"entries": [
+														"十个{@creature orc blitzer|WhereEvilLives}和两个{@creature orc bloodrunner|WhereEvilLives}立即袭击进入房间的入侵者。他们还启动红灯（参见{@adventure \"Hanging Tree Features\"|HangingTree|1}）召唤{@creature Dohma Raskovar|WhereEvilLives}；一轮后，他使用酒馆（区域O1）中的象牙摇杯进行传送，并加入战斗。当朵玛使用他的增援行动时，被召唤的闪电者通过朵玛门下的楼梯抵达（区域O7）。",
+														"如果 Raskovar 被削减到 20 点或更少的生命值，并且没有使用 Dohma Rally 的次数，他会提出与角色交涉，告诉他们坐在私人酒吧里，而他准备饮料并与他们谈判。这名 dohma 愿意在他的权力范围内为角色提供任何东西，如果这意味着能够保住自己的性命的话。(Raskovar)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 34,
+													"entries": [
+														"Raskovar戴着一个瑕疵的象牙签名戒指（价值200金币），上面刻着\"Dohma\"这个词。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "O9. Vault",
+							"page": 34,
+							"entries": [
+								"若角色从多梅因（区域 O8）接近保险库门，则能听到门另一边的沉重呼吸声。保险库门由外侧的重闩紧闭，但没有锁。能够触及重闩的生物可以使用一个动作进行一次 DC 16 的力量（运动）检定，成功时将闩翻转。一个大型或更大的生物，或者两个小型或中型生物一起工作的情况下，自动成功通过此检定。",
+								"库房的天花板高25英尺，上面没有卡住的刀片（参见{@adventure \"Hanging Tree Features\"|HangingTree|1}）。它具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"\"这个区域大部分被一个庞大的稻草巢占据，里面有一只高达20英尺的爬行鸟。\" (reptilian bird)",
+										"\"两排石架从墙壁上突出，上面摆满了宝藏和硬币。\" (Treasure and coins will remain untranslated, and \"Two rows of stone shelves\" will become \"两排石架\".)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"entries": [
+												{
+													"type": "entries",
+													"name": "Scyza",
+													"page": 34,
+													"entries": [
+														"地窖由 Horanus，一个 scyza 守卫。 如果角色没有通过饲料间（区域 O6）的陷阱遇到他，他会沉睡着。 进入地窖的角色必须成功进行 DC 8 的敏捷（潜行）检定，否则会唤醒 Horanus。 如果他听到比低声交谈更大声的噪音，被推挤，或者闻到食物的气味，他也会醒来。 (Horanus, scyza)",
+														"如果Horanus醒来，角色们没有伤害他或他在场的任何象牙王座雇佣兵，角色们被发现后有1轮时间来安抚他，否则他会攻击，战斗至死。成功进行DC 14的智力（动物处理）检定的角色可以使scyza保持冷静。如果角色给他喂肉，这个检定将获得优势。 (Horanus)"
+													]
+												},
+												{
+													"type": "entries",
+													"name": "Treasure",
+													"page": 34,
+													"entries": [
+														"货架上放置着多玛的资产。查看{@adventure \"The Dohma's Hoard\"|HangingTree|7}获取更多信息。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "The Dohma's Hoard",
+					"id": "The Dohma's Hoard",
+					"page": 34,
+					"entries": [
+						"象牙王座最珍贵的资产保留在他们的保险库（O9区）。 从金钱、情感礼物、抵押品到查获的资产，一切都被仔细组织，以便轻松取用。",
+						"宝藏中包含以下物品：",
+						{
+							"type": "list",
+							"items": [
+								"{@item Psi lenses|WhereEvilLives}",
+								"2{@item potion of water breathing|DMG|potions of water breathing}包含在一个长满珊瑚的袋子里，附有一张纸条，上面写着：\"如果你能够触及它，它就是你的。\" (coral-encrusted pouch)",
+								"房产证（见下文）",
+								"古旧的玩具，形似紫色的狗头人（价值5铜币）",
+								"拉斯科瓦尔(Raskovar)在优质羊皮纸上挥舞的粗糙蜡笔图案（价值5铜币）",
+								"酒桶上刻着兽人名字（价值25金币）",
+								"5颗微小的钻石（价值每颗25 gp）",
+								"铜矮人头骨在被看到时尖叫（价值40 gp）",
+								"挂着树的画框，前面站着两只兽人（价值100金币）",
+								"107铜币，512银币和456金币 (107 cp, 512 sp, and 456 gp)"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "House Deed",
+							"page": 34,
+							"entries": [
+								"这份契约赋予您在GM选择的地点一栋房屋的所有权。这座房屋包括以下房间：",
+								{
+									"type": "list",
+									"items": [
+										"五间卧室，每间配有一座壁炉，一张床，一个床头柜和一个储物柜。",
+										"一个有烤箱、灶台和两张桌子的厨房。 (kitchen)",
+										"一个带壁炉、桌子和八把椅子的用餐区。 (dnd running group规则)"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "HagHut",
+			"source": "WhereEvilLives",
+			"data": [
+				{
+					"type": "section",
+					"name": "Shtriga Nonna's Hut",
+					"id": "Hut Story Hooks",
+					"page": 45,
+					"entries": [
+						"{@i Optimized for Five 4th-Level Characters}",
+						{
+							"type": "inset",
+							"name": "Content Warning: Pet Violence and Cannibalism",
+							"entries": [
+								"如果你的团队不想在Shtriga Nonna处于猫形态时进行攻击，你可以改变《猫灵性》和《猫幸福》的描述，将她描述成一只四腿的恶魔而不是猫。如果你不希望在游戏中出现食人行为，Shtriga Nonna可以捕捉人类，并迫使他们做出糟糕的交易以换取自由，而不是杀害和吃掉她的受害者。 (Shtriga Nonna)"
+							]
+						},
+						"莎特里加·娜娜（Shtriga Nonna）热爱猫咪、烹饪，除此之外几乎没什么爱好。这位古老的巫婆居住在雪山之巅，已经有许多年头，甚至超越了大多数其他巫婆的记忆。莎特里加·娜娜在她的种族中是独一无二的\u2014\u2014她不属于森林、黑夜或海洋，这位巫婆坚称她不需要姐妹......至少，不再需要了。 (Shtriga Nonna)",
+						"传言",
+						"Shtriga Nonna 可以看起来像任何人，因此她的受害者害怕每个人。许多人发誓她是一个巨大的女人，手爪像生锈的铁。其他人说她是一只偷走睡者灵魂的猫，有些人把她描述成一个美丽的女人做着嫩肉馅饼的料理师。 (Shtriga Nonna)",
+						"巫婆住在一个移动的小屋里，它用巨大的猫爪在雪山上行走。这个舒适的小木屋外观诱人，尤其是它的门廊，她在那里与那些爬山来交易的绝望灵魂喝茶。她的家内部比外表暗示的要大得多，背叛了她的真实本质。这是一个杂乱、肮脏的地方，有邪恶的猫和残酷的切割肉的工具。 (hag)",
+						{
+							"type": "section",
+							"name": "Hut Story Hooks",
+							"page": 45,
+							"entries": [
+								"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍然应输出为 (%num%)。\n\n- 翻译需遵守dnd游戏组规则，专有名词应在翻译后保留英文括号内的原文。",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Cat Maiden",
+											"entries": [
+												"人物遇到 Radlena，一只斑纹猫，她在每个满月都会变成一个半身人女人。Radlena 是 Shtriga Nonna 强大咒语的受害者，只有巫婆的死亡才能解除这个诅咒。(Shtriga Nonna)"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Promise of Vengeance",
+											"entries": [
+												"一个名叫 Diedre（迪德拉） 的{@creature human mercenary|WhereEvilLives}向队伍透露，她和她的朋友 Valyr（瓦尔尔）在孩童时期曾被 Shtriga Nonna（施特里加·诺娜） 绑架，但只有 Diedre（迪德拉） 逃脱了。由于对抛弃朋友感到内疚，Diedre（迪德拉） 请求角色们与她一起向那个女巫报仇，并表示角色们可以留下巢穴里的任何宝藏。"
+											]
+										},
+										{
+											"type": "item",
+											"name": "Sweet Scent",
+											"entries": [
+												"一股美味而甜蜜的香气飘过群山，使当地的动物陷入疯狂，并袭击旅行者。一位名叫Zerphe的半魔游侠追踪到这股香气来自Shtriga Nonna的流动小屋，但他太害怕进入。他向角色提供1,250 gp 进行调查。 (Zerphe) (Shtriga Nonna)"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Hut Features",
+					"id": "Hut Features",
+					"page": 45,
+					"entries": [
+						"Shtriga Nonna的小屋每个区域都具有以下特点，除非另有说明：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Cursed Food",
+									"entries": [
+										"符合当地语言习惯的翻译，文本中的 (%num%) 应该在翻译中保持为 (%num%)。\n\n一个 {@spell detect magic} 咒语显示，巢穴中的食物和烹饪原料散发着死灵法的气息。如果一个不住在小屋里的生物吃了里面的任何食物，他们必须成功通过一次DC 15的感知豁免检定，否则将受到诅咒。在这种方式下受到诅咒的生物在豁免检定时有劣势。一个 {@i cure ailment} 力量 或者 {@spell remove curse} 或者 {@spell greater restoration} 咒语可以解除诅咒。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Doors",
+									"entries": [
+										"Shtriga Nonna(施崔嘉·农娜)'s hut里的门都是粗糙的木门。每扇门的AC为15，有27点生命值，并且对毒素和精神伤害免疫。如果一扇门上锁了，可以用成功的DC 15敏捷检定使用盗贼工具来解锁，或者用成功的DC 16力量检定强行打开。Shtriga Nonna(见区域H8)拥有hut里所有门的钥匙。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Fireplaces",
+									"entries": [
+										"一个生物在一个回合中第一次触摸到点燃的壁炉或者在他们的回合开始时接触到它，会受到5 ({@damage 2d4}) 火焰伤害。"
+									]
+								},
+								{
+									"type": "item",
+									"name": "High Ceilings",
+									"entries": [
+										"粗糙的木梁在头顶上方交叉，高度为20英尺，但天花板的峰值高度为30英尺。 (D&D 运行组规则)"
+									]
+								},
+								{
+									"type": "item",
+									"name": "Illumination",
+									"entries": [
+										"壁炉和低燃灯光将每个房间照亮得昏暗，直至屋梁。屋梁上方的区域是黑暗的。 (D&D running group rules)"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Chimera, Trolls, and Cats",
+					"id": "Chimera, Trolls, and Cats",
+					"page": 45,
+					"entries": [
+						"什特里加诺娜的小屋也是她仆人和宠物的家。一只年轻的合成兽，一个巨魔，和巨魔的幼崽们作为她的守护者，以换取那个巫婆特殊的食物。这些生物会攻击闯入者，并且战斗到死。 (`Shtriga Nonna`)",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Spectral Cats",
+											"page": 45,
+											"entries": [
+												"Shtriga Nonna（斯特里加·诺娜）的幽灵猫是微小的非战斗构造体，具有30英尺的攀爬和行走速度。每只猫都戴着一个带有名字标签的项圈。虽然这些猫和它们的项圈看起来是实体的，但它们是无形的\u2014\u2014它们可以穿过墙壁和家具，不能受伤，并且如果能看到她，它们可以与Shtriga Nonna进行心灵感应交流。除非被攻击，否则它们会观察角色。一旦角色攻击了猫或移动到另一个区域，一只猫就会向Shtriga Nonna报告入侵者的行动。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Defeated Characters",
+											"page": 46,
+											"entries": [
+												"如果角色在小屋内被打败，Shtriga Nonna 会将任何幸存者找回并稳定状态，将他们放入厨房（区域 H8）的笼子里，然后把他们的装备扔进厨房的废墟堆。（Shtriga Nonna）"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Resting in the Hut",
+					"id": "Resting in the Hut",
+					"page": 46,
+					"entries": [
+						"角色们可以在任何区域短暂休息而不会发生任何事情，前提是他们处理掉该区域的所有敌人。如果角色们试图进行长时间休息，有50%的几率十{@creature troll whelp|WhereEvilLives}会在他们休息到一半时发现他们。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Entering the Hut",
+					"id": "Entering the Hut",
+					"page": 46,
+					"entries": [
+						"在原地不动时，进入 Shtriga Nonna 的小屋就像爬前台阶一样简单。如果角色们在小屋移动时追赶，小屋的步行速度为 30 英尺，爬上门廊需要成功进行 DC 12 的力量（体育）或敏捷（杂技）检定。"
+					]
+				},
+				{
+					"type": "section",
+					"name": "Shtriga Nonna's Hut Areas",
+					"id": "Shtriga Nonna's Hut Areas",
+					"page": 46,
+					"entries": [
+						{
+							"type": "table",
+							"rows": [
+								[
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://i.imgur.com/o46d8gF.jpeg"
+										},
+										"title": "Shtriga Nonna's Hut Map (GM)"
+									},
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://i.imgur.com/6UKGFSO.jpeg"
+										},
+										"title": "Shtriga Nonna's Hut Map (Player)"
+									}
+								]
+							]
+						},
+						"以下区域与Shtriga Nonna的小屋地图对应。",
+						{
+							"type": "entries",
+							"name": "H1. Front Porch",
+							"page": 46,
+							"entries": [
+								"门廊有10英尺高的天花板和以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"这个宽敞的门廊围绕着小屋的前面和两侧。(hut)",
+										"\"一个桌子上放着六把椅子，靠着小屋墙边有三把木摇椅。\"",
+										"\"四方形窗户点缀着小屋的墙壁。一扇带有迷人雕刻的木门直立在前台阶的对面。\" (D&D跑团规则允许，专有名词在翻译后应保留英文在`()`内。)",
+										"门上刻有花样文字和小猫图案的牌子上写着：\"对猫咪要好，否则它们会找妈妈！\" (Be kind to the cats, or they'll fetch Mommy!)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Bigger on the Inside",
+											"page": 46,
+											"entries": [
+												"在角色们进入小屋之前，它神奇地出现为一个带有宽敞门廊的小一室小屋。在地图上，H1和H2区域\u2014\u2014唯一从小屋外部可见的区域\u2014\u2014被一个红色框框起来。一旦角色进入前厅（H2区域）并找到隐藏的门，他们意识到小屋内部要大得多。\n\nTranslation: 在角色们进入小屋之前，它神奇地出现为一个带有宽敞门廊的小一室小屋。在地图上，H1和H2区域\u2014\u2014唯一从小屋外部可见的区域\u2014\u2014被一个红色框框起来。一旦角色进入前厅（H2区域）并找到隐藏的门，他们意识到小屋内部要大得多。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Windows",
+											"page": 46,
+											"entries": [
+												"符合当地语言习惯，文本如(%num%)应保持翻译后仍为(%num%)输出。\n\n3英尺见方的窗户（AC 11，4生命值，对毒素和精神伤害免疫）由厚重的波浪玻璃制成，扭曲通过它看到的图像，对于前房间（H2区域）进行感知（感知）检查时，施加劣势。窗户不能打开。\n\nIs this alright?"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H2. Front Room",
+							"page": 46,
+							"entries": [
+								"前廊（H1区域）的门锁着（见{@adventure \"Hut Features\"|HagHut|1}）。前厅具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"\"温馨舒适的房间充满了浓浓的炖菜、新鲜出炉的面包和木烟的香味。\" (D&D 运行组规则)",
+										"在一个噼啪作响的壁炉上方，一口炖锅冒着泡泡，一根长勺静静地搁在里面。 (Above a crackling fireplace, a pot of stew bubbles and a long ladle rests in it.)",
+										"房间里有一张桌子、几把椅子、一张铺有稻草床垫的整洁床和一个放着一本食谱书和几个罐子的架子。 (cookbook 和 jars 保持为英文)",
+										"{@b (Secret)} 一只幽灵猫藏在床底下。",
+										"{@b (Secret)}两扇门位于北墙壁的壁炉两侧，被幻术隐藏着。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Stew Pot",
+											"page": 46,
+											"entries": [
+												"火上的锅里装满了肉汤（见第{@adventure \"Cursed Food\"|HagHut|1|Cursed Food}节的{@adventure \"Hut Features\"|HagHut|1}）。一个检查了汤并且成功通过了DC 15的智力（医学）检定的角色会发现汤里有人形生物的碎片。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Bookshelf",
+											"page": 46,
+											"entries": [
+												"书架上放着几罐香料（见{@adventure \"Cursed Food\"|HagHut|1|Cursed Food}在{@adventure \"Hut Features\"|HagHut|1}部分）和一本装满当地常见菜谱的烹饪书，名为{@i Cozy Meals}。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Spectral Cat",
+											"page": 46,
+											"entries": [
+												"一个在床底下张望或在DC 16智力（察觉）检定成功的角色会注意到灵猫瑞尔·汤姆，一只长毛虎斑猫，有着炯炯有神的绿眼睛。瑞尔·汤姆不会对任何试图诱导他"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Hidden Doors",
+											"page": 46,
+											"entries": [
+												"一个角色如果在一次智力检定（调查）中成功达到 DC 13，即使受到幻象的影响，也能找到门。如果任何一扇门被打开，隐藏两扇门的幻象就会结束。",
+												"如果角色未能看穿幻象，八个{@creature troll whelp|WhereEvilLives}会在角色进入这个房间后5分钟从餐厅（H3区域）进入。 巨魔们渴望炖菜，但不会拒绝冒险者前菜。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"page": 46,
+											"entries": [
+												"火上的锅是 {@item Shtriga Nonna's pot of plenty|WhereEvilLives} (参见 {@adventure \"Shtriga Nonna's Hoard\"|HagHut|6})。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H3. Dining Room",
+							"page": 46,
+							"entries": [
+								"餐厅一片漆黑。它具有以下特点： (dnd running group)",
+								{
+									"type": "list",
+									"items": [
+										"\"骨头、脏盘子和肮脏的餐具覆盖着这个肮脏的餐厅的地板和桌子。\" (Bones, dirty dishes, and filthy utensils cover the floor and table of this filthy dining room.)",
+										"\"房间的东南角有一个冷冷的、布满灰烬的壁炉。\" (D&D running group rules，proper nouns should keep the English in `(东南角)` after the translation.)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Bones",
+											"page": 46,
+											"entries": [
+												"一个角色成功通过 DC 12 的智力（自然）或者智慧（医学）检定，会认识到这些骨头是来自人形生物。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H4. Troll Room",
+							"page": 48,
+							"entries": [
+								"这个房间黑漆漆的。它具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"\"两个大的、冰冷的壁炉里堆着未点燃的木柴。\"",
+										"房间里散布着一堆堆发臭的、染血的衣物。 (DND 运行组规则)",
+										"房间南端传来呼噜声，一座由破旧布料制",
+										"{@b (Secret)}一个巨魔和他的巨魔幼崽们睡在帐篷里。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Trolls",
+											"page": 48,
+											"entries": [
+												"戈福斯（一位{@creature troll|WhereEvilLives}）和四个{@creature troll whelp|WhereEvilLives}在帐篷里睡觉时，角色们进入房间。试图搜索或悄悄穿过房间的角色必须成功通过DC 13的团体敏捷（隐秘）检定，否则会惊醒巨魔。如果一个角色打开帐篷往里看，他们必须成功通过DC 17的敏捷（隐秘）检定，否则会惊醒巨魔。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Fireplaces",
+											"page": 48,
+											"entries": [
+												"Shtriga Nonna 保持着房间里的壁炉储备着木头，以恐吓那些巨魔，但只有当它们不听她的话时她才点燃它们。一名拥有打火石和打火钢、点着的蜡烛、施加火焰伤害的法术或者其他点燃火焰的方法的生物可以用一个动作点燃壁炉。当火在燃烧时，一个生物可以伸手进壁炉里拿一根木头用作火把（不需要动作）。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"page": 48,
+											"entries": [
+												"一个角色花费1分钟在衣物堆中搜索，找到30铜币、17银币、8金币，以及一面盾牌、一副胸甲和一把战剑，每样都适合小型人形生物，并带有一个绿色鳞片龙的图像。这些装备属于Kira，厨房（区域H8）中的龙蜥囚犯。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H5. Pantry",
+							"page": 48,
+							"entries": [
+								"储藏室具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"这个拥挤的食品储藏室散发着霉味和香料的气味。（Dungeons & Dragons 运行组规则）",
+										"\"高架架子上摆放着罐子、瓶子和盒子，里面的香料和食材洒落在地板上。\" (Tall shelves hold jars, bottles, and boxes that spill spices and ingredients onto the floor.)",
+										"\"一只蓬松的灰色猫咪睡在南墙的架子上。\" (翻译符合DND跑团规则，适当名词在翻译后用括号保留英文。)",
+										"{@b (Secret)} Shtriga Nonna的卧室（区域H9）的门藏在一个架子后面。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Shelves",
+											"page": 48,
+											"entries": [
+												"货架上摆放着烹饪所需的香料、草药、葡萄酒和盐（见第{@adventure \"Cursed Food\"|HagHut|1|Cursed Food}节的{@adventure \"Hut Features\"|HagHut|1}部分）。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Spectral Cat",
+											"page": 48,
+											"entries": [
+												"烂桃子 (Rotten Peaches)，架子上的猫，正在睡觉。穿过这个区域或搜索货架的角色必须成功通过 DC 14 群体敏捷（潜行）检定，否则会把它吵醒。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Hidden Door",
+											"page": 48,
+											"entries": [
+												"符合当地语言习惯，像（%num%）这样的文本在翻译中仍应输出为（%num%）。\n\n根据dnd跑团规则进行翻译，专有名词在翻译后应保留英文括号中的英文。\n\n成功进行一次DC 20的智力（调查）检定的角色注意到地板上有划痕，这些划痕是书架隐藏的秘密门之前移动过的痕迹。移动书架会揭示门，但也会惊醒腐烂的桃子（Rotten Peaches）。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"page": 48,
+											"entries": [
+												"一个角色花了10分钟搜索书架，发现了一个{@item potion of healing}。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H6. Sitting Room",
+							"page": 48,
+							"entries": [
+								"客厅具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"\"木烟和动物的麝香弥漫在这个房间里，书籍堆满了杂乱的书架，甚至溢出到地板上。\"",
+										"三个壁炉火焰低燃。在最大的壁炉前，一把巨大的充满软垫的椅子上坐着一只黑猫，它望着火盆，发出呜呜声。 (Three fireplaces burn low. In front of the largest, an enormous overstuffed chair holds a black cat looking at the fire and mewling.)",
+										"房间一角的碎片形成了一个宽阔、扁平的堆积物。(Debris)",
+										"{@b (Secret)} Tearmonger（号啼怒者）, 一只年轻的奇美拉，潜伏在梁上。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Books",
+											"page": 48,
+											"entries": [
+												"一个看书的生物发现了几本日记，每本都是不同的人写的。除了关于每个作者生活的个人细节外，大多数日记末尾都有关于Nonna的条目，她是一个善良的女人，承诺通过一顿家常菜解决他们的问题。 (Nonna)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Spectral Cat",
+											"page": 48,
+											"entries": [
+												"幽灵猫，腐臭保罗，在壁炉旁咪咕，因为他把他正在玩耍的胫骨打到了火焰中。一个角色看向壁炉，如果在 DC 14 的感知（智慧）检定中成功，就会注意到这根骨头，一个在 DC 12 的自然（智力）或医学（智慧）检定中成功的角色可以告诉它属于一个人类。如果给予腐臭保罗这根骨头或其他任何骨头，他就会停止咪咕，并且不会将角色报告给 Shtriga Nonna（黑巫婆）。（腐臭保罗）"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Debris Pile",
+											"page": 48,
+											"entries": [
+												"碎片堆就是 Tearmonger 的巢穴，由 Shtriga Nonna 的受害者丢弃的物品组成。翻阅巢穴的角色会找到金白色的毛皮和一些红色的鳞片。通过 DC 14 智力（自然）检定成功的角色会知道这些毛皮和鳞片属于"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Tearmonger",
+											"page": 49,
+											"entries": [
+												"泪之贩子（Tearmonger）, 一个{@creature chimera|WhereEvilLives}, 藏在角色上方的横梁上。成功进行DC 14的智慧（感知）检查的角色会注意到泪之贩子，促使她发动攻击。否则，奇美拉会观察直到一个角色查阅书籍、调查她的巢穴或打开通往另一个区域的门才发动攻击，并且角色在战斗的第一轮中会感到惊讶。泪之贩子开始战斗时会使用吼叫或龙之爆发从远处发动攻击，然后再接近进行致命攻击。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"page": 49,
+											"entries": [
+												"一个生物花了10分钟搜索这个房间，在书籍中发现了{@item spell scroll}和{@spell remove curse}，椅子垫中间夹着一个装满{@item dust of disappearance}的小纸包。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H7. Hallway",
+							"page": 49,
+							"entries": [
+								"走廊的天花板有10英尺高，具有以下特点： (hallway)(天花板)(10英尺)",
+								{
+									"type": "list",
+									"items": [
+										"\"一条长长的走廊伸展在你面前，地板由腐烂的木板构成。骷髅、松散的纸张、肮脏的破布和其他垃圾散落在地板上。\"",
+										"尽管周围有垃圾，肉类的香气仍然飘散在空气中。附近有什么正在烹饪的东西。",
+										"{@b (Secret)}这个房间的天花板可以将调味品倒在入侵者身上。"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Creaky Floorboards",
+											"page": 49,
+											"entries": [
+												"走廊上有发出吱吱作响的木地板，角色们一踏上去就立刻注意到了。 想要在接近厨房（H8 区域）时避免被察觉的角色必须成功进行一次 DC 13 的团体敏捷（潜行）检定，否则会引起斯特里加·诺娜的注意。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Seasoned Snow",
+											"page": 48,
+											"entries": [
+												"一个角色如果在一项DC 14的感知（智力）检定中成功，会注意到垃圾中有许多盐和胡椒粒。{@spell detect magic}法术揭示了天花板散发出传送魔法的光环。",
+												"当一个不住在小屋里的生物到达走廊的拐角时，天花板开始下起盐和胡椒的雪，为Shtriga Nonna调味入侵者。走廊会在1分钟内下起调味雪，然后在接下来的24小时内不能再下调味雪。在持续时间内，一个生物如果在走廊中开始他们的回合或者在一个回合中第一次进入走廊，必须进行一次DC 12的体质豁免检定。在豁免失败的情况下，生物会{@condition blinded} 1分钟，如果生物没有恢复所有生命值，他们会受到2 ({@damage 1d4}) 酸性伤害。生物可以使用一个动作，用水冲洗被致盲的生物的眼睛，结束效果。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H8. Kitchen",
+							"page": 49,
+							"entries": [
+								"Nonna的厨房具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"两座高15英尺的石炉主宰着房间的东北角和西北角，散发出闪烁的热浪。",
+										"房间的东南角聚集着三个铁笼。一个龙族人挤在中间笼子的地板上。 (kobold)",
+										"高大的架子立在墙边，上面摆满了罐子和瓶子。 (Tall shelves stand against the walls, filled with jars and bottles.)",
+										"一个超大的锅子放在房间中央的火上方，冒着泡泡，冒着热气。 (dnd running group rules)",
+										"一位老妇人搅动着大锅，她的脸皱纹如同一颗干李子，她稀疏的头发扎成一个薄荷糖般的发髻。 (An old woman stirs the large pot, her face wrinkled like a prune and her thin hair pulled into a wispy bun atop her head.)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Shtriga Nonna",
+											"page": 49,
+											"entries": [
+												"如果{@creature Shtriga Nonna|WhereEvilLives}听到走廊（H7区域）传来的脚步声，或者她的一个幽灵猫警告了她，她会转身迎接进来的人物。否则，她会全神贯注地准备她的炖菜，没有立刻注意到人物，给了他们一个惊喜她的机会。",
+												"如果角色们不立即攻击女巫，当她注意到他们并向他们提出交易时，她会微笑：每当他们给她带来一个活着的人形生物让她吃掉时，她就会从她的宝藏中给他们一份礼物（参见{@adventure \"Shtriga Nonna's Hoard\"|HagHut|6}）。在你的自由裁量下，Shtriga Nonna可以提供另一项交易，诱使角色们为她带来食物以换取对他们非常重要的东西。如果角色们拒绝，她就会攻击，打算让他们成为她的下一顿饭。",
+												"莎特丽嘎 (Shtriga) 女巫不寻求增援，她自信她的力量远远超过了角色们的力量，战斗到死。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Cages",
+											"page": 49,
+											"entries": [
+												"每个铁笼子高10英尺，AC为19，27点生命值，并且免疫毒素和精神伤害。这些笼子被锁上，可以用成功的DC 16敏捷检定使用盗贼工具解锁，或者用成功的DC 20力量检定强行打开。(Shtriga Nonna) 拥有每个笼子的钥匙。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Kira",
+											"page": 49,
+											"entries": [
+												"一个笼子里关着基拉，一只{@creature kobold decanus|WhereEvilLives}。她的装备在巨魔房间（H4区）。如果角色们释放了基拉，并且把她的装备归还给她，或者成功通过DC 15的魅力（恐吓或说服）检定，她将与他们一起对抗斯特里加·农娜。否则，如果角色们释放了那只狗头人，她会逃离小屋。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Cauldron",
+											"page": 49,
+											"entries": [
+												"中型大锅中的洋葱、草药和香料冒着泡沫，当斯特里加·诺娜准备把基拉煮成炖菜时。生物如果在回合中第一次触摸到大锅或火，或者在回合开始时接触它，将受到2（{@damage 1d4}）点火焰伤害。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Ovens",
+											"page": 49,
+											"entries": [
+												"每个炉子都有一个5英尺见方的开口。当一个生物在一回合中第一次触摸或进入炉子，或者在那里开始他们的回合时，会受到7（{@damage 2d6}）点火焰伤害。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Shelves",
+											"page": 49,
+											"entries": [
+												"这些架子上摆满了香料和用于 Shtriga Nonna 的食材 (在 {@adventure \"Cursed Food\"|HagHut|1|Cursed Food} 部分中查看 {@adventure \"Hut Features\"|HagHut|1})。"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"page": 49,
+											"entries": [
+												"Shtriga Nonna 拿着一串钥匙。这些钥匙可以打开小屋里的笼子和门。 (Shtriga Nonna carries a ring of keys. The keys unlock the cages and doors in the hut.)"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H9. Bedroom",
+							"page": 49,
+							"entries": [
+								"厨房的门（区域H8）已上锁（参见{@adventure \"Hut Features\"|HagHut|1}）。Shtriga Nonna的卧室一片黑暗。具有以下特征：",
+								{
+									"type": "list",
+									"items": [
+										"\"这个又脏又乱的房间里弥漫着一种混合了霉菌、油脂和腐烂味道的气息，地板上到处都是垃圾。\" (DND 运行组规则)",
+										"\"一只蓬松的白色猫躺在房间角落的未整理的床上，仰面滚动。\" (Rolling on her back, a fluffy white cat lounges on an unmade bed in the corner of the room.)",
+										"\"一座空的铁笼子矗立在床的对面。\" (D&D进行组规则下的翻译，proper noun保留在括号中。)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Bed",
+											"page": 49,
+											"entries": [
+												"床上铺着一张柔软舒适的床垫，一只羽毛枕头，和厚厚的豪华毯子，尽管所有的床上用品都沾满了油污和食物残渣，仿佛Shtriga Nonna在这里用餐时并不在乎弄脏了床铺。 (Shtriga Nonna)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Spectral Cat",
+											"page": 49,
+											"entries": [
+												"螺丝猫躺在床上，对进入房间的任何生物嘶嘶作声。一个成功通过 DC 12 的智力（动物处理或洞察）检定的角色可以感觉到螺丝猫只是想被一个人留下。如果一个角色试图触摸螺丝猫或床，她会喵叫，并稍后向 Shtriga Nonna 报告他们。如果他们让螺丝猫独处，她不会向 Shtriga Nonna 报告他们的行动。 (Shtriga Nonna)"
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Cage",
+											"page": 49,
+											"entries": [
+												"这个空的铁笼子高达10英尺，并且是未锁定的。 Shtriga Nonna（见H8区域）持有它的钥匙。"
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "H10. Treasure Room",
+							"page": 49,
+							"entries": [
+								"宝藏房间\u2014\u2014原来是一间客房\u2014\u2014具有以下特点：",
+								{
+									"type": "list",
+									"items": [
+										"这个房间地面上堆满了臭烘烘的垃圾和一张旧草垫。 (Piles of stinking garbage and an old straw mattress litter the floor of this room.)",
+										"在垃圾之中，有东西闪闪发光。很多东西！这里有宝藏。(DND)"
+									]
+								},
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Treasure",
+											"page": 49,
+											"entries": [
+												"地板上的物品是Shtriga Nonna的贮藏物。查看{@adventure \"Shtriga Nonna's Hoard\"|HagHut|6}以获取更多信息。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Shtriga Nonna's Hoard",
+					"page": 50,
+					"entries": [
+						"Shtriga Nonna的珍藏堆放在一间旧客房的角落里（区域H10）。 这个珍藏包含了她从受害者身上拿走的看起来特别有趣的物品，以及一些她的私人物品。此外，前厅（区域H2）包含{@item Shtriga Nonna's pot of plenty|WhereEvilLives}（见下文）。",
+						"宝藏中包含以下物品：",
+						{
+							"type": "list",
+							"items": [
+								"{@item Broom of flying}",
+								"药瓶{@item oil of slipperiness}",
+								"{@item Potion of greater healing}",
+								"在符合当地语言习惯的基础上，文本中像 (%num%) 这样的文本应该在翻译中仍然输出为 (%num%)。\n\n翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文在 `()` 中。\n\n在一个铁笼子里（见下文）",
+								"背包里装有一套旅行者的衣物，一个撬棍，一个锤子，7个凿眼，一张睡袋，3天的干粮，和一套珠宝工具。（Backpack containing a set of traveler's clothes, a crowbar, a hammer, 7 pitons, a bedroll, 3 days' rations, and a set of jeweler's tools）",
+								"长弓 (Longbow)",
+								"箭筒，带有40支箭",
+								"闪耀的紫绿色石头，吟游诗人、术士、女巫和巫师可以用作施法焦点（价值 10 金币）。",
+								"3 颗微小的蓝宝石（每颗价值 25 gp）",
+								"3 颗微小的翡翠（每颗价值 30 金币）",
+								"3颗微小的钻石（每颗价值50金币）",
+								"3个金条（价值75 gp每个）",
+								"精致的铂金手镯，镶有三颗钻石（价值 400 gp）",
+								"132铜币，57银币和21金币 (cp, sp, and gp)"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Goblin Assassin",
+			"source": "WhereEvilLives",
+			"page": 22,
+			"_copy": {
+				"name": "Goblin Assassin",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 126
+				}
+			]
+		},
+		{
+			"name": "Goblin Cursespitter",
+			"source": "WhereEvilLives",
+			"page": 23,
+			"_copy": {
+				"name": "Goblin Cursespitter",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 126
+				}
+			]
+		},
+		{
+			"name": "Goblin Lackey",
+			"source": "WhereEvilLives",
+			"page": 23,
+			"_copy": {
+				"name": "Goblin Lackey",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 127
+				}
+			]
+		},
+		{
+			"name": "Goblin Sneak",
+			"source": "WhereEvilLives",
+			"page": 24,
+			"_copy": {
+				"name": "Goblin Sneak",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 132
+				}
+			]
+		},
+		{
+			"name": "Goblin Sniper",
+			"source": "WhereEvilLives",
+			"page": 24,
+			"_copy": {
+				"name": "Goblin Sniper",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 127
+				}
+			]
+		},
+		{
+			"name": "Goblin Spinecleaver",
+			"source": "WhereEvilLives",
+			"page": 25,
+			"_copy": {
+				"name": "Goblin Spinecleaver",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 128
+				}
+			]
+		},
+		{
+			"name": "Goblin Underboss",
+			"source": "WhereEvilLives",
+			"page": 25,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblin",
+					"Support"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6 + 8"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 13,
+			"int": 12,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"insight": "+3",
+				"intimidation": "+2",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Crafty",
+					"entries": [
+						"副首领在移动离开敌人的攻击范围时不会引发机会攻击。（副首领）"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"副首领进行两次短剑攻击或两次短弓攻击。他们可以用一次命令代替一次攻击。"
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"适应当地语言习惯，而文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n\n根据dnd跑团规则进行翻译，专有名词在翻译后应保留英文 `()`。\n\n{@atk mw} {@hit 5} 进行攻击，射程5英尺，目标为一名。{@h}6 ({@damage 1d6 + 3}) 穿刺伤害。"
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5}的命中，射程80/320英尺，一个目标。造成{@h}6 ({@damage 1d6 + 3})点穿刺伤害。"
+					]
+				},
+				{
+					"name": "Command",
+					"entries": [
+						"Underboss 选择在其视线范围内的一个盟友。如果目标能听到 Underboss 的声音，目标可以使用他们的反应速度移动最多其速度或进行一次武器攻击（weapon attack）（译注：这里的 \"weapon attack\" 保留为英文）。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Get Reckless {@recharge}",
+					"entries": [
+						"在听到他们的副首领的30英尺范围内的每个愿意的盟友都会在副首领下一个回合的开始之前变得鲁莽。在鲁莽状态下，生物对攻击投掷具有优势，并且针对该生物的攻击投掷也具有优势。 (underboss)"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Cowardly Commander",
+					"entries": [
+						"当一个生物（副首领）能看到的时候被攻击，（副首领）选择一个距离他们5英尺内的愿意的盟友。攻击击中盟友而不是他们自己。"
+					]
+				}
+			],
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Goblin Warrior",
+			"source": "WhereEvilLives",
+			"page": 26,
+			"_copy": {
+				"name": "Goblin Warrior",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 129
+				}
+			]
+		},
+		{
+			"name": "Swarm of Skitterlings",
+			"source": "WhereEvilLives",
+			"page": 26,
+			"_copy": {
+				"name": "Swarm of Skitterlings",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 129
+				}
+			]
+		},
+		{
+			"name": "Queen Bargnot",
+			"source": "WhereEvilLives",
+			"page": 27,
+			"_copy": {
+				"name": "Queen Bargnot",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 129
+				}
+			]
+		},
+		{
+			"name": "Swarm of Spiders",
+			"source": "WhereEvilLives",
+			"page": 28,
+			"_copy": {
+				"name": "Swarm of Spiders",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 42
+				}
+			]
+		},
+		{
+			"name": "War Spider",
+			"source": "WhereEvilLives",
+			"page": 28,
+			"_copy": {
+				"name": "War Spider",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 130
+				}
+			]
+		},
+		{
+			"name": "Dohma Raskovar",
+			"source": "WhereEvilLives",
+			"page": 35,
+			"_copy": {
+				"name": "Dohma Raskovar",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 213
+				}
+			]
+		},
+		{
+			"name": "Human Brawler",
+			"source": "WhereEvilLives",
+			"page": 36,
+			"_copy": {
+				"name": "Human Brawler",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 160
+				}
+			]
+		},
+		{
+			"name": "Human Guard",
+			"source": "WhereEvilLives",
+			"page": 36,
+			"_copy": {
+				"name": "Human Guard",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 162
+				}
+			]
+		},
+		{
+			"name": "Mimic",
+			"source": "WhereEvilLives",
+			"page": 37,
+			"_copy": {
+				"name": "Mimic",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 193
+				}
+			]
+		},
+		{
+			"name": "Mohler",
+			"source": "WhereEvilLives",
+			"page": 38,
+			"_copy": {
+				"name": "Mohler",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 211
+				}
+			]
+		},
+		{
+			"name": "Mohler Companion",
+			"source": "WhereEvilLives",
+			"page": 38,
+			"_copy": {
+				"name": "Mohler Companion",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 215
+				}
+			]
+		},
+		{
+			"name": "Orc Blitzer",
+			"source": "WhereEvilLives",
+			"page": 39,
+			"_copy": {
+				"name": "Orc Blitzer",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 206
+				}
+			]
+		},
+		{
+			"name": "Orc Bloodrunner",
+			"source": "WhereEvilLives",
+			"page": 40,
+			"_copy": {
+				"name": "Orc Bloodrunner",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 206
+				}
+			]
+		},
+		{
+			"name": "Orc Conduit",
+			"source": "WhereEvilLives",
+			"page": 41,
+			"_copy": {
+				"name": "Orc Conduit",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 207
+				}
+			]
+		},
+		{
+			"name": "Orc Fury",
+			"source": "WhereEvilLives",
+			"page": 41,
+			"_copy": {
+				"name": "Orc Fury",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 208
+				}
+			]
+		},
+		{
+			"name": "Orc Garroter",
+			"source": "WhereEvilLives",
+			"page": 42,
+			"_copy": {
+				"name": "Orc Garroter",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 208
+				}
+			]
+		},
+		{
+			"name": "Orc Godcaller",
+			"source": "WhereEvilLives",
+			"page": 42,
+			"_copy": {
+				"name": "Orc Godcaller",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 209
+				}
+			]
+		},
+		{
+			"name": "Orc Rampart",
+			"source": "WhereEvilLives",
+			"page": 43,
+			"_copy": {
+				"name": "Orc Rampart",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 210
+				}
+			]
+		},
+		{
+			"name": "Orc Terranova",
+			"source": "WhereEvilLives",
+			"page": 43,
+			"_copy": {
+				"name": "Orc Terranova",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 211
+				}
+			]
+		},
+		{
+			"name": "Scyza",
+			"source": "WhereEvilLives",
+			"page": 44,
+			"_copy": {
+				"name": "Scyza",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 212
+				}
+			]
+		},
+		{
+			"name": "Chimera",
+			"source": "WhereEvilLives",
+			"page": 51,
+			"_copy": {
+				"name": "Chimera",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 54
+				}
+			]
+		},
+		{
+			"name": "Human Mercenary",
+			"source": "WhereEvilLives",
+			"page": 52,
+			"_copy": {
+				"name": "Human Mercenary",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 166
+				}
+			]
+		},
+		{
+			"name": "Kobold Decanus",
+			"source": "WhereEvilLives",
+			"page": 52,
+			"_copy": {
+				"name": "Kobold Decanus",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 179
+				}
+			]
+		},
+		{
+			"name": "Shtriga Nonna",
+			"source": "WhereEvilLives",
+			"page": 53,
+			"_copy": {
+				"name": "Shtriga Nonna",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 140
+				}
+			],
+			"legendaryGroup": {
+				"name": "Shtriga Nonna",
+				"source": "WhereEvilLives"
+			}
+		},
+		{
+			"name": "Troll",
+			"source": "WhereEvilLives",
+			"page": 54,
+			"_copy": {
+				"name": "Troll",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 242
+				}
+			]
+		},
+		{
+			"name": "Troll Whelp",
+			"source": "WhereEvilLives",
+			"page": 54,
+			"_copy": {
+				"name": "Troll Whelp",
+				"source": "FleeMortals"
+			},
+			"otherSources": [
+				{
+					"source": "FleeMortals",
+					"page": 243
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Glowing Poison Recipe",
+			"source": "WhereEvilLives",
+			"page": 21,
+			"rarity": "unknown",
+			"entries": [
+				"这张一页的食谱用精美的书法写在一张干净的白羊皮纸上。如果你精通{@item alchemist's supplies|PHB}或{@item poisoner's kit|PHB}，你可以用价值250 gp的原材料和1小时的不间断工作来制作这种毒药。 {@item alchemist's supplies|PHB} {@item poisoner's kit|PHB}",
+				"这种毒药使受影响的生物必须通过一次体质豁免才能免受 {@condition poisoned} 效果，持续 8 小时。此豁免的 DC 等于 8 加上你的智力调整值加上你的熟练加值。当以这种方式受影响时，生物在 10 英尺半径内散发出明亮的绿光，并延伸额外 10 英尺。对于受影响的生物的任何攻击投掷，如果攻击者能看到它们，则获得优势，并且受影响的生物无法从被动隐",
+				"此外，每当生物移动时，它们会留下一条发光的绿色痕迹。这条痕迹会一直保留，直到生物不再{@condition poisoned}。"
+			]
+		},
+		{
+			"name": "Monocle of Secrets",
+			"source": "WhereEvilLives",
+			"page": 21,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"佩戴这副镶金边的单片眼镜时，你在寻找秘密门和陷阱时的所有技能检定都具有优势。（%num%）",
+				"符合当地语言习惯，并且像(%num%)这样的文本在翻译中应该保持为(%num%)。\n- 翻译需遵循dnd跑团规则，专有名词应在翻译后保留英文的`()`。\n\n此外，当你持有一个日常物品时，你可以使用一个动作来了解该物品的确切价值、制造材料以及它是否真品或赝品。"
+			]
+		},
+		{
+			"name": "Psi Lenses",
+			"source": "WhereEvilLives",
+			"page": 34,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"心灵晶镜成对出现，每一片虹彩玻璃都被制作成与另一片不规则凿边相契合的形状。当你触摸其中一片晶镜，而另一片与你处于相同存在平面上时，你可以使用一个动作将自己传送到另一片晶镜所在的空间，如果那片晶镜所在的空间已经被占据，你将会被传送至最近的未被占据的空间。 (Psi lenses)",
+				"镜片用于传送后，直到下一个黎明，这对镜片就不能再使用了。 (lens)"
+			]
+		},
+		{
+			"name": "Shtriga Nonna's Pot of Plenty",
+			"source": "WhereEvilLives",
+			"page": 51,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"这个黑铁锅只有2磅重。作为一个动作，你可以说以下其中一个命令短语来激活它的效果：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Boil, Boil, Until You Spoil",
+							"entries": [
+								"大锅里装满了浓郁的炖汤。它能够制造足够喂饱十五名人形生物的炖汤。食物味道鲜美，调味得当，如果在24小时内不吃掉，就会变质。 (Humanoids)"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Bubble, Bubble, Toil and Trouble.",
+							"entries": [
+								"锅里装满了炖菜，就像你说\"煮啊煮，直到你败坏\"，但这炖菜是有毒的。吃了这炖菜的生物必须通过一次 DC 16 的体质豁免才能免疫，否则将中毒 24 小时。"
+							]
+						}
+					]
+				},
+				"一旦锅以其中任何一种方式被使用过，直到下一个黄昏之前都不能再次使用该锅。"
+			]
+		},
+		{
+			"name": "Treasure Rat",
+			"source": "WhereEvilLives",
+			"page": 51,
+			"rarity": "none",
+			"entries": [
+				"当您打开这只白色毛皮、红眼睛的老鼠笼子时，它们会用鼻子指向距离它们最近的魔法物品，如果有的话，范围为30英尺，该物品不被其他生物所穿戴或携带。它们会继续指向该物品的鼻子，持续1分钟，直到您关闭笼门。指向魔法物品后，老鼠再也不愿意这样做，直到它们吃掉价值至少10金币的奶酪块。 (D&D running group rules， \"rat\" 留在括号中)"
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"name": "Shtriga Nonna",
+			"source": "WhereEvilLives",
+			"lairActions": [
+				"在她的巢穴内战斗时，Shtriga Nonna 可以采取巢穴行动。在20号（失去先攻优势）的先攻中，她可以采取一项巢穴行动来引发以下效果之一；Shtriga Nonna 不能连续两轮使用相同的巢穴行动：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fatten You Up",
+							"entries": [
+								"Shtriga Nonna（干妈）选择她可以看到的地面上的一个点，距离她60英尺内。以该点为中心的一个20英尺正方形的意大利面、姜饼和烤鹅的盛宴将出现在地面上，直到下一轮倡议计数结束时的倡议计数20为止。当盛宴出现时，该区域内的每个生物必须成功进行一次DC 15感知豁免检定，否则将在持续时间内被盛宴所迷惑。对于所有生物来说，除了Shtriga Nonna（干妈）之外，这个盛宴都是困难的地形。"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Kitties of Despair",
+							"entries": [
+								"虚幻的猫向Shtriga Nonna能看到的三个敌人嘶咬，距离不超过60英尺。每个目标必须在DC 15的感知豁免检定中成功，否则它们的速度减半，直到下一轮的20号行动顺序结束后，它们无法恢复生命值。 (Shtriga Nonna)"
+							]
+						},
+						{
+							"type": "item",
+							"name": "Sugar and Spice",
+							"entries": [
+								"神奇的草药和香料在Shtriga Nonna可以在她看得见的范围内的120英尺内的一个点上下雨，形成一个半径20英尺的球形区域。该区域内的每个生物必须成功进行一次DC 15的魅力豁免检定，否则在下一轮行动顺序结束时（在倒数第20个行动点）之前，其在体质和感知豁免检定上都具有劣势。 (Shtriga Nonna)"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

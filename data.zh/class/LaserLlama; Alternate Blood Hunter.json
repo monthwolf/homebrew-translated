@@ -9,22 +9,29 @@
 					"LaserLlama"
 				],
 				"convertedBy": [
-					"Crazy Ivan#3242"
+					"Crazy Ivan#3242",
+					"hakr14"
 				],
 				"version": "1.1.0",
 				"color": "940101",
-				"url": "https://www.gmbinder.com/share/-NLlETPNSzqxgQ92pnd-",
-				"targetSchema": "1.2"
+				"url": "https://www.gmbinder.com/share/-NLlETPNSzqxgQ92pnd-"
 			}
 		],
 		"optionalFeatureTypes": {
 			"LLABH:BR": "Blood Rites",
-			"LLABH:M": "Mutagens",
-			"LLABH:FS": "Fighting Style"
+			"LLABH:M": "Mutagens"
+		},
+		"includes": {
+			"optionalfeature": [
+				"LLAF"
+			],
+			"spell": [
+				"llspell"
+			]
 		},
 		"dateAdded": 1657295680,
-		"dateLastModified": 1713958692,
-		"_dateLastModifiedHash": "8c40007780"
+		"dateLastModified": 1714276402,
+		"_dateLastModifiedHash": "7ed597444c"
 	},
 	"class": [
 		{
@@ -164,7 +171,8 @@
 							"str": 13,
 							"dex": 13
 						}
-					]
+					],
+					"con": 13
 				},
 				"proficienciesGained": {
 					"armor": [
@@ -187,28 +195,13 @@
 					"featureType": [
 						"LLABH:BR"
 					],
-					"progression": [
-						2,
-						2,
-						2,
-						2,
-						3,
-						3,
-						3,
-						3,
-						4,
-						4,
-						4,
-						4,
-						5,
-						5,
-						5,
-						5,
-						6,
-						6,
-						6,
-						6
-					]
+					"progression": {
+						"1": 2,
+						"5": 3,
+						"9": 4,
+						"13": 5,
+						"17": 6
+					}
 				}
 			],
 			"classTableGroups": [
@@ -219,249 +212,141 @@
 					],
 					"rows": [
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 4
-									}
-								]
-							},
+							"{@dice d4}",
 							2
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 4
-									}
-								]
-							},
+							"{@dice d4}",
 							2
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 4
-									}
-								]
-							},
+							"{@dice d4}",
 							2
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 4
-									}
-								]
-							},
+							"{@dice d4}",
 							2
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
+							"{@dice d6}",
 							3
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
+							"{@dice d6}",
 							3
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
+							"{@dice d6}",
 							3
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
+							"{@dice d6}",
 							3
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
+							"{@dice d6}",
 							4
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
+							"{@dice d6}",
 							4
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
+							"{@dice d8}",
 							4
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
+							"{@dice d8}",
 							4
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
+							"{@dice d8}",
 							5
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
+							"{@dice d8}",
 							5
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
+							"{@dice d8}",
 							5
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
+							"{@dice d8}",
 							5
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
+							"{@dice d10}",
 							6
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
+							"{@dice d10}",
 							6
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
+							"{@dice d10}",
 							6
 						],
 						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
+							"{@dice d10}",
 							6
 						]
 					]
 				}
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Rite Die",
+					"configuration": {
+						"identifier": "rite-die",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"die": 4
+							},
+							"5": {
+								"die": 6
+							},
+							"11": {
+								"die": 8
+							},
+							"17": {
+								"die": 10
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "Crimson Brand Rite Die Rolls",
+					"configuration": {
+						"identifier": "crimson-brand",
+						"type": "number",
+						"scale": {
+							"6": {
+								"value": 1
+							},
+							"14": {
+								"value": 2
+							}
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"name": "Grim Psychometry (Ritual Only)",
+					"innate": {
+						"9": [
+							"identify",
+							"legend lore"
+						]
+					}
+				}
+			],
+			"foundryImg": "icons/skills/wounds/injury-triple-slash-bleed.webp"
 		}
 	],
 	"classFeature": [
@@ -470,12 +355,24 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 1,
+			"page": 2,
 			"level": 1,
 			"entries": [
-				"你幸存了猎人之咒，一种黑暗的炼金仪式，使你的血液充满了邪恶的魔法，赋予你对邪恶的增强认知和意识。在1级时，你可以选择在自然(Nature)、宗教(Religion)或生存(Survival)中获得熟练加成。",
-				"每当你进行与精灵、恶魔或不死生物相关的智力（自然）、智力（宗教）或感知（生存）检定时，如果d20的点数为7或更低，你将其视为8。"
-			]
+				"你经历了猎人诅咒，一种黑暗的炼金术仪式，将邪恶的魔法注入你的血液，赋予你对邪恶的增强认知和意识。在1级时，你可以选择在{@skill Nature}、{@skill Religion} 或 {@skill Survival}中获得熟练度。\n",
+				"每当您进行与精灵、恶魔或亡灵相关的智力（{@skill Nature}）、智力（{@skill Religion}）或智慧（{@skill Survival}）检定时，您将7或更低的掷骰结果视为8。"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"nature",
+							"religion",
+							"survival"
+						]
+					}
+				}
+			],
+			"foundryImg": "icons/consumables/potions/potion-tube-corked-bat-gold-red.webp"
 		},
 		{
 			"name": "Blood Rites",
@@ -483,54 +380,74 @@
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
 			"foundryImg": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
-			"page": 3,
+			"page": 2,
 			"level": 1,
 			"entries": [
 				"在1级时，你学会了从你的血液中汲取邪恶力量，召唤{@filter Blood Rites|optionalfeatures|feature type=LLABH:BR}的黑暗魔法：",
 				{
 					"type": "entries",
 					"name": "Blood Rites Known",
-					"page": 3,
+					"page": 2,
 					"entries": [
 						"在1级时，你学会两种这样的血脉仪式，从类别末尾的列表中选择。在特定等级，你会学会更多血脉仪式，如上表中\"已知仪式\"栏所示。",
-						"一旦你发动了一次血脉仪式，你必须在再次发动该血脉仪式之前完成一次短休或长休。当你没有剩余血脉仪式使用次数时，你可以进行一次生命牺牲（详见下文）来再次使用该仪式。",
+						"一旦你发动了血之仪式，你必须在完成短暂或长时间休息后才能再次发动该血之仪式。当你没有使用血之仪式的次数时，你可以进行一次 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}（详见以下说明）来再次使用该仪式。",
 						"血脉仪式只能对有血液的生物使用。然而，当你进行一次生命牺牲来强化一个仪式时，你可以瞄准任何生物，无论它是否有血液。"
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Rite Die",
-					"page": 3,
+					"page": 2,
 					"entries": [
-						"一些血脉仪式和其他血猎者特性使用你的仪式骰，它最初为d4。在特定的血猎者等级上，这个骰子会增长，如上面的仪式骰列中所示。"
+						"一些血之仪式和其他血猎人特性使用你的仪式骰，它起始于{@dice d4}。在特定的血猎人等级上，这个骰子会增长，如上面的仪式骰列中所示。"
 					]
 				},
 				{
-					"type": "entries",
-					"name": "Vital Sacrifice",
-					"page": 3,
-					"entries": [
-						"一些血脉仪式和血猎者特性允许你牺牲自己的生命来激发额外效果。当你进行生命牺牲时，你需要用你的仪式骰减少你的最大生命值和当前生命值，减少量为你的仪式骰掷出的点数。这种对你生命值的减少无法以任何方式减少。",
-						"如果你有临时生命值，你可以在减少当前生命值之前减少这些临时生命值。当进行重要牺牲（Vital Sacrifice）时，你总是减少你的最大生命值。",
-						"在你接下来的一次长休结束时，此特性对你最大生命值的任何减少都会恢复正常。"
-					]
+					"type": "refClassFeature",
+					"classFeature": "Vital Sacrifice|Alternate Blood Hunter|LLABH|1|LLABH"
 				},
 				{
 					"type": "entries",
 					"name": "Saving Throws",
-					"page": 3,
+					"page": 2,
 					"entries": [
-						"一些血脉仪式和其他血猎者特性使用你的仪式骰，它最初为d4。在特定的血猎者等级上，这个骰子会增长，如上面的仪式骰列中所示。",
+						"若血脉仪式需要生物进行豁免投掷，则你的仪式豁免投掷 DC 如下计算：",
 						{
 							"type": "abilityDc",
-							"name": "Rite save DC",
+							"name": "Rite",
 							"attributes": [
 								"con"
 							]
 						}
 					]
 				}
-			]
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			}
+		},
+		{
+			"name": "Vital Sacrifice",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 2,
+			"level": 1,
+			"entries": [
+				"一些血脉仪式和血猎者特性允许你牺牲自己的生命来激发额外效果。当你进行生命牺牲时，你需要用你的仪式骰减少你的最大生命值和当前生命值，减少量为你的仪式骰掷出的点数。这种对你生命值的减少无法以任何方式减少。",
+				"如果你有临时生命值，你可以在减少当前生命值之前减少这些临时生命值。当进行重要牺牲（Vital Sacrifice）时，你总是减少你的最大生命值。",
+				"在你接下来的一次长休结束时，此特性对你最大生命值的任何减少都会恢复正常。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"formula": "1@scale.alternate-blood-hunter.rite-die"
+			},
+			"foundryImg": "icons/skills/wounds/blood-drip-droplet-red.webp"
 		},
 		{
 			"name": "Fighting Style",
@@ -552,7 +469,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Dual Wielding|LLABH"
+							"optionalfeature": "Dual Wielding|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -560,7 +477,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Featherweight Fighting|LLABH"
+							"optionalfeature": "Featherweight Fighting|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -568,7 +485,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Melee Marksman|LLABH"
+							"optionalfeature": "Melee Marksman|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -576,11 +493,12 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Versatile Fighting|LLABH"
+							"optionalfeature": "Versatile Fighting|LLAF"
 						}
 					]
 				}
-			]
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
 		},
 		{
 			"name": "Crimson Offering",
@@ -591,9 +509,17 @@
 			"page": 3,
 			"level": 2,
 			"entries": [
-				"从2级开始，你可以用黑暗血魔法灌注武器。作为一个奖励动作，你可以进行一次生命牺牲，强化你手持的一把近战武器，持续1小时。",
+				"从第2级开始，你可以将武器注入黑暗鲜血魔法。作为一个奖励行动，你可以做一个{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来强化你手持的一个近战武器，持续1小时。（Dark Blood Magic）",
 				"当你这样做时，请选择酸性、冰冷、火焰、闪电或毒素伤害。当你用强化武器攻击生物时，生物会受到你选择的类型的额外伤害，数量等于你的仪式骰的一次投掷。"
-			]
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				]
+			}
 		},
 		{
 			"name": "Occult Order",
@@ -623,7 +549,7 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 3,
+			"page": 4,
 			"level": 5,
 			"entries": [
 				"从5级开始，每当你在你的回合上采取{@action Attack|PHB}动作时，你可以攻击两次，而不是一次。"
@@ -635,10 +561,10 @@
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
 			"foundryImg": "icons/magic/symbols/rune-sigil-hook-white-red.webp",
-			"page": 3,
+			"page": 4,
 			"level": 6,
 			"entries": [
-				"你可以用鲜血魔法烙印你的敌人。从6级开始，当你用血色祭品伤害一个生物时，你可以将其烙印为血色印记作为你攻击的一部分。在这个血色印记持续期间，你获得以下好处：",
+				"你可以用血魔法烙印你的敌人。从6级开始，当你对生物造成{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}伤害时，你可以将其烙印上血魔法，作为你攻击的一部分。当这个赤红印记存在时，你获得以下好处：",
 				{
 					"type": "list",
 					"items": [
@@ -646,9 +572,18 @@
 						"当该生物对你或你能看到的友方生物造成伤害时，它会受到你的献祭伤害类型的伤害，伤害值等同于你的仪式骰(%num%)。"
 					]
 				},
-				"血红印记持续到该生物被杀死，或者直到你用这个特性标记另一个生物。你的血红印记效果可以被解除诅咒所驱散。",
-				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。如果你没有剩余次数，你可以进行一次生命牺牲，以再次使用此特性。"
-			]
+				"红色烙印持续到生物被杀死，或者直到你用这个特征标记另一个生物。你的红色烙印效果可以被 {@spell remove curse} 解除。",
+				"使用此功能后，您必须完成短休息或长休息，然后才能再次使用它。如果您没有剩余次数，您可以做一个{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来再次使用此功能。（dnd运行小组规则）"
+			],
+			"foundrySystem": {
+				"activation.condition": "When you damage a creature with Crimson Offering",
+				"damage.parts": [
+					[
+						"@scale.alternate-blood-hunter.crimson-brand@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				]
+			}
 		},
 		{
 			"name": "Occult Order",
@@ -677,47 +612,57 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 3,
+			"page": 4,
 			"level": 9,
 			"entries": [
-				"你对黑暗魔法的熟悉程度使你能够解读类似效果的影响。从9级起，你可以使用炼金术士工具包作为仪式法术施展识别(`identify`)。此外，当你施展识别(`identify`)时，你还会得知该物品是否被诅咒。",
-				"你也学会了将传奇传说（Legend Lore）作为仪式施法，以你触摸到的一个生物或物体，或你当前所处的位置为目标。目标可以是一个具有邪恶、暴力或被诅咒历史的对象，而不是传奇重要性的目标。当你以这种方式施法时，你需要使用炼金术工具，并做出一次生命牺牲（Vital Sacrifice）来替代法术的正常材料成分。"
-			]
+				"你对黑暗魔法的熟悉让你能够解读类似效果的影响。从9级开始，你可以使用{@item alchemist's supplies|phb}来施放{@spell identify}，作为仪式法术。此外，当你施放辨识法术时，你也会得知物品是否被诅咒。 {@item alchemist's supplies|phb} {@spell identify}",
+				"你也学会将{@spell legend lore}作为仪式施法，以你触摸到的一个生物或物体，或你当前的位置为目标。在这种情况下，目标可以有着邪恶、暴力或被诅咒的历史，而不仅仅是一个传奇重要的目标。当你以这种方式施法时，你使用炼金术工具，并进行{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}以替代法术的正常材料组成部分。 (ritual)(alchemist's supplies)"
+			],
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
 		},
 		{
 			"name": "Dark Augmentation",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 3,
+			"page": 4,
 			"level": 10,
 			"entries": [
 				"你可以借助你的血液魔力增强你的身体能力。从10级开始，每当你进行一个使用力量、敏捷或体质的能力检定或豁免检定时，你可以将一个你的仪式骰投掷的结果加到最终结果上。"
-			]
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-red.webp"
 		},
 		{
 			"name": "Improved Crimson Offering",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 3,
+			"page": 4,
 			"level": 11,
 			"entries": [
-				"你是一个将血魔法与武技相结合的大师。从11级开始，当你使用(Crimson Offering)时，你可以选择额外伤害为死灵、精神或雷电属性，以及其他伤害类型选项。",
-				"此外，你可以在不进行生命牺牲的情况下使用(Crimson Offering)。但一旦如此做，你必须完成一次短暂或长时间的休息，然后才能再次使用它而不进行生命牺牲。"
-			]
+				"你是将血魔法与武技巧巧妙结合的大师。从11级起，当你使用{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}时，你可以选择将额外伤害变为死灵、心灵或雷霆属性，除了其他的伤害类型选择外。",
+				"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中应该保持输出为 (%num%)。\n翻译需遵守dnd游戏团规则，并且专有名词在翻译后应保留英文括号内的内容。\n此外，您可以使用赤红的献祭而不需要做出 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}。一旦您这样做，您必须完成短时间或长时间的休息，然后才能再次使用它而不需要做出生命牺牲。"
+			],
+			"foundrySystem": {
+				"activation.condition": "You can use Crimson Offering without making a Vital Sacrifice"
+			},
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-red.webp"
 		},
 		{
 			"name": "Vital Control",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 3,
+			"page": 4,
 			"level": 11,
 			"entries": [
-				"在11级时，你对自己的血之魔法获得了更大的控制力。每当你进行一次生命牺牲时，你可以将你的仪式骰掷两次，并选择使用哪个结果。",
+				"在符合当地语言习惯的前提下，像 (%num%) 这样的文本在翻译时应该仍然输出为 (%num%)。\n\n翻译需遵守 DND (龙与地下城) 跑团规则，并且专有名词在翻译后应该保留英文括号内的内容。\n\n另外，在第11级时，你对自己的血之魔法获得了更大程度的控制。每当你进行一个 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 时，你可以投掷两次你的仪式骰，并选择使用哪个结果。",
 				"此外，当你施展你已知的一种血脉仪式时，你可以选择强化它，而无需进行重要牺牲。一旦你这样做了，你必须完成一次长休，然后才能再次以这种方式强化你已知的任何血脉仪式。"
-			]
+			],
+			"foundrySystem": {
+				"activation.condition": "When you invoke a Blood Rite you know"
+			},
+			"foundryImg": "icons/skills/wounds/blood-cells-red.webp"
 		},
 		{
 			"name": "Ability Score Improvement",
@@ -749,9 +694,23 @@
 			"page": 4,
 			"level": 14,
 			"entries": [
-				"你的血液被强大的驱护魔法保护。从14级开始，当你用(Crimson Brand)标记一个生物时，它在攻击你或与你相距5英尺的友方生物时受到的伤害增加到你的(Rite Die)掷骰结果的两次。",
-				"最后，如果一只被(Crimson Brand)标记的生物尝试使用法术或特性传送或离开当前位面，它必须通过一次感知豁免检定，豁免 DC 为你的仪式豁免 DC，否则将受到等于你仪式骰的四次掷骰结果的(Crimson Offering)类型伤害，并且其法术或特性将失败。"
-			]
+				"你的血液受到强大的禁法魔法保护。从14级起，当你用{@classFeature Crimson Brand|Alternate Blood Hunter|LLABH|6}标记一个生物时，它在攻击你或你周围5英尺范围内的友方生物时受到的伤害增加到你的仪式骰的两次投掷。",
+				"最后，如果一名被赤红印记标记的生物尝试使用法术或特性传送或离开当前位面，它必须对你的仪式豁免 DC 进行一次智力豁免检定，否则会受到你 {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} 类型的伤害，伤害值相当于你的仪式骰的四次投掷，并且其法术或特性失败。 (Crimson Brand)"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "If a creature marked by Crimson Brand attempts to teleport or leave the current plane with a spell or feature"
+				},
+				"damage.parts": [
+					[
+						"4@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				],
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/control/debuff-chains-ropes-red.webp"
 		},
 		{
 			"name": "Occult Order",
@@ -773,7 +732,8 @@
 			"level": 15,
 			"entries": [
 				"你的经历使你对除了最神秘的攻击之外的一切都变得坚强。从15级开始，每当你被迫进行一次智力、感知或魅力豁免检定时，你的检定获得一个奖励，奖励值等同于你的仪式骰(%num%)。"
-			]
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-magenta.webp"
 		},
 		{
 			"name": "Ability Score Improvement",
@@ -806,13 +766,106 @@
 			"level": 20,
 			"entries": [
 				"你已经在血魔法的黑暗力量上获得了无与伦比的掌握，提高了其效力，同时最大程度地减少了你必须做出的牺牲。在20级时，每当你为你的血猎者能力之一掷出一个仪式骰(Rite Die)，你可以将仪式骰(Rite Die)掷两次，并选择使用哪个结果。",
-				"此外，每当你进行一次生命牺牲时，在减少你的最大生命值和当前生命值之前，你需要从你的生命牺牲骰结果中减去你的体质调整值（最少为1）。这不会使你的生命牺牲结果降至1以下。"
+				"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n翻译应符合 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n另外，每当你进行 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 时，在减少你的最大和当前生命值之前，你需要从你的体质调整值中减去你的 Vital Sacrifice 掷骰结果（最少为 1）。这不会使你的 Vital Sacrifice 低于 1。"
+			],
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red-orange.webp"
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"name": "Dark Augmentation",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"level": 10,
+			"effects": [
+				{
+					"name": "Physical Abilities Check and Save Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.str.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.dex.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.con.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.str.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.dex.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.con.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hardened Soul",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"level": 15,
+			"effects": [
+				{
+					"name": "Mental Abilities Check and Save Bonus",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.int.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.wis.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.cha.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.int.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.wis.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.abilities.cha.bonuses.save",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						}
+					]
+				}
 			]
 		}
 	],
 	"subclass": [
 		{
-			"name": "Path of the Alchemists",
+			"name": "Order of Alchemists",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
@@ -822,10 +875,25 @@
 				"Enduring Mutation|Alternate Blood Hunter|LLABH|Alchemist|LLABH|7|LLABH",
 				"Noxious Strike|Alternate Blood Hunter|LLABH|Alchemist|LLABH|13|LLABH",
 				"Rapid Mutation|Alternate Blood Hunter|LLABH|Alchemist|LLABH|18|LLABH"
-			]
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Passive Mutagens",
+					"featureType": [
+						"LLABH:M"
+					],
+					"progression": {
+						"3": 3,
+						"7": 5,
+						"13": 7,
+						"18": 9
+					}
+				}
+			],
+			"foundryImg": "icons/consumables/potions/round-decorated-snake-green.webp"
 		},
 		{
-			"name": "Path of the Pale Moon",
+			"name": "Order of the Pale Moon",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
@@ -835,10 +903,11 @@
 				"Lycan Warrior|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|7|LLABH",
 				"Feral Prowess|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|13|LLABH",
 				"Transformation Mastery|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|18|LLABH"
-			]
+			],
+			"foundryImg": "icons/environment/settlement/watchtower-castle-night.webp"
 		},
 		{
-			"name": "Path of the Salt & Iron",
+			"name": "Order of Salt & Iron",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
@@ -849,10 +918,11 @@
 				"Warrior Exorcist|Alternate Blood Hunter|LLABH|Salt & Iron|LLABH|13|LLABH",
 				"Sacrificial Offering|Alternate Blood Hunter|LLABH|Salt & Iron|LLABH|18|LLABH",
 				"Spectral Mastery|Alternate Blood Hunter|LLABH|Salt & Iron|LLABH|18|LLABH"
-			]
+			],
+			"foundryImg": "icons/commodities/metal/chain-silver.webp"
 		},
 		{
-			"name": "Path of the Undying Thirst",
+			"name": "Order of Undying Thirst",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
@@ -863,7 +933,43 @@
 				"Sinister Resilience|Alternate Blood Hunter|LLABH|Undying Thirst|LLABH|7|LLABH",
 				"Misty Escape|Alternate Blood Hunter|LLABH|Undying Thirst|LLABH|13|LLABH",
 				"Crimson Lord|Alternate Blood Hunter|LLABH|Undying Thirst|LLABH|18|LLABH"
-			]
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Blood Magic Specialist",
+					"featureType": [
+						"LLABH:BR"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Blood Rite Die",
+					"configuration": {
+						"identifier": "blood-rite-die",
+						"type": "dice",
+						"scale": {
+							"3": {
+								"die": 6
+							},
+							"5": {
+								"die": 8
+							},
+							"11": {
+								"die": 10
+							},
+							"17": {
+								"die": 12
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/skills/wounds/bone-broken-tooth-fang-red.webp"
 		},
 		{
 			"name": "Order of Witch Knights",
@@ -871,15 +977,59 @@
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
 			"shortName": "Witch Knight",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				7,
+				7,
+				7,
+				7
+			],
 			"spellcastingAbility": "int",
 			"subclassSpells": [
 				"blade ward",
-				"booming blade|tce",
+				"booming blade (alternate)|llspell",
 				"chill touch",
 				"control flames|xge",
 				"friends",
 				"frostbite",
-				"green-flame blade|tce",
+				"green-flame blade (alternate)|llspell",
 				"infestation|xge",
 				"lightning lure|tce",
 				"mage hand",
@@ -892,14 +1042,13 @@
 				"shocking grasp",
 				"spare the dying",
 				"sword burst|tce",
-				"thunderclap",
 				"toll the dead|xge",
-				"true strike",
+				"true strike (alternate)|llspell",
 				"absorb elements|xge",
 				"armor of agathys",
 				"arms of hadar",
 				"burning hands",
-				"cause fear",
+				"cause fear|xge",
 				"charm person",
 				"compelled duel",
 				"detect evil and good",
@@ -910,17 +1059,16 @@
 				"illusory script",
 				"inflict wounds",
 				"protection from evil and good",
-				"searing smite",
-				"shield",
-				"thunderous smite",
+				"searing smite (alternate)|llspell",
+				"shield (alternate)|llspell",
+				"thunderous smite (alternate)|llspell",
 				"unseen servant",
-				"witch bolt",
-				"branding smite",
+				"witch bolt (alternate)|llspell",
+				"branding smite (alternate)|llspell",
 				"cloud of daggers",
 				"crown of madness",
 				"darkness",
 				"earthbind|xge",
-				"enthrall",
 				"hold person",
 				"invisibility",
 				"mind spike|xge",
@@ -932,7 +1080,7 @@
 				"shatter",
 				"spider climb",
 				"suggestion",
-				"blinding smite",
+				"blinding smite (alternate)|llspell",
 				"counterspell",
 				"dispel magic",
 				"enemies abound|xge",
@@ -943,16 +1091,16 @@
 				"magic circle",
 				"major image",
 				"remove curse",
-				"spirit shroud|tce",
+				"spirit shroud (alternate)|llspell",
 				"vampiric touch",
 				"banishment",
 				"blight",
 				"charm monster|xge",
 				"dimension door",
 				"elemental bane",
-				"hallucinatory terrtain",
+				"hallucinatory terrain",
 				"phantasmal killer",
-				"staggering smite",
+				"staggering smite (alternate)|llspell",
 				"shadow of moil|xge",
 				"sickening radiance|xge"
 			],
@@ -1078,7 +1226,90 @@
 				"Sanguine Warrior|Alternate Blood Hunter|LLABH|Witch Knight|LLABH|7|LLABH",
 				"Bewitched Strikes|Alternate Blood Hunter|LLABH|Witch Knight|LLABH|13|LLABH",
 				"Profane Sacrifice|Alternate Blood Hunter|LLABH|Witch Knight|LLABH|18|LLABH"
-			]
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							{
+								"choose": "level=1|subclass=alternate blood hunter: witch knight (llabh)",
+								"count": 2
+							}
+						],
+						"5": [
+							{
+								"choose": "level=1|subclass=alternate blood hunter: witch knight (llabh)",
+								"count": 1
+							}
+						],
+						"7": [
+							{
+								"choose": "level=1;2|subclass=alternate blood hunter: witch knight (llabh)",
+								"count": 1
+							}
+						],
+						"9": [
+							{
+								"choose": "level=1;2|subclass=alternate blood hunter: witch knight (llabh)",
+								"count": 1
+							}
+						],
+						"13": [
+							{
+								"choose": "level=1;2;3|subclass=alternate blood hunter: witch knight (llabh)",
+								"count": 1
+							}
+						],
+						"17": [
+							{
+								"choose": "level=1;2;3|subclass=alternate blood hunter: witch knight (llabh)",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Spell Slot Level",
+					"configuration": {
+						"identifier": "level",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 1
+							},
+							"7": {
+								"value": 2
+							},
+							"13": {
+								"value": 3
+							},
+							"19": {
+								"value": 4
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "Spell Slots",
+					"configuration": {
+						"identifier": "slots",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 1
+							},
+							"4": {
+								"value": 2
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/magic/unholy/hand-weapon-glow-black-green.webp"
 		}
 	],
 	"subclassFeature": [
@@ -1087,7 +1318,7 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 5,
 			"subclassShortName": "Alchemist",
 			"subclassSource": "LLABH",
 			"level": 3,
@@ -1097,6 +1328,13 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Aberrant Alchemy|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3|LLABH"
+				},
+				{
+					"type": "inset",
+					"name": "Alchemists & Experimentation",
+					"entries": [
+						"以下页面包含的突变剂是由本序列的血猎人创造的最常见的突变剂示例。请与您的DM讨论根据您所杀死或研究过的怪物的能力来制作定制突变剂！"
+					]
 				}
 			]
 		},
@@ -1105,13 +1343,13 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 5,
 			"subclassShortName": "Alchemist",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你对炼金术的阴暗面有着深刻的了解。每当你进行使用炼金工具的能力检定时，你可以将骰出的7或更低的d20骰结果视为8。",
+				"你对炼金术的阴暗面有着深刻的了解。每当你进行能力检定，使用 {@item alchemist's supplies|phb} 的时候，你可以将7或更低的 {@dice d20} 掷骰结果视为8。",
 				"这种黑暗的炼金术知识让你能够用突变剂接种自己，这些突变剂在你的血液中潜伏，直到你调用它们的力量进行彻底的突变。",
 				{
 					"type": "entries",
@@ -1120,22 +1358,43 @@
 							"type": "entries",
 							"name": "Passive Mutagens",
 							"entries": [
-								"你已经用你选择的三种实验性突变原剂接种了你的血液，这些突变原剂来自于这个秘术团体描述末尾的突变原剂列表。在你突变之前，你不会获得这些突变原剂的好处。",
+								"你已经将你的血液接种了来自这个秘术团体描述末尾的{@filter Mutagens|optionalfeatures|feature type=LLABH:M}列表中选择的三种实验性突变剂。你在突变之前不会获得这些突变剂的好处。 (Occult Order)",
 								"在一次长休中，你可以使用炼金术工具，并花费1小时将你体内的被动突变物质替换为你选择的另一种突变物质。",
 								"当你达到7级时，你将获得两种额外的被动突变药剂，分别在13级和18级时再次获得。"
 							]
 						},
 						{
-							"type": "entries",
-							"name": "Mutate",
-							"entries": [
-								"作为一个奖励动作，你可以进行变异，获得你的被动变异剂数量等于你的体质调整值（最少为1）的效益，持续10分钟。",
-								"一旦你进行变异，你必须完成一次短休或长休才能再次变异。如果你没有剩余使用次数，你可以进行（Vital Sacrifice）来再次变异。"
-							]
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mutate|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3|LLABH"
 						}
 					]
 				}
-			]
+			],
+			"foundryImg": "icons/skills/toxins/bottle-open-vapors-pink.webp"
+		},
+		{
+			"name": "Mutate",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"entries": [
+				"作为一个奖励动作，你可以进行变异，获得你的被动变异剂数量等于你的体质调整值（最少为1）的效益，持续10分钟。",
+				"变异后，你必须完成短暂或长时间休息，才能再次变异。如果你没有剩余使用次数，你可以进行 (`0`) 次变异。"
+			],
+			"foundrySystem": {
+				"ability": "con",
+				"actionType": "util",
+				"duration": {
+					"value": 10,
+					"units": "minute"
+				},
+				"formula": "max(1, @mod)",
+				"range.units": "self"
+			},
+			"foundryImg": "icons/skills/wounds/injury-stapled-flesh-tan.webp"
 		},
 		{
 			"name": "Enduring Mutation",
@@ -1150,7 +1409,8 @@
 			"entries": [
 				"你邪恶炼金实验的效力增强了。在每次长休结束时，你可以选择你的被动突变(%num%)之一。你获得该突变的好处，就像你已经突变了一样，直到你的下一个长休结束。",
 				"然而，当你进行变异时，这个持久变异剂将算作你获得益处的变异剂之一。"
-			]
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
 		},
 		{
 			"name": "Noxious Strike",
@@ -1163,9 +1423,13 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"你可以利用血液中的奇异毒素武装自己，使敌人受害。每回合一次，当你用近战攻击命中一名生物时，你可以在该回合使用一个奖励动作，迫使其进行一次针对你的仪式豁免 DC 的体质豁免检定。如果未通过检定，则被致盲和眩晕1分钟。",
+				"你可以利用你体内的奇异毒素来折磨你的敌人。每个回合一次，当你用近战攻击命中一个生物时，你可以在该回合使用一个额外动作，迫使其进行一次体质豁免，豁免 DC 为你的契约豁免 DC。失败的话，它在 1 分钟内变成了 {@condition blinded} 和 {@condition stunned}。{@condition blinded}和{@condition stunned}要保持原文。",
 				"该生物可以在每个回合结束时以及每次受到伤害时重复进行豁免投掷，成功则效果结束。任何成功豁免此能力的生物在接下来的24小时内对此效果免疫。"
-			]
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/skills/wounds/illness-disease-glowing-green.webp"
 		},
 		{
 			"name": "Rapid Mutation",
@@ -1178,15 +1442,16 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"你已经掌握了你身体可变性的技巧。当你处于突变状态时，你可以使用一个额外动作，将你的一个主动突变物质替换为一个被动突变物质。"
-			]
+				"你掌握了身体变异的技巧。当你处于{@subclassFeature Mutate|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3||Mutated}时，你可以使用一个奖励动作，将你的一个主动变异换成你的一个被动变异。 (mutability)"
+			],
+			"foundryImg": "icons/skills/wounds/bone-broken-tooth-fang-red.webp"
 		},
 		{
 			"name": "Order of the Pale Moon",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 7,
 			"subclassShortName": "Pale Moon",
 			"subclassSource": "LLABH",
 			"level": 3,
@@ -1212,25 +1477,34 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 7,
 			"subclassShortName": "Pale Moon",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你可以控制你的狼人病，使你能够改变形态。选择一个CR 1或更低、没有飞行或游泳速度的野兽，作为你的狼人病基础动物的野兽形态。常见的野兽形态包括野猪、棕熊、狼、老虎和老鼠。",
-				"作为一个动作，你可以做出一次生命牺牲，变身为你的野兽形态。当你变身为野兽形态时，你要遵循《玩家手册》第3章中德鲁伊职业的野性变身规则。",
+				"你可以控制你的狼人病，使你能够改变形态。选择一个{@filter beast of CR 1 or lower, without a flying or swimming speed|bestiary|Challenge Rating=[&0;&1]|type=beast|speed type=!fly;!swim}，作为你的狼人病基于的动物的野兽形态。常见的野兽形态包括{@creature boar||boars}、{@creature brown bear||brown bears}、{@creature dire wolf||dire wolves}、{@creature tiger||tigers}和{@creature rat||rats}。",
+				"作为一个行动，你可以将 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 变身为你的野兽形态。当你变身为你的野兽形态时，你要遵循德鲁伊职业（Druid）在《玩家手册》第三章中找到的所有 {@classFeature Wild Shape|Druid||2} 规则。",
 				"如果你在野兽形态下做出生命牺牲，你会减少野兽形态和正常形态的最大生命值，但只会减少你野兽形态的当前生命值。",
 				"你的野兽形态变身持续时间最长为1小时。如果你的生命值降至0点，或者在你的回合使用一个奖励动作，你会提前恢复到正常形态。",
 				"一旦你变身为野兽形态，你必须完成一次短暂或长时间的休息，然后才能再次变身。"
-			]
+			],
+			"foundrySystem": {
+				"actionType": "utiL",
+				"duration": {
+					"value": 1,
+					"units": "hour"
+				},
+				"range.units": "self"
+			},
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp"
 		},
 		{
 			"name": "Hybrid Form",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 7,
 			"subclassShortName": "Pale Moon",
 			"subclassSource": "LLABH",
 			"level": 3,
@@ -1246,81 +1520,110 @@
 					]
 				},
 				"你的混合形态变身持续1分钟。如果你的生命值降至0点，或者在你的回合使用一个奖励动作，你会提前恢复到正常形态。",
-				"一旦你变身为你的混合形态，你必须完成一次短休或长休才能再次变身。如果你没有使用次数了，你可以做出一次生命牺牲来再次变身为你的混合形态。"
-			]
+				"一旦你变换成你的混合形态，你必须完成一次短暂或长时间的休息，然后才能再次变换。如果你没有剩余使用次数，你可以做一个 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 来再次变换成你的混合形态。 (Hybrid Form)"
+			],
+			"foundrySystem": {
+				"actionType": "util",
+				"damage.parts": [
+					[
+						"@details.level",
+						"temphp"
+					]
+				],
+				"range.units": "self"
+			},
+			"foundryImg": "icons/creatures/mammals/humanoid-fox-cat-archer.webp"
 		},
 		{
 			"name": "Feral Senses",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 7,
 			"subclassShortName": "Pale Moon",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你的狼人病加强了你的原始感官。当你进行基于听觉、视觉或嗅觉的感知或生存的智力（感知）或智力（生存）检定时，你的检定获得一个奖励，数值等同于你的仪式骰的一个骰值。"
-			]
+				"你的狼人病提升了你的原始感知。当你进行基于你的听觉、视觉或嗅觉的智力（{@skill Perception}）或智力（{@skill Survival}）检定时，你的检定获得一个等同于你仪式骰的骰值的奖励。"
+			],
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-red.webp"
 		},
 		{
 			"name": "Lycan Warrior",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 7,
 			"subclassShortName": "Pale Moon",
 			"subclassSource": "LLABH",
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你能够从你的诅咒中释放更多力量。当你处于野兽形态或半人半兽形态时，你获得以下效益：",
+				"你能够从你的诅咒中释放更多力量。当你在{@subclassFeature Beast Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3||Beast}或{@subclassFeature Hybrid Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3}时，你获得以下效益：",
 				{
 					"type": "list",
 					"items": [
 						"你的野兽形态和混合形态的武器攻击被视为魔法攻击，以克服对非魔法攻击和伤害的抗性和免疫。",
 						"你获得对非魔法和非镀银攻击造成的钝击、穿刺和砍砍伤害的抗性。",
-						"如果你持有一把(Crimson Offering)武器，你可以将效果转移给你的形态武器。效果会在你变回原样时返回到你的武器上。"
+						"如果你持有一个{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}的武器，你可以将效果转移到你形态的武器上。效果在你变形结束时返回到你的武器上。"
 					]
 				}
-			]
+			],
+			"foundryImg": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp"
 		},
 		{
 			"name": "Feral Prowess",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 7,
 			"subclassShortName": "Pale Moon",
 			"subclassSource": "LLABH",
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"你的诅咒助长了你的嗜血欲望，并使你能够轻易抵御轻伤。在你处于野兽形态或混合形态时的每个回合开始时，你可以回复等同于你体质调整值的生命值（最少为1点），只要你的生命值至少为1点且少于一半的生命值。",
-				"此外，在野兽形态或混合形态下，对被深红印记标记的生物进行攻击时，你获得优势。"
-			]
+				"你的诅咒激发了你的杀气，并使你能够对付轻伤。每当你的回合开始时，如果你在{@subclassFeature Beast Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3||Beast}或{@subclassFeature Hybrid Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3}，你回复的生命值等同于你的体质调整值（至少为1），只要你至少有1点生命值且生命值少于一半。{@subclassFeature Beast Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3||Beast}和{@subclassFeature Hybrid Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3}是DND运行组规则中的术语，保留英文翻译后的括号。",
+				"根据当地的语言习惯，文本中像 (%num%) 这样的内容在翻译时应该保持为 (%num%)。\n翻译遵守 dnd 运行组规则，专有名词在翻译后应该用英文括号 `()` 保留。\n\n同时，在野兽形态或混合形态时，你对被 {@classFeature Crimson Brand|Alternate Blood Hunter|LLABH|6} 标记的生物进行攻击时有优势。"
+			],
+			"foundrySystem": {
+				"ability": "con",
+				"actionType": "heal",
+				"activation": {
+					"type": "special",
+					"condition": "At the start of each of your turns while you are in Beast or Hybrid Form, so long as you have at least 1 hit point and less than half your hit points"
+				},
+				"damage.parts": [
+					[
+						"max(1, @mod)",
+						"healing"
+					]
+				]
+			},
+			"foundryImg": "icons/creatures/mammals/wolf-shadow-black.webp"
 		},
 		{
 			"name": "Transformation Mastery",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 7,
 			"subclassShortName": "Pale Moon",
 			"subclassSource": "LLABH",
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"你已经完全掌握了流淌在你血液中的狼人诅咒。你可以随意变身为你的兽形态或混合形态，无需进行生命牺牲。而且，你的兽形态和混合形态可以持续无限期。",
-				"最后，你可以在你的回合中将冲刺动作作为一个奖励动作，只要你结束这个移动时离你能看到的敌对生物更近。"
-			]
+				"你已经完全掌握了流淌在你血液中的狼人诅咒。你可以随意变身成你的{@subclassFeature Beast Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3}或者你的{@subclassFeature Hybrid Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3}，无需做出{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}就可以。而且，你的野兽形态和混合形态将持续无限期。\n",
+				"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译时仍然应该输出为 (%num%)。\n\n在符合 dnd 跑团规则的前提下进行翻译，专有名词在翻译后应该在 `()` 中保留英文。\n\n最后，只要你在你的回合内结束这次移动时更靠近一个你能看到的敌对生物，你可以把 {@action Dash} 动作作为一个额外动作执行。"
+			],
+			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp"
 		},
 		{
 			"name": "Order of Salt & Iron",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 8,
 			"subclassShortName": "Salt & Iron",
 			"subclassSource": "LLABH",
 			"level": 3,
@@ -1334,6 +1637,13 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Warrior of the Dawn|Alternate Blood Hunter|LLABH|Salt & Iron|LLABH|3|LLABH"
+				},
+				{
+					"type": "inset",
+					"name": "Exorcists, Clerics, & Gods",
+					"entries": [
+						"盐与铁秩序内的传统声称他们的秩序创建早于神祇本身。他们声称在第一批牧师和圣骑士出现之前，就已经与不死之物抗衡。 (Order of Salt & Iron)"
+					]
 				}
 			]
 		},
@@ -1342,30 +1652,35 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 8,
 			"subclassShortName": "Salt & Iron",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
 				"你的灵魂被可怕的力量所污染。你所需的睡眠、食物和饮料量仅为你种族平均成员的一半。",
-				"此外，你可以使用一个奖励动作进入一个临时的幻影状态，在你当前回合结束前持续。在这种状态下，你对来自非魔法攻击的所有钝击、穿刺和斩击伤害具有抗性，并且你可以穿过固体物体和生物，就像它们是艰难地形一样。如果你在生物或物体内结束你的回合，你会立即被推到最近的未占用空间，并且每移动5英尺，你都会受到1d10的力量伤害。",
-				"一旦你使用了这个特性，你必须完成一次短休或长休才能再次使用它。当你没有剩余次数可以使用这个特性时，你可以作为一个奖励动作进行一次生命牺牲，以再次使用它。",
+				"根据当地的语言习惯，文本中像 (%num%) 这样的内容在翻译时仍应输出为 (%num%)。\n\n此外，你可以使用一个额外动作进入临时的光谱状态，该状态持续到你当前回合的结束。在此状态下，你对所有非魔法攻击的钝击、刺击和斩击伤害具有抗性，你可以穿过固体物体和生物，就像它们是困难地形一样。如果你在生物或物体内结束你的回合，你会立即被移动到最近的未占用空间，并承受每移动 5 英尺所造成的 {@damage 1d10} 的力量伤害。",
+				"一旦你使用了这个特性，你必须完成短休或长休，然后才能再次使用它。当你没有剩余次数可以使用这个特性时，你可以在作为奖励行动时将{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}重置以再次使用它。(%feature%)符合本地语言习惯，文本中像(%num%)这样的内容在翻译时仍应输出为(%num%)。翻译遵循DND跑团规则，专有名词在翻译后应保留英文括号中的内容。",
 				"当你在这个职业中达到特定等级时，这种幻影状态的持续时间会增加：在7级时持续1分钟，在13级时持续1小时，在18级时，你会一直保持在这个幻影状态中，直到你使用一个奖励动作来结束它。"
-			]
+			],
+			"foundrySystem": {
+				"duration.units": null,
+				"range.units": "self"
+			},
+			"foundryImg": "icons/magic/light/projectile-smoke-blue.webp"
 		},
 		{
 			"name": "Warrior of the Dawn",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 8,
 			"subclassShortName": "Salt & Iron",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"当你对抗不死生物时，你的血魔法特别强大。当你使用(Crimson Offering)时，你可以赋予武器你所属教团独特的辐射魔法，为其在持续时间内提供以下额外效果：",
+				"你的血魔法在对抗不死生物时特别强大。当你使用{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}时，你可以赋予武器你所属组织标志性的光辉魔法，为其在持续时间内增加以下额外效果：(Order)",
 				{
 					"type": "list",
 					"items": [
@@ -1374,74 +1689,106 @@
 						"这把武器在半径为20英尺的范围内散发明亮的光芒，再额外照亮20英尺的范围。"
 					]
 				}
-			]
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you use Crimson Offering"
+				}
+			},
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-blue-yellow.webp"
 		},
 		{
 			"name": "Curse Specialist",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 8,
 			"subclassShortName": "Salt & Iron",
 			"subclassSource": "LLABH",
 			"level": 7,
 			"header": 2,
 			"entries": [
 				"你对不死族的知识和经验增强了你的血之魔法的力量。你可以用你的血之仪式(Blood Rites)瞄准任何生物，即使他们的血管里没有血。",
-				"另外，在每次长休结束时，你可以选择一个你已掌握的血脉仪式。在你必须进行重要牺牲才能再次使用它之前，你可以额外再激活该仪式一次。"
-			]
+				"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译时应保持为 (%num%)。\n\n此外，每次完成一次长休时，你可以选择一个你已知的血仪。你可以再多使用一次该仪式，直到你必须再次进行 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 的检定才能再次使用它。"
+			],
+			"foundryImg": "icons/skills/toxins/poison-skull-herbs-bottle-pink.webp"
 		},
 		{
 			"name": "Warrior Exorcist",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 8,
 			"subclassShortName": "Salt & Iron",
 			"subclassSource": "LLABH",
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"你利用血魔法的力量驱逐外域生物的影响。作为你回合的奖励动作，你可以选择一个在30英尺内、能听到你声音的愿意生物，该生物目前被魅惑、恐惧或被魔法控制，立即结束其中一种效果。",
+				"你运用血魔法的力量驱逐外域生物的影响。作为你回合的额外行动，你可以选择一个距离你30英尺内、能听到你说话的、目前处于{@condition charmed}、{@condition frightened} 或被魔法控制状态的愿意生物，并立即结束其中一种效果。 {@condition charmed}、{@condition frightened} 的翻译需遵循本地语言习惯，并且将其保留为英文括号内的内容。",
 				"如果造成目标这种状态的生物也在你的30英尺内，它必须通过一次以你的仪式豁免 DC 为基准的感知豁免检定，否则它会受到等同于你仪式骰的三次掷骰结果的辐射伤害。",
-				"使用此特性后，您必须完成一次短休或长休，才能再次使用它。当您没有剩余使用次数时，您可以进行一次生命牺牲，以再次使用此特性。"
-			]
+				"一旦您使用此功能，您必须完成一次短休息或长休息，然后才能再次使用它。当您没有剩余使用次数时，您可以进行{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来再次使用此功能。 (dnd跑团规则)"
+			],
+			"foundrySystem": {
+				"damages.parts": [
+					[
+						"3",
+						"radiant"
+					]
+				],
+				"range": {
+					"value": 30,
+					"units": "feet"
+				},
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-impact-blue.webp"
 		},
 		{
 			"name": "Sacrificial Offering",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 8,
 			"subclassShortName": "Salt & Iron",
 			"subclassSource": "LLABH",
 			"level": 18,
 			"header": 2,
 			"entries": [
 				"你可以牺牲自己的生命力来抵抗死亡的掌控。当你的生命值降至0点但没有立即死亡时，你可以选择减少你的最大生命值，数值为你的仪式骰的一次掷骰结果，而将生命值降至1点。"
-			]
+			],
+			"foundrySystem": {
+				"actionType": "util",
+				"activation": {
+					"type": "special",
+					"condition": "When you would fall to 0 hit points but are not killed outright"
+				},
+				"formula": "1@scale.alternate-blood-hunter.rite-die"
+			},
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-blue.webp"
 		},
 		{
 			"name": "Spectral Mastery",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 8,
 			"subclassShortName": "Salt & Iron",
 			"subclassSource": "LLABH",
 			"level": 18,
 			"header": 2,
 			"entries": [
 				"你行走在生者和死者之间。每过10年，你会变老1年，而你不再需要睡觉、进食或饮水。当你花费6小时进行轻度活动时，你会获得长休息的益处。",
-				"此外，当你处于你的幽灵状态时，你获得一个飞行速度，等同于你的行走速度，并且可以悬停。"
-			]
+				"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍应保持为 (%num%)。\n\n此外，当你处于你的 {@subclassFeature Spectral Nature|Alternate Blood Hunter|LLABH|Salt & Iron|LLABH|3||Spectral State} 时，你获得与你步行速度相同的飞行速度，并且可以悬停。"
+			],
+			"foundryImg": "icons/creatures/magical/spirit-undead-winged-ghost.webp"
 		},
 		{
 			"name": "Order of Undying Thirst",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 9,
 			"subclassShortName": "Undying Thirst",
 			"subclassSource": "LLABH",
 			"level": 3,
@@ -1455,6 +1802,41 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Vampiric Nature|Alternate Blood Hunter|LLABH|Undying Thirst|LLABH|3|LLABH"
+				},
+				{
+					"type": "inset",
+					"name": "Optional Rule: True Vampirism",
+					"entries": [
+						"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译符合 dnd 选角规则，专有名词应在翻译后保留英文的 `()`。\n\n真正的吸血鬼力量伴随着巨大的代价。如果你想扮演真正的吸血鬼，在加入这个秘术组织时，你将获得 {@b ALL} 以下能力：",
+						{
+							"type": "entries",
+							"name": "Deathless Nature",
+							"entries": [
+								"你不需要呼吸。（不需要呼吸）"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spider Climb",
+							"entries": [
+								"你的攀爬速度等同于你的行走速度。当你达到第七级时，你可以在垂直表面上移动，包括倒挂在天花板上，而且双手仍然自由。（Dungeons & Dragons）"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Superior Darkvision",
+							"entries": [
+								"你在黑暗和昏暗条件下拥有卓越的视力。在你周围 120 英尺范围内的昏暗光线中，你能够像在明亮的光线下一样看清楚，而在黑暗中则能够像在昏暗的光线下一样看清楚。在黑暗中，你无法辨别颜色，只能看到灰色调。 (你有 superior vision in dark and dim conditions. 你可以在 dim light 中看到 120 feet 以内的范围，就好像它是 bright light，而在 darkness 中看到的就好像是 dim light。在 darkness 中你无法分辨颜色，只能看到 gray tones.)"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sunlight Sensitivity",
+							"entries": [
+								"在符合当地语言习惯的前提下，文本中像 (%num%) 这样的内容在翻译中应保持为 (%num%)。\n- 翻译需遵循DND跑团规则，专有名词在翻译后应用括号`()`保留英文。\n\n当你、你攻击的目标或者你试图看见的东西处于直射阳光下时，你的攻击检定和依赖视觉的感知 ({@skill Perception}) 检定具有劣势。"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -1463,37 +1845,39 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 9,
 			"subclassShortName": "Undying Thirst",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
 				"你的诅咒让你对血魔法有更强的控制力。你学会了一个额外的血脉仪式，但它不计入你已知的血脉仪式总数中。",
-				"另外，在执行血脉仪式时，当你投掷一个仪式骰(Rite Die)时，你使用的是一个d6，而不是d4。在特定等级时，你为血脉仪式投掷的仪式骰再次增加：在5级时(d8)，11级时(d10)，和17级时(d12)。",
-				"最后，当你使用(Crimson Offering)时，你可以选择额外伤害为死灵伤害。"
-			]
+				"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中应该保持为(%num%)。\n\n在执行血脉仪式时，当你掷出仪式骰(Rite Die)时，你应该使用{@dice d6}，而不是{@dice d4}。在某些等级上，你为血脉仪式掷出的仪式骰再次增加：在第5级({@dice d8})，第11级({@dice d10})，以及第17级({@dice d12})。",
+				"根据当地语言习惯，文本中像 (%num%) 这样的内容在翻译中应保持为 (%num%)。\n\n翻译需符合 DND 桌游群规，并且专有名词在翻译后应在 `()` 中保留英文。\n\n最后，当你使用 {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} 时，你可以选择额外伤害为死灵属性。"
+			],
+			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red.webp"
 		},
 		{
 			"name": "Vampiric Nature",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 9,
 			"subclassShortName": "Undying Thirst",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
 				"你的组织受到的古老疾病已经无法逆转地改变了你的生理特征。你的牙齿变长成为尖牙，对你来说算作自然武器。这些尖牙使用你的力量调整值进行攻击和伤害骰投掷，击中目标时，它们造成的穿刺伤害等同于你的仪式骰的一次投掷。"
-			]
+			],
+			"foundryImg": "icons/creatures/abilities/fang-tooth-blood-red.webp"
 		},
 		{
 			"name": "Essence Drain",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 9,
 			"subclassShortName": "Undying Thirst",
 			"subclassSource": "LLABH",
 			"level": 7,
@@ -1501,45 +1885,66 @@
 			"entries": [
 				"你可以从你的敌人身上吸取生命精华。当你用毒牙攻击命中一只生物时，你可以恢复等于造成穿刺伤害的最大生命值的数量的生命值。",
 				"使用此功能恢复最大生命值后，必须完成短休或长休，才能再次使用。"
-			]
+			],
+			"foundrySystem": {
+				"actionType": "heal",
+				"activation.condition": "When you hit a creature with a fang attack"
+			},
+			"foundryImg": "icons/magic/unholy/hand-light-pink.webp"
 		},
 		{
 			"name": "Sinister Resilience",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 9,
 			"subclassShortName": "Undying Thirst",
 			"subclassSource": "LLABH",
 			"level": 7,
 			"header": 2,
 			"entries": [
 				"你的吸血鬼力量在黑暗中增强，在阳光下减弱。当你使用血脉仪式或其他血猎者特性对生物造成死灵伤害时，你获得的临时生命值等同于所造成的死灵伤害。",
-				"当你从这个特性获得临时生命值时，你对来自非魔法和非镀银攻击的死灵、毒素、以及钝击、穿刺和斩击伤害具有抗性，并且对中毒状态免疫。",
+				"在符合当地语言习惯的情况下，文本中的类似 (%num%) 的部分应在翻译后仍保留为 (%num%)。\n\n当你拥有此特性提供的临时生命值时，你对来自非魔法和非银镀攻击的死灵、毒素、以及钝击、穿刺和斩击伤害具有抗性，并且对 {@condition poisoned} 状态免疫。",
 				"然而，如果你受到辐射伤害，那么你从这个特性获得的所有临时生命值都会立即消失，并且辐射伤害会转而作用于你的普通生命值。"
-			]
+			],
+			"foundrySystem": {
+				"actionType": "heal",
+				"activation": {
+					"type": "special",
+					"condition": "When you deal necrotic damage to a creature with a Blood Rite or another Blood Hunter feature"
+				}
+			},
+			"foundryImg": "icons/magic/unholy/orb-swirling-pink.webp"
 		},
 		{
 			"name": "Misty Escape",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 9,
 			"subclassShortName": "Undying Thirst",
 			"subclassSource": "LLABH",
 			"level": 13,
 			"header": 2,
 			"entries": [
 				"你邪恶的力量让你能够躲避敌人。当你能看见的生物用攻击命中你时，你可以使用你的反应变成一团旋转的雾气。触发的攻击自动未命中，你会立刻重新出现在你能看见的30英尺内的一个空地上。",
-				"使用此反应后，必须完成短休或长休才能再次使用。当你没有剩余使用次数时，你可以进行（Vital Sacrifice）以再次使用此反应。"
-			]
+				"一旦你使用了这个反应，你必须完成一个短时间或长时间的休息，然后才能再次使用它。当你没有剩余使用次数时，你可以做一个{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来再次使用这个反应。"
+			],
+			"foundrySystem": {
+				"activation.condition": "When a creature you can see hits you with an attack",
+				"range": {
+					"value": 30,
+					"units": "feet"
+				}
+			},
+			"foundryImg": "icons/magic/air/wind-tornado-wall-blue.webp"
 		},
 		{
 			"name": "Crimson Lord",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 9,
 			"subclassShortName": "Undying Thirst",
 			"subclassSource": "LLABH",
 			"level": 18,
@@ -1554,14 +1959,15 @@
 						"每过10年，你的身体只会变老1年。"
 					]
 				}
-			]
+			],
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
 		},
 		{
 			"name": "Order of Witch Knights",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 10,
 			"subclassShortName": "Witch Knight",
 			"subclassSource": "LLABH",
 			"level": 3,
@@ -1583,7 +1989,7 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 10,
 			"subclassShortName": "Witch Knight",
 			"subclassSource": "LLABH",
 			"level": 3,
@@ -1633,65 +2039,413 @@
 						}
 					]
 				}
-			]
+			],
+			"foundrySystem": {
+				"actionType": null,
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/sundries/books/book-face-blue.webp"
 		},
 		{
 			"name": "Crimson Smite",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 4,
+			"page": 10,
 			"subclassShortName": "Witch Knight",
 			"subclassSource": "LLABH",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"魔法渗入你牺牲的血液，赋予武器力量。你可以使用任何由(Crimson Offering)赋予力量的武器作为(Witch Knight)法术的施法焦点。",
+				"魔法渗入你牺牲的血液，赋予你的武器力量。你可以使用任何由{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}赋予力量的武器，作为巫骑士法术的施法焦点。",
 				"此外，当你用(`Crimson Offering`)赋予力量的武器攻击命中目标时，你可以消耗一个你的契约魔法法术位，对目标造成额外伤害，伤害类型与(`Crimson Offering`)相同。额外伤害为你的(`Rite Die`)骰掷结果两次，对于一个1级法术位，再额外骰掷一次(`Rite Die`)，每高于1级的法术位再额外骰掷一次(`Rite Die`)。"
-			]
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you hit a target with a weapon attack empowered by Crimson Offering"
+				},
+				"consume": {
+					"amount": 1,
+					"target": "spells.pact.value",
+					"type": "attribute"
+				},
+				"damage.parts": [
+					[
+						"(1+@scale.order-of-witch-knights.level)@scale.alternate-blood-hunter.rite-die",
+						""
+					]
+				]
+			},
+			"foundryImg": "icons/skills/wounds/blood-spurt-spray-red.webp"
 		},
 		{
 			"name": "Sanguine Warrior",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 11,
 			"subclassShortName": "Witch Knight",
 			"subclassSource": "LLABH",
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你可以在武器攻击中无缝地编织次要法术。当你在你的回合使用攻击动作时，你可以在其中一个攻击的位置施放一项女巫骑士(Witch Knight)的零级法术。",
-				"此外，当你在持有一把由(Crimson Offering)赋予力量的武器时施放(Witch Knight)法术，你可以使该法术造成(Crimson Offering)对应的伤害类型，而不是该法术的普通伤害。"
-			]
+				"你可以在武器攻击中无缝地编织小型咒语。当你在你的回合中采取行动时，你可以在你的攻击之一位置上施放一个巫骑战士的小咒语。",
+				"根据当地语言习惯，并且像(%num%)这样的文本在翻译中应保持为(%num%)。\n\n此外，当你在持有一件由{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}强化的武器时施放巫士骑士法术时，你可以使该法术造成你的赤色献祭的伤害类型取代该法术的常规伤害。 (Witch Knight)"
+			],
+			"foundryImg": "icons/magic/unholy/projectile-helix-blood-red.webp"
 		},
 		{
 			"name": "Bewitched Strikes",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 11,
 			"subclassShortName": "Witch Knight",
 			"subclassSource": "LLABH",
 			"level": 13,
 			"header": 2,
 			"entries": [
 				"你体内的邪术魔法渗入你的武器。当你用武器攻击命中一名生物时，该生物在你的下一个回合结束前对你施放的血脉仪式或法术的下一个豁免检定有劣势。"
-			]
+			],
+			"foundryImg": "icons/magic/unholy/strike-beam-blood-large-red-teal.webp"
 		},
 		{
 			"name": "Profane Sacrifice",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
-			"page": 5,
+			"page": 11,
 			"subclassShortName": "Witch Knight",
 			"subclassSource": "LLABH",
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"18级女巫骑士团(`Order of Witch Knights`)特性 你可以将你的敌人的死亡献祭给你的奥术力量，以增强你的能力。当一个生物在你30英尺内死亡时，你可以使用一次反应来恢复一个已用掉的契约魔法法术位，或者获得临时生命值，数值等同于你的仪式骰(`Rite Die`)掷出的数值加上你的智力调整值。",
+				"你可以把你的敌人的死奉献给你的邪能力量，以提升你的能力。当有生物在你30英尺内死亡时，你可以使用一次反应来恢复一个已耗尽的契约魔法法术位，或者获得临时生命值，数值等同于你的仪式骰的一次投掷加上你的智力修正。 (Eldritch Power)",
 				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。"
+			],
+			"foundrySystem": {
+				"ability": "int",
+				"activation": {
+					"cost": 1,
+					"type": "reaction",
+					"condition": "When a creature dies within 30 feet of you"
+				},
+				"damage.parts": [
+					[
+						"@scale.alternate-blood-hunter.rite-die + @mod",
+						"temphp"
+					]
+				]
+			},
+			"foundryImg": "icons/magic/unholy/strike-body-explode-disintegrate.webp"
+		}
+	],
+	"foundrySubclassFeature": [
+		{
+			"name": "Hybrid Form",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Pale Moon",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"name": "Walking Speed Bonus",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+10"
+						}
+					]
+				}
+			],
+			"subEntities": {
+				"item": [
+					{
+						"name": "Natural Weapons (Hybrid Form Only)",
+						"type": "M",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"ability": "str",
+							"equipped": true,
+							"damage.parts": [
+								[
+									"2@scale.alternate-blood-hunter.rite-die + @mod",
+									"slashing"
+								]
+							]
+						},
+						"foundryImg": "icons/creatures/abilities/fangs-teeth-bite.webp"
+					}
+				]
+			}
+		},
+		{
+			"name": "Lycan Warrior",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Pale Moon",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"effects": [
+				{
+					"name": "Physical Resistances",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "sil"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spectral Nature",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Salt & Iron",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"name": "Physical Resistances",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Warrior of the Dawn",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Salt & Iron",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"name": "Necrotic Resistance",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spectral Mastery",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Salt & Iron",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"effects": [
+				{
+					"name": "Flying Speed",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						},
+						{
+							"key": "system.attributes.movement.hover",
+							"mode": "CUSTOM",
+							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vampiric Nature",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Undying Thirst",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"subEntities": {
+				"item": [
+					{
+						"name": "Vampiric Fangs",
+						"type": "M",
+						"foundrySystem": {
+							"type.value": "natural",
+							"ability": "str",
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1@scale.alternate-blood-hunter.rite-die + @mod",
+									"piercing"
+								]
+							]
+						},
+						"foundryImg": "icons/creatures/abilities/fang-tooth-blood-red.webp"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sinister Resilience",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Undying Thirst",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"effects": [
+				{
+					"name": "Temp HP Buffs",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "sil"
+						},
+						{
+							"key": "system.traits.ci.value",
+							"mode": "ADD",
+							"value": "poisoned"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Crimson Lord",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Undying Thirst",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"effects": [
+				{
+					"name": "Flying Speed",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact Magic",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"subclassShortName": "Witch Knight",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"effects": [
+				{
+					"name": "Pact Magic",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.spells.pact.level",
+							"mode": "OVERRIDE",
+							"value": "@scale.order-of-witch-knights.level"
+						},
+						{
+							"key": "system.spells.pact.max",
+							"mode": "OVERRIDE",
+							"value": "@scale.order-of-witch-knights.slots"
+						}
+					]
+				}
 			]
 		}
 	],
@@ -1699,68 +2453,172 @@
 		{
 			"name": "Aberrant Sight",
 			"source": "LLABH",
-			"page": 1,
+			"page": 6,
 			"foundryImg": "icons/environment/creatures/monster-tentacles-eye-purple.webp",
 			"featureType": [
 				"LLABH:M"
 			],
 			"entries": [
-				"你长出了eldritch（奥术的）眼柄，或者显现出额外的眼睛。你获得了60英尺半径内的暗视。如果你已经拥有暗视，其范围增加60英尺。在这个范围内，你也可以看穿魔法黑暗。"
+				"你长出了怪异的眼柄或者显现出额外的眼睛。你的视野扩展至60英尺范围内。如果你已经拥有黑暗视觉，其范围将增加60英尺。在这个范围内，你还可以穿透魔法黑暗。 (DND Running Group)"
+			],
+			"foundryEffects": [
+				{
+					"name": "Darkvision",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.senses.darkvision",
+							"mode": "ADD",
+							"value": "+60"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Aquatic Adaptation",
 			"source": "LLABH",
-			"page": 1,
+			"page": 6,
 			"foundryImg": "icons/creatures/fish/deepsea-creature-glowing-blue.webp",
 			"featureType": [
 				"LLABH:M"
 			],
 			"entries": [
 				"你长出了不自然的鳃，或者你的皮肤变得多孔且具有两栖特性。你获得一个等同于你行走速度的游泳速度，并且你可以在水中呼吸。"
+			],
+			"foundryEffects": [
+				{
+					"name": "Swimming Speed",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.swim",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Deviant Glide",
 			"source": "LLABH",
-			"page": 1,
+			"page": 6,
 			"foundryImg": "icons/commodities/biological/wing-lizard-pink-purple.webp",
 			"featureType": [
 				"LLABH:M"
 			],
 			"entries": [
-				"你长出类似蝙蝠的皮翼，可以用来滑翔。当你从至少5英尺高的地方摔落且没有失去行动能力时，你可以在计算摔落伤害时减少最多100英尺的距离，并且你可以在每下落1英尺的同时水平移动2英尺。"
+				"你长出了类似蝙蝠的皮翼，用于滑翔。当你从至少5英尺高的地方摔落并且不是{@condition incapacitated}时，你在计算摔落伤害时可以减少最多100英尺的距离，并且你可以在水平方向上每摔落1英尺移动2英尺。{@condition incapacitated}"
 			]
 		},
 		{
 			"name": "Elemental Resistance",
 			"source": "LLABH",
 			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
-			"page": 1,
+			"page": 6,
 			"featureType": [
 				"LLABH:M"
 			],
 			"entries": [
 				"你的实验使你对元素具有更强的抵抗力。你在进行变异时可以选择获得对酸、寒冷、火焰、毒素或闪电伤害的抗性（你的选择）。"
+			],
+			"foundryEffects": [
+				{
+					"name": "Acid Resistance",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "acid"
+						}
+					]
+				},
+				{
+					"name": "Cold Resistance",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				},
+				{
+					"name": "Fire Resistance",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "fire"
+						}
+					]
+				},
+				{
+					"name": "Poison Resistance",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "poison"
+						}
+					]
+				},
+				{
+					"name": "Lightning Resistance",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "lightning"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Enhanced Movement",
 			"source": "LLABH",
-			"page": 1,
+			"page": 6,
 			"foundryImg": "icons/commodities/bones/hooves-cloven-grey.webp",
 			"featureType": [
 				"LLABH:M"
 			],
 			"entries": [
 				"你的腿变得异常粗壮或强壮。你的行走速度增加了，增加值等于你体质调整值的5倍（最少为5英尺）。"
+			],
+			"foundryEffects": [
+				{
+					"name": "Walking Speed Bonus",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+5*max(1, @abilities.con.mod)"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Oozing Form",
 			"source": "LLABH",
 			"foundryImg": "icons/creatures/slimes/slime-face-hollow-green.webp",
-			"page": 1,
+			"page": 6,
 			"featureType": [
 				"LLABH:M"
 			],
@@ -1771,20 +2629,39 @@
 		{
 			"name": "Unnatural Physicality",
 			"source": "LLABH",
-			"page": 1,
+			"page": 6,
 			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp",
 			"featureType": [
 				"LLABH:M"
 			],
 			"entries": [
-				"你的肌肉充满有毒化学物质。你在进行任何力量（体育）和敏捷（杂耍）检定时，获得一个等于你仪式骰的点数的奖励。"
+				"你的肌肉充斥着有毒化学物质。你在任何力量（{@skill Athletics}）和灵巧（{@skill Acrobatics}）检定中获得一个奖励，等同于你的仪式骰投掷的结果。"
+			],
+			"foundryEffects": [
+				{
+					"name": "Athletics & Acrobatics Bonus",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.skills.ath.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						},
+						{
+							"key": "system.skills.acr.bonuses.check",
+							"mode": "ADD",
+							"value": "+1@scale.alternate-blood-hunter.rite-die"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Acidic Bile",
 			"source": "LLABH",
 			"foundryImg": "icons/magic/acid/dissolve-vomit-green-brown.webp",
-			"page": 2,
+			"page": 6,
 			"featureType": [
 				"LLABH:M"
 			],
@@ -1794,13 +2671,24 @@
 				}
 			],
 			"entries": [
-				"你可以从嘴里喷射出腐蚀性酸液。你学会了《酸溅》cantrip，使用体质作为你的施法属性。当你施放这个cantrip时，你对伤害骰获得一个等同于你体质调整值的加值（最少+1）。（Constitution）"
+				"你可以从口中喷射出腐蚀性酸液。你学会了{@spell acid splash}法术，使用体质作为你的施法能力修正。当你施放此法术时，你对伤害骰获得的奖励等同于你的体质修正（最少为+1）。（DND游戏规则）"
+			],
+			"additionalSpells": [
+				{
+					"name": "Acidic Bile",
+					"ability": "con",
+					"known": {
+						"_": [
+							"acid splash"
+						]
+					}
+				}
 			]
 		},
 		{
 			"name": "Corrosive Secretions",
 			"source": "LLABH",
-			"page": 2,
+			"page": 6,
 			"foundryImg": "icons/magic/acid/projectiles-trio-salvo.webp",
 			"featureType": [
 				"LLABH:M"
@@ -1812,12 +2700,21 @@
 			],
 			"entries": [
 				"当你受到攻击并且攻击者在30英尺内时，你的伤口会释放出腐蚀性酸液。你可以使用你的反应，对攻击者造成酸性伤害，伤害值为你的仪式骰子的一次投掷结果加上你的体质调整值。"
-			]
+			],
+			"foundrySystem": {
+				"ability": "con",
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die + @mod",
+						"acid"
+					]
+				]
+			}
 		},
 		{
 			"name": "Inoculated Vigor",
 			"source": "LLABH",
-			"page": 2,
+			"page": 6,
 			"foundryImg": "icons/commodities/biological/organ-liver-red.webp",
 			"featureType": [
 				"LLABH:M"
@@ -1828,13 +2725,32 @@
 				}
 			],
 			"entries": [
-				"你获得对酸性和毒素伤害的免疫，并且在豁免投掷中获得优势以抵抗中毒状态。"
+				"你获得对酸性和毒素伤害的免疫，并且在抵抗 {@condition poisoned} 状态的豁免投掷中具有优势。 (dnd running group)"
+			],
+			"foundryEffects": [
+				{
+					"name": "Acid and Poison Immunity",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.traits.di.value",
+							"mode": "ADD",
+							"value": "acid"
+						},
+						{
+							"key": "system.traits.di.value",
+							"mode": "ADD",
+							"value": "poison"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Toxic Vitality",
 			"source": "LLABH",
-			"page": 2,
+			"page": 6,
 			"foundryImg": "icons/magic/life/heart-cross-strong-green.webp",
 			"featureType": [
 				"LLABH:M"
@@ -1846,12 +2762,22 @@
 			],
 			"entries": [
 				"当你战斗时，你的身体会自我修复。在你处于突变状态时，每个回合开始时，你会获得临时生命值，数值等同于你的体质调整值（最少为1）。（Constitution）"
-			]
+			],
+			"foundrySystem": {
+				"ability": "con",
+				"actionType": "heal",
+				"damage.parts": [
+					[
+						"max(1, @mod)",
+						"temphp"
+					]
+				]
+			}
 		},
 		{
 			"name": "Viscous Grip",
 			"source": "LLABH",
-			"page": 2,
+			"page": 6,
 			"foundryImg": "icons/commodities/biological/suckers-green.webp",
 			"featureType": [
 				"LLABH:M"
@@ -1863,12 +2789,26 @@
 			],
 			"entries": [
 				"你的手和脚分泌出一种黏性物质。你获得一个等同于你行走速度的攀爬速度，而且你可以在不进行属性检定的情况下攀爬困难表面。"
+			],
+			"foundryEffects": [
+				{
+					"name": "Climbimg Speed",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.climb",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Grappling Appendages",
 			"source": "LLABH",
-			"page": 2,
+			"page": 6,
 			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
 			"featureType": [
 				"LLABH:M"
@@ -1879,13 +2819,22 @@
 				}
 			],
 			"entries": [
-				"你的两只胳膊旁长出了两根类似触手的附肢。它们是天然武器，击中时造成等同于你的仪式骰(Rite Die)的钝击伤害。如果你用近战攻击击中生物，你可以作为一个额外动作尝试用这些附肢拿住它。这些附肢不够灵巧，无法使用武器或专门工具。"
-			]
+				"你的两臂旁长出两个类似触手的附属器官。它们是天然武器，在命中时造成与你的仪式骰子相等的钝击伤害。如果你用近战攻击命中一只生物，你可以作为一个额外动作尝试用这些附属器官{@action grapple}它。这些附属器官不够灵巧，不能使用武器或专用工具。（Rite Die）"
+			],
+			"foundrySystem": {
+				"actionType": "mwak",
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die",
+						"bludgeoning"
+					]
+				]
+			}
 		},
 		{
 			"name": "Synthetic Carapace",
 			"source": "LLABH",
-			"page": 2,
+			"page": 6,
 			"foundryImg": "icons/commodities/biological/shell-ridged-green.webp",
 			"featureType": [
 				"LLABH:M"
@@ -1897,12 +2846,26 @@
 			],
 			"entries": [
 				"你的皮肤变得坚硬，类似于可怕的昆虫或爬行动物。你的护甲等级增加，增加值为你体质调整值的一半（向下取整）。"
+			],
+			"foundryEffects": [
+				{
+					"name": "AC Bonus",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+floor(@abilities.con.mod / 2)"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Perverted Flight",
 			"source": "LLABH",
-			"page": 2,
+			"page": 6,
 			"foundryImg": "icons/creatures/birds/corvid-flying-wings-purple.webp",
 			"featureType": [
 				"LLABH:M"
@@ -1914,12 +2877,26 @@
 			],
 			"entries": [
 				"你长出了一双不自然的皮革或昆虫翅膀。你获得一个飞行速度，等同于你的行走速度。"
+			],
+			"foundryEffects": [
+				{
+					"name": "Flying Speed",
+					"transfer": true,
+					"disabled": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "UPGRADE",
+							"value": "@attributes.movement.walk"
+						}
+					]
+				}
 			]
 		},
 		{
 			"name": "Rite of Agony",
 			"source": "LLABH",
-			"page": 2,
+			"page": 12,
 			"foundryImg": "icons/skills/wounds/injury-hand-blood-red.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -1927,12 +2904,21 @@
 			"entries": [
 				"作为一个奖励动作，你可以激活这个仪式，迫使你能看到的距离30英尺内的生物进行一次体质豁免检定。如果未通过豁免检定，直到你的下一个回合结束，它在力量和敏捷属性检定和豁免检定上都有劣势，并且每次进行武器攻击时受到等同于你仪式骰的一次伤害。",
 				"当你施展这个仪式时，你可以进行一次生命牺牲来强化它。如果你这样做，效果持续1分钟。生物可以在每个回合结束时重复豁免投掷，成功则结束效果。"
-			]
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"1@scale.alternate-blood-hunter.rite-die",
+						"necrotic"
+					]
+				],
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of Anxiety",
 			"source": "LLABH",
-			"page": 2,
+			"page": 12,
 			"foundryImg": "icons/sundries/gaming/chess-pawn-white-pink.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -1940,12 +2926,19 @@
 			"entries": [
 				"作为一个奖励动作，你可以激活这个仪式，并诅咒一个你能看到的距离30英尺内的生物，使其容易受到外部影响。在接下来的一分钟里，你选择的生物若试图用魅力检定来影响它，它们的检定获得一个等同于你仪式骰的一次掷骰的奖励。",
 				"当你施展这个仪式时，你可以进行一次重要牺牲来增强它。如果你这样做，该生物在你的下一个回合结束前被迫进行的下一个智力、感知或魅力豁免检定将有劣势。"
-			]
+			],
+			"foundrySystem": {
+				"formula": "1@scale.alternate-blood-hunter.rite-die",
+				"range": {
+					"value": 30,
+					"units": "feet"
+				}
+			}
 		},
 		{
 			"name": "Rite of Binding",
 			"source": "LLABH",
-			"page": 2,
+			"page": 12,
 			"foundryImg": "icons/magic/control/debuff-energy-snare-purple-pink.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -1953,25 +2946,31 @@
 			"entries": [
 				"作为一个奖励动作，你可以激活这个仪式，并迫使一个你能看到的、距离你30英尺内的大型或更小的生物进行一次力量豁免检定。如果未通过豁免检定，它的速度降为0，直到你的下一个回合结束前它不能使用反应。",
 				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，你可以以任何大小的生物为目标，这个仪式的效果持续1分钟。目标可以在每个回合结束时重复进行豁免扑救，成功则结束这个仪式的效果。"
-			]
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of Confusion",
 			"source": "LLABH",
-			"page": 2,
+			"page": 12,
 			"foundryImg": "icons/commodities/biological/organ-brain-pink.webp",
 			"featureType": [
 				"LLABH:BR"
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式，并诅咒一个你能看到并且正在集中注意力的生物，距离你不超过30英尺。在你的下一个回合开始之前，它在进行的每次体质豁免检定中都必须从你的仪式骰中减去一个骰值。",
+				"作为一个额外动作，你可以激活这个仪式，并诅咒你能看到的一个生物，距离30英尺，他是{@status concentration||concentrating}。在你的下一个回合开始之前，它必须从每次体质豁免检定中减去一个你的仪式骰的点数。\n\n(Note: Proper noun \"Rite Die\" remains in English within `()`, according to the given instructions.)",
 				"当你使用这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，目标必须从每次用于维持其当前法术专注的体质豁免投掷中减去你的仪式骰的一个点数。"
-			]
+			],
+			"foundrySystem": {
+				"formula": "1@scale.alternate-blood-hunter.rite-die"
+			}
 		},
 		{
 			"name": "Rite of Blindness",
 			"source": "LLABH",
-			"page": 2,
+			"page": 12,
 			"foundryImg": "icons/commodities/biological/eye-brown-red.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -1979,12 +2978,15 @@
 			"entries": [
 				"当你能看到的生物在30英尺内进行攻击检定时，你可以使用你的反应来发动这个仪式。目标必须从其攻击检定中减去一个你的仪式骰的点数。你可以在生物掷骰后，但在你知道其攻击是否命中目标之前，发动这个仪式。",
 				"当你使用此仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，你必须在你的下一个回合开始前从所有攻击骰中减去一个你的仪式骰的点数。"
-			]
+			],
+			"foundrySystem": {
+				"formula": "1@scale.alternate-blood-hunter.rite-die"
+			}
 		},
 		{
 			"name": "Rite of Revelation",
 			"source": "LLABH",
-			"page": 2,
+			"page": 12,
 			"foundryImg": "icons/sundries/books/book-face-blue.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -1997,7 +2999,7 @@
 		{
 			"name": "Rite of Siphoning",
 			"source": "LLABH",
-			"page": 2,
+			"page": 12,
 			"foundryImg": "icons/magic/death/mouth-bite-fangs-vampire.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2005,12 +3007,21 @@
 			"entries": [
 				"作为一个动作，你可以施展这个仪式，迫使你触摸的一只生物进行一次魅力豁免检定。如果未通过检定，它将受到等于你的仪式骰的两次投掷点数的死灵伤害，而你将获得等于该生物受到的死灵伤害的临时生命值。",
 				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，生物会受到可能的最大死灵伤害。"
-			]
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"2@scale.alternate-blood-hunter.rite-die",
+						"necrotic"
+					]
+				],
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of Corrosion",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/magic/acid/dissolve-bone-skull.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2021,14 +3032,23 @@
 				}
 			],
 			"entries": [
-				"作为你的回合的奖励动作，你可以激活这个仪式，并迫使你能看到的、距离30英尺内的一名生物进行一次体质豁免投掷。如果未通过豁免，该生物将中毒1分钟。生物可以在每个回合结束时重复进行这次豁免投掷，成功则结束效果。",
+				"在你的回合作为一项奖励动作，你可以激活这个仪式，并迫使你能看到的、在30英尺内的一只生物进行一次体质豁免投掷。在未通过豁免检定的情况下，它将在1分钟内{@condition poisoned}。该生物可以在每个回合结束时重复进行这次豁免检定，在成功时结束效果。{@condition poisoned}",
 				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，该生物将保持中毒状态，直到它成功通过豁免检定，每次失败时都会受到等于你的仪式骰的两次掷骰的死灵伤害。"
-			]
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"2@scale.alternate-blood-hunter.rite-die",
+						"necrotic"
+					]
+				],
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of Exposure",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/consumables/eggs/egg-broken-blue.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2046,7 +3066,7 @@
 		{
 			"name": "Rite of Marking",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/skills/targeting/crosshair-pointed-orange.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2058,13 +3078,13 @@
 			],
 			"entries": [
 				"作为一个奖励动作，你可以激活这个仪式，并标记一个你能看到的距离30英尺内的目标。直到你的下一个回合结束前，你对该目标的所有攻击投掷都获得优势。",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。当你这样做时，对该目标进行的任何武器攻击，在d20上投掷19或20时都会造成暴击，直到你的下一个回合结束。"
+				"当你发动这个仪式时，你可以进行一次生命牺牲以赋予其力量。当你这样做时，你对该目标进行的任何武器攻击在 {@dice d20} 的骰点为19或20时，直到你的下一个回合结束都将造成暴击。"
 			]
 		},
 		{
 			"name": "Rite of the Puppet",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/magic/control/control-influence-puppet.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2077,12 +3097,15 @@
 			"entries": [
 				"当你能看到的生物在30英尺内的生命值降至0时，你可以使用你的反应来激活这个仪式，让这个生物站起来并对你选择的生物进行一次单次武器攻击，攻击范围在它的攻击范围内。",
 				"当你施展这个仪式时，你可以进行一次生命牺牲来强化它。在这样做时，生物可以在发动攻击前移动其全步行速度，并且生物的武器攻击命中和伤害骰都会获得一个等同于你仪式骰的额外加值。"
-			]
+			],
+			"foundrySystem": {
+				"formula": "1@scale.alternate-blood-hunter.rite-die"
+			}
 		},
 		{
 			"name": "Rite of Fear",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/commodities/materials/feather-white-glowing-beams.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2093,14 +3116,17 @@
 				}
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式并迫使一个能看见或听见你的生物在30英尺内进行一次感知豁免检定。如果未通过豁免检定，它会因为你而感到害怕1分钟。在这种受到惊吓的状态下，生物必须采取冲刺动作，并在每个回合中选择最安全的路径远离你移动，除非没有地方可以移动。如果它结束回合时处于一个看不见你的位置，它可以重复进行豁免检定，成功后结束这个仪式的效果。",
-				"当你施展这个仪式时，你可以进行一次生命牺牲来强化它。如果你这样做，一个未能通过豁免检定的生物将在这个仪式的持续时间内被震慑，只要它能看见你。如果它受到任何伤害，它可以重新进行豁免检定，成功则结束效果。"
-			]
+				"作为一个额外行动，你可以使用这个仪式，并迫使一个能看到或听到你的生物在30英尺内进行一次感知豁免。如果豁免失败，它会对你感到恐惧，持续1分钟。在这种方式下感到恐惧时，生物必须采取逃离的行动，并通过最安全的可用路线移动离开你，除非没有地方可移动。如果生物在一个没有能见到你的位置结束了它的回合，它可以重新进行豁免检定，成功后这个仪式的效果结束。{@condition frightened}",
+				"当你启动这个仪式时，你可以做出一个重要牺牲来增强它。如果你这样做，一个未能通过豁免检定的生物在此仪式的持续期间内是{@condition stunned} ，只要它能看到你的视线。如果它受到任何伤害，它可以重复进行豁免检定，成功则结束效果。（Rite）"
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of the Senseless",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2111,14 +3137,17 @@
 				}
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式，并迫使你能看到的一个生物在30英尺内进行一次体质豁免扑。如果未通过豁免，它将被致盲、失聪，并且在1分钟内无法说话或发出任何声音。在每个回合结束时，目标可以重复进行这次豁免扑，成功后结束效果并恢复感官。",
+				"作为一个额外动作，你可以发动这个仪式，并强迫你能看见的一只生物进行一次 Constitution 豁免检定。如果未通过检定，它会受到 {@condition blinded}，{@condition deafened}的影响，并且在1分钟内不能说话或发出任何声音。在它的每个回合结束时，目标可以重复进行这个豁免检定，成功时结束效果并恢复理智。{@condition blinded}，{@condition deafened} (Constitution saving throw)",
 				"当你施展这个仪式时，你可以进行一次生命牺牲来强化它。如果你这样做，除了正常效果外，生物在受到这个仪式影响时无法移动。"
-			]
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of Decay",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/magic/death/hand-undead-skeleton-fire-green.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2132,12 +3161,21 @@
 				"作为一个动作，你可以施展这个仪式，并迫使你能看到的生物在30英尺内进行一次体质豁免才能，当你腐化它的血液时。如果未通过豁免，它会受到等于你的仪式骰的四次投掷的死灵伤害，它的速度减半，并且不能作出反应。",
 				"在它的回合中，生物可以重复进行豁免投掷。若成功，这个仪式的效果结束。若未能通过豁免，生物会受到额外伤害，数值等同于你的仪式骰的两次投掷，并且会获得一级疲劳。(Rite Die)",
 				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，这个仪式会无视对死灵伤害的抗性，并将对死灵伤害的免疫视为抗性。最后，被这个仪式的死灵伤害杀死的生物会变成一堆精细的肉色尘土。"
-			]
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"4@scale.alternate-blood-hunter.rite-die",
+						"necrotic"
+					]
+				],
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of Nightmares",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2148,14 +3186,26 @@
 				}
 			],
 			"entries": [
-				"作为一个动作，你可以发动这个仪式，迫使你能看到的距离30英尺内的生物进行一次感知豁免检定，当你用梦魇幻象感染它的思维。如果未通过豁免检定，该生物会受到等同于你的仪式骰的两次掷骰的精神伤害，并且在1分钟内害怕你。在这个仪式结束之前，每当该生物的回合结束时，它必须通过一次感知豁免检定，否则会受到等同于你的仪式骰的四次掷骰的精神伤害。如果通过检定，这个仪式的梦魇效果就会结束。",
-				"当你使用此仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，该生物将在此仪式效果的持续时间内失去行动能力，并速度为0。"
-			]
+				"作为一个行动，你可以祈请这个仪式，强迫你能看到的一个生物进行一次智力豁免检定，因为你感染了它的头脑，使其充满了梦魇幻象。如果豁免失败，该生物受到等于你的仪式骰的两次投掷的精神伤害，并且在 1 分钟内感到{@condition frightened}。在这个仪式结束之前，每当该生物的回合结束时，它必须成功进行一次智力豁免检定，否则将受到等于你的仪式骰的四次投掷的精神伤害。如果豁免成功，则这个仪式的梦魇效果结束。 (Rite Die)",
+				"当你发动这个仪式时，你可以进行一次生命牺牲来增强它。如果你这样做，该生物保持为{@condition incapacitated}，并且在此仪式效果持续期间速度为0。(%Rite%)\n"
+			],
+			"foundrySystem": {
+				"damage": {
+					"parts": [
+						[
+							"2@scale.alternate-blood-hunter.rite-die",
+							"psychic"
+						]
+					],
+					"versatile": "4@scale.alternate-blood-hunter.rite-die"
+				},
+				"save.scaling": "con"
+			}
 		},
 		{
 			"name": "Rite of Exsanguination",
 			"source": "LLABH",
-			"page": 2,
+			"page": 13,
 			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red.webp",
 			"featureType": [
 				"LLABH:BR"
@@ -2169,52 +3219,21 @@
 				"作为一个行动，你可以发动这个最强大和古老的仪式，强迫你能看到的30英尺内的一只生物进行一次体质豁免才能，你试图吸干它的所有血液。在豁免失败时，它会受到相当于你的仪式骰子点数的12倍的死灵伤害，成功时则减半。自你上一个回合开始以来你对其造成过伤害且未达到最大生命值的生物，在进行体质豁免时有劣势。",
 				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，这个仪式会无视对死灵伤害的抗性，并将对死灵伤害的免疫视为抗性。最后，被这个仪式的死灵伤害杀死的生物会变成一堆精细的肉色尘土。",
 				"一旦你施展这个仪式，你必须完成一次短暂或长时间的休息，然后才能再次施展它。你不能通过进行重要牺牲来规避这个限制。"
-			]
-		},
-		{
-			"name": "Featherweight Fighting",
-			"source": "LLABH",
-			"page": 2,
-			"featureType": [
-				"LLABH:FS"
 			],
-			"entries": [
-				"当你只装备轻型武器且没有其他武器时，你的速度增加10英尺，并且你使用轻型武器造成的伤害骰获得+1的加值，只要你没有穿着中重型盔甲或使用盾牌。"
-			]
-		},
-		{
-			"name": "Dual Wielding",
-			"source": "LLABH",
-			"page": 2,
-			"featureType": [
-				"LLABH:FS"
-			],
-			"entries": [
-				"当你进行双武器战斗时采取攻击动作时，你可以额外进行一次单独的副手武器攻击作为你的动作的一部分，而不是作为你的奖励动作，将你的能力调整值加到这次攻击的伤害上。"
-			]
-		},
-		{
-			"name": "Melee Marksman",
-			"source": "LLABH",
-			"page": 2,
-			"featureType": [
-				"LLABH:FS"
-			],
-			"entries": [
-				"当你在5英尺范围内有一个敌对生物时，只要你攻击的是一个在5英尺内的生物，你的远程武器攻击不会受到劣势影响。",
-				"当你对身边5英尺内的生物进行远程武器攻击时，你可以使用你的奖励动作用你的远程武器对其进行近战攻击。命中后，你造成的钝击伤害为{@dice 1d4} + 你的力量修正。"
-			]
-		},
-		{
-			"name": "Versatile Fighting",
-			"source": "LLABH",
-			"page": 2,
-			"featureType": [
-				"LLABH:FS"
-			],
-			"entries": [
-				"当使用一把多才多艺的武器而没有盾牌时，你可以选择在你下一个回合开始前单手或双手使用武器。当单手使用时，你的护甲等级和该武器的攻击骰都会获得+1的奖励。当双手使用时，你的该武器的伤害骰会获得+2的奖励。"
-			]
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"12@scale.alternate-blood-hunter.rite-die",
+						"necrotic"
+					]
+				],
+				"save.scaling": "con",
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			}
 		}
 	],
 	"classFluff": [
@@ -2228,7 +3247,7 @@
 					"source": "LLABH",
 					"page": 1,
 					"entries": [
-						"当年轻人的蒙眼布被解开时，他发现自己置身于一个昏暗的房间，周围是一群戴着兜帽的人。他站在一个小台子前，上面放着一瓶闪闪发光的深红色液体。数月的训练让他来到了这一刻。如果他能活下来喝下这瓶\"猎人之苦\"，他将永远不再是原来的自己。成为超越人类的存在，他终于将拥有力量来为多年来死去的家人复仇。",
+						"当年轻人的眼罩被解开时，他发现自己处于一个昏暗的房间，周围是一群戴着兜帽的人。他站在一个小台子前面，上面放着一瓶闪闪发光的深红色液体。几个月的训练让他来到了这一刻。如果他能够活下来喝下这瓶猎人之苦，他将不再是原来的他。成为超越人类的存在，他终于拥有了复仇已故多年的家人的力量。 (Hunter's Bane)\n",
 						"当一群恶魔的后裔朝她蜿蜒而来时，这位年迈的半精灵沿着自己的手掌划过她瘦削的刀刃，将其浸满了自己的鲜血。转瞬间，鲜血燃烧起来，用一种可怕的蓝色火焰缠绕着她的剑。她如同一团闪烁着蓝色火焰和寒冷钢铁的模糊身影扑向了那群恶魔。今天她不会对地狱的子嗣们留情。",
 						"在苍白月光下，一个几乎野性的半身人四肢着地，闻着面前的足迹。哥布林的气味是那样的明显，恶臭的破布和腐烂的肉。随着野兽般的嚎叫，半身人体型增大，灰色的粗毛从他的手臂和腿上迸发而出。半身人狼以风的速度，在满月的光芒中开始另一场狩猎。",
 						"以上描述的所有奇怪和怪物般的战士都是血猎人，他们是守护者，他们将自己的血液感染和接种了被诅咒的力量，以便追猎怪物。",
@@ -2254,14 +3273,28 @@
 							"name": "Creating your Blood Hunter",
 							"page": 1,
 							"entries": [
-								"在创建一个血猎时，最重要的考虑因素是他们为什么会选择这种被诅咒的生活方式。他们是不是曾经遭受过可怕的怪物袭击，并发誓要复仇，不惜一切代价？他们是不是从出生起就在一位年长猎人的指导下接受训练，并成为一个无情的怪物杀手？或者，他们是不是因为在狩猎方面的出色才能而被一个秘密社会招募？"
+								"在创建一个血猎时，最重要的考虑因素是他们为什么会选择这种被诅咒的生活方式。他们是不是曾经遭受过可怕的怪物袭击，并发誓要复仇，不惜一切代价？他们是不是从出生起就在一位年长猎人的指导下接受训练，并成为一个无情的怪物杀手？或者，他们是不是因为在狩猎方面的出色才能而被一个秘密社会招募？",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"你可以按照以下建议快速创建一个血猎人。首先，将你的力量或敏捷中的一项能力分数设为最高，其次是你的体质。其次，选择{@background Haunted One|VRGR}背景。"
+									]
+								}
 							]
 						},
 						{
 							"type": "inset",
-							"name": "Multiclassing and the Barbarian",
+							"name": "Editor's Note",
 							"entries": [
-								"如果你的团队使用了可选的多职业规则，那么如果你选择在血猎者(Blood Hunter)职业中获得第一级，这里有一些你需要了解的事情。"
+								"这里介绍的替代血猎者是基于Matthew Mercer最初设计的{@loader Blood Hunter|class/Matthew Mercer; Blood Hunter (2020).json}职业。这并不意味着批评原始职业，而是向血猎者概念致敬。",
+								"这个重新构想的血猎者职业旨在使原版更符合第五版的设计理念，并使对于风险/回报机制可能不太熟悉的玩家更少受到惩罚。 (Blood Hunter class)",
+								"官方的血猎者可以在{@link DMsGuild|https://www.dmsguild.com/product/301641/Blood-Hunter-Class-for-DD-5e-2020}找到，我鼓励这个项目的任何粉丝也支持原版，从上面的链接购买一份。",
+								{
+									"type": "quote",
+									"entries": [],
+									"by": "laserllama"
+								}
 							]
 						}
 					]

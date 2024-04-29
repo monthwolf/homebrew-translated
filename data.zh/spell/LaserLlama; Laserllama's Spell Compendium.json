@@ -14,12 +14,12 @@
 				],
 				"url": "https://www.gmbinder.com/share/-NQcEN32m0-1u_UMFV5h",
 				"color": "000080",
-				"version": "1.0"
+				"version": ""
 			}
 		],
 		"dateAdded": 1713674892,
-		"dateLastModified": 1713674892,
-		"_dateLastModifiedHash": "d929934813"
+		"dateLastModified": 1714158302,
+		"_dateLastModifiedHash": "a2ee718288"
 	},
 	"spell": [
 		{
@@ -3658,6 +3658,87 @@
 			"foundryImg": "icons/magic/nature/root-vine-thorned-fire-purple.webp"
 		},
 		{
+			"name": "Hypnotic Pattern (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 252
+				}
+			],
+			"level": 3,
+			"school": "I",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"s": true,
+				"m": "a glowing stick of incense"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"你创造出一道缠绕在射程内的30英尺立方体中的色彩扭曲图案。这种迷幻的图案一闪而过，随即消失。在该区域内看到图案的每个生物必须进行一次感知豁免检定。未能通过检定的生物，在持续时间内变为{@condition charmed}。在被此法术迷惑时，生物处于{@condition incapacitated}状态且速度为0。",
+				"受影响的生物可以在每个轮到它的回合结束时重复进行此豁免检定，成功则效果结束。如果受影响的生物受到任何伤害，或者有其他人使用行动来摇醒它，咒语也会结束。 (dnd 运行团规则)"
+			],
+			"areaTags": [
+				"C"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"foundrySystem": {
+				"target": {
+					"value": 30,
+					"units": "ft",
+					"type": "cube"
+				}
+			}
+		},
+		{
 			"name": "Lightning Arrow (Alternate)",
 			"source": "llspell",
 			"otherSources": [
@@ -4103,6 +4184,105 @@
 				}
 			},
 			"foundryImg": "icons/magic/control/fear-fright-white.webp"
+		},
+		{
+			"name": "Polymorph (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 266
+				}
+			],
+			"level": 4,
+			"school": "T",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a caterpillar cocoon"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 10,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"这个咒语可以将你能看到的一个生物转化成你选择的新形态。不愿意的生物必须成功进行一次感知豁免才能抵抗此效果，但变形生物自动成功通过豁免检定。此咒语对生命值为 0 的目标无效。转化效果持续一段时间，但如果目标的生命值降至 0 或死亡，转化会提前结束。 (dnd 运行组规则)",
+				{
+					"type": "entries",
+					"name": "Form",
+					"entries": [
+						"新的形态可以是你在生物还活着时见过的任何野兽。它的挑战等级必须小于或等于目标的等级或其挑战等级。 (DND 跑团规则)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Statistics",
+					"entries": [
+						"游戏统计数据，{@u including its mental ability scores} 将被野兽的统计数据替换，但在该野兽的限制范围内，它仍保持其方向性和个性。",
+						"目标假定了其新形态的生命值。当其恢复到正常形态时，生物的生命值恢复到在其变形之前的数量。如果它因生命值降至0而恢复，则任何多余的伤害会转移到其正常形态。如果这种额外伤害将其正常形态降至0生命值，则它被击倒{@condition unconscious}。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Actions",
+					"entries": [
+						"生物可以采取的行动受限于其新形态能够执行的行动。它不能说话、施放咒语，或者进行任何需要手或言语的行动。 (DND running group rules)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Equipment",
+					"entries": [
+						"它的服装、武器、盔甲和手持物品都融入了新形态中。然而，它不能激活、使用、挥舞或以其他方式从其装备中受益。\n"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
 		},
 		{
 			"name": "Revitalizing Hymn",
@@ -4717,6 +4897,87 @@
 			"foundryImg": "icons/magic/death/weapon-sword-skull-purple.webp"
 		},
 		{
+			"name": "Wall of Force (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 285
+				}
+			],
+			"level": 5,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "powder from crushed clear gemstone"
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 10,
+						"type": "minute"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"在范围内你选择的某一点，一道闪闪发光的不透明力场突然出现，并持续存在一段时间。 (force wall)",
+				{
+					"type": "entries",
+					"name": "Orientation & Shape",
+					"entries": [
+						"墙体可以以您选择的任何方向出现，可以作为水平或垂直的障碍物或角落。它可以自由浮动或靠在坚实的表面上。您可以将其形成半球形圆顶，半径最多为10英尺的球体，或者您可以塑造一个由十个10×10英尺面板组成的平面。每个面板必须与另一个相邻。在任何形式中，墙壁都是1/4英寸厚。物理上无法穿过墙壁，透过墙壁看到的任何东西都会轻微模糊。墙壁延伸到以太界，阻止以太旅行穿过墙壁。如果它在出现时穿过了生物的空间，生物必须进行敏捷豁免投掷。成功则选择移动到墙壁的哪一侧。失败则由您选择它移动到的一侧。 (Ethereal Plane) (Dexterity)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Statistics",
+					"entries": [
+						"墙壁有150点生命值，其护甲等级等于你的法术豁免 DC。它对毒素、精神和非魔法的钝击、穿刺和斩击伤害免疫，对力量和魔法的钝击、穿刺和斩击伤害脆弱，并对所有其他伤害类型有抗性。它不能被{@spell dispel magic}法术驱散，但{@spell disintegrate}法术能立即摧毁墙壁。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用6级或更高级的法术槽施放这个法术时，由此法术创建的墙壁的生命值将每超过5级的法术槽等级增加25点。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"W"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
 			"name": "Psionic Oppression",
 			"source": "llspell",
 			"level": 6,
@@ -4767,6 +5028,103 @@
 				}
 			},
 			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye.webp"
+		},
+		{
+			"name": "Forcecage (Alternate)",
+			"source": "llspell",
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 243
+				}
+			],
+			"level": 7,
+			"school": "C",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				},
+				"type": "point"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an ornate jade box worth 1,500 gp",
+					"cost": 150000,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"concentration": true,
+					"duration": {
+						"upTo": true,
+						"amount": 1,
+						"type": "hour"
+					},
+					"type": "timed"
+				}
+			],
+			"entries": [
+				"一个闪烁着的、静止的、立方形的、由魔法力量组成的监狱在你选择的范围内显现出来。你可以选择这个魔法监狱是用栏杆围成的笼子形状，还是一个实心的盒子形状。 (DND running group rules)",
+				{
+					"type": "entries",
+					"name": "Shape",
+					"entries": [
+						"如果您选择（cage）围栏，它可以长达一边 20 英尺，由直径为 1/2 英寸的栅栏杆制成，间距为 1/2 英寸。如果您选择（box）盒子，它可以长达一边 10 英尺，创建一个实体屏障，防止任何物质通过，并阻挡进出该区域的任何咒语。该围栏延伸至虚空平面，阻挡虚空旅行。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creatures Inside",
+					"entries": [
+						"当你施放这个咒语时，完全处于笼子范围内的任何生物都会被困住。部分处于范围内的生物，或者太大无法适应的生物会被推开，直到它们完全离开笼子范围。",
+						"笼子里的生物不能通过非魔法手段离开。 如果生物试图使用传送或跨平面旅行离开笼子，它必须首先进行一次魅力豁免检定。 在豁免失败时，法术或效果会被浪费，但在成功时，生物可以使用该法术或效果逃脱。 (D&D运行团规则)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Statistics",
+					"entries": [
+						"笼子的护甲等于你的法术豁免 DC 并且它有 200 点生命值。它对毒素、精神和非魔法的钝击、刺穿和斩击伤害免疫，对力量和魔法的钝击、刺穿和斩击伤害脆弱，并对所有其他类型的伤害具有抵抗力。它不能被 {@spell dispel magic} 咒语解除，但 {@spell disintegrate} 咒语会立即摧毁笼子。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用8级或更高级别的法术位施放此法术时，由此法术创建的牢笼的生命值将每超过第7级的法术位水平增加25点。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"C"
+			],
+			"savingThrow": [
+				"charisma"
+			]
 		}
 	]
 }
