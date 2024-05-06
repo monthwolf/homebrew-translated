@@ -16,8 +16,8 @@
 			}
 		],
 		"dateAdded": 1694655640,
-		"dateLastModified": 1713133531,
-		"_dateLastModifiedHash": "39ab21caf9"
+		"dateLastModified": 1714945137,
+		"_dateLastModifiedHash": "a4df4f9403"
 	},
 	"subclass": [
 		{
@@ -36,12 +36,12 @@
 				"Thorn Whip",
 				"Entangle",
 				"Expeditious Retreat",
-				"Earthbind|xge",
 				"Spider Climb",
+				"Web",
 				"Speak with Plants",
 				"Plant Growth",
+				"Evard's Black Tentacles",
 				"Freedom of Movement",
-				"Grasping Vine",
 				"Commune with Nature",
 				"Tree Stride",
 				"Transport via Plants"
@@ -59,16 +59,16 @@
 							"expeditious retreat"
 						],
 						"3": [
-							"earthbind|xge",
-							"spider climb"
+							"spider climb",
+							"web"
 						],
 						"5": [
 							"speak with plants",
 							"plant growth"
 						],
 						"7": [
-							"freedom of movement",
-							"grasping vine"
+							"evard's black tentacles",
+							"freedom of movement"
 						],
 						"9": [
 							"commune with nature",
@@ -121,10 +121,10 @@
 						"你可以只使用手势成分施放它。(somatic components)",
 						"你可以以与{@spell mage hand} cantrip 相同的方式瞄准物体并与之互动。",
 						"与其拉动一个生物，你可以在射程内的任何水平方向上移动它多达10英尺。",
-						"你可以自动命中愿意的目标，并且可以选择不对其施加法术伤害。"
+						"你可以自动攻击愿意的目标，并且可以使法术在命中时不造成伤害。"
 					]
 				},
-				"当你达到特定的德鲁伊等级时，你将获得下表中的法术。它们对你来说算作德鲁伊法术，你始终准备好它们，但它们不计入你每天准备的法术总数。",
+				"当你达到特定的德鲁伊等级时，你可以获得下表中的法术。对你而言，它们算作德鲁伊法术，并且你始终准备好它们，但它们不会计入你每天准备的法术总数。",
 				{
 					"type": "table",
 					"caption": "Circle of Kudzu Spells",
@@ -143,7 +143,7 @@
 						],
 						[
 							"3rd",
-							"{@spell earthbind|xge}（葡萄藤）, {@spell spider climb}"
+							"{@spell spider climb}, {@spell web}（作为藤蔓）"
 						],
 						[
 							"5th",
@@ -151,7 +151,7 @@
 						],
 						[
 							"7th",
-							"{@spell freedom of movement}, {@spell grasping vine}"
+							"{@spell evard's black tentacles||black tentacles}（作为藤蔓），{@spell freedom of movement}"
 						],
 						[
 							"9th",
@@ -172,7 +172,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Circle of Kudzu feature}",
-				"作为一个奖励动作，你可以消耗一个你的野性变身特性使用次数，变成类似杂草的形态。在这种形态下，你可以穿过所有非魔法植物和你自己的法术效果，而不会被它们减速或伤害。这种形态持续1小时。如果你解除它（不需要动作），或再次使用这个特性，它会提前结束。",
+				"作为一个额外行动，你可以消耗一次你的野性形态特性来假设为一种类似于杂草的形态。在这",
 				"每回合一次，当你用{@spell thorn whip}命中目标时，你可以造成以下效果之一：",
 				{
 					"type": "entries",
@@ -208,8 +208,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Circle of Kudzu feature}",
-				"你的魔法与你名字的活力同在。当你施放一个环形法术时，你可以不消耗{@condition concentration}或法术位来施放它。在你完成短休或长休之前，你不能再以这种方式施放法术。",
-				"此外，当你施放{@spell thorn whip}时，你可以进行与其伤害骰数相等的攻击次数，而不是进行一次攻击。以这种方式施放时，每次攻击造成{@dice 1d6}点穿刺伤害。"
+				"你的魔法迅速生根。当你使用你的奖励动作激活你的千刺鞭时，你也可以使用同样的奖励动作施放你可以访问的任何环形法术。 (Lash of a Thousand Thorns)",
+				"符合当地语言习惯，并且像(%num%)这样的文本在翻译中应保持为(%num%)。\n- 翻译遵守DND游戏团规则，专有名词在翻译后应在`()`内保留英文。\n\n此外，当你使用行动施放{@spell thorn whip}时，你可以攻击两次，而不是一次，并且可以在你使用这个法术进行每次攻击之间移动。"
 			]
 		},
 		{
@@ -223,9 +223,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Circle of Kudzu feature}",
-				"当你的千刺鞭(Thousand Thorns)激活时，你在15英尺范围内散发疯狂的植被，并在使用{@spell thorn whip}造成伤害时，将你的感知调整值加到其中。你散发的植物可以被如{@spell plant growth}和{@spell speak with plants}的法术操控。",
+				"当你的\"千刺鞭笞\"生效时，你可以选择在一个15英尺的范围内散发疯狂的植被。你散发的植物可以被像{@spell plant growth}和{@spell speak with plants}这样的法术操控。",
 				"每当你施放1级或更高级别的法术时，你可以使用你的反应将这些植物驱使入狂暴状态，迫使每个处于光环内的敌对生物根据你的法术豁免 DC 进行一次力量豁免检定。",
-				"一个未能通过豁免检定的生物，其速度将降为0，直到你的下一个回合结束，并且失去等于法术等级的生命值。然后，你获得临时生命值，数值等于以这种方式失去的总生命值。"
+				"当一只生物未通过它的豁免检定时，其速度将降低至0，直到你的下一个回合开始，并受到等同于该法术等级的钝击伤害。你获得临时生命值，其数量等同于所造成的钝击伤害总和。 (D&D 运行组规则) (bludgeoning)"
 			]
 		},
 		{
@@ -239,8 +239,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Circle of Kudzu feature}",
-				"你像野草一样自由地穿越大地。你的法术圈列表中新增了{@spell transport via plants}。",
-				"当你施放这个法术时，你可以创造最多两个植物（目标植物和目的地植物），供法术使用，这些植物在法术结束时消失。如果你创造一个目的地植物，其位置的确定方式与{@spell teleport}法术相同。"
+				"你像野草一样自由生长。你将 {@spell transport via plants} 加入你的圈子法术列表，并且可以在不消耗法术位的情况下施放它。一旦你这样做了，你就不能再这样做，直到你完成一次长休。(DND running group rules)",
+				"Additionally, when you cast {@spell transport via plants}, you can create up to two plants (the target and destination plants) for the spell to use, which vanish when the spell ends. If you create a destination plant, its location is determined in the same way as the {@spell teleport} spell."
 			]
 		}
 	]

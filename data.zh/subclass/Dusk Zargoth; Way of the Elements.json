@@ -1,0 +1,1025 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DZC:4ELE",
+				"abbreviation": "DZC:4ELE",
+				"full": "Way of the Elements",
+				"authors": [
+					"Dusk Zargoth"
+				],
+				"convertedBy": [
+					"Dusk Zargoth"
+				],
+				"version": "1.0.1",
+				"color": "DC3636",
+				"url": "https://homebrewery.naturalcrit.com/share/PSkVJHKOeItK"
+			}
+		],
+		"dateAdded": 1714939216,
+		"dateLastModified": 1714939216,
+		"optionalFeatureTypes": {
+			"DZC:MA": "Monk Rework; Martial Arts",
+			"DZC:MA:MS": "Monk Rework; Martial Arts: Mixed Style",
+			"DZC:MA:GS": "Monk Rework; Martial Arts: Grappling Style",
+			"DZC:MA:US": "Monk Rework; Martial Arts: Unarmed Style",
+			"DZC:MA:WS": "Monk Rework; Martial Arts: Weapon Style",
+			"DZC:EA": "Monk Rework; Elemental Arts",
+			"DZC:EA:A": "Monk Rework; Elemental Arts: Air",
+			"DZC:EA:E": "Monk Rework; Elemental Arts: Earth",
+			"DZC:EA:F": "Monk Rework; Elemental Arts: Fire",
+			"DZC:EA:W": "Monk Rework; Elemental Arts: Water",
+			"DZC:EA:ES": "Monk Rework; Elemental Arts: Elemental Strike",
+			"DZC:EA:EM": "Monk Rework; Elemental Arts: Elemental Manifestation",
+			"DZC:EA:PS": "Monk Rework; Elemental Arts: Primal Stances",
+			"DZC:EA:SS": "Monk Rework; Elemental Arts: Step Shift",
+			"DZC:EA:EMa": "Monk Rework; Elemental Arts: Elemental Mastery",
+			"DZC:KF": "Monk Rework; Ki Features",
+			"DZC:KF:O": "Monk Rework; Ki Features; Offense",
+			"DZC:KF:D": "Monk Rework; Ki Features; Defense",
+			"DZC:KF:U": "Monk Rework; Ki Features; Utility"
+		},
+		"_dateLastModifiedHash": "48b386ad26"
+	},
+	"subclass": [
+		{
+			"name": "Way of the Elements",
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+			"shortName": "Elements",
+			"source": "DZC:4ELE",
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 1,
+			"subclassFeatures": [
+				"Way of the Elements|Monk||Elements|DZC:4ELE|3",
+				"Primal Stances|Monk||Elements|DZC:4ELE|6",
+				"Step Shift|Monk||Elements|DZC:4ELE|11",
+				"Elemental Mastery|Monk||Elements|DZC:4ELE|17"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Thunderous Strike",
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:ES"
+			],
+			"entries": [
+				"你的攻击释放出一团压缩空气的泡泡，将你的敌人击飞。如果目标是一个生物或一个比你大不超过一号尺寸的未固定物体，则你可以将其推开多达10英尺远离你。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"@scale.monk.die",
+						"thunder"
+					]
+				]
+			}
+		},
+		{
+			"name": "Rocky Strike",
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:ES"
+			],
+			"entries": [
+				"你的攻击被一层厚厚的石头包裹着，使得它变得如此沉重，以至于暂时使你的敌人失去方向感。在你的下一个回合开始前，目标在进行下一次攻击骰时具有劣势。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"@scale.monk.die + @abilities.wis.mod"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
+			}
+		},
+		{
+			"name": "Igneous Strike",
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:ES"
+			],
+			"entries": [
+				"你的攻击引发了一团短暂的火焰，足以烧穿肉体。你可以在这次攻击造成的额外伤害中加上你的智力修正值。\n"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"@scale.monk.die + @abilities.wis.mod",
+						"fire"
+					]
+				]
+			}
+		},
+		{
+			"name": "Gelid Strike",
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:ES"
+			],
+			"entries": [
+				"你用凝结的水覆盖你的攻击，阻碍敌人的移动。目标的速度减少15英尺，直到你下一回合开始。 (dnd, freezing water)"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Once on your turn, when you hit with a weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"@scale.monk.die",
+						"cold"
+					]
+				]
+			}
+		},
+		{
+			"name": "Wind Blast",
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:EM"
+			],
+			"entries": [
+				"一道长30英尺、宽5英尺的压缩空气从你身边喷射出去，方向由你选择。在该区域内的每个生物必须成功进行一次体质豁免才能避免受到雷霆伤害，伤害值等同于你的武术骰子的一次掷骰，并且被推离你多达10英尺的方向，沿着该线方向。 (Martial Arts)",
+				"未受保护的物体，完全处于影响范围内时，会被该特性的效果自动推开10英尺，符合当地语言习惯，文本如(%num%)在翻译中应保持为(%num%)，翻译符合dnd游戏团规则，专有名词翻译后应在括号中保留英文。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"@scale.monk.die",
+						"thunder"
+					]
+				],
+				"save.ability": "con",
+				"save.scaling": "wis"
+			}
+		},
+		{
+			"name": "Stone Boulder",
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:EM"
+			],
+			"entries": [
+				"你朝着你能看见的距离不超过30英尺的生物投掷一个中等大小的岩石。该生物必须成功进行一次力量豁免才能避免受到相当于你武术骰的一次掷出的钝击伤害，并被击倒。(Martial Arts)"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"@scale.monk.die",
+						"bludgeoning"
+					]
+				],
+				"save.ability": "str",
+				"save.scaling": "wis"
+			}
+		},
+		{
+			"name": "Flaming Blast",
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:EM"
+			],
+			"entries": [
+				"你朝你选择的点发射一枚火球，该点距离你30英尺以内可见。当火球到达目的地或撞击固体表面时爆炸。在火球爆炸的点周围5英尺范围内的每个生物必须进行一次敏捷豁免才能，如果未能通过则受到火焰伤害，伤害值为你的武术骰子点数的两倍。",
+				"爆炸会损坏区域内未被穿戴或携带的物体。 (DND)"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"2@scale.monk.die",
+						"fire"
+					]
+				],
+				"save.ability": "dex",
+				"save.scaling": "wis"
+			}
+		},
+		{
+			"name": "Water Swirl",
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:EM"
+			],
+			"entries": [
+				"一个漩涡般的水柱出现在你能看到的距离30英尺内的一个点上。范围内以某一点为中心的半径10英尺、高度15英尺的圆柱内的每个生物都必须进行一次力量豁免检定。未通过豁免检定的生物会受到冷伤害，数值等同于你的武术骰的一次投掷，并且被你选择的任意方向推动5英尺。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"@scale.monk.die",
+						"cold"
+					]
+				],
+				"save.ability": "con",
+				"save.scaling": "wis"
+			}
+		},
+		{
+			"name": "Wind Stance",
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:PS"
+			],
+			"entries": [
+				"柔和的水流将你移出危险之地。当你采取\"脱离战斗\"或\"闪避\"动作时，在你的下一个回合开始之前，你对你能看到的攻击和效果获得一个加值，加值等同于你感知调整值一半（四舍五入），用来提升你的AC和敏捷豁免。当你的速度为0时，你无法从这种状态中获益。（Disengage or Dodge）"
+			]
+		},
+		{
+			"name": "Mountain Stance",
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:PS"
+			],
+			"entries": [
+				"你的皮肤拥有坚固如岩石的特性。你受到的钝击、穿刺和割破伤害会减少一个数值，该数值等于你智力调整值的两倍。 (dnd running group rules)"
+			]
+		},
+		{
+			"name": "Flame Stance",
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:PS"
+			],
+			"entries": [
+				"你的四肢被火焰环绕。你获得的近战武器攻击投骰和搏斗检定的奖励等同于你智力修正值的一半（四舍五入）。当你用近战武器攻击命中目标，或者成功地搏斗或推动目标时，目标受到等同于该奖励的火焰伤害。"
+			]
+		},
+		{
+			"name": "River Stance",
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:PS"
+			],
+			"entries": [
+				"你的肢体上生长出水藤。你的近战武器攻击、格斗和推挤的范围增加了相当于你的感知调整值五倍的英尺数。此外，当你用近战武器攻击命中生物时，目标的速度减少10英尺，直到你的下一个回合开始。(Wisdom modifier)"
+			]
+		},
+		{
+			"name": "Aerial Lift",
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"柔和的水流将你移出危险之地。当你采取\"脱离战斗\"或\"闪避\"动作时，在你的下一个回合开始之前，你对你能看到的攻击和效果获得一个加值，加值等同于你感知调整值一半（四舍五入），用来提升你的AC和敏捷豁免。当你的速度为0时，你无法从这种状态中获益。（Disengage or Dodge）"
+			]
+		},
+		{
+			"name": "Rock Walk",
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"以坚实的基础，你可以轻松穿越任何地形。你可以忽略坚实表面上的困难地形。你还获得与你步行速度相等的攀爬速度。如果垂直表面是由土壤或岩石构成，你无需用手攀爬。\n\n（Dungeons & Dragons）"
+			]
+		},
+		{
+			"name": "Jet Burst",
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"你的火能把你推向新的高度。一次在你的回合，你可以选择任意方向直线移动多达30英尺。如果你被抓或束缚，你可以选择放弃这次移动来尝试摆脱造成这种状态的效果或生物，只要它要求进行成功的力量检定或豁免才能逃脱（`Strength check` 或 `saving throw`）。"
+			]
+		},
+		{
+			"name": "Underwater Adaptations",
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:SS"
+			],
+			"entries": [
+				"你的身体与海洋融为一体。你获得与步行速度相等的游泳速度，可以在水下正常呼吸。（Dungeons & Dragons游戏组规则）"
+			]
+		},
+		{
+			"name": "Air Master",
+			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:EMa"
+			],
+			"entries": [
+				"在你的回合中，当你使用你的雷霆打击或风之爆破时，你可以额外花费高达 3 点气点，每点气点增加你的武术骰投掷的伤害一次。 (Thunderous Strike) (Wind Blast)"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Four Air Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Earth Master",
+			"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:EMa"
+			],
+			"entries": [
+				"在你的回合中，当你使用你的岩石打击 (Rocky Strike) 或石头滚动 (Stone Boulder) 时，你可以额外花费最多 3 点气点来增加其伤害，每花费 1 点气点增加你的武术骰的一次投掷。"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Four Earth Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Fire Master",
+			"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:EMa"
+			],
+			"entries": [
+				"在你的回合中，当你使用你的火岩打击（Igneous Strike）或火焰冲击（Flaming Blast）时，你可以额外花费高达3点气点来增加其伤害，每点气点增加一次你的武术骰的掷骰伤害。\n\nNote: The English terms \"Igneous Strike\" and \"Flaming Blast\" are kept in parentheses as per your request."
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Four Fire Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Water Master",
+			"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:EMa"
+			],
+			"entries": [
+				"在你的回合中，当你使用你的冰霜打击（Gelid Strike）或"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Four Water Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Lightning Adept",
+			"foundryImg": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:EMa"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以在执行冲刺或躲闪动作时花费1点气点，让自己充满电能。直到你的回合结束，一个生物在你距离它5英尺内移动时，第一次受到等于5加上你的智力调整值的闪电伤害。 (Dash or Disengage)"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Two or more Air Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Acid Adept",
+			"foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:E",
+				"DZC:EA:EMa"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以在使用闪避动作时花费1点气来用酸防御自己。直到你的下个回合开始，对你进行近战武器攻击的生物会受到5点酸性伤害，再加上你的智力修正值。 (D&D运行小组规则)"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Two or more Earth Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Light Adept",
+			"foundryImg": "icons/magic/light/beam-rays-orange-large.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:F",
+				"DZC:EA:EMa"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"你可以在进行攻击动作时花费1点气点，使你的双臂笼罩在光辉之中。在你的回合结束前，你的近战武器攻击额外造成伤害，数值等同于你的智力调整值。 (%num%)"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Two or more Fire Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Heal Adept",
+			"foundryImg": "icons/magic/life/heart-cross-blue.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:W",
+				"DZC:EA:EMa"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+			"entries": [
+				"在你轮到行动后立即采取帮助行动时，你可以花费1点气点来治疗一只你能触摸到的生物。该生物可以花费数量等于你的感知修正值的命中骰来治疗自己。（DND跑团规则）"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"Two or more Water Arts"
+					]
+				}
+			]
+		},
+		{
+			"name": "Nature's Vessel",
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"featureType": [
+				"DZC:EA",
+				"DZC:EA:A",
+				"DZC:EA:E",
+				"DZC:EA:F",
+				"DZC:EA:W",
+				"DZC:EA:EMa"
+			],
+			"consumes": {
+				"name": "Ki",
+				"amount": 3
+			},
+			"entries": [
+				"当你完成一次长休后，你可以用同一元素中的另一个来替换你所知道的元素技艺之一。此外，你可以花费 3 点气点进入你的原始姿态"
+			],
+			"prerequisite": [
+				{
+					"feature": [
+						"One Art in Each Element"
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Way of the Elements",
+			"source": "DZC:4ELE",
+			"page": 1,
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Elements",
+			"subclassSource": "DZC:4ELE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"内力之道的僧侣致力于培育气的真正潜能。他们走上勤奋冥想和自我发现之路，探索潜藏在自己内心深处的奥秘，而不是宇宙中的奥秘。 (Monks of the Way of the Inner Strength)",
+				"很多时候，这一传统的实践者会孤身隐居很长一段时间，切断凡俗感官以提升他们的精神之眼。只有少数人能忍受这一旅程，甚至更少的僧侣能达到真正的启悟状态。(tradition)",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Arts|Monk||Elements|DZC:4ELE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Strike|Monk||Elements|DZC:4ELE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elemental Manifestation|Monk||Elements|DZC:4ELE|3"
+				}
+			]
+		},
+		{
+			"name": "Elemental Arts",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"foundryImg": "icons/magic/nature/beam-hand-leaves-green.webp",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Elements",
+			"subclassSource": "DZC:4ELE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"每个元素都包含在一个被称为{@filter Elemental Arts|optionalfeatures|feature type=DZC:EA}的学科领域中。每种元素艺术都有其独特的能力集，作为这个子类特性中选项的反映。每当你从这个子类获得一个特性时，你学会其中一个选项，每个选项与一个元素艺术相关({@filter air|optionalfeatures|feature type=DZC:EA:A}，{@filter earth|optionalfeatures|feature type=DZC:EA:E}，{@filter fire|optionalfeatures|feature type=DZC:EA:F}，和{@filter water|optionalfeatures|feature type=DZC:EA:W})。",
+				"这些艺术的另一个特点是每种都有相关的伤害类型，如《元素艺术伤害表》所示。每当这个子类中的一个特性提到你的元素艺术的伤害时，指的是表中的那些。 (Elemental Arts Damage table)",
+				{
+					"type": "table",
+					"caption": "Elemental Arts Damage",
+					"colLabels": [
+						"Elemental Art",
+						"Maximum Ki Points for a Spell"
+					],
+					"colStyles": [
+						"col-5 text-center",
+						"col-9 text-left"
+					],
+					"rows": [
+						[
+							"Air",
+							"雷电"
+						],
+						[
+							"地球",
+							"钝击、穿刺、劈砍"
+						],
+						[
+							"Fire",
+							"Fire"
+						],
+						[
+							"水 (Water)",
+							"Cold"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Strike",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Elements",
+			"subclassSource": "DZC:4ELE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在你在 3 级选择此传统开始时，你学会了从你的攻击中释放元素能量。在你的回合中，当你用武器攻击命中目标时，你可以花费 1 点气点来使用一个你知道的{@filter Elemental Strike|optionalfeature|feature type=DZC:EA:ES}选项，造成额外伤害，伤害量等于你的武艺骰的一次投掷，从其相关的武艺中选择一种伤害类型。每个选项都有你可以附加的额外效果。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thunderous Strike|DZC:4ELE",
+							"name": "Thunderous Strike (Air Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Rocky Strike|DZC:4ELE",
+							"name": "Rocky Strike (Earth Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Igneous Strike|DZC:4ELE",
+							"name": "Igneous Strike (Fire Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Gelid Strike|DZC:4ELE",
+							"name": "Gelid Strike (Water Art)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Manifestation",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"foundryImg": "icons/magic/earth/projectile-stone-boulder-brown.webp",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Elements",
+			"subclassSource": "DZC:4ELE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"在符合当地语言习惯的情况下，文本如 (%num%) 应仍然在翻译中输出为 (%num%)。\n\n在3级时，你学会了将元素的能量塑造成不同的效果。在你的回合中，你可以花费1点气来用你知道的 {@filter Elemental Manifestation|optionalfeature|feature type=DZC:EA:EM} 选项替换攻击动作中的一次攻击。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Wind Blast|DZC:4ELE",
+							"name": "Wind Blast (Air Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Stone Boulder|DZC:4ELE",
+							"name": "Stone Boulder (Earth Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flaming Blast|DZC:4ELE",
+							"name": "Flaming Blast (Fire Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Water Swirl|DZC:4ELE",
+							"name": "Water Swirl (Water Art)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Stances",
+			"source": "DZC:4ELE",
+			"page": 6,
+			"foundryImg": "icons/magic/water/elemental-water.webp",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Elements",
+			"subclassSource": "DZC:4ELE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在第6级时，你学会了将自己与元素能量融合。作为一个奖励动作，你可以花费2点气来进入你所知道的一个{@filter Primal Stance|optionalfeature|feature type=DZC:EA:PS}选项，持续1分钟。在持续时间内，你获得所选择选项的益处。如果你被击晕，如果你将其作为奖励动作结束，或者直到你再次使用此特性，你的原始姿态会提前结束。 (%num%)",
+				"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n\n翻译符合 DND 运行组规则，专有名词在翻译后应该保留为英文，并用 `()` 括起来。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Wind Stance|DZC:4ELE",
+							"name": "Wind Stance (Air Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mountain Stance|DZC:4ELE",
+							"name": "Mountain Stance (Earth Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flame Stance|DZC:4ELE",
+							"name": "Flame Stance (Fire Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "River Stance|DZC:4ELE",
+							"name": "River Stance (Water Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Wind Blast|DZC:4ELE",
+							"name": "Wind Blast (Air Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Stone Boulder|DZC:4ELE",
+							"name": "Stone Boulder (Earth Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flaming Blast|DZC:4ELE",
+							"name": "Flaming Blast (Fire Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Water Swirl|DZC:4ELE",
+							"name": "Water Swirl (Water Art)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Step Shift",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"foundryImg": "icons/creatures/abilities/wings-birdlike-blue.webp",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Elements",
+			"subclassSource": "DZC:4ELE",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"在11级时，你学会如何与元素一体移动。选择其中之一{@filter Step Shift|optionalfeature|feature type=DZC:EA:SS}。",
+				"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n\n翻译符合 DND 运行组规则，专有名词在翻译后应该保留为英文，并用 `()` 括起来。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Aerial Lift|DZC:4ELE",
+							"name": "Aerial Lift (Air Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Rock Walk|DZC:4ELE",
+							"name": "Rock Walk (Earth Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Jet Burst|DZC:4ELE",
+							"name": "Jet Burst (Fire Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Underwater Adaptations|DZC:4ELE",
+							"name": "Underwater Adaptations (Water Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Wind Stance|DZC:4ELE",
+							"name": "Wind Stance (Air Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mountain Stance|DZC:4ELE",
+							"name": "Mountain Stance (Earth Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flame Stance|DZC:4ELE",
+							"name": "Flame Stance (Fire Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "River Stance|DZC:4ELE",
+							"name": "River Stance (Water Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Wind Blast|DZC:4ELE",
+							"name": "Wind Blast (Air Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Stone Boulder|DZC:4ELE",
+							"name": "Stone Boulder (Earth Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flaming Blast|DZC:4ELE",
+							"name": "Flaming Blast (Fire Art)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Water Swirl|DZC:4ELE",
+							"name": "Water Swirl (Water Art)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Mastery",
+			"source": "DZC:4ELE",
+			"page": 7,
+			"foundryImg": "icons/magic/nature/explosion-flame-blue.webp",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Elements",
+			"subclassSource": "DZC:4ELE",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"在第17级时，你已经完善了原始艺术，学会以特殊的方式塑造它们。你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"在你的回合中，当你用武器攻击命中目标时，你可以造成额外伤害，等于你的武艺骰的一次投掷，选择你所知道的元素艺术伤害类型之一。 (Martial Arts)",
+						"你获得你所掌握的元素艺术中一种伤害类型的抗性。如果你在同一元素中掌握了四种艺术，则忽略对该伤害的抗性。 (elemental art)"
+					]
+				},
+				"符合当地语言习惯，并且像(%num%)这样的文本在翻译中仍然应该输出为(%num%)。\n\n你也可以选择以下{@filter Elemental Mastery|optionalfeatures|feature type=DZC:EA:EMa}个选项之一。你必须知道括号中显示的元素艺术数量才能选择它。 (elemental arts)",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Air Master|DZC:4ELE",
+							"name": "Air Master (Four Air Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Earth Master|DZC:4ELE",
+							"name": "Earth Master (Four Earth Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Fire Master|DZC:4ELE",
+							"name": "Fire Master (Four Fire Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Water Master|DZC:4ELE",
+							"name": "Water Master (Four Water Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Lightning Adept|DZC:4ELE",
+							"name": "Lightning Adept (Two or more Air Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Acid Adept|DZC:4ELE",
+							"name": "Acid Adept (Two or more Earth Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Light Adept|DZC:4ELE",
+							"name": "Light Adept (Two or more Fire Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Heal Adept|DZC:4ELE",
+							"name": "Heal Adept (Two or more Water Arts)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Nature's Vessel|DZC:4ELE",
+							"name": "Nature's Vessel (One Art in each Elemental)"
+						}
+					]
+				}
+			]
+		}
+	]
+}
