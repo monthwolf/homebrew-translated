@@ -15,16 +15,27 @@
 					"ACOG_Muffin",
 					"hakr14"
 				],
-				"version": "4.1.1",
+				"version": "4.2.0",
 				"color": "025b79",
 				"url": "https://www.gmbinder.com/share/-Mslo6ktmq1Yg5WTSjDQ"
+			},
+			{
+				"json": "LLMC:E",
+				"abbreviation": "LLMC:E",
+				"full": "The Magus: Expended",
+				"authors": [
+					"laserllama"
+				],
+				"convertedBy": [
+					"hakr14"
+				],
+				"version": "4.2.0",
+				"color": "025b79",
+				"url": "https://www.gmbinder.com/share/-Nvnfwvps1zOqpIGK-5B"
 			}
 		],
 		"dateAdded": 1647980495,
-		"dateLastModified": 1714158673,
-		"optionalFeatureTypes": {
-			"FS:LLMC": "Fighting Style; Magus"
-		},
+		"dateLastModified": 1715005913,
 		"includes": {
 			"spell": [
 				"llspell"
@@ -34,7 +45,7 @@
 				"LLAF:E"
 			]
 		},
-		"_dateLastModifiedHash": "ef5e1df097"
+		"_dateLastModifiedHash": "7afc0ec84d"
 	},
 	"class": [
 		{
@@ -159,6 +170,7 @@
 				"chill touch",
 				"dancing lights",
 				"firebolt",
+				"frostbite|xge",
 				"glitterbeam|llspell",
 				"green-flame blade (alternate)|llspell",
 				"light",
@@ -217,6 +229,7 @@
 				"invisibility",
 				"knock",
 				"levitate",
+				"nystul's magic aura",
 				"magic weapon (alternate)|llspell",
 				"mirror image",
 				"misty step",
@@ -248,6 +261,7 @@
 				"wall of water|xge",
 				"wind wall",
 				"accursed touch|llspell",
+				"arcane eye",
 				"banishment",
 				"death ward",
 				"dimension door",
@@ -270,6 +284,7 @@
 				"far step|xge",
 				"hold monster",
 				"immolation|xge",
+				"passwall",
 				"scrying",
 				"skill empowerment|xge",
 				"steel wind strike (alternate)|llspell",
@@ -693,10 +708,11 @@
 			],
 			"foundrySystem": {
 				"activation": {
-					"type": "hour",
-					"condition": "Can be during a short or long rest"
+					"cost": 1,
+					"type": "bonus"
 				},
 				"uses": {
+					"value": 0,
 					"max": "1 + max(0, @abilities.int.mod)",
 					"per": "charges"
 				}
@@ -721,7 +737,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Archery|PHB"
+							"optionalfeature": "Archery|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -737,7 +753,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Dueling|PHB"
+							"optionalfeature": "Dueling|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -754,6 +770,26 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "Versatile Fighting|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Brawler|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Featherweight Fighting|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Great Weapon Fighting|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Heavyweight Fighting|LLAF:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mounted Warrior|LLAF:E"
 						}
 					]
 				}
@@ -911,7 +947,7 @@
 			"classSource": "LLMC",
 			"level": 3,
 			"entries": [
-				"在第3级时，选择最能代表你的魔战士技能的秘传派别：奥术学者（Arcanists）、奥术弓手（Arcane Archers）、刀舞者（Blade Dancers）、龙鳞（Scales）、暗影（Shades）、破法者（Spellbreakers）、或守护者（Warders）。",
+				"在第3级时，选择最能代表你魔剑士技能的神秘秩序：秘术师（Arcanists）、秘法射手（Arcane Archers）、刀舞者（Blade Dancers）、龙骑士（Dragon Knights）、破法者（Spellbreakers）或守护者（Warders）。",
 				"你的(奥秘秩序)在3级时为你提供特性，再在你达到该职业的第7、15和20级时提供特性。",
 				{
 					"type": "entries",
@@ -1149,7 +1185,7 @@
 				"Esoteric Sight|Magus|LLMC|Arcanist|LLMC|15",
 				"Grand Arcanist|Magus|LLMC|Arcanist|LLMC|20"
 			],
-			"preparedSpells": "<$level$> / 2 + <$int_mod$>",
+			"preparedSpells": "<$level$> / 2 + <$int_mod$> + <$prof_bonus$>",
 			"spellsKnownProgressionFixed": [
 				0,
 				0,
@@ -1333,13 +1369,13 @@
 			"foundryImg": "icons/weapons/swords/sword-winged-pink.webp"
 		},
 		{
-			"name": "Order of Scales",
+			"name": "Order of Dragon Knights",
 			"source": "LLMC",
 			"className": "Magus",
 			"classSource": "LLMC",
 			"shortName": "Dragon Knight",
 			"subclassFeatures": [
-				"Order of Scales|Magus|LLMC|Dragon Knight|LLMC|3",
+				"Order of Dragon Knights|Magus|LLMC|Dragon Knight|LLMC|3",
 				"Greater Companion|Magus|LLMC|Dragon Knight|LLMC|7",
 				"Elemental Breath|Magus|LLMC|Dragon Knight|LLMC|15",
 				"Mythic Companion|Magus|LLMC|Dragon Knight|LLMC|15",
@@ -1387,16 +1423,16 @@
 		},
 		{
 			"name": "Order of Shades",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"className": "Magus",
 			"classSource": "LLMC",
 			"shortName": "Shade",
 			"subclassFeatures": [
-				"Order of Shades|Magus|LLMC|Shade|LLMC|3",
-				"From the Shadows|Magus|LLMC|Shade|LLMC|7",
-				"Improved Shroud|Magus|LLMC|Shade|LLMC|7",
-				"Cloud the Mind|Magus|LLMC|Shade|LLMC|15",
-				"One with the Darkness|Magus|LLMC|Shade|LLMC|20"
+				"Order of Shades|Magus|LLMC|Shade|LLMC:E|3",
+				"From the Shadows|Magus|LLMC|Shade|LLMC:E|7",
+				"Improved Shroud|Magus|LLMC|Shade|LLMC:E|7",
+				"Cloud the Mind|Magus|LLMC|Shade|LLMC:E|15",
+				"One with the Darkness|Magus|LLMC|Shade|LLMC:E|20"
 			],
 			"additionalSpells": [
 				{
@@ -1541,6 +1577,480 @@
 				"antilife shell",
 				"circle of power"
 			]
+		},
+		{
+			"name": "Order of Armorers",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"shortName": "Armorer",
+			"subclassFeatures": [
+				"Order of Armorers|Magus|LLMC|Armorer|LLMC:E|3",
+				"Armorer's Focus|Magus|LLMC|Armorer|LLMC:E|7",
+				"Whirlwind of Steel|Magus|LLMC|Armorer|LLMC:E|7",
+				"Conjured Defense|Magus|LLMC|Armorer|LLMC:E|15",
+				"Death Strike|Magus|LLMC|Armorer|LLMC:E|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"compelled duel",
+							"hail of thorns (alternate)|llspell"
+						],
+						"5": [
+							"cloud of daggers",
+							"heat metal"
+						],
+						"9": [
+							"conjure volley (alternate)|llspell",
+							"haste"
+						],
+						"13": [
+							"fabricate",
+							"freedom of movement"
+						],
+						"17": [
+							"steel wind strike (alternate)|llspell",
+							"vorpal blade|llspell"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"compelled duel",
+				"hail of thorns (alternate)|llspell",
+				"cloud of daggers",
+				"heat metal",
+				"conjure volley (alternate)|llspell",
+				"haste",
+				"fabricate",
+				"freedom of movement",
+				"steel wind strike (alternate)|llspell",
+				"vorpal blade|llspell"
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Whirlwind of Steel Damage",
+					"configuration": {
+						"identifier": "whirlwind",
+						"type": "dice",
+						"scale": {
+							"7": {
+								"n": 2,
+								"die": 10
+							},
+							"14": {
+								"n": 3,
+								"die": 10
+							},
+							"20": {
+								"n": 4,
+								"die": 10
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/weapons/thrown/dagger-ringed-steel.webp"
+		},
+		{
+			"name": "Order of Conduits",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"shortName": "Conduit",
+			"subclassFeatures": [
+				"Order of Conduits|Magus|LLMC|Conduit|LLMC:E|3",
+				"Ethereal Arts|Magus|LLMC|Conduit|LLMC:E|7",
+				"Enchanted Physique|Magus|LLMC|Conduit|LLMC:E|15",
+				"Ascended Conduit|Magus|LLMC|Conduit|LLMC:E|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"expeditious retreat",
+							"thunderous smite (alternate)|llspell"
+						],
+						"5": [
+							"blur",
+							"branding smite (alternate)|llspell"
+						],
+						"9": [
+							"blinding smite (alternate)|llspell",
+							"haste"
+						],
+						"13": [
+							"dimension door",
+							"staggering smite (alternate)|llspell"
+						],
+						"17": [
+							"banishing smite (alternate)|llspell",
+							"skill empowerment|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"expeditious retreat",
+				"thunderous smite (alternate)|llspell",
+				"blur",
+				"branding smite (alternate)|llspell",
+				"blinding smite (alternate)|llspell",
+				"haste",
+				"dimension door",
+				"staggering smite (alternate)|llspell",
+				"banishing smite (alternate)|llspell",
+				"skill empowerment|xge"
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Arcane Ascetic",
+					"featureType": [
+						"FS:AF"
+					],
+					"progression": {
+						"3": 1
+					},
+					"required": {
+						"3": [
+							"Brawler|LLAF"
+						]
+					}
+				}
+			],
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-red.webp"
+		},
+		{
+			"name": "Order of Hexblades",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"shortName": "Hexblade",
+			"subclassFeatures": [
+				"Order of Hexblades|Magus|LLMC|Hexblade|LLMC:E|3",
+				"Accursed Armory|Magus|LLMC|Hexblade|LLMC:E|7",
+				"Sentient Bond|Magus|LLMC|Hexblade|LLMC:E|15",
+				"Awakened Hexblade|Magus|LLMC|Hexblade|LLMC:E|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"hex",
+							"wrathful smite (alternate)|llspell",
+							"chill touch"
+						],
+						"5": [
+							"blindness/deafness",
+							"blur"
+						],
+						"9": [
+							"bestow curse",
+							"spirit shroud|tce"
+						],
+						"13": [
+							"phantasmal killer",
+							"shadow of moil|xge"
+						],
+						"17": [
+							"antilife shell",
+							"destructive wave"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"hex",
+				"wrathful smite (alternate)|llspell",
+				"blindness/deafness",
+				"blur",
+				"bestow curse",
+				"spirit shroud|tce",
+				"phantasmal killer",
+				"shadow of moil|xge",
+				"antilife shell",
+				"destructive wave"
+			],
+			"foundryImg": "icons/skills/melee/blade-tip-smoke-green.webp"
+		},
+		{
+			"name": "Order of Spellswords",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"shortName": "Spellsword",
+			"subclassFeatures": [
+				"Order of Spellswords|Magus|LLMC|Spellsword|LLMC:E|3",
+				"Mystic Strikes|Magus|LLMC|Spellsword|LLMC:E|7",
+				"Ethereal Warrior|Magus|LLMC|Spellsword|LLMC:E|15",
+				"Arcane Blademaster|Magus|LLMC|Spellsword|LLMC:E|20"
+			],
+			"subclassTableGroups": [
+				{
+					"colLabels": [
+						"Expliots Known",
+						"Exploit Die",
+						"Exploit Dice",
+						"High Degree"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							"{@dice d4}",
+							2,
+							"1st"
+						],
+						[
+							2,
+							"{@dice d4}",
+							2,
+							"1st"
+						],
+						[
+							3,
+							"{@dice d4}",
+							2,
+							"1st"
+						],
+						[
+							3,
+							"{@dice d4}",
+							2,
+							"1st"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							4,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							5,
+							"{@dice d6}",
+							3,
+							"2nd"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"3rd"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"3rd"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"3rd"
+						],
+						[
+							6,
+							"{@dice d8}",
+							4,
+							"3rd"
+						],
+						[
+							7,
+							"{@dice d8}",
+							4,
+							"3rd"
+						],
+						[
+							7,
+							"{@dice d8}",
+							4,
+							"3rd"
+						]
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Martial Exploits",
+					"featureType": [
+						"LL:1DE"
+					],
+					"progression": {
+						"3": 2,
+						"5": 3
+					}
+				},
+				{
+					"name": "Martial Exploits",
+					"featureType": [
+						"LL:1DE",
+						"LL:2DE"
+					],
+					"progression": {
+						"7": 1,
+						"11": 2
+					}
+				},
+				{
+					"name": "Martial Exploits",
+					"featureType": [
+						"LL:1DE",
+						"LL:2DE",
+						"LL:3DE"
+					],
+					"progression": {
+						"15": 1,
+						"19": 2
+					}
+				},
+				{
+					"name": "Spellsword's Armory",
+					"featureType": [
+						"FS:MC"
+					],
+					"progression": {
+						"3": 1,
+						"7": 2,
+						"15": 3,
+						"20": 4
+					}
+				}
+			],
+			"foundryAdvancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Exploit Die",
+					"configuration": {
+						"identifier": "exploit-die",
+						"type": "dice",
+						"scale": {
+							"3": {
+								"die": 4
+							},
+							"7": {
+								"die": 6
+							},
+							"15": {
+								"die": 8
+							}
+						}
+					}
+				}
+			],
+			"foundryImg": "icons/skills/melee/sword-stuck-glowing-pink.webp"
+		},
+		{
+			"name": "Order of Travelers",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"shortName": "Traveler",
+			"subclassFeatures": [
+				"Order of Travelers|Magus|LLMC|Traveler|LLMC:E|3",
+				"Chronological Drift|Magus|LLMC|Traveler|LLMC:E|7",
+				"Greater Shift|Magus|LLMC|Traveler|LLMC:E|7",
+				"Conjure Self|Magus|LLMC|Traveler|LLMC:E|15",
+				"Untethered Traveler|Magus|LLMC|Traveler|LLMC:E|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"expeditious retreat",
+							"feather fall"
+						],
+						"5": [
+							"hold person",
+							"misty step"
+						],
+						"9": [
+							"haste",
+							"slow"
+						],
+						"13": [
+							"banishment",
+							"dimension door"
+						],
+						"17": [
+							"hold monster",
+							"modify memory"
+						]
+					},
+					"innate": {
+						"20": {
+							"daily": {
+								"1": [
+									"time stop"
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassSpells": [
+				"expeditious retreat",
+				"feather fall",
+				"hold person",
+				"misty step",
+				"haste",
+				"slow",
+				"banishment",
+				"dimension door",
+				"hold monster",
+				"modify memory"
+			],
+			"foundryImg": "icons/magic/time/clock-analog-gray.webp"
 		}
 	],
 	"subclassFeature": [
@@ -1606,7 +2116,7 @@
 					"type": "entries",
 					"name": "Preparing Spells",
 					"entries": [
-						"在一次长休息期间，你可以花费1小时准备当天的法术。你可以准备一些法术，数量等于你等级的一半（向下取整）+ 你的智力调整值。这些是你可以施展的唯一法术，直到你准备不同的法术为止，而且在准备期间它们算作魔法师法术。 (Magus)"
+						"在长时间休息期间，你可以花费1小时来准备当天的法术。你可以从你的法术书中准备数量等于你等级的一半加上你的智力修正加上你的熟练加值的法术。这些是你能施放的唯一法术，直到你准备其他法术为止，在准备期间，它们被视为你的魔导士法术。"
 					]
 				},
 				{
@@ -1993,7 +2503,7 @@
 			]
 		},
 		{
-			"name": "Order of Scales",
+			"name": "Order of Dragon Knights",
 			"source": "LLMC",
 			"className": "Magus",
 			"classSource": "LLMC",
@@ -2002,7 +2512,7 @@
 			"subclassSource": "LLMC",
 			"level": 3,
 			"entries": [
-				"传说中的鳞之秩序(Magi of the legendary Order of Scales)的魔法师们将他们的灵魂与龙族伙伴(Draconic Companion)绑定在一起。通过古老的魔法，他们赋予伙伴远超其年龄的龙族力量，如果他们的羁绊足够强大，他们就可以骑乘他们的龙族伙伴，成为传说中的龙骑士(Dragon Knight)。",
+				"这个传奇密宗组织的魔法师将他们的灵魂与一只龙伴侣绑定在一起。利用古老的魔法，他们赋予伴侣超越年龄的龙之力量。如果他们的羁绊足够强大，他们就可以骑上他们的龙伴侣，成为传说中的龙骑士。 (Esoteric Order)",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Draconic Companion|Magus|LLMC|Dragon Knight|LLMC|3"
@@ -2181,40 +2691,40 @@
 		},
 		{
 			"name": "Order of Shades",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 3,
 			"entries": [
-				"一个秘密的渗透者、刺客和间谍组织，这些魔法师利用他们的秘密能力在冲突开始之前结束冲突。被称为暗影（Shades）的这些战士专精于幻术魔法，并在阴影掩护下茁壮成长。只有当暗影确信成功的时候才会出手。",
+				"秘密渗透者、刺客和间谍的组织，这些魔法师利用他们的秘密能力在冲突开始之前结束冲突。这些战士被称为\"暗影\"，他们擅长幻术魔法，在阴影的掩护下茁壮成长。暗影魔法师只会在他们确信成功的情况下发动攻击。 (Shade Magi)",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shade Spells|Magus|LLMC|Shade|LLMC|3"
+					"subclassFeature": "Shade Spells|Magus|LLMC|Shade|LLMC:E|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shroud of Darkness|Magus|LLMC|Shade|LLMC|3"
+					"subclassFeature": "Shroud of Darkness|Magus|LLMC|Shade|LLMC:E|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Umbral Sight|Magus|LLMC|Shade|LLMC|3"
+					"subclassFeature": "Umbral Sight|Magus|LLMC|Shade|LLMC:E|3"
 				}
 			]
 		},
 		{
 			"name": "Shade Spells",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 3,
 			"entries": [
-				"每当你获得一级魔法师时，你可以用魔法师或巫师法术列表中相同等级的一项占卜或幻术法术替换此特性中的一个法术。 (%num%)",
+				"每当你获得一个魔法师等级，你可以用魔法师或巫师法术列表中相同等级的预言或幻术法术替换此特性中的一个法术。 (Magus) (Wizard)",
 				{
 					"type": "table",
 					"colLabels": [
@@ -2253,13 +2763,13 @@
 		},
 		{
 			"name": "Shroud of Darkness",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-power.webp",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 3,
 			"entries": [
 				"作为一个行动，你可以将自己包裹在一层幻象魔法的披风中，持续1小时。当这层披风处于激活状态时，如果你处于昏暗或黑暗的区域，你可以使用一个额外的行动来变得不可见{@condition invisible}。这种隐身状态持续你的披风的持续时间，但如果你攻击、触摸或强迫一个生物进行能力检定或豁免检定，它会提前结束。",
@@ -2268,13 +2778,13 @@
 		},
 		{
 			"name": "Umbral Sight",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"foundryImg": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 3,
 			"entries": [
 				"你接受了在黑暗中战斗的训练。你的视野范围增加了 {@sense darkvision} 至 60 英尺。如果你已经通过其他特征拥有暗视能力，则你的暗视范围增加了 30 英尺。（Darkvision）"
@@ -2282,13 +2792,13 @@
 		},
 		{
 			"name": "From the Shadows",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"foundryImg": "icons/skills/melee/strike-dagger-arcane-pink.webp",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -2298,28 +2808,28 @@
 		},
 		{
 			"name": "Improved Shroud",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你的魔法可以隐藏你免受阴影生物的侵扰。如果你在黑暗中，你的 {@subclassFeature Shroud of Darkness|Magus|LLMC|Shade|LLMC|3} 处于激活状态，你对于依赖 {@sense darkvision} 来看到你的任何东西都是 {@condition invisible}。"
+				"你的魔法使你免受阴影生物的侦测。如果你在黑暗中时你的{@subclassFeature Shroud of Darkness|Magus|LLMC|Shade|LLMC:E|3}激活，你对于任何依赖{@sense darkvision}来看见你的事物都是{@condition invisible}。{@subclassFeature Shroud of Darkness|Magus|LLMC|Shade|LLMC:E|3} {@condition invisible} {@sense darkvision}"
 			],
 			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp"
 		},
 		{
 			"name": "Cloud the Mind",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"foundryImg": "icons/magic/control/fear-fright-white.webp",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 15,
 			"header": 2,
 			"entries": [
@@ -2329,17 +2839,17 @@
 		},
 		{
 			"name": "One with the Darkness",
-			"source": "LLMC",
+			"source": "LLMC:E",
 			"foundryImg": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
 			"className": "Magus",
 			"classSource": "LLMC",
-			"page": 10,
+			"page": 6,
 			"subclassShortName": "Shade",
-			"subclassSource": "LLMC",
+			"subclassSource": "LLMC:E",
 			"level": 20,
 			"header": 2,
 			"entries": [
-				"你已经登上了你的教团巅峰，并能与黑暗本身融为一体。你可以随心所欲地召唤你的{@subclassFeature Shroud of Darkness|Magus|LLMC|Shade|LLMC|3}，而当你的披风激活时，你会获得{@spell invisibility}和{@spell pass without trace (alternate)|llspell|pass without trace}咒语的双重效果，不受{@status concentration}影响。 {@subclassFeature Shroud of Darkness|Magus|LLMC|Shade|LLMC|3} {@spell invisibility} {@spell pass without trace (alternate)|llspell|pass without trace} {@status concentration}",
+				"你已经登上了你的团体的巅峰，可以与黑暗融为一体。你可以随意召唤你的{@subclassFeature Shroud of Darkness|Magus|LLMC|Shade|LLMC:E|3}，而当你的幽影生效时，你将获得{@spell invisibility}和{@spell pass without trace (alternate)|llspell|pass without trace}咒语的效果，不受{@status concentration}的影响。",
 				"最后，您可以在每个回合使用一个奖励动作，将自己传送到一个您能看到的、位于微光或黑暗区域的空间，距离不超过60英尺。 (dnd游戏团规则)"
 			]
 		},
@@ -2386,8 +2896,8 @@
 				{
 					"type": "table",
 					"colLabels": [
-						"Magus",
-						"Level"
+						"Magus Level",
+						"Spells"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -2566,8 +3076,8 @@
 				{
 					"type": "table",
 					"colLabels": [
-						"Magus",
-						"Level"
+						"Magus Level",
+						"Spells"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -2686,6 +3196,1040 @@
 				"activation.type": "special"
 			},
 			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
+			"name": "Order of Armorers",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 2,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"套甲师之魔法师宣称是原始法师的学生，后者是制造成为奥术军械的附魔的创造者。虽然现在每个团体都分享着这个附魔的知识，但只有套甲师能够充分利用它。这些战士学会将他们的奥术军械召唤为致命的抛射物，用于战斗。 (Order of Armorers)",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Armorer|Magus|LLMC|Armorer|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Armorer Spells|Magus|LLMC|Armorer|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Awakened Armory|Magus|LLMC|Armorer|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"name": "Arcane Armorer",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 2,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你学习过冶金和锻造，以及每位魔法师常见的艺术；咒语施放和武斗。你在{@item smith's tools|phb}和重甲方面获得熟练度。",
+				"根据当地的语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n\n此外，每当你进行使用你的铁匠工具的技能检定时，你的检定获得的奖励等同于你的智力调整值（最少为 +1）。\n\n翻译遵守 DND 跑团规则，并且专有名词在翻译后应保留英文括号中的内容。"
+			],
+			"toolProficiencies": [
+				{
+					"smith's tools": true
+				}
+			],
+			"armorProficiencies": [
+				{
+					"heavy": true
+				}
+			],
+			"foundryImg": "icons/tools/smithing/hammer-maul-steel-grey.webp"
+		},
+		{
+			"name": "Armorer Spells",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 2,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"当你在这个职业中获得一个等级时，你可以用圣骑士或游侠法术列表中相同等级的传送或召唤法术替换此特性中的一个法术。 (Paladin) (Ranger)",
+				{
+					"type": "table",
+					"colLabels": [
+						"Magus Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell compelled duel}, {@spell hail of thorns (alternate)|llspell}"
+						],
+						[
+							"5th",
+							"{@spell cloud of daggers}, {@spell heat metal}"
+						],
+						[
+							"9th",
+							"{@spell conjure volley (alternate)|llspell}, {@spell haste}"
+						],
+						[
+							"13th",
+							"{@spell fabricate}, {@spell freedom of movement}"
+						],
+						[
+							"17th",
+							"{@spell steel wind strike (alternate)|llspell}, {@spell vorpal blade|llspell}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/tools/smithing/furnace-fire-metal-orange.webp"
+		},
+		{
+			"name": "Awakened Armory",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 2,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"作为一个奖励行动，你可以召唤你{@classFeature Arcane Armory|Magus|LLMC|1}内的任意数量近战武器，使它们在你周围飘浮在你的空间中。你必须{@status concentration||concentrate}此效果，如果效果结束，你的武器回到你的军械库。 (D&D running group rules, Armory)",
+				"在悬浮时，这些武器具有投掷（20/60）属性，并且你使用你的智力，而不是力量或敏捷，进行它们的攻击和伤害检定。每当你通常可以进行攻击时，你可以用其中一把悬浮的刀进行攻击，之后无论是否命中，它都会立即返回悬浮在你的空间内。 （Thrown (20/60)）"
+			],
+			"foundryImg": "icons/weapons/thrown/shuriken-triple-purple.webp"
+		},
+		{
+			"name": "Armorer's Focus",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你在专注于你的{@subclassFeature Awakened Armory|Magus|LLMC|Armorer|LLMC:E|3}时，可以施展一个魔法师法术（Magus spell）。如果你被迫进行体质豁免来保持专注，你只需进行一次豁免检定，两个效果都会受到影响。"
+			],
+			"foundryImg": "icons/magic/unholy/projectiles-binary-pink.webp"
+		},
+		{
+			"name": "Whirlwind of Steel",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以同时使用所有悬浮的武器进行攻击。作为一个动作，在你的{@subclassFeature Awakened Armory|Magus|LLMC|Armorer|LLMC:E|3}仍然生效时，你可以强迫你能看到的每个生物在20英尺内进行一次敏捷豁免检定，检定 DC 为你的法术豁免 DC。生物在检定失败时受到{@damage 2d10}点伤害，在检定成功时受到一半伤害。这种伤害必须是由你的奥术武库武器之一造成的类型。",
+				"该特性造成的伤害在14级时增加至{@damage 3d10}，在达到20级时再次增加至{@damage 4d10}。"
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"@scale.order-of-armorers.whirlwind",
+						""
+					]
+				]
+			},
+			"foundryImg": "icons/skills/melee/strikes-sword-triple-gray.webp"
+		},
+		{
+			"name": "Conjured Defense",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你的奥术武库技能提升了你的防御。当你被攻击时，如果你的{@subclassFeature Awakened Armory|Magus|LLMC|Armorer|LLMC:E|3}仍然有效，你可以以反应的方式将你的智力调整值（最低+1）加到你的护甲等级上，以对抗该攻击。"
+			],
+			"foundrySystem": {
+				"ability": "int",
+				"activation.condition": "When you are hit by an attack while your Awakened Armory is active",
+				"formula": "max(1, @mod)"
+			},
+			"foundryImg": "icons/skills/melee/swords-parry-block-yellow.webp"
+		},
+		{
+			"name": "Death Strike",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Armorer",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你可以释放你的奇妙奥术武库的力量对抗你的敌人。每回合一次，当你用{@classFeature Arcane Armory|Magus|LLMC|1}武器击中一个生物时，你可以结束该武器的奥术武库附魔，使其在一场奇妙的魔力爆炸中向外爆炸。在其周围20英尺内的你选择的生物必须对你的法术豁免 DC 进行一次敏捷豁免检定，未通过检定则受到{@damage 8d6}力量伤害，通过检定则受到一半伤害。 (Arcane Armory)"
+			],
+			"foundrySystem": {
+				"actionType": "save",
+				"activation": {
+					"type": "special",
+					"condition": "Once per turn when you hit a creature with an Arcane Armory weapon"
+				},
+				"save": {
+					"ability": "dex",
+					"scaling": "spell"
+				},
+				"target": {
+					"value": 20,
+					"units": "ft",
+					"type": "sphere"
+				}
+			},
+			"foundryImg": "icons/skills/melee/blade-tip-energy-green.webp"
+		},
+		{
+			"name": "Order of Conduits",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"奇异而深奥，即使对于法师来说，导管之序是一群将法师的奥术技巧与武术相结合的战士的教派。通过掌握他们的身体，他们学会了将自己注入奥术能量，直接通过他们的肉体形式引导法师的神奇魔法。其他法师必须依赖他们的奥术武库，而被称为导管的人仅凭他们的拳头和内在的奥术力量来克服他们的敌人。（Conduits）",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conduit Spells|Magus|LLMC|Conduit|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Ascetic|Magus|LLMC|Conduit|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Conduit|Magus|LLMC|Conduit|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"name": "Conduit Spells",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"当你在这个职业中升级时，你可以用来自马格斯或圣骑士法术清单中相同等级的一种结界或召唤术法术来替换此特性中的一个法术。 (Magus) (Paladin)",
+				{
+					"type": "table",
+					"colLabels": [
+						"Magus Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell expeditious retreat}, {@spell thunderous smite (alternate)|llspell}"
+						],
+						[
+							"5th",
+							"{@spell blur}, {@spell branding smite (alternate)|llspell}"
+						],
+						[
+							"9th",
+							"{@spell blinding smite (alternate)|llspell}, {@spell haste}"
+						],
+						[
+							"13th",
+							"{@spell dimension door}, {@spell staggering smite (alternate)|llspell}"
+						],
+						[
+							"17th",
+							"{@spell banishing smite (alternate)|llspell}, {@spell skill empowerment|xge}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/unholy/hand-marked-pink.webp"
+		},
+		{
+			"name": "Arcane Ascetic",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你磨练了自己的身体，拒绝了世俗的享乐，并注入了神秘的力量。只要你没有穿戴盔甲或挥舞盾牌或重型武器，你的护甲等级等于 10 加上你的智力修正值加上你的敏捷修正值。 (DND)",
+				"你也学会了{@optfeature Brawler|LLAF}的格斗风格。如果你已经知道这种格斗风格，那么你可以选择魔法师职业可用的其他格斗风格来学习。"
+			],
+			"foundryImg": "icons/magic/defensive/shield-barrier-blades-teal.webp"
+		},
+		{
+			"name": "Arcane Conduit",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 3,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你已经学会了你的组织的秘密，并可以通过你的拳头引导奥术力量。你的徒手攻击算作{@classFeature Arcane Armory|Magus|LLMC|1}武器，用于魔法师职业特性。它们也满足需要至少价值1 sp的武器的法术的材料组成部分。 (Magus)",
+				"按照当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍然应该输出为 (%num%)。\n\n- 翻译符合 dnd 运行小组规则，专有名词在翻译后应保留英文 `()`。 \n\n此外，你可以选择使你的徒手攻击造成你所知道的魔法师法术的伤害类型。"
+			],
+			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue-green.webp"
+		},
+		{
+			"name": "Ethereal Arts",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 4,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你将虚空魔法融入你独特的武术风格中。当你用徒手攻击击中生物时，你可以将目标向后击退5英尺，一条直线（只要目标与你的体型相等或更小），或者你可以立即传送到你能看到的目标附近的未占用空间。 (unarmed strike) (5 feet)",
+				"你的徒手攻击现在在命中时造成 {@damage 1d8} 伤害。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you hit a creature with an unarmed strike"
+				},
+				"damage.parts": []
+			},
+			"foundryImg": "icons/magic/movement/trail-streak-zigzag-teal.webp"
+		},
+		{
+			"name": "Enchanted Physique",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 4,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你所属的魔法秩序已完全贯穿你的身体，增强了你的身体能力。你对所有的钝击、穿刺和斩击伤害获得抗性。 (Order)",
+				"根据当地语言习惯，并且像(%num%)这样的文本在翻译中应该仍然输出为(%num%)。\n- 翻译应符合dnd running group规则，专有名词在翻译后应保留英文括号内的内容。\n\n此外，当你开始你的回合并且在施放在自己身上的{@spell haste}这样的法术上时，你会获得临时生命值，其值等于该法术等级的两倍。"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "When you start your turn and are concentrating on a spell that you cast on yourself"
+				}
+			},
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp"
+		},
+		{
+			"name": "Ascended Conduit",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 4,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"作为一个额外行动，你可以用奥术力量过度充能你的身体，释放你的秩序的真正力量。当你这样做时，你在接下来的一分钟内获得下面列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你采取攻击动作并只进行徒手攻击时，你可以在该攻击动作中额外进行两次徒手攻击（总共四次攻击）。 (Dungeons & Dragons running group rules)",
+						"每当你施放一个魔剑士法术时，你获得临时生命值，数值等同于消耗的法术位等级的两倍。",
+						"每当你使用魔导士特性或法术传送时，你可以触摸一个与你尺寸相同（或更小）的生物，并将其与你一起传送。这包括{@condition grappled}生物。"
+					]
+				},
+				"当你通过这个特性超负荷你的身体时，你必须完成一次长休才能再次使用它。 如果你没有剩余的使用次数，你可以消耗一个5级法术位再次使用它。 (feature)"
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-beam-blue.webp"
+		},
+		{
+			"name": "Order of Hexblades",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 4,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"通常围绕着强大的有意识武器产生的，被称为\"Hexblades\"的魔法师通过险恶的诅咒增强他们在战斗中的相当技能。挥舞着影暗之力量，这些战士漫游于世界，从值得的敌人和致命的怪物身上汲取生命精华，以造就他们自己的有意识武器。为了这个神秘的探索，Hexblade将不惜一切与另一个技艺高超的战士会战。（Hexblades）",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hex Warrior|Magus|LLMC|Hexblade|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hexblade Spells|Magus|LLMC|Hexblade|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Malevolent Hex|Magus|LLMC|Hexblade|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"name": "Hex Warrior",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 4,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你已学会将意志注入武器之中。你可以使用智力代替力量或敏捷，进行带有 {@classFeature Arcane Armory|Magus|LLMC|1} 武器的攻击和伤害骰。\n",
+				"你还学会了{@spell chill touch}的小咒术。它不计入你所知的零级咒术数量，并且你每次进行奥术兵器攻击时都可以{@classFeature Spellstrike|Magus|LLMC|2}。"
+			],
+			"foundryImg": "icons/weapons/swords/greatsword-evil-green.webp"
+		},
+		{
+			"name": "Hexblade Spells",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 4,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"每当你在这个职业中升级时，你可以用玛格斯或术士法术列表中相同等级的一种死灵术或幻术法术替换此特性中的一个法术。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Magus Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell hex}, {@spell wrathful smite (alternate)|llspell}"
+						],
+						[
+							"5th",
+							"{@spell blindness/deafness}, {@spell blur}"
+						],
+						[
+							"9th",
+							"{@spell bestow curse}, {@spell spirit shroud|tce}（死灵）"
+						],
+						[
+							"13th",
+							"{@spell phantasmal killer}, {@spell shadow of moil|xge}"
+						],
+						[
+							"17th",
+							"{@spell antilife shell}, {@spell destructive wave}（死灵）"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/sword-flanged-lightning.webp"
+		},
+		{
+			"name": "Malevolent Hex",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 4,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你利用你的秩序的邪恶魔法在你的敌人身上施加可怕的诅咒。当你获得魔导师等级时，你不能用其他法术替换{@spell hex}，但是你对受到你诅咒效果影响的生物获得以下额外的好处（Magus）。（Magus）",
+				{
+					"type": "list",
+					"items": [
+						"你对该生物的武器和法术攻击投掷骰子得到19或20时视为暴击在 {@dice d20}。",
+						"每个回合，当你对其造成死灵伤害时，你可以用一只空手吸取其生命精华，获得临时生命值，数值等同于造成的死灵伤害的一半。这不对构造体或不死生物产生影响。（Constructs）（Undead）"
+					]
+				},
+				"当你施放咒术时，你的{@status concentration}不能被打破，除非你自愿结束它。最后，每长休息一次，你可以施放咒术，而不消耗法术槽，法术等级等同于你最高等级的法术槽，如魔法师职业表所示。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				}
+			},
+			"foundryImg": "icons/magic/control/voodoo-doll-pain-damage-purple.webp"
+		},
+		{
+			"name": "Accursed Armory",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 5,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你可以将敌人的生命精华储存在你的{@classFeature Arcane Armory|Magus|LLMC|1}中。当你用你的{@subclassFeature Malevolent Hex|Magus|LLMC|Hexblade|LLMC:e|3}从生物身上抽取生命精华时，你可以将那股能量存储在你的奥术军械中，而不是获得临时生命值。(Arcane Armory)",
+				"你的奥秘兵器可以容纳生命精华量，等于你智力调整值的十倍（至少为10生命精华），用于激发以下功能： (Arcane Armory)",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dire Ward|Magus|LLMC|Hexblade|LLMC:E|7"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sinister Spellcasting|Magus|LLMC|Hexblade|LLMC:E|7"
+				}
+			],
+			"foundrySystem": {
+				"activation.type": "none",
+				"uses": {
+					"value": 0,
+					"max": "max(10, 10 * @abilities.int.mod)",
+					"per": "charges"
+				}
+			},
+			"foundryImg": "icons/magic/unholy/projectile-spear-glow-pink.webp"
+		},
+		{
+			"name": "Dire Ward",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 5,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"entries": [
+				"在符合当地语言习惯的前提下，文本中像（%num%）这样的内容在翻译时应该保持输出为（%num%）。\n\n当受你咒术影响的生物迫使你进行豁免检定时，你可以从你的{@classFeature Arcane Armory|Magus|LLMC|1}中汲取10点生命精华，将其消耗以获得在你的豁免检定上的优势。你必须在进行{@dice d20}之前选择使用此特性。"
+			],
+			"consumes": {
+				"name": "Accursed Armory",
+				"amount": 10
+			},
+			"foundrySystem": {
+				"activation.condition": "When the creature under the effects of your hex spell forces you to make a saving throw"
+			},
+			"foundryImg": "icons/magic/unholy/barrier-shield-glowing-pink.webp"
+		},
+		{
+			"name": "Sinister Spellcasting",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 5,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"entries": [
+				"每当你施放一个灵刃咒语时，你可以从你的兵器库中消耗生命精华来代替消耗法术位。当你这么做时，你会消耗10点生命精华来施放该咒语所使用的等级。 (Hexblade Spell)"
+			],
+			"consumes": {
+				"name": "Accursed Armory",
+				"amount": 10
+			},
+			"foundrySystem": {
+				"activation.condition": "Whenever you cast a Hexblade Spell"
+			},
+			"foundryImg": "icons/magic/unholy/hand-light-green.webp"
+		},
+		{
+			"name": "Sentient Bond",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 5,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在进行长时间休息期间，你可以执行一个邪恶的1小时仪式，将你的{@classFeature Arcane Armory|Magus|LLMC|1}中的一件近战武器注入10点生命精华，使其在你下次长时间休息结束前获得有限的意识。在此期间，该武器获得以下列出的益处：",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"武器获得智力、智慧和魅力评分为10。它还获得一个对应于创建它的魔导士的取向和个性。 (Magus)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Telepathy",
+					"entries": [
+						"武器可以说一种你选择的语言并理解它。它可以与持有者进行心灵交流，而持有者可以用同样的方式进行回应。 (Dungeons & Dragons, 武器)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mental Bond",
+					"entries": [
+						"当你手持武器时，它会借给你其精神能力。你可以{@status concentration||concentrate}对{@spell hex}和另一法术（除了诅咒之外的其他法术）。然而，如果你进行体质豁免来维持你的专注力，你只需进行一次豁免来维持两个法术。"
+					]
+				}
+			],
+			"consumes": {
+				"name": "Accursed Armory",
+				"amount": 10
+			},
+			"foundrySystem": {
+				"actionType": "other",
+				"activation": {
+					"cost": 1,
+					"type": "hour",
+					"condition": "During the course of a long rest"
+				},
+				"save": {
+					"ability": null,
+					"scaling": "flat"
+				}
+			},
+			"foundryImg": "icons/weapons/swords/greatsword-guard-split-eyes.webp"
+		},
+		{
+			"name": "Awakened Hexblade",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 5,
+			"subclassShortName": "Hexblade",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你已经达到了你的秩序的顶峰，并且能够给你自己的Hexblade施加魔法。一旦你已经使用了{@subclassFeature Sentient Bond|Magus|LLMC|Hexblade|LLMC:E|15}将近100点生命精华注入了一把近战{@classFeature Arcane Armory|Magus|LLMC|1}武器中（这可以在多次仪式的过程中完成），仪式的效果就会变得永久，唤醒那把武器成为神话中的Hexblade之一。 (Hexblade)",
+				"一旦你创建了你的命运之刃，该武器将成为你的奥术军械的永久一部分，只要你活着，你就不能对另一件武器执行\"有知情力量的契约\"仪式。 命运之刃的智力、智慧和魅力得分都会增加到16，并且命运之刃可以与距离它120英尺内的生物进行心灵感应交流并听到它们的声音。 (Hexblade, Arcane Armory, Sentient Bond)",
+				"你的黑刃也给予你以下好处： (%num%)",
+				{
+					"type": "list",
+					"items": [
+						"Hexblade对受你{@spell hex}法术影响的任何生物的攻击投掷都以优势进行。",
+						"你用亡刃的攻击将目标的伤害免疫视为抗性，并无视伤害抗性。（Hexblade）",
+						"当你{@classFeature Spellstrike|Magus|LLMC|2}与Hexblade一起时，你可以将武器和法术攻击的伤害变为死灵属性。",
+						"你在对抗法术的豁免 throws 中具有优势。(advantage)"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Sentient Weapon Personalities",
+					"entries": [
+						"尽管大多数战锤（Hexblades）在他们的取向和个性上是邪恶的，但并非总是如此。由生物生命精华供养，总会在战锤的个性中显现出来。 (Hexblades)",
+						"在确定你的灵刃术士（Hexblade）的个性时，与你的DM讨论你的魔法师（Magus）之旅，以及这将如何体现在你创造的感知中。 (Hexblade, Magus, DM)"
+					]
+				}
+			],
+			"foundryImg": "icons/weapons/swords/sword-runed-glowing.webp"
+		},
+		{
+			"name": "Order of Spellswords",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 7,
+			"subclassShortName": "Spellsword",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"在符合当地语言习惯的情况下，文本中如(%num%)应仍然在翻译中输出为(%num%)。\n\n在符合dnd跑团规则的前提下进行翻译，专有名词在翻译后应保留英文在括号中。\n\n异常罕见，即使在魔法师中也是如此，法术剑士团的成员掌握了高级剑术和魔法。他们将自己的生命奉献给在战斗中的卓越追求，几乎不涉及其他事务。结合他们团体的秘密魔法和高级的武术技巧，几乎没有战士能够与法术剑士的附魔之刃在直接战斗中匹敌。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Martial Exploits|Magus|LLMC|Spellsword|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellsword's Armory|Magus|LLMC|Spellsword|LLMC:E|3"
+				}
+			]
+		},
+		{
+			"name": "Martial Exploits",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 7,
+			"subclassShortName": "Spellsword",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你已经研究了各种武术壮举，以增强你所属秩序的魔法能力。你获得以下特征： (Order)",
+				{
+					"type": "entries",
+					"name": "Exploit Dice",
+					"entries": [
+						"法剑士技能表显示了你可以使用多少个技能骰来使用你的技能。要使用一个技能，你需要消耗一个技能骰，当你完成短暂休息或长时间休息时，你会重新获得所有已消耗的技能骰。 (Spellsword Exploits表显示了你可以使用多少个Exploit Dice来使用你的Exploits。要使用一个Exploit，你需要消耗一个Exploit Die，当你完成短暂休息或长时间休息时，你会重新获得所有已消耗的Exploit Dice。)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High Degree",
+					"entries": [
+						"你的魔法师等级限制了你能学习和使用的技能的技术性。这个限制反映在 Spellsword Exploits 表格的 High Degree 栏中。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exploits",
+					"entries": [
+						"你可以选择学习两项你的{@class Alternate Fighter|LLAF}可用的武术技。你每次只能在一次技能检定、攻击或豁免投掷中使用一项武术技。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"如果一个漏洞需要生物进行豁免检定，其豁免难度等级（DC）按以下方式计算：",
+						{
+							"type": "abilityDc",
+							"name": "Exploit",
+							"attributes": [
+								"str",
+								"dex"
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Multiclassing & Exploits",
+					"entries": [
+						"你的武技部分依赖于你在具有技能的职业中的综合等级，部分依赖于每个职业的等级。如果你从多个职业学习技能，参考 {@link Alternate Martial Multiclassing|https://www.gmbinder.com/share/-NGUL51kfZCPlESxL1wq}。 (DND 运行小组规则)"
+					]
+				}
+			],
+			"resources": [
+				{
+					"name": "Exploit Dice",
+					"type": "dicePool",
+					"count": "floor((<$level$> + 17) / 8)",
+					"number": 1,
+					"faces": "(2 * floor((<$level$> + 17) / 8))",
+					"recharge": "restShort"
+				}
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/weapons/swords/sword-guard-steel-green.webp"
+		},
+		{
+			"name": "Spellsword's Armory",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 7,
+			"subclassShortName": "Spellsword",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你学会了在你的奥术兵器库中储存战斗风格的知识。你可以从魔导师职业可用的战斗风格中选择一个额外的，但是对于这个战斗风格的了解将存储在你的 {@classFeature Arcane Armory|Magus|LLMC|1} 中，就像一把武器或一套盔甲一样。 (Magus class)",
+				"当你使用奖励动作从你的奥术军械中召唤物体时，你可以将该战斗风格的知识引入你的头脑，将你当前的战斗风格的知识推入你的奥术军械中。 (Arcane Armory)",
+				"你可以选择额外学习一种魔法战斗风格，并在7级、15级以及20级时，按照同样的方式将你对它的了解存储在你的军械库中，这符合本地语言习惯。(%num%)这样的文本在翻译中仍然应该输出为(%num%)，翻译遵守dnd运行组规则，专有名词在翻译后应该保留英文括号内的英文。",
+				"魔道士职业的格斗风格每次只能选择一种生效。然而，这个限制不会影响你从其他特性、技能或职业等级学习到的格斗风格。 (Magus)"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": "special",
+					"condition": "When you use a bonus action to conjure objects from your Arcane Armory"
+				}
+			},
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black-gray.webp"
+		},
+		{
+			"name": "Mystic Strikes",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 7,
+			"subclassShortName": "Spellsword",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你的战斗风格使敌人暴露于你的魔法之下，让你能够充分利用你施放的每一种法术。当你用武器攻击命中一生物时，它在你接下来的回合结束前对你所施展的魔法法术的第一次豁免检定有劣势。这包括通过{@classFeature Spellstrike|Magus|LLMC|2}施放的法术。(%Magus%)",
+				"然而，作为法术打击的一部分进行的武器攻击不会提供此功能的好处。"
+			],
+			"foundryImg": "icons/skills/melee/strike-blade-knife-white-red.webp"
+		},
+		{
+			"name": "Ethereal Warrior",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 7,
+			"subclassShortName": "Spellsword",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"根据当地的语言习惯，文本如 (%num%) 应该在翻译中保持为 (%num%)。\n- 翻译符合dnd运行组规则，专有名词在翻译后应保留英文在 `()` 中。\n\n与其开发新的魔法，法剑士是魔法师的标志性魔法的大师。在你的回合上每次进行武器攻击之前或之后，你可以使用你的 {@classFeature Ethereal Jaunt|Magus|LLMC|6} 特性，传送到你能看见的距离不超过10英尺的空地上。",
+				"根据当地语言习惯，文本中像 (%num%) 这样的文字在翻译时应仍然输出为 (%num%)。\n\n此外，你的武术技能使你的魔法技能更加精准。每当你作为你的{@classFeature Spellsunder|Magus|LLMC|9}特性的一部分进行武器攻击时，你可以消耗一个技能骰，投掷它，并将结果加到你的 Spellsunder 攻击检定中。你必须在进行攻击检定之前选择这样做。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special",
+					"condition": "Whenever you make a weapon attack as part of your Spellsunder feature"
+				},
+				"formula": "@scale.order-of-spellswords.exploit-die"
+			},
+			"foundryImg": "icons/skills/melee/strike-weapon-polearm-ice-blue.webp"
+		},
+		{
+			"name": "Arcane Blademaster",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 8,
+			"subclassShortName": "Spellsword",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你站在传奇中的伟大战士之旁，一个真正精通法术和剑术的大师。作为一个奖励动作，你可以进入一种冥想状态，将你的战斗技能提升到传奇级别，为你在1分钟内提供下面列出的好处：",
+				{
+					"type": "list",
+					"items": [
+						"你通过你的{@subclassFeature Spellsword's Armory|Magus|LLMC|Spellsword|LLMC:E|3} 获得了所有你通过训练学到的战斗风格的知识和好处。 (dnd running group)",
+						"你可以在你发动的每次攻击中使用{@classFeature Spellstrike|Magus|LLMC|2}。",
+						"每个回合，您可以使用您已经掌握的一个武术壮举，而无需消耗一个壮举骰，或者施放一个二级或更低级别的魔法师法术，而无需消耗一个法术位。 (Martial Exploit) (Magus)",
+						"你的{@classFeature Ethereal Jaunt|Magus|LLMC|6}距离翻倍。"
+					]
+				},
+				"这个昏迷状态会提前结束，如果你使用一个奖励行动来结束它，或者你是{@condition incapacitated}。一旦你使用了这个昏迷状态，你必须在再次使用之前完成一次长休息。如果你没有剩余的使用次数，你可以消耗一个五级法术位再次使用它。{@condition incapacitated}"
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-teal.webp"
+		},
+		{
+			"name": "Order of Travelers",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 8,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"根据当地的语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n\nMany consider a forbidden ninth school of magic 的实践者，时空旅者会用时间魔法，即时间的魔法，来增强他们的技能。随着他们对这些秘密魔法的理解不断深入，时空旅者对自己在时间中的位置变得越来越漠视，并且逐渐变成了奇怪的游荡者，他们守护着时间的流逝。\n\nTranslation comply with dnd running group rules, and proper nouns should keep the English in `()` after the translation.\n\n(Note: \"Magi of the Order of Travelers\" and \"Chronomancy\" were kept in English within parentheses according to the given instructions.)",
+				"传说中，有些旅行者精通时间魔法，能够召唤未来版本的自己来协助战斗，并提供来自未来的神秘知识。你的旅行者魔法师将如何保护时间的流动？(Traveler Magus)",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Traveler Spells|Magus|LLMC|Traveler|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Temporal Shift|Magus|LLMC|Traveler|LLMC:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Visions of the Past|Magus|LLMC|Traveler|LLMC:E|3"
+				},
+				{
+					"type": "inset",
+					"name": "Chronomancy: The Magic of Time",
+					"entries": [
+						"在任何故事中引入时间旅行，特别是在游戏中结果由掷骰子决定的情况下，可能存在风险。在扮演旅行法师之前，请与您的DM讨论这些特性的影响，特别是它们将如何运行{@subclassFeature Conjure Self|Magus|LLMC|Traveler|LLMC:E|15}。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Traveler Spells",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 8,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"每当你在这个职业中升级时，你可以用魔法师或巫师法术列表中相同等级的一项幻术或魅惑术法术替换此特性中的一个法术。 (Magus or Wizard)",
+				{
+					"type": "table",
+					"colLabels": [
+						"Magus Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell expeditious retreat}, {@spell feather fall||featherfall}"
+						],
+						[
+							"5th",
+							"{@spell hold person}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell slow}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell hold monster}, {@spell modify memory}"
+						]
+					]
+				}
+			],
+			"foundryImg": "icons/magic/time/clock-stopwatch-white-blue.webp"
+		},
+		{
+			"name": "Temporal Shift",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 8,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"根据当地的语言习惯，文本中像 (%num%) 这样的内容应该在翻译中保持为 (%num%)。\n\n你可以调整时间的流逝来纠正任何错误和失误。每当你失败一次技能检定、未命中一次攻击投掷、或者失败一次豁免投掷时，你可以使用你的反应重新投掷你的 {@dice d20}。你必须使用这个新的结果。",
+				"你可以使用这个特性的次数等同于你的智力调整值（最少为一次），当你完成一次长休时，你重新获得所有已使用的次数。如果你没有剩余次数，你可以消耗一个1级或更高级的法术位再次使用这个特性。 (DnD running group rules)"
+			],
+			"foundrySystem": {
+				"uses.max": "max(1, @abilities.int.mod)"
+			},
+			"foundryImg": "icons/magic/time/arrows-circling-pink.webp"
+		},
+		{
+			"name": "Visions of the Past",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 9,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"entries": [
+				"你已学会在现实中看到过去事件的影响。你熟练掌握 {@skill History}，每当你在进行智力检定({@skill History})时，身处与你所进行智力检定的主题相同的地点时，你可以将你的熟练加值加倍于你的检定结果。{@skill History}、{@skill History}、{@skill History}"
+			],
+			"skillProficiencies": [
+				{
+					"history": true
+				}
+			],
+			"foundryImg": "icons/magic/time/day-night-sun-moon.webp"
+		},
+		{
+			"name": "Chronological Drift",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 9,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你使用时间魔法导致你的物质形态脱离了正常时间流。你的年龄不能被咒语或魔法效果改变，每过10年，你的物质身体只会变老1岁。 (dnd running group)",
+				"在第15级时，你每过100年只会年老1岁，而在第20级时，你的身体完全停止老化。"
+			],
+			"foundryImg": "icons/magic/time/hourglass-brown-orange.webp"
+		},
+		{
+			"name": "Greater Shift",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 9,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你对时间魔法的了解使你能够调整周围生物的时间效果。每当你能看到的生物在30英尺内失败能力检定、未命中攻击骰或未通过豁免骰时，你可以使用{@subclassFeature Temporal Shift|Magus|LLMC|Traveler|LLMC:E|3}。它必须使用其{@dice d20}骰的新结果。 (Chronomancy)",
+				"在战斗中的每一轮先攻开始时，只要你不是{@condition incapacitated}或{@quickref surprise||3||surprised}，你可以使用你的反应再次投掷先攻，使用新的结果。"
+			],
+			"foundryImg": "icons/magic/time/arrows-circling-green.webp"
+		},
+		{
+			"name": "Conjure Self",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 9,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"你已经变得非常娴熟于操纵时间，以至于你可以召唤未来版本的自己来帮助你。作为一个动作，你可以消耗一个3级或更高级别的法术位来召唤一个未来版本的自己。 (dnd running group)",
+				"你未来的自己在战斗中跟随你的主动行动，并且会立即行动。他们独立行动，并会尽力帮助你。你未来的自己的总生命值等同于你的最大生命值，他们使用你的能力值。他们共享你的种族、职业和其他来源的特性，包括独立使用{@subclassFeature Temporal Shift|Magus|LLMC|Traveler|LLMC:E|3}。然而，你共享你的法术槽。 (Your Future Self)",
+				"按照当地语言习惯，并且像（%num%）这样的文本在翻译中应该仍然输出为（%num%）。\n\n翻译遵守dnd跑团规则，专有名词在翻译后应该保留英文在`()`内。",
+				"你的未来自我留存的时间取决于你消耗的法术位：3级（1分钟）、4级（1小时）或5级（8小时）。他们在持续时间结束时回到自己的时间，或者如果他们的生命值降低到0，会提前返回。",
+				"你只能同时拥有一个未来的自己在这个时间线上。召唤第二个版本会导致当前与你在一起的未来自己立即返回他们的时间。 (Future Self)"
+			],
+			"foundryImg": "icons/magic/control/energy-stream-link-teal.webp"
+		},
+		{
+			"name": "Untethered Traveler",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"page": 9,
+			"subclassShortName": "Traveler",
+			"subclassSource": "LLMC:E",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"你使用时间魔法使你的时间感失序，与周围人截然不同。作为一项行动，你可以施放 {@spell time stop} 法术的改版，你和你的 {@subclassFeature Conjure Self|Magus|LLMC|Traveler|LLMC:E|15||Future Self} 都能行动，但每人只额外获得一次行动机会。 {@spell time stop} (Chronomancy) {@subclassFeature Conjure Self|Magus|LLMC|Traveler|LLMC:E|15||Future Self}",
+				"一旦您使用此功能，您必须完成一次长休息，然后才能再次施放这个修改后的时间停止。如果您没有剩余此功能的使用次数，您可以消耗一个五级法术位来再次施放这个修改后的时间停止。"
+			],
+			"foundrySystem": {
+				"activation": {
+					"cost": null,
+					"type": null
+				},
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			},
+			"foundryImg": "icons/magic/time/hourglass-yellow-green.webp"
 		}
 	],
 	"foundrySubclassFeature": [
@@ -2779,6 +4323,33 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Arcane Ascetic",
+			"source": "LLMC:E",
+			"className": "Magus",
+			"classSource": "LLMC",
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLMC:E",
+			"level": 3,
+			"effects": [
+				{
+					"name": "Unarmored Defense",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "10 + @abilities.int.mod + @abilities.dex.mod"
+						},
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						}
+					]
+				}
+			]
 		}
 	],
 	"optionalfeature": [
@@ -2791,7 +4362,7 @@
 				"在第2级时，它们成为你的魔法师法术，但它们不计入你已知的魔法小把戏的总数。(Magus)"
 			],
 			"featureType": [
-				"FS:LLMC"
+				"FS:MC"
 			],
 			"additionalSpells": [
 				{
@@ -2996,6 +4567,112 @@
 			"miscTags": [
 				"AOE",
 				"MW"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Alternate Mage Slayer",
+			"source": "LLMC:E",
+			"entries": [
+				"{@i Updated version of the {@feat Mage Slayer} 特性}",
+				"你已经接受了大量的训练，以对抗邪恶的咒术师，并挫败他们的奥术能力。你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"当你能看见或听见你挥舞的近战武器攻击范围内的生物施放法术时，你可以对其进行机会攻击。命中时，该生物必须进行一次体质豁免投掷，就像它正在维持{@status concentration}一样。如果失败，其法术无法生效，其法术槽或使用该能力的次数被浪费。{@status concentration}",
+						"当你伤害一个正在集中精力施展法术的生物时，该生物在维持其集中状态的体质豁免检定中拥有劣势。",
+						"你在5英尺范围内能看见或听见的生物对你施放的法术豁免时获得优势。 (DND运行组规则)"
+					]
+				}
+			]
+		},
+		{
+			"name": "Alternate War Caster",
+			"source": "LLMC:E",
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"{@i Updated version of the {@feat War Caster} 特性}",
+				"你已经在战斗中练习施放法术，学到了以下技巧，使你获得以下好处：(%num%)",
+				{
+					"type": "list",
+					"items": [
+						"当你进行体质豁免投掷以维持你的{@status concentration}在一个法术上时，你可以选择用你的施法能力来进行此豁免投掷。",
+						"你即使手中拿着武器或盾牌，也能够执行法术的体动成分。",
+						"当你进行机会攻击时，你可以选择施展一个咒语。它的施法时间必须是1个动作或1次攻击，并且这个咒语只能以目标指定该生物。 (opportunity attack)",
+						"当你对一名生物进行机会攻击时，你可以施放一个施法时间为On Hit的咒语。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellsword Adept",
+			"source": "LLMC:E",
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weapon": "martial"
+						}
+					]
+				}
+			],
+			"entries": [
+				"你已经训练将微小的魔法与武器攻击结合。你学会了以下列出的一个\"零级法术\"：\n",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"{@spell acid splash}",
+							"{@spell glitterbeam|llspell}"
+						],
+						[
+							"{@spell fire bolt||firebolt}",
+							"{@spell ray of frost}"
+						],
+						[
+							"{@spell frostbite|xge}",
+							"{@spell shocking grasp}"
+						]
+					]
+				},
+				"选择智力、感知或魅力中的一个作为此杂耍的施法调整值。每当你的回合进行时，当你进行一次近战武器攻击时，你可以将你所知道的一个杂耍的魔法注入到你的武器攻击中。 (Cantrip)",
+				"根据当地语言习惯，文本中的 (%num%) 应该在翻译中保持为 (%num%)。\n翻译需符合 DND 跑团规则，并且专有名词在翻译后应保留英文括号内的原文。\n\n然而，你的 Cantrip 不会与你的武器攻击一起造成伤害。相反，你的武器攻击将造成 Cantrip 所造成的伤害类型，并在命中时施加 Cantrip 的附加效果，除了伤害。"
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": {
+									"from": [
+										"acid splash",
+										"fire bolt",
+										"frostbite|xge",
+										"glitterbeam|llspell",
+										"ray of frost",
+										"shocking grasp"
+									]
+								}
+							}
+						]
+					}
+				}
 			]
 		}
 	]
