@@ -2,6 +2,19 @@
 	"_meta": {
 		"sources": [
 			{
+				"json": "BlightRevised",
+				"abbreviation": "RB",
+				"full": "Blight (Revised)",
+				"url": "https://homebrewery.naturalcrit.com/share/x6xjA-qeyyLW",
+				"authors": [
+					"Korvinagor"
+				],
+				"convertedBy": [
+					"Korvinagor"
+				],
+				"version": "1.0"
+			},
+			{
 				"json": "Celerity",
 				"abbreviation": "KSC",
 				"full": "Celerity",
@@ -15,20 +28,7 @@
 				"version": "1.0"
 			},
 			{
-				"json": "RevisedBlight",
-				"abbreviation": "RB",
-				"full": "Blight (Revised)",
-				"url": "https://homebrewery.naturalcrit.com/share/x6xjA-qeyyLW",
-				"authors": [
-					"Korvinagor"
-				],
-				"convertedBy": [
-					"Korvinagor"
-				],
-				"version": "1.0"
-			},
-			{
-				"json": "RevisedChromaticOrb",
+				"json": "ChromaticOrbRevised",
 				"abbreviation": "COR",
 				"full": "Chromatic Orb (Revised)",
 				"url": "https://homebrewery.naturalcrit.com/share/Cw_N9me1ICkm",
@@ -41,7 +41,7 @@
 				"version": "1.0"
 			},
 			{
-				"json": "RevisedEarthbind",
+				"json": "EarthbindRevised",
 				"abbreviation": "ER",
 				"full": "Earthbind (Revised)",
 				"url": "https://homebrewery.naturalcrit.com/share/OEJRMgLvIAWa",
@@ -54,7 +54,7 @@
 				"version": "1.0"
 			},
 			{
-				"json": "RevisedHypnoticPattern",
+				"json": "HypnoticPatternRevised",
 				"abbreviation": "HPR",
 				"full": "Hypnotic Pattern (Revised)",
 				"url": "https://homebrewery.naturalcrit.com/share/Nlx8bSKCsPyC",
@@ -78,93 +78,26 @@
 					"Korvinagor"
 				],
 				"version": "1.0"
+			},
+			{
+				"json": "Shrubdive",
+				"abbreviation": "SD",
+				"full": "Shrubdive",
+				"url": "https://homebrewery.naturalcrit.com/share/J7nVhYGOVLVH",
+				"authors": [
+					"Korvinagor"
+				],
+				"version": "1.0"
 			}
 		],
 		"dateAdded": 1696731950,
-		"dateLastModified": 1710107497,
-		"_dateLastModifiedHash": "a0e37a3741"
+		"dateLastModified": 1715555527,
+		"_dateLastModifiedHash": "8dc7cea80b"
 	},
 	"spell": [
 		{
-			"name": "Celerity",
-			"source": "Celerity",
-			"level": 2,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a falcon feather"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"你为你能看到范围内的一个生物赋予一阵迅捷。目标在下一回合期间获得额外的一个动作，并且其速度在法术持续时间内增加10英尺。该动作不能用于进行{@action Attack}（除非是{@action Shove}或{@action Grapple}），{@action Cast a Spell}，或{@action Ready}动作。"
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"当你使用3级或更高级别的法术位施放这个法术时，你可以每超过2级的法术位目标一个额外生物。"
-					]
-				}
-			],
-			"miscTags": [
-				"SGT"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					}
-				]
-			}
-		},
-		{
 			"name": "Blight",
-			"source": "RevisedBlight",
+			"source": "BlightRevised",
 			"level": 1,
 			"school": "N",
 			"time": [
@@ -250,8 +183,85 @@
 			}
 		},
 		{
+			"name": "Celerity",
+			"source": "Celerity",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a falcon feather"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你为你能看到范围内的一个生物赋予一阵迅捷。目标在下一回合期间获得额外的一个动作，并且其速度在法术持续时间内增加10英尺。该动作不能用于进行{@action Attack}（除非是{@action Shove}或{@action Grapple}），{@action Cast a Spell}，或{@action Ready}动作。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用3级或更高级别的法术位施放这个法术时，你可以每超过2级的法术位目标一个额外生物。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
 			"name": "Chromatic Orb",
-			"source": "RevisedChromaticOrb",
+			"source": "ChromaticOrbRevised",
 			"level": 1,
 			"school": "V",
 			"time": [
@@ -367,7 +377,7 @@
 		},
 		{
 			"name": "Earthbind",
-			"source": "RevisedEarthbind",
+			"source": "EarthbindRevised",
 			"level": 2,
 			"school": "T",
 			"time": [
@@ -441,7 +451,7 @@
 		},
 		{
 			"name": "Hypnotic Pattern",
-			"source": "RevisedHypnoticPattern",
+			"source": "HypnoticPatternRevised",
 			"level": 3,
 			"school": "I",
 			"time": [
@@ -578,6 +588,67 @@
 					},
 					{
 						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Shrubdive",
+			"source": "Shrubdive",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take immediately before taking damage from a fall"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a ball of cotton"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"茂密的植被在你脚下的地面上生长。 在该区域结束坠落的生物可以在计算坠落伤害时减去 100 英尺，包括触发的坠落，并且只受到坠落伤害的一半。 (fall)",
+				"植被会持续整个持续时间。你可以通过使用一个动作提前结束这个法术。"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"当你使用2级或更高级别的法术位施放此法术时，法术的射程将每超过1级的法术位等级增加10英尺。 (spell slot)"
+					]
+				}
+			],
+			"areaTags": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
 						"source": "PHB"
 					}
 				]

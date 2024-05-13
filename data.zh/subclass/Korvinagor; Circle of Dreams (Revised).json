@@ -16,8 +16,8 @@
 			}
 		],
 		"dateAdded": 1682424910,
-		"dateLastModified": 1713133531,
-		"_dateLastModifiedHash": "dece7e9f11"
+		"dateLastModified": 1715555527,
+		"_dateLastModifiedHash": "8c21c65d67"
 	},
 	"subclass": [
 		{
@@ -33,41 +33,39 @@
 				"Walker in Dreams|Druid||Dreams (Revised)|KCoDR|14"
 			],
 			"subclassSpells": [
-				"Prestidigitation",
-				"Gentle Repose",
-				"Suggestion",
+				"Vicious Mockery",
+				"Calm Emotions",
+				"Lesser Restoration",
+				"Beacon of Hope",
 				"Hypnotic Pattern",
-				"Revivify",
-				"Confusion",
-				"Divination",
+				"Dimension Door",
+				"Greater Invisibility",
+				"Dream",
 				"Scrying",
-				"Teleportation Circle",
-				"Dream"
+				"Teleportation Circle"
 			],
 			"additionalSpells": [
 				{
 					"known": {
 						"2": [
-							"prestidigitation#c"
-						],
-						"14": [
-							"dream"
+							"vicious mockery#c"
 						]
 					},
 					"prepared": {
 						"3": [
-							"gentle repose",
-							"suggestion"
+							"calm emotions",
+							"lesser restoration"
 						],
 						"5": [
-							"hypnotic pattern",
-							"revivify"
+							"beacon of hope",
+							"hypnotic pattern"
 						],
 						"7": [
-							"confusion",
-							"divination"
+							"dimension door",
+							"greater invisibility"
 						],
 						"9": [
+							"dream",
 							"scrying",
 							"teleportation circle"
 						]
@@ -108,7 +106,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Circle of Dreams feature}",
-				"你变得能够利用精灵界一部分的魔法，使你能够使用特定的法术。你学会了{@spell prestidigitation}零级法术。",
+				"你变得能够触及精灵界一部分的魔法，让你能够使用某些咒语。你学会了{@spell vicious mockery}的零级咒语。",
 				"当你达到特定德鲁伊等级时，你将获得下表中的法术。它们对你来说算作德鲁伊法术，你始终准备好它们，但它们不计入你每天准备的法术总数。",
 				{
 					"type": "table",
@@ -124,19 +122,19 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell gentle repose}, {@spell suggestion}"
+							"{@spell calm emotions}, {@spell lesser restoration}"
 						],
 						[
 							"5th",
-							"{@spell hypnotic pattern}, {@spell revivify}"
+							"{@spell beacon of hope}, {@spell hypnotic pattern}"
 						],
 						[
 							"7th",
-							"{@spell confusion}, {@spell divination}"
+							"{@spell dimension door}, {@spell greater invisibility}"
 						],
 						[
 							"9th",
-							"{@spell scrying}, {@spell teleportation circle}"
+							"{@spell dream}, {@spell scrying}, {@spell teleportation circle}"
 						]
 					]
 				}
@@ -155,7 +153,7 @@
 				"{@i 2nd-level Circle of Dreams feature}",
 				"你被夏宫的祝福所充盈。你是一股能量之源，能够为受伤者提供休息。你拥有一池精灵能量，数量为你德鲁伊等级的{@dice d6}s。",
 				"作为一个奖励动作，你可以选择在你视线范围内的一个生物，并消耗等于你德鲁伊等级一半或更少的那些骰子数量。投掷这些骰子并将结果相加。目标回复等于总和的生命值。目标还会获得每个消耗的骰子1点临时生命值。",
-				"当你完成一次长休时，或者将一次野性变身用作一个动作时，你将恢复所有已消耗的骰子。"
+				"当你完成一次长休时，你恢复所有已消耗的骰子。作为一个动作，你可以消耗一个法术位来恢复数量等同于该法术位等级的已消耗骰子。"
 			]
 		},
 		{
@@ -169,8 +167,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Circle of Dreams feature}",
-				"家可以是你所在的任何地方，让你调用(`Gloaming Court`)的阴影力量来隐藏和庇护自己。作为一个动作，你可以消耗一个野性变身使用次数，在一个半径为30英尺的范围内散发隐形的伪装魔法，持续1小时，或者直到你失去行动能力或死亡。完全掩盖会阻止这个效果。",
-				"在这个空间中，你和你的盟友在敏捷度检定中获得+5加值({@skill Stealth})，在感知检定中也获得+5加值({@skill Perception})，并且即使在明显的视线中，如果在该回合没有花费移动，你们可以尝试{@action Hide}，神奇地融入环境中。以这种方式隐藏的生物在离开该区域时会自动显露出来。在这个效果范围内，你可以选择的任何光线在范围外是不可见的。",
+				"家可以是你所在的任何地方，让你调用Gloaming Court的阴影力量进行隐蔽和庇护。作为一个动作，你可以消耗一次野性变身的使用，在一个半径为30英尺的范围内释放隐形的、伪装的魔法，持续1小时，或者直到你成为{@condition incapacitated}或死亡。完全掩盖会阻止这种效果。 (Gloaming Court)",
+				"你和你的盟友在这个空间中获得+5的敏捷({@skill Stealth})和智慧({@skill Perception})检定的加值，并且即使在明显的视线中，也可以尝试{@action hide}，神奇地融入环境中。以这种方式隐藏的生物如果在回合结束时离开区域，则会自动被揭示。在这个效果内的你选择的任何光线在外面是看不见的。",
 				"如果在休息时使用，这个魔法会以你触摸的空间点为中心，持续整个休息时间或直到你离开该区域，而且不需要使用野性变身。"
 			]
 		},
@@ -185,8 +183,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Circle of Dreams feature}",
-				"你可以使用一些精灵使用的隐藏、神奇的路径，瞬间穿越空间。作为一个奖励动作，你可以传送到你能看到的一个未被占据的空间，最远距离为60英尺。你也可以使用你的动作将自己和一个你触摸到的愿意的生物传送到你能看到的一个未被占据的空间，最远距离为30英尺。",
-				"你可以使用这个特性的次数等于你的感知调整值（最少1次），当你完成一次长休时，或者你将两次野性变身作为一个动作来使用时，你会恢复所有已用次数。"
+				"你可以利用某些仙族使用的隐秘、神奇的路径，瞬间穿越空间。作为一个额外动作，你可以传送到你能看到的一个未被占据的空间，最远60英尺处。或者，你可以利用你的行动，将你触摸到的一个愿意的生物传送到你能看到的一个未被占据的空间，最远30英尺处。",
+				"你可以使用这个特性的次数等于你的智力调整值（最少1次），并在你完成一次长休后，你将恢复所有已使用的次数。"
 			]
 		},
 		{
@@ -200,9 +198,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Circle of Dreams feature}",
-				"凡间（Feywild）的魔法自然地随着你走到哪里。每次长休时，你可以施放你的一个环（Circle）法术，而无需消耗法术槽或使用材料组件，并将其施法时间改为1个行动。",
-				"如果你以这种方式施放{@spell teleportation circle}，你可以打开一个传送门，前往你在当前存在平面上最后一次完成长休的地点，而不是打开一个通往永久{@spell teleportation circle}的传送门。",
-				"此外，你可以随意施展{@spell dream}（以你为信使），而且它总是为你准备好的。"
+				"Feywild的魔法会自然地随着你的行动而产生影响。你可以施放你选择的圈之咒语而不消耗法术位或需要材料成分，并将其施法时间改为1个行动。一旦你这样做了，你在完成一次长休息之前不能再次这样做。 (Feywild的魔法会自然地随着你的行动而产生影响。你可以施放你选择的(Circle)之咒语而不消耗法术位或需要材料成分，并将其施法时间改为1个行动。一旦你这样做了，你在完成一次长休息之前不能再次这样做。)",
+				"当你施放{@spell teleportation circle}时，你可以将其修改为在你当前存在的平面上打开传送门到你上次完成长休的位置，而不是打开到永久传送法阵的传送门。"
 			]
 		}
 	]
