@@ -18,8 +18,8 @@
 			}
 		],
 		"dateAdded": 1713674892,
-		"dateLastModified": 1714158302,
-		"_dateLastModifiedHash": "a2ee718288"
+		"dateLastModified": 1715773085,
+		"_dateLastModifiedHash": "e4ae6a62f6"
 	},
 	"spell": [
 		{
@@ -2552,7 +2552,7 @@
 			"foundryImg": "icons/magic/fire/beam-jet-stream-trails-orange.webp"
 		},
 		{
-			"name": "Locate",
+			"name": "Locate Creature (Alternate)",
 			"source": "llspell",
 			"level": 2,
 			"school": "D",
@@ -2613,23 +2613,54 @@
 				}
 			],
 			"entries": [
-				"描述你曾经在30英尺内至少看到过的物体，或者描述一个特定类型的物体，比如书、钥匙或剑。如果它在1000英尺内，那么这个法术的物质组成部分将指向它，就像它是一个指南针一样。如果物体在移动，只要它仍然在范围内，它就会指向它。 (Describe an object that you have seen within 30英尺 at least once, or describe a particular kind of object, like a book, key, or sword. If it is within 1000英尺, the material component of this spell points to it as if it were a compass. If the object is in motion, it points to it for as long as it remains within range.)",
-				"这个法术无法定位目标，如果铅或者一条流动的水体阻碍了直线到目标的路径。 (Dungeons & Dragons)"
+				"Describe or name a specific kind of beast or plant. It can be a specific creature known to you, or the nearest creature of a specific kind (such as a bear, oak, or horse), so long as you have seen such a creature within 30 feet at least once.",
+				"If one is within 1 mile, the material component of this spell points to it as if it were a compass. If the target is in motion, it points to it for as long as it remains in range. If the creature is in a different form, such as under the effect of the polymorph spell, this spell doesn't locate the creature.",
+				"This spell can't locate its target if any thickness of lead or 10 feet of running water blocks a straight line to the target."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"当你使用3级或更高级别的法术位施放此法术时，此法术的射程增加1000英尺，每超过2级的法术位级别增加1000英尺。 (spell slot, 3rd-level)",
-						"如果你用4级或更高级的法术位施放这个法术，你可以描述你见过的特定生物或者某种生物，代替一个物体，以相同的方式追踪它。 (spell slot) (creature)"
+						"When you cast this spell using a spell slot of 3rd-level or higher, the range and the type of creature you can locate increase as show in the table below:",
+						{
+							"type": "table",
+							"caption": "Locate Creature",
+							"colLabels": [
+								"Slot Level",
+								"Range",
+								"Creature Types"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-5",
+								"col-5"
+							],
+							"rows": [
+								[
+									"3rd",
+									"2 miles",
+									"Dragon, Giant, Humanoid, Monstrosity, Ooze"
+								],
+								[
+									"4th",
+									"3 miles",
+									"Aberration, Construct, Undead"
+								],
+								[
+									"5th",
+									"5 miles",
+									"Celestial, Elemental, Fey, Fiend"
+								]
+							]
+						}
 					]
 				}
 			],
 			"foundrySystem": {
 				"target": {
 					"value": 1,
-					"type": "object"
+					"type": "creature"
 				}
 			},
 			"foundryImg": "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
@@ -2829,12 +2860,16 @@
 			"foundryImg": "icons/magic/nature/stealth-hide-beast-eyes-green.webp"
 		},
 		{
-			"name": "Purify",
+			"name": "Restoration",
 			"source": "llspell",
 			"level": 2,
 			"school": "A",
 			"classes": {
 				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
 					{
 						"name": "Cleric",
 						"source": "PHB"
@@ -2861,14 +2896,13 @@
 			],
 			"range": {
 				"distance": {
-					"type": "self"
+					"type": "touch"
 				},
 				"type": "point"
 			},
 			"components": {
 				"v": true,
-				"s": true,
-				"m": "a consecrated piece of clear glass"
+				"s": true
 			},
 			"duration": [
 				{
@@ -2876,16 +2910,45 @@
 				}
 			],
 			"entries": [
-				"作为一个行动，你打开你的感官，意识到以下任何内容的存在和位置，包括30英尺内：毒药、疾病、能够造成{@condition blinded}、{@condition deafened}、{@condition paralyzed} 或 {@condition poisoned} 状态的生物，或任何疾病，或患有疾病或上述状况的生物。",
-				"根据当地的语言习惯，并且像 (%num%) 这样的文本应该在翻译中仍然输出为 (%num%)。\n\n您还可以识别毒药、疾病、生物或者特定状态或疾病一种生物正在受到的。",
-				"作为这项行动的一部分，您可以立即治愈范围内的一只生物的一种疾病，或结束其失明、聋、麻痹或中毒的状态，或在此范围内清除一个5英尺立方体的食物和饮料中的所有毒药和疾病。 (dnd running group rules)"
+				"You touch a willing creature and instantly end one disease or one of the following conditions currently afflicting it: blinded, deafened, frightened, paralyzed, or poisoned."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"当你使用3级或更高级别的法术槽施放此法术时，你可以在范围内结束一个额外的疾病或影响生物的状态，或者在范围内从一个额外的5英尺立方体的食物和饮料中去除毒素和疾病，每个法术槽等级高于2级。 (DND running group rules)"
+						"When you cast this spell using a spell slot of 3rd-level or higher, the conditions and effects you can end increase, but the spell requires you to expend diamond dust of a certain value, which is consumed during casting:",
+						{
+							"type": "table",
+							"caption": "Restoration",
+							"colLabels": [
+								"Slot Level",
+								"Value",
+								"Conditions/Effects"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-5",
+								"col-5"
+							],
+							"rows": [
+								[
+									"3rd",
+									"10 gp",
+									"Charmed, Exhaustion (1 level)"
+								],
+								[
+									"4th",
+									"50 gp",
+									"Reduction to one Ability Score or Hit Point Maximum"
+								],
+								[
+									"5th",
+									"100 gp",
+									"Petrified, One Curse, or Attunement to a Cursed Item"
+								]
+							]
+						}
 					]
 				}
 			],

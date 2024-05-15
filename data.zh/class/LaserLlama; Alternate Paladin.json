@@ -1,0 +1,2265 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLAPal",
+				"abbreviation": "LLAPal",
+				"full": "Alternate Paladin",
+				"authors": [
+					"laserllama"
+				],
+				"convertedBy": [
+					"Dazzle.account"
+				],
+				"version": "2.0.0",
+				"color": "ffd700",
+				"url": "https://www.gmbinder.com/share/-Nkliby-qWnFzQjiC4Pd"
+			}
+		],
+		"dateAdded": 1647980495,
+		"dateLastModified": 1715291226,
+		"dependencies": {
+			"spell": [
+				"llspell"
+			],
+			"optionalfeature": [
+				"LLAF",
+				"LLAF:E"
+			]
+		},
+		"_dateLastModifiedHash": "c841c14dc1"
+	},
+	"class": [
+		{
+			"name": "Alternate Paladin",
+			"source": "LLAPal",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"Athletics",
+								"Insight",
+								"Intimidation",
+								"Medicine",
+								"Persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) {@filter martial weapon|items|category=basic|type=martial weapon} and {@item shield|phb} or (b) {@filter two martial weapons|items|category=basic|type=martial weapon}",
+					"(a) {@filter simple weapon|items|category=basic|type=simple weapon} or (b) five {@item javelin|phb|javelins}",
+					"(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"{@item Chain Mail|phb} and a {@item holy symbol|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						],
+						"b": [
+							{
+								"item": "javelin|phb",
+								"quantity": 5
+							}
+						]
+					},
+					{
+						"a": [
+							"priest's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"a": [
+							"chain mail|phb",
+							"holy symbol|phb"
+						]
+					}
+				],
+				"additionalFromBackground": true
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|phb|shields}"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"casterProgression": "1/2",
+			"spellcastingAbility": "cha",
+			"classSpells": [
+				"bane",
+				"bless",
+				"ceremony|xge",
+				"command",
+				"compelled duel",
+				"cure wounds",
+				"detect evil & good",
+				"detect magic",
+				"detect poison & disease",
+				"divine favor (alternate)|llspell",
+				"ethereal anchor|llspell",
+				"heroism",
+				"Protection from Evil and Good",
+				"sanctuary",
+				"searing smite (alternate)|llspell",
+				"shield of faith",
+				"thunderous smite (alternate)|llspell",
+				"wrathful smite (alternate)|llspell",
+				"aid",
+				"branding smite (alternate)|llspell",
+				"find steed (alternate)|llspell",
+				"gentle repose",
+				"locate creature (alternate)|llspell",
+				"magic weapon",
+				"prayer of healing",
+				"protection from poison",
+				"restoration|llspell",
+				"warding bond",
+				"zone of truth",
+				"aura of vitality",
+				"beacon of hope",
+				"blinding smite (alternate)|llspell",
+				"create food & water",
+				"crusader's mantle",
+				"daylight",
+				"dispel magic",
+				"magic circle",
+				"remove curse",
+				"revivify",
+				"spirit shroud|tce",
+				"aura of life",
+				"aura of purity",
+				"banishment",
+				"death ward",
+				"freedom of movement",
+				"guardian of faith",
+				"staggering smite (alternate)|llspell",
+				"banishing smite (alternate)|llspell",
+				"circle of power",
+				"destructive wave",
+				"Dispel Evil and Good",
+				"geas",
+				"holy weapon|xge",
+				"mass cure wounds",
+				"raise dead",
+				"summon celestial|tce"
+			],
+			"spellsKnownProgression": [
+				0,
+				2,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Spells Known|spells|class=Alternate Paladin (LLAPal)}",
+						"Aura Radius"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							2,
+							0
+						],
+						[
+							2,
+							0
+						],
+						[
+							3,
+							0
+						],
+						[
+							3,
+							0
+						],
+						[
+							4,
+							"10 ft"
+						],
+						[
+							4,
+							"10 ft"
+						],
+						[
+							5,
+							"10 ft"
+						],
+						[
+							5,
+							"15 ft"
+						],
+						[
+							6,
+							"15 ft"
+						],
+						[
+							6,
+							"15 ft"
+						],
+						[
+							7,
+							"20 ft"
+						],
+						[
+							7,
+							"20 ft"
+						],
+						[
+							8,
+							"20 ft"
+						],
+						[
+							8,
+							"25 ft"
+						],
+						[
+							9,
+							"25 ft"
+						],
+						[
+							9,
+							"25 ft"
+						],
+						[
+							10,
+							"30 ft"
+						],
+						[
+							10,
+							"30 ft"
+						],
+						[
+							11,
+							"30 ft"
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Alternate Paladin (LLAPal)}",
+						"{@filter 2nd|spells|level=2|class=Alternate Paladin (LLAPal)}",
+						"{@filter 3rd|spells|level=3|class=Alternate Paladin (LLAPal)}",
+						"{@filter 4th|spells|level=4|class=Alternate Paladin (LLAPal)}",
+						"{@filter 5th|spells|level=5|class=Alternate Paladin (LLAPal)}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Fighting Style|Alternate Paladin|LLAPal|1",
+				{
+					"classFeature": "Sacred Oath|Alternate Paladin|LLAPal|1",
+					"gainSubclassFeature": true
+				},
+				"Divine Fervor|Alternate Paladin|LLAPal|1",
+				"Order Spells|Alternate Paladin|LLAPal|1",
+				"Spellcasting|Alternate Paladin|LLAPal|2",
+				"Divine Smite|Alternate Paladin|LLAPal|2",
+				"Divine Regeneration|Alternate Paladin|LLAPal|3",
+				"Ability Score Improvement|Alternate Paladin|LLAPal|4",
+				"Extra Attack|Alternate Paladin|LLAPal|5",
+				"Divine Sense|Alternate Paladin|LLAPal|5",
+				"Aura of Protection|Alternate Paladin|LLAPal|6",
+				{
+					"classFeature": "Sacred Oath Feature|Alternate Paladin|LLAPal|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Paladin|LLAPal|8",
+				"Divine Health|Alternate Paladin|LLAPal|9",
+				"Aura of Courage|Alternate Paladin|LLAPal|10",
+				"Improved Divine Smite|Alternate Paladin|LLAPal|11",
+				"Ability Score Improvement|Alternate Paladin|LLAPal|12",
+				"Purifying Touch|Alternate Paladin|LLAPal|14",
+				{
+					"classFeature": "Sacred Oath Feature|Alternate Paladin|LLAPal|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alternate Paladin|LLAPal|16",
+				"Aura of Conviction|Alternate Paladin|LLAPal|18",
+				"Ability Score Improvement|Alternate Paladin|LLAPal|19",
+				{
+					"classFeature": "Sacred Oath Feature|Alternate Paladin|LLAPal|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"hasFluff": true,
+			"foundryImg": "icons/magic/holy/chalice-glowing-gold.webp"
+		}
+	],
+	"classFluff": [
+		{
+			"name": "Alternate Paladin",
+			"source": "LLAPal",
+			"entries": [
+				{
+					"type": "section",
+					"name": "The Paladin",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当邪教的冠军嘲讽留在军械库里的村民时，一个年轻人发誓要以任何代价保卫家园。当他走出去迎接邪恶的冠军时，他感到一股神圣的力量涌入他的身体。当他挥舞剑与敌人交战时，剑刃闪耀着纯净阳光的光芒。",
+						"他手中的斧头刀刃沉重，他站在战胜敌人的上方。这位年迈的男子回想起奴隶贩子来袭之前他曾经拥有的家庭。那些残忍的海盗夺走了他的家人，而这位躺在他脚下的男子同样有罪。他宣誓复仇，斧头落下。",
+						"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 ",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd游戏团规则，专有名词在翻译后应保留英文括号`()`。 \n\n以上所描述的三位正义勇士都是圣骑士，他们是被神圣誓言所束缚、注入正义力量的勇士，只要他们忠于誓言，这种力量就会持续存在。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Paragons of Virtue",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"在各地有许多圣战士，但很少有圣骑士。 以对其事业的坚定奉献而闻名，真正的圣骑士是他们誓言维护的美德的活生生体现。 无论是无私还是功利，无论是为了善良还是邪恶，法律还是混乱，圣骑士都是无论是什么美德、事业或信条的顶峰，他们誓言维护的生命。",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应在`()`中保留英文。\n\n许多圣骑士被尊为捍卫无辜、激励希望、以及以荣誉生活的圣洁骑士。然而，并非所有人都是正义的典范。有些人发誓要以任何必要手段给予他们的敌人神圣的审判，或者誓言保持荒野与文明之间的平衡。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bound by Oath",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"无论他们所支持的原因或美德是什么，所有圣骑士都受神圣誓约的约束。无论是他们从出生开始就被教导在训练完成时宣誓效忠，还是在绝望之际向天呼喊，所有圣骑士都必须宣誓神圣誓约，以便获得神圣力量的注入。尽管这些誓约的确切措辞随着时间和文化的变迁而有所不同，但这些神圣誓约将所有宣誓者团结在一起，无论其内容是什么。",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n一旦宣誓，圣骑士必须以坚定的信念遵守他们誓言的准则，否则他们将面临失去神圣能力的风险。如果偶尔犯错，可以通过赔偿来获得宽恕，但如果圣骑士故意违背他们神圣誓言的准则，他们将面临完全破裂誓言的风险，并失去誓言赋予他们的神圣力量。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creating Your Alternate Paladin",
+					"source": "LLAPal",
+					"page": 1,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n那些发誓守护神圣誓言并成为圣骑士的人有着独特的目的。是什么激励着你的圣骑士？他们是从出生开始就被培养成为他们神的冠军吗？他们是否被对复仇的渴望所驱使？或者，他们是否发誓要成为荒野自然之美的守护者？",
+						"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n另外，决定他们是如何宣誓成为圣骑士的。是经过多年的准备、训练和学习后宣誓的吗？还是在一时的愤怒或绝望中宣誓的？抑或是在梦中被神的神使选中并成为他们的勇士？",
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"source": "LLAPal",
+							"page": 2,
+							"entries": [
+								"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n您可以通过以下建议快速创建圣骑士：首先，将力量设为您的最高能力值，其次是魅力。其次，选择侍僧背景。最后，选择决斗战斗风格并选择一个神圣誓约。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Fighting Style",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"在符合当地语言习惯的情况下，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n在1级时，您选择最能反映您训练的战斗风格。即使某项特性允许您选择另一种战斗风格，您也不能多次选择同一种战斗风格。",
+				"每当你在这个职业中升级时，你可以将你的战斗风格换成你选择的另一种战斗风格。",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Blind Warrior|LLAF:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Classical Swordplay|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defensive Fighting|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Great Weapon Fighting|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Mounted Warrior|LLAF:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protector|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Shield Warrior|LLAF:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Strongbow|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Versatile Fighting|LLAF"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
+		},
+		{
+			"name": "Sacred Oath",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你宣誓了一种强大的神圣誓约，这标志着你成为了一名圣骑士。在1级时，你选择最能代表你圣骑士信念和信条的神圣誓约：远古之誓、虔诚之誓、复仇之誓、无誓约或黑卫之誓。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你的神圣誓约在1级时授予特性，当你达到3级、7级、15级和20级时再次获得特性。"
+			]
+		},
+		{
+			"name": "Order Spells",
+			"source": "LLAPal",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n每个神圣誓约都有一套神圣信条，誓约的圣骑士发誓要遵守这些信条。如果一名圣骑士故意且自愿违反了誓约的信条，他们将无法使用神圣誓约或圣骑士职业特性，除非他们花费1小时（可以在短暂休息或长休息期间），进行适合其誓约的赔偿。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n如果圣武士一再违反誓约，他们可能会完全破坏誓约。那些这样做的人可能会成为无誓约的圣武士，邪恶的黑卫士，或者必须转换职业。"
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			}
+		},
+		{
+			"name": "Divine Fervor",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"foundrySystem": {
+				"uses.max": "@classes.alternate-paladin.levels + @abilities.cha.mod",
+				"per": "lr"
+			},
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你神圣誓言的正义力量由一池神圣热情代表，用于激发各种圣骑士和誓言特性。你拥有的神圣热情数量等于你的圣骑士等级加上你的魅力调整值（最低为0）。当你完成一次长休后，你会恢复已消耗的神圣热情。"
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "LLAPal",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"在第2级时，你学会了借助你神圣誓言的力量施放神圣法术。你获得以下好处：",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n圣骑士表格显示了你有多少法术位可用于施放1级及更高级别的法术。要施放圣骑士法术，你必须消耗等同于该法术等级或更高级别的法术位。当你完成一次长休后，你会恢复所有已消耗的法术位。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known Of 1st-Level And Higher",
+					"entries": [
+						"在第2级时，了解圣骑士法术列表中的两个1级法术。圣骑士表格中的法术已知栏显示了你何时学会更多你选择的圣骑士法术。每个法术必须是你拥有法术位等级的法术。",
+						"当你获得圣骑士等级时，你可以选择一个你已知的圣骑士法术，用你选择的另一个同等级别的圣骑士法术替换之，前提是你有相应等级的法术位。 (Paladin)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Oath Spell",
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n每个神圣誓约都有一系列誓约法术，你可以在你的神圣誓约描述中的圣骑士等级中学会这些法术。这些誓约法术对你来说算作圣骑士法术，但它们不计入你已知法术的总数，而且当你在这个职业中升级时不能替换它们。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你的力量源自于你的信念，因此魅力是你作为圣骑士法术的施法能力。当一个法术涉及到你的施法能力、你的豁免 DC 或进行法术攻击检定时，你使用魅力。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你可以使用一件神圣象征作为圣骑士法术的焦点。神圣象征是代表你誓言准则的微小物体或徽章。如果它被镶嵌在盾牌上，它可以作为圣骑士法术的施法焦点。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			}
+		},
+		{
+			"name": "Divine Smite",
+			"source": "LLAPal",
+			"foundryImg": "icons/skills/targeting/crosshair-triple-strike-orange.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你可以将你的誓约之力注入武器中。另外，从2级开始，当你用近战武器攻击命中目标时，你可以消耗一个法术槽来造成额外伤害。这个额外伤害为1级法术槽为2d8，每高一级的法术槽额外增加1d8，最高可达6d8伤害。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n这个特性的伤害取决于你的阵营：",
+				{
+					"type": "table",
+					"caption": "Smites",
+					"colLabels": [
+						"Alignment",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Good",
+							"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n光辉"
+						],
+						[
+							"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。",
+							"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n翻译遵守 dnd 跑团规则，专有名词在翻译后应在英文后保留 `()`。 \n\n雷霆"
+						],
+						[
+							"Evil",
+							"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n死灵"
+						]
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation": {
+					"type": "special"
+				}
+			}
+		},
+		{
+			"name": "Divine Regeneration",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，文本中像 (%num%) 这样的内容在翻译中应该保持为 (%num%)。\n\n从第3级开始，在短暂休息期间，您可以恢复等于您魅力调整值的法术位等级总和。一旦您使用了这个特性，您必须完成一次长休才能再次使用这个特性。"
+			],
+			"foundrySystem": {
+				"activation.condition": "During a short rest"
+			},
+			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp"
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 4,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当你达到第4级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用此特性不能将能力值提高到20点以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译时仍应输出为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你的DM允许使用特性，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "LLAPal",
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 5,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n另外，从5级开始，每当你在你的回合上采取攻击动作时，你可以攻击两次，而不是一次。即使违反誓约，你仍然保留此特性的好处。"
+			]
+		},
+		{
+			"name": "Divine Sense",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-teal.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 5,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n从5级开始，你可以使用一个动作来感知强大的外位善恶。在接下来的10分钟内，你可以知道距离你60英尺以内的任何天体、元素生物、精灵、恶魔或不死生物的位置和生物类型，前提是它们不在完全掩盖或被遮蔽的预言魔法之外。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n使用神圣感知后，你必须完成一次短暂或长时间休息，然后才能再次使用它。如果你没有使用次数了，你可以消耗 1 神圣热情来再次使用这个特性。"
+			]
+		},
+		{
+			"name": "Aura of Protection",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 6,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你对自己的坚定信念增强了周围人的信心。从6级开始，只要你没有失去行动能力，你会在10英尺半径内散发出一种看不见的光环。你的光环只对你和你选择的范围内的生物有效。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n受到你的保护光环影响的生物在豁免投掷中可以加上你的魅力调整值（最低为 +0）。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n在某些等级上，保护光环的半径会根据圣骑士表格上的光环半径栏目所示而增加。"
+			]
+		},
+		{
+			"name": "Sacred Oath Feature",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 4,
+			"level": 7,
+			"entries": [
+				"在第7级时，你获得了由你的神圣誓言赋予的特性（Sacred Oath）。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 8,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当你达到第8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译时仍应输出为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你的DM允许使用特性，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Divine Health",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 9,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应保留英文括号内的内容。\n\n你所宣誓的神圣魔法保护你免受伤害。在第9级时，你获得对毒性伤害的抗性，对中毒状态免疫，并对所有非魔法疾病免疫。"
+			]
+		},
+		{
+			"name": "Aura of Courage",
+			"source": "LLAPal",
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 10,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你的光环让那些受其影响的生物在面对邪恶和危险时变得非常勇敢。从10级开始，处于你的保护光环下的生物对受到惊恐状态免疫。如果一只受惊恐的生物进入你的光环，效果会在其仍在你的光环内时暂停。"
+			]
+		},
+		{
+			"name": "Improved Divine Smite",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-orange.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 11,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你的超自然信念激发了你的打击。从11级开始，每当你用近战武器攻击命中生物时，你会额外造成1d8点伤害。这个额外伤害的类型与你的神圣打击造成的伤害类型相同。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 12,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当你达到12级时，你可以选择将你选择的一个属性分数提高2点，或者将你选择的两个属性分数各提高1点。与正常规则一样，你不能通过这个特性将属性分数提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译时仍应输出为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你的DM允许使用特性，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Purifying Touch",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"foundryImg": "icons/magic/life/heart-hand-gold-green-light.webp",
+			"classSource": "LLAPal",
+			"level": 14,
+			"entries": [
+				"从第14级开始，您可以利用您的神圣力量驱散敌对法术。作为一个行动，您可以立即结束影响您的单个法术，或者触摸的一个愿意的生物。 (divine power)",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n一旦你使用这个特性，你必须完成一次短休或长休，然后才能再次使用它。当你没有使用次数时，你可以消耗 5 神圣热情来再次使用这个特性。"
+			]
+		},
+		{
+			"name": "Sacred Oath Feature",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 15,
+			"entries": [
+				"在符合当地语言习惯的情况下，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译应符合 dnd 跑团规则，专有名词在翻译后应保留英文括号 `()`。 \n\n在第15级时，你将获得由你的神圣誓言赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 16,
+			"entries": [
+				"当你达到第16级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与平常一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译时仍应输出为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你的DM允许使用特性，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Aura of Conviction",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"foundryImg": "icons/equipment/head/greathelm-slotted-steel.webp",
+			"classSource": "LLAPal",
+			"level": 18,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你对誓言的传奇信念赋予了你的保护光环奇妙的力量。从18级开始，当你的保护光环下的除你之外的生物未通过豁免扑克时，你可以使用你的反应让它重新投掷它的豁免扑克。然而，它必须使用新的结果。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd游戏组规则，专有名词在翻译后应保留英文括号`()`。\n\n一旦你使用此特性将一次失败的豁免检定变为成功，你必须完成一次短暂或长时间休息，然后才能再次使用此反应。当你没有剩余使用次数时，你可以消耗5点神圣热忱再次使用此反应。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与平常一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译时仍应输出为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你的DM允许使用特性，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Sacred Oath Feature",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"level": 20,
+			"entries": [
+				"在第20级时，你获得了由你的神圣誓言赋予的特性。"
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Oath of the Ancients",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"shortName": "Ancients",
+			"subclassFeatures": [
+				"Oath of the Ancients|Alternate Paladin|LLAPal|Ancients|LLAPal|1",
+				"Ancient Spells|Alternate Paladin|LLAPal|Ancients|LLAPal|2",
+				"Verdant Smite|Alternate Paladin|LLAPal|Ancients|LLAPal|3",
+				"Primal Shield|Alternate Paladin|LLAPal|Ancients|LLAPal|3",
+				"Aura of Warding|Alternate Paladin|LLAPal|Ancients|LLAPal|7",
+				"Undying Sentinel|Alternate Paladin|LLAPal|Ancients|LLAPal|15",
+				"Avatar of the Ancients|Alternate Paladin|LLAPal|Ancients|LLAPal|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"absorb elements|xge",
+							"ensnaring strike (alternate)|llspell"
+						],
+						"5": [
+							"moonbeam",
+							"spike growth"
+						],
+						"9": [
+							"plant growth",
+							"protection from energy"
+						],
+						"13": [
+							"grasping vine",
+							"guardian of nature|xge"
+						],
+						"17": [
+							"commune with nature",
+							"tree stride"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"absorb elements|xge",
+				"ensnaring strike (alternate)|llspell",
+				"moonbeam",
+				"spike growth",
+				"plant growth",
+				"protection from energy",
+				"grasping vine",
+				"guardian of nature|xge",
+				"commune with nature",
+				"tree stride"
+			]
+		},
+		{
+			"name": "Oath of Devotion",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"shortName": "Devotion",
+			"subclassFeatures": [
+				"Oath of Devotion|Alternate Paladin|LLAPal|Devotion|LLAPal|1",
+				"Devotion Spells|Alternate Paladin|LLAPal|Devotion|LLAPal|2",
+				"Righteous Smite|Alternate Paladin|LLAPal|Devotion|LLAPal|3",
+				"Sacred Weapon|Alternate Paladin|LLAPal|Devotion|LLAPal|3",
+				"Aura of Devotion|Alternate Paladin|LLAPal|Devotion|LLAPal|7",
+				"Purity of Spirit|Alternate Paladin|LLAPal|Devotion|LLAPal|15",
+				"Avatar of Devotion|Alternate Paladin|LLAPal|Devotion|LLAPal|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"bless",
+							"shield of faith"
+						],
+						"5": [
+							"find steed (alternate)|llspell",
+							"restoration|llspell"
+						],
+						"9": [
+							"beacon of hope",
+							"remove curse"
+						],
+						"13": [
+							"death ward",
+							"guardian of faith"
+						],
+						"17": [
+							"dawn|xge",
+							"Dispel Evil and Good"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"bless",
+				"shield of faith",
+				"find steed (alternate)|llspell",
+				"restoration|llspell",
+				"beacon of hope",
+				"remove curse",
+				"death ward",
+				"guardian of faith",
+				"dawn|xge",
+				"Dispel Evil and Good"
+			]
+		},
+		{
+			"name": "Oath of Vengeance",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"shortName": "Vengeance",
+			"subclassFeatures": [
+				"Oath of Vengeance|Alternate Paladin|LLAPal|Vengeance|LLAPal|1",
+				"Vengeance Spells|Alternate Paladin|LLAPal|Vengeance|LLAPal|2",
+				"Vengeful Smite|Alternate Paladin|LLAPal|Vengeance|LLAPal|3",
+				"Vow of Enmity|Alternate Paladin|LLAPal|Vengeance|LLAPal|3",
+				"Aura of Vengeance|Alternate Paladin|LLAPal|Vengeance|LLAPal|7",
+				"Relentless Avenger|Alternate Paladin|LLAPal|Vengeance|LLAPal|15",
+				"Avatar of Vengeance|Alternate Paladin|LLAPal|Vengeance|LLAPal|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"bane",
+							"compelled duel"
+						],
+						"5": [
+							"hold person",
+							"misty step"
+						],
+						"9": [
+							"haste",
+							"nondetection"
+						],
+						"13": [
+							"banishment",
+							"dimension door"
+						],
+						"17": [
+							"far step|xge",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"bane",
+				"compelled duel",
+				"hold person",
+				"misty step",
+				"haste",
+				"nondetection",
+				"banishment",
+				"dimension door",
+				"far step|xge",
+				"hold monster"
+			]
+		},
+		{
+			"name": "The Oathless",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"shortName": "Oathless",
+			"subclassFeatures": [
+				"The Oathless|Alternate Paladin|LLAPal|Oathless|LLAPal|1",
+				"Oathless Spells|Alternate Paladin|LLAPal|Oathless|LLAPal|2",
+				"Draining Smite|Alternate Paladin|LLAPal|Oathless|LLAPal|3",
+				"Illusory Escape|Alternate Paladin|LLAPal|Oathless|LLAPal|3",
+				"Aura of Deception|Alternate Paladin|LLAPal|Oathless|LLAPal|7",
+				"Forceful Will|Alternate Paladin|LLAPal|Oathless|LLAPal|15",
+				"Avatar of Dishonor|Alternate Paladin|LLAPal|Oathless|LLAPal|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"charm person",
+							"false life"
+						],
+						"5": [
+							"invisibility",
+							"suggestion"
+						],
+						"9": [
+							"gaseous form",
+							"vampiric touch"
+						],
+						"13": [
+							"charm monster|XGE",
+							"greater invisibility"
+						],
+						"17": [
+							"dominate monster",
+							"passwall"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"charm person",
+				"false life",
+				"invisibility",
+				"suggestion",
+				"gaseous form",
+				"vampiric touch",
+				"charm monster|XGE",
+				"greater invisibility",
+				"dominate monster",
+				"passwall"
+			]
+		},
+		{
+			"name": "Blackguard",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"shortName": "Blackguard",
+			"subclassFeatures": [
+				"Blackguard|Alternate Paladin|LLAPal|Blackguard|LLAPal|1",
+				"Blackguard Spells|Alternate Paladin|LLAPal|Blackguard|LLAPal|2",
+				"Dreadful Smite|Alternate Paladin|LLAPal|Blackguard|LLAPal|3",
+				"Marshal of Darkness|Alternate Paladin|LLAPal|Blackguard|LLAPal|3",
+				"Aura of Hate|Alternate Paladin|LLAPal|Blackguard|LLAPal|7",
+				"Sinister Resilience|Alternate Paladin|LLAPal|Blackguard|LLAPal|15",
+				"Avatar of Hate|Alternate Paladin|LLAPal|Blackguard|LLAPal|20"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"cause fear|xge",
+							"hellish rebuke"
+						],
+						"5": [
+							"blindness/deafness",
+							"shadow blade|xge"
+						],
+						"9": [
+							"animate dead",
+							"bestow curse"
+						],
+						"13": [
+							"accursed touch|llspell",
+							"shadow of moil|xge"
+						],
+						"17": [
+							"contagion",
+							"infernal calling|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"cause fear|xge",
+				"hellish rebuke",
+				"blindness/deafness",
+				"shadow blade|xge",
+				"animate dead",
+				"bestow curse",
+				"accursed touch|llspell",
+				"shadow of moil|xge",
+				"contagion",
+				"infernal calling|xge"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Oath of the Ancients",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n常被称为绿骑士，发誓守护这个神圣誓言的圣骑士被誓言守护所有形式的生命和美丽。他们是自然世界的守护者，可以在仙境之庭、德鲁伊圈或任何自然以其古老和原始的荣耀为主的地方找到。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Ancients|Alternate Paladin|LLAPal|Ancients|LLAPal|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elder Guardian|Alternate Paladin|LLAPal|Ancients|LLAPal|1"
+				}
+			]
+		},
+		{
+			"name": "Tenets of the Ancients",
+			"source": "LLAPal",
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n尽管他们的誓言和目的可能各不相同，但所有发誓守护古老誓言的圣武士都遵守以下准则：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n美丽",
+							"保护自然美和无辜生命，免受任何威胁者的伤害。 (Protect natural beauty and innocent life from any who threaten it.)"
+						],
+						[
+							"Hope",
+							"用你的行动点燃希望之光，永不屈服于绝望。 (Kindle the light of hope with your actions and never give in to despair.)"
+						],
+						[
+							"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n翻译应符合 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n光",
+							"在歌声、舞蹈和笑声中感到愉悦。通过你的行动传播快乐。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Elder Guardian",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/magic/nature/plant-sprout-hand-flower-pink.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。\n\n你被标记为古老和荒野之地的朋友和捍卫者。你学会说、读和写 Sylvan 语言。如果你用 Sylvan 语言交谈，你可以与野兽交流，就像你受到与动物交谈法术影响一样。",
+				"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你也可以用你的誓言赋予他人原始的坚韧。作为一个动作，你可以触摸一个生物并消耗 1 神圣热情，使其获得临时生命值，数值等同于你的魅力调整值（最低为 1）。"
+			]
+		},
+		{
+			"name": "Ancient Spells",
+			"source": "LLAPal",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n您在圣骑士等级中学会某些法术，如下表所示。它们不计入您已知法术的数量，并且在获得等级后不能更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell absorb elements|xge}, {@spell ensnaring strike (alternate)|llspell}"
+						],
+						[
+							"5th",
+							"{@spell moonbeam}, {@spell spike growth}"
+						],
+						[
+							"9th",
+							"{@spell plant growth}, {@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell grasping vine}, {@spell guardian of nature|xge}"
+						],
+						[
+							"17th",
+							"{@spell commune with nature}, {@spell tree stride}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Verdant Smite",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/magic/nature/hand-weapon-wood-bark-brown.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n当你使用神圣打击时，你可以消耗 1 神圣热情，将那次打击注入翠绿之力。在攻击造成伤害后，你的目标必须通过一次敏捷豁免检定，否则将被神秘藤蔓束缚 1 分钟。",
+				"A restrained creature, or another creature within 5 feet of it, can use its action to make a Strength check against your Spell save DC. On a successful check, the mystical vines are destroyed and the creature is no longer restrained."
+			]
+		},
+		{
+			"name": "Primal Shield",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/equipment/shield/heater-wooden-sword-green.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n当你或另一个生物在10英尺内受到冰冷、火焰、闪电、毒素或雷电伤害时，你可以使用一次反应，消耗1点神圣热忱，并将该伤害减少你的圣骑士等级 + 你的魅力调整值。"
+			]
+		},
+		{
+			"name": "Aura of Warding",
+			"source": "LLAPal",
+			"foundryImg": "icons/equipment/shield/kite-wooden-oak-glow.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的英文。\n\t\t\t\t\t\n你誓约的长者之力保护你和你的盟友免受敌对魔法的伤害。在你的保护光环下的生物获得对法术伤害的抗性。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应保留英文括号内的内容。\n\t\t\t\t\t\n此外，您现在可以使用原始护盾来保护您光环保护范围内的任何生物。"
+			]
+		},
+		{
+			"name": "Undying Sentinel",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/time/day-night-sunset-sunrise.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n你的身体每过10年只会变老1岁，你不会因法术或魔法效果而变老。此外，当你的生命值降至0点但没有立即死亡时，你可以选择将生命值降至1点。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n一旦你使用这个特性，你必须完成一次长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Avatar of the Ancients",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/nature/symbol-moon-stars-white.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"作为一个奖励动作，你可以进入一种高度集中的奥术状态，为你带来以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你在回合开始时恢复 10 点生命值。",
+						"原始之盾不再需要神圣热情来使用。(Primal Shield)",
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你的庇护光环范围内的区域对你选择的生物来说变成艰难地形。",
+						"在符合当地语言习惯的情况下，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n在30英尺范围内的生物在抵抗圣骑士法术和翠绿打击时拥有劣势。"
+					]
+				},
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n这种变身持续1分钟。如果你失去意识，它会提前结束。一旦你使用了这个特性，你必须完成一次长休才能再次使用它。你可以消耗一个5级法术位再次变身。"
+			]
+		},
+		{
+			"name": "Oath of Devotion",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n被称为白骑士，发誓守护这个神圣誓言的圣骑士是美德、荣誉和正义的典范。他们将自己置于最高的善良和法律标准之下，将天使视为完美的楷模。虔诚圣誓圣骑士是黑暗世界中的光明灯塔。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Devotion|Alternate Paladin|LLAPal|Devotion|LLAPal|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lay on Hands|Alternate Paladin|LLAPal|Devotion|LLAPal|1"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Devotion",
+			"source": "LLAPal",
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n尽管誓言和目的可能有所不同，但所有宣誓效忠誓言的圣武士都遵守以下准则：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"同情 (Compassion)",
+							"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n帮助和保护弱势群体。对待敌人要表现出怜悯，但要谨慎地施加怜悯。"
+						],
+						[
+							"诚实",
+							"不要为了自己的利益欺骗他人。始终言出必行。"
+						],
+						[
+							"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 (`Honor`)",
+							"尽可能多地做好事，同时造成最少的伤害。服从那些拥有合法权威的人。 (Do as much good as possible while causing the least amount of harm. Obey those with rightful authority.)"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Lay on Hands",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/light/orbs-hand-gray.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你神圣的触摸可以治愈伤口并治愈疾病。作为一个动作，你可以触摸一个生物并消耗神圣热忱（最多等于你的魅力调整值），每消耗一点神圣热忱恢复五点生命值。或者，你可以使用这个特性来治愈每消耗一点神圣热忱的一种疾病或毒素。这个特性对构造体或不死生物没有效果。"
+			]
+		},
+		{
+			"name": "Devotion Spells",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n您在圣骑士等级中学会某些法术，如下表所示。它们不计入您已知法术的数量，并且在获得等级后不能更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell bless}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell find steed|llspell}, {@spell restoration|llspell}"
+						],
+						[
+							"9th",
+							"{@spell beacon of hope}, {@spell remove curse}"
+						],
+						[
+							"13th",
+							"{@spell death ward}, {@spell guardian of faith}"
+						],
+						[
+							"17th",
+							"{@spell dawn|xge}, {@spell Dispel Evil and Good}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Righteous Smite",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/magic/light/beam-red-orange.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"当你使用神圣打击时，你可以消耗1点神圣热忱，让你的打击充满神圣力量。在攻击造成伤害后，你的目标必须进行一次感知豁免投骰。如果未通过豁免，它会因为你而感到恐惧，持续1分钟并且必须利用自己的回合尽可能远离你。如果生物受到任何伤害，效果会提前结束。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文在`()`中。\n\n恶魔、不死生物和其他邪恶属性的生物在这次感知豁免检定中有劣势。"
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/weapons/swords/sword-gold-holy.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"作为一个奖励动作，你可以消耗1点神圣热情，让你手持的近战武器充满神圣力量。在1分钟内，它变成一把魔法武器，你可以在攻击卷轴中添加你的魅力调整值，并且发出30英尺的明亮光芒。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n这些效果会在你使用奖励动作解除它们，或者另一个生物拿起这把武器时立即结束。"
+			]
+		},
+		{
+			"name": "Aura of Devotion",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你的存在保护你的盟友免受改变思维的效果。在你的保护光环下的生物对被魅惑状态免疫。如果一个被魅惑的生物进入你的光环，效果会在它仍在你的光环内时暂停。"
+			]
+		},
+		{
+			"name": "Purity of Spirit",
+			"source": "LLAPal",
+			"foundryImg": "icons/creatures/mammals/unicorn-horned-white.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你对他人利益的纯洁奉献保护你免受强大外部影响。你始终处于 {@spell Protection from Evil and Good} 法术的影响之下。"
+			]
+		},
+		{
+			"name": "Avatar of Devotion",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/holy/saint-glass-portrait-halo.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n作为一个额外动作，你可以变身为神圣正义的化身。在变身期间，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在英文后用 `()` 保留。\n\n你展现出天使般的翅膀，获得60英尺的飞行速度。",
+						"任何你握住的近战武器都会变成一把神圣武器。 (Sacred Weapon)",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。\t\t\t\t\t\n你在你的保护光环中散发着明亮的阳光。"
+					]
+				},
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n这种变身持续1分钟，如果你失去意识，变身会提前结束。一旦你变身，你必须完成一次长休才能再次这样做。当你没有使用次数时，你可以消耗一个5级法术位再次变身。"
+			]
+		},
+		{
+			"name": "Oath of Vengeance",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n被称为复仇者或黑暗骑士，发誓这个神圣誓言的圣骑士通常是出于对复仇的愿望。无论他们是想摧毁一个冤枉他们的生物，还是想对折磨无辜者的腐败组织进行斗争，他们都将自己的生命奉献给了对誓约敌人的毁灭。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Vengeance|Alternate Paladin|LLAPal|Vengeance|LLAPal|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sworn Foe|Alternate Paladin|LLAPal|Vengeance|LLAPal|1"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Vengeance",
+			"source": "LLAPal",
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。\n\n尽管具体的誓言和原因可能有所不同，但所有宣誓复仇誓言的圣骑士都遵守以下准则：",
+				{
+					"type": "table",
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"消灭邪恶 (Destroy Evil)",
+							"根据当地语言习惯，在翻译中像(%num%)这样的文本应该仍然输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应在`()`中保留英文。\n\n在每一个机会中与你的宿敌战斗。与更大的邪恶作斗争。"
+						],
+						[
+							"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译遵守 DND 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n无情 (No Mercy)",
+							"不留情面对你的宿敌。以任何必要手段击败邪恶。 (No mercy for your Sworn Foes. Defeat evil by any means necessary.)"
+						],
+						[
+							"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n翻译遵守 dnd 跑团规则，专有名词在翻译后应在英文后面用 `()` 保留。 \n\n赔偿 (Restitution)",
+							"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文在`()`中。\n\n为你的宿敌和其他恶人做出赔偿。"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Sworn Foe",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/creatures/magical/construct-face-stone-pink.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 DND 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你已经发誓要以任何必要手段消灭你的宿敌。选择一个生物种类，两个人形种族（比如豺狼人和兽人），或一个组织（比如盗贼行会或恶魔邪教）作为你的宿敌。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n在你的回合中，你可以消耗 1 神圣热忱，让自己充满你神圣誓言的力量。在 1 小时内，你可以将你的魅力调整值（最低为 +1）添加到所有用于追踪或回忆关于誓约敌人的知识的能力检定以及对誓约敌人的所有攻击检定中。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你的宿敌被彻底消灭，或者当你获得圣骑士等级时，你可以进行一个为期 24 小时的仪式，在这个仪式中，你重新宣誓誓约并指定一个新的宿敌。"
+			]
+		},
+		{
+			"name": "Vengeance Spells",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你在圣骑士等级中学会特定法术，如下表所示。这些法术不计入你已知法术的总数，并且在获得等级后无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell bane}, {@spell compelled duel}"
+						],
+						[
+							"5th",
+							"{@spell hold person}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell nondetection}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell far step|xge}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Vengeful Smite",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/magic/fire/projectile-arrow-fire-gem-yellow.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当你使用神圣打击时，你可以消耗1点神圣热忱，让你的打击充满愤怒。在攻击造成伤害后，你的目标必须进行一次感知豁免投骰。如果未通过，它会因你而感到恐惧，速度降低至0，持续1分钟。如果生物受到伤害，效果会提前结束。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。 \n\n誓约敌人和你所誓约仇敌标记的生物在此豁免投掷中具有劣势。"
+			]
+		},
+		{
+			"name": "Vow of Enmity",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/magic/death/skull-fire-white-yellow.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你标记恶人受审判。作为一个额外动作，你可以消耗1点神圣热忱，并对你能看到的距离10英尺内的一个生物宣誓仇恨。在1分钟内或直到它被杀死为止，你对它的所有攻击投掷都获得优势。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果该生物也是誓敌，对除你以外的生物进行的所有攻击投掷都具有劣势，持续1分钟。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n只能有一个生物受到你的敌意誓约的影响。对另一个生物使用此特性会结束先前生物的誓约效果。"
+			]
+		},
+		{
+			"name": "Aura of Vengeance",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/symbols/runes-star-orange.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n\n你对敌人的仇恨化作了盾牌，保护着你的盟友。当你的保护光环下的生物被你的宿敌或被你的敌意誓言标记的生物迫使进行属性检定或豁免检定时，它们获得相应属性检定或豁免检定的奖励，数值为1d6。"
+			]
+		},
+		{
+			"name": "Relentless Avenger",
+			"source": "LLAPal",
+			"foundryImg": "icons/skills/movement/feet-bladed-boots-fire.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你的超自然仇恨帮助你威胁你的宿敌。当你的宿敌或被你的敌意誓约标记的生物攻击或迫使除你以外的生物进行豁免扑，你可以使用你的反应向攻击者移动，速度达到你的速度，并对其进行一次近战攻击。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译时仍应保留为 (%num%)。\n\n如果在移动过程中受到机会攻击，你的攻击骰有优势。 (opportunity attack)"
+			]
+		},
+		{
+			"name": "Avatar of Vengeance",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/death/skull-pile-glowing-pink.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"在符合当地语言习惯的情况下，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n作为你回合的额外动作，你可以变身为神圣审判的化身。当你变身时，你在最多 1 分钟内获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。\n\n你可以在每个回合自由施放 {@spell misty step}，而无需消耗法术位。如果你重新出现在离生物不到 5 英尺的地方，你可以对其进行近战武器攻击。",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的英文。\n\t\t\t\t\t\n你对宣誓敌人的攻击投掷获得优势。",
+						"每回合一次，当你使用优势进行武器攻击检定时，你可以放弃攻击检定的优势，对该生物进行一次额外的武器攻击。"
+					]
+				},
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n这种变身持续1分钟，如果你失去意识，变身会提前结束。一旦你变身，你必须完成一次长休才能再次这样做。当你没有使用次数时，你可以消耗一个5级法术位再次变身。"
+			]
+		},
+		{
+			"name": "The Oathless",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\nOathless是放弃其神圣誓言的圣骑士，原因并非邪恶，但仍保留部分力量。他们漫无目的地徘徊，常常成为强盗或雇佣兵。有些人寻找目的，希望重申他们的誓言，但许多Oathless陷入绝望。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应在`()`中保留英文。\n\n在所有民族和文化中，违背誓言的人，尤其是圣骑士，都会被视为不可信任的。在重视荣誉的文化中，无誓言者会受到暴力对待。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shattered Oath|Alternate Paladin|LLAPal|Oathless|LLAPal|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Treacherous Mark|Alternate Paladin|LLAPal|Oathless|LLAPal|1"
+				}
+			]
+		},
+		{
+			"name": "Shattered Oath",
+			"source": "LLAPal",
+			"foundryImg": "icons/sundries/scrolls/scroll-writing-gold.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"The shattered power of your broken Oath radiates from you. Whenever you make an ability check to convince any creature to trust you or to enter into a deal or agreement of any kind, you subtract your Paladin level from your roll. This effect can manifest in many ways, causing creatures to distrust you."
+			]
+		},
+		{
+			"name": "Treacherous Mark",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/weapons/daggers/dagger-glowing-white.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你对于不讲荣誉战斗或无视战争规则毫不犹豫。当你用近战武器攻击一个生物并且另一个敌对生物在你的目标附近5英尺内时，你可以消耗1点神圣热忱来标记它。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n每当你用武器攻击对标记的目标造成伤害，包括用于标记的攻击时，你可以将你的魅力调整值（最低为 +1）加到你的伤害骰中。"
+			]
+		},
+		{
+			"name": "Oathless Spells",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你在圣骑士等级中学会特定法术，如下表所示。这些法术不计入你已知法术的总数，并且在获得等级后无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell charm person}, {@spell false life}"
+						],
+						[
+							"5th",
+							"{@spell invisibility}, {@spell suggestion}"
+						],
+						[
+							"9th",
+							"{@spell gaseous form}, {@spell vampiric touch}"
+						],
+						[
+							"13th",
+							"{@spell charm monster|xge}, {@spell greater invisibility}"
+						],
+						[
+							"17th",
+							"{@spell dominate person}, {@spell passwall}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draining Smite",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/magic/death/mouth-bite-fangs-vampire.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n当你使用神圣打击时，你可以消耗1点神圣热忱，将这次打击注入你自身的力量。这次神圣打击的额外伤害变为死灵伤害，并且你获得临时生命值，数值等同于造成的死灵伤害的一半。"
+			]
+		},
+		{
+			"name": "Illusory Escape",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/creatures/reptiles/chameleon-camouflage-green-brown.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你对自己的狂热奉献高于一切，使你能够避免受到伤害。当你受到可以看见的伤害时，你可以使用你的反应来消耗 1 神圣热忱，变得隐形，并移动你的速度。你保持隐形直到你的下一个回合开始，或者直到你进行攻击或迫使生物进行豁免才结束。"
+			]
+		},
+		{
+			"name": "Aura of Deception",
+			"source": "LLAPal",
+			"foundryImg": "icons/skills/melee/shield-damaged-broken-orange.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你毫不犹豫地以牺牲他人的安全来确保自己的安全。当你使用幻觉逃脱时，你可以强迫你选择的生物在你的保护光环内进行一次魅力豁免检定。如果失败，你和该生物立即交换位置，并且它代替你承受触发伤害。然后，你从重新出现的位置开始获得幻觉逃脱的正常效果。"
+			]
+		},
+		{
+			"name": "Forceful Will",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你利用你的存在来支配而不是帮助他人。当你强迫你光环保护范围内的生物进行豁免魔法的效果时，它在初始豁免检定时具有劣势。"
+			]
+		},
+		{
+			"name": "Avatar of Dishonor",
+			"source": "LLAPal",
+			"foundryImg": "icons/creatures/invertebrates/bug-cross-green.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"作为一个奖励动作，你可以集中你的自私力量，变成你本应该成为的正义圣骑士的灰色阴影，获得以下好处，持续一分钟：",
+				{
+					"type": "list",
+					"items": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文在 `()` 中。 \n\n你变得如同通过 {@spell greater invisibility} 咒语隐形。",
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你可以将行动分配给\"冲刺\"或\"躲藏\"作为一个额外行动。",
+						"当一个生物用近战攻击未击中你时，你可以强迫它重复对你选择的另一个生物进行攻击，攻击范围仍在正常范围内。"
+					]
+				},
+				"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你昏迷或使用一个奖励动作来结束它，这个变身会提前结束。一旦你变身，你必须完成一次长休才能再次这样做。如果你没有使用次数，你可以消耗一个5级法术位来再次使用它。"
+			]
+		},
+		{
+			"name": "Blackguard",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n宣誓这个黑暗誓言的圣武士全心全意地致力于邪恶的进步。无论他们是与强大的恶魔和不死生物结盟，还是独自行动，黑卫士以其残忍、对一切美好事物的憎恶以及为实现其邪恶目标而愿意牺牲任何事物或任何人而闻名。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n黑卫圣武士始终是邪恶取向的，行为违背他们的神圣誓约。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dark Apostle|Alternate Paladin|LLAPal|Blackguard|LLAPal|1"
+				}
+			]
+		},
+		{
+			"name": "Dark Apostle",
+			"source": "LLAPal",
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-clawed.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文在`()`中。\n\n你学会说、读和写深渊语或地狱语中的一种，你在与恶魔、亡灵和其他来自邪恶外域的生物互动时具有魅力检定的优势。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译需遵守 DND 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n此外，当你用近战武器攻击敌对生物时，你可以消耗 1 神圣热忱来获得临时生命值，数值等于你的魅力调整值（最少为 1）。"
+			]
+		},
+		{
+			"name": "Blackguard Spells",
+			"foundryImg": "icons/sundries/books/book-worn-purple.webp",
+			"source": "LLAPal",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你在圣骑士等级中学会特定法术，如下表所示。这些法术不计入你已知法术的总数，并且在获得等级后无法更换。",
+				{
+					"type": "table",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10 text- "
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell cause fear|xge}, {@spell hellish rebuke}"
+						],
+						[
+							"5th",
+							"{@spell blindness/deafness}, {@spell shadow blade|xge}"
+						],
+						[
+							"9th",
+							"{@spell animate dead}, {@spell bestow curse}"
+						],
+						[
+							"13th",
+							"{@spell accursed touch|llspell}, {@spell shadow of moil|xge}"
+						],
+						[
+							"17th",
+							"{@spell contagion}, {@spell infernal calling|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dreadful Smite",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/magic/death/weapon-scythe-rune-green.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"使用神圣打击时，您可以消耗1点神圣热忱，将这次打击注入您的仇恨之中。在攻击造成伤害后，您的目标以及距离目标30英尺内您选择的生物必须进行一次感知豁免检定。如果未通过，它们会因您而感到恐惧1分钟。然而，如果一个受惊的目标在其回合结束时距离您超过30英尺，它可以重复进行这次感知豁免检定，成功则结束效果。"
+			]
+		},
+		{
+			"name": "Marshal of Darkness",
+			"source": "LLAPal",
+			"consumes": {
+				"name": "Divine Fervor",
+				"amount": 1
+			},
+			"foundryImg": "icons/sundries/flags/banner-standard-tattered-red.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应在`()`中保留英文。\n\n作为一项行动，你可以消耗1点神圣热情，集中意志对准你能看到的30英尺内的一个邪恶生物或不死生物，迫使它进行一次魅力豁免。如果失败，该生物必须在接下来的24小时内服从你的命令，或者直到你对另一个目标使用此特性。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n这个特性对于具有挑战等级等于或大于你圣骑士等级的恶魔和不死生物没有影响。"
+			]
+		},
+		{
+			"name": "Aura of Hate",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 6,
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你对所有美好事物的憎恶加强了黑暗力量。你的庇护光环下的任何恶魔或不死生物可以在进行任何近战法术或武器伤害骰时，将你的魅力调整值（最低为 +1）加到伤害骰上。"
+			]
+		},
+		{
+			"name": "Sinister Resilience",
+			"source": "LLAPal",
+			"foundryImg": "icons/magic/death/undead-skeleton-lich-armor.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你已经被黑暗力量充斥，开始变得像下位平面的邪恶生物一样。你获得对死灵伤害的抗性，以及对所有非魔法重击、穿刺和斩击伤害的抗性。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n你也不再需要进食、饮水或呼吸，每过10年你只会年老1岁。然而，现在你被视为不死生物，除了你的生物类型。"
+			]
+		},
+		{
+			"name": "Avatar of Hate",
+			"source": "LLAPal",
+			"foundryImg": "icons/creatures/unholy/demon-fire-horned-winged-roar.webp",
+			"className": "Alternate Paladin",
+			"classSource": "LLAPal",
+			"page": 7,
+			"subclassShortName": "Blackguard",
+			"subclassSource": "LLAPal",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n作为一个额外动作，你可以变身为神圣仇恨的化身。在变身期间，你获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\t\t\t\t\t\n任何距离你 30 英尺内的明亮光线会变成微弱光线。",
+						"当你对生物造成死灵伤害时，你获得的临时生命值相当于所造成伤害的一半。 (necrotic damage)",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n当一只因为你而感到恐惧的生物在你的保护光环内开始其回合时，它会受到 4d10 点死灵伤害。",
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n作为一个额外动作，你可以强迫你光环保护范围内的一个生物进行一次魅力豁免检定。如果未通过检定，该生物会受到 4d10 点死灵伤害。"
+					]
+				},
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n如果你昏迷或者将其作为一个奖励动作结束，这个变身会提前结束。一旦你使用变身，你必须完成一次长休才能再次这样做。如果你没有剩余使用次数，你可以消耗一个5级法术位来再次使用这个变身。"
+			]
+		}
+	]
+}

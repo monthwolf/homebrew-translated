@@ -1,0 +1,2878 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DZC:ANA:F",
+				"abbreviation": "DZC:ANA:F",
+				"full": "Fighter Rework",
+				"authors": [
+					"Dusk Zargoth"
+				],
+				"convertedBy": [
+					"Dusk Zargoth"
+				],
+				"version": "1.0.1",
+				"color": "DC3636",
+				"url": "https://homebrewery.naturalcrit.com/share/IgYlBcKRHPOG"
+			}
+		],
+		"dateAdded": 1714935701,
+		"dateLastModified": 1714935701,
+		"optionalFeatureTypes": {
+			"DZC:CS": "Fighter Rework; Combat Specialization",
+			"DZC:CS:WS": "Fighter Rework; Combat Specialization: Weapon Specialization",
+			"DZC:CS:AS": "Fighter Rework; Combat Specialization: Armor Specialization",
+			"DZC:CS:PS": "Fighter Rework; Combat Specialization: Physical Specialization",
+			"DZC:M": "Fighter Rework; Maneuvers",
+			"DZC:IC": "Fighter Rework; Improved Critical",
+			"DZC:WB": "Fighter Rework; Weapon Bond",
+			"DZC:MT": "DZC: Martial Techniques"
+		},
+		"_dateLastModifiedHash": "53f62715d4"
+	},
+	"class": [
+		{
+			"name": "Fighter Rework",
+			"source": "DZC:ANA:F",
+			"foundryImg": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/classes/PHB/Fighter.webp",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"tools": [
+					"Choose one type of {@item artisan's tools|phb} or one kind of {@item vehicle|phb}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item chain mail|phb} or (b) {@item leather armor|phb}, {@item longbow}, {@item quiver}, and {@item arrows (20)|phb|20 arrows}",
+					"(a) {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+					"(a) a {@item light crossbow|phb}, a {@item crossbow bolt case|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) two {@item simple weapons|items|source=phb|category=basic|type=simple wepaon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"chain mail|phb"
+						],
+						"b": [
+							"leather armor|phb",
+							"longbow|phb",
+							"quiver|phb",
+							"arrows (20)|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"light crossbow|phb",
+							"crossbow bolt case|phb",
+							"crossbow bolts (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					}
+				]
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Maneuvers",
+					"featureType": [
+						"DZC:M"
+					],
+					"progression": [
+						0,
+						3,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						6,
+						6,
+						7,
+						7,
+						8,
+						8,
+						9,
+						9,
+						9,
+						10,
+						10,
+						10
+					]
+				},
+				{
+					"name": "Warrior's Training",
+					"featureType": [
+						"DZC:CS"
+					],
+					"progression": {
+						"1": 2,
+						"9": 3,
+						"13": 4
+					}
+				},
+				{
+					"name": "Improved Critical",
+					"featureType": [
+						"DZC:IC"
+					],
+					"progression": {
+						"3": 19,
+						"7": 18,
+						"15": 17,
+						"18": 16
+					}
+				}
+			],
+			"foundryAdvancement": [
+				{
+					"title": "Improved Critical",
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "imp-crit",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 19
+							},
+							"7": {
+								"value": 18
+							},
+							"15": {
+								"value": 17
+							},
+							"18": {
+								"value": 16
+							}
+						}
+					}
+				}
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Superiority Pool",
+						"Superiority Dice",
+						"Maneuvers"
+					],
+					"rows": [
+						[
+							0,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							0
+						],
+						[
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3
+						],
+						[
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							4
+						],
+						[
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4
+						],
+						[
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							5
+						],
+						[
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							5
+						],
+						[
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							6
+						],
+						[
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							6
+						],
+						[
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							7
+						],
+						[
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							7
+						],
+						[
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							8
+						],
+						[
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							8
+						],
+						[
+							8,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							9
+						],
+						[
+							9,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							9
+						],
+						[
+							9,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							9
+						],
+						[
+							9,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							10
+						],
+						[
+							10,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							10
+						],
+						[
+							10,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							10
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Warrior's Training|Fighter Rework|DZC:ANA:F|1",
+				"Pump Action|Fighter Rework|DZC:ANA:F|1",
+				"Combat Superiority|Fighter Rework|DZC:ANA:F|2",
+				"Determination|Fighter Rework|DZC:ANA:F|2",
+				{
+					"classFeature": "Martial Archetype|Fighter Rework|DZC:ANA:F|3",
+					"gainSubclassFeature": true
+				},
+				"Know Your Enemy|Fighter Rework|DZC:ANA:F|3",
+				"Ability Score Improvement|Fighter Rework|DZC:ANA:F|4",
+				"Extra Attack|Fighter Rework|DZC:ANA:F|5",
+				"Combat Expertise|Fighter Rework|DZC:ANA:F|5",
+				"Ability Score Improvement|Fighter Rework|DZC:ANA:F|6",
+				{
+					"classFeature": "Martial Archetype feature|Fighter Rework|DZC:ANA:F|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Fighter Rework|DZC:ANA:F|8",
+				"Warrior's Training improvement|Fighter Rework|DZC:ANA:F|9",
+				"Determination improvement|Fighter Rework|DZC:ANA:F|9",
+				"Ability Score Improvement|Fighter Rework|DZC:ANA:F|10",
+				"Extra Attack (2)|Fighter Rework|DZC:ANA:F|11",
+				"Ability Score Improvement|Fighter Rework|DZC:ANA:F|12",
+				"Warrior's Training improvement|Fighter Rework|DZC:ANA:F|13",
+				"Relentless|Fighter Rework|DZC:ANA:F|14",
+				{
+					"classFeature": "Martial Archetype feature|Fighter Rework|DZC:ANA:F|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Fighter Rework|DZC:ANA:F|16",
+				"Extra Attack (3)|Fighter Rework|DZC:ANA:F|17",
+				{
+					"classFeature": "Martial Archetype feature|Fighter Rework|DZC:ANA:F|18",
+					"gainSubclassFeature": true
+				},
+				"Knowledge Advantage|Fighter Rework|DZC:ANA:F|19",
+				"Ability Score Improvement|Fighter Rework|DZC:ANA:F|20",
+				"Legendary Warrior|Fighter Rework|DZC:ANA:F|20"
+			],
+			"subclassTitle": "Martial Archetype",
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					],
+					"con": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|phb|shields}"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"hasFluff": true
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Warrior's Training",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/sword-shield-stylized-white.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n\n根据 dnd 跑团规则，翻译应保留英文中的专有名词在 `()` 中。\n\n在1级时，你开始进行一项训练计划，以培养你的战斗技能，这体现为一个 {@filter Combat Specialization|optionalfeatures|feature type=DZC:CS}，每个都在下面描述。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你可以选择学习任意战斗专长中的两个特性。当你达到该职业的第9级和第13级时，你可以选择学习另一个战斗专长中的额外特性。",
+				{
+					"type": "entries",
+					"name": "Weapon Specialization",
+					"page": 3,
+					"entries": [
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n要压倒你的对手，熟练地运用武器，以不同的方式使用它们，这是在战场取得成功的关键。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Armor Specialization",
+					"page": 3,
+					"entries": [
+						"那些愚蠢的人会说最好的防守是最好的进攻，然而，最好的防守是让你能够持续战斗的防守。 (Those foolish enough will say that the best defense is the best offense, however, the best defense is that which allows you to fight longer.)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Physical Specialization",
+					"page": 3,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你的身体承担了大部分工作负荷，使其成为训练最重要的部分。"
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Changes to Unarmed Strikes and the Finesse Property",
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。在这本手册中，徒手攻击和灵巧属性遭受了重要的变化，旨在保持平衡。",
+						{
+							"type": "entries",
+							"name": "Finesse Property",
+							"page": 14,
+							"entries": [
+								"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应保持为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n该属性现在允许您在使用该武器进行攻击骰时只选择您的力量或敏捷调整值，但对于伤害骰，您仍需使用您的力量调整值进行近战武器攻击，或使用您的敏捷调整值进行远程武器攻击。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Unarmed Strikes",
+							"page": 14,
+							"entries": [
+								"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n徒手攻击现在被认为具有灵巧和轻便属性。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Warrior's Training improvement",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/sword-shield-stylized-white.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 9,
+			"entries": [
+				"在第9级时，您可以从任何专长中选择额外的{@filter Combat Specialization|optionalfeatures|feature type=DZC:CS}。"
+			]
+		},
+		{
+			"name": "Warrior's Training improvement",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/sword-shield-stylized-white.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 13,
+			"entries": [
+				"在第13级时，您可以从任何专长中选择额外的{@filter Combat Specialization|optionalfeatures|feature type=DZC:CS}。"
+			]
+		},
+		{
+			"name": "Pump Action",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/skills/social/intimidation-impressing.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"在第1级时，轮到你行动时，你可以放弃你的奖励动作和反应，以在本回合执行额外的动作。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			}
+		},
+		{
+			"name": "Combat Superiority",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-blue-yellow.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应保持为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应在英文后用`()`保留。\n\n从2级开始，你学会了由特殊骰子称为优势骰子提供动力的{@filter Maneuvers|optionalfeatures|feature type=DZC:M}。",
+				{
+					"type": "entries",
+					"name": "Maneuvers",
+					"page": 3,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你学会了三个你选择的 {@filter maneuvers|optionalfeatures|feature type=DZC:M}。你的战技详细列在职业描述的末尾。当你获得特定的战士等级时，你会获得额外的你选择的战技，如在战士表格的\"已知战技\"列中所示。",
+						"每当你在这个职业中获得一个等级时，你可以用另一个招式替换你已经掌握的一个招式。 (class)"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superiority Dice",
+					"page": 3,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。\n\n你有一个特殊的骰子叫做优势骰子，如战士表中的优势骰子列所示。你有一组这些骰子可用，如该表中的优势池列所示。每当你使用一个战技时，你会消耗一个优势骰子。当你完成短暂休息或长休息时，你会恢复所有已消耗的骰子。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"page": 3,
+					"entries": [
+						"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你的一些战技需要目标进行豁免才能抵抗该战技的效果。豁免 DC 的计算方法如下：",
+						{
+							"type": "abilityDc",
+							"name": "Maneuver",
+							"attributes": [
+								"str",
+								"dex"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Determination",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 2,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你不能失败，当每个人都依赖你时。在2级时，你可以取消你进行的攻击骰、能力检定或豁免投骰的劣势或惩罚。你可以使用此特性取消最多-5的惩罚。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你可以使用这个特性三次。在完成短休或长休后，你恢复所有已用次数。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n从第9级开始，您可以使用此特性一次同时取消您进行的列出骰投中的劣势和惩罚。"
+			]
+		},
+		{
+			"name": "Determination improvement",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 9,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n从第9级开始，您可以使用此特性一次同时取消您进行的列出骰投中的劣势和惩罚。"
+			]
+		},
+		{
+			"name": "Know Your Enemy",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/sundries/books/symbol-axe-gold-grey.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 3,
+			"level": 3,
+			"entries": [
+				"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n在第3级时，如果你花费至少10分钟通过观察、互动或战斗来审查一名生物，你可以收集关于其能力或态度的某些信息。进行一次DC 10洞察力检定。如果你通过了检定，你可以选择学习以下生物特征中的一个：",
+				{
+					"type": "list",
+					"items": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n如果其中一个能力值与你的相等、更高或更低。",
+						"如果它的护甲等级和生命值上限与你的相等、更高或更低，符合当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。",
+						"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你可以选择一个技能、工具、豁免投掷或武器熟练度，如果它的总修正值等于、优于或低于你的修正值。",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号中的内容。 \n\n弱点、抗性或免疫于你选择的伤害类型。",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。 \n\n任何举止、癖好和语调，以及它们的含义，如果有的话。",
+						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在英文后用 `()` 保留。\n\n是什么导致它转变为友好、漠不关心或敌对的态度。"
+					]
+				},
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你在检定结果超过 DC 后每获得 5 点，可以选择学习一个你选择的额外特性。你可以选择多次学习某项能力值或熟练项。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n一旦你在一个生物身上使用了这个特性，接下来的一个小时内不能再次对它使用。"
+			]
+		},
+		{
+			"name": "Martial Archetype",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 3,
+			"entries": [
+				"在第3级时，您选择一个您努力模仿的原型，以您的战斗风格和技巧为特色，所有详细信息都在课程描述的末尾。您的原型在第3级时授予您功能，并在第7、15和18级时再次授予功能。"
+			]
+		},
+		{
+			"name": "Martial Archetype feature",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 7,
+			"entries": [
+				"在第7级时，您将获得由您的武术流派授予的特性。"
+			]
+		},
+		{
+			"name": "Martial Archetype feature",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 15,
+			"entries": [
+				"在符合当地语言习惯的情况下，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n\n根据dnd running group规则，翻译应保留英文中的专有名词在翻译后用 `()` 括起来。\n\n在15级时，你将获得由你的战斗系别赋予的特性。"
+			]
+		},
+		{
+			"name": "Martial Archetype feature",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 18,
+			"entries": [
+				"在符合当地语言习惯的情况下，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n\n根据dnd running group规则，翻译应保留英文中的专有名词，用 `()` 括起来。\n\n在18级时，你将获得由你的武术流派赋予的特性。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 4,
+			"entries": [
+				"当你达到第4级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与常规规则相同，你不能通过这个特性将某项能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n如果你的DM允许使用特长，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 6,
+			"entries": [
+				"当你达到第六级时，你可以将你选择的一个能力值提高2点，或者将你选择的两个能力值各提高1点。与平常一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n如果你的DM允许使用特长，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 8,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当你达到第8级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与正常规则一样，使用此特性不能将能力值提高到20点以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n如果你的DM允许使用特长，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 10,
+			"entries": [
+				"当你达到第10级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与平常一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n如果你的DM允许使用特长，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 12,
+			"entries": [
+				"当你达到12级时，你可以将你选择的一个能力值提高2点，或者将你选择的两个能力值各提高1点。与平常一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n如果你的DM允许使用特长，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 16,
+			"entries": [
+				"当你达到第16级时，你可以将你选择的一个能力值提高2点，或者将你选择的两个能力值各提高1点。与平常一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n如果你的DM允许使用特长，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 20,
+			"entries": [
+				"当你达到20级时，你可以选择将一个能力值提高2点，或者将两个能力值提高1点。与平常一样，你不能通过这个特性将一个能力值提高到20以上。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n如果你的DM允许使用特长，你可以选择取一个 {@5etools feat|feats.html}。"
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+			"page": 4,
+			"level": 5,
+			"entries": [
+				"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n从5级开始，每当你在你的回合上执行 {@action Attack} 动作时，你可以攻击两次，而不是一次。",
+				"在这个职业中，当你达到11级时，攻击次数增加到三次，当你达到17级时，攻击次数增加到四次。 (class)"
+			]
+		},
+		{
+			"name": "Extra Attack (2)",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+			"page": 4,
+			"level": 11,
+			"entries": [
+				"在第11级时，每当你在你的回合上执行{@action Attack}动作时，你可以攻击三次。"
+			]
+		},
+		{
+			"name": "Extra Attack (3)",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/spear-tips-quintuple-orange.webp",
+			"page": 4,
+			"level": 17,
+			"entries": [
+				"在第17级时，每当你在你的回合上执行{@action Attack}动作时，你可以攻击三次。"
+			]
+		},
+		{
+			"name": "Combat Expertise",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/hand-grip-staff-teal.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 5,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你了解了你的战斗风格的优势和劣势。在5级时，每当你使用力量、敏捷或体质进行对抗检定时，你在该检定上获得优势。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你对任何与战斗有关的历史都着迷。每当你进行与战斗或冒险相关的智力（历史）检定时，你被视为精通该技能，并将你的熟练加值翻倍加到检定中，而不是你正常的熟练加值。"
+			]
+		},
+		{
+			"name": "Relentless",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/skills/wounds/injury-pain-body-orange.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 14,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n从14级开始，当你投掷先攻骰并且没有剩余的优势骰时，你会恢复 1 个优势骰。当你或盟友获得暴击或你成功进行豁免投骰时，你也会恢复一个优势骰。"
+			]
+		},
+		{
+			"name": "Knowledge Advantage",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 19,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n他们说知道是战斗的一半，但只有少数人能利用他们的知识获得优势。在19级时，当你使用你的 {@classFeature Know Your Enemy|Fighter Rework|DZC:ANA:F|3|DZC:ANA:F} 时，你可以将目标指定为你的主要目标，持续8小时。在此期间，你在回忆有关他们的信息的能力检查中具有优势，而你的目标不能对你进行攻击检定、能力检定或拯救豁免检定时获得优势。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd running group 规则，专有名词在翻译后应在 `()` 中保留英文。\n\n如果你看到某生物的尸体，或者指定另一个生物为你的主要目标，那么该生物将不再是你的主要目标。"
+			]
+		},
+		{
+			"name": "Legendary Warrior",
+			"source": "DZC:ANA:F",
+			"foundryImg": "icons/skills/melee/weapons-crossed-swords-purple.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"level": 20,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你已经达到了职业生涯的巅峰，成为了一个前所未见的冒险者。在20级时，每当你使用一个优势骰时，你获得+5的奖励加到你用于该投掷的点数上，并获得5点临时生命值。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n此外，当你完成一次长休后，你可以选择你已掌握的任意一项战斗技能，并用另一项技能替换它。"
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Swift Hands",
+			"source": "DZC:ANA:F",
+			"page": 0,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:MT"
+			],
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n您可以进行额外的物品互动，您可以专门用来绘画、刻印或存放武器。"
+			]
+		},
+		{
+			"name": "Crushing Blow",
+			"source": "DZC:ANA:F",
+			"page": 0,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:MT"
+			],
+			"entries": [
+				"当你用造成钝击伤害的武器攻击命中一名生物时，你可以对目标施加一次力量豁免检定。豁免 DC 等于 8 + 你的熟练加值 + 你的力量修正值。如果未通过豁免检定，该生物被击倒{@condition prone}。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你可以使用这项技能的次数等于你的熟练加值。在你完成短暂休息或长时间休息后，你将恢复所有已用次数。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
+				"activation.cost": 1,
+				"uses.per": "sr",
+				"uses.max": "@prof",
+				"uses.value": 1,
+				"actionType": "save",
+				"save.ability": "str",
+				"save.scaling": "str"
+			}
+		},
+		{
+			"name": "Poker",
+			"source": "DZC:ANA:F",
+			"page": 0,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:MT"
+			],
+			"entries": [
+				"当你用一把造成穿刺伤害的武器击中一名生物时，你可以让该生物在其下一个回合结束前对攻击骰投掷时处于劣势状态。 (piercing damage)",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你可以使用这项技能的次数等于你的熟练加值。在你完成短暂休息或长时间休息后，你将恢复所有已用次数。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
+				"activation.cost": 1,
+				"uses.per": "sr",
+				"uses.max": "@prof",
+				"uses.value": 1
+			}
+		},
+		{
+			"name": "Bleeding",
+			"source": "DZC:ANA:F",
+			"page": 0,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:MT"
+			],
+			"entries": [
+				"当你用造成劈砍伤害的武器攻击命中一名生物时，你可以让该生物流血，直到其下一个回合开始为止，它会受到等同于你的技术骰子点数的劈砍伤害。该生物接受的下一次治疗会停止流血，但不会从中恢复生命值。这个技能对构造体和不死生物无效。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你可以使用这项技能的次数等于你的熟练加值。在你完成短暂休息或长时间休息后，你将恢复所有已用次数。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
+				"activation.cost": 1,
+				"uses.per": "sr",
+				"uses.max": "@prof",
+				"uses.value": 1,
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
+						"slashing"
+					]
+				]
+			}
+		},
+		{
+			"name": "Changing Weapons",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:WS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的英文。\n\t\t\t\t\t\n你学会了 {@optfeature Swift Hands|DZC:ANA:F} 的技能。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Swift Hands|DZC:ANA:F"
+				}
+			]
+		},
+		{
+			"name": "Bludgeoning Weapons",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:WS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\t\t\t\t\t\n你学会了 {@optfeature Crushing Blow|DZC:ANA:F} 技巧。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Crushing Blow|DZC:ANA:F"
+				}
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
+				"activation.cost": 1,
+				"uses.per": "sr",
+				"uses.max": "@prof",
+				"uses.value": 1,
+				"actionType": "save",
+				"save.ability": "str",
+				"save.scaling": "str"
+			}
+		},
+		{
+			"name": "Piercing Weapons",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:WS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你学会了 {@optfeature Poker|DZC:ANA:F} 技能。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Poker|DZC:ANA:F"
+				}
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
+				"activation.cost": 1,
+				"uses.per": "sr",
+				"uses.max": "@prof",
+				"uses.value": 1
+			}
+		},
+		{
+			"name": "Slashing Weapons",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:WS"
+			],
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在英文后用 `()` 保留。\n\n你学会了 {@optfeature Bleeding|DZC:ANA:F} 技巧。",
+				{
+					"type": "refOptionalfeature",
+					"optionalfeature": "Bleeding|DZC:ANA:F"
+				}
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
+				"activation.cost": 1,
+				"uses.per": "sr",
+				"uses.max": "@prof",
+				"uses.value": 1,
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
+						"slashing"
+					]
+				]
+			}
+		},
+		{
+			"name": "Shield",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:AS"
+			],
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你可以在投掷先攻骰时（无需行动）装备盾牌，但会导致你的先攻骰面临-3的惩罚。"
+			]
+		},
+		{
+			"name": "Light Armor",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:AS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。 \n\n如果你受到致命攻击，或者受到足以将你的生命值降至 0 点的伤害，你可以选择摧毁你穿着的轻甲，将该次伤害降至 0 点。"
+			]
+		},
+		{
+			"name": "Medium Armor",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:AS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你在穿着中甲时，可以将你的敏捷调整值对护甲等级的加值增加1。"
+			]
+		},
+		{
+			"name": "Heavy Armor",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:AS"
+			],
+			"entries": [
+				"佩戴重型盔甲时，你受到的钝击、穿刺和斩击伤害减少3点。 (bludgeoning, piercing, slashing)"
+			]
+		},
+		{
+			"name": "Durability",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:PS"
+			],
+			"entries": [
+				"在你的回合开始时，如果你的生命值少于最大生命值，你可以深呼吸来恢复体力。当你这样做时，你获得一定数量的临时生命值，等于1d10 + 你的体质调整值（最少为1）。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n一旦你使用了这个特性，你必须进行短休或长休才能再次使用它。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "At the start of your turn, if you have less than your maximum hit points",
+				"activation.cost": 1,
+				"actionType": "healing",
+				"damage.parts": [
+					[
+						"1d10 + @abilities.con.mod",
+						"temphp"
+					]
+				]
+			}
+		},
+		{
+			"name": "Perseverance",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:PS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n有足够的时间，你可以在最高的山脉中开辟一条道路。从 {@condition prone} 起身只需花费你 10 英尺的移动。"
+			]
+		},
+		{
+			"name": "Stamina",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:PS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n你可以暂时忽略身体的疲劳。当你进行先攻骰时，如果你有 {@condition exhaustion} 状态，你可以选择在战斗持续期间将其级别降低一级，或直到你失去意识。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n一旦你使用了这个特性，你必须进行短休或长休才能再次使用它。"
+			]
+		},
+		{
+			"name": "Unyielding",
+			"source": "DZC:ANA:F",
+			"page": 3,
+			"foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+				"DZC:CS:PS"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n如果你在 0 点生命值开始你的回合，你可以选择以牺牲一级 {@condition exhaustion} 的代价恢复 1 点生命值。"
+			]
+		},
+		{
+			"name": "Ambush",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n当你进行敏捷度检定 ({@skill Stealth}) 或先攻骰时，你可以消耗一个优势骰，并将该骰子加到检定中，前提是你不是 {@condition incapacitated}。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a Dexterity (Stealth) check or an initiative roll",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to skill check"
+			}
+		},
+		{
+			"name": "Bait and Switch",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你在你的回合内与一个生物相距5英尺以内时，你可以消耗一个优势骰并与该生物交换位置，前提是你至少花费5英尺的移动并且该生物愿意且不是{@condition incapacitated}。这次移动不会引发机会攻击。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n投掷优势骰。直到你的下一个回合开始，你或另一生物（你选择）的AC获得等同于所投骰子点数的加值。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you're within 5 feet of a creature on your turn",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to AC"
+			}
+		},
+		{
+			"name": "Brace",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你能看见的生物移动到你所持的近战武器的攻击范围内时，你可以使用你的反应消耗一个优势骰，并对该生物进行一次攻击，使用该武器。如果攻击命中，将优势骰加到武器的伤害骰中。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When a creature you can see moves into your reach",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Commanding Presence",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n\n当你进行魅力检定（{@skill Intimidation}）、魅力检定（{@skill Performance}）或魅力检定（{@skill Persuasion}）时，你可以消耗一个优越骰，并将该优越骰加到这次能力检定中。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to skill check"
+			}
+		},
+		{
+			"name": "Commander's Strike",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"在你的回合中采取攻击动作时，你可以放弃其中一个攻击，并使用一个奖励动作指挥你的一个同伴进行攻击。当你这样做时，请选择一个可以看到或听到你的友好生物，并消耗一个优势骰。该生物可以立即使用其反应进行一次武器攻击，将优势骰添加到攻击的伤害骰中。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action",
+				"activation.condition": "When you take the Attack action on your turn and forgo one attack",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Disarming Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，你可以消耗一个优势骰来尝试解除目标的武器，迫使其放下你选择的一个物品。你将优势骰加到攻击的伤害骰上，目标必须进行一次力量豁免投骰。如果未通过豁免，它会放下你选择的物品。该物品落在它的脚下。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+				"save.ability": "str"
+			}
+		},
+		{
+			"name": "Distracting Strike",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"符合当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号 `()`。\n\n当你用武器攻击命中一名生物时，你可以消耗一个优势骰来分散该生物的注意力，为你的盟友创造机会。你将优势骰加到攻击的伤害骰中。除你以外的攻击者对该目标进行的下一次攻击投掷获得优势，如果攻击在你的下一个回合开始之前进行。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Evasive Footwork",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n当你移动时，你可以消耗一个优势骰，掷骰并将掷出的数字加到你的AC上，直到你停止移动。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you move",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to AC"
+			}
+		},
+		{
+			"name": "Feinting Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你可以消耗一个优势骰并在你的回合使用一个奖励动作来佯攻，选择你周围5英尺内的一个生物作为目标。你对该生物在本回合内的下一次攻击投掷获得优势。如果该攻击命中，将优势骰添加到攻击的伤害投掷中。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Goading Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你用武器攻击一个生物时，你可以消耗一个优势骰来试图激怒目标攻击你。你将优势骰加到攻击的伤害骰上，目标必须进行一次感知豁免投骰。如果未通过豁免，目标在你的下一个回合结束前对除你以外的目标的所有攻击投骰都有劣势。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+				"save.ability": "wis"
+			}
+		},
+		{
+			"name": "Grappling Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"在你的回合用近战攻击命中生物后，你可以消耗一个优势骰，然后尝试作为一个奖励动作将目标制服。将优势骰加到你的力量检定中。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action",
+				"activation.condition": "Immediately after you hit a creature with a melee attack on your turn",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to skill check"
+			}
+		},
+		{
+			"name": "Lunging Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"在你的回合进行近战武器攻击时，你可以消耗一个优势骰来增加该攻击的射程5英尺。如果命中，你将优势骰加到攻击的伤害骰上。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Maneuvering Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，你可以消耗一个优势骰来操纵你的一个同伴进入更有利的位置。你将优势骰加到攻击的伤害骰上，并选择一个可以看到或听到你的友好生物。该生物可以使用其反应移动最多其速度一半的距离，而不会招致你攻击目标的机会攻击。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Menacing Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，你可以消耗一个优势骰来尝试吓唬目标。你将优势骰加到攻击的伤害骰中，目标必须进行一次感知豁免投骰。如果未通过豁免，它将对你感到恐惧，直到你的下一个回合结束为止。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+				"save.ability": "wis"
+			}
+		},
+		{
+			"name": "Indomitable",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你未能通过豁免检定时，你可以使用你的反应并消耗一个优势骰来将其添加到投掷中，有可能使豁免成功。 (saving throw)"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When you fail a saving throw",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to saving throw"
+			}
+		},
+		{
+			"name": "Parry",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n当另一个生物用近战攻击对你造成伤害时，你可以使用你的反应并消耗一个优势骰来减少伤害值，减少的值为你在优势骰上投掷的数字加上你的敏捷调整值。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When another creature damages you with a melee attack",
+				"actionType": "healing",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2)) + @abilities.dex.mod",
+						"healing"
+					]
+				]
+			}
+		},
+		{
+			"name": "Precision Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你对生物进行武器攻击检定时，你可以消耗一个优势骰来将其加到检定中。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make a weapon attack roll against a creature",
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon attack roll"
+			}
+		},
+		{
+			"name": "Pushing Attack",
+			"source": "DZC:ANA:F",
+			"page": 7,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你用武器攻击一个比你大不超过一个尺寸的生物时，你可以消耗一个优势骰来试图将目标击退。你将优势骰加到攻击的伤害骰上，如果目标是大型或更小，它必须进行一次力量豁免投骰。如果未通过豁免，你可以将目标推开多达10英尺。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+				"save.ability": "str"
+			}
+		},
+		{
+			"name": "Quick Toss",
+			"source": "DZC:ANA:F",
+			"page": 8,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n作为一个额外动作，你可以消耗一个优势骰并用具有投掷属性的武器进行远程攻击。你可以在进行这次攻击时拔出武器。如果命中，将优势骰加到武器的伤害点数上。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Rally",
+			"source": "DZC:ANA:F",
+			"page": 8,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"在你的回合，你可以使用一个奖励动作并消耗一个优势骰来增强你其中一位同伴的决心。当你这样做时，请选择一个可以看到或听到你的友好生物。该生物获得临时生命值，数值等于优势骰的点数加上你的魅力调整值。 (Charisma)"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action",
+				"activation.cost": 1,
+				"actionType": "healing",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2)) + @abilities.cha.mod",
+						"temphp"
+					]
+				]
+			}
+		},
+		{
+			"name": "Riposte",
+			"source": "DZC:ANA:F",
+			"page": 8,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当一只生物用近战攻击未击中你时，你可以使用你的反应并消耗一个优势骰来对该生物进行一次近战武器攻击。如果你命中，你将优势骰添加到攻击的伤害骰中。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When a creature misses you with a melee attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+			}
+		},
+		{
+			"name": "Slowing Attack",
+			"source": "DZC:ANA:F",
+			"page": 8,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，你可以消耗一个优势骰来尝试减少该生物的速度。掷出你的优势骰。生物必须在一次体质豁免扑克中成功，否则其速度将减少相当于你的优势骰上掷数乘以5英尺的距离。这个效果持续到你的下一个回合开始。如果这个技能将一名生物的速度减少到0，它在持续时间内变为{@condition restrained}。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a melee weapon attack",
+				"activation.cost": 1,
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"5*1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Speed reduced in feet",
+				"save.ability": "con"
+			}
+		},
+		{
+			"name": "Sweeping Attack",
+			"source": "DZC:ANA:F",
+			"page": 8,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"符合当地语言习惯，并且像(%num%)这样的文本在翻译中应该仍然输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当你用近战武器攻击命中一名生物时，你可以消耗一个优势骰来尝试对另一名生物造成伤害。选择原始目标附近5英尺内并且在你攻击范围内的另一名生物。如果原始攻击命中第二名生物，它受到等同于你在优势骰上掷出的数字的伤害。伤害类型与原始攻击造成的相同。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a melee weapon attack",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Weapon damage roll"
+			}
+		},
+		{
+			"name": "Tactical Assessment",
+			"source": "DZC:ANA:F",
+			"page": 8,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n\n当你进行智力检定（Intelligence {@skill Investigation}）、智力检定（Intelligence {@skill History}）或感知检定（Wisdom {@skill Insight}）时，你可以消耗一个优势骰，并将该优势骰加到这次能力检定中。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check",
+				"activation.cost": 1,
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to skill check"
+			}
+		},
+		{
+			"name": "Trip Attack",
+			"source": "DZC:ANA:F",
+			"page": 8,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"consumes": {
+				"name": "Superiority Die",
+				"amount": 1
+			},
+			"featureType": [
+				"DZC:M"
+			],
+			"entries": [
+				"当你用武器攻击命中一名生物时，你可以消耗一个优势骰来尝试击倒目标。你将优势骰加到攻击的伤害骰中，如果目标是大型或更小，它必须进行一次力量豁免投骰。如果未通过豁免，你将击倒目标{@condition prone}。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you hit a creature with a weapon attack",
+				"actionType": "save",
+				"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+					]
+				],
+				"rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+				"save.ability": "dex"
+			}
+		},
+		{
+			"name": "Abjuration",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n一只生物不能被迫解除这个武器。"
+			]
+		},
+		{
+			"name": "Conjuration",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。\n\n你可以作为一个奖励动作将你的绑定武器召唤到你的手中，使其立即传送到你的手中。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			}
+		},
+		{
+			"name": "Divination",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"当你使用你的绑定武器进行攻击投掷出1时，你可以重新投掷这个骰子。你必须使用新的结果。"
+			]
+		},
+		{
+			"name": "Enchantment",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n如果你用你的结合武器击中一个生物，它在你的下一个回合结束前对你施放的法术造成 {@condition charmed} 或 {@condition frightened} 的下一个豁免检定时，会受到劣势。"
+			]
+		},
+		{
+			"name": "Evocation",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n当你使用你的结缘武器进行攻击时，你可以将其伤害类型更改为酸、冰、火、闪电或雷霆。"
+			]
+		},
+		{
+			"name": "Illusion",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n每个回合中，当你使用你的每一把结缘武器进行攻击时，你会制造一个攻击的幻影，让你在攻击检定中获得优势。如果生物无法看见、依赖于视觉以外的感官，或者能够感知幻觉为虚假，那么它不受这个特性的影响。"
+			]
+		},
+		{
+			"name": "Necromancy",
+			"source": "DZC:ANA:F",
+			"page": 6,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"当你用你的结缘武器进行攻击将一只生物的生命值降至0时，你会获得临时生命值，数值等同于你的智力调整值（最少为1）。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"activation.condition": "When you reduce a creature to 0 hit points with an attack made with your bonded weapons",
+				"actionType": "healing",
+				"damage.parts": [
+					[
+						"@abilities.int.mod",
+						"temphp"
+					]
+				]
+			}
+		},
+		{
+			"name": "Transmutation",
+			"source": "DZC:ANA:F",
+			"page": 6,
+			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+			],
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n作为一个额外动作，你可以将你的光绑定武器变成重型武器，反之亦然。或者，如果初始没有该属性，你可以向你的绑定武器中添加或移除该属性。"
+			],
+			"foundrySystem": {
+				"activation.type": "bonus action"
+			}
+		}
+	],
+	"subclass": [
+		{
+			"name": "Champion",
+			"shortName": "Champion",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/skills/melee/strike-sword-slashing-red.webp",
+			"subclassFeatures": [
+				"Champion|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|3",
+				"Remarkable Athlete|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|7",
+				"Improved Critical|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|7",
+				"Diamond Body|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|15",
+				"Improved Critical|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|15",
+				"Survivor|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|18",
+				"Improved Critical|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|18"
+			]
+		},
+		{
+			"name": "Arcane Knight",
+			"shortName": "Arcane Knight",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "icons/magic/unholy/hand-weapon-glow-black-green.webp",
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"preparedSpells": "<$level$>/3 + <$int_mod$>",
+			"cantripProgression": [
+				0,
+				0,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"subclassSpells": [
+				{
+					"className": "Fighter",
+					"classSource": "PHB",
+					"subclassName": "Eldritch Knight",
+					"subclassSource": "PHB"
+				}
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=Wizard"
+							},
+							{
+								"all": "level=1|class=Wizard"
+							}
+						],
+						"7": [
+							{
+								"all": "level=2|class=Wizard"
+							}
+						],
+						"13": [
+							{
+								"all": "level=3|class=Wizard"
+							}
+						],
+						"19": [
+							{
+								"all": "level=4|class=Wizard"
+							}
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Eldritch Knight",
+							"source": "PHB"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=Fighter Rework: Arcane Knight}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Arcane Knight",
+							"source": "DZC:ANA:F"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
+						"{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
+						"{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
+						"{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Arcane Knight|Fighter Rework|DZC:ANA:F|Arcane Knight|DZC:ANA:F|3",
+				"War Magic|Fighter Rework|DZC:ANA:F|Arcane Knight|DZC:ANA:F|7",
+				"Arcane Charge|Fighter Rework|DZC:ANA:F|Arcane Knight|DZC:ANA:F|15",
+				"War Magic improvement|Fighter Rework|DZC:ANA:F|Arcane Knight|DZC:ANA:F|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Champion",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n一个冠军是任何人一想到战士时脑海中首先浮现的东西，一个通过压倒性的身体优势击败强大敌人的英雄。这些战士没有任何特殊能力，因此他们不停地训练，使自己的身体达到超越人类可能的极限。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Improved Critical|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Physical Expertise|Fighter Rework|DZC:ANA:F|Champion|DZC:ANA:F|3"
+				}
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd游戏组规则，专有名词在翻译后应保留英文括号`()`。 \n\n从3级开始，你的武器攻击在掷骰得到19时也会造成暴击。在7级时，它们在掷骰得到18时也会造成暴击，在15级时为17，在18级时为16。"
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n\n根据 DND 跑团规则，从第 7 级开始，你的武器攻击在掷骰子得到 18-20 时造成暴击。"
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"从第15级开始，您的武器攻击在掷骰子点数为17-20时造成暴击。 (Starting at 15th level, your weapon attacks score a critical hit on a roll of 17-20.)"
+			]
+		},
+		{
+			"name": "Improved Critical",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n从18级开始，你的武器攻击在掷骰得到16-20时造成暴击。"
+			]
+		},
+		{
+			"name": "Physical Expertise",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n在第三级时，你专注的体能训练开始见效。如果你还没有，你会获得在体操和竞技运动方面的熟练。对于任何使用这些技能的能力检定，你的熟练加值会加倍。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n此外，您的跳跃距离增加的英尺数应等于您的熟练加值的五倍。"
+			],
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"acrobatics": true
+				}
+			]
+		},
+		{
+			"name": "Remarkable Athlete",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"在第7级时，您可以将您的熟练加值的一半（四舍五入）添加到您进行的任何不已经使用您的熟练加值的力量、敏捷或体质检定中。",
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n此外，攀爬和游泳不会额外消耗你的移动力。"
+			]
+		},
+		{
+			"name": "Diamond Body",
+			"source": "DZC:ANA:F",
+			"page": 4,
+			"foundryImg": "icons/magic/control/encase-creature-humanoid-hold.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级时，你的身体能够承受可怕的攻击。当一只生物对你造成重击时，你可以使用你的反应将其转变为普通命中。",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n一旦你使用了这个特性，你必须进行短休或长休才能再次使用它。"
+			],
+			"foundrySystem": {
+				"activation.type": "reaction",
+				"activation.condition": "When a creature scores a critical hit against you",
+				"activation.cost": 1,
+				"uses.per": "sr",
+				"uses.max": "1"
+			}
+		},
+		{
+			"name": "Survivor",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA:F",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级时，你在战斗中达到了韧性的顶峰。在你的每个回合开始时，如果你的生命值不超过一半，你会回复相当于5 + 你的体质调整值的生命值。如果你的生命值为0，你不会获得这个好处。"
+			]
+		},
+		{
+			"name": "Arcane Knight",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA:F",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n一些战士将魔法融入他们的学习中，成为奥术骑士。因此，他们入学巫师学院或选择一位巫师作为导师。奥术骑士研究魔法以扩展他们的能力范围，以增加他们的适应性和多样性。然而，由于他们魔法研究的次要性质，他们选择了一种强化而非广泛的方法。因此，他们只选择了几种魔法学派进行学习，然后记住这些学派中的几个法术。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Schools of Magic|Fighter Rework|DZC:ANA:F|Arcane Knight|DZC:ANA:F|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Fighter Rework|DZC:ANA:F|Arcane Knight|DZC:ANA:F|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Weapon Bond|Fighter Rework|DZC:ANA:F|Arcane Knight|DZC:ANA:F|3"
+				}
+			]
+		},
+		{
+			"name": "Schools of Magic",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "icons/skills/trades/academics-book-study-purple.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA:F",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n当你选择这个传统时，你必须选择你的角色将学习的两个魔法学派。这些学派是{@filter Abjuration|spells|subclass=Fighter: Eldritch Knight|school=a}，{@filter Conjuration|spells|subclass=Fighter: Eldritch Knight|school=c}，{@filter Divination|spells|subclass=Fighter: Eldritch Knight|school=d}，{@filter Enchantment|spells|subclass=Fighter: Eldritch Knight|school=e}，{@filter Evocation|spells|subclass=Fighter: Eldritch Knight|school=v}，{@filter Illusion|spells|subclass=Fighter: Eldritch Knight|school=i}，{@filter Necromancy|spells|subclass=Fighter: Eldritch Knight|school=n}，和{@filter Transmutation|spells|subclass=Fighter: Eldritch Knight|school=t}。每当这个子类中的特性提到你的魔法学派时，它指的是你选择的那些。"
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "icons/magic/light/beam-rays-teal-large.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA:F",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"当你达到第三级时，你可以通过施法来增强你的武术能力。 (When you reach 3rd level, you can enhance your martial prowess through spellcasting.)",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"page": 5,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你可以从巫师法术清单中选择三个你喜欢的零级法术。在第十级时，你可以再学习一个符合相同限制的零级法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"page": 5,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n《奥术骑士施法表》显示了你有多少法术位可以施放1级及更高级别的巫师法术。要施放这些法术之一，你必须消耗一个等级不低于该法术等级的法术位。当你完成一次长休后，你会恢复所有已消耗的法术位。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known",
+					"page": 5,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中应该仍然输出为 (%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n你知道一些你可以施放的巫师法术。你选择的法术必须来自你在巫师法术列表上的魔法学派。你知道的巫师法术数量等于你的智力调整值加上你的战士等级的三分之一（最少一个法术）。",
+						"每当你在这个职业中获得一个等级时，你可以用另一个你选择的符合相同限制的法师法术来替换你已经掌握的一个法术。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known",
+					"page": 5,
+					"entries": [
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n智力是你作为巫师法术的施法能力，因为你通过学习和记忆来学习法术。每当一个法术提到你的施法能力时，你都会使用你的智力。此外，当你施放巫师法术并设置豁免 DC 时，以及进行攻击检定时，你会使用你的智力修正值。",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Weapon Bond",
+			"source": "DZC:ANA:F",
+			"page": 5,
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-teal.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA:F",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保持为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n在第三级时，你学会了一种仪式，可以在你和一把武器之间建立一种魔法联系。你需要在1小时内完成这个仪式，可以在短暂休息期间完成。整个仪式中武器必须在你的触及范围内，仪式结束时，你触摸武器并建立联系。",
+				"一旦你将武器与自己绑定，它将成为你的奥术焦点，并根据你的魔法学派获得特殊属性，每个属性如下所述，只要它与你在同一存在平面上。如果你的武器不再与你绑定，或者你失去意识，这些属性将结束。 (arcane focus)",
+				"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。 \n\n你最多可以拥有两把绑定武器。如果你尝试与第三把武器绑定，你必须解除与其他两把武器中的一把的绑定。",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Abjuration|DZC:ANA:F"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuration|DZC:ANA:F"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Divination|DZC:ANA:F"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Enchantment|DZC:ANA:F"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Evocation|DZC:ANA:F"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Illusion|DZC:ANA:F"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Necromancy|DZC:ANA:F"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Transmutation|DZC:ANA:F"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "War Magic",
+			"source": "DZC:ANA:F",
+			"page": 6,
+			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA:F",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中应保持为(%num%)。\n- 翻译需遵守dnd running group规则，专有名词在翻译后应在`()`中保留英文。\n\n从第7级开始，当你使用动作施放一个cantrip时，你可以作为奖励动作进行一次武器攻击。在第18级时，当你使用动作施放任何法术时，你可以进行这个特殊攻击。"
+			]
+		},
+		{
+			"name": "War Magic improvement",
+			"source": "DZC:ANA:F",
+			"page": 6,
+			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA:F",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"在第18级时，当你使用动作施放任何法术时，你可以进行这个特殊攻击。"
+			]
+		},
+		{
+			"name": "Arcane Charge",
+			"source": "DZC:ANA:F",
+			"page": 6,
+			"foundryImg": "icons/skills/ranged/projectile-explosion-black-orange.webp",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA:F",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"在第15级时，你学会了如何将剩余的魔法储存在你体内，称为奥术充能。如果你用武器攻击命中一名生物，你可以消耗你的奥术充能来施展以下效果之一：",
+				{
+					"type": "list",
+					"items": [
+						"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n- 翻译遵守 dnd 运行组规则，专有名词在翻译后应保留英文括号内的内容。\n\n该生物在你的下一个回合结束前对一个咒语的下一个豁免检定有劣势。",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。 \n\n你可以传送到你能看到的一个未被占据的空间，最多 30 英尺，获得在你的回合结束前进行下一次武器攻击时的优势。"
+					]
+				}
+			],
+			"foundrySystem": {
+				"uses.per": "sr",
+				"uses.max": "1"
+			}
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"name": "Warrior's Training",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"level": 1,
+			"subEntities": {
+				"item": [
+					{
+						"name": "Unarmed Strike",
+						"source": "DZC:ANA:F",
+						"page": 1,
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1 + @abilities.str.mod",
+									"bludgeoning"
+								]
+							],
+							"ability": "default",
+							"properties": [
+								"fin",
+								"lgt"
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Combat Superiority",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"level": 2,
+			"system": {
+				"uses.per": "sr",
+				"uses.max": "ceil(@classes.fighter-rework.levels/3) + 3"
+			}
+		},
+		{
+			"name": "Improved Critical",
+			"source": "DZC:ANA:F",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA:F",
+			"level": 3,
+			"effects": [
+				{
+					"name": "Improved Critical",
+					"changes": [
+						{
+							"key": "flags.dnd5e.weaponCriticalThreshold",
+							"mode": "OVERRIDE",
+							"value": "@scale.fighter-rework.imp-crit"
+						}
+					],
+					"transfer": true
+				}
+			]
+		}
+	],
+	"classFluff": [
+		{
+			"name": "Fighter Rework",
+			"source": "DZC:ANA:F",
+			"entries": [
+				{
+					"type": "section",
+					"name": "Fighter",
+					"page": 1,
+					"source": "DZC:ANA:F",
+					"entries": [
+						"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n一位穿着全副金属盔甲的惊艳半兽人站在她的伙伴旁边，举起盾牌保护他们。她站在他们的前面，尽力吸收最多的伤害，阻止冰小恶魔冻结她的盟友。她希望通过这种牺牲行为获得骑士团的认可，并赢得贵族家族的青睐。",
+						"乍一看，他看起来不过是一个普通的暴徒，那个黑暗精灵坐在吧台前，扫视着聚集在这家店里的人们，寻找看起来最凶恶的雇佣兵，观察着他们的每一个动作。当他们注意到他在监视他们时，他们决定不喜欢这个家伙，于是决定把他赶出去。他们没有意识到的是，那个精灵正在研究他们的每一个弱点，这将导致他们的灭亡。",
+						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n一位经验丰富的将军在战斗中指挥他的小队行动，调整他们的位置，协调他们的进攻，并保护他们免受大部分危险，以便他们能够尽可能高效。他被选中并非因为他在战斗中的技能，而是因为他是领导领域的专家、战术天才，并且在看似不可能取胜的战争中取得成功。",
+						"所有这些史诗般的战士都是战士，是世界上最多才多艺的战士之一。由于他们缺乏任何超自然的力量，他们培养自己的武术才能，以超越凡人的极限，以至于他们以在任何战斗领域的高超能力而闻名，无论是挥舞武器进行破坏性目的，还是通过了解敌人的弱点。",
+						{
+							"type": "entries",
+							"name": "Well-Rounded Specialist",
+							"page": 1,
+							"entries": [
+								"战士学习所有战斗风格的基础知识。每个战士都可以挥舞斧头，用西洋剑击剑，挥舞长剑或巨剑，使用弓箭，甚至用一定技巧困住敌人。同样，战士擅长使用盾牌和各种盔甲。除了这种基本的熟悉程度外，每个战士还专精于某种战斗风格，这是由他们成为战士的途径所定义的。有些人专注于射箭，有些人专攻埋伏不知情的受害者，还有些人通过魔法增强他们的武术技能。这种广泛的一般能力和广泛的专业化结合使得战士在战场和地牢中都是出色的战斗者。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Trained for Danger",
+							"page": 1,
+							"entries": [
+								"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n并非每位城市守卫、村庄民兵或女王军队成员都是战士。这些部队中大多数是相对未经训练的士兵，只具备最基本的战斗知识。资深士兵、军官、训练有素的保镖、专注的骑士以及类似的人物才是战士。然而，任何具备正确技能和心态的人都可以发展自己的才能成为战士。",
+								"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n有些战士感觉被吸引，想要将他们的训练用作冒险者。在冒险者中普遍存在的地牢探险、怪物屠杀和其他危险工作对于战士来说是与他们离开的生活并无太大不同的第二天性。也许存在更大的风险，但也有更大的回报\u2014\u2014比如，在城市警卫队中很少有战士有机会发现一把魔法火舌剑。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Fighter",
+							"page": 2,
+							"entries": [
+								"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n在打造你的战士时，考虑你角色背景的两个相关元素：你从哪里获得了战斗训练，以及你与你周围平凡的战士有何不同？你是否特别残忍？你是否得到导师的额外帮助，也许是因为你非凡的奉献精神？是什么驱使你最初接受这种训练？对家园的威胁，对复仇的渴望，或者需要证明自己的需求都可能是因素。",
+								"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd游戏组规则，专有名词在翻译后应保留英文括号`()`。\n\n你可能在贵族军队或当地民兵中接受过正规训练。也许你曾在战争学院接受训练，学习战略、战术和军事历史。或许你是自学成才\u2014\u2014虽然未经打磨但经过了充分的考验。你是拿起剑来逃离农场生活的限制，还是在延续一项光荣的家族传统？你是在哪里获得你的武器和盔甲的？它们可能是军用配发的，也可能是家传 rellooms，或者你也许为了多年后才买得起它们而省吃俭用。你的武器装备现在是你最重要的财产之一\u2014\u2014是唯一能够让你躲过死亡之拥抱的东西。"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"page": 2,
+							"entries": [
+								"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n按照以下建议，您可以快速制作一名战士。首先，根据您想要专注近战还是远程武器，将力量或敏捷作为您的最高能力得分。您的次高得分应该是体质，或者如果您打算采用魔法子职业，则应选择智力。其次，选择 {@background soldier} 背景。",
+								{
+									"type": "inset",
+									"name": "Can I add this Bonus?",
+									"entries": [
+										"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n有时候，某些技能、特性或法术可以让你在攻击检定、能力检定或豁免检定中增加奖励，比如诗人的诗人灵感（Bardic Inspiration）、战争牧师的引导打击（Channel Divinity: Guided Strike）、*祝福*法术、武术技巧增强进攻等等。其他技能可以让你重新投掷那些骰子，比如醉拳师的醉汉幸运（Drunkard's Luck）。还有另一种类型的技能，比其他技能要稀有得多，那就是可以让你在行动、反应、骰子投掷等中添加特殊效果的技能，比如武僧的躲避气功特性（Evasion ki feature）。这些技能共同之处在于它们缺乏触发关键词，比如命中、成功、未命中或失败，这就是为什么你可以选择在看到骰子点数后使用它们，但在DM宣布骰子成功或失败之前。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
