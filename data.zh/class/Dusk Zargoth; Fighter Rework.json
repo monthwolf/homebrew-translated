@@ -3,7 +3,7 @@
 		"sources": [
 			{
 				"json": "DZC:ANA:F",
-				"abbreviation": "DZC:ANA:F",
+				"abbreviation": "DZC:ANA",
 				"full": "Fighter Rework",
 				"authors": [
 					"Dusk Zargoth"
@@ -17,18 +17,17 @@
 			}
 		],
 		"dateAdded": 1714935701,
-		"dateLastModified": 1714935701,
+		"dateLastModified": 1716449458,
 		"optionalFeatureTypes": {
 			"DZC:CS": "Fighter Rework; Combat Specialization",
 			"DZC:CS:WS": "Fighter Rework; Combat Specialization: Weapon Specialization",
 			"DZC:CS:AS": "Fighter Rework; Combat Specialization: Armor Specialization",
 			"DZC:CS:PS": "Fighter Rework; Combat Specialization: Physical Specialization",
 			"DZC:M": "Fighter Rework; Maneuvers",
-			"DZC:IC": "Fighter Rework; Improved Critical",
 			"DZC:WB": "Fighter Rework; Weapon Bond",
 			"DZC:MT": "DZC: Martial Techniques"
 		},
-		"_dateLastModifiedHash": "53f62715d4"
+		"_dateLastModifiedHash": "221b691423"
 	},
 	"class": [
 		{
@@ -57,6 +56,21 @@
 				],
 				"tools": [
 					"Choose one type of {@item artisan's tools|phb} or one kind of {@item vehicle|phb}"
+				],
+				"toolProficiencies": [
+					{
+						"anyArtisansTool": 1
+					},
+					{
+						"choose": {
+							"from": [
+								"vehicles (air)",
+								"vehicles (land)",
+								"vehicles (water)"
+							],
+							"count": 1
+						}
+					}
 				],
 				"skills": [
 					{
@@ -135,6 +149,17 @@
 			},
 			"optionalfeatureProgression": [
 				{
+					"name": "Warrior's Training",
+					"featureType": [
+						"DZC:CS"
+					],
+					"progression": {
+						"1": 2,
+						"9": 3,
+						"13": 4
+					}
+				},
+				{
 					"name": "Maneuvers",
 					"featureType": [
 						"DZC:M"
@@ -161,29 +186,6 @@
 						10,
 						10
 					]
-				},
-				{
-					"name": "Warrior's Training",
-					"featureType": [
-						"DZC:CS"
-					],
-					"progression": {
-						"1": 2,
-						"9": 3,
-						"13": 4
-					}
-				},
-				{
-					"name": "Improved Critical",
-					"featureType": [
-						"DZC:IC"
-					],
-					"progression": {
-						"3": 19,
-						"7": 18,
-						"15": 17,
-						"18": 16
-					}
 				}
 			],
 			"foundryAdvancement": [
@@ -215,7 +217,7 @@
 					"colLabels": [
 						"Superiority Pool",
 						"Superiority Dice",
-						"Maneuvers"
+						"Maneuvers Known"
 					],
 					"rows": [
 						[
@@ -581,29 +583,6 @@
 					"page": 3,
 					"entries": [
 						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你的身体承担了大部分工作负荷，使其成为训练最重要的部分。"
-					]
-				},
-				{
-					"type": "inset",
-					"name": "Changes to Unarmed Strikes and the Finesse Property",
-					"entries": [
-						"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。在这本手册中，徒手攻击和灵巧属性遭受了重要的变化，旨在保持平衡。",
-						{
-							"type": "entries",
-							"name": "Finesse Property",
-							"page": 14,
-							"entries": [
-								"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应保持为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n该属性现在允许您在使用该武器进行攻击骰时只选择您的力量或敏捷调整值，但对于伤害骰，您仍需使用您的力量调整值进行近战武器攻击，或使用您的敏捷调整值进行远程武器攻击。"
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Unarmed Strikes",
-							"page": 14,
-							"entries": [
-								"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n徒手攻击现在被认为具有灵巧和轻便属性。"
-							]
-						}
 					]
 				}
 			]
@@ -1272,7 +1251,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1299,7 +1278,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1327,7 +1306,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1354,7 +1333,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1381,7 +1360,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1408,7 +1387,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1436,7 +1415,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1463,7 +1442,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1490,7 +1469,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1516,7 +1495,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1544,7 +1523,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1571,7 +1550,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1598,7 +1577,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1625,7 +1604,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1653,7 +1632,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1680,7 +1659,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1707,7 +1686,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1734,7 +1713,7 @@
 			"page": 7,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1762,7 +1741,7 @@
 			"page": 8,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1789,7 +1768,7 @@
 			"page": 8,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1816,7 +1795,7 @@
 			"page": 8,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1844,7 +1823,7 @@
 			"page": 8,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1873,7 +1852,7 @@
 			"page": 8,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1901,7 +1880,7 @@
 			"page": 8,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -1929,7 +1908,7 @@
 			"page": 8,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
 			"consumes": {
-				"name": "Superiority Die",
+				"name": "Combat Superiority",
 				"amount": 1
 			},
 			"featureType": [
@@ -2772,7 +2751,7 @@
 									"bludgeoning"
 								]
 							],
-							"ability": "default",
+							"ability": "",
 							"properties": [
 								"fin",
 								"lgt"
@@ -2810,6 +2789,80 @@
 						}
 					],
 					"transfer": true
+				}
+			]
+		}
+	],
+	"action": [
+		{
+			"source": "DZC:ANA:F",
+			"name": "Convince",
+			"page": 0,
+			"entries": [
+				"As an action, you attempt to manipulate a creature into thinking what you want it to think. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Persuasion}) or Charisma ({@skill Deception}) check (your choice) contested by the target's Wisdom ({@skill Insight}) check. If you have done anything harmful to the creature within the last minute, you have disadvantage on your check. If you succeed, the creature will be swayed to your point of view to a reasonable degree. This can also cause the creature to turn friendly, indifferent, or hostile towards certain creatures, either of your or the DM's choice. Your DM has the final judgement on what the creature will do or how it will behave."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:F",
+			"name": "Disable",
+			"page": 0,
+			"entries": [
+				"As an action, you attempt to momentarily disable one of a creature's senses, be it throwing debris at its eyes, making a deafening noise next to its ears, or dishing out a dirty attack to its eyes or ears. Choose a creature within your reach that is no more than one size larger than you. You can either target its eyes or ears, if it has any. The creature must succeed on a DC 10 Dexterity or Constitution saving throw (its choice) or become {@condition blinded} or {@condition deafened} until the start of your next turn, if you targeted the eyes or ears, respectively."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:F",
+			"name": "Distract",
+			"page": 0,
+			"entries": [
+				"As an action, you do everything you can to distract one creature that you can see. Until the start of your next turn, while that creature is within 5 feet from you and you aren't {@condition incapacitated}, your target has disadvantage on attack rolls against targets other than you, and disadvantage on {@skill Perception} checks."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:F",
+			"name": "Intimidate",
+			"page": 0,
+			"entries": [
+				"As an action, you attempt to intimidate a creature. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Intimidation}) check contested by the target's Wisdom ({@skill Insight}) check. If you succeed, the target is {@condition frightened} of you until the start of your next turn."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:F",
+			"name": "Steal",
+			"page": 0,
+			"entries": [
+				"As an action, you try to take a Small object without being noticed, which usually requires at least one free hand. The object you are trying to steal can be unsecured, worn or carried, but it can't weight more than half a pound, and it mustn't be extremely noticeable or difficult to remove (like worn clothes or armor, or wielded objects).",
+				"To steal an object you must make a Dexterity ({@skill Sleight of Hands}) check against the Wisdom ({@skill Perception}) check of any observer in the area (passive Perception if they aren't in combat or alert), including the creature you are trying to steal from (if any). An observer sees you if it succeeds on the check. If the object is unsecured, you take it regardless of this result. If you fail on the check against the creature you are trying to steal from, you also fail to take the object. You also automatically fail the check against the creature you are trying to steal from if it's in combat or alert.",
+				"If the object is closely guarded (like inside a pocket or a sheathed weapon), you take a penalty to your Sleight of Hands check, usually a -5 penalty."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
 				}
 			]
 		}
@@ -2866,6 +2919,34 @@
 									"name": "Can I add this Bonus?",
 									"entries": [
 										"根据当地语言习惯，像(%num%)这样的文本在翻译中仍应输出为(%num%)。\n- 翻译遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n有时候，某些技能、特性或法术可以让你在攻击检定、能力检定或豁免检定中增加奖励，比如诗人的诗人灵感（Bardic Inspiration）、战争牧师的引导打击（Channel Divinity: Guided Strike）、*祝福*法术、武术技巧增强进攻等等。其他技能可以让你重新投掷那些骰子，比如醉拳师的醉汉幸运（Drunkard's Luck）。还有另一种类型的技能，比其他技能要稀有得多，那就是可以让你在行动、反应、骰子投掷等中添加特殊效果的技能，比如武僧的躲避气功特性（Evasion ki feature）。这些技能共同之处在于它们缺乏触发关键词，比如命中、成功、未命中或失败，这就是为什么你可以选择在看到骰子点数后使用它们，但在DM宣布骰子成功或失败之前。"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Changes to Unarmed Strikes and the Finesse Property",
+									"entries": [
+										"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应保留英文括号内的内容。在这本手册中，徒手攻击和灵巧属性遭受了重要的变化，旨在保持平衡。",
+										{
+											"type": "entries",
+											"name": "Finesse Property",
+											"entries": [
+												"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中仍应保持为(%num%)。\n- 翻译需遵守dnd跑团规则，专有名词在翻译后应保留英文括号`()`。\n\n该属性现在允许您在使用该武器进行攻击骰时只选择您的力量或敏捷调整值，但对于伤害骰，您仍需使用您的力量调整值进行近战武器攻击，或使用您的敏捷调整值进行远程武器攻击。"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Unarmed Strikes",
+											"entries": [
+												"根据当地语言习惯，像 (%num%) 这样的文本在翻译中仍应输出为 (%num%)。\n- 翻译遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n徒手攻击现在被认为具有灵巧和轻便属性。"
+											]
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Additional Actions",
+									"entries": [
+										"You can incorporate the following actions into your game: {@action Convince|DZC:ANA:F}, {@action Disable|DZC:ANA:F}, {@action Distract|DZC:ANA:F}, {@action Intimidate|DZC:ANA:F}, and {@action Steal|DZC:ANA:F}"
 									]
 								}
 							]

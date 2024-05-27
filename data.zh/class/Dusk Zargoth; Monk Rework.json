@@ -3,7 +3,7 @@
 		"sources": [
 			{
 				"json": "DZC:ANA:M",
-				"abbreviation": "DZC:ANA:M",
+				"abbreviation": "DZC:ANA",
 				"full": "Monk Rework",
 				"authors": [
 					"Dusk Zargoth"
@@ -17,7 +17,7 @@
 			}
 		],
 		"dateAdded": 1714935701,
-		"dateLastModified": 1714935701,
+		"dateLastModified": 1716449458,
 		"optionalFeatureTypes": {
 			"DZC:MA": "Monk Rework; Martial Arts",
 			"DZC:MA:MS": "Monk Rework; Martial Arts: Mixed Style",
@@ -39,7 +39,7 @@
 			"DZC:KF:D": "Monk Rework; Ki Features; Defense",
 			"DZC:KF:U": "Monk Rework; Ki Features; Utility"
 		},
-		"_dateLastModifiedHash": "ae3009c314"
+		"_dateLastModifiedHash": "cd369d235f"
 	},
 	"class": [
 		{
@@ -66,6 +66,14 @@
 				],
 				"tools": [
 					"Choose one type of {@item artisan's tools|phb} or one {@item musical instrument|phb}"
+				],
+				"toolProficiencies": [
+					{
+						"anyArtisansTool": 1
+					},
+					{
+						"anyMusicalInstrument": 1
+					}
 				],
 				"skills": [
 					{
@@ -125,6 +133,17 @@
 			},
 			"optionalfeatureProgression": [
 				{
+					"name": "Martial Arts",
+					"featureType": [
+						"DZC:MA"
+					],
+					"progression": {
+						"1": 2,
+						"9": 3,
+						"18": 4
+					}
+				},
+				{
 					"name": "Ki Features",
 					"featureType": [
 						"DZC:KF"
@@ -151,17 +170,6 @@
 						10,
 						10
 					]
-				},
-				{
-					"name": "Martial Arts",
-					"featureType": [
-						"DZC:MA"
-					],
-					"progression": {
-						"1": 2,
-						"9": 3,
-						"18": 4
-					}
 				}
 			],
 			"classTableGroups": [
@@ -615,38 +623,6 @@
 					"page": 3,
 					"entries": [
 						"根据当地语言习惯，文本中类似 (%num%) 的内容在翻译中仍应保留为 (%num%)。\n- 翻译需遵守 dnd 跑团规则，专有名词在翻译后应在 `()` 中保留英文。\n\n你有能力使用更多种类的武器，尤其是用于防御动作的。你的武僧武器包括长弓和没有笨重、双手或特殊属性的任何武器。"
-					]
-				},
-				{
-					"type": "inset",
-					"name": "Changes to Unarmed Strikes and the Finesse Property",
-					"entries": [
-						"在这个手册中，徒手攻击和灵巧属性会有重要的变化，旨在保持平衡。 (Dungeons & Dragons)",
-						{
-							"type": "entries",
-							"name": "Finesse Property",
-							"page": 14,
-							"entries": [
-								"现在，该属性允许您仅在使用该武器进行攻击时选择您的力量或敏捷调整值，但不适用于伤害掷骰。对于近战武器攻击，您仍需使用您的力量调整值，对于远程武器攻击，您仍需使用您的敏捷调整值。 (D&D)"
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Unarmed Strikes",
-							"page": 14,
-							"entries": [
-								"徒手攻击现在被视为具有灵巧性和轻巧性能。 (Unarmed strikes are now considered to have the finesse and light properties.)"
-							]
-						}
-					]
-				},
-				{
-					"type": "inset",
-					"name": "Unarmored Defense",
-					"entries": [
-						"一些角色具有一种称为无甲护身的专门防御形式。 如果你的角色精通此技能，则你的 AC 等于 10 + 你的敏捷调整值 + 你在括号中列出的能力调整值，当你不穿戴盔甲时。 如果你持盾却没有熟练，你也会失去这个益处。 (Unarmored Defense)",
-						"根据当地语言习惯，文本如 (%num%) 应保持在翻译中输出为 (%num%)。\n翻译需符合DND游戏团规则，专有名词应在翻译后保留英文括号中的内容。若你在不同能力上有熟练度，你只能同时受益于其中一项。",
-						"每种能力都提供了这一特质的不同解释。例如，智力允许你预测攻击并增加你对周围环境的整体意识; 体质通过增加你的坚韧性来防止伤害; 魅力使你的存在对他人有形，使他们在对你动手之前三思。 (Wisdom) (Constitution) (Charisma)"
 					]
 				}
 			]
@@ -2104,7 +2080,7 @@
 				"DZC:KF:O"
 			],
 			"entries": [
-				"作为一个额外动作，你可以花费1点气点，使你的徒手攻击的攻击和伤害骰获得+1的加值，持续10分钟。如果你被无力行动，此效益会提前结束。(ki point)"
+				"As a bonus action, you can spend 1 ki point to grant your unarmed strikes a +1 bonus to attack and damage rolls for 10 minutes. This benefit ends early if you are {@condition incapacitated}."
 			],
 			"prerequisite": [
 				{
@@ -3037,7 +3013,7 @@
 				"DZC:KF:U"
 			],
 			"entries": [
-				"在你的回合开始时，你可以花费1点气来使你的{@optfeature Unarmored Movement|DZC:ANA:M}特性的移动速度加成翻倍，持续10分钟，且在此期间你忽略困难地形。如果你陷入无能状态，这个效益会提前结束。"
+				"At the start of your turn, you can spend 1 ki point to double the movement speed bonus from your {@optfeature Unarmored Movement|DZC:ANA:M} feature for 10 minutes and you ignore difficult terrain for the duration. This benefit ends early if you are {@condition incapacitated}."
 			]
 		},
 		{
@@ -3424,7 +3400,7 @@
 			]
 		},
 		{
-			"name": "Emptry Body",
+			"name": "Empty Body",
 			"source": "DZC:ANA:M",
 			"page": 14,
 			"foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
@@ -4141,7 +4117,7 @@
 									"bludgeoning"
 								]
 							],
-							"ability": "default",
+							"ability": "",
 							"properties": [
 								"fin",
 								"lgt"
@@ -4228,6 +4204,80 @@
 			}
 		}
 	],
+	"action": [
+		{
+			"source": "DZC:ANA:M",
+			"name": "Convince",
+			"page": 0,
+			"entries": [
+				"As an action, you attempt to manipulate a creature into thinking what you want it to think. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Persuasion}) or Charisma ({@skill Deception}) check (your choice) contested by the target's Wisdom ({@skill Insight}) check. If you have done anything harmful to the creature within the last minute, you have disadvantage on your check. If you succeed, the creature will be swayed to your point of view to a reasonable degree. This can also cause the creature to turn friendly, indifferent, or hostile towards certain creatures, either of your or the DM's choice. Your DM has the final judgement on what the creature will do or how it will behave."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:M",
+			"name": "Disable",
+			"page": 0,
+			"entries": [
+				"As an action, you attempt to momentarily disable one of a creature's senses, be it throwing debris at its eyes, making a deafening noise next to its ears, or dishing out a dirty attack to its eyes or ears. Choose a creature within your reach that is no more than one size larger than you. You can either target its eyes or ears, if it has any. The creature must succeed on a DC 10 Dexterity or Constitution saving throw (its choice) or become {@condition blinded} or {@condition deafened} until the start of your next turn, if you targeted the eyes or ears, respectively."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:M",
+			"name": "Distract",
+			"page": 0,
+			"entries": [
+				"As an action, you do everything you can to distract one creature that you can see. Until the start of your next turn, while that creature is within 5 feet from you and you aren't {@condition incapacitated}, your target has disadvantage on attack rolls against targets other than you, and disadvantage on {@skill Perception} checks."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:M",
+			"name": "Intimidate",
+			"page": 0,
+			"entries": [
+				"As an action, you attempt to intimidate a creature. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Intimidation}) check contested by the target's Wisdom ({@skill Insight}) check. If you succeed, the target is {@condition frightened} of you until the start of your next turn."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		},
+		{
+			"source": "DZC:ANA:M",
+			"name": "Steal",
+			"page": 0,
+			"entries": [
+				"As an action, you try to take a Small object without being noticed, which usually requires at least one free hand. The object you are trying to steal can be unsecured, worn or carried, but it can't weight more than half a pound, and it mustn't be extremely noticeable or difficult to remove (like worn clothes or armor, or wielded objects).",
+				"To steal an object you must make a Dexterity ({@skill Sleight of Hands}) check against the Wisdom ({@skill Perception}) check of any observer in the area (passive Perception if they aren't in combat or alert), including the creature you are trying to steal from (if any). An observer sees you if it succeeds on the check. If the object is unsecured, you take it regardless of this result. If you fail on the check against the creature you are trying to steal from, you also fail to take the object. You also automatically fail the check against the creature you are trying to steal from if it's in combat or alert.",
+				"If the object is closely guarded (like inside a pocket or a sheathed weapon), you take a penalty to your Sleight of Hands check, usually a -5 penalty."
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			]
+		}
+	],
 	"classFluff": [
 		{
 			"name": "Monk Rework",
@@ -4284,6 +4334,34 @@
 									"name": "Can I add this Bonus?",
 									"entries": [
 										"有时候，某些能力、特征或法术会让你在攻击检定、能力检定或豁免检定中增加一个奖励，比如诗人的吟游诗人灵感（Bardic Inspiration），战争牧师的神圣通道：引导打击（Channel Divinity: Guided Strike），*祝福*法术，武术技巧增强攻击，以及其他许多。其他能力则允许你重新投掷那些骰子，比如醉拳高手僧侣的酒徒运气（Drunkard's Luck）。还有另一种类型的能力，比其他能力更为罕见，那就是允许你为你的动作、反应、骰子投掷等增加特殊效果的能力，比如僧侣的闪避气（Evasion ki feature）。这些能力共同的特点是缺乏触发它们的关键词，比如命中、成功、未命中或失败，这就是为什么你可以选择在看到骰子投掷结果后，但在DM宣布投掷结果成功或失败之前使用它们。 (Bardic Inspiration) (Channel Divinity: Guided Strike) (*bless*)"
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Changes to Unarmed Strikes and the Finesse Property",
+									"entries": [
+										"在这个手册中，徒手攻击和灵巧属性会有重要的变化，旨在保持平衡。 (Dungeons & Dragons)",
+										{
+											"type": "entries",
+											"name": "Finesse Property",
+											"entries": [
+												"现在，该属性允许您仅在使用该武器进行攻击时选择您的力量或敏捷调整值，但不适用于伤害掷骰。对于近战武器攻击，您仍需使用您的力量调整值，对于远程武器攻击，您仍需使用您的敏捷调整值。 (D&D)"
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Unarmed Strikes",
+											"entries": [
+												"徒手攻击现在被视为具有灵巧性和轻巧性能。 (Unarmed strikes are now considered to have the finesse and light properties.)"
+											]
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Additional Actions",
+									"entries": [
+										"You can incorporate the following actions into your game: {@action Convince|DZC:ANA:M}, {@action Disable|DZC:ANA:M}, {@action Distract|DZC:ANA:M}, {@action Intimidate|DZC:ANA:M}, and {@action Steal|DZC:ANA:M}"
 									]
 								}
 							]
