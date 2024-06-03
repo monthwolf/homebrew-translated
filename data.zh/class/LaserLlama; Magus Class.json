@@ -15,7 +15,7 @@
 					"ACOG_Muffin",
 					"hakr14"
 				],
-				"version": "4.2.0",
+				"version": "4.2.1",
 				"color": "025b79",
 				"url": "https://www.gmbinder.com/share/-Mslo6ktmq1Yg5WTSjDQ"
 			},
@@ -29,13 +29,13 @@
 				"convertedBy": [
 					"hakr14"
 				],
-				"version": "4.2.0",
+				"version": "4.2.1",
 				"color": "025b79",
 				"url": "https://www.gmbinder.com/share/-Nvnfwvps1zOqpIGK-5B"
 			}
 		],
 		"dateAdded": 1647980495,
-		"dateLastModified": 1715291226,
+		"dateLastModified": 1717424329,
 		"dependencies": {
 			"spell": [
 				"llspell"
@@ -45,7 +45,7 @@
 				"LLAF:E"
 			]
 		},
-		"_dateLastModifiedHash": "cfff4c75dc"
+		"_dateLastModifiedHash": "7c91f4325f"
 	},
 	"class": [
 		{
@@ -1784,7 +1784,7 @@
 			"shortName": "Spellsword",
 			"subclassFeatures": [
 				"Order of Spellswords|Magus|LLMC|Spellsword|LLMC:E|3",
-				"Mystic Strikes|Magus|LLMC|Spellsword|LLMC:E|7",
+				"Mystic Precision|Magus|LLMC|Spellsword|LLMC:E|7",
 				"Ethereal Warrior|Magus|LLMC|Spellsword|LLMC:E|15",
 				"Arcane Blademaster|Magus|LLMC|Spellsword|LLMC:E|20"
 			],
@@ -3304,8 +3304,9 @@
 			"subclassSource": "LLMC:E",
 			"level": 3,
 			"entries": [
-				"作为一个奖励行动，你可以召唤你{@classFeature Arcane Armory|Magus|LLMC|1}内的任意数量近战武器，使它们在你周围飘浮在你的空间中。你必须{@status concentration||concentrate}此效果，如果效果结束，你的武器回到你的军械库。 (D&D running group rules, Armory)",
-				"在悬浮时，这些武器具有投掷（20/60）属性，并且你使用你的智力，而不是力量或敏捷，进行它们的攻击和伤害检定。每当你通常可以进行攻击时，你可以用其中一把悬浮的刀进行攻击，之后无论是否命中，它都会立即返回悬浮在你的空间内。 （Thrown (20/60)）"
+				"As a bonus action, you can summon any number of the one-handed melee weapons within your {@classFeature Arcane Armory|Magus|LLMC|1}, causing them to levitate around you in your space. This requires your concentration. If it ends, the weapons return to your Armory.",
+				"While levitating, these weapons have the Thrown (20/60) property, you use your Intelligence, in place of your Strength or Dexterity for their attack and damage rolls, and you are considered to be wielding the weapons one-handed. You can only attack with each levitating blade once per turn.",
+				"Whenever you can normally make an attack, you can make an attack with one of these levitating blades, then it instantly returns to levitate in your space regardless of a hit or miss."
 			],
 			"foundryImg": "icons/weapons/thrown/shuriken-triple-purple.webp"
 		},
@@ -3335,7 +3336,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你可以同时使用所有悬浮的武器进行攻击。作为一个动作，在你的{@subclassFeature Awakened Armory|Magus|LLMC|Armorer|LLMC:E|3}仍然生效时，你可以强迫你能看到的每个生物在20英尺内进行一次敏捷豁免检定，检定 DC 为你的法术豁免 DC。生物在检定失败时受到{@damage 2d10}点伤害，在检定成功时受到一半伤害。这种伤害必须是由你的奥术武库武器之一造成的类型。",
+				"You can strike with all of your levitating weapons at once. As an action, you can force a number of creatures within 20 feet equal to your number of levitating blades to make a Dexterity saving throw against your Spell save DC. Targets take {@damage 2d10} damage on a failure, and half that on a success. This damage matches the damage dealt by the levitating blade you used to force each creature to make this saving throw.",
 				"该特性造成的伤害在14级时增加至{@damage 3d10}，在达到20级时再次增加至{@damage 4d10}。"
 			],
 			"foundrySystem": {
@@ -3359,11 +3360,10 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"你的奥术武库技能提升了你的防御。当你被攻击时，如果你的{@subclassFeature Awakened Armory|Magus|LLMC|Armorer|LLMC:E|3}仍然有效，你可以以反应的方式将你的智力调整值（最低+1）加到你的护甲等级上，以对抗该攻击。"
+				"As a bonus action, you can place one of your levitating blades in a defensive posture, and add your Intelligence modifier to your Armor Class until the start of your next turn. You cannot make attacks with this levitating blade for the duration."
 			],
 			"foundrySystem": {
 				"ability": "int",
-				"activation.condition": "When you are hit by an attack while your Awakened Armory is active",
 				"formula": "max(1, @mod)"
 			},
 			"foundryImg": "icons/skills/melee/swords-parry-block-yellow.webp"
@@ -3672,22 +3672,22 @@
 			"subclassSource": "LLMC:E",
 			"level": 3,
 			"entries": [
-				"你利用你的秩序的邪恶魔法在你的敌人身上施加可怕的诅咒。当你获得魔导师等级时，你不能用其他法术替换{@spell hex}，但是你对受到你诅咒效果影响的生物获得以下额外的好处（Magus）。（Magus）",
+				"You use the sinister magic of your Order to place fell curses on your foes. You cannot replace {@spell hex} with another spell when you gain a Magus level, but, you gain the following additional benefits against hostile creatures under the effects of hex:",
 				{
 					"type": "list",
 					"items": [
-						"你对该生物的武器和法术攻击投掷骰子得到19或20时视为暴击在 {@dice d20}。",
+						"Your weapon and spell attack rolls against the creature score a critical hit on a roll of 19 or 20 on the d20.",
 						"每个回合，当你对其造成死灵伤害时，你可以用一只空手吸取其生命精华，获得临时生命值，数值等同于造成的死灵伤害的一半。这不对构造体或不死生物产生影响。（Constructs）（Undead）"
 					]
 				},
-				"当你施放咒术时，你的{@status concentration}不能被打破，除非你自愿结束它。最后，每长休息一次，你可以施放咒术，而不消耗法术槽，法术等级等同于你最高等级的法术槽，如魔法师职业表所示。"
+				"When you cast hex, your concentration cannot be broken unless you willingly end it. Finally, once between each short or long rest, you can cast hex at 1st-level, without expending a spell slot."
 			],
 			"foundrySystem": {
 				"activation.type": "special",
 				"uses": {
 					"value": 1,
 					"max": 1,
-					"per": "lr"
+					"per": "sr"
 				}
 			},
 			"foundryImg": "icons/magic/control/voodoo-doll-pain-damage-purple.webp"
@@ -3703,7 +3703,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你可以将敌人的生命精华储存在你的{@classFeature Arcane Armory|Magus|LLMC|1}中。当你用你的{@subclassFeature Malevolent Hex|Magus|LLMC|Hexblade|LLMC:e|3}从生物身上抽取生命精华时，你可以将那股能量存储在你的奥术军械中，而不是获得临时生命值。(Arcane Armory)",
+				"You can store the life-essence of your foes in your Arcane Armory. When you drain life-essence from a creature with your Malevolent Hex, you can store that life-essence, equal to the temporary hit points that you would have gained, within your Arcane Armory in place of gaining those temporary hit points yourself.",
 				"你的奥秘兵器可以容纳生命精华量，等于你智力调整值的十倍（至少为10生命精华），用于激发以下功能： (Arcane Armory)",
 				{
 					"type": "refSubclassFeature",
@@ -3734,7 +3734,7 @@
 			"subclassSource": "LLMC:E",
 			"level": 7,
 			"entries": [
-				"在符合当地语言习惯的前提下，文本中像（%num%）这样的内容在翻译时应该保持输出为（%num%）。\n\n当受你咒术影响的生物迫使你进行豁免检定时，你可以从你的{@classFeature Arcane Armory|Magus|LLMC|1}中汲取10点生命精华，将其消耗以获得在你的豁免检定上的优势。你必须在进行{@dice d20}之前选择使用此特性。"
+				"When the creature under the effects of your hex spell forces you to make a saving throw, you can draw 10 life-essence from your Arcane Armory, expending it to gain advantage on your saving throw. You must choose to use this feature before you roll the d20."
 			],
 			"consumes": {
 				"name": "Accursed Armory",
@@ -3796,7 +3796,7 @@
 					"type": "entries",
 					"name": "Mental Bond",
 					"entries": [
-						"当你手持武器时，它会借给你其精神能力。你可以{@status concentration||concentrate}对{@spell hex}和另一法术（除了诅咒之外的其他法术）。然而，如果你进行体质豁免来维持你的专注力，你只需进行一次豁免来维持两个法术。"
+						"While you hold the weapon in your hand, it lends you its mental abilities. You can concentrate on hex and another spell of your choice (other than hex). If you do so, your concentration on hex still cannot be broken."
 					]
 				}
 			],
@@ -3973,7 +3973,7 @@
 			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black-gray.webp"
 		},
 		{
-			"name": "Mystic Strikes",
+			"name": "Mystic Precision",
 			"source": "LLMC:E",
 			"className": "Magus",
 			"classSource": "LLMC",
@@ -3983,8 +3983,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你的战斗风格使敌人暴露于你的魔法之下，让你能够充分利用你施放的每一种法术。当你用武器攻击命中一生物时，它在你接下来的回合结束前对你所施展的魔法法术的第一次豁免检定有劣势。这包括通过{@classFeature Spellstrike|Magus|LLMC|2}施放的法术。(%Magus%)",
-				"然而，作为法术打击的一部分进行的武器攻击不会提供此功能的好处。"
+				"The magic you channel through your weapon attacks supernaturally increases your accuracy. Whenever you make a Spellstrike attack, you can add the level of the spell slot you expend (0 for Cantrips) to all attack rolls you make with that weapon until the end of your turn.",
+				"In addition, when you gain the Spellsunder feature at 9th level, you also gain a bonus to any weapon attack (minimum of 0) you make as part of Spellsunder equal to the level of the spell slot expend (minimum of +1)."
 			],
 			"foundryImg": "icons/skills/melee/strike-blade-knife-white-red.webp"
 		},
@@ -4200,7 +4200,7 @@
 				"你未来的自己在战斗中跟随你的主动行动，并且会立即行动。他们独立行动，并会尽力帮助你。你未来的自己的总生命值等同于你的最大生命值，他们使用你的能力值。他们共享你的种族、职业和其他来源的特性，包括独立使用{@subclassFeature Temporal Shift|Magus|LLMC|Traveler|LLMC:E|3}。然而，你共享你的法术槽。 (Your Future Self)",
 				"按照当地语言习惯，并且像（%num%）这样的文本在翻译中应该仍然输出为（%num%）。\n\n翻译遵守dnd跑团规则，专有名词在翻译后应该保留英文在`()`内。",
 				"你的未来自我留存的时间取决于你消耗的法术位：3级（1分钟）、4级（1小时）或5级（8小时）。他们在持续时间结束时回到自己的时间，或者如果他们的生命值降低到0，会提前返回。",
-				"你只能同时拥有一个未来的自己在这个时间线上。召唤第二个版本会导致当前与你在一起的未来自己立即返回他们的时间。 (Future Self)"
+				"There can only ever be one version of your Future Self in your current time at once. Conjuring a second Future Self causes any others to instantly return to their time."
 			],
 			"foundryImg": "icons/magic/control/energy-stream-link-teal.webp"
 		},
@@ -4580,8 +4580,8 @@
 				{
 					"type": "list",
 					"items": [
-						"当你能看见或听见你挥舞的近战武器攻击范围内的生物施放法术时，你可以对其进行机会攻击。命中时，该生物必须进行一次体质豁免投掷，就像它正在维持{@status concentration}一样。如果失败，其法术无法生效，其法术槽或使用该能力的次数被浪费。{@status concentration}",
-						"当你伤害一个正在集中精力施展法术的生物时，该生物在维持其集中状态的体质豁免检定中拥有劣势。",
+						"When you can see or hear a creature within the reach of a melee weapon you are wielding cast a spell, you can make an opportunity attack against it. On hit, the creature must succeed on a Constitution saving throw as if it were doing so to maintain concentration. On a failure, its spell fails to take effect, and its slot or use of that ability is wasted.",
+						"If you damage a creature concentrating on a spell, it has disadvantage on its Constitution saving throw to maintain its concentration. This does not stack with the first bullet.",
 						"你在5英尺范围内能看见或听见的生物对你施放的法术豁免时获得优势。 (DND运行组规则)"
 					]
 				}
@@ -4601,7 +4601,7 @@
 				{
 					"type": "list",
 					"items": [
-						"当你进行体质豁免投掷以维持你的{@status concentration}在一个法术上时，你可以选择用你的施法能力来进行此豁免投掷。",
+						"When you make a Constitution saving throw to maintain {@status concentration} on a spell, you can use a reaction to add your Spellcasting modifier (minimum of +0) to your roll.",
 						"你即使手中拿着武器或盾牌，也能够执行法术的体动成分。",
 						"当你进行机会攻击时，你可以选择施展一个咒语。它的施法时间必须是1个动作或1次攻击，并且这个咒语只能以目标指定该生物。 (opportunity attack)",
 						"当你对一名生物进行机会攻击时，你可以施放一个施法时间为On Hit的咒语。"
@@ -4621,31 +4621,27 @@
 					]
 				}
 			],
-			"entries": [
-				"你已经训练将微小的魔法与武器攻击结合。你学会了以下列出的一个\"零级法术\"：\n",
+			"ability": [
 				{
-					"type": "table",
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
-					"rows": [
-						[
-							"{@spell acid splash}",
-							"{@spell glitterbeam|llspell}"
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con"
 						],
-						[
-							"{@spell fire bolt||firebolt}",
-							"{@spell ray of frost}"
-						],
-						[
-							"{@spell frostbite|xge}",
-							"{@spell shocking grasp}"
-						]
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have trained to combine your minor magics with weapon attacks. You gain the benefits listed below:",
+				{
+					"type": "list",
+					"items": [
+						"You learn two Cantrips of your choice from the Magus spell list, choosing Intelligence, Wisdom, or Charisma as your spellcasting ability for these Magus Cantrips. At least one of these Cantrips must deal damage.",
+						"Once on each of your turns when you make a melee weapon attack, you can imbue the magic of a Cantrip you know into your attack. On hit, you do not deal the normal damage of the Cantrip along with the damage of your weapon attack. Instead, your weapon attack deals the damage type dealt by the Cantrip, and it applies the additional effects of the Cantrip on hit."
 					]
-				},
-				"选择智力、感知或魅力中的一个作为此杂耍的施法调整值。每当你的回合进行时，当你进行一次近战武器攻击时，你可以将你所知道的一个杂耍的魔法注入到你的武器攻击中。 (Cantrip)",
-				"根据当地语言习惯，文本中的 (%num%) 应该在翻译中保持为 (%num%)。\n翻译需符合 DND 跑团规则，并且专有名词在翻译后应保留英文括号内的原文。\n\n然而，你的 Cantrip 不会与你的武器攻击一起造成伤害。相反，你的武器攻击将造成 Cantrip 所造成的伤害类型，并在命中时施加 Cantrip 的附加效果，除了伤害。"
+				}
 			],
 			"additionalSpells": [
 				{
@@ -4662,11 +4658,26 @@
 								"choose": {
 									"from": [
 										"acid splash",
-										"fire bolt",
+										"blade ward",
+										"booming blade (alternate)|llspell",
+										"chill touch",
+										"dancing lights",
+										"firebolt",
 										"frostbite|xge",
 										"glitterbeam|llspell",
+										"green-flame blade (alternate)|llspell",
+										"light",
+										"lightning lure|tce",
+										"mage hand",
+										"minor illusion",
+										"poison spray",
+										"prestidigitation",
+										"resistance",
 										"ray of frost",
-										"shocking grasp"
+										"shocking grasp",
+										"sword burst|tce",
+										"tempestuous blade|llspell",
+										"true strike (alternate)|llspell"
 									]
 								}
 							}
