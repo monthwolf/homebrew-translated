@@ -12,7 +12,7 @@
 					"Crazy Ivan#3242",
 					"hakr14"
 				],
-				"version": "1.1.0",
+				"version": "2.1.0",
 				"color": "940101",
 				"url": "https://www.gmbinder.com/share/-NLlETPNSzqxgQ92pnd-"
 			}
@@ -30,8 +30,8 @@
 			]
 		},
 		"dateAdded": 1657295680,
-		"dateLastModified": 1715291226,
-		"_dateLastModifiedHash": "350e8a1340"
+		"dateLastModified": 1717969039,
+		"_dateLastModifiedHash": "cc47104dcb"
 	},
 	"class": [
 		{
@@ -39,22 +39,22 @@
 			"source": "LLABH",
 			"classFeatures": [
 				"Hunter's Bane|Alternate Blood Hunter|LLABH|1|LLABH",
-				"Blood Rites|Alternate Blood Hunter|LLABH|1|LLABH",
+				"Fighting Style|Alternate Blood Hunter|LLABH|1|LLABH",
+				"Blood Rites|Alternate Blood Hunter|LLABH|2|LLABH",
 				"Crimson Offering|Alternate Blood Hunter|LLABH|2|LLABH",
-				"Fighting Style|Alternate Blood Hunter|LLABH|2|LLABH",
 				{
 					"classFeature": "Occult Order|Alternate Blood Hunter|LLABH|3|LLABH",
 					"gainSubclassFeature": true
 				},
 				"Ability Score Improvement|Alternate Blood Hunter|LLABH|4|LLABH",
 				"Extra Attack|Alternate Blood Hunter|LLABH|5|LLABH",
+				"Grim Psychometry|Alternate Blood Hunter|LLABH|5|LLABH",
 				"Crimson Brand|Alternate Blood Hunter|LLABH|6|LLABH",
 				{
 					"classFeature": "Occult Order|Alternate Blood Hunter|LLABH|7|LLABH",
 					"gainSubclassFeature": true
 				},
 				"Ability Score Improvement|Alternate Blood Hunter|LLABH|8|LLABH",
-				"Grim Psychometry|Alternate Blood Hunter|LLABH|9|LLABH",
 				"Dark Augmentation|Alternate Blood Hunter|LLABH|10|LLABH",
 				"Improved Crimson Offering|Alternate Blood Hunter|LLABH|11|LLABH",
 				"Vital Control|Alternate Blood Hunter|LLABH|11|LLABH",
@@ -339,8 +339,10 @@
 				{
 					"name": "Grim Psychometry (Ritual Only)",
 					"innate": {
+						"5": [
+							"identify"
+						],
 						"9": [
-							"identify",
 							"legend lore"
 						]
 					}
@@ -355,12 +357,9 @@
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
+			"foundryImg": "icons/consumables/potions/potion-tube-corked-bat-gold-red.webp",
 			"page": 2,
 			"level": 1,
-			"entries": [
-				"你经历了猎人诅咒，一种黑暗的炼金术仪式，将邪恶的魔法注入你的血液，赋予你对邪恶的增强认知和意识。在1级时，你可以选择在{@skill Nature}、{@skill Religion} 或 {@skill Survival}中获得熟练度。\n",
-				"每当您进行与精灵、恶魔或亡灵相关的智力（{@skill Nature}）、智力（{@skill Religion}）或智慧（{@skill Survival}）检定时，您将7或更低的掷骰结果视为8。"
-			],
 			"skillProficiencies": [
 				{
 					"choose": {
@@ -372,82 +371,38 @@
 					}
 				}
 			],
-			"foundryImg": "icons/consumables/potions/potion-tube-corked-bat-gold-red.webp"
-		},
-		{
-			"name": "Blood Rites",
-			"source": "LLABH",
-			"className": "Alternate Blood Hunter",
-			"classSource": "LLABH",
-			"foundryImg": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
-			"page": 2,
-			"level": 1,
 			"entries": [
-				"在1级时，你学会了从你的血液中汲取邪恶力量，召唤{@filter Blood Rites|optionalfeatures|feature type=LLABH:BR}的黑暗魔法：",
+				"You have survived the Hunter's Bane, a dark alchemical ritual that suffuses your blood with sinister magic, granting you an enhanced knowledge and awareness of evil. At 1st level, you gain proficiency in either Arcana, Nature, or Religion.",
+				"As a bonus action, you can use this dark insight to analyze a creature you can see within 30 feet, making an ability check using the corresponding skill below (DC equals 8 + its CR):",
 				{
-					"type": "entries",
-					"name": "Blood Rites Known",
-					"page": 2,
-					"entries": [
-						"在1级时，你学会两种这样的血脉仪式，从类别末尾的列表中选择。在特定等级，你会学会更多血脉仪式，如上表中\"已知仪式\"栏所示。",
-						"一旦你发动了血之仪式，你必须在完成短暂或长时间休息后才能再次发动该血之仪式。当你没有使用血之仪式的次数时，你可以进行一次 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}（详见以下说明）来再次使用该仪式。",
-						"血脉仪式只能对有血液的生物使用。然而，当你进行一次生命牺牲来强化一个仪式时，你可以瞄准任何生物，无论它是否有血液。"
+					"type": "table",
+					"caption": "Knowledge of the Hunt",
+					"colLabels": [
+						"Skill",
+						"Creature Type"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Arcana",
+							"Aberrations, Dragons, Monstrosities"
+						],
+						[
+							"Nature",
+							"Beasts, Elementals, Oozes, Plants"
+						],
+						[
+							"Religion",
+							"Celestials, Fey, Fiends, Undead"
+						]
 					]
 				},
-				{
-					"type": "entries",
-					"name": "Rite Die",
-					"page": 2,
-					"entries": [
-						"一些血之仪式和其他血猎人特性使用你的仪式骰，它起始于{@dice d4}。在特定的血猎人等级上，这个骰子会增长，如上面的仪式骰列中所示。"
-					]
-				},
-				{
-					"type": "refClassFeature",
-					"classFeature": "Vital Sacrifice|Alternate Blood Hunter|LLABH|1|LLABH"
-				},
-				{
-					"type": "entries",
-					"name": "Saving Throws",
-					"page": 2,
-					"entries": [
-						"若血脉仪式需要生物进行豁免投掷，则你的仪式豁免投掷 DC 如下计算：",
-						{
-							"type": "abilityDc",
-							"name": "Rite",
-							"attributes": [
-								"con"
-							]
-						}
-					]
-				}
-			],
-			"foundrySystem": {
-				"activation.type": null,
-				"uses": {
-					"value": null,
-					"max": null,
-					"per": null
-				}
-			}
-		},
-		{
-			"name": "Vital Sacrifice",
-			"source": "LLABH",
-			"className": "Alternate Blood Hunter",
-			"classSource": "LLABH",
-			"page": 2,
-			"level": 1,
-			"entries": [
-				"一些血脉仪式和血猎者特性允许你牺牲自己的生命来激发额外效果。当你进行生命牺牲时，你需要用你的仪式骰减少你的最大生命值和当前生命值，减少量为你的仪式骰掷出的点数。这种对你生命值的减少无法以任何方式减少。",
-				"如果你有临时生命值，你可以在减少当前生命值之前减少这些临时生命值。当进行重要牺牲（Vital Sacrifice）时，你总是减少你的最大生命值。",
-				"在你接下来的一次长休结束时，此特性对你最大生命值的任何减少都会恢复正常。"
-			],
-			"foundrySystem": {
-				"activation.type": "special",
-				"formula": "1@scale.alternate-blood-hunter.rite-die"
-			},
-			"foundryImg": "icons/skills/wounds/blood-drip-droplet-red.webp"
+				"On a success, you learn one characteristic of your choice from the following list: its highest ability score, lowest ability score, damage vulnerabilities, damage immunities, damage resistances, condition immunities, or another weakness (like a troll's Regeneration being stopped by taking fire damage).",
+				"If your choice doesn't apply to that creature, your DM will reveal another relevant characteristic of their choice to you."
+			]
 		},
 		{
 			"name": "Fighting Style",
@@ -455,9 +410,9 @@
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
 			"page": 3,
-			"level": 2,
+			"level": 1,
 			"entries": [
-				"你在战斗中的技能超过了大多数战士。在2级时，你可以从以下列表中选择一个你喜欢的战斗风格。即使另一个特性允许你学习另一个战斗风格，你也不能学习相同的战斗风格超过一次。",
+				"At 1st level, you adopt a Fighting Style that best reflects your training. You cannot select a Fighting Style more than once, even if a feature allows you to select another Fighting Style.",
 				"当你在这个职业中获得一个等级时，你可以用下面列表中的另一个选项替换你的战斗风格。",
 				{
 					"type": "options",
@@ -501,6 +456,81 @@
 			"foundryImg": "icons/skills/melee/weapons-crossed-swords-black.webp"
 		},
 		{
+			"name": "Blood Rites",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"foundryImg": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+			"page": 2,
+			"level": 2,
+			"entries": [
+				"At 2nd level, you learn to draw upon the sinister power within your bloodstream to invoke the dark magic of {@filter Blood Rites|optionalfeatures|feature type=LLABH:BR}:",
+				{
+					"type": "entries",
+					"name": "Blood Rites Known",
+					"page": 2,
+					"entries": [
+						"At 2nd level, you learn two such Blood Rite, from the list at the end of the class. At certain levels you learn more Blood Rites, as indicated in the Rites Known column of the table above.",
+						"Once you invoke a Blood Rite you must finish a short or long rest before you can invoke that Blood Rite again. When you have no uses of a Blood Rite remaining, you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} (detailed below) to use that Rite again.",
+						"血脉仪式只能对有血液的生物使用。然而，当你进行一次生命牺牲来强化一个仪式时，你可以瞄准任何生物，无论它是否有血液。"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rite Die",
+					"page": 2,
+					"entries": [
+						"一些血之仪式和其他血猎人特性使用你的仪式骰，它起始于{@dice d4}。在特定的血猎人等级上，这个骰子会增长，如上面的仪式骰列中所示。"
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "Vital Sacrifice|Alternate Blood Hunter|LLABH|2|LLABH"
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"page": 2,
+					"entries": [
+						"若血脉仪式需要生物进行豁免投掷，则你的仪式豁免投掷 DC 如下计算：",
+						{
+							"type": "abilityDc",
+							"name": "Rite",
+							"attributes": [
+								"con"
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"activation.type": null,
+				"uses": {
+					"value": null,
+					"max": null,
+					"per": null
+				}
+			}
+		},
+		{
+			"name": "Vital Sacrifice",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 2,
+			"level": 2,
+			"entries": [
+				"Some {@classFeature Blood Rites|Alternate Blood Hunter|LLABH|2} and Blood Hunter features allow you to sacrifice your own life to fuel additional effects. When you make a Vital Sacrifice, you reduce both your maximum and current hit points by one roll of your Rite Die. This reduction to your hit points cannot be lessened in any way.",
+				"如果你有临时生命值，你可以在减少当前生命值之前减少这些临时生命值。当进行重要牺牲（Vital Sacrifice）时，你总是减少你的最大生命值。",
+				"在你接下来的一次长休结束时，此特性对你最大生命值的任何减少都会恢复正常。"
+			],
+			"foundrySystem": {
+				"activation.type": "special",
+				"formula": "1@scale.alternate-blood-hunter.rite-die"
+			},
+			"foundryImg": "icons/skills/wounds/blood-drip-droplet-red.webp"
+		},
+		{
 			"name": "Crimson Offering",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
@@ -509,8 +539,7 @@
 			"page": 3,
 			"level": 2,
 			"entries": [
-				"从第2级开始，你可以将武器注入黑暗鲜血魔法。作为一个奖励行动，你可以做一个{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来强化你手持的一个近战武器，持续1小时。（Dark Blood Magic）",
-				"当你这样做时，请选择酸性、冰冷、火焰、闪电或毒素伤害。当你用强化武器攻击生物时，生物会受到你选择的类型的额外伤害，数量等于你的仪式骰的一次投掷。"
+				"Starting at 2nd level, you can use a bonus action on your turn to make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to empower one melee weapon you are holding with blood magic. Choose acid, cold, fire, lighting, or poison, and for 1 hour, your attacks with that weapon deal bonus damage of that type equal to one roll of your Rite Die."
 			],
 			"foundrySystem": {
 				"damage.parts": [
@@ -556,6 +585,19 @@
 			]
 		},
 		{
+			"name": "Grim Psychometry",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 4,
+			"level": 5,
+			"entries": [
+				"Your familiarity with dark magic allows you to decipher the influence of similar effects. Also at 5th level, you can use alchemist's supplies to cast {@spell identify} as a ritual. When you do so, you also learn if the object is cursed.",
+				"At 9th level, you can use this feature to cast {@spell legend lore}, targeting an object or creature you touch, or your current location. When you do so, the target can have an evil, violent, or cursed history instead of legendary importance. You make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} in place of expending a spell slot, and your alchemist's supplies replace the material components."
+			],
+			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
+		},
+		{
 			"name": "Crimson Brand",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
@@ -564,16 +606,17 @@
 			"page": 4,
 			"level": 6,
 			"entries": [
-				"你可以用血魔法烙印你的敌人。从6级开始，当你对生物造成{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}伤害时，你可以将其烙印上血魔法，作为你攻击的一部分。当这个赤红印记存在时，你获得以下好处：",
+				"Your affinity with blood magic has grown. Beginning at 6th level, you can make a {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} once between each short or long rest without making a Vital Sacrifice.",
+				"Moreover, when you damage a creature with a Crimson Offering weapon attack, you can sear it with blood magic to place a Crimson Brand upon it. While this Crimson Brand lasts, you gain the following benefits against that creature:",
 				{
 					"type": "list",
 					"items": [
-						"只要你们在同一存在平面上，你总是能够准确地知道生物的方向。",
-						"当该生物对你或你能看到的友方生物造成伤害时，它会受到你的献祭伤害类型的伤害，伤害值等同于你的仪式骰(%num%)。"
+						"You know its exact direction while on the same plane.",
+						"Whenever it damages you, or a friendly creature that you can see within 15 feet of you, it takes {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} damage equal to one roll of your Rite Die."
 					]
 				},
 				"红色烙印持续到生物被杀死，或者直到你用这个特征标记另一个生物。你的红色烙印效果可以被 {@spell remove curse} 解除。",
-				"使用此功能后，您必须完成短休息或长休息，然后才能再次使用它。如果您没有剩余次数，您可以做一个{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来再次使用此功能。（dnd运行小组规则）"
+				"Once you use this feature you must complete a short or long rest before you can use it again. If you have no uses left you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use this feature again."
 			],
 			"foundrySystem": {
 				"activation.condition": "When you damage a creature with Crimson Offering",
@@ -608,19 +651,6 @@
 			]
 		},
 		{
-			"name": "Grim Psychometry",
-			"source": "LLABH",
-			"className": "Alternate Blood Hunter",
-			"classSource": "LLABH",
-			"page": 4,
-			"level": 9,
-			"entries": [
-				"你对黑暗魔法的熟悉让你能够解读类似效果的影响。从9级开始，你可以使用{@item alchemist's supplies|phb}来施放{@spell identify}，作为仪式法术。此外，当你施放辨识法术时，你也会得知物品是否被诅咒。 {@item alchemist's supplies|phb} {@spell identify}",
-				"你也学会将{@spell legend lore}作为仪式施法，以你触摸到的一个生物或物体，或你当前的位置为目标。在这种情况下，目标可以有着邪恶、暴力或被诅咒的历史，而不仅仅是一个传奇重要的目标。当你以这种方式施法时，你使用炼金术工具，并进行{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}以替代法术的正常材料组成部分。 (ritual)(alchemist's supplies)"
-			],
-			"foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp"
-		},
-		{
 			"name": "Dark Augmentation",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
@@ -628,7 +658,7 @@
 			"page": 4,
 			"level": 10,
 			"entries": [
-				"你可以借助你的血液魔力增强你的身体能力。从10级开始，每当你进行一个使用力量、敏捷或体质的能力检定或豁免检定时，你可以将一个你的仪式骰投掷的结果加到最终结果上。"
+				"The dark magic of the Hunter's Bane enhances your physical abilities. Starting at 10th level, whenever you make an ability check or saving throw that uses your Strength, Dexterity, or Constitution, you add one roll of your Rite Die to the result."
 			],
 			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-red.webp"
 		},
@@ -640,12 +670,8 @@
 			"page": 4,
 			"level": 11,
 			"entries": [
-				"你是将血魔法与武技巧巧妙结合的大师。从11级起，当你使用{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}时，你可以选择将额外伤害变为死灵、心灵或雷霆属性，除了其他的伤害类型选择外。",
-				"符合当地语言习惯，并且像 (%num%) 这样的文本在翻译中应该保持输出为 (%num%)。\n翻译需遵守dnd游戏团规则，并且专有名词在翻译后应保留英文括号内的内容。\n此外，您可以使用赤红的献祭而不需要做出 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}。一旦您这样做，您必须完成短时间或长时间的休息，然后才能再次使用它而不需要做出生命牺牲。"
+				"You are a master of combining blood magic with martial skill. Beginning at 11th level, you can choose for the bonus damage of {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} to also be necrotic, psychic, or thunder."
 			],
-			"foundrySystem": {
-				"activation.condition": "You can use Crimson Offering without making a Vital Sacrifice"
-			},
 			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-red.webp"
 		},
 		{
@@ -656,8 +682,8 @@
 			"page": 4,
 			"level": 11,
 			"entries": [
-				"在符合当地语言习惯的前提下，像 (%num%) 这样的文本在翻译时应该仍然输出为 (%num%)。\n\n翻译需遵守 DND (龙与地下城) 跑团规则，并且专有名词在翻译后应该保留英文括号内的内容。\n\n另外，在第11级时，你对自己的血之魔法获得了更大程度的控制。每当你进行一个 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 时，你可以投掷两次你的仪式骰，并选择使用哪个结果。",
-				"此外，当你施展你已知的一种血脉仪式时，你可以选择强化它，而无需进行重要牺牲。一旦你这样做了，你必须完成一次长休，然后才能再次以这种方式强化你已知的任何血脉仪式。"
+				"Also at 11th level, you gain a greater measure of control over your blood magic. Whenever you make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2}, you can roll your Rite Die twice and choose which result to use.",
+				"Also, once between each long rest, you can empower one Blood Rite you know without making a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2}."
 			],
 			"foundrySystem": {
 				"activation.condition": "When you invoke a Blood Rite you know"
@@ -694,8 +720,8 @@
 			"page": 4,
 			"level": 14,
 			"entries": [
-				"你的血液受到强大的禁法魔法保护。从14级起，当你用{@classFeature Crimson Brand|Alternate Blood Hunter|LLABH|6}标记一个生物时，它在攻击你或你周围5英尺范围内的友方生物时受到的伤害增加到你的仪式骰的两次投掷。",
-				"最后，如果一名被赤红印记标记的生物尝试使用法术或特性传送或离开当前位面，它必须对你的仪式豁免 DC 进行一次智力豁免检定，否则会受到你 {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} 类型的伤害，伤害值相当于你的仪式骰的四次投掷，并且其法术或特性失败。 (Crimson Brand)"
+				"Your Crimson Brand is infused with potent abjuration magic. Starting at 14th level, in order for a creature marked by your {@classFeature Crimson Brand|Alternate Blood Hunter|LLABH|6} to teleport or to leave your current plane, it must succeed on a Charisma saving throw against your Rite save DC. On a failure, that feature fails and it takes {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} damage equal to four rolls of your Rite Die.",
+				"Also, the damage of Crimson Brand increases to two rolls of your Rite Die if the Branded target damages you or an ally."
 			],
 			"foundrySystem": {
 				"activation": {
@@ -713,17 +739,6 @@
 			"foundryImg": "icons/magic/control/debuff-chains-ropes-red.webp"
 		},
 		{
-			"name": "Occult Order",
-			"source": "LLABH",
-			"className": "Alternate Blood Hunter",
-			"classSource": "LLABH",
-			"page": 3,
-			"level": 18,
-			"entries": [
-				"在18级时，你从你的（Occult Order）中获得一个特性。"
-			]
-		},
-		{
 			"name": "Hardened Soul",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
@@ -731,7 +746,7 @@
 			"page": 4,
 			"level": 15,
 			"entries": [
-				"你的经历使你对除了最神秘的攻击之外的一切都变得坚强。从15级开始，每当你被迫进行一次智力、感知或魅力豁免检定时，你的检定获得一个奖励，奖励值等同于你的仪式骰(%num%)。"
+				"Your experiences have hardened your mind against all but the most esoteric attacks. Beginning at 15th level, whenever you make an Intelligence, Wisdom, or Charisma saving throw you gain a bonus to your roll equal to one roll of your Rite Die."
 			],
 			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-diamond-magenta.webp"
 		},
@@ -744,6 +759,17 @@
 			"level": 16,
 			"entries": [
 				"当你达到16级时，你可以选择将一个能力值提高2点，或者将两个能力值各提高1点。与正常规则一样，使用此特性时不能将任何一个能力值提高到20以上。"
+			]
+		},
+		{
+			"name": "Occult Order",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 3,
+			"level": 18,
+			"entries": [
+				"在18级时，你从你的（Occult Order）中获得一个特性。"
 			]
 		},
 		{
@@ -765,8 +791,8 @@
 			"page": 4,
 			"level": 20,
 			"entries": [
-				"你已经在血魔法的黑暗力量上获得了无与伦比的掌握，提高了其效力，同时最大程度地减少了你必须做出的牺牲。在20级时，每当你为你的血猎者能力之一掷出一个仪式骰(Rite Die)，你可以将仪式骰(Rite Die)掷两次，并选择使用哪个结果。",
-				"根据当地语言习惯，文本如 (%num%) 应在翻译中仍然输出为 (%num%)。\n翻译应符合 DND 跑团规则，专有名词在翻译后应保留英文括号内的内容。\n\n另外，每当你进行 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 时，在减少你的最大和当前生命值之前，你需要从你的体质调整值中减去你的 Vital Sacrifice 掷骰结果（最少为 1）。这不会使你的 Vital Sacrifice 低于 1。"
+				"You have gained unparalleled mastery over the dark power of your blood magic, improving its potency while minimizing the sacrifices required. At 20th level, whenever you roll a Rite Die for another Blood Rite or a Blood Hunter ability, you roll your Rite Die twice and choose which result to use.",
+				"Finally, whenever you make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2}, you subtract your Constitution modifier (minimum of 1) from your {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} roll before you reduce your maximum and current hit points. This cannot reduce your {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} below 1."
 			],
 			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red-orange.webp"
 		}
@@ -878,7 +904,7 @@
 			],
 			"optionalfeatureProgression": [
 				{
-					"name": "Passive Mutagens",
+					"name": "Latent Mutagens",
 					"featureType": [
 						"LLABH:M"
 					],
@@ -902,7 +928,7 @@
 				"Order of the Pale Moon|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3|LLABH",
 				"Lycan Warrior|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|7|LLABH",
 				"Feral Prowess|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|13|LLABH",
-				"Transformation Mastery|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|18|LLABH"
+				"Lycanthropic Mastery|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|18|LLABH"
 			],
 			"foundryImg": "icons/environment/settlement/watchtower-castle-night.webp"
 		},
@@ -920,6 +946,20 @@
 				"Spectral Mastery|Alternate Blood Hunter|LLABH|Salt & Iron|LLABH|18|LLABH"
 			],
 			"foundryImg": "icons/commodities/metal/chain-silver.webp"
+		},
+		{
+			"name": "Order of Heretics",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"shortName": "Heretic",
+			"subclassFeatures": [
+				"Order of Heretics|Alternate Blood Hunter|LLABH|Heretic|LLABH|3|LLABH",
+				"Unholy Restoration|Alternate Blood Hunter|LLABH|Heretic|LLABH|7|LLABH",
+				"Divine Anathema|Alternate Blood Hunter|LLABH|Heretic|LLABH|13|LLABH",
+				"Utmost Transgression|Alternate Blood Hunter|LLABH|Heretic|LLABH|18|LLABH"
+			],
+			"foundryImg": "icons/magic/holy/angel-wings-gray.webp"
 		},
 		{
 			"name": "Order of Undying Thirst",
@@ -1330,6 +1370,10 @@
 					"subclassFeature": "Aberrant Alchemy|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3|LLABH"
 				},
 				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Monstrous Awareness|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3|LLABH"
+				},
+				{
 					"type": "inset",
 					"name": "Alchemists & Experimentation",
 					"entries": [
@@ -1349,23 +1393,22 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你对炼金术的阴暗面有着深刻的了解。每当你进行能力检定，使用 {@item alchemist's supplies|phb} 的时候，你可以将7或更低的 {@dice d20} 掷骰结果视为8。",
-				"这种黑暗的炼金术知识让你能够用突变剂接种自己，这些突变剂在你的血液中潜伏，直到你调用它们的力量进行彻底的突变。",
+				"You knowledge of dark alchemy allows you to inoculate your blood with {@filter Mutagens|optionalfeatures|feature type=LLABH:M}, granting you the following benefits:",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Passive Mutagens",
+							"name": "Latent Mutagens",
 							"entries": [
-								"你已经将你的血液接种了来自这个秘术团体描述末尾的{@filter Mutagens|optionalfeatures|feature type=LLABH:M}列表中选择的三种实验性突变剂。你在突变之前不会获得这些突变剂的好处。 (Occult Order)",
-								"在一次长休中，你可以使用炼金术工具，并花费1小时将你体内的被动突变物质替换为你选择的另一种突变物质。",
-								"当你达到7级时，你将获得两种额外的被动突变药剂，分别在13级和18级时再次获得。"
+								"You inoculate your bloodstream with three {@filter Mutagens|optionalfeatures|feature type=LLABH:M} of your choice from the list at the end of this Occult Order description. You don't gain the benefits of these Latent Mutagens until you use a bonus action to Mutate.",
+								"During a long rest, you can spend 1 hour using alchemist's supplies to perform an alchemical procedure to replace one Latent Mutagen in your blood with another of your choice.",
+								"You gain two additional Latent Mutagens of your choice when you reach 7th level, and again at 13th and 18th level."
 							]
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Mutate|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3|LLABH"
+							"subclassFeature": "Mutation|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3|LLABH"
 						}
 					]
 				}
@@ -1373,7 +1416,7 @@
 			"foundryImg": "icons/skills/toxins/bottle-open-vapors-pink.webp"
 		},
 		{
-			"name": "Mutate",
+			"name": "Mutation",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
@@ -1381,8 +1424,8 @@
 			"subclassSource": "LLABH",
 			"level": 3,
 			"entries": [
-				"作为一个奖励动作，你可以进行变异，获得你的被动变异剂数量等于你的体质调整值（最少为1）的效益，持续10分钟。",
-				"变异后，你必须完成短暂或长时间休息，才能再次变异。如果你没有剩余使用次数，你可以进行 (`0`) 次变异。"
+				"As a bonus action you can Mutate, radically changing your physical form and gaining the benefits from a number of your Latent Mutagens equal to your Constitution modifier (minimum of 1 Mutagen) for the next 10 minutes, or until you use a bonus action to revert to your normal form.",
+				"You can Mutate once between each short or long rest at no cost, after which, you make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to Mutate again."
 			],
 			"foundrySystem": {
 				"ability": "con",
@@ -1397,6 +1440,21 @@
 			"foundryImg": "icons/skills/wounds/injury-stapled-flesh-tan.webp"
 		},
 		{
+			"name": "Monstrous Awareness",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 5,
+			"subclassShortName": "Alchemist",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"The unnatural power of the Mutagens in your blood also empowers your blood magic. When you make an ability check that uses alchemist's supplies, or use Hunter's                 Bane to analyze an Aberration, Monstrosity, or Ooze you can add one roll of your Rite Die to your roll."
+			],
+			"foundryImg": "icons/magic/perception/hand-eye-fire-blue.webp"
+		},
+		{
 			"name": "Enduring Mutation",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
@@ -1407,8 +1465,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你邪恶炼金实验的效力增强了。在每次长休结束时，你可以选择你的被动突变(%num%)之一。你获得该突变的好处，就像你已经突变了一样，直到你的下一个长休结束。",
-				"然而，当你进行变异时，这个持久变异剂将算作你获得益处的变异剂之一。"
+				"The potency of your dark alchemical experiments has grown. During a long rest, you can spend 1 hour using alchemist's supplies to make the effects of a single Latent Mutagen permanent, even when you aren't Mutated. When you Mutate, this Enduring Mutagen always counts as one of the Latent Mutagens that you gain the benefits of.",
+				"You can replace this Enduring Mutagen with another one of your Latent Mutagens during a subsequent long rest."
 			],
 			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
 		},
@@ -1423,8 +1481,9 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"你可以利用你体内的奇异毒素来折磨你的敌人。每个回合一次，当你用近战攻击命中一个生物时，你可以在该回合使用一个额外动作，迫使其进行一次体质豁免，豁免 DC 为你的契约豁免 DC。失败的话，它在 1 分钟内变成了 {@condition blinded} 和 {@condition stunned}。{@condition blinded}和{@condition stunned}要保持原文。",
-				"该生物可以在每个回合结束时以及每次受到伤害时重复进行豁免投掷，成功则效果结束。任何成功豁免此能力的生物在接下来的24小时内对此效果免疫。"
+				"You can weaponize the strange toxins in your blood to afflict your enemies. Once per turn when you hit a creature with a melee attack, you can force it to make a Constitution saving throw against your Rite save DC. On a failure, it takes acid damage equal to four rolls of your Rite Die and is blinded or stunned (your choice) for 1 minute. On a successful save, it takes half as much damage and suffers no other effects.",
+				"A blinded or stunned creature repeats this saving throw each time it takes damage, ending this effect on a success.",
+				"You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest. When you have no uses left you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use it again."
 			],
 			"foundrySystem": {
 				"save.scaling": "con"
@@ -1442,7 +1501,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"你掌握了身体变异的技巧。当你处于{@subclassFeature Mutate|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3||Mutated}时，你可以使用一个奖励动作，将你的一个主动变异换成你的一个被动变异。 (mutability)"
+				"You have gained mastery over your body's mutability. While you are {@subclassFeature Mutation|Alternate Blood Hunter|LLABH|Alchemist|LLABH|3||Mutated}, you can use a bonus action to switch one of your active Mutagens for one of your Latent Mutagens."
 			],
 			"foundryImg": "icons/skills/wounds/bone-broken-tooth-fang-red.webp"
 		},
@@ -1483,11 +1542,17 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你可以控制你的狼人病，使你能够改变形态。选择一个{@filter beast of CR 1 or lower, without a flying or swimming speed|bestiary|Challenge Rating=[&0;&1]|type=beast|speed type=!fly;!swim}，作为你的狼人病基于的动物的野兽形态。常见的野兽形态包括{@creature boar||boars}、{@creature brown bear||brown bears}、{@creature dire wolf||dire wolves}、{@creature tiger||tigers}和{@creature rat||rats}。",
-				"作为一个行动，你可以将 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 变身为你的野兽形态。当你变身为你的野兽形态时，你要遵循德鲁伊职业（Druid）在《玩家手册》第三章中找到的所有 {@classFeature Wild Shape|Druid||2} 规则。",
-				"如果你在野兽形态下做出生命牺牲，你会减少野兽形态和正常形态的最大生命值，但只会减少你野兽形态的当前生命值。",
-				"你的野兽形态变身持续时间最长为1小时。如果你的生命值降至0点，或者在你的回合使用一个奖励动作，你会提前恢复到正常形态。",
-				"一旦你变身为野兽形态，你必须完成一次短暂或长时间的休息，然后才能再次变身。"
+				"You can control your lycanthropy, allowing you to shift your form. Choose {@filter beast of CR 1 or lower, without a flying or swimming speed|bestiary|Challenge Rating=[&0;&1]|type=beast|speed type=!fly;!swim}, to be the Beast Form of the animal your lycanthropic curse is based on. Common Beast Forms are boars, brown bears, dire wolves, tigers, and rats.",
+				"As a bonus action, you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to shift into the Beast Form chosen above, following all the rules of Wild Shape from the Druid class, as found in Chapter 3 of the Player's Handbook, except for the following changes:",
+				{
+					"type": "list",
+					"items": [
+						"You retain your current and maximum hit points.",
+						"You gain temporary hit points equal to twice your level.",
+						"Your Beast Form's natural weapons use your Rite Die as their damage die, unless their damage die is higher."
+					]
+				},
+				"You remain in your Beast Form for 1 hour. You revert to your normal form if you are incapacitated or if you use your bonus action to revert. At the end of the hour, you can make another {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to remain in Beast Form for 1 hour."
 			],
 			"foundrySystem": {
 				"actionType": "utiL",
@@ -1516,11 +1581,11 @@
 					"items": [
 						"你的步行速度增加了10英尺。",
 						"你获得临时生命值，数值等同于你的等级。",
-						"你的双手和牙齿变成了爪子和獠牙，被视为简单武器。它们使用你的力量调整值进行攻击和伤害骰投，命中后造成的伤害为你的仪式骰掷两次的切割伤害。"
+						"You maifest claws and fangs that count as simple weapons with the Light property. On hit, they deal slashing damage equal to one roll of your Rite Die + your Strength modifier."
 					]
 				},
-				"你的混合形态变身持续1分钟。如果你的生命值降至0点，或者在你的回合使用一个奖励动作，你会提前恢复到正常形态。",
-				"一旦你变换成你的混合形态，你必须完成一次短暂或长时间的休息，然后才能再次变换。如果你没有剩余使用次数，你可以做一个 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 来再次变换成你的混合形态。 (Hybrid Form)"
+				"You remain in your Hybrid Form for 1 minute. You revert to your normal form early if you are incapacitated or if you use your bonus action to revert. At the end of the transformation you can make a Vital Sacrifice to extend it by 1 minute.",
+				"Once you transform into your Hybrid Form you must finish a short or long rest before you can transform again. If you have no uses left, you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to transform into your Hybrid Form again."
 			],
 			"foundrySystem": {
 				"actionType": "util",
@@ -1545,7 +1610,8 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你的狼人病提升了你的原始感知。当你进行基于你的听觉、视觉或嗅觉的智力（{@skill Perception}）或智力（{@skill Survival}）检定时，你的检定获得一个等同于你仪式骰的骰值的奖励。"
+				"你的狼人病加强了你的原始感官。当你进行基于听觉、视觉或嗅觉的感知或生存的智力（感知）或智力（生存）检定时，你的检定获得一个奖励，数值等同于你的仪式骰的一个骰值。",
+				"Also, whenever you use {@classFeature Hunter's Bane|Alternate Blood Hunter|LLABH|1} to analyze a beast, monstrosity, or a shapeshifter of any kind, you gain a bonus to your ability check equal to one roll of your Rite Die."
 			],
 			"foundryImg": "icons/magic/perception/eye-ringed-glow-angry-red.webp"
 		},
@@ -1564,9 +1630,9 @@
 				{
 					"type": "list",
 					"items": [
-						"你的野兽形态和混合形态的武器攻击被视为魔法攻击，以克服对非魔法攻击和伤害的抗性和免疫。",
-						"你获得对非魔法和非镀银攻击造成的钝击、穿刺和砍砍伤害的抗性。",
-						"如果你持有一个{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}的武器，你可以将效果转移到你形态的武器上。效果在你变形结束时返回到你的武器上。"
+						"Your Form's attacks count as magical for overcoming resistances and immunities to nonmagical damage.",
+						"You gain resistance to bludgeoning, piercing, and slashing damage from non-magical and non-silvered attacks.",
+						"If you are holding a {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} weapon when you shift, the effect transfers to one of your Form's weapons."
 					]
 				}
 			],
@@ -1603,7 +1669,7 @@
 			"foundryImg": "icons/creatures/mammals/wolf-shadow-black.webp"
 		},
 		{
-			"name": "Transformation Mastery",
+			"name": "Lycanthropic Mastery",
 			"source": "LLABH",
 			"className": "Alternate Blood Hunter",
 			"classSource": "LLABH",
@@ -1613,7 +1679,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"你已经完全掌握了流淌在你血液中的狼人诅咒。你可以随意变身成你的{@subclassFeature Beast Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3}或者你的{@subclassFeature Hybrid Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3}，无需做出{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}就可以。而且，你的野兽形态和混合形态将持续无限期。\n",
+				"You have achieved total mastery over the lycanthropic curse that flows in your blood. You can transform into your {@subclassFeature Beast Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3} or your {@subclassFeature Hybrid Form|Alternate Blood Hunter|LLABH|Pale Moon|LLABH|3} at will, without needing to make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to do so. Moreover, your Beast Form and Hybrid transformations last indefinitely.",
 				"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译时仍然应该输出为 (%num%)。\n\n在符合 dnd 跑团规则的前提下进行翻译，专有名词在翻译后应该在 `()` 中保留英文。\n\n最后，只要你在你的回合内结束这次移动时更靠近一个你能看到的敌对生物，你可以把 {@action Dash} 动作作为一个额外动作执行。"
 			],
 			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp"
@@ -1659,13 +1725,18 @@
 			"header": 2,
 			"entries": [
 				"你的灵魂被可怕的力量所污染。你所需的睡眠、食物和饮料量仅为你种族平均成员的一半。",
-				"根据当地的语言习惯，文本中像 (%num%) 这样的内容在翻译时仍应输出为 (%num%)。\n\n此外，你可以使用一个额外动作进入临时的光谱状态，该状态持续到你当前回合的结束。在此状态下，你对所有非魔法攻击的钝击、刺击和斩击伤害具有抗性，你可以穿过固体物体和生物，就像它们是困难地形一样。如果你在生物或物体内结束你的回合，你会立即被移动到最近的未占用空间，并承受每移动 5 英尺所造成的 {@damage 1d10} 的力量伤害。",
-				"一旦你使用了这个特性，你必须完成短休或长休，然后才能再次使用它。当你没有剩余次数可以使用这个特性时，你可以在作为奖励行动时将{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}重置以再次使用它。(%feature%)符合本地语言习惯，文本中像(%num%)这样的内容在翻译时仍应输出为(%num%)。翻译遵循DND跑团规则，专有名词在翻译后应保留英文括号中的内容。",
-				"当你在这个职业中达到特定等级时，这种幻影状态的持续时间会增加：在7级时持续1分钟，在13级时持续1小时，在18级时，你会一直保持在这个幻影状态中，直到你使用一个奖励动作来结束它。"
+				"Also, you can use a bonus action to enter a temporary Spectral State, which lasts until the end of your current turn. While in this state, you are resistant to all bludgeoning, piercing, and slashing damage from non-magical and non-silvered attacks, and you can move through solid objects and creatures as if they were difficult terrain. If you end your movement inside a creature or object, you are instantly shunted to the nearest unoccupied space, taking 1d10 force damage for every 5 feet you were shunted.",
+				"You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all uses when you finish a long rest. You can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use this feautre again.",
+				"At certain levels in this class, the duration of this Spectral State increases: at 7th-level (1 minute), 13th-level (1 hour), and at 18th level (indefinite). You can end this state as a bonus action."
 			],
 			"foundrySystem": {
 				"duration.units": null,
-				"range.units": "self"
+				"range.units": "self",
+				"uses": {
+					"value": "@abilities.con.mod",
+					"max": "@abilities.con.mod",
+					"per": "lr"
+				}
 			},
 			"foundryImg": "icons/magic/light/projectile-smoke-blue.webp"
 		},
@@ -1680,13 +1751,14 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你的血魔法在对抗不死生物时特别强大。当你使用{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}时，你可以赋予武器你所属组织标志性的光辉魔法，为其在持续时间内增加以下额外效果：(Order)",
+				"Your blood magic is especially potent when used against the undead. whenever you use Hunter's Rite to analyze Undead, you can add one roll of your Rite Die to your ability check.",
+				"Also, when you use {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}, you can choose to empower your Crimson Offering with the signature magicks of your Order, granting you the following additional benefits:",
 				{
 					"type": "list",
 					"items": [
 						"献祭之赤红附加伤害为光系。",
 						"你获得对死灵伤害的抗性。",
-						"这把武器在半径为20英尺的范围内散发明亮的光芒，再额外照亮20英尺的范围。"
+						"The weapon sheds bright light in a 30-foot radius, and dim light an additional 20 feet beyond that."
 					]
 				}
 			],
@@ -1709,8 +1781,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你对不死族的知识和经验增强了你的血之魔法的力量。你可以用你的血之仪式(Blood Rites)瞄准任何生物，即使他们的血管里没有血。",
-				"根据当地语言习惯，并且像 (%num%) 这样的文本在翻译时应保持为 (%num%)。\n\n此外，每次完成一次长休时，你可以选择一个你已知的血仪。你可以再多使用一次该仪式，直到你必须再次进行 {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1} 的检定才能再次使用它。"
+				"Your knowledge and experience with undead enhances the power of your blood magic. You can target any creature with your {@classFeature Blood Rites|Alternate Blood Hunter|LLABH|2}, even if they do not have blood in their veins.",
+				"In addition, at the end of each long rest you can choose one Blood Rite you know. You can invoke that Rite one additional time before you must make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use it again."
 			],
 			"foundryImg": "icons/skills/toxins/poison-skull-herbs-bottle-pink.webp"
 		},
@@ -1727,7 +1799,7 @@
 			"entries": [
 				"你运用血魔法的力量驱逐外域生物的影响。作为你回合的额外行动，你可以选择一个距离你30英尺内、能听到你说话的、目前处于{@condition charmed}、{@condition frightened} 或被魔法控制状态的愿意生物，并立即结束其中一种效果。 {@condition charmed}、{@condition frightened} 的翻译需遵循本地语言习惯，并且将其保留为英文括号内的内容。",
 				"如果造成目标这种状态的生物也在你的30英尺内，它必须通过一次以你的仪式豁免 DC 为基准的感知豁免检定，否则它会受到等同于你仪式骰的三次掷骰结果的辐射伤害。",
-				"一旦您使用此功能，您必须完成一次短休息或长休息，然后才能再次使用它。当您没有剩余使用次数时，您可以进行{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来再次使用此功能。 (dnd跑团规则)"
+				"Once you use this feature you must finish a short or long rest before you can use it again. When you have no uses left, you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use this feature again."
 			],
 			"foundrySystem": {
 				"damages.parts": [
@@ -1833,7 +1905,8 @@
 							"type": "entries",
 							"name": "Sunlight Sensitivity",
 							"entries": [
-								"在符合当地语言习惯的前提下，文本中像 (%num%) 这样的内容在翻译中应保持为 (%num%)。\n- 翻译需遵循DND跑团规则，专有名词在翻译后应用括号`()`保留英文。\n\n当你、你攻击的目标或者你试图看见的东西处于直射阳光下时，你的攻击检定和依赖视觉的感知 ({@skill Perception}) 检定具有劣势。"
+								"在符合当地语言习惯的前提下，文本中像 (%num%) 这样的内容在翻译中应保持为 (%num%)。\n- 翻译需遵循DND跑团规则，专有名词在翻译后应用括号`()`保留英文。\n\n当你、你攻击的目标或者你试图看见的东西处于直射阳光下时，你的攻击检定和依赖视觉的感知 ({@skill Perception}) 检定具有劣势。",
+								"If you already have this trait from another source then you gain vulnerability to radiant damage."
 							]
 						}
 					]
@@ -1851,9 +1924,9 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你的诅咒让你对血魔法有更强的控制力。你学会了一个额外的血脉仪式，但它不计入你已知的血脉仪式总数中。",
-				"根据当地语言习惯，文本中像(%num%)这样的内容在翻译中应该保持为(%num%)。\n\n在执行血脉仪式时，当你掷出仪式骰(Rite Die)时，你应该使用{@dice d6}，而不是{@dice d4}。在某些等级上，你为血脉仪式掷出的仪式骰再次增加：在第5级({@dice d8})，第11级({@dice d10})，以及第17级({@dice d12})。",
-				"根据当地语言习惯，文本中像 (%num%) 这样的内容在翻译中应保持为 (%num%)。\n\n翻译需符合 DND 桌游群规，并且专有名词在翻译后应在 `()` 中保留英文。\n\n最后，当你使用 {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2} 时，你可以选择额外伤害为死灵属性。"
+				"Your curse grants you increased control over your blood magic. You learn one additional Blood Rite, but it doesn't count against your total number of {@classFeature Blood Rites|Alternate Blood Hunter|LLABH|2} Known.",
+				"Also, your affinity for blood magic increases the size of your Rite Die to a d6. At certain Blood Hunter levels, your Rite Die increases again: at 5th level it becomes a {@dice d8}, at 11th level a {@dice d10}, and finally a {@dice d12} at 17th level.",
+				"Finally, whenever you use {@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}, you can choose for its bonus damage to be necrotic damage."
 			],
 			"foundryImg": "icons/skills/wounds/blood-cells-vessel-red.webp"
 		},
@@ -1868,7 +1941,8 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"你的组织受到的古老疾病已经无法逆转地改变了你的生理特征。你的牙齿变长成为尖牙，对你来说算作自然武器。这些尖牙使用你的力量调整值进行攻击和伤害骰投掷，击中目标时，它们造成的穿刺伤害等同于你的仪式骰的一次投掷。"
+				"The ancient disease of your Order has irreparably changed your physiology. Your teeth elongate into fangs which you can use for unarmed strikes. On hit, they deal piercing damage equal to one roll of your Rite Die + your Strength modifier.",
+				"Moreover, whenever you use Hunter's Bane to analyze an Undead, you can add one roll of your Rite Die to the check."
 			],
 			"foundryImg": "icons/creatures/abilities/fang-tooth-blood-red.webp"
 		},
@@ -1883,7 +1957,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你可以从你的敌人身上吸取生命精华。当你用毒牙攻击命中一只生物时，你可以恢复等于造成穿刺伤害的最大生命值的数量的生命值。",
+				"You can drain the very life-essence from your foes. When you hit a creature with a fang attack, you can restore a number of your maximum hit points equal to the piercing damage dealt. Piercing damage from your fang attacks ignores resistances and immunities to non-magical damage.",
 				"使用此功能恢复最大生命值后，必须完成短休或长休，才能再次使用。"
 			],
 			"foundrySystem": {
@@ -1903,9 +1977,9 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你的吸血鬼力量在黑暗中增强，在阳光下减弱。当你使用血脉仪式或其他血猎者特性对生物造成死灵伤害时，你获得的临时生命值等同于所造成的死灵伤害。",
-				"在符合当地语言习惯的情况下，文本中的类似 (%num%) 的部分应在翻译后仍保留为 (%num%)。\n\n当你拥有此特性提供的临时生命值时，你对来自非魔法和非银镀攻击的死灵、毒素、以及钝击、穿刺和斩击伤害具有抗性，并且对 {@condition poisoned} 状态免疫。",
-				"然而，如果你受到辐射伤害，那么你从这个特性获得的所有临时生命值都会立即消失，并且辐射伤害会转而作用于你的普通生命值。"
+				"When you deal necrotic damage to a creature with a Blood Rite or another Blood Hunter feature, you can choose to gain temporary hit points equal to half the necrotic damage dealt.",
+				"While these temporary hit points last, you are resistant to necrotic, poison, and all bludgeoning, piercing, and slashing damage from all non-magical and non-silvered attacks.",
+				"However, if you take radiant damage, all of your temporary hit points from this feature are immediately dispelled, and the total radiant damage is applied to your normal hit points."
 			],
 			"foundrySystem": {
 				"actionType": "heal",
@@ -1927,8 +2001,8 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"你邪恶的力量让你能够躲避敌人。当你能看见的生物用攻击命中你时，你可以使用你的反应变成一团旋转的雾气。触发的攻击自动未命中，你会立刻重新出现在你能看见的30英尺内的一个空地上。",
-				"一旦你使用了这个反应，你必须完成一个短时间或长时间的休息，然后才能再次使用它。当你没有剩余使用次数时，你可以做一个{@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|1}来再次使用这个反应。"
+				"When a creature you can see hits you with an attack, you can use your reaction to turn into a cloud of swirling mist, and the triggering attack automatically misses. You instantly reappear in an unoccupied space you can see within 30 feet.",
+				"Once you use this reaction you must finish a short or long rest before you can use it again. When you have no uses left, you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use this reaction again."
 			],
 			"foundrySystem": {
 				"activation.condition": "When a creature you can see hits you with an attack",
@@ -1955,7 +2029,7 @@
 					"type": "list",
 					"items": [
 						"你获得一个与你步行速度相同的飞行速度。",
-						"当你用毒牙攻击伤害生物时，它在你的下一个回合结束前对抗你的血脉仪式效果的豁免扑克有劣势。",
+						"When you damage a creature with a fang attack, it has disadvantage on its saving throws to resist the effects of your {@classFeature Blood Rites|Alternate Blood Hunter|LLABH|2} until the end of your next turn.",
 						"每过10年，你的身体只会变老1年。"
 					]
 				}
@@ -2095,8 +2169,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"你可以在武器攻击中无缝地编织小型咒语。当你在你的回合中采取行动时，你可以在你的攻击之一位置上施放一个巫骑战士的小咒语。",
-				"根据当地语言习惯，并且像(%num%)这样的文本在翻译中应保持为(%num%)。\n\n此外，当你在持有一件由{@classFeature Crimson Offering|Alternate Blood Hunter|LLABH|2}强化的武器时施放巫士骑士法术时，你可以使该法术造成你的赤色献祭的伤害类型取代该法术的常规伤害。 (Witch Knight)"
+				"You seamlessly weave minor spells with weapon attacks. If you use your action to cast a Witch Knight spell, or activate a spell you are concentrating on (such as witch bolt), you can make a weapon attack as a bonus action on that turn.",
+				"此外，当你在持有一把由(Crimson Offering)赋予力量的武器时施放(Witch Knight)法术，你可以使该法术造成(Crimson Offering)对应的伤害类型，而不是该法术的普通伤害。"
 			],
 			"foundryImg": "icons/magic/unholy/projectile-helix-blood-red.webp"
 		},
@@ -2126,7 +2200,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"你可以把你的敌人的死奉献给你的邪能力量，以提升你的能力。当有生物在你30英尺内死亡时，你可以使用一次反应来恢复一个已耗尽的契约魔法法术位，或者获得临时生命值，数值等同于你的仪式骰的一次投掷加上你的智力修正。 (Eldritch Power)",
+				"You can offer the death of your foes to your Eldritch Power for enhanced magicks. If a hostile creature dies within 30 feet of you, you can use your reaction to regain one Pact Magic spell slot, or gain temporary hit points equal to one roll of your Rite Die + your Intelligence modifier.",
 				"使用此特性后，你必须完成一次短休或长休，才能再次使用它。"
 			],
 			"foundrySystem": {
@@ -2134,7 +2208,7 @@
 				"activation": {
 					"cost": 1,
 					"type": "reaction",
-					"condition": "When a creature dies within 30 feet of you"
+					"condition": "When a hostile creature dies within 30 feet of you"
 				},
 				"damage.parts": [
 					[
@@ -2144,6 +2218,144 @@
 				]
 			},
 			"foundryImg": "icons/magic/unholy/strike-body-explode-disintegrate.webp"
+		},
+		{
+			"name": "Order of Heretics",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 5,
+			"subclassShortName": "Heretic",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"加入这个秩序的血猎人利用炼金术和黑暗变形魔法来改变他们的身体形态。他们血液中的邪恶力量通过实验性的变种剂触发了巨大的生理变化。这些变种体常常努力进化成为终极的身体形态。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blasphemous Prayer|Alternate Blood Hunter|LLABH|Heretic|LLABH|3|LLABH"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Heretical Knowledge|Alternate Blood Hunter|LLABH|Heretic|LLABH|3|LLABH"
+				}
+			]
+		},
+		{
+			"name": "Blasphemous Prayer",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 5,
+			"subclassShortName": "Heretic",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You are able to channel divine energies despite your status as a heretic. You gain two Channel Divinity options: Censure the Divine, which is detailed below, and one Channel Divinity of your choice from those available to Cleric Divine Domains at 2nd level. For the second, you use your Blood Hunter level in place of any mentions of Cleric level and your Rite save DC.",
+				"You can use each of your Channel Divinities once, and you regain the ability to do so when you finish a long rest.",
+				"When you have no uses left, you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use either of your Channel Divinity options again.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Censure the Divine|Alternate Blood Hunter|LLABH|Heretic|LLABH|3|LLABH"
+						}
+					]
+				}
+			],
+			"foundryImg": "icons/magic/lightning/bolt-strike-smoke-yellow.webp"
+		},
+		{
+			"name": "Censure the Divine",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"foundryImg": "icons/skills/wounds/injury-stapled-flesh-tan.webp",
+			"subclassShortName": "Heretic",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"entries": [
+				"You utter blasphemies painful for divine entities to hear. Any Celestials, Fiends, or other creatures capable of divine magic (such as Clerics or Paladins) of your choice within 30 feet of you must succeed a Charisma saving throw against your Rite save DC or be incapacitated and restrained for 1 minute.",
+				"Creatures repeat this saving throw at the end of their turns and when they take damage, ending this effect on a success."
+			]
+		},
+		{
+			"name": "Heretical Knowledge",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 5,
+			"subclassShortName": "Heretic",
+			"subclassSource": "LLABH",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Despite your beliefs, you understand the traditional religious practices, rites, and prayers. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in Religion. If already proficient, you add double your proficiency bonus to all Religion checks.",
+						"You learn two Cantrips of your choice from the Cleric spell list. Constitution is your spellcasting modifier.",
+						"If you use Hunter's Bane to analyze a Celestial, Fiend, or Undead, you add one roll of your Rite Die to your ability check."
+					]
+				}
+			],
+			"foundryImg": "icons/sundries/books/book-embossed-clasp-gold-brown.webp"
+		},
+		{
+			"name": "Unholy Restoration",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 5,
+			"subclassShortName": "Heretic",
+			"subclassSource": "LLABH",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You can draw life from one creature and transfer it to another in a dark mockery of the divine. As an action, you can force a creature you can see within 30 feet to make a Constitution saving throw against your Rite save DC. On a failure, it takes necrotic damage equal to four rolls of your Rite Die, and half as much necrotic damage on a success. It has disadvantage on its saving throw if you touch it as part of this action.",
+				"As part of the action, a creature you can see within 30 feet regains hit points equal to half the necrotic damage dealt.",
+				"You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all uses when you finish a long rest. When you have no uses left, you can make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to use this feature again."
+			],
+			"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp"
+		},
+		{
+			"name": "Divine Anathema",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 5,
+			"subclassShortName": "Heretic",
+			"subclassSource": "LLABH",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"When you use Censure the Divine you can empower it with a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2}, forcing creatures of your choice within 30 feet must make on a Constitution saving throw against your Rite save DC, in place of its normal effects. On a failed save, creatures have their speed reduced by 10 feet.",
+				"Creatures repeat this saving throw at the end of each of their turns. On a failure, their speed is further reduced by 10 feet, and on a success they regain 10 feet of speed. This effect ends when a creature's speed becomes 0, at which point it is petrified, or when a creature's speed returns to normal.",
+				"Celestials and Fiends have disadvantage on saving throws to resist this feature. Once a creature succeeds against this feature it is immune to its effect until the following dawn."
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			},
+			"foundryImg": "icons/magic/earth/strike-body-stone-crumble.webp"
+		},
+		{
+			"name": "Utmost Transgression",
+			"source": "LLABH",
+			"className": "Alternate Blood Hunter",
+			"classSource": "LLABH",
+			"page": 5,
+			"subclassShortName": "Heretic",
+			"subclassSource": "LLABH",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You use your occult knowledge to bind denizens of heaven. As an action, you can cast {@spell summon celestial|tce}, at 5th-level, using Constitution as its spellcasting modifier. The Celestial is bound against its will by unholy blood magic, allowing you to ignore the material component of the spell, but the duration of the spell is reduced to 1 minute.",
+				"Once you cast this spell you must finish a short or long rest before you can cast it this way again."
+			],
+			"foundryImg": "icons/skills/wounds/bone-broken-tooth-fang-red.webp"
 		}
 	],
 	"foundrySubclassFeature": [
@@ -2175,12 +2387,15 @@
 						"name": "Natural Weapons (Hybrid Form Only)",
 						"type": "M",
 						"weaponCategory": "simple",
+						"property": [
+							"L"
+						],
 						"foundrySystem": {
 							"ability": "str",
 							"equipped": true,
 							"damage.parts": [
 								[
-									"2@scale.alternate-blood-hunter.rite-die + @mod",
+									"@scale.alternate-blood-hunter.rite-die + @mod",
 									"slashing"
 								]
 							]
@@ -2389,11 +2604,6 @@
 							"key": "system.traits.dr.bypasses",
 							"mode": "CUSTOM",
 							"value": "sil"
-						},
-						{
-							"key": "system.traits.ci.value",
-							"mode": "ADD",
-							"value": "poisoned"
 						}
 					]
 				}
@@ -2459,7 +2669,7 @@
 				"LLABH:M"
 			],
 			"entries": [
-				"你长出了怪异的眼柄或者显现出额外的眼睛。你的视野扩展至60英尺范围内。如果你已经拥有黑暗视觉，其范围将增加60英尺。在这个范围内，你还可以穿透魔法黑暗。 (DND Running Group)"
+				"Your eyes become voids of inky darkness, You gain darkvision out to a 60-foot radius. If you have darkvision from your race or another feature its range increases by 60 feet. Within this radius, you can also see through magical darkness."
 			],
 			"foundryEffects": [
 				{
@@ -2503,7 +2713,7 @@
 			]
 		},
 		{
-			"name": "Deviant Glide",
+			"name": "Monstrous Glide",
 			"source": "LLABH",
 			"page": 6,
 			"foundryImg": "icons/commodities/biological/wing-lizard-pink-purple.webp",
@@ -2511,81 +2721,7 @@
 				"LLABH:M"
 			],
 			"entries": [
-				"你长出了类似蝙蝠的皮翼，用于滑翔。当你从至少5英尺高的地方摔落并且不是{@condition incapacitated}时，你在计算摔落伤害时可以减少最多100英尺的距离，并且你可以在水平方向上每摔落1英尺移动2英尺。{@condition incapacitated}"
-			]
-		},
-		{
-			"name": "Elemental Resistance",
-			"source": "LLABH",
-			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
-			"page": 6,
-			"featureType": [
-				"LLABH:M"
-			],
-			"entries": [
-				"你的实验使你对元素具有更强的抵抗力。你在进行变异时可以选择获得对酸、寒冷、火焰、毒素或闪电伤害的抗性（你的选择）。"
-			],
-			"foundryEffects": [
-				{
-					"name": "Acid Resistance",
-					"transfer": true,
-					"disabled": true,
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": "ADD",
-							"value": "acid"
-						}
-					]
-				},
-				{
-					"name": "Cold Resistance",
-					"transfer": true,
-					"disabled": true,
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": "ADD",
-							"value": "cold"
-						}
-					]
-				},
-				{
-					"name": "Fire Resistance",
-					"transfer": true,
-					"disabled": true,
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": "ADD",
-							"value": "fire"
-						}
-					]
-				},
-				{
-					"name": "Poison Resistance",
-					"transfer": true,
-					"disabled": true,
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": "ADD",
-							"value": "poison"
-						}
-					]
-				},
-				{
-					"name": "Lightning Resistance",
-					"transfer": true,
-					"disabled": true,
-					"changes": [
-						{
-							"key": "system.traits.dr.value",
-							"mode": "ADD",
-							"value": "lightning"
-						}
-					]
-				}
+				"You grow bat-like skin flaps that you use to glide. When you fall at least 10 feet and aren't incapacitated, you can subtract up to 100 feet from your fall when you calculate fall damage, and you can move horizontally 2 feet for every 1 foot you fall."
 			]
 		},
 		{
@@ -2597,21 +2733,20 @@
 				"LLABH:M"
 			],
 			"entries": [
-				"你的腿变得异常粗壮或强壮。你的行走速度增加了，增加值等于你体质调整值的5倍（最少为5英尺）。"
+				"Your legs grow unnaturally thick and powerful, but become grotesque to look upon. You can take the Dash action as a bonus action on each of your turns."
+			]
+		},
+		{
+			"name": "Knotted Flesh",
+			"source": "LLABH",
+			"page": 6,
+			"foundryImg": "icons/commodities/leather/leather-bolt-worn-tan.webp",
+			"featureType": [
+				"LLABH:M"
 			],
-			"foundryEffects": [
-				{
-					"name": "Walking Speed Bonus",
-					"transfer": true,
-					"disabled": true,
-					"changes": [
-						{
-							"key": "system.attributes.movement.walk",
-							"mode": "ADD",
-							"value": "+5*max(1, @abilities.con.mod)"
-						}
-					]
-				}
+			"entries": [
+				"Your skin becomes hard and knotted like that of a tree or a great beast. You can use your Constitution modifier in place of Dexterity when calculating your Armor Class in armor.",
+				"Moreover, so long as you are not wearing any armor, your Armor Class is equal to 13 + your Constitution modifier."
 			]
 		},
 		{
@@ -2623,7 +2758,8 @@
 				"LLABH:M"
 			],
 			"entries": [
-				"你的身体变得又滑又柔软。作为一个奖励动作，你可以变形成（或从中恢复）一种类似软泥怪的状态，使你能够挤过宽度仅为1英寸的缝隙，但你无法攻击。"
+				"Your body can become slimy and pliable. As a bonus action, you can morph into (or revert from) an ooze-like state which allows you to squeeze through gaps as narrow as 1-inch.",
+				"Your ooze-like state has no effect on your weapons, armor, clothing, or objects, and you cannot attack while you are in it."
 			]
 		},
 		{
@@ -2686,7 +2822,7 @@
 			]
 		},
 		{
-			"name": "Corrosive Secretions",
+			"name": "Corrosive Blood",
 			"source": "LLABH",
 			"page": 6,
 			"foundryImg": "icons/magic/acid/projectiles-trio-salvo.webp",
@@ -2699,7 +2835,7 @@
 				}
 			],
 			"entries": [
-				"当你受到攻击并且攻击者在30英尺内时，你的伤口会释放出腐蚀性酸液。你可以使用你的反应，对攻击者造成酸性伤害，伤害值为你的仪式骰子的一次投掷结果加上你的体质调整值。"
+				"Your wounds expel a corrosive acid. Whenever you are hit by an attack and the attacker is within 30 feet, you can use your reaction to deal acid damage to the attacker equal to one roll of your Rite Die + your Constitution modifier."
 			],
 			"foundrySystem": {
 				"ability": "con",
@@ -2710,6 +2846,59 @@
 					]
 				]
 			}
+		},
+		{
+			"name": "Dislocated Reach",
+			"source": "LLABH",
+			"page": 6,
+			"foundryImg": "icons/creatures/tentacles/tentacle-earth-green.webp",
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"Your strange experiments allow your joints to unnaturally stretch, crack, and expand. The length of your arms doubles, and the reach of your melee attacks increases by 5 feet."
+			]
+		},
+		{
+			"name": "Engorged Physique",
+			"source": "LLABH",
+			"page": 6,
+			"foundryImg": "icons/creatures/mammals/ox-buffalo-horned-green.webp",
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"Chemicals forcefully enlarge your body, giving you a hideous physique. You grow by one size (for example, from Medium to Large), your reach increases by 5 feet, your weight multiplies by eight, and your melee weapon attacks deal bonus damage equal to one roll of your Rite Die on hit.",
+				"If there is not room for you to grow in size, you grow to the maximum size allowed by your current surroundings."
+			]
+		},
+		{
+			"name": "Toxic Symbiosis",
+			"source": "LLABH",
+			"page": 6,
+			"foundryImg": "icons/creatures/slimes/slime-movment-dripping-green.webp",
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 7
+				}
+			],
+			"entries": [
+				"When you hit a creature with a melee attack, you can use a bonus action on that turn to suck the life from its wound and gain temporary hit points equal to your Constitution modifier.",
+				"This feature cannot be used against Constructs or Undead."
+			]
 		},
 		{
 			"name": "Inoculated Vigor",
@@ -2725,7 +2914,7 @@
 				}
 			],
 			"entries": [
-				"你获得对酸性和毒素伤害的免疫，并且在抵抗 {@condition poisoned} 状态的豁免投掷中具有优势。 (dnd running group)"
+				"You inoculate yourself against all but the worst poisons. You gain immunity to both acid and poison damage, and you gain immunity to all disease and to the poisoned condition."
 			],
 			"foundryEffects": [
 				{
@@ -2742,37 +2931,15 @@
 							"key": "system.traits.di.value",
 							"mode": "ADD",
 							"value": "poison"
+						},
+						{
+							"key": "system.traits.ci.value",
+							"mode": "ADD",
+							"value": "poisoned"
 						}
 					]
 				}
 			]
-		},
-		{
-			"name": "Toxic Vitality",
-			"source": "LLABH",
-			"page": 6,
-			"foundryImg": "icons/magic/life/heart-cross-strong-green.webp",
-			"featureType": [
-				"LLABH:M"
-			],
-			"prerequisite": [
-				{
-					"level": 7
-				}
-			],
-			"entries": [
-				"当你战斗时，你的身体会自我修复。在你处于突变状态时，每个回合开始时，你会获得临时生命值，数值等同于你的体质调整值（最少为1）。（Constitution）"
-			],
-			"foundrySystem": {
-				"ability": "con",
-				"actionType": "heal",
-				"damage.parts": [
-					[
-						"max(1, @mod)",
-						"temphp"
-					]
-				]
-			}
 		},
 		{
 			"name": "Viscous Grip",
@@ -2788,7 +2955,8 @@
 				}
 			],
 			"entries": [
-				"你的手和脚分泌出一种黏性物质。你获得一个等同于你行走速度的攀爬速度，而且你可以在不进行属性检定的情况下攀爬困难表面。"
+				"Your hands and feet secrete a sticky substance. You gain a climbing speed equal to your walking speed, you can climb difficult surfaces without needing making an ability check.",
+				"Also, creatures have disadvantage on ability checks or saving throws they maketo escape being grappled by you."
 			],
 			"foundryEffects": [
 				{
@@ -2806,10 +2974,10 @@
 			]
 		},
 		{
-			"name": "Grappling Appendages",
+			"name": "Accelerated Physiology",
 			"source": "LLABH",
 			"page": 6,
-			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+			"foundryImg": "icons/creatures/abilities/tail-strike-bone-orange.webp",
 			"featureType": [
 				"LLABH:M"
 			],
@@ -2819,7 +2987,56 @@
 				}
 			],
 			"entries": [
-				"你的两臂旁长出两个类似触手的附属器官。它们是天然武器，在命中时造成与你的仪式骰子相等的钝击伤害。如果你用近战攻击命中一只生物，你可以作为一个额外动作尝试用这些附属器官{@action grapple}它。这些附属器官不够灵巧，不能使用武器或专用工具。（Rite Die）"
+				"Chemicals enhance your physical ability and increase your aggression. When you take the Attack action on your turn, you can make three attacks instead of the normal two.",
+				"However, if you end your turn and you have not attacked another creature since the end of your previous turn, then you take necrotic damage equal to one roll of your Rite Die."
+			]
+		},
+		{
+			"name": "Alchemical Intellect",
+			"source": "LLABH",
+			"page": 6,
+			"foundryImg": "icons/commodities/biological/organ-brain-pink-purple.webp",
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"Strange chemicals enhance your mind at the expense of the body. You have advantage on all Intelligence, Wisdom, and Charisma saving throws, but you have disadvantage on all Strength, Dexterity, and Constitution saving throws."
+			]
+		},
+		{
+			"name": "Hideous Regeneration",
+			"source": "LLABH",
+			"page": 6,
+			"foundryImg": "icons/commodities/biological/organ-heart-black.webp",
+			"featureType": [
+				"LLABH:M"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"If you begin your turn with less than half of your hit points remaining, but at least 1 hit point, you instantly regain hit points equal to your Constitution modifier (minimum of 1)."
+			]
+		},
+		{
+			"name": "Grappling Appendage",
+			"source": "LLABH",
+			"page": 6,
+			"foundryImg": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+			"featureType": [
+				"LLABH:M"
+			],
+			"entries": [
+				"You grow an extra appendage from your back that resembles a tentacle. This appendage has a reach of 10 feet and can be used to make unarmed strikes, shove, and grapple. On hit, it deals bludgeoning damage equal to one roll of your Rite Die.",
+				"This appendage can be used for simple tasks, but it cannot wield weapons or shields, or manipulate objects or tools.",
+				"Starting at 13th level, this Mutagen grows two appendages."
 			],
 			"foundrySystem": {
 				"actionType": "mwak",
@@ -2845,7 +3062,7 @@
 				}
 			],
 			"entries": [
-				"你的皮肤变得坚硬，类似于可怕的昆虫或爬行动物。你的护甲等级增加，增加值为你体质调整值的一半（向下取整）。"
+				"Your skin hardens resembling that of an terrible insectoid creature. You gain a +2 bonus to your Armor Class, and you gain resistance to all bludgeoning, piercing, and slashing damage from non-magical and non-silvered attacks."
 			],
 			"foundryEffects": [
 				{
@@ -2856,14 +3073,39 @@
 						{
 							"key": "system.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": "+floor(@abilities.con.mod / 2)"
+							"value": "2"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "mgc"
+						},
+						{
+							"key": "system.traits.dr.bypasses",
+							"mode": "CUSTOM",
+							"value": "sil"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Perverted Flight",
+			"name": "Monstrous Flight",
 			"source": "LLABH",
 			"page": 6,
 			"foundryImg": "icons/creatures/birds/corvid-flying-wings-purple.webp",
@@ -2872,7 +3114,7 @@
 			],
 			"prerequisite": [
 				{
-					"level": 14
+					"level": 13
 				}
 			],
 			"entries": [
@@ -2902,8 +3144,19 @@
 				"LLABH:BR"
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式，迫使你能看到的距离30英尺内的生物进行一次体质豁免检定。如果未通过豁免检定，直到你的下一个回合结束，它在力量和敏捷属性检定和豁免检定上都有劣势，并且每次进行武器攻击时受到等同于你仪式骰的一次伤害。",
-				"当你施展这个仪式时，你可以进行一次生命牺牲来强化它。如果你这样做，效果持续1分钟。生物可以在每个回合结束时重复豁免投掷，成功则结束效果。"
+				"As a bonus action, you invoke this Rite and force one creature that you can see within 30 feet to make a Constitution saving throw. On a failed save, it has disadvantage on Strength and Dexterity ability checks and saving throws, and each time it makes an attack it takes necrotic damage equal to one roll of your Rite Die. These effects end at the end of your next turn.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Agony",
+							"entries": [
+								"The effects of this Blood Rite last for 1 minute. The creature repeats this saving throw at the end of each of its turns, ending the effect early on a success."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"damage.parts": [
@@ -2924,8 +3177,19 @@
 				"LLABH:BR"
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式，并诅咒一个你能看到的距离30英尺内的生物，使其容易受到外部影响。在接下来的一分钟里，你选择的生物若试图用魅力检定来影响它，它们的检定获得一个等同于你仪式骰的一次掷骰的奖励。",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来增强它。如果你这样做，该生物在你的下一个回合结束前被迫进行的下一个智力、感知或魅力豁免检定将有劣势。"
+				"As a bonus action, you invoke this Rite and curse a creature you can see within 30 feet, making it susceptible to outside influence. For 1 minute, creatures of your choice who make a Charisma check to influence the target can add one roll of your Rite Die to the result of their ability check.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Anxiety",
+							"entries": [
+								"The creature also has disadvantage on the first Intelligence, Wisdom, or Charisma saving throw it is forced to make before the end of your next turn."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"formula": "1@scale.alternate-blood-hunter.rite-die",
@@ -2944,8 +3208,19 @@
 				"LLABH:BR"
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式，并迫使一个你能看到的、距离你30英尺内的大型或更小的生物进行一次力量豁免检定。如果未通过豁免检定，它的速度降为0，直到你的下一个回合结束前它不能使用反应。",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，你可以以任何大小的生物为目标，这个仪式的效果持续1分钟。目标可以在每个回合结束时重复进行豁免扑救，成功则结束这个仪式的效果。"
+				"As a bonus action, you invoke this Rite and force a Large or smaller creature that you can see within 30 feet to make a Strength saving throw. On a failed save, its speed is reduced to 0 and it can't use reactions until the end of your next turn.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Binding",
+							"entries": [
+								"You can target a creature of any size with this Rite, and it lasts for 1 minute. Creatures can repeat this saving throw at the end end each of their turns, ending the effects on a success."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"save.scaling": "con"
@@ -2960,8 +3235,19 @@
 				"LLABH:BR"
 			],
 			"entries": [
-				"作为一个额外动作，你可以激活这个仪式，并诅咒你能看到的一个生物，距离30英尺，他是{@status concentration||concentrating}。在你的下一个回合开始之前，它必须从每次体质豁免检定中减去一个你的仪式骰的点数。\n\n(Note: Proper noun \"Rite Die\" remains in English within `()`, according to the given instructions.)",
-				"当你使用这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，目标必须从每次用于维持其当前法术专注的体质豁免投掷中减去你的仪式骰的一个点数。"
+				"As a bonus action, you invoke this Rite to curse one creature you can see within 30 feet that is concentrating on a spell. It must succeed a Wisdom saving throw or lose concentration.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Confusion",
+							"entries": [
+								"The creature must subtract one roll of your Rite Die from its saving throw to resist this Rite."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"formula": "1@scale.alternate-blood-hunter.rite-die"
@@ -2976,12 +3262,35 @@
 				"LLABH:BR"
 			],
 			"entries": [
-				"当你能看到的生物在30英尺内进行攻击检定时，你可以使用你的反应来发动这个仪式。目标必须从其攻击检定中减去一个你的仪式骰的点数。你可以在生物掷骰后，但在你知道其攻击是否命中目标之前，发动这个仪式。",
-				"当你使用此仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，你必须在你的下一个回合开始前从所有攻击骰中减去一个你的仪式骰的点数。"
+				"When a creature that you can see within 30 feet hits another creature you can see with an attack, you can use a reaction to invoke this Rite. The attacker subtracts one roll of your Rite Die from its attack roll, potentially turning a hit into a miss.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Blindness",
+							"entries": [
+								"The creature must also subtract one roll of your Rite Die from every weapon and spell attack roll it makes until the end of that creature's following turn."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"formula": "1@scale.alternate-blood-hunter.rite-die"
 			}
+		},
+		{
+			"name": "Rite of Knowledge",
+			"source": "LLABH",
+			"page": 12,
+			"foundryImg": "icons/sundries/scrolls/scroll-plain-red.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"entries": [
+				"When you learn this Rite you learn four ritual spells of 3rd-level or lower from any spell list. You can only cast them as rituals, and to do so you must make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2}."
+			]
 		},
 		{
 			"name": "Rite of Revelation",
@@ -2992,8 +3301,20 @@
 				"LLABH:BR"
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式并选择一个你能看到的在30英尺内的生物。你立即了解这个生物拥有的一个伤害抗性、免疫或者弱点。如果它没有以上任何特性，那么Dungeon Master（地牢主）必须选择揭示这个生物的一个能力。",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，你可以选择生物拥有的一种免疫力，并将其转变为抗性，或者生物拥有的一种抗性并解除它。这个效果持续1分钟。"
+				"When you use your Hunter's Bane to analyze a creature you can see, you can invoke this Rite to automatically succeed on your ability check against that creature.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Revelation",
+							"entries": [
+								"Choose one damage immunity the creature has and turn it into resistance, or one damage resistance it has and dispel it. This effect lasts for 1 minute.",
+								"If the creature has no damage immunities or resistances, you learn three Hunter's Bane characteristics of your choice."
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -3005,8 +3326,19 @@
 				"LLABH:BR"
 			],
 			"entries": [
-				"作为一个动作，你可以施展这个仪式，迫使你触摸的一只生物进行一次魅力豁免检定。如果未通过检定，它将受到等于你的仪式骰的两次投掷点数的死灵伤害，而你将获得等于该生物受到的死灵伤害的临时生命值。",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，生物会受到可能的最大死灵伤害。"
+				"As an action, you can invoke this Rite and force one creature you touch to make a Charisma saving throw. On a failed save, the creature takes necrotic damage equal to two rolls of your Rite Die, and you gain temporary hit points equal to the necrotic damage taken by the creature.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Siphoning",
+							"entries": [
+								"The necrotic damage from this Rite is treated as the maximum possible amount instead of rolling."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"damage.parts": [
@@ -3017,6 +3349,68 @@
 				],
 				"save.scaling": "con"
 			}
+		},
+		{
+			"name": "Rite of the Beast",
+			"source": "LLABH",
+			"page": 13,
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"As an action, you invoke this Rite as you touch a living beast, smearing a drop of your blood on its face. It must succeed on a Charisma saving throw or become enthralled by you for 1 hour, or until it is reduced to 0 hit points.",
+				"An enthralled beast is friendly to you and your allies and obeys your orders completely. In combat you share initiative and it acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your bonus action to command it to take an action from its stat block or another action. If you can ride the beast then it counts as a trained mount for the duration of this Rite.",
+				"You can only have one creature enthralled by a Blood Rite at a time. Attempting to enthrall another creature with a Rite instantly frees any other creatures you have enthralled.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Beast",
+							"entries": [
+								"The beast remains enthralled by this Blood Rite until the end of your next long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Rite of Bonding",
+			"source": "LLABH",
+			"page": 13,
+			"foundryImg": "icons/tools/fasteners/chain-steel-blue.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"As an action, you invoke this Rite as you combine a drop of your blood with a drop of blood from a willing creature you touch, forging a dark bond. While the other creature is within 60 feet of your, it is resistant to all damage. However, if this bonded creature takes damage, you take the same amount.",
+				"The effects of this Rite last for 1 hour, but it ends early if either you or the other creature are reduced to 0 hit points, or if you are more than 60 feet apart for more then 1 minute.",
+				"You can only enter into one such bond at a time. Using this Rite with another creature instantly ends the previous bond.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Bonding",
+							"entries": [
+								"The effects of this Blood Rite last for 8 hours, and only end early if either of you is reduced to 0 hit points or is more than 1 mile apart for more than 1 hour."
+							]
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Rite of Corrosion",
@@ -3032,8 +3426,19 @@
 				}
 			],
 			"entries": [
-				"在你的回合作为一项奖励动作，你可以激活这个仪式，并迫使你能看到的、在30英尺内的一只生物进行一次体质豁免投掷。在未通过豁免检定的情况下，它将在1分钟内{@condition poisoned}。该生物可以在每个回合结束时重复进行这次豁免检定，在成功时结束效果。{@condition poisoned}",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，该生物将保持中毒状态，直到它成功通过豁免检定，每次失败时都会受到等于你的仪式骰的两次掷骰的死灵伤害。"
+				"As a bonus action , you invoke this Rite to force one creature that you can see within 30 feet to make a Constitution saving throw. On a failed save, the creature is poisoned for 1 minute. It can repeat this Constitution saving throw at the end of each of its turns, ending the effect on a success.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Corrosion",
+							"entries": [
+								"The effects of this Blood Rite last until the creature succeeds on the Constitution saving throw. Moreover, whenever it fails this Constitution saving throw, it takes necrotic damage equal to two rolls of your Rite Die."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"damage.parts": [
@@ -3059,8 +3464,19 @@
 				}
 			],
 			"entries": [
-				"作为你回合的一个奖励动作，你可以发动这个仪式并诅咒一个你能看到的距离30英尺内的生物。直到你的下一个回合结束，那个生物所受到的任何伤害都会无视该生物可能拥有的任何伤害抗性。",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。当你这样做时，直到你的下一个回合结束，该生物受到的任何伤害也会将其可能拥有的任何伤害免疫视为伤害抗性。"
+				"As a bonus action, you invoke this Rite to curse one creature you can see within 30 feet. Any damage dealt to it before the end of your next turn ignores all of its damage resistances.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Exposure",
+							"entries": [
+								"Any damage it takes before the end of your next turn treats damage immunity as resistance."
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -3077,8 +3493,19 @@
 				}
 			],
 			"entries": [
-				"作为一个奖励动作，你可以激活这个仪式，并标记一个你能看到的距离30英尺内的目标。直到你的下一个回合结束前，你对该目标的所有攻击投掷都获得优势。",
-				"当你发动这个仪式时，你可以进行一次生命牺牲以赋予其力量。当你这样做时，你对该目标进行的任何武器攻击在 {@dice d20} 的骰点为19或20时，直到你的下一个回合结束都将造成暴击。"
+				"As a bonus action, you invoke this Rite and mark a creature you can see within 30 feet. Until the end of your next turn, you have advantage on all attack rolls against that target.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Marking",
+							"entries": [
+								"You add one roll of your Rite Die to weapon attack rolls against it until the end of your next turn."
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -3095,15 +3522,53 @@
 				}
 			],
 			"entries": [
-				"当你能看到的生物在30英尺内的生命值降至0时，你可以使用你的反应来激活这个仪式，让这个生物站起来并对你选择的生物进行一次单次武器攻击，攻击范围在它的攻击范围内。",
-				"当你施展这个仪式时，你可以进行一次生命牺牲来强化它。在这样做时，生物可以在发动攻击前移动其全步行速度，并且生物的武器攻击命中和伤害骰都会获得一个等同于你仪式骰的额外加值。"
+				"When a creature you can see within 30 feet is slain, you can use your reaction to invoke this Rite to cause the creature to stand up, move up to its walking speed, and make a weapon attack against a creature of your choice within its reach.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Puppet",
+							"entries": [
+								"The creature adds one roll of your Rite Die to both the attack and damage roll it makes as part of this Rite."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"formula": "1@scale.alternate-blood-hunter.rite-die"
 			}
 		},
 		{
-			"name": "Rite of Fear",
+			"name": "Rite of Aggression",
+			"source": "LLABH",
+			"page": 13,
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"As an action, you invoke this Rite and touch a willing creature radically increasing its aggression. For 1 minute, or until it is incapacitated, it gains the benefits and drawbacks below:",
+				{
+					"type": "list",
+					"items": [
+						"It can make one additional attack whenever it takes the Attack action or when it uses the Multiattack feature.",
+						"It can take the Dash action as a bonus action on its turns.",
+						"It gains a +2 bonus to its AC and Dexterity saving throws.",
+						"If it ends its turn and has not dealt damage to a hostile creature since the end of its previous turn, the creature takes necrotic damage equal to one roll of your Rite Die."
+					]
+				},
+				"When this Rite's effects end, the creature must succeed on a Constitution saving throw or suffer one level of exhaustion."
+			]
+		},
+		{
+			"name": "Rite of Dread",
 			"source": "LLABH",
 			"page": 13,
 			"foundryImg": "icons/commodities/materials/feather-white-glowing-beams.webp",
@@ -3116,8 +3581,53 @@
 				}
 			],
 			"entries": [
-				"作为一个额外行动，你可以使用这个仪式，并迫使一个能看到或听到你的生物在30英尺内进行一次感知豁免。如果豁免失败，它会对你感到恐惧，持续1分钟。在这种方式下感到恐惧时，生物必须采取逃离的行动，并通过最安全的可用路线移动离开你，除非没有地方可移动。如果生物在一个没有能见到你的位置结束了它的回合，它可以重新进行豁免检定，成功后这个仪式的效果结束。{@condition frightened}",
-				"当你启动这个仪式时，你可以做出一个重要牺牲来增强它。如果你这样做，一个未能通过豁免检定的生物在此仪式的持续期间内是{@condition stunned} ，只要它能看到你的视线。如果它受到任何伤害，它可以重复进行豁免检定，成功则结束效果。（Rite）"
+				"As a bonus action, you invoke this Rite to force one creature that can see or hear you within 30 feet to make a Wisdom saving throw. On a failure, it is frightened of you for 1 minute.",
+				"While frightened in this way, a creature must do all it can to move as far away from you as possible by the safest route that it can. If it cannot move it can take the Dodge action. If it can end its turn where it cannot see you, it can repeat this saving throw, ending the effects of this Rite on a success.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Dread",
+							"entries": [
+								"On a failure, the creature is stunned for the duration, so long as it can see you. If it takes damage, it can repeat the saving throw, ending the effect on a success."
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"save.scaling": "con"
+			}
+		},
+		{
+			"name": "Rite of the Open Grave",
+			"source": "LLABH",
+			"page": 13,
+			"foundryImg": "icons/magic/death/hand-dirt-undead-zombie.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"As an action, you can touch a creature that has died within the last minute, snatching its soul back from the grave, and returning it to life with 1 hit point. However, when a creature is brought back to life by this Rite it gains a permanent death saving throw failure. This side effect can only be removed by greater resoration or a spell of similar, or greater, power.",
+				"This Rite cannot return a creature to life that died of old age, and it cannot restore a creature's missing body parts.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Open Grave",
+							"entries": [
+								"The creature does not gain a permanent death saving throw failure, but instead suffers a single level of exhaustion, which is healed by a long rest."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"save.scaling": "con"
@@ -3137,8 +3647,19 @@
 				}
 			],
 			"entries": [
-				"作为一个额外动作，你可以发动这个仪式，并强迫你能看见的一只生物进行一次 Constitution 豁免检定。如果未通过检定，它会受到 {@condition blinded}，{@condition deafened}的影响，并且在1分钟内不能说话或发出任何声音。在它的每个回合结束时，目标可以重复进行这个豁免检定，成功时结束效果并恢复理智。{@condition blinded}，{@condition deafened} (Constitution saving throw)",
-				"当你施展这个仪式时，你可以进行一次生命牺牲来强化它。如果你这样做，除了正常效果外，生物在受到这个仪式影响时无法移动。"
+				"As a bonus action, you invoke this Rite to force one creature that you can see within 30 feet to make a Constitution saving throw. On a failure, it is blinded, deafened, and cannot speak or make any sound for 1 minute. It repeats this saving throw at the end of each of its turns, ending the effect on a success.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Senseless",
+							"entries": [
+								"The creature's speed is reduced to 0 for the duration along with the other effects of this Rite."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"save.scaling": "con"
@@ -3158,9 +3679,19 @@
 				}
 			],
 			"entries": [
-				"作为一个动作，你可以施展这个仪式，并迫使你能看到的生物在30英尺内进行一次体质豁免才能，当你腐化它的血液时。如果未通过豁免，它会受到等于你的仪式骰的四次投掷的死灵伤害，它的速度减半，并且不能作出反应。",
-				"在它的回合中，生物可以重复进行豁免投掷。若成功，这个仪式的效果结束。若未能通过豁免，生物会受到额外伤害，数值等同于你的仪式骰的两次投掷，并且会获得一级疲劳。(Rite Die)",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，这个仪式会无视对死灵伤害的抗性，并将对死灵伤害的免疫视为抗性。最后，被这个仪式的死灵伤害杀死的生物会变成一堆精细的肉色尘土。"
+				"As an action, you invoke this Rite to force a creature you can see within 30 feet to make a Constitution saving throw as you corrupt its blood. On a failure, it takes necrotic damage equal to four rolls of your Rite Die, its speed is halved, and it cannot take reactions. It can repeat this Constitution saving throw as an action. On a success, the effects of this Rite end, but on a failure, it takes additional necrotic damage equal to two rolls of your Rite Die and suffers one level of exhaustion.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Decay",
+							"entries": [
+								"This Rite ignores necrotic resistance and treats necrotic immunity as resistance. Also, any creature killed by this Rite is reduced to a pile of flesh-colored dust."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"damage.parts": [
@@ -3186,8 +3717,20 @@
 				}
 			],
 			"entries": [
-				"作为一个行动，你可以祈请这个仪式，强迫你能看到的一个生物进行一次智力豁免检定，因为你感染了它的头脑，使其充满了梦魇幻象。如果豁免失败，该生物受到等于你的仪式骰的两次投掷的精神伤害，并且在 1 分钟内感到{@condition frightened}。在这个仪式结束之前，每当该生物的回合结束时，它必须成功进行一次智力豁免检定，否则将受到等于你的仪式骰的四次投掷的精神伤害。如果豁免成功，则这个仪式的梦魇效果结束。 (Rite Die)",
-				"当你发动这个仪式时，你可以进行一次生命牺牲来增强它。如果你这样做，该生物保持为{@condition incapacitated}，并且在此仪式效果持续期间速度为0。(%Rite%)\n"
+				"As an action, you invoke this Rite to force a creature you can see within 30 feet to make a Wisdom saving throw, infecting its mind with nightmarish phantasms. On a failed save, the creature takes psychic damage equal to four rolls of your Rite Die and is frightened of you for 1 minute.",
+				"The creature repeats this Wisdom saving throw at the end of each of its turns. On a successful save, the effects of this Rite end, but on a failed save, the creature takes additional psychic damage equal to two rolls of your Rite Die.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Nightmares",
+							"entries": [
+								"The creature is incapacitated and has a speed of 0 for the duration of this Rite's effects."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"damage": {
@@ -3203,6 +3746,37 @@
 			}
 		},
 		{
+			"name": "Rite of Thralldom",
+			"source": "LLABH",
+			"page": 13,
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-watch.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"As an action, you invoke this Rite and touch a live humanoid, smearing a drop of your blood on its face. It must succeed on a Charisma saving throw or become enthralled by you for 1 minute, or until it is reduced to 0 hit points.",
+				"An enthralled humanoid is friendly to you and obeys your orders completely. In combat it shares your initiative and acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action on its turn unless you use your bonus action to command it to take one of the actions from its stat block or another action.",
+				"You can only have one creature enthralled by a Blood Rite at a time. Attempting to enthrall another creature with a Rite instantly frees any other creatures you have enthralled.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Thralldom",
+							"entries": [
+								"The humanoid is enthralled by this Blood Rite for up to 1 hour."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Rite of Exsanguination",
 			"source": "LLABH",
 			"page": 13,
@@ -3216,9 +3790,21 @@
 				}
 			],
 			"entries": [
-				"作为一个行动，你可以发动这个最强大和古老的仪式，强迫你能看到的30英尺内的一只生物进行一次体质豁免才能，你试图吸干它的所有血液。在豁免失败时，它会受到相当于你的仪式骰子点数的12倍的死灵伤害，成功时则减半。自你上一个回合开始以来你对其造成过伤害且未达到最大生命值的生物，在进行体质豁免时有劣势。",
-				"当你施展这个仪式时，你可以进行一次重要牺牲来强化它。如果你这样做，这个仪式会无视对死灵伤害的抗性，并将对死灵伤害的免疫视为抗性。最后，被这个仪式的死灵伤害杀死的生物会变成一堆精细的肉色尘土。",
-				"一旦你施展这个仪式，你必须完成一次短暂或长时间的休息，然后才能再次施展它。你不能通过进行重要牺牲来规避这个限制。"
+				"As an action, you invoke this most powerful and ancient Rite and force one creature you can see within 30 feet to make a Constitution saving throw, as you attempt to drain its body of all blood. On a failed save, it takes necrotic damage equal to twelve rolls of your Rite Die, and half as much on a success.",
+				"Any creature that you have dealt damage to since the start of your previous turn has disadvantage on this saving throw.",
+				"Once your invoke this Blood Rite you must finish a short or long rest before you can invoke it again. You cannot make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to circumvent this once per rest restriction.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Exsanguination",
+							"entries": [
+								"This Rite ignores necrotic resistance and treats immunity as resistance. Any creatures killed by this Rite are reduced to a pile of flesh-colored dust."
+							]
+						}
+					]
+				}
 			],
 			"foundrySystem": {
 				"damage.parts": [
@@ -3234,6 +3820,70 @@
 					"per": "sr"
 				}
 			}
+		},
+		{
+			"name": "Rite of Reaping",
+			"source": "LLABH",
+			"page": 13,
+			"foundryImg": "icons/magic/death/weapon-scythe-rune-green.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"As an action, you invoke this most powerful and ancient Rite and force creatures of your choice within 60 feet to make a Constitution saving throw as you draw all blood toward you.",
+				"Creatures take necrotic damage equal to five rolls of your Rite Die on a failed save, and half as much on a success.",
+				"Any creature that you have dealt damage to since the start of your previous turn has disadvantage on this saving throw.",
+				"Once your invoke this Blood Rite you must finish a short or long rest before you can invoke it again. You cannot make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to circumvent this once per rest restriction.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Empowered Reaping",
+							"entries": [
+								"This Blood Rite ignores necrotic resistance and treats immunity as resistance. Any creatures killed by this Rite are reduced to a pile of flesh-colored dust."
+							]
+						}
+					]
+				}
+			],
+			"foundrySystem": {
+				"damage.parts": [
+					[
+						"5@scale.alternate-blood-hunter.rite-die",
+						"necrotic"
+					]
+				],
+				"save.scaling": "con",
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "sr"
+				}
+			}
+		},
+		{
+			"name": "Rite of Rejuvenation",
+			"source": "LLABH",
+			"page": 13,
+			"foundryImg": "icons/magic/death/undead-mammal-fire-breath-pink.webp",
+			"featureType": [
+				"LLABH:BR"
+			],
+			"prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"As an action, you invoke this most powerful and ancient Rite and touch one living willing creature, granting it an increase in stamina at the cost of its overall health. It instantly gains all the benefits of a short rest, including the ability to expend its Hit Dice to regain hit points. However, the maximum life span of the creature is permanently reduced by 1 year and 1 day, and it suffers 1 level of exhaustion.",
+				"Once your invoke this Blood Rite you must finish a short or long rest before you can invoke it again. You cannot make a {@classFeature Vital Sacrifice|Alternate Blood Hunter|LLABH|2} to circumvent this once per rest restriction."
+			]
 		}
 	],
 	"classFluff": [
