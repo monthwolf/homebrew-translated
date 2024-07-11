@@ -18,17 +18,10 @@
 			}
 		],
 		"dateAdded": 1695240316,
-		"dateLastModified": 1720211840,
+		"dateLastModified": 1720638212,
 		"dependencies": {
 			"monster": [
 				"FleeMortals"
-			],
-			"item": [
-				"SaF"
-			],
-			"class": [
-				"BST",
-				"ILL"
 			],
 			"optionalfeature": [
 				"FleeMortals"
@@ -38,7 +31,7 @@
 			"MCDM:EM": "Enucleator Modification",
 			"MCDM:PP": "Psionic Power"
 		},
-		"_dateLastModifiedHash": "dacdc8d71e",
+		"_dateLastModifiedHash": "f47d24c244",
 		"status": "ready"
 	},
 	"book": [
@@ -440,7 +433,7 @@
 											"name": "Dazed",
 											"page": 3,
 											"entries": [
-												"A {@condition dazed|FleeMortals} creature can only do one of the following things on their turn: move, use an action, or use a bonus action. If a creature becomes dazed during their turn, their turn ends. The {@i cure ailment} power, {@spell lesser restoration} spell, and {@spell greater restoration} spell remove the dazed condition. At the GM's discretion, other powers, spells, or effects might also remove the dazed condition.",
+												"A {@condition dazed|FleeMortals} creature can only do one of the following things on their turn: move, use an action, or use a bonus action. If a creature becomes dazed during their turn, their turn ends. The {@psionic cure ailment|TalPsi} power, {@spell lesser restoration} spell, and {@spell greater restoration} spell remove the dazed condition. At the GM's discretion, other powers, spells, or effects might also remove the dazed condition.",
 												"当一个被眩晕的生物受到能够在他们的回合中给予他们额外行动的咒语或效果影响时（比如 {@spell haste} 咒语或战士的行动突击特性），他们仍然可以进行这个额外行动，除了眩晕状态允许的移动、动作或奖励动作之外。",
 												"这本书中的一些生物免疫被晕眩状态。在GM的自由裁量下，核心规则或其他补充内容中已经公布对麻痹或眩晕状态免疫的生物也免疫被晕眩状态（Dungeons & Dragons）。"
 											]
@@ -1556,13 +1549,7 @@
 									"name": "Mystic Connection: Mohler",
 									"entries": [
 										"根据当地语言习惯，并且像（%num%）这样的文本在翻译中应该仍然输出为（%num%）。\n- 翻译应遵守 dnd 跑团规则，专有名词在翻译后应该保留英文在 `()` 中。 \n\n如果你在玩一个{@class beastheart|BST}并且有一只摩勒伙伴，那么在你获得兽心秘境的连接特性时，你在第9级时获得以下益处：",
-										{
-											"type": "entries",
-											"name": "Earthen Strength",
-											"entries": [
-												"作为一个额外动作，你的四肢变得密集，并且在接下来的1分钟内带着惊人的力量挥舞。在此期间，当你用近战武器攻击一个大小不超过你一个尺寸类别的生物时，这个生物也会被击倒。一旦你使用了这个额外动作，你在完成一次长休息之前无法再次使用它。 (DND Running Group)"
-											]
-										}
+										"{@optfeature Mystic Connection: Mohler|FleeMortals}"
 									]
 								},
 								"{@creature Orc Blitzer|WhereEvilLives}",
@@ -1833,13 +1820,7 @@
 									"name": "Mystic Connection: Griffon",
 									"entries": [
 										"If you're playing a beastheart and have a griffon companion, you gain the following benefit at 9th level when you gain the beastheart's Mystic Connection feature:",
-										{
-											"type": "item",
-											"name": "Griffon-Hearted",
-											"entries": [
-												"As an action, you can fly up to twice your walking speed without provoking opportunity attacks. During this movement, you can enter the spaces of other creatures and these spaces don't count as difficult terrain for you. The first time you enter each creature's space during this move, they must succeed on a Strength saving throw against your exploit save DC or take bludgeoning damage equal to your beastheart level and be knocked prone. Once you use this action, you can't do so again until you finish a long rest."
-											]
-										}
+										"{@optfeature Mystic Connection: Griffon|FleeMortals}"
 									]
 								},
 								"{@creature Hobgoblin Tactician|WhereEvilLives}",
@@ -2290,13 +2271,7 @@
 									"name": "Mystic Connection: Lightbender",
 									"entries": [
 										"If you're playing a beastheart and have a lightbender companion, you gain the following benefit at 9th level when you gain the beastheart's Mystic Connection feature:",
-										{
-											"type": "entries",
-											"name": "Unleash Sunlight",
-											"entries": [
-												"As a bonus action, you cause your skin to flare with brilliant light. Each creature of your choice within 10 feet of you who can see you must succeed on a Constitution saving throw against your exploit save DC or be {@condition blinded} for 1 minute (save ends at end of turn). Once you use this bonus action, you can't do so again until you finish a long rest."
-											]
-										}
+										"{@optfeature Mystic Connection: Lightbender|FleeMortals}"
 									]
 								},
 								"{@creature Qazyldrath|WhereEvilLives}",
@@ -2667,8 +2642,8 @@
 					"entries": [
 						"A character playing a talent\u2014the class found in the MCDM supplement {@link The Talent and Psionics|https://mcdm.gg/talent}\u2014can use the rules in that book to learn the following new powers from the creatures in this book. Powers that aren't found in {@i The Talent and Psionics} are listed in this section and indicated in a creature's stat block with an asterisk (*).",
 						"Note that some stat block powers work differently than the version for player characters presented below, usually because a creature's innate psionic ability enhances their power.",
-						"{@optfeature Dream Spores|WhereEvilLives}",
-						"{@optfeature Liquefy|WhereEvilLives}",
+						"{@psionic Dream Spores|FleeMortals}",
+						"{@psionic Liquefy|FleeMortals}",
 						{
 							"type": "quote",
 							"entries": [
@@ -2676,8 +2651,8 @@
 							],
 							"by": "Lord Syuul"
 						},
-						"{@optfeature Memory Thief|WhereEvilLives}",
-						"{@optfeature Phase|WhereEvilLives}",
+						"{@psionic Memory Thief|FleeMortals}",
+						"{@psionic Phase|FleeMortals}",
 						{
 							"type": "inset",
 							"page": 318,
@@ -2687,8 +2662,8 @@
 								"The stronger the power, the more energy it can take from you. Every power has an order from 1 to 6. The higher a power's order, the more difficult it is to learn and use."
 							]
 						},
-						"{@optfeature Piscine Transformation|WhereEvilLives}",
-						"{@optfeature Vanish for One|WhereEvilLives}"
+						"{@psionic Piscine Transformation|FleeMortals}",
+						"{@psionic Vanish for One|FleeMortals}"
 					]
 				}
 			]
@@ -5228,7 +5203,7 @@
 											"type": "item",
 											"name": "Cursed Food",
 											"entries": [
-												"符合当地语言习惯的翻译，文本中的 (%num%) 应该在翻译中保持为 (%num%)。\n\n一个 {@spell detect magic} 咒语显示，巢穴中的食物和烹饪原料散发着死灵法的气息。如果一个不住在小屋里的生物吃了里面的任何食物，他们必须成功通过一次DC 15的感知豁免检定，否则将受到诅咒。在这种方式下受到诅咒的生物在豁免检定时有劣势。一个 {@i cure ailment} 力量 或者 {@spell remove curse} 或者 {@spell greater restoration} 咒语可以解除诅咒。"
+												"A {@spell detect magic} spell reveals that the food and cooking ingredients in the lair radiate auras of necromancy. If a creature who doesn't live in the hut eats any of the food found within, they must succeed on a DC 15 Wisdom saving throw or be cursed. While cursed in this way, a creature has disadvantage on saving throws. A {@psionic cure ailment|TalPsi} power or a {@spell remove curse} or {@spell greater restoration} spell can remove the curse."
 											]
 										},
 										{
@@ -9027,7 +9002,7 @@
 											"type": "entries",
 											"name": "Ithu'rath's Pool",
 											"entries": [
-												"The pool of dark water at the center of the chamber is 50 feet deep. When a creature who isn't an Aberration or slime servant starts their turn in the water, they must make a DC 19 Constitution saving throw. On a failed save, a creature can't see Ithu'rath until the start of their next turn as their eyes transform into insectile eyes. A {@i cure ailment} power or {@spell remove curse} spell reverses this transformation."
+												"The pool of dark water at the center of the chamber is 50 feet deep. When a creature who isn't an Aberration or slime servant starts their turn in the water, they must make a DC 19 Constitution saving throw. On a failed save, a creature can't see Ithu'rath until the start of their next turn as their eyes transform into insectile eyes. A {@psionic cure ailment|TalPsi} power or {@spell remove curse} spell reverses this transformation."
 											]
 										},
 										{
@@ -9046,7 +9021,7 @@
 														"If two or more characters are beneath the same dome, they swap limbs or physical features."
 													]
 												},
-												"These transformations do not affect a character's statistics. A {@i cure ailment} power or {@spell remove curse} spell reverses all transformations on a creature."
+												"These transformations do not affect a character's statistics. A {@psionic cure ailment|TalPsi} power or {@spell remove curse} spell reverses all transformations on a creature."
 											]
 										},
 										{
@@ -10504,7 +10479,7 @@
 											"type": "entries",
 											"name": "Jars",
 											"entries": [
-												"On the northwest pedestals, fifty-six jars contain pulsing human organs\u2014such as hearts, lungs, and livers\u2014removed from the mummies who guard the tomb. A {@spell detect magic} spell reveals that the organs and their jars radiate auras of necromancy magic. If a creature destroys an organ or jar, that creature takes 10 ({@damage 3d6}) necrotic damage and is cursed until they finish a long rest outside the tomb. While cursed in this way, Undead have advantage on attack rolls against that creature, and the creature has disadvantage on saving throws against effects created by Undead. A {@i cure ailment} power, {@spell remove curse} spell, or similar effect ends the curse early.",
+												"On the northwest pedestals, fifty-six jars contain pulsing human organs\u2014such as hearts, lungs, and livers\u2014removed from the mummies who guard the tomb. A {@spell detect magic} spell reveals that the organs and their jars radiate auras of necromancy magic. If a creature destroys an organ or jar, that creature takes 10 ({@damage 3d6}) necrotic damage and is cursed until they finish a long rest outside the tomb. While cursed in this way, Undead have advantage on attack rolls against that creature, and the creature has disadvantage on saving throws against effects created by Undead. A {@psionic cure ailment|TalPsi} power, {@spell remove curse} spell, or similar effect ends the curse early.",
 												"A character who examines the jars and succeeds on a DC 18 Intelligence (Investigation) check notices six of the jars are marked with a minuscule gold raven on the bottom, and each of those jars contains a different organ. A creature who succeeds on a DC 18 Intelligence (History) check knows the raven is the symbol of Ashyra and these jars must contain her organs. A creature who succeeds on this check by 5 or more also knows that carrying these jars and their organs into combat against her will weaken her. Each creature who carries one or more of these jars while facing Ashyra in combat can gain advantage (no action required) on an attack roll against her or a saving throw against an effect caused by her. A creature can gain this benefit once for each jar they carry.",
 												"If the jars or organs are removed from the tomb, they lose their magic and no longer grant advantage."
 											]
@@ -10597,7 +10572,7 @@
 											"name": "Cursed Treasure",
 											"entries": [
 												"If the characters take 10 minutes to search all the interment niches, they find six gold rings (worth 25 gp each), four gold necklaces (worth 50 gp each), and a gold tiara (worth 250 gp).",
-												"If a creature takes treasure from the interment niche, they are cursed. They become vulnerable to necrotic damage until the treasure is returned to the interment niche or until the curse is removed by a {@i cure ailment} power, {@spell remove curse} spell, or similar effect."
+												"If a creature takes treasure from the interment niche, they are cursed. They become vulnerable to necrotic damage until the treasure is returned to the interment niche or until the curse is removed by a {@psionic cure ailment|TalPsi} power, {@spell remove curse} spell, or similar effect."
 											]
 										}
 									]
@@ -11749,7 +11724,7 @@
 											"name": "Aura of Hopelessness",
 											"entries": [
 												"This chamber is bathed in a magic aura of hopelessness so strong that inmates look forward to their interrogations. While the aura is active, non-Devil creatures must make a DC 15 Charisma saving throw at the end of each minute they spend in this area. On a failed save, the creature's overall level of sadness increases and they gain 1 melancholy (to a maximum of 4). Whenever a character makes an ability check, attack roll, or saving throw, they subtract their melancholy from the result.",
-												"If a creature who has melancholy leaves this area or if the gem creating the aura is destroyed, they lose 1 melancholy at the end of each hour. A {@i cure ailment} power of 4th order or higher or a {@spell greater restoration} spell removes all a creature's melancholy."
+												"If a creature who has melancholy leaves this area or if the gem creating the aura is destroyed, they lose 1 melancholy at the end of each hour. A {@psionic cure ailment|TalPsi} power of 4th order or higher or a {@spell greater restoration} spell removes all a creature's melancholy."
 											]
 										},
 										{
@@ -12247,7 +12222,7 @@
 											"type": "entries",
 											"name": "Black Oak Doors",
 											"entries": [
-												"These doors lead into the mausoleum (area V8) but are locked by the Devil's Influence. If a creature who isn't Undead moves within 10 feet of the doors, the Devil's Influence emits a melodic voice that asks, \"Who is willing to pay the Red Tax?\" If a character indicates they are willing, or if they attempt to damage or force open the doors, the Devil's Influence marks that creature with a blood splatter and the doors open. The blood splatter leaves an indelible stain that can't be washed or removed except by a {@i cure ailment} power of 4th order or higher, a {@spell greater restoration} spell, or a similar effect. In combat, vampires prioritize attacking and killing a creature marked by the blood splatter.",
+												"These doors lead into the mausoleum (area V8) but are locked by the Devil's Influence. If a creature who isn't Undead moves within 10 feet of the doors, the Devil's Influence emits a melodic voice that asks, \"Who is willing to pay the Red Tax?\" If a character indicates they are willing, or if they attempt to damage or force open the doors, the Devil's Influence marks that creature with a blood splatter and the doors open. The blood splatter leaves an indelible stain that can't be washed or removed except by a {@psionic cure ailment|TalPsi} power of 4th order or higher, a {@spell greater restoration} spell, or a similar effect. In combat, vampires prioritize attacking and killing a creature marked by the blood splatter.",
 												"A creature who succeeds on a DC 20 Dexterity check using {@item thieves' tools|PHB} to pick the lock, or who has the bone key from Rhodar's sanctum (area V7), can open the door without triggering the blood splatter effect."
 											]
 										}
@@ -13907,7 +13882,7 @@
 											"type": "entries",
 											"name": "Emerald Basin",
 											"entries": [
-												"This basin is consecrated to the elder evils, and the substance that fills it is their essence. The basin can't be removed from the altar. If a creature touches the substance, they must succeed on a DC 25 Wisdom saving throw or be cursed. While cursed, a creature can't willingly sleep or benefit from a long rest, and whenever they close their eyes, they see nightmarish creatures. The {@i cure ailment} power, {@spell remove curse} spell, or similar supernatural effect removes the curse."
+												"This basin is consecrated to the elder evils, and the substance that fills it is their essence. The basin can't be removed from the altar. If a creature touches the substance, they must succeed on a DC 25 Wisdom saving throw or be cursed. While cursed, a creature can't willingly sleep or benefit from a long rest, and whenever they close their eyes, they see nightmarish creatures. The {@psionic cure ailment|TalPsi} power, {@spell remove curse} spell, or similar supernatural effect removes the curse."
 											]
 										}
 									]
@@ -20146,7 +20121,7 @@
 					"type": "entries",
 					"name": "Curse",
 					"entries": [
-						"When you attune to this shortsword, it fuses to your hand, stitching your bones to the handle and binding your flesh to the sinewy wraps. You can't let go of the sword or use your fused hand to hold another object. This effect ends and the sword detaches if you are targeted by a {@i cure ailment} power or {@spell remove curse} spell.",
+						"When you attune to this shortsword, it fuses to your hand, stitching your bones to the handle and binding your flesh to the sinewy wraps. You can't let go of the sword or use your fused hand to hold another object. This effect ends and the sword detaches if you are targeted by a {@psionic cure ailment|TalPsi} power or {@spell remove curse} spell.",
 						"While attached to your hand, whether you remain attuned to the sword or not, you have violent nightmares whenever you close your eyes, and you take {@damage 1d6} psychic damage whenever you finish a short or long rest."
 					]
 				},
@@ -21222,90 +21197,6 @@
 			],
 			"entries": [
 				"One or more of the creature's arms are replaced with tentacles. The creature's reach is extended by 5 feet."
-			]
-		},
-		{
-			"_copy": {
-				"name": "Dream Spores",
-				"source": "FleeMortals"
-			},
-			"source": "WhereEvilLives",
-			"page": 318,
-			"otherSources": [
-				{
-					"source": "FleeMortals",
-					"page": 391
-				}
-			]
-		},
-		{
-			"_copy": {
-				"name": "Liquefy",
-				"source": "FleeMortals"
-			},
-			"source": "WhereEvilLives",
-			"page": 318,
-			"otherSources": [
-				{
-					"source": "FleeMortals",
-					"page": 392
-				}
-			]
-		},
-		{
-			"_copy": {
-				"name": "Memory Thief",
-				"source": "FleeMortals"
-			},
-			"source": "WhereEvilLives",
-			"page": 318,
-			"otherSources": [
-				{
-					"source": "FleeMortals",
-					"page": 392
-				}
-			]
-		},
-		{
-			"_copy": {
-				"name": "Phase",
-				"source": "FleeMortals"
-			},
-			"source": "WhereEvilLives",
-			"page": 318,
-			"otherSources": [
-				{
-					"source": "FleeMortals",
-					"page": 392
-				}
-			]
-		},
-		{
-			"_copy": {
-				"name": "Piscine Transformation",
-				"source": "FleeMortals"
-			},
-			"source": "WhereEvilLives",
-			"page": 319,
-			"otherSources": [
-				{
-					"source": "FleeMortals",
-					"page": 393
-				}
-			]
-		},
-		{
-			"_copy": {
-				"name": "Vanish for One",
-				"source": "FleeMortals"
-			},
-			"source": "WhereEvilLives",
-			"page": 319,
-			"otherSources": [
-				{
-					"source": "FleeMortals",
-					"page": 393
-				}
 			]
 		}
 	]
