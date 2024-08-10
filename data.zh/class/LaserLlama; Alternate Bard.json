@@ -13,7 +13,7 @@
 					"hakr14"
 				],
 				"color": "ba0bba",
-				"version": "1.2.0",
+				"version": "2.0.0",
 				"url": "https://www.gmbinder.com/share/-NN-4ej_kwDJyO0_98BM"
 			}
 		],
@@ -31,11 +31,11 @@
 			]
 		},
 		"optionalFeatureTypes": {
-			"FS:BA": "Fighting Style: Alternate Bard"
+			"LLABrd:CP": "Chords of Power"
 		},
 		"dateAdded": 1681740408,
-		"dateLastModified": 1721603450,
-		"_dateLastModifiedHash": "a5e120f073"
+		"dateLastModified": 1723288644,
+		"_dateLastModifiedHash": "58adbfd9ae"
 	},
 	"class": [
 		{
@@ -43,43 +43,43 @@
 			"source": "LLABrd",
 			"classFeatures": [
 				"Bardic Inspiration|Alternate Bard|LLABrd|1|LLABrd",
-				"Spellcasting|Alternate Bard|LLABrd|1|LLABrd",
-				"Folklore|Alternate Bard|LLABrd|2|LLABrd",
-				"Song of Rest|Alternate Bard|LLABrd|2|LLABrd",
+				"Folklore|Alternate Bard|LLABrd|1|LLABrd",
+				"Spellcasting|Alternate Bard|LLABrd|2|LLABrd",
+				"Chords of Power|Alternate Bard|LLABrd|2|LLABrd",
 				{
 					"classFeature": "Bardic Tradition|Alternate Bard|LLABrd|3|LLABrd",
 					"gainSubclassFeature": true
 				},
 				"Magical Secrets|Alternate Bard|LLABrd|3|LLABrd",
+				"Harmonious Recovery|Alternate Bard|LLABrd|3|LLABrd",
 				"Ability Score Improvement|Alternate Bard|LLABrd|4|LLABrd",
 				{
 					"classFeature": "Tradition Feature|Alternate Bard|LLABrd|5|LLABrd",
 					"gainSubclassFeature": true
 				},
-				"Countersong|Alternate Bard|LLABrd|6|LLABrd",
-				"Magical Secrets|Alternate Bard|LLABrd|6|LLABrd",
-				"Folklore|Alternate Bard|LLABrd|7|LLABrd",
-				"Font of Inspiration|Alternate Bard|LLABrd|7|LLABrd",
+				"Magical Secrets|Alternate Bard|LLABrd|5|LLABrd",
+				"Folklore|Alternate Bard|LLABrd|6|LLABrd",
+				"Bardic Virtuoso|Alternate Bard|LLABrd|7|LLABrd",
 				"Ability Score Improvement|Alternate Bard|LLABrd|8|LLABrd",
-				"Musical Expertise|Alternate Bard|LLABrd|9|LLABrd",
+				"Magical Secrets|Alternate Bard|LLABrd|9|LLABrd",
 				"Folklore|Alternate Bard|LLABrd|10|LLABrd",
-				"Magical Secrets|Alternate Bard|LLABrd|10|LLABrd",
+				"Font of Inspiration|Alternate Bard|LLABrd|10|LLABrd",
 				{
 					"classFeature": "Tradition Feature|Alternate Bard|LLABrd|11|LLABrd",
 					"gainSubclassFeature": true
 				},
 				"Ability Score Improvement|Alternate Bard|LLABrd|12|LLABrd",
+				"Magical Secrets|Alternate Bard|LLABrd|13|LLABrd",
 				"Folklore|Alternate Bard|LLABrd|14|LLABrd",
-				"Magical Secrets|Alternate Bard|LLABrd|14|LLABrd",
 				{
 					"classFeature": "Tradition Feature|Alternate Bard|LLABrd|15|LLABrd",
 					"gainSubclassFeature": true
 				},
 				"Ability Score Improvement|Alternate Bard|LLABrd|16|LLABrd",
-				"Magical Secrets|Alternate Bard|LLABrd|18|LLABrd",
+				"Magical Secrets|Alternate Bard|LLABrd|17|LLABrd",
+				"Folklore|Alternate Bard|LLABrd|18|LLABrd",
 				"Ability Score Improvement|Alternate Bard|LLABrd|19|LLABrd",
-				"Folklore|Alternate Bard|LLABrd|20|LLABrd",
-				"Mythic Performance|Alternate Bard|LLABrd|20|LLABrd"
+				"Mythic Secrets|Alternate Bard|LLABrd|20|LLABrd"
 			],
 			"subclassTitle": "Bardic Tradition",
 			"hd": {
@@ -93,7 +93,7 @@
 			"spellcastingAbility": "cha",
 			"casterProgression": "1/2",
 			"cantripProgression": [
-				2,
+				0,
 				2,
 				2,
 				3,
@@ -115,9 +115,11 @@
 				4
 			],
 			"spellsKnownProgression": [
+				0,
 				2,
 				3,
 				3,
+				4,
 				4,
 				5,
 				5,
@@ -132,9 +134,7 @@
 				10,
 				10,
 				11,
-				11,
-				12,
-				12
+				11
 			],
 			"additionalSpells": [
 				{
@@ -150,56 +150,42 @@
 								]
 							}
 						},
-						"6": {
+						"5": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2",
+										"choose": "level=2",
 										"count": 2
 									}
 								]
 							}
 						},
-						"10": {
+						"9": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2;3",
+										"choose": "level=3",
 										"count": 2
 									}
 								]
 							}
 						},
-						"14": {
+						"13": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2;3;4",
+										"choose": "level=4",
 										"count": 2
 									}
 								]
 							}
 						},
-						"18": {
+						"17": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2;3;4;5",
+										"choose": "level=5",
 										"count": 2
-									}
-								]
-							}
-						},
-						"20": {
-							"daily": {
-								"1e": [
-									{
-										"choose": "level=6",
-										"count": 1
-									},
-									{
-										"choose": "level=7",
-										"count": 1
 									}
 								]
 							}
@@ -214,13 +200,11 @@
 				],
 				"weapons": [
 					"simple",
-					"{@item hand crossbow|phb|hand crossbows}",
-					"{@item longsword|phb|longswords}",
 					"{@item rapier|phb|rapiers}",
 					"{@item shortsword|phb|shortswords}"
 				],
 				"tools": [
-					"one {@item musical instrument|PHB} and any two {@item artisan's tools|PHB}, {@item gaming set|PHB|gaming sets}, or {@item musical instrument|PHB|musical instruments} of your choice"
+					"one {@item musical instrument|PHB} and one tool of your choice"
 				],
 				"skills": [
 					{
@@ -247,7 +231,7 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item rapier|phb}, (b) a {@item shortsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
 					"(a) a {@item leather armor|phb} or (b) a {@item chain shirt|phb}",
 					"(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
 					"One {@filter musical instrument|items|miscellaneous=mundane|type=instrument} of your choice and a {@item dagger|phb}"
@@ -258,7 +242,7 @@
 							"rapier|phb"
 						],
 						"b": [
-							"longsword|phb"
+							"shortsword|phb"
 						],
 						"c": [
 							{
@@ -326,6 +310,36 @@
 					]
 				}
 			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Chords of Power",
+					"featureType": [
+						"LLABrd:CP"
+					],
+					"progression": [
+						0,
+						2,
+						2,
+						2,
+						2,
+						3,
+						3,
+						3,
+						3,
+						4,
+						4,
+						4,
+						4,
+						5,
+						5,
+						5,
+						5,
+						6,
+						6,
+						6
+					]
+				}
+			],
 			"classTableGroups": [
 				{
 					"colLabels": [
@@ -336,10 +350,22 @@
 						"{@filter 3rd|spells|level=3|class=Alternate Bard (LLABrd)}",
 						"{@filter 4th|spells|level=4|class=Alternate Bard (LLABrd)}",
 						"{@filter 5th|spells|level=5|class=Alternate Bard (LLABrd)}",
-						"Bardic Insp."
+						"Bardic Insp.",
+						"{@filter Chords Known|optionalfeatures|feature type=LLABrd:CP}"
 					],
 					"rows": [
 						[
+							"0",
+							"0",
+							"0",
+							"-",
+							"-",
+							"-",
+							"-",
+							"{@dice d4}",
+							"-"
+						],
+						[
 							"2",
 							"2",
 							"2",
@@ -347,97 +373,118 @@
 							"-",
 							"-",
 							"-",
-							"{@dice d6}"
+							"{@dice d4}",
+							"2"
 						],
 						[
 							"2",
 							"3",
-							"2",
+							"3",
 							"-",
 							"-",
 							"-",
 							"-",
-							"{@dice d6}"
+							"{@dice d4}",
+							"2"
 						],
 						[
-							"2",
 							"3",
 							"3",
+							"3",
 							"-",
 							"-",
 							"-",
 							"-",
-							"{@dice d6}"
+							"{@dice d4}",
+							"2"
 						],
 						[
 							"3",
 							"4",
+							"4",
+							"2",
+							"-",
+							"-",
+							"-",
+							"{@dice d6}",
+							"2"
+						],
+						[
 							"3",
+							"4",
+							"4",
+							"2",
 							"-",
 							"-",
 							"-",
-							"-",
-							"{@dice d6}"
+							"{@dice d6}",
+							"3"
 						],
 						[
 							"3",
 							"5",
 							"4",
-							"2",
+							"3",
 							"-",
 							"-",
 							"-",
-							"{@dice d8}"
+							"{@dice d6}",
+							"3"
 						],
 						[
 							"3",
 							"5",
 							"4",
-							"2",
+							"3",
 							"-",
 							"-",
 							"-",
-							"{@dice d8}"
+							"{@dice d6}",
+							"3"
 						],
 						[
 							"3",
 							"6",
 							"4",
 							"3",
+							"2",
 							"-",
 							"-",
-							"-",
-							"{@dice d8}"
+							"{@dice d6}",
+							"3"
 						],
 						[
-							"3",
+							"4",
 							"6",
 							"4",
 							"3",
-							"-",
-							"-",
-							"-",
-							"{@dice d8}"
-						],
-						[
-							"3",
-							"7",
-							"4",
-							"3",
 							"2",
 							"-",
 							"-",
-							"{@dice d8}"
+							"{@dice d6}",
+							"4"
 						],
 						[
 							"4",
 							"7",
 							"4",
 							"3",
-							"2",
+							"3",
 							"-",
 							"-",
-							"{@dice d8}"
+							"{@dice d8}",
+							"4"
+						],
+						[
+							"4",
+							"7",
+							"4",
+							"3",
+							"3",
+							"-",
+							"-",
+							"{@dice d8}",
+							"4"
 						],
 						[
 							"4",
@@ -445,9 +492,10 @@
 							"4",
 							"3",
 							"3",
+							"1",
 							"-",
-							"-",
-							"{@dice d10}"
+							"{@dice d8}",
+							"4"
 						],
 						[
 							"4",
@@ -455,9 +503,10 @@
 							"4",
 							"3",
 							"3",
+							"1",
 							"-",
-							"-",
-							"{@dice d10}"
+							"{@dice d8}",
+							"5"
 						],
 						[
 							"4",
@@ -465,9 +514,10 @@
 							"4",
 							"3",
 							"3",
-							"1",
+							"2",
 							"-",
-							"{@dice d10}"
+							"{@dice d8}",
+							"5"
 						],
 						[
 							"4",
@@ -475,9 +525,21 @@
 							"4",
 							"3",
 							"3",
+							"2",
+							"-",
+							"{@dice d8}",
+							"5"
+						],
+						[
+							"4",
+							"10",
+							"4",
+							"3",
+							"3",
+							"3",
 							"1",
-							"-",
-							"{@dice d10}"
+							"{@dice d10}",
+							"5"
 						],
 						[
 							"4",
@@ -485,19 +547,10 @@
 							"4",
 							"3",
 							"3",
-							"2",
-							"-",
-							"{@dice d10}"
-						],
-						[
-							"4",
-							"10",
-							"4",
 							"3",
-							"3",
-							"2",
-							"-",
-							"{@dice d10}"
+							"1",
+							"{@dice d10}",
+							"6"
 						],
 						[
 							"4",
@@ -506,8 +559,9 @@
 							"3",
 							"3",
 							"3",
-							"1",
-							"{@dice d12}"
+							"2",
+							"{@dice d10}",
+							"6"
 						],
 						[
 							"4",
@@ -516,57 +570,32 @@
 							"3",
 							"3",
 							"3",
-							"1",
-							"{@dice d12}"
-						],
-						[
-							"4",
-							"12",
-							"4",
-							"3",
-							"3",
-							"3",
 							"2",
-							"{@dice d12}"
-						],
-						[
-							"4",
-							"12",
-							"4",
-							"3",
-							"3",
-							"3",
-							"2",
-							"{@dice d12}"
+							"{@dice d10}",
+							"6"
 						]
 					]
 				}
 			],
 			"classSpells": [
-				"Blade Ward",
+				"Blade Ward (Alternate)|llspell",
 				"Booming Blade (Alternate)|llspell",
 				"Dancing Lights",
 				"Friends (Alternate)|llspell",
 				"Glitterbeam|llspell",
-				"Guidance",
+				"Guidance (Alternate)|llspell",
 				"Light",
 				"Mage Hand",
 				"Mending",
 				"Message",
-				"Mind Sliver (Alternate)|llspell",
 				"Minor Illusion",
 				"Prestidigitation",
 				"Resistance",
-				"Spare the Dying",
 				"Thunderclap|XGE",
-				"Toll the Dead|XGE",
 				"True Strike (Alternate)|llspell",
 				"Vicious Mockery (Alternate)|llspell",
-				"Animal Friendship",
 				"Bane",
-				"Beast Bond|XGE",
 				"Cause Fear|XGE",
-				"Ceremony|XGE",
 				"Charm Person",
 				"Color Spray",
 				"Command",
@@ -575,7 +604,6 @@
 				"Detect Magic",
 				"Disguise Self",
 				"Dissonant Whispers",
-				"Earth Tremor|XGE",
 				"Faerie Fire",
 				"Feather Fall",
 				"Healing Word",
@@ -583,30 +611,23 @@
 				"Tasha's Hideous Laughter",
 				"Identify",
 				"Illusory Script",
-				"Inspiring Melody|llspell",
 				"Longstrider",
 				"Silent Image",
 				"Sleep",
-				"Speak with Animals",
-				"Thunderous Smite (Alternate)|llspell",
 				"Thunderwave",
-				"Unseen Servant",
 				"Aid",
-				"Animal Messenger",
 				"Blindness/Deafness",
 				"Calm Emotions",
-				"Cloud of Daggers",
 				"Crown of Madness",
 				"Detect Thoughts",
 				"Enhance Ability",
 				"Enlarge/Reduce",
-				"Enthrall",
 				"Heat Metal",
 				"Hold Person",
 				"Invisibility",
-				"Knock",
 				"Restoration|llspell",
 				"Locate Creature (Alternate)|llspell",
+				"Locate Object",
 				"Magic Mouth",
 				"Mirror Image",
 				"Phantasmal Force",
@@ -615,65 +636,46 @@
 				"Shatter",
 				"Silence",
 				"Skywrite|XGE",
-				"Song of Confidence|llspell",
 				"Suggestion",
 				"Zone of Truth",
 				"Bestow Curse",
 				"Clairvoyance",
+				"Dire Wail|llspell",
 				"Dispel Magic",
 				"Enemies Abound|XGE",
 				"Fear",
-				"Feign Death",
-				"Glyph of Warding",
 				"Haste",
-				"Heroic Anthem||llspell",
 				"Hypnotic Pattern",
+				"Irrestible Dance|llspell",
 				"Major Image",
 				"Mass Healing Word",
 				"Nondetection",
 				"Sending",
 				"Slow",
 				"Sonic Wave|llspell",
-				"Speak with Dead",
-				"Stinking Cloud",
-				"Thunder Step|XGE",
-				"Leomund's Tiny Hut",
+				"Tiny Hut (Alternate)|llspell",
 				"Tongues",
 				"Banishment",
 				"Charm Monster|XGE",
 				"Compulsion",
 				"Confusion",
 				"Dimension Door",
-				"Dominate Beast",
-				"Elemental Bane|XGE",
 				"Fabricate",
 				"Freedom of Movement",
 				"Greater Invisibility",
 				"Hallucinatory Terrain",
 				"Phantasmal Killer",
-				"Polymorph",
-				"Otiluke's Resilient Sphere",
-				"Revitalizying Hymn|llspell",
 				"Animate Objects",
-				"Awaken",
 				"Dominate Person",
 				"Dream",
 				"Geas",
-				"Greater Restoration",
 				"Hold Monster",
 				"Legend Lore",
-				"Legendary Ballad|llspell",
 				"Mass Cure Wounds",
 				"Mislead",
 				"Modify Memory",
-				"Planar Binding",
-				"Raise Dead",
-				"Scrying",
 				"Seeming",
-				"Skill Empowerment|XGE",
-				"Synaptic Static|XGE",
-				"Rary's Telepathic Bond",
-				"Teleportation Circle"
+				"Skill Empowerment|XGE"
 			],
 			"foundryAdvancement": [
 				{
@@ -685,19 +687,19 @@
 						"scale": {
 							"1": {
 								"n": 1,
-								"die": 6
+								"die": 4
 							},
 							"5": {
 								"n": 1,
-								"die": 8
+								"die": 6
 							},
 							"11": {
 								"n": 1,
-								"die": 10
+								"die": 8
 							},
 							"17": {
 								"n": 1,
-								"die": 12
+								"die": 10
 							}
 						}
 					}
@@ -710,20 +712,20 @@
 						"type": "dice",
 						"scale": {
 							"5": {
+								"n": 1,
+								"die": 6
+							},
+							"11": {
 								"n": 2,
-								"die": 6
+								"die": 8
 							},
-							"9": {
+							"15": {
 								"n": 3,
-								"die": 6
-							},
-							"13": {
-								"n": 4,
-								"die": 6
+								"die": 8
 							},
 							"17": {
-								"n": 5,
-								"die": 6
+								"n": 3,
+								"die": 10
 							}
 						}
 					}
@@ -742,41 +744,96 @@
 			"classSource": "LLABrd",
 			"level": 1,
 			"entries": [
-				"从1级开始，你可以用言语和音乐激励英雄。当你或一个能听到你声音的生物在60英尺内进行能力检定、攻击检定或豁免检定时，你可以使用一次反应来消耗一个吟游诗人灵感骰，并将其添加到其检定结果中。你可以在生物掷骰后，但在你知道它成功或失败之前使用这个反应。",
-				"你的吟游诗人灵感骰开始为{@dice d6}，并在你达到该职业特定等级时增加大小，如上方吟游诗人表中的吟游诗人灵感栏所示。",
-				"你拥有等于1 + 你的魅力调整值（最少为1）的吟游诗人灵感骰，当你完成短休或长休时，你会恢复所有已用掉的骰子。"
+				"You can inspire heroism with both word and song. Beginning at 1st level, when another creature who can hear you within 30 feet makes an ability check or fails an attack roll or saving throw, you can use a reaction to expend a Bardic Inspiration Die, a d4, roll it, and add the result to the target's roll.",
+				"You have a number of Bardic Inspiration Dice equal to half your Bard level (rounded up) + your Charisma modifier. You regain all expended Dice when you finish a short or long rest.",
+				"Your Bardic Inspiration Die grows at certain Bard levels, as shown in the Bardic Insp. column of the Bard Class table."
 			],
 			"foundrySystem": {
 				"actionType": "util",
 				"activation": {
 					"cost": 1,
 					"type": "reaction",
-					"condition": "When you, or a creature within 60 feet that can hear you makes an ability check, attack roll, or saving throw"
+					"condition": "when a creature who can hear you within 30 feet fails an ability check or saving throw or misses with an attack roll"
 				},
 				"formula": "@scale.alternate-bard.bardic-inspiration",
 				"range": {
-					"value": 60,
+					"value": 30,
 					"units": "ft"
 				},
 				"uses": {
-					"max": "max(0, @abilities.cha.mod) + 1",
+					"max": "ceil(@classes.alternate-bard.levels / 2) + @abilities.cha.mod",
 					"per": "sr"
 				}
 			}
+		},
+		{
+			"name": "Folklore",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"level": 1,
+			"entries": [
+				"At 1st level choose one skill and one tool or language. You are now proficient in this skill or tool, or learn to speak, read, and write that language. If you choose a skill or tool that you are already proficient in, you add double your proficiency bonus to any ability check you make with that skill or tool.",
+				"You choose another skill and one tool or language to gain this benefit when you reach 6th, 10th, 14th, and 18th level."
+			],
+			"languageProficiencies": [
+				{},
+				{
+					"any": 1
+				},
+				{
+					"any": 2
+				}
+			],
+			"skillProficiencies": [
+				{},
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"acrobatics",
+							"sleight of hand",
+							"stealth",
+							"arcana",
+							"history",
+							"investigation",
+							"nature",
+							"religion",
+							"animal handling",
+							"insight",
+							"medicine",
+							"perception",
+							"survival",
+							"deception",
+							"intimidation",
+							"performance",
+							"persuasion"
+						],
+						"count": 1
+					}
+				}
+			],
+			"toolProficiencies": [
+				{},
+				{
+					"any": 1
+				}
+			],
+			"foundryImg": "icons/sundries/documents/document-official-brownl.webp"
 		},
 		{
 			"name": "Spellcasting",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"level": 1,
+			"level": 2,
 			"entries": [
-				"在1级时，你学会了利用你的表演能力，借助创世之歌施展出奇妙的法术：",
+				"At 2nd level, you can use your mastery over word and song to draw upon the Song of Creation to produce wondrous spells:",
 				{
 					"type": "entries",
 					"name": "Cantrips",
 					"entries": [
-						"你可以从{@filter Bard spell list|spells|level=0|class=bard (llab)}中选择两个零级咒语。在第4级和第10级时，你会额外学会一种吟游诗人零级咒语，如吟游诗人表中的\"已知零级咒语\"栏所示。"
+						"You learn two cantrips of your choice from the {@filter Bard spell list|spells|level=0|class=alternate bard (LLABrd)}. You learn an additional Bard cantrip at 4th and 10th level, as shown in the Cantrips Known column of the Bard table."
 					]
 				},
 				{
@@ -790,9 +847,8 @@
 					"type": "entries",
 					"name": "Spells Known of 1st-Level and Higher",
 					"entries": [
-						"在1级时，你可以从诗人法术列表末尾的职业描述中选择两个1级法术。",
-						"吟游诗人表格中的已知法术栏显示了你学习更多自选吟游诗人法术的时间。你学习的每个吟游诗人法术必须是你拥有法术位等级的法术，就像吟游诗人表格上显示的那样。例如，在这个职业的第5级时，你会学会一个1级或2级的新吟游诗人法术。",
-						"当你获得(%num%)吟游诗人等级时，你可以选择一个你已知的吟游诗人法术，并用你选择的另一个吟游诗人法术替换它，新选择的法术必须是你拥有法术位级别的法术。"
+						"You know two 1st-level spells of your choice from the Bard spell list at the end of this class. The Spells Known column of the Bard table shows when you learn more Bard spells of your choice. Each spell you learn must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you learn one new Bard spell of 1st or 2nd-level.",
+						"Whenever you gain a Bard level, you can replace one Bard spell that you know with another Bard spell of your choice."
 					]
 				},
 				{
@@ -843,112 +899,17 @@
 			"foundryImg": "icons/magic/symbols/runes-carved-stone-yellow.webp"
 		},
 		{
-			"name": "Folklore",
+			"name": "Chords of Power",
+			"foundryImg": "icons/skills/trades/music-notes-sound-blue.webp",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
 			"level": 2,
 			"entries": [
-				"你已经游历了很远的地方，收集了各种知识。在2级时，你可以选择获得两种技能熟练，{@item musical instrument|PHB|musical instruments}，或{@filter tools|items|type=artisan's tools;gaming set}。你也可以选择学会一种语言，代替其中一项或两项技能、乐器或工具熟练。",
-				"在某些吟游诗人等级上，你会学到更多的民间传说。你将在第7级、第10级、第14级和第20级时选择获得熟练技能、乐器、工具，或学习另一种语言。"
-			],
-			"languageProficiencies": [
-				{},
-				{
-					"any": 1
-				},
-				{
-					"any": 2
-				}
-			],
-			"skillProficiencies": [
-				{},
-				{
-					"choose": {
-						"from": [
-							"athletics",
-							"acrobatics",
-							"sleight of hand",
-							"stealth",
-							"arcana",
-							"history",
-							"investigation",
-							"nature",
-							"religion",
-							"animal handling",
-							"insight",
-							"medicine",
-							"perception",
-							"survival",
-							"deception",
-							"intimidation",
-							"performance",
-							"persuasion"
-						],
-						"count": 1
-					}
-				},
-				{
-					"choose": {
-						"from": [
-							"athletics",
-							"acrobatics",
-							"sleight of hand",
-							"stealth",
-							"arcana",
-							"history",
-							"investigation",
-							"nature",
-							"religion",
-							"animal handling",
-							"insight",
-							"medicine",
-							"perception",
-							"survival",
-							"deception",
-							"intimidation",
-							"performance",
-							"persuasion"
-						],
-						"count": 2
-					}
-				}
-			],
-			"toolProficiencies": [
-				{},
-				{
-					"any": 1
-				},
-				{
-					"any": 2
-				}
-			],
-			"foundryImg": "icons/sundries/documents/document-official-brownl.webp"
-		},
-		{
-			"name": "Song of Rest",
-			"foundryImg": "icons/magic/nature/leaf-glow-triple-teal.webp",
-			"source": "LLABrd",
-			"className": "Alternate Bard",
-			"classSource": "LLABrd",
-			"level": 2,
-			"entries": [
-				"从2级开始，你可以使用抚慰的音乐或演讲来帮助在短休息期间恢复体力的受伤盟友。如果你或任何可以听到你表演的友好生物在短休息结束时通过消耗一个或多个生命骰回复生命值，那么这些生物中的每一个都会额外恢复相当于你诗人灵感骰的一次投掷的生命值。",
-				"为了取代恢复这些额外生命值，生物可以选择将其当前等级{@condition exhaustion}减少1。"
-			],
-			"foundrySystem": {
-				"actionType": "heal",
-				"activation": {
-					"type": "special",
-					"condition": "At the end of a short rest"
-				},
-				"damage.parts": [
-					[
-						"@scale.alternate-bard.bardic-inspiration",
-						"healing"
-					]
-				]
-			}
+				"Your skills allow you to reproduce minor portions of the Song of Creation, known as {@filter Chords of Power|optionalfeatures|feature type=LLABrd:CP}. At 2nd level, you can reproduce two Chords, which you choose from the list at the end of this class. Most Bards use music or song to reproduce these Chords, but others reproduce them by recalling stories of heroism, legend, or tragedy.",
+				"During a long rest, you can spend 1 hour immersed in the Song of Creation practicing your chosen performative art to replace one Chord you know with another of your choice.",
+				"At certain levels you learn additional Chords of Power, as shown in the Chords Known column of the Bard Class table."
+			]
 		},
 		{
 			"name": "Bardic Tradition",
@@ -958,7 +919,7 @@
 			"level": 3,
 			"entries": [
 				"在3级时，选择最能代表你在许多旅行中获得的各种技能、才能和知识的吟游诗人传统：愚者（Fool）、学者（Loremaster）或诗人（Skald）。",
-				"这门课程的最后还包括了受到{@i Xanathar's Guide to Everything}中吟游诗人选项启发的吟游诗人传统：密谋者(Conspirator)、催眠师(Mesmer)和剑舞者(Sword Dancer)。",
+				"Also included at the end of this class are Bardic Traditions inspired by the Bard options published in {@i Xanathar's Guide to Everything}: the Conspirator, Mesmer, and Blade.",
 				"你的吟游诗人传统在3级时赋予你特性，再在你达到该职业的5级、11级和15级时再次获得特性。"
 			],
 			"foundryImg": "icons/tools/instruments/lute-gold-brown.webp"
@@ -971,10 +932,29 @@
 			"classSource": "LLABrd",
 			"level": 3,
 			"entries": [
-				"在你各种各样的旅行中，你从各种学科中掠夺了魔法知识。在3级时，你学会了两个{@filter 1st-level spells of your choice from any class spell list|spells|level=1}。这些《奇妙秘密》法术对你来说成为吟游诗人法术，但它们不计入你已知法术的总数。",
-				"你可以每次以最低等级施放你的魔法秘密法术一次，而不消耗法术槽，并在完成一次长休后恢复所有已消耗的使用次数。你也可以用你拥有的任何法术槽施放魔法秘密法术。",
-				"当你达到6级时，你可以选择学习两个额外的魔法秘密法术，然后在10级、14级和18级时再次学习。你学习的任何额外魔法秘密法术必须是你在吟游诗人表中拥有法术位级别的法术。",
-				"与您学习的其他吟游诗人法术不同，通过这个特性学习的任何吟游诗人法术在您获得本职业等级时不能被替换为另一个吟游诗人法术。"
+				"You have gathered magical knowledge from many disciplines. At 3rd level, you learn two 1st-level spells of your choice from any class spell list. They become Bard spells for you, but they do not count against your total number of Spells Known, and you can't replace these spells when you gain a Bard level.",
+				"You learn two additional Magical Secrets of certain spell levels at 5th level (2nd-level spells), at 9th level (3rd-level spells), at 13th level (4th-level spells), and finally at 17th level (5th-level spells)."
+			],
+			"foundrySystem": {
+				"actionType": "",
+				"activation.type": "",
+				"uses": {
+					"value": "",
+					"max": "",
+					"per": ""
+				}
+			}
+		},
+		{
+			"name": "Harmonious Recovery",
+			"source": "LLABrd",
+			"foundryImg": "icons/magic/life/cross-embers-glow-yellow-purple.webp",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, you can immerse yourself in the Song of Creation to regain magical potential. During a short rest, you can spend 10 minutes practicing your chosen performative art, to regain expended spell slots of a total level equal to your Charisma modifier (minimum of one 1st-level slot).",
+				"Once you use this feature to regain spell slots, you must finish a long rest before you can do so again."
 			],
 			"foundrySystem": {
 				"actionType": "",
@@ -1007,28 +987,14 @@
 			]
 		},
 		{
-			"name": "Countersong",
-			"source": "LLABrd",
-			"className": "Alternate Bard",
-			"classSource": "LLABrd",
-			"level": 6,
-			"entries": [
-				"从6级开始，你可以利用你的吟游诗人表演来干扰其他的法术施法者。当你能听到的一只生物在60英尺内施放一个有口头成分的法术时，你可以使用你的反应来演奏一段不和谐的旋律，并消耗一个或多个吟游诗人灵感骰(%num%)。",
-				"如果你消耗的吟游诗人灵感骰数量等于或高于施法时的等级，那么法术立即失败，没有任何效果。",
-				"如果这个法术的等级高于你消耗的吟游诗人灵感骰子数量，那么投掷吟游诗人灵感骰子。如果总数等于或高于法术等级加10，那么法术立即失败，没有任何效果。"
-			],
-			"foundryImg": "icons/tools/instruments/harp-gold-glowing.webp"
-		},
-		{
 			"name": "Magical Secrets",
 			"foundryImg": "icons/sundries/books/book-worn-blue.webp",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"level": 6,
+			"level": 5,
 			"entries": [
-				"在第6级时，你学会了两个额外的奇妙秘法法术。这些法术必须是{@filter 2nd level or lower|spells|level=1;2}的。",
-				"与您学习的其他吟游诗人法术不同，通过这个特性学习的任何吟游诗人法术在您获得本职业等级时不能被替换为另一个吟游诗人法术。"
+				"At 5th level, you learn two additional Magical Secrets spells of your choice. These spells must be of {@filter 2nd level|spells|level=2}."
 			]
 		},
 		{
@@ -1036,9 +1002,9 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"level": 7,
+			"level": 6,
 			"entries": [
-				"在第7级时，你学会了更多民间传说。你可以选择获得以下技能中的一个熟练项：{@item musical instrument|PHB|musical instruments}、{@filter tool|items|type=artisan's tools;gaming set}，或者学会另外一个你选择的技能{@5etools language|languages.html}。"
+				"At the 6th level, you learn more Folklore. You gain proficiency with one skill, {@item musical instrument|PHB|musical instruments}, {@filter tool|items|type=artisan's tools;gaming set}, or learn another {@5etools language|languages.html} of your choice."
 			],
 			"languageProficiencies": [
 				{},
@@ -1083,15 +1049,16 @@
 			"foundryImg": "icons/sundries/documents/document-official-brownl.webp"
 		},
 		{
-			"name": "Font of Inspiration",
-			"foundryImg": "icons/magic/fire/projectile-meteor-salvo-heavy-teal.webp",
+			"name": "Bardic Virtuoso",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
 			"level": 7,
 			"entries": [
-				"从7级开始，你可以直接从《创世之歌》中汲取诗人的力量。作为一个奖励动作，你可以消耗一个法术位来恢复消耗的诗人灵感骰数量，数量等同于所消耗法术位的等级。"
-			]
+				"Your intuitive knowledge of the Song of Creation propels your performative abilities to supernatural heights. Starting at 7th level, you add double your proficiency bonus to ability checks you make that incorporate a musical instrument.",
+				"Also, when you perform a Chord of Power that lasts until the start of your next turn, such as {@optfeature Lay of Alacrity|LLABrd}, you can use a bonus action on the next turn to continue performing that Chord without expending a Bardic Inspiration Die."
+			],
+			"foundryImg": "icons/tools/instruments/harp-gold-glowing.webp"
 		},
 		{
 			"name": "Ability Score Improvement",
@@ -1104,21 +1071,15 @@
 			]
 		},
 		{
-			"name": "Musical Expertise",
+			"name": "Magical Secrets",
+			"foundryImg": "icons/sundries/books/book-worn-blue.webp",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
 			"level": 9,
 			"entries": [
-				"创世之歌将您的表演能力推向超自然的高度。从9级开始，您在进行任何使用您熟练的乐器进行的能力检定时，可以额外添加您的熟练加值的两倍。",
-				"此外，每当你消耗一颗吟游诗人灵感骰(%num%)，你可以将其投掷两次并使用较高的结果。"
-			],
-			"expertise": [
-				{
-					"musical instrument": true
-				}
-			],
-			"foundryImg": "icons/sundries/documents/document-symbol-rune-tan.webp"
+				"At 9th level, you learn two additional Magical Secrets spells of your choice. These spells must be of {@filter 3rd level|spells|level=3}."
+			]
 		},
 		{
 			"name": "Folklore",
@@ -1172,15 +1133,15 @@
 			"foundryImg": "icons/sundries/documents/document-official-brownl.webp"
 		},
 		{
-			"name": "Magical Secrets",
-			"foundryImg": "icons/sundries/books/book-worn-blue.webp",
+			"name": "Font of Inspiration",
+			"foundryImg": "icons/magic/fire/projectile-meteor-salvo-heavy-teal.webp",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
 			"level": 10,
 			"entries": [
-				"在第10级时，你学会了两个额外的魔法奥秘法术。这些法术必须是{@filter 3rd level or lower|spells|level=1;2;3}的。",
-				"与您学习的其他吟游诗人法术不同，通过这个特性学习的任何吟游诗人法术在您获得本职业等级时不能被替换为另一个吟游诗人法术。"
+				"You can draw power from the ambient music from the Song of Creation in times of need. Starting at 10th level, you regain one expended Bardic Inspiration Die when you roll initiative.",
+				"You can also use your bonus action to expend one spell slot and regain Bardic Inspiration Dice equal to the slot's level."
 			]
 		},
 		{
@@ -1260,10 +1221,9 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"level": 14,
+			"level": 13,
 			"entries": [
-				"在14级时，你学会了两个额外的魔法奥秘法术，你可以自行选择。这些法术必须是{@filter 4th level or lower|spells|level=1;2;3;4}。",
-				"与您学习的其他吟游诗人法术不同，通过这个特性学习的任何吟游诗人法术在您获得本职业等级时不能被替换为另一个吟游诗人法术。"
+				"At 13th level, you learn two additional Magical Secrets spells of your choice. These spells must be of {@filter 4th level|spells|level=4}."
 			]
 		},
 		{
@@ -1292,20 +1252,9 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"level": 18,
+			"level": 17,
 			"entries": [
-				"在18级时，你学会了两个额外的奇迹秘法法术，你可以自行选择。这些法术必须是{@filter 5th level or lower|spells|level=1;2;3;4;5}的。",
-				"与您学习的其他吟游诗人法术不同，通过这个特性学习的任何吟游诗人法术在您获得本职业等级时不能被替换为另一个吟游诗人法术。"
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "LLABrd",
-			"className": "Alternate Bard",
-			"classSource": "LLABrd",
-			"level": 19,
-			"entries": [
-				"在19级时，你可以将一个属性分数提高2点，或者将两个属性分数各提高1点。与正常规则一样，使用这个特性时不能将你的属性分数提高到20以上。"
+				"At 17th level, you learn two additional Magical Secrets spells of your choice. These spells must be of {@filter 5th level|spells|level=5}."
 			]
 		},
 		{
@@ -1313,9 +1262,9 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"level": 20,
+			"level": 18,
 			"entries": [
-				"在20级时，你学会了更多民间传说。你可以选择获得熟练加成于一个技能{@item musical instrument|PHB|musical instruments}，{@filter tool|items|type=artisan's tools;gaming set}，或者学习另一个你选择的技能{@5etools language|languages.html}。"
+				"At 18h level, you learn more Folklore. You gain proficiency with one skill, {@item musical instrument|PHB|musical instruments}, {@filter tool|items|type=artisan's tools;gaming set}, or learn another {@5etools language|languages.html} of your choice."
 			],
 			"languageProficiencies": [
 				{},
@@ -1360,13 +1309,23 @@
 			"foundryImg": "icons/sundries/documents/document-official-brownl.webp"
 		},
 		{
-			"name": "Mythic Performance",
+			"name": "Ability Score Improvement",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"level": 19,
+			"entries": [
+				"在19级时，你可以将一个属性分数提高2点，或者将两个属性分数各提高1点。与正常规则一样，使用这个特性时不能将你的属性分数提高到20以上。"
+			]
+		},
+		{
+			"name": "Mythic Secrets",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
 			"level": 20,
 			"entries": [
-				"到了20级，你已经解锁了一些宇宙中最强大和秘密的魔法。你可以从任何法术列表中选择一个6级和一个7级的法术，每次长休后你可以以其最低级别施放这两个法术各一次。"
+				"You have uncovered knowledge of some of the most powerful and secret magicks of the multiverse. At 20th level, you learn one 6th-level and one 7th-level Magical Secrets spell. You can cast each of these spells once at their lowest level, and regain the ability to do so when you finish a long rest."
 			],
 			"foundryImg": "icons/tools/instruments/harp-yellow-teal.webp"
 		}
@@ -1380,9 +1339,18 @@
 			"shortName": "Fool",
 			"subclassFeatures": [
 				"Fool|Alternate Bard|LLABrd|Fool|LLABrd|3|LLABrd",
-				"Sharp Wit|Alternate Bard|LLABrd|Fool|LLABrd|5|LLABrd",
+				"Tumbling Strike|Alternate Bard|LLABrd|Fool|LLABrd|5|LLABrd",
 				"Wondrous Tumbler|Alternate Bard|LLABrd|Fool|LLABrd|11|LLABrd",
 				"Fool's Luck|Alternate Bard|LLABrd|Fool|LLABrd|15|LLABrd"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"vicious mockery (alternate)|LLABrd"
+						]
+					}
+				}
 			],
 			"foundryImg": "icons/svg/card-joker.svg"
 		},
@@ -1395,8 +1363,8 @@
 			"subclassFeatures": [
 				"Loremaster|Alternate Bard|LLABrd|Loremaster|LLABrd|3|LLABrd",
 				"Potent Performer|Alternate Bard|LLABrd|Loremaster|LLABrd|5|LLABrd",
-				"Wondrous Success|Alternate Bard|LLABrd|Loremaster|LLABrd|11|LLABrd",
-				"Burst of Inspiration|Alternate Bard|LLABrd|Loremaster|LLABrd|15|LLABrd"
+				"Peerless Skill|Alternate Bard|LLABrd|Loremaster|LLABrd|11|LLABrd",
+				"Wondrous Success|Alternate Bard|LLABrd|Loremaster|LLABrd|15|LLABrd"
 			],
 			"additionalSpells": [
 				{
@@ -1411,38 +1379,38 @@
 								]
 							}
 						},
-						"6": {
+						"5": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2"
+										"choose": "level=2"
 									}
 								]
 							}
 						},
-						"10": {
+						"9": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2;3"
+										"choose": "level=3"
 									}
 								]
 							}
 						},
-						"14": {
+						"13": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2;3;4"
+										"choose": "level=4"
 									}
 								]
 							}
 						},
-						"18": {
+						"17": {
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=1;2;3;4;5"
+										"choose": "level=5"
 									}
 								]
 							}
@@ -1463,7 +1431,7 @@
 				"Extra Attack|Alternate Bard|LLABrd|Skald|LLABrd|5|LLABrd",
 				"Gallant Charge|Alternate Bard|LLABrd|Skald|LLABrd|5|LLABrd",
 				"Ringing Strikes|Alternate Bard|LLABrd|Skald|LLABrd|11|LLABrd",
-				"Heroic Ballad|Alternate Bard|LLABrd|Skald|LLABrd|15|LLABrd"
+				"Heroic Inspiration|Alternate Bard|LLABrd|Skald|LLABrd|15|LLABrd"
 			],
 			"foundryImg": "icons/tools/instruments/horn-white-gray.webp"
 		},
@@ -1476,7 +1444,7 @@
 			"subclassFeatures": [
 				"Conspirator|Alternate Bard|LLABrd|Conspirator|LLABrd|3|LLABrd",
 				"Devious Strike|Alternate Bard|LLABrd|Conspirator|LLABrd|5|LLABrd",
-				"Visage of Shadows|Alternate Bard|LLABrd|Conspirator|LLABrd|5|LLABrd",
+				"Stolen Visage|Alternate Bard|LLABrd|Conspirator|LLABrd|5|LLABrd",
 				"Mental Anguish|Alternate Bard|LLABrd|Conspirator|LLABrd|11|LLABrd",
 				"Sinister Manipulation|Alternate Bard|LLABrd|Conspirator|LLABrd|15|LLABrd"
 			],
@@ -1490,10 +1458,10 @@
 			"shortName": "Mesmer",
 			"subclassFeatures": [
 				"Mesmer|Alternate Bard|LLABrd|Mesmer|LLABrd|3|LLABrd",
-				"Greater Performance|Alternate Bard|LLABrd|Mesmer|LLABrd|5|LLABrd",
+				"Otherworldly Visage|Alternate Bard|LLABrd|Mesmer|LLABrd|5|LLABrd",
 				"Reflexive Charm|Alternate Bard|LLABrd|Mesmer|LLABrd|5|LLABrd",
 				"Mantle of Protection|Alternate Bard|LLABrd|Mesmer|LLABrd|11|LLABrd",
-				"Fey Presence|Alternate Bard|LLABrd|Mesmer|LLABrd|15|LLABrd"
+				"Majestic Presence|Alternate Bard|LLABrd|Mesmer|LLABrd|15|LLABrd"
 			],
 			"additionalSpells": [
 				{
@@ -1509,29 +1477,50 @@
 			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye.webp"
 		},
 		{
-			"name": "Sword Dancer",
+			"name": "Counselor",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"shortName": "Sword Dancer",
+			"shortName": "Counselor",
 			"subclassFeatures": [
-				"Sword Dancer|Alternate Bard|LLABrd|Sword Dancer|LLABrd|3|LLABrd",
-				"Extra Attack|Alternate Bard|LLABrd|Sword Dancer|LLABrd|5|LLABrd",
-				"Deadly Flourish|Alternate Bard|LLABrd|Sword Dancer|LLABrd|11|LLABrd",
-				"Master of Blades|Alternate Bard|LLABrd|Sword Dancer|LLABrd|15|LLABrd"
+				"Counselor|Alternate Bard|LLABrd|Counselor|LLABrd|3|LLABrd",
+				"Confounding Logic|Alternate Bard|LLABrd|Counselor|LLABrd|5|LLABrd",
+				"Elder Tongue|Alternate Bard|LLABrd|Counselor|LLABrd|5|LLABrd",
+				"Reliable Counsel|Alternate Bard|LLABrd|Counselor|LLABrd|11|LLABrd",
+				"Peerless Inspiration|Alternate Bard|LLABrd|Counselor|LLABrd|15|LLABrd"
+			],
+			"foundryImg": "icons/commodities/treasure/bust-carved-stone.webp"
+		},
+		{
+			"name": "True Singer",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"shortName": "True Singer",
+			"subclassFeatures": [
+				"True Singer|Alternate Bard|LLABrd|True Singer|LLABrd|3|LLABrd",
+				"Dancing Creation|Alternate Bard|LLABrd|True Singer|LLABrd|5|LLABrd",
+				"Moving Inspiration|Alternate Bard|LLABrd|True Singer|LLABrd|5|LLABrd",
+				"Wondrous Chords|Alternate Bard|LLABrd|True Singer|LLABrd|11|LLABrd",
+				"True Song|Alternate Bard|LLABrd|True Singer|LLABrd|15|LLABrd"
+			],
+			"foundryImg": "icons/commodities/treasure/trinket-totem-bone-green.webp"
+		},
+		{
+			"name": "Blade",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"shortName": "Blade",
+			"subclassFeatures": [
+				"Blade|Alternate Bard|LLABrd|Blade|LLABrd|3|LLABrd",
+				"Extra Attack|Alternate Bard|LLABrd|Blade|LLABrd|5|LLABrd",
+				"Deadly Reprisal|Alternate Bard|LLABrd|Blade|LLABrd|11|LLABrd",
+				"Master of Blades|Alternate Bard|LLABrd|Blade|LLABrd|15|LLABrd"
 			],
 			"optionalfeatureProgression": [
 				{
-					"name": "Fighting Style",
-					"featureType": [
-						"FS:BA"
-					],
-					"progression": {
-						"3": 1
-					}
-				},
-				{
-					"name": "Elegant Exploits",
+					"name": "Blade Exploits",
 					"featureType": [
 						"LL:1ME"
 					],
@@ -1541,7 +1530,7 @@
 					}
 				},
 				{
-					"name": "Elegant Exploits",
+					"name": "Blade Exploits",
 					"featureType": [
 						"LL:1ME",
 						"LL:2ME"
@@ -1552,7 +1541,7 @@
 					}
 				},
 				{
-					"name": "Elegant Exploits",
+					"name": "Blade Exploits",
 					"featureType": [
 						"LL:1ME",
 						"LL:2ME",
@@ -1568,7 +1557,7 @@
 				{
 					"subclasses": [
 						{
-							"name": "Sword Dancer",
+							"name": "Blade",
 							"source": "LLABrd"
 						}
 					],
@@ -1700,13 +1689,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Fool Tradition feature}",
-				"你获得了可以装作一个愚蠢的蠢货的技能。你在{@skill Acrobatics}和{@skill Sleight of Hand}上获得熟练加值。每当你使用这两项技能进行能力检定时，你的检定结果会额外增加一个吟游诗人灵感骰的点数。"
-			],
-			"skillProficiencies": [
-				{
-					"acrobatics": true,
-					"sleight of hand": true
-				}
+				"You have learned to move about in a strange yet entertaining manner. You gain proficiency in one of the following skills of your choice: Acrobatics, Performance, or Sleight of Hand.",
+				"You also learn the {@spell vicious mockery (alternate)|llspell} Cantrip, but it doesn't count against your Cantrips Known. If you already know this Cantrip you learn another Bard Cantrip of your choice."
 			],
 			"foundryImg": "icons/equipment/head/mask-carved-scream-tan.webp"
 		},
@@ -1722,7 +1706,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Fool Tradition feature}",
-				"你知道说什么话能够分散、混淆和削弱他人的信心。作为一种反应，当一个生物在你60英尺内可以听到你的声音时进行伤害骰、能力检定或攻击骰时，你可以消耗一个诗人灵感骰，将其投掷，并从该生物的骰点数中减去所投掷的数字。你可以在生物投掷骰后使用这个反应，但在确定其骰点是否成功或失败，或造成伤害之前。"
+				"You know just the right thing to say to distract, confuse, and sap the confidence of others. When a creature who can hear and understand you within 30 feet makes an ability check or attack roll, you can use your reaction to expend one Bardic Inspiration Die, roll it, and subtract it from its roll.",
+				"You can use this reaction after the target rolls, but before you know if it succeeds or fails, or the damage it will deal."
 			],
 			"consumes": {
 				"name": "Bardic Inspiration"
@@ -1732,11 +1717,11 @@
 				"activation": {
 					"cost": 1,
 					"type": "reaction",
-					"condition": "When a creature that can hear you within 60 feet makes an ability check, attack roll, or rolls for damage"
+					"condition": "When a creature who can hear and understand you within 30 feet makes an ability check or attack roll"
 				},
 				"formula": "@scale.alternate-bard.bardic-inspiration",
 				"range": {
-					"value": 60,
+					"value": 30,
 					"units": "ft"
 				}
 			}
@@ -1752,24 +1737,21 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Fool Tradition feature}",
-				"你学会了以一种奇怪但有趣的方式移动。你可以在你的回合中将{@action Dash}动作作为一个奖励动作。每当你进行{@action Dash}动作时，你会获得以下列出的好处，直到你当前回合结束为止：",
+				"You have learned to move about in a strange yet entertaining manner. As a bonus action, you can begin Tumbling, which grants you the following benefits until the end of your turn:",
 				{
 					"type": "list",
 					"items": [
+						"Your walking speed increases by 10 feet, and you gain a climbing speed equal to your walking speed.",
 						"对你的机会攻击有劣势。(Opportunity attacks against you have disadvantage.)",
-						"你获得一个等同于你行走速度的攀爬速度。",
 						"你可以在与你相同大小或更大的生物的空间中移动，而无需额外消耗移动力。",
-						"你减少受到的摔落伤害，减少值等同于你的等级 + 你的魅力修正值（最少为1）。"
+						"You can reduce any falling damage that you take by your Bard level + your Dexterity modifier (minimum of 1)."
 					]
 				}
 			],
-			"foundrySystem": {
-				"formula": "max(1, @details.level + @mod)"
-			},
 			"foundryImg": "icons/skills/movement/arrow-upward-white.webp"
 		},
 		{
-			"name": "Sharp Wit",
+			"name": "Tumbling Strike",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -1779,14 +1761,15 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Fool Tradition feature}",
-				"你可以使用讽刺和机智来转移那些想伤害你的人的注意力。当你能看见的一只生物在60英尺内以你为目标发动攻击时，你可以使用你的削减之词反应，而不消耗你的吟游诗人灵感使用次数。",
-				"另外，每当你使用你的（Cutting Words）反应时，目标未命中其攻击或在能力检定中失败时，你可以选择让其受到等于你（Bardic Inspiration）骰点的一次投掷加上你的魅力调整值的精神伤害。"
+				"Your strange and unpredictable movements allow you to land potent strikes. Once per turn when you hit a creature with a melee weapon attack while Tumbling, you can deal bonus damage equal to one roll of your Bardic Inspiration Die.",
+				"You can forgo this additional damage to instead force the target to make a Dexterity saving throw against your Bard Spell save DC. On a failure, it falls prone. Any creature that is at least one size larger than you automatically succeeds on this Dexterity saving throw.",
+				"At certain Bard levels, the bonus damage from Tumbling increases: at 11th level it becomes two rolls of your Bardic Inspiration Die, and it becomes three rolls at 15th level."
 			],
 			"foundrySystem": {
 				"actionType": "other",
 				"activation": {
 					"type": "special",
-					"condition": "henever you use your Cutting Words reaction, and the target misses with its attack or fails its ability check"
+					"condition": "when you hit a creature with a melee weapon attack while Tumbling"
 				},
 				"damage.parts": [
 					[
@@ -1808,29 +1791,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Fool Tradition feature}",
-				"你可以利用吟游诗人的魔法来装饰你的天赋杂技技能。当你进行{@action Dash}动作时，你可以消耗一个吟游诗人灵感骰来获得以下其中一项好处：",
-				{
-					"type": "entries",
-					"name": "Disappearing Act",
-					"entries": [
-						"你变得{@condition invisible}，在接下来的10分钟里可以无声无息地移动。如果你伤害了一只生物或者迫使它进行豁免才，这种隐形状态就会结束。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Misdirection",
-					"entries": [
-						"你消失了，然后立刻重新出现在你能看到的、距离你不超过30英尺的未被占据的空间中。"
-					]
-				}
+				"You can embellish your natural acrobatic talents with bardic magic. When you begin Tumbling, you can turn invisible and teleport to an unoccupied space you can see within 30 feet. You remain invisible until the end of your turn, or until you attack, cast a spell, or touch another creature.",
+				"Once you use this feature you must finish a short or long rest before you can use it again. When you have no uses left, you can expend a Bardic Inspiration Die to use it again."
 			],
-			"consumes": {
-				"name": "Bardic Inspiration",
-				"amount": 1
-			},
-			"foundrySystem": {
-				"activation.condition": "When you take the Dash action"
-			},
 			"foundryImg": "icons/skills/movement/ball-spinning-blue.webp"
 		},
 		{
@@ -1844,18 +1807,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Fool Tradition feature}",
-				"你可以从胜利中抢救失败，以恢复一些你的吟游诗人魔法。当DM要求你进行能力检定或强制你进行豁免检定并且你成功时，你可以选择以滑稽的方式失败，恢复一个已使用的吟游诗人灵感骰(%num%)。"
+				"Your affinity for hijinks and embarrassing antics allows you to regain bardic magic from failure. Whenever you miss with an attack roll or fail a saving throw, you can choose to regain one expended Bardic Inspiration Die.",
+				"You can do so a number of times equal to your Charisma modifier, and you regain the ability to do so when you finish a long rest."
 			],
-			"consumes": {
-				"name": "Bardic Inspiration",
-				"amount": -1
-			},
-			"foundrySystem": {
-				"activation": {
-					"type": "special",
-					"condition": "When the DM calls for you to make an ability check or forces you to make a saving throw and you succeed"
-				}
-			},
 			"foundryImg": "icons/magic/symbols/clover-luck-white-green.webp"
 		},
 		{
@@ -1870,7 +1824,7 @@
 				"被称为智者的诗人(Loremasters)在世界各地旅行，收集关于一切事物的知识碎片。从学术著作和宗教文本到酒馆传说和当地农民的迷信，这些旅行者珍视各种故事。这些诗人的忠诚首先在于追求美和真理，而不是效忠君主或信仰某位神明的戒律。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Additional Magical Secrets|Alternate Bard|LLABrd|Loremaster|LLABrd|3|LLABrd"
+					"subclassFeature": "Bardic Lore|Alternate Bard|LLABrd|Loremaster|LLABrd|3|LLABrd"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -1879,7 +1833,7 @@
 			]
 		},
 		{
-			"name": "Additional Magical Secrets",
+			"name": "Bardic Lore",
 			"foundryImg": "icons/sundries/books/book-worn-blue.webp",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
@@ -1890,8 +1844,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Loremaster Tradition feature}",
-				"你对各种魔法传统的了解甚至超过了你的同僚吟游诗人。你可以学习选择一个额外的1级魔法秘密法术。",
-				"此外，每当你学习额外的魔法秘密时，你可以选择学习三个法术，而不是通常的两个。"
+				"Your knowledge of various traditions, magical and mundane exceeds even that of your fellow Bards. Whenever you learn Magical Secrets spells, you learn three spells of that level.",
+				"You also gain proficiency in one of the following skills of your choice: Arcana, History, Medicine, Nature, or Religion. Whenever you make an ability check with any of these skills, you can use Charisma in place of their normal ability score, representing local traditions and lore you've gleaned."
 			]
 		},
 		{
@@ -1906,21 +1860,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Loremaster Tradition feature}",
-				"在你的漫游中，你学到了许多关于许多事情的知识。你可以在不包括你熟练加值的任何能力检定中额外添加你熟练加值的一半。",
-				"此外，你会熟练掌握你选择的两项技能：{@skill Arcana}，{@skill History}，{@skill Nature}或{@skill Religion}。"
-			],
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"arcana",
-							"history",
-							"nature",
-							"religion"
-						],
-						"count": 2
-					}
-				}
+				"In your travels you have learned much about many things. You add half your proficiency bonus, rounded down, to any ability check that doesn't include your proficiency bonus."
 			]
 		},
 		{
@@ -1934,12 +1874,13 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Loremaster Tradition feature}",
-				"每当你施放一项造成雷霆或心灵伤害，或为生物恢复生命值的吟游诗人法术时，你可以获得一个奖励，该奖励等同于你吟游诗人灵感骰的一次投掷。"
+				"In your travels you have learned Whenever you cast a Bard spell that deals damage, or restores hit points to a creature, you gain a bonus to the damage roll or hit points restored equal to one roll of your Bardic Inspiration Die.uch about many things. You add half your proficiency bonus, rounded down, to any ability check that doesn't include your proficiency bonus.",
+				"Moreover, whenever you roll a Bardic Inspiration Die, you can roll the Die twice and choose which result you use."
 			],
 			"foundryImg": "icons/magic/light/explosion-beam-impact-silhouette.webp"
 		},
 		{
-			"name": "Wondrous Success",
+			"name": "Peerless Skill",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -1949,24 +1890,18 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Loremaster Tradition feature}",
-				"你的技能无可挑剔。当你使用你的吟游诗人灵感反应来增加一个能力检定时，你可以引发一个魔法成功，将目标生物的{@dice d20}骰结果变为20。如果目标成功，它会以明显的魔法方式成功。",
-				"一旦你以这种方式使用了你的吟游诗人灵感，你必须在再次这样做之前完成一次短休或长休。",
-				{
-					"type": "inset",
-					"name": "Inspiration & Magical Success",
-					"entries": [
-						"拥有他们的(Wondrous Success)特性，一位博学诗人可以让一只生物在每次休息中几乎自动成功一次能力检定。",
-						"请记住，角色只有在DM要求进行能力检定时才能进行能力检定，除非有成功的可能性，无论多么小，否则不应该要求进行能力检定。"
-					]
-				}
+				"Your wide-ranging knowledge and talents with bardic magic allow you to turn your failures into success. When you miss with an attack roll, or fail an ability check or saving throw, you can expend a Bardic Inspiration Die, roll it, and add it to the result of your roll, possibly turning failure into success."
 			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
 			"foundrySystem": {
-				"activation.condition": "When you use your Bardic Inspiration reaction to add to an ability check"
+				"activation.condition": "When you miss with an attack roll, or fail an ability check or saving throw"
 			},
 			"foundryImg": "icons/magic/light/explosion-star-glow-yellow.webp"
 		},
 		{
-			"name": "Burst of Inspiration",
+			"name": "Wondrous Success",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -1976,16 +1911,21 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Loremaster Tradition feature}",
-				"你的演讲和歌曲充满了强大的吟游诗人魔法，激励所有听到你的人。当你在除自己以外的生物身上使用你的吟游诗人灵感反应时，你可以选择在目标周围10英尺内的生物，在你的下一个回合开始之前，可以将你的吟游诗人灵感骰的一次投掷添加到他们进行的第一个能力检定、攻击骰或豁免骰上。"
+				"Your skill with bardic magic is beyond reproach. When you add a Bardic Inspiration Die to a creature's attack roll, ability check, or saving throw you can invoke a Wondrous Success to replace its d20 roll with your Bard level. If this roll causes it to find success, it does so in an overtly magical way.",
+				"一旦你以这种方式使用了你的吟游诗人灵感，你必须在再次这样做之前完成一次短休或长休。",
+				{
+					"type": "inset",
+					"name": "Inspiration & Magical Success",
+					"entries": [
+						"With their Wondrous Success feature a Loremaster Bard can allow a creature to almost automatically succeed on an ability check once per rest.",
+						"请记住，角色只有在DM要求进行能力检定时才能进行能力检定，除非有成功的可能性，无论多么小，否则不应该要求进行能力检定。"
+					]
+				}
 			],
 			"foundrySystem": {
 				"activation": {
 					"type": "special",
-					"condition": "When you use your Bardic Inspiration reaction on a creature other than yourself"
-				},
-				"range": {
-					"value": 10,
-					"units": "ft"
+					"condition": "When you add a Bardic Inspiration Die to a creature's attack roll, ability check, or saving throw"
 				}
 			},
 			"foundryImg": "icons/magic/light/beams-explosion-blue.webp"
@@ -2021,8 +1961,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Skald Tradition feature}",
-				"在你渴望成为传奇英雄之一的愿望中，你学会了在战斗中自立自强。你获得了{@filter martial weapons|items|type=martial weapon}，{@item shield|PHB|shields}和{@filter heavy armor|items|type=heavy armor}的熟练技能。",
-				"此外，当你双手持有武器或盾牌时，你的声音在施放吟游诗人法术或使用其他吟游诗人特性时，可以视为一种乐器。"
+				"In your desire to stand amongst the heroes of legend you have learned to fight. You gain proficiency with all martial weapons, shields, and heavy armor. You can also use your weapon or shield as a spellcasting focus for Bard spells.",
+				"Your combat training has also made you heartier than most Bards. Your maximum hit points increase by 3, and they increase by 1 again each time you gain a Bard level."
 			],
 			"armorProficiencies": [
 				{
@@ -2048,7 +1988,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Skald Tradition feature}",
-				"你可以利用你的吟游诗人魔法，在战斗中激励英勇壮举。当你或一个能听到你声音的生物在60英尺内用武器攻击命中一名生物时，你可以使用你的反应消耗一次吟游诗人灵感，掷出你的吟游诗人灵感骰，然后将结果加到伤害骰上。"
+				"You use your bardic magic to inspire feats of valor in battle. When you add a Bardic Inspiration Die to another creature's weapon attack roll and its attack hits, it also adds one roll of your Bardic Inspiration Die to the damage roll of its attack.",
+				"Also, when you make a weapon attack roll and miss, you can expend one Bardic Inspiration Die, roll it, and add the result to your roll, possibly turning your miss into a hit."
 			],
 			"consumes": {
 				"name": "Bardic Inspiration"
@@ -2056,8 +1997,7 @@
 			"foundrySystem": {
 				"activation": {
 					"cost": 1,
-					"type": "reaction",
-					"condition": "When you or a creature that can hear you within 60 feet hits a creature with a weapon attack"
+					"type": "special"
 				},
 				"damage.parts": [
 					[
@@ -2079,7 +2019,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Skald Tradition feature}",
-				"每当你在你的回合上执行{@action Attack}动作时，你可以攻击两次，而不是一次。此外，你可以施放你已知的一个吟游诗人零级法术，代替其中一次攻击。"
+				"You can attack twice, instead of once, whenever you take the Attack action. Moreover, if you use your action to cast a Bard spell or to perform a Chord of Power, you can make a single weapon attack as a bonus action on that turn."
 			]
 		},
 		{
@@ -2093,20 +2033,19 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Skald Tradition feature}",
-				"当你进行先攻骰时，你可以消耗一次你的吟游诗人灵感来发动英勇冲锋。你和任何你选择的，距离你15英尺内并能听到你的生物，在他们的先攻骰中获得一个等同于你吟游诗人灵感骰点的奖励。",
-				"在{@condition incapacitated}或{@quickref surprise|PHB|3|0|surprised}时，您不能使用此功能。"
+				"Your heroic presence rallies allies to charge into battle. As a reaction when you roll initiative, you can expend a Bardic Inspiration Die. Creatures of your choice within 30 feet that can hear you gain a bonus to their initiative roll equal to one roll of your Bardic Inspiration Die."
 			],
 			"consumes": {
 				"name": "Bardic Inspiration"
 			},
 			"foundrySystem": {
 				"activation": {
-					"type": "special",
+					"type": "reaction",
 					"condition": "When you roll initiative"
 				},
 				"formula": "@scale.alternate-bard.bardic-inspiration",
 				"range": {
-					"value": 15,
+					"value": 30,
 					"units": "ft"
 				}
 			},
@@ -2123,8 +2062,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Skald Tradition feature}",
-				"你用吟游魔法赋予你的打击力量。每当你用武器攻击命中一只生物时，你会造成额外的雷霆伤害，伤害值等同于你吟游灵感骰的一个骰数。",
-				"此外，您可以选择将您的战斗灵感奖励伤害类型更改为雷属性，而非武器的伤害类型。"
+				"Your weapon attacks are empowered with your signature bardic magic. Whenever you hit with a weapon attack you deal bonus thunder damage on hit equal to one roll of your Bardic Inspiration Die.",
+				"When you make a weapon attack, you can choose to forgo this bonus damage to make your attack with advantage."
 			],
 			"foundrySystem": {
 				"activation": {
@@ -2141,7 +2080,7 @@
 			"foundryImg": "icons/skills/melee/shield-block-gray-yellow.webp"
 		},
 		{
-			"name": "Heroic Ballad",
+			"name": "Heroic Inspiration",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -2151,18 +2090,19 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Skald Tradition feature}",
-				"你的话激励着他人做出更伟大的英勇壮举。当你使用战斗灵感时，你还可以使目标获得临时生命值，数值等同于你的吟游诗人灵感骰的一次投掷结果加上你的魅力调整值（最低为1）。"
+				"Your words motivate others to ever greater feats of gallantry. When you add a Bardic Inspiration Die to another creature's attack roll, ability check, or saving throw, you can also grant that creature temporary hit points equal to your Charisma modifier (minimum of 1 temporary hit point).",
+				"While a creature has temporary hit points from this feature its walking speed increases by 10 feet."
 			],
 			"foundrySystem": {
 				"ability": "cha",
 				"actionType": "heal",
 				"activation": {
 					"type": "special",
-					"condition": "When you use Combat Inspiration"
+					"condition": "When you add a Bardic Inspiration Die to another creature's attack roll, ability check, or saving throw"
 				},
 				"damage.parts": [
 					[
-						"@scale.alternate-bard.bardic-inspiration + max(1, @mod)",
+						"@mod",
 						"temphp"
 					]
 				]
@@ -2205,8 +2145,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Conspirator Tradition feature}",
-				"你是擅长操纵那些错误地信任你的生物的专家。你在{@skill Deception}上获得熟练加值，并且可以选择两种工具获得熟练加值：{@item disguise kit|phb|disguise kits}，{@item forgery kit|phb|forgery kits}，{@item poisoner's kit|phb|poisoner's kits}，或{@item thieves' tools|phb}。",
-				"每当你进行任何使用上述技能或工具熟练加值的能力检定时，你的检定获得一个额外加值，数值等同于你的吟游诗人灵感骰的一次投掷。"
+				"You are an expert at manipulating creatures that make the mistake of trusting you. You gain proficiency in Deception and with two of the following tools of your choice: disguise kits, forgery kits, poisoner's kits, or thieves' tools.",
+				"Also, when you cast a Bard spell with a verbal component that only targets one creature within 10 feet, you can choose for only the target of your spell to hear its verbal component."
 			],
 			"skillProficiencies": [
 				{
@@ -2239,7 +2179,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Conspirator Tradition feature}",
-				"你的打击侵袭身心。当你用武器攻击命中一只生物时，你可以消耗一个吟游诗人灵感骰来对该生物造成额外的精神伤害，伤害值等于你的吟游诗人灵感骰的两次投掷结果。"
+				"You enhance your strikes with bardic magic to pierce body and mind. When you hit a creature with a weapon attack, you can expend one Bardic Inspiration Die to deal bonus psychic damage equal to two rolls of your Bardic Inspiration Die."
 			],
 			"consumes": {
 				"name": "Bardic Inspiration"
@@ -2269,8 +2209,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Conspirator Tradition feature}",
-				"你可以在无辜的言辞中注入险恶的吟游诗人魔法，激发恐惧和偏执。如果你与一个人形生物交谈至少1分钟，你可以消耗一个吟游诗人灵感骰，并迫使其进行一次感知豁免投骰。在豁免失败时，它会成为你选择的一个生物的{@condition frightened}，持续1小时。如果受惊吓的生物或其盟友被你或你的盟友攻击或受伤，效果会提前结束。",
-				"无论豁免投掷的结果如何，目标都不会意识到你试图在魔法上影响它的感情。"
+				"You lace your speech with insidious bardic magic to inspire fear and paranoia. If you speak with a creature who can hear and understand you for at least 1 minute, you can expend a Bardic Inspiration Die to force it to make a Wisdom saving throw against your Bard Spell save DC. On a failed save, for the next hour it is frightened of a creature (your choice) who you both can see and treats that creature as its enemy. This effect ends if the frightened target or its allies are attacked or damaged by you or your allies.",
+				"The target is unaware that you attempted to influence its thoughts, regardless of the saving throw's result."
 			],
 			"consumes": {
 				"name": "Bardic Inspiration"
@@ -2295,8 +2235,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Conspirator Tradition feature}",
-				"每个回合，如果目标周围有另一个敌人（不包括你）在5英尺内，并且你没有劣势，你可以对你用武器攻击命中的生物造成额外{@damage 2d6}的伤害。{@condition incapacitated}",
-				"这种额外伤害在该职业的特定等级上增加：在9级（{@damage 3d6}），13级（{@damage 4d6}），和17级（{@damage 5d6}）。"
+				"You are as deadly with a blade as you are with words. Once per turn when you hit a creature with a weapon attack, you can deal bonus damage equal to one roll of your Bardic Inspiration Die.",
+				"At 11th level this bonus damage becomes two rolls of your Bardic Inspiration Die, and it becomes three rolls of your Bardic Inspiration Die when you reach 15th level."
 			],
 			"foundrySystem": {
 				"damage.parts": [
@@ -2307,7 +2247,7 @@
 			}
 		},
 		{
-			"name": "Visage of Shadows",
+			"name": "Stolen Visage",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -2317,10 +2257,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Conspirator Tradition feature}",
-				"你可以使用邪恶魔法来困住那些成为你受害者的人的面容。当一个人形生物在你30英尺内死亡时，你可以使用你的反应来捕捉它的阴影。",
-				"作为一个动作，你可以消耗这个暗影，并在魔法作用下变身，使自己看起来像生前的那个人形态。效果持续1小时，或者直到你以一个动作结束它。",
-				"当你被暗影转化时，你可以获得任何一个人形态会与熟人分享的信息，比如关于其个人生活和背景的一般细节，但不包括任何秘密信息。",
-				"生物可以尝试通过使用他们的动作，对你的吟游诗人法术豁免 DC 进行智力（{@skill Investigation}）或感知（{@skill Insight}）检定来看穿这种变形。"
+				"You can use sinister bardic magic to trap the Visage of other people who fall victim to your sinister schemes. Whenever a humanoid you can see dies within 30 feet of you, you can use your reaction to magically capture its Visage.",
+				"As an action, you can consume this Visage to transform to resemble that humanoid as it looked in life, gaining access to any memories and information that it would have shared with a casual acquaintance. The effect lasts for 1 hour, but you can end the Visage with an action. A suspicious creature can see through the Visage by making a successful Wisdom (Insight) check contested by your Charisma (Deception) check.",
+				"You can only have one Visage trapped at a time. When you trap another creature's Visage, any previous Visage is lost."
 			],
 			"foundrySystem": {
 				"activation": {
@@ -2341,8 +2280,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Conspirator Tradition feature}",
-				"你在每次攻击中都融入操控性魔法。当你使用心灵攻击时，你可以让生物对你的吟游诗人法术豁免 DC 进行一次感知豁免，否则它会成为你的 {@condition frightened}，直到你的下一个回合结束。",
-				"当你用武器攻击一个与你相距{@condition frightened}的生物时，你可以结束{@condition frightened}状态，并将你的武器攻击转化为自动暴击。"
+				"You weave your manipulative magic into every strike. When you use Psychic Assault, the creature must make a Wisdom saving throw against your Spell save DC or be frightened of you until the end of your next turn.",
+				"Also, when you hit a creature that is Frightened of you with a weapon attack, you can end the Frightened condition for it and turn your weapon attack into an automatic critical hit."
 			],
 			"foundrySystem": {
 				"activation": {
@@ -2363,12 +2302,10 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Conspirator Tradition feature}",
-				"你的操控魔法无所不能。作为一个动作，你可以对一个距离你5英尺内、能够听到并理解你的生物耳语，并迫使它根据你的吟游诗人法术豁免 DC 进行一次感知豁免。",
-				"在未能通过豁免检定时，生物会相信你知道它最黑暗的秘密，尽管你并不知道。在那之后，它会被你 {@condition charmed} 直到你或你的盟友对其发动攻击或造成伤害。",
-				"当 {@condition charmed} 这种方式时，一只生物会秘密地在任何可能的情况下帮助你，但不包括战斗或为你冒生命危险。",
-				"你一次只能以这种方式拥有一个生物{@condition charmed}，尝试以这种方式魅惑另一个生物会结束先前生物的效果。你也可以将这些效果作为一个动作结束在{@condition charmed}生物身上。"
+				"Your manipulative bardic magic knows no bounds. You can use Seeds of Terror as an action. On a failure, in place of the normal effect, you can choose to make the target believe you have knowledge of its darkest secret. If you do, it is charmed by you indefinitely, or until you or your allies act with hostility toward it, and it will secretly aid you in any way it can, short of directly fighting or risking its life for you.",
+				"You can only have one creature charmed in this unique way at a time, and attempting to charm another creature with this feature end this effect for the previous creature."
 			],
-			"foundryImg": "icons/magic/control/debuff-energy-hold-pink.webp"
+			"foundryImg": "icons/magic/control/control-influence-puppet.webp"
 		},
 		{
 			"name": "Mesmer",
@@ -2387,7 +2324,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wondrous Performance|Alternate Bard|LLABrd|Mesmer|LLABrd|3|LLABrd"
+					"subclassFeature": "Glamorous Mantle|Alternate Bard|LLABrd|Mesmer|LLABrd|3|LLABrd"
 				}
 			]
 		},
@@ -2402,22 +2339,13 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Mesmer Tradition feature}",
-				"你的言辞充满了诱惑的精灵魔法。你学会了{@spell friends|LLABrd}、{@spell charm person}和{@spell command}咒语，但它们不计入你已知的零级咒语或已知的咒语总数。（Fey magic）",
-				"此外，如果你为某个生物表演，或者与其交谈至少1分钟，你可以消耗一个吟游诗人灵感骰来施放{@spell charm person}，以该生物为目标。以这种方式施放咒语时，目标不会察觉到你试图用魔法影响它。"
+				"Your words are laced with seductive enchantment. You learn the {@spell friends}, {@spell charm person}, and {@spell command} spells, but they do not count against your number of Cantrips or Spells Known.",
+				"Additionally, you always know Enthralling Performance, and it does not count against your total Chords Known, but you cannot replace it with another Chord of Power."
 			],
-			"consumes": {
-				"name": "Bardic Inspiration"
-			},
-			"foundrySystem": {
-				"activation": {
-					"cost": 1,
-					"type": "minute"
-				}
-			},
 			"foundryImg": "icons/magic/control/hypnosis-mesmerism-swirl.webp"
 		},
 		{
-			"name": "Wondrous Performance",
+			"name": "Glamorous Mantle",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -2427,9 +2355,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Mesmer Tradition feature}",
-				"你可以利用吟游诗人的魔法瞬间提升你的外表。作为一个奖励动作，你可以消耗一个吟游诗人灵感骰来赋予自己精灵魔法的力量，并选择在60英尺内能看到你的最多等于你魅力调整值的生物数量。",
-				"生物获得临时生命值，数值等同于你的吟游诗人灵感骰的一次投掷，并可以立即移动其速度。",
-				"这个特殊动作不会引发机会攻击。"
+				"As a bonus action, you can expend a Bardic Inspiration Die, roll it, and momentarily enhance your beauty with magic. You then choose a number of creatures who can see you within 30 feet (up to your Charisma modifier) to gain temporary hit points equal to your Bardic Inspiration Die roll and move up to their speed without provoking opportunity attacks.",
+				"This magic then fades, and your normal beauty returns."
 			],
 			"consumes": {
 				"name": "Bardic Inspiration"
@@ -2445,7 +2372,7 @@
 			"foundryImg": "icons/tools/instruments/chimes-wood-white.webp"
 		},
 		{
-			"name": "Greater Performance",
+			"name": "Otherworldly Visage",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -2455,8 +2382,14 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Mesmer Tradition feature}",
-				"你诱人的吟游者魔法力量增强了。当你使用奇妙表演时，它持续1分钟，但如果你是{@condition incapacitated}或选择结束它，它会提前结束。",
-				"在你的奇妙表演持续期间，你可以利用每个随后的奖励动作来要么使单个生物获得奇妙表演的好处，要么你可以施放{@spell charm person}或{@spell command}而不消耗法术位。以这种方式施放的这些法术只持续到你的表演结束。"
+				"The otherworldly power of your bardic magic has increased. When you use Glamorous Mantle, it lasts for up to 1 minute, or until you are incapacitated or end it as a bonus action.",
+				{
+					"type": "list",
+					"items": [
+						"You cast {@spell charm person} or {@spell command}, without expending a spell slot, but the effects of {@spell charm person} only last for the duration of your Mantle.",
+						"You grant a creature temporary hit points equal to one roll of your Bardic Inspiration Die, and it can move up its speed without provoking opportunity attacks."
+					]
+				}
 			],
 			"foundryImg": "icons/tools/instruments/chimes-wood-brown.webp"
 		},
@@ -2471,8 +2404,12 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Mesmer Tradition feature}",
-				"你可以尝试用奇幻魔法来分散你的敌人注意力。作为一种反应，当你能看见的一只生物以近战攻击瞄准你时，你可以在该攻击中将你的吟游诗人灵感骰投掷一次，加到你的护甲等级上以对抗该攻击。"
+				"You can distract attackers with your whimsical bardic magics. When a creature who can see you hits you with an attack, you can expend a Bardic Inspiration Die as your reaction, roll it, and add the result to your Armor Class against that attack.",
+				"When your Glamorous Mantle is active, you can use this reaction at will, without expending a Bardic Inspiration Die to use it."
 			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
 			"foundrySystem": {
 				"formula": "@scale.alternate-bard.bardic-inspiration"
 			},
@@ -2489,12 +2426,20 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Mesmer Tradition feature}",
-				"你的表演散发出一股强大的守护精灵魔法气息。在你的奇妙表演持续期间，能看到或听到你的选择生物在30英尺内对抗{@condition charmed}、{@condition frightened}、{@condition paralyzed}、{@condition petrified}和{@condition stunned}状态的豁免投掷获得优势。"
+				"Your performances exude an aura of protective bardic magic. When your Glamorous Mantle is active or while you perform a Chord of Power, you and creatures of your choice within 30 feet who can see or hear you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"They have advantage on saving throws to resist and end the charmed, frightened, paralyzed, or stunned condition.",
+						"They can see through any illusion produced by a spell of a level equal to your Charisma modifier or lower."
+					]
+				},
+				"Moreover, when you roll initiative and are not surprised or incapacitated, you can use your reaction to expend a Bardic Inspiration Die to activate your Glamorous Mantle."
 			],
 			"foundryImg": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp"
 		},
 		{
-			"name": "Fey Presence",
+			"name": "Majestic Presence",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
@@ -2504,16 +2449,20 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Mesmer Tradition feature}",
-				"你从Feywild中汲取的吟游魔法改变了你，赋予你迷人而又凶猛的外表。当你的奇妙表演(Wondrous Performance)正在生效时，强迫一个能看见你的生物进行豁免才能抵抗{@condition charmed}或{@condition frightened}状态时，它的豁免投掷有劣势。"
+				"The powerful enchantment magics you use have given you a lovely, yet fierce appearance, much like the powerful Archfey. When you cast an enchantment spell on a creature that can see you within 30 feet, you can expend a Bardic Inspiration Die and force it to make its saving throw with disadvantage.",
+				"If your Glamorous Mantle is active, you can use this feature without expending your Bardic Inspiration Die."
 			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
 			"foundryImg": "icons/magic/light/explosion-star-glow-silhouette.webp"
 		},
 		{
-			"name": "Sword Dancer",
+			"name": "Blade",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 3,
 			"header": 1,
@@ -2521,15 +2470,15 @@
 				"被简称为刀锋(Bard)的吟游诗人遵循这一传统，以其奇妙而致命的表演而闻名，这些表演融入了刀剑武器。这些吟游诗人远非平凡的表演者，他们利用自己的刀剑技巧来谋生，成为决斗者、义勇者，有时甚至转而从事冒险。",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elegant Duelist|Alternate Bard|LLABrd|Sword Dancer|LLABrd|3|LLABrd"
+					"subclassFeature": "Elegant Duelist|Alternate Bard|LLABrd|Blade|LLABrd|3|LLABrd"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fighting Style|Alternate Bard|LLABrd|Sword Dancer|LLABrd|3|LLABrd"
+					"subclassFeature": "Fighting Style|Alternate Bard|LLABrd|Blade|LLABrd|3|LLABrd"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elegant Exploits|Alternate Bard|LLABrd|Sword Dancer|LLABrd|3|LLABrd"
+					"subclassFeature": "Blade Exploits|Alternate Bard|LLABrd|Blade|LLABrd|3|LLABrd"
 				}
 			]
 		},
@@ -2538,14 +2487,14 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-level Sword Dancer Tradition feature}",
-				"你将致命的刀刃和战斗技巧融入到你的表演中。你获得{@item scimitar|phb|scimitars}的熟练加值，如果你熟练使用近战武器，你可以将其作为你所知道的任何吟游诗人法术的施法焦点。",
-				"你还会熟练掌握 {@skill Performance}，每当你需要进行魅力检定时，你可以选择进行一个以你擅长的致命刀具为基础的敏捷检定，而不是魅力检定。"
+				"{@i 3rd-level Blade Tradition feature}",
+				"You gain proficiency with scimitars, and you can use melee weapons as the spellcasting focus for your Bard spells.",
+				"You also gain proficiency in Performance, and whenever you would make a Charisma (Performance) check, you can make a Dexterity (Performance) check that incorporates a deadly bladed weapon you are proficient with instead."
 			],
 			"skillProficiencies": [
 				{
@@ -2564,76 +2513,57 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-level Sword Dancer Tradition feature}",
-				"你获得以下列出的战斗风格中的一个。即使你能学习另一个战斗风格，也不能多次学习相同的战斗风格。",
-				"每当你获得一个吟游诗人等级时，你可以用同一列表中的另一个选项替换这个战斗风格。",
+				"{@i 3rd-level Blade Tradition feature}",
+				"You learn one of the Fighting Styles from the following list. Whenever you gain a Bard level, you can replace this Fighting Style with another of your choice:",
 				{
-					"type": "entries",
-					"name": "Classical Swordplay",
+					"type": "options",
+					"count": 1,
 					"entries": [
-						"当你挥舞一把（finesse weapon）并且没有其他武器时，只要你不穿着重甲或使用盾牌，你的攻击投掷和盔甲等级都会获得+1的奖励。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Dueling",
-					"entries": [
-						"当你单手持有一把近战武器且没有其他武器时，你对它的伤害骰获得+2的加值。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Dual Wielding",
-					"entries": [
-						"当你进行双武器战斗时采取攻击动作时，你可以额外进行一次单独的攻击，使用非主手武器，作为你的动作的一部分，而不是作为你的奖励动作，同时将你的能力调整值加到这次攻击的伤害上。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Featherweight Fighting",
-					"entries": [
-						"当你只装备轻型武器而没有其他武器时，你的速度增加10英尺。同时，只要你不穿着中重甲或使用盾牌，你使用轻型武器造成的伤害骰获得+1的奖励。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Thrown Weapon Fighting",
-					"entries": [
-						"你可以在使用该武器进行攻击时，将具有投掷特性的武器抽出。此外，当你使用投掷武器进行远程武器攻击命中时，你获得+2的伤害加值用于该攻击的伤害骰投掷。"
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Versatile Fighting",
-					"entries": [
-						"当使用一把多才多艺的武器而没有盾牌时，你可以选择在你的下一个回合开始前单手或双手挥舞武器。当单手挥舞时，你获得+1的攻击加值和护甲等级。双手挥舞时，你获得+2的伤害加值。"
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Classical Swordplay|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dual Wielding|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Featherweight Fighting|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thrown Weapon Fighting|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Versatile Fighting|LLAF"
+						}
 					]
 				}
-			],
-			"foundrySystem": {
-				"activation": {
-					"cost": "",
-					"type": ""
-				}
-			}
+			]
 		},
 		{
-			"name": "Elegant Exploits",
+			"name": "Blade Exploits",
 			"foundryImg": "icons/weapons/swords/sword-guard-steel-green.webp",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-level Sword Dancer Tradition feature}",
+				"{@i 3rd-level Blade Tradition feature}",
 				"你已经研究了各种技巧，以提高你致命的吟游诗人表演。你获得以下特性：",
 				{
 					"type": "entries",
@@ -2682,28 +2612,28 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 5,
 			"header": 2,
 			"entries": [
-				"{@i 5th-level Sword Dancer Tradition feature}",
-				"每当你在你的回合上执行{@action Attack}动作时，你可以攻击两次，而不是一次。此外，你可以施放你已知的一个吟游诗人零级法术，代替其中一次攻击。"
+				"{@i 5th-level Blade Tradition feature}",
+				"You can attack twice, instead of once, whenever you take the Attack action. Moreover, if you use your action to cast a Bard spell or to perform a Chord of Power, you can make a single melee weapon attack as a bonus action on that turn."
 			]
 		},
 		{
-			"name": "Deadly Flourish",
+			"name": "Deadly Reprisal",
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 11,
 			"header": 2,
 			"entries": [
-				"{@i 11th-level Sword Dancer Tradition feature}",
-				"你用致命的精准挥舞你选择的武器。当你使用你熟练的近战武器造成伤害时，你可以投掷你的吟游诗人灵感骰代替武器的普通伤害骰，除非它的伤害骰更高。",
-				"此外，当你在行动中使用一个Exploit时，你可以将{@action Dash}或{@action Disengage}行动作为一个奖励动作。"
+				"{@i 11th-level Blade Tradition feature}",
+				"You wield your chosen weapons with deadly precision. When a creature you can see hits you with a melee weapon attack, you can use your reaction to make one melee weapon attack against it with advantage.",
+				"Also, whenever you use an Exploit during your action, you can take the Dash or Disengage action as a bonus action."
 			],
 			"foundryImg": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
 		},
@@ -2712,13 +2642,13 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"{@i 15th-level Sword Dancer Tradition feature}",
-				"你是你致命而美丽技艺的大师。每回合一次，你可以使用你已经掌握的一个Exploit，而不需要消耗一颗诗人灵感骰，取而代之的是投掷一个{@dice d6}。",
+				"{@i 15th-level Blade Tradition feature}",
+				"You are a master of your deadly yet beautiful craft. Once per turn, you can use an Exploit you know without expending a Bardic Inspiration Die, rolling a d6 in its place.",
 				"最后，在每次长休结束时，你可以花时间练习你的技巧，并用你选择的另一个武技来替换你已掌握的一个武技。"
 			],
 			"foundrySystem": {
@@ -2729,6 +2659,335 @@
 				"formula": "1d6"
 			},
 			"foundryImg": "icons/skills/melee/weapons-crossed-swords-white-blue.webp"
+		},
+		{
+			"name": "Counselor",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Counselor Bards use their mastery over the Song of Creation to empower their speech. They traditionally take up roles as political advisors to the powerful, or master scholars of local law who represent those accused of crimes. They are known far and wide for their silver tongues and linguistic skills.",
+				"Counselors channel the Song of Creation through logical arguments and well-crafted speeches rather than music.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bardic Counsel|Alternate Bard|LLABrd|Counselor|LLABrd|3|LLABrd"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cutting Logic|Alternate Bard|LLABrd|Counselor|LLABrd|3|LLABrd"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Potent Advice|Alternate Bard|LLABrd|Counselor|LLABrd|3|LLABrd"
+				}
+			]
+		},
+		{
+			"name": "Bardic Counsel",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Counselor Tradition feature}",
+				"Your bardic skill is focused on oratory skills and knowledge of local traditions. You gain proficiency in History and your choice of either Deception or Persuasion.",
+				"Whenever you make an Intelligence (History) check related to local law or tradition, a Charisma (Deception) or Charisma (Persuasion) check, you treat a d20 roll of 7 or lower as an 8."
+			],
+			"foundryImg": "icons/sundries/books/book-embossed-steel-brown.webp"
+		},
+		{
+			"name": "Cutting Logic",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Counselor Tradition feature}",
+				"Your confidence and way with words unsettles your foes and empowers the resolve of your allies. When a creature within 30 feet that can hear and understand you is forced to make a saving throw by a creature other than yourself, you can use your reaction to expend a Bardic Inspiration Die, roll it, and subtract the result from its saving throw. You must use this reaction before you know the saving throw's result."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp"
+		},
+		{
+			"name": "Potent Advice",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Counselor Tradition feature}",
+				"Your magic holds true even when your words fail you. If you use your Bardic Inspiration reaction and the creature still misses with its attack roll, or fails its ability check or its saving throw, your Bardic Inspiration Die is not expended."
+			],
+			"foundryImg": "icons/magic/time/arrows-circling-green.webp"
+		},
+		{
+			"name": "Confounding Logic",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"{@i 5th-level Counselor Tradition feature}",
+				"You can lace your arguments with bardic magic to assault the minds of your enemies. As an action, you can force a creature that can hear and understand you within 30 feet to make an Intelligence saving throw against your Bard Spell save DC.",
+				"On a failed save, it takes psychic damage equal to a roll of your Bardic Inspiration Die, and until the beginning of your next turn it cannot take reactions and its speed is halved.",
+				"This psychic damage increases to two rolls of your Bardic Inspiration Die at 11th level, and three rolls at 15th level."
+			],
+			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp"
+		},
+		{
+			"name": "Elder Tongue",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"{@i 5th-level Counselor Tradition feature}",
+				"As an action, you can infuse your speech with the Song of Creation itself so that any creature within 60 feet that can hear you does so as if you were speaking its native tongue.",
+				"This effect lasts for 1 hour, and in order for this to work on a creature, it must be able to speak at least one language."
+			],
+			"foundrySystem": {
+				"formula": "@scale.alternate-bard.bardic-inspiration"
+			},
+			"foundryImg": "icons/commodities/biological/tongue-red.webp"
+		},
+		{
+			"name": "Reliable Counsel",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Counselor Tradition feature}",
+				"You always seem to recall the perfect fact or know just what to say at the right time. Whenever you make an Intelligence check to recall information, or you make Charisma check to convince a creature of something, you can replace your d20 roll with your Bard level."
+			],
+			"foundryImg": "icons/commodities/biological/organ-brain-pink.webp"
+		},
+		{
+			"name": "Peerless Inspiration",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "Counselor",
+			"subclassSource": "LLABrd",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Counselor Tradition feature}",
+				"Your advice and reasoning have become so powerful that it is indistinguishable from magic. When you use your Bardic Inspiration reaction, you can choose to use the maximum value of your Bardic Inspiration Die in place of rolling it.",
+				"You can use this feature a number of times equal to your Charisma modifier (a minimum of once), and you regain all expended uses when you finish a long rest."
+			],
+			"foundryImg": "icons/commodities/treasure/crown-gold-laurel-wreath.webp"
+		},
+		{
+			"name": "True Singer",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "True Singer",
+			"subclassSource": "LLABrd",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"While all Bards can wield the Song of Creation, those known as True Singers are said to have a unique understanding of it. This intimate knowledge of the song which created all things tends to make them eccentric, even more so than the average Bard, and drives them to take up residence in the wilderness, where they can be closest to creation in its purest form.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Creator's Song|Alternate Bard|LLABrd|True Singer|LLABrd|3|LLABrd"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "True Inspiration|Alternate Bard|LLABrd|True Singer|LLABrd|3|LLABrd"
+				}
+			]
+		},
+		{
+			"name": "Creator's Song",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "True Singer",
+			"subclassSource": "LLABrd",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level True Singer Tradition feature}",
+				"Your understanding of the Song of Creation allows you to sing objects into being. As an action, you can sing and create one inanimate object no larger than your hand, in your hand or in an unoccupied space that can support it within 10 feet.",
+				"You must be familiar with any object you create this way, and to create an object that would require specific skills to craft you must be proficient in the corresponding tools.",
+				"The object is visibly magical, and produces faint pleasant music. It has a number of hit points equal to your Bard level, and its Armor Class is equal to your Charisma score. This object disappears after 1 hour, or when it is reduced to 0 hit points or you use this feature to create another object.",
+				"When you use this feature you can expend a spell slot to create larger objects, as determined by the slot expended:",
+				{
+					"type": "table",
+					"colLabels": [
+						"Spell Slot",
+						"Size"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"None",
+							"hand-sized"
+						],
+						[
+							"1st",
+							"Tiny"
+						],
+						[
+							"2nd",
+							"Small"
+						],
+						[
+							"3rd",
+							"Medium"
+						],
+						[
+							"4th",
+							"Large"
+						],
+						[
+							"5th",
+							"Huge"
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				}
+			],
+			"foundryImg": "icons/commodities/treasure/figurine-rabbit.webp"
+		},
+		{
+			"name": "True Inspiration",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "True Singer",
+			"subclassSource": "LLABrd",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level True Singer Tradition feature}",
+				"Your intimate knowledge of the Song of Creation empowers your bardic abilities. Your Bardic Inspiration Dice are d6s.",
+				"At certain Bard levels, the size of your Bardic Inspiration Dice increase again: at 5th level (d8s), at 11th level (d10s), and finally at 17th level (d12s)."
+			],
+			"foundryImg": "icons/commodities/treasure/token-engraved-pickaxe-pink.webp"
+		},
+		{
+			"name": "Dancing Creation",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "True Singer",
+			"subclassSource": "LLABrd",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"{@i 5th-level True Singer Tradition feature}",
+				"Your understanding of the Song of Creation has deepened, allowing you to temporarily bring life to lifeless objects. As an action, you can sing life into a Large or smaller object that is not being worn or carried, awakening it as a {@creature Living Object|LLABrd|Living Object}.",
+				{
+					"type": "entries",
+					"name": "Statistics",
+					"entries": [
+						"The {@creature Living Object|LLABrd|Living Object} uses the stat block of the same name on the following page. It uses your proficiency bonus (PB), Charisma modifier (CHA), and Spell save DC."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Combat",
+					"entries": [
+						"The Living Object obeys you completely and acts during your turn in combat. It will only take the Dodge action unless you use your bonus action to sing a command to it to take an action from its stat block or another action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Duration",
+					"entries": [
+						"The Living Object remains animated in this way for 1 minute, but it instantly reverts to its lifeless state if you are incapacitated, if you use this feature to bring another object to life, or if it is reduced to 0 hit points. If the Object is reduced to 0 hit points it is destroyed and shatters to pieces."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Uses",
+					"entries": [
+						"Once you use this feature to animate an object. you must complete a long rest before you can use it again.",
+						"When you have no uses of this feature remaining, you can expend a spell slot of 1st-level or higher to animate another lifeless object as a Living Object."
+					]
+				}
+			],
+			"foundryImg": "icons/commodities/wood/furniture-stool-brown.webp"
+		},
+		{
+			"name": "Moving Inspiration",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "True Singer",
+			"subclassSource": "LLABrd",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"{@i 5th-level True Singer Tradition feature}",
+				"Your songs compel your allies to dance along to the Song of Creation with you. Whenever you use your Bardic Inspiration reaction, the target can move up to 15 feet without provoking opportunity attacks once it resolves the triggering attack roll, ability check, or saving throw."
+			],
+			"foundryImg": "icons/commodities/wood/wood-wheel-brown.webp"
+		},
+		{
+			"name": "Wondrous Chords",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "True Singer",
+			"subclassSource": "LLABrd",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level True Singer Tradition feature}",
+				"Your natural affinity with the Song of Creation allows you to channel it in ways impossible for other Bards. Whenever you perform a Chord of Power, you can perform two Chords you know to produce both effects simultaneously. However, you must expend a Bardic Inspiration Die for each as normal.",
+				"If you use Bardic Virtuoso to continue performing these Chords, you can continue both with a single action."
+			],
+			"foundryImg": "icons/commodities/treasure/broach-jewel-gold-blue.webp"
+		},
+		{
+			"name": "True Song",
+			"source": "LLABrd",
+			"className": "Alternate Bard",
+			"classSource": "LLABrd",
+			"subclassShortName": "True Singer",
+			"subclassSource": "LLABrd",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level True Singer Tradition feature}",
+				"You understand the Song of Creation as if you were present when it first brought the multiverse into existence. You learn the {@spell awaken} spell, and you can cast it without expending the normal material component. Once you do so, you must finish 1d4 long rests before you can cast it in this way again.",
+				"Also, when you use Dancing Creation to create a Living Object, the Object stays animated until you animate another object or it is destroyed. Moreover, if you cast awaken on your Living Object, it becomes an independent living creature.",
+				"Finally, when you use Creator's Song to create an object by expending a spell slot, the object is a permanent creation."
+			],
+			"foundryImg": "icons/commodities/treasure/puzzle-box-glowing-blue.webp"
 		}
 	],
 	"foundrySubclassFeature": [
@@ -2831,7 +3090,7 @@
 			"source": "LLABrd",
 			"className": "Alternate Bard",
 			"classSource": "LLABrd",
-			"subclassShortName": "Sword Dancer",
+			"subclassShortName": "Blade",
 			"subclassSource": "LLABrd",
 			"level": 3,
 			"effects": [
@@ -2851,190 +3110,310 @@
 	],
 	"optionalfeature": [
 		{
-			"name": "Classical Swordplay",
+			"name": "Inspiring Melody",
 			"source": "LLABrd",
 			"featureType": [
-				"FS:BA"
+				"LLABrd:CP"
 			],
 			"entries": [
-				"当你挥舞一把精巧武器且没有其他武器时，只要你不穿戴重甲或盾牌，你的攻击投掷获得+2的奖励，并且你的护甲等级获得+1奖励。"
+				"As an action, you expend any number of Bardic Inspiration Dice (up to your Charisma modifier), and choose a creature who can hear you within 30 feet for each Bardic Inspiration Die spent. These creatures gain temporary hit points equal to the maximum roll of your Bardic Inspiration Die."
 			],
-			"foundryEffects": [
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/tools/instruments/bell-gold.webp"
+		},
+		{
+			"name": "Enthralling Performance",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"entries": [
+				"After you perform for an audience for a least 1 minute, you can expend one Bardic Inspiration Die to force creatures of your choice within 90 feet who listened to this performance to make a Wisdom saving throw. On a failed save, creatures are charmed by you for 1 hour, or until you or your allies do anything hostile to a member of the audience. On a success, creatures are unaware you attempted to charm them.",
+				"While charmed, creatures idolize you and will do anything you ask short of risking their lives or fighting for you."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/magic/control/hypnosis-mesmerism-eye-tan.webp"
+		},
+		{
+			"name": "Irritating Tune",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice who are within 30 feet and can hear you at the beginning of their turn must succeed on a Wisdom saving throw or have disadvantage on attack rolls against all creatures other than you until the end of this performance.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/creatures/invertebrates/fly-wasp-mosquito-green.webp"
+		},
+		{
+			"name": "Lay of Alacrity",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice who are within 30 feet and can hear you at the beginning of their turn gain a bonus to their speed equal to five times your Charisma modifier in feet (minimum of 5 feet) which lasts until the end of their current turn.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp"
+		},
+		{
+			"name": "Song of Rest",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"entries": [
+				"During the course of a short rest you can perform to soothe your weary allies. Expend any number of Bardic Inspiration Dice and roll them. You restore a total number of hit points equal to the result of this roll, distributed among creatures who are participating in this short rest and can hear you.",
+				"Once a creature benefits from this Chord of Power it can't benefit from it again until it finishes a long rest."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp"
+		},
+		{
+			"name": "Countersong",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"prerequisite": [
 				{
-					"name": "Classical Swordplay",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.bonuses.mwak.attack",
-							"mode": "ADD",
-							"value": 2
-						},
-						{
-							"key": "system.bonuses.rwak.attack",
-							"mode": "ADD",
-							"value": 2
-						},
-						{
-							"key": "system.attributes.ac.bonus",
-							"mode": "ADD",
-							"value": 1
-						}
-					]
+					"level": 6
 				}
 			],
-			"foundryImg": "icons/skills/melee/swords-parry-block-blue.webp"
+			"entries": [
+				"When you hear a creature within 30 feet cast a spell, you can use your reaciton expend a Bardic Inspiration Die, roll it, and produce a chaotic sound, attempting to disrupt the spell. The caster must make an ability check with its spellcasting ability, and add the level of the spell it was casting to the result.",
+				"If the result of its ability check is less than 10 + your Bardic Inspiration Die roll, the creature's spell fails and has no effect."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp"
 		},
 		{
-			"name": "Dueling",
+			"name": "Disorienting Dirge",
 			"source": "LLABrd",
 			"featureType": [
-				"FS:BA"
+				"LLABrd:CP"
 			],
-			"entries": [
-				"当你单手持有一把近战武器且没有其他武器时，你对它的伤害骰获得+2的加值。"
-			],
-			"foundryEffects": [
+			"prerequisite": [
 				{
-					"name": "Damage Bonus",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.bonuses.mwak.damage",
-							"mode": "ADD",
-							"value": 2
-						}
-					]
+					"level": 6
 				}
 			],
-			"foundryImg": "icons/skills/melee/hand-grip-sword-orange.webp"
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice who are within 30 feet and can hear you have disadvantage on Wisdom saving throws and saving throws to maintain their concentration.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp"
 		},
 		{
-			"name": "Dual Wielding",
+			"name": "Hymn of Courage",
 			"source": "LLABrd",
 			"featureType": [
-				"FS:BA"
+				"LLABrd:CP"
 			],
-			"entries": [
-				"在双武器战斗中，你可以将副手武器攻击作为你的攻击动作的一部分，而不是作为一个奖励动作，并且你可以将你的能力修正值加到这次攻击的伤害上。",
-				"当你这样做时，你不能进行额外动作攻击。"
-			],
-			"foundryImg": "icons/skills/melee/maneuver-daggers-paired-orange.webp"
-		},
-		{
-			"name": "Featherweight Fighting",
-			"source": "LLABrd",
-			"featureType": [
-				"FS:BA"
-			],
-			"entries": [
-				"当你没有武装或只持轻型武器，并且没有穿中型或重型盔甲时，你的移动速度增加10英尺，且你使用轻型近战武器和徒手攻击时，伤害骰获得+1加值。"
-			],
-			"foundryEffects": [
+			"prerequisite": [
 				{
-					"name": "Speed Bonus",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.attributes.movement.walk",
-							"mode": "ADD",
-							"value": 10
-						}
+					"level": 6
+				}
+			],
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice within 30 feet who can hear you are immune to the charmed and frightened condition. A creature who is charmed or frightened when it hears this performance is not affected by the condition as long as it can hear you.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp"
+		},
+		{
+			"name": "Song of Confidence",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"prerequisite": [
+				{
+					"level": 6
+				}
+			],
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice within 30 feet who can hear you are considered proficient in all saving throws for the duration.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/magic/holy/barrier-shield-winged-cross.webp"
+		},
+		{
+			"name": "Heroic Anthem",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice within 30 feet who can hear you add your Charisma modifier (minimum of +1) to the first damage roll they make before the start of your next turn.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-blue-yellow.webp"
+		},
+		{
+			"name": "Confounding Canticle",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"prerequisite": [
+				{
+					"level": 10
+				}
+			],
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice who are within 30 feet and can hear you at the beginning of their turn must succeed on a Wisdom saving throw, or until the start of your next turn their speed is halved, they can't take reactions, and they have disadvantage on all ability checks and attack rolls.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/magic/control/fear-fright-white.webp"
+		},
+		{
+			"name": "Mythic Anthem",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"prerequisite": [
+				{
+					"level": 18
+				}
+			],
+			"entries": [
+				"As an action, you expend one Bardic Inspiration Die to begin a performance that lasts until the beginning of your next turn. Creatures of your choice within 30 feet who can hear you are resistant to all damage from spells and magical effects. This performance immediately ends if you move from your space.",
+				"Performing this Chord of Power requires concentration."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/magic/defensive/shield-barrier-flaming-pentagon-magenta.webp"
+		},
+		{
+			"name": "Legendary Chord",
+			"source": "LLABrd",
+			"featureType": [
+				"LLABrd:CP"
+			],
+			"prerequisite": [
+				{
+					"level": 18
+				}
+			],
+			"entries": [
+				"As an action, you expend any number of Bardic Inspiration Dice (up to your Charisma modifier), and choose a creature who can hear you within 30 feet for each Bardic Inspiration Die spent. These creatures can immediately make a single weapon attack or cast a spell of 1st-level or lower."
+			],
+			"consumes": {
+				"name": "Bardic Inspiration"
+			},
+			"foundryImg": "icons/sundries/flags/banner-standard-moon.webp"
+		}
+	],
+	"monster": [
+		{
+			"name": "Living Object",
+			"source": "LLABrd",
+			"page": 3,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				{
+					"special": "10 + CHA + PB"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your Bard level"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 16,
+			"int": 2,
+			"wis": 4,
+			"cha": 8,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhausted",
+				"poisoned"
+			],
+			"passive": 12,
+			"languages": [
+				"understands the languages of its creator"
+			],
+			"trait": [
+				{
+					"name": "Creator's Bond",
+					"entries": [
+						"You add your PB to any ability check or saving throw that the Living Object makes."
 					]
 				},
 				{
-					"name": "Damage Bonus",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.bonuses.mwak.damage",
-							"mode": "ADD",
-							"value": 1
-						},
-						{
-							"key": "system.bonuses.rwak.damage",
-							"mode": "ADD",
-							"value": 1
-						}
-					]
-				}
-			],
-			"foundryImg": "icons/weapons/daggers/knife-kitchen-red.webp"
-		},
-		{
-			"name": "Thrown Weapon Fighting",
-			"source": "LLABrd",
-			"featureType": [
-				"FS:BA"
-			],
-			"entries": [
-				"你可以在使用该武器进行攻击时，将具有投掷特性的武器抽出。此外，当你使用投掷武器进行远程武器攻击命中时，你获得+2的伤害加值用于该攻击的伤害骰投掷。"
-			],
-			"foundryEffects": [
-				{
-					"name": "Thrown Weapon Damage Bonus",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.bonuses.rwak.damage",
-							"mode": "ADD",
-							"value": 2
-						}
-					]
-				}
-			],
-			"foundryImg": "icons/skills/melee/sword-twirl-orange.webp"
-		},
-		{
-			"name": "Versatile Fighting",
-			"source": "LLABrd",
-			"featureType": [
-				"FS:BA"
-			],
-			"entries": [
-				"当使用一把多功能武器且没有盾牌时，你使用该武器进行攻击时获得+1的攻击加值。在这种情况下，你还可以使用你的奖励行动来进行一次擒拿或推挤攻击，或者执行使用物品动作。"
-			],
-			"foundryEffects": [
-				{
-					"name": "One-Handed Bonus",
-					"disabled": true,
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.bonuses.mwak.attack",
-							"mode": "ADD",
-							"value": 1
-						},
-						{
-							"key": "system.bonuses.rwak.attack",
-							"mode": "ADD",
-							"value": 1
-						},
-						{
-							"key": "system.attributes.ac.bonus",
-							"mode": "ADD",
-							"value": 1
-						}
+					"name": "Enchanting Touch",
+					"entries": [
+						"Once per turn when the Living Object hits a creature with its Slam, the target must succeed on a Wisdom saving throw or its speed is halved until the start of your next turn as it dances."
 					]
 				},
 				{
-					"name": "Two-Handed Bonus",
-					"disabled": true,
-					"transfer": true,
-					"changes": [
-						{
-							"key": "system.bonuses.mwak.damage",
-							"mode": "ADD",
-							"value": 2
-						},
-						{
-							"key": "system.bonuses.rwak.damage",
-							"mode": "ADD",
-							"value": 2
-						}
+					"name": "Lively Dance",
+					"entries": [
+						"If the Living Object makes a Dexterity ability check or saving throw, it gains a bonus to its roll equal to one roll of your Bardic Inspiration Die."
 					]
 				}
 			],
-			"foundryImg": "icons/skills/melee/hand-grip-sword-red.webp"
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} + CHA + PB to hit, reach 5 ft., one target. On hit: magical bludgeoning damage equal to a roll of your Bardic Inspiration Die + CHA."
+					]
+				}
+			]
 		}
 	],
 	"classFluff": [
