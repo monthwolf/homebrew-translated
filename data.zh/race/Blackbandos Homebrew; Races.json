@@ -117,7 +117,8 @@
 				{
 					"name": "Languages",
 					"entries": [
-						"你会说、读、写普通话和(无限语)。无限语是一种奇怪的语言，它倾向于忽略其他语言的特征，比如用符号而不是字母来书写单词。"
+						"You can speak, read, and write {@language Common|PHB}, and {@language Wuxian|COMLanguage}.",
+						"Wuxian is a strange tongue, one that tends to ignore traits of other languages, such as writing words as symbols instead of letters."
 					],
 					"type": "entries"
 				},
@@ -238,7 +239,8 @@
 					"type": "entries",
 					"name": "Languages",
 					"entries": [
-						"你可以说、读、写{@language Common}、{@language Pandaren|BBHR}和{@language Sylvan}。{@language Pandaren|BBHR}是一种异国风情的语言，类似于现代汉语。"
+						"You can speak, read, and write {@language Common}, {@language Pandaren|BBHR}, and {@language Sylvan}.",
+						"{@language Pandaren|BBHR} is an exotic-sounding language, similar to modern-day chinese."
 					]
 				}
 			],
@@ -268,15 +270,26 @@
 			],
 			"additionalSpells": [
 				{
-					"prepared": {
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"disguise self|phb"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"suggestion|phb"
+								]
+							}
+						}
+					},
+					"ability": "cha",
+					"known": {
 						"1": [
-							"minor illusion|phb"
-						],
-						"3": [
-							"disguise self|phb"
-						],
-						"5": [
-							"suggestion|phb"
+							"minor illusion#c"
 						]
 					}
 				}
