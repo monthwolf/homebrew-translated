@@ -17,8 +17,8 @@
 			}
 		],
 		"dateAdded": 1696734744,
-		"dateLastModified": 1707891720,
-		"_dateLastModifiedHash": "d6599abe88"
+		"dateLastModified": 1725916692,
+		"_dateLastModifiedHash": "f20a230b2e"
 	},
 	"spell": [
 		{
@@ -1536,7 +1536,7 @@
 			],
 			"entries": [
 				"{@i Summoning raw disgust you undo the machinations of an enemy caster.}",
-				"你在触发豁免投掷时获得优势。直到你的下一个回合开始前，你对法术和其他魔法效果的豁免投掷获得优势，并且对来自法术的伤害具有抗性。"
+				"You gain advantage on the triggering saving throw. Until the start of your next turn, you have advantage on saving throws against spells and other magical effects, and you have resistance to damage from spells."
 			],
 			"classes": {
 				"fromClassList": [
@@ -1735,7 +1735,7 @@
 			],
 			"entries": [
 				"{@i The din that rages around the battle takes on a compelling quality to your foes, and they find themselves shaking apart with ecstasy as their bodies resonate with each new sound.}",
-				"选择你能看到范围内的一个生物。目标必须成功进行一次感知豁免才能避免受到一定数量的伤害（伤害值为其力量或敏捷调整值中较高者，最低为1点），并在其下一个回合开始前处于虚弱状态。"
+				"Choose one creature you can see within range. The target must succeed on a Wisdom saving throw or take a number of {@dice d8} equal to its Strength or Dexterity modifier (whichever is higher, minimum of 1) in bludgeoning damage and is {@condition incapacitated} until the start of its next turn."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2429,7 +2429,7 @@
 			],
 			"entries": [
 				"{@i Gurgling foul incantations you exude a disgusting wave of soul-pox. All those nearby are covered in a layer of toxic goo so foul it can kill in seconds.}",
-				"你周围15英尺范围内的每个生物都必须进行一次体质豁免才能。在豁免失败时，生物会受到{@damage 7d6}点死灵伤害，并在接下来的1分钟内成为{@condition poisoned}，而在豁免成功时只会受到一半伤害，并且不会成为{@condition poisoned}。",
+				"Each creature within 15 feet of you must make a Constitution saving throw. A creature takes {@damage 7d6} necrotic damage and is {@condition poisoned} for 1 minute on a failed save, or half as much damage and isn't {@condition poisoned} on a successful one.",
 				"该生物在每个回合结束时可以重复进行豁免投掷，若成功则结束{@condition poisoned}状态。"
 			],
 			"entriesHigherLevel": [
@@ -2549,6 +2549,10 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
 					}
 				]
 			},
@@ -2596,13 +2600,13 @@
 					"items": [
 						{
 							"entries": [
-								"如果物品是金属盔甲或金属盾牌，它提供的AC会受到永久性和累积性的-1惩罚。AC降至10的盔甲或盾牌降至+0加值的话就会被摧毁。"
+								"If the object is either metal armor or a metal shield, it takes a permanent and cumulative penalty to the AC it offers equal to the dice roll. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed."
 							],
 							"type": "entries"
 						},
 						{
 							"entries": [
-								"如果物体是一把金属武器，它的伤害骰永久性地累积-1点惩罚。如果惩罚降至-5，武器就会被摧毁。"
+								"If the object is a metal weapon, it takes a permanent and cumulative penalty to damage rolls equal to the dice roll. If its penalty drops to \u22125, the weapon is destroyed."
 							],
 							"type": "entries"
 						}
@@ -3012,7 +3016,7 @@
 								"type": "entries",
 								"name": "Liquefying Ague",
 								"entries": [
-									"目标的力量和体质分数减少了3点。如果这使其力量或体质降至0，则目标死亡。目标的体质减少也会减少其最大生命值，减少的数量也会从其当前生命值中移除。"
+									"The target's Strength and Constitution scores are reduced by 3. The target dies if this reduces its Strength or Constitution to 0. The decrease to the target's Constitution also decreases its maximum hit points, the amount it decreases by is also removed from its current hit points."
 								]
 							}
 						]
@@ -3743,7 +3747,7 @@
 				"type": "radius",
 				"distance": {
 					"type": "feet",
-					"amount": 5
+					"amount": 10
 				}
 			},
 			"components": {
