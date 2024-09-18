@@ -23,8 +23,8 @@
 		"status": "ready",
 		"unlisted": true,
 		"dateAdded": 1685361551,
-		"dateLastModified": 1726352683,
-		"_dateLastModifiedHash": "17e567f3fc"
+		"dateLastModified": 1726660384,
+		"_dateLastModifiedHash": "c087cccb27"
 	},
 	"optionalfeature": [
 		{
@@ -2068,9 +2068,53 @@
 	],
 	"itemProperty": [
 		{
-			"name": "Heavy",
+			"name": "Bandolier",
+			"abbreviation": "HoE:B",
 			"source": "HoE",
+			"page": 7,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Bandolier",
+					"page": 7,
+					"entries": [
+						"当使用具有弹药带属性的武器进行远程攻击时，你可以立即在攻击中抽取另一件相同类型的武器。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Concealed",
+			"abbreviation": "HoE:C",
+			"source": "HoE",
+			"page": 7,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Concealed",
+					"page": 7,
+					"entries": [
+						"你在敏捷度检定中对于隐藏这把武器有优势。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Longarm",
+			"abbreviation": "HoE:FL",
+			"source": "HoE",
+			"page": 7
+		},
+		{
+			"name": "Sidearm",
+			"abbreviation": "HoE:FS",
+			"source": "HoE",
+			"page": 7
+		},
+		{
+			"name": "Heavy",
 			"abbreviation": "HoE:H",
+			"source": "HoE",
 			"page": 7,
 			"entries": [
 				{
@@ -2084,58 +2128,10 @@
 			]
 		},
 		{
-			"source": "HoE",
-			"abbreviation": "HoE:B",
-			"page": 7,
-			"name": "Bandolier",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Bandolier",
-					"page": 7,
-					"entries": [
-						"当使用具有弹药带属性的武器进行远程攻击时，你可以立即在攻击中抽取另一件相同类型的武器。"
-					]
-				}
-			]
-		},
-		{
-			"source": "HoE",
-			"abbreviation": "HoE:C",
-			"page": 7,
-			"name": "Concealed",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Concealed",
-					"page": 7,
-					"entries": [
-						"你在敏捷度检定中对于隐藏这把武器有优势。"
-					]
-				}
-			]
-		},
-		{
-			"source": "HoE",
-			"abbreviation": "HoE:Si",
-			"page": 7,
-			"name": "Siege",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Siege",
-					"page": 7,
-					"entries": [
-						"这个武器对物体和结构造成双倍伤害。"
-					]
-				}
-			]
-		},
-		{
-			"source": "HoE",
-			"abbreviation": "HoE:L",
-			"page": 7,
 			"name": "Limited",
+			"abbreviation": "HoE:L",
+			"source": "HoE",
+			"page": 7,
 			"entries": [
 				{
 					"type": "entries",
@@ -2148,26 +2144,11 @@
 			]
 		},
 		{
-			"source": "HoE",
-			"abbreviation": "HoE:T",
-			"page": 7,
-			"name": "Trip",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Trip",
-					"page": 7,
-					"entries": [
-						"这个武器可以用来绊倒一个生物，使其倒地{@condition prone}。它遵循与{@action shove|PHB|Shoving a Creature}相同的规则。然而，你不能使用这个武器把一个生物推开。"
-					]
-				}
-			]
-		},
-		{
-			"source": "HoE",
-			"abbreviation": "HoE:R",
-			"page": 7,
 			"name": "Reload",
+			"abbreviation": "HoE:R",
+			"source": "HoE",
+			"page": 7,
+			"template": "{{prop_name}}\u00A0({{item.reload}})",
 			"entries": [
 				{
 					"type": "entries",
@@ -2178,14 +2159,14 @@
 						"如果你使用两把带有\"装填\"属性的轻型远程武器，你可以在你的回合内将它们同时作为一个动作重新装填。"
 					]
 				}
-			],
-			"template": "{{prop_name}}\u00A0({{item.reload}})"
+			]
 		},
 		{
-			"source": "HoE",
-			"abbreviation": "HoE:Sc",
-			"page": 7,
 			"name": "Scatter",
+			"abbreviation": "HoE:Sc",
+			"source": "HoE",
+			"page": 7,
+			"template": "{{prop_name}}\u00A0({@damage {{item.customProperties.scatter}}||Scatter})",
 			"entries": [
 				{
 					"type": "entries",
@@ -2198,30 +2179,49 @@
 						"{@footnote (see the blood-lightning shot spell)|{@note This spell is not provided in the document.}}"
 					]
 				}
-			],
-			"template": "{{prop_name}}\u00A0({@damage {{item.customProperties.scatter}}||Scatter})"
+			]
 		},
 		{
+			"name": "Siege",
+			"abbreviation": "HoE:Si",
 			"source": "HoE",
-			"abbreviation": "HoE:St",
-			"page": 10,
+			"page": 7,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Siege",
+					"page": 7,
+					"entries": [
+						"这个武器对物体和结构造成双倍伤害。"
+					]
+				}
+			]
+		},
+		{
 			"name": "Stealth",
+			"abbreviation": "HoE:St",
+			"source": "HoE",
+			"page": 10,
+			"template": "Disadvantage ({@skill {{prop_name}}})",
 			"entries": [
 				"穿上这件盔甲时，进行敏捷检定时会受到劣势。"
-			],
-			"template": "Disadvantage ({@skill {{prop_name}}})"
+			]
 		},
 		{
+			"name": "Trip",
+			"abbreviation": "HoE:T",
 			"source": "HoE",
-			"abbreviation": "HoE:FS",
 			"page": 7,
-			"name": "Sidearm"
-		},
-		{
-			"source": "HoE",
-			"abbreviation": "HoE:FL",
-			"page": 7,
-			"name": "Longarm"
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Trip",
+					"page": 7,
+					"entries": [
+						"这个武器可以用来绊倒一个生物，使其倒地{@condition prone}。它遵循与{@action shove|PHB|Shoving a Creature}相同的规则。然而，你不能使用这个武器把一个生物推开。"
+					]
+				}
+			]
 		}
 	],
 	"monster": [

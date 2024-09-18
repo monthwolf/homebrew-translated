@@ -20,8 +20,8 @@
 		],
 		"status": "ready",
 		"dateAdded": 1665517025,
-		"dateLastModified": 1726352683,
-		"_dateLastModifiedHash": "9bd800b9ae"
+		"dateLastModified": 1726660384,
+		"_dateLastModifiedHash": "69f6981783"
 	},
 	"spell": [
 		{
@@ -7442,123 +7442,10 @@
 	],
 	"itemProperty": [
 		{
-			"name": "Feast",
-			"source": "KTKCG",
-			"page": 58,
-			"abbreviation": "Feast"
-		},
-		{
-			"name": "Snack",
-			"source": "KTKCG",
-			"page": 59,
-			"abbreviation": "Snack"
-		},
-		{
-			"name": "Ration",
-			"source": "KTKCG",
-			"page": 59,
-			"abbreviation": "Ration"
-		},
-		{
-			"name": "Essence",
-			"source": "KTKCG",
-			"page": 13,
-			"abbreviation": "Ess"
-		},
-		{
-			"name": "Reagent",
-			"source": "KTKCG",
-			"page": 13,
-			"abbreviation": "Rea"
-		},
-		{
-			"name": "Example Template",
-			"source": "KTKCG",
-			"page": 49,
-			"abbreviation": "ExT",
-			"entries": [
-				"{@note This is an example {@book Blacksmithing|KTKCG|12} 模板武器。"
-			],
-			"template": " "
-		},
-		{
-			"name": "Loud",
-			"source": "KTKCG",
-			"page": 52,
-			"abbreviation": "Loud",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Loud",
-					"page": 52,
-					"entries": [
-						"每当你的武器发动攻击时，会发出雷鸣声，声音能在你周围300英尺范围内听到。"
-					]
-				}
-			]
-		},
-		{
-			"name": "Stormcharged",
-			"source": "KTKCG",
-			"page": 52,
-			"abbreviation": "Strm",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Stormcharged",
-					"page": 52,
-					"entries": [
-						"当你使用一个动作，奖励动作，或反应来攻击带有风暴充能的武器时，你只能进行一次攻击，无论你通常可以进行多少次攻击。如果你本来可以用那个动作进行额外的攻击，那么武器每放弃一次攻击就会额外造成3d6点闪电或雷霆伤害。"
-					]
-				}
-			]
-		},
-		{
-			"name": "Psionic",
-			"source": "KTKCG",
-			"page": 93,
-			"abbreviation": "Psi",
-			"entries": [
-				"{@note This item's power is psionic in nature.}"
-			]
-		},
-		{
-			"name": "Reload 5",
-			"source": "KTKCG",
-			"page": 112,
-			"abbreviation": "RLD5",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Reload 5",
-					"page": 112,
-					"entries": [
-						"这个武器在射击5次后必须花费一个动作或一个奖励动作进行装填。(weapon)"
-					]
-				}
-			]
-		},
-		{
-			"name": "Ancient",
-			"source": "KTKCG",
-			"page": 121,
-			"abbreviation": "Anc",
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Ancient Tradition",
-					"page": 118,
-					"entries": [
-						"巨人、矮人和其他古老传统的符文。你对这个传统的能力修饰是智慧，你可以从（%0%）或（%1%）中选择你的相关工具。"
-					]
-				}
-			]
-		},
-		{
 			"name": "Academic",
+			"abbreviation": "Aca",
 			"source": "KTKCG",
 			"page": 122,
-			"abbreviation": "Aca",
 			"entries": [
 				{
 					"type": "entries",
@@ -7571,52 +7458,165 @@
 			]
 		},
 		{
+			"name": "Ancient",
+			"abbreviation": "Anc",
+			"source": "KTKCG",
+			"page": 121,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Ancient Tradition",
+					"page": 118,
+					"entries": [
+						"巨人、矮人和其他古老传统的符文。你对这个传统的能力修饰是智慧，你可以从（%0%）或（%1%）中选择你的相关工具。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Essence",
+			"abbreviation": "Ess",
+			"source": "KTKCG",
+			"page": 13
+		},
+		{
 			"name": "Exotic",
+			"abbreviation": "Exo",
 			"source": "KTKCG",
 			"page": 142,
-			"abbreviation": "Exo",
+			"template": "{{prop_name}}, Difficulty\u00A0+{{item.customProperties.diff}}",
 			"entries": [
 				"{@note See {@book Appendix E: Exotic Materials|KTKCG|26}.}"
-			],
-			"template": "{{prop_name}}, Difficulty\u00A0+{{item.customProperties.diff}}"
+			]
+		},
+		{
+			"name": "Example Template",
+			"abbreviation": "ExT",
+			"source": "KTKCG",
+			"page": 49,
+			"template": " ",
+			"entries": [
+				"{@note This is an example {@book Blacksmithing|KTKCG|12} 模板武器。"
+			]
+		},
+		{
+			"name": "Feast",
+			"abbreviation": "Feast",
+			"source": "KTKCG",
+			"page": 58
+		},
+		{
+			"name": "Loud",
+			"abbreviation": "Loud",
+			"source": "KTKCG",
+			"page": 52,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Loud",
+					"page": 52,
+					"entries": [
+						"每当你的武器发动攻击时，会发出雷鸣声，声音能在你周围300英尺范围内听到。"
+					]
+				}
+			]
+		},
+		{
+			"name": "Psionic",
+			"abbreviation": "Psi",
+			"source": "KTKCG",
+			"page": 93,
+			"entries": [
+				"{@note This item's power is psionic in nature.}"
+			]
+		},
+		{
+			"name": "Ration",
+			"abbreviation": "Ration",
+			"source": "KTKCG",
+			"page": 59
+		},
+		{
+			"name": "Reagent",
+			"abbreviation": "Rea",
+			"source": "KTKCG",
+			"page": 13
+		},
+		{
+			"name": "Reload 5",
+			"abbreviation": "RLD5",
+			"source": "KTKCG",
+			"page": 112,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Reload 5",
+					"page": 112,
+					"entries": [
+						"这个武器在射击5次后必须花费一个动作或一个奖励动作进行装填。(weapon)"
+					]
+				}
+			]
+		},
+		{
+			"name": "Snack",
+			"abbreviation": "Snack",
+			"source": "KTKCG",
+			"page": 59
+		},
+		{
+			"name": "Stormcharged",
+			"abbreviation": "Strm",
+			"source": "KTKCG",
+			"page": 52,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Stormcharged",
+					"page": 52,
+					"entries": [
+						"当你使用一个动作，奖励动作，或反应来攻击带有风暴充能的武器时，你只能进行一次攻击，无论你通常可以进行多少次攻击。如果你本来可以用那个动作进行额外的攻击，那么武器每放弃一次攻击就会额外造成3d6点闪电或雷霆伤害。"
+					]
+				}
+			]
 		}
 	],
 	"itemType": [
 		{
+			"name": "Component",
 			"abbreviation": "Comp",
 			"source": "KTKCG",
 			"page": 12,
-			"name": "Component",
 			"entries": [
 				"一个用于{@book crafting|KTKCG|1}的组件。"
 			]
 		},
 		{
+			"name": "Concoction",
 			"abbreviation": "Conc",
 			"source": "KTKCG",
 			"page": 34,
-			"name": "Concoction",
 			"entries": []
 		},
 		{
-			"abbreviation": "Oil",
-			"source": "KTKCG",
-			"page": 35,
-			"name": "Oil",
-			"entries": []
-		},
-		{
+			"name": "Gemstone",
 			"abbreviation": "Gem",
 			"source": "KTKCG",
 			"page": 93,
-			"name": "Gemstone",
 			"entries": []
 		},
 		{
+			"name": "Oil",
+			"abbreviation": "Oil",
+			"source": "KTKCG",
+			"page": 35,
+			"entries": []
+		},
+		{
+			"name": "Rune",
 			"abbreviation": "Rune",
 			"source": "KTKCG",
 			"page": 121,
-			"name": "Rune",
 			"entries": []
 		}
 	],
